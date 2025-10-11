@@ -14,7 +14,7 @@ Dacă doriți să ajutați la menținerea unei limbi specifice, deschideți un P
 
 ![Edit this page](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-De exemplu, făcând clic pe aceasta pe [SetVehicleAngularVelocity](https://www.open.mp/docs/scripting/functions/SetVehicleAngularVelocity) vă duce la [această pagină](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) care vă prezintă un editor de text pentru a face modificări la fișier (presupunând că sunteți conectat la GitHub).
+De exemplu, făcând clic pe aceasta pe [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) vă duce la [această pagină](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md) care vă prezintă un editor de text pentru a face modificări la fișier (presupunând că sunteți conectat la GitHub).
 
 Efectuați modificarea și trimiteți un „Pull Request”, aceasta înseamnă că gestionarii Wiki și alți membri ai comunității vă pot examina modificarea, discuta dacă are nevoie de modificări suplimentare și apoi o pot combina.
 

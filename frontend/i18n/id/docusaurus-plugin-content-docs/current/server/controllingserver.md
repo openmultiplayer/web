@@ -1,7 +1,7 @@
 ---
 id: controllingaserver
 title: "Mengendalikan Server"
-descripion: Perintah yang berguna untuk mengendalikan server.
+description: Perintah yang berguna untuk mengendalikan server.
 ---
 
 ## Mengganti gamemode
@@ -49,7 +49,7 @@ samp.ban adalah file yang digunakan untuk menyimpan pelarangan, termasuk informa
 - IP
 - Tanggal
 - Waktu
-- Nama (Nama dari orang atau alasan, lihat [BanEx](../../functions/BanEx))
+- Nama (Nama dari orang atau alasan, lihat [BanEx](../scripting/functions/BanEx))
 - Jenis pelarangan
 
 Untuk menambah sebuah pelarangan, tambahkan sebuah baris seperti ini:
@@ -62,7 +62,7 @@ Di mana `ALAMAT_IP_DI_SINI`, adalah alamat IP yang ingin Anda larang.
 
 ##### Fungsi Ban()
 
-Fungsi [Ban](../../functions/Ban) dapat digunakan untuk melarang pemain dari sisi skrip. Fungsi [BanEx](../../functions/BanEx) akan menambah alasan opsional seperti ini:
+Fungsi [Ban](../scripting/functions/Ban) dapat digunakan untuk melarang pemain dari sisi skrip. Fungsi [BanEx](../scripting/functions/BanEx) akan menambah alasan opsional seperti ini:
 
 ```
 13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
@@ -110,7 +110,7 @@ samp.ban dapat ditemukan di direktori server SA-MP Anda, terdapat baris yang ber
 - IP
 - Date
 - Time
-- Nama (Nama dari orang atau alasan, lihat [BanEx](../../functions/BanEx))
+- Nama (Nama dari orang atau alasan, lihat [BanEx](../scripting/functions/BanEx))
 - Jenis pelarangan (INGAME, IP BAN, dll.)
 
 Examples:
@@ -186,7 +186,7 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon playertimeout [limit m/s]` | Mengubah waktu dalam milisekon hingga pemain dianggap timeout ketika tidak mengirim paket apapun. (nilai awal 1000) |
 | `/rcon language [language]`       | Mengubah bahasa server (_contoh: /rcon language English_). Muncul di penjelajah server.                             |
 
-Jumlah/pembatasan di atas dibuat untuk menghindari beberapa alat yang bisa menyerang server SA-MP dengan membuatnya freeze atau crash. Jadi, cukup atur sesuai dengan server Anda. Nilai awal hanyalah nilai awal, jika Anda mengalami sesuatu yang tidak beres, cukup tambahkan nilainya secepat mungkin, jadi pemain yang tidak bersalah tidak akan ditendang. [Baca lebih lanjut](http://web-old.archive.org/web/20190426141744/https://forum.sa-mp.com/showpost.php?p=2990193&postcount=47)
+Jumlah/pembatasan di atas dibuat untuk menghindari beberapa alat yang bisa menyerang server SA-MP dengan membuatnya freeze atau crash. Jadi, cukup atur sesuai dengan server Anda. Nilai awal hanyalah nilai awal, jika Anda mengalami sesuatu yang tidak beres, cukup tambahkan nilainya secepat mungkin, jadi pemain yang tidak bersalah tidak akan ditendang. [Baca lebih lanjut](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193)
 
 ### Callback dan Fungsi Terkait
 
@@ -194,10 +194,10 @@ Berikut adalah callback dan fungsi yang mungkin berguna, karena mereka terkait d
 
 #### Callback
 
-- [OnRconLoginAttempt](../../callbacks/OnRconLoginAttempt): Terpanggil ketika ada yang berusaha untuk masuk ke RCON.
+- [OnRconLoginAttempt](../scripting/callbacks/OnRconLoginAttempt): Terpanggil ketika ada yang berusaha untuk masuk ke RCON.
 
 #### Fungsi
 
-- [IsPlayerAdmin](../../functions/IsPlayerAdmin): Memeriksa apakah pemain sudah masuk ke RCON.
+- [IsPlayerAdmin](../scripting/functions/IsPlayerAdmin): Memeriksa apakah pemain sudah masuk ke RCON.
 
-- [SendRconCommand](../../functions/SendRconCommand): Mengirim perintah RCON melalui skrip.
+- [SendRconCommand](../scripting/functions/SendRconCommand): Mengirim perintah RCON melalui skrip.

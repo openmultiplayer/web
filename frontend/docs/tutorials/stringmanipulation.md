@@ -145,7 +145,7 @@ If you were to output `message_5[0]`, you would get **B**, weird right? Well, no
 
 You have `65 + 1`, that returns `66`, checking the _ASCII_ table, you will find that `66` is the numeric representation of the character “_B_” (_capitalized_). So, the snippet above is basically the same as doing: `message_5[0] = 'B'`;
 
-For reference, use [this ASCII table](http://www.asciitable.com/).
+For reference, use [this ASCII table](https://www.asciitable.com).
 
 You can also perform the same operation between multiple characters or a mix of both, them and numbers, here are few examples;
 
@@ -693,7 +693,7 @@ This will send the following message to everyone (_and I'm no Italian_):
 
 Keep in mind that the hexadecimal notation is case insensitive, so typing `0xFFC0E1FF` is the same as typing `0xfFC0e1Ff`, the same goes for embedded colors, `{401C15}` is the same as `{401c15}`.
 
-Sometimes, working with colors can prove to be quite the labor, It’s not that easy to go around remembering all of those long hexadecimal numbers like no big deal, You should always have a reference to go back to, there are plenty of online color pickers you can use, you can simply google “_color picker_”, and choose between thousands of them, let me do that on you if you don’t mind, [here’s a simple tool](https://www.webpagefx.com/web-design/color-picker/) that I recommend using when working with colors.
+Sometimes, working with colors can prove to be quite the labor, It’s not that easy to go around remembering all of those long hexadecimal numbers like no big deal, You should always have a reference to go back to, there are plenty of online color pickers you can use, you can simply google “_color picker_”, and choose between thousands of them, let me do that on you if you don’t mind, [here’s a simple tool](https://www.webfx.com/web-design/color-picker/) that I recommend using when working with colors.
 
 One of the problems that people find, is managing their workflow, which if done right, it facilitates the work pacing, and makes it less painful to work around your projects, while color picker tools are of a great help, you can still waste plenty of time going on and off to it every time you need to pick a color, the frustration of that can be as annoying as a pizza with pineapples, luckily, you can take advantage of predefined constants, and define your most used colors for later usage, here’s a simple example;
 
@@ -1427,7 +1427,7 @@ Of course, this only concerns functions that support formatting, such as `printf
 
 - **The `%q` specifier**
 
-This one doesn’t hold any big importance in our main topic, it’ widely used to escape sensitive strings when working with _SQLite_, and trust me, nobody wants to fall under the [Bobby table](http://bobby-tables.com/about) case.
+This one doesn’t hold any big importance in our main topic, it’ widely used to escape sensitive strings when working with _SQLite_, and trust me, nobody wants to fall under the [Bobby table](https://bobby-tables.com/about) case.
 
 Back when we introduced the placeholders, we reference a specific formula concerning them, as a reminder, here it is;
 
@@ -1646,7 +1646,7 @@ I apologize if I had you confused by using [bitwise logical shift](https://en.wi
 
 #### Custom specifiers
 
-Working with the formatting specifiers we've gone through so far is sufficient, you can literally do all sort of stuff with those magnificent tools, but nothing is stopping us from asking for me, how greedy of us. All thanks to **Slice** after being influenced by [sscanf](https://github.com/maddinat0r/sscanf), he came up with an amazing include, [formatex](https://github.com/Southclaws/formatex), which added several new specifiers to use, which really eased a lot of every-day pawn stuff. But that wasn't it, you can also create your own specifiers to suit your needs, and as cool as it might sound, the process is very easy.
+Working with the formatting specifiers we've gone through so far is sufficient, you can literally do all sort of stuff with those magnificent tools, but nothing is stopping us from asking for me, how greedy of us. All thanks to **Slice** after being influenced by [sscanf](https://github.com/Y-Less/sscanf), he came up with an amazing include, [formatex](https://github.com/Southclaws/formatex), which added several new specifiers to use, which really eased a lot of every-day pawn stuff. But that wasn't it, you can also create your own specifiers to suit your needs, and as cool as it might sound, the process is very easy.
 
 Just for testing purposes, let's make something silly, something as basic as giving a string as an input, and return it on the form of a link (_https://www.string.com_);
 
@@ -1682,7 +1682,7 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 - [Code optimization](https://sampforum.blast.hk/showthread.php?tid=571550) by [Misiur](https://sampforum.blast.hk/member.php?action=profile&uid=55934)
 - [Packed strings](https://sampforum.blast.hk/showthread.php?tid=480529) by [Emmet\_](https://github.com/emmet-jones)
 - [IRC string formatting](https://github.com/myano/jenni/wiki/IRC-String-Formatting) by [myano](https://github.com/myano)
-- [String manupilation](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf) by [CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
+- [String manupilation](https://github.com/compuphase/pawn/blob/main/doc/String_Manipulation.pdf) by [CompuPhase](https://www.compuphase.com)
 - [Pawn-lang](https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
 - [An in-depth look at binary and binary operators](https://sampforum.blast.hk/showthread.php?tid=177523) by [Kyosaur](https://sampforum.blast.hk/member.php?action=profile&uid=23990)
 
@@ -1692,7 +1692,7 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 - [Slice](https://github.com/oscar-broman)'s [strlib](https://github.com/oscar-broman/strlib)
 - [Slice](https://github.com/oscar-broman)'s [formatex](https://github.com/Southclaws/formatex)
 - [corne](https://sampforum.blast.hk/member.php?action=profile&uid=98345)'s [y_stringhash](https://sampforum.blast.hk/showthread.php?tid=571305)
-- [Y-Less](https://github.com/Y-Less)'s [sscanf](https://github.com/maddinat0r/sscanf)
+- [Y-Less](https://github.com/Y-Less)'s [sscanf](https://github.com/Y-Less/sscanf)
 
 #### References
 
@@ -1701,12 +1701,12 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 - [Gametext](../scripting/functions/GameTextForPlayer)
 - [Limitations](../scripting/resources/limits)
 - [ASCII](https://en.wikipedia.org/wiki/ASCII)
-- [ASCII table](https://www.asciitable.com/)
+- [ASCII table](https://www.asciitable.com)
 - [Pawn Tutorial](https://wiki.alliedmods.net/Pawn_Tutorial)
 - [Control Structures](../scripting/language/ControlStructures)
 - [Null character](https://en.wikipedia.org/wiki/Null_character)
 - [RGBA color space](https://en.wikipedia.org/wiki/RGBA_color_space)
-- [Color picker](https://www.webpagefx.com/web-design/color-picker/)
+- [Color picker](https://www.webfx.com/web-design/color-picker/)
 - [TextDrawColor](../scripting/functions/TextDrawColor)
 - [Gametext styles](../scripting/resources/gametextstyles)
 - [Color list](../scripting/resources/colorslist)

@@ -83,7 +83,7 @@ A function is basically a chunk of code which does something and can be told to 
 print("Hello World!");
 ```
 
-As described in [Starting out](/wiki/Scripting_Basics#Starting_out "Scripting Basics"), this calls the function called "print" (defined in a_samp.inc, which is why you need to include it) and tells it to display something in the server console (the word hello).
+As described in the first example, this calls the function called "print" (defined in a_samp.inc, which is why you need to include it) and tells it to display something in the server console (the word hello).
 
 A function consists of the function name (e.g. print), which tells the system which chunk of code you want to call, and a parameter list, enclosed in ()s after the function name, which pass additional data to the function to help it run. If you didn't have parameters you would need millions of functions:
 
@@ -156,7 +156,7 @@ MyFunction()
 
 ## Parameters
 
-Parameters are a type of [variable](/wiki/Scripting_Basics#Variables "Scripting Basics") which you don't need to declare as they come from the place which called the function:
+Parameters are a type of [variable](start#variables) which you don't need to declare as they come from the place which called the function:
 
 ```c
 #include <a_samp>
@@ -173,7 +173,7 @@ MyFunction(string[])
 }
 ```
 
-This code still does the same thing but we're now telling MyFunction() what to display. The call passes the string "Hello World!" to the function where it is stored in a variable called string (the \[\] means it's an [array](/wiki/Scripting_Basics#Arrays "Scripting Basics") as explained later). The print function is the called, passing the contents of the string variable, we know it's a variable because it doesn't have the "" any more.
+This code still does the same thing but we're now telling MyFunction() what to display. The call passes the string "Hello World!" to the function where it is stored in a variable called string (the \[\] means it's an [array](start#arrays) as explained later). The print function is the called, passing the contents of the string variable, we know it's a variable because it doesn't have the "" any more.
 
 # Variables
 
@@ -371,7 +371,7 @@ That will create a global array (see section on scope) with one slot for every p
 
 ### Basic use
 
-A string is a special type of array, one which is used to hold multiple characters to create a word or sentence or other human readable text. A character is one byte big (although there are extended sets where a character is multiple bytes but these are not well defined in SA:MP) and by default a character takes up one cell (one normal variable or one array slot). Characters are encoded in a system called [ASCII](http://www.asciitable.com/ "http://www.asciitable.com/"), the character "A" is represented by the number 65, telling the system to display a number will give 65, telling the system to display a character will give a capital a. Obviously is a single character takes up a single cell multiple characters (i.e. text) will take up multiple cells, collections of cells, as just explained, are called arrays.
+A string is a special type of array, one which is used to hold multiple characters to create a word or sentence or other human readable text. A character is one byte big (although there are extended sets where a character is multiple bytes but these are not well defined in SA:MP) and by default a character takes up one cell (one normal variable or one array slot). Characters are encoded in a system called [ASCII](https://www.asciitable.com), the character "A" is represented by the number 65, telling the system to display a number will give 65, telling the system to display a character will give a capital a. Obviously is a single character takes up a single cell multiple characters (i.e. text) will take up multiple cells, collections of cells, as just explained, are called arrays.
 
 Strings in PAWN (and other languages) are what's called "NULL terminated", this means that when 0 is reached, the string ends. This is not the same as the character "0", represented by the number 48, this is the NULL character, represented by the number 0. This means that you can have a string array 20 cells large but only have a string 3 characters long if the fourth character is the NULL character, signalling the end of the string. You can not however have a string 20 characters long as the NULL character MUST be in the string, so in a 20 cell array you can have a 19 character string and a NULL termination character.
 

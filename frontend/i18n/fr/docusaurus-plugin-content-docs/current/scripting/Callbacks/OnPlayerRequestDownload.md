@@ -30,7 +30,7 @@ Cette callback est appelée quand un joueur sollicite le téléchargement des cu
 #define DOWNLOAD_REQUEST_MODEL_FILE   (1)
 #define DOWNLOAD_REQUEST_TEXTURE_FILE (2)
 
-new baseurl[] = "https://files.open-mp.com/server";
+new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {
