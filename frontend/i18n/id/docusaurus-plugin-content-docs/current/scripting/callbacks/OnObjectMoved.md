@@ -37,8 +37,8 @@ SetObjectPos tidak akan bekerja ketika menggunakan callback ini. Untuk memperbai
 
 ## Fungsi Terkait
 
-- [MoveObject](../functions/MoveObject.md): Memindahkan Object.
-- [MovePlayerObject](../functions/MovePlayerObject.md): Memindahkan player object.
-- [IsObjectMoving](../functions/IsObjectMoving.md): Mengecek apakah object sedang bergerak.
-- [StopObject](../functions/StopObject.md): Menghentikan object yang bergerak.
-- [OnPlayerObjectMoved](OnPlayerObjectMoved.md): Terpanggil ketika player object berhenti bergerak.
+- [MoveObject](../functions/MoveObject): Memindahkan Object.
+- [MovePlayerObject](../functions/MovePlayerObject): Memindahkan player object.
+- [IsObjectMoving](../functions/IsObjectMoving): Mengecek apakah object sedang bergerak.
+- [StopObject](../functions/StopObject): Menghentikan object yang bergerak.
+- [OnPlayerObjectMoved](OnPlayerObjectMoved): Terpanggil ketika player object berhenti bergerak.

@@ -44,5 +44,5 @@ public WelcomeTimer(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetTimer](../../scripting/functions/SetTimer.md): Set a timer.
-- [SetTimerEx](../../scripting/functions/SetTimerEx.md): Set a timer with parameters.
+- [SetTimer](SetTimer): Set a timer.
+- [SetTimerEx](SetTimerEx): Set a timer with parameters.

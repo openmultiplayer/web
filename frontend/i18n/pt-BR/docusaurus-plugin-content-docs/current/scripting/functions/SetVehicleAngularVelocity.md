@@ -54,5 +54,5 @@ Esta função não tem efeito em veículos vazios e não afeta trens.
 
 ## Funções Relacionadas
 
-- [SetVehicleVelocity](SetVehicleVelocity.md): Define a velocidade de um veículo.
-- [GetVehicleVelocity](GetVehicleVelocity.md): Obtém a velocidade de um veículo.
+- [SetVehicleVelocity](SetVehicleVelocity): Define a velocidade de um veículo.
+- [GetVehicleVelocity](GetVehicleVelocity): Obtém a velocidade de um veículo.

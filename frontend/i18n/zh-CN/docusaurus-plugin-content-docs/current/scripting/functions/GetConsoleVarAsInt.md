@@ -34,5 +34,5 @@ printf("服务器端口号: %i", serverPort);  // 输出整型端口数值
 
 ## 相关函数
 
-- [GetConsoleVarAsString](GetConsoleVarAsString.md): 以字符串形式获取控制台变量
-- [GetConsoleVarAsBool](GetConsoleVarAsBool.md): 以布尔值形式获取控制台变量
+- [GetConsoleVarAsString](GetConsoleVarAsString): 以字符串形式获取控制台变量
+- [GetConsoleVarAsBool](GetConsoleVarAsBool): 以布尔值形式获取控制台变量

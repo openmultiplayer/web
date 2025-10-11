@@ -25,4 +25,4 @@ public OnNPCEnterVehicle(vehicleid, seatid)
 
 ## 相关函数
 
-- [StopRecordingPlayback](../functions/StopRecordingPlayback): 停止回放.rec 文件
+- [StopRecordingPlayback](StopRecordingPlayback): 停止回放.rec 文件

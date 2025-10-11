@@ -29,7 +29,7 @@ Este callback también puede ser llamado por NPC.
 
 :::tip
 
-Las teclas direccionales no desencadenan OnPlayerKeyStateChange (arriba, abajo, izquierda, derecha).<br/>Estas sólo pueden ser detectadas con [GetPlayerKeys](../functions/GetPlayerKeys) (en [OnPlayerUpdate](../callbacks/OnPlayerUpdate) o en un timer).
+Las teclas direccionales no desencadenan OnPlayerKeyStateChange (arriba, abajo, izquierda, derecha).<br/>Estas sólo pueden ser detectadas con [GetPlayerKeys](../functions/GetPlayerKeys) (en [OnPlayerUpdate](OnPlayerUpdate) o en un timer).
 
 :::
 

@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
 
 ## توابع مرتبط
 
-- [CreatePlayerPickup](./CreatePlayerPickup): ساخت یه pickup که فقط برای یه بازیکن قابل دیدن هست.
+- [CreatePlayerPickup](CreatePlayerPickup): ساخت یه pickup که فقط برای یه بازیکن قابل دیدن هست.
 - [DestroyPlayerPickup](DestroyPlayerPickup): نابود کردن یه player-pickup.
 - [IsPlayerPickupStreamedIn](IsPlayerPickupStreamedIn): چک کردن اینکه player-pickup برای بازیکن stream شده یا نه.
 - [SetPlayerPickupPos](SetPlayerPickupPos): تنظیم موقعیت یه player-pickup.

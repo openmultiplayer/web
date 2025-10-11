@@ -6,36 +6,36 @@ description: Una lista de herramientas, librerías y plugins útiles para desarr
 
 ## Herramientas
 
-- **_[Community Compiler](https://github.com/pawn-lang/compiler/)_** - Una versión actualizada del compilador, con varias mejoras y arreglos.
-- **_[sampctl](http://sampctl.com/)_** - Administrador de paquetes para instalar librerías y ejecutar tu servidor.
-- **_[Plugin Runner](https://github.com/Zeex/samp-plugin-runner/)_** - Herramienta para ejecutar una versión liviana del servidor directamente desde la caja de comandos (sin precisar server.cfg). Para probar/experimentar con plugins.
+- **_[Community Compiler](https://github.com/pawn-lang/compiler)_** - Una versión actualizada del compilador, con varias mejoras y arreglos.
+- **_[sampctl](https://github.com/Southclaws/sampctl)_** - Administrador de paquetes para instalar librerías y ejecutar tu servidor.
+- **_[Plugin Runner](https://github.com/Zeex/samp-plugin-runner)_** - Herramienta para ejecutar una versión liviana del servidor directamente desde la caja de comandos (sin precisar server.cfg). Para probar/experimentar con plugins.
 - **_[Plugin Boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate)_** - Facilitar un plugin con boilerplate.
 - **_[SA:MP Plugin Template Library](https://github.com/katursis/samp-ptl)_** - Crea tus propios plugins fácil y rápido con esta biblioteca de plantillas.
 - **_[SA-MP Fiddle](https://fiddle.sa-mp.dev)_** - Un lugar donde probar tus scripts (snippets, PoC, debugging, etc) y compartilo con otros.
-- **_[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax/)_** - Función de autocompletar lenguaje Pawn para Sublime Text.
-- **_[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn/)_** - Función de autocompletar lenguaje Pawn para Visual Studio Code.
-- **_[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads/)_** - Editor de zonas para generar areas y demás.
+- **_[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)_** - Función de autocompletar lenguaje Pawn para Sublime Text.
+- **_[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)_** - Función de autocompletar lenguaje Pawn para Visual Studio Code.
+- **_[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)_** - Editor de zonas para generar areas y demás.
 - **_[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)_** - Editor de mapas para SA:MP.
 
 ## Librerias
 
-- **_[SA:MP stdlib](https://github.com/pawn-lang/samp-stdlib/)_** - Includes por defecto actualizados, con valores constantes, documentados, y completos.
-- **_[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes/)_** - Plug-and-play. Arreglos y optimización para un gran número de errores en los servidores de SA:MP. Plug And Play.
-- **_[YSI](https://github.com/pawn-lang/YSI-Includes/)_** - La más vieja, extensa, probada, y adaptada libería para SA:MP/Pawn, proveyéndonos un gran número de nuevas características del lenguaje y del juego.
-- **_[amx_assembly](https://github.com/Zeex/amx_assembly/)_** - Acceso al bajo nivel del mismo script de Pawn.
+- **_[SA:MP stdlib](https://github.com/pawn-lang/samp-stdlib)_** - Includes por defecto actualizados, con valores constantes, documentados, y completos.
+- **_[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)_** - Plug-and-play. Arreglos y optimización para un gran número de errores en los servidores de SA:MP. Plug And Play.
+- **_[YSI](https://github.com/pawn-lang/YSI-Includes)_** - La más vieja, extensa, probada, y adaptada libería para SA:MP/Pawn, proveyéndonos un gran número de nuevas características del lenguaje y del juego.
+- **_[amx_assembly](https://github.com/Zeex/amx_assembly)_** - Acceso al bajo nivel del mismo script de Pawn.
 - **_[md-sort](https://github.com/oscar-broman/md-sort)_** - Ordena arrays multidimensionales en Pawn. Modifica los punteros internos de la matriz en lugar de copiar los datos.
-- **_[indirection](https://github.com/Y-Less/indirection/)_** - Sistema para pasar punteros y llamar funciones indirectamente, con métodos abstractos para customizar llamadas.
-- **_[code-parse.inc](https://github.com/Y-Less/code-parse.inc/)_** - Analizar y customizar código Pawn al momento de compilación.
-- **_[strlib.inc](https://github.com/oscar-broman/strlib/)_** - Funciones útiles para manipular strings en SA:MP.
-- **_[extended-vehicle-information.inc](https://github.com/Vince0789/sa-mp-extended-vehicle-information/)_** - Una gran cantidad de valores de vehículos del singleplayer a una base de datos en SQLite.
+- **_[indirection](https://github.com/Y-Less/indirection)_** - Sistema para pasar punteros y llamar funciones indirectamente, con métodos abstractos para customizar llamadas.
+- **_[code-parse.inc](https://github.com/Y-Less/code-parse.inc)_** - Analizar y customizar código Pawn al momento de compilación.
+- **_[strlib.inc](https://github.com/oscar-broman/strlib)_** - Funciones útiles para manipular strings en SA:MP.
+- **_[extended-vehicle-information.inc](https://github.com/Vince0789/sa-mp-extended-vehicle-information)_** - Una gran cantidad de valores de vehículos del singleplayer a una base de datos en SQLite.
 - **_[sqlitei](https://github.com/oscar-broman/sqlitei)_** - API de alto nivel para las funciones SQLite de SA-MP.
 - **_[weapon-config](https://github.com/oscar-broman/samp-weapon-config)_** - Sistema de daños más coherente y sensible, con muchas novedades.
-- **_[samp-geoip](https://github.com/Southclaws/SAMP-geoip/)_** - Obtener información geográfica basado en una dirección IP.
+- **_[samp-geoip](https://github.com/Southclaws/SAMP-geoip)_** - Obtener información geográfica basado en una dirección IP.
 - **_[weapon-data](https://github.com/Southclaws/samp-weapon-data)_** - Datos de armas personalizables y ajustados con precisión.
 - **_[MySQL Prepared Statements](https://github.com/PatrickGTR/MySQL-Prepared-Statements)_** - Emulando Prepared Statement para el plugin MySQL de PAWN.
 - **_[samp-server-weapons](https://github.com/Brunoo16/samp-server-weapons)_** - Armas totalmente controladas por el servidor.
 - **_[actor_robbery](https://github.com/PatrickGTR/actor_robbery)_** - Inspirado en los robos de tienda de GTA V. ¡Actor_robbery.inc lo imita!
-- **_[samp-aviation](https://github.com/Southclaws/samp-aviation/)_** - Piloto automático para SA:MP.
+- **_[samp-aviation](https://github.com/Southclaws/samp-aviation)_** - Piloto automático para SA:MP.
 - **_[samp-logger](https://github.com/Southclaws/samp-logger)_** - Simple registrador estructurado que proporciona un conjunto simple de funciones para el registro y depuración.
 - **_[TDW Recursion Scanner](https://github.com/tdworg/samp-include-rscan)_** - Una biblioteca que encuentra las recursiones en el código.
 - **_[easyDialog](https://github.com/Awsomedude/easyDialog)_** - Facilita el uso de diálogos en general.
@@ -53,32 +53,32 @@ description: Una lista de herramientas, librerías y plugins útiles para desarr
 - **_[Alternative Dialogs](https://github.com/NexiusTailer/Alternative-Dialogs)_** - Diálogos Textdraw con un nuevo diseño.
 - **_[eSelection](https://github.com/TommyB123/eSelection)_** - Añade la posibilidad de crear menús dinámicos de selección de modelos en tus modos de juego SA-MP.
 - **_[mSelection](https://github.com/alextwothousand/mSelection)_** - Igual que eSelection, pero con otro estilo.
-- **_[progress2.inc](https://github.com/Southclaws/progress2/)_** - Mostrar el tiempo, la vida, el combustible y demás cosas como una barra progresiva.
+- **_[progress2.inc](https://github.com/Southclaws/progress2)_** - Mostrar el tiempo, la vida, el combustible y demás cosas como una barra progresiva.
 - **_[MV_Youtube.inc](https://github.com/MichaelBelgium/MV_Youtube)_** - API que convierte links de YouTube para streams de Audio.
 
 ## Procesadores de Comandos
 
-- **_[izcmd.inc](https://github.com/YashasSamaga/I-ZCMD/)_** - Versión mejorada de ZCMD.
-- **_[PawnCMD.inc](https://github.com/katursis/Pawn.CMD/)_** - El procesador de comandos más rápido del oeste.
+- **_[izcmd.inc](https://github.com/YashasSamaga/I-ZCMD)_** - Versión mejorada de ZCMD.
+- **_[PawnCMD.inc](https://github.com/katursis/Pawn.CMD)_** - El procesador de comandos más rápido del oeste.
 - **_[y_commands](https://github.com/pawn-lang/YSI-Includes/blob/5.x/YSI_Visual/y_commands.md)_** - Procesador de comandos de YSI Includes.
 
 ## Plugins
 
-- **_[crashdetect](https://github.com/Zeex/samp-plugin-crashdetect/)_** - Herramienta de desarrollo para encontrar bugs durante el testeo.
-- **_[JIT](https://github.com/Zeex/samp-plugin-jit/)_** - Una vez que tu código sea estable, utiliza esto para acelerarlo significativamente.
+- **_[JIT](https://github.com/Zeex/samp-plugin-jit)_** - Una vez que tu código sea estable, utiliza esto para acelerarlo significativamente.
+- **_[crashdetect](https://github.com/Y-Less/samp-plugin-crashdetect)_** - Herramienta de desarrollo para encontrar bugs durante el testeo.
 - **_[Profiler](https://github.com/Zeex/samp-plugin-profiler)_** - Plugin de perfil de rendimiento para el servidor SA-MP.
-- **_[sscanf](https://github.com/Y-Less/sscanf/)_** - Convierte strings en múltiples valores, enteros, flotantes, jugadores, etcétera.
-- **_[MySQL](https://github.com/pBlueG/SA-MP-MySQL/)_** - Enlaza tu servidor a un servidor MySQL.
-- **_[streamer](https://github.com/samp-incognito/samp-streamer-plugin/)_** - Sobrepasa los límites de objetos y pickups.
+- **_[sscanf](https://github.com/Y-Less/sscanf)_** - Convierte strings en múltiples valores, enteros, flotantes, jugadores, etcétera.
+- **_[MySQL](https://github.com/pBlueG/SA-MP-MySQL)_** - Enlaza tu servidor a un servidor MySQL.
+- **_[streamer](https://github.com/samp-incognito/samp-streamer-plugin)_** - Sobrepasa los límites de objetos y pickups.
 - **_[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)_** - Comprobación de nativos al iniciar el servidor.
 - **_[FCNPC](https://github.com/ziggi/FCNPC)_** - Un plugin para servidores SA-MP que añade muchas capacidades a los NPC estándar existentes.
 - **_[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)_** - Permite gestionar archivos y carpetas desde la carpeta raíz (no se limita al directorio del servidor scriptfiles con este plugin).
 - **_[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)_** - Permite analizar el tráfico de RakNet.
 - **_[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)_** - Un plugin para SA-MP que proporciona temporizadores precisos, escrito en Rust.
-- **_[PawnPlus](https://github.com/IllidanS4/PawnPlus)_** - Amplía las posibilidades del lenguaje de scripting Pawn con nuevas construcciones, tipos de datos y técnicas de programación.
+- **_[PawnPlus](https://github.com/IS4Code/PawnPlus)_** - Amplía las posibilidades del lenguaje de scripting Pawn con nuevas construcciones, tipos de datos y técnicas de programación.
 - **_[PAWN memory access](https://github.com/BigETI/pawn-memory)_** - Permite asignar y liberar memoria del heap en PAWN.
-- **_[Native Fallback](https://github.com/IllidanS4/NativeFallback)_** - Complemento SA-MP que proporciona una implementación alternativa a los nativos no registrados.
-- **_[YSF](https://github.com/IllidanS4/YSF)_** - Un Plugin cuyo propósito es extraer las máximas posibilidades del servidor, principalmente con edición de memoria y hooking.
+- **_[Native Fallback](https://github.com/IS4Code/NativeFallback)_** - Complemento SA-MP que proporciona una implementación alternativa a los nativos no registrados.
+- **_[YSF](https://github.com/IS4Code/YSF)_** - Un Plugin cuyo propósito es extraer las máximas posibilidades del servidor, principalmente con edición de memoria y hooking.
 - **_[SKY](https://github.com/oscar-broman/SKY)_** - Este plugin proporciona funciones de bajo nivel para que los scripts de Pawn puedan hacer cosas potentes.
 - **_[Pawn.Regex](https://github.com/katursis/Pawn.Regex)_** - Añade soporte para expresiones regulares en Pawn.
 - **_[pawn-scraper](https://github.com/Sreyas-Sreelal/pawn-scraper)_** - Un potente plugin de scraper que proporciona una interfaz para utilizar html_parsers y selectores css en pawn.
@@ -110,9 +110,9 @@ description: Una lista de herramientas, librerías y plugins útiles para desarr
 
 ## Plugins criptográficos
 
-- **_[whirlpool](https://github.com/Southclaws/samp-whirlpool/)_** - Algorítmo criptográfico Whirlpool para SA:MP.
-- **_[samp-bcrypt](https://github.com/Sreyas-Sreelal/samp-bcrypt/)_** - Un plugin de bcrypt para samp en Rust.
-- **_[bcrypt](https://github.com/LassiR/bcrypt-samp/)_** - Plugin criptográfico Bcrypt para SA:MP.
+- **_[whirlpool](https://github.com/Southclaws/samp-whirlpool)_** - Algorítmo criptográfico Whirlpool para SA:MP.
+- **_[samp-bcrypt](https://github.com/Sreyas-Sreelal/samp-bcrypt)_** - Un plugin de bcrypt para samp en Rust.
+- **_[bcrypt](https://github.com/LassiR/bcrypt-samp)_** - Plugin criptográfico Bcrypt para SA:MP.
 - **_[samp-crypto](https://github.com/alextwothousand/samp-crypto)_** - Una lista de funciones criptográficas como Argon2, Scrypt y Bcrypt para SA:MP.
 - **_[SHA512](https://github.com/openmultiplayer/archive/raw/master/plugins/SHA512.zip)_** - Algorítmo criptográfico SHA512 para SA:MP.
 
@@ -129,7 +129,7 @@ Ahora puedes hacer tus scripts en otros lenguajes que no sean pawn sin ningun pl
 - **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - Soporte de lenguaje Java para escribir un gamemode para SA:MP
 - **[pySAMP](https://github.com/habecker/PySAMP)** - Lenguaje Python para escribir un gamemode para SA:MP
 - **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Soporte de lenguaje Rust para escribir un plugin para SA:MP
-- **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - Lenguaje Lua para escribir un gamemode para SA:MP
+- **[Yet Another Lua Plugin](https://github.com/IS4Code/YALP)** - Lenguaje Lua para escribir un gamemode para SA:MP
 - **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - Soporte de lenguaje PHP para escribir un gamemode para SA:MP
 - **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - Soporte de lenguaje D para escribir un gamemode para SA:MP
 - **[Kamp](https://github.com/Double-O-Seven/kamp)** - Soporte de lenguaje Kotlin para escribir un gamemode para SA:MP

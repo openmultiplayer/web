@@ -9,15 +9,15 @@ tags: ["player"]
 
 This callback is called when a player selects an object after SelectObject has been used.
 
-| Name     | Description                                                |
-| -------- | ---------------------------------------------------------- |
-| playerid | The ID of the player that selected an object               |
-| type     | The [type](../resources/selectobjecttypes.md) of selection |
-| objectid | The ID of the selected object                              |
-| modelid  | The model of the selected object                           |
-| Float:fX | The X position of the selected object                      |
-| Float:fY | The Y position of the selected object                      |
-| Float:fZ | The Z position of the selected object                      |
+| Name     | Description                                             |
+| -------- | ------------------------------------------------------- |
+| playerid | The ID of the player that selected an object            |
+| type     | The [type](../resources/selectobjecttypes) of selection |
+| objectid | The ID of the selected object                           |
+| modelid  | The model of the selected object                        |
+| Float:fX | The X position of the selected object                   |
+| Float:fY | The Y position of the selected object                   |
+| Float:fZ | The Z position of the selected object                   |
 
 ## ส่งคืน
 
@@ -48,4 +48,4 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SelectObject](../../scripting/functions/SelectObject.md): Select an object.
+- [SelectObject](../functions/SelectObject): Select an object.

@@ -43,4 +43,4 @@ Bug(s) connus : Les joueurs entrent en collision lorsqu'ils entrent dans le mêm
 
 ## Fonctions connexes
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Ajoute un composant à un véhicule.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Ajoute un composant à un véhicule.

@@ -61,10 +61,9 @@ Ova funkcija vraća 0 ako je bilo koji niz prazan. Provjerite ima li null nizova
 
 - [strfind](strfind): Pretraži string u drugom stringu.
 - [strdel](strdel): Obriši dio stringa.
-- [strins](../function/strins): Unesi tekst u string.
-- [strlen](../function/strlen): Dobij dužinu stringa.
+- [strins](strins): Unesi tekst u string.
+- [strlen](strlen): Dobij dužinu stringa.
 - [strmid](strmid): Izdvoji dio stringa u drugi string.
 - [strpack](strpack): Upakuj string u odredišni string.
 - [strval](strval): Pretvori string u cijeli broj.
 - [strcat](strcat): Spojite dva stringa u odredišnu referencu.
-- http://www.compuphase.com/pawn/String_Manipulation.pdf

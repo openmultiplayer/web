@@ -35,7 +35,7 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Créer un checkpoint pour un joueur.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Désactive le checkpoint actuel du joueur.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Vérifie si un joueur est un dans race checkpoint.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Vérifie si un joueur est un dans race checkpoint.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Créer un race checkpoint pour un joueur.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Désactive le race checkpoint actuel du joueur.
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Vérifie si un joueur est dans un race checkpoint.

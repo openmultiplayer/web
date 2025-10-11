@@ -1,11 +1,11 @@
 ---
 title: Spectate Modes
 sidebar_label: Spectate Modes
-description: Spectate Modes to be used with [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer.md) and [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle.md) functions.
+description: Spectate Modes to be used with [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer) and [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle) functions.
 tags: []
 ---
 
-Spectate Modes to be used with [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer.md) and [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle.md) functions.
+Spectate Modes to be used with [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer) and [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle) functions.
 
 | Type                 | Effect                                                                                                                                                      |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |

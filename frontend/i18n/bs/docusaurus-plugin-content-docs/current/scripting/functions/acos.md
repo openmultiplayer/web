@@ -40,6 +40,6 @@ public OnGameModeInit()
 
 ## Srodne Funkcije
 
-- [floatsin](floatsin.md): Doznajte sinus iz određenog ugla.
-- [floatcos](floatcos.md): Doznajte kosinus iz određenog ugla.
-- [floattan](floattan.md): Doznajte tangent iz određenog ugla.
+- [floatsin](floatsin): Doznajte sinus iz određenog ugla.
+- [floatcos](floatcos): Doznajte kosinus iz određenog ugla.
+- [floattan](floattan): Doznajte tangent iz određenog ugla.

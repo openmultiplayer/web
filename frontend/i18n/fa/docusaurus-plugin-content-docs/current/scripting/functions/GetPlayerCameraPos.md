@@ -23,7 +23,7 @@ tags: ["player", "camera"]
 ## مثال‌ها
 
 ```c
-public OnPlayerDisconnect(playerid)
+public OnPlayerDisconnect(playerid, reason)
 {
     new Float:x, Float:y, Float:z;
     GetPlayerCameraPos(playerid, x, y, z);

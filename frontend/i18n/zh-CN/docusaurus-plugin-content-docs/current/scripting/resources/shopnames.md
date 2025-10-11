@@ -5,7 +5,7 @@ sidebar_label: 商店名称
 
 :::note
 
-在 GTA: SA（及 SA-MP）中，当玩家进入特定室内场景时会触发预设脚本。多数商店场景使用外部脚本加载机制。[SetPlayerShopName](../functions/SetPlayerShopName)函数支持按需加载这些脚本，需使用有效的商店名称（或空字符串卸载当前脚本）。完整室内场景信息请参阅[室内场景文档](../resources/interiorids)。
+在 GTA: SA（及 SA-MP）中，当玩家进入特定室内场景时会触发预设脚本。多数商店场景使用外部脚本加载机制。[SetPlayerShopName](../functions/SetPlayerShopName)函数支持按需加载这些脚本，需使用有效的商店名称（或空字符串卸载当前脚本）。完整室内场景信息请参阅[室内场景文档](interiorids)。
 
 :::
 

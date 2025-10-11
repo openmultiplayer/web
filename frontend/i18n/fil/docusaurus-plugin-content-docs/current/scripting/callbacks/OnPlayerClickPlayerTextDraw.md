@@ -75,6 +75,6 @@ Kapag ang player ay pinindot ang ESC para i cancel ang textdraw, OnPlayerClickTe
 
 ## Mga Kaugnay na Functions
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable.md): I set depende kung ang player-textdraw ay napipindot tungo sa SelectTextDraw.
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Natatawag kapag ang player ay pumindot sa isang textdraw.
-- [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer.md): Natatawag kapag ang player ay pinindot ang ibang player.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): I set depende kung ang player-textdraw ay napipindot tungo sa SelectTextDraw.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Natatawag kapag ang player ay pumindot sa isang textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Natatawag kapag ang player ay pinindot ang ibang player.

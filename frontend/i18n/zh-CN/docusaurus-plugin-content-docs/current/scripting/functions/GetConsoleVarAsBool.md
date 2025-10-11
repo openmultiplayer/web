@@ -41,5 +41,5 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [GetConsoleVarAsString](GetConsoleVarAsString.md): 以字符串形式获取控制台变量
-- [GetConsoleVarAsInt](GetConsoleVarAsInt.md): 以整型形式获取控制台变量
+- [GetConsoleVarAsString](GetConsoleVarAsString): 以字符串形式获取控制台变量
+- [GetConsoleVarAsInt](GetConsoleVarAsInt): 以整型形式获取控制台变量

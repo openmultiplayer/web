@@ -37,6 +37,6 @@ printf("[ID %d 自定义模型路径]\n\
 
 ## 相关函数
 
-- [AddSimpleModel](AddSimpleModel.md): 添加新的简单物体模型
-- [AddSimpleModelTimed](AddSimpleModelTimed.md): 添加带时间限制的简单物体模型
-- [IsValidCustomModel](IsValidCustomModel.md): 验证自定义模型 ID 是否有效
+- [AddSimpleModel](AddSimpleModel): 添加新的简单物体模型
+- [AddSimpleModelTimed](AddSimpleModelTimed): 添加带时间限制的简单物体模型
+- [IsValidCustomModel](IsValidCustomModel): 验证自定义模型 ID 是否有效

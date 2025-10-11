@@ -6,7 +6,7 @@ description: This page has the all the available skins in SAMP.
 
 ## Skins List
 
-This page contains every available skin, to be used with [SetPlayerSkin](../../scripting/functions/SetPlayerSkin) and [GetPlayerSkin](../../scripting/functions/GetPlayerSkin).
+This page contains every available skin, to be used with [SetPlayerSkin](../functions/SetPlayerSkin) and [GetPlayerSkin](../functions/GetPlayerSkin).
 
 :::note These skins (3, 4, 5, 6, 8, 42, 65, 86, 119, 149, 208, 273, 289) were added in SA-MP 0.3d RC5 and will not work in earlier versions! :::
 

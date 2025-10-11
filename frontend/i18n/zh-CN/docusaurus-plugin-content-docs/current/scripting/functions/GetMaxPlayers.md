@@ -29,5 +29,5 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);  // 向玩家发送服务器最
 
 ## 相关函数
 
-- [GetPlayerPoolSize](GetPlayerPoolSize.md): 获取当前已连接玩家的最高 ID
-- [IsPlayerConnected](IsPlayerConnected.md): 检测玩家是否已连接服务器
+- [GetPlayerPoolSize](GetPlayerPoolSize): 获取当前已连接玩家的最高 ID
+- [IsPlayerConnected](IsPlayerConnected): 检测玩家是否已连接服务器

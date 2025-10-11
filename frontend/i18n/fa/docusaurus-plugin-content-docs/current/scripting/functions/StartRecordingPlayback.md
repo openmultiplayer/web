@@ -25,4 +25,4 @@ public OnNPCEnterVehicle(vehicleid, seatid)
 
 ## توابع مرتبط
 
-- [StopRecordingPlayback](../functions/StopRecordingPlayback): پخش فایل .rec را متوقف می‌کند.
+- [StopRecordingPlayback](StopRecordingPlayback): پخش فایل .rec را متوقف می‌کند.

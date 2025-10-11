@@ -14,7 +14,7 @@ sidebar_label: 对话框样式
 :::
 
 - 本文说明[ShowPlayerDialog](../functions/ShowPlayerDialog)和[OnDialogResponse](../callbacks/OnDialogResponse)的行为规范
-- 各类限制详见[限制说明](../resources/limits)
+- 各类限制详见[限制说明](limits)
 - 响应示例均使用以下测试代码：
 
 ```c

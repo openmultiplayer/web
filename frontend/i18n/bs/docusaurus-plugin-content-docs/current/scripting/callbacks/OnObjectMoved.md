@@ -37,8 +37,8 @@ SetObjectPos ne radi kada ga koristite u ovom callback-u. Kako biste popravili t
 
 ## Srodne Funkcije
 
-- [MoveObject](../functions/MoveObject.md): Pomjeri objekar.
-- [MovePlayerObject](../functions/MovePlayerObject.md): Pomjeri player objekat.
-- [IsObjectMoving](../functions/IsObjectMoving.md): Provjerite da li se objekat kreće.
-- [StopObject](../functions/StopObject.md): Zaustavite objekat od kretanja.
-- [OnPlayerObjectMoved](OnPlayerObjectMoved.md): Pozvan kada player-objekat prestane da se kreće.
+- [MoveObject](../functions/MoveObject): Pomjeri objekar.
+- [MovePlayerObject](../functions/MovePlayerObject): Pomjeri player objekat.
+- [IsObjectMoving](../functions/IsObjectMoving): Provjerite da li se objekat kreće.
+- [StopObject](../functions/StopObject): Zaustavite objekat od kretanja.
+- [OnPlayerObjectMoved](OnPlayerObjectMoved): Pozvan kada player-objekat prestane da se kreće.

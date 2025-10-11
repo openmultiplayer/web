@@ -3,7 +3,7 @@ title: Object Edition Response Types
 sidebar_label: Object Edition Response Types
 ---
 
-Used in [OnPlayerEditObject](../callbacks/OnPlayerEditObject.md) and [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject.md).
+Used in [OnPlayerEditObject](../callbacks/OnPlayerEditObject) and [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject).
 
 ```c
 0 - EDIT_RESPONSE_CANCEL  // player cancelled (ESC)
