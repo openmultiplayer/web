@@ -12,7 +12,7 @@ Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a 
 | Name            | Description                                                                |
 | --------------- | -------------------------------------------------------------------------- |
 | vehicleid       | The ID of the vehicle to check for the component.                          |
-| CARMODTYPE:slot | The [component slot](../resources/Componentslots) to check for components. |
+| CARMODTYPE:slot | The [component slot](../resources/componentslots) to check for components. |
 
 ## Returns
 
@@ -70,4 +70,4 @@ Known Bug(s):
 
 ## Related Resources
 
-- [Vehicle Component Slots](../resources/Componentslots)
+- [Vehicle Component Slots](../resources/componentslots)
