@@ -2,7 +2,7 @@
 title: floatcos
 sidebar_label: floatcos
 description: 获取指定角度的余弦值
-tags: ["math", "floating-point"]
+tags: ["数学", "浮点"]
 ---
 
 <LowercaseNoteZH_CN />

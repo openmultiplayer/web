@@ -35,7 +35,7 @@ public OnPlayerSpawn(playerid)
 
 :::tip
 
-本函数使用英式拼写"armour"而非美式"armor"，与 SA-MP 其他函数存在拼写差异
+本函数使用英式拼写"护甲值"而非美式"armor"，与 SA-MP 其他函数存在拼写差异
 
 :::
 

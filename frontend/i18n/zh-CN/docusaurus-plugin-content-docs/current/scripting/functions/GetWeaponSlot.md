@@ -5,7 +5,7 @@ description: 获取武器的槽位编号。
 tags: ["武器"]
 ---
 
-<versionWarn version='omp v1.1.0.2612' />
+<VersionWarnZH_CN version='omp v1.1.0.2612' />
 
 ## 描述
 

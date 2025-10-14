@@ -50,7 +50,7 @@ public OnPlayerSpawn(playerid)
 - [AddStaticPickup](AddStaticPickup): 添加静态拾取物
 - [DestroyPickup](DestroyPickup): 销毁拾取物
 - [IsValidPickup](IsValidPickup): 验证拾取物有效性
-- [IsPickupStreamedIn](IsPickupStreamedIn): 检查拾取物是否流式加载
+- [IsPickupStreamedIn](IsPickupStreamedIn): 检查拾取物是否流加载
 - [SetPickupPos](SetPickupPos): 设置拾取物坐标
 - [GetPickupPos](GetPickupPos): 获取拾取物坐标
 - [SetPickupModel](SetPickupModel): 设置拾取物显示模型

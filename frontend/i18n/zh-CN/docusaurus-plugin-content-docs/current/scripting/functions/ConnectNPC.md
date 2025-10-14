@@ -5,6 +5,12 @@ description: 连接一个NPC到服务器
 tags: ["NPC"]
 ---
 
+:::warning
+
+本函数已弃用，请使用 [NPC_Create](NPC_Create).
+
+:::
+
 ## 描述
 
 在服务器中创建一个 NPC 角色

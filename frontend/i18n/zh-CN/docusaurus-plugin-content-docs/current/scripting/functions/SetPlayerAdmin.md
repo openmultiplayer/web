@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关回调
 
-- [OnRconLoginAttempt](OnRconLoginAttempt): RCON 登录尝试回调
+- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt): RCON 登录尝试回调
 
 ```
 

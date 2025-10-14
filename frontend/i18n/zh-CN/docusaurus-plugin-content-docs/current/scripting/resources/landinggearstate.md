@@ -1,7 +1,7 @@
 ---
-title: 车辆起落架状态
-sidebar_label: 车辆起落架状态
-description: 车辆起落架状态说明
+title: 飞机起落架状态
+sidebar_label: 飞机起落架状态
+description: 飞机起落架状态说明
 ---
 
 :::note
@@ -10,7 +10,7 @@ description: 车辆起落架状态说明
 
 :::
 
-| 状态定义                | ID  |
-| ----------------------- | --- |
+| 状态定义                                | ID  |
+| --------------------------------------- | --- |
 | LANDING_GEAR_STATE_DOWN(起落架放下状态) | 0   |
 | LANDING_GEAR_STATE_UP(起落架收起状态)   | 1   |

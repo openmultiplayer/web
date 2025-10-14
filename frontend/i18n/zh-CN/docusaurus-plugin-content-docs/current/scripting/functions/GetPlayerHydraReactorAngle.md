@@ -1,7 +1,7 @@
 ---
 title: GetPlayerHydraReactorAngle
 sidebar_label: GetPlayerHydraReactorAngle
-description: 获取玩家车辆的九头蛇推进器角度
+description: 获取玩家驾驶的九头蛇推进器角度
 tags: ["玩家", "车辆"]
 ---
 

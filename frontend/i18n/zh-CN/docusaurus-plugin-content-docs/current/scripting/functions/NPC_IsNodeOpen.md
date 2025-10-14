@@ -1,0 +1,75 @@
+---
+title: NPC_IsNodeOpen
+sidebar_label: NPC_IsNodeOpen
+description: 检查NPC节点是否打开。
+tags: ["npc", "节点", "导航"]
+---
+
+<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+
+## 描述
+
+检查 NPC 节点是否打开并可供使用。
+
+| 名称   | 描述      |
+| ------ | --------- |
+| nodeid | 节点的 ID |
+
+## 返回值
+
+如果节点打开则返回`true`，否则返回`false`。
+
+## 示例
+
+```c
+public OnGameModeInit()
+{
+    if (NPC_IsNodeOpen(1))
+    {
+        printf("节点1已经打开");
+    }
+    else
+    {
+        if (NPC_OpenNode(1))
+        {
+            printf("成功打开节点1");
+        }
+    }
+
+    return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/checknode", true))
+    {
+        if (NPC_IsNodeOpen(1))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "节点1已打开");
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "节点1已关闭");
+        }
+        return 1;
+    }
+    return 0;
+}
+```
+
+## 注意事项
+
+- 节点必须先通过 NPC_OpenNode 打开才能使用
+- 只有打开的节点才能被 NPC 播放
+- 在分配给 NPC 之前使用此函数检查节点可用性
+
+## 相关函数
+
+- [NPC_OpenNode](NPC_OpenNode): 打开节点供使用
+- [NPC_CloseNode](NPC_CloseNode): 关闭节点
+- [NPC_PlayNode](NPC_PlayNode): 让 NPC 播放节点
+- [NPC_GetNodeType](NPC_GetNodeType): 获取节点类型
+
+## 相关回调
+
+_此函数不会触发任何特定的回调。_
