@@ -9,12 +9,12 @@ tags: ["player", "vehicle"]
 
 Set the parameters of a vehicle for a player.
 
-| Name             | Description                                                                                              |
-| ---------------- | -------------------------------------------------------------------------------------------------------- |
-| vehicle          | The ID of the vehicle to set the parameters of.                                                          |
-| playerid         | The ID of the player to set the vehicle's parameters for.                                                |
-| bool:objective   | 'false' to disable the objective or 'true' to show it. This is a bobbing yellow arrow above the vehicle. |
-| bool:doorslocked | 'false' to unlock the doors or 'true' to lock them.                                                      |
+| Name             | Description                                                                                                                    |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| vehicle          | The ID of the vehicle to set the parameters of.                                                                                |
+| playerid         | The ID of the player to set the vehicle's parameters for.                                                                      |
+| objective        | VEHICLE_PARAMS_OFF to disable the objective or VEHICLE_PARAMS_ON to show it. This is a bobbing yellow arrow above the vehicle. |
+| doorslocked      | VEHICLE_PARAMS_OFF to unlock the doors or VEHICLE_PARAMS_ON to lock them.                                                      |
 
 ## Returns
 
@@ -26,16 +26,16 @@ Set the parameters of a vehicle for a player.
 
 ```c
 // sometime earlier:
-SetVehicleParamsForPlayer(iPlayerVehicle, iPlayerID, true, false);
+SetVehicleParamsForPlayer(iPlayerVehicle, iPlayerID, VEHICLE_PARAMS_ON, VEHICLE_PARAMS_OFF);
 
 // sometime later when you want the vehicle to respawn:
 new
-    bool:iEngine, bool:iLights, bool:iAlarm,
-    bool:iDoors, bool:iBonnet, bool:iBoot,
-    bool:iObjective;
+    iEngine, iLights, iAlarm,
+    iDoors, iBonnet, iBoot,
+    iObjective;
 
 GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
-SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, false);
+SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, VEHICLE_PARAMS_OFF);
 
 // Locks own car for all players, except the player who used the command.
 public OnPlayerCommandText(playerid, cmdtext[])
@@ -61,17 +61,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 
 // Will show vehicle markers for players streaming in for 0.3a+
-new bool:iVehicleObjective[MAX_VEHICLES][2];
+new iVehicleObjective[MAX_VEHICLES][2];
 
 public OnGameModeInit() //Or another callback
 {
     new temp = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0, 0, -1); //ID 1
-    iVehicleObjective[temp][0] = true; //Marker
-    iVehicleObjective[temp][1] = false; //Door Lock
+    iVehicleObjective[temp][0] = VEHICLE_PARAMS_ON; //Marker
+    iVehicleObjective[temp][1] = VEHICLE_PARAMS_OFF; //Door Lock
     return 1;
 }
 
-stock SetVehicleParamsForPlayerEx(vehicleid, playerid, bool:objective, bool:doorslocked)
+stock SetVehicleParamsForPlayerEx(vehicleid, playerid, objective, doorslocked)
 {
     SetVehicleParamsForPlayer(vehicleid, playerid, objective, doorslocked);
     iVehicleObjective[vehicleid][0] = objective;
@@ -97,7 +97,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     if (vehicleid == myMarkedCar)
     {
-        SetVehicleParamsForPlayer(myMarkedCar, forplayerid, true, false); // marker can be visible only if the vehicle streamed for player
+        SetVehicleParamsForPlayer(myMarkedCar, forplayerid, VEHICLE_PARAMS_ON, VEHICLE_PARAMS_OFF); // marker can be visible only if the vehicle streamed for player
     }
     return 1;
 }

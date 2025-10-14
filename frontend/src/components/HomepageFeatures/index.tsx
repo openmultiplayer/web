@@ -47,7 +47,8 @@ const FeatureList: FeatureItem[] = [
       <>
         The server is fully open source, and we welcome all contributions big or
         small. Help write the next version, or just post about any problems you
-        find, despite our attempts to have perfect code, bugs happen and your feedback is valuable.
+        find, despite our attempts to have perfect code, bugs happen and your
+        feedback is valuable.
       </>
     ),
     link: "https://github.com/openmultiplayer",
@@ -94,7 +95,7 @@ const Feature = ({ title, Img, description, link, linkText }: FeatureItem) => {
   );
 };
 
-const HomepageFeatures = (): JSX.Element => {
+const HomepageFeatures = () => {
   return (
     <section className={styles.featuresSection}>
       <div className="container">

@@ -357,7 +357,7 @@ const Page = (): ReactNode => {
     <div>
       <Layout
         title={`Servers`}
-        description="List of San Andreas servers using open.mp or SA-MP"
+        description="List of San Andreas servers using open.mp & SA-MP"
       >
         <section className="servers-container">
           {loading ? <LoadingBanner /> : <List data={data} />}

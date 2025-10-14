@@ -95,20 +95,24 @@ const Info = ({ data }: { data: ServerAllData }) => (
                   </tr>
                 </thead>
                 <tbody>
-                 {Object.entries(data.ru).map(([key, value]) => (
-                  <tr key={key}>
-                    <td>{key}</td>
-                    <td>
-                      {key === "weburl" ? (
-                        <a href={`https://${value}`} target="_blank" rel="noreferrer">
-                          {value}
-                        </a>
-                      ) : (
-                        value
-                      )}
-                    </td>
-                  </tr>
-                ))}
+                  {Object.entries(data.ru).map(([key, value]) => (
+                    <tr key={key}>
+                      <td>{key}</td>
+                      <td>
+                        {key === "weburl" ? (
+                          <a
+                            href={`https://${value}`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {value}
+                          </a>
+                        ) : (
+                          value
+                        )}
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
