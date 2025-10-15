@@ -44,7 +44,7 @@ public OnNPCDestroy(npcid)
 
 - [NPC_Create](../functions/NPC_Create): 创建新的 NPC
 - [NPC_Destroy](../functions/NPC_Destroy): 销毁现有的 NPC
-- [IsValidNPC](../functions/IsValidNPC): 检查 NPC ID 是否有效
+- [NPC_IsValid](../functions/NPC_IsValid): 检查 NPC ID 是否有效
 
 ## 相关回调
 
