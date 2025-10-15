@@ -47,5 +47,5 @@ GetVehicleRotation(vehicleid, x, y, z);
 ## Related Functions
 
 - [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
-- [GetVehicleRotation](GetVehicleRotation): Get the rotation of a vehicle on the XYZ axis.
+- [GetVehicleRotationQuat](GetVehicleRotationQuat): Get the rotation of a vehicle on all axes as a quaternion.
 - [GetVehicleMatrix](GetVehicleMatrix): Gets the actual rotation matrix of the vehicle.
