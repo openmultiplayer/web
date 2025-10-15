@@ -39,9 +39,9 @@ public OnNPCCreate(npcid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_Create](NPC_Create): Create a new NPC
-- [NPC_Destroy](NPC_Destroy): Destroy an existing NPC
-- [NPC_Spawn](NPC_Spawn): Spawn the NPC in the game world
+- [NPC_Create](../functions/NPC_Create): Create a new NPC
+- [NPC_Destroy](../functions/NPC_Destroy): Destroy an existing NPC
+- [NPC_Spawn](../functions/NPC_Spawn): Spawn the NPC in the game world
 
 ## Related Callbacks
 

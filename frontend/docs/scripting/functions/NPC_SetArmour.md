@@ -73,5 +73,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCTakeDamage](OnNPCTakeDamage): Called when NPC takes damage
-- [OnNPCDeath](OnNPCDeath): Called when NPC dies
+- [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): Called when NPC takes damage
+- [OnNPCDeath](../callbacks/OnNPCDeath): Called when NPC dies

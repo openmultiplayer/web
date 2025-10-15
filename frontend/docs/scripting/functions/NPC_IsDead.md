@@ -53,5 +53,5 @@ public OnNPCTakeDamage(npcid, damagerid, Float:damage, WEAPON:weapon, bodypart)
 
 ## Related Callbacks
 
-- [OnNPCDeath](OnNPCDeath): Called when an NPC dies
-- [OnNPCTakeDamage](OnNPCTakeDamage): Called when an NPC takes damage
+- [OnNPCDeath](../callbacks/OnNPCDeath): Called when an NPC dies
+- [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): Called when an NPC takes damage

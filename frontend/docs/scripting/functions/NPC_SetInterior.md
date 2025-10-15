@@ -203,4 +203,4 @@ public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns

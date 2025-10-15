@@ -38,10 +38,10 @@ public OnNPCSpawn(npcid)
 
 ## Related Functions
 
-- [NPC_Spawn](NPC_Spawn): Spawn an NPC in the game world
-- [NPC_Respawn](NPC_Respawn): Respawn a dead NPC
-- [NPC_SetHealth](NPC_SetHealth): Set NPC's health
-- [NPC_SetWeapon](NPC_SetWeapon): Set NPC's weapon
+- [NPC_Spawn](../functions/NPC_Spawn): Spawn an NPC in the game world
+- [NPC_Respawn](../functions/NPC_Respawn): Respawn a dead NPC
+- [NPC_SetHealth](../functions/NPC_SetHealth): Set NPC's health
+- [NPC_SetWeapon](../functions/NPC_SetWeapon): Set NPC's weapon
 
 ## Related Callbacks
 

@@ -40,10 +40,10 @@ public OnNPCFinishNode(npcid, nodeid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_PlayNode](NPC_PlayNode): Start NPC node-based navigation
-- [NPC_StopPlayingNode](NPC_StopPlayingNode): Stop NPC node navigation
-- [NPC_IsPlayingNode](NPC_IsPlayingNode): Check if NPC is navigating a node
-- [NPC_OpenNode](NPC_OpenNode): Open a navigation node file
+- [NPC_PlayNode](../functions/NPC_PlayNode): Start NPC node-based navigation
+- [NPC_StopPlayingNode](../functions/NPC_StopPlayingNode): Stop NPC node navigation
+- [NPC_IsPlayingNode](../functions/NPC_IsPlayingNode): Check if NPC is navigating a node
+- [NPC_OpenNode](../functions/NPC_OpenNode): Open a navigation node file
 
 ## Related Callbacks
 

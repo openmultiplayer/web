@@ -37,9 +37,9 @@ public OnNPCFinishMovePath(npcid, pathid)
 
 ## Related Functions
 
-- [NPC_MoveByPath](NPC_MoveByPath): Make NPC follow a path
-- [NPC_CreatePath](NPC_CreatePath): Create a new movement path
-- [NPC_IsValidPath](NPC_IsValidPath): Check if path is valid
+- [NPC_MoveByPath](../functions/NPC_MoveByPath): Make NPC follow a path
+- [NPC_CreatePath](../functions/NPC_CreatePath): Create a new movement path
+- [NPC_IsValidPath](../functions/NPC_IsValidPath): Check if path is valid
 
 ## Related Callbacks
 

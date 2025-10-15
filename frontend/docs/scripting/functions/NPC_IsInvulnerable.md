@@ -125,5 +125,5 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
 
 ## Related Callbacks
 
-- [OnNPCTakeDamage](OnNPCTakeDamage): Called when NPC takes damage (not called for invulnerable NPCs)
-- [OnNPCDeath](OnNPCDeath): Called when NPC dies (invulnerable NPCs cannot die)
+- [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): Called when NPC takes damage (not called for invulnerable NPCs)
+- [OnNPCDeath](../callbacks/OnNPCDeath): Called when NPC dies (invulnerable NPCs cannot die)

@@ -51,10 +51,10 @@ public OnNPCTakeDamage(npcid, issuerid, Float:amount, weaponid, bodypart)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_GetHealth](NPC_GetHealth): Get NPC's current health
-- [NPC_SetHealth](NPC_SetHealth): Set NPC's health
-- [NPC_GetArmour](NPC_GetArmour): Get NPC's armor
-- [NPC_SetArmour](NPC_SetArmour): Set NPC's armor
+- [NPC_GetHealth](../functions/NPC_GetHealth): Get NPC's current health
+- [NPC_SetHealth](../functions/NPC_SetHealth): Set NPC's health
+- [NPC_GetArmour](../functions/NPC_GetArmour): Get NPC's armor
+- [NPC_SetArmour](../functions/NPC_SetArmour): Set NPC's armor
 
 ## Related Callbacks
 

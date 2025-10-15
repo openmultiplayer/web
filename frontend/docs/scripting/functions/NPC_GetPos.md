@@ -91,5 +91,5 @@ public CheckNPCDistances()
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns.
-- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes movement.
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns.
+- [OnNPCFinishMove](../callbacks/OnNPCFinishMove): Called when NPC finishes movement.

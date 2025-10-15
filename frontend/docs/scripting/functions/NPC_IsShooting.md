@@ -81,5 +81,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC shoots
-- [OnNPCGiveDamage](OnNPCGiveDamage): Called when NPC damages player
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when NPC shoots
+- [OnNPCGiveDamage](../callbacks/OnNPCGiveDamage): Called when NPC damages player

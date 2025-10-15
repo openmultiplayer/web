@@ -129,4 +129,4 @@ public NPCPatrolSequence(npcid)
 
 ## Related Callbacks
 
-- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes movement.
+- [OnNPCFinishMove](../callbacks/OnNPCFinishMove): Called when NPC finishes movement.

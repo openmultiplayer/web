@@ -77,4 +77,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC reaches target (not called for continuous following).
+- [OnNPCFinishMove](../callbacks/OnNPCFinishMove): Called when NPC reaches target (not called for continuous following).

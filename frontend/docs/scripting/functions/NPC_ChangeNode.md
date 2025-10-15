@@ -62,5 +62,5 @@ public ChangeNPCNode(npcid)
 
 ## Related Callbacks
 
-- [OnNPCChangeNode](OnNPCChangeNode): Called when NPC changes nodes
-- [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes a node
+- [OnNPCChangeNode](../callbacks/OnNPCChangeNode): Called when NPC changes nodes
+- [OnNPCFinishNode](../callbacks/OnNPCFinishNode): Called when NPC finishes a node

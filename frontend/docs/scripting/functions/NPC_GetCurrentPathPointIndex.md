@@ -65,5 +65,5 @@ public CheckPathProgress()
 
 ## Related Callbacks
 
-- [OnNPCFinishMovePath](OnNPCFinishMovePath): Called when NPC finishes path
-- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes movement
+- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): Called when NPC finishes path
+- [OnNPCFinishMove](../callbacks/OnNPCFinishMove): Called when NPC finishes movement

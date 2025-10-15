@@ -53,4 +53,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCDestroy](OnNPCDestroy): Called when an NPC is destroyed.
+- [OnNPCDestroy](../callbacks/OnNPCDestroy): Called when an NPC is destroyed.

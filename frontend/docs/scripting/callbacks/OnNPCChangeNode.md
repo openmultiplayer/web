@@ -54,10 +54,10 @@ public OnNPCChangeNode(npcid, newnodeid, oldnodeid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_PlayNode](NPC_PlayNode): Start NPC node-based navigation
-- [NPC_OpenNode](NPC_OpenNode): Open a navigation node file
-- [NPC_CloseNode](NPC_CloseNode): Close a navigation node file
-- [NPC_StopPlayingNode](NPC_StopPlayingNode): Stop NPC node navigation
+- [NPC_PlayNode](../functions/NPC_PlayNode): Start NPC node-based navigation
+- [NPC_OpenNode](../functions/NPC_OpenNode): Open a navigation node file
+- [NPC_CloseNode](../functions/NPC_CloseNode): Close a navigation node file
+- [NPC_StopPlayingNode](../functions/NPC_StopPlayingNode): Stop NPC node navigation
 
 ## Related Callbacks
 

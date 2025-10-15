@@ -86,5 +86,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes node
-- [OnNPCChangeNode](OnNPCChangeNode): Called when NPC changes nodes
+- [OnNPCFinishNode](../callbacks/OnNPCFinishNode): Called when NPC finishes node
+- [OnNPCChangeNode](../callbacks/OnNPCChangeNode): Called when NPC changes nodes

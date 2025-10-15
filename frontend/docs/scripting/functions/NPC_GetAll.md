@@ -80,4 +80,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCCreate](OnNPCCreate): Called when an NPC is created.
+- [OnNPCCreate](../callbacks/OnNPCCreate): Called when an NPC is created.

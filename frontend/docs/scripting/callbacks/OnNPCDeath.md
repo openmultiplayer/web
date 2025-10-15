@@ -53,10 +53,10 @@ public RespawnNPC(npcid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_Kill](NPC_Kill): Kill an NPC
-- [NPC_Respawn](NPC_Respawn): Respawn a dead NPC
-- [NPC_GetHealth](NPC_GetHealth): Get NPC's health
-- [NPC_SetHealth](NPC_SetHealth): Set NPC's health
+- [NPC_Kill](../functions/NPC_Kill): Kill an NPC
+- [NPC_Respawn](../functions/NPC_Respawn): Respawn a dead NPC
+- [NPC_GetHealth](../functions/NPC_GetHealth): Get NPC's health
+- [NPC_SetHealth](../functions/NPC_SetHealth): Set NPC's health
 
 ## Related Callbacks
 

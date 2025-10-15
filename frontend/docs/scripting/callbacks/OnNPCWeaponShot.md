@@ -60,11 +60,11 @@ public OnNPCWeaponShot(npcid, weaponid, hittype, hitid, Float:fX, Float:fY, Floa
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_AimAt](NPC_AimAt): Make NPC aim at a position
-- [NPC_AimAtPlayer](NPC_AimAtPlayer): Make NPC aim at a player
-- [NPC_StopAim](NPC_StopAim): Stop NPC from aiming
-- [NPC_SetWeapon](NPC_SetWeapon): Set NPC's weapon
-- [NPC_GetAmmo](NPC_GetAmmo): Get NPC's ammo count
+- [NPC_AimAt](../functions/NPC_AimAt): Make NPC aim at a position
+- [NPC_AimAtPlayer](../functions/NPC_AimAtPlayer): Make NPC aim at a player
+- [NPC_StopAim](../functions/NPC_StopAim): Stop NPC from aiming
+- [NPC_SetWeapon](../functions/NPC_SetWeapon): Set NPC's weapon
+- [NPC_GetAmmo](../functions/NPC_GetAmmo): Get NPC's ammo count
 
 ## Related Callbacks
 

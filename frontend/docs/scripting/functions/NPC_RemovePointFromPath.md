@@ -104,5 +104,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCFinishMovePath](OnNPCFinishMovePath): Called when NPC finishes moving along a path
-- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes any movement
+- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): Called when NPC finishes moving along a path
+- [OnNPCFinishMove](../callbacks/OnNPCFinishMove): Called when NPC finishes any movement

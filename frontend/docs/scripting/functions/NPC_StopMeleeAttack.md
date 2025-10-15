@@ -96,4 +96,4 @@ public NPCFightSequence(npcid)
 
 ## Related Callbacks
 
-- [OnNPCGiveDamage](OnNPCGiveDamage): Called when NPC damages someone
+- [OnNPCGiveDamage](../callbacks/OnNPCGiveDamage): Called when NPC damages someone

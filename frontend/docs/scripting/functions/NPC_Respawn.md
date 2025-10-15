@@ -77,5 +77,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns.
-- [OnNPCRespawn](OnNPCRespawn): Called when NPC respawns.
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns.
+- [OnNPCRespawn](../callbacks/OnNPCRespawn): Called when NPC respawns.

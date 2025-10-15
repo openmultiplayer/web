@@ -118,6 +118,6 @@ public OnNPCFinishNode(npcid, nodeId)
 
 ## Related Callbacks
 
-- [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes navigating a node
-- [OnNPCFinishNodePoint](OnNPCFinishNodePoint): Called when NPC reaches a point within a node
-- [OnNPCChangeNode](OnNPCChangeNode): Called when NPC changes from one node to another
+- [OnNPCFinishNode](../callbacks/OnNPCFinishNode): Called when NPC finishes navigating a node
+- [OnNPCFinishNodePoint](../callbacks/OnNPCFinishNodePoint): Called when NPC reaches a point within a node
+- [OnNPCChangeNode](../callbacks/OnNPCChangeNode): Called when NPC changes from one node to another

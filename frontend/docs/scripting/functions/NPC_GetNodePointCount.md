@@ -89,5 +89,5 @@ public CheckNodeProgress(npcid, nodeid)
 
 ## Related Callbacks
 
-- [OnNPCFinishNodePoint](OnNPCFinishNodePoint): Called when NPC finishes a node point
-- [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes a node
+- [OnNPCFinishNodePoint](../callbacks/OnNPCFinishNodePoint): Called when NPC finishes a node point
+- [OnNPCFinishNode](../callbacks/OnNPCFinishNode): Called when NPC finishes a node

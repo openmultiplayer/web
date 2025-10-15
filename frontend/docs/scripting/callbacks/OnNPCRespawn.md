@@ -40,10 +40,10 @@ public OnNPCRespawn(npcid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_Respawn](NPC_Respawn): Respawn an NPC
-- [NPC_Spawn](NPC_Spawn): Spawn an NPC for the first time
-- [NPC_SetHealth](NPC_SetHealth): Set NPC's health
-- [NPC_SetPosition](NPC_SetPosition): Set NPC's position
+- [NPC_Respawn](../functions/NPC_Respawn): Respawn an NPC
+- [NPC_Spawn](../functions/NPC_Spawn): Spawn an NPC for the first time
+- [NPC_SetHealth](../functions/NPC_SetHealth): Set NPC's health
+- [NPC_SetPosition](../functions/NPC_SetPosition): Set NPC's position
 
 ## Related Callbacks
 

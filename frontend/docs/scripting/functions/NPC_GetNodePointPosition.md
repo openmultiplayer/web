@@ -104,4 +104,4 @@ public ShowNodePath(nodeid)
 
 ## Related Callbacks
 
-- [OnNPCFinishNodePoint](OnNPCFinishNodePoint): Called when NPC finishes a node point
+- [OnNPCFinishNodePoint](../callbacks/OnNPCFinishNodePoint): Called when NPC finishes a node point

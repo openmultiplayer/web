@@ -51,10 +51,10 @@ public ResumeNavigation(npcid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_PlayNode](NPC_PlayNode): Start NPC node-based navigation
-- [NPC_PausePlayingNode](NPC_PausePlayingNode): Pause NPC node navigation
-- [NPC_ResumePlayingNode](NPC_ResumePlayingNode): Resume paused node navigation
-- [NPC_StopPlayingNode](NPC_StopPlayingNode): Stop NPC node navigation
+- [NPC_PlayNode](../functions/NPC_PlayNode): Start NPC node-based navigation
+- [NPC_PausePlayingNode](../functions/NPC_PausePlayingNode): Pause NPC node navigation
+- [NPC_ResumePlayingNode](../functions/NPC_ResumePlayingNode): Resume paused node navigation
+- [NPC_StopPlayingNode](../functions/NPC_StopPlayingNode): Stop NPC node navigation
 
 ## Related Callbacks
 

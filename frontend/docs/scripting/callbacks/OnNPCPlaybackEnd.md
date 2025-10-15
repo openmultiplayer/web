@@ -40,10 +40,10 @@ public OnNPCPlaybackEnd(npcid, recordid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_StartPlayback](NPC_StartPlayback): Start NPC playback of a recording
-- [NPC_StopPlayback](NPC_StopPlayback): Stop NPC playback
-- [NPC_PausePlayback](NPC_PausePlayback): Pause/unpause NPC playback
-- [NPC_IsPlayingPlayback](NPC_IsPlayingPlayback): Check if NPC is playing a recording
+- [NPC_StartPlayback](../functions/NPC_StartPlayback): Start NPC playback of a recording
+- [NPC_StopPlayback](../functions/NPC_StopPlayback): Stop NPC playback
+- [NPC_PausePlayback](../functions/NPC_PausePlayback): Pause/unpause NPC playback
+- [NPC_IsPlayingPlayback](../functions/NPC_IsPlayingPlayback): Check if NPC is playing a recording
 
 ## Related Callbacks
 

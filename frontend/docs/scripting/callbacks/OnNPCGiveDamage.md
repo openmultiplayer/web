@@ -50,10 +50,10 @@ public OnNPCGiveDamage(npcid, damagedid, Float:amount, weaponid, bodypart)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_AimAt](NPC_AimAt): Make NPC aim at a position
-- [NPC_AimAtPlayer](NPC_AimAtPlayer): Make NPC aim at a player
-- [NPC_Shoot](NPC_Shoot): Make NPC shoot
-- [NPC_SetWeapon](NPC_SetWeapon): Set NPC's weapon
+- [NPC_AimAt](../functions/NPC_AimAt): Make NPC aim at a position
+- [NPC_AimAtPlayer](../functions/NPC_AimAtPlayer): Make NPC aim at a player
+- [NPC_Shoot](../functions/NPC_Shoot): Make NPC shoot
+- [NPC_SetWeapon](../functions/NPC_SetWeapon): Set NPC's weapon
 
 ## Related Callbacks
 

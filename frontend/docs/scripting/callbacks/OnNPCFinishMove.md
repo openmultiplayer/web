@@ -42,10 +42,10 @@ public OnNPCFinishMove(npcid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_Move](NPC_Move): Make NPC move to a position
-- [NPC_MoveToPlayer](NPC_MoveToPlayer): Make NPC follow a player
-- [NPC_StopMove](NPC_StopMove): Stop NPC movement
-- [NPC_IsMoving](NPC_IsMoving): Check if NPC is currently moving
+- [NPC_Move](../functions/NPC_Move): Make NPC move to a position
+- [NPC_MoveToPlayer](../functions/NPC_MoveToPlayer): Make NPC follow a player
+- [NPC_StopMove](../functions/NPC_StopMove): Stop NPC movement
+- [NPC_IsMoving](../functions/NPC_IsMoving): Check if NPC is currently moving
 
 ## Related Callbacks
 

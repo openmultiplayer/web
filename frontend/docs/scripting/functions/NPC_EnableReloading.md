@@ -74,4 +74,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponStateChange](OnNPCWeaponStateChange): Called when NPC weapon state changes
+- [OnNPCWeaponStateChange](../callbacks/OnNPCWeaponStateChange): Called when NPC weapon state changes

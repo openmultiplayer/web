@@ -43,11 +43,11 @@ public OnNPCWeaponStateChange(npcid, newstate, oldstate)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_GetWeaponState](NPC_GetWeaponState): Get NPC's current weapon state
-- [NPC_GetAmmo](NPC_GetAmmo): Get NPC's ammo count
-- [NPC_SetAmmo](NPC_SetAmmo): Set NPC's ammo count
-- [NPC_GetAmmoInClip](NPC_GetAmmoInClip): Get ammo in current clip
-- [NPC_EnableReloading](NPC_EnableReloading): Enable/disable automatic reloading
+- [NPC_GetWeaponState](../functions/NPC_GetWeaponState): Get NPC's current weapon state
+- [NPC_GetAmmo](../functions/NPC_GetAmmo): Get NPC's ammo count
+- [NPC_SetAmmo](../functions/NPC_SetAmmo): Set NPC's ammo count
+- [NPC_GetAmmoInClip](../functions/NPC_GetAmmoInClip): Get ammo in current clip
+- [NPC_EnableReloading](../functions/NPC_EnableReloading): Enable/disable automatic reloading
 
 ## Related Callbacks
 
