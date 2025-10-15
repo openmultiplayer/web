@@ -11,9 +11,9 @@ tags: ["npc", "node", "navigation"]
 
 Gets the type of an NPC node.
 
-| Name   | Description            |
-| ------ | ---------------------- |
-| nodeid | The ID of the node    |
+| Name   | Description        |
+| ------ | ------------------ |
+| nodeid | The ID of the node |
 
 ## Returns
 
@@ -28,7 +28,7 @@ public OnGameModeInit()
     if (NPC_OpenNode(1))
     {
         new nodeType = NPC_GetNodeType(1);
-        
+
         new typeString[32];
         switch(nodeType)
         {
@@ -38,10 +38,10 @@ public OnGameModeInit()
             case 3: typeString = "Aircraft";
             default: typeString = "Unknown";
         }
-        
+
         printf("Node 1 is type %d (%s)", nodeType, typeString);
     }
-    
+
     return 1;
 }
 
@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             if (NPC_IsNodeOpen(nodeid))
             {
                 new nodeType = NPC_GetNodeType(nodeid);
-                
+
                 new typeString[32];
                 switch(nodeType)
                 {
@@ -64,13 +64,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
                     case 3: typeString = "Aircraft";
                     default: format(typeString, sizeof(typeString), "Type %d", nodeType);
                 }
-                
+
                 new msg[128];
                 format(msg, sizeof(msg), "Node %d: %s", nodeid, typeString);
                 SendClientMessage(playerid, 0xFFFFFFFF, msg);
             }
         }
-        
+
         return 1;
     }
     return 0;

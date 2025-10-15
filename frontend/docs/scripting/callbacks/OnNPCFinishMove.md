@@ -11,9 +11,9 @@ tags: ["npc", "movement"]
 
 This callback is called when an NPC finishes moving to its target destination.
 
-| Name  | Description                                   |
-| ----- | --------------------------------------------- |
-| npcid | The ID of the NPC that finished moving       |
+| Name  | Description                            |
+| ----- | -------------------------------------- |
+| npcid | The ID of the NPC that finished moving |
 
 ## Examples
 
@@ -21,12 +21,12 @@ This callback is called when an NPC finishes moving to its target destination.
 public OnNPCFinishMove(npcid)
 {
     printf("NPC %d has reached its destination", npcid);
-    
+
     // Move to next destination
     new Float:x, Float:y, Float:z;
     NPC_GetPos(npcid, x, y, z);
     NPC_Move(npcid, x + 10.0, y + 10.0, z, NPC_MOVE_TYPE_WALK);
-    
+
     return true;
 }
 ```

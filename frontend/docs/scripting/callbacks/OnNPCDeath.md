@@ -11,11 +11,11 @@ tags: ["npc"]
 
 This callback is called when an NPC dies.
 
-| Name     | Description                                           |
-| -------- | ----------------------------------------------------- |
-| npcid    | The ID of the NPC that died                          |
+| Name     | Description                                                                 |
+| -------- | --------------------------------------------------------------------------- |
+| npcid    | The ID of the NPC that died                                                 |
 | killerid | The ID of the player/NPC that killed the NPC (or INVALID_PLAYER_ID if none) |
-| reason   | The reason for death (weapon ID or death cause)      |
+| reason   | The reason for death (weapon ID or death cause)                             |
 
 ## Examples
 
@@ -30,10 +30,10 @@ public OnNPCDeath(npcid, killerid, reason)
     {
         printf("NPC %d died", npcid);
     }
-    
+
     // Respawn after 5 seconds
     SetTimerEx("RespawnNPC", 5000, false, "i", npcid);
-    
+
     return true;
 }
 

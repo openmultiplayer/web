@@ -11,16 +11,16 @@ tags: ["npc", "animation"]
 
 Gets the current animation data of an NPC.
 
-| Name        | Description                                      |
-| ----------- | ------------------------------------------------ |
-| npcid       | The ID of the NPC                               |
-| &animationId| Variable to store the animation ID              |
-| &delta      | Variable to store the animation speed           |
-| &loop       | Variable to store whether animation loops       |
-| &lockX      | Variable to store X-axis lock state             |
-| &lockY      | Variable to store Y-axis lock state             |
-| &freeze     | Variable to store freeze state at end           |
-| &time       | Variable to store animation time                |
+| Name         | Description                               |
+| ------------ | ----------------------------------------- |
+| npcid        | The ID of the NPC                         |
+| &animationId | Variable to store the animation ID        |
+| &delta       | Variable to store the animation speed     |
+| &loop        | Variable to store whether animation loops |
+| &lockX       | Variable to store X-axis lock state       |
+| &lockY       | Variable to store Y-axis lock state       |
+| &freeze      | Variable to store freeze state at end     |
+| &time        | Variable to store animation time          |
 
 ## Returns
 
@@ -38,9 +38,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             new animId, Float:delta, bool:loop, bool:lockX, bool:lockY, bool:freeze, time;
             NPC_GetAnimation(npcid, animId, delta, loop, lockX, lockY, freeze, time);
-            
+
             new msg[256];
-            format(msg, sizeof(msg), 
+            format(msg, sizeof(msg),
                 "NPC %d Animation - ID: %d, Delta: %.2f, Loop: %d, LockX: %d, LockY: %d, Freeze: %d, Time: %d",
                 npcid, animId, delta, loop, lockX, lockY, freeze, time);
             SendClientMessage(playerid, 0xFFFFFFFF, msg);
@@ -55,7 +55,7 @@ public CheckNPCAnimations()
 {
     new animId, Float:delta, bool:loop, bool:lockX, bool:lockY, bool:freeze, time;
     NPC_GetAnimation(0, animId, delta, loop, lockX, lockY, freeze, time);
-    
+
     if (animId != 0)
     {
         printf("NPC 0 is playing animation %d", animId);

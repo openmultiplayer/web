@@ -7,17 +7,17 @@ tags: ["npc"]
 
 ## Description
 
-Get the position of the NPC. 
- 
-| Name      | Description                                            |
-| --------- | -------------------------------------------------------|
-| &Float:x  | A float to save the X coordinate, passed by reference. |
-| &Float:y  | A float to save the Y coordinate, passed by reference. |
-| &Float:z  | A float to save the Z coordinate, passed by reference. |
+Get the position of the NPC.
+
+| Name     | Description                                            |
+| -------- | ------------------------------------------------------ |
+| &Float:x | A float to save the X coordinate, passed by reference. |
+| &Float:y | A float to save the Y coordinate, passed by reference. |
+| &Float:z | A float to save the Z coordinate, passed by reference. |
 
 ## Returns
 
-This function does not return any specific values.  
+This function does not return any specific values.
 
 ## Example
 

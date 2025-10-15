@@ -28,13 +28,13 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_SNIPER);
     NPC_SetAmmo(npcid, 50); // Give 50 ammo
-    
+
     // Start aiming at target location
     NPC_AimAt(npcid, 2000.0, 1500.0, 20.0, true, 1000, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_ALL);
-    
+
     // Auto-cease fire after 15 seconds
     SetTimerEx("CeaseFire", 15000, false, "i", npcid);
-    
+
     return 1;
 }
 
@@ -63,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/standdown", true))
     {
         // Complete standdown procedure
@@ -71,19 +71,19 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             NPC_StopShoot(0);
         }
-        
+
         if (NPC_IsAiming(0))
         {
             NPC_StopAim(0);
         }
-        
+
         // Return to passive stance
         NPC_SetWeapon(0, WEAPON_FIST);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 standing down from combat");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/combatmode", true))
     {
         // Toggle between combat and peaceful mode
@@ -99,11 +99,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
             // Switch to combat
             NPC_SetWeapon(0, WEAPON_M4);
             NPC_SetAmmo(0, 300); // Give 300 ammo
-            
+
             new Float:px, Float:py, Float:pz;
             GetPlayerPos(playerid, px, py, pz);
             NPC_AimAt(0, px, py, pz + 1.0, false, 0, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
-            
+
             SendClientMessage(playerid, 0xFF0000FF, "NPC 0 switched to combat mode");
         }
         return 1;

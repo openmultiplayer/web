@@ -11,9 +11,9 @@ tags: ["npc", "invulnerable", "damage", "protection"]
 
 Sets whether an NPC is invulnerable to damage.
 
-| Name   | Description                                    |
-| ------ | ---------------------------------------------- |
-| npcid  | The ID of the NPC                             |
+| Name   | Description                                         |
+| ------ | --------------------------------------------------- |
+| npcid  | The ID of the NPC                                   |
 | toggle | true to make invulnerable, false to make vulnerable |
 
 ## Returns
@@ -27,10 +27,10 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("InvincibleBot");
     NPC_Spawn(npcid);
-    
+
     // Make the NPC invulnerable to all damage
     NPC_SetInvulnerable(npcid, true);
-    
+
     printf("NPC %d is now invulnerable", npcid);
     return 1;
 }
@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // Toggle god mode for NPC 0
         new bool:current = NPC_IsInvulnerable(0);
         NPC_SetInvulnerable(0, !current);
-        
+
         new msg[64];
         format(msg, sizeof(msg), "NPC 0 god mode: %s", !current ? "ON" : "OFF");
         SendClientMessage(playerid, 0xFFFFFFFF, msg);

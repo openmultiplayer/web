@@ -28,10 +28,10 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_AK47);
     NPC_SetAmmo(npcid, 30);
-    
+
     // Start monitoring weapon state
     SetTimer("MonitorWeaponState", 1000, true);
-    
+
     return 1;
 }
 
@@ -39,7 +39,7 @@ forward MonitorWeaponState();
 public MonitorWeaponState()
 {
     new weaponState = NPC_GetWeaponState(0);
-    
+
     new stateName[32];
     switch(weaponState)
     {
@@ -49,7 +49,7 @@ public MonitorWeaponState()
         case WEAPONSTATE_RELOADING: stateName = "Reloading";
         default: stateName = "Unknown";
     }
-    
+
     printf("NPC 0 weapon state: %s (%d)", stateName, weaponState);
 }
 
@@ -60,9 +60,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new weaponState = NPC_GetWeaponState(0);
         new weapon = NPC_GetWeapon(0);
         new ammo = NPC_GetAmmoInClip(0);
-        
+
         new msg[128];
-        format(msg, sizeof(msg), "NPC 0: Weapon %d, State %d, Ammo in clip: %d", 
+        format(msg, sizeof(msg), "NPC 0: Weapon %d, State %d, Ammo in clip: %d",
             weapon, weaponState, ammo);
         SendClientMessage(playerid, 0xFFFFFFFF, msg);
         return 1;

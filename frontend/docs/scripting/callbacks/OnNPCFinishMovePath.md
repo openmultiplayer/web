@@ -11,10 +11,10 @@ tags: ["npc", "movement", "path"]
 
 This callback is called when an NPC finishes moving along a predefined path.
 
-| Name   | Description                                    |
-| ------ | ---------------------------------------------- |
-| npcid  | The ID of the NPC that finished the path      |
-| pathid | The ID of the path that was completed         |
+| Name   | Description                              |
+| ------ | ---------------------------------------- |
+| npcid  | The ID of the NPC that finished the path |
+| pathid | The ID of the path that was completed    |
 
 ## Examples
 
@@ -22,10 +22,10 @@ This callback is called when an NPC finishes moving along a predefined path.
 public OnNPCFinishMovePath(npcid, pathid)
 {
     printf("NPC %d finished moving along path %d", npcid, pathid);
-    
+
     // Start moving on another path
     NPC_MoveByPath(npcid, pathid + 1, NPC_MOVE_TYPE_WALK);
-    
+
     return true;
 }
 ```

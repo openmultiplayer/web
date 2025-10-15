@@ -11,10 +11,10 @@ tags: ["npc", "node"]
 
 Updates an NPC to a specific point in the currently playing node.
 
-| Name    | Description                                   |
-| ------- | --------------------------------------------- |
-| npcid   | The ID of the NPC                             |
-| pointid | The point ID in the node to update to        |
+| Name    | Description                           |
+| ------- | ------------------------------------- |
+| npcid   | The ID of the NPC                     |
+| pointid | The point ID in the node to update to |
 
 ## Returns
 
@@ -27,16 +27,16 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("NodeNavigator");
     NPC_Spawn(npcid);
-    
+
     // Open a node and start playing
     if (NPC_OpenNode(1))
     {
         NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-        
+
         // Update to specific point after 10 seconds
         SetTimerEx("UpdateToPoint", 10000, false, "ii", npcid, 5);
     }
-    
+
     return 1;
 }
 

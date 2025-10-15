@@ -11,10 +11,10 @@ tags: ["npc", "weapon", "reload"]
 
 Gets the reload time of an NPC's weapon.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| npcid    | The ID of the NPC                       |
-| weaponid | The weapon ID to get reload time for    |
+| Name     | Description                          |
+| -------- | ------------------------------------ |
+| npcid    | The ID of the NPC                    |
+| weaponid | The weapon ID to get reload time for |
 
 ## Returns
 
@@ -29,14 +29,14 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_AK47);
     NPC_SetAmmo(npcid, 300);
-    
+
     // Set custom reload time
     NPC_SetWeaponReloadTime(npcid, WEAPON_AK47, 1500);
-    
+
     // Check the reload time
     new reloadTime = NPC_GetWeaponReloadTime(npcid, WEAPON_AK47);
     printf("NPC %d AK47 reload time set to: %dms", npcid, reloadTime);
-    
+
     return 1;
 }
 
@@ -49,9 +49,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             new reloadTime = NPC_GetWeaponReloadTime(0, weapon);
             new actualTime = NPC_GetWeaponActualReloadTime(0, weapon);
-            
+
             new msg[128];
-            format(msg, sizeof(msg), "NPC 0 weapon %d: Custom reload %dms, Default %dms", 
+            format(msg, sizeof(msg), "NPC 0 weapon %d: Custom reload %dms, Default %dms",
                 weapon, reloadTime, actualTime);
             SendClientMessage(playerid, 0xFFFFFFFF, msg);
         }

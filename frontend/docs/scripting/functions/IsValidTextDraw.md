@@ -29,7 +29,7 @@ new Text:gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
-    
+
     if (IsValidTextDraw(gMyTextdraw))
     {
         // Textdraw is valid

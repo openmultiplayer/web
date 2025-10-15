@@ -11,9 +11,9 @@ tags: ["npc"]
 
 Creates a new NPC.
 
-| Name         | Description                                          |
-| ------------ | ---------------------------------------------------- |
-| const name[] | The name of the NPC (max 24 characters).             |
+| Name         | Description                              |
+| ------------ | ---------------------------------------- |
+| const name[] | The name of the NPC (max 24 characters). |
 
 ## Returns
 

@@ -26,17 +26,17 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Conductor");
     NPC_Spawn(npcid);
-    
+
     // Create train
     new vehicleid = CreateVehicle(537, 1700.0, -1953.0, 14.0, 0.0, -1, -1, 300); // Freight Train
     NPC_PutInVehicle(npcid, vehicleid, 0);
-    
+
     // Set train speed
     NPC_SetVehicleTrainSpeed(npcid, 50.0);
-    
+
     new Float:speed = NPC_GetVehicleTrainSpeed(npcid);
     printf("NPC %d train speed: %.2f", npcid, speed);
-    
+
     return 1;
 }
 
@@ -75,4 +75,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

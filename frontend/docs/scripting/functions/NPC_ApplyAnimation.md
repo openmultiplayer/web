@@ -11,17 +11,17 @@ tags: ["npc", "animation"]
 
 Applies a specific animation to an NPC using animation library and name.
 
-| Name      | Description                                    |
-| --------- | ---------------------------------------------- |
-| npcid     | The ID of the NPC                             |
-| animlib[] | The animation library name                    |
-| animname[]| The animation name within the library         |
-| delta     | The speed of the animation (typically 4.1)   |
-| loop      | Whether the animation should loop             |
-| lockX     | Lock movement on the X axis                   |
-| lockY     | Lock movement on the Y axis                   |
-| freeze    | Freeze the NPC at the end of animation       |
-| time      | Time in milliseconds to play the animation   |
+| Name       | Description                                |
+| ---------- | ------------------------------------------ |
+| npcid      | The ID of the NPC                          |
+| animlib[]  | The animation library name                 |
+| animname[] | The animation name within the library      |
+| delta      | The speed of the animation (typically 4.1) |
+| loop       | Whether the animation should loop          |
+| lockX      | Lock movement on the X axis                |
+| lockY      | Lock movement on the Y axis                |
+| freeze     | Freeze the NPC at the end of animation     |
+| time       | Time in milliseconds to play the animation |
 
 ## Returns
 
@@ -34,13 +34,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("AnimationBot");
     NPC_Spawn(npcid);
-    
+
     // Apply a dance animation
     NPC_ApplyAnimation(npcid, "DANCING", "DAN_Loop_A", 4.1, true, false, false, false, 0);
-    
+
     // Apply a smoking animation for 5 seconds
     NPC_ApplyAnimation(npcid, "SMOKING", "M_smklean_loop", 4.1, true, false, false, false, 5000);
-    
+
     return 1;
 }
 ```

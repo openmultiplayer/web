@@ -26,17 +26,17 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Pilot");
     NPC_Spawn(npcid);
-    
+
     // Create Hydra jet
     new vehicleid = CreateVehicle(520, 1958.33, 1343.12, 50.0, 0.0, -1, -1, 300); // Hydra
     NPC_PutInVehicle(npcid, vehicleid, 0);
-    
+
     // Set to vertical mode
     NPC_SetVehicleHydraThrusters(npcid, 1);
-    
+
     new direction = NPC_GetVehicleHydraThrusters(npcid);
     printf("NPC %d Hydra thrusters: %s", npcid, direction ? "Vertical" : "Forward");
-    
+
     return 1;
 }
 
@@ -46,9 +46,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcs[MAX_NPCS];
         new count = NPC_GetAll(npcs);
-        
+
         new direction = NPC_GetVehicleHydraThrusters(0);
-        
+
         new mode[16];
         switch(direction)
         {
@@ -56,26 +56,26 @@ public OnPlayerCommandText(playerid, cmdtext[])
             case 1: mode = "Vertical";
             default: mode = "Unknown";
         }
-        
+
         new msg[64];
         format(msg, sizeof(msg), "NPC 0 Hydra mode: %s", mode);
         SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        
+
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/togglehydra", true))
     {
         new currentDirection = NPC_GetVehicleHydraThrusters(0);
         new newDirection = currentDirection ? 0 : 1;
-        
+
         NPC_SetVehicleHydraThrusters(0, newDirection);
-        
+
         new msg[64];
-        format(msg, sizeof(msg), "NPC 0 Hydra switched to %s mode", 
+        format(msg, sizeof(msg), "NPC 0 Hydra switched to %s mode",
             newDirection ? "Vertical" : "Forward");
         SendClientMessage(playerid, 0x00FF00FF, msg);
-        
+
         return 1;
     }
     return 0;
@@ -86,20 +86,20 @@ public HydraFlightPattern(npcid)
 {
     if (!NPC_IsValid(npcid))
         return;
-    
+
     new vehicleid = NPC_GetVehicle(npcid);
     if (vehicleid == INVALID_VEHICLE_ID || GetVehicleModel(vehicleid) != 520)
         return;
-    
+
     new direction = NPC_GetVehicleHydraThrusters(npcid);
-    
+
     // Cycle between modes for different flight phases
     if (direction == 0) // Currently forward
     {
         // Switch to vertical for hovering
         NPC_SetVehicleHydraThrusters(npcid, 1);
         printf("NPC %d Hydra: Switching to hover mode", npcid);
-        
+
         // Schedule next change
         SetTimerEx("HydraFlightPattern", 15000, false, "i", npcid);
     }
@@ -108,7 +108,7 @@ public HydraFlightPattern(npcid)
         // Switch to forward for fast flight
         NPC_SetVehicleHydraThrusters(npcid, 0);
         printf("NPC %d Hydra: Switching to forward flight", npcid);
-        
+
         // Schedule next change
         SetTimerEx("HydraFlightPattern", 20000, false, "i", npcid);
     }
@@ -132,4 +132,4 @@ public HydraFlightPattern(npcid)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

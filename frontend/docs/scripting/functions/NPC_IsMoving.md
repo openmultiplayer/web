@@ -27,9 +27,9 @@ public OnGameModeInit()
     new npcid = NPC_Create("Walker");
     NPC_Spawn(npcid);
     NPC_Move(npcid, 1958.33, 1343.12, 15.36, NPC_MOVE_TYPE_WALK);
-    
+
     SetTimerEx("CheckMovement", 2000, false, "i", npcid);
-    
+
     return 1;
 }
 

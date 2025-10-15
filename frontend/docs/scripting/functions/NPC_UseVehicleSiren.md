@@ -11,9 +11,9 @@ tags: ["npc", "vehicle", "siren"]
 
 Makes an NPC use or stop using a vehicle siren.
 
-| Name  | Description                                    |
-| ----- | ---------------------------------------------- |
-| npcid | The ID of the NPC                             |
+| Name  | Description                                          |
+| ----- | ---------------------------------------------------- |
+| npcid | The ID of the NPC                                    |
 | use   | `true` to use siren, `false` to stop (default: true) |
 
 ## Returns
@@ -30,17 +30,17 @@ public OnGameModeInit()
     // Create police patrol unit
     new npcid = NPC_Create("Officer");
     NPC_Spawn(npcid);
-    
+
     // Create police cruiser
     g_PatrolVehicle = CreateVehicle(596, 1958.33, 1343.12, 15.36, 0.0, 1, 1, 300); // Police Car (LS)
     NPC_PutInVehicle(npcid, g_PatrolVehicle, 0);
-    
+
     // Start patrol with siren
     NPC_UseVehicleSiren(npcid, true);
-    
+
     // Start automated patrol cycle
     SetTimer("PatrolCycle", 30000, true);
-    
+
     return 1;
 }
 
@@ -52,7 +52,7 @@ public PatrolCycle()
     {
         new bool:currentSiren = NPC_IsVehicleSirenUsed(0);
         NPC_UseVehicleSiren(0, !currentSiren);
-        
+
         printf("Patrol NPC %s siren", !currentSiren ? "activated" : "deactivated");
     }
 }
@@ -65,7 +65,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             new bool:sirenOn = NPC_IsVehicleSirenUsed(0);
             NPC_UseVehicleSiren(0, !sirenOn);
-            
+
             new msg[64];
             format(msg, sizeof(msg), "NPC 0 siren: %s", !sirenOn ? "ON" : "OFF");
             SendClientMessage(playerid, 0x00FF00FF, msg);
@@ -76,31 +76,31 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/emergency", true))
     {
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
-        
+
         // Dispatch emergency response
         DispatchEmergencyResponse(x, y, z);
-        
+
         SendClientMessage(playerid, 0xFF0000FF, "Emergency response dispatched to your location!");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/codeblue", true))
     {
         // Emergency code blue - activate all sirens
         if (NPC_GetVehicle(0) != INVALID_VEHICLE_ID)
         {
             NPC_UseVehicleSiren(0, true);
-            
+
             // Drive to player location at high speed
             new Float:px, Float:py, Float:pz;
             GetPlayerPos(playerid, px, py, pz);
             NPC_Move(0, px, py, pz, NPC_MOVE_TYPE_DRIVE);
-            
+
             SendClientMessage(playerid, 0xFF0000FF, "CODE BLUE: Emergency response activated!");
         }
         else
@@ -120,22 +120,22 @@ DispatchEmergencyResponse(Float:x, Float:y, Float:z)
         {416, "Ambulance"},  // Ambulance
         {407, "FireTruck"}   // Fire Truck
     };
-    
+
     for (new i = 0; i < sizeof(emergencyTypes); i++)
     {
         new npcid = NPC_Create(emergencyTypes[i][1]);
         NPC_Spawn(npcid);
-        
+
         new Float:spawnX = x + (i * 20.0) - 40.0;
         new vehicleid = CreateVehicle(emergencyTypes[i][0], spawnX, y - 30.0, z, 0.0, -1, -1, 300);
-        
+
         NPC_PutInVehicle(npcid, vehicleid, 0);
         NPC_UseVehicleSiren(npcid, true);
-        
+
         // Drive to emergency location
         NPC_Move(npcid, x, y, z, NPC_MOVE_TYPE_DRIVE);
     }
-    
+
     printf("Emergency response dispatched to %.2f, %.2f, %.2f", x, y, z);
 }
 ```
@@ -157,4 +157,4 @@ DispatchEmergencyResponse(Float:x, Float:y, Float:z)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

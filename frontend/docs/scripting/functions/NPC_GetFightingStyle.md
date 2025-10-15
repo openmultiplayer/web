@@ -26,12 +26,12 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Fighter");
     NPC_Spawn(npcid);
-    
+
     NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-    
+
     new style = NPC_GetFightingStyle(npcid);
     printf("NPC %d fighting style: %d", npcid, style);
-    
+
     return 1;
 }
 
@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/checkstyle", true))
     {
         new style = NPC_GetFightingStyle(0);
-        
+
         new styleName[32];
         switch(style)
         {
@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             case FIGHT_STYLE_KUNGFU: styleName = "Kung Fu";
             default: styleName = "Unknown";
         }
-        
+
         new msg[64];
         format(msg, sizeof(msg), "NPC 0 fighting style: %s", styleName);
         SendClientMessage(playerid, 0xFFFFFFFF, msg);

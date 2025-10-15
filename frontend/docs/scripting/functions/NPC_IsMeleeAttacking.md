@@ -28,9 +28,9 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
     NPC_MeleeAttack(npcid, 5000, false);
-    
+
     SetTimerEx("CheckMeleeStatus", 1000, true, "i", npcid);
-    
+
     return 1;
 }
 

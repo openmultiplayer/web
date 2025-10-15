@@ -11,10 +11,10 @@ tags: ["npc", "combat", "fighting", "melee"]
 
 Sets an NPC's fighting style for melee combat.
 
-| Name         | Description                    |
-| ------------ | ------------------------------ |
-| npcid        | The ID of the NPC             |
-| style        | The fighting style ID         |
+| Name  | Description           |
+| ----- | --------------------- |
+| npcid | The ID of the NPC     |
+| style | The fighting style ID |
 
 ## Returns
 
@@ -27,10 +27,10 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Fighter");
     NPC_Spawn(npcid);
-    
+
     // Set boxing fighting style
     NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-    
+
     return 1;
 }
 
@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 now uses boxing style");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/randomstyle", true))
     {
         new styles[] = {
@@ -54,12 +54,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
             FIGHT_STYLE_GRABKICK,
             FIGHT_STYLE_ELBOW
         };
-        
+
         new style = styles[random(sizeof(styles))];
         NPC_SetFightingStyle(0, style);
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 random fighting style set");
         }
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "Randomized NPC fighting styles");
         return 1;
     }

@@ -19,12 +19,12 @@ This callback is called when an NPC spawns.
 public OnNPCSpawn(npcid)
 {
     printf("NPC %d spawned", npcid);
-    
+
     // Set initial properties
     NPC_SetHealth(npcid, 100.0);
     NPC_SetArmour(npcid, 0.0);
     NPC_SetWeapon(npcid, WEAPON_COLT45);
-    
+
     return true;
 }
 ```

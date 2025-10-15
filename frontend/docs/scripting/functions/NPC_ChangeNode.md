@@ -11,11 +11,11 @@ tags: ["npc", "node", "navigation"]
 
 Changes the node an NPC is currently playing to a different node.
 
-| Name   | Description                                  |
-| ------ | -------------------------------------------- |
-| npcid  | The ID of the NPC                           |
-| nodeid | The ID of the new node to change to         |
-| linkid | The link ID to use for the transition      |
+| Name   | Description                           |
+| ------ | ------------------------------------- |
+| npcid  | The ID of the NPC                     |
+| nodeid | The ID of the new node to change to   |
+| linkid | The link ID to use for the transition |
 
 ## Returns
 
@@ -28,13 +28,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("NodeBot");
     NPC_Spawn(npcid);
-    
+
     // Start playing node 1
     NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-    
+
     // After some time, change to node 2 using link 0
     SetTimerEx("ChangeNPCNode", 10000, false, "i", npcid);
-    
+
     return 1;
 }
 

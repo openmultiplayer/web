@@ -11,9 +11,9 @@ tags: ["npc", "recording"]
 
 Unloads a specific NPC recording from memory to free up resources.
 
-| Name      | Description                    |
-| --------- | ------------------------------ |
-| recordId  | The ID of the record to unload |
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| recordId | The ID of the record to unload |
 
 ## Returns
 
@@ -28,12 +28,12 @@ public OnGameModeInit()
 {
     // Load recordings
     g_PatrolRecord = NPC_LoadRecord("patrol");
-    
+
     if (g_PatrolRecord != INVALID_RECORD_ID)
     {
         printf("Patrol recording loaded with ID %d", g_PatrolRecord);
     }
-    
+
     return 1;
 }
 

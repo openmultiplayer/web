@@ -11,10 +11,10 @@ tags: ["npc", "path"]
 
 Removes a waypoint from an NPC path.
 
-| Name        | Description                               |
-| ----------- | ----------------------------------------- |
-| pathid      | The ID of the path                       |
-| point_index | The index of the point to remove         |
+| Name        | Description                      |
+| ----------- | -------------------------------- |
+| pathid      | The ID of the path               |
+| point_index | The index of the point to remove |
 
 ## Returns
 
@@ -29,7 +29,7 @@ public OnGameModeInit()
 {
     // Create patrol path
     g_PatrolPath = NPC_CreatePath();
-    
+
     if (NPC_IsValidPath(g_PatrolPath))
     {
         // Add patrol points
@@ -37,10 +37,10 @@ public OnGameModeInit()
         NPC_AddPointToPath(g_PatrolPath, 1968.33, 1353.12, 15.36, 2.0);
         NPC_AddPointToPath(g_PatrolPath, 1978.33, 1363.12, 15.36, 1.5);
         NPC_AddPointToPath(g_PatrolPath, 1988.33, 1373.12, 15.36, 2.0);
-        
+
         printf("Patrol path created with %d points", NPC_GetPathPointCount(g_PatrolPath));
     }
-    
+
     return 1;
 }
 
@@ -51,11 +51,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (NPC_IsValidPath(g_PatrolPath))
         {
             new pointCount = NPC_GetPathPointCount(g_PatrolPath);
-            
+
             if (pointCount > 2 && NPC_RemovePointFromPath(g_PatrolPath, 1))
             {
                 new msg[64];
-                format(msg, sizeof(msg), "Removed point 1. Path now has %d points", 
+                format(msg, sizeof(msg), "Removed point 1. Path now has %d points",
                     NPC_GetPathPointCount(g_PatrolPath));
                 SendClientMessage(playerid, 0x00FF00FF, msg);
             }
@@ -66,19 +66,19 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/editpath", true))
     {
         // Replace last point with player position
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
-        
+
         new pointCount = NPC_GetPathPointCount(g_PatrolPath);
         if (pointCount > 1)
         {
             NPC_RemovePointFromPath(g_PatrolPath, pointCount - 1);
             NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5);
-            
+
             SendClientMessage(playerid, 0x00FF00FF, "Updated path endpoint to your location");
         }
         return 1;

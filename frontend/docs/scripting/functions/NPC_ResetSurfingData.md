@@ -11,9 +11,9 @@ tags: ["npc", "surfing"]
 
 Resets all surfing data for an NPC.
 
-| Name   | Description           |
-| ------ | --------------------- |
-| npcid  | The ID of the NPC     |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -61,4 +61,4 @@ public OnNPCEnterVehicle(npcid, vehicleid, seatid)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

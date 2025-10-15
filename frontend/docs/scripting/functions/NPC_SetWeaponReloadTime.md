@@ -11,11 +11,11 @@ tags: ["npc", "weapon", "reload", "time"]
 
 Sets the reload time for a specific weapon of an NPC.
 
-| Name       | Description                            |
-| ---------- | -------------------------------------- |
-| npcid      | The ID of the NPC                     |
-| weaponid   | The weapon ID to set reload time for  |
-| time       | The reload time in milliseconds        |
+| Name     | Description                          |
+| -------- | ------------------------------------ |
+| npcid    | The ID of the NPC                    |
+| weaponid | The weapon ID to set reload time for |
+| time     | The reload time in milliseconds      |
 
 ## Returns
 
@@ -29,10 +29,10 @@ public OnGameModeInit()
     new npcid = NPC_Create("QuickReloader");
     NPC_Spawn(npcid);
     NPC_GiveWeapon(npcid, WEAPON_M4, 200); // M4 with 200 ammo
-    
+
     // Set fast reload (500ms)
     NPC_SetWeaponReloadTime(npcid, 500);
-    
+
     return 1;
 }
 
@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 has lightning-fast reload");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/slowreload", true))
     {
         // Set slow reload for NPC 0

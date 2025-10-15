@@ -11,11 +11,11 @@ tags: ["npc", "weapon", "accuracy"]
 
 Sets the accuracy of a specific weapon for an NPC.
 
-| Name     | Description                           |
-| -------- | ------------------------------------- |
-| npcid    | The ID of the NPC                     |
-| weaponid | The weapon ID to set accuracy for     |
-| accuracy | The accuracy value (0.0 to 1.0)      |
+| Name     | Description                       |
+| -------- | --------------------------------- |
+| npcid    | The ID of the NPC                 |
+| weaponid | The weapon ID to set accuracy for |
+| accuracy | The accuracy value (0.0 to 1.0)   |
 
 ## Returns
 
@@ -29,7 +29,7 @@ public OnGameModeInit()
     new npcid = NPC_Create("Sniper");
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_SNIPER);
-    
+
     // Set sniper rifle accuracy to 95%
     NPC_SetWeaponAccuracy(npcid, WEAPON_SNIPER, 0.95);
     return 1;
@@ -42,10 +42,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new npcid = NPC_Create("Marksman");
         NPC_Spawn(npcid);
         NPC_SetWeapon(npcid, WEAPON_DEAGLE);
-        
+
         // Set Desert Eagle accuracy to 80%
         NPC_SetWeaponAccuracy(npcid, WEAPON_DEAGLE, 0.8);
-        
+
         SendClientMessage(playerid, 0xFFFFFFFF, "NPC weapon accuracy set");
         return 1;
     }
@@ -68,4 +68,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

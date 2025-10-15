@@ -11,10 +11,10 @@ tags: ["npc", "weapon"]
 
 Gets the clip size setting for an NPC's weapon.
 
-| Name      | Description              |
-| --------- | ------------------------ |
-| npcid     | The ID of the NPC        |
-| weaponid  | The weapon ID to check   |
+| Name     | Description            |
+| -------- | ---------------------- |
+| npcid    | The ID of the NPC      |
+| weaponid | The weapon ID to check |
 
 ## Returns
 
@@ -27,13 +27,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Gunner");
     NPC_Spawn(npcid);
-    
+
     NPC_SetWeapon(npcid, WEAPON_AK47);
     NPC_SetWeaponClipSize(npcid, WEAPON_AK47, 50); // Extended clip
-    
+
     new clipSize = NPC_GetWeaponClipSize(npcid, WEAPON_AK47);
     printf("NPC %d AK47 clip size: %d", npcid, clipSize);
-    
+
     return 1;
 }
 

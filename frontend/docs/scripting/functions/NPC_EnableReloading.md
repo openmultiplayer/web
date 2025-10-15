@@ -11,10 +11,10 @@ tags: ["npc", "weapon", "reload"]
 
 Enables or disables automatic reloading for an NPC.
 
-| Name   | Description                                        |
-| ------ | -------------------------------------------------- |
-| npcid  | The ID of the NPC                                 |
-| enable | `true` to enable reloading, `false` to disable   |
+| Name   | Description                                    |
+| ------ | ---------------------------------------------- |
+| npcid  | The ID of the NPC                              |
+| enable | `true` to enable reloading, `false` to disable |
 
 ## Returns
 
@@ -27,14 +27,14 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("GuardBot");
     NPC_Spawn(npcid);
-    
+
     // Give the NPC a weapon
     NPC_SetWeapon(npcid, WEAPON_M4);
     NPC_SetAmmo(npcid, 500);
-    
+
     // Enable automatic reloading
     NPC_EnableReloading(npcid, true);
-    
+
     return 1;
 }
 
@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             new bool:reloadEnabled = NPC_IsReloadEnabled(npcid);
             NPC_EnableReloading(npcid, !reloadEnabled);
-            
+
             new msg[64];
             format(msg, sizeof(msg), "NPC reloading: %s", !reloadEnabled ? "Enabled" : "Disabled");
             SendClientMessage(playerid, 0x00FF00FF, msg);

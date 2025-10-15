@@ -26,13 +26,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Driver");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
     NPC_EnterVehicle(npcid, vehicleid, 0, NPC_MOVE_TYPE_WALK);
-    
+
     // Check if entering
     SetTimerEx("CheckVehicleEntry", 2000, false, "i", npcid);
-    
+
     return 1;
 }
 
@@ -68,5 +68,4 @@ public CheckVehicleEntry(npcid)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
-
+_No specific callbacks are triggered by this function._

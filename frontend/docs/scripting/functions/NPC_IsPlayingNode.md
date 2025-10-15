@@ -11,9 +11,9 @@ tags: ["npc", "node"]
 
 Checks if an NPC is currently playing a node.
 
-| Name  | Description           |
-| ----- | --------------------- |
-| npcid | The ID of the NPC     |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -26,15 +26,15 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("NodeWalker");
     NPC_Spawn(npcid);
-    
+
     if (NPC_OpenNode(1))
     {
         NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-        
+
         // Check status after 5 seconds
         SetTimerEx("CheckNodeStatus", 5000, false, "i", npcid);
     }
-    
+
     return 1;
 }
 

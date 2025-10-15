@@ -6,7 +6,7 @@ tags: [nodes, paths, ai, navigation, vehicles, pedestrians]
 ---
 
 :::warning Source Attribution
-This documentation was originally sourced from [GTAMods Wiki - Paths (GTA SA)](https://gtamods.com/wiki/Paths_(GTA_SA)) and has been preserved here for archival purposes. The content remains unchanged, with only formatting improvements to enhance readability in the open.mp documentation.
+This documentation was originally sourced from [GTAMods Wiki - Paths (GTA SA)](<https://gtamods.com/wiki/Paths_(GTA_SA)>) and has been preserved here for archival purposes. The content remains unchanged, with only formatting improvements to enhance readability in the open.mp documentation.
 :::
 
 <!-- Image: Colour-coded car path nodes for GTA: SA. (SAPathNodes.png) -->
@@ -43,12 +43,12 @@ Paths are stored as double-linked (thus undirected) graphs in adjacency list rep
 
 The following data types and structures are used within this article:
 
-| Type | Description | Size |
-|------|-------------|------|
-| **INT8/UINT8** | signed/unsigned 8 bit integer | 1 byte |
-| **INT16/UINT16** | signed/unsigned 16 bit integer | 2 bytes |
-| **INT32/UINT32** | signed/unsigned 32 bit integer | 4 bytes |
-| **FLOAT** | single precision floating point number | 4 bytes |
+| Type             | Description                            | Size    |
+| ---------------- | -------------------------------------- | ------- |
+| **INT8/UINT8**   | signed/unsigned 8 bit integer          | 1 byte  |
+| **INT16/UINT16** | signed/unsigned 16 bit integer         | 2 bytes |
+| **INT32/UINT32** | signed/unsigned 32 bit integer         | 4 bytes |
+| **FLOAT**        | single precision floating point number | 4 bytes |
 
 ### Key Concepts
 
@@ -63,13 +63,13 @@ There are several main concepts that are important for understanding the way pat
 
 The header contains information about the content of the various sections in the file. It has a size of **20 bytes**.
 
-| Size | Type | Description |
-|------|------|-------------|
-| 4b | UINT32 | number of nodes (section 1) |
-| 4b | UINT32 | number of vehicle nodes (section 1a) |
-| 4b | UINT32 | number of ped nodes (section 1b) |
-| 4b | UINT32 | number of navi nodes (section 2) |
-| 4b | UINT32 | number of links (section 3/5/6) |
+| Size | Type   | Description                          |
+| ---- | ------ | ------------------------------------ |
+| 4b   | UINT32 | number of nodes (section 1)          |
+| 4b   | UINT32 | number of vehicle nodes (section 1a) |
+| 4b   | UINT32 | number of ped nodes (section 1b)     |
+| 4b   | UINT32 | number of navi nodes (section 2)     |
+| 4b   | UINT32 | number of links (section 3/5/6)      |
 
 :::note
 Sections related to links (3/5/6) have the same number of entries. These entries belong together and can be treated as one record by editors.
@@ -79,24 +79,24 @@ Sections related to links (3/5/6) have the same number of entries. These entries
 
 The first section contains the node data for the paths. They are grouped by type: the list of vehicle nodes (cars, boats, race tracks) is followed by the ped nodes. Each node entry has a size of **28 bytes**.
 
-| Size | Type | Description |
-|------|------|-------------|
-| 4b | UINT32 | Mem Address, *unused* |
-| 4b | UINT32 | always zero, *unused* |
-| 6b | INT16[3] | Position (XYZ), see below |
-| 2b | INT16 | heuristic cost, always `0x7FFE`, used internally to calculate routes |
-| 2b | UINT16 | Link ID |
-| 2b | UINT16 | Area ID (same as in filename) |
-| 2b | UINT16 | Node ID (increments by 1) |
-| 1b | UINT8 | Path Width |
-| 1b | UINT8 | Flood Fill, used in route calculations |
-| 4b | UINT32 | Flags |
+| Size | Type     | Description                                                          |
+| ---- | -------- | -------------------------------------------------------------------- |
+| 4b   | UINT32   | Mem Address, _unused_                                                |
+| 4b   | UINT32   | always zero, _unused_                                                |
+| 6b   | INT16[3] | Position (XYZ), see below                                            |
+| 2b   | INT16    | heuristic cost, always `0x7FFE`, used internally to calculate routes |
+| 2b   | UINT16   | Link ID                                                              |
+| 2b   | UINT16   | Area ID (same as in filename)                                        |
+| 2b   | UINT16   | Node ID (increments by 1)                                            |
+| 1b   | UINT8    | Path Width                                                           |
+| 1b   | UINT8    | Flood Fill, used in route calculations                               |
+| 4b   | UINT32   | Flags                                                                |
 
 #### Field Descriptions
 
-- **Mem Address**: These might have been pointers to path segment structures inside R*'s path compiler. Apparently they are ignored by the game and can be set to zero.
+- **Mem Address**: These might have been pointers to path segment structures inside R\*'s path compiler. Apparently they are ignored by the game and can be set to zero.
 - **Position**: This is the position of the node in world coordinates. To convert the signed words to floating point values divide them by 8.
-- **Link ID**: The ID of the first node this node links to. The range of linked nodes is *link ID ≤ x < (link ID + link count)*, where the link count is given by the first four bits of the flags.
+- **Link ID**: The ID of the first node this node links to. The range of linked nodes is _link ID ≤ x < (link ID + link count)_, where the link count is given by the first four bits of the flags.
 - **Area ID and Node ID**: Informational data, used to connect nodes via Links. Area ID is always the same as the number in the filename, and Node ID is used to identify the node.
 - **Path Width**: This is used to modify the width of a path. The default value is 0 (zero). To convert the signed word to a floating point value divide it by 8.
 - **Flood Fill**: Flood IDs for route calculation for NPCs. For normal NPC vehicle traffic a value of 1 is used, 2 is for boats and higher values are allocated to disconnected path area segment, e.g for race tracks and other mission applications.
@@ -104,77 +104,78 @@ The first section contains the node data for the paths. They are grouped by type
 
 #### Path Node Flags
 
-*Node flag bits, from low to high:*
+_Node flag bits, from low to high:_
 
-| Bits | Description |
-|------|-------------|
-| 0-3 | Link Count |
-| 4-5 | TrafficLevel |
+| Bits | Description  |
+| ---- | ------------ |
+| 0-3  | Link Count   |
+| 4-5  | TrafficLevel |
 
 The LinkCount defines the number of entries incrementing from the LinkID. The TrafficLevel uses 4 steps:
+
 - 0 = full
-- 1 = high  
+- 1 = high
 - 2 = medium
 - 3 = low
 
-| Flag | Bit | Description |
-|------|-----|-------------|
-| A | 06 | Road-Blocks |
-| B | 07 | Boats |
-| C | 08 | Emergency Vehicles only |
-| D | 09 | zero/unused |
-| E | 10 | unknown, grove house entrance paths ? |
-| F | 11 | zero/unused |
-| G | 12 | Is not Highway |
-| H | 13 | Is Highway (ignored for PED-Nodes and never 11 or 00 for Cars!) |
-| I | 14 | zero |
-| J | 15 | zero |
-| K-M | 16-19 | spawn probability (`0x00` to `0x0F`) |
-| O | 20 | RoadBlock? |
-| P | 21 | Parking |
-| Q | 22 | zero |
-| R | 23 | RoadBlock? |
-| 24-31 | | zero (unused) |
+| Flag  | Bit   | Description                                                     |
+| ----- | ----- | --------------------------------------------------------------- |
+| A     | 06    | Road-Blocks                                                     |
+| B     | 07    | Boats                                                           |
+| C     | 08    | Emergency Vehicles only                                         |
+| D     | 09    | zero/unused                                                     |
+| E     | 10    | unknown, grove house entrance paths ?                           |
+| F     | 11    | zero/unused                                                     |
+| G     | 12    | Is not Highway                                                  |
+| H     | 13    | Is Highway (ignored for PED-Nodes and never 11 or 00 for Cars!) |
+| I     | 14    | zero                                                            |
+| J     | 15    | zero                                                            |
+| K-M   | 16-19 | spawn probability (`0x00` to `0x0F`)                            |
+| O     | 20    | RoadBlock?                                                      |
+| P     | 21    | Parking                                                         |
+| Q     | 22    | zero                                                            |
+| R     | 23    | RoadBlock?                                                      |
+| 24-31 |       | zero (unused)                                                   |
 
-The following *statistics on flag usage*, grouped by path type, might be useful for further research:
+The following _statistics on flag usage_, grouped by path type, might be useful for further research:
 
-| Flag | Peds | Cars | Total |
-|------|------|------|-------|
-| **Total** | 37,650 | 30,587 | 68,237 |
-| A | 0 | 391 (1.28%) | 391 |
-| B | 0 | 1,596 (5.22%) | 1,596 |
-| C | 6,019 (15.99%) | 7,669 (25.08%) | 13,688 |
-| D | 0 | 0 | 0 |
-| E | 17 (0.05%) | 0 | 17 |
-| F | 0 | 0 | 0 |
-| G | 0 | 27,936 (91.33%) | 27,936 |
-| H | 0 | 2,539 (8.3%) | 2,539 |
-| I | 0 | 0 | 0 |
-| J | 0 | 0 | 0 |
-| K | 37,646 (99.98%) | 30,582 (99.98%) | 68,228 |
-| L | 36,676 (97.41%) | 30,141 (98.54%) | 66,817 |
-| M | 36,676 (97.41%) | 30,136 (98.52%) | 66,812 |
-| N | 36,607 (97.22%) | 30,046 (98.23%) | 66,653 |
-| O | 0 | 8 (0.03%) | 8 |
-| P | 0 | 215 (0.7%) | 215 |
-| Q | 0 | 0 | 0 |
-| R | 0 | 16 (0.05%) | 16 |
+| Flag      | Peds            | Cars            | Total  |
+| --------- | --------------- | --------------- | ------ |
+| **Total** | 37,650          | 30,587          | 68,237 |
+| A         | 0               | 391 (1.28%)     | 391    |
+| B         | 0               | 1,596 (5.22%)   | 1,596  |
+| C         | 6,019 (15.99%)  | 7,669 (25.08%)  | 13,688 |
+| D         | 0               | 0               | 0      |
+| E         | 17 (0.05%)      | 0               | 17     |
+| F         | 0               | 0               | 0      |
+| G         | 0               | 27,936 (91.33%) | 27,936 |
+| H         | 0               | 2,539 (8.3%)    | 2,539  |
+| I         | 0               | 0               | 0      |
+| J         | 0               | 0               | 0      |
+| K         | 37,646 (99.98%) | 30,582 (99.98%) | 68,228 |
+| L         | 36,676 (97.41%) | 30,141 (98.54%) | 66,817 |
+| M         | 36,676 (97.41%) | 30,136 (98.52%) | 66,812 |
+| N         | 36,607 (97.22%) | 30,046 (98.23%) | 66,653 |
+| O         | 0               | 8 (0.03%)       | 8      |
+| P         | 0               | 215 (0.7%)      | 215    |
+| Q         | 0               | 0               | 0      |
+| R         | 0               | 16 (0.05%)      | 16     |
 
 ### Section 2 - Navi Nodes
 
-The second section contains additional nodes. These nodes are *navigational nodes* (but are referred to in this article as "navi nodes" for brevity). Each record has a size of **14 bytes**.
+The second section contains additional nodes. These nodes are _navigational nodes_ (but are referred to in this article as "navi nodes" for brevity). Each record has a size of **14 bytes**.
 
 Navi nodes are used to define additional information for vehicle path segments; they are not used by ped paths. They are usually positioned between two adjacent vehicle nodes on an interpolated curve.
 
 There may be bugs if you don't connect navi nodes correctly. Links always go from a node with a higher area/node ID to one with a lower ID, so the target is always the lower node.
 
-| Size | Type | Description |
-|------|------|-------------|
-| 4b | INT16[2] | Position (XY), see below |
-| 2b | UINT16 | Area ID |
-| 2b | UINT16 | Node ID |
-| 2b | INT8[2] | Direction (XY), see below |
-| 4b | UINT32 | Flags |
+| Size | Type     | Description               |
+| ---- | -------- | ------------------------- |
+| 4b   | INT16[2] | Position (XY), see below  |
+| 2b   | UINT16   | Area ID                   |
+| 2b   | UINT16   | Node ID                   |
+| 2b   | INT8[2]  | Direction (XY), see below |
+| 4b   | UINT32   | Flags                     |
 
 #### Navi Node Field Descriptions
 
@@ -186,36 +187,36 @@ There may be bugs if you don't connect navi nodes correctly. Links always go fro
 
 These are used to characterize path segment behavior, for more information see the table below.
 
-| Bits | Description |
-|------|-------------|
-| 0-7 | path node width, usually a copy of the linked node's path width (byte) |
-| 8-10 | number of left lanes |
-| 11-13 | number of right lanes |
-| 14 | traffic light direction behavior |
-| 15 | zero/unused |
-| 16,17 | traffic light behavior |
-| 18 | train crossing |
-| 19-31 | zero/unused |
+| Bits  | Description                                                            |
+| ----- | ---------------------------------------------------------------------- |
+| 0-7   | path node width, usually a copy of the linked node's path width (byte) |
+| 8-10  | number of left lanes                                                   |
+| 11-13 | number of right lanes                                                  |
+| 14    | traffic light direction behavior                                       |
+| 15    | zero/unused                                                            |
+| 16,17 | traffic light behavior                                                 |
+| 18    | train crossing                                                         |
+| 19-31 | zero/unused                                                            |
 
 #### Important Notes
 
 - Right (forward) and left (backward) lanes are relative to the direction vector.
-- Experience has shown that navi nodes with attachments across area borders don't work too well. A possible solution is to attach them to the last instead of the next node, reverse the direction and exchange the lane numbers (if different) and other direction dependent flags. However, this will never work if previous, navi and next node are located in different areas each. **(*)**
-- *Traffic light behavior* can be a value from 0 to 2, where 0 means traffic lights is disabled, 1 and 2 are used for the traffic lights and are North-South and West-East cycles for traffic light synchronization respectively.
-- The *traffic light direction behavior* is 1 if the navi node has the same direction as the traffic light and 0 if the navi node points somewhere else.
+- Experience has shown that navi nodes with attachments across area borders don't work too well. A possible solution is to attach them to the last instead of the next node, reverse the direction and exchange the lane numbers (if different) and other direction dependent flags. However, this will never work if previous, navi and next node are located in different areas each. **(\*)**
+- _Traffic light behavior_ can be a value from 0 to 2, where 0 means traffic lights is disabled, 1 and 2 are used for the traffic lights and are North-South and West-East cycles for traffic light synchronization respectively.
+- The _traffic light direction behavior_ is 1 if the navi node has the same direction as the traffic light and 0 if the navi node points somewhere else.
 
 :::note
-(*) Got clear after knowing how Navis are linked exactly. So you may use this but it is not obligation.
+(\*) Got clear after knowing how Navis are linked exactly. So you may use this but it is not obligation.
 :::
 
 ### Section 3 - Links
 
 These are links to adjacent nodes, **4 bytes** per entry.
 
-| Size | Type | Description |
-|------|------|-------------|
-| 2b | UINT16 | Area ID |
-| 2b | UINT16 | Node ID |
+| Size | Type   | Description |
+| ---- | ------ | ----------- |
+| 2b   | UINT16 | Area ID     |
+| 2b   | UINT16 | Node ID     |
 
 ### Section 4 - Filler
 
@@ -225,26 +226,28 @@ This section holds data of constant size and content; its purpose is unknown. Th
 
 These are links to adjacent navi nodes, one for each link (in section 3), **2 bytes** per entry. For indices from ped nodes (in section 1b) these are zero (unused).
 
-| Size | Type | Description |
-|------|------|-------------|
-| 2b | UINT16 | lower 10 bit are the Navi Node ID, upper 6 bit the corresponding Area ID |
+| Size | Type   | Description                                                              |
+| ---- | ------ | ------------------------------------------------------------------------ |
+| 2b   | UINT16 | lower 10 bit are the Navi Node ID, upper 6 bit the corresponding Area ID |
 
 :::warning Important Limitations
 **Navi Node Limits:**
+
 - Maximum **1024** Navi Nodes per area file
 - Maximum **64** files/areas total
 
 **Navi Node ID Note:**
+
 - The Navi Node ID is not the Linked Node ID from Section 2, but rather the sequential order in which the Navi Node appears in the file.
-:::
+  :::
 
 ### Section 6 - Link Lengths
 
 These are the distances between linked nodes in full units, **1 byte** per entry. They are essential for path finding algorithms.
 
-| Size | Type | Description |
-|------|------|-------------|
-| 1b | UINT8 | Length |
+| Size | Type  | Description |
+| ---- | ----- | ----------- |
+| 1b   | UINT8 | Length      |
 
 ### Section 7 - Path Intersection Flags
 

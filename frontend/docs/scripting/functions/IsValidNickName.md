@@ -11,9 +11,9 @@ tags: []
 
 Checks if a nick name is valid.
 
-| Name         | Description                                                 |
-| ------------ | ----------------------------------------------------------- |
-| const name[] | The nick name to check.                                     |
+| Name         | Description             |
+| ------------ | ----------------------- |
+| const name[] | The nick name to check. |
 
 ## Returns
 

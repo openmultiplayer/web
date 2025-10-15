@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Remove a component from a vehicle.
 
-| Name                                       | Description                    |
-|--------------------------------------------|--------------------------------|
-| vehicleid                                  | ID of the vehicle.             |
-| [component](../resources/carcomponentid)   | ID of the component to remove. |
+| Name                                     | Description                    |
+| ---------------------------------------- | ------------------------------ |
+| vehicleid                                | ID of the vehicle.             |
+| [component](../resources/carcomponentid) | ID of the component to remove. |
 
 ## Returns
 

@@ -11,20 +11,20 @@ tags: ["npc", "weapon", "aiming"]
 
 Makes an NPC aim at a player.
 
-| Name                 | Description                                      |
-| -------------------- | ------------------------------------------------ |
-| npcid                | The ID of the NPC                               |
-| playerid             | The ID of the player to aim at                  |
-| shoot                | Whether to shoot while aiming                   |
-| shootDelay           | Delay between shots in milliseconds             |
-| updateAngle          | Whether to update the NPC's facing angle       |
-| offsetX              | The X offset from the target's position        |
-| offsetY              | The Y offset from the target's position        |
-| offsetZ              | The Z offset from the target's position        |
-| offsetFromX          | The X offset from the NPC's shooting position  |
-| offsetFromY          | The Y offset from the NPC's shooting position  |
-| offsetFromZ          | The Z offset from the NPC's shooting position  |
-| checkInBetweenFlags  | Entity check flags for collision detection     |
+| Name                | Description                                   |
+| ------------------- | --------------------------------------------- |
+| npcid               | The ID of the NPC                             |
+| playerid            | The ID of the player to aim at                |
+| shoot               | Whether to shoot while aiming                 |
+| shootDelay          | Delay between shots in milliseconds           |
+| updateAngle         | Whether to update the NPC's facing angle      |
+| offsetX             | The X offset from the target's position       |
+| offsetY             | The Y offset from the target's position       |
+| offsetZ             | The Z offset from the target's position       |
+| offsetFromX         | The X offset from the NPC's shooting position |
+| offsetFromY         | The Y offset from the NPC's shooting position |
+| offsetFromZ         | The Z offset from the NPC's shooting position |
+| checkInBetweenFlags | Entity check flags for collision detection    |
 
 ## Returns
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_M4);
     NPC_SetAmmo(npcid, 300); // Give 300 ammo
-    
+
     return 1;
 }
 
@@ -49,20 +49,20 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         // Make NPC aim and shoot at player
         NPC_AimAtPlayer(0, playerid, true, 800, true, 0.0, 0.0, 0.8, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
-        
+
         SendClientMessage(playerid, 0xFF0000FF, "NPC 0 is now hostile towards you!");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/guard", true))
     {
         // Peaceful tracking mode
         NPC_AimAtPlayer(0, playerid, false, 0, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is now guarding you");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/ceasefire", true))
     {
         NPC_StopAim(0);

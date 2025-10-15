@@ -11,9 +11,9 @@ tags: ["npc", "vehicle", "siren"]
 
 Checks if an NPC is using the vehicle siren.
 
-| Name  | Description           |
-| ----- | --------------------- |
-| npcid | The ID of the NPC     |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -26,17 +26,17 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("PoliceOfficer");
     NPC_Spawn(npcid);
-    
+
     // Create police car
     new vehicleid = CreateVehicle(596, 1958.33, 1343.12, 15.36, 0.0, 1, 1, 300); // Police Car (LS)
     NPC_PutInVehicle(npcid, vehicleid, 0);
-    
+
     // Turn on siren
     NPC_UseVehicleSiren(npcid, true);
-    
+
     // Check siren status after 5 seconds
     SetTimerEx("CheckSirenStatus", 5000, false, "i", npcid);
-    
+
     return 1;
 }
 
@@ -87,4 +87,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

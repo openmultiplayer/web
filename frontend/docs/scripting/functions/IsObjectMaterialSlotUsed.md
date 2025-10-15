@@ -12,7 +12,7 @@ tags: ["object"]
 Checks if a slot of object material is used.
 
 | Name          | Description                                 |
-|---------------|---------------------------------------------|
+| ------------- | ------------------------------------------- |
 | objectid      | The ID of the object.                       |
 | materialIndex | The material index on the object. (0 to 15) |
 

@@ -14,7 +14,7 @@ Convert a car colour index to a HEX colour (RGBA).
 ## Parameters
 
 | Name         | Description                                    |
-|--------------|------------------------------------------------|
+| ------------ | ---------------------------------------------- |
 | index        | [Vehicle colour](../resources/vehiclecolorid). |
 | alpha = 0xFF | Alpha channel.                                 |
 

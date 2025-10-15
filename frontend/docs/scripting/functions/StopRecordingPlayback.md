@@ -9,7 +9,6 @@ tags: []
 
 This will stop the current .rec file which is being ran by the NPC, making it stay idle until some other order is given.
 
-
 ## Examples
 
 ```c

@@ -11,11 +11,11 @@ tags: ["npc", "node", "navigation"]
 
 This callback is called when an NPC reaches a specific point during node-based navigation.
 
-| Name    | Description                                      |
-| ------- | ------------------------------------------------ |
-| npcid   | The ID of the NPC that reached the node point   |
-| nodeid  | The ID of the node being navigated              |
-| pointid | The ID of the specific point that was reached   |
+| Name    | Description                                   |
+| ------- | --------------------------------------------- |
+| npcid   | The ID of the NPC that reached the node point |
+| nodeid  | The ID of the node being navigated            |
+| pointid | The ID of the specific point that was reached |
 
 ## Examples
 
@@ -23,14 +23,14 @@ This callback is called when an NPC reaches a specific point during node-based n
 public OnNPCFinishNodePoint(npcid, nodeid, pointid)
 {
     printf("NPC %d reached point %d in node %d", npcid, pointid, nodeid);
-    
+
     // Pause at specific point
     if (pointid == 10)
     {
         NPC_PausePlayingNode(npcid);
         SetTimerEx("ResumeNavigation", 3000, false, "i", npcid);
     }
-    
+
     return true;
 }
 

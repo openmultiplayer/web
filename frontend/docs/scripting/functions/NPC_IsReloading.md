@@ -27,12 +27,12 @@ public OnGameModeInit()
     new npcid = NPC_Create("Shooter");
     NPC_Spawn(npcid);
     NPC_GiveWeapon(npcid, WEAPON_DEAGLE, 1); // Desert Eagle with 1 round
-    
+
     // Force reload after shooting
     NPC_Shoot(npcid);
-    
+
     SetTimerEx("CheckReloading", 1000, false, "i", npcid);
-    
+
     return 1;
 }
 

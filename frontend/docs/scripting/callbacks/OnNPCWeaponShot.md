@@ -11,15 +11,15 @@ tags: ["npc", "weapon", "shooting"]
 
 This callback is called when an NPC fires a weapon.
 
-| Name     | Description                                      |
-| -------- | ------------------------------------------------ |
-| npcid    | The ID of the NPC that fired the weapon         |
-| weaponid | The weapon ID that was fired                    |
-| hittype  | The type of entity that was hit (if any)        |
-| hitid    | The ID of the entity that was hit (if any)      |
-| fX       | The X coordinate where the bullet hit           |
-| fY       | The Y coordinate where the bullet hit           |
-| fZ       | The Z coordinate where the bullet hit           |
+| Name     | Description                                |
+| -------- | ------------------------------------------ |
+| npcid    | The ID of the NPC that fired the weapon    |
+| weaponid | The weapon ID that was fired               |
+| hittype  | The type of entity that was hit (if any)   |
+| hitid    | The ID of the entity that was hit (if any) |
+| fX       | The X coordinate where the bullet hit      |
+| fY       | The Y coordinate where the bullet hit      |
+| fZ       | The Z coordinate where the bullet hit      |
 
 ## Returns
 
@@ -31,7 +31,7 @@ Return `false` to prevent the shot from being processed, or `true` to allow it.
 public OnNPCWeaponShot(npcid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
     printf("NPC %d fired weapon %d at %.2f, %.2f, %.2f", npcid, weaponid, fX, fY, fZ);
-    
+
     switch(hittype)
     {
         case BULLET_HIT_TYPE_PLAYER:
@@ -43,7 +43,7 @@ public OnNPCWeaponShot(npcid, weaponid, hittype, hitid, Float:fX, Float:fY, Floa
             printf("Hit vehicle %d", hitid);
         }
     }
-    
+
     return true;
 }
 ```

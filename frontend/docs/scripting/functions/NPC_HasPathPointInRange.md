@@ -11,13 +11,13 @@ tags: ["npc", "path"]
 
 Checks if a path has any point within the specified range from given coordinates.
 
-| Name      | Description                                          |
-| --------- | ---------------------------------------------------- |
-| pathId    | The ID of the path to check                          |
-| x         | The X coordinate of the center position             |
-| y         | The Y coordinate of the center position             |
-| z         | The Z coordinate of the center position             |
-| radius    | The radius to check for path points within          |
+| Name   | Description                                |
+| ------ | ------------------------------------------ |
+| pathId | The ID of the path to check                |
+| x      | The X coordinate of the center position    |
+| y      | The Y coordinate of the center position    |
+| z      | The Z coordinate of the center position    |
+| radius | The radius to check for path points within |
 
 ## Returns
 
@@ -36,9 +36,9 @@ public OnGameModeInit()
     NPC_AddPointToPath(g_PatrolPath, 1968.33, 1353.12, 15.36, 1.0);
     NPC_AddPointToPath(g_PatrolPath, 1978.33, 1363.12, 15.36, 1.0);
     NPC_AddPointToPath(g_PatrolPath, 1988.33, 1373.12, 15.36, 1.0);
-    
+
     printf("Patrol path created with %d points", NPC_GetPathPointCount(g_PatrolPath));
-    
+
     return 1;
 }
 
@@ -48,12 +48,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
-        
+
         // Check if patrol path goes near player's location
         if (NPC_HasPathPointInRange(g_PatrolPath, x, y, z, 50.0))
         {
             SendClientMessage(playerid, 0x00FF00FF, "NPC patrol route passes near your location!");
-            
+
             // Spawn NPC to follow the path
             new npcid = NPC_Create("Patrol");
             NPC_Spawn(npcid);
@@ -65,7 +65,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/safezone", true))
     {
         // Check if path intersects with a safe zone
@@ -99,4 +99,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

@@ -21,11 +21,11 @@ This callback is called when an NPC respawns.
 public OnNPCRespawn(npcid)
 {
     printf("NPC %d has respawned", npcid);
-    
+
     // Set respawn position
     NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
     NPC_SetFacingAngle(npcid, 0.0);
-    
+
     return true;
 }
 ```

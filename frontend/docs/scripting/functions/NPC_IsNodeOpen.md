@@ -11,9 +11,9 @@ tags: ["npc", "node", "navigation"]
 
 Checks if an NPC node is open and available for use.
 
-| Name   | Description            |
-| ------ | ---------------------- |
-| nodeid | The ID of the node    |
+| Name   | Description        |
+| ------ | ------------------ |
+| nodeid | The ID of the node |
 
 ## Returns
 
@@ -35,7 +35,7 @@ public OnGameModeInit()
             printf("Successfully opened node 1");
         }
     }
-    
+
     return 1;
 }
 
@@ -72,4 +72,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

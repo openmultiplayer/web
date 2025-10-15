@@ -26,12 +26,12 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("IndoorBot");
     NPC_Spawn(npcid);
-    
+
     NPC_SetInterior(npcid, 1); // Set to interior 1
-    
+
     new interior = NPC_GetInterior(npcid);
     printf("NPC %d is in interior %d", npcid, interior); // Output: 1
-    
+
     return 1;
 }
 
@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new interior = NPC_GetInterior(0);
         new virtualworld = NPC_GetVirtualWorld(0);
-        
+
         new msg[64];
         format(msg, sizeof(msg), "NPC 0: Interior %d, VW %d", interior, virtualworld);
         SendClientMessage(playerid, 0xFFFFFFFF, msg);

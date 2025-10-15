@@ -11,10 +11,10 @@ tags: ["npc", "weapon", "ammo", "ammunition"]
 
 Sets the ammunition count for an NPC's current weapon.
 
-| Name  | Description                          |
-| ----- | ------------------------------------ |
-| npcid | The ID of the NPC                    |
-| ammo  | The amount of ammunition to set      |
+| Name  | Description                     |
+| ----- | ------------------------------- |
+| npcid | The ID of the NPC               |
+| ammo  | The amount of ammunition to set |
 
 ## Returns
 
@@ -28,7 +28,7 @@ public OnGameModeInit()
     new npcid = NPC_Create("Soldier");
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_M4); // M4
-    
+
     // Set M4 ammo to 200
     NPC_SetAmmo(npcid, 200);
     return 1;
@@ -41,10 +41,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new npcid = NPC_Create("Gunner");
         NPC_Spawn(npcid);
         NPC_SetWeapon(npcid, WEAPON_DEAGLE);
-        
+
         // Give Desert Eagle 50 ammo
         NPC_SetAmmo(npcid, 50);
-        
+
         SendClientMessage(playerid, 0xFFFFFFFF, "NPC armed with ammo");
         return 1;
     }
@@ -68,4 +68,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

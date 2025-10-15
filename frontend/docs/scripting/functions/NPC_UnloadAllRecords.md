@@ -24,9 +24,9 @@ public OnGameModeInit()
     NPC_LoadRecord("patrol");
     NPC_LoadRecord("driver");
     NPC_LoadRecord("guard");
-    
+
     printf("Loaded records: %d", NPC_GetRecordCount());
-    
+
     return 1;
 }
 
@@ -37,7 +37,7 @@ public OnGameModeExit()
     {
         print("All NPC recordings unloaded successfully");
     }
-    
+
     return 1;
 }
 

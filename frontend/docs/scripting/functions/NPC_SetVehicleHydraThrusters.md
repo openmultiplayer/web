@@ -13,8 +13,8 @@ Sets the Hydra thruster direction for an NPC's vehicle when piloting a Hydra air
 
 | Name      | Description                                    |
 | --------- | ---------------------------------------------- |
-| npcid     | The ID of the NPC                             |
-| direction | The thruster direction (0=forward, 1=backward)|
+| npcid     | The ID of the NPC                              |
+| direction | The thruster direction (0=forward, 1=backward) |
 
 ## Returns
 
@@ -27,13 +27,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Pilot");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(520, 1958.33, 1343.12, 50.0, 0.0, -1, -1, -1); // Hydra
     NPC_PutInVehicle(npcid, vehicleid, 0);
-    
+
     // Set thrusters for vertical takeoff
     NPC_SetVehicleHydraThrusters(npcid, 1);
-    
+
     return 1;
 }
 
@@ -46,12 +46,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 Hydra in VTOL mode");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/jet", true))
     {
         new npcs[MAX_NPCS];
         new count = NPC_GetAll(npcs);
-        
+
         for (new i = 0; i < count; i++)
         {
             new vehicleid = NPC_GetVehicleID(npcs[i]);
@@ -60,7 +60,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
                 NPC_SetVehicleHydraThrusters(npcs[i], 0); // Jet mode
             }
         }
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "All NPC Hydras in jet mode");
         return 1;
     }
@@ -84,4 +84,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

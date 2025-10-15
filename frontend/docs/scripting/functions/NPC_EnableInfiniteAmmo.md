@@ -11,9 +11,9 @@ tags: ["npc", "weapon", "ammo"]
 
 Enables or disables infinite ammo for an NPC.
 
-| Name   | Description                                    |
-| ------ | ---------------------------------------------- |
-| npcid  | The ID of the NPC                             |
+| Name   | Description                                        |
+| ------ | -------------------------------------------------- |
+| npcid  | The ID of the NPC                                  |
 | enable | `true` to enable infinite ammo, `false` to disable |
 
 ## Returns
@@ -27,13 +27,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("ShooterBot");
     NPC_Spawn(npcid);
-    
+
     // Give the NPC a weapon
     NPC_SetWeapon(npcid, WEAPON_AK47);
     NPC_SetAmmo(npcid, 100); // Give 100 ammo
     // Enable infinite ammo so it never runs out
     NPC_EnableInfiniteAmmo(npcid, true);
-    
+
     return 1;
 }
 
@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             new bool:infinite = NPC_IsInfiniteAmmoEnabled(npcid);
             NPC_EnableInfiniteAmmo(npcid, !infinite);
-            
+
             new msg[64];
             format(msg, sizeof(msg), "NPC infinite ammo: %s", !infinite ? "Enabled" : "Disabled");
             SendClientMessage(playerid, 0x00FF00FF, msg);

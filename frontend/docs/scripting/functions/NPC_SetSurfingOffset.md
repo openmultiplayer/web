@@ -11,12 +11,12 @@ tags: ["npc", "surfing"]
 
 Sets the surfing offset for an NPC.
 
-| Name    | Description          |
-| ------- | -------------------- |
-| npcid   | The ID of the NPC    |
-| x       | The X offset         |
-| y       | The Y offset         |
-| z       | The Z offset         |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
+| x     | The X offset      |
+| y     | The Y offset      |
+| z     | The Z offset      |
 
 ## Returns
 
@@ -31,15 +31,15 @@ public OnGameModeInit()
 {
     // Create transport vehicle
     g_CarrierVehicle = CreateVehicle(403, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300); // Linerunner
-    
+
     // Create passenger NPC
     new npcid = NPC_Create("Guard");
     NPC_Spawn(npcid);
-    
+
     // Set NPC to surf on vehicle roof
     NPC_SetSurfingVehicle(npcid, g_CarrierVehicle);
     NPC_SetSurfingOffset(npcid, 0.0, 0.0, 2.5); // 2.5 units above vehicle
-    
+
     return 1;
 }
 
@@ -51,31 +51,31 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             NPC_SetSurfingVehicle(0, g_CarrierVehicle);
             NPC_SetSurfingOffset(0, 0.0, 0.0, 2.5); // On top
-            
+
             SendClientMessage(playerid, 0x00FF00FF, "NPC 0 positioned on vehicle roof");
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/ridefront", true))
     {
         if (g_CarrierVehicle != INVALID_VEHICLE_ID)
         {
             NPC_SetSurfingVehicle(0, g_CarrierVehicle);
             NPC_SetSurfingOffset(0, 0.0, 3.0, 1.0); // Front of vehicle
-            
+
             SendClientMessage(playerid, 0x00FF00FF, "NPC 0 positioned at vehicle front");
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/rideside", true))
     {
         if (g_CarrierVehicle != INVALID_VEHICLE_ID)
         {
             NPC_SetSurfingVehicle(0, g_CarrierVehicle);
             NPC_SetSurfingOffset(0, 2.0, 0.0, 1.0); // Side of vehicle
-            
+
             SendClientMessage(playerid, 0x00FF00FF, "NPC 0 positioned at vehicle side");
         }
         return 1;
@@ -103,4 +103,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

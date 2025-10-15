@@ -28,7 +28,7 @@ The vehicle's rotation is stored in the specified variables.
 ## Examples
 
 ```c
-new 
+new
     Float:w,
     Float:x,
     Float:y,

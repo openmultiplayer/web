@@ -11,11 +11,11 @@ tags: ["npc", "weapon"]
 
 This callback is called when an NPC's weapon state changes (e.g., reloading, running out of ammo, etc.).
 
-| Name     | Description                           |
-| -------- | ------------------------------------- |
-| npcid    | The ID of the NPC                     |
-| newstate | The new weapon state                  |
-| oldstate | The previous weapon state             |
+| Name     | Description               |
+| -------- | ------------------------- |
+| npcid    | The ID of the NPC         |
+| newstate | The new weapon state      |
+| oldstate | The previous weapon state |
 
 ## Examples
 
@@ -23,13 +23,13 @@ This callback is called when an NPC's weapon state changes (e.g., reloading, run
 public OnNPCWeaponStateChange(npcid, newstate, oldstate)
 {
     printf("NPC %d weapon state: %d -> %d", npcid, oldstate, newstate);
-    
+
     if (newstate == WEAPONSTATE_NO_BULLETS)
     {
         // Give more ammo
         NPC_SetAmmo(npcid, 100);
     }
-    
+
     return true;
 }
 ```

@@ -11,9 +11,9 @@ tags: ["npc", "recording", "validation"]
 
 Checks if a recording ID is valid and loaded.
 
-| Name     | Description                      |
-| -------- | -------------------------------- |
-| recordId | The ID of the recording         |
+| Name     | Description             |
+| -------- | ----------------------- |
+| recordId | The ID of the recording |
 
 ## Returns
 
@@ -28,10 +28,10 @@ public OnGameModeInit()
     NPC_LoadRecord("driver_route");
     NPC_LoadRecord("guard_patrol");
     NPC_LoadRecord("pilot_flight");
-    
+
     // Validate all recordings
     ValidateRecordings();
-    
+
     return 1;
 }
 
@@ -39,12 +39,12 @@ ValidateRecordings()
 {
     new recordings[][32] = {
         "driver_route",
-        "guard_patrol", 
+        "guard_patrol",
         "pilot_flight"
     };
-    
+
     printf("=== Recording Validation ===");
-    
+
     for (new i = 0; i < sizeof(recordings); i++)
     {
         if (NPC_IsValidRecord(recordings[i]))
@@ -63,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/checkrecording", true))
     {
         new recordName[32] = "driver_route";
-        
+
         if (NPC_IsValidRecord(recordName))
         {
             new msg[64];
@@ -78,7 +78,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/playdriver", true))
     {
         if (NPC_IsValidRecord("driver_route"))
@@ -86,7 +86,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             new npcid = NPC_Create("AutoDriver");
             NPC_Spawn(npcid);
             NPC_StartPlayback(npcid, "driver_route", true, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
-            
+
             SendClientMessage(playerid, 0x00FF00FF, "Auto-driver started with valid recording");
         }
         else
@@ -95,14 +95,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/loadrecord", true))
     {
         new testRecord[32] = "test_recording";
-        
+
         // Try to load a new recording
         NPC_LoadRecord(testRecord);
-        
+
         // Validate it
         if (NPC_IsValidRecord(testRecord))
         {
@@ -138,4 +138,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

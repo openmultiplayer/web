@@ -11,10 +11,10 @@ tags: ["npc", "playback", "recording"]
 
 This callback is called when an NPC starts playback of a recorded file.
 
-| Name     | Description                                    |
-| -------- | ---------------------------------------------- |
-| npcid    | The ID of the NPC that started playback       |
-| recordid | The ID of the record that started playing     |
+| Name     | Description                               |
+| -------- | ----------------------------------------- |
+| npcid    | The ID of the NPC that started playback   |
+| recordid | The ID of the record that started playing |
 
 ## Examples
 
@@ -22,11 +22,11 @@ This callback is called when an NPC starts playback of a recorded file.
 public OnNPCPlaybackStart(npcid, recordid)
 {
     printf("NPC %d started playing record %d", npcid, recordid);
-    
+
     // Set properties during playback
     NPC_SetHealth(npcid, 100.0);
     NPC_SetArmour(npcid, 50.0);
-    
+
     return true;
 }
 ```

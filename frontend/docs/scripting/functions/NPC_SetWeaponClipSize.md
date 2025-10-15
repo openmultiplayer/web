@@ -11,11 +11,11 @@ tags: ["npc", "weapon", "ammo"]
 
 Sets the clip size for an NPC's current weapon.
 
-| Name     | Description                    |
-| -------- | ------------------------------ |
-| npcid    | The ID of the NPC              |
-| weapon | The weapon ID to set           |
-| size | The new clip size              |
+| Name   | Description          |
+| ------ | -------------------- |
+| npcid  | The ID of the NPC    |
+| weapon | The weapon ID to set |
+| size   | The new clip size    |
 
 ## Returns
 
@@ -30,12 +30,12 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_M4); // M4
     NPC_SetAmmo(npcid, 500); // Give 500 ammo
-    
+
     // Set large clip size
     NPC_SetWeaponClipSize(npcid, WEAPON_M4, 100);
-    
+
     printf("NPC %d M4 clip size set to 100", npcid);
-    
+
     return 1;
 }
 
@@ -48,11 +48,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 weapon clip increased");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/realisticclip", true))
     {
         new weapon = NPC_GetWeapon(0);
-        
+
         // Set realistic clip size for NPC 0
         switch (weapon)
         {

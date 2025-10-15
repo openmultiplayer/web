@@ -28,13 +28,13 @@ public OnGameModeInit()
     NPC_AddPointToPath(pathid, 1958.33, 1343.12, 15.36, 1.0);
     NPC_AddPointToPath(pathid, 1968.33, 1353.12, 15.36, 1.0);
     NPC_AddPointToPath(pathid, 1978.33, 1363.12, 15.36, 1.0);
-    
+
     new npcid = NPC_Create("PathWalker");
     NPC_Spawn(npcid);
     NPC_MoveByPath(npcid, pathid, NPC_MOVE_TYPE_WALK);
-    
+
     SetTimer("CheckPathProgress", 2000, true);
-    
+
     return 1;
 }
 

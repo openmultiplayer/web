@@ -26,13 +26,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("AnimBot");
     NPC_Spawn(npcid);
-    
+
     // Apply some animations
     NPC_ApplyAnimation(npcid, "DANCING", "DAN_Loop_A", 4.1, true, false, false, false, 0);
-    
+
     // After 10 seconds, clear all animations
     SetTimerEx("ClearNPCAnimations", 10000, false, "i", npcid);
-    
+
     return 1;
 }
 

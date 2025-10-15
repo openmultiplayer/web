@@ -11,12 +11,12 @@ tags: ["npc", "keys"]
 
 Gets the current key states of an NPC.
 
-| Name          | Description                                    |
-| ------------- | ---------------------------------------------- |
-| npcid         | The ID of the NPC                             |
-| &upAndDown    | Variable to store up/down key states         |
-| &leftAndRight | Variable to store left/right key states      |
-| &keys         | Variable to store other key states           |
+| Name          | Description                             |
+| ------------- | --------------------------------------- |
+| npcid         | The ID of the NPC                       |
+| &upAndDown    | Variable to store up/down key states    |
+| &leftAndRight | Variable to store left/right key states |
+| &keys         | Variable to store other key states      |
 
 ## Returns
 
@@ -29,17 +29,17 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("KeyBot");
     NPC_Spawn(npcid);
-    
+
     // Set some keys
     NPC_SetKeys(npcid, KEY_UP, KEY_LEFT, KEY_FIRE);
-    
+
     // Get the keys back
     new upDown, leftDown, keys;
     NPC_GetKeys(npcid, upDown, leftDown, keys);
-    
-    printf("NPC %d keys - UpDown: %d, LeftDown: %d, Keys: %d", 
+
+    printf("NPC %d keys - UpDown: %d, LeftDown: %d, Keys: %d",
         npcid, upDown, leftDown, keys);
-    
+
     return 1;
 }
 
@@ -49,15 +49,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new upDown, leftDown, keys;
         NPC_GetKeys(0, upDown, leftDown, keys);
-        
+
         new keyInfo[128] = "NPC 0 Keys:";
-        
+
         if (upDown & KEY_UP) strcat(keyInfo, " UP");
         if (upDown & KEY_DOWN) strcat(keyInfo, " DOWN");
         if (leftDown & KEY_LEFT) strcat(keyInfo, " LEFT");
         if (leftDown & KEY_RIGHT) strcat(keyInfo, " RIGHT");
         if (keys & KEY_FIRE) strcat(keyInfo, " FIRE");
-        
+
         SendClientMessage(playerid, 0xFFFFFFFF, keyInfo);
         return 1;
     }

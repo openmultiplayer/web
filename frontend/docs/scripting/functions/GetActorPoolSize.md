@@ -9,7 +9,7 @@ tags: ["actor"]
 
 ## Description
 
-Gets the highest actorid created on the server.  Note that in SA:MP this function is broken and will return `0` even when there are no actors.  fixes.inc and open.mp correct this to return `-1`, but also deprecate the function in favour of `MAX_ACTORS` or `foreach`.
+Gets the highest actorid created on the server. Note that in SA:MP this function is broken and will return `0` even when there are no actors. fixes.inc and open.mp correct this to return `-1`, but also deprecate the function in favour of `MAX_ACTORS` or `foreach`.
 
 ## Examples
 

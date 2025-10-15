@@ -7,17 +7,17 @@ tags: ["npc"]
 
 ## Description
 
-Set the position of the NPC. 
- 
-| Name     | Description                         |
-| -------- | ------------------------------------|
-| Float:x  | The X coordinate to put the NPC at. |
-| Float:y  | The Y coordinate to put the NPC at. |
-| Float:z  | The Z coordinate to put the NPC at. |
+Set the position of the NPC.
+
+| Name    | Description                         |
+| ------- | ----------------------------------- |
+| Float:x | The X coordinate to put the NPC at. |
+| Float:y | The Y coordinate to put the NPC at. |
+| Float:z | The Z coordinate to put the NPC at. |
 
 ## Returns
 
-This function does not return any specific values.  
+This function does not return any specific values.
 
 ## Example
 

@@ -26,15 +26,15 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Navigator");
     NPC_Spawn(npcid);
-    
+
     if (NPC_OpenNode(1))
     {
         NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-        
+
         // Pause after 5 seconds
         SetTimerEx("PauseNode", 5000, false, "i", npcid);
     }
-    
+
     return 1;
 }
 
@@ -42,7 +42,7 @@ forward PauseNode(npcid);
 public PauseNode(npcid)
 {
     NPC_PausePlayingNode(npcid);
-    
+
     // Resume after 3 seconds
     SetTimerEx("ResumeNode", 3000, false, "i", npcid);
 }

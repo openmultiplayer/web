@@ -26,13 +26,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Passenger");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
     NPC_PutInVehicle(npcid, vehicleid, 1); // Put in passenger seat
-    
+
     new seat = NPC_GetVehicleSeat(npcid);
     printf("NPC %d is in seat %d", npcid, seat);
-    
+
     return 1;
 }
 
@@ -81,4 +81,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

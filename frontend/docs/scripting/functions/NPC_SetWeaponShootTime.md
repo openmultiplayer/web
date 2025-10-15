@@ -11,11 +11,11 @@ tags: ["npc", "weapon", "shooting", "time"]
 
 Sets the shooting interval for a specific weapon of an NPC.
 
-| Name     | Description                            |
-| -------- | -------------------------------------- |
+| Name     | Description                           |
+| -------- | ------------------------------------- |
 | npcid    | The ID of the NPC                     |
 | weaponid | The weapon ID to set shoot time for   |
-| time     | The shooting interval in milliseconds  |
+| time     | The shooting interval in milliseconds |
 
 ## Returns
 
@@ -29,10 +29,10 @@ public OnGameModeInit()
     new npcid = NPC_Create("RapidFire");
     NPC_Spawn(npcid);
     NPC_GiveWeapon(npcid, WEAPON_M4, 500); // M4 with 500 ammo
-    
+
     // Set rapid fire (100ms between shots)
     NPC_SetWeaponShootTime(npcid, 100);
-    
+
     return 1;
 }
 
@@ -42,13 +42,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcs[MAX_NPCS];
         new count = NPC_GetAll(npcs);
-        
+
         // Set rapid fire for NPC 0
         NPC_SetWeaponShootTime(0, 50);
         SendClientMessage(playerid, 0xFF0000FF, "NPC 0 has rapid fire enabled");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/slowfire", true))
     {
         // Set slow fire for NPC 0

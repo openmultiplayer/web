@@ -9,9 +9,9 @@ tags: []
 
 Set the NPC's facing angle.
 
-| Name                 | Description                   |
-| -------------------- | ----------------------------- |
-| Float:ang            | The new NPC's facing angle.   |
+| Name      | Description                 |
+| --------- | --------------------------- |
+| Float:ang | The new NPC's facing angle. |
 
 ## Examples
 

@@ -26,17 +26,17 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("AutoBot");
     NPC_Spawn(npcid);
-    
+
     // Load multiple recordings
     NPC_LoadRecord("patrol_route");
     NPC_LoadRecord("combat_moves");
-    
+
     // Start patrol recording
     NPC_StartPlayback(npcid, "patrol_route", true, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
-    
+
     // Monitor playback status
     SetTimer("MonitorPlayback", 2000, true);
-    
+
     return 1;
 }
 
@@ -50,7 +50,7 @@ public MonitorPlayback()
             status = "Playing (Paused)";
         else
             status = "Playing (Active)";
-            
+
         printf("NPC 0 status: %s", status);
     }
     else
@@ -67,7 +67,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             new bool:paused = NPC_IsPlaybackPaused(0);
             new status[64];
-            format(status, sizeof(status), "NPC 0: Playing recording (%s)", 
+            format(status, sizeof(status), "NPC 0: Playing recording (%s)",
                 paused ? "PAUSED" : "ACTIVE");
             SendClientMessage(playerid, 0x00FF00FF, status);
         }
@@ -77,7 +77,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/startpatrol", true))
     {
         if (!NPC_IsPlayingPlayback(0))
@@ -98,7 +98,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/stopplayback", true))
     {
         if (NPC_IsPlayingPlayback(0))

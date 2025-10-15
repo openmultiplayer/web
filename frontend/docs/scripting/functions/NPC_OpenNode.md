@@ -11,9 +11,9 @@ tags: ["npc", "node", "navigation"]
 
 Opens an NPC node for use, making it available for NPCs to navigate through.
 
-| Name   | Description            |
-| ------ | ---------------------- |
-| nodeid | The ID of the node    |
+| Name   | Description        |
+| ------ | ------------------ |
+| nodeid | The ID of the node |
 
 ## Returns
 
@@ -33,7 +33,7 @@ public OnGameModeInit()
     {
         printf("Failed to open node 1");
     }
-    
+
     return 1;
 }
 
@@ -42,13 +42,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/opennode", true))
     {
         new nodeid = 5; // Example node ID
-        
+
         if (NPC_OpenNode(nodeid))
         {
             new msg[64];
             format(msg, sizeof(msg), "Node %d opened successfully", nodeid);
             SendClientMessage(playerid, 0x00FF00FF, msg);
-            
+
             // Create an NPC to use this node
             new npcid = NPC_Create("Navigator");
             NPC_Spawn(npcid);
@@ -62,11 +62,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/opennodes", true))
     {
         new openedCount = 0;
-        
+
         for (new nodeid = 0; nodeid < 64; nodeid++)
         {
             if (NPC_OpenNode(nodeid))
@@ -74,7 +74,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
                 openedCount++;
             }
         }
-        
+
         new msg[64];
         format(msg, sizeof(msg), "Opened %d nodes successfully", openedCount);
         SendClientMessage(playerid, 0x00FF00FF, msg);
@@ -101,4 +101,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

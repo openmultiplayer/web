@@ -11,10 +11,10 @@ tags: ["npc", "surfing"]
 
 Sets the player object an NPC is surfing on.
 
-| Name     | Description               |
-| -------- | ------------------------- |
-| npcid    | The ID of the NPC         |
-| objectid | The player object ID      |
+| Name     | Description          |
+| -------- | -------------------- |
+| npcid    | The ID of the NPC    |
+| objectid | The player object ID |
 
 ## Returns
 
@@ -29,7 +29,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = NPC_Create("SurfingBot");
         new objectid = CreatePlayerObject(playerid, 1225, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
-        
+
         NPC_Spawn(npcid);
         NPC_SetPos(npcid, 1958.33, 1343.12, 17.36);
         NPC_SetSurfingPlayerObject(npcid, objectid);
@@ -56,4 +56,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

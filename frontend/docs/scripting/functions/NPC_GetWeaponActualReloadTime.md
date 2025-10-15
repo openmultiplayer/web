@@ -11,10 +11,10 @@ tags: ["npc", "weapon"]
 
 Gets the actual (default) reload time for an NPC's weapon from the game data.
 
-| Name      | Description              |
-| --------- | ------------------------ |
-| npcid     | The ID of the NPC        |
-| weaponid  | The weapon ID to check   |
+| Name     | Description            |
+| -------- | ---------------------- |
+| npcid    | The ID of the NPC      |
+| weaponid | The weapon ID to check |
 
 ## Returns
 
@@ -27,15 +27,15 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Reloader");
     NPC_Spawn(npcid);
-    
+
     NPC_SetWeapon(npcid, WEAPON_AK47);
-    
+
     new actualReloadTime = NPC_GetWeaponActualReloadTime(npcid, WEAPON_AK47);
     new customReloadTime = NPC_GetWeaponReloadTime(npcid, WEAPON_AK47);
-    
-    printf("NPC %d AK47 - Actual reload: %dms, Custom: %dms", 
+
+    printf("NPC %d AK47 - Actual reload: %dms, Custom: %dms",
         npcid, actualReloadTime, customReloadTime);
-    
+
     return 1;
 }
 

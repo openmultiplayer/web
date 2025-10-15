@@ -11,10 +11,10 @@ tags: ["npc", "weapon", "ammo"]
 
 Sets the amount of ammo in an NPC's weapon clip.
 
-| Name  | Description                      |
-| ----- | -------------------------------- |
-| npcid | The ID of the NPC               |
-| ammo  | The amount of ammo to set       |
+| Name  | Description               |
+| ----- | ------------------------- |
+| npcid | The ID of the NPC         |
+| ammo  | The amount of ammo to set |
 
 ## Returns
 
@@ -28,10 +28,10 @@ public OnGameModeInit()
     new npcid = NPC_Create("Gunner");
     NPC_Spawn(npcid);
     NPC_GiveWeapon(npcid, WEAPON_DEAGLE, 100); // Desert Eagle with 100 ammo
-    
+
     // Set clip to half capacity
     NPC_SetAmmoInClip(npcid, 3);
-    
+
     return 1;
 }
 

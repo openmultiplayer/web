@@ -11,10 +11,10 @@ tags: ["npc", "streaming"]
 
 Checks if an NPC is streamed in for a specific player.
 
-| Name        | Description                    |
-| ----------- | ------------------------------ |
-| npcid       | The ID of the NPC             |
-| playerid    | The ID of the player to check |
+| Name     | Description                   |
+| -------- | ----------------------------- |
+| npcid    | The ID of the NPC             |
+| playerid | The ID of the player to check |
 
 ## Returns
 
@@ -47,7 +47,7 @@ public OnPlayerConnect(playerid)
     {
         SendClientMessage(playerid, 0x00FFFFFF, "You can see NPC 0");
     }
-    
+
     return 1;
 }
 ```
@@ -65,4 +65,4 @@ public OnPlayerConnect(playerid)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

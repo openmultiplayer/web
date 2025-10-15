@@ -11,10 +11,10 @@ tags: ["npc", "recording", "playback"]
 
 Pauses or unpauses an NPC's recording playback.
 
-| Name  | Description                                      |
-| ----- | ------------------------------------------------ |
-| npcid | The ID of the NPC                               |
-| pause | Whether to pause (true) or unpause (false)      |
+| Name  | Description                                |
+| ----- | ------------------------------------------ |
+| npcid | The ID of the NPC                          |
+| pause | Whether to pause (true) or unpause (false) |
 
 ## Returns
 
@@ -28,10 +28,10 @@ public OnGameModeInit()
     new npcid = NPC_Create("RecordedBot");
     NPC_Spawn(npcid);
     NPC_StartPlayback(npcid, "recording", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-    
+
     // Pause after 5 seconds
     SetTimerEx("PauseBot", 5000, false, "i", npcid);
-    
+
     return 1;
 }
 
@@ -40,7 +40,7 @@ public PauseBot(npcid)
 {
     NPC_PausePlayback(npcid, true);
     printf("NPC %d playback paused", npcid);
-    
+
     // Resume after 3 seconds
     SetTimerEx("ResumeBot", 3000, false, "i", npcid);
 }
@@ -68,4 +68,4 @@ public ResumeBot(npcid)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

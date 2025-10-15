@@ -26,10 +26,10 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("Respawner");
     NPC_Spawn(npcid);
-    
+
     // Respawn every 30 seconds
     SetTimerEx("RespawnNPC", 30000, true, "i", npcid);
-    
+
     return 1;
 }
 

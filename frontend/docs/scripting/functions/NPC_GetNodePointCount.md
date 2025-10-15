@@ -11,9 +11,9 @@ tags: ["npc", "node", "navigation"]
 
 Gets the number of points in an NPC node.
 
-| Name   | Description            |
-| ------ | ---------------------- |
-| nodeid | The ID of the node    |
+| Name   | Description        |
+| ------ | ------------------ |
+| nodeid | The ID of the node |
 
 ## Returns
 
@@ -29,14 +29,14 @@ public OnGameModeInit()
     {
         new pointCount = NPC_GetNodePointCount(1);
         printf("Node 1 has %d points", pointCount);
-        
+
         // Set to a specific point
         if (pointCount > 0)
         {
             NPC_SetNodePoint(1, 0); // Set to first point
         }
     }
-    
+
     return 1;
 }
 
@@ -49,13 +49,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
             if (NPC_IsNodeOpen(nodeid))
             {
                 new pointCount = NPC_GetNodePointCount(nodeid);
-                
+
                 new msg[128];
                 format(msg, sizeof(msg), "Node %d has %d points", nodeid, pointCount);
                 SendClientMessage(playerid, 0xFFFFFFFF, msg);
             }
         }
-        
+
         return 1;
     }
     return 0;
@@ -67,7 +67,7 @@ public CheckNodeProgress(npcid, nodeid)
     if (NPC_IsPlayingNode(npcid))
     {
         new totalPoints = NPC_GetNodePointCount(nodeid);
-        printf("NPC %d is navigating node %d with %d total points", 
+        printf("NPC %d is navigating node %d with %d total points",
             npcid, nodeid, totalPoints);
     }
 }

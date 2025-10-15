@@ -34,12 +34,12 @@ public OnPlayerConnect(playerid)
     // Create the gangzone
     gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
 
-    new 
+    new
         Float:minX,
         Float:minY,
         Float:maxX,
         Float:maxY;
-    
+
     PlayerGangZoneGetPos(playerid, gGangZoneID[playerid], minX, minY, maxX, maxY);
     return 1;
 }

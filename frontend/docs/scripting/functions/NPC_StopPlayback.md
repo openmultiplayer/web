@@ -11,9 +11,9 @@ tags: ["npc", "playback", "recording"]
 
 Stops an NPC from playing their current recording playback.
 
-| Name  | Description           |
-| ----- | --------------------- |
-| npcid | The ID of the NPC     |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -26,13 +26,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("PlaybackBot");
     NPC_Spawn(npcid);
-    
+
     // Start playing a recording
     NPC_StartPlayback(npcid, "patrol", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-    
+
     // Stop playback after 15 seconds
     SetTimerEx("StopNPCPlayback", 15000, false, "i", npcid);
-    
+
     return 1;
 }
 

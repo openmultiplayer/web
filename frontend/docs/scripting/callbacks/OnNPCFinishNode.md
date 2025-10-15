@@ -11,10 +11,10 @@ tags: ["npc", "node", "navigation"]
 
 This callback is called when an NPC finishes navigating a complete node during node-based movement.
 
-| Name   | Description                                    |
-| ------ | ---------------------------------------------- |
-| npcid  | The ID of the NPC that finished the node      |
-| nodeid | The ID of the node that was completed         |
+| Name   | Description                              |
+| ------ | ---------------------------------------- |
+| npcid  | The ID of the NPC that finished the node |
+| nodeid | The ID of the node that was completed    |
 
 ## Examples
 
@@ -22,10 +22,10 @@ This callback is called when an NPC finishes navigating a complete node during n
 public OnNPCFinishNode(npcid, nodeid)
 {
     printf("NPC %d finished navigating node %d", npcid, nodeid);
-    
+
     // Start navigation on next node
     NPC_PlayNode(npcid, nodeid + 1, NPC_MOVE_TYPE_WALK, 1.0, 2.0, true);
-    
+
     return true;
 }
 ```

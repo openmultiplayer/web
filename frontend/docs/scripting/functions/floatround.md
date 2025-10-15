@@ -12,7 +12,7 @@ tags: ["math", "floating-point"]
 Round a floating point number to an integer value.
 
 | Name                     | Description                                                                                     |
-|--------------------------|-------------------------------------------------------------------------------------------------|
+| ------------------------ | ----------------------------------------------------------------------------------------------- |
 | Float:value              | The value to round.                                                                             |
 | floatround_method:method | The [floatround mode](../resources/floatroundmodes) to use.<br />By default: `floatround_round` |
 

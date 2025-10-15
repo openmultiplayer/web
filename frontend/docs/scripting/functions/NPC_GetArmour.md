@@ -26,12 +26,12 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Guard");
     NPC_Spawn(npcid);
-    
+
     NPC_SetArmour(npcid, 75.5);
-    
+
     new Float:armour = NPC_GetArmour(npcid);
     printf("NPC %d has %.1f armour", npcid, armour); // Output: 75.5
-    
+
     return 1;
 }
 

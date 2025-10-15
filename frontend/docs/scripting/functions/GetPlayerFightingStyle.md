@@ -56,7 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
                 styleName = "elbow";
             }
         }
-        
+
         format(string, sizeof(string), "You are using %s fighting style!", styleName);
         SendClientMessage(playerid, 0xFFFFFFAA, string);
         return 1;

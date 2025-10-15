@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Returns a vehicle's rotation as euler.
 
-| Name      | Description                                                                          |
-| --------- | ------------------------------------------------------------------------------------ |
-| vehicleid | The ID of the vehicle to get the rotation of.                                        |
+| Name      | Description                                                               |
+| --------- | ------------------------------------------------------------------------- |
+| vehicleid | The ID of the vehicle to get the rotation of.                             |
 | &Float:x  | A float variable in which to store the X axis angle, passed by reference. |
-| &Float:y  | A float variable in which to store the Y axis angle, passed by reference.  |
+| &Float:y  | A float variable in which to store the Y axis angle, passed by reference. |
 | &Float:z  | A float variable in which to store the Z asix angle, passed by reference. |
 
 ## Returns

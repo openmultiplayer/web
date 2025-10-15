@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Checks if a vehicle is streamed in for a player. Only nearby vehicles are streamed in (visible) for a player.
 
-| Name        | Description                     |
-| ----------- | ------------------------------- |
-| vehicleid   | The ID of the vehicle to check. |
-| playerid    | The ID of the player to check.  |
+| Name      | Description                     |
+| --------- | ------------------------------- |
+| vehicleid | The ID of the vehicle to check. |
+| playerid  | The ID of the player to check.  |
 
 ## Returns
 

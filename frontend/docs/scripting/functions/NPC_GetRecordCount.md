@@ -21,18 +21,18 @@ Returns the number of recording files currently loaded.
 public OnGameModeInit()
 {
     printf("Initial record count: %d", NPC_GetRecordCount()); // 0
-    
+
     // Load some recordings
     new record1 = NPC_LoadRecord("patrol");
     new record2 = NPC_LoadRecord("driver");
     new record3 = NPC_LoadRecord("guard");
-    
+
     printf("Record count after loading: %d", NPC_GetRecordCount()); // 3
-    
+
     // Unload one record
     NPC_UnloadRecord(record2);
     printf("Record count after unloading one: %d", NPC_GetRecordCount()); // 2
-    
+
     return 1;
 }
 
@@ -41,27 +41,27 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/recordstats", true))
     {
         new recordCount = NPC_GetRecordCount();
-        
+
         new msg[128];
         format(msg, sizeof(msg), "Server has %d NPC recordings loaded", recordCount);
         SendClientMessage(playerid, 0x00FF00FF, msg);
-        
+
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/loadtestrecords", true))
     {
         new oldCount = NPC_GetRecordCount();
-        
+
         // Try to load some test recordings
         new loaded = 0;
-        
+
         new testFiles[][] = {
             "test1",
-            "test2", 
+            "test2",
             "test3"
         };
-        
+
         for (new i = 0; i < sizeof(testFiles); i++)
         {
             new recordId = NPC_LoadRecord(testFiles[i]);
@@ -70,14 +70,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
                 loaded++;
             }
         }
-        
+
         new newCount = NPC_GetRecordCount();
-        
+
         new msg[128];
-        format(msg, sizeof(msg), "Loaded %d records. Total: %d -> %d", 
+        format(msg, sizeof(msg), "Loaded %d records. Total: %d -> %d",
             loaded, oldCount, newCount);
         SendClientMessage(playerid, 0x00FF00FF, msg);
-        
+
         return 1;
     }
     return 0;

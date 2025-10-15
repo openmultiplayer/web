@@ -29,13 +29,13 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("RotationBot");
     NPC_Spawn(npcid);
-    
+
     NPC_SetRot(npcid, 15.0, 90.0, 0.0);
-    
+
     new Float:rx, Float:ry, Float:rz;
     NPC_GetRot(npcid, rx, ry, rz);
     printf("NPC %d rotation: %.2f, %.2f, %.2f", npcid, rx, ry, rz);
-    
+
     return 1;
 }
 
@@ -45,19 +45,19 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new Float:rx, Float:ry, Float:rz;
         NPC_GetRot(0, rx, ry, rz);
-        
+
         SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0 rotation: %.1f, %.1f, %.1f", rx, ry, rz);
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/copynpcrot", true))
     {
         new Float:rx, Float:ry, Float:rz;
         NPC_GetRot(0, rx, ry, rz);
-        
+
         // Copy NPC 0 rotation to player
         SetPlayerFacingAngle(playerid, rz);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "Copied NPC 0 rotation: %.1f degrees", rz);
         return 1;
     }

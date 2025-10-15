@@ -11,10 +11,10 @@ tags: ["npc", "vehicle", "health"]
 
 Sets the health of an NPC's vehicle.
 
-| Name   | Description                          |
-| ------ | ------------------------------------ |
-| npcid  | The ID of the NPC                   |
-| health | The health value (0.0-1000.0)       |
+| Name   | Description                   |
+| ------ | ----------------------------- |
+| npcid  | The ID of the NPC             |
+| health | The health value (0.0-1000.0) |
 
 ## Returns
 
@@ -27,13 +27,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Driver");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
     NPC_PutInVehicle(npcid, vehicleid, 0);
-    
+
     // Set vehicle to half health
     NPC_SetVehicleHealth(npcid, 500.0);
-    
+
     return 1;
 }
 
@@ -46,12 +46,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 vehicle repaired");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/damagenpcs", true))
     {
         new npcs[MAX_NPCS];
         new count = NPC_GetAll(npcs);
-        
+
         for (new i = 0; i < count; i++)
         {
             if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC is in vehicle
@@ -60,7 +60,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
                 NPC_SetVehicleHealth(npcs[i], damage);
             }
         }
-        
+
         SendClientMessage(playerid, 0xFF0000FF, "Damaged all NPC vehicles");
         return 1;
     }
@@ -84,4 +84,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

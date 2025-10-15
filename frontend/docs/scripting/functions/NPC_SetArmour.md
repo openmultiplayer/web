@@ -11,8 +11,8 @@ tags: ["npc", "armour", "health"]
 
 Sets an NPC's armour level.
 
-| Name   | Description                    |
-| ------ | ------------------------------ |
+| Name   | Description                   |
+| ------ | ----------------------------- |
 | npcid  | The ID of the NPC             |
 | armour | The armour amount (0.0-100.0) |
 
@@ -27,10 +27,10 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Tank");
     NPC_Spawn(npcid);
-    
+
     // Give full armour
     NPC_SetArmour(npcid, 100.0);
-    
+
     return 1;
 }
 
@@ -40,11 +40,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         // Set armour for first NPC
         NPC_SetArmour(0, 75.0);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "Set NPC armour to 75%");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/checkarmour", true))
     {
         new Float:armour = NPC_GetArmour(0);

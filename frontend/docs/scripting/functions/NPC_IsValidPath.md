@@ -11,9 +11,9 @@ tags: ["npc", "path", "validation"]
 
 Checks if a path ID is valid and exists.
 
-| Name   | Description            |
-| ------ | ---------------------- |
-| pathid | The ID of the path    |
+| Name   | Description        |
+| ------ | ------------------ |
+| pathid | The ID of the path |
 
 ## Returns
 
@@ -28,24 +28,24 @@ public OnGameModeInit()
 {
     // Create and validate a main patrol path
     g_MainPath = NPC_CreatePath();
-    
+
     if (NPC_IsValidPath(g_MainPath))
     {
         printf("Main patrol path %d created successfully", g_MainPath);
-        
+
         // Build the patrol route
         NPC_AddPointToPath(g_MainPath, 1958.33, 1343.12, 15.36, 2.0);
         NPC_AddPointToPath(g_MainPath, 2058.33, 1343.12, 15.36, 2.0);
         NPC_AddPointToPath(g_MainPath, 2058.33, 1443.12, 15.36, 2.0);
         NPC_AddPointToPath(g_MainPath, 1958.33, 1443.12, 15.36, 2.0);
-        
+
         printf("Added %d points to patrol path", NPC_GetPathPointCount(g_MainPath));
     }
     else
     {
         printf("ERROR: Failed to create main patrol path");
     }
-    
+
     return 1;
 }
 
@@ -57,7 +57,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         {
             new pointCount = NPC_GetPathPointCount(g_MainPath);
             new msg[128];
-            format(msg, sizeof(msg), "Main path %d is VALID with %d points", 
+            format(msg, sizeof(msg), "Main path %d is VALID with %d points",
                 g_MainPath, pointCount);
             SendClientMessage(playerid, 0x00FF00FF, msg);
         }
@@ -67,7 +67,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/startpatrol", true))
     {
         if (NPC_IsValidPath(g_MainPath))
@@ -75,7 +75,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             new npcid = NPC_Create("Patroller");
             NPC_Spawn(npcid);
             NPC_MoveByPath(npcid, g_MainPath, NPC_MOVE_TYPE_WALK);
-            
+
             SendClientMessage(playerid, 0x00FF00FF, "Patrol NPC started following main path");
         }
         else
@@ -84,20 +84,20 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/createtemppath", true))
     {
         new tempPath = NPC_CreatePath();
-        
+
         if (NPC_IsValidPath(tempPath))
         {
             // Quick validation test
             NPC_AddPointToPath(tempPath, 1500.0, 1500.0, 10.0, 1.0);
-            
+
             new msg[64];
             format(msg, sizeof(msg), "Temporary path %d created and validated", tempPath);
             SendClientMessage(playerid, 0x00FF00FF, msg);
-            
+
             // Clean up
             NPC_DestroyPath(tempPath);
         }
@@ -127,4 +127,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

@@ -11,10 +11,10 @@ tags: ["npc", "playback", "recording"]
 
 This callback is called when an NPC finishes playback of a recorded file.
 
-| Name     | Description                                      |
-| -------- | ------------------------------------------------ |
-| npcid    | The ID of the NPC that finished playback        |
-| recordid | The ID of the record that finished playing      |
+| Name     | Description                                |
+| -------- | ------------------------------------------ |
+| npcid    | The ID of the NPC that finished playback   |
+| recordid | The ID of the record that finished playing |
 
 ## Examples
 
@@ -22,10 +22,10 @@ This callback is called when an NPC finishes playback of a recorded file.
 public OnNPCPlaybackEnd(npcid, recordid)
 {
     printf("NPC %d finished playing record %d", npcid, recordid);
-    
+
     // Start another recording
     NPC_StartPlayback(npcid, "another_recording", true);
-    
+
     return true;
 }
 ```

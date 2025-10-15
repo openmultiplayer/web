@@ -11,9 +11,9 @@ tags: ["npc", "weapon", "ammo"]
 
 Checks if automatic reloading is enabled for an NPC.
 
-| Name  | Description           |
-| ----- | --------------------- |
-| npcid | The ID of the NPC     |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -28,16 +28,16 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_M4); // M4
     NPC_SetAmmo(npcid, 500);
-    
+
     // Enable auto-reload
     NPC_EnableReloading(npcid, true);
-    
+
     // Check if enabled
     if (NPC_IsReloadEnabled(npcid))
     {
         printf("Auto-reload enabled for NPC %d", npcid);
     }
-    
+
     return 1;
 }
 

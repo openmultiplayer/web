@@ -11,9 +11,9 @@ tags: ["npc", "node"]
 
 Stops an NPC from playing their current node.
 
-| Name  | Description           |
-| ----- | --------------------- |
-| npcid | The ID of the NPC     |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -26,16 +26,16 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("NodeWalker");
     NPC_Spawn(npcid);
-    
+
     // Open a node and start playing
     if (NPC_OpenNode(1))
     {
         NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-        
+
         // Stop playing after 15 seconds
         SetTimerEx("StopNodePlay", 15000, false, "i", npcid);
     }
-    
+
     return 1;
 }
 

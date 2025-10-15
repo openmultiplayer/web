@@ -40,7 +40,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 :::
 
 2. Updating your Linux Instance:
-
    - Before proceeding, let's ensure your system is up to date by running:
 
    ```
@@ -52,7 +51,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    ```
 
 3. Creating a secure service account:
-
    - For security reasons, we should create a dedicated service account without a home directory:
 
    ```
@@ -60,7 +58,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    ```
 
 4. Locking the service sccount:
-
    - Let's prevent the service account from being used for login:
 
    ```
@@ -68,7 +65,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    ```
 
 5. Creating a directory for the server files:
-
    - We will use the /opt directory, this is the standard location for third-party applications:
 
    ```
@@ -76,7 +72,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    ```
 
 6. Setting permissions for the directory:
-
    - Changing the group of the directory to match the service account:
 
    ```
@@ -98,7 +93,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 ## Phase 2: Installing open.mp Server Files
 
 7. Let's navigate to the server directory:
-
    - We need to move to the /opt/omp-server directory where the server will be stored:
 
    ```
@@ -106,7 +100,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    ```
 
 8. Downloading the open.mp server files:
-
    - Download the latest release of the open.mp server:
 
    ```
@@ -121,7 +114,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 :::
 
 9. Extracting the server files:
-
    - Once downloaded, extract the files:
 
    ```
@@ -133,7 +125,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 ## Phase 3: Configuring and Starting the Server
 
 10. Installing the required x86 libraries:
-
     - Since the server runs as a 32-bit application, you need to enable 32-bit architecture support:
 
     ```
@@ -149,7 +140,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
     ```
 
 11. Making the server executable:
-
     - Change the permissions so the server can be executed (only required once!):
 
     ```
@@ -161,7 +151,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
     ```
 
 12. Starting the server:
-
     - Use the following command to start the server in the background:
 
     ```
@@ -175,7 +164,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 ## Phase 4: Managing the Server
 
 13. Stopping the server:
-
     - To stop the server, use the PID from step 12 and run:
 
     ```
@@ -183,7 +171,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
     ```
 
 14. Finding the Process ID (if forgotten):
-
     - If you forget the process ID, run:
 
     ```

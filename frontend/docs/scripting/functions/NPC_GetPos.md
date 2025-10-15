@@ -29,13 +29,13 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("PositionBot");
     NPC_Spawn(npcid);
-    
+
     NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
-    
+
     new Float:x, Float:y, Float:z;
     NPC_GetPos(npcid, x, y, z);
     printf("NPC %d position: %.2f, %.2f, %.2f", npcid, x, y, z);
-    
+
     return 1;
 }
 
@@ -45,17 +45,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new Float:x, Float:y, Float:z;
         NPC_GetPos(0, x, y, z);
-        
+
         SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0: %.1f, %.1f, %.1f", x, y, z);
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/gotonpc", true))
     {
         new Float:x, Float:y, Float:z;
         NPC_GetPos(0, x, y, z); // Go to NPC 0
         SetPlayerPos(playerid, x + 2.0, y, z);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "Teleported to NPC 0");
         return 1;
     }

@@ -14,7 +14,7 @@ Check if a vehicle is occupied.
 ## Parameters
 
 | Name      | Description            |
-|-----------|------------------------|
+| --------- | ---------------------- |
 | vehicleid | The ID of the vehicle. |
 
 ## Return Values

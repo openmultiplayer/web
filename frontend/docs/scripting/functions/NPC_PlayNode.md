@@ -11,14 +11,14 @@ tags: ["npc", "node", "navigation"]
 
 Makes an NPC navigate through predefined navigation nodes using the game's built-in navigation system.
 
-| Name           | Description                                                    |
-| -------------- | -------------------------------------------------------------- |
-| npcid          | The ID of the NPC                                             |
-| nodeId         | The ID of the node to navigate                                |
-| moveType       | Movement type (default: NPC_MOVE_TYPE_JOG)                   |
-| Float:speed    | Movement speed (default: NPC_MOVE_SPEED_AUTO)                |
-| Float:radius   | Radius around nodes to consider as reached (default: 0.0)    |
-| bool:setangle  | Whether to update NPC's facing angle during navigation (default: true) |
+| Name          | Description                                                            |
+| ------------- | ---------------------------------------------------------------------- |
+| npcid         | The ID of the NPC                                                      |
+| nodeId        | The ID of the node to navigate                                         |
+| moveType      | Movement type (default: NPC_MOVE_TYPE_JOG)                             |
+| Float:speed   | Movement speed (default: NPC_MOVE_SPEED_AUTO)                          |
+| Float:radius  | Radius around nodes to consider as reached (default: 0.0)              |
+| bool:setangle | Whether to update NPC's facing angle during navigation (default: true) |
 
 ## Returns
 
@@ -32,13 +32,13 @@ public OnGameModeInit()
     new npcid = NPC_Create("NodeWalker");
     NPC_Spawn(npcid);
     NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
-    
+
     // First open node 25, then make NPC navigate through it
     if (NPC_OpenNode(25))
     {
         NPC_PlayNode(npcid, 25);
     }
-    
+
     return 1;
 }
 
@@ -58,7 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/npcwalk", true))
     {
         // Open and make NPC walk through node 8 without changing angle
@@ -75,7 +75,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 public OnNPCFinishNode(npcid, nodeId)
 {
     printf("NPC %d finished navigating node %d", npcid, nodeId);
-    
+
     // Start navigating the next node
     new nextNode = nodeId + 1;
     if (nextNode <= 63) // Nodes are 0-63
@@ -93,7 +93,7 @@ public OnNPCFinishNode(npcid, nodeId)
             NPC_PlayNode(npcid, 0, NPC_MOVE_TYPE_WALK);
         }
     }
-    
+
     return 1;
 }
 ```

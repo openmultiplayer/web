@@ -26,13 +26,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Driver");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
     NPC_PutInVehicle(npcid, vehicleid, 0);
-    
+
     new Float:health = NPC_GetVehicleHealth(npcid);
     printf("NPC %d vehicle health: %.1f", npcid, health);
-    
+
     return 1;
 }
 
@@ -42,9 +42,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcs[MAX_NPCS];
         new count = NPC_GetAll(npcs);
-        
+
         new Float:health = NPC_GetVehicleHealth(0);
-        
+
         new status[16];
         if (health >= 800.0)
             status = "Excellent";
@@ -56,11 +56,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
             status = "Badly Damaged";
         else
             status = "Critical";
-        
+
         new msg[64];
         format(msg, sizeof(msg), "NPC 0 vehicle: %.1f HP - %s", health, status);
         SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        
+
         return 1;
     }
     return 0;
@@ -70,11 +70,11 @@ forward MonitorVehicleHealth();
 public MonitorVehicleHealth()
 {
     new Float:health = NPC_GetVehicleHealth(0);
-    
+
     if (health < 300.0)
     {
         printf("Warning: NPC 0 vehicle health critical: %.1f", health);
-        
+
         // Auto-repair if too low
         NPC_SetVehicleHealth(0, 1000.0);
         printf("Auto-repaired NPC 0 vehicle");
@@ -99,4 +99,4 @@ public MonitorVehicleHealth()
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

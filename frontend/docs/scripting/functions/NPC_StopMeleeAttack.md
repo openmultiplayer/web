@@ -26,15 +26,15 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Fighter");
     NPC_Spawn(npcid);
-    
+
     NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-    
+
     // Start melee attack
     NPC_MeleeAttack(npcid, 5000, false);
-    
+
     // Stop after 3 seconds
     SetTimerEx("StopFighting", 3000, false, "i", npcid);
-    
+
     return 1;
 }
 
@@ -62,12 +62,12 @@ public NPCFightSequence(npcid)
 {
     if (!NPC_IsValid(npcid))
         return;
-    
+
     if (NPC_IsMeleeAttacking(npcid))
     {
         // Stop current attack
         NPC_StopMeleeAttack(npcid);
-        
+
         // Wait before next attack
         SetTimerEx("NPCFightSequence", 2000, false, "i", npcid);
     }

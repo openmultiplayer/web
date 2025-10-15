@@ -26,12 +26,12 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("HealthBot");
     NPC_Spawn(npcid);
-    
+
     NPC_SetHealth(npcid, 75.5);
-    
+
     new Float:health = NPC_GetHealth(npcid);
     printf("NPC %d has %.1f health", npcid, health); // Output: 75.5
-    
+
     return 1;
 }
 

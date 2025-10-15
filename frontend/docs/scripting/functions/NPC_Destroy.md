@@ -11,9 +11,9 @@ tags: ["npc"]
 
 Destroys an NPC.
 
-| Name   | Description                      |
-| ------ | -------------------------------- |
-| npcid  | The ID of the NPC to destroy.    |
+| Name  | Description                   |
+| ----- | ----------------------------- |
+| npcid | The ID of the NPC to destroy. |
 
 ## Returns
 

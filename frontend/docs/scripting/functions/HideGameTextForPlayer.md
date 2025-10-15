@@ -11,10 +11,10 @@ tags: ["player", "gametext"]
 
 Stop showing a gametext style to a player.
 
-| Name           | Description                                                       |
-| -------------- | ----------------------------------------------------------------- |
-| playerid       | The ID of the player to hide the gametext for.                    |
-| style          | The [style](../resources/gametextstyles) of text to hide.         |
+| Name     | Description                                               |
+| -------- | --------------------------------------------------------- |
+| playerid | The ID of the player to hide the gametext for.            |
+| style    | The [style](../resources/gametextstyles) of text to hide. |
 
 ## Returns
 

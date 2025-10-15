@@ -11,12 +11,12 @@ tags: ["npc", "position"]
 
 Sets the position of an NPC instantly without movement animation.
 
-| Name    | Description              |
-| ------- | ------------------------ |
-| npcid   | The ID of the NPC.       |
-| Float:x | The X coordinate.        |
-| Float:y | The Y coordinate.        |
-| Float:z | The Z coordinate.        |
+| Name    | Description        |
+| ------- | ------------------ |
+| npcid   | The ID of the NPC. |
+| Float:x | The X coordinate.  |
+| Float:y | The Y coordinate.  |
+| Float:z | The Z coordinate.  |
 
 ## Returns
 
@@ -29,10 +29,10 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("TeleportBot");
     NPC_Spawn(npcid);
-    
+
     // Set NPC position instantly
     NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
-    
+
     return 1;
 }
 
@@ -42,19 +42,19 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
-        
+
         // Teleport NPC 0 to player location
         NPC_SetPos(0, x + 2.0, y, z);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "NPC teleported to you!");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/npcgotower", true))
     {
         // Move NPC to a specific landmark
         NPC_SetPos(0, 1544.6, -1353.8, 329.5); // Big Smoke's house
-        
+
         SendClientMessage(playerid, 0xFFFFFFFF, "NPC moved to Big Smoke's house");
         return 1;
     }
@@ -72,14 +72,14 @@ CreateNPCFormation(Float:leaderX, Float:leaderY, Float:leaderZ, const Float:form
     for (new i = 0; i < formationSize; i++)
     {
         format(name, sizeof(name), "Unit_%d", i);
-        
+
         npcid = NPC_Create(name);
         NPC_Spawn(npcid);
-        
+
         // Position based on formation array
         offsetX = formation[i][0];
         offsetY = formation[i][1];
-        
+
         NPC_SetPos(npcid, leaderX + offsetX, leaderY + offsetY, leaderZ);
     }
 }
