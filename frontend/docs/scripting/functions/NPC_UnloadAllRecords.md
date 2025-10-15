@@ -21,9 +21,9 @@ Returns `true` if all records were unloaded successfully, `false` otherwise.
 public OnGameModeInit()
 {
     // Load some recordings
-    NPC_LoadRecord("recordings/patrol.rec");
-    NPC_LoadRecord("recordings/driver.rec");
-    NPC_LoadRecord("recordings/guard.rec");
+    NPC_LoadRecord("patrol");
+    NPC_LoadRecord("driver");
+    NPC_LoadRecord("guard");
     
     printf("Loaded records: %d", NPC_GetRecordCount());
     

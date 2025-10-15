@@ -36,7 +36,7 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     
     // Start playback from a recording file
-    NPC_StartPlayback(npcid, "recordings/patrol.rec", true, 
+    NPC_StartPlayback(npcid, "patrol", true, 
         1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
     
     return 1;
@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             GetPlayerPos(playerid, x, y, z);
             
             // Make first NPC play patrol recording
-            NPC_StartPlayback(npcs[0], "recordings/patrol.rec", true,
+            NPC_StartPlayback(npcs[0], "patrol", true,
                 x + 5.0, y, z, 0.0, 0.0, 0.0);
             
             SendClientMessage(playerid, 0x00FF00FF, "NPC started patrol playback");
@@ -77,7 +77,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         NPC_Spawn(npcid);
         
         // Start driver recording
-        NPC_StartPlayback(npcid, "recordings/driver.rec", false,
+        NPC_StartPlayback(npcid, "driver", false,
             x + 10.0, y, z, 0.0, 90.0, 0.0);
         
         SendClientMessage(playerid, 0x00FF00FF, "Driver NPC spawned and playing");
@@ -89,7 +89,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 stock StartNPCMission(npcid, const missionName[])
 {
     new recordFile[64];
-    format(recordFile, sizeof(recordFile), "recordings/%s.rec", missionName);
+    format(recordFile, sizeof(recordFile), "%s", missionName);
     
     // Random spawn positions
     new Float:spawnX = 1900.0 + random(100);
@@ -125,7 +125,7 @@ public StartSquadMission()
         new Float:z = 15.36;
         
         new recordFile[64];
-        format(recordFile, sizeof(recordFile), "recordings/%s.rec", missions[i]);
+        format(recordFile, sizeof(recordFile), "%s", missions[i]);
         
         NPC_StartPlayback(npcid, recordFile, true,
             x, y, z, 0.0, 0.0, 0.0);

@@ -23,9 +23,9 @@ public OnGameModeInit()
     printf("Initial record count: %d", NPC_GetRecordCount()); // 0
     
     // Load some recordings
-    new record1 = NPC_LoadRecord("recordings/patrol.rec");
-    new record2 = NPC_LoadRecord("recordings/driver.rec");
-    new record3 = NPC_LoadRecord("recordings/guard.rec");
+    new record1 = NPC_LoadRecord("patrol");
+    new record2 = NPC_LoadRecord("driver");
+    new record3 = NPC_LoadRecord("guard");
     
     printf("Record count after loading: %d", NPC_GetRecordCount()); // 3
     
@@ -57,9 +57,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new loaded = 0;
         
         new testFiles[][] = {
-            "npcmodes/recordings/test1.rec",
-            "npcmodes/recordings/test2.rec", 
-            "npcmodes/recordings/test3.rec"
+            "test1",
+            "test2", 
+            "test3"
         };
         
         for (new i = 0; i < sizeof(testFiles); i++)

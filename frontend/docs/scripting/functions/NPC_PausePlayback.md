@@ -27,7 +27,7 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("RecordedBot");
     NPC_Spawn(npcid);
-    NPC_StartPlayback(npcid, "recording.rec", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+    NPC_StartPlayback(npcid, "recording", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     
     // Pause after 5 seconds
     SetTimerEx("PauseBot", 5000, false, "i", npcid);

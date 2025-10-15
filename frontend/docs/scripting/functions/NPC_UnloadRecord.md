@@ -27,7 +27,7 @@ new g_PatrolRecord = INVALID_RECORD_ID;
 public OnGameModeInit()
 {
     // Load recordings
-    g_PatrolRecord = NPC_LoadRecord("recordings/patrol.rec");
+    g_PatrolRecord = NPC_LoadRecord("patrol");
     
     if (g_PatrolRecord != INVALID_RECORD_ID)
     {

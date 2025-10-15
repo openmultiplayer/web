@@ -28,7 +28,7 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     
     // Start playing a recording
-    NPC_StartPlayback(npcid, "recordings/patrol.rec", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+    NPC_StartPlayback(npcid, "patrol", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     
     // Stop playback after 15 seconds
     SetTimerEx("StopNPCPlayback", 15000, false, "i", npcid);
