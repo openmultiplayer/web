@@ -5,6 +5,12 @@ description: Set position of the NPC
 tags: ["npc"]
 ---
 
+:::warning
+
+This function is deprecated. Please see [NPC_SetPos](NPC_SetPos).
+
+:::
+
 ## Description
 
 Set the position of the NPC.

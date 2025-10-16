@@ -5,6 +5,12 @@ description: Get position of the NPC
 tags: ["npc"]
 ---
 
+:::warning
+
+This function is deprecated. Please see [NPC_GetPos](NPC_GetPos).
+
+:::
+
 ## Description
 
 Get the position of the NPC.

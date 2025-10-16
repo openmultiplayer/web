@@ -5,6 +5,12 @@ description: This will stop the current .rec file which is being ran by the NPC,
 tags: []
 ---
 
+:::warning
+
+This function is deprecated. Please see [NPC_StopPlayback](NPC_StopPlayback).
+
+:::
+
 ## Description
 
 This will stop the current .rec file which is being ran by the NPC, making it stay idle until some other order is given.

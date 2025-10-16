@@ -5,6 +5,12 @@ description: Set the NPC's facing angle.
 tags: []
 ---
 
+:::warning
+
+This function is deprecated. Please see [NPC_SetFacingAngle](NPC_SetFacingAngle).
+
+:::
+
 ## Description
 
 Set the NPC's facing angle.

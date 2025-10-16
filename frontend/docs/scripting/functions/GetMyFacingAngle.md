@@ -5,6 +5,12 @@ description: Get the current facing angle of the NPC.
 tags: []
 ---
 
+:::warning
+
+This function is deprecated. Please see [NPC_GetFacingAngle](NPC_GetFacingAngle).
+
+:::
+
 ## Description
 
 Get the current facing angle of the NPC.
