@@ -35,10 +35,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 
 // Reset surfing when NPC enters a vehicle
-public OnNPCEnterVehicle(npcid, vehicleid, seatid)
+public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 {
     // Stop surfing when NPC gets into a vehicle
-    NPC_ResetSurfingData(npcid);
+    if(IsPlayerNPC(playerid)) {
+        NPC_ResetSurfingData(playerid);
+    }
     return 1;
 }
 ```
