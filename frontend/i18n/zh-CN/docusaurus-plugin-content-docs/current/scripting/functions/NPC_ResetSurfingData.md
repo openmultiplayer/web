@@ -35,10 +35,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 
 // 当 NPC 进入车辆时重置冲浪状态
-public OnNPCEnterVehicle(npcid, vehicleid, seatid)
+public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 {
     // 当 NPC 进入车辆时停止冲浪
-    NPC_ResetSurfingData(npcid);
+    if(IsPlayerNPC(playerid)) {
+        NPC_ResetSurfingData(playerid);
+    }
     return 1;
 }
 ```
