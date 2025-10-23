@@ -11,10 +11,10 @@ tags: ["npc", "virtual world", "dimension"]
 
 Sets an NPC's virtual world, controlling which players can see and interact with them.
 
-| Name         | Description                    |
-| ------------ | ------------------------------ |
-| npcid        | The ID of the NPC.             |
-| vw           | The virtual world ID to set.   |
+| Name  | Description                  |
+| ----- | ---------------------------- |
+| npcid | The ID of the NPC.           |
+| vw    | The virtual world ID to set. |
 
 ## Returns
 
@@ -27,10 +27,10 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("Isolated");
     NPC_Spawn(npcid);
-    
+
     // Put NPC in virtual world 1
     NPC_SetVirtualWorld(npcid, 1);
-    
+
     return 1;
 }
 
@@ -40,11 +40,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new const playerWorld = GetPlayerVirtualWorld(playerid);
         NPC_SetVirtualWorld(0, playerWorld);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "Moved NPC 0 to your world (%d)", playerWorld);
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/isolatenpc", true))
     {
         // Move NPC 0 to a separate world

@@ -11,9 +11,9 @@ tags: ["npc"]
 
 Destroys an NPC.
 
-| Name   | Description                      |
-| ------ | -------------------------------- |
-| npcid  | The ID of the NPC to destroy.    |
+| Name  | Description                   |
+| ----- | ----------------------------- |
+| npcid | The ID of the NPC to destroy. |
 
 ## Returns
 
@@ -53,4 +53,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCDestroy](OnNPCDestroy): Called when an NPC is destroyed.
+- [OnNPCDestroy](../callbacks/OnNPCDestroy): Called when an NPC is destroyed.

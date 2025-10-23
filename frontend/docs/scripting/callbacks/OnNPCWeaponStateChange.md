@@ -11,11 +11,11 @@ tags: ["npc", "weapon"]
 
 This callback is called when an NPC's weapon state changes (e.g., reloading, running out of ammo, etc.).
 
-| Name     | Description                           |
-| -------- | ------------------------------------- |
-| npcid    | The ID of the NPC                     |
-| newstate | The new weapon state                  |
-| oldstate | The previous weapon state             |
+| Name     | Description               |
+| -------- | ------------------------- |
+| npcid    | The ID of the NPC         |
+| newstate | The new weapon state      |
+| oldstate | The previous weapon state |
 
 ## Examples
 
@@ -23,13 +23,13 @@ This callback is called when an NPC's weapon state changes (e.g., reloading, run
 public OnNPCWeaponStateChange(npcid, newstate, oldstate)
 {
     printf("NPC %d weapon state: %d -> %d", npcid, oldstate, newstate);
-    
+
     if (newstate == WEAPONSTATE_NO_BULLETS)
     {
         // Give more ammo
         NPC_SetAmmo(npcid, 100);
     }
-    
+
     return true;
 }
 ```
@@ -43,11 +43,11 @@ public OnNPCWeaponStateChange(npcid, newstate, oldstate)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_GetWeaponState](NPC_GetWeaponState): Get NPC's current weapon state
-- [NPC_GetAmmo](NPC_GetAmmo): Get NPC's ammo count
-- [NPC_SetAmmo](NPC_SetAmmo): Set NPC's ammo count
-- [NPC_GetAmmoInClip](NPC_GetAmmoInClip): Get ammo in current clip
-- [NPC_EnableReloading](NPC_EnableReloading): Enable/disable automatic reloading
+- [NPC_GetWeaponState](../functions/NPC_GetWeaponState): Get NPC's current weapon state
+- [NPC_GetAmmo](../functions/NPC_GetAmmo): Get NPC's ammo count
+- [NPC_SetAmmo](../functions/NPC_SetAmmo): Set NPC's ammo count
+- [NPC_GetAmmoInClip](../functions/NPC_GetAmmoInClip): Get ammo in current clip
+- [NPC_EnableReloading](../functions/NPC_EnableReloading): Enable/disable automatic reloading
 
 ## Related Callbacks
 

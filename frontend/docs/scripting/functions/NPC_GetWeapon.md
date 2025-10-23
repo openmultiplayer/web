@@ -11,9 +11,9 @@ tags: ["npc", "weapon"]
 
 Gets the current weapon an NPC is holding.
 
-| Name  | Description           |
-| ----- | --------------------- |
-| npcid | The ID of the NPC     |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -28,10 +28,10 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_AK47);
     NPC_SetAmmo(npcid, 300); // Give 300 ammo
-    
+
     new weapon = NPC_GetWeapon(npcid);
     printf("NPC %d is holding weapon %d", npcid, weapon);
-    
+
     return 1;
 }
 
@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new weapon = NPC_GetWeapon(0);
         new ammo = NPC_GetAmmo(0);
-        
+
         new weaponName[32];
         switch(weapon)
         {
@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             case WEAPON_SNIPER: weaponName = "Sniper Rifle";
             default: format(weaponName, sizeof(weaponName), "Weapon %d", weapon);
         }
-        
+
         new msg[64];
         format(msg, sizeof(msg), "NPC 0: %s (%d ammo)", weaponName, ammo);
         SendClientMessage(playerid, 0xFFFFFFFF, msg);
@@ -80,4 +80,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires weapon
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when NPC fires weapon

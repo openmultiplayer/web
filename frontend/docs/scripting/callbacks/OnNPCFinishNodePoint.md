@@ -11,11 +11,11 @@ tags: ["npc", "node", "navigation"]
 
 This callback is called when an NPC reaches a specific point during node-based navigation.
 
-| Name    | Description                                      |
-| ------- | ------------------------------------------------ |
-| npcid   | The ID of the NPC that reached the node point   |
-| nodeid  | The ID of the node being navigated              |
-| pointid | The ID of the specific point that was reached   |
+| Name    | Description                                   |
+| ------- | --------------------------------------------- |
+| npcid   | The ID of the NPC that reached the node point |
+| nodeid  | The ID of the node being navigated            |
+| pointid | The ID of the specific point that was reached |
 
 ## Examples
 
@@ -23,14 +23,14 @@ This callback is called when an NPC reaches a specific point during node-based n
 public OnNPCFinishNodePoint(npcid, nodeid, pointid)
 {
     printf("NPC %d reached point %d in node %d", npcid, pointid, nodeid);
-    
+
     // Pause at specific point
     if (pointid == 10)
     {
         NPC_PausePlayingNode(npcid);
         SetTimerEx("ResumeNavigation", 3000, false, "i", npcid);
     }
-    
+
     return true;
 }
 
@@ -51,10 +51,10 @@ public ResumeNavigation(npcid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_PlayNode](NPC_PlayNode): Start NPC node-based navigation
-- [NPC_PausePlayingNode](NPC_PausePlayingNode): Pause NPC node navigation
-- [NPC_ResumePlayingNode](NPC_ResumePlayingNode): Resume paused node navigation
-- [NPC_StopPlayingNode](NPC_StopPlayingNode): Stop NPC node navigation
+- [NPC_PlayNode](../functions/NPC_PlayNode): Start NPC node-based navigation
+- [NPC_PausePlayingNode](../functions/NPC_PausePlayingNode): Pause NPC node navigation
+- [NPC_ResumePlayingNode](../functions/NPC_ResumePlayingNode): Resume paused node navigation
+- [NPC_StopPlayingNode](../functions/NPC_StopPlayingNode): Stop NPC node navigation
 
 ## Related Callbacks
 

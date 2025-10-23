@@ -26,12 +26,12 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("WorldBot");
     NPC_Spawn(npcid);
-    
+
     NPC_SetVirtualWorld(npcid, 5); // Set to virtual world 5
-    
+
     new const vw = NPC_GetVirtualWorld(npcid);
     printf("NPC %d is in virtual world %d", npcid, vw);
-    
+
     return 1;
 }
 
@@ -65,4 +65,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns.
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns.

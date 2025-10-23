@@ -26,13 +26,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Pilot");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(519, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300); // Shamal
     NPC_PutInVehicle(npcid, vehicleid, 0);
-    
+
     // Set landing gear up
     NPC_SetVehicleGearState(npcid, LANDING_GEAR_STATE_UP);
-    
+
     new gearState = NPC_GetVehicleGearState(npcid);
     if (gearState == LANDING_GEAR_STATE_UP)
     {
@@ -42,7 +42,7 @@ public OnGameModeInit()
     {
         printf("NPC %d aircraft landing gear is DOWN", npcid);
     }
-    
+
     return 1;
 }
 
@@ -52,14 +52,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcs[MAX_NPCS];
         new count = NPC_GetAll(npcs);
-        
+
         for (new i = 0; i < count; i++)
         {
             if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC is in aircraft
             {
                 new gearState = NPC_GetVehicleGearState(npcs[i]);
                 new msg[128];
-                
+
                 if (gearState == LANDING_GEAR_STATE_UP)
                 {
                     format(msg, sizeof(msg), "NPC %d: Landing gear UP", npcs[i]);
@@ -68,11 +68,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
                 {
                     format(msg, sizeof(msg), "NPC %d: Landing gear DOWN", npcs[i]);
                 }
-                
+
                 SendClientMessage(playerid, 0xFFFFFFFF, msg);
             }
         }
-        
+
         return 1;
     }
     return 0;
@@ -99,4 +99,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

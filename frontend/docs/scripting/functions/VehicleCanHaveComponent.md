@@ -13,7 +13,7 @@ Is the component legal on the vehicle model?
 
 | Name                                     | Description                   |
 | ---------------------------------------- | ----------------------------- |
-| [modelid](../resources/vehicleid)       | Vehicle Model ID              |
+| [modelid](../resources/vehicleid)        | Vehicle Model ID              |
 | [component](../resources/carcomponentid) | ID of the component to check. |
 
 ## Returns

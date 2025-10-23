@@ -27,10 +27,10 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("Guard");
     NPC_Spawn(npcid);
-    
+
     // Face north
     NPC_SetFacingAngle(npcid, 0.0);
-    
+
     return 1;
 }
 
@@ -40,11 +40,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         // Make NPC face east (270 degrees)
         NPC_SetFacingAngle(0, 270.0);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "NPC now facing east");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/faceme", true))
     {
         new
@@ -54,11 +54,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         GetPlayerPos(playerid, px, py, pz);
         NPC_GetPos(0, nx, ny, nz);
-        
+
         // Calculate angle to face player
         angle = atan2(py - ny, px - nx) - 90.0;
         NPC_SetFacingAngle(0, angle);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "NPC now facing you");
         return 1;
     }

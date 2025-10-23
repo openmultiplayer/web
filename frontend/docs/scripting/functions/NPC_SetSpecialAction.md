@@ -11,10 +11,10 @@ tags: ["npc", "action", "special"]
 
 Sets an NPC's special action state, such as sitting, smoking, drinking, etc.
 
-| Name     | Description                    |
-| -------- | ------------------------------ |
-| npcid    | The ID of the NPC             |
-| action | The special action ID to set   |
+| Name   | Description                  |
+| ------ | ---------------------------- |
+| npcid  | The ID of the NPC            |
+| action | The special action ID to set |
 
 ## Returns
 
@@ -27,10 +27,10 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Smoker");
     NPC_Spawn(npcid);
-    
+
     // Make NPC smoke cigarette
     NPC_SetSpecialAction(npcid, SPECIAL_ACTION_SMOKE_CIGGY);
-    
+
     return 1;
 }
 
@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is now sitting");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/clearaction", true))
     {
         // Clear special action for NPC 0
@@ -71,4 +71,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

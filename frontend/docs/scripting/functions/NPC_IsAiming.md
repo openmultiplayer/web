@@ -28,13 +28,13 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_SNIPER);
     NPC_SetAmmo(npcid, 50);
-    
+
     // Make NPC aim at a distant target
     NPC_AimAt(npcid, 2000.0, 1500.0, 20.0, true, 1000, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_ALL);
-    
+
     // Check aiming status after 2 seconds
     SetTimerEx("CheckAimingStatus", 2000, false, "i", npcid);
-    
+
     return 1;
 }
 
@@ -68,15 +68,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/aimatme", true))
     {
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
-        
+
         // Make NPC 0 aim at player
         NPC_AimAt(0, x, y, z + 1.0, false, 0, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_NONE);
-        
+
         SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 is now aiming at you!");
         return 1;
     }
@@ -100,4 +100,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires weapon
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when NPC fires weapon

@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-PAWN is case-sensitive. GetPlayerRawIP will not work. 
+PAWN is case-sensitive. GetPlayerRawIP will not work.
 
 :::
 

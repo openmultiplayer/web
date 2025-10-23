@@ -11,12 +11,12 @@ tags: ["npc", "path"]
 
 Adds a waypoint to an NPC path.
 
-| Name      | Description                                           |
-| --------- | ----------------------------------------------------- |
-| pathid    | The ID of the path to add the point to               |
-| x         | The X coordinate of the waypoint                     |
-| y         | The Y coordinate of the waypoint                     |
-| z         | The Z coordinate of the waypoint                     |
+| Name      | Description                                             |
+| --------- | ------------------------------------------------------- |
+| pathid    | The ID of the path to add the point to                  |
+| x         | The X coordinate of the waypoint                        |
+| y         | The Y coordinate of the waypoint                        |
+| z         | The Z coordinate of the waypoint                        |
 | stopRange | The distance from point at which to consider it reached |
 
 ## Returns
@@ -32,17 +32,17 @@ public OnGameModeInit()
 {
     // Create patrol path
     g_PatrolPath = NPC_CreatePath();
-    
+
     if (NPC_IsValidPath(g_PatrolPath))
     {
         // Build patrol route
         NPC_AddPointToPath(g_PatrolPath, 1958.33, 1343.12, 15.36, 2.0);
         NPC_AddPointToPath(g_PatrolPath, 1968.33, 1353.12, 15.36, 1.5);
         NPC_AddPointToPath(g_PatrolPath, 1978.33, 1363.12, 15.36, 2.0);
-        
+
         printf("Patrol path created with %d waypoints", NPC_GetPathPointCount(g_PatrolPath));
     }
-    
+
     return 1;
 }
 
@@ -57,12 +57,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/addwaypoint", true))
     {
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
-        
+
         if (NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5))
         {
             SendClientMessage(playerid, 0x00FF00FF, "Added waypoint at your location");
@@ -89,5 +89,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCFinishMovePath](OnNPCFinishMovePath): Called when NPC finishes moving along a path
-- [OnNPCFinishMove](OnNPCFinishMove): Called when NPC finishes any movement
+- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): Called when NPC finishes moving along a path
+- [OnNPCFinishMove](../callbacks/OnNPCFinishMove): Called when NPC finishes any movement

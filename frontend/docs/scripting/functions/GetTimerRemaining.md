@@ -14,7 +14,7 @@ Gets the remaining interval of a timer.
 ## Parameters
 
 | Name    | Description                                           |
-|---------|-------------------------------------------------------|
+| ------- | ----------------------------------------------------- |
 | timerid | The ID of the timer to get the remaining interval of. |
 
 ## Return Values

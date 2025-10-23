@@ -11,9 +11,9 @@ tags: ["npc", "path"]
 
 Clears all points from an NPC path, making it empty.
 
-| Name   | Description                        |
-| ------ | ---------------------------------- |
-| pathid | The ID of the path to clear       |
+| Name   | Description                 |
+| ------ | --------------------------- |
+| pathid | The ID of the path to clear |
 
 ## Returns
 
@@ -25,21 +25,21 @@ Returns `true` on success, `false` on failure.
 public OnGameModeInit()
 {
     new pathid = NPC_CreatePath();
-    
+
     // Add some points to the path
     NPC_AddPointToPath(pathid, 1958.33, 1343.12, 15.36, 1.0);
     NPC_AddPointToPath(pathid, 1968.33, 1353.12, 15.36, 1.0);
     NPC_AddPointToPath(pathid, 1978.33, 1363.12, 15.36, 1.0);
-    
+
     printf("Points in path: %d", NPC_GetPathPointCount(pathid)); // 3
-    
+
     // Clear all points
     if (NPC_ClearPath(pathid))
     {
         printf("Path cleared successfully");
         printf("Points in path: %d", NPC_GetPathPointCount(pathid)); // 0
     }
-    
+
     return 1;
 }
 ```
@@ -60,4 +60,4 @@ public OnGameModeInit()
 
 ## Related Callbacks
 
-- [OnNPCFinishMovePath](OnNPCFinishMovePath): Called when NPC finishes path
+- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): Called when NPC finishes path

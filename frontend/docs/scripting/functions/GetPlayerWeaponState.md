@@ -28,7 +28,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new WEAPONSTATE:state = GetPlayerWeaponState(playerid);
 
-        static weaponStates[4][64] = 
+        static weaponStates[4][64] =
         {
             "Current weapon has no ammo remaining",
             "Current weapon has a single bullet left",

@@ -11,10 +11,10 @@ tags: ["npc"]
 
 Gets all NPC IDs and stores them in an array.
 
-| Name    | Description                                      |
-| ------- | ------------------------------------------------ |
-| npcs[]  | Array to store the NPC IDs, passed by reference. |
-| size    | Size of the array.                               |
+| Name   | Description                                      |
+| ------ | ------------------------------------------------ |
+| npcs[] | Array to store the NPC IDs, passed by reference. |
+| size   | Size of the array.                               |
 
 ## Returns
 
@@ -36,13 +36,13 @@ public OnGameModeInit()
     {
         NPC_Spawn(bot[i]);
     }
-    
+
     // Get all NPCs
     new npcs[MAX_NPCS];
     new const count = NPC_GetAll(npcs);
-    
+
     printf("Total NPCs on server: %d", count);
-    
+
     return 1;
 }
 
@@ -52,9 +52,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcs[MAX_NPCS];
         new const count = NPC_GetAll(npcs);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "There are %d NPCs on the server", count);
-        
+
         return 1;
     }
     return 0;
@@ -80,4 +80,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCCreate](OnNPCCreate): Called when an NPC is created.
+- [OnNPCCreate](../callbacks/OnNPCCreate): Called when an NPC is created.

@@ -12,7 +12,7 @@ tags: ["player", "pickup", "playerpickup"]
 Gets the coordinates of a player-pickup.
 
 | Name     | Description                                                               |
-|----------|---------------------------------------------------------------------------|
+| -------- | ------------------------------------------------------------------------- |
 | playerid | The ID of the player.                                                     |
 | pickupid | The ID of the player-pickup to get the position of.                       |
 | &Float:x | A float variable in which to store the x coordinate, passed by reference. |

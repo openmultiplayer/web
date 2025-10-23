@@ -11,10 +11,10 @@ tags: ["npc", "health"]
 
 Sets the health value of an NPC.
 
-| Name   | Description                 |
-| ------ | --------------------------- |
-| npcid  | The ID of the NPC          |
-| health | The health value to set    |
+| Name   | Description             |
+| ------ | ----------------------- |
+| npcid  | The ID of the NPC       |
+| health | The health value to set |
 
 ## Returns
 
@@ -27,10 +27,10 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("HealthBot");
     NPC_Spawn(npcid);
-    
+
     // Set NPC health to 75.5
     NPC_SetHealth(npcid, 75.5);
-    
+
     new Float:health = NPC_GetHealth(npcid);
     printf("NPC health: %.1f", health);
     return 1;
@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = NPC_Create("Patient");
         NPC_Spawn(npcid);
-        
+
         NPC_SetHealth(npcid, 100.0); // Full health
         SendClientMessage(playerid, 0x00FF00FF, "NPC healed!");
         return 1;
@@ -63,11 +63,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_GetHealth](NPC_GetHealth): Get NPC health
 - [NPC_SetArmour](NPC_SetArmour): Set NPC armour
-- [NPC_GetArmour](NPC_GetArmour): Get NPC armour  
+- [NPC_GetArmour](NPC_GetArmour): Get NPC armour
 - [NPC_IsDead](NPC_IsDead): Check if NPC is dead
 - [NPC_SetInvulnerable](NPC_SetInvulnerable): Make NPC invulnerable
 
 ## Related Callbacks
 
-- [OnNPCTakeDamage](OnNPCTakeDamage): Called when NPC takes damage
-- [OnNPCDeath](OnNPCDeath): Called when NPC dies
+- [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): Called when NPC takes damage
+- [OnNPCDeath](../callbacks/OnNPCDeath): Called when NPC dies

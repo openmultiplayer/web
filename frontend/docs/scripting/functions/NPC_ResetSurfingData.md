@@ -11,9 +11,9 @@ tags: ["npc", "surfing"]
 
 Resets all surfing data for an NPC.
 
-| Name   | Description           |
-| ------ | --------------------- |
-| npcid  | The ID of the NPC     |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -35,10 +35,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 
 // Reset surfing when NPC enters a vehicle
-public OnNPCEnterVehicle(npcid, vehicleid, seatid)
+public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 {
     // Stop surfing when NPC gets into a vehicle
-    NPC_ResetSurfingData(npcid);
+    if(IsPlayerNPC(playerid)) {
+        NPC_ResetSurfingData(playerid);
+    }
     return 1;
 }
 ```
@@ -61,4 +63,4 @@ public OnNPCEnterVehicle(npcid, vehicleid, seatid)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

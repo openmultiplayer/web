@@ -36,12 +36,12 @@ Always returns true.
 ## Examples
 
 ```c
-new 
-	modelid, 
-	bone, 
-	Float:offsetX, Float:offsetY, Float:offsetZ, 
-	Float:rotationX, Float:rotationY, Float:rotationZ, 
-	Float:scaleX, Float:scaleY, Float:scaleZ, 
+new
+	modelid,
+	bone,
+	Float:offsetX, Float:offsetY, Float:offsetZ,
+	Float:rotationX, Float:rotationY, Float:rotationZ,
+	Float:scaleX, Float:scaleY, Float:scaleZ,
 	materialColour1, materialColour2;
 
 // Get the attached data of index 3

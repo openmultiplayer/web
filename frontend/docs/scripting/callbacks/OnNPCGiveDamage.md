@@ -11,13 +11,13 @@ tags: ["npc", "damage"]
 
 This callback is called when an NPC gives damage to a player.
 
-| Name      | Description                                    |
-| --------- | ---------------------------------------------- |
-| npcid     | The ID of the NPC that gave the damage        |
-| damagedid | The ID of the player that received the damage |
-| amount    | The amount of damage that was given            |
-| weaponid  | The weapon ID used to give the damage         |
-| bodypart  | The [body part](../resources/bodyparts) that was hit   |
+| Name      | Description                                          |
+| --------- | ---------------------------------------------------- |
+| npcid     | The ID of the NPC that gave the damage               |
+| damagedid | The ID of the player that received the damage        |
+| amount    | The amount of damage that was given                  |
+| weaponid  | The weapon ID used to give the damage                |
+| bodypart  | The [body part](../resources/bodyparts) that was hit |
 
 ## Returns
 
@@ -29,13 +29,13 @@ Return `false` to prevent the damage from being applied, or `true` to allow it.
 public OnNPCGiveDamage(npcid, damagedid, Float:amount, weaponid, bodypart)
 {
     printf("NPC %d gave %.2f damage to player %d", npcid, amount, damagedid);
-    
+
     // Prevent NPCs from killing admins
     if (IsPlayerAdmin(damagedid))
     {
         return false; // Block the damage
     }
-    
+
     return true; // Allow the damage
 }
 ```
@@ -50,10 +50,10 @@ public OnNPCGiveDamage(npcid, damagedid, Float:amount, weaponid, bodypart)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_AimAt](NPC_AimAt): Make NPC aim at a position
-- [NPC_AimAtPlayer](NPC_AimAtPlayer): Make NPC aim at a player
-- [NPC_Shoot](NPC_Shoot): Make NPC shoot
-- [NPC_SetWeapon](NPC_SetWeapon): Set NPC's weapon
+- [NPC_AimAt](../functions/NPC_AimAt): Make NPC aim at a position
+- [NPC_AimAtPlayer](../functions/NPC_AimAtPlayer): Make NPC aim at a player
+- [NPC_Shoot](../functions/NPC_Shoot): Make NPC shoot
+- [NPC_SetWeapon](../functions/NPC_SetWeapon): Set NPC's weapon
 
 ## Related Callbacks
 

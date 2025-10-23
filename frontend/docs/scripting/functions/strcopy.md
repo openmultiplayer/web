@@ -17,7 +17,7 @@ Copies a string into the destination string.
 | ------------------------- | --------------------------------------------------- |
 | dest[]                    | The string to copy the source string into.          |
 | const source[]            | The source string.                                  |
-| maxlength = sizeof (dest) | The maximum length of the destination. *(optional)* |
+| maxlength = sizeof (dest) | The maximum length of the destination. _(optional)_ |
 
 ## Returns
 

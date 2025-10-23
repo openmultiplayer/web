@@ -11,12 +11,12 @@ tags: ["npc", "node", "navigation"]
 
 Gets information about an NPC node including vehicle, pedestrian, and navigation data.
 
-| Name       | Description                                     |
-| ---------- | ----------------------------------------------- |
-| nodeid     | The ID of the node                             |
-| &vehnodes  | Variable to store vehicle node count          |
-| &pednodes  | Variable to store pedestrian node count       |
-| &navinode  | Variable to store navigation node information  |
+| Name      | Description                                   |
+| --------- | --------------------------------------------- |
+| nodeid    | The ID of the node                            |
+| &vehnodes | Variable to store vehicle node count          |
+| &pednodes | Variable to store pedestrian node count       |
+| &navinode | Variable to store navigation node information |
 
 ## Returns
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
             printf("- Navigation node: %d", navinode);
         }
     }
-    
+
     return 1;
 }
 
@@ -55,14 +55,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
                 if (NPC_GetNodeInfo(nodeid, vehnodes, pednodes, navinode))
                 {
                     new msg[128];
-                    format(msg, sizeof(msg), 
-                        "Node %d: Veh=%d, Ped=%d, Nav=%d", 
+                    format(msg, sizeof(msg),
+                        "Node %d: Veh=%d, Ped=%d, Nav=%d",
                         nodeid, vehnodes, pednodes, navinode);
                     SendClientMessage(playerid, 0xFFFFFFFF, msg);
                 }
             }
         }
-        
+
         return 1;
     }
     return 0;
@@ -86,5 +86,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes node
-- [OnNPCChangeNode](OnNPCChangeNode): Called when NPC changes nodes
+- [OnNPCFinishNode](../callbacks/OnNPCFinishNode): Called when NPC finishes node
+- [OnNPCChangeNode](../callbacks/OnNPCChangeNode): Called when NPC changes nodes

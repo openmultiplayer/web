@@ -26,13 +26,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Dancer");
     NPC_Spawn(npcid);
-    
+
     // Apply animation
     NPC_ApplyAnimation(npcid, "DANCING", "dance_loop", 4.0, 1, 0, 0, 1, 0);
-    
+
     // Reset after 10 seconds
     SetTimerEx("ResetAnim", 10000, false, "i", npcid);
-    
+
     return 1;
 }
 
@@ -73,4 +73,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

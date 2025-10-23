@@ -11,9 +11,9 @@ tags: ["npc"]
 
 Checks if an NPC is dead.
 
-| Name   | Description                      |
-| ------ | -------------------------------- |
-| npcid  | The ID of the NPC to check.      |
+| Name  | Description                 |
+| ----- | --------------------------- |
+| npcid | The ID of the NPC to check. |
 
 ## Returns
 
@@ -29,7 +29,7 @@ public OnNPCTakeDamage(npcid, damagerid, Float:damage, WEAPON:weapon, bodypart)
         printf("NPC %d has died!", npcid);
         return 1;
     }
-    
+
     new const Float:health = NPC_GetHealth(npcid);
     printf("NPC %d took %.1f damage, health remaining: %.1f", npcid, damage, health);
     return 1;
@@ -53,5 +53,5 @@ public OnNPCTakeDamage(npcid, damagerid, Float:damage, WEAPON:weapon, bodypart)
 
 ## Related Callbacks
 
-- [OnNPCDeath](OnNPCDeath): Called when an NPC dies
-- [OnNPCTakeDamage](OnNPCTakeDamage): Called when an NPC takes damage
+- [OnNPCDeath](../callbacks/OnNPCDeath): Called when an NPC dies
+- [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): Called when an NPC takes damage

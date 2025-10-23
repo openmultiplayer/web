@@ -26,14 +26,14 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Passenger");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    
+
     // Make NPC enter as passenger in seat 1
     NPC_EnterVehicle(npcid, vehicleid, 1, NPC_MOVE_TYPE_WALK);
-    
+
     SetTimer("CheckEnteringSeat", 100, true);
-    
+
     return 1;
 }
 
@@ -44,17 +44,17 @@ public CheckEnteringSeat()
     if (seat != -1)
     {
         new vehicleid = NPC_GetEnteringVehicleID(0);
-        
+
         new seatName[16];
         switch(seat)
         {
             case 0: seatName = "Driver";
-            case 1: seatName = "Passenger";  
+            case 1: seatName = "Passenger";
             case 2: seatName = "Back Left";
             case 3: seatName = "Back Right";
             default: seatName = "Unknown";
         }
-        
+
         printf("NPC 0 entering vehicle %d as %s (seat %d)", vehicleid, seatName, seat);
     }
 }
@@ -85,4 +85,4 @@ public CheckEnteringSeat()
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

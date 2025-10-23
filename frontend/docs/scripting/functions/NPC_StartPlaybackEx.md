@@ -11,17 +11,17 @@ tags: ["npc", "playback", "recording"]
 
 Starts playback for an NPC using a pre-loaded recording ID with extended options.
 
-| Name                | Description                                          |
-| ------------------- | ---------------------------------------------------- |
-| npcid               | The ID of the NPC                                    |
-| recordId            | The pre-loaded recording ID                          |
-| autoUnload          | Whether to automatically unload after playback      |
-| startX              | X offset from recording position                     |
-| startY              | Y offset from recording position                     |
-| startZ              | Z offset from recording position                     |
-| rotX                | X rotation offset                                    |
-| rotY                | Y rotation offset                                    |
-| rotZ                | Z rotation offset                                    |
+| Name       | Description                                    |
+| ---------- | ---------------------------------------------- |
+| npcid      | The ID of the NPC                              |
+| recordId   | The pre-loaded recording ID                    |
+| autoUnload | Whether to automatically unload after playback |
+| startX     | X offset from recording position               |
+| startY     | Y offset from recording position               |
+| startZ     | Z offset from recording position               |
+| rotX       | X rotation offset                              |
+| rotY       | Y rotation offset                              |
+| rotZ       | Z rotation offset                              |
 
 ## Returns
 
@@ -35,13 +35,13 @@ new g_PatrolRecord = INVALID_RECORD_ID;
 public OnGameModeInit()
 {
     // Pre-load recordings
-    g_PatrolRecord = NPC_LoadRecord("recordings/patrol.rec");
-    
+    g_PatrolRecord = NPC_LoadRecord("patrol");
+
     if (g_PatrolRecord != INVALID_RECORD_ID)
     {
         printf("Patrol recording loaded with ID %d", g_PatrolRecord);
     }
-    
+
     return 1;
 }
 
@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 started patrol playback");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/startpatrolrotated", true))
     {
         // Start with rotation offset
@@ -82,4 +82,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCPlaybackEnd](OnNPCPlaybackEnd): Called when playback ends
+- [OnNPCPlaybackEnd](../callbacks/OnNPCPlaybackEnd): Called when playback ends

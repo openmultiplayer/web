@@ -11,16 +11,16 @@ tags: ["npc", "animation"]
 
 Sets an animation for an NPC using animation ID.
 
-| Name          | Description                                          |
-| ------------- | ---------------------------------------------------- |
-| npcid         | The ID of the NPC                                    |
-| animationid   | The animation ID to set                              |
-| delta         | Animation speed (typically 4.1)                     |
-| loop          | Whether the animation should loop                    |
-| lockX         | Lock movement on X axis during animation             |
-| lockY         | Lock movement on Y axis during animation             |
-| freeze        | Freeze the NPC after animation                      |
-| time          | Animation duration in milliseconds (0 = infinite)    |
+| Name        | Description                                       |
+| ----------- | ------------------------------------------------- |
+| npcid       | The ID of the NPC                                 |
+| animationid | The animation ID to set                           |
+| delta       | Animation speed (typically 4.1)                   |
+| loop        | Whether the animation should loop                 |
+| lockX       | Lock movement on X axis during animation          |
+| lockY       | Lock movement on Y axis during animation          |
+| freeze      | Freeze the NPC after animation                    |
+| time        | Animation duration in milliseconds (0 = infinite) |
 
 ## Returns
 
@@ -33,10 +33,10 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Dancer");
     NPC_Spawn(npcid);
-    
+
     // Set a dance animation by ID
     NPC_SetAnimation(npcid, 1189, 4.1, true, false, false, false, 0);
-    
+
     return 1;
 }
 
@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is waving!");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/dance", true))
     {
         // Dance animation for NPC 0
@@ -76,4 +76,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns

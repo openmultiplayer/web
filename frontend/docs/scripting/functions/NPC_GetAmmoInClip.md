@@ -26,16 +26,16 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Gunner");
     NPC_Spawn(npcid);
-    
+
     NPC_SetWeapon(npcid, WEAPON_M4);
     NPC_SetAmmo(npcid, 300); // Give 300 ammo
     NPC_SetAmmoInClip(npcid, 50); // Set 50 ammo in clip
-    
+
     new clipAmmo = NPC_GetAmmoInClip(npcid);
     new totalAmmo = NPC_GetAmmo(npcid);
-    
+
     printf("NPC %d: %d in clip, %d total", npcid, clipAmmo, totalAmmo);
-    
+
     return 1;
 }
 
@@ -43,7 +43,7 @@ forward CheckNPCAmmo();
 public CheckNPCAmmo()
 {
     new clipAmmo = NPC_GetAmmoInClip(0);
-    
+
     if (clipAmmo <= 5)
     {
         printf("NPC 0 has low clip ammo: %d", clipAmmo);
@@ -67,5 +67,4 @@ public CheckNPCAmmo()
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires a weapon
-
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when NPC fires a weapon

@@ -26,12 +26,12 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("ActionBot");
     NPC_Spawn(npcid);
-    
+
     NPC_SetSpecialAction(npcid, SPECIAL_ACTION_DUCK);
-    
+
     new action = NPC_GetSpecialAction(npcid);
     printf("NPC %d special action: %d", npcid, action);
-    
+
     return 1;
 }
 
@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/checkaction", true))
     {
         new action = NPC_GetSpecialAction(0);
-        
+
         new actionName[32];
         switch(action)
         {
@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             case SPECIAL_ACTION_SIT_DOWN: actionName = "Sitting";
             default: actionName = "Unknown";
         }
-        
+
         new msg[64];
         format(msg, sizeof(msg), "NPC 0 action: %s", actionName);
         SendClientMessage(playerid, 0xFFFFFFFF, msg);
@@ -74,4 +74,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns

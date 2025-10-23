@@ -27,12 +27,12 @@ public OnGameModeInit()
     new npcid = NPC_Create("Gunner");
     NPC_Spawn(npcid);
     NPC_GiveWeapon(npcid, WEAPON_M4, 100); // M4 with 100 ammo
-    
+
     // Make NPC aim and shoot at a position
     NPC_AimAt(npcid, 2000.0, 1500.0, 15.0, true, 500);
-    
+
     SetTimer("CheckShooting", 500, true);
-    
+
     return 1;
 }
 
@@ -81,5 +81,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC shoots
-- [OnNPCGiveDamage](OnNPCGiveDamage): Called when NPC damages player
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when NPC shoots
+- [OnNPCGiveDamage](../callbacks/OnNPCGiveDamage): Called when NPC damages player

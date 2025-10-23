@@ -11,10 +11,10 @@ tags: ["npc", "playback", "recording"]
 
 This callback is called when an NPC finishes playback of a recorded file.
 
-| Name     | Description                                      |
-| -------- | ------------------------------------------------ |
-| npcid    | The ID of the NPC that finished playback        |
-| recordid | The ID of the record that finished playing      |
+| Name     | Description                                |
+| -------- | ------------------------------------------ |
+| npcid    | The ID of the NPC that finished playback   |
+| recordid | The ID of the record that finished playing |
 
 ## Examples
 
@@ -22,10 +22,10 @@ This callback is called when an NPC finishes playback of a recorded file.
 public OnNPCPlaybackEnd(npcid, recordid)
 {
     printf("NPC %d finished playing record %d", npcid, recordid);
-    
+
     // Start another recording
     NPC_StartPlayback(npcid, "another_recording", true);
-    
+
     return true;
 }
 ```
@@ -40,10 +40,10 @@ public OnNPCPlaybackEnd(npcid, recordid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_StartPlayback](NPC_StartPlayback): Start NPC playback of a recording
-- [NPC_StopPlayback](NPC_StopPlayback): Stop NPC playback
-- [NPC_PausePlayback](NPC_PausePlayback): Pause/unpause NPC playback
-- [NPC_IsPlayingPlayback](NPC_IsPlayingPlayback): Check if NPC is playing a recording
+- [NPC_StartPlayback](../functions/NPC_StartPlayback): Start NPC playback of a recording
+- [NPC_StopPlayback](../functions/NPC_StopPlayback): Stop NPC playback
+- [NPC_PausePlayback](../functions/NPC_PausePlayback): Pause/unpause NPC playback
+- [NPC_IsPlayingPlayback](../functions/NPC_IsPlayingPlayback): Check if NPC is playing a recording
 
 ## Related Callbacks
 

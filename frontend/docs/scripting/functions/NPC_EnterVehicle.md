@@ -11,12 +11,12 @@ tags: ["npc", "vehicle"]
 
 Makes an NPC enter a vehicle by walking to it and getting in.
 
-| Name      | Description                                      |
-| --------- | ------------------------------------------------ |
-| npcid     | The ID of the NPC                               |
-| vehicleid | The ID of the vehicle to enter                  |
-| seatid    | The seat to enter |
-| moveType  | The movement type to use when approaching       |
+| Name      | Description                               |
+| --------- | ----------------------------------------- |
+| npcid     | The ID of the NPC                         |
+| vehicleid | The ID of the vehicle to enter            |
+| seatid    | The seat to enter                         |
+| moveType  | The movement type to use when approaching |
 
 ## Returns
 
@@ -29,12 +29,12 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Driver");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    
+
     // Make NPC walk to the vehicle and enter as driver
     NPC_EnterVehicle(npcid, vehicleid, 0, NPC_MOVE_TYPE_WALK);
-    
+
     return 1;
 }
 
@@ -44,14 +44,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
-        
+
         new vehicleid = CreateVehicle(411, x + 5.0, y, z, 0.0, -1, -1, 300);
         new npcid = NPC_Create("Passenger");
         NPC_Spawn(npcid);
-        
+
         // Make NPC enter as passenger
         NPC_EnterVehicle(npcid, vehicleid, 1, NPC_MOVE_TYPE_JOG);
-        
+
         return 1;
     }
     return 0;
@@ -85,5 +85,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
-
+_No specific callbacks are triggered by this function._

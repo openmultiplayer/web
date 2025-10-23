@@ -11,8 +11,8 @@ tags: ["npc"]
 
 This callback is called when an NPC is destroyed and removed from the server.
 
-| Name  | Description                        |
-| ----- | ---------------------------------- |
+| Name  | Description                          |
+| ----- | ------------------------------------ |
 | npcid | The ID of the NPC that was destroyed |
 
 ## Examples
@@ -21,14 +21,14 @@ This callback is called when an NPC is destroyed and removed from the server.
 public OnNPCDestroy(npcid)
 {
     printf("NPC %d has been destroyed", npcid);
-    
+
     // Clean up timers
     if (g_NPCTimer[npcid] != -1)
     {
         KillTimer(g_NPCTimer[npcid]);
         g_NPCTimer[npcid] = -1;
     }
-    
+
     return true;
 }
 ```
@@ -42,12 +42,10 @@ public OnNPCDestroy(npcid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_Create](NPC_Create): Create a new NPC
-- [NPC_Destroy](NPC_Destroy): Destroy an existing NPC
-- [IsValidNPC](IsValidNPC): Check if NPC ID is valid
+- [NPC_Create](../functions/NPC_Create): Create a new NPC
+- [NPC_Destroy](../functions/NPC_Destroy): Destroy an existing NPC
+- [NPC_IsValid](../functions/NPC_IsValid): Check if NPC ID is valid
 
 ## Related Callbacks
 
 - [OnNPCCreate](OnNPCCreate): Called when an NPC is created
-- [OnNPCConnect](OnNPCConnect): Called when an NPC connects to the server
-- [OnNPCDisconnect](OnNPCDisconnect): Called when an NPC disconnects from the server

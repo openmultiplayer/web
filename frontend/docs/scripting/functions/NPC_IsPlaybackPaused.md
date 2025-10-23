@@ -26,14 +26,14 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("RecordedDriver");
     NPC_Spawn(npcid);
-    
+
     // Load and start playback
     NPC_LoadRecord("driver_route");
     NPC_StartPlayback(npcid, "driver_route", true, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
-    
+
     // Auto-pause after 10 seconds
     SetTimerEx("AutoPausePlayback", 10000, false, "i", npcid);
-    
+
     return 1;
 }
 
@@ -68,17 +68,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/togglepause", true))
     {
         if (NPC_IsPlayingPlayback(0))
         {
             new bool:currentPaused = NPC_IsPlaybackPaused(0);
             NPC_PausePlayback(0, !currentPaused);
-            
+
             new action[16];
             action = currentPaused ? "Resumed" : "Paused";
-            
+
             new msg[64];
             format(msg, sizeof(msg), "NPC 0 playback %s", action);
             SendClientMessage(playerid, 0xFFFFFFFF, msg);
@@ -109,5 +109,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCPlaybackStart](OnNPCPlaybackStart): Called when playback starts
-- [OnNPCPlaybackEnd](OnNPCPlaybackEnd): Called when playback ends
+- [OnNPCPlaybackStart](../callbacks/OnNPCPlaybackStart): Called when playback starts
+- [OnNPCPlaybackEnd](../callbacks/OnNPCPlaybackEnd): Called when playback ends

@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Returns a vehicle's rotation as euler.
 
-| Name      | Description                                                                          |
-| --------- | ------------------------------------------------------------------------------------ |
-| vehicleid | The ID of the vehicle to get the rotation of.                                        |
+| Name      | Description                                                               |
+| --------- | ------------------------------------------------------------------------- |
+| vehicleid | The ID of the vehicle to get the rotation of.                             |
 | &Float:x  | A float variable in which to store the X axis angle, passed by reference. |
-| &Float:y  | A float variable in which to store the Y axis angle, passed by reference.  |
+| &Float:y  | A float variable in which to store the Y axis angle, passed by reference. |
 | &Float:z  | A float variable in which to store the Z asix angle, passed by reference. |
 
 ## Returns
@@ -47,5 +47,5 @@ GetVehicleRotation(vehicleid, x, y, z);
 ## Related Functions
 
 - [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
-- [GetVehicleRotation](GetVehicleRotation): Get the rotation of a vehicle on the XYZ axis.
+- [GetVehicleRotationQuat](GetVehicleRotationQuat): Get the rotation of a vehicle on all axes as a quaternion.
 - [GetVehicleMatrix](GetVehicleMatrix): Gets the actual rotation matrix of the vehicle.

@@ -12,7 +12,7 @@ tags: ["player", "pickup"]
 Hides a pickup for a specific player.
 
 | Name     | Description                                  |
-|----------|----------------------------------------------|
+| -------- | -------------------------------------------- |
 | playerid | The ID of the player.                        |
 | pickupid | The ID of the pickup to hide for the player. |
 

@@ -26,15 +26,15 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Navigator");
     NPC_Spawn(npcid);
-    
+
     if (NPC_OpenNode(1))
     {
         NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-        
+
         // Pause after 5 seconds
         SetTimerEx("PauseNode", 5000, false, "i", npcid);
     }
-    
+
     return 1;
 }
 
@@ -43,7 +43,7 @@ public PauseNode(npcid)
 {
     NPC_PausePlayingNode(npcid);
     printf("NPC %d node navigation paused", npcid);
-    
+
     // Resume after 3 seconds
     SetTimerEx("ResumeNode", 3000, false, "i", npcid);
 }
@@ -71,4 +71,4 @@ public ResumeNode(npcid)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

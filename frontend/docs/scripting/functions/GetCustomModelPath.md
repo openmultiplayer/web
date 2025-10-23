@@ -31,7 +31,7 @@ GetCustomModelPath(modelid, dffPath, sizeof(dffPath), txdPath, sizeof(txdPath));
 
 printf("[Custom model id %d path]\n\
     dff: %s\n\
-    txd: %s", 
+    txd: %s",
     modelid, dffPath, txdPath);
 ```
 

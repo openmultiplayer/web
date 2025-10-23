@@ -11,9 +11,9 @@ tags: ["npc", "surfing"]
 
 Gets the player object an NPC is surfing on.
 
-| Name   | Description                     |
-| ------ | ------------------------------- |
-| npcid  | The ID of the NPC               |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -52,4 +52,4 @@ public OnNPCSpawn(npcid)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

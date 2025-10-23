@@ -9,9 +9,9 @@ tags: []
 
 This will send a player text by the bot, just like using [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll), but this function is to be used inside the NPC scripts.
 
-| Name         | Description                                        |
-| ------------ | -------------------------------------------------- |
-| msg[]        | The text to be sent by the NPC.                    |
+| Name  | Description                     |
+| ----- | ------------------------------- |
+| msg[] | The text to be sent by the NPC. |
 
 ## Examples
 

@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 Hide player gangzone.
 
-| Name        | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom player gangzone is bound.           |
-| zoneid      | The ID of the player gangzone for hide.                          |
+| Name     | Description                                            |
+| -------- | ------------------------------------------------------ |
+| playerid | The ID of the player to whom player gangzone is bound. |
+| zoneid   | The ID of the player gangzone for hide.                |
 
 ## Returns
 

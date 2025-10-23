@@ -12,7 +12,7 @@ tags: ["player", "object", "playerobject"]
 Checks if a slot of player-object material is used.
 
 | Name          | Description                                 |
-|---------------|---------------------------------------------|
+| ------------- | ------------------------------------------- |
 | playerid      | The ID of the player.                       |
 | objectid      | The ID of the player-object.                |
 | materialIndex | The material index on the object. (0 to 15) |

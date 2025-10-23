@@ -11,9 +11,9 @@ tags: ["npc", "node", "navigation"]
 
 Closes an NPC node, making it unavailable for use by NPCs.
 
-| Name   | Description                |
-| ------ | -------------------------- |
-| nodeid | The ID of the node to close|
+| Name   | Description                 |
+| ------ | --------------------------- |
+| nodeid | The ID of the node to close |
 
 ## Returns
 
@@ -28,16 +28,16 @@ public OnGameModeInit()
     if (NPC_OpenNode(1))
     {
         printf("Node 1 opened successfully");
-        
+
         // Use the node
         new npcid = NPC_Create("NodeBot");
         NPC_Spawn(npcid);
         NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-        
+
         // Later, close the node
         SetTimer("CloseTheNode", 30000, false);
     }
-    
+
     return 1;
 }
 
@@ -65,5 +65,5 @@ public CloseTheNode()
 
 ## Related Callbacks
 
-- [OnNPCFinishNode](OnNPCFinishNode): Called when NPC finishes a node
-- [OnNPCChangeNode](OnNPCChangeNode): Called when NPC changes nodes
+- [OnNPCFinishNode](../callbacks/OnNPCFinishNode): Called when NPC finishes a node
+- [OnNPCChangeNode](../callbacks/OnNPCChangeNode): Called when NPC changes nodes

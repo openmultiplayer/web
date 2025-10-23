@@ -10,7 +10,7 @@ tags: ["textdraw"]
 Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See this page for extensive information about textdraws.
 
 | Name             | Description                                              |
-|------------------|----------------------------------------------------------|
+| ---------------- | -------------------------------------------------------- |
 | Float:x          | The X (left/right) coordinate to create the textdraw at. |
 | Float:y          | The Y (up/down) coordinate to create the textdraw at.    |
 | const format[]   | The text that will appear in the textdraw.               |

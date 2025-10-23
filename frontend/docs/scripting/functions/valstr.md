@@ -15,7 +15,7 @@ Convert an integer into a string.
 | ----------------- | ------------------------------------------------- |
 | dest              | The destination of the string.                    |
 | value             | The value to convert to a string.                 |
-| pack *(optional)* | Whether to pack the destination (off by default). |
+| pack _(optional)_ | Whether to pack the destination (off by default). |
 
 ## Returns
 

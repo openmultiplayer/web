@@ -11,9 +11,9 @@ tags: ["npc", "movement"]
 
 This callback is called when an NPC finishes moving to its target destination.
 
-| Name  | Description                                   |
-| ----- | --------------------------------------------- |
-| npcid | The ID of the NPC that finished moving       |
+| Name  | Description                            |
+| ----- | -------------------------------------- |
+| npcid | The ID of the NPC that finished moving |
 
 ## Examples
 
@@ -21,12 +21,12 @@ This callback is called when an NPC finishes moving to its target destination.
 public OnNPCFinishMove(npcid)
 {
     printf("NPC %d has reached its destination", npcid);
-    
+
     // Move to next destination
     new Float:x, Float:y, Float:z;
     NPC_GetPos(npcid, x, y, z);
     NPC_Move(npcid, x + 10.0, y + 10.0, z, NPC_MOVE_TYPE_WALK);
-    
+
     return true;
 }
 ```
@@ -42,10 +42,10 @@ public OnNPCFinishMove(npcid)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_Move](NPC_Move): Make NPC move to a position
-- [NPC_MoveToPlayer](NPC_MoveToPlayer): Make NPC follow a player
-- [NPC_StopMove](NPC_StopMove): Stop NPC movement
-- [NPC_IsMoving](NPC_IsMoving): Check if NPC is currently moving
+- [NPC_Move](../functions/NPC_Move): Make NPC move to a position
+- [NPC_MoveToPlayer](../functions/NPC_MoveToPlayer): Make NPC follow a player
+- [NPC_StopMove](../functions/NPC_StopMove): Stop NPC movement
+- [NPC_IsMoving](../functions/NPC_IsMoving): Check if NPC is currently moving
 
 ## Related Callbacks
 

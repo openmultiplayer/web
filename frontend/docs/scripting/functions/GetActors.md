@@ -11,10 +11,10 @@ tags: ["actor"]
 
 Gets an array variable of the IDs of the created actors on the server.
 
-| Name          | Description                                                        |
-| ------------- | ------------------------------------------------------------------ |
-| actors[]      | An array into which to store the actor IDs, passed by reference. |
-| size          | The size of the array.                                             |
+| Name     | Description                                                      |
+| -------- | ---------------------------------------------------------------- |
+| actors[] | An array into which to store the actor IDs, passed by reference. |
+| size     | The size of the array.                                           |
 
 ## Returns
 

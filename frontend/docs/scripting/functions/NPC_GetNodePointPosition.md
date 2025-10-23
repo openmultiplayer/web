@@ -11,12 +11,12 @@ tags: ["npc", "node", "navigation", "position"]
 
 Gets the position of the current point in an NPC node.
 
-| Name   | Description                             |
-| ------ | --------------------------------------- |
-| nodeid | The ID of the node                     |
-| &x     | Variable to store the X coordinate     |
-| &y     | Variable to store the Y coordinate     |
-| &z     | Variable to store the Z coordinate     |
+| Name   | Description                        |
+| ------ | ---------------------------------- |
+| nodeid | The ID of the node                 |
+| &x     | Variable to store the X coordinate |
+| &y     | Variable to store the Y coordinate |
+| &z     | Variable to store the Z coordinate |
 
 ## Returns
 
@@ -40,7 +40,7 @@ public OnGameModeInit()
             }
         }
     }
-    
+
     return 1;
 }
 
@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             if (NPC_GetNodePointPosition(nodeid, x, y, z))
             {
                 SetPlayerPos(playerid, x, y, z + 1.0);
-                
+
                 new msg[128];
                 format(msg, sizeof(msg), "Teleported to node %d position", nodeid);
                 SendClientMessage(playerid, 0x00FF00FF, msg);
@@ -72,7 +72,7 @@ public ShowNodePath(nodeid)
     if (NPC_IsNodeOpen(nodeid))
     {
         new pointCount = NPC_GetNodePointCount(nodeid);
-        
+
         for (new i = 0; i < pointCount; i++)
         {
             if (NPC_SetNodePoint(nodeid, i))
@@ -104,4 +104,4 @@ public ShowNodePath(nodeid)
 
 ## Related Callbacks
 
-- [OnNPCFinishNodePoint](OnNPCFinishNodePoint): Called when NPC finishes a node point
+- [OnNPCFinishNodePoint](../callbacks/OnNPCFinishNodePoint): Called when NPC finishes a node point

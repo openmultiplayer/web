@@ -11,9 +11,9 @@ tags: ["npc", "recording", "playback"]
 
 Loads an NPC recording file for playback use.
 
-| Name     | Description                      |
-| -------- | -------------------------------- |
-| const filePath | The path to the recording file   |
+| Name           | Description                    |
+| -------------- | ------------------------------ |
+| const filePath | The path to the recording file |
 
 ## Returns
 
@@ -33,13 +33,13 @@ public OnGameModeInit()
     {
         printf("Driver route recording loaded with ID: %d", g_DriverRecord);
     }
-    
+
     g_GuardRecord = NPC_LoadRecord("guard_patrol");
     if (g_GuardRecord != INVALID_RECORD_ID)
     {
         printf("Guard patrol recording loaded with ID: %d", g_GuardRecord);
     }
-    
+
     return 1;
 }
 
@@ -79,5 +79,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCPlaybackStart](OnNPCPlaybackStart): Called when playback starts
-- [OnNPCPlaybackEnd](OnNPCPlaybackEnd): Called when playback ends
+- [OnNPCPlaybackStart](../callbacks/OnNPCPlaybackStart): Called when playback starts
+- [OnNPCPlaybackEnd](../callbacks/OnNPCPlaybackEnd): Called when playback ends

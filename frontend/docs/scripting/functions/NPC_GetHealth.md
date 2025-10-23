@@ -26,12 +26,12 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("HealthBot");
     NPC_Spawn(npcid);
-    
+
     NPC_SetHealth(npcid, 75.5);
-    
+
     new Float:health = NPC_GetHealth(npcid);
     printf("NPC %d has %.1f health", npcid, health); // Output: 75.5
-    
+
     return 1;
 }
 
@@ -65,5 +65,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCTakeDamage](OnNPCTakeDamage): Called when NPC takes damage
-- [OnNPCDeath](OnNPCDeath): Called when NPC dies
+- [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): Called when NPC takes damage
+- [OnNPCDeath](../callbacks/OnNPCDeath): Called when NPC dies

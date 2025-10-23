@@ -11,12 +11,12 @@ tags: ["npc", "rotation", "angle"]
 
 Sets an NPC's rotation on all three axes (X, Y, Z).
 
-| Name    | Description                    |
-| ------- | ------------------------------ |
-| npcid   | The ID of the NPC.             |
-| Float:x | X-axis rotation in degrees.    |
-| Float:y | Y-axis rotation in degrees.    |
-| Float:z | Z-axis rotation in degrees.    |
+| Name    | Description                 |
+| ------- | --------------------------- |
+| npcid   | The ID of the NPC.          |
+| Float:x | X-axis rotation in degrees. |
+| Float:y | Y-axis rotation in degrees. |
+| Float:z | Z-axis rotation in degrees. |
 
 ## Returns
 
@@ -29,10 +29,10 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("Rotator");
     NPC_Spawn(npcid);
-    
+
     // Set specific rotation
     NPC_SetRot(npcid, 0.0, 0.0, 45.0); // 45 degrees Z rotation
-    
+
     return 1;
 }
 
@@ -50,17 +50,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 rotation randomized");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/uprightspecs", true))
     {
         new npcs[MAX_NPCS];
         new const count = NPC_GetAll(npcs);
-        
+
         for (new i = 0; i < count; i++)
         {
             NPC_SetRot(npcs[i], 0.0, 0.0, 0.0); // Reset to upright
         }
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "Reset all NPC rotations");
         return 1;
     }

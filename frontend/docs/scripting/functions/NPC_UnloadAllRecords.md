@@ -21,12 +21,12 @@ Returns `true` if all records were unloaded successfully, `false` otherwise.
 public OnGameModeInit()
 {
     // Load some recordings
-    NPC_LoadRecord("recordings/patrol.rec");
-    NPC_LoadRecord("recordings/driver.rec");
-    NPC_LoadRecord("recordings/guard.rec");
-    
+    NPC_LoadRecord("patrol");
+    NPC_LoadRecord("driver");
+    NPC_LoadRecord("guard");
+
     printf("Loaded records: %d", NPC_GetRecordCount());
-    
+
     return 1;
 }
 
@@ -37,7 +37,7 @@ public OnGameModeExit()
     {
         print("All NPC recordings unloaded successfully");
     }
-    
+
     return 1;
 }
 
@@ -75,4 +75,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCPlaybackEnd](OnNPCPlaybackEnd): Called when playback ends
+- [OnNPCPlaybackEnd](../callbacks/OnNPCPlaybackEnd): Called when playback ends

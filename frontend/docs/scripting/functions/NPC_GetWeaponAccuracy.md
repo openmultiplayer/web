@@ -11,10 +11,10 @@ tags: ["npc", "weapon"]
 
 Gets the accuracy setting for an NPC's weapon.
 
-| Name      | Description              |
-| --------- | ------------------------ |
-| npcid     | The ID of the NPC        |
-| weaponid  | The weapon ID to check   |
+| Name     | Description            |
+| -------- | ---------------------- |
+| npcid    | The ID of the NPC      |
+| weaponid | The weapon ID to check |
 
 ## Returns
 
@@ -27,13 +27,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Sniper");
     NPC_Spawn(npcid);
-    
+
     NPC_SetWeapon(npcid, WEAPON_SNIPER);
     NPC_SetWeaponAccuracy(npcid, WEAPON_SNIPER, 0.95);
-    
+
     new Float:accuracy = NPC_GetWeaponAccuracy(npcid, WEAPON_SNIPER);
     printf("NPC %d sniper accuracy: %.2f", npcid, accuracy);
-    
+
     return 1;
 }
 
@@ -72,5 +72,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when an NPC shoots
-- [OnNPCWeaponStateChange](OnNPCWeaponStateChange): Called when weapon state changes
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when an NPC shoots
+- [OnNPCWeaponStateChange](../callbacks/OnNPCWeaponStateChange): Called when weapon state changes

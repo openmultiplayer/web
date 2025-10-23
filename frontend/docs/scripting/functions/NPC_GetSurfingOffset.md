@@ -11,12 +11,12 @@ tags: ["npc", "surfing"]
 
 Gets the surfing offset for an NPC.
 
-| Name     | Description                                           |
-| -------- | ----------------------------------------------------- |
-| npcid    | The ID of the NPC                                     |
-| &x       | A variable to store the X offset, passed by reference |
-| &y       | A variable to store the Y offset, passed by reference |
-| &z       | A variable to store the Z offset, passed by reference |
+| Name  | Description                                           |
+| ----- | ----------------------------------------------------- |
+| npcid | The ID of the NPC                                     |
+| &x    | A variable to store the X offset, passed by reference |
+| &y    | A variable to store the Y offset, passed by reference |
+| &z    | A variable to store the Z offset, passed by reference |
 
 ## Returns
 
@@ -54,4 +54,4 @@ public CheckNPCSurfing(npcid)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

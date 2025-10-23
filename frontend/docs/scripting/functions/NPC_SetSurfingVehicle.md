@@ -11,10 +11,10 @@ tags: ["npc", "surfing", "vehicle"]
 
 Sets the vehicle an NPC is surfing on.
 
-| Name      | Description            |
-| --------- | ---------------------- |
-| npcid     | The ID of the NPC      |
-| vehicleid | The vehicle ID         |
+| Name      | Description       |
+| --------- | ----------------- |
+| npcid     | The ID of the NPC |
+| vehicleid | The vehicle ID    |
 
 ## Returns
 
@@ -27,7 +27,7 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("SurfingBot");
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    
+
     NPC_Spawn(npcid);
     NPC_SetPos(npcid, 1958.33, 1343.12, 17.36);
     NPC_SetSurfingVehicle(npcid, vehicleid);
@@ -65,4 +65,4 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

@@ -8,8 +8,8 @@ description: This page has the all the available skins in SA-MP.
 
 This page contains every available skin used by [SetPlayerSkin](../functions/SetPlayerSkin) and [GetPlayerSkin](../functions/GetPlayerSkin) functions.
 
-| Skin ID | Preview                               | Skin Model Name | Skin Name/Type                           | Singleplayer Location                              | Gender |
-| ------- | ------------------------------------- | --------------- | ---------------------------------------- | -------------------------------------------------- | ------ |
+| Skin ID | Preview                                                            | Skin Model Name | Skin Name/Type                           | Singleplayer Location                              | Gender |
+| ------- | ------------------------------------------------------------------ | --------------- | ---------------------------------------- | -------------------------------------------------- | ------ |
 | 0       | ![Skin ID 0](https://assets.open.mp/assets/images/skins/0.png)     | cj              | Carl "CJ" Johnson (Main Character)       | Anywhere                                           | Male   |
 | 1       | ![Skin ID 1](https://assets.open.mp/assets/images/skins/1.png)     | truth           | The Truth                                | San Fierro and Las Venturas                        | Male   |
 | 2       | ![Skin ID 2](https://assets.open.mp/assets/images/skins/2.png)     | maccer          | Maccer                                   | Las Venturas and Los Santos                        | Male   |
@@ -318,8 +318,8 @@ These skins (300 to 311) were added in SA-MP 0.3.7 RC3 and will not work in earl
 
 :::
 
-| Skin ID | Preview                               | Skin Model Name | Skin Name/Type                                      | Singleplayer Location | Gender |
-| ------- | ------------------------------------- | --------------- | --------------------------------------------------- | --------------------- | ------ |
+| Skin ID | Preview                                                            | Skin Model Name | Skin Name/Type                                      | Singleplayer Location | Gender |
+| ------- | ------------------------------------------------------------------ | --------------- | --------------------------------------------------- | --------------------- | ------ |
 | 300     | ![Skin ID 300](https://assets.open.mp/assets/images/skins/300.png) | lapdna          | Los Santos Police Officer (Without gun holster)     | -                     | Male   |
 | 301     | ![Skin ID 301](https://assets.open.mp/assets/images/skins/301.png) | sfpdna          | San Fierro Police Officer (Without gun holster)     | -                     | Male   |
 | 302     | ![Skin ID 302](https://assets.open.mp/assets/images/skins/302.png) | lvpdna          | Las Venturas Police Officer (Without gun holster)   | -                     | Male   |

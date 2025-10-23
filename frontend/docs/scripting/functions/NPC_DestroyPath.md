@@ -11,9 +11,9 @@ tags: ["npc", "path"]
 
 Destroys a specific NPC path, making it invalid.
 
-| Name   | Description                         |
-| ------ | ----------------------------------- |
-| pathid | The ID of the path to destroy      |
+| Name   | Description                   |
+| ------ | ----------------------------- |
+| pathid | The ID of the path to destroy |
 
 ## Returns
 
@@ -30,7 +30,7 @@ public OnGameModeInit()
     g_PatrolPath = NPC_CreatePath();
     NPC_AddPointToPath(g_PatrolPath, 1958.33, 1343.12, 15.36, 1.0);
     NPC_AddPointToPath(g_PatrolPath, 1968.33, 1353.12, 15.36, 1.0);
-    
+
     return 1;
 }
 
@@ -72,4 +72,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCFinishMovePath](OnNPCFinishMovePath): Called when NPC finishes a path
+- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): Called when NPC finishes a path

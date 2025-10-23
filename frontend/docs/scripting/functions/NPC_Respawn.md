@@ -26,10 +26,10 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("Respawner");
     NPC_Spawn(npcid);
-    
+
     // Respawn every 30 seconds
     SetTimerEx("RespawnNPC", 30000, true, "i", npcid);
-    
+
     return 1;
 }
 
@@ -77,5 +77,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns.
-- [OnNPCRespawn](OnNPCRespawn): Called when NPC respawns.
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns.
+- [OnNPCRespawn](../callbacks/OnNPCRespawn): Called when NPC respawns.

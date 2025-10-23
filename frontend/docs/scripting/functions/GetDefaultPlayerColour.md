@@ -11,9 +11,9 @@ tags: ["player"]
 
 Gets the default colour for the player ID.
 
-| Name     | Description                                                               |
-| -------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player to get the colour of.  Doesn't need to be connected. |
+| Name     | Description                                                              |
+| -------- | ------------------------------------------------------------------------ |
+| playerid | The ID of the player to get the colour of. Doesn't need to be connected. |
 
 ## Returns
 

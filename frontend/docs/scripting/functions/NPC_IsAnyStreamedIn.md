@@ -27,10 +27,10 @@ public OnGameModeInit()
     new npcid = NPC_Create("SecurityGuard");
     NPC_Spawn(npcid);
     NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
-    
+
     // Start monitoring streaming status
     SetTimer("MonitorNPCStreaming", 5000, true);
-    
+
     return 1;
 }
 
@@ -62,7 +62,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
                     visibleCount++;
                 }
             }
-            
+
             new msg[128];
             format(msg, sizeof(msg), "NPC 0 is visible to %d player(s)", visibleCount);
             SendClientMessage(playerid, 0x00FF00FF, msg);
@@ -73,7 +73,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/optimizeprocessing", true))
     {
         // Example of performance optimization
@@ -82,7 +82,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             // NPC is visible, process AI logic
             new Float:x, Float:y, Float:z;
             NPC_GetPos(0, x, y, z);
-            
+
             new msg[128];
             format(msg, sizeof(msg), "Processing NPC 0 AI at %.1f, %.1f, %.1f", x, y, z);
             SendClientMessage(playerid, 0xFFFF00FF, msg);
@@ -114,4 +114,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns

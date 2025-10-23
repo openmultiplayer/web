@@ -11,9 +11,9 @@ tags: ["npc"]
 
 Checks if an NPC ID is valid and the NPC exists.
 
-| Name  | Description                  |
-| ----- | ---------------------------- |
-| npcid | The NPC ID to check.         |
+| Name  | Description          |
+| ----- | -------------------- |
+| npcid | The NPC ID to check. |
 
 ## Returns
 
@@ -25,7 +25,7 @@ Returns `true` if the NPC is valid, `false` otherwise.
 public OnGameModeInit()
 {
     new const npcid = NPC_Create("TestBot");
-    
+
     if (NPC_IsValid(npcid))
     {
         printf("NPC %d was created successfully", npcid);
@@ -35,7 +35,7 @@ public OnGameModeInit()
     {
         print("Failed to create NPC");
     }
-    
+
     return 1;
 }
 
@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new
             validCount = 0,
             Float:health;
-        
+
         for (new i = 0; i < MAX_NPCS; i++)
         {
             if (NPC_IsValid(i))
@@ -59,7 +59,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
 
         SendClientMessage(playerid, 0x00FF00FF, "Total valid NPCs: %d", validCount);
-        
+
         return 1;
     }
     return 0;
@@ -68,7 +68,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 DestroyAllNPCs()
 {
     new destroyedCount = 0;
-    
+
     for (new i = 0; i < MAX_NPCS; i++)
     {
         if (NPC_IsValid(i))
@@ -77,7 +77,7 @@ DestroyAllNPCs()
             destroyedCount++;
         }
     }
-    
+
     printf("Destroyed %d NPCs", destroyedCount);
     return destroyedCount;
 }
@@ -90,11 +90,11 @@ public SafeNPCOperation(npcid)
         printf("Error: NPC %d is not valid", npcid);
         return false;
     }
-    
+
     // Safe to perform operations on the NPC
     NPC_SetHealth(npcid, 100.0);
     NPC_SetPos(npcid, 0.0, 0.0, 3.0);
-    
+
     return true;
 }
 ```

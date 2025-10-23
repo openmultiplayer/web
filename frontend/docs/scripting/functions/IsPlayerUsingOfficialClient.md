@@ -11,9 +11,9 @@ tags: ["player"]
 
 Check if the player is using the official SA-MP client.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player to check.       |
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | The ID of the player to check. |
 
 ## Returns
 

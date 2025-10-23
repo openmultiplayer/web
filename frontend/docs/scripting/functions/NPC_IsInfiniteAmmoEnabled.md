@@ -28,12 +28,12 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_AK47);
     NPC_EnableInfiniteAmmo(npcid, true);
-    
+
     if (NPC_IsInfiniteAmmoEnabled(npcid))
     {
         print("NPC has infinite ammo enabled");
     }
-    
+
     return 1;
 }
 
@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new bool:infiniteAmmo = NPC_IsInfiniteAmmoEnabled(0);
         new ammo = NPC_GetAmmo(0);
-        
+
         new msg[64];
         format(msg, sizeof(msg), "NPC 0: %d ammo, Infinite: %s", ammo, infiniteAmmo ? "Yes" : "No");
         SendClientMessage(playerid, 0xFFFFFFFF, msg);
@@ -69,4 +69,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires a weapon
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when NPC fires a weapon

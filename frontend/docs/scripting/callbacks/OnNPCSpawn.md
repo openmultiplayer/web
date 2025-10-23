@@ -19,12 +19,12 @@ This callback is called when an NPC spawns.
 public OnNPCSpawn(npcid)
 {
     printf("NPC %d spawned", npcid);
-    
+
     // Set initial properties
     NPC_SetHealth(npcid, 100.0);
     NPC_SetArmour(npcid, 0.0);
     NPC_SetWeapon(npcid, WEAPON_COLT45);
-    
+
     return true;
 }
 ```
@@ -38,10 +38,10 @@ public OnNPCSpawn(npcid)
 
 ## Related Functions
 
-- [NPC_Spawn](NPC_Spawn): Spawn an NPC in the game world
-- [NPC_Respawn](NPC_Respawn): Respawn a dead NPC
-- [NPC_SetHealth](NPC_SetHealth): Set NPC's health
-- [NPC_SetWeapon](NPC_SetWeapon): Set NPC's weapon
+- [NPC_Spawn](../functions/NPC_Spawn): Spawn an NPC in the game world
+- [NPC_Respawn](../functions/NPC_Respawn): Respawn a dead NPC
+- [NPC_SetHealth](../functions/NPC_SetHealth): Set NPC's health
+- [NPC_SetWeapon](../functions/NPC_SetWeapon): Set NPC's weapon
 
 ## Related Callbacks
 

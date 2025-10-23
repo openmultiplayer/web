@@ -11,12 +11,12 @@ tags: ["npc", "keys", "input"]
 
 Sets the key states for an NPC, simulating key presses.
 
-| Name         | Description                    |
-| ------------ | ------------------------------ |
-| npcid        | The ID of the NPC             |
-| upAndDown    | Up/down key state             |
-| leftAndRight | Left/right key state          |
-| keys         | The key combination to set     |
+| Name         | Description                |
+| ------------ | -------------------------- |
+| npcid        | The ID of the NPC          |
+| upAndDown    | Up/down key state          |
+| leftAndRight | Left/right key state       |
+| keys         | The key combination to set |
 
 ## Returns
 
@@ -29,13 +29,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Driver");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
     NPC_PutInVehicle(npcid, vehicleid, 0);
-    
+
     // Make NPC move forward
     NPC_SetKeys(npcid, KEY_UP, 0, 0);
-    
+
     return 1;
 }
 
@@ -68,4 +68,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

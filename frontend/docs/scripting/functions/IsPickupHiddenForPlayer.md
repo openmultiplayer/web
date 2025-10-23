@@ -12,7 +12,7 @@ tags: ["player", "pickup"]
 Checks if a pickup is hidden for a specific player.
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 | pickupid | The ID of the pickup. |
 

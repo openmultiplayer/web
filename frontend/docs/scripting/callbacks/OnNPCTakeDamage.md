@@ -11,13 +11,13 @@ tags: ["npc", "damage"]
 
 This callback is called when an NPC takes damage from a player or another NPC.
 
-| Name       | Description                                      |
-| ---------- | ------------------------------------------------ |
-| npcid      | The ID of the NPC that took damage              |
-| issuerid   | The ID of the player/NPC that caused the damage |
-| amount     | The amount of damage that was taken             |
-| weaponid   | The weapon ID used to cause the damage          |
-| bodypart   | The [body part](../resources/bodyparts) that was hit   |
+| Name     | Description                                          |
+| -------- | ---------------------------------------------------- |
+| npcid    | The ID of the NPC that took damage                   |
+| issuerid | The ID of the player/NPC that caused the damage      |
+| amount   | The amount of damage that was taken                  |
+| weaponid | The weapon ID used to cause the damage               |
+| bodypart | The [body part](../resources/bodyparts) that was hit |
 
 ## Returns
 
@@ -29,13 +29,13 @@ Return `false` to prevent the damage from being applied, or `true` to allow it.
 public OnNPCTakeDamage(npcid, issuerid, Float:amount, weaponid, bodypart)
 {
     printf("NPC %d took %.2f damage from %d", npcid, amount, issuerid);
-    
+
     // Make NPC aggressive when attacked
     if (issuerid != INVALID_PLAYER_ID && !IsPlayerNPC(issuerid))
     {
         NPC_AimAtPlayer(npcid, issuerid, true, 100, true);
     }
-    
+
     return true;
 }
 ```
@@ -51,10 +51,10 @@ public OnNPCTakeDamage(npcid, issuerid, Float:amount, weaponid, bodypart)
 
 The following functions might be useful, as they're related to this callback in one way or another.
 
-- [NPC_GetHealth](NPC_GetHealth): Get NPC's current health
-- [NPC_SetHealth](NPC_SetHealth): Set NPC's health
-- [NPC_GetArmour](NPC_GetArmour): Get NPC's armor
-- [NPC_SetArmour](NPC_SetArmour): Set NPC's armor
+- [NPC_GetHealth](../functions/NPC_GetHealth): Get NPC's current health
+- [NPC_SetHealth](../functions/NPC_SetHealth): Set NPC's health
+- [NPC_GetArmour](../functions/NPC_GetArmour): Get NPC's armor
+- [NPC_SetArmour](../functions/NPC_SetArmour): Set NPC's armor
 
 ## Related Callbacks
 

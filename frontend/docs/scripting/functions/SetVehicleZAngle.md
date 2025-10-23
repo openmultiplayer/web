@@ -30,11 +30,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new
             vehicleid,
             Float:angle;
-        
+
         vehicleid = GetPlayerVehicleID(playerid);
         GetVehicleZAngle(vehicleid, angle);
         SetVehicleZAngle(vehicleid, angle);
-        
+
         SendClientMessage(playerid, 0xFFFFFFFF, "Your vehicle has been flipped.");
         return 1;
     }

@@ -12,7 +12,7 @@ tags: ["player"]
 Gets a player's Z Aim. (related to the camera and aiming)
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Returns

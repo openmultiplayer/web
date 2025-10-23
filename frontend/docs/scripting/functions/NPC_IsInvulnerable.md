@@ -26,7 +26,7 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("TestBot");
     NPC_Spawn(npcid);
-    
+
     // Check initial invulnerability status
     if (NPC_IsInvulnerable(npcid))
     {
@@ -36,7 +36,7 @@ public OnGameModeInit()
     {
         printf("NPC %d can take damage", npcid);
     }
-    
+
     return 1;
 }
 
@@ -57,14 +57,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
     return 0;
             new Float:armour = NPC_GetArmour(npcs[i]);
             new bool:invulnerable = NPC_IsInvulnerable(npcs[i]);
-            
+
             new status[64];
-            format(status, sizeof(status), "NPC %d: HP:%.1f ARM:%.1f %s", 
+            format(status, sizeof(status), "NPC %d: HP:%.1f ARM:%.1f %s",
                    npcs[i], health, armour, invulnerable ? "[INVULNERABLE]" : "[VULNERABLE]");
-            
+
             SendClientMessage(playerid, 0xCCCCCCFF, status);
         }
-        
+
         return 1;
     }
     return 0;
@@ -75,16 +75,16 @@ stock bool:CanDamageNPC(npcid)
 {
     if (!NPC_IsValid(npcid))
         return false;
-        
+
     if (NPC_IsDead(npcid))
         return false;
-        
+
     if (NPC_IsInvulnerable(npcid))
     {
         printf("Cannot damage NPC %d - invulnerable", npcid);
         return false;
     }
-    
+
     return true;
 }
 
@@ -94,12 +94,12 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
     if (hittype == BULLET_HIT_TYPE_PLAYER)
     {
         new npcid = hitid; // Assuming hitid is NPC ID
-        
+
         if (NPC_IsValid(npcid) && NPC_IsInvulnerable(npcid))
         {
             // Show immunity effect
             SendClientMessage(playerid, 0xFF0000FF, "Target is immune to damage!");
-            
+
             // Play immunity sound or effect here
             PlayerPlaySound(playerid, 1130, 0.0, 0.0, 0.0);
             return 0; // Block damage
@@ -125,5 +125,5 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
 
 ## Related Callbacks
 
-- [OnNPCTakeDamage](OnNPCTakeDamage): Called when NPC takes damage (not called for invulnerable NPCs)
-- [OnNPCDeath](OnNPCDeath): Called when NPC dies (invulnerable NPCs cannot die)
+- [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): Called when NPC takes damage (not called for invulnerable NPCs)
+- [OnNPCDeath](../callbacks/OnNPCDeath): Called when NPC dies (invulnerable NPCs cannot die)

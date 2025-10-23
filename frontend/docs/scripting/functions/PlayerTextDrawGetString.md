@@ -31,7 +31,7 @@ public OnPlayerConnect(playerid)
 {
 	welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Hello World!");
 	PlayerTextDrawShow(playerid, welcomeText[playerid]);
-	
+
 	new string[16];
 	PlayerTextDrawGetString(playerid, welcomeText[playerid], string, sizeof(string));
 	// string = "Hello World!"

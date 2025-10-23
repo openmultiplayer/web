@@ -11,10 +11,10 @@ tags: ["npc", "vehicle"]
 
 Puts an NPC into a vehicle at a specific seat.
 
-| Name      | Description                          |
-| --------- | ------------------------------------ |
-| npcid     | The ID of the NPC                   |
-| vehicleid | The ID of the vehicle               |
+| Name      | Description                   |
+| --------- | ----------------------------- |
+| npcid     | The ID of the NPC             |
+| vehicleid | The ID of the vehicle         |
 | seatid    | The seat ID to put the NPC in |
 
 ## Returns
@@ -28,14 +28,14 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Driver");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
-    
+
     if (NPC_PutInVehicle(npcid, vehicleid, 0)) // Driver seat
     {
         printf("NPC %d is now driving vehicle %d", npcid, vehicleid);
     }
-    
+
     return 1;
 }
 
@@ -45,11 +45,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
-        
+
         new vehicleid = CreateVehicle(411, x + 5.0, y, z, 0.0, -1, -1, -1);
         new npcid = NPC_Create("Passenger");
         NPC_Spawn(npcid);
-        
+
         if (NPC_PutInVehicle(npcid, vehicleid, 1)) // Passenger seat
         {
             SendClientMessage(playerid, 0x00FF00FF, "NPC passenger created!");
@@ -86,4 +86,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

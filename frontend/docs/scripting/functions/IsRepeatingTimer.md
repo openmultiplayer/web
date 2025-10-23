@@ -14,7 +14,7 @@ Checks if a timer is set to repeat.
 ## Parameters
 
 | Name    | Description                   |
-|---------|-------------------------------|
+| ------- | ----------------------------- |
 | timerid | The ID of the timer to check. |
 
 ## Return Values

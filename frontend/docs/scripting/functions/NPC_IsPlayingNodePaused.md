@@ -11,9 +11,9 @@ tags: ["npc", "node"]
 
 Checks if an NPC's node playing is currently paused.
 
-| Name  | Description           |
-| ----- | --------------------- |
-| npcid | The ID of the NPC     |
+| Name  | Description       |
+| ----- | ----------------- |
+| npcid | The ID of the NPC |
 
 ## Returns
 
@@ -26,15 +26,15 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("NodeBot");
     NPC_Spawn(npcid);
-    
+
     if (NPC_OpenNode(1))
     {
         NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-        
+
         // Pause after 10 seconds
         SetTimerEx("PauseNode", 10000, false, "i", npcid);
     }
-    
+
     return 1;
 }
 
@@ -42,7 +42,7 @@ forward PauseNode(npcid);
 public PauseNode(npcid)
 {
     NPC_PausePlayingNode(npcid);
-    
+
     if (NPC_IsPlayingNodePaused(npcid))
     {
         printf("NPC %d node playing is now paused", npcid);
@@ -56,7 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (NPC_IsPlayingNode(0))
         {
             new bool:paused = NPC_IsPlayingNodePaused(0);
-            
+
             new msg[64];
             format(msg, sizeof(msg), "NPC 0 node is %s", paused ? "paused" : "playing");
             SendClientMessage(playerid, 0xFFFFFFFF, msg);
@@ -87,4 +87,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCFinishNode](OnNPCFinishNode): Called when an NPC finishes a node
+- [OnNPCFinishNode](../callbacks/OnNPCFinishNode): Called when an NPC finishes a node

@@ -11,8 +11,8 @@ tags: ["npc", "weapon", "aiming"]
 
 Checks if an NPC is aiming at a specific player.
 
-| Name     | Description                    |
-| -------- | ------------------------------ |
+| Name     | Description                   |
+| -------- | ----------------------------- |
 | npcid    | The ID of the NPC             |
 | playerid | The ID of the player to check |
 
@@ -29,9 +29,9 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_M4);
     NPC_SetAmmo(npcid, 300);
-    
+
     printf("Bodyguard NPC %d created and armed", npcid);
-    
+
     return 1;
 }
 
@@ -39,11 +39,11 @@ public OnPlayerConnect(playerid)
 {
     // Make NPC aim at new player
     NPC_AimAtPlayer(0, playerid, false, 0, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
-    
+
     new msg[64];
     format(msg, sizeof(msg), "Bodyguard is now watching player %d", playerid);
     print(msg);
-    
+
     return 1;
 }
 
@@ -54,11 +54,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (NPC_IsAimingAtPlayer(0, playerid))
         {
             SendClientMessage(playerid, 0xFF0000FF, "WARNING: NPC 0 is aiming at you!");
-            
+
             // Show weapon info
             new weapon = NPC_GetWeapon(0);
             new ammo = NPC_GetAmmo(0);
-            
+
             new msg[128];
             format(msg, sizeof(msg), "NPC weapon: %d, Ammo: %d", weapon, ammo);
             SendClientMessage(playerid, 0xFFFF00FF, msg);
@@ -69,7 +69,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/stoptargeting", true))
     {
         // Stop NPC from aiming
@@ -77,7 +77,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0x00FF00FF, "NPC 0 stopped aiming");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/hostile", true))
     {
         // Make NPC hostile towards player
@@ -105,4 +105,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires weapon
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when NPC fires weapon

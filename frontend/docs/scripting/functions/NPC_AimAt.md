@@ -11,19 +11,19 @@ tags: ["npc", "weapon", "aiming"]
 
 Makes an NPC aim at a specific position.
 
-| Name                 | Description                                      |
-| -------------------- | ------------------------------------------------ |
-| npcid                | The ID of the NPC                               |
-| Float:pointX         | The X coordinate to aim at                      |
-| Float:pointY         | The Y coordinate to aim at                      |
-| Float:pointZ         | The Z coordinate to aim at                      |
-| bool:shoot           | Whether to shoot while aiming                   |
-| shootDelay           | Delay between shots in milliseconds             |
-| bool:updateAngle     | Whether to update the NPC's facing angle       |
-| Float:offsetFromX    | The X offset from the NPC's shooting position  |
-| Float:offsetFromY    | The Y offset from the NPC's shooting position  |
-| Float:offsetFromZ    | The Z offset from the NPC's shooting position  |
-| checkInBetweenFlags  | Entity check flags for collision detection     |
+| Name                | Description                                   |
+| ------------------- | --------------------------------------------- |
+| npcid               | The ID of the NPC                             |
+| Float:pointX        | The X coordinate to aim at                    |
+| Float:pointY        | The Y coordinate to aim at                    |
+| Float:pointZ        | The Z coordinate to aim at                    |
+| bool:shoot          | Whether to shoot while aiming                 |
+| shootDelay          | Delay between shots in milliseconds           |
+| bool:updateAngle    | Whether to update the NPC's facing angle      |
+| Float:offsetFromX   | The X offset from the NPC's shooting position |
+| Float:offsetFromY   | The Y offset from the NPC's shooting position |
+| Float:offsetFromZ   | The Z offset from the NPC's shooting position |
+| checkInBetweenFlags | Entity check flags for collision detection    |
 
 ## Returns
 
@@ -38,10 +38,10 @@ public OnGameModeInit()
     NPC_Spawn(npcid);
     NPC_SetWeapon(npcid, WEAPON_SNIPER); // Sniper rifle
     NPC_SetAmmo(npcid, 100); // Give 100 ammo
-    
+
     // Make NPC aim and shoot at a building
     NPC_AimAt(npcid, 1958.33, 1343.12, 15.36, true, 500, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_ALL);
-    
+
     return 1;
 }
 
@@ -51,10 +51,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
-        
+
         // Make NPC aim at player position (without shooting)
         NPC_AimAt(0, x, y, z, false, 0, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_NONE);
-        
+
         SendClientMessage(playerid, 0x00FF00FF, "NPC is now aiming at your position");
         return 1;
     }
@@ -78,4 +78,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires a weapon
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when NPC fires a weapon

@@ -14,7 +14,7 @@ Set an argument that was passed to a function.
 | Name  | Description                                                 |
 | ----- | ----------------------------------------------------------- |
 | arg   | The argument sequence number. Use 0 for the first argument. |
-| index | The index (if the argument is an array) *(optional=0)*      |
+| index | The index (if the argument is an array) _(optional=0)_      |
 | value | The value to set the argument to.                           |
 
 ## Returns

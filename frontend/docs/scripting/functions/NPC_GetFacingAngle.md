@@ -11,10 +11,10 @@ tags: ["npc", "angle"]
 
 Gets the facing angle of an NPC.
 
-| Name          | Description                                              |
-| ------------- | -------------------------------------------------------- |
-| npcid         | The ID of the NPC.                                       |
-| &Float:angle  | Variable to store the facing angle, passed by reference. |
+| Name         | Description                                              |
+| ------------ | -------------------------------------------------------- |
+| npcid        | The ID of the NPC.                                       |
+| &Float:angle | Variable to store the facing angle, passed by reference. |
 
 ## Returns
 
@@ -27,13 +27,13 @@ public OnGameModeInit()
 {
     new const npcid = NPC_Create("Bot");
     NPC_Spawn(npcid);
-    
+
     NPC_SetFacingAngle(npcid, 90.0);
-    
+
     new Float:angle;
     NPC_GetFacingAngle(npcid, angle);
     printf("NPC %d is facing angle %.2f", npcid, angle); // Output: 90.00
-    
+
     return 1;
 }
 
@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new Float:angle;
         NPC_GetFacingAngle(0, angle);
-        
+
         SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0 angle: %.2f degrees", angle);
         return 1;
     }
@@ -71,4 +71,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns.
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns.

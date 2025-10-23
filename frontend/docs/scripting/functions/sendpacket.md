@@ -21,7 +21,7 @@ Sends a packet.
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | const packet[]           | The buffer that contains the packet to send.                                                                                                                                                |
 | size                     | Buffer size.                                                                                                                                                                                |
-| const destination[] = "" | The IP address and port number to which the packet must be sent. If absent or an empty string, this function will broadcast the packet and use the default port number 9930 *(optional="")* |
+| const destination[] = "" | The IP address and port number to which the packet must be sent. If absent or an empty string, this function will broadcast the packet and use the default port number 9930 _(optional="")_ |
 
 ## Return Values
 

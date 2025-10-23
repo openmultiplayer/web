@@ -25,20 +25,20 @@ Returns `true` if the NPC was spawned successfully, `false` otherwise.
 public OnGameModeInit()
 {
     new const npcid = NPC_Create("Guard");
-    
+
     if (NPC_IsValid(npcid))
     {
         NPC_Spawn(npcid);
         printf("NPC %d spawned successfully", npcid);
     }
-    
+
     return 1;
 }
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/spawnnpc", true))
-    {        
+    {
         new const npcid = NPC_Create("Bot");
         if (NPC_IsValid(npcid))
         {
@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
             NPC_Spawn(npcid);
             NPC_SetPos(npcid, x + 3.0, y, z);
-            
+
             SendClientMessage(playerid, 0x00FF00FF, "NPC spawned near you!");
         }
         return 1;
@@ -76,5 +76,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCSpawn](OnNPCSpawn): Called when NPC spawns.
-- [OnNPCCreate](OnNPCCreate): Called when NPC is created.
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): Called when NPC spawns.
+- [OnNPCCreate](../callbacks/OnNPCCreate): Called when NPC is created.

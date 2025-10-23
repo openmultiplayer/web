@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 Get the colour of a player gangzone.
 
-| Name        | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom player gangzone is bound.           |
-| zoneid      | The ID of the player gangzone.                                   |
+| Name     | Description                                            |
+| -------- | ------------------------------------------------------ |
+| playerid | The ID of the player to whom player gangzone is bound. |
+| zoneid   | The ID of the player gangzone.                         |
 
 ## Returns
 

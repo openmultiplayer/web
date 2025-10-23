@@ -26,13 +26,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Driver");
     NPC_Spawn(npcid);
-    
+
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300); // Infernus
     NPC_PutInVehicle(npcid, vehicleid, 0);
-    
+
     new currentVehicle = NPC_GetVehicle(npcid);
     printf("NPC %d is in vehicle %d", npcid, currentVehicle);
-    
+
     return 1;
 }
 
@@ -70,4 +70,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-*No specific callbacks are triggered by this function.*
+_No specific callbacks are triggered by this function._

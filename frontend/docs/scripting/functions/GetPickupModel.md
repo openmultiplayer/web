@@ -12,7 +12,7 @@ tags: ["pickup"]
 Gets the model ID of a pickup.
 
 | Name     | Description                                  |
-|----------|----------------------------------------------|
+| -------- | -------------------------------------------- |
 | pickupid | The ID of the pickup to get the model ID of. |
 
 ## Returns

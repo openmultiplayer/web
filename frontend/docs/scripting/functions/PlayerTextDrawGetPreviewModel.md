@@ -12,7 +12,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 Gets the preview model of a 3D preview player-textdraw.
 
 | Name              | Description                                                |
-|-------------------|------------------------------------------------------------|
+| ----------------- | ---------------------------------------------------------- |
 | playerid          | The ID of the player.                                      |
 | PlayerText:textid | The ID of the player-textdraw to get the preview model of. |
 

@@ -13,9 +13,9 @@ Makes an NPC perform a melee attack for a specified duration.
 
 | Name            | Description                                      |
 | --------------- | ------------------------------------------------ |
-| npcid           | The ID of the NPC                               |
+| npcid           | The ID of the NPC                                |
 | time            | The duration of the attack                       |
-| secondaryAttack | Whether to use secondary attack (default: false)|
+| secondaryAttack | Whether to use secondary attack (default: false) |
 
 ## Returns
 
@@ -29,10 +29,10 @@ public OnGameModeInit()
     new npcid = NPC_Create("CombatTrainer");
     NPC_Spawn(npcid);
     NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-    
+
     // Set up combat training routine
     SetTimer("CombatTraining", 5000, true);
-    
+
     return 1;
 }
 
@@ -44,8 +44,8 @@ public CombatTraining()
         // Alternate between primary and secondary attacks
         new bool:useSecondary = (gettime() % 2 == 0);
         NPC_MeleeAttack(0, 1200, useSecondary);
-        
-        printf("NPC 0 performing %s melee attack", 
+
+        printf("NPC 0 performing %s melee attack",
             useSecondary ? "secondary" : "primary");
     }
 }
@@ -59,19 +59,19 @@ public OnPlayerCommandText(playerid, cmdtext[])
         SendClientMessage(playerid, 0xFF0000FF, "NPC 0 throws a punch!");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/combo", true))
     {
         // Execute a combo attack sequence
         NPC_MeleeAttack(0, 500, false);  // Quick jab
-        
+
         SetTimerEx("ComboStep2", 600, false, "i", playerid);
         SetTimerEx("ComboStep3", 1300, false, "i", playerid);
-        
+
         SendClientMessage(playerid, 0xFF0000FF, "NPC 0 executing combo attack!");
         return 1;
     }
-    
+
     if (!strcmp(cmdtext, "/spar", true))
     {
         // Start sparring mode with different fighting styles
@@ -81,11 +81,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
             FIGHT_STYLE_KNEEHEAD,
             FIGHT_STYLE_GRABKICK
         };
-        
+
         new randomStyle = styles[random(sizeof(styles))];
         NPC_SetFightingStyle(0, randomStyle);
         NPC_MeleeAttack(0, 2000, true);  // Long secondary attack
-        
+
         new msg[64];
         format(msg, sizeof(msg), "NPC 0 sparring with fighting style %d", randomStyle);
         SendClientMessage(playerid, 0xFFFF00FF, msg);
@@ -125,4 +125,4 @@ public ComboStep3(playerid)
 
 ## Related Callbacks
 
-- [OnNPCGiveDamage](OnNPCGiveDamage): Called when NPC damages player
+- [OnNPCGiveDamage](../callbacks/OnNPCGiveDamage): Called when NPC damages player

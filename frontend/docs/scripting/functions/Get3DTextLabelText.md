@@ -25,7 +25,7 @@ new Text3D:gMyLabel;
 public OnGameModeInit()
 {
     gMyLabel = Create3DTextLabel("Hello World!", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0, false);
-    
+
     new text[16];
     Get3DTextLabelText(gMyLabel, text, sizeof(text));
     // The `text` will be 'Hello World!'

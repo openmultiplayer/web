@@ -26,13 +26,13 @@ public OnGameModeInit()
 {
     new npcid = NPC_Create("Soldier");
     NPC_Spawn(npcid);
-    
+
     NPC_SetWeapon(npcid, WEAPON_AK47);
     NPC_SetAmmo(npcid, 150); // Give 150 ammo
-    
+
     new ammo = NPC_GetAmmo(npcid);
     printf("NPC %d has %d ammo", npcid, ammo); // Output: 150
-    
+
     return 1;
 }
 
@@ -66,4 +66,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Callbacks
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): Called when NPC fires a weapon
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): Called when NPC fires a weapon
