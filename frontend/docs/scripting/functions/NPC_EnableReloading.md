@@ -23,35 +23,18 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("GuardBot");
-    NPC_Spawn(npcid);
-
-    // Give the NPC a weapon
-    NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 500);
-
-    // Enable automatic reloading
-    NPC_EnableReloading(npcid, true);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/togglereload", true))
     {
-        new npcid = 0; // Assume first NPC
-        if (NPC_IsValid(npcid))
-        {
-            new bool:reloadEnabled = NPC_IsReloadEnabled(npcid);
-            NPC_EnableReloading(npcid, !reloadEnabled);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
 
-            new msg[64];
-            format(msg, sizeof(msg), "NPC reloading: %s", !reloadEnabled ? "Enabled" : "Disabled");
-            SendClientMessage(playerid, 0x00FF00FF, msg);
-        }
+        new bool:reload = NPC_IsReloadEnabled(npcid);
+        NPC_EnableReloading(npcid, !reload);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d reloading: %s", npcid, !reload ? "Enabled" : "Disabled");
+        
         return 1;
     }
     return 0;
@@ -63,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - When enabled, the NPC will automatically reload when its clip is empty
 - When disabled, the NPC will not reload and will eventually run out of ammo in clip
 - The reload time can be customized with `NPC_SetWeaponReloadTime`
-- This setting affects the realism of NPC combat behavior
 
 ## Related Functions
 

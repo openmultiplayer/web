@@ -33,40 +33,27 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Guard");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 300); // Give 300 ammo
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
-{
+{  
     if (!strcmp(cmdtext, "/hostile", true))
     {
-        // Make NPC aim and shoot at player
-        NPC_AimAtPlayer(0, playerid, true, 800, true, 0.0, 0.0, 0.8, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
 
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 is now hostile towards you!");
+        NPC_AimAtPlayer(npcid, playerid, true, 800, true, 0.0, 0.0, 0.8, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
+        SendClientMessage(playerid, 0xFF0000FF, "NPC %d is now hostile towards you!", npcid);
         return 1;
     }
 
     if (!strcmp(cmdtext, "/guard", true))
     {
-        // Peaceful tracking mode
-        NPC_AimAtPlayer(0, playerid, false, 0, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is now guarding you");
-        return 1;
-    }
-
-    if (!strcmp(cmdtext, "/ceasefire", true))
-    {
-        NPC_StopAim(0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 stopped aiming");
+        NPC_AimAtPlayer(npcid, playerid, false, 0, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is now guarding you.", npcid);
         return 1;
     }
     return 0;
@@ -76,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - The NPC will continuously track the player's movement while aiming
-- If the target player disconnects or becomes invalid, the NPC will stop aiming
+- If the target player disconnects or becomes invalid, the NPC will stop aiming/shooting
 - Target offset parameters allow aiming at specific body parts (head, torso, etc.)
 - The NPC automatically updates its aim as the player moves
 - Use `NPC_IsAimingAtPlayer` to check if NPC is aiming at a specific player

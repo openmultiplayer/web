@@ -22,15 +22,37 @@ Returns the ID of the created NPC, or `INVALID_NPC_ID` on failure.
 ## Examples
 
 ```c
-public OnGameModeInit()
+new g_NPCCount = 0,
+    PlayerNPC[MAX_PLAYERS] = {INVALID_NPC_ID, ...};
+    
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new const npcid = NPC_Create("MyBot");
-    if (npcid != INVALID_NPC_ID)
+    if (!strcmp(cmdtext, "/spawnnpc", true))
     {
-        printf("NPC created with ID: %d", npcid);
-        NPC_Spawn(npcid);
+        new name[24];
+        format(name, sizeof name, "Bot_%d", g_NPCCount++);
+
+        new npcid = NPC_Create(name);
+        if (NPC_IsValid(npcid))
+        {
+            new Float:x, Float:y, Float:z;
+            GetPlayerPos(playerid, x, y, z);
+
+            NPC_Spawn(npcid);
+            NPC_SetPos(npcid, x + 3.0, y, z);
+            NPC_SetWeapon(npcid, WEAPON_M4);
+            NPC_SetAmmo(npcid, 300); // Give 300 ammo
+
+            PlayerNPC[playerid] = npcid;
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %s (ID %d) spawned near you!", name, npcid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to create NPC!");
+        }
+        return 1;
     }
-    return 1;
+    return 0;
 }
 ```
 

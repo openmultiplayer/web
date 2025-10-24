@@ -30,25 +30,25 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("AnimationBot");
-    NPC_Spawn(npcid);
+    if (!strcmp(cmdtext, "/dance", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
 
-    // Apply a dance animation
-    NPC_ApplyAnimation(npcid, "DANCING", "DAN_Loop_A", 4.1, true, false, false, false, 0);
-
-    // Apply a smoking animation for 5 seconds
-    NPC_ApplyAnimation(npcid, "SMOKING", "M_smklean_loop", 4.1, true, false, false, false, 5000);
-
-    return 1;
+        NPC_ApplyAnimation(npcid, "DANCING", "dance_loop", 4.1, true, false, false, false, 0);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is now animating.", npcid);
+        return 1;
+    }
+    return 0;
 }
 ```
 
 ## Notes
 
-- The animation library and name must exist in GTA San Andreas
-- Use `time` parameter to set animation duration (0 = infinite)
+- Use `time` parameter to set animation duration
 - Lock parameters prevent movement on specific axes during animation
 - Use `NPC_ClearAnimations` to stop all animations
 - Delta typically ranges from 1.0 to 10.0 (4.1 is standard)

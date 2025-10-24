@@ -22,24 +22,16 @@ Returns `true` if the NPC was spawned successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Guard");
-
-    if (NPC_IsValid(npcid))
-    {
-        NPC_Spawn(npcid);
-        printf("NPC %d spawned successfully", npcid);
-    }
-
-    return 1;
-}
+new g_NPCCount = 0;
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/spawnnpc", true))
     {
-        new const npcid = NPC_Create("Bot");
+        new name[24];
+        format(name, sizeof(name), "Bot_%d", g_NPCCount++);
+
+        new npcid = NPC_Create(name);
         if (NPC_IsValid(npcid))
         {
             new Float:x, Float:y, Float:z;
@@ -48,7 +40,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
             NPC_Spawn(npcid);
             NPC_SetPos(npcid, x + 3.0, y, z);
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC spawned near you!");
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %s spawned near you!", name);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to create NPC!");
         }
         return 1;
     }
@@ -63,7 +59,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - The NPC must be created with [NPC_Create](NPC_Create) before spawning.
 - Spawning makes the NPC visible and active in the game world.
 - NPCs spawn at their default position until moved with [NPC_SetPos](NPC_SetPos).
-- You can only spawn valid NPCs (check with [NPC_IsValid](NPC_IsValid)).
 
 :::
 

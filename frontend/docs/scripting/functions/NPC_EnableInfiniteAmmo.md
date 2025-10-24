@@ -23,34 +23,18 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("ShooterBot");
-    NPC_Spawn(npcid);
-
-    // Give the NPC a weapon
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetAmmo(npcid, 100); // Give 100 ammo
-    // Enable infinite ammo so it never runs out
-    NPC_EnableInfiniteAmmo(npcid, true);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/togglenpcammo", true))
+    if (!strcmp(cmdtext, "/toggleinfiniteammo", true))
     {
-        new npcid = 0; // Assume first NPC
-        if (NPC_IsValid(npcid))
-        {
-            new bool:infinite = NPC_IsInfiniteAmmoEnabled(npcid);
-            NPC_EnableInfiniteAmmo(npcid, !infinite);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
 
-            new msg[64];
-            format(msg, sizeof(msg), "NPC infinite ammo: %s", !infinite ? "Enabled" : "Disabled");
-            SendClientMessage(playerid, 0x00FF00FF, msg);
-        }
+        new bool:infinite = NPC_IsInfiniteAmmoEnabled(npcid);
+        NPC_EnableInfiniteAmmo(npcid, !infinite);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d infinite ammo: %s", npcid, !infinite ? "Enabled" : "Disabled");
+        
         return 1;
     }
     return 0;
@@ -62,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - When enabled, the NPC will never run out of ammunition
 - This affects all weapons the NPC uses
 - The ammo count display may still decrease but weapon functionality remains
-- Useful for security NPCs or continuous combat scenarios
 
 ## Related Functions
 

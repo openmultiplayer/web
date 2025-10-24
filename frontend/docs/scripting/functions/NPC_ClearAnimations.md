@@ -22,33 +22,38 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("AnimBot");
-    NPC_Spawn(npcid);
+    if (!strcmp(cmdtext, "/dance", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
 
-    // Apply some animations
-    NPC_ApplyAnimation(npcid, "DANCING", "DAN_Loop_A", 4.1, true, false, false, false, 0);
-
-    // After 10 seconds, clear all animations
-    SetTimerEx("ClearNPCAnimations", 10000, false, "i", npcid);
-
-    return 1;
+        NPC_ApplyAnimation(npcid, "DANCING", "dance_loop", 4.1, true, false, false, false, 0);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is now animating.", npcid);
+        
+        SetTimerEx("ClearNPCAnimations", 10000, false, "ii", playerid, npcid);
+        
+        return 1;
+    }
+    return 0;
 }
 
-forward ClearNPCAnimations(npcid);
-public ClearNPCAnimations(npcid)
+forward ClearNPCAnimations(playerid, npcid);
+public ClearNPCAnimations(playerid, npcid)
 {
+    
     NPC_ClearAnimations(npcid);
+    SendClientMessage(playerid, 0x00FF00FF, "NPC %d animations were cleared.", npcid);
 }
+
 ```
 
 ## Notes
 
-- This function stops all currently playing animations
+- This function stops all currently playing animations including looping ones
 - The NPC will return to its default idle stance
-- Any looping animations will be interrupted
-- This is useful for resetting NPC appearance before applying new animations
 
 ## Related Functions
 

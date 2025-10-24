@@ -9,7 +9,7 @@ tags: ["npc", "weapon", "aiming"]
 
 ## Description
 
-Makes an NPC aim at a specific position.
+Makes an NPC aim at specified coordinates.
 
 | Name                | Description                                   |
 | ------------------- | --------------------------------------------- |
@@ -32,30 +32,33 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Sniper");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_SNIPER); // Sniper rifle
-    NPC_SetAmmo(npcid, 100); // Give 100 ammo
-
-    // Make NPC aim and shoot at a building
-    NPC_AimAt(npcid, 1958.33, 1343.12, 15.36, true, 500, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_ALL);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcaim", true))
+    if (!strcmp(cmdtext, "/aim", true))
     {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
 
-        // Make NPC aim at player position (without shooting)
-        NPC_AimAt(0, x, y, z, false, 0, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_NONE);
+        NPC_AimAt(npcid, x, y, z, false, 0, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_NONE);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is now aiming at your position.", npcid);
+        return 1;
+    }
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC is now aiming at your position");
+    if (!strcmp(cmdtext, "/aimfire", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+
+        new Float:x, Float:y, Float:z;
+        GetPlayerPos(playerid, x, y, z);
+
+        NPC_AimAt(npcid, x, y, z, true, 800, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_NONE);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is now firing at your position.", npcid);
         return 1;
     }
     return 0;
