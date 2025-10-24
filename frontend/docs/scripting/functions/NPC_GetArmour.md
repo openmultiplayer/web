@@ -22,27 +22,20 @@ Returns the NPC's armour as a float value (0.0 to 100.0).
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Guard");
-    NPC_Spawn(npcid);
-
-    NPC_SetArmour(npcid, 75.5);
-
-    new Float:armour = NPC_GetArmour(npcid);
-    printf("NPC %d has %.1f armour", npcid, armour); // Output: 75.5
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkarmour", true))
     {
-        new Float:armour = NPC_GetArmour(0);
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 armour: %.1f", armour);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new Float:armour = NPC_GetArmour(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d has %.1f% armour", npcid, armour);
         return 1;
     }
     return 0;
