@@ -52,9 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Armour values range from 0.0 to 100.0
-- Armour provides protection against damage
-- When armour is depleted, damage affects health directly
-- NPCs start with 0.0 armour by default
+- NPCs start with 0.0 armour by default, use [NPC_SetArmour](NPC_SetArmour) to define a higher value
 
 ## Related Functions
 

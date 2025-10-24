@@ -22,41 +22,30 @@ Returns the amount of ammunition in the NPC's current weapon clip.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-
-    NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 300); // Give 300 ammo
-    NPC_SetAmmoInClip(npcid, 50); // Set 50 ammo in clip
-
-    new clipAmmo = NPC_GetAmmoInClip(npcid);
-    new totalAmmo = NPC_GetAmmo(npcid);
-
-    printf("NPC %d: %d in clip, %d total", npcid, clipAmmo, totalAmmo);
-
-    return 1;
-}
-
-forward CheckNPCAmmo();
-public CheckNPCAmmo()
-{
-    new clipAmmo = NPC_GetAmmoInClip(0);
-
-    if (clipAmmo <= 5)
+    if (!strcmp(cmdtext, "/checkclip", true))
     {
-        printf("NPC 0 has low clip ammo: %d", clipAmmo);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new clip = NPC_GetAmmoInClip(npcid);
+
+        SendClientMessage(playerid, 0xFFFFFFFF, "NPC %d has %d bullets remaining on the clip", npcid, clip);
+        return 1;
     }
+    return 0;
 }
 ```
 
 ## Notes
 
-- Returns ammunition currently loaded in the weapon's magazine/clip
-- This is different from total ammunition which includes reserves
-- When the clip is empty, the NPC will need to reload (if enabled)
-- Different weapons have different clip sizes
+- Returns the amount of ammunition currently loaded in the weapon's magazine (clip), unlike [NPC_GetAmmo](NPC_GetAmmo), which returns the total ammo the NPC holds.
+- Clip size varies depending on the weapon type.
 
 ## Related Functions
 

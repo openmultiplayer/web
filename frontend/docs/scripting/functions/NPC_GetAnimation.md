@@ -31,45 +31,33 @@ Returns `true` if the operation was successful, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcaniminfo", true))
+    if (!strcmp(cmdtext, "/getanim", true))
     {
-        new npcid = 0; // First NPC
-        if (NPC_IsValid(npcid))
-        {
-            new animId, Float:delta, bool:loop, bool:lockX, bool:lockY, bool:freeze, time;
-            NPC_GetAnimation(npcid, animId, delta, loop, lockX, lockY, freeze, time);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
 
-            new msg[256];
-            format(msg, sizeof(msg),
-                "NPC %d Animation - ID: %d, Delta: %.2f, Loop: %d, LockX: %d, LockY: %d, Freeze: %d, Time: %d",
-                npcid, animId, delta, loop, lockX, lockY, freeze, time);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
+        new animid, time;
+        new Float:delta;
+        new bool:loop, bool:lockX, bool:lockY, bool:freeze;
+
+        if (!NPC_GetAnimation(npcid, animid, delta, loop, lockX, lockY, freeze, time))
+            return SendClientMessage(playerid, 0xFF0000FF, "Failed to get animation data (maybe no active animation).");
+
+        SendClientMessage(playerid, 0xFFFFFFFF, "NPC %d animID: %d | delta: %.2f | loop: %d | lockX: %d | lockY: %d | freeze: %d | time: %d",
+            npcid, animid, delta, _:loop, _:lockX, _:lockY, _:freeze, time);
+
         return 1;
     }
     return 0;
-}
-
-forward CheckNPCAnimations();
-public CheckNPCAnimations()
-{
-    new animId, Float:delta, bool:loop, bool:lockX, bool:lockY, bool:freeze, time;
-    NPC_GetAnimation(0, animId, delta, loop, lockX, lockY, freeze, time);
-
-    if (animId != 0)
-    {
-        printf("NPC 0 is playing animation %d", animId);
-    }
 }
 ```
 
 ## Notes
 
+- This won't return data if used with [NPC_SetAnimation](NPC_SetAnimation)
 - All parameters except npcid are passed by reference and will be modified
 - If the NPC has no active animation, animationId will be 0
-- Delta represents the animation speed multiplier
-- Lock parameters indicate movement restrictions during animation
-- Time indicates duration (0 = infinite)
 
 ## Related Functions
 

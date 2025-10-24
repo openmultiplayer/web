@@ -22,28 +22,20 @@ Returns the amount of ammunition the NPC has for its current weapon.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Soldier");
-    NPC_Spawn(npcid);
-
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetAmmo(npcid, 150); // Give 150 ammo
-
-    new ammo = NPC_GetAmmo(npcid);
-    printf("NPC %d has %d ammo", npcid, ammo); // Output: 150
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkammo", true))
     {
-        new ammo = NPC_GetAmmo(0);
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 ammo: %d", ammo);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new ammo = NPC_GetAmmo(npcid);
+
+        SendClientMessage(playerid, 0xFFFFFFFF, "NPC %d has %d bullets remaining on total ammo", npcid, ammo);
         return 1;
     }
     return 0;
@@ -52,10 +44,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Returns the total ammunition count, not just the clip
-- If the NPC has no weapon, this may return 0
-- Infinite ammo NPCs may still show the original ammo count
-- This includes ammunition in reserve, not just in the current clip
+- Returns the total ammunition count
+- If the NPC has no weapon, this returns 0
+- Infinite ammo NPCs still show the original ammo count
 
 ## Related Functions
 
