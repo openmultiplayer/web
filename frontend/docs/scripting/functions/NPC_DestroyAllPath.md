@@ -18,33 +18,31 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid, cmdtext[])
-{
-    if (!strcmp(cmdtext, "/destroyallpaths", true))
-    {
-        NPC_DestroyAllPath();
-        SendClientMessage(playerid, 0x00FF00FF, "All NPC paths have been destroyed.");
-        printf("Total paths after destruction: %d", NPC_GetPathCount());
-        return 1;
-    }
-    return 0;
-}
-
 public OnGameModeExit()
 {
-    // Clean up all paths on server shutdown
-    NPC_DestroyAllPath();
+    // Get number of paths before clearing
+    new total = NPC_GetPathCount();
+
+    // Try to destroy them all
+    if (NPC_DestroyAllPath())
+    {
+        printf("[NPC] Destroyed all NPC paths (%d removed).", total);
+    }
+    else
+    {
+        printf("[NPC] Failed to destroy NPC paths.");
+    }
+
     return 1;
 }
+
 ```
 
 ## Notes
 
-- This function destroys ALL paths on the server
-- NPCs currently following paths will stop moving
+- This function destroys ALL paths on the server and NPCs currently following paths will stop moving
 - All path IDs become invalid after this function is called
-- Use with caution as this affects all NPCs on the server
-- This is useful for cleanup during gamemode restart
+- This is useful for cleanup during gamemode shutdown/restart
 
 ## Related Functions
 

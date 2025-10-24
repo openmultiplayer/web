@@ -23,41 +23,18 @@ Returns the number of NPCs found.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    // Create some NPCs
-    new bot[3] = {INVALID_NPC_ID, ...};
-
-    bot[0] = NPC_Create("Bot1");
-    bot[1] = NPC_Create("Bot2");
-    bot[2] = NPC_Create("Bot3");
-
-    for (new i; i < sizeof(bot); i++)
-    {
-        NPC_Spawn(bot[i]);
-    }
-
-    // Get all NPCs
-    new npcs[MAX_NPCS];
-    new const count = NPC_GetAll(npcs);
-
-    printf("Total NPCs on server: %d", count);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/countnpcs", true))
     {
         new npcs[MAX_NPCS];
-        new const count = NPC_GetAll(npcs);
+        new count = NPC_GetAll(npcs);
 
-        SendClientMessage(playerid, 0x00FF00FF, "There are %d NPCs on the server", count);
+        SendClientMessage(playerid, 0x00FF00FF, "There are %d NPCs on the server.", count);
 
         return 1;
     }
-    return 0;
+   return 0;
 }
 ```
 

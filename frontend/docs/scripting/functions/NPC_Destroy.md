@@ -26,11 +26,24 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/destroynpc", true))
     {
-        if (NPC_IsValid(0))
+        new npcid = PlayerNPC[playerid];
+
+        if (!NPC_IsValid(npcid))
         {
-            NPC_Destroy(0);
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 destroyed");
+            SendClientMessage(playerid, 0xFF0000FF, "You don't have a valid NPC to destroy.");
+            return 1;
         }
+
+        if (NPC_Destroy(npcid))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "Your NPC (ID %d) was destroyed.", npcid);
+            PlayerNPC[playerid] = INVALID_NPC_ID; // or 0 if you don't have INVALID_NPC_ID defined
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to destroy your NPC (ID %d).", npcid);
+        }
+
         return 1;
     }
     return 0;
@@ -41,8 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-- This will remove the NPC from the server completely.
-- The NPC ID becomes invalid after destruction.
+- This will remove the NPC from the server completely and the ID becomes invalid after destruction.
 
 :::
 

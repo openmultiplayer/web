@@ -18,31 +18,33 @@ Returns the ID of the created path.
 ## Examples
 
 ```c
-public OnGameModeInit()
+new g_PatrolPath = -1;
+
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new pathid = NPC_CreatePath();
-    printf("Path created with ID: %d", pathid);
+    if (!strcmp(cmdtext, "/createpatrol", true))
+    {
+        new pathid = NPC_CreatePath();
+        g_PatrolPath = pathid;
+        
+        // If you wanted, you could already add points to the path here
+        // NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5)
+        // NPC_AddPointToPath(g_PatrolPath, x1, y1, z1, 1.5)
+        // NPC_AddPointToPath(g_PatrolPath, x2, y2, z2, 1.5)
 
-    // Add waypoints to the path
-    NPC_AddPointToPath(pathid, 1958.33, 1343.12, 15.36, 1.0);
-    NPC_AddPointToPath(pathid, 1968.33, 1353.12, 15.36, 1.0);
-    NPC_AddPointToPath(pathid, 1978.33, 1363.12, 15.36, 1.0);
+        SendClientMessage(playerid, 0x00FF00FF, "Created a patrol path %d", g_PatrolPath);
 
-    // Make an NPC follow this path
-    new npcid = NPC_Create("PathFollower");
-    NPC_Spawn(npcid);
-    NPC_MoveByPath(npcid, pathid, NPC_MOVE_TYPE_WALK);
-
-    return 1;
+        return 1;
+    }
+    return 0;
 }
 ```
 
 ## Notes
 
-- The path is created empty - use `NPC_AddPointToPath` to add waypoints
+- The path is always created empty, use `NPC_AddPointToPath` to add waypoints
 - Multiple NPCs can use the same path simultaneously
 - Paths remain valid until destroyed with `NPC_DestroyPath`
-- A maximum number of paths can exist at once
 
 ## Related Functions
 

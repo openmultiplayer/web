@@ -22,34 +22,33 @@ Returns `true` on success, `false` on failure.
 ## Examples
 
 ```c
-new g_PatrolPath;
-
-public OnGameModeInit()
-{
-    // Create a patrol path
-    g_PatrolPath = NPC_CreatePath();
-    NPC_AddPointToPath(g_PatrolPath, 1958.33, 1343.12, 15.36, 1.0);
-    NPC_AddPointToPath(g_PatrolPath, 1968.33, 1353.12, 15.36, 1.0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/destroypath", true))
+    if (!strcmp(cmdtext, "/deletepatrol", true))
     {
-        if (NPC_IsValidPath(g_PatrolPath))
+        // Check if path is valid first
+        if (!NPC_IsValidPath(g_PatrolPath))
         {
-            if (NPC_DestroyPath(g_PatrolPath))
-            {
-                SendClientMessage(playerid, 0x00FF00FF, "Patrol path destroyed.");
-                g_PatrolPath = -1;
-            }
+            SendClientMessage(playerid, 0xFF0000FF, "No valid patrol path to delete.");
+            return 1;
+        }
+
+        // Get how many points were in it
+        new count = NPC_GetPathPointCount(g_PatrolPath);
+
+        // Try to destroy it
+        if (NPC_DestroyPath(g_PatrolPath))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "Destroyed path %d (%d points removed).", g_PatrolPath, count);
+            
+            // Reset global variable since it's now invalid
+            g_PatrolPath = -1;
         }
         else
         {
-            SendClientMessage(playerid, 0xFF0000FF, "Path is not valid.");
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to destroy patrol path.");
         }
+
         return 1;
     }
     return 0;
@@ -59,9 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - The path ID becomes invalid after destruction
-- NPCs currently following this path will stop moving
-- All waypoints in the path are removed
-- Memory used by the path is freed
+- NPCs currently following this path will stop moving since all points in the path are removed
 
 ## Related Functions
 

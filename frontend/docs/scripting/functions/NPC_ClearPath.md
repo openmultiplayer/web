@@ -22,25 +22,26 @@ Returns `true` on success, `false` on failure.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new pathid = NPC_CreatePath();
-
-    // Add some points to the path
-    NPC_AddPointToPath(pathid, 1958.33, 1343.12, 15.36, 1.0);
-    NPC_AddPointToPath(pathid, 1968.33, 1353.12, 15.36, 1.0);
-    NPC_AddPointToPath(pathid, 1978.33, 1363.12, 15.36, 1.0);
-
-    printf("Points in path: %d", NPC_GetPathPointCount(pathid)); // 3
-
-    // Clear all points
-    if (NPC_ClearPath(pathid))
+    if (!strcmp(cmdtext, "/clearpatrol", true))
     {
-        printf("Path cleared successfully");
-        printf("Points in path: %d", NPC_GetPathPointCount(pathid)); // 0
-    }
+        // Get the number of points before clearing
+        new count = NPC_GetPathPointCount(g_PatrolPath);
 
-    return 1;
+        // Try to clear the path
+        if (NPC_ClearPath(g_PatrolPath))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "Cleared path %d (%d points removed)", g_PatrolPath, count);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to clear path");
+        }
+
+        return 1;
+    }
+    return 0;
 }
 ```
 
@@ -49,7 +50,6 @@ public OnGameModeInit()
 - This function removes all waypoints from the specified path
 - The path itself remains valid and can be reused
 - Any NPCs currently following this path will stop moving
-- Use this to reset a path before adding new points
 
 ## Related Functions
 

@@ -25,32 +25,29 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
+new g_motorcycle = INVALID_VEHICLE_ID,
+    
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-
-    // Make NPC walk to the vehicle and enter as driver
-    NPC_EnterVehicle(npcid, vehicleid, 0, NPC_MOVE_TYPE_WALK);
-
+    g_motorcycle = CreateVehicle(522, 2493.7583, -1683.6482, 12.9099, 270.8069, 225, 155, -1, false);
     return 1;
 }
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcride", true))
+    if (!strcmp(cmdtext, "/npcenterbike", true, 13))
     {
-        new Float:x, Float:y, Float:z;
-        GetPlayerPos(playerid, x, y, z);
+        new seatid = strval(cmdtext[14]);
+        if (cmdtext[14] == '\0')
+            return SendClientMessage(playerid, 0xFF0000FF, "Usage: /npcenterbike [seatid]");
 
-        new vehicleid = CreateVehicle(411, x + 5.0, y, z, 0.0, -1, -1, 300);
-        new npcid = NPC_Create("Passenger");
-        NPC_Spawn(npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
 
-        // Make NPC enter as passenger
-        NPC_EnterVehicle(npcid, vehicleid, 1, NPC_MOVE_TYPE_JOG);
+        if (NPC_EnterVehicle(npcid, g_motorcycle, seatid, NPC_MOVE_TYPE_JOG))
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d is entering motorcycle (seat %d).", npcid, seatid);
+        else
+            SendClientMessage(playerid, 0xFF0000FF, "NPC %d failed to enter motorcycle (seat %d).", npcid, seatid);
 
         return 1;
     }
@@ -70,11 +67,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- The NPC will pathfind to the vehicle door before entering
-- The NPC will use the specified movement type to reach the vehicle
+- The NPC will try to reach the vehicle door, using the specified movement type, before entering
 - If the seat is occupied, the NPC may not be able to enter
-- Seat 0 is always the driver's seat
-- Maximum seat ID depends on the vehicle model
 
 ## Related Functions
 

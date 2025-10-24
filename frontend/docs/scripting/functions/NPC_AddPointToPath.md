@@ -26,51 +26,27 @@ Returns `true` on success, `false` on failure.
 ## Examples
 
 ```c
-new g_PatrolPath = -1;
-
-public OnGameModeInit()
-{
-    // Create patrol path
-    g_PatrolPath = NPC_CreatePath();
-
-    if (NPC_IsValidPath(g_PatrolPath))
-    {
-        // Build patrol route
-        NPC_AddPointToPath(g_PatrolPath, 1958.33, 1343.12, 15.36, 2.0);
-        NPC_AddPointToPath(g_PatrolPath, 1968.33, 1353.12, 15.36, 1.5);
-        NPC_AddPointToPath(g_PatrolPath, 1978.33, 1363.12, 15.36, 2.0);
-
-        printf("Patrol path created with %d waypoints", NPC_GetPathPointCount(g_PatrolPath));
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/startpatrol", true))
-    {
-        if (NPC_IsValidPath(g_PatrolPath))
-        {
-            NPC_MoveByPath(0, g_PatrolPath, NPC_MOVE_TYPE_WALK);
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 started patrol route");
-        }
-        return 1;
-    }
-
-    if (!strcmp(cmdtext, "/addwaypoint", true))
+    if (!strcmp(cmdtext, "/addpatrolpos", true))
     {
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
 
+        // Try to add patrol point
         if (NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "Added waypoint at your location");
+            SendClientMessage(playerid, 0x00FF00FF, "Added point to path %d at your current location", g_PatrolPath);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Failed add point to path");
         }
         return 1;
     }
     return 0;
 }
+
 ```
 
 ## Notes
