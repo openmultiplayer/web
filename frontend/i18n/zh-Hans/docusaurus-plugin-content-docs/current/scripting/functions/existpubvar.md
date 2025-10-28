@@ -5,7 +5,7 @@ description: 检查当前脚本中是否存在特定公共变量。
 tags: ["核心", "公共变量"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

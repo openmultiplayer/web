@@ -5,7 +5,7 @@ description: 统计脚本中公共变量的数量
 tags: ["核心", "公共变量"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

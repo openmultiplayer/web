@@ -5,7 +5,7 @@ description: 设置 NPC 武器弹匣中的弹药数量。
 tags: ["npc", "武器", "子弹"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

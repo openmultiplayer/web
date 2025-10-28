@@ -5,7 +5,7 @@ description: 设置 NPC 的当前武器。
 tags: ["npc", "武器", "战斗"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

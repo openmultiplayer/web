@@ -5,7 +5,7 @@ description: 获取玩家当前竞速检查点的位置信息
 tags: ["玩家", "检查点", "竞速检查点"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

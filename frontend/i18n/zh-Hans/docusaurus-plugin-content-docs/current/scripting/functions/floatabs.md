@@ -5,7 +5,7 @@ description: 返回浮点数的绝对值。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

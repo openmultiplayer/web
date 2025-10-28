@@ -5,7 +5,7 @@ description: 获取 NPC 飞行器的起落架状态。
 tags: ["npc", "车辆", “飞机”, “起落架”]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

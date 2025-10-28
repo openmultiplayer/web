@@ -5,7 +5,7 @@ description: 编辑一个职业数据。
 tags: ["职业"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

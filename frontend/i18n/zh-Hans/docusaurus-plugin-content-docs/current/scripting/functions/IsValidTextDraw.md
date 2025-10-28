@@ -5,7 +5,7 @@ description: 检测文本绘图有效性
 tags: ["文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 检查聊天输入过滤功能是否启用
 tags: []
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

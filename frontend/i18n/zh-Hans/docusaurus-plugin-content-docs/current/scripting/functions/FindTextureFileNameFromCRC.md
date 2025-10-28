@@ -5,7 +5,7 @@ description: 查找现有的自定义皮肤或简单物体纹理文件。
 tags: ["自定义模型", "自定义皮肤", "简单模型"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.DL R1' />
+<VersionWarnZH_Hans version='SA-MP 0.3.DL R1' />
 
 ## 描述
 

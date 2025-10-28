@@ -5,7 +5,7 @@ description: 检查 NPC 是否正在瞄准特定玩家。
 tags: ["npc", "武器", "瞄准"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

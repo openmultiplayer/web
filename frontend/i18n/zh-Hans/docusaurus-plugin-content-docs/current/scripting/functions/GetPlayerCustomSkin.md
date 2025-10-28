@@ -5,7 +5,7 @@ description: 获取玩家从服务器下载的自定义皮肤类ID
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.DL R1' />
+<VersionWarnZH_Hans version='SA-MP 0.3.DL R1' />
 
 ## 描述
 

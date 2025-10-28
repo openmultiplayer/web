@@ -5,7 +5,7 @@ description: 检查文本绘图是否启用等比例间距。
 tags: ["文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

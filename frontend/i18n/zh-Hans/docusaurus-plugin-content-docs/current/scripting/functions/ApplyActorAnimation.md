@@ -5,7 +5,7 @@ description: 为角色应用指定的动画效果
 tags: ["角色", "动画"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

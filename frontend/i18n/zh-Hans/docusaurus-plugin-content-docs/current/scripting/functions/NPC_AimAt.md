@@ -5,7 +5,7 @@ description: 使 NPC 瞄准特定位置。
 tags: ["npc", "武器", "瞄准"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

@@ -6,7 +6,7 @@ keywords:
   - sqlite
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 设置 NPC 在所有轴上的旋转。
 tags: ["npc", "旋转", "角度"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 将字符串编码为UU格式字符串。
 tags: ["字符串处理", "加密"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

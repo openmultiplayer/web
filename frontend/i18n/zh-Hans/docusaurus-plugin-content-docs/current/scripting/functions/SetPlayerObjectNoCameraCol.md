@@ -5,7 +5,7 @@ description: 切换玩家物体的视角碰撞状态
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

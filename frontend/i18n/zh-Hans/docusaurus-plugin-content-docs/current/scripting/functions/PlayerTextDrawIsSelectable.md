@@ -5,7 +5,7 @@ description: 检查玩家文本绘图是否可被选择
 tags: ["玩家", "文本绘图", "玩家文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

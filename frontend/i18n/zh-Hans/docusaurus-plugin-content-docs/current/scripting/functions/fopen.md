@@ -5,7 +5,7 @@ description: 打开文件（用于读取或写入）。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

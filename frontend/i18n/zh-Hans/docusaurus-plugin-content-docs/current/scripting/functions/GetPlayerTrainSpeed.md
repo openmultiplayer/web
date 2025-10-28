@@ -5,7 +5,7 @@ description: 获取玩家火车的行驶速度
 tags: ["玩家", "车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

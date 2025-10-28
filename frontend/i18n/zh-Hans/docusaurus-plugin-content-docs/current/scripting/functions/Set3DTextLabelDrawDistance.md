@@ -5,7 +5,7 @@ description: 设置3D文本标签的可视距离
 tags: ["3d文本标签"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

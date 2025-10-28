@@ -5,7 +5,7 @@ description: 销毁通过 CreatePlayerPickup 创建的玩家专属拾取物。
 tags: ["玩家", "拾取物", "玩家专属拾取物"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

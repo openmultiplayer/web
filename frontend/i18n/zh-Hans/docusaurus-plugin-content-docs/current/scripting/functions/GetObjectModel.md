@@ -5,7 +5,7 @@ description: 获取物体的模型ID（通过CreateObject创建）
 tags: ["物体"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

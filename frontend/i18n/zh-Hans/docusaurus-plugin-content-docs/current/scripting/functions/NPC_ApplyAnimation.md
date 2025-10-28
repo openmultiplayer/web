@@ -5,7 +5,7 @@ description: 对 NPC 应用特定动画。
 tags: ["npc", "动画"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

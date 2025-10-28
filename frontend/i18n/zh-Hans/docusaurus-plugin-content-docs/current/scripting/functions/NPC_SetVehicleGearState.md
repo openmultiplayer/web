@@ -5,7 +5,7 @@ description: 设置 NPC 驾驶飞机时的起落架状态。
 tags: ["npc", "车辆", “飞机”, “起落架”]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

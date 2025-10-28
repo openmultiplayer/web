@@ -5,7 +5,7 @@ description: 通过动画 ID 为 NPC 设置动画。
 tags: ["npc", "动画"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

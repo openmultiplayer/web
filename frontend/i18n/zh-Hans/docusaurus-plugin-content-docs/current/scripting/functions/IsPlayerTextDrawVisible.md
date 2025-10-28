@@ -5,7 +5,7 @@ description: 检测玩家专属文本绘图是否对指定玩家可见。
 tags: ["玩家", "文本绘图", "玩家文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

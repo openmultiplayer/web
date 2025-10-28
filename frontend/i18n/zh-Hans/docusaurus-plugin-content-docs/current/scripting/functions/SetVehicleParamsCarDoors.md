@@ -5,7 +5,7 @@ description: 控制车辆车门的开关状态。
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

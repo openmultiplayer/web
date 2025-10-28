@@ -5,7 +5,7 @@ description: 当玩家拾取物流加载时触发该回调函数
 tags: ["玩家", "拾取物", "玩家拾取物"]
 ---
 
-<VersionWarnZH_CN name='回调' version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans name='回调' version='omp v1.1.0.2612' />
 
 ## 描述
 

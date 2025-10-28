@@ -5,7 +5,7 @@ description: 从物体的材质索引获取材质数据
 tags: ["物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

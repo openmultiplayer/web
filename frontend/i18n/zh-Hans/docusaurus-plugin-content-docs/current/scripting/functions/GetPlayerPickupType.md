@@ -5,7 +5,7 @@ description: 获取玩家拾取物的类型
 tags: ["玩家", "拾取物", "玩家拾取物"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

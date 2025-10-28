@@ -5,7 +5,7 @@ description: 获取服务器上已创建的最高角色ID。
 tags: ["角色"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

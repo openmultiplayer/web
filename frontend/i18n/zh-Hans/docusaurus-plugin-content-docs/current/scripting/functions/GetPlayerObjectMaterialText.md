@@ -5,7 +5,7 @@ description: 获取玩家物体指定索引的材质文本数据
 tags: ["玩家", "物体", "玩家物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

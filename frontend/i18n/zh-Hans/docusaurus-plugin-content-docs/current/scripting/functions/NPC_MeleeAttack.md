@@ -5,7 +5,7 @@ description: 让 NPC 执行近战攻击。
 tags: ["npc", "战斗", "近战攻击"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

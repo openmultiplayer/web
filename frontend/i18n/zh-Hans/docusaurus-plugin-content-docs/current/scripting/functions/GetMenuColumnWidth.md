@@ -5,7 +5,7 @@ description: 获取菜单中一列或两列的宽度。
 tags: ["菜单"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

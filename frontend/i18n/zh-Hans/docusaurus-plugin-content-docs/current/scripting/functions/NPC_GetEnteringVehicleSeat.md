@@ -5,7 +5,7 @@ description: 获取 NPC 在车辆中正在进入的座位。
 tags: ["npc", "车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

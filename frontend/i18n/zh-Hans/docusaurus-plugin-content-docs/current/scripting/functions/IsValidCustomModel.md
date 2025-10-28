@@ -5,7 +5,7 @@ description: 检测自定义模型ID是否有效。
 tags: ["自定义模型", "自定义皮肤", "简单模型"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

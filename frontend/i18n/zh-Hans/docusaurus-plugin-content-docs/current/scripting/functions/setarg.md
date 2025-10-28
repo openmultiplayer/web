@@ -5,7 +5,7 @@ description: 设置传递给函数的参数。
 tags: ["核心", "参数", "args"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

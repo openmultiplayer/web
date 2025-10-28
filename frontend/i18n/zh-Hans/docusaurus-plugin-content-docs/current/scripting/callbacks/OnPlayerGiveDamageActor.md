@@ -5,7 +5,7 @@ description: 当玩家对角色造成伤害时触发该回调函数。
 tags: ["玩家", 角色]
 ---
 
-<VersionWarnZH_CN name='回调' version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans name='回调' version='SA-MP 0.3.7' />
 
 ## 描述
 

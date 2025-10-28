@@ -5,7 +5,7 @@ description: 获取玩家车辆的警报器状态
 tags: ["玩家", "车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

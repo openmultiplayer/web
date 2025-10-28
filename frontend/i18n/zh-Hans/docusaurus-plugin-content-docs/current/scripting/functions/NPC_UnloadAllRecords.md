@@ -5,7 +5,7 @@ description: 从内存中卸载所有 NPC 录制文件。
 tags: ["npc", "录制"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

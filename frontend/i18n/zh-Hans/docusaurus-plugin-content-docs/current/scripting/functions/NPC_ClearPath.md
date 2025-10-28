@@ -5,7 +5,7 @@ description: 清除 NPC 路径中的所有路径点。
 tags: ["npc", "路径"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

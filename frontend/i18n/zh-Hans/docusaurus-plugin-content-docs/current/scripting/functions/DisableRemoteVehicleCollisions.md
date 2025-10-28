@@ -5,7 +5,7 @@ description: 禁用玩家已占用车辆之间的碰撞。
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

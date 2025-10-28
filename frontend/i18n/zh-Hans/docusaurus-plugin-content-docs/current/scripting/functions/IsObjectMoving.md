@@ -5,7 +5,7 @@ description: 检查指定物体是否处于移动状态
 tags: ["物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

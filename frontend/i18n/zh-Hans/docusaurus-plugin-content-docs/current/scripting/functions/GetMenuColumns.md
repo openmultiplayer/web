@@ -5,7 +5,7 @@ description: 获取菜单中当前激活的列数。
 tags: ["菜单"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

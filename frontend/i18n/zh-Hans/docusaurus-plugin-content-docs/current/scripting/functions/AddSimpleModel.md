@@ -5,7 +5,7 @@ description: 添加可供下载的新自定义简单物体模型
 tags: ["自定义模型", "简单模型"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.DL R1' />
+<VersionWarnZH_Hans version='SA-MP 0.3.DL R1' />
 
 ## 描述
 

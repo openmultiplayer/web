@@ -5,7 +5,7 @@ description: 获取 NPC 驾驶的火车的速度。
 tags: ["npc", "车辆", "火车"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

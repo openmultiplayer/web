@@ -5,7 +5,7 @@ description: 从内存中获取特定属性，返回的字符串为打包格式
 tags: ["核心", "属性"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

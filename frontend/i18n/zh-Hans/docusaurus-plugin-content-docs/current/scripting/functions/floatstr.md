@@ -5,7 +5,7 @@ description: 将字符串转换为浮点数。
 tags: ["字符串", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 检测定时器有效性
 tags: ["定时器"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

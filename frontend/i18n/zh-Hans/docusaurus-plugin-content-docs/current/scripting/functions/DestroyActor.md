@@ -5,7 +5,7 @@ description: 销毁通过CreateActor创建的角色。
 tags: ["角色"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

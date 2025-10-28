@@ -5,7 +5,7 @@ description: 获取指定玩家游戏文本样式的所有相关信息。
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 检测玩家的文本绘图是否可见。
 tags: ["文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

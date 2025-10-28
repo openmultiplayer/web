@@ -5,7 +5,7 @@ description: 设置当前脚本中的特定公共变量。
 tags: ["核心", "公共变量"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

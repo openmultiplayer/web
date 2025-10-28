@@ -5,7 +5,7 @@ description: 设置角色的皮肤。
 tags: ["角色"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

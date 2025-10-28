@@ -5,7 +5,7 @@ description: 设置 NPC 的生命值。
 tags: ["npc", "生命值"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

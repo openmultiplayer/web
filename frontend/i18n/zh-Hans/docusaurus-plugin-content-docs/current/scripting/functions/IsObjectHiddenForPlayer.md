@@ -5,7 +5,7 @@ description: 检查物体是否对指定玩家隐藏
 tags: ["玩家", "物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

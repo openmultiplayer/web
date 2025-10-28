@@ -5,7 +5,7 @@ description: 通过索引获取玩家附加物体的数据
 tags: ["玩家", "物体", "附加"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 设置 NPC 的室内位置。
 tags: ["npc", "室内场景"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

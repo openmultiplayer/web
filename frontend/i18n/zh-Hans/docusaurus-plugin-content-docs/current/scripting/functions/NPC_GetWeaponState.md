@@ -5,7 +5,7 @@ description: 获取 NPC 的武器状态。
 tags: ["npc", "武器"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

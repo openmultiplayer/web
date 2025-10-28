@@ -5,7 +5,7 @@ description: 计算浮点数的对数。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

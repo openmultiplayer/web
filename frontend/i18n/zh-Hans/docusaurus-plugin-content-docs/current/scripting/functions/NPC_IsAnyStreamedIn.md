@@ -5,7 +5,7 @@ description: 检查 NPC 是否对任何玩家已流加载。
 tags: ["npc", "流加载"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

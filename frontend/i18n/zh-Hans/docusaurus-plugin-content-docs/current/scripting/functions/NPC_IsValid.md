@@ -5,7 +5,7 @@ description: 检查 NPC ID 是否有效。
 tags: ["npc"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

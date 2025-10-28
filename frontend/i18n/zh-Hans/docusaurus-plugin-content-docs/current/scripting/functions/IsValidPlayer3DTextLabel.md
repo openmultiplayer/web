@@ -5,7 +5,7 @@ description: 检测玩家的3D文本标签是否有效。
 tags: ["玩家", "3D文本标签"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

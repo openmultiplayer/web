@@ -5,7 +5,7 @@ description: 检测指定组件是否可合法安装在特定车辆模型上
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

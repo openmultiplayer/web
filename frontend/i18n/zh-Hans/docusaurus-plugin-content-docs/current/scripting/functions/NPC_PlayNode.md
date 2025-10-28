@@ -5,7 +5,7 @@ description: 让 NPC 通过预定义的导航节点进行导航。
 tags: ["npc", "节点", "导航"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

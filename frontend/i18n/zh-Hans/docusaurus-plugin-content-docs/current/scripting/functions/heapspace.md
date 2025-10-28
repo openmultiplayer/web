@@ -5,7 +5,7 @@ description: 返回堆/栈内存的可用空间（单位：字节）。
 tags: ["核心"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 修改车辆的主色和副色
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

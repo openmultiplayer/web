@@ -5,7 +5,7 @@ description: 通过函数名获取公共函数的ID。
 tags: ["core"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

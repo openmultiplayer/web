@@ -5,7 +5,7 @@ description: 获取玩家文本绘图文本尺寸的X轴和Y轴值
 tags: ["玩家", "文本绘图", "玩家文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

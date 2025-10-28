@@ -5,7 +5,7 @@ description: 将 NPC 更新到当前播放节点中的特定点。
 tags: ["npc", "节点"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

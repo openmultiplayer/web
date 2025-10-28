@@ -5,7 +5,7 @@ description: 打开 NPC 节点供使用。
 tags: ["npc", "节点", "导航"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

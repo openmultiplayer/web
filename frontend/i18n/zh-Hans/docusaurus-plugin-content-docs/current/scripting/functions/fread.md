@@ -5,7 +5,7 @@ description: 从文件中读取单行内容。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

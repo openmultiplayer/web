@@ -5,7 +5,7 @@ description: 从 NPC 路径中移除路径点。
 tags: ["npc", "路径"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

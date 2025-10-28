@@ -5,7 +5,7 @@ description: 获取文本绘图的位置
 tags: ["文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

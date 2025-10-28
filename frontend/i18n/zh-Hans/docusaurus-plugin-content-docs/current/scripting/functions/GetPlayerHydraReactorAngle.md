@@ -5,7 +5,7 @@ description: 获取玩家驾驶的九头蛇推进器角度
 tags: ["玩家", "车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

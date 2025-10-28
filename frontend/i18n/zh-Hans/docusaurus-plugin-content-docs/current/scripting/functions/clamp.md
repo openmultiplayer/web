@@ -5,7 +5,7 @@ description: 将数值强制限制在指定范围内
 tags: ["核心功能"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 使 NPC 进入车辆。
 tags: ["npc", "车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

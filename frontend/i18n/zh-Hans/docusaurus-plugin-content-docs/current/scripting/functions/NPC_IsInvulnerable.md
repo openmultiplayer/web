@@ -5,7 +5,7 @@ description: 检查 NPC 是否对伤害免疫。
 tags: ["npc", "无敌", "伤害", "保护"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

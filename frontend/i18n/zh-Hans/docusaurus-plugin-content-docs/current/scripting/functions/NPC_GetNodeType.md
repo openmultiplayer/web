@@ -5,7 +5,7 @@ description: 获取 NPC 节点的类型。
 tags: ["npc", "节点", "导航"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

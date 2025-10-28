@@ -5,7 +5,7 @@ description: 获取玩家文本绘图的背景颜色
 tags: ["玩家", "文本绘图", "玩家文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

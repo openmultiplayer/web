@@ -5,7 +5,7 @@ description: 用于比较两个浮点数值以验证比较结果。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

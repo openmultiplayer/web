@@ -5,7 +5,7 @@ description: 禁用玩家视角与指定物体的碰撞检测。
 tags: ["视角"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

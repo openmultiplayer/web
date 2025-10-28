@@ -5,7 +5,7 @@ description: 解码UU编码字符串
 tags: ["字符串", "加密"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

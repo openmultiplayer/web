@@ -5,7 +5,7 @@ description: 设置监听的端口号
 tags: ["数据报文"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 :::warning
 

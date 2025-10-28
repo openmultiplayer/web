@@ -5,7 +5,7 @@ description: 清除 NPC 的所有动画。
 tags: ["npc", "动画"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

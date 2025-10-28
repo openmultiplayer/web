@@ -5,7 +5,7 @@ description: 获取玩家物体的模型ID
 tags: ["玩家", "物体", "玩家物体"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

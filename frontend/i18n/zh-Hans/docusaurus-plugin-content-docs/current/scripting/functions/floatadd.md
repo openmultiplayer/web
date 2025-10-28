@@ -5,7 +5,7 @@ description: 对两个浮点数进行加法运算。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

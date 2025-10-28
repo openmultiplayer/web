@@ -5,7 +5,7 @@ description: 当 NPC 完成录制文件的回放时调用此回调。
 tags: ["npc", "回放", "录制"]
 ---
 
-<VersionWarnZH_CN name='回调' version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans name='回调' version='omp v1.1.0.changemelater' />
 
 ## 描述
 

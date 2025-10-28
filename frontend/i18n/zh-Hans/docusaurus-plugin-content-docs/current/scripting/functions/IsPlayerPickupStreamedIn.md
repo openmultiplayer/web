@@ -5,7 +5,7 @@ description: 检测某个玩家拾取物是否已为该玩家加载。
 tags: ["玩家", "拾取物", "玩家拾取物"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

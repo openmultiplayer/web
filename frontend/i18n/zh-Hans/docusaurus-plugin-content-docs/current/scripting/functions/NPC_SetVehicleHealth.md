@@ -5,7 +5,7 @@ description: 设置 NPC 车辆的生命值。
 tags: ["npc", "车辆", "生命值"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

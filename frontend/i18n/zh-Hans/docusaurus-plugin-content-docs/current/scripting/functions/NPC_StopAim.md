@@ -5,7 +5,7 @@ description: 停止 NPC 的瞄准状态。
 tags: ["npc", "武器", "瞄准"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

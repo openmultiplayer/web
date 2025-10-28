@@ -5,7 +5,7 @@ description: 设置 NPC 武器的重新装填时间。
 tags: ["npc", "武器", "换弹", "时间"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

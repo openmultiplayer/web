@@ -5,7 +5,7 @@ description: 设置 NPC 的战斗风格，用于近身战斗。
 tags: ["npc", "战斗", "战斗风格", "近战攻击"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

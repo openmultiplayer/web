@@ -5,7 +5,7 @@ description: 获取字符串长度。
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

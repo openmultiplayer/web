@@ -5,7 +5,7 @@ description: 检查玩家视角目标功能是否启用
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

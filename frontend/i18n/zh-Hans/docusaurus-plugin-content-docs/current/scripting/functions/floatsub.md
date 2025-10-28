@@ -5,7 +5,7 @@ description: 将一个浮点数减去另一个浮点数。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

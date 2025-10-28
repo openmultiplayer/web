@@ -5,7 +5,7 @@ description: 获取角色当前正在播放的动画信息。
 tags: ["角色"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 该玩家是否可以通过右键点击地图进行传送？
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

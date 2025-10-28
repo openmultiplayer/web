@@ -5,7 +5,7 @@ description: 交换变量中的字节顺序。
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

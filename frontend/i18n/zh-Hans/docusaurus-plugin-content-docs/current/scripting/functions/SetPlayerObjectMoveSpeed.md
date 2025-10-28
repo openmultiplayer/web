@@ -5,7 +5,7 @@ description: 设置玩家物体的移动速度。
 tags: ["玩家", "物体", "玩家物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 修改文件指针位置。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

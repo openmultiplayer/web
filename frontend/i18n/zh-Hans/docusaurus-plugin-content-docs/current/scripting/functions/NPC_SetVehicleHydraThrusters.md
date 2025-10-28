@@ -5,7 +5,7 @@ description: 设置 NPC 驾驶的九头蛇战机推进器方向。
 tags: ["npc", "车辆", "九头蛇战机", “飞机”]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

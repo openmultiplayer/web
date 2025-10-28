@@ -5,7 +5,7 @@ description: 返回可用磁盘空间。
 tags: ["文件管理"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 :::warning
 
@@ -13,7 +13,7 @@ tags: ["文件管理"]
 
 :::
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

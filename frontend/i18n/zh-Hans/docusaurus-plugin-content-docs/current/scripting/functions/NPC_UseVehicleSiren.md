@@ -5,7 +5,7 @@ description: 让 NPC 使用或停止使用车辆警报器。
 tags: ["npc", "车辆", "警报器"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

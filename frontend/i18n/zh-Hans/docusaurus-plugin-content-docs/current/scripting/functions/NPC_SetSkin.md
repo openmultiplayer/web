@@ -5,7 +5,7 @@ description: 设置 NPC 的皮肤模型，改变其外观。
 tags: ["npc", "皮肤", "模型"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

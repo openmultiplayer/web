@@ -5,7 +5,7 @@ description: 禁用玩家视角与指定物体的碰撞检测。
 tags: ["物体", "视角"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

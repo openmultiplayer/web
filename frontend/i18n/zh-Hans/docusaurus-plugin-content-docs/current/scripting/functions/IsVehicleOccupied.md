@@ -5,7 +5,7 @@ description: 检测车辆是否被占用
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 检查录制文件是否有效且已加载。
 tags: ["npc", "录制", "验证"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

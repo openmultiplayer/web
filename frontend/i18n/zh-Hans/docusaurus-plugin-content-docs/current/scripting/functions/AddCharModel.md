@@ -5,7 +5,7 @@ description: 添加可供下载的新自定义角色模型
 tags: ["自定义皮肤", "角色模型"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.DL R1' />
+<VersionWarnZH_Hans version='SA-MP 0.3.DL R1' />
 
 ## 描述
 

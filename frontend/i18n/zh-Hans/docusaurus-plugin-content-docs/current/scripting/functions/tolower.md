@@ -5,7 +5,7 @@ description: 将单个字符转换为小写形式
 tags: ["字符串处理"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

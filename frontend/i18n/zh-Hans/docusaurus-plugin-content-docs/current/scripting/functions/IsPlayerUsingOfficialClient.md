@@ -5,7 +5,7 @@ description: 检测玩家是否使用官方SA-MP客户端。
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

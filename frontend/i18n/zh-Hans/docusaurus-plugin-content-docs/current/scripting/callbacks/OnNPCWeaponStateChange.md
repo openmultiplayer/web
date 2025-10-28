@@ -5,7 +5,7 @@ description: 当 NPC 的武器状态改变时调用此回调。
 tags: ["npc", "武器"]
 ---
 
-<VersionWarnZH_CN name='回调' version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans name='回调' version='omp v1.1.0.changemelater' />
 
 ## 描述
 

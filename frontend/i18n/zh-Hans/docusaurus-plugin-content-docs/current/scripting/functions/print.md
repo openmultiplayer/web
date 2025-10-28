@@ -5,7 +5,7 @@ description: 将字符串输出至服务器控制台（非游戏内聊天框）�
 tags: ["控制台"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

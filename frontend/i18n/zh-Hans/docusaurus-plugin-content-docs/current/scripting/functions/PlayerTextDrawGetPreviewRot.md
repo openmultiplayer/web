@@ -5,7 +5,7 @@ description: 获取3D模型预览玩家文本绘图的旋转和缩放参数
 tags: ["玩家", "文本绘图", "玩家文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 向玩家显示一个被隐藏的物体。
 tags: ["玩家", "物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

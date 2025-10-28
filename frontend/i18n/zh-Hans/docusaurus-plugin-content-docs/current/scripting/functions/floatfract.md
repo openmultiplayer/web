@@ -5,7 +5,7 @@ description: 获取浮点数的小数部分。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 向文件写入单个字符。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

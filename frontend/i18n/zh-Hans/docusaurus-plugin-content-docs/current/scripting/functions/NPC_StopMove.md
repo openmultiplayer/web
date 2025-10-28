@@ -5,7 +5,7 @@ description: 停止 NPC 的移动。
 tags: ["npc", "移动"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

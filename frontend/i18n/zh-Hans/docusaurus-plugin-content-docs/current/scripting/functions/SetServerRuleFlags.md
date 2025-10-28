@@ -5,7 +5,7 @@ description: 设置服务器规则的标志。
 tags: ["规则"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 :::warning
 

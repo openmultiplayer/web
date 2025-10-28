@@ -5,7 +5,7 @@ description: 将浮点数四舍五入为整数值。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

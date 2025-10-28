@@ -5,7 +5,7 @@ description: 当角色被玩家客户端流卸载时触发该回调。
 tags: ["角色"]
 ---
 
-<VersionWarnZH_CN name='回调' version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans name='回调' version='SA-MP 0.3.7' />
 
 ## 描述
 
@@ -34,7 +34,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## 注意
 
-<TipNPCCallbacksZH_CN />
+<TipNPCCallbacksZH_Hans />
 
 ## 相关回调
 

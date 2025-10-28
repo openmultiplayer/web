@@ -5,7 +5,7 @@ description: 获取物体的移动目标位置
 tags: ["物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

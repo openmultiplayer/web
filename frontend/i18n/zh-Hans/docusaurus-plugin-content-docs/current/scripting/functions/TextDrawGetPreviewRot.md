@@ -5,7 +5,7 @@ description: 获取3D模型预览文本绘图的旋转参数与缩放值
 tags: ["文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

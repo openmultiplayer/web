@@ -5,7 +5,7 @@ description: 获取当前全局天气。
 tags: []
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 隐藏玩家当前可见的任何对话框
 tags: ["玩家", "对话框"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

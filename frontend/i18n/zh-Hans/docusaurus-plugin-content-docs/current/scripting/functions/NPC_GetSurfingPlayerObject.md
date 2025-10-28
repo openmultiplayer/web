@@ -5,7 +5,7 @@ description: 获取 NPC 正在冲浪的玩家物体。
 tags: ["npc", "冲浪"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

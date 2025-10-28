@@ -5,7 +5,7 @@ description: 设置玩家为RCON管理员。
 tags: ["玩家", "rcon", "管理"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

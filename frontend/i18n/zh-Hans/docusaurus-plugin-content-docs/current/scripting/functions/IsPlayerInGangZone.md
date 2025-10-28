@@ -5,7 +5,7 @@ description: 检测玩家是否处于帮派区域内
 tags: ["玩家", "帮派区域"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

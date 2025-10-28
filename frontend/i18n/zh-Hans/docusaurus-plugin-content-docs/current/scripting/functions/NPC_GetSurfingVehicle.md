@@ -5,7 +5,7 @@ description: 获取 NPC 正在冲浪的车辆。
 tags: ["npc", "冲浪", "车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

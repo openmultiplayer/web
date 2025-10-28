@@ -5,7 +5,7 @@ description: 检查路径 ID 是否有效且存在。
 tags: ["npc", "路径", "验证"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

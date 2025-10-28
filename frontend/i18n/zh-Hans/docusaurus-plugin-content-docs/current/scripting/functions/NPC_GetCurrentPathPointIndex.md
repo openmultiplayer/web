@@ -5,7 +5,7 @@ description: 获取 NPC 当前正在移动的路径点索引。
 tags: ["npc", "路径"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 隐藏所有玩家的指定样式游戏文本。
 tags: ["玩家", "游戏文本"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

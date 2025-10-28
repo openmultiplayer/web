@@ -5,7 +5,7 @@ description: 计算多值反正切角度（以度为单位）
 tags: ["数学"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 :::warning
 

@@ -5,7 +5,7 @@ description: 获取车辆的涂装方案编号。
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

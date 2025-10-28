@@ -37,7 +37,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## 注意事项
 
-<TipNPCCallbacksZH_CN />
+<TipNPCCallbacksZH_Hans />
 
 ## 相关回调
 

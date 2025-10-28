@@ -5,7 +5,7 @@ description: 获取 NPC 的旋转角度。
 tags: ["npc", "旋转"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

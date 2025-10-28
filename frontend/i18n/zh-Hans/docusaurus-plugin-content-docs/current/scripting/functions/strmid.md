@@ -5,7 +5,7 @@ description: 从字符串中提取指定范围的字符
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

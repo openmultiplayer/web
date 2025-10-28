@@ -5,7 +5,7 @@ description: 将字符串插入到另一个字符串中
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

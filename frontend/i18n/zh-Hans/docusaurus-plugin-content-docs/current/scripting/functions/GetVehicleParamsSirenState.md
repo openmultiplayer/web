@@ -5,7 +5,7 @@ description: 获取车辆警报器的开关状态。
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

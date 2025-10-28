@@ -5,7 +5,7 @@ description: 清空服务器封禁列表
 tags: []
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

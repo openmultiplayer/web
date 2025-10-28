@@ -6,9 +6,9 @@ keywords:
   - sqlite
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
-<VersionWarnZH_CN version='SA-MP 0.3.7 R1' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7 R1' />
 
 ## 描述
 

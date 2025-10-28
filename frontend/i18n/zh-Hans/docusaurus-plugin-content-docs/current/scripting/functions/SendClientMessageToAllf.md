@@ -5,7 +5,7 @@ description: 向所有玩家发送格式化聊天消息（已弃用）。
 tags: []
 ---
 
-<VersionWarnZH_CN version='open.mp beta build 6' />
+<VersionWarnZH_Hans version='open.mp beta build 6' />
 
 :::warning
 

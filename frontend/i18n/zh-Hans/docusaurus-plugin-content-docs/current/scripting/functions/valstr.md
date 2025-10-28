@@ -5,7 +5,7 @@ description: 将整数值转换为字符串形式
 tags: ["字符串处理"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

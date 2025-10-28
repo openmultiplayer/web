@@ -5,7 +5,7 @@ description: 让 NPC 重生到其出生位置，重置其状态。
 tags: ["npc", "出生", "重生"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

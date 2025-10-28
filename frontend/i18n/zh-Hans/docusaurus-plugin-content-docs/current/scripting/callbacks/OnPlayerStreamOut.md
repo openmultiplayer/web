@@ -32,7 +32,7 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## 注意事项
 
-<TipNPCCallbacksZH_CN />
+<TipNPCCallbacksZH_Hans />
 
 :::warning
 

@@ -5,7 +5,7 @@ description: 获取伪随机数
 tags: ["核心"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

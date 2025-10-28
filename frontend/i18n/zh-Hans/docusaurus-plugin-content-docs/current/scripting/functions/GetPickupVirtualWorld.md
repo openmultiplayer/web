@@ -5,7 +5,7 @@ description: 获取拾取物所属的虚拟世界ID
 tags: ["拾取物"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

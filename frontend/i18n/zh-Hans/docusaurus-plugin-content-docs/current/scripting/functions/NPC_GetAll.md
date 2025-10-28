@@ -5,7 +5,7 @@ description: 获取所有 NPC ID 并存储在数组中。
 tags: ["npc"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

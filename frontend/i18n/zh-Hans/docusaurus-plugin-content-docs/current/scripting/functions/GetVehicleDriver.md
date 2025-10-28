@@ -5,7 +5,7 @@ description: 获取驾驶指定车辆的玩家ID
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

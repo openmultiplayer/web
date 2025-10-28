@@ -5,7 +5,7 @@ description: 恢复 NPC 的暂停节点导航。
 tags: ["npc", "节点"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

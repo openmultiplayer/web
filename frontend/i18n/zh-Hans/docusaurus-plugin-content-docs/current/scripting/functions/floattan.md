@@ -5,7 +5,7 @@ description: 获取指定角度的正切值
 tags: ["数学", "浮点"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

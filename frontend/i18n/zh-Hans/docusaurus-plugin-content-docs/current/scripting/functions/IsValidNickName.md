@@ -5,7 +5,7 @@ description: 检测昵称是否符合规范。
 tags: []
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 获取 NPC 节点中当前点的位置。
 tags: ["npc", "节点", "导航", "位置"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

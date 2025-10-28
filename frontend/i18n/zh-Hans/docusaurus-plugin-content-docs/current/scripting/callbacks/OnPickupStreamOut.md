@@ -5,7 +5,7 @@ description: 当拾取物进入玩家的可视范围时触发该回调
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN name='回调' version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans name='回调' version='omp v1.1.0.2612' />
 
 ## 描述
 

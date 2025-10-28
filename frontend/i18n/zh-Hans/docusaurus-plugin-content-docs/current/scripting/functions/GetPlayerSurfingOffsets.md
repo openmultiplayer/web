@@ -5,7 +5,7 @@ description: 获取玩家“冲浪”时的坐标偏移量。
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

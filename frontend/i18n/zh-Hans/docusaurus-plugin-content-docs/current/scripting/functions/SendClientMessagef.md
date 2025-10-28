@@ -5,7 +5,7 @@ description: 向指定玩家发送格式化的彩色聊天信息
 tags: []
 ---
 
-<VersionWarnZH_CN version='open.mp beta build 6' />
+<VersionWarnZH_Hans version='open.mp beta build 6' />
 
 :::warning
 

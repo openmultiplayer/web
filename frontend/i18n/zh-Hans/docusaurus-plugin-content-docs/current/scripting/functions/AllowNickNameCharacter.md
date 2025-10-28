@@ -5,7 +5,7 @@ description: 允许或禁止特定字符在玩家昵称中使用
 tags: []
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

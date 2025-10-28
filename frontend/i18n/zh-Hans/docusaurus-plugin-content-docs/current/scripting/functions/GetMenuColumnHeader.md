@@ -5,7 +5,7 @@ description: 获取指定列标题中的文本内容。
 tags: ["菜单"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

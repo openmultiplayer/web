@@ -5,7 +5,7 @@ description: 获取余弦值的反函数角度（以度为单位）
 tags: ["数学"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

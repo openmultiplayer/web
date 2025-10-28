@@ -5,7 +5,7 @@ description: 当玩家退出玩家帮派区域时触发该回调函数
 tags: ["玩家", "帮派区域"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

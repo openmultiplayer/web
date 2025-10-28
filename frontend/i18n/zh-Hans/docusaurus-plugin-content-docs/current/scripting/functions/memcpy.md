@@ -5,7 +5,7 @@ description: 将字节从一个位置复制到另一个位置
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

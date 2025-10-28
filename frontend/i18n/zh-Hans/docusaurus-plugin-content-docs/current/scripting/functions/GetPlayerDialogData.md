@@ -5,7 +5,7 @@ description: 获取当前显示给玩家的对话框数据
 tags: ["玩家", "对话框"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

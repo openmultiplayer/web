@@ -5,7 +5,7 @@ description: 使用SHA-256算法对密码进行哈希处理。
 tags: ["加密"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7 R1' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7 R1' />
 
 :::warning
 

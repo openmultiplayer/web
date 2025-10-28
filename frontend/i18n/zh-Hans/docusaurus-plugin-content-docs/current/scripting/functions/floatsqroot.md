@@ -5,7 +5,7 @@ description: 计算指定浮点数的平方根。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

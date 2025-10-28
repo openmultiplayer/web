@@ -5,7 +5,7 @@ description: 停止 NPC 的节点播放。
 tags: ["npc", "节点"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

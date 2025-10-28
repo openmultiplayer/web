@@ -5,7 +5,7 @@ description: 设置 NPC 火车车辆的速度。
 tags: ["npc", "车辆", "火车", "速度"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

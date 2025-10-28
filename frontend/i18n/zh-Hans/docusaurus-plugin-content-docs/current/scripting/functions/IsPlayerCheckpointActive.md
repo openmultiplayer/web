@@ -5,7 +5,7 @@ description: 检查玩家当前是否显示检查点
 tags: ["玩家", "检查点"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

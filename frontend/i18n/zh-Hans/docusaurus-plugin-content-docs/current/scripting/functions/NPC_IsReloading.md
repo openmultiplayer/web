@@ -5,7 +5,7 @@ description: 检查 NPC 是否正在换弹。
 tags: ["npc", "武器", "换弹"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

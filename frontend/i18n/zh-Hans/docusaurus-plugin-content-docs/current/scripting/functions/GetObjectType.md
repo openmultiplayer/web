@@ -5,7 +5,7 @@ description: 获取物体的类型（全局物体或玩家物体）
 tags: ["物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

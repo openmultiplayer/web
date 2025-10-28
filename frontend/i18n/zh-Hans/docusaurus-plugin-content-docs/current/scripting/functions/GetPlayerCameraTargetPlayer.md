@@ -5,7 +5,7 @@ description: 获取指定玩家当前正在注视的其他玩家ID
 tags: ["玩家", "视角"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

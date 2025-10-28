@@ -5,7 +5,7 @@ description: 移除服务器规则
 tags: ["规则"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 检查属性是否存在。
 tags: ["核心", "属性"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

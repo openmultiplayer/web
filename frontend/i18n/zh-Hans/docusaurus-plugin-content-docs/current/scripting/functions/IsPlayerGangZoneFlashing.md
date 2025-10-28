@@ -5,7 +5,7 @@ description: 检查玩家的私人帮派区域是否处于闪烁状态
 tags: ["玩家", "帮派区域", "私人帮派区域"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

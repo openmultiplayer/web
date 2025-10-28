@@ -5,7 +5,7 @@ description: 获取 NPC 当前乘坐的车辆ID。
 tags: ["npc", "车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

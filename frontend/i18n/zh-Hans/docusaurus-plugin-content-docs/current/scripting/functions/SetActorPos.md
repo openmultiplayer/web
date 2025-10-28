@@ -5,7 +5,7 @@ description: 设置角色的坐标位置。
 tags: ["角色"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

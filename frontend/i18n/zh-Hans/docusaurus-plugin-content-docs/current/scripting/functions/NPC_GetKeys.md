@@ -5,7 +5,7 @@ description: 获取 NPC 当前的按键状态。
 tags: ["npc", "按键"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

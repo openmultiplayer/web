@@ -5,7 +5,7 @@ description: 检查3D文本标签是否已为玩家流加载
 tags: ["3d文本标签"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

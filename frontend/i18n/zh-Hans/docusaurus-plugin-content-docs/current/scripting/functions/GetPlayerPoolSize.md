@@ -5,7 +5,7 @@ description: 获取服务器当前使用的最大玩家ID
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 获取 NPC 武器的换弹时间。
 tags: ["npc", "武器", "换弹"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

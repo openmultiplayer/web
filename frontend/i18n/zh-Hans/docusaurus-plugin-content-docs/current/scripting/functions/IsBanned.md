@@ -5,7 +5,7 @@ description: 检查指定IP地址是否被封禁
 tags: ["IP地址"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

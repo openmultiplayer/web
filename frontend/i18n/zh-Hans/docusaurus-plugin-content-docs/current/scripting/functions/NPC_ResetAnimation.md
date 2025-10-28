@@ -5,7 +5,7 @@ description: 将 NPC 的当前动画重置为默认状态。
 tags: ["npc", "动画"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

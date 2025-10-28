@@ -5,7 +5,7 @@ description: 当车辆警报器状态发生变更时触发该回调函数。
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN name='回调' version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans name='回调' version='SA-MP 0.3.7' />
 
 ## 描述
 

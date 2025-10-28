@@ -5,7 +5,7 @@ description: 获取当前服务器日期并存储到年、月、日变量中。
 tags: ["时间", "日期"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

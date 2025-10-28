@@ -5,7 +5,7 @@ description: 允许开关车辆的车窗。
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

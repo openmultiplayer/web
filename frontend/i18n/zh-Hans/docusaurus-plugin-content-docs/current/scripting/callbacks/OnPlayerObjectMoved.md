@@ -30,7 +30,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## 注意事项
 
-<TipNPCCallbacksZH_CN />
+<TipNPCCallbacksZH_Hans />
 
 ## 相关回调
 

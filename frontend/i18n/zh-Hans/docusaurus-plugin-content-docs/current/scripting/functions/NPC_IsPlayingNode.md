@@ -5,7 +5,7 @@ description: 检查 NPC 当前是否正在播放节点。
 tags: ["npc", "节点"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

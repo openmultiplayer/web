@@ -5,7 +5,7 @@ description: 发送包含字符串的数据包（已弃用函数）
 tags: ["数据报"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 :::warning
 

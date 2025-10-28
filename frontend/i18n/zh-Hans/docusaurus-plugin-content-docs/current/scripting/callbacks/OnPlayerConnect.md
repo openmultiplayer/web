@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意
 
-<TipNPCCallbacksZH_CN />
+<TipNPCCallbacksZH_Hans />
 
 ## 相关回调
 

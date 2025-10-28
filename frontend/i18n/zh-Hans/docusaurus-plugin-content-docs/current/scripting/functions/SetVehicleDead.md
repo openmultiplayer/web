@@ -5,7 +5,7 @@ description: 设置车辆为损毁状态。
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 :::warning
 

@@ -5,7 +5,7 @@ description: 检查指定文件是否存在于scriptfiles目录中。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

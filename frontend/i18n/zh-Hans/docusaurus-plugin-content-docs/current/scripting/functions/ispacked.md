@@ -5,7 +5,7 @@ description: 检查字符串是否已打包
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

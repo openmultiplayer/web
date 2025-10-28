@@ -5,7 +5,7 @@ description: 启用玩家进出区域时的回调触发
 tags: ["玩家", "帮派区域", "玩家专属帮派区域"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

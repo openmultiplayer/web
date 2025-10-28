@@ -5,7 +5,7 @@ description: 将车辆颜色索引转换为HEX格式颜色值（RGBA）。
 tags: ["车辆"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

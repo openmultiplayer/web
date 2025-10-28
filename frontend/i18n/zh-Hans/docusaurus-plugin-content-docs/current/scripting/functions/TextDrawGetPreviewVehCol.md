@@ -5,7 +5,7 @@ description: 获取3D预览文本绘图的车辆颜色。
 tags: ["文本绘图"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

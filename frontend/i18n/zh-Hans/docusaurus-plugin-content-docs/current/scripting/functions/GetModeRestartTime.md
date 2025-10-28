@@ -5,7 +5,7 @@ description: 获取主脚本加载之间的延迟时间（单位：秒）。
 tags: ["核心", "配置"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 暂停 NPC 的节点导航。
 tags: ["npc", "节点", "导航"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

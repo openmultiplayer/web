@@ -5,7 +5,7 @@ description: 获取 NPC 当前的特别动作。
 tags: ["npc"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

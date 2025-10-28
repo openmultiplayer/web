@@ -5,7 +5,7 @@ description: 删除先前设置的属性（setproperty）。
 tags: ["核心", "属性"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 创建新的 NPC。
 tags: ["npc"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

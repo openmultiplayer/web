@@ -5,7 +5,7 @@ description: 让 NPC 开火射击。
 tags: ["npc", "武器", "射击", "战斗"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

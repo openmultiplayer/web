@@ -5,7 +5,7 @@ description: 该函数用于解包字符串。
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

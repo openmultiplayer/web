@@ -5,7 +5,7 @@ description: 获取玩家当前正在注视的玩家物体ID
 tags: ["玩家", "视角", "物体", "玩家物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

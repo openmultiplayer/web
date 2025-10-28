@@ -5,7 +5,7 @@ description: 检测玩家是否使用open.mp启动器。
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN version='omp 1.4.0.2779' />
+<VersionWarnZH_Hans version='omp 1.4.0.2779' />
 
 ## 描述
 

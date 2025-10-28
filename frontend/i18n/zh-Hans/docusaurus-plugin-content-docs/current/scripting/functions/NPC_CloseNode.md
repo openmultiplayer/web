@@ -5,7 +5,7 @@ description: 关闭 NPC 节点，使其无法使用。
 tags: ["npc", "节点", "导航"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

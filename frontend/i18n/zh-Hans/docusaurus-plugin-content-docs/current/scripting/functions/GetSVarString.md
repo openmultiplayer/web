@@ -5,7 +5,7 @@ description: 获取字符串型服务器变量的值。
 tags: ["服务器变量", "svar"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7 R2' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7 R2' />
 
 ## 描述
 

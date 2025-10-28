@@ -5,7 +5,7 @@ description: 获取玩家3D文本标签的位置
 tags: ["玩家", "3D文本标签"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

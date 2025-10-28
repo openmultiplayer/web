@@ -5,7 +5,7 @@ description: 将 NPC 生成到游戏世界中。
 tags: ["npc"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

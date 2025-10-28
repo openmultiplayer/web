@@ -5,7 +5,7 @@ description: 返回两个数值中的较小者
 tags: ["核心"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

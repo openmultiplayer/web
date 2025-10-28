@@ -5,7 +5,7 @@ description: 检查玩家私有物体是否启用了视角碰撞功能。
 tags: ["玩家", "物体", "玩家物体"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

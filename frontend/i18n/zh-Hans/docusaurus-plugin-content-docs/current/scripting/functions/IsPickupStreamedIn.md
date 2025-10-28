@@ -5,7 +5,7 @@ description: 检查指定拾取物是否已为玩家流加载
 tags: ["玩家", "拾取物"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

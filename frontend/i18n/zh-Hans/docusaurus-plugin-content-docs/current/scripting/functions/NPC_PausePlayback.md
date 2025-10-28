@@ -5,7 +5,7 @@ description: 暂停或恢复 NPC 的录制回放。
 tags: ["npc", "录制", "回放"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

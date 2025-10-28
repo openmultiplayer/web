@@ -5,7 +5,7 @@ description: 将整数转换为浮点数。
 tags: ["浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

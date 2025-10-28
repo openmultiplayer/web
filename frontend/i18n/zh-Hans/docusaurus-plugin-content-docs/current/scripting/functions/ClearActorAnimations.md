@@ -5,7 +5,7 @@ description: 清除角色当前应用的所有动画效果
 tags: ["角色"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7' />
+<VersionWarnZH_Hans version='SA-MP 0.3.7' />
 
 ## 描述
 

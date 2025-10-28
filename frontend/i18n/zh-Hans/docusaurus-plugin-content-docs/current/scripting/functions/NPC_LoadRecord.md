@@ -5,7 +5,7 @@ description: 加载 NPC 录制文件用于回放。
 tags: ["npc", "录制", "回放"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

@@ -5,7 +5,7 @@ description: 检查 NPC 当前是否正在移动。
 tags: ["npc", "移动"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

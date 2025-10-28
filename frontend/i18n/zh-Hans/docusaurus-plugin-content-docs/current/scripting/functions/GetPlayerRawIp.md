@@ -5,7 +5,7 @@ description: 获取玩家的原始IPv4地址（整数形式）
 tags: ["玩家", "IP地址"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

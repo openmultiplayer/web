@@ -5,7 +5,7 @@ description: 格式化字符串以嵌入变量及其他字符串。
 tags: ["字符串处理"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

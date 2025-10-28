@@ -5,7 +5,7 @@ description: 获取3D文本标签的可见绘制距离
 tags: ["3D文本标签"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

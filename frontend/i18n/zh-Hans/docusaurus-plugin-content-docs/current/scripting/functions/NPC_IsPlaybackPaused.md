@@ -5,7 +5,7 @@ description: 检查 NPC 的回放是否暂停。
 tags: ["npc", "录制", "回放"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

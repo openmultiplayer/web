@@ -5,7 +5,7 @@ description: 让 NPC 移向并跟随玩家。
 tags: ["npc", "移动", "玩家", "跟随"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

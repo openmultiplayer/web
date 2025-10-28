@@ -5,7 +5,7 @@ description: 对给定数值进行幂运算。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
+<LowercaseNoteZH_Hans />
 
 ## 描述
 

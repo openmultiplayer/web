@@ -5,7 +5,7 @@ description: 检测是否已启用某些版本缺失的动画支持
 tags: ["动画"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

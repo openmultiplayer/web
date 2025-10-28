@@ -5,7 +5,7 @@ description: 获取 NPC 的位置。
 tags: ["npc", "位置"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

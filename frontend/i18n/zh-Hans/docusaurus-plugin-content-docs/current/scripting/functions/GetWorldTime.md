@@ -5,7 +5,7 @@ description: 获取当前世界时间。
 tags: ["世界时间"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

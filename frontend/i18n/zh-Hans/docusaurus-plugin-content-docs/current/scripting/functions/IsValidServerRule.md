@@ -5,7 +5,7 @@ description: 检测服务器规则有效性
 tags: ["服务器规则"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

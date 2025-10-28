@@ -5,7 +5,7 @@ description: 销毁玩家专属帮派区域
 tags: ["玩家", "帮派区域"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.2612' />
+<VersionWarnZH_Hans version='omp v1.1.0.2612' />
 
 ## 描述
 

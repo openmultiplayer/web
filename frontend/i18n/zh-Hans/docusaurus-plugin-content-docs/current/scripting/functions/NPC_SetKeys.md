@@ -5,7 +5,7 @@ description: 设置 NPC 的按键状态，模拟按键操作。
 tags: ["npc", "按键", "输入"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 

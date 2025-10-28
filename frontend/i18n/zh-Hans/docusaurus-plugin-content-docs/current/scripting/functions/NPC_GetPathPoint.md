@@ -5,7 +5,7 @@ description: 获取 NPC 路径中特定点的坐标和停止范围。
 tags: ["npc", "路径"]
 ---
 
-<VersionWarnZH_CN version='omp v1.1.0.changemelater' />
+<VersionWarnZH_Hans version='omp v1.1.0.changemelater' />
 
 ## 描述
 
