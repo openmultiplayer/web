@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
         NPC_AimAtPlayer(npcid, playerid, true, 800, true, 0.0, 0.0, 0.8, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
         SendClientMessage(playerid, 0xFF0000FF, "NPC %d is now hostile towards you!", npcid);
@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
         NPC_AimAtPlayer(npcid, playerid, false, 0, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d is now guarding you.", npcid);

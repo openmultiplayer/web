@@ -28,14 +28,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
         new ammo = NPC_GetAmmo(npcid);
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC %d has %d bullets remaining on total ammo", npcid, ammo);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d has %d bullets remaining on total ammo", npcid, ammo);
         return 1;
     }
     return 0;

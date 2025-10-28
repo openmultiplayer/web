@@ -23,30 +23,24 @@ Returns `true` if the facing angle was retrieved successfully, `false` otherwise
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Bot");
-    NPC_Spawn(npcid);
-
-    NPC_SetFacingAngle(npcid, 90.0);
-
-    new Float:angle;
-    NPC_GetFacingAngle(npcid, angle);
-    printf("NPC %d is facing angle %.2f", npcid, angle); // Output: 90.00
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/getangle", true))
+    if (!strcmp(cmdtext, "/checkfacingangle", true))
     {
-        new Float:angle;
-        NPC_GetFacingAngle(0, angle);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0 angle: %.2f degrees", angle);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new Float:angle;
+        NPC_GetFacingAngle(npcid, angle);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d facing angle: %.2f", npcid, angle);
         return 1;
     }
+
     return 0;
 }
 ```
@@ -57,8 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - The angle is passed by reference and will be modified.
 - Angles are in degrees (0.0 to 360.0).
-- Angles are reversed in GTA:SA; 90 degrees would be East in the real world, but in GTA:SA 90 degrees is in fact West. North and South are still 0/360 and 180. To convert this, simply do 360 - angle.
-- This gets the 2D facing angle, not the full 3D rotation.
+- Angles are counter-clockwise in GTA:SA; 90 degrees would be East in the real world, but in GTA:SA 90 degrees is in fact West. North and South are still 0/360 and 180. To convert GTA:SA angles to real-world compass angles, simply do 360 - angle.
 
 :::
 

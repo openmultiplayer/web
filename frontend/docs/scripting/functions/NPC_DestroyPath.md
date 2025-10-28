@@ -27,22 +27,23 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/deletepatrol", true))
     {
         // Check if path is valid first
-        if (!NPC_IsValidPath(g_PatrolPath))
+        if (!NPC_IsValidPath(PlayerPatrolPath[playerid]))
         {
             SendClientMessage(playerid, 0xFF0000FF, "No valid patrol path to delete.");
             return 1;
         }
 
         // Get how many points were in it
-        new count = NPC_GetPathPointCount(g_PatrolPath);
+        new count = NPC_GetPathPointCount(PlayerPatrolPath[playerid]);
 
         // Try to destroy it
-        if (NPC_DestroyPath(g_PatrolPath))
+        if (NPC_DestroyPath(PlayerPatrolPath[playerid]))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "Destroyed path %d (%d points removed).", g_PatrolPath, count);
-            
-            // Reset global variable since it's now invalid
-            g_PatrolPath = -1;
+            SendClientMessage(playerid, 0x00FF00FF, "Destroyed path %d (%d points removed).", PlayerPatrolPath[playerid], count);
+
+            // Reset player's path variable since it's now invalid
+            PlayerPatrolPath[playerid] = INVALID_PATH_ID;
+            StopPlayerPatrolTimer(playerid);
         }
         else
         {

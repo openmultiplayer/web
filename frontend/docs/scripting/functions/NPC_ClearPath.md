@@ -27,12 +27,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/clearpatrol", true))
     {
         // Get the number of points before clearing
-        new count = NPC_GetPathPointCount(g_PatrolPath);
+        new count = NPC_GetPathPointCount(PlayerPatrolPath[playerid]);
 
         // Try to clear the path
-        if (NPC_ClearPath(g_PatrolPath))
+        if (NPC_ClearPath(PlayerPatrolPath[playerid]))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "Cleared path %d (%d points removed)", g_PatrolPath, count);
+            SendClientMessage(playerid, 0x00FF00FF, "Cleared path %d (%d points removed)", PlayerPatrolPath[playerid], count);
         }
         else
         {

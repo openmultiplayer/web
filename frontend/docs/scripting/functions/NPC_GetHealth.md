@@ -22,27 +22,21 @@ Returns the NPC's health as a float value.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("HealthBot");
-    NPC_Spawn(npcid);
-
-    NPC_SetHealth(npcid, 75.5);
-
-    new Float:health = NPC_GetHealth(npcid);
-    printf("NPC %d has %.1f health", npcid, health); // Output: 75.5
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkhealth", true))
     {
-        new Float:health = NPC_GetHealth(0);
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 health: %.1f", health);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new Float:health;
+        NPC_GetHealth(npcid, health);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d health: %.2f", npcid, health);
         return 1;
     }
     return 0;
@@ -53,8 +47,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Health values typically range from 0.0 to 100.0
 - An NPC with 0.0 health is considered dead
-- Health can be set to values above 100.0 for enhanced NPCs
-- Use this function to monitor NPC status in combat scenarios
 
 ## Related Functions
 

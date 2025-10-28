@@ -22,31 +22,26 @@ Returns the vehicle ID the NPC is entering, or INVALID_VEHICLE_ID if not enterin
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    NPC_EnterVehicle(npcid, vehicleid, 0, NPC_MOVE_TYPE_JOG);
-
-    SetTimer("MonitorVehicleEntry", 500, true);
-
-    return 1;
-}
-
-forward MonitorVehicleEntry();
-public MonitorVehicleEntry()
-{
-    new enteringVehicleID = NPC_GetEnteringVehicleID(0);
-    if (enteringVehicleID != INVALID_VEHICLE_ID)
+    if (!strcmp(cmdtext, "/checkenteringvehicleid", true))
     {
-        printf("NPC 0 is entering vehicle ID %d", enteringVehicleID);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        // Check the seat they're entering
-        new seat = NPC_GetEnteringVehicleSeat(0);
-        printf("Target seat: %d", seat);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new vehicleid = NPC_GetEnteringVehicleID(npcid);
+
+        if (vehicleid == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d is not entering any vehicle.", npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is entering vehicle ID: %d", npcid, vehicleid);
+        return 1;
     }
+    return 0;
 }
 ```
 
@@ -55,7 +50,6 @@ public MonitorVehicleEntry()
 - This function is similar to NPC_GetEnteringVehicle
 - Returns INVALID_VEHICLE_ID if the NPC is not in the process of entering a vehicle
 - The value becomes 0 once the NPC successfully enters the vehicle
-- Use this to track which specific vehicle an NPC is approaching
 
 ## Related Functions
 

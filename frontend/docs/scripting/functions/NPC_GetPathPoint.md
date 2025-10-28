@@ -27,49 +27,28 @@ Returns `true` on success, `false` on failure.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new pathid = NPC_CreatePath();
-
-    // Add some points
-    NPC_AddPointToPath(pathid, 1958.33, 1343.12, 15.36, 1.0);
-    NPC_AddPointToPath(pathid, 1968.33, 1353.12, 15.36, 2.0);
-    NPC_AddPointToPath(pathid, 1978.33, 1363.12, 15.36, 1.5);
-
-    // Get information about point 0
-    new Float:x, Float:y, Float:z, Float:stopRange;
-    if (NPC_GetPathPoint(pathid, 0, x, y, z, stopRange))
-    {
-        printf("Point 0: %.2f, %.2f, %.2f (Stop Range: %.2f)", x, y, z, stopRange);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/showpathpoints", true))
+    if (!strcmp(cmdtext, "/checkpathpoint", true))
     {
-        new pathid = 0; // Assume first path
-        if (NPC_IsValidPath(pathid))
-        {
-            new pointCount = NPC_GetPathPointCount(pathid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-            new msg[128];
-            format(msg, sizeof(msg), "Path %d has %d points:", pathid, pointCount);
-            SendClientMessage(playerid, 0x00FF00FF, msg);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-            for (new i = 0; i < pointCount; i++)
-            {
-                new Float:x, Float:y, Float:z, Float:stopRange;
-                if (NPC_GetPathPoint(pathid, i, x, y, z, stopRange))
-                {
-                    format(msg, sizeof(msg), "Point %d: %.1f, %.1f, %.1f (Range: %.1f)",
-                        i, x, y, z, stopRange);
-                    SendClientMessage(playerid, 0xFFFFFFFF, msg);
-                }
-            }
-        }
+        new pathid = PlayerPatrolPath[playerid];
+        if (pathid == INVALID_PATH_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "No patrol path assigned.");
+
+        new pointindex = NPC_GetCurrentPathPointIndex(npcid);
+        new Float:x, Float:y, Float:z;
+
+        if (!NPC_GetPathPoint(pathid, pointindex, x, y, z))
+            return SendClientMessage(playerid, 0xFFFF00FF, "Failed to get path point.");
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d path point %d: %.2f, %.2f, %.2f", npcid, pointindex, x, y, z);
         return 1;
     }
     return 0;
@@ -81,7 +60,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - All coordinate and stopRange parameters are passed by reference
 - Point indices start from 0
 - Returns false if the path or point index is invalid
-- Use this to inspect or modify path configurations
 
 ## Related Functions
 

@@ -25,13 +25,6 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-new g_motorcycle = INVALID_VEHICLE_ID,
-    
-public OnGameModeInit()
-{
-    g_motorcycle = CreateVehicle(522, 2493.7583, -1683.6482, 12.9099, 270.8069, 225, 155, -1, false);
-    return 1;
-}
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/npcenterbike", true, 13))
@@ -42,9 +35,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        if (NPC_EnterVehicle(npcid, g_motorcycle, seatid, NPC_MOVE_TYPE_JOG))
+        new vehicleid = PlayerVehicles[playerid][0];
+        if (vehicleid == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "Your motorcycle is not available.");
+
+        if (NPC_EnterVehicle(npcid, vehicleid, seatid, NPC_MOVE_TYPE_JOG))
             SendClientMessage(playerid, 0x00FF00FF, "NPC %d is entering motorcycle (seat %d).", npcid, seatid);
         else
             SendClientMessage(playerid, 0xFF0000FF, "NPC %d failed to enter motorcycle (seat %d).", npcid, seatid);

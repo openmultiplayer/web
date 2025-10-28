@@ -27,7 +27,7 @@ new g_NPCCount = 0,
     
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/spawnnpc", true))
+    if (!strcmp(cmdtext, "/createnpc", true))
     {
         new name[24];
         format(name, sizeof name, "Bot_%d", g_NPCCount++);
@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             NPC_Spawn(npcid);
             NPC_SetPos(npcid, x + 3.0, y, z);
             NPC_SetWeapon(npcid, WEAPON_M4);
-            NPC_SetAmmo(npcid, 300); // Give 300 ammo
+            NPC_SetAmmo(npcid, 500);
 
             PlayerNPC[playerid] = npcid;
             SendClientMessage(playerid, 0x00FF00FF, "NPC %s (ID %d) spawned near you!", name, npcid);

@@ -22,41 +22,26 @@ Returns the seat number the NPC is entering, or -1 if not entering.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Passenger");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-
-    // Make NPC enter as passenger in seat 1
-    NPC_EnterVehicle(npcid, vehicleid, 1, NPC_MOVE_TYPE_WALK);
-
-    SetTimer("CheckEnteringSeat", 100, true);
-
-    return 1;
-}
-
-forward CheckEnteringSeat();
-public CheckEnteringSeat()
-{
-    new seat = NPC_GetEnteringVehicleSeat(0);
-    if (seat != -1)
+    if (!strcmp(cmdtext, "/checkentervehseat", true))
     {
-        new vehicleid = NPC_GetEnteringVehicleID(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        new seatName[16];
-        switch(seat)
-        {
-            case 0: seatName = "Driver";
-            case 1: seatName = "Passenger";
-            case 2: seatName = "Back Left";
-            case 3: seatName = "Back Right";
-            default: seatName = "Unknown";
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        printf("NPC 0 entering vehicle %d as %s (seat %d)", vehicleid, seatName, seat);
+        if (!NPC_IsEnteringVehicle(npcid))
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d is not entering any vehicle.", npcid);
+
+        new seatid = NPC_GetEnteringVehicleSeat(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is entering vehicle seat: %d", npcid, seatid);
+        return 1;
     }
+    return 0;
 }
 ```
 
@@ -74,7 +59,6 @@ public CheckEnteringSeat()
 
 - Returns -1 if the NPC is not entering any vehicle
 - This information is only valid while the NPC is in the entering process
-- Seat 0 is always the driver's seat
 
 ## Related Functions
 

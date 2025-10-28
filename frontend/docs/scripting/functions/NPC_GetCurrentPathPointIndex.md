@@ -32,15 +32,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (npcid == INVALID_NPC_ID)
             return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        new count = NPC_GetPathPointCount(g_PatrolPath);
+        new count = NPC_GetPathPointCount(PlayerPatrolPath[playerid]);
 
-        if (NPC_IsValidPath(g_PatrolPath))
+        if (NPC_IsValidPath(PlayerPatrolPath[playerid]))
         {
-            NPC_MoveByPath(npcid, g_PatrolPath, NPC_MOVE_TYPE_WALK);
+            NPC_MoveByPath(npcid, PlayerPatrolPath[playerid], NPC_MOVE_TYPE_WALK);
             SendClientMessage(playerid, 0x00FF00FF, "NPC %d started patrol route with %d points", npcid, count);
 
-            g_PatrolPlayer = playerid;
-            SetTimer("CheckPathProgress", 2000, true);
+            PlayerPatrolTimer[playerid] = SetTimerEx("CheckPathProgress", 2000, true, "i", playerid);
         }
         else
         {
@@ -51,25 +50,38 @@ public OnPlayerCommandText(playerid, cmdtext[])
     return 0;
 }
 
-forward CheckPathProgress();
-public CheckPathProgress()
+forward CheckPathProgress(playerid);
+public CheckPathProgress(playerid)
 {
-    if (g_PatrolPlayer == INVALID_PLAYER_ID || !IsPlayerConnected(g_PatrolPlayer))
+    if (!IsPlayerConnected(playerid))
+    {
+        // Do something about it
         return 0;
+    }
 
-    new npcid = PlayerNPC[g_PatrolPlayer];
-    if (npcid == INVALID_NPC_ID)
+    new npcid = PlayerNPC[playerid];
+    if (npcid == INVALID_NPC_ID || !NPC_IsValid(npcid))
+    {
+        // Do something about it
         return 0;
+    }
+
+    if (!NPC_IsValidPath(PlayerPatrolPath[playerid]))
+    {
+        // Do something about it
+        return 0;
+    }
 
     new currentPoint = NPC_GetCurrentPathPointIndex(npcid);
-    new totalPoints = NPC_GetPathPointCount(g_PatrolPath);
+    new totalPoints = NPC_GetPathPointCount(PlayerPatrolPath[playerid]);
 
-    if (currentPoint != -1)
+    if (currentPoint != INVALID_NODE_ID)
     {
-        SendClientMessage(g_PatrolPlayer, 0xFFFF00FF, "NPC %d progress: Point %d of %d", npcid, currentPoint + 1, totalPoints);
+        SendClientMessage(playerid, 0xFFFF00FF, "NPC %d progress: Point %d of %d", npcid, currentPoint + 1, totalPoints);
     }
     return 1;
 }
+
 ```
 
 ## Notes

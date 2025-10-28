@@ -22,37 +22,20 @@ Returns the fighting style ID of the NPC.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Fighter");
-    NPC_Spawn(npcid);
-
-    NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-
-    new style = NPC_GetFightingStyle(npcid);
-    printf("NPC %d fighting style: %d", npcid, style);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkstyle", true))
+    if (!strcmp(cmdtext, "/checkfightingstyle", true))
     {
-        new style = NPC_GetFightingStyle(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        new styleName[32];
-        switch(style)
-        {
-            case FIGHT_STYLE_NORMAL: styleName = "Normal";
-            case FIGHT_STYLE_BOXING: styleName = "Boxing";
-            case FIGHT_STYLE_KUNGFU: styleName = "Kung Fu";
-            default: styleName = "Unknown";
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 fighting style: %s", styleName);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new style = NPC_GetFightingStyle(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d fighting style: %d", npcid, style);
         return 1;
     }
     return 0;
@@ -64,7 +47,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Fighting styles affect melee combat animations and damage
 - Each style has different punch and kick animations
 - The default fighting style is FIGHT_STYLE_NORMAL
-- Fighting styles only affect hand-to-hand combat
 
 ## Related Functions
 

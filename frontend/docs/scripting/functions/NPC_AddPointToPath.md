@@ -34,9 +34,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         GetPlayerPos(playerid, x, y, z);
 
         // Try to add patrol point
-        if (NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5))
+        if (NPC_AddPointToPath(PlayerPatrolPath[playerid], x, y, z, 1.5))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "Added point to path %d at your current location", g_PatrolPath);
+            SendClientMessage(playerid, 0x00FF00FF, "Added point to path %d at your current location", PlayerPatrolPath[playerid]);
         }
         else
         {

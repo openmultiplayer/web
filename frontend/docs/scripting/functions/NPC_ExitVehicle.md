@@ -22,57 +22,23 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-new g_car = INVALID_VEHICLE_ID;
-
-public OnGameModeInit()
-{
-    g_car = CreateVehicle(411, 2473.9121, -1683.4276, 13.3589, -34.5, 136, 142, -1, false);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcentercar", true))
+    if (!strcmp(cmdtext, "/npcexitbike", true))
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        if (g_car == INVALID_VEHICLE_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "Vehicle not created.");
-
-        if (NPC_EnterVehicle(npcid, g_car, 0, NPC_MOVE_TYPE_JOG))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC %d is entering the car (driver seat).", npcid);
-
-            // Exit after 25 seconds
-            SetTimerEx("ExitNPCVehicle", 25000, false, "i", npcid);
-        }
+        if (NPC_ExitVehicle(npcid))
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d is exiting motorcycle.", npcid);
         else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC %d failed to enter the car.", npcid);
-        }
+            SendClientMessage(playerid, 0xFF0000FF, "NPC %d failed to exit motorcycle.", npcid);
 
         return 1;
     }
     return 0;
 }
-
-forward ExitNPCVehicle(npcid);
-public ExitNPCVehicle(npcid)
-{
-    if (!NPC_IsValid(npcid))
-        return 0;
-
-    new vehid = NPC_GetVehicle(npcid);
-    if (vehid != INVALID_VEHICLE_ID)
-    {
-        NPC_ExitVehicle(npcid);
-        printf("NPC %d exited vehicle %d", npcid, vehid);
-    }
-    return 1;
-}
-
 ```
 
 ## Notes

@@ -25,40 +25,21 @@ Returns `true` if the keys were retrieved successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("KeyBot");
-    NPC_Spawn(npcid);
-
-    // Set some keys
-    NPC_SetKeys(npcid, KEY_UP, KEY_LEFT, KEY_FIRE);
-
-    // Get the keys back
-    new upDown, leftDown, keys;
-    NPC_GetKeys(npcid, upDown, leftDown, keys);
-
-    printf("NPC %d keys - UpDown: %d, LeftDown: %d, Keys: %d",
-        npcid, upDown, leftDown, keys);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkkeys", true))
     {
-        new upDown, leftDown, keys;
-        NPC_GetKeys(0, upDown, leftDown, keys);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        new keyInfo[128] = "NPC 0 Keys:";
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        if (upDown & KEY_UP) strcat(keyInfo, " UP");
-        if (upDown & KEY_DOWN) strcat(keyInfo, " DOWN");
-        if (leftDown & KEY_LEFT) strcat(keyInfo, " LEFT");
-        if (leftDown & KEY_RIGHT) strcat(keyInfo, " RIGHT");
-        if (keys & KEY_FIRE) strcat(keyInfo, " FIRE");
+        new keys, updown, leftright;
+        NPC_GetKeys(npcid, keys, updown, leftright);
 
-        SendClientMessage(playerid, 0xFFFFFFFF, keyInfo);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d keys: %d, updown: %d, leftright: %d", npcid, keys, updown, leftright);
         return 1;
     }
     return 0;

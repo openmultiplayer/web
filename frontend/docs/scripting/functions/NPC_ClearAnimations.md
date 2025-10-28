@@ -24,17 +24,17 @@ Returns `true` if the operation was successful, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/dance", true))
+    if (!strcmp(cmdtext, "/applydance", true))
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
         NPC_ApplyAnimation(npcid, "DANCING", "dance_loop", 4.1, true, false, false, false, 0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is now animating.", npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d has been applied animation.", npcid);
         
-        SetTimerEx("ClearNPCAnimations", 10000, false, "ii", playerid, npcid);
-        
+        SetTimerEx("ClearNPCAnimations", 25000, false, "ii", playerid, npcid);
+
         return 1;
     }
     return 0;
