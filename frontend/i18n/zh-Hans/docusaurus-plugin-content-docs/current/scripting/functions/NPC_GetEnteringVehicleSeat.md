@@ -1,7 +1,7 @@
 ---
 title: NPC_GetEnteringVehicleSeat
 sidebar_label: NPC_GetEnteringVehicleSeat
-description: 获取NPC在车辆中正在进入的座位。
+description: 获取 NPC 在车辆中正在进入的座位。
 tags: ["npc", "车辆"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "车辆"]
 
 获取 NPC 在车辆中正在进入的座位。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 
@@ -29,7 +29,7 @@ public OnGameModeInit()
 
     new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
 
-    // 使NPC作为乘客进入座位1
+    // 使 NPC 作为乘客进入座位1
     NPC_EnterVehicle(npcid, vehicleid, 1, NPC_MOVE_TYPE_WALK);
 
     SetTimer("CheckEnteringSeat", 100, true);

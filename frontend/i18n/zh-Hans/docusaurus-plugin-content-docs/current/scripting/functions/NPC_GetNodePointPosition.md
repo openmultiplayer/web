@@ -1,7 +1,7 @@
 ---
 title: NPC_GetNodePointPosition
 sidebar_label: NPC_GetNodePointPosition
-description: 获取NPC节点中当前点的位置。
+description: 获取 NPC 节点中当前点的位置。
 tags: ["npc", "节点", "导航", "位置"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "节点", "导航", "位置"]
 
 获取 NPC 节点中当前点的位置。
 
-| 名称   | 描述                  |
+| 参数   | 说明                  |
 | ------ | --------------------- |
 | nodeid | 节点的 ID             |
 | &x     | 用于存储 X 坐标的变量 |

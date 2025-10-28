@@ -13,7 +13,7 @@ tags: ["sqlite"]
 
 该函数用于建立与`/scriptfiles`目录下的 SQLite 数据库文件的连接。
 
-| 参数名                                                              | 描述                                       |
+| 参数                                                                | 说明                                       |
 | ------------------------------------------------------------------- | ------------------------------------------ |
 | const name[]                                                        | 数据库文件名（不含路径）                   |
 | SQLITE_OPEN:flags = SQLITE_OPEN_READWRITE &#124; SQLITE_OPEN_CREATE | [权限标志](../resources/sqlite-open-flags) |

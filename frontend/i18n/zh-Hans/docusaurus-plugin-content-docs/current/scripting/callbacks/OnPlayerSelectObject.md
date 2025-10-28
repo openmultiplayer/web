@@ -9,7 +9,7 @@ tags: ["玩家", "物体"]
 
 当玩家使用 [BeginObjectSelecting](../functions/BeginObjectSelecting) 后选择物体时触发该回调函数。
 
-| 参数名             | 说明                                         |
+| 参数               | 说明                                         |
 | ------------------ | -------------------------------------------- |
 | playerid           | 选择物体的玩家ID                             |
 | SELECT_OBJECT:type | 选择的[类型](../resources/selectobjecttypes) |

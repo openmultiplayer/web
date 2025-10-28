@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 当玩家受到伤害时触发该回调函数。
 
-| 参数名          | 说明                                                |
+| 参数            | 说明                                                |
 | --------------- | --------------------------------------------------- |
 | playerid        | 受到伤害的玩家ID                                    |
 | issuerid        | 造成伤害的玩家ID（若为自伤则返回INVALID_PLAYER_ID） |
@@ -87,7 +87,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 以下回调可能与该回调存在关联：
 
 - [OnPlayerGiveDamage](OnPlayerGiveDamage): 当玩家造成伤害时触发
-- [OnPlayerWeaponShot](OnPlayerWeaponShot): 当玩家发射武器时触发
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): 当玩家开火时触发
 
 ## 相关资源
 

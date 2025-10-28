@@ -1,7 +1,7 @@
 ---
 title: NPC_GetVehicleGearState
 sidebar_label: NPC_GetVehicleGearState
-description: 获取NPC飞行器的起落架状态。
+description: 获取 NPC 飞行器的起落架状态。
 tags: ["npc", "车辆", “飞机”, “起落架”]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "车辆", “飞机”, “起落架”]
 
 获取 NPC 飞行器的起落架状态。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

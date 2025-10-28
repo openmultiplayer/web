@@ -11,7 +11,7 @@ tags: ["玩家"]
 
 当玩家完成自定义模型下载时触发该回调函数。关于如何添加自定义模型的详细信息，请参考[发布帖](https://sampforum.blast.hk/showthread.php?tid=644105)和[教程](https://sampforum.blast.hk/showthread.php?tid=644123)。
 
-| 参数名       | 说明                         |
+| 参数         | 说明                         |
 | ------------ | ---------------------------- |
 | playerid     | 完成自定义模型下载的玩家ID   |
 | virtualworld | 玩家完成下载的所属虚拟世界ID |

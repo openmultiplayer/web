@@ -1,7 +1,7 @@
 ---
 title: NPC_GetSurfingObject
 sidebar_label: NPC_GetSurfingObject
-description: 获取NPC正在冲浪的物体。
+description: 获取 NPC 正在冲浪的物体。
 tags: ["npc", "冲浪"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "冲浪"]
 
 获取 NPC 正在冲浪的物体。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

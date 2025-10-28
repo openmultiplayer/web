@@ -1,7 +1,7 @@
 ---
 title: NPC_GetNodePointCount
 sidebar_label: NPC_GetNodePointCount
-description: 获取NPC节点中点的数量。
+description: 获取 NPC 节点中点的数量。
 tags: ["npc", "节点", "导航"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "节点", "导航"]
 
 获取 NPC 节点中点的数量。
 
-| 名称   | 描述      |
+| 参数   | 说明      |
 | ------ | --------- |
 | nodeid | 节点的 ID |
 

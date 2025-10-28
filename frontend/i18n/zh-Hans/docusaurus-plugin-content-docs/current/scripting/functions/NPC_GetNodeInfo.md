@@ -1,7 +1,7 @@
 ---
 title: NPC_GetNodeInfo
 sidebar_label: NPC_GetNodeInfo
-description: 获取NPC节点的信息。
+description: 获取 NPC 节点的信息。
 tags: ["npc", "节点", "导航"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "节点", "导航"]
 
 获取 NPC 节点的信息，包括车辆、行人导航数据。
 
-| 名称      | 描述                       |
+| 参数      | 说明                       |
 | --------- | -------------------------- |
 | nodeid    | 节点的 ID                  |
 | &vehnodes | 用于存储车辆节点数量的变量 |

@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 每当客户端/玩家向服务器发送状态更新时触发该回调函数。常用于创建服务器未主动追踪的客户端状态更新回调，例如生命值/护甲更新或武器切换。
 
-| 参数名   | 说明                   |
+| 参数     | 说明                   |
 | -------- | ---------------------- |
 | playerid | 发送更新数据包的玩家ID |
 
@@ -96,7 +96,7 @@ public OnPlayerUpdate(playerid)
 
 以下回调可能与该回调存在关联：
 
-- [OnPlayerWeaponShot](OnPlayerWeaponShot): 当玩家发射武器时触发
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): 当玩家开火时触发
 
 ## 相关函数
 

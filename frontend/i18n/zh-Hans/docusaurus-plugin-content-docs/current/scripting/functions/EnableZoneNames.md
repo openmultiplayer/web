@@ -9,7 +9,7 @@ tags: ["游戏界面"]
 
 此函数用于控制玩家进入新区域时是否在屏幕右下角显示区域名称（例如"Vinewood"或"Doherty"）。此设置属于游戏模式选项，应在 [OnGameModeInit](../callbacks/OnGameModeInit) 回调中设置。
 
-| 名称        | 描述                                   |
+| 参数        | 说明                                   |
 | ----------- | -------------------------------------- |
 | bool:enable | true 启用区域名称显示 / false 禁用显示 |
 

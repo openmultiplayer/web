@@ -11,7 +11,7 @@ tags: ["sqlite"]
 
 该函数用于获取通过[DB_ExecuteQuery](DB_ExecuteQuery)分配的结果集中的字段总数。
 
-| 参数名            | 说明                                                     |
+| 参数              | 说明                                                     |
 | ----------------- | -------------------------------------------------------- |
 | DBResult:dbresult | 查询结果句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)返回） |
 

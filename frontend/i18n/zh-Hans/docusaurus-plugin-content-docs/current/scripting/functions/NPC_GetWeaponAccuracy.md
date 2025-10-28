@@ -1,7 +1,7 @@
 ---
 title: NPC_GetWeaponAccuracy
 sidebar_label: NPC_GetWeaponAccuracy
-description: 获取NPC武器的精度设置。
+description: 获取 NPC 武器的精度设置。
 tags: ["npc", "武器"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器"]
 
 获取 NPC 武器的精度设置。
 
-| 名称     | 描述            |
+| 参数     | 说明            |
 | -------- | --------------- |
 | npcid    | NPC 的 ID       |
 | weaponid | 要检查的武器 ID |

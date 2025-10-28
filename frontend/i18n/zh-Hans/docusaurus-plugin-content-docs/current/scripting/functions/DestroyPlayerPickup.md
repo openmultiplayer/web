@@ -11,7 +11,7 @@ tags: ["玩家", "拾取物", "玩家专属拾取物"]
 
 销毁通过 [CreatePlayerPickup](CreatePlayerPickup) 创建的玩家专属拾取物。
 
-| 名称     | 描述                                                    |
+| 参数     | 说明                                                    |
 | -------- | ------------------------------------------------------- |
 | playerid | 目标玩家 ID                                             |
 | pickupid | 要销毁的玩家专属拾取物 ID（由 CreatePlayerPickup 返回） |

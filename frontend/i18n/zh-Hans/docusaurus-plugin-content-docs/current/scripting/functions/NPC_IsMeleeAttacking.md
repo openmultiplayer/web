@@ -1,7 +1,7 @@
 ---
 title: NPC_IsMeleeAttacking
 sidebar_label: NPC_IsMeleeAttacking
-description: 检查NPC是否正在进行近战攻击。
+description: 检查 NPC 是否正在进行近战攻击。
 tags: ["npc", "近战攻击", "战斗风格"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "近战攻击", "战斗风格"]
 
 检查 NPC 是否正在进行近战攻击。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

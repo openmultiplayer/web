@@ -1,7 +1,7 @@
 ---
 title: NPC_IsAimingAtPlayer
 sidebar_label: NPC_IsAimingAtPlayer
-description: 检查NPC是否正在瞄准特定玩家。
+description: 检查 NPC 是否正在瞄准特定玩家。
 tags: ["npc", "武器", "瞄准"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器", "瞄准"]
 
 检查 NPC 是否正在瞄准特定玩家。
 
-| 名称     | 描述            |
+| 参数     | 说明            |
 | -------- | --------------- |
 | npcid    | NPC 的 ID       |
 | playerid | 要检查的玩家 ID |

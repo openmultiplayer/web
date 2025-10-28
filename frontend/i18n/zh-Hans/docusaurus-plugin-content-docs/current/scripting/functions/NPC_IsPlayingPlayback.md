@@ -1,7 +1,7 @@
 ---
 title: NPC_IsPlayingPlayback
 sidebar_label: NPC_IsPlayingPlayback
-description: 检查NPC是否正在回放录制。
+description: 检查 NPC 是否正在回放录制。
 tags: ["npc", "录制", "回放"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "录制", "回放"]
 
 检查 NPC 当前是否正在回放录制。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

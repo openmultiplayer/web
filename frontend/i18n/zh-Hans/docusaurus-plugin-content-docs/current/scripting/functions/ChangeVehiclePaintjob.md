@@ -9,7 +9,7 @@ tags: ["车辆"]
 
 修改车辆的涂装样式（纯色修改请参考[ChangeVehicleColor](ChangeVehicleColor)）
 
-| 参数名    | 说明                                                                     |
+| 参数      | 说明                                                                     |
 | --------- | ------------------------------------------------------------------------ |
 | vehicleid | 目标车辆 ID                                                              |
 | paintjob  | 要应用的[涂装样式 ID](../resources/paintjobs)。使用 3 可移除当前涂装样式 |

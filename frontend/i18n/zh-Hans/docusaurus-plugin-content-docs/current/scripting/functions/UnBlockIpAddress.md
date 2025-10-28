@@ -9,7 +9,7 @@ tags: ["管理", "IP地址"]
 
 解除通过[BlockIpAddress](BlockIpAddress)封禁的 IP 地址。
 
-| 名称              | 描述                   |
+| 参数              | 说明                   |
 | ----------------- | ---------------------- |
 | const ipAddress[] | 需要解除封禁的 IP 地址 |
 

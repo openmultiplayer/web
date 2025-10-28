@@ -11,7 +11,7 @@ tags: ["sqlite"]
 
 释放由[DB_ExecuteQuery](DB_ExecuteQuery)分配的查询结果内存。
 
-| 参数名            | 说明                                                             |
+| 参数              | 说明                                                             |
 | ----------------- | ---------------------------------------------------------------- |
 | DBResult:dbresult | 要释放的查询结果句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)分配） |
 

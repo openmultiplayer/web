@@ -11,7 +11,7 @@ tags: ["npc", "武器", "战斗"]
 
 设置 NPC 的当前武器为特定武器 ID。
 
-| 名称   | 描述            |
+| 参数   | 说明            |
 | ------ | --------------- |
 | npcid  | NPC 的 ID       |
 | weapon | 要设置的武器 ID |
@@ -74,4 +74,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关回调
 
-- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): NPC 开枪时调用
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): NPC 开火时调用

@@ -11,7 +11,7 @@ tags: ["sqlite"]
 
 该函数用于通过字段索引从[DB_ExecuteQuery](DB_ExecuteQuery)分配的查询结果中获取整数值。
 
-| 参数名          | 说明                                                     |
+| 参数            | 说明                                                     |
 | --------------- | -------------------------------------------------------- |
 | DBResult:result | 查询结果句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)返回） |
 | field = 0       | 目标字段索引（默认从 0 开始）                            |

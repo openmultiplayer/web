@@ -1,7 +1,7 @@
 ---
 title: NPC_GetSpecialAction
 sidebar_label: NPC_GetSpecialAction
-description: 获取NPC当前的特别动作。
+description: 获取 NPC 当前的特别动作。
 tags: ["npc"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc"]
 
 获取 NPC 当前的特别动作。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

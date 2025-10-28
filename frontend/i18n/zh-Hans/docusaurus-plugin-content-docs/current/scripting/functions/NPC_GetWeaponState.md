@@ -1,7 +1,7 @@
 ---
 title: NPC_GetWeaponState
 sidebar_label: NPC_GetWeaponState
-description: 获取NPC的武器状态。
+description: 获取 NPC 的武器状态。
 tags: ["npc", "武器"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器"]
 
 获取 NPC 的武器状态。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

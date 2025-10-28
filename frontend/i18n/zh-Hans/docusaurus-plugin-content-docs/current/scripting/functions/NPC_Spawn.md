@@ -9,37 +9,29 @@ tags: ["npc"]
 
 ## 描述
 
-将 NPC 生成到游戏世界中，使其可见和活跃。
+生成 NPC 到游戏世界中，使其可见并活跃。
 
-| 名称  | 描述        |
-| ----- | ----------- |
-| npcid | NPC 的 ID。 |
+| 参数  | 说明      |
+| ----- | --------- |
+| npcid | NPC 的 ID |
 
 ## 返回值
 
-如果 NPC 生成成功则返回`true`，否则返回`false`。
+如果 NPC 成功生成返回 `true`，否则返回 `false`。
 
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Guard");
-
-    if (NPC_IsValid(npcid))
-    {
-        NPC_Spawn(npcid);
-        printf("NPC %d 生成成功", npcid);
-    }
-
-    return 1;
-}
+new g_NPCCount = 0;
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/spawnnpc", true))
     {
-        new const npcid = NPC_Create("Bot");
+        new name[24];
+        format(name, sizeof(name), "Bot_%d", g_NPCCount++);
+
+        new npcid = NPC_Create(name);
         if (NPC_IsValid(npcid))
         {
             new Float:x, Float:y, Float:z;
@@ -48,7 +40,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
             NPC_Spawn(npcid);
             NPC_SetPos(npcid, x + 3.0, y, z);
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 已在您附近生成！");
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %s 已在您附近生成！", name);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "创建NPC失败！");
         }
         return 1;
     }
@@ -60,21 +56,20 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-- NPC 在生成前必须使用 [NPC_Create](NPC_Create) 创建。
-- 生成使 NPC 在游戏世界中可见和活跃。
-- NPC 在被 [NPC_SetPos](NPC_SetPos) 移动之前会出现在默认位置。
-- 您只能生成有效的 NPC（使用 [NPC_IsValid](NPC_IsValid) 检查）。
+- NPC 在生成前必须通过 [NPC_Create](NPC_Create) 创建。
+- 生成使 NPC 在游戏世界中可见并活跃。
+- NPC 在通过 [NPC_SetPos](NPC_SetPos) 移动前会生成在默认位置。
 
 :::
 
 ## 相关函数
 
-- [NPC_Create](NPC_Create): 创建新 NPC。
-- [NPC_IsValid](NPC_IsValid): 检查 NPC ID 是否有效。
-- [NPC_SetPos](NPC_SetPos): 设置 NPC 位置。
-- [NPC_Destroy](NPC_Destroy): 销毁 NPC。
+- [NPC_Create](NPC_Create): 创建新 NPC
+- [NPC_IsValid](NPC_IsValid): 检查 NPC ID 是否有效
+- [NPC_SetPos](NPC_SetPos): 设置 NPC 位置
+- [NPC_Destroy](NPC_Destroy): 销毁 NPC
 
 ## 相关回调
 
-- [OnNPCSpawn](../callbacks/OnNPCSpawn): NPC 生成时调用。
-- [OnNPCCreate](../callbacks/OnNPCCreate): NPC 创建时调用。
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): NPC 生成时调用
+- [OnNPCCreate](../callbacks/OnNPCCreate): NPC 创建时调用

@@ -1,7 +1,7 @@
 ---
 title: NPC_GetWeaponShootTime
 sidebar_label: NPC_GetWeaponShootTime
-description: 获取NPC武器的射击时间。
+description: 获取 NPC 武器的射击时间。
 tags: ["npc", "武器"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器"]
 
 获取 NPC 武器的射击时间。
 
-| 名称     | 描述                    |
+| 参数     | 说明                    |
 | -------- | ----------------------- |
 | npcid    | NPC 的 ID               |
 | weaponid | 要获取射击时间的武器 ID |

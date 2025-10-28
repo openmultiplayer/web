@@ -1,7 +1,7 @@
 ---
 title: NPC_IsDead
 sidebar_label: NPC_IsDead
-description: 检查NPC是否死亡。
+description: 检查 NPC 是否死亡。
 tags: ["npc"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc"]
 
 检查 NPC 是否死亡。
 
-| 名称  | 描述               |
+| 名称  | 说明               |
 | ----- | ------------------ |
 | npcid | 要检查的 NPC 的 ID |
 

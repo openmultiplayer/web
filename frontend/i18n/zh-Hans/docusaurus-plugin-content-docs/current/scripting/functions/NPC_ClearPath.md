@@ -9,11 +9,11 @@ tags: ["npc", "路径"]
 
 ## 描述
 
-清除 NPC 路径中的所有路径点，使其变为空路径。
+清除 NPC 路径中的所有点，使其变为空路径。
 
-| 名称   | 描述              |
-| ------ | ----------------- |
-| pathid | 要清除的路径的 ID |
+| 参数   | 说明            |
+| ------ | --------------- |
+| pathid | 要清除的路径 ID |
 
 ## 返回值
 
@@ -22,42 +22,42 @@ tags: ["npc", "路径"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new pathid = NPC_CreatePath();
-
-    // 向路径添加一些路径点
-    NPC_AddPointToPath(pathid, 1958.33, 1343.12, 15.36, 1.0);
-    NPC_AddPointToPath(pathid, 1968.33, 1353.12, 15.36, 1.0);
-    NPC_AddPointToPath(pathid, 1978.33, 1363.12, 15.36, 1.0);
-
-    printf("路径中的路径点: %d", NPC_GetPathPointCount(pathid)); // 3
-
-    // 清除所有路径点
-    if (NPC_ClearPath(pathid))
+    if (!strcmp(cmdtext, "/clearpatrol", true))
     {
-        printf("路径清除成功");
-        printf("路径中的路径点: %d", NPC_GetPathPointCount(pathid)); // 0
-    }
+        // 获取清除前的点数
+        new count = NPC_GetPathPointCount(g_PatrolPath);
 
-    return 1;
+        // 尝试清除路径
+        if (NPC_ClearPath(g_PatrolPath))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "已清除路径 %d（移除了 %d 个点）", g_PatrolPath, count);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "清除路径失败");
+        }
+
+        return 1;
+    }
+    return 0;
 }
 ```
 
 ## 注意事项
 
-- 此函数从指定路径中移除所有路径点
-- 路径本身保持有效并可以重复使用
+- 此函数会从指定路径中移除所有路径点
+- 路径本身保持有效状态，可以重复使用
 - 当前正在沿此路径移动的任何 NPC 将停止移动
-- 在添加新路径点之前使用此功能重置路径
 
 ## 相关函数
 
 - [NPC_CreatePath](NPC_CreatePath): 创建新路径
-- [NPC_AddPointToPath](NPC_AddPointToPath): 向路径添加路径点
-- [NPC_RemovePointFromPath](NPC_RemovePointFromPath): 移除特定路径点
-- [NPC_GetPathPointCount](NPC_GetPathPointCount): 获取路径中的路径点数量
+- [NPC_AddPointToPath](NPC_AddPointToPath): 向路径添加点
+- [NPC_RemovePointFromPath](NPC_RemovePointFromPath): 移除特定点
+- [NPC_GetPathPointCount](NPC_GetPathPointCount): 获取路径中的点数
 
 ## 相关回调
 
-- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): 当 NPC 完成路径时调用
+- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): NPC 完成路径时调用

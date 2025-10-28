@@ -1,7 +1,7 @@
 ---
 title: NPC_GetFightingStyle
 sidebar_label: NPC_GetFightingStyle
-description: 获取NPC的战斗风格。
+description: 获取 NPC 的战斗风格。
 tags: ["npc", "战斗风格"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "战斗风格"]
 
 获取 NPC 的战斗风格。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

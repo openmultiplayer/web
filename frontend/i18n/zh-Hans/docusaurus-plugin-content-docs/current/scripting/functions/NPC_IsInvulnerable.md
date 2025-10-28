@@ -1,7 +1,7 @@
 ---
 title: NPC_IsInvulnerable
 sidebar_label: NPC_IsInvulnerable
-description: 检查NPC是否对伤害免疫。
+description: 检查 NPC 是否对伤害免疫。
 tags: ["npc", "无敌", "伤害", "保护"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "无敌", "伤害", "保护"]
 
 检查 NPC 是否对伤害免疫。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

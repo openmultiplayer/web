@@ -1,7 +1,7 @@
 ---
 title: NPC_IsPlaybackPaused
 sidebar_label: NPC_IsPlaybackPaused
-description: 检查NPC的回放是否暂停。
+description: 检查 NPC 的回放是否暂停。
 tags: ["npc", "录制", "回放"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "录制", "回放"]
 
 检查 NPC 的回放当前是否暂停。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

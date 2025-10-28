@@ -1,7 +1,7 @@
 ---
 title: NPC_GetPathPoint
 sidebar_label: NPC_GetPathPoint
-description: 获取NPC路径中特定点的坐标和停止范围。
+description: 获取 NPC 路径中特定点的坐标和停止范围。
 tags: ["npc", "路径"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "路径"]
 
 获取 NPC 路径中特定点的坐标和停止范围。
 
-| 名称        | 描述                   |
+| 参数        | 说明                   |
 | ----------- | ---------------------- |
 | pathid      | 路径的 ID              |
 | point_index | 点的索引（从 0 开始）  |

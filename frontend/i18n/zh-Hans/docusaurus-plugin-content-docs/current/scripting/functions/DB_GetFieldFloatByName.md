@@ -11,7 +11,7 @@ tags: ["sqlite"]
 
 该函数通过字段名称从[DB_ExecuteQuery](DB_ExecuteQuery)分配的查询结果中获取浮点数值。
 
-| 参数名          | 说明                                                     |
+| 参数            | 说明                                                     |
 | --------------- | -------------------------------------------------------- |
 | DBResult:result | 查询结果句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)返回） |
 | const field[]   | 目标字段名称                                             |

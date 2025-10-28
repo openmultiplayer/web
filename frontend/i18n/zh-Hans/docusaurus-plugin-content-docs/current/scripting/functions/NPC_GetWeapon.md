@@ -1,7 +1,7 @@
 ---
 title: NPC_GetWeapon
 sidebar_label: NPC_GetWeapon
-description: 获取NPC当前持有的武器。
+description: 获取 NPC 当前持有的武器。
 tags: ["npc", "武器"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器"]
 
 获取 NPC 当前持有的武器。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

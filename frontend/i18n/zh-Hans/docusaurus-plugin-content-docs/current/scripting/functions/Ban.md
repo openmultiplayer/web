@@ -15,7 +15,7 @@ tags: ["玩家", "管理"]
 
 可通过 RCON 命令`banip`和`unbanip`管理 IP 封禁（需配合[SendRconCommand](SendRconCommand)使用）。
 
-| 名称     | 说明            |
+| 参数     | 说明            |
 | -------- | --------------- |
 | playerid | 要封禁的玩家 ID |
 

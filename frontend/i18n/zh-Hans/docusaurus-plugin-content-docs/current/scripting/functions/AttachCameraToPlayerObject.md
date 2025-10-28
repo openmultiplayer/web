@@ -9,7 +9,7 @@ tags: ["玩家", "视角"]
 
 将玩家的视角附加到玩家创建的物体上。玩家在视角附加期间仍可自由操控视角，可与 MovePlayerObject 及 AttachPlayerObjectToVehicle 配合使用。
 
-| 名称           | 说明                          |
+| 参数           | 说明                          |
 | -------------- | ----------------------------- |
 | playerid       | 需要附加视角的玩家 ID         |
 | playerobjectid | 要附加视角的玩家创建的物体 ID |

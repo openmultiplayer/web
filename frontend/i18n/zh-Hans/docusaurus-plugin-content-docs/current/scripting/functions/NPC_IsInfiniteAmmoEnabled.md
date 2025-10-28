@@ -1,7 +1,7 @@
 ---
 title: NPC_IsInfiniteAmmoEnabled
 sidebar_label: NPC_IsInfiniteAmmoEnabled
-description: 检查NPC是否启用了无限弹药。
+description: 检查 NPC 是否启用了无限弹药。
 tags: ["npc", "武器", "子弹"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器", "子弹"]
 
 检查 NPC 是否启用了无限弹药。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

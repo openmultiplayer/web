@@ -9,7 +9,7 @@ tags: ["玩家", "物体"]
 
 当玩家完成物体编辑（[BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)）时触发该回调函数。
 
-| 参数名                 | 说明                                                    |
+| 参数                   | 说明                                                    |
 | ---------------------- | ------------------------------------------------------- |
 | playerid               | 进行物体编辑的玩家ID                                    |
 | playerobject           | 0表示全局物体，1表示玩家物体                            |

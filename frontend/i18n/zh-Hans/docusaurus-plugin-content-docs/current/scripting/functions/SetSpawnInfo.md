@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 该函数用于设置指定玩家的生成信息，可配置生成时的武器、队伍、皮肤及坐标。适用于迷你游戏或自动生成系统，相比在[OnPlayerSpawn](../callbacks/OnPlayerSpawn)或[OnPlayerRequestClass](../callbacks/OnPlayerRequestClass)中使用[SetPlayerSkin](SetPlayerSkin)更稳定。
 
-| 参数名         | 说明                                      |
+| 参数           | 说明                                      |
 | -------------- | ----------------------------------------- |
 | playerid       | 需要设置生成信息的玩家 ID                 |
 | team           | 玩家所属队伍 ID                           |

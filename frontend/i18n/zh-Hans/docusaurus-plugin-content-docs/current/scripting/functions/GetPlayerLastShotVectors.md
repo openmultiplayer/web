@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 获取玩家最后一次射击子弹的起始点和命中点坐标
 
-| 参数名         | 说明                                    |
+| 参数           | 说明                                    |
 | -------------- | --------------------------------------- |
 | playerid       | 需要获取射击信息的玩家 ID               |
 | &Float:originX | 用于存储子弹发射原点 X 坐标的浮点型变量 |
@@ -65,4 +65,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关回调函数
 
-- [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot): 当玩家发射武器时触发
+- [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot): 当玩家开火时触发

@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 当玩家生成时触发该回调函数（例如调用 [SpawnPlayer](../functions/SpawnPlayer) 函数之后）。
 
-| 参数名   | 说明           |
+| 参数     | 说明           |
 | -------- | -------------- |
 | playerid | 已生成玩家的ID |
 

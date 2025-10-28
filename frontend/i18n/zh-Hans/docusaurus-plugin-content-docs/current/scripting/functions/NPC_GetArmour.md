@@ -11,7 +11,7 @@ tags: ["npc", "生命值"]
 
 获取 NPC 的护甲值。
 
-| 名称  | 描述      |
+| 参数  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 
@@ -22,27 +22,20 @@ tags: ["npc", "生命值"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Guard");
-    NPC_Spawn(npcid);
-
-    NPC_SetArmour(npcid, 75.5);
-
-    new Float:armour = NPC_GetArmour(npcid);
-    printf("NPC %d 有 %.1f 护甲", npcid, armour); // 输出: 75.5
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkarmour", true))
     {
-        new Float:armour = NPC_GetArmour(0);
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 护甲: %.1f", armour);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new Float:armour = NPC_GetArmour(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 有 %.1f%% 护甲", npcid, armour);
         return 1;
     }
     return 0;
@@ -52,9 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 护甲值范围从 0.0 到 100.0
-- 护甲提供伤害保护
-- 当护甲耗尽时，伤害直接影响生命值
-- NPC 默认开始时护甲为 0.0
+- NPC 默认护甲值为 0.0，使用 [NPC_SetArmour](NPC_SetArmour) 设置更高的值
 
 ## 相关函数
 
@@ -65,5 +56,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关回调
 
-- [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): 当 NPC 受到伤害时调用
-- [OnNPCDeath](../callbacks/OnNPCDeath): 当 NPC 死亡时调用
+- [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): NPC 受到伤害时调用
+- [OnNPCDeath](../callbacks/OnNPCDeath): NPC 死亡时调用

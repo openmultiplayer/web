@@ -1,7 +1,7 @@
 ---
 title: NPC_IsEnteringVehicle
 sidebar_label: NPC_IsEnteringVehicle
-description: 检查NPC是否正在进入车辆。
+description: 检查 NPC 是否正在进入车辆。
 tags: ["npc", "车辆"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "车辆"]
 
 检查 NPC 当前是否正在进入车辆的过程中。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

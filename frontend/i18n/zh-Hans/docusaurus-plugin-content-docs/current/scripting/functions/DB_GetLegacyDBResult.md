@@ -11,7 +11,7 @@ tags: ["sqlite"]
 
 该函数用于获取通过[DB_ExecuteQuery](DB_ExecuteQuery)执行的 SQLite 数据库查询结果的内存句柄。
 
-| 参数名          | 说明                                                       |
+| 参数            | 说明                                                       |
 | --------------- | ---------------------------------------------------------- |
 | DBResult:result | 数据库查询句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)返回） |
 

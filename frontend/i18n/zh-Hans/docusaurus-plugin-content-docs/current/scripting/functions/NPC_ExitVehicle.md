@@ -9,9 +9,9 @@ tags: ["npc", "车辆"]
 
 ## 描述
 
-使 NPC 退出其当前车辆。
+使 NPC 退出其当前所在的车辆。
 
-| 名称  | 描述      |
+| 参数  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 
@@ -22,43 +22,69 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
+new g_car = INVALID_VEHICLE_ID;
+
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // 10 秒后，使 NPC 退出车辆
-    SetTimerEx("ExitNPCVehicle", 10000, false, "i", npcid);
-
+    g_car = CreateVehicle(411, 2473.9121, -1683.4276, 13.3589, -34.5, 136, 142, -1, false);
     return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/npcentercar", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有NPC。");
+
+        if (g_car == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "车辆未创建。");
+
+        if (NPC_EnterVehicle(npcid, g_car, 0, NPC_MOVE_TYPE_JOG))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进入汽车（驾驶员座位）。", npcid);
+
+            // 25秒后退出
+            SetTimerEx("ExitNPCVehicle", 25000, false, "i", npcid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "NPC %d 进入汽车失败。", npcid);
+        }
+
+        return 1;
+    }
+    return 0;
 }
 
 forward ExitNPCVehicle(npcid);
 public ExitNPCVehicle(npcid)
 {
-    if (NPC_GetVehicle(npcid) != INVALID_VEHICLE_ID)
+    if (!NPC_IsValid(npcid))
+        return 0;
+
+    new vehid = NPC_GetVehicle(npcid);
+    if (vehid != INVALID_VEHICLE_ID)
     {
         NPC_ExitVehicle(npcid);
-        printf("NPC %d 已退出车辆", npcid);
+        printf("NPC %d 退出了车辆 %d", npcid, vehid);
     }
+    return 1;
 }
+
 ```
 
 ## 注意事项
 
-- NPC 必须在车辆中此函数才能工作
-- NPC 将执行退出动画
-- 退出后，NPC 将在车辆附近步行
-- 如果 NPC 不在车辆中，此函数无效
+- NPC 必须在车辆中此函数才能生效，否则此函数无效
+- NPC 会执行退出动画，退出后，NPC 将在车辆附近步行
 
 ## 相关函数
 
 - [NPC_EnterVehicle](NPC_EnterVehicle): 使 NPC 进入车辆
 - [NPC_PutInVehicle](NPC_PutInVehicle): 立即将 NPC 放入车辆
-- [NPC_RemoveFromVehicle](NPC_RemoveFromVehicle): 立即从车辆中移除 NPC
+- [NPC_RemoveFromVehicle](NPC_RemoveFromVehicle): 立即将 NPC 从车辆中移除
 - [NPC_GetVehicle](NPC_GetVehicle): 获取 NPC 当前车辆
 
 ## 相关回调

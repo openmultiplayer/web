@@ -1,7 +1,7 @@
 ---
 title: NPC_GetVirtualWorld
 sidebar_label: NPC_GetVirtualWorld
-description: 获取NPC所在的虚拟世界。
+description: 获取 NPC 所在的虚拟世界。
 tags: ["npc"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc"]
 
 获取 NPC 所在的虚拟世界。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

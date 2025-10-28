@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 当玩家拾取通过[CreatePickup](../functions/CreatePickup)创建的拾取物时触发该回调函数。
 
-| 参数名   | 说明                                                        |
+| 参数     | 说明                                                        |
 | -------- | ----------------------------------------------------------- |
 | playerid | 拾取拾取物的玩家ID                                          |
 | pickupid | 拾取物ID（由[CreatePickup](../functions/CreatePickup)返回） |

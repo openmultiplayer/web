@@ -1,7 +1,7 @@
 ---
 title: NPC_IsAnyStreamedIn
 sidebar_label: NPC_IsAnyStreamedIn
-description: 检查NPC是否对任何玩家已流加载。
+description: 检查 NPC 是否对任何玩家已流加载。
 tags: ["npc", "流加载"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "流加载"]
 
 检查 NPC 是否对服务器上的任何玩家已流加载。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

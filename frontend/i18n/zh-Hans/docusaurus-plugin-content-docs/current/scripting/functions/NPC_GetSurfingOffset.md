@@ -1,7 +1,7 @@
 ---
 title: NPC_GetSurfingOffset
 sidebar_label: NPC_GetSurfingOffset
-description: 获取NPC的冲浪偏移。
+description: 获取 NPC 的冲浪偏移。
 tags: ["npc", "冲浪"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "冲浪"]
 
 获取 NPC 的冲浪偏移。
 
-| 名称  | 描述                                |
+| 名称  | 说明                                |
 | ----- | ----------------------------------- |
 | npcid | NPC 的 ID                           |
 | &x    | 用于存储 X 偏移的变量，通过引用传递 |
@@ -34,7 +34,7 @@ public CheckNPCSurfing(npcid)
     }
     else
     {
-        printf("获取NPC %d的冲浪偏移失败", npcid);
+        printf("获取 NPC  %d的冲浪偏移失败", npcid);
     }
 }
 ```

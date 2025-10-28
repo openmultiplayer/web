@@ -9,12 +9,12 @@ tags: ["npc", "车辆"]
 
 ## 描述
 
-使 NPC 通过走向车辆并进入来乘坐车辆。
+使 NPC 通过走向车辆并进入其中。
 
-| 名称      | 描述                 |
+| 参数      | 说明                 |
 | --------- | -------------------- |
 | npcid     | NPC 的 ID            |
-| vehicleid | 要进入的车辆的 ID    |
+| vehicleid | 要进入的车辆 ID      |
 | seatid    | 要进入的座位         |
 | moveType  | 接近时使用的移动类型 |
 
@@ -25,32 +25,29 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
+new g_motorcycle = INVALID_VEHICLE_ID,
+
 public OnGameModeInit()
 {
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-
-    // 使 NPC 走向车辆并作为驾驶员进入
-    NPC_EnterVehicle(npcid, vehicleid, 0, NPC_MOVE_TYPE_WALK);
-
-    return 1;
+    g_motorcycle = CreateVehicle(522, 2493.7583, -1683.6482, 12.9099, 270.8069, 225, 155, -1, false);
+    return1;
 }
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcride", true))
+    if (!strcmp(cmdtext, "/npcenterbike", true, 13))
     {
-        new Float:x, Float:y, Float:z;
-        GetPlayerPos(playerid, x, y, z);
+        new seatid = strval(cmdtext[14]);
+        if (cmdtext[14] == '\0')
+            return SendClientMessage(playerid, 0xFF0000FF, "用法：/npcenterbike [座位ID]");
 
-        new vehicleid = CreateVehicle(411, x + 5.0, y, z, 0.0, -1, -1, 300);
-        new npcid = NPC_Create("Passenger");
-        NPC_Spawn(npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有NPC。");
 
-        // 使 NPC 作为乘客进入
-        NPC_EnterVehicle(npcid, vehicleid, 1, NPC_MOVE_TYPE_JOG);
+        if (NPC_EnterVehicle(npcid, g_motorcycle, seatid, NPC_MOVE_TYPE_JOG))
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进入摩托车（座位 %d）。", npcid, seatid);
+        else
+            SendClientMessage(playerid, 0xFF0000FF, "NPC %d 进入摩托车失败（座位 %d）。", npcid, seatid);
 
         return 1;
     }
@@ -60,21 +57,18 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 座位 ID
 
-| ID  | 座位               |
-| --- | ------------------ |
-| 0   | 驾驶员             |
-| 1   | 副驾驶             |
-| 2   | 后左乘客           |
-| 3   | 后右乘客           |
-| 4+  | 乘客座位（大巴等） |
+| ID  | 座位             |
+| --- | ---------------- |
+| 0   | 驾驶员           |
+| 1   | 副驾驶座         |
+| 2   | 后左座           |
+| 3   | 后右座           |
+| 4+  | 乘客座（大巴等） |
 
 ## 注意事项
 
-- NPC 在进入前会寻路到车辆门
-- NPC 将使用指定的移动类型到达车辆
-- 如果座位被占用，NPC 可能无法进入
-- 座位 0 始终是驾驶员座位
-- 最大座位 ID 取决于车辆模型
+- NPC 会尝试使用指定的移动类型到达车辆门，然后进入
+- 如果座位已被占用，NPC 可能无法进入
 
 ## 相关函数
 

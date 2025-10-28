@@ -1,7 +1,7 @@
 ---
 title: NPC_GetHealth
 sidebar_label: NPC_GetHealth
-description: 获取NPC的生命值。
+description: 获取 NPC 的生命值。
 tags: ["npc", "生命值"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "生命值"]
 
 获取 NPC 的生命值。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

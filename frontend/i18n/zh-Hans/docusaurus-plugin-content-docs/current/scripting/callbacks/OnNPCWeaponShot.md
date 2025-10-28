@@ -1,7 +1,7 @@
 ---
 title: OnNPCWeaponShot
 sidebar_label: OnNPCWeaponShot
-description: 当 NPC 发射武器时调用此回调。
+description: 当 NPC 开火时调用此回调。
 tags: ["npc", "武器", "射击"]
 ---
 
@@ -9,12 +9,12 @@ tags: ["npc", "武器", "射击"]
 
 ## 描述
 
-当 NPC 发射武器时调用此回调。
+当 NPC 开火时调用此回调。
 
-| 名称     | 描述                     |
+| 参数     | 说明                     |
 | -------- | ------------------------ |
-| npcid    | 发射武器的 NPC 的 ID     |
-| weaponid | 发射的武器 ID            |
+| npcid    | 开火的 NPC 的 ID         |
+| weaponid | 开火的武器 ID            |
 | hittype  | 命中的实体类型（如果有） |
 | hitid    | 命中的实体 ID（如果有）  |
 | fX       | 子弹击中的 X 坐标        |
@@ -69,4 +69,4 @@ public OnNPCWeaponShot(npcid, weaponid, hittype, hitid, Float:fX, Float:fY, Floa
 ## 相关回调
 
 - [OnNPCGiveDamage](OnNPCGiveDamage): 当 NPC 对玩家造成伤害时调用
-- [OnPlayerWeaponShot](OnPlayerWeaponShot): 当玩家发射武器时调用
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): 当玩家开火时调用

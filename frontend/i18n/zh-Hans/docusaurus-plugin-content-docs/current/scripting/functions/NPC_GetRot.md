@@ -1,7 +1,7 @@
 ---
 title: NPC_GetRot
 sidebar_label: NPC_GetRot
-description: 获取NPC的旋转角度。
+description: 获取 NPC 的旋转角度。
 tags: ["npc", "旋转"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "旋转"]
 
 获取 NPC 在 3D 空间中的旋转角度。
 
-| 名称     | 描述                                            |
+| 参数     | 说明                                            |
 | -------- | ----------------------------------------------- |
 | npcid    | NPC 的 ID。                                     |
 | &Float:x | 用于存储 X 旋转（俯仰角）的变量，通过引用传递。 |

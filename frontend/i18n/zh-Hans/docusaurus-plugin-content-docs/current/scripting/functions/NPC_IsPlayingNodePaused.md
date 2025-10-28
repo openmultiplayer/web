@@ -1,7 +1,7 @@
 ---
 title: NPC_IsPlayingNodePaused
 sidebar_label: NPC_IsPlayingNodePaused
-description: 检查NPC的节点播放是否当前暂停。
+description: 检查 NPC 的节点播放是否当前暂停。
 tags: ["npc", "节点"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "节点"]
 
 检查 NPC 的节点播放当前是否暂停。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

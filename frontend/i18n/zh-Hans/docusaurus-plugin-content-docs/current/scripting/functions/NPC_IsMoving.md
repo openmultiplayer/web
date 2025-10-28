@@ -1,7 +1,7 @@
 ---
 title: NPC_IsMoving
 sidebar_label: NPC_IsMoving
-description: 检查NPC当前是否正在移动。
+description: 检查 NPC 当前是否正在移动。
 tags: ["npc", "移动"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "移动"]
 
 检查 NPC 当前是否正在移动。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

@@ -9,15 +9,15 @@ tags: ["npc"]
 
 ## 描述
 
-销毁 NPC。
+销毁一个 NPC。
 
-| 名称  | 描述                 |
-| ----- | -------------------- |
-| npcid | 要销毁的 NPC 的 ID。 |
+| 参数  | 说明               |
+| ----- | ------------------ |
+| npcid | 要销毁的 NPC 的 ID |
 
 ## 返回值
 
-如果 NPC 成功销毁则返回 `true`，否则返回 `false`。
+如果 NPC 成功销毁返回 `true`，否则返回 `false`。
 
 ## 示例
 
@@ -26,11 +26,24 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/destroynpc", true))
     {
-        if (NPC_IsValid(0))
+        new npcid = PlayerNPC[playerid];
+
+        if (!NPC_IsValid(npcid))
         {
-            NPC_Destroy(0);
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 已销毁");
+            SendClientMessage(playerid, 0xFF0000FF, "您没有有效的NPC可以销毁。");
+            return 1;
         }
+
+        if (NPC_Destroy(npcid))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "您的NPC（ID %d）已被销毁。", npcid);
+            PlayerNPC[playerid] = INVALID_NPC_ID; // 如果没有定义INVALID_NPC_ID，可以使用0
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "销毁您的NPC（ID %d）失败。", npcid);
+        }
+
         return 1;
     }
     return 0;
@@ -41,16 +54,15 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-- 这将从服务器中完全移除 NPC。
-- NPC ID 在销毁后变为无效。
+- 这将从服务器中完全移除 NPC，ID 在销毁后变为无效。
 
 :::
 
 ## 相关函数
 
-- [NPC_Create](NPC_Create): 创建新的 NPC。
-- [NPC_IsValid](NPC_IsValid): 检查 NPC ID 是否有效。
+- [NPC_Create](NPC_Create): 创建新 NPC
+- [NPC_IsValid](NPC_IsValid): 检查 NPC ID 是否有效
 
 ## 相关回调
 
-- [OnNPCDestroy](../callbacks/OnNPCDestroy): 当 NPC 被销毁时调用。
+- [OnNPCDestroy](../callbacks/OnNPCDestroy): NPC 销毁时调用

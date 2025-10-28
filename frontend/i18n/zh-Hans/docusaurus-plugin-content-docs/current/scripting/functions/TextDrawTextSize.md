@@ -9,7 +9,7 @@ tags: ["文本绘图"]
 
 调整文本绘图的尺寸（当启用[TextDrawUseBox](TextDrawUseBox)时控制文本框大小，或配合[TextDrawSetSelectable](TextDrawSetSelectable)定义可点击区域）。
 
-| 参数名       | 说明                                                                  |
+| 参数         | 说明                                                                  |
 | ------------ | --------------------------------------------------------------------- |
 | Text:textid  | 需要调整尺寸的文本绘图 ID                                             |
 | Float:width  | X 轴尺寸（左右方向），使用与 TextDrawCreate 相同的 640x480 网格坐标系 |

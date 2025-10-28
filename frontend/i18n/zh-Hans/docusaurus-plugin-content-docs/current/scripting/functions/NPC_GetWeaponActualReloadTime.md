@@ -1,7 +1,7 @@
 ---
 title: NPC_GetWeaponActualReloadTime
 sidebar_label: NPC_GetWeaponActualReloadTime
-description: 获取NPC武器的实际（默认）换弹时间。
+description: 获取 NPC 武器的实际（默认）换弹时间。
 tags: ["npc", "武器"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器"]
 
 从游戏数据中获取 NPC 武器的实际（默认）换弹时间。
 
-| 名称     | 描述            |
+| 参数     | 说明            |
 | -------- | --------------- |
 | npcid    | NPC 的 ID       |
 | weaponid | 要检查的武器 ID |

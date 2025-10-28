@@ -11,7 +11,7 @@ tags: ["npc", "武器", "换弹", "时间"]
 
 设置 NPC 特定武器的重新装填时间。
 
-| 名称     | 描述                        |
+| 参数     | 说明                        |
 | -------- | --------------------------- |
 | npcid    | NPC 的 ID                   |
 | weaponid | 要设置重新装填时间的武器 ID |
@@ -73,4 +73,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关回调
 
-- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): NPC 开枪时调用
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): NPC 开火时调用

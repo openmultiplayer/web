@@ -1,7 +1,7 @@
 ---
 title: NPC_IsAiming
 sidebar_label: NPC_IsAiming
-description: 检查NPC是否正在瞄准。
+description: 检查 NPC 是否正在瞄准。
 tags: ["npc", "武器", "瞄准"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器", "瞄准"]
 
 检查 NPC 是否正在瞄准。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

@@ -1,7 +1,7 @@
 ---
 title: NPC_MoveByPath
 sidebar_label: NPC_MoveByPath
-description: 让 NPC 沿预定义路径移动。
+description: 使 NPC 沿预定义路径移动
 tags: ["npc", "移动", "路径"]
 ---
 
@@ -9,59 +9,38 @@ tags: ["npc", "移动", "路径"]
 
 ## 描述
 
-让 NPC 沿预定义路径移动，具有各种移动选项。
+使 NPC 沿预定义路径移动，支持多种移动选项。
 
-| 名称      | 描述                                  |
+| 参数      | 说明                                  |
 | --------- | ------------------------------------- |
 | npcid     | NPC 的 ID                             |
-| pathid    | 要跟随的路径的 ID                     |
-| moveType  | 移动类型（默认: NPC_MOVE_TYPE_JOG）   |
-| moveSpeed | 移动速度（默认: NPC_MOVE_SPEED_AUTO） |
-| reversed  | 是否反向跟随路径（默认: false）       |
+| pathid    | 要跟随的路径 ID                       |
+| moveType  | 移动类型（默认：NPC_MOVE_TYPE_JOG）   |
+| moveSpeed | 移动速度（默认：NPC_MOVE_SPEED_AUTO） |
+| reversed  | 是否反向跟随路径（默认：false）       |
 
 ## 返回值
 
-如果 NPC 开始跟随路径则返回`true`，否则返回`false`。
+如果 NPC 开始跟随路径返回 `true`，否则返回 `false`。
 
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Patroller");
-    NPC_Spawn(npcid);
-
-    // 创建路径
-    new pathid = NPC_CreatePath();
-    NPC_AddPointToPath(pathid, 1958.33, 1343.12, 15.36, 2.0);
-    NPC_AddPointToPath(pathid, 1958.33, 1443.12, 15.36, 2.0);
-    NPC_AddPointToPath(pathid, 2058.33, 1443.12, 15.36, 2.0);
-    NPC_AddPointToPath(pathid, 2058.33, 1343.12, 15.36, 2.0);
-
-    // 让 NPC 步行跟随路径
-    NPC_MoveByPath(npcid, pathid, NPC_MOVE_TYPE_WALK, NPC_MOVE_SPEED_AUTO, false);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/startpatrol", true))
     {
-        new pathid = NPC_CreatePath();
-        new Float:x, Float:y, Float:z;
-        GetPlayerPos(playerid, x, y, z);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有NPC。");
 
-        // 在玩家周围创建简单的方形巡逻
-        NPC_AddPointToPath(pathid, x + 10.0, y + 10.0, z, 1.0);
-        NPC_AddPointToPath(pathid, x - 10.0, y + 10.0, z, 1.0);
-        NPC_AddPointToPath(pathid, x - 10.0, y - 10.0, z, 1.0);
-        NPC_AddPointToPath(pathid, x + 10.0, y - 10.0, z, 1.0);
+        new count = NPC_GetPathPointCount(g_PatrolPath);
 
-        // 用第一个 NPC 开始巡逻
-        NPC_MoveByPath(0, pathid, NPC_MOVE_TYPE_JOG, NPC_MOVE_SPEED_AUTO, false);
-
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 开始在您周围巡逻");
+        if (NPC_IsValidPath(g_PatrolPath))
+        {
+            NPC_MoveByPath(npcid, g_PatrolPath, NPC_MOVE_TYPE_WALK);
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 开始巡逻路线，共 %d 个点", npcid, count);
+        }
         return 1;
     }
     return 0;
@@ -70,10 +49,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 路径在使用前必须通过 NPC_CreatePath 创建
+- 路径必须在使用前通过 NPC_CreatePath 创建
 - 使用 NPC_AddPointToPath 向路径添加路径点
 - 路径类型包括循环、单次和往返模式
-- 移动标志可以组合以产生不同的行为
+- 移动标志可以组合使用以实现不同行为
 
 ## 相关函数
 
@@ -84,4 +63,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关回调
 
-- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): NPC 完成沿路径移动时调用
+- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): NPC 完成路径移动时调用

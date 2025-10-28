@@ -1,7 +1,7 @@
 ---
 title: NPC_GetFacingAngle
 sidebar_label: NPC_GetFacingAngle
-description: 获取NPC的朝向角度。
+description: 获取 NPC 的朝向角度。
 tags: ["npc", "角度"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "角度"]
 
 获取 NPC 的朝向角度。
 
-| 名称         | 描述                                   |
+| 参数         | 说明                                   |
 | ------------ | -------------------------------------- |
 | npcid        | NPC 的 ID。                            |
 | &Float:angle | 用于存储朝向角度的变量，通过引用传递。 |

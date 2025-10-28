@@ -1,7 +1,7 @@
 ---
 title: NPC_GetNodeType
 sidebar_label: NPC_GetNodeType
-description: 获取NPC节点的类型。
+description: 获取 NPC 节点的类型。
 tags: ["npc", "节点", "导航"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "节点", "导航"]
 
 获取 NPC 节点的类型。
 
-| 名称   | 描述      |
+| 参数   | 说明      |
 | ------ | --------- |
 | nodeid | 节点的 ID |
 

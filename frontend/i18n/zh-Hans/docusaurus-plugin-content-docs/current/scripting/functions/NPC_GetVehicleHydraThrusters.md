@@ -1,7 +1,7 @@
 ---
 title: NPC_GetVehicleHydraThrusters
 sidebar_label: NPC_GetVehicleHydraThrusters
-description: 获取NPC的九头蛇战机推进器方向。
+description: 获取 NPC 的九头蛇战机推进器方向。
 tags: ["npc", "车辆", "九头蛇战机"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "车辆", "九头蛇战机"]
 
 获取 NPC 的九头蛇战机推进器方向。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

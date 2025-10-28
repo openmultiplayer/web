@@ -9,7 +9,7 @@ tags: ["玩家", "菜单"]
 
 当玩家从菜单（通过[ShowMenuForPlayer](../functions/ShowMenuForPlayer)显示）中选择项目时触发该回调函数。
 
-| 参数名   | 说明                      |
+| 参数     | 说明                      |
 | -------- | ------------------------- |
 | playerid | 选择菜单项的玩家ID        |
 | row      | 被选中的行号（首行ID为0） |

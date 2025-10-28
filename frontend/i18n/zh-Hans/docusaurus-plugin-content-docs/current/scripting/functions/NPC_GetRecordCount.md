@@ -1,7 +1,7 @@
 ---
 title: NPC_GetRecordCount
 sidebar_label: NPC_GetRecordCount
-description: 获取已加载的NPC录制文件数量。
+description: 获取已加载的 NPC 录制文件数量。
 tags: ["npc", "录制", "回放"]
 ---
 

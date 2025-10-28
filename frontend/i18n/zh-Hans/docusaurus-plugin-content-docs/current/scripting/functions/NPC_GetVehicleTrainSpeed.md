@@ -1,7 +1,7 @@
 ---
 title: NPC_GetVehicleTrainSpeed
 sidebar_label: NPC_GetVehicleTrainSpeed
-description: 获取NPC驾驶的火车的速度。
+description: 获取 NPC 驾驶的火车的速度。
 tags: ["npc", "车辆", "火车"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "车辆", "火车"]
 
 获取 NPC 驾驶的火车的速度。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

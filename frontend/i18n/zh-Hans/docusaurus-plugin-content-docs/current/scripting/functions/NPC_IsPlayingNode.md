@@ -1,7 +1,7 @@
 ---
 title: NPC_IsPlayingNode
 sidebar_label: NPC_IsPlayingNode
-description: 检查NPC当前是否正在播放节点。
+description: 检查 NPC 当前是否正在播放节点。
 tags: ["npc", "节点"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "节点"]
 
 检查 NPC 当前是否正在播放节点。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

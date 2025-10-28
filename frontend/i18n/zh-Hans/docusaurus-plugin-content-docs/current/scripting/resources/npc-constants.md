@@ -9,13 +9,13 @@ tags: ["npc", "常量"]
 
 ## 限制
 
-| 值  | 常量          | 描述         |
+| 值  | 常量          | 说明         |
 | --- | ------------- | ------------ |
 | 64  | NPC_MAX_NODES | 最大节点数量 |
 
 ## 无效常量
 
-| 值  | 常量              | 描述          |
+| 值  | 常量              | 说明          |
 | --- | ----------------- | ------------- |
 | -1  | INVALID_RECORD_ID | 无效的录制 ID |
 
@@ -23,7 +23,7 @@ tags: ["npc", "常量"]
 
 用于 [NPC_Move](../functions/NPC_Move)、[NPC_MoveByPath](../functions/NPC_MoveByPath)、[NPC_EnterVehicle](../functions/NPC_EnterVehicle) 和 [NPC_PlayNode](../functions/NPC_PlayNode) 等函数。
 
-| 值  | 常量                  | 描述                                   |
+| 值  | 常量                  | 说明                                   |
 | --- | --------------------- | -------------------------------------- |
 | -1  | UNKNOWN_NPC_MOVE_TYPE | 未知移动类型                           |
 | 0   | NPC_MOVE_TYPE_NONE    | 无移动                                 |
@@ -37,7 +37,7 @@ tags: ["npc", "常量"]
 
 用于移动函数以控制 NPC 速度。
 
-| 值        | 常量                  | 描述                   |
+| 值        | 常量                  | 说明                   |
 | --------- | --------------------- | ---------------------- |
 | -1.0      | NPC_MOVE_SPEED_AUTO   | 基于移动类型的自动速度 |
 | 0.1552086 | NPC_MOVE_SPEED_WALK   | 步行速度               |
@@ -48,7 +48,7 @@ tags: ["npc", "常量"]
 
 用于 [NPC_AimAt](../functions/NPC_AimAt)、[NPC_AimAtPlayer](../functions/NPC_AimAtPlayer) 和 [NPC_Shoot](../functions/NPC_Shoot) 的碰撞检测。
 
-| 值  | 常量                          | 描述                         |
+| 值  | 常量                          | 说明                         |
 | --- | ----------------------------- | ---------------------------- |
 | 0   | NPC_ENTITY_CHECK_NONE         | 无碰撞检查                   |
 | 1   | NPC_ENTITY_CHECK_PLAYER       | 检查与玩家的碰撞             |
@@ -65,7 +65,7 @@ tags: ["npc", "常量"]
 
 用于 [NPC_Shoot](../functions/NPC_Shoot) 以指定命中的目标类型。
 
-| 常量                   | 描述       |
+| 常量                   | 说明       |
 | ---------------------- | ---------- |
 | BULLET_HIT_TYPE_NONE   | 无特定目标 |
 | BULLET_HIT_TYPE_PLAYER | 玩家目标   |

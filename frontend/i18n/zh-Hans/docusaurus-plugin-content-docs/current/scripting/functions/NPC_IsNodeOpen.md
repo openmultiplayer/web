@@ -1,7 +1,7 @@
 ---
 title: NPC_IsNodeOpen
 sidebar_label: NPC_IsNodeOpen
-description: 检查NPC节点是否打开。
+description: 检查 NPC 节点是否打开。
 tags: ["npc", "节点", "导航"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "节点", "导航"]
 
 检查 NPC 节点是否打开并可供使用。
 
-| 名称   | 描述      |
+| 参数   | 说明      |
 | ------ | --------- |
 | nodeid | 节点的 ID |
 

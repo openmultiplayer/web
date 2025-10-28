@@ -9,7 +9,7 @@ tags: ["玩家", "物体", "玩家物体"]
 
 功能与[AttachObjectToPlayer](AttachObjectToPlayer)相同，但针对玩家创建的物体。
 
-| 名称            | 说明                        |
+| 参数            | 说明                        |
 | --------------- | --------------------------- |
 | playerid        | 与物体关联的玩家 ID         |
 | objectid        | 要附加的玩家物体 ID         |

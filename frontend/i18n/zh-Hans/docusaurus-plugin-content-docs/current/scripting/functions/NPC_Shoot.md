@@ -1,7 +1,7 @@
 ---
 title: NPC_Shoot
 sidebar_label: NPC_Shoot
-description: 让 NPC 发射武器射击。
+description: 让 NPC 开火射击。
 tags: ["npc", "武器", "射击", "战斗"]
 ---
 
@@ -9,9 +9,9 @@ tags: ["npc", "武器", "射击", "战斗"]
 
 ## 描述
 
-让 NPC 发射武器射击。
+让 NPC 开火射击。
 
-| 名称                | 描述                                       |
+| 参数                | 说明                                       |
 | ------------------- | ------------------------------------------ |
 | npcid               | NPC 的 ID                                  |
 | weapon              | 用于射击的武器 ID                          |

@@ -1,7 +1,7 @@
 ---
 title: NPC_GetSurfingVehicle
 sidebar_label: NPC_GetSurfingVehicle
-description: 获取NPC正在冲浪的车辆。
+description: 获取 NPC 正在冲浪的车辆。
 tags: ["npc", "冲浪", "车辆"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "冲浪", "车辆"]
 
 获取 NPC 正在冲浪的车辆。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

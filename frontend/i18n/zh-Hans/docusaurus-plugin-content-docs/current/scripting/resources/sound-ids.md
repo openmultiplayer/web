@@ -483,7 +483,7 @@ description: PlayerPlaySound使用的声音ID列表
 
 :::
 
-| 名称                               | ID          |
+| 参数                               | ID          |
 | ---------------------------------- | ----------- |
 | SOUND_CEILING_VENT_LAND            | 1002        |
 | SOUND_BONNET_DENT                  | 1009        |

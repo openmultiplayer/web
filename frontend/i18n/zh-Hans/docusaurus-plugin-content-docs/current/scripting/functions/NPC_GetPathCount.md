@@ -1,7 +1,7 @@
 ---
 title: NPC_GetPathCount
 sidebar_label: NPC_GetPathCount
-description: 获取服务器上NPC路径的总数。
+description: 获取服务器上 NPC 路径的总数。
 tags: ["npc", "路径"]
 ---
 

@@ -5,7 +5,7 @@ sidebar_label: 天气ID列表
 
 [SetWeather](../functions/SetWeather) 和 [SetPlayerWeather](../functions/SetPlayerWeather) 函数使用的天气 ID 列表。
 
-| ID  | 名称                   | 类型                   | 描述（单人模式）     |
+| ID  | 参数                   | 类型                   | 描述（单人模式）     |
 | --- | ---------------------- | ---------------------- | -------------------- |
 | 0   | EXTRASUNNY_LA          | 晴朗                   | 洛圣都专属天气       |
 | 1   | SUNNY_LA               | 晴朗                   | 洛圣都专属天气       |

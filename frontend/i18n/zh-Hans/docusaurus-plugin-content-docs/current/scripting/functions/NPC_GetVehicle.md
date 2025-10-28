@@ -1,7 +1,7 @@
 ---
 title: NPC_GetVehicle
 sidebar_label: NPC_GetVehicle
-description: 获取NPC当前乘坐的车辆ID。
+description: 获取 NPC 当前乘坐的车辆ID。
 tags: ["npc", "车辆"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "车辆"]
 
 获取 NPC 当前乘坐的车辆 ID。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

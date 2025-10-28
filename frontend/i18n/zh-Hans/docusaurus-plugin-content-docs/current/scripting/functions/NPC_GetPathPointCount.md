@@ -1,7 +1,7 @@
 ---
 title: NPC_GetPathPointCount
 sidebar_label: NPC_GetPathPointCount
-description: 获取NPC路径中点的数量。
+description: 获取 NPC 路径中点的数量。
 tags: ["npc", "路径"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "路径"]
 
 获取 NPC 路径中点的数量。
 
-| 名称   | 描述      |
+| 参数   | 说明      |
 | ------ | --------- |
 | pathid | 路径的 ID |
 

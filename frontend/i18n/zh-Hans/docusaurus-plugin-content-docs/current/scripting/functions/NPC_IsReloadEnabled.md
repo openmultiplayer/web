@@ -1,7 +1,7 @@
 ---
 title: NPC_IsReloadEnabled
 sidebar_label: NPC_IsReloadEnabled
-description: 检查NPC是否启用了自动换弹。
+description: 检查 NPC 是否启用了自动换弹。
 tags: ["npc", "武器", "子弹"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器", "子弹"]
 
 检查 NPC 是否启用了自动换弹。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

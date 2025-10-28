@@ -1,7 +1,7 @@
 ---
 title: NPC_GetKeys
 sidebar_label: NPC_GetKeys
-description: 获取NPC当前的按键状态。
+description: 获取 NPC 当前的按键状态。
 tags: ["npc", "按键"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "按键"]
 
 获取 NPC 当前的按键状态。
 
-| 名称          | 描述                       |
+| 参数          | 说明                       |
 | ------------- | -------------------------- |
 | npcid         | NPC 的 ID                  |
 | &upAndDown    | 用于存储上下键状态的变量   |

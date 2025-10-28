@@ -9,7 +9,7 @@ tags: ["3d文本标签"]
 
 该函数用于删除通过[Create3DTextLabel](Create3DTextLabel)创建的 3D 文本标签。
 
-| 参数名        | 描述                    |
+| 参数          | 说明                    |
 | ------------- | ----------------------- |
 | Text3D:textid | 要删除的 3D 文本标签 ID |
 

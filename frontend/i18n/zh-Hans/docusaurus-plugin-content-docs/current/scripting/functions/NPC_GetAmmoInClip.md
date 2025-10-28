@@ -9,62 +9,51 @@ tags: ["npc", "武器", "子弹"]
 
 ## 描述
 
-获取 NPC 武器当前弹夹中的弹药数量。
+获取 NPC 武器当前弹匣中的弹药数量。
 
-| 名称  | 描述      |
+| 参数  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 
 ## 返回值
 
-返回 NPC 当前武器弹夹中的弹药数量。
+返回 NPC 当前武器弹匣中的弹药数量。
 
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-
-    NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 300); // 给予 300 发弹药
-    NPC_SetAmmoInClip(npcid, 50); // 设置弹夹中 50 发弹药
-
-    new clipAmmo = NPC_GetAmmoInClip(npcid);
-    new totalAmmo = NPC_GetAmmo(npcid);
-
-    printf("NPC %d: 弹夹中 %d 发，总计 %d 发", npcid, clipAmmo, totalAmmo);
-
-    return 1;
-}
-
-forward CheckNPCAmmo();
-public CheckNPCAmmo()
-{
-    new clipAmmo = NPC_GetAmmoInClip(0);
-
-    if (clipAmmo <= 5)
+    if (!strcmp(cmdtext, "/checkclip", true))
     {
-        printf("NPC 0 弹夹弹药不足: %d", clipAmmo);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new clip = NPC_GetAmmoInClip(npcid);
+
+        SendClientMessage(playerid, 0xFFFFFFFF, "NPC %d 弹匣中还有 %d 发子弹", npcid, clip);
+        return 1;
     }
+    return 0;
 }
 ```
 
 ## 注意事项
 
-- 返回当前装填在武器弹匣/弹夹中的弹药
-- 这与包括备用弹药的总弹药不同
-- 当弹夹为空时，NPC 将需要重新装弹（如果启用）
-- 不同武器有不同的弹夹容量
+- 返回武器弹匣中当前装载的弹药数量，与返回 NPC 总弹药的 [NPC_GetAmmo](NPC_GetAmmo) 不同
+- 弹匣大小根据武器类型而变化
 
 ## 相关函数
 
-- [NPC_SetAmmoInClip](NPC_SetAmmoInClip): 设置弹夹中的弹药
-- [NPC_GetAmmo](NPC_GetAmmo): 获取总弹药
-- [NPC_SetAmmo](NPC_SetAmmo): 设置总弹药
-- [NPC_IsReloading](NPC_IsReloading): 检查 NPC 是否正在重新装弹
+- [NPC_SetAmmoInClip](NPC_SetAmmoInClip): 设置弹匣中的弹药
+- [NPC_GetAmmo](NPC_GetAmmo): 获取总弹药数量
+- [NPC_SetAmmo](NPC_SetAmmo): 设置总弹药数量
+- [NPC_IsReloading](NPC_IsReloading): 检查 NPC 是否正在换弹
 
 ## 相关回调
 
-- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): 当 NPC 发射武器时调用
+- [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): NPC 开火时调用

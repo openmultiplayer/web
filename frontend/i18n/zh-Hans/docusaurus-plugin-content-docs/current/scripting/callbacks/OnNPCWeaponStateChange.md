@@ -11,7 +11,7 @@ tags: ["npc", "武器"]
 
 当 NPC 的武器状态改变时（例如，重新装弹、弹药耗尽等）调用此回调。
 
-| 名称     | 描述           |
+| 参数     | 说明           |
 | -------- | -------------- |
 | npcid    | NPC 的 ID      |
 | newstate | 新的武器状态   |
@@ -51,4 +51,4 @@ public OnNPCWeaponStateChange(npcid, newstate, oldstate)
 
 ## 相关回调
 
-- [OnNPCWeaponShot](OnNPCWeaponShot): 当 NPC 发射武器时调用
+- [OnNPCWeaponShot](OnNPCWeaponShot): 当 NPC 开火时调用

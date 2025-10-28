@@ -9,9 +9,9 @@ tags: ["npc", "动画"]
 
 ## 描述
 
-清除 NPC 的所有动画，使其返回默认状态。
+清除 NPC 的所有动画，使其恢复到默认状态。
 
-| 名称  | 描述      |
+| 参数  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 
@@ -22,41 +22,46 @@ tags: ["npc", "动画"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("AnimBot");
-    NPC_Spawn(npcid);
+    if (!strcmp(cmdtext, "/dance", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有NPC。");
 
-    // 应用一些动画
-    NPC_ApplyAnimation(npcid, "DANCING", "DAN_Loop_A", 4.1, true, false, false, false, 0);
+        NPC_ApplyAnimation(npcid, "DANCING", "dance_loop", 4.1, true, false, false, false, 0);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在播放动画。", npcid);
 
-    // 10 秒后清除所有动画
-    SetTimerEx("ClearNPCAnimations", 10000, false, "i", npcid);
+        SetTimerEx("ClearNPCAnimations", 10000, false, "ii", playerid, npcid);
 
-    return 1;
+        return 1;
+    }
+    return 0;
 }
 
-forward ClearNPCAnimations(npcid);
-public ClearNPCAnimations(npcid)
+forward ClearNPCAnimations(playerid, npcid);
+public ClearNPCAnimations(playerid, npcid)
 {
+
     NPC_ClearAnimations(npcid);
+    SendClientMessage(playerid, 0x00FF00FF, "NPC %d 的动画已清除。", npcid);
 }
+
 ```
 
 ## 注意事项
 
-- 此函数停止所有当前播放的动画
-- NPC 将返回其默认的闲置姿态
-- 任何循环动画都会被中断
-- 这在应用新动画之前重置 NPC 外观时很有用
+- 此函数会停止所有当前播放的动画，包括循环动画
+- NPC 将恢复到默认的闲置姿态
 
 ## 相关函数
 
-- [NPC_ApplyAnimation](NPC_ApplyAnimation): 对 NPC 应用动画
-- [NPC_SetAnimation](NPC_SetAnimation): 按 ID 设置动画
+- [NPC_ApplyAnimation](NPC_ApplyAnimation): 为 NPC 应用动画
+- [NPC_SetAnimation](NPC_SetAnimation): 通过 ID 设置动画
 - [NPC_ResetAnimation](NPC_ResetAnimation): 重置动画状态
 - [NPC_GetAnimation](NPC_GetAnimation): 获取当前动画数据
 
 ## 相关回调
 
-- [OnNPCSpawn](../callbacks/OnNPCSpawn): 当 NPC 生成时调用
+- [OnNPCSpawn](../callbacks/OnNPCSpawn): NPC 生成时调用

@@ -9,7 +9,7 @@ tags: ["玩家", "文本绘图", "玩家文本绘图"]
 
 设置玩家文本绘图的尺寸（当启用[PlayerTextDrawUseBox](PlayerTextDrawUseBox)时的方框尺寸，或用于[PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable)的可点击区域）
 
-| 参数名            | 说明                                                                  |
+| 参数              | 说明                                                                  |
 | ----------------- | --------------------------------------------------------------------- |
 | playerid          | 要设置尺寸的玩家 ID                                                   |
 | PlayerText:textid | 要设置尺寸的玩家文本绘图的 ID                                         |

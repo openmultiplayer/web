@@ -1,7 +1,7 @@
 ---
 title: NPC_GetWeaponClipSize
 sidebar_label: NPC_GetWeaponClipSize
-description: 获取NPC武器的弹夹容量设置。
+description: 获取 NPC 武器的弹夹容量设置。
 tags: ["npc", "武器"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "武器"]
 
 获取 NPC 武器的弹夹容量设置。
 
-| 名称     | 描述            |
+| 参数     | 说明            |
 | -------- | --------------- |
 | npcid    | NPC 的 ID       |
 | weaponid | 要检查的武器 ID |

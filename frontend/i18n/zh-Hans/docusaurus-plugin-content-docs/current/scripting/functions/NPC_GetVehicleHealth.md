@@ -1,7 +1,7 @@
 ---
 title: NPC_GetVehicleHealth
 sidebar_label: NPC_GetVehicleHealth
-description: 获取NPC车辆的生命值。
+description: 获取 NPC 车辆的生命值。
 tags: ["npc", "车辆"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "车辆"]
 
 获取 NPC 车辆的生命值。
 
-| 名称  | 描述      |
+| 名称  | 说明      |
 | ----- | --------- |
 | npcid | NPC 的 ID |
 

@@ -11,7 +11,7 @@ tags: ["npc", "武器", "精准度"]
 
 设置 NPC 特定武器的精准度。
 
-| 名称     | 描述                   |
+| 参数     | 说明                   |
 | -------- | ---------------------- |
 | npcid    | NPC 的 ID              |
 | weaponid | 要设置精准度的武器 ID  |
@@ -64,7 +64,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_GetWeaponAccuracy](NPC_GetWeaponAccuracy): 获取武器精准度
 - [NPC_SetWeapon](NPC_SetWeapon): 设置 NPC 武器
-- [NPC_Shoot](NPC_Shoot): 让 NPC 开枪
+- [NPC_Shoot](NPC_Shoot): 让 NPC 开火
 
 ## 相关回调
 

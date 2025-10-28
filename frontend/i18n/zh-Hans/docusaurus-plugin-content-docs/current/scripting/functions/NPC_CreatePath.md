@@ -9,40 +9,42 @@ tags: ["npc", "路径"]
 
 ## 描述
 
-创建可用于 NPC 导航的新路径。
+创建一个可用于 NPC 导航的新路径。
 
 ## 返回值
 
-返回创建的路径的 ID。
+返回创建的路径 ID。
 
 ## 示例
 
 ```c
-public OnGameModeInit()
+new g_PatrolPath = -1;
+
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new pathid = NPC_CreatePath();
-    printf("路径已创建，ID: %d", pathid);
+    if (!strcmp(cmdtext, "/createpatrol", true))
+    {
+        new pathid = NPC_CreatePath();
+        g_PatrolPath = pathid;
 
-    // 向路径添加路径点
-    NPC_AddPointToPath(pathid, 1958.33, 1343.12, 15.36, 1.0);
-    NPC_AddPointToPath(pathid, 1968.33, 1353.12, 15.36, 1.0);
-    NPC_AddPointToPath(pathid, 1978.33, 1363.12, 15.36, 1.0);
+        // 如果需要，您可以在这里向路径添加点
+        // NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5)
+        // NPC_AddPointToPath(g_PatrolPath, x1, y1, z1, 1.5)
+        // NPC_AddPointToPath(g_PatrolPath, x2, y2, z2, 1.5)
 
-    // 使 NPC 沿此路径移动
-    new npcid = NPC_Create("PathFollower");
-    NPC_Spawn(npcid);
-    NPC_MoveByPath(npcid, pathid, NPC_MOVE_TYPE_WALK);
+        SendClientMessage(playerid, 0x00FF00FF, "已创建巡逻路径 %d", g_PatrolPath);
 
-    return 1;
+        return 1;
+    }
+    return 0;
 }
 ```
 
 ## 注意事项
 
-- 路径创建时为空 - 使用 `NPC_AddPointToPath` 添加路径点
+- 路径始终创建为空，使用 `NPC_AddPointToPath` 添加路径点
 - 多个 NPC 可以同时使用同一路径
 - 路径在使用 `NPC_DestroyPath` 销毁之前保持有效
-- 同时可以存在的路径数量有最大限制
 
 ## 相关函数
 
@@ -53,4 +55,4 @@ public OnGameModeInit()
 
 ## 相关回调
 
-- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): 当 NPC 完成路径时调用
+- [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): NPC 完成路径时调用

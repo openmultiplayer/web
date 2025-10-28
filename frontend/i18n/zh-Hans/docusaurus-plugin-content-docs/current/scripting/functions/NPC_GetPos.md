@@ -1,7 +1,7 @@
 ---
 title: NPC_GetPos
 sidebar_label: NPC_GetPos
-description: 获取NPC的位置。
+description: 获取 NPC 的位置。
 tags: ["npc", "位置"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["npc", "位置"]
 
 获取 NPC 的位置。
 
-| 名称     | 描述                                  |
+| 参数     | 说明                                  |
 | -------- | ------------------------------------- |
 | npcid    | NPC 的 ID。                           |
 | &Float:x | 用于存储 X 坐标的变量，通过引用传递。 |
