@@ -22,41 +22,26 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Passenger");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-
-    // 使 NPC 作为乘客进入座位1
-    NPC_EnterVehicle(npcid, vehicleid, 1, NPC_MOVE_TYPE_WALK);
-
-    SetTimer("CheckEnteringSeat", 100, true);
-
-    return 1;
-}
-
-forward CheckEnteringSeat();
-public CheckEnteringSeat()
-{
-    new seat = NPC_GetEnteringVehicleSeat(0);
-    if (seat != -1)
+    if (!strcmp(cmdtext, "/checkentervehseat", true))
     {
-        new vehicleid = NPC_GetEnteringVehicleID(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        new seatName[16];
-        switch(seat)
-        {
-            case 0: seatName = "驾驶员";
-            case 1: seatName = "副驾驶";
-            case 2: seatName = "后左座";
-            case 3: seatName = "后右座";
-            default: seatName = "未知";
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        printf("NPC 0正在进入车辆%d作为%s（座位%d）", vehicleid, seatName, seat);
+        if (!NPC_IsEnteringVehicle(npcid))
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有进入任何车辆。", npcid);
+
+        new seatid = NPC_GetEnteringVehicleSeat(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进入车辆ID: %d", npcid, seatid);
+        return 1;
     }
+    return 0;
 }
 ```
 
@@ -74,7 +59,6 @@ public CheckEnteringSeat()
 
 - 若 NPC 未进入任何车辆，则返回-1
 - 此信息仅在 NPC 处于进入过程中时有效
-- 座位 0 始终为驾驶员座位
 
 ## 相关函数
 

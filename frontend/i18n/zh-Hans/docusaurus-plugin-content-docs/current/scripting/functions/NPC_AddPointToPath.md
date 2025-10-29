@@ -34,9 +34,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         GetPlayerPos(playerid, x, y, z);
 
         // 尝试添加巡逻点
-        if (NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5))
+        if (NPC_AddPointToPath(PlayerPatrolPath[playerid], x, y, z, 1.5))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "已在您的当前位置向路径 %d 添加路径点", g_PatrolPath);
+            SendClientMessage(playerid, 0x00FF00FF, "已在您的当前位置向路径 %d 添加路径点", PlayerPatrolPath[playerid]);
         }
         else
         {

@@ -22,37 +22,20 @@ tags: ["npc", "战斗风格"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Fighter");
-    NPC_Spawn(npcid);
-
-    NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-
-    new style = NPC_GetFightingStyle(npcid);
-    printf("NPC %d的战斗风格: %d", npcid, style);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkstyle", true))
+    if (!strcmp(cmdtext, "/checkfightingstyle", true))
     {
-        new style = NPC_GetFightingStyle(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        new styleName[32];
-        switch(style)
-        {
-            case FIGHT_STYLE_NORMAL: styleName = "普通";
-            case FIGHT_STYLE_BOXING: styleName = "拳击";
-            case FIGHT_STYLE_KUNGFU: styleName = "功夫";
-            default: styleName = "未知";
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0战斗风格: %s", styleName);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new style = NPC_GetFightingStyle(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 的战斗风格: %d", npcid, style);
         return 1;
     }
     return 0;
@@ -64,7 +47,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 战斗风格影响近战动画和伤害
 - 每种风格都有不同的拳击和踢腿动画
 - 默认战斗风格为 FIGHT_STYLE_NORMAL
-- 战斗风格仅影响徒手格斗
 
 ## 相关函数
 

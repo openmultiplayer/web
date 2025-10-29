@@ -22,57 +22,23 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
-new g_car = INVALID_VEHICLE_ID;
-
-public OnGameModeInit()
-{
-    g_car = CreateVehicle(411, 2473.9121, -1683.4276, 13.3589, -34.5, 136, 142, -1, false);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcentercar", true))
+    if (!strcmp(cmdtext, "/npcexitbike", true))
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        if (g_car == INVALID_VEHICLE_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "车辆未创建。");
-
-        if (NPC_EnterVehicle(npcid, g_car, 0, NPC_MOVE_TYPE_JOG))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进入汽车（驾驶员座位）。", npcid);
-
-            // 25秒后退出
-            SetTimerEx("ExitNPCVehicle", 25000, false, "i", npcid);
-        }
+        if (NPC_ExitVehicle(npcid))
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在离开摩托车.", npcid);
         else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC %d 进入汽车失败。", npcid);
-        }
+            SendClientMessage(playerid, 0xFF0000FF, "NPC %d 离开摩托车失败。", npcid);
 
         return 1;
     }
     return 0;
 }
-
-forward ExitNPCVehicle(npcid);
-public ExitNPCVehicle(npcid)
-{
-    if (!NPC_IsValid(npcid))
-        return 0;
-
-    new vehid = NPC_GetVehicle(npcid);
-    if (vehid != INVALID_VEHICLE_ID)
-    {
-        NPC_ExitVehicle(npcid);
-        printf("NPC %d 退出了车辆 %d", npcid, vehid);
-    }
-    return 1;
-}
-
 ```
 
 ## 注意事项

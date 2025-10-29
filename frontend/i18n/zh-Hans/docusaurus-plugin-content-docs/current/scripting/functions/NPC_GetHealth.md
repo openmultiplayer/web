@@ -22,28 +22,21 @@ tags: ["npc", "生命值"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("HealthBot");
-    NPC_Spawn(npcid);
-
-    NPC_SetHealth(npcid, 75.5);
-
-    new Float:health = NPC_GetHealth(npcid);
-    printf("NPC %d的生命值为 %.1f", npcid, health); // 输出: 75.5
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkhealth", true))
     {
-        new Float:health = NPC_GetHealth(0);
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0生命值: %.1f", health);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        return 1;
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new Float:health;
+        NPC_GetHealth(npcid, health);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 的生命值： %.2f", npcid, health);
     }
     return 0;
 }
@@ -53,8 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 生命值通常范围在 0.0 到 100.0 之间
 - 生命值为 0.0 的 NPC 被视为已死亡
-- 可将生命值设置为超过 100.0 以创建增强型 NPC
-- 使用此函数可在战斗场景中监控 NPC 状态
 
 ## 相关函数
 

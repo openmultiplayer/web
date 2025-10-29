@@ -22,29 +22,20 @@ tags: ["npc", "室内场景"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("IndoorBot");
-    NPC_Spawn(npcid);
-
-    NPC_SetInterior(npcid, 1); // 设置为室内场景1
-
-    new interior = NPC_GetInterior(npcid);
-    printf("NPC %d 在室内场景%d 中", npcid, interior); // 输出: 1
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkinterior", true))
     {
-        new interior = NPC_GetInterior(0);
-        new virtualworld = NPC_GetVirtualWorld(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0: 室内场景%d, 虚拟世界 %d", interior, virtualworld);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new interior = NPC_GetInterior(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 的室内场景： %d", npcid, interior);
         return 1;
     }
     return 0;
@@ -54,9 +45,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 室内场景 0 是主世界（室外）
-- 不同的室内有不同的环境和对象
-- NPC 必须与玩家在同一室内才能交互
-- 在不同室内之间移动 NPC 可能需要重新定位
 
 ## 相关函数
 

@@ -22,45 +22,27 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("CarDriver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    NPC_EnterVehicle(npcid, vehicleid, 0, NPC_MOVE_TYPE_WALK);
-
-    SetTimer("CheckVehicleEntry", 1000, true);
-
-    return 1;
-}
-
-forward CheckVehicleEntry();
-public CheckVehicleEntry()
-{
-    new enteringVehicle = NPC_GetEnteringVehicle(0);
-    if (enteringVehicle != INVALID_VEHICLE_ID)
-    {
-        printf("NPC 0正在进入车辆%d", enteringVehicle);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkvehicle", true))
+    if (!strcmp(cmdtext, "/checkenterveh", true))
     {
-        new enteringVehicle = NPC_GetEnteringVehicle(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        if (enteringVehicle != INVALID_VEHICLE_ID)
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0正在进入车辆%d", enteringVehicle);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0未进入任何车辆");
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        if (!NPC_IsEnteringVehicle(npcid))
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有进入车辆。", npcid);
+
+        new vehicleid = NPC_GetEnteringVehicle(npcid);
+        new seatid = NPC_GetEnteringVehicleSeat(npcid);
+
+        if (vehicleid == INVALID_VEHICLE_ID || vehicleid == 0)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有待定的目标车辆。", npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进入车辆 %d (座位 %d)。", npcid, vehicleid, seatid);
         return 1;
     }
     return 0;
@@ -72,7 +54,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 若 NPC 当前未进入车辆，则返回 INVALID_VEHICLE_ID
 - 此函数与 NPC 已乘坐的车辆不同
 - NPC 必须正在进入过程中，此函数才会返回有效 ID
-- 一旦 NPC 完成进入，此函数将返回 0
 
 ## 相关函数
 

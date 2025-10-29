@@ -23,30 +23,24 @@ tags: ["npc", "角度"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Bot");
-    NPC_Spawn(npcid);
-
-    NPC_SetFacingAngle(npcid, 90.0);
-
-    new Float:angle;
-    NPC_GetFacingAngle(npcid, angle);
-    printf("NPC %d的朝向角度为 %.2f", npcid, angle); // 输出: 90.00
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/getangle", true))
+    if (!strcmp(cmdtext, "/checkfacingangle", true))
     {
-        new Float:angle;
-        NPC_GetFacingAngle(0, angle);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0角度: %.2f 度", angle);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new Float:angle;
+        NPC_GetFacingAngle(npcid, angle);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 的朝向角度为：%.2f", npcid, angle);
         return 1;
     }
+
     return 0;
 }
 ```
@@ -57,8 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 角度通过引用传递且会被修改。
 - 角度以度为单位（0.0 到 360.0）。
-- 在 GTA:SA 中角度是反向的；现实世界中 90 度应为东向，但在 GTA:SA 中 90 度实际上是西向。北向和南向仍然是 0/360 和 180 度。要转换此角度，只需计算 360 - angle。
-- 此函数获取的是 2D 朝向角度，而非完整的 3D 旋转。
+- GTA：SA 中的角度是逆时针方向的;在现实世界中，90 度是东方，但在 GTA：SA 中，90 度实际上是西方。北方和南方仍然是 0/360 和 180。要将 GTA：SA 角度转换为现实世界的指南针角度，只需执行 360 - 角度 即可。
 
 :::
 

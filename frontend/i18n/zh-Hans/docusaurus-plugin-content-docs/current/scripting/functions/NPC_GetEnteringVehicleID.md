@@ -22,31 +22,26 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    NPC_EnterVehicle(npcid, vehicleid, 0, NPC_MOVE_TYPE_JOG);
-
-    SetTimer("MonitorVehicleEntry", 500, true);
-
-    return 1;
-}
-
-forward MonitorVehicleEntry();
-public MonitorVehicleEntry()
-{
-    new enteringVehicleID = NPC_GetEnteringVehicleID(0);
-    if (enteringVehicleID != INVALID_VEHICLE_ID)
+    if (!strcmp(cmdtext, "/checkenteringvehicleid", true))
     {
-        printf("NPC 0正在进入车辆ID %d", enteringVehicleID);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        // 检查他们正在进入的座位
-        new seat = NPC_GetEnteringVehicleSeat(0);
-        printf("目标座位: %d", seat);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new vehicleid = NPC_GetEnteringVehicleID(npcid);
+
+        if (vehicleid == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有进入任何车辆。", npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进入车辆ID: %d", npcid, vehicleid);
+        return 1;
     }
+    return 0;
 }
 ```
 
@@ -55,7 +50,6 @@ public MonitorVehicleEntry()
 - 此函数与 NPC_GetEnteringVehicle 类似
 - 若 NPC 未在进入车辆的过程中，则返回 INVALID_VEHICLE_ID
 - 一旦 NPC 成功进入车辆，该值变为 0
-- 使用此函数可追踪 NPC 正在接近的特定车辆
 
 ## 相关函数
 

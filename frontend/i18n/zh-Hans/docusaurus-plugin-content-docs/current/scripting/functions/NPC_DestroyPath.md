@@ -27,22 +27,22 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/deletepatrol", true))
     {
         // 首先检查路径是否有效
-        if (!NPC_IsValidPath(g_PatrolPath))
+        if (!NPC_IsValidPath(PlayerPatrolPath[playerid]))
         {
             SendClientMessage(playerid, 0xFF0000FF, "没有有效的巡逻路径可以删除。");
             return 1;
         }
 
         // 获取路径中有多少个点
-        new count = NPC_GetPathPointCount(g_PatrolPath);
+        new count = NPC_GetPathPointCount(PlayerPatrolPath[playerid]);
 
         // 尝试销毁它
-        if (NPC_DestroyPath(g_PatrolPath))
+        if (NPC_DestroyPath(PlayerPatrolPath[playerid]))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "已销毁路径 %d（移除了 %d 个点）。", g_PatrolPath, count);
+            SendClientMessage(playerid, 0x00FF00FF, "已销毁路径 %d（移除了 %d 个点）。", PlayerPatrolPath[playerid], count);
 
             // 重置全局变量，因为它现在无效了
-            g_PatrolPath = -1;
+            PlayerPatrolPath[playerid] = -1;
         }
         else
         {

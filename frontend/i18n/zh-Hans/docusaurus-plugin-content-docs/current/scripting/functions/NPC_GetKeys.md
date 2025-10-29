@@ -25,40 +25,21 @@ tags: ["npc", "按键"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("KeyBot");
-    NPC_Spawn(npcid);
-
-    // 设置一些按键
-    NPC_SetKeys(npcid, KEY_UP, KEY_LEFT, KEY_FIRE);
-
-    // 获取按键状态
-    new upDown, leftDown, keys;
-    NPC_GetKeys(npcid, upDown, leftDown, keys);
-
-    printf("NPC %d按键 - 上下: %d, 左右: %d, 其他: %d",
-        npcid, upDown, leftDown, keys);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkkeys", true))
     {
-        new upDown, leftDown, keys;
-        NPC_GetKeys(0, upDown, leftDown, keys);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        new keyInfo[128] = "NPC 0按键:";
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        if (upDown & KEY_UP) strcat(keyInfo, " 上");
-        if (upDown & KEY_DOWN) strcat(keyInfo, " 下");
-        if (leftDown & KEY_LEFT) strcat(keyInfo, " 左");
-        if (leftDown & KEY_RIGHT) strcat(keyInfo, " 右");
-        if (keys & KEY_FIRE) strcat(keyInfo, " 开火");
+        new keys, updown, leftright;
+        NPC_GetKeys(npcid, keys, updown, leftright);
 
-        SendClientMessage(playerid, 0xFFFFFFFF, keyInfo);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 键: %d, 上下: %d, 左右: %d", npcid, keys, updown, leftright);
         return 1;
     }
     return 0;

@@ -27,12 +27,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/clearpatrol", true))
     {
         // 获取清除前的点数
-        new count = NPC_GetPathPointCount(g_PatrolPath);
+        new count = NPC_GetPathPointCount(PlayerPatrolPath[playerid]);
 
         // 尝试清除路径
-        if (NPC_ClearPath(g_PatrolPath))
+        if (NPC_ClearPath(PlayerPatrolPath[playerid]))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "已清除路径 %d（移除了 %d 个点）", g_PatrolPath, count);
+            SendClientMessage(playerid, 0x00FF00FF, "已清除路径 %d（移除了 %d 个点）", PlayerPatrolPath[playerid], count);
         }
         else
         {

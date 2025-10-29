@@ -28,14 +28,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
         new ammo = NPC_GetAmmo(npcid);
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC %d 总共还有 %d 发子弹", npcid, ammo);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 总共还有 %d 发子弹", npcid, ammo);
         return 1;
     }
     return 0;

@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
