@@ -43,9 +43,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
             return SendClientMessage(playerid, 0xFFFF00FF, "No patrol path assigned.");
 
         new pointindex = NPC_GetCurrentPathPointIndex(npcid);
-        new Float:x, Float:y, Float:z;
+        new Float:x, Float:y, Float:z, Float:stopRange;
 
-        if (!NPC_GetPathPoint(pathid, pointindex, x, y, z))
+        if (!NPC_GetPathPoint(pathid, pointindex, x, y, z, stopRange))
             return SendClientMessage(playerid, 0xFFFF00FF, "Failed to get path point.");
 
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d path point %d: %.2f, %.2f, %.2f", npcid, pointindex, x, y, z);

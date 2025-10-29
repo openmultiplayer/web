@@ -33,8 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        new Float:health;
-        NPC_GetHealth(npcid, health);
+        new Float:health = NPC_GetHealth(npcid);
 
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d health: %.2f", npcid, health);
         return 1;
