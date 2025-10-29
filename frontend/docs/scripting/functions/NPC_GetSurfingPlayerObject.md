@@ -22,18 +22,26 @@ Returns the player object ID, or `INVALID_OBJECT_ID` if not surfing on a player 
 ## Examples
 
 ```c
-public OnNPCSpawn(npcid)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new objectid = NPC_GetSurfingPlayerObject(npcid);
-    if (objectid != INVALID_OBJECT_ID)
+    if (!strcmp(cmdtext, "/checksurfingplayerobject", true))
     {
-        printf("NPC %d is surfing on player object %d", npcid, objectid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new objectid = NPC_GetSurfingPlayerObject(npcid);
+
+        if (objectid == INVALID_OBJECT_ID)
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d is not surfing on any player object.", npcid);
+        else
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d is surfing on player object: %d", npcid, objectid);
+        return 1;
     }
-    else
-    {
-        printf("NPC %d is not surfing on any player object", npcid);
-    }
-    return 1;
+    return 0;
 }
 ```
 
@@ -47,7 +55,7 @@ public OnNPCSpawn(npcid)
 - [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): Sets the player object an NPC is surfing on
 - [NPC_GetSurfingObject](NPC_GetSurfingObject): Gets the object an NPC is surfing on
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): Gets the vehicle an NPC is surfing on
-- [NPC_GetSurfingOffset](NPC_GetSurfingOffset): Gets the surfing offset for an NPC
+- [NPC_GetSurfingOffset](NPC_GetSurfingOffsets): Gets the surfing offset for an NPC
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): Resets all surfing data for an NPC
 
 ## Related Callbacks

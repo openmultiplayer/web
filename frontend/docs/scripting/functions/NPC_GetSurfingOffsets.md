@@ -25,17 +25,24 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public CheckNPCSurfing(npcid)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new Float:x, Float:y, Float:z;
-    if (NPC_GetSurfingOffset(npcid, x, y, z))
+    if (!strcmp(cmdtext, "/checksurfingoffset", true))
     {
-        printf("NPC %d surfing offset: X=%.2f, Y=%.2f, Z=%.2f", npcid, x, y, z);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new Float:offsetX, Float:offsetY, Float:offsetZ;
+        NPC_GetSurfingOffset(npcid, offsetX, offsetY, offsetZ);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d surfing offset: X=%.2f, Y=%.2f, Z=%.2f", npcid, offsetX, offsetY, offsetZ);
+        return 1;
     }
-    else
-    {
-        printf("Failed to get surfing offset for NPC %d", npcid);
-    }
+    return 0;
 }
 ```
 

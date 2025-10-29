@@ -25,40 +25,21 @@ Returns `true` if the rotation was retrieved successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("RotationBot");
-    NPC_Spawn(npcid);
-
-    NPC_SetRot(npcid, 15.0, 90.0, 0.0);
-
-    new Float:rx, Float:ry, Float:rz;
-    NPC_GetRot(npcid, rx, ry, rz);
-    printf("NPC %d rotation: %.2f, %.2f, %.2f", npcid, rx, ry, rz);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcrot", true))
+    if (!strcmp(cmdtext, "/checkrot", true))
     {
-        new Float:rx, Float:ry, Float:rz;
-        NPC_GetRot(0, rx, ry, rz);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0 rotation: %.1f, %.1f, %.1f", rx, ry, rz);
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-    if (!strcmp(cmdtext, "/copynpcrot", true))
-    {
-        new Float:rx, Float:ry, Float:rz;
-        NPC_GetRot(0, rx, ry, rz);
+        new Float:rotX, Float:rotY, Float:rotZ;
+        NPC_GetRot(npcid, rotX, rotY, rotZ);
 
-        // Copy NPC 0 rotation to player
-        SetPlayerFacingAngle(playerid, rz);
-
-        SendClientMessage(playerid, 0x00FF00FF, "Copied NPC 0 rotation: %.1f degrees", rz);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d rotation: X=%.2f, Y=%.2f, Z=%.2f", npcid, rotX, rotY, rotZ);
         return 1;
     }
     return 0;
@@ -70,7 +51,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::warning
 
 - All rotation parameters are passed by reference and will be modified.
-- Rotation values are in degrees.
 - X = pitch (up/down), Y = yaw (left/right), Z = roll (banking).
 - For simple facing direction, use [NPC_GetFacingAngle](NPC_GetFacingAngle) instead.
 

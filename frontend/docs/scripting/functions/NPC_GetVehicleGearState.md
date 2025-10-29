@@ -22,56 +22,26 @@ Returns the landing gear state of the NPC's aircraft (LANDING_GEAR_STATE_DOWN or
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Pilot");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(519, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300); // Shamal
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // Set landing gear up
-    NPC_SetVehicleGearState(npcid, LANDING_GEAR_STATE_UP);
-
-    new gearState = NPC_GetVehicleGearState(npcid);
-    if (gearState == LANDING_GEAR_STATE_UP)
-    {
-        printf("NPC %d aircraft landing gear is UP", npcid);
-    }
-    else
-    {
-        printf("NPC %d aircraft landing gear is DOWN", npcid);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkgear", true))
+    if (!strcmp(cmdtext, "/checkvehiclegearstate", true))
     {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        for (new i = 0; i < count; i++)
-        {
-            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC is in aircraft
-            {
-                new gearState = NPC_GetVehicleGearState(npcs[i]);
-                new msg[128];
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-                if (gearState == LANDING_GEAR_STATE_UP)
-                {
-                    format(msg, sizeof(msg), "NPC %d: Landing gear UP", npcs[i]);
-                }
-                else
-                {
-                    format(msg, sizeof(msg), "NPC %d: Landing gear DOWN", npcs[i]);
-                }
+        if (NPC_GetVehicle(npcid) == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d is not in any vehicle.", npcid);
 
-                SendClientMessage(playerid, 0xFFFFFFFF, msg);
-            }
-        }
+        new gearState = NPC_GetVehicleGearState(npcid);
+
+        if (gearState == LANDING_GEAR_STATE_UP)
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d: Landing gear UP", npcid);
+        else
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d: Landing gear DOWN", npcid);
 
         return 1;
     }

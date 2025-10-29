@@ -22,38 +22,20 @@ Returns the special action ID, or `SPECIAL_ACTION_NONE` if no special action is 
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("ActionBot");
-    NPC_Spawn(npcid);
-
-    NPC_SetSpecialAction(npcid, SPECIAL_ACTION_DUCK);
-
-    new action = NPC_GetSpecialAction(npcid);
-    printf("NPC %d special action: %d", npcid, action);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkaction", true))
+    if (!strcmp(cmdtext, "/checkspecialaction", true))
     {
-        new action = NPC_GetSpecialAction(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        new actionName[32];
-        switch(action)
-        {
-            case SPECIAL_ACTION_NONE: actionName = "None";
-            case SPECIAL_ACTION_DUCK: actionName = "Ducking";
-            case SPECIAL_ACTION_USEJETPACK: actionName = "Jetpack";
-            case SPECIAL_ACTION_SIT_DOWN: actionName = "Sitting";
-            default: actionName = "Unknown";
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 action: %s", actionName);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new action = NPC_GetSpecialAction(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d special action: %d", npcid, action);
         return 1;
     }
     return 0;
@@ -64,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Returns the current special action constant
 - Use this to check what action the NPC is currently performing
-- Actions include ducking, sitting, using jetpack, etc.
 
 ## Related Functions
 
