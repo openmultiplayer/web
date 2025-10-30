@@ -42,7 +42,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
         new npcid = NPC_Create("RoofRider");
         NPC_Spawn(npcid);
         NPC_SetSurfingVehicle(npcid, vehicleid);
-        NPC_SetSurfingOffset(npcid, 0.0, 0.0, 2.0); // 定位到车顶
+        NPC_SetSurfingOffsets(npcid, 0.0, 0.0, 2.0); // 定位到车顶
     }
     return 1;
 }
@@ -52,7 +52,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 - 此函数允许 NPC 在车辆上"冲浪"，意味着它们会随着车辆移动，同时保持相对于车辆的位置
 - NPC 会跟随车辆的移动、旋转和位置变化
-- 使用 `NPC_SetSurfingOffset` 将 NPC 定位到车辆的特定位置（车顶、引擎盖等）
+- 使用 `NPC_SetSurfingOffsets` 将 NPC 定位到车辆的特定位置（车顶、引擎盖等）
 - 车辆必须存在才能正常冲浪
 
 ## 相关函数
@@ -60,7 +60,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): 获取 NPC 正在冲浪的车辆
 - [NPC_SetSurfingObject](NPC_SetSurfingObject): 设置 NPC 正在冲浪的对象
 - [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 正在冲浪的玩家对象
-- [NPC_SetSurfingOffset](NPC_SetSurfingOffset): 设置 NPC 的冲浪偏移
+- [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): 设置 NPC 的冲浪偏移
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): 重置 NPC 的所有冲浪数据
 
 ## 相关回调

@@ -57,7 +57,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 - [NPC_SetSurfingObject](NPC_SetSurfingObject): 设置 NPC 冲浪的对象
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): 设置 NPC 冲浪的车辆
 - [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 冲浪的玩家对象
-- [NPC_SetSurfingOffset](NPC_SetSurfingOffset): 设置 NPC 的冲浪偏移
+- [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): 设置 NPC 的冲浪偏移
 - [NPC_GetSurfingObject](NPC_GetSurfingObject): 获取 NPC 冲浪的对象
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): 获取 NPC 冲浪的车辆
 

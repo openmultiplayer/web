@@ -1,6 +1,6 @@
 ---
-title: NPC_SetSurfingOffset
-sidebar_label: NPC_SetSurfingOffset
+title: NPC_SetSurfingOffsets
+sidebar_label: NPC_SetSurfingOffsets
 description: 设置 NPC 的冲浪偏移。
 tags: ["npc", "冲浪"]
 ---
@@ -38,7 +38,7 @@ public OnGameModeInit()
 
     // 设置 NPC 在车顶冲浪
     NPC_SetSurfingVehicle(npcid, g_CarrierVehicle);
-    NPC_SetSurfingOffset(npcid, 0.0, 0.0, 2.5); // 车辆上方 2.5 单位
+    NPC_SetSurfingOffsets(npcid, 0.0, 0.0, 2.5); // 车辆上方 2.5 单位
 
     return 1;
 }
@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (g_CarrierVehicle != INVALID_VEHICLE_ID)
         {
             NPC_SetSurfingVehicle(0, g_CarrierVehicle);
-            NPC_SetSurfingOffset(0, 0.0, 0.0, 2.5); // 车顶
+            NPC_SetSurfingOffsets(0, 0.0, 0.0, 2.5); // 车顶
 
             SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已定位到车顶");
         }
@@ -62,7 +62,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (g_CarrierVehicle != INVALID_VEHICLE_ID)
         {
             NPC_SetSurfingVehicle(0, g_CarrierVehicle);
-            NPC_SetSurfingOffset(0, 0.0, 3.0, 1.0); // 车辆前方
+            NPC_SetSurfingOffsets(0, 0.0, 3.0, 1.0); // 车辆前方
 
             SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已定位到车前");
         }
@@ -74,7 +74,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (g_CarrierVehicle != INVALID_VEHICLE_ID)
         {
             NPC_SetSurfingVehicle(0, g_CarrierVehicle);
-            NPC_SetSurfingOffset(0, 2.0, 0.0, 1.0); // 车辆侧面
+            NPC_SetSurfingOffsets(0, 2.0, 0.0, 1.0); // 车辆侧面
 
             SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已定位到车侧");
         }
@@ -95,7 +95,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关函数
 
-- [NPC_GetSurfingOffset](NPC_GetSurfingOffset): 获取 NPC 的冲浪偏移
+- [NPC_GetSurfingOffsets](NPC_GetSurfingOffsets): 获取 NPC 的冲浪偏移
 - [NPC_SetSurfingObject](NPC_SetSurfingObject): 设置 NPC 正在冲浪的对象
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): 设置 NPC 正在冲浪的车辆
 - [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 正在冲浪的玩家对象

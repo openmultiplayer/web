@@ -1,6 +1,6 @@
 ---
-title: NPC_GetSurfingOffset
-sidebar_label: NPC_GetSurfingOffset
+title: NPC_GetSurfingOffsets
+sidebar_label: NPC_GetSurfingOffsets
 description: 获取 NPC 的冲浪偏移。
 tags: ["npc", "冲浪"]
 ---
@@ -28,7 +28,7 @@ tags: ["npc", "冲浪"]
 public CheckNPCSurfing(npcid)
 {
     new Float:x, Float:y, Float:z;
-    if (NPC_GetSurfingOffset(npcid, x, y, z))
+    if (NPC_GetSurfingOffsets(npcid, x, y, z))
     {
         printf("NPC %d冲浪偏移: X=%.2f, Y=%.2f, Z=%.2f", npcid, x, y, z);
     }
@@ -46,7 +46,7 @@ public CheckNPCSurfing(npcid)
 
 ## 相关函数
 
-- [NPC_SetSurfingOffset](NPC_SetSurfingOffset): 设置 NPC 的冲浪偏移
+- [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): 设置 NPC 的冲浪偏移
 - [NPC_GetSurfingObject](NPC_GetSurfingObject): 获取 NPC 正在冲浪的物体
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): 获取 NPC 正在冲浪的车辆
 - [NPC_GetSurfingPlayerObject](NPC_GetSurfingPlayerObject): 获取 NPC 正在冲浪的玩家物体

@@ -38,7 +38,7 @@ public OnGameModeInit()
 ## 注意事项
 
 - 如果对象移动，NPC 将随之移动
-- 使用 `NPC_SetSurfingOffset` 微调 NPC 相对于对象的位置
+- 使用 `NPC_SetSurfingOffsets` 微调 NPC 相对于对象的位置
 - 对象必须存在才能正常冲浪
 
 ## 相关函数
@@ -46,7 +46,7 @@ public OnGameModeInit()
 - [NPC_GetSurfingObject](NPC_GetSurfingObject): 获取 NPC 正在冲浪的对象
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): 设置 NPC 正在冲浪的车辆
 - [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 正在冲浪的玩家对象
-- [NPC_SetSurfingOffset](NPC_SetSurfingOffset): 设置 NPC 的冲浪偏移
+- [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): 设置 NPC 的冲浪偏移
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): 重置 NPC 的所有冲浪数据
 
 ## 相关回调
