@@ -43,9 +43,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
             return SendClientMessage(playerid, 0xFFFF00FF, "未指定巡逻路径。");
 
         new pointindex = NPC_GetCurrentPathPointIndex(npcid);
-        new Float:x, Float:y, Float:z;
+        new Float:x, Float:y, Float:z, Float:stopRange;
 
-        if (!NPC_GetPathPoint(pathid, pointindex, x, y, z))
+        if (!NPC_GetPathPoint(pathid, pointindex, x, y, z, stopRange))
             return SendClientMessage(playerid, 0xFFFF00FF, "无法获取路径点。");
 
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d 路径点 %d: %.2f, %.2f, %.2f", npcid, pointindex, x, y, z);

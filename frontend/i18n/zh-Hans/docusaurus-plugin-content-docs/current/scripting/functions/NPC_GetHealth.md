@@ -33,8 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        new Float:health;
-        NPC_GetHealth(npcid, health);
+        new Float:health = NPC_GetHealth(npcid);
 
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d 的生命值： %.2f", npcid, health);
     }

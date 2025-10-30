@@ -22,33 +22,23 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300); // Infernus
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    new currentVehicle = NPC_GetVehicle(npcid);
-    printf("NPC %d在车辆%d中", npcid, currentVehicle);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknpc", true))
+    if (!strcmp(cmdtext, "/checkvehicle", true))
     {
-        new vehicleid = NPC_GetVehicle(0);
-        if (vehicleid != INVALID_VEHICLE_ID)
-        {
-            printf("NPC 0在车辆%d中", vehicleid);
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new vehicleid = NPC_GetVehicle(npcid);
+
+        if (vehicleid == INVALID_VEHICLE_ID)
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何车辆里面。", npcid);
         else
-        {
-            print("NPC 0正在步行");
-        }
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在车辆里面: %d", npcid, vehicleid);
         return 1;
     }
     return 0;
@@ -59,7 +49,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 若 NPC 未在任何车辆中则返回 INVALID_VEHICLE_ID
 - 使用此函数检查 NPC 是在驾驶还是作为乘客
-- 可与其他车辆函数配合使用以获取更多详细信息
 
 ## 相关函数
 

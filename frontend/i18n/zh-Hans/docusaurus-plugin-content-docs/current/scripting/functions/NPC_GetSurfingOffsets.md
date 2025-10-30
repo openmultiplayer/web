@@ -25,17 +25,24 @@ tags: ["npc", "冲浪"]
 ## 示例
 
 ```c
-public CheckNPCSurfing(npcid)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new Float:x, Float:y, Float:z;
-    if (NPC_GetSurfingOffsets(npcid, x, y, z))
+    if (!strcmp(cmdtext, "/checksurfingoffset", true))
     {
-        printf("NPC %d冲浪偏移: X=%.2f, Y=%.2f, Z=%.2f", npcid, x, y, z);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new Float:offsetX, Float:offsetY, Float:offsetZ;
+        NPC_GetSurfingOffset(npcid, offsetX, offsetY, offsetZ);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 冲浪偏移: X=%.2f, Y=%.2f, Z=%.2f", npcid, offsetX, offsetY, offsetZ);
+        return 1;
     }
-    else
-    {
-        printf("获取 NPC  %d的冲浪偏移失败", npcid);
-    }
+    return 0;
 }
 ```
 

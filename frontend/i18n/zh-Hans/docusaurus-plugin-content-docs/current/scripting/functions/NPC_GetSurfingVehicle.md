@@ -22,19 +22,26 @@ tags: ["npc", "冲浪", "车辆"]
 ## 示例
 
 ```c
-public OnNPCSpawn(npcid)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new vehicleid = NPC_GetSurfingVehicle(npcid);
-    if (vehicleid != INVALID_VEHICLE_ID)
+    if (!strcmp(cmdtext, "/checksurfingvehicle", true))
     {
-        printf("NPC %d正在车辆%d上冲浪", npcid, vehicleid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new vehicleid = NPC_GetSurfingVehicle(npcid);
+
+        if (vehicleid == INVALID_VEHICLE_ID)
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何车辆上冲浪。", npcid);
+        else
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在车辆上冲浪: %d", npcid, vehicleid);
+        return 1;
     }
-    else
-    {
-        printf("NPC %d未在任何车辆上冲浪", npcid);
-    }
-    return 1;
-}
+    return 0;
 ```
 
 ## 注意事项

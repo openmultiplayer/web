@@ -25,40 +25,21 @@ tags: ["npc", "旋转"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("RotationBot");
-    NPC_Spawn(npcid);
-
-    NPC_SetRot(npcid, 15.0, 90.0, 0.0);
-
-    new Float:rx, Float:ry, Float:rz;
-    NPC_GetRot(npcid, rx, ry, rz);
-    printf("NPC %d旋转: %.2f, %.2f, %.2f", npcid, rx, ry, rz);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcrot", true))
+    if (!strcmp(cmdtext, "/checkrot", true))
     {
-        new Float:rx, Float:ry, Float:rz;
-        NPC_GetRot(0, rx, ry, rz);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0旋转: %.1f, %.1f, %.1f", rx, ry, rz);
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    if (!strcmp(cmdtext, "/copynpcrot", true))
-    {
-        new Float:rx, Float:ry, Float:rz;
-        NPC_GetRot(0, rx, ry, rz);
+        new Float:rotX, Float:rotY, Float:rotZ;
+        NPC_GetRot(npcid, rotX, rotY, rotZ);
 
-        // 将NPC 0的旋转复制给玩家
-        SetPlayerFacingAngle(playerid, rz);
-
-        SendClientMessage(playerid, 0x00FF00FF, "已复制NPC 0旋转: %.1f 度", rz);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 旋转: X=%.2f, Y=%.2f, Z=%.2f", npcid, rotX, rotY, rotZ);
         return 1;
     }
     return 0;
@@ -70,7 +51,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::warning
 
 - 所有旋转参数都通过引用传递且会被修改。
-- 旋转值以度为单位。
 - X = 俯仰角（上下），Y = 偏航角（左右），Z = 翻滚角（倾斜）。
 - 对于简单的朝向，请改用 [NPC_GetFacingAngle](NPC_GetFacingAngle)。
 

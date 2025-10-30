@@ -22,18 +22,26 @@ tags: ["npc", "冲浪"]
 ## 示例
 
 ```c
-public OnNPCSpawn(npcid)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new objectid = NPC_GetSurfingPlayerObject(npcid);
-    if (objectid != INVALID_OBJECT_ID)
+    if (!strcmp(cmdtext, "/checksurfingplayerobject", true))
     {
-        printf("NPC %d正在玩家物体%d上冲浪", npcid, objectid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new objectid = NPC_GetSurfingPlayerObject(npcid);
+
+        if (objectid == INVALID_OBJECT_ID)
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何玩家物体上冲浪。", npcid);
+        else
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在玩家物体上冲浪: %d", npcid, objectid);
+        return 1;
     }
-    else
-    {
-        printf("NPC %d未在任何玩家物体上冲浪", npcid);
-    }
-    return 1;
+    return 0;
 }
 ```
 

@@ -22,56 +22,26 @@ tags: ["npc", "车辆", “飞机”, “起落架”]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Pilot");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(519, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300); // Shamal
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // 收起起落架
-    NPC_SetVehicleGearState(npcid, LANDING_GEAR_STATE_UP);
-
-    new gearState = NPC_GetVehicleGearState(npcid);
-    if (gearState == LANDING_GEAR_STATE_UP)
-    {
-        printf("NPC %d飞行器起落架已收起", npcid);
-    }
-    else
-    {
-        printf("NPC %d飞行器起落架已放下", npcid);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkgear", true))
+    if (!strcmp(cmdtext, "/checkvehiclegearstate", true))
     {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        for (new i = 0; i < count; i++)
-        {
-            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC在飞行器中
-            {
-                new gearState = NPC_GetVehicleGearState(npcs[i]);
-                new msg[128];
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-                if (gearState == LANDING_GEAR_STATE_UP)
-                {
-                    format(msg, sizeof(msg), "NPC %d: 起落架已收起", npcs[i]);
-                }
-                else
-                {
-                    format(msg, sizeof(msg), "NPC %d: 起落架已放下", npcs[i]);
-                }
+        if (NPC_GetVehicle(npcid) == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何车辆里面。", npcid);
 
-                SendClientMessage(playerid, 0xFFFFFFFF, msg);
-            }
-        }
+        new gearState = NPC_GetVehicleGearState(npcid);
+
+        if (gearState == LANDING_GEAR_STATE_UP)
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d: 起落架已收起", npcid);
+        else
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d: 起落架已放下", npcid);
 
         return 1;
     }
