@@ -42,4 +42,4 @@ CallLocalFunction crashes the server if it's passing an empty string.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CallRemoteFunction](../../scripting/functions/CallRemoteFunction.md): Call a function in any loaded script.
+- [CallRemoteFunction](CallRemoteFunction): Call a function in any loaded script.

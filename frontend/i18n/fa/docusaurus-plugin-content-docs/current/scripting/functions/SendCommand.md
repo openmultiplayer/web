@@ -32,4 +32,4 @@ public OnPlayerText(playerid, text[])
 
 ## توابع مرتبط
 
-- [SendChat](../functions/SendChat): ارسال متن به عنوان NPC.
+- [SendChat](SendChat): ارسال متن به عنوان NPC.

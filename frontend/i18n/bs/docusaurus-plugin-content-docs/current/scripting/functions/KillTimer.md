@@ -30,7 +30,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 
-public OnPlayerDisconnect(playerid)
+public OnPlayerDisconnect(playerid, reason)
 {
     KillTimer(gConnectTimer[playerid]);
     gConnectTimer[playerid] = 0;

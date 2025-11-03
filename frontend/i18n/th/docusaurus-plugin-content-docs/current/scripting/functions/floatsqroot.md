@@ -39,5 +39,5 @@ This function raises a “domain” error if the input value is negative. You ma
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [floatpower](../functions/floatpower): Raises given value to a power of exponent.
-- [floatlog](../functions/floatlog): Get the logarithm of the float value.
+- [floatpower](floatpower): Raises given value to a power of exponent.
+- [floatlog](floatlog): Get the logarithm of the float value.

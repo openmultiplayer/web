@@ -12,8 +12,8 @@ Ako je model vozila korišten u 3D textdraw pregledu (3D preview textdraw), ovo 
 | Ime    | Deskripcija                                                                |
 | ------ | -------------------------------------------------------------------------- |
 | text   | ID textdrawa koji je postavljen za prikazivanje pregleda 3D modela vozila. |
-| color1 | ID Primarne boje za postaviti vozilu.                                      |
-| color2 | ID Sekundarne boje za postaviti vozilu.                                    |
+| color1 | ID primarne boje za postaviti vozilu.                                      |
+| color2 | ID sekundarne boje za postaviti vozilu.                                    |
 
 ## Returns
 

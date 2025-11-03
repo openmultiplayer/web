@@ -25,4 +25,4 @@ public OnGameModeInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetPlayerTeam](../functions/SetPlayerTeam): Set a player's team.
+- [SetPlayerTeam](SetPlayerTeam): Set a player's team.

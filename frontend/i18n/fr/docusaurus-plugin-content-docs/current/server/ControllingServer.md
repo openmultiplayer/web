@@ -48,7 +48,7 @@ samp.ban est le fichier utilisé pour stocker les joueurs bannis, y compris les 
 - IP
 - Date
 - Temps
-- Nom (Nom de la personne ou un motif, voir [BanEx](../../functions/BanEx))
+- Nom (Nom de la personne ou un motif, voir [BanEx](../scripting/functions/BanEx))
 - Type d'interdiction
 
 Pour ajouter un nouveau joueur à bannir, ajoutez simplement une ligne comme ceci :

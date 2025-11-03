@@ -7,7 +7,7 @@ sidebar_label: 按键定义
 
 本文档提供[GetPlayerKeys](../functions/GetPlayerKeys)和[OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange)使用的按键常量信息。
 
-SA-MP 使用位掩码技术检测按键状态，关于位掩码的详细说明请参阅：[位掩码技术解析](<http://en.wikipedia.org/wiki/Mask_(computing)>)
+SA-MP 使用位掩码技术检测按键状态，关于位掩码的详细说明请参阅：[位掩码技术解析](<https://en.wikipedia.org/wiki/Mask_(computing)>)
 
 :::
 

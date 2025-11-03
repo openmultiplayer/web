@@ -136,7 +136,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Parameters dapat memuat nilai yang berbeda berdasarkan style dialog ([klik disini untuk info lebih lanjut](../resources/dialogstyles.md)).
+Parameters dapat memuat nilai yang berbeda berdasarkan style dialog ([klik disini untuk info lebih lanjut](../resources/dialogstyles)).
 
 :::
 
@@ -154,4 +154,4 @@ Dialog pemain tidak akan disembunyikan ketika gamemode dimuat ulang, membuat ser
 
 ## Fungsi Terkait
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Menampilkan dialog kepada pemain.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Menampilkan dialog kepada pemain.

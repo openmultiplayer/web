@@ -37,8 +37,8 @@ Ang SetObjectPos ay hindi gumagana kapag ginamit sa callback na ito. Upang ito'y
 
 ## Mga Kaugnay na Functions
 
-- [MoveObject](../functions/MoveObject.md): Galawin ang isang Object.
-- [MovePlayerObject](../functions/MovePlayerObject.md): Galawin ang isang player Object.
-- [IsObjectMoving](../functions/IsObjectMoving.md): Tignan kapag ang object ay gumagalaw.
-- [StopObject](../functions/StopObject.md): Tigilan ang isang object sa paggalaw.
-- [OnPlayerObjectMoved](../callbacks/OnPlayerObjectMoved.md): Itinatawag kapag ang isang player object ay tumigil sa paggalaw.
+- [MoveObject](../functions/MoveObject): Galawin ang isang Object.
+- [MovePlayerObject](../functions/MovePlayerObject): Galawin ang isang player Object.
+- [IsObjectMoving](../functions/IsObjectMoving): Tignan kapag ang object ay gumagalaw.
+- [StopObject](../functions/StopObject): Tigilan ang isang object sa paggalaw.
+- [OnPlayerObjectMoved](OnPlayerObjectMoved): Itinatawag kapag ang isang player object ay tumigil sa paggalaw.

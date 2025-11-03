@@ -37,6 +37,6 @@ This will only work if both vehicles are streamed in for a player (check IsVehic
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [DetachTrailerFromVehicle](../../scripting/functions/DetachTrailerFromVehicle.md): Detach a trailer from a vehicle.
-- [IsTrailerAttachedToVehicle](../../scripting/functions/IsTrailerAttachedToVehicle.md): Check if a trailer is attached to a vehicle.
-- [GetVehicleTrailer](../../scripting/functions/GetVehicleTrailer.md): Check what trailer a vehicle is pulling.
+- [DetachTrailerFromVehicle](DetachTrailerFromVehicle): Detach a trailer from a vehicle.
+- [IsTrailerAttachedToVehicle](IsTrailerAttachedToVehicle): Check if a trailer is attached to a vehicle.
+- [GetVehicleTrailer](GetVehicleTrailer): Check what trailer a vehicle is pulling.

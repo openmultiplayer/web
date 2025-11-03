@@ -15,7 +15,7 @@ Gets the player's current connection status.
 
 ## ส่งคืน
 
-The player's [connection status](../resources/connectionstatus.md), as an integer value.
+The player's [connection status](../resources/connectionstatus), as an integer value.
 
 ## ตัวอย่าง
 
@@ -34,16 +34,16 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetPlayerNetworkStats](../functions/GetPlayerNetworkStats.md): Gets a player networkstats and saves it into a string.
-- [GetNetworkStats](../functions/GetNetworkStats.md): Gets the servers networkstats and saves it into a string.
-- [NetStats_GetConnectedTime](../functions/NetStats_GetConnectedTime.md): Get the time that a player has been connected for.
-- [NetStats_MessagesReceived](../functions/NetStats_MessagesReceived.md): Get the number of network messages the server has received from the player.
-- [NetStats_BytesReceived](../functions/NetStats_BytesReceived.md): Get the amount of information (in bytes) that the server has received from the player.
-- [NetStats_MessagesSent](../functions/NetStats_MessagesSent.md): Get the number of network messages the server has sent to the player.
-- [NetStats_BytesSent](../functions/NetStats_BytesSent.md): Get the amount of information (in bytes) that the server has sent to the player.
-- [NetStats_MessagesRecvPerSecond](../functions/NetStats_MessagesRecvPerSecond.md): Get the number of network messages the server has received from the player in the last second.
-- [NetStats_PacketLossPercent](../functions/NetStats_PacketLossPercent.md): Get a player's packet loss percent.
-- [NetStats_GetIpPort](../functions/NetStats_GetIpPort.md): Get a player's IP and port.
-- [IsPlayerConnected](../functions/IsPlayerConnected.md): Check if a player is connected to the server.
-- [OnPlayerConnect](../callbacks/OnPlayerConnect.md): Called when a player connects to the server.
-- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect.md): Called when a player leaves the server.
+- [GetPlayerNetworkStats](GetPlayerNetworkStats): Gets a player networkstats and saves it into a string.
+- [GetNetworkStats](GetNetworkStats): Gets the servers networkstats and saves it into a string.
+- [NetStats_GetConnectedTime](NetStats_GetConnectedTime): Get the time that a player has been connected for.
+- [NetStats_MessagesReceived](NetStats_MessagesReceived): Get the number of network messages the server has received from the player.
+- [NetStats_BytesReceived](NetStats_BytesReceived): Get the amount of information (in bytes) that the server has received from the player.
+- [NetStats_MessagesSent](NetStats_MessagesSent): Get the number of network messages the server has sent to the player.
+- [NetStats_BytesSent](NetStats_BytesSent): Get the amount of information (in bytes) that the server has sent to the player.
+- [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Get the number of network messages the server has received from the player in the last second.
+- [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Get a player's packet loss percent.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.
+- [IsPlayerConnected](IsPlayerConnected): Check if a player is connected to the server.
+- [OnPlayerConnect](../callbacks/OnPlayerConnect): Called when a player connects to the server.
+- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Called when a player leaves the server.

@@ -9,19 +9,19 @@ tags: ["object"]
 
 Replace the texture of an object with text.
 
-| Name                                     | Description                                                                                   |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------- |
-| objectid                                 | The ID of the object to replace the texture of with text.                                     |
-| const text[]                             | The text to show on the object. (MAX 2048 characters)                                         |
-| materialIndex                            | The object's material index to replace with text.                                             |
-| OBJECT_MATERIAL_SIZE:materialsize        | The [size](/docs/scripting/resources/materialtextsizes) of the material.                      |
-| const fontFace[]                         | The font to use.                                                                              |
-| fontSize                                 | The size of the text (MAX 255).                                                               |
-| bool:bold                                | Bold text. Set to true for bold, false for not.                                               |
-| fontColour                               | The color of the text, in ARGB format.                                                        |
-| backgroundColour                         | The background color, in ARGB format.                                                         |
-| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | The [alignment](/docs/scripting/resources/materialtextalignment) of the text (default: left). |
-| OPEN_MP_TAGS:...                         | Indefinite number of arguments of any tag.                                                    |
+| Name                                     | Description                                                                      |
+| ---------------------------------------- | -------------------------------------------------------------------------------- |
+| objectid                                 | The ID of the object to replace the texture of with text.                        |
+| const text[]                             | The text to show on the object. (MAX 2048 characters)                            |
+| materialIndex                            | The object's material index to replace with text.                                |
+| OBJECT_MATERIAL_SIZE:materialsize        | The [size](../resources/materialtextsizes) of the material.                      |
+| const fontFace[]                         | The font to use.                                                                 |
+| fontSize                                 | The size of the text (MAX 255).                                                  |
+| bool:bold                                | Bold text. Set to true for bold, false for not.                                  |
+| fontColour                               | The color of the text, in ARGB format.                                           |
+| backgroundColour                         | The background color, in ARGB format.                                            |
+| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | The [alignment](../resources/materialtextalignment) of the text (default: left). |
+| OPEN_MP_TAGS:...                         | Indefinite number of arguments of any tag.                                       |
 
 ## Returns
 

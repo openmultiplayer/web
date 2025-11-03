@@ -9,15 +9,15 @@ tags: ["player"]
 
 Ovaj callback je pozvan kada igrač selektuje objekat nakon što je SelectObject funkcija iskorištena.
 
-| Ime      | Deskripcija                                        |
-| -------- | -------------------------------------------------- |
-| playerid | ID igrača koji je selektovao objekat               |
-| type     | [Tip](../resources/selectobjecttypes.md) selekcije |
-| objectid | ID odabranog/selektovanog objekta                  |
-| modelid  | model odabranog/selektovanog objekta               |
-| Float:fX | X pozicija odabranog/selektovanog objekta          |
-| Float:fY | Y pozicija odabranog/selektovanog objekta          |
-| Float:fZ | Z pozicija odabranog/selektovanog objekta          |
+| Ime      | Deskripcija                                     |
+| -------- | ----------------------------------------------- |
+| playerid | ID igrača koji je selektovao objekat            |
+| type     | [Tip](../resources/selectobjecttypes) selekcije |
+| objectid | ID odabranog/selektovanog objekta               |
+| modelid  | model odabranog/selektovanog objekta            |
+| Float:fX | X pozicija odabranog/selektovanog objekta       |
+| Float:fY | Y pozicija odabranog/selektovanog objekta       |
+| Float:fZ | Z pozicija odabranog/selektovanog objekta       |
 
 ## Returns
 
@@ -48,4 +48,4 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
 
 ## Srodne Funkcije
 
-- [SelectObject](../functions/SelectObject.md): Odaberi/selektuj objekat.
+- [SelectObject](../functions/SelectObject): Odaberi/selektuj objekat.

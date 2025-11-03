@@ -59,4 +59,4 @@ UpdateVehicleDamageStatus(vehicleid, (panels | VEHICLE_PANEL_STATUS:0b0000000000
 
 ## See also
 
-- [Vehicle Panel Status](../resources/vehicle-panel-status)
+- [Vehicle Panel Status](vehicle-panel-status)

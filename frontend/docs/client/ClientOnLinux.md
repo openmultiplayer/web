@@ -21,7 +21,7 @@ You DO NOT get a working GUI, this must be executed in a Wine prefix via command
 
 1. Ensure you have a Wine prefix created with GTA San Andreas installed.
 2. Download the [open.mp](https://github.com/openmultiplayer/launcher/releases/latest) launcher and install it inside the Wine prefix.
-3. Download the [SA-MP client](https://github.com/KrustyKoyle/files.sa-mp.com-Archive) and install it in the same Wine Prefix.
+3. Download the [SA-MP client](https://www.sa-mp.mp/downloads/) and install it in the same Wine Prefix.
 4. Download the [omp-client.dll](https://assets.open.mp/omp-client.dll) and copy it to the `AppData\Local\mp.open.launcher\omp\` folder of the main user in your prefix.
 
 Finally, you can execute the open.mp launcher through the Wine prefixes CLI or write it to a .bat script for easy launching.

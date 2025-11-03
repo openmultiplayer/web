@@ -23,7 +23,7 @@ tags: ["玩家", "视角"]
 ## 示例代码
 
 ```c
-public OnPlayerDisconnect(playerid)
+public OnPlayerDisconnect(playerid, reason)
 {
     new Float:x, Float:y, Float:z;
     GetPlayerCameraPos(playerid, x, y, z);

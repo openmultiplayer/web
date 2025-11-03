@@ -55,8 +55,8 @@ Yanlış modifikasyon ID'si kullanmak bölgedeki oyuncuların oyununun çökmesi
 
 ## Bağlantılı Fonksiyonlar
 
-- [RemoveVehicleComponent](RemoveVehicleComponent.md): Araçtan bir modifikasyon silin.
-- [GetVehicleComponentInSlot](GetVehicleComponentInSlot.md): Slottaki araç modifikasyonunu öğrenin.
-- [GetVehicleComponentType](GetVehicleComponentType:.md): Aracın modifikasyon tipini öğrenin.
-- [OnVehicleMod](../callbacks/OnVehicleMod.md): Bu callback araç modifiye edildiğinde çağrılır.
-- [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Bu callback bir araç modifiye noktasına girdiğinde/çıktığında çağrılır.
+- [RemoveVehicleComponent](RemoveVehicleComponent): Araçtan bir modifikasyon silin.
+- [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Slottaki araç modifikasyonunu öğrenin.
+- [GetVehicleComponentType](GetVehicleComponentType): Aracın modifikasyon tipini öğrenin.
+- [OnVehicleMod](../callbacks/OnVehicleMod): Bu callback araç modifiye edildiğinde çağrılır.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Bu callback bir araç modifiye noktasına girdiğinde/çıktığında çağrılır.

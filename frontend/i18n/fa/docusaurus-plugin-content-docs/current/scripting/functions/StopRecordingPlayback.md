@@ -21,4 +21,4 @@ public OnNPCExitVehicle(vehicleid, seatid)
 
 ## توابع مرتبط
 
-- [StartRecordingPlayback](../functions/StartRecordingPlayback): پخش فایل .rec را متوقف می‌کند.
+- [StartRecordingPlayback](StartRecordingPlayback): پخش فایل .rec را متوقف می‌کند.

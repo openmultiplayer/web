@@ -63,7 +63,7 @@ Protokol: UDP
 
 Onda ste gotovi! Kliknite OK i zatvorite ga. Pokrenite server i vidite da li radi. Ako jeste, idite na svog SA-MP klijenta i unesite: localhost:TVOJ_PORT(standard: 7777). Ako se ping promijeni, vaš server radi u potpunosti. Sada samo trebate otići na:
 
-[WhatIsMyIP.COM](http://whatismyip.com).
+[WhatIsMyIP.COM](https://www.whatismyip.com).
 
 ## Završetak
 

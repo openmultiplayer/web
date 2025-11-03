@@ -39,5 +39,5 @@ public OnVehicleSpawn(vehicleid)
 
 ## Srodne Funkcije
 
-- [SetVehicleToRespawn](../functions/SetVehicleToRespawn.md): Respawnuj vozilo.
-- [CreateVehicle](../functions/CreateVehicle.md): Kreiraj vozilo.
+- [SetVehicleToRespawn](../functions/SetVehicleToRespawn): Respawnuj vozilo.
+- [CreateVehicle](../functions/CreateVehicle): Kreiraj vozilo.

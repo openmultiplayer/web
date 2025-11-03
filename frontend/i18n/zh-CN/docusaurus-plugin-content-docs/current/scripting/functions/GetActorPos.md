@@ -35,4 +35,4 @@ GetActorPos(actorid, x, y, z);
 
 ## 相关函数
 
-- [SetActorPos](SetActorPos.md): 设置角色的坐标位置
+- [SetActorPos](SetActorPos): 设置角色的坐标位置

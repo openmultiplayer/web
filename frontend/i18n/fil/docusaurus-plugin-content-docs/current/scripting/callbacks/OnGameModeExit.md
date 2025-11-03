@@ -29,4 +29,4 @@ Ang function na ito ay pwede rin gamitin sa mga filterscript, upang idetect kung
 
 ## Mga Kaugnay na Functions
 
-- [GameModeExit](../functions/GameModeExit.md): Isinasara ang gamemode.
+- [GameModeExit](../functions/GameModeExit): Isinasara ang gamemode.

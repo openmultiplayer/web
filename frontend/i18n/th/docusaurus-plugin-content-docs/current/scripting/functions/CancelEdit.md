@@ -34,10 +34,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SelectObject](../../scripting/functions/SelectObject.md): Select an object.
-- [EditObject](../../scripting/functions/EditObject.md): Edit an object.
-- [EditPlayerObject](../../scripting/functions/EditPlayerObject.md): Edit an object.
-- [EditAttachedObject](../../scripting/functions/EditAttachedObject.md): Edit an attached object.
-- [CreateObject](../../scripting/functions/CreateObject.md): Create an object.
-- [DestroyObject](../../scripting/functions/DestroyObject.md): Destroy an object.
-- [MoveObject](../../scripting/functions/MoveObject.md): Move an object.
+- [SelectObject](SelectObject): Select an object.
+- [EditObject](EditObject): Edit an object.
+- [EditPlayerObject](EditPlayerObject): Edit an object.
+- [EditAttachedObject](EditAttachedObject): Edit an attached object.
+- [CreateObject](CreateObject): Create an object.
+- [DestroyObject](DestroyObject): Destroy an object.
+- [MoveObject](MoveObject): Move an object.

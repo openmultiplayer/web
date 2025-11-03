@@ -44,5 +44,5 @@ if (strcmp(cmdtext, "/myseat", true) == 0)
 
 Maaaring makatulong ang mga sumusunod na function habang nauugnay ang mga ito sa function na ito sa isang paraan o sa iba pa.
 
-- [GetPlayerVehicleID](./GetPlayerVehicleID): Kunin ang ID ng sasakyan kung saan nakasakay ang manlalaro.
-- [PutPlayerInVehicle](./PutPlayerInVehicle): Maglagay ng manlalaro sa isang sasakyan.
+- [GetPlayerVehicleID](GetPlayerVehicleID): Kunin ang ID ng sasakyan kung saan nakasakay ang manlalaro.
+- [PutPlayerInVehicle](PutPlayerInVehicle): Maglagay ng manlalaro sa isang sasakyan.

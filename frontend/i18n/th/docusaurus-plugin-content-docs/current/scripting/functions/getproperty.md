@@ -40,6 +40,6 @@ print(value);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- Setproperty: Set a property.
-- Deleteproperty: Delete a property.
-- Existproperty: Check if a property exists.
+- setproperty: Set a property.
+- deleteproperty: Delete a property.
+- existproperty: Check if a property exists.

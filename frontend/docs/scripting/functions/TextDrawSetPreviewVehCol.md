@@ -12,8 +12,8 @@ If a vehicle model is used in a 3D preview textdraw, this sets the two colour va
 | Name        | Description                                                        |
 | ----------- | ------------------------------------------------------------------ |
 | Text:textid | The textdraw id that is set to display a 3D vehicle model preview. |
-| colour1     | The primary Color ID to set the vehicle to.                        |
-| colour2     | The secondary Color ID to set the vehicle to.                      |
+| colour1     | The primary color ID to set the vehicle to.                        |
+| colour2     | The secondary color ID to set the vehicle to.                      |
 
 ## Returns
 

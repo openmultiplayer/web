@@ -1,12 +1,12 @@
 ---
 título: OnRecordingPlaybackEnd
-descripción: Este callback se llama cuando un archivo grabado siendo reproduciendo con NPCStartRecordingPlayback llega a su fin.
+descripción: Este callback se llama cuando un archivo grabado siendo reproduciendo con StartRecordingPlayback llega a su fin.
 tags: []
 ---
 
 ## Description
 
-Este callback se llama cuando un archivo grabado siendo reproduciendo con NPCStartRecordingPlayback llega a su fin.
+Este callback se llama cuando un archivo grabado siendo reproduciendo con StartRecordingPlayback llega a su fin.
 
 ## Ejemplos
 

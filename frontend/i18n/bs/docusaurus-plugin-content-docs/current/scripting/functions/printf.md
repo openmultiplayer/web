@@ -65,5 +65,5 @@ Niz formata ili njegov izlaz ne smije prelaziti 1024 znaka. Sve što je duže od
 
 ## Srodne Funkcije
 
-- [print](./print): Ispišite osnovnu poruku u zapisnike poslužitelja i konzolu.
-- [format](./format): Formatira string.
+- [print](print): Ispišite osnovnu poruku u zapisnike poslužitelja i konzolu.
+- [format](format): Formatira string.

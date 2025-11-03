@@ -9,16 +9,16 @@ tags: ["player"]
 
 Postavi ikonu/marker na mapu igrača. Može se koristiti da označite lokacije kao npr. banke i bolnice igračima.
 
-| Ime        | Deskripcija                                                                                                                                                           |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid   | ID igrača za postaviti ikonicu na mapu.                                                                                                                               |
-| iconid     | ID ikonice, od 0 do 99. Ovo znači da postoji maksimalno 100 map ikonica. ID se može koristiti u [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon). |
-| Float:x    | X kordinata za postaviti map ikonicu.                                                                                                                                 |
-| Float:y    | Y kordinata za postaviti map ikonicu.                                                                                                                                 |
-| Float:z    | Z kordinata za postaviti map ikonicu.                                                                                                                                 |
-| markertype | [Ikonica](/docs/scripting/resources/mapicons) za postaviti.                                                                                                           |
-| color      | Boja ikonice, kao cijeli broj ili hex u RGBA formatu. Ovo bi se trebalo koristiti samo sa ikonicom kocke (ID: 0).                                                     |
-| style      | [Stil](/docs/scripting/resources/mapiconstyles) ikonice.                                                                                                              |
+| Ime        | Deskripcija                                                                                                                                 |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid   | ID igrača za postaviti ikonicu na mapu.                                                                                                     |
+| iconid     | ID ikonice, od 0 do 99. Ovo znači da postoji maksimalno 100 map ikonica. ID se može koristiti u [RemovePlayerMapIcon](RemovePlayerMapIcon). |
+| Float:x    | X kordinata za postaviti map ikonicu.                                                                                                       |
+| Float:y    | Y kordinata za postaviti map ikonicu.                                                                                                       |
+| Float:z    | Z kordinata za postaviti map ikonicu.                                                                                                       |
+| markertype | [Ikonica](../resources/mapicons) za postaviti.                                                                                              |
+| color      | Boja ikonice, kao cijeli broj ili hex u RGBA formatu. Ovo bi se trebalo koristiti samo sa ikonicom kocke (ID: 0).                           |
+| style      | [Stil](../resources/mapiconstyles) ikonice.                                                                                                 |
 
 ## Returns
 
@@ -53,5 +53,5 @@ Možete imati samo 100 ikona mapa! Oznake tipa 1 (), 2 (), 4 () i 56 () uzrokova
 
 ## Srodne Funkcije
 
-- [RemovePlayerMapIcon](/docs/scripting/functions/RemovePlayerMapIcon): Ukloni ikonicu na mapi za igrača.
-- [SetPlayerMarkerForPlayer](/docs/scripting/functions/SetPlayerMarkerForPlayer): Postavite marker/oznaku igrača.
+- [RemovePlayerMapIcon](RemovePlayerMapIcon): Ukloni ikonicu na mapi za igrača.
+- [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Postavite marker/oznaku igrača.

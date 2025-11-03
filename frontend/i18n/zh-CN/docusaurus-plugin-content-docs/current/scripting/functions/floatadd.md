@@ -34,6 +34,6 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [Floatsub](Floatsub): 浮点数减法运算
-- [Floatmul](Floatmul): 浮点数乘法运算
-- [Floatdiv](Floatdiv): 浮点数除法运算
+- [floatsub](floatsub): 浮点数减法运算
+- [floatmul](floatmul): 浮点数乘法运算
+- [floatdiv](floatdiv): 浮点数除法运算

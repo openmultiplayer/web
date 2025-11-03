@@ -36,6 +36,6 @@ printf("الان در زاویه %f رو به رو هستم!", Angle);
 
 ## تابع‌های مرتبط
 
-- [SetMyFacingAngle](../functions/SetMyFacingAngle): زاویه NPC رو تنظیم می‌کنه.
+- [SetMyFacingAngle](SetMyFacingAngle): زاویه NPC رو تنظیم می‌کنه.
 
 </div>

@@ -45,4 +45,4 @@ This function will work only if AllowAdminTeleport is enabled, and you have to b
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [AllowAdminTeleport](../../scripting/functions/AllowAdminTeleport.md): Toggle waypoint teleporting for RCON admins.
+- [AllowAdminTeleport](AllowAdminTeleport): Toggle waypoint teleporting for RCON admins.

@@ -21,7 +21,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-public OnPlayerDisconnect(playerid)
+public OnPlayerDisconnect(playerid, reason)
 {
     PlayerTextDrawHide(playerid, gWelcomeText[playerid]);
 }

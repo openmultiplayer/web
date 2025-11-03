@@ -247,4 +247,4 @@ UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, (tires | VEHICLE_TIR
 
 ## 相关链接
 
-- [车辆轮胎状态](../resources/vehicle-tire-status)
+- [车辆轮胎状态](vehicle-tire-status)

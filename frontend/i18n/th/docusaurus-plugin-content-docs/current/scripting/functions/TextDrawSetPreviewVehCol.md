@@ -12,8 +12,8 @@ If a vehicle model is used in a 3D preview textdraw, this sets the two colour va
 | Name   | Description                                                        |
 | ------ | ------------------------------------------------------------------ |
 | text   | The textdraw id that is set to display a 3D vehicle model preview. |
-| color1 | The primary Color ID to set the vehicle to.                        |
-| color2 | The secondary Color ID to set the vehicle to.                      |
+| color1 | The primary color ID to set the vehicle to.                        |
+| color2 | The secondary color ID to set the vehicle to.                      |
 
 ## ส่งคืน
 
@@ -49,7 +49,7 @@ The textdraw MUST use the font type TEXT_DRAW_FONT_MODEL_PREVIEW in order for th
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [TextDrawSetPreviewModel](../functions/TextDrawSetPreviewModel.md): Set the 3D preview model of a textdraw.
-- [TextDrawSetPreviewRot](../functions/TextDrawSetPreviewRot.md): Set rotation of a 3D textdraw preview.
-- [TextDrawFont](../functions/TextDrawFont.md): Set the font of a textdraw.
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [TextDrawSetPreviewModel](TextDrawSetPreviewModel): Set the 3D preview model of a textdraw.
+- [TextDrawSetPreviewRot](TextDrawSetPreviewRot): Set rotation of a 3D textdraw preview.
+- [TextDrawFont](TextDrawFont): Set the font of a textdraw.
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

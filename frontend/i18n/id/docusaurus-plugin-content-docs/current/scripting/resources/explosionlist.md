@@ -23,4 +23,4 @@ Tipe-tipe ini untuk digunakan dengan [CreateExplosion](../functions/CreateExplos
 | 12   | Ya       | --       | --          | Ya                       | Ya       | Sangat kecil                                                                                                  | Sangat Kecil |
 | 13   | --       | --       | --          | --                       | --       | Hanya menghasilkan efek hitam bekas terbakar di tanah, tidak menimbulkan kerusakan apapun.                    | Besar        |
 
-[Berikut adalah tampilannya untuk setiap jenisnya](http://weedarr.wikidot.com/explosion)
+[Berikut adalah tampilannya untuk setiap jenisnya](https://weedarr.wikidot.com/explosion)

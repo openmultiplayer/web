@@ -29,4 +29,4 @@ Ta funkcijo se lahko uporablja tudi znotraj "filterscript" da zazna, če "gamemo
 
 ## Povezane Funkcijo
 
-- [GameModeExit](../functions/GameModeExit.md): Izklopite trenutn "GameMode".
+- [GameModeExit](../functions/GameModeExit): Izklopite trenutn "GameMode".

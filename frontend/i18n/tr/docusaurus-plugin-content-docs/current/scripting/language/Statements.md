@@ -618,7 +618,7 @@ Bu yalnızca main() içinde çalışır, ancak geri çağrılar için değil, ç
 
 ## `state`
 
-state, PAWN durum makinesinin ve otomatik sistemlerinin bir parçasıdır; daha fazla bilgi için [bu konuya](https://forum.sa-mp.com/showthread.php?t=86850) bakabilirsiniz.
+state, PAWN durum makinesinin ve otomatik sistemlerinin bir parçasıdır; daha fazla bilgi için [bu konuya](https://sampforum.blast.hk/showthread.php?tid=570939) bakabilirsiniz.
 
 ## `switch`
 

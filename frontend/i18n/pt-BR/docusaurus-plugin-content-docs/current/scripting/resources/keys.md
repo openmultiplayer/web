@@ -7,7 +7,7 @@ sidebar_label: "Chaves"
 
 Aqui você pode encontrar informações sobre constantes de entrada de teclas usadas por [GetPlayerKeys](../functions/GetPlayerKeys) e [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange).
 
-SA-MP usa bitmasking para determinar quais teclas estão pressionadas e quais não estão. Aqui está um artigo sobre bitmasking: [http://en.wikipedia.org/wiki/Mask\_(computing)](<http://en.wikipedia.org/wiki/Mask_(computing)>)
+SA-MP usa bitmasking para determinar quais teclas estão pressionadas e quais não estão. Aqui está um artigo sobre bitmasking: [https://en.wikipedia.org/wiki/Mask\_(computing)](<https://en.wikipedia.org/wiki/Mask_(computing)>)
 
 :::
 

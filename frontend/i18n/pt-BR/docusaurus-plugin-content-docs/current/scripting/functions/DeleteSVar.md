@@ -39,9 +39,9 @@ Quando a variável é excluída, tentativas de recuperar o valor irão retornar 
 
 ## Funções Relacionadas
 
-- [SetSVarInt](SetSVarInt.md): Define um integer para uma variável do servidor.
-- [GetSVarInt](GetSVarInt.md): Obtém o servidor do jogador como um integer. Get a player server as an integer.
-- [SetSVarString](SetSVarString.md): Define uma string para uma variável do servidor.
-- [GetSVarString](GetSVarString.md): Obtém a string definida anteriormente de uma variável do servidor.
-- [SetSVarFloat](SetSVarFloat.md): Define um float para uma variável do servidor.
-- [GetSVarFloat](GetSVarFloat.md): Obtém o float definido anteriormente de uma variável do servidor.
+- [SetSVarInt](SetSVarInt): Define um integer para uma variável do servidor.
+- [GetSVarInt](GetSVarInt): Obtém o servidor do jogador como um integer. Get a player server as an integer.
+- [SetSVarString](SetSVarString): Define uma string para uma variável do servidor.
+- [GetSVarString](GetSVarString): Obtém a string definida anteriormente de uma variável do servidor.
+- [SetSVarFloat](SetSVarFloat): Define um float para uma variável do servidor.
+- [GetSVarFloat](GetSVarFloat): Obtém o float definido anteriormente de uma variável do servidor.

@@ -9,14 +9,14 @@ tags: []
 
 Ova funkcija kreira 'statični' pickup u igru. Ovi pickup-ovi podržavaju oružja, health, armor itd., sa sposobnošću da funkcioniraju bez da ih skriptate (oružja/health/armor će biti dati automatski).
 
-| Ime                                | Deskripcija                                                                                             |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [model](../resources/pickupids.md) | Model pickupa.                                                                                          |
-| [tip](../resources/pickuptypes.md) | Tip pickupa. Određuje kako pickup reagira kad ga pokupite.                                              |
-| Float:X                            | X kordinata na koju kreirate pickup.                                                                    |
-| Float:Y                            | Y kordinata na koju kreirate pickup.                                                                    |
-| Float:Z                            | Z kordinata na koju kreirate pickup.                                                                    |
-| virtualworld                       | ID Virtualnog svijeta(world) u kojeg stavljate taj pickup. Koristi -1 da ga prikažeš u svim svjetovima. |
+| Ime                             | Deskripcija                                                                                             |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [model](../resources/pickupids) | Model pickupa.                                                                                          |
+| [tip](../resources/pickuptypes) | Tip pickupa. Određuje kako pickup reagira kad ga pokupite.                                              |
+| Float:X                         | X kordinata na koju kreirate pickup.                                                                    |
+| Float:Y                         | Y kordinata na koju kreirate pickup.                                                                    |
+| Float:Z                         | Z kordinata na koju kreirate pickup.                                                                    |
+| virtualworld                    | ID Virtualnog svijeta(world) u kojeg stavljate taj pickup. Koristi -1 da ga prikažeš u svim svjetovima. |
 
 ## Returns
 
@@ -49,6 +49,6 @@ Funkcija ne returna ID pickupa kojeg možeš koristiti u, naprimjer, OnPlayerPic
 
 ## Srodne Funkcije
 
-- [CreatePickup](CreatePickup.md): Kreiraj pickup.
-- [DestroyPickup](DestroyPickup.md): Uništi pickup.
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup.md): Pozvano kada igrač pokupi pickup.
+- [CreatePickup](CreatePickup): Kreiraj pickup.
+- [DestroyPickup](DestroyPickup): Uništi pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Pozvano kada igrač pokupi pickup.

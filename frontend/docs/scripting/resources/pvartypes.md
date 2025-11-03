@@ -5,7 +5,7 @@ sidebar_label: "Pvar Types"
 
 :::info
 
-Types of player variables (also called pvar types) used in [Per-player variable system.](../../tutorials/perplayervariablesystem)
+Types of player variables (also called pvar types) used in [Per-player variable system](../../tutorials/perplayervariablesystem).
 
 :::
 

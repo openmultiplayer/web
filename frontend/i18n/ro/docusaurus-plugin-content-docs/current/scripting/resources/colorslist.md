@@ -10,7 +10,7 @@ Culorile din SA-MP sunt în general reprezentate în notație hexazecimală (de�
 
 _RR_ este partea roșie a culorii, _GG_ verde și _BB_ albastru. _AA_ este valoarea alfa. Dacă se folosește FF acolo, culoarea se va afișa fără transparență și dacă se folosește 00, va fi invizibilă.
 
-Pentru codul Hex pentru aceste culori, accesați [Hex colors](../resources/hex-colors.md) page.
+Pentru codul Hex pentru aceste culori, accesați [Hex colors](hex-colors) page.
 
 ### Valori alfa (transparență)
 
@@ -58,17 +58,17 @@ stock HexToInt(string[])
 }
 ```
 
-Foloseste HexToInt("RRGGBBAA") și veți obține un număr utilizabil ca rezultat pentru [SetPlayerColor](../functions/SetPlayerColor.md).
+Foloseste HexToInt("RRGGBBAA") și veți obține un număr utilizabil ca rezultat pentru [SetPlayerColor](../functions/SetPlayerColor).
 
 ### Incorporarea culorii
 
-Este posibil să utilizați culori în text în [mesajele clientului](../functions/SendClientMessage.md"), [dialogs](../functions/ShowPlayerDialog.md), [3D text labels](../functions/Create3DTextLabel.md), [object material texts](../functions/SetObjectMaterialText.md) si [vehicle numberplates](../functions/SetVehicleNumberPlate.md").
+Este posibil să utilizați culori în text în [mesajele clientului](../functions/SendClientMessage), [dialogs](../functions/ShowPlayerDialog), [3D text labels](../functions/Create3DTextLabel), [object material texts](../functions/SetObjectMaterialText) si [vehicle numberplates](../functions/SetVehicleNumberPlate).
 
-Este foarte asemănător cu [culorile de la gametext](../resources/gametextstyles.md), dar permite utilizarea oricărei culori.
+Este foarte asemănător cu [culorile de la gametext](gametextstyles), dar permite utilizarea oricărei culori.
 
 :::caution
 
-Acest tip de încorporare a culorilor nu funcționează în desenele text. Vezi si [GameTextStyle](../resources/gametextstyles.md).
+Acest tip de încorporare a culorilor nu funcționează în desenele text. Vezi si [GameTextStyle](gametextstyles).
 
 :::
 
@@ -119,17 +119,16 @@ format(msg, sizeof(msg), "{ffffff}This is white and {%06x}this is the player's c
 SendClientMessage(playerid, 0xffffffff, msg);
 ```
 
-%x este substituent pentru valori hexazecimale, 6 asigură că șirul de ieșire va avea întotdeauna șase caractere și 0 îl va bloca cu zerouri dacă nu este. Rețineți că [GetPlayerColor](../resources/GetPlayerColor.md) funcționează corect numai dacă [SetPlayerColor](../resources/SetPlayerColor.md) a fost folosit în prealabil.
+%x este substituent pentru valori hexazecimale, 6 asigură că șirul de ieșire va avea întotdeauna șase caractere și 0 îl va bloca cu zerouri dacă nu este. Rețineți că [GetPlayerColor](../functions/GetPlayerColor) funcționează corect numai dacă [SetPlayerColor](../functions/SetPlayerColor) a fost folosit în prealabil.
 
 Culorile folosite la încorporarea culorilor nu sunt asemănătoare culorilor hexagonale normale în Pion. Nu există nici un prefix '0x' și nici o valoare alfa (ultimele 2 cifre).
 
 ### Color Pickers
 
-- [SA-MP Colorpicker v1.1.0](http://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
-- [December.com](http://www.december.com/html/spec/color.html)
-- [RGB Picker](http://psyclops.com/tools/rgb)
-- [Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)
-- [Color Scheme Designer](http://colorschemedesigner.com/)
+- [SA-MP Colorpicker](https://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
+- [December.com](https://johndecember.com/html/spec/color.html)
+- [Adobe Color](https://color.adobe.com/create/color-wheel/)
+- [Color Scheme Designer](https://paletton.com)
 
 ## GameText
 

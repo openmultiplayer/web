@@ -14,7 +14,7 @@ This 'textdraw editor' tool can make designing textdraws much easier.
 
 ## Global Textdraws
 
-Global textdraws can be created, then shown to all players. There is a [limit](../resources/limits) as to how many can be created, though. This means if you have a server with 500 players, creating more than 4 textdraws per-player is not possible. That's where **player**-textdraws come in. See further down. Here is a list of all the functions related to **global** textdraws:
+Global textdraws can be created, then shown to all players. There is a [limit](limits) as to how many can be created, though. This means if you have a server with 500 players, creating more than 4 textdraws per-player is not possible. That's where **player**-textdraws come in. See further down. Here is a list of all the functions related to **global** textdraws:
 
 - [TextDrawCreate](../functions/TextDrawCreate): Create a textdraw.
 - [TextDrawDestroy](../functions/TextDrawDestroy): Destroy a textdraw.

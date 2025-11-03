@@ -60,4 +60,4 @@ Trenutno ne postoje nikakva ograničenja o pozivanju ove funkcije, ali budite op
 
 ## Srodne Funkcije
 
-- [SetPlayerSkin](SetPlayerSkin.md): Postavi igraču skin/izgled.
+- [SetPlayerSkin](SetPlayerSkin): Postavi igraču skin/izgled.

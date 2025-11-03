@@ -160,4 +160,4 @@ if (GetDoorState(_:doors, DOOR_HOOD, IS_OPENED | IS_DAMAGED))
 
 ## 相关阅读
 
-- [车辆门状态](../resources/vehicle-door-status)
+- [车辆门状态](vehicle-door-status)

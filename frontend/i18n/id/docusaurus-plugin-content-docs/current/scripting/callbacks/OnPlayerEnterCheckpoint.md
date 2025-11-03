@@ -44,7 +44,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Membuat sebuah checkpoint untuk pemain.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Menonaktifkan checkpoint pemain saat ini.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Memeriksa apakah pemain berada di dalam checkpoint.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Memeriksa apakah pemain berada di dalam checkpoint.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Membuat sebuah checkpoint balapan untuk pemain.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Menonaktifkan checkpoint balapan pemain saat ini.
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Memeriksa apakah pemain berada di dalam checkpoint balapan.

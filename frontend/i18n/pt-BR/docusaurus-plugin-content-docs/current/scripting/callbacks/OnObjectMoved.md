@@ -37,8 +37,8 @@ SetObjectPos não funciona quando usado nesta callback. Para consertar isso, rec
 
 ## Funções Relacionadas
 
-- [MoveObject](../functions/MoveObject.md): Move um objeto.
-- [MovePlayerObject](../functions/MovePlayerObject.md): Move o objeto de um jogador.
-- [IsObjectMoving](../functions/IsObjectMoving.md): Verifica se um objeto está se movendo.
-- [StopObject](../functions/StopObject.md): Para um objeto de se mover.
-- [OnPlayerObjectMoved](OnPlayerObjectMoved.md): Chamado quando um objeto de jogador para de se mover.
+- [MoveObject](../functions/MoveObject): Move um objeto.
+- [MovePlayerObject](../functions/MovePlayerObject): Move o objeto de um jogador.
+- [IsObjectMoving](../functions/IsObjectMoving): Verifica se um objeto está se movendo.
+- [StopObject](../functions/StopObject): Para um objeto de se mover.
+- [OnPlayerObjectMoved](OnPlayerObjectMoved): Chamado quando um objeto de jogador para de se mover.

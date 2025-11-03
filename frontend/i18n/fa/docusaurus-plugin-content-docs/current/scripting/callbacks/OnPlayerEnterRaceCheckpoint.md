@@ -45,7 +45,7 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): ایجاد یک چک‌پوینت برای بازیکن.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): غیرفعال کردن چک‌پوینت فعلی بازیکن.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): بررسی اینکه آیا بازیکن در چک‌پوینت است یا نه.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): بررسی اینکه آیا بازیکن در چک‌پوینت است یا نه.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): ایجاد یک race checkpoint برای بازیکن.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): غیرفعال کردن race checkpoint فعلی بازیکن.
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): بررسی اینکه آیا بازیکن در race checkpoint است یا نه.

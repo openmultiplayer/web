@@ -32,8 +32,8 @@ public OnPlayerSpawn(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SendRconCommand](../../scripting/functions/SendRconCommand.md): Sends an RCON command via the script.
+- [SendRconCommand](SendRconCommand): Sends an RCON command via the script.
 
 ## Related Callbacks
 
-- [OnRconLoginAttempt](../../scripting/callbacks/OnRconLoginAttempt.md): Called when an attempt to login to RCON is made.
+- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt): Called when an attempt to login to RCON is made.

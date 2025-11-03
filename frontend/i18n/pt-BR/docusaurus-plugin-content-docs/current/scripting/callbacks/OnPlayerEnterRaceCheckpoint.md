@@ -33,9 +33,9 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 ## Funções Relacionadas
 
-- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint.md): Cria o checkpoint para um jogador.
-- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint.md): Desativa o atual checkpoint do jogador.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint.md): Verifica se o jogador está em checkpoint.
-- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint.md): Cria um checkpoint de corrida.
-- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint.md): Desativa o atual checkpoint de corrida do jogador.
-- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint.md): Verifica se o jogador está em um checkpoint de corrida.
+- [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Cria o checkpoint para um jogador.
+- [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Desativa o atual checkpoint do jogador.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Verifica se o jogador está em checkpoint.
+- [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Cria um checkpoint de corrida.
+- [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Desativa o atual checkpoint de corrida do jogador.
+- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Verifica se o jogador está em um checkpoint de corrida.

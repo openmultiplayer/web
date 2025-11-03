@@ -40,12 +40,12 @@ print(destination);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [strcmp](../functions/strcmp.md): Compare two strings to see if they are the same.
-- [strfind](../functions/strfind.md): Search for a substring in a string.
-- [strdel](../functions/strdel.md): Delete part/all of a string.
-- [strins](../functions/strins.md): Put a string into another string.
-- [strlen](../functions/strlen.md): Check the length of a string.
-- [strmid](../functions/strmid.md): Extract characters from a string.
-- [strpack](../functions/strpack.md): Pack a string into a destination.
-- [strval](../functions/strval.md): Find the value of a string.
-- [strcat](../functions/strcat.md): Concatenate two strings.
+- [strcmp](strcmp): Compare two strings to see if they are the same.
+- [strfind](strfind): Search for a substring in a string.
+- [strdel](strdel): Delete part/all of a string.
+- [strins](strins): Put a string into another string.
+- [strlen](strlen): Check the length of a string.
+- [strmid](strmid): Extract characters from a string.
+- [strpack](strpack): Pack a string into a destination.
+- [strval](strval): Find the value of a string.
+- [strcat](strcat): Concatenate two strings.

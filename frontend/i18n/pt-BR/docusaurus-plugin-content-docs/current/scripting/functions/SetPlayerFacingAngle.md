@@ -44,5 +44,5 @@ Os ângulos são invertidos no GTA: SA; 90 graus seria o leste no mundo real, ma
 
 ## Funções Relacionadas
 
-- [GetPlayerFacingAngle](GetPlayerFacingAngle.md): Verifica para onde o jogador está voltado.
-- [SetPlayerPos](SetPlayerPos.md): Define a posição de um jogador.
+- [GetPlayerFacingAngle](GetPlayerFacingAngle): Verifica para onde o jogador está voltado.
+- [SetPlayerPos](SetPlayerPos): Define a posição de um jogador.

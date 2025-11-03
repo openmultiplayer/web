@@ -36,4 +36,4 @@ public OnPlayerText(playerid, text[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [toupper](../functions/toupper.md)
+- [toupper](toupper)

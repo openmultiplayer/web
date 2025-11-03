@@ -38,5 +38,5 @@ public OnFilterScriptInit()
 
 ## 相关函数
 
-- [numargs](numargs.md): 获取参数数量
-- [setarg](setarg.md): 设置参数值
+- [numargs](numargs): 获取参数数量
+- [setarg](setarg): 设置参数值

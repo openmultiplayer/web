@@ -9,11 +9,11 @@ sidebar_label: Common Issues
 
 ### Nagka error ako "San Andreas cannot be found"
 
-Ang San Andreas Multiplayer ay **hindi** stand-alone program! Nagdadag-dag lamang ito ng functionality sa GTA San Andreas, bagkus ay kailangan ang GTA San Andreas na laro para sa PC. Kailangan din itong maging **EU/US v1.0**, ang ibang version tulad ng v2.0 o Steam at Direct2Drive versions ay hindi gagana. [pindutin dito upang i-downgrade ang iyong GTA: SA version sa 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+Ang San Andreas Multiplayer ay **hindi** stand-alone program! Nagdadag-dag lamang ito ng functionality sa GTA San Andreas, bagkus ay kailangan ang GTA San Andreas na laro para sa PC. Kailangan din itong maging **EU/US v1.0**, ang ibang version tulad ng v2.0 o Steam at Direct2Drive versions ay hindi gagana. [pindutin dito upang i-downgrade ang iyong GTA: SA version sa 1.0](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### Wala akong makitang server sa SA:MP client ko!
 
-Una, dapat ay siguraduhing sinusundan ang tamang proseso na nakalapat sa [Quick-start guide](https://team.sa-mp.com/wiki/Getting_Started). Kung sinundan ito, at hindi parin nakikita ang mga servers sa iyong SA:MP client, kaialangan mong i-allow ang SA:MP sa iyong firewall. Sa kasamaang palad, dahil sa dami ng availanle na firewall softwares, hindi namin kayo matutulungan dito - pero suggest namin na maghanap kayo sa website ng manufacturer o maghanap ng solusyon sa Google search. At wag kalimutin na updated ang inyong SA:MP client sa latest na version!
+Una, dapat ay siguraduhing sinusundan ang tamang proseso na nakalapat sa [Quick-start guide](https://sampwiki.blast.hk/wiki/Getting_Started). Kung sinundan ito, at hindi parin nakikita ang mga servers sa iyong SA:MP client, kaialangan mong i-allow ang SA:MP sa iyong firewall. Sa kasamaang palad, dahil sa dami ng availanle na firewall softwares, hindi namin kayo matutulungan dito - pero suggest namin na maghanap kayo sa website ng manufacturer o maghanap ng solusyon sa Google search. At wag kalimutin na updated ang inyong SA:MP client sa latest na version!
 
 ### Singleplayer loads instead of SA:MP
 
@@ -23,7 +23,7 @@ Hindi ka dapat makakita ng singleplayer options kapag binuksan ang GTA mula sa S
 
 :::
 
-Ang Singleplayer ay maaaring mag lumitaw sa dalawang rason; hindi mo na install ng maayos ang iyong SA:MP at wala ito sa GTA San Andreas game folder o maling version ng GTA San Andreas ang iyong gamit. Kung maling version ng GTA San Andreas ang iyong ginagamit ay maaari mo itong ma downgrade gamit ang GTA San Andreas Downgrader. Pindutin [ito](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) para ma download ito.
+Ang Singleplayer ay maaaring mag lumitaw sa dalawang rason; hindi mo na install ng maayos ang iyong SA:MP at wala ito sa GTA San Andreas game folder o maling version ng GTA San Andreas ang iyong gamit. Kung maling version ng GTA San Andreas ang iyong ginagamit ay maaari mo itong ma downgrade gamit ang GTA San Andreas Downgrader. Pindutin [ito](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) para ma download ito.
 
 Minsan ang single player menu ay lalabas, pero ang SA:MP ay nag bukas naman siguro, subukang pumili sa mga options na ito sa menu at pindutin ang `ESC` key para makaalis dito. Ang SA:MP ay magbubukas na.
 
@@ -33,7 +33,7 @@ Siguraduhing ikaw ay hindi gumagamit ng pinagbabawal na mga characters sa iyong 
 
 ### Ang screen ko ay nagpapakita lamang ng "Connecting to IP:Port..."
 
-Ang server ay pwedeng offline, o kung hindi maka connect sa server, subukang patayin ang firewall at tignan kung gagana ito. Kung gumana, kailangan mong i reconfigure ang iyong firewall. Maaari din na ikaw ay gumagamit ng outdated na version ng SA:MP - mahahanap mo ang updated na version ng SA:MP [dito](http://sa-mp.com/download.php).
+Ang server ay pwedeng offline, o kung hindi maka connect sa server, subukang patayin ang firewall at tignan kung gagana ito. Kung gumana, kailangan mong i reconfigure ang iyong firewall. Maaari din na ikaw ay gumagamit ng outdated na version ng SA:MP - mahahanap mo ang updated na version ng SA:MP [dito](https://sa-mp.mp/downloads/).
 
 ### Meron akong mods sa GTA San Andreas at ang SA:MP ay ayaw bumukas.
 
@@ -53,7 +53,7 @@ Kung meron kang dalawang monitor sa PC merong tatlong paraan para maayos ito:
 
 ### Hindi na gumagana ang aking mouse katapos kong umalis sa pause menu.
 
-Kung hindi na gumagana o nag freeze ang iyong mouse katapos umalis sa game menu pero gumagana ito sa game menu, kailangan mong i-disable ang multicore option [sa-mp.cfg](../../../client/ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (set mo ito sa 0). Tuloy-tuloy na pag pindot sa `ESC` button hanggang gumana ang mouse ay maaaring maging solusyon, pero hindi ito malinis na solusyon at matagal itong gawin.
+Kung hindi na gumagana o nag freeze ang iyong mouse katapos umalis sa game menu pero gumagana ito sa game menu, kailangan mong i-disable ang multicore option [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") (set mo ito sa 0). Tuloy-tuloy na pag pindot sa `ESC` button hanggang gumana ang mouse ay maaaring maging solusyon, pero hindi ito malinis na solusyon at matagal itong gawin.
 
 ### The file dinput8.dll is missing
 

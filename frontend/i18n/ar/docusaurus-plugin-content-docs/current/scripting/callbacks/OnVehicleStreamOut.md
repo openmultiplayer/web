@@ -47,9 +47,9 @@ public OnVehicleStreamOut(vehicleid, forplayerid)
 
 قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى.
 
-- [OnVehicleStreamIn](../callbacks/OnVehicleStreamIn): يتم استدعاؤه عندما يتم تدفق السبارةإلى كلاينت اللاعب.
-- [OnPlayerStreamIn](../callbacks/OnPlayerStreamIn): يتم استدعاؤه عندما يتم تدفق لاعب آخر إلى كلاينت اللاعب.
-- [OnPlayerStreamOut](../callbacks/OnPlayerStreamOut): يتم استدعاؤه عندما يتم تدفق لاعب آخر خارج كلاينت اللاعب.
+- [OnVehicleStreamIn](OnVehicleStreamIn): يتم استدعاؤه عندما يتم تدفق السبارةإلى كلاينت اللاعب.
+- [OnPlayerStreamIn](OnPlayerStreamIn): يتم استدعاؤه عندما يتم تدفق لاعب آخر إلى كلاينت اللاعب.
+- [OnPlayerStreamOut](OnPlayerStreamOut): يتم استدعاؤه عندما يتم تدفق لاعب آخر خارج كلاينت اللاعب.
 
 </div>
 

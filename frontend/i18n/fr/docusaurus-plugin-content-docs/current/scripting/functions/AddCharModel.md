@@ -1,7 +1,7 @@
 ---
 title: AddCharModel
 sidebar_label: AddCharModel
-description : Ajoute un nouveau modèle de personnage personnalisé à télécharger.
+description: Ajoute un nouveau modèle de personnage personnalisé à télécharger.
 tags: []
 ---
 
@@ -20,18 +20,18 @@ Ajoute un nouveau modèle de personnage personnalisé à télécharger. Les fich
 
 ## Retour
 
-1 : La fonction s'est exécutée avec succès.
+1: La fonction s'est exécutée avec succès.
 
-0 : La fonction n'a pas pu s'exécuter.
+0: La fonction n'a pas pu s'exécuter.
 
 ## Exemples
 
 ```c
 public OnGameModeInit()
 {
-     AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
-     AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
-     return 1;
+    AddCharModel(305, 20001, "lvpdpc2.dff", "lvpdpc2.txd");
+    AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
+    return 1;
 }
 ```
 

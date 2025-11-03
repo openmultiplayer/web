@@ -31,4 +31,4 @@ RemovePlayerMapIcon(playerid, 12);
 
 ## Srodne Funkcije
 
-- [SetPlayerMapIcon](/docs/scripting/functions/SetPlayerMapIcon): Kreiraj map-ikonicu za igrača.
+- [SetPlayerMapIcon](SetPlayerMapIcon): Kreiraj map-ikonicu za igrača.

@@ -12,7 +12,7 @@ tags: ["车辆"]
 | 参数名          | 说明                                                            |
 | --------------- | --------------------------------------------------------------- |
 | vehicleid       | 要检查改装组件的车辆 ID                                         |
-| CARMODTYPE:slot | [改装槽位类型](../resources/Componentslots)（需检查的组件槽位） |
+| CARMODTYPE:slot | [改装槽位类型](../resources/componentslots)（需检查的组件槽位） |
 
 ## 返回值
 
@@ -70,4 +70,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关资源
 
-- [车辆改装槽位说明](../resources/Componentslots)
+- [车辆改装槽位说明](../resources/componentslots)

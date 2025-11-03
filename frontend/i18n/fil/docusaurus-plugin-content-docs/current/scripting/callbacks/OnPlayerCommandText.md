@@ -43,4 +43,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [SendRconCommand](../functions/SendRconCommand.md): Mag send ng RCON command gamit ang script.
+- [SendRconCommand](../functions/SendRconCommand): Mag send ng RCON command gamit ang script.

@@ -1,10 +1,10 @@
 ---
 slug: server-beta-9
-title: SA-MP 0.3DL compatibility plus other added features and bug fixes - SERVER BETA RELEASE 9
+title: SA-MP 0.3.DL compatibility plus other added features and bug fixes - SERVER BETA RELEASE 9
 authors: potassium
 ---
 
-We've just released open.mp server beta 9, bringing major improvements, fixes, and the highly anticipated SA:MP 0.3DL support! This update includes new features, better plugin compatibility, and enhanced server configuration options.
+We've just released open.mp server beta 9, bringing major improvements, fixes, and the highly anticipated SA:MP 0.3.DL support! This update includes new features, better plugin compatibility, and enhanced server configuration options.
 
 <!-- truncate -->
 
@@ -12,7 +12,7 @@ Posted in our Discord server announcements channel by kseny ([discord.gg/samp](h
 
 Hello everyone
 
-We have just released open.mp server beta 9, fixing several reported issues and adding several new features. The most notable change being - SA:MP 0.3DL support. You can now run 0.3.7 and 0.3.DL compatible servers from the same binary.
+We have just released open.mp server beta 9, fixing several reported issues and adding several new features. The most notable change being - SA:MP 0.3.DL support. You can now run 0.3.7 and 0.3.DL compatible servers from the same binary.
 
 ## Other Changes
 

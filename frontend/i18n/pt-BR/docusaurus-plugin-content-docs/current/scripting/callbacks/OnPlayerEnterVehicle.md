@@ -41,5 +41,5 @@ Esta callback é chamada quando um jogador começa a entrar em um veículo, não
 
 ## Funções Relacionadas
 
-- [PutPlayerInVehicle](../functions/PutPlayerInVehicle.md): Coloca um jogador em um veículo.
-- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Verifica qual assento o jogador está.
+- [PutPlayerInVehicle](../functions/PutPlayerInVehicle): Coloca um jogador em um veículo.
+- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Verifica qual assento o jogador está.

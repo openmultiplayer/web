@@ -64,7 +64,7 @@ IP: 192.168.0.100
 
 确认保存后启动服务器。在 SA-MP 客户端输入：localhost:端口号（默认 7777）。若显示有效延迟，则说明服务器运行正常。最后访问：
 
-[我的 IP 地址查询网](http://whatismyip.com)。
+[我的 IP 地址查询网](https://www.whatismyip.com)。
 
 ## 最终测试
 

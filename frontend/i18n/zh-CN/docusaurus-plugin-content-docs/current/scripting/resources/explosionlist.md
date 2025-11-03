@@ -30,4 +30,4 @@ sidebar_label: 爆炸类型列表
 
 ---
 
-[点击此处查看所有爆炸类型的视觉演示](http://weedarr.wikidot.com/explosion)
+[点击此处查看所有爆炸类型的视觉演示](https://weedarr.wikidot.com/explosion)

@@ -168,7 +168,7 @@ omp-server --default-config
 | network.on_foot_sync_rate\*     | 整型   | 30     | ✅   | ❌   | 步行状态同步间隔（单位：毫秒）                                                                                 |
 | network.player_marker_sync_rate | 整型   | 2500   | ✅   | ❌   | 玩家标记同步间隔（单位：毫秒）                                                                                 |
 | network.player_timeout          | 整型   | 10000  | ❌   | ❌   | 玩家连接超时时间（单位：毫秒，10 秒无响应后断开）                                                              |
-| network.port                    | 整型   | 7777   | ✅   | ❌   | 服务器端口（需进行[端口转发](http://www.portforward.com/)）                                                    |
+| network.port                    | 整型   | 7777   | ✅   | ❌   | 服务器端口（需进行[端口转发](https://portforward.com)）                                                    |
 | network.public_addr             | 字符串 |        | ✅   | ❌   | 公网地址（用于资源下载服务）                                                                                   |
 | network.stream_radius           | 浮点数 | 200.0  | ❌   | ❌   | 实体流加载半径（单位：米，范围 50.0-400.0）                                                                    |
 | network.stream_rate             | 整型   | 1000   | ❌   | ❌   | 流加载检测间隔（单位：毫秒，范围 500-5000）                                                                    |

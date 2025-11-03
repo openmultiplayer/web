@@ -33,7 +33,7 @@ Pentru acest exemplu, vom crea o ridicare în numerar la Grove Street.
 
 Acum trebuie să decidem cu privire la un model care să apară în lume, există o mulțime de modele din care să alegem, unele sunt listate pe site-ul extern [aici](https://dev.prineside.com/en/gtasa_samp_model_id), aici alegeți numărul de model 1274 care este semnul dolarului.
 
-În cele din urmă, avem nevoie de un [Tip](../../../scripting/resources/pickuptypes) pentru preluare, pe aceeași pagină cu modelele de preluare este o listă de tipuri de preluare care descrie diferitele unii o fac. Vrem ca această preluare să dispară atunci când o ridicați, astfel încât să nu o puteți ridica în mod repetat, dar să reapară după câteva minute, astfel încât să o puteți ridica din nou, tipul 2 face exact acest lucru.
+În cele din urmă, avem nevoie de un [Tip](../scripting/resources/pickuptypes) pentru preluare, pe aceeași pagină cu modelele de preluare este o listă de tipuri de preluare care descrie diferitele unii o fac. Vrem ca această preluare să dispară atunci când o ridicați, astfel încât să nu o puteți ridica în mod repetat, dar să reapară după câteva minute, astfel încât să o puteți ridica din nou, tipul 2 face exact acest lucru.
 
 Pickup-urile sunt create cel mai frecvent la pornirea scriptului, în [OnGameModeInit](../scripting/callbacks/OnGameModeInit) sau [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) în funcție de tipul de script, totuși acesta poate merge în orice funcție (de exemplu, puteți crea un script de scădere a armei care ar folosi OnPlayerDeath pentru a crea preluări de arme).
 

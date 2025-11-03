@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawFont(playerid, gWelcomeText[playerid], 2);
 }
 
-public OnPlayerDisconnect(playerid)
+public OnPlayerDisconnect(playerid, reason)
 {
     PlayerTextDrawHide(playerid, gWelcomeText[playerid]);
 }

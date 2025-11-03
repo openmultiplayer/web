@@ -625,7 +625,7 @@ printf("Time 1s");
 
 ## `state`
 
-`state` 是 PAWN 状态机及自动机系统的重要组成部分，详细信息请参阅[此主题帖](https://forum.sa-mp.com/showthread.php?t=86850)。
+`state` 是 PAWN 状态机及自动机系统的重要组成部分，详细信息请参阅[此主题帖](https://sampforum.blast.hk/showthread.php?tid=570939)。
 
 ## `switch`
 

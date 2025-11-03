@@ -43,4 +43,4 @@ if (GetActorVirtualWorld(MyActor) == 20)
 
 ## 相关函数
 
-- [SetActorVirtualWorld](SetActorVirtualWorld.md): 设置角色所在的虚拟世界
+- [SetActorVirtualWorld](SetActorVirtualWorld): 设置角色所在的虚拟世界

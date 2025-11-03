@@ -14,7 +14,7 @@ description: 参与SA-MP Wiki与open.mp文档贡献的完整指南
 
 ![每个Wiki页面上的"编辑此页面"链接](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-以[SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity.md)页面为例，点击编辑按钮将跳转至[GitHub 编辑界面](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.mdxx)，登录后可直接在线修改内容。
+以[SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity)页面为例，点击编辑按钮将跳转至[GitHub 编辑界面](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md)，登录后可直接在线修改内容。
 
 提交修改后创建"Pull Request"，Wiki 维护者与社区成员将审核您的变更，经讨论确认后合并至主分支。
 

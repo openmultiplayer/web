@@ -51,6 +51,6 @@ Najveći mogući ID klase je 319 (Počinje od 0, znači maksimalno 320 klasa). K
 
 ## Srodne Funkcije
 
-- [AddPlayerClassEx](AddPlayerClassEx.md): Dodaj klasu sa zadanim timom.
-- [SetSpawnInfo](SetSpawnInfo.md): Postavi postavke za spawnovanje/stvaranje igrača.
-- [SetPlayerSkin](SetPlayerSkin.md): Postavi igračev skin/izgled.
+- [AddPlayerClassEx](AddPlayerClassEx): Dodaj klasu sa zadanim timom.
+- [SetSpawnInfo](SetSpawnInfo): Postavi postavke za spawnovanje/stvaranje igrača.
+- [SetPlayerSkin](SetPlayerSkin): Postavi igračev skin/izgled.

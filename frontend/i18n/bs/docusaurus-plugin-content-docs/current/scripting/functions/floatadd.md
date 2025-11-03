@@ -38,6 +38,6 @@ public OnGameModeInit()
 
 ## Srodne Funkcije
 
-- [Floatsub](Floatsub): Oduzima dva floata.
-- [Floatmul](Floatmul): Množi dva floata.
-- [Floatdiv](Floatdiv): Dijeli float sa drugim.
+- [floatsub](floatsub): Oduzima dva floata.
+- [floatmul](floatmul): Množi dva floata.
+- [floatdiv](floatdiv): Dijeli float sa drugim.

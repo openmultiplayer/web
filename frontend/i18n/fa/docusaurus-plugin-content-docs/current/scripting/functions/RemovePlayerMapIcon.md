@@ -31,4 +31,4 @@ RemovePlayerMapIcon(playerid, 12);
 
 ## توابع مرتبط
 
-- [SetPlayerMapIcon](/docs/scripting/functions/SetPlayerMapIcon): برای یک بازیکن mapicon می‌سازه.
+- [SetPlayerMapIcon](SetPlayerMapIcon): برای یک بازیکن mapicon می‌سازه.

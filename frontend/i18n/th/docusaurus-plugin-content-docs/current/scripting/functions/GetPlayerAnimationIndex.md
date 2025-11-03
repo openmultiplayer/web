@@ -37,4 +37,4 @@ public OnPlayerUpdate(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetAnimationName](../functions/GetAnimationName): Get the animation library/name for the index.
+- [GetAnimationName](GetAnimationName): Get the animation library/name for the index.

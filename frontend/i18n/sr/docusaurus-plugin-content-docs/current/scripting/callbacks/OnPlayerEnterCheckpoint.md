@@ -54,7 +54,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Креирајте контролни поен за играча.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Онемогућите тренутни контролни поен играча.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Проверавајте да ли је играч у контролном поену.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Проверавајте да ли је играч у контролном поену.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Креирајте тркачки контролни поен за играча.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Онемогућите тренутни тркачки контролни поен играча.
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Проверавајте да ли је играч у тркачком контролном поену.

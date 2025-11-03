@@ -46,12 +46,12 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 Maaaring maging kapaki-pakinabang din ang mga sumusunod na callback, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o sa iba pa.
 
-- [OnPlayerExitVehicle](./OnPlayerExitVehicle.md): Tinatawag kapag ang manlalaro ay umalis sa sasakyan.
-- [OnPlayerStateChange](./OnPlayerStateChange.md): Tinatawag kapag nagbago ang estado ng manlalaro.
+- [OnPlayerExitVehicle](OnPlayerExitVehicle): Tinatawag kapag ang manlalaro ay umalis sa sasakyan.
+- [OnPlayerStateChange](OnPlayerStateChange): Tinatawag kapag nagbago ang estado ng manlalaro.
 
 ## Mga Kaugnay na Functions
 
 Maaaring maging kapaki-pakinabang ang mga sumusunod na function, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o iba pa.
 
-- [PutPlayerInVehicle](../functions/PutPlayerInVehicle.md): Maglagay ng manlalaro sa sasakyan.
-- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Suriin kung saan nakaupo ang isang manlalaro.
+- [PutPlayerInVehicle](../functions/PutPlayerInVehicle): Maglagay ng manlalaro sa sasakyan.
+- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Suriin kung saan nakaupo ang isang manlalaro.

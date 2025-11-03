@@ -29,4 +29,4 @@ Ova funkcija također može biti korištena unutar filterskripte da detektuje uk
 
 ## Srodne funkcije
 
-- [GameModeExit](../functions/GameModeExit.md): Ugasi trenutni GameMode.
+- [GameModeExit](../functions/GameModeExit): Ugasi trenutni GameMode.

@@ -43,6 +43,6 @@ Bu fonksiyon şu anki SA:MP sürümünde çalışmamakta!
 
 ## Bağlantılı Fonksiyonlar
 
-- [IsPlayerAdmin](IsPlayerAdmin.md): Oyuncunun interiorunu değiştirin.
-- [AllowPlayerTeleport](AllowPlayerTeleport.md): Oyuncunun interiorunu öğrenin.
-- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange.md): Bu callback oyuncunun interioru değiştiğinde çağrılır.
+- [IsPlayerAdmin](IsPlayerAdmin): Oyuncunun interiorunu değiştirin.
+- [AllowPlayerTeleport](AllowPlayerTeleport): Oyuncunun interiorunu öğrenin.
+- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Bu callback oyuncunun interioru değiştiğinde çağrılır.

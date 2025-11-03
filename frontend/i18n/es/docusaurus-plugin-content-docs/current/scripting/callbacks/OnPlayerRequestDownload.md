@@ -28,7 +28,8 @@ Este callback se llama cuando un jugador solicita por descargas de modelos perso
 #define DOWNLOAD_REQUEST_EMPTY        (0)
 #define DOWNLOAD_REQUEST_MODEL_FILE   (1)
 #define DOWNLOAD_REQUEST_TEXTURE_FILE (2)
-new baseurl[] = "https://files.sa-mp.com/server";
+
+new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {

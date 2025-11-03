@@ -38,6 +38,6 @@ public OnGameModeInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [Floatadd](../functions/Floatadd): Adds two floats.
-- [Floatmul](../functions/Floatmul): Multiplies two floats.
-- [Floatdiv](../funtions/Floatdiv): Divides a float by another.
+- [floatadd](floatadd): Adds two floats.
+- [floatmul](floatmul): Multiplies two floats.
+- [floatdiv](floatdiv): Divides a float by another.

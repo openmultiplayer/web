@@ -138,7 +138,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Parametrii pot conține diferite valori, pe baza stilului dialogului ([click pentru mai multe exemple](../resources/dialogstyles.md)).
+Parametrii pot conține diferite valori, pe baza stilului dialogului ([click pentru mai multe exemple](../resources/dialogstyles)).
 
 :::
 
@@ -156,4 +156,4 @@ Un dialog al unui jucător nu se ascunde când gamemode-ul se restartează, cauz
 
 ## Funcții asociate
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Afișează un dialog unui jucător.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Afișează un dialog unui jucător.

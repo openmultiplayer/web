@@ -12,7 +12,7 @@ Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).
 | Name       | Description                                                  |
 | ---------- | ------------------------------------------------------------ |
 | vehicleid  | The ID of the vehicle to change the paintjob of.             |
-| paintjobid | The ID of the Paintjob to apply. Use 3 to remove a paintjob. |
+| paintjobid | The ID of the paintjob to apply. Use 3 to remove a paintjob. |
 
 ## ส่งคืน
 
@@ -27,5 +27,5 @@ ChangeVehiclePaintjob(GetPlayerVehicleID(playerid), rand); // changes the paintj
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [ChangeVehicleColor](../../scripting/functions/ChangeVehicleColor.md): Set the color of a vehicle.
-- [OnVehiclePaintjob](../../scripting/callbacks/OnVehiclePaintjob.md): Called when a vehicle's paintjob is changed.
+- [ChangeVehicleColor](ChangeVehicleColor): Set the color of a vehicle.
+- [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): Called when a vehicle's paintjob is changed.

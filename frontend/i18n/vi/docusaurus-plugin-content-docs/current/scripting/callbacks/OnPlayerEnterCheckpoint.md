@@ -54,7 +54,7 @@ Các hàm sau đây có thể hữu ích vì chúng liên quan đến callback n
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Tạo một điểm kiểm tra cho một người chơi.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Vô hiệu hóa điểm kiểm tra hiện tại của người chơi.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Kiểm tra xem một người chơi có đang ở trong điểm kiểm tra không.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Kiểm tra xem một người chơi có đang ở trong điểm kiểm tra không.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Tạo một điểm kiểm tra đua cho một người chơi.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Vô hiệu hóa điểm kiểm tra đua hiện tại của người chơi.
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Kiểm tra xem một người chơi có đang ở trong điểm kiểm tra đua không.

@@ -59,24 +59,24 @@ This function can be used to make objects rotate smoothly. In order to achieve t
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CreateObject](../functions/CreateObject.md): Create an object.
-- [DestroyObject](../functions/DestroyObject.md): Destroy an object.
-- [IsValidObject](../functions/IsValidObject.md): Checks if a certain object is vaild.
-- [IsObjectMoving](../functions/IsObjectMoving.md): Check if the object is moving.
-- [StopObject](../functions/StopObject.md): Stop an object from moving.
-- [SetObjectPos](../functions/SetObjectPos.md): Set the position of an object.
-- [SetObjectRot](../functions/SetObjectRot.md): Set the rotation of an object.
-- [GetObjectPos](../functions/GetObjectPos.md): Locate an object.
-- [GetObjectRot](../functions/GetObjectRot.md): Check the rotation of an object.
-- [AttachObjectToPlayer](../functions/AttachObjectToPlayer.md): Attach an object to a player.
-- [CreatePlayerObject](../functions/CreatePlayerObject.md): Create an object for only one player.
-- [DestroyPlayerObject](../functions/DestroyPlayerObject.md): Destroy a player object.
-- [IsValidPlayerObject](../functions/IsValidPlayerObject.md): Checks if a certain player object is vaild.
-- [MovePlayerObject](../functions/MovePlayerObject.md): Move a player object.
-- [StopPlayerObject](../functions/StopPlayerObject.md): Stop a player object from moving.
-- [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving.md): Check if the player object is moving.
-- [SetPlayerObjectPos](../functions/SetPlayerObjectPos.md): Set the position of a player object.
-- [SetPlayerObjectRot](../functions/SetPlayerObjectRot.md): Set the rotation of a player object.
-- [GetPlayerObjectPos](../functions/GetPlayerObjectPos.md): Locate a player object.
-- [GetPlayerObjectRot](../functions/GetPlayerObjectRot.md): Check the rotation of a player object.
-- [AttachPlayerObjectToPlayer](../functions/AttachPlayerObjectToPlayer.md): Attach a player object to a player.
+- [CreateObject](CreateObject): Create an object.
+- [DestroyObject](DestroyObject): Destroy an object.
+- [IsValidObject](IsValidObject): Checks if a certain object is vaild.
+- [IsObjectMoving](IsObjectMoving): Check if the object is moving.
+- [StopObject](StopObject): Stop an object from moving.
+- [SetObjectPos](SetObjectPos): Set the position of an object.
+- [SetObjectRot](SetObjectRot): Set the rotation of an object.
+- [GetObjectPos](GetObjectPos): Locate an object.
+- [GetObjectRot](GetObjectRot): Check the rotation of an object.
+- [AttachObjectToPlayer](AttachObjectToPlayer): Attach an object to a player.
+- [CreatePlayerObject](CreatePlayerObject): Create an object for only one player.
+- [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.
+- [IsValidPlayerObject](IsValidPlayerObject): Checks if a certain player object is vaild.
+- [MovePlayerObject](MovePlayerObject): Move a player object.
+- [StopPlayerObject](StopPlayerObject): Stop a player object from moving.
+- [IsPlayerObjectMoving](IsPlayerObjectMoving): Check if the player object is moving.
+- [SetPlayerObjectPos](SetPlayerObjectPos): Set the position of a player object.
+- [SetPlayerObjectRot](SetPlayerObjectRot): Set the rotation of a player object.
+- [GetPlayerObjectPos](GetPlayerObjectPos): Locate a player object.
+- [GetPlayerObjectRot](GetPlayerObjectRot): Check the rotation of a player object.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Attach a player object to a player.

@@ -43,5 +43,5 @@ Always returns 0 for NPCs.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetPlayerInterior](../functions/SetPlayerInterior): Set a player's interior.
-- [GetPlayerVirtualWorld](../functions/GetPlayerVirtualWorld): Check what virtual world a player is in.
+- [SetPlayerInterior](SetPlayerInterior): Set a player's interior.
+- [GetPlayerVirtualWorld](GetPlayerVirtualWorld): Check what virtual world a player is in.

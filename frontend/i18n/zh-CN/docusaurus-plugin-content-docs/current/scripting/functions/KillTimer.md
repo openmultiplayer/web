@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 
-public OnPlayerDisconnect(playerid)
+public OnPlayerDisconnect(playerid, reason)
 {
     // 终止玩家关联的定时器
     KillTimer(gConnectTimer[playerid]);

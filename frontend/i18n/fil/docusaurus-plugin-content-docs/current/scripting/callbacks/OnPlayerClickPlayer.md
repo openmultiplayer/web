@@ -45,4 +45,4 @@ Sa kasalukuyan, isa lang ang 'source' (0 - CLICK_SOURCE_SCOREBOARD). Ang existen
 
 ## Mga Kaugnay na Functions
 
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Itinatawag kapag ang player ay pumindot ng TextDraw.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Itinatawag kapag ang player ay pumindot ng TextDraw.

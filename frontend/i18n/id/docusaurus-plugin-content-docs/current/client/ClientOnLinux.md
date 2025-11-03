@@ -21,7 +21,7 @@ You DO NOT get a working GUI, this must be executed in a Wine prefix via command
 
 1. Pastikan kamu punya Wine yang dibuat dengan menginstall GTA San Andreas Multiplayer
 2. Download [Open.MP Launcher](https://github.com/openmultiplayer/launcher/releases/latest) dan diinstall di Wine
-3. Download [SA-MP client](https://github.com/KrustyKoyle/files.sa-mp.com-Archive) dan diinstall di Wine
+3. Download [SA-MP client](https://www.sa-mp.mp/downloads/) dan diinstall di Wine
 4. Downloadd [omp-client.dll](https://assets.open.mp/omp-client.dll) lalu copy file tersebut ke folder `AppData\Local\mp.open.launcher\omp\`
 
 Finally, you can execute the open.mp launcher through the Wine prefixes CLI or write it to a .bat script for easy launching.
