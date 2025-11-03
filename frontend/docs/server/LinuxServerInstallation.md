@@ -20,6 +20,7 @@ Before starting, you should have:
 - A machine running Ubuntu (20.04 or later recommended) or another Debian based Linux;
 - WinSCP or Filezilla for file transfers;
 - PuTTY or your hosting SSH solution;
+- libssl1.1:i386;
 
 :::note
 
@@ -50,8 +51,17 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    ```
    sudo apt upgrade
    ```
+   
+3. Install libssl1.1:i386:
+   
+   - Without this, the server won't be able to run properly:
+     
+   ```
+   wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.24_i386.deb
+   sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.24_i386.deb
+   ```
 
-3. Creating a secure service account:
+4. Creating a secure service account:
 
    - For security reasons, we should create a dedicated service account without a home directory:
 
@@ -59,7 +69,7 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    sudo useradd -M svc-omp-server
    ```
 
-4. Locking the service sccount:
+5. Locking the service sccount:
 
    - Let's prevent the service account from being used for login:
 
@@ -67,7 +77,7 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    sudo usermod -L svc-omp-server
    ```
 
-5. Creating a directory for the server files:
+6. Creating a directory for the server files:
 
    - We will use the /opt directory, this is the standard location for third-party applications:
 
@@ -75,7 +85,7 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    sudo mkdir /opt/omp-server
    ```
 
-6. Setting permissions for the directory:
+7. Setting permissions for the directory:
 
    - Changing the group of the directory to match the service account:
 
