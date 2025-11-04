@@ -31,7 +31,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您正在调试的NPC无效。");
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");

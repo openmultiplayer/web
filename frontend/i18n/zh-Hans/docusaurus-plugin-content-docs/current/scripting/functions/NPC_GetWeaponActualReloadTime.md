@@ -23,33 +23,21 @@ tags: ["npc", "武器"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Reloader");
-    NPC_Spawn(npcid);
-
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-
-    new actualReloadTime = NPC_GetWeaponActualReloadTime(npcid, WEAPON_AK47);
-    new customReloadTime = NPC_GetWeaponReloadTime(npcid, WEAPON_AK47);
-
-    printf("NPC %d AK47 - 实际换弹: %d毫秒, 自定义: %d毫秒",
-        npcid, actualReloadTime, customReloadTime);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/defaulttime", true))
+    if (!strcmp(cmdtext, "/checkweaponactualreloadtime", true))
     {
-        new actualTime = NPC_GetWeaponActualReloadTime(0, WEAPON_AK47);
-        if (actualTime != -1)
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "AK47默认换弹: %d毫秒", actualTime);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new weapon = NPC_GetWeapon(npcid);
+        new reloadtime = NPC_GetWeaponActualReloadTime(npcid, WEAPON:weapon);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器实际装弹时间: %d 毫秒", npcid, reloadtime);
         return 1;
     }
     return 0;
@@ -60,7 +48,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 返回武器的原始游戏换弹时间
 - 这与使用`NPC_SetWeaponReloadTime`设置的自定义换弹时间不同
-- 使用此函数与自定义设置比较或重置为默认值
 
 ## 相关函数
 

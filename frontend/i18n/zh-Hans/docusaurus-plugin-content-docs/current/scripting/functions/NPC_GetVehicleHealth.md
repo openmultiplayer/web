@@ -22,63 +22,27 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    new Float:health = NPC_GetVehicleHealth(npcid);
-    printf("NPC %d车辆生命值: %.1f", npcid, health);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkvehicles", true))
+    if (!strcmp(cmdtext, "/checkvehiclehealth", true))
     {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        new Float:health = NPC_GetVehicleHealth(0);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        new status[16];
-        if (health >= 800.0)
-            status = "极佳";
-        else if (health >= 600.0)
-            status = "良好";
-        else if (health >= 400.0)
-            status = "受损";
-        else if (health >= 200.0)
-            status = "严重受损";
-        else
-            status = "危急";
+        if (NPC_GetVehicle(npcid) == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何车辆中。", npcid);
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0车辆: %.1f HP - %s", health, status);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new Float:health;
+        NPC_GetVehicleHealth(npcid, health);
 
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 车辆生命值: %.2f", npcid, health);
         return 1;
     }
     return 0;
-}
-
-forward MonitorVehicleHealth();
-public MonitorVehicleHealth()
-{
-    new Float:health = NPC_GetVehicleHealth(0);
-
-    if (health < 300.0)
-    {
-        printf("警告: NPC 0车辆生命值危急: %.1f", health);
-
-        // 如果过低则自动修复
-        NPC_SetVehicleHealth(0, 1000.0);
-        printf("已自动修复NPC 0车辆");
-    }
 }
 ```
 
@@ -87,8 +51,6 @@ public MonitorVehicleHealth()
 - 若 NPC 不在车辆中则返回 0.0
 - 车辆生命值通常范围在 0.0 到 1000.0 之间
 - 生命值低于 250.0 通常意味着车辆会起火
-- 仅在 NPC 为车辆驾驶员时有效
-- 使用此函数监控车辆状况以进行维护或更换
 
 ## 相关函数
 

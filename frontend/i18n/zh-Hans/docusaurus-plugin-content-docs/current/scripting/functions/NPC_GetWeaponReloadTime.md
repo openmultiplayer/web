@@ -23,42 +23,21 @@ tags: ["npc", "武器", "换弹"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("WeaponTester");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetAmmo(npcid, 300);
-
-    // 设置自定义换弹时间
-    NPC_SetWeaponReloadTime(npcid, WEAPON_AK47, 1500);
-
-    // 检查换弹时间
-    new reloadTime = NPC_GetWeaponReloadTime(npcid, WEAPON_AK47);
-    printf("NPC %d AK47换弹时间设置为: %d毫秒", npcid, reloadTime);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkreloadtime", true))
+    if (!strcmp(cmdtext, "/checkweaponreloadtime", true))
     {
-        new weapon = NPC_GetWeapon(0);
-        if (weapon > 0)
-        {
-            new reloadTime = NPC_GetWeaponReloadTime(0, weapon);
-            new actualTime = NPC_GetWeaponActualReloadTime(0, weapon);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-            new msg[128];
-            format(msg, sizeof(msg), "NPC 0武器%d: 自定义换弹%d毫秒, 默认%d毫秒",
-                weapon, reloadTime, actualTime);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0没有武器");
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new weapon = NPC_GetWeapon(npcid);
+        new reloadtime = NPC_GetWeaponReloadTime(npcid, WEAPON:weapon);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器的换弹时间: %d 毫秒", npcid, reloadtime);
         return 1;
     }
     return 0;
@@ -70,7 +49,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 返回当前自定义换弹时间设置
 - 使用 NPC_GetWeaponActualReloadTime 获取默认游戏换弹时间
 - 换弹时间影响 NPC 换弹所需的时间
-- 自定义换弹时间会覆盖默认武器换弹速度
 
 ## 相关函数
 

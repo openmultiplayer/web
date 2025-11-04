@@ -35,7 +35,7 @@ public OnGameModeInit()
     // 检查是否启用
     if (NPC_IsReloadEnabled(npcid))
     {
-        printf("NPC %d已启用自动换弹", npcid);
+        printf("NPC %d 已启用自动换弹", npcid);
     }
 
     return 1;

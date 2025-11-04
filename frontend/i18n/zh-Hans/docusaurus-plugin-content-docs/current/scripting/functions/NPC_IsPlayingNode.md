@@ -43,7 +43,7 @@ public CheckNodeStatus(npcid)
 {
     if (NPC_IsPlayingNode(npcid))
     {
-        printf("NPC %d正在播放节点", npcid);
+        printf("NPC %d 正在播放节点", npcid);
     }
     else
     {

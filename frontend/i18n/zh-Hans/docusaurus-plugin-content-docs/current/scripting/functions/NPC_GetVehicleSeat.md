@@ -22,35 +22,23 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Passenger");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    NPC_PutInVehicle(npcid, vehicleid, 1); // 放入副驾驶座
-
-    new seat = NPC_GetVehicleSeat(npcid);
-    printf("NPC %d在座位%d中", npcid, seat);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkseat", true))
+    if (!strcmp(cmdtext, "/checkvehicleseat", true))
     {
-        new seat = NPC_GetVehicleSeat(0);
-        if (seat != -1)
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0在座位%d中", seat);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0不在车辆中");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        if (NPC_GetVehicle(npcid) == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没在任何车辆中。", npcid);
+
+        new seatid = NPC_GetVehicleSeat(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 在车辆中的座位: %d", npcid, seatid);
         return 1;
     }
     return 0;

@@ -39,7 +39,7 @@ public CheckMeleeStatus(npcid)
 {
     if (NPC_IsMeleeAttacking(npcid))
     {
-        printf("NPC %d正在进行近战攻击", npcid);
+        printf("NPC %d 正在进行近战攻击", npcid);
     }
     else
     {

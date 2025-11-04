@@ -67,7 +67,7 @@ public CheckNodeProgress(npcid, nodeid)
     if (NPC_IsPlayingNode(npcid))
     {
         new totalPoints = NPC_GetNodePointCount(nodeid);
-        printf("NPC %d正在导航节点%d，共有%d个点",
+        printf("NPC %d 正在导航节点%d，共有%d个点",
             npcid, nodeid, totalPoints);
     }
 }

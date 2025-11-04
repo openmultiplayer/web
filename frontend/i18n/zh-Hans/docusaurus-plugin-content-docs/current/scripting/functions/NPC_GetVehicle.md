@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new vehicleid = NPC_GetVehicle(npcid);
 
         if (vehicleid == INVALID_VEHICLE_ID)
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何车辆里面。", npcid);
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何车辆中。", npcid);
         else
             SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在车辆里面: %d", npcid, vehicleid);
         return 1;
@@ -48,7 +48,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 若 NPC 未在任何车辆中则返回 INVALID_VEHICLE_ID
-- 使用此函数检查 NPC 是在驾驶还是作为乘客
 
 ## 相关函数
 

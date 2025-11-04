@@ -34,9 +34,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
             return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
         if (NPC_GetVehicle(npcid) == INVALID_VEHICLE_ID)
-            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何车辆里面。", npcid);
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何车辆中。", npcid);
 
-        new gearState = NPC_GetVehicleGearState(npcid);
+        new LANDING_GEAR_STATE:gearState = NPC_GetVehicleGearState(npcid);
 
         if (gearState == LANDING_GEAR_STATE_UP)
             SendClientMessage(playerid, 0x00FF00FF, "NPC %d: 起落架已收起", npcid);

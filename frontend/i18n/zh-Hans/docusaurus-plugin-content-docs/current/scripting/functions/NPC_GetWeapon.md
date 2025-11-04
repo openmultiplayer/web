@@ -22,42 +22,20 @@ tags: ["npc", "武器"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetAmmo(npcid, 300); // 给予300发弹药
-
-    new weapon = NPC_GetWeapon(npcid);
-    printf("NPC %d持有武器%d", npcid, weapon);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/checkweapon", true))
     {
-        new weapon = NPC_GetWeapon(0);
-        new ammo = NPC_GetAmmo(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
 
-        new weaponName[32];
-        switch(weapon)
-        {
-            case WEAPON_FIST: weaponName = "拳头";
-            case WEAPON_COLT45: weaponName = "Colt 45";
-            case WEAPON_UZI: weaponName = "微型乌兹";
-            case WEAPON_AK47: weaponName = "AK-47";
-            case WEAPON_M4: weaponName = "M4";
-            case WEAPON_SHOTGUN: weaponName = "霰弹枪";
-            case WEAPON_SNIPER: weaponName = "狙击步枪";
-            default: format(weaponName, sizeof(weaponName), "武器%d", weapon);
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0: %s (%d发弹药)", weaponName, ammo);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new weapon = NPC_GetWeapon(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器: %d", npcid, weapon);
         return 1;
     }
     return 0;
@@ -68,8 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 若 NPC 没有武器则返回 0（拳头）
 - 武器 ID 与玩家武器 ID 相同
-- 在设置弹药或武器属性前使用此函数
-- NPC 必须有效此函数才能工作
 
 ## 相关函数
 

@@ -30,7 +30,7 @@ public OnGameModeInit()
     NPC_SetWeapon(npcid, WEAPON_M4);
     NPC_SetAmmo(npcid, 300);
 
-    printf("保镖NPC %d已创建并装备武器", npcid);
+    printf("保镖NPC %d 已创建并装备武器", npcid);
 
     return 1;
 }

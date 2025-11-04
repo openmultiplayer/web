@@ -22,39 +22,23 @@ tags: ["npc", "车辆", "火车"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Conductor");
-    NPC_Spawn(npcid);
-
-    // 创建火车
-    new vehicleid = CreateVehicle(537, 1700.0, -1953.0, 14.0, 0.0, -1, -1, 300); // 货运火车
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // 设置火车速度
-    NPC_SetVehicleTrainSpeed(npcid, 50.0);
-
-    new Float:speed = NPC_GetVehicleTrainSpeed(npcid);
-    printf("NPC %d火车速度: %.2f", npcid, speed);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/trainspeed", true))
+    if (!strcmp(cmdtext, "/checkvehicletrainspeed", true))
     {
-        new Float:speed = NPC_GetVehicleTrainSpeed(0);
-        if (speed > 0.0)
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0火车速度: %.2f", speed);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0不在火车中");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        if (NPC_GetVehicle(npcid) == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没在任何车辆中。", npcid);
+
+        new Float:speed = NPC_GetVehicleTrainSpeed(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 驾驶的火车的速度: %.2f", npcid, speed);
         return 1;
     }
     return 0;
@@ -65,7 +49,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 仅在 NPC 驾驶火车车辆时有效
 - 若 NPC 不在火车中或不是驾驶员则返回 0.0
-- 火车速度影响火车在轨道上的移动速度
 
 ## 相关函数
 

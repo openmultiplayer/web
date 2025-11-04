@@ -23,31 +23,21 @@ tags: ["npc", "武器"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetWeaponClipSize(npcid, WEAPON_AK47, 50); // 扩展弹夹
-
-    new clipSize = NPC_GetWeaponClipSize(npcid, WEAPON_AK47);
-    printf("NPC %d AK47弹夹容量: %d", npcid, clipSize);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkclip", true))
+    if (!strcmp(cmdtext, "/checkweaponclipsize", true))
     {
-        new clipSize = NPC_GetWeaponClipSize(0, WEAPON_AK47);
-        if (clipSize != -1)
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0 AK47弹夹: %d发", clipSize);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new weapon = NPC_GetWeapon(npcid);
+        new clipsize = NPC_GetWeaponClipSize(npcid, WEAPON:weapon);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器的弹夹容量为: %d", npcid, clipsize);
         return 1;
     }
     return 0;
@@ -58,7 +48,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 返回当前自定义弹夹容量设置
 - 不同武器有不同的默认弹夹容量
-- 自定义弹夹容量可以大于正常容量以实现扩展弹匣
 
 ## 相关函数
 

@@ -23,35 +23,21 @@ tags: ["npc", "武器"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Sniper");
-    NPC_Spawn(npcid);
-
-    NPC_SetWeapon(npcid, WEAPON_SNIPER);
-    NPC_SetWeaponAccuracy(npcid, WEAPON_SNIPER, 0.95);
-
-    new Float:accuracy = NPC_GetWeaponAccuracy(npcid, WEAPON_SNIPER);
-    printf("NPC %d狙击枪精度: %.2f", npcid, accuracy);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkaccuracy", true))
+    if (!strcmp(cmdtext, "/checkweaponaccuracy", true))
     {
-        new Float:accuracy = NPC_GetWeaponAccuracy(0, WEAPON_SNIPER);
-        if (accuracy >= 0.0)
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0狙击枪精度: %.2f", accuracy);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "获取精度失败");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new weapon = NPC_GetWeapon(npcid);
+        new Float:accuracy = NPC_GetWeaponAccuracy(npcid, WEAPON:weapon);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器 %d 精度: %.2f", npcid, weapon, accuracy);
         return 1;
     }
     return 0;
@@ -62,7 +48,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 精度是介于 0.0（0%准确）和 1.0（100%准确）之间的值
 - 若 NPC ID 无效或武器不存在则返回-1.0
-- 默认精度因武器类型而异
 
 ## 相关函数
 

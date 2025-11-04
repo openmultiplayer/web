@@ -43,7 +43,7 @@ public CheckAimingStatus(npcid)
 {
     if (NPC_IsAiming(npcid))
     {
-        printf("NPC %d正在成功瞄准目标", npcid);
+        printf("NPC %d 正在成功瞄准目标", npcid);
     }
     else
     {

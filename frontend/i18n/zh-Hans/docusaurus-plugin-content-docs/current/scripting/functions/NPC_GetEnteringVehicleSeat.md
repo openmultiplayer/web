@@ -24,7 +24,7 @@ tags: ["npc", "车辆"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkentervehseat", true))
+    if (!strcmp(cmdtext, "/checkenterveh", true))
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
@@ -33,15 +33,52 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        if (!NPC_IsEnteringVehicle(npcid))
-            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有进入任何车辆。", npcid);
-
-        new seatid = NPC_GetEnteringVehicleSeat(npcid);
-
-        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进入车辆ID: %d", npcid, seatid);
+        // 如果尚未运行，则开始监视
+        if (PlayerEnterVehicleMonitor[playerid] == INVALID_TIMER_ID)
+        {
+            PlayerEnterVehicleMonitor[playerid] = SetTimerEx("CheckNPCEnteringVehicle", 200, true, "i", playerid);
+            PlayerWasEnteringVehicle[playerid] = false;
+            SendClientMessage(playerid, 0x00FF00FF, "开始监控 NPC %d 的车辆进入状态。", npcid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "已在监控 NPC %d 的车辆进入状态。", npcid);
+        }
         return 1;
     }
     return 0;
+}
+
+forward CheckNPCEnteringVehicle(playerid);
+public CheckNPCEnteringVehicle(playerid)
+{
+    if (!IsPlayerConnected(playerid))
+    {
+        StopPlayerEnterVehicleMonitor(playerid);
+        return 0;
+    }
+
+    new npcid = PlayerNPC[playerid];
+    if (npcid == INVALID_NPC_ID || !NPC_IsValid(npcid))
+    {
+        StopPlayerEnterVehicleMonitor(playerid);
+        return 0;
+    }
+
+    new bool:isEntering = NPC_IsEnteringVehicle(npcid);
+
+    if (isEntering)
+    {
+        new vehicleid = NPC_GetEnteringVehicle(npcid);
+        new seatid = NPC_GetEnteringVehicleSeat(npcid);
+
+        if (vehicleid != INVALID_VEHICLE_ID && vehicleid != 0)
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 正在进入车辆 %d（座位 %d）", npcid, vehicleid, seatid);
+        }
+    }
+
+    return 1;
 }
 ```
 

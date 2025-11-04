@@ -43,7 +43,7 @@ public CheckVehicleEntry(npcid)
     {
         new vehicleid = NPC_GetEnteringVehicleID(npcid);
         new seat = NPC_GetEnteringVehicleSeat(npcid);
-        printf("NPC %d正在进入车辆%d，座位%d", npcid, vehicleid, seat);
+        printf("NPC %d 正在进入车辆%d，座位%d", npcid, vehicleid, seat);
     }
     else
     {

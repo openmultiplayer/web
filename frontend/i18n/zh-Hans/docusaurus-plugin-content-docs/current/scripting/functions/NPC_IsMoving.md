@@ -38,11 +38,11 @@ public CheckMovement(npcid)
 {
     if (NPC_IsMoving(npcid))
     {
-        printf("NPC %d正在移动", npcid);
+        printf("NPC %d 正在移动", npcid);
     }
     else
     {
-        printf("NPC %d已停止移动", npcid);
+        printf("NPC %d 已停止移动", npcid);
     }
 }
 ```

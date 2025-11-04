@@ -26,7 +26,7 @@ public OnNPCTakeDamage(npcid, damagerid, Float:damage, WEAPON:weapon, bodypart)
 {
     if (NPC_IsDead(npcid))
     {
-        printf("NPC %d已经死亡！", npcid);
+        printf("NPC %d 已经死亡！", npcid);
         return 1;
     }
 
