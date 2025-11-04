@@ -74,6 +74,8 @@ github.com/Southclaws/go-samp-query v1.2.3 h1:rJxtAow+XIhoaVHdZy1tvY7wx21/kTQ9JO
 github.com/Southclaws/go-samp-query v1.2.3/go.mod h1:veYZpOaPw6PXwvTGo9Rg3INKQV/2PR8Bn8p+bQedFNM=
 github.com/Southclaws/go-samp-query v1.2.4 h1:nbvyn7DNM9WSs8AURVgkm4fPr5zLFfeWjC/U5/tS0PE=
 github.com/Southclaws/go-samp-query v1.2.4/go.mod h1:veYZpOaPw6PXwvTGo9Rg3INKQV/2PR8Bn8p+bQedFNM=
+github.com/Southclaws/go-samp-query v1.2.5 h1:7OHf2U05xUWUH/DavPqJ+Shc81y1e36zi6xbFew1F/s=
+github.com/Southclaws/go-samp-query v1.2.5/go.mod h1:veYZpOaPw6PXwvTGo9Rg3INKQV/2PR8Bn8p+bQedFNM=
 github.com/Southclaws/qstring v1.1.0 h1:6Gj//09Tue8+0HtX0IAgVNAau4XZ+6TQOH7koWjdNKI=
 github.com/Southclaws/qstring v1.1.0/go.mod h1:3KvScfejPnEaP1scQndt0CXDTfQKDdUqbRSJxSAPZu4=
 github.com/Southclaws/sampctl v0.0.0-20210109143621-2daeb58d756a h1:1R7cLhxlyzWSnsHC7yqLdrgDyohJm0N4Nqos5B1LxC0=

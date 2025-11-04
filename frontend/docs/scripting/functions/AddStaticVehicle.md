@@ -11,7 +11,7 @@ Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
 
 | Name                                   | Description                                             |
 | -------------------------------------- | ------------------------------------------------------- |
-| spawnX                                 | The [Model ID](../resources/vehicleid) for the vehicle. |
+| modelid                                | The [Model ID](../resources/vehicleid) for the vehicle. |
 | Float:spawnX                           | The X-coordinate for the vehicle.                       |
 | Float:spawnY                           | The Y-coordinate for the vehicle.                       |
 | Float:spawnZ                           | The Z-coordinate for the vehicle.                       |
