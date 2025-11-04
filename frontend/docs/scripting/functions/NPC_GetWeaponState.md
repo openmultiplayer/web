@@ -22,49 +22,20 @@ Returns the weapon state ID.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("CombatBot");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetAmmo(npcid, 30);
-
-    // Start monitoring weapon state
-    SetTimer("MonitorWeaponState", 1000, true);
-
-    return 1;
-}
-
-forward MonitorWeaponState();
-public MonitorWeaponState()
-{
-    new weaponState = NPC_GetWeaponState(0);
-
-    new stateName[32];
-    switch(weaponState)
-    {
-        case WEAPONSTATE_NO_BULLETS: stateName = "No Bullets";
-        case WEAPONSTATE_LAST_BULLET: stateName = "Last Bullet";
-        case WEAPONSTATE_MORE_BULLETS: stateName = "Has Bullets";
-        case WEAPONSTATE_RELOADING: stateName = "Reloading";
-        default: stateName = "Unknown";
-    }
-
-    printf("NPC 0 weapon state: %s (%d)", stateName, weaponState);
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/weaponstate", true))
+    if (!strcmp(cmdtext, "/checkweaponstate", true))
     {
-        new weaponState = NPC_GetWeaponState(0);
-        new weapon = NPC_GetWeapon(0);
-        new ammo = NPC_GetAmmoInClip(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        new msg[128];
-        format(msg, sizeof(msg), "NPC 0: Weapon %d, State %d, Ammo in clip: %d",
-            weapon, weaponState, ammo);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new weaponstate = NPC_GetWeaponState(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon state: %d", npcid, weaponstate);
         return 1;
     }
     return 0;
@@ -76,7 +47,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Weapon states include reloading, shooting, out of ammo, etc.
 - Use this to check the current status of the NPC's weapon
 - State values correspond to PlayerWeaponState constants
-- Useful for AI decision making and combat monitoring
 
 ## Related Functions
 

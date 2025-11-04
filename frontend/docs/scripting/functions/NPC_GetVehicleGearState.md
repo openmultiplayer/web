@@ -36,14 +36,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (NPC_GetVehicle(npcid) == INVALID_VEHICLE_ID)
             return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d is not in any vehicle.", npcid);
 
-        new gearState = NPC_GetVehicleGearState(npcid);
+        new LANDING_GEAR_STATE:gearState = NPC_GetVehicleGearState(npcid);
 
         if (gearState == LANDING_GEAR_STATE_UP)
             SendClientMessage(playerid, 0x00FF00FF, "NPC %d: Landing gear UP", npcid);
         else
             SendClientMessage(playerid, 0x00FF00FF, "NPC %d: Landing gear DOWN", npcid);
 
-        return 1;
+        return 1; 
     }
     return 0;
 }

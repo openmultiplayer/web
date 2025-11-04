@@ -24,6 +24,28 @@ Returns `true` on success, `false` on failure.
 
 ## Examples
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/checkvelocity", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new Float:velX, Float:velY, Float:velZ;
+        NPC_GetVelocity(npcid, velX, velY, velZ);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d velocity: X=%.2f, Y=%.2f, Z=%.2f", npcid, velX, velY, velZ);
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## Notes
 
 :::warning

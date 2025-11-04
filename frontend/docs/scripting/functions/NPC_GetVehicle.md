@@ -48,7 +48,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Returns INVALID_VEHICLE_ID if the NPC is not in any vehicle
-- Use this to check if an NPC is driving or is a passenger
 
 ## Related Functions
 

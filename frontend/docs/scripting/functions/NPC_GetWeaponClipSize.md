@@ -23,31 +23,21 @@ Returns the weapon's clip size, or -1 on error.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_SetWeaponClipSize(npcid, WEAPON_AK47, 50); // Extended clip
-
-    new clipSize = NPC_GetWeaponClipSize(npcid, WEAPON_AK47);
-    printf("NPC %d AK47 clip size: %d", npcid, clipSize);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkclip", true))
+    if (!strcmp(cmdtext, "/checkweaponclipsize", true))
     {
-        new clipSize = NPC_GetWeaponClipSize(0, WEAPON_AK47);
-        if (clipSize != -1)
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0 AK47 clip: %d ammo", clipSize);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new weapon = NPC_GetWeapon(npcid);
+        new clipsize = NPC_GetWeaponClipSize(npcid, WEAPON:weapon);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon clip size: %d", npcid, clipsize);
         return 1;
     }
     return 0;
@@ -58,7 +48,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Returns the current custom clip size setting
 - Different weapons have different default clip sizes
-- Custom clip sizes can be larger than normal for extended magazines
 
 ## Related Functions
 

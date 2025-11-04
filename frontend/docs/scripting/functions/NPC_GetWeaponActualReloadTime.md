@@ -23,33 +23,21 @@ Returns the default reload time in milliseconds, or -1 on error.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Reloader");
-    NPC_Spawn(npcid);
-
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-
-    new actualReloadTime = NPC_GetWeaponActualReloadTime(npcid, WEAPON_AK47);
-    new customReloadTime = NPC_GetWeaponReloadTime(npcid, WEAPON_AK47);
-
-    printf("NPC %d AK47 - Actual reload: %dms, Custom: %dms",
-        npcid, actualReloadTime, customReloadTime);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/defaulttime", true))
+    if (!strcmp(cmdtext, "/checkweaponactualreloadtime", true))
     {
-        new actualTime = NPC_GetWeaponActualReloadTime(0, WEAPON_AK47);
-        if (actualTime != -1)
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "AK47 default reload: %dms", actualTime);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new weapon = NPC_GetWeapon(npcid);
+        new reloadtime = NPC_GetWeaponActualReloadTime(npcid, WEAPON:weapon);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon actual reload time: %d ms", npcid, reloadtime);
         return 1;
     }
     return 0;
@@ -60,7 +48,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Returns the original game reload time for the weapon
 - This is different from custom reload times set with `NPC_SetWeaponReloadTime`
-- Use this to compare against custom settings or reset to defaults
 
 ## Related Functions
 

@@ -33,19 +33,52 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        if (!NPC_IsEnteringVehicle(npcid))
-            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d is not entering a vehicle.", npcid);
-
-        new vehicleid = NPC_GetEnteringVehicle(npcid);
-        new seatid = NPC_GetEnteringVehicleSeat(npcid);
-
-        if (vehicleid == INVALID_VEHICLE_ID || vehicleid == 0)
-            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d has no pending target vehicle.", npcid);
-
-        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is entering vehicle %d (seat %d).", npcid, vehicleid, seatid);
+        // Start monitoring if not already running
+        if (PlayerEnterVehicleMonitor[playerid] == INVALID_TIMER_ID)
+        {
+            PlayerEnterVehicleMonitor[playerid] = SetTimerEx("CheckNPCEnteringVehicle", 200, true, "i", playerid);
+            PlayerWasEnteringVehicle[playerid] = false;
+            SendClientMessage(playerid, 0x00FF00FF, "Started monitoring NPC %d vehicle entry.", npcid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "Already monitoring NPC %d vehicle entry.", npcid);
+        }
         return 1;
     }
     return 0;
+}
+
+forward CheckNPCEnteringVehicle(playerid);
+public CheckNPCEnteringVehicle(playerid)
+{
+    if (!IsPlayerConnected(playerid))
+    {
+        StopPlayerEnterVehicleMonitor(playerid);
+        return 0;
+    }
+
+    new npcid = PlayerNPC[playerid];
+    if (npcid == INVALID_NPC_ID || !NPC_IsValid(npcid))
+    {
+        StopPlayerEnterVehicleMonitor(playerid);
+        return 0;
+    }
+
+    new bool:isEntering = NPC_IsEnteringVehicle(npcid);
+
+    if (isEntering)
+    {
+        new vehicleid = NPC_GetEnteringVehicle(npcid);
+        new seatid = NPC_GetEnteringVehicleSeat(npcid);
+
+        if (vehicleid != INVALID_VEHICLE_ID && vehicleid != 0)
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d entering vehicle %d (seat %d)", npcid, vehicleid, seatid);
+        }
+    }
+
+    return 1;
 }
 ```
 

@@ -22,35 +22,23 @@ Returns the seat ID, or -1 if not in a vehicle.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Passenger");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    NPC_PutInVehicle(npcid, vehicleid, 1); // Put in passenger seat
-
-    new seat = NPC_GetVehicleSeat(npcid);
-    printf("NPC %d is in seat %d", npcid, seat);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkseat", true))
+    if (!strcmp(cmdtext, "/checkvehicleseat", true))
     {
-        new seat = NPC_GetVehicleSeat(0);
-        if (seat != -1)
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0 is in seat %d", seat);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 is not in a vehicle");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        if (NPC_GetVehicle(npcid) == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d is not in any vehicle.", npcid);
+
+        new seatid = NPC_GetVehicleSeat(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d vehicle seat: %d", npcid, seatid);
         return 1;
     }
     return 0;

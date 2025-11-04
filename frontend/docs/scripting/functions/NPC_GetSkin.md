@@ -21,6 +21,27 @@ Returns the skin/model ID of the NPC, or -1 if invalid.
 
 ## Examples
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/checkskin", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new skinid = NPC_GetSkin(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d skin: %d", npcid, skinid);
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## Notes
 
 - Returns the current skin/model the NPC is using

@@ -22,25 +22,20 @@ Returns the virtual world ID, or 0 on error.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("WorldBot");
-    NPC_Spawn(npcid);
-
-    NPC_SetVirtualWorld(npcid, 5); // Set to virtual world 5
-
-    new const vw = NPC_GetVirtualWorld(npcid);
-    printf("NPC %d is in virtual world %d", npcid, vw);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkworld", true))
+    if (!strcmp(cmdtext, "/checkvirtualworld", true))
     {
-        new const vw = NPC_GetVirtualWorld(0);
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0 is in virtual world %d", vw);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new vw = NPC_GetVirtualWorld(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d virtual world: %d", npcid, vw);
         return 1;
     }
     return 0;

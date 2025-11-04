@@ -23,51 +23,21 @@ Returns the shoot time in milliseconds for the specified weapon.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("RapidFire");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 500);
-
-    // Set rapid fire
-    NPC_SetWeaponShootTime(npcid, WEAPON_M4, 100);
-
-    // Check the shoot time
-    new shootTime = NPC_GetWeaponShootTime(npcid, WEAPON_M4);
-    printf("NPC %d M4 shoot time set to: %dms", npcid, shootTime);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkfirerate", true))
+    if (!strcmp(cmdtext, "/checkweaponshoottime", true))
     {
-        new weapon = NPC_GetWeapon(0);
-        if (weapon > 0)
-        {
-            new shootTime = NPC_GetWeaponShootTime(0, weapon);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-            new fireRate[32];
-            if (shootTime <= 100)
-                fireRate = "Very Fast";
-            else if (shootTime <= 500)
-                fireRate = "Fast";
-            else if (shootTime <= 1000)
-                fireRate = "Normal";
-            else
-                fireRate = "Slow";
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-            new msg[128];
-            format(msg, sizeof(msg), "NPC 0 weapon %d: %dms shoot time (%s)",
-                weapon, shootTime, fireRate);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 has no weapon");
-        }
+        new weapon = NPC_GetWeapon(npcid);
+        new shoottime = NPC_GetWeaponShootTime(npcid, WEAPON:weapon);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon %d shoot time: %d ms", npcid, weapon, shoottime);
         return 1;
     }
     return 0;
@@ -79,7 +49,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Shoot time affects the delay between shots
 - Lower values mean faster firing rate
 - Different weapons have different default shoot times
-- Custom shoot times can create unique firing patterns
 
 ## Related Functions
 
