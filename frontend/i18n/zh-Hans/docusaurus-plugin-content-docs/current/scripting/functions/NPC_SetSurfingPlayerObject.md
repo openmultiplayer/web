@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         NPC_Spawn(npcid);
         NPC_SetPos(npcid, 1958.33, 1343.12, 17.36);
         NPC_SetSurfingPlayerObject(npcid, objectid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 现在正在您的对象上冲浪！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 现在正在你的对象上冲浪！");
         return 1;
     }
     return 0;

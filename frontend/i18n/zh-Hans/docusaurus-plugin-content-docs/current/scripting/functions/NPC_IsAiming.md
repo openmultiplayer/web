@@ -22,62 +22,20 @@ tags: ["npc", "武器", "瞄准"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Sniper");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_SNIPER);
-    NPC_SetAmmo(npcid, 50);
-
-    // 让NPC瞄准远处目标
-    NPC_AimAt(npcid, 2000.0, 1500.0, 20.0, true, 1000, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_ALL);
-
-    // 2秒后检查瞄准状态
-    SetTimerEx("CheckAimingStatus", 2000, false, "i", npcid);
-
-    return 1;
-}
-
-forward CheckAimingStatus(npcid);
-public CheckAimingStatus(npcid)
-{
-    if (NPC_IsAiming(npcid))
-    {
-        printf("NPC %d 正在成功瞄准目标", npcid);
-    }
-    else
-    {
-        printf("NPC %d没有在瞄准", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkaim", true))
+    if (!strcmp(cmdtext, "/checkaiming", true))
     {
-        if (NPC_IsAiming(0))
-        {
-            new weapon = NPC_GetWeapon(0);
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0正在用武器%d瞄准", weapon);
-            SendClientMessage(playerid, 0x00FF00FF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0没有在瞄准");
-        }
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/aimatme", true))
-    {
-        new Float:x, Float:y, Float:z;
-        GetPlayerPos(playerid, x, y, z);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        // 让NPC 0瞄准玩家
-        NPC_AimAt(0, x, y, z + 1.0, false, 0, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_NONE);
+        new bool:isAiming = NPC_IsAiming(npcid);
 
-        SendClientMessage(playerid, 0xFFFF00FF, "NPC 0现在正在瞄准你！");
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在瞄准: %s", npcid, isAiming ? "是" : "否");
         return 1;
     }
     return 0;
@@ -86,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 当 NPC 正在积极瞄准目标时返回 true
+- 当 NPC 正在进行瞄准目标时返回 true
 - 使用此函数检查 NPC 是否处于战斗模式
 - 瞄准可以通过 NPC_AimAt 或 NPC_AimAtPlayer 启动
 - NPC 会持续瞄准直到使用 NPC_StopAim 停止

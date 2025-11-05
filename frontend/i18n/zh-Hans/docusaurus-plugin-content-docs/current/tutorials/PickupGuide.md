@@ -30,7 +30,7 @@ new gMyPickup;
 
 以在格罗夫街创建金钱拾取物为例：
 
-首先需要选择显示模型，您可通过[此外部站点](https://dev.prineside.com/en/gtasa_samp_model_id)查看完整模型列表。本教程选用编号 1274 的美元符号模型。
+首先需要选择显示模型，你可通过[此外部站点](https://dev.prineside.com/en/gtasa_samp_model_id)查看完整模型列表。本教程选用编号 1274 的美元符号模型。
 
 接下来确定[拾取类型](../scripting/resources/pickuptypes)，该参数决定拾取物行为特性。为实现"拾取后暂时消失，数分钟后重生"的效果，我们选择类型 2。
 
@@ -81,7 +81,7 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 }
 ```
 
-恭喜！您已掌握创建和处理拾取物的核心方法！
+恭喜！你已掌握创建和处理拾取物的核心方法！
 
 ## 进阶应用
 

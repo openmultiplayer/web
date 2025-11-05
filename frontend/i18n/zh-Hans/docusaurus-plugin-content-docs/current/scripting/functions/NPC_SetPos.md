@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // 将 NPC 0 传送到玩家位置
         NPC_SetPos(0, x + 2.0, y, z);
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 已传送到您身边！");
+        SendClientMessage(playerid, 0x00FF00FF, "NPC 已传送到你身边！");
         return 1;
     }
 

@@ -24,7 +24,7 @@ public OnPlayerRequestSpawn(playerid)
 {
     if (!IsPlayerAdmin(playerid)) // 非管理员玩家
     {
-        SendClientMessage(playerid, -1, "您无权生成角色。");
+        SendClientMessage(playerid, -1, "你无权生成角色。");
         return 0; // 阻止生成
     }
     return 1; // 允许生成

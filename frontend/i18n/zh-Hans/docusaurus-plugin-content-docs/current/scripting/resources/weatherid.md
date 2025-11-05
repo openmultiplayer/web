@@ -37,6 +37,6 @@ sidebar_label: 天气ID列表
 
 - 某些天气在不同时间段会呈现显著差异，可参考[此链接](http://hotmist.ddo.jp/id/weather.html)查看各天气类型的实时表现
 
-- [GTA 圣安地列斯天气图库](https://dev.prineside.com/en/gtasa_weather_id/)通过可视化形式更直观地展示了天气 ID 的运作机制。您可用其查看特定时段的天气效果，并排查引发异常效果的天气类型
+- [GTA 圣安地列斯天气图库](https://dev.prineside.com/en/gtasa_weather_id/)通过可视化形式更直观地展示了天气 ID 的运作机制。你可用其查看特定时段的天气效果，并排查引发异常效果的天气类型
 
 :::

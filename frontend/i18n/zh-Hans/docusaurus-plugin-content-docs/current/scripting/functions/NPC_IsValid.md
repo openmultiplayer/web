@@ -22,80 +22,20 @@ tags: ["npc"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("TestBot");
-
-    if (NPC_IsValid(npcid))
-    {
-        printf("NPC %d 创建成功", npcid);
-        NPC_Spawn(npcid);
-    }
-    else
-    {
-        print("创建 NPC 失败");
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknpcs", true))
+   if (!strcmp(cmdtext, "/checkvalid", true))
     {
-        new
-            validCount = 0,
-            Float:health;
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        for (new i = 0; i < MAX_NPCS; i++)
-        {
-            if (NPC_IsValid(i))
-            {
-                validCount++;
-                health = NPC_GetHealth(i);
+        new bool:isValid = NPC_IsValid(npcid);
 
-                SendClientMessage(playerid, 0xFFFFFFFF, "NPC %d: 生命值 %.1f", i, health);
-            }
-        }
-
-        SendClientMessage(playerid, 0x00FF00FF, "有效 NPC 总数: %d", validCount);
-
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 是否有效: %s", npcid, isValid ? "是" : "否");
         return 1;
     }
     return 0;
-}
-
-DestroyAllNPCs()
-{
-    new destroyedCount = 0;
-
-    for (new i = 0; i < MAX_NPCS; i++)
-    {
-        if (NPC_IsValid(i))
-        {
-            NPC_Destroy(i);
-            destroyedCount++;
-        }
-    }
-
-    printf("销毁了 %d 个 NPC", destroyedCount);
-    return destroyedCount;
-}
-
-forward SafeNPCOperation(npcid);
-public SafeNPCOperation(npcid)
-{
-    if (!NPC_IsValid(npcid))
-    {
-        printf("错误: NPC %d 无效", npcid);
-        return false;
-    }
-
-    // 可以安全地对 NPC 执行操作
-    NPC_SetHealth(npcid, 100.0);
-    NPC_SetPos(npcid, 0.0, 0.0, 3.0);
-
-    return true;
 }
 ```
 

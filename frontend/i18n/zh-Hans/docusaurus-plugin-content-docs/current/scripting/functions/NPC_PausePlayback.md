@@ -22,37 +22,6 @@ tags: ["npc", "录制", "回放"]
 
 ## 示例
 
-```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("RecordedBot");
-    NPC_Spawn(npcid);
-    NPC_StartPlayback(npcid, "录制", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-
-    // 5秒后暂停
-    SetTimerEx("PauseBot", 5000, false, "i", npcid);
-
-    return 1;
-}
-
-forward PauseBot(npcid);
-public PauseBot(npcid)
-{
-    NPC_PausePlayback(npcid, true);
-    printf("NPC %d 回放已暂停", npcid);
-
-    // 3秒后恢复
-    SetTimerEx("ResumeBot", 3000, false, "i", npcid);
-}
-
-forward ResumeBot(npcid);
-public ResumeBot(npcid)
-{
-    NPC_PausePlayback(npcid, false);
-    printf("NPC %d 回放已恢复", npcid);
-}
-```
-
 ## 注意事项
 
 - 仅在 NPC 正在回放录制时有效

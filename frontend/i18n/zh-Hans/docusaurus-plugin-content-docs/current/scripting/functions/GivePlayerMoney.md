@@ -29,7 +29,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     {
        // 给予击杀者1000美元奖励
        GivePlayerMoney(killerid, 1000);
-       SendClientMessage(killerid, -1, "您因击杀获得1000美元奖励");
+       SendClientMessage(killerid, -1, "你因击杀获得1000美元奖励");
     }
 
     // 扣除死亡玩家500美元

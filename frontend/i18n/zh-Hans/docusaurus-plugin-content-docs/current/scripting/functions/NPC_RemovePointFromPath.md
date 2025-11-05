@@ -79,7 +79,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             NPC_RemovePointFromPath(g_PatrolPath, pointCount - 1);
             NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5);
 
-            SendClientMessage(playerid, 0x00FF00FF, "已将路径终点更新为您的位置");
+            SendClientMessage(playerid, 0x00FF00FF, "已将路径终点更新为你的位置");
         }
         return 1;
     }

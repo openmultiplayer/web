@@ -269,7 +269,7 @@ int amx_Allot(AMX *amx, int cells, cell *amx_addr, cell **phys_addr);
 
 **说明：** 在早期版本的 PAWN 中, 数组和字符串必须在将其传递给脚本之前明确地为其分配内存. 在当前版本中, 这一功能已被 amx_PushArray 和 amx_PushString 函数在很大程度上取代. PAWN 函数只能访问其抽象机器内部的内存. 如果要"按引用"传递参数到 PAWN 函数, 必须将该参数的地址传递给 amx_Exec. 此外, 该地址本身也必须在抽象机器的地址范围内. 一个额外的复杂性是, 抽象机器使用相对于抽象机器数据段的地址, 而主机程序使用相对于操作系统提供的环境的地址.
 
-amx_Allot 在抽象机器内部分配内存单元, 并返回两个地址. amx_addr 参数是相对于抽象机器的"数据段"的变量地址；这是您应该传递给 amx_Exec 的值(通过 amx_Push). 参数 phys_addr 持有相对于主机程序地址空间的地址. 因此, C/C++程序可以使用此地址并写入分配的内存. amx_Exec 返回后, 您可以检查内存块(amx_Exec 调用的 PAWN 函数可能已经写入其中), 然后通过调用 amx_Release 最终释放它.
+amx_Allot 在抽象机器内部分配内存单元, 并返回两个地址. amx_addr 参数是相对于抽象机器的"数据段"的变量地址；这是你应该传递给 amx_Exec 的值(通过 amx_Push). 参数 phys_addr 持有相对于主机程序地址空间的地址. 因此, C/C++程序可以使用此地址并写入分配的内存. amx_Exec 返回后, 你可以检查内存块(amx_Exec 调用的 PAWN 函数可能已经写入其中), 然后通过调用 amx_Release 最终释放它.
 
 **另请参见：** [amx_Exec](#amx_exec), [amx_PushArray](#amx_pusharray), [amx_PushString](#amx_pushstring), [amx_Release](#amx_release)
 
@@ -367,7 +367,7 @@ int amx_GetAddr(AMX *amx, cell amx_addr, cell **phys_addr);
 | **amx_addr**  | 相对于抽象机器的地址.                                                                                                          |
 | **phys_addr** | 一个指向变量的指针, 该变量将保存指定单元格的内存地址. 如果 amx_addr 参数不是抽象机器内部的有效地址, phys_addr 将被设置为 NULL. |
 
-**说明：** 此函数返回抽象机器中地址的内存地址. 通常在扩展模块中使用此函数, 因为它允许您访问抽象机器内部的变量.
+**说明：** 此函数返回抽象机器中地址的内存地址. 通常在扩展模块中使用此函数, 因为它允许你访问抽象机器内部的变量.
 
 ## amx_GetString
 

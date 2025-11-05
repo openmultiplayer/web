@@ -25,7 +25,7 @@ tags: ["车辆"]
 public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 {
     new string[128];
-    format(string, sizeof(string), "您已将车辆预览涂装变更为 %d 号样式！", paintjobid);
+    format(string, sizeof(string), "你已将车辆预览涂装变更为 %d 号样式！", paintjobid);
     SendClientMessage(playerid, 0x33AA33AA, string);
     return 1;
 }

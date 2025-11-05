@@ -32,14 +32,21 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        new count = NPC_GetPathPointCount(g_PatrolPath);
+        new count = NPC_GetPathPointCount(PlayerPatrolPath[playerid]);
 
-        if (NPC_IsValidPath(g_PatrolPath))
+        if (NPC_IsValidPath(PlayerPatrolPath[playerid]))
         {
-            NPC_MoveByPath(npcid, g_PatrolPath, NPC_MOVE_TYPE_WALK);
-            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 开始巡逻路线，共 %d 个点", npcid, count);
+            NPC_MoveByPath(npcid, PlayerPatrolPath[playerid], NPC_MOVE_TYPE_WALK);
+            SendClientMessage(playerid, 0x00FF00FF, "开始巡逻路线，共 %d 个点", npcid, count);
+
+            StopPlayerPatrolTimer(playerid);
+            PlayerPatrolTimer[playerid] = SetTimerEx("CheckPathProgress", 2000, true, "i", playerid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "开始巡逻失败");
         }
         return 1;
     }

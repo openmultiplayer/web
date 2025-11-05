@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::tip
 
-如果您想更改已显示的文本绘图的框颜色，无需重新创建。只需在修改后使用[TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll)即可立即生效。
+如果你想更改已显示的文本绘图的框颜色，无需重新创建。只需在修改后使用[TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll)即可立即生效。
 
 :::
 

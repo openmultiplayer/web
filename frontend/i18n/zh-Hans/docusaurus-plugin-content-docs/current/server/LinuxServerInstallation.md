@@ -5,17 +5,17 @@ description: 本指南提供在 Linux 系统上安装 open.mp 服务器的完整
 ---
 
 **本指南提供在 Ubuntu 或其他基于 Debian 的 Linux 系统上安装 open.mp 服务器的完整教程。  
-无论您是新手还是需要温故知新，本指南都可能为您提供有价值的信息！**
+无论你是新手还是需要温故知新，本指南都可能为你提供有价值的信息！**
 
 :::warning
 
-若您仍在使用 SA:MP 服务器且尚未迁移至 open.mp，**[请立即停止并优先阅读此迁移指南](https://www.open.mp/docs/server/Installation)**。
+若你仍在使用 SA:MP 服务器且尚未迁移至 open.mp，**[请立即停止并优先阅读此迁移指南](https://www.open.mp/docs/server/Installation)**。
 
 :::
 
 :::note
 
-若您正在使用 FCNPC 插件，请暂停操作，因该插件目前暂不支持 open.mp。
+若你正在使用 FCNPC 插件，请暂停操作，因该插件目前暂不支持 open.mp。
 
 :::
 
@@ -25,19 +25,19 @@ description: 本指南提供在 Linux 系统上安装 open.mp 服务器的完整
 
 - 运行 Ubuntu（推荐 20.04 或更新版本）或其他 Debian 系 Linux 的机器
 - 用于文件传输的 WinSCP 或 Filezilla
-- PuTTY 或您的主机商 SSH 解决方案
+- PuTTY 或你的主机商 SSH 解决方案
 
 :::note
 
 安装 WinSCP 时，安装程序会提示安装 PuTTY！  
-您可选择立即安装或后续单独下载，此选项不影响后续操作。
+你可选择立即安装或后续单独下载，此选项不影响后续操作。
 
 :::
 
 ## 第一阶段：环境准备
 
 1. 通过 SSH 连接：
-   - 使用 PuTTY 或主机商提供的 SSH 方案连接您的服务器实例
+   - 使用 PuTTY 或主机商提供的 SSH 方案连接你的服务器实例
 
 :::note
 

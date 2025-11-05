@@ -27,7 +27,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/select", true))
     {
         BeginObjectSelecting(playerid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: 请选择您要编辑的物体！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: 请选择你要编辑的物体！");
         return 1;
     }
     return 0;

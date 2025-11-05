@@ -27,7 +27,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new pathid = NPC_CreatePath();
         g_PatrolPath = pathid;
 
-        // 如果需要，您可以在这里向路径添加点
+        // 如果需要，你可以在这里向路径添加点
         // NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5)
         // NPC_AddPointToPath(g_PatrolPath, x1, y1, z1, 1.5)
         // NPC_AddPointToPath(g_PatrolPath, x2, y2, z2, 1.5)

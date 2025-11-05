@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
           // 检测玩家是否处于车辆内
           if (vehicleid == 0)
           {
-               return SendClientMessage(playerid, -1, "您当前未处于任何车辆中！");
+               return SendClientMessage(playerid, -1, "你当前未处于任何车辆中！");
           }
 
           new

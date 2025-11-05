@@ -38,13 +38,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
 
         NPC_AimAt(npcid, x, y, z, false, 0, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_NONE);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在瞄准您的位置。", npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在瞄准你的位置。", npcid);
         return 1;
     }
 
@@ -52,13 +52,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
 
         NPC_AimAt(npcid, x, y, z, true, 800, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_NONE);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在向您的位置开火。", npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在向你的位置开火。", npcid);
         return 1;
     }
     return 0;

@@ -22,39 +22,30 @@ tags: ["npc", "近战攻击", "战斗风格"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Fighter");
-    NPC_Spawn(npcid);
-    NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-    NPC_MeleeAttack(npcid, 5000, false);
-
-    SetTimerEx("CheckMeleeStatus", 1000, true, "i", npcid);
-
-    return 1;
-}
-
-forward CheckMeleeStatus(npcid);
-public CheckMeleeStatus(npcid)
-{
-    if (NPC_IsMeleeAttacking(npcid))
+    if (!strcmp(cmdtext, "/checkmeleeattacking", true))
     {
-        printf("NPC %d 正在进行近战攻击", npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:isMeleeAttacking = NPC_IsMeleeAttacking(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进行近战攻击: %s", npcid, isMeleeAttacking ? "是" : "否");
+        return 1;
     }
-    else
-    {
-        printf("NPC %d没有在攻击", npcid);
-        KillTimer(GetTickCount()); // 停止检查
-    }
+    return 0;
 }
 ```
 
 ## 注意事项
 
 - 在近战攻击动画期间返回 true
-- 使用此函数检查 NPC 是否处于战斗模式
 - 近战攻击通过 NPC_MeleeAttack 启动
-- 战斗风格会影响攻击动画
 
 ## 相关函数
 

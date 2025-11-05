@@ -22,94 +22,20 @@ tags: ["npc", "录制", "回放"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("AutoBot");
-    NPC_Spawn(npcid);
-
-    // 加载多个录制
-    NPC_LoadRecord("patrol_route");
-    NPC_LoadRecord("combat_moves");
-
-    // 开始巡逻录制
-    NPC_StartPlayback(npcid, "patrol_route", true, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
-
-    // 监控回放状态
-    SetTimer("MonitorPlayback", 2000, true);
-
-    return 1;
-}
-
-forward MonitorPlayback();
-public MonitorPlayback()
-{
-    if (NPC_IsPlayingPlayback(0))
-    {
-        new status[32];
-        if (NPC_IsPlaybackPaused(0))
-            status = "回放中（已暂停）";
-        else
-            status = "回放中（活动）";
-
-        printf("NPC 0状态: %s", status);
-    }
-    else
-    {
-        printf("NPC 0: 无活动回放");
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/playbackinfo", true))
+    if (!strcmp(cmdtext, "/checkplayingplayback", true))
     {
-        if (NPC_IsPlayingPlayback(0))
-        {
-            new bool:paused = NPC_IsPlaybackPaused(0);
-            new status[64];
-            format(status, sizeof(status), "NPC 0: 正在回放录制(%s)",
-                paused ? "已暂停" : "活动");
-            SendClientMessage(playerid, 0x00FF00FF, status);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0: 无录制回放活动");
-        }
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/startpatrol", true))
-    {
-        if (!NPC_IsPlayingPlayback(0))
-        {
-            if (NPC_IsValidRecord("patrol_route"))
-            {
-                NPC_StartPlayback(0, "patrol_route", true, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
-                SendClientMessage(playerid, 0x00FF00FF, "NPC 0开始巡逻录制");
-            }
-            else
-            {
-                SendClientMessage(playerid, 0xFF0000FF, "巡逻路线录制未加载");
-            }
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0已在回放录制");
-        }
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    if (!strcmp(cmdtext, "/stopplayback", true))
-    {
-        if (NPC_IsPlayingPlayback(0))
-        {
-            NPC_StopPlayback(0);
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0回放已停止");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0没有回放任何录制");
-        }
+        new bool:isPlayingPlayback = NPC_IsPlayingPlayback(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在回放录制: %s", npcid, isPlayingPlayback ? "是" : "否");
         return 1;
     }
     return 0;
@@ -118,10 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 当 NPC 正在积极回放录制时返回 true
-- 这包括活动和暂停的回放
-- 使用此函数检查 NPC 是否受录制控制
-- NPC 一次只能回放一个录制
+- 当 NPC 正在进行回放录制时返回 true
 
 ## 相关函数
 

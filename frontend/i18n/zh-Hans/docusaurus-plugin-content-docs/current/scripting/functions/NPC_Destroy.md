@@ -30,18 +30,18 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         if (!NPC_IsValid(npcid))
         {
-            SendClientMessage(playerid, 0xFF0000FF, "您没有有效的NPC可以销毁。");
+            SendClientMessage(playerid, 0xFF0000FF, "你没有有效的NPC可以销毁。");
             return 1;
         }
 
         if (NPC_Destroy(npcid))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "您的NPC（ID %d）已被销毁。", npcid);
+            SendClientMessage(playerid, 0x00FF00FF, "你的NPC（ID %d）已被销毁。", npcid);
             PlayerNPC[playerid] = INVALID_NPC_ID; // 如果没有定义INVALID_NPC_ID，可以使用0
         }
         else
         {
-            SendClientMessage(playerid, 0xFF0000FF, "销毁您的NPC（ID %d）失败。", npcid);
+            SendClientMessage(playerid, 0xFF0000FF, "销毁你的NPC（ID %d）失败。", npcid);
         }
 
         return 1;

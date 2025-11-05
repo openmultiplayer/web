@@ -24,7 +24,7 @@ tags: ["玩家"]
 public OnPlayerStreamIn(playerid, forplayerid)
 {
     new string[40];
-    format(string, sizeof(string), "玩家 %d 现在已被流加载到您的客户端。", playerid);
+    format(string, sizeof(string), "玩家 %d 现在已被流加载到你的客户端。", playerid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }

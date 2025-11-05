@@ -35,7 +35,7 @@ for(new i = 1; i < MAX_VEHICLES; i++)
 }
 
 new string[144];
-format(string, sizeof(string), "您当前已加载了 %i 辆车辆。", streamedVehicleCount);
+format(string, sizeof(string), "你当前已加载了 %i 辆车辆。", streamedVehicleCount);
 SendClientMessage(playerid, -1, string); // 发送统计结果给玩家
 ```
 

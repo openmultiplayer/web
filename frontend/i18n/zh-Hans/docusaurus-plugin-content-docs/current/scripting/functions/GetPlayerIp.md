@@ -28,7 +28,7 @@ public OnPlayerConnect(playerid)
     GetPlayerIp(playerid, ipAddress, sizeof(ipAddress));
     if (!strcmp(ipAddress, "127.0.0.1"))
     {
-        SendClientMessage(playerid, 0xFFFFFFFF, "欢迎来到您的服务器，管理员 :)");
+        SendClientMessage(playerid, 0xFFFFFFFF, "欢迎来到你的服务器，管理员 :)");
     }
     return 1;
 }

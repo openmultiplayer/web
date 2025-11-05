@@ -25,37 +25,27 @@ tags: ["npc", "流加载"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknpc", true))
+    if (!strcmp(cmdtext, "/checkstreamedin", true))
     {
-        if (NPC_IsStreamedIn(0, playerid))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 对您可见");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 不可见");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:isStreamedIn = NPC_IsStreamedIn(npcid, playerid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 是否已为你流加载: %s", npcid, isStreamedIn ? "是" : "否");
         return 1;
     }
     return 0;
-}
-
-public OnPlayerConnect(playerid)
-{
-    // 检查 NPC 0 是否对连接的玩家可见
-    if (NPC_IsStreamedIn(0, playerid))
-    {
-        SendClientMessage(playerid, 0x00FFFFFF, "您可以看到 NPC 0");
-    }
-
-    return 1;
 }
 ```
 
 ## 注意事项
 
 - NPC 仅在玩家的流加载距离内才会流加载
-- 在显示 NPC 相关信息前使用此函数检查可见性
 - 流加载取决于距离和室内/虚拟世界匹配
 
 ## 相关函数

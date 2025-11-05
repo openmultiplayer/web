@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             NPC_SetAmmo(npcid, 500);
 
             PlayerNPC[playerid] = npcid;
-            SendClientMessage(playerid, 0x00FF00FF, "NPC %s（ID %d）已在您附近生成！", name, npcid);
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %s（ID %d）已在你附近生成！", name, npcid);
         }
         else
         {

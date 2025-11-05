@@ -26,7 +26,7 @@ tags: ["rcon", "管理"]
 ```c
 public OnRconCommand(cmd[])
 {
-    printf("[RCON]: 您输入了 '/rcon %s'!", cmd);
+    printf("[RCON]: 你输入了 '/rcon %s'!", cmd);
     return 0;
 }
 
@@ -35,7 +35,7 @@ public OnRconCommand(cmd[])
     if (!strcmp(cmd, "hello", true))
     {
         SendClientMessageToAll(0xFFFFFFAA, "Hello World!");
-        print("您向世界打了招呼"); // 该消息会显示在输入者的聊天框（白色文字）
+        print("你向世界打了招呼"); // 该消息会显示在输入者的聊天框（白色文字）
         return 1;
     }
     return 0;

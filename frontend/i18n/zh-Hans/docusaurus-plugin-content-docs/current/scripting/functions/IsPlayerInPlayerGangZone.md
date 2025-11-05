@@ -40,11 +40,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (IsPlayerInPlayerGangZone(playerid, gGangZoneID[playerid]))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "您正处于专属帮派领地");
+            SendClientMessage(playerid, 0x00FF00FF, "你正处于专属帮派领地");
         }
         else
         {
-            SendClientMessage(playerid, 0xFF0000FF, "您未处于专属帮派领地");
+            SendClientMessage(playerid, 0xFF0000FF, "你未处于专属帮派领地");
         }
         return 1;
     }

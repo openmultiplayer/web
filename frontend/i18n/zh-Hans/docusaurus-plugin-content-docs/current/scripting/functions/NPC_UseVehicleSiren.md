@@ -85,7 +85,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // 派遣紧急响应
         DispatchEmergencyResponse(x, y, z);
 
-        SendClientMessage(playerid, 0xFF0000FF, "紧急响应已派遣到您的位置！");
+        SendClientMessage(playerid, 0xFF0000FF, "紧急响应已派遣到你的位置！");
         return 1;
     }
 

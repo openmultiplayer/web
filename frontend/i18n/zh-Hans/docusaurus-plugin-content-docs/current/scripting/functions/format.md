@@ -59,7 +59,7 @@ format(result, sizeof(result), "这是%s，包含数值%i。", string, number);
 
 ```c
 new string[64];
-format(string, sizeof(string), "您的得分：%d", GetPlayerScore(playerid));
+format(string, sizeof(string), "你的得分：%d", GetPlayerScore(playerid));
 SendClientMessage(playerid, 0xFF8000FF, string); // 发送橙色消息给玩家
 ```
 

@@ -31,7 +31,7 @@ public OnGameModeInit()
 
 :::tip
 
-您也可以通过 [config.json](../../server/config.json) 禁用室内入口标记：
+你也可以通过 [config.json](../../server/config.json) 禁用室内入口标记：
 
 ```json
 "use_entry_exit_markers": false,

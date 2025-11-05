@@ -23,66 +23,20 @@ tags: ["npc", "武器", "瞄准"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Bodyguard");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 300);
-
-    printf("保镖NPC %d 已创建并装备武器", npcid);
-
-    return 1;
-}
-
-public OnPlayerConnect(playerid)
-{
-    // 让NPC瞄准新玩家
-    NPC_AimAtPlayer(0, playerid, false, 0, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
-
-    new msg[64];
-    format(msg, sizeof(msg), "保镖正在监视玩家%d", playerid);
-    print(msg);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/amitargeted", true))
+    if (!strcmp(cmdtext, "/checkaimingat", true))
     {
-        if (NPC_IsAimingAtPlayer(0, playerid))
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "警告：NPC 0正在瞄准你！");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-            // 显示武器信息
-            new weapon = NPC_GetWeapon(0);
-            new ammo = NPC_GetAmmo(0);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-            new msg[128];
-            format(msg, sizeof(msg), "NPC武器：%d，弹药：%d", weapon, ammo);
-            SendClientMessage(playerid, 0xFFFF00FF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "你是安全的 - NPC 0没有以你为目标");
-        }
-        return 1;
-    }
+        new bool:isAimingAtPlayer = NPC_IsAimingAtPlayer(npcid, playerid);
 
-    if (!strcmp(cmdtext, "/stoptargeting", true))
-    {
-        // 停止NPC瞄准
-        NPC_StopAim(0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0已停止瞄准");
-        return 1;
-    }
-
-    if (!strcmp(cmdtext, "/hostile", true))
-    {
-        // 让NPC对玩家怀有敌意
-        NPC_AimAtPlayer(0, playerid, true, 500, true, 0.0, 0.0, 0.8, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0现在对你怀有敌意！");
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在瞄准你: %s", npcid, isAimingAtPlayer ? "是" : "否");
         return 1;
     }
     return 0;
@@ -94,7 +48,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 只有当 NPC 特别针对给定玩家时才返回 true
 - 使用此函数检查玩家是否被 NPC 瞄准
 - NPC 必须使用 NPC_AimAtPlayer 此函数才返回 true
-- 对威胁检测和玩家安全系统很有用
 
 ## 相关函数
 

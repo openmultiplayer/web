@@ -21,10 +21,29 @@ tags: ["npc", "生成"]
 
 ## 示例
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/checkspawned", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:isSpawned = NPC_IsSpawned(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 已生成: %s", npcid, isSpawned ? "是" : "否");
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## 注意事项
 
-- NPC 必须先使用 [NPC_Create](NPC_Create) 创建，然后才能生成
-- 使用 [NPC_Spawn](NPC_Spawn) 来生成 NPC
 - 这与 [NPC_IsValid](NPC_IsValid) 不同，后者检查 NPC 是否存在
 
 ## 相关函数

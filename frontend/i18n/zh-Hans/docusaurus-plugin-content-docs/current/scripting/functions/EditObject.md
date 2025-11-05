@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/oedit", true))
     {
         EditObject(playerid, object);
-        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：您现在可以编辑该物体！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：你现在可以编辑该物体！");
         return 1;
     }
     return 0;

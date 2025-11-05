@@ -24,7 +24,7 @@ tags: ["车辆"]
 public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     new string[32];
-    format(string, sizeof(string), "您现在可以看到车辆 %d。", vehicleid);
+    format(string, sizeof(string), "你现在可以看到车辆 %d。", vehicleid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }

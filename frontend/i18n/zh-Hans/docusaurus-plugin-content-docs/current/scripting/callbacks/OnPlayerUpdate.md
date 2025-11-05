@@ -51,7 +51,7 @@ public OnPlayerWeaponChange(playerid, WEAPON:oldWeapon, WEAPON:newWeapon)
     GetWeaponName(oldWeapon, oldWeaponName, sizeof(oldWeaponName));
     GetWeaponName(newWeapon, newWeaponName, sizeof(newWeaponName));
 
-    format(string, sizeof(string), "您已将武器从 %s 切换为 %s！", oldWeaponName, newWeaponName);
+    format(string, sizeof(string), "你已将武器从 %s 切换为 %s！", oldWeaponName, newWeaponName);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }

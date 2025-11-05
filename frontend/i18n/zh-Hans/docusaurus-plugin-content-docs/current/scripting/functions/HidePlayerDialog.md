@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
 
         if (IsBanned(ipAddress)) // 检查IP是否被封禁
         {
-            SendClientMessage(playerid, 0xFF0000FF, "您已被封禁！");
+            SendClientMessage(playerid, 0xFF0000FF, "你已被封禁！");
             HidePlayerDialog(playerid); // 隐藏登录对话框
         }
     }

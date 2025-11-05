@@ -22,6 +22,27 @@ tags: ["npc", "玩家", "移动"]
 
 ## 示例
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/checkmovingtowardme", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:isMovingToPlayer = NPC_IsMovingToPlayer(npcid, playerid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在朝你移动: %s", npcid, isMovingToPlayer ? "是" : "否");
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## 注意事项
 
 - 此函数检查 NPC 是否被命令使用 [NPC_MoveToPlayer](NPC_MoveToPlayer) 向指定玩家移动

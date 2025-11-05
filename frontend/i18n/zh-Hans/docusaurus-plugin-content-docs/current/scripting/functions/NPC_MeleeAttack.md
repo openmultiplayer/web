@@ -24,88 +24,27 @@ tags: ["npc", "战斗", "近战攻击"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("CombatTrainer");
-    NPC_Spawn(npcid);
-    NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-
-    // 设置战斗训练例程
-    SetTimer("CombatTraining", 5000, true);
-
-    return 1;
-}
-
-forward CombatTraining();
-public CombatTraining()
-{
-    if (NPC_IsValid(0) && !NPC_IsDead(0))
-    {
-        // 在主要和次要攻击之间交替
-        new bool:useSecondary = (gettime() % 2 == 0);
-        NPC_MeleeAttack(0, 1200, useSecondary);
-
-        printf("NPC 0 执行%s近战攻击",
-            useSecondary ? "次要" : "主要");
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/punch", true))
+    if (!strcmp(cmdtext, "/npcmeleeattack", true, 15))
     {
-        // 让 NPC 执行快速拳击
-        NPC_MeleeAttack(0, 800, false);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 挥出一拳！");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/combo", true))
-    {
-        // 执行连击攻击序列
-        NPC_MeleeAttack(0, 500, false);  // 快速刺拳
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        SetTimerEx("ComboStep2", 600, false, "i", playerid);
-        SetTimerEx("ComboStep3", 1300, false, "i", playerid);
+        new time = 1000;
+        if (strlen(cmdtext) > 16)
+            time = strval(cmdtext[16]);
 
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 执行连击攻击！");
-        return 1;
-    }
+        new bool:success = NPC_MeleeAttack(npcid, time, false);
 
-    if (!strcmp(cmdtext, "/spar", true))
-    {
-        // 开始不同战斗风格的对练模式
-        new styles[] = {
-            FIGHT_STYLE_BOXING,
-            FIGHT_STYLE_KUNGFU,
-            FIGHT_STYLE_KNEEHEAD,
-            FIGHT_STYLE_GRABKICK
-        };
-
-        new randomStyle = styles[random(sizeof(styles))];
-        NPC_SetFightingStyle(0, randomStyle);
-        NPC_MeleeAttack(0, 2000, true);  // 长时间次要攻击
-
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 使用战斗风格 %d 对练", randomStyle);
-        SendClientMessage(playerid, 0xFFFF00FF, msg);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 持续近战攻击 %d毫秒: %s", npcid, time, success ? "成功" : "失败");
         return 1;
     }
     return 0;
-}
-
-forward ComboStep2(playerid);
-public ComboStep2(playerid)
-{
-    NPC_MeleeAttack(0, 700, true);  // 次要攻击
-    SendClientMessage(playerid, 0xFF8000FF, "连击: 第二步！");
-}
-
-forward ComboStep3(playerid);
-public ComboStep3(playerid)
-{
-    NPC_MeleeAttack(0, 900, false);  // 终结技
-    SendClientMessage(playerid, 0xFF4000FF, "连击: 终结技！");
 }
 ```
 

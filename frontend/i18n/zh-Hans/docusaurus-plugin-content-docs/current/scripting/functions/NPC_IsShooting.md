@@ -22,44 +22,20 @@ tags: ["npc", "武器", "射击"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, WEAPON_M4, 100); // M4 with 100 ammo
-
-    // Make NPC aim and shoot at a position
-    NPC_AimAt(npcid, 2000.0, 1500.0, 15.0, true, 500);
-
-    SetTimer("CheckShooting", 500, true);
-
-    return 1;
-}
-
-public CheckShooting()
-{
-    if (NPC_IsShooting(0))
-    {
-        printf("NPC 0 is currently shooting");
-    }
-    else
-    {
-        printf("NPC 0 is not shooting");
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkshoot", true))
+    if (!strcmp(cmdtext, "/checkshooting", true))
     {
-        if (NPC_IsShooting(0))
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 is shooting");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is not shooting");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:isShooting = NPC_IsShooting(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在射击: %s", npcid, isShooting ? "是" : "否");
         return 1;
     }
     return 0;
@@ -70,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 仅在实际射击动作期间返回 true
 - NPC 必须有武器和弹药才能射击
-- 使用此函数检测活跃的战斗情况
 
 ## 相关函数
 

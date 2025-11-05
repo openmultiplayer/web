@@ -55,7 +55,7 @@ gShopMenu = CreateMenu("text", 2, 100.0, 30.0, 7.0);
 HideMenuForPlayer(gShopMenu, playerid);
 ```
 
-这种写法会始终关闭玩家当前查看的菜单，无论实际显示的是哪个菜单。现在您需要记录玩家当前查看的菜单，或直接获取：
+这种写法会始终关闭玩家当前查看的菜单，无论实际显示的是哪个菜单。现在你需要记录玩家当前查看的菜单，或直接获取：
 
 ```c
 gShopMenu = CreateMenu("text", 2, 100.0, 30.0, 7.0);

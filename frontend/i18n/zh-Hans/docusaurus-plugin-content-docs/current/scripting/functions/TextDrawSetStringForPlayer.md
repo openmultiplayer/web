@@ -55,7 +55,7 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerRequestClass(playerid, classid)
 {
-    TextDrawSetStringForPlayer(gMyTextdraw, playerid, "您选择了%d号职业", classid);
+    TextDrawSetStringForPlayer(gMyTextdraw, playerid, "你选择了%d号职业", classid);
     return 1;
 }
 ```

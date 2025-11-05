@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         GetPlayerVelocity(playerid, x, y, z);
 
-        format(string, sizeof(string), "您当前的运动速度：X轴 %.2f，Y轴 %.2f，Z轴 %.2f", x, y, z);
+        format(string, sizeof(string), "你当前的运动速度：X轴 %.2f，Y轴 %.2f，Z轴 %.2f", x, y, z);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;
     }

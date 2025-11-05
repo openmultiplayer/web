@@ -34,11 +34,11 @@ public OnScriptCash(playerid, amount, source)
 {
     if (source == SCRIPT_CASH_CASINO)
     {
-        SendClientMessage(playerid, -1, "您从赌场赢得了$%d！", amount);
+        SendClientMessage(playerid, -1, "你从赌场赢得了$%d！", amount);
     }
     else if (source == SCRIPT_CASH_VENDING_MACHINE)
     {
-        SendClientMessage(playerid, -1, "您花费$%d从自动售货机购买了可乐", amount);
+        SendClientMessage(playerid, -1, "你花费$%d从自动售货机购买了可乐", amount);
     }
     return 1;
 }

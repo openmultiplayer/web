@@ -26,7 +26,7 @@ public OnPlayerConnect(playerid)
 {
     if (IsPlayerUsingOfficialClient(playerid) == 0)
     {
-        SendClientMessage(playerid, 0xFF0000FF, "[踢出]: 检测到您未使用官方SA-MP客户端！");
+        SendClientMessage(playerid, 0xFF0000FF, "[踢出]: 检测到你未使用官方SA-MP客户端！");
         Kick(playerid);
     }
 

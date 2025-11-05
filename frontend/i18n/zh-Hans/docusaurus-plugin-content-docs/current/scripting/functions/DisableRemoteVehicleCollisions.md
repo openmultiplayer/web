@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new string[64];
 
-        format(string, sizeof(string), "您的车辆碰撞状态已设置为「%s」", (gPlayerVehicleCollision[playerid] == false) ? ("禁用") : ("启用"));
+        format(string, sizeof(string), "你的车辆碰撞状态已设置为「%s」", (gPlayerVehicleCollision[playerid] == false) ? ("禁用") : ("启用"));
         SendClientMessage(playerid, 0xFFFFFFFF, string);
 
         gPlayerVehicleCollision[playerid] = !gPlayerVehicleCollision[playerid];

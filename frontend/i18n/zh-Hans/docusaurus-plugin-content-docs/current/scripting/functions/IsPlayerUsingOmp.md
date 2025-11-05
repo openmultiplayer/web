@@ -27,13 +27,13 @@ public OnPlayerConnect(playerid)
     // 玩家正在使用open.mp启动器
     if(IsPlayerUsingOmp(playerid))
     {
-        SendClientMessage(playerid, -1, "您正在使用open.mp启动器。");
+        SendClientMessage(playerid, -1, "你正在使用open.mp启动器。");
     }
 
     // 玩家未使用open.mp启动器
     else
     {
-        SendClientMessage(playerid, 0xFF0000FF, "[踢出]: 检测到您未使用open.mp启动器");
+        SendClientMessage(playerid, 0xFF0000FF, "[踢出]: 检测到你未使用open.mp启动器");
         Kick(playerid);
     }
 

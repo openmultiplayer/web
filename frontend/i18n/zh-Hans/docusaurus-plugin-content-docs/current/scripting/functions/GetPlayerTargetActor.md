@@ -28,7 +28,7 @@ public OnPlayerUpdate(playerid)
         targetActorId = GetPlayerTargetActor(playerid),
         string[32];
 
-    format(string, sizeof(string), "您正在瞄准角色ID %d", targetActorId);
+    format(string, sizeof(string), "你正在瞄准角色ID %d", targetActorId);
     SendClientMessage(playerid, -1, string);
     return 1;
 }

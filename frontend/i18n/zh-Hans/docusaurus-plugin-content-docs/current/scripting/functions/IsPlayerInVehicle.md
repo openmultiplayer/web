@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (IsPlayerInVehicle(playerid, gSpecialCar))
         {
-            SendClientMessage(playerid, -1, "您正在特殊车辆中！");
+            SendClientMessage(playerid, -1, "你正在特殊车辆中！");
         }
         return 1;
     }

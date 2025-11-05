@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new
             string[24];
 
-        format(string, sizeof(string), "您的座位号：%i", playerSeat);
+        format(string, sizeof(string), "你的座位号：%i", playerSeat);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;
     }

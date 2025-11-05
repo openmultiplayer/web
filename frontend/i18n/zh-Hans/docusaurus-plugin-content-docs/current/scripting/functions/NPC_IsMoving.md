@@ -22,35 +22,29 @@ tags: ["npc", "移动"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Walker");
-    NPC_Spawn(npcid);
-    NPC_Move(npcid, 1958.33, 1343.12, 15.36, NPC_MOVE_TYPE_WALK);
-
-    SetTimerEx("CheckMovement", 2000, false, "i", npcid);
-
-    return 1;
-}
-
-forward CheckMovement(npcid);
-public CheckMovement(npcid)
-{
-    if (NPC_IsMoving(npcid))
+    if (!strcmp(cmdtext, "/checkmoving", true))
     {
-        printf("NPC %d 正在移动", npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:isMoving = NPC_IsMoving(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在移动: %s", npcid, isMoving ? "是" : "否");
+        return 1;
     }
-    else
-    {
-        printf("NPC %d 已停止移动", npcid);
-    }
+    return 0;
 }
 ```
 
 ## 注意事项
 
 - 当 NPC 正在步行、跑步或驾车前往目的地时返回 true
-- 使用此函数检查移动命令是否仍然有效
 - 当 NPC 到达目的地或被停止时返回 false
 
 ## 相关函数

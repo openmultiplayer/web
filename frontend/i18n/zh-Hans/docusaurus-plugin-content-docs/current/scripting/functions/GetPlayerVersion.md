@@ -28,9 +28,9 @@ public OnPlayerConnect(playerid)
     GetPlayerVersion(playerid, version, sizeof(version));
 
     new string[64];
-    format(string, sizeof(string), "您的SA-MP客户端版本：%s", version);
+    format(string, sizeof(string), "你的SA-MP客户端版本：%s", version);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
-    // 可能显示："您的SA-MP客户端版本：0.3.7"
+    // 可能显示："你的SA-MP客户端版本：0.3.7"
     return 1;
 }
 ```

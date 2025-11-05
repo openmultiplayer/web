@@ -59,7 +59,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         angle = atan2(py - ny, px - nx) - 90.0;
         NPC_SetFacingAngle(0, angle);
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 现在面向您");
+        SendClientMessage(playerid, 0x00FF00FF, "NPC 现在面向你");
         return 1;
     }
     return 0;

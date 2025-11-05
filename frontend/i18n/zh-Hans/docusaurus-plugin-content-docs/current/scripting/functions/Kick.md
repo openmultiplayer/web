@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // 踢出执行该命令的玩家
 
         // 首先发送踢出提示
-        SendClientMessage(playerid, 0xFF0000FF, "您已被踢出服务器！");
+        SendClientMessage(playerid, 0xFF0000FF, "你已被踢出服务器！");
 
         // 通过定时器在1秒后执行踢出
         SetTimerEx("DelayedKick", 1000, false, "i", playerid);

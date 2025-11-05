@@ -27,74 +27,28 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("NodeWalker");
-    NPC_Spawn(npcid);
-    NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
-
-    // 首先打开节点 25，然后让 NPC 通过它导航
-    if (NPC_OpenNode(25))
-    {
-        NPC_PlayNode(npcid, 25);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcpatrol", true))
+    if (!strcmp(cmdtext, "/npcplaynode", true, 12))
     {
-        // 打开并让 NPC 0 以慢跑速度和自定义半径巡逻节点 15
-        if (NPC_OpenNode(15))
-        {
-            NPC_PlayNode(0, 15, NPC_MOVE_TYPE_JOG, 1.5, 2.0, true);
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 正在巡逻节点 15");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "打开节点 15 失败");
-        }
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/npcwalk", true))
-    {
-        // 打开并让 NPC 步行通过节点 8，不改变角度
-        if (NPC_OpenNode(8))
-        {
-            NPC_PlayNode(0, 8, NPC_MOVE_TYPE_WALK, NPC_MOVE_SPEED_AUTO, 0.0, false);
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 正在步行节点 8");
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new nodeid = strval(cmdtext[13]);
+
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的节点ID。必须在 0 ~ 63 之间。");
+
+        new bool:success = NPC_PlayNode(npcid, nodeid, NPC_MOVE_TYPE_JOG, NPC_MOVE_SPEED_AUTO, 0.0, true);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 播放节点 %d: %s", npcid, nodeid, success ? "成功" : "失败");
         return 1;
     }
     return 0;
-}
-
-public OnNPCFinishNode(npcid, nodeId)
-{
-    printf("NPC %d 完成导航节点 %d", npcid, nodeId);
-
-    // 开始导航下一个节点
-    new nextNode = nodeId + 1;
-    if (nextNode <= 63) // 节点 ID 为 0-63
-    {
-        if (NPC_OpenNode(nextNode))
-        {
-            NPC_PlayNode(npcid, nextNode, NPC_MOVE_TYPE_WALK);
-        }
-    }
-    else
-    {
-        // 循环回到第一个节点
-        if (NPC_OpenNode(0))
-        {
-            NPC_PlayNode(npcid, 0, NPC_MOVE_TYPE_WALK);
-        }
-    }
-
-    return 1;
 }
 ```
 

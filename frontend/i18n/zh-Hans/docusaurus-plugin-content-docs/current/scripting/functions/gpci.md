@@ -46,7 +46,7 @@ public OnPlayerConnect(playerid)
     gpci(playerid, serial, sizeof(serial));
 
     new string[128];
-    format(string, sizeof(string), "您的客户端识别码: %s", serial);
+    format(string, sizeof(string), "你的客户端识别码: %s", serial);
     SendClientMessage(playerid, -1, string);
     return 1;
 }
@@ -61,7 +61,7 @@ public OnPlayerConnect(playerid)
 {
     new serial[41]; // 40字符长度 + 终止符\0
     GPCI(playerid, serial, sizeof(serial));
-    SendClientMessage(playerid, -1, "您的客户端识别码: %s", serial);
+    SendClientMessage(playerid, -1, "你的客户端识别码: %s", serial);
     return 1;
 }
 ```

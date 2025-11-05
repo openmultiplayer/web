@@ -27,7 +27,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
     if (!strcmp(cmdtext, "/bytesreceived"))
     {
         new szString[144];
-        format(szString, sizeof(szString), "您已向服务器发送了 %i 字节的数据", NetStats_BytesReceived(playerid));
+        format(szString, sizeof(szString), "你已向服务器发送了 %i 字节的数据", NetStats_BytesReceived(playerid));
         SendClientMessage(playerid, -1, szString);
     }
     return 1;

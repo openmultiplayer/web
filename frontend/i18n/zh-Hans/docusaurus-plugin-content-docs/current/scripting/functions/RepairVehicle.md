@@ -28,12 +28,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (!IsPlayerInAnyVehicle(playerid))
         {
-            return SendClientMessage(playerid, 0xFFFFFFFF, "您当前未处于车辆中！");
+            return SendClientMessage(playerid, 0xFFFFFFFF, "你当前未处于车辆中！");
         }
 
         RepairVehicle(GetPlayerVehicleID(playerid));
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "您的车辆已修复完成！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "你的车辆已修复完成！");
         return 1;
     }
     return 0;

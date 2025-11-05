@@ -23,9 +23,29 @@ tags: ["npc", "死亡", "杀死"]
 
 ## 示例
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/npckill", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        NPC_Kill(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 已被杀死。", npcid);
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## 注意事项
 
-- 将 NPC 的生命值设置为 0 也会杀死它
 - 若没有杀手，killerid 使用 `INVALID_PLAYER_ID`
 - reason 参数使用武器 ID（WEAPON 枚举）
 - 这会触发 [OnNPCDeath](../callbacks/OnNPCDeath) 回调函数

@@ -35,11 +35,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
         new vehicleid = PlayerVehicles[playerid][0];
         if (vehicleid == INVALID_VEHICLE_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您的摩托车不可用。");
+            return SendClientMessage(playerid, 0xFF0000FF, "你的摩托车不可用。");
 
         if (NPC_EnterVehicle(npcid, vehicleid, seatid, NPC_MOVE_TYPE_JOG))
             SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进入摩托车（座位 %d）。", npcid, seatid);

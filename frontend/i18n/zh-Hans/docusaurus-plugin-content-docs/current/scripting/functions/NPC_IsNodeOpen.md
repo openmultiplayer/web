@@ -22,35 +22,15 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    if (NPC_IsNodeOpen(1))
-    {
-        printf("节点1已经打开");
-    }
-    else
-    {
-        if (NPC_OpenNode(1))
-        {
-            printf("成功打开节点1");
-        }
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknode", true))
+    if (!strcmp(cmdtext, "/checknodeopen", true, 14))
     {
-        if (NPC_IsNodeOpen(1))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "节点1已打开");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "节点1已关闭");
-        }
+        new nodeid = strval(cmdtext[15]);
+
+        new bool:isNodeOpen = NPC_IsNodeOpen(nodeid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "节点 %d 是否打开: %s", nodeid, isNodeOpen ? "是" : "否");
         return 1;
     }
     return 0;

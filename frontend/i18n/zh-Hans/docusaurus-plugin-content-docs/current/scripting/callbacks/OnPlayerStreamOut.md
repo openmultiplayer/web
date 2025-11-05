@@ -24,7 +24,7 @@ tags: ["玩家"]
 public OnPlayerStreamOut(playerid, forplayerid)
 {
     new string[80];
-    format(string, sizeof(string), "您的计算机刚刚卸载了玩家ID %d", playerid);
+    format(string, sizeof(string), "你的计算机刚刚卸载了玩家ID %d", playerid);
     SendClientMessage(forplayerid, 0xFF0000FF, string);
     return 1;
 }

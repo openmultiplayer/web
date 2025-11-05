@@ -32,7 +32,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (IsPlayerInRangeOfPoint(playerid, 7.0, 2695.6880, -1704.6300, 11.8438))
         {
-            SendClientMessage(playerid, 0xFFFFFFFF, "您位于体育馆入口区域！");
+            SendClientMessage(playerid, 0xFFFFFFFF, "你位于体育馆入口区域！");
         }
         return 1;
     }

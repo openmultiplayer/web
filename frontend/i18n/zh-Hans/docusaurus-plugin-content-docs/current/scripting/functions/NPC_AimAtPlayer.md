@@ -39,10 +39,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
         NPC_AimAtPlayer(npcid, playerid, true, 800, true, 0.0, 0.0, 0.8, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC %d 现在对您怀有敌意！", npcid);
+        SendClientMessage(playerid, 0xFF0000FF, "NPC %d 现在对你怀有敌意！", npcid);
         return 1;
     }
 
@@ -50,10 +50,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
         NPC_AimAtPlayer(npcid, playerid, false, 0, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_PLAYER);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 现在正在守护您。", npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 现在正在守护你。", npcid);
         return 1;
     }
     return 0;

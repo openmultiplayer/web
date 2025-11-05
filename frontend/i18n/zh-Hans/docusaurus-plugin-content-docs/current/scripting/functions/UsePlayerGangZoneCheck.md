@@ -44,7 +44,7 @@ public OnPlayerEnterPlayerGangZone(playerid, zoneid)
     if (zoneid == gGangZoneID[playerid])
     {
         new string[64];
-        format(string, sizeof(string), "您正在进入玩家专属帮派区域 %i", zoneid);
+        format(string, sizeof(string), "你正在进入玩家专属帮派区域 %i", zoneid);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
     return 1;
@@ -55,7 +55,7 @@ public OnPlayerLeavePlayerGangZone(playerid, zoneid)
     if (zoneid == gGangZoneID[playerid])
     {
         new string[64];
-        format(string, sizeof(string), "您正在离开玩家专属帮派区域 %i", zoneid);
+        format(string, sizeof(string), "你正在离开玩家专属帮派区域 %i", zoneid);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
     return 1;

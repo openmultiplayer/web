@@ -22,47 +22,20 @@ tags: ["npc", "节点"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("NodeWalker");
-    NPC_Spawn(npcid);
-
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // 5秒后检查状态
-        SetTimerEx("CheckNodeStatus", 5000, false, "i", npcid);
-    }
-
-    return 1;
-}
-
-forward CheckNodeStatus(npcid);
-public CheckNodeStatus(npcid)
-{
-    if (NPC_IsPlayingNode(npcid))
-    {
-        printf("NPC %d 正在播放节点", npcid);
-    }
-    else
-    {
-        printf("NPC %d没有播放任何节点", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknode", true))
+    if (!strcmp(cmdtext, "/checkplayingnode", true))
     {
-        if (NPC_IsPlayingNode(0))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0正在播放节点");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0没有播放任何节点");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:isPlayingNode = NPC_IsPlayingNode(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在播放节点: %s", npcid, isPlayingNode ? "是" : "否");
         return 1;
     }
     return 0;
@@ -72,9 +45,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 如果 NPC 无效则返回`false`
-- 在停止或暂停节点播放前使用此函数检查
-- NPC 一次只能播放一个节点
-- 即使节点暂停，此函数仍返回`true`
 
 ## 相关函数
 

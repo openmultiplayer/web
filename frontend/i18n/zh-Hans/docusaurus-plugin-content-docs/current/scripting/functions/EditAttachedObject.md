@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/edit", true))
     {
         EditAttachedObject(playerid, 0);
-        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：您正在编辑槽位0的附加物体！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：你正在编辑槽位0的附加物体！");
         return 1;
     }
     return 0;

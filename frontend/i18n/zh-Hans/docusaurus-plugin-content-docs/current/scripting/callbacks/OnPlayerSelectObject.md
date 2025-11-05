@@ -43,7 +43,7 @@ public OnPlayerSelectObject(playerid, SELECT_OBJECT:type, objectid, modelid, Flo
         BeginPlayerObjectEditing(playerid, objectid);
     }
 
-    SendClientMessage(playerid, 0xFFFFFFFF, "您现在可以编辑您的物体了！");
+    SendClientMessage(playerid, 0xFFFFFFFF, "你现在可以编辑你的物体了！");
     return 1;
 }
 ```

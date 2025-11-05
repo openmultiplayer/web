@@ -28,7 +28,7 @@ tags: ["玩家"]
 public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new string[32];
-    format(string, sizeof(string), "您点击了玩家 %d", clickedplayerid);
+    format(string, sizeof(string), "你点击了玩家 %d", clickedplayerid);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }

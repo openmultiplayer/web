@@ -28,7 +28,7 @@ if (IsValidNickName("Barnaby_Keene"))
 }
 else
 {
-    SendClientMessage(playerid, 0xFF0000FF, "您的昵称不符合规范。");
+    SendClientMessage(playerid, 0xFF0000FF, "你的昵称不符合规范。");
 }
 ```
 

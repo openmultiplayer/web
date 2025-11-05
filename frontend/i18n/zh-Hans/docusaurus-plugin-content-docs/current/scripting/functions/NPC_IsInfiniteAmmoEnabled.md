@@ -22,31 +22,20 @@ tags: ["npc", "武器", "子弹"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Soldier");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_EnableInfiniteAmmo(npcid, true);
-
-    if (NPC_IsInfiniteAmmoEnabled(npcid))
-    {
-        print("NPC已启用无限弹药");
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkinfinite", true))
+    if (!strcmp(cmdtext, "/checkinfiniteammo", true))
     {
-        new bool:infiniteAmmo = NPC_IsInfiniteAmmoEnabled(0);
-        new ammo = NPC_GetAmmo(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0: %d发弹药，无限: %s", ammo, infiniteAmmo ? "是" : "否");
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:infiniteAmmo = NPC_IsInfiniteAmmoEnabled(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 无限子弹启用: %s", npcid, infiniteAmmo ? "是" : "否");
         return 1;
     }
     return 0;
@@ -57,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 无限弹药防止 NPC 耗尽弹药
 - 弹药计数可能仍显示为减少，但武器功能保持正常
-- 对需要持续战斗能力的 NPC 很有用
 - 可以通过 NPC_EnableInfiniteAmmo 切换
 
 ## 相关函数

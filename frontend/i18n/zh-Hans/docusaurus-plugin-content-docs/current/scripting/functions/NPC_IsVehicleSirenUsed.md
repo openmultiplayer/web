@@ -22,49 +22,24 @@ tags: ["npc", "车辆", "警报器"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("PoliceOfficer");
-    NPC_Spawn(npcid);
-
-    // 创建警车
-    new vehicleid = CreateVehicle(596, 1958.33, 1343.12, 15.36, 0.0, 1, 1, 300); // 警车 (LS)
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // 开启警报器
-    NPC_UseVehicleSiren(npcid, true);
-
-    // 5秒后检查警报器状态
-    SetTimerEx("CheckSirenStatus", 5000, false, "i", npcid);
-
-    return 1;
-}
-
-forward CheckSirenStatus(npcid);
-public CheckSirenStatus(npcid)
-{
-    if (NPC_IsVehicleSirenUsed(npcid))
-    {
-        printf("NPC %d 警报器已激活", npcid);
-    }
-    else
-    {
-        printf("NPC %d 警报器未激活", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checksiren", true))
+    if (!strcmp(cmdtext, "/checksirenused", true))
     {
-        if (NPC_IsVehicleSirenUsed(0))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 警报器已激活");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 警报器未激活");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new veh = NPC_GetVehicle(npcid);
+        if (veh == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 没有在任何车辆中。", npcid);
+
+        new bool:sirenUsed = NPC_IsVehicleSirenUsed(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 车辆警报器使用中: %s", npcid, sirenUsed ? "是" : "否");
         return 1;
     }
     return 0;
@@ -75,7 +50,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 如果 NPC 不在车辆中则返回`false`
 - 仅适用于有警报器的车辆（警车、救护车、消防车）
-- 警报器必须先通过`NPC_UseVehicleSiren`激活
 - 视觉和音频警报效果对所有玩家可见
 
 ## 相关函数

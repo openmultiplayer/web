@@ -25,7 +25,7 @@ tags: ["玩家", "IP地址"]
 public OnPlayerConnect(playerid)
 {
     new rawIp = GetPlayerRawIp(playerid);
-    SendClientMessage(playerid, 0xFFFF00FF, "服务器：您的原始IP地址：%d", rawIp);
+    SendClientMessage(playerid, 0xFFFF00FF, "服务器：你的原始IP地址：%d", rawIp);
     return 1;
 }
 ```

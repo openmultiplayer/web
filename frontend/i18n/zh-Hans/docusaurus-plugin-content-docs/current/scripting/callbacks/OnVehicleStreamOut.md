@@ -24,7 +24,7 @@ tags: ["车辆"]
 public OnVehicleStreamOut(vehicleid, forplayerid)
 {
     new string[48];
-    format(string, sizeof(string), "您的客户端已停止流加载车辆 %d", vehicleid);
+    format(string, sizeof(string), "你的客户端已停止流加载车辆 %d", vehicleid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }

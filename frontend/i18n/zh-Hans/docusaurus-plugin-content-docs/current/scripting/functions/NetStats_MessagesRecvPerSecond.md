@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
     if (!strcmp(cmdtext, "/msgpersec"))
     {
         new szString[144];
-        format(szString, sizeof(szString), "您在过去一秒内接收到了 %i 条网络消息", NetStats_MessagesRecvPerSecond(playerid));
+        format(szString, sizeof(szString), "你在过去一秒内接收到了 %i 条网络消息", NetStats_MessagesRecvPerSecond(playerid));
         SendClientMessage(playerid, -1, szString);
     }
     return 1;

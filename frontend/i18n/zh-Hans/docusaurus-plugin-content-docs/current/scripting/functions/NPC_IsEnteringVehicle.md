@@ -22,33 +22,23 @@ tags: ["npc", "车辆"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    NPC_EnterVehicle(npcid, vehicleid, 0, NPC_MOVE_TYPE_WALK);
-
-    // 检查是否正在进入
-    SetTimerEx("CheckVehicleEntry", 2000, false, "i", npcid);
-
-    return 1;
-}
-
-forward CheckVehicleEntry(npcid);
-public CheckVehicleEntry(npcid)
-{
-    if (NPC_IsEnteringVehicle(npcid))
+    if (!strcmp(cmdtext, "/checkenteringvehicle", true))
     {
-        new vehicleid = NPC_GetEnteringVehicleID(npcid);
-        new seat = NPC_GetEnteringVehicleSeat(npcid);
-        printf("NPC %d 正在进入车辆%d，座位%d", npcid, vehicleid, seat);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:isEntering = NPC_IsEnteringVehicle(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在进入车辆: %s", npcid, isEntering ? "是" : "否");
+        return 1;
     }
-    else
-    {
-        printf("NPC %d没有在进入任何车辆", npcid);
-    }
+    return 0;
 }
 ```
 
@@ -56,7 +46,6 @@ public CheckVehicleEntry(npcid)
 
 - 仅在进入动画/过程中返回 true
 - 一旦 NPC 完全进入车辆，此函数返回 false
-- 使用此函数检测 NPC 何时正在进入车辆
 - NPC 必须已通过 NPC_EnterVehicle 被指示进入车辆
 
 ## 相关函数

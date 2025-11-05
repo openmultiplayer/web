@@ -29,7 +29,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
                wantedLevel = GetPlayerWantedLevel(playerid),
                message[64];
 
-          format(message, sizeof(message), "您当前的通缉等级为：%i 星", wantedLevel);
+          format(message, sizeof(message), "你当前的通缉等级为：%i 星", wantedLevel);
           SendClientMessage(playerid, 0xFF0000FF, message);
 
           return 1;

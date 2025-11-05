@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         GetVehicleZAngle(vehicleid, angle);
         SetVehicleZAngle(vehicleid, angle);
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "您的车辆已复位角度");
+        SendClientMessage(playerid, 0xFFFFFFFF, "你的车辆已复位角度");
         return 1;
     }
     return 0;

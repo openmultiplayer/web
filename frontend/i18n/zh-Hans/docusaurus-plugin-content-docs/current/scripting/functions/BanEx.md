@@ -65,7 +65,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (strcmp(cmdtext, "/banme", true) == 0)
     {
         // 封禁执行此命令的玩家
-        BanExWithMessage(playerid, 0xFF0000FF, "您已被封禁!", "Request");
+        BanExWithMessage(playerid, 0xFF0000FF, "你已被封禁!", "Request");
         return 1;
     }
     return 0;

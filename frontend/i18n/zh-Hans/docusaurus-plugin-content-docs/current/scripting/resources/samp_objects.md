@@ -6,7 +6,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 :::info
 
-您可以访问此[网站](https://dev.prineside.com/en/gtasa_samp_model_id/)查看所有支持物体的预览列表及其对应 ID。
+你可以访问此[网站](https://dev.prineside.com/en/gtasa_samp_model_id/)查看所有支持物体的预览列表及其对应 ID。
 
 :::
 

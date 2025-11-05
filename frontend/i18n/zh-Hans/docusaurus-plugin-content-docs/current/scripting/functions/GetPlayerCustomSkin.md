@@ -29,7 +29,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new string[32];
         new customSkin = GetPlayerCustomSkin(playerid);
 
-        format(string, sizeof(string), "您的自定义皮肤ID: %d", customSkin);
+        format(string, sizeof(string), "你的自定义皮肤ID: %d", customSkin);
         SendClientMessage(playerid, -1, string);
         return 1;
     }

@@ -26,7 +26,7 @@ tags: ["角色"]
 public OnActorStreamOut(actorid, forplayerid)
 {
     new string[48];
-    format(string, sizeof(string), "角色 %d 已为您完成流卸载。", actorid);
+    format(string, sizeof(string), "角色 %d 已为你完成流卸载。", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }

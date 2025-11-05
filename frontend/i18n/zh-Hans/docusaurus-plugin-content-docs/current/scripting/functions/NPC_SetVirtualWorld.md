@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new const playerWorld = GetPlayerVirtualWorld(playerid);
         NPC_SetVirtualWorld(0, playerWorld);
 
-        SendClientMessage(playerid, 0x00FF00FF, "已将 NPC 0 移动到您的世界（%d）", playerWorld);
+        SendClientMessage(playerid, 0x00FF00FF, "已将 NPC 0 移动到你的世界（%d）", playerWorld);
         return 1;
     }
 

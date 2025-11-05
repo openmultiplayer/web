@@ -28,28 +28,20 @@ tags: ["npc", "移动", "玩家", "跟随"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("FollowerBot");
-    NPC_Spawn(npcid);
-
-    // 让 NPC 使用默认设置跟随玩家 ID 0
-    NPC_MoveToPlayer(npcid, 0);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/followme", true))
+    if (!strcmp(cmdtext, "/npcmovetoplayer", true))
     {
-        new const npcid = NPC_Create("Follower");
-        NPC_Spawn(npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        // 使用自定义设置跟随
-        NPC_MoveToPlayer(npcid, playerid, NPC_MOVE_TYPE_JOG,
-                        NPC_MOVE_SPEED_AUTO, 2.0, 300, true);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 现在正在跟随您");
+        NPC_MoveToPlayer(npcid, playerid, NPC_MOVE_TYPE_JOG, NPC_MOVE_SPEED_AUTO, 0.2, 500, false);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 现在正在跟随你", npcid);
         return 1;
     }
     return 0;

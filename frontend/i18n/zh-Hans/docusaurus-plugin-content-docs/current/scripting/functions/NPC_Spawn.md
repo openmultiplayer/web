@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             NPC_Spawn(npcid);
             NPC_SetPos(npcid, x + 3.0, y, z);
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC %s 已在您附近生成！", name);
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %s 已在你附近生成！", name);
         }
         else
         {

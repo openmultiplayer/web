@@ -35,7 +35,7 @@ public OnPlayerText(playerid, text[])
         new
             Float:distance = GetVehicleDistanceFromPoint(vehicleid, 237.9, 115.6, 1010.2);
 
-        format(string, sizeof(string), "您距离自动售货机还有%.2f米。", distance);
+        format(string, sizeof(string), "你距离自动售货机还有%.2f米。", distance);
         SendClientMessage(playerid, 0xA9C4E4FF, string);
     }
     return 0;

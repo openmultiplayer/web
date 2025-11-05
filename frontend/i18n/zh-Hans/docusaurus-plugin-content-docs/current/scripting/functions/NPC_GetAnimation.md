@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "您没有在调试NPC。");
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
         new animid, time;
         new Float:delta;

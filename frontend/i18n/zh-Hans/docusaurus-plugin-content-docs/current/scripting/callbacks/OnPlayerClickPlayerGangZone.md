@@ -28,7 +28,7 @@ tags: ["玩家", "帮派区域"]
 public OnPlayerClickPlayerGangZone(playerid, zoneid)
 {
     new string[128];
-    format(string, sizeof(string), "您点击了个人帮派区域 %i", zoneid);
+    format(string, sizeof(string), "你点击了个人帮派区域 %i", zoneid);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }

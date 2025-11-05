@@ -38,7 +38,7 @@ enum
     DIALOG_LOGIN
 }
 
-ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "登录系统", "请输入您的密码:", "登录", "取消");
+ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "登录系统", "请输入你的密码:", "登录", "取消");
 
 new
     DIALOG_STYLE:style,

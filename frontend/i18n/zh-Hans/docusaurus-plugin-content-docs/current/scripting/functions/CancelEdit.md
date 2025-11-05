@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/stopedit", true))
     {
         CancelEdit(playerid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "服务器: 您已终止物体编辑！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "服务器: 你已终止物体编辑！");
         return 1;
     }
     return 0;

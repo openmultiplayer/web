@@ -57,7 +57,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 {
     if (playertextid == gPlayerTextDraw[playerid])
     {
-        SendClientMessage(playerid, 0xFFFFFFAA, "您点击了个人文本绘图");
+        SendClientMessage(playerid, 0xFFFFFFAA, "你点击了个人文本绘图");
         CancelSelectTextDraw(playerid);
         return 1;
     }

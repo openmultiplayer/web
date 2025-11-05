@@ -26,57 +26,24 @@ tags: ["npc", "路径"]
 ## 示例
 
 ```c
-new g_PatrolPath;
-
-public OnGameModeInit()
-{
-    // 为NPC创建巡逻路线
-    g_PatrolPath = NPC_CreatePath();
-    NPC_AddPointToPath(g_PatrolPath, 1958.33, 1343.12, 15.36, 1.0);
-    NPC_AddPointToPath(g_PatrolPath, 1968.33, 1353.12, 15.36, 1.0);
-    NPC_AddPointToPath(g_PatrolPath, 1978.33, 1363.12, 15.36, 1.0);
-    NPC_AddPointToPath(g_PatrolPath, 1988.33, 1373.12, 15.36, 1.0);
-
-    printf("巡逻路径已创建，包含%d个点", NPC_GetPathPointCount(g_PatrolPath));
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkarea", true))
+    if (!strcmp(cmdtext, "/checkpathpointinrange", true, 22))
     {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new pathid = strval(cmdtext[23]);
+
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
+        new bool:hasPoint = NPC_HasPathPointInRange(pathid, x, y, z, 50.0);
 
-        // 检查巡逻路线是否经过玩家位置附近
-        if (NPC_HasPathPointInRange(g_PatrolPath, x, y, z, 50.0))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC巡逻路线经过你的位置附近！");
-
-            // 生成NPC跟随路径
-            new npcid = NPC_Create("Patrol");
-            NPC_Spawn(npcid);
-            NPC_MoveByPath(npcid, g_PatrolPath, NPC_MOVE_TYPE_WALK);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "该区域内没有巡逻路线");
-        }
-        return 1;
-    }
-
-    if (!strcmp(cmdtext, "/safezone", true))
-    {
-        // 检查路径是否与安全区域相交
-        if (!NPC_HasPathPointInRange(g_PatrolPath, 1500.0, 1500.0, 10.0, 100.0))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "安全区域没有巡逻路线");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "警告：巡逻路线经过安全区域");
-        }
+        SendClientMessage(playerid, 0x00FF00FF, "路径 %d 是否有点在你附近 (%.2f, %.2f, %.2f): %s", pathid, x, y, z, hasPoint ? "是" : "否");
         return 1;
     }
     return 0;
@@ -88,7 +55,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 此函数用于在开始路径移动前检查 NPC 路径是否与特定区域或位置相交
 - 函数检查给定位置与每个路径点之间的 3D 距离
 - 只有至少有一个点的有效路径才能返回`true`
-- 对区域控制、安全区域和动态路径验证很有用
 
 ## 相关函数
 

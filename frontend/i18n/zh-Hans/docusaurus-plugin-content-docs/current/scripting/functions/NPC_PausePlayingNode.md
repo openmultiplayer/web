@@ -22,37 +22,23 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Navigator");
-    NPC_Spawn(npcid);
-
-    if (NPC_OpenNode(1))
+    if (!strcmp(cmdtext, "/npcpausenode", true))
     {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        // 5秒后暂停
-        SetTimerEx("PauseNode", 5000, false, "i", npcid);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:success = NPC_PausePlayingNode(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 暂停节点: %s", npcid, success ? "成功" : "失败");
+        return 1;
     }
-
-    return 1;
-}
-
-forward PauseNode(npcid);
-public PauseNode(npcid)
-{
-    NPC_PausePlayingNode(npcid);
-    printf("NPC %d 节点导航已暂停", npcid);
-
-    // 3秒后恢复
-    SetTimerEx("ResumeNode", 3000, false, "i", npcid);
-}
-
-forward ResumeNode(npcid);
-public ResumeNode(npcid)
-{
-    NPC_ResumePlayingNode(npcid);
-    printf("NPC %d 节点导航已恢复", npcid);
+    return 0;
 }
 ```
 

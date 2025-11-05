@@ -30,7 +30,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         NetStats_GetIpPort(playerid, dest, sizeof(dest));
 
         new szString[144];
-        format(szString, sizeof(szString), "您当前的IP与端口：%s", dest);
+        format(szString, sizeof(szString), "你当前的IP与端口：%s", dest);
         SendClientMessage(playerid, -1, szString);
     }
     return 1;

@@ -22,49 +22,20 @@ tags: ["npc", "节点"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("NodeBot");
-    NPC_Spawn(npcid);
-
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // 10秒后暂停
-        SetTimerEx("PauseNode", 10000, false, "i", npcid);
-    }
-
-    return 1;
-}
-
-forward PauseNode(npcid);
-public PauseNode(npcid)
-{
-    NPC_PausePlayingNode(npcid);
-
-    if (NPC_IsPlayingNodePaused(npcid))
-    {
-        printf("NPC %d节点播放现已暂停", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkpause", true))
+    if (!strcmp(cmdtext, "/checknodepaused", true))
     {
-        if (NPC_IsPlayingNode(0))
-        {
-            new bool:paused = NPC_IsPlayingNodePaused(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0节点%s", paused ? "已暂停" : "正在播放");
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0没有播放任何节点");
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:isNodePaused = NPC_IsPlayingNodePaused(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 节点暂停: %s", npcid, isNodePaused ? "是" : "否");
         return 1;
     }
     return 0;
@@ -74,9 +45,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 如果 NPC 没有播放节点则返回`false`
-- 在恢复前使用此函数检查暂停状态
-- 暂停的 NPC 保持在当前位置
-- NPC 将从暂停处恢复播放
 
 ## 相关函数
 

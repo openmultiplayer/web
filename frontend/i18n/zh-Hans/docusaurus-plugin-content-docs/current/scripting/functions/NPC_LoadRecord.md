@@ -22,41 +22,23 @@ tags: ["npc", "录制", "回放"]
 ## 示例
 
 ```c
-new g_DriverRecord = INVALID_RECORD_ID;
-new g_GuardRecord = INVALID_RECORD_ID;
-
-public OnGameModeInit()
-{
-    // 加载各种录制文件
-    g_DriverRecord = NPC_LoadRecord("driver_route");
-    if (g_DriverRecord != INVALID_RECORD_ID)
-    {
-        printf("司机路线录制已加载，ID: %d", g_DriverRecord);
-    }
-
-    g_GuardRecord = NPC_LoadRecord("guard_patrol");
-    if (g_GuardRecord != INVALID_RECORD_ID)
-    {
-        printf("守卫巡逻录制已加载，ID: %d", g_GuardRecord);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/loadrec", true))
+    if (!strcmp(cmdtext, "/npcloadrecord", true, 14))
     {
-        // 加载单个录制
-        new recordid = NPC_LoadRecord("patrol_route");
-        if (recordid != INVALID_RECORD_ID)
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "巡逻录制已加载");
-        }
+        new filepath[128];
+        new len = strlen(cmdtext);
+        if (len <= 15)
+            return SendClientMessage(playerid, 0xFF0000FF, "使用: /npcloadrecord [文件路径]");
+
+        strmid(filepath, cmdtext, 15, len);
+
+        new recordid = NPC_LoadRecord(filepath);
+
+        if (recordid == -1)
+            SendClientMessage(playerid, 0xFF0000FF, "从 %s 加载录制失败", filepath);
         else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "加载录制失败");
-        }
+            SendClientMessage(playerid, 0x00FF00FF, "录制已从 %s 加载，对应ID: %d", filepath, recordid);
         return 1;
     }
     return 0;
@@ -65,10 +47,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 录制文件必须位于 'scriptfiles/npcmodes' 目录中
 - 文件应具有 .rec 扩展名，但在文件名中不要包含它
 - 在使用 NPC_StartPlayback 之前加载录制
-- 检查返回值以确保成功加载
 
 ## 相关函数
 

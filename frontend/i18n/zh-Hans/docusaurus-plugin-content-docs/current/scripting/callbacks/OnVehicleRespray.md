@@ -26,7 +26,7 @@ tags: ["车辆"]
 public OnVehicleRespray(playerid, vehicleid, color1, color2)
 {
     new string[48];
-    format(string, sizeof(string), "您已将车辆 %d 颜色更改为 %d 和 %d 号色！", vehicleid, color1, color2);
+    format(string, sizeof(string), "你已将车辆 %d 颜色更改为 %d 和 %d 号色！", vehicleid, color1, color2);
     SendClientMessage(playerid, COLOR_GREEN, string);
     return 1;
 }

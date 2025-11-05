@@ -21,7 +21,7 @@ tags: ["玩家", "车辆"]
 
 ```c
 new Float:speed = GetPlayerTrainSpeed(playerid);
-SendClientMessage(playerid, 0xFFFF00FF, "您的火车当前速度：%f", speed);
+SendClientMessage(playerid, 0xFFFF00FF, "你的火车当前速度：%f", speed);
 ```
 
 ## 相关函数

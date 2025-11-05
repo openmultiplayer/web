@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         NPC_SetInterior(0, playerInterior);
         NPC_SetPos(0, x + 2.0, y, z);
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已带到您的位置");
+        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已带到你的位置");
 
         return 1;
     }
@@ -164,7 +164,7 @@ public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)
 
     for (new i = 0; i < count; i++)
     {
-        // 检查此 NPC 是否应该跟随玩家（实现您自己的逻辑）
+        // 检查此 NPC 是否应该跟随玩家（实现你自己的逻辑）
         // 例如，检查 NPC 名称是否包含 "Bodyguard"
 
         new currentInterior = NPC_GetInterior(npcs[i]);

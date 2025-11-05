@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/world", true))
     {
         new string[32];
-        format(string, sizeof(string), "您所在的虚拟世界编号：%i", GetPlayerVirtualWorld(playerid));
+        format(string, sizeof(string), "你所在的虚拟世界编号：%i", GetPlayerVirtualWorld(playerid));
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;
     }

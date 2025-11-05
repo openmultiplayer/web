@@ -22,100 +22,15 @@ tags: ["npc", "录制", "验证"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    // 加载基本录制
-    NPC_LoadRecord("driver_route");
-    NPC_LoadRecord("guard_patrol");
-    NPC_LoadRecord("pilot_flight");
-
-    // 验证所有录制
-    ValidateRecordings();
-
-    return 1;
-}
-
-ValidateRecordings()
-{
-    new recordings[][32] = {
-        "driver_route",
-        "guard_patrol",
-        "pilot_flight"
-    };
-
-    printf("=== 录制验证 ===");
-
-    for (new i = 0; i < sizeof(recordings); i++)
-    {
-        if (NPC_IsValidRecord(recordings[i]))
-        {
-            printf("[OK] %s: 有效且就绪", recordings[i]);
-        }
-        else
-        {
-            printf("[错误] %s: 无效或加载失败", recordings[i]);
-        }
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkrecording", true))
+    if (!strcmp(cmdtext, "/checkvalidrecord", true, 17))
     {
-        new recordName[32] = "driver_route";
+        new recordid = strval(cmdtext[18]);
 
-        if (NPC_IsValidRecord(recordName))
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "录制 '%s' 有效且已加载", recordName);
-            SendClientMessage(playerid, 0x00FF00FF, msg);
-        }
-        else
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "录制 '%s' 无效或未加载", recordName);
-            SendClientMessage(playerid, 0xFF0000FF, msg);
-        }
-        return 1;
-    }
+        new bool:isValidRecord = NPC_IsValidRecord(recordid);
 
-    if (!strcmp(cmdtext, "/playdriver", true))
-    {
-        if (NPC_IsValidRecord("driver_route"))
-        {
-            new npcid = NPC_Create("AutoDriver");
-            NPC_Spawn(npcid);
-            NPC_StartPlayback(npcid, "driver_route", true, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
-
-            SendClientMessage(playerid, 0x00FF00FF, "自动司机已使用有效录制启动");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "无法启动司机 - 录制不可用");
-        }
-        return 1;
-    }
-
-    if (!strcmp(cmdtext, "/loadrecord", true))
-    {
-        new testRecord[32] = "test_recording";
-
-        // 尝试加载新录制
-        NPC_LoadRecord(testRecord);
-
-        // 验证它
-        if (NPC_IsValidRecord(testRecord))
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "成功加载 '%s'", testRecord);
-            SendClientMessage(playerid, 0x00FF00FF, msg);
-        }
-        else
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "加载 '%s' 失败 - 文件可能不存在", testRecord);
-            SendClientMessage(playerid, 0xFF0000FF, msg);
-        }
+        SendClientMessage(playerid, 0x00FF00FF, "录制 %d 是否有效: %s", recordid, isValidRecord ? "是" : "否");
         return 1;
     }
     return 0;
@@ -126,8 +41,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 录制必须先通过 NPC_LoadRecord 加载才能变为有效
 - 无效录制不能用于回放
-- 文件必须存在于 scriptfiles/npcmodes 目录中
-- 在开始回放前检查有效性以避免错误
 
 ## 相关函数
 

@@ -69,7 +69,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             if (NPC_SetNodePoint(g_PatrolNode, pointCount, x, y, z))
             {
                 new msg[64];
-                format(msg, sizeof(msg), "已在您的位置添加路径点 %d", pointCount);
+                format(msg, sizeof(msg), "已在你的位置添加路径点 %d", pointCount);
                 SendClientMessage(playerid, 0x00FF00FF, msg);
             }
             else
@@ -103,7 +103,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             // 让 NPC 开始自定义路线
             NPC_PlayNode(0, customNode, NPC_MOVE_TYPE_WALK);
 
-            SendClientMessage(playerid, 0x00FF00FF, "已在您的位置周围创建自定义路线");
+            SendClientMessage(playerid, 0x00FF00FF, "已在你的位置周围创建自定义路线");
         }
         return 1;
     }

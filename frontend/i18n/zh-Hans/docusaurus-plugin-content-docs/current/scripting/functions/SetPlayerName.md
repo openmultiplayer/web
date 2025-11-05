@@ -47,7 +47,7 @@ if (strcmp(cmdtext, "/superman", true) == 0)
         }
         case 1:
         {
-            SendClientMessage(playerid, 0x00FF00FF, "您已成功更名为'Superman'");
+            SendClientMessage(playerid, 0x00FF00FF, "你已成功更名为'Superman'");
         }
     }
     return 1;
