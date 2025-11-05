@@ -22,90 +22,23 @@ Returns true if the NPC is invulnerable, false otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("TestBot");
-    NPC_Spawn(npcid);
-
-    // Check initial invulnerability status
-    if (NPC_IsInvulnerable(npcid))
-    {
-        printf("NPC %d is invulnerable", npcid);
-    }
-    else
-    {
-        printf("NPC %d can take damage", npcid);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkgod", true))
+    if (!strcmp(cmdtext, "/checkinvulnerable", true))
     {
-        if (NPC_IsInvulnerable(0))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is invulnerable");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 can take damage");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isInvulnerable = NPC_IsInvulnerable(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is invulnerable: %s", npcid, isInvulnerable ? "Yes" : "No");
         return 1;
     }
     return 0;
-            new Float:armour = NPC_GetArmour(npcs[i]);
-            new bool:invulnerable = NPC_IsInvulnerable(npcs[i]);
-
-            new status[64];
-            format(status, sizeof(status), "NPC %d: HP:%.1f ARM:%.1f %s",
-                   npcs[i], health, armour, invulnerable ? "[INVULNERABLE]" : "[VULNERABLE]");
-
-            SendClientMessage(playerid, 0xCCCCCCFF, status);
-        }
-
-        return 1;
-    }
-    return 0;
-}
-
-// Smart damage system that checks invulnerability
-stock bool:CanDamageNPC(npcid)
-{
-    if (!NPC_IsValid(npcid))
-        return false;
-
-    if (NPC_IsDead(npcid))
-        return false;
-
-    if (NPC_IsInvulnerable(npcid))
-    {
-        printf("Cannot damage NPC %d - invulnerable", npcid);
-        return false;
-    }
-
-    return true;
-}
-
-// Boss fight mechanics
-public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
-{
-    if (hittype == BULLET_HIT_TYPE_PLAYER)
-    {
-        new npcid = hitid; // Assuming hitid is NPC ID
-
-        if (NPC_IsValid(npcid) && NPC_IsInvulnerable(npcid))
-        {
-            // Show immunity effect
-            SendClientMessage(playerid, 0xFF0000FF, "Target is immune to damage!");
-
-            // Play immunity sound or effect here
-            PlayerPlaySound(playerid, 1130, 0.0, 0.0, 0.0);
-            return 0; // Block damage
-        }
-    }
-    return 1;
 }
 ```
 
@@ -113,8 +46,6 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
 
 - Returns the invulnerability status set by `NPC_SetInvulnerable`
 - NPCs are vulnerable by default when created
-- This function is useful for combat systems and game mechanics
-- Always check this before applying custom damage calculations
 
 ## Related Functions
 

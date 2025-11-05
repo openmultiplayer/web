@@ -22,44 +22,20 @@ Returns `true` if the NPC is shooting, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, WEAPON_M4, 100); // M4 with 100 ammo
-
-    // Make NPC aim and shoot at a position
-    NPC_AimAt(npcid, 2000.0, 1500.0, 15.0, true, 500);
-
-    SetTimer("CheckShooting", 500, true);
-
-    return 1;
-}
-
-public CheckShooting()
-{
-    if (NPC_IsShooting(0))
-    {
-        printf("NPC 0 is currently shooting");
-    }
-    else
-    {
-        printf("NPC 0 is not shooting");
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkshoot", true))
+    if (!strcmp(cmdtext, "/checkshooting", true))
     {
-        if (NPC_IsShooting(0))
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 is shooting");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is not shooting");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isShooting = NPC_IsShooting(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is shooting: %s", npcid, isShooting ? "Yes" : "No");
         return 1;
     }
     return 0;
@@ -70,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Returns true only during the actual shooting action
 - NPCs must have a weapon and ammo to shoot
-- Use this to detect active combat situations
 
 ## Related Functions
 

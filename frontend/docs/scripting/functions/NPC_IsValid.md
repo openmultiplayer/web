@@ -22,80 +22,20 @@ Returns `true` if the NPC is valid, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("TestBot");
-
-    if (NPC_IsValid(npcid))
-    {
-        printf("NPC %d was created successfully", npcid);
-        NPC_Spawn(npcid);
-    }
-    else
-    {
-        print("Failed to create NPC");
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknpcs", true))
+    if (!strcmp(cmdtext, "/checkvalid", true))
     {
-        new
-            validCount = 0,
-            Float:health;
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        for (new i = 0; i < MAX_NPCS; i++)
-        {
-            if (NPC_IsValid(i))
-            {
-                validCount++;
-                health = NPC_GetHealth(i);
+        new bool:isValid = NPC_IsValid(npcid);
 
-                SendClientMessage(playerid, 0xFFFFFFFF, "NPC %d: Health %.1f", i, health);
-            }
-        }
-
-        SendClientMessage(playerid, 0x00FF00FF, "Total valid NPCs: %d", validCount);
-
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is valid: %s", npcid, isValid ? "Yes" : "No");
         return 1;
     }
     return 0;
-}
-
-DestroyAllNPCs()
-{
-    new destroyedCount = 0;
-
-    for (new i = 0; i < MAX_NPCS; i++)
-    {
-        if (NPC_IsValid(i))
-        {
-            NPC_Destroy(i);
-            destroyedCount++;
-        }
-    }
-
-    printf("Destroyed %d NPCs", destroyedCount);
-    return destroyedCount;
-}
-
-forward SafeNPCOperation(npcid);
-public SafeNPCOperation(npcid)
-{
-    if (!NPC_IsValid(npcid))
-    {
-        printf("Error: NPC %d is not valid", npcid);
-        return false;
-    }
-
-    // Safe to perform operations on the NPC
-    NPC_SetHealth(npcid, 100.0);
-    NPC_SetPos(npcid, 0.0, 0.0, 3.0);
-
-    return true;
 }
 ```
 

@@ -22,35 +22,29 @@ Returns `true` if the NPC is moving, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Walker");
-    NPC_Spawn(npcid);
-    NPC_Move(npcid, 1958.33, 1343.12, 15.36, NPC_MOVE_TYPE_WALK);
-
-    SetTimerEx("CheckMovement", 2000, false, "i", npcid);
-
-    return 1;
-}
-
-forward CheckMovement(npcid);
-public CheckMovement(npcid)
-{
-    if (NPC_IsMoving(npcid))
+    if (!strcmp(cmdtext, "/checkmoving", true))
     {
-        printf("NPC %d is moving", npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isMoving = NPC_IsMoving(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is moving: %s", npcid, isMoving ? "Yes" : "No");
+        return 1;
     }
-    else
-    {
-        printf("NPC %d has stopped moving", npcid);
-    }
+    return 0;
 }
 ```
 
 ## Notes
 
 - Returns true when the NPC is walking, running, or driving to a destination
-- Use this to check if movement commands are still active
 - Returns false when the NPC reaches its destination or is stopped
 
 ## Related Functions

@@ -23,33 +23,21 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("RecordedBot");
-    NPC_Spawn(npcid);
-    NPC_StartPlayback(npcid, "recording", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+    if (!strcmp(cmdtext, "/npcopennode", true, 12))
+    {
+        new nodeid = strval(cmdtext[13]);
 
-    // Pause after 5 seconds
-    SetTimerEx("PauseBot", 5000, false, "i", npcid);
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
 
-    return 1;
-}
+        new bool:success = NPC_OpenNode(nodeid);
 
-forward PauseBot(npcid);
-public PauseBot(npcid)
-{
-    NPC_PausePlayback(npcid, true);
-    printf("NPC %d playback paused", npcid);
-
-    // Resume after 3 seconds
-    SetTimerEx("ResumeBot", 3000, false, "i", npcid);
-}
-
-forward ResumeBot(npcid);
-public ResumeBot(npcid)
-{
-    NPC_PausePlayback(npcid, false);
-    printf("NPC %d playback resumed", npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "Open node %d: %s", nodeid, success ? "Success" : "Failed");
+        return 1;
+    }
+    return 0;
 }
 ```
 

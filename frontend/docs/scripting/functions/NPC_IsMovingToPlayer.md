@@ -22,6 +22,27 @@ Returns `true` if the NPC is moving toward the specified player, `false` otherwi
 
 ## Examples
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/checkmovingtowardme", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isMovingToPlayer = NPC_IsMovingToPlayer(npcid, playerid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is moving toward you: %s", npcid, isMovingToPlayer ? "Yes" : "No");
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## Notes
 
 - This function checks if the NPC was commanded to move toward a specific player using [NPC_MoveToPlayer](NPC_MoveToPlayer)

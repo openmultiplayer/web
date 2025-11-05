@@ -32,14 +32,21 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
-            return SendClientMessage(playerid, 0xFF0000FF, "You have no NPC.");
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        new count = NPC_GetPathPointCount(g_PatrolPath);
+        new count = NPC_GetPathPointCount(PlayerPatrolPath[playerid]);
 
-        if (NPC_IsValidPath(g_PatrolPath))
+        if (NPC_IsValidPath(PlayerPatrolPath[playerid]))
         {
-            NPC_MoveByPath(npcid, g_PatrolPath, NPC_MOVE_TYPE_WALK);
+            NPC_MoveByPath(npcid, PlayerPatrolPath[playerid], NPC_MOVE_TYPE_WALK);
             SendClientMessage(playerid, 0x00FF00FF, "NPC %d started patrol route with %d points", npcid, count);
+
+            StopPlayerPatrolTimer(playerid);
+            PlayerPatrolTimer[playerid] = SetTimerEx("CheckPathProgress", 2000, true, "i", playerid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to start patrol route");
         }
         return 1;
     }

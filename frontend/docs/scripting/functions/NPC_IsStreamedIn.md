@@ -25,37 +25,27 @@ Returns `true` if the NPC is streamed in for the player, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknpc", true))
+    if (!strcmp(cmdtext, "/checkstreamedin", true))
     {
-        if (NPC_IsStreamedIn(0, playerid))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is visible to you");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 is not visible");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isStreamedIn = NPC_IsStreamedIn(npcid, playerid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is streamed in for you: %s", npcid, isStreamedIn ? "Yes" : "No");
         return 1;
     }
     return 0;
-}
-
-public OnPlayerConnect(playerid)
-{
-    // Check if NPC 0 is visible to the connecting player
-    if (NPC_IsStreamedIn(0, playerid))
-    {
-        SendClientMessage(playerid, 0x00FFFFFF, "You can see NPC 0");
-    }
-
-    return 1;
 }
 ```
 
 ## Notes
 
 - NPCs are only streamed in when within the player's streaming distance
-- Use this to check visibility before showing NPC-related information
 - Streaming depends on distance and interior/virtual world matching
 
 ## Related Functions

@@ -22,33 +22,23 @@ Returns `true` if the NPC is entering a vehicle, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-    NPC_EnterVehicle(npcid, vehicleid, 0, NPC_MOVE_TYPE_WALK);
-
-    // Check if entering
-    SetTimerEx("CheckVehicleEntry", 2000, false, "i", npcid);
-
-    return 1;
-}
-
-forward CheckVehicleEntry(npcid);
-public CheckVehicleEntry(npcid)
-{
-    if (NPC_IsEnteringVehicle(npcid))
+    if (!strcmp(cmdtext, "/checkenteringvehicle", true))
     {
-        new vehicleid = NPC_GetEnteringVehicleID(npcid);
-        new seat = NPC_GetEnteringVehicleSeat(npcid);
-        printf("NPC %d is entering vehicle %d, seat %d", npcid, vehicleid, seat);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isEntering = NPC_IsEnteringVehicle(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is entering vehicle: %s", npcid, isEntering ? "Yes" : "No");
+        return 1;
     }
-    else
-    {
-        printf("NPC %d is not entering any vehicle", npcid);
-    }
+    return 0;
 }
 ```
 
@@ -56,7 +46,6 @@ public CheckVehicleEntry(npcid)
 
 - Returns true only during the entering animation/process
 - Once the NPC is fully inside, this returns false
-- Use this to detect when NPCs are transitioning into vehicles
 - The NPC must have been instructed to enter with NPC_EnterVehicle
 
 ## Related Functions

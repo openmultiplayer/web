@@ -22,49 +22,24 @@ Returns `true` if the NPC is using the vehicle siren, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("PoliceOfficer");
-    NPC_Spawn(npcid);
-
-    // Create police car
-    new vehicleid = CreateVehicle(596, 1958.33, 1343.12, 15.36, 0.0, 1, 1, 300); // Police Car (LS)
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // Turn on siren
-    NPC_UseVehicleSiren(npcid, true);
-
-    // Check siren status after 5 seconds
-    SetTimerEx("CheckSirenStatus", 5000, false, "i", npcid);
-
-    return 1;
-}
-
-forward CheckSirenStatus(npcid);
-public CheckSirenStatus(npcid)
-{
-    if (NPC_IsVehicleSirenUsed(npcid))
-    {
-        printf("NPC %d has siren active", npcid);
-    }
-    else
-    {
-        printf("NPC %d does not have siren active", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checksiren", true))
+    if (!strcmp(cmdtext, "/checksirenused", true))
     {
-        if (NPC_IsVehicleSirenUsed(0))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 siren is active");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 siren is not active");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new veh = NPC_GetVehicle(npcid);
+        if (veh == INVALID_VEHICLE_ID)
+            return SendClientMessage(playerid, 0xFFFF00FF, "NPC %d is not in any vehicle.", npcid);
+
+        new bool:sirenUsed = NPC_IsVehicleSirenUsed(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d vehicle siren used: %s", npcid, sirenUsed ? "Yes" : "No");
         return 1;
     }
     return 0;
@@ -75,7 +50,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Returns `false` if the NPC is not in a vehicle
 - Only works for vehicles that have sirens (police cars, ambulances, fire trucks)
-- The siren must be activated with `NPC_UseVehicleSiren` first
 - Visual and audio siren effects are visible to all players
 
 ## Related Functions

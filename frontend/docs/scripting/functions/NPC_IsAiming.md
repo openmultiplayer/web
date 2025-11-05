@@ -22,62 +22,20 @@ Returns `true` if the NPC is aiming, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Sniper");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_SNIPER);
-    NPC_SetAmmo(npcid, 50);
-
-    // Make NPC aim at a distant target
-    NPC_AimAt(npcid, 2000.0, 1500.0, 20.0, true, 1000, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_ALL);
-
-    // Check aiming status after 2 seconds
-    SetTimerEx("CheckAimingStatus", 2000, false, "i", npcid);
-
-    return 1;
-}
-
-forward CheckAimingStatus(npcid);
-public CheckAimingStatus(npcid)
-{
-    if (NPC_IsAiming(npcid))
-    {
-        printf("NPC %d is successfully aiming at target", npcid);
-    }
-    else
-    {
-        printf("NPC %d is not aiming", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkaim", true))
+    if (!strcmp(cmdtext, "/checkaiming", true))
     {
-        if (NPC_IsAiming(0))
-        {
-            new weapon = NPC_GetWeapon(0);
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0 is aiming with weapon %d", weapon);
-            SendClientMessage(playerid, 0x00FF00FF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 is not aiming");
-        }
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/aimatme", true))
-    {
-        new Float:x, Float:y, Float:z;
-        GetPlayerPos(playerid, x, y, z);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        // Make NPC 0 aim at player
-        NPC_AimAt(0, x, y, z + 1.0, false, 0, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_NONE);
+        new bool:isAiming = NPC_IsAiming(npcid);
 
-        SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 is now aiming at you!");
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is aiming: %s", npcid, isAiming ? "Yes" : "No");
         return 1;
     }
     return 0;

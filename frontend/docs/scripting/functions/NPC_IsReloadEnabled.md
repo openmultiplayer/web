@@ -22,37 +22,20 @@ Returns `true` if auto-reload is enabled, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_M4); // M4
-    NPC_SetAmmo(npcid, 500);
-
-    // Enable auto-reload
-    NPC_EnableReloading(npcid, true);
-
-    // Check if enabled
-    if (NPC_IsReloadEnabled(npcid))
-    {
-        printf("Auto-reload enabled for NPC %d", npcid);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkreload", true))
+    if (!strcmp(cmdtext, "/checkreloadenabled", true))
     {
-        if (NPC_IsReloadEnabled(0))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 auto-reload is enabled");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 auto-reload is disabled");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isReloadEnabled = NPC_IsReloadEnabled(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d reload enabled: %s", npcid, isReloadEnabled ? "Yes" : "No");
         return 1;
     }
     return 0;

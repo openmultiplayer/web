@@ -22,47 +22,20 @@ Returns `true` if the NPC is playing a node, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("NodeWalker");
-    NPC_Spawn(npcid);
-
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // Check status after 5 seconds
-        SetTimerEx("CheckNodeStatus", 5000, false, "i", npcid);
-    }
-
-    return 1;
-}
-
-forward CheckNodeStatus(npcid);
-public CheckNodeStatus(npcid)
-{
-    if (NPC_IsPlayingNode(npcid))
-    {
-        printf("NPC %d is playing a node", npcid);
-    }
-    else
-    {
-        printf("NPC %d is not playing any node", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknode", true))
+    if (!strcmp(cmdtext, "/checkplayingnode", true))
     {
-        if (NPC_IsPlayingNode(0))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is playing a node");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 is not playing any node");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isPlayingNode = NPC_IsPlayingNode(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is playing node: %s", npcid, isPlayingNode ? "Yes" : "No");
         return 1;
     }
     return 0;
@@ -72,9 +45,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Returns `false` if the NPC is not valid
-- Use this to check before stopping or pausing node playback
-- NPCs can only play one node at a time
-- This remains `true` even if the node is paused
 
 ## Related Functions
 

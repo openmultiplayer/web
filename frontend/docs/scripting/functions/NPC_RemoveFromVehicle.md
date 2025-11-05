@@ -22,29 +22,6 @@ Returns `true` if the NPC was removed from the vehicle, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // Remove after 10 seconds
-    SetTimerEx("RemoveNPC", 10000, false, "i", npcid);
-
-    return 1;
-}
-
-forward RemoveNPC(npcid);
-public RemoveNPC(npcid)
-{
-    if (NPC_RemoveFromVehicle(npcid))
-    {
-        printf("NPC %d removed from vehicle", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/kicknpc", true))

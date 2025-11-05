@@ -23,9 +23,29 @@ Returns `true` on success, `false` on failure.
 
 ## Examples
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/npckill", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        NPC_Kill(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d has been killed.", npcid);
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## Notes
 
-- Setting the NPC's health to 0 will also kill it
 - Use `INVALID_PLAYER_ID` for killerid if there is no killer
 - The reason parameter uses weapon IDs (WEAPON enum)
 - This triggers the [OnNPCDeath](../callbacks/OnNPCDeath) callback

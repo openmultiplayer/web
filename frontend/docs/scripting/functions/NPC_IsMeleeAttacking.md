@@ -22,39 +22,30 @@ Returns `true` if the NPC is performing a melee attack, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("Fighter");
-    NPC_Spawn(npcid);
-    NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-    NPC_MeleeAttack(npcid, 5000, false);
-
-    SetTimerEx("CheckMeleeStatus", 1000, true, "i", npcid);
-
-    return 1;
-}
-
-forward CheckMeleeStatus(npcid);
-public CheckMeleeStatus(npcid)
-{
-    if (NPC_IsMeleeAttacking(npcid))
+    if (!strcmp(cmdtext, "/checkmeleeattacking", true))
     {
-        printf("NPC %d is attacking with melee", npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isMeleeAttacking = NPC_IsMeleeAttacking(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is melee attacking: %s", npcid, isMeleeAttacking ? "Yes" : "No");
+        return 1;
     }
-    else
-    {
-        printf("NPC %d is not attacking", npcid);
-        KillTimer(GetTickCount()); // Stop checking
-    }
+    return 0;
 }
 ```
 
 ## Notes
 
 - Returns true during the melee attack animation
-- Use this to check if an NPC is in combat mode
 - Melee attacks are started with NPC_MeleeAttack
-- Fighting style affects the attack animation
 
 ## Related Functions
 

@@ -22,31 +22,20 @@ Returns `true` if infinite ammo is enabled, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Soldier");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_AK47);
-    NPC_EnableInfiniteAmmo(npcid, true);
-
-    if (NPC_IsInfiniteAmmoEnabled(npcid))
-    {
-        print("NPC has infinite ammo enabled");
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkinfinite", true))
+    if (!strcmp(cmdtext, "/checkinfiniteammo", true))
     {
-        new bool:infiniteAmmo = NPC_IsInfiniteAmmoEnabled(0);
-        new ammo = NPC_GetAmmo(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0: %d ammo, Infinite: %s", ammo, infiniteAmmo ? "Yes" : "No");
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:infiniteAmmo = NPC_IsInfiniteAmmoEnabled(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d infinite ammo enabled: %s", npcid, infiniteAmmo ? "Yes" : "No");
         return 1;
     }
     return 0;
@@ -57,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Infinite ammo prevents the NPC from running out of ammunition
 - The ammo count may still display as decreasing but weapon functionality remains
-- Useful for NPCs that need continuous combat capability
 - Can be toggled with NPC_EnableInfiniteAmmo
 
 ## Related Functions

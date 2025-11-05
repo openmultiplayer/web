@@ -28,28 +28,20 @@ Returns `true` on success, `false` on failure.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("FollowerBot");
-    NPC_Spawn(npcid);
-
-    // Make NPC follow player ID 0 with default settings
-    NPC_MoveToPlayer(npcid, 0);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/followme", true))
+    if (!strcmp(cmdtext, "/npcmovetoplayer", true))
     {
-        new const npcid = NPC_Create("Follower");
-        NPC_Spawn(npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        // Follow with custom settings
-        NPC_MoveToPlayer(npcid, playerid, NPC_MOVE_TYPE_JOG,
-                        NPC_MOVE_SPEED_AUTO, 2.0, 300, true);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC is now following you");
+        NPC_MoveToPlayer(npcid, playerid, NPC_MOVE_TYPE_JOG, NPC_MOVE_SPEED_AUTO, 0.2, 500, false);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d now following you", npcid);
         return 1;
     }
     return 0;

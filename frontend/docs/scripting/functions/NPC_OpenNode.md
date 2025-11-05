@@ -22,62 +22,18 @@ Returns `true` if the node was opened successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    // Open a specific node for navigation
-    if (NPC_OpenNode(1))
-    {
-        printf("Successfully opened node 1");
-    }
-    else
-    {
-        printf("Failed to open node 1");
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/opennode", true))
+    if (!strcmp(cmdtext, "/npcopennode", true, 12))
     {
-        new nodeid = 5; // Example node ID
+        new nodeid = strval(cmdtext[13]);
 
-        if (NPC_OpenNode(nodeid))
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "Node %d opened successfully", nodeid);
-            SendClientMessage(playerid, 0x00FF00FF, msg);
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
 
-            // Create an NPC to use this node
-            new npcid = NPC_Create("Navigator");
-            NPC_Spawn(npcid);
-            NPC_PlayNode(npcid, nodeid, NPC_MOVE_TYPE_WALK);
-        }
-        else
-        {
-            new msg[64];
-            format(msg, sizeof(msg), "Failed to open node %d", nodeid);
-            SendClientMessage(playerid, 0xFF0000FF, msg);
-        }
-        return 1;
-    }
+        new bool:success = NPC_OpenNode(nodeid);
 
-    if (!strcmp(cmdtext, "/opennodes", true))
-    {
-        new openedCount = 0;
-
-        for (new nodeid = 0; nodeid < 64; nodeid++)
-        {
-            if (NPC_OpenNode(nodeid))
-            {
-                openedCount++;
-            }
-        }
-
-        new msg[64];
-        format(msg, sizeof(msg), "Opened %d nodes successfully", openedCount);
-        SendClientMessage(playerid, 0x00FF00FF, msg);
+        SendClientMessage(playerid, 0x00FF00FF, "Open node %d: %s", nodeid, success ? "Success" : "Failed");
         return 1;
     }
     return 0;
@@ -90,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Nodes must be opened before NPCs can use them for navigation
 - Opening a node loads its data and makes it accessible
 - Use NPC_IsNodeOpen to check if a node is already open
-- Failed opens may indicate invalid node IDs or system limitations
 
 ## Related Functions
 

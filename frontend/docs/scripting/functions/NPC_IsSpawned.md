@@ -21,10 +21,29 @@ Returns `true` if the NPC is spawned, `false` otherwise.
 
 ## Examples
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/checkshooting", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isShooting = NPC_IsShooting(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is shooting: %s", npcid, isShooting ? "Yes" : "No");
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## Notes
 
-- An NPC must be created with [NPC_Create](NPC_Create) before it can be spawned
-- Use [NPC_Spawn](NPC_Spawn) to spawn an NPC
 - This is different from [NPC_IsValid](NPC_IsValid), which checks if the NPC exists
 
 ## Related Functions

@@ -22,49 +22,20 @@ Returns `true` if the NPC's node playing is paused, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("NodeBot");
-    NPC_Spawn(npcid);
-
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // Pause after 10 seconds
-        SetTimerEx("PauseNode", 10000, false, "i", npcid);
-    }
-
-    return 1;
-}
-
-forward PauseNode(npcid);
-public PauseNode(npcid)
-{
-    NPC_PausePlayingNode(npcid);
-
-    if (NPC_IsPlayingNodePaused(npcid))
-    {
-        printf("NPC %d node playing is now paused", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkpause", true))
+    if (!strcmp(cmdtext, "/checknodepaused", true))
     {
-        if (NPC_IsPlayingNode(0))
-        {
-            new bool:paused = NPC_IsPlayingNodePaused(0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0 node is %s", paused ? "paused" : "playing");
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 is not playing any node");
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isNodePaused = NPC_IsPlayingNodePaused(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d node paused: %s", npcid, isNodePaused ? "Yes" : "No");
         return 1;
     }
     return 0;
@@ -74,9 +45,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Returns `false` if the NPC is not playing a node
-- Use this to check pause state before resuming
-- Paused NPCs remain at their current position
-- The NPC will resume from where they paused
 
 ## Related Functions
 

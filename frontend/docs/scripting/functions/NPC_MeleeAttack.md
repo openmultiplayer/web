@@ -24,71 +24,24 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("CombatTrainer");
-    NPC_Spawn(npcid);
-    NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-
-    // Set up combat training routine
-    SetTimer("CombatTraining", 5000, true);
-
-    return 1;
-}
-
-forward CombatTraining();
-public CombatTraining()
-{
-    if (NPC_IsValid(0) && !NPC_IsDead(0))
-    {
-        // Alternate between primary and secondary attacks
-        new bool:useSecondary = (gettime() % 2 == 0);
-        NPC_MeleeAttack(0, 1200, useSecondary);
-
-        printf("NPC 0 performing %s melee attack",
-            useSecondary ? "secondary" : "primary");
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/punch", true))
+    if (!strcmp(cmdtext, "/npcmeleeattack", true, 15))
     {
-        // Make NPC perform a quick punch
-        NPC_MeleeAttack(0, 800, false);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 throws a punch!");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/combo", true))
-    {
-        // Execute a combo attack sequence
-        NPC_MeleeAttack(0, 500, false);  // Quick jab
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        SetTimerEx("ComboStep2", 600, false, "i", playerid);
-        SetTimerEx("ComboStep3", 1300, false, "i", playerid);
+        new time = 1000;
+        if (strlen(cmdtext) > 16)
+            time = strval(cmdtext[16]);
 
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 executing combo attack!");
-        return 1;
-    }
+        new bool:success = NPC_MeleeAttack(npcid, time, false);
 
-    if (!strcmp(cmdtext, "/spar", true))
-    {
-        // Start sparring mode with different fighting styles
-        new styles[] = {
-            FIGHT_STYLE_BOXING,
-            FIGHT_STYLE_KUNGFU,
-            FIGHT_STYLE_KNEEHEAD,
-            FIGHT_STYLE_GRABKICK
-        };
-
-        new randomStyle = styles[random(sizeof(styles))];
-        NPC_SetFightingStyle(0, randomStyle);
-        NPC_MeleeAttack(0, 2000, true);  // Long secondary attack
-
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 sparring with fighting style %d", randomStyle);
-        SendClientMessage(playerid, 0xFFFF00FF, msg);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d melee attack for %dms: %s", npcid, time, success ? "Success" : "Failed");
         return 1;
     }
     return 0;

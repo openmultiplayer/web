@@ -22,45 +22,20 @@ Returns `true` if the NPC is reloading, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Shooter");
-    NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, WEAPON_DEAGLE, 1); // Desert Eagle with 1 round
-
-    // Force reload after shooting
-    NPC_Shoot(npcid);
-
-    SetTimerEx("CheckReloading", 1000, false, "i", npcid);
-
-    return 1;
-}
-
-forward CheckReloading(npcid);
-public CheckReloading(npcid)
-{
-    if (NPC_IsReloading(npcid))
-    {
-        printf("NPC %d is reloading their weapon", npcid);
-    }
-    else
-    {
-        printf("NPC %d is not reloading", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkreload", true))
+    if (!strcmp(cmdtext, "/checkreloading", true))
     {
-        if (NPC_IsReloading(0))
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 is reloading");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is not reloading");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isReloading = NPC_IsReloading(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is reloading: %s", npcid, isReloading ? "Yes" : "No");
         return 1;
     }
     return 0;

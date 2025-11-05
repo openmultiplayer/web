@@ -22,17 +22,23 @@ Returns `true` if the NPC is dead, `false` otherwise.
 ## Examples
 
 ```c
-public OnNPCTakeDamage(npcid, damagerid, Float:damage, WEAPON:weapon, bodypart)
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (NPC_IsDead(npcid))
+    if (!strcmp(cmdtext, "/checkdead", true))
     {
-        printf("NPC %d has died!", npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:isDead = NPC_IsDead(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is dead: %s", npcid, isDead ? "Yes" : "No");
         return 1;
     }
-
-    new const Float:health = NPC_GetHealth(npcid);
-    printf("NPC %d took %.1f damage, health remaining: %.1f", npcid, damage, health);
-    return 1;
+    return 0;
 }
 ```
 

@@ -22,35 +22,15 @@ Returns `true` if the node is open, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    if (NPC_IsNodeOpen(1))
-    {
-        printf("Node 1 is already open");
-    }
-    else
-    {
-        if (NPC_OpenNode(1))
-        {
-            printf("Successfully opened node 1");
-        }
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknode", true))
+    if (!strcmp(cmdtext, "/checknodeopen", true, 14))
     {
-        if (NPC_IsNodeOpen(1))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "Node 1 is open");
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "Node 1 is closed");
-        }
+        new nodeid = strval(cmdtext[15]);
+
+        new bool:isNodeOpen = NPC_IsNodeOpen(nodeid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "Node %d is open: %s", nodeid, isNodeOpen ? "Yes" : "No");
         return 1;
     }
     return 0;

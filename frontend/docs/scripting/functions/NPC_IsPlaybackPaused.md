@@ -22,71 +22,20 @@ Returns `true` if the playback is paused, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("RecordedDriver");
-    NPC_Spawn(npcid);
-
-    // Load and start playback
-    NPC_LoadRecord("driver_route");
-    NPC_StartPlayback(npcid, "driver_route", true, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
-
-    // Auto-pause after 10 seconds
-    SetTimerEx("AutoPausePlayback", 10000, false, "i", npcid);
-
-    return 1;
-}
-
-forward AutoPausePlayback(npcid);
-public AutoPausePlayback(npcid)
-{
-    if (NPC_IsPlayingPlayback(npcid))
-    {
-        NPC_PausePlayback(npcid, true);
-        printf("NPC %d playback auto-paused", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/pausestatus", true))
+    if (!strcmp(cmdtext, "/checkplaybackpaused", true))
     {
-        if (NPC_IsPlayingPlayback(0))
-        {
-            if (NPC_IsPlaybackPaused(0))
-            {
-                SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 playback is PAUSED");
-            }
-            else
-            {
-                SendClientMessage(playerid, 0x00FF00FF, "NPC 0 playback is RUNNING");
-            }
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 is not playing any recording");
-        }
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/togglepause", true))
-    {
-        if (NPC_IsPlayingPlayback(0))
-        {
-            new bool:currentPaused = NPC_IsPlaybackPaused(0);
-            NPC_PausePlayback(0, !currentPaused);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-            new action[16];
-            action = currentPaused ? "Resumed" : "Paused";
+        new bool:isPlaybackPaused = NPC_IsPlaybackPaused(npcid);
 
-            new msg[64];
-            format(msg, sizeof(msg), "NPC 0 playback %s", action);
-            SendClientMessage(playerid, 0xFFFFFFFF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 has no active playback to pause");
-        }
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d playback paused: %s", npcid, isPlaybackPaused ? "Yes" : "No");
         return 1;
     }
     return 0;
@@ -96,8 +45,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Only returns true if the NPC is playing a recording and it's paused
-- Use this to check playback state before toggling pause
-- Paused playbacks can be resumed with NPC_PausePlayback(npcid, false)
 - NPCs not playing recordings will always return false
 
 ## Related Functions
