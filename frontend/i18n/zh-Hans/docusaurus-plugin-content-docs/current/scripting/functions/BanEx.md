@@ -76,7 +76,3 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [Ban](Ban): 永久封禁玩家
 - [Kick](Kick): 踢出服务器
-
-```
-
-```

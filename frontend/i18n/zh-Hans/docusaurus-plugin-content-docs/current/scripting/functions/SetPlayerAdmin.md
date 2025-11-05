@@ -28,7 +28,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/admin", true))
     {
         SetPlayerAdmin(playerid, true);
-        SendClientMessage(playerid, -1, "SERVER: You are now RCON admin!");
+        SendClientMessage(playerid, -1, "服务器：你现在是RCON管理员了！");
         return 1;
     }
     return 0;
@@ -42,7 +42,3 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 相关回调
 
 - [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt): RCON 登录尝试回调
-
-```
-
-```

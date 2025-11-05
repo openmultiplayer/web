@@ -36,7 +36,3 @@ printf("玩家天气ID：%d", GetPlayerWeather(playerid));
 ## 相关资源
 
 - [天气 ID 列表](../resources/weatherid)
-
-```
-
-```

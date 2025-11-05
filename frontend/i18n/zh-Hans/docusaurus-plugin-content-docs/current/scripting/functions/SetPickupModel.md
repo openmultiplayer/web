@@ -53,7 +53,3 @@ public OnGameModeInit()
 - [ShowPickupForPlayer](ShowPickupForPlayer): 对玩家显示拾取物
 - [HidePickupForPlayer](HidePickupForPlayer): 对玩家隐藏拾取物
 - [SetPickupForPlayer](SetPickupForPlayer): 为玩家单独配置拾取物属性
-
-```
-
-```
