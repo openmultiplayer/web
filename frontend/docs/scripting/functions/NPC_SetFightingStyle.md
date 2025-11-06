@@ -23,44 +23,25 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Fighter");
-    NPC_Spawn(npcid);
-
-    // Set boxing fighting style
-    NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/setboxing", true))
+    if (!strcmp(cmdtext, "/setfightingstyle ", true, 18))
     {
-        // Set NPC 0 to boxing style
-        NPC_SetFightingStyle(0, FIGHT_STYLE_BOXING);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 now uses boxing style");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/randomstyle", true))
-    {
-        new styles[] = {
-            FIGHT_STYLE_NORMAL,
-            FIGHT_STYLE_BOXING,
-            FIGHT_STYLE_KUNGFU,
-            FIGHT_STYLE_KNEEHEAD,
-            FIGHT_STYLE_GRABKICK,
-            FIGHT_STYLE_ELBOW
-        };
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        new style = styles[random(sizeof(styles))];
-        NPC_SetFightingStyle(0, style);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 random fighting style set");
-        }
+        new styleid = strval(cmdtext[18]);
+        // Valid fighting styles: 4, 5, 6, 7, 15, 16
+        if (styleid != 4 && styleid != 5 && styleid != 6 && styleid != 7 && styleid != 15 && styleid != 16)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid style. Valid: 4(Normal), 5(Boxing), 6(KungFu), 7(KneeHead), 15(GrabKick), 16(Elbow)");
 
-        SendClientMessage(playerid, 0x00FF00FF, "Randomized NPC fighting styles");
+        NPC_SetFightingStyle(npcid, FIGHT_STYLE:styleid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d fighting style set to %d", npcid, styleid);
+
         return 1;
     }
     return 0;
@@ -70,7 +51,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Fighting styles affect melee attack animations and damage
-- Common styles: NORMAL, BOXING, KUNGFU, KNEEHEAD, GRABKICK, ELBOW
 - Use NPC_GetFightingStyle to check current style
 - Style affects both attack animations and combat effectiveness
 
@@ -80,6 +60,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_MeleeAttack](NPC_MeleeAttack): Make NPC attack
 - [NPC_IsMeleeAttacking](NPC_IsMeleeAttacking): Check if attacking
 - [NPC_StopMeleeAttack](NPC_StopMeleeAttack): Stop attacking
+
+## Related Resources
+
+- [Fighting Styles](../resources/fightingstyles)
 
 ## Related Callbacks
 

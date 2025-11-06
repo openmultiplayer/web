@@ -23,63 +23,32 @@ Returns `true` on success, `false` on failure.
 ## Examples
 
 ```c
-new g_PatrolPath = -1;
-
-public OnGameModeInit()
-{
-    // Create patrol path
-    g_PatrolPath = NPC_CreatePath();
-
-    if (NPC_IsValidPath(g_PatrolPath))
-    {
-        // Add patrol points
-        NPC_AddPointToPath(g_PatrolPath, 1958.33, 1343.12, 15.36, 1.0);
-        NPC_AddPointToPath(g_PatrolPath, 1968.33, 1353.12, 15.36, 2.0);
-        NPC_AddPointToPath(g_PatrolPath, 1978.33, 1363.12, 15.36, 1.5);
-        NPC_AddPointToPath(g_PatrolPath, 1988.33, 1373.12, 15.36, 2.0);
-
-        printf("Patrol path created with %d points", NPC_GetPathPointCount(g_PatrolPath));
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/removepoint", true))
+    if (!strncmp(cmdtext, "/removepatrolpoint ", 19, true))
     {
-        if (NPC_IsValidPath(g_PatrolPath))
+        if (!NPC_IsValidPath(PlayerPatrolPath[playerid]))
         {
-            new pointCount = NPC_GetPathPointCount(g_PatrolPath);
-
-            if (pointCount > 2 && NPC_RemovePointFromPath(g_PatrolPath, 1))
-            {
-                new msg[64];
-                format(msg, sizeof(msg), "Removed point 1. Path now has %d points",
-                    NPC_GetPathPointCount(g_PatrolPath));
-                SendClientMessage(playerid, 0x00FF00FF, msg);
-            }
-            else
-            {
-                SendClientMessage(playerid, 0xFF0000FF, "Cannot remove point");
-            }
+            SendClientMessage(playerid, 0xFF0000FF, "No valid patrol path. Use /createpatrol first.");
+            return 1;
         }
-        return 1;
-    }
 
-    if (!strcmp(cmdtext, "/editpath", true))
-    {
-        // Replace last point with player position
-        new Float:x, Float:y, Float:z;
-        GetPlayerPos(playerid, x, y, z);
+        new pointIndex = strval(cmdtext[19]);
+        new totalPoints = NPC_GetPathPointCount(PlayerPatrolPath[playerid]);
 
-        new pointCount = NPC_GetPathPointCount(g_PatrolPath);
-        if (pointCount > 1)
+        if (pointIndex < 0 || pointIndex >= totalPoints)
         {
-            NPC_RemovePointFromPath(g_PatrolPath, pointCount - 1);
-            NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5);
+            SendClientMessage(playerid, 0xFF0000FF, "Invalid point index. Valid range: 0-%d", totalPoints - 1);
+            return 1;
+        }
 
-            SendClientMessage(playerid, 0x00FF00FF, "Updated path endpoint to your location");
+        if (NPC_RemovePointFromPath(PlayerPatrolPath[playerid], pointIndex))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "Removed point %d from path %d (now has %d points)", pointIndex, PlayerPatrolPath[playerid], totalPoints - 1);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to remove point %d from path", pointIndex);
         }
         return 1;
     }
@@ -93,7 +62,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Removing a point will shift all subsequent points down by one index
 - If the specified index is out of bounds, the function will return `false`
 - You cannot remove points from an invalid path
-- Useful for dynamic path editing and optimization
 
 ## Related Functions
 

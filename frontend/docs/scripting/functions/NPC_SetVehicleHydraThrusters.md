@@ -23,45 +23,22 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Pilot");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(520, 1958.33, 1343.12, 50.0, 0.0, -1, -1, -1); // Hydra
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // Set thrusters for vertical takeoff
-    NPC_SetVehicleHydraThrusters(npcid, 1);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/vtol", true))
+    if (!strcmp(cmdtext, "/sethydrathrusters ", true, 19))
     {
-        // Set NPC 0's Hydra to VTOL mode
-        NPC_SetVehicleHydraThrusters(0, 1);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 Hydra in VTOL mode");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/jet", true))
-    {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        for (new i = 0; i < count; i++)
-        {
-            new vehicleid = NPC_GetVehicleID(npcs[i]);
-            if (GetVehicleModel(vehicleid) == 520) // Hydra
-            {
-                NPC_SetVehicleHydraThrusters(npcs[i], 0); // Jet mode
-            }
-        }
+        new direction = strval(cmdtext[19]);
 
-        SendClientMessage(playerid, 0x00FF00FF, "All NPC Hydras in jet mode");
+        NPC_SetVehicleHydraThrusters(npcid, direction);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d hydra thrusters set to %d", npcid, direction);
+
         return 1;
     }
     return 0;

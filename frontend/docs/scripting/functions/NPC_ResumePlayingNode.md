@@ -22,44 +22,20 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Navigator");
-    NPC_Spawn(npcid);
-
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // Pause after 5 seconds
-        SetTimerEx("PauseNode", 5000, false, "i", npcid);
-    }
-
-    return 1;
-}
-
-forward PauseNode(npcid);
-public PauseNode(npcid)
-{
-    NPC_PausePlayingNode(npcid);
-
-    // Resume after 3 seconds
-    SetTimerEx("ResumeNode", 3000, false, "i", npcid);
-}
-
-forward ResumeNode(npcid);
-public ResumeNode(npcid)
-{
-    NPC_ResumePlayingNode(npcid);
-    printf("NPC %d node navigation resumed", npcid);
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/resume", true))
+    if (!strcmp(cmdtext, "/npcresumenode", true))
     {
-        NPC_ResumePlayingNode(0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 node navigation resumed");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:success = NPC_ResumePlayingNode(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d resume node: %s", npcid, success ? "Success" : "Failed");
         return 1;
     }
     return 0;
@@ -70,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Only works if the NPC's node navigation was previously paused
 - The NPC will continue from where it was paused
-- Use with `NPC_PausePlayingNode` to control node navigation
 
 ## Related Functions
 

@@ -23,36 +23,24 @@ Returns `true` if the weapon was set successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Soldier");
-    NPC_Spawn(npcid);
-
-    // Set M4 as current weapon and give ammo
-    NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 200); // Give 200 ammo
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/givegun", true))
+    if (!strcmp(cmdtext, "/setweapon ", true, 11))
     {
-        // Give NPC a Desert Eagle
-        NPC_SetWeapon(0, WEAPON_DEAGLE);
-        NPC_SetAmmo(0, 50); // Give 50 ammo
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC equipped with Desert Eagle");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-    if (!strcmp(cmdtext, "/disarm", true))
-    {
-        // Set NPC to fists
-        NPC_SetWeapon(0, WEAPON_FIST);
+        new weaponid = strval(cmdtext[11]);
+        if (weaponid < 0 || weaponid > 46)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid weapon ID. Must be between 0 and 46.");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC disarmed");
+        NPC_SetWeapon(npcid, WEAPON:weaponid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon set to %d", npcid, weaponid);
+
         return 1;
     }
     return 0;
@@ -63,7 +51,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Setting a weapon will equip the NPC with that weapon
 - Use NPC_SetAmmo to provide ammunition for the weapon
-- Weapon ID 0 represents fists (unarmed)
 - Use NPC_GetWeapon to check current weapon
 
 ## Related Functions

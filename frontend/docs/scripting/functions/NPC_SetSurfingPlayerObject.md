@@ -25,15 +25,20 @@ Returns `true` if the operation was successful, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/setnpcsurfing", true))
+    if (!strcmp(cmdtext, "/setsurfingplayerobject ", true, 24))
     {
-        new npcid = NPC_Create("SurfingBot");
-        new objectid = CreatePlayerObject(playerid, 1225, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        NPC_Spawn(npcid);
-        NPC_SetPos(npcid, 1958.33, 1343.12, 17.36);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new objectid = strval(cmdtext[24]);
+
         NPC_SetSurfingPlayerObject(npcid, objectid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC is now surfing on your object!");
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d surfing player object set to %d", npcid, objectid);
+
         return 1;
     }
     return 0;

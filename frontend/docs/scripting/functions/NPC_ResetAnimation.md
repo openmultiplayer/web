@@ -22,35 +22,17 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Dancer");
-    NPC_Spawn(npcid);
-
-    // Apply animation
-    NPC_ApplyAnimation(npcid, "DANCING", "dance_loop", 4.0, 1, 0, 0, 1, 0);
-
-    // Reset after 10 seconds
-    SetTimerEx("ResetAnim", 10000, false, "i", npcid);
-
-    return 1;
-}
-
-forward ResetAnim(npcid);
-public ResetAnim(npcid)
-{
-    NPC_ResetAnimation(npcid);
-    printf("NPC %d animation reset to default", npcid);
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/resetanim", true))
     {
-        // Reset animation for NPC 0
-        NPC_ResetAnimation(0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 animation reset");
-        SendClientMessage(playerid, 0x00FF00FF, msg);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        NPC_ResetAnimation(npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d animation has been reset.", npcid);
+
         return 1;
     }
     return 0;
@@ -60,9 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Stops all current animations and returns NPC to idle state
-- Use this to clear animations that are stuck or looping
 - Equivalent to calling NPC_ClearAnimations
-- NPC will return to normal standing/walking animations
 
 ## Related Functions
 

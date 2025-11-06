@@ -23,43 +23,24 @@ Returns `true` if the facing angle was set successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Guard");
-    NPC_Spawn(npcid);
-
-    // Face north
-    NPC_SetFacingAngle(npcid, 0.0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/turneast", true))
+    if (!strcmp(cmdtext, "/setfacingangle ", true, 16))
     {
-        // Make NPC face east (270 degrees)
-        NPC_SetFacingAngle(0, 270.0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC now facing east");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-    if (!strcmp(cmdtext, "/faceme", true))
-    {
-        new
-            Float:px, Float:py, Float:pz,
-            Float:nx, Float:ny, Float:nz,
-            Float:angle;
+        new Float:angle = floatstr(cmdtext[16]);
+        if (angle < 0.0 || angle > 360.0)
+            return SendClientMessage(playerid, 0xFF0000FF, "Angle must be between 0.0 and 360.0.");
 
-        GetPlayerPos(playerid, px, py, pz);
-        NPC_GetPos(0, nx, ny, nz);
+        NPC_SetFacingAngle(npcid, angle);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d facing angle set to %.1f", npcid, angle);
 
-        // Calculate angle to face player
-        angle = atan2(py - ny, px - nx) - 90.0;
-        NPC_SetFacingAngle(0, angle);
-
-        SendClientMessage(playerid, 0x00FF00FF, "NPC now facing you");
         return 1;
     }
     return 0;
@@ -71,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::warning
 
 - Angle is measured in degrees (0-360).
-- Angles are reversed in GTA:SA; 90 degrees would be East in the real world, but in GTA:SA 90 degrees is in fact West. North and South are still 0/360 and 180. To convert this, simply do 360 - angle.
 - Use [NPC_GetFacingAngle](NPC_GetFacingAngle) to get current facing angle.
 - Instantly rotates NPC without animation.
 

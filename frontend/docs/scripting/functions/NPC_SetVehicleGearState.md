@@ -23,53 +23,22 @@ This function does not return any specific value.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Pilot");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(520, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1); // Hydra
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // Set landing gear up
-    NPC_SetVehicleGearState(npcid, LANDING_GEAR_STATE_UP);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/gearup", true))
+    if (!strcmp(cmdtext, "/setvehiclegearstate ", true, 21))
     {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        for (new i = 0; i < count; i++)
-        {
-            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC is in aircraft
-            {
-                NPC_SetVehicleGearState(npcs[i], LANDING_GEAR_STATE_UP);
-            }
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        SendClientMessage(playerid, 0x00FF00FF, "Raised landing gear for all NPC aircraft");
-        return 1;
-    }
+        new gearState = strval(cmdtext[21]);
 
-    if (!strcmp(cmdtext, "/geardown", true))
-    {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        NPC_SetVehicleGearState(npcid, gearState);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d vehicle gear state set to %d", npcid, gearState);
 
-        for (new i = 0; i < count; i++)
-        {
-            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC is in aircraft
-            {
-                NPC_SetVehicleGearState(npcs[i], LANDING_GEAR_STATE_DOWN);
-            }
-        }
-
-        SendClientMessage(playerid, 0x00FF00FF, "Lowered landing gear for all NPC aircraft");
         return 1;
     }
     return 0;
@@ -81,7 +50,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Only works when NPC is piloting an aircraft
 - Uses the same constants as [Vehicle Landing Gear States](../resources/landinggearstate): LANDING_GEAR_STATE_DOWN and LANDING_GEAR_STATE_UP
 - Check current landing gear state with NPC_GetVehicleGearState
-- This is the NPC equivalent of GetPlayerLandingGearState
 
 ## Related Functions
 

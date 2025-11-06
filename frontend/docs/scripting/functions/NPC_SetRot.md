@@ -25,43 +25,24 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Rotator");
-    NPC_Spawn(npcid);
-
-    // Set specific rotation
-    NPC_SetRot(npcid, 0.0, 0.0, 45.0); // 45 degrees Z rotation
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/randomrot", true))
+    if (!strcmp(cmdtext, "/setrandomrot", true))
     {
-        // Set random rotation for NPC 0
-        new
-            Float:x = random(360);
-            Float:y = random(360);
-            Float:z = random(360);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        NPC_SetRot(0, x, y, z);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 rotation randomized");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-    if (!strcmp(cmdtext, "/uprightspecs", true))
-    {
-        new npcs[MAX_NPCS];
-        new const count = NPC_GetAll(npcs);
+        new Float:x = float(random(360));
+        new Float:y = float(random(360));
+        new Float:z = float(random(360));
 
-        for (new i = 0; i < count; i++)
-        {
-            NPC_SetRot(npcs[i], 0.0, 0.0, 0.0); // Reset to upright
-        }
+        NPC_SetRot(npcid, x, y, z);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d rotation randomized", npcid);
 
-        SendClientMessage(playerid, 0x00FF00FF, "Reset all NPC rotations");
         return 1;
     }
     return 0;

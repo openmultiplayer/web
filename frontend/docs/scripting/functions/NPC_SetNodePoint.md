@@ -23,104 +23,27 @@ Returns `true` if the point was set successfully, `false` otherwise.
 ## Examples
 
 ```c
-new g_PatrolNode = -1;
-
-public OnGameModeInit()
-{
-    // Open node for patrol route
-    g_PatrolNode = NPC_OpenNode(1);
-
-    if (g_PatrolNode != -1)
-    {
-        // Create patrol perimeter
-        CreatePatrolRoute();
-
-        printf("Patrol route created with node %d", g_PatrolNode);
-    }
-
-    return 1;
-}
-
-CreatePatrolRoute()
-{
-    if (g_PatrolNode == -1) return;
-
-    // Set patrol points around area
-    NPC_SetNodePoint(g_PatrolNode, 0, 1958.33, 1343.12, 15.36);  // Start point
-    NPC_SetNodePoint(g_PatrolNode, 1, 2058.33, 1343.12, 15.36);  // East
-    NPC_SetNodePoint(g_PatrolNode, 2, 2058.33, 1443.12, 15.36);  // North-East
-    NPC_SetNodePoint(g_PatrolNode, 3, 1958.33, 1443.12, 15.36);  // North
-    NPC_SetNodePoint(g_PatrolNode, 4, 1958.33, 1343.12, 15.36);  // Back to start
-
-    printf("Patrol route configured with 5 points");
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/addwaypoint", true))
+    if (!strcmp(cmdtext, "/npcsetnodepoint ", true, 17))
     {
-        new Float:x, Float:y, Float:z;
-        GetPlayerPos(playerid, x, y, z);
+        new nodeid = strval(cmdtext[17]);
 
-        if (g_PatrolNode != -1)
-        {
-            new pointCount = NPC_GetNodePointCount(g_PatrolNode);
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
 
-            if (NPC_SetNodePoint(g_PatrolNode, pointCount, x, y, z))
-            {
-                new msg[64];
-                format(msg, sizeof(msg), "Added waypoint %d at your location", pointCount);
-                SendClientMessage(playerid, 0x00FF00FF, msg);
-            }
-            else
-            {
-                SendClientMessage(playerid, 0xFF0000FF, "Failed to add waypoint");
-            }
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "No patrol node available");
-        }
-        return 1;
-    }
+        new idx = 17;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        while (cmdtext[idx] == ' ') idx++;
 
-    if (!strcmp(cmdtext, "/customroute", true))
-    {
-        // Create custom route around player
-        new Float:px, Float:py, Float:pz;
-        GetPlayerPos(playerid, px, py, pz);
+        if (cmdtext[idx] == '\0')
+            return SendClientMessage(playerid, 0xFF0000FF, "Usage: /npcsetnodepoint [nodeid] [pointid]");
 
-        new customNode = NPC_OpenNode(10);
-        if (customNode != -1)
-        {
-            // Create square route around player
-            NPC_SetNodePoint(customNode, 0, px - 20.0, py - 20.0, pz);  // SW
-            NPC_SetNodePoint(customNode, 1, px + 20.0, py - 20.0, pz);  // SE
-            NPC_SetNodePoint(customNode, 2, px + 20.0, py + 20.0, pz);  // NE
-            NPC_SetNodePoint(customNode, 3, px - 20.0, py + 20.0, pz);  // NW
-            NPC_SetNodePoint(customNode, 4, px - 20.0, py - 20.0, pz);  // Back to start
+        new pointid = strval(cmdtext[idx]);
 
-            // Start NPC on custom route
-            NPC_PlayNode(0, customNode, NPC_MOVE_TYPE_WALK);
+        new bool:success = NPC_SetNodePoint(nodeid, pointid);
 
-            SendClientMessage(playerid, 0x00FF00FF, "Custom route created around your position");
-        }
-        return 1;
-    }
-
-    if (!strcmp(cmdtext, "/nodeinfo", true))
-    {
-        if (g_PatrolNode != -1)
-        {
-            new pointCount = NPC_GetNodePointCount(g_PatrolNode);
-            new msg[64];
-            format(msg, sizeof(msg), "Patrol node has %d points configured", pointCount);
-            SendClientMessage(playerid, 0xFFFF00FF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "No patrol node available");
-        }
+        SendClientMessage(playerid, 0x00FF00FF, "Set node %d to point %d: %s", nodeid, pointid, success ? "Success" : "Failed");
         return 1;
     }
     return 0;
@@ -132,7 +55,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Node must be opened before setting points
 - Point indices typically start from 0
 - Use NPC_GetNodePointPosition to retrieve point coordinates
-- Points define the navigation path for NPCs
 
 ## Related Functions
 

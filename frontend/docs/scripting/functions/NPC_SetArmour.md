@@ -23,34 +23,24 @@ Returns `true` if the armour was set successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Tank");
-    NPC_Spawn(npcid);
-
-    // Give full armour
-    NPC_SetArmour(npcid, 100.0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/setarmour", true))
+    if (!strcmp(cmdtext, "/setarmour ", true, 11))
     {
-        // Set armour for first NPC
-        NPC_SetArmour(0, 75.0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        SendClientMessage(playerid, 0x00FF00FF, "Set NPC armour to 75%");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-    if (!strcmp(cmdtext, "/checkarmour", true))
-    {
-        new Float:armour = NPC_GetArmour(0);
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 armour: %.1f", armour);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new Float:armour = floatstr(cmdtext[11]);
+        if (armour < 0.0 || armour > 100.0)
+            return SendClientMessage(playerid, 0xFF0000FF, "Armour must be between 0.0 and 100.0.");
+
+        NPC_SetArmour(npcid, armour);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d armour set to %.1f", npcid, armour);
+
         return 1;
     }
     return 0;
@@ -62,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Armour value ranges from 0.0 (no armour) to 100.0 (full armour)
 - Armour absorbs damage before health is affected
 - Use NPC_GetArmour to check current armour level
-- Armour doesn't regenerate automatically
 
 ## Related Functions
 

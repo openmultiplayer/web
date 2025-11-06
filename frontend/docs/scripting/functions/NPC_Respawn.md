@@ -22,35 +22,27 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Respawner");
-    NPC_Spawn(npcid);
-
-    // Respawn every 30 seconds
-    SetTimerEx("RespawnNPC", 30000, true, "i", npcid);
-
-    return 1;
-}
-
-forward RespawnNPC(npcid);
-public RespawnNPC(npcid)
-{
-    if (NPC_Respawn(npcid))
-    {
-        printf("NPC %d respawned", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/respawnnpc", true))
     {
-        // Respawn NPC 0
-        if (NPC_Respawn(0))
+        new npcid = PlayerNPC[playerid];
+
+        if (!NPC_IsValid(npcid))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 respawned");
+            SendClientMessage(playerid, 0xFF0000FF, "You don't have a valid NPC to respawn.");
+            return 1;
         }
+
+        if (NPC_Respawn(npcid))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "Your NPC (ID %d) has been respawned.", npcid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to respawn your NPC (ID %d).", npcid);
+        }
+
         return 1;
     }
     return 0;
@@ -64,7 +56,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Resets NPC health, position, and state.
 - NPC returns to their original spawn coordinates.
 - All current activities (movement, combat) are stopped.
-- Use this to reset NPCs after death or when stuck.
 
 :::
 

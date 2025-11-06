@@ -24,24 +24,20 @@ Returns `true` if the operation was successful, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/resetsurf", true))
+    if (!strcmp(cmdtext, "/resetsurfing", true))
     {
-        // Reset surfing data for NPC 0
-        NPC_ResetSurfingData(0);
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0 surfing data reset");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        NPC_ResetSurfingData(npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d surfing data has been reset.", npcid);
         return 1;
     }
     return 0;
-}
-
-// Reset surfing when NPC enters a vehicle
-public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
-{
-    // Stop surfing when NPC gets into a vehicle
-    if(IsPlayerNPC(playerid)) {
-        NPC_ResetSurfingData(playerid);
-    }
-    return 1;
 }
 ```
 
@@ -50,7 +46,6 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 - This function clears all surfing-related data for an NPC, including the surfing object/vehicle and offset
 - The NPC will no longer be attached to any surface after calling this function
 - The NPC's position is not changed, only its surfing state is reset
-- Useful for stopping NPCs from surfing when they need to move independently
 
 ## Related Functions
 

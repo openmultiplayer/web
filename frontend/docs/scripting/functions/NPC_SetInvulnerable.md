@@ -23,45 +23,26 @@ Returns `true` if the invulnerability was set successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("InvincibleBot");
-    NPC_Spawn(npcid);
-
-    // Make the NPC invulnerable to all damage
-    NPC_SetInvulnerable(npcid, true);
-
-    printf("NPC %d is now invulnerable", npcid);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/godmode", true))
+    if (!strcmp(cmdtext, "/toggleinvulnerable", true))
     {
-        // Toggle god mode for NPC 0
-        new bool:current = NPC_IsInvulnerable(0);
-        NPC_SetInvulnerable(0, !current);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 god mode: %s", !current ? "ON" : "OFF");
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:invulnerable = NPC_IsInvulnerable(npcid);
+        NPC_SetInvulnerable(npcid, !invulnerable);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d invulnerable: %s", npcid, !invulnerable ? "Enabled" : "Disabled");
+
         return 1;
     }
     return 0;
 }
 
-// Boss NPC that becomes vulnerable after certain conditions
-public OnPlayerEnterCheckpoint(playerid)
-{
-    // Make boss NPC (assuming it's NPC ID 1) vulnerable during final phase
-    if (GetPlayerScore(playerid) >= 1000)
-    {
-        NPC_SetInvulnerable(1, false);
-        SendClientMessage(playerid, 0xFF0000FF, "The boss is now vulnerable!");
-    }
-    return 1;
-}
 ```
 
 ## Notes
@@ -69,7 +50,6 @@ public OnPlayerEnterCheckpoint(playerid)
 - Invulnerable NPCs will not take any damage from weapons, explosions, or other damage sources
 - This setting persists until changed or the NPC is destroyed
 - Invulnerable NPCs can still be moved, teleported, or have their animations changed
-- Use this for quest NPCs, important characters, or special game mechanics
 
 ## Related Functions
 

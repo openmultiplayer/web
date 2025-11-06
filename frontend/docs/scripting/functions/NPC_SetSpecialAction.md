@@ -23,32 +23,22 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Smoker");
-    NPC_Spawn(npcid);
-
-    // Make NPC smoke cigarette
-    NPC_SetSpecialAction(npcid, SPECIAL_ACTION_SMOKE_CIGGY);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/sitnpc", true))
+    if (!strcmp(cmdtext, "/setspecialaction ", true, 18))
     {
-        // Make NPC 0 sit down
-        NPC_SetSpecialAction(0, SPECIAL_ACTION_SIT_DOWN);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is now sitting");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/clearaction", true))
-    {
-        // Clear special action for NPC 0
-        NPC_SetSpecialAction(0, SPECIAL_ACTION_NONE);
-        SendClientMessage(playerid, 0x00FF00FF, "Cleared NPC 0 special action");
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new actionid = strval(cmdtext[18]);
+
+        NPC_SetSpecialAction(npcid, SPECIAL_ACTION:actionid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d special action set to %d", npcid, actionid);
+
         return 1;
     }
     return 0;
@@ -57,10 +47,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Common actions: NONE, SIT_DOWN, SMOKE_CIGGY, DRINK_BEER, HANDSUP
 - Use SPECIAL_ACTION_NONE to clear the current action
 - Some actions may conflict with movement or other activities
-- Use NPC_GetSpecialAction to check current action
 
 ## Related Functions
 
@@ -68,6 +56,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_ApplyAnimation](NPC_ApplyAnimation): Apply custom animations
 - [NPC_ClearAnimations](NPC_ClearAnimations): Clear animations
 - [NPC_ResetAnimation](NPC_ResetAnimation): Reset to default
+
+## Related Resources
+
+- [Special Actions](../resources/specialactions)
 
 ## Related Callbacks
 

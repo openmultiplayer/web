@@ -23,33 +23,24 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Isolated");
-    NPC_Spawn(npcid);
-
-    // Put NPC in virtual world 1
-    NPC_SetVirtualWorld(npcid, 1);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/moveworld", true))
+    if (!strcmp(cmdtext, "/setvirtualworld ", true, 16))
     {
-        new const playerWorld = GetPlayerVirtualWorld(playerid);
-        NPC_SetVirtualWorld(0, playerWorld);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        SendClientMessage(playerid, 0x00FF00FF, "Moved NPC 0 to your world (%d)", playerWorld);
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-    if (!strcmp(cmdtext, "/isolatenpc", true))
-    {
-        // Move NPC 0 to a separate world
-        NPC_SetVirtualWorld(0, 100);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 moved to world 100");
+        new vw = strval(cmdtext[16]);
+        if (vw < 0)
+            return SendClientMessage(playerid, 0xFF0000FF, "Virtual world must be positive.");
+
+        NPC_SetVirtualWorld(npcid, vw);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d virtual world set to %d", npcid, vw);
+
         return 1;
     }
     return 0;

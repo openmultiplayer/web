@@ -29,35 +29,30 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Dancer");
-    NPC_Spawn(npcid);
-
-    // Set a dance animation by ID
-    NPC_SetAnimation(npcid, 1189, 4.1, true, false, false, false, 0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/wave", true))
+    if (!strcmp(cmdtext, "/setdance", true))
     {
-        // Wave animation for NPC 0
-        NPC_SetAnimation(0, 1003, 4.1, false, false, false, false, 3000);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is waving!");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/dance", true))
-    {
-        // Dance animation for NPC 0
-        NPC_SetAnimation(0, 1189, 4.1, true, false, false, false, 0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is dancing!");
+        NPC_SetAnimation(npcid, 405, 4.1, true, false, false, false, 0);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d has been set to animate.", npcid);
+        
+        SetTimerEx("ClearNPCAnimations", 25000, false, "ii", playerid, npcid);
+
         return 1;
     }
     return 0;
+}
+
+forward ClearNPCAnimations(playerid, npcid);
+public ClearNPCAnimations(playerid, npcid)
+{
+
+    NPC_ClearAnimations(npcid);
+    SendClientMessage(playerid, 0x00FF00FF, "NPC %d animations were cleared.", npcid);
 }
 ```
 
@@ -65,8 +60,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Animation IDs correspond to GTA San Andreas animation indices
 - Use `NPC_ApplyAnimation` for animations by library and name
-- Delta value of 4.1 is standard for most animations
-- Set time to 0 for infinite animations
 
 ## Related Functions
 

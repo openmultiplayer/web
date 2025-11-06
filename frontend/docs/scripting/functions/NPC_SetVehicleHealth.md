@@ -23,45 +23,22 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // Set vehicle to half health
-    NPC_SetVehicleHealth(npcid, 500.0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/repair", true))
+    if (!strcmp(cmdtext, "/setvehiclehealth ", true, 18))
     {
-        // Repair NPC 0's vehicle
-        NPC_SetVehicleHealth(0, 1000.0); // Full health
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 vehicle repaired");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/damagenpcs", true))
-    {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        for (new i = 0; i < count; i++)
-        {
-            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC is in vehicle
-            {
-                new Float:damage = 200.0 + float(random(300)); // Random damage
-                NPC_SetVehicleHealth(npcs[i], damage);
-            }
-        }
+        new Float:health = floatstr(cmdtext[18]);
 
-        SendClientMessage(playerid, 0xFF0000FF, "Damaged all NPC vehicles");
+        NPC_SetVehicleHealth(npcid, health);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d vehicle health set to %.2f", npcid, health);
+
         return 1;
     }
     return 0;
@@ -72,8 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Only works when NPC is in a vehicle
 - Health ranges from 0.0 (destroyed) to 1000.0 (perfect condition)
-- Vehicle explodes when health reaches 0
-- Use NPC_GetVehicleHealth to check current health
+- Vehicles explode when health drops below 250
 
 ## Related Functions
 

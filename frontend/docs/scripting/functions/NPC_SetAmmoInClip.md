@@ -23,25 +23,24 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, WEAPON_DEAGLE, 100); // Desert Eagle with 100 ammo
-
-    // Set clip to half capacity
-    NPC_SetAmmoInClip(npcid, 3);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/fillclip", true))
+    if (!strcmp(cmdtext, "/setammoclip ", true, 13))
     {
-        // Fill NPC 0's weapon clip
-        NPC_SetAmmoInClip(0, 7); // Give 7 ammo to clip
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 clip filled");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new ammo = strval(cmdtext[13]);
+        if (ammo < 0)
+            return SendClientMessage(playerid, 0xFF0000FF, "Ammo must be positive.");
+
+        NPC_SetAmmoInClip(npcid, ammo);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d clip ammo set to %d", npcid, ammo);
+
         return 1;
     }
     return 0;

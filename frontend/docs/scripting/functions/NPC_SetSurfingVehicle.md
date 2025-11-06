@@ -23,28 +23,25 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("SurfingBot");
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-
-    NPC_Spawn(npcid);
-    NPC_SetPos(npcid, 1958.33, 1343.12, 17.36);
-    NPC_SetSurfingVehicle(npcid, vehicleid);
-    return 1;
-}
-
-// Make NPC surf on the roof of a moving vehicle
-public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
-{
-    if (!ispassenger) // Driver
+    if (!strcmp(cmdtext, "/setsurfingvehicle ", true, 19))
     {
-        new npcid = NPC_Create("RoofRider");
-        NPC_Spawn(npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new vehicleid = strval(cmdtext[19]);
+
         NPC_SetSurfingVehicle(npcid, vehicleid);
-        NPC_SetSurfingOffset(npcid, 0.0, 0.0, 2.0); // Position on roof
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d surfing vehicle set to %d", npcid, vehicleid);
+
+        return 1;
     }
-    return 1;
+    return 0;
 }
 ```
 

@@ -25,27 +25,47 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // Make NPC move forward
-    NPC_SetKeys(npcid, KEY_UP, 0, 0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcstop", true))
+    if (!strcmp(cmdtext, "/setkeys ", true, 9))
     {
-        // Clear all keys for NPC 0
-        NPC_SetKeys(0, 0, 0, 0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 movement stopped");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new idx = 9;
+        new keys = 0, updown = 0, leftright = 0;
+
+        // Parse keys
+        while (cmdtext[idx] == ' ') idx++;
+        if (cmdtext[idx] == '\0')
+            return SendClientMessage(playerid, 0xFF0000FF, "Usage: /setkeys [keys] [updown] [leftright]");
+        keys = strval(cmdtext[idx]);
+
+        // Skip to next parameter
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        while (cmdtext[idx] == ' ') idx++;
+
+        // Parse updown if exists
+        if (cmdtext[idx] != '\0')
+        {
+            updown = strval(cmdtext[idx]);
+            while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+            while (cmdtext[idx] == ' ') idx++;
+
+            // Parse leftright if exists
+            if (cmdtext[idx] != '\0')
+            {
+                leftright = strval(cmdtext[idx]);
+            }
+        }
+
+        NPC_SetKeys(npcid, keys, updown, leftright);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d keys: keys=%d, ud=%d, lr=%d", npcid, keys, updown, leftright);
+
         return 1;
     }
     return 0;
@@ -55,7 +75,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Keys affect NPC behavior in vehicles and on foot
-- Common keys: KEY_UP, KEY_DOWN, KEY_LEFT, KEY_RIGHT
 - Use NPC_GetKeys to check current key states
 - Key states persist until changed or NPC state resets
 
@@ -65,6 +84,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_PutInVehicle](NPC_PutInVehicle): Put NPC in vehicle
 - [NPC_Move](NPC_Move): Make NPC move to position
 - [NPC_StopMove](NPC_StopMove): Stop NPC movement
+
+## Related Resources
+
+- [Keys](../resources/keys)
 
 ## Related Callbacks
 

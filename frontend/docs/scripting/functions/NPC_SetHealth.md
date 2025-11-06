@@ -23,28 +23,24 @@ Returns `true` if the health was set successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("HealthBot");
-    NPC_Spawn(npcid);
-
-    // Set NPC health to 75.5
-    NPC_SetHealth(npcid, 75.5);
-
-    new Float:health = NPC_GetHealth(npcid);
-    printf("NPC health: %.1f", health);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/heal", true))
+    if (!strcmp(cmdtext, "/sethealth ", true, 11))
     {
-        new npcid = NPC_Create("Patient");
-        NPC_Spawn(npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        NPC_SetHealth(npcid, 100.0); // Full health
-        SendClientMessage(playerid, 0x00FF00FF, "NPC healed!");
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new Float:health = floatstr(cmdtext[11]);
+        if (health < 0.0 || health > 100.0)
+            return SendClientMessage(playerid, 0xFF0000FF, "Health must be between 0.0 and 100.0.");
+
+        NPC_SetHealth(npcid, health);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d health set to %.1f", npcid, health);
+
         return 1;
     }
     return 0;
@@ -56,8 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Health values typically range from 0.0 to 100.0, but can be set higher
 - Setting health to 0.0 will kill the NPC
 - NPCs spawn with 100.0 health by default
-- You can set health above 100.0 for enhanced NPCs
-- Use floating-point values for precise health control
 
 ## Related Functions
 

@@ -23,29 +23,24 @@ Returns `true` if the ammo was set successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Soldier");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_M4); // M4
-
-    // Set M4 ammo to 200
-    NPC_SetAmmo(npcid, 200);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/giveammo", true))
+    if (!strcmp(cmdtext, "/setammo ", true, 9))
     {
-        new npcid = NPC_Create("Gunner");
-        NPC_Spawn(npcid);
-        NPC_SetWeapon(npcid, WEAPON_DEAGLE);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        // Give Desert Eagle 50 ammo
-        NPC_SetAmmo(npcid, 50);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC armed with ammo");
+        new ammo = strval(cmdtext[9]);
+        if (ammo < 0)
+            return SendClientMessage(playerid, 0xFF0000FF, "Ammo must be positive.");
+
+        NPC_SetAmmo(npcid, ammo);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d ammo set to %d", npcid, ammo);
+
         return 1;
     }
     return 0;
@@ -57,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Setting ammo to 0 makes the weapon unusable
 - Different weapons have different maximum ammo capacities
 - This sets total ammunition, not just the current clip
-- Use with `NPC_SetAmmoInClip` for precise control
 
 ## Related Functions
 

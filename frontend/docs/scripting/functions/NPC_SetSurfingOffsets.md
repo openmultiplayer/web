@@ -25,59 +25,43 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-new g_CarrierVehicle = INVALID_VEHICLE_ID;
-
-public OnGameModeInit()
-{
-    // Create transport vehicle
-    g_CarrierVehicle = CreateVehicle(403, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300); // Linerunner
-
-    // Create passenger NPC
-    new npcid = NPC_Create("Guard");
-    NPC_Spawn(npcid);
-
-    // Set NPC to surf on vehicle roof
-    NPC_SetSurfingVehicle(npcid, g_CarrierVehicle);
-    NPC_SetSurfingOffset(npcid, 0.0, 0.0, 2.5); // 2.5 units above vehicle
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/ridetop", true))
+    if (!strcmp(cmdtext, "/setsurfingoffset ", true, 18))
     {
-        if (g_CarrierVehicle != INVALID_VEHICLE_ID)
-        {
-            NPC_SetSurfingVehicle(0, g_CarrierVehicle);
-            NPC_SetSurfingOffset(0, 0.0, 0.0, 2.5); // On top
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 positioned on vehicle roof");
-        }
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-    if (!strcmp(cmdtext, "/ridefront", true))
-    {
-        if (g_CarrierVehicle != INVALID_VEHICLE_ID)
-        {
-            NPC_SetSurfingVehicle(0, g_CarrierVehicle);
-            NPC_SetSurfingOffset(0, 0.0, 3.0, 1.0); // Front of vehicle
+        new Float:x, Float:y, Float:z;
+        new idx = 18;
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 positioned at vehicle front");
-        }
-        return 1;
-    }
+        // Parse x
+        while (cmdtext[idx] == ' ') idx++;
+        new startIdx = idx;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        new xStr[32];
+        strmid(xStr, cmdtext, startIdx, idx);
+        x = floatstr(xStr);
 
-    if (!strcmp(cmdtext, "/rideside", true))
-    {
-        if (g_CarrierVehicle != INVALID_VEHICLE_ID)
-        {
-            NPC_SetSurfingVehicle(0, g_CarrierVehicle);
-            NPC_SetSurfingOffset(0, 2.0, 0.0, 1.0); // Side of vehicle
+        // Parse y
+        while (cmdtext[idx] == ' ') idx++;
+        startIdx = idx;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        new yStr[32];
+        strmid(yStr, cmdtext, startIdx, idx);
+        y = floatstr(yStr);
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 positioned at vehicle side");
-        }
+        // Parse z
+        while (cmdtext[idx] == ' ') idx++;
+        z = floatstr(cmdtext[idx]);
+
+        NPC_SetSurfingOffsets(npcid, x, y, z);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d surfing offset set to %.2f, %.2f, %.2f", npcid, x, y, z);
+
         return 1;
     }
     return 0;

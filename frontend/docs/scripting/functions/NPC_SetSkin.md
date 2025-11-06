@@ -23,34 +23,24 @@ Returns `true` if the skin was set successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Cop");
-    NPC_Spawn(npcid);
-
-    // Set police officer skin
-    NPC_SetSkin(npcid, 280);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/changeskin", true))
+    if (!strcmp(cmdtext, "/setskin ", true, 9))
     {
-        // Change NPC 0 to army skin
-        NPC_SetSkin(0, 287);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 skin changed to army");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/copskin", true))
-    {
-        new copSkins[] = {280, 281, 282, 283, 284, 285};
-        new model = copSkins[random(sizeof(copSkins))];
-        NPC_SetSkin(0, model);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 is now a police officer");
+        new skinid = strval(cmdtext[9]);
+        if (skinid < 0 || skinid > 311)
+            return SendClientMessage(playerid, 0xFF0000FF, "Skin ID must be between 0 and 311.");
+
+        NPC_SetSkin(npcid, skinid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d skin set to %d", npcid, skinid);
+
         return 1;
     }
     return 0;
@@ -59,10 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Skin IDs range from 0-311 (standard SA-MP skins)
 - Invalid skin IDs may cause visual glitches
-- Skin change is instant without animation
-- Use GetPlayerSkin on players for reference skin IDs
 
 ## Related Functions
 
