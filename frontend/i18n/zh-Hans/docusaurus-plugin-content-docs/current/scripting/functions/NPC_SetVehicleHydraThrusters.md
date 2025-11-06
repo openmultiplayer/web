@@ -23,45 +23,22 @@ tags: ["npc", "车辆", "九头蛇战机", “飞机”]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Pilot");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(520, 1958.33, 1343.12, 50.0, 0.0, -1, -1, -1); // 九头蛇战机
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // 设置推进器用于垂直起飞
-    NPC_SetVehicleHydraThrusters(npcid, 1);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/vtol", true))
+    if (!strcmp(cmdtext, "/sethydrathrusters ", true, 19))
     {
-        // 将 NPC 0 的 九头蛇战机 设置为 垂直起降 模式
-        NPC_SetVehicleHydraThrusters(0, 1);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 九头蛇战机 处于 垂直起降 模式");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/jet", true))
-    {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        for (new i = 0; i < count; i++)
-        {
-            new vehicleid = NPC_GetVehicleID(npcs[i]);
-            if (GetVehicleModel(vehicleid) == 520) // 九头蛇战机
-            {
-                NPC_SetVehicleHydraThrusters(npcs[i], 0); // 喷气模式
-            }
-        }
+        new direction = strval(cmdtext[19]);
 
-        SendClientMessage(playerid, 0x00FF00FF, "所有 NPC 九头蛇战机 处于喷气模式");
+        NPC_SetVehicleHydraThrusters(npcid, direction);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 九头蛇战机推进器方向设置为 %d", npcid, direction);
+
         return 1;
     }
     return 0;

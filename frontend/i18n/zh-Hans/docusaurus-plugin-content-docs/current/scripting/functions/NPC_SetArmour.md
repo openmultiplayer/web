@@ -23,34 +23,24 @@ tags: ["npc", "护甲值", "生命值"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Tank");
-    NPC_Spawn(npcid);
-
-    // 给予满护甲
-    NPC_SetArmour(npcid, 100.0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/setarmour", true))
+    if (!strcmp(cmdtext, "/setarmour ", true, 11))
     {
-        // 为第一个 NPC 设置护甲
-        NPC_SetArmour(0, 75.0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        SendClientMessage(playerid, 0x00FF00FF, "已将 NPC 护甲设置为 75%");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    if (!strcmp(cmdtext, "/checkarmour", true))
-    {
-        new Float:armour = NPC_GetArmour(0);
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 护甲: %.1f", armour);
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        new Float:armour = floatstr(cmdtext[11]);
+        if (armour < 0.0 || armour > 100.0)
+            return SendClientMessage(playerid, 0xFF0000FF, "护甲必须在0.0和100.0之间。");
+
+        NPC_SetArmour(npcid, armour);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 护甲设置为 %.1f", npcid, armour);
+
         return 1;
     }
     return 0;
@@ -62,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 护甲值范围从 0.0（无护甲）到 100.0（满护甲）
 - 护甲在生命值受影响前吸收伤害
 - 使用 NPC_GetArmour 检查当前护甲等级
-- 护甲不会自动再生
 
 ## 相关函数
 

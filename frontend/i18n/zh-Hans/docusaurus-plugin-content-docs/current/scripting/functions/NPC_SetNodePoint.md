@@ -23,104 +23,27 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-new g_PatrolNode = -1;
-
-public OnGameModeInit()
-{
-    // 打开节点用于巡逻路线
-    g_PatrolNode = NPC_OpenNode(1);
-
-    if (g_PatrolNode != -1)
-    {
-        // 创建巡逻周界
-        CreatePatrolRoute();
-
-        printf("巡逻路线已创建，使用节点 %d", g_PatrolNode);
-    }
-
-    return 1;
-}
-
-CreatePatrolRoute()
-{
-    if (g_PatrolNode == -1) return;
-
-    // 在区域周围设置巡逻点
-    NPC_SetNodePoint(g_PatrolNode, 0, 1958.33, 1343.12, 15.36);  // 起点
-    NPC_SetNodePoint(g_PatrolNode, 1, 2058.33, 1343.12, 15.36);  // 东
-    NPC_SetNodePoint(g_PatrolNode, 2, 2058.33, 1443.12, 15.36);  // 东北
-    NPC_SetNodePoint(g_PatrolNode, 3, 1958.33, 1443.12, 15.36);  // 北
-    NPC_SetNodePoint(g_PatrolNode, 4, 1958.33, 1343.12, 15.36);  // 回到起点
-
-    printf("巡逻路线已配置，包含 5 个点");
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/addwaypoint", true))
+    if (!strcmp(cmdtext, "/npcsetnodepoint ", true, 17))
     {
-        new Float:x, Float:y, Float:z;
-        GetPlayerPos(playerid, x, y, z);
+        new nodeid = strval(cmdtext[17]);
 
-        if (g_PatrolNode != -1)
-        {
-            new pointCount = NPC_GetNodePointCount(g_PatrolNode);
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的节点ID。必须在 0 ~ 63 之间。");
 
-            if (NPC_SetNodePoint(g_PatrolNode, pointCount, x, y, z))
-            {
-                new msg[64];
-                format(msg, sizeof(msg), "已在你的位置添加路径点 %d", pointCount);
-                SendClientMessage(playerid, 0x00FF00FF, msg);
-            }
-            else
-            {
-                SendClientMessage(playerid, 0xFF0000FF, "添加路径点失败");
-            }
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "没有可用的巡逻节点");
-        }
-        return 1;
-    }
+        new idx = 17;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        while (cmdtext[idx] == ' ') idx++;
 
-    if (!strcmp(cmdtext, "/customroute", true))
-    {
-        // 在玩家周围创建自定义路线
-        new Float:px, Float:py, Float:pz;
-        GetPlayerPos(playerid, px, py, pz);
+        if (cmdtext[idx] == '\0')
+            return SendClientMessage(playerid, 0xFF0000FF, "用例: /npcsetnodepoint [节点id] [点id]");
 
-        new customNode = NPC_OpenNode(10);
-        if (customNode != -1)
-        {
-            // 在玩家周围创建方形路线
-            NPC_SetNodePoint(customNode, 0, px - 20.0, py - 20.0, pz);  // 西南
-            NPC_SetNodePoint(customNode, 1, px + 20.0, py - 20.0, pz);  // 东南
-            NPC_SetNodePoint(customNode, 2, px + 20.0, py + 20.0, pz);  // 东北
-            NPC_SetNodePoint(customNode, 3, px - 20.0, py + 20.0, pz);  // 西北
-            NPC_SetNodePoint(customNode, 4, px - 20.0, py - 20.0, pz);  // 回到起点
+        new pointid = strval(cmdtext[idx]);
 
-            // 让 NPC 开始自定义路线
-            NPC_PlayNode(0, customNode, NPC_MOVE_TYPE_WALK);
+        new bool:success = NPC_SetNodePoint(nodeid, pointid);
 
-            SendClientMessage(playerid, 0x00FF00FF, "已在你的位置周围创建自定义路线");
-        }
-        return 1;
-    }
-
-    if (!strcmp(cmdtext, "/nodeinfo", true))
-    {
-        if (g_PatrolNode != -1)
-        {
-            new pointCount = NPC_GetNodePointCount(g_PatrolNode);
-            new msg[64];
-            format(msg, sizeof(msg), "巡逻节点已配置 %d 个点", pointCount);
-            SendClientMessage(playerid, 0xFFFF00FF, msg);
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "没有可用的巡逻节点");
-        }
+        SendClientMessage(playerid, 0x00FF00FF, "设置节点 %d 为点 %d: %s", nodeid, pointid, success ? "成功" : "失败");
         return 1;
     }
     return 0;
@@ -132,7 +55,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 在设置点之前必须打开节点
 - 点索引通常从 0 开始
 - 使用 NPC_GetNodePointPosition 检索点坐标
-- 点定义了 NPC 的导航路径
 
 ## 相关函数
 

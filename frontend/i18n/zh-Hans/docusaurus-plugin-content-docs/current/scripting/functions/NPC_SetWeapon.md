@@ -23,36 +23,24 @@ tags: ["npc", "武器", "战斗"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Soldier");
-    NPC_Spawn(npcid);
-
-    // 设置 M4 为当前武器并给予弹药
-    NPC_SetWeapon(npcid, WEAPON_M4);
-    NPC_SetAmmo(npcid, 200); // 给予 200 发弹药
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/givegun", true))
+    if (!strcmp(cmdtext, "/setweapon ", true, 11))
     {
-        // 给予 NPC 一把沙漠之鹰
-        NPC_SetWeapon(0, WEAPON_DEAGLE);
-        NPC_SetAmmo(0, 50); // 给予 50 发弹药
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 已装备沙漠之鹰");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    if (!strcmp(cmdtext, "/disarm", true))
-    {
-        // 设置 NPC 为拳头
-        NPC_SetWeapon(0, WEAPON_FIST);
+        new weaponid = strval(cmdtext[11]);
+        if (weaponid < 0 || weaponid > 46)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的武器ID。必须在0到46之间。");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 已解除武装");
+        NPC_SetWeapon(npcid, WEAPON:weaponid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器设置为 %d", npcid, weaponid);
+
         return 1;
     }
     return 0;
@@ -63,7 +51,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 设置武器将为 NPC 装备该武器
 - 使用 NPC_SetAmmo 为武器提供弹药
-- 武器 ID 0 代表拳头（无武装）
 - 使用 NPC_GetWeapon 检查当前武器
 
 ## 相关函数

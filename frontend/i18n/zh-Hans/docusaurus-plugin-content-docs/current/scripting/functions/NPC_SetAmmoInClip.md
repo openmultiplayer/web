@@ -23,25 +23,24 @@ tags: ["npc", "武器", "子弹"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Gunner");
-    NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, WEAPON_DEAGLE, 100); // 沙漠之鹰配 100 发弹药
-
-    // 设置弹匣为一半容量
-    NPC_SetAmmoInClip(npcid, 3);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/fillclip", true))
+    if (!strcmp(cmdtext, "/setammoclip ", true, 13))
     {
-        // 装满 NPC 0 的武器弹匣
-        NPC_SetAmmoInClip(0, 7); // 给弹匣 7 发弹药
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 弹匣已装满");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new ammo = strval(cmdtext[13]);
+        if (ammo < 0)
+            return SendClientMessage(playerid, 0xFF0000FF, "弹药必须是非负整数。");
+
+        NPC_SetAmmoInClip(npcid, ammo);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 弹匣中的弹药数量设置为 %d", npcid, ammo);
+
         return 1;
     }
     return 0;

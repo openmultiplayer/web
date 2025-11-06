@@ -23,54 +23,34 @@ tags: ["npc", "战斗", "战斗风格", "近战攻击"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Fighter");
-    NPC_Spawn(npcid);
-
-    // 设置拳击战斗风格
-    NPC_SetFightingStyle(npcid, FIGHT_STYLE_BOXING);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/setboxing", true))
+    if (!strcmp(cmdtext, "/setfightingstyle ", true, 18))
     {
-        // 设置 NPC 0 为拳击风格
-        NPC_SetFightingStyle(0, FIGHT_STYLE_BOXING);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 现在使用拳击风格");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new styleid = strval(cmdtext[18]);
+        // 有效的战斗风格: 4, 5, 6, 7, 15, 16
+        if (styleid != 4 && styleid != 5 && styleid != 6 && styleid != 7 && styleid != 15 && styleid != 16)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的风格。有效：4（普通），5（拳击），6（功夫），7（膝击），15（抓踢），16（肘击）");
+
+        NPC_SetFightingStyle(npcid, FIGHT_STYLE:styleid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 战斗风格设置为 %d", npcid, styleid);
+
         return 1;
     }
-
-    if (!strcmp(cmdtext, "/randomstyle", true))
-    {
-        new styles[] = {
-            FIGHT_STYLE_NORMAL,
-            FIGHT_STYLE_BOXING,
-            FIGHT_STYLE_KUNGFU,
-            FIGHT_STYLE_KNEEHEAD,
-            FIGHT_STYLE_GRABKICK,
-            FIGHT_STYLE_ELBOW
-        };
-
-        new style = styles[random(sizeof(styles))];
-        NPC_SetFightingStyle(0, style);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 随机战斗风格已设置");
-    }
-
-    SendClientMessage(playerid, 0x00FF00FF, "已随机化 NPC 战斗风格");
-    return 1;
-}
-return 0;
+    return 0;
 }
 ```
 
 ## 注意事项
 
 - 战斗风格影响近身攻击动画和伤害
-- 常见风格：NORMAL（普通）、BOXING（拳击）、KUNGFU（功夫）、KNEEHEAD（膝撞）、GRABKICK（抓踢）、ELBOW（肘击）
 - 使用 NPC_GetFightingStyle 检查当前风格
 - 风格影响攻击动画和战斗效果
 
@@ -80,6 +60,10 @@ return 0;
 - [NPC_MeleeAttack](NPC_MeleeAttack): 让 NPC 攻击
 - [NPC_IsMeleeAttacking](NPC_IsMeleeAttacking): 检查是否正在攻击
 - [NPC_StopMeleeAttack](NPC_StopMeleeAttack): 停止攻击
+
+## 相关资源
+
+- [战斗风格](../resources/fightingstyles)
 
 ## 相关回调
 

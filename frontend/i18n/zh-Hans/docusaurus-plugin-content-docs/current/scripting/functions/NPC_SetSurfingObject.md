@@ -1,7 +1,7 @@
 ---
 title: NPC_SetSurfingObject
 sidebar_label: NPC_SetSurfingObject
-description: 设置 NPC 正在冲浪的对象。
+description: 设置 NPC 正在冲浪的物体。
 tags: ["npc", "冲浪"]
 ---
 
@@ -9,12 +9,12 @@ tags: ["npc", "冲浪"]
 
 ## 描述
 
-设置 NPC 正在冲浪的对象。
+设置 NPC 正在冲浪的物体。
 
 | 参数     | 说明      |
 | -------- | --------- |
 | npcid    | NPC 的 ID |
-| objectid | 对象 ID   |
+| objectid | 物体 ID   |
 
 ## 返回值
 
@@ -23,29 +23,38 @@ tags: ["npc", "冲浪"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("SurfingBot");
-    new objectid = CreateObject(1225, 1958.33, 1343.12, 15.36, 0.0, 0.0, 0.0);
+    if (!strcmp(cmdtext, "/setsurfingobject ", true, 18))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    NPC_Spawn(npcid);
-    NPC_SetPos(npcid, 1958.33, 1343.12, 17.36);
-    NPC_SetSurfingObject(npcid, objectid);
-    return 1;
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new objectid = strval(cmdtext[18]);
+
+        NPC_SetSurfingObject(npcid, objectid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 冲浪物体设置为 %d", npcid, objectid);
+
+        return 1;
+    }
+    return 0;
 }
 ```
 
 ## 注意事项
 
-- 如果对象移动，NPC 将随之移动
-- 使用 `NPC_SetSurfingOffsets` 微调 NPC 相对于对象的位置
-- 对象必须存在才能正常冲浪
+- 如果物体移动，NPC 将随之移动
+- 物体必须存在才能正常冲浪
 
 ## 相关函数
 
-- [NPC_GetSurfingObject](NPC_GetSurfingObject): 获取 NPC 正在冲浪的对象
+- [NPC_GetSurfingObject](NPC_GetSurfingObject): 获取 NPC 正在冲浪的物体
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): 设置 NPC 正在冲浪的车辆
-- [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 正在冲浪的玩家对象
+- [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 正在冲浪的玩家物体
 - [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): 设置 NPC 的冲浪偏移
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): 重置 NPC 的所有冲浪数据
 

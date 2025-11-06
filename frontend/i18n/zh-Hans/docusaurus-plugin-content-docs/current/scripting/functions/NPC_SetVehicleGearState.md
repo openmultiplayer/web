@@ -23,53 +23,22 @@ tags: ["npc", "车辆", “飞机”, “起落架”]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Pilot");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(520, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1); // 九头蛇战机
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // 收起起落架
-    NPC_SetVehicleGearState(npcid, LANDING_GEAR_STATE_UP);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/gearup", true))
+    if (!strcmp(cmdtext, "/setvehiclegearstate ", true, 21))
     {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        for (new i = 0; i < count; i++)
-        {
-            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC 在飞机中
-            {
-                NPC_SetVehicleGearState(npcs[i], LANDING_GEAR_STATE_UP);
-            }
-        }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        SendClientMessage(playerid, 0x00FF00FF, "已收起所有 NPC 飞机的起落架");
-        return 1;
-    }
+        new gearState = strval(cmdtext[21]);
 
-    if (!strcmp(cmdtext, "/geardown", true))
-    {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        NPC_SetVehicleGearState(npcid, gearState);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 飞机起落架状态设置为 %d", npcid, gearState);
 
-        for (new i = 0; i < count; i++)
-        {
-            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC 在飞机中
-            {
-                NPC_SetVehicleGearState(npcs[i], LANDING_GEAR_STATE_DOWN);
-            }
-        }
-
-        SendClientMessage(playerid, 0x00FF00FF, "已放下所有 NPC 飞机的起落架");
         return 1;
     }
     return 0;
@@ -81,7 +50,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 仅在 NPC 驾驶飞机时有效
 - 使用与[飞机起落架状态](../resources/landinggearstate)相同的常量：LANDING_GEAR_STATE_DOWN 和 LANDING_GEAR_STATE_UP
 - 使用 NPC_GetVehicleGearState 检查当前起落架状态
-- 这是 GetPlayerLandingGearState 的 NPC 等效函数
 
 ## 相关函数
 

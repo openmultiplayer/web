@@ -25,71 +25,26 @@ tags: ["npc", "位置"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("TeleportBot");
-    NPC_Spawn(npcid);
-
-    // 瞬间设置 NPC 位置
-    NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/teleportnpc", true))
+    if (!strcmp(cmdtext, "/setposhere", true))
     {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
 
-        // 将 NPC 0 传送到玩家位置
-        NPC_SetPos(0, x + 2.0, y, z);
+        NPC_SetPos(npcid, x + 2.0, y, z);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 传送到你的位置", npcid);
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 已传送到你身边！");
-        return 1;
-    }
-
-    if (!strcmp(cmdtext, "/npcgotower", true))
-    {
-        // 将 NPC 移动到特定地标
-        NPC_SetPos(0, 1544.6, -1353.8, 329.5); // Big Smoke的房子
-
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 已移动到 Big Smoke 的房子");
         return 1;
     }
     return 0;
-}
-
-CreateNPCFormation(Float:leaderX, Float:leaderY, Float:leaderZ, const Float:formation[][2], formationSize = sizeof(formation))
-{
-    new
-        name[MAX_PLAYER_NAME + 1],
-        npcid,
-        Float:offsetX,
-        Float:offsetY;
-
-    for (new i = 0; i < formationSize; i++)
-    {
-        format(name, sizeof(name), "Unit_%d", i);
-
-        npcid = NPC_Create(name);
-        NPC_Spawn(npcid);
-
-        // 根据编队数组定位
-        offsetX = formation[i][0];
-        offsetY = formation[i][1];
-
-        NPC_SetPos(npcid, leaderX + offsetX, leaderY + offsetY, leaderZ);
-    }
-}
-
-forward ResetNPCPositions();
-public ResetNPCPositions()
-{
-    // 将 NPC 0 重置到特定位置
-    NPC_SetPos(0, 1958.33, 1343.12, 15.36);
-    printf("NPC 0 位置已重置");
 }
 ```
 
@@ -100,8 +55,6 @@ public ResetNPCPositions()
 - 此函数瞬间传送 NPC，没有动画
 - 设置位置时会停止任何当前的移动
 - 如果希望 NPC 走向某个位置，请使用 `NPC_Move`
-- 位置坐标以圣安地列斯世界单位为准
-- 确保 Z 坐标高于地面水平
 
 :::
 

@@ -25,27 +25,47 @@ tags: ["npc", "按键", "输入"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // 让 NPC 向前移动
-    NPC_SetKeys(npcid, KEY_UP, 0, 0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcstop", true))
+    if (!strcmp(cmdtext, "/setkeys ", true, 9))
     {
-        // 清除 NPC 0 的所有按键
-        NPC_SetKeys(0, 0, 0, 0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 移动已停止");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new idx = 9;
+        new keys = 0, updown = 0, leftright = 0;
+
+        // 处理按键
+        while (cmdtext[idx] == ' ') idx++;
+        if (cmdtext[idx] == '\0')
+            return SendClientMessage(playerid, 0xFF0000FF, "用例: /setkeys [按键] [上下] [左右]");
+        keys = strval(cmdtext[idx]);
+
+        // 跳到下一个参数
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        while (cmdtext[idx] == ' ') idx++;
+
+        // 如果存在，向上解析
+        if (cmdtext[idx] != '\0')
+        {
+            updown = strval(cmdtext[idx]);
+            while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+            while (cmdtext[idx] == ' ') idx++;
+
+            // 如果存在，向右解析
+            if (cmdtext[idx] != '\0')
+            {
+                leftright = strval(cmdtext[idx]);
+            }
+        }
+
+        NPC_SetKeys(npcid, keys, updown, leftright);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d keys: keys=%d, ud=%d, lr=%d", npcid, keys, updown, leftright);
+
         return 1;
     }
     return 0;
@@ -55,7 +75,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 按键影响 NPC 在车辆内和步行时的行为
-- 常用按键：KEY_UP（上）、KEY_DOWN（下）、KEY_LEFT（左）、KEY_RIGHT（右）
 - 使用 NPC_GetKeys 检查当前按键状态
 - 按键状态会持续到被更改或 NPC 状态重置
 
@@ -65,6 +84,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_PutInVehicle](NPC_PutInVehicle): 将 NPC 放入车辆
 - [NPC_Move](NPC_Move): 让 NPC 移动到位置
 - [NPC_StopMove](NPC_StopMove): 停止 NPC 移动
+
+## 相关资源
+
+- [按键](../resources/keys)
 
 ## 相关回调
 

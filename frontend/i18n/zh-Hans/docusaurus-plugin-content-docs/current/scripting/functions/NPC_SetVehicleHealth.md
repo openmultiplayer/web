@@ -23,45 +23,22 @@ tags: ["npc", "车辆", "生命值"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Driver");
-    NPC_Spawn(npcid);
-
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, -1);
-    NPC_PutInVehicle(npcid, vehicleid, 0);
-
-    // 设置车辆为半血
-    NPC_SetVehicleHealth(npcid, 500.0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/repair", true))
+    if (!strcmp(cmdtext, "/setvehiclehealth ", true, 18))
     {
-        // 修复 NPC 0 的车辆
-        NPC_SetVehicleHealth(0, 1000.0); // 满血
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 的车辆已修复");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/damagenpcs", true))
-    {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        for (new i = 0; i < count; i++)
-        {
-            if (NPC_GetVehicleID(npcs[i]) != INVALID_VEHICLE_ID) // NPC 在车辆中
-            {
-                new Float:damage = 200.0 + float(random(300)); // 随机伤害
-                NPC_SetVehicleHealth(npcs[i], damage);
-            }
-        }
+        new Float:health = floatstr(cmdtext[18]);
 
-        SendClientMessage(playerid, 0xFF0000FF, "已损坏所有 NPC 车辆");
+        NPC_SetVehicleHealth(npcid, health);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 车辆生命值设置为 %.2f", npcid, health);
+
         return 1;
     }
     return 0;
@@ -72,8 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 仅在 NPC 在车辆中时有效
 - 生命值范围从 0.0（已摧毁）到 1000.0（完美状态）
-- 生命值达到 0 时车辆会爆炸
-- 使用 NPC_GetVehicleHealth 检查当前生命值
+- Vehicles explode when health drops below 250
 
 ## 相关函数
 

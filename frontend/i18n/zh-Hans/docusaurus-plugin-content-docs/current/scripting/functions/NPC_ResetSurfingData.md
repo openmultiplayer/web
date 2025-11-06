@@ -24,41 +24,36 @@ tags: ["npc", "冲浪"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/resetsurf", true))
+    if (!strcmp(cmdtext, "/resetsurfing", true))
     {
-        // 重置 NPC 0 的冲浪数据
-        NPC_ResetSurfingData(0);
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 0 冲浪数据已重置");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        NPC_ResetSurfingData(npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 冲浪数据已重置。", npcid);
         return 1;
     }
     return 0;
-}
-
-// 当 NPC 进入车辆时重置冲浪状态
-public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
-{
-    // 当 NPC 进入车辆时停止冲浪
-    if(IsPlayerNPC(playerid)) {
-        NPC_ResetSurfingData(playerid);
-    }
-    return 1;
 }
 ```
 
 ## 注意事项
 
-- 此函数清除 NPC 的所有冲浪相关数据，包括冲浪对象/车辆和偏移
+- 此函数清除 NPC 的所有冲浪相关数据，包括冲浪物体/车辆和偏移
 - 调用此函数后，NPC 将不再附着在任何表面上
 - NPC 的位置不会改变，只是重置其冲浪状态
-- 当 NPC 需要独立移动时，可用于停止 NPC 冲浪
 
 ## 相关函数
 
-- [NPC_SetSurfingObject](NPC_SetSurfingObject): 设置 NPC 冲浪的对象
+- [NPC_SetSurfingObject](NPC_SetSurfingObject): 设置 NPC 冲浪的物体
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): 设置 NPC 冲浪的车辆
-- [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 冲浪的玩家对象
+- [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 冲浪的玩家物体
 - [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): 设置 NPC 的冲浪偏移
-- [NPC_GetSurfingObject](NPC_GetSurfingObject): 获取 NPC 冲浪的对象
+- [NPC_GetSurfingObject](NPC_GetSurfingObject): 获取 NPC 冲浪的物体
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): 获取 NPC 冲浪的车辆
 
 ## 相关回调

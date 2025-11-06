@@ -23,28 +23,24 @@ tags: ["npc", "生命值"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("HealthBot");
-    NPC_Spawn(npcid);
-
-    // 设置 NPC 生命值为 75.5
-    NPC_SetHealth(npcid, 75.5);
-
-    new Float:health = NPC_GetHealth(npcid);
-    printf("NPC 生命值: %.1f", health);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/heal", true))
+    if (!strcmp(cmdtext, "/sethealth ", true, 11))
     {
-        new npcid = NPC_Create("Patient");
-        NPC_Spawn(npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        NPC_SetHealth(npcid, 100.0); // 满血
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 已治疗！");
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new Float:health = floatstr(cmdtext[11]);
+        if (health < 0.0 || health > 100.0)
+            return SendClientMessage(playerid, 0xFF0000FF, "生命值必须在0.0到100.0之间。");
+
+        NPC_SetHealth(npcid, health);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 生命值设置为 %.1f", npcid, health);
+
         return 1;
     }
     return 0;
@@ -56,8 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 生命值通常范围从 0.0 到 100.0，但可以设置更高
 - 将生命值设置为 0.0 会杀死 NPC
 - NPC 默认出生时生命值为 100.0
-- 可以将生命值设置在 100.0 以上以增强 NPC
-- 使用浮点数值进行精确的生命值控制
 
 ## 相关函数
 

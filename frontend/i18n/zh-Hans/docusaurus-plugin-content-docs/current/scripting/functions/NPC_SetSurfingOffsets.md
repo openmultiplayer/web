@@ -25,59 +25,43 @@ tags: ["npc", "冲浪"]
 ## 示例
 
 ```c
-new g_CarrierVehicle = INVALID_VEHICLE_ID;
-
-public OnGameModeInit()
-{
-    // 创建运输车辆
-    g_CarrierVehicle = CreateVehicle(403, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300); // Linerunner
-
-    // 创建乘客 NPC
-    new npcid = NPC_Create("Guard");
-    NPC_Spawn(npcid);
-
-    // 设置 NPC 在车顶冲浪
-    NPC_SetSurfingVehicle(npcid, g_CarrierVehicle);
-    NPC_SetSurfingOffsets(npcid, 0.0, 0.0, 2.5); // 车辆上方 2.5 单位
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/ridetop", true))
+    if (!strcmp(cmdtext, "/setsurfingoffset ", true, 18))
     {
-        if (g_CarrierVehicle != INVALID_VEHICLE_ID)
-        {
-            NPC_SetSurfingVehicle(0, g_CarrierVehicle);
-            NPC_SetSurfingOffsets(0, 0.0, 0.0, 2.5); // 车顶
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已定位到车顶");
-        }
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    if (!strcmp(cmdtext, "/ridefront", true))
-    {
-        if (g_CarrierVehicle != INVALID_VEHICLE_ID)
-        {
-            NPC_SetSurfingVehicle(0, g_CarrierVehicle);
-            NPC_SetSurfingOffsets(0, 0.0, 3.0, 1.0); // 车辆前方
+        new Float:x, Float:y, Float:z;
+        new idx = 18;
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已定位到车前");
-        }
-        return 1;
-    }
+        // 处理x
+        while (cmdtext[idx] == ' ') idx++;
+        new startIdx = idx;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        new xStr[32];
+        strmid(xStr, cmdtext, startIdx, idx);
+        x = floatstr(xStr);
 
-    if (!strcmp(cmdtext, "/rideside", true))
-    {
-        if (g_CarrierVehicle != INVALID_VEHICLE_ID)
-        {
-            NPC_SetSurfingVehicle(0, g_CarrierVehicle);
-            NPC_SetSurfingOffsets(0, 2.0, 0.0, 1.0); // 车辆侧面
+        // 处理y
+        while (cmdtext[idx] == ' ') idx++;
+        startIdx = idx;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        new yStr[32];
+        strmid(yStr, cmdtext, startIdx, idx);
+        y = floatstr(yStr);
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已定位到车侧");
-        }
+        // 处理z
+        while (cmdtext[idx] == ' ') idx++;
+        z = floatstr(cmdtext[idx]);
+
+        NPC_SetSurfingOffsets(npcid, x, y, z);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 冲浪偏移设置为 %.2f, %.2f, %.2f", npcid, x, y, z);
+
         return 1;
     }
     return 0;
@@ -86,7 +70,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 冲浪偏移决定了 NPC 相对于其冲浪的对象/车辆的相对位置
+- 冲浪偏移决定了 NPC 相对于其冲浪的物体/车辆的相对位置
 - 正 Z 值将 NPC 向上移动，负值向下移动
 - 正 Y 值通常将 NPC 相对于车辆方向向前移动
 - 正 X 值将 NPC 相对于车辆方向向右移动
@@ -96,9 +80,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 相关函数
 
 - [NPC_GetSurfingOffsets](NPC_GetSurfingOffsets): 获取 NPC 的冲浪偏移
-- [NPC_SetSurfingObject](NPC_SetSurfingObject): 设置 NPC 正在冲浪的对象
+- [NPC_SetSurfingObject](NPC_SetSurfingObject): 设置 NPC 正在冲浪的物体
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): 设置 NPC 正在冲浪的车辆
-- [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 正在冲浪的玩家对象
+- [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 正在冲浪的玩家物体
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): 重置 NPC 的所有冲浪数据
 
 ## 相关回调

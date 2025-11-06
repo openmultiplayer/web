@@ -22,34 +22,17 @@ tags: ["npc", "动画"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Dancer");
-    NPC_Spawn(npcid);
-
-    // 应用动画
-    NPC_ApplyAnimation(npcid, "DANCING", "dance_loop", 4.0, 1, 0, 0, 1, 0);
-
-    // 10秒后重置
-    SetTimerEx("ResetAnim", 10000, false, "i", npcid);
-
-    return 1;
-}
-
-forward ResetAnim(npcid);
-public ResetAnim(npcid)
-{
-    NPC_ResetAnimation(npcid);
-    printf("NPC %d 动画已重置为默认状态", npcid);
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/resetanim", true))
     {
-        // 重置 NPC 0 的动画
-        NPC_ResetAnimation(0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 动画已重置");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        NPC_ResetAnimation(npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 动画已重置。", npcid);
+
         return 1;
     }
     return 0;
@@ -59,9 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 停止所有当前动画并让 NPC 返回空闲状态
-- 使用此函数清除卡住或循环的动画
 - 等同于调用 NPC_ClearAnimations
-- NPC 将返回正常的站立/行走动画
 
 ## 相关函数
 

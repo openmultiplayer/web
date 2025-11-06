@@ -23,43 +23,24 @@ tags: ["npc", "角度", "旋转"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Guard");
-    NPC_Spawn(npcid);
-
-    // 面向北
-    NPC_SetFacingAngle(npcid, 0.0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/turneast", true))
+    if (!strcmp(cmdtext, "/setfacingangle ", true, 16))
     {
-        // 让 NPC 面向东（270度）
-        NPC_SetFacingAngle(0, 270.0);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 现在面向东");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    if (!strcmp(cmdtext, "/faceme", true))
-    {
-        new
-            Float:px, Float:py, Float:pz,
-            Float:nx, Float:ny, Float:nz,
-            Float:angle;
+        new Float:angle = floatstr(cmdtext[16]);
+        if (angle < 0.0 || angle > 360.0)
+            return SendClientMessage(playerid, 0xFF0000FF, "角度必须在0.0和360.0之间。");
 
-        GetPlayerPos(playerid, px, py, pz);
-        NPC_GetPos(0, nx, ny, nz);
+        NPC_SetFacingAngle(npcid, angle);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 朝向角度设置为 %.1f", npcid, angle);
 
-        // 计算面向玩家的角度
-        angle = atan2(py - ny, px - nx) - 90.0;
-        NPC_SetFacingAngle(0, angle);
-
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 现在面向你");
         return 1;
     }
     return 0;
@@ -71,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::warning
 
 - 角度以度为单位测量（0-360）。
-- 在 GTA:SA 中角度是相反的；在现实世界中 90 度是东，但在 GTA:SA 中 90 度实际上是西。北和南仍然是 0/360 和 180。要转换这个，只需做 360 - angle。
 - 使用 [NPC_GetFacingAngle](NPC_GetFacingAngle) 获取当前朝向角度。
 - 立即旋转 NPC，没有动画。
 

@@ -22,44 +22,20 @@ tags: ["npc", "节点"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Navigator");
-    NPC_Spawn(npcid);
-
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // 5秒后暂停
-        SetTimerEx("PauseNode", 5000, false, "i", npcid);
-    }
-
-    return 1;
-}
-
-forward PauseNode(npcid);
-public PauseNode(npcid)
-{
-    NPC_PausePlayingNode(npcid);
-
-    // 3秒后恢复
-    SetTimerEx("ResumeNode", 3000, false, "i", npcid);
-}
-
-forward ResumeNode(npcid);
-public ResumeNode(npcid)
-{
-    NPC_ResumePlayingNode(npcid);
-    printf("NPC %d 节点导航已恢复", npcid);
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/resume", true))
+    if (!strcmp(cmdtext, "/npcresumenode", true))
     {
-        NPC_ResumePlayingNode(0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 节点导航已恢复");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:success = NPC_ResumePlayingNode(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 恢复节点: %s", npcid, success ? "成功" : "失败");
         return 1;
     }
     return 0;
@@ -70,7 +46,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 仅在 NPC 的节点导航之前被暂停时有效
 - NPC 将从暂停的位置继续
-- 与 `NPC_PausePlayingNode` 配合使用以控制节点导航
 
 ## 相关函数
 

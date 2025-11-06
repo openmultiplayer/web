@@ -22,35 +22,27 @@ tags: ["npc", "出生", "重生"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Respawner");
-    NPC_Spawn(npcid);
-
-    // 每30秒重生一次
-    SetTimerEx("RespawnNPC", 30000, true, "i", npcid);
-
-    return 1;
-}
-
-forward RespawnNPC(npcid);
-public RespawnNPC(npcid)
-{
-    if (NPC_Respawn(npcid))
-    {
-        printf("NPC %d 已重生", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/respawnnpc", true))
     {
-        // 重生 NPC 0
-        if (NPC_Respawn(0))
+        new npcid = PlayerNPC[playerid];
+
+        if (!NPC_IsValid(npcid))
         {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已重生");
+            SendClientMessage(playerid, 0xFF0000FF, "你没有有效的NPC可重生。");
+            return 1;
         }
+
+        if (NPC_Respawn(npcid))
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "你的 NPC (ID %d) 已重生。", npcid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000FF, "你的 NPC (ID %d) 重生失败。", npcid);
+        }
+
         return 1;
     }
     return 0;
@@ -64,7 +56,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 重置 NPC 生命值、位置和状态。
 - NPC 返回其原始出生坐标。
 - 所有当前活动（移动、战斗）都会停止。
-- 在 NPC 死亡或卡住时使用此函数重置。
 
 :::
 

@@ -23,44 +23,24 @@ tags: ["npc", "无敌", "伤害", "保护"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("InvincibleBot");
-    NPC_Spawn(npcid);
-
-    // 使 NPC 对所有伤害免疫
-    NPC_SetInvulnerable(npcid, true);
-
-    printf("NPC %d 现在已免疫", npcid);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/godmode", true))
+    if (!strcmp(cmdtext, "/toggleinvulnerable", true))
     {
-        // 切换 NPC 0 的上帝模式
-        new bool:current = NPC_IsInvulnerable(0);
-        NPC_SetInvulnerable(0, !current);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        new msg[64];
-        format(msg, sizeof(msg), "NPC 0 上帝模式：%s", !current ? "开启" : "关闭");
-        SendClientMessage(playerid, 0xFFFFFFFF, msg);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:invulnerable = NPC_IsInvulnerable(npcid);
+        NPC_SetInvulnerable(npcid, !invulnerable);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 伤害免疫: %s", npcid, !invulnerable ? "启用" : "禁用");
+
         return 1;
     }
     return 0;
-}
-
-// 在特定条件下变得脆弱的 Boss NPC
-public OnPlayerEnterCheckpoint(playerid)
-{
-    // 使 Boss NPC（假设为 NPC ID 1）在最终阶段变得脆弱
-    if (GetPlayerScore(playerid) >= 1000)
-    {
-        NPC_SetInvulnerable(1, false);
-        SendClientMessage(playerid, 0xFF0000FF, "Boss 现在变得脆弱了！");
-    }
-    return 1;
 }
 ```
 
@@ -69,7 +49,6 @@ public OnPlayerEnterCheckpoint(playerid)
 - 免疫的 NPC 不会受到武器、爆炸或其他伤害来源的伤害
 - 此设置会持续到被更改或 NPC 被销毁
 - 免疫的 NPC 仍然可以被移动、传送或更改动画
-- 将此用于任务 NPC、重要角色或特殊游戏机制
 
 ## 相关函数
 

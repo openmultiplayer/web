@@ -23,28 +23,25 @@ tags: ["npc", "冲浪", "车辆"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("SurfingBot");
-    new vehicleid = CreateVehicle(411, 1958.33, 1343.12, 15.36, 0.0, -1, -1, 300);
-
-    NPC_Spawn(npcid);
-    NPC_SetPos(npcid, 1958.33, 1343.12, 17.36);
-    NPC_SetSurfingVehicle(npcid, vehicleid);
-    return 1;
-}
-
-// 让 NPC 在移动车辆的车顶冲浪
-public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
-{
-    if (!ispassenger) // 驾驶员
+    if (!strcmp(cmdtext, "/setsurfingvehicle ", true, 19))
     {
-        new npcid = NPC_Create("RoofRider");
-        NPC_Spawn(npcid);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new vehicleid = strval(cmdtext[19]);
+
         NPC_SetSurfingVehicle(npcid, vehicleid);
-        NPC_SetSurfingOffsets(npcid, 0.0, 0.0, 2.0); // 定位到车顶
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 冲浪的车辆设置为 %d", npcid, vehicleid);
+
+        return 1;
     }
-    return 1;
+    return 0;
 }
 ```
 
@@ -58,8 +55,8 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 ## 相关函数
 
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): 获取 NPC 正在冲浪的车辆
-- [NPC_SetSurfingObject](NPC_SetSurfingObject): 设置 NPC 正在冲浪的对象
-- [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 正在冲浪的玩家对象
+- [NPC_SetSurfingObject](NPC_SetSurfingObject): 设置 NPC 正在冲浪的物体
+- [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): 设置 NPC 正在冲浪的玩家物体
 - [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): 设置 NPC 的冲浪偏移
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): 重置 NPC 的所有冲浪数据
 

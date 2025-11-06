@@ -23,29 +23,24 @@ tags: ["npc", "武器", "子弹", "弹药"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Soldier");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_M4); // M4
-
-    // 设置 M4 弹药为 200
-    NPC_SetAmmo(npcid, 200);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/giveammo", true))
+    if (!strcmp(cmdtext, "/setammo ", true, 9))
     {
-        new npcid = NPC_Create("Gunner");
-        NPC_Spawn(npcid);
-        NPC_SetWeapon(npcid, WEAPON_DEAGLE);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        // 给沙漠之鹰 50 发弹药
-        NPC_SetAmmo(npcid, 50);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 已装备弹药");
+        new ammo = strval(cmdtext[9]);
+        if (ammo < 0)
+            return SendClientMessage(playerid, 0xFF0000FF, "弹药必须是非负整数。");
+
+        NPC_SetAmmo(npcid, ammo);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 弹药设置为 %d", npcid, ammo);
+
         return 1;
     }
     return 0;
@@ -57,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 将弹药设置为 0 会使武器无法使用
 - 不同武器有不同的最大弹药容量
 - 这设置的是总弹药量，不仅仅是当前弹匣
-- 与 `NPC_SetAmmoInClip` 配合使用以进行精确控制
 
 ## 相关函数
 

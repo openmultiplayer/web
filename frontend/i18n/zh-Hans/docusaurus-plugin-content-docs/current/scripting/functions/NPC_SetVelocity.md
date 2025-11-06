@@ -24,6 +24,50 @@ tags: ["npc", "速度", "移动"]
 
 ## 示例
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/setvelocity ", true, 13))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new Float:x, Float:y, Float:z;
+        new idx = 13;
+
+        // 处理x
+        while (cmdtext[idx] == ' ') idx++;
+        new startIdx = idx;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        new xStr[32];
+        strmid(xStr, cmdtext, startIdx, idx);
+        x = floatstr(xStr);
+
+        // 处理y
+        while (cmdtext[idx] == ' ') idx++;
+        startIdx = idx;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        new yStr[32];
+        strmid(yStr, cmdtext, startIdx, idx);
+        y = floatstr(yStr);
+
+        // 处理z
+        while (cmdtext[idx] == ' ') idx++;
+        z = floatstr(cmdtext[idx]);
+
+        NPC_SetVelocity(npcid, x, y, z);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 速度设置为 %.2f, %.2f, %.2f", npcid, x, y, z);
+
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## 注意事项
 
 - 速度值决定了移动的速度和方向

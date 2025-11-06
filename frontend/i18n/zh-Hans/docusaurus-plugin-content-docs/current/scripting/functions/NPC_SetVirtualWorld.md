@@ -23,33 +23,24 @@ tags: ["npc", "虚拟世界", "维度"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Isolated");
-    NPC_Spawn(npcid);
-
-    // 将 NPC 放入虚拟世界 1
-    NPC_SetVirtualWorld(npcid, 1);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/moveworld", true))
+    if (!strcmp(cmdtext, "/setvirtualworld ", true, 16))
     {
-        new const playerWorld = GetPlayerVirtualWorld(playerid);
-        NPC_SetVirtualWorld(0, playerWorld);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        SendClientMessage(playerid, 0x00FF00FF, "已将 NPC 0 移动到你的世界（%d）", playerWorld);
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    if (!strcmp(cmdtext, "/isolatenpc", true))
-    {
-        // 将 NPC 0 移动到单独的世界
-        NPC_SetVirtualWorld(0, 100);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 已移动到世界 100");
+        new vw = strval(cmdtext[16]);
+        if (vw < 0)
+            return SendClientMessage(playerid, 0xFF0000FF, "虚拟世界必须为非负整数。");
+
+        NPC_SetVirtualWorld(npcid, vw);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 虚拟世界设置为 %d", npcid, vw);
+
         return 1;
     }
     return 0;

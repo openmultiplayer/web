@@ -29,35 +29,30 @@ tags: ["npc", "动画"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Dancer");
-    NPC_Spawn(npcid);
-
-    // 通过 ID 设置舞蹈动画
-    NPC_SetAnimation(npcid, 1189, 4.1, true, false, false, false, 0);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/wave", true))
+    if (!strcmp(cmdtext, "/setdance", true))
     {
-        // NPC 0 的挥手动画
-        NPC_SetAnimation(0, 1003, 4.1, false, false, false, false, 3000);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 正在挥手！");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/dance", true))
-    {
-        // NPC 0 的舞蹈动画
-        NPC_SetAnimation(0, 1189, 4.1, true, false, false, false, 0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 正在跳舞！");
+        NPC_SetAnimation(npcid, 405, 4.1, true, false, false, false, 0);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 已设置动画。", npcid);
+
+        SetTimerEx("ClearNPCAnimations", 25000, false, "ii", playerid, npcid);
+
         return 1;
     }
     return 0;
+}
+
+forward ClearNPCAnimations(playerid, npcid);
+public ClearNPCAnimations(playerid, npcid)
+{
+
+    NPC_ClearAnimations(npcid);
+    SendClientMessage(playerid, 0x00FF00FF, "NPC %d 动画已清除。", npcid);
 }
 ```
 
@@ -65,8 +60,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 动画 ID 对应 GTA San Andreas 动画索引
 - 使用 `NPC_ApplyAnimation` 通过库名和名称设置动画
-- Delta 值 4.1 是大多数动画的标准值
-- 设置时间为 0 表示无限动画
 
 ## 相关函数
 

@@ -23,34 +23,24 @@ tags: ["npc", "皮肤", "模型"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Cop");
-    NPC_Spawn(npcid);
-
-    // 设置警察皮肤
-    NPC_SetSkin(npcid, 280);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/changeskin", true))
+    if (!strcmp(cmdtext, "/setskin ", true, 9))
     {
-        // 将 NPC 0 更改为军人皮肤
-        NPC_SetSkin(0, 287);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 皮肤已更改为军人");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/copskin", true))
-    {
-        new copSkins[] = {280, 281, 282, 283, 284, 285};
-        new model = copSkins[random(sizeof(copSkins))];
-        NPC_SetSkin(0, model);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 现在是一名警察");
+        new skinid = strval(cmdtext[9]);
+        if (skinid < 0 || skinid > 311)
+            return SendClientMessage(playerid, 0xFF0000FF, "皮肤ID必须在0到311之间。");
+
+        NPC_SetSkin(npcid, skinid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 皮肤设置为 %d", npcid, skinid);
+
         return 1;
     }
     return 0;
@@ -59,10 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 皮肤 ID 范围从 0-311（标准 SA-MP 皮肤）
 - 无效的皮肤 ID 可能会导致视觉故障
-- 皮肤更改是瞬间的，没有动画
-- 在玩家身上使用 GetPlayerSkin 作为参考皮肤 ID
 
 ## 相关函数
 

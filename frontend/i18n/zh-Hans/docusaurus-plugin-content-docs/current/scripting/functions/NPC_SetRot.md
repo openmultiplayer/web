@@ -25,43 +25,24 @@ tags: ["npc", "旋转", "角度"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Rotator");
-    NPC_Spawn(npcid);
-
-    // 设置特定旋转
-    NPC_SetRot(npcid, 0.0, 0.0, 45.0); // 45度 Z 轴旋转
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/randomrot", true))
+    if (!strcmp(cmdtext, "/setrandomrot", true))
     {
-        // 为 NPC 0 设置随机旋转
-        new
-            Float:x = random(360);
-            Float:y = random(360);
-            Float:z = random(360);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        NPC_SetRot(0, x, y, z);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 旋转已随机化");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    if (!strcmp(cmdtext, "/uprightspecs", true))
-    {
-        new npcs[MAX_NPCS];
-        new const count = NPC_GetAll(npcs);
+        new Float:x = float(random(360));
+        new Float:y = float(random(360));
+        new Float:z = float(random(360));
 
-        for (new i = 0; i < count; i++)
-        {
-            NPC_SetRot(npcs[i], 0.0, 0.0, 0.0); // 重置为直立
-        }
+        NPC_SetRot(npcid, x, y, z);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 随机旋转", npcid);
 
-        SendClientMessage(playerid, 0x00FF00FF, "已重置所有 NPC 旋转");
         return 1;
     }
     return 0;
