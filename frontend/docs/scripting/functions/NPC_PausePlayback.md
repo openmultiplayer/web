@@ -25,16 +25,23 @@ Returns `true` if the operation was successful, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcopennode", true, 12))
+    if (!strcmp(cmdtext, "/pauseplayback", true, 14))
     {
-        new nodeid = strval(cmdtext[13]);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        if (nodeid < 0 || nodeid > 63)
-            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        new bool:success = NPC_OpenNode(nodeid);
+        new bool:pause = true;
+        if (strlen(cmdtext) > 15)
+        {
+            pause = strval(cmdtext[15]) ? true : false;
+        }
 
-        SendClientMessage(playerid, 0x00FF00FF, "Open node %d: %s", nodeid, success ? "Success" : "Failed");
+        NPC_PausePlayback(npcid, pause);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d playback %s.", npcid, pause ? "paused" : "resumed");
         return 1;
     }
     return 0;

@@ -24,7 +24,7 @@ Returns `true` if the NPC is spawned, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkshooting", true))
+    if (!strcmp(cmdtext, "/checkspawned", true))
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
@@ -33,9 +33,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        new bool:isShooting = NPC_IsShooting(npcid);
+        new bool:isSpawned = NPC_IsSpawned(npcid);
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is shooting: %s", npcid, isShooting ? "Yes" : "No");
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d is spawned: %s", npcid, isSpawned ? "Yes" : "No");
         return 1;
     }
     return 0;
