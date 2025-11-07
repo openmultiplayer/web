@@ -52,7 +52,7 @@ GetPlayerRaceCheckpoint(playerid, centreX, centreY, centreZ, nextX, nextY, nextZ
 - [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): 检测玩家是否处于竞速检查点
 - [IsPlayerRaceCheckpointActive](IsPlayerRaceCheckpointActive): 检测玩家是否有激活的竞速检查点
 
-## 相关回调函数
+## 相关回调
 
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): 玩家进入普通检查点时触发
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): 玩家离开普通检查点时触发

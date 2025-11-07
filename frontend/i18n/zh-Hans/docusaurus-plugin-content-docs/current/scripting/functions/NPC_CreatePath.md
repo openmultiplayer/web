@@ -18,8 +18,6 @@ tags: ["npc", "路径"]
 ## 示例
 
 ```c
-new g_PatrolPath = -1;
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/createpatrol", true))

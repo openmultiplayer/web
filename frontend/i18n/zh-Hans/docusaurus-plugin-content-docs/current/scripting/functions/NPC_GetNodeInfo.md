@@ -25,44 +25,22 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    // 首先打开一个节点
-    if (NPC_OpenNode(1))
-    {
-        new vehnodes, pednodes, navinode;
-        if (NPC_GetNodeInfo(1, vehnodes, pednodes, navinode))
-        {
-            printf("节点1信息:");
-            printf("- 车辆节点: %d", vehnodes);
-            printf("- 行人节点: %d", pednodes);
-            printf("- 导航节点: %d", navinode);
-        }
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/nodeinfo", true))
+    if (!strcmp(cmdtext, "/checknodeinfo ", true, 15))
     {
-        for (new nodeid = 0; nodeid < 10; nodeid++)
-        {
-            if (NPC_IsNodeOpen(nodeid))
-            {
-                new vehnodes, pednodes, navinode;
-                if (NPC_GetNodeInfo(nodeid, vehnodes, pednodes, navinode))
-                {
-                    new msg[128];
-                    format(msg, sizeof(msg),
-                        "节点%d: 车辆=%d, 行人=%d, 导航=%d",
-                        nodeid, vehnodes, pednodes, navinode);
-                    SendClientMessage(playerid, 0xFFFFFFFF, msg);
-                }
-            }
-        }
+        new nodeid = strval(cmdtext[15]);
 
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的节点 ID。必须在 0 到 63 之间。");
+
+        new vehnodes, pednodes, navinode;
+        new bool:success = NPC_GetNodeInfo(nodeid, vehnodes, pednodes, navinode);
+
+        if (success)
+            SendClientMessage(playerid, 0x00FF00FF, "节点 %d 信息 - 车辆节点：%d，行人节点：%d，导航节点：%d", nodeid, vehnodes, pednodes, navinode);
+        else
+            SendClientMessage(playerid, 0xFF0000FF, "获取节点 %d 信息失败", nodeid);
         return 1;
     }
     return 0;
@@ -74,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 在获取信息前必须使用 `NPC_OpenNode` 打开节点
 - 车辆节点用于车辆导航路径
 - 行人节点用于步行路径
-- 导航节点提供路由信息
 - 所有计数参数都通过引用传递
 
 ## 相关函数

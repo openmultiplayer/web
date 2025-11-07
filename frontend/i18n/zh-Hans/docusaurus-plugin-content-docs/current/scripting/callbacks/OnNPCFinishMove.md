@@ -20,14 +20,20 @@ tags: ["npc", "移动"]
 ```c
 public OnNPCFinishMove(npcid)
 {
-    printf("NPC %d 已到达目的地", npcid);
+    // 查找所有追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    // 移动到下一个目的地
-    new Float:x, Float:y, Float:z;
-    NPC_GetPos(npcid, x, y, z);
-    NPC_Move(npcid, x + 10.0, y + 10.0, z, NPC_MOVE_TYPE_WALK);
-
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            new Float:x, Float:y, Float:z;
+            NPC_GetPos(npcid, x, y, z);
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 完成移动到位置 (%.2f, %.2f, %.2f)", npcid, x, y, z);
+        }
+    }
+    return 1;
 }
 ```
 

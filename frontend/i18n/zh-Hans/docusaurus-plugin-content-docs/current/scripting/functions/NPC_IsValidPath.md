@@ -24,7 +24,7 @@ tags: ["npc", "路径", "验证"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkvalidpath", true, 15))
+    if (!strcmp(cmdtext, "/checkvalidpath ", true, 16))
     {
         new pathid = strval(cmdtext[16]);
 

@@ -26,21 +26,20 @@ tags: ["npc", "节点", "导航"]
 ```c
 public OnNPCChangeNode(npcid, newnodeid, oldnodeid)
 {
-    printf("NPC %d 正在从节点 %d 切换到节点 %d", npcid, oldnodeid, newnodeid);
+    printf("[NPC] NPC %d 正在从节点 %d 切换到节点 %d", npcid, oldnodeid, newnodeid);
 
-    // 检查新节点是否打开
-    if (!NPC_IsNodeOpen(newnodeid))
+    // 通知跟踪此NPC的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        return false; // 拒绝切换到已关闭的节点
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    // 防止 NPC 前往节点 5
-    if (newnodeid == 5)
-    {
-        return false; // 阻止访问节点 5
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 正在从节点 %d 切换到节点 %d", npcid, oldnodeid, newnodeid);
+        }
     }
-
-    return true; // 允许切换
+    return 1;
 }
 ```
 

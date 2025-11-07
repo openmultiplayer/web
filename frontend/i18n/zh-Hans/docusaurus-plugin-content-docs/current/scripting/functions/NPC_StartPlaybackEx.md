@@ -30,36 +30,28 @@ tags: ["npc", "回放", "录制"]
 ## 示例
 
 ```c
-new g_PatrolRecord = INVALID_RECORD_ID;
-
-public OnGameModeInit()
-{
-    // 预加载录制
-    g_PatrolRecord = NPC_LoadRecord("recordings/patrol");
-
-    if (g_PatrolRecord != INVALID_RECORD_ID)
-    {
-        printf("巡逻录制已加载，ID：%d", g_PatrolRecord);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/startpatrol", true))
+    if (!strcmp(cmdtext, "/startplaybackex ", true, 17))
     {
-        // 让 NPC 0 回放预加载的录制
-        NPC_StartPlaybackEx(0, g_PatrolRecord, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 开始巡逻回放");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/startpatrolrotated", true))
-    {
-        // 带旋转偏移开始回放
-        NPC_StartPlaybackEx(0, g_PatrolRecord, true, 0.0, 0.0, 0.0, 0.0, 0.0, 90.0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 开始带旋转的巡逻");
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new recordId = strval(cmdtext[17]);
+
+        new Float:x, Float:y, Float:z;
+        NPC_GetPos(npcid, x, y, z);
+
+        new bool:success = NPC_StartPlaybackEx(npcid, recordId, true, x, y, z, 0.0, 0.0, 0.0);
+
+        if (success)
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 使用录制 ID %d 开始回放", npcid, recordId);
+        else
+            SendClientMessage(playerid, 0xFF0000FF, "NPC %d 使用录制 ID %d 开始回放失败", npcid, recordId);
         return 1;
     }
     return 0;
@@ -69,9 +61,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 录制必须使用 `NPC_LoadRecord` 预加载
-- 对于重复使用，比 `NPC_StartPlayback` 更高效
 - 自动卸载可在回放完成后节省内存
-- 旋转偏移允许在回放期间调整 NPC 的朝向
 
 ## 相关函数
 

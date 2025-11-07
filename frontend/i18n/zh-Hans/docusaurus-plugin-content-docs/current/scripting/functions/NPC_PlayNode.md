@@ -29,7 +29,7 @@ tags: ["npc", "节点", "导航"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcplaynode", true, 12))
+    if (!strcmp(cmdtext, "/npcplaynode ", true, 13))
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)

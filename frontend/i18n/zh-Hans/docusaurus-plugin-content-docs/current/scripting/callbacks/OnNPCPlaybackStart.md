@@ -21,13 +21,20 @@ tags: ["npc", "回放", "录制"]
 ```c
 public OnNPCPlaybackStart(npcid, recordid)
 {
-    printf("NPC %d 开始回放录制文件 %d", npcid, recordid);
+    printf("[NPC] NPC %d 开始回放（录制：%d）", npcid, recordid);
 
-    // 在回放期间设置属性
-    NPC_SetHealth(npcid, 100.0);
-    NPC_SetArmour(npcid, 50.0);
+    // 通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 开始回放（录制 ID：%d）", npcid, recordid);
+        }
+    }
+    return 1;
 }
 ```
 

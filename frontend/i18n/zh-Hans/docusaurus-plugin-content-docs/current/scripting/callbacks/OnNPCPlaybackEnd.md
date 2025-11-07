@@ -21,12 +21,20 @@ tags: ["npc", "回放", "录制"]
 ```c
 public OnNPCPlaybackEnd(npcid, recordid)
 {
-    printf("NPC %d 完成了录制文件 %d 的回放", npcid, recordid);
+    printf("[NPC] NPC %d 完成回放（录制：%d）", npcid, recordid);
 
-    // 开始另一个录制
-    NPC_StartPlayback(npcid, "another_recording", true);
+    // 通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 完成回放（录制 ID：%d）", npcid, recordid);
+        }
+    }
+    return 1;
 }
 ```
 

@@ -22,14 +22,12 @@ tags: ["npc"]
 ## 示例
 
 ```c
-new g_NPCCount = 0;
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/spawnnpc", true))
+    if (!strcmp(cmdtext, "/createnpc", true))
     {
         new name[24];
-        format(name, sizeof(name), "Bot_%d", g_NPCCount++);
+        format(name, sizeof name, "Bot_%d", g_NPCCount++);
 
         new npcid = NPC_Create(name);
         if (NPC_IsValid(npcid))
@@ -39,8 +37,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
             NPC_Spawn(npcid);
             NPC_SetPos(npcid, x + 3.0, y, z);
+            NPC_SetWeapon(npcid, WEAPON_M4);
+            NPC_SetAmmo(npcid, 500);
 
-            SendClientMessage(playerid, 0x00FF00FF, "NPC %s 已在你附近生成！", name);
+            PlayerNPC[playerid] = npcid;
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %s (ID %d) 已在你附近生成！", name, npcid);
         }
         else
         {
@@ -57,8 +58,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::warning
 
 - NPC 在生成前必须通过 [NPC_Create](NPC_Create) 创建。
-- 生成使 NPC 在游戏世界中可见并活跃。
-- NPC 在通过 [NPC_SetPos](NPC_SetPos) 移动前会生成在默认位置。
 
 :::
 

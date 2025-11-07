@@ -19,14 +19,20 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnNPCFinishNode(npcid, nodeid)
+public OnNPCFinishNodePoint(npcid, nodeid, pointid)
 {
-    printf("NPC %d 完成了节点 %d 的导航", npcid, nodeid);
+    // 通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    // 开始下一个节点的导航
-    NPC_PlayNode(npcid, nodeid + 1, NPC_MOVE_TYPE_WALK, 1.0, 2.0, true);
-
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 到达节点 %d 的点 %d", npcid, nodeid, pointid);
+        }
+    }
+    return 1;
 }
 ```
 

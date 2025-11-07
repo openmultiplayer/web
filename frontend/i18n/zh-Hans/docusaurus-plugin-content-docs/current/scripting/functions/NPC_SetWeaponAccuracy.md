@@ -24,29 +24,22 @@ tags: ["npc", "武器", "精准度"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Sniper");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_SNIPER);
-
-    // 设置狙击步枪精准度为 95%
-    NPC_SetWeaponAccuracy(npcid, WEAPON_SNIPER, 0.95);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/setaccuracy", true))
+    if (!strcmp(cmdtext, "/setweaponaccuracy ", true, 19))
     {
-        new npcid = NPC_Create("Marksman");
-        NPC_Spawn(npcid);
-        NPC_SetWeapon(npcid, WEAPON_DEAGLE);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        // 设置沙漠之鹰精准度为 80%
-        NPC_SetWeaponAccuracy(npcid, WEAPON_DEAGLE, 0.8);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC 武器精准度已设置");
+        new weapon = NPC_GetWeapon(npcid);
+        new Float:accuracy = floatstr(cmdtext[19]);
+
+        NPC_SetWeaponAccuracy(npcid, WEAPON:weapon, accuracy);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器 %d 精准度设置为 %.2f", npcid, weapon, accuracy);
         return 1;
     }
     return 0;
@@ -57,7 +50,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 精准度值范围从 0.0（从不命中）到 1.0（总是命中）
 - 默认精准度因武器类型而异
-- 更高的精准度使 NPC 在战斗中更危险
 - 精准度影响子弹散布和命中概率
 
 ## 相关函数

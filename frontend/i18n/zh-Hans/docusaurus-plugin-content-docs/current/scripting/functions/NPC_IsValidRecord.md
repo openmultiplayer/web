@@ -24,7 +24,7 @@ tags: ["npc", "录制", "验证"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkvalidrecord", true, 17))
+    if (!strcmp(cmdtext, "/checkvalidrecord ", true, 18))
     {
         new recordid = strval(cmdtext[18]);
 

@@ -33,32 +33,24 @@ tags: ["npc", "武器", "射击", "战斗"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Sniper");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_SNIPER);
-
-    // 向位置 (100.0, 100.0, 10.0) 射击
-    NPC_Shoot(npcid, WEAPON_SNIPER, INVALID_PLAYER_ID, BULLET_HIT_TYPE_NONE,
-             100.0, 100.0, 10.0, 0.0, 0.0, 0.0, false, NPC_ENTITY_CHECK_ALL);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/attack", true))
+    if (!strcmp(cmdtext, "/npcshoot", true))
     {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
 
-        new npcid = NPC_Create("Attacker");
-        NPC_Spawn(npcid);
-        NPC_SetWeapon(npcid, WEAPON_DEAGLE);
+        new weapon = NPC_GetWeapon(npcid);
+        NPC_Shoot(npcid, WEAPON:weapon, playerid, 1, x, y, z, 0.0, 0.0, 0.0, true, NPC_ENTITY_CHECK_ALL);
 
-        // 向玩家射击
-        NPC_Shoot(npcid, WEAPON_DEAGLE, playerid, BULLET_HIT_TYPE_PLAYER,
-                 x, y, z, 0.0, 0.0, 0.0, true, NPC_ENTITY_CHECK_ALL);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 向你开了一枪。", npcid);
         return 1;
     }
     return 0;
@@ -68,7 +60,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - NPC 在射击前必须使用 `NPC_SetWeapon` 设置武器
-- 射击效果（枪口闪光、声音）会自动处理
 - 使用 `isHit = false` 进行警告射击或压制火力
 - `checkInBetweenFlags` 参数决定哪些实体会阻挡射击
 

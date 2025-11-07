@@ -60,6 +60,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_GetPos](NPC_GetPos): 获取 NPC 位置
 - [NPC_Move](NPC_Move): 使 NPC 移动到指定位置
 
-## 相关回调函数
+## 相关回调
 
 - [OnNPCFinishMove](../callbacks/OnNPCFinishMove): 当 NPC 完成移动时被调用

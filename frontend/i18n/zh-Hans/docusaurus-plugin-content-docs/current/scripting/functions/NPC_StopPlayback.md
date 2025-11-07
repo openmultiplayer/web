@@ -22,34 +22,19 @@ tags: ["npc", "回放", "录制"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("PlaybackBot");
-    NPC_Spawn(npcid);
-
-    // 开始回放录制
-    NPC_StartPlayback(npcid, "patrol", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-
-    // 15 秒后停止回放
-    SetTimerEx("StopNPCPlayback", 15000, false, "i", npcid);
-
-    return 1;
-}
-
-forward StopNPCPlayback(npcid);
-public StopNPCPlayback(npcid)
-{
-    NPC_StopPlayback(npcid);
-    printf("已停止 NPC %d 的回放", npcid);
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/stopplayback", true))
     {
-        // 停止 NPC 0 的回放
-        NPC_StopPlayback(0);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 回放已停止");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:success = NPC_StopPlayback(npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 回放停止：%s", npcid, success ? "成功" : "失败");
         return 1;
     }
     return 0;

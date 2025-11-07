@@ -66,6 +66,6 @@ public OnPlayerRequestDownload(playerid, type, crc)
 - [AddSimpleModel](AddSimpleModel): 添加一个新的自定义简单物体模型供下载
 - [AddSimpleModelTimed](AddSimpleModelTimed): 添加一个带时限的自定义简单物体模型供下载
 
-## 相关回调函数
+## 相关回调
 
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): 当玩家完成自定义模型下载时调用

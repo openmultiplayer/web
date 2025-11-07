@@ -22,30 +22,22 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    // 打开节点供使用
-    if (NPC_OpenNode(1))
+    if (!strcmp(cmdtext, "/checknodetype ", true, 15))
     {
-        printf("节点 1 打开成功");
+        new nodeid = strval(cmdtext[15]);
 
-        // 使用该节点
-        new npcid = NPC_Create("NodeBot");
-        NPC_Spawn(npcid);
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的节点 ID。必须在 0 到 63 之间。");
 
-        // 稍后关闭节点
-        SetTimer("CloseTheNode", 30000, false);
+        new nodetype = NPC_GetNodeType(nodeid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "节点 %d 类型：%d", nodeid, nodetype);
+        return 1;
     }
+    return 0;
 
-    return 1;
-}
-
-forward CloseTheNode();
-public CloseTheNode()
-{
-    NPC_CloseNode(1);
-    printf("节点 1 关闭成功");
 }
 ```
 
@@ -54,7 +46,6 @@ public CloseTheNode()
 - 关闭节点会阻止新的 NPC 使用它
 - 当前正在使用该节点的 NPC 将继续直到完成
 - 关闭的节点在重新使用 `NPC_OpenNode` 打开之前无法播放
-- 使用此功能动态管理节点可用性
 
 ## 相关函数
 

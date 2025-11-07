@@ -9,14 +9,18 @@ tags: ["npc", "常量"]
 
 ## 限制
 
-| 值  | 常量          | 说明         |
-| --- | ------------- | ------------ |
-| 64  | NPC_MAX_NODES | 最大节点数量 |
+| 值   | 常量          | 说明         |
+| ---- | ------------- | ------------ |
+| 1000 | MAX_NPCS      | NPC 最大数量 |
+| 64   | NPC_MAX_NODES | 最大节点数量 |
 
 ## 无效常量
 
 | 值  | 常量              | 说明          |
 | --- | ----------------- | ------------- |
+| -1  | INVALID_NPC_ID    | 无效的 NPC ID |
+| -1  | INVALID_PATH_ID   | 无效的路径 ID |
+| -1  | INVALID_NODE_ID   | 无效的节点 ID |
 | -1  | INVALID_RECORD_ID | 无效的录制 ID |
 
 ## 移动类型
@@ -139,9 +143,41 @@ NPC_Shoot(npcid, playerid, BULLET_HIT_TYPE_PLAYER, WEAPON_M4,
          x, y, z, 0.0, 0.0, 0.0, true);
 ```
 
-### 节点管理
+### 无效常量
 
 ```c
+// 检查 NPC ID 是否有效
+new npcid = NPC_Create("Bot");
+if (npcid != INVALID_NPC_ID)
+{
+    // NPC 创建成功
+    NPC_Spawn(npcid);
+}
+
+// 检查路径 ID 是否有效
+new pathid = NPC_CreatePath();
+if (pathid != INVALID_PATH_ID)
+{
+    // 路径创建成功
+    NPC_AddPointToPath(pathid, 0.0, 0.0, 3.0, 0.2);
+}
+
+// 在 NPC_Kill 中检查无效玩家
+NPC_Kill(npcid, INVALID_PLAYER_ID, REASON_SUICIDE);
+```
+
+### 限制
+
+```c
+// 遍历所有可能的 NPC
+for (new i = 0; i < MAX_NPCS; i++)
+{
+    if (NPC_IsValid(i))
+    {
+        // 处理有效的 NPC
+    }
+}
+
 // 使用 NPC_MAX_NODES 的示例
 for (new i = 0; i < NPC_MAX_NODES; i++)
 {

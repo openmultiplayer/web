@@ -24,7 +24,7 @@ tags: ["npc", "节点", "导航"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcopennode", true, 12))
+    if (!strcmp(cmdtext, "/npcopennode ", true, 13))
     {
         new nodeid = strval(cmdtext[13]);
 

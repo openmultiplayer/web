@@ -18,14 +18,22 @@ tags: ["npc"]
 ```c
 public OnNPCSpawn(npcid)
 {
-    printf("NPC %d 已生成", npcid);
+    printf("[NPC] NPC %d 已生成", npcid);
 
-    // 设置初始属性
-    NPC_SetHealth(npcid, 100.0);
-    NPC_SetArmour(npcid, 0.0);
-    NPC_SetWeapon(npcid, WEAPON_COLT45);
+    // 通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            new Float:x, Float:y, Float:z;
+            NPC_GetPos(npcid, x, y, z);
+            SendClientMessage(playerid, 0x00FF00FF, "你追踪的 NPC %d 已在 (%.2f, %.2f, %.2f) 生成", npcid, x, y, z);
+        }
+    }
+    return 1;
 }
 ```
 

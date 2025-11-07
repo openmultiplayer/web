@@ -28,23 +28,29 @@ tags: ["npc", "武器", "射击"]
 ## 示例
 
 ```c
-public OnNPCWeaponShot(npcid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
+public OnNPCWeaponShot(npcid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
-    printf("NPC %d 使用武器 %d 向坐标 %.2f, %.2f, %.2f 射击", npcid, weaponid, fX, fY, fZ);
-
-    switch(hittype)
+    // 仅通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        case BULLET_HIT_TYPE_PLAYER:
+        if (!IsPlayerConnected(playerid))
+            continue;
+
+        if (PlayerNPC[playerid] == npcid)
         {
-            printf("击中玩家 %d", hitid);
-        }
-        case BULLET_HIT_TYPE_VEHICLE:
-        {
-            printf("击中车辆 %d", hitid);
+            static hitTypeNames[5][32] = {
+                "无",
+                "玩家",
+                "车辆",
+                "物体",
+                "玩家物体"
+            };
+
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 使用武器 %d 射击 %s %d（%.2f, %.2f, %.2f）",
+                npcid, _:weaponid, hitTypeNames[_:hittype], hitid, fX, fY, fZ);
         }
     }
-
-    return true;
+    return 1;
 }
 ```
 

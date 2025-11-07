@@ -66,6 +66,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_SetWeaponAccuracy](NPC_SetWeaponAccuracy): 设置武器准确度
 - [NPC_GetWeapon](NPC_GetWeapon): 获取 NPC 武器
 
-## 相关回调函数
+## 相关回调
 
 - [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): 当 NPC 开火时被调用

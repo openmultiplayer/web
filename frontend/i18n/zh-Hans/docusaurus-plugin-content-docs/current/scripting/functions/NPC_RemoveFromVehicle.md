@@ -24,19 +24,18 @@ tags: ["npc", "车辆"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/kicknpc", true))
+    if (!strcmp(cmdtext, "/npcremovefromvehicle", true))
     {
-        if (NPC_GetVehicleID(0) != INVALID_VEHICLE_ID) // NPC 0 在车辆中
-        {
-            if (NPC_RemoveFromVehicle(0))
-            {
-                SendClientMessage(playerid, 0xFF0000FF, "NPC 0 已从车辆中移出");
-            }
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 不在车辆中");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:success = NPC_RemoveFromVehicle(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 从车辆中移出：%s", npcid, success ? "成功" : "失败");
         return 1;
     }
     return 0;

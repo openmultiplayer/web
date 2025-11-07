@@ -24,25 +24,36 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("NodeBot");
-    NPC_Spawn(npcid);
+    if (!strcmp(cmdtext, "/npcchangenode ", true, 15))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    // 开始播放节点 1
-    NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    // 一段时间后，使用链接 0 更改为节点 2
-    SetTimerEx("ChangeNPCNode", 10000, false, "i", npcid);
+        new nodeid = strval(cmdtext[15]);
 
-    return 1;
-}
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的节点 ID。必须在 0 到 63 之间。");
 
-forward ChangeNPCNode(npcid);
-public ChangeNPCNode(npcid)
-{
-    // 从当前节点更改为节点 2
-    NPC_ChangeNode(npcid, 2, 0);
+        new idx = 15;
+        while (cmdtext[idx] != ' && cmdtext[idx] != '\0') idx++;
+        while (cmdtext[idx] == ' ') idx++;
+
+        if (cmdtext[idx] == '\0')
+            return SendClientMessage(playerid, 0xFF0000FF, "用法：/npcchangenode [nodeid] [linkid]");
+
+        new linkid = strval(cmdtext[idx]);
+
+        NPC_ChangeNode(npcid, nodeid, linkid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 通过链接 %d 更改为节点 %d", npcid, nodeid, linkid);
+        return 1;
+    }
+    return 0;
 }
 ```
 

@@ -23,41 +23,22 @@ tags: ["npc", "节点"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("NodeNavigator");
-    NPC_Spawn(npcid);
-
-    // 打开节点并开始播放
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // 10 秒后更新到特定点
-        SetTimerEx("UpdateToPoint", 10000, false, "ii", npcid, 5);
-    }
-
-    return 1;
-}
-
-forward UpdateToPoint(npcid, pointid);
-public UpdateToPoint(npcid, pointid)
-{
-    if (NPC_UpdateNodePoint(npcid, pointid))
-    {
-        printf("NPC %d 已更新到节点点 %d", npcid, pointid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/skiptopoint", true))
+    if (!strcmp(cmdtext, "/npcupdatenodepoint ", true, 20))
     {
-        // 将 NPC 0 跳转到当前节点的点 3
-        if (NPC_UpdateNodePoint(0, 3))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 已跳转到点 3");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new pointid = strval(cmdtext[20]);
+
+        new bool:success = NPC_UpdateNodePoint(npcid, pointid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 更新节点点 %d：%s", npcid, pointid, success ? "成功" : "失败");
         return 1;
     }
     return 0;

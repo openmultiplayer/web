@@ -28,7 +28,7 @@ tags: ["npc", "路径"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkpathpointinrange", true, 22))
+    if (!strcmp(cmdtext, "/checkpathpointinrange ", true, 23))
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)

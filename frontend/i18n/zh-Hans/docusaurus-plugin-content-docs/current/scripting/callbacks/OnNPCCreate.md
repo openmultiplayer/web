@@ -20,13 +20,17 @@ tags: ["npc"]
 ```c
 public OnNPCCreate(npcid)
 {
-    printf("NPC %d 已被创建", npcid);
+    printf("[NPC] NPC %d 已创建", npcid);
 
-    // 设置初始属性
-    NPC_SetSkin(npcid, 23);
-    NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
+    // 通知所有已连接的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 已创建", npcid);
+    }
+    return 1;
 }
 ```
 

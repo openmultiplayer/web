@@ -23,6 +23,37 @@ tags: ["npc", "武器", "技能"]
 
 ## 示例
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/setweaponskill ", true, 16))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new level = strval(cmdtext[16]);
+
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_PISTOL, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_PISTOL_SILENCED, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_DESERT_EAGLE, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_SHOTGUN, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_MICRO_UZI, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_MP5, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_AK47, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_M4, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_SNIPERRIFLE, level);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 所有武器技能设置为 %d", npcid, level);
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## 注意事项
 
 - 武器技能影响准确度和射击行为
@@ -36,6 +67,6 @@ tags: ["npc", "武器", "技能"]
 - [NPC_GetWeaponAccuracy](NPC_GetWeaponAccuracy): 获取武器准确度
 - [NPC_SetWeapon](NPC_SetWeapon): 设置 NPC 武器
 
-## 相关回调函数
+## 相关回调
 
 - [OnNPCWeaponShot](../callbacks/OnNPCWeaponShot): 当 NPC 开火时被调用

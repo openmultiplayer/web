@@ -24,36 +24,22 @@ tags: ["npc", "武器", "射击", "时间"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("RapidFire");
-    NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, WEAPON_M4, 500); // M4 带 500 发弹药
-
-    // 设置快速射击（每次射击间隔 100 毫秒）
-    NPC_SetWeaponShootTime(npcid, 100);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/rapidfire", true))
+    if (!strcmp(cmdtext, "/setweaponshoottime ", true, 20))
     {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-        // 为 NPC 0 设置快速射击
-        NPC_SetWeaponShootTime(0, 50);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 已启用快速射击");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-    if (!strcmp(cmdtext, "/slowfire", true))
-    {
-        // 为 NPC 0 设置慢速射击
-        NPC_SetWeaponShootTime(0, 2000);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 射击速度很慢");
+        new weapon = NPC_GetWeapon(npcid);
+        new shoottime = strval(cmdtext[20]);
+
+        NPC_SetWeaponShootTime(npcid, WEAPON:weapon, shoottime);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器 %d 射击时间设置为 %d 毫秒", npcid, weapon, shoottime);
         return 1;
     }
     return 0;
@@ -63,9 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 射击时间以每次射击之间的毫秒为单位
-- 较低的值 = 更快的射击频率
 - 使用 NPC_GetWeaponShootTime 检查当前射击时间
-- 影响武器的射击频率和战斗效果
 
 ## 相关函数
 

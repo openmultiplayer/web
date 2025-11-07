@@ -21,12 +21,18 @@ tags: ["npc", "移动", "路径"]
 ```c
 public OnNPCFinishMovePath(npcid, pathid)
 {
-    printf("NPC %d 完成了沿路径 %d 的移动", npcid, pathid);
+    // 查找所有追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    // 开始沿另一条路径移动
-    NPC_MoveByPath(npcid, pathid + 1, NPC_MOVE_TYPE_WALK);
-
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 完成沿路径 %d 移动", npcid, pathid);
+        }
+    }
+    return 1;
 }
 ```
 

@@ -18,66 +18,12 @@ tags: ["npc", "录制", "回放"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    printf("初始录制数量: %d", NPC_GetRecordCount()); // 0
-
-    // 加载一些录制
-    new record1 = NPC_LoadRecord("recordings/patrol");
-    new record2 = NPC_LoadRecord("recordings/driver");
-    new record3 = NPC_LoadRecord("recordings/guard");
-
-    printf("加载后的录制数量: %d", NPC_GetRecordCount()); // 3
-
-    // 卸载一个录制
-    NPC_UnloadRecord(record2);
-    printf("卸载一个后的录制数量: %d", NPC_GetRecordCount()); // 2
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/recordstats", true))
+    if (!strcmp(cmdtext, "/checkrecordcount", true))
     {
-        new recordCount = NPC_GetRecordCount();
-
-        new msg[128];
-        format(msg, sizeof(msg), "服务器已加载%d个NPC录制", recordCount);
-        SendClientMessage(playerid, 0x00FF00FF, msg);
-
-        return 1;
-    }
-
-    if (!strcmp(cmdtext, "/loadtestrecords", true))
-    {
-        new oldCount = NPC_GetRecordCount();
-
-        // 尝试加载一些测试录制
-        new loaded = 0;
-
-        new testFiles[][] = {
-            "recordings/test1",
-            "recordings/test2",
-            "recordings/test3"
-        };
-
-        for (new i = 0; i < sizeof(testFiles); i++)
-        {
-            new recordId = NPC_LoadRecord(testFiles[i]);
-            if (NPC_IsValidRecord(recordId))
-            {
-                loaded++;
-            }
-        }
-
-        new newCount = NPC_GetRecordCount();
-
-        new msg[128];
-        format(msg, sizeof(msg), "已加载%d个录制。总计: %d -> %d",
-            loaded, oldCount, newCount);
-        SendClientMessage(playerid, 0x00FF00FF, msg);
-
+        new count = NPC_GetRecordCount();
+        SendClientMessage(playerid, 0x00FF00FF, "已加载的录制总数：%d", count);
         return 1;
     }
     return 0;
@@ -88,7 +34,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 返回内存中有效录制的总数
 - 只有成功加载的录制才会被计算
-- 使用此函数监控服务器内存使用情况
 - 录制会一直存在直到被显式卸载或服务器重启
 
 ## 相关函数

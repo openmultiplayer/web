@@ -53,6 +53,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_IsValid](NPC_IsValid): 检查 NPC 是否有效
 - [NPC_IsSpawned](NPC_IsSpawned): 检查 NPC 是否已生成
 
-## 相关回调函数
+## 相关回调
 
 - [OnNPCSpawn](../callbacks/OnNPCSpawn): 当 NPC 生成时被调用

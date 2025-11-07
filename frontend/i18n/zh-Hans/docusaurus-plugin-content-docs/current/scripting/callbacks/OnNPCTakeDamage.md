@@ -26,17 +26,29 @@ tags: ["npc", "伤害"]
 ## 示例
 
 ```c
-public OnNPCTakeDamage(npcid, issuerid, Float:amount, weaponid, bodypart)
+public OnNPCTakeDamage(npcid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    printf("NPC %d 受到了来自 %d 的 %.2f 点伤害", npcid, amount, issuerid);
-
-    // 被攻击时使 NPC 变得具有攻击性
-    if (issuerid != INVALID_PLAYER_ID && !IsPlayerNPC(issuerid))
+    // 仅通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        NPC_AimAtPlayer(npcid, issuerid, true, 100, true);
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            if (issuerid == INVALID_PLAYER_ID)
+            {
+                SendClientMessage(playerid, 0xFF8800FF, "NPC %d 受到 %.1f 点伤害（武器：%d，身体部位：%d）",
+                    npcid, amount, _:weaponid, bodypart);
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xFF8800FF, "NPC %d 受到玩家 %d 造成的 %.1f 点伤害（武器：%d，身体部位：%d）",
+                    npcid, amount, issuerid, _:weaponid, bodypart);
+            }
+        }
+    }
+    return 1;
 }
 ```
 

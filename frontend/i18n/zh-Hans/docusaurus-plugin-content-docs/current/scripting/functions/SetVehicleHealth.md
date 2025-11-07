@@ -56,7 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [RepairVehicle](RepairVehicle): 完全修复车辆
 - [SetPlayerHealth](SetPlayerHealth): 设置玩家生命值
 
-## 相关回调函数
+## 相关回调
 
 - [OnVehicleDeath](../callbacks/OnVehicleDeath): 车辆被摧毁时触发
 

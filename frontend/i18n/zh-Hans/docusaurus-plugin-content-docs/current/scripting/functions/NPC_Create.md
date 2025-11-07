@@ -22,9 +22,6 @@ tags: ["npc"]
 ## 示例
 
 ```c
-new g_NPCCount = 0,
-    PlayerNPC[MAX_PLAYERS] = {INVALID_NPC_ID, ...};
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/createnpc", true))

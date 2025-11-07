@@ -33,9 +33,18 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        new weaponstate = NPC_GetWeaponState(npcid);
+        new WEAPONSTATE:state = WEAPONSTATE:NPC_GetWeaponState(npcid);
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器状态: %d", npcid, weaponstate);
+        static weaponStates[5][64] =
+        {
+            "未知",
+            "没有剩余弹药",
+            "剩下一发子弹",
+            "剩余多发子弹",
+            "正在换弹"
+        };
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器状态：%s (%d)", npcid, weaponStates[state], _:state);
         return 1;
     }
     return 0;

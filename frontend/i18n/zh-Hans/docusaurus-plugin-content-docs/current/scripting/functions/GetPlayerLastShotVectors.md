@@ -63,6 +63,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetPlayerWeapon](GetPlayerWeapon): 获取玩家当前手持的武器
 - [VectorSize](VectorSize): 计算向量的模长
 
-## 相关回调函数
+## 相关回调
 
 - [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot): 当玩家开火时触发

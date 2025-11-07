@@ -24,33 +24,22 @@ tags: ["npc", "武器", "换弹", "时间"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("QuickReloader");
-    NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, WEAPON_M4, 200); // M4 带 200 发弹药
-
-    // 设置快速重新装填（500毫秒）
-    NPC_SetWeaponReloadTime(npcid, 500);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/fastreload", true))
+    if (!strcmp(cmdtext, "/setweaponreloadtime ", true, 21))
     {
-        // 为 NPC 0 设置快速重新装填
-        NPC_SetWeaponReloadTime(0, 100);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 拥有闪电般的重新装填速度");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
 
-    if (!strcmp(cmdtext, "/slowreload", true))
-    {
-        // 为 NPC 0 设置慢速重新装填
-        NPC_SetWeaponReloadTime(0, 5000);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 重新装填速度很慢");
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new weapon = NPC_GetWeapon(npcid);
+        new reloadtime = strval(cmdtext[21]);
+
+        NPC_SetWeaponReloadTime(npcid, WEAPON:weapon, reloadtime);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 武器 %d 换弹时间设置为 %d 毫秒", npcid, weapon, reloadtime);
         return 1;
     }
     return 0;
@@ -60,9 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 重新装填时间以毫秒为单位
-- 较低的值 = 更快的重新装填
 - 使用 NPC_GetWeaponReloadTime 检查当前重新装填时间
-- 影响战斗效果和射击频率
 
 ## 相关函数
 

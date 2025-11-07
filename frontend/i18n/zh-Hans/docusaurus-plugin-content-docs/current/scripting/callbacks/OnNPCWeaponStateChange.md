@@ -20,17 +20,29 @@ tags: ["npc", "武器"]
 ## 示例
 
 ```c
-public OnNPCWeaponStateChange(npcid, newstate, oldstate)
+public OnNPCWeaponStateChange(npcid, newState, oldState)
 {
-    printf("NPC %d 武器状态: %d -> %d", npcid, oldstate, newstate);
+    static weaponStates[5][64] = {
+        "未知",
+        "弹药耗尽",
+        "仅剩一发子弹",
+        "剩余多发子弹",
+        "重新装弹中"
+    };
 
-    if (newstate == WEAPONSTATE_NO_BULLETS)
+    // 仅通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        // 给予更多弹药
-        NPC_SetAmmo(npcid, 100);
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 武器状态：%s -> %s",
+                npcid, weaponStates[oldState], weaponStates[newState]);
+        }
+    }
+    return 1;
 }
 ```
 

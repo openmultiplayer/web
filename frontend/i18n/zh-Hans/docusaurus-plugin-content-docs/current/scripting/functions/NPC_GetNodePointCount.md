@@ -22,54 +22,21 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    // 首先打开一个节点
-    if (NPC_OpenNode(1))
-    {
-        new pointCount = NPC_GetNodePointCount(1);
-        printf("节点1有%d个点", pointCount);
-
-        // 设置到特定点
-        if (pointCount > 0)
-        {
-            NPC_SetNodePoint(1, 0); // 设置到第一个点
-        }
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/nodepointcounts", true))
+    if (!strcmp(cmdtext, "/checknodepointcount ", true, 21))
     {
-        for (new nodeid = 0; nodeid < 10; nodeid++)
-        {
-            if (NPC_IsNodeOpen(nodeid))
-            {
-                new pointCount = NPC_GetNodePointCount(nodeid);
+        new nodeid = strval(cmdtext[21]);
 
-                new msg[128];
-                format(msg, sizeof(msg), "节点%d有%d个点", nodeid, pointCount);
-                SendClientMessage(playerid, 0xFFFFFFFF, msg);
-            }
-        }
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的节点 ID。必须在 0 到 63 之间。");
 
+        new count = NPC_GetNodePointCount(nodeid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "节点 %d 有 %d 个点", nodeid, count);
         return 1;
     }
     return 0;
-}
-
-forward CheckNodeProgress(npcid, nodeid);
-public CheckNodeProgress(npcid, nodeid)
-{
-    if (NPC_IsPlayingNode(npcid))
-    {
-        new totalPoints = NPC_GetNodePointCount(nodeid);
-        printf("NPC %d 正在导航节点%d，共有%d个点",
-            npcid, nodeid, totalPoints);
-    }
 }
 ```
 
@@ -77,8 +44,6 @@ public CheckNodeProgress(npcid, nodeid)
 
 - 若节点无效或未打开则返回 0
 - 点的数量表示节点内的导航路径点
-- 在设置点之前使用此函数验证点索引
-- 点的索引范围从 0 到（数量-1）
 
 ## 相关函数
 

@@ -22,41 +22,20 @@ tags: ["npc", "节点"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("NodeWalker");
-    NPC_Spawn(npcid);
-
-    // 打开节点并开始播放
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // 15 秒后停止播放
-        SetTimerEx("StopNodePlay", 15000, false, "i", npcid);
-    }
-
-    return 1;
-}
-
-forward StopNodePlay(npcid);
-public StopNodePlay(npcid)
-{
-    if (NPC_StopPlayingNode(npcid))
-    {
-        printf("NPC %d 已停止节点播放", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/stopnode", true))
+    if (!strcmp(cmdtext, "/npcstopnode", true))
     {
-        // 停止 NPC 0 的节点播放
-        if (NPC_StopPlayingNode(0))
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 已停止节点播放");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:success = NPC_StopPlayingNode(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 停止节点：%s", npcid, success ? "成功" : "失败");
         return 1;
     }
     return 0;

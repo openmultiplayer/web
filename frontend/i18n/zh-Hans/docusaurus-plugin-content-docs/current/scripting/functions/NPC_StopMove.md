@@ -22,34 +22,20 @@ tags: ["npc", "移动"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Walker");
-    NPC_Spawn(npcid);
-
-    // 开始移动
-    NPC_Move(npcid, 1958.33, 1343.12, 15.36, NPC_MOVE_TYPE_WALK);
-
-    // 5 秒后停止移动
-    SetTimerEx("StopNPCMovement", 5000, false, "i", npcid);
-
-    return 1;
-}
-
-forward StopNPCMovement(npcid);
-public StopNPCMovement(npcid)
-{
-    NPC_StopMove(npcid);
-    printf("NPC %d 已停止移动", npcid);
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/freeze", true))
+    if (!strcmp(cmdtext, "/npcstopmove", true))
     {
-        // 停止 NPC 0 的移动
-        NPC_StopMove(0);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 移动已停止");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:success = NPC_StopMove(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 停止移动：%s", npcid, success ? "成功" : "失败");
         return 1;
     }
     return 0;
@@ -57,8 +43,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 
 ## 注意事项
-
-:::warning
 
 - 这会让 NPC 在当前位置停止。
 - 如果 NPC 没有在移动，此函数无效。

@@ -25,66 +25,25 @@ tags: ["npc", "节点", "导航", "位置"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    // 首先打开一个节点
-    if (NPC_OpenNode(1))
-    {
-        // 设置到特定点
-        if (NPC_SetNodePoint(1, 0))
-        {
-            new Float:x, Float:y, Float:z;
-            if (NPC_GetNodePointPosition(1, x, y, z))
-            {
-                printf("节点1，点0位置: %.2f, %.2f, %.2f", x, y, z);
-            }
-        }
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/gotonode", true))
+    if (!strcmp(cmdtext, "/checknodepointpos ", true, 19))
     {
-        new nodeid = 1; // 示例节点
-        if (NPC_IsNodeOpen(nodeid))
-        {
-            new Float:x, Float:y, Float:z;
-            if (NPC_GetNodePointPosition(nodeid, x, y, z))
-            {
-                SetPlayerPos(playerid, x, y, z + 1.0);
+        new nodeid = strval(cmdtext[19]);
 
-                new msg[128];
-                format(msg, sizeof(msg), "已传送到节点%d位置", nodeid);
-                SendClientMessage(playerid, 0x00FF00FF, msg);
-            }
-        }
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的节点 ID。必须在 0 到 63 之间。");
+
+        new Float:x, Float:y, Float:z;
+        new bool:success = NPC_GetNodePointPosition(nodeid, x, y, z);
+
+        if (success)
+            SendClientMessage(playerid, 0x00FF00FF, "节点 %d 点位置：%.2f, %.2f, %.2f", nodeid, x, y, z);
+        else
+            SendClientMessage(playerid, 0xFF0000FF, "获取节点 %d 点位置失败", nodeid);
         return 1;
     }
     return 0;
-}
-
-forward ShowNodePath(nodeid);
-public ShowNodePath(nodeid)
-{
-    if (NPC_IsNodeOpen(nodeid))
-    {
-        new pointCount = NPC_GetNodePointCount(nodeid);
-
-        for (new i = 0; i < pointCount; i++)
-        {
-            if (NPC_SetNodePoint(nodeid, i))
-            {
-                new Float:x, Float:y, Float:z;
-                if (NPC_GetNodePointPosition(nodeid, x, y, z))
-                {
-                    printf("节点%d点%d: %.2f, %.2f, %.2f", nodeid, i, x, y, z);
-                }
-            }
-        }
-    }
 }
 ```
 
@@ -93,7 +52,6 @@ public ShowNodePath(nodeid)
 - 必须首先使用 `NPC_OpenNode` 打开节点
 - 在获取位置前必须使用 `NPC_SetNodePoint` 设置一个点
 - 所有坐标参数都通过引用传递
-- 使用此函数可创建视觉标记或传送到节点位置
 
 ## 相关函数
 

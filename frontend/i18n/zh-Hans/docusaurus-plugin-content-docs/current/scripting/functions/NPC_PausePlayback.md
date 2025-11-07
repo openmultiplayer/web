@@ -22,6 +22,28 @@ tags: ["npc", "录制", "回放"]
 
 ## 示例
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/pauseplayback ", true, 15))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "你没有在调试NPC。");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
+
+        new bool:pause = strval(cmdtext[15]) ? true : false;
+
+        NPC_PausePlayback(npcid, pause);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d 回放%s。", npcid, pause ? "已暂停" : "已恢复");
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## 注意事项
 
 - 仅在 NPC 正在回放录制时有效

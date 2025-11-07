@@ -26,17 +26,21 @@ tags: ["npc", "伤害"]
 ## 示例
 
 ```c
-public OnNPCGiveDamage(npcid, damagedid, Float:amount, weaponid, bodypart)
+public OnNPCGiveDamage(npcid, damagedid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    printf("NPC %d 对玩家 %d 造成了 %.2f 点伤害", npcid, amount, damagedid);
-
-    // 防止 NPC 击杀管理员
-    if (IsPlayerAdmin(damagedid))
+    // 仅通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        return false; // 阻止伤害
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true; // 允许伤害
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0xFF8800FF, "NPC %d 对玩家 %d 造成了 %.1f 点伤害（武器：%d，身体部位：%d）",
+                npcid, amount, damagedid, _:weaponid, bodypart);
+        }
+    }
+    return 1;
 }
 ```
 

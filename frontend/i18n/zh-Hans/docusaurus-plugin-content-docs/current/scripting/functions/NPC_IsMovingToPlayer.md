@@ -55,6 +55,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_StopMove](NPC_StopMove): 停止 NPC 移动
 - [NPC_GetPlayerMovingTo](NPC_GetPlayerMovingTo): 获取 NPC 正移向的玩家 ID
 
-## 相关回调函数
+## 相关回调
 
 - [OnNPCFinishMove](../callbacks/OnNPCFinishMove): 当 NPC 完成移动时被调用

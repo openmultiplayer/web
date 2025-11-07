@@ -20,27 +20,29 @@ tags: ["npc"]
 ## 示例
 
 ```c
-public OnNPCDeath(npcid, killerid, reason)
+public OnNPCDeath(npcid, killerid, WEAPON:reason)
 {
-    if (killerid != INVALID_PLAYER_ID)
+    printf("[NPC] NPC %d 死亡（击杀者：%d，武器：%d）", npcid, killerid, _:reason);
+
+    // 通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        printf("NPC %d 被 %d 以原因 %d 击杀", npcid, killerid, reason);
+        if (!IsPlayerConnected(playerid))
+            continue;
+
+        if (PlayerNPC[playerid] == npcid)
+        {
+            if (killerid == INVALID_PLAYER_ID)
+            {
+                SendClientMessage(playerid, 0xFF0000FF, "你追踪的 NPC %d 已死亡（武器：%d）", npcid, _:reason);
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xFF0000FF, "你追踪的 NPC %d 被玩家 %d 击杀（武器：%d）", npcid, killerid, _:reason);
+            }
+        }
     }
-    else
-    {
-        printf("NPC %d 死亡", npcid);
-    }
-
-    // 5 秒后重生
-    SetTimerEx("RespawnNPC", 5000, false, "i", npcid);
-
-    return true;
-}
-
-forward RespawnNPC(npcid);
-public RespawnNPC(npcid)
-{
-    NPC_Respawn(npcid);
+    return 1;
 }
 ```
 

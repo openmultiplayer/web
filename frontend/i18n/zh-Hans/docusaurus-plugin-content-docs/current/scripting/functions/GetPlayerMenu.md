@@ -41,7 +41,7 @@ new Menu:currentMenu = GetPlayerMenu(playerid); // 将玩家当前菜单存入'c
 - [DestroyMenu](DestroyMenu): 销毁菜单
 - [AddMenuItem](AddMenuItem): 添加菜单项
 
-## 相关回调函数
+## 相关回调
 
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): 当玩家选择菜单项时触发
 - [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): 当玩家退出菜单时触发

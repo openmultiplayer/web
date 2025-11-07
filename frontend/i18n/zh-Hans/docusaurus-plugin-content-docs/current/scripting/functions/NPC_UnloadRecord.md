@@ -22,37 +22,18 @@ tags: ["npc", "录制"]
 ## 示例
 
 ```c
-new g_PatrolRecord = INVALID_RECORD_ID;
-
-public OnGameModeInit()
-{
-    // 加载录制
-    g_PatrolRecord = NPC_LoadRecord("recordings/patrol");
-
-    if (g_PatrolRecord != INVALID_RECORD_ID)
-    {
-        printf("巡逻录制已加载，ID：%d", g_PatrolRecord);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/unloadpatrol", true))
+    if (!strcmp(cmdtext, "/npcunloadrecord ", true, 17))
     {
-        if (NPC_IsValidRecord(g_PatrolRecord))
-        {
-            if (NPC_UnloadRecord(g_PatrolRecord))
-            {
-                SendClientMessage(playerid, 0x00FF00FF, "巡逻录制已卸载");
-                g_PatrolRecord = INVALID_RECORD_ID;
-            }
-            else
-            {
-                SendClientMessage(playerid, 0xFF0000FF, "卸载录制失败");
-            }
-        }
+        new recordid = strval(cmdtext[17]);
+
+        new bool:success = NPC_UnloadRecord(recordid);
+
+        if (success)
+            SendClientMessage(playerid, 0x00FF00FF, "录制 %d 卸载成功", recordid);
+        else
+            SendClientMessage(playerid, 0xFF0000FF, "录制 %d 卸载失败", recordid);
         return 1;
     }
     return 0;

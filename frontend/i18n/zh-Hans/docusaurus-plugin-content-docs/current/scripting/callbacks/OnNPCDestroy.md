@@ -20,16 +20,25 @@ tags: ["npc"]
 ```c
 public OnNPCDestroy(npcid)
 {
-    printf("NPC %d 已被销毁", npcid);
+    printf("[NPC] NPC %d 已被销毁", npcid);
 
-    // 清理定时器
-    if (g_NPCTimer[npcid] != -1)
+    // 清除追踪此 NPC 的玩家并通知
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        KillTimer(g_NPCTimer[npcid]);
-        g_NPCTimer[npcid] = -1;
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            PlayerNPC[playerid] = INVALID_NPC_ID;
+            SendClientMessage(playerid, 0xFF0000FF, "你追踪的 NPC %d 已被销毁", npcid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 已被销毁", npcid);
+        }
+    }
+    return 1;
 }
 ```
 

@@ -22,55 +22,18 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnGameModeInit()
-{
-    // 首先打开一个节点
-    if (NPC_OpenNode(1))
-    {
-        new nodeType = NPC_GetNodeType(1);
-
-        new typeString[32];
-        switch(nodeType)
-        {
-            case 0: typeString = "行人";
-            case 1: typeString = "车辆";
-            case 2: typeString = "船只";
-            case 3: typeString = "飞机";
-            default: typeString = "未知";
-        }
-
-        printf("节点1类型为%d (%s)", nodeType, typeString);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/nodetypes", true))
+    if (!strcmp(cmdtext, "/checknodetype ", true, 15))
     {
-        for (new nodeid = 0; nodeid < 10; nodeid++)
-        {
-            if (NPC_IsNodeOpen(nodeid))
-            {
-                new nodeType = NPC_GetNodeType(nodeid);
+        new nodeid = strval(cmdtext[15]);
 
-                new typeString[32];
-                switch(nodeType)
-                {
-                    case 0: typeString = "行人";
-                    case 1: typeString = "车辆";
-                    case 2: typeString = "船只";
-                    case 3: typeString = "飞机";
-                    default: format(typeString, sizeof(typeString), "类型%d", nodeType);
-                }
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "无效的节点 ID。必须在 0 到 63 之间。");
 
-                new msg[128];
-                format(msg, sizeof(msg), "节点%d: %s", nodeid, typeString);
-                SendClientMessage(playerid, 0xFFFFFFFF, msg);
-            }
-        }
+        new nodetype = NPC_GetNodeType(nodeid);
 
+        SendClientMessage(playerid, 0x00FF00FF, "节点 %d 类型：%d", nodeid, nodetype);
         return 1;
     }
     return 0;

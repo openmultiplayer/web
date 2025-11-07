@@ -20,13 +20,20 @@ tags: ["npc"]
 ```c
 public OnNPCRespawn(npcid)
 {
-    printf("NPC %d 已重生", npcid);
+    printf("[NPC] NPC %d 已重生", npcid);
 
-    // 设置重生位置
-    NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
-    NPC_SetFacingAngle(npcid, 0.0);
+    // 通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "你追踪的 NPC %d 已重生", npcid);
+        }
+    }
+    return 1;
 }
 ```
 

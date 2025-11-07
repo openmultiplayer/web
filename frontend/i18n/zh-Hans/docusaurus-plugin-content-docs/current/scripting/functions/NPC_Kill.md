@@ -57,7 +57,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_IsDead](NPC_IsDead): 检查 NPC 是否死亡
 - [NPC_Respawn](NPC_Respawn): 重新生成 NPC
 
-## 相关回调函数
+## 相关回调
 
 - [OnNPCDeath](../callbacks/OnNPCDeath): 当 NPC 死亡时被调用
 - [OnNPCTakeDamage](../callbacks/OnNPCTakeDamage): 当 NPC 受到伤害时被调用

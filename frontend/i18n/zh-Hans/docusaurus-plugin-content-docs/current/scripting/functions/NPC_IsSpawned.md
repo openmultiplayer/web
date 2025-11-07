@@ -53,7 +53,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_IsValid](NPC_IsValid): 检查 NPC 是否有效
 - [NPC_IsDead](NPC_IsDead): 检查 NPC 是否死亡
 
-## 相关回调函数
+## 相关回调
 
 - [OnNPCSpawn](../callbacks/OnNPCSpawn): 当 NPC 生成时被调用
 - [OnNPCRespawn](../callbacks/OnNPCRespawn): 当 NPC 重新生成时被调用

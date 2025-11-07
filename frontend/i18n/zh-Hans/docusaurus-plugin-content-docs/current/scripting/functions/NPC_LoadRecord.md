@@ -24,7 +24,7 @@ tags: ["npc", "录制", "回放"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcloadrecord", true, 14))
+    if (!strcmp(cmdtext, "/npcloadrecord ", true, 15))
     {
         new filepath[128];
         new len = strlen(cmdtext);

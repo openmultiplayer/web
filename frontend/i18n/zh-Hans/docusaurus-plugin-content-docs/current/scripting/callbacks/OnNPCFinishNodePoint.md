@@ -20,24 +20,22 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnNPCFinishNodePoint(npcid, nodeid, pointid)
+public OnNPCFinishNode(npcid, nodeid)
 {
-    printf("NPC %d 到达了节点 %d 中的点 %d", npcid, pointid, nodeid);
+    printf("[NPC] NPC %d 完成节点 %d", npcid, nodeid);
 
-    // 在特定点暂停
-    if (pointid == 10)
+    // 通知追踪此 NPC 的玩家
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        NPC_PausePlayingNode(npcid);
-        SetTimerEx("ResumeNavigation", 3000, false, "i", npcid);
+        if (!IsPlayerConnected(playerid))
+            continue;
+
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 完成节点 %d", npcid, nodeid);
+        }
     }
-
-    return true;
-}
-
-forward ResumeNavigation(npcid);
-public ResumeNavigation(npcid)
-{
-    NPC_ResumePlayingNode(npcid);
+    return 1;
 }
 ```
 
