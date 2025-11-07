@@ -11,12 +11,16 @@ This page lists all constants specific to NPC functions in open.mp.
 
 | Value | Constant      | Description             |
 | ----- | ------------- | ----------------------- |
+| 1000  | MAX_NPCS      | Maximum number of NPCs  |
 | 64    | NPC_MAX_NODES | Maximum number of nodes |
 
 ## Invalid Constants
 
 | Value | Constant          | Description          |
 | ----- | ----------------- | -------------------- |
+| -1    | INVALID_NPC_ID    | Invalid NPC ID       |
+| -1    | INVALID_PATH_ID   | Invalid path ID      |
+| -1    | INVALID_NODE_ID   | Invalid node ID      |
 | -1    | INVALID_RECORD_ID | Invalid recording ID |
 
 ## Movement Types
@@ -139,9 +143,41 @@ NPC_Shoot(npcid, playerid, BULLET_HIT_TYPE_PLAYER, WEAPON_M4,
          x, y, z, 0.0, 0.0, 0.0, true);
 ```
 
-### Node Management
+### Invalid Constants
 
 ```c
+// Check if NPC ID is valid
+new npcid = NPC_Create("Bot");
+if (npcid != INVALID_NPC_ID)
+{
+    // NPC was created successfully
+    NPC_Spawn(npcid);
+}
+
+// Check if path ID is valid
+new pathid = NPC_CreatePath();
+if (pathid != INVALID_PATH_ID)
+{
+    // Path was created successfully
+    NPC_AddPointToPath(pathid, 0.0, 0.0, 3.0, 0.2);
+}
+
+// Check for invalid player in NPC_Kill
+NPC_Kill(npcid, INVALID_PLAYER_ID, REASON_SUICIDE);
+```
+
+### Limits
+
+```c
+// Loop through all possible NPCs
+for (new i = 0; i < MAX_NPCS; i++)
+{
+    if (NPC_IsValid(i))
+    {
+        // Process valid NPC
+    }
+}
+
 // Example using NPC_MAX_NODES
 for (new i = 0; i < NPC_MAX_NODES; i++)
 {
