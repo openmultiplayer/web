@@ -24,29 +24,22 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Sniper");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_SNIPER);
-
-    // Set sniper rifle accuracy to 95%
-    NPC_SetWeaponAccuracy(npcid, WEAPON_SNIPER, 0.95);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/setaccuracy", true))
+    if (!strcmp(cmdtext, "/setweaponaccuracy ", true, 19))
     {
-        new npcid = NPC_Create("Marksman");
-        NPC_Spawn(npcid);
-        NPC_SetWeapon(npcid, WEAPON_DEAGLE);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        // Set Desert Eagle accuracy to 80%
-        NPC_SetWeaponAccuracy(npcid, WEAPON_DEAGLE, 0.8);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "NPC weapon accuracy set");
+        new weapon = NPC_GetWeapon(npcid);
+        new Float:accuracy = floatstr(cmdtext[19]);
+
+        NPC_SetWeaponAccuracy(npcid, WEAPON:weapon, accuracy);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon %d accuracy set to %.2f", npcid, weapon, accuracy);
         return 1;
     }
     return 0;
@@ -57,7 +50,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Accuracy value ranges from 0.0 (never hits) to 1.0 (always hits)
 - Default accuracy varies by weapon type
-- Higher accuracy makes NPCs more dangerous in combat
 - Accuracy affects bullet spread and hit probability
 
 ## Related Functions

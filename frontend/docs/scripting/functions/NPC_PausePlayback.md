@@ -25,7 +25,7 @@ Returns `true` if the operation was successful, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/pauseplayback", true, 14))
+    if (!strcmp(cmdtext, "/pauseplayback ", true, 15))
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)
@@ -34,11 +34,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        new bool:pause = true;
-        if (strlen(cmdtext) > 15)
-        {
-            pause = strval(cmdtext[15]) ? true : false;
-        }
+        new bool:pause = strval(cmdtext[15]) ? true : false;
 
         NPC_PausePlayback(npcid, pause);
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d playback %s.", npcid, pause ? "paused" : "resumed");

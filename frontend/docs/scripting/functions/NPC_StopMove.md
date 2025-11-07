@@ -22,34 +22,20 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new const npcid = NPC_Create("Walker");
-    NPC_Spawn(npcid);
-
-    // Start moving
-    NPC_Move(npcid, 1958.33, 1343.12, 15.36, NPC_MOVE_TYPE_WALK);
-
-    // Stop movement after 5 seconds
-    SetTimerEx("StopNPCMovement", 5000, false, "i", npcid);
-
-    return 1;
-}
-
-forward StopNPCMovement(npcid);
-public StopNPCMovement(npcid)
-{
-    NPC_StopMove(npcid);
-    printf("NPC %d stopped moving", npcid);
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/freeze", true))
+    if (!strcmp(cmdtext, "/npcstopmove", true))
     {
-        // Stop NPC 0 from moving
-        NPC_StopMove(0);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 movement stopped");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:success = NPC_StopMove(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d stop moving: %s", npcid, success ? "Success" : "Failed");
         return 1;
     }
     return 0;
@@ -57,8 +43,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 
 ## Notes
-
-:::warning
 
 - This stops the NPC at their current position.
 - If the NPC is not moving, this function has no effect.

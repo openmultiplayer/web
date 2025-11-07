@@ -24,7 +24,7 @@ Returns `true` if the recording is valid and loaded, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkvalidrecord", true, 17))
+    if (!strcmp(cmdtext, "/checkvalidrecord ", true, 18))
     {
         new recordid = strval(cmdtext[18]);
 

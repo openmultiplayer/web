@@ -30,36 +30,29 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-new g_PatrolRecord = INVALID_RECORD_ID;
-
-public OnGameModeInit()
-{
-    // Pre-load recordings
-    g_PatrolRecord = NPC_LoadRecord("patrol");
-
-    if (g_PatrolRecord != INVALID_RECORD_ID)
-    {
-        printf("Patrol recording loaded with ID %d", g_PatrolRecord);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/startpatrol", true))
+    if (!strcmp(cmdtext, "/startplaybackex ", true, 17))
     {
-        // Start NPC 0 playing the pre-loaded recording
-        NPC_StartPlaybackEx(0, g_PatrolRecord, true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 started patrol playback");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/startpatrolrotated", true))
-    {
-        // Start with rotation offset
-        NPC_StartPlaybackEx(0, g_PatrolRecord, true, 0.0, 0.0, 0.0, 0.0, 0.0, 90.0);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 started patrol with rotation");
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new recordId = strval(cmdtext[17]);
+
+        new Float:x, Float:y, Float:z;
+        NPC_GetPos(npcid, x, y, z);
+
+        new bool:success = NPC_StartPlaybackEx(npcid, recordId, true, x, y, z, 0.0, 0.0, 0.0);
+
+        if (success)
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d started playback with record ID: %d", npcid, recordId);
+        else
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to start playback for NPC %d with record ID %d", npcid, recordId);
+
         return 1;
     }
     return 0;
@@ -69,9 +62,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Recording must be pre-loaded with `NPC_LoadRecord`
-- More efficient than `NPC_StartPlayback` for repeated use
 - Auto-unload saves memory when playback completes
-- Rotation offsets allow adjusting the NPC's orientation during playback
 
 ## Related Functions
 

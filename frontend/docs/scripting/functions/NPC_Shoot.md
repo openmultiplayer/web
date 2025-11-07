@@ -33,32 +33,24 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("Sniper");
-    NPC_Spawn(npcid);
-    NPC_SetWeapon(npcid, WEAPON_SNIPER);
-
-    // Shoot at position (100.0, 100.0, 10.0)
-    NPC_Shoot(npcid, WEAPON_SNIPER, INVALID_PLAYER_ID, BULLET_HIT_TYPE_NONE,
-             100.0, 100.0, 10.0, 0.0, 0.0, 0.0, false, NPC_ENTITY_CHECK_ALL);
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/attack", true))
+    if (!strcmp(cmdtext, "/npcshoot", true))
     {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
         new Float:x, Float:y, Float:z;
         GetPlayerPos(playerid, x, y, z);
 
-        new npcid = NPC_Create("Attacker");
-        NPC_Spawn(npcid);
-        NPC_SetWeapon(npcid, WEAPON_DEAGLE);
+        new weapon = NPC_GetWeapon(npcid);
+        NPC_Shoot(npcid, WEAPON:weapon, playerid, 1, x, y, z, 0.0, 0.0, 0.0, true, NPC_ENTITY_CHECK_ALL);
 
-        // Shoot at player
-        NPC_Shoot(npcid, WEAPON_DEAGLE, playerid, BULLET_HIT_TYPE_PLAYER,
-                 x, y, z, 0.0, 0.0, 0.0, true, NPC_ENTITY_CHECK_ALL);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d fired a shot at you.", npcid);
         return 1;
     }
     return 0;
@@ -68,7 +60,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - The NPC must have a weapon set with `NPC_SetWeapon` before shooting
-- Shot effects (muzzle flash, sound) are automatically handled
 - Use `isHit = false` for warning shots or suppression fire
 - The `checkInBetweenFlags` parameter determines what entities block the shot
 

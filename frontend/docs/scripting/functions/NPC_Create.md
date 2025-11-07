@@ -22,9 +22,6 @@ Returns the ID of the created NPC, or `INVALID_NPC_ID` on failure.
 ## Examples
 
 ```c
-new g_NPCCount = 0,
-    PlayerNPC[MAX_PLAYERS] = {INVALID_NPC_ID, ...};
-    
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/createnpc", true))

@@ -24,7 +24,7 @@ Returns the ID of the loaded recording, or `INVALID_RECORD_ID` on failure.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcloadrecord", true, 14))
+    if (!strcmp(cmdtext, "/npcloadrecord ", true, 15))
     {
         new filepath[128];
         new len = strlen(cmdtext);

@@ -29,7 +29,7 @@ Returns `true` if the NPC started playing the node, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcplaynode", true, 12))
+    if (!strcmp(cmdtext, "/npcplaynode ", true, 13))
     {
         new npcid = PlayerNPC[playerid];
         if (npcid == INVALID_NPC_ID)

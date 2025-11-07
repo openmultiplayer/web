@@ -25,66 +25,25 @@ Returns `true` on success, `false` on failure.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    // Open a node first
-    if (NPC_OpenNode(1))
-    {
-        // Set to a specific point
-        if (NPC_SetNodePoint(1, 0))
-        {
-            new Float:x, Float:y, Float:z;
-            if (NPC_GetNodePointPosition(1, x, y, z))
-            {
-                printf("Node 1, Point 0 position: %.2f, %.2f, %.2f", x, y, z);
-            }
-        }
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/gotonode", true))
+    if (!strcmp(cmdtext, "/checknodepointpos ", true, 19))
     {
-        new nodeid = 1; // Example node
-        if (NPC_IsNodeOpen(nodeid))
-        {
-            new Float:x, Float:y, Float:z;
-            if (NPC_GetNodePointPosition(nodeid, x, y, z))
-            {
-                SetPlayerPos(playerid, x, y, z + 1.0);
+        new nodeid = strval(cmdtext[19]);
 
-                new msg[128];
-                format(msg, sizeof(msg), "Teleported to node %d position", nodeid);
-                SendClientMessage(playerid, 0x00FF00FF, msg);
-            }
-        }
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
+
+        new Float:x, Float:y, Float:z;
+        new bool:success = NPC_GetNodePointPosition(nodeid, x, y, z);
+
+        if (success)
+            SendClientMessage(playerid, 0x00FF00FF, "Node %d point position: %.2f, %.2f, %.2f", nodeid, x, y, z);
+        else
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to get node %d point position", nodeid);
         return 1;
     }
     return 0;
-}
-
-forward ShowNodePath(nodeid);
-public ShowNodePath(nodeid)
-{
-    if (NPC_IsNodeOpen(nodeid))
-    {
-        new pointCount = NPC_GetNodePointCount(nodeid);
-
-        for (new i = 0; i < pointCount; i++)
-        {
-            if (NPC_SetNodePoint(nodeid, i))
-            {
-                new Float:x, Float:y, Float:z;
-                if (NPC_GetNodePointPosition(nodeid, x, y, z))
-                {
-                    printf("Node %d Point %d: %.2f, %.2f, %.2f", nodeid, i, x, y, z);
-                }
-            }
-        }
-    }
 }
 ```
 
@@ -93,7 +52,6 @@ public ShowNodePath(nodeid)
 - The node must be opened with `NPC_OpenNode` first
 - A point must be set with `NPC_SetNodePoint` before getting its position
 - All coordinate parameters are passed by reference
-- Use this to create visual markers or teleport to node locations
 
 ## Related Functions
 

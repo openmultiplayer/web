@@ -22,34 +22,19 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("PlaybackBot");
-    NPC_Spawn(npcid);
-
-    // Start playing a recording
-    NPC_StartPlayback(npcid, "patrol", true, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-
-    // Stop playback after 15 seconds
-    SetTimerEx("StopNPCPlayback", 15000, false, "i", npcid);
-
-    return 1;
-}
-
-forward StopNPCPlayback(npcid);
-public StopNPCPlayback(npcid)
-{
-    NPC_StopPlayback(npcid);
-    printf("Stopped playback for NPC %d", npcid);
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/stopplayback", true))
     {
-        // Stop playback for NPC 0
-        NPC_StopPlayback(0);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 playback stopped");
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:success = NPC_StopPlayback(npcid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d playback stopped: %s", npcid, success ? "Success" : "Failed");
         return 1;
     }
     return 0;

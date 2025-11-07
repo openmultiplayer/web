@@ -24,33 +24,22 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("QuickReloader");
-    NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, WEAPON_M4, 200); // M4 with 200 ammo
-
-    // Set fast reload (500ms)
-    NPC_SetWeaponReloadTime(npcid, 500);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/fastreload", true))
+    if (!strcmp(cmdtext, "/setweaponreloadtime ", true, 21))
     {
-        // Set fast reload for NPC 0
-        NPC_SetWeaponReloadTime(0, 100);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 has lightning-fast reload");
-        return 1;
-    }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    if (!strcmp(cmdtext, "/slowreload", true))
-    {
-        // Set slow reload for NPC 0
-        NPC_SetWeaponReloadTime(0, 5000);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 has very slow reload");
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new weapon = NPC_GetWeapon(npcid);
+        new reloadtime = strval(cmdtext[21]);
+
+        NPC_SetWeaponReloadTime(npcid, WEAPON:weapon, reloadtime);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon %d reload time set to %d ms", npcid, weapon, reloadtime);
         return 1;
     }
     return 0;
@@ -60,9 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Reload time is measured in milliseconds
-- Lower values = faster reloading
 - Use NPC_GetWeaponReloadTime to check current reload time
-- Affects combat effectiveness and firing rate
 
 ## Related Functions
 

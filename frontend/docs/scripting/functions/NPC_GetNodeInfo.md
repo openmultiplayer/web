@@ -25,44 +25,22 @@ Returns `true` on success, `false` on failure.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    // Open a node first
-    if (NPC_OpenNode(1))
-    {
-        new vehnodes, pednodes, navinode;
-        if (NPC_GetNodeInfo(1, vehnodes, pednodes, navinode))
-        {
-            printf("Node 1 Info:");
-            printf("- Vehicle nodes: %d", vehnodes);
-            printf("- Pedestrian nodes: %d", pednodes);
-            printf("- Navigation node: %d", navinode);
-        }
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/nodeinfo", true))
+    if (!strcmp(cmdtext, "/checknodeinfo ", true, 15))
     {
-        for (new nodeid = 0; nodeid < 10; nodeid++)
-        {
-            if (NPC_IsNodeOpen(nodeid))
-            {
-                new vehnodes, pednodes, navinode;
-                if (NPC_GetNodeInfo(nodeid, vehnodes, pednodes, navinode))
-                {
-                    new msg[128];
-                    format(msg, sizeof(msg),
-                        "Node %d: Veh=%d, Ped=%d, Nav=%d",
-                        nodeid, vehnodes, pednodes, navinode);
-                    SendClientMessage(playerid, 0xFFFFFFFF, msg);
-                }
-            }
-        }
+        new nodeid = strval(cmdtext[15]);
 
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
+
+        new vehnodes, pednodes, navinode;
+        new bool:success = NPC_GetNodeInfo(nodeid, vehnodes, pednodes, navinode);
+
+        if (success)
+            SendClientMessage(playerid, 0x00FF00FF, "Node %d info - Vehicle nodes: %d, Ped nodes: %d, Navi node: %d", nodeid, vehnodes, pednodes, navinode);
+        else
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to get node %d info", nodeid);
         return 1;
     }
     return 0;
@@ -74,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - The node must be opened with `NPC_OpenNode` before getting info
 - Vehicle nodes are for vehicle navigation paths
 - Pedestrian nodes are for walking paths
-- Navigation node provides routing information
 - All count parameters are passed by reference
 
 ## Related Functions

@@ -27,7 +27,7 @@ Returns `true` if the operation was successful, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcenterbike", true, 13))
+    if (!strcmp(cmdtext, "/npcenterbike ", true, 14))
     {
         new seatid = strval(cmdtext[14]);
         if (cmdtext[14] == '\0')

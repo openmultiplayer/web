@@ -21,11 +21,38 @@ Returns the ID of the player being aimed at, or `INVALID_PLAYER_ID` if not aimin
 
 ## Examples
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/checkwhonpcaiming", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new targetid = NPC_GetPlayerAimingAt(npcid);
+
+        if (targetid == INVALID_PLAYER_ID)
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d is not aiming at any player", npcid);
+        else
+        {
+            new targetName[MAX_PLAYER_NAME];
+            GetPlayerName(targetid, targetName, sizeof(targetName));
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d is aiming at player %s (ID %d)", npcid, targetName, targetid);
+        }
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## Notes
 
 - Returns the player ID if the NPC is aiming using [NPC_AimAtPlayer](NPC_AimAtPlayer)
 - Returns `INVALID_PLAYER_ID` if the NPC is not aiming at any player
-- This is different from aiming at a fixed position with [NPC_AimAt](NPC_AimAt)
 
 ## Related Functions
 

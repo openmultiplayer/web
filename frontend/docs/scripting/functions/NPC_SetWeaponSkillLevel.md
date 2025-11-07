@@ -23,6 +23,37 @@ Returns `true` on success, `false` on failure.
 
 ## Examples
 
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/setweaponskill ", true, 16))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new level = strval(cmdtext[16]);
+
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_PISTOL, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_PISTOL_SILENCED, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_DESERT_EAGLE, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_SHOTGUN, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_MICRO_UZI, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_MP5, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_AK47, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_M4, level);
+        NPC_SetWeaponSkillLevel(npcid, WEAPONSKILL_SNIPERRIFLE, level);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d all weapon skills set to %d", npcid, level);
+        return 1;
+    }
+    return 0;
+}
+```
+
 ## Notes
 
 - Weapon skill affects accuracy and shooting behavior

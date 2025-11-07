@@ -24,7 +24,7 @@ Returns `true` if the path is valid, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checkvalidpath", true, 15))
+    if (!strcmp(cmdtext, "/checkvalidpath ", true, 16))
     {
         new pathid = strval(cmdtext[16]);
 

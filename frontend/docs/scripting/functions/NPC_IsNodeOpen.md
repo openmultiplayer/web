@@ -24,7 +24,7 @@ Returns `true` if the node is open, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/checknodeopen", true, 14))
+    if (!strcmp(cmdtext, "/checknodeopen ", true, 15))
     {
         new nodeid = strval(cmdtext[15]);
 

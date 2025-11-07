@@ -33,9 +33,18 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-        new weaponstate = NPC_GetWeaponState(npcid);
+        new WEAPONSTATE:state = WEAPONSTATE:NPC_GetWeaponState(npcid);
 
-        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon state: %d", npcid, weaponstate);
+        static weaponStates[5][64] =
+        {
+            "Unknown",
+            "No ammo remaining",
+            "Single bullet left",
+            "More than one bullet left",
+            "Reloading"
+        };
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon state: %s (%d)", npcid, weaponStates[state], _:state);
         return 1;
     }
     return 0;

@@ -24,19 +24,18 @@ Returns `true` if the NPC was removed from the vehicle, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/kicknpc", true))
+    if (!strcmp(cmdtext, "/npcremovefromvehicle", true))
     {
-        if (NPC_GetVehicleID(0) != INVALID_VEHICLE_ID) // NPC 0 is in vehicle
-        {
-            if (NPC_RemoveFromVehicle(0))
-            {
-                SendClientMessage(playerid, 0xFF0000FF, "NPC 0 removed from vehicle");
-            }
-        }
-        else
-        {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC 0 is not in a vehicle");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:success = NPC_RemoveFromVehicle(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d removed from vehicle: %s", npcid, success ? "Success" : "Failed");
         return 1;
     }
     return 0;

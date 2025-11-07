@@ -22,41 +22,20 @@ Returns `true` if the NPC was stopped successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("NodeWalker");
-    NPC_Spawn(npcid);
-
-    // Open a node and start playing
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // Stop playing after 15 seconds
-        SetTimerEx("StopNodePlay", 15000, false, "i", npcid);
-    }
-
-    return 1;
-}
-
-forward StopNodePlay(npcid);
-public StopNodePlay(npcid)
-{
-    if (NPC_StopPlayingNode(npcid))
-    {
-        printf("NPC %d stopped playing node", npcid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/stopnode", true))
+    if (!strcmp(cmdtext, "/npcstopnode", true))
     {
-        // Stop NPC 0 from playing node
-        if (NPC_StopPlayingNode(0))
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "NPC 0 stopped playing node");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new bool:success = NPC_StopPlayingNode(npcid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d stop node: %s", npcid, success ? "Success" : "Failed");
         return 1;
     }
     return 0;

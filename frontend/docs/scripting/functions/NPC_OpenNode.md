@@ -24,7 +24,7 @@ Returns `true` if the node was opened successfully, `false` otherwise.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/npcopennode", true, 12))
+    if (!strcmp(cmdtext, "/npcopennode ", true, 13))
     {
         new nodeid = strval(cmdtext[13]);
 

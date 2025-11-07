@@ -24,36 +24,22 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("RapidFire");
-    NPC_Spawn(npcid);
-    NPC_GiveWeapon(npcid, WEAPON_M4, 500); // M4 with 500 ammo
-
-    // Set rapid fire (100ms between shots)
-    NPC_SetWeaponShootTime(npcid, 100);
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/rapidfire", true))
+    if (!strcmp(cmdtext, "/setweaponshoottime ", true, 20))
     {
-        new npcs[MAX_NPCS];
-        new count = NPC_GetAll(npcs);
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-        // Set rapid fire for NPC 0
-        NPC_SetWeaponShootTime(0, 50);
-        SendClientMessage(playerid, 0xFF0000FF, "NPC 0 has rapid fire enabled");
-        return 1;
-    }
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-    if (!strcmp(cmdtext, "/slowfire", true))
-    {
-        // Set slow fire for NPC 0
-        NPC_SetWeaponShootTime(0, 2000);
-        SendClientMessage(playerid, 0x00FF00FF, "NPC 0 has slow fire rate");
+        new weapon = NPC_GetWeapon(npcid);
+        new shoottime = strval(cmdtext[20]);
+
+        NPC_SetWeaponShootTime(npcid, WEAPON:weapon, shoottime);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d weapon %d shoot time set to %d ms", npcid, weapon, shoottime);
         return 1;
     }
     return 0;
@@ -63,9 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Shoot time is measured in milliseconds between shots
-- Lower values = faster firing rate
 - Use NPC_GetWeaponShootTime to check current shoot time
-- Affects weapon's rate of fire and combat effectiveness
 
 ## Related Functions
 

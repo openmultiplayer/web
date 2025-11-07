@@ -23,41 +23,22 @@ Returns `true` if the update was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    new npcid = NPC_Create("NodeNavigator");
-    NPC_Spawn(npcid);
-
-    // Open a node and start playing
-    if (NPC_OpenNode(1))
-    {
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
-
-        // Update to specific point after 10 seconds
-        SetTimerEx("UpdateToPoint", 10000, false, "ii", npcid, 5);
-    }
-
-    return 1;
-}
-
-forward UpdateToPoint(npcid, pointid);
-public UpdateToPoint(npcid, pointid)
-{
-    if (NPC_UpdateNodePoint(npcid, pointid))
-    {
-        printf("NPC %d updated to node point %d", npcid, pointid);
-    }
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/skiptopoint", true))
+    if (!strcmp(cmdtext, "/npcupdatenodepoint ", true, 20))
     {
-        // Skip NPC 0 to point 3 in current node
-        if (NPC_UpdateNodePoint(0, 3))
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC 0 skipped to point 3");
-        }
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new pointid = strval(cmdtext[20]);
+
+        new bool:success = NPC_UpdateNodePoint(npcid, pointid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d update node point %d: %s", npcid, pointid, success ? "Success" : "Failed");
         return 1;
     }
     return 0;

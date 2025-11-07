@@ -18,41 +18,16 @@ Returns `true` if all records were unloaded successfully, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    // Load some recordings
-    NPC_LoadRecord("patrol");
-    NPC_LoadRecord("driver");
-    NPC_LoadRecord("guard");
-
-    printf("Loaded records: %d", NPC_GetRecordCount());
-
-    return 1;
-}
-
-public OnGameModeExit()
-{
-    // Clean up all recordings on server shutdown
-    if (NPC_UnloadAllRecords())
-    {
-        print("All NPC recordings unloaded successfully");
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/clearrecords", true))
+    if (!strcmp(cmdtext, "/npcunloadallrecords", true))
     {
-        if (NPC_UnloadAllRecords())
-        {
-            SendClientMessage(playerid, 0x00FF00FF, "All recordings unloaded");
-        }
+        new bool:success = NPC_UnloadAllRecords();
+
+        if (success)
+            SendClientMessage(playerid, 0x00FF00FF, "All records unloaded successfully");
         else
-        {
-            SendClientMessage(playerid, 0xFF0000FF, "Failed to unload recordings");
-        }
+            SendClientMessage(playerid, 0xFF0000FF, "Failed to unload all records");
         return 1;
     }
     return 0;
@@ -62,7 +37,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - This frees up memory used by loaded recordings
-- Use this for cleanup during gamemode shutdown
 - All record IDs become invalid after this function
 - Any NPCs using these recordings will stop playback
 

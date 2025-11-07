@@ -22,55 +22,18 @@ Returns the node type ID, or -1 if the node is invalid.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    // Open a node first
-    if (NPC_OpenNode(1))
-    {
-        new nodeType = NPC_GetNodeType(1);
-
-        new typeString[32];
-        switch(nodeType)
-        {
-            case 0: typeString = "Pedestrian";
-            case 1: typeString = "Vehicle";
-            case 2: typeString = "Boat";
-            case 3: typeString = "Aircraft";
-            default: typeString = "Unknown";
-        }
-
-        printf("Node 1 is type %d (%s)", nodeType, typeString);
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/nodetypes", true))
+    if (!strcmp(cmdtext, "/checknodetype ", true, 15))
     {
-        for (new nodeid = 0; nodeid < 10; nodeid++)
-        {
-            if (NPC_IsNodeOpen(nodeid))
-            {
-                new nodeType = NPC_GetNodeType(nodeid);
+        new nodeid = strval(cmdtext[15]);
 
-                new typeString[32];
-                switch(nodeType)
-                {
-                    case 0: typeString = "Pedestrian";
-                    case 1: typeString = "Vehicle";
-                    case 2: typeString = "Boat";
-                    case 3: typeString = "Aircraft";
-                    default: format(typeString, sizeof(typeString), "Type %d", nodeType);
-                }
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
 
-                new msg[128];
-                format(msg, sizeof(msg), "Node %d: %s", nodeid, typeString);
-                SendClientMessage(playerid, 0xFFFFFFFF, msg);
-            }
-        }
+        new nodetype = NPC_GetNodeType(nodeid);
 
+        SendClientMessage(playerid, 0x00FF00FF, "Node %d type: %d", nodeid, nodetype);
         return 1;
     }
     return 0;

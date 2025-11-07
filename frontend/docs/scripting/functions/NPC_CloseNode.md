@@ -22,30 +22,21 @@ Returns `true` if the operation was successful, `false` otherwise.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    // Open a node for use
-    if (NPC_OpenNode(1))
+    if (!strcmp(cmdtext, "/checknodetype ", true, 15))
     {
-        printf("Node 1 opened successfully");
+        new nodeid = strval(cmdtext[15]);
 
-        // Use the node
-        new npcid = NPC_Create("NodeBot");
-        NPC_Spawn(npcid);
-        NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
 
-        // Later, close the node
-        SetTimer("CloseTheNode", 30000, false);
+        new nodetype = NPC_GetNodeType(nodeid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "Node %d type: %d", nodeid, nodetype);
+        return 1;
     }
-
-    return 1;
-}
-
-forward CloseTheNode();
-public CloseTheNode()
-{
-    NPC_CloseNode(1);
-    printf("Node 1 closed successfully");
+    return 0;
 }
 ```
 
@@ -54,7 +45,6 @@ public CloseTheNode()
 - Closing a node prevents new NPCs from using it
 - NPCs currently using the node will continue until they finish
 - Closed nodes cannot be played until reopened with `NPC_OpenNode`
-- Use this to manage node availability dynamically
 
 ## Related Functions
 

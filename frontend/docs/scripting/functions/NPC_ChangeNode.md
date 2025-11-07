@@ -24,25 +24,36 @@ Returns the new point ID in the node.
 ## Examples
 
 ```c
-public OnGameModeInit()
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    new npcid = NPC_Create("NodeBot");
-    NPC_Spawn(npcid);
+    if (!strcmp(cmdtext, "/npcchangenode ", true, 15))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
 
-    // Start playing node 1
-    NPC_PlayNode(npcid, 1, NPC_MOVE_TYPE_WALK);
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
-    // After some time, change to node 2 using link 0
-    SetTimerEx("ChangeNPCNode", 10000, false, "i", npcid);
+        new nodeid = strval(cmdtext[15]);
 
-    return 1;
-}
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
 
-forward ChangeNPCNode(npcid);
-public ChangeNPCNode(npcid)
-{
-    // Change from current node to node 2
-    NPC_ChangeNode(npcid, 2, 0);
+        new idx = 15;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
+        while (cmdtext[idx] == ' ') idx++;
+
+        if (cmdtext[idx] == '\0')
+            return SendClientMessage(playerid, 0xFF0000FF, "Usage: /npcchangenode [nodeid] [linkid]");
+
+        new linkid = strval(cmdtext[idx]);
+
+        NPC_ChangeNode(npcid, nodeid, linkid);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d changed to node %d via link %d", npcid, nodeid, linkid);
+        return 1;
+    }
+    return 0;
 }
 ```
 

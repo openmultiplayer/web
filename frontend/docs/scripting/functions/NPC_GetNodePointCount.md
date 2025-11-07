@@ -22,54 +22,21 @@ Returns the number of points in the node, or 0 if the node is invalid.
 ## Examples
 
 ```c
-public OnGameModeInit()
-{
-    // Open a node first
-    if (NPC_OpenNode(1))
-    {
-        new pointCount = NPC_GetNodePointCount(1);
-        printf("Node 1 has %d points", pointCount);
-
-        // Set to a specific point
-        if (pointCount > 0)
-        {
-            NPC_SetNodePoint(1, 0); // Set to first point
-        }
-    }
-
-    return 1;
-}
-
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/nodepointcounts", true))
+    if (!strcmp(cmdtext, "/checknodepointcount ", true, 21))
     {
-        for (new nodeid = 0; nodeid < 10; nodeid++)
-        {
-            if (NPC_IsNodeOpen(nodeid))
-            {
-                new pointCount = NPC_GetNodePointCount(nodeid);
+        new nodeid = strval(cmdtext[21]);
 
-                new msg[128];
-                format(msg, sizeof(msg), "Node %d has %d points", nodeid, pointCount);
-                SendClientMessage(playerid, 0xFFFFFFFF, msg);
-            }
-        }
+        if (nodeid < 0 || nodeid > 63)
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid node ID. Must be between 0 and 63.");
 
+        new count = NPC_GetNodePointCount(nodeid);
+
+        SendClientMessage(playerid, 0x00FF00FF, "Node %d has %d points", nodeid, count);
         return 1;
     }
     return 0;
-}
-
-forward CheckNodeProgress(npcid, nodeid);
-public CheckNodeProgress(npcid, nodeid)
-{
-    if (NPC_IsPlayingNode(npcid))
-    {
-        new totalPoints = NPC_GetNodePointCount(nodeid);
-        printf("NPC %d is navigating node %d with %d total points",
-            npcid, nodeid, totalPoints);
-    }
 }
 ```
 
@@ -77,8 +44,6 @@ public CheckNodeProgress(npcid, nodeid)
 
 - Returns 0 if the node is invalid or not opened
 - The point count represents navigation waypoints within the node
-- Use this to validate point indices before setting them
-- Points are indexed from 0 to (count - 1)
 
 ## Related Functions
 
