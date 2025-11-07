@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // 处理按键
         while (cmdtext[idx] == ' ') idx++;
         if (cmdtext[idx] == '\0')
-            return SendClientMessage(playerid, 0xFF0000FF, "用例: /setkeys [按键] [上下] [左右]");
+            return SendClientMessage(playerid, 0xFF0000FF, "用法：/setkeys [按键] [上下] [左右]");
         keys = strval(cmdtext[idx]);
 
         // 跳到下一个参数

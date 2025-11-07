@@ -29,7 +29,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new filepath[128];
         new len = strlen(cmdtext);
         if (len <= 15)
-            return SendClientMessage(playerid, 0xFF0000FF, "使用: /npcloadrecord [文件路径]");
+            return SendClientMessage(playerid, 0xFF0000FF, "用法：/npcloadrecord [文件路径]");
 
         strmid(filepath, cmdtext, 15, len);
 

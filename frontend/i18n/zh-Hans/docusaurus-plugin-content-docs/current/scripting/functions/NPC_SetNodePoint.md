@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         while (cmdtext[idx] == ' ') idx++;
 
         if (cmdtext[idx] == '\0')
-            return SendClientMessage(playerid, 0xFF0000FF, "用例: /npcsetnodepoint [节点id] [点id]");
+            return SendClientMessage(playerid, 0xFF0000FF, "用法：/npcsetnodepoint [节点id] [点id]");
 
         new pointid = strval(cmdtext[idx]);
 
