@@ -20,13 +20,17 @@ This callback is called when an NPC is successfully created and added to the ser
 ```c
 public OnNPCCreate(npcid)
 {
-    printf("NPC %d has been created", npcid);
+    printf("[NPC] NPC %d has been created", npcid);
 
-    // Set initial properties
-    NPC_SetSkin(npcid, 23);
-    NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
+    // Notify all connected players
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d has been created", npcid);
+    }
+    return 1;
 }
 ```
 

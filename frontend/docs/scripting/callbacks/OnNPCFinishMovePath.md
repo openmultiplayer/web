@@ -21,13 +21,20 @@ This callback is called when an NPC finishes moving along a predefined path.
 ```c
 public OnNPCFinishMovePath(npcid, pathid)
 {
-    printf("NPC %d finished moving along path %d", npcid, pathid);
+    // Find all players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    // Start moving on another path
-    NPC_MoveByPath(npcid, pathid + 1, NPC_MOVE_TYPE_WALK);
-
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d finished moving along path %d", npcid, pathid);
+        }
+    }
+    return 1;
 }
+
 ```
 
 ## Notes

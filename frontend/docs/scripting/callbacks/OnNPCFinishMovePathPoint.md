@@ -19,6 +19,25 @@ This callback is called when an NPC finishes moving to a specific point in a pat
 
 ## Examples
 
+```c
+public OnNPCFinishMovePathPoint(npcid, pathid, pointid)
+{
+    // Find all players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
+
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d reached point %d on path %d", npcid, pointid, pathid);
+        }
+    }
+    return 1;
+}
+
+```
+
 ## Notes
 
 - This callback is triggered for each point in the path

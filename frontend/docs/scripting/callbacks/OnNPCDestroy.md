@@ -20,17 +20,27 @@ This callback is called when an NPC is destroyed and removed from the server.
 ```c
 public OnNPCDestroy(npcid)
 {
-    printf("NPC %d has been destroyed", npcid);
+    printf("[NPC] NPC %d has been destroyed", npcid);
 
-    // Clean up timers
-    if (g_NPCTimer[npcid] != -1)
+    // Clear any player tracking this NPC and notify
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        KillTimer(g_NPCTimer[npcid]);
-        g_NPCTimer[npcid] = -1;
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            PlayerNPC[playerid] = INVALID_NPC_ID;
+            SendClientMessage(playerid, 0xFF0000FF, "Your tracked NPC %d has been destroyed", npcid);
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d has been destroyed", npcid);
+        }
+    }
+    return 1;
 }
+
 ```
 
 ## Notes

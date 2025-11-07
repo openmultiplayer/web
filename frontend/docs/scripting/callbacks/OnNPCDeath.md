@@ -20,27 +20,29 @@ This callback is called when an NPC dies.
 ## Examples
 
 ```c
-public OnNPCDeath(npcid, killerid, reason)
+public OnNPCDeath(npcid, killerid, WEAPON:reason)
 {
-    if (killerid != INVALID_PLAYER_ID)
+    printf("[NPC] NPC %d died (killer: %d, weapon: %d)", npcid, killerid, _:reason);
+
+    // Notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        printf("NPC %d was killed by %d with reason %d", npcid, killerid, reason);
+        if (!IsPlayerConnected(playerid))
+            continue;
+
+        if (PlayerNPC[playerid] == npcid)
+        {
+            if (killerid == INVALID_PLAYER_ID)
+            {
+                SendClientMessage(playerid, 0xFF0000FF, "Your tracked NPC %d died (weapon: %d)", npcid, _:reason);
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xFF0000FF, "Your tracked NPC %d was killed by player %d (weapon: %d)", npcid, killerid, _:reason);
+            }
+        }
     }
-    else
-    {
-        printf("NPC %d died", npcid);
-    }
-
-    // Respawn after 5 seconds
-    SetTimerEx("RespawnNPC", 5000, false, "i", npcid);
-
-    return true;
-}
-
-forward RespawnNPC(npcid);
-public RespawnNPC(npcid)
-{
-    NPC_Respawn(npcid);
+    return 1;
 }
 ```
 

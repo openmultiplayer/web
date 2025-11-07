@@ -26,17 +26,29 @@ Return `false` to prevent the damage from being applied, or `true` to allow it.
 ## Examples
 
 ```c
-public OnNPCTakeDamage(npcid, issuerid, Float:amount, weaponid, bodypart)
+public OnNPCTakeDamage(npcid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    printf("NPC %d took %.2f damage from %d", npcid, amount, issuerid);
-
-    // Make NPC aggressive when attacked
-    if (issuerid != INVALID_PLAYER_ID && !IsPlayerNPC(issuerid))
+    // Only notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        NPC_AimAtPlayer(npcid, issuerid, true, 100, true);
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            if (issuerid == INVALID_PLAYER_ID)
+            {
+                SendClientMessage(playerid, 0xFF8800FF, "NPC %d took %.1f damage (weapon: %d, bodypart: %d)",
+                    npcid, amount, _:weaponid, bodypart);
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xFF8800FF, "NPC %d took %.1f damage from player %d (weapon: %d, bodypart: %d)",
+                    npcid, amount, issuerid, _:weaponid, bodypart);
+            }
+        }
+    }
+    return 1;
 }
 ```
 

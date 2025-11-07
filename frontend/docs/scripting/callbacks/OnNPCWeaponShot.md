@@ -28,23 +28,29 @@ Return `false` to prevent the shot from being processed, or `true` to allow it.
 ## Examples
 
 ```c
-public OnNPCWeaponShot(npcid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
+public OnNPCWeaponShot(npcid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
-    printf("NPC %d fired weapon %d at %.2f, %.2f, %.2f", npcid, weaponid, fX, fY, fZ);
-
-    switch(hittype)
+    // Only notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        case BULLET_HIT_TYPE_PLAYER:
+        if (!IsPlayerConnected(playerid))
+            continue;
+
+        if (PlayerNPC[playerid] == npcid)
         {
-            printf("Hit player %d", hitid);
-        }
-        case BULLET_HIT_TYPE_VEHICLE:
-        {
-            printf("Hit vehicle %d", hitid);
+            static hitTypeNames[5][32] = {
+                "None",
+                "Player",
+                "Vehicle",
+                "Object",
+                "Player Object"
+            };
+
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d fired weapon %d at %s %d (%.2f, %.2f, %.2f)",
+                npcid, _:weaponid, hitTypeNames[_:hittype], hitid, fX, fY, fZ);
         }
     }
-
-    return true;
+    return 1;
 }
 ```
 

@@ -21,14 +21,22 @@ This callback is called when an NPC starts playback of a recorded file.
 ```c
 public OnNPCPlaybackStart(npcid, recordid)
 {
-    printf("NPC %d started playing record %d", npcid, recordid);
+    printf("[NPC] NPC %d started playback (record: %d)", npcid, recordid);
 
-    // Set properties during playback
-    NPC_SetHealth(npcid, 100.0);
-    NPC_SetArmour(npcid, 50.0);
+    // Notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d started playback (record ID: %d)", npcid, recordid);
+        }
+    }
+    return 1;
 }
+
 ```
 
 ## Notes

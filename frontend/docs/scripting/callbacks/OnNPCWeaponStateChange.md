@@ -20,17 +20,29 @@ This callback is called when an NPC's weapon state changes (e.g., reloading, run
 ## Examples
 
 ```c
-public OnNPCWeaponStateChange(npcid, newstate, oldstate)
+public OnNPCWeaponStateChange(npcid, newState, oldState)
 {
-    printf("NPC %d weapon state: %d -> %d", npcid, oldstate, newstate);
+    static weaponStates[5][64] = {
+        "Unknown",
+        "No ammo remaining",
+        "Single bullet left",
+        "More than one bullet left",
+        "Reloading"
+    };
 
-    if (newstate == WEAPONSTATE_NO_BULLETS)
+    // Only notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        // Give more ammo
-        NPC_SetAmmo(npcid, 100);
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d weapon state: %s -> %s",
+                npcid, weaponStates[oldState], weaponStates[newState]);
+        }
+    }
+    return 1;
 }
 ```
 

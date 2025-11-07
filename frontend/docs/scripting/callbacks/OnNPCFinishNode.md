@@ -19,14 +19,20 @@ This callback is called when an NPC finishes navigating a complete node during n
 ## Examples
 
 ```c
-public OnNPCFinishNode(npcid, nodeid)
+public OnNPCFinishNodePoint(npcid, nodeid, pointid)
 {
-    printf("NPC %d finished navigating node %d", npcid, nodeid);
+    // Notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    // Start navigation on next node
-    NPC_PlayNode(npcid, nodeid + 1, NPC_MOVE_TYPE_WALK, 1.0, 2.0, true);
-
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d reached node %d point %d", npcid, nodeid, pointid);
+        }
+    }
+    return 1;
 }
 ```
 

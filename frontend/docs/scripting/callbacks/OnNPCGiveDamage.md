@@ -26,17 +26,21 @@ Return `false` to prevent the damage from being applied, or `true` to allow it.
 ## Examples
 
 ```c
-public OnNPCGiveDamage(npcid, damagedid, Float:amount, weaponid, bodypart)
+public OnNPCGiveDamage(npcid, damagedid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    printf("NPC %d gave %.2f damage to player %d", npcid, amount, damagedid);
-
-    // Prevent NPCs from killing admins
-    if (IsPlayerAdmin(damagedid))
+    // Only notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        return false; // Block the damage
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true; // Allow the damage
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0xFF8800FF, "NPC %d dealt %.1f damage to player %d (weapon: %d, bodypart: %d)",
+                npcid, amount, damagedid, _:weaponid, bodypart);
+        }
+    }
+    return 1;
 }
 ```
 

@@ -20,14 +20,20 @@ This callback is called when an NPC finishes moving to its target destination.
 ```c
 public OnNPCFinishMove(npcid)
 {
-    printf("NPC %d has reached its destination", npcid);
+    // Find all players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    // Move to next destination
-    new Float:x, Float:y, Float:z;
-    NPC_GetPos(npcid, x, y, z);
-    NPC_Move(npcid, x + 10.0, y + 10.0, z, NPC_MOVE_TYPE_WALK);
-
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            new Float:x, Float:y, Float:z;
+            NPC_GetPos(npcid, x, y, z);
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d finished moving to position (%.2f, %.2f, %.2f)", npcid, x, y, z);
+        }
+    }
+    return 1;
 }
 ```
 

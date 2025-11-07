@@ -21,13 +21,22 @@ This callback is called when an NPC finishes playback of a recorded file.
 ```c
 public OnNPCPlaybackEnd(npcid, recordid)
 {
-    printf("NPC %d finished playing record %d", npcid, recordid);
+    printf("[NPC] NPC %d finished playback (record: %d)", npcid, recordid);
 
-    // Start another recording
-    NPC_StartPlayback(npcid, "another_recording", true);
+    // Notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d finished playback (record ID: %d)", npcid, recordid);
+        }
+    }
+    return 1;
 }
+
 ```
 
 ## Notes

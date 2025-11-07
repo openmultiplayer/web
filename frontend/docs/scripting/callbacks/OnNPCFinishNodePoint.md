@@ -20,24 +20,22 @@ This callback is called when an NPC reaches a specific point during node-based n
 ## Examples
 
 ```c
-public OnNPCFinishNodePoint(npcid, nodeid, pointid)
+public OnNPCFinishNode(npcid, nodeid)
 {
-    printf("NPC %d reached point %d in node %d", npcid, pointid, nodeid);
+    printf("[NPC] NPC %d finished node %d", npcid, nodeid);
 
-    // Pause at specific point
-    if (pointid == 10)
+    // Notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        NPC_PausePlayingNode(npcid);
-        SetTimerEx("ResumeNavigation", 3000, false, "i", npcid);
+        if (!IsPlayerConnected(playerid))
+            continue;
+
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d finished node %d", npcid, nodeid);
+        }
     }
-
-    return true;
-}
-
-forward ResumeNavigation(npcid);
-public ResumeNavigation(npcid)
-{
-    NPC_ResumePlayingNode(npcid);
+    return 1;
 }
 ```
 

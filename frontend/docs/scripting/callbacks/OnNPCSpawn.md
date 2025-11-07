@@ -18,14 +18,22 @@ This callback is called when an NPC spawns.
 ```c
 public OnNPCSpawn(npcid)
 {
-    printf("NPC %d spawned", npcid);
+    printf("[NPC] NPC %d has spawned", npcid);
 
-    // Set initial properties
-    NPC_SetHealth(npcid, 100.0);
-    NPC_SetArmour(npcid, 0.0);
-    NPC_SetWeapon(npcid, WEAPON_COLT45);
+    // Notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            new Float:x, Float:y, Float:z;
+            NPC_GetPos(npcid, x, y, z);
+            SendClientMessage(playerid, 0x00FF00FF, "Your tracked NPC %d spawned at (%.2f, %.2f, %.2f)", npcid, x, y, z);
+        }
+    }
+    return 1;
 }
 ```
 

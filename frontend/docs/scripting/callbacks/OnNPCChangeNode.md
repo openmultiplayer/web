@@ -26,21 +26,20 @@ Return `true` to allow the node change, or `false` to deny it.
 ```c
 public OnNPCChangeNode(npcid, newnodeid, oldnodeid)
 {
-    printf("NPC %d is changing from node %d to node %d", npcid, oldnodeid, newnodeid);
+    printf("[NPC] NPC %d changed from node %d to node %d", npcid, oldnodeid, newnodeid);
 
-    // Check if the new node is open
-    if (!NPC_IsNodeOpen(newnodeid))
+    // Notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
-        return false; // Deny change to closed node
-    }
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    // Prevent NPCs from going to node 5
-    if (newnodeid == 5)
-    {
-        return false; // Block access to node 5
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d changed from node %d to node %d", npcid, oldnodeid, newnodeid);
+        }
     }
-
-    return true; // Allow the change
+    return 1;
 }
 ```
 

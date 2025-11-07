@@ -20,13 +20,20 @@ This callback is called when an NPC respawns.
 ```c
 public OnNPCRespawn(npcid)
 {
-    printf("NPC %d has respawned", npcid);
+    printf("[NPC] NPC %d has respawned", npcid);
 
-    // Set respawn position
-    NPC_SetPos(npcid, 1958.33, 1343.12, 15.36);
-    NPC_SetFacingAngle(npcid, 0.0);
+    // Notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
 
-    return true;
+        if (PlayerNPC[playerid] == npcid)
+        {
+            SendClientMessage(playerid, 0x00FF00FF, "Your tracked NPC %d has respawned", npcid);
+        }
+    }
+    return 1;
 }
 ```
 
