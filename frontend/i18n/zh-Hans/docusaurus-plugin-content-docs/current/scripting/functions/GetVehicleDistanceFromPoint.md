@@ -23,7 +23,7 @@ tags: ["车辆"]
 ## 示例
 
 ```c
-/* 当玩家在聊天框输入'vendingmachine'时触发此功能 */
+/* 当玩家在聊天框输入'vendingmachine'时触发此函数 */
 public OnPlayerText(playerid, text[])
 {
     if (strcmp(text, "vendingmachine", true) == 0)

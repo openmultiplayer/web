@@ -41,7 +41,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 :::tip
 
-在正常圣安地列斯地图边界内此功能无效
+在正常圣安地列斯地图边界内此函数无效
 
 :::
 

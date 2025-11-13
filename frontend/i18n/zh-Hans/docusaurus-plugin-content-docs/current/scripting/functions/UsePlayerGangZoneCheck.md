@@ -64,14 +64,14 @@ public OnPlayerLeavePlayerGangZone(playerid, zoneid)
 
 ## 相关回调
 
-以下回调函数与此功能相关：
+以下回调函数与此函数相关：
 
 - [OnPlayerEnterPlayerGangZone](../callbacks/OnPlayerEnterPlayerGangZone): 玩家进入专属帮派区域时触发
 - [OnPlayerLeavePlayerGangZone](../callbacks/OnPlayerLeavePlayerGangZone): 玩家离开专属帮派区域时触发
 
 ## 相关函数
 
-以下函数与此功能相关：
+以下函数与此函数相关：
 
 - [CreatePlayerGangZone](CreatePlayerGangZone): 创建玩家专属帮派区域
 - [PlayerGangZoneDestroy](PlayerGangZoneDestroy): 销毁玩家专属帮派区域

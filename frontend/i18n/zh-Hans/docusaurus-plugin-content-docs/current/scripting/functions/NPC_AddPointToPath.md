@@ -60,10 +60,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_CreatePath](NPC_CreatePath): 创建新路径
 - [NPC_RemovePointFromPath](NPC_RemovePointFromPath): 从路径中移除路径点
+- [NPC_GetPathPoint](NPC_GetPathPoint): 获取特定点的详细信息
 - [NPC_MoveByPath](NPC_MoveByPath): 使 NPC 沿路径移动
 - [NPC_GetPathPointCount](NPC_GetPathPointCount): 获取路径中的路径点数量
 
 ## 相关回调
 
+- [OnNPCFinishMovePathPoint](../callbacks/OnNPCFinishMovePathPoint): NPC 到达每个路径点时调用
 - [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): NPC 完成沿路径移动时调用
 - [OnNPCFinishMove](../callbacks/OnNPCFinishMove): NPC 完成任何移动时调用

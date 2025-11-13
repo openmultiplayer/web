@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-需先启用[AllowAdminTeleport](AllowAdminTeleport)且玩家具有管理员权限，本功能方可生效。
+需先启用[AllowAdminTeleport](AllowAdminTeleport)且玩家具有管理员权限，本函数方可生效。
 
 :::
 

@@ -31,7 +31,7 @@ AttachTrailerToVehicle(trailerId, vehicleId);
 
 :::warning
 
-该功能仅在两个车辆均被玩家流加载时生效（参见[IsVehicleStreamedIn](IsVehicleStreamedIn)）。
+该函数仅在两个车辆均被玩家流加载时生效（参见[IsVehicleStreamedIn](IsVehicleStreamedIn)）。
 
 :::
 

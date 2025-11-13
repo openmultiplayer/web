@@ -69,7 +69,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-本功能默认禁用以节省带宽，需使用[EnablePlayerCameraTarget](EnablePlayerCameraTarget)为每个玩家单独启用
+本函数默认禁用以节省带宽，需使用[EnablePlayerCameraTarget](EnablePlayerCameraTarget)为每个玩家单独启用
 
 :::
 

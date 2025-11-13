@@ -56,18 +56,21 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 路径必须在使用前通过 NPC_CreatePath 创建
-- 使用 NPC_AddPointToPath 向路径添加路径点
-- 路径类型包括循环、单次和往返模式
-- 移动标志可以组合使用以实现不同行为
+- 路径必须通过 `NPC_CreatePath` 创建，且调用本函数前路径至少需包含一个路径点
+- 使用 `NPC_AddPointToPath` 构建行进路线，若需重置路径请调用 `NPC_ClearPath`
+- 设置 `reversed = true` 可使 NPC 按相反顺序遍历路径
+- 当 NPC 无效、正在执行不兼容动作或路径无法被跟随时，返回 `false`
 
 ## 相关函数
 
 - [NPC_CreatePath](NPC_CreatePath): 创建新路径
 - [NPC_AddPointToPath](NPC_AddPointToPath): 向路径添加点
+- [NPC_ClearPath](NPC_ClearPath): 清除路径中的所有点
 - [NPC_StopMove](NPC_StopMove): 停止路径移动
 - [NPC_GetCurrentPathPointIndex](NPC_GetCurrentPathPointIndex): 获取当前点
 
 ## 相关回调
 
 - [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): NPC 完成路径移动时调用
+- [OnNPCFinishMovePathPoint](../callbacks/OnNPCFinishMovePathPoint): NPC 到达每个路径点时调用
+- [OnNPCFinishMove](../callbacks/OnNPCFinishMove): NPC 完成移动时调用

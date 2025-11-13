@@ -23,7 +23,7 @@ public OnGameModeInit()
 
 :::warning
 
-该功能在服务器重启前不可逆。
+该函数在服务器重启前不可逆。
 
 :::
 

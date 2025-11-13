@@ -17,7 +17,7 @@ tags: []
 
 ## 描述
 
-向所有玩家发送格式化聊天消息（该函数已弃用，请使用 SendClientMessageToAll 替代）。此功能等同于对每个玩家调用 SendClientMessage。
+向所有玩家发送格式化聊天消息（该函数已弃用，请使用 SendClientMessageToAll 替代）。此函数等同于对每个玩家调用 SendClientMessage。
 
 | 参数              | 说明                                     |
 | ----------------- | ---------------------------------------- |

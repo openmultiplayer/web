@@ -62,7 +62,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - NPC 必须当前正在播放节点才能更改
 - 目标节点必须先使用 `NPC_OpenNode` 打开
 - 链接 ID 决定节点之间的转换路径
-- 使用此功能创建复杂的导航模式
+- 使用此函数创建复杂的导航模式
 
 ## 相关函数
 

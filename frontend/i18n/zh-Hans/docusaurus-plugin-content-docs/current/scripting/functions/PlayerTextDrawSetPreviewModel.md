@@ -47,7 +47,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-必须使用字体类型`TEXT_DRAW_FONT_MODEL_PREVIEW`（模型预览字体）才能使此功能生效
+必须使用字体类型`TEXT_DRAW_FONT_MODEL_PREVIEW`（模型预览字体）才能使此函数生效
 
 :::
 

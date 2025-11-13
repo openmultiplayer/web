@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 :::warning
 
-本功能在当前 SA-MP 版本中无效！
+本函数在当前 SA-MP 版本中无效！
 
 :::
 

@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 - 该函数已在 SA-MP 0.3 版本移除
 - 轮胎爆胎机制默认启用
-- 若需禁用该功能，需通过 [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate) 回调手动实现
+- 若需禁用该函数，需通过 [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate) 回调手动实现
 
 :::
 
