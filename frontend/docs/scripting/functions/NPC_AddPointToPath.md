@@ -60,10 +60,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_CreatePath](NPC_CreatePath): Create a new path
 - [NPC_RemovePointFromPath](NPC_RemovePointFromPath): Remove a point from a path
+- [NPC_GetPathPoint](NPC_GetPathPoint): Get details about a specific point
 - [NPC_MoveByPath](NPC_MoveByPath): Make NPC follow a path
 - [NPC_GetPathPointCount](NPC_GetPathPointCount): Get number of points in a path
 
 ## Related Callbacks
 
+- [OnNPCFinishMovePathPoint](../callbacks/OnNPCFinishMovePathPoint): Called when NPC reaches each path point
 - [OnNPCFinishMovePath](../callbacks/OnNPCFinishMovePath): Called when NPC finishes moving along a path
 - [OnNPCFinishMove](../callbacks/OnNPCFinishMove): Called when NPC finishes any movement

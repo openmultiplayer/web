@@ -15,7 +15,7 @@ This callback is called when an NPC gives damage to a player.
 | --------- | ---------------------------------------------------- |
 | npcid     | The ID of the NPC that gave the damage               |
 | damagedid | The ID of the player that received the damage        |
-| amount    | The amount of damage that was given                  |
+| damage    | The amount of damage that was given                  |
 | weaponid  | The weapon ID used to give the damage                |
 | bodypart  | The [body part](../resources/bodyparts) that was hit |
 
@@ -26,7 +26,7 @@ Return `false` to prevent the damage from being applied, or `true` to allow it.
 ## Examples
 
 ```c
-public OnNPCGiveDamage(npcid, damagedid, Float:amount, WEAPON:weaponid, bodypart)
+public OnNPCGiveDamage(npcid, damagedid, Float:damage, WEAPON:weaponid, bodypart)
 {
     // Only notify players tracking this NPC
     for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
@@ -37,7 +37,7 @@ public OnNPCGiveDamage(npcid, damagedid, Float:amount, WEAPON:weaponid, bodypart
         if (PlayerNPC[playerid] == npcid)
         {
             SendClientMessage(playerid, 0xFF8800FF, "NPC %d dealt %.1f damage to player %d (weapon: %d, bodypart: %d)",
-                npcid, amount, damagedid, _:weaponid, bodypart);
+                npcid, damage, damagedid, _:weaponid, bodypart);
         }
     }
     return 1;

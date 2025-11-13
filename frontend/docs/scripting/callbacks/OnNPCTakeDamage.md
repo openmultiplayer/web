@@ -11,13 +11,13 @@ tags: ["npc", "damage"]
 
 This callback is called when an NPC takes damage from a player or another NPC.
 
-| Name     | Description                                          |
-| -------- | ---------------------------------------------------- |
-| npcid    | The ID of the NPC that took damage                   |
-| issuerid | The ID of the player/NPC that caused the damage      |
-| amount   | The amount of damage that was taken                  |
-| weaponid | The weapon ID used to cause the damage               |
-| bodypart | The [body part](../resources/bodyparts) that was hit |
+| Name      | Description                                          |
+| --------- | ---------------------------------------------------- |
+| npcid     | The ID of the NPC that took damage                   |
+| damagerid | The ID of the player/NPC that caused the damage      |
+| damage    | The amount of damage that was taken                  |
+| weaponid  | The weapon ID used to cause the damage               |
+| bodypart  | The [body part](../resources/bodyparts) that was hit |
 
 ## Returns
 
@@ -26,7 +26,7 @@ Return `false` to prevent the damage from being applied, or `true` to allow it.
 ## Examples
 
 ```c
-public OnNPCTakeDamage(npcid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
+public OnNPCTakeDamage(npcid, damagerid, Float:damage, WEAPON:weaponid, bodypart)
 {
     // Only notify players tracking this NPC
     for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
@@ -36,15 +36,15 @@ public OnNPCTakeDamage(npcid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 
         if (PlayerNPC[playerid] == npcid)
         {
-            if (issuerid == INVALID_PLAYER_ID)
+            if (damagerid == INVALID_PLAYER_ID)
             {
                 SendClientMessage(playerid, 0xFF8800FF, "NPC %d took %.1f damage (weapon: %d, bodypart: %d)",
-                    npcid, amount, _:weaponid, bodypart);
+                    npcid, damage, _:weaponid, bodypart);
             }
             else
             {
                 SendClientMessage(playerid, 0xFF8800FF, "NPC %d took %.1f damage from player %d (weapon: %d, bodypart: %d)",
-                    npcid, amount, issuerid, _:weaponid, bodypart);
+                    npcid, damage, damagerid, _:weaponid, bodypart);
             }
         }
     }
@@ -56,7 +56,7 @@ public OnNPCTakeDamage(npcid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 
 - This callback is called before the damage is actually applied to the NPC
 - Returning `false` will prevent the damage from being applied
-- The `issuerid` parameter will be `INVALID_PLAYER_ID` if damage is not caused by player
+- The `damagerid` parameter will be `INVALID_PLAYER_ID` if damage is not caused by player
 - Body parts use the same constants as `OnPlayerTakeDamage`
 
 ## Related Functions
