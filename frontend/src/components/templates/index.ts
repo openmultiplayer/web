@@ -14,9 +14,9 @@ import VersionWarnES from "./translations/es/version-warning";
 import LowercaseNoteES from "./translations/es/lowercase-note";
 import TipNPCCallbacksES from "./translations/es/npc-callbacks-tip";
 
-import VersionWarnZH_CN from "./translations/zh-CN/version-warning";
-import LowercaseNoteZH_CN from "./translations/zh-CN/lowercase-note";
-import TipNPCCallbacksZH_CN from "./translations/zh-CN/npc-callbacks-tip";
+import VersionWarnZH_Hans from "./translations/zh-Hans/version-warning";
+import LowercaseNoteZH_Hans from "./translations/zh-Hans/lowercase-note";
+import TipNPCCallbacksZH_Hans from "./translations/zh-Hans/npc-callbacks-tip";
 
 import VersionWarnTR from "./translations/tr/version-warning";
 import LowercaseNoteTR from "./translations/tr/lowercase-note";
@@ -43,9 +43,9 @@ const templates = {
   VersionWarnES,
   LowercaseNoteES,
   TipNPCCallbacksES,
-  VersionWarnZH_CN,
-  LowercaseNoteZH_CN,
-  TipNPCCallbacksZH_CN,
+  VersionWarnZH_Hans,
+  LowercaseNoteZH_Hans,
+  TipNPCCallbacksZH_Hans,
   VersionWarnTR,
   LowercaseNoteTR,
   TipNPCCallbacksTR,
