@@ -14,7 +14,7 @@ Sets the delay between loading main scripts, in seconds.
 ## Parameters
 
 | Name          | Description         |
-|---------------|---------------------|
+| ------------- | ------------------- |
 | Float:seconds | Seconds to restart. |
 
 ## Return Values

@@ -32,12 +32,12 @@ public OnGameModeInit()
 {
     gangZone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
 
-    new 
+    new
         Float:minX,
         Float:minY,
         Float:maxX,
         Float:maxY;
-    
+
     GangZoneGetPos(gangZone, minX, minY, maxX, maxY);
     return 1;
 }

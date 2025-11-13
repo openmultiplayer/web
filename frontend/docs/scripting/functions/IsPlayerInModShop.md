@@ -14,7 +14,7 @@ Check if the player is in the mod shop.
 ## Parameters
 
 | Name     | Description                    |
-|----------|--------------------------------|
+| -------- | ------------------------------ |
 | playerid | The ID of the player to check. |
 
 ## Return Values
@@ -38,13 +38,13 @@ else
 
 ## Related Functions
 
-The following functions might be useful, as they're related to this callback in one way or another. 
+The following functions might be useful, as they're related to this callback in one way or another.
 
 - [AddVehicleComponent](AddVehicleComponent): Add a component to a vehicle.
 
 ## Related Callbacks
 
-The following callbacks might be useful, as they're related to this callback in one way or another. 
+The following callbacks might be useful, as they're related to this callback in one way or another.
 
 - [OnVehicleMod](../callbacks/OnVehicleMod): This callback is called when a vehicle is modded.
 - [OnVehicleRespray](../callbacks/OnVehicleRespray): This callback is called when a player exits a mod shop, even if the colors weren't changed.

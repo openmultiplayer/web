@@ -14,7 +14,7 @@ Turn the siren for a vehicle on or off.
 ## Parameters
 
 | Name         | Description                   |
-|--------------|-------------------------------|
+| ------------ | ----------------------------- |
 | vehicleid    | The ID of the vehicle.        |
 | bool:enabled | **true**: On - **false**: Off |
 

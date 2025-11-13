@@ -14,7 +14,7 @@ Gets the speed of the player's train.
 ## Parameters
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Examples

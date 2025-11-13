@@ -14,7 +14,7 @@ Checks if a vehicle siren is on or off.
 ## Parameters
 
 | Name      | Description                     |
-|-----------|---------------------------------|
+| --------- | ------------------------------- |
 | vehicleid | The ID of the vehicle to check. |
 
 ## Return Values

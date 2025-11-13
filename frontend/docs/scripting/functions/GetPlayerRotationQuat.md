@@ -12,7 +12,7 @@ tags: ["player"]
 Returns a player's rotation on all axes as a quaternion.
 
 | Name     | Description                                                                          |
-|----------|--------------------------------------------------------------------------------------|
+| -------- | ------------------------------------------------------------------------------------ |
 | playerid | The ID of the player to get the rotation of.                                         |
 | &Float:w | A float variable in which to store the first quaternion angle, passed by reference.  |
 | &Float:x | A float variable in which to store the second quaternion angle, passed by reference. |
@@ -30,7 +30,7 @@ The player's rotation is stored in the specified variables.
 ## Examples
 
 ```c
-new 
+new
     Float:w,
     Float:x,
     Float:y,

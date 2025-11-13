@@ -10,7 +10,7 @@ tags: ["player", "gametext"]
 Shows 'game text' (on-screen text) for a certain length of time for a specific player.
 
 | Name             | Description                                                       |
-|------------------|-------------------------------------------------------------------|
+| ---------------- | ----------------------------------------------------------------- |
 | playerid         | The ID of the player to show the gametext for.                    |
 | const format[]   | The text to be displayed.                                         |
 | time             | The duration of the text being shown in milliseconds.             |

@@ -12,7 +12,7 @@ tags: ["player", "object", "playerobject"]
 Get the move target position of a player-object.
 
 | Name           | Description                                                                     |
-|----------------|---------------------------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------------------------- |
 | playerid       | The ID of the player.                                                           |
 | objectid       | The ID of the player-object to get the move target position of.                 |
 | &Float:targetX | A float variable in which to store the targetX coordinate, passed by reference. |
@@ -31,7 +31,7 @@ Get the move target position of a player-object.
 new playerobjectid = CreatePlayerObject(playerid, 985, 1003.39154, -643.33423, 122.35060,   0.00000, 1.00000, 24.00000);
 MovePlayerObject(playerid, playerobjectid, 1003.3915, -643.3342, 114.5122,  0.8);
 
-new 
+new
     Float:targetX,
     Float:targetY,
     Float:targetZ;

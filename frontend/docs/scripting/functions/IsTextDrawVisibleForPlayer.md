@@ -11,10 +11,10 @@ tags: ["textdraw"]
 
 Checks if a textdraw is shown for a player.
 
-| Name        | Description                      |
-| ----------- | -------------------------------- |
-| playerid    | The ID of the player to check.   |
-| Text:textid | The ID of the textdraw.          |
+| Name        | Description                    |
+| ----------- | ------------------------------ |
+| playerid    | The ID of the player to check. |
+| Text:textid | The ID of the textdraw.        |
 
 ## Returns
 

@@ -17,10 +17,10 @@ This function is deprecated, Use [HTTP](HTTP) or [pawn-requests](https://github.
 
 Sends a packet containing a string.
 
-| Name                     | Description                                                                                                                                                                                  |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| const message[]          | The buffer that contains the string to send.  If this is an unpacked string,  it will be UTF-8 encoded before being transferred.                                                             |
-| const destination[] = "" | The IP address and port number to which the packet must be sent.  If absent or an empty string, this function will broadcast the packet and use the default port number 9930 *(optional="")* |
+| Name                     | Description                                                                                                                                                                                 |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| const message[]          | The buffer that contains the string to send. If this is an unpacked string, it will be UTF-8 encoded before being transferred.                                                              |
+| const destination[] = "" | The IP address and port number to which the packet must be sent. If absent or an empty string, this function will broadcast the packet and use the default port number 9930 _(optional="")_ |
 
 ## Return Values
 

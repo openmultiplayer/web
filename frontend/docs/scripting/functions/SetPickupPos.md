@@ -12,7 +12,7 @@ tags: ["pickup"]
 Sets the position of a pickup.
 
 | Name               | Description                              |
-|--------------------|------------------------------------------|
+| ------------------ | ---------------------------------------- |
 | pickupid           | The ID of the pickup.                    |
 | Float:x            | The x coordinate to set the pickup at.   |
 | Float:y            | The y coordinate to set the pickup at.   |

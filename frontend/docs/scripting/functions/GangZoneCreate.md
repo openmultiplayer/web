@@ -49,7 +49,7 @@ public OnGameModeInit()
 
 :::warning
 
-- There is a limit of 1024 gangzones. 
+- There is a limit of 1024 gangzones.
 - Putting the parameters in the wrong order results in glitchy behavior.
 
 :::

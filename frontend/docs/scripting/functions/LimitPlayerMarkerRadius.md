@@ -9,9 +9,9 @@ tags: ["player"]
 
 Set the player marker radius.
 
-| Name                | Description                          |
-| ------------------- | ------------------------------------ |
-| Float:markerRadius  | The radius that markers will show at |
+| Name               | Description                          |
+| ------------------ | ------------------------------------ |
+| Float:markerRadius | The radius that markers will show at |
 
 ## Returns
 

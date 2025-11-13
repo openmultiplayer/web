@@ -11,13 +11,13 @@ tags: ["menu"]
 
 Get the text in the specified cell - addressed by column and row.
 
-| Name      | Description                                                       |
-| --------- | ----------------------------------------------------------------- |
-| Menu:menuid  | The ID of the menu.  |
-| column | The column. |
-| row | The row to get the text of. |
-| cell[] | An array into which to store the text, passed by reference. |
-| len | The length of the string that should be stored. |
+| Name        | Description                                                 |
+| ----------- | ----------------------------------------------------------- |
+| Menu:menuid | The ID of the menu.                                         |
+| column      | The column.                                                 |
+| row         | The row to get the text of.                                 |
+| cell[]      | An array into which to store the text, passed by reference. |
+| len         | The length of the string that should be stored.             |
 
 ## Returns
 

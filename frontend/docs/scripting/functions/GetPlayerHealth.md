@@ -31,10 +31,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         // Sets players health to 50 if it was lower than
         // 50 before, as soon as he typed /doctor
-        
+
         new Float:health;
         GetPlayerHealth(playerid, health);
-        
+
         if (health < 50.0)
         {
             SetPlayerHealth(playerid, 50.0);

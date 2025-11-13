@@ -35,7 +35,7 @@ public OnGameModeInit()
     TextDrawTextSize(gMyTextdraw, 40.0, 40.0);
     TextDrawSetPreviewModel(gMyTextdraw, 411);
     TextDrawSetPreviewRot(gMyTextdraw, -10.0, 0.0, -20.0, 1.0);
-    
+
     // You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
     return 1;
 }

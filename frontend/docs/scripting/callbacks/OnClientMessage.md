@@ -5,6 +5,12 @@ description: This callback gets called whenever the NPC sees a ClientMessage.
 tags: []
 ---
 
+:::warning
+
+This callback is deprecated.
+
+:::
+
 ## Description
 
 This callback gets called whenever the NPC sees a ClientMessage. This will be everytime a [SendClientMessageToAll](../functions/SendClientMessageToAll) function is used and everytime a [SendClientMessage](../functions/SendClientMessage) function is sent towards the NPC. This callback won't be called when someone says something. For a version of this with player text, see [NPC:OnPlayerText](OnPlayerText).

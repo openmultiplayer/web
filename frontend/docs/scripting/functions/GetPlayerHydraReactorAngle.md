@@ -14,7 +14,7 @@ Gets the hydra reactor angle of the player's vehicle.
 ## Parameters
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Examples

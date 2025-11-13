@@ -10,7 +10,7 @@ tags: []
 This function sends a message to a specific player with a chosen color in the chat. The whole line in the chatbox will be in the set color unless color embedding is used.
 
 | Name             | Description                                           |
-|------------------|-------------------------------------------------------|
+| ---------------- | ----------------------------------------------------- |
 | playerid         | The ID of the player to display the message to.       |
 | color            | The color of the message (0xRRGGBBAA Hex format).     |
 | const format[]   | The text that will be displayed (max 144 characters). |

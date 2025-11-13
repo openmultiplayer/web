@@ -20,7 +20,7 @@ Gets the player's last synced vehicle ID.
 ## Parameters
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Return Values

@@ -33,7 +33,7 @@ public OnGameModeInit()
     TextDrawTextSize(gMyTextdraw, 40.0, 40.0);
     TextDrawSetPreviewModel(gMyTextdraw, 411);
     TextDrawSetPreviewRot(gMyTextdraw, -10.0, 0.0, -20.0, 1.0);
-    
+
     new Float:rotationX, Float:rotationY, Float:rotationZ, Float:zoom;
     TextDrawGetPreviewRot(gMyTextdraw, rotationX, rotationY, rotationZ, zoom);
     // rotationX = -10.0

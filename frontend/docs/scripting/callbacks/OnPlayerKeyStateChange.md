@@ -9,11 +9,11 @@ tags: ["player"]
 
 This callback is called when the state of any [supported](../resources/keys) key is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
 
-| Name     | Description                                                                                   |
-| -------- | --------------------------------------------------------------------------------------------- |
-| playerid | The ID of the player that pressed or released a key.                                          |
-| KEY:newkeys  | A map (bitmask) of the keys currently held - [see here](../resources/keys)                    |
-| KEY:oldkeys  | A map (bitmask) of the keys held prior to the current change - [see here](../resources/keys). |
+| Name        | Description                                                                                   |
+| ----------- | --------------------------------------------------------------------------------------------- |
+| playerid    | The ID of the player that pressed or released a key.                                          |
+| KEY:newkeys | A map (bitmask) of the keys currently held - [see here](../resources/keys)                    |
+| KEY:oldkeys | A map (bitmask) of the keys held prior to the current change - [see here](../resources/keys). |
 
 ## Returns
 

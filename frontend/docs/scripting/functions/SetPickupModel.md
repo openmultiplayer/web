@@ -12,7 +12,7 @@ tags: ["pickup"]
 Sets the model of a pickup.
 
 | Name               | Description                                 |
-|--------------------|---------------------------------------------|
+| ------------------ | ------------------------------------------- |
 | pickupid           | The ID of the pickup.                       |
 | model              | The [model](../resources/pickupids) to set. |
 | bool:update = true | Update pickup for everyone. (true/false)    |

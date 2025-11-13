@@ -47,7 +47,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 forward UpdateVehicleHealthTextDraw(playerid);
 public UpdateVehicleHealthTextDraw(playerid)
 {
-    new 
+    new
         string[32],
         vehicleid = GetPlayerVehicleID(playerid),
         Float:health;

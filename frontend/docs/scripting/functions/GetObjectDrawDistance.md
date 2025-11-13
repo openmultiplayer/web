@@ -12,7 +12,7 @@ tags: ["object"]
 Get the draw distance of an object.
 
 | Name     | Description                                      |
-|----------|--------------------------------------------------|
+| -------- | ------------------------------------------------ |
 | objectid | The ID of the object to get the draw distance of |
 
 ## Returns

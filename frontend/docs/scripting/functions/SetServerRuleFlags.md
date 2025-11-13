@@ -20,7 +20,7 @@ Sets the flags of a server rule.
 ## Parameters
 
 | Name                      | Description           |
-|---------------------------|-----------------------|
+| ------------------------- | --------------------- |
 | const rule[]              | The server rule name. |
 | E_SERVER_RULE_FLAGS:flags | The flags to set.     |
 

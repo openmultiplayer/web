@@ -14,7 +14,7 @@ Gets the vehicle spawn location and colours.
 ## Parameters
 
 | Name          | Description                                                                    |
-|---------------|--------------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------------ |
 | vehicleid     | The ID of the vehicle.                                                         |
 | &Float:spawnX | A float variable in which to store the spawnX coordinate, passed by reference. |
 | &Float:spawnY | A float variable in which to store the spawnY coordinate, passed by reference. |
@@ -30,7 +30,7 @@ public OnGameModeInit()
 {
     new vehicleid = CreateVehicle(560, 2096.1917, -1328.5150, 25.1059, 0.0000, 6, 0, 100);
 
-    new 
+    new
         Float:spawnX,
         Float:spawnY,
         Float:spawnZ,

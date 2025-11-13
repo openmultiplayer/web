@@ -31,7 +31,7 @@ public OnPlayerText(playerid, text[])
         new
             string[64],
             vehicleid = GetPlayerVehicleID(playerid);
-        
+
         new
             Float:distance = GetVehicleDistanceFromPoint(vehicleid, 237.9, 115.6, 1010.2);
 

@@ -12,7 +12,7 @@ tags: ["player"]
 Checks if a player is spawned.
 
 | Name     | Description                    |
-|----------|--------------------------------|
+| -------- | ------------------------------ |
 | playerid | The ID of the player to check. |
 
 ## Returns

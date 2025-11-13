@@ -11,10 +11,10 @@ tags: ["player"]
 
 Gets an array variable of the IDs of the current players on the server.
 
-| Name          | Description                                                       |
-| ------------- | ----------------------------------------------------------------- |
-| players[]     | An array into which to store the player IDs, passed by reference. |
-| size          | The size of the array.                                            |
+| Name      | Description                                                       |
+| --------- | ----------------------------------------------------------------- |
+| players[] | An array into which to store the player IDs, passed by reference. |
+| size      | The size of the array.                                            |
 
 ## Returns
 

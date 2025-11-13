@@ -12,7 +12,7 @@ tags: ["player"]
 Gets a player's surfing offsets.
 
 | Name           | Description                                                                      |
-|----------------|----------------------------------------------------------------------------------|
+| -------------- | -------------------------------------------------------------------------------- |
 | playerid       | The ID of the player.                                                            |
 | &Float:offsetX | A float variable in which to store the offset X coordinate, passed by reference. |
 | &Float:offsetY | A float variable in which to store the offset Y coordinate, passed by reference. |
@@ -28,13 +28,13 @@ This function does not return any specific value.
 new surfingVehicleId = GetPlayerSurfingVehicleID(playerid);
 if (surfingVehicleId != INVALID_VEHICLE_ID)
 {
-    new 
+    new
         Float:offsetX,
         Float:offsetY,
         Float:offsetZ;
 
     GetPlayerSurfingOffsets(playerid, offsetX, offsetY, offsetZ);
-    
+
     SendClientMessage(playerid, -1, "offsetX = %.2f offsetY = %.2f offsetZ = %.2f", offsetX, offsetY, offsetZ);
 }
 ```

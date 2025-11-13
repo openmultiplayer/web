@@ -12,7 +12,7 @@ tags: ["player", "rcon", "administration"]
 Sets the player as an RCON admin.
 
 | Name       | Description                                                              |
-|------------|--------------------------------------------------------------------------|
+| ---------- | ------------------------------------------------------------------------ |
 | playerid   | The ID of the player.                                                    |
 | bool:admin | **true** for set as an RCON admin, **false** for remove from RCON admin. |
 

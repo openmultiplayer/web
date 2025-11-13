@@ -12,7 +12,7 @@ tags: ["player", "object", "playerobject"]
 Get the attachment data of a player-object.
 
 | Name           | Description                                                             |
-|----------------|-------------------------------------------------------------------------|
+| -------------- | ----------------------------------------------------------------------- |
 | playerid       | The ID of the player                                                    |
 | objectid       | The ID of the player-object to get the attachment data of               |
 | &parentVehicle | A variable in which to store the parentVehicle ID, passed by reference. |
@@ -28,7 +28,7 @@ Get the attachment data of a player-object.
 ## Examples
 
 ```c
-new 
+new
     parentVehicle,
     parentObject,
     parentPlayer;

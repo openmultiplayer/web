@@ -12,7 +12,7 @@ tags: ["actor"]
 Set the skin of the actor.
 
 | Name    | Description                     |
-|---------|---------------------------------|
+| ------- | ------------------------------- |
 | actorid | The ID of the actor to set.     |
 | skin    | The ID of the skin to give them |
 

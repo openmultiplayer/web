@@ -14,7 +14,7 @@ Get an argument that was passed to a function.
 | Name  | Description                                                 |
 | ----- | ----------------------------------------------------------- |
 | arg   | The argument sequence number. Use 0 for first argument.     |
-| index | The index (in case the argument is an array) *(optional=0)* |
+| index | The index (in case the argument is an array) _(optional=0)_ |
 
 ## Returns
 

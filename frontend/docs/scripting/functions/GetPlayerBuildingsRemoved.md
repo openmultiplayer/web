@@ -12,7 +12,7 @@ tags: ["player"]
 Gets the number of removed buildings for a player.
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Returns

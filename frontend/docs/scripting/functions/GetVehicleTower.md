@@ -15,9 +15,9 @@ This function is deprecated, See [GetVehicleCab](GetVehicleCab).
 
 Get the ID of the cab attached to a vehicle.
 
-| Name      | Description                                  |
-| --------- | -------------------------------------------- |
-| vehicleid | The ID of the vehicle to get the cab of.     |
+| Name      | Description                              |
+| --------- | ---------------------------------------- |
+| vehicleid | The ID of the vehicle to get the cab of. |
 
 ## Returns
 

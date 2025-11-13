@@ -20,7 +20,7 @@ Checks if a vehicle is hidden.
 ## Parameters
 
 | Name      | Description                     |
-|-----------|---------------------------------|
+| --------- | ------------------------------- |
 | vehicleid | The ID of the vehicle to check. |
 
 ## Return Values

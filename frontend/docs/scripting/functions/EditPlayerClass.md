@@ -12,7 +12,7 @@ tags: ["class"]
 Edit a class data.
 
 | Name           | Description                                                      |
-|----------------|------------------------------------------------------------------|
+| -------------- | ---------------------------------------------------------------- |
 | classid        | The class id to edit.                                            |
 | team           | The team you want the player to spawn in.                        |
 | skin           | The [skin](../resources/skins) which the player will spawn with. |

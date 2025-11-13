@@ -14,7 +14,7 @@ Hide an object for a player.
 ## Parameters
 
 | Name     | Description                              |
-|----------|------------------------------------------|
+| -------- | ---------------------------------------- |
 | playerid | The ID of the player.                    |
 | objectid | The ID of the object to hide for player. |
 

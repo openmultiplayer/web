@@ -11,9 +11,9 @@ tags: ["animation"]
 
 Checks if the given animation library is valid.
 
-| Name         | Description                                                 |
-| ------------ | ----------------------------------------------------------- |
-| const name[] | The animation library name to check.                        |
+| Name         | Description                          |
+| ------------ | ------------------------------------ |
+| const name[] | The animation library name to check. |
 
 ## Returns
 

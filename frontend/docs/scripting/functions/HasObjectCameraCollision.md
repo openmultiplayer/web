@@ -12,7 +12,7 @@ tags: ["object"]
 Checks if an object has camera collision enabled. ([SetObjectNoCameraCollision](SetObjectNoCameraCollision))
 
 | Name     | Description                    |
-|----------|--------------------------------|
+| -------- | ------------------------------ |
 | objectid | The ID of the object to check. |
 
 ## Returns

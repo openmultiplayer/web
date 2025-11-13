@@ -12,7 +12,7 @@ tags: ["player", "pickup", "playerpickup"]
 Gets the type of a player-pickup.
 
 | Name     | Description                                     |
-|----------|-------------------------------------------------|
+| -------- | ----------------------------------------------- |
 | playerid | The ID of the player.                           |
 | pickupid | The ID of the player-pickup to get the type of. |
 

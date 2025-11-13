@@ -19,9 +19,9 @@ This function has not yet been implemented.
 
 Returns the free disk space.
 
-| Name                | Description                                                                                                                        |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| const volume[] = "" | The name of the volume on systems that support multiple disks or multiple memory cards.  On single-volume systems, it is optional. |
+| Name                | Description                                                                                                                       |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| const volume[] = "" | The name of the volume on systems that support multiple disks or multiple memory cards. On single-volume systems, it is optional. |
 
 ## Returns
 

@@ -17,7 +17,7 @@ Set the file attributes.
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | const filename[] | The name of the file.                                                                                                     |
 | timestamp = 0    | Time of the last modification of the file. When this parameter is set to zero, the time stamp of the file is not changed. |
-| attrib = 0x0F    | A bit mask with the new attributes of the file.  When set to 0x0F, the attributes of the file are not changed.            |
+| attrib = 0x0F    | A bit mask with the new attributes of the file. When set to 0x0F, the attributes of the file are not changed.             |
 
 ## Returns
 

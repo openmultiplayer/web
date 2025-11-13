@@ -61,7 +61,7 @@ public Ping_Timer(playerid)
         new string[128];
         format(string, sizeof(string), "You have been kicked from the server. Reason: high ping (%d)", ping);
         SendClientMessage(playerid, -1, string);
-        
+
         Kick(playerid);
     }
     return 1;

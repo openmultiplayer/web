@@ -12,7 +12,7 @@ tags: ["player", "pickup", "playerpickup"]
 Sets the virtual world ID of a player-pickup.
 
 | Name         | Description                  |
-|--------------|------------------------------|
+| ------------ | ---------------------------- |
 | playerid     | The ID of the player.        |
 | pickupid     | The ID of the player-pickup. |
 | virtualWorld | The virtual world ID to set. |
@@ -29,7 +29,7 @@ new PlayerPickup[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     PlayerPickup[playerid] = CreatePlayerPickup(playerid, 1242, 1, 2010.0979, 1222.0642, 10.8206, 20);
-    
+
     SetPlayerPickupVirtualWorld(playerid, PlayerPickup[playerid], 10);
     return 1;
 }

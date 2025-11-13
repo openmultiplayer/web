@@ -11,9 +11,9 @@ tags: ["player", "gametext"]
 
 Stop showing a gametext style for all players.
 
-| Name           | Description                                                       |
-| -------------- | ----------------------------------------------------------------- |
-| style          | The [style](../resources/gametextstyles) of text to hide.         |
+| Name  | Description                                               |
+| ----- | --------------------------------------------------------- |
+| style | The [style](../resources/gametextstyles) of text to hide. |
 
 ## Returns
 

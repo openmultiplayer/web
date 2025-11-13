@@ -14,7 +14,7 @@ Gets the model count of a vehicle model.
 ## Parameters
 
 | Name    | Description                                            |
-|---------|--------------------------------------------------------|
+| ------- | ------------------------------------------------------ |
 | modelid | The ID of the [vehicle model](../resources/vehicleid). |
 
 ## Examples

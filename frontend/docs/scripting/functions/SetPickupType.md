@@ -12,7 +12,7 @@ tags: ["pickup"]
 Sets the type of a pickup.
 
 | Name               | Description                                         |
-|--------------------|-----------------------------------------------------|
+| ------------------ | --------------------------------------------------- |
 | pickupid           | The ID of the pickup.                               |
 | type               | The [pickup type](../resources/pickuptypes) to set. |
 | bool:update = true | Update pickup for everyone. (true/false)            |

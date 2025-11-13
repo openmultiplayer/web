@@ -12,7 +12,7 @@ tags: ["player"]
 Remove a specified weapon from a player.
 
 | Name            | Description                                               |
-|-----------------|-----------------------------------------------------------|
+| --------------- | --------------------------------------------------------- |
 | playerid        | The ID of the player whose weapon to remove.              |
 | WEAPON:weaponid | The [ID of the weapon](../resources/weaponids) to remove. |
 

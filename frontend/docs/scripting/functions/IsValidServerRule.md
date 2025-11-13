@@ -11,9 +11,9 @@ tags: ["rule"]
 
 Checks if the given server rule is valid.
 
-| Name         | Description                                                 |
-| ------------ | ----------------------------------------------------------- |
-| const rule[] | The server rule name to check.                              |
+| Name         | Description                    |
+| ------------ | ------------------------------ |
+| const rule[] | The server rule name to check. |
 
 ## Returns
 

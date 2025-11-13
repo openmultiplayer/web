@@ -12,7 +12,7 @@ tags: ["player", "object", "playerobject"]
 Get the move speed of a player-object.
 
 | Name     | Description                                           |
-|----------|-------------------------------------------------------|
+| -------- | ----------------------------------------------------- |
 | playerid | The ID of the player.                                 |
 | objectid | The ID of the player-object to get the move speed of. |
 

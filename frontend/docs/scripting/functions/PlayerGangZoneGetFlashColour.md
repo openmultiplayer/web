@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 Get the flashing colour of a player gangzone.
 
-| Name        | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom player gangzone is bound.           |
-| zoneid      | The ID of the player gangzone.                                   |
+| Name     | Description                                            |
+| -------- | ------------------------------------------------------ |
+| playerid | The ID of the player to whom player gangzone is bound. |
+| zoneid   | The ID of the player gangzone.                         |
 
 ## Returns
 
@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
     // Show the gangzone to player
     PlayerGangZoneShow(playerid, gGangZoneID[playerid], 0xFF0000FF);
 
-    // Start player gangzone flash    
+    // Start player gangzone flash
     PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0x45D1ABFF);
 
     new flashColour = PlayerGangZoneGetFlashColour(playerid, gGangZoneID[playerid]);
