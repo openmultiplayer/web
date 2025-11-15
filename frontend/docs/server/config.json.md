@@ -284,9 +284,9 @@ omp-server --default-config
 
 }
 ```
-
+- `${VAR}` default variable syntax
 - `${VAR:-default}` provides a fallback when the variable is missing
-- `$${VAR}` escapes to keep literal `${VAR}` in the config
+- `$${VAR}` escapes to keep literal `${VAR}` in the config as text
 
 <br />
 
