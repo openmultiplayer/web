@@ -51,35 +51,129 @@ omp-server --default-config
 
 <hr />
 
-## Announce
+## Server Identity
+
+### Hostname
+
+| Key  | Type   | Default value  | Read-only | Rule | Effect                                                                                        |
+| ---- | ------ | -------------- | --------- | ---- | --------------------------------------------------------------------------------------------- |
+| name | string | open.mp server | ❌        | ❌   | The name that will be shown in the server browser and when the player connects to the server. |
+
+### Language
+
+| Key      | Type   | Default value | Read-only | Rule | Effect                                                                                                                     |
+| -------- | ------ | ------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------------------- |
+| language | string |               | ❌        | ❌   | The language that appears in the server browser. Players can use this to filter servers by language in the server browser. |
+
+### Announce
 
 | Key      | Type | Default value | Read-only | Rule | Effect                                                                                                                  |
 | -------- | ---- | ------------- | --------- | ---- | ----------------------------------------------------------------------------------------------------------------------- |
 | announce | bool | true          | ❌        | ❌   | Toggles if the server should be announced to open.mp masterlist. Set to '**true**' to enable or '**false**' to disable. |
 
-## Custom Models (Artwork)
+### Web URL
 
-| Key                     | Type   | Default value | Read-only | Rule | Effect                                                                                                                   |
-| ----------------------- | ------ | ------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------ |
-| artwork.cdn             | string |               | ✅        | ❌   | An http address for a remote model server.                                                                               |
-| artwork.enable          | bool   | true          | ✅        | ✅   | Toggles if the server uses custom models from the /models folder. Set to '**true**' to enable or '**false**' to disable. |
-| artwork.models_path     | string | models        | ✅        | ❌   | The path where the custom models are located.                                                                            |
-| artwork.port            | int    | 7777          | ✅        | ❌   |                                                                                                                          |
-| artwork.web_server_bind | string |               | ✅        | ❌   |                                                                                                                          |
+| Key     | Type   | Default value | Read-only | Rule | Effect                                                                  |
+| ------- | ------ | ------------- | --------- | ---- | ----------------------------------------------------------------------- |
+| website | string | open.mp       | ❌        | ✅   | The website people can visit to gain more information about the server. |
 
-## Chat Filter
+### Discord
 
-| Key               | Type | Default value | Read-only | Rule | Effect                                                                                                                                                                                     |
-| ----------------- | ---- | ------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| chat_input_filter | bool | true          | ❌        | ❌   | Toggles the chat input filter. Disable it to use of chars like % in the chat. You can also use the [ToggleChatTextReplacement](../scripting/functions/ToggleChatTextReplacement) function. |
+| Key            | Type   | Default value           | Read-only | Rule | Effect                                                               |
+| -------------- | ------ | ----------------------- | --------- | ---- | -------------------------------------------------------------------- |
+| discord.invite | string | https://discord.gg/samp | ❌        | ❌   | The address of your server discord that appears in the omp launcher. |
 
-## Query Server Information
+![](https://i.ibb.co/cTRq5pr/294345382-54d77460-da32-458e-bcfa-10ebec90fbfa.png)
+
+### Banners
+
+| Key           | Type   | Default value | Read-only | Rule | Effect                                                                   |
+| ------------- | ------ | ------------- | --------- | ---- | ------------------------------------------------------------------------ |
+| banners.light | string |               | ❌        | ❌   | Your server's light banner url address that appears in the omp launcher. |
+| banners.dark  | string |               | ❌        | ❌   | Your server's dark banner url address that appears in the omp launcher.  |
+
+![](https://i.ibb.co/86T8wYG/image.png)
+
+### Server Logo
+
+| Key  | Type   | Default value | Read-only | Rule | Effect                                                                              |
+| ---- | ------ | ------------- | --------- | ---- | ----------------------------------------------------------------------------------- |
+| logo | string |               | ❌        | ❌   | Your server's logo url address that appears in the omp launcher and discord status. |
+
+![](https://i.ibb.co/VQZch1Y/image-1.png)
+
+## Connection & Network
+
+### Network
+
+| Key                             | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                             |
+| ------------------------------- | ------ | ------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| network.acks_limit              | int    | 3000          | ❌        | ❌   |                                                                                                                                                                                                                                                                                                    |
+| network.aiming_sync_rate\*      | int    | 30            | ✅        | ❌   | The time in milliseconds a client should update the server with new data while firing a weapon.                                                                                                                                                                                                    |
+| network.allow_037_clients       | bool   | true          | ❌        | ❌   | Toggles if players with 0.3.7 client are allowed to join the server.                                                                                                                                                                                                                               |
+| network.use_omp_encryption      | bool   | false         | ❌        | ❌   | Toggles open.mp packet encryption for extra protection (default protocol still works alongside with it).                                                                                                                                                                                           |
+| network.bind                    | string |               | ✅        | ❌   | The IP address the server should use. The server will be forced to use this IP address instead of automatically choosing a free IP address. This IP address must match one assigned to a network card on the server. This is useful for running multiple servers on the same port on the same box. |
+| network.cookie_reseed_time      | int    | 300000        | ❌        | ❌   | The time in milliseconds the connection cookie seed value updates.                                                                                                                                                                                                                                 |
+| network.grace_period            | int    | 5000          | ❌        | ❌   | This is a grace period to allow unlimited connections from the same IP after starting the server, mainly used for NPCs.<br />By default: 5 Seconds                                                                                                                                                 |
+| network.http_threads            | int    | 50            | ❌        | ❌   |                                                                                                                                                                                                                                                                                                    |
+| network.in_vehicle_sync_rate\*  | int    | 30            | ✅        | ❌   | The time in milliseconds a client should update the server with new data while in a vehicle.                                                                                                                                                                                                       |
+| network.limits_ban_time         | int    | 60000         | ❌        | ❌   | Sets the raknet ban time for bad connect packets in milliseconds. (When acks/message limit is reached.)                                                                                                                                                                                            |
+| network.message_hole_limit      | int    | 3000          | ❌        | ❌   | A network level setting to deal with DoS attacks.                                                                                                                                                                                                                                                  |
+| network.messages_limit          | int    | 500           | ❌        | ❌   | The maximum number of messages a user can send per second.                                                                                                                                                                                                                                         |
+| network.minimum_connection_time | int    | 0             | ❌        | ❌   | The time in milliseconds the server will wait before accepting another incoming connection. It is not recommended that you use this variable unless your server is under a connection flood attack.                                                                                                |
+| network.mtu                     | int    | 576           | ✅        | ❌   | Keep it the default value, you don't really need or should change this if you have no idea what this is, because if you don't know, then you don't have anything on your server requiring higher MTU, but if you are still interested: https://en.wikipedia.org/wiki/Maximum_transmission_unit     |
+| network.multiplier              | int    | 10            | ❌        | ❌   |                                                                                                                                                                                                                                                                                                    |
+| network.on_foot_sync_rate\*     | int    | 30            | ✅        | ❌   | The time in milliseconds a client should update the server with new data while on foot.                                                                                                                                                                                                            |
+| network.player_marker_sync_rate | int    | 2500          | ✅        | ❌   | The time in milliseconds a client should update the server with new data while moving.                                                                                                                                                                                                             |
+| network.player_timeout          | int    | 10000         | ❌        | ❌   | The time in milliseconds after which a player will timeout when not sending any data to the server.                                                                                                                                                                                                |
+| network.port                    | int    | 7777          | ✅        | ❌   | The port the server should use. You will need to [Port Forward](http://www.portforward.com/) in order for players to join your server from outside your LAN.                                                                                                                                       |
+| network.public_addr             | string |               | ✅        | ❌   | Some machines you run your server on can have different IPs, this is used so if the address you set in `bind` config is different, you set a new one. this config variable is only used for DL servers, because in open.mp, it will host a webserver for downloading models                        |
+| network.stream_radius           | float  | 200.0         | ❌        | ❌   | The distance on the X,Y plane players will stream in server entities. The maximum is **400.0** and the minimum is **50.0**. Higher values makes players see server entities at a greater distance, but requires more client processing and potentially more bandwidth.                             |
+| network.stream_rate             | int    | 1000          | ❌        | ❌   | The time in milliseconds before the streaming in of server entities is retested for each player. The maximum is **5000** and the minimum is **500**. Lower values increases server processing as it has to recheck streaming conditions more frequently for each player.                           |
+| network.time_sync_rate          | int    | 30000         | ❌        | ❌   | The rate at which a player's game time is updated in milliseconds.                                                                                                                                                                                                                                 |
+| network.use_lan_mode            | bool   | false         | ❌        | ❌   | Deprecated variable, has no effect.                                                                                                                                                                                                                                                                |
+
+> [*] Lower values of `aiming_sync_rate`, `in_vehicle_sync_rate` and `on_foot_sync_rate` increases sync performance, but uses more bandwidth.
+
+### Server Lock
+
+| Key      | Type   | Default value | Read-only | Rule | Effect                                                                                                                       |
+| -------- | ------ | ------------- | --------- | ---- | ---------------------------------------------------------------------------------------------------------------------------- |
+| password | string |               | ❌        | ❌   | The password used to lock the server. When using this, only players that know this password will be able to join the server. |
+
+### Query Server Information
 
 | Key          | Type | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                   |
 | ------------ | ---- | ------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | enable_query | bool | true          | ❌        | ❌   | Toggles if the server information should be displayed in the server browser. Set to '**true**' to enable or '**false**' to disable. Players can still join a server that has disabled querying, but the server browser will not display any information. |
 
-## Game
+## Players & NPCs
+
+### Player and NPC Limits
+
+| Key         | Type | Default value | Read-only | Rule | Effect                                                                                                                                                                     |
+| ----------- | ---- | ------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| max_bots    | int  | 0             | ❌        | ❌   | The maximum amount of NPCs your server can hold. By changing this number you can alter how many of the player slots can be used by NPCs.                                   |
+| max_players | int  | 50            | ✅        | ❌   | The maximum amount of players your server can hold. By changing this number you can alter how many players can enter the server. The maximum is 1000 and the minimum is 1. |
+
+### NPC Update Rates
+
+| Key                      | Type | Default value                | Read-only | Rule | Effect                                                                                                             |
+| ------------------------ | ---- | ---------------------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------ |
+| npc.aiming_sync_rate     | int  | network.aiming_sync_rate     | ❌        | ❌   | Aiming synchronization rate for NPCs in milliseconds. Defaults to network.aiming_sync_rate if not set.             |
+| npc.in_vehicle_sync_rate | int  | network.in_vehicle_sync_rate | ❌        | ❌   | In-vehicle synchronization rate for NPCs in milliseconds. Defaults to network.in_vehicle_sync_rate if not set.     |
+| npc.on_foot_sync_rate    | int  | network.on_foot_sync_rate    | ❌        | ❌   | On-foot synchronization rate for NPCs in milliseconds. Defaults to network.on_foot_sync_rate if not set.           |
+| npc.process_update_rate  | int  | 50                           | ❌        | ❌   | General NPC processing update rate in milliseconds.                                                                |
+
+### NPC Sync Skip Update Limits
+
+| Key                                   | Type | Default value | Read-only | Rule | Effect                                                                           |
+| ------------------------------------- | ---- | ------------- | --------- | ---- | -------------------------------------------------------------------------------- |
+| npc.aim_sync_skip_update_limit        | int  | 15            | ❌        | ❌   | Number of sync updates to skip for idle NPCs while aiming before forcing a sync. |
+| npc.in_vehicle_sync_skip_update_limit | int  | 15            | ❌        | ❌   | Number of sync updates to skip for idle NPCs in vehicles before forcing a sync.  |
+| npc.on_foot_sync_skip_update_limit    | int  | 15            | ❌        | ❌   | Number of sync updates to skip for idle NPCs on foot before forcing a sync.      |
+
+## Game Settings
 
 | Key                                | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                       |
 | ---------------------------------- | ------ | ------------- | --------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -111,11 +205,37 @@ omp-server --default-config
 | game.vehicle_respawn_time          | int    | 10000         | ❌        | ❌   | Set vehicles respawn time in milliseconds. (Default 10 seconds)                                                                                                                                                                                                                                                                                                              |
 | game.weather                       | int    | 10            | ❌        | ✅   | The global weather that the server uses and will be shown in the server browser.                                                                                                                                                                                                                                                                                             |
 
-## Language
+## Chat
 
-| Key      | Type   | Default value | Read-only | Rule | Effect                                                                                                                     |
-| -------- | ------ | ------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------------------- |
-| language | string |               | ❌        | ❌   | The language that appears in the server browser. Players can use this to filter servers by language in the server browser. |
+| Key               | Type | Default value | Read-only | Rule | Effect                                                                                                                                                                                     |
+| ----------------- | ---- | ------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| chat_input_filter | bool | true          | ❌        | ❌   | Toggles the chat input filter. Disable it to use of chars like % in the chat. You can also use the [ToggleChatTextReplacement](../scripting/functions/ToggleChatTextReplacement) function. |
+
+## Custom Models (Artwork)
+
+| Key                     | Type   | Default value | Read-only | Rule | Effect                                                                                                                   |
+| ----------------------- | ------ | ------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------ |
+| artwork.cdn             | string |               | ✅        | ❌   | An http address for a remote model server.                                                                               |
+| artwork.enable          | bool   | true          | ✅        | ✅   | Toggles if the server uses custom models from the /models folder. Set to '**true**' to enable or '**false**' to disable. |
+| artwork.models_path     | string | models        | ✅        | ❌   | The path where the custom models are located.                                                                            |
+| artwork.port            | int    | 7777          | ✅        | ❌   |                                                                                                                          |
+| artwork.web_server_bind | string |               | ✅        | ❌   |                                                                                                                          |
+
+## Pawn
+
+| Key                 | Type         | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------------- | ------------ | ------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| pawn.legacy_plugins | list, string | []            | ✅        | ❌   | The .dll or .so file in the /plugins folder, the server should use to run as a plugin. Plugins are scripts which are designed to enhance gamemodes and filterscripts.<br />Example: `["mysql", "streamer"]`                                                                                                                                                                     |
+| pawn.main_scripts   | list, string | ["test 1"]    | ✅        | ❌   | The .amx file in the /gamemodes folder, the server should use to run as a gamemode.                                                                                                                                                                                                                                                                                             |
+| pawn.side_scripts   | list, string | []            | ✅        | ❌   | The .amx file in the /filterscripts folder, the server should use to run as a filterscript. Filterscripts are scripts that run in the background of your gamemode. They are there to add extras to the server without editing the gamemode. It is very useful if you want to carry a specific property to more than one gamemode.<br />Example: `["filterscripts/Race_System"]` |
+
+## RCON
+
+| Key                 | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                       |
+| ------------------- | ------ | ------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| rcon.allow_teleport | bool   | false         | ✅        | ❌   | Determine whether RCON admins will be teleported to their waypoint when they set one. Set to '**true**' to enable or '**false**' to disable.                                                                                                                 |
+| rcon.enable         | bool   | false         | ✅        | ❌   | Toggles if the [Remote Console](RemoteConsole) feature should be used. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                |
+| rcon.password       | string | changeme      | ❌        | ❌   | The password used to administrate the server and use the remote console (rcon). You must make sure to change this to something hard to crack so that others cannot take control of your server. Your server will NOT start if changeme is the RCON password! |
 
 ## Logging
 
@@ -134,109 +254,39 @@ omp-server --default-config
 | logging.use_prefix              | bool   | true                  | ❌        | ❌   | Toggles if prefixes such as `[Info]` should be printed with every console message. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                         |
 | logging.use_timestamp           | bool   | true                  | ❌        | ❌   | Toggles if a timestamp should be printed with every console message. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                                                                                                                       |
 
-## NPCs and Players
+## Performance
 
-| Key         | Type | Default value | Read-only | Rule | Effect                                                                                                                                                                     |
-| ----------- | ---- | ------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| max_bots    | int  | 0             | ❌        | ❌   | The maximum amount of NPCs your server can hold. By changing this number you can alter how many of the player slots can be used by NPCs.                                   |
-| max_players | int  | 50            | ✅        | ❌   | The maximum amount of players your server can hold. By changing this number you can alter how many players can enter the server. The maximum is 1000 and the minimum is 1. |
-
-## Hostname
-
-| Key  | Type   | Default value  | Read-only | Rule | Effect                                                                                        |
-| ---- | ------ | -------------- | --------- | ---- | --------------------------------------------------------------------------------------------- |
-| name | string | open.mp server | ❌        | ❌   | The name that will be shown in the server browser and when the player connects to the server. |
-
-## Network
-
-| Key                             | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                             |
-| ------------------------------- | ------ | ------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| network.acks_limit              | int    | 3000          | ❌        | ❌   |                                                                                                                                                                                                                                                                                                    |
-| network.aiming_sync_rate\*      | int    | 30            | ✅        | ❌   | The time in milliseconds a client should update the server with new data while firing a weapon.                                                                                                                                                                                                    |
-| network.allow_037_clients       | bool   | true          | ❌        | ❌   | Toggles if players with 0.3.7 client are allowed to join the server.                                                                                                                                                                                                                                   |
-| network.use_omp_encryption      | bool   | false         | ❌        | ❌   | Toggles open.mp packet encryption for extra protection (default protocol still works alongside with it).                                                                                                                                                                                                                                   |
-| network.bind                    | string |               | ✅        | ❌   | The IP address the server should use. The server will be forced to use this IP address instead of automatically choosing a free IP address. This IP address must match one assigned to a network card on the server. This is useful for running multiple servers on the same port on the same box. |
-| network.cookie_reseed_time      | int    | 300000        | ❌        | ❌   | The time in milliseconds the connection cookie seed value updates.                                                                                                                                                                                                                                 |
-| network.grace_period            | int    | 5000          | ❌        | ❌   | This is a grace period to allow unlimited connections from the same IP after starting the server, mainly used for NPCs.<br />By default: 5 Seconds                                                                                                                                                 |
-| network.http_threads            | int    | 50            | ❌        | ❌   |                                                                                                                                                                                                                                                                                                    |
-| network.in_vehicle_sync_rate\*  | int    | 30            | ✅        | ❌   | The time in milliseconds a client should update the server with new data while in a vehicle.                                                                                                                                                                                                       |
-| network.limits_ban_time         | int    | 60000         | ❌        | ❌   | Sets the raknet ban time for bad connect packets in milliseconds. (When acks/message limit is reached.)                                                                                                                                                                                            |
-| network.message_hole_limit      | int    | 3000          | ❌        | ❌   | A network level setting to deal with DoS attacks.                                                                                                                                                                                                                                                  |
-| network.messages_limit          | int    | 500           | ❌        | ❌   | The maximum number of messages a user can send per second.                                                                                                                                                                                                                                         |
-| network.minimum_connection_time | int    | 0             | ❌        | ❌   | The time in milliseconds the server will wait before accepting another incoming connection. It is not recommended that you use this variable unless your server is under a connection flood attack.                                                                                                |
-| network.mtu                     | int    | 576           | ✅        | ❌   | Keep it the default value, you don't really need or should change this if you have no idea what this is, because if you don't know, then you don't have anything on your server requiring higher MTU, but if you are still interested: https://en.wikipedia.org/wiki/Maximum_transmission_unit     |
-| network.multiplier              | int    | 10            | ❌        | ❌   |                                                                                                                                                                                                                                                                                                    |
-| network.on_foot_sync_rate\*     | int    | 30            | ✅        | ❌   | The time in milliseconds a client should update the server with new data while on foot.                                                                                                                                                                                                            |
-| network.player_marker_sync_rate | int    | 2500          | ✅        | ❌   | The time in milliseconds a client should update the server with new data while moving.                                                                                                                                                                                                             |
-| network.player_timeout          | int    | 10000         | ❌        | ❌   | The time in milliseconds after which a player will timeout when not sending any data to the server.                                                                                                                                                                                                |
-| network.port                    | int    | 7777          | ✅        | ❌   | The port the server should use. You will need to [Port Forward](http://www.portforward.com/) in order for players to join your server from outside your LAN.                                                                                                                                       |
-| network.public_addr             | string |               | ✅        | ❌   | Some machines you run your server on can have different IPs, this is used so if the address you set in `bind` config is different, you set a new one. this config variable is only used for DL servers, because in open.mp, it will host a webserver for downloading models                        |
-| network.stream_radius           | float  | 200.0         | ❌        | ❌   | The distance on the X,Y plane players will stream in server entities. The maximum is **400.0** and the minimum is **50.0**. Higher values makes players see server entities at a greater distance, but requires more client processing and potentially more bandwidth.                             |
-| network.stream_rate             | int    | 1000          | ❌        | ❌   | The time in milliseconds before the streaming in of server entities is retested for each player. The maximum is **5000** and the minimum is **500**. Lower values increases server processing as it has to recheck streaming conditions more frequently for each player.                           |
-| network.time_sync_rate          | int    | 30000         | ❌        | ❌   | The rate at which a player's game time is updated in milliseconds.                                                                                                                                                                                                                                 |
-| network.use_lan_mode            | bool   | false         | ❌        | ❌   | Deprecated variable, has no effect.                                                                                                                                                                                                                                                                |
-
-> [*] Lower values of `aiming_sync_rate`, `in_vehicle_sync_rate` and `on_foot_sync_rate` increases sync performance, but uses more bandwidth.
-
-## Server Lock
-
-| Key      | Type   | Default value | Read-only | Rule | Effect                                                                                                                       |
-| -------- | ------ | ------------- | --------- | ---- | ---------------------------------------------------------------------------------------------------------------------------- |
-| password | string |               | ❌        | ❌   | The password used to lock the server. When using this, only players that know this password will be able to join the server. |
-
-## Pawn
-
-| Key                 | Type         | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                          |
-| ------------------- | ------------ | ------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| pawn.legacy_plugins | list, string | []            | ✅        | ❌   | The .dll or .so file in the /plugins folder, the server should use to run as a plugin. Plugins are scripts which are designed to enhance gamemodes and filterscripts.<br />Example: `["mysql", "streamer"]`                                                                                                                                                                     |
-| pawn.main_scripts   | list, string | ["test 1"]    | ✅        | ❌   | The .amx file in the /gamemodes folder, the server should use to run as a gamemode.                                                                                                                                                                                                                                                                                             |
-| pawn.side_scripts   | list, string | []            | ✅        | ❌   | The .amx file in the /filterscripts folder, the server should use to run as a filterscript. Filterscripts are scripts that run in the background of your gamemode. They are there to add extras to the server without editing the gamemode. It is very useful if you want to carry a specific property to more than one gamemode.<br />Example: `["filterscripts/Race_System"]` |
-
-## RCON
-
-| Key                 | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                       |
-| ------------------- | ------ | ------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| rcon.allow_teleport | bool   | false         | ✅        | ❌   | Determine whether RCON admins will be teleported to their waypoint when they set one. Set to '**true**' to enable or '**false**' to disable.                                                                                                                 |
-| rcon.enable         | bool   | false         | ✅        | ❌   | Toggles if the [Remote Console](RemoteConsole) feature should be used. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                |
-| rcon.password       | string | changeme      | ❌        | ❌   | The password used to administrate the server and use the remote console (rcon). You must make sure to change this to something hard to crack so that others cannot take control of your server. Your server will NOT start if changeme is the RCON password! |
-
-## Sleep and Ticks
+### Sleep and Ticks
 
 | Key           | Type  | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ------------- | ----- | ------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | sleep         | float | 5.0           | ❌        | ❌   | The time in milliseconds the main open.mp and raknet networking thread will "sleep" idly during each sync cycle. Higher values decreases server processing, but reduces sync quality. Lower values increases server processing, but improves sync quality. It is not advisable to change this value unless your player count is very high and you have server fps stability issues.                                                                                                                                       |
 | use_dyn_ticks | bool  | true          | ✅        | ❌   | dynticks config is basically for keeping your server's tickrate at a constant count by using cpu more to cover the gap if there's any drop.<br />It is calculated using provided sleep value so if sleep is 5, constant tick count would be 1000 / 5 = 200 ticks per second.<br />open.mp modifies internal sleep value on the fly based on each tick's code execution time, just to keep it steady at 200 ticks, and lower sleep means more cpu usage (which is not a massive difference if server code is written well) |
 
-## Web URL
+<hr />
 
-| Key     | Type   | Default value | Read-only | Rule | Effect                                                                  |
-| ------- | ------ | ------------- | --------- | ---- | ----------------------------------------------------------------------- |
-| website | string | open.mp       | ❌        | ✅   | The website people can visit to gain more information about the server. |
+## Environment Variable Expansion
 
-## Discord
+`config.json` strings can pull values from environment variables using `${VAR}`. The server resolves them during startup, there's no .env parser inside open.mp, so make sure the environment is already populated (shell `export`, Docker `env_file`, systemd `Environment=`, etc.).
 
-| Key            | Type   | Default value           | Read-only | Rule | Effect                                                               |
-| -------------- | ------ | ----------------------- | --------- | ---- | -------------------------------------------------------------------- |
-| discord.invite | string | https://discord.gg/samp | ❌        | ❌   | The address of your server discord that appears in the omp launcher. |
+**Example:**
 
-![](https://i.ibb.co/cTRq5pr/294345382-54d77460-da32-458e-bcfa-10ebec90fbfa.png)
+```json
+{
+  "password": "${SERVER_PASSWORD}",
+  "logging": {
+    "enable": "${LOG_TOGGLE}:-true", # this defaults to true
+  },
+  "banners": {
+    "dark": "${BANNER_DARK}:-", # this defaults to no image on the banner
+    "light": "${BANNER_LIGHT}",
+  },
 
-## Banners
+}
+```
 
-| Key           | Type   | Default value | Read-only | Rule | Effect                                                                   |
-| ------------- | ------ | ------------- | --------- | ---- | ------------------------------------------------------------------------ |
-| banners.light | string |               | ❌        | ❌   | Your server's light banner url address that appears in the omp launcher. |
-| banners.dark  | string |               | ❌        | ❌   | Your server's dark banner url address that appears in the omp launcher.  |
-
-![](https://i.ibb.co/86T8wYG/image.png)
-
-## Server Logo
-
-| Key  | Type   | Default value | Read-only | Rule | Effect                                                                              |
-| ---- | ------ | ------------- | --------- | ---- | ----------------------------------------------------------------------------------- |
-| logo | string |               | ❌        | ❌   | Your server's logo url address that appears in the omp launcher and discord status. |
-
-![](https://i.ibb.co/VQZch1Y/image-1.png)
+- `${VAR:-default}` provides a fallback when the variable is missing
+- `$${VAR}` escapes to keep literal `${VAR}` in the config
 
 <br />
 
