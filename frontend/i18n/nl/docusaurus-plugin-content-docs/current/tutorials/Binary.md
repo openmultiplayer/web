@@ -88,12 +88,12 @@ De 32e bit (MSB) markeert het teken. Negatieven worden met 2’s complement opge
 
 ## Binaire operators (bitwise)
 
-- Arithmetic shift: >> en <<
-- Logical shift: >>>
-- NOT (complement): ~
-- AND: &
-- OR: |
-- XOR: ^
+- Arithmetic shift: `>>` en `<<`
+- Logical shift: `>>>`
+- NOT (complement): `~`
+- AND: `&`
+- OR: `|`
+- XOR: `^`
 
 ### AND
 
@@ -133,7 +133,7 @@ De 32e bit (MSB) markeert het teken. Negatieven worden met 2’s complement opge
 
 ### Bit shifting
 
-Rechts (>>) en links (<<) schuiven bits. Arithmetic right shift padt met de MSB (behoudt teken), arithmetic left shift padt met 0. Logical right shift (>>>) padt altijd met 0 (resultaat wordt positief).
+Rechts (`>>`) en links (`<<`) schuiven bits. Arithmetic right shift padt met de MSB (behoudt teken), arithmetic left shift padt met 0. Logical right shift (`>>>`) padt altijd met 0 (resultaat wordt positief).
 
 De rest van de voorbeelden en uitleg uit het origineel blijven ongewijzigd van toepassing; code en tabellen kun je 1:1 gebruiken.
 
