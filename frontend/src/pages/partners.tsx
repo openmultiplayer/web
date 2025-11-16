@@ -1,5 +1,6 @@
 import Layout from "@theme/Layout";
 import { ReactNode, useEffect, useMemo, useState } from "react";
+import Translate from '@docusaurus/Translate';
 import { FixedSizeList } from "react-window";
 import LoadingBanner from "../components/LoadingBanner";
 import ServerRow from "../components/ServerRow";
@@ -8,6 +9,14 @@ import { API_ADDRESS } from "../constants";
 import { CoreServerData } from "../types";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
+
+import { renderToStaticMarkup } from "react-dom/server";
+
+const translate = (id: string, message: string, description?: string) => {
+  return renderToStaticMarkup(
+    <Translate id={id} description={description}>{message}</Translate>
+  );
+};
 
 const getServers = async () => {
   try {
@@ -63,9 +72,17 @@ const StatsComponent = ({ stats: { players, servers } }: { stats: Stats }) => {
   return (
     <div className="servers-center">
       <p className="servers-stats">
-        <strong>{players}</strong> players on <strong>{servers}</strong> servers
-        with an average of <strong>{(players / servers).toFixed(1)}</strong>{" "}
-        players per server.
+        <Translate
+          id="partners.server.stats"
+          description="Stats summary: {players} players on {servers} servers with an average of {average} players per server."
+          values={{
+            players: <strong>{players}</strong>,
+            servers: <strong>{servers}</strong>,
+            average: <strong>{(players / servers).toFixed(1)}</strong>
+          }}
+        >
+          {'{players} players on {servers} servers with an average of {average} players per server.'}
+        </Translate>
       </p>
     </div>
   );
@@ -105,13 +122,25 @@ const List = ({ data }: { data: CoreServerData[] }) => {
             onChange={(e) => setSort(e.target.value as SortBy)}
             className="servers-select"
           >
-            <option value="relevance">Relevance</option>
-            <option value="pc">Players</option>
+            <option value="relevance">
+                          <Translate id="servers.sort.relevance" description="Sort by relevance">
+                            Relevance
+                          </Translate>
+                        </option>
+                        <option value="pc">
+                          <Translate id="servers.sort.players" description="Sort by players">
+                            Players
+                          </Translate>
+                        </option>
           </select>
 
           <input
             type="text"
-            placeholder="Search by IP or Name"
+            placeholder={translate(
+            "servers.search.placeholder",
+            "Search by IP or Name",
+            "Search input placeholder"
+          )}
             name="search"
             id="search"
             value={search}
@@ -151,17 +180,19 @@ const Page = (): ReactNode => {
     <div>
       <Layout
         title={`Servers`}
-        description="List of San Andreas servers partnered with open.mp"
+        description="List of San Andreas servers using open.mp or SA-MP"
       >
         <section className="servers-container">
           <p>
             <b>
-              Note: The partnership program application is temporarily closed as
-              promised. Servers that have already reserved a slot can still
-              join, but we are not accepting new requests at this time. If you
-              have any questions, feel free to ask on our Discord. However, if
-              your question is about new ways to get on the list, we currently
-              have no plans for that.
+              <Translate id="partners.note">
+                Note: The partnership program application is temporarily closed as 
+                promised. Servers that have already reserved a slot can still 
+                join, but we are not accepting new requests at this time. If you 
+                have any questions, feel free to ask on our Discord. However, if 
+                your question is about new ways to get on the list, we currently 
+                have no plans for that.
+              </Translate>
             </b>
           </p>
           {loading ? <LoadingBanner /> : <List data={data} />}
