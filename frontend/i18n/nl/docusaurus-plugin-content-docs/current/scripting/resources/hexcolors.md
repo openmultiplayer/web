@@ -1,7 +1,7 @@
 ---
 title: "Hex-kleuren"
 sidebar_label: "Hex-kleuren"
-description: Uitleg over hexadecimale kleurweergave in SA:MP/open.mp.
+description: "Uitleg over hexadecimale kleurweergave in SA:MP/open.mp."
 ---
 
 ## Wat is hex?
