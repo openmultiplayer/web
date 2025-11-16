@@ -51,7 +51,7 @@ Voorbeeld-exports skeleton zie originele guide; hieronder beknopte highlights.
 
 - `amx_GetAddr` + `amx_GetString` / `amx_SetString` om strings te lezen/schrijven
 - `amx_Push`, `amx_PushArray`, `amx_PushString` om args te pushen
-- `amx_ctof` / `amx_ftoc` voor float <-> cell zonder bitpatroon te wijzigen
+- `amx_ctof` / `amx_ftoc` voor float `<->` cell zonder bitpatroon te wijzigen
 - By-ref: haal `cell*` op met `amx_GetAddr` en schrijf terug
 
 ## Callbacks aanroepen en natives registreren

@@ -1,7 +1,7 @@
 ---
 title: "Kleurenlijst"
 sidebar_label: "Kleurenlijst"
-description: Kleuren in SA‑MP: chat, spelers, textdraws, gametext, 3D‑tekst en dialogs (kleur-embedding).
+description: "Kleuren in SA‑MP: chat, spelers, textdraws, gametext, 3D‑tekst en dialogs (kleur-embedding)."
 ---
 
 ## Chattekst en spelerskleur

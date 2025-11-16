@@ -1,0 +1,337 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Totalmente retrocompatível com scripts e clientes existentes"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Tem um AMX antigo por aí? Carregue-o no servidor open.mp diretamente e junte-se aos seus amigos jogando no cliente SA:MP. Então, quando quiser melhorar seu código, consulte nossa documentação."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Primeiros Passos"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Novo e melhorado sistema de scripting"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp suporta todos os scripts e plugins SA-MP existentes. Mas também fornece uma nova API moderna e atualizada para escrever modos melhores. Estruturas de dados, rotinas de E/S assíncronas e muito mais!"
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Saiba Mais"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Amigável ao desenvolvedor"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Estamos escrevendo open.mp com a experiência do desenvolvedor em mente. Isso significa uma API consistente, documentação atualizada, uma comunidade útil e código-fonte totalmente aberto! Contribuições são sempre bem-vindas."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Contribuir"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Novo e melhorado sistema de scripting"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Continuamos com pawn, mas com um novo compilador projetado para tornar seu código mais robusto, e mais funções para manipular o servidor e o cliente."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Saiba sobre as melhorias"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Desenvolvimento impulsionado pela comunidade"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "O servidor é totalmente open source, e recebemos todas as contribuições, grandes ou pequenas. Ajude a escrever a próxima versão, ou apenas poste sobre qualquer problema que encontrar, apesar de nossas tentativas de ter um código perfeito, bugs acontecem e seu feedback é valioso."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Visite a organização GitHub"
+  },
+  "feature.cppApi.title": {
+    "message": "API C++ extensível"
+  },
+  "feature.cppApi.description": {
+    "message": "Tenha acesso a todos os recursos do servidor disponíveis em pawn, além do universo de bibliotecas e frameworks C++. Depois de dominar isso, por que não ajudar a melhorar o servidor através de nosso processo de contribuição aberto no GitHub."
+  },
+  "feature.cppApi.linkText": {
+    "message": "Confira o repositório do SDK"
+  },
+  "partners.server.stats": {
+    "message": "{players} jogadores em {servers} servidores com uma média de {average} jogadores por servidor."
+  },
+  "servers.sort.relevance": {
+    "message": "Relevância"
+  },
+  "servers.sort.players": {
+    "message": "Jogadores"
+  },
+  "servers.search.placeholder": {
+    "message": "Buscar por IP ou Nome"
+  },
+  "partners.note": {
+    "message": "Nota: O programa de parceria está temporariamente fechado conforme prometido. Servidores que já reservaram um slot ainda podem entrar, mas não estamos aceitando novos pedidos no momento. Se você tiver alguma dúvida, sinta-se à vontade para perguntar em nosso Discord. No entanto, se sua pergunta for sobre novas formas de entrar na lista, atualmente não temos planos para isso."
+  },
+  "announcement.title": {
+    "message": "Uma nova versão do servidor e launcher open.mp está disponível agora!"
+  },
+  "announcement.link": {
+    "message": "Leia mais sobre isso aqui"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Esta página travou.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Página Não Encontrada",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Não foi possível encontrar o que você estava procurando.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Entre em contato com o proprietário do site que lhe trouxe ao URL original e informe que o link está quebrado.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "nota",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "dica",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "perigo",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "informação",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "cuidado",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Voltar ao topo",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Arquivo",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Arquivo",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navegação da página de listagem do blog",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Entradas Mais Recentes",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Entradas Mais Antigas",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} min de leitura",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "A versão {version} do servidor open.mp está disponível com muitas correções, melhorias de desempenho e novos recursos!"
+  },
+  "announcement.changelog": {
+    "message": "Registro de Alterações"
+  },
+  "announcement.download": {
+    "message": "Baixar"
+  },
+  "announcement.launcherUpdate": {
+    "message": "O launcher também recebeu uma atualização!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Veja as novidades"
+  },
+  "announcement.dismiss": {
+    "message": "Dispensar esta mensagem"
+  },
+  "homepage.heroDescription": {
+    "message": "Um novo mod multiplayer para Grand Theft Auto: San Andreas que é {compatibility} com {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "totalmente retrocompatível"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Baixar Launcher 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Baixar Servidor 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Documentação 📜"
+  },
+  "animations.title": {
+    "message": "Visualizador de Animações open.mp"
+  },
+  "animations.library": {
+    "message": "Biblioteca:"
+  },
+  "animations.selectLibrary": {
+    "message": "Selecione uma biblioteca..."
+  },
+  "animations.animation": {
+    "message": "Animação:"
+  },
+  "animations.selectAnimation": {
+    "message": "Selecione uma animação..."
+  },
+  "animations.index": {
+    "message": "Índice:"
+  },
+  "animations.frames": {
+    "message": "Quadros:"
+  },
+  "animations.duration": {
+    "message": "Duração:"
+  },
+  "animations.seconds": {
+    "message": "segundos"
+  },
+  "animations.description": {
+    "message": "Descrição:"
+  },
+  "animations.notes": {
+    "message": "Notas:"
+  },
+  "animations.videoCredits": {
+    "message": "Créditos do vídeo:"
+  },
+  "animations.usageExamples": {
+    "message": "Exemplos de Uso:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Selecione uma animação no menu suspenso acima para ver a pré-visualização."
+  },
+  "animations.browsePrompt": {
+    "message": "Navegue e visualize todas as animações disponíveis."
+  },
+  "animations.usedByFunctions": {
+    "message": "Estas são usadas pelas funções ApplyAnimation/ApplyActorAnimation."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Seguindo o maldito trem..."
+  },
+  "serverRow.copied": {
+    "message": "COPIADO"
+  },
+  "serverRow.copy": {
+    "message": "COPIAR"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Tem parceria!"
+  },
+  "serverRow.ompTitle": {
+    "message": "servidor open.mp"
+  },
+  "serverRow.players": {
+    "message": "jogadores"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Voltar aos Servidores"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Entrar Rapidamente"
+  },
+  "serverInfo.noDescription": {
+    "message": "Este servidor não tem descrição"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Jogadores Online"
+  },
+  "serverInfo.modVersion": {
+    "message": "Versão do Mod"
+  },
+  "serverInfo.language": {
+    "message": "Idioma"
+  },
+  "serverInfo.rule": {
+    "message": "Regra"
+  },
+  "serverInfo.value": {
+    "message": "Valor"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Atualizado há {time}"
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Documentação"
+  },
+  "theme.footer.title.Community": {
+    "message": "Comunidade"
+  },
+  "theme.footer.title.More": {
+    "message": "Mais"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Introdução"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Migração para open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Doar"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Servidores"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Blog"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Animações"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "Gerador de UID"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Copyright © {year} open.mp. Feito com Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "Documentação"
+  },
+  "navbar.item.Blog": {
+    "message": "Blog"
+  },
+  "navbar.item.Forums": {
+    "message": "Fóruns"
+  },
+  "navbar.item.Servers": {
+    "message": "Servidores"
+  },
+  "navbar.item.Partners": {
+    "message": "Parceiros"
+  },
+  "navbar.item.Donate": {
+    "message": "Doar"
+  }
+}

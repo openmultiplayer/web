@@ -80,8 +80,8 @@ De volgende symbolen kun je gebruiken in vergelijkingen, met hun uitleg. Sommige
 | !=           | Links is niet gelijk aan Rechts                                    | if (Links != Rechts)                                         |
 | >            | Links is groter dan Rechts                                         | if (Links > Rechts)                                          |
 | >=           | Links is groter dan of gelijk aan Rechts                           | if (Links >= Rechts)                                         |
-| <            | Links is kleiner dan Rechts                                        | if (Links < Rechts)                                          |
-| <=           | Links is kleiner dan of gelijk aan Rechts                          | if (Links <= Rechts)                                         |
+| \<           | Links is kleiner dan Rechts                                        | if (Links \< Rechts)                                         |
+| \<=          | Links is kleiner dan of gelijk aan Rechts                          | if (Links \<= Rechts)                                        |
 | &&           | en                                                                 | if (Links && Rechts)                                         |
 | ||           | of                                                                 | if (Links || Rechts)                                         |
 | !            | niet                                                               | if (!Variabele)                                              |

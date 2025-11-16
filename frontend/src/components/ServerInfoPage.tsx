@@ -2,6 +2,7 @@ import LoadingBanner from "@site/src/components/LoadingBanner";
 import { API_ADDRESS } from "@site/src/constants";
 import { ServerAllData } from "@site/src/types";
 import Layout from "@theme/Layout";
+import Translate from "@docusaurus/Translate";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -20,7 +21,7 @@ const getServer = async (ip: string): Promise<ServerAllData | undefined> => {
 const BackLink: React.FC<{ to: string }> = ({ to }) => {
   return (
     <a href={to} className="button server-info-back-link">
-      ← Back to Servers
+      <Translate id="serverInfo.backToServers" description="Back to servers link">← Back to Servers</Translate>
     </a>
   );
 };
@@ -34,7 +35,7 @@ const ServerLink = ({ address }: { address: string }) => {
       className="server-info-link"
     >
       <button className="server-info-quick-join-button">
-        Quick Join
+        <Translate id="serverInfo.quickJoin" description="Quick join button">Quick Join</Translate>
         <span className="server-info-arrow">→</span>
       </button>
     </a>
@@ -60,25 +61,25 @@ const Info = ({ data }: { data: ServerAllData }) => (
         <h1 className="server-info-name">{data.core.hn}</h1>
 
         <p className="server-info-description">
-          {data.description || "This server has no description"}
+          {data.description || <Translate id="serverInfo.noDescription" description="No description text">This server has no description</Translate>}
         </p>
 
         <div className="row server-info-content-wrapper">
           <div className="server-info-stats-section">
             <div className="server-info-stat-item">
-              <span className="server-info-stat-label">Players Online</span>
+              <span className="server-info-stat-label"><Translate id="serverInfo.playersOnline" description="Players online label">Players Online</Translate></span>
               <span className="server-info-stat-value">
                 {data.core.pc}/{data.core.pm}
               </span>
             </div>
 
             <div className="server-info-stat-item">
-              <span className="server-info-stat-label">Mod Version</span>
+              <span className="server-info-stat-label"><Translate id="serverInfo.modVersion" description="Mod version label">Mod Version</Translate></span>
               <span className="server-info-stat-value">{data.core.vn}</span>
             </div>
 
             <div className="server-info-stat-item">
-              <span className="server-info-stat-label">Language</span>
+              <span className="server-info-stat-label"><Translate id="serverInfo.language" description="Language label">Language</Translate></span>
               <span className="server-info-stat-value">{data.core.la}</span>
             </div>
 
@@ -90,8 +91,8 @@ const Info = ({ data }: { data: ServerAllData }) => (
               <table className="server-info-rules-table">
                 <thead>
                   <tr>
-                    <th>Rule</th>
-                    <th>Value</th>
+                    <th><Translate id="serverInfo.rule" description="Rule table header">Rule</Translate></th>
+                    <th><Translate id="serverInfo.value" description="Value table header">Value</Translate></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -123,8 +124,13 @@ const Info = ({ data }: { data: ServerAllData }) => (
 
         <div className="server-info-footer">
           <time className="server-info-last-updated">
-            Last updated{" "}
-            {formatDistance(new Date(data.lastUpdated), new Date())} ago
+            <Translate
+              id="serverInfo.lastUpdated"
+              description="Last updated label"
+              values={{ time: formatDistance(new Date(data.lastUpdated), new Date()) }}
+            >
+              {'Last updated {time} ago'}
+            </Translate>
           </time>
         </div>
       </div>
@@ -186,19 +192,16 @@ const formatDistance = (
   const months = Math.floor(days / 30);
   const years = Math.floor(days / 365);
 
-  const plural = (num: number, unit: string) =>
-    num === 1 ? `1 ${unit}` : `${num} ${unit}s`;
-
   if (years > 0) {
-    return plural(years, "year");
+    return years === 1 ? "1 year" : `${years} years`;
   } else if (months > 0) {
-    return plural(months, "month");
+    return months === 1 ? "1 month" : `${months} months`;
   } else if (days > 0) {
-    return plural(days, "day");
+    return days === 1 ? "1 day" : `${days} days`;
   } else if (hours > 0) {
-    return plural(hours, "hour");
+    return hours === 1 ? "1 hour" : `${hours} hours`;
   } else if (minutes > 0) {
-    return plural(minutes, "minute");
+    return minutes === 1 ? "1 minute" : `${minutes} minutes`;
   } else {
     return "less than a minute";
   }

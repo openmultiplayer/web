@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Open Multiplayer",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Dokümantasyon",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Forums": {
+    "message": "Forumlar",
+    "description": "Navbar item with label Forums"
+  },
+  "item.label.Servers": {
+    "message": "Sunucular",
+    "description": "Navbar item with label Servers"
+  },
+  "item.label.Partners": {
+    "message": "Partnerler",
+    "description": "Navbar item with label Partners"
+  },
+  "item.label.Donate": {
+    "message": "Bağış Yap",
+    "description": "Navbar item with label Donate"
+  }
+}

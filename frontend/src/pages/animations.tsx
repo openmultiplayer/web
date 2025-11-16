@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
+import Translate from '@docusaurus/Translate';
 import {
   animations,
   getLibraries,
@@ -58,14 +59,16 @@ const AnimationsPage = () => {
         <div className="row">
           <div className="col col--12">
             <Heading as="h1" className="text--center margin-bottom--lg">
-              open.mp Animations Viewer
+              <Translate id="animations.title" description="Animations page title">
+                open.mp Animations Viewer
+              </Translate>
             </Heading>
 
             <div className={styles.animationDisplay}>
               <div className={styles.controls}>
                 <div className={styles.dropdownContainer}>
                   <label htmlFor="library-select" className={styles.label}>
-                    Library:
+                    <Translate id="animations.library" description="Library label">Library:</Translate>
                   </label>
                   <select
                     id="library-select"
@@ -73,7 +76,7 @@ const AnimationsPage = () => {
                     onChange={(e) => handleLibraryChange(e.target.value)}
                     className={styles.select}
                   >
-                    <option value="">Select a library...</option>
+                    <option value=""><Translate id="animations.selectLibrary" description="Select library option">Select a library...</Translate></option>
                     {libraries.map((library) => (
                       <option key={library} value={library}>
                         {library}
@@ -84,7 +87,7 @@ const AnimationsPage = () => {
 
                 <div className={styles.dropdownContainer}>
                   <label htmlFor="animation-select" className={styles.label}>
-                    Animation:
+                    <Translate id="animations.animation" description="Animation label">Animation:</Translate>
                   </label>
                   <select
                     id="animation-select"
@@ -93,7 +96,7 @@ const AnimationsPage = () => {
                     className={styles.select}
                     disabled={!selectedLibrary}
                   >
-                    <option value="">Select an animation...</option>
+                    <option value=""><Translate id="animations.selectAnimation" description="Select animation option">Select an animation...</Translate></option>
                     {availableAnimations.map((animation) => (
                       <option key={animation.name} value={animation.name}>
                         {animation.name}
@@ -134,27 +137,27 @@ const AnimationsPage = () => {
                     <div className={styles.animationInfo}>
                       <div className={styles.animationDetails}>
                         <div className={styles.detailItem}>
-                          <strong>Index:</strong> {currentAnimation.index}
+                          <strong><Translate id="animations.index" description="Index label">Index:</Translate></strong> {currentAnimation.index}
                         </div>
                         <div className={styles.detailItem}>
-                          <strong>Frames:</strong> {currentAnimation.frames}
+                          <strong><Translate id="animations.frames" description="Frames label">Frames:</Translate></strong> {currentAnimation.frames}
                         </div>
                         <div className={styles.detailItem}>
-                          <strong>Duration:</strong> {currentAnimation.duration}{" "}
-                          seconds
+                          <strong><Translate id="animations.duration" description="Duration label">Duration:</Translate></strong> {currentAnimation.duration}{" "}
+                          <Translate id="animations.seconds" description="Seconds label">seconds</Translate>
                         </div>
                         <div className={styles.detailItem}>
-                          <strong>Description:</strong>{" "}
+                          <strong><Translate id="animations.description" description="Description label">Description:</Translate></strong>{" "}
                           {currentAnimation.description}
                         </div>
                         {currentAnimation.notes && (
                           <div className={styles.detailItem}>
-                            <strong>Notes:</strong> {currentAnimation.notes}
+                            <strong><Translate id="animations.notes" description="Notes label">Notes:</Translate></strong> {currentAnimation.notes}
                           </div>
                         )}
                         <div className={styles.creditsInDetails}>
                           <p>
-                            Video credits:{" "}
+                            <Translate id="animations.videoCredits" description="Video credits label">Video credits:</Translate>{" "}
                             <a
                               href="https://github.com/leamir/samp-animation-videos"
                               target="_blank"
@@ -168,7 +171,7 @@ const AnimationsPage = () => {
                     </div>
                   </div>
                   <div className={styles.codeExample}>
-                    <Heading as="h3">Usage Examples:</Heading>
+                    <Heading as="h3"><Translate id="animations.usageExamples" description="Usage examples heading">Usage Examples:</Translate></Heading>
                     <pre className={styles.codeBlock}>
                       <code>
                         {`// For players
@@ -185,8 +188,9 @@ ApplyActorAnimation(actorid, "${currentAnimation.library}", "${currentAnimation.
               {selectedLibrary && !selectedAnimation && (
                 <div className={styles.placeholder}>
                   <p>
-                    Select an animation from the dropdown above to see the
-                    preview.
+                    <Translate id="animations.selectAnimationPrompt" description="Prompt to select animation">
+                      Select an animation from the dropdown above to see the preview.
+                    </Translate>
                   </p>
                 </div>
               )}
@@ -194,10 +198,13 @@ ApplyActorAnimation(actorid, "${currentAnimation.library}", "${currentAnimation.
               {!selectedLibrary && (
                 <div className={styles.placeholder}>
                   <p>
-                    Browse and preview all available animations.
+                    <Translate id="animations.browsePrompt" description="Browse animations prompt">
+                      Browse and preview all available animations.
+                    </Translate>
                     <br />
-                    These are used by ApplyAnimation/ApplyActorAnimation
-                    functions.
+                    <Translate id="animations.usedByFunctions" description="Used by functions note">
+                      These are used by ApplyAnimation/ApplyActorAnimation functions.
+                    </Translate>
                   </p>
                 </div>
               )}
