@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Open Multiplayer",
+    "description": "导航栏中的标题"
+  },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "标签为Docs的导航栏项目"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "标签为Blog的导航栏项目"
+  },
+  "item.label.Forums": {
+    "message": "论坛",
+    "description": "标签为Forums的导航栏项目"
+  },
+  "item.label.Servers": {
+    "message": "服务器",
+    "description": "标签为Servers的导航栏项目"
+  },
+  "item.label.Partners": {
+    "message": "合作伙伴",
+    "description": "标签为Partners的导航栏项目"
+  },
+  "item.label.Donate": {
+    "message": "捐赠",
+    "description": "标签为Donate的导航栏项目"
+  }
+}
