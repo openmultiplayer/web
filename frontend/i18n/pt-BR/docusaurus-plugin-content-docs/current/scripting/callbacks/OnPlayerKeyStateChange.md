@@ -7,13 +7,13 @@ tags: ["player"]
 
 ## Descrição
 
-Esta callback é chamada quando o estado de qualquer tecla [suportada](../resources/keys.md) muda. (pressionado/solto). Teclas direcionais não ativam o OnPlayerKeyStateChange (Para cima, baixo, direita, esquerda).
+Esta callback é chamada quando o estado de qualquer tecla [suportada](../resources/keys) muda. (pressionado/solto). Teclas direcionais não ativam o OnPlayerKeyStateChange (Para cima, baixo, direita, esquerda).
 
 | Nome     | Descrição                                                                                     |
 | -------- | --------------------------------------------------------------------------------------------- |
 | playerid | O ID do jogador que pressionou ou soltou uma tecla.                                           |
-| newkeys  | Um mapa (bitmask) das teclas atualmente pressionadas - [veja aqui](../resources/keys.md)      |
-| oldkeys  | Um mapa (bitmask) das teclas pressionadas antes da atual - [veja aqui](../resources/keys.md). |
+| newkeys  | Um mapa (bitmask) das teclas atualmente pressionadas - [veja aqui](../resources/keys)         |
+| oldkeys  | Um mapa (bitmask) das teclas pressionadas antes da atual - [veja aqui](../resources/keys).    |
 
 ## Retornos
 
@@ -26,13 +26,13 @@ Esta callback é chamada quando o estado de qualquer tecla [suportada](../resour
 
 :::tip
 
-Teclas direcionais não ativam o OnPlayerKeyStateChange (Para cima, baixo, direita, esquerda). Estas podem apenas ser identificadas pelo [GetPlayerKeys](../functions/GetPlayerKeys.md) no [OnPlayerUpdate](../callbacks/OnPlayerUpdate.md) ou em um teporizador.
+Teclas direcionais não ativam o OnPlayerKeyStateChange (Para cima, baixo, direita, esquerda). Estas podem apenas ser identificadas pelo [GetPlayerKeys](../functions/GetPlayerKeys) no [OnPlayerUpdate](OnPlayerUpdate) ou em um teporizador.
 
 :::
 
 ## Funções Relaciondas
 
-- [GetPlayerKeys](../functions/GetPlayerKeys.md): Verifica qual tecla o jogador está pressionando.
+- [GetPlayerKeys](../functions/GetPlayerKeys): Verifica qual tecla o jogador está pressionando.
 
 ## Informação Adicional
 

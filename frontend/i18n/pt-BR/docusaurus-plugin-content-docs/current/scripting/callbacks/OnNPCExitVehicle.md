@@ -22,4 +22,4 @@ public OnNPCExitVehicle()
 
 ## Callbacks Relacionadas
 
-- [OnNPCEnterVehicle](../callbacks/OnNPCEnterVehicle): Executada quando um NPC entra em um veículo.
+- [OnNPCEnterVehicle](OnNPCEnterVehicle): Executada quando um NPC entra em um veículo.

@@ -43,8 +43,8 @@ Se blochează la trecerea unui ID de meniu nevalid. Puteți avea doar 12 element
 
 ## Funcții conexe
 
-- [CreateMenu](CreateMenu.md): Creați un meniu.
-- [SetMenuColumnHeader](SetMenuColumnHeader.md): Setați antetul pentru una dintre coloanele dintr-un meniu.
-- [DestroyMenu](DestroyMenu.md): Distrugeți un meniu.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): Apelat atunci când un jucător a selectat un rând dintr-un meniu.
-- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): Apelat când un jucător iese din meniu.
+- [CreateMenu](CreateMenu): Creați un meniu.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Setați antetul pentru una dintre coloanele dintr-un meniu.
+- [DestroyMenu](DestroyMenu): Distrugeți un meniu.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Apelat atunci când un jucător a selectat un rând dintr-un meniu.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Apelat când un jucător iese din meniu.

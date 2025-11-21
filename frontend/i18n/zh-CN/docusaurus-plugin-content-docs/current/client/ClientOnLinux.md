@@ -21,7 +21,7 @@ description: 在Linux系统运行open.mp客户端的操作指南
 
 1. 确保已创建包含 GTA San Andreas 安装的 Wine 容器
 2. 下载[open.mp 启动器](https://github.com/openmultiploader/launcher/releases/latest)并安装到 Wine 容器内
-3. 获取[SA-MP 客户端](https://github.com/KrustyKoyle/files.sa-mp.com-Archive)并安装至同一 Wine 容器
+3. 获取[SA-MP 客户端](https://www.sa-mp.mp/downloads/)并安装至同一 Wine 容器
 4. 下载[omp-client.dll](https://assets.open.mp/omp-client.dll)文件，复制到容器用户目录的`AppData\Local\mp.open.launcher\omp\`路径
 
 最后可通过 Wine 容器的命令行执行启动器，或编写.bat 脚本实现快捷启动。

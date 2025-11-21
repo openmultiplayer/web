@@ -12,7 +12,7 @@ Dohvaća ID instalirane komponente (modshop mod(ifikacija)) na vozilu u određen
 | Ime       | Deskripcija                                                              |
 | --------- | ------------------------------------------------------------------------ |
 | vehicleid | ID vozila za provjeriti komponentu.                                      |
-| slot      | [Slot komponente](../resources/Componentslots) za provjeriti komponente. |
+| slot      | [Slot komponente](../resources/componentslots) za provjeriti komponente. |
 
 ## Returns
 

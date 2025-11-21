@@ -45,4 +45,4 @@ Ta funkcja będzie działać tylko jeżeli AllowAdminTeleport jest włączone, m
 
 ## Powiązane funkcje
 
-- [AllowAdminTeleport](AllowAdminTeleport.md): Przełącza teleportowanie do punktu docelowego dla administratorów RCON.
+- [AllowAdminTeleport](AllowAdminTeleport): Przełącza teleportowanie do punktu docelowego dla administratorów RCON.

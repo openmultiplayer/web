@@ -34,4 +34,4 @@ GetMenuColumnWidth(menuid, column1Width);
 
 ## 相关函数
 
-- [GetMenuPos](GetMenuPos.md): 获取菜单在屏幕上的 X/Y 坐标位置
+- [GetMenuPos](GetMenuPos): 获取菜单在屏幕上的 X/Y 坐标位置

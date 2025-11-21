@@ -6,7 +6,7 @@ description: Weapon skill values to be used with SetPlayerSkillLevel.
 
 ## คำอธิบาย
 
-List of weapon skills that are used to set player's skill level using [SetPlayerSkillLevel](../functions/SetPlayerSkillLevel.md) function.
+List of weapon skills that are used to set player's skill level using [SetPlayerSkillLevel](../functions/SetPlayerSkillLevel) function.
 
 ## Skill Levels
 

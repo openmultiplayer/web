@@ -27,7 +27,7 @@ tags: ["自定义模型", "自定义皮肤", "简单模型"]
 ## 示例用法（来自 dl_redirect 滤镜脚本）
 
 ```c
-new baseurl[] = "https://files.sa-mp.com/server";
+new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {

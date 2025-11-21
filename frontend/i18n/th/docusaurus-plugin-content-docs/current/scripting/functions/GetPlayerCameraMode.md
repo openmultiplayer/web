@@ -35,8 +35,8 @@ public OnPlayerText(playerid, text[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetPlayerCameraPos](../functions/GetPlayerCameraPos): Find out where the player's camera is.
-- [GetPlayerCameraFrontVector](../functions/GetPlayerCameraFrontVector): Get the player's camera front vector
-- [SetPlayerCameraPos](../functions/SetPlayerCameraPos): Set a player's camera position.
-- [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt): Set where a player's camera should face.
-- [SetCameraBehindPlayer](../functions/SetCameraBehindPlayer): Set a player's camera behind them.
+- [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector
+- [SetPlayerCameraPos](SetPlayerCameraPos): Set a player's camera position.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Set where a player's camera should face.
+- [SetCameraBehindPlayer](SetCameraBehindPlayer): Set a player's camera behind them.

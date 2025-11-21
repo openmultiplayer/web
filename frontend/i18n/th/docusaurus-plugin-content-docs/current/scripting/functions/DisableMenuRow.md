@@ -45,6 +45,6 @@ Crashes when passed an invalid menu ID. This function disabled the specified men
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CreateMenu](../../scripting/functions/CreateMenu.md): Create a menu.
-- [DestroyMenu](../../scripting/functions/DestroyMenu.md): Destroy a menu.
-- [AddMenuItem](../../scripting/functions/AddMenuItem.md): Add an item to a menu.
+- [CreateMenu](CreateMenu): Create a menu.
+- [DestroyMenu](DestroyMenu): Destroy a menu.
+- [AddMenuItem](AddMenuItem): Add an item to a menu.

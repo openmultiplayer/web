@@ -26,4 +26,4 @@ printf("重启延迟时间: %.1f 秒", seconds); // 输出: 重启延迟时间: 
 
 ## 相关函数
 
-- [SetModeRestartTime](SetModeRestartTime.md): 设置主脚本加载之间的延迟时间
+- [SetModeRestartTime](SetModeRestartTime): 设置主脚本加载之间的延迟时间

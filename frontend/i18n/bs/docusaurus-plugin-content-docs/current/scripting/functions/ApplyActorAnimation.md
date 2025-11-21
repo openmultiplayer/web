@@ -56,4 +56,4 @@ Morate unaprijed učitati biblioteku (library) animacija za igrača za kojeg će
 
 ## Srodne Funkcije
 
-- [ClearActorAnimations](ClearActorAnimations.md): Očisti sve animacije koje su primijenjene aktoru.
+- [ClearActorAnimations](ClearActorAnimations): Očisti sve animacije koje su primijenjene aktoru.

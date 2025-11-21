@@ -43,7 +43,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Bir oyuncu için checkpoint oluşturur.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Oyuncunun mevcut checkpointini devre dışı bırakır.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Bir oyuncunun checkpointte olup olmadığını kontrol eder.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Bir oyuncunun checkpointte olup olmadığını kontrol eder.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Bir oyuncu için yarış checkpointi oluşturur.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Oyuncunun mevcut yarış checkpointini devre dışı bırakır.
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Bir oyuncunun yarış checkpointinde olup olmadığını kontrol eder.

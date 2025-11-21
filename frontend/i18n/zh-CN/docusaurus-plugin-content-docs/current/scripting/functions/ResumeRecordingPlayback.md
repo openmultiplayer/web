@@ -11,4 +11,4 @@ tags: []
 
 ## 相关函数
 
-- [PauseRecordingPlayback](../functions/PauseRecordingPlayback): 如果录制已暂停则恢复播放
+- [PauseRecordingPlayback](PauseRecordingPlayback): 如果录制已暂停则恢复播放
