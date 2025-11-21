@@ -1,0 +1,337 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "کاملاً سازگار با اسکریپت‌ها و کلاینت‌های موجود"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "یک AMX قدیمی دارید؟ آن را مستقیماً در سرور open.mp بارگذاری کنید و به دوستانتان که با کلاینت SA:MP بازی می‌کنند بپیوندید. سپس وقتی می‌خواهید کد خود را بهبود دهید، به مستندات ما مراجعه کنید."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "شروع کنید"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "سیستم اسکریپت‌نویسی جدید و بهبود یافته"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp از تمام اسکریپت‌ها و پلاگین‌های SA-MP موجود پشتیبانی می‌کند. اما همچنین یک API مدرن و به‌روز برای نوشتن مودهای بهتر ارائه می‌دهد. ساختارهای داده، روتین‌های I/O غیرهمزمان و موارد بیشتر!"
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "بیشتر بدانید"
+  },
+  "feature.developerFriendly.title": {
+    "message": "دوستدار توسعه‌دهندگان"
+  },
+  "feature.developerFriendly.description": {
+    "message": "ما open.mp را با در نظر گرفتن تجربه توسعه‌دهنده می‌نویسیم. این به معنای API سازگار، مستندات به‌روز، جامعه مفید و کد منبع کاملاً باز است! مشارکت‌ها همیشه خوش‌آمد هستند."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "مشارکت کنید"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "سیستم اسکریپت‌نویسی جدید و بهبود یافته"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "ما با pawn ادامه می‌دهیم، اما با یک کامپایلر جدید که برای قوی‌تر کردن کد شما طراحی شده است، و توابع بیشتری برای دستکاری سرور و کلاینت."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "درباره بهبودها بیاموزید"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "توسعه مبتنی بر جامعه"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "سرور کاملاً منبع باز است و ما همه مشارکت‌ها، چه بزرگ و چه کوچک را می‌پذیریم. به نوشتن نسخه بعدی کمک کنید، یا فقط درباره هر مشکلی که پیدا می‌کنید پست بگذارید، علی‌رغم تلاش‌های ما برای داشتن کد بی‌نقص، باگ‌ها اتفاق می‌افتند و بازخورد شما ارزشمند است."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "از سازمان GitHub بازدید کنید"
+  },
+  "feature.cppApi.title": {
+    "message": "API قابل گسترش C++"
+  },
+  "feature.cppApi.description": {
+    "message": "به تمام ویژگی‌های سرور موجود در pawn دسترسی داشته باشید، به علاوه جهان کتابخانه‌ها و فریم‌ورک‌های C++. پس از تسلط بر آن، چرا از طریق فرآیند مشارکت باز ما در GitHub به بهبود سرور کمک نکنید."
+  },
+  "feature.cppApi.linkText": {
+    "message": "مخزن SDK را بررسی کنید"
+  },
+  "partners.server.stats": {
+    "message": "{players} بازیکن در {servers} سرور با میانگین {average} بازیکن در هر سرور."
+  },
+  "servers.sort.relevance": {
+    "message": "مرتبط"
+  },
+  "servers.sort.players": {
+    "message": "بازیکنان"
+  },
+  "servers.search.placeholder": {
+    "message": "جستجو با IP یا نام"
+  },
+  "partners.note": {
+    "message": "توجه: برنامه شراکت طبق وعده موقتاً بسته است. سرورهایی که قبلاً اسلات رزرو کرده‌اند هنوز می‌توانند وارد شوند، اما در حال حاضر درخواست‌های جدید را نمی‌پذیریم. اگر سؤالی دارید، در Discord ما بپرسید. با این حال، اگر سؤال شما درباره راه‌های جدید ورود به لیست است، در حال حاضر برنامه‌ای برای آن نداریم."
+  },
+  "announcement.title": {
+    "message": "نسخه جدیدی از سرور و لانچر open.mp اکنون در دسترس است!"
+  },
+  "announcement.link": {
+    "message": "در اینجا بیشتر بخوانید"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "این صفحه کرش کرده است.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "صفحه پیدا نشد",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "نتوانستیم آنچه را که دنبالش بودید پیدا کنیم.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "لطفاً با صاحب سایتی که شما را به URL اصلی آورده تماس بگیرید و اطلاع دهید که لینک خراب است.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "یادداشت",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "نکته",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "خطر",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "اطلاعات",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "احتیاط",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "بازگشت به بالا",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "آرشیو",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "آرشیو",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "ناوبری صفحه لیست وبلاگ",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "مطالب جدیدتر",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "مطالب قدیمی‌تر",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} دقیقه مطالعه",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "برچسب‌ها",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "نسخه {version} سرور open.mp با رفع مشکلات فراوان، بهبود عملکرد و ویژگی‌های جدید در دسترس است!"
+  },
+  "announcement.changelog": {
+    "message": "تغییرات"
+  },
+  "announcement.download": {
+    "message": "دانلود"
+  },
+  "announcement.launcherUpdate": {
+    "message": "لانچر نیز به‌روزرسانی دریافت کرده است!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "تازه‌ها را ببینید"
+  },
+  "announcement.dismiss": {
+    "message": "بستن این پیام"
+  },
+  "homepage.heroDescription": {
+    "message": "یک ماد چندنفره جدید برای Grand Theft Auto: San Andreas که {compatibility} با {samp} است."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "کاملاً سازگار"
+  },
+  "homepage.downloadLauncher": {
+    "message": "دانلود لانچر 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "دانلود سرور 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "مستندات 📜"
+  },
+  "animations.title": {
+    "message": "نمایشگر انیمیشن‌های open.mp"
+  },
+  "animations.library": {
+    "message": "کتابخانه:"
+  },
+  "animations.selectLibrary": {
+    "message": "یک کتابخانه انتخاب کنید..."
+  },
+  "animations.animation": {
+    "message": "انیمیشن:"
+  },
+  "animations.selectAnimation": {
+    "message": "یک انیمیشن انتخاب کنید..."
+  },
+  "animations.index": {
+    "message": "شاخص:"
+  },
+  "animations.frames": {
+    "message": "فریم‌ها:"
+  },
+  "animations.duration": {
+    "message": "مدت زمان:"
+  },
+  "animations.seconds": {
+    "message": "ثانیه"
+  },
+  "animations.description": {
+    "message": "توضیحات:"
+  },
+  "animations.notes": {
+    "message": "یادداشت‌ها:"
+  },
+  "animations.videoCredits": {
+    "message": "اعتبار ویدیو:"
+  },
+  "animations.usageExamples": {
+    "message": "نمونه‌های استفاده:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "یک انیمیشن از منوی کشویی بالا انتخاب کنید تا پیش‌نمایش را ببینید."
+  },
+  "animations.browsePrompt": {
+    "message": "همه انیمیشن‌های موجود را مرور و مشاهده کنید."
+  },
+  "animations.usedByFunctions": {
+    "message": "این‌ها توسط توابع ApplyAnimation/ApplyActorAnimation استفاده می‌شوند."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "در حال دنبال کردن قطار لعنتی..."
+  },
+  "serverRow.copied": {
+    "message": "کپی شد"
+  },
+  "serverRow.copy": {
+    "message": "کپی"
+  },
+  "serverRow.partnerTitle": {
+    "message": "دارای شراکت!"
+  },
+  "serverRow.ompTitle": {
+    "message": "سرور open.mp"
+  },
+  "serverRow.players": {
+    "message": "بازیکنان"
+  },
+  "serverInfo.backToServers": {
+    "message": "→ بازگشت به سرورها"
+  },
+  "serverInfo.quickJoin": {
+    "message": "ورود سریع"
+  },
+  "serverInfo.noDescription": {
+    "message": "این سرور توضیحاتی ندارد"
+  },
+  "serverInfo.playersOnline": {
+    "message": "بازیکنان آنلاین"
+  },
+  "serverInfo.modVersion": {
+    "message": "نسخه ماد"
+  },
+  "serverInfo.language": {
+    "message": "زبان"
+  },
+  "serverInfo.rule": {
+    "message": "قانون"
+  },
+  "serverInfo.value": {
+    "message": "مقدار"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "{time} پیش به‌روزرسانی شده"
+  },
+  "theme.footer.title.Documentations": {
+    "message": "مستندات"
+  },
+  "theme.footer.title.Community": {
+    "message": "جامعه"
+  },
+  "theme.footer.title.More": {
+    "message": "بیشتر"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "معرفی"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "مهاجرت به open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "دیسکورد"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "گیت‌هاب"
+  },
+  "theme.footer.link.Donate": {
+    "message": "حمایت مالی"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "یوتیوب"
+  },
+  "theme.footer.link.X": {
+    "message": "ایکس"
+  },
+  "theme.footer.link.Servers": {
+    "message": "سرورها"
+  },
+  "theme.footer.link.Blog": {
+    "message": "وبلاگ"
+  },
+  "theme.footer.link.Animations": {
+    "message": "انیمیشن‌ها"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "تولیدکننده UID"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "حق نشر © {year} open.mp. ساخته شده با Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "مستندات"
+  },
+  "navbar.item.Blog": {
+    "message": "وبلاگ"
+  },
+  "navbar.item.Forums": {
+    "message": "انجمن‌"
+  },
+  "navbar.item.Servers": {
+    "message": "سرورها"
+  },
+  "navbar.item.Partners": {
+    "message": "شرکاء"
+  },
+  "navbar.item.Donate": {
+    "message": "حمایت مالی"
+  }
+}
