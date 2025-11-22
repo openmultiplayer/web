@@ -39,7 +39,7 @@ public OnActorStreamIn(actorid, forplayerid)
 ## Note
 :::tip Questo callback può essere chiamato anche per NPC (bot). :::
 
-## Callback Correlate
+## Callback Correlati
 I seguenti callback potrebbero essere utili, in quanto sono correlati a questo callback in un modo o nell'altro.
 
 - [OnActorStreamOut](OnActorStreamOut): Questo callback viene chiamato quando un attore esce dal raggio di stream (smette di essere visibile) per un giocatore.
