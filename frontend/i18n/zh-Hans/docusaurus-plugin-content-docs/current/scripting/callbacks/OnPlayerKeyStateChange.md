@@ -30,7 +30,7 @@ NPC 也会触发此回调
 
 :::tip
 
-方向键（上/下/左/右）不会触发 OnPlayerKeyStateChange<br/>需通过[GetPlayerKeys](../functions/GetPlayerKeys)在[OnPlayerUpdate](../callbacks/OnPlayerUpdate)或定时器中检测
+方向键（上/下/左/右）不会触发 OnPlayerKeyStateChange<br/>需通过[GetPlayerKeys](../functions/GetPlayerKeys)在[OnPlayerUpdate](OnPlayerUpdate)或定时器中检测
 
 :::
 

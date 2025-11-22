@@ -38,6 +38,6 @@ public OnGameModeInit()
 
 ## Srodne Funkcije
 
-- [Floatadd](Floatadd): Dodaje dva plovka.
-- [Floatmul](Floatmul): Množi dva floata.
-- [Floatdiv](../funtions/Floatdiv): Dijeli float sa drugim.
+- [floatadd](floatadd): Dodaje dva plovka.
+- [floatmul](floatmul): Množi dva floata.
+- [floatdiv](floatdiv): Dijeli float sa drugim.

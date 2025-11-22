@@ -75,6 +75,6 @@ Bir oyuncu textdraw seçimini ESC'ye basarak iptal ettiğinde 'INVALID_TEXT_DRAW
 
 ## Bağlantılı Fonksiyonlar
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable.md): Bir player-textdrawın seçilebilir olup olmayacağını ayarlar.
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Oyuncu bir textdrawa tıkladığında çağırılır.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Bir oyuncu başka bir oyuncuya tıkladığında çağırılır.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Bir player-textdrawın seçilebilir olup olmayacağını ayarlar.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Oyuncu bir textdrawa tıkladığında çağırılır.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Bir oyuncu başka bir oyuncuya tıkladığında çağırılır.

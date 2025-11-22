@@ -39,5 +39,5 @@ The ammo can hold 16-bit values, therefore values over 32767 will return erroneo
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetPlayerAmmo](../functions/SetPlayerAmmo): Set the ammo of a specific player's weapon.
-- [GetPlayerWeaponData](../functions/GetPlayerWeaponData): Find out information about weapons a player has.
+- [SetPlayerAmmo](SetPlayerAmmo): Set the ammo of a specific player's weapon.
+- [GetPlayerWeaponData](GetPlayerWeaponData): Find out information about weapons a player has.

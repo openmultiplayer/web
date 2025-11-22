@@ -50,6 +50,6 @@ Even though the health can be set to near infinite values on the server side, th
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetPlayerHealth](../functions/SetPlayerHealth): Set a player's health.
-- [GetVehicleHealth](../functions/GetVehicleHealth): Check the health of a vehicle.
-- [GetPlayerArmour](../functions/GetPlayerArmour): Find out how much armour a player has.
+- [SetPlayerHealth](SetPlayerHealth): Set a player's health.
+- [GetVehicleHealth](GetVehicleHealth): Check the health of a vehicle.
+- [GetPlayerArmour](GetPlayerArmour): Find out how much armour a player has.

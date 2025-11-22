@@ -7,7 +7,7 @@ tags: []
 
 ## 描述
 
-该函数允许 NPC 发送聊天消息，类似于[SendPlayerMessageToAll](../functions/SendPlayerMessageToAll)，但专用于 NPC 脚本内部使用。
+该函数允许 NPC 发送聊天消息，类似于[SendPlayerMessageToAll](SendPlayerMessageToAll)，但专用于 NPC 脚本内部使用。
 
 | 参数名 | 说明                 |
 | ------ | -------------------- |
@@ -28,4 +28,4 @@ public OnPlayerDeath(playerid)
 
 ## 相关函数
 
-- [SendCommand](../functions/SendCommand): 以 NPC 身份发送命令
+- [SendCommand](SendCommand): 以 NPC 身份发送命令

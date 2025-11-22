@@ -55,7 +55,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 
 ## Mga Kaugnay na Functions
 
-- [RemovePlayerFromVehicle](./RemovePlayerFromVehicle): Itapon ang isang manlalaro sa labas ng kanilang sasakyan.
-- [GetPlayerVehicleID](./GetPlayerVehicleID): Kunin ang ID ng sasakyan kung saan nakasakay ang player.
-- [GetPlayerVehicleSeat](./GetPlayerVehicleSeat): Suriin kung saan nakaupo ang isang manlalaro.
+- [RemovePlayerFromVehicle](RemovePlayerFromVehicle): Itapon ang isang manlalaro sa labas ng kanilang sasakyan.
+- [GetPlayerVehicleID](GetPlayerVehicleID): Kunin ang ID ng sasakyan kung saan nakasakay ang player.
+- [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Suriin kung saan nakaupo ang isang manlalaro.
 - [OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle): Tinatawag kapag nagsimulang pumasok ang isang manlalaro sa isang sasakyan.

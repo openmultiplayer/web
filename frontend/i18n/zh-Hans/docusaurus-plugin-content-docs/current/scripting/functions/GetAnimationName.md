@@ -43,4 +43,4 @@ public OnPlayerUpdate(playerid)
 
 ## 相关函数
 
-- [GetPlayerAnimationIndex](GetPlayerAnimationIndex.md): 获取玩家当前动画的索引
+- [GetPlayerAnimationIndex](GetPlayerAnimationIndex): 获取玩家当前动画的索引

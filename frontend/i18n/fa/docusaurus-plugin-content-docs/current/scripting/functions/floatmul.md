@@ -42,6 +42,6 @@ public OnGameModeInit()
 
 ## توابع مرتبط
 
-- [Floatadd](Floatadd): جمع دو عدد اعشاری.
-- [Floatsub](Floatsub): تفریق دو عدد اعشاری.
-- [Floatdiv](Floatdiv): تقسیم یک عدد اعشاری بر دیگری.
+- [floatadd](floatadd): جمع دو عدد اعشاری.
+- [floatsub](floatsub): تفریق دو عدد اعشاری.
+- [floatdiv](floatdiv): تقسیم یک عدد اعشاری بر دیگری.

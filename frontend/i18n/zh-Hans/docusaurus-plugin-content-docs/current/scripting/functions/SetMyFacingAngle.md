@@ -29,4 +29,4 @@ SetMyFacingAngle(0); // NPC面朝北方
 
 ## 相关函数
 
-- [GetMyFacingAngle](../functions/GetMyFacingAngle): 获取 NPC 的朝向角度
+- [GetMyFacingAngle](GetMyFacingAngle): 获取 NPC 的朝向角度

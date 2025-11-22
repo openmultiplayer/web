@@ -41,5 +41,5 @@ public OnGameModeInit()
 
 ## Bağlantılı Fonksiyonlar
 
-- [AddStaticVehicle](AddStaticVehicle.md): Statik araç ekleyin.
-- [CreateVehicle](CreateVehicle.md): Araç oluşturun.
+- [AddStaticVehicle](AddStaticVehicle): Statik araç ekleyin.
+- [CreateVehicle](CreateVehicle): Araç oluşturun.

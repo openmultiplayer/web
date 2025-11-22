@@ -280,9 +280,9 @@ GivePlayerWeapon(playerid, WEAPON_KNIFE, 1);
 
 <hr />
 
-- **warning 234: function is deprecated (symbol "GetPlayerPoolSize") This function is fundamentally broken.**
-- **warning 234: function is deprecated (symbol "GetVehiclePoolSize") This function is fundamentally broken.**
-- **warning 234: function is deprecated (symbol "GetActorPoolSize") This function is fundamentally broken.**
+- **warning 234: function is deprecated (symbol "GetPlayerPoolSize") This function is broken.**
+- **warning 234: function is deprecated (symbol "GetVehiclePoolSize") This function is broken.**
+- **warning 234: function is deprecated (symbol "GetActorPoolSize") This function is broken.**
 
 `GetPlayerPoolSize()` را با `MAX_PLAYERS` جایگزین کنید
 

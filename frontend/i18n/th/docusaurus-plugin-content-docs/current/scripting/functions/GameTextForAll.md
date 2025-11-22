@@ -40,5 +40,5 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GameTextForPlayer](../functions/GameTextForPlayer): Display gametext to a player.
-- [TextDrawShowForAll](../functions/TextDrawShowForAll): Show a textdraw for all players.
+- [GameTextForPlayer](GameTextForPlayer): Display gametext to a player.
+- [TextDrawShowForAll](TextDrawShowForAll): Show a textdraw for all players.

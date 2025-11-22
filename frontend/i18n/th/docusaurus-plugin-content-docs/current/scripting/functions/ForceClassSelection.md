@@ -39,7 +39,7 @@ This function does not perform a state change to PLAYER_STATE_WASTED when combin
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [AddPlayerClass](../functions/AddPlayerClass): Add a class.
-- [SetPlayerSkin](../functions/SetPlayerSkin): Set a player's skin.
-- [GetPlayerSkin](../functions/GetPlayerSkin): Get a player's current skin.
+- [AddPlayerClass](AddPlayerClass): Add a class.
+- [SetPlayerSkin](SetPlayerSkin): Set a player's skin.
+- [GetPlayerSkin](GetPlayerSkin): Get a player's current skin.
 - [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass): Called when a player changes class at class selection.

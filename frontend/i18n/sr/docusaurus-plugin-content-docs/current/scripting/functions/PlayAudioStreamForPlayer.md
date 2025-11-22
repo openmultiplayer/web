@@ -49,5 +49,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Сличне фунције
 
-- [StopAudioStreamForPlayer](StopAudioStreamForPlayer.md): Зауставља аудио стрим за играча.
-- [PlayerPlaySound](PlayerPlaySound.md): Пушта звук играчу.
+- [StopAudioStreamForPlayer](StopAudioStreamForPlayer): Зауставља аудио стрим за играча.
+- [PlayerPlaySound](PlayerPlaySound): Пушта звук играчу.

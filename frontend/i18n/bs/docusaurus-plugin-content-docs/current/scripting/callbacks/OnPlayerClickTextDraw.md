@@ -70,5 +70,5 @@ Klikljivo područje je definirano preko TextDrawTextSize. Parametri x i y proslj
 
 ## Srodne Funkcije
 
-- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw.md): Pozvana kada igrač klikne na player-textdraw.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Pozvana kada jedan igrač klikne na drugog.
+- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Pozvana kada igrač klikne na player-textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Pozvana kada jedan igrač klikne na drugog.

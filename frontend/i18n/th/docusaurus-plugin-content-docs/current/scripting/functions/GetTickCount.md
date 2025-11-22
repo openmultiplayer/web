@@ -1,13 +1,13 @@
 ---
 title: GetTickCount
 sidebar_label: GetTickCount
-description: Returns the uptime of the actual server (not the SA-MP server) in milliseconds.
+description: Returns the uptime of the server in milliseconds.
 tags: []
 ---
 
 ## คำอธิบาย
 
-Returns the uptime of the actual server (not the SA-MP server) in milliseconds.
+Returns the uptime of the server in milliseconds.
 
 | Name | Description |
 | ---- | ----------- |
@@ -29,13 +29,13 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-One common use for GetTickCount is for benchmarking. It can be used to calculate how much time some code takes to execute. See below for an example.
+One common use for GetTickCount is for benchmarking. It can be used to calculate how much time some code takes to execute.
 
 :::
 
 :::warning
 
-GetTickCount will cause problems on servers with uptime of over 24 days as GetTickCount will eventually warp past the integer size constraints. Check [this package](https://github.com/ScavengeSurvive/tick-difference) for a solution.
+GetTickCount will cause problems on servers with uptime of over 24 days as GetTickCount will eventually warp past the integer size constraints.
 
 :::
 

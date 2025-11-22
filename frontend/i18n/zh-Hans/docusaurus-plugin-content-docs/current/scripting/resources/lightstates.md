@@ -145,4 +145,4 @@ UpdateVehicleDamageStatus(vehicleid, panels, doors, (lights | VEHICLE_LIGHT_STAT
 
 ## 相关阅读
 
-- [车辆灯光状态](../resources/vehicle-light-status)
+- [车辆灯光状态](vehicle-light-status)

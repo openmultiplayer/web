@@ -36,4 +36,4 @@ public OnPlayerText(playerid, text[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [tolower](../functions/tolower.md)
+- [tolower](tolower)

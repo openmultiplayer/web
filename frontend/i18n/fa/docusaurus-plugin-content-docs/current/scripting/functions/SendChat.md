@@ -7,7 +7,7 @@ tags: []
 
 ## توضیحات
 
-این تابع متن رو توسط bot ارسال می‌کنه، درست مثل [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll)، ولی این تابع برای استفاده در NPC script ها هست.
+این تابع متن رو توسط bot ارسال می‌کنه، درست مثل [SendPlayerMessageToAll](SendPlayerMessageToAll)، ولی این تابع برای استفاده در NPC script ها هست.
 
 | نام         | توضیحات                                        |
 | ------------ | -------------------------------------------------- |
@@ -28,4 +28,4 @@ public OnPlayerDeath(playerid)
 
 ## توابع مرتبط
 
-- [SendCommand](../functions/SendCommand): ارسال دستور به عنوان NPC.
+- [SendCommand](SendCommand): ارسال دستور به عنوان NPC.

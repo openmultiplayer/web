@@ -92,7 +92,7 @@ A few terms to get you started, so you can start to understand what it is that y
 
 - *Component* - A logical individual piece of the server, like objects or pickups. Ones you don't need don't need to be loaded.
 - *Extension* - Code that extends another bit of code. You can write component extensions, but the most common ones are player extensions, which define some structure of data to be associated with a player in addition to all their normal data like health and weapons.
-- *UID* - *U*nique *ID*entifier, a number that represents your component, and your component alone. This ia always required and can be got here: http://open.mp/uid
+- *UID* - *U*nique *ID*entifier, a number that represents your component, and your component alone. This ia always required and can be got here: https://open.mp/uid
 - *Entity* - A thing, usually a thing a player can interact with, and which you might have a lot of. Objects are entities, but other players are also entities, even commands in a processor could be called entities.
 - *Pool* - Something that holds entities. When you have a lot you need to be able to access them by name or ID in some way, this is what a pool does.
 - *Interface* - Components use an abstract base class as an interface. This declares which methods a component has, but doesn't contain the code for the methods. Interfaces are passed around so that components can communicate with each other, but implementations are kept private.

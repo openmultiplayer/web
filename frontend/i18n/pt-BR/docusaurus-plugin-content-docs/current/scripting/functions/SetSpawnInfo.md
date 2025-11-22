@@ -43,6 +43,6 @@ public OnPlayerRequestClass(playerid, classid)
 
 ## Funções Relacionadas
 
-- [SetPlayerSkin](SetPlayerSkin.md): Define a skin de um jogador.
-- [SetPlayerTeam](SetPlayerTeam.md): Define o time de um jogador.
-- [SpawnPlayer](SpawnPlayer.md): Força o spawn a um jogador.
+- [SetPlayerSkin](SetPlayerSkin): Define a skin de um jogador.
+- [SetPlayerTeam](SetPlayerTeam): Define o time de um jogador.
+- [SpawnPlayer](SpawnPlayer): Força o spawn a um jogador.

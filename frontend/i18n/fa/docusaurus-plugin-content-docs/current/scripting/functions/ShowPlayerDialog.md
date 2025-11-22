@@ -15,7 +15,7 @@ tags: ["player"]
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid  | شناسه بازیکنی که میخواهید دیالوگ برای او نمایش داده شود.                                                                                             |
 | dialogid  | شناسه دیالوگ جهت پردازش پاسخ بازیکن، 32767 حداکثر مقدار شناسه است، استفاده از شناسه های منفی باعث پنهان شدن هر دیالوگ در حال نمایش میشود. |
-| style     | [سبک](../resources/dialogstyles.md) دیالوگ                                     |
+| style     | [سبک](../resources/dialogstyles) دیالوگ                                     |
 | caption[] | عنوان دیالوگ که در قسمت بالا نمایش داده میشود. این قسمت نمیتواند بیشتر از 64 حرف باشد در غیر این صورت ادامه عنوان برش میخورد.       |
 | info[]    | متنی که میخواهیم در قسمت اصلی دیالوگ نمایش داده شود. از \n برای رفتن به خط جدید و از \t برای جدول بندی کردن استفاده کنید.                                                  |
 | button1[] | متن دکمه ای که در سمت چپ قرار میگیرد.                                                                                                            |
@@ -85,5 +85,5 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 ## تابع های مرتبط
 </div>
 
-- [TextDrawShowForPlayer](TextDrawShowForPlayer.md)
-- [OnDialogResponse](../callbacks/OnDialogResponse.md)
+- [TextDrawShowForPlayer](TextDrawShowForPlayer)
+- [OnDialogResponse](../callbacks/OnDialogResponse)

@@ -274,9 +274,9 @@ Or if you prefer you can use the mixed spellings:
 
 <hr />
 
-- **warning 234: function is deprecated (symbol "GetPlayerPoolSize") This function is fundamentally broken.**
-- **warning 234: function is deprecated (symbol "GetVehiclePoolSize") This function is fundamentally broken.**
-- **warning 234: function is deprecated (symbol "GetActorPoolSize") This function is fundamentally broken.**
+- **warning 234: function is deprecated (symbol "GetPlayerPoolSize") This function is broken.**
+- **warning 234: function is deprecated (symbol "GetVehiclePoolSize") This function is broken.**
+- **warning 234: function is deprecated (symbol "GetActorPoolSize") This function is broken.**
 
 Replace `GetPlayerPoolSize()` with `MAX_PLAYERS`
 

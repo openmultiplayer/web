@@ -47,4 +47,4 @@ Bu geri çağırma NPC tarafından da çağrılabilir.
 
 ## Bağlı Fonksiyonlar
 
-- [SendRconCommand](../functions/SendRconCommand.md): RCON komutunun gönderilmesini sağlar.
+- [SendRconCommand](../functions/SendRconCommand): RCON komutunun gönderilmesini sağlar.

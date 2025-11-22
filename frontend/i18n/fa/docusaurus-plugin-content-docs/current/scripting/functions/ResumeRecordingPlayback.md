@@ -12,4 +12,4 @@ tags: []
 
 ## توابع مرتبط
 
-- [PauseRecordingPlayback](../functions/PauseRecordingPlayback): اگر ضبط متوقف شده باشه، از سرش می‌گیره.
+- [PauseRecordingPlayback](PauseRecordingPlayback): اگر ضبط متوقف شده باشه، از سرش می‌گیره.

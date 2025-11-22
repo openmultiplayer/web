@@ -56,4 +56,4 @@ Aktualnie nie ma żadnych restrykcji co do wywoływania tej funkcji, ale miej na
 
 ## Powiązane funkcje
 
-- [SetPlayerSkin](SetPlayerSkin.md): Ustawia skin gracza.
+- [SetPlayerSkin](SetPlayerSkin): Ustawia skin gracza.

@@ -56,7 +56,7 @@ Diferentemente das cores de texto, esses slugs (código de texto) não exigem en
 | `~<~` | Seta para a esquerda (cinza)                                                                                                                   |
 | `~>~` | Seta para a direita (cinza)                                                                                                                  |
 | `~]~` | Exibe um `*` símbolo (somente nos estilos de texto 3, 4 e 5)                                                                              |
-| `~k~` | Mapeamento de teclas do teclado (ex: `~k~~VEHICLE_TURRETLEFT~` e `~k~~PED_FIREWEAPON~`). Veja [aqui](../resources/keys) uma lista de chaves. |
+| `~k~` | Mapeamento de teclas do teclado (ex: `~k~~VEHICLE_TURRETLEFT~` e `~k~~PED_FIREWEAPON~`). Veja [aqui](keys) uma lista de chaves. |
 
 :::caution
 

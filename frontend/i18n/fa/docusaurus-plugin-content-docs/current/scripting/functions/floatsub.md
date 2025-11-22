@@ -34,6 +34,6 @@ public OnGameModeInit()
 
 ## توابع مرتبط
 
-- [Floatadd](Floatadd): جمع کردن دو float.
-- [Floatmul](Floatmul): ضرب دو float.
+- [floatadd](floatadd): جمع کردن دو float.
+- [floatmul](floatmul): ضرب دو float.
 - [floatdiv](floatdiv): تقسیم یک float بر دیگری.

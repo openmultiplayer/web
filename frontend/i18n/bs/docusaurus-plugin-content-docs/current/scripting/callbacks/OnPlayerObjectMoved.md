@@ -38,8 +38,8 @@ Ovaj callback pozvat će i NPC.
 
 ## Related Functions
 
-- [MovePlayerObject](../functions/MovePlayerObject.md): Pomjeri player object.
-- [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving.md): Provjeri da li se player object kreće.
-- [StopPlayerObject](../functions/StopPlayerObject.md): Zaustavi player object od kretanja.
-- [CreatePlayerObject](../functions/CreatePlayerObject.md): Kreiraj objekat za samo jednog igrača.
-- [DestroyPlayerObject](../functions/DestroyPlayerObject.md): Uništi player objekat.
+- [MovePlayerObject](../functions/MovePlayerObject): Pomjeri player object.
+- [IsPlayerObjectMoving](../functions/IsPlayerObjectMoving): Provjeri da li se player object kreće.
+- [StopPlayerObject](../functions/StopPlayerObject): Zaustavi player object od kretanja.
+- [CreatePlayerObject](../functions/CreatePlayerObject): Kreiraj objekat za samo jednog igrača.
+- [DestroyPlayerObject](../functions/DestroyPlayerObject): Uništi player objekat.

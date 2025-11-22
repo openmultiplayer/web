@@ -11,4 +11,4 @@ tags: []
 
 ## 相关函数
 
-- [ResumeRecordingPlayback](../functions/ResumeRecordingPlayback): 恢复已暂停的录制回放
+- [ResumeRecordingPlayback](ResumeRecordingPlayback): 恢复已暂停的录制回放

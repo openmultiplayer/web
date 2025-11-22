@@ -36,6 +36,6 @@ if ( existproperty(0, "", 123984334) )
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetProperty](../functions/SetProperty): Set a property.
-- [GetProperty](../functions/GetProperty): Get the value of a property.
-- [DeleteProperty](../functions/DeleteProperty): Delete a property.
+- [setProperty](setProperty): Set a property.
+- [getProperty](getProperty): Get the value of a property.
+- [deleteProperty](deleteProperty): Delete a property.

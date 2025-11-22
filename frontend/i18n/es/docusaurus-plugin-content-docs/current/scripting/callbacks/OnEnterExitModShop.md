@@ -42,9 +42,9 @@ Bugs conocidos: Los jugadores colisionan cuando entran al mismo taller de modifi
 
 ## Callbacks Relacionados
 Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnEnterExitModShop:
-- [OnVehicleMod](../callbacks/OnVehicleMod): Este callback es llamado cuando un vehículo es modificado.
-- [OnVehicleRespray](../callbacks/OnVehicleRespray): Este callback es llamado cuando un jugador sale del taller de modificaciones, incluso si los colores no fueron modificados.
-- [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): Este callback es llamado cuando un jugador realiza una vista previa de una pintura en el taller. Puedes ver las identificaciones en [Vehicle Paintjob IDs](../resources/paintjobs)
+- [OnVehicleMod](OnVehicleMod): Este callback es llamado cuando un vehículo es modificado.
+- [OnVehicleRespray](OnVehicleRespray): Este callback es llamado cuando un jugador sale del taller de modificaciones, incluso si los colores no fueron modificados.
+- [OnVehiclePaintjob](OnVehiclePaintjob): Este callback es llamado cuando un jugador realiza una vista previa de una pintura en el taller. Puedes ver las identificaciones en [Vehicle Paintjob IDs](../resources/paintjobs)
 
 ## Funciones Relacionadas
 Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnEnterExitModShop:

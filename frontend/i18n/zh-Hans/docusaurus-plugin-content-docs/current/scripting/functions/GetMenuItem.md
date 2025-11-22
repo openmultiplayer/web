@@ -34,5 +34,5 @@ GetMenuItem(menuid, 1, 2, text, sizeof(text));
 
 ## 相关函数
 
-- [GetMenuItems](GetMenuItems.md): 获取菜单项列表
-- [GetMenuColumns](GetMenuColumns.md): 获取菜单激活列数
+- [GetMenuItems](GetMenuItems): 获取菜单项列表
+- [GetMenuColumns](GetMenuColumns): 获取菜单激活列数

@@ -4,11 +4,11 @@ title : Problèmes courants
 
 ## Le serveur plante instantanément au démarrage
 
-Le plus souvent, il s'agit d'une erreur dans votre fichier server.cfg ou de votre mode de jeu manquant. Vérifiez le fichier server_log.txt et la raison doit être située en bas. Sinon, vérifiez le fichier crashinfo.txt. La meilleure solution pour savoir ce qui cause le crash est d'utiliser le plugin de détection de crash de Zeex/0x5A656578 ([cliquez pour le lien](https://github.com/Zeex/samp-plugin-crashdetect)) qui donnera plus d'informations comme les numéros de ligne, les noms de fonction, les valeurs de paramètre, etc. Si le script est compilé en mode débogage (indicateur -d3) pour que le compilateur mette des informations supplémentaires sur tout cela dans la sortie .amx.
+Le plus souvent, il s'agit d'une erreur dans votre fichier server.cfg ou de votre mode de jeu manquant. Vérifiez le fichier server_log.txt et la raison doit être située en bas. Sinon, vérifiez le fichier crashinfo.txt. La meilleure solution pour savoir ce qui cause le crash est d'utiliser le plugin de détection de crash de Zeex/0x5A656578 ([cliquez pour le lien](https://github.com/Y-Less/samp-plugin-crashdetect)) qui donnera plus d'informations comme les numéros de ligne, les noms de fonction, les valeurs de paramètre, etc. Si le script est compilé en mode débogage (indicateur -d3) pour que le compilateur mette des informations supplémentaires sur tout cela dans la sortie .amx.
 
 ## Le serveur ne fonctionne pas - le pare-feu est désactivé
 
-Vous devrez rediriger vos ports pour permettre aux joueurs de rejoindre votre serveur. Vous pouvez rediriger vos ports à l'aide du vérificateur de ports PF. Téléchargez-le sur : www.portforward.com Si les ports ne sont pas redirigés, cela signifie que vous devez les ouvrir dans votre routeur. Vous pouvez consulter la liste des routeurs sur [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm "http://portforward .com/english/routers/port_forwarding/routerindex.htm")
+Vous devrez rediriger vos ports pour permettre aux joueurs de rejoindre votre serveur. Vous pouvez rediriger vos ports à l'aide du vérificateur de ports PF. Téléchargez-le sur : www.portforward.com Si les ports ne sont pas redirigés, cela signifie que vous devez les ouvrir dans votre routeur. Vous pouvez consulter la liste des routeurs sur [https://portforward.com/router.htm](https://portforward.com/router.htm).
 
 Il contient toutes les informations sur la façon de transférer les ports.
 
@@ -62,7 +62,7 @@ Avertissement : Trop de messages dans le désordre du joueur <ip> :<port> (<co
 
 Se produit lorsque les "messages hors service" réutilisent le paramètre messageholelimit.
 
-Pour plus d'informations à ce sujet, consultez [ceci](https://open.mp/docs/server/ControllingServer#RCON_Commands)
+Pour plus d'informations à ce sujet, consultez [ceci](https://open.mp/docs/server/ControllingServer#rcon-commands)
 
 ## Les joueurs obtiennent constamment l'erreur "Unacceptable NickName" mais elle est valide
 

@@ -42,5 +42,5 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [SetGameModeText](../functions/SetGameModeText): 设置服务器浏览器显示的游戏模式名称
-- [GetGameModeText](../functions/GetGameModeText): 获取当前游戏模式名称
+- [SetGameModeText](SetGameModeText): 设置服务器浏览器显示的游戏模式名称
+- [GetGameModeText](GetGameModeText): 获取当前游戏模式名称

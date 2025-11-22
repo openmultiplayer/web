@@ -5,7 +5,7 @@ sidebar_label: Common Client Issues
 
 ### Tôi nhận được lỗi "San Andreas cannot be found"
 
-San Andreas Multiplayer **không** phải là một chương trình độc lập! Nó thêm chức năng multiplayer vào San Andreas, vì vậy bạn cần GTA San Andreas cho PC - nó cũng cần phải là **EU/US v1.0**, các phiên bản khác như v2.0 hoặc các phiên bản Steam và Direct2Drive sẽ không hoạt động. [Nhấp vào đây để tải bản vá để hạ cấp phiên bản GTA: SA của bạn xuống 1.0](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multiplayer **không** phải là một chương trình độc lập! Nó thêm chức năng multiplayer vào San Andreas, vì vậy bạn cần GTA San Andreas cho PC - nó cũng cần phải là **EU/US v1.0**, các phiên bản khác như v2.0 hoặc các phiên bản Steam và Direct2Drive sẽ không hoạt động. [Nhấp vào đây để tải bản vá để hạ cấp phiên bản GTA: SA của bạn xuống 1.0](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### Tôi không thể thấy bất kỳ máy chủ nào trong trình duyệt SA:MP
 
@@ -20,7 +20,7 @@ Bạn không nên thấy các tùy chọn singleplayer (game mới, tải game, 
 
 :::
 
-Singleplayer có thể tải vì 2 lý do; bạn đã cài đặt SA:MP vào thư mục sai hoặc bạn có phiên bản San Andreas sai. Nếu bạn có phiên bản sai, bạn có thể hạ cấp trò chơi của bạn bằng cách sử dụng GTA San Andreas downgrader. Nhấp [vào đây](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) để tải xuống.
+Singleplayer có thể tải vì 2 lý do; bạn đã cài đặt SA:MP vào thư mục sai hoặc bạn có phiên bản San Andreas sai. Nếu bạn có phiên bản sai, bạn có thể hạ cấp trò chơi của bạn bằng cách sử dụng GTA San Andreas downgrader. Nhấp [vào đây](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) để tải xuống.
 
 Đôi khi menu single player sẽ được hiển thị, nhưng SA:MP thực sự đã tải đúng cách. Để khắc phục điều này, bạn chỉ cần chọn một mục trong menu, sau đó nhấn phím escape để thoát khỏi nó. SA:MP sau đó sẽ tiếp tục tải.
 
@@ -50,7 +50,7 @@ Nếu bạn có 2 màn hình thì có 3 cách để giải quyết:
 
 ### Chuột của tôi không hoạt động sau khi thoát khỏi menu tạm dừng
 
-Nếu chuột của bạn dường như bị đóng băng trong game trong khi nó (một phần) hoạt động trong menu tạm dừng, bạn nên tắt tùy chọn đa lõi [sa-mp.cfg](ClientCommands#file-sa-mpcfg "Sa-mp.cfg") (đặt thành 0). Nhấn liên tục phím Escape cho đến khi chuột phản hồi trở lại cũng có thể hoạt động, nhưng đây không phải là giải pháp hoàn hảo.
+Nếu chuột của bạn dường như bị đóng băng trong game trong khi nó (một phần) hoạt động trong menu tạm dừng, bạn nên tắt tùy chọn đa lõi [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") (đặt thành 0). Nhấn liên tục phím Escape cho đến khi chuột phản hồi trở lại cũng có thể hoạt động, nhưng đây không phải là giải pháp hoàn hảo.
 
 ### Tệp dinput8.dll bị thiếu
 

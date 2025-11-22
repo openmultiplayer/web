@@ -46,6 +46,6 @@ Ova je funkcija prilično suvišna, jer se ne razlikuje od konvencionalnog opera
 
 ## Srodne Funkcije
 
-- [Floatadd](Floatadd): Dodaje dva plovka.
-- [Floatsub](Floatsub): Oduzima dva floata.
-- [Floatdiv](Floatdiv): Dijeli float sa drugim.
+- [floatadd](floatadd): Dodaje dva plovka.
+- [floatsub](floatsub): Oduzima dva floata.
+- [floatdiv](floatdiv): Dijeli float sa drugim.

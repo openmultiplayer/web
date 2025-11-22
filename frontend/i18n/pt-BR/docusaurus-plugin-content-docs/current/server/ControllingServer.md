@@ -49,7 +49,7 @@ samp.ban é o arquivo usado para organizar banimentos, incluindo as seguintes in
 - IP
 - Data
 - Tempo
-- Nome (Nome da pessoa ou motivo, veja [BanEx](../functions/BanEx))
+- Nome (Nome da pessoa ou motivo, veja [BanEx](../scripting/functions/BanEx))
 - Tipo de ban
 
 Para adicionar um banido, basta colocar uma linha como esta:
@@ -62,7 +62,7 @@ Onde `IP_AQUI` é onde você coloca o IP que gostaria de banir.
 
 ##### Função Ban()
 
-A função de [Ban](../functions/Ban) pode ser usada para banir um jogador de um script. O [BanEx](../functions/BanEx) irá adicionar uma opção como esta:
+A função de [Ban](../scripting/functions/Ban) pode ser usada para banir um jogador de um script. O [BanEx](../scripting/functions/BanEx) irá adicionar uma opção como esta:
 
 ```
 13.37.13.37 [28/05/09 | 13:37:00] Cheater - BANIMENTO NO JOGO
@@ -110,7 +110,7 @@ samp.ban pode ser encontrado no diretório do seu servidor, ele contém linhas c
 - IP
 - Data
 - Tempo
-- Nome (Nome do jogador ou motivo (veja [BanEx](../../functions/BanEx)))
+- Nome (Nome do jogador ou motivo (veja [BanEx](../scripting/functions/BanEx)))
 - Tipo do banimento (INGAME, IP BAN etc,)
 
 Exemplos:
@@ -190,9 +190,9 @@ Estas são as funções que você como admin pode usar:
 
 #### Callbacks
 
-- [OnRconLoginAttempt](../../callbacks/OnRconLoginAttempt): Chamado quando há uma tentativa de logar no RCON.
+- [OnRconLoginAttempt](../scripting/callbacks/OnRconLoginAttempt): Chamado quando há uma tentativa de logar no RCON.
 
 #### Functions
 
-- [IsPlayerAdmin](../../functions/IsPlayerAdmin): Verifica se um jogador está logado no RCON.
-- [SendRconCommand](../../functions/SendRconCommand): Envia um comando para o RCON via código.
+- [IsPlayerAdmin](../scripting/functions/IsPlayerAdmin): Verifica se um jogador está logado no RCON.
+- [SendRconCommand](../scripting/functions/SendRconCommand): Envia um comando para o RCON via código.

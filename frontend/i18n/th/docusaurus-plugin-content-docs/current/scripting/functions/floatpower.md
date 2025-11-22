@@ -33,5 +33,5 @@ printf("2 to the power of 8 is %f", floatpower(2.0, 8.0));
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [floatsqroot](../functions/floatsqroot): Calculate the square root of a floating point value.
-- [floatlog](../functions/floatlog): Get the logarithm of the float value.
+- [floatsqroot](floatsqroot): Calculate the square root of a floating point value.
+- [floatlog](floatlog): Get the logarithm of the float value.

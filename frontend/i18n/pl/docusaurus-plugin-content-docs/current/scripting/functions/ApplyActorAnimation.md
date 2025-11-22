@@ -52,4 +52,4 @@ Musisz wstępnie załadować bibliotekę animacji graczowi, u którego animacja 
 
 ## Powiązane funkcje
 
-- [ClearActorAnimations](ClearActorAnimations.md): Wyłącza wszystkie animacje, które aktor ma włączone.
+- [ClearActorAnimations](ClearActorAnimations): Wyłącza wszystkie animacje, które aktor ma włączone.

@@ -47,7 +47,7 @@ samp.ban, yasaklamalar hakkında bilgileri içeren bir dosyadır, yasaklamalar h
 - IP
 - Tarih
 - Saat
-- Ad (Kişinin adı veya bir neden, [BanEx](../../functions/BanEx) sayfasına bakın)
+- Ad (Kişinin adı veya bir neden, [BanEx](../scripting/functions/BanEx) sayfasına bakın)
 - Yasaklama türü
 
 Oyuncu yasaklamak için, basitçe şu şekilde bir satır ekleyin:
@@ -184,7 +184,7 @@ Aşağıdaki komutları sadece RCON girişi yapmış yöneticiler kullanabilir:
 | `/rcon playertimeout [limit ms]`  | Bir oyuncunun hiç paket göndermediği süreyi milisaniye cinsinden değiştirir (varsayılan 1000).   |
 | `/rcon language [dil]`            | Sunucu dilini değiştirir (_örnek: /rcon language Turkish_). Sunucu tarayıcısında gösterilir.    |
 
-Yukarıdaki dört sınırlama/sayı, herhangi bir SA-MP sunucusuna saldıran birkaç çakkalı önlemek için yapılmıştır, bu nedenle sadece sunucunuza göre bunları ayarlayın. Varsayılan değerler, eğer yanlış bir şeyler görürseniz, masum oyuncuların bunun nedeniyle atılmaması için değerleri mümkün olan en kısa sürede arttırın. [Daha fazla bilgi için buraya bakın](http://web-old.archive.org/web/20190426141744/https://forum.sa-mp.com/showpost.php?p=2990193&postcount=47).
+Yukarıdaki dört sınırlama/sayı, herhangi bir SA-MP sunucusuna saldıran birkaç çakkalı önlemek için yapılmıştır, bu nedenle sadece sunucunuza göre bunları ayarlayın. Varsayılan değerler, eğer yanlış bir şeyler görürseniz, masum oyuncuların bunun nedeniyle atılmaması için değerleri mümkün olan en kısa sürede arttırın. [Daha fazla bilgi için buraya bakın](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193).
 
 ### İlgili Callbackler ve Fonksiyonlar
 

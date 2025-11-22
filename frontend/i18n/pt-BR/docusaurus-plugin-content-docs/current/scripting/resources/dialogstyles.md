@@ -12,7 +12,7 @@ sidebar_label: Dialog Styles
 :::
 
 - Esta página descreve o comportamento de [ShowPlayerDialog](../functions/ShowPlayerDialog) e [OnDialogResponse](../callbacks/OnDialogResponse).
-- Por várias limitações, visite a página de [Limites](../resources/limits).
+- Por várias limitações, visite a página de [Limites](limits).
 - Para exemplos de resposta, o seguinte código será usado:
 
 ```c

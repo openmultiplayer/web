@@ -26,4 +26,4 @@ public OnNPCEnterVehicle(vehicleid, seatid)
 
 ## Callbacks Relacionadas
 
-- [OnNPCExitVehicle](../callbacks/OnNPCExitVehicle): Executada quando um NPC sai de um veículo.
+- [OnNPCExitVehicle](OnNPCExitVehicle): Executada quando um NPC sai de um veículo.

@@ -39,7 +39,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 Este callback no es llamado por ChangeVehicleColor. Engañosamente, este callback no se llama por pay 'n' spray (solo tiendas de modificación).
 
-Solución acá: http://pastebin.com/G81da7N1
+Solución acá: https://pastebin.com/G81da7N1
 
 :::
 

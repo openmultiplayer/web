@@ -32,4 +32,4 @@ public OnPlayerStateChange(playerid, oldstate, newstate)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetPlayerDrunkLevel](../functions/SetPlayerDrunkLevel): Set a player's drunk level.
+- [SetPlayerDrunkLevel](SetPlayerDrunkLevel): Set a player's drunk level.

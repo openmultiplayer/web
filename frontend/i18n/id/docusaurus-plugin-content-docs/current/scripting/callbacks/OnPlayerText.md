@@ -40,5 +40,5 @@ Callback ini akan terpanggil juga oleh NPC.
 
 ## Fungsi Terkait
 
-- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer.md): Memaksa pemain mengirimkan text untuk satu pemain saja.
-- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll.md): Memaksa pemain mengirimkan pesan untuk semua pemain.
+- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Memaksa pemain mengirimkan text untuk satu pemain saja.
+- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Memaksa pemain mengirimkan pesan untuk semua pemain.

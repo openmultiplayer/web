@@ -37,6 +37,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Повезане функције
 
-- [CreateVehicle](CreateVehicle.md): Креира возило.
-- [RemovePlayerFromVehicle](RemovePlayerFromVehicle.md): Избаци играча из возила.
-- [SetVehicleToRespawn](SetVehicleToRespawn.md): Respawnuje возило.
+- [CreateVehicle](CreateVehicle): Креира возило.
+- [RemovePlayerFromVehicle](RemovePlayerFromVehicle): Избаци играча из возила.
+- [SetVehicleToRespawn](SetVehicleToRespawn): Respawnuje возило.

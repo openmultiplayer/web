@@ -49,7 +49,7 @@ samp.ban is the file used for storing bans, including the following information 
 - IP
 - Date
 - Time
-- Name (Name of person or a reason, see [BanEx](../../functions/BanEx))
+- Name (Name of person or a reason, see [BanEx](../scripting/functions/BanEx))
 - Type of ban
 
 To add a ban, simply add a line like so:

@@ -9,7 +9,7 @@ tags: ["time"]
 
 ## توضیحات
 
-مقداری که هر میلی‌ثانیه افزایش می‌یابه رو برمی‌گردونه. مقدار مطلق برگشتی تعریف نشده و بین سیستم‌های مختلف متفاوته، فقط باید برای مقایسه دو نقطه زمانی استفاده بشه.
+مقداری که هر میلی‌ثانیه افزایش می‌یابه رو برمی‌گردونه. باید برای مقایسه دو نقطه زمانی استفاده بشه.
 
 ## مثال‌ها
 
@@ -64,7 +64,7 @@ if (start + 2000 > end)
 new start = GetTickCount();
 // Long code.
 new end = GetTickCount();
-if (2000 > end - start)
+if (end - start < 2000)
 {
     // The code took less than two seconds.
 }
@@ -76,6 +76,6 @@ if (2000 > end - start)
 
 ## تابع‌های مرتبط
 
-- [Tickcount](Tickcount): uptime واقعی سرور رو می‌گیره.
+- [tickcount](tickcount): uptime واقعی سرور رو می‌گیره.
 
 </div>

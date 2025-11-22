@@ -35,5 +35,5 @@ public OnIncomingConnection(playerid, ip_address[], port)
 
 ## Povezane Funkcijo
 
-- [BlockIpAddress](../functions/BlockIpAddress.md): Blokirajte naslov IP, da se določen čas ne poveže s strežnikom.
-- [UnBlockIpAddress](../functions/UnBlockIpAddress.md): Odblokirajte IP, ki ste ga prej blokirali.
+- [BlockIpAddress](../functions/BlockIpAddress): Blokirajte naslov IP, da se določen čas ne poveže s strežnikom.
+- [UnBlockIpAddress](../functions/UnBlockIpAddress): Odblokirajte IP, ki ste ga prej blokirali.

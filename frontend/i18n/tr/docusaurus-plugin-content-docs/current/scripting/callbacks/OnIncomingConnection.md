@@ -35,5 +35,5 @@ public OnIncomingConnection(playerid, ip_address[], port)
 
 ## Bağlantılı Fonksiyonlar
 
-- [BlockIpAddress](../functions/BlockIpAddress.md): Belli bir zaman için bir IP adresinin sunucuya girmesini engeller.
-- [UnBlockIpAddress](../functions/UnBlockIpAddress.md): Daha önce engellenmiş bir IP adresinin engelini kaldırır.
+- [BlockIpAddress](../functions/BlockIpAddress): Belli bir zaman için bir IP adresinin sunucuya girmesini engeller.
+- [UnBlockIpAddress](../functions/UnBlockIpAddress): Daha önce engellenmiş bir IP adresinin engelini kaldırır.

@@ -29,4 +29,4 @@ Bu geri çağırma aynı zamanda filterscript içinde changemode veya gmx gibi R
 
 ## Bağlantılı Fonksiyonlar
 
-- [GameModeExit](../functions/GameModeExit.md): Mevcut oyun modundan çıkış yapar.
+- [GameModeExit](../functions/GameModeExit): Mevcut oyun modundan çıkış yapar.

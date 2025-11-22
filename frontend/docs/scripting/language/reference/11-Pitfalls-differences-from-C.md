@@ -51,4 +51,4 @@ prototype must be equal to the ones in the definition.
 
 ---
 
-[Go Back to Contents](00-Contents.md)
+[Go Back to Contents](00-Contents)

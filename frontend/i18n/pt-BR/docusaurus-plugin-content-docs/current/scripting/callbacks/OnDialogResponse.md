@@ -138,7 +138,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Parâmetros podem conter diferentes valores, baseados no estilo do dialog ([clique para mais exemplos](../resources/dialogstyles.md)).
+Parâmetros podem conter diferentes valores, baseados no estilo do dialog ([clique para mais exemplos](../resources/dialogstyles)).
 
 :::
 
@@ -156,4 +156,4 @@ Um dialog de jogador não é escondido ao reiniciar o gamemode, ocasionando em u
 
 ## Funções Relacionadas
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Show a dialog to a player.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Show a dialog to a player.

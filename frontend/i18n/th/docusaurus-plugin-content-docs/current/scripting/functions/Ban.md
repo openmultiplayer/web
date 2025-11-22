@@ -66,5 +66,5 @@ Any action taken directly before Ban() (such as sending a message with SendClien
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [BanEx](../functions/BanEx): Ban a player with a custom reason.
-- [Kick](../functions/Kick): Kick a player from the server.
+- [BanEx](BanEx): Ban a player with a custom reason.
+- [Kick](Kick): Kick a player from the server.

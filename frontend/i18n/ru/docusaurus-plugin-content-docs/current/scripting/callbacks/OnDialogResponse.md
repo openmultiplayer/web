@@ -141,7 +141,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Параметры могут отличаться в зависимости от стиля диалога ([см. больше примеров](../resources/dialogstyles.md)).
+Параметры могут отличаться в зависимости от стиля диалога ([см. больше примеров](../resources/dialogstyles)).
 
 :::
 
@@ -159,4 +159,4 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## Функции
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Показать диалог игроку.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Показать диалог игроку.

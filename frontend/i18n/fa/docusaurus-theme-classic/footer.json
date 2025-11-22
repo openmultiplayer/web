@@ -1,0 +1,70 @@
+{
+  "link.title.Documentations": {
+    "message": "مستندات",
+    "description": "The title of the footer links column with title=Documentations in the footer"
+  },
+  "link.title.Community": {
+    "message": "جامعه",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "بیشتر",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "معرفی",
+    "description": "The label of footer link with label=Introduction linking to docs"
+  },
+  "link.item.label.open.mp Migration": {
+    "message": "مهاجرت به open.mp",
+    "description": "The label of footer link with label=open.mp Migration linking to docs"
+  },
+  "link.item.label.config.json": {
+    "message": "config.json",
+    "description": "The label of footer link with label=config.json linking to docs/server/config.json"
+  },
+  "link.item.label.Discord": {
+    "message": "دیسکورد",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/samp"
+  },
+  "link.item.label.GitHub": {
+    "message": "گیت‌هاب",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/openmultiplayer/open.mp"
+  },
+  "link.item.label.Donate": {
+    "message": "حمایت مالی",
+    "description": "The label of footer link with label=Donate linking to https://opencollective.com/openmultiplayer"
+  },
+  "link.item.label.YouTube": {
+    "message": "یوتیوب",
+    "description": "The label of footer link with label=YouTube linking to https://youtube.com/openmultiplayer"
+  },
+  "link.item.label.X": {
+    "message": "ایکس",
+    "description": "The label of footer link with label=X linking to https://x.com/openmultiplayer"
+  },
+  "link.item.label.Servers": {
+    "message": "سرورها",
+    "description": "The label of footer link with label=Servers linking to /servers"
+  },
+  "link.item.label.Blog": {
+    "message": "وبلاگ",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Animations": {
+    "message": "انیمیشن‌ها",
+    "description": "The label of footer link with label=Animations linking to /animations"
+  },
+  "link.item.label.UID Generator": {
+    "message": "تولیدکننده UID",
+    "description": "The label of footer link with label=UID Generator linking to /uid"
+  },
+  "link.item.label.SA-MP": {
+    "message": "SA-MP",
+    "description": "The label of footer link with label=SA-MP linking to https://sa-mp.mp/"
+  },
+  "copyright": {
+    "message": "حق نشر © 2025 open.mp. ساخته شده با Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

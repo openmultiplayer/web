@@ -9,15 +9,15 @@ tags: ["vehicle"]
 
 Adaugă un vehicul 'static' (modelele sunt preîncărcate pentru jucători) la modul de joc.
 
-| Nume                                     | Descriere                                       |
-| ---------------------------------------- | ----------------------------------------------- |
-| modelid                                  | ID-ul modelului vehiculului.                    |
-| Float:spawn_X                            | Coordonata X pentru vehicul.                    |
-| Float:spawn_Y                            | Coordonata Y pentru vehicul.                    |
-| Float:spawn_Z                            | Coordonata Z pentru vehicul.                    |
-| Float:z_angle                            | Direcția vehiculului - unghiul.                 |
-| [color1](../resources/vehiclecolorid.md) | ID-ul culorii primare. -1 pentru aleatoriu.     |
-| [color2](../resources/vehiclecolorid.md) | Codul secundar de culoare. -1 pentru aleatoare. |
+| Nume                                  | Descriere                                       |
+| ------------------------------------- | ----------------------------------------------- |
+| modelid                               | ID-ul modelului vehiculului.                    |
+| Float:spawn_X                         | Coordonata X pentru vehicul.                    |
+| Float:spawn_Y                         | Coordonata Y pentru vehicul.                    |
+| Float:spawn_Z                         | Coordonata Z pentru vehicul.                    |
+| Float:z_angle                         | Direcția vehiculului - unghiul.                 |
+| [color1](../resources/vehiclecolorid) | ID-ul culorii primare. -1 pentru aleatoriu.     |
+| [color2](../resources/vehiclecolorid) | Codul secundar de culoare. -1 pentru aleatoare. |
 
 ## Se intoarce
 
@@ -39,6 +39,6 @@ public OnGameModeInit()
 
 ## Funcții conexe
 
-- [AddStaticVehicleEx](AddStaticVehicleEx.md): Adăugați un vehicul static cu timp de respawn personalizat.
-- [CreateVehicle](CreateVehicle.md): Creați un vehicul.
-- [DestroyVehicle](DestroyVehicle.md): Distrugeți un vehicul.
+- [AddStaticVehicleEx](AddStaticVehicleEx): Adăugați un vehicul static cu timp de respawn personalizat.
+- [CreateVehicle](CreateVehicle): Creați un vehicul.
+- [DestroyVehicle](DestroyVehicle): Distrugeți un vehicul.

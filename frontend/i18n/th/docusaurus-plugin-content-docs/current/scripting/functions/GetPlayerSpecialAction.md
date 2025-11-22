@@ -15,7 +15,7 @@ Retrieves a player's current special action.
 
 ## ส่งคืน
 
-The special action of the player (see: [Special Actions](../../scripting/resources/specialactions.md)).
+The special action of the player (see: [Special Actions](../resources/specialactions)).
 
 ## ตัวอย่าง
 

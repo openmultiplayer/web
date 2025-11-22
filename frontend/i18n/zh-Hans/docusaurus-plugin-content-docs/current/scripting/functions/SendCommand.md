@@ -32,4 +32,4 @@ public OnPlayerText(playerid, text[])
 
 ## 相关函数
 
-- [SendChat](../functions/SendChat): 以 NPC 身份发送聊天消息
+- [SendChat](SendChat): 以 NPC 身份发送聊天消息

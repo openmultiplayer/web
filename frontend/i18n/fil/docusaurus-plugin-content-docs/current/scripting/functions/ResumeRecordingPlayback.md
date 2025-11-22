@@ -12,4 +12,4 @@ Ipagpapatuloy nito ang naka-pause na pag-record.
 
 ## Related Functions
 
-- [PauseRecordingPlayback](../functions/PauseRecordingPlayback): Ipagpapatuloy ang pagre-record kung naka-pause ito.
+- [PauseRecordingPlayback](PauseRecordingPlayback): Ipagpapatuloy ang pagre-record kung naka-pause ito.

@@ -5,7 +5,7 @@ sidebar_label: Shop Names
 
 :::note
 
-In GTA: SA (and SA-MP as well), certain scripts are preprogrammed to run whenever a player enters a certain interior. A lot of interiors (mostly just shops) have their own external script. The problem though is that there are use cases where the ability to load and run these external scripts on-demand might be necessary. This is where [SetPlayerShopName](../functions/SetPlayerShopName) comes in. It requires a valid shop name (or an empty string to unload the current script), which are listed in the table below. For additional information about the interiors themselves, please refer to the [interior documentation](../resources/interiorids).
+In GTA: SA (and SA-MP as well), certain scripts are preprogrammed to run whenever a player enters a certain interior. A lot of interiors (mostly just shops) have their own external script. The problem though is that there are use cases where the ability to load and run these external scripts on-demand might be necessary. This is where [SetPlayerShopName](../functions/SetPlayerShopName) comes in. It requires a valid shop name (or an empty string to unload the current script), which are listed in the table below. For additional information about the interiors themselves, please refer to the [interior documentation](interiorids).
 
 :::
 

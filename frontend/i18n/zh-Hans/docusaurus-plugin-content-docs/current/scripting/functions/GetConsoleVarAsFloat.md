@@ -34,6 +34,6 @@ printf("玩家名牌绘制半径: %.2f", radius);  // 输出浮点数值保留�
 
 ## 相关函数
 
-- [GetConsoleVarAsInt](GetConsoleVarAsInt.md): 以整型形式获取控制台变量
-- [GetConsoleVarAsString](GetConsoleVarAsString.md): 以字符串形式获取控制台变量
-- [GetConsoleVarAsBool](GetConsoleVarAsBool.md): 以布尔值形式获取控制台变量
+- [GetConsoleVarAsInt](GetConsoleVarAsInt): 以整型形式获取控制台变量
+- [GetConsoleVarAsString](GetConsoleVarAsString): 以字符串形式获取控制台变量
+- [GetConsoleVarAsBool](GetConsoleVarAsBool): 以布尔值形式获取控制台变量

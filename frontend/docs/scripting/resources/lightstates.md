@@ -143,4 +143,4 @@ UpdateVehicleDamageStatus(vehicleid, panels, doors, (lights | VEHICLE_LIGHT_STAT
 
 ## See also
 
-- [Vehicle Light Status](../resources/vehicle-light-status)
+- [Vehicle Light Status](vehicle-light-status)

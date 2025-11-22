@@ -7,7 +7,7 @@ tags: []
 
 ## Mô tả
 
-Callback này được gọi khi một tập tin đã được ghi lại và phát lại bằng NPC:[StartRecordingPlayback](../functions/StartRecordingPlayback) đã đến cuối.
+Callback này được gọi khi một tập tin đã được ghi lại và phát lại bằng [StartRecordingPlayback](../functions/StartRecordingPlayback) đã đến cuối.
 
 ## Ví dụ
 

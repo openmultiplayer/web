@@ -40,5 +40,5 @@ Ovaj callback pozvat će i NPC.
 
 ## Srodne Funkcije
 
-- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer.md): Forsira igrača da pošalje tekst drugom igraču.
-- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll.md): Forsira igrača da pošalje tekst svim igračima.
+- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Forsira igrača da pošalje tekst drugom igraču.
+- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Forsira igrača da pošalje tekst svim igračima.

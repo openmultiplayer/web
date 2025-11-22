@@ -34,6 +34,6 @@ public OnGameModeInit()
 
 ## توابع مرتبط
 
-- [Floatsub](Floatsub): تفریق دو عدد اعشاری.
-- [Floatmul](Floatmul): ضرب دو عدد اعشاری.
-- [Floatdiv](Floatdiv): تقسیم یک عدد اعشاری بر دیگری.
+- [floatsub](floatsub): تفریق دو عدد اعشاری.
+- [floatmul](floatmul): ضرب دو عدد اعشاری.
+- [floatdiv](floatdiv): تقسیم یک عدد اعشاری بر دیگری.

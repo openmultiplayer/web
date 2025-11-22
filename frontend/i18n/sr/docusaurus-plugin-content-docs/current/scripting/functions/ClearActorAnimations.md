@@ -40,4 +40,4 @@ ClearActorAnimations(gMyActor);
 
 ## Повезане функције
 
-- [ApplyActorAnimation](ApplyActorAnimation.md): Поставља анимацију актору.
+- [ApplyActorAnimation](ApplyActorAnimation): Поставља анимацију актору.

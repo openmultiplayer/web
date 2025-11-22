@@ -138,7 +138,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-พารามิเตอร์สามารถมีค่าที่แตกต่างกันได้ ขึ้นอยู่กับรูปแบบของกล่องโต้ตอบ ([คลิกเพื่อดูตัวอย่างเพิ่มเติม](../resources/dialogstyles.md)).
+พารามิเตอร์สามารถมีค่าที่แตกต่างกันได้ ขึ้นอยู่กับรูปแบบของกล่องโต้ตอบ ([คลิกเพื่อดูตัวอย่างเพิ่มเติม](../resources/dialogstyles)).
 
 :::
 
@@ -156,4 +156,4 @@ It is appropriate to switch through different dialogids, if you have many.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [ShowPlayerDialog](../../scripting/functions/ShowPlayerDialog.md): แสดงกล่องโต้ตอบกับผู้เล่น
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): แสดงกล่องโต้ตอบกับผู้เล่น

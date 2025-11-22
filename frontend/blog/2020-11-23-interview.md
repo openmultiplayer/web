@@ -172,7 +172,7 @@ yeah let's move on to the next bigger things
 
 **Potassium:**  
 yeah that's right. alright so we had a bunch of questions on our forum, which by the way is  
-http://burgershot.gg so sign up there!  
+https://forum.open.mp so sign up there!  
 so i guess let's just get into them.  
 the most pressing question right now obviously is regarding the recent samp drama. so for those who don't know the samp forum and the samp wiki have been offline for a few weeks now, and we don't want to make assumptions but it doesn't look like they're coming  
 back anytime soon. i think that's a pretty fair assumption to make.
@@ -261,7 +261,7 @@ i think it was like polish, brazilian, and... yeah... we lacked a lot.
 yeah translating that is a definitely a priority and we've got some good people to help us with that so that's brilliant
 
 **Potassium:**  
-yeah that's awesome. just for the record, http://burgershot.gg is our forum and http://open.mp docs is our wiki, so go there!  
+yeah that's awesome. just for the record, https://forum.open.mp is our forum and https://open.mp/docs is our wiki, so go there!  
 so obviously the next discord alert noise that scared me, sorry! the next most frequently asked question is and always will be is the release date. so obviously we don't have a date, we will never give a specific date because we're all volunteers and do this in our free time, but do we have a rough idea of maybe like a percentage of how far along we are before we can make it public? are 1% through? are we halfway through? are we 90% through? what do you think?
 
 **JustMichael:**  
@@ -748,7 +748,7 @@ so i think the really important thing to take away from that is that we are a no
 but that doesn't mean there won't be ways to advertise. and if you have ideas about thatm post on the forums!
 
 **Potassium:**  
-yes, and that is http://burgershot.gg - sign up!
+yes, and that is https://forum.open.mp - sign up!
 
 **Y_Less:**  
 that's something we've discussed for like two years and we have no conclusion
@@ -937,7 +937,7 @@ yes, that's the second version
 that's the fun part
 
 **Potassium:**  
-people were asking about other communities that speak different languages and such, and they kind of want to know what we're doing to work with those communities and how we plan on spreading the word to those communities. i think it's fair to say that we're working on that, we're recruiting volunteers i guess to translate our wiki pages and whatever else to other languages, to moderate language sections on the forum, http://burgershot.gg by the way, and generally just to be the point of contact between our team and the other communities i guess
+people were asking about other communities that speak different languages and such, and they kind of want to know what we're doing to work with those communities and how we plan on spreading the word to those communities. i think it's fair to say that we're working on that, we're recruiting volunteers i guess to translate our wiki pages and whatever else to other languages, to moderate language sections on the forum, https://forum.open.mp by the way, and generally just to be the point of contact between our team and the other communities i guess
 
 **JustMichael:**  
 we've made a huge effort already to translate the wiki, so we're making an improvement to  

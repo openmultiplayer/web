@@ -45,4 +45,4 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 ## Bağlı Fonksiyonlar
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Oyuncu bir textdrawa tıkladığında çağrılan geri çağırma.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Oyuncu bir textdrawa tıkladığında çağrılan geri çağırma.

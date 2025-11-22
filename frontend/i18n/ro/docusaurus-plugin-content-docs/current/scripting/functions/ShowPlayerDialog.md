@@ -13,7 +13,7 @@ Afișează jucătorlui un dialog sincron (doar unul o dată).
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid  | ID-ul jucătorului căruia i se arată dialogul.                                                                                                                                 |
 | dialogid  | ID-ul dialogului, pentru ca răspunsurile să poată fi prelucrate. Maximul pentru dialogid e 32767. Dacă se folosesc valori negative atunci se va închide orice dialog deschis. |
-| style     | [Stilul](../resources/dialogstyles.md) dialogului.                                                                                                                            |
+| style     | [Stilul](../resources/dialogstyles) dialogului.                                                                                                                               |
 | caption[] | Titlul de sus al dialogului. Lungimea lui nu poate depăși 64 de caractere, altfel începe să se taie.                                                                          |
 | info[]    | Textul afișat în partea principală a dialogului. Folosiți \n pentru a începe o nouă linie și \t pentru tabulatură.                                                            |
 | button1[] | Textul butonului din stânga.                                                                                                                                                  |
@@ -80,5 +80,5 @@ Folosește color embedding pentru mai multe culori în text. Folosind -1 ca și 
 
 ## Funcții Asociate
 
-- [TextDrawShowForPlayer](TextDrawShowForPlayer.md): Arată un textdraw unui jucător.
-- [OnDialogResponse](../callbacks/OnDialogResponse.md): Apelat atunci când un jucător răspunde unui dialog.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Arată un textdraw unui jucător.
+- [OnDialogResponse](../callbacks/OnDialogResponse): Apelat atunci când un jucător răspunde unui dialog.

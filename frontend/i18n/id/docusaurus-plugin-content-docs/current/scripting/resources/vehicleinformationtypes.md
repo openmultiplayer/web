@@ -20,4 +20,4 @@ description: Konstanta Informasi Tipe Kendaraan
 
 ## Fungsi Terkait
 
-- [GetVehicleModelInfo](/docs/scripting/functions/GetVehicleModelInfo): Mendapatkan informasi tentang model kendaraan tertentu, seperti ukuran atau posisi tempat duduk.
+- [GetVehicleModelInfo](../functions/GetVehicleModelInfo): Mendapatkan informasi tentang model kendaraan tertentu, seperti ukuran atau posisi tempat duduk.

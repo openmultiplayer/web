@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-Această funcție, începând cu 0.3d, este depreciată. Vă rugăm să consultați [OnPlayerClickMap](../callbacks/OnPlayerClickMap.md).
+Această funcție, începând cu 0.3d, este depreciată. Vă rugăm să consultați [OnPlayerClickMap](../callbacks/OnPlayerClickMap).
 
 :::
 
@@ -36,5 +36,5 @@ public OnGameModeInit()
 
 ## Funcții conexe
 
-- [IsPlayerAdmin](IsPlayerAdmin.md): Verifică dacă un jucător este conectat la RCON.
-- [AllowPlayerTeleport](AllowPlayerTeleport.md): Comutați teleportarea punctelor de parcurs pentru jucători.
+- [IsPlayerAdmin](IsPlayerAdmin): Verifică dacă un jucător este conectat la RCON.
+- [AllowPlayerTeleport](AllowPlayerTeleport): Comutați teleportarea punctelor de parcurs pentru jucători.

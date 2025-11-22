@@ -70,5 +70,5 @@ The clickable area is defined by TextDrawTextSize. The x and y parameters passed
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [OnPlayerClickPlayerTextDraw](../../scripting/callbacks/OnPlayerClickPlayerTextDraw.md): Called when a player clicks on a player-textdraw.
-- [OnPlayerClickPlayer](../../scripting/callbacks/OnPlayerClickPlayer.md): Called when a player click on another.
+- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Called when a player clicks on a player-textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Called when a player click on another.

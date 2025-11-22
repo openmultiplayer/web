@@ -44,5 +44,5 @@ There is a limit as to how many explosions can be seen at once by a player. This
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CreateExplosion](CreateExplosion.md): Create an explosion which is visible for all players.
-- [Explosion Types](explosionlist): A list of all the explosion types.
+- [CreateExplosion](CreateExplosion): Create an explosion which is visible for all players.
+- [Explosion Types](../resources/explosionlist): A list of all the explosion types.

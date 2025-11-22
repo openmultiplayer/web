@@ -9,11 +9,11 @@ tags: ["player", "vehicle"]
 
 Sets a player to spectate another vehicle. Their camera will be attached to the vehicle as if they are driving it.
 
-| Name            | Description                                                                                                 |
-| --------------- | ----------------------------------------------------------------------------------------------------------- |
-| playerid        | The ID of the player who should spectate a vehicle.                                                         |
-| targetvehicleid | The ID of the vehicle the player should spectate.                                                           |
-| mode            | The spectate [mode](../resources/spectatemodes.md). Can generally be left blank as it defaults to 'normal'. |
+| Name            | Description                                                                                              |
+| --------------- | -------------------------------------------------------------------------------------------------------- |
+| playerid        | The ID of the player who should spectate a vehicle.                                                      |
+| targetvehicleid | The ID of the vehicle the player should spectate.                                                        |
+| mode            | The spectate [mode](../resources/spectatemodes). Can generally be left blank as it defaults to 'normal'. |
 
 ## ส่งคืน
 

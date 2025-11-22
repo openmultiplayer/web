@@ -39,9 +39,9 @@ Once a variable is deleted, attempts to retrieve the value will return 0 (for in
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetSVarInt](../../scripting/functions/SetSVarInt.md): Set an integer for a server variable.
-- [GetSVarInt](../../scripting/functions/GetSVarInt.md): Get a player server as an integer.
-- [SetSVarString](../../scripting/functions/SetSVarString.md): Set a string for a server variable.
-- [GetSVarString](../../scripting/functions/GetSVarString.md): Get the previously set string from a server variable.
-- [SetSVarFloat](../../scripting/functions/SetSVarFloat.md): Set a float for a server variable.
-- [GetSVarFloat](../../scripting/functions/GetSVarFloat.md): Get the previously set float from a server variable.
+- [SetSVarInt](SetSVarInt): Set an integer for a server variable.
+- [GetSVarInt](GetSVarInt): Get a player server as an integer.
+- [SetSVarString](SetSVarString): Set a string for a server variable.
+- [GetSVarString](GetSVarString): Get the previously set string from a server variable.
+- [SetSVarFloat](SetSVarFloat): Set a float for a server variable.
+- [GetSVarFloat](GetSVarFloat): Get the previously set float from a server variable.

@@ -330,4 +330,4 @@ A tag consists of an identifier followed by a colon. There may be no white space
 
 ---
 
-[Go Back to Contents](00-Contents.md)
+[Go Back to Contents](00-Contents)

@@ -14,7 +14,7 @@ description: نحوه مشارکت در Wiki SA-MP و مستندات open.mp.
 
 ![Edit this page link present on each wiki page](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-مثلاً، کلیک روی این در [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity.md) شما را به [این صفحه](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.mdxx) می‌برد که ویرایشگر متنی برای ایجاد تغییرات در فایل ارائه می‌دهد (فرض کنید به GitHub لاگین کرده‌اید).
+مثلاً، کلیک روی این در [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) شما را به [این صفحه](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md) می‌برد که ویرایشگر متنی برای ایجاد تغییرات در فایل ارائه می‌دهد (فرض کنید به GitHub لاگین کرده‌اید).
 
 ویرایش خود را انجام دهید و "Pull Request" ارسال کنید این یعنی نگهدارندگان Wiki و سایر اعضای جامعه می‌توانند تغییر شما را بررسی کنند، بحث کنند آیا نیاز به تغییرات اضافی دارد یا نه و سپس آن را ادغام کنند.
 

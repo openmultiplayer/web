@@ -31,4 +31,4 @@ RemovePlayerMapIcon(playerid, 12);
 
 ## 相关函数
 
-- [SetPlayerMapIcon](/docs/scripting/functions/SetPlayerMapIcon): 为玩家创建地图图标
+- [SetPlayerMapIcon](SetPlayerMapIcon): 为玩家创建地图图标
