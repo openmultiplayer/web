@@ -5,7 +5,7 @@ sidebar_label: Modos de câmera
 
 ## Descrição
 
-Lista de modos de câmeras que podem ser utilizados com [GetPlayerCameraMode](../functions/GetPlayerCameraMode.md).
+Lista de modos de câmeras que podem ser utilizados com [GetPlayerCameraMode](../functions/GetPlayerCameraMode).
 
 :::note
 

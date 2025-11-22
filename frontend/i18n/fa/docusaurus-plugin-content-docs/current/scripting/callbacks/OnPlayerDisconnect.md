@@ -31,15 +31,6 @@ tags: ["player"]
 | 0  | تایم اوت/کرش | ارتباط بازیکن قطع شد یا بازی کرش خورد یا شبکه و اینترنت ایراد داشت. |
 | 1  | خارج شدن          | بازیکن با استفاده از دستور /q از بازی خارج شد یا از طریق منوی بازی.  |
 | 2  | اخراج/محروم      | بازیکن توسط سرور اخراج یا محروم شد. |
-| 3  | سفارشی        | توسط برخی از کتابخانه ها استفاده می شود. مانند fixes.inc |
-| 4  | حالت پایان      | گیم مود فعلی در حال پایان است، بنابراین اتصال همه بازیکنان از آن قطع می شود (اما آنها هنوز در سرور هستند) |
-
-:::warning
-
-کد 3 در ابتدا توسط fixes.inc در SA-MP اضافه شد
-
-کد های 3 و 4 توسط open.mp اضافه شد.
-:::
 
 ## مثال ها
 
@@ -54,13 +45,11 @@ public OnPlayerDisconnect(playerid, reason)
 
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 
-    new szDisconnectReason[5][] =
+    new szDisconnectReason[3][] =
     {
         "Timeout/Crash",
         "Quit",
-        "Kick/Ban",
-        "Custom",
-        "Mode End"
+        "Kick/Ban"
     };
 
     format(szString, sizeof szString, "%s Az Server Kharej Shod (Dalil: %s).", playerName, szDisconnectReason[reason]);

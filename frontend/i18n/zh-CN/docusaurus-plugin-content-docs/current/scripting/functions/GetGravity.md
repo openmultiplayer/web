@@ -49,5 +49,5 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [SetGravity](SetGravity.md): 设置全局重力值
-- [GetPlayerGravity](GetPlayerGravity.md): 获取玩家个体重力值
+- [SetGravity](SetGravity): 设置全局重力值
+- [GetPlayerGravity](GetPlayerGravity): 获取玩家个体重力值

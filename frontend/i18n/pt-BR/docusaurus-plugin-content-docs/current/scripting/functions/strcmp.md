@@ -58,8 +58,8 @@ Esta função retorna 0 se uma das strings estiver vazia. Verifique se há strin
 
 - [strfind](strfind): Procure uma string em outra string.
 - [strdel](strdel): Excluir parte de uma string.
-- [strins](../function/strins): Inserir texto em uma string.
-- [strlen](../function/strlen): Obter o comprimento de uma string.
+- [strins](strins): Inserir texto em uma string.
+- [strlen](strlen): Obter o comprimento de uma string.
 - [strmid](strmid): Extraia parte de uma string em outra string.
 - [strpack](strpack): Empacote uma string em uma string de destino.
 - [strval](strval): Converter uma string em um número inteiro.

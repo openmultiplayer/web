@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Adaugă o 'componentă' (adesea denumită 'mod' (modificare)) unui vehicul. Componentele valide pot fi găsite aici.
 
-| Nume                                          | Descriere                                                                        |
-| --------------------------------------------- | -------------------------------------------------------------------------------- |
-| vehicleid                                     | ID-ul vehiculului la care se adaugă componenta. Nu trebuie confundat cu modelid. |
-| [componentid](../resources/carcomponentid.md) | ID-ul componentei de adăugat la vehicul.                                         |
+| Nume                                       | Descriere                                                                        |
+| ------------------------------------------ | -------------------------------------------------------------------------------- |
+| vehicleid                                  | ID-ul vehiculului la care se adaugă componenta. Nu trebuie confundat cu modelid. |
+| [componentid](../resources/carcomponentid) | ID-ul componentei de adăugat la vehicul.                                         |
 
 ## Se intoarce
 
@@ -55,8 +55,8 @@ Utilizarea unui ID de componentă nevalid blochează jocul jucătorului. Nu exis
 
 ## Funcții conexe
 
-- [RemoveVehicleComponent](RemoveVehicleComponent.md): Scoateți o componentă dintr-un vehicul.
-- [GetVehicleComponentInSlot](GetVehicleComponentInSlot.md): Verificați ce componente are un vehicul.
-- [GetVehicleComponentType](GetVehicleComponentType.md): Verificați tipul de componentă prin ID.
-- [OnVehicleMod](../callbacks/OnVehicleMod.md): Apelat când un vehicul este modificat.
-- [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Apelat când un vehicul intră sau iese dintr-un magazin de moduri.
+- [RemoveVehicleComponent](RemoveVehicleComponent): Scoateți o componentă dintr-un vehicul.
+- [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Verificați ce componente are un vehicul.
+- [GetVehicleComponentType](GetVehicleComponentType): Verificați tipul de componentă prin ID.
+- [OnVehicleMod](../callbacks/OnVehicleMod): Apelat când un vehicul este modificat.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Apelat când un vehicul intră sau iese dintr-un magazin de moduri.

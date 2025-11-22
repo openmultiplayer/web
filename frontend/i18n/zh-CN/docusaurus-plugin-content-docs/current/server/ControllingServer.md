@@ -49,7 +49,7 @@ samp.ban 是用于存储封禁信息的文件，包括以下内容：
 - IP
 - 日期
 - 时间
-- 名称（人名或原因，参见 [BanEx](../../functions/BanEx)）
+- 名称（人名或原因，参见 [BanEx](../scripting/functions/BanEx)）
 - 封禁类型
 
 要添加封禁，只需添加如下一行：

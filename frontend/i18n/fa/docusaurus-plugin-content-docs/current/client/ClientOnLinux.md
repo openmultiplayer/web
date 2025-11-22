@@ -21,7 +21,7 @@ description: راهنمای نحوه اجرای کلاینت open.mp روی لی
 
 1. مطمئن شوید که prefix Wine ایجاد شده با GTA San Andreas نصب شده دارید.
 2. لانچر [open.mp](https://github.com/openmultiplayer/launcher/releases/latest) را دانلود کنید و داخل prefix Wine نصب کنید.
-3. [کلاینت SA-MP](https://github.com/KrustyKoyle/files.sa-mp.com-Archive) را دانلود کنید و در همان Wine Prefix نصب کنید.
+3. [کلاینت SA-MP](https://www.sa-mp.mp/downloads/) را دانلود کنید و در همان Wine Prefix نصب کنید.
 4. [omp-client.dll](https://assets.open.mp/omp-client.dll) را دانلود کنید و آن را در پوشه `AppData\Local\mp.open.launcher\omp\` کاربر اصلی در prefix خود کپی کنید.
 
 در نهایت، می‌توانید لانچر open.mp را از طریق CLI prefix های Wine اجرا کنید یا آن را در اسکریپت .bat بنویسید تا راه‌اندازی آسان شود.

@@ -47,5 +47,5 @@ Uma biblioteca de animação inválida irá crashar o jogo do jogador.
 
 ## Funções Relacionadas
 
-- [ClearAnimations](ClearAnimations.md): Limpe qualquer animação aplicada a um ator.
-- [SetPlayerSpecialAction](SetPlayerSpecialAction.md): Define uma ação especial a um jogador.
+- [ClearAnimations](ClearAnimations): Limpe qualquer animação aplicada a um ator.
+- [SetPlayerSpecialAction](SetPlayerSpecialAction): Define uma ação especial a um jogador.

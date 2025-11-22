@@ -33,10 +33,10 @@ Retorna o menu anterior quando nenhum é mostrado.
 
 ## Funções Relacionadas
 
-- [ShowMenuForPlayer](ShowMenuForPlayer.md): Mostra um menu a um jogador.
-- [HideMenuForPlayer](HideMenuForPlayer.md): Esconde um menu para um jogador.
-- [CreateMenu](CreateMenu.md): Cria um menu.
-- [DestroyMenu](DestroyMenu.md): Destrói um menu.
-- [AddMenuItem](AddMenuItem.md): Adiciona um item a um menu.
-- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow.md): É chamado quando o jogador seleciona uma linha de um menu.
-- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu.md): É chamado quando um jogador sai de um menu.
+- [ShowMenuForPlayer](ShowMenuForPlayer): Mostra um menu a um jogador.
+- [HideMenuForPlayer](HideMenuForPlayer): Esconde um menu para um jogador.
+- [CreateMenu](CreateMenu): Cria um menu.
+- [DestroyMenu](DestroyMenu): Destrói um menu.
+- [AddMenuItem](AddMenuItem): Adiciona um item a um menu.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): É chamado quando o jogador seleciona uma linha de um menu.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): É chamado quando um jogador sai de um menu.

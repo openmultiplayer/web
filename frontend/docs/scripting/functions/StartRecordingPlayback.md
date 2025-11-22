@@ -25,4 +25,4 @@ public OnNPCEnterVehicle(vehicleid, seatid)
 
 ## Related Functions
 
-- [StopRecordingPlayback](../functions/StopRecordingPlayback): Stops reproducing a .rec file.
+- [StopRecordingPlayback](StopRecordingPlayback): Stops reproducing a .rec file.

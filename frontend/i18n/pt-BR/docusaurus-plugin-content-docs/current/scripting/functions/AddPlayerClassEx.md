@@ -54,7 +54,7 @@ A identificação máxima da classe é 319 (começando em 0, portanto, um total 
 
 ## Funções Relacionadas
 
-- [AddPlayerClass](../functions/AddPlayerClass.md): Adiciona uma classe à seleção de classes.
-- [SetSpawnInfo](../functions/SetSpawnInfo.md): Define a configuração de spawn para um jogador.
-- [SetPlayerTeam](../functions/SetPlayerTeam.md): Define o time de um jogador.
-- [SetPlayerSkin](../functions/SetPlayerSkin.md): Define a skin (personagem) de um jogador.
+- [AddPlayerClass](AddPlayerClass): Adiciona uma classe à seleção de classes.
+- [SetSpawnInfo](SetSpawnInfo): Define a configuração de spawn para um jogador.
+- [SetPlayerTeam](SetPlayerTeam): Define o time de um jogador.
+- [SetPlayerSkin](SetPlayerSkin): Define a skin (personagem) de um jogador.

@@ -32,4 +32,4 @@ printf("本年已过天数: %d", Days);                    // 输出自年初以
 
 ## 相关函数
 
-- [gettime](gettime.md): 获取服务器时间的 UNIX 时间戳
+- [gettime](gettime): 获取服务器时间的 UNIX 时间戳

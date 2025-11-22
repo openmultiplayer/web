@@ -20,4 +20,4 @@ public OnNPCExitVehicle(vehicleid, seatid)
 
 ## 相关函数
 
-- [StartRecordingPlayback](../functions/StartRecordingPlayback): 开始播放.rec 文件
+- [StartRecordingPlayback](StartRecordingPlayback): 开始播放.rec 文件

@@ -1280,7 +1280,7 @@ AMX_Load(AMX *amx)
 
 ### Agradecimentos Especiais
 - Agradeço à comunidade de desenvolvedores que contribuíram para o desenvolvimento deste plugin e forneceram feedback valioso.
-- Um agradecimento especial à [SAMP Forums](https://forum.sa-mp.com/) e à equipe de desenvolvimento da SA-MP por suas contribuições e suporte contínuo.
+- Um agradecimento especial à SAMP Forums e à equipe de desenvolvimento da SA-MP por suas contribuições e suporte contínuo.
 - Agradeço aos meus colegas desenvolvedores e amigos que sempre me apoiaram e incentivaram a continuar aprendendo e melhorando.
 
 ## Special thanks

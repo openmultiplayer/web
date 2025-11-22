@@ -14,7 +14,7 @@ Jede Seite hat einen Button, über den du die Seite bearbeitest kannst:
 
 ![Bearbeite diesen Link, der auf jeder Wiki-Seite zu finden ist](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-Wenn du beispielsweise auf [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) klickst wirst du zum Beispiel auf [diese Seite](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) weiterleitet, auf der du Änderungen vornehmen kannst, sofern du bei GitHub eingeloggt bist.
+Wenn du beispielsweise auf [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) klickst wirst du zum Beispiel auf [diese Seite](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md) weiterleitet, auf der du Änderungen vornehmen kannst, sofern du bei GitHub eingeloggt bist.
 
 Nehme deine Änderungen vor und erstelle ein "Pull Request", damit andere Wiki-Helfer sich diese ansehen können, über nötige Ergänzungen entscheiden und deine Änderungen letztendlich übernehmen können.
 

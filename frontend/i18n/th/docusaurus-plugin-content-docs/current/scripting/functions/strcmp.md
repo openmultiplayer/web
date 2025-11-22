@@ -68,4 +68,3 @@ This function returns 0 if either string is empty. Check for null strings with i
 - strpack: Pack a string into a destination string.
 - strval: Convert a string into an integer.
 - strcat: Concatenate two strings into a destination reference.
-- http://www.compuphase.com/pawn/String_Manipulation.pdf

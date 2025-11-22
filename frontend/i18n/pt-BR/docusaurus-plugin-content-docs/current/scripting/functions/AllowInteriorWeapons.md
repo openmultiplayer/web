@@ -38,6 +38,6 @@ Esta função não funciona na atual versão do SA:MP!
 
 ## Funções Relacionadas
 
-- [SetPlayerInterior](SetPlayerInterior.md): Define o interior de um jogador.
-- [GetPlayerInterior](GetPlayerInterior.md): Obtém o atual interior de um jogador.
-- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange.md): É chamado quando um jogador muda de interior.
+- [SetPlayerInterior](SetPlayerInterior): Define o interior de um jogador.
+- [GetPlayerInterior](GetPlayerInterior): Obtém o atual interior de um jogador.
+- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): É chamado quando um jogador muda de interior.

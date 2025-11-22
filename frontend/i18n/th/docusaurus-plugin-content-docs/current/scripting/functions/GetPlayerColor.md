@@ -32,11 +32,11 @@ SendClientMessage(playerid, -1, output);
 
 :::warning
 
-GetPlayerColor will return nothing (0) unless SetPlayerColor has been used first.Click HERE for a fix.
+GetPlayerColor will return nothing (0) unless SetPlayerColor has been used first. Click HERE for a fix.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SetPlayerColor](../functions/SetPlayerColor): Set a player's color.
-- [ChangeVehicleColor](../functions/ChangeVehicleColor): Set the color of a vehicle.
+- [SetPlayerColor](SetPlayerColor): Set a player's color.
+- [ChangeVehicleColor](ChangeVehicleColor): Set the color of a vehicle.

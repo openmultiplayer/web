@@ -5,7 +5,7 @@ sidebar_label: Stiluri de tăiere a camerei
 
 ## Descriere
 
-Stilurile de tăiere a camerei sunt folosite in [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt), [InterpolateCameraPos](../functions/InterpolateCameraPos.md) si [InterpolateCameraLookAt](../functions/InterpolateCameraLookAt.md).
+Stilurile de tăiere a camerei sunt folosite in [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt), [InterpolateCameraPos](../functions/InterpolateCameraPos) si [InterpolateCameraLookAt](../functions/InterpolateCameraLookAt).
 
 ## Stiluri tăiate
 

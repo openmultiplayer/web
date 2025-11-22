@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).
 
-| Name       | Description                                                                            |
-| ---------- | -------------------------------------------------------------------------------------- |
-| vehicleid  | Ang ID ng sasakyan na babaguhin ang paintjob                                           |
-| paintjobid | Ang ID ng [Paintjob](../resources/paintjobs) na gagamitin. Gamitin ang 3 para matanggal ang paintjob. |
+| Name       | Description                                                                                           |
+| ---------- | ----------------------------------------------------------------------------------------------------- |
+| vehicleid  | Ang ID ng sasakyan na babaguhin ang paintjob                                                          |
+| paintjobid | Ang ID ng [paintjob](../resources/paintjobs) na gagamitin. Gamitin ang 3 para matanggal ang paintjob. |
 
 ## Returns
 
