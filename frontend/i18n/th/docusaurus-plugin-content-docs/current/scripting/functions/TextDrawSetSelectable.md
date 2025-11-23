@@ -10,7 +10,7 @@ tags: ["textdraw"]
 Sets whether a textdraw can be selected (clicked on) or not
 
 | Name     | Description                                                         |
-|----------|---------------------------------------------------------------------|
+| -------- | ------------------------------------------------------------------- |
 | text     | The ID of the textdraw to make selectable.                          |
 | bool:set | 'true' to make it selectable, or 'false' to make it not selectable. |
 
@@ -52,9 +52,9 @@ TextDrawSetSelectable must be used BEFORE the textdraw is shown to players for i
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SelectTextDraw](../functions/SelectTextDraw.md): Enables the mouse, so the player can select a textdraw
-- [CancelSelectTextDraw](../functions/CancelSelectTextDraw.md): Cancel textdraw selection with the mouse
+- [SelectTextDraw](SelectTextDraw): Enables the mouse, so the player can select a textdraw
+- [CancelSelectTextDraw](CancelSelectTextDraw): Cancel textdraw selection with the mouse
 
 ## Related Callbacks
 
-- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw.md): Called when a player clicks on a textdraw.
+- [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Called when a player clicks on a textdraw.

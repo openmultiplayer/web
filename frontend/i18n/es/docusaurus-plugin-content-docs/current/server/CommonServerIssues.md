@@ -5,11 +5,11 @@ sidebar_label: Problemas Comunes
 
 ## El servidor se bloquea instantáneamente al iniciarse
 
-Lo más común es que se deba a un error en tu archivo server.cfg o a la falta de un gamemode. Verifica el archivo server_log.txt y la razón debería estar ubicada en la parte inferior. Si no está ahí, verifica el archivo crashinfo.txt. La mejor solución para descubrir qué está causando el bloqueo es utilizar el plugin Crash Detect de Zeex/0x5A656578 ([clic aquí para acceder](https://github.com/Zeex/samp-plugin-crashdetect)), que proporcionará más información, como números de línea, nombres de función, valores de parámetros, etc. Si el script está compilado en modo de depuración (-d3 flag) para que el compilador incluya información adicional en el archivo .amx de salida.
+Lo más común es que se deba a un error en tu archivo server.cfg o a la falta de un gamemode. Verifica el archivo server_log.txt y la razón debería estar ubicada en la parte inferior. Si no está ahí, verifica el archivo crashinfo.txt. La mejor solución para descubrir qué está causando el bloqueo es utilizar el plugin Crash Detect de Zeex/0x5A656578 ([clic aquí para acceder](https://github.com/Y-Less/samp-plugin-crashdetect)), que proporcionará más información, como números de línea, nombres de función, valores de parámetros, etc. Si el script está compilado en modo de depuración (-d3 flag) para que el compilador incluya información adicional en el archivo .amx de salida.
 
 ## El servidor no funciona: el firewall está desactivado
 
-Necesitarás redirigir tus puertos para permitir que los jugadores se unan a tu servidor. Puedes redirigir tus puertos utilizando PF Port Checker. Descárgalo desde: www.portforward.com. Si los puertos no están redirigidos, significa que deberás abrirlos en tu enrutador. Puedes consultar la lista de enrutadores en [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm). Allí encontrarás toda la información sobre cómo redirigir los puertos.
+Necesitarás redirigir tus puertos para permitir que los jugadores se unan a tu servidor. Puedes redirigir tus puertos utilizando PF Port Checker. Descárgalo desde: www.portforward.com. Si los puertos no están redirigidos, significa que deberás abrirlos en tu enrutador. Puedes consultar la lista de enrutadores en [https://portforward.com/router.htm](https://portforward.com/router.htm). Allí encontrarás toda la información sobre cómo redirigir los puertos.
 
 ## 'Packet was modified'
 
@@ -66,7 +66,7 @@ Warning: Too many out-of-order messages
 
 Ocurre cuando los 'mensajes fuera de orden' reutilizan la configuración de límite de hueco de mensajes.
 
-Para obtener más información al respecto, consulta [este enlace](https://open.mp/docs/server/ControllingServer#RCON_Commands).
+Para obtener más información al respecto, consulta [este enlace](https://open.mp/docs/server/ControllingServer#rcon-commands).
 
 ## Jugadores reciben constantemente el error de "Nombre de usuario inaceptable" aunque sea válido
 

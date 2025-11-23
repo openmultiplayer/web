@@ -3,7 +3,7 @@ titlu: "Culoare Fixata"
 descriere: Un simplu script pentru a adauga mai multe culori la jucatori.
 ---
 
-Acest tutorial este facut sa fie folosit cu [GetPlayerColor](../../scripting/functions/GetPlayerColor.md), Daca nu il folosesti [SetPlayerColor](../../scripting/functions/SetPlayerColor.md) in scriptul tau cand jucatorii se conecteaza.
+Acest tutorial este facut sa fie folosit cu [GetPlayerColor](../scripting/functions/GetPlayerColor), Daca nu il folosesti [SetPlayerColor](../scripting/functions/SetPlayerColor) in scriptul tau cand jucatorii se conecteaza.
 
 ```c
 new PlayerColors[] = {
@@ -28,7 +28,7 @@ Urmatorul loc este sub OnPlayerConnect callback:
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);
 ```
 
-Acum [GetPlayerColor](../../scripting/functions/GetPlayerColor.md) o sa mearga!
+Acum [GetPlayerColor](../scripting/functions/GetPlayerColor) o sa mearga!
 
 Pentru versiuni noi de SA-MP poti sa adaugi acest array:
 

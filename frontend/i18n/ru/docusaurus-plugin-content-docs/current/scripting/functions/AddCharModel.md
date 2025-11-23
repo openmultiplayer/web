@@ -56,4 +56,4 @@ useartwork должна быть включена ( 1 ) в настройках 
 
 ## Связанные Функции
 
-- [SetPlayerSkin](SetPlayerSkin.md): Устанавливает скин игрока.
+- [SetPlayerSkin](SetPlayerSkin): Устанавливает скин игрока.

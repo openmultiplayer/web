@@ -54,7 +54,7 @@ Maksymalne ID klasy to 319 (zaczynając od 0, czyli łącznie 320 klas). Po osi�
 
 ## Powiązane funkcje
 
-- [AddPlayerClass](AddPlayerClass.md): Dodaje klasę.
-- [SetSpawnInfo](SetSpawnInfo.md): Konfiguruje ustawienia spawnu dla gracza.
-- [SetPlayerTeam](SetPlayerTeam.md): Ustawia drużynę gracza.
-- [SetPlayerSkin](SetPlayerSkin.md): Ustawia skin gracza.
+- [AddPlayerClass](AddPlayerClass): Dodaje klasę.
+- [SetSpawnInfo](SetSpawnInfo): Konfiguruje ustawienia spawnu dla gracza.
+- [SetPlayerTeam](SetPlayerTeam): Ustawia drużynę gracza.
+- [SetPlayerSkin](SetPlayerSkin): Ustawia skin gracza.

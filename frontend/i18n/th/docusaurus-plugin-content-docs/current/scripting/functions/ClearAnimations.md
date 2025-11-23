@@ -48,4 +48,4 @@ Unlike some other ways to remove player from a vehicle, this will also reset the
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [ApplyAnimation](../../scripting/functions/ApplyAnimation.md): Apply an animation to a player.
+- [ApplyAnimation](ApplyAnimation): Apply an animation to a player.

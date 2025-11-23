@@ -46,8 +46,8 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [CreateActor](CreateActor.md): 创建角色（静态 NPC）
-- [GetActorPos](GetActorPos.md): 获取角色的坐标位置
-- [SetActorPos](SetActorPos.md): 设置角色的坐标位置
-- [GetActorSkin](GetActorSkin.md): 获取角色皮肤 ID
-- [SetActorSkin](SetActorSkin.md): 设置角色皮肤 ID
+- [CreateActor](CreateActor): 创建角色（静态 NPC）
+- [GetActorPos](GetActorPos): 获取角色的坐标位置
+- [SetActorPos](SetActorPos): 设置角色的坐标位置
+- [GetActorSkin](GetActorSkin): 获取角色皮肤 ID
+- [SetActorSkin](SetActorSkin): 设置角色皮肤 ID

@@ -5,7 +5,7 @@ sidebar_label: 常见客户端问题
 
 ### 出现"San Andreas 无法找到"错误
 
-San Andreas Multiplayer **并非**独立程序！它需要基于《侠盗猎车手：圣安地列斯》PC 版（必须为**欧美 v1.0 版本**）运行。v2.0、Steam 版或 Direct2Drive 版本均不兼容。[点击此处下载降级补丁](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multiplayer **并非**独立程序！它需要基于《侠盗猎车手：圣安地列斯》PC 版（必须为**欧美 v1.0 版本**）运行。v2.0、Steam 版或 Direct2Drive 版本均不兼容。[点击此处下载降级补丁](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### 服务器列表无法显示
 
@@ -19,7 +19,7 @@ SA:MP 内置浏览器已失效。请下载新版[open.mp 启动器](https://gith
 
 :::
 
-该问题通常由两种原因导致：SA:MP 安装路径错误或游戏版本不符。若版本问题，请使用降级补丁。[点击下载](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+该问题通常由两种原因导致：SA:MP 安装路径错误或游戏版本不符。若版本问题，请使用降级补丁。[点击下载](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 有时单机菜单会短暂显示但 SA:MP 实际已加载。此时选择任意菜单项后按 ESC 退出即可继续加载。
 

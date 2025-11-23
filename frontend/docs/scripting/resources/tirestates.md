@@ -247,4 +247,4 @@ UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, (tires | VEHICLE_TIR
 
 ## See also
 
-- [Vehicle Tire Status](../resources/vehicle-tire-status)
+- [Vehicle Tire Status](vehicle-tire-status)

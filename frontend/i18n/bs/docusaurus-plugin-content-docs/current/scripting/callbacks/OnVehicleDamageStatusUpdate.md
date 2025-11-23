@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 :::tip
 
-Za neke korisne funkcije za raditi sa vozilima sa vrijednostima oštećenja vozila, pogledajte [ovdje](../resources/damagestatus.md).
+Za neke korisne funkcije za raditi sa vozilima sa vrijednostima oštećenja vozila, pogledajte [ovdje](../resources/damagestatus).
 
 :::
 
@@ -56,5 +56,5 @@ Ovo ne uključuje promjene u healthu/zdravlju vozila.
 
 ## Srodne Funkcije
 
-- [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus.md): Doznajte stanje oštećenja vozila za svaki dio pojedinačno.
-- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus.md): Ažuriraj oštećenost vozila.
+- [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus): Doznajte stanje oštećenja vozila za svaki dio pojedinačno.
+- [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus): Ažuriraj oštećenost vozila.

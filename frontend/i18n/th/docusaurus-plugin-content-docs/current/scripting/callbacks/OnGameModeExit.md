@@ -33,4 +33,4 @@ public OnGameModeExit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GameModeExit](../../scripting/functions/GameModeExit.md): ออกจากเกมโหมดปัจจุบัน
+- [GameModeExit](../functions/GameModeExit): ออกจากเกมโหมดปัจจุบัน

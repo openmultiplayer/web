@@ -22,6 +22,6 @@ public OnFilterScriptInit()
 
 ## Callbacks Relacionados
 Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnFilterScriptInit:
-- [OnFilterScriptExit](../callbacks/OnFilterScriptExit): Este callback es llamado cuando un filterscript finaliza.
-- [OnGameModeInit](../callbacks/OnGameModeInit): Este callback es llamado cuando un modo de juego (el server) inicia.
-- [OnGameModeExit](../callbacks/OnGameModeExit): Este callback es llamado cuando un modo de juego finaliza (por ejemplo, al apagar el servidor).
+- [OnFilterScriptExit](OnFilterScriptExit): Este callback es llamado cuando un filterscript finaliza.
+- [OnGameModeInit](OnGameModeInit): Este callback es llamado cuando un modo de juego (el server) inicia.
+- [OnGameModeExit](OnGameModeExit): Este callback es llamado cuando un modo de juego finaliza (por ejemplo, al apagar el servidor).

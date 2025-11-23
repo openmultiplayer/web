@@ -9,7 +9,7 @@ sidebar_label: 常見問題
 
 ### 出現錯誤訊息 "San Andreas cannot be found"
 
-open.mp **並不是** 一個包含遊戲的獨立軟體，它只是GTASA的一個連線模組，所以需要先安裝原版GTASA才可以執行open.mp。這個模組需要在 GTASA **EU/US v1.0 (歐美 1.0版)** 版本下才可以運行，其他版本，像是Steam上的版本或是其他平台版本皆無法正確運行。 [可以點擊這裡下載 歐美1.0版本 的執行程式來進行降級](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+open.mp **並不是** 一個包含遊戲的獨立軟體，它只是GTASA的一個連線模組，所以需要先安裝原版GTASA才可以執行open.mp。這個模組需要在 GTASA **EU/US v1.0 (歐美 1.0版)** 版本下才可以運行，其他版本，像是Steam上的版本或是其他平台版本皆無法正確運行。 [可以點擊這裡下載 歐美1.0版本 的執行程式來進行降級](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### 在伺服器列表上沒有任何伺服器
 
@@ -23,7 +23,7 @@ open.mp **並不是** 一個包含遊戲的獨立軟體，它只是GTASA的一�
 
 :::
 
-導致這樣的原因比較有可能是因為使用了錯誤的GTASA主程式版本，或是用戶端安裝錯誤。若為GTASA主程式版本問題，[可以點擊這裡下載 歐美1.0版本 的執行程式來進行降級](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)。
+導致這樣的原因比較有可能是因為使用了錯誤的GTASA主程式版本，或是用戶端安裝錯誤。若為GTASA主程式版本問題，[可以點擊這裡下載 歐美1.0版本 的執行程式來進行降級](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)。
 
 另外一種比較不常發生的情況，有可能是用戶端已經讀取完成，但是仍跳出了單人模式的選單，這時只要選擇任一選項後按ESC關閉選單即可。
 

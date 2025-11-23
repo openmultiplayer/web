@@ -37,8 +37,8 @@ strmid(string, "Extract 'HELLO' without the !!!!: HELLO!!!!", 34, 39); //string
 
 - [strcmp](strcmp): Uporedi dva stringa kako bi provjerio da li su isti.
 - [strfind](strfind): Pretraži string u drugom stringu.
-- [strins](../function/strins): Unesi tekst u string.
-- [strlen](../function/strlen): Dobij dužinu stringa.
+- [strins](strins): Unesi tekst u string.
+- [strlen](strlen): Dobij dužinu stringa.
 - [strpack](strpack): Upakuj string u odredišni string.
 - [strval](strval): Pretvori string u cijeli broj.
 - [strcat](strcat): Spojite dva stringa u odredišnu referencu.

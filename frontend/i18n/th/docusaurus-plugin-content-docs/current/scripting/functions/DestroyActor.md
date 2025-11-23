@@ -45,4 +45,4 @@ public OnFilterScriptExit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CreateActor](../../scripting/functions/CreateActor.md): Create an actor (static NPC).
+- [CreateActor](CreateActor): Create an actor (static NPC).

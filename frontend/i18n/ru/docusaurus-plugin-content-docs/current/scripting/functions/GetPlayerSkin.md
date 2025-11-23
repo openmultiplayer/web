@@ -33,4 +33,4 @@ playerskin = GetPlayerSkin(playerid);
 
 ## Связанные функции
 
-- [SetPlayerSkin](SetPlayerSkin.md): Устанавливает скин игрока.
+- [SetPlayerSkin](SetPlayerSkin): Устанавливает скин игрока.

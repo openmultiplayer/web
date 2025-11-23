@@ -7,7 +7,7 @@ tags: []
 
 ## Опис
 
-Ова повратна функција се позива када снимљена датотека која се репродукује помоћу NPC:[StartRecordingPlayback](../functions/StartRecordingPlayback) достигне крај.
+Ова повратна функција се позива када снимљена датотека која се репродукује помоћу [StartRecordingPlayback](../functions/StartRecordingPlayback) достигне крај.
 
 ## Пример
 
