@@ -39,4 +39,4 @@ If the gamemode is changed after this function has been used, and the new gamemo
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [AllowInteriorWeapons](../../scripting/functions/AllowInteriorWeapons.md): Determine if weapons can be used in interiors.
+- [AllowInteriorWeapons](AllowInteriorWeapons): Determine if weapons can be used in interiors.

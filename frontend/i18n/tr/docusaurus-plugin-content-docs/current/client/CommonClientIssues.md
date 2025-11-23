@@ -5,7 +5,7 @@ sidebar_label: Ortak İstemci Sorunları
 
 ### "San Andreas cannot be found" hatası alıyorum
 
-San Andreas Multiplayer, **bağımsız bir program değildir!** San Andreas'a çok oyunculu işlevsellik ekler ve bu nedenle PC için GTA San Andreas'a ihtiyacınız vardır - ayrıca GTA sürümü **ABD/AB v1.0** olması gerekir; diğer sürümler, v2.0 veya Steam ve Direct2Drive sürümleri çalışmaz. [GTA: SA sürümünüzü 1.0'a düşürmek için buraya tıklayın](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661).
+San Andreas Multiplayer, **bağımsız bir program değildir!** San Andreas'a çok oyunculu işlevsellik ekler ve bu nedenle PC için GTA San Andreas'a ihtiyacınız vardır - ayrıca GTA sürümü **ABD/AB v1.0** olması gerekir; diğer sürümler, v2.0 veya Steam ve Direct2Drive sürümleri çalışmaz. [GTA: SA sürümünüzü 1.0'a düşürmek için buraya tıklayın](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch).
 
 ### SA:MP tarayıcısında hiç sunucu göremiyorum
 
@@ -20,7 +20,7 @@ Tek oyunculu seçeneklerini (yeni oyun, oyun yükle, vb.) görmemeniz gerekiyor 
 
 :::
 
-Tek oyunculu, SA:MP'yi yanlış bir klasöre kurduysanız veya yanlış bir San Andreas sürümüne sahipseniz yüklenir. Yanlış bir sürüme sahipseniz, GTA San Andreas sürüm düşürücüsünü kullanarak oyununuzun sürümünü düşürebilirsiniz. İndirmek için [buraya tıklayın](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661).
+Tek oyunculu, SA:MP'yi yanlış bir klasöre kurduysanız veya yanlış bir San Andreas sürümüne sahipseniz yüklenir. Yanlış bir sürüme sahipseniz, GTA San Andreas sürüm düşürücüsünü kullanarak oyununuzun sürümünü düşürebilirsiniz. İndirmek için [buraya tıklayın](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch).
 
 Bazen tek oyunculu menü görünebilir, ancak aslında SA:MP düzgün bir şekilde yüklenmiştir. Bu durumu düzeltmek için menüde bir öğe seçmeniz ve ardından çıkış tuşuna basmanız yeterlidir. SA:MP ardından yüklenmeye devam eder.
 
@@ -50,7 +50,7 @@ Eğer 2 monitörünüz varsa, bunu çözmenin 3 yolu vardır:
 
 ### Pause menüsünden çıktıktan sonra farem çalışmıyor
 
-Eğer fare oyun içinde donmuş gibi görünüyorsa (kısmen) ve pause menüsünde çalışıyorsa, [sa-mp.cfg](ClientCommands#file-sa-mpcfg "Sa-mp.cfg") dosyasındaki multicore seçeneğini devre dışı bırakmalısınız (0 olarak ayarlayın). Fare tekrar yanıt verene kadar sürekli Escape tuşuna basmak da işe yarayabilir, ancak bu düzgün bir çözüm değildir.
+Eğer fare oyun içinde donmuş gibi görünüyorsa (kısmen) ve pause menüsünde çalışıyorsa, [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") dosyasındaki multicore seçeneğini devre dışı bırakmalısınız (0 olarak ayarlayın). Fare tekrar yanıt verene kadar sürekli Escape tuşuna basmak da işe yarayabilir, ancak bu düzgün bir çözüm değildir.
 
 ### dinput8.dll dosyası eksik
 

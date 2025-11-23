@@ -36,5 +36,5 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [CreateActor](CreateActor.md): 创建角色（静态 NPC）
-- [SetActorSkin](SetActorSkin.md): 设置角色的皮肤 ID
+- [CreateActor](CreateActor): 创建角色（静态 NPC）
+- [SetActorSkin](SetActorSkin): 设置角色的皮肤 ID

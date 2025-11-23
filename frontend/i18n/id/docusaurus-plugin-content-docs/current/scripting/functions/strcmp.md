@@ -63,4 +63,3 @@ Fungsi ini me-return 0 jika stringnya kosong. Cek string kosong dengan isnull().
 - [strpack](strpack): Membungkus sebuah string menjadi string baru.
 - [strval](strval): Mengkonversi sebuah string menjadi integer.
 - [strcat](strcat): Menggabungkan dua buah string menjadi sebuah string.
-- http://www.compuphase.com/pawn/String_Manipulation.pdf

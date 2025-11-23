@@ -29,4 +29,4 @@ SetMyFacingAngle(0); //NPC roo be shamal mikone
 
 ## توابع مرتبط
 
-- [GetMyFacingAngle](../functions/GetMyFacingAngle): زاویه رو به رو بودن NPC رو دریافت می‌کنه.
+- [GetMyFacingAngle](GetMyFacingAngle): زاویه رو به رو بودن NPC رو دریافت می‌کنه.

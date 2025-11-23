@@ -55,6 +55,6 @@ Known Bug(s): Pickups that have a X or Y lower than -4096.0 or bigger than 4096.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [AddStaticPickup](../../scripting/functions/AddStaticPickup.md): Add a static pickup.
-- [DestroyPickup](../../scripting/functions/DestroyPickup.md): Destroy a pickup.
-- [OnPlayerPickUpPickup](../../scripting/callbacks/OnPlayerPickUpPickup.md): Called when a player picks up a pickup.
+- [AddStaticPickup](AddStaticPickup): Add a static pickup.
+- [DestroyPickup](DestroyPickup): Destroy a pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Called when a player picks up a pickup.

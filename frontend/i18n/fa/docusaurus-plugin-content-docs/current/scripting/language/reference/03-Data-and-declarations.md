@@ -322,4 +322,4 @@ for (new i = 0; rectangle:i < rectangle; ++i)
 
 ---
 
-[برگشت به فهرست مطالب](00-Contents.md)
+[برگشت به فهرست مطالب](00-Contents)

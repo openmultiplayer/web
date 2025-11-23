@@ -30,7 +30,7 @@ Bu fonksiyon, NPC tarafından da çağrılabilir.
 
 :::tip
 
-Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tetiklemez. Yalnıza zamanlayıcı (timer) veya [OnPlayerUpdate](../callbacks/OnPlayerUpdate) içerisinde kullanılan [GetPlayerKeys](../functions/GetPlayerKeys) ile tetiklenebilir.
+Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tetiklemez. Yalnıza zamanlayıcı (timer) veya [OnPlayerUpdate](OnPlayerUpdate) içerisinde kullanılan [GetPlayerKeys](../functions/GetPlayerKeys) ile tetiklenebilir.
 
 :::
 

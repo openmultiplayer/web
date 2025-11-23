@@ -13,7 +13,7 @@ Mostra um dialog (janela) asíncrono (um único por vez).
 | --------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | playerid  | ID do jogador que irá ver o dialog                                                                                             |
 | dialogid  | ID do dialog (será usado para processar as respostas). ID máximo 32767. Usar valores negativos fechará qualquer dialog aberto. |
-| style     | The [style](../resources/dialogstyles.md) of the dialog.                                                                       |
+| style     | The [style](../resources/dialogstyles) of the dialog.                                                                          |
 | caption[] | Título mostrado no topo do dialog. O tamanho do caption não deve ultrapassar 64 caracteres, ou será cortado.                   |
 | info[]    | Texto que será mostrado no corpo do dialog. Use \n para iniciar uma nova linha e \t para espaço (TAB).                         |
 | button1[] | Texto do botão esquerdo.                                                                                                       |
@@ -78,5 +78,5 @@ Use cores embutidas para múltiplas cores no texto. Usando -1 como dialogid fech
 
 ## Funções relacionadas
 
-- [TextDrawShowForPlayer](TextDrawShowForPlayer.md): Apresenta um textdraw para certo jogador.
-- [OnDialogResponse](../callbacks/OnDialogResponse.md): É chamada quando um jogador responde a um dialog.
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): Apresenta um textdraw para certo jogador.
+- [OnDialogResponse](../callbacks/OnDialogResponse): É chamada quando um jogador responde a um dialog.

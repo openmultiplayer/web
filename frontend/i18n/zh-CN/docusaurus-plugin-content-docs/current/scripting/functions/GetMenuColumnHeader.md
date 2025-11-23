@@ -33,4 +33,4 @@ GetMenuColumnHeader(menuid, 1, text, sizeof(text));
 
 ## 相关函数
 
-- [CreateMenu](CreateMenu.md): 创建新菜单
+- [CreateMenu](CreateMenu): 创建新菜单

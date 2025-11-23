@@ -76,5 +76,5 @@ Ang napipindot na area ay na dedefine sa TextDrawTextSize. Ang x at y na paramet
 
 ## Related Functions
 
-- [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw.md): Natatawag kapag ang player ay pumindot sa isang player-textdraw.
-- [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer.md): Natatawag kapag ang player ay pinindot ang ibang player.
+- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Natatawag kapag ang player ay pumindot sa isang player-textdraw.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Natatawag kapag ang player ay pinindot ang ibang player.

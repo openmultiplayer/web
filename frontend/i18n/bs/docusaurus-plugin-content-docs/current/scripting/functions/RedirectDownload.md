@@ -30,7 +30,7 @@ Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleModel uređaja 
 ## Primjer upotrebe iz dl_redirect filterskripte
 
 ```c
-new baseurl[] = "https://files.sa-mp.com/server";
+new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {

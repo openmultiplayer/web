@@ -14,7 +14,7 @@ description: SA-MP விக்கி மற்றும் open.mp ஆவணங
 
 ![ஒவ்வொரு விக்கி பக்கத்திலும் இருக்கும் இந்தப் பக்க இணைப்பைத் திருத்தவும்](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-எடுத்துக்காட்டாக, இதை [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) என்பதில் கிளிக் செய்வதன் மூலம், [இந்தப் பக்கத்திற்கு](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehocicle/SetVehocicle/SetVehocicleAngular) .md) கோப்பில் மாற்றங்களைச் செய்ய உங்களுக்கு உரை திருத்தியை வழங்குகிறது (நீங்கள் GitHub இல் உள்நுழைந்திருக்கிறீர்கள் என்று வைத்துக்கொள்வோம்).
+எடுத்துக்காட்டாக, இதை [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) என்பதில் கிளிக் செய்வதன் மூலம், [இந்தப் பக்கத்திற்கு](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md) கோப்பில் மாற்றங்களைச் செய்ய உங்களுக்கு உரை திருத்தியை வழங்குகிறது (நீங்கள் GitHub இல் உள்நுழைந்திருக்கிறீர்கள் என்று வைத்துக்கொள்வோம்).
 
 உங்கள் திருத்தத்தைச் செய்து, "இழுக்கும் கோரிக்கையை" சமர்ப்பிக்கவும், அதாவது விக்கி பராமரிப்பாளர்களும் பிற சமூக உறுப்பினர்களும் உங்கள் மாற்றத்தை மதிப்பாய்வு செய்யலாம், கூடுதல் மாற்றங்கள் தேவையா என்று விவாதிக்கலாம் மற்றும் அதை ஒன்றிணைக்கலாம்.
 

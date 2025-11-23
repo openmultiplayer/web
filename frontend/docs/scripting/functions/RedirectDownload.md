@@ -27,7 +27,7 @@ Redirect a player custom AddCharModel or AddSimpleModel download to a specific H
 ## Example Usage from dl_redirect filterscript
 
 ```c
-new baseurl[] = "https://files.sa-mp.com/server";
+new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {

@@ -30,4 +30,4 @@ public OnPlayerText(playerid, text[])
 
 ## 相关函数
 
-- [SetMyFacingAngle](../functions/SetMyFacingAngle): 设置 NPC 的面朝角度
+- [SetMyFacingAngle](SetMyFacingAngle): 设置 NPC 的面朝角度
