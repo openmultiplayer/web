@@ -47,4 +47,4 @@ Callback ini akan terpanggil juga oleh NPC.
 
 ## Related Functions
 
-- [SendRconCommand](../functions/SendRconCommand.md): Mengirimkan perintah RCON melalui skrip.
+- [SendRconCommand](../functions/SendRconCommand): Mengirimkan perintah RCON melalui skrip.

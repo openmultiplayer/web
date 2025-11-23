@@ -44,6 +44,6 @@ Obiekt musi zostać utworzony, zanim spróbujemy przyczepić do niego inny obiek
 
 ## Powiązane funkcje
 
-- [AttachCameraToObject](AttachCameraToObject.md): Przyczepia kamerę gracza do globalnego obiektu.
-- [SetPlayerCameraPos](SetPlayerCameraPos.md): Ustawia pozycję kamery gracza.
-- [SetPlayerCameraLookAt](SetPlayerCameraLookAt.md): Ustawia, gdzie ma być skierowana kamera gracza.
+- [AttachCameraToObject](AttachCameraToObject): Przyczepia kamerę gracza do globalnego obiektu.
+- [SetPlayerCameraPos](SetPlayerCameraPos): Ustawia pozycję kamery gracza.
+- [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Ustawia, gdzie ma być skierowana kamera gracza.

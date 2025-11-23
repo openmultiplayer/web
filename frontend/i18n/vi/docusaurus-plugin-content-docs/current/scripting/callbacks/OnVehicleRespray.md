@@ -9,12 +9,12 @@ tags: ["vehicle"]
 
 Callback này được gọi khi một người chơi rời khỏi cửa hàng tùy chỉnh, ngay cả khi màu sắc của xe không thay đổi. Lưu ý, tên của callback này có thể gây hiểu lầm, các cửa hàng Pay 'n' Spray không gọi callback này.
 
-| Tên        | Mô tả                                                    |
-|------------|----------------------------------------------------------|
-| playerid   | ID của người chơi đang lái xe.                          |
-| vehicleid  | ID của xe đã được sơn lại.                              |
-| color1     | Màu sắc mà màu chính của xe đã được thay đổi.           |
-| color2     | Màu sắc mà màu phụ của xe đã được thay đổi.             |
+| Tên        | Mô tả                                         |
+| ---------- | --------------------------------------------- |
+| playerid   | ID của người chơi đang lái xe.                |
+| vehicleid  | ID của xe đã được sơn lại.                    |
+| color1     | Màu sắc mà màu chính của xe đã được thay đổi. |
+| color2     | Màu sắc mà màu phụ của xe đã được thay đổi.   |
 
 ## Trả về
 
@@ -38,7 +38,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 Callback này không được gọi bởi ChangeVehicleColor. Tên của callback này có thể gây hiểu lầm, và nó không được gọi cho các cửa hàng Pay 'n' Spray (chỉ các cửa hàng tùy chỉnh).
 
-Fix ở đây: http://pastebin.com/G81da7N1
+Fix ở đây: https://pastebin.com/G81da7N1
 
 :::
 

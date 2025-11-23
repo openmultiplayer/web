@@ -7,7 +7,7 @@ tags: ["player"]
 
 :::warning
 
-Ova funkcija, kao u 0.3d, je zastarjela. Provjerite [OnPlayerClickMap](../callbacks/OnPlayerClickMap.md).
+Ova funkcija, kao u 0.3d, je zastarjela. Provjerite [OnPlayerClickMap](../callbacks/OnPlayerClickMap).
 
 :::
 
@@ -39,10 +39,10 @@ public OnPlayerConnect( playerid )
 
 :::warning
 
-Ova funckija će raditi SAMO ako je funkcija [AllowAdminTeleport](AllowAdminTeleport.md) omogućena, i moraš biti admin.
+Ova funckija će raditi SAMO ako je funkcija [AllowAdminTeleport](AllowAdminTeleport) omogućena, i moraš biti admin.
 
 :::
 
 ## Srodne Funkcije
 
-- [AllowAdminTeleport](AllowAdminTeleport.md): O(ne)mogući teleportovanje po markerima za RCON admine.
+- [AllowAdminTeleport](AllowAdminTeleport): O(ne)mogući teleportovanje po markerima za RCON admine.

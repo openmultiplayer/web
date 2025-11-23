@@ -80,11 +80,11 @@ stock HexToInt(string[])
 - [SetObjectMaterialText](../functions/SetObjectMaterialText)
 - [SetVehicleNumberPlate](../functions/SetVehicleNumberPlate)
 
-该功能与[游戏文本颜色](../resources/gametextstyles)的用法相似，但支持自定义任意颜色值。
+该功能与[游戏文本颜色](gametextstyles)的用法相似，但支持自定义任意颜色值。
 
 :::caution
 
-此方式不适用于文本绘图，详见[游戏文本样式](../resources/gametextstyles)。
+此方式不适用于文本绘图，详见[游戏文本样式](gametextstyles)。
 
 :::
 
@@ -158,11 +158,10 @@ SendClientMessage(playerid, 0xffffffff, msg);
 
 ### 颜色选择工具
 
-- [SA-MP 调色板](http://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
-- [December 色表](http://www.december.com/html/spec/color.html)
-- [RGB 拾取器](http://psyclops.com/tools/rgb)
-- [Adobe 配色](https://kuler.adobe.com/create/color-wheel/)
-- [配色设计器](http://colorschemedesigner.com/)
+- [SA-MP 调色板](https://www.gtavision.com/index.php?section=downloads&site=download&id=1974)
+- [December 色表](https://johndecember.com/html/spec/color.html)
+- [Adobe 配色](https://color.adobe.com/create/color-wheel/)
+- [配色设计器](https://paletton.com)
 
 ---
 

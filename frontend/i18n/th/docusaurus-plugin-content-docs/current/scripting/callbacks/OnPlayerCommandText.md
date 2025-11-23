@@ -47,4 +47,4 @@ NPC สามารถเรียก Callback นี้ได้
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [SendRconCommand](../../scripting/functions/SendRconCommand.md): Sends an RCON command via the script.
+- [SendRconCommand](../functions/SendRconCommand): Sends an RCON command via the script.

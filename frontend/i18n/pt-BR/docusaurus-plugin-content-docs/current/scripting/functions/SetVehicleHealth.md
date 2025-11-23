@@ -38,13 +38,13 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 :::tip
 
-A vida máxima do veículo é 1000. Valores maiores são possíveis. Para mais informações sobre os valores de vida dos veículos , veja [esta](../resources/vehiclehealth.md) página.
+A vida máxima do veículo é 1000. Valores maiores são possíveis. Para mais informações sobre os valores de vida dos veículos , veja [esta](../resources/vehiclehealth) página.
 
 :::
 
 ## Funções Relacionadas
 
-- [GetVehicleHealth](GetVehicleHealth.md): Verifica a vida de um veículo.
-- [RepairVehicle](RepairVehicle.md): Repara totalmente um veículo.
-- [SetPlayerHealth](SetPlayerHealth.md): Define a vida de um jogador.
-- [OnVehicleDeath](../callbacks/OnVehicleDeath.md): É chamado quando um veículo é destruído.
+- [GetVehicleHealth](GetVehicleHealth): Verifica a vida de um veículo.
+- [RepairVehicle](RepairVehicle): Repara totalmente um veículo.
+- [SetPlayerHealth](SetPlayerHealth): Define a vida de um jogador.
+- [OnVehicleDeath](../callbacks/OnVehicleDeath): É chamado quando um veículo é destruído.

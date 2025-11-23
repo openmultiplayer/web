@@ -13,7 +13,7 @@ sidebar_label: سبک های دیالوگ
 :::
 
 - این صفحه [ShowPlayerDialog](../functions/ShowPlayerDialog) و [OnDialogResponse](../callbacks/OnDialogResponse) را توضیح میدهد.
-- برای دیدن محدود ها صفحه [Limits](../resources/limits) را ببینید.
+- برای دیدن محدود ها صفحه [Limits](limits) را ببینید.
 - برای مثال واکنش بازیکن به دیالوگ، میتوانید از این کد ها استفاده کنید :
 
 </div>

@@ -34,6 +34,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [floatsin](floatsin.md): Podaje sinus dla konkretnego kąta.
-- [floatcos](floatcos.md): Podaje cosinus dla konkretnego kąta.
-- [floattan](floattan.md): Podaje tangens dla konkretnego kąta.
+- [floatsin](floatsin): Podaje sinus dla konkretnego kąta.
+- [floatcos](floatcos): Podaje cosinus dla konkretnego kąta.
+- [floattan](floattan): Podaje tangens dla konkretnego kąta.

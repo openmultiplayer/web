@@ -1114,4 +1114,4 @@ Stack/heap collision (insufficient stack size)
 
 ![Stack](https://i.imgur.com/ZaIVUkJ.png)
 
-[برگشت به فهرست](00-Contents.md)
+[برگشت به فهرست](00-Contents)

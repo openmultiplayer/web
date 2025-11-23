@@ -40,5 +40,5 @@ Nije pozvan kada igrač spadne sa bicikla ili ako je uklonjen iz vozila iz drugi
 
 ## Srodne Funkcije
 
-- [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle.md): Izbaci igrača iz njihovog vozila.
-- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat.md): Provjeri na kojem sjedištu se nalazi igrač.
+- [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle): Izbaci igrača iz njihovog vozila.
+- [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Provjeri na kojem sjedištu se nalazi igrač.

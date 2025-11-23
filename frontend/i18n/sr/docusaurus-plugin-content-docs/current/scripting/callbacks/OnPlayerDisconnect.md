@@ -29,16 +29,6 @@ tags: ["player"]
 | 0  | Timeout/Crash | Играч је изгубио везу. Или им је игра пала или је њихова мрежа имала проблем.                  |
 | 1  | Quit          | Играч је намерно напустио игру, било коришћењем команде /quit (/q) или преко менија за паузу.  |
 | 2  | Kick/Ban      | Играч је избачен или забрањен од стране сервера.                                               |
-| 3  | Custom        | Коришћен од неких библиотека. Резервисан за приватну употребу мода.                            |
-| 4  | Mode End      | Текући мод се завршава, па се искључују сви играчи из њега (и даље су на серверу).             |
-
-:::warning
-
-Разлог 3 је првобитно додат у SA:MP од стране [fixes.inc](https://github.com/pawn-lang/sa-mp-fixes).
-
-Разлози 3 и 4 су додати од стране Open Multiplayer сервера.
-
-:::
 
 ## Примери
 
@@ -51,13 +41,11 @@ public OnPlayerDisconnect(playerid, reason)
 
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 
-    new szDisconnectReason[5][] =
+    new szDisconnectReason[3][] =
     {
         "Timeout/Crash",
         "Quit",
-        "Kick/Ban",
-        "Custom",
-        "Mode End"
+        "Kick/Ban"
     };
 
     format(szString, sizeof szString, "%s left the server (%s).", playerName, szDisconnectReason[reason]);

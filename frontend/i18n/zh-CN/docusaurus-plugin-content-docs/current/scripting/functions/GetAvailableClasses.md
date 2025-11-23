@@ -19,6 +19,6 @@ printf("可用职业数量: %d", GetAvailableClasses());  // 输出已定义职�
 
 ## 相关函数
 
-- [AddPlayerClass](AddPlayerClass.md): 添加基础玩家职业
-- [AddPlayerClassEx](AddPlayerClassEx.md): 添加带默认队伍的玩家职业
-- [EditPlayerClass](EditPlayerClass.md): 编辑职业配置数据
+- [AddPlayerClass](AddPlayerClass): 添加基础玩家职业
+- [AddPlayerClassEx](AddPlayerClassEx): 添加带默认队伍的玩家职业
+- [EditPlayerClass](EditPlayerClass): 编辑职业配置数据

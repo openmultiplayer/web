@@ -66,4 +66,4 @@ In 0.3a the camera front vector is only obtainable when player is inside a rhino
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetPlayerCameraPos](../functions/GetPlayerCameraPos): Find out where the player's camera is.
+- [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.

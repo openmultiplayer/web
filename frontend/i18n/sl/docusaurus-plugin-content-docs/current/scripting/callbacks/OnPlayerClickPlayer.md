@@ -45,4 +45,4 @@ Trenutno je na voljo samo ena 'source' (0 - CLICK_SOURCE_SCOREBOARD). Vztrajnost
 
 ## Srodne Funkcijo
 
-- [OnPlayerClickTextDraw](OnPlayerClickTextDraw.md): Povabljen, ko igralec klikne risanje besedila.
+- [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Povabljen, ko igralec klikne risanje besedila.
