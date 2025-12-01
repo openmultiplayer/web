@@ -44,10 +44,35 @@ const AnimationsPage = () => {
   const handleLibraryChange = (library: string) => {
     setSelectedLibrary(library);
     setSelectedAnimation("");
+
+    // Update URL
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      if (library) {
+        url.searchParams.set("library", library);
+        url.searchParams.delete("animation");
+      } else {
+        url.searchParams.delete("library");
+        url.searchParams.delete("animation");
+      }
+      window.history.pushState({}, "", url);
+    }
   };
 
   const handleAnimationChange = (animationName: string) => {
     setSelectedAnimation(animationName);
+
+    // Update URL
+    if (typeof window !== "undefined" && selectedLibrary) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("library", selectedLibrary);
+      if (animationName) {
+        url.searchParams.set("animation", animationName);
+      } else {
+        url.searchParams.delete("animation");
+      }
+      window.history.pushState({}, "", url);
+    }
   };
 
   return (
@@ -95,6 +120,7 @@ const AnimationsPage = () => {
                     onChange={(e) => handleAnimationChange(e.target.value)}
                     className={styles.select}
                     disabled={!selectedLibrary}
+                    key={selectedLibrary}
                   >
                     <option value=""><Translate id="animations.selectAnimation" description="Select animation option">Select an animation...</Translate></option>
                     {availableAnimations.map((animation) => (
