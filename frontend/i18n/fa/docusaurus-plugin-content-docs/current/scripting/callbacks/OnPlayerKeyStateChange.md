@@ -30,7 +30,7 @@ tags: ["player"]
 
 :::tip
 
-کلیدهای جهتی OnPlayerKeyStateChange را فعال نمی‌کنند (بالا/پایین/چپ/راست).<br/>آن‌ها فقط می‌توانند با [GetPlayerKeys](../functions/GetPlayerKeys) (در [OnPlayerUpdate](../callbacks/OnPlayerUpdate) یا تایمر) تشخیص داده شوند.
+کلیدهای جهتی OnPlayerKeyStateChange را فعال نمی‌کنند (بالا/پایین/چپ/راست).<br/>آن‌ها فقط می‌توانند با [GetPlayerKeys](../functions/GetPlayerKeys) (در [OnPlayerUpdate](OnPlayerUpdate) یا تایمر) تشخیص داده شوند.
 
 :::
 

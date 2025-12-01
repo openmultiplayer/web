@@ -23,7 +23,7 @@ The player's position is stored in the specified variables.
 ## Examples
 
 ```c
-public OnPlayerDisconnect(playerid)
+public OnPlayerDisconnect(playerid, reason)
 {
     new Float:x, Float:y, Float:z;
     GetPlayerCameraPos(playerid, x, y, z);

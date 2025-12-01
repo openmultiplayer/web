@@ -36,4 +36,4 @@ printf("I am currently facing %f!", Angle);
 
 ## Related Functions
 
-- [SetMyFacingAngle](../functions/SetMyFacingAngle): Set the NPC's facing angle.
+- [SetMyFacingAngle](SetMyFacingAngle): Set the NPC's facing angle.

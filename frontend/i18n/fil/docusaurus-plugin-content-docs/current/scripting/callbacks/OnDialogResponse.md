@@ -144,7 +144,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Ang mga parameters ay maaaring lagyan ng iba't ibang values base sa style ng isang dialog. ([tignan ito](../resources/dialogstyles.md)).
+Ang mga parameters ay maaaring lagyan ng iba't ibang values base sa style ng isang dialog. ([tignan ito](../resources/dialogstyles)).
 
 :::
 
@@ -162,4 +162,4 @@ Ang dialog ng isang player ay hindi mawawala kapag nag restart ang server, nagda
 
 ## Mga Kaugnay na Functions
 
-- [ShowPlayerDialog](../functions/ShowPlayerDialog.md): Ipakita ang dialog sa player.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Ipakita ang dialog sa player.

@@ -26,4 +26,4 @@ public OnNPCExitVehicle(vehicleid, seatid)
 
 ## Related Functions
 
-- [StartRecordingPlayback](../functions/StartRecordingPlayback): Stops reproducing a .rec file.
+- [StartRecordingPlayback](StartRecordingPlayback): Stops reproducing a .rec file.

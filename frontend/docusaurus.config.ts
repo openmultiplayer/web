@@ -63,6 +63,7 @@ const config: Config = {
       "hu",
       "id",
       "it",
+      "nl",
       "pl",
       "pt-BR",
       "ro",
@@ -170,8 +171,14 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/openmultiplayer/web/edit/master/frontend/",
+          editUrl: ({ locale, version, versionDocsDirPath, docPath }) => {
+            const baseUrl =
+              "https://github.com/openmultiplayer/web/edit/master/frontend/";
+            if (locale === "en") {
+              return `${baseUrl}${versionDocsDirPath}/${docPath}`;
+            }
+            return `${baseUrl}i18n/${locale}/docusaurus-plugin-content-docs/${version}/${docPath}`;
+          },
         },
         blog: {
           showReadingTime: true,
@@ -290,6 +297,10 @@ const config: Config = {
             {
               label: "Blog",
               to: "/blog",
+            },
+            {
+              label: "Animations",
+              to: "/animations",
             },
             {
               label: "UID Generator",

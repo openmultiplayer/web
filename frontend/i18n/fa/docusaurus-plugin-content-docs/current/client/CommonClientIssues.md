@@ -5,7 +5,7 @@ sidebar_label: مشکلات رایج کلاینت
 
 ### پیغام خطای "San Andreas cannot be found" دریافت می‌کنم
 
-San Andreas Multiplayer یک برنامه مستقل **نیست**! این برنامه قابلیت چندنفره را به San Andreas اضافه می‌کند، بنابراین شما به GTA San Andreas برای PC نیاز دارید - همچنین باید **EU/US v1.0** باشد، نسخه‌های دیگر مثل v2.0 یا نسخه‌های Steam و Direct2Drive کار نخواهند کرد. [اینجا کلیک کنید تا پچ downgrade برای نسخه GTA: SA خود به 1.0 دانلود کنید](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661)
+San Andreas Multiplayer یک برنامه مستقل **نیست**! این برنامه قابلیت چندنفره را به San Andreas اضافه می‌کند، بنابراین شما به GTA San Andreas برای PC نیاز دارید - همچنین باید **EU/US v1.0** باشد، نسخه‌های دیگر مثل v2.0 یا نسخه‌های Steam و Direct2Drive کار نخواهند کرد. [اینجا کلیک کنید تا پچ downgrade برای نسخه GTA: SA خود به 1.0 دانلود کنید](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### هیچ سروری در مرورگر SA:MP نمی‌بینم
 
@@ -20,7 +20,7 @@ San Andreas Multiplayer یک برنامه مستقل **نیست**! این برن
 
 :::
 
-تک‌نفره می‌تواند به 2 دلیل بارگذاری شود؛ شما SA:MP را در پوشه اشتباه نصب کرده‌اید یا نسخه اشتباهی از San Andreas دارید. اگر نسخه اشتباه دارید می‌توانید با استفاده از GTA San Andreas downgrader بازی خود را downgrade کنید. [اینجا](http://grandtheftauto.filefront.com/file/GTA_SA_Downgrader_Patch;74661) کلیک کنید تا آن را دانلود کنید.
+تک‌نفره می‌تواند به 2 دلیل بارگذاری شود؛ شما SA:MP را در پوشه اشتباه نصب کرده‌اید یا نسخه اشتباهی از San Andreas دارید. اگر نسخه اشتباه دارید می‌توانید با استفاده از GTA San Andreas downgrader بازی خود را downgrade کنید. [اینجا](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch) کلیک کنید تا آن را دانلود کنید.
 
 گاهی اوقات منوی تک‌نفره نشان داده می‌شود، اما SA:MP درحقیقت به درستی بارگذاری شده است. برای حل این مشکل فقط کافی است یک آیتم از منو انتخاب کنید، سپس کلید escape را فشار دهید تا از آن خارج شوید. SA:MP سپس ادامه خواهد داد تا بارگذاری کند.
 
@@ -50,7 +50,7 @@ San Andreas Multiplayer یک برنامه مستقل **نیست**! این برن
 
 ### ماوس من پس از خروج از منوی pause کار نمی‌کند
 
-اگر ماوس شما در بازی منجمد به نظر می‌رسد درحالی که در منوی pause (تا حدی) کار می‌کند، باید گزینه multicore در [sa-mp.cfg](ClientCommands#file-sa-mpcfg "Sa-mp.cfg") را غیرفعال کنید (آن را روی 0 تنظیم کنید). ضربه زدن مداوم Escape تا ماوس دوباره پاسخ دهد نیز ممکن است کار کند، اما راه‌حل خیلی مرتبی نیست.
+اگر ماوس شما در بازی منجمد به نظر می‌رسد درحالی که در منوی pause (تا حدی) کار می‌کند، باید گزینه multicore در [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") را غیرفعال کنید (آن را روی 0 تنظیم کنید). ضربه زدن مداوم Escape تا ماوس دوباره پاسخ دهد نیز ممکن است کار کند، اما راه‌حل خیلی مرتبی نیست.
 
 ### فایل dinput8.dll موجود نیست
 

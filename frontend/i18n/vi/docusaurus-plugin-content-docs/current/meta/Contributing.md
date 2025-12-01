@@ -15,7 +15,7 @@ Trên mỗi trang, có một nút dẫn bạn đến trang GitHub để chỉnh 
 
 ![Liên kết Chỉnh sửa trang này xuất hiện trên mỗi trang wiki](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-Ví dụ, nhấp vào liên kết này trên [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) sẽ dẫn bạn đến [trang này](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) nơi bạn sẽ thấy một trình soạn thảo văn bản để thực hiện các thay đổi cho tệp (giả sử bạn đã đăng nhập vào GitHub).
+Ví dụ, nhấp vào liên kết này trên [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) sẽ dẫn bạn đến [trang này](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md) nơi bạn sẽ thấy một trình soạn thảo văn bản để thực hiện các thay đổi cho tệp (giả sử bạn đã đăng nhập vào GitHub).
 
 Thực hiện chỉnh sửa của bạn và gửi một "Pull Request". Điều này có nghĩa là các quản trị viên Wiki và các thành viên cộng đồng khác có thể xem xét thay đổi của bạn, thảo luận về việc nó có cần thay đổi thêm hay không và sau đó hợp nhất nó.
 

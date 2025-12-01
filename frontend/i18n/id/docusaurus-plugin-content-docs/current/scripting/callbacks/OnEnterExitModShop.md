@@ -43,4 +43,4 @@ Bug yang dikenal: Pemain akan menyatu ketika berada di dalam mod shop yang sama.
 
 ## Fungsi Terkait
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Menambahkan komponen ke kendaraan.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Menambahkan komponen ke kendaraan.

@@ -10,8 +10,8 @@ export default function WarningVersion({
   return (
     <Admonition type="warning">
       <p>
-        Esta {name} fue implementada en {version} y no funcionará en
-        versiones anteriores.
+        Esta {name} fue implementada en {version} y no funcionará en versiones
+        anteriores.
       </p>
     </Admonition>
   );

@@ -5,7 +5,7 @@ sidebar_label: Select Object Types
 
 ## คำอธิบาย
 
-Select Object Types to be used with [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject.md).
+Select Object Types to be used with [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject).
 
 ## Types
 

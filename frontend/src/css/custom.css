@@ -155,6 +155,7 @@ html[data-theme="dark"] {
     opacity: 0;
     transform: translateY(100%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -166,6 +167,7 @@ html[data-theme="dark"] {
     opacity: 1;
     transform: translateY(0);
   }
+
   to {
     opacity: 0;
     transform: translateY(100%);
@@ -381,6 +383,7 @@ html[data-theme="dark"] {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

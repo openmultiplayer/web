@@ -7,7 +7,7 @@ tags: ["time"]
 
 ## Description
 
-Returns a value which increases every millisecond. The absolute value returned is undefined and varies between systems, it should only be used to compare two points in time.
+Returns a value which increases every millisecond, it should be used to compare two points in time.
 
 ## Examples
 
@@ -58,7 +58,7 @@ If `start` is very high this code will wrap around and may cause the check to pa
 new start = GetTickCount();
 // Long code.
 new end = GetTickCount();
-if (2000 > end - start)
+if (end - start < 2000)
 {
     // The code took less than two seconds.
 }
@@ -70,4 +70,4 @@ Simply rearranging the comparison such that `start` and `end` are on the same si
 
 ## Related Functions
 
-- [Tickcount](Tickcount): Get the uptime of the actual server.
+- [tickcount](tickcount): Get the uptime of the actual server.

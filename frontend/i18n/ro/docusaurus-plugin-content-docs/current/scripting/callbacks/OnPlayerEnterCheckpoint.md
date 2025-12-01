@@ -45,7 +45,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Creați un checkpoint pentru un jucător.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Dezactivează checkpoint-ul curent al jucătorului.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Verificați dacă un jucător se află într-un checkpoint.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Verificați dacă un jucător se află într-un checkpoint.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Creați un checkpoint al cursei pentru un jucător.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Dezactivează checkpoint-ul cursei curente al jucătorului.
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Verificați dacă un jucător se află într-un checkpoint al unei cursei.

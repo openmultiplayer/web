@@ -11,4 +11,4 @@ This will pause playing back the recording.
 
 ## Related Functions
 
-- [ResumeRecordingPlayback](../functions/ResumeRecordingPlayback): Resumes the recording if its paused.
+- [ResumeRecordingPlayback](ResumeRecordingPlayback): Resumes the recording if its paused.

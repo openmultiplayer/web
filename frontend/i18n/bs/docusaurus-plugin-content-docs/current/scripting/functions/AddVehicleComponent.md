@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Dodaje 'komponentu' (često nazvana'mod' (modifikacija)) na vozilo. Validne komponente možete pronaći ovdje.
 
-| Ime                                           | Deskripcija                                                        |
-| --------------------------------------------- | ------------------------------------------------------------------ |
-| vehicleid                                     | ID vozila na koji dodajete komponentu. Ne miješajte ga sa modelid. |
-| [componentid](../resources/carcomponentid.md) | ID komponente koju dodajete na vozilo.                             |
+| Ime                                        | Deskripcija                                                        |
+| ------------------------------------------ | ------------------------------------------------------------------ |
+| vehicleid                                  | ID vozila na koji dodajete komponentu. Ne miješajte ga sa modelid. |
+| [componentid](../resources/carcomponentid) | ID komponente koju dodajete na vozilo.                             |
 
 ## Returns
 
@@ -55,8 +55,8 @@ Korištenjem nevažećeg ID-a komponente će da crashuje igraču igru. Za to ne 
 
 ## Srodne Funkcije
 
-- [RemoveVehicleComponent](RemoveVehicleComponent.md): Ukloni komponentu sa vozila.
-- [GetVehicleComponentInSlot](GetVehicleComponentInSlot.md): Provjeri koje komponente vozilo ima.
-- [GetVehicleComponentType](GetVehicleComponentType.md): Provjeri tip komponente preko ID-a.
-- [OnVehicleMod](../callbacks/OnVehicleMod.md): Pozvano kada igrač modificira vozilo.
-- [OnEnterExitModShop](../callbacks/OnEnterExitModShop.md): Pozvano kada vozilo uđe ili izađe u/iz mod shopa.
+- [RemoveVehicleComponent](RemoveVehicleComponent): Ukloni komponentu sa vozila.
+- [GetVehicleComponentInSlot](GetVehicleComponentInSlot): Provjeri koje komponente vozilo ima.
+- [GetVehicleComponentType](GetVehicleComponentType): Provjeri tip komponente preko ID-a.
+- [OnVehicleMod](../callbacks/OnVehicleMod): Pozvano kada igrač modificira vozilo.
+- [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Pozvano kada vozilo uđe ili izađe u/iz mod shopa.

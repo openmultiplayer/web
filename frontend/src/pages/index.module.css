@@ -169,6 +169,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -179,6 +180,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -189,6 +191,7 @@
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -201,27 +204,27 @@
     padding: 4rem 1.5rem 0;
     margin-bottom: 80px;
   }
- 
+
   .heroContent {
     flex-direction: column;
     text-align: center;
     gap: 3rem;
   }
- 
+
   .heroText {
     align-items: center;
     text-align: center;
     max-width: 100%;
   }
- 
+
   .heroTitle {
     font-size: 3rem;
   }
- 
+
   .button {
     width: 100%;
   }
- 
+
   .heroButtons {
     width: 100%;
     max-width: 350px;
@@ -233,32 +236,33 @@
     padding: 3rem 1rem 0;
     margin-bottom: 60px;
   }
- 
+
   .heroTitle {
     font-size: 2.5rem;
   }
- 
+
   .heroDescription {
     font-size: 1.25rem;
   }
- 
+
   .socialLinks {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile so we can avoid the icons making a line break*/
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns on mobile so we can avoid the icons making a line break*/
     max-width: 300px;
     gap: 1rem;
   }
- 
+
   .socialLink {
     width: 60px;
     height: 60px;
     margin: 0 auto;
   }
-  
+
   .dismissContainer {
     bottom: 8px;
     right: 12px;
   }
-  
+
   .dismissButton {
     font-size: 0.8rem;
   }

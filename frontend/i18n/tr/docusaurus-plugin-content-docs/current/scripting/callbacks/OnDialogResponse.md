@@ -157,4 +157,4 @@ Bir oyuncunun dialogu oyun modu tekrar başlatıldığında gizlenmez, bu da sun
 
 ## Bağlantılı Fonksiyonlar
 
-- [ShowPlayerDialog](../../scripting/functions/ShowPlayerDialog.md): Oyuncuya dialog gösterir.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): Oyuncuya dialog gösterir.

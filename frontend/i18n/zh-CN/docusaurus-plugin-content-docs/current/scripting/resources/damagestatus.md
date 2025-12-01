@@ -16,10 +16,10 @@ description: 车辆损坏状态信息及代码示例
 
 :::note
 
-有关面板状态的更多信息，请参阅[面板状态](../resources/panelstates)  
-有关车门状态的更多信息，请参阅[车门状态](../resources/doorstates)  
-有关车灯状态的更多信息，请参阅[车灯状态](../resources/lightstates)  
-有关轮胎状态的更多信息，请参阅[轮胎状态](../resources/tirestates)
+有关面板状态的更多信息，请参阅[面板状态](panelstates)  
+有关车门状态的更多信息，请参阅[车门状态](doorstates)  
+有关车灯状态的更多信息，请参阅[车灯状态](lightstates)  
+有关轮胎状态的更多信息，请参阅[轮胎状态](tirestates)
 
 :::
 

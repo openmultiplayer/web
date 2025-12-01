@@ -47,7 +47,7 @@ samp.ban este fișierul în care se scriu banurile, dar și alte informații des
 - IP-ul jucătorului
 - Data banului
 - Ora banului
-- Numele (Numele jucătorului sau un motiv, consultați [BanEx](../../functions/BanEx))
+- Numele (Numele jucătorului sau un motiv, consultați [BanEx](../scripting/functions/BanEx))
 - Tipul banului
 
 Pentru a adăuga un ban, pur și simplu adăugați o linie ca aceasta în samp.ban:
@@ -60,7 +60,7 @@ IP_AICI [28/05/09 | 13:37:00] PLAYER - MOTIV BAN
 
 ##### Funcția Ban()
 
-Funcția [Ban](../../functions/Ban) poate fi folosită ca să banați un jucător din script. Funcția [BanEx](../../functions/BanEx) este la fel, doar că puteți adăuga și un motiv:
+Funcția [Ban](../scripting/functions/Ban) poate fi folosită ca să banați un jucător din script. Funcția [BanEx](../scripting/functions/BanEx) este la fel, doar că puteți adăuga și un motiv:
 
 ```
 13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
@@ -108,7 +108,7 @@ samp.ban poate fi găsit în fișierele serverului dumneavoastră, acesta conți
 - IP
 - Dată
 - Oră
-- Nume (Numele jucătorului sau un motiv, consultați [BanEx](../../functions/BanEx))
+- Nume (Numele jucătorului sau un motiv, consultați [BanEx](../scripting/functions/BanEx))
 - Tipul banului (INGAME, IP BAN etc.)
 
 Exemple:
@@ -184,7 +184,7 @@ Acestea sunt comenzile pe care le puteți folosi ca admin:
 | `/rcon playertimeout [limită m/s]` | Schimba timpul în milisecunde în care un player este considerat AFK, după ce nu mai trimite semnale către server. (implicit 1000) |
 | `/rcon language [limbă]`       | Schimbă limba serverului (_exemplu: /rcon language English_). Se afișează și în browser.             |
 
-Aceste limite au fost făcute pentru a evita pe cât posibil atacurile asupra serverelor de SA-MP. Deci, pur și simplu setați-le în concordanță cu serverul dumneavoastră. [Citiți mai mult aici](http://web-old.archive.org/web/20190426141744/https://forum.sa-mp.com/showpost.php?p=2990193&postcount=47).
+Aceste limite au fost făcute pentru a evita pe cât posibil atacurile asupra serverelor de SA-MP. Deci, pur și simplu setați-le în concordanță cu serverul dumneavoastră. [Citiți mai mult aici](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193).
 
 ### Funcții și callback-uri
 
@@ -192,10 +192,10 @@ Următoarele funcții și callback-uri pot fi folositoare, întrucat au legătur
 
 #### Callback-uri
 
-- [OnRconLoginAttempt](../../callbacks/OnRconLoginAttempt): Atunci când cineva încearcă să se conecteze în RCON.
+- [OnRconLoginAttempt](../scripting/callbacks/OnRconLoginAttempt): Atunci când cineva încearcă să se conecteze în RCON.
 
 #### Funcții
 
-- [IsPlayerAdmin](../../functions/IsPlayerAdmin): Verifică dacă un jucător este logat în RCON.
+- [IsPlayerAdmin](../scripting/functions/IsPlayerAdmin): Verifică dacă un jucător este logat în RCON.
 
-- [SendRconCommand](../../functions/SendRconCommand): Trimite o comandă RCON din script.
+- [SendRconCommand](../scripting/functions/SendRconCommand): Trimite o comandă RCON din script.

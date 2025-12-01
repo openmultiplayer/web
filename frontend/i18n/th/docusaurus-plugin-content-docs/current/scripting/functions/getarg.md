@@ -42,5 +42,5 @@ public OnFilterScriptInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [numargs](../functions/numargs): Return the number of arguments.
-- [setarg](../functions/setarg): Set an argument.
+- [numargs](numargs): Return the number of arguments.
+- [setarg](setarg): Set an argument.

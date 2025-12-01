@@ -14,7 +14,7 @@ description: 如何給SA-MP Wiki和open.mp的說明文件提交貢獻。
 
 ![在每個 wiki 頁面上都有「編輯此頁面」連結](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-例如，在 [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) 頁面上點擊這個按鈕，會帶你前往 [這個頁面](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md)，讓你透過文字編輯器修改檔案（假設你已經登入 GitHub）。
+例如，在 [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) 頁面上點擊這個按鈕，會帶你前往 [這個頁面](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md)，讓你透過文字編輯器修改檔案（假設你已經登入 GitHub）。
 
 修改你要的內容後，提交一個「拉取請求」（Pull Request），這樣 Wiki 維護人員和其他社群成員就可以檢查你的更改，討論是否需要進一步的修改，然後合併它。
 

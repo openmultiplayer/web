@@ -29,5 +29,5 @@ SetAllActorsHealth(Float:health)
 ## Bağlantılı Fonksiyonlar
 
 - [CreateActor](CreateActor): Aktör oluşturma. (statik NPC).
-- [IsValidActor](isValidActor): Aktörün oluşturulup oluşturulmadığını kontrol etme.
+- [IsValidActor](IsValidActor): Aktörün oluşturulup oluşturulmadığını kontrol etme.
 - [SetActorHealth](SetActorHealth): Aktörün can değerini düzenleme.
