@@ -33,4 +33,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [StartRecordingPlayerData](../functions/StartRecordingPlayerData.md): Start recording player data.
+- [StartRecordingPlayerData](StartRecordingPlayerData): Start recording player data.

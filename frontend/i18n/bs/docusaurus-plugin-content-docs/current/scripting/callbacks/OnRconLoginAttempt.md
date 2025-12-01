@@ -52,5 +52,5 @@ Ovaj callback je pozvan samo kada se /rcon login iskoristi unutar igra. Ovaj cal
 
 ## Srodne Funkcije
 
-- [IsPlayerAdmin](../functions/IsPlayerAdmin.md): Provjerava da li je igrač pristupio/ulogovan u RCON.
-- [SendRconCommand](../functions/SendRconCommand.md): Šalje RCON komandu preko skripte.
+- [IsPlayerAdmin](../functions/IsPlayerAdmin): Provjerava da li je igrač pristupio/ulogovan u RCON.
+- [SendRconCommand](../functions/SendRconCommand): Šalje RCON komandu preko skripte.

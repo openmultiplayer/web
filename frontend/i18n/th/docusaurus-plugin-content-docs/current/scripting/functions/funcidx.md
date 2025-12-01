@@ -35,5 +35,5 @@ public OnFilterScriptInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CallLocalFunction](../functions/CallLocalFunction): Call a function in the script.
-- [CallRemoteFunction](../functions/CallRemoteFunction): Call a function in any loaded script.
+- [CallLocalFunction](CallLocalFunction): Call a function in the script.
+- [CallRemoteFunction](CallRemoteFunction): Call a function in any loaded script.

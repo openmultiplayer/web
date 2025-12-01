@@ -27,7 +27,7 @@ tags: ["custom model", "custom skin", "simple model"]
 ## مثال استفاده از filterscript dl_redirect
 
 ```c
-new baseurl[] = "https://files.sa-mp.com/server";
+new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {

@@ -6,7 +6,7 @@ description: Nilai kemampuan senjata yang untuk digunakan dengan SetPlayerSkillL
 
 ## Deskripsi
 
-Daftar kemampuan senjata yang digunakan untuk menetapkan tingkat kemampuannya player menggunakan fungsi [SetPlayerSkillLevel](../functions/SetPlayerSkillLevel.md).
+Daftar kemampuan senjata yang digunakan untuk menetapkan tingkat kemampuannya player menggunakan fungsi [SetPlayerSkillLevel](../functions/SetPlayerSkillLevel).
 
 ## Tingkat Keterampilan
 

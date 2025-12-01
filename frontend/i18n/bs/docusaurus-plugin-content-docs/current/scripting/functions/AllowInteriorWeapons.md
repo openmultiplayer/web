@@ -38,6 +38,6 @@ Ova funkcija ne radi u trenutnoj verziji SA:MP-a!
 
 ## Srodne Funkcije
 
-- [SetPlayerInterior](SetPlayerInterior.md): Postavi igraču enterijer.
-- [GetPlayerInterior](GetPlayerInterior.md): Doznaj igračev trenutni enterijer.
-- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange.md): Pozvan kada igrač promijeni enterijer.
+- [SetPlayerInterior](SetPlayerInterior): Postavi igraču enterijer.
+- [GetPlayerInterior](GetPlayerInterior): Doznaj igračev trenutni enterijer.
+- [OnPlayerInteriorChange](../callbacks/OnPlayerInteriorChange): Pozvan kada igrač promijeni enterijer.

@@ -27,4 +27,4 @@ new colour = GetDefaultPlayerColour(playerid);  // 获取玩家的默认颜色
 
 ## 相关函数
 
-- [GetPlayerColor](GetPlayerColor.md): 获取玩家当前使用的颜色
+- [GetPlayerColor](GetPlayerColor): 获取玩家当前使用的颜色

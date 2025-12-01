@@ -27,5 +27,5 @@ new columns = GetMenuColumns(menuid);  // 获取激活的列数
 
 ## 相关函数
 
-- [GetMenuItems](GetMenuItems.md): 获取菜单项列表
-- [GetMenuItem](GetMenuItem.md): 通过行列索引获取单元格文本
+- [GetMenuItems](GetMenuItems): 获取菜单项列表
+- [GetMenuItem](GetMenuItem): 通过行列索引获取单元格文本

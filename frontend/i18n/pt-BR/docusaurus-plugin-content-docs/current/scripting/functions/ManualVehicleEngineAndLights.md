@@ -29,7 +29,7 @@ Não é possível reverter esta função depois de ter sido usada. Você deve us
 
 :::tip
 
-Você também pode ativar ou desativar esta função por meio do [config.json](.. /.. /server/config.json) 
+Você também pode ativar ou desativar esta função por meio do [config.json](../../server/config.json) 
 
 ```json
 "use_manual_engine_and_lights": true,

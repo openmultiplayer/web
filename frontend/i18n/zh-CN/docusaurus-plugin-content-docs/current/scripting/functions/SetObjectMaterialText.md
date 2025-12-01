@@ -14,13 +14,13 @@ tags: ["物体"]
 | objectid                                 | 要设置材质文本的物体 ID                                                         |
 | const text[]                             | 要显示的文本内容（最大 2048 字符）                                              |
 | materialIndex                            | 要替换的材质索引                                                                |
-| OBJECT_MATERIAL_SIZE:materialsize        | 材质[尺寸](/docs/scripting/resources/materialtextsizes)                         |
+| OBJECT_MATERIAL_SIZE:materialsize        | 材质[尺寸](../resources/materialtextsizes)                         |
 | const fontFace[]                         | 使用的字体名称                                                                  |
 | fontSize                                 | 字体大小（最大 255）                                                            |
 | bool:bold                                | 是否加粗（true 为加粗，false 为正常）                                           |
 | fontColour                               | 文本颜色（ARGB 格式）                                                           |
 | backgroundColour                         | 背景颜色（ARGB 格式）                                                           |
-| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | 文本[对齐方式](/docs/scripting/resources/materialtextalignment)（默认：左对齐） |
+| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | 文本[对齐方式](../resources/materialtextalignment)（默认：左对齐） |
 | OPEN_MP_TAGS:...                         | 可变参数（支持多种标签类型的参数）                                              |
 
 ## 返回值

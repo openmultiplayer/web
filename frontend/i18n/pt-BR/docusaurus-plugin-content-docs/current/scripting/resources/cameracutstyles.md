@@ -5,7 +5,7 @@ sidebar_label: Estilos de corte de câmera
 
 ## Descrição
 
-Para ser usado com [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt), [InterpolateCameraPos](../functions/InterpolateCameraPos.md) e [InterpolateCameraLookAt](../functions/InterpolateCameraLookAt.md).
+Para ser usado com [SetPlayerCameraLookAt](../functions/SetPlayerCameraLookAt), [InterpolateCameraPos](../functions/InterpolateCameraPos) e [InterpolateCameraLookAt](../functions/InterpolateCameraLookAt).
 
 ## Estilos de corte
 

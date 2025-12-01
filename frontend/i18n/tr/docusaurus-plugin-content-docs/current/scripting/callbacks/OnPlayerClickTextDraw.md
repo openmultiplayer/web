@@ -70,5 +70,5 @@ Tıklanılabilir bölge TextDrawTextSize tarafından belirlenir. X ve Y parametr
 
 ## Bağlantılı Fonksiyonlar
 
-- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw.md): Bir oyuncu player-textdrawa tıkladığında çağırılır.
-- [OnPlayerClickPlayer](OnPlayerClickPlayer.md): Bir oyuncu başka bir oyuncuya tıkladığında çağırılır.
+- [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Bir oyuncu player-textdrawa tıkladığında çağırılır.
+- [OnPlayerClickPlayer](OnPlayerClickPlayer): Bir oyuncu başka bir oyuncuya tıkladığında çağırılır.

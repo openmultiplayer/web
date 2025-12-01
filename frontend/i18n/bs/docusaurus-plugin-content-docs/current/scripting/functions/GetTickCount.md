@@ -1,13 +1,13 @@
 ---
 title: GetTickCount
 sidebar_label: GetTickCount
-description: Daje vrijeme trajanja stvarnog servera (ne SA-MP servera) u milisekundama.
+description: Daje vrijeme trajanja servera u milisekundama.
 tags: []
 ---
 
 ## Deskripcija
 
-Daje vrijeme trajanja stvarnog servera (ne SA-MP servera) u milisekundama.
+Daje vrijeme trajanja servera u milisekundama.
 
 ## Primjeri
 
@@ -25,16 +25,16 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Jedna uobičajena upotreba GetTickCount je za benčmarking. Pomoću njega se može izračunati koliko vremena je potrebno nekom izvršnom kodu. Pogledajte primer za primer.
+Jedna uobičajena upotreba GetTickCount je za benčmarking. Pomoću njega se može izračunati koliko vremena je potrebno nekom izvršnom kodu.
 
 :::
 
 :::warning
 
-GetTickCount će uzrokovati probleme na serverima s vremenom neprekidnog rada duže od 24 dana, jer će GetTickCount na kraju iskriviti ograničenja cijele veličine. Provjeri [ovaj paket](https://github.com/ScavengeSurvive/tick-difference) za rješenje.
+GetTickCount će uzrokovati probleme na serverima s vremenom neprekidnog rada duže od 24 dana, jer će GetTickCount na kraju iskriviti ograničenja cijele veličine.
 
 :::
 
 ## Srodne Funkcije
 
-- [Tickcount](Tickcount): Nabavite vrijeme rada stvarnog servera.
+- [tickcount](tickcount): Nabavite vrijeme rada stvarnog servera.

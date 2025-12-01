@@ -55,4 +55,4 @@ Aktualnie nie ma żadnych restrykcji co do wywoływania tej funkcji, ale miej na
 
 ## Powiązane funkcje
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading.md): Wywoływane, kiedy gracz skończy pobierać niestandardowe modele.
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Wywoływane, kiedy gracz skończy pobierać niestandardowe modele.

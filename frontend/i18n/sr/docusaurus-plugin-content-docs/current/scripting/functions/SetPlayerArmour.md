@@ -46,6 +46,6 @@ public OnPlayerSpawn(playerid)
 
 ## Повезане функције
 
-- [GetPlayerArmour](GetPlayerArmour.md): Добија се вредност панцира коју играч тренутно има.
-- [SetPlayerHealth](SetPlayerHealth.md): Подешава животне поене играча.
-- [GetPlayerHealth](GetPlayerHealth.md): Добија се вредност животних поена које играч тренутно има.
+- [GetPlayerArmour](GetPlayerArmour): Добија се вредност панцира коју играч тренутно има.
+- [SetPlayerHealth](SetPlayerHealth): Подешава животне поене играча.
+- [GetPlayerHealth](GetPlayerHealth): Добија се вредност животних поена које играч тренутно има.

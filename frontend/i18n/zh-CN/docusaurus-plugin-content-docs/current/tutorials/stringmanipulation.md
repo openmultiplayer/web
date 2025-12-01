@@ -145,7 +145,7 @@ message_5[0] = 65 + 1;
 
 你有 `65 + 1`，返回值是 `66`，查阅 _ASCII_ 表，你会发现 `66` 是字符“大写字母 B”的数字表示。所以，上面的代码片段基本上等同于：`message_5[0] = 'B'`。
 
-参考这张 [ASCII 表](http://www.asciitable.com/)。
+参考这张 [ASCII 表](https://www.asciitable.com)。
 
 你还可以在多个字符之间或字符和数字的组合之间执行相同的操作，以下是一些示例：
 
@@ -693,7 +693,7 @@ SendClientMessageToAll(0x00FF00FF, "I'm green{000000}, and {FF0000}I'm red");
 
 请记住，十六进制表示法不区分大小写，因此输入 `0xFFC0E1FF` 与输入 `0xfFC0e1Ff` 是一样的，嵌入的颜色也是如此，`{401C15}` 与 `{401c15}` 是一样的。
 
-有时候，处理颜色可能会很麻烦，记住所有这些长十六进制数字并不容易。您应该始终有一个参考可以回去查看，网上有很多颜色选择工具，您可以简单地搜索“_color picker_”，并在成千上万的工具中选择一个。如果您不介意的话，我为您提供一个推荐工具，[这是一个简单的工具](https://www.webpagefx.com/web-design/color-picker/)，我建议在处理颜色时使用它。
+有时候，处理颜色可能会很麻烦，记住所有这些长十六进制数字并不容易。您应该始终有一个参考可以回去查看，网上有很多颜色选择工具，您可以简单地搜索“_color picker_”，并在成千上万的工具中选择一个。如果您不介意的话，我为您提供一个推荐工具，[这是一个简单的工具](https://www.webfx.com/web-design/color-picker/)，我建议在处理颜色时使用它。
 
 人们发现的一个问题是管理工作流程，如果做得对，可以使工作节奏更顺畅，减少处理项目时的痛苦。虽然颜色选择工具非常有帮助，但每次需要选择颜色时来回切换仍然会浪费大量时间，这种挫败感就像披萨上放了菠萝一样令人烦恼。幸运的是，您可以利用预定义的常量，为稍后使用定义您最常用的颜色，这里有一个简单的示例;
 
@@ -1431,7 +1431,7 @@ printf("这是一个百分号 %%, 我们只是需要对它进行转义!");
 
 - **`%q` 说明符**
 
-这个说明符在我们的主要话题中并不重要，它主要用于在处理 _SQLite_ 时转义敏感字符串，相信我，没有人愿意陷入 [Bobby tables](http://bobby-tables.com/about) 的情况。
+这个说明符在我们的主要话题中并不重要，它主要用于在处理 _SQLite_ 时转义敏感字符串，相信我，没有人愿意陷入 [Bobby tables](https://bobby-tables.com/about) 的情况。
 
 回到我们介绍占位符时，我们提到了一些与之相关的特定公式，作为提醒，以下是它们；
 
@@ -1650,7 +1650,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 #### 自定义说明符
 
-使用我们迄今为止介绍的格式说明符已经足够，你可以用这些极其强大的工具做各种事情，但没有什么能阻止我们向我索取更多，这真是贪心啊。多亏了 **Slice** 受到 [sscanf](https://github.com/maddinat0r/sscanf) 的启发，他创建了一个令人惊叹的 include，[formatex](https://github.com/Southclaws/formatex)，添加了几个新的说明符，极大地简化了日常的 pawn 工作。但这还不是全部，你还可以创建自己的说明符以满足需求，虽然听起来很酷，但过程非常简单。
+使用我们迄今为止介绍的格式说明符已经足够，你可以用这些极其强大的工具做各种事情，但没有什么能阻止我们向我索取更多，这真是贪心啊。多亏了 **Slice** 受到 [sscanf](https://github.com/Y-Less/sscanf) 的启发，他创建了一个令人惊叹的 include，[formatex](https://github.com/Southclaws/formatex)，添加了几个新的说明符，极大地简化了日常的 pawn 工作。但这还不是全部，你还可以创建自己的说明符以满足需求，虽然听起来很酷，但过程非常简单。
 
 仅仅为了测试，让我们做一些简单的事，比如输入一个字符串，然后以链接的形式返回它 (_https://www.string.com_)；
 
@@ -1686,7 +1686,7 @@ printf("%n", "samp");
 - [代码优化](https://sampforum.blast.hk/showthread.php?tid=571550) 作者:[Misiur](https://sampforum.blast.hk/member.php?action=profile&uid=55934)
 - [打包字符串](https://sampforum.blast.hk/showthread.php?tid=480529) 作者:[Emmet\_](https://github.com/emmet-jones)
 - [IRC 字符串格式化](https://github.com/myano/jenni/wiki/IRC-String-Formatting) 作者:[myano](https://github.com/myano)
-- [字符串处理](https://web.archive.org/web/20190424140855/https://www.compuphase.com/pawn/String_Manipulation.pdf) 作者:[CompuPhase](https://web.archive.org/web/20190424140855/http://www.compuphase.com/)
+- [字符串处理](https://github.com/compuphase/pawn/blob/main/doc/String_Manipulation.pdf) 作者:[CompuPhase](https://www.compuphase.com)
 - [Pawn-lang](https://github.com/pawn-lang/compiler/blob/master/doc/pawn-lang.pdf)
 - [深入了解二进制和二进制运算符](https://sampforum.blast.hk/showthread.php?tid=177523) 作者:[Kyosaur](https://sampforum.blast.hk/member.php?action=profile&uid=23990)
 
@@ -1696,7 +1696,7 @@ printf("%n", "samp");
 - [Slice](https://github.com/oscar-broman) 的 [strlib](https://github.com/oscar-broman/strlib)
 - [Slice](https://github.com/oscar-broman) 的 [formatex](https://github.com/Southclaws/formatex)
 - [corne](https://sampforum.blast.hk/member.php?action=profile&uid=98345) 的 [y_stringhash](https://sampforum.blast.hk/showthread.php?tid=571305)
-- [Y-Less](https://github.com/Y-Less) 的 [sscanf](https://github.com/maddinat0r/sscanf)
+- [Y-Less](https://github.com/Y-Less) 的 [sscanf](https://github.com/Y-Less/sscanf)
 
 #### References
 
@@ -1705,12 +1705,12 @@ printf("%n", "samp");
 - [游戏文本](../scripting/functions/GameTextForPlayer)
 - [限制](../scripting/resources/limits)
 - [ASCII](https://en.wikipedia.org/wiki/ASCII)
-- [ASCII 表](https://www.asciitable.com/)
+- [ASCII 表](https://www.asciitable.com)
 - [PAWN 教程](https://wiki.alliedmods.net/Pawn_Tutorial)
 - [控制结构](../scripting/language/ControlStructures)
 - [空字符](https://en.wikipedia.org/wiki/Null_character)
 - [RGBA 颜色空间](https://en.wikipedia.org/wiki/RGBA_color_space)
-- [颜色选择器](https://www.webpagefx.com/web-design/color-picker/)
+- [颜色选择器](https://www.webfx.com/web-design/color-picker/)
 - [TextDraw 颜色](../scripting/functions/TextDrawColor)
 - [游戏文本样式](../scripting/resources/gametextstyles)
 - [颜色列表](../scripting/resources/colorslist)

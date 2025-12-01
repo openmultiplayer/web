@@ -43,36 +43,36 @@ TEX ile "Computer Modern" ve "Palatino" yazı tipleri kullanılarak 11 punto tem
 
 ---
 
-[Önsöz](01-Foreword.md) - Sayfa 3-5
+[Önsöz](01-Foreword) - Sayfa 3-5
 
-[Öğretici giriş](02-A-tutorial-introduction.md) - Sayfa 5-62
+[Öğretici giriş](02-A-tutorial-introduction) - Sayfa 5-62
 
-[Veri ve deklarasyonlar](03-Data-and-declarations.md) - Sayfa 62-70
+[Veri ve deklarasyonlar](03-Data-and-declarations) - Sayfa 62-70
 
-[Fonksiyonlar](04-Functions.md) - Sayfa 70-93
+[Fonksiyonlar](04-Functions) - Sayfa 70-93
 
-[Ön işlemci](05-The-preprocessor.md) - Sayfa 93-97
+[Ön işlemci](05-The-preprocessor) - Sayfa 93-97
 
-[Genel sözdizimi](06-General-syntax.md) - Sayfa 97-104
+[Genel sözdizimi](06-General-syntax) - Sayfa 97-104
 
-[Operatörler ve ifadeler](07-Operators-and-expressions.md) - Sayfa 104-112
+[Operatörler ve ifadeler](07-Operators-and-expressions) - Sayfa 104-112
 
-[İfadeler](08-Statements.md) - Sayfa 112-117
+[İfadeler](08-Statements) - Sayfa 112-117
 
-[Doğrudanifadeler](09-Directives.md) - Sayfa 117-124
+[Doğrudanifadeler](09-Directives) - Sayfa 117-124
 
-[Taslak fonksiyon kütüphanesi](10-Proposed-function-library.md) - Sayfa 124-134
+[Taslak fonksiyon kütüphanesi](10-Proposed-function-library) - Sayfa 124-134
 
-[Tuzaklar: C'den farklılıklar](11-Pitfalls-differences-from-C.md) - Sayfa 134-137
+[Tuzaklar: C'den farklılıklar](11-Pitfalls-differences-from-C) - Sayfa 134-137
 
-[Çeşitli ipuçları](12-Assorted-tips.md) - Sayfa 137-148
+[Çeşitli ipuçları](12-Assorted-tips) - Sayfa 137-148
 
-[Ekler](13-Appendices.md) - Sayfa 148-183
+[Ekler](13-Appendices) - Sayfa 148-183
 
-∟ [Hata ve uyarı mesajları](12-Appendices.md#error-and-warning-messages) - Sayfa 148-168
+∟ [Hata ve uyarı mesajları](13-Appendices#error-and-warning-messages) - Sayfa 148-168
 
-∟ [Derleyici](13-Appendices.md#the-compiler) - Sayfa 168-174
+∟ [Derleyici](13-Appendices#the-compiler) - Sayfa 168-174
 
-∟ [Gerekçe](13-Appendices.md#rationale) - Sayfa 174-181
+∟ [Gerekçe](13-Appendices#rationale) - Sayfa 174-181
 
-∟ [Lisans](13-Appendices.md#license) - Sayfa 181-183
+∟ [Lisans](13-Appendices#license) - Sayfa 181-183

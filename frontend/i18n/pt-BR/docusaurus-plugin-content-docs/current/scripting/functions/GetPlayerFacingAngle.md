@@ -47,5 +47,5 @@ Os ângulos são invertidos em GTA: SA; 90 graus seria o leste no mundo real, ma
 
 ## Funções Relacionadas
 
-- [GetVehicleZAngle](../functions/GetVehicleZAngle.md): Obtém o ângulo Z atual de um veículo.
-- [SetPlayerFacingAngle](../functions/SetPlayerFacingAngle.md): Define o ângulo para qual um jogador está voltado (olhando).
+- [GetVehicleZAngle](GetVehicleZAngle): Obtém o ângulo Z atual de um veículo.
+- [SetPlayerFacingAngle](SetPlayerFacingAngle): Define o ângulo para qual um jogador está voltado (olhando).

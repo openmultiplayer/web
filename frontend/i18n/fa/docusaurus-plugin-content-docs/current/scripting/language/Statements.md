@@ -615,7 +615,7 @@ printf("Time 1s");
 
 ## `state`
 
-state بخشی از state machine و سیستم autonoma در PAWN است، [این thread](https://forum.sa-mp.com/showthread.php?t=86850) را برای اطلاعات بیشتر ببینید.
+state بخشی از state machine و سیستم autonoma در PAWN است، [این thread](https://sampforum.blast.hk/showthread.php?tid=570939) را برای اطلاعات بیشتر ببینید.
 
 ## `switch`
 

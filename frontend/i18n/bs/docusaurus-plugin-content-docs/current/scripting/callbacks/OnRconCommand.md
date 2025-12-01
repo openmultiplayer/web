@@ -54,5 +54,5 @@ Moraš da includeaš ovaj callbak u učitanu filterskrtipu kako bi radio u gamem
 
 ## Srodne Funkcije
 
-- [IsPlayerAdmin](../functions/IsPlayerAdmin.md): Provjerava da li je igrač ulogovan u RCON.
-- [OnRconLoginAttempt](OnRconLoginAttempt.md): Pozvano kada se neko pokuša ulogovati na RCON.
+- [IsPlayerAdmin](../functions/IsPlayerAdmin): Provjerava da li je igrač ulogovan u RCON.
+- [OnRconLoginAttempt](OnRconLoginAttempt): Pozvano kada se neko pokuša ulogovati na RCON.

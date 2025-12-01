@@ -11,7 +11,7 @@ tags: ["actor"]
 
 ## توضیحات
 
-بالاترین actorid که در سرور ساخته شده رو می‌گیره. توجه داشته باش که در SA:MP این تابع خراب هست و حتی وقتی هیچ Actor وجود نداره هم `0` برمی‌گردونه. fixes.inc و open.mp این مشکل رو برطرف کرده‌ن و `-1` برمی‌گردونن، ولی همچنین این تابع رو deprecated کردن و به جاش `MAX_ACTORS` یا `foreach` رو پیشنهاد میدن.
+بالاترین actorid که در سرور ساخته شده رو می‌گیره. توجه داشته باش که در SA:MP این تابع خراب هست و حتی وقتی هیچ Actor وجود نداره هم `0` برمی‌گردونه. open.mp این مشکل رو برطرف کرده‌ن و `-1` برمی‌گردونن، ولی همچنین این تابع رو deprecated کردن و به جاش `MAX_ACTORS` یا `foreach` رو پیشنهاد میدن.
 
 ## مثال‌ها
 
@@ -35,7 +35,7 @@ SetAllActorsHealth(Float:health)
 ## تابع‌های مرتبط
 
 - [CreateActor](CreateActor): ساختن Actor (NPC ثابت).
-- [IsValidActor](isValidActor): چک کردن معتبر بودن شناسه Actor.
+- [IsValidActor](IsValidActor): چک کردن معتبر بودن شناسه Actor.
 - [SetActorHealth](SetActorHealth): تنظیم سلامتی Actor.
 
 </div>

@@ -64,7 +64,7 @@ Protocol: UDP
 
 Then your done! Click ok and close it. Launch the server, and see if its working. If it is, go to your SA-MP Client and enter: localhost:YOUR_PORT(standard: 7777). If the ping changes, then your server is working fully. Now you just need to go to:
 
-[WhatIsMyIP.COM](http://whatismyip.com).
+[WhatIsMyIP.COM](https://www.whatismyip.com).
 
 ## The finish
 

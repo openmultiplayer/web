@@ -9,18 +9,18 @@ tags: ["player"]
 
 Bu geri çağırma bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (EditObject/EditPlayerObject).
 
-| Parametre                   | Açıklama                                                                  |
-|------------------------|---------------------------------------------------------------------------|
-| playerid               | Düzenlemeyi yapan oyuncunun ID'si.                                        |
-| playerobject           | Genel bir obje ise 0 olur, oyuncu objesi ise 1 olur.                      |
-| objectid               | Düzenlenen objenin ID'si.                                                 |
-| EDIT_RESPONSE:response | Verilen cevabın tipi. [tıkla](../resources/objecteditionresponsetypes.md) |
-| Float:fX               | Düzenlenen objenin X yönündeki koordinatı.                                |
-| Float:fY               | Düzenlenen objenin Y yönündeki koordinatı.                                |
-| Float:fZ               | Düzenlenen objenin Z yönündeki koordinatı.                                |
-| Float:fRotX            | Düzenlenen objenin X yönündeki rotasyonu.                                 |
-| Float:fRotY            | Düzenlenen objenin Y yönündeki rotasyonu.                                 |
-| Float:fRotZ            | Düzenlenen objenin Z yönündeki rotasyonu.                                 |
+| Parametre              | Açıklama                                                               |
+| ---------------------- | ---------------------------------------------------------------------- |
+| playerid               | Düzenlemeyi yapan oyuncunun ID'si.                                     |
+| playerobject           | Genel bir obje ise 0 olur, oyuncu objesi ise 1 olur.                   |
+| objectid               | Düzenlenen objenin ID'si.                                              |
+| EDIT_RESPONSE:response | Verilen cevabın tipi. [tıkla](../resources/objecteditionresponsetypes) |
+| Float:fX               | Düzenlenen objenin X yönündeki koordinatı.                             |
+| Float:fY               | Düzenlenen objenin Y yönündeki koordinatı.                             |
+| Float:fZ               | Düzenlenen objenin Z yönündeki koordinatı.                             |
+| Float:fRotX            | Düzenlenen objenin X yönündeki rotasyonu.                              |
+| Float:fRotY            | Düzenlenen objenin Y yönündeki rotasyonu.                              |
+| Float:fRotZ            | Düzenlenen objenin Z yönündeki rotasyonu.                              |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -92,7 +92,7 @@ EDIT_RESPONSE_UPDATE kullanırken, devam etmekte olan bir düzenlemeyi bırakır
 
 ## Bağlantılı Fonksiyonlar
 
-- [EditObject](../functions/EditObject.md): Bir objeyi düzenler.
-- [CreateObject](../functions/CreateObject.md): Bir obje oluşturur.
-- [DestroyObject](../functions/DestroyObject.md): Bir objeyi yok eder.
-- [MoveObject](../functions/MoveObject.md): Bir objeyi hareket ettirir.
+- [EditObject](../functions/EditObject): Bir objeyi düzenler.
+- [CreateObject](../functions/CreateObject): Bir obje oluşturur.
+- [DestroyObject](../functions/DestroyObject): Bir objeyi yok eder.
+- [MoveObject](../functions/MoveObject): Bir objeyi hareket ettirir.
