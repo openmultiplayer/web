@@ -569,9 +569,7 @@ Um "default" (padrão) é equivalente a um "else", ele realiza algo caso todos o
 
 ### goto
 
-goto is essentially a jump, it goes to a label without question (i.e. there's no condition to need to be true). You can see an example above in the if-goto loop.
-
-Um "goto" (vá até) é essencialmente um pulo, ele vai até determinada "label" sem a necessidade de uma condição. Você pode ver em um exemplo acima um if-goto loop.
+Um `goto` é essencialmente um salto: ele leva a execução diretamente para um rótulo, sem verificar condições (como no exemplo do loop `if-goto` mostrado acima).
 
 ```c
 goto my_label;
