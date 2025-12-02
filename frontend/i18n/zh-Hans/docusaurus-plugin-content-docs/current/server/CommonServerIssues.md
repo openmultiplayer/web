@@ -9,7 +9,7 @@ sidebar_label: 常见服务器问题
 
 ## 服务器无法运行 - 防火墙已关闭
 
-您需要进行端口转发以允许玩家加入服务器。推荐使用 [PF Port Checker](https://portforward.com) 进行端口转发。若端口未转发，需在路由器中开启端口。可参考[路由器列表](https://portforward.com/router.htm)。
+你需要进行端口转发以允许玩家加入服务器。推荐使用 [PF Port Checker](https://portforward.com) 进行端口转发。若端口未转发，需在路由器中开启端口。可参考[路由器列表](https://portforward.com/router.htm)。
 
 该网站包含完整的端口转发教程。
 
