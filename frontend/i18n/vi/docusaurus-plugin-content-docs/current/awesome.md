@@ -24,7 +24,7 @@ description: Danh sách được tuyển chọn các tool, librarie, gamemode, f
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - Bản sửa lỗi được tối ưu hóa cực cao cho số lượng lớn lỗi máy chủ SA:MP. Cắm và chạy.
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - Thư viện lâu đời nhất, lớn nhất, được thử nghiệm nhiều nhất và được hỗ trợ tốt nhất cho SA:MP/pawn, cung cấp một số lượng lớn các tính năng trò chơi và ngôn ngữ mới.
 - **[foreach](https://github.com/Open-GTO/foreach)** - foreach standalone include (phiên bản không phải y_iterate).
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - Quyền truy cập cấp thấp vào chính tập lệnh pawn.
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - Quyền truy cập cấp thấp vào chính tập lệnh pawn.
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - Sắp xếp các mảng đa chiều trong Pawn. Sửa đổi các con trỏ bên trong của mảng thay vì sao chép dữ liệu xung quanh.
 - **[indirection](https://github.com/Y-Less/indirection)** - Hệ thống truyền con trỏ và gọi hàm gián tiếp, với các phương thức trừu tượng để tùy chỉnh các cuộc gọi.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - Phân tích và tùy chỉnh mã lệnh tại thời điểm biên dịch.
@@ -68,9 +68,9 @@ description: Danh sách được tuyển chọn các tool, librarie, gamemode, f
 
 ## Plugins
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - Khi mã của bạn đã ổn định, hãy sử dụng điều này để tăng tốc đáng kể.
-- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect)** - Công cụ phát triển để tìm lỗi trong quá trình thử nghiệm.
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - Plugin phân tích hiệu suất cho máy chủ SA-MP.
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - Khi mã của bạn đã ổn định, hãy sử dụng điều này để tăng tốc đáng kể.
+- **[CrashDetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - Công cụ phát triển để tìm lỗi trong quá trình thử nghiệm.
+- **[Profiler](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - Plugin phân tích hiệu suất cho máy chủ SA-MP.
 - **[sscanf](https://github.com/Y-Less/sscanf)** - Chuyển đổi chuỗi thành nhiều giá trị, int, float, players, v.v..
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Kết nối máy chủ của bạn với máy chủ MySQL.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Bỏ qua nhiều giới hạn SA:MP, như object và pickup.
@@ -128,8 +128,8 @@ description: Danh sách được tuyển chọn các tool, librarie, gamemode, f
 
 Bây giờ bạn có thể tạo tập lệnh của mình bằng các ngôn ngữ khác ngoài pawn mà không cần bất kỳ plugin nào bằng cách sử dụng open.mp. Xem [bài đăng trên blog này](https://www.open.mp/blog/release-candidate-1)
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - Đây là yêu cầu tối thiểu bạn cần để phát triển plugin.
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - Hỗ trợ ngôn ngữ C/C++ để viết gamemode cho SA:MP.
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - Đây là yêu cầu tối thiểu bạn cần để phát triển plugin.
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - Hỗ trợ ngôn ngữ C/C++ để viết gamemode cho SA:MP.
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - Hỗ trợ ngôn ngữ C# để viết gamemode cho SA:MP.
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - Hỗ trợ ngôn ngữ C# để viết plugin cho SA:MP.
 - **[sampgo](https://github.com/sampgo/sampgo)** - Hỗ trợ ngôn ngữ Go để viết gamemode/plugin cho SA:MP.

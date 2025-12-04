@@ -24,7 +24,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - Extremely optmised fixes for a huge number of SA:MP server bugs. Plug-and-play.
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - The oldest, largest, most tested, and well supported library for SA:MP/pawn, providing a huge number of new game and language features.
 - **[foreach](https://github.com/Open-GTO/foreach)** - foreach standalone include (non y_iterate version).
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - Low-level access to the pawn script itself.
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - Low-level access to the pawn script itself.
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - Sort multi-dimensional arrays in Pawn. Modifies the array's internal pointers instead of copying around data.
 - **[indirection](https://github.com/Y-Less/indirection)** - System for passing pointers and calling functions indirectly, with abstract methods to customise calls.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - Parse and customise pawn code at compile-time.
@@ -69,9 +69,9 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 
 ## Plugins
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - Once your code is stable, use this to speed it up significantly.
-- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect)** - Development tool to find bugs during testing.
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - Performance profiler plugin for SA-MP server.
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - Once your code is stable, use this to speed it up significantly.
+- **[CrashDetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - Development tool to find bugs during testing.
+- **[Profiler](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - Performance profiler plugin for SA-MP server.
 - **[sscanf](https://github.com/Y-Less/sscanf)** - Convert strings to multiple values, ints, floats, players, etc.
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Connect your server to a MySQL server.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Bypass many SA:MP limits, like objects and pickups.
@@ -129,8 +129,8 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 
 Now you can make your scripts in languages other than pawn without any plugin using open.mp. See [this blog post](https://www.open.mp/blog/release-candidate-1)
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - This is the bare minium that you need to develop plugins.
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ Language Support for writing a gamemode for SA:MP
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - This is the bare minium that you need to develop plugins.
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - C/C++ Language Support for writing a gamemode for SA:MP
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - C# Language Support for writing a plugin for SA:MP
 - **[sampgo](https://github.com/sampgo/sampgo)** - Go Language Support for writing a gamemode/plugins for SA:MP
