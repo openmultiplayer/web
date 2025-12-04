@@ -129,7 +129,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 
 Now you can make your scripts in languages other than pawn without any plugin using open.mp. See [this blog post](https://www.open.mp/blog/release-candidate-1)
 
-- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - This is the bare minium that you need to develop plugins.
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - This is the bare minimum that you need to develop plugins.
 - **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - C/C++ Language Support for writing a gamemode for SA:MP
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - C# Language Support for writing a plugin for SA:MP
