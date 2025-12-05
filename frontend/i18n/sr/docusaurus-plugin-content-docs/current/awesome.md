@@ -24,7 +24,7 @@ description: Информна листа корисних алата, библи
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - Изузетно оптимизовани поправци за велики број багова на SA:MP серверу. Прикључи и играј.
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - Најстарија, највећа, најтестирана и најбоље подржана библиотека за SA:MP/pawn, која пружа велики број нових функција игре и програмског језика.
 - **[foreach](https://github.com/Open-GTO/foreach)** - Самостално укључивање за foreach петљу (не y_iterate верзија).
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - Ниско ниво приступа павновом скрипту самом.
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - Ниско ниво приступа павновом скрипту самом.
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - Сортирање вишедимензионалних низова у Павну. Модификује интерне показиваче низа уместо копирања података.
 - **[indirection](https://github.com/Y-Less/indirection)** - Систем за прослеђивање показивача и позивање функција на индиректан начин, са апстрактним методама за прилагођавање позива.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - Парсирање и прилагођавање павновог кода при компајлирању.
@@ -67,9 +67,9 @@ description: Информна листа корисних алата, библи
 
 ## Плагини
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - Када је ваш код стабилан, користите ово да га значајно убрзате.
-- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect)** - Развојни алат за откривање грешака током тестирања.
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - Профилер перформанси за SA-MP сервер.
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - Када је ваш код стабилан, користите ово да га значајно убрзате.
+- **[CrashDetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - Развојни алат за откривање грешака током тестирања.
+- **[Profiler](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - Профилер перформанси за SA-MP сервер.
 - **[sscanf](https://github.com/Y-Less/sscanf)** - Конвертујте стрингове у више вредности, целе бројеве, децималне бројеве, играче, итд.
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Повежите свој сервер на MySQL сервер.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Прескочите многе SA:MP ограничења, као што су објекти и предмети.
@@ -124,8 +124,8 @@ description: Информна листа корисних алата, библи
 
 Сада можете направити своје скриптове на језицима помоћу open.mp. Погледајте [ову блог објаву](https://www.open.mp/blog/release-candidate-1)
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - Ово је минимум који вам треба за развој плагина.
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - Подршка за C/C++ за писање гејмода за SA:MP
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - Ово је минимум који вам треба за развој плагина.
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - Подршка за C/C++ за писање гејмода за SA:MP
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - Подршка за C# за писање гејмода за SA:MP
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - Подршка за C# за писање плагина за SA:MP
 - **[sampgo](https://github.com/sampgo/sampgo)** - Подршка за Go за писање гејмода/плагина за SA:MP

@@ -24,7 +24,7 @@ description: SA-MP geliştirmeleri için kullanışlı araçlar, kütüphaneler,
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - Birçok SA:MP sunucu hatası için son derece optimize edilmiş düzeltmeler. Tak ve çalıştır.
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - SA:MP/pawn için en eski, en büyük, en çok test edilmiş ve iyi desteklenen kütüphane, birçok yeni oyun ve dil özelliği sunuyor.
 - **[foreach](https://github.com/Open-GTO/foreach)** - Y_iterate sürümü olmayan bağımsız foreach dahil dosyası.
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - Pawn scriptine düşük seviyeli erişim.
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - Pawn scriptine düşük seviyeli erişim.
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - Pawn'da çok boyutlu dizileri sıralayın. Verileri etrafta kopyalamak yerine dizi içindeki işaretçileri değiştirir.
 - **[indirection](https://github.com/Y-Less/indirection)** - İşaretçileri geçirmek ve işlevleri dolaylı olarak çağırmak için bir sistem, çağrıları özelleştirmek için soyut yöntemler içerir.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - Derleme zamanında pawn kodunu analiz etme ve özelleştirme.
@@ -67,9 +67,9 @@ description: SA-MP geliştirmeleri için kullanışlı araçlar, kütüphaneler,
 
 ## Eklentiler
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - Kodunuz stabil olduğunda, bunu kullanarak hızını artırın.
-- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect)** - Test sırasında hataları bulma geliştirme aracı.
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - SA-MP sunucusu için performans profilleyici eklenti.
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - Kodunuz stabil olduğunda, bunu kullanarak hızını artırın.
+- **[CrashDetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - Test sırasında hataları bulma geliştirme aracı.
+- **[Profiler](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - SA-MP sunucusu için performans profilleyici eklenti.
 - **[sscanf](https://github.com/Y-Less/sscanf)** - Metinleri çoklu değerlere, tamsayılara, ondalık sayılara, oyunculara vb. dönüştürün.
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Sunucunuzu bir MySQL sunucusuna bağlayın.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Nesneler ve toplamalar gibi birçok SA:MP sınırını aşın.
@@ -123,8 +123,8 @@ description: SA-MP geliştirmeleri için kullanışlı araçlar, kütüphaneler,
 
 Artık open.mp kullanarak pawn dili dışında da scriptlerinizi geliştirebilirsiniz. [Bu blog yazısına](https://www.open.mp/blog/release-candidate-1) bakın.
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - Eklenti geliştirmek için gereken en temel şey budur.
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - SA:MP için C/C++ Dil Desteği.
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - Eklenti geliştirmek için gereken en temel şey budur.
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - SA:MP için C/C++ Dil Desteği.
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - SA:MP için C# Dil Desteği.
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - SA:MP için C# Dil Desteği.
 - **[sampgo](https://github.com/sampgo/sampgo)** - SA:MP için Go Dil Desteği.

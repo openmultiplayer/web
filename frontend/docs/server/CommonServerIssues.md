@@ -5,7 +5,7 @@ sidebar_label: Common Server Issues
 
 ## Server instantly crashes when started
 
-Most commonly it's an error in your server.cfg file or your gamemode is missing. Check the server_log.txt file and the reason should be located at the bottom. If not, check crashinfo.txt file. The better solution to find out what is causing the crash is using the Crash detect plugin by Zeex/0x5A656578 ([click for link](https://github.com/Y-Less/samp-plugin-crashdetect)) which will give more information like line numbers, function names, parameter values, etc. If the script is compiled in debug mode (-d3 flag) to make compiler put extra information about all that stuff into the output .amx.
+Most commonly it's an error in your server.cfg file or your gamemode is missing. Check the server_log.txt file and the reason should be located at the bottom. If not, check crashinfo.txt file. The better solution to find out what is causing the crash is using the Crash detect plugin by Zeex/0x5A656578 ([click for link](https://github.com/AmyrAhmady/samp-plugin-crashdetect)) which will give more information like line numbers, function names, parameter values, etc. If the script is compiled in debug mode (-d3 flag) to make compiler put extra information about all that stuff into the output .amx.
 
 ## Server is not working - firewall is disabled
 
