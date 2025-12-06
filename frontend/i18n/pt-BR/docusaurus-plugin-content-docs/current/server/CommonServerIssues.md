@@ -5,7 +5,7 @@ sidebar_label: Problemas Comuns do Servidor
 
 ## Servidor trava instantaneamente ao ser iniciado
 
-Na maioria das vezes é um erro no seu arquivo server.cfg ou seu gamemode está faltando. Verifique o arquivo server_log.txt e a razão deve estar localizada no final. Se não estiver, verifique o arquivo crashinfo.txt. A melhor solução para descobrir o que está causando a falha é usar o plugin Crash detect por Zeex/0x5A656578 ([clique para o link](https://github.com/Zeex/samp-plugin-crashdetect)) que fornecerá mais informações como números de linha, nomes de funções, valores de parâmetros, etc. Se o script for compilado em modo debug (flag -d3) para fazer o compilador colocar informações extras sobre tudo isso no arquivo .amx de saída.
+Na maioria das vezes é um erro no seu arquivo server.cfg ou seu gamemode está faltando. Verifique o arquivo server_log.txt e a razão deve estar localizada no final. Se não estiver, verifique o arquivo crashinfo.txt. A melhor solução para descobrir o que está causando a falha é usar o plugin Crash detect por Zeex/0x5A656578 ([clique para o link](https://github.com/AmyrAhmady/samp-plugin-crashdetect)) que fornecerá mais informações como números de linha, nomes de funções, valores de parâmetros, etc. Se o script for compilado em modo debug (flag -d3) para fazer o compilador colocar informações extras sobre tudo isso no arquivo .amx de saída.
 
 ## Servidor não está funcionando - firewall está desativado
 
