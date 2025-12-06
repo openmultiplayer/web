@@ -466,10 +466,10 @@ Release Candidate 2 (RC2) open.mp servera.
 - [OnPlayerEnterPlayerGangZone](scripting/callbacks/OnPlayerEnterPlayerGangZone)
 - [OnPlayerLeavePlayerGangZone](scripting/callbacks/OnPlayerLeavePlayerGangZone)
 - [OnPlayerClickPlayerGangZone](scripting/callbacks/OnPlayerClickPlayerGangZone)
-- [OnPickupStreamIn](../scripting/callbacks/OnPickupStreamIn)
-- [OnPickupStreamOut](../scripting/callbacks/OnPickupStreamOut)
-- [OnPlayerPickUpPlayerPickup](../scripting/callbacks/OnPlayerPickUpPlayerPickup)
-- [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)
-- [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)
+- [OnPickupStreamIn](scripting/callbacks/OnPickupStreamIn)
+- [OnPickupStreamOut](scripting/callbacks/OnPickupStreamOut)
+- [OnPlayerPickUpPlayerPickup](scripting/callbacks/OnPlayerPickUpPlayerPickup)
+- [OnPlayerPickupStreamIn](scripting/callbacks/OnPlayerPickupStreamIn)
+- [OnPlayerPickupStreamOut](scripting/callbacks/OnPlayerPickupStreamOut)
 
 </details>

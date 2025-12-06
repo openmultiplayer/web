@@ -24,7 +24,7 @@ description: 精心整理的实用工具、库、游戏模式、滤镜脚本和�
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - 针对大量SA:MP服务器bug的高度优化修复方案，即插即用。
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - 最古老、最庞大、测试最充分的SA:MP/pawn库，提供大量新游戏和语言功能。
 - **[foreach](https://github.com/Open-GTO/foreach)** - 独立版foreach包含文件（非y_iterate版本）。
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - 提供对pawn脚本底层的访问。
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - 提供对pawn脚本底层的访问。
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - 在Pawn中排序多维数组。通过修改数组内部指针实现，避免数据复制。
 - **[indirection](https://github.com/Y-Less/indirection)** - 通过抽象方法自定义调用的指针传递和间接函数调用系统。
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - 在编译时解析和自定义pawn代码。
@@ -69,9 +69,9 @@ description: 精心整理的实用工具、库、游戏模式、滤镜脚本和�
 
 ## 插件
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - 代码稳定后使用可显著提升运行速度。
-- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect)** - 开发阶段用于发现错误的工具。
-- **[性能分析器](https://github.com/Zeex/samp-plugin-profiler)** - SA-MP服务器性能分析插件。
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - 代码稳定后使用可显著提升运行速度。
+- **[CrashDetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - 开发阶段用于发现错误的工具。
+- **[性能分析器](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - SA-MP服务器性能分析插件。
 - **[sscanf](https://github.com/Y-Less/sscanf)** - 将字符串转换为多种值类型（整数、浮点数、玩家等）。
 - **[MySQL插件](https://github.com/pBlueG/SA-MP-MySQL)** - 连接服务器到MySQL数据库。
 - **[流加载插件](https://github.com/samp-incognito/samp-streamer-plugin)** - 突破SA:MP多项限制（物体、拾取物等）。
@@ -129,8 +129,8 @@ description: 精心整理的实用工具、库、游戏模式、滤镜脚本和�
 
 现在无需插件即可使用open.mp通过其他语言编写脚本，详见[此博客文章](https://www.open.mp/blog/release-candidate-1)
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - 插件开发基础SDK。
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++语言支持（编写SA:MP游戏模式）
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - 插件开发基础SDK。
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - C/C++语言支持（编写SA:MP游戏模式）
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C#语言支持（编写SA:MP游戏模式）
 - **[.NET插件](https://github.com/Seregamil/.NET-plugin)** - C#语言支持（编写SA:MP插件）
 - **[sampgo](https://github.com/sampgo/sampgo)** - Go语言支持（编写SA:MP游戏模式/插件）

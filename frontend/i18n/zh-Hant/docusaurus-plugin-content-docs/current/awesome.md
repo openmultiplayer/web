@@ -23,7 +23,7 @@ description: 對製作腳本有幫助的工具、函數庫和插件的列表。
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - 修復大量samp伺服器原有的bug，可以直接使用。
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - 開發最久、最多功能、測試充足的函數庫，提供大量的新功能來製作腳本。
 - **[foreach](https://github.com/Open-GTO/foreach)** - 獨立的 foreach 函數庫 (非 y_iterate版本)。
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - Pawn底層等級的語言運用。
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - Pawn底層等級的語言運用。
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - 可以對pawn的多維數組進行排序。該函數庫通過修改數組的內部指針而不是複製資料來實現。
 - **[indirection](https://github.com/Y-Less/indirection)** - 可以間接呼叫函數指針，並且更有效率且更安全，甚至可以取代CallLocalFunction等類似的函數。
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - 可以分析自定義的代碼，並在編譯時可以取得詳細。
@@ -66,9 +66,9 @@ description: 對製作腳本有幫助的工具、函數庫和插件的列表。
 
 ## 插件
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - 一款即時編譯器插件，對於穩定的腳本，可以提升相當大的執行性能。
-- **[crashdetect](https://github.com/Y-Less/samp-plugin-crashdetect)** - 相當好用的插件，可以在測試時查找錯誤，直接得到錯誤相關訊息，對於除錯有相當大的幫助。
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - SA-MP伺服器性能分析插件。
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - 一款即時編譯器插件，對於穩定的腳本，可以提升相當大的執行性能。
+- **[crashdetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - 相當好用的插件，可以在測試時查找錯誤，直接得到錯誤相關訊息，對於除錯有相當大的幫助。
+- **[Profiler](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - SA-MP伺服器性能分析插件。
 - **[sscanf](https://github.com/Y-Less/sscanf)** - 可以將字符串轉換為多個不同類型的值，如整數、浮點數、玩家等。
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - 建立SA-MP伺服器到MySQL資料庫的連接。
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - 繞過SA-MP的許多限制，如物體和撿取物品。
@@ -122,8 +122,8 @@ description: 對製作腳本有幫助的工具、函數庫和插件的列表。
 
 現在，你可以使用open.mp來製作pawn以外的程式碼，不需要使用任何插件，詳細請查看[這篇文章](https://www.open.mp/blog/release-candidate-1)
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - 開發插件所需的最小程式碼。
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ 語言支援，用於製作SA:MP的遊戲模式。
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - 開發插件所需的最小程式碼。
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - C/C++ 語言支援，用於製作SA:MP的遊戲模式。
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# 語言支援，用於製作SA:MP的遊戲模式。
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - C# 語言支援，用於製作SA:MP的插件。
 - **[sampgo](https://github.com/sampgo/sampgo)** - Go 語言支援，用於製作SA:MP的遊戲模式/插件。

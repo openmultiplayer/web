@@ -4,7 +4,7 @@ title : Problèmes courants
 
 ## Le serveur plante instantanément au démarrage
 
-Le plus souvent, il s'agit d'une erreur dans votre fichier server.cfg ou de votre mode de jeu manquant. Vérifiez le fichier server_log.txt et la raison doit être située en bas. Sinon, vérifiez le fichier crashinfo.txt. La meilleure solution pour savoir ce qui cause le crash est d'utiliser le plugin de détection de crash de Zeex/0x5A656578 ([cliquez pour le lien](https://github.com/Y-Less/samp-plugin-crashdetect)) qui donnera plus d'informations comme les numéros de ligne, les noms de fonction, les valeurs de paramètre, etc. Si le script est compilé en mode débogage (indicateur -d3) pour que le compilateur mette des informations supplémentaires sur tout cela dans la sortie .amx.
+Le plus souvent, il s'agit d'une erreur dans votre fichier server.cfg ou de votre mode de jeu manquant. Vérifiez le fichier server_log.txt et la raison doit être située en bas. Sinon, vérifiez le fichier crashinfo.txt. La meilleure solution pour savoir ce qui cause le crash est d'utiliser le plugin de détection de crash de Zeex/0x5A656578 ([cliquez pour le lien](https://github.com/AmyrAhmady/samp-plugin-crashdetect)) qui donnera plus d'informations comme les numéros de ligne, les noms de fonction, les valeurs de paramètre, etc. Si le script est compilé en mode débogage (indicateur -d3) pour que le compilateur mette des informations supplémentaires sur tout cela dans la sortie .amx.
 
 ## Le serveur ne fonctionne pas - le pare-feu est désactivé
 

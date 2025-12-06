@@ -74,7 +74,7 @@ stackoverflow.com
 
 **Visual C++ 2010 Express:** [免费下载](https://visualstudio.microsoft.com/vs/express/)
 
-**插件 SDK (Plain):** [下载](https://github.com/Zeex/samp-plugin-sdk)
+**插件 SDK (Plain):** [下载](https://github.com/maddinat0r/samp-plugin-sdk)
 
 - 我们首先需要做的是创建一个新项目. 选择文件->新建->项目来创建.
 

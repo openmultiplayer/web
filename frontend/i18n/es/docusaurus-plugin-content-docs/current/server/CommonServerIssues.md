@@ -5,7 +5,7 @@ sidebar_label: Problemas Comunes
 
 ## El servidor se bloquea instantáneamente al iniciarse
 
-Lo más común es que se deba a un error en tu archivo server.cfg o a la falta de un gamemode. Verifica el archivo server_log.txt y la razón debería estar ubicada en la parte inferior. Si no está ahí, verifica el archivo crashinfo.txt. La mejor solución para descubrir qué está causando el bloqueo es utilizar el plugin Crash Detect de Zeex/0x5A656578 ([clic aquí para acceder](https://github.com/Y-Less/samp-plugin-crashdetect)), que proporcionará más información, como números de línea, nombres de función, valores de parámetros, etc. Si el script está compilado en modo de depuración (-d3 flag) para que el compilador incluya información adicional en el archivo .amx de salida.
+Lo más común es que se deba a un error en tu archivo server.cfg o a la falta de un gamemode. Verifica el archivo server_log.txt y la razón debería estar ubicada en la parte inferior. Si no está ahí, verifica el archivo crashinfo.txt. La mejor solución para descubrir qué está causando el bloqueo es utilizar el plugin Crash Detect de Zeex/0x5A656578 ([clic aquí para acceder](https://github.com/AmyrAhmady/samp-plugin-crashdetect)), que proporcionará más información, como números de línea, nombres de función, valores de parámetros, etc. Si el script está compilado en modo de depuración (-d3 flag) para que el compilador incluya información adicional en el archivo .amx de salida.
 
 ## El servidor no funciona: el firewall está desactivado
 

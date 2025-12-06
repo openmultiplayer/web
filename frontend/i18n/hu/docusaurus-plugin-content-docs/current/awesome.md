@@ -24,7 +24,7 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - Rendkívül kitűnő javítások az SA:MP szerver hibák nagy számához. Plug and Play.
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - A legrégebbi, legnagyobb, legtöbbet tesztelt és jól támogatott könyvtár az SA:MP/pawn számára, amely rengeteg új játék- és nyelvi funkciót kínál.
 - **[foreach](https://github.com/Open-GTO/foreach)** - foreach önálló könyvtár (nem y_iterate verzió).
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - Alacsony szintű hozzáférés magához a pawn fájlokhoz.
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - Alacsony szintű hozzáférés magához a pawn fájlokhoz.
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - Többdimenziós tömbök rendezése a Pawnban. Módosítja a tömb belső mutatóit az adatok másolása helyett.
 - **[indirection](https://github.com/Y-Less/indirection)** - Rendszer mutatók átadására és a funkciók közvetett hívására, absztrakt módszerekkel a hívások testreszabására.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - A pawn kód elemzése és testreszabása fordítási időben.
@@ -67,9 +67,9 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 
 ## Bővítmények
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - Ha a kód stabil, használja ezt a jelentős gyorsításhoz.
-- **[CrashDetect](https://github.com/Y-Less/samp-plugin-crashdetect)** - Fejlesztői eszköz hibakeresésre tesztelés közben.
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - Performance profiler plugin for SA-MP server.
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - Ha a kód stabil, használja ezt a jelentős gyorsításhoz.
+- **[CrashDetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - Fejlesztői eszköz hibakeresésre tesztelés közben.
+- **[Profiler](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - Performance profiler plugin for SA-MP server.
 - **[sscanf](https://github.com/Y-Less/sscanf)** - Szöveg konvertálása több féle értékre, int, float, player, stb.
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Csatlakoztassa szerverét egy MySQL szerverhez.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Sok SA:MP korlát megkerülése, például objektumok és pickupok.
@@ -123,8 +123,8 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 
 Most már készítheted szkriptjeidet a pawn nyelven kívül más nyelveken is az open.mp segítségével. Lásd [ezt a blogbejegyzést](https://www.open.mp/blog/release-candidate-1)
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - Ez az abszolút minimum, amire szükséged van a bővítmények fejlesztéséhez.
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ nyelvi támogatás a SA:MP játékmód írásához.
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - Ez az abszolút minimum, amire szükséged van a bővítmények fejlesztéséhez.
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - C/C++ nyelvi támogatás a SA:MP játékmód írásához.
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# nyelvi támogatás a SA:MP játékmód írásához.
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - C# nyelvi támogatás a SA:MP bővítmény írásához.
 - **[sampgo](https://github.com/sampgo/sampgo)** - Go nyelvi támogatás a SA:MP játékmód/bővítmény írásához.

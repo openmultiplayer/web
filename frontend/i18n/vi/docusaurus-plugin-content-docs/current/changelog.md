@@ -49,6 +49,7 @@ Trình khởi chạy của chúng tôi hiện cũng đã nhận được bản c
 ## [v1.2.0.2670](https://github.com/openmultiplayer/open.mp/releases/tag/v1.2.0.2670)
 
 Chúng tôi khuyến khích mọi máy chủ open.mp cập nhật lên phiên bản này. Không chỉ có những cải tiến đáng chú ý về hiệu suất mà còn có **các bản sửa lỗi bảo mật quan trọng**.
+
 ### Server
 
 **Tính năng mới:**
@@ -188,7 +189,7 @@ Phiên bản ứng viên phát hành 2 (RC2) của máy chủ open.mp.
 <details>
 <summary>Nhấp vào đây</summary>
 
-[Release Candidate 1 (RC1)](https://www.open.mp/blog/release-candidate-1) của máy chủ open.mp! Chúng tôi hiện đã hết giai đoạn beta. 
+[Release Candidate 1 (RC1)](https://www.open.mp/blog/release-candidate-1) của máy chủ open.mp! Chúng tôi hiện đã hết giai đoạn beta.
 
 ### Server
 
@@ -460,10 +461,10 @@ Phiên bản ứng viên phát hành 2 (RC2) của máy chủ open.mp.
 - [OnPlayerEnterPlayerGangZone](scripting/callbacks/OnPlayerEnterPlayerGangZone)
 - [OnPlayerLeavePlayerGangZone](scripting/callbacks/OnPlayerLeavePlayerGangZone)
 - [OnPlayerClickPlayerGangZone](scripting/callbacks/OnPlayerClickPlayerGangZone)
-- [OnPickupStreamIn](../scripting/callbacks/OnPickupStreamIn)
-- [OnPickupStreamOut](../scripting/callbacks/OnPickupStreamOut)
-- [OnPlayerPickUpPlayerPickup](../scripting/callbacks/OnPlayerPickUpPlayerPickup)
-- [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)
-- [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)
+- [OnPickupStreamIn](scripting/callbacks/OnPickupStreamIn)
+- [OnPickupStreamOut](scripting/callbacks/OnPickupStreamOut)
+- [OnPlayerPickUpPlayerPickup](scripting/callbacks/OnPlayerPickUpPlayerPickup)
+- [OnPlayerPickupStreamIn](scripting/callbacks/OnPlayerPickupStreamIn)
+- [OnPlayerPickupStreamOut](scripting/callbacks/OnPlayerPickupStreamOut)
 
 </details>
