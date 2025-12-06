@@ -24,7 +24,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/connectionstatus"))
     {
-        static ConnectionStatuses[9][48] = 
+        static ConnectionStatuses[9][48] =
         {
             "No Action",
             "Disconnect ASAP",

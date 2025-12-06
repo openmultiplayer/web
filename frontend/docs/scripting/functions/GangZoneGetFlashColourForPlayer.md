@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Get the flashing colour of a gangzone for player.
 
-| Name        | Description                               |
-| ----------- | ----------------------------------------- |
-| playerid    | The ID of the player you need to get.     |
-| zoneid      | The ID of the gangzone.                   |
+| Name     | Description                           |
+| -------- | ------------------------------------- |
+| playerid | The ID of the player you need to get. |
+| zoneid   | The ID of the gangzone.               |
 
 ## Returns
 

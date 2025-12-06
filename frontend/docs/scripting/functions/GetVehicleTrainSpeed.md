@@ -14,7 +14,7 @@ Gets the speed of the train.
 ## Parameters
 
 | Name      | Description            |
-|-----------|------------------------|
+| --------- | ---------------------- |
 | vehicleid | The ID of the vehicle. |
 
 ## Examples

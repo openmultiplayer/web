@@ -14,7 +14,7 @@ Gets the current vehicle [landing gear state](../resources/landinggearstate) fro
 ## Parameters
 
 | Name      | Description            |
-|-----------|------------------------|
+| --------- | ---------------------- |
 | vehicleid | The ID of the vehicle. |
 
 ## Examples

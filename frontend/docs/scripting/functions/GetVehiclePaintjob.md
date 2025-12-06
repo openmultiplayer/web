@@ -14,7 +14,7 @@ Gets the vehicle's paintjob id.
 ## Parameters
 
 | Name      | Description            |
-|-----------|------------------------|
+| --------- | ---------------------- |
 | vehicleid | The ID of the vehicle. |
 
 ## Return Values

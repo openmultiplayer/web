@@ -11,9 +11,9 @@ Toggle whether a player is in spectator mode or not. While in spectator mode a p
 
 ## Parameters
 
-| Name        | Description                                       |
-| ----------- | ------------------------------------------------- |
-| playerid    | The ID of the player who should spectate.          |
+| Name        | Description                                             |
+| ----------- | ------------------------------------------------------- |
+| playerid    | The ID of the player who should spectate.               |
 | bool:toggle | **true** to enable spectating and **false** to disable. |
 
 ## Returns

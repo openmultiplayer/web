@@ -17,7 +17,7 @@ Allows you to retrieve the ID of the player-object the player is looking at.
 
 ## Returns
 
-The ID of the player-object the player is looking at. 
+The ID of the player-object the player is looking at.
 
 If `INVALID_OBJECT_ID` (65535) is returned, player isn't looking at any object.
 

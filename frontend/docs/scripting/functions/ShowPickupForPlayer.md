@@ -12,7 +12,7 @@ tags: ["player", "pickup"]
 Shows a pickup for a specific player.
 
 | Name     | Description                                     |
-|----------|-------------------------------------------------|
+| -------- | ----------------------------------------------- |
 | playerid | The ID of the player.                           |
 | pickupid | The ID of the pickup to display for the player. |
 

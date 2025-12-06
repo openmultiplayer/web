@@ -11,8 +11,8 @@ tags: ["player"]
 
 Get player's ghost mode.
 
-| Name     | Description                                           |
-| -------- | ----------------------------------------------------- |
+| Name     | Description                                    |
+| -------- | ---------------------------------------------- |
 | playerid | The ID of the player to get the ghost mode of. |
 
 ## Returns

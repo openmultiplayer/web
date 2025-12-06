@@ -30,7 +30,7 @@ public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
     TextDrawUseBox(gMyTextdraw, true); // Toggle box ON
-    
+
     if (TextDrawIsBox(gMyTextdraw))
     {
         // Textdraw is box

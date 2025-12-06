@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             string[128];
 
         GetVehicleVelocity(GetPlayerVehicleID(playerid), vehVelocity[0], vehVelocity[1], vehVelocity[2]);
-        
+
         format(string, sizeof(string), "You are going at a velocity of X%f, Y%f, Z%f", vehVelocity[0], vehVelocity[1], vehVelocity[2]);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;

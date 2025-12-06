@@ -11,21 +11,21 @@ tags: ["player"]
 
 Return the current spawn data for a player, where they will spawn next.
 
-| Name            | Description                                                                     |
-|-----------------|---------------------------------------------------------------------------------|
-| playerid        | The ID of the player you want to get spawn information from.                    |
-| &team           | A variable into which to store the team ID, passed by reference.                |
-| &skin           | A variable into which to store the skin ID, passed by reference.                |
-| &Float:spawnX   | A Float variable into which to store the X-coordinate, passed by reference.     |
-| &Float:spawnY   | A Float variable into which to store the Y-coordinate, passed by reference.     |
-| &Float:spawnZ   | A Float variable into which to store the Z-coordinate, passed by reference.     |
+| Name            | Description                                                                 |
+| --------------- | --------------------------------------------------------------------------- |
+| playerid        | The ID of the player you want to get spawn information from.                |
+| &team           | A variable into which to store the team ID, passed by reference.            |
+| &skin           | A variable into which to store the skin ID, passed by reference.            |
+| &Float:spawnX   | A Float variable into which to store the X-coordinate, passed by reference. |
+| &Float:spawnY   | A Float variable into which to store the Y-coordinate, passed by reference. |
+| &Float:spawnZ   | A Float variable into which to store the Z-coordinate, passed by reference. |
 | &Float:angle    | A Float variable into which to store the Facing angle, passed by reference. |
-| &WEAPON:weapon1 | A variable into which to store the weapon1, passed by reference.                |
-| &ammo1          | A variable into which to store the ammo1, passed by reference.                  |
-| &WEAPON:weapon2 | A variable into which to store the weapon2, passed by reference.                |
-| &ammo2          | A variable into which to store the ammo2, passed by reference.                  |
-| &WEAPON:weapon3 | A variable into which to store the weapon3, passed by reference.                |
-| &ammo3          | A variable into which to store the ammo3, passed by reference.                  |
+| &WEAPON:weapon1 | A variable into which to store the weapon1, passed by reference.            |
+| &ammo1          | A variable into which to store the ammo1, passed by reference.              |
+| &WEAPON:weapon2 | A variable into which to store the weapon2, passed by reference.            |
+| &ammo2          | A variable into which to store the ammo2, passed by reference.              |
+| &WEAPON:weapon3 | A variable into which to store the weapon3, passed by reference.            |
+| &ammo3          | A variable into which to store the ammo3, passed by reference.              |
 
 ## Returns
 
@@ -40,7 +40,7 @@ public OnPlayerRequestClass(playerid, classid)
 {
     SetSpawnInfo(playerid, NO_TEAM, 293, 1139.4786, -1761.3989, 13.5844, 0.0000, WEAPON_SAWEDOFF, 36, WEAPON_UZI, 150, WEAPON_FIST, 0);
 
-    new 
+    new
         team,
         skin,
         Float:spawnX,
@@ -53,7 +53,7 @@ public OnPlayerRequestClass(playerid, classid)
         ammo2,
         WEAPON:weapon3,
         ammo3;
-    
+
     GetSpawnInfo(playerid, team, skin, spawnX, spawnY, spawnZ, angle, weapon1, ammo1, weapon2, ammo2, weapon3, ammo3);
     // team = NO_TEAM
     // skin = 293

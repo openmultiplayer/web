@@ -14,7 +14,7 @@ Checks if an object is hidden for a player.
 ## Parameters
 
 | Name     | Description                    |
-|----------|--------------------------------|
+| -------- | ------------------------------ |
 | playerid | The ID of the player.          |
 | objectid | The ID of the object to check. |
 

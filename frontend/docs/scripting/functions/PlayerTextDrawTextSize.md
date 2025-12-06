@@ -40,9 +40,9 @@ public OnPlayerConnect(playerid)
 :::tip
 
 - The x and y have different meanings with different [PlayerTextDrawAlignment](PlayerTextDrawAlignment) values:
-    - 1 (left): they are the right-most corner of the box, absolute coordinates.
-    - 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box.
-    - 3 (right): the x and y are the coordinates of the left-most corner of the box
+  - 1 (left): they are the right-most corner of the box, absolute coordinates.
+  - 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box.
+  - 3 (right): the x and y are the coordinates of the left-most corner of the box
 - Using font type 4 (sprite) and 5 (model preview) converts X and Y of this function from corner coordinates to WIDTH and HEIGHT (offsets).
 - The TextDraw box starts 10.0 units up and 5.0 to the left as the origin (TextDrawCreate coordinate).
 - This function defines the clickable area for use with [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable), whether a box is shown or not.

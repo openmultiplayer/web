@@ -12,7 +12,7 @@ tags: ["object"]
 Set the move speed of an object.
 
 | Name        | Description                                               |
-|-------------|-----------------------------------------------------------|
+| ----------- | --------------------------------------------------------- |
 | objectid    | The ID of the object to set the move speed of.            |
 | Float:speed | The speed at which to move the object (units per second). |
 

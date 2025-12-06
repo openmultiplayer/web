@@ -84,6 +84,7 @@ Using an invalid handle will crash your server! Get a valid handle by using [fop
 :::
 
 ## Related Functions
+
 - [fopen](fopen): Open a file.
 - [fclose](fclose): Close a file.
 - [ftemp](ftemp): Create a temporary file stream.

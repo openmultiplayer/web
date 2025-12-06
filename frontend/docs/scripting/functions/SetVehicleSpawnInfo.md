@@ -14,7 +14,7 @@ Adjusts vehicle model, spawn location, colours, respawn delay and interior.
 ## Parameters
 
 | Name              | Description                                                 |
-|-------------------|-------------------------------------------------------------|
+| ----------------- | ----------------------------------------------------------- |
 | vehicleid         | The ID of the vehicle.                                      |
 | modelid           | [Vehicle model](../resources/vehicleid) id to set.          |
 | Float:spawnX      | The X coordinate to set.                                    |

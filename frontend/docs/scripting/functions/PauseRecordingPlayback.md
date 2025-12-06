@@ -9,7 +9,6 @@ tags: []
 
 This will pause playing back the recording.
 
-
 ## Related Functions
 
 - [ResumeRecordingPlayback](ResumeRecordingPlayback): Resumes the recording if its paused.

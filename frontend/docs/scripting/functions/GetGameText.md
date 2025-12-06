@@ -12,7 +12,7 @@ tags: ["player"]
 Returns all the information on the given game text style.
 
 | Name                   | Description                                                           |
-|------------------------|-----------------------------------------------------------------------|
+| ---------------------- | --------------------------------------------------------------------- |
 | playerid               | The ID of the player to get the rotation of.                          |
 | style                  | The [style](../resources/gametextstyles) of text to get the data for. |
 | message[]              | Return array for the text string.                                     |
@@ -33,7 +33,7 @@ public OnPlayerConnect(playerid)
 {
     GameTextForPlayer(playerid, "Welcome to the server!", 5000, 3);
 
-    new 
+    new
         message[32],
         time,
         remaining;

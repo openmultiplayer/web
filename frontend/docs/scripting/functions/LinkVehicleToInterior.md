@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Links a vehicle to an interior. Vehicles can only be seen by players in the same interior (SetPlayerInterior).
 
-| Name       | Description                                                   |
-| ---------- | ------------------------------------------------------------- |
-| vehicleid  | The ID of the vehicle to link to an interior.                 |
-| interiorid | The [Interior ID](../resources/interiorids) to link it to.    |
+| Name       | Description                                                |
+| ---------- | ---------------------------------------------------------- |
+| vehicleid  | The ID of the vehicle to link to an interior.              |
+| interiorid | The [Interior ID](../resources/interiorids) to link it to. |
 
 ## Returns
 

@@ -11,9 +11,9 @@ tags: ["player"]
 
 Checks if the player special action is cuffed.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player to check.                              |
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | The ID of the player to check. |
 
 ## Returns
 
@@ -29,4 +29,3 @@ if (IsPlayerCuffed(playerid))
     // do something
 }
 ```
-

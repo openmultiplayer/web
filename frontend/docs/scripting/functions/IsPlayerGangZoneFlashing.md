@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 Check if the player gangzone is flashing.
 
-| Name        | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| playerid    | The ID of the player to whom player gangzone is bound.           |
-| zoneid      | The ID of the player gangzone.                                   |
+| Name     | Description                                            |
+| -------- | ------------------------------------------------------ |
+| playerid | The ID of the player to whom player gangzone is bound. |
+| zoneid   | The ID of the player gangzone.                         |
 
 ## Returns
 
@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerSpawn(playerid)
 {
-    // Start player gangzone flash    
+    // Start player gangzone flash
     PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0x45D1ABFF);
     return 1;
 }

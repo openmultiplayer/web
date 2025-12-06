@@ -12,7 +12,7 @@ tags: ["actor"]
 Get the initial spawn point of the actor.
 
 | Name              | Description                                                                  |
-|-------------------|------------------------------------------------------------------------------|
+| ----------------- | ---------------------------------------------------------------------------- |
 | actorid           | The ID of the actor to get the spawn point of                                |
 | &skin             | A variable into which to store the skin in, passed by reference.             |
 | &Float:spawnX     | A float variable into which to store the spawnX in, passed by reference.     |
@@ -38,7 +38,7 @@ public OnGameModeInit()
         Float:spawnY,
         Float:spawnZ,
         Float:spawnAngle;
-    
+
     GetActorSpawnInfo(gMyActor, skin, spawnX, spawnY, spawnZ, spawnAngle);
     return 1;
 }

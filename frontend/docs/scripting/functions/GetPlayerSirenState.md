@@ -14,7 +14,7 @@ Gets the siren state of the player's vehicle.
 ## Parameters
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Return Values

@@ -12,7 +12,7 @@ tags: ["textdraw"]
 Gets the preview model of a 3D preview textdraw.
 
 | Name        | Description                                         |
-|-------------|-----------------------------------------------------|
+| ----------- | --------------------------------------------------- |
 | Text:textid | The ID of the textdraw to get the preview model of. |
 
 ## Returns

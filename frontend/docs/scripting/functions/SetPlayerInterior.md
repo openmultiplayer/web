@@ -9,9 +9,9 @@ tags: ["player"]
 
 Set a player's interior. A list of currently known interiors and their positions can be found here.
 
-| Name       | Description                                                          |
-| ---------- | -------------------------------------------------------------------- |
-| playerid   | The ID of the player to set the interior of.                         |
+| Name       | Description                                                       |
+| ---------- | ----------------------------------------------------------------- |
+| playerid   | The ID of the player to set the interior of.                      |
 | interiorid | The [interior ID](../resources/interiorids) to set the player in. |
 
 ## Returns

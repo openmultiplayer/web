@@ -11,8 +11,8 @@ tags: ["player", "animation"]
 
 Get the player animation flags.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
+| Name     | Description                                            |
+| -------- | ------------------------------------------------------ |
 | playerid | The player id you want to get the animation flags from |
 
 ## Returns

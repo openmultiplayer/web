@@ -11,9 +11,9 @@ tags: ["player"]
 
 Check if the player is in driveby mode.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player to check.       |
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | The ID of the player to check. |
 
 ## Returns
 
@@ -27,4 +27,3 @@ if (IsPlayerInDriveByMode(playerid))
     // do something
 }
 ```
-

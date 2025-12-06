@@ -9,12 +9,12 @@ tags: ["vehicle"]
 
 ## Description
 
-Get the playerid of the person driving the vehicle. 
+Get the playerid of the person driving the vehicle.
 
 ## Parameters
 
 | Name      | Description                                 |
-|-----------|---------------------------------------------|
+| --------- | ------------------------------------------- |
 | vehicleid | The ID of the vehicle to get the driver of. |
 
 ## Returns

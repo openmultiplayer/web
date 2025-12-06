@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 Destroy player gangzone.
 
-| Name        | Description                                                         |
-| ----------- | ------------------------------------------------------------------- |
-| playerid    | The ID of the player to whom the player gangzone will be destroyed. |
-| zoneid      | The ID of the player gangzone for destroy.                          |
+| Name     | Description                                                         |
+| -------- | ------------------------------------------------------------------- |
+| playerid | The ID of the player to whom the player gangzone will be destroyed. |
+| zoneid   | The ID of the player gangzone for destroy.                          |
 
 ## Returns
 

@@ -12,7 +12,7 @@ tags: ["player", "object", "playerobject"]
 Get the attachment offset and rotation of a player-object.
 
 | Name             | Description                                                                       |
-|------------------|-----------------------------------------------------------------------------------|
+| ---------------- | --------------------------------------------------------------------------------- |
 | playerid         | The ID of the player.                                                             |
 | objectid         | The ID of the player-object to get the offset and rotation of.                    |
 | &Float:offsetX   | A float variable in which to store the offsetX coordinate, passed by reference.   |
@@ -31,7 +31,7 @@ Get the attachment offset and rotation of a player-object.
 ## Examples
 
 ```c
-new 
+new
     Float:offsetX,
     Float:offsetY,
     Float:offsetZ,

@@ -29,7 +29,7 @@ public OnPlayerConnect(playerid)
 {
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
     PlayerTextDrawLetterSize(playerid, welcomeText[playerid], 3.2, 5.1);
-    
+
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
     return 1;
 }

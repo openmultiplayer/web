@@ -1,3 +1,9 @@
+---
+title: Linux Server Installation
+sidebar_label: Linux Server Installation
+description: Comprehensive guide on installing an open.mp server on Ubuntu or another Debian based Linux.
+---
+
 **This guide contains a comprehensive guide on installing an open.mp server on Ubuntu or another Debian based Linux.
 Whether you're a beginner or just looking to refresh your knowledge, this guide may have something useful for you!**
 
@@ -7,9 +13,9 @@ If you are using the SA:MP server and didn't convert to open.mp yet, **[please s
 
 :::
 
-:::note
+:::tip
 
-If you are using the FCNPC plugin, please stop for now because this plugin does not work for open.mp currently.
+**Good news for FCNPC users!** The legacy FCNPC plugin has been replaced with the official **open.mp NPC component**, which provides the same functionality with better performance and native integration. Simply convert your code to the built-in NPC component instead.
 
 :::
 
@@ -40,7 +46,6 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 :::
 
 2. Updating your Linux Instance:
-
    - Before proceeding, let's ensure your system is up to date by running:
 
    ```
@@ -52,42 +57,59 @@ Seek online guides or your hosting provider's documentation if you're unsure how
    ```
 
 3. Creating a secure service account:
-
    - For security reasons, we should create a dedicated service account without a home directory:
 
    ```
    sudo useradd -M svc-omp-server
    ```
 
-4. Locking the service sccount:
-
+4. Locking the service account:
    - Let's prevent the service account from being used for login:
 
    ```
    sudo usermod -L svc-omp-server
    ```
 
-5. Creating a directory for the server files:
+5. Adding your user to the service group:
+   - Add your current user to the svc-omp-server group so you can manage files:
 
+   ```
+   sudo usermod -aG svc-omp-server $USER
+   ```
+
+   :::warning
+
+   You need to log out and log back in for group changes to take effect!
+
+   :::
+
+6. Creating a directory for the server files:
    - We will use the /opt directory, this is the standard location for third-party applications:
 
    ```
    sudo mkdir /opt/omp-server
    ```
 
-6. Setting permissions for the directory:
-
+7. Setting permissions for the directory:
    - Changing the group of the directory to match the service account:
 
    ```
    sudo chgrp svc-omp-server /opt/omp-server
    ```
 
-   - Setting the g+s flag so new files inherit the correct group and remove access for others:
+   - Give the group read, write, and execute permissions:
+
+   ```
+   sudo chmod g+rwx /opt/omp-server
+   ```
+
+   - Setting the g+s flag so new files inherit the correct group:
 
    ```
    sudo chmod g+s /opt/omp-server
    ```
+
+   - Remove access for others:
 
    ```
    sudo chmod o-rwx /opt/omp-server
@@ -97,16 +119,14 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 
 ## Phase 2: Installing open.mp Server Files
 
-7. Let's navigate to the server directory:
-
+8. Let's navigate to the server directory:
    - We need to move to the /opt/omp-server directory where the server will be stored:
 
    ```
    cd /opt/omp-server
    ```
 
-8. Downloading the open.mp server files:
-
+9. Downloading the open.mp server files:
    - Download the latest release of the open.mp server:
 
    ```
@@ -120,8 +140,7 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 
 :::
 
-9. Extracting the server files:
-
+10. Extracting the server files:
    - Once downloaded, extract the files:
 
    ```
@@ -132,9 +151,8 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 
 ## Phase 3: Configuring and Starting the Server
 
-10. Installing the required x86 libraries:
-
-    - Since the server runs as a 32-bit application, you need to enable 32-bit architecture support:
+11. Installing the required packages:
+    - Since the server runs as a 32-bit application, you need to enable 32-bit architecture support and install screen:
 
     ```
     sudo dpkg --add-architecture i386
@@ -145,11 +163,10 @@ Seek online guides or your hosting provider's documentation if you're unsure how
     ```
 
     ```
-    sudo apt install libc6:i386
+    sudo apt install libc6:i386 screen
     ```
 
-11. Making the server executable:
-
+12. Making the server executable:
     - Change the permissions so the server can be executed (only required once!):
 
     ```
@@ -160,43 +177,52 @@ Seek online guides or your hosting provider's documentation if you're unsure how
     sudo chmod +x omp-server
     ```
 
-12. Starting the server:
-
-    - Use the following command to start the server in the background:
+13. Starting the server:
+    - Use screen to start the server in a detachable session as the service account:
 
     ```
-    nohup ./omp-server &
+    sudo -u svc-omp-server screen -dmS omp-server ./omp-server
     ```
 
-    - The terminal will output a process ID (PID). Write this number down for future reference.
+    :::tip
+
+    This creates a detached screen session named "omp-server" running as the service account. You can attach to it anytime to see the console!
+
+    :::
 
 <hr />
 
 ## Phase 4: Managing the Server
 
-13. Stopping the server:
-
-    - To stop the server, use the PID from step 12 and run:
-
-    ```
-    sudo kill <PID>
-    ```
-
-14. Finding the Process ID (if forgotten):
-
-    - If you forget the process ID, run:
+14. Viewing the server console:
+    - To attach to the running server and see the console output:
 
     ```
-    top
+    sudo -u svc-omp-server screen -r omp-server
     ```
 
-    - Look for the omp-server process in the list, note the PID, press 'Q' to quit, and then kill the process as shown in step 13.
+    - To detach from the screen session (leave it running), press: `Ctrl+A` then `D`
+
+15. Stopping the server:
+    - Attach to the screen session (step 14), then stop the server gracefully by typing `/exit` in the console or pressing `Ctrl+C`
+    - Alternatively, you can kill the screen session:
+
+    ```
+    sudo -u svc-omp-server screen -X -S omp-server quit
+    ```
+
+16. Checking if the server is running:
+    - To see all screen sessions:
+
+    ```
+    sudo -u svc-omp-server screen -ls
+    ```
 
 <hr />
 
 ## Phase 5: Uploading Your Gamemode and Files
 
-15. Upload your custom gamemodes and scripts:
+17. Upload your custom gamemodes and scripts:
     - Use WinSCP or Filezilla to transfer your gamemodes and scripts to the /opt/omp-server directory.
       Important: Make sure to use .so files for Linux plugins, as .dll files are only supported on Windows.
 

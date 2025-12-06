@@ -11,10 +11,10 @@ tags: ["console"]
 
 Outputs a formatted string on the console (the server window, not the in-game chat).
 
-| Name           | Description                               |
-| -------------- | ----------------------------------------- |
-| const format[] | The format string                         |
-| \{Float, _\}:... | Indefinite number of arguments of any tag |
+| Name              | Description                               |
+| ----------------- | ----------------------------------------- |
+| const format[]    | The format string                         |
+| \{Float, \_\}:... | Indefinite number of arguments of any tag |
 
 ## Returns
 

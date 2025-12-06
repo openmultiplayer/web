@@ -9,7 +9,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Gets the highest vehicleid currently in use on the server.  Note that in SA:MP this function is broken and will return `0` even when there are no vehicles.  fixes.inc and open.mp correct this to return `-1`, but also deprecate the function in favour of `MAX_VEHICLES` or `foreach`.
+Gets the highest vehicleid currently in use on the server. Note that in SA:MP this function is broken and will return `0` even when there are no vehicles. fixes.inc and open.mp correct this to return `-1`, but also deprecate the function in favour of `MAX_VEHICLES` or `foreach`.
 
 ## Examples
 

@@ -14,7 +14,7 @@ Show an object for a player that is hidden with [HideObjectForPlayer](HideObject
 ## Parameters
 
 | Name     | Description                              |
-|----------|------------------------------------------|
+| -------- | ---------------------------------------- |
 | playerid | The ID of the player.                    |
 | objectid | The ID of the object to show for player. |
 

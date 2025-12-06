@@ -12,7 +12,7 @@ tags: ["player", "pickup", "playerpickup"]
 Sets the position of a player-pickup.
 
 | Name               | Description                            |
-|--------------------|----------------------------------------|
+| ------------------ | -------------------------------------- |
 | playerid           | The ID of the player.                  |
 | pickupid           | The ID of the player-pickup.           |
 | Float:x            | The x coordinate to set the pickup at. |
@@ -32,7 +32,7 @@ new PlayerPickup[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     PlayerPickup[playerid] = CreatePlayerPickup(playerid, 1242, 2, 2010.0979, 1222.0642, 10.8206, -1);
-    
+
     SetPlayerPickupPos(playerid, PlayerPickup[playerid], 1958.5488, 1344.9137, 15.3613);
     return 1;
 }

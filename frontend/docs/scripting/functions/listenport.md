@@ -17,9 +17,9 @@ This function is deprecated, Use [HTTP](HTTP) or [pawn-requests](https://github.
 
 Sets up the port number to listen at.
 
-| Name | Description                                                                                                                                            |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| port | The number of the port to listen at.  This must be a value between 1 and 65535, but you should probably avoid to use any of the reserved port numbers. |
+| Name | Description                                                                                                                                           |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| port | The number of the port to listen at. This must be a value between 1 and 65535, but you should probably avoid to use any of the reserved port numbers. |
 
 ## Return Values
 

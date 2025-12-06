@@ -12,7 +12,7 @@ tags: ["player"]
 Does the player currently have text in the given gametext style displayed?
 
 | Name     | Description                                                |
-|----------|------------------------------------------------------------|
+| -------- | ---------------------------------------------------------- |
 | playerid | The ID of the player to check the gametext for.            |
 | style    | The [style](../resources/gametextstyles) of text to check. |
 

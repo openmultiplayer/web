@@ -11,9 +11,9 @@ tags: ["rule"]
 
 Remove the server rule.
 
-| Name              | Description                                                 |
-| ----------------- | ----------------------------------------------------------- |
-| const rule[]      | The server rule name to remove.                             |
+| Name         | Description                     |
+| ------------ | ------------------------------- |
+| const rule[] | The server rule name to remove. |
 
 ## Returns
 

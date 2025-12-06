@@ -11,8 +11,8 @@ tags: ["vehicle"]
 
 Gets the number of seats in the vehicle.
 
-| Name      | Description        |
-| --------- | ------------------ |
+| Name    | Description              |
+| ------- | ------------------------ |
 | modelid | ID of the vehicle model. |
 
 ## Return Values

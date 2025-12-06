@@ -32,7 +32,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             string[128];
 
         GetPlayerVelocity(playerid, x, y, z);
-        
+
         format(string, sizeof(string), "You are going at a velocity of X: %f, Y: %f, Z: %f", x, y, z);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;

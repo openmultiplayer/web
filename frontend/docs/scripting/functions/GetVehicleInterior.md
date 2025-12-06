@@ -14,7 +14,7 @@ Get the interior id of a vehicle.
 ## Parameters
 
 | Name      | Description            |
-|-----------|------------------------|
+| --------- | ---------------------- |
 | vehicleid | The ID of the vehicle. |
 
 ## Return Values

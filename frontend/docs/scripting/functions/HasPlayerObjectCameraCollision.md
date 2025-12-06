@@ -12,7 +12,7 @@ tags: ["player", "object", "playerobject"]
 Checks if a player-object has camera collision enabled. ([SetPlayerObjectNoCameraCollision](SetPlayerObjectNoCameraCollision))
 
 | Name     | Description                    |
-|----------|--------------------------------|
+| -------- | ------------------------------ |
 | playerid | The ID of the player.          |
 | objectid | The ID of the object to check. |
 

@@ -9,9 +9,9 @@ tags: []
 
 This will force the NPC to write a desired command, and this way, getting the effects it would produce.
 
-| Name                 | Description                                        |
-| -------------------- | -------------------------------------------------- |
-| commandtext[]        | The command text to be sent by the NPC.            |
+| Name          | Description                             |
+| ------------- | --------------------------------------- |
+| commandtext[] | The command text to be sent by the NPC. |
 
 ## Examples
 

@@ -11,10 +11,10 @@ tags: ["vehicle"]
 
 Gets an array variable of the IDs of the created vehicles on the server.
 
-| Name          | Description                                                        |
-| ------------- | ------------------------------------------------------------------ |
-| vehicles[]    | An array into which to store the vehicle IDs, passed by reference. |
-| size          | The size of the array.                                             |
+| Name       | Description                                                        |
+| ---------- | ------------------------------------------------------------------ |
+| vehicles[] | An array into which to store the vehicle IDs, passed by reference. |
+| size       | The size of the array.                                             |
 
 ## Returns
 

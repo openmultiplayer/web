@@ -10,7 +10,7 @@ tags: ["player"]
 Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in the 'SMG' slot).
 
 | Name             | Description                                                                                |
-|------------------|--------------------------------------------------------------------------------------------|
+| ---------------- | ------------------------------------------------------------------------------------------ |
 | playerid         | The ID of the player whose weapon data to retrieve.                                        |
 | WEAPON_SLOT:slot | The [weapon slot](../resources/weaponslots) to get data for (0-12).                        |
 | &WEAPON:weapons  | A variable in which to store the [weapon ID](../resources/weaponids), passed by reference. |
@@ -39,7 +39,7 @@ for (new i = 0; i <= 12; i++)
 Another example:
 
 ```c
-new 
+new
     weaponid,
     ammo;
 

@@ -16,7 +16,7 @@ This function is deprecated. Use [GetPlayerDialogID](GetPlayerDialogID).
 Get the ID of the dialog currently show to the player.
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Return Values

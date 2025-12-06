@@ -33,7 +33,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawUseBox(playerid, gTextDraw[playerid], true);
     PlayerTextDrawBoxColor(playerid, gTextDraw[playerid], 0x000000FF);
     PlayerTextDrawTextSize(playerid, gTextDraw[playerid], 40.0, 40.0);
-    
+
     PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 411); // Show an Infernus (model 411)
     //PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 0); // Display model 0 (CJ Skin)
     //PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 18646); // Display model 18646 (police light object)

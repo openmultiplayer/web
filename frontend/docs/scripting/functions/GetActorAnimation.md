@@ -12,7 +12,7 @@ tags: ["actor"]
 Get the animation the actor is currently performing.
 
 | Name               | Description                                                                |
-|--------------------|----------------------------------------------------------------------------|
+| ------------------ | -------------------------------------------------------------------------- |
 | actorid            | The ID of the actor to get the animation of.                               |
 | animationLibrary[] | An array into which to store the animationLibrary in, passed by reference. |
 | librarySize        | The size of the animationLibrary array.                                    |
@@ -47,7 +47,7 @@ public OnGameModeInit()
         bool:lockY,
         bool:freeze,
         time;
-    
+
     GetActorAnimation(gMyActor, animationLibrary, sizeof animationLibrary, animationName, sizeof animationName, delta, loop, lockX, lockY, freeze, time);
     return 1;
 }

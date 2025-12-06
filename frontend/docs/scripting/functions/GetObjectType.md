@@ -12,7 +12,7 @@ tags: ["object"]
 Get the type of an object. (global or player)
 
 | Name     | Description                              |
-|----------|------------------------------------------|
+| -------- | ---------------------------------------- |
 | playerid | The ID of the player.                    |
 | objectid | The ID of the object to get the type of. |
 

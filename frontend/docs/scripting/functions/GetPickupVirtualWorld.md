@@ -12,7 +12,7 @@ tags: ["pickup"]
 Gets the virtual world ID of a pickup.
 
 | Name     | Description                                          |
-|----------|------------------------------------------------------|
+| -------- | ---------------------------------------------------- |
 | pickupid | The ID of the pickup to get the virtual world ID of. |
 
 ## Returns

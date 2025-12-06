@@ -12,7 +12,7 @@ tags: ["pickup"]
 Gets the type of a pickup.
 
 | Name     | Description                              |
-|----------|------------------------------------------|
+| -------- | ---------------------------------------- |
 | pickupid | The ID of the pickup to get the type of. |
 
 ## Returns

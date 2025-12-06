@@ -9,15 +9,13 @@ tags: []
 
 Perform a memory check on the client.
 
-
-| Name            | Description                          |
-| --------------- | ------------------------------------ |
-| playerid        | The ID of the player to check.       |
-| type            | The type of check to perform. [See here](../resources/opcodes)|
-| memAddr         | The base address to check.           |
-| memOffset       | The offset from the base address.    |
-| byteCount       | The number of bytes to check.        |
-
+| Name      | Description                                                    |
+| --------- | -------------------------------------------------------------- |
+| playerid  | The ID of the player to check.                                 |
+| type      | The type of check to perform. [See here](../resources/opcodes) |
+| memAddr   | The base address to check.                                     |
+| memOffset | The offset from the base address.                              |
+| byteCount | The number of bytes to check.                                  |
 
 ## Returns
 
@@ -58,7 +56,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 **SA:MP Server**: This function only works when it is in a filterscript.
 
-**Open Multiplayer Server**: This functions normally inside a gamemode / filterscript. 
+**Open Multiplayer Server**: This functions normally inside a gamemode / filterscript.
 
 :::
 

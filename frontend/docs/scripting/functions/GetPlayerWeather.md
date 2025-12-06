@@ -11,8 +11,8 @@ tags: ["player"]
 
 Get a player's weather.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
+| Name     | Description                                 |
+| -------- | ------------------------------------------- |
 | playerid | The ID of the player to get the weather of. |
 
 ## Returns

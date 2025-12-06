@@ -12,7 +12,7 @@ tags: ["player"]
 Toggle player's widescreen.
 
 | Name      | Description                                      |
-|-----------|--------------------------------------------------|
+| --------- | ------------------------------------------------ |
 | playerid  | The ID of the player to toggle the widescreen.   |
 | bool:wide | **true** for turn on and **false** for turn off. |
 
