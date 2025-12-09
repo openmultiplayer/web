@@ -5,7 +5,7 @@ sidebar_label: Veelvoorkomende server issues
 
 ## Server crasht direct bij starten
 
-Meestal is het een fout in je `server.cfg` of ontbreekt je gamemode. Check het bestand `server_log.txt` – de reden staat doorgaans onderaan. Zo niet, kijk in `crashinfo.txt`. Een betere manier om crash-oorzaken te vinden is de Crash Detect-plugin van Zeex/0x5A656578 ([link](https://github.com/Zeex/samp-plugin-crashdetect)), die extra info geeft (regelnummers, functienamen, parameterwaarden, etc.). Compileer het script in debug mode (flag `-d3`) zodat de compiler extra info in het `.amx`-outputbestand stopt.
+Meestal is het een fout in je `server.cfg` of ontbreekt je gamemode. Check het bestand `server_log.txt` – de reden staat doorgaans onderaan. Zo niet, kijk in `crashinfo.txt`. Een betere manier om crash-oorzaken te vinden is de Crash Detect-plugin van Zeex/0x5A656578 ([link](https://github.com/AmyrAhmady/samp-plugin-crashdetect)), die extra info geeft (regelnummers, functienamen, parameterwaarden, etc.). Compileer het script in debug mode (flag `-d3`) zodat de compiler extra info in het `.amx`-outputbestand stopt.
 
 ## Server werkt niet – firewall is uitgeschakeld
 
