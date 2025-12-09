@@ -24,7 +24,7 @@ description: فهرستی منظم از ابزارها، کتابخانه‌ها
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - تعمیرات بسیار بهینه شده برای تعداد زیادی از باگ‌های سرور SA:MP. کاملاً آماده استفاده.
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - قدیمی‌ترین، بزرگ‌ترین، بیشترین تست شده و بهترین پشتیبانی شده کتابخانه برای SA:MP/pawn، ارائه تعداد زیادی از ویژگی‌های جدید بازی و زبان.
 - **[foreach](https://github.com/Open-GTO/foreach)** - include مستقل foreach (نسخه غیر y_iterate).
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - دسترسی سطح پایین به خود اسکریپت pawn.
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - دسترسی سطح پایین به خود اسکریپت pawn.
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - مرتب کردن آرایه‌های چندبعدی در Pawn. به جای کپی کردن داده‌ها، اشاره‌گرهای داخلی آرایه را تغییر می‌دهد.
 - **[indirection](https://github.com/Y-Less/indirection)** - سیستمی برای ارسال اشاره‌گرها و فراخوانی غیرمستقیم توابع، با متدهای انتزاعی برای سفارشی کردن فراخوانی‌ها.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - تجزیه و سفارشی کردن کد pawn در زمان کامپایل.
@@ -69,9 +69,9 @@ description: فهرستی منظم از ابزارها، کتابخانه‌ها
 
 ## پلاگین‌ها
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - وقتی کدتان پایدار شد، از این برای سرعت‌بخشی قابل توجه استفاده کنید.
-- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect)** - ابزار توسعه برای یافتن باگ‌ها در هنگام تست.
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - پلاگین profiler عملکرد برای سرور SA-MP.
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - وقتی کدتان پایدار شد، از این برای سرعت‌بخشی قابل توجه استفاده کنید.
+- **[CrashDetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - ابزار توسعه برای یافتن باگ‌ها در هنگام تست.
+- **[Profiler](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - پلاگین profiler عملکرد برای سرور SA-MP.
 - **[sscanf](https://github.com/Y-Less/sscanf)** - تبدیل رشته‌ها به مقادیر متعدد، اعداد صحیح، اعداد اعشاری، بازیکنان، و غیره.
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - سرور خود را به سرور MySQL متصل کنید.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - محدودیت‌های زیادی از SA:MP مثل objects و pickups را دور بزنید.
@@ -129,8 +129,8 @@ description: فهرستی منظم از ابزارها، کتابخانه‌ها
 
 حالا می‌توانید اسکریپت‌های خود را در زبان‌هایی غیر از pawn بدون نیاز به پلاگین با open.mp بنویسید. [این پست بلاگ](https://www.open.mp/blog/release-candidate-1) را ببینید
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - این حداقل چیزی است که برای توسعه پلاگین‌ها نیاز دارید.
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - پشتیبانی زبان C/C++ برای نوشتن گیم مود برای SA:MP
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - این حداقل چیزی است که برای توسعه پلاگین‌ها نیاز دارید.
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - پشتیبانی زبان C/C++ برای نوشتن گیم مود برای SA:MP
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - پشتیبانی زبان C# برای نوشتن گیم مود برای SA:MP
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - پشتیبانی زبان C# برای نوشتن پلاگین برای SA:MP
 - **[sampgo](https://github.com/sampgo/sampgo)** - پشتیبانی زبان Go برای نوشتن گیم مود/پلاگین برای SA:MP

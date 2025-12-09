@@ -36,13 +36,20 @@ func Build() fx.Option {
 				}),
 			)
 
-			launcherInfo := map[string]string{
-				"version":           cfg.LauncherVersion,
-				"download":          "https://github.com/openmultiplayer/launcher/releases/latest",
-				"ompPluginChecksum": "6e1ec45fe13e4cf622740577ac625f2a",
-				"ompPluginDownload": "https://assets.open.mp/omp-client.dll",
+			launcherInfo := map[string]any{
+				"version":           cfg.LauncherVersion,                                           // Deprecated, keeping it for backward compatibility
+				"download":          "https://github.com/openmultiplayer/launcher/releases/latest", // Deprecated, keeping it for backward compatibility
+				"ompPluginChecksum": "6e1ec45fe13e4cf622740577ac625f2a",                            // Deprecated, keeping it for backward compatibility
+				"ompPluginDownload": "https://assets.open.mp/omp-client.dll",                       // Deprecated, keeping it for backward compatibility
 				"changelog": `|- Build 1 - 2023/10/08
-Release beta version`,
+Release beta version`, // Deprecated, keeping it for backward compatibility
+				"versions": map[string]any{
+					"5": map[string]string{ // Version 5 doesn't actually use information from his object, just keeping it for future reference
+						"download":          "https://github.com/openmultiplayer/launcher/releases/latest",
+						"ompPluginChecksum": "6e1ec45fe13e4cf622740577ac625f2a",
+						"ompPluginDownload": "https://assets.open.mp/omp-client.dll",
+					},
+				},
 			}
 
 			rtr.Get("/", func(w http.ResponseWriter, rq *http.Request) {
