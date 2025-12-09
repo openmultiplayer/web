@@ -23,7 +23,7 @@ description: Liste exhaustive d'outils, de librairies et de plugins SA:MP néces
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - Corrections extrêmement optimisées pour un grand nombre de bugs du serveur SA:MP. Brancher et utiliser.
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - La bibliothèque la plus ancienne, la plus grande, la plus testée et la mieux prise en charge pour SA:MP/pawn, fournissant un énorme nombre de nouvelles fonctionnalités de jeu et de langue.
 - **[foreach](https://github.com/Open-GTO/foreach)** - foreach standalone include (version non y_iterate).
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - Accès de bas niveau au script de pion lui-même.
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - Accès de bas niveau au script de pion lui-même.
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - Trier des tableaux multidimensionnels dans Pawn. Modifie les pointeurs internes du tableau au lieu de copier autour des données.
 - **[indirection](https://github.com/Y-Less/indirection)** - Système pour passer des pointeurs et appeler des fonctions indirectement, avec des méthodes abstraites pour personnaliser les appels.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - Analysez et personnalisez le code de pion au moment de la compilation.
@@ -65,9 +65,9 @@ description: Liste exhaustive d'outils, de librairies et de plugins SA:MP néces
 
 ## Plugins
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - Une fois que votre code est stable, utilisez ceci pour l'accélérer de manière significative.
-- **[CrashDetect](https://github.com/Y-Less/samp-plugin-crashdetect)** - Outil de développement pour trouver des bugs lors des tests.
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - Plugin de profileur de performances pour le serveur SA-MP.
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - Une fois que votre code est stable, utilisez ceci pour l'accélérer de manière significative.
+- **[CrashDetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - Outil de développement pour trouver des bugs lors des tests.
+- **[Profiler](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - Plugin de profileur de performances pour le serveur SA-MP.
 - **[sscanf](https://github.com/Y-Less/sscanf)** - Convertir des chaînes en plusieurs valeurs, entiers, flottants, joueurs, etc.
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Connectez votre serveur à un serveur MySQL.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Contourne de nombreuses limites SA:MP, comme les objets et les micros.
@@ -119,8 +119,8 @@ description: Liste exhaustive d'outils, de librairies et de plugins SA:MP néces
 
 ## GDK/SDK
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - C'est le strict minimum dont vous avez besoin pour développer des plugins.
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - Prise en charge du langage C/C++ pour écrire un mode de jeu pour SA:MP
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - C'est le strict minimum dont vous avez besoin pour développer des plugins.
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - Prise en charge du langage C/C++ pour écrire un mode de jeu pour SA:MP
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - Prise en charge du langage C# pour écrire un mode de jeu pour SA:MP
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - Prise en charge du langage C# pour écrire un plugin pour SA:MP
 - **[sampgo](https://github.com/sampgo/sampgo)** - Prise en charge de la langue Go pour écrire un mode de jeu/des plugins pour SA:MP

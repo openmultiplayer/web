@@ -5,7 +5,7 @@ sidebar_label: Yaygın Sunucu Sorunları
 
 ## Sunucunun hemen çökmesi
 
-En yaygın olarak, server.cfg dosyanızda bir hata veya oyun modunuzun eksik olmasından kaynaklanıyor olabilir. server_log.txt dosyasını kontrol edin, sunucunun çökmesine sebep olan sorun genellikle en altta yazar. Eğer bulamazsanız, crashinfo.txt dosyasını kontrol edin. Çökmeye neyin sebep olduğunu bulmak için daha iyi bir bir yöntem olan, Zeex/0x5A656578 tarafından geliştirilen Crash Detect eklentisini kullanmaktır ([link için tıklayın](https://github.com/Y-Less/samp-plugin-crashdetect)). Bu eklenti, satır numaraları, fonksiyon adları, parametre değerleri gibi daha fazla bilgi sağlayacaktır. Eğer script debug modunda derlenmişse (-d3 flag), derleyici tüm bu bilgileri çıktı olarak .amx dosyasına ekleyecektir.
+En yaygın olarak, server.cfg dosyanızda bir hata veya oyun modunuzun eksik olmasından kaynaklanıyor olabilir. server_log.txt dosyasını kontrol edin, sunucunun çökmesine sebep olan sorun genellikle en altta yazar. Eğer bulamazsanız, crashinfo.txt dosyasını kontrol edin. Çökmeye neyin sebep olduğunu bulmak için daha iyi bir bir yöntem olan, Zeex/0x5A656578 tarafından geliştirilen Crash Detect eklentisini kullanmaktır ([link için tıklayın](https://github.com/AmyrAhmady/samp-plugin-crashdetect)). Bu eklenti, satır numaraları, fonksiyon adları, parametre değerleri gibi daha fazla bilgi sağlayacaktır. Eğer script debug modunda derlenmişse (-d3 flag), derleyici tüm bu bilgileri çıktı olarak .amx dosyasına ekleyecektir.
 
 ## Sunucu çalışmıyor - güvenlik duvarı devre dışı
 

@@ -5,7 +5,7 @@ sidebar_label: Probleme comune
 
 ## Serverul se blochează instantaneu la pornire
 
-Cel mai frecvent este o eroare în fișierul server.cfg sau modul dvs. de joc lipsește. Verificați fișierul server_log.txt și motivul ar trebui să fie situat în partea de jos. Dacă nu, verificați fișierul crashinfo.txt. Soluția mai bună pentru a afla ce cauzează prăbușirea este folosirea pluginului Crash detect de Zeex/0x5A656578 [click pentru link](https://github.com/Y-Less/samp-plugin-crashdetect/releases) care va oferi mai multe informații, cum ar fi numerele de linie, numele funcțiilor, valorile parametrilor etc. Dacă scriptul este compilat în modul de depanare (-d3 flag) pentru a face compilatorul pune informații suplimentare despre toate aceste lucruri în ieșirea .amx.
+Cel mai frecvent este o eroare în fișierul server.cfg sau modul dvs. de joc lipsește. Verificați fișierul server_log.txt și motivul ar trebui să fie situat în partea de jos. Dacă nu, verificați fișierul crashinfo.txt. Soluția mai bună pentru a afla ce cauzează prăbușirea este folosirea pluginului Crash detect de Zeex/0x5A656578 [click pentru link](https://github.com/AmyrAhmady/samp-plugin-crashdetect) care va oferi mai multe informații, cum ar fi numerele de linie, numele funcțiilor, valorile parametrilor etc. Dacă scriptul este compilat în modul de depanare (-d3 flag) pentru a face compilatorul pune informații suplimentare despre toate aceste lucruri în ieșirea .amx.
 
 ## Serverul nu funcționează - firewall-ul este dezactivat
 

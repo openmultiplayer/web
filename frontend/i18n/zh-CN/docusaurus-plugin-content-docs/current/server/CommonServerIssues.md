@@ -5,7 +5,7 @@ sidebar_label: 常见服务器问题
 
 ## 服务器启动后立即崩溃
 
-最常见的原因是 server.cfg 文件存在错误或游戏模式文件缺失。请检查 server_log.txt 文件，崩溃原因通常位于文件末尾。若未找到，请检查 crashinfo.txt 文件。更有效的排查方式是使用 Zeex/0x5A656578 开发的 Crash detect 插件（[点击获取链接](https://github.com/Y-Less/samp-plugin-crashdetect)），该插件可提供行号、函数名、参数值等详细信息。建议在调试模式（-d3 参数）下编译脚本，使编译器在输出的.amx 文件中包含额外调试信息。
+最常见的原因是 server.cfg 文件存在错误或游戏模式文件缺失。请检查 server_log.txt 文件，崩溃原因通常位于文件末尾。若未找到，请检查 crashinfo.txt 文件。更有效的排查方式是使用 Zeex/0x5A656578 开发的 Crash detect 插件（[点击获取链接](https://github.com/AmyrAhmady/samp-plugin-crashdetect)），该插件可提供行号、函数名、参数值等详细信息。建议在调试模式（-d3 参数）下编译脚本，使编译器在输出的.amx 文件中包含额外调试信息。
 
 ## 服务器无法运行 - 防火墙已关闭
 

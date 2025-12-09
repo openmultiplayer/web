@@ -82,9 +82,7 @@ Aqui estão os downloads necessários para esta seção:
 
 **Visual C++ 2010 Express:** [Download grátis](https://visualstudio.microsoft.com/vs/express/)
 
-**Plugin SDK (Versão Simples):** [Download](https://github.com/Zeex/samp-plugin-sdk)
-
-**SDK Atualizado:** [Download](https://github.com/maddinat0r/samp-plugin-sdk)
+**Plugin SDK (Atualizado):** [Download](https://github.com/maddinat0r/samp-plugin-sdk)
 
 - A primeira coisa que queremos fazer é criar um novo projeto. Selecione *File -> New -> Project* para fazer isso.
 
