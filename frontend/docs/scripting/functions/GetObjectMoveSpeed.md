@@ -12,7 +12,7 @@ tags: ["object"]
 Get the move speed of an object.
 
 | Name     | Description                                    |
-|----------|------------------------------------------------|
+| -------- | ---------------------------------------------- |
 | objectid | The ID of the object to get the move speed of. |
 
 ## Returns

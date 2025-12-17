@@ -35,9 +35,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
                string[64];
 
           vehicleid = GetPlayerVehicleID(playerid);
-          
+
           GetVehicleZAngle(vehicleid, rotZ);
-          
+
           format(string, sizeof(string), "The current vehicle rotation is: %.0f", rotZ);
           SendClientMessage(playerid, 0xFFFFFFFF, string);
           return 1;

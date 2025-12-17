@@ -14,7 +14,7 @@ Gets the [landing gear state](../resources/landinggearstate) of the current play
 ## Parameters
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Examples

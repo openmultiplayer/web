@@ -20,7 +20,7 @@ Sets the vehicle to dead.
 ## Parameters
 
 | Name      | Description                          |
-|-----------|--------------------------------------|
+| --------- | ------------------------------------ |
 | vehicleid | The ID of the vehicle.               |
 | bool:dead | **true**: dead - **false**: not dead |
 

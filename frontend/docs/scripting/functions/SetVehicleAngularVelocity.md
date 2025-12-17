@@ -15,12 +15,12 @@ This function is in _world_ space not _local_ space. If you want to make local s
 
 Sets the angular X, Y and Z velocity of a vehicle
 
-| Name      | Description                                         |
-| --------- | --------------------------------------------------- |
-| vehicleid | The ID of the vehicle to set the velocity of.       |
-| Float:x   | The amount of velocity in the angular X direction.  |
-| Float:y   | The amount of velocity in the angular Y direction.  |
-| Float:z   | The amount of velocity in the angular Z direction.  |
+| Name      | Description                                        |
+| --------- | -------------------------------------------------- |
+| vehicleid | The ID of the vehicle to set the velocity of.      |
+| Float:x   | The amount of velocity in the angular X direction. |
+| Float:y   | The amount of velocity in the angular Y direction. |
+| Float:z   | The amount of velocity in the angular Z direction. |
 
 ## Returns
 

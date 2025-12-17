@@ -12,7 +12,7 @@ tags: ["player"]
 Gets the ID of the player or vehicle the player is spectating (watching).
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Returns

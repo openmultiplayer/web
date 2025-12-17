@@ -12,7 +12,7 @@ tags: ["player", "object", "playerobject"]
 Get the material text data from an index of the player-object.
 
 | Name                                      | Description                                                             |
-|-------------------------------------------|-------------------------------------------------------------------------|
+| ----------------------------------------- | ----------------------------------------------------------------------- |
 | playerid                                  | The ID of the player.                                                   |
 | objectid                                  | The ID of the player-object.                                            |
 | materialIndex                             | The material index on the object. (0 to 15)                             |
@@ -39,7 +39,7 @@ Get the material text data from an index of the player-object.
 new playerobjectid = CreatePlayerObject(playerid, 19174, 986.42767, -983.14850, 40.95220,   0.00000, 0.00000, 186.00000);
 SetPlayerObjectMaterialText(playerid, playerobjectid, "OPEN.MP", 0, OBJECT_MATERIAL_SIZE_256x128, "Arial", 38, true, 0xFF0000FF, 0x00000000, OBJECT_MATERIAL_TEXT_ALIGN_LEFT);
 
-new 
+new
     text[16],
     OBJECT_MATERIAL_SIZE:materialSize,
     fontFace[16],

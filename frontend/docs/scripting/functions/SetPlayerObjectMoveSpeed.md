@@ -12,7 +12,7 @@ tags: ["player", "object", "playerobject"]
 Set the move speed of a player-object.
 
 | Name        | Description                                               |
-|-------------|-----------------------------------------------------------|
+| ----------- | --------------------------------------------------------- |
 | playerid    | The ID of the player.                                     |
 | objectid    | The ID of the player-object to set the move speed of.     |
 | Float:speed | The speed at which to move the object (units per second). |

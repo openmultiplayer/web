@@ -30,7 +30,7 @@ public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
     TextDrawSetProportional(gMyTextdraw, true);
-    
+
     if (TextDrawIsProportional(gMyTextdraw))
     {
         // Textdraw is proportional

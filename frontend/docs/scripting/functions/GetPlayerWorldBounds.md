@@ -12,7 +12,7 @@ tags: ["player"]
 Get a player's world boundaries.
 
 | Name        | Description                                                                  |
-|-------------|------------------------------------------------------------------------------|
+| ----------- | ---------------------------------------------------------------------------- |
 | playerid    | The ID of the player.                                                        |
 | &Float:maxX | A float variable in which to store the maxX coordinate, passed by reference. |
 | &Float:minX | A float variable in which to store the minX coordinate, passed by reference. |

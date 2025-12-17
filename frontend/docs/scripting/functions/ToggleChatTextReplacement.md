@@ -13,9 +13,9 @@ Toggles the chat input filter.
 
 Disable it to use of chars like % in the chat.
 
-| Name          | Description                                                           |
-| -----------   | --------------------------------------------------------------------- |
-| bool:enable   | 'true' to enable or 'false' to disable the chat input filter.         |
+| Name        | Description                                                   |
+| ----------- | ------------------------------------------------------------- |
+| bool:enable | 'true' to enable or 'false' to disable the chat input filter. |
 
 ## Returns
 
@@ -24,7 +24,7 @@ This function does not return any specific value.
 ## Examples
 
 ```c
-public OnGameModeInit() 
+public OnGameModeInit()
 {
     ToggleChatTextReplacement(false);
     return 1;

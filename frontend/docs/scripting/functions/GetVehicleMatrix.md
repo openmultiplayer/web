@@ -14,7 +14,7 @@ Gets the actual rotation matrix of the vehicle.
 ## Parameters
 
 | Name          | Description                                                                    |
-|---------------|--------------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------------ |
 | vehicleid     | The ID of the vehicle.                                                         |
 | &Float:rightX | A float variable in which to store the rightX coordinate, passed by reference. |
 | &Float:rightY | A float variable in which to store the rightY coordinate, passed by reference. |
@@ -29,7 +29,7 @@ Gets the actual rotation matrix of the vehicle.
 ## Examples
 
 ```c
-new 
+new
     Float:rightX,
     Float:rightY,
     Float:rightZ,

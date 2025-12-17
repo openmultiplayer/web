@@ -12,7 +12,7 @@ tags: ["object"]
 Get the sync rotation of an object.
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | objectid | The ID of the object. |
 
 ## Returns

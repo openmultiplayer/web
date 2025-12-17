@@ -20,7 +20,7 @@ Hides a vehicle from the game.
 ## Parametes
 
 | Name      | Description                    |
-|-----------|--------------------------------|
+| --------- | ------------------------------ |
 | vehicleid | The ID of the vehicle to hide. |
 
 ## Examples

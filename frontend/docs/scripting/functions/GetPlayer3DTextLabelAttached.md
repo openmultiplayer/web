@@ -15,12 +15,12 @@ This function is deprecated. Please see [GetPlayer3DTextLabelAttachedData](GetPl
 
 Gets the player's 3D text label attached data.
 
-| Name      | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| playerid | The ID of the player.  |
-| PlayerText3D:textid | The ID of the player's 3D text label to get the attached data of. |
-| &parentPlayerid | A variable into which to store the parentPlayerid, passed by reference. |
-| &parentVehicleid | A variable into which to store the parentVehicleid, passed by reference. |
+| Name                | Description                                                              |
+| ------------------- | ------------------------------------------------------------------------ |
+| playerid            | The ID of the player.                                                    |
+| PlayerText3D:textid | The ID of the player's 3D text label to get the attached data of.        |
+| &parentPlayerid     | A variable into which to store the parentPlayerid, passed by reference.  |
+| &parentVehicleid    | A variable into which to store the parentVehicleid, passed by reference. |
 
 ## Examples
 

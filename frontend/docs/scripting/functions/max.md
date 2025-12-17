@@ -35,7 +35,7 @@ public OnGameModeInit()
 
     printf("max(%d, %d) = %d", a, b, result);
     // Since b is bigger than a so result will be 10.
-    
+
     return 1;
 }
 ```

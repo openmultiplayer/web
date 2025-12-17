@@ -12,7 +12,7 @@ tags: ["pickup"]
 Gets the coordinates of a pickup.
 
 | Name     | Description                                                               |
-|----------|---------------------------------------------------------------------------|
+| -------- | ------------------------------------------------------------------------- |
 | pickupid | The ID of the pickup to get the position of.                              |
 | &Float:x | A float variable in which to store the x coordinate, passed by reference. |
 | &Float:y | A float variable in which to store the y coordinate, passed by reference. |
@@ -33,7 +33,7 @@ public OnGameModeInit()
 {
     g_Pickup = CreatePickup(1239, 1, 1686.6160, 1455.4277, 10.7705, -1);
 
-    new 
+    new
         Float:x,
         Float:y,
         Float:z;

@@ -28,7 +28,7 @@ public OnPlayerConnect(playerid)
 {
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server");
     PlayerTextDrawTextSize(playerid, welcomeText[playerid], 30.0, 10.0);
-    
+
     // Set 'welcomeText[playerid]' selectable
     PlayerTextDrawSetSelectable(playerid, welcomeText[playerid], true);
 

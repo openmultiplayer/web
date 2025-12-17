@@ -12,7 +12,7 @@ tags: ["player"]
 Returns the player's spectate type (vehicle or player).
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Returns

@@ -29,7 +29,8 @@ Checks if a menu ID is valid.
 - [SetMenuColumnHeader](SetMenuColumnHeader): Set the header for one of the columns in a menu.
 - [IsMenuDisabled](IsMenuDisabled): Check if a menu is disabled.
 - [IsMenuRowDisabled](IsMenuRowDisabled): Check if a menu row is disabled.
-- 
+-
+
 ## Related Callbacks
 
 - [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Called when a player selected a row in a menu.

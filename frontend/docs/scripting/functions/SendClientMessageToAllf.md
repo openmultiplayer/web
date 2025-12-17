@@ -19,11 +19,11 @@ This function was deprecated.
 
 Displays a formatted message in chat to all players. This is a multi-player equivalent of SendClientMessage.
 
-| Name            | Description                                       |
-| --------------- | ------------------------------------------------- |
-| color           | The color of the message (0xRRGGBBAA Hex format). |
-| const message[] | The message to show (max 144 characters).         |
-| \{Float, _\}:...   | Indefinite number of arguments of any tag         |
+| Name              | Description                                       |
+| ----------------- | ------------------------------------------------- |
+| color             | The color of the message (0xRRGGBBAA Hex format). |
+| const message[]   | The message to show (max 144 characters).         |
+| \{Float, \_\}:... | Indefinite number of arguments of any tag         |
 
 ## Returns
 
