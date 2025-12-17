@@ -14,7 +14,7 @@ Gets the hydra reactor angle of the vehicle.
 ## Parameters
 
 | Name      | Description            |
-|-----------|------------------------|
+| --------- | ---------------------- |
 | vehicleid | The ID of the vehicle. |
 
 ## Examples

@@ -14,7 +14,7 @@ Get the respawn delay of a vehicle.
 ## Parameters
 
 | Name      | Description            |
-|-----------|------------------------|
+| --------- | ---------------------- |
 | vehicleid | The ID of the vehicle. |
 
 ## Examples

@@ -12,7 +12,7 @@ tags: ["object"]
 Get the attachment offset and rotation of an object.
 
 | Name             | Description                                                                       |
-|------------------|-----------------------------------------------------------------------------------|
+| ---------------- | --------------------------------------------------------------------------------- |
 | objectid         | The ID of the object to get the offset and rotation of.                           |
 | &Float:offsetX   | A float variable in which to store the offsetX coordinate, passed by reference.   |
 | &Float:offsetY   | A float variable in which to store the offsetY coordinate, passed by reference.   |
@@ -30,7 +30,7 @@ Get the attachment offset and rotation of an object.
 ## Examples
 
 ```c
-new 
+new
     Float:offsetX,
     Float:offsetY,
     Float:offsetZ,

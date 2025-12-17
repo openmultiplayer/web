@@ -81,9 +81,9 @@ You can use [GetPlayerVehicleSeat](GetPlayerVehicleSeat) in a loop to check if a
 
 :::warning
 
-* If the seat is invalid or already taken, the client will crash when they EXIT the vehicle.
-* Putting a player into a vehicle that is not streamed in can be unreliable. This is due to a potential client-side issue where the vehicle may not have fully loaded into memory yet.
-* This also applies when attempting to put a player into a vehicle that was just created.
+- If the seat is invalid or already taken, the client will crash when they EXIT the vehicle.
+- Putting a player into a vehicle that is not streamed in can be unreliable. This is due to a potential client-side issue where the vehicle may not have fully loaded into memory yet.
+- This also applies when attempting to put a player into a vehicle that was just created.
 
 :::
 

@@ -14,7 +14,7 @@ Checks if a timer is valid.
 ## Parameters
 
 | Name    | Description                   |
-|---------|-------------------------------|
+| ------- | ----------------------------- |
 | timerid | The ID of the timer to check. |
 
 ## Return Values

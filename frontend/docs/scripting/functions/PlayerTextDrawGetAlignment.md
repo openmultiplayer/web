@@ -29,7 +29,7 @@ public OnPlayerConnect(playerid)
 {
     gMyTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");
     PlayerTextDrawAlignment(playerid, gMyTextdraw[playerid], TEXT_DRAW_ALIGN_CENTER);
-    
+
     new TEXT_DRAW_ALIGN:align = PlayerTextDrawGetAlignment(playerid, gMyTextdraw[playerid]);
     // align = TEXT_DRAW_ALIGN_CENTER
     return 1;

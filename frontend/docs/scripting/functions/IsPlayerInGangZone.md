@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Check if the player in gangzone.
 
-| Name        | Description                                                 |
-| ----------- | ----------------------------------------------------------- |
-| playerid    | The ID of the player to check if he is in a gangzone.       |
-| zoneid      | The ID of the gangzone.                                     |
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
+| playerid | The ID of the player to check if he is in a gangzone. |
+| zoneid   | The ID of the gangzone.                               |
 
 ## Returns
 

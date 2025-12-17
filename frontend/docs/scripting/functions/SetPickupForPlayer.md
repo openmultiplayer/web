@@ -18,7 +18,7 @@ This function has not yet been implemented.
 Adjusts the pickup model, type, and position for a specific player.
 
 | Name     | Description                                         |
-|----------|-----------------------------------------------------|
+| -------- | --------------------------------------------------- |
 | playerid | The ID of the player.                               |
 | pickupid | The ID of the pickup.                               |
 | model    | The [model](../resources/pickupids) to set.         |

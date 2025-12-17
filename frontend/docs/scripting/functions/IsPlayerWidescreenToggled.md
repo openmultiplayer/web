@@ -12,7 +12,7 @@ tags: ["player"]
 Checks if a player widescreen is on or off.
 
 | Name     | Description                    |
-|----------|--------------------------------|
+| -------- | ------------------------------ |
 | playerid | The ID of the player to check. |
 
 ## Returns

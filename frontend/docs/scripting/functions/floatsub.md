@@ -11,10 +11,10 @@ tags: ["math", "floating-point"]
 
 Subtracts one float from another one. Note that this function has no real use, as one can simply use the standard operator (-) instead.
 
-| Name        | Description                                          |
-| ----------- | ---------------------------------------------------- |
-| Float:oper1 | First Float.                                         |
-| Float:oper2 | Second Float (gets subtracted from the first float)  |
+| Name        | Description                                         |
+| ----------- | --------------------------------------------------- |
+| Float:oper1 | First Float.                                        |
+| Float:oper2 | Second Float (gets subtracted from the first float) |
 
 ## Returns
 

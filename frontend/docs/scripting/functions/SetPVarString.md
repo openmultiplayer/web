@@ -25,10 +25,10 @@ This function does not return any specific values.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new 
-        hours, 
-        minutes, 
-        seconds, 
+    new
+        hours,
+        minutes,
+        seconds,
         string[46];
 
     gettime(hours, minutes, seconds); // get the time

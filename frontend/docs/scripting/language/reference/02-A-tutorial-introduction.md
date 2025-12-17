@@ -2786,7 +2786,7 @@ processors usually do. The pawn toolkit comes with an example XSLT file
 
 | name                          | info                                                                                                                                               |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<code> </code>`              | Preformatted source code in a monospaced font; although the “&”, “\<” and “>” must be typed as “&amp;”, “&lt;” and “&rt;” respectively.             |
+| `<code> </code>`              | Preformatted source code in a monospaced font; although the “&”, “\<” and “>” must be typed as “&amp;”, “&lt;” and “&rt;” respectively.            |
 | `<example> </example>`        | Text set under the sub-header “Example”.                                                                                                           |
 | `<param name="..."> </param>` | A parameter description, with the parameter name appearing inside the opening tag (the “name=” option) and the parameter description following it. |
 | `<paramref name="..." />`     | A reference to a parameter, with the parameter name appearing inside the opening tag (the “name=” option).                                         |

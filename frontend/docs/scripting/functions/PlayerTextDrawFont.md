@@ -43,10 +43,10 @@ public OnPlayerConnect(playerid)
 {
     // First, create the textdraw
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
-    
+
     // Set the font of player-textdraw 'welcomeText[playerid]' to 2.
     PlayerTextDrawFont(playerid, welcomeText[playerid], TEXT_DRAW_FONT_2);
-    
+
     // Show 'welcomeText[playerid]' to player
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
 

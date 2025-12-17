@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             Float:hitPosX, Float:hitPosY, Float:hitPosZ;
 
         GetPlayerLastShotVectors(playerid, originX, originY, originZ, hitPosX, hitPosY, hitPosZ);
-        
+
         format(string, sizeof(string), "Last Shot Information: Origin: %f, %f, %f. Hit position: %f, %f, %f", originX, originY, originZ, hitPosX, hitPosY, hitPosZ);
         SendClientMessage(playerid, -1, string);
         return 1;

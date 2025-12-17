@@ -10,7 +10,7 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 Creates a race checkpoint. When the player enters it, the OnPlayerEnterRaceCheckpoint callback is called.
 
 | Name          | Description                                                    |
-|---------------|----------------------------------------------------------------|
+| ------------- | -------------------------------------------------------------- |
 | playerid      | The ID of the player to set the checkpoint for                 |
 | CP_TYPE:type  | [Type of race checkpoint](../resources/race-checkpoint-types)  |
 | Float:centreX | X-Coordinate                                                   |

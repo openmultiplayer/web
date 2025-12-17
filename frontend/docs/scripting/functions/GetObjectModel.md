@@ -27,7 +27,7 @@ The model ID of the object.
 public OnGameModeInit()
 {
     new objectid = CreateObject(19609, 666.57239, 1750.79749, 4.95627,   0.00000, 0.00000, -156.00000);
-    
+
     new modelid = GetObjectModel(objectid);
     printf("Object model: %d", modelid); // Output: "Object model: 19609"
     return 1;
