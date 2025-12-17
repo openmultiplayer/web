@@ -5,7 +5,7 @@ description: Gets the seat an NPC is entering in a vehicle.
 tags: ["npc", "vehicle"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

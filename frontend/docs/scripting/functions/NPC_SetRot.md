@@ -5,7 +5,7 @@ description: Sets an NPC's rotation on all axes.
 tags: ["npc", "rotation", "angle"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

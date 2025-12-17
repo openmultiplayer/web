@@ -5,7 +5,7 @@ description: Checks if a path has any point within the specified range from give
 tags: ["npc", "path"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

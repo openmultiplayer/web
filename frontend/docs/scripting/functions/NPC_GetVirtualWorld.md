@@ -5,7 +5,7 @@ description: Gets the virtual world an NPC is in.
 tags: ["npc"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

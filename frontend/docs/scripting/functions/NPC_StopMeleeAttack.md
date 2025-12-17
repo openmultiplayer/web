@@ -5,7 +5,7 @@ description: Stops an NPC from performing melee attacks.
 tags: ["npc", "melee", "fighting"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

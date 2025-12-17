@@ -5,7 +5,7 @@ description: Sets the health of an NPC's vehicle.
 tags: ["npc", "vehicle", "health"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

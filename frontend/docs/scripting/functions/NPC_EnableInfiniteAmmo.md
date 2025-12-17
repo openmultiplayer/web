@@ -5,7 +5,7 @@ description: Enables or disables infinite ammo for an NPC.
 tags: ["npc", "weapon", "ammo"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

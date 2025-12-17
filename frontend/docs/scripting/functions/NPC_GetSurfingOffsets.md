@@ -5,7 +5,7 @@ description: Gets the surfing offset for an NPC.
 tags: ["npc", "surfing"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

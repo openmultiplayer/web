@@ -5,7 +5,7 @@ description: Gets all NPC IDs and stores them in an array.
 tags: ["npc"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

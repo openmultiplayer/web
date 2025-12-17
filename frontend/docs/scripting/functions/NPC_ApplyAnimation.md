@@ -5,7 +5,7 @@ description: Applies a specific animation to an NPC.
 tags: ["npc", "animation"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

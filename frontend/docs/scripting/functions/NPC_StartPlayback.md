@@ -5,7 +5,7 @@ description: Starts playing a recording file for an NPC.
 tags: ["npc", "recording", "playback"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

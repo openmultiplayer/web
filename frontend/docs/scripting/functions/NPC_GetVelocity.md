@@ -5,7 +5,7 @@ description: Gets the velocity of an NPC.
 tags: ["npc", "velocity", "movement"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

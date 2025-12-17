@@ -5,7 +5,7 @@ description: Gets the current path point index an NPC is moving towards.
 tags: ["npc", "path"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

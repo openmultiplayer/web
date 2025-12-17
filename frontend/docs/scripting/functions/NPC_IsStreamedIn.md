@@ -5,7 +5,7 @@ description: Checks if an NPC is streamed in for a specific player.
 tags: ["npc", "streaming"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

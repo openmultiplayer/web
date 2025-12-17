@@ -5,7 +5,7 @@ description: Makes an NPC move to a specific position.
 tags: ["npc", "movement"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

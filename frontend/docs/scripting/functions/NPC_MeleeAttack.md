@@ -5,7 +5,7 @@ description: Makes an NPC perform a melee attack.
 tags: ["npc", "combat", "melee"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

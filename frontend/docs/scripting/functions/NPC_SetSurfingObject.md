@@ -5,7 +5,7 @@ description: Sets the object an NPC is surfing on.
 tags: ["npc", "surfing"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

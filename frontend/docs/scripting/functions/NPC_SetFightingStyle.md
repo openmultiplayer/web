@@ -5,7 +5,7 @@ description: Sets an NPC's fighting style for melee combat.
 tags: ["npc", "combat", "fighting", "melee"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

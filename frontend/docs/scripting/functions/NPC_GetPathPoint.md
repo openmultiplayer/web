@@ -5,7 +5,7 @@ description: Gets the coordinates and stop range of a specific point in an NPC p
 tags: ["npc", "path"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

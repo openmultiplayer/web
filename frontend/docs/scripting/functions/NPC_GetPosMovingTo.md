@@ -5,7 +5,7 @@ description: Gets the position that the NPC is currently moving toward.
 tags: ["npc", "position", "movement"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

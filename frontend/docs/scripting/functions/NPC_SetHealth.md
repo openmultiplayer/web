@@ -5,7 +5,7 @@ description: Sets the health value of an NPC.
 tags: ["npc", "health"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

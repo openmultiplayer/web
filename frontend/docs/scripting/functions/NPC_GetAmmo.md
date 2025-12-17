@@ -5,7 +5,7 @@ description: Gets the ammunition amount for an NPC's current weapon.
 tags: ["npc", "weapon", "ammo"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

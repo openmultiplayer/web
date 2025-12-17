@@ -5,7 +5,7 @@ description: Gets the current weapon an NPC is holding.
 tags: ["npc", "weapon"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

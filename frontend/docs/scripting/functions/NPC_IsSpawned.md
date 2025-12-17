@@ -5,7 +5,7 @@ description: Checks if an NPC is spawned in the game world.
 tags: ["npc", "spawn"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

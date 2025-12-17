@@ -5,7 +5,7 @@ description: Gets the actual (default) reload time for an NPC's weapon.
 tags: ["npc", "weapon"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

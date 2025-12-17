@@ -5,7 +5,7 @@ description: This callback is called when an NPC's weapon state changes.
 tags: ["npc", "weapon"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

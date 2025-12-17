@@ -5,7 +5,7 @@ description: Puts an NPC into a vehicle at a specific seat.
 tags: ["npc", "vehicle"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

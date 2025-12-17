@@ -5,7 +5,7 @@ description: Gets the number of points in an NPC path.
 tags: ["npc", "path"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

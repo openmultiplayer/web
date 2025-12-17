@@ -5,7 +5,7 @@ description: Starts playback for an NPC using a pre-loaded recording ID with ext
 tags: ["npc", "playback", "recording"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

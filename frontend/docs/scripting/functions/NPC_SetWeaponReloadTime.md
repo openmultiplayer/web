@@ -5,7 +5,7 @@ description: Sets the reload time for an NPC's weapon.
 tags: ["npc", "weapon", "reload", "time"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

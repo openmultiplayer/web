@@ -5,7 +5,7 @@ description: Called when an NPC finishes moving to a specific point in a path.
 tags: ["npc", "path", "movement"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

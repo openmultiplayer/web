@@ -5,7 +5,7 @@ description: Sets the accuracy of a specific weapon for an NPC.
 tags: ["npc", "weapon", "accuracy"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

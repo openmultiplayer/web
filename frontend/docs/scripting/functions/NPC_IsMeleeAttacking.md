@@ -5,7 +5,7 @@ description: Checks if an NPC is performing a melee attack.
 tags: ["npc", "melee", "fighting"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

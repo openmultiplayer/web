@@ -5,7 +5,7 @@ description: Gets the ID of the player that an NPC is currently aiming at.
 tags: ["npc", "player", "aiming", "weapon"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

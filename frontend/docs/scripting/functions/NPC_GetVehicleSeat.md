@@ -5,7 +5,7 @@ description: Gets the seat ID of an NPC in a vehicle.
 tags: ["npc", "vehicle"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

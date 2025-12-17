@@ -5,7 +5,7 @@ description: Sets the speed of an NPC's train vehicle.
 tags: ["npc", "vehicle", "train", "speed"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

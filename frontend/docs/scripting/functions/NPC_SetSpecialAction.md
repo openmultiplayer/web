@@ -5,7 +5,7 @@ description: Sets an NPC's special action state.
 tags: ["npc", "action", "special"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

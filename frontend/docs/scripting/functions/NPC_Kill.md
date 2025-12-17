@@ -5,7 +5,7 @@ description: Kills an NPC with a specific weapon/reason.
 tags: ["npc", "death", "kill"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

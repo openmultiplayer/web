@@ -5,7 +5,7 @@ description: Makes an NPC fire a weapon shot.
 tags: ["npc", "weapon", "shoot", "combat"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

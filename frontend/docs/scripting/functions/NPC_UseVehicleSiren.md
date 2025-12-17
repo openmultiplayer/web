@@ -5,7 +5,7 @@ description: Makes an NPC use or stop using a vehicle siren.
 tags: ["npc", "vehicle", "siren"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

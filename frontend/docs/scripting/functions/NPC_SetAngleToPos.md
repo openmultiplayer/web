@@ -5,7 +5,7 @@ description: Rotates an NPC so it faces a specific world position.
 tags: ["npc", "angle", "position"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

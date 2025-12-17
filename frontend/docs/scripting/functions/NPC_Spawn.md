@@ -5,7 +5,7 @@ description: Spawns an NPC into the game world.
 tags: ["npc"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

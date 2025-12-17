@@ -5,7 +5,7 @@ description: Changes the node an NPC is currently playing.
 tags: ["npc", "node", "navigation"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

@@ -5,7 +5,7 @@ description: Rotates an NPC to face a specific player.
 tags: ["npc", "angle", "player"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

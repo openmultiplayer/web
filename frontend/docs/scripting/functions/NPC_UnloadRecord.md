@@ -5,7 +5,7 @@ description: Unloads a specific NPC recording from memory.
 tags: ["npc", "recording"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

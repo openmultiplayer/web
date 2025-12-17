@@ -5,7 +5,7 @@ description: Checks if an NPC's node playing is currently paused.
 tags: ["npc", "node"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

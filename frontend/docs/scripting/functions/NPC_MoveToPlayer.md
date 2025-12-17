@@ -5,7 +5,7 @@ description: Makes an NPC move toward and follow a player.
 tags: ["npc", "movement", "player", "follow"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

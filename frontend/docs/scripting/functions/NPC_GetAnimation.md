@@ -5,7 +5,7 @@ description: Gets the current animation data of an NPC.
 tags: ["npc", "animation"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

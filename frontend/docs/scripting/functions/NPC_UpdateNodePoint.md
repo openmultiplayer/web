@@ -5,7 +5,7 @@ description: Updates an NPC to a specific point in the currently playing node.
 tags: ["npc", "node"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

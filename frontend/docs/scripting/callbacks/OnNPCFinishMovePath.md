@@ -5,7 +5,7 @@ description: This callback is called when an NPC finishes moving along a predefi
 tags: ["npc", "movement", "path"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

@@ -5,7 +5,7 @@ description: Sets the amount of ammo in an NPC's weapon clip.
 tags: ["npc", "weapon", "ammo"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

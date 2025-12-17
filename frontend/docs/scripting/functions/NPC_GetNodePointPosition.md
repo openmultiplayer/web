@@ -5,7 +5,7 @@ description: Gets the position of the current point in an NPC node.
 tags: ["npc", "node", "navigation", "position"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

@@ -5,7 +5,7 @@ description: Checks if a path ID is valid and exists.
 tags: ["npc", "path", "validation"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

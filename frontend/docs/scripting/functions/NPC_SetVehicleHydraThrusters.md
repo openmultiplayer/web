@@ -5,7 +5,7 @@ description: Sets the Hydra thruster direction for an NPC's vehicle.
 tags: ["npc", "vehicle", "hydra", "aircraft"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

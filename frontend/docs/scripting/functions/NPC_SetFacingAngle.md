@@ -5,7 +5,7 @@ description: Sets an NPC's facing angle.
 tags: ["npc", "angle", "rotation"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 

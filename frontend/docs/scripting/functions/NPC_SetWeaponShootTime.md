@@ -5,7 +5,7 @@ description: Sets the shooting interval for an NPC's weapon.
 tags: ["npc", "weapon", "shooting", "time"]
 ---
 
-<VersionWarn version='omp v1.1.0.changemelater' />
+<VersionWarn version='omp v1.5.8.3079' />
 
 ## Description
 
