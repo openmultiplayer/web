@@ -15,7 +15,7 @@ tags: ["玩家"]
 
 ## 返回值
 
-本函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp("/stoprecording", cmdtext))
     {
         StopRecordingPlayerData(playerid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "您的录制文件已保存至scriptfiles目录！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "你的录制文件已保存至scriptfiles目录！");
         return 1;
     }
 }

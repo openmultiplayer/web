@@ -1,22 +1,22 @@
 ---
 title: OnPlayerPickUpPickup
 sidebar_label: OnPlayerPickUpPickup
-description: 当玩家拾取通过CreatePickup创建的拾取物时触发该回调函数。
+description: 当玩家拾取通过CreatePickup创建的拾取物时触发此回调函数。
 tags: ["玩家"]
 ---
 
 ## 描述
 
-当玩家拾取通过[CreatePickup](../functions/CreatePickup)创建的拾取物时触发该回调函数。
+当玩家拾取通过[CreatePickup](../functions/CreatePickup)创建的拾取物时触发此回调函数。
 
-| 参数名   | 说明                                                        |
+| 参数     | 说明                                                        |
 | -------- | ----------------------------------------------------------- |
 | playerid | 拾取拾取物的玩家ID                                          |
 | pickupid | 拾取物ID（由[CreatePickup](../functions/CreatePickup)返回） |
 
 ## 返回值
 
-该回调始终在游戏模式中优先触发
+此回调始终在游戏模式中优先触发
 
 ## 示例
 
@@ -58,14 +58,14 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 
 ## 相关回调
 
-以下回调函数可能与本回调相关：
+以下回调函数可能与此回调相关：
 
 - [OnPickupStreamIn](OnPickupStreamIn): 当拾取物进入玩家可视范围时触发
 - [OnPickupStreamOut](OnPickupStreamOut): 当拾取物离开玩家可视范围时触发
 
 ## 相关函数
 
-以下函数可能与本回调函数相关：
+以下函数可能与此回调函数相关：
 
 - [CreatePickup](../functions/CreatePickup): 创建常规拾取物
 - [DestroyPickup](../functions/DestroyPickup): 销毁拾取物

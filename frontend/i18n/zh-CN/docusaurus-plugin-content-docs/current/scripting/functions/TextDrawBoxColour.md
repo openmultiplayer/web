@@ -11,14 +11,14 @@ tags: ["文本绘图"]
 
 调整文本绘图的方框颜色（仅在 TextDrawUseBox 的 'enableBox' 参数设置为 'true' 时生效）。
 
-| 参数名      | 说明                                                                                                                   |
+| 参数        | 说明                                                                                                                   |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
 | Text:textid | 需要修改的文本绘图                                                                                                     |
 | boxColour   | 方框颜色。透明度由颜色的 alpha 通道决定（例如 0x000000FF 表示完全不透明的黑色方框，0x000000AA 表示半透明的黑色方框）。 |
 
 ## 返回值
 
-该函数没有特定返回值。
+此函数不返回特定值。
 
 ## 示例
 
@@ -57,7 +57,7 @@ public OnGameModeInit()
 - [TextDrawSetProportional](TextDrawSetProportional): 启用文本字符的比例间距
 - [TextDrawUseBox](TextDrawUseBox): 控制文本绘图方框的显示开关
 - [TextDrawSetString](TextDrawSetString): 修改现有文本绘图的文字内容
-- [玩家文本绘图显示](TextDrawShowForPlayer): 向指定玩家显示文本绘图
+- [TextDrawShowForPlayer](TextDrawShowForPlayer): 向指定玩家显示文本绘图
 - [TextDrawShowForPlayer](TextDrawHideForPlayer): 对指定玩家隐藏文本绘图
 - [TextDrawShowForAll](TextDrawShowForAll): 向所有在线玩家显示文本绘图
 - [TextDrawHideForAll](TextDrawHideForAll): 全局隐藏指定文本绘图

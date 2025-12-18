@@ -265,11 +265,11 @@ HTTP 错误部分需要注意技术术语的准确性，如“HTTP_ERROR_BAD_HOS
 | 25   | SPECIAL_ACTION_CARRY          | 搬运物品状态               |
 | 68   | SPECIAL_ACTION_PISSING        | 小便动画                   |
 
-## 格斗风格
+## 战斗风格
 
 | 数值 | 常量名称             | 战斗风格说明                 |
 |------|--------------------|---------------------------|
-| 0    | FIGHT_STYLE_NORMAL  | 普通格斗风格               |
+| 0    | FIGHT_STYLE_NORMAL  | 普通战斗风格               |
 | 1    | FIGHT_STYLE_BOXING  | 拳击风格                   |
 | 2    | FIGHT_STYLE_KUNGFU  | 功夫风格                   |
 | 3    | FIGHT_STYLE_KNEEHEAD | 膝撞攻击风格             |

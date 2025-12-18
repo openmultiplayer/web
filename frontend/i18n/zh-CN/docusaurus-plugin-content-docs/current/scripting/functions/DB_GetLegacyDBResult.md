@@ -2,16 +2,14 @@
 title: DB_GetLegacyDBResult
 sidebar_label: DB_GetLegacyDBResult
 description: 获取通过DB_ExecuteQuery分配的SQLite查询结果内存句柄
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
 ## 描述
 
-该函数用于获取通过[DB_ExecuteQuery](DB_ExecuteQuery)执行的 SQLite 数据库查询结果的内存句柄。
+此函数用于获取通过[DB_ExecuteQuery](DB_ExecuteQuery)执行的 SQLite 数据库查询结果的内存句柄。
 
-| 参数名          | 说明                                                       |
+| 参数            | 说明                                                       |
 | --------------- | ---------------------------------------------------------- |
 | DBResult:result | 数据库查询句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)返回） |
 
@@ -33,6 +31,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = DB_Open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         // 执行数据库查询
@@ -59,7 +58,8 @@ public OnGameModeExit()
     // 关闭数据库连接
     if (DB_Close(gDBConnectionHandle))
     {
-        gDBConnectionHandle = DB:0; // 重置句柄
+        // 重置句柄
+        gDBConnectionHandle = DB:0;
     }
     return 1;
 }

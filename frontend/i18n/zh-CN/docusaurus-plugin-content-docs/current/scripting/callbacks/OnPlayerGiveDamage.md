@@ -1,15 +1,15 @@
 ---
 title: OnPlayerGiveDamage
 sidebar_label: OnPlayerGiveDamage
-description: 当玩家对另一名玩家造成伤害时触发该回调函数。
+description: 当玩家对另一名玩家造成伤害时触发此回调函数。
 tags: ["玩家"]
 ---
 
 ## 描述
 
-当玩家对另一名玩家造成伤害时触发该回调函数。
+当玩家对另一名玩家造成伤害时触发此回调函数。
 
-| 参数名          | 说明                                       |
+| 参数            | 说明                                       |
 | --------------- | ------------------------------------------ |
 | playerid        | 造成伤害的玩家ID                           |
 | damagedid       | 受到伤害的玩家ID                           |
@@ -23,7 +23,7 @@ tags: ["玩家"]
 
 0 - 允许将此回调传递给其他滤镜脚本
 
-该回调始终在滤镜脚本中优先触发，返回1将阻止其他滤镜脚本处理
+此回调始终在滤镜脚本中优先触发，返回1将阻止其他滤镜脚本处理
 
 ## 示例
 
@@ -46,7 +46,7 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 
 :::tip
 
-- 请注意本函数在某些情况下可能不够精确
+- 请注意此函数在某些情况下可能不够精确
 - 如需阻止特定玩家互相伤害，请使用[SetPlayerTeam](../functions/SetPlayerTeam)
 - 火焰类武器（如燃烧瓶/18号武器）会返回37号武器ID（火焰喷射器）
 - 爆炸类武器（如RPG、手雷）会返回51号武器ID
@@ -60,7 +60,7 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 
 ## 相关回调
 
-以下回调函数可能与本回调相关：
+以下回调函数可能与此回调相关：
 
 - [OnPlayerTakeDamage](OnPlayerTakeDamage): 当玩家受到伤害时触发
 - [OnPlayerWeaponShot](OnPlayerWeaponShot): 当玩家开火时触发

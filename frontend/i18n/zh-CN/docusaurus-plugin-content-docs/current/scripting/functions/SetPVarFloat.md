@@ -2,14 +2,14 @@
 title: SetPVarFloat
 sidebar_label: SetPVarFloat
 description: 设置浮点型玩家变量的值。
-tags: ["玩家变量", "pvar"]
+tags: ["玩家变量"]
 ---
 
 ## 描述
 
 设置浮点型玩家变量的值。
 
-| 名称         | 说明                |
+| 参数         | 说明                |
 | ------------ | ------------------- |
 | playerid     | 要设置变量的玩家 ID |
 | const pvar[] | 变量名称            |

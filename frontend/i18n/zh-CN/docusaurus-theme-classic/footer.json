@@ -1,0 +1,70 @@
+{
+  "link.title.Documentations": {
+    "message": "文档",
+    "description": "页脚中标题为Documentations的链接列标题"
+  },
+  "link.title.Community": {
+    "message": "社区",
+    "description": "页脚中标题为Community的链接列标题"
+  },
+  "link.title.More": {
+    "message": "更多",
+    "description": "页脚中标题为More的链接列标题"
+  },
+  "link.item.label.Introduction": {
+    "message": "入门指南",
+    "description": "标签为Introduction的页脚链接，指向文档"
+  },
+  "link.item.label.open.mp Migration": {
+    "message": "迁移至open.mp",
+    "description": "标签为open.mp Migration的页脚链接，指向文档"
+  },
+  "link.item.label.config.json": {
+    "message": "config.json",
+    "description": "标签为config.json的页脚链接，指向docs/server/config.json"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "标签为Discord的页脚链接，指向https://discord.gg/samp"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "标签为GitHub的页脚链接，指向https://github.com/openmultiplayer/open.mp"
+  },
+  "link.item.label.Donate": {
+    "message": "捐赠",
+    "description": "标签为Donate的页脚链接，指向https://opencollective.com/openmultiplayer"
+  },
+  "link.item.label.YouTube": {
+    "message": "YouTube",
+    "description": "标签为YouTube的页脚链接，指向https://youtube.com/openmultiplayer"
+  },
+  "link.item.label.X": {
+    "message": "X",
+    "description": "标签为X的页脚链接，指向https://x.com/openmultiplayer"
+  },
+  "link.item.label.Servers": {
+    "message": "服务器",
+    "description": "标签为Servers的页脚链接，指向/servers"
+  },
+  "link.item.label.Blog": {
+    "message": "博客",
+    "description": "标签为Blog的页脚链接，指向/blog"
+  },
+  "link.item.label.Animations": {
+    "message": "动画",
+    "description": "标签为Animations的页脚链接，指向/animations"
+  },
+  "link.item.label.UID Generator": {
+    "message": "UID生成器",
+    "description": "标签为UID Generator的页脚链接，指向/uid"
+  },
+  "link.item.label.SA-MP": {
+    "message": "SA-MP",
+    "description": "标签为SA-MP的页脚链接，指向https://sa-mp.mp/"
+  },
+  "copyright": {
+    "message": "版权所有 © 2025 open.mp。基于Docusaurus构建",
+    "description": "页脚版权信息"
+  }
+}

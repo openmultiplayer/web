@@ -1,13 +1,13 @@
 ---
 title: OnPlayerClickTextDraw
 sidebar_label: OnPlayerClickTextDraw
-description: 当玩家点击文本绘图或按ESC键取消选择模式时触发该回调
+description: 当玩家点击文本绘图或按ESC键取消选择模式时触发此回调
 tags: ["玩家", "文本绘图"]
 ---
 
 ## 描述
 
-当玩家点击文本绘图或按ESC键取消选择模式时触发该回调。
+当玩家点击文本绘图或按ESC键取消选择模式时触发此回调。
 
 | 参数           | 说明                                                  |
 | -------------- | ----------------------------------------------------- |
@@ -16,7 +16,7 @@ tags: ["玩家", "文本绘图"]
 
 ## 返回值
 
-该回调在滤镜脚本中总是优先触发，返回1将阻止其他脚本处理此事件。
+此回调在滤镜脚本中总是优先触发，返回1将阻止其他脚本处理此事件。
 
 ## 示例
 
@@ -52,7 +52,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 {
     if (clickedid == gTextDraw)
     {
-        SendClientMessage(playerid, 0xFFFFFFAA, "您点击了文本绘图");
+        SendClientMessage(playerid, 0xFFFFFFAA, "你点击了文本绘图");
         CancelSelectTextDraw(playerid);
         return 1;
     }
@@ -65,7 +65,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 :::warning
 
 - 点击区域由[TextDrawTextSize](../functions/TextDrawTextSize)定义
-- 该函数的x/y参数值不可为零或负数
+- 此函数的x/y参数值不可为零或负数
 - 禁止无条件调用[CancelSelectTextDraw](../functions/CancelSelectTextDraw)，否则会导致无限循环
 
 :::

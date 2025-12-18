@@ -2,14 +2,14 @@
 title: DeleteSVar
 sidebar_label: DeleteSVar
 description: 删除先前设置的服务器变量。
-tags: ["服务器变量", "svar"]
+tags: ["服务器变量"]
 ---
 
 ## 描述
 
 删除先前设置的服务器变量。
 
-| 参数名       | 说明                     |
+| 参数         | 说明                     |
 | ------------ | ------------------------ |
 | const svar[] | 要删除的服务器变量名称。 |
 

@@ -2,7 +2,7 @@
 title: RemovePlayerAttachedObject
 sidebar_label: RemovePlayerAttachedObject
 description: 移除玩家身上的附加物体。
-tags: ["玩家", "物体", "附加物"]
+tags: ["玩家", "物体", "附加"]
 ---
 
 ## 描述

@@ -7,9 +7,9 @@ tags: ["玩家", "文本绘图", "玩家文本绘图"]
 
 ## 描述
 
-按比例缩放玩家文本绘图的字符间距。当使用[PlayerTextDrawLetterSize](PlayerTextDrawLetterSize)时，该功能可确保文本字符间距均匀分布
+按比例缩放玩家文本绘图的字符间距。当使用[PlayerTextDrawLetterSize](PlayerTextDrawLetterSize)时，此函数可确保文本字符间距均匀分布
 
-| 参数名            | 说明                              |
+| 参数              | 说明                              |
 | ----------------- | --------------------------------- |
 | playerid          | 要设置比例缩放的玩家 ID           |
 | PlayerText:textid | 要设置比例缩放的玩家文本绘图的 ID |
@@ -17,7 +17,7 @@ tags: ["玩家", "文本绘图", "玩家文本绘图"]
 
 ## 返回值
 
-该函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例
 

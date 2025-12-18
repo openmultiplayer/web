@@ -2,7 +2,7 @@
 title: IsPlayerNPC
 sidebar_label: IsPlayerNPC
 description: 验证玩家身份是否为非玩家角色（NPC）
-tags: ["玩家", "非玩家角色"]
+tags: ["玩家", "npc"]
 ---
 
 ## 描述

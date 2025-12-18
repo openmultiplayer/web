@@ -2,7 +2,7 @@
 title: funcidx
 sidebar_label: funcidx
 description: 通过函数名获取公共函数的ID。
-tags: ["core"]
+tags: ["核心"]
 ---
 
 <LowercaseNoteZH_CN />
@@ -11,7 +11,7 @@ tags: ["core"]
 
 通过函数名获取公共函数的唯一标识符(ID)。
 
-| 名称         | 说明                   |
+| 参数         | 说明                   |
 | ------------ | ---------------------- |
 | const name[] | 要查询的公共函数名称。 |
 

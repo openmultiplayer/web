@@ -7,7 +7,7 @@ tags: ["玩家"]
 
 ## 描述
 
-该函数用于获取玩家通过[SetPlayerScore](SetPlayerScore)设置的分数值
+此函数用于获取玩家通过[SetPlayerScore](SetPlayerScore)设置的分数值
 
 | 参数名   | 说明                  |
 | -------- | --------------------- |

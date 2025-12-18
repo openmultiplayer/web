@@ -40,6 +40,6 @@ SetPlayerPosFindZ(playerid, 1234.5, 1234.5, 1000.0);
 
 - [SetPlayerPos](SetPlayerPos): 直接设置玩家三维坐标
 
-## 相关回调函数
+## 相关回调
 
 - [OnPlayerClickMap](../callbacks/OnPlayerClickMap): 当玩家在暂停菜单地图上设置路径点时触发

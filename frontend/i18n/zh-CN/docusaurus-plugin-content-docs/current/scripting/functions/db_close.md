@@ -2,8 +2,6 @@
 title: db_close
 sidebar_label: db_close
 description: 关闭通过`db_open`打开的SQLite数据库连接。
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
@@ -13,9 +11,9 @@ tags: ["sqlite"]
 
 关闭通过[db_open](db_open)建立的 SQLite 数据库连接。
 
-| 参数名 | 说明                                               |
-| ------ | -------------------------------------------------- |
-| DB:db  | 要关闭的数据库连接句柄（由[db_open](db_open)返回） |
+| 参数  | 说明                                               |
+| ----- | -------------------------------------------------- |
+| DB:db | 要关闭的数据库连接句柄（由[db_open](db_open)返回） |
 
 ## 返回值
 

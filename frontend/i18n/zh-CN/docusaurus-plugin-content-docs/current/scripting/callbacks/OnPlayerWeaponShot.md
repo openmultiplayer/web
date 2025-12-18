@@ -1,15 +1,15 @@
 ---
 title: OnPlayerWeaponShot
 sidebar_label: OnPlayerWeaponShot
-description: 当玩家射击时触发该回调函数。
+description: 当玩家射击时触发此回调函数。
 tags: ["玩家"]
 ---
 
 ## 描述
 
-当玩家射击时触发该回调函数（仅支持枪械类武器）。
+当玩家射击时触发此回调函数（仅支持枪械类武器）。
 
-| 参数名                  | 说明                                              |
+| 参数                    | 说明                                              |
 | ----------------------- | ------------------------------------------------- |
 | playerid                | 射击的玩家ID                                      |
 | WEAPON:weaponid         | 使用的[武器ID](../resources/weaponids)            |
@@ -25,7 +25,7 @@ tags: ["玩家"]
 
 1 - 允许子弹造成伤害
 
-该回调始终在滤镜脚本中优先触发，返回0将阻止其他脚本处理此事件。
+此回调始终在滤镜脚本中优先触发，返回0将阻止其他脚本处理此事件。
 
 ## 示例
 
@@ -64,13 +64,13 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## 相关回调
 
-以下回调可能与该回调存在关联：
+以下回调可能与此回调存在关联：
 
 - [OnPlayerGiveDamage](OnPlayerGiveDamage): 当玩家造成伤害时触发
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): 获取玩家最后发射的子弹向量
 

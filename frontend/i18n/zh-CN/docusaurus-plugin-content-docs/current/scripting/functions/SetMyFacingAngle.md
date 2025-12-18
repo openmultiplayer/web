@@ -5,11 +5,17 @@ description: 设置NPC的朝向角度。
 tags: []
 ---
 
+:::warning
+
+此函数已弃用，请使用 [NPC_SetFacingAngle](NPC_SetFacingAngle)。
+
+:::
+
 ## 描述
 
 设置 NPC 的朝向角度。
 
-| 参数名    | 描述                         |
+| 参数      | 说明                         |
 | --------- | ---------------------------- |
 | Float:ang | 要设置的朝向角度值（浮点数） |
 

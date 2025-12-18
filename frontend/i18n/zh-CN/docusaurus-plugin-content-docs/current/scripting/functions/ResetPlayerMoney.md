@@ -24,7 +24,7 @@ tags: ["玩家"]
 ```c
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    SendClientMessage(playerid, 0xFFFFFFAA, "您已死亡，所有现金已被清空！");
+    SendClientMessage(playerid, 0xFFFFFFAA, "你已死亡，所有现金已被清空！");
     ResetPlayerMoney(playerid);
     return 1;
 }

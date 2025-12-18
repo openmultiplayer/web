@@ -16,7 +16,7 @@ tags: ["文本绘图"]
 
 ## 返回值
 
-本函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::tip
 
-- 当使用[TextDrawSetOutline](TextDrawSetOutline)且尺寸>0 时，轮廓颜色将与本函数设置的颜色一致
+- 当使用[TextDrawSetOutline](TextDrawSetOutline)且尺寸>0 时，轮廓颜色将与此函数设置的颜色一致
 - 修改颜色值会影响[TextDrawColor](TextDrawColor)的文本颜色表现
 
 :::

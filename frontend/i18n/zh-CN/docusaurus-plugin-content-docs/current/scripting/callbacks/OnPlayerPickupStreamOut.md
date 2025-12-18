@@ -1,7 +1,7 @@
 ---
 title: OnPlayerPickupStreamOut
 sidebar_label: OnPlayerPickupStreamOut
-description: 当玩家专属拾取物流卸载时触发该回调函数
+description: 当玩家专属拾取物流卸载时触发此回调函数
 tags: ["玩家", "拾取物", "玩家拾取物"]
 ---
 
@@ -9,16 +9,16 @@ tags: ["玩家", "拾取物", "玩家拾取物"]
 
 ## 描述
 
-当玩家专属拾取物离开玩家可视范围时触发该回调函数
+当玩家专属拾取物离开玩家可视范围时触发此回调函数
 
-| 参数名   | 说明                                                                            |
+| 参数     | 说明                                                                            |
 | -------- | ------------------------------------------------------------------------------- |
 | pickupid | 玩家专属拾取物ID（由[CreatePlayerPickup](../functions/CreatePlayerPickup)返回） |
 | playerid | 所属玩家ID                                                                      |
 
 ## 返回值
 
-该回调始终在游戏模式中优先触发
+此回调始终在游戏模式中优先触发
 
 ## 示例
 
@@ -54,14 +54,14 @@ public OnPlayerPickupStreamOut(pickupid, playerid)
 
 ## 相关回调
 
-以下回调函数可能与本回调相关：
+以下回调函数可能与此回调相关：
 
 - [OnPlayerPickUpPlayerPickup](OnPlayerPickUpPlayerPickup): 当玩家拾取专属拾取物时触发
 - [OnPlayerPickupStreamIn](OnPlayerPickupStreamIn): 当玩家专属拾取物流加载时触发
 
 ## 相关函数
 
-以下函数可能与本回调函数相关：
+以下函数可能与此回调函数相关：
 
 - [CreatePlayerPickup](../functions/CreatePlayerPickup): 创建玩家专属拾取物
 - [DestroyPlayerPickup](../functions/DestroyPlayerPickup): 销毁玩家专属拾取物

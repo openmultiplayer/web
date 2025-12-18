@@ -2,7 +2,7 @@
 title: GetPlayerSurfingPlayerObjectID
 sidebar_label: GetPlayerSurfingPlayerObjectID
 description: 获取玩家正在“冲浪”的玩家私有物体ID。
-tags: ["玩家", "物体", "玩家私有物体"]
+tags: ["玩家", "物体", "玩家物体"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
@@ -11,7 +11,7 @@ tags: ["玩家", "物体", "玩家私有物体"]
 
 获取玩家当前正在“冲浪”的玩家私有物体 ID。
 
-| 参数名   | 描述                       |
+| 参数     | 说明                       |
 | -------- | -------------------------- |
 | playerid | 正在“冲浪”物体的玩家标识符 |
 

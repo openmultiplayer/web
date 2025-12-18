@@ -9,7 +9,7 @@ tags: ["玩家", "物体", "附加"]
 
 进入附加物体的编辑模式。
 
-| 名称     | 描述                         |
+| 参数     | 说明                         |
 | -------- | ---------------------------- |
 | playerid | 要进入编辑模式的玩家 ID      |
 | index    | 要编辑的附加物体索引（槽位） |
@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/edit", true))
     {
         EditAttachedObject(playerid, 0);
-        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：您正在编辑槽位0的附加物体！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：你正在编辑槽位0的附加物体！");
         return 1;
     }
     return 0;

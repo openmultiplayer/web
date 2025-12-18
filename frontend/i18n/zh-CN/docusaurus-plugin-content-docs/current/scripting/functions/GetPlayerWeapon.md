@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 获取玩家当前手持武器的 ID 编号
 
-| 名称     | 说明                      |
+| 参数     | 说明                      |
 | -------- | ------------------------- |
 | playerid | 需要获取武器信息的玩家 ID |
 
@@ -40,7 +40,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-当玩家处于驾驶状态(`PLAYER_STATE_DRIVER`)或乘客状态(`PLAYER_STATE_PASSENGER`)时，本函数返回玩家进入车辆前持有的武器。若通过作弊手段在车辆内生成武器，本函数无法检测。
+当玩家处于驾驶状态(`PLAYER_STATE_DRIVER`)或乘客状态(`PLAYER_STATE_PASSENGER`)时，此函数返回玩家进入车辆前持有的武器。若通过作弊手段在车辆内生成武器，此函数无法检测。
 
 :::
 

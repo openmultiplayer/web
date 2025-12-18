@@ -9,7 +9,7 @@ tags: ["玩家", "视角"]
 
 在使用类似[SetPlayerCameraPos](SetPlayerCameraPos)的函数后，将玩家的视角重置到其身后。
 
-| 参数名   | 描述                  |
+| 参数     | 说明                  |
 | -------- | --------------------- |
 | playerid | 需要重置视角的玩家 ID |
 

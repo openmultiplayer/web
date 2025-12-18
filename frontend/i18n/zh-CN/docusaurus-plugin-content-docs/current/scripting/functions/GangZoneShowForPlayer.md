@@ -9,7 +9,7 @@ tags: ["玩家", "帮派区域"]
 
 为指定玩家显示帮派区域。需预先使用[GangZoneCreate](GangZoneCreate)创建。
 
-| 参数名   | 说明                                                              |
+| 参数     | 说明                                                              |
 | -------- | ----------------------------------------------------------------- |
 | playerid | 目标玩家 ID                                                       |
 | zoneid   | 要显示的帮派区域 ID（由[GangZoneCreate](GangZoneCreate)创建返回） |

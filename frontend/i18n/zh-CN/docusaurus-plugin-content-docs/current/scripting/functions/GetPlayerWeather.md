@@ -11,7 +11,7 @@ tags: ["玩家"]
 
 获取指定玩家的天气 ID
 
-| 名称     | 说明                      |
+| 参数     | 说明                      |
 | -------- | ------------------------- |
 | playerid | 需要获取天气信息的玩家 ID |
 
@@ -36,7 +36,3 @@ printf("玩家天气ID：%d", GetPlayerWeather(playerid));
 ## 相关资源
 
 - [天气 ID 列表](../resources/weatherid)
-
-```
-
-```

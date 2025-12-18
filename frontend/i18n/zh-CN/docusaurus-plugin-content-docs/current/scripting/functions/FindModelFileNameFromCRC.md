@@ -11,7 +11,7 @@ tags: ["自定义模型", "自定义皮肤", "简单模型"]
 
 根据 CRC 校验和查找已存在的自定义皮肤或简单物体模型文件。模型文件默认存储在服务器的 models 目录下（通过 artpath 配置指定）。
 
-| 名称                   | 描述                                        |
+| 参数                   | 说明                                        |
 | ---------------------- | ------------------------------------------- |
 | crc                    | 自定义模型文件的 CRC 校验和                 |
 | output[]               | 用于存储.dff 文件名的数组（通过引用传递）   |
@@ -25,4 +25,4 @@ tags: ["自定义模型", "自定义皮肤", "简单模型"]
 
 ## 相关函数
 
-- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): 当玩家完成自定义模型下载时触发该回调
+- [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): 当玩家完成自定义模型下载时触发此回调

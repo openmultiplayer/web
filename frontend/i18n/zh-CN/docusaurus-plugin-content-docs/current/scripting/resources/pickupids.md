@@ -11,7 +11,7 @@ sidebar_label: 拾取物ID
 
 ## 拾取物模型 ID
 
-| ID    | 预览图                                                         | 描述                   |
+| ID    | 预览图                                                         | 说明                   |
 | ----- | -------------------------------------------------------------- | ---------------------- |
 | 954   | ![](https://assets.open.mp/assets/images/pickups/pickup1.png)  | 马蹄铁                 |
 | 1210  | ![](https://assets.open.mp/assets/images/pickups/pickup2.png)  | 公文包                 |
@@ -75,7 +75,7 @@ sidebar_label: 拾取物ID
 
 ## 武器拾取物
 
-| ID  | 描述                      |
+| ID  | 说明                      |
 | --- | ------------------------- |
 | 321 | 普通假阳具                |
 | 322 | 白色假阳具                |

@@ -11,7 +11,7 @@ tags: ["玩家", "帮派区域", "玩家帮派区域"]
 
 创建玩家独立可见的帮派区域，用于突破全局帮派区域的数量限制。
 
-| 参数名     | 说明                                |
+| 参数       | 说明                                |
 | ---------- | ----------------------------------- |
 | playerid   | 目标玩家 ID                         |
 | Float:minX | 区域西侧边界 X 坐标（最小水平坐标） |
@@ -60,7 +60,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-本函数仅创建区域，需调用[PlayerGangZoneShow](PlayerGangZoneShow)显示可视化效果
+此函数仅创建区域，需调用[PlayerGangZoneShow](PlayerGangZoneShow)显示可视化效果
 
 :::
 

@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::warning
 
-在 SA-MP 服务器中，该函数默认未定义。需在包含 a_samp.inc 后添加 'native Float:GetGravity();' 声明方可使用。
+在 SA-MP 服务器中，此函数默认未定义。需在包含 a_samp.inc 后添加 'native Float:GetGravity();' 声明方可使用。
 
 :::
 

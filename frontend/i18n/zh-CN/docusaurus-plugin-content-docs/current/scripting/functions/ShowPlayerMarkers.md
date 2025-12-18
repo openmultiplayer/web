@@ -9,13 +9,13 @@ tags: ["玩家"]
 
 切换玩家雷达标记（小地图上的光点显示状态）。必须在服务器启动时调用（OnGameModeInit 回调中）。如需运行时控制，请使用[SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer)。
 
-| 参数名称                 | 说明                                                                             |
-| ------------------------ | -------------------------------------------------------------------------------- |
-| PLAYER_MARKERS_MODE:mode | 使用的[标记模式](../resources/markermodes)。支持流式加载模式，仅对附近玩家可见。 |
+| 参数名称                 | 说明                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------ |
+| PLAYER_MARKERS_MODE:mode | 使用的[标记模式](../resources/markermodes)。支持流加载模式，仅对附近玩家可见。 |
 
 ## 返回值
 
-本函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -29,11 +29,11 @@ public OnGameModeInit()
 
 ## 标记模式对照表
 
-| ID  | 模式标识符                               |
-| --- | ---------------------------------------- |
-| 0   | PLAYER_MARKERS_MODE_OFF（禁用标记）      |
-| 1   | PLAYER_MARKERS_MODE_GLOBAL（全局显示）   |
-| 2   | PLAYER_MARKERS_MODE_STREAMED（流式加载） |
+| ID  | 模式标识符                             |
+| --- | -------------------------------------- |
+| 0   | PLAYER_MARKERS_MODE_OFF（禁用标记）    |
+| 1   | PLAYER_MARKERS_MODE_GLOBAL（全局显示） |
+| 2   | PLAYER_MARKERS_MODE_STREAMED（流加载） |
 
 ## 注意事项
 

@@ -2,14 +2,14 @@
 title: CallLocalFunction
 sidebar_label: CallLocalFunction
 description: 调用当前脚本中的公共函数。
-tags: ["核心功能"]
+tags: ["核心"]
 ---
 
 ## 描述
 
 调用当前脚本中的公共函数。
 
-| 参数名               | 说明                                     |
+| 参数                 | 说明                                     |
 | -------------------- | ---------------------------------------- |
 | const functionName[] | 目标公共函数名称                         |
 | const specifiers[]   | 参数格式说明符（指定每个参数的数据类型） |

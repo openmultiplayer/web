@@ -7,7 +7,7 @@ tags: ["3D文本标签"]
 
 :::warning
 
-该函数已弃用，请使用[Get3DTextLabelColour](Get3DTextLabelColour)。
+此函数已弃用，请使用[Get3DTextLabelColour](Get3DTextLabelColour)。
 
 :::
 
@@ -15,7 +15,7 @@ tags: ["3D文本标签"]
 
 获取 3D 文本标签的颜色值。
 
-| 参数名        | 说明                        |
+| 参数          | 说明                        |
 | ------------- | --------------------------- |
 | Text3D:textid | 要获取颜色的 3D 文本标签 ID |
 

@@ -1,14 +1,14 @@
 ---
-title: 从 SA:MP 服务器迁移游戏模式到 open.mp 的完整指南
-sidebar_label: 服务器迁移指南
-description: 本教程面向需要将游戏模式从 SA:MP 服务器迁移至 open.mp 服务器的开发者。
+title: 安装
+sidebar_label: 安装
+description: 将游戏模式从 SA:MP 服务器迁移至 open.mp 服务器的指南。
 ---
 
 **本教程适用于需要将游戏模式从 SA:MP 服务器迁移至 open.mp 服务器的开发者**
 
-:::note
+:::tip
 
-如果您正在使用 FCNPC 插件，请暂时停止使用，因为该插件目前不兼容 open.mp。
+**FCNPC 用户的好消息！** 传统的 FCNPC 插件已被官方的 **open.mp NPC 组件** 取代，它提供了相同的功能，并且性能更好，集成更原生。只需将你的代码转换为内置的 NPC 组件即可。
 
 :::
 
@@ -280,9 +280,9 @@ GivePlayerWeapon(playerid, WEAPON_KNIFE, 1);
 
 <hr />
 
-- **warning 234: 函数已弃用 (符号 "GetPlayerPoolSize") 此函数存在根本性缺陷**
-- **warning 234: 函数已弃用 (符号 "GetVehiclePoolSize") 此函数存在根本性缺陷**
-- **warning 234: 函数已弃用 (符号 "GetActorPoolSize") 此函数存在根本性缺陷**
+- **warning 234: 函数已弃用 (符号 "GetPlayerPoolSize") 此函数已损坏。**
+- **warning 234: 函数已弃用 (符号 "GetVehiclePoolSize") 此函数已损坏。**
+- **warning 234: 函数已弃用 (符号 "GetActorPoolSize") 此函数已损坏。**
 
 替换方案：
 

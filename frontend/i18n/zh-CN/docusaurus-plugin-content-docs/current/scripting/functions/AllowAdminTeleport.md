@@ -7,21 +7,21 @@ tags: []
 
 :::warning
 
-本函数自 0.3d 版本起已弃用，请使用[OnPlayerClickMap](../callbacks/OnPlayerClickMap)回调替代。
+此函数自 0.3d 版本起已弃用，请使用[OnPlayerClickMap](../callbacks/OnPlayerClickMap)回调替代。
 
 :::
 
 ## 描述
 
-本函数用于控制远程控制台(RCON)管理员在设置路径点时是否会被传送到该位置。
+此函数用于控制远程控制台(RCON)管理员在设置路径点时是否会被传送到该位置。
 
-| 参数名     | 说明                            |
+| 参数       | 说明                            |
 | ---------- | ------------------------------- |
 | bool:allow | 'false'禁用功能，'true'启用功能 |
 
 ## 返回值
 
-本函数无特定返回值。
+此函数不返回特定值。
 
 ## 示例
 

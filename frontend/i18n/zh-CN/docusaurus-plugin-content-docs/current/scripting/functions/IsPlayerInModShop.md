@@ -38,13 +38,13 @@ else
 
 ## 相关函数
 
-下列函数可能对本功能有参考价值，因存在关联性：
+下列函数可能对此函数有参考价值，因存在关联性：
 
 - [AddVehicleComponent](AddVehicleComponent): 为车辆添加改装组件
 
 ## 相关回调
 
-下列回调可能与本功能相关，建议配合使用：
+下列回调可能与此函数相关，建议配合使用：
 
 - [OnVehicleMod](../callbacks/OnVehicleMod): 当车辆被改装时触发
 - [OnVehicleRespray](../callbacks/OnVehicleRespray): 当玩家离开改装店时触发（即使未更改颜色）

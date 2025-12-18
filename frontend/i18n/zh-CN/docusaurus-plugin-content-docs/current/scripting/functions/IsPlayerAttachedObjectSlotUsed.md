@@ -2,7 +2,7 @@
 title: IsPlayerAttachedObjectSlotUsed
 sidebar_label: IsPlayerAttachedObjectSlotUsed
 description: 检查玩家是否在指定索引槽位附加了物体
-tags: ["玩家", "物体", "附加物"]
+tags: ["玩家", "物体", "附加"]
 ---
 
 ## 描述

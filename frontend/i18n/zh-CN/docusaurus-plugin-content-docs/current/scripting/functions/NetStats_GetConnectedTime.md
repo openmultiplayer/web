@@ -27,7 +27,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
     if (!strcmp(cmdtext, "/connectedtime"))
     {
         new szString[144];
-        format(szString, sizeof(szString), "您已连接服务器达 %i 毫秒", NetStats_GetConnectedTime(playerid));
+        format(szString, sizeof(szString), "你已连接服务器达 %i 毫秒", NetStats_GetConnectedTime(playerid));
         SendClientMessage(playerid, -1, szString);
     }
     return 1;

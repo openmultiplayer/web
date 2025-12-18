@@ -9,7 +9,7 @@ tags: ["车辆"]
 
 完全修复车辆，包含外观损伤（凹陷、划痕、爆胎等）。
 
-| 参数名    | 说明              |
+| 参数      | 说明              |
 | --------- | ----------------- |
 | vehicleid | 需要修复的车辆 ID |
 
@@ -28,12 +28,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (!IsPlayerInAnyVehicle(playerid))
         {
-            return SendClientMessage(playerid, 0xFFFFFFFF, "您当前未处于车辆中！");
+            return SendClientMessage(playerid, 0xFFFFFFFF, "你当前未处于车辆中！");
         }
 
         RepairVehicle(GetPlayerVehicleID(playerid));
 
-        SendClientMessage(playerid, 0xFFFFFFFF, "您的车辆已修复完成！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "你的车辆已修复完成！");
         return 1;
     }
     return 0;

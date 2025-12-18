@@ -76,6 +76,14 @@ const config: Config = {
       "zh-CN",
       "zh-TW",
     ],
+    localeConfigs: {
+      "zh-CN": {
+        label: "简体中文",
+      },
+      "zh-TW": {
+        label: "繁體中文",
+      },
+    },
   },
 
   staticDirectories: ["public"],

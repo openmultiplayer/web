@@ -1,15 +1,15 @@
 ---
 title: OnPlayerStateChange
 sidebar_label: OnPlayerStateChange
-description: 当玩家状态发生改变时触发该回调函数。
+description: 当玩家状态发生改变时触发此回调函数。
 tags: ["玩家"]
 ---
 
 ## 描述
 
-当玩家状态发生改变时触发该回调函数。例如：当玩家从车辆驾驶员状态切换为步行状态时。
+当玩家状态发生改变时触发此回调函数。例如：当玩家从车辆驾驶员状态切换为步行状态时。
 
-| 参数名                | 说明                 |
+| 参数                  | 说明                 |
 | --------------------- | -------------------- |
 | playerid              | 状态发生改变的玩家ID |
 | PLAYER_STATE:newstate | 玩家当前的新状态     |
@@ -19,7 +19,7 @@ tags: ["玩家"]
 
 ## 返回值
 
-该回调始终在滤镜脚本中优先触发。
+此回调始终在滤镜脚本中优先触发。
 
 ## 示例
 
@@ -41,13 +41,13 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## 相关回调
 
-以下回调可能与该回调存在关联：
+以下回调可能与此回调存在关联：
 
 - [OnPlayerInteriorChange](OnPlayerInteriorChange): 当玩家切换室内场景时触发
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [GetPlayerState](../functions/GetPlayerState): 获取玩家当前状态
 - [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction): 获取玩家特殊动作

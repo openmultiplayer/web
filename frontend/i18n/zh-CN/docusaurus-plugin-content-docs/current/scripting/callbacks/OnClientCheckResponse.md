@@ -1,13 +1,13 @@
 ---
 title: OnClientCheckResponse
 sidebar_label: OnClientCheckResponse
-description: 当SendClientCheck请求完成时触发该回调
+description: 当SendClientCheck请求完成时触发此回调
 tags: []
 ---
 
 ## 描述
 
-当SendClientCheck请求完成时触发该回调。
+当SendClientCheck请求完成时触发此回调。
 
 | 参数     | 说明           |
 | -------- | -------------- |
@@ -43,9 +43,9 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::warning
 
-**SA:MP 服务端**：该回调仅在滤镜脚本中触发
+**SA:MP 服务端**：此回调仅在滤镜脚本中触发
 
-**Open Multiplayer 服务端**：该回调在游戏模式/滤镜脚本中均可正常触发
+**Open Multiplayer 服务端**：此回调在游戏模式/滤镜脚本中均可正常触发
 
 :::
 

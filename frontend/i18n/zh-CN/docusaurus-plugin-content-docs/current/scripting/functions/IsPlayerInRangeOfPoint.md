@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 快速检测玩家是否处于三维坐标点范围内（原生函数性能优于 PAWN 的距离公式计算）
 
-| 参数名      | 说明                                   |
+| 参数        | 说明                                   |
 | ----------- | -------------------------------------- |
 | playerid    | 目标玩家 ID                            |
 | Float:range | 检测半径（最大有效距离，使用浮点数值） |
@@ -32,7 +32,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (IsPlayerInRangeOfPoint(playerid, 7.0, 2695.6880, -1704.6300, 11.8438))
         {
-            SendClientMessage(playerid, 0xFFFFFFFF, "您位于体育馆入口区域！");
+            SendClientMessage(playerid, 0xFFFFFFFF, "你位于体育馆入口区域！");
         }
         return 1;
     }

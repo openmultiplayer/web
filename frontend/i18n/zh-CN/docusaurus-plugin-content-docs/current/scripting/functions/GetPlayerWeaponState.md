@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 获取指定玩家武器的当前状态信息
 
-| 名称     | 说明                      |
+| 参数     | 说明                      |
 | -------- | ------------------------- |
 | playerid | 需要获取武器状态的玩家 ID |
 
@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         };
 
         new string[144];
-        format(string, sizeof(string), "您的武器状态：%s", weaponStates[_:state]);
+        format(string, sizeof(string), "你的武器状态：%s", weaponStates[_:state]);
         SendClientMessage(playerid, -1, string);
         return 1;
     }

@@ -2,17 +2,22 @@
 title: db_num_rows
 sidebar_label: db_num_rows
 description: 返回通过db_query执行的查询结果中的行数。
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNoteZH_CN />
 
+:::warning
+
+此函数已弃用，请使用 [DB_GetRowCount](DB_GetRowCount)。
+
+:::
+
 ## 描述
 
-该函数用于获取通过[db_query](db_query)执行的查询结果中的行数。
+此函数用于获取通过[db_query](db_query)执行的查询结果中的行数。
 
-| 参数名            | 说明                                       |
+| 参数              | 说明                                       |
 | ----------------- | ------------------------------------------ |
 | DBResult:dbresult | 查询结果句柄（由[db_query](db_query)返回） |
 
@@ -23,7 +28,7 @@ keywords:
 ## 示例
 
 ```c
-// 示例模块
+// examples.inc
 
 // ...
 
@@ -56,7 +61,7 @@ Examples_ListNames(DB:dbConnectionHandle)
 ```
 
 ```c
-// 主游戏模式文件
+// mode.pwn
 
 // ...
 
@@ -73,6 +78,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = db_open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");
@@ -91,7 +97,8 @@ public OnGameModeExit()
     // 关闭数据库连接
     if (db_close(gDBConnectionHandle))
     {
-        gDBConnectionHandle = DB:0; // 重置句柄
+        // 重置句柄
+        gDBConnectionHandle = DB:0;
     }
     return 1;
 }

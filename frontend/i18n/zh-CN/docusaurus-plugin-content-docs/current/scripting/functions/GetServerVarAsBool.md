@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-本函数自 0.3.7 R2 版本起已弃用，请使用[GetConsoleVarAsBool](GetConsoleVarAsBool)
+此函数自 0.3.7 R2 版本起已弃用，请使用[GetConsoleVarAsBool](GetConsoleVarAsBool)
 
 :::
 
@@ -15,7 +15,7 @@ tags: []
 
 获取服务器布尔型变量（true/false）的当前值
 
-| 名称            | 说明               |
+| 参数            | 说明               |
 | --------------- | ------------------ |
 | const varname[] | 目标布尔型变量名称 |
 

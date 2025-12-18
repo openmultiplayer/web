@@ -2,7 +2,7 @@
 title: GetSVarInt
 sidebar_label: GetSVarInt
 description: 获取整型服务器变量的值。
-tags: ["服务器变量", "svar"]
+tags: ["服务器变量"]
 ---
 
 <VersionWarnZH_CN version='SA-MP 0.3.7 R2' />
@@ -11,7 +11,7 @@ tags: ["服务器变量", "svar"]
 
 获取整型服务器变量的值。
 
-| 参数名       | 说明                                                                |
+| 参数         | 说明                                                                |
 | ------------ | ------------------------------------------------------------------- |
 | const svar[] | 服务器变量名称（不区分大小写）<br/>通过[SetSVarInt](SetSVarInt)设置 |
 

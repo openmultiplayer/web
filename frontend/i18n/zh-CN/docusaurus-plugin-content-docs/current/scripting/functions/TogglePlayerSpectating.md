@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 切换玩家是否处于观察者模式。在该模式下可观察其他玩家或车辆，使用后需配合[PlayerSpectatePlayer](PlayerSpectatePlayer)或[PlayerSpectateVehicle](PlayerSpectateVehicle)实现观察功能。
 
-| 名称        | 描述                            |
+| 参数        | 说明                            |
 | ----------- | ------------------------------- |
 | playerid    | 需要设置观察模式的玩家 ID       |
 | bool:toggle | 'true'启用观察模式，'false'禁用 |

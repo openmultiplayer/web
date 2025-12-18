@@ -11,14 +11,14 @@ tags: ["文本绘图"]
 
 设置文本绘图的文字颜色
 
-| 参数名      | 说明                            |
+| 参数        | 说明                            |
 | ----------- | ------------------------------- |
 | Text:textid | 需要修改颜色的文本绘图 ID       |
 | textColour  | 要设置的文字颜色值（RGBA 格式） |
 
 ## 返回值
 
-该函数不返回任何特定值
+此函数不返回特定值
 
 ## 示例
 
@@ -37,7 +37,7 @@ public OnGameModeInit()
 
 :::tip
 
-若文本绘图已显示，必须重新显示（[TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)）才能使本函数修改生效
+若文本绘图已显示，必须重新显示（[TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)）才能使此函数修改生效
 
 :::
 

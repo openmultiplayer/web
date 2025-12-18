@@ -26,7 +26,7 @@ tags: ["玩家", "帮派区域"]
 
 :::warning
 
-本函数仅适用于 open.mp 平台，SA-MP 需使用[YSF 插件](https://github.com/IS4Code/YSF/releases)
+此函数仅适用于 open.mp 平台，SA-MP 需使用[YSF 插件](https://github.com/IS4Code/YSF/releases)
 
 :::
 

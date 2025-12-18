@@ -15,13 +15,13 @@ tags: ["玩家", "管理"]
 
 可通过 RCON 命令`banip`和`unbanip`管理 IP 封禁（需配合[SendRconCommand](SendRconCommand)使用）。
 
-| 名称     | 说明            |
+| 参数     | 说明            |
 | -------- | --------------- |
 | playerid | 要封禁的玩家 ID |
 
 ## 返回值
 
-本函数没有特定返回值。
+此函数不返回特定值。
 
 ## 注意事项
 
@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // 封禁执行此命令的玩家
 
         // 第一步：发送提示信息
-        SendClientMessage(playerid, 0xFF0000FF, "您已被封禁!");
+        SendClientMessage(playerid, 0xFF0000FF, "你已被封禁!");
 
         // 通过定时器在1秒后执行封禁
         SetTimerEx("DelayedBan", 1000, false, "d", playerid);

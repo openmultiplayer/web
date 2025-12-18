@@ -1,22 +1,22 @@
 ---
 title: OnPlayerExitVehicle
 sidebar_label: OnPlayerExitVehicle
-description: 当玩家开始退出车辆时触发该回调函数。
+description: 当玩家开始退出车辆时触发此回调函数。
 tags: ["玩家", "车辆"]
 ---
 
 ## 描述
 
-当玩家开始退出车辆时触发该回调函数。
+当玩家开始退出车辆时触发此回调函数。
 
-| 参数名    | 说明                 |
+| 参数      | 说明                 |
 | --------- | -------------------- |
 | playerid  | 正在退出车辆的玩家ID |
 | vehicleid | 玩家正在退出的车辆ID |
 
 ## 返回值
 
-该回调始终在滤镜脚本中优先触发
+此回调始终在滤镜脚本中优先触发
 
 ## 示例
 
@@ -34,7 +34,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-- 以下情况不会触发该回调：
+- 以下情况不会触发此回调：
   - 玩家从摩托车上摔落
   - 使用[SetPlayerPos](../functions/SetPlayerPos)等函数强制移出玩家
 - 如需检测这些情况，请使用[OnPlayerStateChange](OnPlayerStateChange)回调：
@@ -45,14 +45,14 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 ## 相关回调
 
-以下回调函数可能与本回调相关：
+以下回调函数可能与此回调相关：
 
 - [OnPlayerEnterVehicle](OnPlayerEnterVehicle): 当玩家开始进入车辆时触发
 - [OnPlayerStateChange](OnPlayerStateChange): 当玩家状态改变时触发
 
 ## 相关函数
 
-以下函数可能与本回调函数相关：
+以下函数可能与此回调函数相关：
 
 - [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle): 强制将玩家移出车辆
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): 获取玩家所在车辆座位

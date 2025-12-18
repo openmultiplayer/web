@@ -2,7 +2,7 @@
 title: UsePlayerGangZoneCheck
 sidebar_label: UsePlayerGangZoneCheck
 description: 启用玩家进出区域时的回调触发
-tags: ["玩家", "帮派区域", "玩家专属帮派区域"]
+tags: ["玩家", "帮派区域", "玩家帮派区域"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
@@ -11,7 +11,7 @@ tags: ["玩家", "帮派区域", "玩家专属帮派区域"]
 
 启用当玩家进入/离开指定区域时的回调触发。
 
-| 名称        | 描述                              |
+| 参数        | 说明                              |
 | ----------- | --------------------------------- |
 | playerid    | 需要启用区域检测的玩家 ID         |
 | zoneid      | 需要启用检测的玩家专属帮派区域 ID |
@@ -44,7 +44,7 @@ public OnPlayerEnterPlayerGangZone(playerid, zoneid)
     if (zoneid == gGangZoneID[playerid])
     {
         new string[64];
-        format(string, sizeof(string), "您正在进入玩家专属帮派区域 %i", zoneid);
+        format(string, sizeof(string), "你正在进入玩家专属帮派区域 %i", zoneid);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
     return 1;
@@ -55,7 +55,7 @@ public OnPlayerLeavePlayerGangZone(playerid, zoneid)
     if (zoneid == gGangZoneID[playerid])
     {
         new string[64];
-        format(string, sizeof(string), "您正在离开玩家专属帮派区域 %i", zoneid);
+        format(string, sizeof(string), "你正在离开玩家专属帮派区域 %i", zoneid);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
     return 1;
@@ -64,14 +64,14 @@ public OnPlayerLeavePlayerGangZone(playerid, zoneid)
 
 ## 相关回调
 
-以下回调函数与此功能相关：
+以下回调函数与此函数相关：
 
 - [OnPlayerEnterPlayerGangZone](../callbacks/OnPlayerEnterPlayerGangZone): 玩家进入专属帮派区域时触发
 - [OnPlayerLeavePlayerGangZone](../callbacks/OnPlayerLeavePlayerGangZone): 玩家离开专属帮派区域时触发
 
 ## 相关函数
 
-以下函数与此功能相关：
+以下函数与此函数相关：
 
 - [CreatePlayerGangZone](CreatePlayerGangZone): 创建玩家专属帮派区域
 - [PlayerGangZoneDestroy](PlayerGangZoneDestroy): 销毁玩家专属帮派区域

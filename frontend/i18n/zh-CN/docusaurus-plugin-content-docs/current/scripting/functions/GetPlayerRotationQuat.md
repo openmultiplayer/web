@@ -43,7 +43,7 @@ GetPlayerRotationQuat(playerid, w, x, y, z);
 
 :::tip
 
-本函数仅用于获取旋转参数，无法直接设置玩家旋转（可通过[SetPlayerFacingAngle](SetPlayerFacingAngle)设置 Z 轴朝向）
+此函数仅用于获取旋转参数，无法直接设置玩家旋转（可通过[SetPlayerFacingAngle](SetPlayerFacingAngle)设置 Z 轴朝向）
 
 :::
 

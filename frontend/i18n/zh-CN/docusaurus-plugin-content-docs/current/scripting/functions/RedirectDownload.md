@@ -13,7 +13,7 @@ tags: ["自定义模型", "自定义皮肤", "简单模型"]
 
 ## 参数
 
-| 参数名      | 说明                        |
+| 参数        | 说明                        |
 | ----------- | --------------------------- |
 | playerid    | 请求下载自定义模型的玩家 ID |
 | const url[] | 要重定向下载的 URL 链接     |
@@ -66,6 +66,6 @@ public OnPlayerRequestDownload(playerid, type, crc)
 - [AddSimpleModel](AddSimpleModel): 添加一个新的自定义简单物体模型供下载
 - [AddSimpleModelTimed](AddSimpleModelTimed): 添加一个带时限的自定义简单物体模型供下载
 
-## 相关回调函数
+## 相关回调
 
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): 当玩家完成自定义模型下载时调用

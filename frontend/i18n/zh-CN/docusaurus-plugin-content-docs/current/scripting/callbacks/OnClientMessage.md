@@ -1,18 +1,24 @@
 ---
 title: OnClientMessage
 sidebar_label: OnClientMessage
-description: 当NPC接收到客户端消息时触发该回调
+description: 当NPC接收到客户端消息时触发此回调
 tags: []
 ---
 
+:::warning
+
+此函数已弃用。
+
+:::
+
 ## 描述
 
-当NPC检测到客户端消息时触发该回调。以下情况均会触发：
+当 NPC 检测到客户端消息时触发此回调。以下情况均会触发：
 
 - 使用[SendClientMessageToAll](../functions/SendClientMessageToAll)函数时
-- 向NPC发送[SendClientMessage](../functions/SendClientMessage)函数时
+- 向 NPC 发送[SendClientMessage](../functions/SendClientMessage)函数时
 
-该回调不会在玩家发送聊天消息时触发，相关功能请参阅[NPC:OnPlayerText](OnPlayerText)。
+此回调不会在玩家发送聊天消息时触发，相关功能请参阅[NPC:OnPlayerText](OnPlayerText)。
 
 | 参数   | 说明               |
 | ------ | ------------------ |
@@ -21,7 +27,7 @@ tags: []
 
 ## 返回值
 
-本回调不处理返回值。
+此回调不处理返回值。
 
 ## 示例
 
@@ -39,4 +45,4 @@ public OnClientMessage(color, text[])
 
 以下回调可能与当前回调存在关联：
 
-- [OnPlayerText](OnPlayerText)：当任意实体（玩家、其他NPC或当前NPC自身）发送聊天消息时触发
+- [OnPlayerText](OnPlayerText)：当任意实体（玩家、其他 NPC 或当前 NPC 自身）发送聊天消息时触发

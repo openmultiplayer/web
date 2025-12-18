@@ -7,9 +7,9 @@ tags: ["车辆"]
 
 ## 描述
 
-将指定车辆关联到特定室内空间。该车辆仅对处于相同室内空间的玩家可见（需通过[SetPlayerInterior](SetPlayerInterior)设置玩家室内位置）。
+将指定车辆关联到特定室内空间。该车辆仅对处于相同室内空间的玩家可见（需通过[SetPlayerInterior](SetPlayerInterior)设置玩家室内场景）。
 
-| 参数名     | 说明                                        |
+| 参数       | 说明                                        |
 | ---------- | ------------------------------------------- |
 | vehicleid  | 要关联的车辆 ID                             |
 | interiorid | 目标[室内空间 ID](../resources/interiorids) |

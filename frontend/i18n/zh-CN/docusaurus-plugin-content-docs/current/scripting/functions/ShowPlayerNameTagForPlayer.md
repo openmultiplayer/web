@@ -1,13 +1,13 @@
 ---
 title: ShowPlayerNameTagForPlayer
 sidebar_label: ShowPlayerNameTagForPlayer
-description: 此函数允许您切换玩家头顶显示的玩家名称标签、生命条和护甲条的绘制。
+description: 此函数允许你切换玩家头顶显示的玩家名称标签、生命条和护甲条的绘制。
 tags: ["玩家"]
 ---
 
 ## 描述
 
-此函数允许您切换玩家头顶显示的玩家名称标签、生命条和护甲条的绘制。若需全局控制类似功能，请使用[ShowNameTags](ShowNameTags)函数。
+此函数允许你切换玩家头顶显示的玩家名称标签、生命条和护甲条的绘制。若需全局控制类似功能，请使用[ShowNameTags](ShowNameTags)函数。
 
 | 参数      | 说明                                  |
 | --------- | ------------------------------------- |
@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-需先通过[ShowNameTags](ShowNameTags)启用全局名称标签显示，本函数才能生效。建议在玩家流加载时（[OnPlayerStreamIn](../callbacks/OnPlayerStreamIn)回调）预先设置 ShowPlayerNameTagForPlayer(forplayerid, playerid, 0)。
+需先通过[ShowNameTags](ShowNameTags)启用全局名称标签显示，此函数才能生效。建议在玩家流加载时（[OnPlayerStreamIn](../callbacks/OnPlayerStreamIn)回调）预先设置 ShowPlayerNameTagForPlayer(forplayerid, playerid, 0)。
 
 :::
 

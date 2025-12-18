@@ -9,14 +9,14 @@ tags: ["车辆"]
 
 将一个车辆作为拖车附加到另一个车辆上。
 
-| 名称      | 说明              |
+| 参数      | 说明              |
 | --------- | ----------------- |
 | trailerid | 被牵引的车辆 ID   |
 | vehicleid | 牵引拖车的车辆 ID |
 
 ## 返回值
 
-本函数始终返回 **true**，即使传入的车辆 ID 无效。
+此函数始终返回 **true**，即使传入的车辆 ID 无效。
 
 ## 示例
 
@@ -31,7 +31,7 @@ AttachTrailerToVehicle(trailerId, vehicleId);
 
 :::warning
 
-该功能仅在两个车辆均被玩家流加载时生效（参见[IsVehicleStreamedIn](IsVehicleStreamedIn)）。
+此函数仅在两个车辆均被玩家流加载时生效（参见[IsVehicleStreamedIn](IsVehicleStreamedIn)）。
 
 :::
 

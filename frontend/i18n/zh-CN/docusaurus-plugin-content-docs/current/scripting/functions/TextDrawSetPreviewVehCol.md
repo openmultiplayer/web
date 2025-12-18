@@ -1,15 +1,15 @@
 ---
 title: TextDrawSetPreviewVehCol
 sidebar_label: TextDrawSetPreviewVehCol
-description: 若在3D预览文本绘图中使用车辆模型，本函数用于设置该车辆的两个颜色值。
+description: 若在3D预览文本绘图中使用车辆模型，此函数用于设置该车辆的两个颜色值。
 tags: ["文本绘图"]
 ---
 
 ## 描述
 
-若在 3D 预览文本绘图中使用车辆模型，本函数用于设置该车辆的两个颜色值。
+若在 3D 预览文本绘图中使用车辆模型，此函数用于设置该车辆的两个颜色值。
 
-| 参数名      | 说明                                      |
+| 参数        | 说明                                      |
 | ----------- | ----------------------------------------- |
 | Text:textid | 已设置为显示 3D 车辆模型预览的文本绘图 ID |
 | colour1     | 车辆主颜色 ID                             |
@@ -17,7 +17,7 @@ tags: ["文本绘图"]
 
 ## 返回值
 
-本函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::warning
 
-文本绘图必须使用字体类型`TEXT_DRAW_FONT_MODEL_PREVIEW`，否则本函数将无效。
+文本绘图必须使用字体类型`TEXT_DRAW_FONT_MODEL_PREVIEW`，否则此函数将无效。
 
 :::
 

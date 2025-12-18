@@ -1,13 +1,13 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: 当玩家响应通过ShowPlayerDialog显示的对话框时触发该回调。响应方式包括点击按钮、按下ENTER/ESC键或双击列表项（列表式对话框）。
+description: 当玩家响应通过ShowPlayerDialog显示的对话框时触发此回调。响应方式包括点击按钮、按下ENTER/ESC键或双击列表项（列表式对话框）。
 tags: ["对话框"]
 ---
 
 ## 描述
 
-当玩家响应通过ShowPlayerDialog显示的对话框时触发该回调。响应方式包括：
+当玩家响应通过ShowPlayerDialog显示的对话框时触发此回调。响应方式包括：
 
 - 点击按钮
 - 按下ENTER/ESC键
@@ -23,7 +23,7 @@ tags: ["对话框"]
 
 ## 返回值
 
-该回调在滤镜脚本中总是优先触发。返回1将阻止其他滤镜脚本处理该回调。
+此回调在滤镜脚本中总是优先触发。返回1将阻止其他滤镜脚本处理此回调。
 
 ## 示例
 
@@ -35,7 +35,7 @@ tags: ["对话框"]
 
 // 在某个指令中
 ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "服务器规则",
-"- 禁止作弊\n- 禁止刷屏\n- 尊重管理员\n\n您是否同意遵守这些规则？", "同意", "拒绝");
+"- 禁止作弊\n- 禁止刷屏\n- 尊重管理员\n\n你是否同意遵守这些规则？", "同意", "拒绝");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
@@ -43,7 +43,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
     {
         if (response) // 点击左按钮或按下ENTER
         {
-            SendClientMessage(playerid, COLOR_GREEN, "感谢您同意遵守服务器规则！");
+            SendClientMessage(playerid, COLOR_GREEN, "感谢你同意遵守服务器规则！");
         }
         else // 按下ESC或点击右按钮
         {
@@ -63,7 +63,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 // 在某个指令中
 ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "登录",
-"请输入您的密码：", "登录", "取消");
+"请输入你的密码：", "登录", "取消");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
@@ -85,7 +85,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
                 // 重新显示登录对话框
                 ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT,
-                "登录", "请输入您的密码：", "登录", "取消");
+                "登录", "请输入你的密码：", "登录", "取消");
             }
         }
         return 1;

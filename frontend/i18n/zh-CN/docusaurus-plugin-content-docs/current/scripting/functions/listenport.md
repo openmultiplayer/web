@@ -2,14 +2,14 @@
 title: listenport
 sidebar_label: listenport
 description: 设置监听的端口号
-tags: ["数据报文"]
+tags: ["数据报"]
 ---
 
 <LowercaseNoteZH_CN />
 
 :::warning
 
-该函数已弃用，请使用 [HTTP](HTTP) 插件或 [pawn-requests](https://github.com/Southclaws/pawn-requests) 插件替代
+此函数已弃用，请使用 [HTTP](HTTP) 插件或 [pawn-requests](https://github.com/Southclaws/pawn-requests) 插件替代
 
 :::
 
@@ -23,7 +23,7 @@ tags: ["数据报文"]
 
 ## 返回值
 
-本函数总是返回 **0**
+此函数总是返回 **0**
 
 ## 注意事项
 

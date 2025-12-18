@@ -1,7 +1,7 @@
 ---
 title: OnVehicleDamageStatusUpdate
 sidebar_label: OnVehicleDamageStatusUpdate
-description: 当车辆部件（车门/轮胎/面板/车灯）的损坏状态发生变更时触发该回调函数。
+description: 当车辆部件（车门/轮胎/面板/车灯）的损坏状态发生变更时触发此回调函数。
 tags: ["车辆"]
 ---
 
@@ -13,9 +13,9 @@ tags: ["车辆"]
 
 ## 描述
 
-当车辆部件（车门、轮胎、面板或车灯）的损坏状态发生变更时触发该回调函数。
+当车辆部件（车门、轮胎、面板或车灯）的损坏状态发生变更时触发此回调函数。
 
-| 参数名    | 说明                                                 |
+| 参数      | 说明                                                 |
 | --------- | ---------------------------------------------------- |
 | vehicleid | 损坏状态发生变化的车辆ID                             |
 | playerid  | 同步损坏状态变更的玩家ID（造成损坏或修复车辆的玩家） |
@@ -25,7 +25,7 @@ tags: ["车辆"]
 **1** - 阻止其他滤镜脚本接收此回调  
 **0** - 允许此回调传递给其他滤镜脚本
 
-该回调始终在滤镜脚本中优先触发。
+此回调始终在滤镜脚本中优先触发。
 
 ## 示例
 
@@ -54,13 +54,13 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 
 :::tip
 
-本回调不包含车辆生命值（Health）变化的检测
+此回调不包含车辆生命值（Health）变化的检测
 
 :::
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus): 获取车辆各部件损坏状态
 - [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus): 更新车辆损坏状态

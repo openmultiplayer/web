@@ -1,7 +1,7 @@
 ---
 title: OnPlayerPickUpPlayerPickup
 sidebar_label: OnPlayerPickUpPlayerPickup
-description: 当玩家拾取通过CreatePlayerPickup创建的玩家拾取物时触发该回调函数
+description: 当玩家拾取通过CreatePlayerPickup创建的玩家拾取物时触发此回调函数
 tags: ["玩家", "拾取物", "玩家拾取物"]
 ---
 
@@ -9,16 +9,16 @@ tags: ["玩家", "拾取物", "玩家拾取物"]
 
 ## 描述
 
-当玩家拾取通过[CreatePlayerPickup](../functions/CreatePlayerPickup)创建的玩家专属拾取物时触发该回调函数。
+当玩家拾取通过[CreatePlayerPickup](../functions/CreatePlayerPickup)创建的玩家专属拾取物时触发此回调函数。
 
-| 参数名   | 说明                                                                            |
+| 参数     | 说明                                                                            |
 | -------- | ------------------------------------------------------------------------------- |
 | playerid | 拾取玩家专属拾取物的玩家ID                                                      |
 | pickupid | 玩家专属拾取物ID（由[CreatePlayerPickup](../functions/CreatePlayerPickup)返回） |
 
 ## 返回值
 
-该回调始终在游戏模式中优先触发
+此回调始终在游戏模式中优先触发
 
 ## 示例
 
@@ -60,14 +60,14 @@ public OnPlayerPickUpPlayerPickup(playerid, pickupid)
 
 ## 相关回调
 
-以下回调函数可能与本回调相关：
+以下回调函数可能与此回调相关：
 
 - [OnPlayerPickupStreamIn](OnPlayerPickupStreamIn): 当玩家专属拾取物流加载时触发
 - [OnPlayerPickupStreamOut](OnPlayerPickupStreamOut): 当玩家专属拾取物流卸载时触发
 
 ## 相关函数
 
-以下函数可能与本回调函数相关：
+以下函数可能与此回调函数相关：
 
 - [CreatePlayerPickup](../functions/CreatePlayerPickup): 创建玩家专属拾取物
 - [DestroyPlayerPickup](../functions/DestroyPlayerPickup): 销毁玩家专属拾取物

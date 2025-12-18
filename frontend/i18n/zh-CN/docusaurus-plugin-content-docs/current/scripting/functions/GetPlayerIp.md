@@ -9,7 +9,7 @@ tags: ["玩家", "IP地址"]
 
 获取指定玩家的 IP 地址并存储到字符串数组中
 
-| 参数名           | 说明                                     |
+| 参数             | 说明                                     |
 | ---------------- | ---------------------------------------- |
 | playerid         | 需要获取 IP 地址的玩家 ID                |
 | ip[]             | 存储 IP 地址的字符串数组（通过引用传递） |
@@ -28,7 +28,7 @@ public OnPlayerConnect(playerid)
     GetPlayerIp(playerid, ipAddress, sizeof(ipAddress));
     if (!strcmp(ipAddress, "127.0.0.1"))
     {
-        SendClientMessage(playerid, 0xFFFFFFFF, "欢迎来到您的服务器，管理员 :)");
+        SendClientMessage(playerid, 0xFFFFFFFF, "欢迎来到你的服务器，管理员 :)");
     }
     return 1;
 }

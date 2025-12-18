@@ -2,7 +2,7 @@
 title: IsValidServerRule
 sidebar_label: IsValidServerRule
 description: 检测服务器规则有效性
-tags: ["服务器规则"]
+tags: ["规则"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
@@ -11,7 +11,7 @@ tags: ["服务器规则"]
 
 检测指定服务器规则是否有效。
 
-| 参数名       | 说明                   |
+| 参数         | 说明                   |
 | ------------ | ---------------------- |
 | const rule[] | 待检测的服务器规则名称 |
 

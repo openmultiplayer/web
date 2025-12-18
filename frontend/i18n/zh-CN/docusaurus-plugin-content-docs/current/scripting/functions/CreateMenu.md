@@ -9,7 +9,7 @@ tags: ["菜单"]
 
 创建基础菜单容器，用于构建玩家交互界面。
 
-| 参数名             | 说明                                          |
+| 参数               | 说明                                          |
 | ------------------ | --------------------------------------------- |
 | const title[]      | 菜单标题（最大 31 字符，超长自动截断）        |
 | columns            | 列数（仅支持 0 和 1 两列）                    |
@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::tip
 
-- 本函数仅创建菜单容器，需调用[ShowMenuForPlayer](ShowMenuForPlayer)显示
+- 此函数仅创建菜单容器，需调用[ShowMenuForPlayer](ShowMenuForPlayer)显示
 - 实际仅支持 0 和 1 两列配置
 - 标题超过 32 字符将自动截断为 30 字符
 

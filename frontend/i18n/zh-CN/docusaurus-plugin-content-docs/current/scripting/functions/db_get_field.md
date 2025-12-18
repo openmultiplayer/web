@@ -2,17 +2,22 @@
 title: db_get_field
 sidebar_label: db_get_field
 description: 从db_query结果中获取字段内容
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNoteZH_CN />
+
+:::warning
+
+此函数已弃用，请使用 [DB_GetFieldString](DB_GetFieldString)。
+
+:::
 
 ## 描述
 
 从[db_query](db_query)结果集中获取指定字段的内容。
 
-| 参数名            | 说明                                       |
+| 参数              | 说明                                       |
 | ----------------- | ------------------------------------------ |
 | DBResult:dbresult | 查询结果句柄（由[db_query](db_query)返回） |
 | field             | 目标字段索引                               |
@@ -27,7 +32,7 @@ keywords:
 ## 示例
 
 ```c
-// 示例模块
+// examples.inc
 
 // ...
 
@@ -91,7 +96,7 @@ Examples_ListNames(DB:dbConnectionHandle)
 ```
 
 ```c
-// 主游戏模式文件
+// mode.pwn
 
 // ...
 
@@ -108,6 +113,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = db_open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");

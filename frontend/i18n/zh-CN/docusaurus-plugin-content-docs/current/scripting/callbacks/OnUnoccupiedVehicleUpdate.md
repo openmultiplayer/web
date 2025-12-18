@@ -1,18 +1,18 @@
 ---
 title: OnUnoccupiedVehicleUpdate
 sidebar_label: OnUnoccupiedVehicleUpdate
-description: 当玩家的客户端同步未驾驶车辆的位置时触发该回调函数。
+description: 当玩家的客户端同步未驾驶车辆的位置时触发此回调函数。
 tags: ["车辆"]
 ---
 
 ## 描述
 
-当玩家的客户端同步其未驾驶车辆的位置时触发该回调函数。触发场景包括：
+当玩家的客户端同步其未驾驶车辆的位置时触发此回调函数。触发场景包括：
 
 - 玩家处于车辆外部时
 - 玩家作为乘客乘坐无驾驶员车辆时
 
-| 参数名         | 说明                                                                                  |
+| 参数           | 说明                                                                                  |
 | -------------- | ------------------------------------------------------------------------------------- |
 | vehicleid      | 被同步位置的车辆ID                                                                    |
 | playerid       | 发起位置同步的玩家ID                                                                  |
@@ -29,7 +29,7 @@ tags: ["车辆"]
 0 - 阻止其他脚本处理此同步事件  
 1 - 允许正常处理同步数据
 
-该回调始终在滤镜脚本中优先触发。
+此回调始终在滤镜脚本中优先触发。
 
 ## 示例
 
@@ -51,20 +51,20 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 :::warning
 
-- 本回调触发频率极高（每秒多次/每个车辆），请避免在此执行复杂计算或文件操作
+- 此回调触发频率极高（每秒多次/每个车辆），请避免在此执行复杂计算或文件操作
 - [GetVehiclePos](../functions/GetVehiclePos) 将返回同步前的旧坐标
 
 :::
 
 ## 相关回调
 
-以下回调可能与该回调存在关联：
+以下回调可能与此回调存在关联：
 
 - [OnTrailerUpdate](OnTrailerUpdate): 当拖车位置同步时触发
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [SetVehiclePos](../functions/SetVehiclePos): 强制设置车辆位置
 - [GetVehicleVelocity](../functions/GetVehicleVelocity): 获取车辆速度向量

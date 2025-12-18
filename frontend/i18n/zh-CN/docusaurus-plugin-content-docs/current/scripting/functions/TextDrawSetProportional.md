@@ -1,22 +1,22 @@
 ---
 title: TextDrawSetProportional
 sidebar_label: TextDrawSetProportional
-description: 该函数用于将文本间距按比例缩放。
+description: 此函数用于将文本间距按比例缩放。
 tags: ["文本绘图"]
 ---
 
 ## 描述
 
-该函数用于将文本间距按比例缩放。当使用 TextDrawLetterSize 时特别有用，可确保字符间距均匀分布。
+此函数用于将文本间距按比例缩放。当使用 TextDrawLetterSize 时特别有用，可确保字符间距均匀分布。
 
-| 参数名            | 说明                                |
+| 参数              | 说明                                |
 | ----------------- | ----------------------------------- |
 | Text:textid       | 需要设置比例缩放的文本绘图 ID       |
 | bool:proportional | 设为'true'启用比例缩放，'false'禁用 |
 
 ## 返回值
 
-本函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::tip
 
-- 比例缩放默认启用（设为**true**），若不需要禁用可跳过本函数
+- 比例缩放默认启用（设为**true**），若不需要禁用可跳过此函数
 - 修改已显示的文本绘图比例时无需重建，只需通过[TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll)刷新即可生效
 
 :::

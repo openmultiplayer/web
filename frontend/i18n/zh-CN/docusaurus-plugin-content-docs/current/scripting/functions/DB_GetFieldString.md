@@ -2,16 +2,14 @@
 title: DB_GetFieldString
 sidebar_label: DB_GetFieldString
 description: 通过字段索引从DB_ExecuteQuery结果中获取字符串数据。
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
 ## 描述
 
-该函数用于通过字段索引从[DB_ExecuteQuery](DB_ExecuteQuery)分配的查询结果中获取字符串数据。
+此函数用于通过字段索引从[DB_ExecuteQuery](DB_ExecuteQuery)分配的查询结果中获取字符串数据。
 
-| 参数名                 | 说明                                                     |
+| 参数                   | 说明                                                     |
 | ---------------------- | -------------------------------------------------------- |
 | DBResult:result        | 查询结果句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)返回） |
 | field                  | 目标字段索引                                             |
@@ -26,7 +24,7 @@ tags: ["sqlite"]
 ## 示例
 
 ```c
-// 示例模块
+// examples.inc
 
 // ...
 
@@ -89,7 +87,7 @@ Examples_ListNames(DB:dbConnectionHandle)
 ```
 
 ```c
-// 主游戏模式文件
+// mode.pwn
 
 // ...
 
@@ -106,6 +104,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = DB_Open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");
@@ -124,7 +123,8 @@ public OnGameModeExit()
     // 关闭数据库连接
     if (DB_Close(gDBConnectionHandle))
     {
-        gDBConnectionHandle = DB:0; // 重置句柄
+        // 重置句柄
+        gDBConnectionHandle = DB:0;
     }
     return 1;
 }

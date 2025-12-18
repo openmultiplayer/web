@@ -7,7 +7,7 @@ tags: ["车辆"]
 
 :::info
 
-本函数基于世界坐标系而非局部坐标系。如需进行局部坐标系角速度调整，必须基于[车辆旋转四元数](GetVehicleRotationQuat)应用旋转矩阵。
+此函数基于世界坐标系而非局部坐标系。如需进行局部坐标系角速度调整，必须基于[GetVehicleRotationQuat](GetVehicleRotationQuat)应用旋转矩阵。
 
 :::
 
@@ -15,7 +15,7 @@ tags: ["车辆"]
 
 设置车辆在 X、Y、Z 轴上的角速度
 
-| 名称      | 说明                  |
+| 参数      | 说明                  |
 | --------- | --------------------- |
 | vehicleid | 要设置角速度的车辆 ID |
 | Float:x   | X 轴方向的角速度量    |
@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-本函数对无人车辆无效且不影响火车。
+此函数对无人车辆无效且不影响火车。
 
 :::
 

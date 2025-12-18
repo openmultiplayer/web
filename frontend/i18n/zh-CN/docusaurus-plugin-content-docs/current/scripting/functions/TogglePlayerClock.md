@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 切换指定玩家的游戏内时钟显示（位于右上角）。启用后，游戏时间将以每分钟对应现实一秒的速度推进。使用[SetWeather](SetWeather)/[SetPlayerWeather](SetPlayerWeather)设置天气时，天气效果将呈现渐变过渡。
 
-| 名称        | 描述                                            |
+| 参数        | 说明                                            |
 | ----------- | ----------------------------------------------- |
 | playerid    | 需要启用/禁用时钟的玩家 ID                      |
 | bool:toggle | 显示时钟设为'true'，隐藏设为'false'（默认隐藏） |
@@ -43,4 +43,4 @@ public OnPlayerConnect(playerid)
 
 - [GetPlayerTime](GetPlayerTime): 获取玩家的当前时间
 - [SetPlayerTime](SetPlayerTime): 设置玩家的个性化时间
-- [SetWorldTime](SetWorldTime): 设置服务器全局时间
+- [SetWorldTime](SetWorldTime): 设置服务器全局世界时间

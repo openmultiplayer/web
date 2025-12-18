@@ -9,7 +9,7 @@ tags: ["玩家", "车辆"]
 
 将玩家强制移出当前所在的车辆。
 
-| 参数名     | 说明                                  |
+| 参数       | 说明                                  |
 | ---------- | ------------------------------------- |
 | playerid   | 需要移出车辆的玩家 ID                 |
 | bool:force | 是否强制立即移出车辆（默认：`false`） |
@@ -39,8 +39,8 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 :::tip
 
 - 退出车辆的动画效果不会同步给其他玩家
-- 该函数在[OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle)回调中无效，因为此时玩家尚未进入车辆。请改用[OnPlayerStateChange](../callbacks/OnPlayerStateChange)回调（参见上方示例）
-- 如果玩家正在遥控车（RC）中，该函数不会生效（需使用`.force = true`参数或[ClearAnimations](ClearAnimations)函数）
+- 此函数在[OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle)回调中无效，因为此时玩家尚未进入车辆。请改用[OnPlayerStateChange](../callbacks/OnPlayerStateChange)回调（参见上方示例）
+- 如果玩家正在遥控车（RC）中，此函数不会生效（需使用`.force = true`参数或[ClearAnimations](ClearAnimations)函数）
 
 :::
 

@@ -7,7 +7,7 @@ tags: []
 
 ## 描述
 
-该函数允许 NPC 发送聊天消息，类似于[SendPlayerMessageToAll](SendPlayerMessageToAll)，但专用于 NPC 脚本内部使用。
+此函数允许 NPC 发送聊天消息，类似于[SendPlayerMessageToAll](SendPlayerMessageToAll)，但专用于 NPC 脚本内部使用。
 
 | 参数名 | 说明                 |
 | ------ | -------------------- |

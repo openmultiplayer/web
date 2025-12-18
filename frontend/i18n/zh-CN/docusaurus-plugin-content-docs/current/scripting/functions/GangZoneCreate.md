@@ -9,7 +9,7 @@ tags: ["帮派区域"]
 
 创建帮派区域（彩色雷达区域）。
 
-| 参数名     | 说明                      |
+| 参数       | 说明                      |
 | ---------- | ------------------------- |
 | Float:minX | 帮派区域西侧边界的 X 坐标 |
 | Float:minY | 帮派区域南侧边界的 Y 坐标 |
@@ -56,7 +56,7 @@ public OnGameModeInit()
 
 :::tip
 
-本函数仅创建帮派区域，需使用[GangZoneShowForPlayer](GangZoneShowForPlayer)或[GangZoneShowForAll](GangZoneShowForAll)进行显示
+此函数仅创建帮派区域，需使用[GangZoneShowForPlayer](GangZoneShowForPlayer)或[GangZoneShowForAll](GangZoneShowForAll)进行显示
 
 :::
 

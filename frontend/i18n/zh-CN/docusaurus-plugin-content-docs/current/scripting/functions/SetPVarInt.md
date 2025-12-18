@@ -2,14 +2,14 @@
 title: SetPVarInt
 sidebar_label: SetPVarInt
 description: 设置整数型玩家变量。
-tags: ["玩家变量", "pvar"]
+tags: ["玩家变量"]
 ---
 
 ## 描述
 
 设置一个整数类型的玩家变量。
 
-| 参数名       | 说明                       |
+| 参数         | 说明                       |
 | ------------ | -------------------------- |
 | playerid     | 需要设置变量的玩家 ID      |
 | const pvar[] | 变量名称（需用双引号包裹） |
@@ -35,7 +35,7 @@ printf("当前金钱: %d", GetPVarInt(playerid, "Money"));
 
 :::tip
 
-玩家变量在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)回调触发前不会被重置，因此在该回调中仍可访问变量值。
+玩家变量在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)回调触发前不会被重置，因此在此回调中仍可访问变量值。
 
 :::
 

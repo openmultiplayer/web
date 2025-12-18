@@ -2,7 +2,7 @@
 title: PlayerGangZoneGetColour
 sidebar_label: PlayerGangZoneGetColour
 description: 获取玩家专属帮派区域的颜色值
-tags: ["玩家", "帮派区域", "玩家专属帮派区域"]
+tags: ["玩家", "帮派区域", "玩家帮派区域"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />

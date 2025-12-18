@@ -13,7 +13,7 @@ tags: ["玩家", "车辆"]
 
 ## 参数说明
 
-| 名称     | 说明      |
+| 参数     | 说明      |
 | -------- | --------- |
 | playerid | 玩家的 ID |
 
@@ -21,7 +21,7 @@ tags: ["玩家", "车辆"]
 
 ```c
 new Float:speed = GetPlayerTrainSpeed(playerid);
-SendClientMessage(playerid, 0xFFFF00FF, "您的火车当前速度：%f", speed);
+SendClientMessage(playerid, 0xFFFF00FF, "你的火车当前速度：%f", speed);
 ```
 
 ## 相关函数

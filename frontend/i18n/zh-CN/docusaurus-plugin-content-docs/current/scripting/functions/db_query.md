@@ -2,17 +2,22 @@
 title: db_query
 sidebar_label: db_query
 description: 在已打开的SQLite数据库上执行SQL查询语句。
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNoteZH_CN />
 
+:::warning
+
+此函数已弃用，请使用 [DB_ExecuteQuery](DB_ExecuteQuery)。
+
+:::
+
 ## 描述
 
-该函数用于在已建立的 SQLite 数据库连接上执行 SQL 查询。
+此函数用于在已建立的 SQLite 数据库连接上执行 SQL 查询。
 
-| 参数名  | 描述                  |
+| 参数    | 说明                  |
 | ------- | --------------------- |
 | DB:db   | 数据库连接句柄        |
 | query[] | 要执行的 SQL 查询语句 |
@@ -59,6 +64,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = db_open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");

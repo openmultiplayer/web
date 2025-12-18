@@ -1,15 +1,15 @@
 ---
 title: OnTrailerUpdate
 sidebar_label: OnTrailerUpdate
-description: 当玩家发送拖车状态更新时触发该回调函数。
+description: 当玩家发送拖车状态更新时触发此回调函数。
 tags: ["车辆"]
 ---
 
 ## 描述
 
-当玩家客户端发送拖车状态同步数据时触发该回调函数。
+当玩家客户端发送拖车状态同步数据时触发此回调函数。
 
-| 参数名    | 说明                     |
+| 参数      | 说明                     |
 | --------- | ------------------------ |
 | playerid  | 发送拖车状态更新的玩家ID |
 | vehicleid | 被更新的拖车ID           |
@@ -20,7 +20,7 @@ tags: ["车辆"]
 
 1 - 正常处理拖车更新并同步给所有玩家
 
-该回调始终在滤镜脚本中优先触发。
+此回调始终在滤镜脚本中优先触发。
 
 ## 示例
 
@@ -36,19 +36,19 @@ public OnTrailerUpdate(playerid, vehicleid)
 
 :::warning
 
-本回调触发频率极高（每秒多次/每个拖车），请避免在此执行复杂计算或文件读写操作
+此回调触发频率极高（每秒多次/每个拖车），请避免在此执行复杂计算或文件读写操作
 
 :::
 
 ## 相关回调
 
-以下回调可能与该回调存在关联：
+以下回调可能与此回调存在关联：
 
 - [OnUnoccupiedVehicleUpdate](OnUnoccupiedVehicleUpdate): 当无驾驶员车辆位置同步时触发
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [GetVehicleTrailer](../functions/GetVehicleTrailer): 获取车辆牵引的拖车ID
 - [IsTrailerAttachedToVehicle](../functions/IsTrailerAttachedToVehicle): 检测拖车是否连接
