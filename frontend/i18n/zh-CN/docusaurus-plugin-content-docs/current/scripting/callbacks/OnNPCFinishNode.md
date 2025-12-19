@@ -19,8 +19,10 @@ tags: ["npc", "节点", "导航"]
 ## 示例
 
 ```c
-public OnNPCFinishNodePoint(npcid, nodeid, pointid)
+public OnNPCFinishNode(npcid, nodeid)
 {
+    printf("[NPC] NPC %d 完成节点 %d", npcid, nodeid);
+
     // 通知追踪此 NPC 的玩家
     for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
@@ -29,7 +31,7 @@ public OnNPCFinishNodePoint(npcid, nodeid, pointid)
 
         if (PlayerNPC[playerid] == npcid)
         {
-            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d 到达节点 %d 的点 %d", npcid, nodeid, pointid);
+            SendClientMessage(playerid, 0x00FF00FF, "NPC %d 完成节点 %d", npcid, nodeid);
         }
     }
     return 1;
