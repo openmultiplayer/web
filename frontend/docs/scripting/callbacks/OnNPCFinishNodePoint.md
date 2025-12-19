@@ -20,10 +20,8 @@ This callback is called when an NPC reaches a specific point during node-based n
 ## Examples
 
 ```c
-public OnNPCFinishNode(npcid, nodeid)
+public OnNPCFinishNodePoint(npcid, nodeid, pointid)
 {
-    printf("[NPC] NPC %d finished node %d", npcid, nodeid);
-
     // Notify players tracking this NPC
     for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
     {
@@ -32,7 +30,7 @@ public OnNPCFinishNode(npcid, nodeid)
 
         if (PlayerNPC[playerid] == npcid)
         {
-            SendClientMessage(playerid, 0x00FF00FF, "NPC %d finished node %d", npcid, nodeid);
+            SendClientMessage(playerid, 0xFFFF00FF, "NPC %d reached node %d point %d", npcid, nodeid, pointid);
         }
     }
     return 1;
