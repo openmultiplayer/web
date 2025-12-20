@@ -1,0 +1,109 @@
+name: Mark Translations as Potentially Outdated
+
+on:
+  pull_request:
+    paths:
+      - 'frontend/docs/**/*.md'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  mark-outdated:
+    name: Mark translations outdated
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Get changed English documentation files
+        id: changed-files
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep "^frontend/docs/.*\.md$" || echo "")
+
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "$CHANGED_FILES" > changed_english_docs.txt
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Mark translations as outdated
+        if: steps.changed-files.outputs.has_changes == 'true'
+        run: |
+          node .github/workflows/scripts/mark-translations-outdated.js
+
+      - name: Check if translations were modified
+        if: steps.changed-files.outputs.has_changes == 'true'
+        id: check-changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "translations_modified=true" >> $GITHUB_OUTPUT
+          else
+            echo "translations_modified=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes
+        if: steps.check-changes.outputs.translations_modified == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add frontend/i18n/
+          git commit -m "Mark translations as potentially outdated"
+
+      - name: Push changes
+        if: steps.check-changes.outputs.translations_modified == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
+
+      - name: Comment on PR
+        if: steps.check-changes.outputs.translations_modified == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const changedFiles = fs.readFileSync('changed_english_docs.txt', 'utf8').trim().split('\n');
+            const fileList = changedFiles.map(f => `- \`${f}\``).join('\n');
+
+            let markedFilesList = '';
+            if (fs.existsSync('marked_translation_files.txt')) {
+              const markedFiles = fs.readFileSync('marked_translation_files.txt', 'utf8').trim().split('\n');
+              if (markedFiles.length > 0) {
+                const markedCount = markedFiles.length;
+                const displayFiles = markedFiles.slice(0, 20);
+                markedFilesList = '\n\n### Marked Translation Files\n\n';
+                markedFilesList += displayFiles.map(f => `- \`${f}\``).join('\n');
+                if (markedCount > 20) {
+                  markedFilesList += `\n\n*...and ${markedCount - 20} more files*`;
+                }
+              }
+            }
+
+            const body = `## 🌐 Translation Update Notice
+
+The following English documentation files were modified in this PR:
+
+${fileList}
+
+The corresponding translation files have been automatically marked as potentially outdated in this PR branch. Translators should review these changes and update translations accordingly.${markedFilesList}`;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });
