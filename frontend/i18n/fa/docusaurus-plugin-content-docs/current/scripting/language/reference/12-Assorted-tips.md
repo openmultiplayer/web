@@ -137,7 +137,7 @@ strupper(string[])
 ```c
 
 main()
-    printf "˙  ˙\n"
+    printf "Γειάσου κόσμος\n"
 
 ```
 

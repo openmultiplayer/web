@@ -138,7 +138,7 @@ Listing: “hello world” in Greek
 ```c
 
 main()
-    printf "˙  ˙\n"
+    printf "Γειάσου κόσμος\n"
 
 ```
 
