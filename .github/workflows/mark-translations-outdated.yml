@@ -77,7 +77,7 @@ jobs:
           script: |
             const fs = require('fs');
             const changedFiles = fs.readFileSync('changed_english_docs.txt', 'utf8').trim().split('\n');
-            const fileList = changedFiles.map(f => `- \`${f}\``).join('\n');
+            const fileList = changedFiles.map(f => `- \`${ f }\``).join('\n');
 
             let markedFilesList = '';
             if (fs.existsSync('marked_translation_files.txt')) {
@@ -86,20 +86,20 @@ jobs:
                 const markedCount = markedFiles.length;
                 const displayFiles = markedFiles.slice(0, 20);
                 markedFilesList = '\n\n### Marked Translation Files\n\n';
-                markedFilesList += displayFiles.map(f => `- \`${f}\``).join('\n');
+                markedFilesList += displayFiles.map(f => `- \`${ f }\``).join('\n');
                 if (markedCount > 20) {
-                  markedFilesList += `\n\n*...and ${markedCount - 20} more files*`;
+                  markedFilesList += `\n\n*...and ${ markedCount - 20 } more files*`;
                 }
               }
             }
 
             const body = `## 🌐 Translation Update Notice
 
-The following English documentation files were modified in this PR:
+            The following English documentation files were modified in this PR:
 
-${fileList}
+            ${ fileList }
 
-The corresponding translation files have been automatically marked as potentially outdated in this PR branch. Translators should review these changes and update translations accordingly.${markedFilesList}`;
+            The corresponding translation files have been automatically marked as potentially outdated in this PR branch. Translators should review these changes and update translations accordingly.${ markedFilesList }`;
 
             github.rest.issues.createComment({
               issue_number: context.issue.number,
