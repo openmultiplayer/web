@@ -12,7 +12,7 @@ tags: ["player", "dialog"]
 Get the data of the dialog currently show to the player.
 
 | Name                | Description                                                             |
-|---------------------|-------------------------------------------------------------------------|
+| ------------------- | ----------------------------------------------------------------------- |
 | playerid            | The ID of the player to get the data.                                   |
 | &DIALOG_STYLE:style | A variable into which to store the style, passed by reference.          |
 | title[]             | An array variable into which to store the title, passed by reference.   |
@@ -40,7 +40,7 @@ enum
 
 ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Enter your password below:", "Login", "Cancel");
 
-new 
+new
     DIALOG_STYLE:style,
     title[32],
     body[64],

@@ -11,7 +11,7 @@ tags: ["车辆"]
 
 禁用玩家已占用车辆之间的碰撞检测。
 
-| 名称         | 描述                           |
+| 参数         | 说明                           |
 | ------------ | ------------------------------ |
 | playerid     | 要设置碰撞状态的玩家 ID        |
 | bool:disable | true 禁用碰撞 / false 启用碰撞 |
@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new string[64];
 
-        format(string, sizeof(string), "您的车辆碰撞状态已设置为「%s」", (gPlayerVehicleCollision[playerid] == false) ? ("禁用") : ("启用"));
+        format(string, sizeof(string), "你的车辆碰撞状态已设置为「%s」", (gPlayerVehicleCollision[playerid] == false) ? ("禁用") : ("启用"));
         SendClientMessage(playerid, 0xFFFFFFFF, string);
 
         gPlayerVehicleCollision[playerid] = !gPlayerVehicleCollision[playerid];

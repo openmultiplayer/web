@@ -11,7 +11,7 @@ tags: ["菜单"]
 
 获取菜单在屏幕上的 X/Y 坐标位置。
 
-| 参数名      | 说明                                    |
+| 参数        | 说明                                    |
 | ----------- | --------------------------------------- |
 | Menu:menuid | 要获取位置的菜单 ID                     |
 | &Float:x    | 浮点变量（引用传递），用于存储 X 轴坐标 |
@@ -19,7 +19,7 @@ tags: ["菜单"]
 
 ## 返回值
 
-本函数始终返回 true。
+此函数始终返回 true。
 
 ## 示例代码
 
@@ -30,4 +30,4 @@ GetMenuPos(menuid, x, y);  // 获取菜单位置坐标
 
 ## 相关函数
 
-- [GetMenuColumnWidth](GetMenuColumnWidth.md): 获取菜单列宽
+- [GetMenuColumnWidth](GetMenuColumnWidth): 获取菜单列宽

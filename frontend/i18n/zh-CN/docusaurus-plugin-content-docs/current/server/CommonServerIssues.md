@@ -5,11 +5,11 @@ sidebar_label: 常见服务器问题
 
 ## 服务器启动后立即崩溃
 
-最常见的原因是 server.cfg 文件存在错误或游戏模式文件缺失。请检查 server_log.txt 文件，崩溃原因通常位于文件末尾。若未找到，请检查 crashinfo.txt 文件。更有效的排查方式是使用 Zeex/0x5A656578 开发的 Crash detect 插件（[点击获取链接](https://github.com/Zeex/samp-plugin-crashdetect)），该插件可提供行号、函数名、参数值等详细信息。建议在调试模式（-d3 参数）下编译脚本，使编译器在输出的.amx 文件中包含额外调试信息。
+最常见的原因是 server.cfg 文件存在错误或游戏模式文件缺失。请检查 server_log.txt 文件，崩溃原因通常位于文件末尾。若未找到，请检查 crashinfo.txt 文件。更有效的排查方式是使用 Zeex/0x5A656578 开发的 Crash detect 插件（[点击获取链接](https://github.com/AmyrAhmady/samp-plugin-crashdetect)），该插件可提供行号、函数名、参数值等详细信息。建议在调试模式（-d3 参数）下编译脚本，使编译器在输出的.amx 文件中包含额外调试信息。
 
 ## 服务器无法运行 - 防火墙已关闭
 
-您需要进行端口转发以允许玩家加入服务器。推荐使用 [PF Port Checker](http://www.portforward.com) 进行端口转发。若端口未转发，需在路由器中开启端口。可参考[路由器列表](http://portforward.com/english/routers/port_forwarding/routerindex.htm)。
+你需要进行端口转发以允许玩家加入服务器。推荐使用 [PF Port Checker](https://portforward.com) 进行端口转发。若端口未转发，需在路由器中开启端口。可参考[路由器列表](https://portforward.com/router.htm)。
 
 该网站包含完整的端口转发教程。
 
@@ -63,7 +63,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 当乱序消息数量触发 messageholelimit 设置时出现。
 
-更多信息请参阅[此文档](ControllingServer#RCON_Commands)
+更多信息请参阅[此文档](ControllingServer#rcon-commands)
 
 ## 玩家持续收到"昵称不合法"错误但实际有效
 

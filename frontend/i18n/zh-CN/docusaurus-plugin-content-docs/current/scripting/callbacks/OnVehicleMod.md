@@ -1,15 +1,15 @@
 ---
 title: OnVehicleMod
 sidebar_label: OnVehicleMod
-description: 当车辆被改装时触发该回调函数。
+description: 当车辆被改装时触发此回调函数。
 tags: ["车辆"]
 ---
 
 ## 描述
 
-当车辆被改装（添加组件）时触发该回调函数。
+当车辆被改装（添加组件）时触发此回调函数。
 
-| 参数名      | 说明                           |
+| 参数        | 说明                           |
 | ----------- | ------------------------------ |
 | playerid    | 进行改装的玩家ID（车辆驾驶员） |
 | vehicleid   | 被改装的车辆ID                 |
@@ -17,7 +17,7 @@ tags: ["车辆"]
 
 ## 返回值
 
-该回调始终在游戏模式中优先触发，返回0将阻止其他滤镜脚本处理此事件。
+此回调始终在游戏模式中优先触发，返回0将阻止其他滤镜脚本处理此事件。
 
 ## 示例
 
@@ -40,13 +40,13 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::tip
 
-本回调不会通过 [AddVehicleComponent](../functions/AddVehicleComponent) 函数触发
+此回调不会通过 [AddVehicleComponent](../functions/AddVehicleComponent) 函数触发
 
 :::
 
 ## 相关回调
 
-以下回调可能与该回调存在关联：
+以下回调可能与此回调存在关联：
 
 - [OnEnterExitModShop](OnEnterExitModShop): 当车辆进入/离开改装店时触发
 - [OnVehiclePaintjob](OnVehiclePaintjob): 当车辆涂装变更时触发
@@ -54,7 +54,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [AddVehicleComponent](../functions/AddVehicleComponent): 为车辆添加改装组件
 - [RemoveVehicleComponent](../functions/RemoveVehicleComponent): 移除车辆的改装组件

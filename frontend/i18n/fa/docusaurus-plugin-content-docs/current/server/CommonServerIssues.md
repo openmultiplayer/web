@@ -5,11 +5,11 @@ sidebar_label: مشکلات رایج سرور
 
 ## سرور بلافاصله پس از شروع کرش می‌کند
 
-معمولاً خطایی در فایل server.cfg شما یا گیم مود شما گم شده است. فایل server_log.txt را بررسی کنید و دلیل باید در پایین قرار گرفته باشد. اگر نبود، فایل crashinfo.txt را بررسی کنید. راه‌حل بهتر برای پیدا کردن علت کرش استفاده از پلاگین Crash detect توسط Zeex/0x5A656578 ([لینک](https://github.com/Zeex/samp-plugin-crashdetect)) است که اطلاعات بیشتری مثل شماره خطوط، نام توابع، مقادیر پارامتر و غیره خواهد داد. اگر اسکریپت در حالت debug کامپایل شده باشد (فلگ -d3) تا کامپایلر اطلاعات اضافی در مورد همه این موارد را در خروجی .amx قرار دهد.
+معمولاً خطایی در فایل server.cfg شما یا گیم مود شما گم شده است. فایل server_log.txt را بررسی کنید و دلیل باید در پایین قرار گرفته باشد. اگر نبود، فایل crashinfo.txt را بررسی کنید. راه‌حل بهتر برای پیدا کردن علت کرش استفاده از پلاگین Crash detect توسط Zeex/0x5A656578 ([لینک](https://github.com/AmyrAhmady/samp-plugin-crashdetect)) است که اطلاعات بیشتری مثل شماره خطوط، نام توابع، مقادیر پارامتر و غیره خواهد داد. اگر اسکریپت در حالت debug کامپایل شده باشد (فلگ -d3) تا کامپایلر اطلاعات اضافی در مورد همه این موارد را در خروجی .amx قرار دهد.
 
 ## سرور کار نمی‌کند - فایروال غیرفعال است
 
-شما باید پورت‌های خود را forward کنید تا بازیکنان بتوانند به سرور شما بپیوندند. می‌توانید پورت‌های خود را با استفاده از PF Port Checker forward کنید. آن را از: www.portforward.com دانلود کنید اگر پورت‌ها forward نشده‌اند به این معنی است که باید آنها را در روتر خود باز کنید. می‌توانید فهرست روتر را در [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm "http://portforward.com/english/routers/port_forwarding/routerindex.htm") بررسی کنید
+شما باید پورت‌های خود را forward کنید تا بازیکنان بتوانند به سرور شما بپیوندند. می‌توانید پورت‌های خود را با استفاده از PF Port Checker forward کنید. آن را از: www.portforward.com دانلود کنید اگر پورت‌ها forward نشده‌اند به این معنی است که باید آنها را در روتر خود باز کنید. می‌توانید فهرست روتر را در [https://portforward.com/router.htm](https://portforward.com/router.htm) بررسی کنید
 
 همه اطلاعات در مورد نحوه forward کردن پورت‌ها را دارد.
 
@@ -63,7 +63,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 نشان داده می‌شود زمانی اتفاق می‌افتد که 'پیام‌های خارج از ترتیب' از تنظیم messageholelimit دوباره استفاده می‌کند.
 
-برای اطلاعات بیشتر در مورد این موضوع، به [اینجا](ControllingServer#RCON_Commands) مراجعه کنید
+برای اطلاعات بیشتر در مورد این موضوع، به [اینجا](ControllingServer#rcon-commands) مراجعه کنید
 
 ## بازیکنان مدام خطای "Unacceptable NickName" دریافت می‌کنند اما معتبر است
 

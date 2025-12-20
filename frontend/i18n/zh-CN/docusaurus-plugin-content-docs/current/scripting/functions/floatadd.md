@@ -11,7 +11,7 @@ tags: ["数学", "浮点数"]
 
 将两个浮点数相加。此函数功能与标准运算符(+)重复。
 
-| 名称          | 描述         |
+| 参数          | 说明         |
 | ------------- | ------------ |
 | Float:Number1 | 第一个浮点数 |
 | Float:Number2 | 第二个浮点数 |
@@ -34,6 +34,6 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [Floatsub](Floatsub): 浮点数减法运算
-- [Floatmul](Floatmul): 浮点数乘法运算
-- [Floatdiv](Floatdiv): 浮点数除法运算
+- [floatsub](floatsub): 浮点数减法运算
+- [floatmul](floatmul): 浮点数乘法运算
+- [floatdiv](floatdiv): 浮点数除法运算

@@ -11,18 +11,18 @@ tags: ["玩家", "对话框"]
 
 获取当前显示给玩家的对话框完整配置数据
 
-| 参数名              | 说明                                         |
+| 参数                | 说明                                         |
 | ------------------- | -------------------------------------------- |
 | playerid            | 需要获取数据的玩家 ID                        |
 | &DIALOG_STYLE:style | 存储对话框样式的枚举变量（通过引用传递）     |
 | title[]             | 存储标题文本的数组变量（通过引用传递）       |
-| titleSize           | 标题数组的长度                         |
+| titleSize           | 标题数组的长度                               |
 | body[]              | 存储内容文本的数组变量（通过引用传递）       |
-| bodySize            | 内容数组的长度                         |
+| bodySize            | 内容数组的长度                               |
 | button1[]           | 存储第一个按钮文本的数组变量（通过引用传递） |
-| button1Size         | 按钮 1 数组的长度                      |
+| button1Size         | 按钮 1 数组的长度                            |
 | button2[]           | 存储第二个按钮文本的数组变量（通过引用传递） |
-| button2Size         | 按钮 2 数组的长度                      |
+| button2Size         | 按钮 2 数组的长度                            |
 
 ## 返回值
 
@@ -38,7 +38,7 @@ enum
     DIALOG_LOGIN
 }
 
-ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "登录系统", "请输入您的密码:", "登录", "取消");
+ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "登录系统", "请输入你的密码:", "登录", "取消");
 
 new
     DIALOG_STYLE:style,

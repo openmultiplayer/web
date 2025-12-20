@@ -11,7 +11,7 @@ tags: ["玩家", "物体", "玩家物体"]
 
 允许玩家通过图形用户界面（GUI）使用鼠标编辑玩家物体（位置和旋转）。
 
-| 参数名   | 说明                      |
+| 参数     | 说明                      |
 | -------- | ------------------------- |
 | playerid | 需要进行物体编辑的玩家 ID |
 | objectid | 玩家将要编辑的玩家物体 ID |
@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/edit", true))
     {
         BeginPlayerObjectEditing(playerid, gPlayerObject[playerid]);
-        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: 您现在可以编辑您的玩家物体！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：你现在可以编辑你的玩家物体！");
         return 1;
     }
     return 0;

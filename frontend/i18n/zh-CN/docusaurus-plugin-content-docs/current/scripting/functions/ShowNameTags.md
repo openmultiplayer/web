@@ -9,13 +9,13 @@ tags: []
 
 控制是否显示玩家头顶的名称标签、生命值条和护甲条。
 
-| 名称      | 说明                                        |
+| 参数      | 说明                                        |
 | --------- | ------------------------------------------- |
 | bool:显示 | 'false'禁用显示，'true'启用显示（默认启用） |
 
 ## 返回值
 
-本函数不返回任何特定值。
+此函数不返回特定值。
 
 ## 示例
 
@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 :::warning
 
-本函数只能在[OnGameModeInit](OnGameModeInit)回调中使用。其他场景请使用[ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer)。
+此函数只能在[OnGameModeInit](OnGameModeInit)回调中使用。其他场景请使用[ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer)。
 
 :::
 

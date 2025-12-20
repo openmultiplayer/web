@@ -2,7 +2,7 @@
 title: floattan
 sidebar_label: floattan
 description: 获取指定角度的正切值
-tags: ["math", "floating-point"]
+tags: ["数学", "浮点"]
 ---
 
 <LowercaseNoteZH_CN />
@@ -11,7 +11,7 @@ tags: ["math", "floating-point"]
 
 获取指定角度的正切值。输入角度可使用弧度、角度或梯度单位。
 
-| 参数名      | 说明                                                                          |
+| 参数        | 说明                                                                          |
 | ----------- | ----------------------------------------------------------------------------- |
 | Float:value | 需要计算正切值的角度                                                          |
 | anglemode   | 使用的[角度模式](../resources/anglemodes)，根据输入值的单位而定（默认：弧度） |

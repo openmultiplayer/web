@@ -11,7 +11,7 @@ tags: ["车辆"]
 
 设置车辆的生命值。当生命值降低时，引擎会先冒烟，当生命值低于 250（25%）时会出现火焰。
 
-| 参数名       | 说明                   |
+| 参数         | 说明                   |
 | ------------ | ---------------------- |
 | vehicleid    | 要设置生命值的车辆 ID  |
 | Float:health | 以浮点数值表示的生命值 |
@@ -56,7 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [RepairVehicle](RepairVehicle): 完全修复车辆
 - [SetPlayerHealth](SetPlayerHealth): 设置玩家生命值
 
-## 相关回调函数
+## 相关回调
 
 - [OnVehicleDeath](../callbacks/OnVehicleDeath): 车辆被摧毁时触发
 

@@ -2,7 +2,7 @@
 title: PlayerGangZoneGetPos
 sidebar_label: PlayerGangZoneGetPos
 description: 获取帮派区域的坐标范围（最小X/Y，最大X/Y）
-tags: ["玩家", "帮派区域", "玩家专属帮派区域"]
+tags: ["玩家", "帮派区域", "玩家帮派区域"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
@@ -22,7 +22,7 @@ tags: ["玩家", "帮派区域", "玩家专属帮派区域"]
 
 ## 返回值
 
-该函数始终返回 **true**
+此函数始终返回 **true**
 
 ## 示例
 

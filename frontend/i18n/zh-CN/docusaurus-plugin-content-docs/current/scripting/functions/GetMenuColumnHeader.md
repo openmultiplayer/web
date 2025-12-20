@@ -11,7 +11,7 @@ tags: ["菜单"]
 
 获取指定列标题中的文本内容。
 
-| 参数名                | 说明                               |
+| 参数                  | 说明                               |
 | --------------------- | ---------------------------------- |
 | Menu:menuid           | 要查询的菜单 ID                    |
 | column                | 列索引（从 0 开始计数）            |
@@ -20,7 +20,7 @@ tags: ["菜单"]
 
 ## 返回值
 
-本函数始终返回 **true**。
+此函数始终返回 **true**。
 
 ## 示例代码
 
@@ -33,4 +33,4 @@ GetMenuColumnHeader(menuid, 1, text, sizeof(text));
 
 ## 相关函数
 
-- [CreateMenu](CreateMenu.md): 创建新菜单
+- [CreateMenu](CreateMenu): 创建新菜单

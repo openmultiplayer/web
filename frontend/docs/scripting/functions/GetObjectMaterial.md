@@ -12,7 +12,7 @@ tags: ["object"]
 Get the material data from an index of the object.
 
 | Name               | Description                                                           |
-|--------------------|-----------------------------------------------------------------------|
+| ------------------ | --------------------------------------------------------------------- |
 | objectid           | The ID of the object.                                                 |
 | materialIndex      | The material index on the object. (0 to 15)                           |
 | &modelid           | A variable in which to store the model ID, passed by reference.       |
@@ -34,7 +34,7 @@ Get the material data from an index of the object.
 new objectid = CreateObject(19371, 978.71143, -925.25708, 42.63720,   0.00000, 0.00000, 2.00000);
 SetObjectMaterial(objectid, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
 
-new 
+new
     modelid,
     textureLibrary[16],
     textureName[16],

@@ -21,7 +21,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);  // 向玩家发送服务器最
 
 :::warning
 
-- 本函数不能替代 MAX_PLAYERS 宏定义
+- 此函数不能替代 MAX_PLAYERS 宏定义
 - 不可用于编译时数组大小定义
 - 应始终将 MAX_PLAYERS 宏定义为与 max_players 配置相同或更大的值
 
@@ -29,5 +29,5 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);  // 向玩家发送服务器最
 
 ## 相关函数
 
-- [GetPlayerPoolSize](GetPlayerPoolSize.md): 获取当前已连接玩家的最高 ID
-- [IsPlayerConnected](IsPlayerConnected.md): 检测玩家是否已连接服务器
+- [GetPlayerPoolSize](GetPlayerPoolSize): 获取当前已连接玩家的最高 ID
+- [IsPlayerConnected](IsPlayerConnected): 检测玩家是否已连接服务器

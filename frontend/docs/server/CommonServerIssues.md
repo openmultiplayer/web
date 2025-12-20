@@ -5,11 +5,11 @@ sidebar_label: Common Server Issues
 
 ## Server instantly crashes when started
 
-Most commonly it's an error in your server.cfg file or your gamemode is missing. Check the server_log.txt file and the reason should be located at the bottom. If not, check crashinfo.txt file. The better solution to find out what is causing the crash is using the Crash detect plugin by Zeex/0x5A656578 ([click for link](https://github.com/Zeex/samp-plugin-crashdetect)) which will give more information like line numbers, function names, parameter values, etc. If the script is compiled in debug mode (-d3 flag) to make compiler put extra information about all that stuff into the output .amx.
+Most commonly it's an error in your server.cfg file or your gamemode is missing. Check the server_log.txt file and the reason should be located at the bottom. If not, check crashinfo.txt file. The better solution to find out what is causing the crash is using the Crash detect plugin by Zeex/0x5A656578 ([click for link](https://github.com/AmyrAhmady/samp-plugin-crashdetect)) which will give more information like line numbers, function names, parameter values, etc. If the script is compiled in debug mode (-d3 flag) to make compiler put extra information about all that stuff into the output .amx.
 
 ## Server is not working - firewall is disabled
 
-You will need to forward your ports to allow players to join your server. You can forward your ports using the PF Port Checker. Download it from: www.portforward.com If the ports are not forwarded that means you have to open them in your router. You can check the router list at [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm "http://portforward.com/english/routers/port_forwarding/routerindex.htm")
+You will need to forward your ports to allow players to join your server. You can forward your ports using the PF Port Checker. Download it from: www.portforward.com If the ports are not forwarded that means you have to open them in your router. You can check the router list at [https://portforward.com/router.htm](https://portforward.com/router.htm)
 
 It has all the information on how to forward ports.
 
@@ -63,7 +63,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 Happens when 'out of order messages' reuses messageholelimit setting.
 
-For more information about this, refer to [this](ControllingServer#RCON_Commands)
+For more information about this, refer to [this](ControllingServer#rcon-commands)
 
 ## Players constantly getting "Unacceptable NickName" error but it is valid
 

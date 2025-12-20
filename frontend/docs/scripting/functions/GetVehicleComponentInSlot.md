@@ -12,7 +12,7 @@ Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a 
 | Name            | Description                                                                |
 | --------------- | -------------------------------------------------------------------------- |
 | vehicleid       | The ID of the vehicle to check for the component.                          |
-| CARMODTYPE:slot | The [component slot](../resources/Componentslots) to check for components. |
+| CARMODTYPE:slot | The [component slot](../resources/componentslots) to check for components. |
 
 ## Returns
 
@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 Known Bug(s):
 
 - Doesn't work for CARMODTYPE_STEREO.
-- Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last. 
+- Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
 - Both rear bull bars and rear bumper components are saved in the CARMODTYPE_REAR_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
 - Both left side skirt and right side skirt are saved in the CARMODTYPE_SIDESKIRT slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
 
@@ -70,4 +70,4 @@ Known Bug(s):
 
 ## Related Resources
 
-- [Vehicle Component Slots](../resources/Componentslots)
+- [Vehicle Component Slots](../resources/componentslots)

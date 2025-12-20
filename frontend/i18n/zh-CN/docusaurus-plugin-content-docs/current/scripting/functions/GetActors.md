@@ -11,7 +11,7 @@ tags: ["角色"]
 
 获取服务器上已创建的角色 ID 数组。
 
-| 参数名   | 说明                                  |
+| 参数     | 说明                                  |
 | -------- | ------------------------------------- |
 | actors[] | 数组变量（引用传递），用于存储角色 ID |
 | size     | 数组的容量长度                        |
@@ -31,5 +31,5 @@ GetActors(actors, sizeof(actors));
 
 ## 相关函数
 
-- [GetPlayers](GetPlayers.md): 获取当前在线玩家 ID 数组
-- [GetVehicles](GetVehicles.md): 获取已创建车辆 ID 数组
+- [GetPlayers](GetPlayers): 获取当前在线玩家 ID 数组
+- [GetVehicles](GetVehicles): 获取已创建车辆 ID 数组

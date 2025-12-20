@@ -1,7 +1,7 @@
 ---
 title: OnPlayerRequestDownload
 sidebar_label: OnPlayerRequestDownload
-description: 当玩家请求下载自定义模型时触发该回调函数
+description: 当玩家请求下载自定义模型时触发此回调函数
 tags: ["玩家"]
 ---
 
@@ -9,9 +9,9 @@ tags: ["玩家"]
 
 ## 描述
 
-当玩家请求下载自定义模型资源时触发该回调函数
+当玩家请求下载自定义模型资源时触发此回调函数
 
-| 参数名                | 说明                                           |
+| 参数                  | 说明                                           |
 | --------------------- | ---------------------------------------------- |
 | playerid              | 发起下载请求的玩家ID                           |
 | DOWNLOAD_REQUEST:type | [下载请求类型](../resources/download-requests) |
@@ -76,7 +76,7 @@ public OnPlayerRequestDownload(playerid, DOWNLOAD_REQUEST:type, crc)
 
 ## 相关回调
 
-以下回调函数可能与本回调相关：
+以下回调函数可能与此回调相关：
 
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): 当玩家完成下载时触发
 

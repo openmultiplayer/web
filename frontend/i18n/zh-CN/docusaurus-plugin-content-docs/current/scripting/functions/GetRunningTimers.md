@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-本函数已弃用，请使用[CountRunningTimers](CountRunningTimers)
+此函数已弃用，请使用[CountRunningTimers](CountRunningTimers)
 
 :::
 

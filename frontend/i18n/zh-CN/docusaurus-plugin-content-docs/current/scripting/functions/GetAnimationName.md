@@ -9,7 +9,7 @@ tags: []
 
 根据动画索引获取对应的动画库名称和动画名称。
 
-| 参数名             | 说明                                        |
+| 参数               | 说明                                        |
 | ------------------ | ------------------------------------------- |
 | index              | 动画索引（由 GetPlayerAnimationIndex 返回） |
 | animationLibrary[] | 字符串变量，用于存储动画库名称              |
@@ -43,4 +43,4 @@ public OnPlayerUpdate(playerid)
 
 ## 相关函数
 
-- [GetPlayerAnimationIndex](GetPlayerAnimationIndex.md): 获取玩家当前动画的索引
+- [GetPlayerAnimationIndex](GetPlayerAnimationIndex): 获取玩家当前动画的索引

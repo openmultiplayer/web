@@ -11,7 +11,7 @@ tags: ["角色"]
 
 获取角色当前使用的皮肤 ID。
 
-| 参数名  | 说明                |
+| 参数    | 说明                |
 | ------- | ------------------- |
 | actorid | 要获取皮肤的角色 ID |
 
@@ -36,5 +36,5 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [CreateActor](CreateActor.md): 创建角色（静态 NPC）
-- [SetActorSkin](SetActorSkin.md): 设置角色的皮肤 ID
+- [CreateActor](CreateActor): 创建角色（静态 NPC）
+- [SetActorSkin](SetActorSkin): 设置角色的皮肤 ID

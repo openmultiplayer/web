@@ -9,7 +9,7 @@ tags: []
 
 获取控制台变量的布尔类型值。
 
-| 参数名       | 说明                           |
+| 参数         | 说明                           |
 | ------------ | ------------------------------ |
 | const cvar[] | 要获取的布尔类型控制台变量名称 |
 
@@ -41,5 +41,5 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [GetConsoleVarAsString](GetConsoleVarAsString.md): 以字符串形式获取控制台变量
-- [GetConsoleVarAsInt](GetConsoleVarAsInt.md): 以整型形式获取控制台变量
+- [GetConsoleVarAsString](GetConsoleVarAsString): 以字符串形式获取控制台变量
+- [GetConsoleVarAsInt](GetConsoleVarAsInt): 以整型形式获取控制台变量

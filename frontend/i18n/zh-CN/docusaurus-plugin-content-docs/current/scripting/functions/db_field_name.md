@@ -2,17 +2,22 @@
 title: db_field_name
 sidebar_label: db_field_name
 description: 返回指定索引处的字段名称。
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNoteZH_CN />
+
+:::warning
+
+此函数已弃用，请使用 [DB_GetFieldName](DB_GetFieldName)。
+
+:::
 
 ## 描述
 
 通过字段索引获取查询结果中的字段名称。
 
-| 参数名            | 说明                                       |
+| 参数              | 说明                                       |
 | ----------------- | ------------------------------------------ |
 | DBResult:dbresult | 查询结果句柄（由[db_query](db_query)返回） |
 | field             | 要获取的字段索引（从 0 开始）              |
@@ -36,6 +41,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = db_open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         // 从'join_log'表中选择第一条记录
@@ -74,7 +80,8 @@ public OnGameModeExit()
     // 关闭数据库连接
     if (db_close(gDBConnectionHandle))
     {
-        gDBConnectionHandle = DB:0; // 重置句柄
+        // 重置句柄
+        gDBConnectionHandle = DB:0;
     }
     return 1;
 }

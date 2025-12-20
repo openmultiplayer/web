@@ -5,13 +5,19 @@ description: Get the current facing angle of the NPC.
 tags: []
 ---
 
+:::warning
+
+This function is deprecated. Please see [NPC_GetFacingAngle](NPC_GetFacingAngle).
+
+:::
+
 ## Description
 
 Get the current facing angle of the NPC.
 
-| Name                 | Description                                                      |
-| -------------------- | ---------------------------------------------------------------- |
-| &Float:Angle         | A float to save the angle in, passed by reference.               |
+| Name         | Description                                        |
+| ------------ | -------------------------------------------------- |
+| &Float:Angle | A float to save the angle in, passed by reference. |
 
 ## Returns
 
@@ -30,4 +36,4 @@ printf("I am currently facing %f!", Angle);
 
 ## Related Functions
 
-- [SetMyFacingAngle](../functions/SetMyFacingAngle): Set the NPC's facing angle.
+- [SetMyFacingAngle](SetMyFacingAngle): Set the NPC's facing angle.

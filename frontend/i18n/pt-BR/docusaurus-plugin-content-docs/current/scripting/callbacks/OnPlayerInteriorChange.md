@@ -33,7 +33,7 @@ public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)
 
 ## Funções Relacionadas
 
-- [SetPlayerInterior](../functions/SetPlayerInterior.md): Define o interior do jogador.
-- [GetPlayerInterior](../functions/GetPlayerInterior.md): Obtém o atual interior do jogador.
-- [LinkVehicleToInterior](../functions/LinkVehicleToInterior.md): Muda o interior do qual um veículo é visto.
-- [OnPlayerStateChange](OnPlayerStateChange.md): Chamado quando um jogador muda de estado.
+- [SetPlayerInterior](../functions/SetPlayerInterior): Define o interior do jogador.
+- [GetPlayerInterior](../functions/GetPlayerInterior): Obtém o atual interior do jogador.
+- [LinkVehicleToInterior](../functions/LinkVehicleToInterior): Muda o interior do qual um veículo é visto.
+- [OnPlayerStateChange](OnPlayerStateChange): Chamado quando um jogador muda de estado.

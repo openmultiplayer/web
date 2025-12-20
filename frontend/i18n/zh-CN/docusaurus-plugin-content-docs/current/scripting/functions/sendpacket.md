@@ -9,7 +9,7 @@ tags: ["数据报"]
 
 :::warning
 
-该函数已弃用，请使用[HTTP](HTTP)或[pawn-requests 插件](https://github.com/Southclaws/pawn-requests)
+此函数已弃用，请使用[HTTP](HTTP)或[pawn-requests 插件](https://github.com/Southclaws/pawn-requests)
 
 :::
 
@@ -17,7 +17,7 @@ tags: ["数据报"]
 
 发送网络数据包。
 
-| 参数名                   | 说明                                                                                     |
+| 参数                     | 说明                                                                                     |
 | ------------------------ | ---------------------------------------------------------------------------------------- |
 | const packet[]           | 包含要发送数据包的缓冲区                                                                 |
 | size                     | 缓冲区大小                                                                               |

@@ -7,7 +7,7 @@ tags: ["时间"]
 
 ## 描述
 
-返回一个每毫秒递增的数值。该数值的绝对值在不同系统中可能有差异，仅用于比较两个时间点的间隔。
+返回一个每毫秒递增的数值，仅用于比较两个时间点的间隔。
 
 ## 示例
 
@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-`GetTickCount` 的有效差值范围约为 25 天（2147483647 毫秒）。只要事件间隔在此范围内，本函数能完美工作，但需注意整数溢出的情况：
+`GetTickCount` 的有效差值范围约为 25 天（2147483647 毫秒）。只要事件间隔在此范围内，此函数能完美工作，但需注意整数溢出的情况：
 
 ```c
 new start = GetTickCount();
@@ -58,7 +58,7 @@ if (start + 2000 > end)
 new start = GetTickCount();
 // 长时间代码
 new end = GetTickCount();
-if (2000 > end - start)
+if (end - start < 2000)
 {
     // 代码执行时间小于两秒
 }
@@ -70,4 +70,4 @@ if (2000 > end - start)
 
 ## 相关函数
 
-- [Tickcount](Tickcount): 获取服务器的实际运行时间
+- [tickcount](tickcount): 获取服务器的实际运行时间

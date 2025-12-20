@@ -11,7 +11,7 @@ tags: ["菜单"]
 
 通过列和行索引获取指定单元格中的文本内容。
 
-| 参数名      | 说明                               |
+| 参数        | 说明                               |
 | ----------- | ---------------------------------- |
 | Menu:menuid | 要查询的菜单 ID                    |
 | column      | 列索引（从 0 开始计数）            |
@@ -21,7 +21,7 @@ tags: ["菜单"]
 
 ## 返回值
 
-本函数始终返回 true。
+此函数始终返回 true。
 
 ## 示例代码
 
@@ -34,5 +34,5 @@ GetMenuItem(menuid, 1, 2, text, sizeof(text));
 
 ## 相关函数
 
-- [GetMenuItems](GetMenuItems.md): 获取菜单项列表
-- [GetMenuColumns](GetMenuColumns.md): 获取菜单激活列数
+- [GetMenuItems](GetMenuItems): 获取菜单项列表
+- [GetMenuColumns](GetMenuColumns): 获取菜单激活列数

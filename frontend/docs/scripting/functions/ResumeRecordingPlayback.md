@@ -9,7 +9,6 @@ tags: []
 
 This will resume the paused recording.
 
-
 ## Related Functions
 
-- [PauseRecordingPlayback](../functions/PauseRecordingPlayback): Resumes the recording if its paused.
+- [PauseRecordingPlayback](PauseRecordingPlayback): Resumes the recording if its paused.

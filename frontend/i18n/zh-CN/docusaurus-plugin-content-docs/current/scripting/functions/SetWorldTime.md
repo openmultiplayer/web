@@ -1,21 +1,21 @@
 ---
 title: SetWorldTime
 sidebar_label: SetWorldTime
-description: 为所有玩家设置全局时间至指定小时。
-tags: ["全局时间"]
+description: 为所有玩家设置世界时间至指定小时。
+tags: ["世界时间"]
 ---
 
 ## 描述
 
-为所有玩家设置全局时间至指定小时。
+为所有玩家设置世界时间至指定小时。
 
-| 名称 | 说明                   |
+| 参数 | 说明                   |
 | ---- | ---------------------- |
 | hour | 要设置的小时值（0-23） |
 
 ## 返回值
 
-本函数不返回任何特定值。
+此函数不返回特定值。
 
 ## 示例
 
@@ -28,7 +28,7 @@ SetWorldTime(12);
 
 :::tip
 
-本函数仅对未启用动态时钟的玩家生效（参见[TogglePlayerClock](TogglePlayerClock)）。
+此函数仅对未启用动态时钟的玩家生效（参见[TogglePlayerClock](TogglePlayerClock)）。
 
 :::
 
@@ -40,7 +40,7 @@ SetWorldTime(12);
 
 ## 相关函数
 
-- [GetWorldTime](GetWorldTime): 获取当前全局时间
+- [GetWorldTime](GetWorldTime): 获取当前世界时间
 - [SetPlayerTime](SetPlayerTime): 设置玩家时间
 - [SetWeather](SetWeather): 设置全局天气
 - [SetGravity](SetGravity): 设置全局重力

@@ -10,7 +10,7 @@ tags: ["http"]
 Sends a threaded HTTP request.
 
 | Name               | Description                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------|
+| ------------------ | ------------------------------------------------------------------------------------------- |
 | index              | ID used to differentiate requests that are sent to the same callback (useful for playerids) |
 | HTTP_METHOD:method | The [type](../resources/http-request-methods) of request you wish to send.                  |
 | const url[]        | The URL you want to request. **(Without 'http://')**                                        |

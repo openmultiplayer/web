@@ -47,8 +47,8 @@ O nome do jogador pode ter até 24 caracteres (a partir da 0.3d R2) usando SetPl
 
 ## Funções Relacionadas
 
-- [SetPlayerName](SetPlayerName.md): Define o nome de um jogador.
-- [GetPlayerIp](GetPlayerIp.md): Obtém o IP de um jogador.
-- [GetPlayerPing](GetPlayerPing.md): Obtém o ping de um jogador.
-- [GetPlayerScore](GetPlayerScore.md): Obtém a pontuação/nível de um jogador.
-- [GetPlayerVersion](GetPlayerVersion.md): Obtém a versão-client de um jogador.
+- [SetPlayerName](SetPlayerName): Define o nome de um jogador.
+- [GetPlayerIp](GetPlayerIp): Obtém o IP de um jogador.
+- [GetPlayerPing](GetPlayerPing): Obtém o ping de um jogador.
+- [GetPlayerScore](GetPlayerScore): Obtém a pontuação/nível de um jogador.
+- [GetPlayerVersion](GetPlayerVersion): Obtém a versão-client de um jogador.

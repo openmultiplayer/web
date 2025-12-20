@@ -2,14 +2,14 @@
 title: SetPlayerAttachedObject
 sidebar_label: SetPlayerAttachedObject
 description: 将物体附加到玩家指定骨骼上。
-tags: ["玩家", "物体", "附加物"]
+tags: ["玩家", "物体", "附加"]
 ---
 
 ## 描述
 
 将物体附加到玩家指定骨骼上。
 
-| 参数名          | 说明                                              |
+| 参数            | 说明                                              |
 | --------------- | ------------------------------------------------- |
 | playerid        | 目标玩家 ID                                       |
 | index           | 附加槽位索引（0-9）                               |
@@ -49,7 +49,7 @@ public OnPlayerSpawn(playerid)
 
 :::tip
 
-本函数与 CreateObject/CreatePlayerObject 物体池相互独立
+此函数与 CreateObject/CreatePlayerObject 物体池相互独立
 
 :::
 

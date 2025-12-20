@@ -6,7 +6,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 :::info
 
-您可以访问此[网站](https://dev.prineside.com/en/gtasa_samp_model_id/)查看所有支持物体的预览列表及其对应 ID。
+你可以访问此[网站](https://dev.prineside.com/en/gtasa_samp_model_id/)查看所有支持物体的预览列表及其对应 ID。
 
 :::
 
@@ -299,7 +299,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **51 区（69 号基地）建筑群**
 
-这些建筑在保留原外观基础上新增内部空间。可通过"a51_base"滤镜脚本查看基地大门开合示例，脚本位于 Windows 0.3.7 服务端包的"filterscripts"目录。
+这些建筑在保留原外观基础上新增室内场景。可通过"a51_base"滤镜脚本查看基地大门开合示例，脚本位于 Windows 0.3.7 服务端包的"filterscripts"目录。
 
 ```
 19905	A51Building1

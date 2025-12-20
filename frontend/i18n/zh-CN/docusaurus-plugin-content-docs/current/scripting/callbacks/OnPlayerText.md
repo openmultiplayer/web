@@ -1,22 +1,22 @@
 ---
 title: OnPlayerText
 sidebar_label: OnPlayerText
-description: 当玩家发送聊天消息时触发该回调函数。
+description: 当玩家发送聊天消息时触发此回调函数。
 tags: ["玩家"]
 ---
 
 ## 描述
 
-当玩家在聊天框发送消息时触发该回调函数。
+当玩家在聊天框发送消息时触发此回调函数。
 
-| 参数名   | 说明               |
+| 参数     | 说明               |
 | -------- | ------------------ |
 | playerid | 发送消息的玩家ID   |
 | text[]   | 玩家发送的消息内容 |
 
 ## 返回值
 
-该回调始终在滤镜脚本中优先触发，返回0将阻止其他脚本处理此消息。
+此回调始终在滤镜脚本中优先触发，返回0将阻止其他脚本处理此消息。
 
 ## 示例
 
@@ -45,13 +45,13 @@ public OnPlayerText(playerid, text[])
 
 ## 相关回调
 
-以下回调可能与该回调存在关联：
+以下回调可能与此回调存在关联：
 
 - [OnPlayerCommandText](OnPlayerCommandText): 当玩家输入指令时触发
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): 向指定玩家发送玩家消息
 - [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): 向全体玩家发送玩家消息

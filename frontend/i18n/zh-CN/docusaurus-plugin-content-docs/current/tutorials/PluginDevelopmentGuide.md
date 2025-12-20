@@ -74,7 +74,7 @@ stackoverflow.com
 
 **Visual C++ 2010 Express:** [免费下载](https://visualstudio.microsoft.com/vs/express/)
 
-**插件 SDK (Plain):** [下载](https://github.com/Zeex/samp-plugin-sdk)
+**插件 SDK (Plain):** [下载](https://github.com/maddinat0r/samp-plugin-sdk)
 
 - 我们首先需要做的是创建一个新项目. 选择文件->新建->项目来创建.
 
@@ -178,7 +178,7 @@ Exports 是一个声明, 它允许我们……好吧, 导出一些东西到我�
 
 目前需要导出的函数有 6 个. 我们在项目中使用了其中 5 个. 不要担心你在函数声明中看到的 `PLUGIN_EXPORT` 和 `PLUGIN_CALL` 定义. 我们将在文章后面介绍这些以及其他一些重要的定义(标记为绿色文本).
 
-| 函数                 | 描述                                                                                                                                                                                                                                                                                                                                |
+| 函数                 | 说明                                                                                                                                                                                                                                                                                                                                |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Supports()**       | 这个函数告诉服务器我们的插件将具备哪些功能, 基于它返回的内容. 通常我们在插件中只使用 3 个支持标志：**SUPPORTS_VERSION**、**SUPPORTS_AMX_NATIVES** 和 **SUPPORTS_PROCESS_TICK**.                                                                                                                                                     |
 | **Load(void\*\*)**   | Load 函数是相当简单的. 它在插件被加载时调用, 并传递一个地址数组, 插件将用来执行功能. 我们通常使用的两个索引是 **PLUGIN_DATA_AMX_EXPORTS** 和 **PLUGIN_DATA_LOGPRINTF**.                                                                                                                                                             |
@@ -191,7 +191,7 @@ Exports 是一个声明, 它允许我们……好吧, 导出一些东西到我�
 
 现在来看看代码的有趣部分！你可能会发现我们在前面的小例子中使用了大量的定义和结构. 如果你之前从未开发过 SA-MP 插件, 这些可能会显得非常混乱甚至令人生畏. 我们将在本节中阐明这些定义和结构.
 
-| 定义/结构                   | 描述                                                                                                                                                                                                                                                                   |
+| 定义/结构                   | 说明                                                                                                                                                                                                                                                                   |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **cell**                    | "cell" 是一个 typedef, 旨在提供可移植性. PAWN 支持 16 位、32 位和 64 位整数. typedef "cell" 始终是正确的大小, 而 "int" 可能不是. 通常在 SA-MP 插件中, 这个 typedef 始终是 32 位整数. **注意：** 还有一个 "ucell" typedef 用于无符号整数, 但几乎不使用.                 |
 | **AMX_NATIVE_CALL**         | 这个定义了我们的原生函数将使用的调用约定. 目前它被定义为空, 因此将使用默认值.                                                                                                                                                                                          |
@@ -260,7 +260,7 @@ amx 函数在 PAWN 实施者指南中有非常详细的文档, 可以在这里�
 int amx_Allot(AMX *amx, int cells, cell *amx_addr, cell **phys_addr);
 ```
 
-| 参数          | 描述                                                    |
+| 参数          | 说明                                                    |
 | ------------- | ------------------------------------------------------- |
 | **amx**       | 抽象机器.                                               |
 | **cells**     | 要保留的单元格数量.                                     |
@@ -269,7 +269,7 @@ int amx_Allot(AMX *amx, int cells, cell *amx_addr, cell **phys_addr);
 
 **说明：** 在早期版本的 PAWN 中, 数组和字符串必须在将其传递给脚本之前明确地为其分配内存. 在当前版本中, 这一功能已被 amx_PushArray 和 amx_PushString 函数在很大程度上取代. PAWN 函数只能访问其抽象机器内部的内存. 如果要"按引用"传递参数到 PAWN 函数, 必须将该参数的地址传递给 amx_Exec. 此外, 该地址本身也必须在抽象机器的地址范围内. 一个额外的复杂性是, 抽象机器使用相对于抽象机器数据段的地址, 而主机程序使用相对于操作系统提供的环境的地址.
 
-amx_Allot 在抽象机器内部分配内存单元, 并返回两个地址. amx_addr 参数是相对于抽象机器的"数据段"的变量地址；这是您应该传递给 amx_Exec 的值(通过 amx_Push). 参数 phys_addr 持有相对于主机程序地址空间的地址. 因此, C/C++程序可以使用此地址并写入分配的内存. amx_Exec 返回后, 您可以检查内存块(amx_Exec 调用的 PAWN 函数可能已经写入其中), 然后通过调用 amx_Release 最终释放它.
+amx_Allot 在抽象机器内部分配内存单元, 并返回两个地址. amx_addr 参数是相对于抽象机器的"数据段"的变量地址；这是你应该传递给 amx_Exec 的值(通过 amx_Push). 参数 phys_addr 持有相对于主机程序地址空间的地址. 因此, C/C++程序可以使用此地址并写入分配的内存. amx_Exec 返回后, 你可以检查内存块(amx_Exec 调用的 PAWN 函数可能已经写入其中), 然后通过调用 amx_Release 最终释放它.
 
 **另请参见：** [amx_Exec](#amx_exec), [amx_PushArray](#amx_pusharray), [amx_PushString](#amx_pushstring), [amx_Release](#amx_release)
 
@@ -283,7 +283,7 @@ amx_Allot 在抽象机器内部分配内存单元, 并返回两个地址. amx_ad
 [float] amx_ctof([cell] c);
 ```
 
-| 参数  | 描述                             |
+| 参数  | 说明                             |
 | ----- | -------------------------------- |
 | **c** | 要从"cell"类型转换为"float"的值. |
 
@@ -303,7 +303,7 @@ amx_Allot 在抽象机器内部分配内存单元, 并返回两个地址. amx_ad
   int amx_Exec(AMX *amx, long *retval, int index);
 ```
 
-| 参数       | 描述                                                                                                                                                         |
+| 参数       | 说明                                                                                                                                                         |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **amx**    | 从中调用函数的抽象机器.                                                                                                                                      |
 | **retval** | 调用函数后的返回值将保存在此处. 如果不关心返回值, 此参数可以为 NULL.                                                                                         |
@@ -323,7 +323,7 @@ amx_Allot 在抽象机器内部分配内存单元, 并返回两个地址. amx_ad
 int amx_FindPublic(AMX *amx, char *funcname, int *index);
 ```
 
-| 参数         | 描述                                      |
+| 参数         | 说明                                      |
 | ------------ | ----------------------------------------- |
 | **amx**      | 抽象机器.                                 |
 | **funcname** | 要查找的公共函数的名称.                   |
@@ -341,7 +341,7 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 [cell] amx_ftoc([float] f);
 ```
 
-| 参数  | 描述                             |
+| 参数  | 说明                             |
 | ----- | -------------------------------- |
 | **f** | 要从"float"类型转换为"cell"的值. |
 
@@ -361,13 +361,13 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 int amx_GetAddr(AMX *amx, cell amx_addr, cell **phys_addr);
 ```
 
-| 参数          | 描述                                                                                                                           |
+| 参数          | 说明                                                                                                                           |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | **amx**       | 抽象机器.                                                                                                                      |
 | **amx_addr**  | 相对于抽象机器的地址.                                                                                                          |
 | **phys_addr** | 一个指向变量的指针, 该变量将保存指定单元格的内存地址. 如果 amx_addr 参数不是抽象机器内部的有效地址, phys_addr 将被设置为 NULL. |
 
-**说明：** 此函数返回抽象机器中地址的内存地址. 通常在扩展模块中使用此函数, 因为它允许您访问抽象机器内部的变量.
+**说明：** 此函数返回抽象机器中地址的内存地址. 通常在扩展模块中使用此函数, 因为它允许你访问抽象机器内部的变量.
 
 ## amx_GetString
 
@@ -379,7 +379,7 @@ int amx_GetAddr(AMX *amx, cell amx_addr, cell **phys_addr);
 int amx_GetString(char *dest, cell *source, int use_wchar, size_t size);
 ```
 
-| 参数          | 描述                                                                                                         |
+| 参数          | 说明                                                                                                         |
 | ------------- | ------------------------------------------------------------------------------------------------------------ |
 | **dest**      | 指向字符数组的指针, 该数组的大小足以容纳转换后的源字符串.                                                    |
 | **source**    | 指向源字符串的指针. 使用 amx_GetAddr 将 amx 中的字符串地址转换为物理地址.                                    |
@@ -400,7 +400,7 @@ int amx_GetString(char *dest, cell *source, int use_wchar, size_t size);
 int amx_Push(AMX *amx, cell value);
 ```
 
-| 参数      | 描述                  |
+| 参数      | 说明                  |
 | --------- | --------------------- |
 | **amx**   | 抽象机器.             |
 | **value** | 要传递给公共函数的值. |
@@ -419,7 +419,7 @@ int amx_Push(AMX *amx, cell value);
 int amx_PushArray(AMX *amx, cell *amx_addr, cell **phys_addr, const cell array[], int numcells);
 ```
 
-| 参数          | 描述                                                                                              |
+| 参数          | 说明                                                                                              |
 | ------------- | ------------------------------------------------------------------------------------------------- |
 | **amx**       | 抽象机器.                                                                                         |
 | **amx_addr**  | 分配的单元格的地址, pawn 程序(在抽象机器中运行)可以访问该地址, 需要释放内存块. 此参数可以为 NULL. |
@@ -441,7 +441,7 @@ int amx_PushArray(AMX *amx, cell *amx_addr, cell **phys_addr, const cell array[]
 int amx_PushString(AMX *amx, cell *amx_addr, cell **phys_addr, const char *string, int pack, int use_wchar);
 ```
 
-| 参数          | 描述                                                                                                         |
+| 参数          | 说明                                                                                                         |
 | ------------- | ------------------------------------------------------------------------------------------------------------ |
 | **amx**       | 抽象机器.                                                                                                    |
 | **amx_addr**  | 分配的单元格的地址, pawn 程序(在抽象机器中运行)可以访问该地址, 释放内存块需要此参数. 此参数可以为 NULL.      |
@@ -464,7 +464,7 @@ int amx_PushString(AMX *amx, cell *amx_addr, cell **phys_addr, const char *strin
 int amx_Register(AMX *amx, AMX NATIVE INFO *list, int number);
 ```
 
-| 参数       | 描述                                                                                                      |
+| 参数       | 说明                                                                                                      |
 | ---------- | --------------------------------------------------------------------------------------------------------- |
 | **amx**    | 抽象机器.                                                                                                 |
 | **list**   | 结构数组, 每个结构包含一个指向本地函数名称的指针和一个函数指针. 列表可以用两个 NULL 指针的结构可选地终止. |
@@ -486,7 +486,7 @@ int amx_Register(AMX *amx, AMX NATIVE INFO *list, int number);
 int amx_Release(AMX *amx, cell amx_addr);
 ```
 
-| 参数         | 描述                                                                                                               |
+| 参数         | 说明                                                                                                               |
 | ------------ | ------------------------------------------------------------------------------------------------------------------ |
 | **amx**      | 抽象机器.                                                                                                          |
 | **amx_addr** | 分配的单元格的地址, pawn 程序(在抽象机器中运行)看到的地址. 此值由 amx_Allot、amx_PushArray 和 amx_PushString 返回. |
@@ -505,7 +505,7 @@ int amx_Release(AMX *amx, cell amx_addr);
 int amx_SetString(cell *dest, char *source, int pack, int use_wchar, size_t size);
 ```
 
-| 参数          | 描述                                                                                                            |
+| 参数          | 说明                                                                                                            |
 | ------------- | --------------------------------------------------------------------------------------------------------------- |
 | **dest**      | 指向 amx 中字符数组的指针, 其中存储转换后的字符串. 使用 amx_GetAddr 将 amx 中的字符串地址转换为物理地址.        |
 | **source**    | 指向源字符串的指针.                                                                                             |
@@ -528,7 +528,7 @@ int amx_SetString(cell *dest, char *source, int pack, int use_wchar, size_t size
 int amx_StrLen(const cell *cstring, int *length);
 ```
 
-| 参数        | 描述                              |
+| 参数        | 说明                              |
 | ----------- | --------------------------------- |
 | **cstring** | 抽象机中的字符串.                 |
 | **length**  | 该参数将在返回时保存字符串的长度. |
@@ -547,7 +547,7 @@ int amx_StrLen(const cell *cstring, int *length);
 amx_StrParam([AMX*] amx, [int] param, [char*] result);
 ```
 
-| 参数       | 描述                        |
+| 参数       | 说明                        |
 | ---------- | --------------------------- |
 | **amx**    | 抽象机器.                   |
 | **param**  | 参数编号.                   |
@@ -765,7 +765,7 @@ cell AMX_NATIVE_CALL EmitPawnCallback(AMX* amx, cell* params)
             amx_addr,
             *phys_addr;
 
-        //由于某种原因, amx_PushArray似乎会使服务器崩溃, 而我完全不知道为什么. 根据实现者的指南和代码, 我的使用应该是完全有效的. 由于该函数不起作用, 我们必须
+        //由于某种原因, amx_PushArray似乎会使服务器崩溃, 而我完全不知道为什么. 根据实现者的指南和代码, 我的使用应该是完全有效的. 由于此函数不起作用, 我们必须
         //使用旧方法, 自己分配内存, 设置它, 并将其推送到我们自己手动管理的空间中. 这非常简单. 我们使用amx_Allot在堆上分配内存(这会返回两个地址- 一个在抽象机器中的位置
         //(amx_addr), 另一个是相对于实际服务器的地址空间(phsy_addr - 我们可以在C++中使用)). 一旦分配了内存, 我们使用memcpy将内存从我们的数组复制到phys_addr地址位置.
         amx_Allot(amx, sizeof(arr) / sizeof(cell), &amx_addr, &phys_addr);
@@ -780,7 +780,7 @@ cell AMX_NATIVE_CALL EmitPawnCallback(AMX* amx, cell* params)
         amx_Exec(amx, &ret, idx);
 
         //释放我们分配的内存. 函数amx_Alloc在抽象机器的堆上分配内存.
-        //函数amx_PushString和amx_PushArray都在内部使用该函数, 因此每次使用这些函数时, 你都必须释放内存. 注意：我们使用了amx_PushString和amx_PushArray, 却只有一个释放调用.
+        //函数amx_PushString和amx_PushArray都在内部使用此函数, 因此每次使用这些函数时, 你都必须释放内存. 注意：我们使用了amx_PushString和amx_PushArray, 却只有一个释放调用.
         //这是因为堆上的内存是按升序分配的！amx_Release会释放从某一点以上的所有内存
         //(第二个参数, amx_addr - 即我们的addr变量). 由于它是这样做的, 我们只存储了来自amx_PushString调用的地址, 因为它会删除从该点开始的所有内容.
         amx_Release(amx, addr);
@@ -835,7 +835,7 @@ p = string var(字符串变量)(例如GetPlayerName等)
 
 #### 调用原生函数
 
-Invoke 使用一个适当命名为"callNative"的可变参数成员函数来调用原生函数. 此函数的参数为指向包含原生函数信息的 Native 结构的指针(参见上一节), 以及该原生函数的所有参数的省略号. 该函数返回被调用的原生函数的返回值. 以下是一个调用多个原生函数的示例函数, 其中使用了不同的参数类型(int、引用和字符串变量).
+Invoke 使用一个适当命名为"callNative"的可变参数成员函数来调用原生函数. 此函数的参数为指向包含原生函数信息的 Native 结构的指针(参见上一节), 以及该原生函数的所有参数的省略号. 此函数返回被调用的原生函数的返回值. 以下是一个调用多个原生函数的示例函数, 其中使用了不同的参数类型(int、引用和字符串变量).
 
 ```cpp
 //此函数演示：如何使用Invoke调用SA-MP原生函数.
@@ -869,7 +869,7 @@ cell AMX_NATIVE_CALL WhereIsPlayer(AMX* amx, cell* params)
 
 使用 Invoke 方法时, 对于回调函数来说, 没有 100%透明的挂钩方法. 想要挂钩使用 Invoke 的回调函数的插件需要通过 PAWN 来实现. 你可以创建一个原生函数, 然后在你想挂钩的 PAWN 回调函数内调用该原生函数, 并将该原生函数用作伪回调. 你可以使用 ALS 挂钩方法来实现这一点, 这样可以让最终用户不需要做任何工作.
 
-第一步显然是创建原生函数(记得将其添加到我们要注册的原生函数列表中, 并在你的 include 文件中添加它). 我决定挂钩的回调函数是 OnPlayerConnect, 因此我将编写一个具有与该回调函数相同参数的原生函数, 然后添加需要该回调的代码(在这种情况下是一个小玩笑).
+第一步显然是创建原生函数(记得将其添加到我们要注册的原生函数列表中, 并在你的 include 文件中添加它). 我决定挂钩的回调函数是 OnPlayerConnect, 因此我将编写一个具有与此回调函数相同参数的原生函数, 然后添加需要此回调的代码(在这种情况下是一个小玩笑).
 
 ```cpp
 //此函数演示：如何编写一个原生函数来充当回调函数.
@@ -1233,7 +1233,7 @@ extern void *pAMXFunctions;
 using namespace std;
 
 
-//该函数演示了：如何从PAWN获取字符串(及其长度).
+//此函数演示了：如何从PAWN获取字符串(及其长度).
 //PAWN 原生函数: native PrintPawnString(const str[]);
 cell AMX_NATIVE_CALL PrintPawnString(AMX* amx, cell* params)
 {
@@ -1268,7 +1268,7 @@ cell AMX_NATIVE_CALL PrintPawnString(AMX* amx, cell* params)
     return 1;
 }
 
-//该函数演示了：如何调用PAWN脚本中的回调函数.
+//此函数演示了：如何调用PAWN脚本中的回调函数.
 //PAWN 原生函数: native EmitPawnCallback();
 cell AMX_NATIVE_CALL EmitPawnCallback(AMX* amx, cell* params)
 {
@@ -1297,9 +1297,9 @@ cell AMX_NATIVE_CALL EmitPawnCallback(AMX* amx, cell* params)
             *phys_addr;
 
         //由于某种原因, amx_PushArray似乎会导致服务器崩溃, 我对此一无所知.
-        //从实现者指南和代码来看, 我的用法应该是完全有效的. 由于该函数无法正常工作, 我们只能
+        //从实现者指南和代码来看, 我的用法应该是完全有效的. 由于此函数无法正常工作, 我们只能
         //使用旧方法：分配内存, 设置它, 并手动推送所有内容. 这非常简单. 我们
-        //使用amx_Allot在堆上分配内存(该函数返回2个地址—一个是虚拟机中的位置
+        //使用amx_Allot在堆上分配内存(此函数返回2个地址—一个是虚拟机中的位置
         //(amx_addr), 另一个是相对于实际服务器地址空间的地址(phys_addr—可用于C++)).
         //分配内存后, 我们使用memcpy将数组的内存复制到phys_addr地址位置.
         amx_Allot(amx, sizeof(arr) / sizeof(cell), &amx_addr, &phys_addr);
@@ -1310,7 +1310,7 @@ cell AMX_NATIVE_CALL EmitPawnCallback(AMX* amx, cell* params)
         amx_Push(amx, var);
 
         //使用之前获取的idx变量执行函数.
-        //注意：该函数的第二个参数是回调函数的返回值(如果不关心返回值, 可以为NULL).
+        //注意：此函数的第二个参数是回调函数的返回值(如果不关心返回值, 可以为NULL).
         amx_Exec(amx, &ret, idx);
 
         //释放分配的内存. 函数amx_Alloc在虚拟机的堆上分配内存.

@@ -137,7 +137,7 @@ strupper(string[])
 ```c
 
 main()
-    printf "˙  ˙\n"
+    printf "Γειάσου κόσμος\n"
 
 ```
 
@@ -564,4 +564,4 @@ quine PAWN در مثال زیر است؛ این بر اساس "C" quine معرو
 
 ---
 
-[برگشت به فهرست](00-Contents.md)
+[برگشت به فهرست](00-Contents)

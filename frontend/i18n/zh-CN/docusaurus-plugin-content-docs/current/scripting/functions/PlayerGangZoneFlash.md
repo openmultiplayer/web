@@ -2,7 +2,7 @@
 title: PlayerGangZoneFlash
 sidebar_label: PlayerGangZoneFlash
 description: 启动玩家专属帮派区域的闪烁效果
-tags: ["玩家", "帮派区域", "玩家专属帮派区域"]
+tags: ["玩家", "帮派区域", "玩家帮派区域"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />

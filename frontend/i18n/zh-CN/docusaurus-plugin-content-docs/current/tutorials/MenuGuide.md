@@ -134,7 +134,7 @@ if(CurrentMenu == teleportmenu)
 
 ## 最终步骤
 
-现在需要创建显示菜单的命令。这是最简单的步骤：在`OnPlayerCommandText`中使用`strcmp`进行命令比对并调用`ShowMenuForPlayer`。如果您已有命令处理器，可直接通过处理器调用：
+现在需要创建显示菜单的命令。这是最简单的步骤：在`OnPlayerCommandText`中使用`strcmp`进行命令比对并调用`ShowMenuForPlayer`。如果你已有命令处理器，可直接通过处理器调用：
 
 ```pawn
 if(strcmp(cmdtext, "/teleport", true) == 0)
@@ -146,7 +146,7 @@ if(strcmp(cmdtext, "/teleport", true) == 0)
 
 ## 补充建议与结语
 
-理解本教程后，请尝试创建自己的菜单。如您所见，菜单系统并不复杂，但能为服务器玩家带来深刻印象。您可以用它实现酷炫的效果，例如：
+理解本教程后，请尝试创建自己的菜单。如你所见，菜单系统并不复杂，但能为服务器玩家带来深刻印象。你可以用它实现酷炫的效果，例如：
 
 - 创建便利店/超市的购物系统
 - 在第二列显示商品价格
@@ -156,4 +156,4 @@ if(strcmp(cmdtext, "/teleport", true) == 0)
 
 进阶技巧：在调用`ShowMenuForPlayer`后使用[TogglePlayerControllable](../scripting/functions/TogglePlayerControllable)传递`false`来禁用移动，确保玩家浏览菜单时无法移动，并在`OnPlayerSelectedMenuRow`回调结束时使用[TogglePlayerControllable](../scripting/functions/TogglePlayerControllable)传递`true`来恢复操作。
 
-希望本教程对您有所帮助。如有疑问，请访问论坛/Discord 咨询。
+希望本教程对你有所帮助。如有疑问，请访问论坛/Discord 咨询。

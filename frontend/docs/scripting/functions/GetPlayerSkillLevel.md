@@ -30,7 +30,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/skill", true))
     {
         new string[64];
-        
+
         new skill = GetPlayerSkillLevel(playerid, WEAPONSKILL_PISTOL);
 
         format(string, sizeof(string), "Your pistol skill level is %d", skill);

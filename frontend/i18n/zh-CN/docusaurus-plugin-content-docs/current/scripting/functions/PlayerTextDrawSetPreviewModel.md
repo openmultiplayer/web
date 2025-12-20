@@ -9,7 +9,7 @@ tags: ["玩家", "文本绘图", "玩家文本绘图"]
 
 设置玩家文本绘图的指定模型 ID 的 3D 预览模型
 
-| 参数名            | 说明                              |
+| 参数              | 说明                              |
 | ----------------- | --------------------------------- |
 | playerid          | 玩家的 ID                         |
 | PlayerText:textid | 要显示 3D 预览的玩家文本绘图的 ID |
@@ -47,7 +47,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-必须使用字体类型`TEXT_DRAW_FONT_MODEL_PREVIEW`（模型预览字体）才能使此功能生效
+必须使用字体类型`TEXT_DRAW_FONT_MODEL_PREVIEW`（模型预览字体）才能使此函数生效
 
 :::
 

@@ -124,7 +124,7 @@ description: open.mp开发进度与更新日志。
 
 open.mp 现已结束 RC 阶段，正式进入稳定开发周期。v1.1.0.2612 修复了大量问题并统一了多项行为差异，建议及时更新以获得最佳体验。
 
-open.mp 官方启动器正式发布！您现在可以：
+open.mp 官方启动器正式发布！你现在可以：
 
 - 可靠地浏览服务器列表
 - 选择心仪服务器
@@ -510,10 +510,10 @@ open.mp 服务器第二候选发布版(RC2)
 - [OnPlayerEnterPlayerGangZone](scripting/callbacks/OnPlayerEnterPlayerGangZone)
 - [OnPlayerLeavePlayerGangZone](scripting/callbacks/OnPlayerLeavePlayerGangZone)
 - [OnPlayerClickPlayerGangZone](scripting/callbacks/OnPlayerClickPlayerGangZone)
-- [OnPickupStreamIn](../scripting/callbacks/OnPickupStreamIn)
-- [OnPickupStreamOut](../scripting/callbacks/OnPickupStreamOut)
-- [OnPlayerPickUpPlayerPickup](../scripting/callbacks/OnPlayerPickUpPlayerPickup)
-- [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)
-- [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)
+- [OnPickupStreamIn](scripting/callbacks/OnPickupStreamIn)
+- [OnPickupStreamOut](scripting/callbacks/OnPickupStreamOut)
+- [OnPlayerPickUpPlayerPickup](scripting/callbacks/OnPlayerPickUpPlayerPickup)
+- [OnPlayerPickupStreamIn](scripting/callbacks/OnPlayerPickupStreamIn)
+- [OnPlayerPickupStreamOut](scripting/callbacks/OnPlayerPickupStreamOut)
 
 </details>

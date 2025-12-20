@@ -1,15 +1,15 @@
 ---
 title: OnPlayerUpdate
 sidebar_label: OnPlayerUpdate
-description: 当客户端/玩家向服务器发送状态更新时触发该回调函数。
+description: 当客户端/玩家向服务器发送状态更新时触发此回调函数。
 tags: ["玩家"]
 ---
 
 ## 描述
 
-每当客户端/玩家向服务器发送状态更新时触发该回调函数。常用于创建服务器未主动追踪的客户端状态更新回调，例如生命值/护甲更新或武器切换。
+每当客户端/玩家向服务器发送状态更新时触发此回调函数。常用于创建服务器未主动追踪的客户端状态更新回调，例如生命值/护甲更新或武器切换。
 
-| 参数名   | 说明                   |
+| 参数     | 说明                   |
 | -------- | ---------------------- |
 | playerid | 发送更新数据包的玩家ID |
 
@@ -19,7 +19,7 @@ tags: ["玩家"]
 
 1 - 表示该更新可正常处理并发送给其他玩家
 
-该回调始终在滤镜脚本中优先触发。
+此回调始终在滤镜脚本中优先触发。
 
 ## 示例
 
@@ -51,7 +51,7 @@ public OnPlayerWeaponChange(playerid, WEAPON:oldWeapon, WEAPON:newWeapon)
     GetWeaponName(oldWeapon, oldWeaponName, sizeof(oldWeaponName));
     GetWeaponName(newWeapon, newWeaponName, sizeof(newWeaponName));
 
-    format(string, sizeof(string), "您已将武器从 %s 切换为 %s！", oldWeaponName, newWeaponName);
+    format(string, sizeof(string), "你已将武器从 %s 切换为 %s！", oldWeaponName, newWeaponName);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }
@@ -88,19 +88,19 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-本回调函数平均每秒触发30次/玩家，请谨慎使用。触发频率会根据玩家行为变化：驾驶或射击时更新频率远高于静止状态。
+此回调函数平均每秒触发30次/玩家，请谨慎使用。触发频率会根据玩家行为变化：驾驶或射击时更新频率远高于静止状态。
 
 :::
 
 ## 相关回调
 
-以下回调可能与该回调存在关联：
+以下回调可能与此回调存在关联：
 
-- [OnPlayerWeaponShot](OnPlayerWeaponShot): 当玩家发射武器时触发
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): 当玩家开火时触发
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [GetPlayerWeapon](../functions/GetPlayerWeapon): 获取玩家当前武器
 - [GetPlayerHealth](../functions/GetPlayerHealth): 获取玩家生命值

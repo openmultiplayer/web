@@ -11,8 +11,8 @@ tags: ["player"]
 
 Check if the player is controllable.
 
-| Name     | Description |
-| -------- | ------------------- |
+| Name     | Description           |
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 
 ## Returns

@@ -41,5 +41,5 @@ You can also enable standard player walking animation via [config.json](../../se
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [ApplyAnimation](../functions/ApplyAnimation): Apply an animation to a player.
-- [ClearAnimations](../functions/ClearAnimations): Clear any animations a player is performing.
+- [ApplyAnimation](ApplyAnimation): Apply an animation to a player.
+- [ClearAnimations](ClearAnimations): Clear any animations a player is performing.

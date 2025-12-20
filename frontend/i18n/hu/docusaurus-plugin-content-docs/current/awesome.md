@@ -6,15 +6,15 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 
 ## Eszközök
 
-- **[Community Compiler](https://github.com/pawn-lang/compiler/)** - A fordító nagymértékben frissített változata, számos javítással és fejlesztéssel.
+- **[Community Compiler](https://github.com/pawn-lang/compiler)** - A fordító nagymértékben frissített változata, számos javítással és fejlesztéssel.
 - **[sampctl](https://github.com/Southclaws/sampctl)** - Csomagkezelő, könyvtárak telepítéséhez és a szerver futtatásához.
-- **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner/)** - Eszköz a kiszolgáló könnyű verziójának futtatásához közvetlenül a parancssorból (nincs szükség server.cfg fájlra) a beépülő modulok teszteléséhez.
+- **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner)** - Eszköz a kiszolgáló könnyű verziójának futtatásához közvetlenül a parancssorból (nincs szükség server.cfg fájlra) a beépülő modulok teszteléséhez.
 - **[Plugin Boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate)** - A plugin készítése könnyebben a boilerplate segítségével.
 - **[SA:MP Plugin Template Library](https://github.com/katursis/samp-ptl)** - Készítsd el a saját beépülő moduljaid nagyon egyszerűen és gyorsan ezzel a sablonkönyvtárral.
 - **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - Egy hely, ahol tesztelheti a szkripteket (részletek, PoC, hibakeresés stb.), és megoszthatja azokat másokkal.
-- **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax/)** - Pawn automatikus kiegészítés a Sublime szöveghez.
-- **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn/)** - Pawn autocomplet a Visual Studio Code-hoz.
-- **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads/)** - Zóna szerkesztő a terület és egyéb dolgok készítéséhez.
+- **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)** - Pawn automatikus kiegészítés a Sublime szöveghez.
+- **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocomplet a Visual Studio Code-hoz.
+- **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Zóna szerkesztő a terület és egyéb dolgok készítéséhez.
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - Népszerű térkép szerkesztő SA:MP-hoz.
 - **[open.mp Server Browser](https://github.com/adib-yg/openmp-server-browser)** - open.mp szerverkereső grafikus felhasználói felülete.
 
@@ -24,7 +24,7 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 - **[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)** - Rendkívül kitűnő javítások az SA:MP szerver hibák nagy számához. Plug and Play.
 - **[YSI-Includes](https://github.com/pawn-lang/YSI-Includes)** - A legrégebbi, legnagyobb, legtöbbet tesztelt és jól támogatott könyvtár az SA:MP/pawn számára, amely rengeteg új játék- és nyelvi funkciót kínál.
 - **[foreach](https://github.com/Open-GTO/foreach)** - foreach önálló könyvtár (nem y_iterate verzió).
-- **[amx_assembly](https://github.com/Zeex/amx_assembly)** - Alacsony szintű hozzáférés magához a pawn fájlokhoz.
+- **[amx_assembly](https://github.com/pawn-lang/amx_assembly)** - Alacsony szintű hozzáférés magához a pawn fájlokhoz.
 - **[md-sort](https://github.com/oscar-broman/md-sort)** - Többdimenziós tömbök rendezése a Pawnban. Módosítja a tömb belső mutatóit az adatok másolása helyett.
 - **[indirection](https://github.com/Y-Less/indirection)** - Rendszer mutatók átadására és a funkciók közvetett hívására, absztrakt módszerekkel a hívások testreszabására.
 - **[code-parse.inc](https://github.com/Y-Less/code-parse.inc)** - A pawn kód elemzése és testreszabása fordítási időben.
@@ -67,9 +67,9 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 
 ## Bővítmények
 
-- **[JIT](https://github.com/Zeex/samp-plugin-jit)** - Ha a kód stabil, használja ezt a jelentős gyorsításhoz.
-- **[CrashDetect](https://github.com/Zeex/samp-plugin-crashdetect)** - Fejlesztői eszköz hibakeresésre tesztelés közben.
-- **[Profiler](https://github.com/Zeex/samp-plugin-profiler)** - Performance profiler plugin for SA-MP server.
+- **[JIT](https://github.com/Foundation-PAWN/samp-plugin-jit-backup)** - Ha a kód stabil, használja ezt a jelentős gyorsításhoz.
+- **[CrashDetect](https://github.com/AmyrAhmady/samp-plugin-crashdetect)** - Fejlesztői eszköz hibakeresésre tesztelés közben.
+- **[Profiler](https://github.com/Foundation-PAWN/samp-plugin-profiler-backup)** - Performance profiler plugin for SA-MP server.
 - **[sscanf](https://github.com/Y-Less/sscanf)** - Szöveg konvertálása több féle értékre, int, float, player, stb.
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Csatlakoztassa szerverét egy MySQL szerverhez.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Sok SA:MP korlát megkerülése, például objektumok és pickupok.
@@ -78,10 +78,10 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 - **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - Lehetővé teszi a fájlok és mappák kezelését a gyökérkönyvtárból (nem korlátozódik a scriptfiles szerverkönyvtárára ezzel a bővítménnyel).
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** - Lehetővé teszi a RakNet forgalom elemzését.
 - **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - Egy SA-MP bővítmény, amely precíz időzítőket biztosít, Rust nyelven írva. Nem szükséges az open.mp-ben, mivel az open.mp precíz időzítőkkel rendelkezik.
-- **[PawnPlus](https://github.com/IllidanS4/PawnPlus)** - Kibővíti a Pawn szkriptnyelv lehetőségeit új szerkezetekkel, adattípusokkal és programozási technikákkal.
+- **[PawnPlus](https://github.com/IS4Code/PawnPlus)** - Kibővíti a Pawn szkriptnyelv lehetőségeit új szerkezetekkel, adattípusokkal és programozási technikákkal.
 - **[PAWN memory access](https://github.com/BigETI/pawn-memory)** - Lehetővé teszi a memória kiosztását és felszabadítását a heap-ben PAWN nyelven.
-- **[Native Fallback](https://github.com/IllidanS4/NativeFallback)** - SA-MP bővítmény, amely alternatív megvalósítást biztosít nem regisztrált natívokhoz.
-- **[YSF](https://github.com/IllidanS4/YSF)** - Egy bővítmény, amelynek célja a szerverből kihozni a maximális lehetőségeket, főleg a memória szerkesztés és horgok terén. Sok funkciója már megtalálható az open.mp-ben. Lásd [ezen a github problémán](https://github.com/openmultiplayer/open.mp/issues/189) a funkciók listájáért.
+- **[Native Fallback](https://github.com/IS4Code/NativeFallback)** - SA-MP bővítmény, amely alternatív megvalósítást biztosít nem regisztrált natívokhoz.
+- **[YSF](https://github.com/IS4Code/YSF)** - Egy bővítmény, amelynek célja a szerverből kihozni a maximális lehetőségeket, főleg a memória szerkesztés és horgok terén. Sok funkciója már megtalálható az open.mp-ben. Lásd [ezen a github problémán](https://github.com/openmultiplayer/open.mp/issues/189) a funkciók listájáért.
 - **[SKY](https://github.com/oscar-broman/SKY)** - Ez a bővítmény alacsony szintű funkciókat biztosít a Pawn szkripteknek erőteljes feladatok elvégzéséhez.
 - **[Pawn.Regex](https://github.com/katursis/Pawn.Regex)** - Támogatást nyújt a reguláris kifejezésekhez a Pawn szkriptekben.
 - **[pawn-scraper](https://github.com/Sreyas-Sreelal/pawn-scraper)** - Egy erőteljes scraper bővítmény, amely felületet biztosít az html_parsers és css szelektorok használatához pawn-ban.
@@ -123,8 +123,8 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 
 Most már készítheted szkriptjeidet a pawn nyelven kívül más nyelveken is az open.mp segítségével. Lásd [ezt a blogbejegyzést](https://www.open.mp/blog/release-candidate-1)
 
-- **[sampsdk](https://github.com/Zeex/samp-plugin-sdk)** - Ez az abszolút minimum, amire szükséged van a bővítmények fejlesztéséhez.
-- **[sampgdk](https://github.com/Zeex/sampgdk)** - C/C++ nyelvi támogatás a SA:MP játékmód írásához.
+- **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - Ez az abszolút minimum, amire szükséged van a bővítmények fejlesztéséhez.
+- **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - C/C++ nyelvi támogatás a SA:MP játékmód írásához.
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# nyelvi támogatás a SA:MP játékmód írásához.
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - C# nyelvi támogatás a SA:MP bővítmény írásához.
 - **[sampgo](https://github.com/sampgo/sampgo)** - Go nyelvi támogatás a SA:MP játékmód/bővítmény írásához.
@@ -132,7 +132,7 @@ Most már készítheted szkriptjeidet a pawn nyelven kívül más nyelveken is a
 - **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - Java nyelvi támogatás a SA:MP játékmód írásához.
 - **[pySAMP](https://github.com/habecker/PySAMP)** - Python nyelvi támogatás a SA:MP játékmód írásához.
 - **[samp-rs](https://github.com/ZOTTCE/samp-rs)** - Rust nyelvi támogatás a SA:MP bővítmény írásához.
-- **[Yet Another Lua Plugin](https://github.com/IllidanS4/YALP)** - Lua nyelvi támogatás a SA:MP játékmód írásához.
+- **[Yet Another Lua Plugin](https://github.com/IS4Code/YALP)** - Lua nyelvi támogatás a SA:MP játékmód írásához.
 - **[SAMPHP](https://github.com/Lapayo/SAMPHP)** - PHP nyelvi támogatás a SA:MP játékmód írásához.
 - **[SA-MP S[D]K](https://github.com/Hual/SA-MP-S-D-K)** - D nyelvi támogatás a SA:MP játékmód írásához.
 - **[Kamp](https://github.com/Double-O-Seven/kamp)** - Kotlin nyelvi támogatás a SA:MP játékmód írásához.

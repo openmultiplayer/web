@@ -82,9 +82,7 @@ Aqui estão os downloads necessários para esta seção:
 
 **Visual C++ 2010 Express:** [Download grátis](https://visualstudio.microsoft.com/vs/express/)
 
-**Plugin SDK (Versão Simples):** [Download](https://github.com/Zeex/samp-plugin-sdk)
-
-**SDK Atualizado:** [Download](https://github.com/maddinat0r/samp-plugin-sdk)
+**Plugin SDK (Atualizado):** [Download](https://github.com/maddinat0r/samp-plugin-sdk)
 
 - A primeira coisa que queremos fazer é criar um novo projeto. Selecione *File -> New -> Project* para fazer isso.
 
@@ -1280,7 +1278,7 @@ AMX_Load(AMX *amx)
 
 ### Agradecimentos Especiais
 - Agradeço à comunidade de desenvolvedores que contribuíram para o desenvolvimento deste plugin e forneceram feedback valioso.
-- Um agradecimento especial à [SAMP Forums](https://forum.sa-mp.com/) e à equipe de desenvolvimento da SA-MP por suas contribuições e suporte contínuo.
+- Um agradecimento especial à SAMP Forums e à equipe de desenvolvimento da SA-MP por suas contribuições e suporte contínuo.
 - Agradeço aos meus colegas desenvolvedores e amigos que sempre me apoiaram e incentivaram a continuar aprendendo e melhorando.
 
 ## Special thanks

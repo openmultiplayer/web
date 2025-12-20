@@ -11,7 +11,7 @@ tags: ["拾取物"]
 
 设置拾取物的模型。
 
-| 参数名             | 说明                                   |
+| 参数               | 说明                                   |
 | ------------------ | -------------------------------------- |
 | pickupid           | 要设置的拾取物 ID                      |
 | model              | 要设置的[模型](../resources/pickupids) |
@@ -19,7 +19,7 @@ tags: ["拾取物"]
 
 ## 返回值
 
-本函数永远返回 **true**。
+此函数永远返回 **true**。
 
 ## 示例代码
 
@@ -53,7 +53,3 @@ public OnGameModeInit()
 - [ShowPickupForPlayer](ShowPickupForPlayer): 对玩家显示拾取物
 - [HidePickupForPlayer](HidePickupForPlayer): 对玩家隐藏拾取物
 - [SetPickupForPlayer](SetPickupForPlayer): 为玩家单独配置拾取物属性
-
-```
-
-```

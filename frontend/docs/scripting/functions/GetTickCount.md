@@ -7,7 +7,7 @@ tags: ["time"]
 
 ## Description
 
-Returns a value which increases every millisecond. The absolute value returned is undefined and varies between systems, it should only be used to compare two points in time.
+Returns a value which increases every millisecond, it should be used to compare two points in time.
 
 ## Examples
 
@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-The difference in values that `GetTickCount` can handle is limited to just under 25 days (2147483647 milliseconds).  As long as the events being compared are less than that amount apart this function works perfectly with one small caveat.  Due to integer overflow, the following code may not work:
+The difference in values that `GetTickCount` can handle is limited to just under 25 days (2147483647 milliseconds). As long as the events being compared are less than that amount apart this function works perfectly with one small caveat. Due to integer overflow, the following code may not work:
 
 ```c
 new start = GetTickCount();
@@ -52,22 +52,22 @@ if (start + 2000 > end)
 }
 ```
 
-If `start` is very high this code will wrap around and may cause the check to pass erroneously.  However, solving this is very simple:
+If `start` is very high this code will wrap around and may cause the check to pass erroneously. However, solving this is very simple:
 
 ```c
 new start = GetTickCount();
 // Long code.
 new end = GetTickCount();
-if (2000 > end - start)
+if (end - start < 2000)
 {
     // The code took less than two seconds.
 }
 ```
 
-Simply rearranging the comparison such that `start` and `end` are on the same side fixes the issue entirely.  Those familiar with formula rearrangements should recognise that the two pieces of code are entirely equivalent, but the latter is more correct in modulo arithmetic.
+Simply rearranging the comparison such that `start` and `end` are on the same side fixes the issue entirely. Those familiar with formula rearrangements should recognise that the two pieces of code are entirely equivalent, but the latter is more correct in modulo arithmetic.
 
 :::
 
 ## Related Functions
 
-- [Tickcount](Tickcount): Get the uptime of the actual server.
+- [tickcount](tickcount): Get the uptime of the actual server.

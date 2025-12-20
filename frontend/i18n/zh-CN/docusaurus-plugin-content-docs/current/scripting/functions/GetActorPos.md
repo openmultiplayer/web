@@ -11,7 +11,7 @@ tags: ["角色"]
 
 获取角色的坐标位置。
 
-| 参数名   | 说明                                                        |
+| 参数     | 说明                                                        |
 | -------- | ----------------------------------------------------------- |
 | actorid  | 要获取坐标的角色 ID（由[CreateActor](CreateActor)创建返回） |
 | &Float:x | 浮点变量（引用传递），用于存储角色的 X 轴坐标               |
@@ -35,4 +35,4 @@ GetActorPos(actorid, x, y, z);
 
 ## 相关函数
 
-- [SetActorPos](SetActorPos.md): 设置角色的坐标位置
+- [SetActorPos](SetActorPos): 设置角色的坐标位置

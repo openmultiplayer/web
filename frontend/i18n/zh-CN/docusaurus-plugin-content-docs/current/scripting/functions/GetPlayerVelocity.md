@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 获取玩家在三维坐标系中的运动速度（X/Y/Z 轴分量）
 
-| 名称     | 说明                                |
+| 参数     | 说明                                |
 | -------- | ----------------------------------- |
 | playerid | 需要获取速度数据的玩家 ID           |
 | &Float:x | 存储 X 轴速度的浮点变量（引用传递） |
@@ -18,7 +18,7 @@ tags: ["玩家"]
 
 ## 返回值
 
-本函数不直接返回值，三维速度分量将存储于指定的浮点变量中
+此函数不直接返回值，三维速度分量将存储于指定的浮点变量中
 
 ## 示例代码
 
@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         GetPlayerVelocity(playerid, x, y, z);
 
-        format(string, sizeof(string), "您当前的运动速度：X轴 %.2f，Y轴 %.2f，Z轴 %.2f", x, y, z);
+        format(string, sizeof(string), "你当前的运动速度：X轴 %.2f，Y轴 %.2f，Z轴 %.2f", x, y, z);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;
     }

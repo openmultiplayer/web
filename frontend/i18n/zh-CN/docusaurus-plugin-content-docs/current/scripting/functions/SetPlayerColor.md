@@ -16,7 +16,7 @@ tags: ["玩家"]
 
 ## 返回值
 
-本函数没有特定返回值
+此函数不返回特定值。
 
 ## 示例
 
@@ -32,7 +32,7 @@ SetPlayerColor(playerid, 4278190335);
 
 :::tip
 
-- 本函数将全局修改玩家颜色，即使其他玩家通过 SetPlayerMarkerForPlayer 设置了不同颜色
+- 此函数将全局修改玩家颜色，即使其他玩家通过 SetPlayerMarkerForPlayer 设置了不同颜色
 - 在 OnPlayerConnect 回调中使用时，被设置玩家在 TAB 列表中将看不到颜色变化
 
 :::

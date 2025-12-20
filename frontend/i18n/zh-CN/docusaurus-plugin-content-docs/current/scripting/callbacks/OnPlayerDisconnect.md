@@ -1,13 +1,13 @@
 ---
 title: OnPlayerDisconnect
 sidebar_label: OnPlayerDisconnect
-description: 当玩家与服务器断开连接时触发该回调
+description: 当玩家与服务器断开连接时触发此回调
 tags: ["玩家"]
 ---
 
 ## 描述
 
-当玩家与服务器断开连接时触发该回调。
+当玩家与服务器断开连接时触发此回调。
 
 | 参数     | 说明               |
 | -------- | ------------------ |
@@ -19,24 +19,15 @@ tags: ["玩家"]
 0 - 阻止其他滤镜脚本接收此回调  
 1 - 允许传递给后续滤镜脚本
 
-该回调在滤镜脚本中总是优先触发。
+此回调在滤镜脚本中总是优先触发。
 
 ## 断开原因
 
-| ID  | 原因类型   | 详细说明                                   |
-| --- | ---------- | ------------------------------------------ |
-| 0   | 超时/崩溃  | 玩家连接丢失（游戏崩溃或网络故障）         |
-| 1   | 主动退出   | 玩家通过/quit命令或暂停菜单主动退出        |
-| 2   | 踢出/封禁  | 被服务器踢出或封禁                         |
-| 3   | 自定义原因 | 由部分库使用，保留给模式的私有用途         |
-| 4   | 模式结束   | 当前模式结束导致玩家断开（玩家仍在服务器） |
-
-:::warning
-
-原因ID 3最初由[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)添加  
-原因ID 3和4由Open Multiplayer服务端新增
-
-:::
+| ID  | 原因类型  | 详细说明                            |
+| --- | --------- | ----------------------------------- |
+| 0   | 超时/崩溃 | 玩家连接丢失（游戏崩溃或网络故障）  |
+| 1   | 主动退出  | 玩家通过/quit命令或暂停菜单主动退出 |
+| 2   | 踢出/封禁 | 被服务器踢出或封禁                  |
 
 ## 示例
 
@@ -49,13 +40,11 @@ public OnPlayerDisconnect(playerid, reason)
 
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 
-    new szDisconnectReason[5][] =
+    new szDisconnectReason[3][] =
     {
         "超时/崩溃",
         "主动退出",
-        "踢出/封禁",
-        "自定义原因",
-        "模式结束"
+        "踢出/封禁"
     };
 
     format(szString, sizeof szString, "%s 离开了服务器（原因：%s）。", playerName, szDisconnectReason[reason]);

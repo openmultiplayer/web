@@ -17,7 +17,7 @@ tags: ["定时器"]
 
 ## 返回值
 
-本函数总是返回 0。
+此函数总是返回 0。
 
 ## 示例代码
 
@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 
-public OnPlayerDisconnect(playerid)
+public OnPlayerDisconnect(playerid, reason)
 {
     // 终止玩家关联的定时器
     KillTimer(gConnectTimer[playerid]);

@@ -76,7 +76,7 @@ But it is fixed in open.mp
 
 :::tip
 
-Timer ID variables should be reset to 0 when they can to minimise the chance of accidentally killing new timers by mistake.  `-1` is commonly mistaken to be the invalid ID - it isn't.
+Timer ID variables should be reset to 0 when they can to minimise the chance of accidentally killing new timers by mistake. `-1` is commonly mistaken to be the invalid ID - it isn't.
 
 The function to be called must be public. That means it has to be forwarded.
 
@@ -85,7 +85,7 @@ The function to be called must be public. That means it has to be forwarded.
 ## Definitions
 
 | Definition    | Value |
-|---------------|-------|
+| ------------- | ----- |
 | INVALID_TIMER | 0     |
 
 ## Related Functions

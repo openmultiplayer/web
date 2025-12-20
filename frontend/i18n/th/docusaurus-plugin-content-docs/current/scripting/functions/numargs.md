@@ -38,5 +38,5 @@ public OnFilterScriptInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [getarg](../functions/getarg.md): Retrieve an argument from a variable argument list.
-- [setarg](../functions/setarg.md): Set an argument.
+- [getarg](getarg): Retrieve an argument from a variable argument list.
+- [setarg](setarg): Set an argument.

@@ -10,7 +10,7 @@ description: SQLite 数据库打开标志定义
 
 :::
 
-| 定义标识符                | 描述           |
+| 定义标识符                | 说明           |
 | ------------------------- | -------------- |
 | UNKNOWN_SQLITE_OPEN       | 未知打开模式   |
 | SQLITE_OPEN_READONLY      | 只读模式       |

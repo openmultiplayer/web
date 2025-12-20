@@ -12,7 +12,7 @@ tags: ["player", "pickup", "playerpickup"]
 Sets the type of a player-pickup.
 
 | Name               | Description                                         |
-|--------------------|-----------------------------------------------------|
+| ------------------ | --------------------------------------------------- |
 | playerid           | The ID of the player.                               |
 | pickupid           | The ID of the player-pickup.                        |
 | type               | The [pickup type](../resources/pickuptypes) to set. |
@@ -30,7 +30,7 @@ new PlayerPickup[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     PlayerPickup[playerid] = CreatePlayerPickup(playerid, 1242, 1, 2010.0979, 1222.0642, 10.8206, -1);
-    
+
     SetPlayerPickupType(playerid, PlayerPickup[playerid], 2);
     return 1;
 }

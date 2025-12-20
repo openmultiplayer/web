@@ -15,7 +15,7 @@ tags: []
 
 ## 返回值
 
-该函数没有特定返回值
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/select", true))
     {
         SelectObject(playerid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：请选择您要编辑的物体！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：请选择你要编辑的物体！");
         return 1;
     }
     return 0;

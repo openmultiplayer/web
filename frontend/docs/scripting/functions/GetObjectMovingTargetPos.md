@@ -12,7 +12,7 @@ tags: ["object"]
 Get the move target position of an object.
 
 | Name           | Description                                                                     |
-|----------------|---------------------------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------------------------- |
 | objectid       | The ID of the object to get the move target position of.                        |
 | &Float:targetX | A float variable in which to store the targetX coordinate, passed by reference. |
 | &Float:targetY | A float variable in which to store the targetY coordinate, passed by reference. |
@@ -30,7 +30,7 @@ Get the move target position of an object.
 new objectid = CreateObject(985, 1003.39154, -643.33423, 122.35060,   0.00000, 1.00000, 24.00000);
 MoveObject(objectid, 1003.3915, -643.3342, 114.5122,  0.8);
 
-new 
+new
     Float:targetX,
     Float:targetY,
     Float:targetZ;

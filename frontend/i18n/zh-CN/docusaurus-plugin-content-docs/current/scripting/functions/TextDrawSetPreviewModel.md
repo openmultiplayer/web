@@ -9,7 +9,7 @@ tags: ["文本绘图"]
 
 设置用于文本绘图模型预览的 3D 模型。
 
-| 名称        | 描述                               |
+| 参数        | 说明                               |
 | ----------- | ---------------------------------- |
 | Text:textid | 需要显示 3D 预览的文本绘图 ID。    |
 | model       | 要显示的 GTA SA 或 SA:MP 模型 ID。 |
@@ -50,7 +50,7 @@ public OnGameModeInit()
 
 :::warning
 
-文本绘图必须使用`TEXT_DRAW_FONT_MODEL_PREVIEW`字体类型才能使本函数生效。
+文本绘图必须使用`TEXT_DRAW_FONT_MODEL_PREVIEW`字体类型才能使此函数生效。
 
 :::
 

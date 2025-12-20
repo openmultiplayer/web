@@ -2,7 +2,7 @@
 title: SetSVarString
 sidebar_label: SetSVarString
 description: 设置字符串型服务器变量。
-tags: ["服务器变量", "svar"]
+tags: ["服务器变量"]
 ---
 
 <VersionWarnZH_CN version='SA-MP 0.3.7 R2' />
@@ -11,7 +11,7 @@ tags: ["服务器变量", "svar"]
 
 设置字符串型服务器变量。
 
-| 名称             | 说明                       |
+| 参数             | 说明                       |
 | ---------------- | -------------------------- |
 | const svar[]     | 服务器变量名称             |
 | const value[]    | 要设置的字符串值           |

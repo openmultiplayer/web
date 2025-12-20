@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
     if (!strcmp(cmdtext, "/msgsent"))
     {
         new szString[144];
-        format(szString, sizeof(szString), "服务器已向您发送了 %i 条网络消息", NetStats_MessagesSent(playerid));
+        format(szString, sizeof(szString), "服务器已向你发送了 %i 条网络消息", NetStats_MessagesSent(playerid));
         SendClientMessage(playerid, -1, szString);
     }
     return 1;

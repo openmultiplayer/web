@@ -11,10 +11,10 @@ tags: ["player"]
 
 Get the colour of a player's **nametag** and **radar blip** for another player.
 
-| Name     | Description                                                                                                                                     |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | The player that can see the player's changed blip/nametag colour                                                                                |                        |
-| targetid | The player whose colour has been changed.                                                                                                       |
+| Name     | Description                                                      |
+| -------- | ---------------------------------------------------------------- | --- |
+| playerid | The player that can see the player's changed blip/nametag colour |     |
+| targetid | The player whose colour has been changed.                        |
 
 ## Returns
 

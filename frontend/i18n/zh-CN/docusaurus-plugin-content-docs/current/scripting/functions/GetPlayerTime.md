@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 获取玩家当前的游戏时间。该时间通过[SetWorldTime](SetWorldTime)设置，或当使用[TogglePlayerClock](TogglePlayerClock)时由游戏自动设置。
 
-| 名称     | 说明                       |
+| 参数     | 说明                       |
 | -------- | -------------------------- |
 | playerid | 需要获取游戏时间的玩家 ID  |
 | &hour    | 存储小时的变量（引用传递） |

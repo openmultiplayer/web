@@ -11,7 +11,7 @@ tags: ["文本绘图"]
 
 为特定玩家动态修改文本绘图显示内容。
 
-| 参数名           | 说明                   |
+| 参数             | 说明                   |
 | ---------------- | ---------------------- |
 | Text:textid      | 需修改的文本绘图 ID    |
 | playerid         | 目标玩家 ID            |
@@ -20,7 +20,7 @@ tags: ["文本绘图"]
 
 ## 返回值
 
-本函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -55,7 +55,7 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerRequestClass(playerid, classid)
 {
-    TextDrawSetStringForPlayer(gMyTextdraw, playerid, "您选择了%d号职业", classid);
+    TextDrawSetStringForPlayer(gMyTextdraw, playerid, "你选择了%d号职业", classid);
     return 1;
 }
 ```

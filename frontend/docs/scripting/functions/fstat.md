@@ -13,13 +13,13 @@ tags: ["file management"]
 
 Return the size and the timestamp of a file.
 
-| Name             | Description                                                                                                                                                                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| const filename[] | The name of the file.                                                                                                                                                                                                                             |
-| &size            | If the function is successful, this param-eter holds the size of the file on return.                                                                                                                                                              |
-| &timestamp       | If the function is successful, this parameter holds the time of the last modification of the file on return.                                                                                                                                      |
-| &attrib          | If the function is successful, this parameter holds the file attributes.                                                                                                                                                                          |
-| &inode           | If the function is successful, this parameter holds inode number of the file.  An inode number is a number that uniquely identifies a file, and it usually indicates the physical position of (the start of) the file on the disk or memory card. |
+| Name             | Description                                                                                                                                                                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| const filename[] | The name of the file.                                                                                                                                                                                                                            |
+| &size            | If the function is successful, this param-eter holds the size of the file on return.                                                                                                                                                             |
+| &timestamp       | If the function is successful, this parameter holds the time of the last modification of the file on return.                                                                                                                                     |
+| &attrib          | If the function is successful, this parameter holds the file attributes.                                                                                                                                                                         |
+| &inode           | If the function is successful, this parameter holds inode number of the file. An inode number is a number that uniquely identifies a file, and it usually indicates the physical position of (the start of) the file on the disk or memory card. |
 
 ## Returns
 
@@ -30,7 +30,7 @@ Return the size and the timestamp of a file.
 ## Examples
 
 ```c
-new 
+new
     size,
     timestamp,
     attrib,

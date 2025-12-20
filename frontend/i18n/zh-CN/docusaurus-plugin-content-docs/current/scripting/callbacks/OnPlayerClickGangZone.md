@@ -1,7 +1,7 @@
 ---
 title: OnPlayerClickGangZone
 sidebar_label: OnPlayerClickGangZone
-description: 当玩家在暂停菜单地图上右键点击帮派区域时触发该回调
+description: 当玩家在暂停菜单地图上右键点击帮派区域时触发此回调
 tags: ["玩家", "帮派区域"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["玩家", "帮派区域"]
 
 ## 描述
 
-当玩家在暂停菜单地图上右键点击帮派区域时触发该回调。
+当玩家在暂停菜单地图上右键点击帮派区域时触发此回调。
 
 | 参数     | 说明                 |
 | -------- | -------------------- |
@@ -18,9 +18,9 @@ tags: ["玩家", "帮派区域"]
 
 ## 返回值
 
-本回调不处理返回值。
+此回调不处理返回值。
 
-该回调在游戏模式中总是优先触发。
+此回调在游戏模式中总是优先触发。
 
 ## 示例
 
@@ -28,7 +28,7 @@ tags: ["玩家", "帮派区域"]
 public OnPlayerClickGangZone(playerid, zoneid)
 {
     new string[128];
-    format(string, sizeof(string), "您点击了帮派区域 %i", zoneid);
+    format(string, sizeof(string), "你点击了帮派区域 %i", zoneid);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }

@@ -2,7 +2,7 @@
 title: SetPlayerPickupVirtualWorld
 sidebar_label: SetPlayerPickupVirtualWorld
 description: 设置玩家专属拾取物的虚拟世界ID。
-tags: ["玩家", "拾取物", "玩家专属拾取物"]
+tags: ["玩家", "拾取物", "玩家拾取物"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
@@ -11,7 +11,7 @@ tags: ["玩家", "拾取物", "玩家专属拾取物"]
 
 设置玩家专属拾取物的虚拟世界 ID。
 
-| 参数名       | 说明                |
+| 参数         | 说明                |
 | ------------ | ------------------- |
 | playerid     | 玩家的 ID           |
 | pickupid     | 玩家专属拾取物的 ID |
@@ -19,7 +19,7 @@ tags: ["玩家", "拾取物", "玩家专属拾取物"]
 
 ## 返回值
 
-本函数总是返回 **true**。
+此函数总是返回 **true**。
 
 ## 示例代码
 

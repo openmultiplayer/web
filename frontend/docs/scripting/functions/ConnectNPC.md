@@ -5,6 +5,12 @@ description: Connect an NPC to the server.
 tags: ["npc"]
 ---
 
+:::warning
+
+This function is deprecated. Please see [NPC_Create](NPC_Create).
+
+:::
+
 ## Description
 
 Connect an NPC to the server.

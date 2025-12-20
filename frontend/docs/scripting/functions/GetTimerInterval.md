@@ -14,7 +14,7 @@ Gets the interval of a timer.
 ## Parameters
 
 | Name    | Description                                 |
-|---------|---------------------------------------------|
+| ------- | ------------------------------------------- |
 | timerid | The ID of the timer to get the interval of. |
 
 ## Return Values

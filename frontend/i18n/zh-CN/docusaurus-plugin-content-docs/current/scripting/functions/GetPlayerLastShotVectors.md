@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 获取玩家最后一次射击子弹的起始点和命中点坐标
 
-| 参数名         | 说明                                    |
+| 参数           | 说明                                    |
 | -------------- | --------------------------------------- |
 | playerid       | 需要获取射击信息的玩家 ID               |
 | &Float:originX | 用于存储子弹发射原点 X 坐标的浮点型变量 |
@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-- 本函数仅在开启延迟补偿时生效
+- 此函数仅在开启延迟补偿时生效
 - 若子弹未命中任何物体，命中点坐标将返回 0。当前无法计算子弹在空中的飞行距离
 
 :::
@@ -63,6 +63,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetPlayerWeapon](GetPlayerWeapon): 获取玩家当前手持的武器
 - [VectorSize](VectorSize): 计算向量的模长
 
-## 相关回调函数
+## 相关回调
 
-- [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot): 当玩家发射武器时触发
+- [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot): 当玩家开火时触发

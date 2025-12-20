@@ -9,14 +9,14 @@ tags: ["玩家", "管理"]
 
 封禁玩家并指定原因。
 
-| 名称           | 说明            |
+| 参数           | 说明            |
 | -------------- | --------------- |
 | playerid       | 要封禁的玩家 ID |
 | const reason[] | 封禁原因        |
 
 ## 返回值
 
-本函数没有特定返回值。
+此函数不返回特定值。
 
 ## 注意事项
 
@@ -65,7 +65,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (strcmp(cmdtext, "/banme", true) == 0)
     {
         // 封禁执行此命令的玩家
-        BanExWithMessage(playerid, 0xFF0000FF, "您已被封禁!", "Request");
+        BanExWithMessage(playerid, 0xFF0000FF, "你已被封禁!", "Request");
         return 1;
     }
     return 0;
@@ -76,7 +76,3 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [Ban](Ban): 永久封禁玩家
 - [Kick](Kick): 踢出服务器
-
-```
-
-```

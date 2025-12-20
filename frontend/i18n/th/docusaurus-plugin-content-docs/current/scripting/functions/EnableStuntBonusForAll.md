@@ -29,4 +29,4 @@ public OnGameModeInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [EnableStuntBonusForPlayer](../functions/EnableStuntBonusForPlayer): Toggle stunt bonuses for a player.
+- [EnableStuntBonusForPlayer](EnableStuntBonusForPlayer): Toggle stunt bonuses for a player.

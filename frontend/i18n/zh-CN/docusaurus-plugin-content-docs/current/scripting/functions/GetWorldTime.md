@@ -22,5 +22,5 @@ printf("当前世界时间：%d", GetWorldTime());
 
 ## 相关函数
 
-- [SetWorldTime](SetWorldTime): 为所有玩家设置全局时间（精确到小时）
+- [SetWorldTime](SetWorldTime): 为所有玩家设置世界时间（精确到小时）
 - [SetPlayerTime](SetPlayerTime): 设置玩家独立时间显示

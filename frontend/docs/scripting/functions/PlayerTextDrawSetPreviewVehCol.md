@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawUseBox(playerid, gTextDraw[playerid], true);
     PlayerTextDrawBoxColor(playerid, gTextDraw[playerid], 0x000000FF);
     PlayerTextDrawTextSize(playerid, gTextDraw[playerid], 40.0, 40.0);
-    
+
     PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 411);
     PlayerTextDrawSetPreviewVehCol(playerid, gTextDraw[playerid], 3, 6);
 

@@ -9,13 +9,13 @@ tags: []
 
 终止玩家当前的物体编辑状态
 
-| 参数名   | 说明                  |
+| 参数     | 说明                  |
 | -------- | --------------------- |
 | playerid | 需要终止编辑的玩家 ID |
 
 ## 返回值
 
-本函数没有特定返回值
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/stopedit", true))
     {
         CancelEdit(playerid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "服务器: 您已终止物体编辑！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "服务器: 你已终止物体编辑！");
         return 1;
     }
     return 0;

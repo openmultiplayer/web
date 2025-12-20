@@ -37,7 +37,7 @@ SetVehicleNumberPlate(vehicleid, "ABCD 123");
 - The vehicle must be re-spawned or re-streamed for the changes to take effect.
 - There's a limit of 32 characters on each number plate (including embedded colors).
 - The text length that can be seen on the number plate is around 9 to 10 characters, more characters will cause the text to split.
-- Some vehicle models has a backward number plate, e.g. Boxville (498) (as an alternative to this vehicle you can use vehicle model ID 609, which is a duplicated Boxville (aka Boxburg), but with a regular number plate). 
+- Some vehicle models has a backward number plate, e.g. Boxville (498) (as an alternative to this vehicle you can use vehicle model ID 609, which is a duplicated Boxville (aka Boxburg), but with a regular number plate).
 
 :::
 

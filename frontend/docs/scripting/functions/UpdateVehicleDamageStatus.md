@@ -30,7 +30,7 @@ This function does not return any specific values.
 ## Examples
 
 ```c
-new 
+new
 	VEHICLE_PANEL_STATUS:panels,
 	VEHICLE_DOOR_STATUS:doors,
 	VEHICLE_LIGHT_STATUS:lights,

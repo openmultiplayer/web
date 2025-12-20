@@ -2,14 +2,14 @@
 title: GetPVarString
 sidebar_label: GetPVarString
 description: 获取玩家变量的字符串值
-tags: ["玩家变量", "pvar"]
+tags: ["玩家变量"]
 ---
 
 ## 描述
 
 获取指定玩家变量的字符串值
 
-| 名称                  | 说明                                                         |
+| 参数                  | 说明                                                         |
 | --------------------- | ------------------------------------------------------------ |
 | playerid              | 需要获取变量的玩家 ID                                        |
 | const pvar[]          | 目标变量名称（需通过[SetPVarString](SetPVarString)预先设置） |

@@ -31,7 +31,7 @@ tags: ["player"]
 
 :::tip
 
-Тастери за смер (горе/доле/лево/desno) не покрећу OnPlayerKeyStateChange. <br/> Могу се открити само помоћу [GetPlayerKeys](../functions/GetPlayerKeys) (у [OnPlayerUpdate](../callbacks/OnPlayerUpdate) или помоћу тајмера).
+Тастери за смер (горе/доле/лево/desno) не покрећу OnPlayerKeyStateChange. <br/> Могу се открити само помоћу [GetPlayerKeys](../functions/GetPlayerKeys) (у [OnPlayerUpdate](OnPlayerUpdate) или помоћу тајмера).
 
 :::
 

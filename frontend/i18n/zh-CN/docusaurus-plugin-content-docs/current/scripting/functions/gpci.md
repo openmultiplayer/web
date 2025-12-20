@@ -19,7 +19,7 @@ tags: []
 
 ## 参数
 
-| 参数名                | 说明                                 |
+| 参数                  | 说明                                 |
 | --------------------- | ------------------------------------ |
 | playerid              | 目标玩家的 ID 编号                   |
 | serial[]              | 存储 CI 的字符串数组（通过引用传递） |
@@ -29,7 +29,7 @@ tags: []
 
 返回玩家客户端识别码的字符串形式
 
-## 使用示例
+## 示例
 
 **SA-MP 服务器:**
 
@@ -46,7 +46,7 @@ public OnPlayerConnect(playerid)
     gpci(playerid, serial, sizeof(serial));
 
     new string[128];
-    format(string, sizeof(string), "您的客户端识别码: %s", serial);
+    format(string, sizeof(string), "你的客户端识别码: %s", serial);
     SendClientMessage(playerid, -1, string);
     return 1;
 }
@@ -61,7 +61,7 @@ public OnPlayerConnect(playerid)
 {
     new serial[41]; // 40字符长度 + 终止符\0
     GPCI(playerid, serial, sizeof(serial));
-    SendClientMessage(playerid, -1, "您的客户端识别码: %s", serial);
+    SendClientMessage(playerid, -1, "你的客户端识别码: %s", serial);
     return 1;
 }
 ```

@@ -59,4 +59,4 @@ UpdateVehicleDamageStatus(vehicleid, (panels | VEHICLE_PANEL_STATUS:0b0000000000
 
 ## 相关阅读
 
-- [车辆面板状态](../resources/vehicle-panel-status)
+- [车辆面板状态](vehicle-panel-status)

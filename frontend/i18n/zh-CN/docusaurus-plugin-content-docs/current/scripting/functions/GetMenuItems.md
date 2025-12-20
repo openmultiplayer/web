@@ -11,7 +11,7 @@ tags: ["菜单"]
 
 获取指定列中的行数。
 
-| 参数名      | 说明                    |
+| 参数        | 说明                    |
 | ----------- | ----------------------- |
 | Menu:menuid | 要查询的菜单 ID         |
 | column      | 列索引（从 0 开始计数） |
@@ -29,5 +29,5 @@ new items = GetMenuItems(menuid, 1);
 
 ## 相关函数
 
-- [GetMenuColumns](GetMenuColumns.md): 获取菜单激活列数
-- [GetMenuItem](GetMenuItem.md): 通过行列索引获取单元格文本
+- [GetMenuColumns](GetMenuColumns): 获取菜单激活列数
+- [GetMenuItem](GetMenuItem): 通过行列索引获取单元格文本

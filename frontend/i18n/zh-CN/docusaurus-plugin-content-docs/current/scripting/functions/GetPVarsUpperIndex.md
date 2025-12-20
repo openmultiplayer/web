@@ -2,14 +2,14 @@
 title: GetPVarsUpperIndex
 sidebar_label: GetPVarsUpperIndex
 description: 获取玩家变量的最大索引值
-tags: ["玩家变量", "pvar"]
+tags: ["玩家变量"]
 ---
 
 ## 描述
 
-玩家变量(PVar)都有唯一的标识索引，本函数返回玩家已设置的变量最大索引值
+玩家变量(PVar)都有唯一的标识索引，此函数返回玩家已设置的变量最大索引值
 
-| 名称     | 说明                  |
+| 参数     | 说明                  |
 | -------- | --------------------- |
 | playerid | 需要获取索引的玩家 ID |
 
@@ -41,7 +41,7 @@ for(new i = 0; i != PVarUpperIndex; i++) // 遍历所有可能的变量索引
 }
 
 new szString[128];
-format(szString, sizeof(szString), "您已设置了 %i 个玩家变量，最大索引值为 %i", pVarCount, PVarUpperIndex-1);
+format(szString, sizeof(szString), "你已设置了 %i 个玩家变量，最大索引值为 %i", pVarCount, PVarUpperIndex-1);
 SendClientMessage(playerid, -1, szString);
 ```
 

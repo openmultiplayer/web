@@ -11,7 +11,7 @@ tags: []
 
 检测指定昵称字符串是否符合服务器命名规则。
 
-| 参数名       | 说明               |
+| 参数         | 说明               |
 | ------------ | ------------------ |
 | const name[] | 待检测的昵称字符串 |
 
@@ -28,7 +28,7 @@ if (IsValidNickName("Barnaby_Keene"))
 }
 else
 {
-    SendClientMessage(playerid, 0xFF0000FF, "您的昵称不符合规范。");
+    SendClientMessage(playerid, 0xFF0000FF, "你的昵称不符合规范。");
 }
 ```
 

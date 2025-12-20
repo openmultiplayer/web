@@ -25,7 +25,7 @@ new Text:gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
-    
+
     new Float:x, Float:y;
     TextDrawGetPos(gMyTextdraw, x, y);
     // The `x` will be '100.0' and `y` will be '33.0'

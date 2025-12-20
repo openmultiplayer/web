@@ -1,13 +1,13 @@
 ---
 title: OnObjectMoved
 sidebar_label: OnObjectMoved
-description: 当物体通过MoveObject移动并停止时触发该回调
+description: 当物体通过MoveObject移动并停止时触发此回调
 tags: ["物体"]
 ---
 
 ## 描述
 
-当物体通过MoveObject函数移动并停止时触发该回调。
+当物体通过MoveObject函数移动并停止时触发此回调。
 
 | 参数     | 说明               |
 | -------- | ------------------ |
@@ -15,7 +15,7 @@ tags: ["物体"]
 
 ## 返回值
 
-该回调在滤镜脚本中总是优先触发。
+此回调在滤镜脚本中总是优先触发。
 
 ## 示例
 

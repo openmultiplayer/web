@@ -9,7 +9,7 @@ tags: []
 
 获取控制台变量的浮点类型值。
 
-| 参数名       | 说明                           |
+| 参数         | 说明                           |
 | ------------ | ------------------------------ |
 | const cvar[] | 要获取的浮点类型控制台变量名称 |
 
@@ -34,6 +34,6 @@ printf("玩家名牌绘制半径: %.2f", radius);  // 输出浮点数值保留�
 
 ## 相关函数
 
-- [GetConsoleVarAsInt](GetConsoleVarAsInt.md): 以整型形式获取控制台变量
-- [GetConsoleVarAsString](GetConsoleVarAsString.md): 以字符串形式获取控制台变量
-- [GetConsoleVarAsBool](GetConsoleVarAsBool.md): 以布尔值形式获取控制台变量
+- [GetConsoleVarAsInt](GetConsoleVarAsInt): 以整型形式获取控制台变量
+- [GetConsoleVarAsString](GetConsoleVarAsString): 以字符串形式获取控制台变量
+- [GetConsoleVarAsBool](GetConsoleVarAsBool): 以布尔值形式获取控制台变量

@@ -11,7 +11,7 @@ tags: ["角色"]
 
 获取角色的初始生成点信息。
 
-| 参数名            | 说明                                         |
+| 参数              | 说明                                         |
 | ----------------- | -------------------------------------------- |
 | actorid           | 要获取生成信息的角色 ID                      |
 | &skin             | 整型变量（引用传递），用于存储角色皮肤 ID    |
@@ -46,8 +46,8 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [CreateActor](CreateActor.md): 创建角色（静态 NPC）
-- [GetActorPos](GetActorPos.md): 获取角色的坐标位置
-- [SetActorPos](SetActorPos.md): 设置角色的坐标位置
-- [GetActorSkin](GetActorSkin.md): 获取角色皮肤 ID
-- [SetActorSkin](SetActorSkin.md): 设置角色皮肤 ID
+- [CreateActor](CreateActor): 创建角色（静态 NPC）
+- [GetActorPos](GetActorPos): 获取角色的坐标位置
+- [SetActorPos](SetActorPos): 设置角色的坐标位置
+- [GetActorSkin](GetActorSkin): 获取角色皮肤 ID
+- [SetActorSkin](SetActorSkin): 设置角色皮肤 ID

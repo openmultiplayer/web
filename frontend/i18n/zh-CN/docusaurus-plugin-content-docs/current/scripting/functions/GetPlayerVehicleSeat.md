@@ -9,13 +9,14 @@ tags: ["玩家", "车辆"]
 
 获取指定玩家当前在车辆中的座位编号
 
-| 名称     | 说明                      |
+| 参数     | 说明                      |
 | -------- | ------------------------- |
 | playerid | 需要获取座位信息的玩家 ID |
 
 ## 返回值
 
 玩家当前所在的座位编号：
+
 - **-1** 未处于车辆中
 - **0** 驾驶位
 - **1** 前排乘客位
@@ -42,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new
             string[24];
 
-        format(string, sizeof(string), "您的座位号：%i", playerSeat);
+        format(string, sizeof(string), "你的座位号：%i", playerSeat);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;
     }

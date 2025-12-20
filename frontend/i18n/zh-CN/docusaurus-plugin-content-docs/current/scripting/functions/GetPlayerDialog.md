@@ -7,7 +7,7 @@ tags: ["玩家", "对话框"]
 
 :::warning
 
-本函数已弃用，请使用[GetPlayerDialogID](GetPlayerDialogID)
+此函数已弃用，请使用[GetPlayerDialogID](GetPlayerDialogID)
 
 :::
 

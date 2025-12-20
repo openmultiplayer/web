@@ -5,13 +5,19 @@ description: Set the NPC's facing angle.
 tags: []
 ---
 
+:::warning
+
+This function is deprecated. Please see [NPC_SetFacingAngle](NPC_SetFacingAngle).
+
+:::
+
 ## Description
 
 Set the NPC's facing angle.
 
-| Name                 | Description                   |
-| -------------------- | ----------------------------- |
-| Float:ang            | The new NPC's facing angle.   |
+| Name      | Description                 |
+| --------- | --------------------------- |
+| Float:ang | The new NPC's facing angle. |
 
 ## Examples
 
@@ -29,4 +35,4 @@ SetMyFacingAngle(0); //NPC faces north
 
 ## Related Functions
 
-- [GetMyFacingAngle](../functions/GetMyFacingAngle): Get the NPC's facing angle.
+- [GetMyFacingAngle](GetMyFacingAngle): Get the NPC's facing angle.

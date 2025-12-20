@@ -2,14 +2,14 @@
 title: ForceClassSelection
 sidebar_label: ForceClassSelection
 description: 强制玩家返回职业选择界面。
-tags: ["职业系统"]
+tags: ["职业"]
 ---
 
 ## 描述
 
-该函数强制指定玩家返回职业选择界面。
+此函数强制指定玩家返回职业选择界面。
 
-| 参数名   | 描述              |
+| 参数     | 说明              |
 | -------- | ----------------- |
 | playerid | 需要操作的玩家 ID |
 
@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-当结合使用 TogglePlayerSpectating 函数时（如上例所示），本函数不会将玩家状态切换为 PLAYER_STATE_WASTED（濒死状态）。
+当结合使用 TogglePlayerSpectating 函数时（如上例所示），此函数不会将玩家状态切换为 PLAYER_STATE_WASTED（濒死状态）。
 
 :::
 

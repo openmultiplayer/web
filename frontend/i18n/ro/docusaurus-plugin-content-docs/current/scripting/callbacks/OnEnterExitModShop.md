@@ -43,4 +43,4 @@ Bug-uri cunoscute: Jucătorii se lovesc înte ei când intră în același mod s
 
 ## Funcții asociate
 
-- [AddVehicleComponent](../functions/AddVehicleComponent.md): Adaugă o componentă unei mașini.
+- [AddVehicleComponent](../functions/AddVehicleComponent): Adaugă o componentă unei mașini.

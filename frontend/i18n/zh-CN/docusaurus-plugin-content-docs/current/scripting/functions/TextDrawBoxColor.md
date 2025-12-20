@@ -9,14 +9,14 @@ tags: ["文本绘图"]
 
 调整文本框颜色（仅在 TextDrawUseBox 的'use'参数为'true'时生效）。
 
-| 名称        | 说明                                                                                                            |
+| 参数        | 说明                                                                                                            |
 | ----------- | --------------------------------------------------------------------------------------------------------------- |
 | Text:textid | 需要修改的文本绘图                                                                                              |
 | boxColour   | 颜色值。透明度由颜色的 alpha 通道决定（例如 0x000000FF 表示完全不透明的黑色，而 0x000000AA 表示半透明的黑色）。 |
 
 ## 返回值
 
-该函数不返回任何特定值。
+此函数不返回特定值。
 
 ## 示例
 
@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::tip
 
-如果您想更改已显示的文本绘图的框颜色，无需重新创建。只需在修改后使用[TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll)即可立即生效。
+如果你想更改已显示的文本绘图的框颜色，无需重新创建。只需在修改后使用[TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll)即可立即生效。
 
 :::
 

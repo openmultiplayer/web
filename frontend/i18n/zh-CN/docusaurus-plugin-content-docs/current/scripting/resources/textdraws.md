@@ -14,7 +14,7 @@ description: 文本绘图是在玩家屏幕上绘制的文字元素，可长期�
 
 ## 全局文本绘图
 
-全局文本绘图可被创建并展示给所有玩家，但存在[数量限制](../resources/limits)。例如当服务器拥有 500 名玩家时，每个玩家最多只能创建 4 个全局文本绘图。此时便需要采用**玩家专属**文本绘图方案（下文将详细说明）。以下是**全局**文本绘图相关函数列表：
+全局文本绘图可被创建并展示给所有玩家，但存在[数量限制](limits)。例如当服务器拥有 500 名玩家时，每个玩家最多只能创建 4 个全局文本绘图。此时便需要采用**玩家专属**文本绘图方案（下文将详细说明）。以下是**全局**文本绘图相关函数列表：
 
 - [TextDrawCreate](../functions/TextDrawCreate): 创建文本绘图
 - [TextDrawDestroy](../functions/TextDrawDestroy): 销毁文本绘图
@@ -150,7 +150,7 @@ new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;
 
 TextDrawCreate(Float:x, Float:y, text[])
 
-| 参数名 | 说明                |
+| 参数   | 说明                |
 | ------ | ------------------- |
 | x      | 文本绘图的 X 轴坐标 |
 | y      | 文本绘图的 Y 轴坐标 |
@@ -199,14 +199,14 @@ SA-MP 0.3d 版本新增第四种字体（ID 4），需配合 [TextDrawCreate](..
 
 TextDrawShowForPlayer(playerid, Text:text)
 
-| 参数名   | 说明                |
+| 参数     | 说明                |
 | -------- | ------------------- |
 | playerid | 目标玩家 ID         |
 | text     | 要显示的文本绘图 ID |
 
 **返回值：​**
 
-无特定返回值
+不返回特定值。
 
 实现代码：
 

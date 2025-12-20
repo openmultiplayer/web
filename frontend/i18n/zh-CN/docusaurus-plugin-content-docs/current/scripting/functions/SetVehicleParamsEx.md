@@ -9,7 +9,7 @@ tags: ["车辆"]
 
 设置车辆的全局参数，对所有玩家生效。
 
-| 参数名         | 说明                           |
+| 参数           | 说明                           |
 | -------------- | ------------------------------ |
 | vehicleid      | 目标车辆的 ID                  |
 | bool:engine    | 引擎状态（0=关闭，1=启动）     |
@@ -80,7 +80,7 @@ public DisableVehicleAlarm(vehicleid)
 
 :::tip
 
-- 警报触发后不会自动停止，需手动调用本函数关闭
+- 警报触发后不会自动停止，需手动调用此函数关闭
 - 启用[ManualVehicleEngineAndLights](ManualVehicleEngineAndLights)后，车灯在白天也会保持开启状态
 
 :::

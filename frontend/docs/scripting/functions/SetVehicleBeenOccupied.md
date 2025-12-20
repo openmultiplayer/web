@@ -19,9 +19,9 @@ Sets the vehicle's occupancy.
 
 ## Parameters
 
-| Name          | Description                          |
-|---------------|--------------------------------------|
-| vehicleid     | The ID of the vehicle.               |
+| Name          | Description                                  |
+| ------------- | -------------------------------------------- |
+| vehicleid     | The ID of the vehicle.                       |
 | bool:occupied | **true**: occupied - **false**: not occupied |
 
 ## Examples

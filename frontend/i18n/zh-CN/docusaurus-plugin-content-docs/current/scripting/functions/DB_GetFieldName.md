@@ -2,16 +2,14 @@
 title: DB_GetFieldName
 sidebar_label: DB_GetFieldName
 description: 返回指定索引处的字段名称。
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
 ## 描述
 
-该函数返回指定索引处的字段名称。
+此函数返回指定索引处的字段名称。
 
-| 参数名                 | 说明                                                     |
+| 参数                   | 说明                                                     |
 | ---------------------- | -------------------------------------------------------- |
 | DBResult:result        | 查询结果句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)返回） |
 | field                  | 要获取的字段索引（从 0 开始）                            |
@@ -35,6 +33,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = DB_Open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         // 从'join_log'表中选择第一条记录

@@ -8,7 +8,7 @@ description: open.mp 新增函数与回调说明。
 
 ## 玩家相关
 
-| 名称                                                                                |
+| 参数                                                                                |
 | ----------------------------------------------------------------------------------- |
 | [TogglePlayerWidescreen](../scripting/functions/TogglePlayerWidescreen)             |
 | [IsPlayerWidescreenToggled](../scripting/functions/IsPlayerWidescreenToggled)       |
@@ -57,7 +57,7 @@ description: open.mp 新增函数与回调说明。
 
 ## 物体相关
 
-| 名称                                                                                          |
+| 参数                                                                                          |
 | --------------------------------------------------------------------------------------------- |
 | [SetObjectNoCameraCollision](../scripting/functions/SetObjectNoCameraCollision)               |
 | [SetPlayerObjectNoCameraCollision](../scripting/functions/SetPlayerObjectNoCameraCollision)   |
@@ -100,7 +100,7 @@ description: open.mp 新增函数与回调说明。
 
 ## 拾取物相关
 
-| 名称                                                                              |
+| 参数                                                                              |
 | --------------------------------------------------------------------------------- |
 | [CreatePlayerPickup](../scripting/functions/CreatePlayerPickup)                   |
 | [DestroyPlayerPickup](../scripting/functions/DestroyPlayerPickup)                 |
@@ -136,7 +136,7 @@ description: open.mp 新增函数与回调说明。
 
 ## 车辆相关
 
-| 名称                                                                                |
+| 参数                                                                                |
 | ----------------------------------------------------------------------------------- |
 | [ChangeVehicleColours](../scripting/functions/ChangeVehicleColours)                 |
 | [GetPlayerLastSyncedVehicleID](../scripting/functions/GetPlayerLastSyncedVehicleID) |
@@ -182,7 +182,7 @@ description: open.mp 新增函数与回调说明。
 
 ## 文本绘图
 
-| 名称                                                                                                    |
+| 参数                                                                                                    |
 | ------------------------------------------------------------------------------------------------------- |
 | [TextDrawColour](../scripting/functions/TextDrawColour)                                                 |
 | [TextDrawBoxColour](../scripting/functions/TextDrawBoxColour)                                           |

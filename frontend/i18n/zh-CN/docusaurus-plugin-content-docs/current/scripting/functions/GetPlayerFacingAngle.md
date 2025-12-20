@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 获取玩家当前面朝方向的水平旋转角度
 
-| 参数名       | 说明                               |
+| 参数         | 说明                               |
 | ------------ | ---------------------------------- |
 | playerid     | 需要获取角度的玩家 ID              |
 | &Float:angle | 存储角度的浮点变量（通过引用传递） |
@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-当玩家处于车辆内时，本函数返回的角度通常不准确。建议使用[GetVehicleZAngle](GetVehicleZAngle)获取车辆 Z 轴旋转角度
+当玩家处于车辆内时，此函数返回的角度通常不准确。建议使用[GetVehicleZAngle](GetVehicleZAngle)获取车辆 Z 轴旋转角度
 
 :::
 

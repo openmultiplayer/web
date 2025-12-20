@@ -12,4 +12,4 @@ tags: []
 
 ## توابع مرتبط
 
-- [ResumeRecordingPlayback](../functions/ResumeRecordingPlayback): ضبط را ادامه می‌دهد اگر متوقف باشد.
+- [ResumeRecordingPlayback](ResumeRecordingPlayback): ضبط را ادامه می‌دهد اگر متوقف باشد.

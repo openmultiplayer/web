@@ -33,7 +33,8 @@ This callback is called when a player request for custom model downloads.
 #define DOWNLOAD_REQUEST_EMPTY        (0)
 #define DOWNLOAD_REQUEST_MODEL_FILE   (1)
 #define DOWNLOAD_REQUEST_TEXTURE_FILE (2)
-new baseurl[] = "https://files.sa-mp.com/server";
+
+new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {
@@ -61,4 +62,4 @@ public OnPlayerRequestDownload(playerid, type, crc)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [OnPlayerFinishedDownloading](../../scripting/callbacks/OnPlayerFinishedDownloading.md): Called when a player finishes downloading custom models.
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.

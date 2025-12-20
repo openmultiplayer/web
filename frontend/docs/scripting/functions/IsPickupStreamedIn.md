@@ -12,7 +12,7 @@ tags: ["player", "pickup"]
 Checks if a pickup is streamed in for a specific player.
 
 | Name     | Description           |
-|----------|-----------------------|
+| -------- | --------------------- |
 | playerid | The ID of the player. |
 | pickupid | The ID of the pickup. |
 

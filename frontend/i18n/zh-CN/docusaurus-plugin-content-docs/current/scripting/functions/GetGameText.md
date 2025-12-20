@@ -11,7 +11,7 @@ tags: ["玩家"]
 
 获取指定玩家游戏文本样式的所有相关信息。
 
-| 参数名          | 说明                                                |
+| 参数            | 说明                                                |
 | --------------- | --------------------------------------------------- |
 | playerid        | 要获取信息的玩家 ID                                 |
 | style           | 要查询的[游戏文本样式](../resources/gametextstyles) |
@@ -47,8 +47,8 @@ public OnPlayerConnect(playerid)
 
 ## 相关函数
 
-- [GameTextForPlayer](GameTextForPlayer.md): 向玩家显示游戏文本
-- [HideGameTextForPlayer](HideGameTextForPlayer.md): 隐藏玩家的指定样式游戏文本
-- [GameTextForAll](GameTextForAll.md): 向所有玩家显示游戏文本
-- [HideGameTextForAll](HideGameTextForAll.md): 全局隐藏指定样式游戏文本
-- [HasGameText](HasGameText.md): 检测玩家是否正在显示指定样式的游戏文本
+- [GameTextForPlayer](GameTextForPlayer): 向玩家显示游戏文本
+- [HideGameTextForPlayer](HideGameTextForPlayer): 隐藏玩家的指定样式游戏文本
+- [GameTextForAll](GameTextForAll): 向所有玩家显示游戏文本
+- [HideGameTextForAll](HideGameTextForAll): 全局隐藏指定样式游戏文本
+- [HasGameText](HasGameText): 检测玩家是否正在显示指定样式的游戏文本

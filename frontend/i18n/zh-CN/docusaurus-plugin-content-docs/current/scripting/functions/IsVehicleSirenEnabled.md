@@ -1,7 +1,7 @@
 ---
 title: IsVehicleSirenEnabled
 sidebar_label: IsVehicleSirenEnabled
-description: 检测车辆警笛状态
+description: 检测车辆警报器状态
 tags: ["车辆"]
 ---
 
@@ -9,34 +9,34 @@ tags: ["车辆"]
 
 ## 描述
 
-检测指定车辆的警笛是否处于开启状态。
+检测指定车辆的警报器是否处于开启状态。
 
 ## 参数说明
 
-| 参数名    | 说明            |
+| 参数      | 说明            |
 | --------- | --------------- |
 | vehicleid | 要检测的车辆 ID |
 
 ## 返回值
 
-**true** - 警笛开启
+**true** - 警报器开启
 
-**false** - 警笛关闭
+**false** - 警报器关闭
 
 ## 示例代码
 
 ```c
 if (IsVehicleSirenEnabled(vehicleid))
 {
-    // 警笛已开启
+    // 警报器已开启
 }
 else
 {
-    // 警笛已关闭
+    // 警报器已关闭
 }
 ```
 
 ## 相关函数
 
-- [`SetVehicleParamsSirenState`](SetVehicleParamsSirenState): 设置车辆警笛状态
-- [`ToggleVehicleSirenEnabled`](ToggleVehicleSirenEnabled): 切换车辆警笛状态
+- [`SetVehicleParamsSirenState`](SetVehicleParamsSirenState): 设置车辆警报器状态
+- [`ToggleVehicleSirenEnabled`](ToggleVehicleSirenEnabled): 切换车辆警报器状态

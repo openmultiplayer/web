@@ -43,7 +43,7 @@ description: open.mp развојни напредак и дневник про�
 
 Нова верзија open.mp сервера је коначно ту, доносећи многе поправке, побољшања у перформанси и неколико додатака.
 
-Наш лаунчер је такође добио нови апдејт који можете преузети простим покретањем вашег лаунчера и апдејтовањем њега путем апдејт диалога. 
+Наш лаунчер је такође добио нови апдејт који можете преузети простим покретањем вашег лаунчера и апдејтовањем њега путем апдејт диалога.
 Листу промена можете пронаћи овде: https://github.com/openmultiplayer/launcher/releases/tag/v1.4.0
 
 ### Сервер
@@ -59,8 +59,8 @@ description: open.mp развојни напредак и дневник про�
 
 **Промене:**
 
-- Уклоњене су непотребне функције OnPlayerConnect и OnPlayerDisconnect када се споредна скрипта (филтерскрипта) учитава или искључује. 
-Уместо њих уведени су callback-ови [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) и [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer).
+- Уклоњене су непотребне функције OnPlayerConnect и OnPlayerDisconnect када се споредна скрипта (филтерскрипта) учитава или искључује.
+  Уместо њих уведени су callback-ови [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) и [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer).
 - Уклоњена су бројна упозорења за застареле Pawn native функције у времену извршавања.
 - Провера исправности CDN URL-ова.
 - Прекинуто је емитовање синхронизације посматрача.
@@ -503,10 +503,10 @@ Release Candidate 2 (RC2) open.mp сервера.
 - [OnPlayerEnterPlayerGangZone](scripting/callbacks/OnPlayerEnterPlayerGangZone)
 - [OnPlayerLeavePlayerGangZone](scripting/callbacks/OnPlayerLeavePlayerGangZone)
 - [OnPlayerClickPlayerGangZone](scripting/callbacks/OnPlayerClickPlayerGangZone)
-- [OnPickupStreamIn](../scripting/callbacks/OnPickupStreamIn)
-- [OnPickupStreamOut](../scripting/callbacks/OnPickupStreamOut)
-- [OnPlayerPickUpPlayerPickup](../scripting/callbacks/OnPlayerPickUpPlayerPickup)
-- [OnPlayerPickupStreamIn](../scripting/callbacks/OnPlayerPickupStreamIn)
-- [OnPlayerPickupStreamOut](../scripting/callbacks/OnPlayerPickupStreamOut)
+- [OnPickupStreamIn](scripting/callbacks/OnPickupStreamIn)
+- [OnPickupStreamOut](scripting/callbacks/OnPickupStreamOut)
+- [OnPlayerPickUpPlayerPickup](scripting/callbacks/OnPlayerPickUpPlayerPickup)
+- [OnPlayerPickupStreamIn](scripting/callbacks/OnPlayerPickupStreamIn)
+- [OnPlayerPickupStreamOut](scripting/callbacks/OnPlayerPickupStreamOut)
 
 </details>

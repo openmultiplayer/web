@@ -2,18 +2,23 @@
 title: db_debug_openfiles
 sidebar_label: db_debug_openfiles
 description: 调试用-获取已打开的数据库连接数量。
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNoteZH_CN />
+
+:::warning
+
+此函数已弃用，请使用 [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount)。
+
+:::
 
 ## 描述
 
 此函数用于调试目的，获取当前已打开的数据库连接数量。
 
-| 参数名 | 说明 |
-| ------ | ---- |
+| 参数 | 说明 |
+| ---- | ---- |
 
 ## 相关函数
 

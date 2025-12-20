@@ -31,4 +31,4 @@ public OnPlayerConnect(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [EnableStuntBonusForAll](../functions/EnableStuntBonusForAll): Toggle stunt bonuses for all players.
+- [EnableStuntBonusForAll](EnableStuntBonusForAll): Toggle stunt bonuses for all players.

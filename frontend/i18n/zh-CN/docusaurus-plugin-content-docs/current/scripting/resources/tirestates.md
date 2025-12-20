@@ -230,7 +230,7 @@ x - 爆胎
 
 ---
 
-## 使用示例
+## 示例
 
 设置四轮车辆后两轮爆胎，保持前轮状态：
 
@@ -247,4 +247,4 @@ UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, (tires | VEHICLE_TIR
 
 ## 相关链接
 
-- [车辆轮胎状态](../resources/vehicle-tire-status)
+- [车辆轮胎状态](vehicle-tire-status)

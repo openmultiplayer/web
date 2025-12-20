@@ -9,18 +9,18 @@ tags: []
 
 Zamijeni teksturu objekta sa tekstom.
 
-| Ime           | Deskripcija                                                                                           |
-| ------------- | ----------------------------------------------------------------------------------------------------- |
-| objectid      | ID objekta za zamijeniti sa texturam sa tekstom.                                                      |
-| text          | Tekst za prikazati na objektu. (MAX 2048 karaktera)                                                   |
-| materialindex | Index materijala objekta za zamijeniti sa tekstom.                                                    |
-| materialsize  | [Veličina](/docs/scripting/resources/materialtextsizes) materijala.                                   |
-| fontface      | Font za koristiti.                                                                                    |
-| fontsize      | Veličina teksta (MAX 255).                                                                            |
-| bold          | Bold text. Postavi na 1 za bold (deblji font), 0 za ne.                                               |
-| fontcolor     | Boja teksta, u ARGB formatu.                                                                          |
-| backcolor     | Boja pozadine, u ARGB formatu.                                                                        |
-| textalignment | [Poravnanje](/docs/scripting/resources/materialtextalignment) teksta (po zadanim postavkama: lijevo). |
+| Ime           | Deskripcija                                                                              |
+| ------------- | ---------------------------------------------------------------------------------------- |
+| objectid      | ID objekta za zamijeniti sa texturam sa tekstom.                                         |
+| text          | Tekst za prikazati na objektu. (MAX 2048 karaktera)                                      |
+| materialindex | Index materijala objekta za zamijeniti sa tekstom.                                       |
+| materialsize  | [Veličina](../resources/materialtextsizes) materijala.                                   |
+| fontface      | Font za koristiti.                                                                       |
+| fontsize      | Veličina teksta (MAX 255).                                                               |
+| bold          | Bold text. Postavi na 1 za bold (deblji font), 0 za ne.                                  |
+| fontcolor     | Boja teksta, u ARGB formatu.                                                             |
+| backcolor     | Boja pozadine, u ARGB formatu.                                                           |
+| textalignment | [Poravnanje](../resources/materialtextalignment) teksta (po zadanim postavkama: lijevo). |
 
 ## Returns
 

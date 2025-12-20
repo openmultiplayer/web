@@ -11,10 +11,10 @@ tags: ["math", "floating-point"]
 
 Subtracts one float from another one. Note that this function has no real use, as one can simply use the standard operator (-) instead.
 
-| Name        | Description                                          |
-| ----------- | ---------------------------------------------------- |
-| Float:oper1 | First Float.                                         |
-| Float:oper2 | Second Float (gets subtracted from the first float)  |
+| Name        | Description                                         |
+| ----------- | --------------------------------------------------- |
+| Float:oper1 | First Float.                                        |
+| Float:oper2 | Second Float (gets subtracted from the first float) |
 
 ## Returns
 
@@ -34,6 +34,6 @@ public OnGameModeInit()
 
 ## Related Functions
 
-- [Floatadd](Floatadd): Adds two floats.
-- [Floatmul](Floatmul): Multiplies two floats.
+- [floatadd](floatadd): Adds two floats.
+- [floatmul](floatmul): Multiplies two floats.
 - [floatdiv](floatdiv): Divides a float by another.

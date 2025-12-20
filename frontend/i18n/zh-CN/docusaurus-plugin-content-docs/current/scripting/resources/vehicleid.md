@@ -4,7 +4,7 @@ sidebar_label: 车辆ID
 description: 车辆ID的完整列表
 ---
 
-| ID                                                                        | 描述                                                                                                                              |
+| ID                                                                        | 说明                                                                                                                              |
 | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://assets.open.mp/assets/images/vehiclePictures/Vehicle_400.jpg) | 车辆模型 ID: 400<br/> 车辆名称: Landstalker<br/> 种类: 越野 <br/>改装店: Transfender <br/>模型名称: landstal<br/>座位数: 4        |
 | ![](https://assets.open.mp/assets/images/vehiclePictures/Vehicle_401.jpg) | 车辆模型 ID: 401<br/> 车辆名称: Bravura<br/> 种类: 轿车 <br/>改装店: Transfender <br/>模型名称: bravura<br/>座位数: 2             |

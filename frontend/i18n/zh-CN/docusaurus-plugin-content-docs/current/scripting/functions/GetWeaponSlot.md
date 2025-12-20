@@ -5,13 +5,13 @@ description: 获取武器的槽位编号。
 tags: ["武器"]
 ---
 
-<versionWarn version='omp v1.1.0.2612' />
+<VersionWarnZH_CN version='omp v1.1.0.2612' />
 
 ## 描述
 
 获取指定武器对应的槽位编号。
 
-| 参数名          | 说明               |
+| 参数            | 说明               |
 | --------------- | ------------------ |
 | WEAPON:weaponid | 目标武器的 ID 编号 |
 

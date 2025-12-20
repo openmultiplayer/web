@@ -41,7 +41,7 @@ In other words, the char operators divides its left operand by the number of
 bytes that fit in a cell and rounds upwards. Again, in a typical implementation,
 this means dividing by four and rounding upwards.
 
-You can design routines that work on strings in both packed and unpacked formats. 
+You can design routines that work on strings in both packed and unpacked formats.
 To find out whether a string is packed or unpacked, look at the first
 cell of a string. If its value is either negative or higher than the maximum possible
 value of an unpacked character, the string is a packed string. Otherwise it
@@ -138,7 +138,7 @@ Listing: “hello world” in Greek
 ```c
 
 main()
-    printf "˙  ˙\n"
+    printf "Γειάσου κόσμος\n"
 
 ```
 
@@ -147,12 +147,12 @@ characters in strings and character constants. The PAWN language
 requires that all keywords and symbols (names of functions, variables, tags and other
 elements) be encoded in the ascii character set.
 
-For languages whose required character set is relatively small, a common solution 
+For languages whose required character set is relatively small, a common solution
 is to use an 8-bit extended ascii character set (the ascii character set is
-7-bit, holding 128 characters). The upper 128 codes of the extended set contain 
+7-bit, holding 128 characters). The upper 128 codes of the extended set contain
 glyphs specific for the language. For Western European languages, a well
 known character set is “Latin-1”, which is standardized as ISO 8859-1 —the
-same set also goes by the name “codepage 1252”, at least for Microsoft Windows.∗ 
+same set also goes by the name “codepage 1252”, at least for Microsoft Windows.∗
 Codepages have been defined for many languages; for example, ISO
 8859-2 (“Latin-2”) has glyphs used in Central and Eastern Europe, and ISO
 8859-7 contains the Greek alphabet in the upper half of the extended ascii set.
@@ -182,7 +182,7 @@ the 7-bit ascii set) can still be indicated by a single byte. The
 
 Codepages become problematic when interchanging documents or data with
 people in regions that use a different codepage, or when using different
-languages in the same document. Codepages that use “shift” characters complicate 
+languages in the same document. Codepages that use “shift” characters complicate
 the matter further, because text processing must now take into account
 that a character may take either one or two bytes. Scanning through a string
 from right to left may even become impossible, as a byte may either indicate a
@@ -190,7 +190,7 @@ glyph from the base set (“unshifted”) or it may be a glyph from a shifted se
 -in the latter case the preceding byte indicates the shift set, but the meaning
 of the preceding character depends on the character before that.
 
-The ISO/IEC 10646 “Universal Character Set” (UCS) standard has the ambitious 
+The ISO/IEC 10646 “Universal Character Set” (UCS) standard has the ambitious
 goal to eventually include all characters used in all the written
 languages in the world, using a 31-bit character set. This solves both of the problems
 related to codepages and “shifted” character sets. However, the ISO/IEC body
@@ -224,7 +224,7 @@ emerged in two different ways: either the internal representation of characters
 is multi-byte (typically 16-bit, or 2-byte), or the application stores strings
 internally in UTF-8 format, and these strings are converted to the proper glyphs
 only when displaying or printing them. Recent versions of Microsoft Windows
-use Unicode internally; The Plan-9 operating system pioneered the UTF-8 encoding 
+use Unicode internally; The Plan-9 operating system pioneered the UTF-8 encoding
 approach, which is now widely used in Unix/Linux. The  
 advantage of UTF-8 encoding as an internal representation is that it is physically an 8-
 bit encoding, and therefore compatible with nearly all existing databases, file
@@ -329,9 +329,9 @@ x = valencia                    /* ok */
 
 ```
 
-The first assignment causes a “tag mismatch” diagnostic as it assigns an “orange” 
+The first assignment causes a “tag mismatch” diagnostic as it assigns an “orange”
 tagged variable to a variable with an “apple” tag. The second assignment
-puts the untagged value of x into a tagged variable, which causes again a diagnostic. 
+puts the untagged value of x into a tagged variable, which causes again a diagnostic.
 When the untagged variable is on the left hand of the assignment
 operator, as in the third assignment, there is no warning or error message. As
 variable x is untagged, it can accept a value of any weak tag.
@@ -355,13 +355,13 @@ if (apple:valencia < elstar)
 ```
 
 The test expression of the if statement (between parentheses) compares the
-variable valencia to the variable elstar. To avoid a “tag mismatch” diagnostic, 
+variable valencia to the variable elstar. To avoid a “tag mismatch” diagnostic,
 it puts a tag override apple: on valencia —after that, the expressions
 on the left and the right hands of the > operator have the same tag
 name: “apple:”. The second line, the assignment of elstar to valencia, overrides
 the tag name of elstar or orange: before the assignment. In an assignment,
 you cannot override the tag name of the destination; i.e., the left hand of
-the = operator. It is an error to write “apple:valencia = elstar”. In the assignment, 
+the = operator. It is an error to write “apple:valencia = elstar”. In the assignment,
 valencia is an “lvalue” and you cannot override the tag name of an
 lvalue.
 
@@ -436,7 +436,7 @@ in the above snippet (which uses the original definition of printf), I
 needed to put an empty tag override, “\_:”, before the variables value and limit in
 the first printf call.
 
-There is an alternative to untagging expressions with strong tag names in general 
+There is an alternative to untagging expressions with strong tag names in general
 purpose functions: adjust the definition of the function to accept both
 all weak tags and a selective set of strong tag names. The PAWN language supports
 multiple tag names for every function arguments. The original definition of printf (from the file console.inc) is:
@@ -462,7 +462,7 @@ native printf(const format[], {Float, _}: ...);
 
 ```
 
-Plural tags allow you to write a single function that accepts cells with a precisely 
+Plural tags allow you to write a single function that accepts cells with a precisely
 specified subset of tags (strong and/or weak). While a function argument
 may accept being passed actual arguments with diverse tags, a variable can
 only have a single tag —and a formal function argument is a local variable in
@@ -516,11 +516,11 @@ print("Hello \
 
 ### • A program that generates its own source code
 
-An odd, slightly academic, criterion to quantify the “expressiveness” of a programming 
+An odd, slightly academic, criterion to quantify the “expressiveness” of a programming
 language is size of the smallest program that, upon execution, re-
 generates its own source code. The rationale behind this criterion  
 is that the shorter the self-generating program, the more flexible and expressive the
-language must be. Programs of this kind have been created for many programming 
+language must be. Programs of this kind have been created for many programming
 languages —sometimes surprisingly small, as for languages that have a
 built-in reflective capabilities.
 
@@ -569,4 +569,4 @@ Listing: quine.p
 
 ---
 
-[Go Back to Contents](00-Contents.md)
+[Go Back to Contents](00-Contents)

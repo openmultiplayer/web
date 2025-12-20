@@ -5,11 +5,17 @@ description: 获取NPC当前的面朝角度
 tags: []
 ---
 
+:::warning
+
+此函数已弃用，请使用 [NPC_GetFacingAngle](NPC_GetFacingAngle)。
+
+:::
+
 ## 描述
 
 获取 NPC 当前的面朝角度。
 
-| 名称         | 描述                                     |
+| 参数         | 说明                                     |
 | ------------ | ---------------------------------------- |
 | &Float:Angle | 用于存储角度的浮点数变量，通过引用传递。 |
 
@@ -30,4 +36,4 @@ public OnPlayerText(playerid, text[])
 
 ## 相关函数
 
-- [SetMyFacingAngle](../functions/SetMyFacingAngle): 设置 NPC 的面朝角度
+- [SetMyFacingAngle](SetMyFacingAngle): 设置 NPC 的面朝角度

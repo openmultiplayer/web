@@ -11,13 +11,13 @@ tags: ["物体"]
 
 显示光标并允许玩家选择物体。当玩家选择物体时会触发 OnPlayerSelectObject 回调函数。
 
-| 参数名   | 说明                      |
+| 参数     | 说明                      |
 | -------- | ------------------------- |
 | playerid | 需要进行物体选择的玩家 ID |
 
 ## 返回值
 
-本函数没有特定返回值
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -27,7 +27,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/select", true))
     {
         BeginObjectSelecting(playerid);
-        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: 请选择您要编辑的物体！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：请选择你要编辑的物体！");
         return 1;
     }
     return 0;

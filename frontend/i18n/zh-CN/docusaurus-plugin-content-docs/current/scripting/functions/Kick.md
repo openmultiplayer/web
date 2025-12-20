@@ -15,7 +15,7 @@ tags: ["玩家", "管理"]
 
 ## 返回值
 
-该函数总是返回 1，即使执行失败（指定玩家不存在）。
+此函数总是返回 1，即使执行失败（指定玩家不存在）。
 
 ## 注意事项
 
@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         // 踢出执行该命令的玩家
 
         // 首先发送踢出提示
-        SendClientMessage(playerid, 0xFF0000FF, "您已被踢出服务器！");
+        SendClientMessage(playerid, 0xFF0000FF, "你已被踢出服务器！");
 
         // 通过定时器在1秒后执行踢出
         SetTimerEx("DelayedKick", 1000, false, "i", playerid);

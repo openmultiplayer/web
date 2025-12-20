@@ -13,7 +13,7 @@ tags: ["规则"]
 
 ## 参数
 
-| 名称             | 说明                       |
+| 参数             | 说明                       |
 | ---------------- | -------------------------- |
 | const rule[]     | 要添加的服务器规则名称     |
 | const format[]   | 服务器规则的值             |
@@ -37,7 +37,7 @@ public OnGameModeInit()
 
 :::tip
 
-本函数与[AddServerRule](AddServerRule)功能相同。
+此函数与[AddServerRule](AddServerRule)功能相同。
 
 :::
 

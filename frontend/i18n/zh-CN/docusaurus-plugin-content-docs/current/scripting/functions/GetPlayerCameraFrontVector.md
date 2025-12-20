@@ -1,13 +1,13 @@
 ---
 title: GetPlayerCameraFrontVector
 sidebar_label: GetPlayerCameraFrontVector
-description: 本函数将返回玩家当前在三维空间中的瞄准方向坐标，该坐标相对于视角位置，具体位置信息请参见[GetPlayerCameraPos](GetPlayerCameraPos)。
+description: 此函数将返回玩家当前在三维空间中的瞄准方向坐标，该坐标相对于视角位置，具体位置信息请参见[GetPlayerCameraPos](GetPlayerCameraPos)。
 tags: ["玩家", "视角"]
 ---
 
 ## 描述
 
-本函数将返回玩家当前在三维空间中的瞄准方向坐标，该坐标相对于视角位置，具体位置信息请参见[GetPlayerCameraPos](GetPlayerCameraPos)。
+此函数将返回玩家当前在三维空间中的瞄准方向坐标，该坐标相对于视角位置，具体位置信息请参见[GetPlayerCameraPos](GetPlayerCameraPos)。
 
 | 参数名   | 说明                                      |
 | -------- | ----------------------------------------- |

@@ -12,7 +12,7 @@ tags: ["player", "pickup", "playerpickup"]
 Sets the model of a player-pickup.
 
 | Name               | Description                                 |
-|--------------------|---------------------------------------------|
+| ------------------ | ------------------------------------------- |
 | playerid           | The ID of the player.                       |
 | pickupid           | The ID of the player-pickup.                |
 | model              | The [model](../resources/pickupids) to set. |
@@ -30,7 +30,7 @@ new PlayerPickup[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     PlayerPickup[playerid] = CreatePlayerPickup(playerid, 1242, 2, 2010.0979, 1222.0642, 10.8206, -1);
-    
+
     SetPlayerPickupModel(playerid, PlayerPickup[playerid], 1210);
     return 1;
 }

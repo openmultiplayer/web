@@ -7,7 +7,7 @@ tags: ["玩家", "3D文本标签"]
 
 :::warning
 
-该函数已弃用，请使用 [GetPlayer3DTextLabelAttachedData](GetPlayer3DTextLabelAttachedData)。
+此函数已弃用，请使用 [GetPlayer3DTextLabelAttachedData](GetPlayer3DTextLabelAttachedData)。
 
 :::
 
@@ -15,7 +15,7 @@ tags: ["玩家", "3D文本标签"]
 
 获取玩家 3D 文本标签的附加数据。
 
-| 名称                | 描述                                  |
+| 参数                | 说明                                  |
 | ------------------- | ------------------------------------- |
 | playerid            | 玩家的 ID                             |
 | PlayerText3D:textid | 需要获取附加数据的玩家 3D 文本标签 ID |

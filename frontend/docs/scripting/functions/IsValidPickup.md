@@ -12,7 +12,7 @@ tags: ["pickup"]
 Checks if a pickup is valid.
 
 | Name     | Description                    |
-|----------|--------------------------------|
+| -------- | ------------------------------ |
 | pickupid | The ID of the pickup to check. |
 
 ## Returns

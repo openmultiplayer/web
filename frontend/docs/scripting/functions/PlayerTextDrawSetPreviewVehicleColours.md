@@ -15,8 +15,8 @@ Set the colour of a vehicle in a player-textdraw model preview (if a vehicle is 
 | ----------------- | ----------------------------------------------------- |
 | playerid          | The ID of the player whose player-textdraw to change. |
 | PlayerText:textid | The ID of the player's player-textdraw to change.     |
-| colour1           | The colour to set the vehicle's primary colour to.      |
-| colour2           | The colour to set the vehicle's secondary colour to.    |
+| colour1           | The colour to set the vehicle's primary colour to.    |
+| colour2           | The colour to set the vehicle's secondary colour to.  |
 
 ## Returns
 
@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawUseBox(playerid, gTextDraw[playerid], true);
     PlayerTextDrawBoxColour(playerid, gTextDraw[playerid], 0x000000FF);
     PlayerTextDrawTextSize(playerid, gTextDraw[playerid], 40.0, 40.0);
-    
+
     PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 411);
     PlayerTextDrawSetPreviewVehicleColours(playerid, gTextDraw[playerid], 3, 6);
 

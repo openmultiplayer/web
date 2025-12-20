@@ -9,11 +9,11 @@ tags: ["player"]
 
 Makes a player spectate (watch) another player.
 
-| Name           | Description                                                                                  |
-| -------------- | -------------------------------------------------------------------------------------------- |
-| playerid       | The ID of the player that will spectate.                                                     |
-| targetplayerid | The ID of the player that should be spectated.                                               |
-| SPECTATE_MODE:mode           | The [mode](../resources/spectatemodes) to spectate with (optional; defaults to 'normal'). |
+| Name               | Description                                                                               |
+| ------------------ | ----------------------------------------------------------------------------------------- |
+| playerid           | The ID of the player that will spectate.                                                  |
+| targetplayerid     | The ID of the player that should be spectated.                                            |
+| SPECTATE_MODE:mode | The [mode](../resources/spectatemodes) to spectate with (optional; defaults to 'normal'). |
 
 ## Returns
 

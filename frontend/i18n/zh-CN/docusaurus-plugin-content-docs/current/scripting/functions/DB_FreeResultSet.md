@@ -2,8 +2,6 @@
 title: DB_FreeResultSet
 sidebar_label: DB_FreeResultSet
 description: 释放由DB_ExecuteQuery分配的查询结果内存。
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
@@ -11,7 +9,7 @@ tags: ["sqlite"]
 
 释放由[DB_ExecuteQuery](DB_ExecuteQuery)分配的查询结果内存。
 
-| 参数名            | 说明                                                             |
+| 参数              | 说明                                                             |
 | ----------------- | ---------------------------------------------------------------- |
 | DBResult:dbresult | 要释放的查询结果句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)分配） |
 
@@ -57,6 +55,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = DB_Open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");
@@ -75,7 +74,8 @@ public OnGameModeExit()
     // 关闭数据库连接
     if (DB_Close(gDBConnectionHandle))
     {
-        gDBConnectionHandle = DB:0; // 重置句柄
+        // 重置句柄
+        gDBConnectionHandle = DB:0;
     }
     return 1;
 }

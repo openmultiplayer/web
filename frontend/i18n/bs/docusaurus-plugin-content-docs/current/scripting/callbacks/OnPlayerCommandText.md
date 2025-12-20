@@ -47,4 +47,4 @@ Ovaj callback pozvat će i NPC.
 
 ## Srodne Funkcije
 
-- [SendRconCommand](../functions/SendRconCommand.md): Šalje RCON komandu preko skripte.
+- [SendRconCommand](../functions/SendRconCommand): Šalje RCON komandu preko skripte.

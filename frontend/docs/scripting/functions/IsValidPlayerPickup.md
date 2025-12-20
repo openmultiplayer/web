@@ -12,7 +12,7 @@ tags: ["player", "pickup", "playerpickup"]
 Checks if a player-pickup is valid.
 
 | Name     | Description                           |
-|----------|---------------------------------------|
+| -------- | ------------------------------------- |
 | playerid | The ID of the player.                 |
 | pickupid | The ID of the player-pickup to check. |
 
@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
 
 ## Related Functions
 
-- [CreatePlayerPickup](./CreatePlayerPickup): Creates a pickup which will be visible to only one player.
+- [CreatePlayerPickup](CreatePlayerPickup): Creates a pickup which will be visible to only one player.
 - [DestroyPlayerPickup](DestroyPlayerPickup): Destroy a player-pickup.
 - [IsPlayerPickupStreamedIn](IsPlayerPickupStreamedIn): Checks if a player-pickup is streamed in for the player.
 - [SetPlayerPickupPos](SetPlayerPickupPos): Sets the position of a player-pickup.

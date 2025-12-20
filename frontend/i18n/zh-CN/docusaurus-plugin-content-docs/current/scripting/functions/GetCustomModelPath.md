@@ -11,7 +11,7 @@ tags: ["自定义模型", "自定义皮肤", "简单模型"]
 
 获取指定自定义模型的资源文件路径信息。
 
-| 参数名    | 说明                                        |
+| 参数      | 说明                                        |
 | --------- | ------------------------------------------- |
 | modelid   | 要查询的自定义模型 ID                       |
 | dffPath[] | 数组变量（引用传递），用于存储 DFF 文件路径 |
@@ -37,6 +37,6 @@ printf("[ID %d 自定义模型路径]\n\
 
 ## 相关函数
 
-- [AddSimpleModel](AddSimpleModel.md): 添加新的简单物体模型
-- [AddSimpleModelTimed](AddSimpleModelTimed.md): 添加带时间限制的简单物体模型
-- [IsValidCustomModel](IsValidCustomModel.md): 验证自定义模型 ID 是否有效
+- [AddSimpleModel](AddSimpleModel): 添加新的简单物体模型
+- [AddSimpleModelTimed](AddSimpleModelTimed): 添加带时间限制的简单物体模型
+- [IsValidCustomModel](IsValidCustomModel): 验证自定义模型 ID 是否有效

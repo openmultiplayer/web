@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-该函数始终需要菜单 ID 参数，但在 SA:MP 中该参数未被实际使用。无论传入任何值，都会关闭玩家当前正在查看的菜单。
+此函数始终需要菜单 ID 参数，但在 SA:MP 中该参数未被实际使用。无论传入任何值，都会关闭玩家当前正在查看的菜单。
 
 旧代码可能如下所示：
 
@@ -55,7 +55,7 @@ gShopMenu = CreateMenu("text", 2, 100.0, 30.0, 7.0);
 HideMenuForPlayer(gShopMenu, playerid);
 ```
 
-这种写法会始终关闭玩家当前查看的菜单，无论实际显示的是哪个菜单。现在您需要记录玩家当前查看的菜单，或直接获取：
+这种写法会始终关闭玩家当前查看的菜单，无论实际显示的是哪个菜单。现在你需要记录玩家当前查看的菜单，或直接获取：
 
 ```c
 gShopMenu = CreateMenu("text", 2, 100.0, 30.0, 7.0);

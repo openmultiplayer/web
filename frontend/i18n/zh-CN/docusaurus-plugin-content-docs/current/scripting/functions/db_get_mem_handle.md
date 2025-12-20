@@ -2,21 +2,26 @@
 title: db_get_mem_handle
 sidebar_label: db_get_mem_handle
 description: 获取通过`db_open`建立的SQLite数据库连接的内存句柄。
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNoteZH_CN />
 
 <VersionWarnZH_CN version='SA-MP 0.3.7 R1' />
 
+:::warning
+
+此函数已弃用，请使用 [DB_GetMemHandle](DB_GetMemHandle)。
+
+:::
+
 ## 描述
 
 获取通过[db_open](db_open)建立的 SQLite 数据库连接的内存句柄。
 
-| 参数名 | 说明                                       |
-| ------ | ------------------------------------------ |
-| DB:db  | 数据库连接句柄（由[db_open](db_open)返回） |
+| 参数  | 说明                                       |
+| ----- | ------------------------------------------ |
+| DB:db | 数据库连接句柄（由[db_open](db_open)返回） |
 
 ## 返回值
 
@@ -36,6 +41,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = db_open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");

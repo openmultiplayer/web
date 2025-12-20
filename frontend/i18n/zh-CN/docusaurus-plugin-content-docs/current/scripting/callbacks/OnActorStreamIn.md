@@ -1,7 +1,7 @@
 ---
 title: OnActorStreamIn
 sidebar_label: OnActorStreamIn
-description: 当角色被玩家客户端流加载时触发该回调。
+description: 当角色被玩家客户端流加载时触发此回调。
 tags: ["角色"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["角色"]
 
 ## 描述
 
-当角色被玩家客户端流加载时触发该回调。
+当角色被玩家客户端流加载时触发此回调。
 
 | 参数        | 说明                   |
 | ----------- | ---------------------- |
@@ -26,7 +26,7 @@ tags: ["角色"]
 public OnActorStreamIn(actorid, forplayerid)
 {
     new string[48];
-    format(string, sizeof(string), "角色 %d 已为您完成流加载。", actorid);
+    format(string, sizeof(string), "角色 %d 已为你完成流加载。", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }

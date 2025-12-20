@@ -1,13 +1,13 @@
 ---
 title: OnPlayerClickPlayerTextDraw
 sidebar_label: OnPlayerClickPlayerTextDraw
-description: 当玩家点击个人文本绘图时触发该回调
+description: 当玩家点击个人文本绘图时触发此回调
 tags: ["玩家", "文本绘图", "玩家文本绘图"]
 ---
 
 ## 描述
 
-当玩家点击个人文本绘图（player-textdraw）时触发该回调。注意：玩家按ESC取消选择模式时会触发[OnPlayerClickTextDraw](OnPlayerClickTextDraw)而非本回调。
+当玩家点击个人文本绘图（player-textdraw）时触发此回调。注意：玩家按ESC取消选择模式时会触发[OnPlayerClickTextDraw](OnPlayerClickTextDraw)而非此回调。
 
 | 参数                    | 说明                   |
 | ----------------------- | ---------------------- |
@@ -16,7 +16,7 @@ tags: ["玩家", "文本绘图", "玩家文本绘图"]
 
 ## 返回值
 
-该回调在滤镜脚本中总是优先触发，返回1将阻止其他脚本处理此事件。
+此回调在滤镜脚本中总是优先触发，返回1将阻止其他脚本处理此事件。
 
 ## 示例
 
@@ -57,7 +57,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 {
     if (playertextid == gPlayerTextDraw[playerid])
     {
-        SendClientMessage(playerid, 0xFFFFFFAA, "您点击了个人文本绘图");
+        SendClientMessage(playerid, 0xFFFFFFAA, "你点击了个人文本绘图");
         CancelSelectTextDraw(playerid);
         return 1;
     }
@@ -72,7 +72,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 当玩家按ESC取消选择时：
 
 - 会触发[OnPlayerClickTextDraw](OnPlayerClickTextDraw)并返回`INVALID_TEXT_DRAW`
-- 本回调不会被触发
+- 此回调不会被触发
 
 :::
 

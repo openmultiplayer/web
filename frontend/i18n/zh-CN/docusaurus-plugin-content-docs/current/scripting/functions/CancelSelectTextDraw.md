@@ -9,13 +9,13 @@ tags: ["文本绘图"]
 
 终止玩家当前的文本绘图选择状态
 
-| 参数名   | 说明                          |
+| 参数     | 说明                          |
 | -------- | ----------------------------- |
 | playerid | 需要禁用文本绘图选择的玩家 ID |
 
 ## 返回值
 
-本函数没有特定返回值
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-本函数会触发 [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) 回调并传入 INVALID_TEXT_DRAW (65535)
+此函数会触发 [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) 回调并传入 INVALID_TEXT_DRAW (65535)
 
 在 OnPlayerClickTextDraw 回调中使用此函数时，若未处理该无效值情况会导致客户端进入无限循环
 

@@ -5,11 +5,11 @@ sidebar_label: Yaygın Sunucu Sorunları
 
 ## Sunucunun hemen çökmesi
 
-En yaygın olarak, server.cfg dosyanızda bir hata veya oyun modunuzun eksik olmasından kaynaklanıyor olabilir. server_log.txt dosyasını kontrol edin, sunucunun çökmesine sebep olan sorun genellikle en altta yazar. Eğer bulamazsanız, crashinfo.txt dosyasını kontrol edin. Çökmeye neyin sebep olduğunu bulmak için daha iyi bir bir yöntem olan, Zeex/0x5A656578 tarafından geliştirilen Crash Detect eklentisini kullanmaktır ([link için tıklayın](https://github.com/Zeex/samp-plugin-crashdetect)). Bu eklenti, satır numaraları, fonksiyon adları, parametre değerleri gibi daha fazla bilgi sağlayacaktır. Eğer script debug modunda derlenmişse (-d3 flag), derleyici tüm bu bilgileri çıktı olarak .amx dosyasına ekleyecektir.
+En yaygın olarak, server.cfg dosyanızda bir hata veya oyun modunuzun eksik olmasından kaynaklanıyor olabilir. server_log.txt dosyasını kontrol edin, sunucunun çökmesine sebep olan sorun genellikle en altta yazar. Eğer bulamazsanız, crashinfo.txt dosyasını kontrol edin. Çökmeye neyin sebep olduğunu bulmak için daha iyi bir bir yöntem olan, Zeex/0x5A656578 tarafından geliştirilen Crash Detect eklentisini kullanmaktır ([link için tıklayın](https://github.com/AmyrAhmady/samp-plugin-crashdetect)). Bu eklenti, satır numaraları, fonksiyon adları, parametre değerleri gibi daha fazla bilgi sağlayacaktır. Eğer script debug modunda derlenmişse (-d3 flag), derleyici tüm bu bilgileri çıktı olarak .amx dosyasına ekleyecektir.
 
 ## Sunucu çalışmıyor - güvenlik duvarı devre dışı
 
-Sunucunuza oyuncuların katılmasına izin vermek için portlarınızı yönlendirmeniz gerekecek. PF Port Checker'ı www.portforward.com adresinden indirip, kullanarak portlarınızı yönlendirebilirsiniz. Portlar yönlendirilmediyse, bu portları yönlendirmeniz gerektiği anlamına gelir. Bunun için [http://portforward.com/english/routers/port_forwarding/routerindex.htm](http://portforward.com/english/routers/port_forwarding/routerindex.htm) adresindeki yönlendirici listesini kontrol edebilirsiniz.
+Sunucunuza oyuncuların katılmasına izin vermek için portlarınızı yönlendirmeniz gerekecek. PF Port Checker'ı www.portforward.com adresinden indirip, kullanarak portlarınızı yönlendirebilirsiniz. Portlar yönlendirilmediyse, bu portları yönlendirmeniz gerektiği anlamına gelir. Bunun için [https://portforward.com/router.htm](https://portforward.com/router.htm) adresindeki yönlendirici listesini kontrol edebilirsiniz.
 
 Bu, portların nasıl yönlendirileceğiyle ilgili tüm bilgileri içerir.
 
@@ -63,7 +63,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 Bu, 'out of order messages', yani oyuncularım belirli türdeki mesajları (iletişim paketleri) aşırı miktarda göndermelerini engellemek için olan sınırın aşılması durumunda meydana gelir.
 
-Daha fazla bilgi için, [bu bağlantıya](ControllingServer#RCON_Commands) bakın.
+Daha fazla bilgi için, [bu bağlantıya](ControllingServer#rcon-commands) bakın.
 
 ## Oyuncular sürekli "Unacceptable NickName" hatası alıyor, ancak geçerli
 

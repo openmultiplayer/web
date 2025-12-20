@@ -36,7 +36,7 @@ public OnGameModeInit()
 
     printf("min(%d, %d) = %d", a, b, result);
     // Since a is smaller than b so result will be 5.
-    
+
     return 1;
 }
 ```

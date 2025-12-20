@@ -6,7 +6,7 @@ description: 武器状态常量。
 
 以下为 [GetPlayerWeaponState](../functions/GetPlayerWeaponState) 函数使用的武器状态定义：
 
-| ID  | 定义                     | 描述                                                                                                          |
+| ID  | 定义                     | 说明                                                                                                          |
 | --- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
 | -1  | WEAPONSTATE_UNKNOWN      | 未知状态（当玩家处于车辆中、观战状态或[玩家状态](../functions/GetPlayerState)为 PLAYER_STATE_SPAWNED 时触发） |
 | 0   | WEAPONSTATE_NO_BULLETS   | 玩家当前武器弹药已耗尽                                                                                        |

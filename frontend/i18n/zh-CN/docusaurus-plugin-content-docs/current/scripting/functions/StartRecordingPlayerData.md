@@ -17,7 +17,7 @@ tags: ["玩家"]
 
 ## 返回值
 
-本函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例代码
 
@@ -32,7 +32,7 @@ if (!strcmp("/recordme", cmdtext))
     {
         StartRecordingPlayerData(playerid, PLAYER_RECORDING_TYPE_DRIVER, "MyFile");
     }
-    SendClientMessage(playerid, 0xFFFFFFFF, "您的所有移动轨迹正在被录制！");
+    SendClientMessage(playerid, 0xFFFFFFFF, "你的所有移动轨迹正在被录制！");
     return 1;
 }
 ```

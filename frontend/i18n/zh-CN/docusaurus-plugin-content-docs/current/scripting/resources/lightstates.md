@@ -41,7 +41,7 @@ description: 关于字节大小及其对应灯光状态位的信息。
 
 `0000 0101`
 
-然而 SA-MP 会返回十进制数字，因此您需要先将其转换为二进制才能得到上述结果。对于这个示例，SA-MP 将返回：
+然而 SA-MP 会返回十进制数字，因此你需要先将其转换为二进制才能得到上述结果。对于这个示例，SA-MP 将返回：
 
 `5`
 
@@ -128,7 +128,7 @@ x - 禁用灯光
 
 ---
 
-## 使用示例
+## 示例
 
 禁用车辆后部车灯同时保持前部状态不变：
 
@@ -145,4 +145,4 @@ UpdateVehicleDamageStatus(vehicleid, panels, doors, (lights | VEHICLE_LIGHT_STAT
 
 ## 相关阅读
 
-- [车辆灯光状态](../resources/vehicle-light-status)
+- [车辆灯光状态](vehicle-light-status)

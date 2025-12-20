@@ -1,15 +1,15 @@
 ---
 title: AddPlayerClassEx
 sidebar_label: AddPlayerClassEx
-description: 本函数与AddPlayerClass功能相同，新增团队参数
+description: 此函数与AddPlayerClass功能相同，新增团队参数
 tags: ["玩家", "职业"]
 ---
 
 ## 描述
 
-本函数功能与 AddPlayerClass 完全一致，额外增加团队参数支持。
+此函数功能与 AddPlayerClass 完全一致，额外增加团队参数支持。
 
-| 参数名         | 说明                                          |
+| 参数           | 说明                                          |
 | -------------- | --------------------------------------------- |
 | team           | 玩家所属的初始团队                            |
 | skin           | 玩家重生时使用的[皮肤 ID](../resources/skins) |

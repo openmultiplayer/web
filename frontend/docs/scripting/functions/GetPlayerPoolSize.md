@@ -9,7 +9,7 @@ tags: ["player"]
 
 ## Description
 
-Gets the highest playerid currently in use on the server.  Note that in SA:MP this function is broken and will return `0` even when there are no players.  fixes.inc and open.mp correct this to return `-1`, but also deprecate the function in favour of `MAX_PLAYERS` or `foreach`.
+Gets the highest playerid currently in use on the server. Note that in SA:MP this function is broken and will return `0` even when there are no players. fixes.inc and open.mp correct this to return `-1`, but also deprecate the function in favour of `MAX_PLAYERS` or `foreach`.
 
 ## Examples
 

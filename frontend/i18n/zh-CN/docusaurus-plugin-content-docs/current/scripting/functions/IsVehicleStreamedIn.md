@@ -9,7 +9,7 @@ tags: ["车辆"]
 
 检测指定车辆是否在玩家的游戏世界中已加载（流加载）。只有玩家附近的车辆才会被加载（可见）。
 
-| 参数名    | 说明            |
+| 参数      | 说明            |
 | --------- | --------------- |
 | vehicleid | 要检测的车辆 ID |
 | playerid  | 要检测的玩家 ID |
@@ -35,7 +35,7 @@ for(new i = 1; i < MAX_VEHICLES; i++)
 }
 
 new string[144];
-format(string, sizeof(string), "您当前已加载了 %i 辆车辆。", streamedVehicleCount);
+format(string, sizeof(string), "你当前已加载了 %i 辆车辆。", streamedVehicleCount);
 SendClientMessage(playerid, -1, string); // 发送统计结果给玩家
 ```
 

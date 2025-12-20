@@ -2,7 +2,7 @@
 title: GetSVarString
 sidebar_label: GetSVarString
 description: 获取字符串型服务器变量的值。
-tags: ["服务器变量", "svar"]
+tags: ["服务器变量"]
 ---
 
 <VersionWarnZH_CN version='SA-MP 0.3.7 R2' />
@@ -11,7 +11,7 @@ tags: ["服务器变量", "svar"]
 
 获取字符串型服务器变量的值。
 
-| 参数名                | 说明                                                                      |
+| 参数                  | 说明                                                                      |
 | --------------------- | ------------------------------------------------------------------------- |
 | const svar[]          | 服务器变量名称（不区分大小写）<br/>通过[SetSVarString](SetSVarString)设置 |
 | output[]              | 存储字符串值的数组（通过引用传递）                                        |

@@ -11,9 +11,9 @@ tags: ["gangzone"]
 
 Check if the gangzone valid.
 
-| Name        | Description                |
-| ----------- | -------------------------- |
-| zoneid      | The ID of the gangzone.    |
+| Name   | Description             |
+| ------ | ----------------------- |
+| zoneid | The ID of the gangzone. |
 
 ## Returns
 

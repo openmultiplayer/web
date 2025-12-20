@@ -42,4 +42,4 @@ This callback is also called when a player presses F4.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [AddPlayerClass](../../scripting/functions/AddPlayerClass.md): Add a class.
+- [AddPlayerClass](../functions/AddPlayerClass): Add a class.

@@ -241,4 +241,4 @@ OnPlayerFinishRace(playerid)
 
 [此工具包](https://github.com/ScavengeSurvive/timeutil)提供毫秒格式化功能，可将数值转换为易读字符串。
 
-希望本文对您有所启发！撰写初衷是发现许多开发者尚未掌握`GetTickCount()`和`gettime()`作为定时器替代方案的妙用。
+希望本文对你有所启发！撰写初衷是发现许多开发者尚未掌握`GetTickCount()`和`gettime()`作为定时器替代方案的妙用。

@@ -5,6 +5,12 @@ description: This will run a .rec file which has to be saved in the npcmodes/rec
 tags: []
 ---
 
+:::warning
+
+This function is deprecated. Please see [NPC_StartPlayback](NPC_StartPlayback).
+
+:::
+
 ## Description
 
 This will run a .rec file which has to be saved in the npcmodes/recordings folder. These files allow the NPC to follow certain actions. Their actions can be recorded manually. For more information, check the related functions.
@@ -25,4 +31,4 @@ public OnNPCEnterVehicle(vehicleid, seatid)
 
 ## Related Functions
 
-- [StopRecordingPlayback](../functions/StopRecordingPlayback): Stops reproducing a .rec file.
+- [StopRecordingPlayback](StopRecordingPlayback): Stops reproducing a .rec file.
