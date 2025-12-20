@@ -19,7 +19,7 @@ tasks:
   # Production deployment run - migrate DB first, then
   production:
     cmds:
-      - npx prisma migrate deploy
+      - npx prisma@4 migrate deploy
       - ./server.exe
 
   deploy:
@@ -33,15 +33,15 @@ tasks:
   generate:
     cmds:
       # Generate main database bindings
-      - npx prisma generate
+      - npx prisma@4 generate
       # Generate Burgershot (MyBB) database bindings
-      - npx prisma generate --schema=./prisma/burgershot.prisma
+      - npx prisma@4 generate --schema=./prisma/burgershot.prisma
       # Also generate TypeScript type declarations from some backend structs.
       - go run types.go
 
   migrate:
     cmds:
-      - npx prisma migrate dev
+      - npx prisma@4 migrate dev
 
   dbuild:
     cmds:
