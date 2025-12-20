@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     name: Deploy frontend
@@ -16,7 +19,86 @@ jobs:
           workflow_id: 42688838
           access_token: ${{ github.token }}
 
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Check translation label
+        id: translation-label
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          LABEL_RESULT=$(node .github/workflows/scripts/check-translation-label.js --repo "${{ github.repository }}" --token "$GITHUB_TOKEN" --sha "${{ github.sha }}" --label "docs:translation-impact")
+          echo "$LABEL_RESULT" >> "$GITHUB_OUTPUT"
+
+      - name: Get changed English documentation files
+        id: changed-files
+        if: steps.translation-label.outputs.label_present == 'true'
+        run: |
+          set -euo pipefail
+          BEFORE="${{ github.event.before }}"
+          if git rev-parse "$BEFORE^{commit}" >/dev/null 2>&1; then
+            DIFF_BASE="$BEFORE"
+          else
+            DIFF_BASE=""
+          fi
+
+          if [ -n "$DIFF_BASE" ]; then
+            CHANGED_FILES=$(git diff --name-only "$DIFF_BASE" "${{ github.sha }}" | grep "^frontend/docs/.*\.md$" || true)
+          else
+            CHANGED_FILES=$(git ls-tree --name-only -r "${{ github.sha }}" | grep "^frontend/docs/.*\.md$" || true)
+          fi
+
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            if [ -n "$DIFF_BASE" ]; then
+              printf '%s\n' "$CHANGED_FILES" > changed_english_docs_raw.txt
+              node .github/workflows/scripts/filter-small-doc-changes.js "$DIFF_BASE" "${{ github.sha }}" changed_english_docs_raw.txt changed_english_docs.txt
+              if [ -s changed_english_docs.txt ]; then
+                echo "has_changes=true" >> "$GITHUB_OUTPUT"
+              else
+                echo "has_changes=false" >> "$GITHUB_OUTPUT"
+              fi
+            else
+              printf '%s\n' "$CHANGED_FILES" > changed_english_docs.txt
+              echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+      - name: Mark translations as outdated
+        if: steps.translation-label.outputs.label_present == 'true' && steps.changed-files.outputs.has_changes == 'true'
+        run: |
+          node .github/workflows/scripts/mark-translations-outdated.js
+
+      - name: Check if translations were modified
+        if: steps.translation-label.outputs.label_present == 'true' && steps.changed-files.outputs.has_changes == 'true'
+        id: check-changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "translations_modified=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "translations_modified=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit changes
+        if: steps.translation-label.outputs.label_present == 'true' && steps.check-changes.outputs.translations_modified == 'true'
+        run: |
+          git config --local user.email "omp-bot@users.noreply.github.com"
+          git config --local user.name "omp-bot"
+          git add frontend/i18n/
+          git commit -m "Mark translations as potentially outdated (post-merge)"
+
+      - name: Push changes
+        if: steps.translation-label.outputs.label_present == 'true' && steps.check-changes.outputs.translations_modified == 'true'
+        run: |
+          git push origin HEAD:${{ github.ref }}
 
       - name: Cache ~/.npm for npm ci
         uses: actions/cache@v4
