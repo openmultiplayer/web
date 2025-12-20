@@ -9,7 +9,7 @@ tags: []
 
 在客户端执行内存检查
 
-| 参数名    | 说明                                                |
+| 参数      | 说明                                                |
 | --------- | --------------------------------------------------- |
 | playerid  | 需要检查的玩家 ID                                   |
 | type      | 需要执行的检查类型 [参见此处](../resources/opcodes) |
@@ -54,9 +54,9 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::warning
 
-**SA:MP 服务器**：该函数仅在滤镜脚本中生效
+**SA:MP 服务器**：此函数仅在滤镜脚本中生效
 
-**Open Multiplayer 服务器**：该函数在游戏模式/滤镜脚本中均可正常使用
+**Open Multiplayer 服务器**：此函数在游戏模式/滤镜脚本中均可正常使用
 
 :::
 

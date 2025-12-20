@@ -41,7 +41,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 :::tip
 
-注意：在正常 SA 地图边界内此功能无效
+注意：在正常 SA 地图边界内此函数无效
 
 :::
 

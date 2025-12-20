@@ -9,7 +9,7 @@ tags: ["玩家", "车辆"]
 
 检测玩家当前是否乘坐于指定车辆实例内
 
-| 参数名    | 说明                                 |
+| 参数      | 说明                                 |
 | --------- | ------------------------------------ |
 | playerid  | 目标玩家 ID                          |
 | vehicleid | 车辆实例 ID（注意：非车辆模型 ID！） |
@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (IsPlayerInVehicle(playerid, gSpecialCar))
         {
-            SendClientMessage(playerid, -1, "您正在特殊车辆中！");
+            SendClientMessage(playerid, -1, "你正在特殊车辆中！");
         }
         return 1;
     }

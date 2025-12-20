@@ -1,13 +1,13 @@
 ---
 title: OnPlayerClickPlayer
 sidebar_label: OnPlayerClickPlayer
-description: 当玩家在记分牌上双击其他玩家时触发该回调
+description: 当玩家在记分牌上双击其他玩家时触发此回调
 tags: ["玩家"]
 ---
 
 ## 描述
 
-当玩家在记分牌上双击其他玩家时触发该回调。
+当玩家在记分牌上双击其他玩家时触发此回调。
 
 | 参数            | 说明                                                      |
 | --------------- | --------------------------------------------------------- |
@@ -20,7 +20,7 @@ tags: ["玩家"]
 1 - 阻止其他滤镜脚本接收此回调  
 0 - 允许传递给后续滤镜脚本
 
-该回调在滤镜脚本中总是优先触发。
+此回调在滤镜脚本中总是优先触发。
 
 ## 示例
 
@@ -28,7 +28,7 @@ tags: ["玩家"]
 public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 {
     new string[32];
-    format(string, sizeof(string), "您点击了玩家 %d", clickedplayerid);
+    format(string, sizeof(string), "你点击了玩家 %d", clickedplayerid);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }

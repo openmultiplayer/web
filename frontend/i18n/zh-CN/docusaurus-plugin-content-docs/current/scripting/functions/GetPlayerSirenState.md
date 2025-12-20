@@ -1,7 +1,7 @@
 ---
 title: GetPlayerSirenState
 sidebar_label: GetPlayerSirenState
-description: 获取玩家车辆的警笛状态
+description: 获取玩家车辆的警报器状态
 tags: ["玩家", "车辆"]
 ---
 
@@ -9,7 +9,7 @@ tags: ["玩家", "车辆"]
 
 ## 描述
 
-获取玩家当前所处车辆的警笛开关状态
+获取玩家当前所处车辆的警报器开关状态
 
 ## 参数
 
@@ -19,7 +19,7 @@ tags: ["玩家", "车辆"]
 
 ## 返回值
 
-返回警笛状态布尔值（true=开启，false=关闭）
+返回警报器状态布尔值（true=开启，false=关闭）
 
 ## 示例代码
 
@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         new bool:sirenState = GetPlayerSirenState(playerid);
 
-        SendClientMessage(playerid, 0xFFFF00FF, "车辆警笛状态：%s", sirenState ? "开启" : "关闭");
+        SendClientMessage(playerid, 0xFFFF00FF, "车辆警报器状态：%s", sirenState ? "开启" : "关闭");
         return 1;
     }
     return 0;
@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关函数
 
-- [SetVehicleParamsSirenState](SetVehicleParamsSirenState): 设置车辆警笛开关状态
-- [ToggleVehicleSirenEnabled](ToggleVehicleSirenEnabled): 切换车辆警笛状态
-- [IsVehicleSirenEnabled](IsVehicleSirenEnabled): 检测车辆警笛是否启用
-- [GetVehicleSirenState](GetVehicleSirenState): 获取车辆警笛状态（通过车辆 ID）
+- [SetVehicleParamsSirenState](SetVehicleParamsSirenState): 设置车辆警报器开关状态
+- [ToggleVehicleSirenEnabled](ToggleVehicleSirenEnabled): 切换车辆警报器状态
+- [IsVehicleSirenEnabled](IsVehicleSirenEnabled): 检测车辆警报器是否启用
+- [GetVehicleSirenState](GetVehicleSirenState): 获取车辆警报器状态（通过车辆 ID）

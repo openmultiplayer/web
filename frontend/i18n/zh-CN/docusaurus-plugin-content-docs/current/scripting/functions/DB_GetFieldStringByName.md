@@ -2,8 +2,6 @@
 title: DB_GetFieldStringByName
 sidebar_label: DB_GetFieldStringByName
 description: 通过字段名称从查询结果中获取字符串内容。
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
@@ -11,7 +9,7 @@ tags: ["sqlite"]
 
 通过字段名称从[DB_ExecuteQuery](DB_ExecuteQuery)分配的查询结果中获取字符串数据。
 
-| 参数名                 | 说明                                                     |
+| 参数                   | 说明                                                     |
 | ---------------------- | -------------------------------------------------------- |
 | DBResult:result        | 查询结果句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)返回） |
 | const field[]          | 目标字段名称                                             |
@@ -26,7 +24,7 @@ tags: ["sqlite"]
 ## 示例
 
 ```c
-// 示例模块
+// examples.inc
 
 // ...
 
@@ -55,7 +53,7 @@ Examples_ListNames(DB:dbConnectionHandle)
 ```
 
 ```c
-// 主游戏模式文件
+// mode.pwn
 
 // ...
 
@@ -72,6 +70,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = DB_Open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");
@@ -90,7 +89,8 @@ public OnGameModeExit()
     // 关闭数据库连接
     if (DB_Close(gDBConnectionHandle))
     {
-        gDBConnectionHandle = DB:0; // 重置句柄
+        // 重置句柄
+        gDBConnectionHandle = DB:0;
     }
     return 1;
 }

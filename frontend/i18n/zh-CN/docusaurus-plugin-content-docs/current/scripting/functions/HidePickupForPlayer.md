@@ -18,7 +18,7 @@ tags: ["玩家", "拾取物"]
 
 ## 返回值
 
-本函数始终返回 **true**。
+此函数始终返回 **true**。
 
 ## 示例
 
@@ -44,7 +44,7 @@ public OnPlayerSpawn(playerid)
 - [AddStaticPickup](AddStaticPickup): 添加静态拾取物
 - [DestroyPickup](DestroyPickup): 销毁拾取物
 - [IsValidPickup](IsValidPickup): 检查拾取物是否有效
-- [IsPickupStreamedIn](IsPickupStreamedIn): 检查拾取物是否已为玩家流式加载
+- [IsPickupStreamedIn](IsPickupStreamedIn): 检查拾取物是否已为玩家流加载
 - [IsPickupHiddenForPlayer](IsPickupHiddenForPlayer): 检查拾取物是否对玩家隐藏
 - [SetPickupPos](SetPickupPos): 设置拾取物坐标
 - [GetPickupPos](GetPickupPos): 获取拾取物坐标

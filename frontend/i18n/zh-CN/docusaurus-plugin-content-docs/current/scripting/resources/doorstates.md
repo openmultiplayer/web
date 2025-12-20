@@ -134,7 +134,7 @@ stock GetDoorState(doorStates, Door:door, DoorState:doorState)
 
 ---
 
-## 使用示例
+## 示例
 
 ```c
 new
@@ -148,13 +148,13 @@ GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
 // 单一状态检测
 if (GetDoorState(_:doors, DOOR_DRIVER, IS_DAMAGED))
 {
-    SendClientMessage(playerid, -1, "您的车辆驾驶座车门已损坏！");
+    SendClientMessage(playerid, -1, "你的车辆驾驶座车门已损坏！");
 }
 
 // 组合状态检测
 if (GetDoorState(_:doors, DOOR_HOOD, IS_OPENED | IS_DAMAGED))
 {
-    SendClientMessage(playerid, -1, "您的车辆引擎盖处于开启且损坏状态！");
+    SendClientMessage(playerid, -1, "你的车辆引擎盖处于开启且损坏状态！");
 }
 ```
 

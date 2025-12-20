@@ -34,7 +34,7 @@ if (IsPlayerAdmin(playerTarget))
 
 :::warning
 
-请勿与[GetPlayerTargetPlayer](GetPlayerTargetPlayer)混淆。GetPlayerTargetPlayer 返回玩家正在用武器瞄准的玩家 ID，而本函数返回玩家视角中心点所指向的玩家 ID
+请勿与[GetPlayerTargetPlayer](GetPlayerTargetPlayer)混淆。GetPlayerTargetPlayer 返回玩家正在用武器瞄准的玩家 ID，而此函数返回玩家视角中心点所指向的玩家 ID
 
 :::
 

@@ -9,9 +9,9 @@ tags: ["字符串处理"]
 
 ## 描述
 
-该函数用于格式化字符串，支持将变量和其他字符串嵌入目标字符串。
+此函数用于格式化字符串，支持将变量和其他字符串嵌入目标字符串。
 
-| 参数名            | 描述                               |
+| 参数              | 说明                               |
 | ----------------- | ---------------------------------- |
 | output[]          | 存储格式化结果的字符串缓冲区       |
 | len               | 输出缓冲区的最大容量（包含终止符） |
@@ -59,7 +59,7 @@ format(result, sizeof(result), "这是%s，包含数值%i。", string, number);
 
 ```c
 new string[64];
-format(string, sizeof(string), "您的得分：%d", GetPlayerScore(playerid));
+format(string, sizeof(string), "你的得分：%d", GetPlayerScore(playerid));
 SendClientMessage(playerid, 0xFF8000FF, string); // 发送橙色消息给玩家
 ```
 
@@ -85,7 +85,7 @@ SendClientMessage(playerid, 0xFF8000FF, string); // 显示"43%的衬衫是黑色
 
 :::warning
 
-- 本函数不支持压缩字符串(packed strings)
+- 此函数不支持压缩字符串(packed strings)
 
 :::
 

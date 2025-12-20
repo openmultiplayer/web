@@ -11,7 +11,7 @@ tags: ["玩家", "3D文本标签"]
 
 获取玩家 3D 文本标签的虚拟世界 ID。
 
-| 名称                | 描述                                      |
+| 参数                | 说明                                      |
 | ------------------- | ----------------------------------------- |
 | playerid            | 玩家的 ID                                 |
 | PlayerText3D:textid | 需要获取虚拟世界 ID 的玩家 3D 文本标签 ID |
@@ -38,7 +38,7 @@ worldid = GetPlayer3DTextLabelVirtualWorld(playerid, playerTextId);
 :::warning
 
 玩家 3D 文本标签本身不支持虚拟世界设置，
-本函数实际返回的是玩家当前的虚拟世界 ID！
+此函数实际返回的是玩家当前的虚拟世界 ID！
 
 :::
 

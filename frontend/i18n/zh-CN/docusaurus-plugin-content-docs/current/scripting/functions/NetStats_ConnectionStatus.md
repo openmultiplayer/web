@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new connectionStatus = NetStats_ConnectionStatus(playerid);
 
         new string[144];
-        format(string, sizeof(string), "您当前的连接状态: %s", ConnectionStatuses[connectionStatus]);
+        format(string, sizeof(string), "你当前的连接状态: %s", ConnectionStatuses[connectionStatus]);
         SendClientMessage(playerid, -1, string);
     }
     return 1;

@@ -1,13 +1,13 @@
 ---
 title: OnEnterExitModShop
 sidebar_label: OnEnterExitModShop
-description: 当玩家进入或离开改装店时触发该回调
+description: 当玩家进入或离开改装店时触发此回调
 tags: ["玩家"]
 ---
 
 ## 描述
 
-当玩家进入或离开车辆改装店时触发该回调。
+当玩家进入或离开车辆改装店时触发此回调。
 
 | 参数       | 说明                                      |
 | ---------- | ----------------------------------------- |

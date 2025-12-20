@@ -9,13 +9,13 @@ tags: []
 
 通过此函数可以启用或禁用车辆轮胎爆胎机制。
 
-| 名称        | 描述                                   |
+| 参数        | 说明                                   |
 | ----------- | -------------------------------------- |
 | bool:enable | true 启用轮胎爆胎 / false 禁用轮胎爆胎 |
 
 ## 返回值
 
-该函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例
 
@@ -32,9 +32,9 @@ public OnGameModeInit()
 
 :::warning
 
-- 该函数已在 SA-MP 0.3 版本移除
+- 此函数已在 SA-MP 0.3 版本移除
 - 轮胎爆胎机制默认启用
-- 若需禁用该功能，需通过 [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate) 回调手动实现
+- 若需禁用此函数，需通过 [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate) 回调手动实现
 
 :::
 

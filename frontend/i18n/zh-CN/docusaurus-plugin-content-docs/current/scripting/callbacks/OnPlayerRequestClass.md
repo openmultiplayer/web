@@ -1,22 +1,22 @@
 ---
 title: OnPlayerRequestClass
 sidebar_label: OnPlayerRequestClass
-description: 当玩家在职业选择界面切换职业类别（或首次进入选择界面）时触发该回调函数。
-tags: ["玩家", "class"]
+description: 当玩家在职业选择界面切换职业类别（或首次进入选择界面）时触发此回调函数。
+tags: ["玩家", "职业"]
 ---
 
 ## 描述
 
-当玩家在职业选择界面切换职业类别（或首次进入选择界面）时触发该回调函数。
+当玩家在职业选择界面切换职业类别（或首次进入选择界面）时触发此回调函数。
 
-| 参数名   | 说明                                                                        |
-| -------- | --------------------------------------------------------------------------- |
-| playerid | 切换职业类别的玩家ID                                                        |
-| classid  | 当前查看的职业类别ID（由[AddPlayerClass](../functions/AddPlayerClass)返回） |
+| 参数     | 说明                                                                         |
+| -------- | ---------------------------------------------------------------------------- |
+| playerid | 切换职业类别的玩家 ID                                                        |
+| classid  | 当前查看的职业类别 ID（由[AddPlayerClass](../functions/AddPlayerClass)返回） |
 
 ## 返回值
 
-该回调始终在滤镜脚本中优先触发
+此回调始终在滤镜脚本中优先触发
 
 ## 示例
 
@@ -37,19 +37,19 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::tip
 
-当玩家按下F4键时也会触发此回调
+当玩家按下 F4 键时也会触发此回调
 
 :::
 
 ## 相关回调
 
-以下回调函数可能与本回调相关：
+以下回调函数可能与此回调相关：
 
 - [OnPlayerRequestSpawn](OnPlayerRequestSpawn): 当玩家尝试通过职业选择界面生成时触发
 
 ## 相关函数
 
-以下函数可能与本回调函数相关：
+以下函数可能与此回调函数相关：
 
 - [AddPlayerClass](../functions/AddPlayerClass): 添加职业类别
 - [SetSpawnInfo](../functions/SetSpawnInfo): 设置玩家生成信息

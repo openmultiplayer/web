@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-该函数无效，请使用[CreatePickup](CreatePickup)
+此函数无效，请使用[CreatePickup](CreatePickup)
 
 :::
 
@@ -15,13 +15,13 @@ tags: []
 
 设置玩家死亡时掉落的金额。
 
-| 参数名 | 描述             |
+| 参数   | 说明             |
 | ------ | ---------------- |
 | amount | 要设置的金额数目 |
 
 ## 返回值
 
-该函数不返回任何特定值
+此函数不返回特定值
 
 ## 示例代码
 
@@ -37,7 +37,7 @@ public OnGameModeInit()
 
 :::warning
 
-该函数在当前 SA:MP 版本中无效！
+此函数在当前 SA:MP 版本中无效！
 
 :::
 

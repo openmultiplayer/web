@@ -1,15 +1,15 @@
 ---
 title: OnPlayerEditObject
 sidebar_label: OnPlayerEditObject
-description: 当玩家完成物体编辑时（通过BeginObjectEditing/BeginPlayerObjectEditing）会触发该回调函数。
+description: 当玩家完成物体编辑时（通过BeginObjectEditing/BeginPlayerObjectEditing）会触发此回调函数。
 tags: ["玩家", "物体"]
 ---
 
 ## 描述
 
-当玩家完成物体编辑（[BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)）时触发该回调函数。
+当玩家完成物体编辑（[BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)）时触发此回调函数。
 
-| 参数名                 | 说明                                                    |
+| 参数                   | 说明                                                    |
 | ---------------------- | ------------------------------------------------------- |
 | playerid               | 进行物体编辑的玩家ID                                    |
 | playerobject           | 0表示全局物体，1表示玩家物体                            |
@@ -28,7 +28,7 @@ tags: ["玩家", "物体"]
 
 0 - 允许将此回调传递给下一个脚本
 
-该回调始终在滤镜脚本中优先触发
+此回调始终在滤镜脚本中优先触发
 
 ## 示例
 
@@ -93,7 +93,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 ## 相关函数
 
-以下函数可能与本回调函数相关：
+以下函数可能与此回调函数相关：
 
 - [BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing): 开始编辑玩家物体
 - [BeginObjectEditing](../functions/BeginObjectEditing): 开始编辑物体

@@ -63,13 +63,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-本函数每次只能返回一个车辆 ID（通常为距离玩家最近的车辆），即使玩家视角范围内存在多个车辆
+此函数每次只能返回一个车辆 ID（通常为距离玩家最近的车辆），即使玩家视角范围内存在多个车辆
 
 :::
 
 :::warning
 
-本功能默认禁用以节省带宽，需使用[EnablePlayerCameraTarget](EnablePlayerCameraTarget)为每个玩家单独启用
+此函数默认禁用以节省带宽，需使用[EnablePlayerCameraTarget](EnablePlayerCameraTarget)为每个玩家单独启用
 
 :::
 

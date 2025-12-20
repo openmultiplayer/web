@@ -245,7 +245,7 @@ static enum {
 导出函数必须使用行注释进行文档说明，格式为`// FunctionName 实现X、Y、Z功能并返回A`，首词为函数名，后接功能简述。无需详细描述每个参数，例如：
 
 ```pawn
-// LoadPlayerAccount 用于初始化账户加载流程。本函数将触发HTTP请求
+// LoadPlayerAccount 用于初始化账户加载流程。此函数将触发HTTP请求
 // 获取玩家数据，向玩家显示对话框，最终在流程完成后触发`OnPlayerLogin`
 // 事件。若加载失败则踢出玩家。
 stock Error:LoadPlayerAccount(playerid)

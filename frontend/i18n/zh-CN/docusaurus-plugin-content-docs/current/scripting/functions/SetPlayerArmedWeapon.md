@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 设置玩家当前手持的武器（必须是玩家已拥有的武器）
 
-| 参数名          | 说明                                         |
+| 参数            | 说明                                         |
 | --------------- | -------------------------------------------- |
 | playerid        | 要设置武器的玩家 ID                          |
 | WEAPON:weaponid | 玩家应持有的[武器](../resources/weaponids)ID |
@@ -49,7 +49,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::tip
 
-该函数仅切换玩家已持有的武器，不会给予新武器。具体给予武器功能请参考 GivePlayerWeapon
+此函数仅切换玩家已持有的武器，不会给予新武器。具体给予武器功能请参考 GivePlayerWeapon
 
 :::
 

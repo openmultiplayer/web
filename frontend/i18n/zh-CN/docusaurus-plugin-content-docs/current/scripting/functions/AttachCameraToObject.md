@@ -1,22 +1,22 @@
 ---
 title: AttachCameraToObject
 sidebar_label: AttachCameraToObject
-description: 您可以使用此功能将玩家视角附加到物体上。
+description: 你可以使用此函数将玩家视角附加到物体上。
 tags: ["玩家", "物体"]
 ---
 
 ## 描述
 
-您可以使用此功能将玩家视角附加到物体上。
+你可以使用此函数将玩家视角附加到物体上。
 
-| 名称     | 说明                    |
+| 参数     | 说明                    |
 | -------- | ----------------------- |
 | playerid | 需要附加视角的玩家 ID   |
 | objectid | 要附加玩家视角的物体 ID |
 
 ## 返回值
 
-本函数没有特定返回值。
+此函数不返回特定值。
 
 ## 示例
 

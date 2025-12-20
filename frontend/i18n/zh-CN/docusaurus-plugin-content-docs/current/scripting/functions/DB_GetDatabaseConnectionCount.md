@@ -2,14 +2,12 @@
 title: DB_GetDatabaseConnectionCount
 sidebar_label: DB_GetDatabaseConnectionCount
 description: 用于调试目的获取已打开的数据库连接数量。
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
 ## 描述
 
-该函数用于调试目的获取已打开的数据库连接数量。
+此函数用于调试目的获取已打开的数据库连接数量。
 
 | 参数 | 说明             |
 | ---- | ---------------- |

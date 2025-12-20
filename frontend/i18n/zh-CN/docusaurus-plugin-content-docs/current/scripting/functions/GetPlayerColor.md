@@ -32,7 +32,7 @@ SendClientMessage(playerid, -1, output);
 
 :::warning
 
-若未预先调用 SetPlayerColor 设置颜色，本函数将返回 0。点击[此处](../../tutorials/colorfix)查看修复方法
+若未预先调用 SetPlayerColor 设置颜色，此函数将返回 0。点击[此处](../../tutorials/colorfix)查看修复方法
 
 :::
 

@@ -150,7 +150,7 @@ new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;
 
 TextDrawCreate(Float:x, Float:y, text[])
 
-| 参数名 | 说明                |
+| 参数   | 说明                |
 | ------ | ------------------- |
 | x      | 文本绘图的 X 轴坐标 |
 | y      | 文本绘图的 Y 轴坐标 |
@@ -199,14 +199,14 @@ SA-MP 0.3d 版本新增第四种字体（ID 4），需配合 [TextDrawCreate](..
 
 TextDrawShowForPlayer(playerid, Text:text)
 
-| 参数名   | 说明                |
+| 参数     | 说明                |
 | -------- | ------------------- |
 | playerid | 目标玩家 ID         |
 | text     | 要显示的文本绘图 ID |
 
 **返回值：​**
 
-无特定返回值
+不返回特定值。
 
 实现代码：
 

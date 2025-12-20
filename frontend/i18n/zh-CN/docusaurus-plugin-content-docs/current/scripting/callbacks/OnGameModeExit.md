@@ -1,13 +1,13 @@
 ---
 title: OnGameModeExit
 sidebar_label: OnGameModeExit
-description: 当游戏模式结束时触发该回调（可能由'gmx'指令、服务器关闭或GameModeExit函数触发）
+description: 当游戏模式结束时触发此回调（可能由'gmx'指令、服务器关闭或GameModeExit函数触发）
 tags: []
 ---
 
 ## 描述
 
-当游戏模式结束时触发该回调。触发条件包括：
+当游戏模式结束时触发此回调。触发条件包括：
 
 - 执行'gmx'指令
 - 服务器关闭
@@ -27,7 +27,7 @@ public OnGameModeExit()
 
 :::tip
 
-该回调也可用于滤镜脚本中，通过RCON指令（如changemode或gmx）检测游戏模式变更，因为更换游戏模式不会重新加载滤镜脚本
+此回调也可用于滤镜脚本中，通过RCON指令（如changemode或gmx）检测游戏模式变更，因为更换游戏模式不会重新加载滤镜脚本
 
 :::
 
@@ -37,7 +37,7 @@ public OnGameModeExit()
 
 - 配合`rcon gmx`指令使用时可能导致客户端异常
 - 在[OnGameModeInit](OnGameModeInit)中过度调用[RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer)可能引发客户端崩溃
-- 服务器崩溃或进程被强制终止（如Linux kill命令/Windows控制台关闭按钮）不会触发本回调
+- 服务器崩溃或进程被强制终止（如Linux kill命令/Windows控制台关闭按钮）不会触发此回调
 
 :::
 

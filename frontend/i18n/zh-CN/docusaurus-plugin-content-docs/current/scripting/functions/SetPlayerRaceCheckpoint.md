@@ -9,7 +9,7 @@ tags: ["玩家", "检查点", "竞速检查点"]
 
 创建竞速检查点。当玩家进入时，将触发 OnPlayerEnterRaceCheckpoint 回调。
 
-| 名称          | 说明                                                 |
+| 参数          | 说明                                                 |
 | ------------- | ---------------------------------------------------- |
 | playerid      | 要设置检查点的玩家 ID                                |
 | CP_TYPE:type  | [竞速检查点类型](../resources/race-checkpoint-types) |

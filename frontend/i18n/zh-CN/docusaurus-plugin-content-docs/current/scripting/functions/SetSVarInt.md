@@ -2,7 +2,7 @@
 title: SetSVarInt
 sidebar_label: SetSVarInt
 description: 设置整型服务器变量。
-tags: ["服务器变量", "svar"]
+tags: ["服务器变量"]
 ---
 
 <VersionWarnZH_CN version='SA-MP 0.3.7 R2' />
@@ -11,7 +11,7 @@ tags: ["服务器变量", "svar"]
 
 设置整型服务器变量。
 
-| 参数名       | 描述           |
+| 参数         | 说明           |
 | ------------ | -------------- |
 | const svar[] | 服务器变量名称 |
 | value        | 要设置的整数值 |

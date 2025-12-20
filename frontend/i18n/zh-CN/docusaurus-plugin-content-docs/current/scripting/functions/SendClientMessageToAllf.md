@@ -17,9 +17,9 @@ tags: []
 
 ## 描述
 
-向所有玩家发送格式化聊天消息（该函数已弃用，请使用 SendClientMessageToAll 替代）。此功能等同于对每个玩家调用 SendClientMessage。
+向所有玩家发送格式化聊天消息（此函数已弃用，请使用 SendClientMessageToAll 替代）。此函数等同于对每个玩家调用 SendClientMessage。
 
-| 参数名            | 说明                                     |
+| 参数              | 说明                                     |
 | ----------------- | ---------------------------------------- |
 | color             | 消息颜色（0xRRGGBBAA 十六进制格式）      |
 | const message[]   | 格式化消息内容（最多 144 字符）          |
@@ -27,7 +27,7 @@ tags: []
 
 ## 返回值
 
-该函数始终返回 true (1)。
+此函数始终返回 true (1)。
 
 ## 示例
 

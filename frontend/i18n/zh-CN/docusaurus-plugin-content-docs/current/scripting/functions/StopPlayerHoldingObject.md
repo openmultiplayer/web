@@ -34,7 +34,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-该函数已在 SA-MP 0.3c 版本中移除。请使用[RemovePlayerAttachedObject](RemovePlayerAttachedObject)
+此函数已在 SA-MP 0.3c 版本中移除。请使用[RemovePlayerAttachedObject](RemovePlayerAttachedObject)
 
 :::
 

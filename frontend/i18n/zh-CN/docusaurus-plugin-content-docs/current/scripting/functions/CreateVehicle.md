@@ -9,17 +9,17 @@ tags: ["车辆"]
 
 在游戏世界中动态创建车辆，可在脚本任意时刻替代 AddStaticVehicleEx 使用。
 
-| 参数名                                 | 说明                                                |
-| -------------------------------------- | --------------------------------------------------- |
-| [modelid](../resources/vehicleid)      | 车辆模型 ID                                         |
-| Float:spawnX                           | 车辆生成的 X 轴坐标                                 |
-| Float:spawnY                           | 车辆生成的 Y 轴坐标                                 |
-| Float:spawnZ                           | 车辆生成的 Z 轴坐标                                 |
-| Float:angle                            | 车辆初始朝向角度                                    |
-| [colour1](../resources/vehiclecolorid) | 主颜色 ID                                           |
-| [colour2](../resources/vehiclecolorid) | 副颜色 ID                                           |
-| respawnDelay                           | 无驾驶员时车辆重生延迟（秒）。使用-1 将禁用自动重生 |
-| bool:addSiren                          | 默认值'false'。为车辆启用警笛功能（需车辆自带喇叭） |
+| 参数                                   | 说明                                                  |
+| -------------------------------------- | ----------------------------------------------------- |
+| [modelid](../resources/vehicleid)      | 车辆模型 ID                                           |
+| Float:spawnX                           | 车辆生成的 X 轴坐标                                   |
+| Float:spawnY                           | 车辆生成的 Y 轴坐标                                   |
+| Float:spawnZ                           | 车辆生成的 Z 轴坐标                                   |
+| Float:angle                            | 车辆初始朝向角度                                      |
+| [colour1](../resources/vehiclecolorid) | 主颜色 ID                                             |
+| [colour2](../resources/vehiclecolorid) | 副颜色 ID                                             |
+| respawnDelay                           | 无驾驶员时车辆重生延迟（秒）。使用-1 将禁用自动重生   |
+| bool:addSiren                          | 默认值'false'。为车辆启用警报器功能（需车辆自带喇叭） |
 
 ## 返回值
 
@@ -53,7 +53,7 @@ public OnGameModeInit()
 - [DestroyVehicle](DestroyVehicle): 销毁车辆
 - [AddStaticVehicle](AddStaticVehicle): 添加静态车辆
 - [AddStaticVehicleEx](AddStaticVehicleEx): 添加带自定义重生时间的静态车辆
-- [GetVehicleParamsSirenState](GetVehicleParamsSirenState): 检测车辆警笛状态
+- [GetVehicleParamsSirenState](GetVehicleParamsSirenState): 检测车辆警报器状态
 - [SetVehicleSpawnInfo](SetVehicleSpawnInfo): 配置车辆生成参数
 - [GetVehicleSpawnInfo](GetVehicleSpawnInfo): 获取车辆生成信息
 - [ChangeVehicleColours](ChangeVehicleColours): 修改车辆颜色配置
@@ -64,7 +64,7 @@ public OnGameModeInit()
 ## 相关回调
 
 - [OnVehicleSpawn](../callbacks/OnVehicleSpawn): 车辆重生时触发
-- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): 警笛状态变化时触发
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): 警报器状态变化时触发
 
 ## 相关资源
 

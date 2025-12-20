@@ -1,13 +1,13 @@
 ---
 title: OnIncomingConnection
 sidebar_label: OnIncomingConnection
-description: 当IP地址尝试连接服务器时触发该回调
+description: 当IP地址尝试连接服务器时触发此回调
 tags: []
 ---
 
 ## 描述
 
-当IP地址尝试连接服务器时触发该回调。如需阻止连接，请使用BlockIpAddress函数。
+当IP地址尝试连接服务器时触发此回调。如需阻止连接，请使用BlockIpAddress函数。
 
 | 参数         | 说明                 |
 | ------------ | -------------------- |
@@ -20,7 +20,7 @@ tags: []
 1 - 阻止其他滤镜脚本接收此回调  
 0 - 允许传递给后续滤镜脚本
 
-该回调在滤镜脚本中总是优先触发。
+此回调在滤镜脚本中总是优先触发。
 
 ## 示例
 

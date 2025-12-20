@@ -2,7 +2,7 @@
 title: GetPlayerLandingGearState
 sidebar_label: GetPlayerLandingGearState
 description: 获取玩家当前驾驶飞机的起落架状态
-tags: ["玩家", "飞机"]
+tags: ["玩家", "车辆"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />

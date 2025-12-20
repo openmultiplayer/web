@@ -2,7 +2,7 @@
 title: DestroyPlayerPickup
 sidebar_label: DestroyPlayerPickup
 description: 销毁通过 CreatePlayerPickup 创建的玩家专属拾取物。
-tags: ["玩家", "拾取物", "玩家专属拾取物"]
+tags: ["玩家", "拾取物", "玩家拾取物"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
@@ -11,14 +11,14 @@ tags: ["玩家", "拾取物", "玩家专属拾取物"]
 
 销毁通过 [CreatePlayerPickup](CreatePlayerPickup) 创建的玩家专属拾取物。
 
-| 名称     | 描述                                                    |
+| 参数     | 说明                                                    |
 | -------- | ------------------------------------------------------- |
 | playerid | 目标玩家 ID                                             |
 | pickupid | 要销毁的玩家专属拾取物 ID（由 CreatePlayerPickup 返回） |
 
 ## 返回值
 
-该函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例
 

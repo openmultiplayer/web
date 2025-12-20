@@ -1,22 +1,22 @@
 ---
 title: OnVehicleStreamIn
 sidebar_label: OnVehicleStreamIn
-description: 当车辆被流加载到玩家客户端时触发该回调函数。
+description: 当车辆被流加载到玩家客户端时触发此回调函数。
 tags: ["车辆"]
 ---
 
 ## 描述
 
-当车辆被流加载到玩家客户端时触发该回调函数。
+当车辆被流加载到玩家客户端时触发此回调函数。
 
-| 参数名      | 说明               |
+| 参数        | 说明               |
 | ----------- | ------------------ |
 | vehicleid   | 被流加载的车辆ID   |
 | forplayerid | 发起流加载的玩家ID |
 
 ## 返回值
 
-该回调始终在滤镜脚本中优先触发。
+此回调始终在滤镜脚本中优先触发。
 
 ## 示例
 
@@ -24,7 +24,7 @@ tags: ["车辆"]
 public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     new string[32];
-    format(string, sizeof(string), "您现在可以看到车辆 %d。", vehicleid);
+    format(string, sizeof(string), "你现在可以看到车辆 %d。", vehicleid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }

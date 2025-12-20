@@ -4,9 +4,9 @@ sidebar_label: 贡献指南
 description: 参与SA-MP Wiki与open.mp文档贡献的完整指南
 ---
 
-本文档源码向所有人开放贡献！您只需拥有[GitHub](https://github.com)账号即可参与，无需掌握 Git 技术，所有操作均可通过网页界面完成！
+本文档源码向所有人开放贡献！你只需拥有[GitHub](https://github.com)账号即可参与，无需掌握 Git 技术，所有操作均可通过网页界面完成！
 
-如需维护特定语言版本，请向[`CODEOWNERS`](https://github.com/openmultiplayer/web/blob/master/CODEOWNERS)文件提交 PR，在对应语言目录添加您的 GitHub 用户名。
+如需维护特定语言版本，请向[`CODEOWNERS`](https://github.com/openmultiplayer/web/blob/master/CODEOWNERS)文件提交 PR，在对应语言目录添加你的 GitHub 用户名。
 
 ## 内容编辑
 
@@ -16,7 +16,7 @@ description: 参与SA-MP Wiki与open.mp文档贡献的完整指南
 
 以[SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity)页面为例，点击编辑按钮将跳转至[GitHub 编辑界面](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md)，登录后可直接在线修改内容。
 
-提交修改后创建"Pull Request"，Wiki 维护者与社区成员将审核您的变更，经讨论确认后合并至主分支。
+提交修改后创建"Pull Request"，Wiki 维护者与社区成员将审核你的变更，经讨论确认后合并至主分支。
 
 ## 新增内容
 

@@ -19,6 +19,6 @@ sidebar_label: 子弹命中类型
 
 :::caution
 
-BULLET_HIT_TYPE_PLAYER 同样适用于 NPC。该回调会忽略角色（Actor）并检测为 BULLET_HIT_TYPE_NONE。
+BULLET_HIT_TYPE_PLAYER 同样适用于 NPC。此回调会忽略角色（Actor）并检测为 BULLET_HIT_TYPE_NONE。
 
 :::

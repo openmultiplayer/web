@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 获取玩家当前连接的 SA-MP 客户端版本信息
 
-| 名称                   | 说明                             |
+| 参数                   | 说明                             |
 | ---------------------- | -------------------------------- |
 | playerid               | 需要获取版本信息的玩家 ID        |
 | version[]              | 存储版本信息的字符串（引用传递） |
@@ -28,9 +28,9 @@ public OnPlayerConnect(playerid)
     GetPlayerVersion(playerid, version, sizeof(version));
 
     new string[64];
-    format(string, sizeof(string), "您的SA-MP客户端版本：%s", version);
+    format(string, sizeof(string), "你的SA-MP客户端版本：%s", version);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
-    // 可能显示："您的SA-MP客户端版本：0.3.7"
+    // 可能显示："你的SA-MP客户端版本：0.3.7"
     return 1;
 }
 ```

@@ -11,7 +11,7 @@ tags: ["玩家"]
 
 获取指定玩家当前瞄准的角色（Actor）ID
 
-| 名称     | 说明                  |
+| 参数     | 说明                  |
 | -------- | --------------------- |
 | playerid | 需要获取目标的玩家 ID |
 
@@ -28,7 +28,7 @@ public OnPlayerUpdate(playerid)
         targetActorId = GetPlayerTargetActor(playerid),
         string[32];
 
-    format(string, sizeof(string), "您正在瞄准角色ID %d", targetActorId);
+    format(string, sizeof(string), "你正在瞄准角色ID %d", targetActorId);
     SendClientMessage(playerid, -1, string);
     return 1;
 }

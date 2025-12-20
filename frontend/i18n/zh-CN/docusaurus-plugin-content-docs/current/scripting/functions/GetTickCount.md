@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-`GetTickCount` 的有效差值范围约为 25 天（2147483647 毫秒）。只要事件间隔在此范围内，本函数能完美工作，但需注意整数溢出的情况：
+`GetTickCount` 的有效差值范围约为 25 天（2147483647 毫秒）。只要事件间隔在此范围内，此函数能完美工作，但需注意整数溢出的情况：
 
 ```c
 new start = GetTickCount();

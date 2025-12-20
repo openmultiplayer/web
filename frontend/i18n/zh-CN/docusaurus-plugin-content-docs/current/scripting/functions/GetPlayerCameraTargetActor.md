@@ -62,13 +62,13 @@ public OnPlayerUpdate(playerid)
 
 :::tip
 
-本函数仅返回玩家视角方向上的角色 ID，如需检测玩家是否正在瞄准该角色，请使用[GetPlayerTargetActor](GetPlayerTargetActor)
+此函数仅返回玩家视角方向上的角色 ID，如需检测玩家是否正在瞄准该角色，请使用[GetPlayerTargetActor](GetPlayerTargetActor)
 
 :::
 
 :::warning
 
-本功能默认禁用以节省带宽，需使用[EnablePlayerCameraTarget](EnablePlayerCameraTarget)为每个玩家单独启用
+此函数默认禁用以节省带宽，需使用[EnablePlayerCameraTarget](EnablePlayerCameraTarget)为每个玩家单独启用
 
 :::
 

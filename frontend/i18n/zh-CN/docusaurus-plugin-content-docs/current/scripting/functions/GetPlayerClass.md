@@ -2,7 +2,7 @@
 title: GetPlayerClass
 sidebar_label: GetPlayerClass
 description: 获取职业配置数据
-tags: ["class"]
+tags: ["职业"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
@@ -11,7 +11,7 @@ tags: ["class"]
 
 获取已注册职业的配置数据
 
-| 参数名          | 说明                                        |
+| 参数            | 说明                                        |
 | --------------- | ------------------------------------------- |
 | classid         | 要获取数据的职业 ID                         |
 | &team           | 存储队伍 ID 的变量（通过引用传递）          |

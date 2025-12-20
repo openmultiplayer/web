@@ -9,7 +9,7 @@ tags: ["车辆"]
 
 检测指定车辆是否连接有拖车。可通过[GetVehicleTrailer](GetVehicleTrailer)获取拖车 ID（若存在）。
 
-| 参数名    | 说明            |
+| 参数      | 说明            |
 | --------- | --------------- |
 | vehicleid | 要检测的车辆 ID |
 

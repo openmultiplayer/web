@@ -2,21 +2,21 @@
 title: DestroyPlayerObject
 sidebar_label: DestroyPlayerObject
 description: 销毁通过 CreatePlayerObject 创建的玩家专属物体。
-tags: ["玩家", "物体", "玩家专属物体"]
+tags: ["玩家", "物体", "玩家物体"]
 ---
 
 ## 描述
 
 销毁通过 [CreatePlayerObject](CreatePlayerObject) 创建的玩家专属物体。
 
-| 名称     | 描述                                                  |
+| 参数     | 说明                                                  |
 | -------- | ----------------------------------------------------- |
 | playerid | 要销毁其玩家专属物体的玩家 ID                         |
 | objectid | 要销毁的玩家专属物体 ID（由 CreatePlayerObject 返回） |
 
 ## 返回值
 
-该函数不返回特定值。
+此函数不返回特定值。
 
 ## 示例
 

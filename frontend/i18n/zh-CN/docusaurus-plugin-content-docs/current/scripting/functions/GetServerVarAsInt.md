@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-本函数自 0.3.7 R2 版本起已弃用，请使用[GetConsoleVarAsInt](GetConsoleVarAsInt)
+此函数自 0.3.7 R2 版本起已弃用，请使用[GetConsoleVarAsInt](GetConsoleVarAsInt)
 
 :::
 
@@ -15,7 +15,7 @@ tags: []
 
 获取服务器整型变量的当前数值
 
-| 名称            | 说明             |
+| 参数            | 说明             |
 | --------------- | ---------------- |
 | const varname[] | 目标整型变量名称 |
 

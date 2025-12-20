@@ -7,9 +7,9 @@ tags: ["拾取物"]
 
 ## 描述
 
-本函数用于在游戏中添加「静态」拾取物。这类拾取物支持武器、生命值、护甲等类型，无需额外脚本即可自动生效（武器/生命值/护甲会自动给予玩家）。
+此函数用于在游戏中添加「静态」拾取物。这类拾取物支持武器、生命值、护甲等类型，无需额外脚本即可自动生效（武器/生命值/护甲会自动给予玩家）。
 
-| 参数名                           | 说明                                         |
+| 参数                             | 说明                                         |
 | -------------------------------- | -------------------------------------------- |
 | [model](../resources/pickupids)  | 拾取物模型 ID                                |
 | [type](../resources/pickuptypes) | 拾取物类型，决定被拾取时的响应方式           |
@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::tip
 
-本函数不会返回可用于 OnPlayerPickUpPickup 等回调的拾取物 ID。若需要分配 ID，请使用[CreatePickup](CreatePickup)函数。
+此函数不会返回可用于 OnPlayerPickUpPickup 等回调的拾取物 ID。若需要分配 ID，请使用[CreatePickup](CreatePickup)函数。
 
 :::
 

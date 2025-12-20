@@ -2,14 +2,12 @@
 title: DB_GetDatabaseResultSetCount
 sidebar_label: DB_GetDatabaseResultSetCount
 description: 获取当前已打开的数据库查询结果集数量
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
 ## 描述
 
-该函数用于获取当前已打开的数据库查询结果集数量。
+此函数用于获取当前已打开的数据库查询结果集数量。
 
 | 参数 | 说明             |
 | ---- | ---------------- |

@@ -1,17 +1,15 @@
 ---
 title: DB_ExecuteQuery
 sidebar_label: DB_ExecuteQuery
-description: 该函数用于在已打开的SQLite数据库上执行SQL查询语句。
-keywords:
-  - sqlite
+description: 此函数用于在已打开的SQLite数据库上执行SQL查询语句。
 tags: ["sqlite"]
 ---
 
 ## 描述
 
-该函数用于在已打开的 SQLite 数据库上执行 SQL 查询语句。
+此函数用于在已打开的 SQLite 数据库上执行 SQL 查询语句。
 
-| 参数名           | 说明                       |
+| 参数             | 说明                       |
 | ---------------- | -------------------------- |
 | DB:db            | 要执行查询的数据库连接句柄 |
 | const query[]    | 需要执行的 SQL 查询语句    |
@@ -58,7 +56,7 @@ public OnGameModeInit()
     // 创建数据库连接
     gDBConnectionHandle = DB_Open("example.db");
 
-    // 验证数据库连接状态
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");

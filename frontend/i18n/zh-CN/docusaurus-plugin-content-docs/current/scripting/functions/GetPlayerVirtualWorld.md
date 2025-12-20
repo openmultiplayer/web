@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 获取玩家当前所在的虚拟世界编号
 
-| 名称     | 说明                          |
+| 参数     | 说明                          |
 | -------- | ----------------------------- |
 | playerid | 需要获取虚拟世界信息的玩家 ID |
 
@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/world", true))
     {
         new string[32];
-        format(string, sizeof(string), "您所在的虚拟世界编号：%i", GetPlayerVirtualWorld(playerid));
+        format(string, sizeof(string), "你所在的虚拟世界编号：%i", GetPlayerVirtualWorld(playerid));
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;
     }

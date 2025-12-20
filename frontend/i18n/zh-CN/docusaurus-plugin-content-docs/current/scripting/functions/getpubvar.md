@@ -2,7 +2,7 @@
 title: getpubvar
 sidebar_label: getpubvar
 description: 获取当前脚本中的特定公共变量
-tags: ["核心", "pubvar", "公共变量"]
+tags: ["核心", "公共变量"]
 ---
 
 <LowercaseNoteZH_CN />
@@ -11,7 +11,7 @@ tags: ["核心", "pubvar", "公共变量"]
 
 获取当前脚本中声明的特定公共变量值
 
-| 名称         | 说明             |
+| 参数         | 说明             |
 | ------------ | ---------------- |
 | const name[] | 目标公共变量名称 |
 

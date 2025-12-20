@@ -1,13 +1,13 @@
 ---
 title: OnFilterScriptExit
 sidebar_label: OnFilterScriptExit
-description: 当滤镜脚本卸载时触发该回调
+description: 当滤镜脚本卸载时触发此回调
 tags: []
 ---
 
 ## 描述
 
-当滤镜脚本被卸载时触发该回调。该回调仅在当前被卸载的滤镜脚本内部触发。
+当滤镜脚本被卸载时触发此回调。此回调仅在当前被卸载的滤镜脚本内部触发。
 
 ## 示例
 

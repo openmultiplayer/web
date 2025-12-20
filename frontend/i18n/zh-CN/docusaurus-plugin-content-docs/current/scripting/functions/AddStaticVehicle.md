@@ -9,7 +9,7 @@ tags: ["车辆"]
 
 在游戏模式中添加静态车辆（模型会预加载给玩家）。
 
-| 参数名                                 | 说明                                  |
+| 参数                                   | 说明                                  |
 | -------------------------------------- | ------------------------------------- |
 | modelid                                | [车辆模型 ID](../resources/vehicleid) |
 | Float:spawnX                           | 生成点的 X 坐标                       |
@@ -42,7 +42,7 @@ public OnGameModeInit()
 - [AddStaticVehicleEx](AddStaticVehicleEx): 添加可自定义重生时间的静态车辆
 - [CreateVehicle](CreateVehicle): 动态创建车辆
 - [DestroyVehicle](DestroyVehicle): 销毁车辆
-- [GetVehicleParamsSirenState](GetVehicleParamsSirenState): 检测车辆警笛状态
+- [GetVehicleParamsSirenState](GetVehicleParamsSirenState): 检测车辆警报器状态
 - [SetVehicleSpawnInfo](SetVehicleSpawnInfo): 配置车辆生成参数
 - [GetVehicleSpawnInfo](GetVehicleSpawnInfo): 获取车辆生成信息
 - [ChangeVehicleColours](ChangeVehicleColours): 修改车辆颜色
@@ -53,7 +53,7 @@ public OnGameModeInit()
 ## 相关回调
 
 - [OnVehicleSpawn](../callbacks/OnVehicleSpawn): 车辆重生时触发
-- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): 车辆警笛状态变化时触发
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): 车辆警报器状态变化时触发
 
 ## 相关资源
 

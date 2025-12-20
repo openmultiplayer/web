@@ -1,15 +1,15 @@
 ---
 title: OnRconLoginAttempt
 sidebar_label: OnRconLoginAttempt
-description: 当玩家尝试在游戏中登录RCON时触发该回调函数（无论成功与否）。
-tags: ["rcon", "管理"]
+description: 当玩家尝试在游戏中登录RCON时触发此回调函数（无论成功与否）。
+tags: ["远程控制台", "管理"]
 ---
 
 ## 描述
 
-当玩家在游戏内尝试登录RCON时触发该回调函数，无论登录是否成功。
+当玩家在游戏内尝试登录RCON时触发此回调函数，无论登录是否成功。
 
-| 参数名     | 说明                       |
+| 参数       | 说明                       |
 | ---------- | -------------------------- |
 | ip[]       | 尝试登录的玩家IP地址       |
 | password[] | 使用的登录密码             |
@@ -17,7 +17,7 @@ tags: ["rcon", "管理"]
 
 ## 返回值
 
-该回调始终在滤镜脚本中优先触发。
+此回调始终在滤镜脚本中优先触发。
 
 ## 示例
 
@@ -55,20 +55,20 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::tip
 
-- 本回调仅在游戏内使用`/rcon login`时触发
+- 此回调仅在游戏内使用`/rcon login`时触发
 - 仅在玩家未登录RCON时触发，登录成功后触发[OnRconCommand](OnRconCommand)
 
 :::
 
 ## 相关回调
 
-以下回调可能与该回调存在关联：
+以下回调可能与此回调存在关联：
 
 - [OnRconCommand](OnRconCommand): 当发送RCON命令时触发
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): 检测玩家是否为RCON管理员
 - [SetPlayerAdmin](../functions/SetPlayerAdmin): 设置玩家为RCON管理员

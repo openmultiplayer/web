@@ -2,17 +2,22 @@
 title: db_get_field_assoc_int
 sidebar_label: db_get_field_assoc_int
 description: 通过字段名称获取当前结果行的整数值。
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNoteZH_CN />
+
+:::warning
+
+此函数已弃用，请使用 [DB_GetFieldIntByName](DB_GetFieldIntByName)。
+
+:::
 
 ## 描述
 
 通过字段名称从当前结果行中获取整数值。
 
-| 参数名            | 说明                                       |
+| 参数              | 说明                                       |
 | ----------------- | ------------------------------------------ |
 | DBResult:dbresult | 查询结果句柄（由[db_query](db_query)返回） |
 | field[]           | 目标字段名称                               |
@@ -24,7 +29,7 @@ keywords:
 ## 示例
 
 ```c
-// 示例模块
+// examples.inc
 
 // ...
 
@@ -55,7 +60,7 @@ Examples_CalculateSum(DB:dbConnectionHandle)
 ```
 
 ```c
-// 主游戏模式文件
+// mode.pwn
 
 // ...
 
@@ -72,6 +77,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = db_open("example.db");
 
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");

@@ -1,15 +1,15 @@
 ---
 title: OnPlayerSelectObject
 sidebar_label: OnPlayerSelectObject
-description: 当玩家使用BeginObjectSelecting后选择物体时触发该回调函数。
+description: 当玩家使用BeginObjectSelecting后选择物体时触发此回调函数。
 tags: ["玩家", "物体"]
 ---
 
 ## 描述
 
-当玩家使用 [BeginObjectSelecting](../functions/BeginObjectSelecting) 后选择物体时触发该回调函数。
+当玩家使用 [BeginObjectSelecting](../functions/BeginObjectSelecting) 后选择物体时触发此回调函数。
 
-| 参数名             | 说明                                         |
+| 参数               | 说明                                         |
 | ------------------ | -------------------------------------------- |
 | playerid           | 选择物体的玩家ID                             |
 | SELECT_OBJECT:type | 选择的[类型](../resources/selectobjecttypes) |
@@ -25,7 +25,7 @@ tags: ["玩家", "物体"]
 
 0 - 表示此回调将继续传递给下一个脚本。
 
-该回调始终在滤镜脚本中优先触发。
+此回调始终在滤镜脚本中优先触发。
 
 ## 示例
 
@@ -43,14 +43,14 @@ public OnPlayerSelectObject(playerid, SELECT_OBJECT:type, objectid, modelid, Flo
         BeginPlayerObjectEditing(playerid, objectid);
     }
 
-    SendClientMessage(playerid, 0xFFFFFFFF, "您现在可以编辑您的物体了！");
+    SendClientMessage(playerid, 0xFFFFFFFF, "你现在可以编辑你的物体了！");
     return 1;
 }
 ```
 
 ## 相关函数
 
-以下函数可能与该回调存在关联：
+以下函数可能与此回调存在关联：
 
 - [BeginObjectSelecting](../functions/BeginObjectSelecting): 开始物体选择流程
 

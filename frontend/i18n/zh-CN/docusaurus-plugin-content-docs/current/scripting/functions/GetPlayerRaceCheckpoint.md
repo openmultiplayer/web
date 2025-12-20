@@ -11,7 +11,7 @@ tags: ["玩家", "检查点", "竞速检查点"]
 
 获取玩家当前竞速检查点的位置信息（包含中心点、下一个检查点位置及半径）
 
-| 参数名         | 说明                                                |
+| 参数           | 说明                                                |
 | -------------- | --------------------------------------------------- |
 | playerid       | 需要获取检查点信息的玩家 ID                         |
 | &Float:centreX | 存储中心点 X 坐标的浮点型变量（通过引用传递）       |
@@ -24,7 +24,7 @@ tags: ["玩家", "检查点", "竞速检查点"]
 
 ## 返回值
 
-本函数不返回具体值，数据通过参数传递
+此函数不返回具体值，数据通过参数传递
 
 ## 示例代码
 
@@ -52,7 +52,7 @@ GetPlayerRaceCheckpoint(playerid, centreX, centreY, centreZ, nextX, nextY, nextZ
 - [IsPlayerInRaceCheckpoint](IsPlayerInRaceCheckpoint): 检测玩家是否处于竞速检查点
 - [IsPlayerRaceCheckpointActive](IsPlayerRaceCheckpointActive): 检测玩家是否有激活的竞速检查点
 
-## 相关回调函数
+## 相关回调
 
 - [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint): 玩家进入普通检查点时触发
 - [OnPlayerLeaveCheckpoint](../callbacks/OnPlayerLeaveCheckpoint): 玩家离开普通检查点时触发

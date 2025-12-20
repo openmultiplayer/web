@@ -23,7 +23,7 @@ public OnGameModeInit()
 
 :::tip
 
-- 本函数必须置于[OnGameModeInit](../callbacks/OnGameModeInit)回调中才能生效
+- 此函数必须置于[OnGameModeInit](../callbacks/OnGameModeInit)回调中才能生效
 - 未启用时，部分双手持武器（非双持武器）可能错误显示为单手持握状态
 
 :::

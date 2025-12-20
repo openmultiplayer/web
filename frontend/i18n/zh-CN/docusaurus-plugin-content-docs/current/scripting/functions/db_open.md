@@ -1,9 +1,7 @@
 ---
 title: db_open
 sidebar_label: db_open
-description: 该函数用于建立与`/scriptfiles`目录下的SQLite数据库文件的连接。
-keywords:
-  - sqlite
+description: 此函数用于建立与`/scriptfiles`目录下的SQLite数据库文件的连接。
 tags: ["sqlite"]
 ---
 
@@ -11,9 +9,9 @@ tags: ["sqlite"]
 
 ## 描述
 
-该函数用于建立与`/scriptfiles`目录下的 SQLite 数据库文件的连接。
+此函数用于建立与`/scriptfiles`目录下的 SQLite 数据库文件的连接。
 
-| 参数名                                                              | 描述                                       |
+| 参数                                                                | 说明                                       |
 | ------------------------------------------------------------------- | ------------------------------------------ |
 | const name[]                                                        | 数据库文件名（不含路径）                   |
 | SQLITE_OPEN:flags = SQLITE_OPEN_READWRITE &#124; SQLITE_OPEN_CREATE | [权限标志](../resources/sqlite-open-flags) |
@@ -36,7 +34,7 @@ public OnGameModeInit()
     // 建立数据库连接
     gDBConnectionHandle = db_open("example.db");
 
-    // 验证连接状态
+    // 检测数据库连接状态
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");

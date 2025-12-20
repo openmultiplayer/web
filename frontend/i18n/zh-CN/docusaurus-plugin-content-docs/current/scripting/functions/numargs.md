@@ -2,7 +2,7 @@
 title: numargs
 sidebar_label: numargs
 description: 获取函数接收的参数数量
-tags: ["核心", "参数", "args"]
+tags: ["核心", "参数"]
 ---
 
 <LowercaseNoteZH_CN />

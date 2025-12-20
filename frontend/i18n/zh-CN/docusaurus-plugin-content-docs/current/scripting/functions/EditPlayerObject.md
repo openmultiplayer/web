@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 允许玩家通过图形用户界面（GUI）使用鼠标编辑其专属物体的位置和旋转。
 
-| 名称     | 描述                    |
+| 参数     | 说明                    |
 | -------- | ----------------------- |
 | playerid | 执行编辑操作的玩家 ID   |
 | objectid | 待编辑的玩家专属物体 ID |
@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/edit", true))
     {
         EditPlayerObject(playerid, object[playerid]);
-        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：您现在可以编辑您的专属物体！");
+        SendClientMessage(playerid, 0xFFFFFFFF, "服务器：你现在可以编辑你的专属物体！");
         return 1;
     }
     return 0;
