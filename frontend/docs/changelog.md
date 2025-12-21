@@ -63,7 +63,7 @@ We’re excited to build what comes next together with the community.
 
 <hr />
 
-## **[v1.4.0.2779](https://github.com/openmultiplayer/open.mp/releases/tag/v1.4.0.2779) (Latest)**
+## **[v1.4.0.2779](https://github.com/openmultiplayer/open.mp/releases/tag/v1.4.0.2779)**
 
 <details>
 <summary>Click here to expand</summary>
