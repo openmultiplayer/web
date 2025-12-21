@@ -102,7 +102,7 @@ const HomepageHeader = () => {
             <Translate
               id="announcement.serverVersion"
               description="Announcement: server version and features"
-              values={{ version: <b>1.4.0.2779</b> }}
+              values={{ version: <b>v1.5.8.3079</b> }}
             >
               {'Version {version} of open.mp server is out with many fixes, performance boosts, and new features!'}
             </Translate>{" "}
