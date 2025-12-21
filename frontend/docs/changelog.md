@@ -4,7 +4,69 @@ sidebar_label: Changelog
 description: open.mp development progress and changelog.
 ---
 
+## **[v1.5.8.3079](https://github.com/openmultiplayer/open.mp/releases/tag/v1.5.8.3079) (Latest)**
+
+
+We're excited to announce the release of out latest server version!
+
+This update brings several important fixes and introduces a long awaited new feature: **Fully controllable NPCs**!
+
+For full changelog please read it from [here](https://github.com/openmultiplayer/open.mp/releases/tag/v1.5.8.3079).
+
+**Major Features:**
+
+- Introdued fully controllable NPCs as a built-in server feature, removing the need for external NPC plugins and enabling deeper server-side AI and automation.
+- Added a C API and C API SDK, allowing developers to integrate open.mp directly with native code and external tooling.
+- Added the ability to call Pawn natives from the open.mp C++ SDK, significantly improving interoperability between scripting and native modules.
+
+**Networking & Performance:**
+
+- Significant network performance improvements, resulting in faster synchronization and more responsive gameplay.
+- Added multiple sync validation checks to prevent invalid data, spoofed states, and malformed packets.
+- MTU values are now validated against the maximum allowed per client version, preventing misconfiguration and instability.
+
+**Platform & Compatibility:**
+
+- Upgraded OpenSSL from 1.1.1 to 3.0.13, officially deprecating legacy Linux distributions and ensuring proper support for modern systems.
+- Added environment variable support for config.json, making containerized, CI/CD, and production deployments easier and more flexible.
+
+**NPC & Gameplay Improvements:**
+
+- NPC IDs now allocate from highest to lowest, preventing conflicts and improving predictability.
+- Deprecated ConnectNPC in favor of the new built-in NPC system.
+- Forced train creation to always use 4 consecutive IDs, fixing long-standing inconsistencies.
+- Fixed train passenger synchronization issues.
+
+**Stability & Bug Fixes:**
+
+- Fixed an infamous issue with spawn data
+- Fixed kick delay issues.
+- Fixed crashes related to gangzones in the checking list during server restarts.
+- Fixed random occurrences of player state being set to None after spectating.
+- Fixed stdin lock on Linux during server shutdown.
+- Fixed chatlogging not affecting death messages.
+- Removed the legacy Fixes component due to instability, redundancy, and its functionality being superseded by newer systems.
+- Numerous small Pawn native fixes for improved correctness and usability.
+
+**Documentation & Community:**
+
+- New and updated NPC scripting API (Pawn natives) are available in the official [documentation](https://open.mp/docs)
+- Join the community and get support on [Discord](https://discord.gg/samp)
+- Support development via [OpenCollective](https://opencollective.com/openmultiplayer)
+
+This release sets the direction for the remainder of this year and lays the foundation for a new chapter in 2026. 
+We are entering a phase focused on deeper tooling, stronger native integrations, and more ambitious releases. 
+We’re excited to build what comes next together with the community.
+
+
+<br />
+
+<hr />
+
 ## **[v1.4.0.2779](https://github.com/openmultiplayer/open.mp/releases/tag/v1.4.0.2779) (Latest)**
+
+<details>
+<summary>Click here to expand</summary>
 
 We're excited to announce the release of out latest server version!
 
@@ -34,6 +96,8 @@ For full changelog please read it from [here](https://github.com/openmultiplayer
 - More validity checks for trailers and trailer sync.
 - Fix crash related to moving objects.
 - Fix player vehicle data resetting before OnPlayerDeath is called.
+
+</details>
 
 <br />
 
