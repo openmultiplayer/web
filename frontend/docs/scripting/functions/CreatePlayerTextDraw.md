@@ -49,7 +49,7 @@ Player-textdraws are automatically destroyed when a player disconnects.
 
 :::warning
 
-Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~) Doesn't work beyond 255th character.
+Keyboard key mapping codes (such as `~k~~VEHICLE_ENTER_EXIT~`) Doesn't work beyond 255th character.
 
 :::
 

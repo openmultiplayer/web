@@ -58,7 +58,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-Keyboard key mapping codes (such as ~k~~VEHICLE_ENTER_EXIT~) don't work beyond 255th character.
+Keyboard key mapping codes (such as `~k~~VEHICLE_ENTER_EXIT~`) don't work beyond 255th character.
 
 :::
 

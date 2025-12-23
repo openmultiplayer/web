@@ -68,7 +68,7 @@ tags: []
 **Notes:**
 
 1. Although the vehicle model limit in 0.3 is unlimited, if you use a large amount of vehicle models then it will affect client performance.
-2. Although the textdraw string limit is 1024 characters, if colour codes (e.g. ~r~) are used beyond the 255th character it may crash the client.
+2. Although the textdraw string limit is 1024 characters, if colour codes (e.g. `~r~`) are used beyond the 255th character it may crash the client.
 3. It is possible to show all Textdraws at the same time for one player, however this is not recommended.
 4. To circumvent these limits, it is possible to use a [streamer](https://github.com/samp-incognito/samp-streamer-plugin). Streamers work by only creating the entities etc. that are close to players.
 5. Due to client limitations only up to 51 actors may actually be shown at a time.
