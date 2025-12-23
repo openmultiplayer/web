@@ -1,6 +1,7 @@
 import VersionWarn from "./version-warning";
 import LowercaseNote from "./lowercase-note";
 import TipNPCCallbacks from "./npc-callbacks-tip";
+import StaleTranslationWarning from "./stale-translation-warning";
 
 import VersionWarnID from "./translations/id/version-warning";
 import LowercaseNoteID from "./translations/id/lowercase-note";
@@ -9,10 +10,12 @@ import TipNPCCallbacksID from "./translations/id/npc-callbacks-tip";
 import VersionWarnPT_BR from "./translations/pt-BR/version-warning";
 import LowercaseNotePT_BR from "./translations/pt-BR/lowercase-note";
 import TipNPCCallbacksPT_BR from "./translations/pt-BR/npc-callbacks-tip";
+import StaleTranslationWarningPT_BR from "./translations/pt-BR/stale-translation-warning";
 
 import VersionWarnES from "./translations/es/version-warning";
 import LowercaseNoteES from "./translations/es/lowercase-note";
 import TipNPCCallbacksES from "./translations/es/npc-callbacks-tip";
+import StaleTranslationWarningES from "./translations/es/stale-translation-warning";
 
 import VersionWarnZH_CN from "./translations/zh-CN/version-warning";
 import LowercaseNoteZH_CN from "./translations/zh-CN/lowercase-note";
@@ -34,15 +37,18 @@ const templates = {
   VersionWarn,
   LowercaseNote,
   TipNPCCallbacks,
+  StaleTranslationWarning,
   VersionWarnID,
   LowercaseNoteID,
   TipNPCCallbacksID,
   VersionWarnPT: VersionWarnPT_BR,
   LowercaseNotePT: LowercaseNotePT_BR,
   TipNPCCallbacksPT: TipNPCCallbacksPT_BR,
+  StaleTranslationWarningPT: StaleTranslationWarningPT_BR,
   VersionWarnES,
   LowercaseNoteES,
   TipNPCCallbacksES,
+  StaleTranslationWarningES,
   VersionWarnZH_CN,
   LowercaseNoteZH_CN,
   TipNPCCallbacksZH_CN,
