@@ -11,13 +11,13 @@ tags: ["npc", "damage"]
 
 This callback is called when an NPC takes damage from a player or another NPC.
 
-| Name      | Description                                          |
-| --------- | ---------------------------------------------------- |
-| npcid     | The ID of the NPC that took damage                   |
-| issuerid  | The ID of the player/NPC that caused the damage      |
-| amount    | The amount of damage that was taken                  |
-| weaponid  | The weapon ID used to cause the damage               |
-| bodypart  | The [body part](../resources/bodyparts) that was hit |
+| Name            | Description                                          |
+| --------------- | ---------------------------------------------------- |
+| npcid           | The ID of the NPC that took damage                   |
+| issuerid        | The ID of the player/NPC that caused the damage      |
+| Float:amount    | The amount of damage that was taken                  |
+| WEAPON:weaponid | The weapon ID used to cause the damage               |
+| bodypart        | The [body part](../resources/bodyparts) that was hit |
 
 ## Returns
 
