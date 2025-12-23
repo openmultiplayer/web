@@ -15,7 +15,7 @@ tags: ["npc", "伤害"]
 | --------------- | ------------------------------------------ |
 | npcid           | 受到伤害的 NPC 的 ID                       |
 | issuerid        | 造成伤害的玩家/NPC 的 ID                   |
-| Float:damage    | 受到的伤害数量                             |
+| Float:amount    | 受到的伤害数量                             |
 | WEAPON:weaponid | 用于造成伤害的武器 ID                      |
 | bodypart        | 被击中的[身体部位](../resources/bodyparts) |
 
@@ -26,7 +26,7 @@ tags: ["npc", "伤害"]
 ## 示例
 
 ```c
-public OnNPCTakeDamage(npcid, issuerid, Float:damage, WEAPON:weaponid, bodypart)
+public OnNPCTakeDamage(npcid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     // 仅通知追踪此 NPC 的玩家
     for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
@@ -39,12 +39,12 @@ public OnNPCTakeDamage(npcid, issuerid, Float:damage, WEAPON:weaponid, bodypart)
             if (issuerid == INVALID_PLAYER_ID)
             {
                 SendClientMessage(playerid, 0xFF8800FF, "NPC %d 受到 %.1f 点伤害（武器：%d，身体部位：%d）",
-                    npcid, damage, _:weaponid, bodypart);
+                    npcid, amount, _:weaponid, bodypart);
             }
             else
             {
                 SendClientMessage(playerid, 0xFF8800FF, "NPC %d 受到玩家 %d 造成的 %.1f 点伤害（武器：%d，身体部位：%d）",
-                    npcid, damage, issuerid, _:weaponid, bodypart);
+                    npcid, amount, issuerid, _:weaponid, bodypart);
             }
         }
     }
