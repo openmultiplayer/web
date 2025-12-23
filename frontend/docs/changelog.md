@@ -7,7 +7,7 @@ description: open.mp development progress and changelog.
 ## **[v1.5.8.3079](https://github.com/openmultiplayer/open.mp/releases/tag/v1.5.8.3079) (Latest)**
 
 
-We're excited to announce the release of out latest server version!
+We're excited to announce the release of our latest server version!
 
 This update brings several important fixes and introduces a long awaited new feature: **Fully controllable NPCs**!
 
@@ -68,7 +68,7 @@ We’re excited to build what comes next together with the community.
 <details>
 <summary>Click here to expand</summary>
 
-We're excited to announce the release of out latest server version!
+We're excited to announce the release of our latest server version!
 
 This update brings several important fixes and introduces an exciting new feature: **openmp Packet Encryption**.
 
