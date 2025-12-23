@@ -46,7 +46,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-Do note that the players may crash because of odd number of tilde (~) symbols used in the game text. Using color codes (e.g. ~r~) beyond the 255th character may crash the client.
+Do note that the players may crash because of odd number of tilde (~) symbols used in the game text. Using color codes (e.g. `~r~`) beyond the 255th character may crash the client.
 
 :::
 
