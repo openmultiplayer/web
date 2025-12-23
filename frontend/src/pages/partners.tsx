@@ -5,10 +5,8 @@ import { FixedSizeList } from "react-window";
 import LoadingBanner from "../components/LoadingBanner";
 import ServerRow from "../components/ServerRow";
 import { ToastContainer } from "../components/Toast";
-import { API_ADDRESS } from "../constants";
-import { CoreServerData } from "../types";
-
-const API_SERVERS = `${API_ADDRESS}/servers/`;
+import { API_SERVERS } from "../constants";
+import { CoreServerData, Stats, SortBy } from "../types";
 
 import { renderToStaticMarkup } from "react-dom/server";
 
@@ -28,17 +26,10 @@ const getServers = async () => {
   }
 };
 
-type Stats = {
-  players: number;
-  servers: number;
-};
-
 const getStats = (servers: CoreServerData[]): Stats => ({
   players: servers.map((s) => s.pc).reduce((acc, pc) => acc + pc, 0),
   servers: servers.length,
 });
-
-type SortBy = "relevance" | "pc";
 
 type Query = {
   search?: string;

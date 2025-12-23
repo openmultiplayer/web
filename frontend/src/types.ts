@@ -23,3 +23,10 @@ export interface ServerAllData {
   lastUpdated: string;
   lastActive?: string;
 }
+
+export type Stats = {
+  players: number;
+  servers: number;
+};
+
+export type SortBy = "relevance" | "pc";

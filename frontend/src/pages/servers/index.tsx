@@ -11,11 +11,9 @@ import { FixedSizeList } from "react-window";
 import LoadingBanner from "../../components/LoadingBanner";
 import ServerRow from "../../components/ServerRow";
 import { showToast, ToastContainer } from "../../components/Toast";
-import { API_ADDRESS } from "../../constants";
-import { CoreServerData, ServerAllData } from "../../types";
+import { API_SERVERS } from "../../constants";
+import { CoreServerData, ServerAllData, SortBy, Stats } from "../../types";
 import ServerInfoPage from "../../components/ServerInfoPage";
-
-const API_SERVERS = `${API_ADDRESS}/servers/`;
 
 const getServers = async () => {
   try {
@@ -27,17 +25,10 @@ const getServers = async () => {
   }
 };
 
-type Stats = {
-  players: number;
-  servers: number;
-};
-
 const getStats = (servers: CoreServerData[]): Stats => ({
   players: servers.map((s) => s.pc).reduce((acc, pc) => acc + pc, 0),
   servers: servers.length,
 });
-
-type SortBy = "relevance" | "pc";
 
 type Query = {
   search?: string;

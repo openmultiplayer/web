@@ -1,12 +1,12 @@
 import LoadingBanner from "@site/src/components/LoadingBanner";
-import { API_ADDRESS } from "@site/src/constants";
 import { ServerAllData } from "@site/src/types";
 import Layout from "@theme/Layout";
 import Translate from "@docusaurus/Translate";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { API_SERVERS } from "@site/src/constants.ts";
 
-const API_SERVER = (ip: string) => `${API_ADDRESS}/servers/${ip}`;
+const API_SERVER = (ip: string) => `${API_SERVERS}${ip}`;
 
 const getServer = async (ip: string): Promise<ServerAllData | undefined> => {
   try {
