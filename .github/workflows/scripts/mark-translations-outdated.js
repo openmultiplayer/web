@@ -3,39 +3,14 @@
 const fs = require('fs');
 const path = require('path');
 
-const WARNING_BANNERS = {
-  'es': `:::warning La traducción puede estar desactualizada
-La versión en inglés de este documento se actualizó recientemente. Es posible que esta traducción aún no refleje esos cambios.
-
-¡Ayuda a mantener nuestras traducciones actualizadas! Si hablas este idioma con fluidez, considera revisar la [versión en inglés](ENGLISH_DOC_LINK) y actualizar esta traducción.
-:::
-
-`,
-  'pt-BR': `:::warning A tradução pode estar desatualizada
-A versão em inglês deste documento foi atualizada recentemente. Esta tradução pode não refletir essas alterações ainda.
-
-Ajude-nos a manter nossas traduções atualizadas! Se você é fluente neste idioma, considere revisar a [versão em inglês](ENGLISH_DOC_LINK) e atualizar esta tradução.
-:::
-
-`,
-  'ru': `:::warning Этот перевод может быть устаревшим.
-Английская версия этой статьи была недавно обновлена. Данный перевод может всё ещё не отражать эти изменения.
-
-Помогите нам поддерживать актуальность переводов! Если вы свободно владеете английским языком, пожалуйста, рассмотрите возможность проверки [английской версии](ENGLISH_DOC_LINK) и обновления этого перевода.
-:::
-
-`,
+const WARNING_COMPONENTS = {
+  'es': 'StaleTranslationWarningES',
+  'pt-BR': 'StaleTranslationWarningPT',
 };
 
-const DEFAULT_WARNING = `:::warning Translation May Be Outdated
-The English version of this document was recently updated. This translation may not reflect those changes yet.
+const DEFAULT_WARNING_COMPONENT = 'StaleTranslationWarning';
 
-Please help keep our translations up to date! If you're fluent in this language, consider reviewing the [English version](ENGLISH_DOC_LINK) and updating this translation.
-:::
-
-`;
-
-const WARNING_MARKER = ':::warning';
+const WARNING_MARKER = '<StaleTranslationWarning';
 
 const changedFilesPath = path.join(process.cwd(), 'changed_english_docs.txt');
 if (!fs.existsSync(changedFilesPath)) {
@@ -105,8 +80,8 @@ changedEnglishDocs.forEach(englishDocPath => {
       }
     }
 
-    const warningBanner = WARNING_BANNERS[lang] || DEFAULT_WARNING;
-    const warningWithLink = warningBanner.replace('ENGLISH_DOC_LINK', englishDocLink);
+    const componentName = WARNING_COMPONENTS[lang] || DEFAULT_WARNING_COMPONENT;
+    const warningWithLink = `<${componentName} englishDocLink="${englishDocLink}" />\n\n`;
 
     let updatedContent;
     if (frontmatterEnd > 0) {
