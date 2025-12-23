@@ -11,15 +11,15 @@ tags: ["npc", "weapon", "shooting"]
 
 This callback is called when an NPC fires a weapon.
 
-| Name     | Description                                |
-| -------- | ------------------------------------------ |
-| npcid    | The ID of the NPC that fired the weapon    |
-| weaponid | The weapon ID that was fired               |
-| hittype  | The type of entity that was hit (if any)   |
-| hitid    | The ID of the entity that was hit (if any) |
-| fX       | The X coordinate where the bullet hit      |
-| fY       | The Y coordinate where the bullet hit      |
-| fZ       | The Z coordinate where the bullet hit      |
+| Name                    | Description                                |
+| ----------------------- | ------------------------------------------ |
+| npcid                   | The ID of the NPC that fired the weapon    |
+| WEAPON:weaponid         | The weapon ID that was fired               |
+| BULLET_HIT_TYPE:hittype | The type of entity that was hit (if any)   |
+| hitid                   | The ID of the entity that was hit (if any) |
+| Float:fX                | The X coordinate where the bullet hit      |
+| Float:fY                | The Y coordinate where the bullet hit      |
+| Float:fZ                | The Z coordinate where the bullet hit      |
 
 ## Returns
 
