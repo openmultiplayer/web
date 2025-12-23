@@ -1,3 +1,9 @@
+// When adding a new language translation component:
+// 1. Create the component file in translations/{lang}/{component-name}.tsx
+// 2. Import it below with the other language-specific imports
+// 3. Add it to the templates object export
+// 4. For StaleTranslationWarning components, also add the mapping in .github/workflows/scripts/mark-translations-outdated.js
+
 import VersionWarn from "./version-warning";
 import LowercaseNote from "./lowercase-note";
 import TipNPCCallbacks from "./npc-callbacks-tip";
@@ -33,6 +39,8 @@ import VersionWarnSR from "./translations/sr/version-warning";
 import LowercaseNoteSR from "./translations/sr/lowercase-note";
 import TipNPCCallbacksSR from "./translations/sr/npc-callbacks-tip";
 
+import StaleTranslationWarningRU from "./translations/ru/stale-translation-warning";
+
 const templates = {
   VersionWarn,
   LowercaseNote,
@@ -61,6 +69,7 @@ const templates = {
   VersionWarnSR,
   LowercaseNoteSR,
   TipNPCCallbacksSR,
+  StaleTranslationWarningRU,
 };
 
 export default templates;

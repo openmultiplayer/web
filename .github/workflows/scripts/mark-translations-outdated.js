@@ -3,9 +3,12 @@
 const fs = require('fs');
 const path = require('path');
 
+// Map language codes to their StaleTranslationWarning component names
+// When adding a new language, add the mapping here AND in frontend/src/components/templates/index.ts
 const WARNING_COMPONENTS = {
   'es': 'StaleTranslationWarningES',
   'pt-BR': 'StaleTranslationWarningPT',
+  'ru': 'StaleTranslationWarningRU',
 };
 
 const DEFAULT_WARNING_COMPONENT = 'StaleTranslationWarning';
