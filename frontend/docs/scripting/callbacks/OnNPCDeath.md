@@ -11,11 +11,11 @@ tags: ["npc"]
 
 This callback is called when an NPC dies.
 
-| Name     | Description                                                                 |
-| -------- | --------------------------------------------------------------------------- |
-| npcid    | The ID of the NPC that died                                                 |
-| killerid | The ID of the player/NPC that killed the NPC (or INVALID_PLAYER_ID if none) |
-| reason   | The reason for death (weapon ID or death cause)                             |
+| Name          | Description                                                                 |
+| ------------- | --------------------------------------------------------------------------- |
+| npcid         | The ID of the NPC that died                                                 |
+| killerid      | The ID of the player/NPC that killed the NPC (or INVALID_PLAYER_ID if none) |
+| WEAPON:reason | The reason for death (weapon ID or death cause)                             |
 
 ## Examples
 
