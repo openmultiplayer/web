@@ -2,8 +2,7 @@
 title: db_get_field_assoc_int
 sidebar_label: db_get_field_assoc_int
 description: محتویات فیلد را به صورت عدد صحیح با نام فیلد مشخص شده دریافت می کند.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

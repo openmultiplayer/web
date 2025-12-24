@@ -33,7 +33,7 @@ description: 参与SA-MP Wiki与open.mp文档贡献的完整指南
 克隆仓库至本地：
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 推荐使用 Visual Studio Code 编辑，安装以下扩展提升效率：

@@ -2,11 +2,16 @@
 title: db_get_field_int
 sidebar_label: db_get_field_int
 description: Get the content of a field as an integer from db_query.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
+
+:::warning
+
+This function is deprecated. Please see [DB_GetFieldInt](DB_GetFieldInt).
+
+:::
 
 ## Description
 

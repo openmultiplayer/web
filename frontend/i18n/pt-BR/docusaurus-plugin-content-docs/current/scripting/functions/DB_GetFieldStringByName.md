@@ -3,8 +3,6 @@
 title: DB_GetFieldStringByName
 sidebar_label: DB_GetFieldStringByName
 description: Obtém o conteúdo do campo como string pelo nome do campo.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 
 ---

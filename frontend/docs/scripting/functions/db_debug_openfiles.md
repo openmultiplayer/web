@@ -2,18 +2,20 @@
 title: db_debug_openfiles
 sidebar_label: db_debug_openfiles
 description: Gets the number of open database connections for debugging purposes.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
 
+:::warning
+
+This function is deprecated. Please see [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount).
+
+:::
+
 ## Description
 
 The function gets the number of open database connections for debugging purposes.
-
-| Name | Description |
-| ---- | ----------- |
 
 ## Related Functions
 

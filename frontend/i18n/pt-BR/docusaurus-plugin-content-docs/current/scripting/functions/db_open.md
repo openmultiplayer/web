@@ -2,8 +2,6 @@
 title: db_open
 sidebar_label: db_open
 description: A função é usada para abrir uma conexão com um arquivo de banco de dados SQLite, que está dentro da pasta `../scriptfiles`.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

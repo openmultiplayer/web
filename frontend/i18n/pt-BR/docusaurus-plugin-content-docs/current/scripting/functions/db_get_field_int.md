@@ -2,8 +2,6 @@
 title: db_get_field_int
 sidebar_label: db_get_field_int
 description: Obtém o conteúdo de um campo como um inteiro de db_query.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

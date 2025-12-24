@@ -2,11 +2,16 @@
 title: db_get_field_assoc_int
 sidebar_label: db_get_field_assoc_int
 description: Gets the contents of the field as an integer with the specified field name.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
+
+:::warning
+
+This function is deprecated. Please see [DB_GetFieldIntByName](DB_GetFieldIntByName).
+
+:::
 
 ## Description
 

@@ -2,8 +2,7 @@
 title: db_get_result_mem_handle
 sidebar_label: db_get_result_mem_handle
 description: Dobiva memorijski upravitelj za vezu SQLite databaze koja je dodijeljena sa s `db_query`.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

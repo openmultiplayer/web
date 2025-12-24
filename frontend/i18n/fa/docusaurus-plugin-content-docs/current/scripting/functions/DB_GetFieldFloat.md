@@ -2,8 +2,6 @@
 title: DB_GetFieldFloat
 sidebar_label: DB_GetFieldFloat
 description: محتوای یک فیلد رو به عنوان یک عدد اعشاری با ایندکس فیلد مشخص شده دریافت می‌کند.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

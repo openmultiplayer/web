@@ -2,8 +2,6 @@
 title: DB_ExecuteQuery
 sidebar_label: DB_ExecuteQuery
 description: این تابع برای اجرای درخواست SQL روی پایگاه داده SQLite باز شده استفاده می شود.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

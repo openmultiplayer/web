@@ -2,11 +2,16 @@
 title: db_num_fields
 sidebar_label: db_num_fields
 description: Gets the number of fields from the specified result set allocated with `db_query`.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
+
+:::warning
+
+This function is deprecated. Please see [DB_GetFieldCount](DB_GetFieldCount).
+
+:::
 
 ## Description
 

@@ -2,8 +2,6 @@
 title: DB_GetFieldFloatByName
 sidebar_label: DB_GetFieldFloatByName
 description: محتوای فیلد رو به صورت عدد اعشاری با نام فیلد مشخص شده دریافت می‌کنه.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

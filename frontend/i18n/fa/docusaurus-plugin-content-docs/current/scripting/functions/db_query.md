@@ -2,8 +2,7 @@
 title: db_query
 sidebar_label: db_query
 description: این تابع برای اجرای یک کوئری SQL روی پایگاه داده SQLite باز شده استفاده می‌شود.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

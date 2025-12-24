@@ -2,8 +2,7 @@
 title: db_free_result
 sidebar_label: db_free_result
 description: Oslobađa memoriju rezultata dodijeljenu iz db_query.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

@@ -2,11 +2,16 @@
 title: db_num_rows
 sidebar_label: db_num_rows
 description: Returns the number of rows from a db_query.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
+
+:::warning
+
+This function is deprecated. Please see [DB_GetRowCount](DB_GetRowCount).
+
+:::
 
 ## Description
 

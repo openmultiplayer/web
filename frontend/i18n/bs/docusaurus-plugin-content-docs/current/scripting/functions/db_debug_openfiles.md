@@ -2,8 +2,7 @@
 title: db_debug_openfiles
 sidebar_label: db_debug_openfiles
 description: Dobiva broj otvorenih konekcija/veza databaza u svrhu otklanjanja pogrešaka.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

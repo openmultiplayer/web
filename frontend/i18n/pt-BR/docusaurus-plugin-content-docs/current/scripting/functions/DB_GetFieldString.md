@@ -3,8 +3,6 @@
 title: DB_GetFieldString
 sidebar_label: DB_GetFieldString
 description: Obtém o conteúdo de um campo a partir de DB_ExecuteQuery.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 
 ---

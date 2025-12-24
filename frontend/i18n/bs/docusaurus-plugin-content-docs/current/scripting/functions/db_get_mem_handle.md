@@ -2,8 +2,7 @@
 title: db_get_mem_handle
 sidebar_label: db_get_mem_handle
 description: Dobiva memorijski upravitelj za vezu SQLite databaze koja je otvorena s `db_open`.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

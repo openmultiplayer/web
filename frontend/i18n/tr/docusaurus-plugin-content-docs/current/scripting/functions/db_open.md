@@ -2,8 +2,7 @@
 title: db_open
 sidebar_label: db_open
 description: The function is used to open a connection to a SQLite database file, which is inside the `/scriptfiles` folder.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNoteTR />

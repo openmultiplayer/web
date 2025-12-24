@@ -2,11 +2,16 @@
 title: db_get_field_float
 sidebar_label: db_get_field_float
 description: Gets the content of a field as a floating point number with the specified field index.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
+
+:::warning
+
+This function is deprecated. Please see [DB_GetFieldFloat](DB_GetFieldFloat).
+
+:::
 
 ## Description
 

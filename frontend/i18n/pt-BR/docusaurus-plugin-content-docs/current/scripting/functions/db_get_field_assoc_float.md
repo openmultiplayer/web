@@ -2,8 +2,6 @@
 title: db_get_field_assoc_float
 sidebar_label: db_get_field_assoc_float
 description: Obtém o conteúdo do campo como um número de ponto flutuante com o nome do campo especificado.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

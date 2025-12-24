@@ -2,8 +2,6 @@
 title: DB_GetFieldCount
 sidebar_label: DB_GetFieldCount
 description: Obtém o número de campos do conjunto de resultados especificado alocado com `DB_ExecuteQuery`.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

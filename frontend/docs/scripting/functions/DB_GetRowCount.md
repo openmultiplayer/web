@@ -2,8 +2,6 @@
 title: DB_GetRowCount
 sidebar_label: DB_GetRowCount
 description: Returns the number of rows from a DB_ExecuteQuery.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

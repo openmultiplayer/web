@@ -2,8 +2,7 @@
 title: db_get_field_int
 sidebar_label: db_get_field_int
 description: Dobijte sadržaj polja kao cijeli broj iz db_query.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

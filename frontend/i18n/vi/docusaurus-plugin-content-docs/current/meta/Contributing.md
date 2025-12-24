@@ -40,7 +40,7 @@ Khi xong, nhấn "Đề xuất tệp mới" và một Pull Request sẽ được
 Nếu bạn muốn sử dụng Git, tất cả những gì bạn cần làm là sao chép kho Wiki bằng cách sử dụng:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Mở nó trong trình soạn thảo yêu thích của bạn. Tôi khuyến nghị Visual Studio Code vì nó có một số công cụ tuyệt vời để chỉnh sửa và định dạng các tệp Markdown. Như bạn thấy, tôi đang viết cái này bằng Visual Studio Code!

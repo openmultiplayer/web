@@ -2,11 +2,16 @@
 title: db_free_result
 sidebar_label: db_free_result
 description: Frees result memory allocated from db_query.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
+
+:::warning
+
+This function is deprecated. Please see [DB_FreeResultSet](DB_FreeResultSet).
+
+:::
 
 ## Description
 

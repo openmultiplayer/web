@@ -37,7 +37,7 @@ Miután ez megtörtént, nyomd meg a "Propose new file" ("Új fájl javaslata") 
 Ha használni szeretnéd a Git programot, akkor csak annyit kell tenned, hogy klónozod a Wiki-tárat:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Nyisd meg a kedvenc szerkesztődben. Én ajánlom a Visual Studio Code-t, mivel remek eszközökkel rendelkezik a Markdown fájlok szerkesztésére és formázására. Amint láthatod, ezt a Visual Studio Code segítségével írom!

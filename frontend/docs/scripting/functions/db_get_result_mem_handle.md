@@ -2,13 +2,18 @@
 title: db_get_result_mem_handle
 sidebar_label: db_get_result_mem_handle
 description: Gets the memory handle for a SQLite database result set that was allocated with `db_query`.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
 
 <VersionWarn version='SA-MP 0.3.7 R1' />
+
+:::warning
+
+This function is deprecated. Please see [DB_GetLegacyDBResult](DB_GetLegacyDBResult).
+
+:::
 
 ## Description
 

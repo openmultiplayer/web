@@ -2,8 +2,6 @@
 title: DB_GetDatabaseConnectionCount
 sidebar_label: DB_GetDatabaseConnectionCount
 description: Obtém o número de conexões de banco de dados abertas para fins de depuração.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

@@ -2,8 +2,6 @@
 title: DB_FreeResultSet
 sidebar_label: DB_FreeResultSet
 description: Libera a memória do resultado alocada de DB_ExecuteQuery.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

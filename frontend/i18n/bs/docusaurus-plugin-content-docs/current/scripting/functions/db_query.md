@@ -2,8 +2,7 @@
 title: db_query
 sidebar_label: db_query
 description: Funkcija se koristi za izvršavanje SQL upita na otvorenoj bazi podataka SQLite.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

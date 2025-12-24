@@ -38,7 +38,7 @@ Dopo aver concluso, clicca su "Propose new file" e una Pull Request verrà apert
 Se vuoi usare Git, tutto quello che devi fare è clonare la repository della Wiki con la bash:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Ora potrai aprire la repository nel tuo editor di testo preferito. Raccomando personalmente Visual Studio Code dato che ha degli ottimi tools per editare e formattare i file Markdown. Come puoi vedere, sto scrivendo questa documentazione usando Visual Studio Code!

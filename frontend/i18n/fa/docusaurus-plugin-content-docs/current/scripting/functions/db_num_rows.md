@@ -2,8 +2,7 @@
 title: db_num_rows
 sidebar_label: db_num_rows
 description: تعداد ردیف‌های موجود در نتیجه‌ای که از db_query برگردونده شده رو می‌گیره.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

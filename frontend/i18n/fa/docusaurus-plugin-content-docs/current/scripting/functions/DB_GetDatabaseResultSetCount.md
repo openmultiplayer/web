@@ -2,8 +2,6 @@
 title: DB_GetDatabaseResultSetCount
 sidebar_label: DB_GetDatabaseResultSetCount
 description: تعداد نتایج باز پایگاه داده را دریافت می کند
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

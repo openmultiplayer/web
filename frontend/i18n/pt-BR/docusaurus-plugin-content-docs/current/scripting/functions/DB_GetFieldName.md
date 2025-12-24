@@ -3,8 +3,6 @@
 title: DB_GetFieldName
 sidebar_label: DB_GetFieldName
 description: Retorna o nome do campo no índice especificado.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 
 ---

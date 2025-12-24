@@ -2,8 +2,7 @@
 title: db_get_field_assoc_float
 sidebar_label: db_get_field_assoc_float
 description: Dobiva sadržaj polja kao float broj s navedenim imenom polja.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

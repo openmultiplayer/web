@@ -2,8 +2,7 @@
 title: db_field_name
 sidebar_label: db_field_name
 description: نام فیلد در شاخص مشخص شده را برمی گرداند.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

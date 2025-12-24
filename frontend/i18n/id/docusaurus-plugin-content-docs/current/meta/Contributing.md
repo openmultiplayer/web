@@ -39,7 +39,7 @@ Setelah selesai, tekan "Propose new file" dan sebuah Pull Request akan terbuka u
 Jika Anda ingin menggunakan Git, yang Anda harus lakukan adalah _clone_ _repository_ Wiki dengan:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Buka dengan editor favorit Anda. Saya merekomendasikan Visual Studio Code karena memiliki peralatan yang bagus untuk menyunting dan _formatting_ _file_ Markdown. Yang Anda lihat, saya sedang menulis ini menggunakan Visual Studio Code!

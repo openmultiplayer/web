@@ -2,8 +2,7 @@
 title: db_open
 sidebar_label: db_open
 description: Funkcija se koristi za otvaranje veze s datotekom baze podataka SQLite, koja se nalazi u folderu `/scriptfiles`.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

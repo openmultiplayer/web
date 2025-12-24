@@ -2,8 +2,6 @@
 title: DB_GetLegacyDBResult
 sidebar_label: DB_GetLegacyDBResult
 description: Gets the memory handle for a SQLite database result set that was allocated with `DB_ExecuteQuery`.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

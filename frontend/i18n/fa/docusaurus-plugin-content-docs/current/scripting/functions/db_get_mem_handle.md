@@ -2,8 +2,7 @@
 title: db_get_mem_handle
 sidebar_label: db_get_mem_handle
 description: handle حافظه برای اتصال پایگاه داده SQLite که با `db_open` باز شده رو دریافت می‌کنه.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

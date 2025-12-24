@@ -2,18 +2,20 @@
 title: db_debug_openresults
 sidebar_label: db_debug_openresults
 description: Gets the number of open database results
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />
 
+:::warning
+
+This function is deprecated. Please see [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount).
+
+:::
+
 ## Description
 
 The function gets the number of open database results.
-
-| Name | Description |
-| ---- | ----------- |
 
 ## Related Functions
 

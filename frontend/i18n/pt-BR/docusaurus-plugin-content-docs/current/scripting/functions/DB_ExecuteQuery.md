@@ -2,8 +2,6 @@
 title: DB_ExecuteQuery
 sidebar_label: DB_ExecuteQuery
 description: A função é usada para executar uma consulta SQL em um banco de dados SQLite aberto.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

@@ -2,8 +2,6 @@
 title: DB_GetFieldIntByName
 sidebar_label: DB_GetFieldIntByName
 description: محتوای یک فیلد رو به عنوان یک عدد صحیح با نام فیلد مشخص شده دریافت می‌کند.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

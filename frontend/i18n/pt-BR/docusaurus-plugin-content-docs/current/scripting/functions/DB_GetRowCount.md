@@ -3,8 +3,6 @@
 title: DB_GetRowCount
 sidebar_label: DB_GetRowCount
 description: Retorna o número de linhas de um resultado obtido com DB_ExecuteQuery.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 
 ---

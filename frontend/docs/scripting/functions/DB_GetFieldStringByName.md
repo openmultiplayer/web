@@ -2,8 +2,6 @@
 title: DB_GetFieldStringByName
 sidebar_label: DB_GetFieldStringByName
 description: Gets the contents of the field as a string with the specified field name.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
