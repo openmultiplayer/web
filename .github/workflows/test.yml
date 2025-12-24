@@ -1,0 +1,26 @@
+name: Test
+
+on:
+  pull_request:
+    paths-ignore:
+      - "docs/**"
+      - "frontend/**"
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-go@v2
+        with:
+          go-version: "1.17.2"
+      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: arduino/setup-task@v1
+      - run: go mod download
+      - run: task generate
+
+      - name: Test
+        run: go test -v ./app/...
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
