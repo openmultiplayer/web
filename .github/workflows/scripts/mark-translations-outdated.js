@@ -9,6 +9,7 @@ const WARNING_COMPONENTS = {
   'es': 'StaleTranslationWarningES',
   'pt-BR': 'StaleTranslationWarningPT',
   'ru': 'StaleTranslationWarningRU',
+  'fr': 'StaleTranslationWarningFR',
 };
 
 const DEFAULT_WARNING_COMPONENT = 'StaleTranslationWarning';

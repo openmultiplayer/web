@@ -41,6 +41,8 @@ import TipNPCCallbacksSR from "./translations/sr/npc-callbacks-tip";
 
 import StaleTranslationWarningRU from "./translations/ru/stale-translation-warning";
 
+import StaleTranslationWarningFR from "./translations/fr/stale-translation-warning";
+
 const templates = {
   VersionWarn,
   LowercaseNote,
@@ -70,6 +72,7 @@ const templates = {
   LowercaseNoteSR,
   TipNPCCallbacksSR,
   StaleTranslationWarningRU,
+  StaleTranslationWarningFR,
 };
 
 export default templates;
