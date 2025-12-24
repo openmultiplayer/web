@@ -7,6 +7,12 @@ tags: ["sqlite"]
 
 <LowercaseNote />
 
+:::warning
+
+This function is deprecated. Please see [DB_GetFieldInt](DB_GetFieldInt).
+
+:::
+
 ## Description
 
 Get the content of a field as an integer from db_query

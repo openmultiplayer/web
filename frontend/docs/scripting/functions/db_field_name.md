@@ -7,6 +7,12 @@ tags: ["sqlite"]
 
 <LowercaseNote />
 
+:::warning
+
+This function is deprecated. Please see [DB_GetFieldName](DB_GetFieldName).
+
+:::
+
 ## Description
 
 Returns the name of a field at a particular index.

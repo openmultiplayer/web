@@ -7,6 +7,12 @@ tags: ["sqlite"]
 
 <LowercaseNote />
 
+:::warning
+
+This function is deprecated. Please see [DB_GetFieldStringByName](DB_GetFieldStringByName).
+
+:::
+
 ## Description
 
 Get the contents of field with specified name.

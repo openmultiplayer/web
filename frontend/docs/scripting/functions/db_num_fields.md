@@ -7,6 +7,12 @@ tags: ["sqlite"]
 
 <LowercaseNote />
 
+:::warning
+
+This function is deprecated. Please see [DB_GetFieldCount](DB_GetFieldCount).
+
+:::
+
 ## Description
 
 The function gets the number of fields from the specified result set allocated with [db_query](db_query).

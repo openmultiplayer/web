@@ -7,6 +7,12 @@ tags: ["sqlite"]
 
 <LowercaseNote />
 
+:::warning
+
+This function is deprecated. Please see [DB_FreeResultSet](DB_FreeResultSet).
+
+:::
+
 ## Description
 
 Frees result memory allocated from db_query.

@@ -9,6 +9,12 @@ tags: ["sqlite"]
 
 <VersionWarn version='SA-MP 0.3.7 R1' />
 
+:::warning
+
+This function is deprecated. Please see [DB_GetLegacyDBResult](DB_GetLegacyDBResult).
+
+:::
+
 ## Description
 
 The function gets the memory handle for a SQLite database result set that was allocated with [db_query](db_query).

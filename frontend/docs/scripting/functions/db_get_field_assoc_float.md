@@ -7,6 +7,12 @@ tags: ["sqlite"]
 
 <LowercaseNote />
 
+:::warning
+
+This function is deprecated. Please see [DB_GetFieldFloatByName](DB_GetFieldFloatByName).
+
+:::
+
 ## Description
 
 The function gets the contents of the field as a floating point number from the specified field name.
