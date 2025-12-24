@@ -3,8 +3,6 @@
 title: db_next_row
 sidebar_label: db_next_row
 description: Avança para a próxima linha do conjunto de resultados obtido com `db_query`.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 
 ---

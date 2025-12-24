@@ -2,8 +2,6 @@
 title: DB_GetLegacyDBResult
 sidebar_label: DB_GetLegacyDBResult
 description: handle حافظه برای نتیجه پایگاه داده SQLite که با `DB_ExecuteQuery` اختصاص داده شده رو دریافت می‌کنه.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

@@ -2,8 +2,7 @@
 title: db_debug_openresults
 sidebar_label: db_debug_openresults
 description: تعداد نتایج باز پایگاه داده را دریافت می کند
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

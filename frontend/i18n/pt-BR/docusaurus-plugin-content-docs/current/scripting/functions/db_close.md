@@ -2,8 +2,6 @@
 title: db_close
 sidebar_label: db_close
 description: Fecha uma conexão de banco de dados SQLite que foi aberta com `db_open`.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

@@ -2,8 +2,7 @@
 title: db_field_name
 sidebar_label: db_field_name
 description: Vraća ime polja u navedenom indeksu.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

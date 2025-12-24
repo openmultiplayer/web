@@ -2,8 +2,7 @@
 title: db_next_row
 sidebar_label: db_next_row
 description: به ردیف بعدی در نتیجه‌ای که از db_query برگردونده شده میره.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

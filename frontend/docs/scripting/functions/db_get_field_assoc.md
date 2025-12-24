@@ -2,8 +2,7 @@
 title: db_get_field_assoc
 sidebar_label: db_get_field_assoc
 description: Gets the contents of the field as a string with the specified field name.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

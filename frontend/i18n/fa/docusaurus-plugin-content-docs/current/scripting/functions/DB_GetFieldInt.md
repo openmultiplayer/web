@@ -2,8 +2,6 @@
 title: DB_GetFieldInt
 sidebar_label: DB_GetFieldInt
 description: محتوای یک فیلد رو به عنوان یک عدد صحیح از DB_ExecuteQuery دریافت کنید.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

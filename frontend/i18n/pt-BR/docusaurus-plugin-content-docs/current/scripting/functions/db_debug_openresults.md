@@ -2,8 +2,6 @@
 title: db_debug_openresults
 sidebar_label: db_debug_openresults
 description: Obtém o número de resultados de banco de dados abertos
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

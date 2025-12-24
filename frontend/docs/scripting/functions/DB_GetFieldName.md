@@ -2,8 +2,6 @@
 title: DB_GetFieldName
 sidebar_label: DB_GetFieldName
 description: Returns the name of the field at the specified index.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

@@ -2,8 +2,7 @@
 title: db_get_field_float
 sidebar_label: db_get_field_float
 description: محتوای یک فیلد رو به صورت عدد اعشاری با ایندکس فیلد مشخص شده دریافت می‌کنه.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

@@ -2,8 +2,7 @@
 title: db_query
 sidebar_label: db_query
 description: The function is used to execute an SQL query on an opened SQLite database.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

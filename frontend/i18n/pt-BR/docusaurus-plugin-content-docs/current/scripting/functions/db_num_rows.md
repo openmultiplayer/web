@@ -3,8 +3,6 @@
 title: db_num_rows
 sidebar_label: db_num_rows
 description: Retorna o número de linhas de um resultado obtido com `db_query`.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

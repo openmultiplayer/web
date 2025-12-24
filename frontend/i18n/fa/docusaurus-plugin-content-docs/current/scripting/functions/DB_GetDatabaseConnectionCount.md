@@ -2,8 +2,6 @@
 title: DB_GetDatabaseConnectionCount
 sidebar_label: DB_GetDatabaseConnectionCount
 description: تعداد اتصالات باز پایگاه داده را برای اهداف عیب یابی دریافت می کند.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

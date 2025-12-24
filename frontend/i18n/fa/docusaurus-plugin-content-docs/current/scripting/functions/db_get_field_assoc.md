@@ -2,8 +2,7 @@
 title: db_get_field_assoc
 sidebar_label: db_get_field_assoc
 description: محتویات فیلد را به صورت رشته با نام فیلد مشخص شده دریافت می کند.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

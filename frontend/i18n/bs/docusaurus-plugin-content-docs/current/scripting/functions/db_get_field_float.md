@@ -2,8 +2,7 @@
 title: db_get_field_float
 sidebar_label: db_get_field_float
 description: Dobiva sadržaj polja kao float broj s navedenim indeksom polja.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 :::warning

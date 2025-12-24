@@ -2,8 +2,6 @@
 title: DB_GetRowCount
 sidebar_label: DB_GetRowCount
 description: تعداد ردیف‌های موجود در یک نتیجه پایگاه داده رو می‌گیره.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

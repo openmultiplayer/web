@@ -3,8 +3,6 @@
 title: DB_SelectNextRow
 sidebar_label: DB_SelectNextRow
 description: Avança para a próxima linha do conjunto de resultados obtido com `DB_ExecuteQuery`.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 
 ---

@@ -2,8 +2,6 @@
 title: DB_GetMemHandle
 sidebar_label: DB_GetMemHandle
 description: Gets the memory handle for a SQLite database connection that was opened with `DB_Open`.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

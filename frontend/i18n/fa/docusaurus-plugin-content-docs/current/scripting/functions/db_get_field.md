@@ -2,8 +2,7 @@
 title: db_get_field
 sidebar_label: db_get_field
 description: محتوای یک فیلد رو از db_query دریافت کنید.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

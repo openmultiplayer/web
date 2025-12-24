@@ -3,8 +3,6 @@
 title: DB_GetFieldFloatByName
 sidebar_label: DB_GetFieldFloatByName
 description: Obtém o conteúdo de um campo como um número de ponto flutuante com o nome do campo especificado.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 
 ---

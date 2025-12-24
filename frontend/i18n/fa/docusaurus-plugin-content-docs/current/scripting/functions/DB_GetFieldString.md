@@ -2,8 +2,6 @@
 title: DB_GetFieldString
 sidebar_label: DB_GetFieldString
 description: محتوای یک فیلد رو از DB_ExecuteQuery دریافت کنید.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

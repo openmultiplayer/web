@@ -2,8 +2,6 @@
 title: DB_GetFieldName
 sidebar_label: DB_GetFieldName
 description: نام فیلد در ایندکس مشخص شده رو برمی‌گردونه.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

@@ -2,8 +2,6 @@
 title: db_get_field
 sidebar_label: db_get_field
 description: Obtém o conteúdo de um campo de db_query.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

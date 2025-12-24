@@ -2,8 +2,7 @@
 title: db_get_mem_handle
 sidebar_label: db_get_mem_handle
 description: Gets the memory handle for a SQLite database connection that was opened with `db_open`.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

@@ -2,8 +2,7 @@
 title: db_debug_openfiles
 sidebar_label: db_debug_openfiles
 description: تعداد اتصالات باز پایگاه داده را برای اهداف عیب یابی دریافت می کند.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

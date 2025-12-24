@@ -2,8 +2,7 @@
 title: db_num_fields
 sidebar_label: db_num_fields
 description: تعداد فیلدهای موجود در نتیجه‌ای که از db_query برگردونده شده رو می‌گیره.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

@@ -2,8 +2,6 @@
 title: db_free_result
 sidebar_label: db_free_result
 description: Libera a memória do resultado alocada de db_query.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

@@ -2,8 +2,6 @@
 title: DB_GetFieldFloat
 sidebar_label: DB_GetFieldFloat
 description: Gets the content of a field as a floating point number with the specified field index.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

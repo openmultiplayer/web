@@ -2,8 +2,7 @@
 title: db_free_result
 sidebar_label: db_free_result
 description: حافظه نتیجه تخصیص یافته از db_query را آزاد می کند.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

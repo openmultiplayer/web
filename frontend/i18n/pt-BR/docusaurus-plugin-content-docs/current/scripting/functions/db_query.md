@@ -3,8 +3,6 @@
 title: db_query
 sidebar_label: db_query
 description: Executa uma consulta SQL numa base de dados SQLite já aberta.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 
 ---

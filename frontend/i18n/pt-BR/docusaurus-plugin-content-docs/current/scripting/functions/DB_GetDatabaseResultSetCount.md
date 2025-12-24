@@ -2,8 +2,6 @@
 title: DB_GetDatabaseResultSetCount
 sidebar_label: DB_GetDatabaseResultSetCount
 description: Obtém o número de resultados de banco de dados abertos
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

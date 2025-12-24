@@ -2,8 +2,6 @@
 title: db_open
 sidebar_label: db_open
 description: این تابع برای باز کردن اتصال به فایل پایگاه داده SQLite که در پوشه `/scriptfiles` قرار دارد استفاده می‌شود.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 

@@ -2,8 +2,7 @@
 title: db_get_field_int
 sidebar_label: db_get_field_int
 description: محتوای یک فیلد رو به عنوان یک عدد صحیح از db_query دریافت کنید.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

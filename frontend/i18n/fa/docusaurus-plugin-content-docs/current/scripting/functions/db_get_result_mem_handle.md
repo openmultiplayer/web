@@ -2,8 +2,7 @@
 title: db_get_result_mem_handle
 sidebar_label: db_get_result_mem_handle
 description: memory handle مربوط به نتیجه پایگاه داده SQLite که با `db_query` اختصاص داده شده رو می‌گیره.
-keywords:
-  - sqlite
+tags: ["sqlite"]
 ---
 
 <LowercaseNote />

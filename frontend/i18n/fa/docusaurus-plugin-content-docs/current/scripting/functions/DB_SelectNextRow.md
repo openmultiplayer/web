@@ -2,8 +2,6 @@
 title: DB_SelectNextRow
 sidebar_label: DB_SelectNextRow
 description: به ردیف بعدی مجموعه نتایج تخصیص یافته با `DB_ExecuteQuery` حرکت می‌کند.
-keywords:
-  - sqlite
 tags: ["sqlite"]
 ---
 
