@@ -39,7 +39,7 @@ Bu aşamalar bittikten sonra "Propose new file" tuşuna basarsanız "Pull Reques
 Eğer Git'i kullanmak istiyorsanız, tek yapmanız gereken Wiki dosyalarını aşağıdaki kod ile klonlamaktır.
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 En sevdiğiniz editörü açın. Ben düzenleme yapmak için Visual Studio Code'yi öneriyorum. Markdown dosyalarını biçimlendirmek için güzel bir editör ve gördüğünüz gibi ben Visual Studio Code kullanıyorum.

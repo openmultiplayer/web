@@ -39,7 +39,7 @@ Odată ce ați terminat, apăsați „Propose new file” și un Pull Request va
 Dacă doriți să utilizați Git, tot ce trebuie să faceți este să clonați depozitul Wiki cu:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Deschide-l în editorul tău preferat. Recomand Visual Studio Code, deoarece are unele instrumente excelente pentru editarea și formatarea fișierelor Markdown. După cum puteți vedea, scriu acest lucru folosind Visual Studio Code!

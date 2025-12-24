@@ -39,7 +39,7 @@ Once that's done, hit "Propose new file" and a Pull Request will be opened for r
 If you want to use Git, all you need to do is clone the Wiki repository with:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Open it in your favourite editor. I recommend Visual Studio Code as it has some great tooling for editing and formatting Markdown files. As you can see, I'm writing this using Visual Studio Code!

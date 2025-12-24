@@ -37,7 +37,7 @@ Uma vez feito isso, clique em "Propose new file" (Propor novo arquivo) e um "Pul
 Se você deseja usar Git, tudo que precisa é clonar o repositório da WIki com:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Abre o repositório em seu editor favorito. Eu recomendo Visual Studio Code, pois contém ótimas ferramentas de edição e formatação de arquivos "Markdown". Como pode ver, estou escrevendo usando Visual Studio Code!

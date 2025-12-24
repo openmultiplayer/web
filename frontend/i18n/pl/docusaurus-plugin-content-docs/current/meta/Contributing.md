@@ -39,7 +39,7 @@ Kiedy skończysz, kliknij „Propose new file” – Pull Request zostanie otwar
 Jeżeli chcesz użyć systemu Git, wystarczy sklonować repozytorium Wiki komendą:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Otwórz je w swoim ulubionym edytorze. Polecamy Visual Studio Code, ponieważ posiada on świetne narzędzia do edycji i formatowania plików Markdown. Jak możesz zobaczyć, ten plik został napisany przy użyciu Visual Studio Code!

@@ -39,7 +39,7 @@ Wenn das getan ist, klicke "Propose new file" um ein Pull-Request zur Überprüf
 Wenn du Git nutzen möchtest, klone das Wiki Verzeichnis mit:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Öffne es mit einem bevorzugten Editor. Wir empfehlen Visual Studio Code(VSC) wegen den Tools zum editieren und formatieren von Markdown. Wie du sehen kannst wurde das hier auch in VSC geschrieben!

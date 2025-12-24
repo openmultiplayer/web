@@ -39,7 +39,7 @@ description: 如何給SA-MP Wiki和open.mp的說明文件提交貢獻。
 如果你想使用 Git，你只需要使用以下命令克隆 Wiki 存儲庫：
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 使用你喜歡的編輯器打開它。我建議使用 Visual Studio Code，因為它具有編輯和格式化 Markdown 文件的出色工具。正如你所看到的，我正在使用 Visual Studio Code 創建這篇文章！

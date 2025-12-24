@@ -39,7 +39,7 @@ Kada je to gotovo, kliknite "Predloži novi fajl" (Propose new file) i Pull Requ
 Ukoliko želite da koristite Git, sve što trebate jeste da klonirate Wiki repositorij sa:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 Otvorite ga u vašem omiljenom text editoru. Preporučujem Visual Studio Code jer ima odličnih alata za uređivanje i formatiranje Markdown fajlova. Kao što možete da vidite, ja pišem ovo koristeći Visual Studio Code!

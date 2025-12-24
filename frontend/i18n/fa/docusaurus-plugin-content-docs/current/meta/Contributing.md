@@ -39,7 +39,7 @@ description: نحوه مشارکت در Wiki SA-MP و مستندات open.mp.
 اگر می‌خواهید از Git استفاده کنید، تمام آنچه نیاز دارید clone کردن repository Wiki با:
 
 ```sh
-git clone https://github.com/openmultiplayer/wiki.git
+git clone https://github.com/openmultiplayer/web.git
 ```
 
 آن را در ویرایشگر مورد علاقه خود باز کنید. Visual Studio Code را توصیه می‌کنم زیرا ابزارهای عالی برای ویرایش و فرمت کردن فایل‌های Markdown دارد. همان طور که می‌بینید، من دارم این را با Visual Studio Code می‌نویسم!
