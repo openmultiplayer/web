@@ -11,13 +11,13 @@ tags: ["npc", "伤害"]
 
 当 NPC 受到来自玩家或其他 NPC 的伤害时调用此回调。
 
-| 参数     | 说明                                       |
-| -------- | ------------------------------------------ |
-| npcid    | 受到伤害的 NPC 的 ID                       |
-| issuerid | 造成伤害的玩家/NPC 的 ID                   |
-| damage   | 受到的伤害数量                             |
-| weaponid | 用于造成伤害的武器 ID                      |
-| bodypart | 被击中的[身体部位](../resources/bodyparts) |
+| 参数            | 说明                                       |
+| --------------- | ------------------------------------------ |
+| npcid           | 受到伤害的 NPC 的 ID                       |
+| issuerid        | 造成伤害的玩家/NPC 的 ID                   |
+| Float:amount    | 受到的伤害数量                             |
+| WEAPON:weaponid | 用于造成伤害的武器 ID                      |
+| bodypart        | 被击中的[身体部位](../resources/bodyparts) |
 
 ## 返回值
 
@@ -26,7 +26,7 @@ tags: ["npc", "伤害"]
 ## 示例
 
 ```c
-public OnNPCTakeDamage(npcid, issuerid, Float:damage, WEAPON:weaponid, bodypart)
+public OnNPCTakeDamage(npcid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     // 仅通知追踪此 NPC 的玩家
     for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
@@ -39,12 +39,12 @@ public OnNPCTakeDamage(npcid, issuerid, Float:damage, WEAPON:weaponid, bodypart)
             if (issuerid == INVALID_PLAYER_ID)
             {
                 SendClientMessage(playerid, 0xFF8800FF, "NPC %d 受到 %.1f 点伤害（武器：%d，身体部位：%d）",
-                    npcid, damage, _:weaponid, bodypart);
+                    npcid, amount, _:weaponid, bodypart);
             }
             else
             {
                 SendClientMessage(playerid, 0xFF8800FF, "NPC %d 受到玩家 %d 造成的 %.1f 点伤害（武器：%d，身体部位：%d）",
-                    npcid, damage, issuerid, _:weaponid, bodypart);
+                    npcid, amount, issuerid, _:weaponid, bodypart);
             }
         }
     }
