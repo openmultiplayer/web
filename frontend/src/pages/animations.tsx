@@ -55,7 +55,7 @@ const AnimationsPage = () => {
         url.searchParams.delete("library");
         url.searchParams.delete("animation");
       }
-      window.history.pushState({}, "", url);
+      window.history.replaceState({}, "", url);
     }
   };
 
@@ -71,7 +71,7 @@ const AnimationsPage = () => {
       } else {
         url.searchParams.delete("animation");
       }
-      window.history.pushState({}, "", url);
+      window.history.replaceState({}, "", url);
     }
   };
 
@@ -80,14 +80,17 @@ const AnimationsPage = () => {
       title="Animations"
       description="Interactive open.mp (SA-MP) animations viewer with video previews"
     >
-      <div className="container margin-vert--lg">
-        <div className="row">
-          <div className="col col--12">
-            <Heading as="h1" className="text--center margin-bottom--lg">
+      <div className={styles.pageContainer}>
+            <Heading as="h1" className={styles.pageTitle}>
               <Translate id="animations.title" description="Animations page title">
                 open.mp Animations Viewer
               </Translate>
             </Heading>
+            <p className={styles.pageSubtitle}>
+              <Translate id="animations.subtitle" description="Animations page subtitle">
+                Browse and preview all available open.mp animations.
+              </Translate>
+            </p>
 
             <div className={styles.animationDisplay}>
               <div className={styles.controls}>
@@ -201,10 +204,10 @@ const AnimationsPage = () => {
                     <pre className={styles.codeBlock}>
                       <code>
                         {`// For players
-ApplyAnimation(playerid, "${currentAnimation.library}", "${currentAnimation.name}", 4.1, false, false, false, false, 0);
+ApplyAnimation(playerid, "${currentAnimation.library}", "${currentAnimation.name}", 4.1, false, false, false, false, SYNC_ALL);
 
 // For actors
-ApplyActorAnimation(actorid, "${currentAnimation.library}", "${currentAnimation.name}", 4.1, false, false, false, false, 0);`}
+ApplyActorAnimation(actorid, "${currentAnimation.library}", "${currentAnimation.name}", 4.1, false, false, false, false, SYNC_ALL);`}
                       </code>
                     </pre>
                   </div>
@@ -212,18 +215,15 @@ ApplyActorAnimation(actorid, "${currentAnimation.library}", "${currentAnimation.
               )}
 
               {selectedLibrary && !selectedAnimation && (
-                <div className={styles.placeholder}>
-                  <p>
+                  <p className={styles.hint}>
                     <Translate id="animations.selectAnimationPrompt" description="Prompt to select animation">
                       Select an animation from the dropdown above to see the preview.
                     </Translate>
                   </p>
-                </div>
               )}
 
               {!selectedLibrary && (
-                <div className={styles.placeholder}>
-                  <p>
+                  <p className={styles.hint}>
                     <Translate id="animations.browsePrompt" description="Browse animations prompt">
                       Browse and preview all available animations.
                     </Translate>
@@ -232,11 +232,8 @@ ApplyActorAnimation(actorid, "${currentAnimation.library}", "${currentAnimation.
                       These are used by ApplyAnimation/ApplyActorAnimation functions.
                     </Translate>
                   </p>
-                </div>
               )}
             </div>
-          </div>
-        </div>
       </div>
     </Layout>
   );

@@ -113,7 +113,7 @@ const HomepageHeader = () => {
               <Translate id="announcement.changelog" description="Announcement: changelog link">Changelog</Translate>
             </Link> |{" "}
             <Link 
-              to="https://github.com/openmultiplayer/open.mp/releases/latest"
+              to="/downloads/server"
               className={styles.enhancedLink}
             >
               <Translate id="announcement.download" description="Announcement: download link">Download</Translate>
@@ -122,7 +122,7 @@ const HomepageHeader = () => {
             <br />
             <Translate id="announcement.launcherUpdate" description="Announcement: launcher update">The launcher also got an update!</Translate>{" "}
             <Link 
-              to="https://github.com/openmultiplayer/launcher/releases/latest"
+              to="/downloads/launcher"
               className={styles.enhancedLink}
             >
               <Translate id="announcement.seeWhatsNew" description="Announcement: see what's new link">See what's new</Translate>
@@ -170,7 +170,7 @@ const HomepageHeader = () => {
           <Link
             className={clsx("button button--primary button--lg", styles.button)}
             title="Download open.mp launcher"
-            to="https://github.com/openmultiplayer/launcher/releases/latest"
+            to="/downloads/launcher"
           >
             <Translate id="homepage.downloadLauncher" description="Button label for downloading the launcher">Download Launcher 🎮</Translate>
           </Link>
@@ -178,7 +178,7 @@ const HomepageHeader = () => {
           <Link
             className={clsx("button button--primary button--lg", styles.button)}
             title="open.mp is released!"
-            to="https://github.com/openmultiplayer/open.mp/releases/latest"
+            to="/downloads/server"
           >
             <Translate id="homepage.downloadServer" description="Button label for downloading the server">Download Server 🖥️</Translate>
           </Link>

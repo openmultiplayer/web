@@ -178,6 +178,9 @@
   "animations.title": {
     "message": "Visualizador de Animações open.mp"
   },
+  "animations.subtitle": {
+    "message": "Navegue e pré-visualize todas as animações disponíveis no open.mp."
+  },
   "animations.library": {
     "message": "Biblioteca:"
   },
@@ -267,6 +270,51 @@
   },
   "serverInfo.lastUpdated": {
     "message": "Atualizado há {time}"
+  },
+  "downloads.server.pageTitle": {
+    "message": "Servidor open.mp"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Hospede seu próprio servidor multiplayer de GTA San Andreas."
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "Launcher open.mp"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Jogue GTA San Andreas multiplayer em servidores open.mp e SA-MP."
+  },
+  "downloads.latestBadge": {
+    "message": "MAIS RECENTE"
+  },
+  "downloads.releaseDate": {
+    "message": "Lançado em {date}"
+  },
+  "downloads.release.highlights": {
+    "message": "Destaques"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Ver changelog completo"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Ver release no GitHub"
+  },
+  "downloads.release.github": {
+    "message": "GitHub"
+  },
+  "downloads.showOlderReleases": {
+    "message": "Ver {count} releases antigos"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Ocultar releases antigos"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Todas as releases são open source. Compile do código-fonte ou baixe diretamente do GitHub."
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Baixar do GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* A versão DynSSL requer que o libssl esteja instalado na sua distribuição Linux."
   },
   "theme.footer.title.Documentations": {
     "message": "Documentação"

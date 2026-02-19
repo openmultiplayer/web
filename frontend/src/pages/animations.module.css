@@ -1,48 +1,29 @@
-.description {
+.pageContainer {
+  padding: 5rem 1.5rem 0;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageTitle {
   text-align: center;
+  color: #9083d2;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
   margin-bottom: 1rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  animation: fadeIn 1s ease-out;
 }
 
-.notes {
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: var(--ifm-color-info-contrast-background);
-  border-radius: 8px;
-  border-left: 4px solid var(--ifm-color-info);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.notes strong {
-  color: var(--ifm-color-info-dark);
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.75rem;
-  font-size: 0.95rem;
-}
-
-.notes ul {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
+.pageSubtitle {
+  text-align: center;
+  font-size: 1.5rem;
   line-height: 1.6;
-}
-
-.notes li {
-  margin-bottom: 0.75rem;
-  color: var(--ifm-color-emphasis-700);
-  font-size: 0.9rem;
-}
-
-.notes code {
-  background: none;
-  padding: 0;
-  border-radius: 0;
-  font-size: inherit;
-  color: inherit;
-  font-weight: inherit;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 3rem;
+  animation: fadeIn 1s ease-out 0.2s both;
 }
 
 .controls {
@@ -52,10 +33,10 @@
   margin-bottom: 1.5rem;
   justify-content: center;
   padding: 1.25rem;
-  background-color: var(--ifm-card-background-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out 0.3s both;
 }
 
 .controls:not(.animationDisplay .controls) {
@@ -104,17 +85,18 @@
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  margin-top: 1rem;
+  margin-top: 0;
   padding: 1.5rem;
-  background-color: var(--ifm-card-background-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 1100px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   overflow: visible;
   box-sizing: border-box;
-  transition: box-shadow 0.3s ease;
+  animation: fadeIn 1s ease-out 0.4s both;
 }
 
 .animationInfo {
@@ -124,14 +106,6 @@
   overflow: hidden;
   width: 100%;
   min-width: 0;
-}
-
-.animationTitle {
-  color: var(--ifm-color-primary);
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
 }
 
 .animationDetails {
@@ -166,45 +140,6 @@
 
 .detailItem:last-child {
   border-bottom: none;
-}
-
-.generalNotes {
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: var(--ifm-color-info-contrast-background);
-  border-radius: 8px;
-  border-left: 4px solid var(--ifm-color-info);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.generalNotes strong {
-  color: var(--ifm-color-info-dark);
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.75rem;
-  font-size: 0.95rem;
-}
-
-.generalNotes ul {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-  line-height: 1.6;
-}
-
-.generalNotes li {
-  margin-bottom: 0.5rem;
-  color: var(--ifm-color-emphasis-700);
-  font-size: 0.9rem;
-}
-
-.generalNotes code {
-  background: none;
-  padding: 0;
-  border-radius: 0;
-  font-size: inherit;
-  color: inherit;
-  font-weight: inherit;
 }
 
 .detailItem strong {
@@ -380,27 +315,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.credits {
-  margin-top: 0.75rem;
-  text-align: center;
-}
-
-.credits p {
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--ifm-color-emphasis-600);
-}
-
-.credits a {
-  color: var(--ifm-color-primary);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.credits a:hover {
-  text-decoration: underline;
-}
-
 .errorMessage {
   color: var(--ifm-color-danger);
   font-style: italic;
@@ -408,21 +322,51 @@
   padding: 2rem;
 }
 
-.placeholder {
+.hint {
   text-align: center;
-  padding: 3rem;
   color: var(--ifm-color-emphasis-600);
   font-style: italic;
-  background-color: var(--ifm-color-emphasis-100);
-  border-radius: 8px;
-  margin-top: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1rem;
+  margin: 1rem 0 0;
 }
 
-/* Responsive styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 996px) {
+  .pageContainer {
+    padding: 4rem 1.5rem 0;
+    margin-bottom: 80px;
+  }
+
+  .pageTitle {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .pageContainer {
+    padding: 3rem 1rem 0;
+    margin-bottom: 60px;
+  }
+
+  .pageTitle {
+    font-size: 2.5rem;
+  }
+
+  .pageSubtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
   .controls {
     flex-direction: column;
     gap: 1.5rem;
@@ -446,11 +390,6 @@
     margin-bottom: 1.5rem;
   }
 
-  .placeholder {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
   .videoWrapper {
     max-width: 100%;
   }
@@ -458,24 +397,6 @@
   .animationVideo {
     max-height: 300px;
   }
-}
-
-[data-theme='dark'] .notes {
-  background-color: var(--ifm-color-info-contrast-background);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-[data-theme='dark'] .notes strong {
-  color: var(--ifm-color-info-light);
-}
-
-[data-theme='dark'] .notes li {
-  color: var(--ifm-color-emphasis-600);
-}
-
-[data-theme='dark'] .notes code {
-  background: none;
-  color: inherit;
 }
 
 [data-theme='dark'] .animationDisplay {
@@ -499,33 +420,3 @@
   background-color: var(--ifm-color-emphasis-100);
 }
 
-[data-theme='dark'] .placeholder {
-  background-color: var(--ifm-color-emphasis-200);
-}
-
-[data-theme='dark'] .generalNotes {
-  background-color: var(--ifm-color-info-contrast-background);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-[data-theme='dark'] .generalNotes strong {
-  color: var(--ifm-color-info-light);
-}
-
-[data-theme='dark'] .generalNotes li {
-  color: var(--ifm-color-emphasis-600);
-}
-
-[data-theme='dark'] .generalNotes code {
-  background: none;
-  color: inherit;
-}
-
-.controls:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.animationDisplay:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}

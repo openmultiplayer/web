@@ -1,0 +1,419 @@
+.pageContainer {
+  padding: 5rem 1.5rem 0;
+  max-width: 900px;
+  margin: 0 auto 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageTitle {
+  text-align: center;
+  color: #9083d2;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.pageSubtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 3rem;
+  animation: fadeIn 1s ease-out 0.2s both;
+}
+
+.productSection {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  animation: fadeIn 1s ease-out 0.4s both;
+  background: var(--ifm-background-surface-color);
+}
+
+.productSection:last-child {
+  margin-bottom: 0;
+}
+
+.topAdmonition {
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.topAdmonition :global(.admonition) {
+  margin-bottom: 0;
+  border-radius: 10px;
+}
+
+.trustSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trustText {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.75;
+  text-align: center;
+}
+
+.trustActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.productTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--ifm-heading-color);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.versionInfo {
+  font-size: 1rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 2rem;
+}
+
+.newBadge {
+  display: inline-block;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.downloadRow {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.dynSslNote {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0 0 1.5rem;
+  font-style: italic;
+}
+
+.downloadButton {
+  flex: 1;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.downloadButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.buttonSize {
+  font-weight: 400;
+  opacity: 0.85;
+  margin-left: 0.5rem;
+  font-size: 0.85em;
+}
+
+.githubLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: var(--ifm-color-secondary-button-background);
+  color: var(--ifm-color-emphasis-700) !important;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-width: 80px;
+  text-align: center;
+}
+
+.githubLink:hover {
+  transform: translateY(-3px);
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none;
+}
+
+.keyFeatures {
+  margin-bottom: 1.25rem;
+}
+
+.keyFeaturesTitle {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ifm-heading-color);
+}
+
+.keyFeaturesList {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.keyFeaturesList li {
+  margin-bottom: 0.35rem;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.5;
+}
+
+.changelogDetails {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+.changelogSummary {
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--ifm-font-color-base);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: background 0.2s ease;
+  user-select: none;
+}
+
+.changelogSummary::-webkit-details-marker {
+  display: none;
+}
+
+.changelogSummary::before {
+  content: "\25B6";
+  font-size: 0.65rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
+  color: var(--ifm-color-primary);
+}
+
+.changelogDetails[open] .changelogSummary::before {
+  transform: rotate(90deg);
+}
+
+.changelogSummary:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.changelogContent {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.changelogContent h1,
+.changelogContent h2,
+.changelogContent h3 {
+  font-size: 1.1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.changelogContent h1:first-child,
+.changelogContent h2:first-child,
+.changelogContent h3:first-child {
+  margin-top: 0;
+}
+
+.changelogContent ul {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.changelogContent li {
+  margin-bottom: 0.25rem;
+}
+
+.changelogContent p {
+  margin: 0.5rem 0;
+}
+
+.changelogContent a {
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+}
+
+.changelogContent code {
+  background: var(--ifm-color-emphasis-100);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.releaseAdmonition {
+  margin-bottom: 1.25rem;
+}
+
+.releaseAdmonition :global(.admonition) {
+  margin-bottom: 0;
+  border-radius: 10px;
+}
+
+.showMoreWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  animation: fadeIn 1s ease-out 0.5s both;
+}
+
+
+.showMoreButton {
+  position: relative;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 0.6rem 1.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-600);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: auto;
+}
+
+.showMoreButton::after {
+  content: "\25BC";
+  font-size: 0.6rem;
+  transition: transform 0.25s ease;
+}
+
+.showMoreButton:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.showMoreButton:hover::after {
+  transform: translateY(2px);
+}
+
+.footerTrust {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  animation: fadeIn 1s ease-out 0.4s both;
+  background: var(--ifm-background-surface-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .pageContainer {
+    padding: 4rem 1.5rem 0;
+    margin-bottom: 80px;
+  }
+
+  .pageTitle {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pageContainer {
+    padding: 3rem 1rem 0;
+    margin-bottom: 60px;
+  }
+
+  .pageTitle {
+    font-size: 2.5rem;
+  }
+
+  .pageSubtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .productSection {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .trustText {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .productTitle {
+    font-size: 1.5rem;
+  }
+
+  .downloadRow {
+    flex-wrap: wrap;
+  }
+
+  .downloadButton {
+    flex: 1 1 100%;
+    font-size: 1rem;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .githubLink {
+    flex: 1 1 100%;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.65rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .footerTrust {
+    padding: 1.5rem;
+  }
+
+  .showMoreWrapper {
+    margin-bottom: 1.5rem;
+  }
+}
