@@ -38,6 +38,8 @@ These flags are used by [DB_Open](../functions/db_open).
 
 :::note
 
+Learn more about these flags at https://www.sqlite.org/c3ref/open.html
+
 Learn about VFS at https://www.sqlite.org/c3ref/vfs.html
 
 :::
