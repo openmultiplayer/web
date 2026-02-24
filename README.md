@@ -35,7 +35,7 @@ This monorepo contains the web services and documentation for open.mp and SA-MP.
 
 ## Overview
 
-- `frontend/docs/` Wiki documentation for SA-MP and open.mp in Markdown format including translations.
+- `frontend/docs/` Wiki documentation for SA-MP and open.mp in Markdown format. Translations at `frontend/i18n/`.
 - `frontend/` [Next.js](https://nextjs.org) app for the https://open.mp site.
 - `prisma/` [Prisma](https://prisma.io/) database models for generating Go code and SQL migrations.
 - `app/` Backend API for server listings, accounts, etc.
