@@ -23,6 +23,14 @@ Gets the hydra reactor angle of the player's vehicle.
 new reactorAngle = GetPlayerHydraReactorAngle(playerid);
 ```
 
+## Notes
+
+:::tip
+
+The default value is 5000 if the angle hasn’t changed, and 0 if it is fully up. Otherwise, it seems to be returning random values.
+
+:::
+
 ## Related Functions
 
 - [GetVehicleHydraReactorAngle](GetVehicleHydraReactorAngle): Gets the hydra reactor angle of the vehicle.
