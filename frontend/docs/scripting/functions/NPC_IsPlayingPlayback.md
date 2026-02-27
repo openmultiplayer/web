@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_StartPlayback](NPC_StartPlayback): Start playing recording
 - [NPC_StopPlayback](NPC_StopPlayback): Stop playback
-- [NPC_PausePlayback](NPC_PausePlayback): Pause/unpause playback
+- [NPC_PausePlayback](NPC_PausePlayback): Pause/resume playback
 - [NPC_IsPlaybackPaused](NPC_IsPlaybackPaused): Check if paused
 
 ## Related Callbacks
