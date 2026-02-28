@@ -26,12 +26,9 @@ tags: []
 ## 示例代码
 
 ```c
-public OnPlayerText(playerid, text[])
-{
-  new Float:Angle;
-  GetMyFacingAngle(Angle);
-  printf("我正面对着 %f!", Angle);
-}
+new Float:angle;
+GetMyFacingAngle(angle);
+printf("我正面对着 %f!", angle);
 ```
 
 ## 相关函数

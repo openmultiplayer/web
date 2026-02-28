@@ -20,12 +20,9 @@ Ugao posmatranja je pohranjen u navedenoj varijabli.
 ## Primjeri
 
 ```c
-public OnPlayerText(playerid, text[])
-{
-new Float:Angle;
-GetMyFacingAngle(Angle);
-printf("Trenutno posmatram %f!", Angle);
-
+new Float:angle;
+GetMyFacingAngle(angle);
+printf("Trenutno posmatram %f!", angle);
 ```
 
 ## Srodne Funkcije
