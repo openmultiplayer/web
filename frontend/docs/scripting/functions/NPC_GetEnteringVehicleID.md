@@ -69,7 +69,7 @@ public CheckNPCEnteringVehicle(playerid)
 
     if (isEntering)
     {
-        new vehicleid = NPC_GetEnteringVehicle(npcid);
+        new vehicleid = NPC_GetEnteringVehicleID(npcid);
         new seatid = NPC_GetEnteringVehicleSeat(npcid);
 
         if (vehicleid != INVALID_VEHICLE_ID && vehicleid != 0)
