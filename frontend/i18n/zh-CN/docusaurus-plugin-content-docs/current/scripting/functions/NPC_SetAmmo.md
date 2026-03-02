@@ -2,7 +2,7 @@
 title: NPC_SetAmmo
 sidebar_label: NPC_SetAmmo
 description: 设置 NPC 当前武器的弹药数量。
-tags: ["npc", "武器", "子弹", "弹药"]
+tags: ["npc", "武器", "子弹"]
 ---
 
 <VersionWarnZH_CN version='omp v1.5.8.3079' />

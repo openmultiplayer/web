@@ -27,7 +27,7 @@ tags: ["玩家"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/宽屏模式", true))
+    if (!strcmp(cmdtext, "/widescreen", true))
     {
         TogglePlayerWidescreen(playerid, true);
         SendClientMessage(playerid, -1, "服务器：你已启用宽屏显示！");

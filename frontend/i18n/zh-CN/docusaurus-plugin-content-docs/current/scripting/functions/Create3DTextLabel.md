@@ -60,7 +60,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::tip
 
 - 在观察模式下有效显示距离会明显缩小
-- 使用~r~~g~等颜色代码实现多色文本效果
+- 使用`~r~,~g~`等颜色代码实现多色文本效果
 
 :::
 

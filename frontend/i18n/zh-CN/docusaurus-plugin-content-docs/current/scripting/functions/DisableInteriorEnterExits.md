@@ -2,7 +2,7 @@
 title: DisableInteriorEnterExits
 sidebar_label: DisableInteriorEnterExits
 description: 禁用游戏内所有室内出入口（门前的黄色箭头）。
-tags: ["室内"]
+tags: ["室内场景"]
 ---
 
 ## 描述

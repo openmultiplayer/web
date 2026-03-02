@@ -23,7 +23,7 @@ tags: ["玩家", "动画"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/清除动画", true))
+    if (!strcmp(cmdtext, "/animclear", true))
     {
         ClearAnimations(playerid);
         return 1;

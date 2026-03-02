@@ -126,7 +126,7 @@ Listagem: declaração de variável char
 new a[40]
 ```
 
-que, é claro, declara 40 células, cada uma sendo capaz de armazenar 1 caractere não empacotado. Pegar um caractere empacotado do array também exigiria um pouco de código: você precisa saber em qual célula o caractere está, e em qual byte da célula específica. O operador de chaves, {}, encapsula esse cálculo. Para obter o n-ésimo caractere do array a, diga "a{n}".
+que, é claro, declara 40 células, cada uma sendo capaz de armazenar 1 caractere não empacotado. Pegar um caractere empacotado do array também exigiria um pouco de código: você precisa saber em qual célula o caractere está, e em qual byte da célula específica. O operador de chaves, {}, encapsula esse cálculo. Para obter o n-ésimo caractere do array a, diga `a{n}`.
 
 Como corolário para usar char no tamanho do array, você também pode usar char no índice do array. Digamos que você queira declarar uma variável que contenha qualquer número não negativo até 100.000 e que você deseja armazenar essa variável em um arquivo. É mais fácil escrever a variável como uma string "empacotada" do que como um número binário (32 bits), porque ler de volta exige cuidado, já que o analisador de arquivo pode não usar os mesmos padrões de ordenação de bytes e tamanho de palavras. Então você pode querer analisar a variável em uma string, calcular o número de bytes que ela precisa e armazenar os bytes em um arquivo.
 
@@ -249,7 +249,7 @@ para cada constante.
 
 Para indexar o n-ésimo caractere em uma string não empacotada armazenada na variável
 msg, você usa a expressão "msg[n]". Para strings empacotadas, você usa
-"msg{n}". Portanto, operações em strings empacotadas diferem de operações em
+`msg{n}`. Portanto, operações em strings empacotadas diferem de operações em
 strings não empacotadas apenas no uso de chaves, em vez de colchetes; veja a página 110
 para informações adicionais.
 
