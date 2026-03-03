@@ -157,7 +157,7 @@ Now you can make your scripts in languages other than pawn without any plugin us
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - Texture bug fixes of the GTA San Andreas map.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Animation browser tool for SA:MP.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Checks if a player is an android user.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - A TextDraw editor which have some rich features.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - A TextDraw editor which have some rich features.
 - **[Nexor's Textdraw Editor](https://github.com/nexquery/samp-textdraw-editor)** - This editor offers you many features such as grouping, undeleting texts, undoing changes, importing text drawings from a file.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Advanced map editor with a lot of features.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - An In-Game map editor for SA:MP.

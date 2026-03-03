@@ -150,7 +150,7 @@ Most már készítheted szkriptjeidet a pawn nyelven kívül más nyelveken is a
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - A GTA San Andreas térképének textúra hibajavításai.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Egy animáció böngésző eszköz az SA:MP-hez.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Ellenőrzi, hogy egy játékos Android felhasználó-e.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Egy TextDraw szerkesztő, amely számos gazdag funkciót kínál.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Egy TextDraw szerkesztő, amely számos gazdag funkciót kínál.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Fejlett térképszerkesztő sok funkcióval.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - Egy In-Game térképszerkesztő az SA:MP-hez.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Ez egy In-Game térképszerkesztő, amely lehetővé teszi, hogy textúrázza az anyag index 15-ig (16 anyag), valamint beállítsa a színét az adott anyag indexre az objektumokon.

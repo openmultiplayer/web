@@ -151,7 +151,7 @@ description: Информна листа корисних алата, библи
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - Исправке багова текстура мапе GTA San Andreas.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Алат за преглед анимација за SA:MP.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Проверава да ли играч користи Android уређај.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Уредник TextDraw-ова који има неке напредне функције.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Уредник TextDraw-ова који има неке напредне функције.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Напредни уредник мапе са многим функцијама.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - Ин-игре уредник мапе за SA:MP.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Ово је уредник мапе у игри који ће вам омогућити да текстурите до индекса материјала 15 (16 материјала) као и да поставите боју за тај индекс материјала на објектима.

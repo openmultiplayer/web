@@ -150,7 +150,7 @@ description: 對製作腳本有幫助的工具、函數庫和插件的列表。
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - 修復GTA San Andreas地圖的紋理錯誤。
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - SA:MP的動畫瀏覽工具。
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - 檢查玩家是否使用Android系統。
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - TextDraw編輯器，具有一些豐富的功能。
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - TextDraw編輯器，具有一些豐富的功能。
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - 具有豐富功能的高級地圖編輯器。
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - SA:MP的地圖編輯器。
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - 這是一個遊戲中的地圖編輯器，可以對15個材質進行紋理，並設置對象的顏色。
