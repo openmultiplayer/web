@@ -1,7 +1,7 @@
 ---
 title: NPC_PausePlayback
 sidebar_label: NPC_PausePlayback
-description: Pauses or unpauses an NPC's recording playback.
+description: Pauses or resumes an NPC's recording playback.
 tags: ["npc", "recording", "playback"]
 ---
 
@@ -9,12 +9,12 @@ tags: ["npc", "recording", "playback"]
 
 ## Description
 
-Pauses or unpauses an NPC's recording playback.
+Pauses or resumes an NPC's recording playback.
 
 | Name  | Description                                |
 | ----- | ------------------------------------------ |
 | npcid | The ID of the NPC                          |
-| pause | Whether to pause (true) or unpause (false) |
+| pause | Whether to pause (true) or resume (false) |
 
 ## Returns
 

@@ -5,6 +5,12 @@ description: 恢复已暂停的录制回放。
 tags: []
 ---
 
+:::warning
+
+此函数已弃用，请使用 [NPC_PausePlayback](NPC_PausePlayback)。
+
+:::
+
 ## 描述
 
 此函数用于恢复之前被暂停的录制回放进程。

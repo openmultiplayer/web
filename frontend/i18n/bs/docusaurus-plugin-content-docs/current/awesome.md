@@ -150,7 +150,7 @@ Sada možete napraviti svoje skripte na drugim jezicima osim pawn-a bez ikakvog 
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - Ispravke grešaka u teksturi na mapi GTA San Andreas.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Alat za preglednik animacija za SA:MP.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Provjerava je li igrač android korisnik.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - TextDraw editor koji ima neke bogate karakteristike.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - TextDraw editor koji ima neke bogate karakteristike.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Napredni uređivač mapa sa puno funkcija.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - Uređivač mapa u igri za SA:MP.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Ovo je uređivač mapa u igri koji će vam omogućiti teksturu do indeksa materijala 15 (16 materijala) kao i postavljanje boje za taj indeks materijala na objektima.

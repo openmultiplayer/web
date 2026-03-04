@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [NPC_PausePlayback](NPC_PausePlayback): Pause/unpause playback
+- [NPC_PausePlayback](NPC_PausePlayback): Pause/resume playback
 - [NPC_IsPlayingPlayback](NPC_IsPlayingPlayback): Check if playing
 - [NPC_StartPlayback](NPC_StartPlayback): Start playback
 - [NPC_StopPlayback](NPC_StopPlayback): Stop playback

@@ -9,13 +9,13 @@ In GTA: SA (and SA-MP as well), certain scripts are preprogrammed to run wheneve
 
 :::
 
-| Shop name | GXT name      | What is it?                      | Coordinates                    |
-| --------- | ------------- | -------------------------------- | ------------------------------ |
-| FDPIZA    | Pizza Stack   | The stock Pizza Stack interior   | 374.0000, -119.6410, 1001.4922 |
-| FDCHICK   | Cluckin' Bell | The stock Cluckin' Bell interior | 368.7890, -6.8570, 1001.8516   |
-| FDBURG    | Burger Shot   | The stock Burger Shot interior   | 375.5660, -68.2220, 1001.5151  |
-| AMMUN1    | Ammunation    | The first Ammu-Nation interior   | 296.5395, -38.2739, 1001.515   |
-| AMMUN2    | Ammunation    | The second Ammu-Nation interior  | 295.7359, -80.6865, 1001.5156  |
-| AMMUN3    | Ammunation    | The third Ammu-Nation interior   | 290.2011, -109.5698, 1001.5156 |
-| AMMUN4    | Ammunation    | The fourth Ammu-Nation interior  | 308.1619, -141.2549, 999.6016  |
-| AMMUN5    | Ammunation    | The fifth Ammu-Nation interior   | 312.7883, -166.0069, 999.6010  |
+| Shop name | GXT name      | What is it?                      | Coordinates                 |
+| --------- | ------------- | -------------------------------- | --------------------------- |
+| FDPIZA    | Pizza Stack   | The stock Pizza Stack interior   | 374.0, -119.641, 1000.539   |
+| FDCHICK   | Cluckin' Bell | The stock Cluckin' Bell interior | 368.789, -6.857, 1000.839   |
+| FDBURG    | Burger Shot   | The stock Burger Shot interior   | 375.566, -68.222, 1000.549  |
+| AMMUN1    | Ammunation    | The first Ammu-Nation interior   | 296.506, -38.168, 1000.547  |
+| AMMUN2    | Ammunation    | The second Ammu-Nation interior  | 295.741, -80.479, 1000.534  |
+| AMMUN3    | Ammunation    | The third Ammu-Nation interior   | 290.242, -109.508, 1000.545 |
+| AMMUN4    | Ammunation    | The fourth Ammu-Nation interior  | 308.148, -141.104, 998.618  |
+| AMMUN5    | Ammunation    | The fifth Ammu-Nation interior   | 312.791, -165.949, 998.618  |

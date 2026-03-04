@@ -147,7 +147,7 @@ description: Lista oficial com ferramentas úteis, libs, gamemodes, filterscript
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - Arruma o bug de texturas no mapa do GTA San Andreas.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Ferramenta para buscar animações para o SA-MP.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Verifica se o jogador está em dispositivo Android.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Editor de TextDraw rico em possibilidades.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Editor de TextDraw rico em possibilidades.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Editor de mapas avançado com muitos recursos.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - Editor de mapas in-game para o SA-MP.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Editor de mapas in-game que permite a texturização até 15 partes (16 materiais), como também definição de cores para determinado material nas partes do objeto.

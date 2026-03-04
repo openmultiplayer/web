@@ -58,12 +58,12 @@ description: 文本绘图与游戏文本的样式说明
 
 | 样式   | 预览图                                                              | 特性说明                                                               |
 | ------ | ------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| 样式 0 | ![](https://assets.open.mp/assets/images/gameTextStyles/style0.png) | 固定显示 9 秒（无视时间设置），会覆盖其他文本（通过 fixes.inc 修复）   |
-| 样式 1 | ![](https://assets.open.mp/assets/images/gameTextStyles/style1.png) | 8 秒后淡出，若设置时间更长将循环显示（通过 fixes.inc 修复）            |
+| 样式 0 | ![](https://assets.open.mp/assets/images/gameTextStyles/style0.png) | 固定显示 9 秒（无视时间设置），会覆盖其他文本（通过 fixes.inc / GameText+ 修复） |
+| 样式 1 | ![](https://assets.open.mp/assets/images/gameTextStyles/style1.png) | 8 秒后淡出，若设置时间更长将循环显示（通过 fixes.inc / GameText+ 修复）      |
 | 样式 2 | ![](https://assets.open.mp/assets/images/gameTextStyles/style2.png) | 无特殊说明                                                             |
 | 样式 3 | ![](https://assets.open.mp/assets/images/gameTextStyles/style3.png) | 无特殊说明                                                             |
 | 样式 4 | ![](https://assets.open.mp/assets/images/gameTextStyles/style4.png) | 无特殊说明                                                             |
-| 样式 5 | ![](https://assets.open.mp/assets/images/gameTextStyles/style5.png) | 固定显示 3 秒（无视时间设置），频繁调用会被屏蔽（通过 fixes.inc 修复） |
+| 样式 5 | ![](https://assets.open.mp/assets/images/gameTextStyles/style5.png) | 固定显示 3 秒（无视时间设置），频繁调用会被屏蔽（通过 fixes.inc / GameText+ 修复） |
 | 样式 6 | ![](https://assets.open.mp/assets/images/gameTextStyles/style6.png) | 无特殊说明                                                             |
 
 ---

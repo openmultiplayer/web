@@ -74,7 +74,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_StartPlaybackEx](NPC_StartPlaybackEx): Start playback with recording ID
 - [NPC_StopPlayback](NPC_StopPlayback): Stop playback
-- [NPC_PausePlayback](NPC_PausePlayback): Pause/unpause playback
+- [NPC_PausePlayback](NPC_PausePlayback): Pause/resume playback
 - [NPC_LoadRecord](NPC_LoadRecord): Pre-load a recording file
 
 ## Related Callbacks

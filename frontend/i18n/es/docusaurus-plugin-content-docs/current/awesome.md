@@ -148,7 +148,7 @@ Ahora puedes hacer tus scripts en otros lenguajes que no sean pawn sin ningun pl
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - Corrección de errores de texturas del mapa de GTA San Andreas.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Herramienta de navegación de animación para SA:MP.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Comprueba si un jugador es usuario de android.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Un editor TextDraw que tiene algunas características ricas.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Un editor TextDraw que tiene algunas características ricas.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Editor de mapas avanzado con muchas funciones.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - Un editor de mapas en el juego para SA:MP.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Este es un editor de mapas en el juego que te permitirá texturizar hasta el índice de material 15 (16 materiales), así como establecer el color para ese índice de material en los objetos.
