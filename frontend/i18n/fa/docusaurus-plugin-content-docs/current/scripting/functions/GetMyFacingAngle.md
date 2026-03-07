@@ -24,12 +24,9 @@ tags: []
 </div>
 
 ```c
-public OnPlayerText(playerid, text[])
-{
 new Float:Angle;
 GetMyFacingAngle(Angle);
 printf("الان در زاویه %f رو به رو هستم!", Angle);
-
 ```
 
 <div dir="rtl" style={{ textAlign: "right" }}>
