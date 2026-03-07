@@ -9,7 +9,7 @@ tags: []
 
 This function is deprecated.
 
-See `PC_EmulateCommand` for Pawn.CMD or similar means for other command processors.
+See `PC_EmulateCommand` for [Pawn.CMD](https://github.com/katursis/Pawn.CMD) or similar means for other command processors.
 
 :::
 
