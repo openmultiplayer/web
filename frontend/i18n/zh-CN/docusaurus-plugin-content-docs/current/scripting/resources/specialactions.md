@@ -16,7 +16,10 @@ tags: ["玩家"]
 | ID  | 动作名称                        | 说明                                                                 |
 | --- | ------------------------------- | -------------------------------------------------------------------- |
 | 0   | SPECIAL_ACTION_NONE             | 清除玩家所有特殊动作                                                 |
+| 1   | SPECIAL_ACTION_DUCK \*          | 检测玩家是否处于蹲下状态                                             |
 | 2   | SPECIAL_ACTION_USEJETPACK       | 使玩家使用喷气背包                                                   |
+| 3   | SPECIAL_ACTION_ENTER_VEHICLE \* | 检测玩家是否正在通过动画进入车辆                                     |
+| 4   | SPECIAL_ACTION_EXIT_VEHICLE \*  | 检测玩家是否正在通过动画离开车辆                                     |
 | 5   | SPECIAL_ACTION_DANCE1           | 播放舞蹈动画 1                                                       |
 | 6   | SPECIAL_ACTION_DANCE2           | 播放舞蹈动画 2                                                       |
 | 7   | SPECIAL_ACTION_DANCE3           | 播放舞蹈动画 3                                                       |
@@ -25,13 +28,10 @@ tags: ["玩家"]
 | 11  | SPECIAL_ACTION_USECELLPHONE     | 使玩家使用手机通话                                                   |
 | 12  | SPECIAL_ACTION_SITTING \*       | 检测玩家是否处于坐下状态                                             |
 | 13  | SPECIAL_ACTION_STOPUSECELLPHONE | 使玩家停止使用手机                                                   |
-| 1   | SPECIAL_ACTION_DUCK \*          | 检测玩家是否处于蹲下状态                                             |
-| 3   | SPECIAL_ACTION_ENTER_VEHICLE \* | 检测玩家是否正在通过动画进入车辆                                     |
-| 4   | SPECIAL_ACTION_EXIT_VEHICLE \*  | 检测玩家是否正在通过动画离开车辆                                     |
 | 20  | SPECIAL_ACTION_DRINK_BEER       | 使用后会增加玩家醉酒值                                               |
 | 21  | SPECIAL_ACTION_SMOKE_CIGGY      | 使玩家抽雪茄                                                         |
 | 22  | SPECIAL_ACTION_DRINK_WINE       | 使玩家饮用葡萄酒瓶并进入醉酒状态                                     |
 | 23  | SPECIAL_ACTION_DRINK_SPRUNK     | 使玩家饮用 Sprunk 饮料                                               |
-| 68  | SPECIAL_ACTION_PISSING          | 播放小便动画并显示尿液效果（**该宏未包含在 SA-MP 头文件中**）        |
 | 24  | SPECIAL_ACTION_CUFFED           | 强制玩家做出被拷动作（双手背在身后）（在 CJ 皮肤上无效）             |
 | 25  | SPECIAL_ACTION_CARRY            | 使玩家呈现"搬运"动画，并使其无法冲刺、跳跃或挥拳（在 CJ 皮肤上无效） |
+| 68  | SPECIAL_ACTION_PISSING          | 播放小便动画并显示尿液效果（**该宏未包含在 SA-MP 头文件中**）        |
