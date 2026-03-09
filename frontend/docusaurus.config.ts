@@ -263,7 +263,7 @@ const config: Config = {
             },
             {
               label: "open.mp Migration",
-              to: "docs",
+              to: "docs/server/Installation",
             },
             {
               label: "config.json",
