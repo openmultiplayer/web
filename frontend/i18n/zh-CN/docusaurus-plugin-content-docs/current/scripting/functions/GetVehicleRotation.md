@@ -5,6 +5,8 @@ description: 返回车辆的欧拉角旋转。
 tags: ["车辆"]
 ---
 
+<VersionWarnZH_CN version='omp v1.5.8.3079' />
+
 ## 描述
 
 返回车辆的欧拉角旋转。

@@ -26,6 +26,14 @@ Gets the actual rotation matrix of the vehicle.
 | &Float:atY    | A float variable in which to store the atY coordinate, passed by reference.    |
 | &Float:atZ    | A float variable in which to store the atZ coordinate, passed by reference.    |
 
+## Returns
+
+**true** - The function was executed successfully.
+
+**false** - The function failed to execute. This means the vehicle specified does not exist.
+
+The vehicle's rotation is stored in the specified variables.
+
 ## Examples
 
 ```c
