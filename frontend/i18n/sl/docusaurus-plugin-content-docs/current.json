@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Ustvarjanje skript"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Povratne funkcije"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Funkcije"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Jezik"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Referenca"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Viri"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Strežnik"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Odjemalec"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Vodiči"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Meta"
+  }
+}

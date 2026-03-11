@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Скриптинг"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Обратные вызовы"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Функции"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Язык"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Справочник"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Ресурсы"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Сервер"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Клиент"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Руководства"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Мета"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Skrip"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Callback"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Fungsi"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Bahasa"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Referensi"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Sumber Daya"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Server"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Klien"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Tutorial"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Meta"
+  }
+}

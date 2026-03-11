@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Betik Yazma"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Geri Çağrılar"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Fonksiyonlar"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Dil"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Referans"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Kaynaklar"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Sunucu"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "İstemci"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Eğitimler"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Meta"
+  }
+}

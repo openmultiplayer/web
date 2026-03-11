@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Scripting"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Callbacks"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Functies"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Taal"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Referentie"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Bronnen"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Server"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Client"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Tutorials"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Meta"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Scripting"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Fonctions de rappel"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Fonctions"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Langage"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Référence"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Ressources"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Serveur"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Client"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Tutoriels"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Méta"
+  }
+}

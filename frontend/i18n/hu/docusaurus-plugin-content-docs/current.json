@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Szkriptelés"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Visszahívások"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Függvények"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Nyelv"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Referencia"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Erőforrások"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Szerver"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Kliens"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Oktatóanyagok"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Meta"
+  }
+}
