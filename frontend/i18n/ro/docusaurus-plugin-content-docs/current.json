@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Scriptare"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Callback-uri"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Funcții"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Limbaj"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Referință"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Resurse"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Server"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Client"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Tutoriale"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Meta"
+  }
+}

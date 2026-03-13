@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Pagsusulat ng Script"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Mga Callback"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Mga Function"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Wika"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Sanggunian"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Mga Mapagkukunan"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Server"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Client"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Mga Tutorial"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Meta"
+  }
+}

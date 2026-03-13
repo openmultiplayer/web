@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "腳本編寫"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "回呼"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "函數"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "語言"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "參考文獻"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "資源"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "伺服器"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "客戶端"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "教學"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "後設資料"
+  }
+}

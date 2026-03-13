@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکته‌ها
 
-::tip
+:::tip
 
 - اگر بازیکن در خودرو باشد، از [RemovePlayerFromVehicle](RemovePlayerFromVehicle) قبل از SetPlayerPos استفاده کنید.
 

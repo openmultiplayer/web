@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "ஸ்கிரிப்டிங்"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "கால்பேக்குகள்"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "செயல்பாடுகள்"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "மொழி"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "குறிப்பு"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "வளங்கள்"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "சர்வர்"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "கிளையன்"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "பயிற்சிகள்"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "மெட்டா"
+  }
+}

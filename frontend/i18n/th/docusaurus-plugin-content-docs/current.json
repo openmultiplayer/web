@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "การเขียนสคริปต์"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "การเรียกกลับ"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "ฟังก์ชัน"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "ภาษา"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "ข้อมูลอ้างอิง"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "ทรัพยากร"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "เซิร์ฟเวอร์"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "ไคลเอ็นต์"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "บทแนะนำ"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "เมตา"
+  }
+}

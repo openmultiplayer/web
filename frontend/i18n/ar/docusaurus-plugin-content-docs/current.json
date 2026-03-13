@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "البرمجة النصية"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "وظائف الاستدعاء"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "الدوال"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "اللغة"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "المراجع"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "الموارد"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "الخادم"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "العميل"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "الدروس التعليمية"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "ميتا"
+  }
+}

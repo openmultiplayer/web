@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "اسکریپت نویسی"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "فراخوانی‌ها"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "توابع"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "زبان"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "مرجع"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "منابع"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "سرور"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "کلاینت"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "آموزش‌ها"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "متا"
+  }
+}

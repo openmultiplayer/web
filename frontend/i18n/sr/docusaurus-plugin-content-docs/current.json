@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Скриптирање"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Повратни позиви"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Функције"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Језик"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Референца"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Ресурси"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Сервер"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Клијент"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Туторијали"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Мета"
+  }
+}

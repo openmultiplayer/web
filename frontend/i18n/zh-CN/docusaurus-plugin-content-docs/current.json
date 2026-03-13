@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "脚本编写"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "回调"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "函数"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "语言"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "参考文献"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "资源"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "服务器"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "客户端"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "教程"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "元数据"
+  }
+}

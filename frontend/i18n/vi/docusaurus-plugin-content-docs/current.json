@@ -1,0 +1,32 @@
+{
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Lập trình kịch bản"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Hàm gọi lại"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Hàm"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Ngôn ngữ"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Tham khảo"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Tài nguyên"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Máy chủ"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Máy khách"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Hướng dẫn"
+  },
+  "sidebar.docsSidebar.category.meta": {
+    "message": "Meta"
+  }
+}
