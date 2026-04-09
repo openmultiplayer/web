@@ -30,9 +30,9 @@ import VersionWarnSR from "./translations/sr/version-warning";
 import LowercaseNoteSR from "./translations/sr/lowercase-note";
 import TipNPCCallbacksSR from "./translations/sr/npc-callbacks-tip";
 
-import VersionWarnSR from "./translations/fa/version-warning";
-import LowercaseNoteSR from "./translations/fa/lowercase-note";
-import TipNPCCallbacksSR from "./translations/fa/npc-callbacks-tip";
+import VersionWarnFA from "./translations/fa/version-warning";
+import LowercaseNoteFA from "./translations/fa/lowercase-note";
+import TipNPCCallbacksFA from "./translations/fa/npc-callbacks-tip";
 
 const templates = {
   VersionWarn,
