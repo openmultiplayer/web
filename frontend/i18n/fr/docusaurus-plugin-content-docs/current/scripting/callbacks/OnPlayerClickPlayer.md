@@ -9,11 +9,11 @@ tags: [player, clickplayer, clickedplayerid, source]
 
 Callback appelée quand un joueur double-clique sur le pseudo d'un joueur dans la tablist.
 
-| Nom                   | Description                                                      |
-| --------------------- | ---------------------------------------------------------------- |
-| `int` playerid        | ID du joueur qui double-clique sur un pseudo dans la tablist     |
-| `int` clickedplayerid | ID du joueur sélectionn                                          |
-| `int` source          | Source du clic du joueur                                         |
+| Nom                   | Description                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| `int` playerid        | ID du joueur qui double-clique sur un pseudo dans la tablist |
+| `int` clickedplayerid | ID du joueur sélectionn                                      |
+| `int` source          | Source du clic du joueur                                     |
 
 ## Valeur de retour
 

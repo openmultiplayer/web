@@ -9,11 +9,11 @@ tags: ["player", "vehicle"]
 
 Bu geri çağırma, bir oyuncu bir araca binmeye başladığında çağırılır, oyuncu araca bindiğinde çağırılmaz, binmeye başladığında (araca doğru yürüme/koşma animasyonu başladığında) çağırılır.
 
-| Parametre        | Açıklama                                             |
-| ----------- | ---------------------------------------------------- |
-| playerid    | Araca binmeye çalışan oyuncunun ID'si.               |
-| vehicleid   | Oyuncunun binmeye çalıştığı aracın ID'si.            |
-| ispassenger | Şoför koltuğuna biniyor ise 0, yolcu koltuğu ise 1.  |
+| Parametre   | Açıklama                                            |
+| ----------- | --------------------------------------------------- |
+| playerid    | Araca binmeye çalışan oyuncunun ID'si.              |
+| vehicleid   | Oyuncunun binmeye çalıştığı aracın ID'si.           |
+| ispassenger | Şoför koltuğuna biniyor ise 0, yolcu koltuğu ise 1. |
 
 ## Çalışınca Vereceği Sonuçlar
 

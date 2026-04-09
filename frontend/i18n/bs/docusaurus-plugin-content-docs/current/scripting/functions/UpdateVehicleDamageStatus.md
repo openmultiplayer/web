@@ -30,7 +30,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-new 
+new
 	VEHICLE_PANEL_STATUS:panels,
 	VEHICLE_DOOR_STATUS:doors,
 	VEHICLE_LIGHT_STATUS:lights,

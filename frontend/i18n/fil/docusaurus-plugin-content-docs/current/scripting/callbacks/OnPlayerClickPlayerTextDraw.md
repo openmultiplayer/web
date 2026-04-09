@@ -9,10 +9,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Ang callback na ito ay natatawag kapag ang player ay pumindot sa isang player-textdraw. Hindi ito natatawag kapag ang player ay nag cancel gamit ang (ESC)
 
-| Pangalan     | Deskripsyon                                             |
-| ------------ | ------------------------------------------------------- |
-| playerid     | Ang ID ng player na pumindot sa textdraw                |
-| playertextid | Ang ID ng player-textdraw na pinindot ng player         |
+| Pangalan     | Deskripsyon                                     |
+| ------------ | ----------------------------------------------- |
+| playerid     | Ang ID ng player na pumindot sa textdraw        |
+| playertextid | Ang ID ng player-textdraw na pinindot ng player |
 
 ## Returns
 

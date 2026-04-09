@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Bu geri çağırma, bir oyuncu bir gangzone'a girdiğinde çağrılır.
 
-| Parametre     | Açıklama                                     |
-| -------- | -------------------------------------------- |
-| playerid | Gangzone'a giren oyuncunun ID'si             |
-| zoneid   | Oyuncunun girdiği gangzone'un ID'si          |
+| Parametre | Açıklama                            |
+| --------- | ----------------------------------- |
+| playerid  | Gangzone'a giren oyuncunun ID'si    |
+| zoneid    | Oyuncunun girdiği gangzone'un ID'si |
 
 ## Çalışınca Vereceği Sonuçlar
 

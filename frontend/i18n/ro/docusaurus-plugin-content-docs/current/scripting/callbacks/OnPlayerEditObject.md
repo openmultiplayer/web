@@ -10,7 +10,7 @@ tags: ["player"]
 Acest callback este apelat atunci când un jucător termină editarea unui obiect (EditObject/EditPlayerObject).
 
 | Nume                   | Descriere                                                      |
-|------------------------|----------------------------------------------------------------|
+| ---------------------- | -------------------------------------------------------------- |
 | playerid               | ID-ul jucătorului care a editat un obiect                      |
 | playerobject           | 0 dacă este un obiect global sau 1 dacă este un obiect player. |
 | objectid               | ID-ul obiectului editat                                        |

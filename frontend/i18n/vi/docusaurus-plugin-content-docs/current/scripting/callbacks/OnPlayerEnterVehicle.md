@@ -9,11 +9,11 @@ tags: ["player", "vehicle"]
 
 Callback này được gọi khi một người chơi bắt đầu vào một phương tiện, có nghĩa là người chơi chưa vào phương tiện vào thời điểm callback này được gọi.
 
-| Tên          | Mô Tả                                                  |
-| ------------ | ------------------------------------------------------ |
-| playerid     | ID của người chơi đang cố gắng vào một phương tiện.   |
-| vehicleid    | ID của phương tiện mà người chơi đang cố gắng vào.   |
-| ispassenger  | 0 nếu vào với vai trò tài xế. 1 nếu vào với vai trò hành khách. |
+| Tên         | Mô Tả                                                           |
+| ----------- | --------------------------------------------------------------- |
+| playerid    | ID của người chơi đang cố gắng vào một phương tiện.             |
+| vehicleid   | ID của phương tiện mà người chơi đang cố gắng vào.              |
+| ispassenger | 0 nếu vào với vai trò tài xế. 1 nếu vào với vai trò hành khách. |
 
 ## Trả Về
 

@@ -5,5 +5,3 @@ description: Modshop‑componenten, modellen, onderdelen, types, voertuigen en k
 ---
 
 De volledige tabellen zijn zeer groot; zie de Engelse pagina: [Car Component IDs](/docs/scripting/resources/carcomponentid). Deze Nederlandse versie lokaliseert titel/labels en behoudt dezelfde structuur/ID‑waarden.
-
-

@@ -9,10 +9,10 @@ tags: ["sqlite"]
 
 A função obtém o conteúdo de um campo como um número de ponto flutuante com o índice do campo especificado.
 
-| Nome            | Descrição                                |
-| --------------- | ---------------------------------------- |
-| DBResult:result | O resultado de onde obter os dados.     |
-| field = 0       | O campo de onde obter os dados.         |
+| Nome            | Descrição                           |
+| --------------- | ----------------------------------- |
+| DBResult:result | O resultado de onde obter os dados. |
+| field = 0       | O campo de onde obter os dados.     |
 
 ## Retorno
 

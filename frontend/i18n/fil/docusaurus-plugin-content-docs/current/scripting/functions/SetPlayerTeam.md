@@ -9,9 +9,9 @@ tags: ["player"]
 
 Itakda ang koponan ng isang manlalaro.
 
-| Name     | Description                                                                    |
-| -------- | ------------------------------------------------------------------------------ |
-| playerid | Ang ID ng player na gusto mong itakda ang koponan.                             |
+| Name     | Description                                                                                                    |
+| -------- | -------------------------------------------------------------------------------------------------------------- |
+| playerid | Ang ID ng player na gusto mong itakda ang koponan.                                                             |
 | teamid   | Ang koponan na ilalagay ang manlalaro. Gamitin ang NO_TEAM upang alisin ang manlalaro mula sa anumang koponan. |
 
 ## Returns

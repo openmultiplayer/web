@@ -9,12 +9,12 @@ tags: ["arguments", "args"]
 
 Obter o nome do argumento no índice fornecido após **--**.
 
-| Nome                  | Descrição                                       |
-| --------------------- | ----------------------------------------------- |
+| Nome                  | Descrição                                                  |
+| --------------------- | ---------------------------------------------------------- |
 | index                 | O deslocamento baseado em zero para o argumento do script. |
-| value[]               | O destino da string de saída.                   |
-| size = sizeof (value) | O tamanho do destino.                           |
-| bool:pack = false     | O valor de retorno deve ser empacotado?         |
+| value[]               | O destino da string de saída.                              |
+| size = sizeof (value) | O tamanho do destino.                                      |
+| bool:pack = false     | O valor de retorno deve ser empacotado?                    |
 
 ## Retorno
 

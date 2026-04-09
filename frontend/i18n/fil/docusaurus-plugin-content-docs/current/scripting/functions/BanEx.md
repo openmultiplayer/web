@@ -9,10 +9,10 @@ tags: ["administration"]
 
 Ipagbawal ang isang manlalaro na may dahilan.
 
-| Name     | Description                  |
-| -------- | ---------------------------- |
-| playerid | Ang ID ng player na pagbabawalan.|
-| reason   | Ang dahilan ng pagbabawal.   |
+| Name     | Description                       |
+| -------- | --------------------------------- |
+| playerid | Ang ID ng player na pagbabawalan. |
+| reason   | Ang dahilan ng pagbabawal.        |
 
 ## Returns
 

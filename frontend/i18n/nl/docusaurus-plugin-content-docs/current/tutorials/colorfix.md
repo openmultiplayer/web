@@ -110,5 +110,3 @@ new PlayerRainbowColors[511] = {
 ```
 
 Zo voorkom je dubbele kleuren, zijn kleuren over het maximaal aantal slots verdeeld (stapgrootte 34), en ziet TAB er op een volle server uit als een regenboog!
-
-

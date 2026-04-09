@@ -11,17 +11,17 @@ tags: ["player", "object", "playerobject"]
 
 Você pode usar esta função para anexar objetos de jogador a outros objetos de jogador. Os objetos seguirão o objeto principal.
 
-| Nome              | Descrição                                                                |
-| ----------------- | ------------------------------------------------------------------------ |
-| playerid          | O ID do jogador.                                                         |
-| objectid          | O objeto de jogador a ser anexado a outro objeto de jogador.            |
-| parentid          | O objeto ao qual anexar o objeto.                                       |
-| Float:OffsetX     | A distância entre o objeto principal e o objeto na direção X.           |
-| Float:OffsetY     | A distância entre o objeto principal e o objeto na direção Y.           |
-| Float:OffsetZ     | A distância entre o objeto principal e o objeto na direção Z.           |
-| Float:RotX        | A rotação X entre o objeto e o objeto principal.                        |
-| Float:RotY        | A rotação Y entre o objeto e o objeto principal.                        |
-| Float:RotZ        | A rotação Z entre o objeto e o objeto principal.                        |
+| Nome              | Descrição                                                                  |
+| ----------------- | -------------------------------------------------------------------------- |
+| playerid          | O ID do jogador.                                                           |
+| objectid          | O objeto de jogador a ser anexado a outro objeto de jogador.               |
+| parentid          | O objeto ao qual anexar o objeto.                                          |
+| Float:OffsetX     | A distância entre o objeto principal e o objeto na direção X.              |
+| Float:OffsetY     | A distância entre o objeto principal e o objeto na direção Y.              |
+| Float:OffsetZ     | A distância entre o objeto principal e o objeto na direção Z.              |
+| Float:RotX        | A rotação X entre o objeto e o objeto principal.                           |
+| Float:RotY        | A rotação Y entre o objeto e o objeto principal.                           |
+| Float:RotZ        | A rotação Z entre o objeto e o objeto principal.                           |
 | bool:syncRotation | Se definido como `false`, a rotação do objectid não mudará com o parentid. |
 
 ## Retorno

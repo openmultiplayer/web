@@ -11,9 +11,9 @@ tags: ["floating-point"]
 
 Kino-convert ang isang integer sa isang float.
 
-| Name  | Description                         |
-| ----- | ----------------------------------- |
-| value | Integer value na i-convert sa isang float|
+| Name  | Description                               |
+| ----- | ----------------------------------------- |
+| value | Integer value na i-convert sa isang float |
 
 ## Returns
 

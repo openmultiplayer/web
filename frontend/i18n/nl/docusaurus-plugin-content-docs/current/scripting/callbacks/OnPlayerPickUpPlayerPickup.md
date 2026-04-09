@@ -11,9 +11,9 @@ tags: ["player", "pickup", "playerpickup"]
 
 Deze callback wordt aangeroepen wanneer een speler een player-pickup oppakt die met [CreatePlayerPickup](../functions/CreatePlayerPickup) is gemaakt.
 
-| Naam     | Beschrijving                                                                                 |
-| -------- | ------------------------------------------------------------------------------------------- |
-| playerid | Het ID van de speler die de player-pickup oppakte.                                          |
+| Naam     | Beschrijving                                                                                         |
+| -------- | ---------------------------------------------------------------------------------------------------- |
+| playerid | Het ID van de speler die de player-pickup oppakte.                                                   |
 | pickupid | Het ID van de player-pickup, teruggegeven door [CreatePlayerPickup](../functions/CreatePlayerPickup) |
 
 ## Returns
@@ -56,5 +56,3 @@ public OnPlayerPickUpPlayerPickup(playerid, pickupid)
 
 - [CreatePlayerPickup](../functions/CreatePlayerPickup): Maakt een pickup die zichtbaar is voor slechts één speler.
 - [DestroyPlayerPickup](../functions/DestroyPlayerPickup): Vernietig een player-pickup.
-
-

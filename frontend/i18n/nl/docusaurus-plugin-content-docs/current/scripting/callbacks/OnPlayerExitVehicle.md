@@ -9,10 +9,10 @@ tags: ["player", "vehicle"]
 
 Deze callback wordt aangeroepen wanneer een speler begint een voertuig te verlaten.
 
-| Naam      | Beschrijving                                     |
-| --------- | ----------------------------------------------- |
+| Naam      | Beschrijving                                   |
+| --------- | ---------------------------------------------- |
 | playerid  | Het ID van de speler die het voertuig verlaat. |
-| vehicleid | Het ID van het voertuig dat de speler verlaat.  |
+| vehicleid | Het ID van het voertuig dat de speler verlaat. |
 
 ## Returns
 

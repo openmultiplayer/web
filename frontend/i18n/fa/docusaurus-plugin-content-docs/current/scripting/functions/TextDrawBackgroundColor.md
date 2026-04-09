@@ -9,10 +9,10 @@ tags: ["textdraw"]
 
 رنگ پس‌زمینه textdraw رو تنظیم می‌کنه (outline/shadow - نه رنگ باکس. برای رنگ باکس، [TextDrawBoxColor](TextDrawBoxColor) رو ببین).
 
-| نام              | توضیحات                                           |
+| نام              | توضیحات                                               |
 | ---------------- | ----------------------------------------------------- |
 | Text:textid      | ID textdraw ای که می‌خوای رنگ پس‌زمینه‌ش رو تنظیم کنی |
-| backgroundColour | رنگی که می‌خوای textdraw روش تنظیم بشه.         |
+| backgroundColour | رنگی که می‌خوای textdraw روش تنظیم بشه.               |
 
 ## مقدار برگشتی
 

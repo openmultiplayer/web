@@ -9,11 +9,11 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi chết, có thể là tự sát hoặc bị giết bởi một người chơi khác.
 
-| Tên             | Mô Tả                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------ |
-| playerid         | ID của người chơi đã chết.                                                                 |
-| killerid         | ID của người chơi đã giết người chơi đó, hoặc INVALID_PLAYER_ID nếu không có ai cả.       |
-| WEAPON:reason    | ID của lý do (xem [danh sách vũ khí](../resources/weaponids)) cho cái chết của người chơi. |
+| Tên           | Mô Tả                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| playerid      | ID của người chơi đã chết.                                                                 |
+| killerid      | ID của người chơi đã giết người chơi đó, hoặc INVALID_PLAYER_ID nếu không có ai cả.        |
+| WEAPON:reason | ID của lý do (xem [danh sách vũ khí](../resources/weaponids)) cho cái chết của người chơi. |
 
 ## Trả Về
 

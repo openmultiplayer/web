@@ -15,9 +15,9 @@ Callback này chỉ được gọi khi xe **hồi sinh** (respawn)! Hàm `Create
 
 Callback này được gọi khi một xe hồi sinh.
 
-| Tên        | Mô tả                         |
-|------------|-------------------------------|
-| vehicleid  | ID của xe vừa hồi sinh.       |
+| Tên       | Mô tả                   |
+| --------- | ----------------------- |
+| vehicleid | ID của xe vừa hồi sinh. |
 
 ## Trả về
 

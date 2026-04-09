@@ -9,12 +9,12 @@ tags: ["player"]
 
 OnPlayerClickMap se pokliče, ko si igralec postavi tarčo(target/waypoint) na zemljevidu menija za premor (desni klik).
 
-| Ime      | Opis                                                                                         |
-| -------- | -------------------------------------------------------------------------------------------- |
-| playerid | ID igralec, ki je postavil tarčo(waypoint) na zemljevidu                                     |
-| Float:fX | X plavajoče koordinate, kjer je igralec kliknil                                              |
-| Float:fY | Y plavajoče koordinate, kjer je igralec kliknil                                              |
-| Float:fZ | Z plavajoče koordinate, kjer je igralec kliknil (nepravilno / netočno - glej opombe spodaj)  |
+| Ime      | Opis                                                                                        |
+| -------- | ------------------------------------------------------------------------------------------- |
+| playerid | ID igralec, ki je postavil tarčo(waypoint) na zemljevidu                                    |
+| Float:fX | X plavajoče koordinate, kjer je igralec kliknil                                             |
+| Float:fY | Y plavajoče koordinate, kjer je igralec kliknil                                             |
+| Float:fZ | Z plavajoče koordinate, kjer je igralec kliknil (nepravilno / netočno - glej opombe spodaj) |
 
 ## Returns
 

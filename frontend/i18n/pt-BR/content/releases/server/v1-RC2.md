@@ -14,18 +14,16 @@ assets:
     size: "20.1 MB"
 ---
 
-O que mudou
--------------------
+## O que mudou
 
-* **Server**: Corrigido `.so` sendo exigido em plugins legados no Linux.
-* **Server**: `reloadfs` reutiliza seu slot para preservar a ordem dos filterscripts.
-* **Server**: Objetos anexados agora são exibidos corretamente para outros jogadores.
-* **Server**: Corrigido um crash ao carregar memória pawn inválida.
-* **Pawn**: Adicionado `GetPlayerMarkerForPlayer`.
-* **Pawn**: Adicionados wrappers de arquivos `a_???`.
-* **Upgrader**: Suporte a múltiplas codepages.
-* **Upgrader**: Exclusão de arquivos.
-* **Upgrader**: Relatório completo de substituições.
-
+- **Server**: Corrigido `.so` sendo exigido em plugins legados no Linux.
+- **Server**: `reloadfs` reutiliza seu slot para preservar a ordem dos filterscripts.
+- **Server**: Objetos anexados agora são exibidos corretamente para outros jogadores.
+- **Server**: Corrigido um crash ao carregar memória pawn inválida.
+- **Pawn**: Adicionado `GetPlayerMarkerForPlayer`.
+- **Pawn**: Adicionados wrappers de arquivos `a_???`.
+- **Upgrader**: Suporte a múltiplas codepages.
+- **Upgrader**: Exclusão de arquivos.
+- **Upgrader**: Relatório completo de substituições.
 
 **Changelog completo**: https://github.com/openmultiplayer/open.mp/compare/v1-RC1...v1-RC2

@@ -10,7 +10,7 @@ tags: ["player"]
 Esta callback é chamada quando um jogador morre, tanto por suicídio ou por ser morto por outros jogadores.
 
 | Nome          | Descrição                                                                             |
-|---------------|---------------------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------------------- |
 | playerid      | O ID do jogador que morreu                                                            |
 | killerid      | O ID do jogador que matou o jogador que morreu, ou INVALID_PLAYER_ID se não houve um. |
 | WEAPON:reason | O ID do motivo da morte do jogador.                                                   |

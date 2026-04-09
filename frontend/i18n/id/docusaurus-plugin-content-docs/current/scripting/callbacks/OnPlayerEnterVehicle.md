@@ -9,10 +9,10 @@ tags: ["player", "vehicle"]
 
 Callback Ini di panggil ketika pemain mulai memasuki kendaraan, artinya pemain belum berada di kendaraan pada saat callback ini dipanggil.
 
-| Nama        | Deskripsi                                          |
-| ----------- | ---------------------------------------------------- |
-| playerid    | ID pemain yang mencoba memasuki kendaraan.    |
-| vehicleid   | ID kendaraan yang coba di masuki oleh pemain. |
+| Nama        | Deskripsi                                                       |
+| ----------- | --------------------------------------------------------------- |
+| playerid    | ID pemain yang mencoba memasuki kendaraan.                      |
+| vehicleid   | ID kendaraan yang coba di masuki oleh pemain.                   |
 | ispassenger | 0 jika masuk sebagai pengemudi. 1 jika masuk sebagai penumpang. |
 
 ## Returns
@@ -41,6 +41,6 @@ Callback ini di panggil ketika PEMAIN mulai memasuki kendaraan, bukan ketika pem
 
 ## Fungsi Terkait
 
-- [PutPlayerInVehicle](../functions/PutPlayerInVehicle): 
-Masukkan pemain ke dalam kendaraan.
+- [PutPlayerInVehicle](../functions/PutPlayerInVehicle):
+  Masukkan pemain ke dalam kendaraan.
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Memeriksa di kursi mana seorang pemain berada.

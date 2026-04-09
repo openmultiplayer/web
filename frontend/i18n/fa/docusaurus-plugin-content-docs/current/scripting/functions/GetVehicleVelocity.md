@@ -9,12 +9,12 @@ tags: ["vehicle"]
 
 سرعت یه وسیله نقلیه رو در محورهای X، Y و Z دریافت می‌کنه.
 
-| نام       | توضیحات                                                                              |
-| --------- | ------------------------------------------------------------------------------------ |
-| vehicleid | ID وسیله نقلیه‌ای که می‌خوای سرعتش رو بگیری.                                          |
-| &Float:x  | متغیر float برای ذخیره سرعت X وسیله نقلیه که بصورت reference پاس داده می‌شه.       |
-| &Float:y  | متغیر float برای ذخیره سرعت Y وسیله نقلیه که بصورت reference پاس داده می‌شه.       |
-| &Float:z  | متغیر float برای ذخیره سرعت Z وسیله نقلیه که بصورت reference پاس داده می‌شه.       |
+| نام       | توضیحات                                                                      |
+| --------- | ---------------------------------------------------------------------------- |
+| vehicleid | ID وسیله نقلیه‌ای که می‌خوای سرعتش رو بگیری.                                 |
+| &Float:x  | متغیر float برای ذخیره سرعت X وسیله نقلیه که بصورت reference پاس داده می‌شه. |
+| &Float:y  | متغیر float برای ذخیره سرعت Y وسیله نقلیه که بصورت reference پاس داده می‌شه. |
+| &Float:z  | متغیر float برای ذخیره سرعت Z وسیله نقلیه که بصورت reference پاس داده می‌شه. |
 
 ## مقادیر برگشتی
 
@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             string[128];
 
         GetVehicleVelocity(GetPlayerVehicleID(playerid), vehVelocity[0], vehVelocity[1], vehVelocity[2]);
-        
+
         format(string, sizeof(string), "You are going at a velocity of X%f, Y%f, Z%f", vehVelocity[0], vehVelocity[1], vehVelocity[2]);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;

@@ -9,10 +9,10 @@ tags: ["player"]
 
 Bu geri çağırma oyuncu sunucudan ayrıldığında çağrılır.
 
-| Parametre     | Açıklama                           |
-| -------- | ---------------------------------- |
-| playerid | Sunucudan ayrılan oyuncunun id'si. |
-| reason   | Sunucudan ayrılma sebebi.          |
+| Parametre | Açıklama                           |
+| --------- | ---------------------------------- |
+| playerid  | Sunucudan ayrılan oyuncunun id'si. |
+| reason    | Sunucudan ayrılma sebebi.          |
 
 ## Çalışınca Vereceği Sonuçlar
 

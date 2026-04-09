@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Ce rappel est appelé lorsqu'un joueur entre dans une zone de gang de joueur.
 
-| Nom       | Description                                            |
-| --------- | ------------------------------------------------------ |
-| playerid  | L'ID du joueur qui est entré dans la zone de gang de joueur. |
-| zoneid    | L'ID de la zone de gang de joueur dans laquelle le joueur est entré.      |
+| Nom      | Description                                                          |
+| -------- | -------------------------------------------------------------------- |
+| playerid | L'ID du joueur qui est entré dans la zone de gang de joueur.         |
+| zoneid   | L'ID de la zone de gang de joueur dans laquelle le joueur est entré. |
 
 ## Retours
 

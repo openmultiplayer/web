@@ -1,7 +1,7 @@
 ---
 title: OnObjectMoved
 sidebar_label: OnObjectMoved
-description: Ta "callback" se pokliče, ko se objekt premakne po MoveObject (ko se neha premikati). 
+description: Ta "callback" se pokliče, ko se objekt premakne po MoveObject (ko se neha premikati).
 tags: []
 ---
 

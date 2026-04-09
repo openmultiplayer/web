@@ -9,7 +9,7 @@ tags: ["player"]
 Este callback se llama cuando un jugador efectúa un disparo de un arma. Solo soporta armas que usen balas. Sólo soporta drive-by por parte del pasajero (no drive-by del conductor, tampoco disparos de seasparrow / hunter).
 
 | Nombre                  | Descripción                                                                                                                |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | playerid                | El ID del jugador que disparó un arma.                                                                                     |
 | WEAPON:weaponid         | El ID del [arma](../resources/weaponids) que usó el jugador para disparar.                                                 |
 | BULLET_HIT_TYPE:hittype | El [tipo](../resources/bullethittypes) de cosa a la que impactó el disparo (nada, jugador, vehículo, o objeto de jugador). |
@@ -61,7 +61,7 @@ Bugs Conocido(s):
 
 - No se llama si disparaste en un vehículo como el conductor o si estás mirando hacia atrás con el apuntado activado (disparando hacia el aire).
 - Se llama como `BULLET_HIT_TYPE_VEHICLE` con el hitid correcto (el vehicleid del vehículo impactado) si estás disparando a un jugador que está en un vehículo. Este no se va a llamar como `BULLET_HIT_TYPE_PLAYER` en absoluto.
-- Parcialmente arreglado en SA-MP 0.3.7: Si información de armas (weapondata) falsa en eviada por un jugador malicioso, los clientes de otros jugadores pueden congelarse o crashear. Para combatir esto, comprobar si el weaponid reportado es capaz de disparar balas. 
+- Parcialmente arreglado en SA-MP 0.3.7: Si información de armas (weapondata) falsa en eviada por un jugador malicioso, los clientes de otros jugadores pueden congelarse o crashear. Para combatir esto, comprobar si el weaponid reportado es capaz de disparar balas.
 
 :::
 

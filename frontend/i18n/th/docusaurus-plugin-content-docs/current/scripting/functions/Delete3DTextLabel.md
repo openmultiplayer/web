@@ -9,8 +9,8 @@ tags: ["3dtextlabel"]
 
 Delete a 3D text label (created with Create3DTextLabel).
 
-| Name      | Description                            |
-| --------- | -------------------------------------- |
+| Name          | Description                            |
+| ------------- | -------------------------------------- |
 | Text3D:textid | The ID of the 3D text label to delete. |
 
 ## ส่งคืน

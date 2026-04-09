@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Prikvačite vozilo za drugo vozilo kao prikolicu.
 
-| Ime       | Deskripcija                                       |
-| --------- | ------------------------------------------------- |
-| trailerid | ID vozila koje će se vući.                        |
-| vehicleid | ID vozila koje će vući.                           |
+| Ime       | Deskripcija                |
+| --------- | -------------------------- |
+| trailerid | ID vozila koje će se vući. |
+| vehicleid | ID vozila koje će vući.    |
 
 ## Returns
 

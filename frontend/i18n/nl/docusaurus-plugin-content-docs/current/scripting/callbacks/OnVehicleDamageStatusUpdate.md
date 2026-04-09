@@ -15,7 +15,7 @@ Voor handige functies rond vehicle damage values, zie [hier](../resources/damage
 
 Deze callback wordt aangeroepen wanneer voertuigonderdelen zoals deuren, banden, panelen of lampen hun damage status wijzigen.
 
-| Naam      | Beschrijving                                                                                     |
+| Naam      | Beschrijving                                                                                      |
 | --------- | ------------------------------------------------------------------------------------------------- |
 | vehicleid | Het ID van het voertuig waarvan de damage status wijzigde.                                        |
 | playerid  | Het ID van de speler die de wijziging synchroniseerde (die de schade veroorzaakte of repareerde). |

@@ -9,7 +9,6 @@ tags: ["npc"]
 
 Este callback es llamado cuando un NPC deja (o sale de) un vehículo.
 
-
 ## Ejemplos
 
 ```c

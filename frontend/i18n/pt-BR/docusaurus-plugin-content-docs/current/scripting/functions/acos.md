@@ -11,8 +11,8 @@ tags: ["math"]
 
 Obter o valor invertido de um cosseno em graus. Na trigonometria, o arco cosseno é a operação inversa do cosseno.
 
-| Nome        | Descrição                                                    |
-| ----------- | ------------------------------------------------------------ |
+| Nome        | Descrição                                                  |
+| ----------- | ---------------------------------------------------------- |
 | Float:value | valor cujo arco cosseno é calculado, no intervalo [-1,+1]. |
 
 ## Retorno

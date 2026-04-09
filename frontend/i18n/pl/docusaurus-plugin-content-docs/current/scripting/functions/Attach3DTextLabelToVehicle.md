@@ -9,13 +9,13 @@ tags: ["vehicle", "3dtextlabel"]
 
 Przyczepia tekst 3D do konkretnego pojazdu.
 
-| Nazwa     | Opis                                                              |
-| --------- | ----------------------------------------------------------------- |
+| Nazwa         | Opis                                                              |
+| ------------- | ----------------------------------------------------------------- |
 | Text3D:textid | Tekst 3D, który chcesz przyczepić.                                |
-| vehicleid | Pojazd, do którego chcesz przyczepić tekst 3D.                    |
-| OffsetX   | Offset X od koordynatów pojazdu gracza (pojazd to 0.0, 0.0, 0.0). |
-| OffsetY   | Offset Y od koordynatów pojazdu gracza (pojazd to 0.0, 0.0, 0.0). |
-| OffsetZ   | Offset Z od koordynatów pojazdu gracza (pojazd to 0.0, 0.0, 0.0). |
+| vehicleid     | Pojazd, do którego chcesz przyczepić tekst 3D.                    |
+| OffsetX       | Offset X od koordynatów pojazdu gracza (pojazd to 0.0, 0.0, 0.0). |
+| OffsetY       | Offset Y od koordynatów pojazdu gracza (pojazd to 0.0, 0.0, 0.0). |
+| OffsetZ       | Offset Z od koordynatów pojazdu gracza (pojazd to 0.0, 0.0, 0.0). |
 
 ## Zwracane wartości
 

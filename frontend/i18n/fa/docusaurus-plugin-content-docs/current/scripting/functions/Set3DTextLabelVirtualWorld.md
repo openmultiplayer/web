@@ -11,10 +11,10 @@ tags: ["3dtextlabel"]
 
 virtual world id ای 3D text label رو تنظیم می‌کنه.
 
-| نام          | توضیحات                                                |
-| ------------- | ---------------------------------------------------------- |
-| Text3D:textid | ID ای از 3D text label برای تنظیم virtual world id.   |
-| virtualWorld  | virtual world که در اون می‌تونی 3D Text رو ببینی |
+| نام           | توضیحات                                             |
+| ------------- | --------------------------------------------------- |
+| Text3D:textid | ID ای از 3D text label برای تنظیم virtual world id. |
+| virtualWorld  | virtual world که در اون می‌تونی 3D Text رو ببینی    |
 
 ## مثال‌ها
 

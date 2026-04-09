@@ -12,7 +12,7 @@ tags: ["player"]
 Este callback é chamado quando um pickup sai do campo visual de um jogador.
 
 | Nome     | Descrição                                                                |
-|----------|--------------------------------------------------------------------------|
+| -------- | ------------------------------------------------------------------------ |
 | pickupid | O ID do pickup, retornado por [CreatePickup](../functions/CreatePickup). |
 | playerid | O ID do jogador cujo pickup saiu do campo visual.                        |
 

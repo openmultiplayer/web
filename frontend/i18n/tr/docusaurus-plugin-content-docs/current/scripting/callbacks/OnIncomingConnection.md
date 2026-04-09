@@ -9,7 +9,7 @@ tags: []
 
 Bu geri çağırma bir IP adresi sunucuya erişim sağlamaya çalıştığında tetiklenir. BlockIpAddress kullanarak gelen bağlantıları engelleyebilirsiniz.
 
-| Parametre        | Açıklama                                   |
+| Parametre    | Açıklama                                      |
 | ------------ | --------------------------------------------- |
 | playerid     | Bağlantı kurmaya çalışan oyuncunun ID'si.     |
 | ip_address[] | Bağlantı kurmaya çalışan oyuncunun IP adresi. |

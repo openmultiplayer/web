@@ -16,7 +16,6 @@ description: فهرستی منظم از ابزارها، کتابخانه‌ها
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - تکمیل خودکار Pawn برای Visual Studio Code.
 - **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - ویرایشگر Zone برای ساخت Area و موارد مشابه.
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - ویرایشگر نقشه محبوب برای SA:MP.
-- **[open.mp Server Browser](https://github.com/adib-yg/openmp-server-browser)** - مرورگر سرور open.mp با رابط گرافیکی برای دسکتاپ.
 
 ## کتابخانه‌ها
 
@@ -157,7 +156,7 @@ description: فهرستی منظم از ابزارها، کتابخانه‌ها
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - تعمیر باگ‌های بافت نقشه GTA San Andreas.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - ابزار مرورگر انیمیشن برای SA:MP.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - بررسی می‌کند که آیا بازیکن کاربر اندروید است یا نه.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - ویرایشگر TextDraw که ویژگی‌های غنی دارد.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - ویرایشگر TextDraw که ویژگی‌های غنی دارد.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - ویرایشگر نقشه پیشرفته با ویژگی‌های فراوان.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - ویرایشگر نقشه درون بازی برای SA:MP.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - این ویرایشگر نقشه درون بازی است که به شما اجازه بافت‌دهی تا شاخص مواد 15 (16 مواد) و همچنین تنظیم رنگ برای آن شاخص مواد روی اشیاء را می‌دهد.

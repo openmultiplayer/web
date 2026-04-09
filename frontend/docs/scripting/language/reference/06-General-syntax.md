@@ -17,13 +17,13 @@
 
 **Comments**
 
-    Text between the tokens /_ and _/ (both tokens may be at the same
+    Text between the tokens /* and */ (both tokens may be at the same
     line or at different lines) and text behind // (up to the end of the line)
     is a programming comment. The parser treats a comment as white
     space. Comments may not be nested.
 
-    A comment that starts with “/\*_ ” (two stars and white-space behind
-    the second star) and ends with “_/” is a documentation comment.
+    A comment that starts with “/** ” (two stars and white-space behind
+    the second star) and ends with “*/” is a documentation comment.
     A comment that starts with “/// ” (three slashes and white-space
     behind the third slash) is also a documentation comment. The parser
     may treat documentation comments in a special way; for example, it
@@ -330,4 +330,4 @@ A tag consists of an identifier followed by a colon. There may be no white space
 
 ---
 
-[Go Back to Contents](00-Contents)
+[Go Back to Contents](Contents)

@@ -11,10 +11,10 @@ tags: ["player", "object", "playerobject"]
 
 چک می‌کنه که آیا یه player-object برخورد دوربین فعال داره یا نه. ([SetPlayerObjectNoCameraCollision](SetPlayerObjectNoCameraCollision))
 
-| نام      | توضیحات                         |
-|----------|--------------------------------|
-| playerid | ID بازیکن.                       |
-| objectid | ID آبجکتی که باید چک بشه.       |
+| نام      | توضیحات                   |
+| -------- | ------------------------- |
+| playerid | ID بازیکن.                |
+| objectid | ID آبجکتی که باید چک بشه. |
 
 ## مقادیر برگشتی
 

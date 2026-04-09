@@ -9,11 +9,11 @@ tags: []
 
 Ta povratni klic se pokliče, ko igralec vstopi v mod trgovino ali jo zapusti.
 
-| Ime        | Opis                                                                     |
-| ---------- | ------------------------------------------------------------------------ |
-| playerid   | ID predvajalnika, ki je vstopil v modshop ali izstopil iz njega          |
-| enterexit  | 1, če je igralec vnesel 0, če je zapustil modshop                        |
-| interiorid | Modshop notranji ID, ki ga predvajalnik vnese (0, če izstopi)            |
+| Ime        | Opis                                                            |
+| ---------- | --------------------------------------------------------------- |
+| playerid   | ID predvajalnika, ki je vstopil v modshop ali izstopil iz njega |
+| enterexit  | 1, če je igralec vnesel 0, če je zapustil modshop               |
+| interiorid | Modshop notranji ID, ki ga predvajalnik vnese (0, če izstopi)   |
 
 ## Returns
 

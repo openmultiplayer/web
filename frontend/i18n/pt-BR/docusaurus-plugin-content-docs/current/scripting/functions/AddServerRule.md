@@ -11,10 +11,10 @@ tags: ["rule"]
 
 Adicionar uma regra do servidor.
 
-| Nome             | Descrição                                  |
-| ---------------- | ------------------------------------------ |
-| const rule[]     | O nome da regra do servidor a adicionar.  |
-| const format[]   | O valor da regra do servidor.              |
+| Nome             | Descrição                                        |
+| ---------------- | ------------------------------------------------ |
+| const rule[]     | O nome da regra do servidor a adicionar.         |
+| const format[]   | O valor da regra do servidor.                    |
 | OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag. |
 
 ## Retorno

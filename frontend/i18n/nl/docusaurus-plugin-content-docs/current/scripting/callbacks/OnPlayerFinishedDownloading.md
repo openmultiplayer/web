@@ -11,7 +11,7 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler klaar is met het downloaden van aangepaste modellen. Voor meer informatie over het toevoegen van aangepaste modellen aan je server, zie de [release thread](https://sampforum.blast.hk/showthread.php?tid=644105) en [deze tutorial](https://sampforum.blast.hk/showthread.php?tid=644123).
 
-| Naam         | Beschrijving                                                                    |
+| Naam         | Beschrijving                                                                   |
 | ------------ | ------------------------------------------------------------------------------ |
 | playerid     | Het ID van de speler die klaar was met het downloaden van aangepaste modellen. |
 | virtualworld | Het ID van de virtual world waarvoor de speler klaar was met downloaden.       |

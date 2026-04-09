@@ -11,12 +11,12 @@ tags: ["player", "pickup", "playerpickup"]
 
 نوع یک player pickup رو تنظیم می‌کنه.
 
-| نام                | توضیحات                                            |
-|--------------------|-----------------------------------------------------|
-| playerid           | ID بازیکن.                                         |
-| pickupid           | ID player pickup.                                  |
+| نام                | توضیحات                                                   |
+| ------------------ | --------------------------------------------------------- |
+| playerid           | ID بازیکن.                                                |
+| pickupid           | ID player pickup.                                         |
 | type               | [نوع pickup](../resources/pickuptypes) که باید تنظیم بشه. |
-| bool:update = true | بروزرسانی pickup برای بازیکن. (true/false)         |
+| bool:update = true | بروزرسانی pickup برای بازیکن. (true/false)                |
 
 ## مقدار برگشتی
 
@@ -30,7 +30,7 @@ new PlayerPickup[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     PlayerPickup[playerid] = CreatePlayerPickup(playerid, 1242, 1, 2010.0979, 1222.0642, 10.8206, -1);
-    
+
     SetPlayerPickupType(playerid, PlayerPickup[playerid], 2);
     return 1;
 }

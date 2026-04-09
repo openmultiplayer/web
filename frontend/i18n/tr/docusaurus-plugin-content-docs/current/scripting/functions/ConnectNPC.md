@@ -9,10 +9,10 @@ tags: ["npc"]
 
 Sunucuya NPC bağlama.
 
-| Parametre | Açıklama                                                                                  |
-| --------- | ----------------------------------------------------------------------------------------- |
-| name[]    | NPC'ye verilen isim. Normal oyuncu isimleriyle aynı kurallara uymalıdır (ğ,ü içermez vb)  |
-| script[]  | npcmodes klasöründe bulunan NPC uzantılı komut dosyası adı. (.amx uzantısı olmadan)       |
+| Parametre | Açıklama                                                                                 |
+| --------- | ---------------------------------------------------------------------------------------- |
+| name[]    | NPC'ye verilen isim. Normal oyuncu isimleriyle aynı kurallara uymalıdır (ğ,ü içermez vb) |
+| script[]  | npcmodes klasöründe bulunan NPC uzantılı komut dosyası adı. (.amx uzantısı olmadan)      |
 
 ## Çalışınca Vereceği Sonuçlar
 

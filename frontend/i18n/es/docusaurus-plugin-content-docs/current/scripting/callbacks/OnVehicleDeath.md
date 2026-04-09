@@ -8,9 +8,9 @@ tags: ["vehicle"]
 
 Este callback se llama cuando un vehículo es destruido - ya sea explotando o siendo sumergido en el agua.
 
-| Nombre    | Descripción                                                                                                                                                     |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vehicleid | El ID del vehículo destruido.                                                                                                                       |
+| Nombre    | Descripción                                                                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vehicleid | El ID del vehículo destruido.                                                                                                                                                 |
 | killerid  | El ID del jugador que informó (sincronizó) la destrucción del vehículo (el nombre es engañoso). Generalmente el conductor o un pasajero (si lo hay) o el jugador más cercano. |
 
 ## Devoluciones

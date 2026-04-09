@@ -20,24 +20,24 @@ Dit is een samenvatting met de belangrijkste richtlijnen en verwijzingen voor pl
 
 Stappen (sterk verkort):
 
-1) Maak een Win32 DLL-project (Empty Project)
-2) Voeg een module definition file (.def) toe met `EXPORTS`
-3) Voeg SDK-bestanden toe (`amx/` en headers)
-4) Implementeer exports: `Supports`, `Load`, `Unload`, `AmxLoad`, `AmxUnload` (en optioneel `ProcessTick`)
-5) Registreer je natives met `amx_Register`
+1. Maak een Win32 DLL-project (Empty Project)
+2. Voeg een module definition file (.def) toe met `EXPORTS`
+3. Voeg SDK-bestanden toe (`amx/` en headers)
+4. Implementeer exports: `Supports`, `Load`, `Unload`, `AmxLoad`, `AmxUnload` (en optioneel `ProcessTick`)
+5. Registreer je natives met `amx_Register`
 
 Voorbeeld-exports skeleton zie originele guide; hieronder beknopte highlights.
 
 ## Belangrijke exports
 
-| Functie         | Doel                                                                 |
-| --------------- | -------------------------------------------------------------------- |
-| Supports()      | Retourneert capabilities (bijv. `SUPPORTS_VERSION`, `SUPPORTS_AMX_NATIVES`) |
-| Load(void**)    | Ontvangt pointers (AMX export table, `logprintf`)                    |
-| Unload()        | Opruimen bij server shutdown                                         |
-| AmxLoad(AMX*)   | Geregistreerde natives koppelen per AMX-instance                     |
-| AmxUnload(AMX*) | AMX-instance uit eigen lijsten verwijderen                           |
-| ProcessTick()   | (Optioneel) periodiek aangeroepen per server-loop                    |
+| Functie          | Doel                                                                        |
+| ---------------- | --------------------------------------------------------------------------- |
+| Supports()       | Retourneert capabilities (bijv. `SUPPORTS_VERSION`, `SUPPORTS_AMX_NATIVES`) |
+| Load(void\*\*)   | Ontvangt pointers (AMX export table, `logprintf`)                           |
+| Unload()         | Opruimen bij server shutdown                                                |
+| AmxLoad(AMX\*)   | Geregistreerde natives koppelen per AMX-instance                            |
+| AmxUnload(AMX\*) | AMX-instance uit eigen lijsten verwijderen                                  |
+| ProcessTick()    | (Optioneel) periodiek aangeroepen per server-loop                           |
 
 ## Kern-defines/structs (selectie)
 
@@ -70,5 +70,3 @@ Het “Invoke”-mechanisme kan SA-MP-natives aanroepen vanuit je plugin. Je hou
 - Publiceer met broncode; documenteer je natives (namen/params)
 
 Deze pagina is een compacte vertaling/samenvatting; raadpleeg het origineel voor volledige voorbeelden en codeblokken.
-
-

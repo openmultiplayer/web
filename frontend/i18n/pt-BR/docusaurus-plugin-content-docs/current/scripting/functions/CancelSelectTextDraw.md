@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Cancela a seleção de textdraw com o mouse
 
-| Nome     | Descrição                                                           |
-| -------- | ------------------------------------------------------------------- |
-| playerid | O ID do jogador que deve ter a seleção de textdraw desabilitada    |
+| Nome     | Descrição                                                       |
+| -------- | --------------------------------------------------------------- |
+| playerid | O ID do jogador que deve ter a seleção de textdraw desabilitada |
 
 ## Retorno
 

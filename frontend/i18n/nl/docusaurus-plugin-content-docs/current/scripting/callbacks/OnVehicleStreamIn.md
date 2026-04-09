@@ -9,8 +9,8 @@ tags: ["vehicle"]
 
 Deze callback wordt aangeroepen wanneer een voertuig ingestreamd wordt bij de client van een speler.
 
-| Naam        | Beschrijving                                         |
-| ----------- | ---------------------------------------------------- |
+| Naam        | Beschrijving                                           |
+| ----------- | ------------------------------------------------------ |
 | vehicleid   | Het ID van het voertuig dat voor de speler instreamde. |
 | forplayerid | Het ID van de speler voor wie het voertuig instreamde. |
 

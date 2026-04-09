@@ -1,7 +1,7 @@
 ---
 title: 皮肤
 sidebar_label: 皮肤
-description: 本页面包含《圣安地列斯多人联机》中所有可用皮肤。
+description: 本页面包含 SA-MP 中所有可用皮肤。
 ---
 
 ## 皮肤列表

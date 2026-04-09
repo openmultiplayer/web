@@ -114,16 +114,16 @@ Voegt de inhoud van een bestand in op de plek van de include. Er zijn relatieve 
 
 Een verzameling opties die het gedrag van je script/compilatie beïnvloeden. Voor SA:MP/open.mp relevante voorbeelden:
 
-| Naam       | Waarden                       | Omschrijving |
-| ---------- | ----------------------------- | ------------ |
-| codepage   | naam/waarde                   | Stelt de Unicode-codepage in voor strings. |
-| compress   | 1/0                           | Niet ondersteund in SA:MP. |
-| deprecated | symbool                       | Waarschuwing bij gebruik van het symbool. |
-| dynamic    | waarde (meestal 2^n)          | Grootte van stack/heap in cellen. |
-| library    | dll-naam                      | Geeft de bibliotheek met natives aan. |
-| pack       | 1/0                           | Verwisselt de betekenis van !"" en "" (packed strings). |
-| tabsize    | waarde                        | Tabgrootte voor indentatie-waarschuwingen (SA:MP: 4). |
-| unused     | symbool                       | Onderdrukt "symbol is never used" voor het symbool. |
+| Naam       | Waarden              | Omschrijving                                            |
+| ---------- | -------------------- | ------------------------------------------------------- |
+| codepage   | naam/waarde          | Stelt de Unicode-codepage in voor strings.              |
+| compress   | 1/0                  | Niet ondersteund in SA:MP.                              |
+| deprecated | symbool              | Waarschuwing bij gebruik van het symbool.               |
+| dynamic    | waarde (meestal 2^n) | Grootte van stack/heap in cellen.                       |
+| library    | dll-naam             | Geeft de bibliotheek met natives aan.                   |
+| pack       | 1/0                  | Verwisselt de betekenis van !"" en "" (packed strings). |
+| tabsize    | waarde               | Tabgrootte voor indentatie-waarschuwingen (SA:MP: 4).   |
+| unused     | symbool              | Onderdrukt "symbol is never used" voor het symbool.     |
 
 ### Deprecated-voorbeeld
 
@@ -133,7 +133,7 @@ new
 
 #pragma deprecated gOldVariable
 
-main() {printf("%d", gOldVariable);} 
+main() {printf("%d", gOldVariable);}
 ```
 
 ## `#tryinclude`
@@ -150,5 +150,3 @@ printf("%d", MOO);
 #undef MOO
 printf("%d", MOO); // compileert niet meer
 ```
-
-

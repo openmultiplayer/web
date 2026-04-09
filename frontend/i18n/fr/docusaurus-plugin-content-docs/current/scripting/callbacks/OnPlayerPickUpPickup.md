@@ -9,8 +9,8 @@ tags: ["player"]
 
 Appelée lorsqu'un joueur prend un pickup crée via CreatePickup.
 
-| Nom     | Description                                 |
-| -------- | ------------------------------------------ |
+| Nom            | Description                          |
+| -------------- | ------------------------------------ |
 | `int` playerid | L'ID du joueur qui a prit le pickup. |
 | `int` pickupid | L'ID du pickup que le joueur a prit. |
 

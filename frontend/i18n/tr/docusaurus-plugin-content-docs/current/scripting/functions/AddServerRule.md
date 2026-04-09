@@ -11,11 +11,11 @@ tags: ["rule"]
 
 Bir sunucu kuralı ekleyin.
 
-| İsim              | Açıklama                                                    |
-| ----------------- | ----------------------------------------------------------- |
-| const rule[]      | Eklemek istediğiniz sunucu kuralının adı.                   |
-| const format[]    | Sunucu kural değeri.                                        |
-| OPEN_MP_TAGS:...  | Herhangi bir etiket türünden belirsiz sayıda argüman.       |
+| İsim             | Açıklama                                              |
+| ---------------- | ----------------------------------------------------- |
+| const rule[]     | Eklemek istediğiniz sunucu kuralının adı.             |
+| const format[]   | Sunucu kural değeri.                                  |
+| OPEN_MP_TAGS:... | Herhangi bir etiket türünden belirsiz sayıda argüman. |
 
 ## Çalışınca Vereceği Sonuçlar
 

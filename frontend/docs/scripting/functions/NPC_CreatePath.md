@@ -24,7 +24,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new pathid = NPC_CreatePath();
         g_PatrolPath = pathid;
-        
+
         // If you wanted, you could already add points to the path here
         // NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5)
         // NPC_AddPointToPath(g_PatrolPath, x1, y1, z1, 1.5)

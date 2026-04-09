@@ -11,11 +11,11 @@ tags: ["player", "object", "playerobject"]
 
 Postavi brzinu kretanja player-objekta.
 
-| Ime         | Deskripcija                                               |
-|-------------|-----------------------------------------------------------|
-| playerid    | ID igrača.                                                |
-| objectid    | ID player-objekta kojem se seta brzina kretanja.          |
-| Float:speed | Brzina kojom će se objekat kretati (jedinica u sekundi).  |
+| Ime         | Deskripcija                                              |
+| ----------- | -------------------------------------------------------- |
+| playerid    | ID igrača.                                               |
+| objectid    | ID player-objekta kojem se seta brzina kretanja.         |
+| Float:speed | Brzina kojom će se objekat kretati (jedinica u sekundi). |
 
 ## Returnovi
 

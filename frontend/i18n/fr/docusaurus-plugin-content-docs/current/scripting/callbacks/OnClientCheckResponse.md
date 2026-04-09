@@ -9,12 +9,12 @@ tags: []
 
 Ce rappel est appelé lorsque la demande SendClientCheck est terminée.
 
-| Nom          | Description                       |
-| -------------| --------------------------------- |
-| playerid     | L'ID du joueur vérifié.           |
-| actionid     | Le type de vérification effectuée.|
-| memaddr      | L'adresse demandée.               |
-| retndata     | Le résultat de la vérification.   |
+| Nom      | Description                        |
+| -------- | ---------------------------------- |
+| playerid | L'ID du joueur vérifié.            |
+| actionid | Le type de vérification effectuée. |
+| memaddr  | L'adresse demandée.                |
+| retndata | Le résultat de la vérification.    |
 
 ## Retours
 
@@ -39,6 +39,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
     return 1;
 }
 ```
+
 ## Remarques
 
 :::warning
@@ -51,6 +52,6 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 ## Fonctions Relatives
 
-La fonction suivante peut être utile, car elle est liée à ce rappel d'une manière ou d'une autre. 
+La fonction suivante peut être utile, car elle est liée à ce rappel d'une manière ou d'une autre.
 
 - [SendClientCheck](../functions/SendClientCheck): Effectue une vérification de mémoire sur le client.

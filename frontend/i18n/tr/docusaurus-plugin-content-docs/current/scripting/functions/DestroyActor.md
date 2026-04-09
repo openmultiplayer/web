@@ -11,9 +11,9 @@ tags: []
 
 CreateActor ile oluşturulan aktörü silin.
 
-| Parametre | Açıklama                                                 |
-| -------   | -------------------------------------------------------- |
-| actorid   | Silinecek aktörün ID'si.                                 |
+| Parametre | Açıklama                 |
+| --------- | ------------------------ |
+| actorid   | Silinecek aktörün ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

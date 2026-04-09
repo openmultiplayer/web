@@ -9,13 +9,13 @@ tags: ["vehicle"]
 
 Fügt ein 'static' vehicle (models werden für den Spieler vorgeladen) zum Gamemode hinzu.
 
-| Name                                     | Beschreibung                            |
-| ---------------------------------------- | -------------------------------------- |
-| modelid                                  | Die Model ID des Fahrzeugs.          |
-| Float:spawn_X                            | Die X-Koordinate des Fahrzeugs.      |
-| Float:spawn_Y                            | Die Y-Koordinate des Fahrzeugs.      |
-| Float:spawn_Z                            | Die Z-Koordinate des Fahrzeugs.      |
-| Float:z_angle                            | Direction of vehicle - angle.          |
+| Name                                  | Beschreibung                                      |
+| ------------------------------------- | ------------------------------------------------- |
+| modelid                               | Die Model ID des Fahrzeugs.                       |
+| Float:spawn_X                         | Die X-Koordinate des Fahrzeugs.                   |
+| Float:spawn_Y                         | Die Y-Koordinate des Fahrzeugs.                   |
+| Float:spawn_Z                         | Die Z-Koordinate des Fahrzeugs.                   |
+| Float:z_angle                         | Direction of vehicle - angle.                     |
 | [color1](../resources/vehiclecolorid) | Die ID der Primärfarbe. -1 für zufällige Farbe.   |
 | [color2](../resources/vehiclecolorid) | Die ID der Sekundärfarbe. -1 für zufällige Farbe. |
 

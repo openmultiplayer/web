@@ -9,10 +9,10 @@ tags: ["player"]
 
 Este callback é chamado quando um jogador é destreado pelo cliente de outro jogador.
 
-| Nome        | Descrição                                     |
-| ----------- | --------------------------------------------- |
-| playerid    | O jogador que foi destreado.                 |
-| forplayerid | O jogador que destreou o outro jogador.      |
+| Nome        | Descrição                               |
+| ----------- | --------------------------------------- |
+| playerid    | O jogador que foi destreado.            |
+| forplayerid | O jogador que destreou o outro jogador. |
 
 ## Retornos
 
@@ -36,8 +36,8 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## Callbacks Relacionados
 
-Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma. 
+Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma.
 
-- [OnPlayerStreamIn](OnPlayerStreamIn): Este callback é chamado quando um jogador é transmitido para outro jogador. 
-- [OnActorStreamIn](OnActorStreamIn): Este callback é chamado quando um ator é transmitido para um jogador. 
-- [OnVehicleStreamIn](OnVehicleStreamIn): Este callback é chamado quando um veículo é transmitido para um jogador. 
+- [OnPlayerStreamIn](OnPlayerStreamIn): Este callback é chamado quando um jogador é transmitido para outro jogador.
+- [OnActorStreamIn](OnActorStreamIn): Este callback é chamado quando um ator é transmitido para um jogador.
+- [OnVehicleStreamIn](OnVehicleStreamIn): Este callback é chamado quando um veículo é transmitido para um jogador.

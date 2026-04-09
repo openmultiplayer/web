@@ -2,7 +2,7 @@
 
 Witamy na wikipedii SA-MP, utrzymywanej przez zespół open.mp i szerszą społeczność SA-MP!
 
-Ta strona ma na celu zapewnienie łatwo dostępnego, 
+Ta strona ma na celu zapewnienie łatwo dostępnego,
 łatwego do współtworzenia źródła dokumentacji dla SA-MP oraz, docelowo, open.mp.
 
 ## Wikipedia SA-MP została wyłączona

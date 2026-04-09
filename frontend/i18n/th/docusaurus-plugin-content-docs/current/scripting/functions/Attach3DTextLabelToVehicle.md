@@ -9,13 +9,13 @@ tags: ["vehicle", "3dtextlabel"]
 
 Attaches a 3D Text Label to a specific vehicle.
 
-| Name      | Description                                                                  |
-| --------- | ---------------------------------------------------------------------------- |
+| Name          | Description                                                                  |
+| ------------- | ---------------------------------------------------------------------------- |
 | Text3D:textid | The 3D Text Label you want to attach.                                        |
-| vehicleid | The vehicle you want to attach the 3D Text Label to.                         |
-| OffsetX   | The Offset-X coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
-| OffsetY   | The Offset-Y coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
-| OffsetZ   | The Offset-Z coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
+| vehicleid     | The vehicle you want to attach the 3D Text Label to.                         |
+| OffsetX       | The Offset-X coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
+| OffsetY       | The Offset-Y coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
+| OffsetZ       | The Offset-Z coordinate of the player vehicle (the vehicle is 0.0,0.0,0.0).. |
 
 ## ส่งคืน
 

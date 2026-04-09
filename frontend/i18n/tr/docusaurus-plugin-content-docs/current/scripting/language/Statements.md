@@ -3,7 +3,6 @@ title: "Anahtar Kelimeler: İfadeler"
 sidebar_label: "Anahtar Kelimeler: İfadeler"
 ---
 
-
 ## `assert`
 
 Eğer ifade mantıksal olarak yanlış değerlendirilirse, çalışmayı durdurur ve bir çalışma zamanı hatası oluşturur. Sadece main() bloğunda çalıştığı görünüyor. Assert ifadesi, mantıksal (programcının) bir hatayı, asla çalışma zamanı (kullanıcının) hatasını göstermek için kullanılmalıdır.
@@ -415,7 +414,7 @@ Etiket kendi başına bir satırda olmalı ve bir iki nokta üst üste ile biter
 
 If, en önemli operatörlerden biridir. Bir şeyin yapılması gerekip gerekmediğini belirler ve buna göre hareket eder; goto ile birlikte neredeyse tüm diğer kontrol yapılarının
 
- temelidir:
+temelidir:
 
 ```c
 for (new i = 0; i < 10; i++)

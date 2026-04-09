@@ -9,9 +9,9 @@ tags: ["player"]
 
 Apelat atunci când un jucător încearcă să apară prin selecția clasei, fie apăsând SHIFT, fie făcând clic pe butonul „Apariție”.
 
-| Name     | Descriere                                     |
-| -------- | --------------------------------------------- |
-| playerid | ID-ul jucătorului care a solicitat să apară.  |
+| Name     | Descriere                                    |
+| -------- | -------------------------------------------- |
+| playerid | ID-ul jucătorului care a solicitat să apară. |
 
 ## Returnări
 

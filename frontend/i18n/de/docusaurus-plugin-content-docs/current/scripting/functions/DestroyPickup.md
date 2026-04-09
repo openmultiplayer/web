@@ -9,8 +9,8 @@ tags: []
 
 Löscht ein mit CreatePickup erstelltes Pickup.
 
-| Name   | Beschreibung                                                 |
-| ------ | ----------------------------------------------------------- |
+| Name   | Beschreibung                                                            |
+| ------ | ----------------------------------------------------------------------- |
 | pickup | Die ID des Pickups, dass gelöscht wird (Rückgabewert bei CreatePickup). |
 
 ## Rückgabe(return value)

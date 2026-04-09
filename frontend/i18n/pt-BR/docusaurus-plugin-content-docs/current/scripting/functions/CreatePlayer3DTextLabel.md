@@ -9,19 +9,19 @@ tags: ["player", "3dtextlabel"]
 
 Cria um rótulo de texto 3D apenas para um jogador específico
 
-| Nome               | Descrição                                                                       |
-| ------------------ | ------------------------------------------------------------------------------- |
-| playerid           | O jogador que deve ver o rótulo de texto 3D recém-criado.                      |
-| const text[]       | O texto a ser exibido.                                                         |
-| colour             | A cor do texto                                                                  |
-| Float:x            | Coordenada X (ou deslocamento se anexado)                                      |
-| Float:y            | Coordenada Y (ou deslocamento se anexado)                                      |
-| Float:z            | Coordenada Z (ou deslocamento se anexado)                                      |
-| Float:drawDistance | A distância onde você pode ver o rótulo de texto 3D                            |
-| attachedplayer     | O jogador ao qual você quer anexar o rótulo de texto 3D. (Nenhum: INVALID_PLAYER_ID)   |
+| Nome               | Descrição                                                                             |
+| ------------------ | ------------------------------------------------------------------------------------- |
+| playerid           | O jogador que deve ver o rótulo de texto 3D recém-criado.                             |
+| const text[]       | O texto a ser exibido.                                                                |
+| colour             | A cor do texto                                                                        |
+| Float:x            | Coordenada X (ou deslocamento se anexado)                                             |
+| Float:y            | Coordenada Y (ou deslocamento se anexado)                                             |
+| Float:z            | Coordenada Z (ou deslocamento se anexado)                                             |
+| Float:drawDistance | A distância onde você pode ver o rótulo de texto 3D                                   |
+| attachedplayer     | O jogador ao qual você quer anexar o rótulo de texto 3D. (Nenhum: INVALID_PLAYER_ID)  |
 | attachedvehicle    | O veículo ao qual você quer anexar o rótulo de texto 3D. (Nenhum: INVALID_VEHICLE_ID) |
 | bool:testLOS       | 0/1 Testa a linha de visão para que este texto não possa ser visto através de paredes |
-| OPEN_MP_TAGS:...   | Número indefinido de argumentos de qualquer tag.                               |
+| OPEN_MP_TAGS:...   | Número indefinido de argumentos de qualquer tag.                                      |
 
 ## Retorno
 

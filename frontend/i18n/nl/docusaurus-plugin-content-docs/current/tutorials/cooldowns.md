@@ -58,5 +58,3 @@ Meet de tijd tussen start en finish met twee `GetTickCount()`-calls en trek ze a
 - Handig voor cooldowns én metingen (stopwatch)
 
 Zie het origineel voor volledige codevoorbeelden: de logica is 1:1 overgenomen, de uitleg hier is vereenvoudigd.
-
-

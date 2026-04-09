@@ -11,10 +11,10 @@ tags: ["actor"]
 
 سلامتی actor رو تنظیم می‌کنه.
 
-| نام         | توضیحات                               |
-| ------------ | ----------------------------------------- |
+| نام          | توضیحات                                     |
+| ------------ | ------------------------------------------- |
 | actorid      | ID actor که سلامتیش رو می‌خوایم تنظیم کنیم. |
-| Float:health | مقداری که سلامتی actor بهش تنظیم می‌شه.  |
+| Float:health | مقداری که سلامتی actor بهش تنظیم می‌شه.     |
 
 ## مقدار برگشتی
 
@@ -30,7 +30,7 @@ new gMyActor;
 public OnGameModeInit()
 {
     gMyActor = CreateActor(179, 316.1, -134.0, 999.6, 90.0); // Actor as salesperson in Ammunation
-    
+
     SetActorHealth(gMyActor, 100.0);
     return 1;
 }

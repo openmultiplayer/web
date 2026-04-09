@@ -1,7 +1,7 @@
 import Layout from "@theme/Layout";
 import { ReactNode, useEffect, useMemo, useState } from "react";
-import Translate from '@docusaurus/Translate';
-import { FixedSizeList } from "react-window";
+import { default as Translate, translate } from "@docusaurus/Translate";
+import { List as FixedSizeList, RowComponentProps } from "react-window";
 import LoadingBanner from "../components/LoadingBanner";
 import ServerRow from "../components/ServerRow";
 import { ToastContainer } from "../components/Toast";
@@ -9,14 +9,6 @@ import { API_ADDRESS } from "../constants";
 import { CoreServerData } from "../types";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
-
-import { renderToStaticMarkup } from "react-dom/server";
-
-const translate = (id: string, message: string, description?: string) => {
-  return renderToStaticMarkup(
-    <Translate id={id} description={description}>{message}</Translate>
-  );
-};
 
 const getServers = async () => {
   try {
@@ -55,7 +47,7 @@ const filterServers = (data: CoreServerData[], q: Query): CoreServerData[] => {
       (s) =>
         s.ip.toLowerCase().includes(searchTerm) ||
         s.hn.toLowerCase().includes(searchTerm) ||
-        s.gm.toLowerCase().includes(searchTerm)
+        s.gm.toLowerCase().includes(searchTerm),
     );
   }
 
@@ -69,6 +61,8 @@ const filterServers = (data: CoreServerData[], q: Query): CoreServerData[] => {
 };
 
 const StatsComponent = ({ stats: { players, servers } }: { stats: Stats }) => {
+  const average = players / servers;
+  const averageStr = (isNaN(average) ? 0 : average).toFixed(1);
   return (
     <div className="servers-center">
       <p className="servers-stats">
@@ -78,10 +72,12 @@ const StatsComponent = ({ stats: { players, servers } }: { stats: Stats }) => {
           values={{
             players: <strong>{players}</strong>,
             servers: <strong>{servers}</strong>,
-            average: <strong>{(players / servers).toFixed(1)}</strong>
+            average: <strong>{averageStr}</strong>,
           }}
         >
-          {'{players} players on {servers} servers with an average of {average} players per server.'}
+          {
+            "{players} players on {servers} servers with an average of {average} players per server."
+          }
         </Translate>
       </p>
     </div>
@@ -101,10 +97,8 @@ const List = ({ data }: { data: CoreServerData[] }) => {
   }, [data, search, sort]);
 
   const rowHeight = 134;
-  const listHeight = 1000;
-  const visibleItems = Math.floor(listHeight / rowHeight);
 
-  const Row = ({ index, style }) => {
+  const Row = ({ index, style }: RowComponentProps) => {
     const server = filteredData[index];
     return (
       <div style={style}>
@@ -114,7 +108,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
   };
 
   return (
-    <>
+    <div className="servers-list-wrapper">
       <form className="servers-list-form">
         <div className="servers-controls">
           <select
@@ -123,28 +117,39 @@ const List = ({ data }: { data: CoreServerData[] }) => {
             className="servers-select"
           >
             <option value="relevance">
-                          <Translate id="servers.sort.relevance" description="Sort by relevance">
-                            Relevance
-                          </Translate>
-                        </option>
-                        <option value="pc">
-                          <Translate id="servers.sort.players" description="Sort by players">
-                            Players
-                          </Translate>
-                        </option>
+              <Translate
+                id="servers.sort.relevance"
+                description="Sort by relevance"
+              >
+                Relevance
+              </Translate>
+            </option>
+            <option value="pc">
+              <Translate
+                id="servers.sort.players"
+                description="Sort by players"
+              >
+                Players
+              </Translate>
+            </option>
           </select>
 
           <input
             type="text"
-            placeholder={translate(
-            "servers.search.placeholder",
-            "Search by IP or Name",
-            "Search input placeholder"
-          )}
+            placeholder={translate({
+              id: "servers.search.placeholder",
+              message: "Search by IP or Name",
+              description: "Search input placeholder",
+            })}
             name="search"
             id="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.preventDefault();
+              }
+            }}
             className="servers-search"
           />
         </div>
@@ -152,16 +157,15 @@ const List = ({ data }: { data: CoreServerData[] }) => {
 
       <StatsComponent stats={getStats(data)} />
 
-      <FixedSizeList
-        height={(filteredData.length + 1) * rowHeight}
-        width="100%"
-        itemSize={rowHeight}
-        itemCount={filteredData.length}
-        overscanCount={visibleItems}
-      >
-        {Row}
-      </FixedSizeList>
-    </>
+      <div className="servers-virtual-list">
+        <FixedSizeList
+          rowComponent={Row}
+          rowHeight={rowHeight}
+          rowCount={filteredData.length}
+          rowProps={{}}
+        />
+      </div>
+    </div>
   );
 };
 
@@ -183,17 +187,15 @@ const Page = (): ReactNode => {
         description="List of San Andreas servers using open.mp or SA-MP"
       >
         <section className="servers-container">
-          <p>
-            <b>
-              <Translate id="partners.note">
-                Note: The partnership program application is temporarily closed as 
-                promised. Servers that have already reserved a slot can still 
-                join, but we are not accepting new requests at this time. If you 
-                have any questions, feel free to ask on our Discord. However, if 
-                your question is about new ways to get on the list, we currently 
-                have no plans for that.
-              </Translate>
-            </b>
+          <p className="servers-partners-note">
+            <Translate id="partners.note">
+              Note: The partnership program application is temporarily closed as
+              promised. Servers that have already reserved a slot can still
+              join, but we are not accepting new requests at this time. If you
+              have any questions, feel free to ask on our Discord. However, if
+              your question is about new ways to get on the list, we currently
+              have no plans for that.
+            </Translate>
           </p>
           {loading ? <LoadingBanner /> : <List data={data} />}
         </section>

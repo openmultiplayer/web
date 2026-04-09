@@ -11,10 +11,10 @@ tags: ["math", "floating-point"]
 
 Binibigyang-daan ka ng function na ito na makuha ang logarithm ng isang float value.
 
-| Name        | Description                              |
-| ----------- | ---------------------------------------- |
+| Name        | Description                                 |
+| ----------- | ------------------------------------------- |
 | Float:value | Ang value kung saan makukuha ang logarithm. |
-| Float:base  | Ang logarithm base.                      |
+| Float:base  | Ang logarithm base.                         |
 
 ## Returns
 

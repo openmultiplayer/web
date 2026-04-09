@@ -9,11 +9,11 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler sterft, door zelfmoord of door gedood te worden door een andere speler.
 
-| Naam          | Beschrijving                                                                                   |
-| ------------- | --------------------------------------------------------------------------------------------- |
-| playerid      | Het ID van de speler die gestorven is.                                                       |
-| killerid      | Het ID van de speler die de speler heeft gedood, of INVALID_PLAYER_ID als er geen was.        |
-| WEAPON:reason | Het ID van de reden ([weapon id](../resources/weaponids)) voor de dood van de speler.         |
+| Naam          | Beschrijving                                                                           |
+| ------------- | -------------------------------------------------------------------------------------- |
+| playerid      | Het ID van de speler die gestorven is.                                                 |
+| killerid      | Het ID van de speler die de speler heeft gedood, of INVALID_PLAYER_ID als er geen was. |
+| WEAPON:reason | Het ID van de reden ([weapon id](../resources/weaponids)) voor de dood van de speler.  |
 
 ## Returns
 

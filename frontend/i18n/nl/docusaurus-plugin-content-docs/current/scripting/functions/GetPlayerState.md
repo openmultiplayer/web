@@ -9,8 +9,8 @@ tags: ["player"]
 
 Haal de huidige staat van een speler op.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
+| Naam     | Beschrijving      |
+| -------- | ----------------- |
 | playerid | ID van de speler. |
 
 ## Retourneert
@@ -36,5 +36,3 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 - [GetPlayerSpecialAction](GetPlayerSpecialAction)
 - [SetPlayerSpecialAction](SetPlayerSpecialAction)
 - [OnPlayerStateChange](../callbacks/OnPlayerStateChange)
-
-

@@ -9,15 +9,15 @@ tags: ["player"]
 
 Cette callback est appelée quand un joueur sélectionne un objet après que SelectObject a été utilisé.
 
-| Nom              | Description                                          |
-| ---------------- | ---------------------------------------------------- |
-| `int` playerid   | ID du joueur qui sélectionne l'objet                 |
-| `int` type       | [Type](../resources/selectobjecttypes) de sélection  |
-| `int` objectid   | ID de l'objet sélectionné                            |
-| `int` modelid    | Model de l'objet sélectionné                         |
-| `float` Float:fX | Position X de l'objet sélectionné                    |
-| `float` Float:fY | Position Y de l'objet sélectionné                    |
-| `float` Float:fZ | Position Z de l'objet sélectionné                    |
+| Nom              | Description                                         |
+| ---------------- | --------------------------------------------------- |
+| `int` playerid   | ID du joueur qui sélectionne l'objet                |
+| `int` type       | [Type](../resources/selectobjecttypes) de sélection |
+| `int` objectid   | ID de l'objet sélectionné                           |
+| `int` modelid    | Model de l'objet sélectionné                        |
+| `float` Float:fX | Position X de l'objet sélectionné                   |
+| `float` Float:fY | Position Y de l'objet sélectionné                   |
+| `float` Float:fZ | Position Z de l'objet sélectionné                   |
 
 ## Valeur de retour
 

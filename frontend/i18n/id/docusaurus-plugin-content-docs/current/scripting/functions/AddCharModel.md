@@ -11,12 +11,12 @@ tags: []
 
 Menambah sebuah custom character model untuk didownload. Model file biasanya terletak di Player Documents\GTA San Andreas User Files\SAMP\cache didalam folder Server IP dan Port dalam bentuk nama CRC.
 
-| Nama    | Deskripsi                                                                                                    |
-| ------- | -------------------------------------------------------------------------------------------------------------- |
+| Nama    | Deskripsi                                                                                                                |
+| ------- | ------------------------------------------------------------------------------------------------------------------------ |
 | baseid  | Model ID skin dasar yang ingin digunakan (sifat dari karakter & original karakter untuk dipakai setelah download gagal). |
-| newid   | Model ID skin baru dari jangkauan 20000 sampai 30000 (10000 slot) untuk digunakan nanti bersamaan dengan SetPlayerSkin             |
-| dffname | Nama file model collision file .dff didalam folder models server secara default (setting artpath).            |
-| txdname | Nama file model texture file .txd didalam folder models server secara default (setting artpath).              |
+| newid   | Model ID skin baru dari jangkauan 20000 sampai 30000 (10000 slot) untuk digunakan nanti bersamaan dengan SetPlayerSkin   |
+| dffname | Nama file model collision file .dff didalam folder models server secara default (setting artpath).                       |
+| txdname | Nama file model texture file .txd didalam folder models server secara default (setting artpath).                         |
 
 ## Returns
 

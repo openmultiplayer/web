@@ -11,10 +11,10 @@ tags: ["player"]
 
 Dobij boju igračovog **nametag-a** i **radara** za drugog igrača.
 
-| Ime      | Deskripcija                                                                                                                                     |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | Igrač koji može vidjeti igračevu promijenjenu boju blipa/nametag-a                                                                              |
-| targetid | Igrač čija je boja promijenjena.                                                                                                                |
+| Ime      | Deskripcija                                                        |
+| -------- | ------------------------------------------------------------------ |
+| playerid | Igrač koji može vidjeti igračevu promijenjenu boju blipa/nametag-a |
+| targetid | Igrač čija je boja promijenjena.                                   |
 
 ## Return-ovi
 

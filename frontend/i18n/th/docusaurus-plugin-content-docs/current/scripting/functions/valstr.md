@@ -49,7 +49,7 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 
 :::warning
 
-Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). fixes.inc includes this fix.
+Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). open.mp includes this fix.
 
 :::
 

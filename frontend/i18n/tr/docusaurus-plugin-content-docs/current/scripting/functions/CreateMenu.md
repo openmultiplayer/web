@@ -9,14 +9,14 @@ tags: ["menu"]
 
 Menü oluşturma.
 
-| Parametre       | Açıklama                                                                            |
-| --------------- | ----------------------------------------------------------------------------------- |
-| title[]         | Menünün başlık metni.                                                               |
-| columns         | Menü içerisinde kaç sütun olacağı.                                                  |
-| Float:x         | Menünün X konumu. (640x460 tuval - 0 menüyü en sola yerleştirir).                   |
-| Float:y         | Menünün Y konumu. (640x460 tuval - 0 menüyü en üste koyar.).                        |
-| Float:col1width | Sütunun birincil genişliği.                                                         |
-| Float:col2width | Sütunun ikincil genişliği.                                                          |
+| Parametre       | Açıklama                                                          |
+| --------------- | ----------------------------------------------------------------- |
+| title[]         | Menünün başlık metni.                                             |
+| columns         | Menü içerisinde kaç sütun olacağı.                                |
+| Float:x         | Menünün X konumu. (640x460 tuval - 0 menüyü en sola yerleştirir). |
+| Float:y         | Menünün Y konumu. (640x460 tuval - 0 menüyü en üste koyar.).      |
+| Float:col1width | Sütunun birincil genişliği.                                       |
+| Float:col2width | Sütunun ikincil genişliği.                                        |
 
 ## Çalışınca Vereceği Sonuçlar
 

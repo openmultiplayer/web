@@ -9,9 +9,9 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler spawnt. (d.w.z. na het aanroepen van de [SpawnPlayer](../functions/SpawnPlayer) functie)
 
-| Naam     | Beschrijving                                  |
-| -------- | --------------------------------------------- |
-| playerid | Het ID van de speler die gespawnd is.         |
+| Naam     | Beschrijving                          |
+| -------- | ------------------------------------- |
+| playerid | Het ID van de speler die gespawnd is. |
 
 ## Returns
 

@@ -9,9 +9,9 @@ tags: ["administration"]
 
 Oyuncuyu sunucudan atma. Oynamaya devam etmek istiyorsa oyundan çıkıp tekrar girmesi gerekmekte.
 
-| Parametre | Açıklama                                     |
-| --------- | -------------------------------------------- |
-| playerid  | Sunucudan atılacak kişinin ID'si.            |
+| Parametre | Açıklama                          |
+| --------- | --------------------------------- |
+| playerid  | Sunucudan atılacak kişinin ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

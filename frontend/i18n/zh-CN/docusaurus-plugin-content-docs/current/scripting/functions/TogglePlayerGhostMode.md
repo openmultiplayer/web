@@ -25,7 +25,7 @@ tags: ["玩家"]
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext, "/幽灵模式", true))
+    if (!strcmp(cmdtext, "/ghostmode", true))
     {
         TogglePlayerGhostMode(playerid, true);
         SendClientMessage(playerid, -1, "服务器：你已启用幽灵模式！");

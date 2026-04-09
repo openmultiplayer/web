@@ -75,13 +75,13 @@ When a player presses ESC to cancel selecting a textdraw, [OnPlayerClickTextDraw
 
 ## Related Callbacks
 
-The following callbacks might be useful, as they're related to this callback in one way or another. 
+The following callbacks might be useful, as they're related to this callback in one way or another.
 
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): This callback is called when a player clicks on a textdraw.
 - [OnPlayerClickPlayer](OnPlayerClickPlayer): This callback is called when a player click on another.
 
 ## Related Functions
 
-The following functions might be useful, as they're related to this callback in one way or another. 
+The following functions might be useful, as they're related to this callback in one way or another.
 
 - [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Sets whether a player-textdraw is selectable through [SelectTextDraw](../functions/SelectTextDraw)

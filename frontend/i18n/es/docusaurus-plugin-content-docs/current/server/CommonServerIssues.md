@@ -14,10 +14,10 @@ Necesitarás redirigir tus puertos para permitir que los jugadores se unan a tu 
 ## 'Packet was modified'
 
 El error comúnmente se muestra como:
+
 ```
 [hh:mm:ss] Packet was modified, sent by id: <id>, ip: <ip>:<port>
 ```
-
 
 Esto ocurre cuando un jugador tiene problemas de conexión o está experimentando un timeout.
 
@@ -29,7 +29,6 @@ El error comúnmente se muestra como:
 Warning: client exceeded 'messageslimit' (1) <ip>:<port> (<count>) Limit: x/sec
 ```
 
-
 Esto ocurre cuando el número de mensajes por segundo que un cliente envía al servidor se excede.
 
 ## 'Warning: client exceeded 'ackslimit'
@@ -39,8 +38,6 @@ El error comúnmente se muestra como:
 ```
 Warning: client exceeded 'ackslimit' <ip>:<port> (<count>) Limit: x/sec
 ```
-
-
 
 Esto ocurre cuando se supera el límite de acks.
 
@@ -52,7 +49,6 @@ El error comúnmente se muestra como:
 Warning: client exceeded messageholelimit
 ```
 
-
 Esto ocurre cuando se excede el "message hole" límite.
 
 ## 'Warning: Too many out-of-order messages'
@@ -62,7 +58,6 @@ El error comúnmente se muestra como:
 ```
 Warning: Too many out-of-order messages
 ```
-
 
 Ocurre cuando los 'mensajes fuera de orden' reutilizan la configuración de límite de hueco de mensajes.
 
@@ -78,9 +73,9 @@ Los servidores de Windows con un tiempo de actividad prolongado también pueden 
 
 Este problema ocurre regularmente en servidores de Windows al intentar cargar un complemento desarrollado con una versión más reciente de las bibliotecas de Visual C++ de las que están instaladas actualmente en tu computadora. Para solucionarlo, descarga las bibliotecas apropiadas de Visual C++ de Microsoft. Ten en cuenta que el servidor SA-MP es de 32 bits, por lo que también deberás descargar la versión de 32 bits (x86) de las bibliotecas, independientemente de la arquitectura. La versión específica de las bibliotecas se indica por los números en el nombre del archivo (consulta la tabla a continuación), aunque no está de más instalar todas ellas. Estas bibliotecas no se acumulan, o en otras palabras: no obtendrás las bibliotecas para las versiones de 2013 y anteriores si solo instalas la versión de 2015.
 
-| Número de Versión | Runtime                                         |
-| ------------------ | ---------------------------------------------  |
-| 10.0               | Microsoft Visual C++ 2010 x86 Redistribuible   |
-| 11.0               | Microsoft Visual C++ 2012 x86 Redistribuible   |
-| 12.0               | Microsoft Visual C++ 2013 x86 Redistribuible   |
-| 14.0               | Microsoft Visual C++ 2015 x86 Redistribuible   |
+| Número de Versión | Runtime                                      |
+| ----------------- | -------------------------------------------- |
+| 10.0              | Microsoft Visual C++ 2010 x86 Redistribuible |
+| 11.0              | Microsoft Visual C++ 2012 x86 Redistribuible |
+| 12.0              | Microsoft Visual C++ 2013 x86 Redistribuible |
+| 14.0              | Microsoft Visual C++ 2015 x86 Redistribuible |

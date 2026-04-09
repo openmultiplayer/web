@@ -50,7 +50,7 @@ public OnPlayerConnect(playerid)
 
 已知限制：
 
-- 键盘按键映射代码（如 ~k~~VEHICLE_ENTER_EXIT~）在超过 255 个字符后将失效
+- 键盘按键映射代码（如 `~k~~VEHICLE_ENTER_EXIT~`）在超过 255 个字符后将失效
 
 :::
 

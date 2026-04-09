@@ -9,11 +9,11 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi vào hoặc ra khỏi cửa hàng độ xe.
 
-| Tên         | Mô Tả                                                                                     |
-| ------------ | ----------------------------------------------------------------------------------------- |
-| playerid     | ID của người chơi đã vào hoặc ra khỏi cửa hàng độ xe.                                    |
-| enterexit    | 1 nếu người chơi vào hoặc 0 nếu họ ra khỏi cửa hàng độ xe                                 |
-| interiorid   | ID của nội thất của cửa hàng độ xe mà người chơi đang vào (hoặc 0 nếu đang ra ngoài)       |
+| Tên        | Mô Tả                                                                                |
+| ---------- | ------------------------------------------------------------------------------------ |
+| playerid   | ID của người chơi đã vào hoặc ra khỏi cửa hàng độ xe.                                |
+| enterexit  | 1 nếu người chơi vào hoặc 0 nếu họ ra khỏi cửa hàng độ xe                            |
+| interiorid | ID của nội thất của cửa hàng độ xe mà người chơi đang vào (hoặc 0 nếu đang ra ngoài) |
 
 ## Trả Về
 

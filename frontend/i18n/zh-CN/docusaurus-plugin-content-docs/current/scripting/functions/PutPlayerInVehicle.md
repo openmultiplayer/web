@@ -24,43 +24,11 @@ tags: ["玩家", "车辆"]
 ## 示例
 
 ```c
-// 全局数组用于追踪每位玩家所属的车辆
-// 使用 INVALID_VEHICLE_ID 表示玩家当前无车辆
-static s_PlayerVehicle[MAX_PLAYERS] = { INVALID_VEHICLE_ID, ... };
-
-public OnPlayerSpawn(playerid)
+public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 {
-    // 检查玩家是否已有有效车辆
-    if (!IsValidVehicle(s_PlayerVehicle[playerid]))
-    {
-        // 若没有则创建新车辆并存储ID
-        s_PlayerVehicle[playerid] = CreateVehicle(411, 0.0, 0.0, 3.5, 0.0, -1, -1, -1);
-    }
-
-    // 标记需要在车辆加载完成后放置玩家
-    // 避免客户端车辆模型尚未加载完成的情况
-    SetPVarInt(playerid, "PutPlayerInVehicle", 1);
-
+    PutPlayerInVehicle(playerid, vehicleid, 0);
     return 1;
 }
-
-public OnVehicleStreamIn(vehicleid, forplayerid)
-{
-    // 当车辆完成流加载时触发此回调
-    // 检查是否为该玩家的车辆且需要放置
-    if (vehicleid == s_PlayerVehicle[forplayerid] && GetPVarInt(forplayerid, "PutPlayerInVehicle"))
-    {
-        // 将玩家放置至车辆
-        PutPlayerInVehicle(forplayerid, vehicleid, 0);
-
-        // 清除标记防止重复放置
-        // 例如玩家离开后车辆再次流加载的情况
-        DeletePVar(forplayerid, "PutPlayerInVehicle");
-    }
-
-    return 1;
-}
-
 ```
 
 | 座位 ID | 对应位置                   |

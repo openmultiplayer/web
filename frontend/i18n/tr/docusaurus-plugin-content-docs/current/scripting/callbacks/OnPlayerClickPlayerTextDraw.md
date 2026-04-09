@@ -9,7 +9,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Bu geri çağırma, bir oyuncu bir player-textdrawa tıkladığı zaman çağırılır. Oyuncu seçim modunu ESC ile iptal ettiğinde çağırılmaz ancak OnPlayerClickTextDraw'da çağırılır.
 
-| Parametre         | Açıklama                            |
+| Parametre    | Açıklama                            |
 | ------------ | ----------------------------------- |
 | playerid     | Textdrawa tıklayan oyuncunun ID'si. |
 | playertextid | Tıklanan player-textdrawın ID'si.   |

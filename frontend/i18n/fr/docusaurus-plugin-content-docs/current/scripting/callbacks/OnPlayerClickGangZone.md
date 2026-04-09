@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Ce rappel est appelé lorsqu'un joueur clique sur une zone de gang sur la carte du menu de pause (en cliquant avec le bouton droit).
 
-| Nom       | Description                                                                   |
-| --------- | ----------------------------------------------------------------------------- |
-| playerid  | L'ID du joueur qui a cliqué sur une zone de gang                              |
-| zoneid    | L'ID de la zone de gang sur laquelle le joueur a cliqué                       |
+| Nom      | Description                                             |
+| -------- | ------------------------------------------------------- |
+| playerid | L'ID du joueur qui a cliqué sur une zone de gang        |
+| zoneid   | L'ID de la zone de gang sur laquelle le joueur a cliqué |
 
 ## Retours
 
@@ -35,7 +35,7 @@ public OnPlayerClickGangZone(playerid, zoneid)
 
 ## Fonctions Relatives
 
-Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre. 
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [GangZoneCreate](../functions/GangZoneCreate): Créer une zone de gang (zone radar colorée).
 - [GangZoneDestroy](../functions/GangZoneDestroy): Détruire une zone de gang.

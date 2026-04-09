@@ -5,6 +5,14 @@ description: This will force the NPC to write a desired command, and this way, g
 tags: []
 ---
 
+:::warning
+
+This function is deprecated.
+
+See `PC_EmulateCommand` for [Pawn.CMD](https://github.com/katursis/Pawn.CMD) or similar means for other command processors.
+
+:::
+
 ## Description
 
 This will force the NPC to write a desired command, and this way, getting the effects it would produce.

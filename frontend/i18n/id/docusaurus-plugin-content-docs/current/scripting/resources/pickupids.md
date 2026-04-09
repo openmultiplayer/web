@@ -12,8 +12,8 @@ Semua model objek yang valid dapat digunakan sebagai [pickup](../functions/Creat
 
 ## ID model pickup
 
-| ID    | Ikon                              | Deskripsi                         |
-| ----- | --------------------------------- | --------------------------------- |
+| ID    | Ikon                                                           | Deskripsi                         |
+| ----- | -------------------------------------------------------------- | --------------------------------- |
 | 954   | ![](https://assets.open.mp/assets/images/pickups/pickup1.png)  | Tapal kuda                        |
 | 1210  | ![](https://assets.open.mp/assets/images/pickups/pickup2.png)  | Koper                             |
 | 1212  | ![](https://assets.open.mp/assets/images/pickups/pickup3.png)  | Uang                              |

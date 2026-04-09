@@ -9,10 +9,10 @@ tags: ["player"]
 
 Cette callback est appelée quand un joueur se déconnecte du serveur.
 
-| Nom            | Description                                        |
-| -------------- | -------------------------------------------------- |
-| `int` playerid | ID du joueur qui se déconnecte                     |
-| `int` reason   | Raison de la déconnexion _(v. tableau, infra)      |
+| Nom            | Description                                    |
+| -------------- | ---------------------------------------------- |
+| `int` playerid | ID du joueur qui se déconnecte                 |
+| `int` reason   | Raison de la déconnexion \_(v. tableau, infra) |
 
 ## Valeur de retour
 

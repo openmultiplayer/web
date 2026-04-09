@@ -43,6 +43,6 @@ public OnPlayerConnect(playerid)
 
 ## Funcții similare
 
-- [OnPlayerDisconnect](OnPlayerDisconnect): Apelat când un jucător părăsește serverul. 
-- [OnIncomingConnection](OnIncomingConnection): Apelat atunci când un jucător încearcă să se conecteze la server. 
-- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Apelat când un jucător termină descărcarea modelelor personalizate. 
+- [OnPlayerDisconnect](OnPlayerDisconnect): Apelat când un jucător părăsește serverul.
+- [OnIncomingConnection](OnIncomingConnection): Apelat atunci când un jucător încearcă să se conecteze la server.
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Apelat când un jucător termină descărcarea modelelor personalizate.

@@ -16,7 +16,7 @@ Deze callback wordt **alleen** aangeroepen wanneer een voertuig **re**spawnt! Cr
 Deze callback wordt aangeroepen wanneer een voertuig respawnt.
 
 | Naam      | Beschrijving                         |
-| --------- | ----------------------------------- |
+| --------- | ------------------------------------ |
 | vehicleid | Het ID van het voertuig dat spawnde. |
 
 ## Returns

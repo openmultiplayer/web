@@ -81,5 +81,3 @@ Dit komt vaak voor op Windows-servers bij het laden van een plugin die met een n
 | 11.0           | Microsoft Visual C++ 2012 x86 Redistributable |
 | 12.0           | Microsoft Visual C++ 2013 x86 Redistributable |
 | 14.0           | Microsoft Visual C++ 2015 x86 Redistributable |
-
-

@@ -11,11 +11,11 @@ tags: ["player", "object", "playerobject"]
 
 Provjerava da li je slot player-objekt materijala zauzet.
 
-| Ime           | Deskripcija                                 |
-|---------------|---------------------------------------------|
-| playerid      | ID igrača.                                  |
-| objectid      | ID player-objekta.                          |
-| materialIndex | Indeks materijala na objektu. (0 do 15)     |
+| Ime           | Deskripcija                             |
+| ------------- | --------------------------------------- |
+| playerid      | ID igrača.                              |
+| objectid      | ID player-objekta.                      |
+| materialIndex | Indeks materijala na objektu. (0 do 15) |
 
 ## Returnovi
 

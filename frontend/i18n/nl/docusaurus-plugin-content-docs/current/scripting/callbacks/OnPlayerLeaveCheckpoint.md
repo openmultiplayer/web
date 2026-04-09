@@ -10,7 +10,7 @@ tags: ["player", "checkpoint"]
 Deze callback wordt aangeroepen wanneer een speler de checkpoint verlaat die met [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint) is gezet. Er kan maar één checkpoint tegelijk actief zijn.
 
 | Naam     | Beschrijving                                    |
-| -------- | ---------------------------------------------- |
+| -------- | ----------------------------------------------- |
 | playerid | Het ID van de speler die de checkpoint verliet. |
 
 ## Returns

@@ -18,14 +18,17 @@ Function ini belum di implentasikan
 Mendapatkan ID kendaraan terakhir yang singkron dengan player
 
 ## Parameter
-| Parameter | Deskripsi       |
-|-----------|-----------------|
-| playerid  | ID dari player  |  
+
+| Parameter | Deskripsi      |
+| --------- | -------------- |
+| playerid  | ID dari player |
 
 ## Return
+
 Mengembalikan ID Kendaraan yang digunakan player
 
 ## Contoh
+
 ```c
 new lastVehicleID = GetPlayerLastSyncedVehicleID(playerid);
 ```

@@ -10,7 +10,7 @@ tags: ["player"]
 Callback ini akan terpanggil ketika pemain mati, entah itu dengan bunuh diri atau terbunuh oleh pemain lain.
 
 | Nama          | Deskripsi                                                                             |
-|---------------|---------------------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------------------- |
 | playerid      | ID dari pemain yang mati.                                                             |
 | killerid      | ID dari pemain yang membunuh pemain yang mati, atau INVALID_PLAYER_ID jika tidak ada. |
 | WEAPON:reason | ID dari alasan untuk kematian pemain.                                                 |

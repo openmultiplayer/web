@@ -41,7 +41,7 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 ## 相关函数
 
-- [IsActorStreamedIn](IsActorStreamedIn): 检测角色是否已为玩家流加载
+- [IsActorStreamedIn](IsActorStreamedIn): 检测演员是否已为玩家流加载
 - [IsVehicleStreamedIn](IsVehicleStreamedIn): 检测车辆是否已为玩家流加载
 
 ## 相关回调

@@ -9,9 +9,9 @@ tags: ["player", "vehicle"]
 
 Descobre em qual assento um jogador está.
 
-| Nome      | Descrição                                       |
-| --------- | ----------------------------------------------- |
-| playerid  | O ID do jogador do qual você quer saber o assento. |
+| Nome     | Descrição                                          |
+| -------- | -------------------------------------------------- |
+| playerid | O ID do jogador do qual você quer saber o assento. |
 
 ## Retornos
 
@@ -46,12 +46,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
-| ID  | Assento                       |
-| --- | ------------------------------ |
-| 0   | Motorista                     |
-| 1   | Passageiro da frente          |
-| 2   | Passageiro traseiro esquerdo   |
-| 3   | Passageiro traseiro direito    |
+| ID  | Assento                                |
+| --- | -------------------------------------- |
+| 0   | Motorista                              |
+| 1   | Passageiro da frente                   |
+| 2   | Passageiro traseiro esquerdo           |
+| 3   | Passageiro traseiro direito            |
 | 4+  | Assentos de passageiros (coaches etc.) |
 
 ## Funções Relacionadas

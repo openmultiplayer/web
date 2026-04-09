@@ -10,8 +10,8 @@ tags: ["textdraw"]
 Changes the text font.
 | Nombre | Descripcion |
 | ------ | ----------- |
-|  text  | El TextDraw a cambiar |
-|  font  | Hay cuatro estilos de fuente, como se muestra a continuación. El valor de fuente 4 especifica que se trata de un sprite txd; 5 especifica que este textdraw puede mostrar modelos de vista previa. Un valor de fuente superior a 5 no se muestra, y cualquier valor superior a 16 crashea el cliente. |
+| text | El TextDraw a cambiar |
+| font | Hay cuatro estilos de fuente, como se muestra a continuación. El valor de fuente 4 especifica que se trata de un sprite txd; 5 especifica que este textdraw puede mostrar modelos de vista previa. Un valor de fuente superior a 5 no se muestra, y cualquier valor superior a 16 crashea el cliente. |
 
 **Estilos disponibles:**
 ![Available Styles](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)

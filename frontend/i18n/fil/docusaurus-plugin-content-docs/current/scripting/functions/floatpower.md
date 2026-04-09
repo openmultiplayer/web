@@ -11,9 +11,9 @@ tags: ["math", "floating-point"]
 
 Itinataas ang ibinigay na halaga sa kapangyarihan ng exponent.
 
-| Name     | Description                                                               |
-| -------- | ------------------------------------------------------------------------- |
-| value    | Ang halaga na itataas sa isang power, bilang isang floating-point na numero. |
+| Name     | Description                                                                         |
+| -------- | ----------------------------------------------------------------------------------- |
+| value    | Ang halaga na itataas sa isang power, bilang isang floating-point na numero.        |
 | exponent | Ang exponent ay isa ring floating-point na numero. Maaaring ito ay zero o negatibo. |
 
 ## Returns

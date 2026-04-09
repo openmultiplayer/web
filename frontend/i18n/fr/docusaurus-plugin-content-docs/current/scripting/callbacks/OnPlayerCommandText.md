@@ -9,10 +9,10 @@ tags: ["player"]
 
 Cette callback est appelée quand un joueur tape une commande. Les commandes débutent avec un slash _(/aide, ...)_.
 
-| Nom                | Description                                                  |
-| ------------------ | ----------------------------------------------------------- |
-| `id` playerid      | ID du joueur qui envoie la commande                    |
-| `string` cmdtext[] | Commande envoyée (nécessite un slash devant)       |
+| Nom                | Description                                  |
+| ------------------ | -------------------------------------------- |
+| `id` playerid      | ID du joueur qui envoie la commande          |
+| `string` cmdtext[] | Commande envoyée (nécessite un slash devant) |
 
 ## Valeur de retour
 

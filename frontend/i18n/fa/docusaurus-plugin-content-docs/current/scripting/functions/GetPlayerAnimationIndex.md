@@ -11,8 +11,8 @@ tags: ["player", "animation"]
 
 ایندکس هر انیمیشن فعال رو برمی‌گردونه.
 
-| اسم     | توضیح                                                      |
-| -------- | ---------------------------------------------------------------- |
+| اسم      | توضیح                                              |
+| -------- | -------------------------------------------------- |
 | playerid | شناسه بازیکنی که می‌خوای ایندکس انیمیشنش رو بگیری. |
 
 ## مقادیر برگشتی
@@ -34,7 +34,7 @@ public OnPlayerUpdate(playerid)
             string[128];
 
         GetAnimationName(GetPlayerAnimationIndex(playerid), animationLibrary, sizeof (animationLibrary), animationName, sizeof (animationName));
-        
+
         format(string, sizeof (string), "Running anim: %s %s", animationLibrary, animationName);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }

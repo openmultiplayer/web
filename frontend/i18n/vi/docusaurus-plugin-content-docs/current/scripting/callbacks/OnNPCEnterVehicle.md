@@ -9,10 +9,10 @@ tags: ["npc"]
 
 Callback này được gọi khi NPC vào một chiếc xe.
 
-| Tên         | Mô Tả                                                   |
-| ------------ | ------------------------------------------------------- |
-| vehicleid    | ID của chiếc xe mà NPC vào                              |
-| seatid       | ID của ghế mà NPC sử dụng                               |
+| Tên       | Mô Tả                      |
+| --------- | -------------------------- |
+| vehicleid | ID của chiếc xe mà NPC vào |
+| seatid    | ID của ghế mà NPC sử dụng  |
 
 ## Ví Dụ
 

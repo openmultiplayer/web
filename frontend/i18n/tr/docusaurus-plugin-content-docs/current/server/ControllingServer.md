@@ -150,39 +150,39 @@ Oyun içinde (`/rcon cmdlist` yazarak) RCON kullanarak kullanabileceğiniz komut
 
 Aşağıdaki komutları sadece RCON girişi yapmış yöneticiler kullanabilir:
 
-| Komut                             | Açıklama                                                                                          |
-| --------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `/rcon cmdlist`                   | Komutları gösterir.                                                                             |
-| `/rcon varlist`                   | Mevcut değişkenleri gösterir.                                                                    |
-| `/rcon exit`                      | Sunucuyu kapatır.                                                                               |
-| `/rcon echo [metin]`              | Metni sunucu konsolunda gösterir (Oyun içi oyuncu konsolu değil).                                 |
-| `/rcon hostname [isim]`           | hostname metnini değiştirir (_örnek: /rcon hostname benim sunucum_).                             |
-| `/rcon gamemodetext [isim]`       | oyun modu  metnini değiştirir (_örnek: /rcon gamemodetext benim oyun modum_).                       |
-| `/rcon mapname [isim]`            | harita metnini değiştirir (_örnek: /rcon mapname San Andreas_).                                |
-| `/rcon exec [dosyaadı]`           | Sunucu yapılandırmalarını içeren dosyayı yürütür (_örnek: /rcon exec blah.cfg_).                                 |
-| `/rcon kick [ID]`                 | Belirtilen ID'ye sahip oyuncuyu sunucudan atar (_örnek: /rcon kick 2_).                                      |
-| `/rcon ban [ID]`                  | Belirtilen ID'ye sahip oyuncuyu yasaklar (_örnek: /rcon ban 2_).                                   |
-| `/rcon changemode [mod]`          | Bu komut, mevcut oyun modunu belirtilen oyun modu ile değiştirecek (_örnek: sftdm oynamak istiyorsanız: /rcon changemode sftdm_).                       |
-| `/rcon gmx`                       | [server.cfg](server.cfg) dosyasındaki bir sonraki oyun modunu yükler.                             |
-| `/rcon reloadbans`                | Yasaklı IP adreslerini içeren `samp.ban` dosyasını tekrar yükler. Bu, bir IP'yi yasakladıktan sonra kullanılmalıdır.                          |
-| `/rcon reloadlog`                 | `server_log.txt` dosyasını tekrar yükler. Otomatik log döndürme için kullanışlıdır. Sadece Linux sunucuda `SIGUSR1` sinyali gönderilerek tetiklenebilir.  |
-| `/rcon say`                       | Oyuncu konsoluna mesaj gösterir (örnek: `/rcon say merhaba` "Admin: merhaba" olarak görüntülenir).                                         |
-| `/rcon players`                   | Sunucuda bulunan oyuncuları (adları, IP'leri ve ping'leri ile birlikte) gösterir.                |
-| `/rcon banip [IP]`                | Belirtilen IP'yi yasaklar (_örnek: /rcon banip 127.0.0.1_).                                        |
-| `/rcon unbanip [IP]`              | Belirtilen IP'nin yasaklamasını kaldırır (_örnek: /rcon unbanip 127.0.0.1_).                         |
-| `/rcon gravity`                   | Yer çekimini değiştirir (_örnek: /rcon gravity 0.008_).                                        |
-| `/rcon weather [ID]`              | Hava durumunu değiştirir (_örnek: /rcon weather 1_).                                          |
-| `/rcon loadfs`                    | Belirtilem filterscript'i yükler (_örnek: /rcon loadfs adminfs_).                                  |
-| `/rcon weburl [sunucu url]`       | Masterlist/SA-MP istemcisinde görünen sunucu URL'sini değiştirir.                              |
-| `/rcon unloadfs`                  | Belirtilen filterscript'i devre dışı bırakır (_örnek: /rcon unloadfs adminfs_).                    |
-| `/rcon reloadfs`                  | Belirtilem filterscript'i tekrar yükler (_örnek: /rcon reloadfs adminfs_).                         |
-| `/rcon rcon_password [ŞİFRE]`     | Rcon'un şifresini değiştirir.                                                                   |
-| `/rcon password [şifre]`          | Sunucu şifresini ayarlar/sıfırlar.                                                              |
-| `/rcon messageslimit [sayı]`      | İstemcinin sunucuya saniyede gönderdiği mesaj sayısını değiştirir. (varsayılan 500)               |
-| `/rcon ackslimit [sayı]`          | Ack'ların sınırını değiştirir (varsayılan 3000) |
-| `/rcon messageholelimit [sayı]`   | Mesaj deliklerinin sınırını değiştirir (varsayılan 3000).                |
-| `/rcon playertimeout [limit ms]`  | Bir oyuncunun hiç paket göndermediği süreyi milisaniye cinsinden değiştirir (varsayılan 1000).   |
-| `/rcon language [dil]`            | Sunucu dilini değiştirir (_örnek: /rcon language Turkish_). Sunucu tarayıcısında gösterilir.    |
+| Komut                            | Açıklama                                                                                                                                                 |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/rcon cmdlist`                  | Komutları gösterir.                                                                                                                                      |
+| `/rcon varlist`                  | Mevcut değişkenleri gösterir.                                                                                                                            |
+| `/rcon exit`                     | Sunucuyu kapatır.                                                                                                                                        |
+| `/rcon echo [metin]`             | Metni sunucu konsolunda gösterir (Oyun içi oyuncu konsolu değil).                                                                                        |
+| `/rcon hostname [isim]`          | hostname metnini değiştirir (_örnek: /rcon hostname benim sunucum_).                                                                                     |
+| `/rcon gamemodetext [isim]`      | oyun modu metnini değiştirir (_örnek: /rcon gamemodetext benim oyun modum_).                                                                             |
+| `/rcon mapname [isim]`           | harita metnini değiştirir (_örnek: /rcon mapname San Andreas_).                                                                                          |
+| `/rcon exec [dosyaadı]`          | Sunucu yapılandırmalarını içeren dosyayı yürütür (_örnek: /rcon exec blah.cfg_).                                                                         |
+| `/rcon kick [ID]`                | Belirtilen ID'ye sahip oyuncuyu sunucudan atar (_örnek: /rcon kick 2_).                                                                                  |
+| `/rcon ban [ID]`                 | Belirtilen ID'ye sahip oyuncuyu yasaklar (_örnek: /rcon ban 2_).                                                                                         |
+| `/rcon changemode [mod]`         | Bu komut, mevcut oyun modunu belirtilen oyun modu ile değiştirecek (_örnek: sftdm oynamak istiyorsanız: /rcon changemode sftdm_).                        |
+| `/rcon gmx`                      | [server.cfg](server.cfg) dosyasındaki bir sonraki oyun modunu yükler.                                                                                    |
+| `/rcon reloadbans`               | Yasaklı IP adreslerini içeren `samp.ban` dosyasını tekrar yükler. Bu, bir IP'yi yasakladıktan sonra kullanılmalıdır.                                     |
+| `/rcon reloadlog`                | `server_log.txt` dosyasını tekrar yükler. Otomatik log döndürme için kullanışlıdır. Sadece Linux sunucuda `SIGUSR1` sinyali gönderilerek tetiklenebilir. |
+| `/rcon say`                      | Oyuncu konsoluna mesaj gösterir (örnek: `/rcon say merhaba` "Admin: merhaba" olarak görüntülenir).                                                       |
+| `/rcon players`                  | Sunucuda bulunan oyuncuları (adları, IP'leri ve ping'leri ile birlikte) gösterir.                                                                        |
+| `/rcon banip [IP]`               | Belirtilen IP'yi yasaklar (_örnek: /rcon banip 127.0.0.1_).                                                                                              |
+| `/rcon unbanip [IP]`             | Belirtilen IP'nin yasaklamasını kaldırır (_örnek: /rcon unbanip 127.0.0.1_).                                                                             |
+| `/rcon gravity`                  | Yer çekimini değiştirir (_örnek: /rcon gravity 0.008_).                                                                                                  |
+| `/rcon weather [ID]`             | Hava durumunu değiştirir (_örnek: /rcon weather 1_).                                                                                                     |
+| `/rcon loadfs`                   | Belirtilem filterscript'i yükler (_örnek: /rcon loadfs adminfs_).                                                                                        |
+| `/rcon weburl [sunucu url]`      | Masterlist/SA-MP istemcisinde görünen sunucu URL'sini değiştirir.                                                                                        |
+| `/rcon unloadfs`                 | Belirtilen filterscript'i devre dışı bırakır (_örnek: /rcon unloadfs adminfs_).                                                                          |
+| `/rcon reloadfs`                 | Belirtilem filterscript'i tekrar yükler (_örnek: /rcon reloadfs adminfs_).                                                                               |
+| `/rcon rcon_password [ŞİFRE]`    | Rcon'un şifresini değiştirir.                                                                                                                            |
+| `/rcon password [şifre]`         | Sunucu şifresini ayarlar/sıfırlar.                                                                                                                       |
+| `/rcon messageslimit [sayı]`     | İstemcinin sunucuya saniyede gönderdiği mesaj sayısını değiştirir. (varsayılan 500)                                                                      |
+| `/rcon ackslimit [sayı]`         | Ack'ların sınırını değiştirir (varsayılan 3000)                                                                                                          |
+| `/rcon messageholelimit [sayı]`  | Mesaj deliklerinin sınırını değiştirir (varsayılan 3000).                                                                                                |
+| `/rcon playertimeout [limit ms]` | Bir oyuncunun hiç paket göndermediği süreyi milisaniye cinsinden değiştirir (varsayılan 1000).                                                           |
+| `/rcon language [dil]`           | Sunucu dilini değiştirir (_örnek: /rcon language Turkish_). Sunucu tarayıcısında gösterilir.                                                             |
 
 Yukarıdaki dört sınırlama/sayı, herhangi bir SA-MP sunucusuna saldıran birkaç çakkalı önlemek için yapılmıştır, bu nedenle sadece sunucunuza göre bunları ayarlayın. Varsayılan değerler, eğer yanlış bir şeyler görürseniz, masum oyuncuların bunun nedeniyle atılmaması için değerleri mümkün olan en kısa sürede arttırın. [Daha fazla bilgi için buraya bakın](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193).
 

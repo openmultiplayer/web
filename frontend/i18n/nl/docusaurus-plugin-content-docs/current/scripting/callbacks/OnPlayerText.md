@@ -9,9 +9,9 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler een bericht verstuurt in de chat.
 
-| Naam     | Beschrijving                                      |
-| -------- | ------------------------------------------------ |
-| playerid | Het ID van de speler die het bericht verstuurde. |
+| Naam     | Beschrijving                                        |
+| -------- | --------------------------------------------------- |
+| playerid | Het ID van de speler die het bericht verstuurde.    |
 | text[]   | De inhoud van het bericht dat de speler verstuurde. |
 
 ## Returns

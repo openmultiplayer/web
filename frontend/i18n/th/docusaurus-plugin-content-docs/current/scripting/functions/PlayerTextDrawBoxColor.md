@@ -10,7 +10,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 Sets the color of a textdraw's box (PlayerTextDrawUseBox).
 
 | Name            | Description                                                  |
-|-----------------|--------------------------------------------------------------|
+| --------------- | ------------------------------------------------------------ |
 | playerid        | The ID of the player whose textdraw to set the box color of. |
 | PlayerText:text | The ID of the player textdraw to set the box color of.       |
 | color           | The color to set. Alpha (transparency) is supported.         |

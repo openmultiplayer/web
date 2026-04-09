@@ -9,12 +9,12 @@ tags: ["vehicle"]
 
 Acest callback este apelat atunci când un jucător iese dintr-un magazin de mod, chiar dacă culorile nu au fost schimbate. Atenție, numele este ambiguu, magazinele Pay 'n' Spray nu apelează la acest apel.
 
-| Nume      | Descriere                                                    |
-| --------- | ------------------------------------------------------------ |
-| playerid  | ID-ul jucătorului care conduce vehiculul.                    |
-| vehicleid | ID-ul vehiculului care a fost pulverizat.                    |
-| color1    | Culoarea în care a fost schimbată culoarea principală a vehiculului.   |
-| color2    | Culoarea în care a fost schimbată culoarea secundară a vehiculului.    |
+| Nume      | Descriere                                                            |
+| --------- | -------------------------------------------------------------------- |
+| playerid  | ID-ul jucătorului care conduce vehiculul.                            |
+| vehicleid | ID-ul vehiculului care a fost pulverizat.                            |
+| color1    | Culoarea în care a fost schimbată culoarea principală a vehiculului. |
+| color2    | Culoarea în care a fost schimbată culoarea secundară a vehiculului.  |
 
 ## Returnări
 

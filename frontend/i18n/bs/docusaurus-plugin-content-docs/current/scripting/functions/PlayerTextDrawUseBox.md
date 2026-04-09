@@ -10,7 +10,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 Omogući/onemogući korišćenje box-a za player-textdraw.
 
 | Ime             | Deskripcija                                               |
-|-----------------|-----------------------------------------------------------|
+| --------------- | --------------------------------------------------------- |
 | playerid        | ID igrača za čiji se textdraw treba koristiti box ili ne. |
 | PlayerText:text | ID player-textdrawa za omogućiti/onemogućiti box          |
 | bool:use        | **true** da koristi box **false** da ne koristi box.      |

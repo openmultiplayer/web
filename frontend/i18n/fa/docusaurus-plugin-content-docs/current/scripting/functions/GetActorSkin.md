@@ -13,8 +13,8 @@ tags: ["actor"]
 
 اسکین Actor رو می‌گیره.
 
-| اسم     | توضیح                           |
-|---------|---------------------------------|
+| اسم     | توضیح                                    |
+| ------- | ---------------------------------------- |
 | actorid | شناسه Actor که می‌خوای اسکین‌ش رو بگیری. |
 
 ## مقادیر برگشتی
@@ -31,7 +31,7 @@ new gMyActor;
 public OnGameModeInit()
 {
     gMyActor = CreateActor(179, 1153.9640, -1772.3915, 16.5920, 0.0000);
-    
+
     new actorSkinID = GetActorSkin(gMyActor);
     // The value of `actorSkinID` is now 179
     return 1;

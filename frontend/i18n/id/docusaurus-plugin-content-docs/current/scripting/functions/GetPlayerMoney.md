@@ -9,7 +9,7 @@ tags: ["player"]
 
 Mengambil jumlah uang yang dimiliki oleh pemain.
 
-| Nama     | Deskripsi                               |
+| Nama     | Deskripsi                                 |
 | -------- | ----------------------------------------- |
 | playerid | ID dari pemain yang ingin dilihat uangnya |
 

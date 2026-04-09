@@ -11,10 +11,10 @@ tags: ["file management"]
 
 Open een bestand om te lezen of te schrijven.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
-| const filename[] | Pad naar het bestand (zonder pad opent in 'scriptfiles'). |
-| [filemode:mode](../resources/file-modes) | Modus om te openen (standaard: io_readwrite). |
+| Naam                                     | Beschrijving                                              |
+| ---------------------------------------- | --------------------------------------------------------- |
+| const filename[]                         | Pad naar het bestand (zonder pad opent in 'scriptfiles'). |
+| [filemode:mode](../resources/file-modes) | Modus om te openen (standaard: io_readwrite).             |
 
 ## Retourneert
 
@@ -34,5 +34,3 @@ if (handle)
     fclose(handle);
 }
 ```
-
-

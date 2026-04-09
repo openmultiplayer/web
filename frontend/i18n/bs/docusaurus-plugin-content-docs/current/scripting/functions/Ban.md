@@ -9,9 +9,9 @@ tags: ["administration"]
 
 Banuj igrača koji je trenutno na serveru. On se više nikada neće moći pridružiti serveru. Zabrana će se zasnivati ​​na IP-u i bit će spremljena u datoteku samp.ban u korijenskom direktoriju poslužitelja. BanEx se može koristiti za obrazloženje zabrane. IP zabrane mogu se dodati / ukloniti pomoću naredbi RCON banip i unbanip (SendRconCommand).
 
-| Name     | Description                  |
-| -------- | ---------------------------- |
-| playerid | ID igrača za banovanje.      |
+| Name     | Description             |
+| -------- | ----------------------- |
+| playerid | ID igrača za banovanje. |
 
 ## Returns
 

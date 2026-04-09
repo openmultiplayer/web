@@ -9,15 +9,15 @@ tags: ["player"]
 
 Bu fonksiyon, oyuncu ateş ettiğinde çağrılır. Bu fonksiyon ateşli silahları destekler. Sadece yolcu drive-by'ını destekler.(buna sürücünün drive-by atması, sea sparrow/hunter gibi araçların silahları dahil değildir.).
 
-| Parametre | Açıklama                                                                                                  |
-| --------- | --------------------------------------------------------------------------------------------------------- |
-| playerid  | Ateş eden oyuncunun ID'si.                                                                                |
-| weaponid  | Ateşlenen silahın [silah ID'leri](../resources/weaponids) ID'si.                                          |
-| hittype   | Oyuncunun vuruş türü. [türler](../resources/bullethittypes). (oyuncu, obje veya araç gibi).               |
-| hitid     | Vurulan oyuncunun, objenin veya aracın ID'si.                                                             |
-| fX        | Ateşlenen merminin gittiği X koordinatı.                                                                  |
-| fY        | Ateşlenen merminin gittiği Y koordinatı.                                                                  |
-| fZ        | Ateşlenen merminin gittiği Z koordinatı.                                                                  |
+| Parametre | Açıklama                                                                                    |
+| --------- | ------------------------------------------------------------------------------------------- |
+| playerid  | Ateş eden oyuncunun ID'si.                                                                  |
+| weaponid  | Ateşlenen silahın [silah ID'leri](../resources/weaponids) ID'si.                            |
+| hittype   | Oyuncunun vuruş türü. [türler](../resources/bullethittypes). (oyuncu, obje veya araç gibi). |
+| hitid     | Vurulan oyuncunun, objenin veya aracın ID'si.                                               |
+| fX        | Ateşlenen merminin gittiği X koordinatı.                                                    |
+| fY        | Ateşlenen merminin gittiği Y koordinatı.                                                    |
+| fZ        | Ateşlenen merminin gittiği Z koordinatı.                                                    |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -58,9 +58,9 @@ GetPlayerLastShotVectors, detaylı mermi vektör bilgileri için bu çağrıda k
 
 :::warning
 
-Bilinen Hata(lar): Şoför olarak araca ateş ettiyseniz veya hedef etkinken arkanıza bakıyorsanız fonksiyon çağrılmaz. Araç içindeki bir oyuncuya ateş ediyorsanız vuruş tipi BULLET_HIT_TYPE_VEHICLE (vurulan oyuncunun araç ID'si) olarak geçer. Hiç BULLET_HIT_TYPE_PLAYER olarak çağrılmaz. 
+Bilinen Hata(lar): Şoför olarak araca ateş ettiyseniz veya hedef etkinken arkanıza bakıyorsanız fonksiyon çağrılmaz. Araç içindeki bir oyuncuya ateş ediyorsanız vuruş tipi BULLET_HIT_TYPE_VEHICLE (vurulan oyuncunun araç ID'si) olarak geçer. Hiç BULLET_HIT_TYPE_PLAYER olarak çağrılmaz.
 
-SA-MP 0.3.7 sürümünde kısmen düzeltildi: Sahte silah verileri kötü niyetli bir kullanıcı tarafından gönderilirse, diğer oyuncu istemcileri donabilir veya çökebilir. Bunu önlemek için, ateşlenen silahın gerçekten mermi ateşleyip ateşleyemeyeceğini kontrol edin. 
+SA-MP 0.3.7 sürümünde kısmen düzeltildi: Sahte silah verileri kötü niyetli bir kullanıcı tarafından gönderilirse, diğer oyuncu istemcileri donabilir veya çökebilir. Bunu önlemek için, ateşlenen silahın gerçekten mermi ateşleyip ateşleyemeyeceğini kontrol edin.
 
 :::
 

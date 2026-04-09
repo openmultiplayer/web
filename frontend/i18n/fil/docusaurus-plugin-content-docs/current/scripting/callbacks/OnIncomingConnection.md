@@ -9,11 +9,11 @@ tags: []
 
 Ang callback na ito ay itinatawag kapag mayroong IP address na nag-tatangkang kumonek sa server.
 
-| Name         | Description                                        |
-| ------------ | -------------------------------------------------- |
-| playerid     | Ang ID ng player na nagtatangkang kumonek          |
-| ip_address[] | Ang IP address ng player na nagtatangkang kumonek  |
-| port         | Ang port ng tinangkang koneksyon                   |
+| Name         | Description                                       |
+| ------------ | ------------------------------------------------- |
+| playerid     | Ang ID ng player na nagtatangkang kumonek         |
+| ip_address[] | Ang IP address ng player na nagtatangkang kumonek |
+| port         | Ang port ng tinangkang koneksyon                  |
 
 ## Returns
 

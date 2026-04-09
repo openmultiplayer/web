@@ -10,7 +10,7 @@ tags: ["player"]
 Acest callback este apelat atunci când un jucător încheie modul de ediție a obiectelor atașate.
 
 | Nume                   | Descriere                                                                |
-|------------------------|--------------------------------------------------------------------------|
+| ---------------------- | ------------------------------------------------------------------------ |
 | playerid               | ID-ul jucătorului care a încheiat modul ediție                           |
 | EDIT_RESPONSE:response | 0 dacă au anulat (ESC) sau 1 dacă au făcut clic pe pictograma de salvare |
 | index                  | Indexul obiectului atașat (0-9)                                          |

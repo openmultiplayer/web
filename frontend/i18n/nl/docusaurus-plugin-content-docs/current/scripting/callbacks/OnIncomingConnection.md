@@ -9,11 +9,11 @@ tags: []
 
 Deze callback wordt aangeroepen wanneer een IP-adres een verbinding met de server probeert te maken. Gebruik BlockIpAddress om inkomende verbindingen te blokkeren.
 
-| Naam         | Beschrijving                                        |
-| ------------ | -------------------------------------------------- |
-| playerid     | Het ID van de speler die probeert te verbinden.     |
+| Naam         | Beschrijving                                         |
+| ------------ | ---------------------------------------------------- |
+| playerid     | Het ID van de speler die probeert te verbinden.      |
 | ip_address[] | Het IP-adres van de speler die probeert te verbinden |
-| port         | De poort van de poging tot verbinding               |
+| port         | De poort van de poging tot verbinding                |
 
 ## Returns
 

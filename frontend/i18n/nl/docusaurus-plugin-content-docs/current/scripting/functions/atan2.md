@@ -15,10 +15,10 @@ De y‑waarde is de eerste parameter en x de tweede (y/x‑notatie).
 
 Geef de arc‑tangens in graden, rekening houdend met het teken van beide argumenten om de kwadrant te bepalen.
 
-| Naam    | Beschrijving                                     |
-| ------- | ------------------------------------------------- |
-| Float:y | aandeel van de y‑coördinaat                      |
-| Float:x | aandeel van de x‑coördinaat                      |
+| Naam    | Beschrijving                |
+| ------- | --------------------------- |
+| Float:y | aandeel van de y‑coördinaat |
+| Float:x | aandeel van de x‑coördinaat |
 
 ## Retourneert
 
@@ -47,5 +47,3 @@ public OnGameModeInit()
 - [asin](../functions/asin)
 - [acos](../functions/acos)
 - [atan](../functions/atan)
-
-

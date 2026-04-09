@@ -23,12 +23,12 @@ Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement di
 ```c
 public OnPlayerStreamOut(playerid, forplayerid)
 {
-    new 
+    new
         string[80];
-    
+
     format(string, sizeof(string), "Le joueur ID %d vient d'être déchargé de votre client.", playerid);
     SendClientMessage(forplayerid, 0xFF0000FF, string);
-    
+
     return 1;
 }
 ```

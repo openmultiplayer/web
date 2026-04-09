@@ -22,4 +22,3 @@ public OnFilterScriptExit()
 ```
 
 ## Related Callbacks
-

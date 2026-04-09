@@ -9,16 +9,16 @@ tags: ["object", "player"]
 
 Anexa um objeto a um jogador.
 
-| Nome            | Descrição                                                          |
-| --------------- | ------------------------------------------------------------------ |
-| objectid        | O ID do objeto a ser anexado ao jogador.                          |
-| parentid        | O ID do jogador ao qual anexar o objeto.                          |
-| Float:offsetX   | A distância entre o jogador e o objeto na direção X.              |
-| Float:offsetY   | A distância entre o jogador e o objeto na direção Y.              |
-| Float:offsetZ   | A distância entre o jogador e o objeto na direção Z.              |
-| Float:rotationX | A rotação X entre o objeto e o jogador.                           |
-| Float:rotationY | A rotação Y entre o objeto e o jogador.                           |
-| Float:rotationZ | A rotação Z entre o objeto e o jogador.                           |
+| Nome            | Descrição                                            |
+| --------------- | ---------------------------------------------------- |
+| objectid        | O ID do objeto a ser anexado ao jogador.             |
+| parentid        | O ID do jogador ao qual anexar o objeto.             |
+| Float:offsetX   | A distância entre o jogador e o objeto na direção X. |
+| Float:offsetY   | A distância entre o jogador e o objeto na direção Y. |
+| Float:offsetZ   | A distância entre o jogador e o objeto na direção Z. |
+| Float:rotationX | A rotação X entre o objeto e o jogador.              |
+| Float:rotationY | A rotação Y entre o objeto e o jogador.              |
+| Float:rotationZ | A rotação Z entre o objeto e o jogador.              |
 
 ## Retorno
 

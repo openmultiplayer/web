@@ -9,9 +9,9 @@ tags: ["player"]
 
 Callback này được gọi khi người chơi xuất hiện. (ví dụ: sau khi gọi hàm [SpawnPlayer](../functions/SpawnPlayer))
 
-| Tên      | Mô tả                                |
-| -------- | ------------------------------------ |
-| playerid | ID của người chơi đã xuất hiện.      |
+| Tên      | Mô tả                           |
+| -------- | ------------------------------- |
+| playerid | ID của người chơi đã xuất hiện. |
 
 ## Giá trị trả về
 
@@ -28,7 +28,7 @@ public OnPlayerSpawn(playerid)
 {
     new PlayerName[MAX_PLAYER_NAME];
     GetPlayerName(playerid, PlayerName, sizeof(PlayerName));
-    
+
     new string[64];
     format(string, sizeof(string), "%s has spawned successfully.", PlayerName);
 
@@ -51,14 +51,14 @@ GivePlayerMoney(playerid, -100);
 
 ## Các Callbacks liên quan
 
-Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
-- [OnPlayerDeath](OnPlayerDeath): Callback này được gọi khi người chơi chết. 
-- [OnVehicleSpawn](OnVehicleSpawn): Callback này được gọi khi một phương tiện tái xuất hiện. 
+- [OnPlayerDeath](OnPlayerDeath): Callback này được gọi khi người chơi chết.
+- [OnVehicleSpawn](OnVehicleSpawn): Callback này được gọi khi một phương tiện tái xuất hiện.
 
 ## Các Hàm liên quan
 
-Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [SpawnPlayer](../functions/SpawnPlayer): Bắt buộc người chơi xuất hiện.
 - [AddPlayerClass](../functions/AddPlayerClass): Thêm một lớp.

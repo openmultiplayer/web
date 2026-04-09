@@ -11,7 +11,7 @@ Deze callback wordt aangeroepen wanneer een speler een item uit een menu selecte
 
 | Naam     | Beschrijving                                               |
 | -------- | ---------------------------------------------------------- |
-| playerid | Het ID van de speler die een menu-item selecteerde.       |
+| playerid | Het ID van de speler die een menu-item selecteerde.        |
 | row      | Het ID van de geselecteerde rij. De eerste rij heeft ID 0. |
 
 ## Returns

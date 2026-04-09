@@ -12,7 +12,7 @@ tags: ["player", "pickup", "playerpickup"]
 این کالبک زمانی فراخوانده می‌شود که یک بازیکن player-pickup ایجاد شده با [CreatePlayerPickup](../functions/CreatePlayerPickup) را برداشت کند.
 
 | نام      | توضیحات                                                                                       |
-| -------- | ---------------------------------------------------------------------------------------------- |
+| -------- | --------------------------------------------------------------------------------------------- |
 | playerid | شناسه بازیکنی که player-pickup را برداشت کرده است.                                            |
 | pickupid | شناسه player-pickup، برگردانده شده توسط [CreatePlayerPickup](../functions/CreatePlayerPickup) |
 

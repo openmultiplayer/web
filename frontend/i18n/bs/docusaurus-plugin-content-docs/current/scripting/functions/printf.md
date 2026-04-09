@@ -15,10 +15,10 @@ Ova funkcija započinje malim slovom.
 
 Ispisuje formatirani niz na konzoli (prozor servera, a ne chat u igri).
 
-| Ime            | Deskripcija                                    |
-| -------------- | ---------------------------------------------- |
-| format[]       | Formatirani string.                            |
-\ \{Float, _}:... | Neograničeni broj argumenata bilo koje oznake. |
+| Ime                | Deskripcija                                    |
+| ------------------ | ---------------------------------------------- |
+| format[]           | Formatirani string.                            |
+| \ \{Float, \_}:... | Neograničeni broj argumenata bilo koje oznake. |
 
 ## Returns
 

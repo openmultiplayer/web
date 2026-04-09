@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Callback này được gọi khi một người chơi gửi cập nhật về trailer.
 
-| Tên       | Mô tả                                              |
-|-----------|----------------------------------------------------|
-| playerid  | ID của người chơi gửi cập nhật trailer              |
-| vehicleid | ID của trailer được cập nhật                        |
+| Tên       | Mô tả                                  |
+| --------- | -------------------------------------- |
+| playerid  | ID của người chơi gửi cập nhật trailer |
+| vehicleid | ID của trailer được cập nhật           |
 
 ## Trả về
 

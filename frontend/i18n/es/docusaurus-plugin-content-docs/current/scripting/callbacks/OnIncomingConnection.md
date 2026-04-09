@@ -1,6 +1,6 @@
 ---
 título: OnIncomingConnection
-descripción: Este callback se llama cuando una dirección IP intenta establecer una conexión con el servidor. 
+descripción: Este callback se llama cuando una dirección IP intenta establecer una conexión con el servidor.
 tags: []
 ---
 
@@ -8,11 +8,11 @@ tags: []
 
 Este callback se llama cuando una dirección IP intenta establecer una conexión con el servidor. Para bloquear conexiones entrantes, use BlockIpAdress.
 
-| Nombre       | Descripción                                        |
-| ------------ | -------------------------------------------------- |
-| playerid     | El ID del jugador que está intentando conectarse.  |
-| ip_address[] | La IP del jugador que está intentando conectarse.  |
-| port         | El puerto de la conexión intentada.                |
+| Nombre       | Descripción                                       |
+| ------------ | ------------------------------------------------- |
+| playerid     | El ID del jugador que está intentando conectarse. |
+| ip_address[] | La IP del jugador que está intentando conectarse. |
+| port         | El puerto de la conexión intentada.               |
 
 ## Devoluciones
 

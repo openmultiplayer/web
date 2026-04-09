@@ -11,21 +11,21 @@ tags: ["class"]
 
 Edita os dados de uma classe existente.
 
-| Nome           | Descrição                                                      |
-|----------------|------------------------------------------------------------------|
-| classid        | O ID da classe a ser editada.                                   |
-| team           | O time em que o jogador irá nascer.                             |
-| skin           | A [skin](../resources/skins) que o jogador usará ao nascer.     |
-| Float:spawnX   | Coordenada X do ponto de spawn desta classe.                    |
-| Float:spawnY   | Coordenada Y do ponto de spawn desta classe.                    |
-| Float:spawnZ   | Coordenada Z do ponto de spawn desta classe.                    |
-| Float:angle    | Direção que o jogador estará virado ao nascer.                  |
-| WEAPON:weapon1 | Primeira arma que o jogador receberá ao nascer.                 |
-| ammo1          | Munição da primeira arma.                                       |
-| WEAPON:weapon2 | Segunda arma que o jogador receberá ao nascer.                  |
-| ammo2          | Munição da segunda arma.                                        |
-| WEAPON:weapon3 | Terceira arma que o jogador receberá ao nascer.                 |
-| ammo3          | Munição da terceira arma.                                       |
+| Nome           | Descrição                                                   |
+| -------------- | ----------------------------------------------------------- |
+| classid        | O ID da classe a ser editada.                               |
+| team           | O time em que o jogador irá nascer.                         |
+| skin           | A [skin](../resources/skins) que o jogador usará ao nascer. |
+| Float:spawnX   | Coordenada X do ponto de spawn desta classe.                |
+| Float:spawnY   | Coordenada Y do ponto de spawn desta classe.                |
+| Float:spawnZ   | Coordenada Z do ponto de spawn desta classe.                |
+| Float:angle    | Direção que o jogador estará virado ao nascer.              |
+| WEAPON:weapon1 | Primeira arma que o jogador receberá ao nascer.             |
+| ammo1          | Munição da primeira arma.                                   |
+| WEAPON:weapon2 | Segunda arma que o jogador receberá ao nascer.              |
+| ammo2          | Munição da segunda arma.                                    |
+| WEAPON:weapon3 | Terceira arma que o jogador receberá ao nascer.             |
+| ammo3          | Munição da terceira arma.                                   |
 
 ## Exemplos
 

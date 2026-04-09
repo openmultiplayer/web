@@ -9,9 +9,9 @@ tags: ["player", "menu"]
 
 Esta callback é chamada quano um jogador seleciona um item de um menu (ShowMenuForPlayer).
 
-| Nome     | Descrição                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | O ID do jogador que selecionou um item de um menu           |
+| Nome     | Descrição                                                        |
+| -------- | ---------------------------------------------------------------- |
+| playerid | O ID do jogador que selecionou um item de um menu                |
 | row      | O ID da linha que o jogador selecionou, sendo a primeira o ID 0. |
 
 ## Retorno

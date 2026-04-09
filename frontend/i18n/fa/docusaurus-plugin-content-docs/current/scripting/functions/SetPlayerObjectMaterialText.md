@@ -9,20 +9,20 @@ tags: ["player", "object", "playerobject"]
 
 texture یک player object رو با متن جایگزین می‌کنه.
 
-| نام                                      | توضیحات                                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------------------ |
-| playerid                                 | آیدی پلیری که قراره متن player object اش تنظیم بشه                              |
-| objectid                                 | آیدی object ای که قراره متن روش قرار بگیره                                      |
-| text[]                                   | متنی که قراره تنظیم بشه                                                         |
-| materialIndex                            | اندکس material که قراره با متن جایگزین بشه (پیش‌فرض: 0)                        |
-| OBJECT_MATERIAL_SIZE:materialSize        | [اندازه](../resources/materialtextsizes) material (پیش‌فرض: 256x128)          |
-| const fontFace[]                         | فونتی که قراره استفاده بشه (پیش‌فرض: Arial)                                    |
-| fontSize                                 | اندازه متن (پیش‌فرض: 24) (حداکثر 255)                                          |
-| bool:bold                                | متن پررنگ. برای پررنگ 1، برای نرمال 0 (پیش‌فرض: 1)                            |
-| fontColour                               | رنگ متن (پیش‌فرض: سفید)                                                        |
-| backgroundColour                         | رنگ پس‌زمینه (پیش‌فرض: هیچ (شفاف))                                             |
-| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | [تراز](../resources/materialtextsizes) متن (پیش‌فرض: چپ)                       |
-| OPEN_MP_TAGS:...                         | تعداد نامشخصی از آرگومان‌ها با هر نوع تگی                                       |
+| نام                                      | توضیحات                                                              |
+| ---------------------------------------- | -------------------------------------------------------------------- |
+| playerid                                 | آیدی پلیری که قراره متن player object اش تنظیم بشه                   |
+| objectid                                 | آیدی object ای که قراره متن روش قرار بگیره                           |
+| text[]                                   | متنی که قراره تنظیم بشه                                              |
+| materialIndex                            | اندکس material که قراره با متن جایگزین بشه (پیش‌فرض: 0)              |
+| OBJECT_MATERIAL_SIZE:materialSize        | [اندازه](../resources/materialtextsizes) material (پیش‌فرض: 256x128) |
+| const fontFace[]                         | فونتی که قراره استفاده بشه (پیش‌فرض: Arial)                          |
+| fontSize                                 | اندازه متن (پیش‌فرض: 24) (حداکثر 255)                                |
+| bool:bold                                | متن پررنگ. برای پررنگ 1، برای نرمال 0 (پیش‌فرض: 1)                   |
+| fontColour                               | رنگ متن (پیش‌فرض: سفید)                                              |
+| backgroundColour                         | رنگ پس‌زمینه (پیش‌فرض: هیچ (شفاف))                                   |
+| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | [تراز](../resources/materialtextsizes) متن (پیش‌فرض: چپ)             |
+| OPEN_MP_TAGS:...                         | تعداد نامشخصی از آرگومان‌ها با هر نوع تگی                            |
 
 ## مقادیر بازگشتی
 

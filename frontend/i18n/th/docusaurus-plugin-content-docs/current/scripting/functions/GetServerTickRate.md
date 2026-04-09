@@ -12,7 +12,6 @@ Gets the tick rate (like FPS) of the server.
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

@@ -15,7 +15,7 @@ description: 可用的地图图标列表。
 | 0   | ![](https://assets.open.mp/assets/images/mapIcons/icon0.gif)  | 彩色方框/三角（动态） | 可使用任意颜色。用于单人任务目标，当标记与玩家不处于同一地面高度时显示为三角形 |
 | 1   | ![](https://assets.open.mp/assets/images/mapIcons/icon1.gif)  | 白色方框              | 尺寸为 ID 0 的两倍且无边框                                                     |
 | 2   | ![](https://assets.open.mp/assets/images/mapIcons/icon2.gif)  | 玩家位置              | 默认显示在小地图上                                                             |
-| 3   | ![](https://assets.open.mp/assets/images/mapIcons/icon3.gif)  | 玩家（菜单地图）      | 暂停菜单大地图中显示的角色位置                                                 |
+| 3   | ![](https://assets.open.mp/assets/images/mapIcons/icon3.gif)  | 玩家（菜单地图）      | 暂停菜单大地图中显示的玩家位置                                                 |
 | 4   | ![](https://assets.open.mp/assets/images/mapIcons/icon4.gif)  | 北方指示              | 始终在雷达上指向北方                                                           |
 | 5   | ![](https://assets.open.mp/assets/images/mapIcons/icon5.gif)  | 航空站                |                                                                                |
 | 6   | ![](https://assets.open.mp/assets/images/mapIcons/icon6.gif)  | 武器商店              |                                                                                |

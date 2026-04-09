@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Aracın birincil ve ikincil rengini değiştirme.
 
-| Parametre | Açıklama                                       |
-| --------- | ---------------------------------------------- |
-| vehicleid | Rengi değişecek aracın ID'si.                  |
-| color1    | Değişecek birincil rengin ID'si.               |
-| color2    | Değişecek ikincil rengin ID'si.                |
+| Parametre | Açıklama                         |
+| --------- | -------------------------------- |
+| vehicleid | Rengi değişecek aracın ID'si.    |
+| color1    | Değişecek birincil rengin ID'si. |
+| color2    | Değişecek ikincil rengin ID'si.  |
 
 ## Çalşınca Vereceği Sonuçlar
 

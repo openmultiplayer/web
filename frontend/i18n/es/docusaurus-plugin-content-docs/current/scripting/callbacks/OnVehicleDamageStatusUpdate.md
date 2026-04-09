@@ -14,10 +14,10 @@ Para algunas funciones útiles para trabajar con valores de daños del vehículo
 
 Este callback se llama cuando un elemento de vehículo como las puertas, llantas, paneles, o luces cambiar su estado de daño.
 
-| Nombre    | Descripción                                                                                            |
-| --------- | ------------------------------------------------------------------------------------------------------ |
-| vehicleid | El ID del vehículo que cambió su estado de daño.                                                       |
-| playerid  | El ID del jugador que sincronizó el cambio en el estado de daño (quién hizo reparar o dañar el auto).  |
+| Nombre    | Descripción                                                                                           |
+| --------- | ----------------------------------------------------------------------------------------------------- |
+| vehicleid | El ID del vehículo que cambió su estado de daño.                                                      |
+| playerid  | El ID del jugador que sincronizó el cambio en el estado de daño (quién hizo reparar o dañar el auto). |
 
 ## Devoluciones
 

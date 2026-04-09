@@ -9,10 +9,10 @@ tags: ["player"]
 
 Bu fonksiyon, bir oyuncu başka bir oyuncunun istemcisinden stream alanından çıktığında çağrılır.
 
-| Parametre   | Açıklama                                        |
-| ----------- | ----------------------------------------------- |
-| playerid    | Diğer oyuncuyu canlı olarak görülen oyuncu.     |
-| forplayerid | Diğer oyuncuyu canlı olarak gören oyuncu.       |
+| Parametre   | Açıklama                                    |
+| ----------- | ------------------------------------------- |
+| playerid    | Diğer oyuncuyu canlı olarak görülen oyuncu. |
+| forplayerid | Diğer oyuncuyu canlı olarak gören oyuncu.   |
 
 ## Çalışınca Vereceği Sonuçlar
 

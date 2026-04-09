@@ -6,12 +6,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Descripción
 
-Este callback se llama cuando un jugador clickea en un player-textdraw. No se llama cuando el jugador cancela el modo de selección (ESC), sin embargo, OnPlayerClickTextdraw sí. 
+Este callback se llama cuando un jugador clickea en un player-textdraw. No se llama cuando el jugador cancela el modo de selección (ESC), sin embargo, OnPlayerClickTextdraw sí.
 
-| Nombre       | Descripción                                             |
-| ------------ | ------------------------------------------------------- |
-| playerid     | El ID del jugador que seleccionó un textdraw.           |
-| playertextid | El ID del player-textdraw que el jugador seleccionó.    |
+| Nombre       | Descripción                                          |
+| ------------ | ---------------------------------------------------- |
+| playerid     | El ID del jugador que seleccionó un textdraw.        |
+| playertextid | El ID del player-textdraw que el jugador seleccionó. |
 
 ## Devoluciones
 

@@ -9,8 +9,8 @@ tags: ["player"]
 
 Geeft de virtual world‑ID van de speler terug.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
+| Naam     | Beschrijving                             |
+| -------- | ---------------------------------------- |
 | playerid | Speler waarvan je de virtual world wilt. |
 
 ## Retourneert
@@ -42,5 +42,3 @@ Virtual worlds zijn niet hetzelfde als interiors.
 - [SetPlayerVirtualWorld](SetPlayerVirtualWorld)
 - [GetVehicleVirtualWorld](GetVehicleVirtualWorld)
 - [GetPlayerInterior](GetPlayerInterior)
-
-

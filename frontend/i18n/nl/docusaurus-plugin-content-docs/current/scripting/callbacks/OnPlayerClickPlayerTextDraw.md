@@ -9,10 +9,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Deze callback wordt aangeroepen wanneer een speler op een player-textdraw klikt. Hij wordt niet aangeroepen wanneer de speler de selectiemodus annuleert met ESC – dan wordt [OnPlayerClickTextDraw](OnPlayerClickTextDraw) aangeroepen.
 
-| Naam                    | Beschrijving                                              |
-| ----------------------- | --------------------------------------------------------- |
-| playerid                | Het ID van de speler die op de textdraw klikte.          |
-| PlayerText:playertextid | Het ID van de player-textdraw waarop is geklikt.         |
+| Naam                    | Beschrijving                                     |
+| ----------------------- | ------------------------------------------------ |
+| playerid                | Het ID van de speler die op de textdraw klikte.  |
+| PlayerText:playertextid | Het ID van de player-textdraw waarop is geklikt. |
 
 ## Returns
 

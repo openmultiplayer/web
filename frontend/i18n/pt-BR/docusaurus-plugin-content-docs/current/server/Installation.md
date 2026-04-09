@@ -64,10 +64,10 @@ Se você usa os seguintes plugins da tabela, você deve colocar uma versão do p
 
 :::
 
-| Plugin            | OMP                                                               |
-| ----------------- | ----------------------------------------------------------------- |
-| rustext           | https://github.com/ziggi/rustext/releases/tag/v2.0.11 (nomemhack) |
-| keylistener       | https://github.com/edgyaf/keylistener/releases/tag/1.1.2-pr       |
+| Plugin      | OMP                                                               |
+| ----------- | ----------------------------------------------------------------- |
+| rustext     | https://github.com/ziggi/rustext/releases/tag/v2.0.11 (nomemhack) |
+| keylistener | https://github.com/edgyaf/keylistener/releases/tag/1.1.2-pr       |
 
 :::warning
 

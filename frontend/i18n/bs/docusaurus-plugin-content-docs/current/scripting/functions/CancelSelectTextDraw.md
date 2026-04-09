@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Cancel textdraw selection with the mouse
 
-| Ime      | Deskripcija                                                         |
-| -------- | ------------------------------------------------------------------- |
-| playerid | ID igrača za kojeg bi se trebala prekinuti selekcija textdrawova    |
+| Ime      | Deskripcija                                                      |
+| -------- | ---------------------------------------------------------------- |
+| playerid | ID igrača za kojeg bi se trebala prekinuti selekcija textdrawova |
 
 ## Returns
 

@@ -9,22 +9,22 @@ tags: ["player", "object", "attachment"]
 
 Deze callback wordt aangeroepen wanneer een speler de attached object edit-modus beëindigt.
 
-| Naam                   | Beschrijving                                                  |
-| ---------------------- | ------------------------------------------------------------ |
-| playerid               | Het ID van de speler die de edit-modus beëindigde            |
+| Naam                   | Beschrijving                                                        |
+| ---------------------- | ------------------------------------------------------------------- |
+| playerid               | Het ID van de speler die de edit-modus beëindigde                   |
 | EDIT_RESPONSE:response | 0 als ze annuleerden (ESC) of 1 als ze op het opslaan-icoon klikten |
-| index                  | De index van het attached object (0-9)                       |
-| modelid                | Het model van het attached object dat werd bewerkt           |
-| boneid                 | Het bot van het attached object dat werd bewerkt             |
-| Float:fOffsetX         | De X-offset voor het attached object dat werd bewerkt        |
-| Float:fOffsetY         | De Y-offset voor het attached object dat werd bewerkt        |
-| Float:fOffsetZ         | De Z-offset voor het attached object dat werd bewerkt        |
-| Float:fRotX            | De X-rotatie voor het attached object dat werd bewerkt       |
-| Float:fRotY            | De Y-rotatie voor het attached object dat werd bewerkt       |
-| Float:fRotZ            | De Z-rotatie voor het attached object dat werd bewerkt       |
-| Float:fScaleX          | De X-schaal voor het attached object dat werd bewerkt        |
-| Float:fScaleY          | De Y-schaal voor het attached object dat werd bewerkt        |
-| Float:fScaleZ          | De Z-schaal voor het attached object dat werd bewerkt        |
+| index                  | De index van het attached object (0-9)                              |
+| modelid                | Het model van het attached object dat werd bewerkt                  |
+| boneid                 | Het bot van het attached object dat werd bewerkt                    |
+| Float:fOffsetX         | De X-offset voor het attached object dat werd bewerkt               |
+| Float:fOffsetY         | De Y-offset voor het attached object dat werd bewerkt               |
+| Float:fOffsetZ         | De Z-offset voor het attached object dat werd bewerkt               |
+| Float:fRotX            | De X-rotatie voor het attached object dat werd bewerkt              |
+| Float:fRotY            | De Y-rotatie voor het attached object dat werd bewerkt              |
+| Float:fRotZ            | De Z-rotatie voor het attached object dat werd bewerkt              |
+| Float:fScaleX          | De X-schaal voor het attached object dat werd bewerkt               |
+| Float:fScaleY          | De Y-schaal voor het attached object dat werd bewerkt               |
+| Float:fScaleZ          | De Z-schaal voor het attached object dat werd bewerkt               |
 
 ## Returns
 

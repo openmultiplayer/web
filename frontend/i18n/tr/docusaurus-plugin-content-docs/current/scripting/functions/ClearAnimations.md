@@ -9,10 +9,10 @@ tags: []
 
 Oyuncunun uyguladığı bütün animasyonları ipta eder. (Aynı zamanda jetpackteyken, paraşütle atlarken, araca binerken, araç kullanırken, yüzerken yapılan animasyonlarda bu duruma dahildir.)
 
-| Parametre | Açıklama                                                                                                                  |
-| --------- | ------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | Animasyonu bozulacak oyuncunun ID'si.                                                                                     |
-| forcesync | Oyuncunun animasyon akışını etrafındaki diğer oyuncularla senkronize etmeye zorlamak için 1'e ayarlayın  (isteğe bağlı)   |
+| Parametre | Açıklama                                                                                                               |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| playerid  | Animasyonu bozulacak oyuncunun ID'si.                                                                                  |
+| forcesync | Oyuncunun animasyon akışını etrafındaki diğer oyuncularla senkronize etmeye zorlamak için 1'e ayarlayın (isteğe bağlı) |
 
 ## Çalışınca Vereceği Sonuçlar
 

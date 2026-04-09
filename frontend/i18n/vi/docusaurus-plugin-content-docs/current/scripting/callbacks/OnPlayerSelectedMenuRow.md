@@ -9,10 +9,10 @@ tags: ["player", "menu"]
 
 Callback này được gọi khi người chơi chọn một mục từ menu ([ShowMenuForPlayer](../functions/ShowMenuForPlayer)).
 
-| Tên      | Mô tả                                                       |
-| -------- | ----------------------------------------------------------- |
-| playerid | ID của người chơi đã chọn một mục trong menu.               |
-| row      | ID của hàng đã được chọn. Hàng đầu tiên có ID là 0.         |
+| Tên      | Mô tả                                               |
+| -------- | --------------------------------------------------- |
+| playerid | ID của người chơi đã chọn một mục trong menu.       |
+| row      | ID của hàng đã được chọn. Hàng đầu tiên có ID là 0. |
 
 ## Giá trị trả về
 
@@ -61,14 +61,14 @@ ID của menu không được truyền vào callback này. [GetPlayerMenu](../fu
 
 ## Các Callbacks liên quan
 
-Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
-- [OnPlayerExitedMenu](OnPlayerExitedMenu): Callback này được gọi khi người chơi thoát khỏi menu. 
-- [OnDialogResponse](OnDialogResponse): Callback này được gọi khi người chơi phản hồi một dialog. 
+- [OnPlayerExitedMenu](OnPlayerExitedMenu): Callback này được gọi khi người chơi thoát khỏi menu.
+- [OnDialogResponse](OnDialogResponse): Callback này được gọi khi người chơi phản hồi một dialog.
 
 ## Các Hàm liên quan
 
-Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [CreateMenu](../functions/CreateMenu): Tạo một menu.
 - [DestroyMenu](../functions/DestroyMenu): Hủy một menu.

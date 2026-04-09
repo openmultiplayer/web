@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 player gangzone رو پنهان می‌کنه.
 
-| نام        | توضیح                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| playerid    | ID بازیکنی که player gangzone به اون متصل شده.           |
-| zoneid      | ID player gangzone برای پنهان کردن.                          |
+| نام      | توضیح                                          |
+| -------- | ---------------------------------------------- |
+| playerid | ID بازیکنی که player gangzone به اون متصل شده. |
+| zoneid   | ID player gangzone برای پنهان کردن.            |
 
 ## مقادیر بازگشتی
 

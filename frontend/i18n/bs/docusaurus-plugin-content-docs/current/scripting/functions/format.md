@@ -15,12 +15,12 @@ Ova funkcija započinje malim slovom.
 
 Formatira string tako da sadrži varijable i druge stringove unutar njega.
 
-| Ime            | Deskripcija                                  |
-| -------------- | -------------------------------------------- |
-| output[]       | String za izlaz rezultata u                  |
-| len            | Izlaz maksimalne dužine koje može sadržavati |
-| format[]       | Format stringa                               |
-\ \{Float, _}:... | Neodređeni broj argumenata bilo koje oznake  |
+| Ime                | Deskripcija                                  |
+| ------------------ | -------------------------------------------- |
+| output[]           | String za izlaz rezultata u                  |
+| len                | Izlaz maksimalne dužine koje može sadržavati |
+| format[]           | Format stringa                               |
+| \ \{Float, \_}:... | Neodređeni broj argumenata bilo koje oznake  |
 
 ## Returns
 

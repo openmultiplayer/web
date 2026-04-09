@@ -9,11 +9,11 @@ tags: ["player"]
 
 Itinatawag kapag ang player ay nag-double-click sa isang player sa scoreboard. (Tab)
 
-| Name            | Description                                                      |
-| --------------- | ---------------------------------------------------------------- |
-| playerid        | Ang ID ng player na nag-pindot ng isang player sa scoreboard.    |
-| clickedplayerid | Ang ID ng player na ipinindot.                                   |
-| source          | Ang source na pinagpindutan ng player.                           |
+| Name            | Description                                                   |
+| --------------- | ------------------------------------------------------------- |
+| playerid        | Ang ID ng player na nag-pindot ng isang player sa scoreboard. |
+| clickedplayerid | Ang ID ng player na ipinindot.                                |
+| source          | Ang source na pinagpindutan ng player.                        |
 
 ## Returns
 

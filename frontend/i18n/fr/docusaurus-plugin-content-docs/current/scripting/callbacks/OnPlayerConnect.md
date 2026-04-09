@@ -9,9 +9,9 @@ tags: ["player"]
 
 Cette callback est appelée quand un joueur se connecte au serveur.
 
-| Nom             | Description           |
-| --------------- | --------------------- |
-| `int` playerid  | ID du joueur connecté |
+| Nom            | Description           |
+| -------------- | --------------------- |
+| `int` playerid | ID du joueur connecté |
 
 ## Valeur de retour
 
@@ -25,13 +25,13 @@ public OnPlayerConnect(playerid)
     new
         string[64],
         playerName[MAX_PLAYER_NAME];
-         
+
     /* Message de bienvenue */
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 
     format(string, sizeof string, "[+] %s a rejoint le serveur. Bienvenue à lui !", playerName);
     SendClientMessageToAll(0xFFFFFFAA, string);
-    
+
     return 1;
 }
 ```

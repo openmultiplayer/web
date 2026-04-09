@@ -9,10 +9,10 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler uit beeld streamt bij de client van een andere speler.
 
-| Naam        | Beschrijving                                 |
-| ----------- | -------------------------------------------- |
-| playerid    | De speler die gedestreamd werd.              |
-| forplayerid | De speler voor wie de ander gedestreamd werd.|
+| Naam        | Beschrijving                                  |
+| ----------- | --------------------------------------------- |
+| playerid    | De speler die gedestreamd werd.               |
+| forplayerid | De speler voor wie de ander gedestreamd werd. |
 
 ## Returns
 

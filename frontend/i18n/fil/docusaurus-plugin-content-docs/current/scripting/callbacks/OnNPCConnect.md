@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Tinatawag ang callback na ito kapag matagumpay na nakakonekta ang isang NPC sa server.
 
-| Name         | Description                                        |
-| ------------ | -------------------------------------------------- |
-| myplayerid   | Ang playerid na binigay sa NPC                     |
+| Name       | Description                    |
+| ---------- | ------------------------------ |
+| myplayerid | Ang playerid na binigay sa NPC |
 
 ## Examples
 

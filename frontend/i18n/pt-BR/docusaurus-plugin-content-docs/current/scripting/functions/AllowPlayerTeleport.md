@@ -15,10 +15,10 @@ Esta função, a partir da versão 0.3d, está depreciada. Veja [OnPlayerClickMa
 
 Ativar/Desativar a habilidade de teletransporte para um jogador clicando com o botão direito no mapa
 
-| Nome       | Descrição                                    |
-| ---------- | -------------------------------------------- |
+| Nome       | Descrição                                     |
+| ---------- | --------------------------------------------- |
 | playerid   | O ID do jogador para permitir teletransporte. |
-| bool:allow | 'false' para desativar e 'true' para ativar. |
+| bool:allow | 'false' para desativar e 'true' para ativar.  |
 
 ## Retorno
 
@@ -35,6 +35,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 ```
+
 ## Notas
 
 :::warning

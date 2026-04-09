@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Fonksiyon, oyuncu bulunduğu araca kaplama uygulandığında çağrılır. Dikkat edin, bu fonksiyon kişi kaplamayı satın aldığında çağrılmaz.
 
-| Parametre  | Açıklama                                                         |
-| ---------- | ---------------------------------------------------------------- |
-| playerid   | Aracına kaplama uygulayan oyuncunun ID'si.                       |
-| vehicleid  | Oyuncunun kaplama uyguladığı aracın ID'si.                       |
-| paintjobid | Araca uygulanan kaplamanın ID'si.                                |
+| Parametre  | Açıklama                                   |
+| ---------- | ------------------------------------------ |
+| playerid   | Aracına kaplama uygulayan oyuncunun ID'si. |
+| vehicleid  | Oyuncunun kaplama uyguladığı aracın ID'si. |
+| paintjobid | Araca uygulanan kaplamanın ID'si.          |
 
 ## Çalışınca Vereceği Sonuçlar
 

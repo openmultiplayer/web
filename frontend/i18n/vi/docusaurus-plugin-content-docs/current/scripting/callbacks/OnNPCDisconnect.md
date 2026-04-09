@@ -1,5 +1,4 @@
 ---
-
 title: OnNPCDisconnect
 description: Callback này được gọi khi NPC ngắt kết nối khỏi server.
 tags: ["npc"]
@@ -9,9 +8,9 @@ tags: ["npc"]
 
 Callback này được gọi khi NPC ngắt kết nối khỏi server.
 
-| Tên          | Mô Tả                                                   |
-| ------------- | ------------------------------------------------------- |
-| reason[]      | Lý do tại sao bot đã ngắt kết nối khỏi server          |
+| Tên      | Mô Tả                                         |
+| -------- | --------------------------------------------- |
+| reason[] | Lý do tại sao bot đã ngắt kết nối khỏi server |
 
 ## Ví Dụ
 

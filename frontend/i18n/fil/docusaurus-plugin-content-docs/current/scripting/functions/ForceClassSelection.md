@@ -9,9 +9,9 @@ tags: []
 
 Pinipilit ang isang manlalaro na bumalik sa class selection.
 
-| Name     | Description                                 |
-| -------- | ------------------------------------------- |
-| playerid | Ang player na ibabalik sa class selection.  |
+| Name     | Description                                |
+| -------- | ------------------------------------------ |
+| playerid | Ang player na ibabalik sa class selection. |
 
 ## Returns
 

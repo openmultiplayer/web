@@ -13,5 +13,3 @@ Gebruikt door [GetPlayerSpectateType](../functions/GetPlayerSpectateType).
 | None    | 0      |
 | Vehicle | 1      |
 | Player  | 2      |
-
-

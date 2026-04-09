@@ -11,10 +11,10 @@ tags: []
 
 Ang callback na ito ay natatawag kapag ang actor ay na streamed-out na sa player.
 
-| Pangalan    | Deskripsyon                                                    |
-| ----------- | -------------------------------------------------------------- |
-| actorid     | Ang ID ng actor na na-streamed out sa player.                  |
-| forplayerid | Ang ID ng player na pinag stream-outan ng actor.               |
+| Pangalan    | Deskripsyon                                      |
+| ----------- | ------------------------------------------------ |
+| actorid     | Ang ID ng actor na na-streamed out sa player.    |
+| forplayerid | Ang ID ng player na pinag stream-outan ng actor. |
 
 ## Returns
 

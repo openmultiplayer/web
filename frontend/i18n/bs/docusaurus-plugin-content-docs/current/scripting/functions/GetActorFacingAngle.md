@@ -11,10 +11,10 @@ tags: ["actor"]
 
 Pogledaj ugao posmatranja actora
 
-| Ime        | Deskripcija                                                                                 |
-| ---------- | ------------------------------------------------------------------------------------------- |
-| actorid    | ID actora za dobivanje ugla posmatranja. Returnan (vraćen) od CreateActor funkcije.         |
-| &Float:ang | Float varijabla proslijeđena referencom, u kojoj će biti pohranjen ugao gledanja actora.   |
+| Ime        | Deskripcija                                                                              |
+| ---------- | ---------------------------------------------------------------------------------------- |
+| actorid    | ID actora za dobivanje ugla posmatranja. Returnan (vraćen) od CreateActor funkcije.      |
+| &Float:ang | Float varijabla proslijeđena referencom, u kojoj će biti pohranjen ugao gledanja actora. |
 
 ## Returns
 

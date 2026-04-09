@@ -11,9 +11,9 @@ tags: ["pickup"]
 
 ID virtual world یک pickup رو تنظیم می‌کنه.
 
-| نام         | توضیح                  |
-|--------------|--------------------------|
-| pickupid     | ID pickup.        |
+| نام          | توضیح                        |
+| ------------ | ---------------------------- |
+| pickupid     | ID pickup.                   |
 | virtualWorld | ID virtual world برای تنظیم. |
 
 ## مقادیر بازگشتی

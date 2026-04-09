@@ -10,7 +10,7 @@ tags: ["player"]
 Ovaj callback je pozvan kada igrač napusti mod uređivanja prikvačenih objekata (attached object edition mode).
 
 | Ime                    | Deskripcija                                                   |
-|------------------------|---------------------------------------------------------------|
+| ---------------------- | ------------------------------------------------------------- |
 | playerid               | ID igrača koji je napustio mod uređivanja                     |
 | EDIT_RESPONSE:response | 0 ako su prekinuli (ESC) ili 1 ako su kliknuli na save ikonu. |
 | index                  | The index of the attached object (0-9)                        |

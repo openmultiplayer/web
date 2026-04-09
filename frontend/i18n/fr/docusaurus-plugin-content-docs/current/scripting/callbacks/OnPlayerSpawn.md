@@ -9,9 +9,9 @@ tags: ["player"]
 
 Cette callback est appelée lorsqu'un joueur spawn (apparaît).
 
-| Nom            | Description                        |
-| -------------- | ---------------------------------- |
-| `int` playerid | L'ID du joueur qui spawn.          |
+| Nom            | Description               |
+| -------------- | ------------------------- |
+| `int` playerid | L'ID du joueur qui spawn. |
 
 ## Valeur de retour
 
@@ -24,12 +24,12 @@ public OnPlayerSpawn(playerid)
 {
     new PlayerName[MAX_PLAYER_NAME],
         string[40];
-        
+
     GetPlayerName(playerid, PlayerName, sizeof(PlayerName
-    
+
     format(string, sizeof(string), "[ ! ] %s a spawn.", PlayerName);
     SendClientMessageToAll(0xFFFFFFFF, string);
-    
+
     return 1;
 }
 ```

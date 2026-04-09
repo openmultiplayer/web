@@ -1,5 +1,4 @@
 ---
-
 title: OnVehicleDeath
 description: Callback này được gọi khi một xe bị phá hủy - có thể là do nổ hoặc bị ngập trong nước.
 tags: ["vehicle"]
@@ -9,10 +8,10 @@ tags: ["vehicle"]
 
 Callback này được gọi khi một xe bị phá hủy - có thể là do nổ hoặc bị ngập trong nước.
 
-| Tên        | Mô tả                                                                                                                                                            |
-|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| vehicleid   | ID của xe đã bị phá hủy.                                                                                                                                          |
-| killerid    | ID của người chơi đã báo cáo (đồng bộ hóa) sự phá hủy của xe (tên có thể gây nhầm lẫn). Thông thường là người lái hoặc hành khách (nếu có) hoặc người chơi gần nhất. |
+| Tên       | Mô tả                                                                                                                                                                |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vehicleid | ID của xe đã bị phá hủy.                                                                                                                                             |
+| killerid  | ID của người chơi đã báo cáo (đồng bộ hóa) sự phá hủy của xe (tên có thể gây nhầm lẫn). Thông thường là người lái hoặc hành khách (nếu có) hoặc người chơi gần nhất. |
 
 ## Trả về
 

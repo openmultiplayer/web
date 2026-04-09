@@ -15,12 +15,12 @@ Ez a függvény a _world_ térben van, nem a _local_ térben. Ha a helyi tér sz
 
 Beállítja a jármű X, Y és Z szögsebességét
 
-| Név       | Leírás                                              |
-| --------- | --------------------------------------------------- |
-| vehicleid | A jármű azonosítója a sebesség beállításához.       |
-| Float:X   | A sebesség mértéke az X szögirányban.               |
-| Float:Y   | A sebesség mértéke az Y szögirányban.               |
-| Float:Z   | A sebesség mértéke az Z szögirányban.               |
+| Név       | Leírás                                        |
+| --------- | --------------------------------------------- |
+| vehicleid | A jármű azonosítója a sebesség beállításához. |
+| Float:X   | A sebesség mértéke az X szögirányban.         |
+| Float:Y   | A sebesség mértéke az Y szögirányban.         |
+| Float:Z   | A sebesség mértéke az Z szögirányban.         |
 
 ## Visszatérés
 

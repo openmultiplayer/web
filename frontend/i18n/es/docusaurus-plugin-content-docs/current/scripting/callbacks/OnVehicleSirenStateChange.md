@@ -1,6 +1,6 @@
 ---
 título: OnVehicleSirenStateChange
-descripción: Este callback se llama cuando la sirena de un vehículo es alternada. 
+descripción: Este callback se llama cuando la sirena de un vehículo es alternada.
 tags: ["vehicle"]
 ---
 
@@ -8,13 +8,13 @@ tags: ["vehicle"]
 
 ## Descripción
 
-Este callback se llama cuando la sirena de un vehículo es alternada. 
+Este callback se llama cuando la sirena de un vehículo es alternada.
 
-| Name      | Description                                               |
-| --------- | --------------------------------------------------------- |
-| playerid  | El ID del jugador que alternó la sirena (conductor).      |
-| vehicleid | El ID del vehículo en el que la sirena fue alternada.     |
-| newstate  | 0 si la sirena se apagó, 1 si se prendió.                 |
+| Name      | Description                                           |
+| --------- | ----------------------------------------------------- |
+| playerid  | El ID del jugador que alternó la sirena (conductor).  |
+| vehicleid | El ID del vehículo en el que la sirena fue alternada. |
+| newstate  | 0 si la sirena se apagó, 1 si se prendió.             |
 
 ## Devoluciones
 

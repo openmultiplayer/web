@@ -10,7 +10,7 @@ tags: ["player"]
 Essa callback é executada todas as vezes que o player realiza um disparo com uma arma. Somente armas com balas são suportadas. Somente o drive-by do passageiro é registrado (drive-by feitos pelo motorista, disparos de helicópteros como o sea sparrow / hunter também não são suportados).
 
 | Nome                    | Descrição                                                                                                    |
-|-------------------------|--------------------------------------------------------------------------------------------------------------|
+| ----------------------- | ------------------------------------------------------------------------------------------------------------ |
 | playerid                | ID do jogador que disparou a arma.                                                                           |
 | WEAPON:weaponid         | ID da [arma](../resources/weaponids) que foi disparada.                                                      |
 | BULLET_HIT_TYPE:hittype | O [tipo](../resources/bullethittypes) de onde a bala acertou (Nada, Jogador, Veículo, ou Objeto do jogador). |
@@ -44,6 +44,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 :::tip
 
 Essa callback é executada somente quando o "lag compensation" está ativado. Caso o tipo de acerto seja:
+
 - `BULLET_HIT_TYPE_NONE`: Os parâmetros fX, fY e fZ irão retornar 0.0 nas coordenadas, caso não haja acerto em nenhuma superficíe (ex. Objeto distante no qual a bala não consegue chegar);
 - Outros: Os parâmetros fX, fY e fZ são offsets relativos ao hitid.
 

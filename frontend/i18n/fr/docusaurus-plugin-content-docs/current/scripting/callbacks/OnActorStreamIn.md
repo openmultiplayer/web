@@ -12,7 +12,7 @@ tags: [actors, actorstream, forplayerid, actorid]
 Cette fonction est appelée quand un actor est chargé _(devient visible)_ pour un joueur.
 
 | Nom               | Description                                 |
-| -----------       | ------------------------------------------- |
+| ----------------- | ------------------------------------------- |
 | `int` actorid     | ID de l'actor chargé par le joueur          |
 | `int` forplayerid | ID du joueur qui charge l'actor (`actorid`) |
 

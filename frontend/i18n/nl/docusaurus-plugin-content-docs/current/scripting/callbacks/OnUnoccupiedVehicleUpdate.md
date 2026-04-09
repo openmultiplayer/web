@@ -10,16 +10,16 @@ tags: ["vehicle"]
 Deze callback wordt aangeroepen wanneer de client van een speler de positie van een voertuig bijwerkt/synct waarin hij niet rijdt. Dit kan buiten het voertuig gebeuren of wanneer de speler passagier is in een voertuig zonder bestuurder.
 
 | Naam           | Beschrijving                                                                                                                                                       |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vehicleid      | Het ID van het voertuig waarvan de positie is bijgewerkt.                                                                                                         |
-| playerid       | Het ID van de speler die een vehicle position sync-update stuurde.                                                                                                |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| vehicleid      | Het ID van het voertuig waarvan de positie is bijgewerkt.                                                                                                          |
+| playerid       | Het ID van de speler die een vehicle position sync-update stuurde.                                                                                                 |
 | passenger_seat | Het stoel-ID als de speler passagier is. 0=niet in voertuig, 1=voorpassagier, 2=achter-links 3=achter-rechts 4+ is voor coach/bus etc. met veel passagiersstoelen. |
-| Float:new_x    | De nieuwe X-coördinaat van het voertuig.                                                                                                                          |
-| Float:new_y    | De nieuwe Y-coördinaat van het voertuig.                                                                                                                          |
-| Float:new_z    | De nieuwe Z-coördinaat van het voertuig.                                                                                                                          |
-| Float:vel_x    | De nieuwe X-snelheid van het voertuig.                                                                                                                            |
-| Float:vel_y    | De nieuwe Y-snelheid van het voertuig.                                                                                                                            |
-| Float:vel_z    | De nieuwe Z-snelheid van het voertuig.                                                                                                                            |
+| Float:new_x    | De nieuwe X-coördinaat van het voertuig.                                                                                                                           |
+| Float:new_y    | De nieuwe Y-coördinaat van het voertuig.                                                                                                                           |
+| Float:new_z    | De nieuwe Z-coördinaat van het voertuig.                                                                                                                           |
+| Float:vel_x    | De nieuwe X-snelheid van het voertuig.                                                                                                                             |
+| Float:vel_y    | De nieuwe Y-snelheid van het voertuig.                                                                                                                             |
+| Float:vel_z    | De nieuwe Z-snelheid van het voertuig.                                                                                                                             |
 
 ## Returns
 
@@ -53,5 +53,3 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 ## Gerelateerde Callbacks
 
 - [OnTrailerUpdate](OnTrailerUpdate): Wordt aangeroepen wanneer de positie van een trailer door een client wordt gesynct.
-
-

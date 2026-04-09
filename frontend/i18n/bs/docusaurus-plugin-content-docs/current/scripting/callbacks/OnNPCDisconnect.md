@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Ovaj callback je pozvan kada se NPC diskonektuje sa servera.
 
-| Ime          | Deskripcija                                             |
-| ------------ | ------------------------------------------------------- |
-| reason[]     | Razlog zašto se NPC diskonektovao sa servera.           |
+| Ime      | Deskripcija                                   |
+| -------- | --------------------------------------------- |
+| reason[] | Razlog zašto se NPC diskonektovao sa servera. |
 
 ## Primjeri
 

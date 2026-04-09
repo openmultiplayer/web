@@ -9,11 +9,11 @@ tags: ["player"]
 
 Esta callback é chamada quando o estado de qualquer tecla [suportada](../resources/keys) muda. (pressionado/solto). Teclas direcionais não ativam o OnPlayerKeyStateChange (Para cima, baixo, direita, esquerda).
 
-| Nome     | Descrição                                                                                     |
-| -------- | --------------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador que pressionou ou soltou uma tecla.                                           |
-| newkeys  | Um mapa (bitmask) das teclas atualmente pressionadas - [veja aqui](../resources/keys)         |
-| oldkeys  | Um mapa (bitmask) das teclas pressionadas antes da atual - [veja aqui](../resources/keys).    |
+| Nome     | Descrição                                                                                  |
+| -------- | ------------------------------------------------------------------------------------------ |
+| playerid | O ID do jogador que pressionou ou soltou uma tecla.                                        |
+| newkeys  | Um mapa (bitmask) das teclas atualmente pressionadas - [veja aqui](../resources/keys)      |
+| oldkeys  | Um mapa (bitmask) das teclas pressionadas antes da atual - [veja aqui](../resources/keys). |
 
 ## Retornos
 

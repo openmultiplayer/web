@@ -9,9 +9,9 @@ tags: ["player"]
 
 Haal de health van een speler op (nuttig o.a. voor cheat‑detectie).
 
-| Naam | Beschrijving |
-| ---- | ------------ |
-| playerid | ID van de speler. |
+| Naam          | Beschrijving                               |
+| ------------- | ------------------------------------------ |
+| playerid      | ID van de speler.                          |
 | &Float:health | Float‑referentie om health in op te slaan. |
 
 ## Retourneert
@@ -43,5 +43,3 @@ De client rapporteert waarden tot maximaal 255; hogere waarden lopen over (256�
 - [SetPlayerHealth](SetPlayerHealth)
 - [GetVehicleHealth](GetVehicleHealth)
 - [GetPlayerArmour](GetPlayerArmour)
-
-

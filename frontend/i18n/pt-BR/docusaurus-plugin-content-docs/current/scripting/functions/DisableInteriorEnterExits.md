@@ -3,7 +3,6 @@ title: DisableInteriorEnterExits
 sidebar_label: DisableInteriorEnterExits
 description: Desativa todas as entradas e saídas de interiores no jogo (as setas amarelas nas portas).
 tags: ["interior"]
-
 ---
 
 ## Descrição
@@ -12,13 +11,13 @@ Desativa todas as entradas e saídas de interiores no jogo (as setas amarelas na
 
 ## Exemplos
 
-```c  
-public OnGameModeInit()  
-{  
-    DisableInteriorEnterExits();  
-    return 1;  
-}  
-```  
+```c
+public OnGameModeInit()
+{
+    DisableInteriorEnterExits();
+    return 1;
+}
+```
 
 ## Observações
 
@@ -34,9 +33,9 @@ Se o gamemode for alterado após o uso desta função, e o novo gamemode não de
 
 Você também pode desativar os marcadores de entrada de interiores através do [config.json](../../server/config.json):
 
-```json  
-"use_entry_exit_markers": false,  
-```  
+```json
+"use_entry_exit_markers": false,
+```
 
 :::
 

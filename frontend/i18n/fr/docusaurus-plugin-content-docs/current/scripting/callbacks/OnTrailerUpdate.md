@@ -9,10 +9,10 @@ tags: []
 
 Cette callback est appelée quand un joueur envoie une mise à jour d'un trailer (véhicule).
 
-| Name             | Description                              |
-| ---------------- | ---------------------------------------- |
-| `int` playerid   | L'ID du joueur qui envoie la mise à jour |
-| `int` vehicleid  | Le Trailer mis à jour                    |
+| Name            | Description                              |
+| --------------- | ---------------------------------------- |
+| `int` playerid  | L'ID du joueur qui envoie la mise à jour |
+| `int` vehicleid | Le Trailer mis à jour                    |
 
 ## Valeur de retour
 

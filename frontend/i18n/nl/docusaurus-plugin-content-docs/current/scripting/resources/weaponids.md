@@ -10,5 +10,3 @@ Deze pagina bevat alle in‑game wapens gebruikt door [OnPlayerDeath](../callbac
 ---
 
 > Opmerking: Deze pagina bevat een grote tabel met pictogrammen, definities, IDs, slots en notities. De data volgt de Engelstalige bron; alleen koppen en toelichtingen zijn vertaald.
-
-

@@ -15,14 +15,14 @@ Questo callback viene chiamato quando un attore esce dal raggio di stream (smett
 Questo callback è stato aggiunto in SA-MP 0.3.7 e **non funzionerà** nelle versioni precedenti!
 :::
 
-| Nome | Descrizione |
-| :---------------- | :--------------------------------------------------------------------------------------------------------- |
-| `actorid` | L'ID dell'attore che è uscito dal raggio di stream (streamed out) per il giocatore. |
-| `forplayerid` | L'ID del giocatore per il quale l'attore è uscito dal raggio di stream. |
+| Nome          | Descrizione                                                                         |
+| :------------ | :---------------------------------------------------------------------------------- |
+| `actorid`     | L'ID dell'attore che è uscito dal raggio di stream (streamed out) per il giocatore. |
+| `forplayerid` | L'ID del giocatore per il quale l'attore è uscito dal raggio di stream.             |
 
 ## Ritorna
 
-È sempre chiamato prima nei *filterscripts*.
+È sempre chiamato prima nei _filterscripts_.
 
 ## Esempi
 
@@ -37,9 +37,11 @@ public OnActorStreamOut(actorid, forplayerid)
 ```
 
 ## Note
+
 :::tip Questo callback può essere chiamato anche dagli NPC. :::
 
 ## Callback Correlati
+
 I seguenti callback potrebbero essere utili, in quanto sono correlati a questo callback in un modo o nell'altro.
 
 - [OnActorStreamIn](OnActorStreamIn): Questo callback viene chiamato quando un attore entra nel raggio di stream (diventa visibile) da parte del client di un giocatore.

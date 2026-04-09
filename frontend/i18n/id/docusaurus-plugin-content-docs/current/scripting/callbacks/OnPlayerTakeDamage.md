@@ -9,13 +9,13 @@ tags: ["player"]
 
 Callback ini terpanggil ketika pemain menerima damage.
 
-| Nama            | Deskripsi                                                                                                                         |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| playerid        | ID dari pemain yang mendapatkan damage.                                                                                           |
-| issuerid        | ID dari pemain yang memberikan damage. INVALID_PLAYER_ID jika bunuh diri.                                                         |
-| Float:amount    | Jumlah damage yang diterima (darah and armour dikombinasikan).                                                                    |
-| WEAPON:weaponid | ID dari senjata atau alasan yang digunakan untuk memberi damage.                                                                  |
-| bodypart        | Bagian tubuh yang terkena. |
+| Nama            | Deskripsi                                                                 |
+| --------------- | ------------------------------------------------------------------------- |
+| playerid        | ID dari pemain yang mendapatkan damage.                                   |
+| issuerid        | ID dari pemain yang memberikan damage. INVALID_PLAYER_ID jika bunuh diri. |
+| Float:amount    | Jumlah damage yang diterima (darah and armour dikombinasikan).            |
+| WEAPON:weaponid | ID dari senjata atau alasan yang digunakan untuk memberi damage.          |
+| bodypart        | Bagian tubuh yang terkena.                                                |
 
 ## Returns
 

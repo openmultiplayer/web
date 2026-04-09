@@ -9,9 +9,9 @@ tags: []
 
 Acest callback este apelat atunci când un obiect este mutat după MoveObject (când se oprește din mișcare).
 
-| Nume     | Descriere                           |
-| -------- | ----------------------------------- |
-| objectid | ID-ul obiectului care a fost mutat  |
+| Nume     | Descriere                          |
+| -------- | ---------------------------------- |
+| objectid | ID-ul obiectului care a fost mutat |
 
 ## Returnări
 

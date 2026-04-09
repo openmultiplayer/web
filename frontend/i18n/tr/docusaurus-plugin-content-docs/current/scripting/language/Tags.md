@@ -167,9 +167,9 @@ Yukarıda aşırı yükleme örneğinde işlevsel satır şuydu:
 return float(_:oper);
 ```
 
-Bu, etiket üzerine yazma örneğidir; oper önünde "_:" ifadesi, derleyicinin oper'in Mytag: etiketine sahip olduğunu görmezden gelmesi ve bunun yerine on
+Bu, etiket üzerine yazma örneğidir; oper önünde "\_:" ifadesi, derleyicinin oper'in Mytag: etiketine sahip olduğunu görmezden gelmesi ve bunun yerine on
 
-u _:(yani hiç etiket) etiketi olarak ele alması anlamına gelir. `float()` fonksiyonu bir normal sayıyı etiketler, bu nedenle ona bir tane göndermek zorundadır. Bu örnekte, `Mytag`'in normal bir tamsayı sakladığı varsayılır, ancak üzerine yazma çok dikkatlice ele alınmalıdır, örneğin aşağıdaki garip sonuçları verecektir:
+u \_:(yani hiç etiket) etiketi olarak ele alması anlamına gelir. `float()` fonksiyonu bir normal sayıyı etiketler, bu nedenle ona bir tane göndermek zorundadır. Bu örnekte, `Mytag`'in normal bir tamsayı sakladığı varsayılır, ancak üzerine yazma çok dikkatlice ele alınmalıdır, örneğin aşağıdaki garip sonuçları verecektir:
 
 ```c
 new

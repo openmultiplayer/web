@@ -11,8 +11,8 @@ tags: ["sqlite"]
 
 Libera a memória do resultado alocada de db_query.
 
-| Nome              | Descrição                                                |
-| ----------------- | -------------------------------------------------------- |
+| Nome              | Descrição                                                              |
+| ----------------- | ---------------------------------------------------------------------- |
 | DBResult:dbresult | O conjunto de resultados para liberar alocado por [db_query](db_query) |
 
 ## Retorno

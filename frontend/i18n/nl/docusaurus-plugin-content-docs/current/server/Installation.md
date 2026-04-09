@@ -64,10 +64,10 @@ Als je de onderstaande plugins gebruikt, moet je een versie gebruiken die compat
 
 :::
 
-| Plugin            | OMP                                                               |
-| ----------------- | ----------------------------------------------------------------- |
-| rustext           | https://github.com/ziggi/rustext/releases/tag/v2.0.11 (nomemhack) |
-| keylistener       | https://github.com/edgyaf/keylistener/releases/tag/1.1.2-pr       |
+| Plugin      | OMP                                                               |
+| ----------- | ----------------------------------------------------------------- |
+| rustext     | https://github.com/ziggi/rustext/releases/tag/v2.0.11 (nomemhack) |
+| keylistener | https://github.com/edgyaf/keylistener/releases/tag/1.1.2-pr       |
 
 :::warning
 
@@ -403,5 +403,3 @@ Blogpost: [Porting to open.mp](https://www.open.mp/blog/porting)
 Als je nog steeds problemen hebt met het draaien van de server, wordt dan lid van de officiële open.mp-Discord: https://discord.gg/samp
 
 Stel je vraag in het kanaal [#openmp-support](https://discord.com/channels/231799104731217931/966398440051445790).
-
-

@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Acest callback este apelat atunci când un vehicul este distrus - fie prin explozie, fie prin scufundare în apă.
 
-| Nume      | Descriere                                                                                                                                                     |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vehicleid | ID-ul vehiculului care a fost distrus.                                                                                                                       |
+| Nume      | Descriere                                                                                                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vehicleid | ID-ul vehiculului care a fost distrus.                                                                                                                                          |
 | killerid  | ID-ul jucătorului care a raportat (sincronizat) distrugerea vehiculului (numele este înșelător). În general, șoferul sau un pasager (dacă există) sau cel mai apropiat jucător. |
 
 ## Returnări

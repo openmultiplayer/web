@@ -9,10 +9,10 @@ tags: ["player", "vehicle"]
 
 Remove/ejeta um jogador do seu veículo.
 
-| Nome        | Descrição                                                 |
-| ----------- | --------------------------------------------------------- |
-| playerid    | O ID do jogador a ser removido de seu veículo.            |
-| bool:force  | Remover do veículo instantaneamente. (padrão: `false`)    |
+| Nome       | Descrição                                              |
+| ---------- | ------------------------------------------------------ |
+| playerid   | O ID do jogador a ser removido de seu veículo.         |
+| bool:force | Remover do veículo instantaneamente. (padrão: `false`) |
 
 ## Retornos
 

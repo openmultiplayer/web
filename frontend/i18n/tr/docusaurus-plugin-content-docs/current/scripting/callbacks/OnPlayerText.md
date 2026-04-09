@@ -9,14 +9,14 @@ tags: ["player"]
 
 Fonksiyon, oyuncu sohbet mesajı gönderdiğinde çağrılır.
 
-| Parametre | Açıklama                                 |
-| --------- | ---------------------------------------- |
-| playerid  | Sohbet mesajı gönderen oyuncunun ID'si.  |
-| text[]    | Oyuncunun yazdığı metin.                 |
+| Parametre | Açıklama                                |
+| --------- | --------------------------------------- |
+| playerid  | Sohbet mesajı gönderen oyuncunun ID'si. |
+| text[]    | Oyuncunun yazdığı metin.                |
 
 ## Çalışınca Vereceği Sonuçlar
 
-Her zaman Filterscript komutlarında ilk olarak çağrılır, bu nedenle 0 döndürmek diğer scriptlerin görmesini engeller. 
+Her zaman Filterscript komutlarında ilk olarak çağrılır, bu nedenle 0 döndürmek diğer scriptlerin görmesini engeller.
 
 ## örnekler
 
@@ -36,5 +36,5 @@ public OnPlayerText(playerid, text[])
 
 ## Bağlantılı Fonksiyonlar
 
-- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Bir oyuncuyu bir oyuncu için metin göndermeye zorlama. 
-- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Bir oyuncuyu tüm oyunculara metin göndermeye zorlama. 
+- [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Bir oyuncuyu bir oyuncu için metin göndermeye zorlama.
+- [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Bir oyuncuyu tüm oyunculara metin göndermeye zorlama.

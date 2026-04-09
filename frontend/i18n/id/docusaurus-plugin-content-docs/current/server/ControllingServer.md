@@ -180,11 +180,11 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon reloadfs`                  | Memuat ulang filterscript (_contoh: /rcon reloadfs adminfs_).                                                                                |
 | `/rcon rcon\_password [PASSWORD]` | Mengganti password RCON                                                                                                                      |
 | `/rcon password [password]`       | Mengatur/menghapus kata sandi server                                                                                                         |
-| `/rcon messageslimit [count]`     | Mengubah jumlah pesan yang dikirim klien ke server per detik. (nilai awal 500)                                      |
-| `/rcon ackslimit [count]`         | Mengubah batasan acks (nilai awal 3000)                  |
-| `/rcon messageholelimit [count]`  | Mengubah batasan lubang pesan (nilai awal 3000)                                    |
-| `/rcon playertimeout [limit m/s]` | Mengubah waktu dalam milisekon hingga pemain dianggap timeout ketika tidak mengirim paket apapun. (nilai awal 1000) |
-| `/rcon language [language]`       | Mengubah bahasa server (_contoh: /rcon language English_). Muncul di penjelajah server.                             |
+| `/rcon messageslimit [count]`     | Mengubah jumlah pesan yang dikirim klien ke server per detik. (nilai awal 500)                                                               |
+| `/rcon ackslimit [count]`         | Mengubah batasan acks (nilai awal 3000)                                                                                                      |
+| `/rcon messageholelimit [count]`  | Mengubah batasan lubang pesan (nilai awal 3000)                                                                                              |
+| `/rcon playertimeout [limit m/s]` | Mengubah waktu dalam milisekon hingga pemain dianggap timeout ketika tidak mengirim paket apapun. (nilai awal 1000)                          |
+| `/rcon language [language]`       | Mengubah bahasa server (_contoh: /rcon language English_). Muncul di penjelajah server.                                                      |
 
 Jumlah/pembatasan di atas dibuat untuk menghindari beberapa alat yang bisa menyerang server SA-MP dengan membuatnya freeze atau crash. Jadi, cukup atur sesuai dengan server Anda. Nilai awal hanyalah nilai awal, jika Anda mengalami sesuatu yang tidak beres, cukup tambahkan nilainya secepat mungkin, jadi pemain yang tidak bersalah tidak akan ditendang. [Baca lebih lanjut](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193)
 

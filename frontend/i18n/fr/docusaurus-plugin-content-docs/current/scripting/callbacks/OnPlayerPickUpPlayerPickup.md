@@ -11,9 +11,9 @@ tags: ["player", "pickup", "playerpickup"]
 
 Ce rappel est appelé lorsqu'un joueur ramasse un objet joueur-pickup créé avec [CreatePlayerPickup](../functions/CreatePlayerPickup).
 
-| Nom       | Description                                                                                    |
-|----------|------------------------------------------------------------------------------------------------|
-| playerid | L'ID du joueur qui a ramassé l'objet joueur-pickup.                                          |
+| Nom      | Description                                                                                       |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| playerid | L'ID du joueur qui a ramassé l'objet joueur-pickup.                                               |
 | pickupid | L'ID de l'objet joueur-pickup, retourné par [CreatePlayerPickup](../functions/CreatePlayerPickup) |
 
 ## Retours

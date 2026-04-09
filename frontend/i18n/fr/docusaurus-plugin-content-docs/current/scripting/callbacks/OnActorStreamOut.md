@@ -11,10 +11,10 @@ tags: [actors, actorstream, forplayerid, actorid]
 
 Cette fonction est appelée quand un actor est déchargé _(n'est plus visible)_ pour un joueur.
 
-| Nom               | Description                                  |
-| -----------       | -------------------------------------------- |
-| `int` actorid     | ID de l'actor déchargé par le joueur         |
-| `int` forplayerid | ID du joueur a déchargé l'actor (`actorid`)  |
+| Nom               | Description                                 |
+| ----------------- | ------------------------------------------- |
+| `int` actorid     | ID de l'actor déchargé par le joueur        |
+| `int` forplayerid | ID du joueur a déchargé l'actor (`actorid`) |
 
 ## Valeur de retour
 

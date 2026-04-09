@@ -9,11 +9,11 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi thay đổi nội thất. Có thể được kích hoạt bởi `SetPlayerInterior` hoặc khi người chơi vào/ra khỏi một tòa nhà.
 
-| Tên              | Mô Tả                                             |
-|-------------------|---------------------------------------------------|
-| playerid          | ID của người chơi đã thay đổi nội thất.          |
-| newinteriorid     | Nội thất mà người chơi hiện đang ở.              |
-| oldinteriorid     | Nội thất mà người chơi đã ở trước đó.            |
+| Tên           | Mô Tả                                   |
+| ------------- | --------------------------------------- |
+| playerid      | ID của người chơi đã thay đổi nội thất. |
+| newinteriorid | Nội thất mà người chơi hiện đang ở.     |
+| oldinteriorid | Nội thất mà người chơi đã ở trước đó.   |
 
 ## Trả Về
 

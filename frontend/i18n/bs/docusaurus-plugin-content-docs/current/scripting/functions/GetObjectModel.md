@@ -11,9 +11,9 @@ tags: []
 
 Dobij ID modela određenog objekta (CreateObject).
 
-| Ime      | Deskripcija                              |
-| -------- | ---------------------------------------- |
-| objectid | ID objekta za dobivanje modela           |
+| Ime      | Deskripcija                    |
+| -------- | ------------------------------ |
+| objectid | ID objekta za dobivanje modela |
 
 ## Returns
 

@@ -9,10 +9,10 @@ tags: ["player"]
 
 Prikvači kameru igrača za player objekat. Igrač može pomicati svoju kameru dok je prikvačena za objekat. Može se koristiti s MovePlayerObject i AttachPlayerObjectToVehicle.
 
-| Ime            | Deskripcija                                                                    |
-| -------------- | ------------------------------------------------------------------------------ |
-| playerid | ID igrača koji će imati kameru prikvačenu za player-objekat.                         |
-| playerobjectid | ID player-objekta za kojeg želite prikvačiti kameru igrača.                    |
+| Ime            | Deskripcija                                                  |
+| -------------- | ------------------------------------------------------------ |
+| playerid       | ID igrača koji će imati kameru prikvačenu za player-objekat. |
+| playerobjectid | ID player-objekta za kojeg želite prikvačiti kameru igrača.  |
 
 ## Returns
 

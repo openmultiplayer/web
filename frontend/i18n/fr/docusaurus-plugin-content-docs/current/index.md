@@ -4,7 +4,6 @@ Bienvenue sur le wiki de SA:MP, qui est aujourd'hui maintenu par l'équipe open.
 
 Cette documentation tend à recenser de la manière la plus exhaustive tout ce qui pourrait être utile aux développeurs. Elle vise à être la plus accessible possible, il est d'ailleurs très facile d'y [contribuer](/meta/Contributing).
 
-
 ## La disparition du wiki SA:MP
 
 Il ne vous aura pas échappé que le wiki et le forum SA:MP ont été mis hors ligne fin septembre 2020. Vous pourrez également remarquer que, désormais, ces deux sites sont inaccessibles via les webarchives.

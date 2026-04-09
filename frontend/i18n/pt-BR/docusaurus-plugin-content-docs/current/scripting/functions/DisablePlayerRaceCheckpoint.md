@@ -9,8 +9,8 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 Desativa qualquer checkpoint de corrida inicializado para um jogador específico, já que você só pode ter um de cada vez.
 
-| Nome     | Descrição                                       |
-| -------- | ------------------------------------------------- |
+| Nome     | Descrição                                    |
+| -------- | -------------------------------------------- |
 | playerid | O jogador para desativar o checkpoint atual. |
 
 ## Retornos

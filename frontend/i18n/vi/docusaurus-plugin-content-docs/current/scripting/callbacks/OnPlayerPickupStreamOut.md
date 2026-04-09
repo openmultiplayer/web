@@ -11,10 +11,10 @@ tags: ["player", "pickup", "playerpickup"]
 
 Callback này được gọi khi một pickup của người chơi rời khỏi phạm vi tầm nhìn của người chơi.
 
-| Tên      | Mô Tả                                                                                           |
-| -------- | ------------------------------------------------------------------------------------------------ |
+| Tên      | Mô Tả                                                                                          |
+| -------- | ---------------------------------------------------------------------------------------------- |
 | pickupid | ID của pickup của người chơi, trả về bởi [CreatePlayerPickup](../functions/CreatePlayerPickup) |
-| playerid | ID của người chơi mà pickup của người chơi rời khỏi phạm vi tầm nhìn.                           |
+| playerid | ID của người chơi mà pickup của người chơi rời khỏi phạm vi tầm nhìn.                          |
 
 ## Trả Về
 

@@ -27,7 +27,6 @@ Această funcție poate fi, de asemenea, utilizată într-un filterscript pentru
 
 :::
 
-
 ## Funcții similare
 
 - [GameModeExit](../functions/GameModeExit): Ieși din modul de joc curent.

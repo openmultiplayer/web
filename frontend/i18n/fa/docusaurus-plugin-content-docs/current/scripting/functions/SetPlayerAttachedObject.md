@@ -9,21 +9,21 @@ tags: ["player", "object", "attachment"]
 
 یک object رو به یک استخون خاص از پلیر متصل می‌کنه.
 
-| نام             | توضیحات                                                                              |
-| --------------- | ------------------------------------------------------------------------------------ |
-| playerid        | آیدی پلیری که قراره object بهش وصل بشه                                               |
-| index           | اندکس (slot 0-9) که قراره object بهش اختصاص پیدا کنه                                |
-| modelid         | مدلی که قراره وصل بشه                                                                |
-| bone            | [استخونی](../resources/boneid) که قراره object بهش وصل بشه                           |
-| Float:offsetX   | (اختیاری) آفست محور X برای موقعیت object                                             |
-| Float:offsetY   | (اختیاری) آفست محور Y برای موقعیت object                                             |
-| Float:offsetZ   | (اختیاری) آفست محور Z برای موقعیت object                                             |
-| Float:rotationX | (اختیاری) چرخش object در محور X                                                      |
-| Float:rotationY | (اختیاری) چرخش object در محور Y                                                      |
-| Float:rotationZ | (اختیاری) چرخش object در محور Z                                                      |
-| Float:scaleX    | (اختیاری) مقیاس object در محور X                                                     |
-| Float:scaleY    | (اختیاری) مقیاس object در محور Y                                                     |
-| Float:scaleZ    | (اختیاری) مقیاس object در محور Z                                                     |
+| نام             | توضیحات                                                                                  |
+| --------------- | ---------------------------------------------------------------------------------------- |
+| playerid        | آیدی پلیری که قراره object بهش وصل بشه                                                   |
+| index           | اندکس (slot 0-9) که قراره object بهش اختصاص پیدا کنه                                     |
+| modelid         | مدلی که قراره وصل بشه                                                                    |
+| bone            | [استخونی](../resources/boneid) که قراره object بهش وصل بشه                               |
+| Float:offsetX   | (اختیاری) آفست محور X برای موقعیت object                                                 |
+| Float:offsetY   | (اختیاری) آفست محور Y برای موقعیت object                                                 |
+| Float:offsetZ   | (اختیاری) آفست محور Z برای موقعیت object                                                 |
+| Float:rotationX | (اختیاری) چرخش object در محور X                                                          |
+| Float:rotationY | (اختیاری) چرخش object در محور Y                                                          |
+| Float:rotationZ | (اختیاری) چرخش object در محور Z                                                          |
+| Float:scaleX    | (اختیاری) مقیاس object در محور X                                                         |
+| Float:scaleY    | (اختیاری) مقیاس object در محور Y                                                         |
+| Float:scaleZ    | (اختیاری) مقیاس object در محور Z                                                         |
 | materialColour1 | (اختیاری) اولین رنگ object که قراره تنظیم بشه، به عنوان عدد صحیح یا hex با فرمت رنگ ARGB |
 | materialColour2 | (اختیاری) دومین رنگ object که قراره تنظیم بشه، به عنوان عدد صحیح یا hex با فرمت رنگ ARGB |
 

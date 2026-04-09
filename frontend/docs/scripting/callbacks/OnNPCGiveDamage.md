@@ -21,7 +21,11 @@ This callback is called when an NPC gives damage to a player.
 
 ## Returns
 
-Return `false` to prevent the damage from being applied, or `true` to allow it.
+1 - Callback will not be called in other filterscripts.
+
+0 - Allows this callback to be called in other filterscripts.
+
+It is always called first in filterscripts so returning 1 there blocks other filterscripts from processing it.
 
 ## Examples
 
@@ -47,7 +51,7 @@ public OnNPCGiveDamage(npcid, damagedid, Float:amount, WEAPON:weaponid, bodypart
 ## Notes
 
 - This callback is called before the damage is actually applied to the player
-- Returning `false` will prevent the damage from being applied
+- Returning `false` will NOT prevent the damage from being applied
 - The `bodypart` parameter uses the same values as `OnPlayerTakeDamage`
 
 ## Related Functions

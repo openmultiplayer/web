@@ -13,10 +13,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## پارامترها
 
-| نام               | توضیحات                                    |
-| ----------------- | ------------------------------------------ |
-| playerid          | ID بازیکن.                                 |
-| PlayerText:textid | ID player-textdraw که باید چک بشه.        |
+| نام               | توضیحات                            |
+| ----------------- | ---------------------------------- |
+| playerid          | ID بازیکن.                         |
+| PlayerText:textid | ID player-textdraw که باید چک بشه. |
 
 ## مقادیر برگشتی
 

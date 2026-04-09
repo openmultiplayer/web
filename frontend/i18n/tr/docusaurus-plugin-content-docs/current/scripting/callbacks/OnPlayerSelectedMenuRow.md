@@ -9,10 +9,10 @@ tags: ["player", "menu"]
 
 Bu fonksiyon, bir oyuncu menüden bir öğe seçtiğinde (ShowMenuForPlayer) çağrılır.
 
-| Parametre | Açıklama                                                    |
-| --------- | ----------------------------------------------------------- |
-| playerid  | Menü öğesi seçmiş olan oyuncunun ID'si.                     |
-| row       | Seçilen satırın ID'si. İlk satırın ID'si 0'dır.             |
+| Parametre | Açıklama                                        |
+| --------- | ----------------------------------------------- |
+| playerid  | Menü öğesi seçmiş olan oyuncunun ID'si.         |
+| row       | Seçilen satırın ID'si. İlk satırın ID'si 0'dır. |
 
 ## Çalışınca Vereceği Sonuçlar
 

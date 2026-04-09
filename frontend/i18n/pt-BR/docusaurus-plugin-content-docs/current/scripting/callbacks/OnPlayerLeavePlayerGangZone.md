@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Este callback é chamado quando um jogador sai de uma player gangzone.
 
-| Nome     | Descrição                                         |
-| -------- | ------------------------------------------------- |
-| playerid | O ID do jogador que saiu da player gangzone.      |
-| zoneid   | O ID da player gangzone que o jogador saiu.       |
+| Nome     | Descrição                                    |
+| -------- | -------------------------------------------- |
+| playerid | O ID do jogador que saiu da player gangzone. |
+| zoneid   | O ID da player gangzone que o jogador saiu.  |
 
 ## Retornos
 
@@ -34,9 +34,9 @@ public OnPlayerLeavePlayerGangZone(playerid, zoneid)
 
 ## Callbacks Relacionados
 
-Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma. 
+Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma.
 
-- [OnPlayerEnterPlayerGangZone](OnPlayerEnterPlayerGangZone): Este callback é chamado quando um jogador entra em uma player gangzone. 
+- [OnPlayerEnterPlayerGangZone](OnPlayerEnterPlayerGangZone): Este callback é chamado quando um jogador entra em uma player gangzone.
 
 ## Funções Relacionadas
 

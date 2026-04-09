@@ -9,10 +9,10 @@ tags: []
 
 Essa callback é executada quando o NPC entra em um veículo.
 
-| Nome         | Descrição                                               |
-| ------------ | ------------------------------------------------------- |
-| vehicleid    | ID do veículo que o NPC entrou.                         |
-| seatid       | O assento que o NPC está usando.                        |
+| Nome      | Descrição                        |
+| --------- | -------------------------------- |
+| vehicleid | ID do veículo que o NPC entrou.  |
+| seatid    | O assento que o NPC está usando. |
 
 ## Exemplos
 

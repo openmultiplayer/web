@@ -9,9 +9,9 @@ tags: []
 
 I-set ang gravity para sa lahat ng player.
 
-| Name          | Description                                                       |
-| ------------- | ----------------------------------------------------------------- |
-| Float:gravity | Ang value ng gravity na i-seset (pagitan ng -50 and 50).          |
+| Name          | Description                                              |
+| ------------- | -------------------------------------------------------- |
+| Float:gravity | Ang value ng gravity na i-seset (pagitan ng -50 and 50). |
 
 ## Returns
 

@@ -9,8 +9,8 @@ tags: ["player"]
 
 Bu geri çağırma bir oyuncu öldüğünde, intihar ettiğinde ya da başka bir oyuncu tarafından öldürüldüğünde çağırılır.
 
-| Parametre          | Açıklama                                                                                    |
-|---------------|---------------------------------------------------------------------------------------------|
+| Parametre     | Açıklama                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------- |
 | playerid      | Ölen oyuncunun ID'si.                                                                       |
 | killerid      | Öldüren oyuncunun ID'si, eğer öldüren bir oyuncu yoksa INVALID_PLAYER_ID değeri döndürülür. |
 | WEAPON:reason | Oyuncunun ölüm sebebinin ID'si.                                                             |

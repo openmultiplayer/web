@@ -7,8 +7,7 @@ tags: []
 
 ## Descrição
 
-Essa callback é executada quando o script de um NPC é descarregado. 
-
+Essa callback é executada quando o script de um NPC é descarregado.
 
 ## Exemplos
 

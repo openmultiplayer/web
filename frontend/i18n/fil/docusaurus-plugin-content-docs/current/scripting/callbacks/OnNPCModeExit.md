@@ -9,7 +9,6 @@ tags: ["npc"]
 
 Tinatawag ang callback na ito kapag nag-unload ang isang NPC script.
 
-
 ## Examples
 
 ```c
@@ -19,7 +18,6 @@ public OnNPCModeExit()
     return 1;
 }
 ```
-
 
 ## Related Callbacks
 

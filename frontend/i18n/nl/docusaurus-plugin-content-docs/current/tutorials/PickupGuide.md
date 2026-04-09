@@ -21,13 +21,13 @@ Er zijn twee manieren: [CreatePickup](../scripting/functions/CreatePickup) en [A
 
 **Parameters:**
 
-| model        | Het model voor de pickup.                                                                 |
-| ------------ | ------------------------------------------------------------------------------------------ |
-| type         | Het spawn-type van de pickup, zie onderaan op deze pagina.                                 |
-| Float:X      | X-coördinaat.                                                                              |
-| Float:Y      | Y-coördinaat.                                                                              |
-| Float:Z      | Z-coördinaat.                                                                              |
-| Virtualworld | Virtual world ID. Met -1 verschijnt de pickup in alle virtual worlds.                      |
+| model        | Het model voor de pickup.                                             |
+| ------------ | --------------------------------------------------------------------- |
+| type         | Het spawn-type van de pickup, zie onderaan op deze pagina.            |
+| Float:X      | X-coördinaat.                                                         |
+| Float:Y      | Y-coördinaat.                                                         |
+| Float:Z      | Z-coördinaat.                                                         |
+| Virtualworld | Virtual world ID. Met -1 verschijnt de pickup in alle virtual worlds. |
 
 Voor dit voorbeeld maken we een geld-pickup bij Grove Street.
 
@@ -76,8 +76,10 @@ Gefeliciteerd, je kunt nu pickups maken en afhandelen!
 - Je kunt ook per-speler pickups maken met [CreatePlayerPickup](../scripting/functions/CreatePlayerPickup).
 
 ---
+
 title: Pickup Guide
 sidebar_label: Pickup Guide
+
 ---
 
 Korte tutorial over het gebruik van pickups.
@@ -96,14 +98,14 @@ Er zijn twee manieren: [CreatePickup](../scripting/functions/CreatePickup) en [A
 
 **Parameters voor [CreatePickup](../scripting/functions/CreatePickup):**
 
-| Parameter     | Betekenis                                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------ |
-| model         | Het model voor de pickup                                                                    |
-| type          | Het pickuptype (zie verderop)                                                               |
-| Float:X       | X-coördinaat                                                                                |
-| Float:Y       | Y-coördinaat                                                                                |
-| Float:Z       | Z-coördinaat                                                                                |
-| Virtualworld  | Virtual world ID; `-1` toont in alle worlds                                                 |
+| Parameter    | Betekenis                                   |
+| ------------ | ------------------------------------------- |
+| model        | Het model voor de pickup                    |
+| type         | Het pickuptype (zie verderop)               |
+| Float:X      | X-coördinaat                                |
+| Float:Y      | Y-coördinaat                                |
+| Float:Z      | Z-coördinaat                                |
+| Virtualworld | Virtual world ID; `-1` toont in alle worlds |
 
 We maken een cash-pickup bij Grove Street. Kies model 1274 (dollarteken) van de lijst met modellen ([link](https://dev.prineside.com/en/gtasa_samp_model_id)).
 
@@ -148,5 +150,3 @@ Gefeliciteerd, je kunt nu pickups maken en afhandelen!
 Gebruik de [Streamer](https://github.com/samp-incognito/samp-streamer-plugin) plugin voor onbeperkte pickups met [CreateDynamicPickup](<https://github.com/samp-incognito/samp-streamer-plugin/wiki/Natives-(Pickups)>).
 
 Je kunt ook per-player pickups maken met [CreatePlayerPickup](../scripting/functions/CreatePlayerPickup).
-
-

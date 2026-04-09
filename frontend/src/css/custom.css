@@ -4,26 +4,10 @@
  * work well for content-centric websites.
  */
 
-@font-face {
-  font-family: "english-grotesque";
-  src: url("/fonts/english-grotesque_700.woff2") format("woff2"),
-    url("/fonts/english-grotesque_700.woff") format("woff");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "english-grotesque";
-  src: url("/fonts/english-grotesque_300.woff2") format("woff2"),
-    url("/fonts/english-grotesque_300.woff") format("woff");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 300;
-}
-
-html {
-  font-family: "english-grotesque", var(--ifm-heading-font-family);
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif, var(--ifm-heading-font-family);
+  }
 }
 
 h1,
@@ -31,8 +15,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "english-grotesque", var(--ifm-heading-font-family);
+h6,
+html {
+  font-family: Inter, sans-serif, var(--ifm-heading-font-family);
 }
 
 /* You can override the default Infima variables here. */
@@ -48,6 +33,12 @@ h6 {
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-button-font-weight: 600;
+  --ifm-footer-background-color: rgba(255, 255, 255, 0.35);
+
+  font-family: Inter, sans-serif, var(--ifm-heading-font-family);
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1;
 
   background-image: url(/images/assets/map.png);
   background-size: cover;
@@ -66,6 +57,7 @@ h6 {
   --ifm-navbar-background-color: #1a202c;
   --ifm-color-secondary-button-background: #2c323d;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-footer-background-color: rgba(26, 32, 44, 0.3);
 }
 
 html[data-theme="dark"] {
@@ -348,11 +340,43 @@ html[data-theme="dark"] {
 }
 
 .servers-container {
-  max-width: 50em;
-  margin: 80px auto 295px auto;
+  display: flex;
+  flex-direction: column;
   padding: 1em 2em;
-  width: 100%;
+  align-items: center;
   box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - var(--ifm-navbar-height));
+}
+
+.uid-container {
+  display: block;
+  width: 100%;
+  max-width: 50em;
+  margin: 80px auto 295px;
+  padding: 1em 2em;
+}
+
+.servers-partners-note {
+  font-weight: bold;
+}
+
+.servers-partners-note,
+.servers-container .servers-list-wrapper {
+  max-width: 50em;
+  width: 100%;
+}
+
+.servers-container .servers-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.servers-virtual-list {
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Loading banner styles */
@@ -401,22 +425,27 @@ html[data-theme="dark"] {
   padding-bottom: 0.3rem;
   margin-bottom: 0.5rem;
   background-color: var(--ifm-navbar-background-color);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.03), 0 1px 1px 0 rgba(0, 0, 0, 0.03);
+  box-shadow:
+    0 1px 1px 0 rgba(0, 0, 0, 0.03),
+    0 1px 1px 0 rgba(0, 0, 0, 0.03);
 }
 
 .server-header {
   display: flex;
   height: 30px;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  gap: 18px;
 }
 
 .server-heading {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .server-link {
@@ -449,6 +478,7 @@ html[data-theme="dark"] {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 18px;
 }
 
 .server-info {
@@ -461,6 +491,9 @@ html[data-theme="dark"] {
 
 .server-game-mode {
   margin-top: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .copy-badge-container {
@@ -728,7 +761,18 @@ html[data-theme="dark"] {
 
   .servers-container {
     padding: 1em;
-    margin: 10px auto 50px auto;
+    margin: 10px 0;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .uid-container {
+    margin: 10px auto 50px;
+    padding: 1em;
+  }
+
+  .servers-virtual-list {
+    height: calc(100vh - var(--ifm-navbar-height) - 60px);
   }
 
   .server-info-content-wrapper {
@@ -737,6 +781,20 @@ html[data-theme="dark"] {
 
   .server-info-section {
     padding: 0.5rem;
+  }
+
+  .server-heading {
+    font-size: 1rem;
+  }
+
+  .server-player-count,
+  .server-details,
+  .copy-badge-text {
+    font-size: 0.875rem;
+  }
+
+  .loading-banner-heading {
+    font-size: 1.2rem;
   }
 }
 

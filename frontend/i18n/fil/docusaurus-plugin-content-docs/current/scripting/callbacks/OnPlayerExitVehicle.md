@@ -11,10 +11,10 @@ tags: []
 
 Ang callback na ito ay natatawag kapag ang isang manlalaro ay lumabas sa sasakyan.
 
-| Pangalan    | Deskripsyon                                                    |
-| ----------- | -------------------------------------------------------------- |
-| playerid     | Ang ID ng manlalaro ng lumalabas sa sasakyan.                  |
-| vehicleid | Ang ID ng sasakyan na kung saan ang manlalaro ay lumalabas.               |
+| Pangalan  | Deskripsyon                                                 |
+| --------- | ----------------------------------------------------------- |
+| playerid  | Ang ID ng manlalaro ng lumalabas sa sasakyan.               |
+| vehicleid | Ang ID ng sasakyan na kung saan ang manlalaro ay lumalabas. |
 
 ## Returns
 

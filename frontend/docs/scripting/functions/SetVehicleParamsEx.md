@@ -9,16 +9,16 @@ tags: ["vehicle"]
 
 Sets a vehicle's parameters for all players.
 
-| Name           | Description                                                     |
-| -------------- | --------------------------------------------------------------- |
-| vehicleid      | The ID of the vehicle to set the parameters of.                 |
-| engine         | Engine status. 0 - Off, 1 - On.                                 |
-| lights         | Light status. 0 - Off, 1 - On.                                  |
-| alarm          | Vehicle alarm status. If on, the alarm starts. 0 - Off, 1 - On. |
-| doors          | Door lock status. 0 - Unlocked, 1 - Locked.                     |
-| bonnet         | Bonnet (hood) status. 0 - Closed, 1 - Open.                     |
-| boot           | Boot/trunk status. 0 - Closed, 1 - Open.                        |
-| objective      | Toggle the objective arrow above the vehicle. 0 - Off, 1 - On.  |
+| Name      | Description                                                     |
+| --------- | --------------------------------------------------------------- |
+| vehicleid | The ID of the vehicle to set the parameters of.                 |
+| engine    | Engine status. 0 - Off, 1 - On.                                 |
+| lights    | Light status. 0 - Off, 1 - On.                                  |
+| alarm     | Vehicle alarm status. If on, the alarm starts. 0 - Off, 1 - On. |
+| doors     | Door lock status. 0 - Unlocked, 1 - Locked.                     |
+| bonnet    | Bonnet (hood) status. 0 - Closed, 1 - Open.                     |
+| boot      | Boot/trunk status. 0 - Closed, 1 - Open.                        |
+| objective | Toggle the objective arrow above the vehicle. 0 - Off, 1 - On.  |
 
 ## Returns
 

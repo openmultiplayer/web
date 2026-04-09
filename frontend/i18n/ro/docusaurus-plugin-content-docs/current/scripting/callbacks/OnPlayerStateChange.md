@@ -9,11 +9,11 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător își schimbă starea.
 
-| Nume     | Descriere                                |
-| -------- | ---------------------------------------- |
+| Nume     | Descriere                                    |
+| -------- | -------------------------------------------- |
 | playerid | ID-ul jucătorului care și-a schimbat starea. |
-| newstate | Noua stare a jucătorului.                |
-| oldstate | Starea anterioară a jucătorului.         |
+| newstate | Noua stare a jucătorului.                    |
+| oldstate | Starea anterioară a jucătorului.             |
 
 Consultați [Starile jucătorului](../resources/playerstates) pentru o listă a tuturor stărilor de jucător disponibile.
 

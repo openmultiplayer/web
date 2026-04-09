@@ -11,9 +11,9 @@ tags: ["math"]
 
 Mengambil nilai kebalikan dari kosinus dalam derajat. Dalam trigonometri, arc cosinus adalah operasi kebalikan dari cosinus.
 
-| Nama        | Deskripsi                                                    |
-| ----------- | ------------------------------------------------------------ |
-| Float:value | nilai yang arc cosinusnya dihitung, dalam interval [-1,+1].  |
+| Nama        | Deskripsi                                                   |
+| ----------- | ----------------------------------------------------------- |
+| Float:value | nilai yang arc cosinusnya dihitung, dalam interval [-1,+1]. |
 
 ## Returns
 

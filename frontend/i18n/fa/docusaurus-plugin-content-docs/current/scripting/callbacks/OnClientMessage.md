@@ -11,10 +11,10 @@ tags: []
 
 این کالبک هر زمان که NPC یک ClientMessage می‌بیند فرا خوانده می‌شود. این هر بار که از تابع [SendClientMessageToAll](../functions/SendClientMessageToAll) استفاده شود و هر بار که تابع [SendClientMessage](../functions/SendClientMessage) به سمت NPC ارسال شود اتفاق می‌افتد. این کالبک زمانی که کسی چیزی می‌گوید فرا خوانده نمی‌شود. برای نسخه‌ای از این کالبک با متن بازیکن، [NPC:OnPlayerText](OnPlayerText) را ببینید.
 
-| نام   | توضیحات                          |
-| ------ | ------------------------------- |
-| color  | رنگ ClientMessage.               |
-| text[] | پیام واقعی.                      |
+| نام    | توضیحات            |
+| ------ | ------------------ |
+| color  | رنگ ClientMessage. |
+| text[] | پیام واقعی.        |
 
 ## مقادیر برگشتی
 

@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Ce rappel est appelé lorsqu'un joueur entre dans une zone de gang
 
-| Nom       | Description                                     |
-| --------- | ----------------------------------------------- |
-| playerid  | L'ID du joueur qui est entré dans la zone de gang. |
-| zoneid    | L'ID de la zone de gang dans laquelle le joueur est entré. |
+| Nom      | Description                                                |
+| -------- | ---------------------------------------------------------- |
+| playerid | L'ID du joueur qui est entré dans la zone de gang.         |
+| zoneid   | L'ID de la zone de gang dans laquelle le joueur est entré. |
 
 ## Retours
 
@@ -36,7 +36,7 @@ public OnPlayerEnterGangZone(playerid, zoneid)
 
 Les rappels suivants peuvent être utiles, car ils sont liés à ce rappel d'une manière ou d'une autre.
 
-- [OnPlayerLeaveGangZone](OnPlayerLeaveGangZone): Ce rappel est appelé lorsqu'un joueur quitte une zone de gang. 
+- [OnPlayerLeaveGangZone](OnPlayerLeaveGangZone): Ce rappel est appelé lorsqu'un joueur quitte une zone de gang.
 
 ## Fonctions Relatives
 

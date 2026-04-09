@@ -15,13 +15,13 @@ For some useful functions for working with vehicle damage values, see [here](../
 
 Sets the various visual damage statuses of a vehicle, such as popped tires, broken lights and damaged panels.
 
-| Name                        | Description                                       |
-| --------------------------- | ------------------------------------------------- |
-| vehicleid                   | The ID of the vehicle to set the damage of.       |
+| Name                        | Description                                                                                    |
+| --------------------------- | ---------------------------------------------------------------------------------------------- |
+| vehicleid                   | The ID of the vehicle to set the damage of.                                                    |
 | VEHICLE_PANEL_STATUS:panels | A set of bits containing the panel damage status. See [Panel States](../resources/panelstates) |
-| VEHICLE_DOOR_STATUS:doors   | A set of bits containing the door damage status. See [Door States](../resources/doorstates) |
+| VEHICLE_DOOR_STATUS:doors   | A set of bits containing the door damage status. See [Door States](../resources/doorstates)    |
 | VEHICLE_LIGHT_STATUS:lights | A set of bits containing the light damage status. See [Light States](../resources/lightstates) |
-| VEHICLE_TIRE_STATUS:tires   | A set of bits containing the tire damage status. See [Tire States](../resources/tirestates)  |
+| VEHICLE_TIRE_STATUS:tires   | A set of bits containing the tire damage status. See [Tire States](../resources/tirestates)    |
 
 ## Returns
 

@@ -36,5 +36,3 @@ Voor één speler: `TextDrawShowForPlayer(playerid, text)`. Voor alle spelers: `
 
 - Gebruik gehele coördinaten voor consistente weergave.
 - Een X:Y lettergrootte‑verhouding van 1:4 oogt vaak het best.
-
-

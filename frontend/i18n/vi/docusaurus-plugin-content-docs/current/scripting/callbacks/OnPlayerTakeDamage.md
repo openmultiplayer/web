@@ -9,13 +9,13 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi bị nhận sát thương.
 
-| Tên             | Mô tả                                                                 |
-|-----------------|----------------------------------------------------------------------|
-| playerid        | ID của người chơi bị nhận sát thương.                                |
+| Tên             | Mô tả                                                                      |
+| --------------- | -------------------------------------------------------------------------- |
+| playerid        | ID của người chơi bị nhận sát thương.                                      |
 | issuerid        | ID của người chơi gây sát thương. INVALID_PLAYER_ID nếu tự gây sát thương. |
-| Float:amount    | Lượng sát thương người chơi nhận (kết hợp giữa máu và giáp).          |
-| WEAPON:weaponid | ID của vũ khí/lý do gây sát thương.                                  |
-| bodypart        | [Phần cơ thể](../resources/bodyparts) bị tấn công.                   |
+| Float:amount    | Lượng sát thương người chơi nhận (kết hợp giữa máu và giáp).               |
+| WEAPON:weaponid | ID của vũ khí/lý do gây sát thương.                                        |
+| bodypart        | [Phần cơ thể](../resources/bodyparts) bị tấn công.                         |
 
 ## Giá trị trả về
 
@@ -84,7 +84,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## Các Callbacks liên quan
 
-Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [OnPlayerGiveDamage](OnPlayerGiveDamage): Callback này được gọi khi một người chơi gây sát thương.
 - [OnPlayerWeaponShot](OnPlayerWeaponShot): Callback này được gọi khi một người chơi bắn vũ khí.

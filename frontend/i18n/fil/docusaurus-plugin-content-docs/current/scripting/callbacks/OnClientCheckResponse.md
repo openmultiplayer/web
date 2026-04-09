@@ -9,12 +9,12 @@ tags: []
 
 Tinatawag ang callback na ito kapag nakumpleto ang request sa SendClientCheck
 
-| Name          | Description                       |
-| ------------- | --------------------------------- |
-| playerid      | Ang ID ng player na i-checheck    |
-| actionid      | Ang uri ng pag-checheck na ginawa.|
-| memaddr       | Ang address requested.            |
-| retndata      | Ang resulta ng pag check          |
+| Name     | Description                        |
+| -------- | ---------------------------------- |
+| playerid | Ang ID ng player na i-checheck     |
+| actionid | Ang uri ng pag-checheck na ginawa. |
+| memaddr  | Ang address requested.             |
+| retndata | Ang resulta ng pag check           |
 
 ## Returns
 

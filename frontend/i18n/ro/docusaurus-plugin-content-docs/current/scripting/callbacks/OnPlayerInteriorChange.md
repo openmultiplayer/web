@@ -9,11 +9,11 @@ tags: ["player"]
 
 Apelat când un jucător schimbă interiorul. Poate fi declanșat de SetPlayerInterior sau atunci când un jucător intră/iese dintr-o clădire.
 
-| Nume          | Descriere                                 |
-| ------------- | ----------------------------------------- |
-| playerid      | Jucatorul care a schimbat interiorul.     |
-| newinteriorid | Interiorul în care se află acum jucătorul.|
-| oldinteriorid | Interiorul în care era jucătorul înainte. |
+| Nume          | Descriere                                  |
+| ------------- | ------------------------------------------ |
+| playerid      | Jucatorul care a schimbat interiorul.      |
+| newinteriorid | Interiorul în care se află acum jucătorul. |
+| oldinteriorid | Interiorul în care era jucătorul înainte.  |
 
 ## Returnări
 

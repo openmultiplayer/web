@@ -9,13 +9,13 @@ tags: ["player", "3dtextlabel"]
 
 Anexa uma text label 3D a um jogador.
 
-| Nome      | Descrição                                                             |
-| --------- | --------------------------------------------------------------------- |
+| Nome          | Descrição                                                             |
+| ------------- | --------------------------------------------------------------------- |
 | Text3D:textid | O ID da text label 3D a ser anexada. Retornado por Create3DTextLabel. |
-| playerid  | O ID do jogador ao qual deseja anexar a text label 3D.                |
-| OffsetX   | O deslocamento (offset) X da text label 3D até ao jogador.            |
-| OffsetY   | O deslocamento (offset) Y da text label 3D até ao jogador.            |
-| OffsetZ   | O deslocamento (offset) Z da text label 3D até ao jogador.            |
+| playerid      | O ID do jogador ao qual deseja anexar a text label 3D.                |
+| OffsetX       | O deslocamento (offset) X da text label 3D até ao jogador.            |
+| OffsetY       | O deslocamento (offset) Y da text label 3D até ao jogador.            |
+| OffsetZ       | O deslocamento (offset) Z da text label 3D até ao jogador.            |
 
 ## Retorno
 

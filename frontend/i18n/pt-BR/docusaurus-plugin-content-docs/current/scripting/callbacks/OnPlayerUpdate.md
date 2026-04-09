@@ -9,9 +9,9 @@ tags: ["player"]
 
 Essa callback é executada quando o cliente/player faz o update do seu status para o servidor. É geralmente utilizada para criar callbacks customizadas para o cliente, das quais não são ativas no lado do servidor, tais como vida, colete, ou até mesmo troca de armas.
 
-| Nome     | Descrição                                  |
-| -------- | ------------------------------------------ |
-| playerid | ID do jogador que está enviando o pacote.  |
+| Nome     | Descrição                                 |
+| -------- | ----------------------------------------- |
+| playerid | ID do jogador que está enviando o pacote. |
 
 ## Retornos
 

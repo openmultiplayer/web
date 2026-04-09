@@ -10,10 +10,10 @@ tags: ["vehicle"]
 Deze callback wordt aangeroepen wanneer een speler een voertuig paintjob bekijkt in een modshop. Let op, deze callback wordt niet aangeroepen wanneer de speler de paintjob koopt.
 
 | Naam       | Beschrijving                                                      |
-| ---------- | ---------------------------------------------------------------- |
+| ---------- | ----------------------------------------------------------------- |
 | playerid   | Het ID van de speler die de paintjob van hun voertuig veranderde. |
 | vehicleid  | Het ID van het voertuig waarvan de paintjob werd veranderd.       |
-| paintjobid | Het ID van de nieuwe paintjob.                                   |
+| paintjobid | Het ID van de nieuwe paintjob.                                    |
 
 ## Returns
 

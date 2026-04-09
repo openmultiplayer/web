@@ -9,12 +9,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 عرض و ارتفاع حروف در یک player-textdraw رو تنظیم می‌کنه.
 
-| نام               | توضیحات                                                            |
-| ----------------- | ------------------------------------------------------------------ |
-| playerid          | آی‌دی بازیکنی که player-textdraw متعلق بهش هست                      |
-| PlayerText:textid | آی‌دی player-textdraw که می‌خوای اندازه حروفش رو تغییر بدی           |
-| Float:width       | عرض یک کاراکتر.                                                    |
-| Float:height      | ارتفاع یک کاراکتر.                                                  |
+| نام               | توضیحات                                                    |
+| ----------------- | ---------------------------------------------------------- |
+| playerid          | آی‌دی بازیکنی که player-textdraw متعلق بهش هست             |
+| PlayerText:textid | آی‌دی player-textdraw که می‌خوای اندازه حروفش رو تغییر بدی |
+| Float:width       | عرض یک کاراکتر.                                            |
+| Float:height      | ارتفاع یک کاراکتر.                                         |
 
 ## مقادیر بازگشتی
 
@@ -29,7 +29,7 @@ public OnPlayerConnect(playerid)
 {
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my OPEN.MP server");
     PlayerTextDrawLetterSize(playerid, welcomeText[playerid], 3.2, 5.1);
-    
+
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
     return 1;
 }

@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Fare seçim modunu iptal edin. Fareniz ekrandan gider.
 
-| Parametre | Açılama                                                             |
-| --------- | ------------------------------------------------------------------- |
-| playerid  | Fare seçim modu iptal edilecek oyuncunun ID'si.                     |
+| Parametre | Açılama                                         |
+| --------- | ----------------------------------------------- |
+| playerid  | Fare seçim modu iptal edilecek oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

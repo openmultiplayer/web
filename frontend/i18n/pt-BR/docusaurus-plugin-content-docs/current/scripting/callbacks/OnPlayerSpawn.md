@@ -9,13 +9,13 @@ tags: ["player"]
 
 Este evento é chamado quando um spawna. (Após chamada da função SpawnPlayer)
 
-| Nome     | Descrição                        |
-| -------- | ---------------------------------- |
+| Nome     | Descrição                  |
+| -------- | -------------------------- |
 | playerid | ID do jogador que spawnou. |
 
 ## Retorno
 
-0 - Impedirá que outros filterscripts  recebam este retorno de chamada.
+0 - Impedirá que outros filterscripts recebam este retorno de chamada.
 
 1 - Indica que este retorno de chamada será passado para o próximo filterscript.
 

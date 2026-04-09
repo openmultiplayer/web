@@ -40,7 +40,7 @@ if (IsPlayerAdmin(playerTarget))
 
 ## 相关函数
 
-- [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor): 获取玩家当前注视的角色 ID
+- [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor): 获取玩家当前注视的演员 ID
 - [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): 获取玩家当前注视的车辆 ID
 - [GetPlayerCameraTargetObject](GetPlayerCameraTargetObject): 获取玩家当前注视的物体 ID
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): 获取玩家视角前向向量

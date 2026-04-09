@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Callback này được gọi khi một NPC kết nối thành công với server.
 
-| Tên          | Mô Tả                                          |
-| ------------- | ---------------------------------------------- |
-| myplayerid    | ID của NPC mà server đã gán                    |
+| Tên        | Mô Tả                       |
+| ---------- | --------------------------- |
+| myplayerid | ID của NPC mà server đã gán |
 
 ## Ví Dụ
 

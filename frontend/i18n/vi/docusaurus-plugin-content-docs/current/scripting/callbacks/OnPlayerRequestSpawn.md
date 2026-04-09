@@ -9,9 +9,9 @@ tags: ["player", "class"]
 
 Callback này được gọi khi người chơi cố gắng xuất hiện qua việc chọn lớp bằng cách nhấn SHIFT hoặc nhấp vào nút 'Spawn'.
 
-| Tên      | Mô tả                                      |
-| -------- | ------------------------------------------ |
-| playerid | ID của người chơi yêu cầu xuất hiện.       |
+| Tên      | Mô tả                                |
+| -------- | ------------------------------------ |
+| playerid | ID của người chơi yêu cầu xuất hiện. |
 
 ## Giá trị trả về
 
@@ -43,7 +43,7 @@ public OnPlayerRequestSpawn(playerid)
 
 ## Các Callbacks liên quan
 
-Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
-- [OnPlayerSpawn](OnPlayerSpawn): Callback này được gọi khi người chơi xuất hiện. 
+- [OnPlayerSpawn](OnPlayerSpawn): Callback này được gọi khi người chơi xuất hiện.
 - [OnPlayerRequestClass](OnPlayerRequestClass): Callback này được gọi khi người chơi thay đổi lớp ở việc chọn lớp.

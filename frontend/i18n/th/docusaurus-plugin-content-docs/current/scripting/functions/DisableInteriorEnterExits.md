@@ -12,7 +12,6 @@ Disable all the interior entrances and exits in the game (the yellow arrows at d
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

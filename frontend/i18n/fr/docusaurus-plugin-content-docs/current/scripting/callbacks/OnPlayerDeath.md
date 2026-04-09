@@ -10,7 +10,7 @@ tags: ["player"]
 Cette callback est appelée quand le joueur est mort. Il peut s'agir aussi bien d'une mort par kill qu'une mort par suicide.
 
 | Nom                 | Description                                                        |
-|---------------------|--------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------------------------ |
 | `int` playerid      | ID du joueur mort                                                  |
 | `int` killerid      | ID du joueur qui kill le `playerid`, ou INVALID_PLAYER_ID à défaut |
 | `int` WEAPON:reason | ID de la raison de la mort                                         |
@@ -56,9 +56,9 @@ Il faut toujours vérifier que le `killerid` est valide avant d'utiliser SendDea
 
 :::warning
 
-Vous DEVEZ vérifier que `killerid` est valide (pas INVALID_PLAYER_ID) avant de l'utiliser dans un array _(n'importe où en réalité)_, sinon le script OnPlayerDeath est susceptible de crash. 
+Vous DEVEZ vérifier que `killerid` est valide (pas INVALID*PLAYER_ID) avant de l'utiliser dans un array *(n'importe où en réalité)\_, sinon le script OnPlayerDeath est susceptible de crash.
 
-C'est parce que INVALID_PLAYER_ID est défini comme ayant la valeur '65535' que si un array a seulement MAX_PLAYERS comme élément le script OnPlayerDeath va crash _(vous tentez d'indexer au-delà de la limite MAX_PLAYERS)_.
+C'est parce que INVALID*PLAYER_ID est défini comme ayant la valeur '65535' que si un array a seulement MAX_PLAYERS comme élément le script OnPlayerDeath va crash *(vous tentez d'indexer au-delà de la limite MAX*PLAYERS)*.
 
 :::
 

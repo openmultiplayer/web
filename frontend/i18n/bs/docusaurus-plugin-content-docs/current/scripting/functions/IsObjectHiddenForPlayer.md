@@ -13,14 +13,14 @@ Provjerava da li je objekat sakriven za igrača.
 
 ## Parametri
 
-| Ime      | Deskripcija                    |
-|----------|--------------------------------|
-| playerid | ID igrača.                     |
-| objectid | ID objekta za provjeriti.      |
+| Ime      | Deskripcija               |
+| -------- | ------------------------- |
+| playerid | ID igrača.                |
+| objectid | ID objekta za provjeriti. |
 
 ## Returnovi
 
-`true` -  Objekat je sakriven za igrača.
+`true` - Objekat je sakriven za igrača.
 
 `false` - Objekat nije sakriven za igrača.
 

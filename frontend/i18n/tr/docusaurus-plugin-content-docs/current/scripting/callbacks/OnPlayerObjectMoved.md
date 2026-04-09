@@ -1,22 +1,22 @@
 ---
 title: OnPlayerObjectMoved
 sidebar_label: OnPlayerObjectMoved
-description: Fonksiyon, bir oyuncu objesi MovePlayerObject'den sonra hareket ettirildiğinde (hareket etmeyi durdurduğunda) çağrılır. 
+description: Fonksiyon, bir oyuncu objesi MovePlayerObject'den sonra hareket ettirildiğinde (hareket etmeyi durdurduğunda) çağrılır.
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Fonksiyon, bir oyuncu objesi MovePlayerObject'den sonra hareket ettirildiğinde (hareket etmeyi durdurduğunda) çağrılır. 
+Fonksiyon, bir oyuncu objesi MovePlayerObject'den sonra hareket ettirildiğinde (hareket etmeyi durdurduğunda) çağrılır.
 
-| Parametre | Açıklama                                   |
-| --------- | ------------------------------------------ |
-| playerid  | Objenin atandığı oyuncunun ID'si.          |
-| objectid  | Hareket ettirilen oyuncu objesinin ID'si.  |
+| Parametre | Açıklama                                  |
+| --------- | ----------------------------------------- |
+| playerid  | Objenin atandığı oyuncunun ID'si.         |
+| objectid  | Hareket ettirilen oyuncu objesinin ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 
-Filterscript komutlarında her zaman ilk olarak çağrılır. 
+Filterscript komutlarında her zaman ilk olarak çağrılır.
 
 ## Örnek
 
@@ -32,7 +32,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 :::tip
 
-Bu fonksiyon, NPC için de çağrılabilir. 
+Bu fonksiyon, NPC için de çağrılabilir.
 
 :::
 

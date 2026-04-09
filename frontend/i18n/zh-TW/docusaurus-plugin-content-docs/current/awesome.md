@@ -13,7 +13,7 @@ description: 對製作腳本有幫助的工具、函數庫和插件的列表。
 - **[SA:MP Plugin Template Library](https://github.com/katursis/samp-ptl)** - 使用這個模板函數庫，可以輕鬆快速地創建自己的插件。
 - **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - 一個測試用的平台，可以用於測試腳本、進行除錯、分享代碼。
 - **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)** - Sublime Text 的自動完成擴充套件，非常有幫助。
-- **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** -  Visual Studio Code 的自動完成擴充套件，非常有幫助。
+- **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Visual Studio Code 的自動完成擴充套件，非常有幫助。
 - **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - 一個地盤區域的編輯器。
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - 一個貼近大眾的地圖編輯器。
 
@@ -150,7 +150,7 @@ description: 對製作腳本有幫助的工具、函數庫和插件的列表。
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - 修復GTA San Andreas地圖的紋理錯誤。
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - SA:MP的動畫瀏覽工具。
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - 檢查玩家是否使用Android系統。
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - TextDraw編輯器，具有一些豐富的功能。
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - TextDraw編輯器，具有一些豐富的功能。
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - 具有豐富功能的高級地圖編輯器。
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - SA:MP的地圖編輯器。
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - 這是一個遊戲中的地圖編輯器，可以對15個材質進行紋理，並設置對象的顏色。

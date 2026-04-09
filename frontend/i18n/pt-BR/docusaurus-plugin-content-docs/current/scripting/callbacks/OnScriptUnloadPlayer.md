@@ -11,9 +11,9 @@ tags: ["player"]
 
 Este callback é chamado para cada jogador conectado quando um script é descarregado.
 
-| Nome          | Descrição                                                                 |
-|---------------|---------------------------------------------------------------------------|
-| playerid      | O ID do jogador para o qual o script foi descarregado.                    |
+| Nome               | Descrição                                                                       |
+| ------------------ | ------------------------------------------------------------------------------- |
+| playerid           | O ID do jogador para o qual o script foi descarregado.                          |
 | bool:isEntryScript | Determina se é um script de entrada (script principal) ou um script secundário. |
 
 ## Retornos
@@ -39,7 +39,7 @@ Este callback é chamado quando você está **descarregando** um script secundá
 
 ## Callbacks Relacionados
 
-Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma. 
+Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma.
 
 - [OnScriptLoadPlayer](OnScriptLoadPlayer): Este callback é chamado para cada jogador conectado quando um script é carregado.
 - [OnPlayerConnect](OnPlayerConnect): Este callback é chamado quando um jogador se conecta ao servidor.

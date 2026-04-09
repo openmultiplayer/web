@@ -11,11 +11,11 @@ tags: []
 
 Retorna a data atual do servidor, que será armazenada nas variáveis &ano, &mes e &dia
 
-| Nome       | Descrição                                                      |
-| ---------- | -------------------------------------------------------------- |
-| &ano=0      | A variável para armazenar a hora, passada por referência.      |
-| &mes=0      | A variável para armazenar o minuto, passada por referência.    |
-| &dia=0      | A variável para armazenar os segundos, passada por referência. |
+| Nome   | Descrição                                                      |
+| ------ | -------------------------------------------------------------- |
+| &ano=0 | A variável para armazenar a hora, passada por referência.      |
+| &mes=0 | A variável para armazenar o minuto, passada por referência.    |
+| &dia=0 | A variável para armazenar os segundos, passada por referência. |
 
 ## Retorno
 

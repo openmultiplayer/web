@@ -10,7 +10,7 @@ tags: ["player"]
 Deze callback wordt aangeroepen wanneer een speler een target/waypoint op de pauze-menu-kaart plaatst (via rechterklik).
 
 | Naam     | Beschrijving                                                                 |
-| -------- | --------------------------------------------------------------------------- |
+| -------- | ---------------------------------------------------------------------------- |
 | playerid | Het ID van de speler die een target/waypoint plaatste                        |
 | Float:fX | De X-coördinaat waar de speler klikte                                        |
 | Float:fY | De Y-coördinaat waar de speler klikte                                        |

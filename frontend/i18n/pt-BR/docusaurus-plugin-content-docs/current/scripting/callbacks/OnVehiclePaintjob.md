@@ -7,20 +7,19 @@ tags: ["vehicle"]
 
 :::tip
 
-[Paintjob](../resources/paintjobs) são as pinturas personalizadas, igual aquelas das garagens low-rider. 
+[Paintjob](../resources/paintjobs) são as pinturas personalizadas, igual aquelas das garagens low-rider.
 
 :::
-
 
 ## Descrição
 
 Executada quando um jogador pré-visualiza um paintjob na garagem (modshop). Cuidado, essa callback não é executada quando o jogador compra o paintjob!
 
-| Nome       | Descrição                                                        |
-| ---------- | ---------------------------------------------------------------- |
-| playerid   | ID do jogador que está mudando o paintjob do veículo.            |
-| vehicleid  | ID do veículo que está mudando o paintjob.                       |
-| paintjobid | ID do novo paintjob.                                             |
+| Nome       | Descrição                                             |
+| ---------- | ----------------------------------------------------- |
+| playerid   | ID do jogador que está mudando o paintjob do veículo. |
+| vehicleid  | ID do veículo que está mudando o paintjob.            |
+| paintjobid | ID do novo paintjob.                                  |
 
 ## Retornos
 

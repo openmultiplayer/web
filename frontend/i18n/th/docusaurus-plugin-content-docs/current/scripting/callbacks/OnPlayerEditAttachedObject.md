@@ -10,7 +10,7 @@ tags: ["player"]
 This callback is called when a player ends attached object edition mode.
 
 | Name                   | Description                                                   |
-|------------------------|---------------------------------------------------------------|
+| ---------------------- | ------------------------------------------------------------- |
 | playerid               | The ID of the player that ended edition mode                  |
 | EDIT_RESPONSE:response | 0 if they cancelled (ESC) or 1 if they clicked the save icon. |
 | index                  | The index of the attached object (0-9)                        |

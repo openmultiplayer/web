@@ -9,8 +9,8 @@ tags: ["player", "checkpoint"]
 
 Deze callback wordt aangeroepen wanneer een speler de checkpoint binnengaat die voor hem/haar is gezet.
 
-| Naam     | Beschrijving                          |
-| -------- | ------------------------------------ |
+| Naam     | Beschrijving                            |
+| -------- | --------------------------------------- |
 | playerid | De speler die de checkpoint binnenging. |
 
 ## Returns

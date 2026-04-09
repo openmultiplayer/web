@@ -11,9 +11,9 @@ tags: ["npc", "angle", "player"]
 
 Rotates an NPC to face a specific player by using the player's current position.
 
-| Name     | Description |
-| -------- | ----------- |
-| npcid    | The ID of the NPC. |
+| Name     | Description                                    |
+| -------- | ---------------------------------------------- |
+| npcid    | The ID of the NPC.                             |
 | playerid | The ID of the player that the NPC should face. |
 
 ## Returns

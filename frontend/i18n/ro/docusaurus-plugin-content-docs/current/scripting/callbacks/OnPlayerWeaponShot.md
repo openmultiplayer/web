@@ -10,14 +10,14 @@ tags: ["player"]
 Acest callback este apelat atunci când un jucător trage o lovitură dintr-o armă. Sunt acceptate doar armele cu gloanțe. Este acceptată doar trecerea pasagerilor (nu șoferul și nu loviturile de vrăbii de mare/vânători).
 
 | Nume                    | Descriere                                                                                                            |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------|
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | playerid                | ID-ul jucătorului care a împușcat o armă.                                                                            |
 | WEAPON:weaponid         | ID-ul [armei](../resources/weaponids) împușcat de jucător.                                                           |
 | BULLET_HIT_TYPE:hittype | [Tipul](../resources/bullethittypes) a obiectului lovit (niciunul, jucătorul, vehiculul sau obiectul (jucătorului)). |
 | hitid                   | ID-ul jucătorului, vehiculului sau obiectului care a fost lovit.                                                     |
 | Float:fX                | Coordonata X pe care a lovit împușcătura.                                                                            |
 | Float:fY                | Coordonata Y pe care a lovit împușcătura.                                                                            |
-| Float:fZ       | Coordonata Z pe care a lovit împușcătura.                                                                 |
+| Float:fZ                | Coordonata Z pe care a lovit împușcătura.                                                                            |
 
 ## Returnări
 

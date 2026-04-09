@@ -11,11 +11,11 @@ tags: ["npc", "weapon", "skill"]
 
 Sets the weapon skill level for an NPC.
 
-| Name  | Description                              |
-| ----- | ---------------------------------------- |
-| npcid | The ID of the NPC                        |
-| skill | The weapon skill type (WEAPONSKILL)      |
-| level | The skill level to set (0-999)           |
+| Name  | Description                         |
+| ----- | ----------------------------------- |
+| npcid | The ID of the NPC                   |
+| skill | The weapon skill type (WEAPONSKILL) |
+| level | The skill level to set (0-999)      |
 
 ## Returns
 

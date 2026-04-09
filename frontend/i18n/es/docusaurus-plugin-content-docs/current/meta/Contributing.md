@@ -119,7 +119,6 @@ No cree un encabezamiento de nivel 1 (`<h1>`) con `#`, ya que se genera automát
 
 Cuando escribas un párrafo que contenga nombres de funciones, números, expresiones o cualquier cosa que no sea lenguaje escrito estándar, rodéalos con \`puntos y comas\`. Así es más fácil separar el lenguaje para describir cosas de las referencias a elementos técnicos como nombres de funciones y trozos de código.
 
-
 - ❌
 
   > La función fopen devolverá un valor con una etiqueta de tipo File:, no hay ningún problema en esa línea ya que el valor devuelto está siendo almacenado en una variable también con una etiqueta de File: (nótese que los casos son los mismos también). Sin embargo, en la siguiente línea se añade el valor 4 al manejador de fichero. 4 no tiene etiqueta [...]

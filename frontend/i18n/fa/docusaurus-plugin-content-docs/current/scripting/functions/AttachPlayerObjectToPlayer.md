@@ -9,17 +9,17 @@ tags: ["player", "object", "playerobject"]
 
 مانند [AttachObjectToPlayer](AttachObjectToPlayer) اما برای اشیائی که برای بازیکن ایجاد شده‌اند.
 
-| نام             | توضیحات                                                           |
-| --------------- | ----------------------------------------------------------------- |
-| playerid        | ID بازیکنی که با شیء مرتبط است.                           |
-| objectid        | objectid که می‌خواهید به بازیکن متصل کنید.                    |
-| parentid        | ID بازیکنی که می‌خواهید به شیء متصل کنید.               |
-| Float:offsetX   | فاصله بین بازیکن و شیء در جهت X.                      |
-| Float:offsetY   | فاصله بین بازیکن و شیء در جهت Y.                      |
-| Float:offsetZ   | فاصله بین بازیکن و شیء در جهت Z.                      |
-| Float:rotationX | چرخش X.                                                      |
-| Float:rotationY | چرخش Y.                                                      |
-| Float:rotationZ | چرخش Z.                                                      |
+| نام             | توضیحات                                    |
+| --------------- | ------------------------------------------ |
+| playerid        | ID بازیکنی که با شیء مرتبط است.            |
+| objectid        | objectid که می‌خواهید به بازیکن متصل کنید. |
+| parentid        | ID بازیکنی که می‌خواهید به شیء متصل کنید.  |
+| Float:offsetX   | فاصله بین بازیکن و شیء در جهت X.           |
+| Float:offsetY   | فاصله بین بازیکن و شیء در جهت Y.           |
+| Float:offsetZ   | فاصله بین بازیکن و شیء در جهت Z.           |
+| Float:rotationX | چرخش X.                                    |
+| Float:rotationY | چرخش Y.                                    |
+| Float:rotationZ | چرخش Z.                                    |
 
 ## مقدار بازگشتی
 

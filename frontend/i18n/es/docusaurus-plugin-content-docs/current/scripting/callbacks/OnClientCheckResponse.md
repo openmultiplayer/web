@@ -8,12 +8,12 @@ tags: []
 
 Este callback se llama cuando una función SendClientCheck es completada.
 
-| Nombre        | Descripción                       |
-| ------------- | --------------------------------- |
-| playerid      | El ID del jugador verificado.     |
-| actionid      | El tipo de chequeo realizado.     |
-| memaddr       | La dirección requerida.           |
-| retndata      | El resultado del chequeo.         |
+| Nombre   | Descripción                   |
+| -------- | ----------------------------- |
+| playerid | El ID del jugador verificado. |
+| actionid | El tipo de chequeo realizado. |
+| memaddr  | La dirección requerida.       |
+| retndata | El resultado del chequeo.     |
 
 ## Devoluciones
 
@@ -48,5 +48,7 @@ Este callback sólo se llama cuando está en un filterscript.
 :::
 
 ## Funciones Relacionadas
+
 La siguiente función puede ser útil, ya que está relacionada de alguna forma u otra con OnClientCheckResponse:
+
 - [SendClientCheck](../functions/SendClientCheck): Realiza un chequeo de memoria en el cliente.

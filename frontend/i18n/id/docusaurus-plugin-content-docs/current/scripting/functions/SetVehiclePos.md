@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Set posisi pada kendaraan.
 
-| Nama      | Deskripsi                                  |
+| Nama      | Deskripsi                                    |
 | --------- | -------------------------------------------- |
-| vehicleid | ID Kendaraan yang ingin di set posisi   |
+| vehicleid | ID Kendaraan yang ingin di set posisi        |
 | Float:x   | Koordinat X untuk set posisi pada kendaraan. |
 | Float:y   | Koordinat Y untuk set posisi pada kendaraan. |
 | Float:z   | Koordinat Z untuk set posisi pada kendaraan. |

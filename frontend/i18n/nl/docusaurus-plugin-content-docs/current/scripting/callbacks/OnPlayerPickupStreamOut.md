@@ -11,10 +11,10 @@ tags: ["player", "pickup", "playerpickup"]
 
 Deze callback wordt aangeroepen wanneer een player-pickup buiten de visuele range van de speler gaat.
 
-| Naam     | Beschrijving                                                                                    |
-| -------- | ---------------------------------------------------------------------------------------------- |
+| Naam     | Beschrijving                                                                                         |
+| -------- | ---------------------------------------------------------------------------------------------------- |
 | pickupid | Het ID van de player-pickup, teruggegeven door [CreatePlayerPickup](../functions/CreatePlayerPickup) |
-| playerid | Het ID van de speler voor wie de player-pickup uit de visuele range gaat.                        |
+| playerid | Het ID van de speler voor wie de player-pickup uit de visuele range gaat.                            |
 
 ## Returns
 
@@ -50,5 +50,3 @@ public OnPlayerPickupStreamOut(pickupid, playerid)
 
 - [CreatePlayerPickup](../functions/CreatePlayerPickup): Maakt een pickup die zichtbaar is voor slechts één speler.
 - [DestroyPlayerPickup](../functions/DestroyPlayerPickup): Vernietig een player-pickup.
-
-

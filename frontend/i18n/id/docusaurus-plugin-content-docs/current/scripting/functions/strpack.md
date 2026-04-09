@@ -6,13 +6,14 @@ tags: ["string"]
 ---
 
 ## Deskripsi
+
 String yang telah dibungkus menggunakan 75% memory lebih sedikit
 
-| Name                      | Description                                                               |
-| ------------------------- | ------------------------------------------------------------------------- |
-| dest[]                    | Tempat untuk menyimpan hasil string yang sudah dibungkus                  |
-| const source[]            | Sumber dari string yang akan diambil                                      |
-| maxlength = sizeof (dest) | Jumlah maksimal yang bisa dimasukan                                       |
+| Name                      | Description                                              |
+| ------------------------- | -------------------------------------------------------- |
+| dest[]                    | Tempat untuk menyimpan hasil string yang sudah dibungkus |
+| const source[]            | Sumber dari string yang akan diambil                     |
+| maxlength = sizeof (dest) | Jumlah maksimal yang bisa dimasukan                      |
 
 ## Returns
 

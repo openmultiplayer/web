@@ -9,10 +9,10 @@ tags: []
 
 Permite que um jogador edite um objeto (posição e rotação) utilizando o mouse em uma interface gráfica (GUI).
 
-| Nome     | Descrição                                       |
-| -------- | ------------------------------------------------- |
-| playerid | O ID do jogador que irá editar o objeto. |
-| objectid | O ID do objeto a ser editado pelo jogador.  |
+| Nome     | Descrição                                  |
+| -------- | ------------------------------------------ |
+| playerid | O ID do jogador que irá editar o objeto.   |
+| objectid | O ID do objeto a ser editado pelo jogador. |
 
 ## Retornos
 

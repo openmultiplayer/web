@@ -11,9 +11,9 @@ tags: ["npc", "position", "movement"]
 
 Gets the position that the NPC is currently moving toward.
 
-| Name     | Description                                                        |
-| -------- | ------------------------------------------------------------------ |
-| npcid    | The ID of the NPC                                                  |
+| Name     | Description                                                                    |
+| -------- | ------------------------------------------------------------------------------ |
+| npcid    | The ID of the NPC                                                              |
 | &Float:x | Variable to store the X coordinate of the target position, passed by reference |
 | &Float:y | Variable to store the Y coordinate of the target position, passed by reference |
 | &Float:z | Variable to store the Z coordinate of the target position, passed by reference |

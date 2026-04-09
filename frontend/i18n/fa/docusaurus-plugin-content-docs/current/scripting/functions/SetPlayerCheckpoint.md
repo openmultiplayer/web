@@ -9,13 +9,13 @@ tags: ["player", "checkpoint"]
 
 یک checkpoint (استوانه قرمز) برای پلیر تنظیم می‌کنه. همچنین یک نقطه قرمز در رادار نشون می‌ده. وقتی پلیر وارد checkpoint می‌شه، OnPlayerEnterCheckpoint فراخوانی می‌شه و می‌تونی اکشن‌های مختلفی انجام بدی.
 
-| نام           | توضیحات                                    |
-| ------------- | ------------------------------------------ |
+| نام           | توضیحات                                       |
+| ------------- | --------------------------------------------- |
 | playerid      | آیدی پلیری که قراره checkpoint براش تنظیم بشه |
-| Float:centreX | مختصات X برای تنظیم checkpoint               |
-| Float:centreY | مختصات Y برای تنظیم checkpoint               |
-| Float:centreZ | مختصات Z برای تنظیم checkpoint               |
-| Float:radius  | اندازه checkpoint                           |
+| Float:centreX | مختصات X برای تنظیم checkpoint                |
+| Float:centreY | مختصات Y برای تنظیم checkpoint                |
+| Float:centreZ | مختصات Z برای تنظیم checkpoint                |
+| Float:radius  | اندازه checkpoint                             |
 
 ## مقادیر بازگشتی
 

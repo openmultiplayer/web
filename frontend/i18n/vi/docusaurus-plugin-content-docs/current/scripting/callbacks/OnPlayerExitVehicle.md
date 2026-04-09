@@ -9,10 +9,10 @@ tags: ["player", "vehicle"]
 
 Callback này được gọi khi một người chơi bắt đầu thoát khỏi một phương tiện.
 
-| Tên        | Mô Tả                                             |
-| ---------- | ------------------------------------------------- |
-| playerid   | ID của người chơi đang thoát khỏi phương tiện.   |
-| vehicleid  | ID của phương tiện mà người chơi đang thoát khỏi.|
+| Tên       | Mô Tả                                             |
+| --------- | ------------------------------------------------- |
+| playerid  | ID của người chơi đang thoát khỏi phương tiện.    |
+| vehicleid | ID của phương tiện mà người chơi đang thoát khỏi. |
 
 ## Trả Về
 

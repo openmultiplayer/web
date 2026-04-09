@@ -1,5 +1,5 @@
 ---
-title : AddSimpleModel
+title: AddSimpleModel
 description: Ajoute un nouveau modèle d'objet simple personnalisé à télécharger.
 tags: []
 ---
@@ -11,7 +11,7 @@ tags: []
 Ajoute un nouveau modèle d'objet simple personnalisé à télécharger. Les fichiers modèles seront stockés dans le dossier Documents\GTA San Andreas User Files\SAMP\cache du lecteur sous le dossier IP et port du serveur dans un nom de fichier au format CRC.
 
 | Nom          | Description                                                                                                                                            |
-| ------------ | -------------------------------------------------- --------------------------------------------------------------------------------------------------- |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | virtualworld | L'identifiant du monde virtuel sur lequel rendre le modèle disponible. Utilisez -1 pour tous les mondes.                                               |
 | baseid       | ID de modèle d'objet de base à utiliser (objet d'origine à utiliser lorsque le téléchargement échoue).                                                 |
 | newid        | Le nouvel ID de modèle d'objet allait de -1000 à -30000 (29000 emplacements) pour être utilisé ultérieurement avec CreateObject ou CreatePlayerObject. |

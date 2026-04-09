@@ -9,7 +9,6 @@ tags: []
 
 Essa callback é executada quando o NPC é spawnado.
 
-
 ## Exemplos
 
 ```c

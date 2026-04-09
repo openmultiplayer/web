@@ -9,8 +9,8 @@ tags: ["player"]
 
 Bu geri çağırma oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
 
-| Parametre                     | Açıklama                                                          |
-|------------------------|-------------------------------------------------------------------|
+| Parametre              | Açıklama                                                          |
+| ---------------------- | ----------------------------------------------------------------- |
 | playerid               | Düzenlemeyi bitiren oyuncunun id'si.                              |
 | EDIT_RESPONSE:response | Eğer iptal ettiyse 0, kaydet tuşuna bastıysa 1 değerini döndürür. |
 | index                  | The index of the attached object (0-9)                            |

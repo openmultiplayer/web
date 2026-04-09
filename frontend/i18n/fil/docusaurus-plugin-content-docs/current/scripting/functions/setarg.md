@@ -11,11 +11,11 @@ tags: []
 
 Magtakda ng argument na naipasa sa isang function.
 
-| Name  | Description                                                 |
-| ----- | ----------------------------------------------------------- |
+| Name  | Description                                                                         |
+| ----- | ----------------------------------------------------------------------------------- |
 | arg   | Ang numero ng pagkakasunud-sunod ng argument. Gamitin ang 0 para sa unang argument. |
-| index | Ang index (kung ang argument ay isang array).               |
-| value | Ang halaga kung saan itatakda ang argument.                 |
+| index | Ang index (kung ang argument ay isang array).                                       |
+| value | Ang halaga kung saan itatakda ang argument.                                         |
 
 ## Returns
 

@@ -9,9 +9,9 @@ tags: ["player", "checkpoint"]
 
 Callback này được gọi khi một người chơi rời khỏi checkpoint đã được thiết lập cho họ bởi [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint). Chỉ có thể thiết lập một checkpoint tại một thời điểm.
 
-| Tên      | Mô Tả                                                                 |
-| -------- | ----------------------------------------------------------------------- |
-| playerid | ID của người chơi đã rời khỏi checkpoint.                             |
+| Tên      | Mô Tả                                     |
+| -------- | ----------------------------------------- |
+| playerid | ID của người chơi đã rời khỏi checkpoint. |
 
 ## Trả Về
 

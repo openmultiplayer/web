@@ -11,10 +11,10 @@ tags: ["player", "pickup", "playerpickup"]
 
 ID virtual world یک player pickup رو تنظیم می‌کنه.
 
-| نام          | توضیحات                  |
-|--------------|--------------------------|
-| playerid     | ID بازیکن.               |
-| pickupid     | ID player pickup.       |
+| نام          | توضیحات                             |
+| ------------ | ----------------------------------- |
+| playerid     | ID بازیکن.                          |
+| pickupid     | ID player pickup.                   |
 | virtualWorld | ID virtual world که باید تنظیم بشه. |
 
 ## مقدار برگشتی
@@ -29,7 +29,7 @@ new PlayerPickup[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     PlayerPickup[playerid] = CreatePlayerPickup(playerid, 1242, 1, 2010.0979, 1222.0642, 10.8206, 20);
-    
+
     SetPlayerPickupVirtualWorld(playerid, PlayerPickup[playerid], 10);
     return 1;
 }

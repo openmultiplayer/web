@@ -9,10 +9,10 @@ tags: ["sqlite"]
 
 A função é usada para executar uma consulta SQL em um banco de dados SQLite aberto.
 
-| Nome             | Descrição                                   |
-| ---------------- | ------------------------------------------- |
-| DB:db            | O handle do banco de dados para consultar. |
-| const query[]    | A consulta a ser executada.                |
+| Nome             | Descrição                                        |
+| ---------------- | ------------------------------------------------ |
+| DB:db            | O handle do banco de dados para consultar.       |
+| const query[]    | A consulta a ser executada.                      |
 | OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag. |
 
 ## Retorno

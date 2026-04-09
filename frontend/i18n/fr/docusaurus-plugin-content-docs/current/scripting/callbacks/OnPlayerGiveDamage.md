@@ -9,13 +9,13 @@ tags: ["player"]
 
 Cette callback est appelée quand un joueur inflige des dégâts à un autre joueur.
 
-| Nom                   | Description                                                              |
-|-----------------------|--------------------------------------------------------------------------|
-| `int` playerid        | ID du joueur qui inflige le dégât                                        |
-| `int` damagedid       | ID du joueur qui reçoit le dégât                                         |
-| `float` Float:amount  | Montant de la perte en armure/vie (combinés)                             |
-| `int` WEAPON:weaponid | Cause du dommage                                                         |
-| `int` bodypart        | Partie du corps qui a été touchée |
+| Nom                   | Description                                  |
+| --------------------- | -------------------------------------------- |
+| `int` playerid        | ID du joueur qui inflige le dégât            |
+| `int` damagedid       | ID du joueur qui reçoit le dégât             |
+| `float` Float:amount  | Montant de la perte en armure/vie (combinés) |
+| `int` WEAPON:weaponid | Cause du dommage                             |
+| `int` bodypart        | Partie du corps qui a été touchée            |
 
 ## Valeur de retour
 
@@ -28,20 +28,20 @@ Cette callback est appelée quand un joueur inflige des dégâts à un autre jou
 ```c
 public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    new 
-      string[128], 
-      victim[MAX_PLAYER_NAME], 
+    new
+      string[128],
+      victim[MAX_PLAYER_NAME],
       attacker[MAX_PLAYER_NAME],
       weaponname[24];
-    
+
     GetPlayerName(playerid, attacker, sizeof (attacker));
     GetPlayerName(damagedid, victim, sizeof (victim));
     GetWeaponName(weaponid, weaponname, sizeof (weaponname));
-    
+
     format(string, sizeof(string), "%s a infligé %.0f de dégâts à %s, arme: %s, bodypart: %d", attacker, amount, victim, weaponname, bodypart);
-    
+
     SendClientMessageToAll(0xFFFFFFFF, string);
-    
+
     return 1;
 }
 ```

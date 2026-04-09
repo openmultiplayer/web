@@ -9,10 +9,10 @@ tags: []
 
 Možete koristiti ovu funkciju da prikvačite kameru igrača za objekt.
 
-| Ime      | Deskripcija                                                          |
-| -------- | -------------------------------------------------------------------- |
-| playerid | ID igrača koji će imati kameru prikvačenu za objekat.                |
-| objectid | ID objekta za kojeg želite prikvačiti kameru igrača.                 |
+| Ime      | Deskripcija                                           |
+| -------- | ----------------------------------------------------- |
+| playerid | ID igrača koji će imati kameru prikvačenu za objekat. |
+| objectid | ID objekta za kojeg želite prikvačiti kameru igrača.  |
 
 ## Returns
 

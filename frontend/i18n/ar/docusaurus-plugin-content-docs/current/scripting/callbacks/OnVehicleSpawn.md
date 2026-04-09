@@ -19,9 +19,9 @@ tags: ["vehicle"]
 
 This callback is called when a vehicle respawns.
 
-| Name      | Description                         |
-| --------- | ----------------------------------- |
-| vehicleid | إيدي السيارة التي رسبنت           |
+| Name      | Description             |
+| --------- | ----------------------- |
+| vehicleid | إيدي السيارة التي رسبنت |
 
 ## Returns
 
@@ -47,17 +47,16 @@ public OnVehicleSpawn(vehicleid)
 
 ## الاستدعاءات او كالباكات ذات الصلة
 
-قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى 
+قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى
 
-- [OnVehicleDeath](OnVehicleDeath): هذا الكال باك يتم إستدعائه عند تدمير السيارة. 
-- [OnPlayerSpawn](OnPlayerSpawn): هذا الكال باك يتم إستدعائه عند رسبنت اللاعب. 
+- [OnVehicleDeath](OnVehicleDeath): هذا الكال باك يتم إستدعائه عند تدمير السيارة.
+- [OnPlayerSpawn](OnPlayerSpawn): هذا الكال باك يتم إستدعائه عند رسبنت اللاعب.
 
 ## وظائف ذات صلة
 
-قد تكون الوظائف التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى 
+قد تكون الوظائف التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى
 
 - [SetVehicleToRespawn](../functions/SetVehicleToRespawn):إغادة رسبنت السيارة
 - [CreateVehicle](../functions/CreateVehicle): صنع سيارة
 
 </div>
-

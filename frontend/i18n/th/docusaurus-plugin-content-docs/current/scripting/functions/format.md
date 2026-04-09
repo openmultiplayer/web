@@ -15,12 +15,12 @@ This function starts with lowercase letter.
 
 Formats a string to include variables and other strings inside it.
 
-| Name           | Description                               |
-| -------------- | ----------------------------------------- |
-| output[]       | The string to output the result to        |
-| len            | The maximum length output can contain     |
-| format[]       | The format string                         |
-\ \{Float, _}:... | Indefinite number of arguments of any tag |
+| Name               | Description                               |
+| ------------------ | ----------------------------------------- |
+| output[]           | The string to output the result to        |
+| len                | The maximum length output can contain     |
+| format[]           | The format string                         |
+| \ \{Float, \_}:... | Indefinite number of arguments of any tag |
 
 ## ส่งคืน
 

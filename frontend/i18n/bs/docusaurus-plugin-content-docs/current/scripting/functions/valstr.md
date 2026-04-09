@@ -49,7 +49,7 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 
 :::warning
 
-Prosljeđivanje velike vrijednosti ovoj funkciji može dovesti do zamrzavanja / pada sistema. Dostupni su popravci. Ispod je popravak koji se može staviti ravno u vašu skriptu (prije nego što se valstr koristi bilo gdje). fixes.inc uključuje ovaj popravak.
+Prosljeđivanje velike vrijednosti ovoj funkciji može dovesti do zamrzavanja / pada sistema. Dostupni su popravci. Ispod je popravak koji se može staviti ravno u vašu skriptu (prije nego što se valstr koristi bilo gdje). open.mp uključuje ovaj popravak.
 
 :::
 

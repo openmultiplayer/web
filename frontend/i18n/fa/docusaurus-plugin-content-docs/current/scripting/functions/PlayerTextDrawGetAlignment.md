@@ -11,10 +11,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 تراز متن یک player-textdraw رو دریافت می‌کنه.
 
-| نام               | توضیحات                                                      |
-| ----------------- | ------------------------------------------------------------ |
-| playerid          | آی‌دی بازیکن.                                                |
-| PlayerText:textid | آی‌دی player-textdraw که می‌خوای تراز متنش رو دریافت کنی.     |
+| نام               | توضیحات                                                   |
+| ----------------- | --------------------------------------------------------- |
+| playerid          | آی‌دی بازیکن.                                             |
+| PlayerText:textid | آی‌دی player-textdraw که می‌خوای تراز متنش رو دریافت کنی. |
 
 ## مقادیر بازگشتی
 
@@ -29,7 +29,7 @@ public OnPlayerConnect(playerid)
 {
     gMyTextdraw[playerid] = CreatePlayerTextDraw(playerid, 320.0, 425.0, "This is an example textdraw");
     PlayerTextDrawAlignment(playerid, gMyTextdraw[playerid], TEXT_DRAW_ALIGN_CENTER);
-    
+
     new TEXT_DRAW_ALIGN:align = PlayerTextDrawGetAlignment(playerid, gMyTextdraw[playerid]);
     // align = TEXT_DRAW_ALIGN_CENTER
     return 1;

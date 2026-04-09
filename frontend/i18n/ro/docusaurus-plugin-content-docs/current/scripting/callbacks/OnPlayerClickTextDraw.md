@@ -10,7 +10,7 @@ tags: ["player", "textdraw"]
 Acest callback este apelat atunci când un jucător face clic pe un textdraw sau anulează modul de selectare cu tasta ESC.
 
 | Nume      | Descriere                                                                               |
-| --------- | ----------------------------------------------------------------------------------------|
+| --------- | --------------------------------------------------------------------------------------- |
 | playerid  | ID-ul jucătorului care a făcut clic pe textdraw.                                        |
 | clickedid | ID-ul textdraw-ului care a fost apasat. INVALID_TEXT_DRAW dacă selecția a fost anulată. |
 

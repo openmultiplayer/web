@@ -9,9 +9,9 @@ tags: ["player", "vehicle"]
 
 Verifica se um jogador está dentro de qualquer veículo (como motorista ou passageiro).
 
-| Nome      | Descrição                     |
-| --------- | ----------------------------- |
-| playerid  | O ID do jogador a ser verificado. |
+| Nome     | Descrição                         |
+| -------- | --------------------------------- |
+| playerid | O ID do jogador a ser verificado. |
 
 ## Retornos
 
@@ -44,4 +44,3 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [IsPlayerInVehicle](IsPlayerInVehicle): Verifica se um jogador está em um determinado veículo.
 - [GetPlayerVehicleSeat](GetPlayerVehicleSeat): Verifica em qual assento o jogador está.
-

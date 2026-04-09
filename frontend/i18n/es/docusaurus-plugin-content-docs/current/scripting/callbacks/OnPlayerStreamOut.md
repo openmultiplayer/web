@@ -8,10 +8,10 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador se deja de cargar (ya no es visible) por el cliente de algún otro jugador.
 
-| Nombre      | Descripción                                     |
-| ----------- | ----------------------------------------------- |
-| playerid    | El jugador al que se lo dejó de cargar.         |
-| forplayerid | El jugador que dejó de cargar al otro jugador.  |
+| Nombre      | Descripción                                    |
+| ----------- | ---------------------------------------------- |
+| playerid    | El jugador al que se lo dejó de cargar.        |
+| forplayerid | El jugador que dejó de cargar al otro jugador. |
 
 ## Devoluciones
 

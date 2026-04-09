@@ -9,15 +9,15 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi bắn từ một vũ khí. Chỉ các vũ khí bắn đạn được hỗ trợ. Chỉ hỗ trợ bắn từ ghế hành khách (không hỗ trợ bắn từ ghế lái, và không hỗ trợ bắn từ sea sparrow / hunter).
 
-| Tên                    | Mô tả                                                                                                          |
-|-------------------------|----------------------------------------------------------------------------------------------------------------|
-| playerid                | ID của người chơi đã bắn vũ khí.                                                                             |
-| WEAPON:weaponid         | ID của [vũ khí](../resources/weaponids) mà người chơi đã bắn.                                                   |
+| Tên                     | Mô tả                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| playerid                | ID của người chơi đã bắn vũ khí.                                                                                         |
+| WEAPON:weaponid         | ID của [vũ khí](../resources/weaponids) mà người chơi đã bắn.                                                            |
 | BULLET_HIT_TYPE:hittype | [Loại](../resources/bullethittypes) của mục tiêu bị bắn (không có, người chơi, phương tiện, hoặc (người chơi)đối tượng). |
-| hitid                   | ID của người chơi, phương tiện hoặc đối tượng bị bắn trúng.                                                   |
-| Float:fX                | Tọa độ X mà viên đạn bắn trúng.                                                                              |
-| Float:fY                | Tọa độ Y mà viên đạn bắn trúng.                                                                              |
-| Float:fZ                | Tọa độ Z mà viên đạn bắn trúng.                                                                              |
+| hitid                   | ID của người chơi, phương tiện hoặc đối tượng bị bắn trúng.                                                              |
+| Float:fX                | Tọa độ X mà viên đạn bắn trúng.                                                                                          |
+| Float:fY                | Tọa độ Y mà viên đạn bắn trúng.                                                                                          |
+| Float:fZ                | Tọa độ Z mà viên đạn bắn trúng.                                                                                          |
 
 ## Giá trị trả về
 

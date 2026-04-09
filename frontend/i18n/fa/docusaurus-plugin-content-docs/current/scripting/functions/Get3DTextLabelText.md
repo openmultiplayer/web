@@ -11,11 +11,11 @@ tags: ["3dtextlabel"]
 
 متن 3D text label رو میگیره.
 
-| نام           | توضیحات                                                    |
-| ------------- | --------------------------------------------------------- |
+| نام           | توضیحات                                                     |
+| ------------- | ----------------------------------------------------------- |
 | Text3D:textid | ID ‌ 3D text label که میخوایم متناش رو بگیریم.              |
-| const text[]  | یه آرایه که متن رو توش ذخیره میکنیم، با reference پاس میشه.  |
-| len           | طول متنی که باید ذخیره بشه.                                |
+| const text[]  | یه آرایه که متن رو توش ذخیره میکنیم، با reference پاس میشه. |
+| len           | طول متنی که باید ذخیره بشه.                                 |
 
 ## مثال‌ها
 
@@ -25,7 +25,7 @@ new Text3D:gMyLabel;
 public OnGameModeInit()
 {
     gMyLabel = Create3DTextLabel("Hello World!", 0x008080FF, 30.0, 40.0, 50.0, 40.0, 0, false);
-    
+
     new text[16];
     Get3DTextLabelText(gMyLabel, text, sizeof(text));
     // `text` میشه 'Hello World!'

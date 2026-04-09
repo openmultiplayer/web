@@ -8,15 +8,15 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador selecciona un objeto después de que SelectObject fue usado.
 
-| Nombre   | Descripción                                                	   |
+| Nombre   | Descripción                                                       |
 | -------- | ----------------------------------------------------------------- |
-| playerid | El ID del jugador que seleccionó un objeto.                	   |
+| playerid | El ID del jugador que seleccionó un objeto.                       |
 | type     | El [tipo](../resources/selectobjecttypes) de objeto seleccionado. |
-| objectid | El ID del objeto seleccionado.                             	   |
-| modelid  | El modelo del objeto seleccionado.                         	   |
-| Float:fX | La posición X del objeto seleccionado.                     	   |
-| Float:fY | La posición Y del objeto seleccionado.                     	   |
-| Float:fZ | La posición Z del objeto seleccionado.                     	   |
+| objectid | El ID del objeto seleccionado.                                    |
+| modelid  | El modelo del objeto seleccionado.                                |
+| Float:fX | La posición X del objeto seleccionado.                            |
+| Float:fY | La posición Y del objeto seleccionado.                            |
+| Float:fZ | La posición Z del objeto seleccionado.                            |
 
 ## Devoluciones
 

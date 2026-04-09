@@ -6,11 +6,11 @@ tags: ["player"]
 
 ## Descripción
 
-Este callback se llama cuando un jugador spawnea. (ej. después de llamar la función SpawnPlayer) 
+Este callback se llama cuando un jugador spawnea. (ej. después de llamar la función SpawnPlayer)
 
-| Nombre   | Descripción                        |
-| -------- | ---------------------------------- |
-| playerid | El ID del jugador que spawneó.     |
+| Nombre   | Descripción                    |
+| -------- | ------------------------------ |
+| playerid | El ID del jugador que spawneó. |
 
 ## Devoluciones
 

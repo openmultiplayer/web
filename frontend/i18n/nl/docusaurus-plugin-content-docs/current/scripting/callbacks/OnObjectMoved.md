@@ -9,9 +9,9 @@ tags: ["object"]
 
 Deze callback wordt aangeroepen wanneer een object is verplaatst na MoveObject (wanneer het stopt met bewegen).
 
-| Naam     | Beschrijving                        |
-| -------- | ----------------------------------- |
-| objectid | Het ID van het object dat bewoog    |
+| Naam     | Beschrijving                     |
+| -------- | -------------------------------- |
+| objectid | Het ID van het object dat bewoog |
 
 ## Returns
 

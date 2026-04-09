@@ -23,7 +23,7 @@ Returns the vehicle health as a float value, or 0.0 if the NPC is not in a vehic
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
-{    
+{
     if (!strcmp(cmdtext, "/checkvehiclehealth", true))
     {
         new npcid = PlayerNPC[playerid];

@@ -9,10 +9,10 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi được stream bởi client của người chơi khác.
 
-| Tên         | Mô tả                                             |
-| ----------- | ------------------------------------------------- |
-| playerid    | ID của người chơi đã được stream.                 |
-| forplayerid | ID của người chơi đã stream người chơi kia vào.   |
+| Tên         | Mô tả                                           |
+| ----------- | ----------------------------------------------- |
+| playerid    | ID của người chơi đã được stream.               |
+| forplayerid | ID của người chơi đã stream người chơi kia vào. |
 
 ## Giá trị trả về
 
@@ -36,7 +36,7 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## Các Callbacks liên quan
 
-Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [OnPlayerStreamOut](OnPlayerStreamOut): Callback này được gọi khi một người chơi bị stream ra khỏi client của người chơi khác.
 - [OnActorStreamIn](OnActorStreamIn): Callback này được gọi khi một diễn viên được stream bởi một người chơi.

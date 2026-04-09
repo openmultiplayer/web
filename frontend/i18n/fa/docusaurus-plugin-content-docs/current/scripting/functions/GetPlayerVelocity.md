@@ -9,9 +9,9 @@ tags: ["player"]
 
 دریافت سرعت (velocity) بازیکن در محورهای X، Y و Z.
 
-| نام     | توضیحات                                                                         |
-| -------- | ----------------------------------------------------------------------------------- |
-| playerid | بازیکن برای دریافت سرعتش.                                                   |
+| نام      | توضیحات                                                                   |
+| -------- | ------------------------------------------------------------------------- |
+| playerid | بازیکن برای دریافت سرعتش.                                                 |
 | &Float:x | متغیر float برای ذخیره سرعت در محور X، به صورت reference پاس داده می‌شود. |
 | &Float:y | متغیر float برای ذخیره سرعت در محور Y، به صورت reference پاس داده می‌شود. |
 | &Float:z | متغیر float برای ذخیره سرعت در محور Z، به صورت reference پاس داده می‌شود. |
@@ -32,7 +32,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             string[128];
 
         GetPlayerVelocity(playerid, x, y, z);
-        
+
         format(string, sizeof(string), "You are going at a velocity of X: %f, Y: %f, Z: %f", x, y, z);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
         return 1;

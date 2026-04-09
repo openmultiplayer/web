@@ -10,7 +10,7 @@ tags: ["player"]
 Cette callback est appelée quand un joueur inflige des dégâts à un actor.
 
 | Nom                   | Description                                  |
-|-----------------------|----------------------------------------------|
+| --------------------- | -------------------------------------------- |
 | `int` playerid        | ID du joueur qui inflige le dégât            |
 | `int` damaged_actorid | ID de l'actor qui reçoit le dégât            |
 | `float` Float:amount  | Montant de la perte en armure/vie (combinés) |
@@ -28,16 +28,16 @@ Cette callback est appelée quand un joueur inflige des dégâts à un actor.
 ```c
 public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    new 
-      string[128], 
+    new
+      string[128],
       attacker[MAX_PLAYER_NAME];
       weaponname[24];
-    
+
     GetPlayerName(playerid, attacker, sizeof (attacker));
     GetWeaponName(weaponid, weaponname, sizeof (weaponname));
 
     format(string, sizeof(string), "%s a infligé %.0f à l'actor id %d, arme: %s", attacker, amount, damaged_actorid, weaponname);
-    
+
     SendClientMessageToAll(0xFFFFFFFF, string);
     return 1;
 }
@@ -62,6 +62,5 @@ Cette callback ne peut pas être appelée si l'actor est invulnérable _(il l'es
 
 ## Callbacks connexes
 
-- [OnActorStreamOut](OnActorStreamOut): Appelé quand un actor n'est plus stream par un joueur. 
+- [OnActorStreamOut](OnActorStreamOut): Appelé quand un actor n'est plus stream par un joueur.
 - [OnPlayerStreamIn](OnPlayerStreamIn): Appelé quand un actor est stream par un joueur.
-

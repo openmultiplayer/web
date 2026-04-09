@@ -45,5 +45,5 @@ public OnPlayerStreamOut(playerid, forplayerid)
 以下回调可能与此回调存在关联：
 
 - [OnPlayerStreamIn](OnPlayerStreamIn): 当玩家被其他客户端流加载时触发
-- [OnActorStreamIn](OnActorStreamIn): 当角色被玩家客户端流加载时触发
+- [OnActorStreamIn](OnActorStreamIn): 当演员被玩家客户端流加载时触发
 - [OnVehicleStreamIn](OnVehicleStreamIn): 当车辆被玩家客户端流加载时触发

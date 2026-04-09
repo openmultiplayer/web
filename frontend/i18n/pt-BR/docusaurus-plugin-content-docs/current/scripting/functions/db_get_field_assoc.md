@@ -11,12 +11,12 @@ tags: ["sqlite"]
 
 Obtém o conteúdo do campo com nome especificado.
 
-| Nome              | Descrição                                |
-| ----------------- | ---------------------------------------- |
-| DBResult:dbresult | O resultado de onde obter os dados      |
-| field[]           | O nome do campo de onde obter os dados  |
-| result[]          | O resultado                              |
-| maxlength         | O comprimento máximo do campo           |
+| Nome              | Descrição                              |
+| ----------------- | -------------------------------------- |
+| DBResult:dbresult | O resultado de onde obter os dados     |
+| field[]           | O nome do campo de onde obter os dados |
+| result[]          | O resultado                            |
+| maxlength         | O comprimento máximo do campo          |
 
 ## Retorno
 

@@ -11,8 +11,8 @@ tags: ["math"]
 
 Geef de arc‑tangens (inverse van tangens) in graden. Door tekenambiguïteit kan de kwadrant niet eenduidig bepaald worden; zie [atan2](../functions/atan2) voor een alternatief met y/x.
 
-| Naam        | Beschrijving                           |
-| ----------- | -------------------------------------- |
+| Naam        | Beschrijving                                  |
+| ----------- | --------------------------------------------- |
 | Float:value | waarde waarvan de arc‑tangens wordt berekend. |
 
 ## Retourneert
@@ -41,5 +41,3 @@ public OnGameModeInit()
 - [asin](../functions/asin)
 - [acos](../functions/acos)
 - [atan2](../functions/atan2)
-
-

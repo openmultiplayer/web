@@ -11,11 +11,11 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler vraagt om aangepaste modellen te downloaden.
 
-| Naam                  | Beschrijving                                                 |
-| --------------------- | ----------------------------------------------------------- |
+| Naam                  | Beschrijving                                                           |
+| --------------------- | ---------------------------------------------------------------------- |
 | playerid              | Het ID van de speler die om de download van aangepaste modellen vroeg. |
-| DOWNLOAD_REQUEST:type | Het [type](../resources/download-requests) van de aanvraag. |
-| crc                   | De CRC-checksum van het aangepaste modelfile.              |
+| DOWNLOAD_REQUEST:type | Het [type](../resources/download-requests) van de aanvraag.            |
+| crc                   | De CRC-checksum van het aangepaste modelfile.                          |
 
 ## Returns
 
@@ -69,5 +69,3 @@ public OnPlayerRequestDownload(playerid, DOWNLOAD_REQUEST:type, crc)
 ## Gerelateerde Resources
 
 - [Download Request Types](../resources/download-requests)
-
-

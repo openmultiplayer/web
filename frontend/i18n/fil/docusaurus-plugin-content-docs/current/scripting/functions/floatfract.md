@@ -11,8 +11,8 @@ tags: ["math", "floating-point"]
 
 Kunin ang fractional na bahagi ng float. Nangangahulugan ito ng halaga ng mga numero pagkatapos ng decimal point.
 
-| Name  | Description                              |
-| ----- | ---------------------------------------- |
+| Name  | Description                                        |
+| ----- | -------------------------------------------------- |
 | value | Ang float para makuha ang fractional na bahagi ng. |
 
 ## Returns

@@ -33,7 +33,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
         pVehicleHealthTD[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, " ");
         PlayerTextDrawShow(playerid, pVehicleHealthTD[playerid]);
 
-        // 设置每秒更新文本绘图的计时器
+        // 设置每秒更新文本绘图的定时器
         pVehicleHealthTimer[playerid] = SetTimerEx("UpdateVehicleHealthTextDraw", 1000, true, "i", playerid);
     }
     if (oldstate == PLAYER_STATE_DRIVER) // 退出驾驶状态

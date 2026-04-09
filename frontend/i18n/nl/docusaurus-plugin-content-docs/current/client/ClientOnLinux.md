@@ -40,10 +40,8 @@ Je kunt `omp-launcher.exe` starten met de vlag `--help` om meer info over de fla
 
 ## Troubleshooting
 
-| Probleem                                     | Oplossing                                                                            |
-| -------------------------------------------- | ------------------------------------------------------------------------------------- |
-| Game crasht tijdens pauzeren                 | Er ontbreekt een font; installeer `allfonts` via winetricks.                          |
-| De inlog prompt wordt niet getoond op een server | Zet de instelling "Prefer system libraries" in Lutris uit/aan en test opnieuw.       |
-| Zwarte doos wordt weergeven en de game wilt niet laden | Mogelijk mis je launch parameters in de CLI. Controleer je startcommando.             |
-
-
+| Probleem                                               | Oplossing                                                                      |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Game crasht tijdens pauzeren                           | Er ontbreekt een font; installeer `allfonts` via winetricks.                   |
+| De inlog prompt wordt niet getoond op een server       | Zet de instelling "Prefer system libraries" in Lutris uit/aan en test opnieuw. |
+| Zwarte doos wordt weergeven en de game wilt niet laden | Mogelijk mis je launch parameters in de CLI. Controleer je startcommando.      |

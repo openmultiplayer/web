@@ -10,7 +10,7 @@ tags: ["player"]
 Esta callback é chamada quando um jogador termina de editar um objeto (EditObject/EditPlayerObject).
 
 | Name                   | Descrição                                                     |
-|------------------------|---------------------------------------------------------------|
+| ---------------------- | ------------------------------------------------------------- |
 | playerid               | O ID do jogador que edtiou um objeto                          |
 | playerobject           | 0 se for global, ou 1 se for um playerobject.                 |
 | objectid               | O ID do objeto que foi editado.                               |

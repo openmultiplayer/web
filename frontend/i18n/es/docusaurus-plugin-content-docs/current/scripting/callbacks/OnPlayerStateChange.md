@@ -8,11 +8,11 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador cambia de estado. Por ejemplo, cuando pasa de ser conductor a estár a pie (bajándose de vehículo).
 
-| Nombre   | Descripción                              |
-| -------- | ---------------------------------------- |
-| playerid | El ID del jugador que cambió de estado.  |
-| newstate | El nuevo estado del jugador.             |
-| oldstate | El estado anterior del jugador.          |
+| Nombre   | Descripción                             |
+| -------- | --------------------------------------- |
+| playerid | El ID del jugador que cambió de estado. |
+| newstate | El nuevo estado del jugador.            |
+| oldstate | El estado anterior del jugador.         |
 
 Vea [Player States](../resources/playerstates) para ver una lista de todos los estados de jugador disponibles.
 

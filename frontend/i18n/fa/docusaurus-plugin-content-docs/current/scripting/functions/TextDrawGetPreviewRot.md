@@ -11,13 +11,13 @@ tags: ["textdraw"]
 
 چرخش و zoom یک textdraw preview سه‌بعدی رو برمی‌گردونه.
 
-| نام              | توضیحات                                                                         |
-| ---------------- | ------------------------------------------------------------------------------- |
-| Text:textid      | ID textdraw ای که می‌خوای چرخش و zoom اش رو بگیری.                             |
+| نام              | توضیحات                                                                            |
+| ---------------- | ---------------------------------------------------------------------------------- |
+| Text:textid      | ID textdraw ای که می‌خوای چرخش و zoom اش رو بگیری.                                 |
 | &Float:rotationX | متغیر float که مختصات rotationX توش ذخیره می‌شه، به صورت reference پاس داده می‌شه. |
 | &Float:rotationY | متغیر float که مختصات rotationY توش ذخیره می‌شه، به صورت reference پاس داده می‌شه. |
 | &Float:rotationZ | متغیر float که مختصات rotationZ توش ذخیره می‌شه، به صورت reference پاس داده می‌شه. |
-| &Float:zoom      | متغیر float که مقدار zoom توش ذخیره می‌شه، به صورت reference پاس داده می‌شه.           |
+| &Float:zoom      | متغیر float که مقدار zoom توش ذخیره می‌شه، به صورت reference پاس داده می‌شه.       |
 
 ## مثال‌ها
 
@@ -33,7 +33,7 @@ public OnGameModeInit()
     TextDrawTextSize(gMyTextdraw, 40.0, 40.0);
     TextDrawSetPreviewModel(gMyTextdraw, 411);
     TextDrawSetPreviewRot(gMyTextdraw, -10.0, 0.0, -20.0, 1.0);
-    
+
     new Float:rotationX, Float:rotationY, Float:rotationZ, Float:zoom;
     TextDrawGetPreviewRot(gMyTextdraw, rotationX, rotationY, rotationZ, zoom);
     // rotationX = -10.0

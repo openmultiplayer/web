@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 چشمک زدن player gangzone رو متوقف می‌کنه.
 
-| نام         | توضیحات                                                          |
-| ----------- | ---------------------------------------------------------------- |
-| playerid    | آی‌دی بازیکنی که player gangzone بهش متصل هست.                    |
-| zoneid      | آی‌دی player gangzone که چشمک زدنش باید متوقف بشه.                |
+| نام      | توضیحات                                            |
+| -------- | -------------------------------------------------- |
+| playerid | آی‌دی بازیکنی که player gangzone بهش متصل هست.     |
+| zoneid   | آی‌دی player gangzone که چشمک زدنش باید متوقف بشه. |
 
 ## مقادیر بازگشتی
 
@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
     // Gangzone ro be player namayesh midim
     PlayerGangZoneShow(playerid, gGangZoneID[playerid]);
 
-    // Player gangzone ro shoru be cheshmak zadan mikonim    
+    // Player gangzone ro shoru be cheshmak zadan mikonim
     PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0xFF00FFFF);
 }
 

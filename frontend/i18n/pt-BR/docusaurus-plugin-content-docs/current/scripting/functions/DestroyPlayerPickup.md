@@ -1,5 +1,4 @@
 ---
-
 title: DestroyPlayerPickup
 sidebar_label: DestroyPlayerPickup
 description: Destrói um player-pickup criado com CreatePlayerPickup.
@@ -39,9 +38,9 @@ DestroyPlayerPickup(playerid, PlayerPickupArmour[playerid]);
 
 ## Funções Relacionadas
 
-* [CreatePlayerPickup](CreatePlayerPickup): Cria um pickup visível apenas para um jogador.
-* [IsValidPlayerPickup](IsValidPlayerPickup): Verifica se um player-pickup é válido.
+- [CreatePlayerPickup](CreatePlayerPickup): Cria um pickup visível apenas para um jogador.
+- [IsValidPlayerPickup](IsValidPlayerPickup): Verifica se um player-pickup é válido.
 
 ## Callbacks Relacionados
 
-* [OnPlayerPickUpPlayerPickup](../callbacks/OnPlayerPickUpPlayerPickup): Chamado quando um jogador pega um player-pickup.
+- [OnPlayerPickUpPlayerPickup](../callbacks/OnPlayerPickUpPlayerPickup): Chamado quando um jogador pega um player-pickup.

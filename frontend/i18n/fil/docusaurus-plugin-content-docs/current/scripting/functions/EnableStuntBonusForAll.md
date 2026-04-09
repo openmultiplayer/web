@@ -9,8 +9,8 @@ tags: []
 
 Pinapagana o hindi pinapagana ang mga stunt bonus para sa lahat ng manlalaro. Kung naka-enable, makakatanggap ang mga manlalaro ng monetary reward kapag nagsasagawa ng stunt sa isang sasakyan (hal. wheelie).
 
-| Name   | Description                                     |
-| ------ | ----------------------------------------------- |
+| Name   | Description                                                          |
+| ------ | -------------------------------------------------------------------- |
 | enable | 1 para paganahin ang mga stunt bonus o 0 para i-disable ang mga ito. |
 
 ## Returns

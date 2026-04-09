@@ -186,7 +186,7 @@ Većina sadržaja je premještena, ali ako pronađete stranicu koja fali, ovdje 
 
 3. Kopirajte unutrašnji HTML tog elementa
 
-    ![image](https://assets.open.mp/assets/images/contributing/8c7c75cfabad.png)
+   ![image](https://assets.open.mp/assets/images/contributing/8c7c75cfabad.png)
 
    Sada imate _samo_ HTML kod pravog _sadržaja_ stranice, stvari koje nas zanimaju, i možete ih konvertovati u Markdown.
 

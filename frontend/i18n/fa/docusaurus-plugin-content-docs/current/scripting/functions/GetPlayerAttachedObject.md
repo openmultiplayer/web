@@ -11,23 +11,23 @@ tags: ["player", "object", "attachment"]
 
 داده‌های آبجکت متصل شده به بازیکن را با استفاده از ایندکس دریافت می‌کند.
 
-| نام              | توضیحات                                     |
-| ---------------- | ------------------------------------------- |
+| نام              | توضیحات                                         |
+| ---------------- | ----------------------------------------------- |
 | playerid         | شناسه بازیکنی که می‌خواهید داده‌هایش را بگیرید. |
-| index            | ایندکس (اسلات) آبجکت (0-9).                 |
-| &modelid         | مدل آبجکت متصل شده.                         |
-| &bone            | استخوان آبجکت متصل شده.                     |
-| &Float:offsetX   | جابه‌جایی محور X آبجکت.                      |
-| &Float:offsetY   | جابه‌جایی محور Y آبجکت.                      |
-| &Float:offsetZ   | جابه‌جایی محور Z آبجکت.                      |
-| &Float:rotationX | چرخش محور X آبجکت.                         |
-| &Float:rotationY | چرخش محور Y آبجکت.                         |
-| &Float:rotationZ | چرخش محور Z آبجکت.                         |
-| &Float:scaleX    | مقیاس محور X آبجکت.                        |
-| &Float:scaleY    | مقیاس محور Y آبجکت.                        |
-| &Float:scaleZ    | مقیاس محور Z آبجکت.                        |
-| &materialColour1 | رنگ متریال 1 آبجکت.                        |
-| &materialColour2 | رنگ متریال 2 آبجکت.                        |
+| index            | ایندکس (اسلات) آبجکت (0-9).                     |
+| &modelid         | مدل آبجکت متصل شده.                             |
+| &bone            | استخوان آبجکت متصل شده.                         |
+| &Float:offsetX   | جابه‌جایی محور X آبجکت.                         |
+| &Float:offsetY   | جابه‌جایی محور Y آبجکت.                         |
+| &Float:offsetZ   | جابه‌جایی محور Z آبجکت.                         |
+| &Float:rotationX | چرخش محور X آبجکت.                              |
+| &Float:rotationY | چرخش محور Y آبجکت.                              |
+| &Float:rotationZ | چرخش محور Z آبجکت.                              |
+| &Float:scaleX    | مقیاس محور X آبجکت.                             |
+| &Float:scaleY    | مقیاس محور Y آبجکت.                             |
+| &Float:scaleZ    | مقیاس محور Z آبجکت.                             |
+| &materialColour1 | رنگ متریال 1 آبجکت.                             |
+| &materialColour2 | رنگ متریال 2 آبجکت.                             |
 
 ## مقدار بازگشتی
 
@@ -36,12 +36,12 @@ tags: ["player", "object", "attachment"]
 ## مثال‌ها
 
 ```c
-new 
-	modelid, 
-	bone, 
-	Float:offsetX, Float:offsetY, Float:offsetZ, 
-	Float:rotationX, Float:rotationY, Float:rotationZ, 
-	Float:scaleX, Float:scaleY, Float:scaleZ, 
+new
+	modelid,
+	bone,
+	Float:offsetX, Float:offsetY, Float:offsetZ,
+	Float:rotationX, Float:rotationY, Float:rotationZ,
+	Float:scaleX, Float:scaleY, Float:scaleZ,
 	materialColour1, materialColour2;
 
 // داده‌های متصل شده در ایندکس 3 را دریافت کن

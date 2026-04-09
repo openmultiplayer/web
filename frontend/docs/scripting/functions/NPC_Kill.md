@@ -11,11 +11,11 @@ tags: ["npc", "death", "kill"]
 
 Kills an NPC with a specific weapon/reason.
 
-| Name     | Description                                                                  |
-| -------- | ---------------------------------------------------------------------------- |
-| npcid    | The ID of the NPC to kill                                                    |
+| Name     | Description                                                                             |
+| -------- | --------------------------------------------------------------------------------------- |
+| npcid    | The ID of the NPC to kill                                                               |
 | killerid | The ID of the player who killed the NPC (optional, use INVALID_PLAYER_ID for no killer) |
-| reason   | The weapon ID or reason for death (default: 255 for suicide)                 |
+| reason   | The weapon ID or reason for death (default: 255 for suicide)                            |
 
 ## Returns
 

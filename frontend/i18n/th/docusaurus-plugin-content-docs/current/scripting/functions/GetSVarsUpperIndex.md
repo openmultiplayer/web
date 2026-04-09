@@ -12,7 +12,6 @@ Each SVar (server-variable) has its own unique identification number for lookup,
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

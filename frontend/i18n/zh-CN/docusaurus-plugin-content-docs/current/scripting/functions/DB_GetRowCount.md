@@ -24,31 +24,22 @@ tags: ["sqlite"]
 
 // ...
 
-Examples_ListNames(DB:dbConnectionHandle)
+Examples_CountVehicles(DB:dbConnectionHandle)
 {
     // 执行数据库查询
-    new DBResult:db_result_set = DB_ExecuteQuery(dbConnectionHandle, "SELECT `name` FROM `examples`");
+    new DBResult:db_result_set = DB_ExecuteQuery("SELECT `uid` FROM `vehicles`");
 
+    // 验证数据库结果集句柄有效性
     if (db_result_set)
     {
-        // 预分配结果存储空间
-        new result[256];
-
-        // 获取总行数
         new row_count = DB_GetRowCount(db_result_set);
-        printf("查询结果包含 %d 行数据", row_count);
-
-        // 遍历结果集
-        do
-        {
-            // 通过字段名称获取数据
-            DB_GetFieldStringByName(db_result_set, "name", result, sizeof(result));
-        }
-        while (DB_SelectNextRow(db_result_set)); // 跳转至下一行
 
         // 释放结果集
         DB_FreeResultSet(db_result_set);
+
+        return rowcount;
     }
+    return 0;
 }
 ```
 
@@ -74,7 +65,7 @@ public OnGameModeInit()
     if (gDBConnectionHandle)
     {
         print("成功连接数据库 \"example.db\"");
-        Examples_ListNames(gDBConnectionHandle);
+        printf("数据库中存储了 %i 辆车。", Examples_CountVehicles(gDBConnectionHandle));
     }
     else
     {

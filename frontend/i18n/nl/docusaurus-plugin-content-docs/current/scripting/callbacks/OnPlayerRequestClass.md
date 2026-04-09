@@ -9,9 +9,9 @@ tags: ["player", "class"]
 
 Deze callback wordt aangeroepen wanneer een speler van klasse wisselt in de klasse-selectie (en wanneer klasse-selectie voor het eerst verschijnt).
 
-| Naam     | Beschrijving                                                                                           |
-| -------- | ----------------------------------------------------------------------------------------------------- |
-| playerid | Het ID van de speler die van klasse wisselde.                                                          |
+| Naam     | Beschrijving                                                                                                      |
+| -------- | ----------------------------------------------------------------------------------------------------------------- |
+| playerid | Het ID van de speler die van klasse wisselde.                                                                     |
 | classid  | Het ID van de huidige klasse die wordt bekeken (teruggegeven door [AddPlayerClass](../functions/AddPlayerClass)). |
 
 ## Returns

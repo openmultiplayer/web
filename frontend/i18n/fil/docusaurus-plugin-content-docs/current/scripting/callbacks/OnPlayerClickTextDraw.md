@@ -14,10 +14,10 @@ Ang callback na ito ay natatawag kapag ang player ay pumindot sa isang textdraw 
 | playerid  | The ID of the player that clicked on the textdraw.                            |
 | clickedid | The ID of the clicked textdraw. INVALID_TEXT_DRAW if selection was cancelled. |
 
-| Pangalan  | Deskripsyon                                                                   |
-| --------- | ----------------------------------------------------------------------------- |
-| playerid  | Ang ID ng player na pumindot sa textdraw.                                     |
-| clickedid | Ang ID ng textdraw na pinindot ng player. INVALID_TEXT_DRAW kapag cinancel.   |
+| Pangalan  | Deskripsyon                                                                 |
+| --------- | --------------------------------------------------------------------------- |
+| playerid  | Ang ID ng player na pumindot sa textdraw.                                   |
+| clickedid | Ang ID ng textdraw na pinindot ng player. INVALID_TEXT_DRAW kapag cinancel. |
 
 ## Returns
 

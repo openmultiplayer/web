@@ -15,10 +15,10 @@ Note que o valor y é o primeiro parâmetro e o valor x é o segundo parâmetro.
 
 Obter o valor inverso multivalorado de uma tangente em graus. Em trigonometria, arco tangente é a operação inversa da tangente. Para calcular o valor, a função leva em conta o sinal de ambos os argumentos para determinar o quadrante.
 
-| Nome    | Descrição                                                     |
-| ------- | ------------------------------------------------------------- |
-| Float:y | valor representando a proporção da coordenada y.              |
-| Float:x | valor representando a proporção da coordenada x.              |
+| Nome    | Descrição                                        |
+| ------- | ------------------------------------------------ |
+| Float:y | valor representando a proporção da coordenada y. |
+| Float:x | valor representando a proporção da coordenada x. |
 
 ## Retorno
 

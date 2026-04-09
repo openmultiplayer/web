@@ -11,8 +11,8 @@ tags: ["vehicle"]
 
 Pobiera najwyższe seatid w pojeździe.
 
-| Name      | Description        |
-| --------- | ------------------ |
+| Name    | Description        |
+| ------- | ------------------ |
 | modelid | ID modelu pojazdu. |
 
 ## Wartości zwrotne

@@ -9,9 +9,9 @@ tags: []
 
 Dobij cjelobrojnu (integer) vrijednost varijable iz konzole.
 
-| Ime             | Deskripcija                                           |
-| --------------- | ----------------------------------------------------- |
-| const varname[] | Ime integer varijable za dobijanje vrijednosti.       |
+| Ime             | Deskripcija                                     |
+| --------------- | ----------------------------------------------- |
+| const varname[] | Ime integer varijable za dobijanje vrijednosti. |
 
 ## Returns
 

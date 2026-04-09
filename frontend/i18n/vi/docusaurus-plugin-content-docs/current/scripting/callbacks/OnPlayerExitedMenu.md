@@ -9,9 +9,9 @@ tags: ["player", "menu"]
 
 Callback này được gọi khi một người chơi thoát khỏi menu.
 
-| Tên        | Mô Tả                                    |
-| ---------- | ---------------------------------------- |
-| playerid   | ID của người chơi đã thoát khỏi menu     |
+| Tên      | Mô Tả                                |
+| -------- | ------------------------------------ |
+| playerid | ID của người chơi đã thoát khỏi menu |
 
 ## Trả Về
 

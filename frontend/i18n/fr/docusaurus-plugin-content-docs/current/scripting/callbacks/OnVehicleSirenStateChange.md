@@ -11,11 +11,11 @@ tags: ["vehicle"]
 
 Cette callback est appelée lorsque l'état de la sirène d'un véhicule change.
 
-| Nom             | Description                                                             |
-| --------------- | ----------------------------------------------------------------------- |
-| `int` playerid  | L'ID du joueur qui a déclenché la sirène (conducteur)                   |
-| `int` vehicleid | L'ID du véhicule dont l'état de la sirène a changé.                     |
-| `int` newstate  | **0** si la sirène a été désactivée, **1** si la sirène a été activée.  |
+| Nom             | Description                                                            |
+| --------------- | ---------------------------------------------------------------------- |
+| `int` playerid  | L'ID du joueur qui a déclenché la sirène (conducteur)                  |
+| `int` vehicleid | L'ID du véhicule dont l'état de la sirène a changé.                    |
+| `int` newstate  | **0** si la sirène a été désactivée, **1** si la sirène a été activée. |
 
 ## Valeur de retour
 

@@ -9,9 +9,9 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi nhặt pickup được tạo ra với [CreatePickup](../functions/CreatePickup).
 
-| Tên      | Mô Tả                                                      |
-| -------- | ---------------------------------------------------------- |
-| playerid | ID của người chơi đã nhặt pickup.                         |
+| Tên      | Mô Tả                                                               |
+| -------- | ------------------------------------------------------------------- |
+| playerid | ID của người chơi đã nhặt pickup.                                   |
 | pickupid | ID của pickup, trả về bởi [CreatePickup](../functions/CreatePickup) |
 
 ## Trả Về

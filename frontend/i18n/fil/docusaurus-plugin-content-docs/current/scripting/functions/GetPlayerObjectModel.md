@@ -11,10 +11,10 @@ tags: ["player"]
 
 Kunin ang model ID ng isang player-object.
 
-| Name     | Description                                                   |
-| -------- | ------------------------------------------------------------- |
-| playerid | Ang ID ng player na player-object para makuha ang model       |
-| objectid | Ang ID ng player-object kung saan kukunin ang model ID        |
+| Name     | Description                                             |
+| -------- | ------------------------------------------------------- |
+| playerid | Ang ID ng player na player-object para makuha ang model |
+| objectid | Ang ID ng player-object kung saan kukunin ang model ID  |
 
 ## Returns
 

@@ -11,11 +11,11 @@ tags: ["player", "gangzone", "playergangzone"]
 
 چشمک زدن player gangzone را شروع می‌کند.
 
-| نام         | توضیحات                                                      |
-| ----------- | ----------------------------------------------------------- |
-| playerid    | ID بازیکنی که player gangzone به آن متصل است.              |
-| zoneid      | ID player gangzone برای شروع چشمک زدن.                     |
-| flashColour | رنگی که player gangzone با آن چشمک خواهد زد.                |
+| نام         | توضیحات                                       |
+| ----------- | --------------------------------------------- |
+| playerid    | ID بازیکنی که player gangzone به آن متصل است. |
+| zoneid      | ID player gangzone برای شروع چشمک زدن.        |
+| flashColour | رنگی که player gangzone با آن چشمک خواهد زد.  |
 
 ## مقدار بازگشتی
 
@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
     // Show the gangzone player
     PlayerGangZoneShow(playerid, gGangZoneID[playerid]);
 
-    // Start player gangzone flash    
+    // Start player gangzone flash
     PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0xFF00FFFF);
 }
 ```

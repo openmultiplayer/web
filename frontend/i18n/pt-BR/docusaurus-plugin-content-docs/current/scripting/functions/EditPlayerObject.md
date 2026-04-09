@@ -9,8 +9,8 @@ tags: ["player"]
 
 Permite que um jogador edite um objeto criado para ele (objeto de jogador) ajustando sua posição e rotação usando uma interface gráfica e o mouse.
 
-| Parâmetro | Descrição |
-|-----------|-----------|
+| Parâmetro | Descrição                             |
+| --------- | ------------------------------------- |
 | playerid  | ID do jogador que irá editar o objeto |
 | objectid  | ID do objeto de jogador a ser editado |
 

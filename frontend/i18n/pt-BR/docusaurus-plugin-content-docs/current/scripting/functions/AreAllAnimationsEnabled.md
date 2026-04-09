@@ -24,6 +24,7 @@ if (AreAllAnimationsEnabled())
     // Fazer algo
 }
 ```
+
 ## Funções Relacionadas
 
 - [EnableAllAnimations](EnableAllAnimations): Permite o uso das animações ausentes em algumas versões.

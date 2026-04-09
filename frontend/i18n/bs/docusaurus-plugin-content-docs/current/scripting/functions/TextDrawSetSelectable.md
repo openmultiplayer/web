@@ -10,7 +10,7 @@ tags: ["textdraw"]
 Postavlja da li se textdraw može selektovati (kliknuti) ili ne.
 
 | Ime      | Deskripcija                                            |
-|----------|--------------------------------------------------------|
+| -------- | ------------------------------------------------------ |
 | text     | ID textdrawa za postaviti da li se može selektovati.   |
 | bool:set | 'true' može se selektovati, ili 'false' da se ne može. |
 

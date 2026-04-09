@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Essa callback é executada quando um veículo é modificado.
 
-| Nome        | Descrição                                               |
-| ----------- | ------------------------------------------------------- |
-| playerid    | ID do motorista do veículo.                             |
-| vehicleid   | ID do veículo modificado.                               |
-| componentid | ID do componente que foi adicionado ao veículo.         |
+| Nome        | Descrição                                       |
+| ----------- | ----------------------------------------------- |
+| playerid    | ID do motorista do veículo.                     |
+| vehicleid   | ID do veículo modificado.                       |
+| componentid | ID do componente que foi adicionado ao veículo. |
 
 ## Retornos
 
@@ -46,7 +46,6 @@ Essa callback NÃO É EXECUTADA ao utilizar a função AddVehicleComponent.
 ## Funções Relacionadas
 
 - [AddVehicleComponent](../functions/AddVehicleComponent): Adiciona um componente ao veículo.
-
 
 ## Callbacks Relacionadas
 

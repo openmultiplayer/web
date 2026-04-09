@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Set plat nomor kendaraan.
 
-| Nama        | Deskripsi                                            |
-| ----------- | ------------------------------------------------------ |
-| vehicleid   | ID kendaraan yang ingin di ubah plat nomornya      |
-| numberplate | Teks yang harus ditampilkan pada plat nomor. |
+| Nama        | Deskripsi                                     |
+| ----------- | --------------------------------------------- |
+| vehicleid   | ID kendaraan yang ingin di ubah plat nomornya |
+| numberplate | Teks yang harus ditampilkan pada plat nomor.  |
 
 ## Returns
 

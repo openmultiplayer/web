@@ -9,9 +9,9 @@ tags: ["menu"]
 
 Sinisira ang tinukoy na menu.
 
-| Name   | Description            |
-| ------ | ---------------------- |
-| menuid | Ang menu ID ng sisirain|
+| Name   | Description             |
+| ------ | ----------------------- |
+| menuid | Ang menu ID ng sisirain |
 
 ## Returns
 

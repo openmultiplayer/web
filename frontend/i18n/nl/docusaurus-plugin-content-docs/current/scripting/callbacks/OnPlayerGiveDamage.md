@@ -9,13 +9,13 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler schade toebrengt aan een andere speler.
 
-| Naam            | Beschrijving                                                |
-| --------------- | ---------------------------------------------------------- |
-| playerid        | Het ID van de speler die schade toebracht.                 |
-| damagedid       | Het ID van de speler die schade ontving.                   |
+| Naam            | Beschrijving                                                      |
+| --------------- | ----------------------------------------------------------------- |
+| playerid        | Het ID van de speler die schade toebracht.                        |
+| damagedid       | Het ID van de speler die schade ontving.                          |
 | Float:amount    | De hoeveelheid health/armor die damagedid verloor (gecombineerd). |
-| WEAPON:weaponid | De reden/het wapen dat de schade veroorzaakte.             |
-| bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat geraakt werd. |
+| WEAPON:weaponid | De reden/het wapen dat de schade veroorzaakte.                    |
+| bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat geraakt werd.      |
 
 ## Returns
 

@@ -10,7 +10,7 @@ tags: ["player"]
 Acest callback este apelat atunci când un jucător dă daune altui jucător.
 
 | Nume            | Descriere                                                         |
-|-----------------|-------------------------------------------------------------------|
+| --------------- | ----------------------------------------------------------------- |
 | playerid        | ID-ul jucătorului care a provocat daune.                          |
 | damagedid       | ID-ul jucătorului care a primit daune.                            |
 | Float:amount    | Cantitatea de sănătate/armură deteriorată s-a pierdut (combinat). |

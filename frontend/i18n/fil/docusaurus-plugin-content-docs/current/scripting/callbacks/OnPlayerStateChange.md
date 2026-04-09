@@ -9,11 +9,11 @@ tags: ["player"]
 
 Ang callback na ito ay tinatawag kapag ang isang player ay nagbago ng estado. Halimbawa, kapag ang isang manlalaro ay nagbago mula sa pagiging driver ng isang sasakyan patungo sa pagiging on-foot.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
+| Name     | Description                            |
+| -------- | -------------------------------------- |
 | playerid | Ang ID ng player na nagbago ng estado. |
-| newstate | Ang bagong estado ng manlalaro.                  |
-| oldstate | Ang dating estado ng manlalaro.             |
+| newstate | Ang bagong estado ng manlalaro.        |
+| oldstate | Ang dating estado ng manlalaro.        |
 
 Sumangguni sa [Player States](../resources/playerstates) para sa listahan ng lahat ng available na estado ng manlalaro.
 

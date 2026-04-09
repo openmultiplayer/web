@@ -8,13 +8,13 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador sufre daño.
 
-| Nombre          | Descripción                                                                                                             |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------|
-| playerid        | El ID del jugador que sufrió daño.                                                                                      |
-| issuerid        | El ID del jugador que causó el daño. O INVALID_PLAYER_ID si fue él mismo.                                               |
-| Float:amount    | La cantidad de daño que sufrió el jugador (salud y chaleco combinados).                                                 |
-| WEAPON:weaponid | El ID del arma/origen del daño.                                                                                         |
-| bodypart        | La parte del cuerpo del impacto. |
+| Nombre          | Descripción                                                               |
+| --------------- | ------------------------------------------------------------------------- |
+| playerid        | El ID del jugador que sufrió daño.                                        |
+| issuerid        | El ID del jugador que causó el daño. O INVALID_PLAYER_ID si fue él mismo. |
+| Float:amount    | La cantidad de daño que sufrió el jugador (salud y chaleco combinados).   |
+| WEAPON:weaponid | El ID del arma/origen del daño.                                           |
+| bodypart        | La parte del cuerpo del impacto.                                          |
 
 ## Devoluciones
 
@@ -63,7 +63,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 :::tip
 
-El 'weaponid' va a retornar 37 (lanzallamas) de cualquier origen de fuego (ej. molotov, 18), 'weaponid' retornará 51 ante cualquier arma que cree una explosión (ej. lanzamisiles, granada). playerid es el único que puede llamar este callback. La cantidad de daño es siempre el daño máximo que el weaponid puede hacer, incluso cuando la vida restante es menor que el daño máximo de esta. Entonces cuando un jugador tiene 100.0 de salud y recibe un tiro con una Desert Eagle que tiene un valor de daño de 46.2, tomará 3 disparos para matar a ese jugador. Los 3 disparos mostrarán una cantidad de daño de 46.2 sin importar que cuando el último disparo impacta, el jugador tiene sólo 7.6 de salud restante. 
+El 'weaponid' va a retornar 37 (lanzallamas) de cualquier origen de fuego (ej. molotov, 18), 'weaponid' retornará 51 ante cualquier arma que cree una explosión (ej. lanzamisiles, granada). playerid es el único que puede llamar este callback. La cantidad de daño es siempre el daño máximo que el weaponid puede hacer, incluso cuando la vida restante es menor que el daño máximo de esta. Entonces cuando un jugador tiene 100.0 de salud y recibe un tiro con una Desert Eagle que tiene un valor de daño de 46.2, tomará 3 disparos para matar a ese jugador. Los 3 disparos mostrarán una cantidad de daño de 46.2 sin importar que cuando el último disparo impacta, el jugador tiene sólo 7.6 de salud restante.
 
 :::
 

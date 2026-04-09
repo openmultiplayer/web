@@ -11,9 +11,9 @@ tags: ["player", "gangzone"]
 
 Callback này được gọi khi một người chơi rời khỏi gangzone của người chơi.
 
-| Tên      | Mô Tả                                                    |
-| -------- | -------------------------------------------------------- |
-| playerid | ID của người chơi đã rời khỏi gangzone của người chơi. |
+| Tên      | Mô Tả                                                     |
+| -------- | --------------------------------------------------------- |
+| playerid | ID của người chơi đã rời khỏi gangzone của người chơi.    |
 | zoneid   | ID của gangzone của người chơi mà người chơi đã rời khỏi. |
 
 ## Trả Về

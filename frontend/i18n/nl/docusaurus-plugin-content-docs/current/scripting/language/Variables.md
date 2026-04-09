@@ -80,5 +80,3 @@ Backslash-escapes: `\n`, `\r`, `\\`, `\'`, `\"`, `\0`, `\xNN`, `\NNN`.
 ### Tags (kort)
 
 Tags zoals `Float:` en `bool:` beschrijven de bedoeling en helpen fouten voorkomen. Gebruik de juiste tag op de juiste plaats om tag mismatch te vermijden.
-
-

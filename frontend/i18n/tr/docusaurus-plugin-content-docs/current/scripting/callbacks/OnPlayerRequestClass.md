@@ -9,14 +9,14 @@ tags: ["player"]
 
 Fonksiyon, bir oyuncu sınıf seçiminde sınıfını değiştirdiğinde (ve sınıf seçimi ilk göründüğünde) çağrılır.
 
-| Parametre | Açıklama                                                                    |
-| --------- | --------------------------------------------------------------------------- |
-| playerid  | Sınıfını değiştiren oyuncunun ID'si.                                        |
-| classid   | Görüntülenmekte olan sınıfın ID'si (AddPlayerClass tarafından döndürülür).  |
+| Parametre | Açıklama                                                                   |
+| --------- | -------------------------------------------------------------------------- |
+| playerid  | Sınıfını değiştiren oyuncunun ID'si.                                       |
+| classid   | Görüntülenmekte olan sınıfın ID'si (AddPlayerClass tarafından döndürülür). |
 
 ## Çalışınca Vereceği Sonuçlar
 
-Filterscript komutlarında her zaman ilk olarak çağrılır. 
+Filterscript komutlarında her zaman ilk olarak çağrılır.
 
 ## Örnek
 

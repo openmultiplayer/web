@@ -29,10 +29,9 @@ Existen ciertos casos en el que el menú del modo un jugador será mostrado, per
 
 ### Obtengo el error "Unacceptable Nickname" cuando conecto a un servidor.
 
-
 Asegúrate de que no estas usando ningun carácter no permitido (solo puedes utilizar números del 0-9, letras de la A a la Z, \[\], (), \$, @, ., \_ y =), además de asegurarte que tu nombre no supera los 20 carácteres. Esto también podría ser causado cuando un jugador está conectado en el servidor con el mismo nombre que tú (que puede pasar si reconectas a un servidor de manera rápida antes de que el servidor registre tu desconexión). Un servidor de SA:MP corriendo en Windows durante mas de 50 días seguidos puede también ocasionar este bug.
 
-### La pantalla se queda en "Connecting to  IP:Port..."
+### La pantalla se queda en "Connecting to IP:Port..."
 
 Esto puede ser causado porque el servidor no esta encendido. Si tienes este error con mas de 1 servidor y estas seguro que estos servidores no están apagados, deshabilita tu cortafuegos y comprueba si el error persiste. Caso contrario, reconfigura tu cortafuegos para aceptar el tráfico entrante-saliente de SA:MP. Puede ser también que estes ejecutando una versión obsoleta de SA:MP - Puedes encontrar la versión más reciente [Aquí](https://sa-mp.mp/downloads/).
 

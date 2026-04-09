@@ -99,10 +99,10 @@ description: File konfigurasi server.
 
 ## Kompensasi lag
 
-| Pengaturan  | Tipe   | Nilai awal | Read-only | Rule  | Efek                                                                                                                                                                                                                                                                                                                                               |
-| ----------- | ------ | ---------- | --------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pengaturan  | Tipe   | Nilai awal | Read-only | Rule  | Efek                                                                                                                                                                                                                   |
+| ----------- | ------ | ---------- | --------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | lagcompmode | int    | 1          | Ya        | Tidak | 0: Mematikan kompensasi lag sepenuhnya.<br /><br />1: Menyalakan kompensasi lag sepenuhnya.<br /><br />2: Menyalakan kompensasi lag hanya untuk posisi. Ini artinya lag pada rotasi pemain tidak akan dikompensasikan. |
-| lagcomp     | string | On         | Ya        | Ya    | Kemungkinan diatur secara otomatis ke **On** atau **Off**, tergantung pada pengaturan **lagcompmode**.                                                                                                                                                                                                                                             |
+| lagcomp     | string | On         | Ya        | Ya    | Kemungkinan diatur secara otomatis ke **On** atau **Off**, tergantung pada pengaturan **lagcompmode**.                                                                                                                 |
 
 ## Model kustom
 

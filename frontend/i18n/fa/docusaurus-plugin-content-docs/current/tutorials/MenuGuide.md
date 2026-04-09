@@ -27,14 +27,14 @@ teleportmenu = CreateMenu("Teleportmenu", 2, 200.0, 100.0, 150.0, 150.0);
 
 **پارامترها:**
 
-| پارامتر        | تعیین‌کننده                                                    |
-| -------------- | --------------------------------------------------------------- |
-| title          | عنوان منو                                                       |
-| columns        | تعداد ستون‌های استفاده شده (حداکثر 2 است)                       |
-| Float:x        | موقعیت عمودی منو روی صفحه (چپ به راست)                          |
-| Float:y        | موقعیت افقی منو روی صفحه (بالا و پایین)                          |
-| Float:col1width| عرض ستون اول                                                    |
-| Float:col2width| عرض ستون دوم                                                    |
+| پارامتر         | تعیین‌کننده                               |
+| --------------- | ----------------------------------------- |
+| title           | عنوان منو                                 |
+| columns         | تعداد ستون‌های استفاده شده (حداکثر 2 است) |
+| Float:x         | موقعیت عمودی منو روی صفحه (چپ به راست)    |
+| Float:y         | موقعیت افقی منو روی صفحه (بالا و پایین)   |
+| Float:col1width | عرض ستون اول                              |
+| Float:col2width | عرض ستون دوم                              |
 
 ## اضافه کردن برخی آیتم‌های منو
 
@@ -47,7 +47,7 @@ AddMenuItem(teleportmenu, 0, "SF");
 AddMenuItem(teleportmenu, 0, "SF");
 AddMenuItem(teleportmenu, 0, "LV");
 AddMenuItem(teleportmenu, 0, "LV");
- 
+
 AddMenuItem(teleportmenu, 1, "Grove Street");
 AddMenuItem(teleportmenu, 1, "Starfish Tower");
 AddMenuItem(teleportmenu, 1, "Wheel Arch Angels");

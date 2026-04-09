@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Ang callback na ito ay tinatawag kapag ang NPC ay nadiskonekta sa server.
 
-| Name         | Description                                             |
-| ------------ | ------------------------------------------------------- |
-| reason[]     | Ang dahilan kung bakit nadiskonekta ang bot sa server   |
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
+| reason[] | Ang dahilan kung bakit nadiskonekta ang bot sa server |
 
 ## Examples
 

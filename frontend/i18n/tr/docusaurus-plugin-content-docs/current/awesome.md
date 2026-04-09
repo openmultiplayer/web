@@ -16,7 +16,6 @@ description: SA-MP geliştirmeleri için kullanışlı araçlar, kütüphaneler,
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Visual Studio Code için Pawn otomatik tamamlamaları.
 - **[SA-MP Bölge Düzenleyici](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Bölge ve benzeri oluşturmak için Bölge Düzenleyici.
 - **[SA-MP Harita Düzenleyici](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - Popüler SA:MP Harita Düzenleyici.
-- **[open.mp Sunucu Tarayıcısı](https://github.com/adib-yg/openmp-server-browser)** - Masaüstü için open.mp sunucu tarayıcı arayüzü.
 
 ## Kütüphaneler
 
@@ -151,7 +150,7 @@ Artık open.mp kullanarak pawn dili dışında da scriptlerinizi geliştirebilir
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - GTA San Andreas haritasının doku hata düzeltmeleri.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - SA:MP için Animasyon tarayıcı aracı.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Bir oyuncunun bir Android kullanıcısı olup olmadığını kontrol eder.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Zengin özelliklere sahip bir TextDraw düzenleyici.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Zengin özelliklere sahip bir TextDraw düzenleyici.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Birçok özellikle gelişmiş harita düzenleyici.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - SA:MP için Oyun İçi harita editörü.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Bu, objelerdeki doku dizinine 15'e kadar (16 slot) değiştirmenize ve bu obje dokuları için renk belirlemenize olanak tanıyan bir oyun içi harita editör.

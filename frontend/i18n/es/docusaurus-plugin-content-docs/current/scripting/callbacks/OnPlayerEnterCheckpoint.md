@@ -8,9 +8,9 @@ tags: ["player", "checkpoint"]
 
 Este callback se llama cuando un jugador entra al checkpoint establecido para ese jugador.
 
-| Nombre   | Descripción                            |
-| -------- | -------------------------------------- |
-| playerid | ID del jugador que entró al checkpoint.|
+| Nombre   | Descripción                             |
+| -------- | --------------------------------------- |
+| playerid | ID del jugador que entró al checkpoint. |
 
 ## Devoluciones
 

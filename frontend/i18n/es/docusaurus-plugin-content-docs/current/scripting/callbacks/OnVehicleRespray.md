@@ -8,12 +8,12 @@ tags: ["vehicle"]
 
 Este callback se llama cuando un jugador sale de un taller de modificación, sin importar si los colores no fueron cambiados. Cuidado, el nombre es ambiguo, los Pay 'n' Spray no llamarán este callback.
 
-| Nombre    | Descripción                                                  |
-| --------- | ------------------------------------------------------------ |
-| playerid  | El ID del jugador que está conduciendo el vehículo.          |
-| vehicleid | El ID del vehículo repintado.                                |
-| color1    | El color al que se cambió el color primario del vehículo.    |
-| color2    | El color al que se cambió el color secundario del vehículo.  |
+| Nombre    | Descripción                                                 |
+| --------- | ----------------------------------------------------------- |
+| playerid  | El ID del jugador que está conduciendo el vehículo.         |
+| vehicleid | El ID del vehículo repintado.                               |
+| color1    | El color al que se cambió el color primario del vehículo.   |
+| color2    | El color al que se cambió el color secundario del vehículo. |
 
 ## Devoluciones
 

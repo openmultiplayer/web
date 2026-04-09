@@ -15,8 +15,8 @@ tags: ["sqlite"]
 
 تعداد ردیف‌های موجود در نتیجه‌ای که از db_query برگردونده شده رو می‌گیره.
 
-| اسم        | توضیح                                         |
-| ----------- | ---------------------------------------------- |
+| اسم               | توضیح                                  |
+| ----------------- | -------------------------------------- |
 | DBResult:dbresult | نتیجه‌ای که از db_query برگردونده شده. |
 
 ## مقادیر برگشتی
@@ -35,29 +35,29 @@ new DBResult:db_result = db_query(db_handle, "SELECT * FROM `players` WHERE `sco
 if (db_result)
 {
     new rows = db_num_rows(db_result);
-    
+
     if (rows > 0)
     {
         printf("Found %d players with score > 1000", rows);
-        
+
         // پردازش نتایج
         do
         {
             new name[MAX_PLAYER_NAME];
             new score;
-            
+
             db_get_field_assoc(db_result, "name", name, sizeof(name));
             score = db_get_field_assoc_int(db_result, "score");
-            
+
             printf("Player: %s, Score: %d", name, score);
-            
+
         } while (db_next_row(db_result));
     }
     else
     {
         print("No players found with score > 1000");
     }
-    
+
     // آزاد کردن حافظه
     db_free_result(db_result);
 }

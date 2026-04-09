@@ -9,13 +9,13 @@ tags: ["player", "object", "playerobject"]
 
 چرخش یک object رو در محور های X، Y و Z تنظیم می‌کنه.
 
-| نام             | توضیحات                                      |
-| --------------- | -------------------------------------------- |
-| playerid        | آیدی پلیری که قراره player-object اش بچرخه   |
-| objectid        | آیدی player-object ای که قراره بچرخه         |
-| Float:rotationX | چرخش X که قراره تنظیم بشه                   |
-| Float:rotationY | چرخش Y که قراره تنظیم بشه                   |
-| Float:rotationZ | چرخش Z که قراره تنظیم بشه                   |
+| نام             | توضیحات                                    |
+| --------------- | ------------------------------------------ |
+| playerid        | آیدی پلیری که قراره player-object اش بچرخه |
+| objectid        | آیدی player-object ای که قراره بچرخه       |
+| Float:rotationX | چرخش X که قراره تنظیم بشه                  |
+| Float:rotationY | چرخش Y که قراره تنظیم بشه                  |
+| Float:rotationZ | چرخش Z که قراره تنظیم بشه                  |
 
 ## مقادیر بازگشتی
 

@@ -41,6 +41,7 @@ Gera um crash quando é passado um ID de menu inválido. Cada menu só pode ter 
 :::
 
 ## Funções Relacionadas
+
 - [CreateMenu](CreateMenu): Cria um menu.
 - [SetMenuColumnHeader](SetMenuColumnHeader): Define o cabeçalho de uma das colunas de um menu.
 - [DestroyMenu](DestroyMenu): Destrói um menu.

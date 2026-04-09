@@ -1,0 +1,337 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Повна зворотна сумісність з наявними скриптами та клієнтами"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Завалявся старий AMX-файл? Запускайте його на сервері open.mp одразу «з коробки» та грайте разом із друзями, які використовують клієнт SA:MP. А коли захочете вдосконалити свій код — зазирніть у нашу документацію."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Вступ"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Нова та покращена система написання скриптів"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "Ми не відмовилися від Pawn, але тепер у вас є новий потужний компілятор для стабільної роботи коду та ще більше функцій для взаємодії з сервером і клієнтом!"
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Більше про вдосконалення"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Дружній для розробників"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Ми створюємо open.mp, зосереджуючись на досвіді розробників. Це означає стабільний API, актуальну документацію, дружню спільноту та повністю відкритий вихідний код! Ми завжди раді вашому внеску в проєкт."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Долучитися до розробки"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Нова та покращена система написання скриптів"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Ми не відмовилися від Pawn, але тепер у вас є новий потужний компілятор для стабільної роботи коду та ще більше функцій для взаємодії з сервером і клієнтом!"
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Більше про вдосконалення"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Розробка, орієнтована на спільноту"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Наш сервер повністю відкритий (Open Source), і ми вдячні за будь-яку допомогу. Долучайтеся до написання наступного релізу або звітуйте про баги. Ми намагаємося зробити код ідеальним, але ніхто не застрахований від помилок, тому ваша думка важлива для нас."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Ми на GitHub"
+  },
+  "feature.cppApi.title": {
+    "message": "Гнучкий C++ API"
+  },
+  "feature.cppApi.description": {
+    "message": "Отримайте доступ до всіх функцій сервера, доступних у Pawn, а також до величезного всесвіту бібліотек та фреймворків C++. А коли опануєте ці інструменти — чому б не допомогти вдосконалити сервер через наш відкритий процес розробки на GitHub?"
+  },
+  "feature.cppApi.linkText": {
+    "message": "Ознайомитися з репозиторієм SDK"
+  },
+  "partners.server.stats": {
+    "message": "Загалом {players} гравців на {servers} серверах, в середньому {average} гравця на сервер."
+  },
+  "servers.sort.relevance": {
+    "message": "Релевантність"
+  },
+  "servers.sort.players": {
+    "message": "За гравцями"
+  },
+  "servers.search.placeholder": {
+    "message": "Пошук за IP або назвою"
+  },
+  "partners.note": {
+    "message": "Примітка: Як і було обіцяно, прийом заявок на участь у партнерській програмі тимчасово закрито. Сервери, які забронювали слоти раніше, все ще можуть приєднатися, проте зараз ми не приймаємо нові заявки. Якщо у вас виникнуть запитання, не соромтеся ставити їх на нашому Discord-сервері. Однак, якщо ваше запитання стосується нових способів потрапити до списку — наразі ми не маємо таких планів."
+  },
+  "announcement.title": {
+    "message": "Доступне оновлення файлів сервера та лаунчера open.mp!!"
+  },
+  "announcement.link": {
+    "message": "Докладніше читайте тут"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Ця сторінка вийшла з ладу.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Сторінку не знайдено",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Ми не змогли знайти те, що ви шукали.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Зв’яжіться з власником сайту, який спрямував вас за цим URL, і повідомте йому, що посилання не працює.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "Примітка",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "Порада",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "Небезпека",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "Інформація",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "Застереження",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Нагору",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Архів",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Архів",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Навігація сторінками списку блогу",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Новіші дописи",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Старіші дописи",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} хв читання",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Теги",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "Вийшла версія open.mp {version} із численними виправленнями помилок, покращенням продуктивності та новими функціями!"
+  },
+  "announcement.changelog": {
+    "message": "Список змін"
+  },
+  "announcement.download": {
+    "message": "Завантажити"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Лаунчер оновлено!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Переглянути оновлення"
+  },
+  "announcement.dismiss": {
+    "message": "Закрити це повідомлення"
+  },
+  "homepage.heroDescription": {
+    "message": "Новий багатоосібний мод для Grand Theft Auto: San Andreas, {compatibility} з {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "повністю зворотно сумісний"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Завантажити лаунчер 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Завантажити файли сервера 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Документація 📜"
+  },
+  "animations.title": {
+    "message": "Перегляд анімацій open.mp"
+  },
+  "animations.library": {
+    "message": "Бібліотека:"
+  },
+  "animations.selectLibrary": {
+    "message": "Оберіть бібліотеку..."
+  },
+  "animations.animation": {
+    "message": "Анімація:"
+  },
+  "animations.selectAnimation": {
+    "message": "Оберіть анімацію..."
+  },
+  "animations.index": {
+    "message": "Індекс:"
+  },
+  "animations.frames": {
+    "message": "Кадри:"
+  },
+  "animations.duration": {
+    "message": "Тривалість:"
+  },
+  "animations.seconds": {
+    "message": "секунд"
+  },
+  "animations.description": {
+    "message": "Опис:"
+  },
+  "animations.notes": {
+    "message": "Примітки:"
+  },
+  "animations.videoCredits": {
+    "message": "Автори відео:"
+  },
+  "animations.usageExamples": {
+    "message": "Приклади використання:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Оберіть анімацію з випадного списку вище для попереднього перегляду."
+  },
+  "animations.browsePrompt": {
+    "message": "Переглядайте та перевіряйте всі доступні анімації."
+  },
+  "animations.usedByFunctions": {
+    "message": "Вони використовуються функціями ApplyAnimation/ApplyActorAnimation."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Слідуємо за тим клятим потягом..."
+  },
+  "serverRow.copied": {
+    "message": "СКОПІЙОВАНО"
+  },
+  "serverRow.copy": {
+    "message": "КОПІЮВАТИ"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Партнерський сервер!"
+  },
+  "serverRow.ompTitle": {
+    "message": "Сервер open.mp"
+  },
+  "serverRow.players": {
+    "message": "гравців"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Назад до серверів"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Швидкий вхід"
+  },
+  "serverInfo.noDescription": {
+    "message": "У цього сервера немає опису"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Гравці онлайн"
+  },
+  "serverInfo.modVersion": {
+    "message": "Версія моду"
+  },
+  "serverInfo.language": {
+    "message": "Мова"
+  },
+  "serverInfo.rule": {
+    "message": "Правило"
+  },
+  "serverInfo.value": {
+    "message": "Значення"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Оновлено {time} тому"
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Документація"
+  },
+  "theme.footer.title.Community": {
+    "message": "Спільнота"
+  },
+  "theme.footer.title.More": {
+    "message": "Більше"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Вступ"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Перехід на open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Донат"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Сервери"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Блоґ"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Анімації"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "UID генератор"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Copyright © {year} open.mp. Створено на Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "Документація"
+  },
+  "navbar.item.Blog": {
+    "message": "Блоґ"
+  },
+  "navbar.item.Forums": {
+    "message": "Форум"
+  },
+  "navbar.item.Servers": {
+    "message": "Сервери"
+  },
+  "navbar.item.Partners": {
+    "message": "Партнери"
+  },
+  "navbar.item.Donate": {
+    "message": "Донат"
+  }
+}

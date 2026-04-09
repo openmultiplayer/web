@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Uništi vozilo. Istog će trena nestati.
 
-| Ime       | Deskripcija            |
-| --------- | ---------------------- |
-| vehicleid | ID vozila za uništiti  |
+| Ime       | Deskripcija           |
+| --------- | --------------------- |
+| vehicleid | ID vozila za uništiti |
 
 ## Returns
 

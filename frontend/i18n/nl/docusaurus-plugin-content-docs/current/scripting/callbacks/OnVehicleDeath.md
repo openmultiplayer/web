@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Deze callback wordt aangeroepen wanneer een voertuig wordt vernietigd - door een explosie of door onderdompeling in water.
 
-| Naam      | Beschrijving                                                                                                                                                     |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vehicleid | Het ID van het voertuig dat werd vernietigd.                                                                                                                   |
+| Naam      | Beschrijving                                                                                                                                                                         |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| vehicleid | Het ID van het voertuig dat werd vernietigd.                                                                                                                                         |
 | killerid  | Het ID van de speler die de vernietiging van het voertuig rapporteerde (naam is misleidend). Meestal de bestuurder of een passagier (indien aanwezig) of de dichtstbijzijnde speler. |
 
 ## Returns

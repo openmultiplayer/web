@@ -13,5 +13,3 @@ Voertuigschade bestaat uit vier waarden: Panels, Doors, Lights en Tires. Elke wa
 Zie ook: [Panel States](../resources/panelstates), [Door States](../resources/doorstates), [Light States](../resources/lightstates), [Tire States](../resources/tirestates).
 
 Voor het coderen/decoderen kun je hulpfuncties gebruiken (identiek aan de Engelse voorbeelden).
-
-

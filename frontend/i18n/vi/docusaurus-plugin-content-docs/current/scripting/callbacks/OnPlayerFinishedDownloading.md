@@ -43,5 +43,5 @@ This callback is called every time a player changes virtual worlds, even if ther
 The following callbacks might be useful, as they're related to this callback in one way or another.
 
 - [OnPlayerConnect](OnPlayerConnect): This callback is called when a player connects to the server.
-- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server. 
-- [OnIncomingConnection](OnIncomingConnection): This callback is called when a player is attempting to connect to the server. 
+- [OnPlayerDisconnect](OnPlayerDisconnect): This callback is called when a player leaves the server.
+- [OnIncomingConnection](OnIncomingConnection): This callback is called when a player is attempting to connect to the server.

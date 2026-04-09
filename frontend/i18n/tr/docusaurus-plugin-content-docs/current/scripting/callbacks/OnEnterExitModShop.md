@@ -9,7 +9,7 @@ tags: []
 
 Bu geri çağırma, bir oyuncu modifiye garajlarından birine giriş veya çıkış yaptığında tetiklenir.
 
-| Parametre      | Açıklama                                                                  |
+| Parametre  | Açıklama                                                                     |
 | ---------- | ---------------------------------------------------------------------------- |
 | playerid   | Modifiye garajına giriş/çıkış yapan oyuncunun ID'si.                         |
 | enterexit  | Giriş yaptıysa 1, çıkış yaptıysa 2 değerini alır.                            |

@@ -10,8 +10,8 @@ tags: ["player"]
 Deze callback wordt aangeroepen wanneer een speler een command invoert in het client chat venster. Commands zijn alles wat begint met een forward slash, bijv. /help.
 
 | Naam      | Beschrijving                                                 |
-| --------- | ----------------------------------------------------------- |
-| playerid  | Het ID van de speler die een command invoerde.             |
+| --------- | ------------------------------------------------------------ |
+| playerid  | Het ID van de speler die een command invoerde.               |
 | cmdtext[] | Het command dat werd ingevoerd (inclusief de forward slash). |
 
 ## Returns

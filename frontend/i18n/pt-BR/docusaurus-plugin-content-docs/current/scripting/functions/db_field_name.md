@@ -11,12 +11,12 @@ tags: ["sqlite"]
 
 Retorna o nome de um campo em um índice específico.
 
-| Nome              | Descrição                                                          |
-| ----------------- | ------------------------------------------------------------------ |
+| Nome              | Descrição                                                               |
+| ----------------- | ----------------------------------------------------------------------- |
 | DBResult:dbresult | O resultado de onde obter os dados; retornado por [db_query](db_query). |
-| field             | O índice do campo para obter o nome.                              |
-| result[]          | O resultado.                                                       |
-| maxlength         | O comprimento máximo do campo.                                     |
+| field             | O índice do campo para obter o nome.                                    |
+| result[]          | O resultado.                                                            |
+| maxlength         | O comprimento máximo do campo.                                          |
 
 ## Retorno
 

@@ -122,7 +122,7 @@ new c = a(8)
 
 ```
 
-به "new c = (1+(2*(8)))" ارزیابی می‌شه، حتی اگر macro "b" در زمان تعریف "a" تعریف نشده بود.
+به "new c = (1+(2\*(8)))" ارزیابی می‌شه، حتی اگر macro "b" در زمان تعریف "a" تعریف نشده بود.
 
 pattern matching به قوانین زیر محدود شده:
 
@@ -132,7 +132,7 @@ pattern matching به قوانین زیر محدود شده:
 
 - pattern نمی‌تونه با یک پارامتر تمام بشه؛ pattern ای مثل "set:%1=%2" غیرقانونی هست. اگر می‌خوای با انتهای یک statement match کنی، می‌تونی یک semicolon در انتهای pattern اضافه کنی. اگر semicolon ها در انتهای هر statement اختیاری باشن، semicolon با newline در source هم match می‌کنه.
 
-- pattern باید با یک حرف، یک underscore، یا یک کاراکتر "@" شروع بشه. اولین بخش pattern که از کاراکترهای alphanumeric (به علاوه "_" و/"@") تشکیل شده "نام" یا "prefix" macro هست. روی defined operator و directive #undef، prefix macro رو مشخص می‌کنی.
+- pattern باید با یک حرف، یک underscore، یا یک کاراکتر "@" شروع بشه. اولین بخش pattern که از کاراکترهای alphanumeric (به علاوه "\_" و/"@") تشکیل شده "نام" یا "prefix" macro هست. روی defined operator و directive #undef، prefix macro رو مشخص می‌کنی.
 
 - وقتی pattern رو match می‌کنی، preprocessor white space بین نمادهای غیرalphanumeric و white space بین یک نماد alphanumeric و یک غیرalphanumeric رو نادیده می‌گیره، با یک استثنا: بین دو نماد یکسان، white space نادیده گرفته نمی‌شه. بنابراین: `pattern abc(+-) با "abc ( + - )" match می‌کنه pattern abc(--) با "abc ( -- )" match می‌کنه` ولی با `"abc(- -)"` match نمی‌کنه
 
@@ -152,4 +152,4 @@ pattern matching به قوانین زیر محدود شده:
 
 ---
 
-[برگشت به فهرست](00-Contents)
+[برگشت به فهرست](Contents)

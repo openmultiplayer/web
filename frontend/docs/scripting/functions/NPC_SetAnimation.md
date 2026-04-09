@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         NPC_SetAnimation(npcid, 405, 4.1, true, false, false, false, 0);
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d has been set to animate.", npcid);
-        
+
         SetTimerEx("ClearNPCAnimations", 25000, false, "ii", playerid, npcid);
 
         return 1;

@@ -9,12 +9,12 @@ tags: ["player"]
 
 Haal de snelheid van een speler op langs de X‑, Y‑ en Z‑as (componenten).
 
-| Naam | Beschrijving |
-| ---- | ------------ |
+| Naam     | Beschrijving                        |
+| -------- | ----------------------------------- |
 | playerid | Speler waarvan je de snelheid wilt. |
-| &Float:x | Referentie voor X‑snelheid |
-| &Float:y | Referentie voor Y‑snelheid |
-| &Float:z | Referentie voor Z‑snelheid |
+| &Float:x | Referentie voor X‑snelheid          |
+| &Float:y | Referentie voor Y‑snelheid          |
+| &Float:z | Referentie voor Z‑snelheid          |
 
 ## Retourneert
 
@@ -42,5 +42,3 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [SetPlayerVelocity](SetPlayerVelocity)
 - [SetVehicleVelocity](SetVehicleVelocity)
 - [GetVehicleVelocity](GetVehicleVelocity)
-
-

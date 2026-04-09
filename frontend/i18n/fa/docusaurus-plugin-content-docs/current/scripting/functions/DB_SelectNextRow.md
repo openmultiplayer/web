@@ -9,9 +9,9 @@ tags: ["sqlite"]
 
 این تابع به ردیف بعدی مجموعه نتایج تخصیص یافته با [DB_ExecuteQuery](DB_ExecuteQuery) حرکت می‌کند.
 
-| نام              | توضیحات                                      |
-| ----------------- | -------------------------------------------- |
-| DBResult:dbresult | نتیجه [DB_ExecuteQuery](DB_ExecuteQuery).    |
+| نام               | توضیحات                                   |
+| ----------------- | ----------------------------------------- |
+| DBResult:dbresult | نتیجه [DB_ExecuteQuery](DB_ExecuteQuery). |
 
 ## مقادیر بازگشتی
 

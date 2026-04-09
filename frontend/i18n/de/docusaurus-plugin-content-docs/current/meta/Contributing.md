@@ -49,7 +49,7 @@ git clone https://github.com/openmultiplayer/web.git
 Die folgenden Extensions können die Arbeit in VSC sehr erleichtern:
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) by David Anson - diese Extension prüft, ob das geschriebene Markdown richtig formatiert ist. Es verhindert einige syntaktische und semantische Fehler. Nicht alle Warnungen sind wichtig, aber einige können die Lesbarkeit verbessern. Wenn du dir unsicher bist oder Fragen hast stelle diese im Zweifelsfall einfach einem Rezensenten!
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by the Prettier.js Team - dies ist ein Formatierer, der die Markdown-Dateien automatisch formatiert, sodass sie alle einen einheitlichen Stil verwenden. Das Wiki-Repository hat einige Einstellungen in seiner `package.json` die die Erweiterung automatisch anwenden sollte. Stellen sicher, dass  „Format On Save“ in den Editor-Einstellungen aktiviert ist, damit die Markdown-Dateien bei jedem Speichern automatisch formatiert werden!
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by the Prettier.js Team - dies ist ein Formatierer, der die Markdown-Dateien automatisch formatiert, sodass sie alle einen einheitlichen Stil verwenden. Das Wiki-Repository hat einige Einstellungen in seiner `package.json` die die Erweiterung automatisch anwenden sollte. Stellen sicher, dass „Format On Save“ in den Editor-Einstellungen aktiviert ist, damit die Markdown-Dateien bei jedem Speichern automatisch formatiert werden!
 
 ## Anmerkungen, Tipps und Konventionen
 
@@ -110,7 +110,7 @@ Erstelle keine Level 1 (`<h1>`) Überschriften mit `#`, da dies automatisch gesc
 - ✔
 
   ```md
-   Das ist die Dokumentation für ...
+  Das ist die Dokumentation für ...
 
   ## Unter-Bereich
   ```
@@ -118,6 +118,7 @@ Erstelle keine Level 1 (`<h1>`) Überschriften mit `#`, da dies automatisch gesc
 ### Nutze `Code` Snippets für technische Referenzen
 
 Beim schreiben eines Absatzes, der Funktionsnamen, Zahlen, Ausdrücke oder irgendetwas anderes enthält, das nicht der Standardschreibsprache entspricht, sollten diese mit \`Backticks\` umgeben werden. So lääst sich die Sprache leichter von technischen Referenzen(beispielsweise Code-Snippets) oder Ähnlichem unterscheiden.
+
 - ❌
 
   > Die Funktion fopen gibt einen Wert mit einem Tag vom Typ File: zurück, in dieser Zeile gibt es kein Problem, da der Rückgabewert in einer Variablen gespeichert wird, die auch das Tag File: enthält (beachte, dass die Fälle auch gleich sind). In der nächsten Zeile wird jedoch dem Dateihandle der Wert 4 hinzugefügt. 4 hat keinen Tag [...]

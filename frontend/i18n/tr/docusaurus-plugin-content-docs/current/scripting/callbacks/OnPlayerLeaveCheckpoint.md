@@ -1,21 +1,21 @@
 ---
 title: OnPlayerLeaveCheckpoint
 sidebar_label: OnPlayerLeaveCheckpoint
-description: Bu fonksiyon, bir oyuncu SetPlayerCheckpoint tarafından kendisi için ayarlanan kontrol noktasından ayrıldığında çağrılır. 
+description: Bu fonksiyon, bir oyuncu SetPlayerCheckpoint tarafından kendisi için ayarlanan kontrol noktasından ayrıldığında çağrılır.
 tags: ["player", "checkpoint"]
 ---
 
 ## Açıklama
 
-Bu fonksiyon, bir oyuncu SetPlayerCheckpoint tarafından kendisi için ayarlanan kontrol noktasından ayrıldığında çağrılır. 
+Bu fonksiyon, bir oyuncu SetPlayerCheckpoint tarafından kendisi için ayarlanan kontrol noktasından ayrıldığında çağrılır.
 
-| Parametre | Açıklama                                         |
-| --------- | ------------------------------------------------ |
-| playerid  | Kontrol noktasından ayrılan oyuncunun ID'si.     |
+| Parametre | Açıklama                                     |
+| --------- | -------------------------------------------- |
+| playerid  | Kontrol noktasından ayrılan oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 
-Filterscript komutlarında her zaman ilk olarak çağrılır. 
+Filterscript komutlarında her zaman ilk olarak çağrılır.
 
 ## Örnek
 

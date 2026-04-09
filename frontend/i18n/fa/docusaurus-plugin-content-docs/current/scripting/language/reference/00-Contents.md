@@ -43,36 +43,36 @@ Eerste Industriestraat 19–21, 1401VL Bussum The Netherlands (Pays Bas)
 
 ---
 
-[پیشگفتار](01-Foreword) - صفحه 3-5
+[پیشگفتار](Foreword) - صفحه 3-5
 
-[مقدمه آموزشی](02-A-tutorial-introduction) - صفحه 5-62
+[مقدمه آموزشی](A-tutorial-introduction) - صفحه 5-62
 
-[داده‌ها و اعلان‌ها](03-Data-and-declarations) - صفحه 62-70
+[داده‌ها و اعلان‌ها](Data-and-declarations) - صفحه 62-70
 
-[توابع](04-Functions) - صفحه 70-93
+[توابع](Functions) - صفحه 70-93
 
-[پیش‌پردازنده](05-The-preprocessor) - صفحه 93-97
+[پیش‌پردازنده](The-preprocessor) - صفحه 93-97
 
-[نحو کلی](06-General-syntax) - صفحه 97-104
+[نحو کلی](General-syntax) - صفحه 97-104
 
-[عملگرها و عبارات](07-Operators-and-expressions) - صفحه 104-112
+[عملگرها و عبارات](Operators-and-expressions) - صفحه 104-112
 
-[دستورات](08-Statements) - صفحه 112-117
+[دستورات](Statements) - صفحه 112-117
 
-[دستورالعمل‌ها](09-Directives) - صفحه 117-124
+[دستورالعمل‌ها](Directives) - صفحه 117-124
 
-[کتابخانه توابع پیشنهادی](10-Proposed-function-library) - صفحه 124-134
+[کتابخانه توابع پیشنهادی](Proposed-function-library) - صفحه 124-134
 
-[تله‌ها: تفاوت‌ها با C](11-Pitfalls-differences-from-C) - صفحه 134-137
+[تله‌ها: تفاوت‌ها با C](Pitfalls-differences-from-C) - صفحه 134-137
 
-[نکات متنوع](12-Assorted-tips) - صفحه 137-148
+[نکات متنوع](Assorted-tips) - صفحه 137-148
 
-[ضمائم](13-Appendices) - صفحه 148-183
+[ضمائم](Appendices) - صفحه 148-183
 
-∟ [پیام‌های خطا و هشدار](13-Appendices#error-and-warning-messages) - صفحه 148-168
+∟ [پیام‌های خطا و هشدار](Appendices#error-and-warning-messages) - صفحه 148-168
 
-∟ [کامپایلر](13-Appendices#the-compiler) - صفحه 168-174
+∟ [کامپایلر](Appendices#the-compiler) - صفحه 168-174
 
-∟ [منطق](13-Appendices#rationale) - صفحه 174-181
+∟ [منطق](Appendices#rationale) - صفحه 174-181
 
-∟ [مجوز](13-Appendices#license) - صفحه 181-183
+∟ [مجوز](Appendices#license) - صفحه 181-183

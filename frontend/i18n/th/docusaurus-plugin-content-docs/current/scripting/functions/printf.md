@@ -15,10 +15,10 @@ This function starts with lowercase letter.
 
 Outputs a formatted string on the console (the server window, not the in-game chat).
 
-| Name           | Description                               |
-| -------------- | ----------------------------------------- |
-| format[]       | The format string                         |
-\ \{Float, _}:... | Indefinite number of arguments of any tag |
+| Name               | Description                               |
+| ------------------ | ----------------------------------------- |
+| format[]           | The format string                         |
+| \ \{Float, \_}:... | Indefinite number of arguments of any tag |
 
 ## ส่งคืน
 

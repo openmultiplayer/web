@@ -16,7 +16,7 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 Ovaj callback je pozvan kada igrač nanese povredu aktoru.
 
 | Ime             | Deskripcija                                                |
-|-----------------|------------------------------------------------------------|
+| --------------- | ---------------------------------------------------------- |
 | playerid        | ID igrača koji zadaje povredu.                             |
 | damaged_actorid | ID aktora koji je primio povredu.                          |
 | Float:amount    | Količina healtha i armora kojeg je izgubi damaged_actorid. |

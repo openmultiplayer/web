@@ -9,9 +9,9 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 Bu geri çağırma, bir oyuncu yarış checkpointine girdiğinde çağırılır.
 
-| Parametre     | Açıklama                                              |
-| -------- | ----------------------------------------------------- |
-| playerid | Yarış checkpointine giren oyuncunun ID'si.            |
+| Parametre | Açıklama                                   |
+| --------- | ------------------------------------------ |
+| playerid  | Yarış checkpointine giren oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

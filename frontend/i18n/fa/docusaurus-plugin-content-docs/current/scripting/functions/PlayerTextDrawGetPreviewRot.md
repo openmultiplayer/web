@@ -11,10 +11,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 چرخش و zoom یک 3D model preview player-textdraw رو برمی‌گردونه.
 
-| اسم               | توضیحات                                                                     |
-| ----------------- | ------------------------------------------------------------------------------- |
-| playerid          | شناسه بازیکن.                                                           |
-| PlayerText:textid | شناسه player-textdraw که می‌خوای rotation و zoom رو ازش بگیری.                      |
+| اسم               | توضیحات                                                                          |
+| ----------------- | -------------------------------------------------------------------------------- |
+| playerid          | شناسه بازیکن.                                                                    |
+| PlayerText:textid | شناسه player-textdraw که می‌خوای rotation و zoom رو ازش بگیری.                   |
 | &Float:rotationX  | متغیر float برای ذخیره rotationX coordinate، که به صورت reference پاس داده میشه. |
 | &Float:rotationY  | متغیر float برای ذخیره rotationY coordinate، که به صورت reference پاس داده میشه. |
 | &Float:rotationZ  | متغیر float برای ذخیره rotationZ coordinate، که به صورت reference پاس داده میشه. |

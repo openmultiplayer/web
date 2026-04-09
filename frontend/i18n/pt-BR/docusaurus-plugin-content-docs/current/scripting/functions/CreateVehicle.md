@@ -9,17 +9,17 @@ tags: ["vehicle"]
 
 Cria um veículo no mundo. Pode ser usado no lugar de AddStaticVehicleEx a qualquer momento no script.
 
-| Nome                                   | Descrição                                                                                                          |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [modelid](../resources/vehicleid)      | O modelo do veículo.                                                                                           |
-| Float:spawnX                           | A coordenada X do veículo.                                                                                    |
-| Float:spawnY                           | A coordenada Y do veículo.                                                                                    |
-| Float:spawnZ                           | A coordenada Z do veículo.                                                                                    |
-| Float:angle                            | O ângulo de direção do veículo.                                                                                    |
-| [colour1](../resources/vehiclecolorid) | O ID da cor primária.                                                                                                |
-| [colour2](../resources/vehiclecolorid) | O ID da cor secundária.                                                                                              |
+| Nome                                   | Descrição                                                                                                              |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [modelid](../resources/vehicleid)      | O modelo do veículo.                                                                                                   |
+| Float:spawnX                           | A coordenada X do veículo.                                                                                             |
+| Float:spawnY                           | A coordenada Y do veículo.                                                                                             |
+| Float:spawnZ                           | A coordenada Z do veículo.                                                                                             |
+| Float:angle                            | O ângulo de direção do veículo.                                                                                        |
+| [colour1](../resources/vehiclecolorid) | O ID da cor primária.                                                                                                  |
+| [colour2](../resources/vehiclecolorid) | O ID da cor secundária.                                                                                                |
 | respawnDelay                           | O tempo de espera até que o veículo reapareça sem um motorista, em segundos. Usar -1 impedirá que o veículo reapareça. |
-| bool:addSiren                          | Possui um valor padrão 'falso'. Permite que o veículo tenha uma sirene, desde que o veículo possua uma buzina.                  |
+| bool:addSiren                          | Possui um valor padrão 'falso'. Permite que o veículo tenha uma sirene, desde que o veículo possua uma buzina.         |
 
 ## Retornos
 
@@ -55,7 +55,7 @@ Trens só podem ser adicionados com [AddStaticVehicle](AddStaticVehicle) e [AddS
 - [AddStaticVehicleEx](AddStaticVehicleEx): Adiciona um veículo estático com tempo de reaparecimento customizado.
 - [GetVehicleParamsSirenState](GetVehicleParamsSirenState): Verifique se a sirene de um veículo está ligada ou desligada.
 - [SetVehicleSpawnInfo](SetVehicleSpawnInfo): Ajusta o modelo, local de aparecimento, cores, tempo de reaparecimento e interior de um veículo.
-- [GetVehicleSpawnInfo](GetVehicleSpawnInfo): Obtém local de aparecimento e cores de um veículo. 
+- [GetVehicleSpawnInfo](GetVehicleSpawnInfo): Obtém local de aparecimento e cores de um veículo.
 - [ChangeVehicleColours](ChangeVehicleColours): Altera as cores primária e secundária de um veículo.
 - [GetVehicleColours](GetVehicleColours): Obtém as cores de um veículo.
 - [SetVehicleRespawnDelay](SetVehicleRespawnDelay): Define o tempo de reaparecimento de um veículo.

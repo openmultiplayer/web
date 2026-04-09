@@ -8,11 +8,11 @@ tags: ["player"]
 
 Este callback se llama cuando el estado de alguna tecla [soportada](../resources/keys) cambia (presionada/soltada).<br/>Las teclas direccionales no desencadenan OnPlayerKeyStateChange (arriba, abajo, izquierda, derecha).
 
-| Nombre   | Descripción                                                                                      				 |
-| -------- | --------------------------------------------------------------------------------------------------------------- |
-| playerid | El ID del jugador que presionó o soltó una tecla.                                                				 |
-| newkeys  | Un mapa (máscara de bits) de las teclas actualmente presionadas. - [ver acá](../resources/keys). 				 |
-| oldkeys  | Un mapa (máscara de bits) de las teclas presionadas previo al cambio actual - [ver acá](../resources/keys).     |
+| Nombre   | Descripción                                                                                                 |
+| -------- | ----------------------------------------------------------------------------------------------------------- |
+| playerid | El ID del jugador que presionó o soltó una tecla.                                                           |
+| newkeys  | Un mapa (máscara de bits) de las teclas actualmente presionadas. - [ver acá](../resources/keys).            |
+| oldkeys  | Un mapa (máscara de bits) de las teclas presionadas previo al cambio actual - [ver acá](../resources/keys). |
 
 ## Devoluciones
 
@@ -47,7 +47,7 @@ Este callback es llamado cuando un jugador presiona o suelta una de las teclas s
 
 ### Parámetros
 
-Los parámetros de esta funcion son una lista de todas las teclas actualmente siendo presionadas y todas las teclas presionadas hace un momento. Este callback es llamado cuando el estado de la tecla cambia (esto será, cuando una tecla sea sea presionada o soltada) y pasa los estados de todas las teclas antes y después de este cambio. Esta información puede ser usada para ver exáctamente que pasó pero las variables no pueden ser usadas directamente de la misma manera como parámetros a otras funciones. Para reducir el número de variables un solo BIT es usado para representar una tecla, esto quiere decir que una variable puede contener múltiples teclas al mismo tiempo y comparar los valores simplemente no va a funcionar siempre. 
+Los parámetros de esta funcion son una lista de todas las teclas actualmente siendo presionadas y todas las teclas presionadas hace un momento. Este callback es llamado cuando el estado de la tecla cambia (esto será, cuando una tecla sea sea presionada o soltada) y pasa los estados de todas las teclas antes y después de este cambio. Esta información puede ser usada para ver exáctamente que pasó pero las variables no pueden ser usadas directamente de la misma manera como parámetros a otras funciones. Para reducir el número de variables un solo BIT es usado para representar una tecla, esto quiere decir que una variable puede contener múltiples teclas al mismo tiempo y comparar los valores simplemente no va a funcionar siempre.
 
 ### Cómo no comprobar una tecla
 
@@ -108,7 +108,7 @@ if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
- 
+
 Esto puede parecer complicado, pero comprueba que ambas teclas estén en "newkeys" y que no estén en "oldkeys", si una de ellas está en "oldkeys" no importa ya que ambas no estaban. Todas estas cosas pueden ser muy simplificadas con macros (defines).
 
 ## Simplificación

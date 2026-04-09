@@ -126,7 +126,7 @@ omp-server --default-config
 | network.on_foot_sync_rate\*     | int    | 30            | ✅        | ❌   | The time in milliseconds a client should update the server with new data while on foot.                                                                                                                                                                                                            |
 | network.player_marker_sync_rate | int    | 2500          | ✅        | ❌   | The time in milliseconds a client should update the server with new data while moving.                                                                                                                                                                                                             |
 | network.player_timeout          | int    | 10000         | ❌        | ❌   | The time in milliseconds after which a player will timeout when not sending any data to the server.                                                                                                                                                                                                |
-| network.port                    | int    | 7777          | ✅        | ❌   | The port the server should use. You will need to [Port Forward](https://portforward.com) in order for players to join your server from outside your LAN.                                                                                                                                       |
+| network.port                    | int    | 7777          | ✅        | ❌   | The port the server should use. You will need to [Port Forward](https://portforward.com) in order for players to join your server from outside your LAN.                                                                                                                                           |
 | network.public_addr             | string |               | ✅        | ❌   | Some machines you run your server on can have different IPs, this is used so if the address you set in `bind` config is different, you set a new one. this config variable is only used for DL servers, because in open.mp, it will host a webserver for downloading models                        |
 | network.stream_radius           | float  | 200.0         | ❌        | ❌   | The distance on the X,Y plane players will stream in server entities. The maximum is **400.0** and the minimum is **50.0**. Higher values makes players see server entities at a greater distance, but requires more client processing and potentially more bandwidth.                             |
 | network.stream_rate             | int    | 1000          | ❌        | ❌   | The time in milliseconds before the streaming in of server entities is retested for each player. The maximum is **5000** and the minimum is **500**. Lower values increases server processing as it has to recheck streaming conditions more frequently for each player.                           |
@@ -158,12 +158,12 @@ omp-server --default-config
 
 ### NPC Update Rates
 
-| Key                      | Type | Default value                | Read-only | Rule | Effect                                                                                                             |
-| ------------------------ | ---- | ---------------------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------ |
-| npc.aiming_sync_rate     | int  | network.aiming_sync_rate     | ❌        | ❌   | Aiming synchronization rate for NPCs in milliseconds. Defaults to network.aiming_sync_rate if not set.             |
-| npc.in_vehicle_sync_rate | int  | network.in_vehicle_sync_rate | ❌        | ❌   | In-vehicle synchronization rate for NPCs in milliseconds. Defaults to network.in_vehicle_sync_rate if not set.     |
-| npc.on_foot_sync_rate    | int  | network.on_foot_sync_rate    | ❌        | ❌   | On-foot synchronization rate for NPCs in milliseconds. Defaults to network.on_foot_sync_rate if not set.           |
-| npc.process_update_rate  | int  | 50                           | ❌        | ❌   | General NPC processing update rate in milliseconds.                                                                |
+| Key                      | Type | Default value                | Read-only | Rule | Effect                                                                                                         |
+| ------------------------ | ---- | ---------------------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------- |
+| npc.aiming_sync_rate     | int  | network.aiming_sync_rate     | ❌        | ❌   | Aiming synchronization rate for NPCs in milliseconds. Defaults to network.aiming_sync_rate if not set.         |
+| npc.in_vehicle_sync_rate | int  | network.in_vehicle_sync_rate | ❌        | ❌   | In-vehicle synchronization rate for NPCs in milliseconds. Defaults to network.in_vehicle_sync_rate if not set. |
+| npc.on_foot_sync_rate    | int  | network.on_foot_sync_rate    | ❌        | ❌   | On-foot synchronization rate for NPCs in milliseconds. Defaults to network.on_foot_sync_rate if not set.       |
+| npc.process_update_rate  | int  | 50                           | ❌        | ❌   | General NPC processing update rate in milliseconds.                                                            |
 
 ### NPC Sync Skip Update Limits
 
@@ -239,8 +239,8 @@ omp-server --default-config
 
 ## Logging
 
-| Key                             | Type   | Default value         | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                     |
-| ------------------------------- | ------ | --------------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Key                             | Type   | Default value         | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------- | ------ | --------------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | logging.enable                  | bool   | true                  | ❌        | ❌   | Enable/Disable logging.                                                                                                                                                                                                                                                                                                                                                   |
 | logging.file                    | string | log.txt               | ✅        | ❌   | The path and file name to save the server log.                                                                                                                                                                                                                                                                                                                            |
 | logging.log_chat                | bool   | true                  | ❌        | ❌   | Toggles if player chat should be shown in the server console. Useful to stop the log from becoming bloated, or if you have another scripted chat logging solution. Set to '**true**' to enable or '**false**' to disable.                                                                                                                                                 |
@@ -284,6 +284,7 @@ omp-server --default-config
 
 }
 ```
+
 - `${VAR}` default variable syntax
 - `${VAR:-default}` provides a fallback when the variable is missing
 - `$${VAR}` escapes to keep literal `${VAR}` in the config as text

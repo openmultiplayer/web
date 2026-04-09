@@ -152,39 +152,39 @@ Typ `cmdlist` voor commands (of `varlist` voor variables) via RCON in-game (`/rc
 
 Dit zijn de commands die je als admin kunt gebruiken:
 
-| Command                           | Description                                                                                                                                          |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/rcon cmdlist`                   | Toont een lijst met beschikbare commands.                                                                                                            |
-| `/rcon varlist`                   | Toont een lijst met de huidige variables.                                                                                                            |
-| `/rcon exit`                      | Sluit de server af.                                                                                                                                  |
-| `/rcon echo [text]`               | Print `[text]` in de serverconsole (NIET de client-console in-game).                                                                                 |
-| `/rcon hostname [name]`           | Wijzigt de hostname-tekst (_voorbeeld: `/rcon hostname my server`_).                                                                                 |
-| `/rcon gamemodetext [name]`       | Wijzigt de gamemode-tekst (_voorbeeld: `/rcon gamemodetext my gamemode`_).                                                                           |
-| `/rcon mapname [name]`            | Wijzigt de mapnaam-tekst (_voorbeeld: `/rcon mapname San Andreas`_).                                                                                 |
-| `/rcon exec [filename]`           | Voert het opgegeven cfg-bestand uit (_voorbeeld: `/rcon exec blah.cfg`_).                                                                            |
-| `/rcon kick [ID]`                 | Kickt de player met de opgegeven ID (_voorbeeld: `/rcon kick 2`_).                                                                                   |
-| `/rcon ban [ID]`                  | Bannt de player met de opgegeven ID (_voorbeeld: `/rcon ban 2`_).                                                                                    |
-| `/rcon changemode [mode]`         | Wisselt naar de opgegeven gamemode (_voorbeeld: `/rcon changemode sftdm`_).                                                                          |
-| `/rcon gmx`                       | Laadt de volgende gamemode uit [server.cfg](server.cfg).                                                                                              |
-| `/rcon reloadbans`                | Laadt `samp.ban` opnieuw (lijst met gebande IP's). Gebruik dit na unbannen.                                                                           |
-| `/rcon reloadlog`                 | Laadt `server_log.txt` opnieuw. Handig voor automatische logrotatie. Op Linux ook te triggeren met het `SIGUSR1`-signaal.                             |
-| `/rcon say`                       | Toont een bericht in de client-console van spelers (bijv. `/rcon say hello` toont `Admin: hello`).                                                    |
-| `/rcon players`                   | Toont de players in de server (met naam, IP en ping).                                                                                                 |
-| `/rcon banip [IP]`                | Bannt het opgegeven IP (_voorbeeld: `/rcon banip 127.0.0.1`_).                                                                                        |
-| `/rcon unbanip [IP]`              | Unbannt het opgegeven IP (_voorbeeld: `/rcon unbanip 127.0.0.1`_).                                                                                    |
-| `/rcon gravity`                   | Wijzigt de gravity (_voorbeeld: `/rcon gravity 0.008`_).                                                                                              |
-| `/rcon weather [ID]`              | Wijzigt het weather (_voorbeeld: `/rcon weather 1`_).                                                                                                 |
-| `/rcon loadfs`                    | Laadt het opgegeven filterscript (_voorbeeld: `/rcon loadfs adminfs`_).                                                                               |
-| `/rcon weburl [server url]`       | Wijzigt de server-URL in de masterlists/SA-MP client.                                                                                                 |
-| `/rcon unloadfs`                  | Unloadt het opgegeven filterscript (_voorbeeld: `/rcon unloadfs adminfs`_).                                                                           |
-| `/rcon reloadfs`                  | Reloadt het opgegeven filterscript (_voorbeeld: `/rcon reloadfs adminfs`_).                                                                           |
-| `/rcon rcon\_password [PASSWORD]` | Wijzigt het RCON-wachtwoord.                                                                                                                          |
-| `/rcon password [password]`       | Zet/reset het serverpassword.                                                                                                                         |
-| `/rcon messageslimit [count]`     | Wijzigt het max. aantal messages per seconde per client (standaard 500).                                                                              |
-| `/rcon ackslimit [count]`         | Wijzigt de acks-limit (standaard 3000).                                                                                                               |
-| `/rcon messageholelimit [count]`  | Wijzigt de message holes-limit (standaard 3000).                                                                                                      |
-| `/rcon playertimeout [limit m/s]` | Wijzigt de timeout (ms) wanneer een player geen packets verstuurt (standaard 1000).                                                                   |
-| `/rcon language [language]`       | Wijzigt de servertaal (_voorbeeld: `/rcon language English`_). Wordt getoond in de serverbrowser.                                                     |
+| Command                           | Description                                                                                                               |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `/rcon cmdlist`                   | Toont een lijst met beschikbare commands.                                                                                 |
+| `/rcon varlist`                   | Toont een lijst met de huidige variables.                                                                                 |
+| `/rcon exit`                      | Sluit de server af.                                                                                                       |
+| `/rcon echo [text]`               | Print `[text]` in de serverconsole (NIET de client-console in-game).                                                      |
+| `/rcon hostname [name]`           | Wijzigt de hostname-tekst (_voorbeeld: `/rcon hostname my server`_).                                                      |
+| `/rcon gamemodetext [name]`       | Wijzigt de gamemode-tekst (_voorbeeld: `/rcon gamemodetext my gamemode`_).                                                |
+| `/rcon mapname [name]`            | Wijzigt de mapnaam-tekst (_voorbeeld: `/rcon mapname San Andreas`_).                                                      |
+| `/rcon exec [filename]`           | Voert het opgegeven cfg-bestand uit (_voorbeeld: `/rcon exec blah.cfg`_).                                                 |
+| `/rcon kick [ID]`                 | Kickt de player met de opgegeven ID (_voorbeeld: `/rcon kick 2`_).                                                        |
+| `/rcon ban [ID]`                  | Bannt de player met de opgegeven ID (_voorbeeld: `/rcon ban 2`_).                                                         |
+| `/rcon changemode [mode]`         | Wisselt naar de opgegeven gamemode (_voorbeeld: `/rcon changemode sftdm`_).                                               |
+| `/rcon gmx`                       | Laadt de volgende gamemode uit [server.cfg](server.cfg).                                                                  |
+| `/rcon reloadbans`                | Laadt `samp.ban` opnieuw (lijst met gebande IP's). Gebruik dit na unbannen.                                               |
+| `/rcon reloadlog`                 | Laadt `server_log.txt` opnieuw. Handig voor automatische logrotatie. Op Linux ook te triggeren met het `SIGUSR1`-signaal. |
+| `/rcon say`                       | Toont een bericht in de client-console van spelers (bijv. `/rcon say hello` toont `Admin: hello`).                        |
+| `/rcon players`                   | Toont de players in de server (met naam, IP en ping).                                                                     |
+| `/rcon banip [IP]`                | Bannt het opgegeven IP (_voorbeeld: `/rcon banip 127.0.0.1`_).                                                            |
+| `/rcon unbanip [IP]`              | Unbannt het opgegeven IP (_voorbeeld: `/rcon unbanip 127.0.0.1`_).                                                        |
+| `/rcon gravity`                   | Wijzigt de gravity (_voorbeeld: `/rcon gravity 0.008`_).                                                                  |
+| `/rcon weather [ID]`              | Wijzigt het weather (_voorbeeld: `/rcon weather 1`_).                                                                     |
+| `/rcon loadfs`                    | Laadt het opgegeven filterscript (_voorbeeld: `/rcon loadfs adminfs`_).                                                   |
+| `/rcon weburl [server url]`       | Wijzigt de server-URL in de masterlists/SA-MP client.                                                                     |
+| `/rcon unloadfs`                  | Unloadt het opgegeven filterscript (_voorbeeld: `/rcon unloadfs adminfs`_).                                               |
+| `/rcon reloadfs`                  | Reloadt het opgegeven filterscript (_voorbeeld: `/rcon reloadfs adminfs`_).                                               |
+| `/rcon rcon\_password [PASSWORD]` | Wijzigt het RCON-wachtwoord.                                                                                              |
+| `/rcon password [password]`       | Zet/reset het serverpassword.                                                                                             |
+| `/rcon messageslimit [count]`     | Wijzigt het max. aantal messages per seconde per client (standaard 500).                                                  |
+| `/rcon ackslimit [count]`         | Wijzigt de acks-limit (standaard 3000).                                                                                   |
+| `/rcon messageholelimit [count]`  | Wijzigt de message holes-limit (standaard 3000).                                                                          |
+| `/rcon playertimeout [limit m/s]` | Wijzigt de timeout (ms) wanneer een player geen packets verstuurt (standaard 1000).                                       |
+| `/rcon language [language]`       | Wijzigt de servertaal (_voorbeeld: `/rcon language English`_). Wordt getoond in de serverbrowser.                         |
 
 De vier limieten/counters hierboven zijn bedoeld om tools tegen te gaan die SA-MP-servers laten vastlopen of crashen. Stel ze in naar wat bij jouw server past. Standaarden zijn prima; als je onterechte kicks ziet, verhoog de waarden zodat legitieme spelers niet geraakt worden.
 
@@ -200,5 +200,3 @@ De volgende callbacks en functies zijn gerelateerd en mogelijk nuttig:
 
 - [IsPlayerAdmin](../scripting/functions/IsPlayerAdmin): checkt of een speler is ingelogd op RCON.
 - [SendRconCommand](../scripting/functions/SendRconCommand): stuurt een RCON-command vanuit je script.
-
-

@@ -9,9 +9,9 @@ tags: ["player", "npc"]
 
 Suriin kung ang isang player ay isang aktwal na player o isang NPC.
 
-| Name     | Description                    |
-| -------- | ------------------------------ |
-| playerid | Ang ID ng player na susuriin.  |
+| Name     | Description                   |
+| -------- | ----------------------------- |
+| playerid | Ang ID ng player na susuriin. |
 
 ## Returns
 

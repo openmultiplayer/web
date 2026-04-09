@@ -5,5 +5,3 @@ description: Overzicht van animatienamen en -bibliotheken voor gebruik met Apply
 ---
 
 > De volledige lijst met animaties en voorbeelden volgt de Engelstalige bron. Deze pagina biedt een Nederlandstalige header en context; referentie-inhoud blijft gelijk aan de bron.
-
-

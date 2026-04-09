@@ -9,14 +9,14 @@ tags: []
 
 Fungsi ini melakukan sama persis dengan AddStaticPickup, kecuali ia mengembalikan ID pengembalian yang dapat digunakan untuk menghancurkannya setelah itu dilacak menggunakan OnPlayerPickUpPickup.
 
-| Nama                                | Deskripsi                                                                       |
-| ----------------------------------- | --------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | Model dari pickup                                                          |
-| [type](../resources/pickuptypes) | Tipe pickup. Menentukan bagaimana pickup merespon saat diambil.               |
-| Float:X                             | Membuat pickup di kordinat X.                                         |
-| Float:Y                             | Membuat pickup di kordinat Y.                                         |
-| Float:Z                             | Membuat pickup di kordinat Y                                         |
-| virtualworld                        | Virtual World dari pickup. Gunakan -1 untuk membuat pickup di seluruh Virtual World |
+| Nama                             | Deskripsi                                                                           |
+| -------------------------------- | ----------------------------------------------------------------------------------- |
+| [model](../resources/pickupids)  | Model dari pickup                                                                   |
+| [type](../resources/pickuptypes) | Tipe pickup. Menentukan bagaimana pickup merespon saat diambil.                     |
+| Float:X                          | Membuat pickup di kordinat X.                                                       |
+| Float:Y                          | Membuat pickup di kordinat Y.                                                       |
+| Float:Z                          | Membuat pickup di kordinat Y                                                        |
+| virtualworld                     | Virtual World dari pickup. Gunakan -1 untuk membuat pickup di seluruh Virtual World |
 
 ## Returns
 
@@ -49,7 +49,7 @@ Satu-satunya pickup yang dapat diambil dari dalam kendaraan adalah 14 (kecuali p
 
 :::warning
 
-Bug yang diketahui: Pickups yang mempunyai X atau Y kurang dari -4096.0 atau lebih besar dari  4096.0 tidak akan muncul dan tidak akan memicu OnPlayerPickUpPickup salah satu.
+Bug yang diketahui: Pickups yang mempunyai X atau Y kurang dari -4096.0 atau lebih besar dari 4096.0 tidak akan muncul dan tidak akan memicu OnPlayerPickUpPickup salah satu.
 
 :::
 

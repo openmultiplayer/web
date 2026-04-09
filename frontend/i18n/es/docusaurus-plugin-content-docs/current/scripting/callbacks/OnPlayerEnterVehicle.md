@@ -10,9 +10,9 @@ Este callback se llama cuando un jugador comienza a entrar a un vehículo, o sea
 
 | Nombre      | Descripción                                                          |
 | ----------- | -------------------------------------------------------------------- |
-| playerid    | ID del jugador que intenta entrar a un vehículo.                     | 
-| vehicleid   | ID del vehículo al que el jugador está intentando entrar.            | 
-| ispassenger | 0 si está entrando como conductor. 1 si está entrando como pasajero. | 
+| playerid    | ID del jugador que intenta entrar a un vehículo.                     |
+| vehicleid   | ID del vehículo al que el jugador está intentando entrar.            |
+| ispassenger | 0 si está entrando como conductor. 1 si está entrando como pasajero. |
 
 ## Devoluciones
 

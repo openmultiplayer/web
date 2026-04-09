@@ -5,6 +5,14 @@ description: 强制 NPC 执行指定控制台命令。
 tags: []
 ---
 
+:::warning
+
+此函数已弃用。
+
+请参阅 `PC_EmulateCommand` 在 [Pawn.CMD](https://github.com/katursis/Pawn.CMD) 中的用法，或其他命令处理器所提供的类似方法
+
+:::
+
 ## 描述
 
 此函数允许 NPC 模拟执行指定的控制台命令，并产生相应的游戏效果。

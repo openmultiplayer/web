@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 چرخش یه وسیله نقلیه رو در محور Z (yaw) دریافت می‌کنه.
 
-| نام          | توضیحات                                                                    |
-| ------------ | -------------------------------------------------------------------------- |
-| vehicleid    | ID وسیله نقلیه‌ای که می‌خوای زاویه Z ش رو بگیری.                           |
-| &Float:angle | متغیر float برای ذخیره چرخش Z که بصورت reference پاس داده می‌شه.         |
+| نام          | توضیحات                                                          |
+| ------------ | ---------------------------------------------------------------- |
+| vehicleid    | ID وسیله نقلیه‌ای که می‌خوای زاویه Z ش رو بگیری.                 |
+| &Float:angle | متغیر float برای ذخیره چرخش Z که بصورت reference پاس داده می‌شه. |
 
 ## مقادیر برگشتی
 
@@ -35,9 +35,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
                string[64];
 
           vehicleid = GetPlayerVehicleID(playerid);
-          
+
           GetVehicleZAngle(vehicleid, rotZ);
-          
+
           format(string, sizeof(string), "The current vehicle rotation is: %.0f", rotZ);
           SendClientMessage(playerid, 0xFFFFFFFF, string);
           return 1;

@@ -9,7 +9,6 @@ tags: []
 
 Essa callback é executada quando um script de NPC é carregado.
 
-
 ## Exemplos
 
 ```c

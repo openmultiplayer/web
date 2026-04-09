@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Bu fonksiyon, bir araç imha edildiğinde çağrılır. - patladığında veya araç suya girdiğinde.
 
-| Parametre | Açıklama                                                                                                                                                        |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vehicleid | İmha edilen aracın ID'si.                                                                                                                                       |
-| killerid  | Aracı imha eden oyuncu (senkronize eden) oyuncunun ID'si. (adı yanıltıcıdır). Genellikle sürücü, yolcu (eğer varsa) veya en yakın oyuncu.                       |
+| Parametre | Açıklama                                                                                                                                  |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| vehicleid | İmha edilen aracın ID'si.                                                                                                                 |
+| killerid  | Aracı imha eden oyuncu (senkronize eden) oyuncunun ID'si. (adı yanıltıcıdır). Genellikle sürücü, yolcu (eğer varsa) veya en yakın oyuncu. |
 
 ## Çalışınca Verdiği Sonuçlar
 
@@ -33,7 +33,6 @@ public OnVehicleDeath(vehicleid, killerid)
 ## Notlar
 
 :::tip
-
 
 Bu fonksiyon, bir araç suya girdiğinde de çağrılacaktır, ancak araç ışınlanarak veya bir başka şey tarafından suya düşürüldüyse (yalnızca kısmen suya batırılmışsa) çağrılmaz. Fonksiyon, ikinci kez çağrılmaz, sürücü araçtan çıktığında veya kısa bir süre sonra araç kaybolabilir.
 

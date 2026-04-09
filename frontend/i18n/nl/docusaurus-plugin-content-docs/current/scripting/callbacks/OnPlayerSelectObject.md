@@ -9,15 +9,15 @@ tags: ["player", "object"]
 
 Deze callback wordt aangeroepen wanneer een speler een object selecteert na het gebruik van [BeginObjectSelecting](../functions/BeginObjectSelecting).
 
-| Naam               | Beschrijving                                             |
+| Naam               | Beschrijving                                            |
 | ------------------ | ------------------------------------------------------- |
 | playerid           | Het ID van de speler die een object selecteerde         |
 | SELECT_OBJECT:type | Het [type](../resources/selectobjecttypes) van selectie |
 | objectid           | Het ID van het geselecteerde object                     |
-| modelid            | Het model van het geselecteerde object                 |
-| Float:fX           | De X-positie van het geselecteerde object              |
-| Float:fY           | De Y-positie van het geselecteerde object              |
-| Float:fZ           | De Z-positie van het geselecteerde object              |
+| modelid            | Het model van het geselecteerde object                  |
+| Float:fX           | De X-positie van het geselecteerde object               |
+| Float:fY           | De Y-positie van het geselecteerde object               |
+| Float:fZ           | De Z-positie van het geselecteerde object               |
 
 ## Returns
 

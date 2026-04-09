@@ -9,22 +9,22 @@ tags: ["player", "object", "attachment"]
 
 Callback này được gọi khi một người chơi kết thúc chế độ chỉnh sửa đối tượng gắn kết.
 
-| Tên                        | Mô Tả                                                                                       |
-|----------------------------|---------------------------------------------------------------------------------------------|
-| playerid                   | ID của người chơi đã kết thúc chế độ chỉnh sửa.                                             |
-| EDIT_RESPONSE:response     | 0 nếu họ hủy bỏ (ESC) hoặc 1 nếu họ nhấp vào biểu tượng lưu.                                |
-| index                      | Chỉ số của đối tượng gắn kết (0-9)                                                           |
-| modelid                    | Mô hình của đối tượng gắn kết đã được chỉnh sửa.                                             |
-| boneid                     | Xương của đối tượng gắn kết đã được chỉnh sửa.                                              |
-| Float:fOffsetX             | Độ lệch X cho đối tượng gắn kết đã được chỉnh sửa.                                           |
-| Float:fOffsetY             | Độ lệch Y cho đối tượng gắn kết đã được chỉnh sửa.                                           |
-| Float:fOffsetZ             | Độ lệch Z cho đối tượng gắn kết đã được chỉnh sửa.                                           |
-| Float:fRotX                | Góc quay X cho đối tượng gắn kết đã được chỉnh sửa.                                         |
-| Float:fRotY                | Góc quay Y cho đối tượng gắn kết đã được chỉnh sửa.                                         |
-| Float:fRotZ                | Góc quay Z cho đối tượng gắn kết đã được chỉnh sửa.                                         |
-| Float:fScaleX              | Tỷ lệ X cho đối tượng gắn kết đã được chỉnh sửa.                                            |
-| Float:fScaleY              | Tỷ lệ Y cho đối tượng gắn kết đã được chỉnh sửa.                                            |
-| Float:fScaleZ              | Tỷ lệ Z cho đối tượng gắn kết đã được chỉnh sửa.                                            |
+| Tên                    | Mô Tả                                                        |
+| ---------------------- | ------------------------------------------------------------ |
+| playerid               | ID của người chơi đã kết thúc chế độ chỉnh sửa.              |
+| EDIT_RESPONSE:response | 0 nếu họ hủy bỏ (ESC) hoặc 1 nếu họ nhấp vào biểu tượng lưu. |
+| index                  | Chỉ số của đối tượng gắn kết (0-9)                           |
+| modelid                | Mô hình của đối tượng gắn kết đã được chỉnh sửa.             |
+| boneid                 | Xương của đối tượng gắn kết đã được chỉnh sửa.               |
+| Float:fOffsetX         | Độ lệch X cho đối tượng gắn kết đã được chỉnh sửa.           |
+| Float:fOffsetY         | Độ lệch Y cho đối tượng gắn kết đã được chỉnh sửa.           |
+| Float:fOffsetZ         | Độ lệch Z cho đối tượng gắn kết đã được chỉnh sửa.           |
+| Float:fRotX            | Góc quay X cho đối tượng gắn kết đã được chỉnh sửa.          |
+| Float:fRotY            | Góc quay Y cho đối tượng gắn kết đã được chỉnh sửa.          |
+| Float:fRotZ            | Góc quay Z cho đối tượng gắn kết đã được chỉnh sửa.          |
+| Float:fScaleX          | Tỷ lệ X cho đối tượng gắn kết đã được chỉnh sửa.             |
+| Float:fScaleY          | Tỷ lệ Y cho đối tượng gắn kết đã được chỉnh sửa.             |
+| Float:fScaleZ          | Tỷ lệ Z cho đối tượng gắn kết đã được chỉnh sửa.             |
 
 ## Trả Về
 

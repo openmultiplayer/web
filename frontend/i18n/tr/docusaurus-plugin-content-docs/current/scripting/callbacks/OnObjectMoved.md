@@ -9,9 +9,9 @@ tags: []
 
 Bu geri çağırma obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
 
-| Parametre       | Açıklama             |
-| -------- | -------------------- |
-| objectid | Hareket eden obje id |
+| Parametre | Açıklama             |
+| --------- | -------------------- |
+| objectid  | Hareket eden obje id |
 
 ## Çalışınca Vereceği Sonuçlar
 

@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Callback này được gọi khi một người chơi nhấp chuột vào một gangzone trên bản đồ trong menu tạm dừng (bằng cách nhấp chuột phải).
 
-| Tên       | Mô Tả                                                                           |
-|-----------|---------------------------------------------------------------------------------|
-| playerid  | ID của người chơi đã nhấp vào gangzone                                           |
-| zoneid    | ID của gangzone mà người chơi đã nhấp vào                                         |
+| Tên      | Mô Tả                                     |
+| -------- | ----------------------------------------- |
+| playerid | ID của người chơi đã nhấp vào gangzone    |
+| zoneid   | ID của gangzone mà người chơi đã nhấp vào |
 
 ## Trả Về
 

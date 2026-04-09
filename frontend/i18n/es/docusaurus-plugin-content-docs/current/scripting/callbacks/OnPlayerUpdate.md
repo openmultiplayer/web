@@ -8,7 +8,7 @@ tags: ["player"]
 
 Este callback se llama cada vez que un cliente/jugador actualiza su estado con el servidor. A menudo de usa para crear callbacks personalizados para detectar actualizaciones en el cliente que no son rastreadas activamente por el servidor, como las actualizaciones de salud o chaleco o jugadores cambiando de armas.
 
-| Nombre   | Descripción                                			  |
+| Nombre   | Descripción                                              |
 | -------- | -------------------------------------------------------- |
 | playerid | El ID del jugador que envió un paquete de actualización. |
 

@@ -8,10 +8,10 @@ tags: ["player", "menu"]
 
 Este callback se llama cuando un jugador selecciona un item de un menú (ShowMenuForPlayer).
 
-| Nombre   | Descripción                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | El ID del jugador que seleccionó un item en un menú.        |
-| row      | El ID de la fila elegida. La primera fila es ID 0.          |
+| Nombre   | Descripción                                          |
+| -------- | ---------------------------------------------------- |
+| playerid | El ID del jugador que seleccionó un item en un menú. |
+| row      | El ID de la fila elegida. La primera fila es ID 0.   |
 
 ## Devoluciones
 

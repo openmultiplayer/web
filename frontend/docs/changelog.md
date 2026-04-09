@@ -6,7 +6,6 @@ description: open.mp development progress and changelog.
 
 ## **[v1.5.8.3079](https://github.com/openmultiplayer/open.mp/releases/tag/v1.5.8.3079) (Latest)**
 
-
 We're excited to announce the release of our latest server version!
 
 This update brings several important fixes and introduces a long awaited new feature: **Fully controllable NPCs**!
@@ -54,10 +53,9 @@ For full changelog please read it from [here](https://github.com/openmultiplayer
 - Join the community and get support on [Discord](https://discord.gg/samp)
 - Support development via [OpenCollective](https://opencollective.com/openmultiplayer)
 
-This release sets the direction for the remainder of this year and lays the foundation for a new chapter in 2026. 
-We are entering a phase focused on deeper tooling, stronger native integrations, and more ambitious releases. 
+This release sets the direction for the remainder of this year and lays the foundation for a new chapter in 2026.
+We are entering a phase focused on deeper tooling, stronger native integrations, and more ambitious releases.
 We’re excited to build what comes next together with the community.
-
 
 <br />
 

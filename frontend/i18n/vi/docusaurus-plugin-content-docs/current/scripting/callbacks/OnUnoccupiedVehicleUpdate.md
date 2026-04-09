@@ -1,5 +1,4 @@
 ---
-
 title: OnUnoccupiedVehicleUpdate
 description: Callback này được gọi khi client của người chơi cập nhật/sync vị trí của một chiếc xe mà họ không lái.
 tags: ["vehicle"]
@@ -9,17 +8,17 @@ tags: ["vehicle"]
 
 Callback này được gọi khi client của người chơi cập nhật/sync vị trí của một chiếc xe mà họ không lái. Điều này có thể xảy ra khi người chơi không ở trong xe hoặc khi người chơi là hành khách của một chiếc xe không có tài xế.
 
-| Tên            | Mô tả                                                                                                               |
-|-----------------|---------------------------------------------------------------------------------------------------------------------|
-| vehicleid       | ID của xe có vị trí được cập nhật.                                                                                  |
-| playerid        | ID của người chơi đã gửi cập nhật vị trí xe.                                                                         |
-| passenger_seat  | ID của ghế nếu người chơi là hành khách. 0=không ở trong xe, 1=ghế hành khách phía trước, 2=ghế phía sau bên trái, 3=ghế phía sau bên phải, 4+ là ghế của xe buýt/coach có nhiều ghế hành khách. |
-| Float:new_x     | Tọa độ X mới của xe.                                                                                                 |
-| Float:new_y     | Tọa độ Y mới của xe.                                                                                                 |
-| Float:new_z     | Tọa độ Z mới của xe.                                                                                                 |
-| Float:vel_x     | Vận tốc X mới của xe.                                                                                               |
-| Float:vel_y     | Vận tốc Y mới của xe.                                                                                               |
-| Float:vel_z     | Vận tốc Z mới của xe.                                                                                               |
+| Tên            | Mô tả                                                                                                                                                                                            |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| vehicleid      | ID của xe có vị trí được cập nhật.                                                                                                                                                               |
+| playerid       | ID của người chơi đã gửi cập nhật vị trí xe.                                                                                                                                                     |
+| passenger_seat | ID của ghế nếu người chơi là hành khách. 0=không ở trong xe, 1=ghế hành khách phía trước, 2=ghế phía sau bên trái, 3=ghế phía sau bên phải, 4+ là ghế của xe buýt/coach có nhiều ghế hành khách. |
+| Float:new_x    | Tọa độ X mới của xe.                                                                                                                                                                             |
+| Float:new_y    | Tọa độ Y mới của xe.                                                                                                                                                                             |
+| Float:new_z    | Tọa độ Z mới của xe.                                                                                                                                                                             |
+| Float:vel_x    | Vận tốc X mới của xe.                                                                                                                                                                            |
+| Float:vel_y    | Vận tốc Y mới của xe.                                                                                                                                                                            |
+| Float:vel_z    | Vận tốc Z mới của xe.                                                                                                                                                                            |
 
 ## Trả về
 

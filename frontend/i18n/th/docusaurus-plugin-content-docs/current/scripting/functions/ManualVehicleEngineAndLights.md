@@ -12,7 +12,6 @@ Use this function before any player connects (OnGameModeInit) to tell all client
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

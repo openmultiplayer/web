@@ -9,9 +9,9 @@ tags: ["player", "menu"]
 
 Apelat când un jucător iese dintr-un meniu.
 
-| Nume     | Descriere                                 |
-| -------- | ----------------------------------------- |
-| playerid | ID-ul jucătorului care a ieșit din meniu  |
+| Nume     | Descriere                                |
+| -------- | ---------------------------------------- |
+| playerid | ID-ul jucătorului care a ieșit din meniu |
 
 ## Returns
 

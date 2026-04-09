@@ -8,11 +8,11 @@ tags: ["player"]
 
 Se llama cuando un jugador hace doble click a un jugador en el scoreboard (menú TAB).
 
-| Nombre          | Descripción                                                      |
-| --------------- | ---------------------------------------------------------------- |
-| playerid        | El ID del jugador que clickeó a otro jugador en el scoreboard.   |
-| clickedplayerid | El ID del jugador que fue clickeado en el scoreboard.            |
-| source          | El origen del click del jugador (ver notas abajo).               |
+| Nombre          | Descripción                                                    |
+| --------------- | -------------------------------------------------------------- |
+| playerid        | El ID del jugador que clickeó a otro jugador en el scoreboard. |
+| clickedplayerid | El ID del jugador que fue clickeado en el scoreboard.          |
+| source          | El origen del click del jugador (ver notas abajo).             |
 
 ## Devoluciones
 

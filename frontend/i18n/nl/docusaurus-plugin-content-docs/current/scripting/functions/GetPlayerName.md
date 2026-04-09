@@ -9,10 +9,10 @@ tags: ["player"]
 
 Haal de naam van een speler op.
 
-| Naam    | Beschrijving |
-| ------- | ------------ |
-| playerid | ID van de speler waarvan je de naam wilt ophalen. |
-| name[]   | Buffer om de naam in op te slaan (by reference). |
+| Naam     | Beschrijving                                                    |
+| -------- | --------------------------------------------------------------- |
+| playerid | ID van de speler waarvan je de naam wilt ophalen.               |
+| name[]   | Buffer om de naam in op te slaan (by reference).                |
 | len      | Maximale lengte van de string (aanbevolen MAX_PLAYER_NAME + 1). |
 
 ## Retourneert
@@ -46,5 +46,3 @@ Een naam kan tot 24 tekens lang zijn via [SetPlayerName](SetPlayerName). De clie
 - [GetPlayerPing](GetPlayerPing)
 - [GetPlayerScore](GetPlayerScore)
 - [GetPlayerVersion](GetPlayerVersion)
-
-

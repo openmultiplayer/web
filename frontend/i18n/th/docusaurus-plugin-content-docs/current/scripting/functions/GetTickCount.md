@@ -12,7 +12,6 @@ Returns the uptime of the server in milliseconds.
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

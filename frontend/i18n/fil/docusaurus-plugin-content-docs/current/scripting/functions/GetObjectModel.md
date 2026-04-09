@@ -11,9 +11,9 @@ tags: []
 
 Kunin ang model ID ng isang object (CreateObject).
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| objectid | Ang ID ng object na kukunin ang model    |
+| Name     | Description                           |
+| -------- | ------------------------------------- |
+| objectid | Ang ID ng object na kukunin ang model |
 
 ## Returns
 

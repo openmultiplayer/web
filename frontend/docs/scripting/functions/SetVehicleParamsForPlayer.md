@@ -9,12 +9,12 @@ tags: ["player", "vehicle"]
 
 Set the parameters of a vehicle for a player.
 
-| Name             | Description                                                                                                                    |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| vehicle          | The ID of the vehicle to set the parameters of.                                                                                |
-| playerid         | The ID of the player to set the vehicle's parameters for.                                                                      |
-| objective        | VEHICLE_PARAMS_OFF to disable the objective or VEHICLE_PARAMS_ON to show it. This is a bobbing yellow arrow above the vehicle. |
-| doorslocked      | VEHICLE_PARAMS_OFF to unlock the doors or VEHICLE_PARAMS_ON to lock them.                                                      |
+| Name        | Description                                                                                                                    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| vehicle     | The ID of the vehicle to set the parameters of.                                                                                |
+| playerid    | The ID of the player to set the vehicle's parameters for.                                                                      |
+| objective   | VEHICLE_PARAMS_OFF to disable the objective or VEHICLE_PARAMS_ON to show it. This is a bobbing yellow arrow above the vehicle. |
+| doorslocked | VEHICLE_PARAMS_OFF to unlock the doors or VEHICLE_PARAMS_ON to lock them.                                                      |
 
 ## Returns
 

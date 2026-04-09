@@ -1,5 +1,5 @@
 ---
-title : AddMenuItem
+title: AddMenuItem
 description: ajoute un élément à un menu spécifié.
 tags: ["menu"]
 ---

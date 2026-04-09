@@ -25,14 +25,14 @@ teleportmenu = CreateMenu("Teleportmenu", 2, 200.0, 100.0, 150.0, 150.0);
 
 Argumenten van [CreateMenu](../scripting/functions/CreateMenu):
 
-| Parameter       | Betekenis                                              |
-| --------------- | ------------------------------------------------------ |
-| title           | Kop van het menu                                      |
-| columns         | Aantal kolommen (max 2)                               |
-| Float:x         | Horizontale positie (links-rechts)                    |
-| Float:y         | Verticale positie (omhoog-omlaag)                     |
-| Float:col1width | Breedte kolom 1                                       |
-| Float:col2width | Breedte kolom 2                                       |
+| Parameter       | Betekenis                          |
+| --------------- | ---------------------------------- |
+| title           | Kop van het menu                   |
+| columns         | Aantal kolommen (max 2)            |
+| Float:x         | Horizontale positie (links-rechts) |
+| Float:y         | Verticale positie (omhoog-omlaag)  |
+| Float:col1width | Breedte kolom 1                    |
+| Float:col2width | Breedte kolom 2                    |
 
 ## Items toevoegen
 
@@ -128,8 +128,10 @@ Je kunt [TogglePlayerControllable](../scripting/functions/TogglePlayerControllab
 Succes met je eigen menu’s! Vragen? Stel ze op de forums/Discord.
 
 ---
+
 title: Menu Guide
 sidebar_label: Menu Guide
+
 ---
 
 Een korte tutorial over het gebruiken van het menusysteem van de game. Dit systeem verschilt van SA-MP dialogs en lijkt meer op de klassieke UI van de originele game.
@@ -154,14 +156,14 @@ teleportmenu = CreateMenu("Teleportmenu", 2, 200.0, 100.0, 150.0, 150.0);
 
 Uitleg [CreateMenu](../scripting/functions/CreateMenu)-argumenten:
 
-| Parameter       | Betekenis                                                      |
-| --------------- | -------------------------------------------------------------- |
-| title           | De titel van het menu                                         |
-| columns         | Aantal kolommen (max. 2)                                       |
-| Float:x         | X-positie op het scherm (links-rechts)                         |
-| Float:y         | Y-positie op het scherm (boven-onder)                          |
-| Float:col1width | Breedte van kolom 1                                            |
-| Float:col2width | Breedte van kolom 2                                            |
+| Parameter       | Betekenis                              |
+| --------------- | -------------------------------------- |
+| title           | De titel van het menu                  |
+| columns         | Aantal kolommen (max. 2)               |
+| Float:x         | X-positie op het scherm (links-rechts) |
+| Float:y         | Y-positie op het scherm (boven-onder)  |
+| Float:col1width | Breedte van kolom 1                    |
+| Float:col2width | Breedte van kolom 2                    |
 
 ## Items toevoegen
 
@@ -185,11 +187,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 Uitleg [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| Parameter | Betekenis                                      |
-| --------- | ---------------------------------------------- |
-| menuid    | In welk menu het item komt                     |
-| column    | In welke kolom het item komt                   |
-| text      | De tekst van het item                          |
+| Parameter | Betekenis                    |
+| --------- | ---------------------------- |
+| menuid    | In welk menu het item komt   |
+| column    | In welke kolom het item komt |
+| text      | De tekst van het item        |
 
 ## Actie bij selectie
 
@@ -228,5 +230,3 @@ if (strcmp(cmdtext, "/teleport", true) == 0)
 ```
 
 Tip: je kunt [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) op `false` zetten na `ShowMenuForPlayer` en weer `true` in `OnPlayerSelectedMenuRow` zodat spelers niet bewegen terwijl ze het menu browsen.
-
-

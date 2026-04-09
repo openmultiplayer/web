@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Promjena primarne i sekundarne boje vozila.
 
-| Ime       | Deskripcija                                    |
-| --------- | ---------------------------------------------- |
-| vehicleid | ID vozila za koje će se promijeniti boje       |
-| color1    | Primarna boja vozila                           |
-| color2    | Sekundarna boja vozila                         |
+| Ime       | Deskripcija                              |
+| --------- | ---------------------------------------- |
+| vehicleid | ID vozila za koje će se promijeniti boje |
+| color1    | Primarna boja vozila                     |
+| color2    | Sekundarna boja vozila                   |
 
 ## Returns
 

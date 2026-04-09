@@ -5,6 +5,12 @@ description: This will send a player text by the bot, just like using SendPlayer
 tags: []
 ---
 
+:::warning
+
+This function is deprecated. Please see [SendPlayerMessageToAll](SendPlayerMessageToAll).
+
+:::
+
 ## Description
 
 This will send a player text by the bot, just like using [SendPlayerMessageToAll](SendPlayerMessageToAll), but this function is to be used inside the NPC scripts.

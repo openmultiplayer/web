@@ -11,11 +11,11 @@ tags: ["pickup"]
 
 model یک pickup رو تنظیم می‌کنه.
 
-| نام               | توضیح                                 |
-|--------------------|---------------------------------------------|
-| pickupid           | ID pickup.                       |
+| نام                | توضیح                                       |
+| ------------------ | ------------------------------------------- |
+| pickupid           | ID pickup.                                  |
 | model              | [model](../resources/pickupids) برای تنظیم. |
-| bool:update = true | pickup رو برای همه آپدیت کنه. (true/false)    |
+| bool:update = true | pickup رو برای همه آپدیت کنه. (true/false)  |
 
 ## مقادیر بازگشتی
 

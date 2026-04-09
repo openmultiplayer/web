@@ -9,10 +9,10 @@ tags: ["player"]
 
 Acest callback este apelat atunci când starea oricărei taste [acceptate](../resources/keys) este schimbată (apăsată/eliberată).<br/>Tastele direcționale nu declanșează OnPlayerKeyStateChange (sus/jos/stânga/dreapta).
 
-| Name     | Descriere                                                                                        |
-| -------- | ------------------------------------------------------------------------------------------------ |
-| playerid | ID-ul jucătorului care a apăsat sau a eliberat o tastă.                                          |
-| newkeys  | O hartă (mască de biți) a cheilor deținute în prezent - [vezi aici](../resources/keys)           |
+| Name     | Descriere                                                                                                   |
+| -------- | ----------------------------------------------------------------------------------------------------------- |
+| playerid | ID-ul jucătorului care a apăsat sau a eliberat o tastă.                                                     |
+| newkeys  | O hartă (mască de biți) a cheilor deținute în prezent - [vezi aici](../resources/keys)                      |
 | oldkeys  | O hartă (mască de biți) a cheilor deținute înainte de modificarea curentă - [vezi aici](../resources/keys). |
 
 ## Returnări

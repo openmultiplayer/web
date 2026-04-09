@@ -22,10 +22,10 @@ Ron Cain ve James Hendrix'e (ve daha yakın zamanda Andy Yuen'e), ve Dr. Dobb's 
 
 Tasarım hedefleri ve uzlaşmaların ayrıntılı bir incelemesi Ek C'de bulunmaktadır; burada birkaç ana noktayı özetlemek isterim. Yukarıdaki paragraflarda belirtildiği gibi, pawn, uygulamaları özelleştirmek (betik yazarak) için, uygulamalar yazmak için değil. Pawn, nesneleri (metin, sprite'lar, akışlar, sorgular, vb.) ana uygulamada manipüle etmeyi amaçladığından pawn programları veri yapılandırmada zayıftır, ancak pawn programına, soyut makinesi dışındaki herhangi bir veriye doğrudan erişim izni verilmez. Bir pawn programının ana uygulamadaki nesneleri manipüle etmek için sahip olduğu tek yol, ana uygulamanın sağladığı alt rutinleri, yani "yerel işlevler"i çağırmaktır.
 
-Pawn, bu alanda esnek bir dildir: işlevleri çağırma. Pawn, bir işlevin herhangi bir argümanı için (sadece sonuncusu değil) varsayılan değerleri, çağrıya referansla çağrı yapma, "adlandırılmış" ve "pozisyonel" işlev argümanlarını destekler. Pawn'ın bir "tür denetimi" mekanizması yoktur, çünkü tip olmayan bir dil olması nedeniyle, ancak yerine bir "sınıflandırma kontrolü" mekanizması olan "etiketler"i sunar. Etiket sistemi, her bir argümanın birden fazla kabul edilebilir etiketi belirtmesine izin verdiği için özellikle işlev argümanları için kullanışlıdır.Ancak bunların birleşiminde. 
+Pawn, bu alanda esnek bir dildir: işlevleri çağırma. Pawn, bir işlevin herhangi bir argümanı için (sadece sonuncusu değil) varsayılan değerleri, çağrıya referansla çağrı yapma, "adlandırılmış" ve "pozisyonel" işlev argümanlarını destekler. Pawn'ın bir "tür denetimi" mekanizması yoktur, çünkü tip olmayan bir dil olması nedeniyle, ancak yerine bir "sınıflandırma kontrolü" mekanizması olan "etiketler"i sunar. Etiket sistemi, her bir argümanın birden fazla kabul edilebilir etiketi belirtmesine izin verdiği için özellikle işlev argümanları için kullanışlıdır.Ancak bunların birleşiminde.
 
 Pawn için, adlandırılmış argümanların —size işlev argümanlarını herhangi bir sırayla belirtme ve varsayılan değerlerin —ilginç olmayan argümanları belirtmeyi atlamınıza izin verme— kombinasyonunun, ana uygulamadaki nesneleri manipüle etmek için (yerel) işlevleri çağırmak için uygun ve "açıklayıcı" bir yol olduğunu düşünüyorum.
 
 ---
 
-[İçerik listesine geri dön](00-Contents)
+[İçerik listesine geri dön](Contents)

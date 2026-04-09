@@ -10,10 +10,10 @@ tags: ["player"]
 Callback này được gọi khi một người chơi nhấp đúp vào một người chơi trên bảng điểm.
 
 | Tên             | Mô Tả                                                        |
-|-----------------|--------------------------------------------------------------|
+| --------------- | ------------------------------------------------------------ |
 | playerid        | ID của người chơi đã nhấp vào một người chơi trên bảng điểm. |
-| clickedplayerid | ID của người chơi đã bị nhấp vào.                           |
-| source          | [Nguồn](../resources/clicksources) của cú nhấp chuột.       |
+| clickedplayerid | ID của người chơi đã bị nhấp vào.                            |
+| source          | [Nguồn](../resources/clicksources) của cú nhấp chuột.        |
 
 ## Trả Về
 

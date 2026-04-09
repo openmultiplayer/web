@@ -11,9 +11,9 @@ tags: ["npc", "angle", "position"]
 
 Rotates an NPC so it faces a specific world position.
 
-| Name   | Description |
-| ------ | ----------- |
-| npcid  | The ID of the NPC. |
+| Name    | Description                          |
+| ------- | ------------------------------------ |
+| npcid   | The ID of the NPC.                   |
 | Float:x | X coordinate of the target position. |
 | Float:y | Y coordinate of the target position. |
 | Float:z | Z coordinate of the target position. |

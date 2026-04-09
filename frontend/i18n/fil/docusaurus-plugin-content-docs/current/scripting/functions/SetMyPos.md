@@ -8,12 +8,12 @@ tags: ["npc"]
 ## Description
 
 I-set ang posisyon ng NPC
- 
-| Name     | Description                         |
-| -------- | ------------------------------------|
-| Float:x  | Ang X coordinate kung saan ilalagay ang NPC |
-| Float:y  | Ang Y coordinate kung saan ilalagay ang NPC |
-| Float:z  | Ang Z coordinate kung saan ilalagay ang NPC |
+
+| Name    | Description                                 |
+| ------- | ------------------------------------------- |
+| Float:x | Ang X coordinate kung saan ilalagay ang NPC |
+| Float:y | Ang Y coordinate kung saan ilalagay ang NPC |
+| Float:z | Ang Z coordinate kung saan ilalagay ang NPC |
 
 ## Returns
 

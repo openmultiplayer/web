@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Ang callback na ito ay tinatawag kapag ang isang sasakyan ay na-stream sa client ng isang manlalaro.
 
-| Name        | Description                                            |
-| ----------- | ------------------------------------------------------ |
-| vehicleid   | Ang ID ng sasakyan na nag-stream para sa player.       |
-| forplayerid | Ang ID ng player kung saan nag-stream ang sasakyan.    |
+| Name        | Description                                         |
+| ----------- | --------------------------------------------------- |
+| vehicleid   | Ang ID ng sasakyan na nag-stream para sa player.    |
+| forplayerid | Ang ID ng player kung saan nag-stream ang sasakyan. |
 
 ## Returns
 
@@ -35,6 +35,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 <TipNPCCallbacks />
 
 ## Related Callbacks
+
 - [OnVehicleStreamOut](OnVehicleStreamOut): Tinatawag ang callback na ito kapag nag-stream out ang isang sasakyan para sa isang player.
 - [OnPlayerStreamIn](OnPlayerStreamIn): Tinatawag ang callback na ito kapag nag-stream ang isang manlalaro para sa isa pang manlalaro.
 - [OnPlayerStreamOut](OnPlayerStreamOut): Tinatawag ang callback na ito kapag nag-stream out ang isang player para sa isa pang player.

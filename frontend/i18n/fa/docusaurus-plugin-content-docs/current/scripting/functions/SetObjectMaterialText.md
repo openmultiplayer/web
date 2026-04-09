@@ -9,19 +9,19 @@ tags: ["object"]
 
 جایگزینی بافت یک آبجکت با متن.
 
-| نام                                      | توضیحات                                                                                      |
-| ---------------------------------------- | -------------------------------------------------------------------------------------------- |
-| objectid                                 | شناسه آبجکتی که قرار است بافت آن با متن جایگزین شود.                                        |
-| const text[]                             | متنی که روی آبجکت نمایش داده می‌شود. (حداکثر ۲۰۴۸ کاراکتر)                                  |
-| materialIndex                            | شاخص متریال آبجکت برای جایگزینی با متن.                                                      |
-| OBJECT_MATERIAL_SIZE:materialsize        | [اندازه](../resources/materialtextsizes) متریال.                               |
-| const fontFace[]                         | فونت مورد استفاده.                                                                           |
-| fontSize                                 | اندازه متن (حداکثر ۲۵۵).                                                                      |
-| bool:bold                                | متن ضخیم. برای ضخیم true، برای غیرضخیم false تنظیم کنید.                                      |
-| fontColour                               | رنگ متن، در فرمت ARGB.                                                                        |
-| backgroundColour                         | رنگ پس‌زمینه، در فرمت ARGB.                                                                  |
-| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | [تراز](../resources/materialtextalignment) متن (پیش‌فرض: چپ‌چین).           |
-| OPEN_MP_TAGS:...                         | تعداد نامحدود آرگومان از هر نوع تگ.                                                           |
+| نام                                      | توضیحات                                                           |
+| ---------------------------------------- | ----------------------------------------------------------------- |
+| objectid                                 | شناسه آبجکتی که قرار است بافت آن با متن جایگزین شود.              |
+| const text[]                             | متنی که روی آبجکت نمایش داده می‌شود. (حداکثر ۲۰۴۸ کاراکتر)        |
+| materialIndex                            | شاخص متریال آبجکت برای جایگزینی با متن.                           |
+| OBJECT_MATERIAL_SIZE:materialsize        | [اندازه](../resources/materialtextsizes) متریال.                  |
+| const fontFace[]                         | فونت مورد استفاده.                                                |
+| fontSize                                 | اندازه متن (حداکثر ۲۵۵).                                          |
+| bool:bold                                | متن ضخیم. برای ضخیم true، برای غیرضخیم false تنظیم کنید.          |
+| fontColour                               | رنگ متن، در فرمت ARGB.                                            |
+| backgroundColour                         | رنگ پس‌زمینه، در فرمت ARGB.                                       |
+| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | [تراز](../resources/materialtextalignment) متن (پیش‌فرض: چپ‌چین). |
+| OPEN_MP_TAGS:...                         | تعداد نامحدود آرگومان از هر نوع تگ.                               |
 
 ## مقدار بازگشتی
 

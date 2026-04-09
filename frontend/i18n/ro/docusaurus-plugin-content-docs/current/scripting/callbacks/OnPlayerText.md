@@ -9,10 +9,10 @@ tags: ["player"]
 
 Apelat atunci când un jucător trimite un mesaj de chat.
 
-| Name     | Descriere                                |
-| -------- | ---------------------------------------- |
-| playerid | ID-ul jucătorului care a tastat textul.  |
-| text[]   | Textul pe care l-a tastat jucătorul.     |
+| Name     | Descriere                               |
+| -------- | --------------------------------------- |
+| playerid | ID-ul jucătorului care a tastat textul. |
+| text[]   | Textul pe care l-a tastat jucătorul.    |
 
 ## Returnări
 

@@ -9,7 +9,7 @@ tags: ["rcon", "administration"]
 
 Deze callback wordt aangeroepen wanneer iemand in-game probeert in te loggen op RCON, ongeacht of die poging slaagt of niet.
 
-| Naam       | Beschrijving                                                    |
+| Naam       | Beschrijving                                                   |
 | ---------- | -------------------------------------------------------------- |
 | ip[]       | Het IP-adres van de speler die probeerde in te loggen op RCON. |
 | password[] | Het wachtwoord dat bij de poging is gebruikt.                  |
@@ -68,5 +68,3 @@ Deze callback wordt alleen aangeroepen wanneer /rcon login in-game wordt gebruik
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Controleert of een speler is ingelogd op RCON.
 - [SetPlayerAdmin](../functions/SetPlayerAdmin): Zet de speler als RCON admin.
 - [SendRconCommand](../functions/SendRconCommand): Stuurt een RCON-command via het script.
-
-

@@ -12,7 +12,7 @@ tags: ["player"]
 Acest callback este apelat atunci când un jucător dă daune unui actor.
 
 | Nume            | Descriere                                              |
-|-----------------|--------------------------------------------------------|
+| --------------- | ------------------------------------------------------ |
 | playerid        | ID-ul jucătorului care a provocat daune.               |
 | damaged_actorid | ID-ul actorului care a primit daune.                   |
 | Float:amount    | Cantitatea de HP/armură pierduta de actor.             |

@@ -40,7 +40,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
 :::
 
 2. Atualizando sua Instância Linux:
-
    - Antes de prosseguir, vamos garantir que seu sistema esteja atualizado executando:
 
    ```
@@ -52,7 +51,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
    ```
 
 3. Criando uma conta de serviço segura:
-
    - Por razões de segurança, devemos criar uma conta de serviço dedicada sem um diretório home:
 
    ```
@@ -60,7 +58,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
    ```
 
 4. Bloqueando a conta de serviço:
-
    - Vamos impedir que a conta de serviço seja usada para login:
 
    ```
@@ -68,7 +65,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
    ```
 
 5. Criando um diretório para os arquivos do servidor:
-
    - Usaremos o diretório /opt, este é o local padrão para aplicações de terceiros:
 
    ```
@@ -76,7 +72,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
    ```
 
 6. Definindo permissões para o diretório:
-
    - Alterando o grupo do diretório para corresponder à conta de serviço:
 
    ```
@@ -98,7 +93,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
 ## Fase 2: Instalando os Arquivos do Servidor open.mp
 
 7. Vamos navegar para o diretório do servidor:
-
    - Precisamos ir para o diretório /opt/omp-server onde o servidor será armazenado:
 
    ```
@@ -106,7 +100,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
    ```
 
 8. Baixando os arquivos do servidor open.mp:
-
    - Baixe a versão mais recente do servidor open.mp:
 
    ```
@@ -121,7 +114,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
 :::
 
 9. Extraindo os arquivos do servidor:
-
    - Uma vez baixado, extraia os arquivos:
 
    ```
@@ -133,7 +125,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
 ## Fase 3: Configurando e Iniciando o Servidor
 
 10. Instalando as bibliotecas x86 necessárias:
-
     - Como o servidor roda como uma aplicação de 32 bits, você precisa habilitar o suporte para arquitetura de 32 bits:
 
     ```
@@ -149,7 +140,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
     ```
 
 11. Tornando o servidor executável:
-
     - Altere as permissões para que o servidor possa ser executado (necessário apenas uma vez!):
 
     ```
@@ -161,7 +151,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
     ```
 
 12. Iniciando o servidor:
-
     - Use o seguinte comando para iniciar o servidor em segundo plano:
 
     ```
@@ -175,7 +164,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
 ## Fase 4: Gerenciando o Servidor
 
 13. Parando o servidor:
-
     - Para parar o servidor, use o PID do passo 12 e execute:
 
     ```
@@ -183,7 +171,6 @@ Procure guias online ou a documentação do seu provedor de hospedagem se não t
     ```
 
 14. Encontrando o ID do Processo (se esquecido):
-
     - Se você esquecer o ID do processo, execute:
 
     ```

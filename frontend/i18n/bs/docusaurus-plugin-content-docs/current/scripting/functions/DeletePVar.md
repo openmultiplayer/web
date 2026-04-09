@@ -9,10 +9,10 @@ tags: ["pvar"]
 
 Briše prethodno postavljenu varijablu igrača.
 
-| Ime      | Deskripcija                                |
-| -------- | ------------------------------------------ |
-| playerid | ID igrača kojem brišemo varijablu          |
-| varname  | Ime varijable koju brišemo                 |
+| Ime      | Deskripcija                       |
+| -------- | --------------------------------- |
+| playerid | ID igrača kojem brišemo varijablu |
+| varname  | Ime varijable koju brišemo        |
 
 ## Returns
 

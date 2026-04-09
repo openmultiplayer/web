@@ -5,6 +5,7 @@ import Layout from "@theme/Layout";
 import Translate from "@docusaurus/Translate";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const API_SERVER = (ip: string) => `${API_ADDRESS}/servers/${ip}`;
 
@@ -122,17 +123,26 @@ const Info = ({ data }: { data: ServerAllData }) => (
 
         <div className="server-info-divider" />
 
-        <div className="server-info-footer">
-          <time className="server-info-last-updated">
-            <Translate
-              id="serverInfo.lastUpdated"
-              description="Last updated label"
-              values={{ time: formatDistance(new Date(data.lastUpdated), new Date()) }}
-            >
-              {'Last updated {time} ago'}
-            </Translate>
-          </time>
-        </div>
+        <BrowserOnly>
+          {() => (
+            <div className="server-info-footer">
+              <time className="server-info-last-updated">
+                <Translate
+                  id="serverInfo.lastUpdated"
+                  description="Last updated label"
+                  values={{
+                    time: formatDistance(
+                      new Date(data.lastUpdated),
+                      new Date(),
+                    ),
+                  }}
+                >
+                  {"Last updated {time} ago"}
+                </Translate>
+              </time>
+            </div>
+          )}
+        </BrowserOnly>
       </div>
     </div>
   </article>

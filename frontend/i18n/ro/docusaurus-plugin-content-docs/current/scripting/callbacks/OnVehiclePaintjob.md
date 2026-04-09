@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Apelat atunci când un jucător previzualizează o vopsire a unui vehicul într-un magazin de mod.
 
-| Nume       | Descriere                                                        |
-| ---------- | ---------------------------------------------------------------- |
-| playerid   | ID-ul jucătorului care a schimbat vopsirea vehiculului său.      |
-| vehicleid  | ID-ul vehiculului căruia i s-a schimbat lucrările de vopsire.    |
-| paintjobid | ID-ul noii lucrări de vopsire.                                   |
+| Nume       | Descriere                                                     |
+| ---------- | ------------------------------------------------------------- |
+| playerid   | ID-ul jucătorului care a schimbat vopsirea vehiculului său.   |
+| vehicleid  | ID-ul vehiculului căruia i s-a schimbat lucrările de vopsire. |
+| paintjobid | ID-ul noii lucrări de vopsire.                                |
 
 ## Returnări
 

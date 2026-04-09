@@ -11,10 +11,10 @@ tags: ["player"]
 
 Bu geri çağırma, bir oyuncu model cache indirmesini bitirdiğinde çağırılır.
 
-| Parametre         | Açıklama                                                                       |
-| ------------ | ------------------------------------------------------------------------------ |
-| playerid     | Model cacheini indirmeyi bitiren oyuncunun ID'si.                              |
-| virtualworld | Oyuncunun model cache indirmesini bitirdiği virtual world ID'si.               |
+| Parametre    | Açıklama                                                         |
+| ------------ | ---------------------------------------------------------------- |
+| playerid     | Model cacheini indirmeyi bitiren oyuncunun ID'si.                |
+| virtualworld | Oyuncunun model cache indirmesini bitirdiği virtual world ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

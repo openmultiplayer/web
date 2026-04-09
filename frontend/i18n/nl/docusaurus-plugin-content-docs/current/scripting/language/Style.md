@@ -141,5 +141,3 @@ Altijd `SCREAMING_SNAKE_CASE`. Vermijd nieuwe syntaxis-elementen om verwarring t
 ### Documentatie
 
 Documenteer geëxporteerde functies kort met één regel, bv. `// FunctionName doet X, Y, Z en retourneert A`. Elk pakket heeft een `README`; modules kunnen een korte eerste-regelbeschrijving hebben.
-
-

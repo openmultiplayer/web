@@ -9,11 +9,11 @@ tags: ["player"]
 
 This callback is called when a player double-clicks on a player on the scoreboard.
 
-| Name            | Description                                                      |
-| --------------- | ---------------------------------------------------------------- |
-| playerid        | The ID of the player that clicked on a player on the scoreboard. |
-| clickedplayerid | The ID of the player that was clicked on.                        |
-| source          | The [source](../resources/clicksources) of the player's click.   |
+| Name                | Description                                                      |
+| ------------------- | ---------------------------------------------------------------- |
+| playerid            | The ID of the player that clicked on a player on the scoreboard. |
+| clickedplayerid     | The ID of the player that was clicked on.                        |
+| CLICK_SOURCE:source | The [source](../resources/clicksources) of the player's click.   |
 
 ## Returns
 

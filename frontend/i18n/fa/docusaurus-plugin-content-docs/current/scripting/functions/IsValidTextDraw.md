@@ -13,9 +13,9 @@ tags: ["textdraw"]
 
 ## پارامترها
 
-| نام         | توضیحات                          |
-| ----------- | -------------------------------- |
-| Text:textid | ID textdraw که باید چک بشه.     |
+| نام         | توضیحات                     |
+| ----------- | --------------------------- |
+| Text:textid | ID textdraw که باید چک بشه. |
 
 ## مقادیر برگشتی
 
@@ -29,7 +29,7 @@ new Text:gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
-    
+
     if (IsValidTextDraw(gMyTextdraw))
     {
         // Textdraw is valid

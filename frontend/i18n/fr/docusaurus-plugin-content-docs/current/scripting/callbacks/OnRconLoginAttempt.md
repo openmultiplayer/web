@@ -9,11 +9,11 @@ tags: []
 
 Cette callback est appelée lorsque quelqu'un tente de se connecte en RCON, avec succès ou pas.
 
-| Nom                 | Description                                                          |
-| ------------------- | -------------------------------------------------------------------- |
-| `string` ip[]       | L'IP du joueur qui a tenté de se connecter                           |
-| `string` password[] | Le mot de passe utilisé pour se connecter                            |
-| `int` success        | 	**0** si le mot de passe est incorrect, ou **1** si il est correct |
+| Nom                 | Description                                                        |
+| ------------------- | ------------------------------------------------------------------ |
+| `string` ip[]       | L'IP du joueur qui a tenté de se connecter                         |
+| `string` password[] | Le mot de passe utilisé pour se connecter                          |
+| `int` success       | **0** si le mot de passe est incorrect, ou **1** si il est correct |
 
 ## Valeur de retour
 

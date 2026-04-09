@@ -12,7 +12,6 @@ Disables the nametag Line-Of-Sight checking so that players can see nametags thr
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

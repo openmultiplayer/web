@@ -3,7 +3,6 @@ title: DisableNameTagLOS
 sidebar_label: DisableNameTagLOS
 description: Desativa a verificação de linha de visão (Line-Of-Sight) para nametags, permitindo que os jogadores vejam os nomes através de objetos.
 tags: []
-
 ---
 
 ## Descrição

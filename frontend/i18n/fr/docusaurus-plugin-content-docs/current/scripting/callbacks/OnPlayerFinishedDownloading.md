@@ -13,10 +13,10 @@ Callback appelée quand un joueur fini de télécharger les models custom du ser
 
 Pour plus d'informations sur comment ajouter des custom models sur son serveur, référez-vous aux tutoriels sur [Burgershot.gg](https://forum.open.mp/).
 
-| Nom                | Description                                                                    |
-| ------------------ | ------------------------------------------------------------------------------ |
-| `int` playerid     | ID du joueur qui a fini le téléchargement des models custom.                   |
-| `int` virtualworld | ID du virtual world pour lequel le joueur a fini le téléchargement des models  |
+| Nom                | Description                                                                   |
+| ------------------ | ----------------------------------------------------------------------------- |
+| `int` playerid     | ID du joueur qui a fini le téléchargement des models custom.                  |
+| `int` virtualworld | ID du virtual world pour lequel le joueur a fini le téléchargement des models |
 
 ## Valeur de retour
 

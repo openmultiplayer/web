@@ -15,9 +15,9 @@ Bu geri çağırma **sadece** araç **re**spawn edildiğinde çağrılır! Creat
 
 Bu geri çağırma bir araç respawn edildiğinde çağrılır.
 
-| Parametre      | Açıklama                            |
-| --------- | ----------------------------------- |
-| vehicleid | Spawnlanan aracın ID'si.            |
+| Parametre | Açıklama                 |
+| --------- | ------------------------ |
+| vehicleid | Spawnlanan aracın ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

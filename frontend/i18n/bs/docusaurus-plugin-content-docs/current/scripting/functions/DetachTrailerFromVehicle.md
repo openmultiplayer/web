@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Razdvaja vozilo i prikolicu, ukoliko postoji.
 
-| Ime       | Deskripcija                |
-| --------- | -------------------------- |
-| vehicleid | ID vozilo koji vuče        |
+| Ime       | Deskripcija         |
+| --------- | ------------------- |
+| vehicleid | ID vozilo koji vuče |
 
 ## Returns
 

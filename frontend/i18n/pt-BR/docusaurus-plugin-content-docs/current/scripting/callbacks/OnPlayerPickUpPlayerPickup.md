@@ -12,7 +12,7 @@ tags: ["player", "pickup", "playerpickup"]
 Este callback é chamado quando um jogador coleta um player-pickup criado com [CreatePlayerPickup](../functions/CreatePlayerPickup).
 
 | Nome     | Descrição                                                                                   |
-|----------|---------------------------------------------------------------------------------------------|
+| -------- | ------------------------------------------------------------------------------------------- |
 | playerid | O ID do jogador que coletou o player-pickup.                                                |
 | pickupid | O ID do player-pickup, retornado por [CreatePlayerPickup](../functions/CreatePlayerPickup). |
 
@@ -49,14 +49,14 @@ public OnPlayerPickUpPlayerPickup(playerid, pickupid)
 
 ## Callbacks Relacionados
 
-Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma. 
+Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma.
 
 - [OnPlayerPickupStreamIn](OnPlayerPickupStreamIn): Chamado quando um player-pickup entra no campo de visão do jogador.
 - [OnPlayerPickupStreamOut](OnPlayerPickupStreamOut): Chamado quando um player-pickup sai do campo de visão do jogador.
 
 ## Funções Relacionadas
 
-As seguintes funções podem ser úteis, pois estão relacionadas a este callback de alguma forma. 
+As seguintes funções podem ser úteis, pois estão relacionadas a este callback de alguma forma.
 
 - [CreatePlayerPickup](../functions/CreatePlayerPickup): Cria um pickup que será visível apenas para um jogador.
 - [DestroyPlayerPickup](../functions/DestroyPlayerPickup): Destroi um player-pickup.

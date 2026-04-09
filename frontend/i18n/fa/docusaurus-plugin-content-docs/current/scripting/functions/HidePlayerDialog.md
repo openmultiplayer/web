@@ -11,9 +11,9 @@ tags: ["player", "dialog"]
 
 هر دیالوگی که بازیکن ممکنه در حال حاضر ببینه رو مخفی می‌کنه.
 
-| نام      | توضیحات                                                      |
-| -------- | ------------------------------------------------------------ |
-| playerid | ID بازیکنی که می‌خوای دیالوگ فعلیش رو مخفی کنی.              |
+| نام      | توضیحات                                         |
+| -------- | ----------------------------------------------- |
+| playerid | ID بازیکنی که می‌خوای دیالوگ فعلیش رو مخفی کنی. |
 
 ## مقادیر برگشتی
 
@@ -29,13 +29,13 @@ public OnPlayerConnect(playerid)
     if (IsAccountRegistered(playerid)) // Imaginary function to check if the player name is registered
     {
         ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "Login", "Insert Your Password", "Login", ""); // shows login dialog to player
-        
+
         new ipAddress[16];
         GetPlayerIp(playerid, ipAddress, sizeof(ipAddress)); // get player's ip address
-        
+
         if (IsBanned(ipAddress)) // check if the player ip is banned
         {
-            SendClientMessage(playerid, 0xFF0000FF, "You are banned from this server!"); 
+            SendClientMessage(playerid, 0xFF0000FF, "You are banned from this server!");
             HidePlayerDialog(playerid); // Hides login dialog
         }
     }

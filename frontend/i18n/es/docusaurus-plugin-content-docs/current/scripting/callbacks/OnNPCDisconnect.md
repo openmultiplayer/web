@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Este callback se llama cuando un NPC se desconecta del servidor.
 
-| Nombre       | Descripción                                             |
-| ------------ | ------------------------------------------------------- |
-| reason[]     | La razón por la cual el NPC se desconectó del servidor  |  
+| Nombre   | Descripción                                            |
+| -------- | ------------------------------------------------------ |
+| reason[] | La razón por la cual el NPC se desconectó del servidor |
 
 ## Ejemplos
 

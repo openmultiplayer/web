@@ -9,11 +9,11 @@ tags: ["player"]
 
 Kliče se, ko igralec dvakrat klikne na igralca na semaforju (TAB).
 
-| Ime             | Opis                                                 |
-| --------------- | ---------------------------------------------------- |
-| playerid        | ID igralec, ki je kliknil na igralca na semaforju.   |
-| clickedplayerid | ID igralec, na katerega se klikne.                   |
-| source          | Vir klika predvajalnika.                             |
+| Ime             | Opis                                               |
+| --------------- | -------------------------------------------------- |
+| playerid        | ID igralec, ki je kliknil na igralca na semaforju. |
+| clickedplayerid | ID igralec, na katerega se klikne.                 |
+| source          | Vir klika predvajalnika.                           |
 
 ## Returns
 

@@ -11,10 +11,10 @@ tags: ["3dtextlabel"]
 
 چک می‌کنه که آیا یه 3D text label برای بازیکن stream شده یا نه.
 
-| نام           | توضیحات                      |
-| ------------- | ---------------------------- |
-| playerid      | ID بازیکن.                    |
-| Text3D:textid | ID 3D text label.            |
+| نام           | توضیحات           |
+| ------------- | ----------------- |
+| playerid      | ID بازیکن.        |
+| Text3D:textid | ID 3D text label. |
 
 ## مقادیر برگشتی
 

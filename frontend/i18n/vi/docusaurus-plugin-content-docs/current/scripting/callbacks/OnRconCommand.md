@@ -1,5 +1,4 @@
 ---
-
 title: OnRconCommand
 description: Callback này được gọi khi một lệnh được gửi qua bảng điều khiển máy chủ, RCON từ xa, hoặc thông qua lệnh "/rcon" trong trò chơi.
 tags: ["rcon", "administration"]
@@ -9,9 +8,9 @@ tags: ["rcon", "administration"]
 
 Callback này được gọi khi một lệnh được gửi qua bảng điều khiển máy chủ, RCON từ xa, hoặc thông qua lệnh "/rcon" trong trò chơi.
 
-| Tên  | Mô tả                                                                         |
-| ----- | ----------------------------------------------------------------------------- |
-| cmd[] | Một chuỗi chứa lệnh đã nhập, cũng như bất kỳ tham số nào được truyền đi.   |
+| Tên   | Mô tả                                                                    |
+| ----- | ------------------------------------------------------------------------ |
+| cmd[] | Một chuỗi chứa lệnh đã nhập, cũng như bất kỳ tham số nào được truyền đi. |
 
 ## Giá trị trả về
 
@@ -67,4 +66,3 @@ Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này t
 
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Kiểm tra xem một người chơi có đang đăng nhập vào RCON không.
 - [SetPlayerAdmin](../functions/SetPlayerAdmin): Đặt người chơi làm quản trị viên RCON.
-

@@ -12,7 +12,6 @@ Ends the current gamemode.
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

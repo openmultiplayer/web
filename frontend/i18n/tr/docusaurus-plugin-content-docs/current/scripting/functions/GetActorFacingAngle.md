@@ -11,10 +11,10 @@ tags: ["actor"]
 
 Aktörün açısını kontrol etme.
 
-| Parametre  | Açıklama                                                                                    |
-| ---------- | ------------------------------------------------------------------------------------------- |
-| actorid    | Açısı kontrol edilecek aktörün ID'si.                                                       |
-| &Float:ang | Aktörün kontrol edilen açısının kaydedileceği, referansla geçirilen bir float değişkeni.    |
+| Parametre  | Açıklama                                                                                 |
+| ---------- | ---------------------------------------------------------------------------------------- |
+| actorid    | Açısı kontrol edilecek aktörün ID'si.                                                    |
+| &Float:ang | Aktörün kontrol edilen açısının kaydedileceği, referansla geçirilen bir float değişkeni. |
 
 ## Çalışınca Vereceği Sonuçlar
 

@@ -13,5 +13,3 @@ Sommige previews tonen kleiner dan de werkelijke afmetingen (bijv. `LOADSCS:load
 :::
 
 > De volledige tabellen met libraries/entries volgen de Engelstalige bron.
-
-

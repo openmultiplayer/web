@@ -10,7 +10,7 @@ sidebar_label: سبک های دیالوگ
 - در [OnDialogResponse](../callbacks/OnDialogResponse) فشردن **button1** باعث میشود **response** **1** باشد، اگر **button2** فشرده شود باعث میشود **response** **0** شود.
 - هر دیالوگ میتواند دو دکمه داشته باشید. برای اینکه دکمه نشان داده نشود آن را خالی بگذارید، مثل مثال اول. پلیر ها قادر نخواهند بود بر روی آن دکمه کلیک کنند اما آن ها قادر خواند بود با فشردن دکمه ESC [OnDialogResponse](../callbacks/OnDialogResponse) را با **response** = **0** فرا بخوانند.
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): روش color-embedding میتواند برای هر string استفاده شود : **caption**, **info**, **button1** و **button2**.
-:::
+  :::
 
 - این صفحه [ShowPlayerDialog](../functions/ShowPlayerDialog) و [OnDialogResponse](../callbacks/OnDialogResponse) را توضیح میدهد.
 - برای دیدن محدود ها صفحه [Limits](limits) را ببینید.
@@ -41,6 +41,7 @@ public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
 - روش Color-Embedding بعد از \n \t ریست نمیشود و رنگ آن عوض نمیشود.
 
 :::
+
 </div>
 
 ```c
@@ -53,13 +54,12 @@ ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_MSGBOX, "Caption", "Info\
 
 :::note نکته
 
-- **listitem**  همیشه **-1** است.
+- **listitem** همیشه **-1** است.
 - **inputtext** همیشه خالی است.
 
 :::
 
 </div>
-
 
 ```c
 // Dokme feshorde shod
@@ -97,7 +97,7 @@ ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_INPUT, "Caption", "Enter 
 
 :::note
 
-- **listitem**  همیشه **-1** است.
+- **listitem** همیشه **-1** است.
 - **inputtext** توسط کاربر نوشته شده، شامل رنگ هم میشود.
 
 :::
@@ -188,7 +188,7 @@ ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_PASSWORD, "Caption", "Ent
 
 :::note نکته
 
-- **listitem**  همیشه **-1** است.
+- **listitem** همیشه **-1** است.
 - **inputtext** متن مورد انتخاب شده، شامل رنگ ها نمیشود.
 
 :::
@@ -202,6 +202,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = -1, inputtext =
 // wrote "input" and pressed the right button
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext = 'input' (size: 5)
 ```
+
 <div dir="rtl" style={{ textAlign: "right" }}>
 
 ## سبک 4: `DIALOG_STYLE_TABLIST`

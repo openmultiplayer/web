@@ -9,10 +9,10 @@ tags: ["player", "menu"]
 
 Cette callback est appelée lorsqu'un joueur sélectionne un article depuis un menu [(ShowMenuForPlayer)](../functions/ShowMenuForPlayer).
 
-| Nom            | Description                                                          |
-| -------------- | -------------------------------------------------------------------- |
-| `int` playerid | L'ID du joueur qui a sélectionné le menu.                            |
-| `int` row      | 	L'ID de la ligne qui a été sélectionnée. La première ligne = **0**. |
+| Nom            | Description                                                         |
+| -------------- | ------------------------------------------------------------------- |
+| `int` playerid | L'ID du joueur qui a sélectionné le menu.                           |
+| `int` row      | L'ID de la ligne qui a été sélectionnée. La première ligne = **0**. |
 
 ## Valeur de retour
 
@@ -48,7 +48,6 @@ public OnPlayerSelectedMenuRow(playerid, row)
 ## Astuces
 
 :::tip
-
 
 L'ID du menu choisi n'est pas un paramètre de cette callback. GetPlayerMenu doit être utilisé pour déterminer quel menu le joueur a-t-il sélectionné.
 

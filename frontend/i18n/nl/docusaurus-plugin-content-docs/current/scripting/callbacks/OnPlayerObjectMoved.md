@@ -10,7 +10,7 @@ tags: ["player", "object", "playerobject"]
 Deze callback wordt aangeroepen wanneer een player-object is verplaatst na [MovePlayerObject](../functions/MovePlayerObject) (wanneer het stopt met bewegen).
 
 | Naam     | Beschrijving                               |
-| -------- | ------------------------------------------- |
+| -------- | ------------------------------------------ |
 | playerid | De speler aan wie het object is toegewezen |
 | objectid | Het ID van het player-object dat bewoog    |
 
@@ -43,5 +43,3 @@ public OnPlayerObjectMoved(playerid, objectid)
 - [StopPlayerObject](../functions/StopPlayerObject): Stop een player-object met bewegen.
 - [CreatePlayerObject](../functions/CreatePlayerObject): Maak een object voor slechts één speler.
 - [DestroyPlayerObject](../functions/DestroyPlayerObject): Vernietig een player-object.
-
-

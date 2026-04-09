@@ -9,8 +9,8 @@ tags: ["vehicle"]
 
 Löscht ein Fahrzeug. Fahrzeug verschwindet sofort.
 
-| Name      | Beschreibung                       |
-| --------- | --------------------------------- |
+| Name      | Beschreibung                             |
+| --------- | ---------------------------------------- |
 | vehicleid | Die ID des Fahrzeugs, das zerstört wird. |
 
 ## Rückgabe(return value)

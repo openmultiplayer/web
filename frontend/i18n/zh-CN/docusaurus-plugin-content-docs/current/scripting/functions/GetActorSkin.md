@@ -1,23 +1,23 @@
 ---
 title: GetActorSkin
 sidebar_label: GetActorSkin
-description: 获取角色当前使用的皮肤ID。
-tags: ["角色"]
+description: 获取演员当前使用的皮肤ID。
+tags: ["演员"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
 ## 描述
 
-获取角色当前使用的皮肤 ID。
+获取演员当前使用的皮肤 ID。
 
 | 参数    | 说明                |
 | ------- | ------------------- |
-| actorid | 要获取皮肤的角色 ID |
+| actorid | 要获取皮肤的演员 ID |
 
 ## 返回值
 
-返回角色当前使用的皮肤 ID。
+返回演员当前使用的皮肤 ID。
 
 ## 示例代码
 
@@ -26,7 +26,7 @@ new gMyActor;
 
 public OnGameModeInit()
 {
-    gMyActor = CreateActor(179, 1153.9640, -1772.3915, 16.5920, 0.0000);  // 创建皮肤ID为179的角色
+    gMyActor = CreateActor(179, 1153.9640, -1772.3915, 16.5920, 0.0000);  // 创建皮肤ID为179的演员
 
     new actorSkinID = GetActorSkin(gMyActor);
     // `actorSkinID`的值现在是179
@@ -36,5 +36,5 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [CreateActor](CreateActor): 创建角色（静态 NPC）
-- [SetActorSkin](SetActorSkin): 设置角色的皮肤 ID
+- [CreateActor](CreateActor): 创建演员（静态 NPC）
+- [SetActorSkin](SetActorSkin): 设置演员的皮肤 ID

@@ -11,11 +11,11 @@ tags: ["pickup"]
 
 نوع یک pickup رو تنظیم می‌کنه.
 
-| نام               | توضیح                                         |
-|-------------------|-------------------------------------------------|
-| pickupid           | ID pickup.                               |
+| نام                | توضیح                                              |
+| ------------------ | -------------------------------------------------- |
+| pickupid           | ID pickup.                                         |
 | type               | [نوع pickup](../resources/pickuptypes) برای تنظیم. |
-| bool:update = true | pickup رو برای همه آپدیت کنه. (true/false)            |
+| bool:update = true | pickup رو برای همه آپدیت کنه. (true/false)         |
 
 ## مقادیر بازگشتی
 

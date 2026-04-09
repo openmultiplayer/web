@@ -9,9 +9,9 @@ tags: []
 
 Dobij bool(ean) vrijednost varijable iz konzole.
 
-| Ime             | Deskripcija                                           |
-| --------------- | ----------------------------------------------------- |
-| const varname[] | Ime boolean varijable za dobijanje vrijednosti.       |
+| Ime             | Deskripcija                                     |
+| --------------- | ----------------------------------------------- |
+| const varname[] | Ime boolean varijable za dobijanje vrijednosti. |
 
 ## Returns
 

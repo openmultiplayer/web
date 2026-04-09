@@ -9,15 +9,15 @@ tags: ["vehicle"]
 
 Nagdaragdag ng 'static' na sasakyan (na-pre-load ang mga modelo para sa mga manlalaro) sa gamemode.
 
-| Name                                     | Description                            |
-| ---------------------------------------- | -------------------------------------- |
-| modelid                                  | Ang Model ID para sa sasakyan.         |
-| Float:spawn_X                            | Ang X-coordinate para sa sasakyan.     |
-| Float:spawn_Y                            | Ang Y-coordinate para sa sasakyan.     |
-| Float:spawn_Z                            | Ang Z-coordinate para sa sasakyan.     |
-| Float:z_angle                            | Direksyon ng sasakyan - anggulo.       |
+| Name                                  | Description                                     |
+| ------------------------------------- | ----------------------------------------------- |
+| modelid                               | Ang Model ID para sa sasakyan.                  |
+| Float:spawn_X                         | Ang X-coordinate para sa sasakyan.              |
+| Float:spawn_Y                         | Ang Y-coordinate para sa sasakyan.              |
+| Float:spawn_Z                         | Ang Z-coordinate para sa sasakyan.              |
+| Float:z_angle                         | Direksyon ng sasakyan - anggulo.                |
 | [color1](../resources/vehiclecolorid) | Ang pangunahing ID ng kulay. -1 para sa random. |
-| [color2](../resources/vehiclecolorid) | Ang pangalawang kulay ID. -1 para sa random. |
+| [color2](../resources/vehiclecolorid) | Ang pangalawang kulay ID. -1 para sa random.    |
 
 ## Returns
 

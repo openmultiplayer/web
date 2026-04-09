@@ -11,13 +11,13 @@ tags: ["vehicle"]
 
 Allows you to retrieve the current state of a vehicle's windows
 
-| Name             | Description                                                               |
-| ---------------- | ------------------------------------------------------------------------- |
-| vehicleid        | The ID of the vehicle                                                     |
-| &frontLeft       | The integer to save the state of the drivers window to.                   |
-| &frontRight      | The integer to save the state of the passengers window to.                |
-| &rearLeft        | The integer to save the state of the rear left window to (if available).  |
-| &rearRight       | The integer to save the state of the rear right window to (if available). |
+| Name        | Description                                                               |
+| ----------- | ------------------------------------------------------------------------- |
+| vehicleid   | The ID of the vehicle                                                     |
+| &frontLeft  | The integer to save the state of the drivers window to.                   |
+| &frontRight | The integer to save the state of the passengers window to.                |
+| &rearLeft   | The integer to save the state of the rear left window to (if available).  |
+| &rearRight  | The integer to save the state of the rear right window to (if available). |
 
 ## Returns
 

@@ -10,8 +10,8 @@ Este callback se llama cuando un jugador comienza a salir de un vehículo.
 
 | Nombre    | Descripción                                          |
 | --------- | ---------------------------------------------------- |
-| playerid  | El ID del jugador que está saliendo de un vehículo.  | 
-| vehicleid | El ID del vehículo del que el jugador está saliendo. | 
+| playerid  | El ID del jugador que está saliendo de un vehículo.  |
+| vehicleid | El ID del vehículo del que el jugador está saliendo. |
 
 ## Devoluciones
 

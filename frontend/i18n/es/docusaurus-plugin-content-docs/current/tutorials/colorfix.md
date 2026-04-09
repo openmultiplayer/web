@@ -7,7 +7,7 @@ descripion: Un script básico para agregar más colores al jugador.
 Este tutorial se debe utilizar con [GetPlayerColor](../scripting/functions/GetPlayerColor), si no usas [SetPlayerColor](../scripting/functions/SetPlayerColor) En tu guión cuando los jugadores se conectan.
 
 ```c
-new PlayerColors[] = 
+new PlayerColors[] =
 {
     0xFF8C13FF,0xC715FFFF,0x20B2AAFF,0xDC143CFF,0x6495EDFF,0xf0e68cFF,0x778899FF,0xFF1493FF,0xF4A460FF,0xEE82EEFF,
     0xFFD720FF,0x8b4513FF,0x4949A0FF,0x148b8bFF,0x14ff7fFF,0x556b2fFF,0x0FD9FAFF,0x10DC29FF,0x534081FF,0x0495CDFF,
@@ -35,7 +35,7 @@ Ahora [GetPlayerColor](../scripting/functions/GetPlayerColor) ¡trabajará!
 Para nuevas versiones de SA-MP, puede agregar este array:
 
 ```c
-new PlayerRainbowColors[511] = 
+new PlayerRainbowColors[511] =
 {
     /*OKStyle*/ 0x000022FF, 0x000044FF, 0x000066FF, 0x000088FF, 0x0000AAFF, 0x0000CCFF, 0x0000EEFF,
     0x002200FF, 0x002222FF, 0x002244FF, 0x002266FF, 0x002288FF, 0x0022AAFF, 0x0022CCFF, 0x0022EEFF,
@@ -112,4 +112,3 @@ new PlayerRainbowColors[511] =
 ```
 
 Ahora no hay colores duplicados, los colores se distribuyen al número máximo de ranuras, el paso de color - 34, y el TAB del servidor completo parece un arcoíris!
-

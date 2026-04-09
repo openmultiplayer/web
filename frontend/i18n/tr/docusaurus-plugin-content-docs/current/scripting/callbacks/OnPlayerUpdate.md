@@ -1,25 +1,25 @@
 ---
 title: OnPlayerUpdate
 sidebar_label: OnPlayerUpdate
-description: Bu fonksiyon, bir istemci veya oyuncu sunucuyu durumlarıyla her güncellediğinde çağrılır. 
+description: Bu fonksiyon, bir istemci veya oyuncu sunucuyu durumlarıyla her güncellediğinde çağrılır.
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Bu fonksiyon, bir istemci veya oyuncu sunucu durumlarıyla ilgili her güncellendiğinde çağrılır. Genellikle, sağlık veya zırh güncellemeleri veya silah değiştiren oyuncular gibi sunucu tarafından aktif olarak izlenmeyen istemci güncellemeleri için özel çağrıları oluşturmak için kullanılır. 
+Bu fonksiyon, bir istemci veya oyuncu sunucu durumlarıyla ilgili her güncellendiğinde çağrılır. Genellikle, sağlık veya zırh güncellemeleri veya silah değiştiren oyuncular gibi sunucu tarafından aktif olarak izlenmeyen istemci güncellemeleri için özel çağrıları oluşturmak için kullanılır.
 
-| Parametre | Açıklama                                    | 
+| Parametre | Açıklama                                    |
 | --------- | ------------------------------------------- |
 | playerid  | Güncelleme paketi gönderen oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 
-0 - Bu oyuncunun güncellemesi diğer oyunculara/istemcilere senkronize edilmeyecektir. 
+0 - Bu oyuncunun güncellemesi diğer oyunculara/istemcilere senkronize edilmeyecektir.
 
 1 - Bu güncellemenin normal şekilde işlenebileceğini ve diğer oyunculara gönderilebileceğini gösterir.
 
-Filterscript komutlarında her zaman ilk olarak çağrılır. 
+Filterscript komutlarında her zaman ilk olarak çağrılır.
 
 ## Örnek
 
@@ -33,7 +33,7 @@ public OnPlayerUpdate(playerid)
         OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
         SetPVarInt(playerid, "iCurrentWeapon", iCurWeap);// Silah değişkenini güncelleyelim.
     }
-    return 1; // Bu güncellemeyi diğer oyunculara gönderin. 
+    return 1; // Bu güncellemeyi diğer oyunculara gönderin.
 }
 
 stock OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
@@ -58,7 +58,7 @@ public OnPlayerUpdate(playerid)
 
     if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
-        // Can kazanıp kazanmadığını kontrol edelim, anti-sağlık hilesi? ;) 
+        // Can kazanıp kazanmadığını kontrol edelim, anti-sağlık hilesi? ;)
 
         if (fHealth > GetPVarFloat(playerid, "faPlayerHealth"))
         {
@@ -81,7 +81,7 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Bu fonksiyon, oyuncu başına ortalama olarak saniyede 30 kez çağrılır; yalnızca ne anlama geldiğini (veya daha da önemlisi ne anlama gelmediğini) bildiğiniz zaman kullanın. Her oyuncu için bu çağrılma sıklığı, oyuncunun ne yaptığına bağlı olarak değişir. Araba kullanmak veya ateş etmek, rölantiden çok daha fazla güncellemeyi tetikleyecektir. 
+Bu fonksiyon, oyuncu başına ortalama olarak saniyede 30 kez çağrılır; yalnızca ne anlama geldiğini (veya daha da önemlisi ne anlama gelmediğini) bildiğiniz zaman kullanın. Her oyuncu için bu çağrılma sıklığı, oyuncunun ne yaptığına bağlı olarak değişir. Araba kullanmak veya ateş etmek, rölantiden çok daha fazla güncellemeyi tetikleyecektir.
 
 :::
 

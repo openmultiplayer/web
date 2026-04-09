@@ -11,10 +11,10 @@ tags: ["npc", "weapon", "state"]
 
 Sets the weapon state of an NPC.
 
-| Name        | Description               |
-| ----------- | ------------------------- |
-| npcid       | The ID of the NPC         |
-| weaponState | The weapon state to set   |
+| Name        | Description             |
+| ----------- | ----------------------- |
+| npcid       | The ID of the NPC       |
+| weaponState | The weapon state to set |
 
 ## Returns
 

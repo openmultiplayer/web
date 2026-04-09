@@ -5,6 +5,8 @@ description: Returns a vehicle's rotation as euler.
 tags: ["vehicle"]
 ---
 
+<VersionWarn version='omp v1.5.8.3079' />
+
 ## Description
 
 Returns a vehicle's rotation as euler.

@@ -1,21 +1,21 @@
 ---
 title: OnPlayerLeaveRaceCheckpoint
 sidebar_label: OnPlayerLeaveRaceCheckpoint
-description: Bu fonksiyon, bir oyuncu yarış kontrol noktasından çıktığında çağrılır. 
+description: Bu fonksiyon, bir oyuncu yarış kontrol noktasından çıktığında çağrılır.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---
 
 ## Açıklama
 
-Bu fonksiyon, bir oyuncu yarış kontrol noktasından çıktığında çağrılır. 
+Bu fonksiyon, bir oyuncu yarış kontrol noktasından çıktığında çağrılır.
 
-| Parametre | Açıklama                                            |
-| --------- | --------------------------------------------------- |
-| playerid  | Kontrol noktasından çıkış yapan oyuncunun ID'si.    |
+| Parametre | Açıklama                                         |
+| --------- | ------------------------------------------------ |
+| playerid  | Kontrol noktasından çıkış yapan oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 
-Filtercsript komutlarında her zaman ilk olarak çağrılır. 
+Filtercsript komutlarında her zaman ilk olarak çağrılır.
 
 ## Örnek
 
@@ -38,4 +38,4 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 - [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Oyuncunun kontrol noktasında olup olmadığını kontrol etme.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Oyuncu için yarış kontrol noktası oluşturma.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Oyuncu için yarış kontrol noktasını devre dışı bırakma.
-- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint):  Oyuncunun yarış kontrol noktasında olup olmadığını kontrol etme.
+- [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Oyuncunun yarış kontrol noktasında olup olmadığını kontrol etme.

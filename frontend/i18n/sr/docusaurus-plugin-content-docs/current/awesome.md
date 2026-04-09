@@ -16,7 +16,6 @@ description: Информна листа корисних алата, библи
 - **[Pawn Синтакса - Визуелно Трговиште](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Аутоматско допуњавање Павн кода за Визуелни Студио Код.
 - **[SA-MP Уређивач Зона](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Уређивач за прављење Зона и слично.
 - **[SA-MP Уређивач Мапа](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - Популарни Уређивач Мапа за SA:MP.
-- **[open.mp Претраживач Сервера](https://github.com/adib-yg/openmp-server-browser)** - open.mp претраживач сервера графички интерфејс за Рачунар.
 
 ## Библиотеке
 
@@ -152,7 +151,7 @@ description: Информна листа корисних алата, библи
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - Исправке багова текстура мапе GTA San Andreas.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Алат за преглед анимација за SA:MP.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Проверава да ли играч користи Android уређај.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Уредник TextDraw-ова који има неке напредне функције.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Уредник TextDraw-ова који има неке напредне функције.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Напредни уредник мапе са многим функцијама.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - Ин-игре уредник мапе за SA:MP.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Ово је уредник мапе у игри који ће вам омогућити да текстурите до индекса материјала 15 (16 материјала) као и да поставите боју за тај индекс материјала на објектима.

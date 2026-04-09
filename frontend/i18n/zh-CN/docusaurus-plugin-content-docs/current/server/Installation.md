@@ -70,10 +70,10 @@ description: 将游戏模式从 SA:MP 服务器迁移至 open.mp 服务器的指
 
 :::
 
-| 插件              | OMP 兼容版本                                                      |
-| ----------------- | ----------------------------------------------------------------- |
-| rustext           | https://github.com/ziggi/rustext/releases/tag/v2.0.11 (nomemhack) |
-| keylistener       | https://github.com/edgyaf/keylistener/releases/tag/1.1.2-pr       |
+| 插件        | OMP 兼容版本                                                      |
+| ----------- | ----------------------------------------------------------------- |
+| rustext     | https://github.com/ziggi/rustext/releases/tag/v2.0.11 (nomemhack) |
+| keylistener | https://github.com/edgyaf/keylistener/releases/tag/1.1.2-pr       |
 
 :::warning
 
@@ -90,7 +90,7 @@ description: 将游戏模式从 SA:MP 服务器迁移至 open.mp 服务器的指
 | sscanf            | https://github.com/Y-Less/sscanf/releases/tag/v2.13.8                        |
 | SKY               | 改用 Pawn.RakNet                                                             |
 | YSF               | 无需使用，open.mp 已原生支持大部分功能                                       |
-| FCNPC             | 传统的 FCNPC 插件已被官方的 open.mp NPC 组件 取代                              |
+| FCNPC             | 传统的 FCNPC 插件已被官方的 open.mp NPC 组件取代                             |
 
 ## 步骤 6
 

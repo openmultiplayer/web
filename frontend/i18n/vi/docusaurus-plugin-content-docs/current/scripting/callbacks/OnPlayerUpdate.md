@@ -9,9 +9,9 @@ tags: ["player"]
 
 Callback này được gọi mỗi khi một client/người chơi cập nhật trạng thái của mình với server. Nó thường được sử dụng để tạo các callback tùy chỉnh cho các cập nhật từ client mà không được server theo dõi tích cực, chẳng hạn như cập nhật sức khỏe hoặc áo giáp hoặc khi người chơi thay đổi vũ khí.
 
-| Tên       | Mô tả                                               |
-| --------- | --------------------------------------------------- |
-| playerid  | ID của người chơi gửi gói cập nhật.                |
+| Tên      | Mô tả                               |
+| -------- | ----------------------------------- |
+| playerid | ID của người chơi gửi gói cập nhật. |
 
 ## Giá trị trả về
 
@@ -43,7 +43,7 @@ public OnPlayerUpdate(playerid)
 forward OnPlayerWeaponChange(playerid, WEAPON:oldWeapon, WEAPON:newWeapon);
 public OnPlayerWeaponChange(playerid, WEAPON:oldWeapon, WEAPON:newWeapon)
 {
-    new 
+    new
         string[128],
         oldWeaponName[24],
         newWeaponName[24];

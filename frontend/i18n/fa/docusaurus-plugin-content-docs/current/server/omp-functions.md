@@ -8,7 +8,7 @@ description: توابع و callback های جدید.
 
 ## بازیکن
 
-| نام                                                                                |
+| نام                                                                                 |
 | ----------------------------------------------------------------------------------- |
 | [TogglePlayerWidescreen](../scripting/functions/TogglePlayerWidescreen)             |
 | [IsPlayerWidescreenToggled](../scripting/functions/IsPlayerWidescreenToggled)       |
@@ -57,7 +57,7 @@ description: توابع و callback های جدید.
 
 ## شی
 
-| نام                                                                                          |
+| نام                                                                                           |
 | --------------------------------------------------------------------------------------------- |
 | [SetObjectNoCameraCollision](../scripting/functions/SetObjectNoCameraCollision)               |
 | [SetPlayerObjectNoCameraCollision](../scripting/functions/SetPlayerObjectNoCameraCollision)   |
@@ -100,7 +100,7 @@ description: توابع و callback های جدید.
 
 ## Pickup
 
-| نام                                                                              |
+| نام                                                                               |
 | --------------------------------------------------------------------------------- |
 | [CreatePlayerPickup](../scripting/functions/CreatePlayerPickup)                   |
 | [DestroyPlayerPickup](../scripting/functions/DestroyPlayerPickup)                 |
@@ -136,7 +136,7 @@ description: توابع و callback های جدید.
 
 ## خودرو
 
-| نام                                                                                |
+| نام                                                                                 |
 | ----------------------------------------------------------------------------------- |
 | [ChangeVehicleColours](../scripting/functions/ChangeVehicleColours)                 |
 | [GetPlayerLastSyncedVehicleID](../scripting/functions/GetPlayerLastSyncedVehicleID) |
@@ -182,7 +182,7 @@ description: توابع و callback های جدید.
 
 ## TextDraw
 
-| نام                                                                                                    |
+| نام                                                                                                     |
 | ------------------------------------------------------------------------------------------------------- |
 | [TextDrawColour](../scripting/functions/TextDrawColour)                                                 |
 | [TextDrawBoxColour](../scripting/functions/TextDrawBoxColour)                                           |
@@ -242,7 +242,7 @@ description: توابع و callback های جدید.
 
 ## GameText
 
-| نام                                                                  |
+| نام                                                                   |
 | --------------------------------------------------------------------- |
 | [GetGameText](../scripting/functions/GetGameText)                     |
 | [HasGameText](../scripting/functions/HasGameText)                     |
@@ -251,7 +251,7 @@ description: توابع و callback های جدید.
 
 ## GangZone
 
-| نام                                                                                      |
+| نام                                                                                       |
 | ----------------------------------------------------------------------------------------- |
 | [IsValidGangZone](../scripting/functions/IsValidGangZone)                                 |
 | [IsPlayerInGangZone](../scripting/functions/IsPlayerInGangZone)                           |
@@ -284,7 +284,7 @@ description: توابع و callback های جدید.
 
 ## Checkpoint
 
-| نام                                                                                |
+| نام                                                                                 |
 | ----------------------------------------------------------------------------------- |
 | [IsPlayerCheckpointActive](../scripting/functions/IsPlayerCheckpointActive)         |
 | [GetPlayerCheckpoint](../scripting/functions/GetPlayerCheckpoint)                   |
@@ -293,7 +293,7 @@ description: توابع و callback های جدید.
 
 ## Actor
 
-| نام                                                          |
+| نام                                                           |
 | ------------------------------------------------------------- |
 | [SetActorSkin](../scripting/functions/SetActorSkin)           |
 | [GetActorSkin](../scripting/functions/GetActorSkin)           |
@@ -303,7 +303,7 @@ description: توابع و callback های جدید.
 
 ## برچسب متن سه‌بعدی
 
-| نام                                                                                        |
+| نام                                                                                         |
 | ------------------------------------------------------------------------------------------- |
 | [Is3DTextLabelStreamedIn](../scripting/functions/Is3DTextLabelStreamedIn)                   |
 | [Get3DTextLabelText](../scripting/functions/Get3DTextLabelText)                             |
@@ -333,7 +333,7 @@ description: توابع و callback های جدید.
 
 ## کلاس
 
-| نام                                                              |
+| نام                                                               |
 | ----------------------------------------------------------------- |
 | [GetAvailableClasses](../scripting/functions/GetAvailableClasses) |
 | [EditPlayerClass](../scripting/functions/EditPlayerClass)         |
@@ -341,7 +341,7 @@ description: توابع و callback های جدید.
 
 ## منو
 
-| نام                                                              |
+| نام                                                               |
 | ----------------------------------------------------------------- |
 | [GetMenuItem](../scripting/functions/GetMenuItem)                 |
 | [GetMenuItems](../scripting/functions/GetMenuItems)               |
@@ -354,7 +354,7 @@ description: توابع و callback های جدید.
 
 ## پایگاه داده
 
-| نام                                                                                  |
+| نام                                                                                   |
 | ------------------------------------------------------------------------------------- |
 | [DB_ExecuteQuery](../scripting/functions/DB_ExecuteQuery)                             |
 | [DB_FreeResultSet](../scripting/functions/DB_FreeResultSet)                           |
@@ -375,7 +375,7 @@ description: توابع و callback های جدید.
 
 ## هسته
 
-| نام                                                                            |
+| نام                                                                             |
 | ------------------------------------------------------------------------------- |
 | [SetModeRestartTime](../scripting/functions/SetModeRestartTime)                 |
 | [GetModeRestartTime](../scripting/functions/GetModeRestartTime)                 |
@@ -398,7 +398,7 @@ description: توابع و callback های جدید.
 
 ## قانون سرور
 
-| نام                                                            |
+| نام                                                             |
 | --------------------------------------------------------------- |
 | [AddServerRule](../scripting/functions/AddServerRule)           |
 | [RemoveServerRule](../scripting/functions/RemoveServerRule)     |
@@ -409,7 +409,7 @@ description: توابع و callback های جدید.
 
 ## تایمر
 
-| نام                                                            |
+| نام                                                             |
 | --------------------------------------------------------------- |
 | [IsValidTimer](../scripting/functions/IsValidTimer)             |
 | [IsRepeatingTimer](../scripting/functions/IsRepeatingTimer)     |
@@ -420,27 +420,27 @@ description: توابع و callback های جدید.
 
 ## مدل سفارشی
 
-| نام                                                            |
+| نام                                                             |
 | --------------------------------------------------------------- |
 | [IsValidCustomModel](../scripting/functions/IsValidCustomModel) |
 | [GetCustomModelPath](../scripting/functions/GetCustomModelPath) |
 
 ## رشته
 
-| نام                                        |
+| نام                                         |
 | ------------------------------------------- |
 | [strcopy](../scripting/functions/strcopy)   |
 | [strequal](../scripting/functions/strequal) |
 
 ## اعشار
 
-| نام                                        |
+| نام                                         |
 | ------------------------------------------- |
 | [strfloat](../scripting/functions/strfloat) |
 
 ## فایل
 
-| نام                                            |
+| نام                                             |
 | ----------------------------------------------- |
 | [ftell](../scripting/functions/ftell)           |
 | [fstat](../scripting/functions/fstat)           |

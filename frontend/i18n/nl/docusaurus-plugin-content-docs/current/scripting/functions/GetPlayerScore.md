@@ -9,8 +9,8 @@ tags: ["player"]
 
 Geeft de score van een speler terug.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
+| Naam     | Beschrijving                     |
+| -------- | -------------------------------- |
 | playerid | Speler waarvan je de score wilt. |
 
 ## Retourneert
@@ -37,5 +37,3 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [SetPlayerScore](SetPlayerScore)
 - [GetPlayerPing](GetPlayerPing)
-
-

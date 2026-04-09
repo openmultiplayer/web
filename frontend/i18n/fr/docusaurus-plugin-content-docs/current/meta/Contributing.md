@@ -9,6 +9,7 @@ Cette documentation s'adresse à tous ceux qui veulent contribuer au wiki de [op
 Dans le cas où vous souhaitez vous voulez participer à la traduction du wiki, ouvrez un PR sur le fichier [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) en ajoutant une ligne de la même façon que celles déjà écrites.
 
 ## Modifier, ajouter du contenu
+
 ### Ajouter du contenu via le navigateur
 
 En parcourant le [Github « docs »](https://github.com/openmultiplayer/web/tree/master/docs) de open.MP, vous aurez un bouton "Add file"
@@ -57,7 +58,7 @@ Il convient d'utiliser les chemins d'accès plutôt qu'un lien direct.
   [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
   ```
 
-`../` permet de remonter d'un répertoire. Si le fichier que vous modifiez est dans le dossier `functions` et que vous renvoyez à un lien dans le dossier `callbacks`, utilisez `../` pour retourner au dossier `scripting/` et vous pourrez alors regagner le dossier `callbacks/` et donc viser le fichier _(sans indiquer l'extension `.md`).
+`../` permet de remonter d'un répertoire. Si le fichier que vous modifiez est dans le dossier `functions` et que vous renvoyez à un lien dans le dossier `callbacks`, utilisez `../` pour retourner au dossier `scripting/` et vous pourrez alors regagner le dossier `callbacks/` et donc viser le fichier \_(sans indiquer l'extension `.md`).
 
 ### Images
 
@@ -124,26 +125,26 @@ La structure de la table répond à des règles précises lorsque vous lui mette
 - ❌
 
   ```md
-  |         |                                      |
-  | ------- | ------------------------------------ |
-  | HP      | État du véhicule                     |
-  | 650     | Bon état                             |
-  | 650-550 | Fumée blanche                        |
-  | 550-390 | Fumée grise                          |
-  | 390-250 | Fumée noire                          |
-  | < 250   | En feu (explosion imminente)         |
+  |         |                              |
+  | ------- | ---------------------------- |
+  | HP      | État du véhicule             |
+  | 650     | Bon état                     |
+  | 650-550 | Fumée blanche                |
+  | 550-390 | Fumée grise                  |
+  | 390-250 | Fumée noire                  |
+  | < 250   | En feu (explosion imminente) |
   ```
 
 - ✔
 
   ```md
-  | HP      | État du véhicule                     |
-  | ------- | ------------------------------------ |
-  | 650     | Bon état                             |
-  | 650-550 | Fumée blanche                        |
-  | 550-390 | Fumée grise                          |
-  | 390-250 | Fumée noire                          |
-  | < 250   | En feu (explosion imminente)         |
+  | HP      | État du véhicule             |
+  | ------- | ---------------------------- |
+  | 650     | Bon état                     |
+  | 650-550 | Fumée blanche                |
+  | 550-390 | Fumée grise                  |
+  | 390-250 | Fumée noire                  |
+  | < 250   | En feu (explosion imminente) |
   ```
 
 ## Licence d'agrément

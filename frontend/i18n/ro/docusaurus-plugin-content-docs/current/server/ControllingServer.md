@@ -44,6 +44,7 @@ Parola va fi aceeași ca și în [server.cfg](server.cfg).
 ##### samp.ban
 
 samp.ban este fișierul în care se scriu banurile, dar și alte informații despre acestea, printre care:
+
 - IP-ul jucătorului
 - Data banului
 - Ora banului
@@ -150,39 +151,39 @@ Puteți folosi comanda cmdlist (sau varlist pentru variabile) în joc pentru a v
 
 Acestea sunt comenzile pe care le puteți folosi ca admin:
 
-| Comandă                           | Descriere                                                                                                                    |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `/rcon cmdlist`                   | Afișează o listă cu toate comenzile.                                                                                                    |
-| `/rcon varlist`                   | Afișează o listă cu toate variabilele.                                                                                       |
-| `/rcon exit`                      | Închide serverul.                                                                                                             |
-| `/rcon echo [text]`               | Afișează `[text]` în consola serverului.                                              |
-| `/rcon hostname [nume]`           | Schimbă numele serverului (_exemplu: /rcon hostname serverul meu_).                                                                |
-| `/rcon gamemodetext [nume]`       | Schimbă textul gamemode-ului (_exemplu: /rcon gamemodetext gamemode-ul meu_).                                                          |
-| `/rcon mapname [nume]`            | Schimbă numele hărții (_exemplu: /rcon mapname San Andreas_).                                                               |
-| `/rcon exec [filename]`           | Execută fișierul care conține server cfg (_exemplu: /rcon exec blah.cfg_).                                                  |
-| `/rcon kick [ID]`                 | Dă kick jucătorului cu ID-ul respectiv (_exemplu: /rcon kick 2_).                                                                   |
-| `/rcon ban [ID]`                  | Dă ban jucătorului cu ID-ul respectiv (_exemplu: /rcon ban 2_).                                                                     |
-| `/rcon changemode [mod]`         | Această comandă o să schimbe gamemode-ul curent cu cel pe care l-ați scris în `[mod]` (_exemplu: dacă vreți să schimbați cu sftdm: /rcon changemode sftdm_). |
-| `/rcon gmx`                       | Această comandă va încărca următorul gamemode din [server.cfg](server.cfg).                                                                       |
-| `/rcon reloadbans`                | Va reîncărca fișierul samp.ban unde sunt scrise toate adresele de IP banate. Această comandă ar trebui folosită după ce debanați o adresă IP.                  |
-| `/rcon reloadlog`                 | Reîncarcă server_log.txt. Nu are efecte considerabile pe absolut nimic.                                                              |
-| `/rcon say`                       | Trimite un mesaj jucătorilor. (exemplu: `/rcon say salut` va afișa `Admin: salut`).                 |
-| `/rcon players`                   | Afișează jucătorii de pe server (cu tot cu nume, IP & ping).                                                         |
-| `/rcon banip [IP]`                | Banează IP-ul respectiv (_exemplu: /rcon banip 127.0.0.1_).                                                                           |
-| `/rcon unbanip [IP]`              | Debanează IP-ul respectiv (_exemplu: /rcon unbanip 127.0.0.1_).                                                                       |
-| `/rcon gravity`                   | Schimbă gravitația (_exemplu: /rcon gravity 0.008_).                                                                          |
-| `/rcon weather [ID]`              | Schimbă vremea (_exemplu: /rcon weather 1_).                                                                              |
-| `/rcon loadfs`                    | Încarcă filterscript-ul pe care l-ați scris (_exemplu: /rcon loadfs adminfs_).                                                                |
-| `/rcon weburl [URL server]`       | Schimbă URL-ul serverului în masterlists/SA-MP client.                                                                         |
-| `/rcon unloadfs`                  | Dezactivează filterscript-ul respectiv (_exemplu: /rcon unloadfs adminfs_).                                                             |
-| `/rcon reloadfs`                  | Reîncarcă filterscriptul respectiv (_examplu: /rcon reloadfs adminfs_).                                                            |
-| `/rcon rcon\_password [parolă]` | Schimbă parola RCON.                                                                                                     |
-| `/rcon password [parolă]`       | Setează/resetează parola serverului.                                                                                                |
-| `/rcon messageslimit [număr]`     | Schimbă numărul de mesaje pe care un jucător le poate să le trimită. (implicit 500)                 |
-| `/rcon ackslimit [număr]`         | Schimbă limita de acks (implicit 3000)                     |
-| `/rcon messageholelimit [număr]`  | Schimbă limita de message holes (implicit 3000)                         |
-| `/rcon playertimeout [limită m/s]` | Schimba timpul în milisecunde în care un player este considerat AFK, după ce nu mai trimite semnale către server. (implicit 1000) |
-| `/rcon language [limbă]`       | Schimbă limba serverului (_exemplu: /rcon language English_). Se afișează și în browser.             |
+| Comandă                            | Descriere                                                                                                                                                    |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `/rcon cmdlist`                    | Afișează o listă cu toate comenzile.                                                                                                                         |
+| `/rcon varlist`                    | Afișează o listă cu toate variabilele.                                                                                                                       |
+| `/rcon exit`                       | Închide serverul.                                                                                                                                            |
+| `/rcon echo [text]`                | Afișează `[text]` în consola serverului.                                                                                                                     |
+| `/rcon hostname [nume]`            | Schimbă numele serverului (_exemplu: /rcon hostname serverul meu_).                                                                                          |
+| `/rcon gamemodetext [nume]`        | Schimbă textul gamemode-ului (_exemplu: /rcon gamemodetext gamemode-ul meu_).                                                                                |
+| `/rcon mapname [nume]`             | Schimbă numele hărții (_exemplu: /rcon mapname San Andreas_).                                                                                                |
+| `/rcon exec [filename]`            | Execută fișierul care conține server cfg (_exemplu: /rcon exec blah.cfg_).                                                                                   |
+| `/rcon kick [ID]`                  | Dă kick jucătorului cu ID-ul respectiv (_exemplu: /rcon kick 2_).                                                                                            |
+| `/rcon ban [ID]`                   | Dă ban jucătorului cu ID-ul respectiv (_exemplu: /rcon ban 2_).                                                                                              |
+| `/rcon changemode [mod]`           | Această comandă o să schimbe gamemode-ul curent cu cel pe care l-ați scris în `[mod]` (_exemplu: dacă vreți să schimbați cu sftdm: /rcon changemode sftdm_). |
+| `/rcon gmx`                        | Această comandă va încărca următorul gamemode din [server.cfg](server.cfg).                                                                                  |
+| `/rcon reloadbans`                 | Va reîncărca fișierul samp.ban unde sunt scrise toate adresele de IP banate. Această comandă ar trebui folosită după ce debanați o adresă IP.                |
+| `/rcon reloadlog`                  | Reîncarcă server_log.txt. Nu are efecte considerabile pe absolut nimic.                                                                                      |
+| `/rcon say`                        | Trimite un mesaj jucătorilor. (exemplu: `/rcon say salut` va afișa `Admin: salut`).                                                                          |
+| `/rcon players`                    | Afișează jucătorii de pe server (cu tot cu nume, IP & ping).                                                                                                 |
+| `/rcon banip [IP]`                 | Banează IP-ul respectiv (_exemplu: /rcon banip 127.0.0.1_).                                                                                                  |
+| `/rcon unbanip [IP]`               | Debanează IP-ul respectiv (_exemplu: /rcon unbanip 127.0.0.1_).                                                                                              |
+| `/rcon gravity`                    | Schimbă gravitația (_exemplu: /rcon gravity 0.008_).                                                                                                         |
+| `/rcon weather [ID]`               | Schimbă vremea (_exemplu: /rcon weather 1_).                                                                                                                 |
+| `/rcon loadfs`                     | Încarcă filterscript-ul pe care l-ați scris (_exemplu: /rcon loadfs adminfs_).                                                                               |
+| `/rcon weburl [URL server]`        | Schimbă URL-ul serverului în masterlists/SA-MP client.                                                                                                       |
+| `/rcon unloadfs`                   | Dezactivează filterscript-ul respectiv (_exemplu: /rcon unloadfs adminfs_).                                                                                  |
+| `/rcon reloadfs`                   | Reîncarcă filterscriptul respectiv (_examplu: /rcon reloadfs adminfs_).                                                                                      |
+| `/rcon rcon\_password [parolă]`    | Schimbă parola RCON.                                                                                                                                         |
+| `/rcon password [parolă]`          | Setează/resetează parola serverului.                                                                                                                         |
+| `/rcon messageslimit [număr]`      | Schimbă numărul de mesaje pe care un jucător le poate să le trimită. (implicit 500)                                                                          |
+| `/rcon ackslimit [număr]`          | Schimbă limita de acks (implicit 3000)                                                                                                                       |
+| `/rcon messageholelimit [număr]`   | Schimbă limita de message holes (implicit 3000)                                                                                                              |
+| `/rcon playertimeout [limită m/s]` | Schimba timpul în milisecunde în care un player este considerat AFK, după ce nu mai trimite semnale către server. (implicit 1000)                            |
+| `/rcon language [limbă]`           | Schimbă limba serverului (_exemplu: /rcon language English_). Se afișează și în browser.                                                                     |
 
 Aceste limite au fost făcute pentru a evita pe cât posibil atacurile asupra serverelor de SA-MP. Deci, pur și simplu setați-le în concordanță cu serverul dumneavoastră. [Citiți mai mult aici](https://sampforum.blast.hk/showthread.php?tid=506214&pid=2990193#pid2990193).
 

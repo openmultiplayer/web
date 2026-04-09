@@ -9,10 +9,10 @@ tags: ["npc"]
 
 Ce rappel est appelé lorsqu'un PNJ entre dans un véhicule.
 
-| Nom          | Description                                             |
-| ------------ | ------------------------------------------------------- |
-| vehicleid    | L'ID du véhicule dans lequel le PNJ entre               |
-| seatid       | L'ID de siège que le PNJ utilise                         |
+| Nom       | Description                               |
+| --------- | ----------------------------------------- |
+| vehicleid | L'ID du véhicule dans lequel le PNJ entre |
+| seatid    | L'ID de siège que le PNJ utilise          |
 
 ## Exemples
 

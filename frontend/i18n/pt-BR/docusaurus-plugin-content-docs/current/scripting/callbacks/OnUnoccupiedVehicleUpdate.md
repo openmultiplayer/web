@@ -14,12 +14,12 @@ Essa callback é executada quando o cliente do jogador faz o update/sincroniza a
 | vehicleid      | ID do veículo que teve sua posição atualizada/sincronizada.                                                                                                                                                   |
 | playerid       | ID do jogador que fez o pedido para atualizar/sincronizar o veículo.                                                                                                                                          |
 | passenger_seat | ID dos assentos, caso o jogador seja um passageiro. 0=não está no veículo, 1=passageiro frontal, 2=traseiro esquerda, 3=traseiro direita, 4+ caso o veículo seja um ônibus etc. com a quantidade de assentos. |
-| new_x          | Nova coordenada X do veículo.                                                                                              |
-| new_y          | Nova coordenada Y do veículo.                                                                                              |
-| new_z          | Nova coordenada Z do veículo.                                                                                               |
-| vel_x          | Nova velocidade X do veículo.                                                                                             |
-| vel_y          | Nova velocidade Y do veículo.                                                                                             |
-| vel_z          | Nova velocidade Z do veículo.                                                                                             |
+| new_x          | Nova coordenada X do veículo.                                                                                                                                                                                 |
+| new_y          | Nova coordenada Y do veículo.                                                                                                                                                                                 |
+| new_z          | Nova coordenada Z do veículo.                                                                                                                                                                                 |
+| vel_x          | Nova velocidade X do veículo.                                                                                                                                                                                 |
+| vel_y          | Nova velocidade Y do veículo.                                                                                                                                                                                 |
+| vel_z          | Nova velocidade Z do veículo.                                                                                                                                                                                 |
 
 ## Retornos
 

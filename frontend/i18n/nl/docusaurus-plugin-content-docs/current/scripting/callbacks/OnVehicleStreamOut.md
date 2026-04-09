@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Deze callback wordt aangeroepen wanneer een voertuig uit beeld streamt bij de client van een speler (zo ver weg dat het niet zichtbaar is).
 
-| Naam        | Beschrijving                                                |
-| ----------- | ----------------------------------------------------------- |
-| vehicleid   | Het ID van het voertuig dat uit beeld streamde.            |
+| Naam        | Beschrijving                                                       |
+| ----------- | ------------------------------------------------------------------ |
+| vehicleid   | Het ID van het voertuig dat uit beeld streamde.                    |
 | forplayerid | Het ID van de speler voor wie het voertuig niet meer zichtbaar is. |
 
 ## Returns

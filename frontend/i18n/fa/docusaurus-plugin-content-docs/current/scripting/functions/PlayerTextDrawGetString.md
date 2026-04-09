@@ -11,12 +11,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 متن یک player-textdraw رو برمی‌گردونه.
 
-| اسم                         | توضیحات                                                 |
-| ---------------------------- | ----------------------------------------------------------- |
-| playerid                     | شناسه بازیکن.                                       |
+| اسم                          | توضیحات                                                      |
+| ---------------------------- | ------------------------------------------------------------ |
+| playerid                     | شناسه بازیکن.                                                |
 | PlayerText:textid            | شناسه player-textdraw که می‌خوای متن رو ازش بگیری.           |
 | string[]                     | آرایه‌ای برای ذخیره متن، که به صورت reference پاس داده میشه. |
-| stringSize = sizeof (string) | اندازه رشته.                                     |
+| stringSize = sizeof (string) | اندازه رشته.                                                 |
 
 ## مقدار برگشتی
 
@@ -31,7 +31,7 @@ public OnPlayerConnect(playerid)
 {
 	welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Hello World!");
 	PlayerTextDrawShow(playerid, welcomeText[playerid]);
-	
+
 	new string[16];
 	PlayerTextDrawGetString(playerid, welcomeText[playerid], string, sizeof(string));
 	// string = "Hello World!"

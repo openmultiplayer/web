@@ -9,9 +9,9 @@ tags: ["administration"]
 
 Suriin kung ang isang manlalaro ay naka-log in bilang isang RCON admin.
 
-| Name     | Description                    |
-| -------- | ------------------------------ |
-| playerid | Ang ID ng player na susuriin   |
+| Name     | Description                  |
+| -------- | ---------------------------- |
+| playerid | Ang ID ng player na susuriin |
 
 ## Returns
 

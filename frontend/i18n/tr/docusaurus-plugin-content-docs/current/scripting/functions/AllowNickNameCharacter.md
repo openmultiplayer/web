@@ -11,10 +11,10 @@ tags: []
 
 Bir karakterin takma adlarda kullanılmasına izin verir.
 
-| İsim     | Açıklama                             |
-| -------- | --------------------------------------- |
-| character | İzin verilecek veya izin verilmeyecek karakter.    |
-| bool:allow | true - İzin ver, false - İzin verme            |
+| İsim       | Açıklama                                        |
+| ---------- | ----------------------------------------------- |
+| character  | İzin verilecek veya izin verilmeyecek karakter. |
+| bool:allow | true - İzin ver, false - İzin verme             |
 
 ## Çalışınca Vereceği Sonuçlar
 

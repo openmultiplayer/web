@@ -152,39 +152,39 @@ cmdlist را برای دستورات (یا varlist برای متغیرها) تا
 
 اینها توابعی هستند که شما به عنوان ادمین می‌توانید استفاده کنید:
 
-| دستور                           | توضیحات                                                                                                                                          |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/rcon cmdlist`                   | فهرستی از دستورات را نشان می‌دهد.                                                                                                                          |
-| `/rcon varlist`                   | فهرستی از متغیرهای فعلی را نشان می‌دهد.                                                                                                             |
-| `/rcon exit`                      | سرور را می‌بندد.                                                                                                                                   |
-| `/rcon echo [text]`               | `[text]` را در کنسول سرور نشان می‌دهد (نه کنسول کلاینت در بازی).                                                                    |
-| `/rcon hostname [name]`           | متن hostname را تغییر می‌دهد (_مثال: /rcon hostname my server_).                                                                                      |
-| `/rcon gamemodetext [name]`       | متن gamemode را تغییر می‌دهد (_مثال: /rcon gamemodetext my gamemode_).                                                                                |
-| `/rcon mapname [name]`            | متن نام نقشه را تغییر می‌دهد (_مثال: /rcon mapname San Andreas_).                                                                                     |
-| `/rcon exec [filename]`           | فایلی که شامل server cfg است را اجرا می‌کند (_مثال: /rcon exec blah.cfg_).                                                                        |
-| `/rcon kick [ID]`                 | بازیکن با ID داده شده را kick می‌کند (_مثال: /rcon kick 2_).                                                                                         |
-| `/rcon ban [ID]`                  | بازیکن با ID داده شده را ban می‌کند (_مثال: /rcon ban 2_).                                                                                           |
-| `/rcon changemode [mode]`         | این دستور gamemode فعلی را به مود داده شده تغییر می‌دهد (_مثال: اگر می‌خواهید sftdm بازی کنید: /rcon changemode sftdm_).                       |
-| `/rcon gmx`                       | gamemode بعدی را در [server.cfg](server.cfg) بارگذاری می‌کند.                                                                                             |
-| `/rcon reloadbans`                | فایل `samp.ban` که آدرس‌های IP بن شده در آن ذخیره شده‌اند را reload می‌کند. باید بعد از unban کردن آدرس IP استفاده شود.                                 |
+| دستور                             | توضیحات                                                                                                                                  |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `/rcon cmdlist`                   | فهرستی از دستورات را نشان می‌دهد.                                                                                                        |
+| `/rcon varlist`                   | فهرستی از متغیرهای فعلی را نشان می‌دهد.                                                                                                  |
+| `/rcon exit`                      | سرور را می‌بندد.                                                                                                                         |
+| `/rcon echo [text]`               | `[text]` را در کنسول سرور نشان می‌دهد (نه کنسول کلاینت در بازی).                                                                         |
+| `/rcon hostname [name]`           | متن hostname را تغییر می‌دهد (_مثال: /rcon hostname my server_).                                                                         |
+| `/rcon gamemodetext [name]`       | متن gamemode را تغییر می‌دهد (_مثال: /rcon gamemodetext my gamemode_).                                                                   |
+| `/rcon mapname [name]`            | متن نام نقشه را تغییر می‌دهد (_مثال: /rcon mapname San Andreas_).                                                                        |
+| `/rcon exec [filename]`           | فایلی که شامل server cfg است را اجرا می‌کند (_مثال: /rcon exec blah.cfg_).                                                               |
+| `/rcon kick [ID]`                 | بازیکن با ID داده شده را kick می‌کند (_مثال: /rcon kick 2_).                                                                             |
+| `/rcon ban [ID]`                  | بازیکن با ID داده شده را ban می‌کند (_مثال: /rcon ban 2_).                                                                               |
+| `/rcon changemode [mode]`         | این دستور gamemode فعلی را به مود داده شده تغییر می‌دهد (_مثال: اگر می‌خواهید sftdm بازی کنید: /rcon changemode sftdm_).                 |
+| `/rcon gmx`                       | gamemode بعدی را در [server.cfg](server.cfg) بارگذاری می‌کند.                                                                            |
+| `/rcon reloadbans`                | فایل `samp.ban` که آدرس‌های IP بن شده در آن ذخیره شده‌اند را reload می‌کند. باید بعد از unban کردن آدرس IP استفاده شود.                  |
 | `/rcon reloadlog`                 | `server_log.txt` را reload می‌کند. برای چرخش خودکار لاگ مفید است. می‌تواند با ارسال سیگنال `SIGUSR1` به سرور فعال شود (فقط سرور لینوکس). |
-| `/rcon say`                       | پیامی به بازیکنان در کنسول کلاینت نشان می‌دهد (مثال: `/rcon say hello` به عنوان `Admin: hello` نشان داده می‌شود).                                       |
-| `/rcon players`                   | بازیکنانی که در سرور هستند را نشان می‌دهد (با نام، IP و ping آنها).                                                                               |
-| `/rcon banip [IP]`                | IP داده شده را ban می‌کند (_مثال: /rcon banip 127.0.0.1_).                                                                                                 |
-| `/rcon unbanip [IP]`              | IP داده شده را unban می‌کند (_مثال: /rcon unbanip 127.0.0.1_).                                                                                             |
-| `/rcon gravity`                   | گرانش را تغییر می‌دهد (_مثال: /rcon gravity 0.008_).                                                                                                |
-| `/rcon weather [ID]`              | آب و هوا را تغییر می‌دهد (_مثال: /rcon weather 1_).                                                                                                    |
-| `/rcon loadfs`                    | filterscript داده شده را بارگذاری می‌کند (_مثال: /rcon loadfs adminfs_).                                                                                      |
-| `/rcon weburl [server url]`       | URL سرور را در masterlists/کلاینت SA-MP تغییر می‌دهد                                                                                               |
-| `/rcon unloadfs`                  | filterscript داده شده را unload می‌کند (_مثال: /rcon unloadfs adminfs_).                                                                                   |
-| `/rcon reloadfs`                  | filterscript داده شده را reload می‌کند (_مثال: /rcon reloadfs adminfs_).                                                                                  |
-| `/rcon rcon\_password [PASSWORD]` | رمز عبور rcon را تغییر می‌دهد                                                                                                                           |
-| `/rcon password [password]`       | رمز عبور سرور را تنظیم/بازنشانی می‌کند                                                                                                                      |
-| `/rcon messageslimit [count]`     | تعداد پیام‌های در ثانیه که کلاینت به سرور ارسال می‌کند را تغییر می‌دهد. (پیش‌فرض 500)                                                                 |
-| `/rcon ackslimit [count]`         | حد ack ها را تغییر می‌دهد (پیش‌فرض 3000)                                                                                                              |
-| `/rcon messageholelimit [count]`  | حد message hole ها را تغییر می‌دهد (پیش‌فرض 3000)                                                                                                     |
-| `/rcon playertimeout [limit m/s]` | زمان به میلی‌ثانیه تا timeout شدن بازیکن وقتی هیچ پکتی ارسال نمی‌کند را تغییر می‌دهد. (پیش‌فرض 1000)                                                 |
-| `/rcon language [language]`       | زبان سرور را تغییر می‌دهد (_مثال: /rcon language English_). در مرورگر سرور نشان داده می‌شود.                                                             |
+| `/rcon say`                       | پیامی به بازیکنان در کنسول کلاینت نشان می‌دهد (مثال: `/rcon say hello` به عنوان `Admin: hello` نشان داده می‌شود).                        |
+| `/rcon players`                   | بازیکنانی که در سرور هستند را نشان می‌دهد (با نام، IP و ping آنها).                                                                      |
+| `/rcon banip [IP]`                | IP داده شده را ban می‌کند (_مثال: /rcon banip 127.0.0.1_).                                                                               |
+| `/rcon unbanip [IP]`              | IP داده شده را unban می‌کند (_مثال: /rcon unbanip 127.0.0.1_).                                                                           |
+| `/rcon gravity`                   | گرانش را تغییر می‌دهد (_مثال: /rcon gravity 0.008_).                                                                                     |
+| `/rcon weather [ID]`              | آب و هوا را تغییر می‌دهد (_مثال: /rcon weather 1_).                                                                                      |
+| `/rcon loadfs`                    | filterscript داده شده را بارگذاری می‌کند (_مثال: /rcon loadfs adminfs_).                                                                 |
+| `/rcon weburl [server url]`       | URL سرور را در masterlists/کلاینت SA-MP تغییر می‌دهد                                                                                     |
+| `/rcon unloadfs`                  | filterscript داده شده را unload می‌کند (_مثال: /rcon unloadfs adminfs_).                                                                 |
+| `/rcon reloadfs`                  | filterscript داده شده را reload می‌کند (_مثال: /rcon reloadfs adminfs_).                                                                 |
+| `/rcon rcon\_password [PASSWORD]` | رمز عبور rcon را تغییر می‌دهد                                                                                                            |
+| `/rcon password [password]`       | رمز عبور سرور را تنظیم/بازنشانی می‌کند                                                                                                   |
+| `/rcon messageslimit [count]`     | تعداد پیام‌های در ثانیه که کلاینت به سرور ارسال می‌کند را تغییر می‌دهد. (پیش‌فرض 500)                                                    |
+| `/rcon ackslimit [count]`         | حد ack ها را تغییر می‌دهد (پیش‌فرض 3000)                                                                                                 |
+| `/rcon messageholelimit [count]`  | حد message hole ها را تغییر می‌دهد (پیش‌فرض 3000)                                                                                        |
+| `/rcon playertimeout [limit m/s]` | زمان به میلی‌ثانیه تا timeout شدن بازیکن وقتی هیچ پکتی ارسال نمی‌کند را تغییر می‌دهد. (پیش‌فرض 1000)                                     |
+| `/rcon language [language]`       | زبان سرور را تغییر می‌دهد (_مثال: /rcon language English_). در مرورگر سرور نشان داده می‌شود.                                             |
 
 چهار حد/تعداد بالایی فقط برای جلوگیری از چندین ابزار که می‌توانند هر سرور SA-MP را با منجمد کردن یا کرش کردن آن مورد حمله قرار دهند ساخته شده‌اند. بنابراین، به سادگی، فقط آنها را بر اساس سرور خود تنظیم کنید. مقادیر پیش‌فرض پیش‌فرض هستند، اگر kick های اشتباه می‌بینید، فقط مقادیر را در اسرع وقت افزایش دهید تا بازیکنان بی‌گناه توسط آن kick نشوند.
 

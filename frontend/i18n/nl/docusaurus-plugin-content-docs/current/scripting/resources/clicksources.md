@@ -11,5 +11,3 @@ Klikbronnen gebruikt door [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer
 | Waarde | Constant                |
 | ------ | ----------------------- |
 | 0      | CLICK_SOURCE_SCOREBOARD |
-
-

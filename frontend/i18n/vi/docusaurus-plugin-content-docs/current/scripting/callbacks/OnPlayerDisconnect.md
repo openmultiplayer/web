@@ -9,10 +9,10 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi rời khỏi server.
 
-| Tên       | Mô Tả                                              |
-| ---------- | -------------------------------------------------- |
-| playerid   | ID của người chơi đã rời khỏi server.             |
-| reason     | Lý do rời khỏi server. Xem bảng dưới đây.         |
+| Tên      | Mô Tả                                     |
+| -------- | ----------------------------------------- |
+| playerid | ID của người chơi đã rời khỏi server.     |
+| reason   | Lý do rời khỏi server. Xem bảng dưới đây. |
 
 ## Trả Về
 
@@ -24,11 +24,11 @@ Callback này luôn được gọi đầu tiên trong filterscripts.
 
 ## Các Lý Do
 
-| ID | Lý Do        | Chi Tiết                                                                               |
-| -- | ------------- | --------------------------------------------------------------------------------------- |
-| 0  | Timeout/Crash | Kết nối của người chơi đã bị mất. Có thể là do trò chơi bị treo hoặc lỗi mạng.         |
-| 1  | Quit          | Người chơi rời khỏi server một cách chủ động, qua lệnh /quit (/q) hoặc qua menu tạm dừng. |
-| 2  | Kick/Ban      | Người chơi bị đá khỏi server hoặc bị cấm.                                                |
+| ID  | Lý Do         | Chi Tiết                                                                                  |
+| --- | ------------- | ----------------------------------------------------------------------------------------- |
+| 0   | Timeout/Crash | Kết nối của người chơi đã bị mất. Có thể là do trò chơi bị treo hoặc lỗi mạng.            |
+| 1   | Quit          | Người chơi rời khỏi server một cách chủ động, qua lệnh /quit (/q) hoặc qua menu tạm dừng. |
+| 2   | Kick/Ban      | Người chơi bị đá khỏi server hoặc bị cấm.                                                 |
 
 ## Ví Dụ
 

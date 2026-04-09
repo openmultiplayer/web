@@ -26,7 +26,7 @@ Soms wordt het singleplayermenu getoond, maar is SA:MP wel degelijk goed geladen
 
 ### Ik krijg "Unacceptable Nickname" bij het verbinden met een server
 
-Zorg dat je geen verboden tekens in je naam gebruikt (alleen 0-9, a-z, \[\], (), $, @, ., _ en =) en dat je naam niet langer is dan 20 tekens. Dit kan ook gebeuren als iemand anders al op de server staat met dezelfde naam (bijv. wanneer je snel opnieuw verbindt na een timeout of crash). Een Windows-server met een uptime van >50 dagen kan deze bug soms veroorzaken.
+Zorg dat je geen verboden tekens in je naam gebruikt (alleen 0-9, a-z, \[\], (), $, @, ., \_ en =) en dat je naam niet langer is dan 20 tekens. Dit kan ook gebeuren als iemand anders al op de server staat met dezelfde naam (bijv. wanneer je snel opnieuw verbindt na een timeout of crash). Een Windows-server met een uptime van >50 dagen kan deze bug soms veroorzaken.
 
 ### Scherm blijft hangen op "Connecting to IP:Port..."
 
@@ -59,5 +59,3 @@ Dit ontstaat mogelijk wanneer DirectX niet goed is geïnstalleerd. Installeer op
 ### Ik zie de nametags van andere players niet!
 
 Weet dat sommige servers nametags globaal uitschakelen. Daarnaast komt dit vaak voor op pc's met Intel HD ingebouwde graphics (niet echt bedoeld om te gamen). De exacte oorzaak is onbekend en er is momenteel geen universele fix. Een structurele oplossing is een dedicated videokaart plaatsen, als dat kan en past binnen je budget.
-
-

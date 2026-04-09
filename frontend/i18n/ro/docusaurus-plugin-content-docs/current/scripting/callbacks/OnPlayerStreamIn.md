@@ -9,9 +9,9 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător este transmis în flux de către clientul altui jucător.
 
-| Nume        | Descriere                                               |
-| ----------- | ------------------------------------------------------- |
-| playerid    | ID-ul jucătorului care a fost transmis în flux.         |
+| Nume        | Descriere                                                   |
+| ----------- | ----------------------------------------------------------- |
+| playerid    | ID-ul jucătorului care a fost transmis în flux.             |
 | forplayerid | ID-ul jucătorului care a transmis în flux celălalt jucător. |
 
 ## Returnări

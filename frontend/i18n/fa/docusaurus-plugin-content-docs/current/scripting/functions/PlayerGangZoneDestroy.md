@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 player gangzone را نابود می‌کند.
 
-| نام      | توضیحات                                                       |
-| -------- | ------------------------------------------------------------ |
-| playerid | ID بازیکنی که player gangzone برایش نابود خواهد شد.          |
-| zoneid   | ID player gangzone برای نابود کردن.                         |
+| نام      | توضیحات                                             |
+| -------- | --------------------------------------------------- |
+| playerid | ID بازیکنی که player gangzone برایش نابود خواهد شد. |
+| zoneid   | ID player gangzone برای نابود کردن.                 |
 
 ## مقدار بازگشتی
 

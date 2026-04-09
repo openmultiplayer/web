@@ -11,10 +11,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 موقعیت (مختصات x و y روی صفحه) یک player-textdraw رو برمی‌گردونه.
 
-| اسم               | توضیحات                                                             |
-| ----------------- | ----------------------------------------------------------------------- |
-| playerid          | شناسه بازیکن.                                                   |
-| Playertext:textid | شناسه player-textdraw که می‌خوای position رو ازش بگیری.                   |
+| اسم               | توضیحات                                                                  |
+| ----------------- | ------------------------------------------------------------------------ |
+| playerid          | شناسه بازیکن.                                                            |
+| Playertext:textid | شناسه player-textdraw که می‌خوای position رو ازش بگیری.                  |
 | &Float:x          | متغیر float برای ذخیره X coordinate، که به صورت reference پاس داده میشه. |
 | &Float:y          | متغیر float برای ذخیره Y coordinate، که به صورت reference پاس داده میشه. |
 

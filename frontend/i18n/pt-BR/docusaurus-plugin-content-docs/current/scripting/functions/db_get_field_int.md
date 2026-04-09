@@ -11,10 +11,10 @@ tags: ["sqlite"]
 
 Obtém o conteúdo de um campo como um inteiro de db_query
 
-| Nome              | Descrição                                |
-| ----------------- | ---------------------------------------- |
-| DBResult:dbresult | O resultado de onde obter os dados.     |
-| field = 0         | O campo de onde obter os dados.         |
+| Nome              | Descrição                           |
+| ----------------- | ----------------------------------- |
+| DBResult:dbresult | O resultado de onde obter os dados. |
+| field = 0         | O campo de onde obter os dados.     |
 
 ## Retorno
 

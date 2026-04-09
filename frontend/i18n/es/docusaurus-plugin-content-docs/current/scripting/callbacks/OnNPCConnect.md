@@ -8,9 +8,9 @@ tags: ["npc"]
 
 Este callback se llama cuando un NPC se conecta con éxito al servidor.
 
-| Nombre         | Descripción                                        |
-| -------------- | -------------------------------------------------- |
-| myplayerid     | El ID de jugador que se le ha dado al NPC          |
+| Nombre     | Descripción                               |
+| ---------- | ----------------------------------------- |
+| myplayerid | El ID de jugador que se le ha dado al NPC |
 
 ## Ejemplos
 

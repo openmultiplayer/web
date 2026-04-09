@@ -12,7 +12,6 @@ Enable friendly fire for team vehicles. Players will be unable to damage teammat
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

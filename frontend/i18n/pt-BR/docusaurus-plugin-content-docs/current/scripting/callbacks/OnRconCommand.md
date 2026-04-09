@@ -9,9 +9,9 @@ tags: []
 
 Essa callback é executada quando um comando é enviado ao servidor, seja digitando no console, pela RCON, ou in-game utilizando "/rcon comando".
 
-| Nome  | Descrição                                                                         |
-| ----- | --------------------------------------------------------------------------------- |
-| cmd[] | String contendo o comando que foi digitado, também os parâmetros (caso tenham).   |
+| Nome  | Descrição                                                                       |
+| ----- | ------------------------------------------------------------------------------- |
+| cmd[] | String contendo o comando que foi digitado, também os parâmetros (caso tenham). |
 
 ## Retornos
 

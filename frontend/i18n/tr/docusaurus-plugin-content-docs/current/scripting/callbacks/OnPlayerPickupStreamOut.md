@@ -11,10 +11,10 @@ tags: ["player", "pickup", "playerpickup"]
 
 Bu geri çağırma, bir player-pickup oyuncunun görsel menzilinden çıktığında çağrılır.
 
-| Parametre     | Açıklama                                                                                     |
-|----------|----------------------------------------------------------------------------------------------|
-| pickupid | [CreatePlayerPickup](../functions/CreatePlayerPickup) tarafından döndürülen player-pickup ID'si |
-| playerid | Player-pickup'ın görsel menzilinden çıkan oyuncunun ID'si                                     |
+| Parametre | Açıklama                                                                                        |
+| --------- | ----------------------------------------------------------------------------------------------- |
+| pickupid  | [CreatePlayerPickup](../functions/CreatePlayerPickup) tarafından döndürülen player-pickup ID'si |
+| playerid  | Player-pickup'ın görsel menzilinden çıkan oyuncunun ID'si                                       |
 
 ## Çalışınca Vereceği Sonuçlar
 

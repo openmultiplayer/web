@@ -9,9 +9,9 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler verbindt met de server.
 
-| Naam     | Beschrijving                                    |
-| -------- | ----------------------------------------------- |
-| playerid | Het ID van de speler die verbonden is.          |
+| Naam     | Beschrijving                           |
+| -------- | -------------------------------------- |
+| playerid | Het ID van de speler die verbonden is. |
 
 ## Returns
 

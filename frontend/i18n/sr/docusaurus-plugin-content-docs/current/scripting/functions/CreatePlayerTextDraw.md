@@ -9,13 +9,13 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Креира textdraw за само једног играча. Ово може да се користи као избегавање лимита за глобалне textdraw-ове.
 
-| Име              | Опис                                            |
-| ---------------- | ---------------------------------------         |
-| playerid         | Ид играча коме креирамо player textdraw         |
-| Float:x          | X координата                                    |
-| Float:y          | Y координата                                    |
-| const text[]     | Текст у textdraw-u                              |
-| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.      |
+| Име              | Опис                                       |
+| ---------------- | ------------------------------------------ |
+| playerid         | Ид играча коме креирамо player textdraw    |
+| Float:x          | X координата                               |
+| Float:y          | Y координата                               |
+| const text[]     | Текст у textdraw-u                         |
+| OPEN_MP_TAGS:... | Indefinite number of arguments of any tag. |
 
 ## Враћа
 

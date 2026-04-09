@@ -9,12 +9,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 متن یک player textdraw رو تغییر می‌ده.
 
-| نام               | توضیحات                                     |
-| ----------------- | ------------------------------------------- |
+| نام               | توضیحات                                        |
+| ----------------- | ---------------------------------------------- |
 | playerid          | ID بازیکنی که رشته textdraw اون باید تنظیم بشه |
-| PlayerText:textid | ID textdraw که باید تغییر کنه               |
-| const format[]    | رشته جدید برای TextDraw                     |
-| OPEN_MP_TAGS:...  | تعداد نامحدودی از آرگومان‌ها با هر tag.       |
+| PlayerText:textid | ID textdraw که باید تغییر کنه                  |
+| const format[]    | رشته جدید برای TextDraw                        |
+| OPEN_MP_TAGS:...  | تعداد نامحدودی از آرگومان‌ها با هر tag.        |
 
 ## مقدار برگشتی
 
@@ -47,7 +47,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 forward UpdateVehicleHealthTextDraw(playerid);
 public UpdateVehicleHealthTextDraw(playerid)
 {
-    new 
+    new
         string[32],
         vehicleid = GetPlayerVehicleID(playerid),
         Float:health;

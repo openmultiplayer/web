@@ -9,12 +9,12 @@ tags: []
 
 Bir SendClientCheck isteği tamamlandığında bu geri çağırma çağrılır.
 
-| Paramtre      | Açıklama                           |
-| ------------- | --------------------------------- |
-| playerid      | Kontrol edilen oyuncunun ID'si.    |
-| actionid      | Gerçekleştirilen kontrol türü.     |
-| memaddr       | İstenen adres.                     |
-| retndata      | Kontrolün sonucu.                  |
+| Paramtre | Açıklama                        |
+| -------- | ------------------------------- |
+| playerid | Kontrol edilen oyuncunun ID'si. |
+| actionid | Gerçekleştirilen kontrol türü.  |
+| memaddr  | İstenen adres.                  |
+| retndata | Kontrolün sonucu.               |
 
 ## Çalışınca Vereceği Sonuçlar
 

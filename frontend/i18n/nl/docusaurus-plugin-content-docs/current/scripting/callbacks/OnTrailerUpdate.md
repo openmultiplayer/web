@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Deze callback wordt aangeroepen wanneer een speler een trailer-update stuurt.
 
-| Naam      | Beschrijving                                    |
-| --------- | ---------------------------------------------- |
+| Naam      | Beschrijving                                        |
+| --------- | --------------------------------------------------- |
 | playerid  | Het ID van de speler die een trailer-update stuurde |
-| vehicleid | De trailer die wordt bijgewerkt                |
+| vehicleid | De trailer die wordt bijgewerkt                     |
 
 ## Returns
 

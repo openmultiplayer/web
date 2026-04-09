@@ -9,18 +9,18 @@ tags: ["player", "object"]
 
 Ова функција се позива када играч заврши са уређивањем објекта ([BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)).
 
-| Име                    | Опис                                                            |
-|------------------------|-----------------------------------------------------------------|
-| playerid               | ID играча који едитује објекат.                                 |
-| playerobject           | 0 if it is a global object or 1 if it is a playerobject.        |
-| objectid               | ID уређеног објекта.                                            |
-| EDIT_RESPONSE:response | Тип [одговора](../resources/objecteditionresponsetypes)         |
-| Float:fX               | X помак за уређени објекат.                                     |
-| Float:fY               | Y помак за уређени објекат.                                     |
-| Float:fZ               | Z помак за уређени објекат.                                     |
-| Float:fRotX            | X ротација за уређени објекат.                                  |
-| Float:fRotY            | Y ротација за уређени објекат.                                  |
-| Float:fRotZ            | Z ротација за уређени објекат.                                  |
+| Име                    | Опис                                                     |
+| ---------------------- | -------------------------------------------------------- |
+| playerid               | ID играча који едитује објекат.                          |
+| playerobject           | 0 if it is a global object or 1 if it is a playerobject. |
+| objectid               | ID уређеног објекта.                                     |
+| EDIT_RESPONSE:response | Тип [одговора](../resources/objecteditionresponsetypes)  |
+| Float:fX               | X помак за уређени објекат.                              |
+| Float:fY               | Y помак за уређени објекат.                              |
+| Float:fZ               | Z помак за уређени објекат.                              |
+| Float:fRotX            | X ротација за уређени објекат.                           |
+| Float:fRotY            | Y ротација за уређени објекат.                           |
+| Float:fRotZ            | Z ротација за уређени објекат.                           |
 
 ## Враћа
 
@@ -45,7 +45,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
     GetObjectPos(objectid, oldX, oldY, oldZ);
     GetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
-    
+
     if (!playerobject) // Ако је ово глобални објекат, синхронизујте позицију за остале играче.
     {
         if (!IsValidObject(objectid))
@@ -60,7 +60,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
     {
         case EDIT_RESPONSE_FINAL:
         {
-            // Играч је кликнуо на икону за чување 
+            // Играч је кликнуо на икону за чување
             // Урадите било шта овде да сачувате ажурирану позицију објекта (и ротацију)
         }
 

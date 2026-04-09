@@ -30,17 +30,17 @@ Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement di
 public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 {
     #pragma unused playerid
- 
-    new panels, doors, lights, tires;	
+
+    new panels, doors, lights, tires;
     GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
     tires = encode_tires(0, 0, 0, 0); // fix all tires
     panels = encode_panels(0, 0, 0, 0, 0, 0, 0); // fix all panels //fell off - (3, 3, 3, 3, 3, 3, 3)
     doors = encode_doors(0, 0, 0, 0, 0, 0); // fix all doors //fell off - (4, 4, 4, 4, 0, 0)
     lights = encode_lights(0, 0, 0, 0); // fix all lights
     UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
-    return 1;	
+    return 1;
 }
- 
+
 encode_tires(tire1, tire2, tire3, tire4) return tire1 | (tire2 << 1) | (tire3 << 2) | (tire4 << 3);
 encode_panels(flp, frp, rlp, rrp, windshield, front_bumper, rear_bumper)
 {

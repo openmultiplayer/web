@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Este callback é chamado quando um jogador clica em uma gangzone no mapa do menu de pausa (clicando com o botão direito).
 
-| Nome     | Descrição                                            |
-| -------- | ---------------------------------------------------- |
-| playerid | O ID do jogador que clicou em uma gangzone.          |
-| zoneid   | O ID da gangzone que o jogador clicou.               |
+| Nome     | Descrição                                   |
+| -------- | ------------------------------------------- |
+| playerid | O ID do jogador que clicou em uma gangzone. |
+| zoneid   | O ID da gangzone que o jogador clicou.      |
 
 ## Retornos
 

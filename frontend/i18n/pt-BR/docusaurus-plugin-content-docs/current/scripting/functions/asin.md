@@ -11,8 +11,8 @@ tags: ["math"]
 
 Obter o valor inverso de um seno em graus. Em trigonometria, arco seno é a operação inversa do seno.
 
-| Nome        | Descrição                                                |
-| ----------- | -------------------------------------------------------- |
+| Nome        | Descrição                                               |
+| ----------- | ------------------------------------------------------- |
 | Float:value | valor cujo arco seno é calculado, no intervalo [-1,+1]. |
 
 ## Retorno

@@ -11,10 +11,10 @@ tags: ["player"]
 
 callback ini memanggil jika player sudah selesai mendownload custom models. Untuk informasi lebih lanjut cara menambahkan custom models ke dalam servermu, Kunjungi [release thread](https://sampforum.blast.hk/showthread.php?tid=644105) and [this tutorial](https://sampforum.blast.hk/showthread.php?tid=644123).
 
-| Name         | Description                                                                    |
-| ------------ | ------------------------------------------------------------------------------ |
-| playerid     | ID dari player yang sudah mendownload custom models.                  		|
-| virtualworld | ID dari virtual world jika player selesai mendownload custom models. 		|
+| Name         | Description                                                          |
+| ------------ | -------------------------------------------------------------------- |
+| playerid     | ID dari player yang sudah mendownload custom models.                 |
+| virtualworld | ID dari virtual world jika player selesai mendownload custom models. |
 
 ## Returns
 
@@ -43,5 +43,5 @@ Callback ini terpanggil sepanjang waktu jika player berganti virtual world, mesk
 Callback berikut mungkin berguna, karena terkait dengan callback ini dalam satu atau lain cara
 
 - [OnPlayerConnect](OnPlayerConnect): Callback ini terpanggil jika player terhubung kedalam server.
-- [OnPlayerDisconnect](OnPlayerDisconnect): Callback ini terpanggil jika player keluar dari server. 
-- [OnIncomingConnection](OnIncomingConnection): Callback ini terpanggil jika player mencoba terhubung kedalam server. 
+- [OnPlayerDisconnect](OnPlayerDisconnect): Callback ini terpanggil jika player keluar dari server.
+- [OnIncomingConnection](OnIncomingConnection): Callback ini terpanggil jika player mencoba terhubung kedalam server.

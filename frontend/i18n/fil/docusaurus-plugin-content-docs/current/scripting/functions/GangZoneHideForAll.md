@@ -9,8 +9,8 @@ tags: ["gangzone"]
 
 Ang GangZoneHideForAll ay nagtatago ng gangzone mula sa lahat ng mga manlalaro.
 
-| Name | Description       |
-| ---- | ----------------- |
+| Name | Description          |
+| ---- | -------------------- |
 | zone | Ang zone na itatago. |
 
 ## Returns

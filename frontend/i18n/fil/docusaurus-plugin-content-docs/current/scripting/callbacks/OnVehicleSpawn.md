@@ -15,8 +15,8 @@ Ang callback na ito ay tinatawag **lamang** kapag ang sasakyan ay **muling** umu
 
 Ang callback na ito ay tinatawag kapag ang isang sasakyan ay nag respawn.
 
-| Name      | Description                         |
-| --------- | ----------------------------------- |
+| Name      | Description                        |
+| --------- | ---------------------------------- |
 | vehicleid | Ang ID ng sasakyan na nag respawn. |
 
 ## Returns
@@ -40,7 +40,6 @@ public OnVehicleSpawn(vehicleid)
 ## Mga Kaugnay na Callbacks
 
 Maaaring maging kapaki-pakinabang ang mga sumusunod na callback, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o iba pa.
-
 
 - [OnVehicleDeath](OnVehicleDeath): Ang callback na ito ay tinatawag kapag nasira ang isang sasakyan.
 - [OnPlayerSpawn](OnPlayerSpawn): Tinatawag ang callback na ito kapag nag-spawn ang isang player.

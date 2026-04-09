@@ -9,8 +9,8 @@ tags: ["administration"]
 
 Tendang player dari server. Player harus keluar dari game dan re-connect jika mereka masih ingin lanjut bermain.
 
-| Nama     | Deskripsi                     |
-| -------- | ----------------------------- |
+| Nama     | Deskripsi                       |
+| -------- | ------------------------------- |
 | playerid | ID player yang ingin ditendang. |
 
 ## Returns

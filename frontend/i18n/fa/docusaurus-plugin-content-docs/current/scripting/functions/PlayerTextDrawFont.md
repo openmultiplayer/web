@@ -9,10 +9,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 فونت یک player-textdraw رو تغییر می‌دهد.
 
-| نام                 | توضیحات                                                                                                                                  |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid            | آی‌دی بازیکنی که player-textdraw متعلق بهش هست                                                                                          |
-| PlayerText:textid   | آی‌دی player-textdraw که می‌خوای فونتش رو تغییر بدی                                                                                       |
+| نام                 | توضیحات                                                                                                                     |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| playerid            | آی‌دی بازیکنی که player-textdraw متعلق بهش هست                                                                              |
+| PlayerText:textid   | آی‌دی player-textdraw که می‌خوای فونتش رو تغییر بدی                                                                         |
 | TEXT_DRAW_FONT:font | چهار نوع فونت مثل موارد زیر وجود داره. مقدار فونت بیشتر از 3 نمایش داده نمی‌شه، و هر چیزی بیشتر از 16 کلاینت رو کرش می‌کنه. |
 
 استایل‌های موجود:
@@ -43,10 +43,10 @@ public OnPlayerConnect(playerid)
 {
     // Avval, textdraw ro ijad mikonim
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server!");
-    
+
     // Font player-textdraw 'welcomeText[playerid]' ro be 2 set mikonim.
     PlayerTextDrawFont(playerid, welcomeText[playerid], TEXT_DRAW_FONT_2);
-    
+
     // 'welcomeText[playerid]' ro be player namayesh midim
     PlayerTextDrawShow(playerid, welcomeText[playerid]);
 

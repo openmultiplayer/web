@@ -9,10 +9,10 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi gửi tin nhắn trò chuyện.
 
-| Tên       | Mô tả                                    |
-| --------- | ---------------------------------------- |
-| playerid  | ID của người chơi đã gõ văn bản.         |
-| text[]    | Văn bản mà người chơi đã gõ.             |
+| Tên      | Mô tả                            |
+| -------- | -------------------------------- |
+| playerid | ID của người chơi đã gõ văn bản. |
+| text[]   | Văn bản mà người chơi đã gõ.     |
 
 ## Giá trị trả về
 
@@ -36,13 +36,13 @@ public OnPlayerText(playerid, text[])
 
 ## Các Callbacks liên quan
 
-Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [OnPlayerCommandText](OnPlayerCommandText): Được gọi khi một người chơi gõ một lệnh.
 
 ## Các Hàm liên quan
 
-Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Buộc một người chơi gửi văn bản cho một người chơi.
 - [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Buộc một người chơi gửi văn bản cho tất cả người chơi.

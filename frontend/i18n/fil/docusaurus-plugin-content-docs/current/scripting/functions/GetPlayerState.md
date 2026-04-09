@@ -9,8 +9,8 @@ tags: ["player"]
 
 Kunin ang kasalukuyang estado ng isang manlalaro.
 
-| Name     | Description                                       |
-| -------- | ------------------------------------------------- |
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
 | playerid | Ang ID ng player para makuha ang kasalukuyang estado. |
 
 ## Returns

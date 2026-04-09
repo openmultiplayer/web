@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Kanselahin ang pagpili ng textdraw gamit ang mouse.
 
-| Name     | Description                                                         |
-| -------- | ------------------------------------------------------------------- |
-| playerid | Ang id ng player na dapat ma-disable ang textdraw selection         |
+| Name     | Description                                                 |
+| -------- | ----------------------------------------------------------- |
+| playerid | Ang id ng player na dapat ma-disable ang textdraw selection |
 
 ## Returns
 

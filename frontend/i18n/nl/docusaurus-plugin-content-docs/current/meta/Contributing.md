@@ -219,4 +219,3 @@ Heb je geen tijd? Geen zorgen! Dien een onvolledige conceptversie in en iemand a
 ## Licentieovereenkomst
 
 Alle open.mp-projecten hebben een [Contributor License Agreement](https://cla-assistant.io/openmultiplayer/homepage). Dit betekent in feite dat je ermee akkoord gaat dat wij jouw werk gebruiken en onder een open-sourcelicentie plaatsen. Wanneer je voor de eerste keer een Pull Request opent, zal de CLA-Assistant-bot een link plaatsen waar je de overeenkomst kunt ondertekenen.
-

@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Este callback é chamado quando um jogador sai de uma gangzone.
 
-| Nome     | Descrição                                    |
-| -------- | -------------------------------------------- |
-| playerid | O ID do jogador que saiu da gangzone.        |
-| zoneid   | O ID da gangzone que o jogador saiu.         |
+| Nome     | Descrição                             |
+| -------- | ------------------------------------- |
+| playerid | O ID do jogador que saiu da gangzone. |
+| zoneid   | O ID da gangzone que o jogador saiu.  |
 
 ## Retornos
 

@@ -9,15 +9,15 @@ tags: ["player"]
 
 Callback ini dipanggil ketika pemain melepaskan tembakan dari senjata. Hanya senjata yang di dukung. Hanya drive-by penumpang yang di dukung (bukan drive-by pengemudi, dan bukan tembakan burung / pemburu).
 
-| Nama     | Deskripsi                                                                                               |
-| -------- | --------------------------------------------------------------------------------------------------------- |
-| playerid | ID pemain yang menembakkan senjata.                                                                  |
-| WEAPON:weaponid | ID dari [weapon](../resources/weaponids) yang di tembak oleh pemain.                                        |
-| BULLET_HIT_TYPE:hittype  | [type](../resources/bullethittypes) Tersebut dari benda yang di tembakkan (tidak ada, pemain, kendaraan, atau (pemain) objek). |
-| hitid    | ID pemain, kendaraan atau objek yang tertabrak.                                                     |
-| Float:fX       | Koordinat X yang di tembak.                                                                       |
-| Float:fY       | Koordinat Y yang di tembak.                                                                       |
-| Float:fZ       | Koordinat Z yang di tembak.                                                                       |
+| Nama                    | Deskripsi                                                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| playerid                | ID pemain yang menembakkan senjata.                                                                                            |
+| WEAPON:weaponid         | ID dari [weapon](../resources/weaponids) yang di tembak oleh pemain.                                                           |
+| BULLET_HIT_TYPE:hittype | [type](../resources/bullethittypes) Tersebut dari benda yang di tembakkan (tidak ada, pemain, kendaraan, atau (pemain) objek). |
+| hitid                   | ID pemain, kendaraan atau objek yang tertabrak.                                                                                |
+| Float:fX                | Koordinat X yang di tembak.                                                                                                    |
+| Float:fY                | Koordinat Y yang di tembak.                                                                                                    |
+| Float:fZ                | Koordinat Z yang di tembak.                                                                                                    |
 
 ## Returns
 
@@ -42,7 +42,6 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 ## Catatan
 
 :::tip
-
 
 Callback ini hanya di panggil ketika kompensasi lag diaktifkan. Jika tipe hit adalah:
 

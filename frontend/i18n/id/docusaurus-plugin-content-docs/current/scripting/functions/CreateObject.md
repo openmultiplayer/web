@@ -9,15 +9,15 @@ tags: []
 
 Membuat Object pada koordinat tertentu di dalam game.
 
-| Name               | Description                                                                                                                                                                 |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| modelid            | Model Object yang ingin di buat.                                                                                                                                            |
-| Float:X            | Cordinat X untuk membuat suatu Object.                                                                                                                                      |
-| Float:Y            | Cordinat Y untuk membuat suatu Object.                                                                                                                                      |
-| Float:Z            | Cordinat Z untuk membuat suatu Object.                                                                                                                                      |
-| Float:rX           | Rotasi X untuk membuat suatu Object.                                                                                                                                        |
-| Float:rY           | Rotasi Y untuk membuat suatu Object.                                                                                                                                        |
-| Float:rZ           | Rotasi Z untuk membuat suatu Object.                                                                                                                                        |
+| Name               | Description                                                                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------- |
+| modelid            | Model Object yang ingin di buat.                                                                              |
+| Float:X            | Cordinat X untuk membuat suatu Object.                                                                        |
+| Float:Y            | Cordinat Y untuk membuat suatu Object.                                                                        |
+| Float:Z            | Cordinat Z untuk membuat suatu Object.                                                                        |
+| Float:rX           | Rotasi X untuk membuat suatu Object.                                                                          |
+| Float:rY           | Rotasi Y untuk membuat suatu Object.                                                                          |
+| Float:rZ           | Rotasi Z untuk membuat suatu Object.                                                                          |
 | Float:DrawDistance | (optional) Jarak yang San Andreas untuk Object di. 0.0 akan menyebabkan objek dirender pada jarak defaultnya. |
 
 ## Contoh

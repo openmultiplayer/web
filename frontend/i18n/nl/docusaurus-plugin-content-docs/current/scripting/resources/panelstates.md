@@ -9,5 +9,3 @@ Gebruikt door [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) en [
 :::
 
 Elke nibble (4 bits) slaat een paneel op (auto) of onderdeel (vliegtuig). Waarden: 0 onbeschadigd, 1 gedeukt, 2 loshangend, 3 verwijderd. Niet alle voertuigen ondersteunen alle panelen. Voor details/voorbeelden, zie [Panel States](/docs/scripting/resources/panelstates).
-
-

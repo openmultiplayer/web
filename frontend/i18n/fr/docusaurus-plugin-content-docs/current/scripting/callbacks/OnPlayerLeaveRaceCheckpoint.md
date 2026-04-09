@@ -9,9 +9,9 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 Cette callback est appelée quand un joueur quitte un race checkpoint.
 
-| Nom            | Description                                      |
-| -------------- | ------------------------------------------------ |
-| `int` playerid | ID du joueur qui a quitté le race checkpoint     |
+| Nom            | Description                                  |
+| -------------- | -------------------------------------------- |
+| `int` playerid | ID du joueur qui a quitté le race checkpoint |
 
 ## Valeur de retour
 

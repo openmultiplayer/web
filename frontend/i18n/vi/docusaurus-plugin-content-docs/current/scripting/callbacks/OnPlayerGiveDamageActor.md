@@ -11,13 +11,13 @@ tags: ["player", "actor"]
 
 Callback này được gọi khi một người chơi gây thiệt hại cho một diễn viên.
 
-| Tên              | Mô Tả                                                    |
-|-------------------|----------------------------------------------------------|
-| playerid          | ID của người chơi đã gây thiệt hại.                     |
-| damaged_actorid   | ID của diễn viên nhận thiệt hại.                        |
-| Float:amount      | Số lượng máu/giáp mà damaged_actorid đã mất.            |
-| WEAPON:weaponid   | Nguyên nhân gây thiệt hại.                               |
-| bodypart          | [Phần cơ thể](../resources/bodyparts) bị trúng đạn.      |
+| Tên             | Mô Tả                                               |
+| --------------- | --------------------------------------------------- |
+| playerid        | ID của người chơi đã gây thiệt hại.                 |
+| damaged_actorid | ID của diễn viên nhận thiệt hại.                    |
+| Float:amount    | Số lượng máu/giáp mà damaged_actorid đã mất.        |
+| WEAPON:weaponid | Nguyên nhân gây thiệt hại.                          |
+| bodypart        | [Phần cơ thể](../resources/bodyparts) bị trúng đạn. |
 
 ## Trả Về
 

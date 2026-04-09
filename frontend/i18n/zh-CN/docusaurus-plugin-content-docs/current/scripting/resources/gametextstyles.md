@@ -10,7 +10,7 @@ description: 文本绘图与游戏文本的样式说明
 
 ## 文本颜色
 
-通过颜色代码可以实现文本分段着色。使用格式为：\~颜色代码\~文本内容\~颜色代码\~（例如：\~y\~黄色文本\~y\~）
+可对文本的特定部分进行不同颜色的绘制。为此，只需使用下列色彩标记，并将特定颜色绘制的文本部分包裹其中（例如 `~y~我以黄色绘制！~y~`）。
 
 | 代码                             | 颜色示例                                                        | 说明                         |
 | -------------------------------- | --------------------------------------------------------------- | ---------------------------- |
@@ -56,21 +56,19 @@ description: 文本绘图与游戏文本的样式说明
 
 ## 基础文本样式
 
-| 样式   | 预览图                                                              | 特性说明                                                               |
-| ------ | ------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| 样式 0 | ![](https://assets.open.mp/assets/images/gameTextStyles/style0.png) | 固定显示 9 秒（无视时间设置），会覆盖其他文本（通过 fixes.inc 修复）   |
-| 样式 1 | ![](https://assets.open.mp/assets/images/gameTextStyles/style1.png) | 8 秒后淡出，若设置时间更长将循环显示（通过 fixes.inc 修复）            |
-| 样式 2 | ![](https://assets.open.mp/assets/images/gameTextStyles/style2.png) | 无特殊说明                                                             |
-| 样式 3 | ![](https://assets.open.mp/assets/images/gameTextStyles/style3.png) | 无特殊说明                                                             |
-| 样式 4 | ![](https://assets.open.mp/assets/images/gameTextStyles/style4.png) | 无特殊说明                                                             |
-| 样式 5 | ![](https://assets.open.mp/assets/images/gameTextStyles/style5.png) | 固定显示 3 秒（无视时间设置），频繁调用会被屏蔽（通过 fixes.inc 修复） |
-| 样式 6 | ![](https://assets.open.mp/assets/images/gameTextStyles/style6.png) | 无特殊说明                                                             |
+| 样式   | 预览图                                                              | 特性说明                                                                           |
+| ------ | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 样式 0 | ![](https://assets.open.mp/assets/images/gameTextStyles/style0.png) | 固定显示 9 秒（无视时间设置），会覆盖其他文本（通过 fixes.inc / GameText+ 修复）   |
+| 样式 1 | ![](https://assets.open.mp/assets/images/gameTextStyles/style1.png) | 8 秒后淡出，若设置时间更长将循环显示（通过 fixes.inc / GameText+ 修复）            |
+| 样式 2 | ![](https://assets.open.mp/assets/images/gameTextStyles/style2.png) | 无特殊说明                                                                         |
+| 样式 3 | ![](https://assets.open.mp/assets/images/gameTextStyles/style3.png) | 无特殊说明                                                                         |
+| 样式 4 | ![](https://assets.open.mp/assets/images/gameTextStyles/style4.png) | 无特殊说明                                                                         |
+| 样式 5 | ![](https://assets.open.mp/assets/images/gameTextStyles/style5.png) | 固定显示 3 秒（无视时间设置），频繁调用会被屏蔽（通过 fixes.inc / GameText+ 修复） |
+| 样式 6 | ![](https://assets.open.mp/assets/images/gameTextStyles/style6.png) | 无特殊说明                                                                         |
 
 ---
 
-## fixes.inc 扩展样式
-
-通过[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)扩展的样式：
+## [fixes.inc](https://github.com/pawn-lang/sa-mp-fixes) / [GameText+](https://github.com/itsneufox/GameText-Plus) 扩展样式
 
 | 样式    | 预览图                                                               | 原型参照                       |
 | ------- | -------------------------------------------------------------------- | ------------------------------ |

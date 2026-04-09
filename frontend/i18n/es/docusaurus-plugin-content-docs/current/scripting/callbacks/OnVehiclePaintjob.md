@@ -8,11 +8,11 @@ tags: ["vehicle"]
 
 Se llama cuando un jugador obtiene una vista previa de una capa de pintura adentro de un taller de modificación. Cuidado, este callback no se llama cuando el jugador compra la capa de pintura.
 
-| Nombre     | Descripción                                                      |
-| ---------- | ---------------------------------------------------------------- |
-| playerid   | El ID del jugador que cambió la capa de pintura. 				|
-| vehicleid  | El ID del vehículo al que cambiaron de capa de pintura.          |
-| paintjobid | El ID de la nueva capa de pintura.                               |
+| Nombre     | Descripción                                             |
+| ---------- | ------------------------------------------------------- |
+| playerid   | El ID del jugador que cambió la capa de pintura.        |
+| vehicleid  | El ID del vehículo al que cambiaron de capa de pintura. |
+| paintjobid | El ID de la nueva capa de pintura.                      |
 
 ## Devoluciones
 

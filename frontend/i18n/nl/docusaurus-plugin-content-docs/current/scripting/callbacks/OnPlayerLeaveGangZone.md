@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Deze callback wordt aangeroepen wanneer een speler een gangzone verlaat.
 
-| Naam     | Beschrijving                                    |
-| -------- | ---------------------------------------------- |
-| playerid | Het ID van de speler die de gangzone verliet.  |
-| zoneid   | Het ID van de gangzone die de speler verliet.  |
+| Naam     | Beschrijving                                  |
+| -------- | --------------------------------------------- |
+| playerid | Het ID van de speler die de gangzone verliet. |
+| zoneid   | Het ID van de gangzone die de speler verliet. |
 
 ## Returns
 
@@ -40,5 +40,3 @@ public OnPlayerLeaveGangZone(playerid, zoneid)
 
 - [GangZoneCreate](../functions/GangZoneCreate): Maak een gangzone (gekleurd radargebied).
 - [GangZoneDestroy](../functions/GangZoneDestroy): Vernietig een gangzone.
-
-

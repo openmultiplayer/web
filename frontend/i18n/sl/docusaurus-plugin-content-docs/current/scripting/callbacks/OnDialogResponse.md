@@ -9,13 +9,13 @@ tags: []
 
 Ta "callback" se pokliče, ko se predvajalnik odzove na pogovorno okno s funkcijo "ShowPlayerDialog" s klikom na gumb, s pritiskom na tipko ENTER/ESC ali z dvojnim klikom na element seznama (če uporabljate pogovorno okno sloga seznama).
 
-| Ime         | Opis                                                                                                                                   |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid    | ID igralca, ki se je odzval na dialog.                                                                                                 |
-| dialogid    | ID pogovornega okna, na katerega se je predvajalnik odzval, dodeljena iz "ShowPlayerDialog".                                           |
-| response    | 1 za levi in ​​0 za desni gumb (če je prikazan samo en gumb, vedno 1).                                                                   |
-| listitem    | ID seznama elementa, ki ga je izbrala naprava (začne se pri 0) (samo če uporabljate pogovorno okno za slog seznama, sicer bo -1).      |
-| inputtext[] | Besedilo vneseno v "input box" s strani igralca ali besedilo izbranega elementa seznama.                                               |
+| Ime         | Opis                                                                                                                              |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| playerid    | ID igralca, ki se je odzval na dialog.                                                                                            |
+| dialogid    | ID pogovornega okna, na katerega se je predvajalnik odzval, dodeljena iz "ShowPlayerDialog".                                      |
+| response    | 1 za levi in ​​0 za desni gumb (če je prikazan samo en gumb, vedno 1).                                                            |
+| listitem    | ID seznama elementa, ki ga je izbrala naprava (začne se pri 0) (samo če uporabljate pogovorno okno za slog seznama, sicer bo -1). |
+| inputtext[] | Besedilo vneseno v "input box" s strani igralca ali besedilo izbranega elementa seznama.                                          |
 
 ## Returns
 
@@ -34,7 +34,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     if (dialogid == DIALOG_RULES)
     {
-        if (response) // Če so kliknili 'Da' ali pritisnili ENTER 
+        if (response) // Če so kliknili 'Da' ali pritisnili ENTER
         {
             SendClientMessage(playerid, COLOR_GREEN, "Hvala, ker ste sprejeli pravila!");
         }
@@ -83,7 +83,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 // definiramo tretje pogovorno okno, spet je vrednost večja od vrednosti prejšnjega pogovornega okna
 #define DIALOG_WEAPONS 3
 
-// V ukazu pokažemo ta dialog 
+// V ukazu pokažemo ta dialog
 ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Orožje ", "Desert Eagle\nAK-47\nCombat Shotgun", "Izaberi", "Odnehaj");
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])

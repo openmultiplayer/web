@@ -29,8 +29,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/npcenterbike ", true, 14))
     {
-        new seatid = strval(cmdtext[14]);
-        if (cmdtext[14] == '\0')
+        new seatid = strval(cmdtext[15]);
+        if (cmdtext[15] == '\0')
             return SendClientMessage(playerid, 0xFF0000FF, "Usage: /npcenterbike [seatid]");
 
         new npcid = PlayerNPC[playerid];

@@ -9,14 +9,14 @@ tags: ["vehicle"]
 
 Bir aracı bir başka araca römork olarak bağlama.
 
-| Parametre | Açıklama                                          |
-| --------- | ------------------------------------------------- |
-| trailerid | Römork işlevi görecek aracın ID'si.               |
-| vehicleid | Römorku çekecek olan aracın ID'si.                |
+| Parametre | Açıklama                            |
+| --------- | ----------------------------------- |
+| trailerid | Römork işlevi görecek aracın ID'si. |
+| vehicleid | Römorku çekecek olan aracın ID'si.  |
 
 ## Çalışınca Vereceği Sonuçlar
 
-Bu fonksiyon römork işlevi görecek olan araç yaratılmamış/geçersiz olsa bile her zaman 1 olarak döner. 
+Bu fonksiyon römork işlevi görecek olan araç yaratılmamış/geçersiz olsa bile her zaman 1 olarak döner.
 
 ## Örnekler
 
@@ -24,7 +24,7 @@ Bu fonksiyon römork işlevi görecek olan araç yaratılmamış/geçersiz olsa 
 new vehicleId = CreateVehicle(...);
 new trailerId = CreateVehicle(...);
 
-AttachTrailerToVehicle(trailerId, vehicleId); 
+AttachTrailerToVehicle(trailerId, vehicleId);
 ```
 
 ## Notlar

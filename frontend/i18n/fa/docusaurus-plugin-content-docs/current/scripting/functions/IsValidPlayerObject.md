@@ -9,10 +9,10 @@ tags: ["player", "object", "playerobject"]
 
 چک می‌کنه که آیا ID object داده شده برای بازیکن داده شده معتبره یا نه.
 
-| نام      | توضیحات                                                  |
-| -------- | -------------------------------------------------------- |
-| playerid | ID بازیکنی که player-object ش باید validate بشه.        |
-| objectid | ID object که باید validate بشه.                         |
+| نام      | توضیحات                                          |
+| -------- | ------------------------------------------------ |
+| playerid | ID بازیکنی که player-object ش باید validate بشه. |
+| objectid | ID object که باید validate بشه.                  |
 
 ## مقادیر برگشتی
 

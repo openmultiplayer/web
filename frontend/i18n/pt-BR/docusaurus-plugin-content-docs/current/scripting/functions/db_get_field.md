@@ -11,12 +11,12 @@ tags: ["sqlite"]
 
 Obtém o conteúdo de um campo de db_query
 
-| Nome              | Descrição                                |
-| ----------------- | ---------------------------------------- |
-| DBResult:dbresult | O resultado de onde obter os dados.     |
-| field             | O campo de onde obter os dados.         |
-| result[]          | O resultado.                             |
-| maxlength         | O comprimento máximo do campo.          |
+| Nome              | Descrição                           |
+| ----------------- | ----------------------------------- |
+| DBResult:dbresult | O resultado de onde obter os dados. |
+| field             | O campo de onde obter os dados.     |
+| result[]          | O resultado.                        |
+| maxlength         | O comprimento máximo do campo.      |
 
 ## Retorno
 

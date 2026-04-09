@@ -11,10 +11,10 @@ tags: ["sqlite"]
 
 Obtém o conteúdo do campo como um inteiro com nome especificado.
 
-| Nome              | Descrição                                |
-| ----------------- | ---------------------------------------- |
-| DBResult:dbresult | O resultado de onde obter os dados      |
-| field[]           | O nome do campo de onde obter os dados  |
+| Nome              | Descrição                              |
+| ----------------- | -------------------------------------- |
+| DBResult:dbresult | O resultado de onde obter os dados     |
+| field[]           | O nome do campo de onde obter os dados |
 
 ## Retorno
 

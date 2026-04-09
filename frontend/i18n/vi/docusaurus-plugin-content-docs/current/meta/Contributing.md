@@ -1,8 +1,6 @@
 ---
-
 title: Contributing
 description: How to contribute to the SA-MP Wiki and open.mp documentation.
-
 ---
 
 Tài liệu này mở để bất kỳ ai cũng có thể đóng góp thay đổi! Tất cả những gì bạn cần là một tài khoản [GitHub](https://github.com) và một chút thời gian rảnh. Bạn thậm chí không cần phải biết Git, bạn có thể thực hiện tất cả từ giao diện web!
@@ -139,33 +137,33 @@ Nếu bảng có tiêu đề, chúng nằm ở phần trên:
 - ❌
 
   ```md
-  |         |                                      |
-  | ------- | ------------------------------------ |
-  | Sức Khỏe | Tình Trạng Động Cơ                     |
-  | 650     | Không bị hỏng                          |
-  | 650-550 | Khói trắng                            |
-  | 550-390 | Khói xám                              |
-  | 390-250 | Khói đen                              |
-  | < 250   | Bị cháy (sẽ nổ trong vài giây)       |
+  |          |                                |
+  | -------- | ------------------------------ |
+  | Sức Khỏe | Tình Trạng Động Cơ             |
+  | 650      | Không bị hỏng                  |
+  | 650-550  | Khói trắng                     |
+  | 550-390  | Khói xám                       |
+  | 390-250  | Khói đen                       |
+  | < 250    | Bị cháy (sẽ nổ trong vài giây) |
   ```
 
 - ✔
 
   ```md
-  | Sức Khỏe | Tình Trạng Động Cơ                     |
-  | ------- | ------------------------------------ |
-  | 650     | Không bị hỏng                          |
-  | 650-550 | Khói trắng                            |
-  | 550-390 | Khói xám                              |
-  | 390-250 | Khói đen                              |
-  | < 250   | Bị cháy (sẽ nổ trong vài giây)       |
+  | Sức Khỏe | Tình Trạng Động Cơ             |
+  | -------- | ------------------------------ |
+  | 650      | Không bị hỏng                  |
+  | 650-550  | Khói trắng                     |
+  | 550-390  | Khói xám                       |
+  | 390-250  | Khói đen                       |
+  | < 250    | Bị cháy (sẽ nổ trong vài giây) |
   ```
 
 ## Di Chuyển Từ SA-MP Wiki
 
 Hầu hết nội dung đã được chuyển, nhưng nếu bạn tìm thấy một trang bị thiếu, đây là hướng
 
- dẫn cách tìm nội dung trên [SA-MP Wiki](https://sampwiki.blast.hk).
+dẫn cách tìm nội dung trên [SA-MP Wiki](https://sampwiki.blast.hk).
 
 ### Sửa Đổi
 

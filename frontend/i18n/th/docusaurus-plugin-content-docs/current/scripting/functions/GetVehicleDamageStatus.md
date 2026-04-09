@@ -26,7 +26,7 @@ Retrieve the damage statuses of a vehicle.
 ## ตัวอย่าง
 
 ```c
-new 
+new
 	VEHICLE_PANEL_STATUS:panels,
 	VEHICLE_DOOR_STATUS:doors,
 	VEHICLE_LIGHT_STATUS:lights,

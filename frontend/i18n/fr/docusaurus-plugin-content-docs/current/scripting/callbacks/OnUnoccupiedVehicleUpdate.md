@@ -25,7 +25,7 @@ Cela arrive en dehors du véhicule ou quand le joueur est en passager et qu'il n
 
 ## Valeur de retour
 
-Retourner **0** peut empêcher l'update. 
+Retourner **0** peut empêcher l'update.
 
 ## Exemple
 
@@ -48,7 +48,6 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 :::warning
 
 Cette callback est appelée très fréquemment par seconde et par véhicule. Vous devez vous abstenir d'implémenter des calculs intensifs ou des opérations d'écriture / lecture de fichiers intensives dans cette callback.
-
 
 :::
 

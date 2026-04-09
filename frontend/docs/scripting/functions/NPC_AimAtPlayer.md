@@ -34,7 +34,7 @@ Returns `true` if the operation was successful, `false` otherwise.
 
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
-{  
+{
     if (!strcmp(cmdtext, "/hostile", true))
     {
         new npcid = PlayerNPC[playerid];

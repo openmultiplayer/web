@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 چرخش Z (yaw) یه ماشین رو تنظیم می‌کنه.
 
-| نام         | توضیحات                                   |
-| ----------- | --------------------------------------------- |
+| نام         | توضیحات                                  |
+| ----------- | ---------------------------------------- |
 | vehicleid   | ID ماشینی که می‌خوای چرخشش رو تنظیم کنی. |
-| Float:angle | زاویه Z که باید تنظیم بشه.                           |
+| Float:angle | زاویه Z که باید تنظیم بشه.               |
 
 ## مقدار برگشتی
 
@@ -30,11 +30,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new
             vehicleid,
             Float:angle;
-        
+
         vehicleid = GetPlayerVehicleID(playerid);
         GetVehicleZAngle(vehicleid, angle);
         SetVehicleZAngle(vehicleid, angle);
-        
+
         SendClientMessage(playerid, 0xFFFFFFFF, "Your vehicle has been flipped.");
         return 1;
     }

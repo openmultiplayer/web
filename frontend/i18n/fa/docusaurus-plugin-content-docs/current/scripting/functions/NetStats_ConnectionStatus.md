@@ -9,9 +9,9 @@ tags: ["network monitoring"]
 
 وضعیت اتصال فعلی بازیکن را می‌گیرد.
 
-| نام      | توضیحات                                            |
-| -------- | -------------------------------------------------- |
-| playerid | ID بازیکنی که وضعیت اتصالش گرفته می‌شود.           |
+| نام      | توضیحات                                  |
+| -------- | ---------------------------------------- |
+| playerid | ID بازیکنی که وضعیت اتصالش گرفته می‌شود. |
 
 ## مقدار بازگشتی
 
@@ -24,7 +24,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/connectionstatus"))
     {
-        static ConnectionStatuses[9][48] = 
+        static ConnectionStatuses[9][48] =
         {
             "No Action",
             "Disconnect ASAP",

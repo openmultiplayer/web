@@ -9,17 +9,17 @@ tags: ["player", "vehicle"]
 
 Attach a player object to a vehicle.
 
-| Ime           | Deskripcija                                      |
-| ------------- | ------------------------------------------------ |
-| playerid      | ID igrača za kojeg je kreiran objekat.           |
-| objectid      | ID objekta kojeg želite prikvačiti za vozilo.    |
-| vehicleid     | ID vozila za kojeg želite prikvačiti objekat.    |
-| Float:OffsetX | Pomak položaja X za pričvršćivanje.              |
-| Float:OffsetY | Pomak položaja Y za pričvršćivanje.              |
-| Float:OffsetZ | Pomak položaja Z za pričvršćivanje.              |
-| Float:RotX    | Pomak rotacije X za pričvršćivanje.              |
-| Float:RotY    | Pomak rotacije Y za pričvršćivanje.              |
-| Float:RotZ    | Pomak rotacije Z za pričvršćivanje.              |
+| Ime           | Deskripcija                                   |
+| ------------- | --------------------------------------------- |
+| playerid      | ID igrača za kojeg je kreiran objekat.        |
+| objectid      | ID objekta kojeg želite prikvačiti za vozilo. |
+| vehicleid     | ID vozila za kojeg želite prikvačiti objekat. |
+| Float:OffsetX | Pomak položaja X za pričvršćivanje.           |
+| Float:OffsetY | Pomak položaja Y za pričvršćivanje.           |
+| Float:OffsetZ | Pomak položaja Z za pričvršćivanje.           |
+| Float:RotX    | Pomak rotacije X za pričvršćivanje.           |
+| Float:RotY    | Pomak rotacije Y za pričvršćivanje.           |
+| Float:RotZ    | Pomak rotacije Z za pričvršćivanje.           |
 
 ## Returns
 

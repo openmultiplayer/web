@@ -9,7 +9,6 @@ tags: []
 
 Ipagpapatuloy nito ang naka-pause na pag-record.
 
-
 ## Related Functions
 
 - [PauseRecordingPlayback](PauseRecordingPlayback): Ipagpapatuloy ang pagre-record kung naka-pause ito.

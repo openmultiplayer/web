@@ -38,5 +38,3 @@ Voorbeelden:
 0xFF00FFFF // paars
 0x00FFFFFF // cyaan
 ```
-
-

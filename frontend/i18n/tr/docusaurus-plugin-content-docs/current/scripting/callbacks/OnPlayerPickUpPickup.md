@@ -1,13 +1,13 @@
 ---
 title: OnPlayerPickUpPickup
 sidebar_label: OnPlayerPickUpPickup
-description: Fonksiyon, oyuncu CreatePickup ile oluşturulan bir işaretin (pickup) üstüne geldiğinde çağrılır. 
+description: Fonksiyon, oyuncu CreatePickup ile oluşturulan bir işaretin (pickup) üstüne geldiğinde çağrılır.
 tags: ["player"]
 ---
 
 ## Açıklama
 
-Fonksiyon, oyuncu CreatePickup ile oluşturulan bir işaretin (pickup) üstüne geldiğinde çağrılır. 
+Fonksiyon, oyuncu CreatePickup ile oluşturulan bir işaretin (pickup) üstüne geldiğinde çağrılır.
 
 | Parametre | Açıklama                                           |
 | --------- | -------------------------------------------------- |
@@ -16,7 +16,7 @@ Fonksiyon, oyuncu CreatePickup ile oluşturulan bir işaretin (pickup) üstüne 
 
 ## Çalışınca Vereceği Sonuçlar
 
-Oyun modunda her zaman ilk olarak çağrılır. 
+Oyun modunda her zaman ilk olarak çağrılır.
 
 ## Örnek
 

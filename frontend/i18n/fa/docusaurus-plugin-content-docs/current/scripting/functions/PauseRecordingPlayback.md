@@ -9,7 +9,6 @@ tags: []
 
 این پخش ضبط را متوقف می‌کند.
 
-
 ## توابع مرتبط
 
 - [ResumeRecordingPlayback](ResumeRecordingPlayback): ضبط را ادامه می‌دهد اگر متوقف باشد.

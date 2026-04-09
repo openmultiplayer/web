@@ -9,16 +9,16 @@ tags: ["player", "object", "playerobject"]
 
 Cria um objeto que será visível apenas para um jogador.
 
-| Nome               | Descrição                                                                                                                                                                                                   |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid           | O ID do jogador para criar o objeto.                                                                                                                                                                       |
-| modelid            | O modelo a ser criado.                                                                                                                                                                                      |
-| Float:x            | A coordenada X onde criar o objeto.                                                                                                                                                                        |
-| Float:y            | A coordenada Y onde criar o objeto.                                                                                                                                                                        |
-| Float:z            | A coordenada Z onde criar o objeto.                                                                                                                                                                        |
-| Float:rotationX    | A rotação X do objeto.                                                                                                                                                                                     |
-| Float:rotationY    | A rotação Y do objeto.                                                                                                                                                                                     |
-| Float:rotationZ    | A rotação Z do objeto.                                                                                                                                                                                     |
+| Nome               | Descrição                                                                                                                                                                                                                                    |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid           | O ID do jogador para criar o objeto.                                                                                                                                                                                                         |
+| modelid            | O modelo a ser criado.                                                                                                                                                                                                                       |
+| Float:x            | A coordenada X onde criar o objeto.                                                                                                                                                                                                          |
+| Float:y            | A coordenada Y onde criar o objeto.                                                                                                                                                                                                          |
+| Float:z            | A coordenada Z onde criar o objeto.                                                                                                                                                                                                          |
+| Float:rotationX    | A rotação X do objeto.                                                                                                                                                                                                                       |
+| Float:rotationY    | A rotação Y do objeto.                                                                                                                                                                                                                       |
+| Float:rotationZ    | A rotação Z do objeto.                                                                                                                                                                                                                       |
 | Float:drawDistance | A distância a partir da qual os objetos aparecerão para os jogadores. 0.0 fará com que um objeto seja renderizado em sua distância padrão. Deixar este parâmetro de fora fará com que os objetos sejam renderizados em sua distância padrão. |
 
 ## Retorno

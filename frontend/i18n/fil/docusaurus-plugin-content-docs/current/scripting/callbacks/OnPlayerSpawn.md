@@ -9,9 +9,9 @@ tags: ["player"]
 
 Tinatawag ang callback na ito kapag nag-spawn ang isang player.(i.e. pagkatapos i-cal ang [SpawnPlayer](../functions/SpawnPlayer) function)
 
-| Name     | Description                        |
-| -------- | ---------------------------------- |
-| playerid | Ang ID ng player na nag-spawn      |
+| Name     | Description                   |
+| -------- | ----------------------------- |
+| playerid | Ang ID ng player na nag-spawn |
 
 ## Returns
 
@@ -52,7 +52,7 @@ Maaaring maging kapaki-pakinabang ang mga sumusunod na callback, dahil nauugnay 
 
 ## Related Functions
 
-Maaaring maging kapaki-pakinabang ang mga sumusunod na function, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o iba pa. 
+Maaaring maging kapaki-pakinabang ang mga sumusunod na function, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o iba pa.
 
 - [SpawnPlayer](../functions/SpawnPlayer): Pilitin ang isang manlalaro na mag-spawn.
 - [AddPlayerClass](../functions/AddPlayerClass): Mag add ng class.

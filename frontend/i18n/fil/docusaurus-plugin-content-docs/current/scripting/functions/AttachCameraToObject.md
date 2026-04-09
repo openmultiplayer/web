@@ -9,10 +9,10 @@ tags: []
 
 Maaari mong gamitin ang function na ito upang ikabit ang player camera sa mga bagay.
 
-| Name     | Description                                                          |
-| -------- | -------------------------------------------------------------------- |
-| playerid | Ang ID ng player kung saan ikakabit ang iyong camera sa bagay.       |
-| objectid | Ang object id na gusto mong ilakip ang player camera.                |
+| Name     | Description                                                    |
+| -------- | -------------------------------------------------------------- |
+| playerid | Ang ID ng player kung saan ikakabit ang iyong camera sa bagay. |
+| objectid | Ang object id na gusto mong ilakip ang player camera.          |
 
 ## Returns
 

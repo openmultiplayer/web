@@ -36,7 +36,6 @@ public OnTrailerUpdate(playerid, vehicleid)
 
 :::warning
 
-
 Bu fonksiyon, her römork için saniyede çok sık çağrılır. Bu çağrıda yoğun hesaplamalar veya yoğun dosya yazma / okuma işlemleri yapmaktan kaçınmalısınız.
 
 :::

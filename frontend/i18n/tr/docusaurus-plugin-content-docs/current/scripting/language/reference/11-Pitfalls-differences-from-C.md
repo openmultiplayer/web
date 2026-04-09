@@ -44,4 +44,4 @@ Eğer sağlanırsa, ileriye dönük bildirimler fonksiyon tanımı ile tam olara
 
 ---
 
-[İçerik listesine geri dön](00-Contents)
+[İçerik listesine geri dön](Contents)

@@ -7,15 +7,15 @@ tags: []
 
 ## Paramètres
 
-Cette callback est appelée lorsqu'une commande est exécutée dans la console, ou via le jeu avec les commandes RCON  
+Cette callback est appelée lorsqu'une commande est exécutée dans la console, ou via le jeu avec les commandes RCON
 
 | Nom            | Description                              |
-| -------------- | -----------------------------------------|
+| -------------- | ---------------------------------------- |
 | `string` cmd[] | Une chaîne contenant la commande écrite. |
 
 ## Valeur de retour
 
-- **0** si la commande n'a pas été exécutée, le script sera aussi exécuté sur les filterscripts. 
+- **0** si la commande n'a pas été exécutée, le script sera aussi exécuté sur les filterscripts.
 
 - **1** si la commande a été exécutée, elle ne sera pas envoyée aux autres scripts.
 

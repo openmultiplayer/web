@@ -9,7 +9,6 @@ tags: ["npc"]
 
 Tinatawag ang callback na ito kapag na-load ang isang NPC script.
 
-
 ## Examples
 
 ```c

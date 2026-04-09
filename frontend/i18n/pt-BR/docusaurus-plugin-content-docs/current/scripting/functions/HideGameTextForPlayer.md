@@ -1,8 +1,7 @@
 ---
-
-title: HideGameTextForPlayer  
-description: Esconder um estilo de gametext para um jogador.  
-tags: ["player", "gametext"]  
+title: HideGameTextForPlayer
+description: Esconder um estilo de gametext para um jogador.
+tags: ["player", "gametext"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
@@ -11,10 +10,10 @@ tags: ["player", "gametext"]
 
 Interrompe a exibição de um estilo de gametext para um jogador.
 
-| Nome           | Descrição                                                      |
-| -------------- | ----------------------------------------------------------------- |
-| playerid       | O ID do jogador para o qual o gametext será ocultado.             |
-| style          | O [estilo](../resources/gametextstyles) do texto a ser ocultado.   |
+| Nome     | Descrição                                                        |
+| -------- | ---------------------------------------------------------------- |
+| playerid | O ID do jogador para o qual o gametext será ocultado.            |
+| style    | O [estilo](../resources/gametextstyles) do texto a ser ocultado. |
 
 ## Retornos
 

@@ -9,8 +9,8 @@ tags: []
 
 Acest callback este apelat atunci când un jucător a trimis o actualizare a trailerului.
 
-| Nume      | Descriere                                      |
-| --------- | ---------------------------------------------- |
+| Nume      | Descriere                                                   |
+| --------- | ----------------------------------------------------------- |
 | playerid  | ID-ul jucătorului care a trimis o actualizare a trailerului |
 | vehicleid | Trailerul în curs de actualizare                            |
 

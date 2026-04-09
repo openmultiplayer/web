@@ -9,12 +9,12 @@ tags: []
 
 Callback này được gọi khi một yêu cầu SendClientCheck hoàn tất.
 
-| Tên         | Mô Tả                                         |
-| ------------ | --------------------------------------------- |
-| playerid     | ID của người chơi được kiểm tra.            |
-| actionid     | Loại kiểm tra được thực hiện.               |
-| memaddr      | Địa chỉ yêu cầu.                             |
-| retndata     | Kết quả của kiểm tra.                        |
+| Tên      | Mô Tả                            |
+| -------- | -------------------------------- |
+| playerid | ID của người chơi được kiểm tra. |
+| actionid | Loại kiểm tra được thực hiện.    |
+| memaddr  | Địa chỉ yêu cầu.                 |
+| retndata | Kết quả của kiểm tra.            |
 
 ## Trả Về
 

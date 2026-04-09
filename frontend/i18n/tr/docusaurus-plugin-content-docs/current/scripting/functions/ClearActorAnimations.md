@@ -11,9 +11,9 @@ tags: []
 
 Herhangi bir oluşturulan aktörün yaptığı animasyonunu durdurur.
 
-| Parametre| Açıklama                                                                   |
-| -------  | -------------------------------------------------------------------------- |
-| actorid  | Animasyonun uygulanacağı aktörün ID'si |
+| Parametre | Açıklama                               |
+| --------- | -------------------------------------- |
+| actorid   | Animasyonun uygulanacağı aktörün ID'si |
 
 ## Çalışınca Vereceği Sonuçlar
 

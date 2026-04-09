@@ -9,10 +9,10 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător este transmis în flux de la clientul altui jucător.
 
-| Nume        | Descriere                                       |
-| ----------- | ----------------------------------------------- |
-| playerid    | Jucătorul care a fost destreamat.               |
-| forplayerid | Jucătorul care a eliminat celălalt jucător.     |
+| Nume        | Descriere                                   |
+| ----------- | ------------------------------------------- |
+| playerid    | Jucătorul care a fost destreamat.           |
+| forplayerid | Jucătorul care a eliminat celălalt jucător. |
 
 ## Returnări
 

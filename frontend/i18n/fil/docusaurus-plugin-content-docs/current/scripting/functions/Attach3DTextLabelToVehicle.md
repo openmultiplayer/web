@@ -9,13 +9,13 @@ tags: ["vehicle", "3dtextlabel"]
 
 Naglalagay ng 3D Text Label sa isang partikular na sasakyan.
 
-| Name      | Description                                                                  |
-| --------- | ---------------------------------------------------------------------------- |
-| Text3D:textid | Ang 3D Text Label na gusto mong ilagay.                                      |
-| vehicleid | Ang sasakyan kung saan mo gustong ilagay ang 3D Text Label.                  |
-| OffsetX   | Ang Offset-X coordinate ng player na sasakyan (ang sasakyan ay 0.0,0.0,0.0)..|
-| OffsetY   | Ang Offset-Y coordinate ng player na sasakyan (ang sasakyan ay 0.0,0.0,0.0)..|
-| OffsetZ   | Ang Offset-Z coordinate ng player na sasakyan (ang sasakyan ay 0.0,0.0,0.0)..|
+| Name          | Description                                                                   |
+| ------------- | ----------------------------------------------------------------------------- |
+| Text3D:textid | Ang 3D Text Label na gusto mong ilagay.                                       |
+| vehicleid     | Ang sasakyan kung saan mo gustong ilagay ang 3D Text Label.                   |
+| OffsetX       | Ang Offset-X coordinate ng player na sasakyan (ang sasakyan ay 0.0,0.0,0.0).. |
+| OffsetY       | Ang Offset-Y coordinate ng player na sasakyan (ang sasakyan ay 0.0,0.0,0.0).. |
+| OffsetZ       | Ang Offset-Z coordinate ng player na sasakyan (ang sasakyan ay 0.0,0.0,0.0).. |
 
 ## Returns
 

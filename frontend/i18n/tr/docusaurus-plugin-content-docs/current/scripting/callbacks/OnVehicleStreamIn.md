@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Bir araç, oyuncunun işlem alanına girdiğinde çağrılır.
 
-| Parametre        | Açıklama                                               |
-| ----------- | ------------------------------------------------------ |
-| vehicleid   | Oyuncunun işlem aracına giren aracın ID'si.            |
-| forplayerid | İşlem alanına araç giren oyuncunun ID'si.              |
+| Parametre   | Açıklama                                    |
+| ----------- | ------------------------------------------- |
+| vehicleid   | Oyuncunun işlem aracına giren aracın ID'si. |
+| forplayerid | İşlem alanına araç giren oyuncunun ID'si.   |
 
 ## Çalışınca Vereceği Sonuçlar
 

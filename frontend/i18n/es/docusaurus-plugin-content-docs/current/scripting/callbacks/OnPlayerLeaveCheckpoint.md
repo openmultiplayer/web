@@ -8,9 +8,9 @@ tags: ["player", "checkpoint"]
 
 Este callback se llama cuando un jugador sale del checkpoint establecido a él por SetPlayerCheckpoint. Sólo se puede establecer un checkpoint al mismo tiempo al jugador.
 
-| Nombre   | Descripción                                      |
-| -------- | ------------------------------------------------ |
-| playerid | El ID del jugador que salió de su checkpoint.    |
+| Nombre   | Descripción                                   |
+| -------- | --------------------------------------------- |
+| playerid | El ID del jugador que salió de su checkpoint. |
 
 ## Devoluciones
 

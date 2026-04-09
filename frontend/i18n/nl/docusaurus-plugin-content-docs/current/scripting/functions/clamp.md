@@ -11,11 +11,11 @@ tags: ["core"]
 
 Dwing een waarde binnen een bereik te vallen.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
-| value | De te begrenzen waarde |
-| min | Ondergrens (optioneel=cellmin) |
-| max | Bovengrens (optioneel=cellmax) |
+| Naam  | Beschrijving                   |
+| ----- | ------------------------------ |
+| value | De te begrenzen waarde         |
+| min   | Ondergrens (optioneel=cellmin) |
+| max   | Bovengrens (optioneel=cellmax) |
 
 ## Retourneert
 
@@ -30,5 +30,3 @@ printf("The value is: %d", clamp(100, 5, 10)); // 10
 ```
 
 Zie de Engelse pagina: [clamp](/docs/scripting/functions/clamp).
-
-

@@ -123,7 +123,7 @@ enum E_EXAMPLE (*= 2)
 }
 ```
 
-Bu durumda tüm değerler 0'dır. Neden? İlk değer varsayılan olarak 0'dır, sonra 0 _ 2 = 0, sonra 0 _ 2 = 0 ve 0 * 2 = 0. Peki bunu nasıl düzeltebiliriz? İşte bu durumda özel değerler devreye girer:
+Bu durumda tüm değerler 0'dır. Neden? İlk değer varsayılan olarak 0'dır, sonra 0 _ 2 = 0, sonra 0 _ 2 = 0 ve 0 \* 2 = 0. Peki bunu nasıl düzeltebiliriz? İşte bu durumda özel değerler devreye girer:
 
 ```c
 enum E_EXAMPLE (*= 2)

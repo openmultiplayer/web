@@ -9,7 +9,7 @@ tags: ["player"]
 
 Bu geri çağırma oyuncu chat ekranında herhangi bir komut kullandığında çağrılır. '/' ile başlayan her şey komuttur ve bu fonksiyonu çağırır. (örnek: /yardim)
 
-| Parametre        | Açıklama                                 |
+| Parametre | Açıklama                                 |
 | --------- | ---------------------------------------- |
 | playerid  | Komutu kullanan oyuncunun id'si.         |
 | cmdtext[] | Kullanılan komut ('/' işareti de dahil). |

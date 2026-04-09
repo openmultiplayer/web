@@ -9,11 +9,11 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler van staat verandert. Bijvoorbeeld, wanneer een speler verandert van bestuurder van een voertuig naar lopend.
 
-| Naam                  | Beschrijving                              |
-| --------------------- | ---------------------------------------- |
+| Naam                  | Beschrijving                                   |
+| --------------------- | ---------------------------------------------- |
 | playerid              | Het ID van de speler die van staat veranderde. |
-| PLAYER_STATE:newstate | De nieuwe staat van de speler.           |
-| PLAYER_STATE:oldstate | De vorige staat van de speler.           |
+| PLAYER_STATE:newstate | De nieuwe staat van de speler.                 |
+| PLAYER_STATE:oldstate | De vorige staat van de speler.                 |
 
 Zie [Player States](../resources/playerstates) voor een lijst van alle beschikbare spelerstaten.
 

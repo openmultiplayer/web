@@ -14,9 +14,9 @@ tags: ["player", "textdraw", "playertextdraw"]
 | نام               | توضیحات                                           |
 | ----------------- | ------------------------------------------------- |
 | playerid          | ID بازیکنی که player textdraw اون باید تغییر کنه. |
-| PlayerText:textid | ID player textdraw که باید تغییر کنه.            |
+| PlayerText:textid | ID player textdraw که باید تغییر کنه.             |
 | colour1           | رنگی که باید به عنوان رنگ اصلی ماشین تنظیم بشه.   |
-| colour2           | رنگی که باید به عنوان رنگ فرعی ماشین تنظیم بشه.  |
+| colour2           | رنگی که باید به عنوان رنگ فرعی ماشین تنظیم بشه.   |
 
 ## مقدار برگشتی
 
@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
     PlayerTextDrawUseBox(playerid, gTextDraw[playerid], true);
     PlayerTextDrawBoxColour(playerid, gTextDraw[playerid], 0x000000FF);
     PlayerTextDrawTextSize(playerid, gTextDraw[playerid], 40.0, 40.0);
-    
+
     PlayerTextDrawSetPreviewModel(playerid, gTextDraw[playerid], 411);
     PlayerTextDrawSetPreviewVehicleColours(playerid, gTextDraw[playerid], 3, 6);
 

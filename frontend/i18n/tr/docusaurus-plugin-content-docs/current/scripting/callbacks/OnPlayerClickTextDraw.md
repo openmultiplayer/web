@@ -9,7 +9,7 @@ tags: ["player", "textdraw"]
 
 Bu geri çağırma bir oyuncu bir textdrawa tıkladığında ya da ESC tuşu ile seçim modunu iptal ettiğinde çağırılır.
 
-| Parametre      | Açıklama                                                                                |
+| Parametre | Açıklama                                                                                |
 | --------- | --------------------------------------------------------------------------------------- |
 | playerid  | Textdrawa tıklayan oyuncunun ID'si.                                                     |
 | clickedid | Tıklanan textdraw ID'si. Eğer seçim iptal edilirse INVALID_TEXT_DRAW değeri döndürülür. |

@@ -9,8 +9,8 @@ tags: ["player"]
 
 Callback ini di panggil ketika klien/pemain memperbarui server dengan statusnya. Ini sering digunakan untuk membuat memanggil balik khusus untuk pembaruan klien yang tidak dilacak secara aktif oleh server, seperti pembaruan kesehatan atau baju besi atau pemain yang mengganti senjata.
 
-| Nama     | Deskripsi                                |
-| -------- | ------------------------------------------ |
+| Nama     | Deskripsi                                     |
+| -------- | --------------------------------------------- |
 | playerid | ID dari pemain yang mengirim paket pembaruan. |
 
 ## Returns
@@ -18,7 +18,6 @@ Callback ini di panggil ketika klien/pemain memperbarui server dengan statusnya.
 0 - Pembaruan dari pemain ini tidak akan di duplikat ke klien lain.
 
 1 - Menunjukkan bahwa pembaruan ini dapat diproses secara normal dan dikirim ke pemain lain.
-
 
 Ini selalu di panggil pertama dalam filtersciprt.
 

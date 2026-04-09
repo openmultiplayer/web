@@ -9,16 +9,16 @@ tags: ["player"]
 
 Bir objeyi oyuncuya bağlar.
 
-| Parametre     | Açıklama                                                           |
-| ------------- | ------------------------------------------------------------------ |
-| objectid      | Bağlanılacak objenin ID'si.                                        |
-| playerid      | Bağlanacak oyuncunun ID'si.                                        |
-| Float:OffsetX | Oyuncunun obje ile arasındaki X değeri.                            |
-| Float:OffsetY | Oyuncunun obje ile arasındaki Y değeri.                            |
-| Float:OffsetZ | Oyuncunun obje ile arasındaki Z değeri.                            |
-| Float:RotX    | Oyuncunun obje ile arasındaki X açısının değeri.                   |
-| Float:RotY    | Oyuncunun obje ile arasındaki Y açısının değeri.                   |
-| Float:RotZ    | Oyuncunun obje ile arasındaki Z açısının değeri.                   |
+| Parametre     | Açıklama                                         |
+| ------------- | ------------------------------------------------ |
+| objectid      | Bağlanılacak objenin ID'si.                      |
+| playerid      | Bağlanacak oyuncunun ID'si.                      |
+| Float:OffsetX | Oyuncunun obje ile arasındaki X değeri.          |
+| Float:OffsetY | Oyuncunun obje ile arasındaki Y değeri.          |
+| Float:OffsetZ | Oyuncunun obje ile arasındaki Z değeri.          |
+| Float:RotX    | Oyuncunun obje ile arasındaki X açısının değeri. |
+| Float:RotY    | Oyuncunun obje ile arasındaki Y açısının değeri. |
+| Float:RotZ    | Oyuncunun obje ile arasındaki Z açısının değeri. |
 
 ## Çalışınca Vereceği Sonuçlar
 

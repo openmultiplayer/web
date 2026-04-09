@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 چک می‌کنه که آیا بازیکن در player gangzone هست یا نه.
 
-| نام         | توضیحات                                                      |
-| ----------- | ------------------------------------------------------------ |
-| playerid    | ID بازیکنی که player gangzone بهش متصله.                     |
-| zoneid      | ID player gangzone.                                          |
+| نام      | توضیحات                                  |
+| -------- | ---------------------------------------- |
+| playerid | ID بازیکنی که player gangzone بهش متصله. |
+| zoneid   | ID player gangzone.                      |
 
 ## مقادیر برگشتی
 

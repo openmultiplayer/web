@@ -9,12 +9,12 @@ tags: []
 
 Acest callback este apelat când se finalizează o solicitare SendClientCheck.
 
-| Name          | Description                       |
-| ------------- | --------------------------------- |
-| playerid      | ID-ul jucătorului verificat.      |
-| actionid      | Tipul de verificare efectuată.    |
-| memaddr       | Adresa solicitată.                |
-| retndata      | Rezultatul verificării.           |
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | ID-ul jucătorului verificat.   |
+| actionid | Tipul de verificare efectuată. |
+| memaddr  | Adresa solicitată.             |
+| retndata | Rezultatul verificării.        |
 
 ## Returnări
 
@@ -49,4 +49,3 @@ Acest callback este apelat numai atunci când este într-un filterscript.
 :::
 
 ## Funcții asociate
-

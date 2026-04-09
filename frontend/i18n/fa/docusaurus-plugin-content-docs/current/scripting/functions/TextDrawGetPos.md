@@ -11,9 +11,9 @@ tags: ["textdraw"]
 
 موقعیت (مختصات x و y روی صفحه) یک textdraw رو برمی‌گردونه.
 
-| نام         | توضیحات                                                                      |
-| ----------- | --------------------------------------------------------------------------- |
-| Text:textid | ID textdraw ای که می‌خوای موقعیتش رو بگیری.                                    |
+| نام         | توضیحات                                                                    |
+| ----------- | -------------------------------------------------------------------------- |
+| Text:textid | ID textdraw ای که می‌خوای موقعیتش رو بگیری.                                |
 | &Float:x    | متغیر float که مختصات X توش ذخیره می‌شه، به صورت reference پاس داده می‌شه. |
 | &Float:y    | متغیر float که مختصات Y توش ذخیره می‌شه، به صورت reference پاس داده می‌شه. |
 
@@ -25,7 +25,7 @@ new Text:gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
-    
+
     new Float:x, Float:y;
     TextDrawGetPos(gMyTextdraw, x, y);
     // The `x` will be '100.0' and `y` will be '33.0'

@@ -9,8 +9,8 @@ tags: ["player", "menu"]
 
 Deze callback wordt aangeroepen wanneer een speler een menu verlaat.
 
-| Naam     | Beschrijving                             |
-| -------- | ---------------------------------------- |
+| Naam     | Beschrijving                              |
+| -------- | ----------------------------------------- |
 | playerid | Het ID van de speler die het menu verlaat |
 
 ## Returns

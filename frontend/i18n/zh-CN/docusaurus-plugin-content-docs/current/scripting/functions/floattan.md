@@ -2,7 +2,7 @@
 title: floattan
 sidebar_label: floattan
 description: 获取指定角度的正切值
-tags: ["数学", "浮点"]
+tags: ["数学", "浮点数"]
 ---
 
 <LowercaseNoteZH_CN />

@@ -4,10 +4,11 @@ sidebar_label: "Dialoogstijlen"
 ---
 
 :::note
+
 - In [OnDialogResponse](../callbacks/OnDialogResponse) zet **button1** `response` op **1**, **button2** op **0**.
 - Elke dialoog kan een optionele button 2 hebben; leeg laten verbergt deze. ESC triggert dan `response = 0`.
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): kleur‑embedding werkt in `caption`, `info`, `button1`, `button2`.
-:::
+  :::
 
 - Deze pagina beschrijft het gedrag van `ShowPlayerDialog` en `OnDialogResponse`.
 - Voor limieten: zie [Limits](../resources/limits).
@@ -37,5 +38,3 @@ Vergelijkbaar met INPUT. `listitem = -1`; `inputtext` bevat de invoer (zonder kl
 ## Stijl 5: `DIALOG_STYLE_TABLIST_HEADERS`
 
 Als TABLIST; eerste `info`‑rij bevat headers; `inputtext` is tekst van de eerste kolom van het gekozen item.
-
-

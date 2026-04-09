@@ -9,9 +9,9 @@ tags: ["player", "textdraw"]
 
 Callback này được gọi khi một người chơi nhấp vào một textdraw hoặc hủy chế độ chọn bằng phím Escape.
 
-| Tên            | Mô Tả                                                   |
-| --------------- | ------------------------------------------------------- |
-| playerid        | ID của người chơi đã nhấp vào textdraw.                |
+| Tên            | Mô Tả                                                                 |
+| -------------- | --------------------------------------------------------------------- |
+| playerid       | ID của người chơi đã nhấp vào textdraw.                               |
 | Text:clickedid | ID của textdraw đã được nhấp. INVALID_TEXT_DRAW nếu việc chọn bị hủy. |
 
 ## Trả Về

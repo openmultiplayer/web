@@ -11,13 +11,13 @@ tags: ["vehicle"]
 
 Binibigyang-daan kang buksan at isara ang mga pinto ng isang sasakyan.
 
-| Name      | Description                                                             |
-| --------- | ----------------------------------------------------------------------- |
-| vehicleid | Ang ID ng sasakyan upang itakda ang state ng pinto.                     |
-| driver    | Ang state ng pinto ng driver. 1 para buksan, 0 para isara               |
-| passenger | Ang state ng pintuan ng pasahero. 1 para buksan, 0 para isara.          |
-| backleft  | Ang state ng likurang kaliwang pinto (kung magagamit). 1 para buksan, 0 para isara.|
-| backright | Ang state ng likurang kanang pinto (kung magagamit). 1 para buksan, 0 para isara.|
+| Name      | Description                                                                         |
+| --------- | ----------------------------------------------------------------------------------- |
+| vehicleid | Ang ID ng sasakyan upang itakda ang state ng pinto.                                 |
+| driver    | Ang state ng pinto ng driver. 1 para buksan, 0 para isara                           |
+| passenger | Ang state ng pintuan ng pasahero. 1 para buksan, 0 para isara.                      |
+| backleft  | Ang state ng likurang kaliwang pinto (kung magagamit). 1 para buksan, 0 para isara. |
+| backright | Ang state ng likurang kanang pinto (kung magagamit). 1 para buksan, 0 para isara.   |
 
 ## Returns
 

@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         NPC_ApplyAnimation(npcid, "DANCING", "dance_loop", 4.1, true, false, false, false, 0);
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d has been applied animation.", npcid);
-        
+
         return 1;
     }
     return 0;

@@ -15,9 +15,9 @@ tags: []
 
 Bu fonksiyon RCON olan kişilerin nokta seçtiğinde ışınlanıp ışınlanamayacağına karar vermenizi sağalar.
 
-| İsim                                | Açıklama                                                                                               |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| allow                               | açmak için 1, kapamak için 0                                                                           |
+| İsim  | Açıklama                     |
+| ----- | ---------------------------- |
+| allow | açmak için 1, kapamak için 0 |
 
 ## Çalışınca Vereceği Sonuçlar
 

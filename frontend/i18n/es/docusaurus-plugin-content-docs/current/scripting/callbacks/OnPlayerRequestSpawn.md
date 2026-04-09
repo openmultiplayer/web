@@ -8,9 +8,9 @@ tags: ["player"]
 
 Se llama cuando un jugador intenta spawnear vía selección de clase ya sea presionando SHIFT o clickeando el botón 'Spawn'.
 
-| Nombre   | Descripción                                   |
-| -------- | --------------------------------------------- |
-| playerid | El ID del jugador que solicitó spawnear.      |
+| Nombre   | Descripción                              |
+| -------- | ---------------------------------------- |
+| playerid | El ID del jugador que solicitó spawnear. |
 
 ## Devoluciones
 

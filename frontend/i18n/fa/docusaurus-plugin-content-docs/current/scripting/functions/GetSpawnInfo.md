@@ -11,21 +11,21 @@ tags: ["player"]
 
 داده‌های spawn فعلی یه بازیکن رو برمی‌گردونه، جایی که دفعه بعد spawn می‌شه.
 
-| نام            | توضیحات                                                                     |
-|-----------------|---------------------------------------------------------------------------------|
+| نام             | توضیحات                                                                  |
+| --------------- | ------------------------------------------------------------------------ |
 | playerid        | ID بازیکنی که می‌خوای اطلاعات spawn اش رو دریافت کنی.                    |
-| &team           | متغیری برای ذخیره ID تیم که به صورت reference پاس داده می‌شه.                |
-| &skin           | متغیری برای ذخیره ID اسکین که به صورت reference پاس داده می‌شه.                |
+| &team           | متغیری برای ذخیره ID تیم که به صورت reference پاس داده می‌شه.            |
+| &skin           | متغیری برای ذخیره ID اسکین که به صورت reference پاس داده می‌شه.          |
 | &Float:spawnX   | متغیر Float برای ذخیره مختصات X که به صورت reference پاس داده می‌شه.     |
 | &Float:spawnY   | متغیر Float برای ذخیره مختصات Y که به صورت reference پاس داده می‌شه.     |
 | &Float:spawnZ   | متغیر Float برای ذخیره مختصات Z که به صورت reference پاس داده می‌شه.     |
 | &Float:angle    | متغیر Float برای ذخیره زاویه facing که به صورت reference پاس داده می‌شه. |
-| &WEAPON:weapon1 | متغیری برای ذخیره weapon1 که به صورت reference پاس داده می‌شه.                |
-| &ammo1          | متغیری برای ذخیره ammo1 که به صورت reference پاس داده می‌شه.                  |
-| &WEAPON:weapon2 | متغیری برای ذخیره weapon2 که به صورت reference پاس داده می‌شه.                |
-| &ammo2          | متغیری برای ذخیره ammo2 که به صورت reference پاس داده می‌شه.                  |
-| &WEAPON:weapon3 | متغیری برای ذخیره weapon3 که به صورت reference پاس داده می‌شه.                |
-| &ammo3          | متغیری برای ذخیره ammo3 که به صورت reference پاس داده می‌شه.                  |
+| &WEAPON:weapon1 | متغیری برای ذخیره weapon1 که به صورت reference پاس داده می‌شه.           |
+| &ammo1          | متغیری برای ذخیره ammo1 که به صورت reference پاس داده می‌شه.             |
+| &WEAPON:weapon2 | متغیری برای ذخیره weapon2 که به صورت reference پاس داده می‌شه.           |
+| &ammo2          | متغیری برای ذخیره ammo2 که به صورت reference پاس داده می‌شه.             |
+| &WEAPON:weapon3 | متغیری برای ذخیره weapon3 که به صورت reference پاس داده می‌شه.           |
+| &ammo3          | متغیری برای ذخیره ammo3 که به صورت reference پاس داده می‌شه.             |
 
 ## مقادیر برگشتی
 
@@ -40,7 +40,7 @@ public OnPlayerRequestClass(playerid, classid)
 {
     SetSpawnInfo(playerid, NO_TEAM, 293, 1139.4786, -1761.3989, 13.5844, 0.0000, WEAPON_SAWEDOFF, 36, WEAPON_UZI, 150, WEAPON_FIST, 0);
 
-    new 
+    new
         team,
         skin,
         Float:spawnX,
@@ -53,7 +53,7 @@ public OnPlayerRequestClass(playerid, classid)
         ammo2,
         WEAPON:weapon3,
         ammo3;
-    
+
     GetSpawnInfo(playerid, team, skin, spawnX, spawnY, spawnZ, angle, weapon1, ammo1, weapon2, ammo2, weapon3, ammo3);
     // team = NO_TEAM
     // skin = 293

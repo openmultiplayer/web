@@ -9,13 +9,13 @@ tags: []
 
 Cria uma explosão nas coordenadas especificadas.
 
-| Nome         | Descrição                                                |
-| ------------ | -------------------------------------------------------- |
-| Float:x      | A coordenada X da explosão.                             |
-| Float:y      | A coordenada Y da explosão.                             |
-| Float:z      | A coordenada Z da explosão.                             |
-| type         | O [tipo](../resources/explosionlist) da explosão.       |
-| Float:radius | O raio da explosão.                                     |
+| Nome         | Descrição                                         |
+| ------------ | ------------------------------------------------- |
+| Float:x      | A coordenada X da explosão.                       |
+| Float:y      | A coordenada Y da explosão.                       |
+| Float:z      | A coordenada Z da explosão.                       |
+| type         | O [tipo](../resources/explosionlist) da explosão. |
+| Float:radius | O raio da explosão.                               |
 
 ## Retorno
 

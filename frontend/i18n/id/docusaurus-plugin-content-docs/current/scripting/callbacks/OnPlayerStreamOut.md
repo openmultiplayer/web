@@ -9,16 +9,17 @@ tags: ["player"]
 
 Callback ini akan terpanggil ketika pemain lain keluar dari jangkauan stream dari klien pemain.
 
-| Nama        | Deskripsi                                                 |
-| ----------- | ------------------------------------------------------ |
-| playerid    | ID dari pemain lain yang keluar jangakauan stream klien pemain. |
-| forplayerid | ID dari pemain yang berada di luar jangkauan stream pemain lain.|
+| Nama        | Deskripsi                                                        |
+| ----------- | ---------------------------------------------------------------- |
+| playerid    | ID dari pemain lain yang keluar jangakauan stream klien pemain.  |
+| forplayerid | ID dari pemain yang berada di luar jangkauan stream pemain lain. |
 
 ## Returns
 
 Ini akan selalu terpanggil pertama di filterscripts
 
 ## Contoh
+
 ```c
 public OnPlayerStreamOut(playerid, forplayerid)
 {

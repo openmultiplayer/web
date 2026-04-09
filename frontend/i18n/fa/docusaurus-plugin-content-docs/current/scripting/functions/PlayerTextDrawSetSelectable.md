@@ -9,10 +9,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 فعال/غیرفعال می‌کنه که آیا یک player textdraw قابل انتخاب باشه یا نه.
 
-| نام               | توضیحات                                                                                      |
-| ----------------- | -------------------------------------------------------------------------------------------- |
-| playerid          | ID بازیکنی که قابل انتخاب بودن player textdraw اون باید تنظیم بشه.                          |
-| PlayerText:textid | ID player textdraw که قابل انتخاب بودنش باید تنظیم بشه.                                    |
+| نام               | توضیحات                                                                                               |
+| ----------------- | ----------------------------------------------------------------------------------------------------- |
+| playerid          | ID بازیکنی که قابل انتخاب بودن player textdraw اون باید تنظیم بشه.                                    |
+| PlayerText:textid | ID player textdraw که قابل انتخاب بودنش باید تنظیم بشه.                                               |
 | bool:selectable   | player textdraw رو قابل انتخاب 'true' یا غیرقابل انتخاب 'false' تنظیم کن. به طور پیش‌فرض 'false' هست. |
 
 ## مقدار برگشتی
@@ -28,7 +28,7 @@ public OnPlayerConnect(playerid)
 {
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 320.0, 240.0, "Welcome to my server");
     PlayerTextDrawTextSize(playerid, welcomeText[playerid], 30.0, 10.0);
-    
+
     // Set 'welcomeText[playerid]' selectable
     PlayerTextDrawSetSelectable(playerid, welcomeText[playerid], true);
 

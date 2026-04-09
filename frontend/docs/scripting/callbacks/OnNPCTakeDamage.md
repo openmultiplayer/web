@@ -21,7 +21,11 @@ This callback is called when an NPC takes damage from a player or another NPC.
 
 ## Returns
 
-Return `false` to prevent the damage from being applied, or `true` to allow it.
+1 - Callback will not be called in other filterscripts.
+
+0 - Allows this callback to be called in other filterscripts.
+
+It is always called first in filterscripts so returning 1 there blocks other filterscripts from processing it.
 
 ## Examples
 
@@ -55,7 +59,7 @@ public OnNPCTakeDamage(npcid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 ## Notes
 
 - This callback is called before the damage is actually applied to the NPC
-- Returning `false` will prevent the damage from being applied
+- Returning `false` will NOT prevent the damage from being applied
 - The `issuerid` parameter will be `INVALID_PLAYER_ID` if damage is not caused by player
 - Body parts use the same constants as `OnPlayerTakeDamage`
 

@@ -9,7 +9,7 @@ tags: []
 
 Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
 
-| Parametre          | Açıklama                                                                                                                                                       |
+| Parametre   | Açıklama                                                                                                                                                       |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | Dialog'u tetikleyen oyuncunun id'si.                                                                                                                           |
 | dialogid    | Tetiklenen dialog id'si.                                                                                                                                       |

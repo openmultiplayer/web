@@ -74,7 +74,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_StartPlaybackEx](NPC_StartPlaybackEx): 通过录制 ID 开始回放
 - [NPC_StopPlayback](NPC_StopPlayback): 停止回放
-- [NPC_PausePlayback](NPC_PausePlayback): 暂停/取消暂停回放
+- [NPC_PausePlayback](NPC_PausePlayback): 暂停/恢复回放
 - [NPC_LoadRecord](NPC_LoadRecord): 预加载录制文件
 
 ## 相关回调

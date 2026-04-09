@@ -10,7 +10,7 @@ tags: ["player"]
 Callback ini terpanggil ketika player sudah selesai mengedit attached object dengan edit mode.
 
 | Name                   | Description                                                      |
-|------------------------|------------------------------------------------------------------|
+| ---------------------- | ---------------------------------------------------------------- |
 | playerid               | ID player yang telah selesai mengedit attached object            |
 | EDIT_RESPONSE:response | 0 jika mereka membatalkan (ESC) atau 1 jika mereka mengklik save |
 | index                  | The index of the attached object (0-9)                           |

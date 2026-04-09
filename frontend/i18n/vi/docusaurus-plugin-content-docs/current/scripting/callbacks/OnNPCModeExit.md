@@ -1,8 +1,7 @@
 ---
-
-title: OnNPCModeExit  
-description: Callback này được gọi khi một script NPC bị tháo dỡ.  
-tags: ["npc"]  
+title: OnNPCModeExit
+description: Callback này được gọi khi một script NPC bị tháo dỡ.
+tags: ["npc"]
 ---
 
 ## Mô Tả

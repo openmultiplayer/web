@@ -11,10 +11,10 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen voor elke verbonden speler wanneer een script wordt geladen.
 
-| Naam               | Beschrijving                                                              |
-| ------------------ | ------------------------------------------------------------------------ |
-| playerid           | Het ID van de speler waarvoor het script wordt geladen.                 |
-| bool:isEntryScript | Bepaalt of het een entry script (hoofdscript) of een side script is.    |
+| Naam               | Beschrijving                                                         |
+| ------------------ | -------------------------------------------------------------------- |
+| playerid           | Het ID van de speler waarvoor het script wordt geladen.              |
+| bool:isEntryScript | Bepaalt of het een entry script (hoofdscript) of een side script is. |
 
 ## Returns
 

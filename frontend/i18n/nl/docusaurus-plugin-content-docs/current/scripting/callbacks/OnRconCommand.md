@@ -9,9 +9,9 @@ tags: ["rcon", "administration"]
 
 Deze callback wordt aangeroepen wanneer een command wordt verstuurd via de serverconsole, RCON (Remote Console), of via de in-game "/rcon command".
 
-| Naam  | Beschrijving                                                                        |
-| ----- | ----------------------------------------------------------------------------------- |
-| cmd[] | Een string met het ingevoerde command, inclusief eventuele meegegeven parameters.   |
+| Naam  | Beschrijving                                                                      |
+| ----- | --------------------------------------------------------------------------------- |
+| cmd[] | Een string met het ingevoerde command, inclusief eventuele meegegeven parameters. |
 
 ## Returns
 
@@ -64,4 +64,3 @@ Dit probleem is opgelost in open.mp.
 
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Controleert of een speler is ingelogd op RCON.
 - [SetPlayerAdmin](../functions/SetPlayerAdmin): Zet de speler als RCON admin.
-

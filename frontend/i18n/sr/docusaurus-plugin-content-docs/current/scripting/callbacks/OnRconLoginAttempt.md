@@ -27,9 +27,9 @@ public OnRconLoginAttempt(ip[], password[], success)
     if (!success) // Ако је лозинка била нетачна
     {
         printf("FAILED RCON LOGIN BY IP %s USING PASSWORD %s", ip, password);
-        
+
         new ipAddress[16];
-        
+
         for (new i = 0; i < MAX_PLAYERS; i++) // Прођите кроз све играче
         {
             if (!IsPlayerConnected(i))
@@ -38,7 +38,7 @@ public OnRconLoginAttempt(ip[], password[], success)
             }
 
             GetPlayerIp(i, ipAddress, sizeof(ipAddress));
-            
+
             if (!strcmp(ip, ipAddress, true)) // Ако је IP адреса играча та IP адреса која је неуспешно покушала да се пријави
             {
                 SendClientMessage(i, 0xFFFFFFFF, "Wrong Password. Bye!"); //Пошаљите поруку

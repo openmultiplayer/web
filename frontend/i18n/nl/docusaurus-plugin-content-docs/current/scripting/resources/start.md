@@ -82,5 +82,3 @@ myArray[2] = 7; // derde element (index start bij 0)
 ## Strings
 
 Strings zijn NUL-terminerend en ondersteunen escape-tekens zoals `\n`, `\r`, `\\`, `\"`, `\0`.
-
-

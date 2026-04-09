@@ -11,11 +11,11 @@ tags: []
 
 Maghanap ng umiiral nang custom skin o simple object model file. Ang mga file ng model ay matatagpuan sa folder ng server ng mga models bilang default (setting ng artpath).
 
-| Name        | Description                                                           |
-| ----------- | --------------------------------------------------------------------- |
-| crc         | Ang checksum ng CRC ng custom na file ng model.                       |
+| Name        | Description                                                                              |
+| ----------- | ---------------------------------------------------------------------------------------- |
+| crc         | Ang checksum ng CRC ng custom na file ng model.                                          |
 | retstr[]    | Isang array kung saan iimbak ang .dff file name, na ipinasa sa pamamagitan ng reference. |
-| retstr_size | Ang haba ng string na dapat itabi.                                    |
+| retstr_size | Ang haba ng string na dapat itabi.                                                       |
 
 ## Returns
 

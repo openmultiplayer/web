@@ -10,10 +10,10 @@ tags: []
 
 Este callback se llama cuando un actor se deja de transmitir por el cliente de un jugador.
 
-| Nombre      | Descripción                                                    |
-| ----------- | -------------------------------------------------------------- |
-| actorid     | El ID del actor que dejó de ser transmitido por el jugador.    |
-| forplayerid | El ID del jugador que dejó de transmitir al actor.             |
+| Nombre      | Descripción                                                 |
+| ----------- | ----------------------------------------------------------- |
+| actorid     | El ID del actor que dejó de ser transmitido por el jugador. |
+| forplayerid | El ID del jugador que dejó de transmitir al actor.          |
 
 ## Devoluciones
 
@@ -36,5 +36,7 @@ public OnActorStreamOut(actorid, forplayerid)
 <TipNPCCallbacksES />
 
 ## Funciones Relacionadas
+
 Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnActorStreamOut:
+
 - [OnActorStreamIn](OnActorStreamIn): Este callback es llamado cuando un actor se transmite (se vuelve visible) por el cliente de un jugador.

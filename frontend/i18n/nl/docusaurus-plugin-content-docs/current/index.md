@@ -22,4 +22,3 @@ Als je geïnteresseerd bent, bekijk dan [deze pagina](/docs/meta/Contributing) v
 Als je niet ervaren bent met GitHub of het converteren van HTML, maak je geen zorgen! Je kunt helpen door problemen te melden (via [Discord](https://discord.gg/samp), [forum](https://forum.open.mp) of sociale media) en het belangrijkste: _het woord verspreiden!_ Voeg deze site toe aan je favorieten en deel haar met iedereen die zich afvraagt waar de SA-MP Wiki is gebleven.
 
 We verwelkomen bijdragen voor verbeteringen aan de documentatie, evenals tutorials en gidsen voor veelvoorkomende taken zoals het bouwen van eenvoudige gamemodes en het gebruiken van veelgebruikte libraries en plugins. Als je wilt bijdragen, ga dan naar de [GitHub-pagina](https://github.com/openmultiplayer/web).
-

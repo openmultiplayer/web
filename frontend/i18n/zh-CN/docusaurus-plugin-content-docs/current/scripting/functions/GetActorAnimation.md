@@ -1,19 +1,19 @@
 ---
 title: GetActorAnimation
 sidebar_label: GetActorAnimation
-description: 获取角色当前正在播放的动画信息。
-tags: ["角色"]
+description: 获取演员当前正在播放的动画信息。
+tags: ["演员"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
 ## 描述
 
-获取角色当前正在播放的动画信息。
+获取演员当前正在播放的动画信息。
 
 | 参数               | 说明                                        |
 | ------------------ | ------------------------------------------- |
-| actorid            | 要获取动画的角色 ID                         |
+| actorid            | 要获取动画的演员 ID                         |
 | animationLibrary[] | 用于存储动画库名称的数组（引用传递）        |
 | librarySize        | 动画库名称数组的长度                        |
 | animationName[]    | 用于存储动画名称的数组（引用传递）          |
@@ -27,7 +27,7 @@ tags: ["角色"]
 
 ## 返回值
 
-若角色存在且有效返回 true，否则返回 false。
+若演员存在且有效返回 true，否则返回 false。
 
 ## 示例代码
 
@@ -55,6 +55,6 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [CreateActor](CreateActor): 创建角色（静态 NPC）
-- [ApplyActorAnimation](ApplyActorAnimation): 对角色应用动画
-- [ClearActorAnimations](ClearActorAnimations): 清除角色的所有动画
+- [CreateActor](CreateActor): 创建演员（静态 NPC）
+- [ApplyActorAnimation](ApplyActorAnimation): 对演员应用动画
+- [ClearActorAnimations](ClearActorAnimations): 清除演员的所有动画

@@ -24,30 +24,22 @@ The number of rows in the result.
 
 // ...
 
-Examples_ListNames(DB:dbConnectionHandle)
+Examples_CountVehicles(DB:dbConnectionHandle)
 {
     // Database result set
-    new DBResult:db_result_set = DB_ExecuteQuery("SELECT `name` FROM `examples`");
+    new DBResult:db_result_set = DB_ExecuteQuery("SELECT `uid` FROM `vehicles`");
 
     // If database result set is valid
     if (db_result_set)
     {
-        // Allocate some memory to store results
-        new result[256];
-
-        // Do operations
-        do
-        {
-            // Add value from "example" field to the return value variable
-            DB_GetFieldStringByName(db_result_set, "name", result, sizeof result);
-        }
-
-        // While next row could be fetched
-        while (DB_SelectNextRow(db_result_set));
+        new row_count = DB_GetRowCount(db_result_set);
 
         // Free result set
         DB_FreeResultSet(db_result_set);
+
+        return rowcount;
     }
+    return 0;
 }
 ```
 
@@ -74,7 +66,7 @@ public OnGameModeInit()
     {
         // Successfully created a connection to the database
         print("Successfully created a connection to database \"example.db\".");
-        Examples_ListNames(gDBConnectionHandle);
+        printf("%i vehicles are stored in the database", Examples_CountVehicles(gDBConnectionHandle));
     }
     else
     {
@@ -116,7 +108,6 @@ Using an invalid handle other than zero will crash your server! Get a valid data
 - [DB_Close](DB_Close): Close the connection to an SQLite database
 - [DB_ExecuteQuery](DB_ExecuteQuery): Query an SQLite database
 - [DB_FreeResultSet](DB_FreeResultSet): Free result memory from a DB_ExecuteQuery
-- [DB_GetRowCount](DB_GetRowCount): Get the number of rows in a result
 - [DB_SelectNextRow](DB_SelectNextRow): Move to the next row
 - [DB_GetFieldCount](DB_GetFieldCount): Get the number of fields in a result
 - [DB_GetFieldName](DB_GetFieldName): Returns the name of a field at a particular index

@@ -10,7 +10,7 @@ tags: ["player"]
 Ovaj callback je pozvan kada igrač ispali hitac iz oružja. Samo oružja sa mecima su podržana. Drive-by je podržan samo od strane putnika (ne vozačev drive-by, i ne hice koje pucate iz sea sparrowa / huntera).
 
 | Ime                     | Deskripcija                                                                                                |
-|-------------------------|------------------------------------------------------------------------------------------------------------|
+| ----------------------- | ---------------------------------------------------------------------------------------------------------- |
 | playerid                | ID igrača koji je ispalio hitac.                                                                           |
 | WEAPON:weaponid         | ID [oružja](../resources/weaponids) iz kojeg je igrač ispalio hitac.                                       |
 | BULLET_HIT_TYPE:hittype | [Tip](../resources/bullethittypes) onoga što je hitac pogodio (ništa, igrača, vozilo, ili (player)object). |

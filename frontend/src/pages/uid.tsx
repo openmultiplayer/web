@@ -27,7 +27,7 @@ const Page = (): ReactNode => {
         title={`UID Generator`}
         description="Generate UID to use for IComponent or IExtension unique identifiers"
       >
-        <section className="servers-container">
+        <section className="uid-container">
           <h1>Component UID Generator</h1>
           Copy the <code>PROVIDE_UID</code> macro below in to your new
           component, in place of the default UID provider macro. Each component

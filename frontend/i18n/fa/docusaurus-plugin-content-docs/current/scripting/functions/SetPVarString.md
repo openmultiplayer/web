@@ -9,12 +9,12 @@ tags: ["player variable", "pvar"]
 
 یک string رو در یک متغیر بازیکن ذخیره می‌کنه.
 
-| نام              | توضیحات                                       |
-| ---------------- | --------------------------------------------- |
+| نام              | توضیحات                                      |
+| ---------------- | -------------------------------------------- |
 | playerid         | ID بازیکنی که متغیرش باید تنظیم بشه.         |
-| const pvar[]     | نام متغیر بازیکن.                             |
+| const pvar[]     | نام متغیر بازیکن.                            |
 | const value[]    | string که می‌خوای در متغیر بازیکن ذخیره کنی. |
-| OPEN_MP_TAGS:... | تعداد نامحدودی از آرگومان‌ها با هر tag.       |
+| OPEN_MP_TAGS:... | تعداد نامحدودی از آرگومان‌ها با هر tag.      |
 
 ## مقدار برگشتی
 
@@ -25,10 +25,10 @@ tags: ["player variable", "pvar"]
 ```c
 public OnPlayerConnect(playerid)
 {
-    new 
-        hours, 
-        minutes, 
-        seconds, 
+    new
+        hours,
+        minutes,
+        seconds,
         string[46];
 
     gettime(hours, minutes, seconds); // get the time

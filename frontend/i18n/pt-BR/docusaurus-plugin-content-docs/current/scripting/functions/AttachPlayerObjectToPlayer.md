@@ -9,17 +9,17 @@ tags: ["player", "object", "playerobject"]
 
 O mesmo que [AttachObjectToPlayer](AttachObjectToPlayer) mas para objetos que foram criados para jogador.
 
-| Nome            | Descrição                                                          |
-| --------------- | ------------------------------------------------------------------ |
-| playerid        | O ID do jogador que está vinculado ao objeto.                     |
-| objectid        | O ID do objeto que você quer anexar ao jogador.                   |
-| parentid        | O ID do jogador ao qual você quer anexar o objeto.                |
-| Float:offsetX   | A distância entre o jogador e o objeto na direção X.              |
-| Float:offsetY   | A distância entre o jogador e o objeto na direção Y.              |
-| Float:offsetZ   | A distância entre o jogador e o objeto na direção Z.              |
-| Float:rotationX | A rotação X.                                                       |
-| Float:rotationY | A rotação Y.                                                       |
-| Float:rotationZ | A rotação Z.                                                       |
+| Nome            | Descrição                                            |
+| --------------- | ---------------------------------------------------- |
+| playerid        | O ID do jogador que está vinculado ao objeto.        |
+| objectid        | O ID do objeto que você quer anexar ao jogador.      |
+| parentid        | O ID do jogador ao qual você quer anexar o objeto.   |
+| Float:offsetX   | A distância entre o jogador e o objeto na direção X. |
+| Float:offsetY   | A distância entre o jogador e o objeto na direção Y. |
+| Float:offsetZ   | A distância entre o jogador e o objeto na direção Z. |
+| Float:rotationX | A rotação X.                                         |
+| Float:rotationY | A rotação Y.                                         |
+| Float:rotationZ | A rotação Z.                                         |
 
 ## Retorno
 

@@ -4,8 +4,8 @@ sidebar_label: Map Icons
 description: A list of Map Icons
 ---
 
-| ID  | Icon                             | Name                              |
-| --- | -------------------------------- | --------------------------------- |
+| ID  | Icon                                                          | Name                              |
+| --- | ------------------------------------------------------------- | --------------------------------- |
 | 0   | ![](https://assets.open.mp/assets/images/mapIcons/icon0.gif)  | Colored Square/Triangle (Dynamic) |
 | 1   | ![](https://assets.open.mp/assets/images/mapIcons/icon1.gif)  | White Square                      |
 | 2   | ![](https://assets.open.mp/assets/images/mapIcons/icon2.gif)  | Player Position                   |

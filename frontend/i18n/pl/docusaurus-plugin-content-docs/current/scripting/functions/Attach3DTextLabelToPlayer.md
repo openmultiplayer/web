@@ -9,13 +9,13 @@ tags: ["player", "3dtextlabel"]
 
 Przyczepia tekst 3D do gracza.
 
-| Nazwa     | Opis                                                             |
-| --------- | ---------------------------------------------------------------- |
+| Nazwa         | Opis                                                             |
+| ------------- | ---------------------------------------------------------------- |
 | Text3D:textid | ID tekstu 3D do przyczepienia. Zwracane przez Create3DTextLabel. |
-| playerid  | ID gracza, do którego tekst 3D ma zostać przyczepiony.           |
-| OffsetX   | Offset X gracza.                                                 |
-| OffsetY   | Offset Y gracza.                                                 |
-| OffsetZ   | Offset Z gracza.                                                 |
+| playerid      | ID gracza, do którego tekst 3D ma zostać przyczepiony.           |
+| OffsetX       | Offset X gracza.                                                 |
+| OffsetY       | Offset Y gracza.                                                 |
+| OffsetZ       | Offset Z gracza.                                                 |
 
 ## Zwracane wartości
 

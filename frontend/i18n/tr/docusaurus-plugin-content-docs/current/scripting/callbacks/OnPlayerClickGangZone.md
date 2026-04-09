@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Bu geri çağırma, bir oyuncu duraklatma menüsü haritasında (sağ tıklayarak) bir gangzone'a tıkladığında çağrılır.
 
-| Parametre     | Açıklama                                                                          |
-| -------- | ------------------------------------------------------------------------------------ |
-| playerid | Bir gangzone'a tıklayan oyuncunun ID'si                                  |
-| zoneid   | Oyuncunun tıkladığı gangzone'un ID'si                                     |
+| Parametre | Açıklama                                |
+| --------- | --------------------------------------- |
+| playerid  | Bir gangzone'a tıklayan oyuncunun ID'si |
+| zoneid    | Oyuncunun tıkladığı gangzone'un ID'si   |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -36,7 +36,7 @@ public OnPlayerClickGangZone(playerid, zoneid)
 
 ## Bağlantılı Fonksiyonlar
 
-Aşağıdaki fonksiyonlar yararlı olabilir, çünkü bir şekilde bu geri çağırma ile ilgilidirler. 
+Aşağıdaki fonksiyonlar yararlı olabilir, çünkü bir şekilde bu geri çağırma ile ilgilidirler.
 
 - [GangZoneCreate](../functions/GangZoneCreate): Bir gangzone (renkli radar alanı) oluşturur.
 - [GangZoneDestroy](../functions/GangZoneDestroy): Bir gangzone'u yok eder.

@@ -9,9 +9,9 @@ tags: ["player", "menu"]
 
 Oyuncu bir menüden çıktığında çağrılır.
 
-| Parametre     | Açıklama                                  |
-| -------- | ----------------------------------------- |
-| playerid | Menüden çıkan oyuncunun ID'si             |
+| Parametre | Açıklama                      |
+| --------- | ----------------------------- |
+| playerid  | Menüden çıkan oyuncunun ID'si |
 
 ## Çalışınca Vereceği Sonuçlar
 

@@ -9,11 +9,11 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer de status van een [ondersteunde](../resources/keys) toets verandert (ingedrukt/losgelaten).<br/>Richtingstoetsen triggeren OnPlayerKeyStateChange niet (omhoog/omlaag/links/rechts).
 
-| Naam     | Beschrijving                                                                                   |
-| -------- | --------------------------------------------------------------------------------------------- |
-| playerid | Het ID van de speler die een toets indrukte of losliet.                                       |
-| KEY:newkeys  | Een bitmask van de toetsen die momenteel ingedrukt zijn - [zie hier](../resources/keys)         |
-| KEY:oldkeys  | Een bitmask van de toetsen die vóór de verandering ingedrukt waren - [zie hier](../resources/keys). |
+| Naam        | Beschrijving                                                                                        |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| playerid    | Het ID van de speler die een toets indrukte of losliet.                                             |
+| KEY:newkeys | Een bitmask van de toetsen die momenteel ingedrukt zijn - [zie hier](../resources/keys)             |
+| KEY:oldkeys | Een bitmask van de toetsen die vóór de verandering ingedrukt waren - [zie hier](../resources/keys). |
 
 ## Returns
 

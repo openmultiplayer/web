@@ -9,9 +9,9 @@ tags: []
 
 Essa callback é executada quando um NPC é desconectado do servidor.
 
-| Nome         | Descrição                                               |
-| ------------ | ------------------------------------------------------- |
-| reason[]     | The reason why the bot has disconnected from the server |
+| Nome     | Descrição                                               |
+| -------- | ------------------------------------------------------- |
+| reason[] | The reason why the bot has disconnected from the server |
 
 ## Exemplos
 

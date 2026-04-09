@@ -40,7 +40,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
 :::
 
 2. Je Linux-instance updaten:
-
    - Zorg eerst dat je systeem up-to-date is:
 
    ```
@@ -52,7 +51,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
    ```
 
 3. Een veilig serviceaccount aanmaken:
-
    - Voor de veiligheid maken we een dedicated serviceaccount zonder home directory aan:
 
    ```
@@ -60,7 +58,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
    ```
 
 4. Het serviceaccount locken:
-
    - Voorkom login met het serviceaccount:
 
    ```
@@ -68,7 +65,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
    ```
 
 5. Een map voor de serverbestanden maken:
-
    - We gebruiken `/opt`; dit is de standaardlocatie voor third-party apps:
 
    ```
@@ -76,7 +72,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
    ```
 
 6. Permissies instellen voor de map:
-
    - Zet de group van de map op het serviceaccount:
 
    ```
@@ -98,7 +93,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
 ## Fase 2: open.mp-serverbestanden installeren
 
 7. Ga naar de servermap:
-
    - Navigeer naar `/opt/omp-server`, waar de server komt te staan:
 
    ```
@@ -106,7 +100,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
    ```
 
 8. open.mp-serverbestanden downloaden:
-
    - Download de laatste release van de open.mp-server:
 
    ```
@@ -121,7 +114,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
 :::
 
 9. Serverbestanden uitpakken:
-
    - Na het downloaden, pak de bestanden uit:
 
    ```
@@ -133,7 +125,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
 ## Fase 3: Configureren en starten
 
 10. Vereiste x86-libraries installeren:
-
     - De server draait als 32-bit-applicatie, dus schakel 32-bit-architectuur in:
 
     ```
@@ -149,7 +140,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
     ```
 
 11. Server uitvoerbaar maken:
-
     - Pas de rechten aan zodat de server kan starten (eenmalig):
 
     ```
@@ -161,7 +151,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
     ```
 
 12. Server starten:
-
     - Start de server op de achtergrond met:
 
     ```
@@ -175,7 +164,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
 ## Fase 4: Server beheren
 
 13. Server stoppen:
-
     - Stop de server met de PID uit stap 12:
 
     ```
@@ -183,7 +171,6 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
     ```
 
 14. Proces-ID terugvinden (als je die kwijt bent):
-
     - Voer uit:
 
     ```
@@ -205,5 +192,3 @@ Zoek een online handleiding of de documentatie van je hosting als je niet zeker 
 Heb je nog steeds issues met het opzetten van de server, word dan lid van de officiële open.mp-Discord: [https://discord.gg/samp](https://discord.gg/samp)
 
 Stel je vraag in het kanaal [#openmp-support](https://discord.com/channels/231799104731217931/966398440051445790) en verwijs naar deze guide zodat we ‘m kunnen verbeteren.
-
-

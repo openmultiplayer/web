@@ -22,8 +22,8 @@ public OnGameModeExit()
 ## Megjegyzések
 
 :::tip
- 
-Ezt a funckiót filterszkriptben arra is lehet használni, hogy érzékelje a ``changemode`` vagy ``gmx``RCON parancsot, mivel a játékmód megváltoztatása nem tölti újra a filterszkriptet.
+
+Ezt a funckiót filterszkriptben arra is lehet használni, hogy érzékelje a `changemode` vagy `gmx`RCON parancsot, mivel a játékmód megváltoztatása nem tölti újra a filterszkriptet.
 
 :::
 

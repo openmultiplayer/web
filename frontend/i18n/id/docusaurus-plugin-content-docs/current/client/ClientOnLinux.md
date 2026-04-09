@@ -26,8 +26,8 @@ You DO NOT get a working GUI, this must be executed in a Wine prefix via command
 
 Finally, you can execute the open.mp launcher through the Wine prefixes CLI or write it to a .bat script for easy launching.
 
-
 ### Contoh
+
 ```
 Z:\path\to\omp-launcher.exe -h server.ip -p port -n user.name -g Z:\home\yourname\path\to\gta-san-andreas\install\
 ```
@@ -40,8 +40,8 @@ Kamu bisa menjalankan omp-launcher.exe dengan flag --help untuk mendapatkan info
 
 ### Mengatasi masalah
 
-| Masalah | Seharusnya diperbaiki |
-|---------|-----------------------|
-| Game ngecrash ketika dijeda | Ada font yang hilang, install semua font melalui winetricks untuk mengatasi masalah ini |
-| Tidak menampilkan prompt login di server | Coba aktifkan/nonaktifkan pengaturan "Prefer system libraries" di lutris |
-| Munculnya kotak hitam sehingga game tidak bisa memuat | Kamu mungkin melewatkan parameter pada CLI. Silahkan diperiksa lagi |
+| Masalah                                               | Seharusnya diperbaiki                                                                   |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Game ngecrash ketika dijeda                           | Ada font yang hilang, install semua font melalui winetricks untuk mengatasi masalah ini |
+| Tidak menampilkan prompt login di server              | Coba aktifkan/nonaktifkan pengaturan "Prefer system libraries" di lutris                |
+| Munculnya kotak hitam sehingga game tidak bisa memuat | Kamu mungkin melewatkan parameter pada CLI. Silahkan diperiksa lagi                     |

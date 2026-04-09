@@ -11,10 +11,10 @@ tags: ["npc", "player", "movement"]
 
 Checks if an NPC is moving toward a specific player.
 
-| Name     | Description                    |
-| -------- | ------------------------------ |
-| npcid    | The ID of the NPC              |
-| playerid | The ID of the player to check  |
+| Name     | Description                   |
+| -------- | ----------------------------- |
+| npcid    | The ID of the NPC             |
+| playerid | The ID of the player to check |
 
 ## Returns
 

@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Acest callback este apelat atunci când un vehicul este transmis în flux pentru clientul unui jucător (este atât de departe încât acesta nu îl poate vedea).
 
-| Nume        | Descriere                                                    |
-| ----------- | ------------------------------------------------------------ |
-| vehicleid   | ID-ul vehiculului care a ieșit.                              |
-| forplayerid | ID-ul jucătorului care nu mai transmite vehiculul.           |
+| Nume        | Descriere                                          |
+| ----------- | -------------------------------------------------- |
+| vehicleid   | ID-ul vehiculului care a ieșit.                    |
+| forplayerid | ID-ul jucătorului care nu mai transmite vehiculul. |
 
 ## Returnări
 

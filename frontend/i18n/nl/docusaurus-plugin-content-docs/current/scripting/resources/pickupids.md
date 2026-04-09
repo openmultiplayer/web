@@ -8,5 +8,3 @@ Elke geldig objectmodel kan gebruikt worden voor [CreatePickup](../functions/Cre
 :::
 
 > Opmerking: de uitgebreide tabellen met iconen en model-ID’s volgen de Engelstalige bron. Alleen koppen en toelichting zijn vertaald.
-
-

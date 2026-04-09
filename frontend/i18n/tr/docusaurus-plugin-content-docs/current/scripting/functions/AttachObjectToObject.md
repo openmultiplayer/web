@@ -9,21 +9,21 @@ tags: []
 
 Bu fonksiyon, objeleri diğer objelere bağlar.
 
-| Parametre     | Açıklama                                                                        |
-| ------------- | ------------------------------------------------------------------------------- |
-| objectid      | Bağlanacak obje ID'si.                                                          |
-| attachtoid    | Bağlanılacak (ana obje) obje ID'si.                                             |
-| Float:OffsetX | X yönündeki ana obje ile obje arasındaki mesafe.                                |
-| Float:OffsetY | Y yönündeki ana obje ile obje arasındaki mesafe.                                |
-| Float:OffsetZ | Z yönündeki ana obje ile obje arasındaki yüksekliği.                            |
-| Float:RotX    | Obje ve ana obje arasındaki X rotasyonu.                                        |
-| Float:RotY    | Obje ve ana obje arasındaki Y rotasyonu.                                        |
-| Float:RotZ    | Obje ve ana obje arasındaki Z rotasyonu.                                        |
-| SyncRotation  | Eğer sıfırsa, objenin rotasyonu ana objenin rotasyonuyla birlikte değişmez.     |
+| Parametre     | Açıklama                                                                    |
+| ------------- | --------------------------------------------------------------------------- |
+| objectid      | Bağlanacak obje ID'si.                                                      |
+| attachtoid    | Bağlanılacak (ana obje) obje ID'si.                                         |
+| Float:OffsetX | X yönündeki ana obje ile obje arasındaki mesafe.                            |
+| Float:OffsetY | Y yönündeki ana obje ile obje arasındaki mesafe.                            |
+| Float:OffsetZ | Z yönündeki ana obje ile obje arasındaki yüksekliği.                        |
+| Float:RotX    | Obje ve ana obje arasındaki X rotasyonu.                                    |
+| Float:RotY    | Obje ve ana obje arasındaki Y rotasyonu.                                    |
+| Float:RotZ    | Obje ve ana obje arasındaki Z rotasyonu.                                    |
+| SyncRotation  | Eğer sıfırsa, objenin rotasyonu ana objenin rotasyonuyla birlikte değişmez. |
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Fonksiyon başarıyla çalıştı. 
+1: Fonksiyon başarıyla çalıştı.
 
 0: Fonksiyon çalışmadı. Bu, ilk (bağlanacak - objectid) objenin mevcut olmadığı anlamına gelir.
 Bağlanılacak ana objenin (bağlanılacak - attachtoid) oluşturulup oluşturulmadığının herhangi bir kontrolü yoktur.

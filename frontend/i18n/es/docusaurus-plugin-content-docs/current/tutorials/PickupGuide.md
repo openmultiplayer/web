@@ -21,12 +21,12 @@ Hay dos formas de crear pickup [CreatePickup](../scripting/functions/CreatePicku
 
 **Parameters:**
 
-| modelo       | El modelo que queres usar                                                                                 |
-| ------------ | --------------------------------------------------------------------------------------------------------- |
-| typo         | El typo de pickup que es utiliza                                                                          |
-| Float:X      | La X-coordenada para el pickup.                                                                           |
-| Float:Y      | La Y-coordinate para el pickup.                                                                           |
-| Float:Z      | La Z-coordinate para el pickup.                                                                           |
+| modelo       | El modelo que queres usar                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------- |
+| typo         | El typo de pickup que es utiliza                                                                        |
+| Float:X      | La X-coordenada para el pickup.                                                                         |
+| Float:Y      | La Y-coordinate para el pickup.                                                                         |
+| Float:Z      | La Z-coordinate para el pickup.                                                                         |
 | Virtualworld | El mundo virtual de la pickup. La mundo virtual de -1 se va a ensenar para todos los mundos virtruales. |
 
 Para este ejemplo, crearemos un pickup en Grove Street.
@@ -39,12 +39,11 @@ Las pickups se crean más comúnmente cuando se inicia el script, en [OnGameMode
 
 Aquí hacemos la pickup en la variable 'gMiPickup':
 
-
 ```c
 gMiPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 ```
 
-Cuando recoges una pickup, se llama la función [OnPlayerPickUpPickup](../scripting/callbacks/OnPlayerPickUpPickup), pasando playerid (el jugador que recogió la pickup) y pickupid (la ID de la pickup que se recogió). 
+Cuando recoges una pickup, se llama la función [OnPlayerPickUpPickup](../scripting/callbacks/OnPlayerPickUpPickup), pasando playerid (el jugador que recogió la pickup) y pickupid (la ID de la pickup que se recogió).
 
 Algunos typos de pickup están diseñados para funcionar automáticamente, por lo que no es necesario hacer nada en OnPlayerPickUpPickup. Consulte la página [Typos de pickup](../scripting/resources/pickuptypes) para obtener más información.
 

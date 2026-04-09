@@ -9,18 +9,18 @@ tags: ["player", "object"]
 
 Callback này được gọi khi một người chơi kết thúc việc chỉnh sửa một đối tượng ([BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)).
 
-| Tên                     | Mô Tả                                                                                      |
-|------------------------|--------------------------------------------------------------------------------------------|
-| playerid               | ID của người chơi đã chỉnh sửa một đối tượng                                               |
-| playerobject           | 0 nếu đó là đối tượng toàn cục hoặc 1 nếu đó là đối tượng của người chơi.                  |
-| objectid               | ID của đối tượng đã được chỉnh sửa                                                          |
-| EDIT_RESPONSE:response | [Loại phản hồi](../resources/objecteditionresponsetypes)                                      |
-| Float:fX               | Độ lệch X của đối tượng đã được chỉnh sửa                                                    |
-| Float:fY               | Độ lệch Y của đối tượng đã được chỉnh sửa                                                    |
-| Float:fZ               | Độ lệch Z của đối tượng đã được chỉnh sửa                                                    |
-| Float:fRotX            | Góc quay X của đối tượng đã được chỉnh sửa                                                  |
-| Float:fRotY            | Góc quay Y của đối tượng đã được chỉnh sửa                                                  |
-| Float:fRotZ            | Góc quay Z của đối tượng đã được chỉnh sửa                                                  |
+| Tên                    | Mô Tả                                                                     |
+| ---------------------- | ------------------------------------------------------------------------- |
+| playerid               | ID của người chơi đã chỉnh sửa một đối tượng                              |
+| playerobject           | 0 nếu đó là đối tượng toàn cục hoặc 1 nếu đó là đối tượng của người chơi. |
+| objectid               | ID của đối tượng đã được chỉnh sửa                                        |
+| EDIT_RESPONSE:response | [Loại phản hồi](../resources/objecteditionresponsetypes)                  |
+| Float:fX               | Độ lệch X của đối tượng đã được chỉnh sửa                                 |
+| Float:fY               | Độ lệch Y của đối tượng đã được chỉnh sửa                                 |
+| Float:fZ               | Độ lệch Z của đối tượng đã được chỉnh sửa                                 |
+| Float:fRotX            | Góc quay X của đối tượng đã được chỉnh sửa                                |
+| Float:fRotY            | Góc quay Y của đối tượng đã được chỉnh sửa                                |
+| Float:fRotZ            | Góc quay Z của đối tượng đã được chỉnh sửa                                |
 
 ## Trả Về
 
@@ -45,7 +45,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
     GetObjectPos(objectid, oldX, oldY, oldZ);
     GetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);
-    
+
     if (!playerobject) // Nếu đây là đối tượng toàn cục, đồng bộ hóa vị trí cho các người chơi khác
     {
         if (!IsValidObject(objectid))

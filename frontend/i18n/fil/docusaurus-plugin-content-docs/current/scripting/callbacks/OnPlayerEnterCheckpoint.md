@@ -9,9 +9,9 @@ tags: ["player", "checkpoint"]
 
 Tinatawag ang callback na ito kapag pumasok ang isang player sa checkpoint set para sa player na iyon.
 
-| Name     | Description                            |
-| -------- | -------------------------------------- |
-| playerid | Ang player na pumasok sa checkpoint    |
+| Name     | Description                         |
+| -------- | ----------------------------------- |
+| playerid | Ang player na pumasok sa checkpoint |
 
 ## Returns
 

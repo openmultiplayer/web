@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Callback này được gọi khi một người chơi vào một khu vực băng nhóm.
 
-| Tên       | Mô Tả                                      |
-| --------- | ------------------------------------------ |
-| playerid  | ID của người chơi đã vào khu vực băng nhóm. |
-| zoneid    | ID của khu vực băng nhóm mà người chơi vào. |
+| Tên      | Mô Tả                                       |
+| -------- | ------------------------------------------- |
+| playerid | ID của người chơi đã vào khu vực băng nhóm. |
+| zoneid   | ID của khu vực băng nhóm mà người chơi vào. |
 
 ## Trả Về
 

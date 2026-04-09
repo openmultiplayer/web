@@ -9,15 +9,15 @@ tags: ["menu"]
 
 Cria um menu.
 
-| Nome               | Descrição                                                                           |
-| ------------------ | ----------------------------------------------------------------------------------- |
-| const title[]      | O título para o novo menu.                                                         |
-| columns            | Quantas colunas o novo menu deve ter.                                              |
-| Float:x            | A posição X do menu (canvas 640x460 - 0 colocaria o menu no extremo esquerdo).    |
-| Float:y            | A posição Y do menu (canvas 640x460 - 0 colocaria o menu no extremo superior).    |
-| Float:column1width | A largura para a primeira coluna.                                                  |
-| Float:column2width | A largura para a segunda coluna.                                                   |
-| OPEN_MP_TAGS:...   | Número indefinido de argumentos de qualquer tag.                                   |
+| Nome               | Descrição                                                                      |
+| ------------------ | ------------------------------------------------------------------------------ |
+| const title[]      | O título para o novo menu.                                                     |
+| columns            | Quantas colunas o novo menu deve ter.                                          |
+| Float:x            | A posição X do menu (canvas 640x460 - 0 colocaria o menu no extremo esquerdo). |
+| Float:y            | A posição Y do menu (canvas 640x460 - 0 colocaria o menu no extremo superior). |
+| Float:column1width | A largura para a primeira coluna.                                              |
+| Float:column2width | A largura para a segunda coluna.                                               |
+| OPEN_MP_TAGS:...   | Número indefinido de argumentos de qualquer tag.                               |
 
 ## Retorno
 

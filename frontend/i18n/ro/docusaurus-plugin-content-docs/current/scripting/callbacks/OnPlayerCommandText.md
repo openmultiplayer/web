@@ -9,10 +9,10 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător introduce o comandă în chat. Comenzile sunt orice încep cu o bară oblică înainte, de ex. /ajutor.
 
-| Nume      | Descriere                                                   |
-| --------- | ----------------------------------------------------------- |
-| playerid  | ID-ul jucătorului care a introdus o comandă.                |
-| cmdtext[] | Comanda care a fost introdusă (inclusiv bara oblică).       |
+| Nume      | Descriere                                             |
+| --------- | ----------------------------------------------------- |
+| playerid  | ID-ul jucătorului care a introdus o comandă.          |
+| cmdtext[] | Comanda care a fost introdusă (inclusiv bara oblică). |
 
 ## Returns
 

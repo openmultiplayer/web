@@ -9,10 +9,10 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler dubbelklikt op een speler in de scoreboard.
 
-| Naam            | Beschrijving                                                     |
+| Naam            | Beschrijving                                                    |
 | --------------- | --------------------------------------------------------------- |
 | playerid        | Het ID van de speler die klikte op een speler in de scoreboard. |
-| clickedplayerid | Het ID van de speler waarop geklikt werd.                        |
+| clickedplayerid | Het ID van de speler waarop geklikt werd.                       |
 | source          | De [bron](../resources/clicksources) van de klik.               |
 
 ## Returns

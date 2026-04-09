@@ -9,10 +9,10 @@ tags: ["player", "camera"]
 
 Nag-attach ng camera ng player sa isang player-object. Nagagawa ng player na ilipat ang kanyang camera habang nakakabit ito sa isang bagay. Maaaring gamitin sa MovePlayerObject at AttachPlayerObjectToVehicle.
 
-| Name           | Description                                                                    |
-| -------------- | ------------------------------------------------------------------------------ |
-| playerid       | Ang ID ng player kung saan ikakabit ang kanilang camera sa isang player-object.|
-| playerobjectid | Ang ID ng player-object kung saan ikakabit ang camera ng player.               |
+| Name           | Description                                                                     |
+| -------------- | ------------------------------------------------------------------------------- |
+| playerid       | Ang ID ng player kung saan ikakabit ang kanilang camera sa isang player-object. |
+| playerobjectid | Ang ID ng player-object kung saan ikakabit ang camera ng player.                |
 
 ## Returns
 

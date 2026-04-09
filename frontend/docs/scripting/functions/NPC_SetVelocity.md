@@ -11,12 +11,12 @@ tags: ["npc", "velocity", "movement"]
 
 Sets the velocity of an NPC.
 
-| Name    | Description                |
-| ------- | -------------------------- |
-| npcid   | The ID of the NPC          |
-| Float:x | The X velocity component   |
-| Float:y | The Y velocity component   |
-| Float:z | The Z velocity component   |
+| Name    | Description              |
+| ------- | ------------------------ |
+| npcid   | The ID of the NPC        |
+| Float:x | The X velocity component |
+| Float:y | The Y velocity component |
+| Float:z | The Z velocity component |
 
 ## Returns
 

@@ -9,10 +9,10 @@ tags: ["core"]
 
 Chama uma função pública do script no qual é usada.
 
-| Nome                 | Descrição                                   |
-| -------------------- | ------------------------------------------- |
-| const functionName[] | Nome da função pública.                     |
-| const specifiers[]   | Tag/formato de cada variável                |
+| Nome                 | Descrição                                         |
+| -------------------- | ------------------------------------------------- |
+| const functionName[] | Nome da função pública.                           |
+| const specifiers[]   | Tag/formato de cada variável                      |
 | OPEN_MP_TAGS:...     | Número 'indefinido' de argumentos de qualquer tag |
 
 ## Retorno
@@ -23,14 +23,14 @@ Se a função não existe, retorna 0.
 
 ## Especificadores de Formato
 
-| **Placeholder** | **Significado**                                                                                                                                                                                                                                                                                   |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Placeholder** | **Significado**                                                                                                                                                                                                                                                                                                  |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `a`             | Passa um array (o próximo placeholder deve ser d ou i para o tamanho do array, para que a função esteja ciente disso).<br/><br/>**NOTA**: Aceita apenas uma dimensão, então um truque como sizeof (array) + sizeof (array) \* sizeof (array[]) para o tamanho do array seria necessário para passar um array 2D. |
-| `c`             | Passa um único caractere.                                                                                                                                                                                                                                                                        |
-| `d`,`i`         | Passa um número inteiro (número inteiro).                                                                                                                                                                                                                                                        |
-| `x`             | Passa um número em notação hexadecimal.                                                                                                                                                                                                                                                          |
-| `f`             | Passa um número de ponto flutuante.                                                                                                                                                                                                                                                              |
-| `s`             | Passa uma string.                                                                                                                                                                                                                                                                                 |
+| `c`             | Passa um único caractere.                                                                                                                                                                                                                                                                                        |
+| `d`,`i`         | Passa um número inteiro (número inteiro).                                                                                                                                                                                                                                                                        |
+| `x`             | Passa um número em notação hexadecimal.                                                                                                                                                                                                                                                                          |
+| `f`             | Passa um número de ponto flutuante.                                                                                                                                                                                                                                                                              |
+| `s`             | Passa uma string.                                                                                                                                                                                                                                                                                                |
 
 ## Exemplos
 

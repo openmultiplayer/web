@@ -11,8 +11,8 @@ tags: ["animation"]
 
 Permite o uso de animações que estão faltando em determinadas versões do SA-MP.
 
-| Parâmetro    | Descrição |
-|-------------|-----------|
+| Parâmetro   | Descrição                                                        |
+| ----------- | ---------------------------------------------------------------- |
 | bool:enable | 'true' para ativar animações ausentes, 'false' para desativá-las |
 
 ## Retornos
@@ -55,6 +55,7 @@ Você também pode habilitar/desabilitar animações ausentes diretamente no arq
 ## Comportamento em Diferentes Versões
 
 Esta função é particularmente útil quando:
+
 - Trabalhando com versões antigas do SA-MP que não possuem certas animações
 - Garantindo compatibilidade entre diferentes builds
 - Utilizando animações customizadas ou modificadas

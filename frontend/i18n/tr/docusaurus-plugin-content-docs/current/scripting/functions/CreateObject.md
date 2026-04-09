@@ -9,15 +9,15 @@ tags: []
 
 Oyun dünyası üzerinde obje oluşturma.
 
-| Parametre          | Açıklama                                                                                                                                                              |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| modelid            | Oluşturulacak objenin modeli.                                                                                                                                         |
-| Float:X            | Oluşturulacak objenin X koordinatı.                                                                                                                                   |
-| Float:Y            | Oluşturulacak objenin Y koordinatı.                                                                                                                                   |
-| Float:Z            | Oluşturulacak objenin Z koordinatı.                                                                                                                                   |
-| Float:rX           | Oluşturulacak objenin X rotasyonu.                                                                                                                                    |
-| Float:rY           | Oluşturulacak objenin Y rotasyonu.                                                                                                                                    |
-| Float:rZ           | Oluşturulacak objenin Z rotasyonu.                                                                                                                                    |
+| Parametre          | Açıklama                                                                                              |
+| ------------------ | ----------------------------------------------------------------------------------------------------- |
+| modelid            | Oluşturulacak objenin modeli.                                                                         |
+| Float:X            | Oluşturulacak objenin X koordinatı.                                                                   |
+| Float:Y            | Oluşturulacak objenin Y koordinatı.                                                                   |
+| Float:Z            | Oluşturulacak objenin Z koordinatı.                                                                   |
+| Float:rX           | Oluşturulacak objenin X rotasyonu.                                                                    |
+| Float:rY           | Oluşturulacak objenin Y rotasyonu.                                                                    |
+| Float:rZ           | Oluşturulacak objenin Z rotasyonu.                                                                    |
 | Float:DrawDistance | (opsiyonel) Objenin görüş mesafesi. 0.0, objenin varsayılan mesafelerinde oluşturulmasına neden olur. |
 
 ## Örnekler

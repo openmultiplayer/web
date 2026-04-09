@@ -9,9 +9,9 @@ tags: []
 
 Cancela o modo de edição de objeto para um jogador
 
-| Nome     | Descrição                                      |
-| -------- | ---------------------------------------------- |
-| playerid | O ID do jogador para cancelar a edição        |
+| Nome     | Descrição                              |
+| -------- | -------------------------------------- |
+| playerid | O ID do jogador para cancelar a edição |
 
 ## Retorno
 

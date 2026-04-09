@@ -9,8 +9,8 @@ tags: ["player"]
 
 Haal de ping van een speler op (round‑trip tijd in milliseconden).
 
-| Naam | Beschrijving |
-| ---- | ------------ |
+| Naam     | Beschrijving      |
+| -------- | ----------------- |
 | playerid | ID van de speler. |
 
 ## Retourneert
@@ -64,5 +64,3 @@ Ping kan kort 65535 zijn vlak na joinen.
 - [GetPlayerIp](GetPlayerIp)
 - [GetPlayerName](GetPlayerName)
 - [GetPlayerVersion](GetPlayerVersion)
-
-

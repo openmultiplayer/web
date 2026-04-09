@@ -18,7 +18,6 @@ Get the number of arguments passed to a function.
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

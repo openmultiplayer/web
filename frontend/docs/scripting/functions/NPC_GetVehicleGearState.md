@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         else
             SendClientMessage(playerid, 0x00FF00FF, "NPC %d: Landing gear DOWN", npcid);
 
-        return 1; 
+        return 1;
     }
     return 0;
 }

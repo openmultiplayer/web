@@ -9,10 +9,10 @@ tags: ["player"]
 
 Cette callback est appelée quand l'objet d'un joueur a été déplacé après un MovePlayerObject _(quand l'objet s'arrête de bouger)_.
 
-| Nom            | Description                                  |
-| -------------- | -------------------------------------------- |
-| `int` playerid | L'ID du joueur auquel l'objet est assigné    |
-| `int` objectid | L'ID de l'objet du joueur qui a été déplacé  |
+| Nom            | Description                                 |
+| -------------- | ------------------------------------------- |
+| `int` playerid | L'ID du joueur auquel l'objet est assigné   |
+| `int` objectid | L'ID de l'objet du joueur qui a été déplacé |
 
 ## Valeur de retour
 

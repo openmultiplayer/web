@@ -1,6 +1,6 @@
 ---
 id: Style
-title: "Pawn Style Guide" 
+title: "Pawn Style Guide"
 description: A short guide on the generally accepted naming conventions and other aspects of Pawn source code to aid easier communication of intent and streamline debugging and sharing of code.
 ---
 
@@ -178,6 +178,7 @@ func()
 ```
 
 ### Naming
+
 (Utang na loob please gumamit kayo neto).
 
 ### Functions
@@ -188,7 +189,7 @@ Functions ay dapat gumamit ng `PascalCase`.
 
 Global variables declared gamit ang `new` dapat ay palaging merong `g~` prefixed PascalCase. example ay `new g_VariableName`, Pero kung ikaw ay gumamit ng `static` eto ay dapat merong `s_` prefixed PascalCase, example `static s_VariableName`
 
-Constant globals ay dapat gumamit ng `SCREAMING_SNAKE_CASE`. 
+Constant globals ay dapat gumamit ng `SCREAMING_SNAKE_CASE`.
 
 #### Local Variables
 
@@ -198,6 +199,7 @@ Local variables ay dapat palaging gumamit ng `camelCase` at dapat wag na wag kan
 - `x`, `y`, `z`, etc para sa mathematical contexts
 
 #### Enumerators
+
 Enumerators, kung pangalan, ay dapat gumamit ng prefix na `E_` (isang strong tag) or `e_` (isang weak tag)
 
 Enumerator fields ay dapat `SCREAMING_SNAKE_CASE` at ang gamit ng enumerator name para sa prefix.
@@ -205,7 +207,7 @@ Enumerator fields ay dapat `SCREAMING_SNAKE_CASE` at ang gamit ng enumerator nam
 ```pawn
 static enum E_PLAYER_DATA
 {
-    E_PLAYER_CASH, 
+    E_PLAYER_CASH,
     Float:E_PLAYER_HEALTH,
 }
 ```
@@ -225,7 +227,7 @@ Non-named enumerator fields ay dapat ding `SCREAMING_SNAKE_CASE` at dapat ginaga
 ```pawn
 static enum
 {
-    ENUMATOR_INTEGER, 
+    ENUMATOR_INTEGER,
     Float:ENUMATOR_FLOAT,
 }
 ```

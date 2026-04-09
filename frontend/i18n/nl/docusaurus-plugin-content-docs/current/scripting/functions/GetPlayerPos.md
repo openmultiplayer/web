@@ -9,9 +9,9 @@ tags: ["player"]
 
 Haal de positie van een speler op, als X‑, Y‑ en Z‑coördinaten.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
-| playerid | ID van de speler. |
+| Naam     | Beschrijving                 |
+| -------- | ---------------------------- |
+| playerid | ID van de speler.            |
 | &Float:x | Referentie voor X‑coördinaat |
 | &Float:y | Referentie voor Y‑coördinaat |
 | &Float:z | Referentie voor Z‑coördinaat |
@@ -42,5 +42,3 @@ Kan onbetrouwbaar zijn in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) 
 - [GetVehiclePos](GetVehiclePos)
 - [IsPlayerInRangeOfPoint](IsPlayerInRangeOfPoint)
 - [GetPlayerDistanceFromPoint](GetPlayerDistanceFromPoint)
-
-

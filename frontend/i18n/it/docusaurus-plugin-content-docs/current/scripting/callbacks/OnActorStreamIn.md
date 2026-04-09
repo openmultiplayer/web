@@ -15,14 +15,14 @@ Questo callback viene chiamato quando un attore entra nel raggio di stream (dive
 Questo callback è stato aggiunto in SA-MP 0.3.7 e **non funzionerà** nelle versioni precedenti!
 :::
 
-| Nome | Descrizione |
-| :---------------- | :------------------------------------------------------------------------------------------------------------------- |
-| `actorid` | L'ID dell'attore che è stato visualizzato (streamed in) per il giocatore. |
+| Nome          | Descrizione                                                                                    |
+| :------------ | :--------------------------------------------------------------------------------------------- |
+| `actorid`     | L'ID dell'attore che è stato visualizzato (streamed in) per il giocatore.                      |
 | `forplayerid` | L'ID del giocatore che ha visualizzato l'attore (per il quale è entrato nel raggio di stream). |
 
 ## Ritorna
 
-È sempre chiamato prima nei *filterscripts*.
+È sempre chiamato prima nei _filterscripts_.
 
 ## Esempi
 
@@ -37,9 +37,11 @@ public OnActorStreamIn(actorid, forplayerid)
 ```
 
 ## Note
+
 :::tip Questo callback può essere chiamato anche per NPC (bot). :::
 
 ## Callback Correlati
+
 I seguenti callback potrebbero essere utili, in quanto sono correlati a questo callback in un modo o nell'altro.
 
 - [OnActorStreamOut](OnActorStreamOut): Questo callback viene chiamato quando un attore esce dal raggio di stream (smette di essere visibile) per un giocatore.

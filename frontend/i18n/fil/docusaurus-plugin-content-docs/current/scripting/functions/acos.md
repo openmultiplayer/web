@@ -11,9 +11,9 @@ tags: ["math"]
 
 Kunin ang inverse value ng isang cosine sa degrees. Sa trigonometriko, ang arc cosine ay ang kabaligtaran na operasyon ng cosine.
 
-| Name        | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
-| Float:value | halaga na ang arc cosine ay nakalkula, sa pagitan [-1, +1].  |
+| Name        | Description                                                 |
+| ----------- | ----------------------------------------------------------- |
+| Float:value | halaga na ang arc cosine ay nakalkula, sa pagitan [-1, +1]. |
 
 ## Returns
 

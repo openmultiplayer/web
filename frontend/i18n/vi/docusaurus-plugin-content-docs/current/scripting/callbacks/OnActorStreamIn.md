@@ -1,9 +1,7 @@
 ---
-
 title: OnActorStreamIn
 description: Callback này được gọi khi một actor được truyền vào bởi khách hàng của người chơi.
 tags: ["actor"]
-
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
@@ -12,10 +10,10 @@ tags: ["actor"]
 
 Callback này được gọi khi một actor được truyền vào bởi khách hàng của người chơi.
 
-| Tên         | Mô Tả                                                     |
-| ------------ | --------------------------------------------------------- |
-| actorid      | ID của actor đã được truyền vào cho người chơi.         |
-| forplayerid  | ID của người chơi đã truyền actor vào.                  |
+| Tên         | Mô Tả                                           |
+| ----------- | ----------------------------------------------- |
+| actorid     | ID của actor đã được truyền vào cho người chơi. |
+| forplayerid | ID của người chơi đã truyền actor vào.          |
 
 ## Trả Về
 

@@ -11,11 +11,11 @@ tags: []
 
 Dobij trenutni datum servera koji će biti pohranjen u varijablama &year, &month i &day.
 
-| Ime     | Deskripcija                                                 |
-| ------- | ----------------------------------------------------------- |
-| year=0  | Varijabla za pohranjivanje godine, proslijeđena referencom. |
-| month=0 | Varijabla za pohranjivanje mjeseca, proslijeđena referencom.|
-| day=0   | Varijabla za pohranjivanje dana, proslijeđena referencom.   |
+| Ime     | Deskripcija                                                  |
+| ------- | ------------------------------------------------------------ |
+| year=0  | Varijabla za pohranjivanje godine, proslijeđena referencom.  |
+| month=0 | Varijabla za pohranjivanje mjeseca, proslijeđena referencom. |
+| day=0   | Varijabla za pohranjivanje dana, proslijeđena referencom.    |
 
 ## Returns
 

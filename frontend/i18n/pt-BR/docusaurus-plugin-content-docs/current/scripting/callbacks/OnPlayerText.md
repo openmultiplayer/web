@@ -9,10 +9,10 @@ tags: ["player"]
 
 Executada quando o Player envia uma mensagem no chat.
 
-| Nome     | Descrição                                |
-| -------- | ---------------------------------------- |
-| playerid | ID do jogador que enviou o texto.        |
-| text[]   | Texto que o jogador enviou.              |
+| Nome     | Descrição                         |
+| -------- | --------------------------------- |
+| playerid | ID do jogador que enviou o texto. |
+| text[]   | Texto que o jogador enviou.       |
 
 ## Retornos
 

@@ -24,5 +24,3 @@ Voor [SetObjectMaterialText](../functions/SetObjectMaterialText) bestaan uitlijn
 | 120    | OBJECT_MATERIAL_SIZE_512x128 |
 | 130    | OBJECT_MATERIAL_SIZE_512x256 |
 | 140    | OBJECT_MATERIAL_SIZE_512x512 |
-
-

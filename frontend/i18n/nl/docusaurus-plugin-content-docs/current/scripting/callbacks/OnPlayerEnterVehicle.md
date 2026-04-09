@@ -9,11 +9,11 @@ tags: ["player", "vehicle"]
 
 Deze callback wordt aangeroepen wanneer een speler begint een voertuig in te gaan, wat betekent dat de speler nog niet in het voertuig is wanneer deze callback wordt aangeroepen.
 
-| Naam        | Beschrijving                                          |
-| ----------- | ---------------------------------------------------- |
-| playerid    | ID van de speler die probeert een voertuig in te gaan.    |
+| Naam        | Beschrijving                                           |
+| ----------- | ------------------------------------------------------ |
+| playerid    | ID van de speler die probeert een voertuig in te gaan. |
 | vehicleid   | ID van het voertuig dat de speler probeert in te gaan. |
-| ispassenger | 0 als bestuurder. 1 als passagier. |
+| ispassenger | 0 als bestuurder. 1 als passagier.                     |
 
 ## Returns
 

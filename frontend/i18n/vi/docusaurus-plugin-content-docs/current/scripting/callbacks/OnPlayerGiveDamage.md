@@ -9,13 +9,13 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi gây thiệt hại cho người chơi khác.
 
-| Tên            | Mô Tả                                                                                  |
-|-----------------|----------------------------------------------------------------------------------------|
-| playerid        | ID của người chơi đã gây thiệt hại.                                                     |
-| damagedid       | ID của người chơi bị thiệt hại.                                                         |
-| Float:amount    | Số lượng máu/giáp mà damagedid đã mất (kết hợp).                                        |
-| WEAPON:weaponid | Nguyên nhân gây thiệt hại.                                                               |
-| bodypart        | [Phần cơ thể](../resources/bodyparts) bị trúng đạn.                                      |
+| Tên             | Mô Tả                                               |
+| --------------- | --------------------------------------------------- |
+| playerid        | ID của người chơi đã gây thiệt hại.                 |
+| damagedid       | ID của người chơi bị thiệt hại.                     |
+| Float:amount    | Số lượng máu/giáp mà damagedid đã mất (kết hợp).    |
+| WEAPON:weaponid | Nguyên nhân gây thiệt hại.                          |
+| bodypart        | [Phần cơ thể](../resources/bodyparts) bị trúng đạn. |
 
 ## Trả Về
 

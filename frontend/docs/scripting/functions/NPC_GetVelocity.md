@@ -11,9 +11,9 @@ tags: ["npc", "velocity", "movement"]
 
 Gets the velocity of an NPC.
 
-| Name     | Description                                              |
-| -------- | -------------------------------------------------------- |
-| npcid    | The ID of the NPC                                        |
+| Name     | Description                                                     |
+| -------- | --------------------------------------------------------------- |
+| npcid    | The ID of the NPC                                               |
 | &Float:x | Variable to store the X velocity component, passed by reference |
 | &Float:y | Variable to store the Y velocity component, passed by reference |
 | &Float:z | Variable to store the Z velocity component, passed by reference |

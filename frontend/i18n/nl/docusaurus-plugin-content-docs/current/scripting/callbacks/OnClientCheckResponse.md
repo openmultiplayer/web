@@ -9,12 +9,12 @@ tags: []
 
 Deze callback wordt aangeroepen wanneer een SendClientCheck-verzoek voltooid is.
 
-| Naam     | Beschrijving                   |
-| -------- | ----------------------------- |
+| Naam     | Beschrijving                         |
+| -------- | ------------------------------------ |
 | playerid | Het ID van de gecontroleerde speler. |
-| actionid | Het type uitgevoerde check.     |
-| memaddr  | Het gevraagde adres.           |
-| retndata | Het resultaat van de check.    |
+| actionid | Het type uitgevoerde check.          |
+| memaddr  | Het gevraagde adres.                 |
+| retndata | Het resultaat van de check.          |
 
 ## Returns
 

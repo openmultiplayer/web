@@ -11,13 +11,13 @@ tags: ["player", "gangzone"]
 
 گرفتن موقعیت یه gangzone، که با مختصات minX, minY, maxX, maxY نمایش داده میشه.
 
-| نام         | توضیحات                                                        |
-| ----------- | -------------------------------------------------------------- |
-| zoneid      | ID zone ای که میخوایم مختصاتاش رو بگیریم.                        |
-| &Float:minX | مختصات X برای سمت غرب player gangzone.                         |
-| &Float:minY | مختصات Y برای سمت جنوب player gangzone.                        |
-| &Float:maxX | مختصات X برای سمت شرق player gangzone.                         |
-| &Float:maxY | مختصات Y برای سمت شمال player gangzone.                        |
+| نام         | توضیحات                                   |
+| ----------- | ----------------------------------------- |
+| zoneid      | ID zone ای که میخوایم مختصاتاش رو بگیریم. |
+| &Float:minX | مختصات X برای سمت غرب player gangzone.    |
+| &Float:minY | مختصات Y برای سمت جنوب player gangzone.   |
+| &Float:maxX | مختصات X برای سمت شرق player gangzone.    |
+| &Float:maxY | مختصات Y برای سمت شمال player gangzone.   |
 
 ## برگشتی
 
@@ -32,12 +32,12 @@ public OnGameModeInit()
 {
     gangZone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
 
-    new 
+    new
         Float:minX,
         Float:minY,
         Float:maxX,
         Float:maxY;
-    
+
     GangZoneGetPos(gangZone, minX, minY, maxX, maxY);
     return 1;
 }

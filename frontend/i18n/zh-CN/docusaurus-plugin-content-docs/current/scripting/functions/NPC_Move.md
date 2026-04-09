@@ -11,15 +11,15 @@ tags: ["npc", "移动"]
 
 让 NPC 移动到指定位置。
 
-| 参数                   | 说明                                      |
-| ---------------------- | ----------------------------------------- |
-| npcid                  | NPC 的 ID。                               |
-| Float:x                | 要移动到的 X 坐标。                       |
-| Float:y                | 要移动到的 Y 坐标。                       |
-| Float:z                | 要移动到的 Z 坐标。                       |
-| NPC_MOVE_TYPE:moveType | 移动类型（默认: `NPC_MOVE_TYPE_JOG`）。   |
-| Float:moveSpeed        | 移动速度（默认: `NPC_MOVE_SPEED_AUTO`）。 |
-| Float:stopRange        | 停止前到目标的距离（默认: 0.2）。         |
+| 参数                   | 说明                                                                             |
+| ---------------------- | -------------------------------------------------------------------------------- |
+| npcid                  | NPC 的 ID。                                                                      |
+| Float:x                | 要移动到的 X 坐标。                                                              |
+| Float:y                | 要移动到的 Y 坐标。                                                              |
+| Float:z                | 要移动到的 Z 坐标。                                                              |
+| NPC_MOVE_TYPE:moveType | [移动类型](../resources/npc-constants#移动类型)（默认: `NPC_MOVE_TYPE_JOG`）。   |
+| Float:moveSpeed        | [移动速度](../resources/npc-constants#移动速度)（默认: `NPC_MOVE_SPEED_AUTO`）。 |
+| Float:stopRange        | 停止前到目标的距离（默认: 0.2）。                                                |
 
 ## 返回值
 
@@ -72,3 +72,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 相关回调
 
 - [OnNPCFinishMove](../callbacks/OnNPCFinishMove): NPC 完成移动时调用。
+
+## 相关资源
+
+- [NPC 常量](../resources/npc-constants)

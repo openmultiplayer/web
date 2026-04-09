@@ -8,7 +8,7 @@ tags: []
 
 Este callback se llama cuando un jugador envía una actualización de trailer.
 
-| Nombre    | Descripción                                    		   |
+| Nombre    | Descripción                                              |
 | --------- | -------------------------------------------------------- |
 | playerid  | El ID del jugador que envió la actualización de trailer. |
 | vehicleid | El ID del trailer que está siendo actualizado.           |

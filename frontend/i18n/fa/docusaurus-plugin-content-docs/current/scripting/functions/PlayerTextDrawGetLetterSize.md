@@ -11,10 +11,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 عرض و ارتفاع حروف رو برمی‌گردونه.
 
-| اسم               | توضیحات                                                       |
-| ----------------- | ----------------------------------------------------------------- |
-| playerid          | شناسه بازیکن.                                             |
-| PlayerText:textid | شناسه player-textdraw که می‌خوای letter size رو ازش بگیری.              |
+| اسم               | توضیحات                                                            |
+| ----------------- | ------------------------------------------------------------------ |
+| playerid          | شناسه بازیکن.                                                      |
+| PlayerText:textid | شناسه player-textdraw که می‌خوای letter size رو ازش بگیری.         |
 | &Float:width      | متغیر float برای ذخیره width، که به صورت reference پاس داده میشه.  |
 | &Float:height     | متغیر float برای ذخیره height، که به صورت reference پاس داده میشه. |
 

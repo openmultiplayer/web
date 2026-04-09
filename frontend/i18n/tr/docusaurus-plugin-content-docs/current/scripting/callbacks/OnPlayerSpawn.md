@@ -9,9 +9,9 @@ tags: ["player"]
 
 Bu fonksiyon, oyuncu doğduğunda çağrılır.(ör. SpawnPlayer'i çalıştırdıktan sonra)
 
-| Parametre | Açıklama                           |
-| --------- | ---------------------------------- |
-| playerid  | Doğan oyuncunun ID'si.             |
+| Parametre | Açıklama               |
+| --------- | ---------------------- |
+| playerid  | Doğan oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

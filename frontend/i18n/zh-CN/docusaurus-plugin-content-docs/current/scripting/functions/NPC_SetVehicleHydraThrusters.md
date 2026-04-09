@@ -2,7 +2,7 @@
 title: NPC_SetVehicleHydraThrusters
 sidebar_label: NPC_SetVehicleHydraThrusters
 description: 设置 NPC 驾驶的九头蛇战机推进器方向。
-tags: ["npc", "车辆", "九头蛇战机", “飞机”]
+tags: ["npc", "车辆", "九头蛇战机", "飞机"]
 ---
 
 <VersionWarnZH_CN version='omp v1.5.8.3079' />

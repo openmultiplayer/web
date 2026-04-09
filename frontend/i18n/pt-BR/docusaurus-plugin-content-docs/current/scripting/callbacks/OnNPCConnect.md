@@ -9,9 +9,9 @@ tags: []
 
 Essa callback é executada quando um NPC conecta com sucesso no servidor.
 
-| Nome         | Descrição                                          |
-| ------------ | -------------------------------------------------- |
-| myplayerid   | O ID de jogador que o NPC recebeu.                 |
+| Nome       | Descrição                          |
+| ---------- | ---------------------------------- |
+| myplayerid | O ID de jogador que o NPC recebeu. |
 
 ## Exemplos
 

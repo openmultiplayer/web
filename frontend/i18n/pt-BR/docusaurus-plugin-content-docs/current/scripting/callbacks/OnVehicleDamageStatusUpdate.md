@@ -15,10 +15,10 @@ Funções úteis para trabalhar com danos em veículos podem ser encontradas [aq
 
 Essa callback é executada quando elementos do veíclo como portas, rodas, painéis, ou luzes mudam seu status de dano.
 
-| Nome      | Descrição                                                                                              |
-| --------- | ------------------------------------------------------------------------------------------------------ |
-| vehicleid | ID do veículo que teve seu status de dano modificado.                                                  |
-| playerid  | ID do jogador que foi sincronizado com o dano no veículo (aquele que danificou ou reparou o veículo).  |
+| Nome      | Descrição                                                                                             |
+| --------- | ----------------------------------------------------------------------------------------------------- |
+| vehicleid | ID do veículo que teve seu status de dano modificado.                                                 |
+| playerid  | ID do jogador que foi sincronizado com o dano no veículo (aquele que danificou ou reparou o veículo). |
 
 ## Retornos
 

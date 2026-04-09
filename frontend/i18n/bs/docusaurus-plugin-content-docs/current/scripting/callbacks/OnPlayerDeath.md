@@ -10,7 +10,7 @@ tags: ["player"]
 Ovaj callback je pozvan kada igrač umre, bilo to samoubistvo ili ubistvo od strane drugog igrača.
 
 | Ime           | Deskripcija                                                                                          |
-|---------------|------------------------------------------------------------------------------------------------------|
+| ------------- | ---------------------------------------------------------------------------------------------------- |
 | playerid      | ID igrača koji je umro.                                                                              |
 | killerid      | ID igrača koji je ubio igrača koji je umro, ili INVALID_PLAYER_ID ako ga nema (igrač sam sebe ubio). |
 | WEAPON:reason | ID razloga zbog kojeg je igrač umro.                                                                 |

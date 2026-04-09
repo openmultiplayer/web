@@ -11,16 +11,17 @@ tags: ["player"]
 
 این کالبک زمانی فرا خوانده می شود که یک بازیکن یک دستور را در پنجره کلاینت وارد کند. دستورات چیز هایی هستند که با اسلش شروع می شوند، به عنوان مثال help/.
 
-| اسم   | توضیح                                                  |
-| --------- | ----------------------------------------------------------- |
-| playerid  | شناسه بازیکنی که دستور را وارد میکند.                |
-| cmdtext[] | دستور وارد شده (از جمله اسلش). |
+| اسم       | توضیح                                 |
+| --------- | ------------------------------------- |
+| playerid  | شناسه بازیکنی که دستور را وارد میکند. |
+| cmdtext[] | دستور وارد شده (از جمله اسلش).        |
 
 ## مقادیر برگشتی
 
 این همیشه ابتدا در فیلتر اسکریپت ها فرا خوانده می شود بنابراین برگداندن 1 جلوی دیدن اسکریپت های دیگر را میگیرد.
 
 ## مثال ها
+
 </div>
 
 ```c
@@ -39,6 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     // Agar hich scripti 1 ra barnagardanad, payame 'SERVER: Unknown Command' baraye bazikon namayesh dade mishavad.
 }
 ```
+
 <div dir="rtl" style={{ textAlign: "right" }}>
 
 ## نکته ها
@@ -48,9 +50,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 این کالبک توسط NPC نیز قابل فرا خوانی است.
 
 :::
-    
+
 ## تابع های مرتبط
 
-
-- [SendRconCommand](../functions/SendRconCommand): یک  دستور RCON را از طریق اسکریپت ارسال میکند.
+- [SendRconCommand](../functions/SendRconCommand): یک دستور RCON را از طریق اسکریپت ارسال میکند.
 </div>

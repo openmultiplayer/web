@@ -11,9 +11,9 @@ tags: ["player"]
 
 Ativar/Desativar armas para um jogador.
 
-| Nome       | Descrição                               |
-| ---------- | --------------------------------------- |
-| playerid   | O ID do jogador para permitir armas     |
+| Nome       | Descrição                              |
+| ---------- | -------------------------------------- |
+| playerid   | O ID do jogador para permitir armas    |
 | bool:allow | true para permitir e false para negar. |
 
 ## Retorno

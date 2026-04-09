@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Bu geri çağırma, bir NPC sunucuya başarıyla bağlandığında çağrılır.
 
-| Parametre         | Açıklama                                        |
-| ------------ | ----------------------------------------------- |
-| myplayerid   | NPC'ye verilen playerid                         |
+| Parametre  | Açıklama                |
+| ---------- | ----------------------- |
+| myplayerid | NPC'ye verilen playerid |
 
 ## Örnek
 

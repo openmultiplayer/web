@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Callback này được gọi khi một xe được tùy chỉnh.
 
-| Tên          | Mô tả                                                                                       |
-|--------------|---------------------------------------------------------------------------------------------|
-| playerid     | ID của người lái xe.                                                                        |
-| vehicleid    | ID của xe đã được tùy chỉnh.                                                                |
-| componentid  | ID của linh kiện đã được thêm vào xe.                                                       |
+| Tên         | Mô tả                                 |
+| ----------- | ------------------------------------- |
+| playerid    | ID của người lái xe.                  |
+| vehicleid   | ID của xe đã được tùy chỉnh.          |
+| componentid | ID của linh kiện đã được thêm vào xe. |
 
 ## Trả về
 

@@ -15,9 +15,9 @@ Ova funkcija započinje malim slovom.
 
 Dobijte obrnutu vrijednost tangente luka u radijanima.
 
-| Ime         | Deskripcija                |
-| ----------- | -------------------------- |
-| Float:value | Unos u tangentama luka.    |
+| Ime         | Deskripcija             |
+| ----------- | ----------------------- |
+| Float:value | Unos u tangentama luka. |
 
 ## Returns
 

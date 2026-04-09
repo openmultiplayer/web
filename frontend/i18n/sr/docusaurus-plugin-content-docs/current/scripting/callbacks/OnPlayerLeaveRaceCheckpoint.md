@@ -9,9 +9,9 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 Овај повратни позив се позива када играч напусти тркачку контролну тачку(чекпоинт).
 
-| Име      | Опис                                                |
-| -------- | --------------------------------------------------- |
-| playerid | ID играча који је напустио тркачки чекпоинт.        |
+| Име      | Опис                                         |
+| -------- | -------------------------------------------- |
+| playerid | ID играча који је напустио тркачки чекпоинт. |
 
 ## Враћа
 
@@ -37,7 +37,7 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 - [OnPlayerEnterCheckpoint](OnPlayerEnterCheckpoint): Овај повратни позив се позива када играч уђе у контролну тачку.
 - [OnPlayerLeaveCheckpoint](OnPlayerLeaveCheckpoint): Овај повратни позив се позива када играч напусти контролну тачку.
-- [OnPlayerEnterRaceCheckpoint](OnPlayerEnterRaceCheckpoint): Овај повратни позив се позива када играч уђе у тркачку контролу тачку. 
+- [OnPlayerEnterRaceCheckpoint](OnPlayerEnterRaceCheckpoint): Овај повратни позив се позива када играч уђе у тркачку контролу тачку.
 
 ## Повезане функције
 

@@ -8,9 +8,9 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador se conecta al servidor.
 
-| Nombre   | Descripción                          |
-| -------- | ------------------------------------ |
-| playerid | El ID del jugador que se conectó.    |
+| Nombre   | Descripción                       |
+| -------- | --------------------------------- |
+| playerid | El ID del jugador que se conectó. |
 
 ## Devoluciones
 

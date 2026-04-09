@@ -7,13 +7,14 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { FixedSizeList } from "react-window";
+import { List as FixedSizeList, RowComponentProps } from "react-window";
 import LoadingBanner from "../../components/LoadingBanner";
 import ServerRow from "../../components/ServerRow";
 import { showToast, ToastContainer } from "../../components/Toast";
 import { API_ADDRESS } from "../../constants";
 import { CoreServerData, ServerAllData } from "../../types";
 import ServerInfoPage from "../../components/ServerInfoPage";
+import { default as Translate, translate } from "@docusaurus/Translate";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 
@@ -57,7 +58,7 @@ const filterServers = (data: CoreServerData[], q: Query): CoreServerData[] => {
       (s) =>
         s.ip.toLowerCase().includes(searchTerm) ||
         s.hn.toLowerCase().includes(searchTerm) ||
-        s.gm.toLowerCase().includes(searchTerm)
+        s.gm.toLowerCase().includes(searchTerm),
     );
   }
 
@@ -83,12 +84,24 @@ const filterServers = (data: CoreServerData[], q: Query): CoreServerData[] => {
 };
 
 const StatsComponent = ({ stats: { players, servers } }: { stats: Stats }) => {
+  const average = players / servers;
+  const averageStr = (isNaN(average) ? 0 : average).toFixed(1);
   return (
     <div className="servers-center">
       <p className="servers-stats">
-        <strong>{players}</strong> players on <strong>{servers}</strong> servers
-        with an average of <strong>{(players / servers).toFixed(1)}</strong>{" "}
-        players per server.
+        <Translate
+          id="partners.server.stats"
+          description="Stats summary: {players} players on {servers} servers with an average of {average} players per server."
+          values={{
+            players: <strong>{players}</strong>,
+            servers: <strong>{servers}</strong>,
+            average: <strong>{averageStr}</strong>,
+          }}
+        >
+          {
+            "{players} players on {servers} servers with an average of {average} players per server."
+          }
+        </Translate>
       </p>
     </div>
   );
@@ -206,10 +219,8 @@ const List = ({ data }: { data: CoreServerData[] }) => {
   }, [data, search, showEmpty, showPartnersOnly, showOmpOnly, sort]);
 
   const rowHeight = 134;
-  const listHeight = 1000;
-  const visibleItems = Math.floor(listHeight / rowHeight);
 
-  const Row = ({ index, style }) => {
+  const Row = ({ index, style }: RowComponentProps) => {
     const server = filteredData[index];
     return (
       <div style={style}>
@@ -219,7 +230,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
   };
 
   return (
-    <>
+    <div className="servers-list-wrapper">
       <form className="servers-list-form">
         <div className="servers-controls">
           <select
@@ -227,17 +238,40 @@ const List = ({ data }: { data: CoreServerData[] }) => {
             onChange={(e) => setSort(e.target.value as SortBy)}
             className="servers-select"
           >
-            <option value="relevance">Relevance</option>
-            <option value="pc">Players</option>
+            <option value="relevance">
+              <Translate
+                id="servers.sort.relevance"
+                description="Sort by relevance"
+              >
+                Relevance
+              </Translate>
+            </option>
+            <option value="pc">
+              <Translate
+                id="servers.sort.players"
+                description="Sort by players"
+              >
+                Players
+              </Translate>
+            </option>
           </select>
 
           <input
             type="text"
-            placeholder="Search by IP or Name"
+            placeholder={translate({
+              id: "servers.search.placeholder",
+              message: "Search by IP or Name",
+              description: "Search input placeholder",
+            })}
             name="search"
             id="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.preventDefault();
+              }
+            }}
             className="servers-search"
           />
 
@@ -283,17 +317,16 @@ const List = ({ data }: { data: CoreServerData[] }) => {
         </div>
       </form>
 
-      <StatsComponent stats={getStats(data)} />
+      <StatsComponent stats={getStats(filteredData)} />
 
-      <FixedSizeList
-        height={(filteredData.length + 1) * rowHeight}
-        width="100%"
-        itemSize={rowHeight}
-        itemCount={filteredData.length}
-        overscanCount={visibleItems}
-      >
-        {Row}
-      </FixedSizeList>
+      <div className="servers-virtual-list">
+        <FixedSizeList
+          rowComponent={Row}
+          rowHeight={rowHeight}
+          rowCount={filteredData.length}
+          rowProps={{}}
+        />
+      </div>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <div className="servers-modal-header">
@@ -327,7 +360,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           </button>
         </div>
       </Modal>
-    </>
+    </div>
   );
 };
 

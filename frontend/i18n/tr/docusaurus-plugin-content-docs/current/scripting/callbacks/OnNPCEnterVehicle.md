@@ -9,10 +9,10 @@ tags: ["npc"]
 
 Bu geri çağırma, bir NPC bir araca bindiğinde çağrılır.
 
-| Parametre         | Açıklama                                             |
-| ------------ | ---------------------------------------------------- |
-| vehicleid    | NPC'nin bindiği aracın ID'si                         |
-| seatid       | NPC'nin kullandığı koltuk ID'si                      |
+| Parametre | Açıklama                        |
+| --------- | ------------------------------- |
+| vehicleid | NPC'nin bindiği aracın ID'si    |
+| seatid    | NPC'nin kullandığı koltuk ID'si |
 
 ## Örnek
 

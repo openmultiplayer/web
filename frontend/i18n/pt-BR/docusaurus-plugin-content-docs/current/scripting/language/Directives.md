@@ -156,7 +156,7 @@ if (10 < 10)
 }
 ```
 
-O compilador sabe que a condição é constante e avisa. Se o resultado nunca muda, por que manter o código? Remover o trecho impediria validações futuras caso `LIMIT` fosse alterado. É aí que `#if` ajuda: diferente de `if`, ele *espera* expressões constantes.
+O compilador sabe que a condição é constante e avisa. Se o resultado nunca muda, por que manter o código? Remover o trecho impediria validações futuras caso `LIMIT` fosse alterado. É aí que `#if` ajuda: diferente de `if`, ele _espera_ expressões constantes.
 
 ```c
 #define LIMIT 10
@@ -208,16 +208,16 @@ Diretiva para ajustar o comportamento do compilador. Exemplo:
 
 Isso altera o caractere de escape de `\` para `$`. Algumas opções úteis no contexto SA:MP:
 
-| Nome | Valores | Descrição |
-| --- | --- | --- |
-| `codepage` | nome/valor | Define a página de código Unicode usada para strings. |
-| `compress` | `1`/`0` | Não suportado no SA-MP. |
-| `deprecated` | símbolo | Gera um aviso ao usar o símbolo indicado, sinalizando que existe versão melhor. |
-| `dynamic` | valor (geralmente potência de 2) | Define o tamanho (em células) da pilha e do heap; use ao receber avisos de memória insuficiente. |
-| `library` | nome da DLL | Indica a DLL da qual funções nativas serão importadas; não transforma o arquivo atual em biblioteca. |
-| `pack` | `1`/`0` | Inverte o significado de `!""` e `""`. Veja `pawn-lang.pdf` para detalhes sobre strings compactadas. |
-| `tabsize` | valor | Define o tamanho do tab para evitar avisos errados de indentação; em SA:MP o padrão é 4. Não use 0, pois oculta avisos úteis. |
-| `unused` | símbolo | Suprime o aviso “symbol is never used” para o símbolo indicado. Útil quando `stock` não se aplica (por exemplo, parâmetros). |
+| Nome         | Valores                          | Descrição                                                                                                                     |
+| ------------ | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `codepage`   | nome/valor                       | Define a página de código Unicode usada para strings.                                                                         |
+| `compress`   | `1`/`0`                          | Não suportado no SA-MP.                                                                                                       |
+| `deprecated` | símbolo                          | Gera um aviso ao usar o símbolo indicado, sinalizando que existe versão melhor.                                               |
+| `dynamic`    | valor (geralmente potência de 2) | Define o tamanho (em células) da pilha e do heap; use ao receber avisos de memória insuficiente.                              |
+| `library`    | nome da DLL                      | Indica a DLL da qual funções nativas serão importadas; não transforma o arquivo atual em biblioteca.                          |
+| `pack`       | `1`/`0`                          | Inverte o significado de `!""` e `""`. Veja `pawn-lang.pdf` para detalhes sobre strings compactadas.                          |
+| `tabsize`    | valor                            | Define o tamanho do tab para evitar avisos errados de indentação; em SA:MP o padrão é 4. Não use 0, pois oculta avisos úteis. |
+| `unused`     | símbolo                          | Suprime o aviso “symbol is never used” para o símbolo indicado. Útil quando `stock` não se aplica (por exemplo, parâmetros).  |
 
 ### Depreciado
 

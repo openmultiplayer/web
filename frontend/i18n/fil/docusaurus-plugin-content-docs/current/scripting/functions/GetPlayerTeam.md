@@ -9,8 +9,8 @@ tags: ["player"]
 
 Kunin ang ID ng koponan kung nasaan ang manlalaro.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
+| Name     | Description                                     |
+| -------- | ----------------------------------------------- |
 | playerid | Ang ID ng manlalaro para makuha ang koponan ng. |
 
 ## Returns

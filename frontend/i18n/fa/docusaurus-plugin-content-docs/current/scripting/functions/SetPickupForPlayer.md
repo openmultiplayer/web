@@ -17,15 +17,15 @@ tags: ["player", "pickup"]
 
 model، نوع و موقعیت pickup رو برای بازیکن خاصی تنظیم می‌کنه.
 
-| نام      | توضیحات                                                  |
-|----------|----------------------------------------------------------|
-| playerid | ID بازیکن.                                               |
-| pickupid | ID pickup.                                               |
-| model    | [model](../resources/pickupids) که باید تنظیم بشه.       |
+| نام      | توضیحات                                                   |
+| -------- | --------------------------------------------------------- |
+| playerid | ID بازیکن.                                                |
+| pickupid | ID pickup.                                                |
+| model    | [model](../resources/pickupids) که باید تنظیم بشه.        |
 | type     | [نوع pickup](../resources/pickuptypes) که باید تنظیم بشه. |
-| Float:x  | مختصات x که pickup باید در اون قرار بگیره.               |
-| Float:y  | مختصات y که pickup باید در اون قرار بگیره.               |
-| Float:z  | مختصات z که pickup باید در اون قرار بگیره.               |
+| Float:x  | مختصات x که pickup باید در اون قرار بگیره.                |
+| Float:y  | مختصات y که pickup باید در اون قرار بگیره.                |
+| Float:z  | مختصات z که pickup باید در اون قرار بگیره.                |
 
 ## مقدار برگشتی
 

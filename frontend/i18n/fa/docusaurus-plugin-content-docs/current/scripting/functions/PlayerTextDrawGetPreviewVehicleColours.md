@@ -11,10 +11,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 رنگ‌های preview vehicle یک 3D preview player-textdraw رو برمی‌گردونه.
 
-| اسم               | توضیحات                                                      |
-| ----------------- | ---------------------------------------------------------------- |
-| playerid          | شناسه بازیکن.                                            |
-| PlayerText:textid | شناسه player-textdraw که می‌خوای vehicle colors رو ازش بگیری.      |
+| اسم               | توضیحات                                                        |
+| ----------------- | -------------------------------------------------------------- |
+| playerid          | شناسه بازیکن.                                                  |
+| PlayerText:textid | شناسه player-textdraw که می‌خوای vehicle colors رو ازش بگیری.  |
 | &colour1          | متغیری برای ذخیره colour1، که به صورت reference پاس داده میشه. |
 | &colour2          | متغیری برای ذخیره colour2، که به صورت reference پاس داده میشه. |
 

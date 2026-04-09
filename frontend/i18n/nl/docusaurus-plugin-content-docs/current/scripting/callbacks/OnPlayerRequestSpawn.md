@@ -10,7 +10,7 @@ tags: ["player", "class"]
 Deze callback wordt aangeroepen wanneer een speler probeert te spawnen via klasse-selectie door SHIFT in te drukken of op de 'Spawn'-knop te klikken.
 
 | Naam     | Beschrijving                                   |
-| -------- | --------------------------------------------- |
+| -------- | ---------------------------------------------- |
 | playerid | Het ID van de speler die probeerde te spawnen. |
 
 ## Returns

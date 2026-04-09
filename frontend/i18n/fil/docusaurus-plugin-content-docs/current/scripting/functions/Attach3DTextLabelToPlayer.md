@@ -9,13 +9,13 @@ tags: ["player", "3dtextlabel"]
 
 Mag-attach ng 3D text label sa isang player.
 
-| Name      | Description                                                           |
-| --------- | --------------------------------------------------------------------- |
-| Text3D:textid | Ang ID ng 3D text label na isasama. Ibinalik ng Create3DTextLabel.    |
-| playerid  | Ang ID ng player kung saan kalakip ang label.                         |
-| OffsetX   | Ang X offset mula sa player.                                          |
-| OffsetY   | Ang Y offset mula sa player.                                          |
-| OffsetZ   | Ang Z offset mula sa player.                                          |
+| Name          | Description                                                        |
+| ------------- | ------------------------------------------------------------------ |
+| Text3D:textid | Ang ID ng 3D text label na isasama. Ibinalik ng Create3DTextLabel. |
+| playerid      | Ang ID ng player kung saan kalakip ang label.                      |
+| OffsetX       | Ang X offset mula sa player.                                       |
+| OffsetY       | Ang Y offset mula sa player.                                       |
+| OffsetZ       | Ang Z offset mula sa player.                                       |
 
 ## Returns
 

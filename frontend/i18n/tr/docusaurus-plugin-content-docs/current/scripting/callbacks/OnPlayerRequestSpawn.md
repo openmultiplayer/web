@@ -9,9 +9,9 @@ tags: ["player"]
 
 Fonksiyon, Bir oyuncu SHIFT'e basarak veya 'Spawn' düğmesine tıklayarak sınıf seçimi yoluyla doğmaya çalıştığında çağrılır.
 
-| Parametre | Açıklama                                      |
-| --------- | --------------------------------------------- |
-| playerid  | Doğmak isteyen oyuncunun ID'si.               |
+| Parametre | Açıklama                        |
+| --------- | ------------------------------- |
+| playerid  | Doğmak isteyen oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

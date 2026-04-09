@@ -9,7 +9,7 @@ tags: []
 
 ## Limieten
 
-| Waarde            | Constant               |
+| Waarde            | Constant              |
 | ----------------- | --------------------- |
 | 24                | MAX_PLAYER_NAME       |
 | 1000              | MAX_PLAYERS           |
@@ -42,65 +42,65 @@ tags: []
 
 ## Wapen-constants
 
-| Waarde | Wapen             | Constant                |
-| ----- | ------------------ | ----------------------- |
-| 0     | Fist               | WEAPON_FIST             |
-| 1     | Brass Knuckles     | WEAPON_BRASSKNUCKLE     |
-| 2     | Golf Club          | WEAPON_GOLFCLUB         |
-| 3     | Nite stick         | WEAPON_NITESTICK        |
-| 4     | Knife              | WEAPON_KNIFE            |
-| 5     | Baseball Bat       | WEAPON_BAT              |
-| 6     | Shovel             | WEAPON_SHOVEL           |
-| 7     | Pool Cue           | WEAPON_POOLSTICK        |
-| 8     | Katana             | WEAPON_KATANA           |
-| 9     | Chainsaw           | WEAPON_CHAINSAW         |
-| 10    | Dildo              | WEAPON_DILDO            |
-| 11    | Dildo              | WEAPON_DILDO2           |
-| 12    | Vibrator           | WEAPON_VIBRATOR         |
-| 13    | Vibrator           | WEAPON_VIBRATOR2        |
-| 14    | Flower             | WEAPON_FLOWER           |
-| 15    | Cane               | WEAPON_CANE             |
-| 16    | Grenade            | WEAPON_GRENADE          |
-| 17    | Teargas            | WEAPON_TEARGAS          |
-| 18    | Molotov Cocktail   | WEAPON_MOLTOV           |
-| 22    | Colt 45            | WEAPON_COLT45           |
-| 23    | Silenced Pistol    | WEAPON_SILENCED         |
-| 24    | Desert Eagle       | WEAPON_DEAGLE           |
-| 25    | Shotgun            | WEAPON_SHOTGUN          |
-| 26    | Sawn-off Shotgun   | WEAPON_SAWEDOFF         |
-| 27    | Combat Shotgun     | WEAPON_SHOTGSPA         |
-| 28    | UZI                | WEAPON_UZI              |
-| 29    | MP5                | WEAPON_MP5              |
-| 30    | AK-47              | WEAPON_AK47             |
-| 31    | M4                 | WEAPON_M4               |
-| 32    | TEC9               | WEAPON_TEC9             |
-| 33    | Rifle              | WEAPON_RIFLE            |
-| 34    | Sniper Rifle       | WEAPON_SNIPER           |
-| 35    | Rocket Launcher    | WEAPON_ROCKETLAUNCHER   |
-| 36    | Heat Seeker        | WEAPON_HEATSEEKER       |
-| 37    | Flamethrower       | WEAPON_FLAMETHROWER     |
-| 38    | Minigun            | WEAPON_MINIGUN          |
-| 39    | Satchel Explosives | WEAPON_SATCHEL          |
-| 40    | Bomb               | WEAPON_BOMB             |
-| 41    | Spray Can          | WEAPON_SPRAYCAN         |
-| 42    | Fire Extinguisher  | WEAPON_FIREEXTINGUISHER |
-| 43    | Camera             | WEAPON_CAMERA           |
-| 46    | Parachute          | WEAPON_PARACHUTE        |
-| 49    | Vehicle            | WEAPON_VEHICLE          |
-| 53    | Drowned            | WEAPON_DROWN            |
-| 54    | Splat              | WEAPON_COLLISION        |
+| Waarde | Wapen              | Constant                |
+| ------ | ------------------ | ----------------------- |
+| 0      | Fist               | WEAPON_FIST             |
+| 1      | Brass Knuckles     | WEAPON_BRASSKNUCKLE     |
+| 2      | Golf Club          | WEAPON_GOLFCLUB         |
+| 3      | Nite stick         | WEAPON_NITESTICK        |
+| 4      | Knife              | WEAPON_KNIFE            |
+| 5      | Baseball Bat       | WEAPON_BAT              |
+| 6      | Shovel             | WEAPON_SHOVEL           |
+| 7      | Pool Cue           | WEAPON_POOLSTICK        |
+| 8      | Katana             | WEAPON_KATANA           |
+| 9      | Chainsaw           | WEAPON_CHAINSAW         |
+| 10     | Dildo              | WEAPON_DILDO            |
+| 11     | Dildo              | WEAPON_DILDO2           |
+| 12     | Vibrator           | WEAPON_VIBRATOR         |
+| 13     | Vibrator           | WEAPON_VIBRATOR2        |
+| 14     | Flower             | WEAPON_FLOWER           |
+| 15     | Cane               | WEAPON_CANE             |
+| 16     | Grenade            | WEAPON_GRENADE          |
+| 17     | Teargas            | WEAPON_TEARGAS          |
+| 18     | Molotov Cocktail   | WEAPON_MOLTOV           |
+| 22     | Colt 45            | WEAPON_COLT45           |
+| 23     | Silenced Pistol    | WEAPON_SILENCED         |
+| 24     | Desert Eagle       | WEAPON_DEAGLE           |
+| 25     | Shotgun            | WEAPON_SHOTGUN          |
+| 26     | Sawn-off Shotgun   | WEAPON_SAWEDOFF         |
+| 27     | Combat Shotgun     | WEAPON_SHOTGSPA         |
+| 28     | UZI                | WEAPON_UZI              |
+| 29     | MP5                | WEAPON_MP5              |
+| 30     | AK-47              | WEAPON_AK47             |
+| 31     | M4                 | WEAPON_M4               |
+| 32     | TEC9               | WEAPON_TEC9             |
+| 33     | Rifle              | WEAPON_RIFLE            |
+| 34     | Sniper Rifle       | WEAPON_SNIPER           |
+| 35     | Rocket Launcher    | WEAPON_ROCKETLAUNCHER   |
+| 36     | Heat Seeker        | WEAPON_HEATSEEKER       |
+| 37     | Flamethrower       | WEAPON_FLAMETHROWER     |
+| 38     | Minigun            | WEAPON_MINIGUN          |
+| 39     | Satchel Explosives | WEAPON_SATCHEL          |
+| 40     | Bomb               | WEAPON_BOMB             |
+| 41     | Spray Can          | WEAPON_SPRAYCAN         |
+| 42     | Fire Extinguisher  | WEAPON_FIREEXTINGUISHER |
+| 43     | Camera             | WEAPON_CAMERA           |
+| 46     | Parachute          | WEAPON_PARACHUTE        |
+| 49     | Vehicle            | WEAPON_VEHICLE          |
+| 53     | Drowned            | WEAPON_DROWN            |
+| 54     | Splat              | WEAPON_COLLISION        |
 
 ## Markermodi
 
 | Waarde | Constant                     |
-| ----- | ---------------------------- |
-| 0     | PLAYER_MARKERS_MODE_OFF      |
-| 1     | PLAYER_MARKERS_MODE_GLOBAL   |
-| 2     | PLAYER_MARKERS_MODE_STREAMED |
+| ------ | ---------------------------- |
+| 0      | PLAYER_MARKERS_MODE_OFF      |
+| 1      | PLAYER_MARKERS_MODE_GLOBAL   |
+| 2      | PLAYER_MARKERS_MODE_STREAMED |
 
 ## Keys
 
-| Waarde  | Constant             |
+| Waarde | Constant             |
 | ------ | -------------------- |
 | 1      | KEY_ACTION           |
 | 2      | KEY_CROUCH           |
@@ -125,23 +125,21 @@ tags: []
 ## Dialogstijlen
 
 | Waarde | Constant                     |
-| ----- | ---------------------------- |
-| 0     | DIALOG_STYLE_MSGBOX          |
-| 1     | DIALOG_STYLE_INPUT           |
-| 2     | DIALOG_STYLE_LIST            |
-| 3     | DIALOG_STYLE_PASSWORD        |
-| 4     | DIALOG_STYLE_TABLIST         |
-| 5     | DIALOG_STYLE_TABLIST_HEADERS |
+| ------ | ---------------------------- |
+| 0      | DIALOG_STYLE_MSGBOX          |
+| 1      | DIALOG_STYLE_INPUT           |
+| 2      | DIALOG_STYLE_LIST            |
+| 3      | DIALOG_STYLE_PASSWORD        |
+| 4      | DIALOG_STYLE_TABLIST         |
+| 5      | DIALOG_STYLE_TABLIST_HEADERS |
 
 ## TextDraw-lettertypen
 
 | Waarde | Constant                     |
-| ----- | ---------------------------- |
-| 0     | TEXT_DRAW_FONT_0             |
-| 1     | TEXT_DRAW_FONT_1             |
-| 2     | TEXT_DRAW_FONT_2             |
-| 3     | TEXT_DRAW_FONT_3             |
-| 4     | TEXT_DRAW_FONT_SPRITE_DRAW   |
-| 5     | TEXT_DRAW_FONT_MODEL_PREVIEW |
-
-
+| ------ | ---------------------------- |
+| 0      | TEXT_DRAW_FONT_0             |
+| 1      | TEXT_DRAW_FONT_1             |
+| 2      | TEXT_DRAW_FONT_2             |
+| 3      | TEXT_DRAW_FONT_3             |
+| 4      | TEXT_DRAW_FONT_SPRITE_DRAW   |
+| 5      | TEXT_DRAW_FONT_MODEL_PREVIEW |

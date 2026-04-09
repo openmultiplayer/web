@@ -11,11 +11,11 @@ tags: ["vehicle"]
 
 Callback này được gọi khi còi của một xe được bật hoặc tắt.
 
-| Tên        | Mô tả                                                                 |
-|------------|-------------------------------------------------------------------------|
-| playerid   | ID của người chơi đã bật/tắt còi (người lái).                          |
-| vehicleid  | ID của xe mà còi đã được bật/tắt.                                       |
-| newstate   | 0 nếu còi được tắt, 1 nếu còi được bật.                                |
+| Tên       | Mô tả                                         |
+| --------- | --------------------------------------------- |
+| playerid  | ID của người chơi đã bật/tắt còi (người lái). |
+| vehicleid | ID của xe mà còi đã được bật/tắt.             |
+| newstate  | 0 nếu còi được tắt, 1 nếu còi được bật.       |
 
 ## Trả về
 

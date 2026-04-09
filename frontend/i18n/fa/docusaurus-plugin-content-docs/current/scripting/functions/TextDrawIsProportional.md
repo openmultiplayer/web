@@ -13,8 +13,8 @@ tags: ["textdraw"]
 
 ## پارامترها
 
-| نام         | توضیحات                      |
-| ----------- | ---------------------------- |
+| نام         | توضیحات                        |
+| ----------- | ------------------------------ |
 | Text:textid | ID textdraw ای که باید چک بشه. |
 
 ## مقادیر برگشتی
@@ -30,7 +30,7 @@ public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
     TextDrawSetProportional(gMyTextdraw, true);
-    
+
     if (TextDrawIsProportional(gMyTextdraw))
     {
         // Textdraw is proportional

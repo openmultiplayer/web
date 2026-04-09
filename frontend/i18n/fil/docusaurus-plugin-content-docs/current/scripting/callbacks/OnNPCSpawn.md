@@ -9,7 +9,6 @@ tags: ["npc"]
 
 Tinatawag ang callback na ito kapag nagkaroon ng NPC.
 
-
 ## Examples
 
 ```c

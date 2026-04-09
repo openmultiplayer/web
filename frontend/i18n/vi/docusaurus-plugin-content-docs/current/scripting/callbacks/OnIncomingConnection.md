@@ -9,11 +9,11 @@ tags: []
 
 Callback này được gọi khi một địa chỉ IP cố gắng kết nối với server. Để chặn các kết nối đến, hãy sử dụng `BlockIpAddress`.
 
-| Tên           | Mô Tả                                            |
-| -------------- | ------------------------------------------------ |
-| playerid       | ID của người chơi đang cố gắng kết nối          |
-| ip_address[]   | Địa chỉ IP của người chơi đang cố gắng kết nối  |
-| port           | Cổng của kết nối được thử nghiệm                |
+| Tên          | Mô Tả                                          |
+| ------------ | ---------------------------------------------- |
+| playerid     | ID của người chơi đang cố gắng kết nối         |
+| ip_address[] | Địa chỉ IP của người chơi đang cố gắng kết nối |
+| port         | Cổng của kết nối được thử nghiệm               |
 
 ## Trả Về
 

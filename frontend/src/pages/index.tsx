@@ -107,7 +107,7 @@ const HomepageHeader = () => {
               {'Version {version} of open.mp server is out with many fixes, performance boosts, and new features!'}
             </Translate>{" "}
             <Link 
-              to="https://www.open.mp/docs/changelog" 
+              to="/docs/changelog" 
               className={styles.enhancedLink}
             >
               <Translate id="announcement.changelog" description="Announcement: changelog link">Changelog</Translate>

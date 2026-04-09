@@ -9,9 +9,9 @@ tags: ["administration"]
 
 I-kick ang isang manlalaro mula sa server. Kakailanganin nilang umalis sa laro at muling kumonekta kung nais nilang magpatuloy sa paglalaro.
 
-| Name     | Description                   |
-| -------- | ----------------------------- |
-| playerid | Ang ID ng player na I-kick.   |
+| Name     | Description                 |
+| -------- | --------------------------- |
+| playerid | Ang ID ng player na I-kick. |
 
 ## Returns
 

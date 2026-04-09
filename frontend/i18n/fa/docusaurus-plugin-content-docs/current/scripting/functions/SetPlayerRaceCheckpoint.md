@@ -9,17 +9,17 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 یک race checkpoint می‌سازه. وقتی پلیر وارد اون می‌شه، callback OnPlayerEnterRaceCheckpoint فراخوانی می‌شه.
 
-| نام           | توضیحات                                                           |
-|---------------|--------------------------------------------------------------------|
-| playerid      | آیدی پلیری که قراره checkpoint براش تنظیم بشه                       |
-| CP_TYPE:type  | [نوع race checkpoint](../resources/race-checkpoint-types)          |
-| Float:centreX | مختصات X                                                          |
-| Float:centreY | مختصات Y                                                          |
-| Float:centreZ | مختصات Z                                                          |
-| Float:nextX   | مختصات X نقطه بعدی، برای جهت پیکان                                |
-| Float:nextY   | مختصات Y نقطه بعدی، برای جهت پیکان                                |
-| Float:nextZ   | مختصات Z نقطه بعدی، برای جهت پیکان                                |
-| Float:radius  | اندازه (قطر) checkpoint                                           |
+| نام           | توضیحات                                                   |
+| ------------- | --------------------------------------------------------- |
+| playerid      | آیدی پلیری که قراره checkpoint براش تنظیم بشه             |
+| CP_TYPE:type  | [نوع race checkpoint](../resources/race-checkpoint-types) |
+| Float:centreX | مختصات X                                                  |
+| Float:centreY | مختصات Y                                                  |
+| Float:centreZ | مختصات Z                                                  |
+| Float:nextX   | مختصات X نقطه بعدی، برای جهت پیکان                        |
+| Float:nextY   | مختصات Y نقطه بعدی، برای جهت پیکان                        |
+| Float:nextZ   | مختصات Z نقطه بعدی، برای جهت پیکان                        |
+| Float:radius  | اندازه (قطر) checkpoint                                   |
 
 ## مقادیر بازگشتی
 

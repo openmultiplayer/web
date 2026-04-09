@@ -9,13 +9,13 @@ tags: [Pickup]
 
 Dieses Callback wird ausgeführt wenn ein Spieler einem Dialog antwortet(benutzt), indem er einen der Buttons drückt, Enter/ESC drückt oder ein List-Item per Doppelklick auswählt(Dialog: List-Style)
 
-| Name        | Beschreibung                                                                                                             |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| playerid    | ID des Spielers der den Dialog benutzt.                                                                      |
-| dialogid    | ID des Dialogs der vom Spieler genutzt wird, zugewiesen in ShowPlayerDialog.                                             |
-| response    | 1 für den linken Button 0 für den rechten Button (Gibt es nur einen Button, dann immer 1)                                           |
+| Name        | Beschreibung                                                                              |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| playerid    | ID des Spielers der den Dialog benutzt.                                                   |
+| dialogid    | ID des Dialogs der vom Spieler genutzt wird, zugewiesen in ShowPlayerDialog.              |
+| response    | 1 für den linken Button 0 für den rechten Button (Gibt es nur einen Button, dann immer 1) |
 | listitem    | ID des ausgewählten List-Items (Start bei 0) (Nur bei List-Style Dialogen, ansonsten -1). |
-| inputtext[] | Der vom Spieler eingefügte Text oder Text des ausgewählten List-Items.                                       |
+| inputtext[] | Der vom Spieler eingefügte Text oder Text des ausgewählten List-Items.                    |
 
 ## Rückgabe(return value)
 

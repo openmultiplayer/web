@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Ovaj callback je pozvan kada se NPC uspješno konektovao na server.
 
-| Ime          | Deskripcija                                        |
-| ------------ | -------------------------------------------------- |
-| myplayerid   | playerid koji je dodijeljen NPC-u.                 |
+| Ime        | Deskripcija                        |
+| ---------- | ---------------------------------- |
+| myplayerid | playerid koji je dodijeljen NPC-u. |
 
 ## Primjeri
 

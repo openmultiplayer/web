@@ -15,9 +15,9 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 Uklanja bilo koju animaciju koja je postavljena aktoru.
 
-| Ime     | Deskripcija                                                                |
-| ------- | -------------------------------------------------------------------------- |
-| actorid | ID aktora (vraćeno od CreateActor) kojem se uklanjaju animacije            |
+| Ime     | Deskripcija                                                     |
+| ------- | --------------------------------------------------------------- |
+| actorid | ID aktora (vraćeno od CreateActor) kojem se uklanjaju animacije |
 
 ## Returns
 

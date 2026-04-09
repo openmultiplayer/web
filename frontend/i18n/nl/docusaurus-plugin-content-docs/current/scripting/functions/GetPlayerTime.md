@@ -9,11 +9,11 @@ tags: ["player"]
 
 Haal de huidige in‑game tijd van de speler op. Wordt gezet met [SetWorldTime](SetWorldTime) of automatisch met [TogglePlayerClock](TogglePlayerClock).
 
-| Naam | Beschrijving |
-| ---- | ------------ |
+| Naam     | Beschrijving                    |
+| -------- | ------------------------------- |
 | playerid | Speler waarvan je de tijd wilt. |
-| &hour | Referentie voor uur |
-| &minute | Referentie voor minuten |
+| &hour    | Referentie voor uur             |
+| &minute  | Referentie voor minuten         |
 
 ## Retourneert
 
@@ -35,5 +35,3 @@ if (hour == 13 && minutes == 37)
 - [SetPlayerTime](SetPlayerTime)
 - [SetWorldTime](SetWorldTime)
 - [TogglePlayerClock](TogglePlayerClock)
-
-

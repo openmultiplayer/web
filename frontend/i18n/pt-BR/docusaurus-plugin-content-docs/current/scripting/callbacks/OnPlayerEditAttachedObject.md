@@ -10,7 +10,7 @@ tags: ["player"]
 Esta callback é chamada quando um jogador termina o modo de edição de objetos anexados.
 
 | Name                   | Descrição                                                        |
-|------------------------|------------------------------------------------------------------|
+| ---------------------- | ---------------------------------------------------------------- |
 | playerid               | O ID do jogador que terminou a edição                            |
 | EDIT_RESPONSE:response | 0 se foi cancelado (ESC), ou 1 se o botão de salvar foi clicado. |
 | index                  | The index of the attached object (0-9)                           |

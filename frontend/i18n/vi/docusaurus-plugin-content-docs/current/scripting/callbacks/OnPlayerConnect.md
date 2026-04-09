@@ -9,9 +9,9 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi kết nối với server.
 
-| Tên       | Mô Tả                                           |
-| ---------- | ----------------------------------------------- |
-| playerid   | ID của người chơi đã kết nối.                   |
+| Tên      | Mô Tả                         |
+| -------- | ----------------------------- |
+| playerid | ID của người chơi đã kết nối. |
 
 ## Trả Về
 

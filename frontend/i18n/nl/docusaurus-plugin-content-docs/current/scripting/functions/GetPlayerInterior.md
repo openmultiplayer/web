@@ -9,8 +9,8 @@ tags: ["player"]
 
 Geeft de huidige interior‑ID van de speler terug.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
+| Naam     | Beschrijving                         |
+| -------- | ------------------------------------ |
 | playerid | Speler waarvan je het interior wilt. |
 
 ## Retourneert
@@ -41,5 +41,3 @@ Retourneert altijd interior 0 voor NPC's.
 
 - [SetPlayerInterior](SetPlayerInterior)
 - [GetPlayerVirtualWorld](GetPlayerVirtualWorld)
-
-

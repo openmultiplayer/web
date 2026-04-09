@@ -11,9 +11,9 @@ tags: ["actor"]
 
 Dobij health actora
 
-| Ime           | Deskripcija                                                                     |
-| ------------- | ------------------------------------------------------------------------------- |
-| actorid       | ID actora od kojeg uzimate health.                                       |
+| Ime           | Deskripcija                                                                 |
+| ------------- | --------------------------------------------------------------------------- |
+| actorid       | ID actora od kojeg uzimate health.                                          |
 | &Float:health | Float varijabla proslijeđena referencom u koju se pohranjuje health actora. |
 
 ## Returns

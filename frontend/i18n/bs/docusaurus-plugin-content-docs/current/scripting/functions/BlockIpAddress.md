@@ -9,10 +9,10 @@ tags: ["ip address"]
 
 Blokira IP adresu iz daljnje komunikacije sa serverom na određeno vrijeme (uz dopuštene zamjenske znakove). Igrači koji se pokušaju povezati na server s blokiranom IP adresom primit će generičku "You are banned from this server." poruku. Igrači koji su na mreži na navedenoj IP adresi,prije nego što će blokada isteći nakon nekoliko sekundi,nakon ponovnog povezivanja,primit će istu poruku.
 
-| Ime        | Deskripcija                                                                                                |
-| ---------- | ---------------------------------------------------------------------------------------------------------- |
-| ip_address | IP koji se blokira                                                                                         |
-| timems     | Vrijeme (u milisekundama) za koje će veza biti blokirana. 0 se može koristiti za neodređeni blok           |
+| Ime        | Deskripcija                                                                                      |
+| ---------- | ------------------------------------------------------------------------------------------------ |
+| ip_address | IP koji se blokira                                                                               |
+| timems     | Vrijeme (u milisekundama) za koje će veza biti blokirana. 0 se može koristiti za neodređeni blok |
 
 ## Returns
 

@@ -9,12 +9,12 @@ tags: ["vehicle"]
 
 Esta função pode ser usada para calcular a distância (como um float) entre um veículo e outra coordenada do mapa. Isso pode ser útil para detectar quão longe um veículo está de um local.
 
-| Nome      | Descrição                                          |
-| --------- | -------------------------------------------------- |
-| vehicleid | O ID do veículo para calcular a distância.        |
-| Float:x   | A coordenada X do mapa.                           |
-| Float:y   | A coordenada Y do mapa.                           |
-| Float:z   | A coordenada Z do mapa.                           |
+| Nome      | Descrição                                  |
+| --------- | ------------------------------------------ |
+| vehicleid | O ID do veículo para calcular a distância. |
+| Float:x   | A coordenada X do mapa.                    |
+| Float:y   | A coordenada Y do mapa.                    |
+| Float:z   | A coordenada Z do mapa.                    |
 
 ## Retornos
 
@@ -31,7 +31,7 @@ public OnPlayerText(playerid, text[])
         new
             string[64],
             vehicleid = GetPlayerVehicleID(playerid);
-        
+
         new
             Float:distance = GetVehicleDistanceFromPoint(vehicleid, 237.9, 115.6, 1010.2);
 

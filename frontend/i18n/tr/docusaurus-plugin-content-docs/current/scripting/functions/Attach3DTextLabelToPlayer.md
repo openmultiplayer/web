@@ -9,13 +9,13 @@ tags: ["player", "3dtextlabel"]
 
 Oyuncuya 3D Text Label bağlama fonksiyonu.
 
-| Parametre | Açıklama                                                                        |
-| --------- | --------------------------------------------------------------------------------|
+| Parametre     | Açıklama                                                                        |
+| ------------- | ------------------------------------------------------------------------------- |
 | Text3D:textid | Create3DTextLabel ile oluşturulmuş label ID'si.                                 |
-| playerid  | Label'ın bağlanacağı oyuncunun ID'si.                                           |
-| OffsetX   | Oyuncunun X-ofset koordinatı. (oyuncunun ortasından başlar, '0.0, 0.0, 0.0'dır) |
-| OffsetY   | Oyuncunun Y-ofset koordinatı. (oyuncunun ortasından başlar, '0.0, 0.0, 0.0'dır) |
-| OffsetZ   | Oyuncunun Z-ofset koordinatı. (oyuncunun ortasından başlar, '0.0, 0.0, 0.0'dır) |
+| playerid      | Label'ın bağlanacağı oyuncunun ID'si.                                           |
+| OffsetX       | Oyuncunun X-ofset koordinatı. (oyuncunun ortasından başlar, '0.0, 0.0, 0.0'dır) |
+| OffsetY       | Oyuncunun Y-ofset koordinatı. (oyuncunun ortasından başlar, '0.0, 0.0, 0.0'dır) |
+| OffsetZ       | Oyuncunun Z-ofset koordinatı. (oyuncunun ortasından başlar, '0.0, 0.0, 0.0'dır) |
 
 ## Çalışınca Vereceği Sonuçlar
 

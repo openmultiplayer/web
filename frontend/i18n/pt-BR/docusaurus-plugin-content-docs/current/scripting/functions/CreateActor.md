@@ -14,10 +14,10 @@ Cria um 'ator' estático no mundo. Estes 'atores' são como NPCs, porém têm fu
 | Nome        | Descrição                                                 |
 | ----------- | --------------------------------------------------------- |
 | skin        | O [ID do modelo](../resources/skins) que o ator deve ter. |
-| Float:x     | A coordenada X onde criar o ator.                        |
-| Float:y     | A coordenada Y onde criar o ator.                        |
-| Float:z     | A coordenada Z onde criar o ator.                        |
-| Float:angle | O ângulo de direção (rotação) que o ator deve ter.       |
+| Float:x     | A coordenada X onde criar o ator.                         |
+| Float:y     | A coordenada Y onde criar o ator.                         |
+| Float:z     | A coordenada Z onde criar o ator.                         |
+| Float:angle | O ângulo de direção (rotação) que o ator deve ter.        |
 
 ## Retorno
 

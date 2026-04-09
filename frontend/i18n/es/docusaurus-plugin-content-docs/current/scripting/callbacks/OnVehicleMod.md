@@ -8,11 +8,11 @@ tags: ["vehicle"]
 
 Este callback se llama cuando un vehículo es tuneado.
 
-| Nombre      | Descripción                                             |
-| ----------- | ------------------------------------------------------- |
-| playerid    | El ID del conductor del vehículo.                       |
-| vehicleid   | El ID del vehículo que es tuneado.                      |
-| componentid | El ID del componente añadido al vehículo.               |
+| Nombre      | Descripción                               |
+| ----------- | ----------------------------------------- |
+| playerid    | El ID del conductor del vehículo.         |
+| vehicleid   | El ID del vehículo que es tuneado.        |
+| componentid | El ID del componente añadido al vehículo. |
 
 ## Devoluciones
 

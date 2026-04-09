@@ -9,18 +9,18 @@ tags: ["player", "object"]
 
 Deze callback wordt aangeroepen wanneer een speler klaar is met het bewerken van een object ([BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)).
 
-| Naam                   | Beschrijving                                                     |
+| Naam                   | Beschrijving                                                    |
 | ---------------------- | --------------------------------------------------------------- |
 | playerid               | Het ID van de speler die een object bewerkte                    |
 | playerobject           | 0 als het een globaal object is, 1 als het een playerobject is. |
-| objectid               | Het ID van het bewerkte object                                   |
-| EDIT_RESPONSE:response | Het [type response](../resources/objecteditionresponsetypes)     |
-| Float:fX               | X-offset voor het bewerkte object                                |
-| Float:fY               | Y-offset voor het bewerkte object                                |
-| Float:fZ               | Z-offset voor het bewerkte object                                |
-| Float:fRotX            | X-rotatie voor het bewerkte object                               |
-| Float:fRotY            | Y-rotatie voor het bewerkte object                               |
-| Float:fRotZ            | Z-rotatie voor het bewerkte object                               |
+| objectid               | Het ID van het bewerkte object                                  |
+| EDIT_RESPONSE:response | Het [type response](../resources/objecteditionresponsetypes)    |
+| Float:fX               | X-offset voor het bewerkte object                               |
+| Float:fY               | Y-offset voor het bewerkte object                               |
+| Float:fZ               | Z-offset voor het bewerkte object                               |
+| Float:fRotX            | X-rotatie voor het bewerkte object                              |
+| Float:fRotY            | Y-rotatie voor het bewerkte object                              |
+| Float:fRotZ            | Z-rotatie voor het bewerkte object                              |
 
 ## Returns
 

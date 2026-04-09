@@ -11,8 +11,8 @@ tags: ["string", "floating-point"]
 
 Converts a string to a float.
 
-| Name   | Description                         |
-| ------ | ----------------------------------- |
+| Name   | Description                             |
+| ------ | --------------------------------------- |
 | string | Ang string na i-convert sa isang float. |
 
 ## Returns

@@ -99,10 +99,10 @@ description: Server configuration file.
 
 ## Lag compensation
 
-| Setting     | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                                                                                             |
-| ----------- | ------ | ------------- | --------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Setting     | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                        |
+| ----------- | ------ | ------------- | --------- | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | lagcompmode | int    | 1             | Yes       | No   | 0: Fully disable lag compensation.<br /><br />1: Fully enable lag compensation.<br /><br />2: Enable position-only lag compensation. This means player rotation won't be lag compensated for. |
-| lagcomp     | string | On            | Yes       | Yes  | Probably set automatically to **On** or **Off** depending on the **lagcompmode** setting.                                                                                                                                                                                                          |
+| lagcomp     | string | On            | Yes       | Yes  | Probably set automatically to **On** or **Off** depending on the **lagcompmode** setting.                                                                                                     |
 
 ## Custom models
 

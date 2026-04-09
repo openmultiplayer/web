@@ -9,8 +9,8 @@ tags: ["player"]
 
 Bu geri çağırma, bir oyuncu başka bir oyuncuya hasar verdiğinde çağırılır.
 
-| Parametre            | Açıklama                                                |
-|-----------------|---------------------------------------------------------|
+| Parametre       | Açıklama                                                |
+| --------------- | ------------------------------------------------------- |
 | playerid        | Hasar veren oyuncunun ID'si.                            |
 | damagedid       | Hasar alan oyuncunun ID'si.                             |
 | Float:amount    | Hasar olan oyuncunun aldığı hasar miktarı.              |

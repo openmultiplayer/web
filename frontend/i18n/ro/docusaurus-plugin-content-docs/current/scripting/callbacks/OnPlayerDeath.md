@@ -10,7 +10,7 @@ tags: ["player"]
 Acest callback este apelat atunci când un jucător moare, fie prin sinucidere, fie ucis de un alt jucător.
 
 | Nume          | Descriere                                                                                                   |
-|---------------|-------------------------------------------------------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------------------------------------------------------- |
 | playerid      | ID-ul jucătorului care a murit.                                                                             |
 | killerid      | ID-ul jucătorului care l-a ucis pe jucătorul care a murit sau INVALID_PLAYER_ID dacă nu a existat niciunul. |
 | WEAPON:reason | ID-ul motivului ([weaponid](../resources/weaponids)) pentru moartea jucătorului.                            |

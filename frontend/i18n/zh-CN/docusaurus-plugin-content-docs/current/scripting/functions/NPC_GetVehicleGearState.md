@@ -1,15 +1,15 @@
 ---
 title: NPC_GetVehicleGearState
 sidebar_label: NPC_GetVehicleGearState
-description: 获取 NPC 飞行器的起落架状态。
-tags: ["npc", "车辆", “飞机”, “起落架”]
+description: 获取 NPC 飞机的起落架状态。
+tags: ["npc", "车辆", "飞机", "起落架"]
 ---
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
 ## 描述
 
-获取 NPC 飞行器的起落架状态。
+获取 NPC 飞机的起落架状态。
 
 | 参数  | 说明      |
 | ----- | --------- |
@@ -17,7 +17,7 @@ tags: ["npc", "车辆", “飞机”, “起落架”]
 
 ## 返回值
 
-返回 NPC 飞行器的起落架状态（LANDING_GEAR_STATE_DOWN 或 LANDING_GEAR_STATE_UP）。
+返回 NPC 飞机的起落架状态（LANDING_GEAR_STATE_DOWN 或 LANDING_GEAR_STATE_UP）。
 
 ## 示例
 
@@ -51,14 +51,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 仅在 NPC 驾驶飞行器时有效
+- 仅在 NPC 驾驶飞机时有效
 - 返回由 NPC_SetVehicleGearState 设置的当前起落架状态
 - 使用与[车辆起落架状态](../resources/landinggearstate)相同的常量：LANDING_GEAR_STATE_DOWN 和 LANDING_GEAR_STATE_UP
 - 这是 GetPlayerLandingGearState 的 NPC 等效函数
 
 ## 相关函数
 
-- [NPC_SetVehicleGearState](NPC_SetVehicleGearState): 设置飞行器起落架状态
+- [NPC_SetVehicleGearState](NPC_SetVehicleGearState): 设置飞机起落架状态
 - [GetPlayerLandingGearState](GetPlayerLandingGearState): 获取玩家起落架状态
 - [GetVehicleLandingGearState](GetVehicleLandingGearState): 获取车辆起落架状态
 - [NPC_GetVehicle](NPC_GetVehicle): 获取 NPC 当前车辆

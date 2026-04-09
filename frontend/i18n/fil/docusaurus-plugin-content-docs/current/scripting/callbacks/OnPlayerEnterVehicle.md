@@ -11,11 +11,11 @@ tags: []
 
 Ang callback na ito ay natatawag kapag ang isang manlalaro ay pumasok sa loob ng sasakyan.
 
-| Pangalan    | Deskripsyon                                                    |
-| ----------- | -------------------------------------------------------------- |
-| playerid     | Ang ID ng manlalaro nag sumasakay sa sasakyan.                  |
-| vehicleid | Ang ID ng sasakyan na pinasukan ng manlalaro.               |
-| ispassenger | 0 kung ang manlalaro ay pumasok bilang driver, 1 kung pasahero.
+| Pangalan    | Deskripsyon                                                     |
+| ----------- | --------------------------------------------------------------- |
+| playerid    | Ang ID ng manlalaro nag sumasakay sa sasakyan.                  |
+| vehicleid   | Ang ID ng sasakyan na pinasukan ng manlalaro.                   |
+| ispassenger | 0 kung ang manlalaro ay pumasok bilang driver, 1 kung pasahero. |
 
 ## Returns
 

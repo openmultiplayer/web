@@ -12,7 +12,6 @@ This callback is called when a recorded file being reproduced with StartRecordin
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

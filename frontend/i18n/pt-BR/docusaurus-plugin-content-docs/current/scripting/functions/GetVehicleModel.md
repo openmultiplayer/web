@@ -9,9 +9,9 @@ tags: ["vehicle"]
 
 Obtém o ID do modelo de um veículo.
 
-| Nome      | Descrição                                |
-| --------- | ---------------------------------------- |
-| vehicleid | O ID do veículo para obter o modelo.     |
+| Nome      | Descrição                            |
+| --------- | ------------------------------------ |
+| vehicleid | O ID do veículo para obter o modelo. |
 
 ## Retornos
 

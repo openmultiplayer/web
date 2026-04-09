@@ -13,5 +13,3 @@ Zet je deze op 0, dan is lag compensatie volledig uitgeschakeld en moeten speler
 Het uitschakelen van lag compensatie voorkomt dat [OnPlayerWeaponShot](../scripting/callbacks/OnPlayerWeaponShot) wordt aangeroepen.
 
 Deze variabele kan alleen worden ingesteld in [server.cfg](server.cfg) of [config.json](config.json).
-
-

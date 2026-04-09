@@ -9,14 +9,14 @@ tags: ["player"]
 
 Cria uma explosão que é visível apenas para um único jogador. Isso pode ser usado para isolar explosões de outros jogadores ou para fazê-las aparecer apenas em mundos virtuais específicos.
 
-| Nome         | Descrição                                                |
-| ------------ | -------------------------------------------------------- |
-| playerid     | O ID do jogador para criar a explosão.                  |
-| Float:x      | A coordenada X da explosão.                             |
-| Float:y      | A coordenada Y da explosão.                             |
-| Float:z      | A coordenada Z da explosão.                             |
-| type         | O [tipo](../resources/explosionlist) da explosão.       |
-| Float:radius | O raio da explosão.                                     |
+| Nome         | Descrição                                         |
+| ------------ | ------------------------------------------------- |
+| playerid     | O ID do jogador para criar a explosão.            |
+| Float:x      | A coordenada X da explosão.                       |
+| Float:y      | A coordenada Y da explosão.                       |
+| Float:z      | A coordenada Z da explosão.                       |
+| type         | O [tipo](../resources/explosionlist) da explosão. |
+| Float:radius | O raio da explosão.                               |
 
 ## Retorno
 

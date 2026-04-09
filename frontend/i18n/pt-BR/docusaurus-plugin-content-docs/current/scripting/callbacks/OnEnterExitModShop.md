@@ -4,6 +4,7 @@ sidebar_label: OnEnterExitModShop
 description: Esta callback é chamada quando o jogador entra ou sai de um modshop.
 tags: []
 ---
+
 ## Descrição
 
 Esta callback é chamada quando o jogador entra ou sai de um shop mod.

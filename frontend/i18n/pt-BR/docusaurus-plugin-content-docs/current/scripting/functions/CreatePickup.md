@@ -9,13 +9,13 @@ tags: ["pickup"]
 
 Esta função faz exatamente o mesmo que AddStaticPickup, exceto que retorna um ID de pickup que pode ser usado para destruí-lo posteriormente e ser rastreado usando OnPlayerPickUpPickup.
 
-| Nome                             | Descrição                                                                          |
-| -------------------------------- | ---------------------------------------------------------------------------------- |
-| [model](../resources/pickupids)  | O modelo do pickup.                                                                |
-| [type](../resources/pickuptypes) | O tipo do pickup. Determina como o pickup responde quando é coletado.             |
-| Float:x                          | A coordenada X onde criar o pickup.                                               |
-| Float:y                          | A coordenada Y onde criar o pickup.                                               |
-| Float:z                          | A coordenada Z onde criar o pickup.                                               |
+| Nome                             | Descrição                                                                                |
+| -------------------------------- | ---------------------------------------------------------------------------------------- |
+| [model](../resources/pickupids)  | O modelo do pickup.                                                                      |
+| [type](../resources/pickuptypes) | O tipo do pickup. Determina como o pickup responde quando é coletado.                    |
+| Float:x                          | A coordenada X onde criar o pickup.                                                      |
+| Float:y                          | A coordenada Y onde criar o pickup.                                                      |
+| Float:z                          | A coordenada Z onde criar o pickup.                                                      |
 | virtualWorld                     | O ID do mundo virtual do pickup. Use -1 para fazer o pickup aparecer em todos os mundos. |
 
 ## Retorno

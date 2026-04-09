@@ -9,10 +9,10 @@ tags: ["player"]
 
 Nagsisimulang i-record ang mga galaw ng isang player sa isang file, na pagkatapos ay maaaring kopyahin ng isang NPC.
 
-| Name         | Description                                                                                                                                                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | Ang id ng player na i-rerecord.                                                                                                                                                                                               |
-| recordtype   | Ang [type](../resources/recordtypes) ng recording.                                                                                                                                                                         |
+| Name         | Description                                                                                                                                                                                                                                     |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid     | Ang id ng player na i-rerecord.                                                                                                                                                                                                                 |
+| recordtype   | Ang [type](../resources/recordtypes) ng recording.                                                                                                                                                                                              |
 | recordname[] | Ang pangalan ng file na maghahawak ng naitala na data. Ise-save ito sa direktoryo ng scriptfiles, na may awtomatikong idinagdag na .rec extension, kakailanganin mong ilipat ang file sa npcmodes/recording upang magamit para sa pag-playback. |
 
 ## Returns

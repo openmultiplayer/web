@@ -11,10 +11,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 چک می‌کنه که آیا یه player-textdraw برای بازیکن نمایش داده شده یا نه.
 
-| نام               | توضیحات                         |
-| ----------------- | ------------------------------- |
-| playerid          | ID بازیکنی که باید چک بشه.      |
-| PlayerText:textid | ID player-textdraw.             |
+| نام               | توضیحات                    |
+| ----------------- | -------------------------- |
+| playerid          | ID بازیکنی که باید چک بشه. |
+| PlayerText:textid | ID player-textdraw.        |
 
 ## مقادیر برگشتی
 

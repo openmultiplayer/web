@@ -141,11 +141,12 @@ Seek online guides or your hosting provider's documentation if you're unsure how
 :::
 
 10. Extracting the server files:
-   - Once downloaded, extract the files:
 
-   ```
-   sudo -u svc-omp-server tar -xzf open.mp-linux-x86.tar.gz
-   ```
+- Once downloaded, extract the files:
+
+```
+sudo -u svc-omp-server tar -xzf open.mp-linux-x86.tar.gz
+```
 
 <hr />
 

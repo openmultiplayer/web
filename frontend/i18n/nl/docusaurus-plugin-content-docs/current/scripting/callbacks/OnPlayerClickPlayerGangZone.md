@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Deze callback wordt aangeroepen wanneer een speler een player gangzone aanklikt op de pauze-menu-kaart (via rechterklik).
 
-| Naam     | Beschrijving                                         |
-| -------- | --------------------------------------------------- |
+| Naam     | Beschrijving                                           |
+| -------- | ------------------------------------------------------ |
 | playerid | Het ID van de speler die op een player gangzone klikte |
-| zoneid   | Het ID van de aangeklikte player gangzone           |
+| zoneid   | Het ID van de aangeklikte player gangzone              |
 
 ## Returns
 
@@ -38,5 +38,3 @@ public OnPlayerClickPlayerGangZone(playerid, zoneid)
 
 - [CreatePlayerGangZone](../functions/CreatePlayerGangZone): Maak een player gangzone.
 - [PlayerGangZoneDestroy](../functions/PlayerGangZoneDestroy): Vernietig een player gangzone.
-
-

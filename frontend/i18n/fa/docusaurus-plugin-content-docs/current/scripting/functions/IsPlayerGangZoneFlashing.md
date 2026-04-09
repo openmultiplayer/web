@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 چک می‌کنه که آیا player gangzone چشمک می‌زنه یا نه.
 
-| نام         | توضیحات                                                      |
-| ----------- | ------------------------------------------------------------ |
-| playerid    | ID بازیکنی که player gangzone بهش متصله.                     |
-| zoneid      | ID player gangzone.                                          |
+| نام      | توضیحات                                  |
+| -------- | ---------------------------------------- |
+| playerid | ID بازیکنی که player gangzone بهش متصله. |
+| zoneid   | ID player gangzone.                      |
 
 ## مقادیر برگشتی
 
@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerSpawn(playerid)
 {
-    // Start player gangzone flash    
+    // Start player gangzone flash
     PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0x45D1ABFF);
     return 1;
 }

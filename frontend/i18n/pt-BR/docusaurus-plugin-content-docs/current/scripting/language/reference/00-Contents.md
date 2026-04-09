@@ -43,36 +43,36 @@ Diagramado com TeX usando as fontes “Computer Modern” e “Palatino”, tama
 
 ---
 
-[Prefácio](01-Foreword) — páginas 3–5
+[Prefácio](Foreword) — páginas 3–5
 
-[Introdução guiada](02-A-tutorial-introduction) — páginas 5–62
+[Introdução guiada](A-tutorial-introduction) — páginas 5–62
 
-[Dados e declarações](03-Data-and-declarations) — páginas 62–70
+[Dados e declarações](Data-and-declarations) — páginas 62–70
 
-[Funções](04-Functions) — páginas 70–93
+[Funções](Functions) — páginas 70–93
 
-[O pré-processador](05-The-preprocessor) — páginas 93–97
+[O pré-processador](The-preprocessor) — páginas 93–97
 
-[Sintaxe geral](06-General-syntax) — páginas 97–104
+[Sintaxe geral](General-syntax) — páginas 97–104
 
-[Operadores e expressões](07-Operators-and-expressions) — páginas 104–112
+[Operadores e expressões](Operators-and-expressions) — páginas 104–112
 
-[Instruções](08-Statements) — páginas 112–117
+[Instruções](Statements) — páginas 112–117
 
-[Diretivas](09-Directives) — páginas 117–124
+[Diretivas](Directives) — páginas 117–124
 
-[Biblioteca de funções proposta](10-Proposed-function-library) — páginas 124–134
+[Biblioteca de funções proposta](Proposed-function-library) — páginas 124–134
 
-[Armadilhas: diferenças em relação ao C](11-Pitfalls-differences-from-C) — páginas 134–137
+[Armadilhas: diferenças em relação ao C](Pitfalls-differences-from-C) — páginas 134–137
 
-[Dicas variadas](12-Assorted-tips) — páginas 137–148
+[Dicas variadas](Assorted-tips) — páginas 137–148
 
-[Apêndices](13-Appendices) — páginas 148–183
+[Apêndices](Appendices) — páginas 148–183
 
-∟ [Mensagens de erro e aviso](13-Appendices#error-and-warning-messages) — páginas 148–168
+∟ [Mensagens de erro e aviso](Appendices#error-and-warning-messages) — páginas 148–168
 
-∟ [O compilador](13-Appendices#the-compiler) — páginas 168–174
+∟ [O compilador](Appendices#the-compiler) — páginas 168–174
 
-∟ [Justificativa](13-Appendices#rationale) — páginas 174–181
+∟ [Justificativa](Appendices#rationale) — páginas 174–181
 
-∟ [Licença](13-Appendices#license) — páginas 181–183
+∟ [Licença](Appendices#license) — páginas 181–183

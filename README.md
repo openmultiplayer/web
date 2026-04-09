@@ -35,7 +35,7 @@ This monorepo contains the web services and documentation for open.mp and SA-MP.
 
 ## Overview
 
-- `docs/` Wiki documentation for SA-MP and open.mp in Markdown format including translations.
+- `frontend/docs/` Wiki documentation for SA-MP and open.mp in Markdown format. Translations at `frontend/i18n/`.
 - `frontend/` [Next.js](https://nextjs.org) app for the https://open.mp site.
 - `prisma/` [Prisma](https://prisma.io/) database models for generating Go code and SQL migrations.
 - `app/` Backend API for server listings, accounts, etc.
@@ -44,7 +44,7 @@ This monorepo contains the web services and documentation for open.mp and SA-MP.
 
 To work on the frontend, you mostly only need to focus on the `frontend/` directory. Run `npm` commands in there such as `npm run dev`. See the readme file in there for more details.
 
-The only files that the frontend need that _are not_ in that directory are `docs/` which it uses to for the https://open.mp/docs pages. `.env` is not used for frontend development.
+`.env` is not used for frontend development.
 
 ## Backend/Full Stack Development
 

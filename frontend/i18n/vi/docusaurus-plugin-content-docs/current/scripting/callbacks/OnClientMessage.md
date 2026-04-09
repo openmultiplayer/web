@@ -9,10 +9,10 @@ tags: []
 
 Callback này được gọi mỗi khi NPC thấy một ClientMessage. Điều này sẽ xảy ra mỗi khi một hàm [SendClientMessageToAll](../functions/SendClientMessageToAll) được sử dụng và mỗi khi một hàm [SendClientMessage](../functions/SendClientMessage) được gửi tới NPC. Callback này sẽ không được gọi khi ai đó nói điều gì đó. Để xem phiên bản với văn bản người chơi, hãy xem [NPC:OnPlayerText](OnPlayerText).
 
-| Tên    | Mô Tả                            |
-| ------ | -------------------------------- |
-| color  | Màu sắc của ClientMessage.       |
-| text[] | Tin nhắn thực tế.                |
+| Tên    | Mô Tả                      |
+| ------ | -------------------------- |
+| color  | Màu sắc của ClientMessage. |
+| text[] | Tin nhắn thực tế.          |
 
 ## Trả Về
 

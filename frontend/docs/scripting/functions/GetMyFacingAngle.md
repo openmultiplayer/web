@@ -26,12 +26,9 @@ The facing angle is stored in the specified variable.
 ## Examples
 
 ```c
-public OnPlayerText(playerid, text[])
-{
 new Float:Angle;
 GetMyFacingAngle(Angle);
 printf("I am currently facing %f!", Angle);
-
 ```
 
 ## Related Functions

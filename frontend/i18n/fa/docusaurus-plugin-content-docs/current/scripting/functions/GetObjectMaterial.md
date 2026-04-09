@@ -1,6 +1,6 @@
 ---
 title: GetObjectMaterial
-sidebar_label: GetObjectMaterial  
+sidebar_label: GetObjectMaterial
 description: دریافت داده‌های متریال از یک شاخص از آبجکت.
 tags: ["object"]
 ---
@@ -13,16 +13,16 @@ tags: ["object"]
 
 دریافت داده‌های متریال از یک شاخص از آبجکت.
 
-| نام               | توضیحات                                                               |
-|-------------------|----------------------------------------------------------------------|
-| objectid          | شناسه آبجکت.                                                          |
-| materialIndex     | شاخص متریال روی آبجکت. (0 تا 15)                                        |
-| &modelid          | متغیری برای ذخیره شناسه مدل، به صورت مرجع ارسال می‌شود.                    |
-| textureLibrary[]  | آرایه‌ای برای ذخیره textureLibrary، به صورت مرجع ارسال می‌شود.           |
-| textureLibrarySize| اندازه textureLibrary.                                               |
-| textureName[]     | آرایه‌ای برای ذخیره textureName، به صورت مرجع ارسال می‌شود.              |
-| textureNameSize   | اندازه textureName.                                                  |
-| &materialColour   | متغیری برای ذخیره materialColour، به صورت مرجع ارسال می‌شود.            |
+| نام                | توضیحات                                                        |
+| ------------------ | -------------------------------------------------------------- |
+| objectid           | شناسه آبجکت.                                                   |
+| materialIndex      | شاخص متریال روی آبجکت. (0 تا 15)                               |
+| &modelid           | متغیری برای ذخیره شناسه مدل، به صورت مرجع ارسال می‌شود.        |
+| textureLibrary[]   | آرایه‌ای برای ذخیره textureLibrary، به صورت مرجع ارسال می‌شود. |
+| textureLibrarySize | اندازه textureLibrary.                                         |
+| textureName[]      | آرایه‌ای برای ذخیره textureName، به صورت مرجع ارسال می‌شود.    |
+| textureNameSize    | اندازه textureName.                                            |
+| &materialColour    | متغیری برای ذخیره materialColour، به صورت مرجع ارسال می‌شود.   |
 
 ## مقادیر بازگشتی
 
@@ -36,7 +36,7 @@ tags: ["object"]
 new objectid = CreateObject(19371, 978.71143, -925.25708, 42.63720,   0.00000, 0.00000, 2.00000);
 SetObjectMaterial(objectid, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
 
-new 
+new
     modelid,
     textureLibrary[16],
     textureName[16],

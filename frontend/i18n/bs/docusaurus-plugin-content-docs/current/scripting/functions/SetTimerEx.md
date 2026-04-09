@@ -9,13 +9,13 @@ tags: []
 
 Postavlja tajmer za pozivanje funkcije nakon navedenog intervala. Ova varijanta ('Ex') može proslijediti parametre (kao npr playerID) funkciji.
 
-| Ime            | Deskripcija                                                                                                                                 |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| funcname[]     | Ime javne funkcije koju treba pozvati kada istekne tajmer.                                                                                  |
-| interval       | Interval u milisekundama (1 sekunda = 1000 MS).                                                                                             |
-| repeating      | Boolean (true/false (ili 1/0)) koji navodi treba li tajmer pozivati ​​više puta (može se zaustaviti samo pomoću KillTimer) ili samo jednom. |
-| format[]       | Poseban format koji označava vrste vrijednosti koje će tajmer proći.                                                                        |
-\ \{Float, _}:... | Neograničeni broj argumenata koje treba proslijediti (mora slijediti format naveden u prethodnom parametru).                                |
+| Ime                | Deskripcija                                                                                                                                 |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| funcname[]         | Ime javne funkcije koju treba pozvati kada istekne tajmer.                                                                                  |
+| interval           | Interval u milisekundama (1 sekunda = 1000 MS).                                                                                             |
+| repeating          | Boolean (true/false (ili 1/0)) koji navodi treba li tajmer pozivati ​​više puta (može se zaustaviti samo pomoću KillTimer) ili samo jednom. |
+| format[]           | Poseban format koji označava vrste vrijednosti koje će tajmer proći.                                                                        |
+| \ \{Float, \_}:... | Neograničeni broj argumenata koje treba proslijediti (mora slijediti format naveden u prethodnom parametru).                                |
 
 ## Returns
 

@@ -9,8 +9,8 @@ tags: ["vehicle"]
 
 Remove a conexão entre um veículo e seu reboque, se houver.
 
-| Nome      | Descrição                |
-| --------- | -------------------------- |
+| Nome      | Descrição                                 |
+| --------- | ----------------------------------------- |
 | vehicleid | ID do veículo que está puxando o reboque. |
 
 ## Retornos

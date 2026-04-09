@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Bu geri çağırma, NPC sunucudan bağlantısı kesildiğinde çağrılır.
 
-| Parametre         | Açıklama                                             |
-| ------------ | ---------------------------------------------------- |
-| reason[]     | Botun sunucudan neden bağlantısının kesildiği        |
+| Parametre | Açıklama                                      |
+| --------- | --------------------------------------------- |
+| reason[]  | Botun sunucudan neden bağlantısının kesildiği |
 
 ## Örnek
 

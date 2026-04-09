@@ -8,10 +8,10 @@ tags: ["vehicle"]
 
 Este callback se llama cuando un vehículo es dejado de cargar (deja de ser visible) por el cliente de un jugador.
 
-| Nombre      | Descripción                                                  |
-| ----------- | ------------------------------------------------------------ |
-| vehicleid   | El ID del vehículo que es dejado de cargar.                  |
-| forplayerid | El ID del jugador que dejó de cargar el vehículo.		     |
+| Nombre      | Descripción                                       |
+| ----------- | ------------------------------------------------- |
+| vehicleid   | El ID del vehículo que es dejado de cargar.       |
+| forplayerid | El ID del jugador que dejó de cargar el vehículo. |
 
 ## Devoluciones
 

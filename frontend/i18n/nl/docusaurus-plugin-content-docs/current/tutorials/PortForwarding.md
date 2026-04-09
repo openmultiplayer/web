@@ -71,5 +71,3 @@ Klik OK en sluit. Start de server en check of het werkt. Voeg in de SA-MP Client
 Kopieer daar het IP op je scherm. Voeg in de SA-MP Client dat IP toe aan je favorites en plak `:JOUW_POORT` erachter (standaard: 7777). Werkt het?
 
 **GEFELICITEERD**! _Je hebt geport-forwarded!_
-
-

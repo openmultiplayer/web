@@ -9,9 +9,9 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler een pickup oppakt die gemaakt is met [CreatePickup](../functions/CreatePickup).
 
-| Naam     | Beschrijving                                                                 |
-| -------- | --------------------------------------------------------------------------- |
-| playerid | Het ID van de speler die de pickup oppakte.                                 |
+| Naam     | Beschrijving                                                                       |
+| -------- | ---------------------------------------------------------------------------------- |
+| playerid | Het ID van de speler die de pickup oppakte.                                        |
 | pickupid | Het ID van de pickup, geretourneerd door [CreatePickup](../functions/CreatePickup) |
 
 ## Returns

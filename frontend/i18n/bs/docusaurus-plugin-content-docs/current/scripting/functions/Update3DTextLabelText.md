@@ -9,11 +9,11 @@ tags: ["3dtextlabel"]
 
 Ažurira text i boju 3D Text Labela.
 
-| Ime       | Deskripcija                                     |
-| --------- | ----------------------------------------------- |
+| Ime           | Deskripcija                                     |
+| ------------- | ----------------------------------------------- |
 | Text3D:textid | 3D Text Label kojeg želite ažurirati.           |
-| color     | Boja 3D Text Labela kojeg će od sada imati.     |
-| text[]    | Novi text kojeg će 3D Text Label od sada imati. |
+| color         | Boja 3D Text Labela kojeg će od sada imati.     |
+| text[]        | Novi text kojeg će 3D Text Label od sada imati. |
 
 ## Returns
 

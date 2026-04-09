@@ -11,7 +11,7 @@ tags: ["player"]
 Este callback se llama cuando un jugador le hace daño a un actor.
 
 | Nombre          | Descripción                                             |
-|-----------------|---------------------------------------------------------|
+| --------------- | ------------------------------------------------------- |
 | playerid        | El ID del jugador que hizo daño.                        |
 | damaged_actorid | El ID del actor que recibió daño.                       |
 | Float:amount    | La cantidad de vida/chaleco que damaged_actorid perdió. |
@@ -62,4 +62,4 @@ Esta función no es llamada cuando el actor es establecido invulnerable (QUE AS�
 ## Callbacks Relacionadas
 
 - [OnActorStreamOut](OnActorStreamOut): Se llama cuando un actor es dejado de cargar por el cliente de un jugador.
-- [OnPlayerStreamIn](OnPlayerStreamIn): Se llama cuando un jugador se comienza a cargar por el cliente de otro jugador. 
+- [OnPlayerStreamIn](OnPlayerStreamIn): Se llama cuando un jugador se comienza a cargar por el cliente de otro jugador.

@@ -11,10 +11,10 @@ tags: []
 
 Dobij argument koji je proslijeđen funkciji.
 
-| Ime   | Deskripcija                                             |
-| ----- | ------------------------------------------------------- |
-| arg   | Redni broj argumenta. Koristite 0 za prvi argument.     |
-| index | Indeks (u slučaju da je argument array / niz).          |
+| Ime   | Deskripcija                                         |
+| ----- | --------------------------------------------------- |
+| arg   | Redni broj argumenta. Koristite 0 za prvi argument. |
+| index | Indeks (u slučaju da je argument array / niz).      |
 
 ## Returns
 

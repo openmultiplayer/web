@@ -13,19 +13,19 @@ tags: ["actor"]
 
 انیمیشن فعلی Actor رو می‌گیره.
 
-| اسم                | توضیح                                                                    |
-|--------------------|--------------------------------------------------------------------------|
-| actorid            | شناسه Actor که می‌خوای انیمیشنش رو بگیری.                                   |
-| animationLibrary[] | آرایه‌ای که کتابخونه انیمیشن توش ذخیره میشه، که با reference پاس داده میشه.   |
-| librarySize        | اندازه آرایه animationLibrary.                                             |
-| animationName[]    | آرایه‌ای که اسم انیمیشن توش ذخیره میشه، که با reference پاس داده میشه.        |
-| nameSize           | اندازه آرایه animationName.                                                |
-| &Float:delta       | متغیری از نوع float که مقدار delta توش ذخیره میشه، با reference پاس داده میشه. |
-| &bool:loop         | متغیری از نوع boolean که مقدار loop توش ذخیره میشه، با reference پاس داده میشه. |
-| &bool:lockX        | متغیری از نوع boolean که مقدار lockX توش ذخیره میشه، با reference پاس داده میشه. |
-| &bool:lockY        | متغیری از نوع boolean که مقدار lockY توش ذخیره میشه، با reference پاس داده میشه. |
+| اسم                | توضیح                                                                             |
+| ------------------ | --------------------------------------------------------------------------------- |
+| actorid            | شناسه Actor که می‌خوای انیمیشنش رو بگیری.                                         |
+| animationLibrary[] | آرایه‌ای که کتابخونه انیمیشن توش ذخیره میشه، که با reference پاس داده میشه.       |
+| librarySize        | اندازه آرایه animationLibrary.                                                    |
+| animationName[]    | آرایه‌ای که اسم انیمیشن توش ذخیره میشه، که با reference پاس داده میشه.            |
+| nameSize           | اندازه آرایه animationName.                                                       |
+| &Float:delta       | متغیری از نوع float که مقدار delta توش ذخیره میشه، با reference پاس داده میشه.    |
+| &bool:loop         | متغیری از نوع boolean که مقدار loop توش ذخیره میشه، با reference پاس داده میشه.   |
+| &bool:lockX        | متغیری از نوع boolean که مقدار lockX توش ذخیره میشه، با reference پاس داده میشه.  |
+| &bool:lockY        | متغیری از نوع boolean که مقدار lockY توش ذخیره میشه، با reference پاس داده میشه.  |
 | &bool:freeze       | متغیری از نوع boolean که مقدار freeze توش ذخیره میشه، با reference پاس داده میشه. |
-| &time              | متغیری که مقدار time توش ذخیره میشه، با reference پاس داده میشه.           |
+| &time              | متغیری که مقدار time توش ذخیره میشه، با reference پاس داده میشه.                  |
 
 ## مقادیر برگشتی
 
@@ -51,7 +51,7 @@ public OnGameModeInit()
         bool:lockY,
         bool:freeze,
         time;
-    
+
     GetActorAnimation(gMyActor, animationLibrary, sizeof animationLibrary, animationName, sizeof animationName, delta, loop, lockX, lockY, freeze, time);
     return 1;
 }

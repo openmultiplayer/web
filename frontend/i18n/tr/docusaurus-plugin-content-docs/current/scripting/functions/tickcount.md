@@ -11,8 +11,8 @@ tags: ["time"]
 
 Bu fonksiyon, sunucunun başlatılmasından bu yana geçen milisaniye sayısını döndürdüğü için GetTickCount'in yerine kullanılabilir.
 
-| İsim           | Açıklama                                                                                                                                                                                |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| İsim           | Açıklama                                                                                                                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | &granularity=0 | Dönüşte, bu değer, dahili sistem zamanının her saniyede kaç kez işaret edeceğini içerir. Bu değer dolayısıyla bu fonksiyonun dönüş değerinin doğruluğunu belirtir. |
 
 ## Çalışınca Vereceği Sonuçlar

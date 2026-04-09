@@ -12,7 +12,7 @@ tags: []
 Aktörün sanal dünya değerini kontrol etme.
 
 | Parametre | Açıklama                                         |
-| -------   | ------------------------------------------------ |
+| --------- | ------------------------------------------------ |
 | actorid   | Sanal dünya değeri kontrol edilecek aktör ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
@@ -31,7 +31,7 @@ public OnGameModeInit()
     return 1;
 }
 
-// Herhangi bir yere 
+// Herhangi bir yere
 if (GetActorVirtualWorld(MyActor) == 69) // Eğer aktörümüzün sanal dünya değeri 69'a eşitse...
 {
     // Birşey yap...

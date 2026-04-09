@@ -11,8 +11,8 @@ tags: ["player"]
 
 Bu geri çağırma, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
 
-| Parametre            | Açıklama                                        |
-|-----------------|-------------------------------------------------|
+| Parametre       | Açıklama                                        |
+| --------------- | ----------------------------------------------- |
 | playerid        | Hasar veren oyuncunun ID'si.                    |
 | damaged_actorid | Hasar alan NPC'nin ID'si.                       |
 | Float:amount    | Hasar alan NPC'nin kaybettiği can/zırh miktarı. |

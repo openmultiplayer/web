@@ -9,10 +9,10 @@ tags: ["player", "vehicle"]
 
 Bu geri çağırma, araçta bulunan bir oyuncu bir araçtan inmeye başladığında çağırılır.
 
-| Parametre      | Açıklama                                        |
-| --------- | ----------------------------------------------- |
-| playerid  | Araçtan inmekte olan oyuncunun ID'si.           |
-| vehicleid | Oyuncunun inmekte olduğu aracın ID'si.          |
+| Parametre | Açıklama                               |
+| --------- | -------------------------------------- |
+| playerid  | Araçtan inmekte olan oyuncunun ID'si.  |
+| vehicleid | Oyuncunun inmekte olduğu aracın ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

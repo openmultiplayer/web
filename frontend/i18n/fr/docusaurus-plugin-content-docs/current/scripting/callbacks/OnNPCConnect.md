@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Ce rappel est appelé lorsqu'un PNJ se connecte avec succès au serveur.
 
-| Nom          | Description                                         |
-| ------------ | --------------------------------------------------- |
-| myplayerid   | L'ID du joueur attribué au PNJ                     |
+| Nom        | Description                    |
+| ---------- | ------------------------------ |
+| myplayerid | L'ID du joueur attribué au PNJ |
 
 ## Exemples
 

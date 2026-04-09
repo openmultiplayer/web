@@ -9,17 +9,17 @@ tags: ["vehicle"]
 
 Membuat kendaraan di dunia. Dapat digunakan sebagai pengganti AddStaticVehicleEx kapan saja dalam skrip.
 
-| Nama                                     | Deskripsi                                                                                                                                      |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Tipe Kendaraan                              | Model dari Kendaraan                                                                                                                       |
-| Float:X                                  | Kordinat x dari kendaraan                                                                                                                |
-| Float:Y                                  | Kordinat y dari kendaraan                                                                                                                |
-| Float:Z                                  | Kordinat z dari kendaraan                                                                                                                |
-| Float:rotation                           | Sudut menghadap dari kendaraan                                                                                                                |
-| [color1](../resources/vehiclecolorid) |ID warna primer kendaraan                                                                                                                            |
-| [color2](../resources/vehiclecolorid) | ID warna sekunder                                                                                                                          |
-| respawn_delay                            | Penundaan hingga mobil respawn tanpa pengemudi dalam hitungan detik. Menggunakan -1 akan mencegah kendaraan dari respawning.                             |
-| bool:addsiren                            | Ditambahkan di 0.3.7; Tidak akan berfungsi di versi sebelumnya. Memiliki nilai bawaan 'false'. Memungkinkan kendaraan memiliki sirine, asalkan kendaraan memiliki klakson. |
+| Nama                                  | Deskripsi                                                                                                                                                                  |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tipe Kendaraan                        | Model dari Kendaraan                                                                                                                                                       |
+| Float:X                               | Kordinat x dari kendaraan                                                                                                                                                  |
+| Float:Y                               | Kordinat y dari kendaraan                                                                                                                                                  |
+| Float:Z                               | Kordinat z dari kendaraan                                                                                                                                                  |
+| Float:rotation                        | Sudut menghadap dari kendaraan                                                                                                                                             |
+| [color1](../resources/vehiclecolorid) | ID warna primer kendaraan                                                                                                                                                  |
+| [color2](../resources/vehiclecolorid) | ID warna sekunder                                                                                                                                                          |
+| respawn_delay                         | Penundaan hingga mobil respawn tanpa pengemudi dalam hitungan detik. Menggunakan -1 akan mencegah kendaraan dari respawning.                                               |
+| bool:addsiren                         | Ditambahkan di 0.3.7; Tidak akan berfungsi di versi sebelumnya. Memiliki nilai bawaan 'false'. Memungkinkan kendaraan memiliki sirine, asalkan kendaraan memiliki klakson. |
 
 ## Returns
 

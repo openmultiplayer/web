@@ -143,7 +143,7 @@
     "description": "标签列表页面的标题"
   },
   "announcement.serverVersion": {
-    "message": "open.mp服务器{version}版本已发布！包含多项修复、性能优化及新功能！"
+    "message": "open.mp服务器{version}版本已发布！包含多项修复、性能优化及新特性！"
   },
   "announcement.changelog": {
     "message": "更新日志"
@@ -161,7 +161,7 @@
     "message": "忽略此消息"
   },
   "homepage.heroDescription": {
-    "message": "为《侠盗猎车手：圣安地列斯》打造的全新多人模式模组，与{samp}实现{compatibility}。"
+    "message": "为《侠盗猎车手：圣安地列斯》打造的全新多人联机模组，与{samp}实现{compatibility}。"
   },
   "homepage.heroDescription.compatibility": {
     "message": "完全向后兼容"
@@ -177,6 +177,9 @@
   },
   "animations.title": {
     "message": "open.mp动画预览器"
+  },
+  "animations.subtitle": {
+    "message": "浏览并预览 open.mp 中所有可用的动画。"
   },
   "animations.library": {
     "message": "动作库："
@@ -267,6 +270,51 @@
   },
   "serverInfo.lastUpdated": {
     "message": "{time}前更新"
+  },
+  "downloads.server.pageTitle": {
+    "message": "open.mp 服务器"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "托管你自己的《侠盗猎车手：圣安地列斯》多人联机服务器。"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "open.mp 启动器"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "在 open.mp 和 SA-MP 服务器上游玩《侠盗猎车手：圣安地列斯》多人联机。"
+  },
+  "downloads.latestBadge": {
+    "message": "最新"
+  },
+  "downloads.releaseDate": {
+    "message": "发布于 {date}"
+  },
+  "downloads.release.highlights": {
+    "message": "亮点"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "查看完整更新日志"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "在 GitHub 上查看发布"
+  },
+  "downloads.release.github": {
+    "message": "GitHub"
+  },
+  "downloads.showOlderReleases": {
+    "message": "查看 {count} 个历史发布"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "隐藏历史发布"
+  },
+  "downloads.opensourceTrust": {
+    "message": "所有发布均为开源。从源代码编译，或直接从 GitHub 下载。"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "从 GitHub 下载"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* DynSSL 版本要求你的 Linux 发行版中已安装 libssl。"
   },
   "theme.footer.title.Documentations": {
     "message": "文档"

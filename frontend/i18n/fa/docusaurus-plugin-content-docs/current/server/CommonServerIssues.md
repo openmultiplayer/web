@@ -76,8 +76,8 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 این مشکل به طور منظم در سرورهای ویندوز هنگام تلاش برای بارگذاری پلاگینی که با نسخه بالاتری از Visual C++ runtime نسبت به آنچه در حال حاضر روی کامپیوتر شما نصب است توسعه یافته رخ می‌دهد. برای رفع این مشکل، کتابخانه‌های مناسب Microsoft Visual C++ runtime را دانلود کنید. توجه کنید که سرور SA-MP 32 bit است، بنابراین همچنین باید نسخه 32 bit (x86) از runtime را بدون توجه به معماری دانلود کنید. نسخه runtime که به طور خاص نیاز دارید با اعداد در نام فایل مشخص شده (جدول زیر را ببینید)، اگرچه نصب همه آنها ضرری ندارد. این کتابخانه‌ها stack نمی‌شوند، یا به عبارت دیگر: اگر فقط نسخه 2015 را نصب کنید، runtime های 2013 و نسخه‌های قبلی را دریافت نخواهید کرد.
 
 | شماره نسخه | Runtime                                       |
-| -------------- | --------------------------------------------- |
-| 10.0           | Microsoft Visual C++ 2010 x86 Redistributable |
-| 11.0           | Microsoft Visual C++ 2012 x86 Redistributable |
-| 12.0           | Microsoft Visual C++ 2013 x86 Redistributable |
-| 14.0           | Microsoft Visual C++ 2015 x86 Redistributable |
+| ---------- | --------------------------------------------- |
+| 10.0       | Microsoft Visual C++ 2010 x86 Redistributable |
+| 11.0       | Microsoft Visual C++ 2012 x86 Redistributable |
+| 12.0       | Microsoft Visual C++ 2013 x86 Redistributable |
+| 14.0       | Microsoft Visual C++ 2015 x86 Redistributable |

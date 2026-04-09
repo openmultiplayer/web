@@ -7,7 +7,7 @@ tags: ["administration"]
 
 ## Açıklama
 
-Sunucuda aktif olan birisini yasaklayın. Yasaklanan kişi bir daha sunucuya giremez. Yasaklanan kişi IP tabanlı yasaklanır ve sunucu dizininde bulunan samp.ban dosyasına yasaklama kaydı oluşturulur. Özel bir neden göstemrek için BanEx kullanılabilir. IP yasaklamalarını kaldırmak/eklemek için RCON gişirinizden sonra banip ve unbanip komutlar kullanılabilir. 
+Sunucuda aktif olan birisini yasaklayın. Yasaklanan kişi bir daha sunucuya giremez. Yasaklanan kişi IP tabanlı yasaklanır ve sunucu dizininde bulunan samp.ban dosyasına yasaklama kaydı oluşturulur. Özel bir neden göstemrek için BanEx kullanılabilir. IP yasaklamalarını kaldırmak/eklemek için RCON gişirinizden sonra banip ve unbanip komutlar kullanılabilir.
 
 | Parametre | Açıklama                      |
 | --------- | ----------------------------- |

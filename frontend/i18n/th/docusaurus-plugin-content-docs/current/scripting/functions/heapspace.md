@@ -18,7 +18,6 @@ Returns the amount of memory available for the heap/stack in bytes.
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

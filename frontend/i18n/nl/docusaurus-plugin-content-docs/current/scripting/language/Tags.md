@@ -76,5 +76,3 @@ stock Float:operator=(Mytag:oper)
 ### Overwrite
 
 Met `_:` kun je een tag overschrijven (detaggen) als een functie een tagloos argument verwacht. Wees voorzichtig: detaggen van `Float:` naar integer geeft onbedoelde waarden (bitpatroon i.p.v. conversie).
-
-

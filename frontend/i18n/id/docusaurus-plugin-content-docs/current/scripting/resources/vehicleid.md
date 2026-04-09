@@ -4,8 +4,8 @@ title: ID Kendaraan
 description: Sebuah daftar lengkap dari ID kendaraan
 ---
 
-| ID                                           | Deskripsi                                                                                                                                                |
-| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID                                                                        | Deskripsi                                                                                                                                                |
+| ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://assets.open.mp/assets/images/vehiclePictures/Vehicle_400.jpg) | ID Model Kendaraan: 400<br/> Nama Kendaraan: Landstalker<br/> Kategori: Off Road <br/>Modifikasi: Transfender<br/> Nama Model: landstal<br/>             |
 | ![](https://assets.open.mp/assets/images/vehiclePictures/Vehicle_401.jpg) | ID Model Kendaraan: 401<br/> Nama Kendaraan: Bravura<br/> Kategori: Sedan <br/>Modifikasi: Transfender<br/> Nama Model: bravura<br/>                     |
 | ![](https://assets.open.mp/assets/images/vehiclePictures/Vehicle_402.jpg) | ID Model Kendaraan: 402<br/> Nama Kendaraan: Buffalo<br/> Kategori: Kendaraan Olahraga <br/>Modifikasi: Transfender<br/> Nama Model: buffalo<br/>        |

@@ -11,10 +11,10 @@ tags: ["player", "object", "playerobject"]
 
 Permite aos jogadores editar um objeto de jogador (posição e rotação) com uma GUI e o mouse.
 
-| Nome     | Descrição                                         |
-| -------- | ------------------------------------------------- |
-| playerid | O ID do jogador que deve editar o objeto         |
-| objectid | O objeto a ser editado pelo jogador              |
+| Nome     | Descrição                                |
+| -------- | ---------------------------------------- |
+| playerid | O ID do jogador que deve editar o objeto |
+| objectid | O objeto a ser editado pelo jogador      |
 
 ## Retorno
 

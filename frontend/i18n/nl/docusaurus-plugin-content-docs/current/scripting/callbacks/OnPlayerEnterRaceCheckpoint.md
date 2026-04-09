@@ -9,8 +9,8 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 Deze callback wordt aangeroepen wanneer een speler een race-checkpoint binnengaat.
 
-| Naam     | Beschrijving                                      |
-| -------- | ------------------------------------------------ |
+| Naam     | Beschrijving                                            |
+| -------- | ------------------------------------------------------- |
 | playerid | Het ID van de speler die de race-checkpoint binnenging. |
 
 ## Returns

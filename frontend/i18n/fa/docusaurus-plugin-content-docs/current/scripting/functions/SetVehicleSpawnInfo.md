@@ -13,18 +13,18 @@ tags: ["vehicle"]
 
 ## پارامترها
 
-| نام               | توضیحات                                                 |
-|-------------------|-------------------------------------------------------------|
-| vehicleid         | ID ماشین.                                      |
-| modelid           | id [مدل ماشین](../resources/vehicleid) که باید تنظیم بشه.          |
-| Float:spawnX      | مختصات X که باید تنظیم بشه.                                    |
-| Float:spawnY      | مختصات Y که باید تنظیم بشه.                                    |
-| Float:spawnZ      | مختصات Z که باید تنظیم بشه.                                    |
-| Float:angle       | زاویه که باید تنظیم بشه.                                           |
+| نام               | توضیحات                                                       |
+| ----------------- | ------------------------------------------------------------- |
+| vehicleid         | ID ماشین.                                                     |
+| modelid           | id [مدل ماشین](../resources/vehicleid) که باید تنظیم بشه.     |
+| Float:spawnX      | مختصات X که باید تنظیم بشه.                                   |
+| Float:spawnY      | مختصات Y که باید تنظیم بشه.                                   |
+| Float:spawnZ      | مختصات Z که باید تنظیم بشه.                                   |
+| Float:angle       | زاویه که باید تنظیم بشه.                                      |
 | colour1           | [رنگ ماشین](../resources/vehiclecolorid) 1 که باید تنظیم بشه. |
 | colour2           | [رنگ ماشین](../resources/vehiclecolorid) 2 که باید تنظیم بشه. |
-| respawnDelay = -2 | تأخیر respawn ماشین که باید تنظیم بشه.                           |
-| interior = -2     | id interior که باید تنظیم بشه.                                     |
+| respawnDelay = -2 | تأخیر respawn ماشین که باید تنظیم بشه.                        |
+| interior = -2     | id interior که باید تنظیم بشه.                                |
 
 ## مثال‌ها
 

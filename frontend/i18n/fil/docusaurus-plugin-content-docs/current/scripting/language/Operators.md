@@ -32,14 +32,11 @@ new
     someVar[40 char];
 ```
 
-
 Gagawa ng isang array ng 10 cells na malaki.
-
 
 Para sa karagdagang impormasyon sa naka-pack na mga string basahin ang pawn-lang.pdf.
 
 ## `defined`
-
 
 Sinusuri kung mayroong isang simbolo. Karaniwang ginagamit sa #if statements:
 
@@ -77,7 +74,6 @@ public OnGameModeInit()
 
 ## `sizeof`
 
-
 Ibinabalik ang laki sa ELEMENTS ng isang array:
 
 ```c
@@ -111,7 +107,6 @@ Gives:
 Muli ito ay nauugnay sa PAWN autonoma code at sa gayon ay hindi saklaw dito.
 
 ## `tagof`
-
 
 Nagbabalik ito ng isang numero na kumakatawan sa tag ng isang variable:
 

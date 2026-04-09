@@ -9,19 +9,19 @@ tags: ["player"]
 
 Fügt eine Klasse zur Klassen-Auswahl(class-selection) hinzu. Klassen ermöglichen dem Spieler mit einem Skin ihrer Wahl zu spawnen.
 
-| Name          | Beschreibung                                                   |
-| ------------- | ------------------------------------------------------------- |
-| modelid       | Der Skin(SkinID) mit dem der Spieler spawnt.                    |
-| Float:spawn_x | Die X Koordinate des Spawnpunkts der Klasse.             |
-| Float:spawn_y | Die Y Koordinate des Spawnpunkts der Klasse.             |
-| Float:spawn_z | Die Z Koordinate des Spawnpunkts der Klasse.             |
-| Float:z_angle | Die Blickrichtung des Spawnpunktes. |
-| weapon1       | Die erste Spawn-Waffe des Spielers.                        |
-| weapon1_ammo  | Die Menge der Munition der ersten Waffe.        |
-| weapon2       | Die zweite Spawn-Waffe des Spielers.                       |
-| weapon2_ammo  | Die Menge der Munition der zweiten Waffe.         |
-| weapon3       | Die dritte Spawn-Waffe des Spielers.                        |
-| weapon3_ammo  | Die Menge der Munition der dritten Waffe.          |
+| Name          | Beschreibung                                 |
+| ------------- | -------------------------------------------- |
+| modelid       | Der Skin(SkinID) mit dem der Spieler spawnt. |
+| Float:spawn_x | Die X Koordinate des Spawnpunkts der Klasse. |
+| Float:spawn_y | Die Y Koordinate des Spawnpunkts der Klasse. |
+| Float:spawn_z | Die Z Koordinate des Spawnpunkts der Klasse. |
+| Float:z_angle | Die Blickrichtung des Spawnpunktes.          |
+| weapon1       | Die erste Spawn-Waffe des Spielers.          |
+| weapon1_ammo  | Die Menge der Munition der ersten Waffe.     |
+| weapon2       | Die zweite Spawn-Waffe des Spielers.         |
+| weapon2_ammo  | Die Menge der Munition der zweiten Waffe.    |
+| weapon3       | Die dritte Spawn-Waffe des Spielers.         |
+| weapon3_ammo  | Die Menge der Munition der dritten Waffe.    |
 
 ## Rückgabe(return value)
 

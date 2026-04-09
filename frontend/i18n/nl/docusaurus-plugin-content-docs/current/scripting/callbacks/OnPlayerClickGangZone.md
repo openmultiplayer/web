@@ -11,10 +11,10 @@ tags: ["player", "gangzone"]
 
 Deze callback wordt aangeroepen wanneer een speler een gangzone aanklikt op de pauze-menu-kaart (via rechterklik).
 
-| Naam     | Beschrijving                                |
-| -------- | ------------------------------------------- |
+| Naam     | Beschrijving                                    |
+| -------- | ----------------------------------------------- |
 | playerid | Het ID van de speler die op een gangzone klikte |
-| zoneid   | Het ID van de aangeklikte gangzone          |
+| zoneid   | Het ID van de aangeklikte gangzone              |
 
 ## Returns
 
@@ -38,5 +38,3 @@ public OnPlayerClickGangZone(playerid, zoneid)
 
 - [GangZoneCreate](../functions/GangZoneCreate): Maak een gangzone (gekleurd radargebied).
 - [GangZoneDestroy](../functions/GangZoneDestroy): Vernietig een gangzone.
-
-

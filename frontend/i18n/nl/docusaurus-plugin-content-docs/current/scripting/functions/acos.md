@@ -11,9 +11,9 @@ tags: ["math"]
 
 Geef de arc‑cosinus (inverse van cosinus) in graden.
 
-| Naam        | Beschrijving                                                  |
-| ----------- | ------------------------------------------------------------- |
-| Float:value | waarde waarvan de arc‑cosinus wordt berekend, in [-1,+1].     |
+| Naam        | Beschrijving                                              |
+| ----------- | --------------------------------------------------------- |
+| Float:value | waarde waarvan de arc‑cosinus wordt berekend, in [-1,+1]. |
 
 ## Retourneert
 
@@ -41,5 +41,3 @@ public OnGameModeInit()
 - [asin](../functions/asin)
 - [atan](../functions/atan)
 - [atan2](../functions/atan2)
-
-

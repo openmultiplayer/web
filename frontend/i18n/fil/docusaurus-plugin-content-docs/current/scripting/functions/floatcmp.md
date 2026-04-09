@@ -11,9 +11,9 @@ tags: ["math", "floating-point"]
 
 Ang floatcmp ay maaaring gamitin upang ihambing ang mga halaga ng float sa bawat isa, upang mapatunayan ang paghahambing.
 
-| Name  | Description                        |
-| ----- | ---------------------------------- |
-| oper1 | Ang unang float value na ikukumpara  |
+| Name  | Description                                |
+| ----- | ------------------------------------------ |
+| oper1 | Ang unang float value na ikukumpara        |
 | oper2 | Ang pangalawang float value na ikukumpara. |
 
 ## Returns

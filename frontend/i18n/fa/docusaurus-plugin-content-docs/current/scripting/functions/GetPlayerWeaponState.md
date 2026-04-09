@@ -9,7 +9,7 @@ tags: ["player"]
 
 وضعیت اسلحه بازیکن را بررسی می‌کنه.
 
-| نام     | توضیحات                                         |
+| نام      | توضیحات                                             |
 | -------- | --------------------------------------------------- |
 | playerid | ID بازیکنی که می‌خوای وضعیت اسلحه‌اش رو دریافت کنی. |
 
@@ -28,7 +28,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new WEAPONSTATE:state = GetPlayerWeaponState(playerid);
 
-        static weaponStates[4][64] = 
+        static weaponStates[4][64] =
         {
             "Current weapon has no ammo remaining",
             "Current weapon has a single bullet left",

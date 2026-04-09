@@ -9,16 +9,16 @@ tags: ["object", "vehicle"]
 
 Anexa um objeto a um veículo.
 
-| Nome            | Descrição                                                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nome            | Descrição                                                                                                                                          |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | objectid        | O ID do objeto a ser anexado ao veículo. Note que este é um ID de objeto, não um ID de modelo. O objeto deve ser criado com CreateObject primeiro. |
-| parentid        | O ID do veículo ao qual anexar o objeto.                                                                                                      |
-| Float:offsetX   | O deslocamento do eixo X a partir do veículo para anexar o objeto.                                                                           |
-| Float:offsetY   | O deslocamento do eixo Y a partir do veículo para anexar o objeto.                                                                           |
-| Float:offsetZ   | O deslocamento do eixo Z a partir do veículo para anexar o objeto.                                                                           |
-| Float:rotationX | O deslocamento de rotação X para o objeto.                                                                                                   |
-| Float:rotationY | O deslocamento de rotação Y para o objeto.                                                                                                   |
-| Float:rotationZ | O deslocamento de rotação Z para o objeto.                                                                                                   |
+| parentid        | O ID do veículo ao qual anexar o objeto.                                                                                                           |
+| Float:offsetX   | O deslocamento do eixo X a partir do veículo para anexar o objeto.                                                                                 |
+| Float:offsetY   | O deslocamento do eixo Y a partir do veículo para anexar o objeto.                                                                                 |
+| Float:offsetZ   | O deslocamento do eixo Z a partir do veículo para anexar o objeto.                                                                                 |
+| Float:rotationX | O deslocamento de rotação X para o objeto.                                                                                                         |
+| Float:rotationY | O deslocamento de rotação Y para o objeto.                                                                                                         |
+| Float:rotationZ | O deslocamento de rotação Z para o objeto.                                                                                                         |
 
 ## Retorno
 

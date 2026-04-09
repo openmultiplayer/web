@@ -43,36 +43,36 @@ TEX ile "Computer Modern" ve "Palatino" yazı tipleri kullanılarak 11 punto tem
 
 ---
 
-[Önsöz](01-Foreword) - Sayfa 3-5
+[Önsöz](Foreword) - Sayfa 3-5
 
-[Öğretici giriş](02-A-tutorial-introduction) - Sayfa 5-62
+[Öğretici giriş](A-tutorial-introduction) - Sayfa 5-62
 
-[Veri ve deklarasyonlar](03-Data-and-declarations) - Sayfa 62-70
+[Veri ve deklarasyonlar](Data-and-declarations) - Sayfa 62-70
 
-[Fonksiyonlar](04-Functions) - Sayfa 70-93
+[Fonksiyonlar](Functions) - Sayfa 70-93
 
-[Ön işlemci](05-The-preprocessor) - Sayfa 93-97
+[Ön işlemci](The-preprocessor) - Sayfa 93-97
 
-[Genel sözdizimi](06-General-syntax) - Sayfa 97-104
+[Genel sözdizimi](General-syntax) - Sayfa 97-104
 
-[Operatörler ve ifadeler](07-Operators-and-expressions) - Sayfa 104-112
+[Operatörler ve ifadeler](Operators-and-expressions) - Sayfa 104-112
 
-[İfadeler](08-Statements) - Sayfa 112-117
+[İfadeler](Statements) - Sayfa 112-117
 
-[Doğrudanifadeler](09-Directives) - Sayfa 117-124
+[Doğrudanifadeler](Directives) - Sayfa 117-124
 
-[Taslak fonksiyon kütüphanesi](10-Proposed-function-library) - Sayfa 124-134
+[Taslak fonksiyon kütüphanesi](Proposed-function-library) - Sayfa 124-134
 
-[Tuzaklar: C'den farklılıklar](11-Pitfalls-differences-from-C) - Sayfa 134-137
+[Tuzaklar: C'den farklılıklar](Pitfalls-differences-from-C) - Sayfa 134-137
 
-[Çeşitli ipuçları](12-Assorted-tips) - Sayfa 137-148
+[Çeşitli ipuçları](Assorted-tips) - Sayfa 137-148
 
-[Ekler](13-Appendices) - Sayfa 148-183
+[Ekler](Appendices) - Sayfa 148-183
 
-∟ [Hata ve uyarı mesajları](13-Appendices#error-and-warning-messages) - Sayfa 148-168
+∟ [Hata ve uyarı mesajları](Appendices#error-and-warning-messages) - Sayfa 148-168
 
-∟ [Derleyici](13-Appendices#the-compiler) - Sayfa 168-174
+∟ [Derleyici](Appendices#the-compiler) - Sayfa 168-174
 
-∟ [Gerekçe](13-Appendices#rationale) - Sayfa 174-181
+∟ [Gerekçe](Appendices#rationale) - Sayfa 174-181
 
-∟ [Lisans](13-Appendices#license) - Sayfa 181-183
+∟ [Lisans](Appendices#license) - Sayfa 181-183

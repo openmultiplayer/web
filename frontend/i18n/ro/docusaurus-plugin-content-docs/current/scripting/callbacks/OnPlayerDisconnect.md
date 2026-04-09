@@ -9,10 +9,10 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător se deconectează de la server.
 
-| Nume     | Descriere                                          |
-| -------- | -------------------------------------------------- |
-| playerid | ID-ul jucătorului care s-a deconectat.             |
-| reason   | Motivul deconectarii. Vezi tabelul de mai jos.     |
+| Nume     | Descriere                                      |
+| -------- | ---------------------------------------------- |
+| playerid | ID-ul jucătorului care s-a deconectat.         |
+| reason   | Motivul deconectarii. Vezi tabelul de mai jos. |
 
 ## Returnări
 
@@ -24,11 +24,11 @@ Este întotdeauna numit primul în filterscript-uri.
 
 ## Motive
 
-| ID | Motiv         | Detalii                                                                                                  |
-| -- | ------------- | -------------------------------------------------------------------------------------------------------- |
-| 0  | Timeout/Crash | Conexiunea jucătorului a fost pierdută. Fie jocul lor s-a prăbușit, fie rețeaua lor a avut o defecțiune. |
-| 1  | Quit          | Jucătorul a renunțat intenționat, fie folosind comanda /quit (/q), fie prin meniul de pauză.             |
-| 2  | Kick/Ban      | Jucătorul a fost dat afara sau interzis de server.                                                       |
+| ID  | Motiv         | Detalii                                                                                                  |
+| --- | ------------- | -------------------------------------------------------------------------------------------------------- |
+| 0   | Timeout/Crash | Conexiunea jucătorului a fost pierdută. Fie jocul lor s-a prăbușit, fie rețeaua lor a avut o defecțiune. |
+| 1   | Quit          | Jucătorul a renunțat intenționat, fie folosind comanda /quit (/q), fie prin meniul de pauză.             |
+| 2   | Kick/Ban      | Jucătorul a fost dat afara sau interzis de server.                                                       |
 
 ## Example
 

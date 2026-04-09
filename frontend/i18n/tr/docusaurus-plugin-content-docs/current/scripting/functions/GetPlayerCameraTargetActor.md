@@ -11,9 +11,9 @@ tags: ["player", "camera", "actor"]
 
 Oyuncunun baktığı aktörün (herhangi bir aktörün) ID'sini çekme.
 
-| Parametre | Açıklama                                         |
-| --------  | ------------------------------------------------ |
-| playerid  | Herhangi bir aktöre bakan oyuncunun ID'si.       |
+| Parametre | Açıklama                                   |
+| --------- | ------------------------------------------ |
+| playerid  | Herhangi bir aktöre bakan oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -63,14 +63,14 @@ public OnPlayerUpdate(playerid)
 
 :::tip
 
-Bu fonksiyon oyuncunun aktöre bakıp bakmadığı kontrol eder. 
+Bu fonksiyon oyuncunun aktöre bakıp bakmadığı kontrol eder.
 Eğer tam anlamıyla oyuncunun nişan alıp almadığını kontrol etmek için GetPlayerTargetActor fonksiyonunu kullanmanız gerekir.
 
 :::
 
 :::warning
 
-Bu fonksiyon, bant genişliğinden tasarruf etmek için varsayılan olarak devre dışı bırakılmıştır. 
+Bu fonksiyon, bant genişliğinden tasarruf etmek için varsayılan olarak devre dışı bırakılmıştır.
 Kullanılmadan önce OnPlayerConnect üzerinden EnablePlayerCameraTarget fonksiyonunu (her) oyuncu için aktif hale getirilmesi gerekiyor.
 
 :::

@@ -9,16 +9,16 @@ tags: ["3dtextlabel"]
 
 3D Metin Etiketi oluşturma.
 
-| Parametre    | Açıklama                                                              |
-| ------------ | --------------------------------------------------------------------- |
-| text[]       | Metin dizesi.                                                         |
-| color        | RGBA renk biçiminde renk kodu.                                        |
-| x            | X Koordinatı                                                          |
-| y            | Y Koordinatı                                                          |
-| z            | Z oordinatı                                                           |
-| DrawDistance | 3D Metin Etiketinin maksimum görülebileceği uzaklık.                   
-| VirtualWorld | 3D Metin Etiketinin sanal dünya değeri.                               |
-| testLOS      | 3D Metin Etiketinin nesneler arasından görülüp/görülemeyeceği.        |
+| Parametre    | Açıklama                                                       |
+| ------------ | -------------------------------------------------------------- |
+| text[]       | Metin dizesi.                                                  |
+| color        | RGBA renk biçiminde renk kodu.                                 |
+| x            | X Koordinatı                                                   |
+| y            | Y Koordinatı                                                   |
+| z            | Z oordinatı                                                    |
+| DrawDistance | 3D Metin Etiketinin maksimum görülebileceği uzaklık.           |
+| VirtualWorld | 3D Metin Etiketinin sanal dünya değeri.                        |
+| testLOS      | 3D Metin Etiketinin nesneler arasından görülüp/görülemeyeceği. |
 
 ## Çalışınca Vereceği Sonuçlar
 

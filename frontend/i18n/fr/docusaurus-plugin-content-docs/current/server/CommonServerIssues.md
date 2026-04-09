@@ -1,5 +1,5 @@
 ---
-title : Problèmes courants
+title: Problèmes courants
 ---
 
 ## Le serveur plante instantanément au démarrage
@@ -74,9 +74,9 @@ Les serveurs Windows avec un temps de disponibilité élevé peuvent également 
 
 Ce problème se produit régulièrement sur les serveurs Windows lorsque vous essayez de charger un plug-in qui a été développé à l'aide d'une version supérieure du runtime Visual C++ à celle actuellement installée sur votre ordinateur. Pour résoudre ce problème, téléchargez les bibliothèques d'exécution Microsoft Visual C++ appropriées. Notez que le serveur SA-MP est 32 bits, vous devrez donc également télécharger la version 32 bits (x86) du runtime, quelle que soit l'architecture. La version du runtime dont vous avez spécifiquement besoin est indiquée par les numéros dans le nom de fichier (voir le tableau ci-dessous), bien que cela ne fasse pas de mal de les installer tous. Ces bibliothèques ne s'empilent pas, ou en d'autres termes : vous n'obtiendrez pas les runtimes pour les versions 2013 et antérieures si vous installez uniquement la version 2015.
 
-| Numéro de version | Durée d'exécution |
-| -------------- | --------------------------------------------- |
-| 10.0 | Redistribuable Microsoft Visual C++ 2010 x86 |
-| 11.0 | Redistribuable Microsoft Visual C++ 2012 x86 |
-| 12.0 | Redistribuable Microsoft Visual C++ 2013 x86 |
-| 14.0 | Redistribuable Microsoft Visual C++ 2015 x86 |
+| Numéro de version | Durée d'exécution                            |
+| ----------------- | -------------------------------------------- |
+| 10.0              | Redistribuable Microsoft Visual C++ 2010 x86 |
+| 11.0              | Redistribuable Microsoft Visual C++ 2012 x86 |
+| 12.0              | Redistribuable Microsoft Visual C++ 2013 x86 |
+| 14.0              | Redistribuable Microsoft Visual C++ 2015 x86 |

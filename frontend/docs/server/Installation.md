@@ -70,10 +70,10 @@ If you use the following plugins in table, you must put a version of the plugin 
 
 :::
 
-| Plugin            | OMP                                                               |
-| ----------------- | ----------------------------------------------------------------- |
-| rustext           | https://github.com/ziggi/rustext/releases/tag/v2.0.11 (nomemhack) |
-| keylistener       | https://github.com/edgyaf/keylistener/releases/tag/1.1.2-pr       |
+| Plugin      | OMP                                                               |
+| ----------- | ----------------------------------------------------------------- |
+| rustext     | https://github.com/ziggi/rustext/releases/tag/v2.0.11 (nomemhack) |
+| keylistener | https://github.com/edgyaf/keylistener/releases/tag/1.1.2-pr       |
 
 :::warning
 

@@ -1,7 +1,7 @@
 ---
 title: OnPlayerExitVehicle
 sidebar_label: OnPlayerExitVehicle
-description:  Callback ini di panggil ketika pemain mulai keluar dari kendaraan.
+description: Callback ini di panggil ketika pemain mulai keluar dari kendaraan.
 tags: ["player", "vehicle"]
 ---
 
@@ -9,12 +9,10 @@ tags: ["player", "vehicle"]
 
 Callback ini di panggil ketika pemain mulai keluar dari kendaraan.
 
-| Nama      | Deskripsi                                     |
-| --------- | ----------------------------------------------- |
-| playerid  | 
-ID pemain yang keluar dari kendaraan. |
-| vehicleid | 
-ID kendaraan pemain yang keluar.    |
+| Nama      | Deskripsi                             |
+| --------- | ------------------------------------- |
+| playerid  | ID pemain yang keluar dari kendaraan. |
+| vehicleid | ID kendaraan pemain yang keluar.      |
 
 ## Returns
 

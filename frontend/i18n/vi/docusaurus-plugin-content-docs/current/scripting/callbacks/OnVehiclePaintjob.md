@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Callback này được gọi khi một người chơi xem trước lớp sơn của một xe trong cửa hàng tùy chỉnh. Lưu ý, callback này không được gọi khi người chơi mua lớp sơn.
 
-| Tên         | Mô tả                                                                 |
-|-------------|-------------------------------------------------------------------------|
-| playerid    | ID của người chơi đã thay đổi lớp sơn của xe.                         |
-| vehicleid   | ID của xe đã thay đổi lớp sơn.                                         |
-| paintjobid  | ID của lớp sơn mới.                                                     |
+| Tên        | Mô tả                                         |
+| ---------- | --------------------------------------------- |
+| playerid   | ID của người chơi đã thay đổi lớp sơn của xe. |
+| vehicleid  | ID của xe đã thay đổi lớp sơn.                |
+| paintjobid | ID của lớp sơn mới.                           |
 
 ## Trả về
 

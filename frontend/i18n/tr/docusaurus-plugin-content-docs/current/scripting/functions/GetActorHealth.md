@@ -11,10 +11,10 @@ tags: ["actor"]
 
 Aktörün can değerini çekin.
 
-| Parametre     | Açıklama                                                                        |
-| ------------- | ------------------------------------------------------------------------------- |
-| actorid       | Can değeri çekilecek aktörün ID'si.                                             |
-| &Float:health | Aktörün can değerini koruma amaçlı girilen bir float değişkeni.                 |
+| Parametre     | Açıklama                                                        |
+| ------------- | --------------------------------------------------------------- |
+| actorid       | Can değeri çekilecek aktörün ID'si.                             |
+| &Float:health | Aktörün can değerini koruma amaçlı girilen bir float değişkeni. |
 
 ## Çalışınca Vereceği Sonuçlar
 

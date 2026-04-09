@@ -9,9 +9,9 @@ tags: ["administration"]
 
 I-ban ang isang manlalaro na kasalukuyang nasa server. Hindi na sila makakasali muli sa server. Ang pagbabawal ay magiging IP-based, at mase-save sa samp.ban file sa root directory ng server. Maaaring gamitin ang BanEx upang magbigay ng dahilan para sa pagbabawal. Maaaring idagdag/alisin ang mga IP ban gamit ang RCON banip at unbanip command (SendRconCommand).
 
-| Name     | Description                  |
-| -------- | ---------------------------- |
-| playerid | Ang ID ng player na ipagbawal.|
+| Name     | Description                    |
+| -------- | ------------------------------ |
+| playerid | Ang ID ng player na ipagbawal. |
 
 ## Returns
 

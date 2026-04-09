@@ -31,6 +31,7 @@ public OnGameModeInit()
     return 1;
 }
 ```
+
 ## Funções Relacionadas
 
 - [IsNickNameCharacterAllowed](IsNickNameCharacterAllowed): Verifica se um caractere é permitido no nome de usuário.

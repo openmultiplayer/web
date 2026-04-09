@@ -11,9 +11,9 @@ tags: ["math"]
 
 Geef de arc‑sinus (inverse van sinus) in graden.
 
-| Naam        | Beschrijving                                                |
-| ----------- | ----------------------------------------------------------- |
-| Float:value | waarde waarvan de arc‑sinus wordt berekend, in [-1,+1].     |
+| Naam        | Beschrijving                                            |
+| ----------- | ------------------------------------------------------- |
+| Float:value | waarde waarvan de arc‑sinus wordt berekend, in [-1,+1]. |
 
 ## Retourneert
 
@@ -41,5 +41,3 @@ public OnGameModeInit()
 - [acos](../functions/acos)
 - [atan](../functions/atan)
 - [atan2](../functions/atan2)
-
-

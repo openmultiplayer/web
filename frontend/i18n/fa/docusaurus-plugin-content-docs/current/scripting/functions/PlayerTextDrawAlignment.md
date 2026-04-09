@@ -12,7 +12,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 | نام                       | توضیحات                                                                     |
 | ------------------------- | --------------------------------------------------------------------------- |
 | playerid                  | آی‌دی بازیکنی که player-textdraw متعلق بهش هست.                             |
-| PlayerText:textid         | آی‌دی player-textdraw که می‌خوای ترازش رو تنظیم کنی.                         |
+| PlayerText:textid         | آی‌دی player-textdraw که می‌خوای ترازش رو تنظیم کنی.                        |
 | TEXT_DRAW_ALIGN:alignment | `TEXT_DRAW_ALIGN_LEFT` / `TEXT_DRAW_ALIGN_CENTER` / `TEXT_DRAW_ALIGN_RIGHT` |
 
 ## مقادیر بازگشتی

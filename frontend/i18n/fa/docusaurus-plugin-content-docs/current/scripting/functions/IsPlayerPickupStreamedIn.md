@@ -11,10 +11,10 @@ tags: ["player", "pickup", "playerpickup"]
 
 چک می‌کنه که آیا یه player-pickup برای بازیکن stream شده یا نه.
 
-| نام      | توضیحات                      |
-|----------|------------------------------|
-| playerid | ID بازیکن.                    |
-| pickupid | ID player-pickup.            |
+| نام      | توضیحات           |
+| -------- | ----------------- |
+| playerid | ID بازیکن.        |
+| pickupid | ID player-pickup. |
 
 ## مقادیر برگشتی
 

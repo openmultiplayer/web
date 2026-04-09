@@ -8,8 +8,8 @@ description: Ova stranica ima sve dostupne skinove u SA-MP-u.
 
 Ova stranica sadrži sve dostupne skinove koje koriste funkcije [SetPlayerSkin](../functions/SetPlayerSkin) i [GetPlayerSkin](../functions/GetPlayerSkin).
 
-| Skin ID | Pregled                               | Ime Skin Modela | Skin Ime/Tip                                     | Singleplayer Lokacija                                     | Rod    |
-| ------- | ------------------------------------- | --------------- | ------------------------------------------------ | --------------------------------------------------------- | ------ |
+| Skin ID | Pregled                                                            | Ime Skin Modela | Skin Ime/Tip                                     | Singleplayer Lokacija                                     | Rod    |
+| ------- | ------------------------------------------------------------------ | --------------- | ------------------------------------------------ | --------------------------------------------------------- | ------ |
 | 0       | ![Skin ID 0](https://assets.open.mp/assets/images/skins/0.png)     | cj              | Carl "CJ" Johnson (Glavni Lik)                   | Bilo gdje                                                 | Muško  |
 | 1       | ![Skin ID 1](https://assets.open.mp/assets/images/skins/1.png)     | truth           | The Truth                                        | San Fierro and Las Venturas                               | Muško  |
 | 2       | ![Skin ID 2](https://assets.open.mp/assets/images/skins/2.png)     | maccer          | Maccer                                           | Las Venturas and Los Santos                               | Muško  |
@@ -318,8 +318,8 @@ Ovi skinovi (300 do 311) su dodati u SA-MP 0.3.7 RC3 i neće raditi u ranijim ve
 
 :::
 
-| Skin ID | Pregled                               | Ime Skin Modela | Skin Ime/Tip                                           | Singleplayer Lokacija | Rod    |
-| ------- | ------------------------------------- | --------------- | ------------------------------------------------------ | --------------------- | ------ |
+| Skin ID | Pregled                                                            | Ime Skin Modela | Skin Ime/Tip                                           | Singleplayer Lokacija | Rod    |
+| ------- | ------------------------------------------------------------------ | --------------- | ------------------------------------------------------ | --------------------- | ------ |
 | 300     | ![Skin ID 300](https://assets.open.mp/assets/images/skins/300.png) | lapdna          | Los Santos Policajac (Bez futrole)                     | -                     | Muško  |
 | 301     | ![Skin ID 301](https://assets.open.mp/assets/images/skins/301.png) | sfpdna          | San Fierro Policajac (Bez futrole)                     | -                     | Muško  |
 | 302     | ![Skin ID 302](https://assets.open.mp/assets/images/skins/302.png) | lvpdna          | Las Venturas Policajac (Bez futrole)                   | -                     | Muško  |

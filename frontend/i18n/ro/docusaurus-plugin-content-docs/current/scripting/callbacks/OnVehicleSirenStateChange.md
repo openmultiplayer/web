@@ -11,10 +11,10 @@ tags: ["vehicle"]
 
 Acest callback este apelat atunci când sirena unui vehicul este declansata.
 
-| Nume      | Descriere                                                 |
-| --------- | --------------------------------------------------------- |
-| playerid  | ID-ul jucătorului care a activat sirena (șofer).          |
-| vehicleid | ID-ul vehiculului pentru care a fost activată sirena.     |
+| Nume      | Descriere                                                  |
+| --------- | ---------------------------------------------------------- |
+| playerid  | ID-ul jucătorului care a activat sirena (șofer).           |
+| vehicleid | ID-ul vehiculului pentru care a fost activată sirena.      |
 | newstate  | 0 dacă sirena a fost oprită, 1 dacă sirena a fost pornită. |
 
 ## Returnări

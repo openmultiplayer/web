@@ -9,9 +9,9 @@ tags: ["player", "checkpoint"]
 
 Callback này được gọi khi một người chơi vào điểm kiểm tra được đặt cho người chơi đó.
 
-| Tên       | Mô Tả                                    |
-| --------- | ---------------------------------------- |
-| playerid  | Người chơi đã vào điểm kiểm tra.         |
+| Tên      | Mô Tả                            |
+| -------- | -------------------------------- |
+| playerid | Người chơi đã vào điểm kiểm tra. |
 
 ## Trả Về
 

@@ -9,10 +9,10 @@ tags: ["player"]
 
 Ang callback na ito ay natatawag kapag ang player ay nag diskonekta mula sa server.
 
-| Pangalan      | Deskripsyon                                                |
-| ------------- | ---------------------------------------------------------- |
-| playerid      | Ang ID ng player na nag diskonekta                         |
-| reason        | Ang rason ng pag diskonekta. Tignan ang table sa baba      |
+| Pangalan | Deskripsyon                                           |
+| -------- | ----------------------------------------------------- |
+| playerid | Ang ID ng player na nag diskonekta                    |
+| reason   | Ang rason ng pag diskonekta. Tignan ang table sa baba |
 
 ## Returns
 

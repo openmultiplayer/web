@@ -9,10 +9,10 @@ tags: ["npc"]
 
 Ang callback na ito ay tinatawag kapag ang isang NPC ay sumakay sa isang sasakyan.
 
-| Name         | Description                                             |
-| ------------ | ------------------------------------------------------- |
-| vehicleid    | Ang vehicle id na sinakyan ng NPC                       |
-| seatid       | Ang seatid na ginamit ng NPC                            |
+| Name      | Description                       |
+| --------- | --------------------------------- |
+| vehicleid | Ang vehicle id na sinakyan ng NPC |
+| seatid    | Ang seatid na ginamit ng NPC      |
 
 ## Examples
 

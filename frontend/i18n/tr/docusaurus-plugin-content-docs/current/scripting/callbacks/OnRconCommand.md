@@ -9,9 +9,9 @@ tags: []
 
 Bu fonksiyon, RCON oturumu açmış oyuncu RCON komutu kullandığında çağrılır. (/rcon -komut-)
 
-| Parametre | Açıklama                                                                          |
-| --------- | --------------------------------------------------------------------------------- |
-| cmd[]     | Yazılan komutu ve aktarılan parametreleri içeren bir dize.|
+| Parametre | Açıklama                                                   |
+| --------- | ---------------------------------------------------------- |
+| cmd[]     | Yazılan komutu ve aktarılan parametreleri içeren bir dize. |
 
 ## Çalışınca Verilen Sonuçlar
 
@@ -41,7 +41,6 @@ public OnRconCommand(cmd[])
 ## Notlar
 
 :::tip
-
 
 Bir oyuncu bir komut yazdığında "/rcon" "cmd" ye dahil edilmez. Burada "print" işlevini kullanırsanız, hem oyun içinde komutu yazan oyuncuya hem de günlüğe bir mesaj gönderir. Bu fonksiyon, oyuncu RCON yöneticisi olarak oturum açmadığında çağrılmaz.Oyuncu RCON yöneticisi olarak oturum açmadığında ve /rcon login kullandığında, bu fonksiyon çağrılmaz ve onun yerine OnRconLoginAttempt çağrılır. Ancak, oyuncu RCON yöneticisi olarak oturum açtığında, bu komutun kullanılması bu fonksiyonu çağıracaktır.
 

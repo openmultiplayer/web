@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Callback này được gọi khi một xe được stream đến client của người chơi.
 
-| Tên         | Mô tả                                               |
-|-------------|-----------------------------------------------------|
-| vehicleid   | ID của xe được stream đến cho người chơi.          |
-| forplayerid | ID của người chơi mà xe được stream đến.           |
+| Tên         | Mô tả                                     |
+| ----------- | ----------------------------------------- |
+| vehicleid   | ID của xe được stream đến cho người chơi. |
+| forplayerid | ID của người chơi mà xe được stream đến.  |
 
 ## Trả về
 

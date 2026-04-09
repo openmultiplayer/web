@@ -9,12 +9,12 @@ tags: ["vehicle"]
 
 Bu geri çağırma, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağazasından çıktığında çağrılır. Dikkat edin, isim yanıltabilir. Pay 'n' Spray mağazaları bu geri çağırmayı kullanamaz.
 
-| Parametre      | Açıklama                                  |
-| --------- | ----------------------------------------- |
-| playerid  | Aracı kullanan oyuncu ID'si.              |
-| vehicleid | Yeniden boyanan aracın ID'si.             |
-| color1    | Aracın değiştirildiği yeni ana rengi.     |
-| color2    | Aracın değiştirildiği yeni ikinci rengi.  |
+| Parametre | Açıklama                                 |
+| --------- | ---------------------------------------- |
+| playerid  | Aracı kullanan oyuncu ID'si.             |
+| vehicleid | Yeniden boyanan aracın ID'si.            |
+| color1    | Aracın değiştirildiği yeni ana rengi.    |
+| color2    | Aracın değiştirildiği yeni ikinci rengi. |
 
 ## Çalışınca Vereceği Sonuçlar
 

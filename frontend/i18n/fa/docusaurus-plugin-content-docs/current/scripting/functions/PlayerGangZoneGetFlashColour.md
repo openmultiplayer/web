@@ -11,10 +11,10 @@ tags: ["player", "gangzone", "playergangzone"]
 
 رنگ flash یک player gangzone رو دریافت می‌کنه.
 
-| نام        | توضیح                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| playerid    | ID بازیکنی که player gangzone به اون متصل شده.           |
-| zoneid      | ID player gangzone.                                   |
+| نام      | توضیح                                          |
+| -------- | ---------------------------------------------- |
+| playerid | ID بازیکنی که player gangzone به اون متصل شده. |
+| zoneid   | ID player gangzone.                            |
 
 ## مقادیر بازگشتی
 
@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
     // Gangzone ro be player neshan bede
     PlayerGangZoneShow(playerid, gGangZoneID[playerid], 0xFF0000FF);
 
-    // Flash player gangzone ro shoroo kon    
+    // Flash player gangzone ro shoroo kon
     PlayerGangZoneFlash(playerid, gGangZoneID[playerid], 0x45D1ABFF);
 
     new flashColour = PlayerGangZoneGetFlashColour(playerid, gGangZoneID[playerid]);

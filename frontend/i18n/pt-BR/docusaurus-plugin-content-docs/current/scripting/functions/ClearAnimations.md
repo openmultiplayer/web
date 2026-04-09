@@ -9,9 +9,9 @@ tags: ["player", "animation"]
 
 Limpa todas as animações para o jogador especificado (também cancela todas as tarefas atuais como jetpack, paraquedas, entrar em veículos, dirigir (remove o jogador do veículo), nadar, etc).
 
-| Nome                 | Descrição                                                                                                            |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| playerid             | O ID do jogador para limpar as animações.                                                                           |
+| Nome                 | Descrição                                                                                                                           |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| playerid             | O ID do jogador para limpar as animações.                                                                                           |
 | FORCE_SYNC:forceSync | Defina como `SYNC_ALL` para forçar o playerid a sincronizar a animação com outros jogadores no raio de streaming (padrão=SYNC_NONE) |
 
 ## Retorno

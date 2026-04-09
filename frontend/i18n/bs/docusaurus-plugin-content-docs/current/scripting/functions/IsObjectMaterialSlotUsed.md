@@ -11,10 +11,10 @@ tags: ["object"]
 
 Provjerava da li je slot objekta materijala zauzet.
 
-| Ime           | Deskripcija                                 |
-|---------------|---------------------------------------------|
-| objectid      | ID objekta.                                 |
-| materialIndex | Indeks materijala na objektu. (0 do 15)     |
+| Ime           | Deskripcija                             |
+| ------------- | --------------------------------------- |
+| objectid      | ID objekta.                             |
+| materialIndex | Indeks materijala na objektu. (0 do 15) |
 
 ## Returns
 

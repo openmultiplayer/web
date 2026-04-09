@@ -11,10 +11,10 @@ tags: ["player", "pickup", "playerpickup"]
 
 Ce rappel est appelé lorsque qu'un objet joueur-pickup entre dans la portée visuelle du joueur.
 
-| Nom       | Description                                                                                    |
-|----------|------------------------------------------------------------------------------------------------|
+| Nom      | Description                                                                                       |
+| -------- | ------------------------------------------------------------------------------------------------- |
 | pickupid | L'ID de l'objet joueur-pickup, retourné par [CreatePlayerPickup](../functions/CreatePlayerPickup) |
-| playerid | L'ID du joueur dans la portée visuelle duquel l'objet joueur-pickup entre.                     |
+| playerid | L'ID du joueur dans la portée visuelle duquel l'objet joueur-pickup entre.                        |
 
 ## Retours
 

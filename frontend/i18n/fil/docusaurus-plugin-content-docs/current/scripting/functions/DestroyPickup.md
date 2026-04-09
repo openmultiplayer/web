@@ -9,9 +9,9 @@ tags: []
 
 Sinisira ang isang pickup na ginawa gamit ang CreatePickup.
 
-| Name   | Description                                                 |
-| ------ | ----------------------------------------------------------- |
-| pickup | Ang ID ng pickup na sisirain (nirereturn ng CreatePickup).  |
+| Name   | Description                                                |
+| ------ | ---------------------------------------------------------- |
+| pickup | Ang ID ng pickup na sisirain (nirereturn ng CreatePickup). |
 
 ## Returns
 

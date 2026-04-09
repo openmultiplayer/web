@@ -9,13 +9,13 @@ tags: ["player"]
 
 Ovaj callback je pozvan kada igrač zadaje povredu drugom igraču.
 
-| Ime             | Deskripcija                                                                                                                 |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------------|
-| playerid        | ID igrača koji tadaje povredu.                                                                                              |
-| damagedid       | ID igrača koji prima povredu.                                                                                               |
-| Float:amount    | Količina healtha i armora kojeg je izgubio (kombinirano).                                                                   |
-| WEAPON:weaponid | Razlog zbog kojeg je zadobio povredu.                                                                                       |
-| bodypart        | Dio tijela koji je udaren. |
+| Ime             | Deskripcija                                               |
+| --------------- | --------------------------------------------------------- |
+| playerid        | ID igrača koji tadaje povredu.                            |
+| damagedid       | ID igrača koji prima povredu.                             |
+| Float:amount    | Količina healtha i armora kojeg je izgubio (kombinirano). |
+| WEAPON:weaponid | Razlog zbog kojeg je zadobio povredu.                     |
+| bodypart        | Dio tijela koji je udaren.                                |
 
 ## Returns
 

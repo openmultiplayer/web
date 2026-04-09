@@ -9,8 +9,8 @@ tags: ["player"]
 
 دریافت پینگ بازیکن. پینگ مقدار زمانی را اندازه‌گیری می‌کند که طول می‌کشد تا سرور کلاینت را 'ping' کند و کلاینت پیام را بازگرداند.
 
-| نام     | توضیحات                              |
-| -------- | ---------------------------------------- |
+| نام      | توضیحات                      |
+| -------- | ---------------------------- |
 | playerid | ID بازیکن برای دریافت پینگش. |
 
 ## مقادیر برگشتی
@@ -61,7 +61,7 @@ public Ping_Timer(playerid)
         new string[128];
         format(string, sizeof(string), "You have been kicked from the server. Reason: high ping (%d)", ping);
         SendClientMessage(playerid, -1, string);
-        
+
         Kick(playerid);
     }
     return 1;

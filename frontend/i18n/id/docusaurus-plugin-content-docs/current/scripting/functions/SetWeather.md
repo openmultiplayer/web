@@ -9,9 +9,9 @@ tags: []
 
 Mengatur cuaca untuk semua player.
 
-| Nama      | Deskripsi                                      |
-| --------- | ------------------------------------------------ |
-| weatherid | ID [cuaca](../resources/weatherid)|
+| Nama      | Deskripsi                          |
+| --------- | ---------------------------------- |
+| weatherid | ID [cuaca](../resources/weatherid) |
 
 ## Returns
 

@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Acest callback este apelat atunci când un vehicul este modificat.
 
-| Nume        | Descriere                                               |
-| ----------- | ------------------------------------------------------- |
-| playerid    | Actul de identitate al șoferului vehiculului.           |
-| vehicleid   | ID-ul vehiculului care este modificat.                  |
-| componentid | ID-ul componentei care a fost adăugată vehiculului.     |
+| Nume        | Descriere                                           |
+| ----------- | --------------------------------------------------- |
+| playerid    | Actul de identitate al șoferului vehiculului.       |
+| vehicleid   | ID-ul vehiculului care este modificat.              |
+| componentid | ID-ul componentei care a fost adăugată vehiculului. |
 
 ## Returnări
 

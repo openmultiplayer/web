@@ -18,7 +18,6 @@ Gets the highest actorid created on the server.
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

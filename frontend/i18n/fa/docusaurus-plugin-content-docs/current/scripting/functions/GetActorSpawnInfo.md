@@ -13,14 +13,14 @@ tags: ["actor"]
 
 نقطه spawn اولیه Actor رو می‌گیره.
 
-| اسم               | توضیح                                                                    |
-|-------------------|--------------------------------------------------------------------------|
-| actorid           | شناسه Actor که می‌خوای نقطه spawn ش رو بگیری                                |
-| &skin             | متغیری که اسکین توش ذخیره میشه، که با reference پاس داده میشه.              |
+| اسم               | توضیح                                                                             |
+| ----------------- | --------------------------------------------------------------------------------- |
+| actorid           | شناسه Actor که می‌خوای نقطه spawn ش رو بگیری                                      |
+| &skin             | متغیری که اسکین توش ذخیره میشه، که با reference پاس داده میشه.                    |
 | &Float:spawnX     | متغیری از نوع float که مختصات X spawn توش ذخیره میشه، با reference پاس داده میشه. |
 | &Float:spawnY     | متغیری از نوع float که مختصات Y spawn توش ذخیره میشه، با reference پاس داده میشه. |
 | &Float:spawnZ     | متغیری از نوع float که مختصات Z spawn توش ذخیره میشه، با reference پاس داده میشه. |
-| &Float:spawnAngle | متغیری از نوع float که زاویه spawn توش ذخیره میشه، با reference پاس داده میشه.   |
+| &Float:spawnAngle | متغیری از نوع float که زاویه spawn توش ذخیره میشه، با reference پاس داده میشه.    |
 
 ## مقادیر برگشتی
 
@@ -42,7 +42,7 @@ public OnGameModeInit()
         Float:spawnY,
         Float:spawnZ,
         Float:spawnAngle;
-    
+
     GetActorSpawnInfo(gMyActor, skin, spawnX, spawnY, spawnZ, spawnAngle);
     return 1;
 }

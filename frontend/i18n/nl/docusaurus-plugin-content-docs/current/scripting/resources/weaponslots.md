@@ -24,5 +24,3 @@ Gebruikt door [GetWeaponSlot](../functions/GetWeaponSlot) en [GetPlayerWeaponDat
 | WEAPON_SLOT_GIFT          | 10     |
 | WEAPON_SLOT_GADGET        | 11     |
 | WEAPON_SLOT_DETONATOR     | 12     |
-
-

@@ -9,18 +9,18 @@ tags: ["player", "object"]
 
 این کالبک زمانی فراخوانده می‌شود که یک بازیکن ویرایش یک آبجکت را تمام کند ([BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)).
 
-| نام                    | توضیحات                                                         |
-| ---------------------- | --------------------------------------------------------------- |
-| playerid               | شناسه بازیکنی که آبجکت را ویرایش کرده است                        |
-| playerobject           | 0 اگر یک global object باشد یا 1 اگر یک playerobject باشد.    |
-| objectid               | شناسه آبجکت ویرایش شده                                           |
-| EDIT_RESPONSE:response | [نوع پاسخ](../resources/objecteditionresponsetypes)             |
-| Float:fX               | آفست X برای آبجکتی که ویرایش شده است                           |
-| Float:fY               | آفست Y برای آبجکتی که ویرایش شده است                           |
-| Float:fZ               | آفست Z برای آبجکتی که ویرایش شده است                           |
-| Float:fRotX            | چرخش X برای آبجکتی که ویرایش شده است                          |
-| Float:fRotY            | چرخش Y برای آبجکتی که ویرایش شده است                          |
-| Float:fRotZ            | چرخش Z برای آبجکتی که ویرایش شده است                          |
+| نام                    | توضیحات                                                    |
+| ---------------------- | ---------------------------------------------------------- |
+| playerid               | شناسه بازیکنی که آبجکت را ویرایش کرده است                  |
+| playerobject           | 0 اگر یک global object باشد یا 1 اگر یک playerobject باشد. |
+| objectid               | شناسه آبجکت ویرایش شده                                     |
+| EDIT_RESPONSE:response | [نوع پاسخ](../resources/objecteditionresponsetypes)        |
+| Float:fX               | آفست X برای آبجکتی که ویرایش شده است                       |
+| Float:fY               | آفست Y برای آبجکتی که ویرایش شده است                       |
+| Float:fZ               | آفست Z برای آبجکتی که ویرایش شده است                       |
+| Float:fRotX            | چرخش X برای آبجکتی که ویرایش شده است                       |
+| Float:fRotY            | چرخش Y برای آبجکتی که ویرایش شده است                       |
+| Float:fRotZ            | چرخش Z برای آبجکتی که ویرایش شده است                       |
 
 ## مقادیر برگشتی
 

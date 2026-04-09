@@ -11,11 +11,11 @@ tags: ["player", "object", "playerobject"]
 
 چک می‌کنه که آیا یه اسلات از player-object material استفاده شده یا نه.
 
-| نام           | توضیحات                                        |
-|---------------|-------------------------------------------------|
-| playerid      | ID بازیکن.                                      |
-| objectid      | ID player-object.                               |
-| materialIndex | ایندکس material روی آبجکت. (0 تا 15)           |
+| نام           | توضیحات                              |
+| ------------- | ------------------------------------ |
+| playerid      | ID بازیکن.                           |
+| objectid      | ID player-object.                    |
+| materialIndex | ایندکس material روی آبجکت. (0 تا 15) |
 
 ## مقادیر برگشتی
 

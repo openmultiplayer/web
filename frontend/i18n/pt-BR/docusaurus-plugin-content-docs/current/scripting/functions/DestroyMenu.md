@@ -1,5 +1,4 @@
 ---
-
 title: DestroyMenu
 sidebar_label: DestroyMenu
 description: Destroi o menu especificado.
@@ -10,8 +9,8 @@ tags: ["menu"]
 
 Destrói o menu indicado.
 
-| Nome         | Descrição               |
-| ------------ | ----------------------- |
+| Nome        | Descrição               |
+| ----------- | ----------------------- |
 | Menu:menuid | O ID do menu a destruir |
 
 ## retorno
@@ -30,11 +29,11 @@ DestroyMenu(exampleMenu);
 
 ## funções relacionadas
 
-* [CreateMenu](CreateMenu): Cria um menu.
-* [SetMenuColumnHeader](SetMenuColumnHeader): Define o cabeçalho de uma coluna do menu.
-* [AddMenuItem](AddMenuItem): Adiciona um item ao menu.
+- [CreateMenu](CreateMenu): Cria um menu.
+- [SetMenuColumnHeader](SetMenuColumnHeader): Define o cabeçalho de uma coluna do menu.
+- [AddMenuItem](AddMenuItem): Adiciona um item ao menu.
 
 ## callbacks relacionados
 
-* [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Chamado quando um jogador escolhe uma linha no menu.
-* [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Chamado quando um jogador sai do menu.
+- [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow): Chamado quando um jogador escolhe uma linha no menu.
+- [OnPlayerExitedMenu](../callbacks/OnPlayerExitedMenu): Chamado quando um jogador sai do menu.

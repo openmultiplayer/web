@@ -1,19 +1,19 @@
 ---
 title: OnActorStreamOut
 sidebar_label: OnActorStreamOut
-description: 当角色被玩家客户端流卸载时触发此回调。
-tags: ["角色"]
+description: 当演员被玩家客户端流卸载时触发此回调。
+tags: ["演员"]
 ---
 
 <VersionWarnZH_CN name='回调' version='SA-MP 0.3.7' />
 
 ## 描述
 
-当角色被玩家客户端流卸载时触发此回调。
+当演员被玩家客户端流卸载时触发此回调。
 
 | 参数        | 说明                   |
 | ----------- | ---------------------- |
-| actorid     | 已为玩家流卸载的角色ID |
+| actorid     | 已为玩家流卸载的演员ID |
 | forplayerid | 触发流卸载操作的玩家ID |
 
 ## 返回值
@@ -26,7 +26,7 @@ tags: ["角色"]
 public OnActorStreamOut(actorid, forplayerid)
 {
     new string[48];
-    format(string, sizeof(string), "角色 %d 已为你完成流卸载。", actorid);
+    format(string, sizeof(string), "演员 %d 已为你完成流卸载。", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
@@ -40,4 +40,4 @@ public OnActorStreamOut(actorid, forplayerid)
 
 以下回调可能与当前回调存在关联：
 
-- [OnActorStreamIn](OnActorStreamIn): 当角色被玩家客户端流加载时触发
+- [OnActorStreamIn](OnActorStreamIn): 当演员被玩家客户端流加载时触发

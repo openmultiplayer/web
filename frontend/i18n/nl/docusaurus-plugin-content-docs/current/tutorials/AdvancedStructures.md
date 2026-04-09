@@ -171,5 +171,3 @@ Een gebalanceerde boom houdt de dieptes ongeveer gelijk; ongebalanceerde bomen k
 #### Aanpassen (toevoegen/verwijderen)
 
 Toevoegen: volg links/rechts tot een lege tak en plaats de waarde. Verwijderen: makkelijk bij een blad of één kind; lastiger bij twee kinderen (diverse strategieën zoals vervangen door opvolger/voorloper of herbouwen van subboom).
-
-

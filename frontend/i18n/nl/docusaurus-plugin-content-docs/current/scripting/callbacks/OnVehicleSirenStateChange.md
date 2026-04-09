@@ -11,10 +11,10 @@ tags: ["vehicle"]
 
 Deze callback wordt aangeroepen wanneer de sirene van een voertuig wordt omgeschakeld.
 
-| Naam      | Beschrijving                                               |
-| --------- | --------------------------------------------------------- |
-| playerid  | Het ID van de speler die de sirene omschakelde (bestuurder). |
-| vehicleid | Het ID van het voertuig waarvoor de sirene werd omgeschakeld. |
+| Naam      | Beschrijving                                                     |
+| --------- | ---------------------------------------------------------------- |
+| playerid  | Het ID van de speler die de sirene omschakelde (bestuurder).     |
+| vehicleid | Het ID van het voertuig waarvoor de sirene werd omgeschakeld.    |
 | newstate  | 0 als sirene werd uitgeschakeld, 1 als sirene werd ingeschakeld. |
 
 ## Returns

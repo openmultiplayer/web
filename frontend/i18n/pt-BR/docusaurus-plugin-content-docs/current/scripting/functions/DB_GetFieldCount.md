@@ -9,8 +9,8 @@ tags: ["sqlite"]
 
 A função obtém o número de campos do conjunto de resultados especificado alocado com [DB_ExecuteQuery](DB_ExecuteQuery).
 
-| Nome              | Descrição                                         |
-| ----------------- | ------------------------------------------------- |
+| Nome              | Descrição                                          |
+| ----------------- | -------------------------------------------------- |
 | DBResult:dbresult | O resultado de [DB_ExecuteQuery](DB_ExecuteQuery). |
 
 ## Retorno

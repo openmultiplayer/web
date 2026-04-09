@@ -16,7 +16,6 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocomplet a Visual Studio Code-hoz.
 - **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Zóna szerkesztő a terület és egyéb dolgok készítéséhez.
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - Népszerű térkép szerkesztő SA:MP-hoz.
-- **[open.mp Server Browser](https://github.com/adib-yg/openmp-server-browser)** - open.mp szerverkereső grafikus felhasználói felülete.
 
 ## Könyvtárak
 
@@ -98,7 +97,7 @@ description: Az SA-MP fejlesztéséhez hasznos eszközök, könyvtárak és bőv
 - **[IRC Plugin](https://github.com/samp-incognito/samp-irc-plugin)** - Lehetővé teszi IRC botok létrehozását és kezelését az SA-MP szerveren keresztül.
 - **[pawn-requests](https://github.com/Southclaws/pawn-requests)** - Egy API-t biztosít az HTTP(S) API-val való interakcióhoz, szöveges és JSON adattípusok támogatásával.
 - **[pawn-redis](https://github.com/Southclaws/pawn-redis)** - Hozzáférést biztosít egy gyors memóriadatbázishoz és aszinkron üzenetcsatornákhoz más programok között.
-- **[Chrono](https://github.com/Southclaws/pawn-chrono)** -  Egy modern Pawn könyvtár a dátumok és idők kezeléséhez.
+- **[Chrono](https://github.com/Southclaws/pawn-chrono)** - Egy modern Pawn könyvtár a dátumok és idők kezeléséhez.
 - **[rustext](https://github.com/ziggi/rustext)** - Orosz szöveg javító bővítmény a SA-MP-hez: GameText, TextDraw és Menük.
 - **[Advanced SA NickName](https://github.com/KrYpToDeN/Advanced-SA-NickName)** - Támogatás bármilyen szimbólum használatához a becenevekben.
 - **[SAMPSON](https://github.com/Hual/SAMPSON)** - Egy JSON bővítmény az SA-MP-hez.
@@ -151,7 +150,7 @@ Most már készítheted szkriptjeidet a pawn nyelven kívül más nyelveken is a
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - A GTA San Andreas térképének textúra hibajavításai.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Egy animáció böngésző eszköz az SA:MP-hez.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Ellenőrzi, hogy egy játékos Android felhasználó-e.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Egy TextDraw szerkesztő, amely számos gazdag funkciót kínál.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Egy TextDraw szerkesztő, amely számos gazdag funkciót kínál.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Fejlett térképszerkesztő sok funkcióval.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - Egy In-Game térképszerkesztő az SA:MP-hez.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Ez egy In-Game térképszerkesztő, amely lehetővé teszi, hogy textúrázza az anyag index 15-ig (16 anyag), valamint beállítsa a színét az adott anyag indexre az objektumokon.

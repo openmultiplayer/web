@@ -9,13 +9,13 @@ tags: ["player"]
 
 Esta callback é chama quando algum jogador recebe dano.
 
-| Nome            | Descreição                                                                                                                                                       |
-|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| playerid        | O ID do jogador que recebeu determinado dano.                                                                                                                    |
-| issuerid        | O ID do jogador que causou o dano. INVALID_PLAYER_ID se o dano for auto-infligido.                                                                               |
-| Float:amount    | A quantidade de dano total que o jogador recebey (vida e colete combinados).                                                                                     |
-| WEAPON:weaponid | O ID da arma/razão do determinado dano.                                                                                                                          |
-| bodypart        | A [Parte do Corpo](../resources/bodyparts) que foi atingida. |
+| Nome            | Descreição                                                                         |
+| --------------- | ---------------------------------------------------------------------------------- |
+| playerid        | O ID do jogador que recebeu determinado dano.                                      |
+| issuerid        | O ID do jogador que causou o dano. INVALID_PLAYER_ID se o dano for auto-infligido. |
+| Float:amount    | A quantidade de dano total que o jogador recebey (vida e colete combinados).       |
+| WEAPON:weaponid | O ID da arma/razão do determinado dano.                                            |
+| bodypart        | A [Parte do Corpo](../resources/bodyparts) que foi atingida.                       |
 
 ## Retornos
 
@@ -24,7 +24,6 @@ Esta callback é chama quando algum jogador recebe dano.
 0 - Permite que esta Callback seja chamada em outro filterscript.
 
 Sempre é chamada primeiro em filterscripts, portanto retornar 1 bloqueará que outro filterscript a veja.
-
 
 ## Exemplos
 

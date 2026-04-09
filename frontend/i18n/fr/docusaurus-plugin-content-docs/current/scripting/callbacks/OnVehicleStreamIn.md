@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Cette callback est appelée lorsqu'un véhicule est chargé (devient visible) pour un joueur.
 
-| Nom              | Description                                |
-| ----------------- | ----------------------------------------- |
-| `int` vehicleid   | L'ID du véhicule chargé par le joueur.    |
-| `int` forplayerid | L'ID du joueur qui a chargé le véhicule.  |
+| Nom               | Description                              |
+| ----------------- | ---------------------------------------- |
+| `int` vehicleid   | L'ID du véhicule chargé par le joueur.   |
+| `int` forplayerid | L'ID du joueur qui a chargé le véhicule. |
 
 ## Valeur de retour
 

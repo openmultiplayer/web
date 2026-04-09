@@ -51,7 +51,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_Shoot](NPC_Shoot): 让 NPC 射击
 - [NPC_AimAt](NPC_AimAt): 让 NPC 瞄准并射击
-- [NPC_StopShoot](NPC_StopShoot): 停止 NPC 射击
 - [NPC_IsAiming](NPC_IsAiming): 检查是否正在瞄准
 
 ## 相关回调

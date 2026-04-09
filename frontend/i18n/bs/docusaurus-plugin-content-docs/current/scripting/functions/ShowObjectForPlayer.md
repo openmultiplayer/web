@@ -9,14 +9,14 @@ tags: ["player", "object"]
 
 ## Deskripcija
 
-Prikazuje objekat igraču koji je sakriven sa [HideObjectForPlayer](HideObjectForPlayer) funkcijom. 
+Prikazuje objekat igraču koji je sakriven sa [HideObjectForPlayer](HideObjectForPlayer) funkcijom.
 
 ## Parametri
 
-| Ime      | Deskripcija                              |
-|----------|------------------------------------------|
-| playerid | ID igrača.                               |
-| objectid | ID objekta da se prikaže igraču.         |
+| Ime      | Deskripcija                      |
+| -------- | -------------------------------- |
+| playerid | ID igrača.                       |
+| objectid | ID objekta da se prikaže igraču. |
 
 ## Returnovi
 

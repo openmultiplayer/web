@@ -17,12 +17,12 @@ tags: ["player", "3dtextlabel"]
 
 دیتای attached یک 3D text label بازیکن رو می‌گیره.
 
-| اسم      | توضیح                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| playerid | شناسه بازیکن.  |
-| PlayerText3D:textid | شناسه 3D text label بازیکن که می‌خوای دیتای attachedش رو بگیری. |
-| &parentPlayerid | متغیری که parentPlayerid توش ذخیره میشه، با reference پاس داده میشه. |
-| &parentVehicleid | متغیری که parentVehicleid توش ذخیره میشه، با reference پاس داده میشه. |
+| اسم                 | توضیح                                                                 |
+| ------------------- | --------------------------------------------------------------------- |
+| playerid            | شناسه بازیکن.                                                         |
+| PlayerText3D:textid | شناسه 3D text label بازیکن که می‌خوای دیتای attachedش رو بگیری.       |
+| &parentPlayerid     | متغیری که parentPlayerid توش ذخیره میشه، با reference پاس داده میشه.  |
+| &parentVehicleid    | متغیری که parentVehicleid توش ذخیره میشه، با reference پاس داده میشه. |
 
 ## مثال‌ها
 

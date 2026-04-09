@@ -9,10 +9,10 @@ tags: ["player"]
 
 Ang function na ito ay nagbibigay-daan upang i-set ang mga player ng special action.
 
-| Name     | Description                                                            |
-| -------- | ---------------------------------------------------------------------- |
-| playerid | Ang player na magsasagawa ng action.                                   |
-| actionid | Ang [action](../resources/specialactions) na dapat maisagawa.          |
+| Name     | Description                                                   |
+| -------- | ------------------------------------------------------------- |
+| playerid | Ang player na magsasagawa ng action.                          |
+| actionid | Ang [action](../resources/specialactions) na dapat maisagawa. |
 
 ## Returns
 

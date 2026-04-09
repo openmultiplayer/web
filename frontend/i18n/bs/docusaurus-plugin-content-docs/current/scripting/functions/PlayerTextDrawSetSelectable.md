@@ -10,7 +10,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 Omogućuje/onemogućuje da li player-textdraw može biti selektovan ili ne.
 
 | Ime             | Deskripcija                                                                                             |
-|-----------------|---------------------------------------------------------------------------------------------------------|
+| --------------- | ------------------------------------------------------------------------------------------------------- |
 | playerid        | ID igrača čiji player-textdraw se (ne)može selektovati.                                                 |
 | PlayerText:text | ID player-textdrawa za postaviti selektabilnost.                                                        |
 | bool:set        | Postavi da je player-textdraw selektabilan (true) ili ne (false). Po zadanim postavkama ovo je (false). |

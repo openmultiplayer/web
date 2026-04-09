@@ -26,4 +26,4 @@ Creio que o ponto forte do pawn não está em um recurso isolado, e sim na combi
 
 ---
 
-[Voltar ao sumário](00-Contents)
+[Voltar ao sumário](Contents)

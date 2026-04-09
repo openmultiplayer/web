@@ -9,8 +9,8 @@ tags: ["player"]
 
 Acest callback este apelat de fiecare dată când un client/jucător actualizează serverul cu starea lor. Este adesea folosit pentru a crea apeluri personalizate pentru actualizările clientului care nu sunt urmărite activ de server, cum ar fi actualizările de sănătate sau armuri sau jucătorii care schimbă arme.
 
-| Name     | Descriere                                  |
-| -------- | ------------------------------------------ |
+| Name     | Descriere                                                |
+| -------- | -------------------------------------------------------- |
 | playerid | ID-ul jucătorului care trimite un pachet de actualizare. |
 
 ## Returnări

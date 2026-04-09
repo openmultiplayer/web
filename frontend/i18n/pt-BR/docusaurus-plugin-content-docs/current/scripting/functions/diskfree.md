@@ -19,8 +19,8 @@ Esta função ainda não foi implementada.
 
 Retorna o espaço livre em disco.
 
-| Nome                | Descrição                                                                                                                        |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Nome                | Descrição                                                                                                                   |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | const volume[] = "" | O nome do volume em sistemas que suportam múltiplos discos ou cartões de memória. Em sistemas com volume único, é opcional. |
 
 ## Retornos

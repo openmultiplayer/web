@@ -8,16 +8,16 @@ tags: ["npc"]
 ## Deskripcija
 
 Dobij poziciju NPC-a
- 
-| Ime       | Deskripcija                                               |
-| --------- | --------------------------------------------------------- |
-| &Float:x  | Float za spremanje X koordinate, proslijeđen referencom.  |
-| &Float:y  | Float za spremanje Y koordinate, proslijeđen referencom. |
-| &Float:z  | Float za spremanje Z koordinate, proslijeđen referencom. |
+
+| Ime      | Deskripcija                                              |
+| -------- | -------------------------------------------------------- |
+| &Float:x | Float za spremanje X koordinate, proslijeđen referencom. |
+| &Float:y | Float za spremanje Y koordinate, proslijeđen referencom. |
+| &Float:z | Float za spremanje Z koordinate, proslijeđen referencom. |
 
 ## Returns
 
-Ova funkcija ne returna (ne vraća) nikakve specifične vrijednosti. 
+Ova funkcija ne returna (ne vraća) nikakve specifične vrijednosti.
 
 ## Primjer
 

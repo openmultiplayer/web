@@ -4,8 +4,8 @@ title: Ikon Peta
 description: Daftar Ikon Peta
 ---
 
-| ID  | Ikon                             | Nama                              |
-| --- | -------------------------------- | --------------------------------- |
+| ID  | Ikon                                                          | Nama                              |
+| --- | ------------------------------------------------------------- | --------------------------------- |
 | 0   | ![](https://assets.open.mp/assets/images/mapIcons/icon0.gif)  | Kotak/Segitiga Berwarna (Dinamis) |
 | 1   | ![](https://assets.open.mp/assets/images/mapIcons/icon1.gif)  | Kotak Putih                       |
 | 2   | ![](https://assets.open.mp/assets/images/mapIcons/icon2.gif)  | Posisi Pemain                     |

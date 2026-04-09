@@ -11,12 +11,12 @@ tags: ["string"]
 
 Formatteert een string met variabelen en andere strings.
 
-| Naam           | Beschrijving                             |
-| -------------- | ---------------------------------------- |
-| output[]       | Buffer voor de uitvoer                    |
-| len            | Maximale lengte van `output`              |
-| const format[] | De format‑string                          |
-| \{Float, _\}:... | Onbeperkt aantal argumenten, diverse tags |
+| Naam              | Beschrijving                              |
+| ----------------- | ----------------------------------------- |
+| output[]          | Buffer voor de uitvoer                    |
+| len               | Maximale lengte van `output`              |
+| const format[]    | De format‑string                          |
+| \{Float, \_\}:... | Onbeperkt aantal argumenten, diverse tags |
 
 ## Retourneert
 
@@ -24,16 +24,16 @@ Geen specifieke returnwaarde.
 
 ## Formaatspecificaties
 
-| Code | Betekenis                 |
-| ---- | ------------------------- |
-| %i   | Unsigned integer          |
-| %d   | Signed integer            |
-| %s   | String                    |
-| %f   | Floating‑point getal      |
-| %c   | ASCII‑teken               |
-| %x   | Hexadecimaal getal        |
-| %b   | Binair getal              |
-| %%   | Letterlijk '%'            |
+| Code | Betekenis                     |
+| ---- | ----------------------------- |
+| %i   | Unsigned integer              |
+| %d   | Signed integer                |
+| %s   | String                        |
+| %f   | Floating‑point getal          |
+| %c   | ASCII‑teken                   |
+| %x   | Hexadecimaal getal            |
+| %b   | Binair getal                  |
+| %%   | Letterlijk '%'                |
 | %q   | Escape voor SQLite (0.3.7 R2) |
 
 ## Voorbeelden
@@ -54,5 +54,3 @@ format(t, sizeof(t), "The time is %02d:%02d:%02d.", h, m, s);
 new pct[32];
 format(pct, sizeof(pct), "43%s of my shirts are black.", "%%");
 ```
-
-

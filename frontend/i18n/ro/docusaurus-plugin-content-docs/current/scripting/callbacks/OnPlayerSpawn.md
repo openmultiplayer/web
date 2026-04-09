@@ -9,9 +9,9 @@ tags: ["player"]
 
 Acest callback este apelat atunci când apare un jucător.
 
-| Name     | Descriere                          |
-| -------- | ---------------------------------- |
-| playerid | ID-ul jucătorului care a apărut.   |
+| Name     | Descriere                        |
+| -------- | -------------------------------- |
+| playerid | ID-ul jucătorului care a apărut. |
 
 ## Returnări
 

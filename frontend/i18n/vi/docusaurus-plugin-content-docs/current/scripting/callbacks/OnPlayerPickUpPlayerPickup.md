@@ -11,9 +11,9 @@ tags: ["player", "pickup", "playerpickup"]
 
 Callback này được gọi khi một người chơi nhặt pickup của người chơi được tạo ra bằng [CreatePlayerPickup](../functions/CreatePlayerPickup).
 
-| Tên      | Mô Tả                                                                                       |
-| -------- | ------------------------------------------------------------------------------------------ |
-| playerid | ID của người chơi đã nhặt pickup của người chơi.                                           |
+| Tên      | Mô Tả                                                                                          |
+| -------- | ---------------------------------------------------------------------------------------------- |
+| playerid | ID của người chơi đã nhặt pickup của người chơi.                                               |
 | pickupid | ID của pickup của người chơi, trả về bởi [CreatePlayerPickup](../functions/CreatePlayerPickup) |
 
 ## Trả Về

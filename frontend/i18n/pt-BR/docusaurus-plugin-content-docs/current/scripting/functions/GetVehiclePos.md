@@ -9,12 +9,12 @@ tags: ["vehicle"]
 
 Obtém a posição de um veículo.
 
-| Nome       | Descrição                                                               |
-| ---------- | ----------------------------------------------------------------------- |
-| vehicleid  | O ID do veículo para obter a posição.                                   |
-| &Float:x   | Uma variável float para armazenar a coordenada X, passada por referência. |
-| &Float:y   | Uma variável float para armazenar a coordenada Y, passada por referência. |
-| &Float:z   | Uma variável float para armazenar a coordenada Z, passada por referência. |
+| Nome      | Descrição                                                                 |
+| --------- | ------------------------------------------------------------------------- |
+| vehicleid | O ID do veículo para obter a posição.                                     |
+| &Float:x  | Uma variável float para armazenar a coordenada X, passada por referência. |
+| &Float:y  | Uma variável float para armazenar a coordenada Y, passada por referência. |
+| &Float:z  | Uma variável float para armazenar a coordenada Z, passada por referência. |
 
 ## Retornos
 

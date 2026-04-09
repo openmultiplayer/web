@@ -9,9 +9,9 @@ tags: []
 
 Bu fonksiyonla interior içlerinde silah kullanıp kullanılamayacağını belirlersiniz.
 
-| İsim                                | Açıklama                                                                                               |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| allow                               | izni vermek için 1, kapatmak için 0  (default olarak 1 gelir)                                          |
+| İsim  | Açıklama                                                     |
+| ----- | ------------------------------------------------------------ |
+| allow | izni vermek için 1, kapatmak için 0 (default olarak 1 gelir) |
 
 ## Çalışınca Vereceği Sonuçlar
 

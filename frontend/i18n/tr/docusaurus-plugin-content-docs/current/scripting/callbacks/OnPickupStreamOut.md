@@ -11,10 +11,10 @@ tags: ["player"]
 
 Bu geri çağırma, bir pickup bir oyuncunun görsel alanından çıktığında çağrılır.
 
-| Parametre     | Açıklama                                                                 |
-|----------|-------------------------------------------------------------------------|
-| pickupid | [CreatePickup](../functions/CreatePickup) tarafından döndürülen pickup ID'si |
-| playerid | Pickup'un görsel alanından çıktığı oyuncunun ID'si.                     |
+| Parametre | Açıklama                                                                     |
+| --------- | ---------------------------------------------------------------------------- |
+| pickupid  | [CreatePickup](../functions/CreatePickup) tarafından döndürülen pickup ID'si |
+| playerid  | Pickup'un görsel alanından çıktığı oyuncunun ID'si.                          |
 
 ## Çalışınca Vereceği Sonuçlar
 

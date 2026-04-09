@@ -11,13 +11,13 @@ tags: ["player", "actor"]
 
 Deze callback wordt aangeroepen wanneer een speler schade toebrengt aan een actor.
 
-| Naam            | Beschrijving                                           |
-| --------------- | ----------------------------------------------------- |
-| playerid        | Het ID van de speler die schade toebracht.            |
-| damaged_actorid | Het ID van de actor die schade ontving.               |
+| Naam            | Beschrijving                                                   |
+| --------------- | -------------------------------------------------------------- |
+| playerid        | Het ID van de speler die schade toebracht.                     |
+| damaged_actorid | Het ID van de actor die schade ontving.                        |
 | Float:amount    | De hoeveelheid gezondheid/pantser die damaged_actorid verloor. |
-| WEAPON:weaponid | De reden die de schade veroorzaakte.                  |
-| bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat werd geraakt |
+| WEAPON:weaponid | De reden die de schade veroorzaakte.                           |
+| bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat werd geraakt    |
 
 ## Returns
 

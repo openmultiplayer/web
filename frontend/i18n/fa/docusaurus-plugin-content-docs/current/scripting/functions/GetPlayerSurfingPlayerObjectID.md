@@ -11,7 +11,7 @@ tags: ["player", "object", "playerobject"]
 
 ID player-objectی که بازیکن روی آن surfing می‌کند را برمی‌گرداند.
 
-| نام     | توضیحات                             |
+| نام      | توضیحات                                 |
 | -------- | --------------------------------------- |
 | playerid | ID بازیکنی که روی object surfing می‌کند |
 

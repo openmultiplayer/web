@@ -11,10 +11,10 @@ tags: ["actor"]
 
 Deze callback wordt aangeroepen wanneer een actor wordt uitgestreamd door de client van een speler.
 
-| Naam        | Beschrijving                                                    |
-| ----------- | -------------------------------------------------------------- |
-| actorid     | Het ID van de actor die is uitgestreamd voor de speler.        |
-| forplayerid | Het ID van de speler die de actor heeft uitgestreamd.         |
+| Naam        | Beschrijving                                            |
+| ----------- | ------------------------------------------------------- |
+| actorid     | Het ID van de actor die is uitgestreamd voor de speler. |
+| forplayerid | Het ID van de speler die de actor heeft uitgestreamd.   |
 
 ## Returns
 

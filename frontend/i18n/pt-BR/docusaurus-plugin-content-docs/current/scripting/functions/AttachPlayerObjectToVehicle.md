@@ -9,17 +9,17 @@ tags: ["player", "object", "playerobject", "vehicle"]
 
 Anexa um objeto de jogador a um veículo.
 
-| Nome            | Descrição                                         |
-| --------------- | ------------------------------------------------- |
-| playerid        | O ID do jogador para quem o objeto foi criado.   |
-| objectid        | O ID do objeto a ser anexado ao veículo.         |
-| parentid        | O ID do veículo ao qual anexar o objeto.         |
-| Float:offsetX   | O deslocamento de posição X para anexação.       |
-| Float:offsetY   | O deslocamento de posição Y para anexação.       |
-| Float:offsetZ   | O deslocamento de posição Z para anexação.       |
-| Float:rotationX | O deslocamento de rotação X para anexação.       |
-| Float:rotationY | O deslocamento de rotação Y para anexação.       |
-| Float:rotationZ | O deslocamento de rotação Z para anexação.       |
+| Nome            | Descrição                                      |
+| --------------- | ---------------------------------------------- |
+| playerid        | O ID do jogador para quem o objeto foi criado. |
+| objectid        | O ID do objeto a ser anexado ao veículo.       |
+| parentid        | O ID do veículo ao qual anexar o objeto.       |
+| Float:offsetX   | O deslocamento de posição X para anexação.     |
+| Float:offsetY   | O deslocamento de posição Y para anexação.     |
+| Float:offsetZ   | O deslocamento de posição Z para anexação.     |
+| Float:rotationX | O deslocamento de rotação X para anexação.     |
+| Float:rotationY | O deslocamento de rotação Y para anexação.     |
+| Float:rotationZ | O deslocamento de rotação Z para anexação.     |
 
 ## Retorno
 

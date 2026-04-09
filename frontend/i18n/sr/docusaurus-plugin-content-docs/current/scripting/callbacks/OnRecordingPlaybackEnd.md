@@ -22,5 +22,5 @@ public OnRecordingPlaybackEnd()
 
 Следеће функције могу бити корисне, јер су на неки начин повезане са овом повратном функцијом.
 
-- [StartRecordingPlayback](../functions/StartRecordingPlayback):  Почиње репродукцију већ снимљене .rec датотеке.
+- [StartRecordingPlayback](../functions/StartRecordingPlayback): Почиње репродукцију већ снимљене .rec датотеке.
 - [StopRecordingPlayback](../functions/StopRecordingPlayback): Прекид репродукције .rec датотеке.

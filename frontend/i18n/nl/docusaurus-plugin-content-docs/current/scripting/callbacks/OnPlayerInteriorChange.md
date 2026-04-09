@@ -9,11 +9,11 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler van interior verandert. Kan getriggerd worden door SetPlayerInterior of bij het betreden/verlaten van een gebouw.
 
-| Naam          | Beschrijving                          |
-| ------------- | ------------------------------------ |
-| playerid      | De speler die van interior veranderde. |
+| Naam          | Beschrijving                               |
+| ------------- | ------------------------------------------ |
+| playerid      | De speler die van interior veranderde.     |
 | newinteriorid | De nieuwe interior waarin de speler nu is. |
-| oldinteriorid | De vorige interior waarin de speler was. |
+| oldinteriorid | De vorige interior waarin de speler was.   |
 
 ## Returns
 

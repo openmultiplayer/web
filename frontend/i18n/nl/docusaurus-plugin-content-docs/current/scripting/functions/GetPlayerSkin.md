@@ -9,8 +9,8 @@ tags: ["player"]
 
 Geeft de skin‑ID van een speler terug.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
+| Naam     | Beschrijving                    |
+| -------- | ------------------------------- |
 | playerid | Speler waarvan je de skin wilt. |
 
 ## Retourneert
@@ -42,5 +42,3 @@ Geeft de nieuwe skin terug nadat [SetSpawnInfo](SetSpawnInfo) is aangeroepen, ma
 
 - [SetPlayerSkin](SetPlayerSkin)
 - [Skin IDs](../resources/skins)
-
-

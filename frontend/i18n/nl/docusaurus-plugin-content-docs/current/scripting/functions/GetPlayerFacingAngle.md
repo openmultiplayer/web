@@ -9,9 +9,9 @@ tags: ["player"]
 
 Haal de rotatie op waar de speler naartoe kijkt.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
-| playerid | Speler waarvan je de rotatie wilt. |
+| Naam         | Beschrijving                                   |
+| ------------ | ---------------------------------------------- |
+| playerid     | Speler waarvan je de rotatie wilt.             |
 | &Float:angle | Float‑referentie om de rotatie in op te slaan. |
 
 ## Retourneert
@@ -45,5 +45,3 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetVehicleZAngle](GetVehicleZAngle)
 - [SetPlayerFacingAngle](SetPlayerFacingAngle)
 - [GetPlayerRotationQuat](GetPlayerRotationQuat)
-
-

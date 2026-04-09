@@ -10,7 +10,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 Postavlja boju box-a textdraw-a (PlayerTextDrawUseBox).
 
 | Ime             | Deskripcija                                               |
-|-----------------|-----------------------------------------------------------|
+| --------------- | --------------------------------------------------------- |
 | playerid        | ID igrača čijem se player-textdrawu postavlja boja box-a. |
 | PlayerText:text | ID player-textdrawa za postaviti boju box-a.              |
 | color           | Boja za postaviti. Alpha (transparentno) je podržano.     |

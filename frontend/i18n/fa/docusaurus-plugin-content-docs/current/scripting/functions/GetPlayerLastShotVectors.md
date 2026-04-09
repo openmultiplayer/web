@@ -9,15 +9,15 @@ tags: ["player"]
 
 دریافت موقعیت شروع و پایان (برخورد) آخرین گلوله‌ای که بازیکن شلیک کرده است.
 
-| نام           | توضیحات                                                                             |
-| -------------- | --------------------------------------------------------------------------------------- |
-| playerid       | ID بازیکن برای دریافت اطلاعات آخرین گلوله شلیک شده.                        |
-| &Float:originX | متغیر float برای ذخیره مختصات X محل شروع گلوله. |
-| &Float:originY | متغیر float برای ذخیره مختصات Y محل شروع گلوله. |
-| &Float:originZ | متغیر float برای ذخیره مختصات Z محل شروع گلوله. |
-| &Float:hitPosX | متغیر float برای ذخیره مختصات X محل برخورد گلوله.             |
-| &Float:hitPosY | متغیر float برای ذخیره مختصات Y محل برخورد گلوله.             |
-| &Float:hitPosZ | متغیر float برای ذخیره مختصات Z محل برخورد گلوله.             |
+| نام            | توضیحات                                             |
+| -------------- | --------------------------------------------------- |
+| playerid       | ID بازیکن برای دریافت اطلاعات آخرین گلوله شلیک شده. |
+| &Float:originX | متغیر float برای ذخیره مختصات X محل شروع گلوله.     |
+| &Float:originY | متغیر float برای ذخیره مختصات Y محل شروع گلوله.     |
+| &Float:originZ | متغیر float برای ذخیره مختصات Z محل شروع گلوله.     |
+| &Float:hitPosX | متغیر float برای ذخیره مختصات X محل برخورد گلوله.   |
+| &Float:hitPosY | متغیر float برای ذخیره مختصات Y محل برخورد گلوله.   |
+| &Float:hitPosZ | متغیر float برای ذخیره مختصات Z محل برخورد گلوله.   |
 
 ## مقادیر برگشتی
 
@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             Float:hitPosX, Float:hitPosY, Float:hitPosZ;
 
         GetPlayerLastShotVectors(playerid, originX, originY, originZ, hitPosX, hitPosY, hitPosZ);
-        
+
         format(string, sizeof(string), "Last Shot Information: Origin: %f, %f, %f. Hit position: %f, %f, %f", originX, originY, originZ, hitPosX, hitPosY, hitPosZ);
         SendClientMessage(playerid, -1, string);
         return 1;

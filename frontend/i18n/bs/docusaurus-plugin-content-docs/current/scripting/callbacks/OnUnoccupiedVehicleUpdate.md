@@ -14,12 +14,12 @@ Ovaj callback je pozvan kada igračev klijent ažurira/sinhronizuje poziciju voz
 | vehicleid      | ID vozila čija je pozicija ažurirana.                                                                                                                      |
 | playerid       | ID igrača koji je poslao sinhronizaciju ažuriranja pozicije vozila.                                                                                        |
 | passenger_seat | ID sjedišta na kojem se igrač nalazi kao putnik. 0=nije u vozilu, 1=suvozač, 2=leđa s lijeva 3=leđa s desna 4+ je za kombije i autobuse sa mnogo sjedišta. |
-| new_x          | Nova X kordinata vozila.                                          |
-| new_y          | Nova Y kordinata vozila.                                          |
-| new_z          | Nova Z kordinata vozila.                                          |
-| vel_x          | Nova X brzina vozila.                                             |
-| vel_y          | Nova X brzina vozila.                                             |
-| vel_z          | Nova X brzina vozila.                                             |
+| new_x          | Nova X kordinata vozila.                                                                                                                                   |
+| new_y          | Nova Y kordinata vozila.                                                                                                                                   |
+| new_z          | Nova Z kordinata vozila.                                                                                                                                   |
+| vel_x          | Nova X brzina vozila.                                                                                                                                      |
+| vel_y          | Nova X brzina vozila.                                                                                                                                      |
+| vel_z          | Nova X brzina vozila.                                                                                                                                      |
 
 ## Returns
 

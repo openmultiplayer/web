@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关函数
 
-- [NPC_PausePlayback](NPC_PausePlayback): 暂停/取消暂停回放
+- [NPC_PausePlayback](NPC_PausePlayback): 暂停/恢复回放
 - [NPC_IsPlayingPlayback](NPC_IsPlayingPlayback): 检查是否正在播放
 - [NPC_StartPlayback](NPC_StartPlayback): 开始回放
 - [NPC_StopPlayback](NPC_StopPlayback): 停止回放

@@ -27,7 +27,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
     printf("Le véhicule %d a été modifié par le joueur ID %d. L'ID de la partie de la voiture modifiée est %d",vehicleid,playerid,componentid);
     if(GetPlayerInterior(playerid) == 0)
     {
-        BanEx(playerid, "Hack Tuning"); // Anti-tuning hacks script 
+        BanEx(playerid, "Hack Tuning"); // Anti-tuning hacks script
         //Testé et approuvé sur les serveurs où il est impossible de modifier un véhicule hors d'un transfender/wheel arch angel
     }
     return 1;

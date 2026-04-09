@@ -9,9 +9,9 @@ tags: ["player", "checkpoint"]
 
 Bu geri çağırma, bir oyuncu kendisi için oluşturulan checkpointe giriş yaptığında çağırılır.
 
-| Parametre     | Açıklama                               |
-| -------- | -------------------------------------- |
-| playerid | Checkpointe giren oyuncunun ID'si.     |
+| Parametre | Açıklama                           |
+| --------- | ---------------------------------- |
+| playerid  | Checkpointe giren oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

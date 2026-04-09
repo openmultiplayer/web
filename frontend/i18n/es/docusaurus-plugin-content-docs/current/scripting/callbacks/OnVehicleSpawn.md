@@ -14,8 +14,8 @@ Este callback se llama **solo** cuando el vehículo **re**aparece! CreateVehicle
 
 Este callback se llama cuando un vehículo reaparece.
 
-| Name      | Description                         |
-| --------- | ----------------------------------- |
+| Name      | Description                     |
+| --------- | ------------------------------- |
 | vehicleid | El ID del vehículo que spawneo. |
 
 ## Devoluciones

@@ -96,7 +96,6 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
   ### Titluri
 
   Nu creați un titlu de nivel 1 (`<h1>`) cu `#` deoarece acesta este generat automat. Primul dvs. titlu ar trebui să fie întotdeauna `##`
-
   - ❌
 
   ```md
@@ -118,7 +117,6 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
   ### Utilizați fragmentele `Code` pentru referințe tehnice
 
   Când scrieți un paragraf care conține nume de funcții, numere, expresii sau orice altceva care nu este un limbaj scris standard, înconjurați-le cu astfel de \`backticks\`. Acest lucru face mai ușoară separarea limbajului pentru descrierea lucrurilor de referințe la elemente tehnice, cum ar fi numele funcțiilor și piesele de cod.
-
   - ❌
 
   > The fopen function will return a value with a tag of type File:, there is no problem on that line as the return value is being stored to a variable also with a tag of File: (note the cases are the same too). However on the next line the value 4 is added to the file handle. 4 has no tag [...]
@@ -134,7 +132,6 @@ Nu utilizați adrese URL absolute pentru link-uri inter-site. Folosiți căi rel
   ### Tabele
 
   Dacă un tabel are titluri, acestea trec în partea de sus:
-
   - ❌
 
   ```md

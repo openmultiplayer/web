@@ -9,17 +9,17 @@ tags: ["vehicle"]
 
 Bu fonksiyon, oyuncunun istemcisi sürmediği bir aracın konumunu güncellediğinde / senkronize ettiğinde çağrılır. Bu, aracın dışında olan oyuncuda veya sürücüsü olmayan bir aracın yolcusu olduğunda meydana gelebilir.
 
-| Parametre      | Açıklama                                                                                                                                                         |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vehicleid      | Konumu güncellenen aracın ID'si.                                                                                                                                 |
-| playerid       | Araç konumunu güncellemesini gönderen oyuncunun ID'si.                                                                                                           |
-| passenger_seat | Oyuncu bir yolcu ise koltuğun ID'si. 0=araçta değil, 1=ön koltuk, 2=arka sol, 3=arka sağ, 4+ otobüs vb araçlar için.                                             |
-| new_x          | Aracın yeni X koordinatı.                                                         |
-| new_y          | Aracın yeni Y koordinatı.                                                         |
-| new_z          | Aracın yeni Z koordinatı.                                                         |
-| vel_x          | Aracın yeni vektörel X koordinatı.                                                 |
-| vel_y          | Aracın yeni vektörel Y koordinatı.                                                 |
-| vel_z          | Aracın yeni vektörel Z koordinatı.                                                 |
+| Parametre      | Açıklama                                                                                                             |
+| -------------- | -------------------------------------------------------------------------------------------------------------------- |
+| vehicleid      | Konumu güncellenen aracın ID'si.                                                                                     |
+| playerid       | Araç konumunu güncellemesini gönderen oyuncunun ID'si.                                                               |
+| passenger_seat | Oyuncu bir yolcu ise koltuğun ID'si. 0=araçta değil, 1=ön koltuk, 2=arka sol, 3=arka sağ, 4+ otobüs vb araçlar için. |
+| new_x          | Aracın yeni X koordinatı.                                                                                            |
+| new_y          | Aracın yeni Y koordinatı.                                                                                            |
+| new_z          | Aracın yeni Z koordinatı.                                                                                            |
+| vel_x          | Aracın yeni vektörel X koordinatı.                                                                                   |
+| vel_y          | Aracın yeni vektörel Y koordinatı.                                                                                   |
+| vel_z          | Aracın yeni vektörel Z koordinatı.                                                                                   |
 
 ## Çalışınca Vereceği Sonuçlar
 

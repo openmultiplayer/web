@@ -9,10 +9,10 @@ tags: ["player", "class"]
 
 Callback này được gọi khi một người chơi thay đổi lớp trong chọn lớp (và khi chọn lớp xuất hiện lần đầu).
 
-| Tên      | Mô Tả                                                                                           |
-| -------- | ------------------------------------------------------------------------------------------------- |
-| playerid | ID của người chơi đã thay đổi lớp.                                                               |
-| classid  | ID của lớp hiện tại đang được xem (trả về bởi [AddPlayerClass](../functions/AddPlayerClass)).  |
+| Tên      | Mô Tả                                                                                         |
+| -------- | --------------------------------------------------------------------------------------------- |
+| playerid | ID của người chơi đã thay đổi lớp.                                                            |
+| classid  | ID của lớp hiện tại đang được xem (trả về bởi [AddPlayerClass](../functions/AddPlayerClass)). |
 
 ## Trả Về
 

@@ -80,4 +80,4 @@ functions to manipulate objects in the host application.
 
 ---
 
-[Go Back to Contents](00-Contents)
+[Go Back to Contents](Contents)

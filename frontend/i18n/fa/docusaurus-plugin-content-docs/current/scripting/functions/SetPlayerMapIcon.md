@@ -9,16 +9,16 @@ tags: ["player"]
 
 یک icon/marker روی نقشه پلیر قرار می‌ده. می‌تونه برای مشخص کردن مکان‌هایی مثل بانک و بیمارستان به پلیر ها استفاده بشه.
 
-| نام           | توضیحات                                                                                                                                                |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| playerid      | آیدی پلیری که قراره map icon براش تنظیم بشه                                                                                                             |
-| iconid        | آیدی icon پلیر، از 0 تا 99. یعنی حداکثر 100 تا map icon می‌تونی داشته باشی. ID می‌تونه توی [RemovePlayerMapIcon](RemovePlayerMapIcon) استفاده بشه      |
-| Float:x       | مختصات X برای قرار دادن map icon                                                                                                                        |
-| Float:y       | مختصات Y برای قرار دادن map icon                                                                                                                        |
-| Float:z       | مختصات Z برای قرار دادن map icon                                                                                                                        |
-| markerType    | [آیکونی](../resources/mapicons) که قراره تنظیم بشه                                                                                                      |
-| colour        | رنگ آیکون، به عنوان عدد صحیح یا hex با فرمت رنگ RGBA. این باید فقط با آیکون مربعی (ID: 0) استفاده بشه                                                |
-| MAPICON:style | [سبک](../resources/mapiconstyles) آیکون                                                                                                               |
+| نام           | توضیحات                                                                                                                                           |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid      | آیدی پلیری که قراره map icon براش تنظیم بشه                                                                                                       |
+| iconid        | آیدی icon پلیر، از 0 تا 99. یعنی حداکثر 100 تا map icon می‌تونی داشته باشی. ID می‌تونه توی [RemovePlayerMapIcon](RemovePlayerMapIcon) استفاده بشه |
+| Float:x       | مختصات X برای قرار دادن map icon                                                                                                                  |
+| Float:y       | مختصات Y برای قرار دادن map icon                                                                                                                  |
+| Float:z       | مختصات Z برای قرار دادن map icon                                                                                                                  |
+| markerType    | [آیکونی](../resources/mapicons) که قراره تنظیم بشه                                                                                                |
+| colour        | رنگ آیکون، به عنوان عدد صحیح یا hex با فرمت رنگ RGBA. این باید فقط با آیکون مربعی (ID: 0) استفاده بشه                                             |
+| MAPICON:style | [سبک](../resources/mapiconstyles) آیکون                                                                                                           |
 
 ## مقادیر بازگشتی
 
@@ -31,8 +31,8 @@ tags: ["player"]
 ```c
 public OnPlayerConnect(playerid)
 {
-    // in mesal neshoon mide che juri ye dollar-icon bala ye 24/7 
-    // ke dar Las Venturas gharar dare besazim. be in tariigh player haye jadid 
+    // in mesal neshoon mide che juri ye dollar-icon bala ye 24/7
+    // ke dar Las Venturas gharar dare besazim. be in tariigh player haye jadid
     // midunan kojam baran ba puleshunn!
     SetPlayerMapIcon(playerid, 12, 2204.9468, 1986.2877, 16.7380, 52, 0, MAPICON_LOCAL);
 }

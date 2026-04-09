@@ -18,7 +18,6 @@ Gets the highest vehicleid currently in use on the server.
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

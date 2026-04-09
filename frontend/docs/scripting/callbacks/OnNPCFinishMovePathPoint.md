@@ -11,11 +11,11 @@ tags: ["npc", "path", "movement"]
 
 This callback is called when an NPC finishes moving to a specific point in a path.
 
-| Name    | Description                                      |
-| ------- | ------------------------------------------------ |
-| npcid   | The ID of the NPC that finished the path point   |
-| pathid  | The ID of the path being followed                |
-| pointid | The index of the point that was reached          |
+| Name    | Description                                    |
+| ------- | ---------------------------------------------- |
+| npcid   | The ID of the NPC that finished the path point |
+| pathid  | The ID of the path being followed              |
+| pointid | The index of the point that was reached        |
 
 ## Examples
 

@@ -9,10 +9,10 @@ tags: []
 
 Das Callback wird aufgerufen, wenn ein Spieler eine Tuningwerkstatt betritt oder verlässt.
 
-| Name       | Beschreibung                                                                  |
-| ---------- | ---------------------------------------------------------------------------- |
-| playerid   | Die ID des Spielers                      |
-| enterexit  | 1 bei Betreten 0 bei Verlassen der Werkstatt                                 |
+| Name       | Beschreibung                                                              |
+| ---------- | ------------------------------------------------------------------------- |
+| playerid   | Die ID des Spielers                                                       |
+| enterexit  | 1 bei Betreten 0 bei Verlassen der Werkstatt                              |
 | interiorid | Interior ID der Tuningwerkstatt die betreten wird (oder 0 beim Verlassen) |
 
 ## Rückgabe(return value)

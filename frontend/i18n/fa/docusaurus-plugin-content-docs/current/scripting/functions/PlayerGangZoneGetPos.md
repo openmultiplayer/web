@@ -11,14 +11,14 @@ tags: ["player", "gangzone", "playergangzone"]
 
 موقعیت یک gangzone رو دریافت می‌کنه که با مختصات minX, minY, maxX, maxY نمایش داده می‌شه.
 
-| نام        | توضیح                                                 |
-| ----------- | ----------------------------------------------------------- |
-| playerid    | ID بازیکنی که player gangzone به اون متصل شده.      |
+| نام         | توضیح                                          |
+| ----------- | ---------------------------------------------- |
+| playerid    | ID بازیکنی که player gangzone به اون متصل شده. |
 | zoneid      | ID zone ای که می‌خوایم مختصاتش رو دریافت کنیم. |
-| &Float:minX | مختصات X برای سمت غربی player gangzone.  |
-| &Float:minY | مختصات Y برای سمت جنوبی player gangzone. |
-| &Float:maxX | مختصات X برای سمت شرقی player gangzone.  |
-| &Float:maxY | مختصات Y برای سمت شمالی player gangzone. |
+| &Float:minX | مختصات X برای سمت غربی player gangzone.        |
+| &Float:minY | مختصات Y برای سمت جنوبی player gangzone.       |
+| &Float:maxX | مختصات X برای سمت شرقی player gangzone.        |
+| &Float:maxY | مختصات Y برای سمت شمالی player gangzone.       |
 
 ## مقادیر بازگشتی
 
@@ -34,12 +34,12 @@ public OnPlayerConnect(playerid)
     // Gangzone ro besaz
     gGangZoneID[playerid] = CreatePlayerGangZone(playerid, 2236.1475, 2424.7266, 2319.1636, 2502.4348);
 
-    new 
+    new
         Float:minX,
         Float:minY,
         Float:maxX,
         Float:maxY;
-    
+
     PlayerGangZoneGetPos(playerid, gGangZoneID[playerid], minX, minY, maxX, maxY);
     return 1;
 }

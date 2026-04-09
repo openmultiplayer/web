@@ -9,11 +9,11 @@ tags: []
 
 Poziva javnu funkciju u bilo kojoj skripti koja se učita.
 
-| Ime            | Deskripcija                                   |
-| -------------- | --------------------------------------------- |
-| function[]     | Ime javne funkcije                            |
-| format[]       | Oznaka / format svake varijable               |
-\ \{Float, _}:... | 'Neodređeni' broj argumenata bilo koje oznake |
+| Ime                | Deskripcija                                   |
+| ------------------ | --------------------------------------------- |
+| function[]         | Ime javne funkcije                            |
+| format[]           | Oznaka / format svake varijable               |
+| \ \{Float, \_}:... | 'Neodređeni' broj argumenata bilo koje oznake |
 
 ## Returns
 

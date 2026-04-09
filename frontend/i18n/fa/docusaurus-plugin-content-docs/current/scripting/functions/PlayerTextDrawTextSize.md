@@ -9,11 +9,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 اندازه یک player textdraw رو تغییر می‌ده (جعبه اگر [PlayerTextDrawUseBox](PlayerTextDrawUseBox) فعال باشه و/یا منطقه قابل کلیک برای استفاده با [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable)).
 
-| نام               | توضیحات                                                                                     |
-| ----------------- | ------------------------------------------------------------------------------------------- |
-| playerid          | ID بازیکنی که اندازه player textdraw اون باید تنظیم بشه                                    |
-| PlayerText:textid | ID player textdraw که اندازه‌اش باید تنظیم بشه.                                           |
-| Float:width       | اندازه روی محور X (چپ/راست) طبق همون grid 640x480 که در TextDrawCreate استفاده می‌شه. |
+| نام               | توضیحات                                                                                  |
+| ----------------- | ---------------------------------------------------------------------------------------- |
+| playerid          | ID بازیکنی که اندازه player textdraw اون باید تنظیم بشه                                  |
+| PlayerText:textid | ID player textdraw که اندازه‌اش باید تنظیم بشه.                                          |
+| Float:width       | اندازه روی محور X (چپ/راست) طبق همون grid 640x480 که در TextDrawCreate استفاده می‌شه.    |
 | Float:height      | اندازه روی محور Y (بالا/پایین) طبق همون grid 640x480 که در TextDrawCreate استفاده می‌شه. |
 
 ## مقدار برگشتی
@@ -40,9 +40,9 @@ public OnPlayerConnect(playerid)
 :::tip
 
 - x و y با مقادیر مختلف [PlayerTextDrawAlignment](PlayerTextDrawAlignment) معنی‌های متفاوتی دارن:
-    - 1 (چپ): اونها گوشه سمت راست جعبه هستن، مختصات مطلق.
-    - 2 (وسط): باید معکوس بشن (دوتا رو جابجا کن) و مقدار x عرض کلی جعبه هست.
-    - 3 (راست): x و y مختصات گوشه سمت چپ جعبه هستن
+  - 1 (چپ): اونها گوشه سمت راست جعبه هستن، مختصات مطلق.
+  - 2 (وسط): باید معکوس بشن (دوتا رو جابجا کن) و مقدار x عرض کلی جعبه هست.
+  - 3 (راست): x و y مختصات گوشه سمت چپ جعبه هستن
 - استفاده از نوع فونت 4 (sprite) و 5 (model preview) X و Y این تابع رو از مختصات گوشه به WIDTH و HEIGHT (افست‌ها) تبدیل می‌کنه.
 - جعبه TextDraw 10.0 واحد بالا و 5.0 واحد سمت چپ به عنوان مبدأ (مختصات TextDrawCreate) شروع می‌شه.
 - این تابع منطقه قابل کلیک رو برای استفاده با [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable) تعریف می‌کنه، چه جعبه‌ای نمایش داده بشه یا نشه.

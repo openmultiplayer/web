@@ -9,10 +9,10 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi nhập lệnh vào cửa sổ trò chuyện của client. Lệnh là bất kỳ thứ gì bắt đầu bằng dấu gạch chéo, ví dụ: /help.
 
-| Tên       | Mô Tả                                                       |
-| ---------- | ----------------------------------------------------------- |
-| playerid   | ID của người chơi đã nhập lệnh.                             |
-| cmdtext[]  | Lệnh đã được nhập (bao gồm cả dấu gạch chéo).               |
+| Tên       | Mô Tả                                         |
+| --------- | --------------------------------------------- |
+| playerid  | ID của người chơi đã nhập lệnh.               |
+| cmdtext[] | Lệnh đã được nhập (bao gồm cả dấu gạch chéo). |
 
 ## Trả Về
 

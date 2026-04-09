@@ -14,7 +14,7 @@ Magtakda ng server variable na float.
 | Name        | Description                      |
 | ----------- | -------------------------------- |
 | varname[]   | Ang pangalan ng server variable. |
-| float_value | Ang float na itatakda.            |
+| float_value | Ang float na itatakda.           |
 
 ## Returns
 

@@ -9,10 +9,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Acest callback este apelat atunci când un jucător dă clic pe un player-textdraw. Nu este apelat atunci când jucătorul anulează modul de selectare (ESC) - cu toate acestea, OnPlayerClickTextDraw este.
 
-| Nume         | Descriere                                               |
-| ------------ | ------------------------------------------------------- |
-| playerid     | ID-ul jucătorului care a selectat un textdraw           |
-| playertextid | ID-ul textdraw-ului jucătorului pe care l-a selectat.   |
+| Nume         | Descriere                                             |
+| ------------ | ----------------------------------------------------- |
+| playerid     | ID-ul jucătorului care a selectat un textdraw         |
+| playertextid | ID-ul textdraw-ului jucătorului pe care l-a selectat. |
 
 ## Returnări
 

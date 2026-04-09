@@ -16,7 +16,6 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocompletes for Visual Studio Code.
 - **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Zone Editor for making Area and stuff.
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - Popular Map Editor for SA:MP.
-- **[open.mp Server Browser](https://github.com/adib-yg/openmp-server-browser)** - open.mp server browser GUI for Desktop.
 
 ## Libraries
 
@@ -33,6 +32,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[weapon-config](https://github.com/oscar-broman/samp-weapon-config)** - More consistent and responsive damage system with many new features.
 - **[samp-geoip](https://github.com/Southclaws/SAMP-geoip)** - Geographical information based on IP Address.
 - **[progress2](https://github.com/Southclaws/progress2)** - Display time, health, vehicle fuel and other things as a progressive bar.
+- **[GameText+](https://github.com/itsneufox/GameText-Plus)** - An include for both SA-MP and open.mp that improves the native GameText.
 - **[weapon-data](https://github.com/Southclaws/samp-weapon-data)** - Finely tuned, customisable weapon data.
 - **[MV_Youtube](https://github.com/MichaelBelgium/MV_Youtube)** - Youtube Converter API for Audio Stream.
 - **[MySQL Prepared Statements](https://github.com/PatrickGTR/MySQL-Prepared-Statements)** - Emulating Prepared Statement for PAWN MySQL plugin.
@@ -59,7 +59,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[mSelection](https://github.com/alextwothousand/mSelection)** - Same as eSelection, but different style.
 - **[RGB-Textdraw](https://github.com/adib-yg/SAMP-RGB-Textdraw)** - Adds RGB to textdraw.
 - **[LangPlus](https://github.com/mysy00/LangPlus)** - Multi-language library for open.mp servers.
-- **[beckzy's mod shops](https://beckzy.net/index.php?action=downloads;sa=view;id=41)** - An include for server side mod shops..
+- **[beckzy's mod shops](https://beckzy.net/index.php?action=downloads;sa=view;id=41)** - An include for server side mod shops.
 
 ## Command Processors
 
@@ -75,8 +75,8 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[sscanf](https://github.com/Y-Less/sscanf)** - Convert strings to multiple values, ints, floats, players, etc.
 - **[MySQL Plugin](https://github.com/pBlueG/SA-MP-MySQL)** - Connect your server to a MySQL server.
 - **[Streamer Plugin](https://github.com/samp-incognito/samp-streamer-plugin)** - Bypass many SA:MP limits, like objects and pickups.
-- **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - Checking natives when server starts.
-- **[FCNPC](https://github.com/ziggi/FCNPC)** - A plugin for SA-MP servers which adds a lot of capabilities to the existing standard NPCs. It does not currently work in open.mp, as of January 2023.
+- **[nativechecker](https://github.com/openmultiplayer/archive/raw/master/plugins/nativechecker.zip)** - Checking natives when server starts. It is not needed in open.mp, as open.mp is provided with native checking mechanism.
+- **[FCNPC](https://github.com/ziggi/FCNPC)** - A plugin for SA-MP servers which adds a lot of capabilities to the existing standard NPCs. It does not work in open.mp, but you can use the official NPC component instead.
 - **[FileManager](https://github.com/JaTochNietDan/SA-MP-FileManager)** - Allows you to manage files and folders from root folder (not limited to the scriptfiles server directory with this plugin).
 - **[Pawn.Raknet](https://github.com/katursis/Pawn.RakNet)** - Allows you to analyze RakNet traffic.
 - **[samp-precise-timers](https://github.com/bmisiak/samp-precise-timers)** - A plugin for SA-MP providing precise timers, written in Rust. It is not needed in open.mp, as open.mp is provided with precise timers.
@@ -157,7 +157,8 @@ Now you can make your scripts in languages other than pawn without any plugin us
 - **[MapFix](https://github.com/NexiusTailer/MapFix)** - Texture bug fixes of the GTA San Andreas map.
 - **[SA:MP Animbrowse](https://github.com/Southclaws/samp-animbrowse)** - Animation browser tool for SA:MP.
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Checks if a player is an android user.
-- **[TextDraw-Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - A TextDraw editor which have some rich features.
+- **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - A TextDraw editor which have some rich features.
+- **[Nexor's Textdraw Editor](https://github.com/nexquery/samp-textdraw-editor)** - This editor offers you many features such as grouping, undeleting texts, undoing changes, importing text drawings from a file.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Advanced map editor with a lot of features.
 - **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - An In-Game map editor for SA:MP.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - This is an in game map editor that will let you texture up to material index 15 (16 materials) as well as set color for that material index on objects.

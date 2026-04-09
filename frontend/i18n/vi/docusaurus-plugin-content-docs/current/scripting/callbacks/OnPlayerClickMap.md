@@ -9,12 +9,12 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi đặt mục tiêu/điểm đến trên bản đồ trong menu tạm dừng (bằng cách nhấp chuột phải).
 
-| Tên       | Mô Tả                                                                           |
-|-----------|---------------------------------------------------------------------------------|
-| playerid  | ID của người chơi đã đặt mục tiêu/điểm đến                                       |
-| Float:fX  | Tọa độ X float nơi người chơi nhấp chuột                                         |
-| Float:fY  | Tọa độ Y float nơi người chơi nhấp chuột                                         |
-| Float:fZ  | Tọa độ Z float nơi người chơi nhấp chuột (không chính xác - xem ghi chú bên dưới) |
+| Tên      | Mô Tả                                                                             |
+| -------- | --------------------------------------------------------------------------------- |
+| playerid | ID của người chơi đã đặt mục tiêu/điểm đến                                        |
+| Float:fX | Tọa độ X float nơi người chơi nhấp chuột                                          |
+| Float:fY | Tọa độ Y float nơi người chơi nhấp chuột                                          |
+| Float:fZ | Tọa độ Z float nơi người chơi nhấp chuột (không chính xác - xem ghi chú bên dưới) |
 
 ## Trả Về
 

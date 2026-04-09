@@ -9,11 +9,11 @@ tags: ["player"]
 
 Callback này được gọi khi người chơi thay đổi trạng thái. Ví dụ, khi người chơi thay đổi từ việc là tài xế của một phương tiện sang đi bộ.
 
-| Tên                   | Mô tả                                       |
-| --------------------- | ------------------------------------------- |
-| playerid              | ID của người chơi đã thay đổi trạng thái.  |
-| PLAYER_STATE:newstate | Trạng thái mới của người chơi.             |
-| PLAYER_STATE:oldstate | Trạng thái trước đó của người chơi.        |
+| Tên                   | Mô tả                                     |
+| --------------------- | ----------------------------------------- |
+| playerid              | ID của người chơi đã thay đổi trạng thái. |
+| PLAYER_STATE:newstate | Trạng thái mới của người chơi.            |
+| PLAYER_STATE:oldstate | Trạng thái trước đó của người chơi.       |
 
 Tham khảo [Trạng thái Người chơi](../resources/playerstates) để biết danh sách tất cả các trạng thái người chơi có sẵn.
 
@@ -41,13 +41,13 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Các Callbacks liên quan
 
-Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các callback sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [OnPlayerInteriorChange](OnPlayerInteriorChange): Callback này được gọi khi người chơi thay đổi nội thất.
 
 ## Các Hàm liên quan
 
-Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [GetPlayerState](../functions/GetPlayerState): Lấy trạng thái hiện tại của người chơi.
 - [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction): Lấy hành động đặc biệt hiện tại của người chơi.

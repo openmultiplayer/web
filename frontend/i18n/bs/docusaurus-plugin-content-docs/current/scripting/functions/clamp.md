@@ -15,11 +15,11 @@ Ova funkcija započinje malim slovom.
 
 Forsira vrijednost da bude unutar raspona.
 
-| Ime   | Deskripcija                    |
-| ----- | ------------------------------ |
-| value | Vrijednost koja se forsira     |
-| min   | Donja granica raspona          |
-| max   | Visoka granica raspona         |
+| Ime   | Deskripcija                |
+| ----- | -------------------------- |
+| value | Vrijednost koja se forsira |
+| min   | Donja granica raspona      |
+| max   | Visoka granica raspona     |
 
 ## Returns
 

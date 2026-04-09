@@ -10,7 +10,7 @@ tags: ["player"]
 Cette callback est appelée quand un joueur en a fini avec le mode édition des attach objects.
 
 | Name                         | Description                                                                       |
-|------------------------------|-----------------------------------------------------------------------------------|
+| ---------------------------- | --------------------------------------------------------------------------------- |
 | `int` playerid               | ID du joueur en mode édition                                                      |
 | `int` EDIT_RESPONSE:response | **0** si annulé (ECHAP) ou **1** si le joueur a cliqué sur l'icône de sauvegarde. |
 | `int` index                  | The index of the attached object (0-9)                                            |
@@ -83,7 +83,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 :::warning
 
-L'édition doit être abandonnée si la réponse est '0' (cancelled). Cela doit être fait par le stockage des offsets au préalable dans un array. 
+L'édition doit être abandonnée si la réponse est '0' (cancelled). Cela doit être fait par le stockage des offsets au préalable dans un array.
 
 :::
 

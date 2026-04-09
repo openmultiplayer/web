@@ -9,9 +9,9 @@ tags: ["player"]
 
 Ова повратна функција се позива када играч спавнује. (нпр. након позивања функције [SpawnPlayer](../functions/SpawnPlayer))
 
-| Име      | Опис                               |
-| -------- | ---------------------------------- |
-| playerid | ID играча који је спавнован.       |
+| Име      | Опис                         |
+| -------- | ---------------------------- |
+| playerid | ID играча који је спавнован. |
 
 ## Враћа
 
@@ -28,7 +28,7 @@ public OnPlayerSpawn(playerid)
 {
     new PlayerName[MAX_PLAYER_NAME];
     GetPlayerName(playerid, PlayerName, sizeof(PlayerName));
-    
+
     new string[64];
     format(string, sizeof(string), "%s has spawned successfully.", PlayerName);
 

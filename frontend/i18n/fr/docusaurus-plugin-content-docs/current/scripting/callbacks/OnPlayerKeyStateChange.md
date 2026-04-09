@@ -9,10 +9,9 @@ tags: ["player"]
 
 Cette callback est appelée lorsqu'un joueur appuie / lâche une touche de son clavier (uniquement les touches supportées par SA:MP).
 
- 
-| Nom	 	 | Description                                                                         |
+| Nom            | Description                                                                         |
 | -------------- | ----------------------------------------------------------------------------------- |
-| `int` playerid | ID du joueur qui appuie/relâche la touche					       |
+| `int` playerid | ID du joueur qui appuie/relâche la touche                                           |
 | `int` newkeys  | Un [tableau des touches](../resources/keys) est disponible après l'action           |
 | `int` oldkeys  | Un [tableau des touches](../resources/keys) est également disponible avant l'action |
 
@@ -46,7 +45,7 @@ Les touches directionnelles ne fonctionnent pas avec OnPlayerKeyStateChange. Ell
 
 ### Introduction
 
-Cette callback est appelée indifféremment selon que le joueur presse une touche ou la relâche _(v. [Keys](../resources/keys))_. 
+Cette callback est appelée indifféremment selon que le joueur presse une touche ou la relâche _(v. [Keys](../resources/keys))_.
 
 Les touches qui sont prises en charge ne sont pas les touches réelles du clavier, mais des touches de fonction attribuées à San Andreas. Cela signifie que, par exemple, vous ne pouvez pas détecter quand quelqu'un appuie sur la barre d'espace, mais ils peuvent détecter le moment où ils pressent leur touche sprint (qui peut, ou pas, être affectée à la barre d'espacement).
 
@@ -66,7 +65,7 @@ if (newkeys == KEY_FIRE)
 
 Ce code peut même fonctionner dans vos tests, mais il est incorrect et vos tests sont insuffisants. Essayez de vous accroupir et d'appuyer sur le feu et votre code cessera instantanément de fonctionner. **Pourquoi?** Parce que `newkeys` n'est plus le même que `KEY_FIRE`, c'est le même que `KEY_FIRE` COMBINÉ AVEC `KEY_CROUCH`.
 
-### Comment vérifier une touche 
+### Comment vérifier une touche
 
 Donc, si la variable peut contenir plusieurs clés à la fois, comment en vérifier une seule ? La réponse est le masquage de bits. Chaque touche a son propre bit dans la variable _(certaines touches ont le même bit, mais ce sont des touches onfoot / incar, donc ne peuvent jamais être pressées en même temps de toute façon)_ et vous devez vérifier juste ce seul bit :
 

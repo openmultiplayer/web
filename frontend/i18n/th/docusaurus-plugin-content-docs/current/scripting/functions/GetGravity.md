@@ -12,7 +12,6 @@ Get the currently set gravity.
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

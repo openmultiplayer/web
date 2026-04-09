@@ -15,8 +15,8 @@ tags: ["sqlite"]
 
 تعداد فیلدهای موجود در نتیجه‌ای که از db_query برگردونده شده رو می‌گیره.
 
-| اسم        | توضیح                                         |
-| ----------- | ---------------------------------------------- |
+| اسم               | توضیح                                  |
+| ----------------- | -------------------------------------- |
 | DBResult:dbresult | نتیجه‌ای که از db_query برگردونده شده. |
 
 ## مقادیر برگشتی
@@ -36,7 +36,7 @@ if (db_result)
 {
     new fields = db_num_fields(db_result);
     printf("Number of fields in result: %d", fields); // خروجی: Number of fields in result: 3
-    
+
     // نام‌های تمام فیلدها رو چاپ کن
     for (new i = 0; i < fields; i++)
     {
@@ -44,7 +44,7 @@ if (db_result)
         db_field_name(db_result, i, field_name, sizeof(field_name));
         printf("Field %d: %s", i, field_name);
     }
-    
+
     // آزاد کردن حافظه
     db_free_result(db_result);
 }

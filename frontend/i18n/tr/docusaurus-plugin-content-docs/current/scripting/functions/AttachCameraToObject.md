@@ -9,10 +9,10 @@ tags: []
 
 Bu fonksiyonu, bir oyuncuya kamera yerleştirmek için kullanabilirsiniz.
 
-| İsim     | Açıklama                                                             |
-| -------- | -------------------------------------------------------------------- |
-| playerid | Kamera yerleştirilecek oyuncu numarası.                              |
-| objectid | Yerleştirmek istenilen objenin numarası.                             |
+| İsim     | Açıklama                                 |
+| -------- | ---------------------------------------- |
+| playerid | Kamera yerleştirilecek oyuncu numarası.  |
+| objectid | Yerleştirmek istenilen objenin numarası. |
 
 ## Vereceği Geri Dönüş (Return) Değerleri
 

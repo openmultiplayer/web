@@ -13,8 +13,8 @@ tags: ["sqlite"]
 
 A função obtém o handle de memória para uma conexão de banco de dados SQLite que foi aberta com [db_open](db_open).
 
-| Nome  | Descrição                                                              |
-| ----- | ---------------------------------------------------------------------- |
+| Nome  | Descrição                                                                 |
+| ----- | ------------------------------------------------------------------------- |
 | DB:db | O índice da conexão do banco de dados (retornado por [db_open](db_open)). |
 
 ## Retorno

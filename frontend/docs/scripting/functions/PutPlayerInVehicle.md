@@ -24,40 +24,9 @@ Puts a player in a vehicle.
 ## Examples
 
 ```c
-// Global array to track which vehicle belongs to each player.
-// INVALID_VEHICLE_ID is used as a placeholder for players without a vehicle.
-static s_PlayerVehicle[MAX_PLAYERS] = { INVALID_VEHICLE_ID, ... };
-
-public OnPlayerSpawn(playerid)
+public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 {
-    // Check if the player already has a valid vehicle.
-    if (!IsValidVehicle(s_PlayerVehicle[playerid]))
-    {
-        // If not, create a new vehicle for the player and store its ID.
-        s_PlayerVehicle[playerid] = CreateVehicle(411, 0.0, 0.0, 3.5, 0.0, -1, -1, -1);
-    }
-
-    // Mark that the player should be placed in their vehicle once it is fully loaded.
-    // This avoids issues where the vehicle might not yet be loaded on the client's side.
-    SetPVarInt(playerid, "PutPlayerInVehicle", 1);
-
-    return 1;
-}
-
-public OnVehicleStreamIn(vehicleid, forplayerid)
-{
-    // This callback is triggered when a vehicle streams in for the player (i.e. when it is loaded into memory).
-    // Check if the streamed-in vehicle is the player's and if they need to be placed in it.
-    if (vehicleid == s_PlayerVehicle[forplayerid] && GetPVarInt(forplayerid, "PutPlayerInVehicle"))
-    {
-        // Put the player into the vehicle.
-        PutPlayerInVehicle(forplayerid, vehicleid, 0);
-
-        // Clear the marker to prevent repeatedly putting the player into the vehicle
-        // (e.g., if the player leaves the vehicle and it streams in again later).
-        DeletePVar(forplayerid, "PutPlayerInVehicle");
-    }
-
+    PutPlayerInVehicle(playerid, vehicleid, 0);
     return 1;
 }
 

@@ -11,9 +11,9 @@ tags: []
 
 Dobij id virtual world-a određenog actora.
 
-| Ime     | Deskripcija                                      |
-| ------- | ------------------------------------------------ |
-| actorid | ID actora za dobijanje id-a virtual world-a.     |
+| Ime     | Deskripcija                                  |
+| ------- | -------------------------------------------- |
+| actorid | ID actora za dobijanje id-a virtual world-a. |
 
 ## Returns
 

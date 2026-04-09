@@ -9,9 +9,9 @@ tags: []
 
 Menghancurkan (menghapus) objek yang sudah di buat dengan CreateObject.
 
-| Nama     | Deskripsi                                                  |
-| -------- | ---------------------------------------------------------- |
-| objectid | ID dari objek yang akan di hancurkan.                      |
+| Nama     | Deskripsi                             |
+| -------- | ------------------------------------- |
+| objectid | ID dari objek yang akan di hancurkan. |
 
 ## Returns
 
@@ -27,7 +27,7 @@ public OnObjectMoved(objectid)
 }
 ```
 
-## Fungsi Terkait 
+## Fungsi Terkait
 
 - [CreateObject](CreateObject): Membuat Objek.
 - [IsValidObject](IsValidObject): Mengecek apakah objek tertentu valid.

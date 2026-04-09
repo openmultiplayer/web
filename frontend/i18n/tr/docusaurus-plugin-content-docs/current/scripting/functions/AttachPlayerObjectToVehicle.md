@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Açıklama
 
-Bir oyuncu objesini araca bağlar. 
+Bir oyuncu objesini araca bağlar.
 
 | Parametre     | Açıklama                                            |
 | ------------- | --------------------------------------------------- |

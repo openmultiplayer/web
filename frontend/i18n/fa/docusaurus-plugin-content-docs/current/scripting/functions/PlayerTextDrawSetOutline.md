@@ -9,11 +9,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 outline یک player-textdraw رو تنظیم می‌کنه. رنگ outline قابل تغییر نیست مگر اینکه از [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor) استفاده کنی.
 
-| اسم              | توضیحات                                                      |
-| ----------------- | ---------------------------------------------------------------- |
+| اسم               | توضیحات                                                           |
+| ----------------- | ----------------------------------------------------------------- |
 | playerid          | شناسه بازیکن که می‌خوای outline player-textdraw رو براش تنظیم کنی |
-| PlayerText:textid | شناسه player-textdraw که می‌خوای outline رو براش تنظیم کنی              |
-| outlineSize       | ضخامت outline.                                    |
+| PlayerText:textid | شناسه player-textdraw که می‌خوای outline رو براش تنظیم کنی        |
+| outlineSize       | ضخامت outline.                                                    |
 
 ## مقدار برگشتی
 

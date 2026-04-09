@@ -9,8 +9,8 @@ tags: ["3dtextlabel"]
 
 Obriši 3D text label (kreiran sa Create3DTextLabel).
 
-| Ime       | Deskripcija                    |
-| --------- | ------------------------------ |
+| Ime           | Deskripcija                    |
+| ------------- | ------------------------------ |
 | Text3D:textid | ID 3D text labela za obrisati. |
 
 ## Returns

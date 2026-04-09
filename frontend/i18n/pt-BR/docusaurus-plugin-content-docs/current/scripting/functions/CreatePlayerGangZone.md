@@ -11,13 +11,13 @@ tags: ["player", "gangzone", "playergangzone"]
 
 Cria uma gangzone de jogador. Isso pode ser usado como uma alternativa ao limite de gangzones globais.
 
-| Nome       | Descrição                                                         |
-| ---------- | ----------------------------------------------------------------- |
-| playerid   | O ID do jogador para quem a gangzone de jogador será criada.     |
-| Float:minX | A coordenada X para o lado oeste da gangzone de jogador.         |
-| Float:minY | A coordenada Y para o lado sul da gangzone de jogador.           |
-| Float:maxX | A coordenada X para o lado leste da gangzone de jogador.         |
-| Float:maxY | A coordenada Y para o lado norte da gangzone de jogador.         |
+| Nome       | Descrição                                                    |
+| ---------- | ------------------------------------------------------------ |
+| playerid   | O ID do jogador para quem a gangzone de jogador será criada. |
+| Float:minX | A coordenada X para o lado oeste da gangzone de jogador.     |
+| Float:minY | A coordenada Y para o lado sul da gangzone de jogador.       |
+| Float:maxX | A coordenada X para o lado leste da gangzone de jogador.     |
+| Float:maxY | A coordenada Y para o lado norte da gangzone de jogador.     |
 
 ## Retorno
 

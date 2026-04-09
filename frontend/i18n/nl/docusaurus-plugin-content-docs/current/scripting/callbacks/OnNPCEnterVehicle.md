@@ -9,10 +9,10 @@ tags: ["npc"]
 
 Deze callback wordt aangeroepen wanneer een NPC een voertuig instapt.
 
-| Naam      | Beschrijving                   |
-| --------- | ----------------------------- |
+| Naam      | Beschrijving                       |
+| --------- | ---------------------------------- |
 | vehicleid | Het vehicle ID waar de NPC instapt |
-| seatid    | De seatid die de NPC gebruikt  |
+| seatid    | De seatid die de NPC gebruikt      |
 
 ## Voorbeelden
 
@@ -27,5 +27,3 @@ public OnNPCEnterVehicle(vehicleid, seatid)
 ## Gerelateerde Callbacks
 
 - [OnNPCExitVehicle](OnNPCExitVehicle): Deze callback wordt aangeroepen wanneer een NPC een voertuig verlaat.
-
-

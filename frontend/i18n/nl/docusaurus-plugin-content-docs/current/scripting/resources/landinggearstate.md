@@ -8,9 +8,7 @@ description: Statuswaarden voor landingsgestel.
 Gebruikt door [GetVehicleLandingGearState](../functions/GetVehicleLandingGearState) en [GetPlayerLandingGearState](../functions/GetPlayerLandingGearState).
 :::
 
-| Definitie              | ID |
-| ---------------------- | -- |
-| LANDING_GEAR_STATE_DOWN| 0  |
-| LANDING_GEAR_STATE_UP  | 1  |
-
-
+| Definitie               | ID  |
+| ----------------------- | --- |
+| LANDING_GEAR_STATE_DOWN | 0   |
+| LANDING_GEAR_STATE_UP   | 1   |

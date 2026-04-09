@@ -9,8 +9,8 @@ tags: ["sqlite"]
 
 Libera a memória do resultado alocada de DB_ExecuteQuery.
 
-| Nome              | Descrição                                                              |
-| ----------------- | ---------------------------------------------------------------------- |
+| Nome              | Descrição                                                                            |
+| ----------------- | ------------------------------------------------------------------------------------ |
 | DBResult:dbresult | O conjunto de resultados para liberar alocado por [DB_ExecuteQuery](DB_ExecuteQuery) |
 
 ## Retorno

@@ -11,9 +11,9 @@ tags: ["math", "floating-point"]
 
 Ibinabalik ng function na ito ang absolute value ng float.
 
-| Name        | Description                                   |
-| ----------- | --------------------------------------------- |
-| Float:value | Ang float value para makuha ang absolute value ng.|
+| Name        | Description                                        |
+| ----------- | -------------------------------------------------- |
+| Float:value | Ang float value para makuha ang absolute value ng. |
 
 ## Returns
 

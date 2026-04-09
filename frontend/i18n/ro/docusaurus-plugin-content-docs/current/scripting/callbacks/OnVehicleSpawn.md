@@ -15,9 +15,9 @@ Acest callback se numește **doar** când vehiculul **re**apare! CreateVehicle �
 
 Acest callback este apelat atunci când un vehicul reapare.
 
-| Nume      | Descriere                           |
-| --------- | ----------------------------------- |
-| vehicleid | ID-ul vehiculului care a apărut.    |
+| Nume      | Descriere                        |
+| --------- | -------------------------------- |
+| vehicleid | ID-ul vehiculului care a apărut. |
 
 ## Returnări
 

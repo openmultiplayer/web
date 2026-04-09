@@ -9,17 +9,17 @@ tags: ["3dtextlabel"]
 
 Cria um rótulo de texto 3D em uma localização específica no mundo
 
-| Nome               | Descrição                                                                      |
-| ------------------ | ------------------------------------------------------------------------------ |
-| const text[]       | A string de texto inicial.                                                     |
-| colour             | A cor do texto, como um inteiro ou hex no formato de cor RGBA                 |
-| Float:x            | Coordenada X                                                                   |
-| Float:y            | Coordenada Y                                                                   |
-| Float:z            | Coordenada Z                                                                   |
-| Float:drawDistance | A distância a partir da qual você pode ver o rótulo de texto 3D               |
-| virtualWorld       | O mundo virtual no qual você pode ver o texto 3D                              |
+| Nome               | Descrição                                                                                      |
+| ------------------ | ---------------------------------------------------------------------------------------------- |
+| const text[]       | A string de texto inicial.                                                                     |
+| colour             | A cor do texto, como um inteiro ou hex no formato de cor RGBA                                  |
+| Float:x            | Coordenada X                                                                                   |
+| Float:y            | Coordenada Y                                                                                   |
+| Float:z            | Coordenada Z                                                                                   |
+| Float:drawDistance | A distância a partir da qual você pode ver o rótulo de texto 3D                                |
+| virtualWorld       | O mundo virtual no qual você pode ver o texto 3D                                               |
 | bool:testLOS       | Testa a linha de visão para que este texto não possa ser visto através de objetos (true/false) |
-| OPEN_MP_TAGS:...   | Número indefinido de argumentos de qualquer tag.                              |
+| OPEN_MP_TAGS:...   | Número indefinido de argumentos de qualquer tag.                                               |
 
 ## Retorno
 

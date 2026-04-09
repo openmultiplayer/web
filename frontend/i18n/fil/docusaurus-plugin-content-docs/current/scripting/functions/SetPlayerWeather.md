@@ -9,10 +9,10 @@ tags: ["player"]
 
 Magtakda ng panahon ng manlalaro.
 
-| Name     | Description                                    |
-| -------- | ---------------------------------------------- |
-| playerid | Ang ID ng player na ang panahon ay itatakda.   |
-| weather  | Ang [weather](../resources/weatherid) na itatakda.|
+| Name     | Description                                        |
+| -------- | -------------------------------------------------- |
+| playerid | Ang ID ng player na ang panahon ay itatakda.       |
+| weather  | Ang [weather](../resources/weatherid) na itatakda. |
 
 ## Returns
 

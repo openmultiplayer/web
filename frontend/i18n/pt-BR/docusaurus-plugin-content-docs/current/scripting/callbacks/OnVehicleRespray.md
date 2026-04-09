@@ -9,12 +9,12 @@ tags: ["vehicle"]
 
 Essa callback é chamada quando um jogador sai de uma Garagem de Personalização, mesmo sem trocar cores. Cuidado, Oficinas de Pintura não chamam essa callback nativamente.
 
-| Nome      | Descrição                                                    |
-| --------- | ------------------------------------------------------------ |
-| playerid  | ID do jogador que está dirigindo o veículo.                  |
-| vehicleid | ID do veículo que foi repintado.                             |
-| color1    | Nova cor primária pintada no veículo.                        | 
-| color2    | Nova cor secundária pintada no veículo.                      | 
+| Nome      | Descrição                                   |
+| --------- | ------------------------------------------- |
+| playerid  | ID do jogador que está dirigindo o veículo. |
+| vehicleid | ID do veículo que foi repintado.            |
+| color1    | Nova cor primária pintada no veículo.       |
+| color2    | Nova cor secundária pintada no veículo.     |
 
 ## Retornos
 

@@ -9,15 +9,15 @@ tags: ["player", "object"]
 
 Callback này được gọi khi người chơi chọn một đối tượng sau khi [BeginObjectSelecting](../functions/BeginObjectSelecting) đã được sử dụng.
 
-| Tên                | Mô tả                                                |
-|--------------------|------------------------------------------------------|
-| playerid           | ID của người chơi đã chọn một đối tượng              |
-| SELECT_OBJECT:type | [Loại](../resources/selectobjecttypes) lựa chọn      |
-| objectid           | ID của đối tượng đã chọn                             |
-| modelid            | Mẫu của đối tượng đã chọn                            |
-| Float:fX           | Vị trí X của đối tượng đã chọn                       |
-| Float:fY           | Vị trí Y của đối tượng đã chọn                       |
-| Float:fZ           | Vị trí Z của đối tượng đã chọn                       |
+| Tên                | Mô tả                                           |
+| ------------------ | ----------------------------------------------- |
+| playerid           | ID của người chơi đã chọn một đối tượng         |
+| SELECT_OBJECT:type | [Loại](../resources/selectobjecttypes) lựa chọn |
+| objectid           | ID của đối tượng đã chọn                        |
+| modelid            | Mẫu của đối tượng đã chọn                       |
+| Float:fX           | Vị trí X của đối tượng đã chọn                  |
+| Float:fY           | Vị trí Y của đối tượng đã chọn                  |
+| Float:fZ           | Vị trí Z của đối tượng đã chọn                  |
 
 ## Giá trị trả về
 
@@ -50,7 +50,7 @@ public OnPlayerSelectObject(playerid, SELECT_OBJECT:type, objectid, modelid, Flo
 
 ## Các Hàm liên quan
 
-Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó. 
+Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [BeginObjectSelecting](../functions/BeginObjectSelecting): Chọn một đối tượng.
 

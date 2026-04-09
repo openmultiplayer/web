@@ -9,11 +9,11 @@ tags: ["player"]
 
 Bir oyuncunun silahındaki mermi sayısını ayarlar.
 
-| Parametre | Açıklama                                                                         |
-| --------  | -------------------------------------------------------------------------------- |
-| playerid  | Silahının mermisi ayarlanacak oyuncunun ID'si.                                   |
-| weaponid  | Mermisi ayarlanacak silahın ID'si. (silah slotu değil)                           |
-| ammo      | Ayarlanacak merminin miktarı.                                                    |
+| Parametre | Açıklama                                               |
+| --------- | ------------------------------------------------------ |
+| playerid  | Silahının mermisi ayarlanacak oyuncunun ID'si.         |
+| weaponid  | Mermisi ayarlanacak silahın ID'si. (silah slotu değil) |
+| ammo      | Ayarlanacak merminin miktarı.                          |
 
 ## Çalışınca Vereceği Sonuçlar
 

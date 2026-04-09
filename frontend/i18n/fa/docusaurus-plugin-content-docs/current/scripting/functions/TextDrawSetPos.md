@@ -11,11 +11,11 @@ tags: ["textdraw"]
 
 موقعیت (مختصات x و y روی صفحه) یک textdraw رو تنظیم می‌کنه.
 
-| نام         | توضیحات                                    |
-| ----------- | ------------------------------------------ |
+| نام         | توضیحات                                         |
+| ----------- | ----------------------------------------------- |
 | Text:textid | ID textdraw ای که می‌خوای موقعیتش رو تنظیم کنی. |
-| Float:x     | مختصات X.                              |
-| Float:y     | مختصات Y.                              |
+| Float:x     | مختصات X.                                       |
+| Float:y     | مختصات Y.                                       |
 
 ## مثال‌ها
 
@@ -25,7 +25,7 @@ new Text:gMyTextdraw;
 public OnGameModeInit()
 {
     gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
-    
+
     TextDrawSetPos(gMyTextdraw, 200.0, 50.0);
     return 1;
 }

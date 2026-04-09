@@ -11,9 +11,9 @@ tags: ["player"]
 
 دریافت offsetهای surfing بازیکن.
 
-| نام           | توضیحات                                                                      |
-|----------------|----------------------------------------------------------------------------------|
-| playerid       | ID بازیکن.                                                            |
+| نام            | توضیحات                                                                    |
+| -------------- | -------------------------------------------------------------------------- |
+| playerid       | ID بازیکن.                                                                 |
 | &Float:offsetX | متغیر float برای ذخیره مختصات offset X، به صورت reference پاس داده می‌شود. |
 | &Float:offsetY | متغیر float برای ذخیره مختصات offset Y، به صورت reference پاس داده می‌شود. |
 | &Float:offsetZ | متغیر float برای ذخیره مختصات offset Z، به صورت reference پاس داده می‌شود. |
@@ -28,13 +28,13 @@ tags: ["player"]
 new surfingVehicleId = GetPlayerSurfingVehicleID(playerid);
 if (surfingVehicleId != INVALID_VEHICLE_ID)
 {
-    new 
+    new
         Float:offsetX,
         Float:offsetY,
         Float:offsetZ;
 
     GetPlayerSurfingOffsets(playerid, offsetX, offsetY, offsetZ);
-    
+
     SendClientMessage(playerid, -1, "offsetX = %.2f offsetY = %.2f offsetZ = %.2f", offsetX, offsetY, offsetZ);
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: AddPlayerClass
 sidebar_label: AddPlayerClass
-description : Ajoute une classe à la sélection de classes.
+description: Ajoute une classe à la sélection de classes.
 tags: ["player"]
 ---
 
@@ -9,19 +9,19 @@ tags: ["player"]
 
 Ajoute une classe à la sélection de classe. Les classes sont utilisées pour que les joueurs puissent apparaître avec un skin de leur choix.
 
-| Nom            | Description                                                         |
-| -------------- | ------------------------------------------------------------------- |
-| modelid        | Le skin avec lequel le joueur apparaîtra.                           |
-| Float:spawn_x  | La coordonnée X du spawnpoint de cette classe.                      |
-| Float:spawn_y  | La coordonnée Y du spawnpoint de cette classe.                      |
-| Float:spawn_z  | La coordonnée Z du spawnpoint de cette classe.                      |
-| Float:z_angle  | La direction dans laquelle le joueur doit faire face après le frai. |
-| weapon1        | La première arme d'apparition pour le joueur.                       |
-| weapon1_ammo   | La quantité de munitions pour l'arme d'apparition principale.       |
-| weapon2        | La deuxième arme d'apparition pour le joueur.                       |
-| weapon2_ammo   | La quantité de munitions pour la deuxième arme d'apparition.        |
-| weapon3        | La troisième arme d'apparition pour le joueur.                      |
-| weapon3_ammo   | La quantité de munitions pour la troisième arme d'apparition.       |
+| Nom           | Description                                                         |
+| ------------- | ------------------------------------------------------------------- |
+| modelid       | Le skin avec lequel le joueur apparaîtra.                           |
+| Float:spawn_x | La coordonnée X du spawnpoint de cette classe.                      |
+| Float:spawn_y | La coordonnée Y du spawnpoint de cette classe.                      |
+| Float:spawn_z | La coordonnée Z du spawnpoint de cette classe.                      |
+| Float:z_angle | La direction dans laquelle le joueur doit faire face après le frai. |
+| weapon1       | La première arme d'apparition pour le joueur.                       |
+| weapon1_ammo  | La quantité de munitions pour l'arme d'apparition principale.       |
+| weapon2       | La deuxième arme d'apparition pour le joueur.                       |
+| weapon2_ammo  | La quantité de munitions pour la deuxième arme d'apparition.        |
+| weapon3       | La troisième arme d'apparition pour le joueur.                      |
+| weapon3_ammo  | La quantité de munitions pour la troisième arme d'apparition.       |
 
 ## Retour
 

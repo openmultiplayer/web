@@ -33,7 +33,7 @@ valstr(string, value); // string is now "250"
 
 :::warning
 
-Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). [fixes.inc](https://github.com/pawn-lang/sa-mp-fixes) includes this fix.
+Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). open.mp includes this fix.
 
 ```c
 // valstr fix by Slice

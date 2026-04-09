@@ -9,13 +9,13 @@ tags: ["player", "3dtextlabel"]
 
 Prikvači 3D tekst label za igrača.
 
-| Ime       | Deskripcija                                                                            |
-| --------- | -------------------------------------------------------------------------------------- |
+| Ime           | Deskripcija                                                                            |
+| ------------- | -------------------------------------------------------------------------------------- |
 | Text3D:textid | ID 3D tekst labela kojeg želite prikvačiti. Returnovan(uzvraćen) od Create3DTextLabel. |
-| playerid  | ID igrača za kojeg želite prikvačiti label.                                            |
-| OffsetX   | X kordinata igrača.                                                                    |
-| OffsetY   | Y kordinata igrača.                                                                    |   
-| OffsetZ   | Z kordinata igrača.                                                                    |
+| playerid      | ID igrača za kojeg želite prikvačiti label.                                            |
+| OffsetX       | X kordinata igrača.                                                                    |
+| OffsetY       | Y kordinata igrača.                                                                    |
+| OffsetZ       | Z kordinata igrača.                                                                    |
 
 ## Returns
 

@@ -11,10 +11,10 @@ tags: []
 
 Dieses Callback wird ausgeführt wenn ein Actor von einem Spieler gestreamt wird.
 
-| Name        | Beschreibung                                                   |
-| ----------- | ------------------------------------------------------------- |
+| Name        | Beschreibung                                      |
+| ----------- | ------------------------------------------------- |
 | actorid     | Die ID des Actors der vom Spieler gestreamt wird. |
-| forplayerid | Die ID des Spielers der den Actor gestreamt hat.              |
+| forplayerid | Die ID des Spielers der den Actor gestreamt hat.  |
 
 ## Rückgabe(return value)
 

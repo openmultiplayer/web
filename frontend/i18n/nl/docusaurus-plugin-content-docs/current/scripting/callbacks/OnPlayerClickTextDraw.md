@@ -9,9 +9,9 @@ tags: ["player", "textdraw"]
 
 Deze callback wordt aangeroepen wanneer een speler op een textdraw klikt of de selectiemodus annuleert met de Escape-toets.
 
-| Naam           | Beschrijving                                                                   |
-| -------------- | ----------------------------------------------------------------------------- |
-| playerid       | Het ID van de speler die op de textdraw klikte.                               |
+| Naam           | Beschrijving                                                                      |
+| -------------- | --------------------------------------------------------------------------------- |
+| playerid       | Het ID van de speler die op de textdraw klikte.                                   |
 | Text:clickedid | Het ID van de geklikte textdraw. INVALID_TEXT_DRAW als selectie werd geannuleerd. |
 
 ## Returns

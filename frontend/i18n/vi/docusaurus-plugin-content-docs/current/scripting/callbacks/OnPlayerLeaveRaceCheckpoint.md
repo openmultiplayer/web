@@ -9,8 +9,8 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 Callback này được gọi khi một người chơi rời khỏi checkpoint đua.
 
-| Tên      | Mô Tả                                               |
-| -------- | --------------------------------------------------- |
+| Tên      | Mô Tả                                         |
+| -------- | --------------------------------------------- |
 | playerid | ID của người chơi đã rời khỏi checkpoint đua. |
 
 ## Trả Về

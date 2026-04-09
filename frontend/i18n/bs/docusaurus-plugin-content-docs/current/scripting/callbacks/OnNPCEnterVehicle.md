@@ -9,10 +9,10 @@ tags: ["npc"]
 
 Ovaj callback je pozvan kada NPC uđe u vozilo.
 
-| Ime          | Deskripcija                                             |
-| ------------ | ------------------------------------------------------- |
-| vehicleid    | ID vozila u koje NPC ulazi.                             |
-| seatid       | ID sjedišta na kojem NPC sjedi.                         |
+| Ime       | Deskripcija                     |
+| --------- | ------------------------------- |
+| vehicleid | ID vozila u koje NPC ulazi.     |
+| seatid    | ID sjedišta na kojem NPC sjedi. |
 
 ## Primjeri
 

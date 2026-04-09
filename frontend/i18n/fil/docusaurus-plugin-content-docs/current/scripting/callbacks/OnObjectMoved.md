@@ -9,9 +9,9 @@ tags: []
 
 Ang callback na ito ay itinatawag kapag ang object ay iginalaw pagkatapos ang MoveObject (kapag natapos na itong gumalaw).
 
-| Name     | Description                         |
-| -------- | ----------------------------------- |
-| objectid | Ang ID ng object na iginalaw        |
+| Name     | Description                  |
+| -------- | ---------------------------- |
+| objectid | Ang ID ng object na iginalaw |
 
 ## Returns
 

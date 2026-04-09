@@ -9,13 +9,13 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător primește daune.
 
-| Nume            | Descriere                                                                                                                                                         |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| playerid        | ID-ul jucătorului care a suferit daune.                                                                                                                           |
-| issuerid        | ID-ul jucătorului care a cauzat prejudiciul. INVALID_PLAYER_ID dacă este autoprovocat.                                                                            |
-| Float:amount    | Cantitatea de daune suferite de jucător (sănătate și armură combinate).                                                                                           |
-| WEAPON:weaponid | ID-ul armei/motivul pagubei.                                                                                                                                      |
-| bodypart        | [partea corpului](../resources/bodyparts) care a fost lovită. |
+| Nume            | Descriere                                                                              |
+| --------------- | -------------------------------------------------------------------------------------- |
+| playerid        | ID-ul jucătorului care a suferit daune.                                                |
+| issuerid        | ID-ul jucătorului care a cauzat prejudiciul. INVALID_PLAYER_ID dacă este autoprovocat. |
+| Float:amount    | Cantitatea de daune suferite de jucător (sănătate și armură combinate).                |
+| WEAPON:weaponid | ID-ul armei/motivul pagubei.                                                           |
+| bodypart        | [partea corpului](../resources/bodyparts) care a fost lovită.                          |
 
 ## Returnări
 

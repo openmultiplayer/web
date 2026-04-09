@@ -11,7 +11,7 @@ tags: []
 
 Dieses Callback wird ausgeführt, wenn ein Actor nicht länger von einem Spieler gestreamt wird.
 
-| Name        | Beschreibung                                                    |
+| Name        | Beschreibung                                                   |
 | ----------- | -------------------------------------------------------------- |
 | actorid     | Die ID des Actors der nicht länger vom Spieler gestreamt wird. |
 | forplayerid | Die ID des Spielers der den Actor gestreamt hatte              |

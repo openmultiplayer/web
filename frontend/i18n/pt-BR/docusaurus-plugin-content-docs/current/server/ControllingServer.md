@@ -180,11 +180,11 @@ Estas são as funções que você como admin pode usar:
 | `/rcon reloadfs`                  | Recarrega o determinado filterscript (_exemplo: /rcon reloadfs adminfs_).                           |
 | `/rcon rcon\_password [PASSWORD]` | Muda a senha do RCON                                                                                |
 | `/rcon password [password]`       | Coloca/Reseta a senha do servidor                                                                   |
-| `/rcon messageslimit [count]`     | Muda o número e mensagens por segundo que um jogador pode enviar. (padrão: 500) |
-| `/rcon ackslimit [count]`         | Muda o limite de acks (padrão: 3000)  |
-| `/rcon messageholelimit [count]`  | Muda o limite dos "buracos" na mensagem: (padrão: 3000) |
-| `/rcon playertimeout [limit m/s]` | Muda o tempo em milisegundos quando um jogador cai. (padrão: 1000)              |
-| `/rcon language [language]`       | Muda a língua do servidor (_example: /rcon language English_).                  |
+| `/rcon messageslimit [count]`     | Muda o número e mensagens por segundo que um jogador pode enviar. (padrão: 500)                     |
+| `/rcon ackslimit [count]`         | Muda o limite de acks (padrão: 3000)                                                                |
+| `/rcon messageholelimit [count]`  | Muda o limite dos "buracos" na mensagem: (padrão: 3000)                                             |
+| `/rcon playertimeout [limit m/s]` | Muda o tempo em milisegundos quando um jogador cai. (padrão: 1000)                                  |
+| `/rcon language [language]`       | Muda a língua do servidor (_example: /rcon language English_).                                      |
 
 ### Funções e Callbacks relacionadas
 

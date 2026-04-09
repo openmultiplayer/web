@@ -9,11 +9,11 @@ tags: ["player"]
 
 Oyuncu interior değiştirdiğinde çalışır. SetPlayerInterior tarafından ya da oyuncu bir interiora girip/çıktığı zaman tetiklenebilir.
 
-| Parametre          | Açıklama                               |
-| ------------- | -------------------------------------- |
-| playerid      | Interioru değişen oyuncu.              |
-| newinteriorid | Oyuncunun şu an bulunduğu interior.    |
-| oldinteriorid | Oyuncunun daha önce bulunduğu interior.|
+| Parametre     | Açıklama                                |
+| ------------- | --------------------------------------- |
+| playerid      | Interioru değişen oyuncu.               |
+| newinteriorid | Oyuncunun şu an bulunduğu interior.     |
+| oldinteriorid | Oyuncunun daha önce bulunduğu interior. |
 
 ## Çalışınca Vereceği Sonuçlar
 

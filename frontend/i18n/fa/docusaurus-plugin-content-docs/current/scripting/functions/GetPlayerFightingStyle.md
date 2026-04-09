@@ -9,8 +9,8 @@ tags: ["player"]
 
 استایل جنگی که در حال حاضر بازیکن از آن استفاده می‌کند را دریافت کنید.
 
-| نام      | توضیحات                                            |
-| -------- | ------------------------------------------------- |
+| نام      | توضیحات                                                   |
+| -------- | --------------------------------------------------------- |
 | playerid | شناسه بازیکنی که می‌خواهید استایل جنگی‌اش را دریافت کنید. |
 
 ## مقدار بازگشتی
@@ -56,7 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
                 styleName = "elbow";
             }
         }
-        
+
         format(string, sizeof(string), "You are using %s fighting style!", styleName);
         SendClientMessage(playerid, 0xFFFFFFAA, string);
         return 1;

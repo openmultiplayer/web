@@ -9,10 +9,10 @@ tags: ["player"]
 
 I-set ang score ng player. Ang mga player scores ay ipinapakita sa scoreboard (ipinapakita sa pamamagitan ng pagpindot sa TAB key).
 
-| Name     | Description                               |
-| -------- | ----------------------------------------- |
-| playerid | Ang ID ng player na i-seset ang score.    |
-| score    | Ang value ng score na i-seset sa player   |
+| Name     | Description                             |
+| -------- | --------------------------------------- |
+| playerid | Ang ID ng player na i-seset ang score.  |
+| score    | Ang value ng score na i-seset sa player |
 
 ## Returns
 

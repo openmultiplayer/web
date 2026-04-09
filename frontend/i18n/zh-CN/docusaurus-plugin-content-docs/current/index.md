@@ -15,9 +15,12 @@ sidebar_position: 1
 
 遗憾的是，原 SA-MP Wiki 已于 2020 年 9 月下旬下线，后以不可编辑的存档形式恢复。
 
-我们需要社区的力量将原 Wiki 内容迁移至这个新家！若你有意参与，请查阅[贡献指南](/docs/meta/Contributing)了解详情。
+~~我们需要社区的力量将原 Wiki 内容迁移至这个新家！~~
+衷心感谢社区！原 Wiki 内容已迁移至此。
 
-如果你不熟悉 GitHub 使用或 HTML 转换也无需担心！你可以通过以下方式提供帮助：
+若你有意参与，请查阅[贡献指南](/docs/meta/Contributing)了解详情。
+
+如果你不熟悉 GitHub 使用也无需担心！你可以通过以下方式提供帮助：
 
 - 通过 [Discord](https://discord.gg/samp)、[论坛](https://forum.open.mp) 或社交媒体反馈问题
 - 最重要的事：_广而告之！_ 欢迎收藏本站并分享给所有寻找 SA-MP Wiki 下落的开发者

@@ -41,5 +41,3 @@ Het SVar-systeem werkt hetzelfde als PVars, maar de variabelen zijn server-breed
 - [SetSVarFloat](../scripting/functions/SetSVarFloat): stel een float in voor een servervariabele.
 - [GetSVarFloat](../scripting/functions/GetSVarFloat): haal de eerder ingestelde float op van een servervariabele.
 - [DeleteSVar](../scripting/functions/DeleteSVar): verwijder een servervariabele.
-
-

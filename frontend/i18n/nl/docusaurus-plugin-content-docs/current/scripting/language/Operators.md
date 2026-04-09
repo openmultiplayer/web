@@ -97,5 +97,3 @@ else
     print("geen float");
 }
 ```
-
-

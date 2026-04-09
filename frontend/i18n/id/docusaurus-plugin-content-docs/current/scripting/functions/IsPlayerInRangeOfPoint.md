@@ -9,13 +9,13 @@ tags: ["player"]
 
 Memeriksa apakah pemain berada dalam jangkauan suatu titik. Fungsi asalnya lebih cepat dari pada implementasi PAWN menggunakan rumus jarak.
 
-| Nama        | Deskripsi                                                            |
-| ----------- | ---------------------------------------------------------------------- |
-| playerid    | ID dari pemain                                                  |
+| Nama        | Deskripsi                                                  |
+| ----------- | ---------------------------------------------------------- |
+| playerid    | ID dari pemain                                             |
 | Float:range | Jarak terjauh pemain dapat berada di titik dalam jangkauan |
-| Float:x     | Kordinat x dari titik untuk mengecek jangkauan                   |
-| Float:y     | Kordinat y dari titik untuk mengecek jangkauan                   |
-| Float:z     | Kordinat z dari titik untuk mengecek jangkauan                   |
+| Float:x     | Kordinat x dari titik untuk mengecek jangkauan             |
+| Float:y     | Kordinat y dari titik untuk mengecek jangkauan             |
+| Float:z     | Kordinat z dari titik untuk mengecek jangkauan             |
 
 ## Returns
 

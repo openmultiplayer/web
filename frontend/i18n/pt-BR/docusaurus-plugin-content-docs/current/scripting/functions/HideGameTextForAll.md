@@ -11,9 +11,9 @@ tags: ["player", "gametext"]
 
 Interrompe a exibição de um estilo de gametext para todos os jogadores.
 
-| Nome           | Descrição                                                      |
-| -------------- | ----------------------------------------------------------------- |
-| style          | O [estilo](../resources/gametextstyles) de texto a esconder.         |
+| Nome  | Descrição                                                    |
+| ----- | ------------------------------------------------------------ |
+| style | O [estilo](../resources/gametextstyles) de texto a esconder. |
 
 ## Retornos
 

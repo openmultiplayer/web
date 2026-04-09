@@ -8,11 +8,11 @@ tags: []
 
 Este callback se llama cuando alguien intenta identificarse como RCON adentro del juego, sin importar si tiene éxito o no.
 
-| Nombre     | Descripción                                             |
-| ---------- | ------------------------------------------------------- |
-| ip[]       | La IP del jugador que intenta identificarse como RCON.  |
-| password[] | La contraseña que fue usada para intentar logearse.     |
-| success    | 0 si la contraseña fue incorrecta o 1 si fue correcta.  |
+| Nombre     | Descripción                                            |
+| ---------- | ------------------------------------------------------ |
+| ip[]       | La IP del jugador que intenta identificarse como RCON. |
+| password[] | La contraseña que fue usada para intentar logearse.    |
+| success    | 0 si la contraseña fue incorrecta o 1 si fue correcta. |
 
 ## Devoluciones
 

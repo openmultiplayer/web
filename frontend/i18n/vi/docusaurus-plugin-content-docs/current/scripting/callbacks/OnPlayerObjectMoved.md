@@ -9,9 +9,9 @@ tags: ["player", "object", "playerobject"]
 
 Callback này được gọi khi một đối tượng của người chơi được di chuyển sau khi [MovePlayerObject](../functions/MovePlayerObject) (khi nó ngừng di chuyển).
 
-| Tên      | Mô Tả                                     |
-| -------- | ----------------------------------------- |
-| playerid | ID của người chơi mà đối tượng được gán cho |
+| Tên      | Mô Tả                                         |
+| -------- | --------------------------------------------- |
+| playerid | ID của người chơi mà đối tượng được gán cho   |
 | objectid | ID của đối tượng người chơi đã được di chuyển |
 
 ## Trả Về

@@ -11,9 +11,9 @@ tags: ["player"]
 
 O jogador pode usar armas?
 
-| Nome     | Descrição                        |
-| -------- | -------------------------------- |
-| playerid | O ID do jogador para verificar.  |
+| Nome     | Descrição                       |
+| -------- | ------------------------------- |
+| playerid | O ID do jogador para verificar. |
 
 ## Retorno
 

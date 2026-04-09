@@ -9,16 +9,16 @@ tags: ["vehicle"]
 
 Prikvači objekat za vozilo.
 
-| Ime           | Deskripcija                                                                                                                                   |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| objectid      | ID objekta kojeg želite prikvačiti za vozilo. Zapamtite da je ovo ID objekta, ne modela. Objekat prvo mora biti kreiran preko CreateObject.   |
-| vehicleid     | ID vozila za koje želite prikvačiti objekat.                                                                                                  |
-| Float:OffsetX | Osa X pomaknuta od vozila do objekta za prikvačiti.                                                                                           |
-| Float:OffsetY | Osa Y pomaknuta od vozila do objekta za prikvačiti.                                                                                           |
-| Float:OffsetZ | Osa Z pomaknuta od vozila do objekta za prikvačiti.                                                                                           |
-| Float:RotX    | Pomak X rotacije za objekt.                                                                                                                   |
-| Float:RotY    | Pomak Y rotacije za objekt.                                                                                                                   |
-| Float:RotZ    | Pomak Z rotacije za objekt.                                                                                                                   |
+| Ime           | Deskripcija                                                                                                                                 |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| objectid      | ID objekta kojeg želite prikvačiti za vozilo. Zapamtite da je ovo ID objekta, ne modela. Objekat prvo mora biti kreiran preko CreateObject. |
+| vehicleid     | ID vozila za koje želite prikvačiti objekat.                                                                                                |
+| Float:OffsetX | Osa X pomaknuta od vozila do objekta za prikvačiti.                                                                                         |
+| Float:OffsetY | Osa Y pomaknuta od vozila do objekta za prikvačiti.                                                                                         |
+| Float:OffsetZ | Osa Z pomaknuta od vozila do objekta za prikvačiti.                                                                                         |
+| Float:RotX    | Pomak X rotacije za objekt.                                                                                                                 |
+| Float:RotY    | Pomak Y rotacije za objekt.                                                                                                                 |
+| Float:RotZ    | Pomak Z rotacije za objekt.                                                                                                                 |
 
 ## Returns
 

@@ -9,9 +9,9 @@ tags: ["menu"]
 
 Uništava navedeni meni.
 
-| Ime    | Deskripcija            |
-| ------ | ---------------------- |
-| menuid | ID meni-a za uništiti  |
+| Ime    | Deskripcija           |
+| ------ | --------------------- |
+| menuid | ID meni-a za uništiti |
 
 ## Returns
 

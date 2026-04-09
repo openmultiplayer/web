@@ -9,7 +9,6 @@ tags: ["npc"]
 
 Este callabck es llamado cuando un NPC se cargó.
 
-
 ## Ejemplos
 
 ```c

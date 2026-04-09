@@ -11,7 +11,7 @@ tags: ["textdraw"]
 
 | پارامتر                   | توضیحات                                                                     |
 | ------------------------- | --------------------------------------------------------------------------- |
-| Text:textid               | شناسه textdraw برای تنظیم تراز آن.                                           |
+| Text:textid               | شناسه textdraw برای تنظیم تراز آن.                                          |
 | TEXT_DRAW_ALIGN:alignment | `TEXT_DRAW_ALIGN_LEFT` / `TEXT_DRAW_ALIGN_CENTER` / `TEXT_DRAW_ALIGN_RIGHT` |
 
 ## مقدار بازگشتی

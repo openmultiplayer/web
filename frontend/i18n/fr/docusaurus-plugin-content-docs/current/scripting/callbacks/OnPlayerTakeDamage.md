@@ -9,13 +9,13 @@ tags: ["player"]
 
 Cette callback est appelée lorsqu'un joueur prends des degats..
 
-| Nom                   | Description                                                                                                                                            |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `int` playerid        | L'ID du joueur qui prends les dégats.                                                                                                                  |
-| `int` issuerid        | L'ID du joueur qui cause les dégats. Si il vaut INVALID_PLAYER_ID, le joueur les a infligés lui même.                                                  |
-| `float` Float:amount  | Le montant des dégats reçus _(vie et armure combinés)_.                                                                                                |
-| `int` WEAPON:weaponid | L'ID de l'arme/la raison qui a causé les dégats.                                                                                                       |
-| `int` bodypart        | La partie du corps qui s'est faite touchée. |
+| Nom                   | Description                                                                                           |
+| --------------------- | ----------------------------------------------------------------------------------------------------- |
+| `int` playerid        | L'ID du joueur qui prends les dégats.                                                                 |
+| `int` issuerid        | L'ID du joueur qui cause les dégats. Si il vaut INVALID_PLAYER_ID, le joueur les a infligés lui même. |
+| `float` Float:amount  | Le montant des dégats reçus _(vie et armure combinés)_.                                               |
+| `int` WEAPON:weaponid | L'ID de l'arme/la raison qui a causé les dégats.                                                      |
+| `int` bodypart        | La partie du corps qui s'est faite touchée.                                                           |
 
 ## Valeur de retour
 
@@ -37,12 +37,12 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
             weaponName[24],
             victimName[MAX_PLAYER_NAME],
             attackerName[MAX_PLAYER_NAME];
- 
+
         GetPlayerName(playerid, victimName, sizeof (victimName));
         GetPlayerName(issuerid, attackerName, sizeof (attackerName));
- 
+
         GetWeaponName(weaponid, weaponName, sizeof (weaponName));
- 
+
         format(infoString, sizeof(infoString), "%s a proféré %.0f dégats à %s, arme: %s", attackerName, amount, victimName, weaponName);
         SendClientMessageToAll(-1, infoString);
     }
@@ -76,7 +76,7 @@ Le montant est toujours le maximum de dégâts que l'arme peut faire, même si l
 
 :::warning
 
-GetPlayerHealth et GetPlayerArmour renverront les anciens montants du joueur avant cette callback. 
+GetPlayerHealth et GetPlayerArmour renverront les anciens montants du joueur avant cette callback.
 
 Vérifiez toujours si `issuerid` est valide avant de l'utiliser comme index de tableau.
 

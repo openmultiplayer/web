@@ -58,7 +58,6 @@ Checkpoint-ови су асинхрони, што значи да се само 
 
 :::
 
-
 ## Повезане функције
 
 - [DisablePlayerCheckpoint](DisablePlayerCheckpoint): Искључи тренутни checkpoint играча.

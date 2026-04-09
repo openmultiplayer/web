@@ -9,17 +9,17 @@ tags: ["player"]
 
 Callback ini akan terpanggil ketika pemain lain berada di jangkauan stream dari klien pemain.
 
-
-| Nama        | Deskripsi                                                 |
-| ----------- | ------------------------------------------------------ |
+| Nama        | Deskripsi                                                             |
+| ----------- | --------------------------------------------------------------------- |
 | playerid    | ID dari pemain lain yang berada dalam jangakauan stream klien pemain. |
-| forplayerid | ID dari pemain yang berada di jangkauan stream pemain lain. |
+| forplayerid | ID dari pemain yang berada di jangkauan stream pemain lain.           |
 
 ## Returns
 
 Ini akan selalu terpanggil pertama di filterscripts
 
 ## Contoh
+
 ```c
 public OnPlayerStreamIn(playerid, forplayerid)
 {
@@ -37,6 +37,5 @@ public OnPlayerStreamIn(playerid, forplayerid)
 Callback ini akan terpanggil juga oleh NPC.
 
 :::
-
 
 ## Fungsi Terkait

@@ -8,9 +8,9 @@ tags: ["player", "menu"]
 
 Se llama cuando un jugador sale de un menú.
 
-| Nombre   | Descripción                               |
-| -------- | ----------------------------------------- |
-| playerid | El ID del jugador que salió del menú.     |
+| Nombre   | Descripción                           |
+| -------- | ------------------------------------- |
+| playerid | El ID del jugador que salió del menú. |
 
 ## Devoluciones
 

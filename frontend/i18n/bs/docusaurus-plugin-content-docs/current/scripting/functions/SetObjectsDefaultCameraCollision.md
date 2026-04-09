@@ -12,7 +12,7 @@ tags: ["object", "camera"]
 Omogućuje da se sudari kamere s novostvorenim objektima onemoguće prema zadanim postavkama.
 
 | Ime          | Deskripcija                                                                                                                              |
-|--------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | bool:disable | `true` za onemogućavanje koliziju kamere za novostvorene objekte i `false` za njihovo omogućavanje (omogućeno prema zadanim postavkama). |
 
 ## Returnovi

@@ -121,5 +121,3 @@ Speciale tags voor GameText-kleuren:
 ```
 
 Combinaties vormen varianten, bijvoorbeeld `~r~~h~` voor lichtrood.
-
-

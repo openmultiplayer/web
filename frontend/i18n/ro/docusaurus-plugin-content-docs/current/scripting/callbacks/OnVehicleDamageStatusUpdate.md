@@ -15,8 +15,8 @@ Pentru câteva funcții utile pentru lucrul cu valorile daunelor vehiculului, co
 
 This callback is called when a vehicle element such as doors, tires, panels, or lights change their damage status.
 
-| Nume      | Descriere                                                                                              |
-| --------- | ------------------------------------------------------------------------------------------------------ |
+| Nume      | Descriere                                                                                                        |
+| --------- | ---------------------------------------------------------------------------------------------------------------- |
 | vehicleid | ID-ul vehiculului căruia i-a fost schimbat starea de deteriorare.                                                |
 | playerid  | ID-ul jucătorului care a sincronizat modificarea stării deteriorării (care a avut mașina avariată sau reparată). |
 

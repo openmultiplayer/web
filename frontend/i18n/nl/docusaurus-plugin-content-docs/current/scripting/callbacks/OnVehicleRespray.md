@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Deze callback wordt aangeroepen wanneer een speler een modshop verlaat, zelfs als de kleuren niet zijn veranderd. Let op, de naam is dubbelzinnig, Pay 'n' Spray shops roepen deze callback niet aan.
 
-| Naam      | Beschrijving                                                  |
-| --------- | ------------------------------------------------------------ |
-| playerid  | Het ID van de speler die het voertuig bestuurt.             |
-| vehicleid | Het ID van het voertuig dat werd resprayed.                  |
-| color1    | De kleur waarnaar de primaire kleur van het voertuig werd veranderd. |
+| Naam      | Beschrijving                                                           |
+| --------- | ---------------------------------------------------------------------- |
+| playerid  | Het ID van de speler die het voertuig bestuurt.                        |
+| vehicleid | Het ID van het voertuig dat werd resprayed.                            |
+| color1    | De kleur waarnaar de primaire kleur van het voertuig werd veranderd.   |
 | color2    | De kleur waarnaar de secundaire kleur van het voertuig werd veranderd. |
 
 ## Returns

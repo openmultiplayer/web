@@ -7,13 +7,13 @@ tags: ["player", "camera"]
 
 ## Açıklama
 
-Oyuncunun kamerası bir başka oyuncunun nesnesine bağlanır. 
+Oyuncunun kamerası bir başka oyuncunun nesnesine bağlanır.
 Oyuncu, objeye bağlıyken kamerasını hareket ettirebilir. MovePlayerObject ve AttachPlayerObjectToVehicle ile kullanılabilir.
 
-| Parametre      | Açıklama                                                                       |
-| -------------- | ------------------------------------------------------------------------------ |
-| playerid       | Kamerası bağlanılacak oyuncunun ID'si.                                         |
-| playerobjectid | Bağlanılacak olan objenin ID'si                                                |
+| Parametre      | Açıklama                               |
+| -------------- | -------------------------------------- |
+| playerid       | Kamerası bağlanılacak oyuncunun ID'si. |
+| playerobjectid | Bağlanılacak olan objenin ID'si        |
 
 ## Çalışınca Vereceği Sonuçlar
 

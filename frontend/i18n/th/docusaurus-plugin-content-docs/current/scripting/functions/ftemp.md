@@ -18,7 +18,6 @@ Creates a file in the "tmp", "temp" or root directory with random name for readi
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

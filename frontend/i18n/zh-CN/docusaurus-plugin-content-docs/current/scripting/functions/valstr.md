@@ -50,7 +50,7 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 #define valstr FIX_valstr
 ```
 
-完整修复方案参见[fixes.inc](https://github.com/pawn-lang/sa-mp-fixes)
+完整修复方案参见 open.mp
 
 :::
 

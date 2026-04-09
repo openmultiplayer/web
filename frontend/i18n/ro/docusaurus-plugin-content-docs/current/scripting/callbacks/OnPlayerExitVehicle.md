@@ -9,10 +9,10 @@ tags: ["player", "vehicle"]
 
 Acest callback este apelat atunci când un jucător începe să părăsească un vehicul.
 
-| Nume      | Descriere                                       |
-| --------- | ----------------------------------------------- |
-| playerid  | ID-ul jucătorului care iese dintr-un vehicul.   |
-| vehicleid | ID-ul vehiculului din care iese jucătorul.      |
+| Nume      | Descriere                                     |
+| --------- | --------------------------------------------- |
+| playerid  | ID-ul jucătorului care iese dintr-un vehicul. |
+| vehicleid | ID-ul vehiculului din care iese jucătorul.    |
 
 ## Returnări
 

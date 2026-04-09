@@ -9,11 +9,11 @@ tags: ["player"]
 
 Haal de clientversie op zoals gemeld door de speler.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
-| playerid | ID van de speler. |
-| version[] | Buffer om de versie in op te slaan (by reference). |
-| len = sizeof (version) | Maximale lengte van de versie. |
+| Naam                   | Beschrijving                                       |
+| ---------------------- | -------------------------------------------------- |
+| playerid               | ID van de speler.                                  |
+| version[]              | Buffer om de versie in op te slaan (by reference). |
+| len = sizeof (version) | Maximale lengte van de versie.                     |
 
 ## Retourneert
 
@@ -43,5 +43,3 @@ public OnPlayerConnect(playerid)
 - [GetPlayerName](GetPlayerName)
 - [GetPlayerPing](GetPlayerPing)
 - [GetPlayerIp](GetPlayerIp)
-
-

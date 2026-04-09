@@ -11,8 +11,8 @@ tags: ["player", "object", "playerobject"]
 
 دریافت sync rotation یک player-object.
 
-| نام     | توضیحات                  |
-|----------|------------------------------|
+| نام      | توضیحات           |
+| -------- | ----------------- |
 | playerid | ID بازیکن.        |
 | objectid | ID player-object. |
 

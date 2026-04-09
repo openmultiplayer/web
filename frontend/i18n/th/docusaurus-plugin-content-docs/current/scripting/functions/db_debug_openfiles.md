@@ -18,7 +18,6 @@ This function starts with lowercase letter.
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - db_open: Open a connection to an SQLite database

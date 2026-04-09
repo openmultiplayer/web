@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 چرخش و zoom یک textdraw preview سه‌بعدی رو تنظیم می‌کنه.
 
-| نام             | توضیحات                                                                                                              |
-| --------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Text:textid     | ID textdraw ای که باید تغییر کنه.                                                                                        |
+| نام             | توضیحات                                                                                                          |
+| --------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Text:textid     | ID textdraw ای که باید تغییر کنه.                                                                                |
 | Float:rotationX | مقدار چرخش X.                                                                                                    |
 | Float:rotationY | مقدار چرخش Y.                                                                                                    |
 | Float:rotationZ | مقدار چرخش Z.                                                                                                    |
@@ -35,7 +35,7 @@ public OnGameModeInit()
     TextDrawTextSize(gMyTextdraw, 40.0, 40.0);
     TextDrawSetPreviewModel(gMyTextdraw, 411);
     TextDrawSetPreviewRot(gMyTextdraw, -10.0, 0.0, -20.0, 1.0);
-    
+
     // You still have to use TextDrawShowForAll/TextDrawShowForPlayer to make the textdraw visible.
     return 1;
 }

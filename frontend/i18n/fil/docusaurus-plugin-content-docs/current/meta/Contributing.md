@@ -18,7 +18,7 @@ Pag ikaw ay nagbrobrowse ng directory sa Github, meron kang makikitang Add file 
 
 Pwede kang mag upload ng Markdown file `.md` na sinulat mo or pwede kang dumirecta sa GitHub text editor.
 
-Yung file ay merong dapat `.md` extension at naglalaman ng Markdown. Addition information para sa  Markdown, tignan mo itong [guide](https://guides.github.com/features/mastering-markdown/) na to
+Yung file ay merong dapat `.md` extension at naglalaman ng Markdown. Addition information para sa Markdown, tignan mo itong [guide](https://guides.github.com/features/mastering-markdown/) na to
 
 Pag tapos na pindutin lang ang "Propose new file" at gumawa ng Pull Request and titignan ko ito para ma merge natin ito sa forked version ng openmp documentation at pag ready na ito pwede na akong mag pull request para makita mo na ito sa website ng Openmp documentation
 
@@ -33,9 +33,9 @@ Buksan ito sa gusto mong editor, Nirerekomenda ko gumamit ng [Visual Studio Code
 
 Eto ang mga nirerekomenda kong extensions para dito
 
-* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) by David Anson - Eto ay makakatulong sayo para malaman mo kung tama ang pagkakaformat ng Markdown mo. Nag preprevent ito ng syntactic at sementic na pagkakamali. Hindi lahat ng warnings ay importante, pero yung iba nakakatulong para mabasa natin ng maayos and mga ginagawa nating markdown files. Ask mo lang ako sa discord kung meron kang tanong XomoX#8227
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) by David Anson - Eto ay makakatulong sayo para malaman mo kung tama ang pagkakaformat ng Markdown mo. Nag preprevent ito ng syntactic at sementic na pagkakamali. Hindi lahat ng warnings ay importante, pero yung iba nakakatulong para mabasa natin ng maayos and mga ginagawa nating markdown files. Ask mo lang ako sa discord kung meron kang tanong XomoX#8227
 
-* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by Prettier.js Team - eto ay formatter na automatic na mafoformat ang Markdown files mo para magamit nila ang mga consistent style. Merong settings ang Wiki repository sa `package.json` na ang extension na to ay automatic na magagamit. Siguraduhing naka enable ang "Format On Save" sa editor settings mo para yung mga Markdown files mo ay automatic na mafoformat sa tuwing isasave mo ito.
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by Prettier.js Team - eto ay formatter na automatic na mafoformat ang Markdown files mo para magamit nila ang mga consistent style. Merong settings ang Wiki repository sa `package.json` na ang extension na to ay automatic na magagamit. Siguraduhing naka enable ang "Format On Save" sa editor settings mo para yung mga Markdown files mo ay automatic na mafoformat sa tuwing isasave mo ito.
 
 ## Notes, Tips and Conventions
 
@@ -45,15 +45,15 @@ Wag gumamit ng absolute URLs para sa inter-site links. Gumamit ng relative paths
 
 - ❌
 
- ```md
- Pwedeng gamitin dito ang [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
- ```
+```md
+Pwedeng gamitin dito ang [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
+```
 
 - ✔
 
- ```md
- Pwedeng gamitin dito ang [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
- ```
+```md
+Pwedeng gamitin dito ang [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
+```
 
 Meaning ng `../` ay "go up one directory" kung yung file na iniedit mo ay nasa loob ng `functions` directory at gusto mong pumunta sa `callbacks` gumamit ng `../` para pumunta sa `scripting/` at `callbacks/` para mapunta ka sa `callbacks` directory, pagtapos yung filename (Wala ang `.md`) ng nais mong pumunta.
 
@@ -65,7 +65,7 @@ Kung gusto mo masigurado, mag basa ka ng ibang page na ginagamit ang image na to
 
 ### Metadata
 
-Ang pinaka una sa *lahat* ng document dito ay dapat merong metadata:
+Ang pinaka una sa _lahat_ ng document dito ay dapat merong metadata:
 
 ```mdx
 ---
@@ -85,20 +85,21 @@ Wag ka gumawa ng level 1 heading (`<h1>`) na merong `#` eto ay automatic na nagg
 
 - ❌
 
- ```md
- # My Title
- Ang documentation na ito ay para sa ...
+```md
+# My Title
 
- # Sub-Section
- ```
+Ang documentation na ito ay para sa ...
+
+# Sub-Section
+```
 
 - ✔
 
- ```md
- Ang documentation na ito ay para sa ...
+```md
+Ang documentation na ito ay para sa ...
 
- ## Sub-Section
- ```
+## Sub-Section
+```
 
 ## Gumamit ng `Code` snippets para sa Technical References
 
@@ -106,11 +107,11 @@ Pag nagsusulat ng paragraph na naglalaman ng function names, numbers, expression
 
 - ❌
 
- > Yung fopen function ay magbabalik ng values na may tag of type File:, wala namang problema sa linyang to, dapat ang ibabalik na value neto ay naka store sa variable na merong tag na File: (note ang cases are parepareho). Gayunpaman sa kasunod na linya ang value ay 4 ay madadagdag doon sa file handle. ang 4 ay walang tag [...]
+> Yung fopen function ay magbabalik ng values na may tag of type File:, wala namang problema sa linyang to, dapat ang ibabalik na value neto ay naka store sa variable na merong tag na File: (note ang cases are parepareho). Gayunpaman sa kasunod na linya ang value ay 4 ay madadagdag doon sa file handle. ang 4 ay walang tag [...]
 
 - ✔
 
- > Yung `fopen` function ay magbabalik ng values na may tag of type `File:`, wala namang problema sa linyang to, dapat ang ibabalik na value neto ay naka store sa variable na merong tag na `File:` (note ang cases are parepareho). Gayunpaman sa kasunod na linya ang value ay `4` ay madadagdag doon sa file handle. ang `4` ay walang tag [...]
+> Yung `fopen` function ay magbabalik ng values na may tag of type `File:`, wala namang problema sa linyang to, dapat ang ibabalik na value neto ay naka store sa variable na merong tag na `File:` (note ang cases are parepareho). Gayunpaman sa kasunod na linya ang value ay `4` ay madadagdag doon sa file handle. ang `4` ay walang tag [...]
 
 Ang example sa taas, `fopen` ay function name, hindi English word, so palibutan ito ng `code` snippet marker para makatulog makilala eto sa ibang content
 
@@ -123,27 +124,28 @@ Kung ang table ay walang headings, it ay mapupunta sa taas na parte.
 - ❌
 
   ```md
-  |         |                                      |
-  | ------- | ------------------------------------ |
-  | Health  | Engine Status                        |
-  | 650     | Undamaged                            |
-  | 650-550 | White Smoke                          |
-  | 550-390 | Grey Smoke                           |
-  | 390-250 | Black Smoke                          |
-  | < 250   | On fire (Sasabog mamaya maya)        |
+  |         |                               |
+  | ------- | ----------------------------- |
+  | Health  | Engine Status                 |
+  | 650     | Undamaged                     |
+  | 650-550 | White Smoke                   |
+  | 550-390 | Grey Smoke                    |
+  | 390-250 | Black Smoke                   |
+  | < 250   | On fire (Sasabog mamaya maya) |
   ```
 
 - ✔
 
   ```md
-  | Health  | Engine Status                        |
-  | ------- | ------------------------------------ |
-  | 650     | Undamaged                            |
-  | 650-550 | White Smoke                          |
-  | 550-390 | Grey Smoke                           |
-  | 390-250 | Black Smoke                          |
-  | < 250   | On fire (Sasabog mamaya maya)        |
+  | Health  | Engine Status                 |
+  | ------- | ----------------------------- |
+  | 650     | Undamaged                     |
+  | 650-550 | White Smoke                   |
+  | 550-390 | Grey Smoke                    |
+  | 390-250 | Black Smoke                   |
+  | < 250   | On fire (Sasabog mamaya maya) |
   ```
+
 ## Migrating from SA-MP Wiki
 
 Halos lahat ng mga nilalaman ay nalipat na, pero kung may nakita kang page sa wiki na walang laman, heto ang gabay para sa pag convert ng mga nilalaman sa Markdown.
@@ -203,6 +205,5 @@ Kung wala kang oras, wag magalala! I submit mo lang ang hindi mo pa tapos na tra
 ## License Agreement
 
 All open.mp projects have a [Contributor License Agreement](https://cla-assistant.io/openmultiplayer/homepage). This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
-
 
 Dito na magtatapos ang Contributing page

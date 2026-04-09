@@ -9,10 +9,10 @@ tags: ["player", "object", "attachment"]
 
 Entra no modo de edição para um objeto anexado a um jogador.
 
-| Nome     | Descrição                                      |
-| -------- | ------------------------------------------------ |
-| playerid | O ID do jogador que entrará no modo de edição |
-| index    | O índice (slot) do objeto anexado a ser editado  |
+| Nome     | Descrição                                       |
+| -------- | ----------------------------------------------- |
+| playerid | O ID do jogador que entrará no modo de edição   |
+| index    | O índice (slot) do objeto anexado a ser editado |
 
 ## Retornos
 

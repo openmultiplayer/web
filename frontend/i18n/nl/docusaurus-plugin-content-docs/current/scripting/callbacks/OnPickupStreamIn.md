@@ -11,10 +11,10 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een pickup het visuele bereik van een speler binnenkomt.
 
-| Naam     | Beschrijving                                                                 |
-| -------- | --------------------------------------------------------------------------- |
+| Naam     | Beschrijving                                                                       |
+| -------- | ---------------------------------------------------------------------------------- |
 | pickupid | Het ID van de pickup, geretourneerd door [CreatePickup](../functions/CreatePickup) |
-| playerid | Het ID van de speler voor wie de pickup in beeld komt.                       |
+| playerid | Het ID van de speler voor wie de pickup in beeld komt.                             |
 
 ## Returns
 

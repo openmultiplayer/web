@@ -9,10 +9,10 @@ tags: ["player", "camera"]
 
 Anexa a câmera de um jogador a um objeto do jogador. O jogador consegue mover sua câmera enquanto ela está anexada a um objeto. Pode ser usada com MovePlayerObject e AttachPlayerObjectToVehicle.
 
-| Nome           | Descrição                                                                          |
-| -------------- | ---------------------------------------------------------------------------------- |
-| playerid       | O ID do jogador que terá sua câmera anexada a um objeto do jogador.                |
-| playerobjectid | O ID do objeto do jogador ao qual a câmera do jogador será anexada.                |
+| Nome           | Descrição                                                           |
+| -------------- | ------------------------------------------------------------------- |
+| playerid       | O ID do jogador que terá sua câmera anexada a um objeto do jogador. |
+| playerobjectid | O ID do objeto do jogador ao qual a câmera do jogador será anexada. |
 
 ## Retorno
 

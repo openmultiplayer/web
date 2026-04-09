@@ -9,12 +9,12 @@ tags: []
 
 Dieses Callback wird ausgeführt wenn ein SendClientCheck Request abgeschlossen ist.
 
-| Name          | Beschreibung                       |
-| ------------- | --------------------------------- |
-| playerid      | Die ID des Spielers, der geprüft wurde.     |
-| actionid      | Der Check Typ der geprüft wurde.      |
-| memaddr       | Die angefragte Adresse.            |
-| retndata      | Das Ergebnis des Checks.          |
+| Name     | Beschreibung                            |
+| -------- | --------------------------------------- |
+| playerid | Die ID des Spielers, der geprüft wurde. |
+| actionid | Der Check Typ der geprüft wurde.        |
+| memaddr  | Die angefragte Adresse.                 |
+| retndata | Das Ergebnis des Checks.                |
 
 ## Rückgabe (return value)
 

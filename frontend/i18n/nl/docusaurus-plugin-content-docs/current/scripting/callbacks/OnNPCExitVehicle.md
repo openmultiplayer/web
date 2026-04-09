@@ -22,5 +22,3 @@ public OnNPCExitVehicle()
 ## Gerelateerde Callbacks
 
 - [OnNPCEnterVehicle](OnNPCEnterVehicle): Deze callback wordt aangeroepen wanneer een NPC een voertuig instapt.
-
-

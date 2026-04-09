@@ -10,7 +10,7 @@ tags: ["player"]
 Ang callback na ito ay itinatawag kapag ang isang player ay namatay. Sa mga dahilan na pwedeng namatay ang player sa kanyang sariling gawa o napatay ng iba pang player.
 
 | Name          | Description                                                             |
-|---------------|-------------------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------------------- |
 | playerid      | Ang ID ng player na namatay.                                            |
 | killerid      | Ang ID ng player na nam-patay sa playerid, INVALID_PLAYER_ID kung wala. |
 | WEAPON:reason | Ang ID ng rason kung bakit namatay ang playerid.                        |
@@ -54,10 +54,9 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 - Hindi mo na kailangan tignan kung ang killerid ay valid bago gamitin ang SendDeathMessage. Ang INVALID_PLAYER_ID ay isang valid na killerid ID parameter sa function na iyon.
 - Ang playerid lamang ang may kapakanan na tawagin itong callback. (Magandang alamin para sa anti-fake death na mga hacks/cleo.)
 
-
 :::warning
 
-Kailangan mong tignan kung ang 'killerid' ay valid (not IVALID_PLAYER_ID) bago gamitin ito sa isang array (o kahit saan), dahil ito ay nagdudulot ng crash sa script  ng OnPlayerDeath (hindi ang buong script). Ito ay dahil ang INVALID_PLAYER_ID ay defined as 65535, kapag ang array ay mayroon lamang 'MAX_PLAYERS' elements, e.g. 500, ikaw ay nagtatangkang i-access ang index na mahigit pa sa 499, na out of bounds.
+Kailangan mong tignan kung ang 'killerid' ay valid (not IVALID_PLAYER_ID) bago gamitin ito sa isang array (o kahit saan), dahil ito ay nagdudulot ng crash sa script ng OnPlayerDeath (hindi ang buong script). Ito ay dahil ang INVALID_PLAYER_ID ay defined as 65535, kapag ang array ay mayroon lamang 'MAX_PLAYERS' elements, e.g. 500, ikaw ay nagtatangkang i-access ang index na mahigit pa sa 499, na out of bounds.
 
 :::
 

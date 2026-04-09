@@ -9,11 +9,11 @@ tags: [IP, connexion, joueur]
 
 Cette callback est appelée quand une adresse IP tente de se connecter au serveur. Pour bloquer une connexion, utilisez BlockIpAddress
 
-| Nom                   | Description                                        |
-| --------------------- | -------------------------------------------------- |
-| `int` playerid        | ID du joueur qui tente de se connecter             |
-| `string` ip_address[] | Adresse IP qui tente de se connecter               |
-| `int` port            | Port de la connexion tentée                        |
+| Nom                   | Description                            |
+| --------------------- | -------------------------------------- |
+| `int` playerid        | ID du joueur qui tente de se connecter |
+| `string` ip_address[] | Adresse IP qui tente de se connecter   |
+| `int` port            | Port de la connexion tentée            |
 
 ## Valeur de retour
 

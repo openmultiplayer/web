@@ -1,5 +1,4 @@
 ---
-
 title: DestroyPickup
 sidebar_label: DestroyPickup
 description: Destroi um pickup criado com CreatePickup.
@@ -34,9 +33,9 @@ DestroyPickup(g_PickupArmour);
 
 ## funções relacionadas
 
-* [CreatePickup](CreatePickup): Cria um pickup.
-* [IsValidPickup](IsValidPickup): Verifica se um pickup é válido.
+- [CreatePickup](CreatePickup): Cria um pickup.
+- [IsValidPickup](IsValidPickup): Verifica se um pickup é válido.
 
 ## callbacks relacionados
 
-* [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Chamado quando um jogador apanha um pickup.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Chamado quando um jogador apanha um pickup.

@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Anexa um veículo a outro veículo como reboque.
 
-| Nome      | Descrição                                         |
-| --------- | ------------------------------------------------- |
-| trailerid | O ID do veículo que será puxado.                 |
-| vehicleid | O ID do veículo que puxará o reboque.            |
+| Nome      | Descrição                             |
+| --------- | ------------------------------------- |
+| trailerid | O ID do veículo que será puxado.      |
+| vehicleid | O ID do veículo que puxará o reboque. |
 
 ## Retorno
 

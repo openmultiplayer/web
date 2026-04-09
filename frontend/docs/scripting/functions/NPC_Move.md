@@ -11,15 +11,15 @@ tags: ["npc", "movement"]
 
 Makes an NPC move to a specific position.
 
-| Name                   | Description                                        |
-| ---------------------- | -------------------------------------------------- |
-| npcid                  | The ID of the NPC.                                 |
-| Float:x                | The X coordinate to move to.                       |
-| Float:y                | The Y coordinate to move to.                       |
-| Float:z                | The Z coordinate to move to.                       |
-| NPC_MOVE_TYPE:moveType | The movement type (default: `NPC_MOVE_TYPE_JOG`).  |
-| Float:moveSpeed        | Movement speed (default: `NPC_MOVE_SPEED_AUTO`).   |
-| Float:stopRange        | Distance to target before stopping (default: 0.2). |
+| Name                   | Description                                                                                    |
+| ---------------------- | ---------------------------------------------------------------------------------------------- |
+| npcid                  | The ID of the NPC.                                                                             |
+| Float:x                | The X coordinate to move to.                                                                   |
+| Float:y                | The Y coordinate to move to.                                                                   |
+| Float:z                | The Z coordinate to move to.                                                                   |
+| NPC_MOVE_TYPE:moveType | [The movement type](../resources/npc-constants#movement-types) (default: `NPC_MOVE_TYPE_JOG`). |
+| Float:moveSpeed        | [Movement speed](../resources/npc-constants#movement-speed) (default: `NPC_MOVE_SPEED_AUTO`).  |
+| Float:stopRange        | Distance to target before stopping (default: 0.2).                                             |
 
 ## Returns
 
@@ -72,3 +72,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Related Callbacks
 
 - [OnNPCFinishMove](../callbacks/OnNPCFinishMove): Called when NPC finishes movement.
+
+## Related Resources
+
+- [NPC Constants](../resources/npc-constants)

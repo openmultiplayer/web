@@ -9,9 +9,9 @@ tags: []
 
 I-toggle ang drawing ng mga nametag, health bar at armor bar sa itaas ng mga manlalaro.
 
-| Name    | Description                                     |
-| ------- | ----------------------------------------------- |
-| enabled | 0 upang huwag paganahin, 1 upang paganahin (pinagana bilang default).|
+| Name    | Description                                                           |
+| ------- | --------------------------------------------------------------------- |
+| enabled | 0 upang huwag paganahin, 1 upang paganahin (pinagana bilang default). |
 
 ## Returns
 

@@ -165,5 +165,3 @@ Je kunt ook `static` functies hebben die alleen binnen hetzelfde bestand aangero
 ## `stock`
 
 Voor variabelen en functies die mogelijk niet gebruikt worden, zonder "unused"-waarschuwingen te genereren. Als iets niet gebruikt wordt, wordt het niet meegecompileerd (anders dan `#pragma unused`, dat alleen de waarschuwing onderdrukt).
-
-

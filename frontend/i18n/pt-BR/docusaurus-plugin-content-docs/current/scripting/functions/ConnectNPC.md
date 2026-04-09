@@ -9,10 +9,10 @@ tags: ["npc"]
 
 Conecta um NPC ao servidor.
 
-| Nome           | Descrição                                                                                   |
-| -------------- | ------------------------------------------------------------------------------------------- |
+| Nome           | Descrição                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------ |
 | const name[]   | O nome com o qual o NPC deve se conectar. Deve seguir as mesmas regras dos nomes de jogadores normais. |
-| const script[] | O nome do script do NPC que está localizado na pasta npcmodes (sem a extensão .amx).      |
+| const script[] | O nome do script do NPC que está localizado na pasta npcmodes (sem a extensão .amx).                   |
 
 ## Retorno
 

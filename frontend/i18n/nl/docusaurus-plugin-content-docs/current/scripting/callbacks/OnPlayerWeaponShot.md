@@ -9,15 +9,15 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler een wapen afvuurt. Alleen firearms worden ondersteund.
 
-| Naam                    | Beschrijving                                                          |
-| ----------------------- | -------------------------------------------------------------------- |
-| playerid                | Het ID van de speler die het wapen afvuurde.                         |
-| WEAPON:weaponid         | Het ID van het [wapen](../resources/weaponids) dat is afgevuurd.     |
-| BULLET_HIT_TYPE:hittype | Het [type](../resources/bullethittypes) doel dat geraakt is.         |
-| hitid                   | Het ID van de speler, het voertuig, of object dat geraakt is.        |
-| Float:fX                | De X-coördinaat waar het schot raakte.                               |
-| Float:fY                | De Y-coördinaat waar het schot raakte.                               |
-| Float:fZ                | De Z-coördinaat waar het schot raakte.                               |
+| Naam                    | Beschrijving                                                     |
+| ----------------------- | ---------------------------------------------------------------- |
+| playerid                | Het ID van de speler die het wapen afvuurde.                     |
+| WEAPON:weaponid         | Het ID van het [wapen](../resources/weaponids) dat is afgevuurd. |
+| BULLET_HIT_TYPE:hittype | Het [type](../resources/bullethittypes) doel dat geraakt is.     |
+| hitid                   | Het ID van de speler, het voertuig, of object dat geraakt is.    |
+| Float:fX                | De X-coördinaat waar het schot raakte.                           |
+| Float:fY                | De Y-coördinaat waar het schot raakte.                           |
+| Float:fZ                | De Z-coördinaat waar het schot raakte.                           |
 
 ## Returns
 

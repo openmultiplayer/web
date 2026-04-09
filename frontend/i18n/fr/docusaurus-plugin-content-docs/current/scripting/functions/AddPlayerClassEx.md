@@ -9,20 +9,20 @@ tags: ["player"]
 
 Cette fonction est exactement la même que la fonction AddPlayerClass, avec l'ajout d'un paramètre d'équipe.
 
-| Nom            | Description                                                   |
-| -------------- | ------------------------------------------------------------- |
-| teamid         | L'équipe dans laquelle vous voulez que le joueur apparaisse.  |
-| modelid        | Le skin avec lequel le joueur apparaîtra.                     |
-| Float:spawn_x  | La coordonnée X de la position d'apparition de la classe.     |
-| Float:spawn_y  | La coordonnée Y de la position d'apparition de la classe.     |
-| Float:spawn_z  | La coordonnée Z de la position d'apparition de la classe.     |
-| Float:z_angle  | La direction dans laquelle le joueur fera face après le frai. |
-| weapon1        | La première arme d'apparition pour le joueur.                 |
-| weapon1_ammo   | La quantité de munitions pour la première arme d'apparition.  |
-| weapon2        | La deuxième arme d'apparition pour le joueur.                 |
-| weapon2_ammo   | La quantité de munitions pour la deuxième arme d'apparition.  |
-| weapon3        | La troisième arme d'apparition pour le joueur.                |
-| weapon3_ammo   | La quantité de munitions pour la troisième arme d'apparition. |
+| Nom           | Description                                                   |
+| ------------- | ------------------------------------------------------------- |
+| teamid        | L'équipe dans laquelle vous voulez que le joueur apparaisse.  |
+| modelid       | Le skin avec lequel le joueur apparaîtra.                     |
+| Float:spawn_x | La coordonnée X de la position d'apparition de la classe.     |
+| Float:spawn_y | La coordonnée Y de la position d'apparition de la classe.     |
+| Float:spawn_z | La coordonnée Z de la position d'apparition de la classe.     |
+| Float:z_angle | La direction dans laquelle le joueur fera face après le frai. |
+| weapon1       | La première arme d'apparition pour le joueur.                 |
+| weapon1_ammo  | La quantité de munitions pour la première arme d'apparition.  |
+| weapon2       | La deuxième arme d'apparition pour le joueur.                 |
+| weapon2_ammo  | La quantité de munitions pour la deuxième arme d'apparition.  |
+| weapon3       | La troisième arme d'apparition pour le joueur.                |
+| weapon3_ammo  | La quantité de munitions pour la troisième arme d'apparition. |
 
 ## Retour
 

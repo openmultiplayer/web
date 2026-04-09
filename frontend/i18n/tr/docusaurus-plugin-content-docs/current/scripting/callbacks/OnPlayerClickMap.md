@@ -9,12 +9,12 @@ tags: ["player"]
 
 Bu geri çağırma oyuncu haritada bir yer işaretlediğinde çağrılır.
 
-| Parametre       | Açıklama                                                        |
-| -------- | --------------------------------------------------------------- |
-| playerid | Oyuncunun id'si                                                 |
-| Float:fX | İşaretlediği yerin X koordinatı.                                |
-| Float:fY | İşaretlediği yerin Y koordinatı.                                |
-| Float:fZ | İşaretlediği yerin Z koordinatı. (kullanışsız - notu inceleyin) |
+| Parametre | Açıklama                                                        |
+| --------- | --------------------------------------------------------------- |
+| playerid  | Oyuncunun id'si                                                 |
+| Float:fX  | İşaretlediği yerin X koordinatı.                                |
+| Float:fY  | İşaretlediği yerin Y koordinatı.                                |
+| Float:fZ  | İşaretlediği yerin Z koordinatı. (kullanışsız - notu inceleyin) |
 
 ## Çalışınca Vereceği Sonuçlar
 

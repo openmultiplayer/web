@@ -11,10 +11,10 @@ tags: ["math", "floating-point"]
 
 I-round ang isang floating point number sa isang integer value.
 
-| Name                                    | Description                  |
-| --------------------------------------- | ---------------------------- |
-| value                                   | Ang value na i-round          |
-| [mode](../resources/floatroundmodes)    | Ang mga floatround mode na gagamitin. |
+| Name                                 | Description                           |
+| ------------------------------------ | ------------------------------------- |
+| value                                | Ang value na i-round                  |
+| [mode](../resources/floatroundmodes) | Ang mga floatround mode na gagamitin. |
 
 ## Returns
 

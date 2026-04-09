@@ -9,10 +9,10 @@ tags: ["player", "object", "playerobject"]
 
 چک می‌کنه که آیا player objectid داده شده در حال حرکته یا نه.
 
-| نام      | توضیحات                                                         |
-| -------- | --------------------------------------------------------------- |
-| playerid | ID بازیکنی که player-object ش چک می‌شه.                        |
-| objectid | player objectid ای که می‌خوای چک کنی که در حال حرکته یا نه.     |
+| نام      | توضیحات                                                     |
+| -------- | ----------------------------------------------------------- |
+| playerid | ID بازیکنی که player-object ش چک می‌شه.                     |
+| objectid | player objectid ای که می‌خوای چک کنی که در حال حرکته یا نه. |
 
 ## مقادیر برگشتی
 
@@ -28,7 +28,7 @@ public OnPlayerConnect(playerid)
     gPlayerObject[playerid] = CreatePlayerObject(playerid, 2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0);
 
     MovePlayerObject(playerid, gPlayerObject[playerid], 2001.195679, 1547.113892, 10.000000, 2.0);
-	
+
 	if (IsPlayerObjectMoving(playerid, gPlayerObject[playerid]))
 	{
 		StopPlayerObject(playerid, gPlayerObject[playerid]);

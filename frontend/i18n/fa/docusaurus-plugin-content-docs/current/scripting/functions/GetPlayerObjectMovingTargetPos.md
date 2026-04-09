@@ -11,10 +11,10 @@ tags: ["player", "object", "playerobject"]
 
 دریافت موقعیت هدف حرکت یک player-object.
 
-| نام           | توضیحات                                                                     |
-|----------------|---------------------------------------------------------------------------------|
-| playerid       | ID بازیکن.                                                           |
-| objectid       | ID player-object برای دریافت موقعیت هدف حرکتش.                 |
+| نام            | توضیحات                                                                   |
+| -------------- | ------------------------------------------------------------------------- |
+| playerid       | ID بازیکن.                                                                |
+| objectid       | ID player-object برای دریافت موقعیت هدف حرکتش.                            |
 | &Float:targetX | متغیر float برای ذخیره مختصات targetX، به صورت reference پاس داده می‌شود. |
 | &Float:targetY | متغیر float برای ذخیره مختصات targetY، به صورت reference پاس داده می‌شود. |
 | &Float:targetZ | متغیر float برای ذخیره مختصات targetZ، به صورت reference پاس داده می‌شود. |
@@ -31,7 +31,7 @@ tags: ["player", "object", "playerobject"]
 new playerobjectid = CreatePlayerObject(playerid, 985, 1003.39154, -643.33423, 122.35060,   0.00000, 1.00000, 24.00000);
 MovePlayerObject(playerid, playerobjectid, 1003.3915, -643.3342, 114.5122,  0.8);
 
-new 
+new
     Float:targetX,
     Float:targetY,
     Float:targetZ;

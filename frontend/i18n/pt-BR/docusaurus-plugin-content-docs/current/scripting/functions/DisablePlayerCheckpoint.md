@@ -3,15 +3,14 @@ title: DisablePlayerCheckpoint
 sidebar_label: DisablePlayerCheckpoint
 description: Desativa (esconde/remove) o checkpoint definido para um jogador.
 tags: ["player", "checkpoint"]
-
 ---
 
 ## Descrição
 
 Desativa (esconde/remove) o checkpoint ativo de um jogador. Cada jogador pode ter apenas um checkpoint visível por vez. Não é necessário desativar um checkpoint antes de definir outro.
 
-| Parâmetro | Descrição                                   |
-| --------- | ------------------------------------------- |
+| Parâmetro | Descrição                                         |
+| --------- | ------------------------------------------------- |
 | playerid  | ID do jogador que terá seu checkpoint desativado. |
 
 ## Retornos
@@ -22,13 +21,13 @@ Desativa (esconde/remove) o checkpoint ativo de um jogador. Cada jogador pode te
 
 ## Exemplos
 
-```c  
-public OnPlayerEnterCheckpoint(playerid)  
-{  
-    DisablePlayerCheckpoint(playerid);  
-    return 1;  
-}  
-```  
+```c
+public OnPlayerEnterCheckpoint(playerid)
+{
+    DisablePlayerCheckpoint(playerid);
+    return 1;
+}
+```
 
 ## Funções Relacionadas
 

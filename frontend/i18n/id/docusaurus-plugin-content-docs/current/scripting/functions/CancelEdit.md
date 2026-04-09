@@ -9,9 +9,9 @@ tags: []
 
 Membatalkan mode mengedit objek untuk pemain.
 
-| Nama     | Deskripsi                              |
-| -------- | ------------------------------------------ |
-| playerid | ID pemain untuk membatalkan edit.      |
+| Nama     | Deskripsi                         |
+| -------- | --------------------------------- |
+| playerid | ID pemain untuk membatalkan edit. |
 
 ## Returns
 

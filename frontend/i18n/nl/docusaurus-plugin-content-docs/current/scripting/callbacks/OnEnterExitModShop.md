@@ -9,10 +9,10 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler een modshop binnenkomt of verlaat.
 
-| Naam       | Beschrijving                                                                  |
-| ---------- | ---------------------------------------------------------------------------- |
-| playerid   | Het ID van de speler die de modshop binnenkwam of verliet                     |
-| enterexit  | 1 als de speler binnenkwam of 0 als ze verlieten                              |
+| Naam       | Beschrijving                                                                |
+| ---------- | --------------------------------------------------------------------------- |
+| playerid   | Het ID van de speler die de modshop binnenkwam of verliet                   |
+| enterexit  | 1 als de speler binnenkwam of 0 als ze verlieten                            |
 | interiorid | Het interior ID van de modshop die de speler binnenkomt (of 0 als verlaten) |
 
 ## Returns

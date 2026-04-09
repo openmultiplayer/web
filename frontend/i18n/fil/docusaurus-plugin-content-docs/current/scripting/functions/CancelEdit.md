@@ -9,9 +9,9 @@ tags: []
 
 Kanselahin ang object edition mode para sa isang player.
 
-| Name     | Description                                |
-| -------- | ------------------------------------------ |
-| playerid | Ang ID ng player na kakanselahin ang edition|
+| Name     | Description                                  |
+| -------- | -------------------------------------------- |
+| playerid | Ang ID ng player na kakanselahin ang edition |
 
 ## Returns
 

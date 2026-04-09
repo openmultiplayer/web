@@ -1,8 +1,8 @@
 ---
-title: OnNPCModeInit  
-sidebar_label: OnNPCModeInit  
-description: Callback này được gọi khi một script NPC được tải.  
-tags: ["npc"]  
+title: OnNPCModeInit
+sidebar_label: OnNPCModeInit
+description: Callback này được gọi khi một script NPC được tải.
+tags: ["npc"]
 ---
 
 ## Mô Tả

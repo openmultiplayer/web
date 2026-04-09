@@ -9,11 +9,11 @@ tags: []
 
 Calls a public function in any script that is loaded.
 
-| Name           | Description                                 |
-| -------------- | ------------------------------------------- |
-| function[]     | Public function's name.                     |
-| format[]       | Tag/format of each variable                 |
-\ \{Float, _}:... | 'Indefinite' number of arguments of any tag |
+| Name               | Description                                 |
+| ------------------ | ------------------------------------------- |
+| function[]         | Public function's name.                     |
+| format[]           | Tag/format of each variable                 |
+| \ \{Float, \_}:... | 'Indefinite' number of arguments of any tag |
 
 ## ส่งคืน
 

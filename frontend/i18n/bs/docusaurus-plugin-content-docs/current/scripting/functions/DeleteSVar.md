@@ -9,9 +9,9 @@ tags: []
 
 Briše prethodno postavljenu server varijablu.
 
-| Ime     | Deskripcija                                |
-| ------- | ------------------------------------------ |
-| varname | Ime server varijable koju brišemo          |
+| Ime     | Deskripcija                       |
+| ------- | --------------------------------- |
+| varname | Ime server varijable koju brišemo |
 
 ## Returns
 

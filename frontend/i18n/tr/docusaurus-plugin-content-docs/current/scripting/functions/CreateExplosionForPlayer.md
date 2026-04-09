@@ -9,14 +9,14 @@ tags: ["player"]
 
 Tek bir oyuncunun gördüğü patlama oluşturma. Bu, patlamaları diğer oyunculardan izole etmek veya yalnızca belirli sanal dünyalarda görünmelerini sağlamak için kullanılabilir.
 
-| Parametre    | Açıklama                                          |
-| ------------ | ------------------------------------------------- |
-| playerid     | Patlamayı görecek oyuncu ID'si.                   |
-| Float:X      | Patlamanın oluşacağı X koordinatı.                |
-| Float:Y      | Patlamanın oluşacağı Y koordinatı.                |
-| Float:Z      | Patlamanın oluşacağı Z koordinatı.                |
-| type         | Oluşacak patlamanın türü.                         |
-| Float:Radius | Oluşacak patlamanın yarıçapı.                     |
+| Parametre    | Açıklama                           |
+| ------------ | ---------------------------------- |
+| playerid     | Patlamayı görecek oyuncu ID'si.    |
+| Float:X      | Patlamanın oluşacağı X koordinatı. |
+| Float:Y      | Patlamanın oluşacağı Y koordinatı. |
+| Float:Z      | Patlamanın oluşacağı Z koordinatı. |
+| type         | Oluşacak patlamanın türü.          |
+| Float:Radius | Oluşacak patlamanın yarıçapı.      |
 
 ## Çalışınca Vereceği Sonuçlar
 

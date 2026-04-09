@@ -11,16 +11,16 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 دریافت موقعیت race checkpoint فعلی.
 
-| نام           | توضیحات                                                                        |
-| -------------- | ---------------------------------------------------------------------------------- |
-| playerid       | ID بازیکن برای دریافت موقعیت checkpoint.                            |
+| نام            | توضیحات                                                                   |
+| -------------- | ------------------------------------------------------------------------- |
+| playerid       | ID بازیکن برای دریافت موقعیت checkpoint.                                  |
 | &Float:centreX | متغیر float برای ذخیره مختصات centreX، به صورت reference پاس داده می‌شود. |
 | &Float:centreY | متغیر float برای ذخیره مختصات centreY، به صورت reference پاس داده می‌شود. |
 | &Float:centreZ | متغیر float برای ذخیره مختصات centreZ، به صورت reference پاس داده می‌شود. |
 | &Float:nextX   | متغیر float برای ذخیره مختصات nextX، به صورت reference پاس داده می‌شود.   |
 | &Float:nextY   | متغیر float برای ذخیره مختصات nextY، به صورت reference پاس داده می‌شود.   |
 | &Float:nextZ   | متغیر float برای ذخیره مختصات nextZ، به صورت reference پاس داده می‌شود.   |
-| &Float:radius  | متغیر float برای ذخیره شعاع، به صورت reference پاس داده می‌شود.             |
+| &Float:radius  | متغیر float برای ذخیره شعاع، به صورت reference پاس داده می‌شود.           |
 
 ## مقادیر برگشتی
 

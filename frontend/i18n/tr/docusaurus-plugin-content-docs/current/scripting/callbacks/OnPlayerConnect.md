@@ -9,9 +9,9 @@ tags: ["player"]
 
 Bu geri çağırma oyuncu sunucuya bağlandığında çağrılır.
 
-| Parametre       | Açıklama                  |
-| -------- | ------------------------- |
-| playerid | Bağlanan oyuncunun id'si. |
+| Parametre | Açıklama                  |
+| --------- | ------------------------- |
+| playerid  | Bağlanan oyuncunun id'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

@@ -8,14 +8,14 @@ description: HTTP-foutcodes en beschrijvingen.
 Deze codes vullen normale [HTTP](../functions/HTTP)-responscodes aan (in `response_code`).
 :::
 
-| Code | Fout                          | Omschrijving                                                                                                       |
-| ---- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| 1    | HTTP_ERROR_BAD_HOST           | Ongeldige/ongeresolveerde host in de URL.                                                                         |
-| 2    | HTTP_ERROR_NO_SOCKET          | Mislukte socketinitialisatie voor de aanvraag.                                                                     |
-| 3    | HTTP_ERROR_CANT_CONNECT       | Kan geen verbinding maken met de server (bijv. netwerkproblemen of server onbereikbaar).                          |
-| 4    | HTTP_ERROR_CANT_WRITE         | Fout bij het schrijven van data tijdens de aanvraag.                                                               |
-| 5    | HTTP_ERROR_CONTENT_TOO_BIG    | Verzoekinhoud is groter dan toegestaan door de server/configuratie.                                                |
-| 6    | HTTP_ERROR_MALFORMED_RESPONSE | Respons is ongeldig of onverwacht van formaat en voldoet niet aan HTTP-standaarden.                                |
+| Code | Fout                          | Omschrijving                                                                             |
+| ---- | ----------------------------- | ---------------------------------------------------------------------------------------- |
+| 1    | HTTP_ERROR_BAD_HOST           | Ongeldige/ongeresolveerde host in de URL.                                                |
+| 2    | HTTP_ERROR_NO_SOCKET          | Mislukte socketinitialisatie voor de aanvraag.                                           |
+| 3    | HTTP_ERROR_CANT_CONNECT       | Kan geen verbinding maken met de server (bijv. netwerkproblemen of server onbereikbaar). |
+| 4    | HTTP_ERROR_CANT_WRITE         | Fout bij het schrijven van data tijdens de aanvraag.                                     |
+| 5    | HTTP_ERROR_CONTENT_TOO_BIG    | Verzoekinhoud is groter dan toegestaan door de server/configuratie.                      |
+| 6    | HTTP_ERROR_MALFORMED_RESPONSE | Respons is ongeldig of onverwacht van formaat en voldoet niet aan HTTP-standaarden.      |
 
 ## Veelvoorkomende HTTP-responscodes
 
@@ -29,11 +29,11 @@ Deze codes vullen normale [HTTP](../functions/HTTP)-responscodes aan (in `respon
 
 ### 2xx Success
 
-| Code |            |
-| ---- | ---------- |
-| 200  | OK         |
-| 201  | Created    |
-| 204  | No Content |
+| Code |                 |
+| ---- | --------------- |
+| 200  | OK              |
+| 201  | Created         |
+| 204  | No Content      |
 | 206  | Partial Content |
 
 ### 3xx Redirection
@@ -64,5 +64,3 @@ Deze codes vullen normale [HTTP](../functions/HTTP)-responscodes aan (in `respon
 | 502  | Bad Gateway           |
 | 503  | Service Unavailable   |
 | 504  | Gateway Timeout       |
-
-

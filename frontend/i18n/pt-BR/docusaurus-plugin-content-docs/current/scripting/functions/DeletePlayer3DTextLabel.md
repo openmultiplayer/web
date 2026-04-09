@@ -1,5 +1,4 @@
 ---
-
 title: DeletePlayer3DTextLabel
 sidebar_label: DeletePlayer3DTextLabel
 description: Apaga um texto 3D criado com CreatePlayer3DTextLabel.
@@ -10,9 +9,9 @@ tags: ["player", "3dtextlabel"]
 
 Apaga um texto 3D criado com [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel).
 
-| Nome                 | Descrição                                 |
-| -------------------- | ----------------------------------------- |
-| playerid             | ID do jogador cujo texto 3D será apagado. |
+| Nome                | Descrição                                 |
+| ------------------- | ----------------------------------------- |
+| playerid            | ID do jogador cujo texto 3D será apagado. |
 | PlayerText3D:textid | ID do texto 3D do jogador a apagar.       |
 
 ## retorno
@@ -50,10 +49,10 @@ public OnPlayerDisconnect(playerid, reason)
 
 ## funções relacionadas
 
-* [Create3DTextLabel](Create3DTextLabel): Criar um texto 3D.
-* [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Anexa um texto 3D a um jogador.
-* [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Anexa um texto 3D a um veículo.
-* [Update3DTextLabelText](Update3DTextLabelText): Muda o texto de um texto 3D.
-* [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Criar um texto 3D para um jogador.
-* [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Muda o texto de um texto 3D de um jogador.
-* [IsValidPlayer3DTextLabel](IsValidPlayer3DTextLabel): Verifica se um texto 3D de jogador é válido.
+- [Create3DTextLabel](Create3DTextLabel): Criar um texto 3D.
+- [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer): Anexa um texto 3D a um jogador.
+- [Attach3DTextLabelToVehicle](Attach3DTextLabelToVehicle): Anexa um texto 3D a um veículo.
+- [Update3DTextLabelText](Update3DTextLabelText): Muda o texto de um texto 3D.
+- [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Criar um texto 3D para um jogador.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Muda o texto de um texto 3D de um jogador.
+- [IsValidPlayer3DTextLabel](IsValidPlayer3DTextLabel): Verifica se um texto 3D de jogador é válido.

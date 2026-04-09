@@ -11,7 +11,7 @@ Cette callback est appelée lorsqu'un véhicule est détruit - en explosant ou e
 
 | Nom             | Description                                                                                                                  |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `int` vehicleid | L'ID du véhicule détruit.                                                                                                     |
+| `int` vehicleid | L'ID du véhicule détruit.                                                                                                    |
 | `int` killerid  | L'ID du joueur qui a causé les dégâts. Généralement le conducteur ou un passager (si il y en a) ou le joueur le plus proche. |
 
 ## Valeur de retour
@@ -24,10 +24,10 @@ Aucune.
 public OnVehicleDeath(vehicleid, killerid)
 {
     new string[40];
-    
+
     format(string, sizeof(string), "Le véhicule %i a été détruit par le joueur id %i.", vehicleid, killerid);
     SendClientMessageToAll(0xFFFFFFFF, string);
-    
+
     return 1;
 }
 ```

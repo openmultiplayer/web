@@ -11,11 +11,11 @@ tags: ["player"]
 
 Callback này được gọi khi một người chơi yêu cầu tải xuống mô hình tùy chỉnh.
 
-| Tên                  | Mô Tả                                                            |
-|-----------------------|------------------------------------------------------------------|
-| playerid              | ID của người chơi yêu cầu tải xuống mô hình tùy chỉnh.           |
-| DOWNLOAD_REQUEST:type | Loại của yêu cầu [type](../resources/download-requests).         |
-| crc                   | CRC checksum của tệp mô hình tùy chỉnh.                          |
+| Tên                   | Mô Tả                                                    |
+| --------------------- | -------------------------------------------------------- |
+| playerid              | ID của người chơi yêu cầu tải xuống mô hình tùy chỉnh.   |
+| DOWNLOAD_REQUEST:type | Loại của yêu cầu [type](../resources/download-requests). |
+| crc                   | CRC checksum của tệp mô hình tùy chỉnh.                  |
 
 ## Trả Về
 

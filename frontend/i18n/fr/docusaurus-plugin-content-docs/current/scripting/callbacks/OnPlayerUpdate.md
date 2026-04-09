@@ -9,9 +9,9 @@ tags: ["player"]
 
 Cette callback est appelée à chaque fois qu'un client/joueur modifie son status auprès du serveur. Elle est souvent utilisée pour créer des callbacks personnalisées qui ne sont pas présentes nativement, telle que le changement de vie, d'armure ou le changement d'arme.
 
-| Nom            | Description                                   |
-| -------------- | --------------------------------------------- |
-| `int` playerid |ID du joueur ayant envoyé un paquet au serveur |
+| Nom            | Description                                    |
+| -------------- | ---------------------------------------------- |
+| `int` playerid | ID du joueur ayant envoyé un paquet au serveur |
 
 ## Valeur de retour
 
@@ -24,7 +24,7 @@ Cette callback est appelée à chaque fois qu'un client/joueur modifie son statu
 ```c
 public OnPlayerUpdate(playerid)
 {
-    new iCurWeap = GetPlayerWeapon(playerid); // Retourne l'arme actuelle du joueur		
+    new iCurWeap = GetPlayerWeapon(playerid); // Retourne l'arme actuelle du joueur
     if(iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // S'il l'arme à changer depuis la dernière mise à jour
     {
         // Appelons une callback nommée OnPlayerChangeWeapon
@@ -33,18 +33,18 @@ public OnPlayerUpdate(playerid)
     }
     return 1; // Envoi de la mise à jour à tous les joueurs.
 }
- 
+
 stock OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
 {
 	new     s[128],
 		oWeapon[24],
 		nWeapon[24];
- 
+
 	GetWeaponName(oldweapon, oWeapon, sizeof(oWeapon));
 	GetWeaponName(newweapon, nWeapon, sizeof(nWeapon));
- 
+
 	format(s, sizeof(s), "Vous avez changé votre arme de %s à %s!", oWeapon, nWeapon);
- 
+
 	SendClientMessage(playerid, 0xFFFFFFFF, s);
 }
 ```
@@ -53,28 +53,29 @@ stock OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
 public OnPlayerUpdate(playerid)
 {
 	new Float:fHealth;
- 
+
 	GetPlayerHealth(playerid, fHealth);
- 
+
 	if(fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
 	{
 	    // La vie du joueur a changé depuis la dernière mise à jour, c'est donc bien la mise à jour qui a été envoyée.
-	    // Vérifions s'il a perdu ou gagné de la vie (anti-cheat vie ? ;)) 
- 
+	    // Vérifions s'il a perdu ou gagné de la vie (anti-cheat vie ? ;))
+
 	    if(fHealth > GetPVarFloat(playerid, "faPlayerHealth"))
 	    {
 	        /* Il a gagné de la vie! Triche? */
- 
+
 	    }
 	    else
 	    {
 	        /* Il a perdu de la vie! */
 	    }
- 
+
 	    SetPVarFloat(playerid, "faPlayerHealth", fHealth);
 	}
 }
 ```
+
 ## Astuces
 
 <TipNPCCallbacks />

@@ -9,15 +9,13 @@ tags: []
 
 بررسی memory روی کلاینت انجام می‌ده.
 
-
-| نام            | توضیحات                          |
-| --------------- | ------------------------------------ |
-| playerid        | ID بازیکن برای بررسی.       |
-| type            | نوع بررسی که باید انجام بشه. [اینجا ببین](../resources/opcodes)|
-| memAddr         | آدرس پایه برای بررسی.           |
-| memOffset       | offset از آدرس پایه.    |
-| byteCount       | تعداد byte ها برای بررسی.        |
-
+| نام       | توضیحات                                                         |
+| --------- | --------------------------------------------------------------- |
+| playerid  | ID بازیکن برای بررسی.                                           |
+| type      | نوع بررسی که باید انجام بشه. [اینجا ببین](../resources/opcodes) |
+| memAddr   | آدرس پایه برای بررسی.                                           |
+| memOffset | offset از آدرس پایه.                                            |
+| byteCount | تعداد byte ها برای بررسی.                                       |
 
 ## مقدار برگشتی
 
@@ -58,7 +56,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 **SA:MP Server**: این تابع فقط وقتی در filterscript باشه کار می‌کنه.
 
-**Open Multiplayer Server**: این تابع معمولی در gamemode / filterscript کار می‌کنه. 
+**Open Multiplayer Server**: این تابع معمولی در gamemode / filterscript کار می‌کنه.
 
 :::
 

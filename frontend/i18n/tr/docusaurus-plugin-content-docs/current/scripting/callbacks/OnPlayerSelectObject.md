@@ -9,15 +9,15 @@ tags: ["player"]
 
 Bu fonksiyon, oyuncu SelectObject kullanıldıktan sonra bir obje seçtiğinde çağrılır.
 
-| Parametre | Açıklama                                                   |
-| --------- | ---------------------------------------------------------- |
-| playerid  | Obje seçmiş olan oyuncunun ID'si.                          |
-| type      | Seçilmiş objenin [türü](../resources/selectobjecttypes).   |
-| objectid  | Seçilen objenin ID'si.                                     |
-| modelid   | Seçilmiş objenin modeli.                                   |
-| Float:fX  | Seçilmiş objenin X koordinatı.                             |
-| Float:fY  | Seçilmiş objenin Y koordinatı.                             |
-| Float:fZ  | Seçilmiş objenin Z koordinatı.                             |
+| Parametre | Açıklama                                                 |
+| --------- | -------------------------------------------------------- |
+| playerid  | Obje seçmiş olan oyuncunun ID'si.                        |
+| type      | Seçilmiş objenin [türü](../resources/selectobjecttypes). |
+| objectid  | Seçilen objenin ID'si.                                   |
+| modelid   | Seçilmiş objenin modeli.                                 |
+| Float:fX  | Seçilmiş objenin X koordinatı.                           |
+| Float:fY  | Seçilmiş objenin Y koordinatı.                           |
+| Float:fZ  | Seçilmiş objenin Z koordinatı.                           |
 
 ## Çalışınca Vereceği Sonuçlar
 

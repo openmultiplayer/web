@@ -9,7 +9,6 @@ tags: []
 
 Essa callback é executada quando um NPC sai de um veículo.
 
-
 ## Exemplos
 
 ```c

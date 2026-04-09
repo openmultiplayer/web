@@ -9,7 +9,7 @@ tags: ["player"]
 Este callback se llama cuando un jugador sale del modo edición de objetos adjuntos.
 
 | Nombre                 | Descripción                                             |
-|------------------------|---------------------------------------------------------|
+| ---------------------- | ------------------------------------------------------- |
 | playerid               | El ID del jugador que salió del modo de edición.        |
 | EDIT_RESPONSE:response | 0 si canceló o 1 si clickeó el ícono de guardar.        |
 | index                  | The index of the attached object (0-9)                  |
@@ -70,7 +70,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
         ao[playerid][index][ao_sz] = fScaleZ;
     }
     else
-    {	
+    {
         SendClientMessage(playerid, COLOR_RED, "Edición de objeto adjunto no guardada.");
 
         new i = index;

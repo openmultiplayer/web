@@ -9,9 +9,9 @@ tags: []
 
 Obje düzenleme modunu iptal etme.
 
-| Parametre | Açıklama                                   |
-| --------- | ------------------------------------------ |
-| playerid  | Obje düzenlemesi iptal edilecek oyuncu.    |
+| Parametre | Açıklama                                |
+| --------- | --------------------------------------- |
+| playerid  | Obje düzenlemesi iptal edilecek oyuncu. |
 
 ## Çalışınca Vereceği Sonuçlar
 

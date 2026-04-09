@@ -12,7 +12,7 @@ tags: ["player", "gangzone"]
 Deze callback wordt aangeroepen wanneer een speler een gangzone binnengaat.
 
 | Naam     | Beschrijving                                     |
-| -------- | ----------------------------------------------- |
+| -------- | ------------------------------------------------ |
 | playerid | Het ID van de speler die de gangzone binnenging. |
 | zoneid   | Het ID van de gangzone die de speler binnenging. |
 
@@ -41,5 +41,3 @@ public OnPlayerEnterGangZone(playerid, zoneid)
 - [GangZoneCreate](../functions/GangZoneCreate): Maak een gangzone (gekleurd radargebied).
 - [GangZoneDestroy](../functions/GangZoneDestroy): Vernietig een gangzone.
 - [UseGangZoneCheck](../functions/UseGangZoneCheck): Schakelt de callback in wanneer een speler deze zone binnengaat.
-
-

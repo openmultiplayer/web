@@ -9,11 +9,11 @@ tags: ["arguments", "args"]
 
 Obter o número de argumentos passados para o script (aqueles após **--**).
 
-| Nome                  | Descrição                                                         |
-| --------------------- | ----------------------------------------------------------------- |
+| Nome                  | Descrição                                                            |
+| --------------------- | -------------------------------------------------------------------- |
 | skip = 0              | O número de argumentos (com potencialmente o mesmo nome) para pular. |
-| const argument[] = "" | O nome do argumento, incluindo `-`s e `/`s.                      |
-| &value = cellmin      | O destino da saída.                                               |
+| const argument[] = "" | O nome do argumento, incluindo `-`s e `/`s.                          |
+| &value = cellmin      | O destino da saída.                                                  |
 
 ## Retorno
 

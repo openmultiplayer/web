@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Numit atunci când un vehicul este transmis în flux la clientul unui jucător.
 
-| Nume        | Descriere                                              |
-| ----------- | ------------------------------------------------------ |
-| vehicleid   | ID-ul vehiculului care a transmis în flux pentru jucător. |
-| forplayerid | ID-ul jucătorului pentru care vehiculul a fost transmis în flux.  |
+| Nume        | Descriere                                                        |
+| ----------- | ---------------------------------------------------------------- |
+| vehicleid   | ID-ul vehiculului care a transmis în flux pentru jucător.        |
+| forplayerid | ID-ul jucătorului pentru care vehiculul a fost transmis în flux. |
 
 ## Returnari
 

@@ -9,9 +9,9 @@ tags: ["npc"]
 
 Ce rappel est appelé lorsque le PNJ est déconnecté du serveur.
 
-| Nom          | Description                                              |
-| ------------ | -------------------------------------------------------- |
-| reason[]     | La raison pour laquelle le bot s'est déconnecté du serveur |
+| Nom      | Description                                                |
+| -------- | ---------------------------------------------------------- |
+| reason[] | La raison pour laquelle le bot s'est déconnecté du serveur |
 
 ## Exemples
 

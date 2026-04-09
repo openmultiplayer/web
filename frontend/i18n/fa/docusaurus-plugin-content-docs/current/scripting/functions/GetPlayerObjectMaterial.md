@@ -11,17 +11,17 @@ tags: ["player", "object", "playerobject"]
 
 دریافت داده‌های متریال از یک index از player-object.
 
-| نام               | توضیحات                                                           |
-|--------------------|-----------------------------------------------------------------------|
-| playerid           | ID بازیکن.                                                 |
-| objectid           | ID player-object.                                          |
-| materialIndex      | index متریال در object. (0 تا 15)                           |
-| &modelid           | متغیری برای ذخیره ID مدل، به صورت reference پاس داده می‌شود.       |
+| نام                | توضیحات                                                                |
+| ------------------ | ---------------------------------------------------------------------- |
+| playerid           | ID بازیکن.                                                             |
+| objectid           | ID player-object.                                                      |
+| materialIndex      | index متریال در object. (0 تا 15)                                      |
+| &modelid           | متغیری برای ذخیره ID مدل، به صورت reference پاس داده می‌شود.           |
 | textureLibrary[]   | آرایه‌ای برای ذخیره textureLibrary، به صورت reference پاس داده می‌شود. |
-| textureLibrarySize | اندازه textureLibrary.                                       |
+| textureLibrarySize | اندازه textureLibrary.                                                 |
 | textureName[]      | آرایه‌ای برای ذخیره textureName، به صورت reference پاس داده می‌شود.    |
-| textureNameSize    | اندازه textureName.                                          |
-| &materialColour    | متغیری برای ذخیره materialColour، به صورت reference پاس داده می‌شود. |
+| textureNameSize    | اندازه textureName.                                                    |
+| &materialColour    | متغیری برای ذخیره materialColour، به صورت reference پاس داده می‌شود.   |
 
 ## مقادیر برگشتی
 
@@ -35,7 +35,7 @@ tags: ["player", "object", "playerobject"]
 new playerobjectid = CreatePlayerObject(playerid, 19371, 978.71143, -925.25708, 42.63720,   0.00000, 0.00000, 2.00000);
 SetPlayerObjectMaterial(playerid, playerobjectid, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
 
-new 
+new
     modelid,
     textureLibrary[16],
     textureName[16],

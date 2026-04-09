@@ -9,9 +9,9 @@ tags: []
 
 Itakda ang lagay ng panahon sa mundo para sa lahat ng manlalaro.
 
-| Name      | Description                                      |
-| --------- | ------------------------------------------------ |
-| weatherid | Ang [weather](../resources/weatherid) na itatakda.|
+| Name      | Description                                        |
+| --------- | -------------------------------------------------- |
+| weatherid | Ang [weather](../resources/weatherid) na itatakda. |
 
 ## Returns
 

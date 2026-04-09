@@ -15,9 +15,9 @@ Cette callback est appelée **seulement** quand un véhicule **re**spawn ! [Crea
 
 description: Cette callback est appelée lorsqu'un véhicule respawn _(réapparaît)_.
 
-| Nom             | Description                         |
-| --------------- | ----------------------------------- |
-| `int` vehicleid | L'ID du véhicule qui a spawné.      |
+| Nom             | Description                    |
+| --------------- | ------------------------------ |
+| `int` vehicleid | L'ID du véhicule qui a spawné. |
 
 ## Valeur de retour
 

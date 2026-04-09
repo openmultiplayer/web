@@ -11,16 +11,16 @@ tags: ["client"]
 
 Questo callback viene chiamato quando una richiesta di [SendClientCheck](SendClientCheck) è completata.
 
-| Nome | Descrizione |
-| :--------- | :---------------------------------------------------------------------------------------------------- |
-| `playerid` | L'ID del giocatore controllato. |
-| `actionid` | Il tipo di controllo eseguito. |
-| `memaddr` | L'indirizzo di memoria richiesto. |
-| `retndata` | Il risultato del controllo. |
+| Nome       | Descrizione                       |
+| :--------- | :-------------------------------- |
+| `playerid` | L'ID del giocatore controllato.   |
+| `actionid` | Il tipo di controllo eseguito.    |
+| `memaddr`  | L'indirizzo di memoria richiesto. |
+| `retndata` | Il risultato del controllo.       |
 
 ## Ritorna
 
-È sempre chiamato prima nei *filterscripts*.
+È sempre chiamato prima nei _filterscripts_.
 
 ## Esempi
 
@@ -43,6 +43,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 ```
 
 ## Note
+
 :::warning
 
 **Server SA:MP**: Questo callback viene chiamato solo se è presente in un filterscript.
@@ -50,9 +51,11 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 **Server open.mp**: Questo callback funziona normalmente sia all'interno di un gamemode che di un filterscript. :::
 
 ## Funzioni Correlate
+
 La seguente funzione potrebbe essere utile, in quanto è correlata a questo callback in un modo o nell'altro.
 
 - [SendClientCheck](SendClientCheck): Esegue un controllo della memoria sul client.
 
 ## Risorse Correlate
+
 - [opcodes](opcodes): ID degli opcode di azione e il loro scopo.

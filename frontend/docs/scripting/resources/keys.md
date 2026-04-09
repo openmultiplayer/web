@@ -33,7 +33,7 @@ SA-MP uses bitmasking to determine which keys are pressed and which are not. Her
 | KEY_ANALOG_RIGHT                    | 16384                | \~k~\~VEHICLE_LOOKRIGHT~                | \~k~\~VEHICLE_TURRETRIGHT~                 | NUM6                                                     | NUM6                     |
 | KEY_YES<sup>(2)</sup>               | 65536                | \~k~\~CONVERSATION_YES~                 | \~k~\~CONVERSATION_YES~                    | Y                                                        | Y                        |
 | KEY_NO<sup>(2)</sup>                | 131072               | \~k~\~CONVERSATION_NO~                  | \~k~\~CONVERSATION_NO~                     | N                                                        | N                        |
-| KEY_CTRL_BACK<sup>(2)</sup>         | 262144<sup>(4)</sup> | \~k~\~GROUP_CONTROL_BWD~                | \~k~\~GROUP_CONTROL_BWD~                   | H                                                        | H                        |
+| KEY_CTRL_BACK<sup>(2)</sup>         | 262144<sup>(4)</sup> | \~k~\~GROUP_CONTROL_BWD~                | \~k~\~GROUP_CONTROL_BWD~                   | H                                                        | H, R<sup>(7)</sup>               |
 | UNDEFINED<sup>(3)</sup>             | -                    | \~k~\~GROUP_CONTROL_FWD~                | \~k~\~GROUP_CONTROL_FWD~                   | G                                                        | G                        |
 | KEY_UP                              | -128                 | \~k~\~GO_FORWARD~                       | \~k~\~VEHICLE_STEERUP~                     | UP                                                       | UP                       |
 | KEY_DOWN                            | 128                  | \~k~\~GO_BACK~                          | \~k~\~VEHICLE_STEERDOWN~                   | DOWN                                                     | DOWN                     |
@@ -54,8 +54,10 @@ or use KEY_HANDBRAKE.
 
 **(3):** GROUP_CONTROL_FWD cannot be detected in SA-MP, as it used internally to enter vehicles as passenger. However, the gametext definition still exists.
 
-**(4):** If the key number "262144" does not work, just use key number "2".
+**(4):** If the key number "262144" does not work, just use key number "2". 
 
 **(5):** Only detected when "JOYPAD" configuration is selected for controller.
 
 **(6)** Embedding codes only work for [client messages](../functions/SendDeathMessage), [textdraws](../functions/TextDrawCreate) and [gametexts](../functions/GameTextForPlayer).
+
+**(7)** If a player sits in a vehicle with no radio stations (Cop cars, RC vehicles), both R and H will return "262144" for their session. But if they don't, pressing H / Caps Lock in vehicle only returns "2", while R button returns "262144".

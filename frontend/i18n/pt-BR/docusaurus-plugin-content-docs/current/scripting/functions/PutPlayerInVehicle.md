@@ -9,11 +9,11 @@ tags: ["player", "vehicle"]
 
 Coloca um jogador em um veículo.
 
-| Nome       | Descrição                                 |
-| ---------- | ----------------------------------------- |
-| playerid   | O ID do jogador a ser colocado no veículo. |
-| vehicleid  | O ID do veículo onde o jogador será colocado. |
-| seatid     | O ID do assento onde o jogador será colocado. |
+| Nome      | Descrição                                     |
+| --------- | --------------------------------------------- |
+| playerid  | O ID do jogador a ser colocado no veículo.    |
+| vehicleid | O ID do veículo onde o jogador será colocado. |
+| seatid    | O ID do assento onde o jogador será colocado. |
 
 ## Retornos
 
@@ -31,12 +31,12 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 }
 ```
 
-| ID  | Assento                      |
-| --- | ---------------------------- |
-| 0   | Motorista                    |
-| 1   | Passageiro da frente         |
-| 2   | Passageiro de trás à esquerda |
-| 3   | Passageiro de trás à direita  |
+| ID  | Assento                                |
+| --- | -------------------------------------- |
+| 0   | Motorista                              |
+| 1   | Passageiro da frente                   |
+| 2   | Passageiro de trás à esquerda          |
+| 3   | Passageiro de trás à direita           |
 | 4+  | Assentos de passageiros (ônibus, etc.) |
 
 ## Notas

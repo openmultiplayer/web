@@ -11,10 +11,10 @@ tags: ["core"]
 
 Força um valor a estar dentro de um intervalo.
 
-| Nome  | Descrição                                         |
-| ----- | ------------------------------------------------- |
-| value | O valor a ser forçado em um intervalo.           |
-| min   | O limite inferior do intervalo. _(opcional=cellmin)_  |
+| Nome  | Descrição                                            |
+| ----- | ---------------------------------------------------- |
+| value | O valor a ser forçado em um intervalo.               |
+| min   | O limite inferior do intervalo. _(opcional=cellmin)_ |
 | max   | O limite superior do intervalo. _(opcional=cellmax)_ |
 
 ## Retorno

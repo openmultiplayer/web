@@ -9,9 +9,9 @@ tags: ["player"]
 
 Sla de armour van een speler op in een variabele.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
-| playerid | ID van de speler. |
+| Naam          | Beschrijving                               |
+| ------------- | ------------------------------------------ |
+| playerid      | ID van de speler.                          |
 | &Float:armour | Floatâ€‘referentie om armour in op te slaan. |
 
 ## Retourneert
@@ -45,5 +45,3 @@ De client rapporteert waarden tot maximaal 255; hogere waarden lopen over (256â†
 - [SetPlayerArmour](SetPlayerArmour)
 - [GetPlayerHealth](GetPlayerHealth)
 - [GetVehicleHealth](GetVehicleHealth)
-
-

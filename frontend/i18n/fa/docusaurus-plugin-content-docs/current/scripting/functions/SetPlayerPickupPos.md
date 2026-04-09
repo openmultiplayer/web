@@ -12,9 +12,9 @@ tags: ["player", "pickup", "playerpickup"]
 موقعیت یک player pickup رو تنظیم می‌کنه.
 
 | نام                | توضیحات                                    |
-|--------------------|-------------------------------------------|
-| playerid           | ID بازیکن.                                |
-| pickupid           | ID player pickup.                        |
+| ------------------ | ------------------------------------------ |
+| playerid           | ID بازیکن.                                 |
+| pickupid           | ID player pickup.                          |
 | Float:x            | مختصات x که pickup باید در اون قرار بگیره. |
 | Float:y            | مختصات y که pickup باید در اون قرار بگیره. |
 | Float:z            | مختصات z که pickup باید در اون قرار بگیره. |
@@ -32,7 +32,7 @@ new PlayerPickup[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
     PlayerPickup[playerid] = CreatePlayerPickup(playerid, 1242, 2, 2010.0979, 1222.0642, 10.8206, -1);
-    
+
     SetPlayerPickupPos(playerid, PlayerPickup[playerid], 1958.5488, 1344.9137, 15.3613);
     return 1;
 }

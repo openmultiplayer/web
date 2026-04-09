@@ -9,8 +9,8 @@ tags: ["player"]
 
 Ang callback na ito ay tinatawag sa tuwing ina-update ng isang kliyente/manlalaro ang server sa kanilang katayuan. Madalas itong ginagamit para gumawa ng mga custom na callback para sa mga update ng kliyente na hindi aktibong sinusubaybayan ng server, gaya ng mga update sa kalusugan o armor o mga manlalaro na nagpapalit ng armas.
 
-| Name     | Description                                |
-| -------- | ------------------------------------------ |
+| Name     | Description                                   |
+| -------- | --------------------------------------------- |
 | playerid | ID ng player na nagpapadala ng update packet. |
 
 ## Returns

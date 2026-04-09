@@ -11,9 +11,9 @@ tags: ["math", "floating-point"]
 
 Hatiin ang isang float sa isa pa. Redundant bilang ang operator ng dibisyon (/) ay gumagawa ng parehong bagay.
 
-| Name           | Description                               |
-| -------------- | ----------------------------------------- |
-| Float:dividend | Unang float.                              |
+| Name           | Description                                   |
+| -------------- | --------------------------------------------- |
+| Float:dividend | Unang float.                                  |
 | Float:divisor  | Pangalawang float (hinahati ang unang float.) |
 
 ## Returns

@@ -9,13 +9,13 @@ tags: ["vehículo, vehicle"]
 
 Añade un vehículo 'estático' (los modelos están pre-cargados para los jugadores) al modo de juego.
 
-| Nombre                                   | Descripción                            |
-| ---------------------------------------- | -------------------------------------- |
-| modelid                                  | El ID del modelo para el vehículo.     |
-| Float:spawn_X                            | La coordenada X para el vehículo.      |
-| Float:spawn_Y                            | La coordenada Y para el vehículo.      |
-| Float:spawn_Z                            | La coordenada Z para el vehículo.      |
-| Float:z_angle                            | Dirección del vehículo - ángulo.       |
+| Nombre                                | Descripción                                    |
+| ------------------------------------- | ---------------------------------------------- |
+| modelid                               | El ID del modelo para el vehículo.             |
+| Float:spawn_X                         | La coordenada X para el vehículo.              |
+| Float:spawn_Y                         | La coordenada Y para el vehículo.              |
+| Float:spawn_Z                         | La coordenada Z para el vehículo.              |
+| Float:z_angle                         | Dirección del vehículo - ángulo.               |
 | [color1](../resources/vehiclecolorid) | El ID del color primario. -1 para aleatorio.   |
 | [color2](../resources/vehiclecolorid) | El ID del color secundario. -1 para aleatorio. |
 

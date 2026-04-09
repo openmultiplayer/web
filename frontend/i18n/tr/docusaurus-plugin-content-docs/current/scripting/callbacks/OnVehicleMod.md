@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Bu fonksiyon, herhangi bir araca modifiye uygulandığında çağrılır.
 
-| Parametre   | Açıklama                                                |
-| ----------- | ------------------------------------------------------- |
-| playerid    | Araç sürücüsünün ID'si.                                 |
-| vehicleid   | Modifiye uygulanan aracın ID'si.                        |
-| componentid | Araca eklenen bileşenin ID'si.                          |
+| Parametre   | Açıklama                         |
+| ----------- | -------------------------------- |
+| playerid    | Araç sürücüsünün ID'si.          |
+| vehicleid   | Modifiye uygulanan aracın ID'si. |
+| componentid | Araca eklenen bileşenin ID'si.   |
 
 ## Çalışınca Vereceği Sonuçlar
 

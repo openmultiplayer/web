@@ -320,4 +320,4 @@ for (new i = 0; rectangle:i < rectangle; ++i)
 
 ---
 
-[İçerik listesine geri dön](00-Contents)
+[İçerik listesine geri dön](Contents)

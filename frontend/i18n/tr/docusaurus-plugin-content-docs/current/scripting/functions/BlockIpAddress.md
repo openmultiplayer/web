@@ -9,14 +9,14 @@ tags: []
 
 IP adresini sunucudan bloklar. Belirtilen oyuncu girmeye çalıştığında sunucudan bloklandığına dair mesaj alır ve giremez. Belirtilen IP'ye sahip birisi eğer sunucu üzerinde aktifse bir kaç saniye içerisinde yasaklanır ve zaman aşımına uğrar, bir süre sonra tekrar girmeye çalıştığında yasaklandığına dair mesaj alır ve sunucuyla bağlantı kuramaz.
 
-| Parametre  | Açıklama                                                                                                   |
-| ---------- | ---------------------------------------------------------------------------------------------------------- |
-| ip_address | Bloklanacak IP adresi.                                                                                     |
-| timems     | IP'nin engelleneceği süre (milisaniye cinsinden). 0, belirsiz bir süre için kullanılabilir.                |
+| Parametre  | Açıklama                                                                                    |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| ip_address | Bloklanacak IP adresi.                                                                      |
+| timems     | IP'nin engelleneceği süre (milisaniye cinsinden). 0, belirsiz bir süre için kullanılabilir. |
 
 ## Çalışınca Vereceği Sonuçlar
 
-Bu fonksiyon herhangi bir değer döndürmez. 
+Bu fonksiyon herhangi bir değer döndürmez.
 
 ## Örnekler
 

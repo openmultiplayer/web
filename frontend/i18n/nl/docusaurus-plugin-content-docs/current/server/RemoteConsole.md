@@ -16,5 +16,3 @@ De Remote Console is een command prompt waarmee je RCON-commands kunt uitvoeren 
 ![Rcon console](https://assets.open.mp/assets/images/server/rcon.jpg)
 
 Opmerking: Je hoeft in de serverbrowser geen `/rcon` voor de command te typen; commands werken dan juist niet. Wil je bijvoorbeeld de server resetten, typ dan gewoon `gmx` en druk op Enter. Meer is er niet voor nodig. Veel plezier!
-
-

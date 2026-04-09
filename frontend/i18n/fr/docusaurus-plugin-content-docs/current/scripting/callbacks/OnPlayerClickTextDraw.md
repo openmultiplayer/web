@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Cette callback est appelée quand un joueur clique sur un textdraw ou le quitte avec la touche ECHAP.
 
-| Nom             | Description                                                                        |
-| --------------- | ---------------------------------------------------------------------------------- |
-| `int` playerid  | ID du joueur qui clique sur le textdraw.                                           |
-| `int`clickedid  | ID du textdraw cliqué. INVALID_TEXT_DRAW si le textdraw est quitté.                |
+| Nom            | Description                                                         |
+| -------------- | ------------------------------------------------------------------- |
+| `int` playerid | ID du joueur qui clique sur le textdraw.                            |
+| `int`clickedid | ID du textdraw cliqué. INVALID_TEXT_DRAW si le textdraw est quitté. |
 
 ## Valeur de retour
 
@@ -75,4 +75,3 @@ N'utilisez pas CancelSelectTextDraw sans condition dans cette callback. Il en r�
 - [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw): Quand un joueur clique sur un player-textdraw.
 - [OnPlayerClickPlayer](OnPlayerClickPlayer): Quand un joueur clique sur un autre joueur dans la tablist.
 - [OnPlayerClickMap](OnPlayerClickMap): Quand un joueur place un point sur la map avec le clic droit.
-

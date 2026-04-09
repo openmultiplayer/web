@@ -42,8 +42,13 @@ const config: Config = {
   },
 
   onBrokenLinks: "ignore",
-  onBrokenMarkdownLinks: "ignore",
   onBrokenAnchors: "ignore",
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "ignore",
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -72,6 +77,7 @@ const config: Config = {
       "ta",
       "th",
       "tr",
+      "uk",
       "vi",
       "zh-CN",
       "zh-TW",
@@ -132,6 +138,10 @@ const config: Config = {
               tutorials: {
                 label: "Tutorials",
                 position: 4,
+              },
+              meta: {
+                label: "Meta",
+                position: 5,
               },
             };
 
@@ -251,7 +261,6 @@ const config: Config = {
         alt: "open.mp logo",
         src: "images/assets/logo.svg",
       },
-      style: "dark",
       links: [
         {
           title: "Documentations",
@@ -262,7 +271,7 @@ const config: Config = {
             },
             {
               label: "open.mp Migration",
-              to: "docs",
+              to: "docs/server/Installation",
             },
             {
               label: "config.json",
@@ -345,7 +354,28 @@ const config: Config = {
       // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
       insights: false,
     },
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+      },
+    },
   } satisfies Preset.ThemeConfig,
+
+  stylesheets: [
+    {
+      rel: "preconnect",
+      href: "https://rsms.me/",
+    },
+    {
+      rel: "stylesheet",
+      href: "https://rsms.me/inter/inter.css",
+    },
+  ],
 };
 
 export default config;

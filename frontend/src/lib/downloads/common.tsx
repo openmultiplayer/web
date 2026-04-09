@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import Admonition from "../../components/Admonition";
 import { INITIAL_VISIBLE_RELEASES } from "./constants";
 import styles from "../../pages/downloads.module.css";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 export interface Release {
   tag: string;
@@ -161,15 +162,19 @@ export function ReleaseListPage({ config }: ReleaseListPageProps): React.ReactEl
                 )}
               </Heading>
 
-              <p className={styles.versionInfo}>
-                <Translate
-                  id="downloads.releaseDate"
-                  description="Release date label"
-                  values={{ date: formatDate(release.publishedAt) }}
-                >
-                  {"Released {date}"}
-                </Translate>
-              </p>
+              <BrowserOnly>
+                {() => (
+                  <p className={styles.versionInfo}>
+                    <Translate
+                      id="downloads.releaseDate"
+                      description="Release date label"
+                      values={{ date: formatDate(release.publishedAt) }}
+                    >
+                      {"Released {date}"}
+                    </Translate>
+                  </p>
+                )}
+              </BrowserOnly>
 
               {release.admonition && (
                 <div className={styles.releaseAdmonition}>
@@ -215,8 +220,10 @@ export function ReleaseListPage({ config }: ReleaseListPageProps): React.ReactEl
                       className={`button button--primary button--lg ${styles.downloadButton}`}
                       to={asset.url}
                     >
-                      {asset.label}{/dynssl/i.test(asset.label) && " *"}
-                      <span className={styles.buttonSize}>({asset.size})</span>
+                      <div className={styles.downloadLabel}>
+                        <span>{asset.label}{/dynssl/i.test(asset.label) && " *"}</span>
+                        <span className={styles.buttonSize}>({asset.size})</span>
+                      </div>
                     </Link>
                   ))
                 ) : (

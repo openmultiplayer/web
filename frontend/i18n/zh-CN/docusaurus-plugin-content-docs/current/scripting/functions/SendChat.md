@@ -5,6 +5,12 @@ description: 允许NPC发送聊天消息，类似于SendPlayerMessageToAll，但
 tags: []
 ---
 
+:::warning
+
+此函数已弃用，请使用 [SendPlayerMessageToAll](SendPlayerMessageToAll).
+
+:::
+
 ## 描述
 
 此函数允许 NPC 发送聊天消息，类似于[SendPlayerMessageToAll](SendPlayerMessageToAll)，但专用于 NPC 脚本内部使用。

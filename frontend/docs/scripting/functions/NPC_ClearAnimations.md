@@ -32,7 +32,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         NPC_ApplyAnimation(npcid, "DANCING", "dance_loop", 4.1, true, false, false, false, 0);
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d has been applied animation.", npcid);
-        
+
         SetTimerEx("ClearNPCAnimations", 25000, false, "ii", playerid, npcid);
 
         return 1;
@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 forward ClearNPCAnimations(playerid, npcid);
 public ClearNPCAnimations(playerid, npcid)
 {
-    
+
     NPC_ClearAnimations(npcid);
     SendClientMessage(playerid, 0x00FF00FF, "NPC %d animations were cleared.", npcid);
 }

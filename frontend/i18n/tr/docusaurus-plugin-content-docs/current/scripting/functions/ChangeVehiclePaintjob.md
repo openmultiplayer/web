@@ -14,7 +14,7 @@ Aracın kaplamasını değiştirme. (düz renkler için bkz. ChangeVehicleColor)
 | vehicleid  | Kaplaması değişecek aracın ID'si.                            |
 | paintjobid | Uygulanacak kaplama ID'si. Kaplama kaldırmak için 3'ü girin. |
 
-## Çalışınca Vereceği Sonuçlar 
+## Çalışınca Vereceği Sonuçlar
 
 Bu fonksiyon belirtilen araç ID'si oluşturulmamış olsa bile her zaman 1'i (başarılı) döndürür.
 

@@ -1,5 +1,4 @@
 ---
-
 title: OnVehicleDamageStatusUpdate
 description: Callback này được gọi khi một phần tử của xe như cửa, lốp, tấm chắn hoặc đèn thay đổi trạng thái hư hỏng của chúng.
 tags: ["vehicle"]
@@ -15,10 +14,10 @@ tags: ["vehicle"]
 
 Callback này được gọi khi một phần tử của xe như cửa, lốp, tấm chắn hoặc đèn thay đổi trạng thái hư hỏng của chúng.
 
-| Tên        | Mô tả                                                                                                   |
-|------------|---------------------------------------------------------------------------------------------------------|
-| vehicleid   | ID của xe đã thay đổi trạng thái hư hỏng.                                                               |
-| playerid    | ID của người chơi đã đồng bộ hóa sự thay đổi trong trạng thái hư hỏng (người đã làm hư xe hoặc sửa chữa). |
+| Tên       | Mô tả                                                                                                     |
+| --------- | --------------------------------------------------------------------------------------------------------- |
+| vehicleid | ID của xe đã thay đổi trạng thái hư hỏng.                                                                 |
+| playerid  | ID của người chơi đã đồng bộ hóa sự thay đổi trong trạng thái hư hỏng (người đã làm hư xe hoặc sửa chữa). |
 
 ## Trả về
 
@@ -32,7 +31,7 @@ Callback này được gọi khi một phần tử của xe như cửa, lốp, t
 public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 {
     // Lấy trạng thái hư hỏng của tất cả các thành phần
-    new 
+    new
         VEHICLE_PANEL_STATUS:panels,
         VEHICLE_DOOR_STATUS:doors,
         VEHICLE_LIGHT_STATUS:lights,

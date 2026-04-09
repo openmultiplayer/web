@@ -36,4 +36,4 @@ length = GetPlayers(players, sizeof(players));
 ## 相关函数
 
 - [GetVehicles](GetVehicles): 获取已创建车辆的 ID 数组
-- [GetActors](GetActors): 获取已创建角色的 ID 数组
+- [GetActors](GetActors): 获取已创建演员的 ID 数组

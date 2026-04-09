@@ -11,9 +11,9 @@ tags: ["player"]
 
 دریافت سطح مهارت بازیکن برای نوع اسلحه خاص.
 
-| نام              | توضیحات                                                  |
-| ----------------- | ------------------------------------------------------------ |
-| playerid          | ID بازیکن.                                        |
+| نام               | توضیحات                                                |
+| ----------------- | ------------------------------------------------------ |
+| playerid          | ID بازیکن.                                             |
 | WEAPONSKILL:skill | [اسلحه](../resources/weaponskills) برای دریافت مهارتش. |
 
 ## مقادیر برگشتی
@@ -30,7 +30,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/skill", true))
     {
         new string[64];
-        
+
         new skill = GetPlayerSkillLevel(playerid, WEAPONSKILL_PISTOL);
 
         format(string, sizeof(string), "Your pistol skill level is %d", skill);

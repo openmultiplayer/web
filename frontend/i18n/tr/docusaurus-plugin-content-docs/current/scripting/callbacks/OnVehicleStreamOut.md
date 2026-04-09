@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Bir araç, oyuncunun işlem alanının dışına çıktığında çağırılır (Oyuncuların göremeyeceği kadar uzakta).
 
-| Parametre        | Açıklama                                                     |
-| ----------- | ------------------------------------------------------------ |
-| vehicleid   | İşlem alanının dışına çıkan aracın ID'si.                    |
-| forplayerid | İşlem alanından araç çıkan oyuncunun ID'si.                  |
+| Parametre   | Açıklama                                    |
+| ----------- | ------------------------------------------- |
+| vehicleid   | İşlem alanının dışına çıkan aracın ID'si.   |
+| forplayerid | İşlem alanından araç çıkan oyuncunun ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

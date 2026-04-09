@@ -9,9 +9,9 @@ tags: ["player", "menu"]
 
 Callback appelée un joueur quitte un menu.
 
-| Nom            | Description                               |
-| -------------- | ----------------------------------------- |
-| `int` playerid | ID du joueur qui quitte le menu           |
+| Nom            | Description                     |
+| -------------- | ------------------------------- |
+| `int` playerid | ID du joueur qui quitte le menu |
 
 ## Valeur de retour
 

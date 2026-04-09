@@ -9,15 +9,15 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător selectează un obiect după ce SelectObject a fost folosit.
 
-| Nume     | Descriere                                                  |
-| -------- | ---------------------------------------------------------- |
-| playerid | ID-ul jucătorului care a selectat un obiect                |
-| type     | [Tipul](../resources/selectobjecttypes) de selecție        |
-| objectid | ID-ul obiectului selectat                                  |
-| modelid  | Modelul obiectului selectat                                |
-| Float:fX | Poziția X a obiectului selectat                            |
-| Float:fY | Poziția Y a obiectului selectat                            |
-| Float:fZ | Poziția Z a obiectului selectat                            |
+| Nume     | Descriere                                           |
+| -------- | --------------------------------------------------- |
+| playerid | ID-ul jucătorului care a selectat un obiect         |
+| type     | [Tipul](../resources/selectobjecttypes) de selecție |
+| objectid | ID-ul obiectului selectat                           |
+| modelid  | Modelul obiectului selectat                         |
+| Float:fX | Poziția X a obiectului selectat                     |
+| Float:fY | Poziția Y a obiectului selectat                     |
+| Float:fZ | Poziția Z a obiectului selectat                     |
 
 ## Returnări
 

@@ -9,11 +9,11 @@ tags: ["player", "vehicle"]
 
 Acest callback este apelat atunci când un jucător începe să intre într-un vehicul, ceea ce înseamnă că jucătorul nu se află încă în vehicul în momentul în care este apelat.
 
-| Nume        | Descriere                                                    |
-| ----------- | ------------------------------------------------------------ |
-| playerid    | ID-ul jucătorului care încearcă să intre într-un vehicul.    |
-| vehicleid   | ID-ul vehiculului în care jucătorul încearcă să intre.       |
-| ispassenger | 0 dacă introduceți ca șofer. 1 dacă intri ca pasager.        |
+| Nume        | Descriere                                                 |
+| ----------- | --------------------------------------------------------- |
+| playerid    | ID-ul jucătorului care încearcă să intre într-un vehicul. |
+| vehicleid   | ID-ul vehiculului în care jucătorul încearcă să intre.    |
+| ispassenger | 0 dacă introduceți ca șofer. 1 dacă intri ca pasager.     |
 
 ## Returnări
 

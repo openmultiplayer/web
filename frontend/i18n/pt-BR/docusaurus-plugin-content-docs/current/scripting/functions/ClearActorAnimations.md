@@ -11,9 +11,9 @@ tags: ["actor"]
 
 Limpa todas as animações aplicadas a um ator.
 
-| Nome    | Descrição                                                                                 |
-| ------- | ----------------------------------------------------------------------------------------- |
-| actorid | O ID do ator (retornado por [CreateActor](CreateActor)) para limpar as animações.       |
+| Nome    | Descrição                                                                         |
+| ------- | --------------------------------------------------------------------------------- |
+| actorid | O ID do ator (retornado por [CreateActor](CreateActor)) para limpar as animações. |
 
 ## Retorno
 

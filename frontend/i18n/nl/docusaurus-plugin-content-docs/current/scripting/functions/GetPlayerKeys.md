@@ -9,12 +9,12 @@ tags: ["player"]
 
 Lees de huidige key‑states van een speler.
 
-| Naam | Beschrijving |
-| ---- | ------------ |
-| playerid | ID van de speler. |
+| Naam      | Beschrijving                                            |
+| --------- | ------------------------------------------------------- |
+| playerid  | ID van de speler.                                       |
 | &KEY:keys | Bitmask met key‑states (zie [Keys](../resources/keys)). |
-| updown | Up/down‑state. |
-| leftright | Left/right‑state. |
+| updown    | Up/down‑state.                                          |
+| leftright | Left/right‑state.                                       |
 
 ## Retourneert
 
@@ -42,5 +42,3 @@ Alleen de FUNCTIE van toetsen wordt gedetecteerd; niet de fysieke toets. Bijvoor
 ## Gerelateerd
 
 - [Keys](../resources/keys)
-
-

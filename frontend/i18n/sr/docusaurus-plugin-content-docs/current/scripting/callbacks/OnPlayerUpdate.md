@@ -9,8 +9,8 @@ tags: ["player"]
 
 Ова повратна функција се позива сваки пут када клијент/играч ажурира сервер са својим статусом. Често се користи за креирање прилагођених повратних функција за ажурирања клијента која сервер није активно прати, као што су ажурирања здравља или оклопа или прелазак оружја код играча.
 
-| Име     | Опис                                |
-| -------- | ------------------------------------------ |
+| Име      | Опис                                 |
+| -------- | ------------------------------------ |
 | playerid | ID играча који шаље ажурирање пакета |
 
 ## Враћа
@@ -43,7 +43,7 @@ public OnPlayerUpdate(playerid)
 forward OnPlayerWeaponChange(playerid, WEAPON:oldWeapon, WEAPON:newWeapon);
 public OnPlayerWeaponChange(playerid, WEAPON:oldWeapon, WEAPON:newWeapon)
 {
-    new 
+    new
         string[128],
         oldWeaponName[24],
         newWeaponName[24];
@@ -66,7 +66,7 @@ public OnPlayerUpdate(playerid)
     GetPlayerHealth(playerid, fHealth);
 
     if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
-    { 
+    {
         // Здравље играча је промењено од последњег ажурирања -> серверу, тако да је очигледно то оно што је ажурирано.
         // Направимо даље провере да видимо да ли је изгубио или добио здравље, анти-чеат на здравље? ;
 

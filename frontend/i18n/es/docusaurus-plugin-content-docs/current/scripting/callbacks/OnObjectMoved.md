@@ -8,9 +8,9 @@ tags: []
 
 Este callback se llama cuando un objeto es movido después de usar MoveObject (cuando este termina de moverse).
 
-| Nombre   | Descripción                         |
-| -------- | ----------------------------------- |
-| objectid | El ID del objeto que fue movido.    |
+| Nombre   | Descripción                      |
+| -------- | -------------------------------- |
+| objectid | El ID del objeto que fue movido. |
 
 ## Devoluciones
 

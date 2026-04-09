@@ -11,9 +11,9 @@ Esta função obtém o ID do veículo em que o jogador está atualmente.
 
 **Nota:** NÃO é o ID do modelo do veículo. Veja [GetVehicleModel](GetVehicleModel) para isso.
 
-| Nome      | Descrição                                                        |
-| --------- | ---------------------------------------------------------------- |
-| playerid  | O ID do jogador no veículo do qual você deseja obter o ID         |
+| Nome     | Descrição                                                 |
+| -------- | --------------------------------------------------------- |
+| playerid | O ID do jogador no veículo do qual você deseja obter o ID |
 
 ## Retornos
 

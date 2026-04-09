@@ -11,13 +11,13 @@ tags: ["vehicle"]
 
 Allows you to retrieve the current state of a vehicle's doors
 
-| Name             | Description                                                             |
-| ---------------- | ----------------------------------------------------------------------- |
-| vehicleid        | The ID of the vehicle                                                   |
-| &frontLeft       | The integer to save the state of the driver's door to.                  |
-| &frontRight      | The integer to save the state of the passenger's door to.               |
-| &rearLeft        | The integer to save the state of the rear left door to (if available).  |
-| &rearRight       | The integer to save the state of the rear right door to (if available). |
+| Name        | Description                                                             |
+| ----------- | ----------------------------------------------------------------------- |
+| vehicleid   | The ID of the vehicle                                                   |
+| &frontLeft  | The integer to save the state of the driver's door to.                  |
+| &frontRight | The integer to save the state of the passenger's door to.               |
+| &rearLeft   | The integer to save the state of the rear left door to (if available).  |
+| &rearRight  | The integer to save the state of the rear right door to (if available). |
 
 ## Returns
 

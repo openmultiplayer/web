@@ -9,9 +9,9 @@ tags: ["player", "vehicle"]
 
 Verifica se um jogador está em um veículo específico.
 
-| Nome      | Descrição                               |
-| --------- | --------------------------------------- |
-| playerid  | ID do jogador.                         |
+| Nome      | Descrição                             |
+| --------- | ------------------------------------- |
+| playerid  | ID do jogador.                        |
 | vehicleid | ID do veículo. Nota: NÃO é o modelid! |
 
 ## Retornos

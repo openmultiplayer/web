@@ -9,12 +9,12 @@ tags: []
 
 Essa callback é executada quando a requisição enviada pela função SendClientCheck é completa.
 
-| Nome          | Descrição                         |
-| ------------- | --------------------------------- |
-| playerid      | ID do jogador checado.            |
-| actionid      | Tipo da checagem feita.           |
-| memaddr       | Endereço requisitado.             |
-| retndata      | Resultado da checagem.            |
+| Nome     | Descrição               |
+| -------- | ----------------------- |
+| playerid | ID do jogador checado.  |
+| actionid | Tipo da checagem feita. |
+| memaddr  | Endereço requisitado.   |
+| retndata | Resultado da checagem.  |
 
 ## Retorno
 

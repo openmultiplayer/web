@@ -9,11 +9,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 رنگ پس زمینه یک player-textdraw رو تنظیم می‌کنه.
 
-| نام               | توضیحات                                                            |
-| ----------------- | ------------------------------------------------------------------ |
-| playerid          | آی‌دی بازیکنی که player-textdraw متعلق بهش هست                     |
-| PlayerText:textid | آی‌دی player-textdraw که می‌خوای رنگ پس زمینه‌ش رو تنظیم کنی      |
-| backgroundColour  | رنگی که textdraw باهاش تنظیم می‌شه.                               |
+| نام               | توضیحات                                                      |
+| ----------------- | ------------------------------------------------------------ |
+| playerid          | آی‌دی بازیکنی که player-textdraw متعلق بهش هست               |
+| PlayerText:textid | آی‌دی player-textdraw که می‌خوای رنگ پس زمینه‌ش رو تنظیم کنی |
+| backgroundColour  | رنگی که textdraw باهاش تنظیم می‌شه.                          |
 
 ## مقادیر بازگشتی
 

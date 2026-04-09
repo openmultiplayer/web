@@ -1,5 +1,4 @@
 ---
-
 title: DeletePVar
 sidebar_label: DeletePVar
 description: Apaga uma variável de jogador definida anteriormente.
@@ -10,9 +9,9 @@ tags: ["player variable", "pvar"]
 
 Apaga uma variável de jogador que foi definida antes.
 
-| Nome          | Descrição                                 |
-| ------------- | ----------------------------------------- |
-| playerid      | ID do jogador cuja variável será apagada. |
+| Nome         | Descrição                                 |
+| ------------ | ----------------------------------------- |
+| playerid     | ID do jogador cuja variável será apagada. |
 | const pvar[] | Nome da variável do jogador a apagar.     |
 
 ## retorno
@@ -35,9 +34,9 @@ DeletePVar(playerid, "SomeVarName");
 
 ## funções relacionadas
 
-* [SetPVarInt](SetPVarInt): Define um inteiro numa variável do jogador.
-* [GetPVarInt](GetPVarInt): Obtém um inteiro previamente definido numa variável do jogador.
-* [SetPVarString](SetPVarString): Define uma string numa variável do jogador.
-* [GetPVarString](GetPVarString): Obtém uma string previamente definida numa variável do jogador.
-* [SetPVarFloat](SetPVarFloat): Define um float numa variável do jogador.
-* [GetPVarFloat](GetPVarFloat): Obtém um float previamente definido numa variável do jogador.
+- [SetPVarInt](SetPVarInt): Define um inteiro numa variável do jogador.
+- [GetPVarInt](GetPVarInt): Obtém um inteiro previamente definido numa variável do jogador.
+- [SetPVarString](SetPVarString): Define uma string numa variável do jogador.
+- [GetPVarString](GetPVarString): Obtém uma string previamente definida numa variável do jogador.
+- [SetPVarFloat](SetPVarFloat): Define um float numa variável do jogador.
+- [GetPVarFloat](GetPVarFloat): Obtém um float previamente definido numa variável do jogador.

@@ -8,5 +8,3 @@ Types te gebruiken met [CreateExplosion](../functions/CreateExplosion) en [Creat
 :::
 
 > Zie de Engelstalige bron voor de volledige tabel en visuele voorbeelden; kolomkoppen/note zijn vertaald.
-
-

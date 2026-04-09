@@ -8,10 +8,10 @@ tags: ["vehicle"]
 
 Se llama cuando un vehículo es cargado (se hace visible) en el cliente de un jugador.
 
-| Nombre      | Descripción                                            |
-| ----------- | ------------------------------------------------------ |
-| vehicleid   | El ID del vehículo que fue cargado para el jugador.    |
-| forplayerid | El ID del jugador por el que se cargó el vehículo.     |
+| Nombre      | Descripción                                         |
+| ----------- | --------------------------------------------------- |
+| vehicleid   | El ID del vehículo que fue cargado para el jugador. |
+| forplayerid | El ID del jugador por el que se cargó el vehículo.  |
 
 ## Devoluciones
 

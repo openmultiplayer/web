@@ -11,10 +11,10 @@ tags: ["vehicle"]
 
 Desativa as colisões entre veículos ocupados para um jogador.
 
-| Nome         | Descrição                                                   |
+| Nome         | Descrição                                                     |
 | ------------ | ------------------------------------------------------------- |
-| playerid     | O ID do jogador para quem você deseja desativar as colisões. |
-| bool:disable | 'true' para desativar colisões, 'false' para ativar colisões.   |
+| playerid     | O ID do jogador para quem você deseja desativar as colisões.  |
+| bool:disable | 'true' para desativar colisões, 'false' para ativar colisões. |
 
 ## Retornos
 

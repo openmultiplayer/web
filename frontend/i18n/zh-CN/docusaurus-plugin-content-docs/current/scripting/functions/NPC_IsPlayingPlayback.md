@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_StartPlayback](NPC_StartPlayback): 开始回放录制
 - [NPC_StopPlayback](NPC_StopPlayback): 停止回放
-- [NPC_PausePlayback](NPC_PausePlayback): 暂停/取消暂停回放
+- [NPC_PausePlayback](NPC_PausePlayback): 暂停/恢复回放
 - [NPC_IsPlaybackPaused](NPC_IsPlaybackPaused): 检查是否暂停
 
 ## 相关回调

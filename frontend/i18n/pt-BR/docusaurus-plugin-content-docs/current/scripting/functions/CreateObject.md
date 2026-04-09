@@ -9,15 +9,15 @@ tags: []
 
 Cria um objeto em coordenadas especificadas no mundo do jogo.
 
-| Nome               | Descrição                                                                                                                                                                |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| modelid            | O modelo do objeto.                                                                                                                                                       |
-| Float:X            | A coordenada X para criar o objeto.                                                                                                              |
-| Float:Y            | A coordenada Y para criar o objeto.                                                                                   |
-| Float:Z            | A coordenada Z para criar o objeto.                                                                                   |
-| Float:rX           | A rotação X para criar o objeto.                                                                                                            |
-| Float:rY           | A rotação Y para criar o objeto.                                                                                                                                               |
-| Float:rZ           | A rotação Z para criar o objeto.                                                                                                                                             |
+| Nome               | Descrição                                                                                                                                                                                |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| modelid            | O modelo do objeto.                                                                                                                                                                      |
+| Float:X            | A coordenada X para criar o objeto.                                                                                                                                                      |
+| Float:Y            | A coordenada Y para criar o objeto.                                                                                                                                                      |
+| Float:Z            | A coordenada Z para criar o objeto.                                                                                                                                                      |
+| Float:rX           | A rotação X para criar o objeto.                                                                                                                                                         |
+| Float:rY           | A rotação Y para criar o objeto.                                                                                                                                                         |
+| Float:rZ           | A rotação Z para criar o objeto.                                                                                                                                                         |
 | Float:DrawDistance | (Opcional) A distância de renderização do objeto no mapa. 0.0 fará com que os objetos sejam renderizados em suas distâncias padrão. Utilizável desde 0.3b. Limitado a 300 antes de 0,3x. |
 
 ## Exemplos

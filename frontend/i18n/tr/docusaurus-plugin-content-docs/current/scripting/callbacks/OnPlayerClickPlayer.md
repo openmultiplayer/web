@@ -9,7 +9,7 @@ tags: ["player"]
 
 Bu geri çağırma oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında çağrılır.
 
-| Parametre              | Açıklama                        |
+| Parametre       | Açıklama                        |
 | --------------- | ------------------------------- |
 | playerid        | Tıklayan oyuncunun id'si.       |
 | clickedplayerid | Tıklanılan oyuncunun id'si.     |

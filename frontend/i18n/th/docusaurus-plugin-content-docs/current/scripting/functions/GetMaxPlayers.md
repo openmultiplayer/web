@@ -12,7 +12,6 @@ Returns the maximum number of players that can join the server, as set by the se
 | Name | Description |
 | ---- | ----------- |
 
-
 ## ตัวอย่าง
 
 ```c

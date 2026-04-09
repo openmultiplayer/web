@@ -9,12 +9,12 @@ tags: []
 
 This callback is called when a SendClientCheck request completes.
 
-| Name          | Description                       |
-| ------------- | --------------------------------- |
-| playerid      | ID player yang dicek.             |
-| actionid      | Tipe cek yang dilakukan.          |
-| memaddr       | 'address' yang diminta.           |
-| retndata      | Hasil dari cek tersebut.          |
+| Name     | Description              |
+| -------- | ------------------------ |
+| playerid | ID player yang dicek.    |
+| actionid | Tipe cek yang dilakukan. |
+| memaddr  | 'address' yang diminta.  |
+| retndata | Hasil dari cek tersebut. |
 
 ## Returns
 

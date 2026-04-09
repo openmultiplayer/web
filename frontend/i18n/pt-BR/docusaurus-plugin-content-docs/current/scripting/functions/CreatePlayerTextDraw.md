@@ -9,12 +9,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Cria um textdraw para um único jogador. Isso pode ser usado como uma alternativa ao limite de textdraws globais.
 
-| Nome             | Descrição                                       |
-| ---------------- | ----------------------------------------------- |
-| playerid         | O ID do jogador para criar o textdraw          |
-| Float:x          | Coordenada X                                    |
-| Float:y          | Coordenada Y                                    |
-| const format[]   | O texto no textdraw.                           |
+| Nome             | Descrição                                        |
+| ---------------- | ------------------------------------------------ |
+| playerid         | O ID do jogador para criar o textdraw            |
+| Float:x          | Coordenada X                                     |
+| Float:y          | Coordenada Y                                     |
+| const format[]   | O texto no textdraw.                             |
 | OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag. |
 
 ## Retorno

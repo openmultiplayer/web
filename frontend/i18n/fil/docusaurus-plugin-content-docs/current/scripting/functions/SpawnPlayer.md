@@ -9,9 +9,9 @@ tags: ["player"]
 
 (Re)Spawns ng isang manlalaro.
 
-| Name     | Description                    |
-| -------- | ------------------------------ |
-| playerid | Ang ID ng player na mag i-spawn.|
+| Name     | Description                      |
+| -------- | -------------------------------- |
+| playerid | Ang ID ng player na mag i-spawn. |
 
 ## Returns
 
