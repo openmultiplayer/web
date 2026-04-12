@@ -5,7 +5,7 @@ description: گرفتن قسمت اعشاری یک عدد.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

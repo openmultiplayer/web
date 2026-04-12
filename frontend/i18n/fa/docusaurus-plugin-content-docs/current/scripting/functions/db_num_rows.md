@@ -5,9 +5,9 @@ description: تعداد ردیف‌های موجود در نتیجه‌ای که
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
-<VersionWarn version='SA-MP 0.3.7 R1' />
+<VersionWarnFA version='SA-MP 0.3.7 R1' />
 
 <div dir="rtl" style={{ textAlign: "right" }}>
 

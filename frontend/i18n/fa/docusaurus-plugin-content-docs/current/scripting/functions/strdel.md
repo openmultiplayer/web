@@ -5,7 +5,7 @@ description: قسمتی از یک رشته را حذف می‌کند.
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

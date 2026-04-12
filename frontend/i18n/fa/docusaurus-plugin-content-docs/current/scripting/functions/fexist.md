@@ -5,7 +5,7 @@ description: بررسی وجود یک فایل خاص در دایرکتوری sc
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

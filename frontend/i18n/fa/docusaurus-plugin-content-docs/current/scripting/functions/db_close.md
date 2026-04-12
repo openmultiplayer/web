@@ -5,7 +5,7 @@ description: اتصال پایگاه داده SQLite که با `db_open` باز 
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -5,7 +5,7 @@ description: مقدار حافظه موجود برای heap/stack رو بر حس
 tags: ["core"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

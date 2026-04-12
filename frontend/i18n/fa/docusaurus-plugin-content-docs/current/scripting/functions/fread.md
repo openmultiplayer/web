@@ -5,7 +5,7 @@ description: خواندن یک خط از یک فایل.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -5,7 +5,7 @@ description: یه آرگومان که به تابع پاس داده شده رو 
 tags: ["core", "arguments", "args"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

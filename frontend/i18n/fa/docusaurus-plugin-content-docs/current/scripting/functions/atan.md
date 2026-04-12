@@ -5,7 +5,7 @@ description: مقدار معکوس یک تانژانت را به درجه دری
 tags: ["math"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

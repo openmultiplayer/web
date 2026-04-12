@@ -5,7 +5,7 @@ description: تقسیم یک عدد اعشاری بر دیگری.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

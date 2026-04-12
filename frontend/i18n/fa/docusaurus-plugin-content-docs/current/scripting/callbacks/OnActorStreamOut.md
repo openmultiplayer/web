@@ -5,7 +5,7 @@ description: این callback زمانی فراخوانی می‌شود که یک
 tags: ["actor"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+<VersionWarnFA name='callback' version='SA-MP 0.3.7' />
 
 ## توضیحات
 
@@ -34,7 +34,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## نکات
 
-<TipNPCCallbacks />
+<TipNPCCallbacksFA />
 
 ## Callbackهای مرتبط
 

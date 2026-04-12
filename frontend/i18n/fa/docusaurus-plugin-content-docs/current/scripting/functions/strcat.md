@@ -5,7 +5,7 @@ description: این تابع دو رشته را به هم متصل (ترکیب) 
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

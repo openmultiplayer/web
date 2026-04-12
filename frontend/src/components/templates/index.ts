@@ -59,6 +59,9 @@ const templates = {
   VersionWarnSR,
   LowercaseNoteSR,
   TipNPCCallbacksSR,
+  VersionWarnFA,
+  LowercaseNoteFA,
+  TipNPCCallbacksFA,
 };
 
 export default templates;

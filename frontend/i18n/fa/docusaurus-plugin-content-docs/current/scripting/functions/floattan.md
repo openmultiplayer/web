@@ -5,7 +5,7 @@ description: tangent یک زاویه داده شده رو دریافت کنه.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

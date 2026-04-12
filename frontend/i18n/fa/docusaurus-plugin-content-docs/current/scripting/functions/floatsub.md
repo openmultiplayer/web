@@ -5,7 +5,7 @@ description: یک float رو از float دیگه کم میکنه.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

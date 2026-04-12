@@ -5,7 +5,7 @@ description: باز کردن یک فایل (برای خوندن یا نوشتن)
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 
