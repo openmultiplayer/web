@@ -5,7 +5,7 @@ description: یک فایل را می‌بندد.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

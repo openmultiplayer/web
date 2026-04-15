@@ -5,7 +5,7 @@ description: یک رشته را pack کن.
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

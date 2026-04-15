@@ -5,9 +5,9 @@ description: handle حافظه برای اتصال پایگاه داده SQLite 
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
-<VersionWarn version='SA-MP 0.3.7 R1' />
+<VersionWarnFA version='SA-MP 0.3.7 R1' />
 
 ## توضیحات
 

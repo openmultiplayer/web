@@ -5,7 +5,7 @@ description: یه packet که شامل string هست ارسال می‌کنه. (
 tags: ["datagram"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 :::warning
 

@@ -5,7 +5,7 @@ description: مجبور کردن یک مقدار برای قرار گیری در
 tags: ["core"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

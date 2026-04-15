@@ -5,7 +5,7 @@ description: یک string رو به float تبدیل میکنه.
 tags: ["string", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -5,7 +5,7 @@ description: این تابع بهت اجازه میده لگاریتم یک مق
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

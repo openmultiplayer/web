@@ -5,7 +5,7 @@ description: مقدار معکوس کسینوس را به درجه بدست آو
 tags: ["math"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

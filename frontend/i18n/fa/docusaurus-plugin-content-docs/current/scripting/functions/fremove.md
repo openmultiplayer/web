@@ -5,7 +5,7 @@ description: حذف فایل.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

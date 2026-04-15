@@ -5,7 +5,7 @@ description: فضای خالی دیسک را برمی‌گرداند.
 tags: ["file management"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarnFA version='omp v1.1.0.2612' />
 
 :::warning
 
@@ -13,7 +13,7 @@ tags: ["file management"]
 
 :::
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

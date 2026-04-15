@@ -5,7 +5,7 @@ description: فرمت کردن یک string برای شامل کردن متغیر
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

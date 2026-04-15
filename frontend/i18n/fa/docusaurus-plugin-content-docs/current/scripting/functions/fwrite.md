@@ -5,7 +5,7 @@ description: متن رو توی فایل بنویس.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

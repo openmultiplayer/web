@@ -5,7 +5,7 @@ description: قسمتی از یک رشته را استخراج کن.
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

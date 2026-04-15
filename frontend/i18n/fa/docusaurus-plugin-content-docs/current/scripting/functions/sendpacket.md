@@ -5,7 +5,7 @@ description: یه packet ارسال می‌کنه. (تابع منسوخ)
 tags: ["datagram"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 :::warning
 

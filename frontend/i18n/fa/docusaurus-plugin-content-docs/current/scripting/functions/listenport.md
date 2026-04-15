@@ -5,7 +5,7 @@ description: پورت موردنظر رو برای listen کردن تنظیم م
 tags: ["datagram"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 :::warning
 

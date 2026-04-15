@@ -32,7 +32,7 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## نکته‌ها
 
-<TipNPCCallbacks />
+<TipNPCCallbacksFA />
 
 :::warning
 

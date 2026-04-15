@@ -5,7 +5,7 @@ description: نوشتن یک کاراکتر در فایل.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

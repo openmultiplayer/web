@@ -5,7 +5,7 @@ description: یک property جدید اضافه می‌کنه یا یک property 
 tags: ["core", "property"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 
