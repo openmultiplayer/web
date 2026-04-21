@@ -1,7 +1,7 @@
 ---
 title: Awesome
 sidebar_label: Awesome
-description: A curated list of useful tools, libraries, gamemodes, filterscripts and plugins for SA-MP development.
+description: A curated list of useful tools, libraries, gamemodes, filterscripts and plugins for SA-MP/open.mp development.
 ---
 
 ## Tools
@@ -127,7 +127,7 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 
 ## GDK/SDKs
 
-Now you can make your scripts in languages other than pawn without any plugin using open.mp. See [this blog post](https://www.open.mp/blog/release-candidate-1)
+Now you can make your scripts in languages other than pawn without any plugin using open.mp. See [this blog post](https://www.open.mp/blog/release-candidate-1#sdk)
 
 - **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - This is the bare minimum that you need to develop plugins.
 - **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - C/C++ Language Support for writing a gamemode for SA:MP
