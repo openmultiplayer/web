@@ -5,9 +5,9 @@ description: مقایسه دو رشته برای دیدن اینکه آیا یک
 tags: ["string"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarnFA version='omp v1.1.0.2612' />
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -5,7 +5,7 @@ description: حافظه نتیجه تخصیص یافته از db_query را آز
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

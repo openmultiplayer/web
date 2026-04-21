@@ -5,7 +5,7 @@ description: تبدیل عدد صحیح به اعشاری.
 tags: ["floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

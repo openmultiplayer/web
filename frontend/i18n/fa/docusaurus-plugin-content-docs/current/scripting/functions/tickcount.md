@@ -5,7 +5,7 @@ description: تعداد میلی‌ثانیه‌ها از زمان راه‌ان
 tags: ["time"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

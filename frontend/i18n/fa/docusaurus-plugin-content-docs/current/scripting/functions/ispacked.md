@@ -5,7 +5,7 @@ description: چک می‌کنه که آیا رشته داده شده packed هس
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

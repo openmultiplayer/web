@@ -5,7 +5,7 @@ description: محتویات فیلد را به صورت عدد اعشاری با
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

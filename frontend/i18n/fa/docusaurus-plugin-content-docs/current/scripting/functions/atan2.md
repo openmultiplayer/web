@@ -5,7 +5,7 @@ description: مقدار معکوس چند مقداره یک تانژانت را 
 tags: ["math"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 :::warning
 

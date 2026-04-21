@@ -5,7 +5,7 @@ description: نوشتن داده در فایل به فرمت باینری، با
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -29,7 +29,7 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 ## نکته‌ها
 
-<TipNPCCallbacks />
+<TipNPCCallbacksFA />
 
 ## کالبک‌های مرتبط
 

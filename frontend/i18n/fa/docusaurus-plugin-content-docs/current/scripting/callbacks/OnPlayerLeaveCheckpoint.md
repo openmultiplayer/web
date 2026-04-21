@@ -29,7 +29,7 @@ public OnPlayerLeaveCheckpoint(playerid)
 
 ## نکته‌ها
 
-<TipNPCCallbacks />
+<TipNPCCallbacksFA />
 
 ## کالبک‌های مرتبط
 

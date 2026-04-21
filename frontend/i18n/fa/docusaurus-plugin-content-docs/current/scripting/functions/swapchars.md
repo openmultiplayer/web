@@ -5,7 +5,7 @@ description: بایت‌ها رو توی یک cell جابجا کن.
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

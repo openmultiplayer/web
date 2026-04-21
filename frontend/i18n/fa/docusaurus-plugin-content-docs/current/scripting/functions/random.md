@@ -5,7 +5,7 @@ description: دریافت یک عدد شبه-تصادفی
 tags: ["core"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -5,7 +5,7 @@ description: کمترین عدد از بین دو عدد را برگردان.
 tags: ["core"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

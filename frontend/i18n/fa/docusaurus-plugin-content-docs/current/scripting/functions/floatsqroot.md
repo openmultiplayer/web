@@ -5,7 +5,7 @@ description: جذر مربع مقدار داده شده رو محاسبه میک
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

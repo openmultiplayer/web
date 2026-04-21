@@ -7,7 +7,7 @@ tags: ["core", "arguments", "args"]
 
 <div dir="rtl" style={{ textAlign: "right" }}>
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

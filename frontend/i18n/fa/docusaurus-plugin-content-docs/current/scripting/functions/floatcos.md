@@ -5,7 +5,7 @@ description: گرفتن کسینوس از زاویه داده شده.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

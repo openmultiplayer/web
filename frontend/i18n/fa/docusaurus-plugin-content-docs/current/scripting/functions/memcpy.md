@@ -5,7 +5,7 @@ description: بایت‌ها را از یک مکان به مکان دیگر کپ
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -5,7 +5,7 @@ description: ضرب دو عدد اعشاری در یکدیگر.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

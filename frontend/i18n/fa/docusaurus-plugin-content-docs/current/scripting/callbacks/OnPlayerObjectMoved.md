@@ -30,7 +30,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## نکته‌ها
 
-<TipNPCCallbacks />
+<TipNPCCallbacksFA />
 
 ## کالبک‌های مرتبط
 

@@ -5,7 +5,7 @@ description: این تابع برای unpack کردن یک رشته استفاد
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -5,7 +5,7 @@ description: دریافت CI (شناسایی کامپیوتر/کلاینت) یه
 tags: []
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 
