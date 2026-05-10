@@ -63,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             }
         }
 
-        NPC_SetKeys(npcid, keys, updown, leftright);
+        NPC_SetKeys(npcid, updown, leftright, keys);
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d keys: keys=%d, ud=%d, lr=%d", npcid, keys, updown, leftright);
 
         return 1;
