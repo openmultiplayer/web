@@ -38,4 +38,4 @@ DestroyPickup(g_PickupArmour);
 
 ## Related Callbacks
 
-- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Disebutkan ketika seorang pemain mengambil item.
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): Disebutkan ketika seorang pemain menyentuh pickup.
