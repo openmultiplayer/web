@@ -183,8 +183,16 @@ const Page = (): ReactNode => {
   return (
     <div>
       <Layout
-        title={`Servers`}
-        description="List of San Andreas servers using open.mp or SA-MP"
+        title={translate({
+          id: "partners.page.title",
+          message: "Partner Servers",
+          description: "Partner servers page title",
+        })}
+        description={translate({
+          id: "partners.page.description",
+          message: "List of San Andreas servers using open.mp or SA-MP",
+          description: "Partner servers page description",
+        })}
       >
         <section className="servers-container">
           <p className="servers-partners-note">
