@@ -1,27 +1,27 @@
 ---
 title: GetVehicleSeats
 sidebar_label: GetVehicleSeats
-description: Gets the number of seats in the vehicle.
+description: Obtém o número de assentos no veículo.
 tags: ["vehicle"]
 ---
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-## Description
+## Descrição
 
-Gets the number of seats in the vehicle.
+Obtém o número de assentos no veículo.
 
-| Name    | Description              |
-| ------- | ------------------------ |
-| modelid | ID of the vehicle model. |
+| Nome    | Descrição                 |
+| ------- | ------------------------- |
+| modelid | ID do modelo do veículo.  |
 
-## Return Values
+## Valores de Retorno
 
-Returns the number of seats.
+Retorna o número de assentos.
 
-**255** if the model is invalid.
+**255** se o modelo for inválido.
 
-## Examples
+## Exemplos
 
 ```c
 new vehicleid = GetPlayerVehicleID(playerid);
@@ -29,10 +29,10 @@ new modelid = GetVehicleModel(vehicleid);
 new seats = GetVehicleSeats(modelid);
 
 new string[64];
-format(string, sizeof(string), "Number of seats in this vehicle: %d", seats);
+format(string, sizeof(string), "Número de assentos neste veículo: %d", seats);
 SendClientMessage(playerid, -1, string);
 ```
 
-## Related Functions
+## Funções Relacionadas
 
-- [PutPlayerInVehicle](PutPlayerInVehicle): Puts a player in a vehicle.
+- [PutPlayerInVehicle](PutPlayerInVehicle): Coloca um jogador em um veículo.

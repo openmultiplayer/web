@@ -5,7 +5,7 @@ description: Essa callback é chamada quando um veículo entra na área visível
 tags: ["vehicle"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3.a' />
+<VersionWarn name='callback' version='SA-MP 0.3.a' />
 
 ## Descrição
 
@@ -34,6 +34,6 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Notas
 
-<TipNPCCallbacksPT />
+<TipNPCCallbacks />
 
 ## Funções Relacionadas

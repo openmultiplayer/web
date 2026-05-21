@@ -9,41 +9,47 @@ import React, { useState } from "react";
 import Admonition from "../components/Admonition";
 import styles from "./index.module.css";
 
-import Translate from '@docusaurus/Translate';
+import { default as Translate, translate } from '@docusaurus/Translate';
 
 const socials = [
   {
-    alt: "Discord icon",
+    labelId: "homepage.social.discord",
+    labelMessage: "Discord icon",
     src: "/images/assets/discord-icon.svg",
     href: "https://discord.com/invite/samp",
     size: 45,
   },
   {
-    alt: "Facebook icon",
+    labelId: "homepage.social.facebook",
+    labelMessage: "Facebook icon",
     src: "/images/assets/facebook.svg",
     href: "https://www.facebook.com/openmultiplayer",
     size: 33,
   },
   {
-    alt: "Instagram icon",
+    labelId: "homepage.social.instagram",
+    labelMessage: "Instagram icon",
     src: "/images/assets/instagram.svg",
     href: "https://instagram.com/openmultiplayer/",
     size: 33,
   },
   {
-    alt: "Twitch icon",
+    labelId: "homepage.social.twitch",
+    labelMessage: "Twitch icon",
     src: "/images/assets/twitch.svg",
     href: "https://twitch.tv/openmultiplayer",
     size: 29,
   },
   {
-    alt: "X (formerly Twitter) icon",
+    labelId: "homepage.social.x",
+    labelMessage: "X (formerly Twitter) icon",
     src: "/images/assets/x.svg",
     href: "https://x.com/openmultiplayer",
     size: 29,
   },
   {
-    alt: "YouTube icon",
+    labelId: "homepage.social.youtube",
+    labelMessage: "YouTube icon",
     src: "/images/assets/youtube.svg",
     href: "https://youtube.com/openmultiplayer",
     size: 35,
@@ -53,27 +59,34 @@ const socials = [
 const SocialIcons = () => {
   return (
     <div className={styles.socialLinks}>
-      {socials.map((social, index) => (
+      {socials.map((social, index) => {
+        const label = translate({
+          id: social.labelId,
+          message: social.labelMessage,
+          description: "Accessible label and image alt text for homepage social link",
+        });
+        return (
         <a 
           key={index} 
           href={social.href} 
           className={styles.socialLink}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={social.alt}
+          aria-label={label}
         >
           <Image
             sources={{ 
               light: social.src, 
               dark: social.src 
             }}
-            alt={social.alt}
+            alt={label}
             width={social.size}
             height={social.size}
             className={styles.socialIcon}
           />
         </a>
-      ))}
+        );
+      })}
     </div>
   );
 };
@@ -132,7 +145,11 @@ const HomepageHeader = () => {
               <button 
                 onClick={closeAnnouncement} 
                 className={styles.dismissButton}
-                aria-label="Dismiss announcement"
+                aria-label={translate({
+                  id: "announcement.dismissAria",
+                  message: "Dismiss announcement",
+                  description: "Accessible label for dismissing the homepage announcement",
+                })}
               >
                 <Translate id="announcement.dismiss" description="Announcement: dismiss button">Dismiss this message</Translate>
               </button>
@@ -169,7 +186,11 @@ const HomepageHeader = () => {
         <div className={styles.heroButtons}>
           <Link
             className={clsx("button button--primary button--lg", styles.button)}
-            title="Download open.mp launcher"
+            title={translate({
+              id: "homepage.downloadLauncherTitle",
+              message: "Download open.mp launcher",
+              description: "Title attribute for the launcher download button",
+            })}
             to="/downloads/launcher"
           >
             <Translate id="homepage.downloadLauncher" description="Button label for downloading the launcher">Download Launcher 🎮</Translate>
@@ -177,7 +198,11 @@ const HomepageHeader = () => {
 
           <Link
             className={clsx("button button--primary button--lg", styles.button)}
-            title="open.mp is released!"
+            title={translate({
+              id: "homepage.downloadServerTitle",
+              message: "open.mp is released!",
+              description: "Title attribute for the server download button",
+            })}
             to="/downloads/server"
           >
             <Translate id="homepage.downloadServer" description="Button label for downloading the server">Download Server 🖥️</Translate>
@@ -201,7 +226,12 @@ const Home = (): React.ReactElement => {
   return (
     <Layout
       title="Open Multiplayer"
-      description="A multiplayer mod for Grand Theft Auto: San Andreas that is fully backwards compatible with San Andreas Multiplayer"
+      description={translate({
+        id: "homepage.layoutDescription",
+        message:
+          "A multiplayer mod for Grand Theft Auto: San Andreas that is fully backwards compatible with San Andreas Multiplayer",
+        description: "Homepage meta description",
+      })}
     >
       <HomepageHeader />
       <main className={styles.mainContainer}>

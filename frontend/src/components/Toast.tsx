@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { translate } from "@docusaurus/Translate";
 
 interface Toast {
   id: string;
@@ -55,7 +56,11 @@ export const ToastContainer = () => {
                 setToasts((prev) => prev.filter((t) => t.id !== toast.id))
               }
               className="toast-close"
-              aria-label="Close toast"
+              aria-label={translate({
+                id: "toast.close",
+                message: "Close toast",
+                description: "Accessible label for closing a toast notification",
+              })}
             >
               ×
             </button>

@@ -1,4 +1,4 @@
-import Translate from "@docusaurus/Translate";
+import Translate, { translate } from "@docusaurus/Translate";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import React from "react";
 
@@ -89,6 +89,16 @@ export default function ServerDownloadsPage(): React.ReactElement {
   return (
     <ReleaseListPage
       config={{
+        layoutTitle: translate({
+          id: "downloads.server.pageTitle",
+          message: "open.mp Server",
+          description: "Server downloads page title",
+        }),
+        layoutDescription: translate({
+          id: "downloads.server.layoutDescription",
+          message: "Download open.mp server releases",
+          description: "Server downloads page meta description",
+        }),
         pageTitle: (
           <Translate id="downloads.server.pageTitle" description="Server downloads page title">
             open.mp Server

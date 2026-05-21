@@ -381,5 +381,217 @@
   },
   "navbar.item.Donate": {
     "message": "Doar"
+  },
+  "versionWarn.name.function": {
+    "message": "função",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "callback",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Esta {name} foi adicionada no {version} e não funcionará em versões anteriores!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "uid.page.title": {
+    "message": "Gerador de UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Gere UIDs para usar como identificadores únicos de IComponent ou IExtension",
+    "description": "UID generator page description"
+  },
+  "uid.heading": {
+    "message": "Gerador de UID de componente",
+    "description": "UID generator page heading"
+  },
+  "uid.instructions.intro": {
+    "message": "Copie a macro {provideUid} abaixo para seu novo componente, no lugar da macro padrão de provedor de UID. Cada componente deve ter um UID único, por isso o {uniqueLetter} em {uidInitials} ({uniqueIdentifier}). O {provideUid} padrão é inválido e não compilará, para evitar duplicatas ao criar novos componentes a partir de templates.",
+    "description": "UID generator instructions explaining how to use the generated macro"
+  },
+  "uid.instructions.findPlaceholder": {
+    "message": "Encontre este placeholder:",
+    "description": "UID generator instruction before the placeholder macro"
+  },
+  "uid.instructions.replaceWith": {
+    "message": "E substitua por:",
+    "description": "UID generator instruction before the generated replacement macro"
+  },
+  "uid.instructions.existingComponent": {
+    "message": "Se você estiver modificando um componente existente, lembre-se também de substituir o UID existente, que será um valor válido, não um placeholder.",
+    "description": "UID generator note for modifying an existing component"
+  },
+  "lowercaseNote.name.function": {
+    "message": "função",
+    "description": "Default item name in a lowercase-name warning"
+  },
+  "lowercaseNote.message": {
+    "message": "Esta {name} começa com uma letra minúscula.",
+    "description": "Warning shown on scripting docs pages for APIs whose names start with lowercase letters"
+  },
+  "npcCallbacksTip.message": {
+    "message": "Esta callback também pode ser chamada por NPC.",
+    "description": "Tip shown on callback docs pages when NPCs can also call the callback"
+  },
+  "toast.close": {
+    "message": "Fechar notificação",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "servers.add.successMessage": {
+    "message": "{serverName} foi adicionado à nossa lista pendente. Se ele não estiver disponível após no máximo 48 horas, você pode entrar em contato conosco no Discord!",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Servidor enviado!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Status {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Falha no envio!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "Ocorreu um erro ao enviar o servidor",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Erro",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "IP/Domínio",
+    "description": "Add server address input placeholder"
+  },
+  "servers.add.submit": {
+    "message": "Adicionar",
+    "description": "Add server submit button"
+  },
+  "servers.add.openModal": {
+    "message": "Adicionar servidor",
+    "description": "Button that opens the add server modal"
+  },
+  "servers.filter.showEmpty": {
+    "message": "Mostrar servidores vazios",
+    "description": "Checkbox label to show empty servers"
+  },
+  "servers.filter.showOmpOnly": {
+    "message": "Mostrar apenas servidores open.mp",
+    "description": "Checkbox label to show only open.mp servers"
+  },
+  "servers.filter.showPartnersOnly": {
+    "message": "Mostrar apenas parceiros",
+    "description": "Checkbox label to show only partner servers"
+  },
+  "servers.add.modalTitle": {
+    "message": "Adicionar um servidor",
+    "description": "Add server modal title"
+  },
+  "servers.add.closeModal": {
+    "message": "Fechar modal de adicionar servidor",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "servers.add.addressLabel": {
+    "message": "IP ou domínio",
+    "description": "Add server address field label"
+  },
+  "servers.add.addressHelp": {
+    "message": "O IP deve estar no formato {format}",
+    "description": "Help text explaining the required server address format"
+  },
+  "servers.add.close": {
+    "message": "Fechar",
+    "description": "Close modal button"
+  },
+  "servers.page.title": {
+    "message": "Servidores",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Lista de servidores San Andreas usando open.mp e SA-MP",
+    "description": "Servers page description"
+  },
+  "partners.page.title": {
+    "message": "Servidores parceiros",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Lista de servidores San Andreas usando open.mp ou SA-MP",
+    "description": "Partner servers page description"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Baixe releases do launcher open.mp",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Baixe releases do servidor open.mp",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Ver release no GitHub",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "animations.layoutTitle": {
+    "message": "Animações",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Visualizador interativo de animações do open.mp (SA-MP) com prévias em vídeo",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Vídeo indisponível",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Para jogadores",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Para atores",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.social.discord": {
+    "message": "Ícone do Discord",
+    "description": "Accessible label and image alt text for homepage social link"
+  },
+  "homepage.social.facebook": {
+    "message": "Ícone do Facebook",
+    "description": "Accessible label and image alt text for homepage social link"
+  },
+  "homepage.social.instagram": {
+    "message": "Ícone do Instagram",
+    "description": "Accessible label and image alt text for homepage social link"
+  },
+  "homepage.social.twitch": {
+    "message": "Ícone da Twitch",
+    "description": "Accessible label and image alt text for homepage social link"
+  },
+  "homepage.social.x": {
+    "message": "Ícone do X (antigo Twitter)",
+    "description": "Accessible label and image alt text for homepage social link"
+  },
+  "homepage.social.youtube": {
+    "message": "Ícone do YouTube",
+    "description": "Accessible label and image alt text for homepage social link"
+  },
+  "announcement.dismissAria": {
+    "message": "Dispensar anúncio",
+    "description": "Accessible label for dismissing the homepage announcement"
+  },
+  "homepage.downloadLauncherTitle": {
+    "message": "Baixar o launcher open.mp",
+    "description": "Title attribute for the launcher download button"
+  },
+  "homepage.downloadServerTitle": {
+    "message": "open.mp foi lançado!",
+    "description": "Title attribute for the server download button"
+  },
+  "homepage.layoutDescription": {
+    "message": "Um mod multiplayer para Grand Theft Auto: San Andreas totalmente retrocompatível com San Andreas Multiplayer",
+    "description": "Homepage meta description"
   }
 }

@@ -5,7 +5,7 @@ description: Esta callback é chamada quando um jogador solicita o download de m
 tags: ["player"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
 
 ## Descrição
 

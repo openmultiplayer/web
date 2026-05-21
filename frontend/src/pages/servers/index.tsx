@@ -131,22 +131,55 @@ const AddServer = ({ onAdd }: { onAdd: (server: ServerAllData) => void }) => {
         const server = (await response.json()) as ServerAllData;
         onAdd(server);
         showToast({
-          message: `${server.core.hn} is added to our pending list. If it's not available after maximum 48 hours, you can contact us on Discord!`,
-          title: "Server Submitted!",
+          message: translate(
+            {
+              id: "servers.add.successMessage",
+              message:
+                "{serverName} is added to our pending list. If it's not available after maximum 48 hours, you can contact us on Discord!",
+              description:
+                "Toast message shown after submitting a server to the pending list",
+            },
+            { serverName: server.core.hn },
+          ),
+          title: translate({
+            id: "servers.add.successTitle",
+            message: "Server Submitted!",
+            description: "Toast title shown after a server submission succeeds",
+          }),
           type: "success",
         });
       } else {
         const error = (await response.json()) as { error: string };
         showToast({
-          message: `Status ${response.statusText}: ${error?.error}`,
-          title: "Submission failed!",
+          message: translate(
+            {
+              id: "servers.add.failureMessage",
+              message: "Status {status}: {error}",
+              description: "Toast message shown after a server submission fails",
+            },
+            { status: response.statusText, error: error?.error ?? "" },
+          ),
+          title: translate({
+            id: "servers.add.failureTitle",
+            message: "Submission failed!",
+            description: "Toast title shown after a server submission fails",
+          }),
           type: "error",
         });
       }
     } catch (error) {
       showToast({
-        message: "An error occurred while submitting the server",
-        title: "Error",
+        message: translate({
+          id: "servers.add.errorMessage",
+          message: "An error occurred while submitting the server",
+          description:
+            "Toast message shown after an unexpected server submission error",
+        }),
+        title: translate({
+          id: "servers.add.errorTitle",
+          message: "Error",
+          description: "Generic toast error title",
+        }),
         type: "error",
       });
     } finally {
@@ -166,13 +199,19 @@ const AddServer = ({ onAdd }: { onAdd: (server: ServerAllData) => void }) => {
         <input
           type="text"
           name="address"
-          placeholder="IP/Domain"
+          placeholder={translate({
+            id: "servers.add.addressPlaceholder",
+            message: "IP/Domain",
+            description: "Add server address input placeholder",
+          })}
           value={value}
           onChange={(e) => setValue(e.target.value)}
           className="servers-input"
         />
         <button type="submit" className="button button--primary button--md2">
-          Add
+          <Translate id="servers.add.submit" description="Add server submit button">
+            Add
+          </Translate>
         </button>
       </div>
     </form>
@@ -280,7 +319,9 @@ const List = ({ data }: { data: CoreServerData[] }) => {
             onClick={() => setIsModalOpen(true)}
             className="button button--primary button--md2"
           >
-            Add server
+            <Translate id="servers.add.openModal" description="Button that opens the add server modal">
+              Add server
+            </Translate>
           </button>
         </div>
 
@@ -292,7 +333,9 @@ const List = ({ data }: { data: CoreServerData[] }) => {
               onChange={(e) => setShowEmpty(e.target.checked)}
               className="servers-checkbox"
             />
-            Show empty servers
+            <Translate id="servers.filter.showEmpty" description="Checkbox label to show empty servers">
+              Show empty servers
+            </Translate>
           </label>
 
           <label className="servers-checkbox-label">
@@ -302,7 +345,9 @@ const List = ({ data }: { data: CoreServerData[] }) => {
               onChange={(e) => setShowOmpOnly(e.target.checked)}
               className="servers-checkbox"
             />
-            Show only open.mp servers
+            <Translate id="servers.filter.showOmpOnly" description="Checkbox label to show only open.mp servers">
+              Show only open.mp servers
+            </Translate>
           </label>
 
           <label className="servers-checkbox-label">
@@ -312,7 +357,9 @@ const List = ({ data }: { data: CoreServerData[] }) => {
               onChange={(e) => setShowPartnersOnly(e.target.checked)}
               className="servers-checkbox"
             />
-            Show only partners
+            <Translate id="servers.filter.showPartnersOnly" description="Checkbox label to show only partner servers">
+              Show only partners
+            </Translate>
           </label>
         </div>
       </form>
@@ -330,24 +377,43 @@ const List = ({ data }: { data: CoreServerData[] }) => {
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <div className="servers-modal-header">
-          <h2 className="servers-modal-title">Add a server</h2>
+          <h2 className="servers-modal-title">
+            <Translate id="servers.add.modalTitle" description="Add server modal title">
+              Add a server
+            </Translate>
+          </h2>
           <button
             onClick={() => setIsModalOpen(false)}
             className="servers-modal-close"
+            aria-label={translate({
+              id: "servers.add.closeModal",
+              message: "Close add server modal",
+              description: "Accessible label for closing the add server modal",
+            })}
           >
             ×
           </button>
         </div>
 
         <div className="servers-modal-body">
-          <label className="servers-label">IP or Domain</label>
+          <label className="servers-label">
+            <Translate id="servers.add.addressLabel" description="Add server address field label">
+              IP or Domain
+            </Translate>
+          </label>
           <AddServer
             onAdd={(server: ServerAllData) => {
               setIsModalOpen(false);
             }}
           />
           <p className="servers-helper-text">
-            IP must be in format <strong>ip:port</strong>
+            <Translate
+              id="servers.add.addressHelp"
+              description="Help text explaining the required server address format"
+              values={{ format: <strong>ip:port</strong> }}
+            >
+              {"IP must be in format {format}"}
+            </Translate>
           </p>
         </div>
 
@@ -356,7 +422,9 @@ const List = ({ data }: { data: CoreServerData[] }) => {
             onClick={() => setIsModalOpen(false)}
             className="button button--primary button--md2"
           >
-            Close
+            <Translate id="servers.add.close" description="Close modal button">
+              Close
+            </Translate>
           </button>
         </div>
       </Modal>
@@ -389,8 +457,16 @@ const Page = (): ReactNode => {
   return (
     <div>
       <Layout
-        title={`Servers`}
-        description="List of San Andreas servers using open.mp & SA-MP"
+        title={translate({
+          id: "servers.page.title",
+          message: "Servers",
+          description: "Servers page title",
+        })}
+        description={translate({
+          id: "servers.page.description",
+          message: "List of San Andreas servers using open.mp & SA-MP",
+          description: "Servers page description",
+        })}
       >
         <section className="servers-container">
           {loading ? <LoadingBanner /> : <List data={data} />}

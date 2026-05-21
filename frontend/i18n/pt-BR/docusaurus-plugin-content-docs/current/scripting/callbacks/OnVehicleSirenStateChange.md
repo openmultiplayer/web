@@ -5,7 +5,7 @@ description: Essa callback é chamada quando a sirene de um carro é ligada/desl
 tags: ["vehicle"]
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3.7' />
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
 ## Descrição
 

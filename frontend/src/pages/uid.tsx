@@ -1,3 +1,4 @@
+import { default as Translate, translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import { ReactNode, useEffect, useState } from "react";
 import { ToastContainer } from "../components/Toast";
@@ -24,28 +25,67 @@ const Page = (): ReactNode => {
   return (
     <div>
       <Layout
-        title={`UID Generator`}
-        description="Generate UID to use for IComponent or IExtension unique identifiers"
+        title={translate({
+          id: "uid.page.title",
+          message: "UID Generator",
+          description: "UID generator page title",
+        })}
+        description={translate({
+          id: "uid.page.description",
+          message:
+            "Generate UID to use for IComponent or IExtension unique identifiers",
+          description: "UID generator page description",
+        })}
       >
         <section className="uid-container">
-          <h1>Component UID Generator</h1>
-          Copy the <code>PROVIDE_UID</code> macro below in to your new
-          component, in place of the default UID provider macro. Each component
-          should have a unique UID, hence the <em>U</em> in <em>UID</em> (
-          <em>Unique IDentifier</em>). The default <code>PROVIDE_UID</code> is
-          invalid and will not compile, to avoid duplicates when creating new
-          components from templates.
+          <h1>
+            <Translate
+              id="uid.heading"
+              description="UID generator page heading"
+            >
+              Component UID Generator
+            </Translate>
+          </h1>
+          <Translate
+            id="uid.instructions.intro"
+            description="UID generator instructions explaining how to use the generated macro"
+            values={{
+              provideUid: <code>PROVIDE_UID</code>,
+              uniqueLetter: <em>U</em>,
+              uidInitials: <em>UID</em>,
+              uniqueIdentifier: <em>Unique IDentifier</em>,
+            }}
+          >
+            {
+              "Copy the {provideUid} macro below in to your new component, in place of the default UID provider macro. Each component should have a unique UID, hence the {uniqueLetter} in {uidInitials} ({uniqueIdentifier}). The default {provideUid} is invalid and will not compile, to avoid duplicates when creating new components from templates."
+            }
+          </Translate>
           <br />
           <br />
-          Find this placeholder:
+          <Translate
+            id="uid.instructions.findPlaceholder"
+            description="UID generator instruction before the placeholder macro"
+          >
+            Find this placeholder:
+          </Translate>
           <pre>PROVIDE_UID(/* UID GOES HERE */);</pre>
           <br />
-          And replace it with:
+          <Translate
+            id="uid.instructions.replaceWith"
+            description="UID generator instruction before the generated replacement macro"
+          >
+            And replace it with:
+          </Translate>
           <pre>{`PROVIDE_UID(${uid});`}</pre>
           <br />
-          If you are modifying an existing component still do remember to
-          replace the existing UID, which will be a valid value not a
-          placeholder.
+          <Translate
+            id="uid.instructions.existingComponent"
+            description="UID generator note for modifying an existing component"
+          >
+            If you are modifying an existing component still do remember to
+            replace the existing UID, which will be a valid value not a
+            placeholder.
+          </Translate>
         </section>
       </Layout>
       <ToastContainer />

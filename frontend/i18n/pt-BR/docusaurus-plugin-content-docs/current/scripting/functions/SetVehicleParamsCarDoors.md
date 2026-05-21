@@ -5,7 +5,7 @@ description: Permite abrir e fechar as portas de um veículo.
 tags: ["vehicle"]
 ---
 
-Esta função foi implementada no SA-MP 0.3.7 e não funcionará em versões anteriores.
+Esta função foi adicionada no SA-MP 0.3.7 e não funcionará em versões anteriores!
 
 ## Descrição
 

@@ -1,7 +1,7 @@
 ---
 slug: launcher-false-positive
 title: Windows Defender False Positive on Launcher
-authors: itsneufox
+authors: [iamir, itsneufox]
 ---
 
 Some users have reported that **Windows Defender is flagging the open.mp Launcher as a Trojan/virus**. This is a **false positive**, the launcher is completely safe to use.
