@@ -5,7 +5,7 @@ description: Esta callback é chamada quando um ator é carregado (torna-se vis�
 tags: []
 ---
 
-<VersionWarnPT name='callback' version='SA-MP 0.3.7' />
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
 
 ## Descrição
 
