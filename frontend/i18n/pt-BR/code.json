@@ -393,5 +393,33 @@
   "versionWarn.message": {
     "message": "Esta {name} foi adicionada no {version} e não funcionará em versões anteriores!",
     "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "uid.page.title": {
+    "message": "Gerador de UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Gere UIDs para usar como identificadores únicos de IComponent ou IExtension",
+    "description": "UID generator page description"
+  },
+  "uid.heading": {
+    "message": "Gerador de UID de componente",
+    "description": "UID generator page heading"
+  },
+  "uid.instructions.intro": {
+    "message": "Copie a macro {provideUid} abaixo para seu novo componente, no lugar da macro padrão de provedor de UID. Cada componente deve ter um UID único, por isso o {uniqueLetter} em {uidInitials} ({uniqueIdentifier}). O {provideUid} padrão é inválido e não compilará, para evitar duplicatas ao criar novos componentes a partir de templates.",
+    "description": "UID generator instructions explaining how to use the generated macro"
+  },
+  "uid.instructions.findPlaceholder": {
+    "message": "Encontre este placeholder:",
+    "description": "UID generator instruction before the placeholder macro"
+  },
+  "uid.instructions.replaceWith": {
+    "message": "E substitua por:",
+    "description": "UID generator instruction before the generated replacement macro"
+  },
+  "uid.instructions.existingComponent": {
+    "message": "Se você estiver modificando um componente existente, lembre-se também de substituir o UID existente, que será um valor válido, não um placeholder.",
+    "description": "UID generator note for modifying an existing component"
   }
 }
