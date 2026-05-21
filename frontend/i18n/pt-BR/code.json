@@ -381,5 +381,17 @@
   },
   "navbar.item.Donate": {
     "message": "Doar"
+  },
+  "versionWarn.name.function": {
+    "message": "função",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "callback",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Esta {name} foi adicionada no {version} e não funcionará em versões anteriores!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
   }
 }
