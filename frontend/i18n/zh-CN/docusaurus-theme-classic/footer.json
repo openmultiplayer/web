@@ -62,9 +62,5 @@
   "link.item.label.SA-MP": {
     "message": "SA-MP",
     "description": "标签为SA-MP的页脚链接，指向https://sa-mp.mp/"
-  },
-  "copyright": {
-    "message": "版权所有 © 2025 open.mp。基于Docusaurus构建",
-    "description": "页脚版权信息"
   }
 }

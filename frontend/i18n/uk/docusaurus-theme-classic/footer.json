@@ -62,9 +62,5 @@
   "link.item.label.SA-MP": {
     "message": "SA-MP",
     "description": "The label of footer link with label=SA-MP linking to https://sa-mp.mp/"
-  },
-  "copyright": {
-    "message": "Copyright © {year} open.mp. Створено на Docusaurus.",
-    "description": "The footer copyright"
   }
 }
