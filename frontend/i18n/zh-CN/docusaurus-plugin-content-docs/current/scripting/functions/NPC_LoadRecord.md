@@ -47,8 +47,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 文件应具有 .rec 扩展名，但在文件名中不要包含它
 - 在使用 NPC_StartPlayback 之前加载录制
+
+:::warning
+
+与 [NPC_StartPlayback](NPC_StartPlayback) 不同，`filePath` 需要提供从服务器根目录开始的完整路径，并包含 `.rec` 扩展名。  
+例如：`npcmodes/recordings/myrecording.rec`
+
+:::
 
 ## 相关函数
 
