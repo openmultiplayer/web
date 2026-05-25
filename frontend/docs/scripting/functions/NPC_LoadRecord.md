@@ -47,8 +47,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Files should have .rec extension but don't include it in filename
 - Load recordings before using them with NPC_StartPlayback
+
+:::warning
+
+Unlike [NPC_StartPlayback](NPC_StartPlayback), `filePath` requires the full path from the server root, and the `.rec` extension.  
+Example: `npcmodes/recordings/myrecording.rec`
+
+:::
 
 ## Related Functions
 

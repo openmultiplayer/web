@@ -45,10 +45,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
     return 0;
 }
 ```
+
 ## Notas
 
-- Os arquivos devem ter extensão .rec, mas não incluí-la no nome do arquivo
 - Carregue as gravações antes de usá-las com NPC_StartPlayback
+
+:::warning
+
+Ao contrário de [NPC_StartPlayback](NPC_StartPlayback), `filePath` exige o caminho completo a partir da raiz do servidor e a extensão `.rec`.  
+Exemplo: `npcmodes/recordings/myrecording.rec`
+
+:::
 
 ## Funções Relacionadas
 
