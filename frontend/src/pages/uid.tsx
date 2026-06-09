@@ -1,26 +1,49 @@
 import { default as Translate, translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import { ReactNode, useEffect, useState } from "react";
-import { ToastContainer } from "../components/Toast";
+import { showToast, ToastContainer } from "../components/Toast";
+
+const createUID = (): string => {
+  const rnd = randomBytes(8);
+
+  function toHex(number: number): string {
+    return ("00" + number.toString(16)).slice(-2).toUpperCase();
+  }
+
+  return `0x${toHex(rnd[0])}${toHex(rnd[1])}${toHex(rnd[2])}${toHex(
+    rnd[3]
+  )}${toHex(rnd[4])}${toHex(rnd[5])}${toHex(rnd[6])}${toHex(rnd[7])}`;
+};
 
 const Page = (): ReactNode => {
   const [uid, setUID] = useState<string>("");
 
   useEffect(() => {
-    const rnd = randomBytes(8);
+    setUID(createUID());
+  }, []);
 
-    function toHex(number: number): string {
-      return ("00" + number.toString(16)).slice(-2).toUpperCase();
+  const generatedMacro = `PROVIDE_UID(${uid});`;
+
+  const copyUID = () => {
+    if (!navigator.clipboard || !uid) {
+      return;
     }
 
-    const serialised = `0x${toHex(rnd[0])}${toHex(rnd[1])}${toHex(
-      rnd[2]
-    )}${toHex(rnd[3])}${toHex(rnd[4])}${toHex(rnd[5])}${toHex(rnd[6])}${toHex(
-      rnd[7]
-    )}`;
-
-    setUID(serialised);
-  }, []);
+    navigator.clipboard.writeText(generatedMacro);
+    showToast({
+      type: "success",
+      title: translate({
+        id: "uid.toast.copiedTitle",
+        message: "Copied",
+        description: "UID copy success toast title",
+      }),
+      message: translate({
+        id: "uid.toast.copiedMessage",
+        message: "UID macro copied to clipboard.",
+        description: "UID copy success toast message",
+      }),
+    });
+  };
 
   return (
     <div>
@@ -38,54 +61,112 @@ const Page = (): ReactNode => {
         })}
       >
         <section className="uid-container">
-          <h1>
-            <Translate
-              id="uid.heading"
-              description="UID generator page heading"
-            >
-              Component UID Generator
-            </Translate>
-          </h1>
-          <Translate
-            id="uid.instructions.intro"
-            description="UID generator instructions explaining how to use the generated macro"
-            values={{
-              provideUid: <code>PROVIDE_UID</code>,
-              uniqueLetter: <em>U</em>,
-              uidInitials: <em>UID</em>,
-              uniqueIdentifier: <em>Unique IDentifier</em>,
-            }}
-          >
-            {
-              "Copy the {provideUid} macro below in to your new component, in place of the default UID provider macro. Each component should have a unique UID, hence the {uniqueLetter} in {uidInitials} ({uniqueIdentifier}). The default {provideUid} is invalid and will not compile, to avoid duplicates when creating new components from templates."
-            }
-          </Translate>
-          <br />
-          <br />
-          <Translate
-            id="uid.instructions.findPlaceholder"
-            description="UID generator instruction before the placeholder macro"
-          >
-            Find this placeholder:
-          </Translate>
-          <pre>PROVIDE_UID(/* UID GOES HERE */);</pre>
-          <br />
-          <Translate
-            id="uid.instructions.replaceWith"
-            description="UID generator instruction before the generated replacement macro"
-          >
-            And replace it with:
-          </Translate>
-          <pre>{`PROVIDE_UID(${uid});`}</pre>
-          <br />
-          <Translate
-            id="uid.instructions.existingComponent"
-            description="UID generator note for modifying an existing component"
-          >
-            If you are modifying an existing component still do remember to
-            replace the existing UID, which will be a valid value not a
-            placeholder.
-          </Translate>
+          <header className="uid-page-header">
+            <h1 className="uid-page-title">
+              <Translate
+                id="uid.heading"
+                description="UID generator page heading"
+              >
+                Component UID Generator
+              </Translate>
+            </h1>
+            <p className="uid-page-subtitle">
+              <Translate
+                id="uid.instructions.intro"
+                description="UID generator instructions explaining how to use the generated macro"
+                values={{
+                  provideUid: <code>PROVIDE_UID</code>,
+                  uniqueLetter: <em>U</em>,
+                  uidInitials: <em>UID</em>,
+                  uniqueIdentifier: <em>Unique IDentifier</em>,
+                }}
+              >
+                {
+                  "Generate a unique {provideUid} macro for a new component or extension."
+                }
+              </Translate>
+            </p>
+          </header>
+
+          <div className="uid-panel">
+            <p className="uid-panel-intro">
+              <Translate
+                id="uid.instructions.panelIntro"
+                description="UID generator panel explanation"
+                values={{
+                  provideUid: <code>PROVIDE_UID</code>,
+                  uniqueLetter: <em>U</em>,
+                  uidInitials: <em>UID</em>,
+                  uniqueIdentifier: <em>Unique IDentifier</em>,
+                }}
+              >
+                {
+                  "Use this when creating a new component from a template. The default {provideUid} placeholder is invalid on purpose, so every component gets its own {uidInitials} ({uniqueIdentifier})."
+                }
+              </Translate>
+            </p>
+
+            <div className="uid-step">
+              <p className="uid-step-label">
+                <Translate
+                  id="uid.instructions.findPlaceholder"
+                  description="UID generator instruction before the placeholder macro"
+                >
+                  Find this placeholder:
+                </Translate>
+              </p>
+              <pre className="uid-code-block">
+                <code>PROVIDE_UID(/* UID GOES HERE */);</code>
+              </pre>
+            </div>
+
+            <div className="uid-step">
+              <p className="uid-step-label">
+                <Translate
+                  id="uid.instructions.replaceWith"
+                  description="UID generator instruction before the generated replacement macro"
+                >
+                  And replace it with:
+                </Translate>
+              </p>
+              <pre className="uid-code-block uid-code-block-generated">
+                <code>{generatedMacro}</code>
+              </pre>
+            </div>
+
+            <div className="uid-actions">
+              <button
+                type="button"
+                className="button button--primary uid-action-button"
+                onClick={copyUID}
+                disabled={!uid}
+              >
+                <Translate id="uid.copy" description="Copy generated UID macro button">
+                  Copy Macro
+                </Translate>
+              </button>
+              <button
+                type="button"
+                className="button button--secondary uid-action-button"
+                onClick={() => setUID(createUID())}
+              >
+                <Translate id="uid.regenerate" description="Regenerate UID button">
+                  Regenerate
+                </Translate>
+              </button>
+            </div>
+
+            <p className="uid-note">
+              <Translate
+                id="uid.instructions.existingComponent"
+                description="UID generator note for modifying an existing component"
+              >
+                Each component should have a unique UID. If you are modifying an
+                existing component, replace its current UID rather than the
+                placeholder shown above.
+              </Translate>
+            </p>
+          </div>
         </section>
       </Layout>
       <ToastContainer />

@@ -1,6 +1,8 @@
+import Link from "@docusaurus/Link";
 import { useState } from "react";
 import Translate from "@docusaurus/Translate";
 import { renderToStaticMarkup } from "react-dom/server";
+import { CoreServerData } from "../types";
 
   const translate = (id: string, message: string, description?: string) => {
     return renderToStaticMarkup(
@@ -8,7 +10,7 @@ import { renderToStaticMarkup } from "react-dom/server";
     );
   };
 
-const CopyBadge = ({ text }) => {
+const CopyBadge = ({ text }: { text: string }) => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const onCopy = () => {
@@ -34,13 +36,16 @@ const CopyBadge = ({ text }) => {
   );
 };
 
-const ServerRow = ({ server }) => {
+const ServerRow = ({ server }: { server: CoreServerData }) => {
   return (
     <div className="server-row-card">
       <div className="server-header">
-        <a href={"/servers/" + server.ip} className="server-link">
+        <Link
+          to={`/servers/${encodeURIComponent(server.ip)}`}
+          className="server-link"
+        >
           <h2 className="server-heading">{server.hn}</h2>
-        </a>
+        </Link>
         <div className="server-badges">
           {server.pr && (
             <img

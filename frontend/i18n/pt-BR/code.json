@@ -66,7 +66,17 @@
     "message": "Buscar por IP ou Nome"
   },
   "partners.note": {
-    "message": "Nota: O programa de parceria está temporariamente fechado conforme prometido. Servidores que já reservaram um slot ainda podem entrar, mas não estamos aceitando novos pedidos no momento. Se você tiver alguma dúvida, sinta-se à vontade para perguntar em nosso Discord. No entanto, se sua pergunta for sobre novas formas de entrar na lista, atualmente não temos planos para isso."
+    "message": "O programa de parcerias está fechado para inscrições, conforme prometido. Servidores que já reservaram uma vaga ainda podem participar, mas não estamos aceitando novos pedidos no momento. Para outras dúvidas, fale conosco no Discord."
+  },
+  "partners.note.title": {
+    "message": "Programa de parcerias"
+  },
+  "partners.note.dismiss": {
+    "message": "Fechar aviso"
+  },
+  "partners.note.dismissAria": {
+    "message": "Fechar aviso de parceria",
+    "description": "Accessible label for dismissing the partner note"
   },
   "announcement.title": {
     "message": "Uma nova versão do servidor e launcher open.mp está disponível agora!"
@@ -407,7 +417,7 @@
     "description": "UID generator page heading"
   },
   "uid.instructions.intro": {
-    "message": "Copie a macro {provideUid} abaixo para seu novo componente, no lugar da macro padrão de provedor de UID. Cada componente deve ter um UID único, por isso o {uniqueLetter} em {uidInitials} ({uniqueIdentifier}). O {provideUid} padrão é inválido e não compilará, para evitar duplicatas ao criar novos componentes a partir de templates.",
+    "message": "Gere uma macro {provideUid} única para um novo componente ou extensão.",
     "description": "UID generator instructions explaining how to use the generated macro"
   },
   "uid.instructions.findPlaceholder": {
@@ -419,7 +429,7 @@
     "description": "UID generator instruction before the generated replacement macro"
   },
   "uid.instructions.existingComponent": {
-    "message": "Se você estiver modificando um componente existente, lembre-se também de substituir o UID existente, que será um valor válido, não um placeholder.",
+    "message": "Cada componente deve ter um UID único. Se você estiver modificando um componente existente, substitua o UID atual dele em vez do placeholder mostrado acima.",
     "description": "UID generator note for modifying an existing component"
   },
   "lowercaseNote.name.function": {
@@ -463,7 +473,7 @@
     "description": "Generic toast error title"
   },
   "servers.add.addressPlaceholder": {
-    "message": "IP/Domínio",
+    "message": "play.example.com:7777",
     "description": "Add server address input placeholder"
   },
   "servers.add.submit": {
@@ -475,19 +485,19 @@
     "description": "Button that opens the add server modal"
   },
   "servers.filter.showEmpty": {
-    "message": "Mostrar servidores vazios",
+    "message": "Vazios",
     "description": "Checkbox label to show empty servers"
   },
   "servers.filter.showOmpOnly": {
-    "message": "Mostrar apenas servidores open.mp",
+    "message": "Somente open.mp",
     "description": "Checkbox label to show only open.mp servers"
   },
   "servers.filter.showPartnersOnly": {
-    "message": "Mostrar apenas parceiros",
+    "message": "Parceiros",
     "description": "Checkbox label to show only partner servers"
   },
   "servers.add.modalTitle": {
-    "message": "Adicionar um servidor",
+    "message": "Adicionar servidor",
     "description": "Add server modal title"
   },
   "servers.add.closeModal": {
@@ -495,16 +505,12 @@
     "description": "Accessible label for closing the add server modal"
   },
   "servers.add.addressLabel": {
-    "message": "IP ou domínio",
+    "message": "Endereço do servidor",
     "description": "Add server address field label"
   },
   "servers.add.addressHelp": {
-    "message": "O IP deve estar no formato {format}",
+    "message": "Use {format}",
     "description": "Help text explaining the required server address format"
-  },
-  "servers.add.close": {
-    "message": "Fechar",
-    "description": "Close modal button"
   },
   "servers.page.title": {
     "message": "Servidores",
@@ -593,5 +599,89 @@
   "homepage.layoutDescription": {
     "message": "Um mod multiplayer para Grand Theft Auto: San Andreas totalmente retrocompatível com San Andreas Multiplayer",
     "description": "Homepage meta description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Copiado",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "Macro UID copiada para a área de transferência.",
+    "description": "UID copy success toast message"
+  },
+  "uid.instructions.panelIntro": {
+    "message": "Use isto ao criar um novo componente a partir de um template. O placeholder padrão {provideUid} é inválido de propósito, para que cada componente receba seu próprio {uidInitials} ({uniqueIdentifier}).",
+    "description": "UID generator panel explanation"
+  },
+  "uid.copy": {
+    "message": "Copiar macro",
+    "description": "Copy generated UID macro button"
+  },
+  "uid.regenerate": {
+    "message": "Gerar novamente",
+    "description": "Regenerate UID button"
+  },
+  "serverInfo.copy": {
+    "message": "Copiar",
+    "description": "Copy server address state"
+  },
+  "serverInfo.copied": {
+    "message": "Copiado",
+    "description": "Copied server address state"
+  },
+  "servers.filter.showPassworded": {
+    "message": "Com senha",
+    "description": "Checkbox label to show passworded servers"
+  },
+  "servers.sort.name": {
+    "message": "Nome",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Modo",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Idioma",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Todos os idiomas",
+    "description": "All languages filter option"
+  },
+  "servers.page.heading": {
+    "message": "Servidores",
+    "description": "Servers page main heading"
+  },
+  "servers.page.subtitle": {
+    "message": "Navegue por servidores SA-MP e open.mp ativos.",
+    "description": "Servers page subtitle"
+  },
+  "partners.page.heading": {
+    "message": "Servidores parceiros",
+    "description": "Partner servers page main heading"
+  },
+  "partners.page.subtitle": {
+    "message": "Navegue por servidores parceiros oficiais.",
+    "description": "Partner servers page subtitle"
+  },
+  "notFound.title": {
+    "message": "Página não encontrada",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Captura de tela da missão do trem do GTA",
+    "description": "404 page image alt text"
+  },
+  "notFound.home": {
+    "message": "Início",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Documentação",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Servidores",
+    "description": "404 page servers button"
   }
 }

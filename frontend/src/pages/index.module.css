@@ -15,6 +15,7 @@
   max-width: 900px;
   width: 100%;
   margin-bottom: 4rem;
+  opacity: 1;
 }
 
 .announcement {
@@ -25,37 +26,6 @@
   animation: slideDown 0.6s ease-out;
   position: relative;
   padding-bottom: 2rem;
-}
-
-.dismissContainer {
-  position: absolute;
-  bottom: 12px;
-  right: 16px;
-}
-
-.dismissButton {
-  background: none;
-  border: none;
-  color: var(--ifm-color-primary-darker);
-  font-size: 0.85rem;
-  font-family: inherit;
-  padding: 4px 8px;
-  cursor: pointer;
-  text-decoration: underline;
-  transition: color 0.2s ease;
-  font-weight: 500;
-  margin: 0;
-  line-height: normal;
-}
-
-.dismissButton:hover {
-  color: var(--ifm-color-primary-darkest);
-}
-
-.dismissButton:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(144, 131, 210, 0.3);
-  border-radius: 4px;
 }
 
 .enhancedLink {
@@ -258,12 +228,4 @@
     margin: 0 auto;
   }
 
-  .dismissContainer {
-    bottom: 8px;
-    right: 12px;
-  }
-
-  .dismissButton {
-    font-size: 0.8rem;
-  }
 }

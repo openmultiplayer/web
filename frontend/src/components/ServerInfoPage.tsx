@@ -1,10 +1,10 @@
+import Link from "@docusaurus/Link";
 import LoadingBanner from "@site/src/components/LoadingBanner";
 import { API_ADDRESS } from "@site/src/constants";
 import { ServerAllData } from "@site/src/types";
 import Layout from "@theme/Layout";
 import Translate from "@docusaurus/Translate";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const API_SERVER = (ip: string) => `${API_ADDRESS}/servers/${ip}`;
@@ -21,9 +21,9 @@ const getServer = async (ip: string): Promise<ServerAllData | undefined> => {
 
 const BackLink: React.FC<{ to: string }> = ({ to }) => {
   return (
-    <a href={to} className="button server-info-back-link">
+    <Link to={to} className="button server-info-back-link">
       <Translate id="serverInfo.backToServers" description="Back to servers link">← Back to Servers</Translate>
-    </a>
+    </Link>
   );
 };
 
@@ -33,58 +33,86 @@ const ServerLink = ({ address }: { address: string }) => {
       href={address}
       target="_blank"
       rel="noopener noreferrer"
-      className="server-info-link"
+      className="server-info-quick-join-button"
     >
-      <button className="server-info-quick-join-button">
-        <Translate id="serverInfo.quickJoin" description="Quick join button">Quick Join</Translate>
-        <span className="server-info-arrow">→</span>
-      </button>
+      <Translate id="serverInfo.quickJoin" description="Quick join button">Quick Join</Translate>
+      <span className="server-info-arrow">→</span>
     </a>
+  );
+};
+
+const ServerAddressCopy = ({ address }: { address: string }) => {
+  const [hasCopied, setHasCopied] = useState(false);
+
+  const onCopy = () => {
+    navigator.clipboard.writeText(address);
+    setHasCopied(true);
+    setTimeout(() => setHasCopied(false), 2000);
+  };
+
+  return (
+    <button
+      type="button"
+      className={`server-info-ip-address ${hasCopied ? "copied" : ""}`}
+      onClick={onCopy}
+    >
+      <span>{address}</span>
+      <span className="server-info-copy-state">
+        {hasCopied ? (
+          <Translate id="serverInfo.copied" description="Copied server address state">
+            Copied
+          </Translate>
+        ) : (
+          <Translate id="serverInfo.copy" description="Copy server address state">
+            Copy
+          </Translate>
+        )}
+      </span>
+    </button>
   );
 };
 
 const Info = ({ data }: { data: ServerAllData }) => (
   <article className="server-info-wrapper">
+    <header className="server-info-page-header">
+      <h1 className="server-info-name">{data.core.hn}</h1>
+      {data.description && (
+        <p className="server-info-description">{data.description}</p>
+      )}
+
+      <div className="server-info-actions">
+        <ServerAddressCopy address={data.dm ?? data.ip} />
+        <ServerLink address={`samp://${data.dm ?? data.ip}`} />
+      </div>
+    </header>
+
     <div className="server-info-container">
       <div className="server-info-box">
-        <div className="server-info-header">
-          <span className="server-info-game-mode">{data.core.gm}</span>
-          <a
-            href={`samp://${data.dm ?? data.ip}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="server-info-ip-address"
-          >
-            {data.dm ?? data.ip}
-          </a>
-        </div>
-
-        <h1 className="server-info-name">{data.core.hn}</h1>
-
-        <p className="server-info-description">
-          {data.description || <Translate id="serverInfo.noDescription" description="No description text">This server has no description</Translate>}
-        </p>
-
-        <div className="row server-info-content-wrapper">
+        <div
+          className={`server-info-content-wrapper ${
+            data.ru ? "" : "server-info-content-wrapper-single"
+          }`}
+        >
           <div className="server-info-stats-section">
             <div className="server-info-stat-item">
-              <span className="server-info-stat-label"><Translate id="serverInfo.playersOnline" description="Players online label">Players Online</Translate></span>
+              <span className="server-info-stat-label">
+                <Translate id="serverInfo.playersOnline" description="Players online label">
+                  Players Online
+                </Translate>
+              </span>
               <span className="server-info-stat-value">
                 {data.core.pc}/{data.core.pm}
               </span>
             </div>
 
             <div className="server-info-stat-item">
-              <span className="server-info-stat-label"><Translate id="serverInfo.modVersion" description="Mod version label">Mod Version</Translate></span>
-              <span className="server-info-stat-value">{data.core.vn}</span>
-            </div>
-
-            <div className="server-info-stat-item">
-              <span className="server-info-stat-label"><Translate id="serverInfo.language" description="Language label">Language</Translate></span>
+              <span className="server-info-stat-label">
+                <Translate id="serverInfo.language" description="Language label">
+                  Language
+                </Translate>
+              </span>
               <span className="server-info-stat-value">{data.core.la}</span>
             </div>
-
-            <ServerLink address={`samp://${data.dm ?? data.ip}`} />
           </div>
 
           {data.ru && (
@@ -92,8 +120,16 @@ const Info = ({ data }: { data: ServerAllData }) => (
               <table className="server-info-rules-table">
                 <thead>
                   <tr>
-                    <th><Translate id="serverInfo.rule" description="Rule table header">Rule</Translate></th>
-                    <th><Translate id="serverInfo.value" description="Value table header">Value</Translate></th>
+                    <th>
+                      <Translate id="serverInfo.rule" description="Rule table header">
+                        Rule
+                      </Translate>
+                    </th>
+                    <th>
+                      <Translate id="serverInfo.value" description="Value table header">
+                        Value
+                      </Translate>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -153,11 +189,12 @@ const Content = ({ ip }: { ip: string }) => {
   const [data, setData] = useState<ServerAllData | undefined>(undefined);
 
   useEffect(() => {
+    setLoading(true);
     getServer(ip).then((server) => {
       setLoading(false);
       setData(server);
     });
-  }, []);
+  }, [ip]);
 
   if (!data || loading) {
     return <LoadingBanner />;
