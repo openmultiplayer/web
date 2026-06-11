@@ -93,16 +93,26 @@ const SocialIcons = () => {
 
 const HomepageHeader = () => {
   const [showAnnouncement, setShowAnnouncement] = useState(true);
+  const [isClosingAnnouncement, setIsClosingAnnouncement] = useState(false);
 
   const closeAnnouncement = () => {
-    setShowAnnouncement(false);
+    setIsClosingAnnouncement(true);
+    window.setTimeout(() => {
+      setShowAnnouncement(false);
+    }, 260);
   };
 
   return (
     <header className={styles.heroBanner}>
       
       {showAnnouncement && (
-        <div className={styles.announcementWrapper}>
+        <div
+          className={clsx(
+            styles.announcementWrapper,
+            "dismissible-admonition-wrapper",
+            isClosingAnnouncement && "dismissible-admonition-wrapper--closing",
+          )}
+        >
           <Admonition
             className={styles.announcement}
             type="tip"
@@ -141,10 +151,11 @@ const HomepageHeader = () => {
               <Translate id="announcement.seeWhatsNew" description="Announcement: see what's new link">See what's new</Translate>
             </Link>
             .
-            <div className={styles.dismissContainer}>
+            <div className="dismissible-admonition-actions">
               <button 
                 onClick={closeAnnouncement} 
-                className={styles.dismissButton}
+                className="dismissible-admonition-button"
+                disabled={isClosingAnnouncement}
                 aria-label={translate({
                   id: "announcement.dismissAria",
                   message: "Dismiss announcement",

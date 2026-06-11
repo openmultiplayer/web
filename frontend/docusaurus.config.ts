@@ -41,7 +41,7 @@ const config: Config = {
       removeLegacyPostBuildHeadAttribute: true,
       useCssCascadeLayers: true,
     },
-    experimental_faster: {
+    faster: {
       swcJsLoader: true,
       swcJsMinimizer: true,
       swcHtmlMinimizer: true,
@@ -113,11 +113,10 @@ const config: Config = {
         async contentLoaded({ actions }) {
           const { addRoute } = actions;
 
-          // Add the dynamic route
+          // Add the dynamic server detail route.
           addRoute({
-            path: "/servers/",
+            path: "/servers/:serverAddress",
             component: "@site/src/pages/servers/index.tsx",
-            exact: false,
           });
         },
       };

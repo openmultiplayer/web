@@ -8,6 +8,7 @@ import React, {
   useState,
 } from "react";
 import { List as FixedSizeList, RowComponentProps } from "react-window";
+import { useLocation } from "@docusaurus/router";
 import LoadingBanner from "../../components/LoadingBanner";
 import ServerRow from "../../components/ServerRow";
 import { showToast, ToastContainer } from "../../components/Toast";
@@ -17,6 +18,16 @@ import ServerInfoPage from "../../components/ServerInfoPage";
 import { default as Translate, translate } from "@docusaurus/Translate";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
+
+const getServerAddressFromPathname = (pathname: string) => {
+  const match = pathname.match(/^\/servers\/(.+)$/);
+
+  if (!match) {
+    return undefined;
+  }
+
+  return decodeURIComponent(match[1].replace(/\/$/, ""));
+};
 
 const getServers = async () => {
   try {
@@ -38,14 +49,59 @@ const getStats = (servers: CoreServerData[]): Stats => ({
   servers: servers.length,
 });
 
-type SortBy = "relevance" | "pc";
+type SortBy = "relevance" | "pc" | "hn" | "gm" | "la";
 
 type Query = {
   search?: string;
   showEmpty: boolean;
   showPartnersOnly: boolean;
   showOmpOnly: boolean;
+  showPassworded: boolean;
+  language: string;
   sort: SortBy;
+};
+
+type LanguageFilter = {
+  name: string;
+  keywords: string[];
+};
+
+const languageFilters: LanguageFilter[] = [
+  { name: "English", keywords: ["English", "EN", "Eng"] },
+  { name: "Arabic", keywords: ["Arabic", "العربية"] },
+  { name: "Czech", keywords: ["Czech", "CZ", "Čeština"] },
+  { name: "Chinese", keywords: ["Chinese", "CN", "ZH", "中文"] },
+  { name: "Dutch", keywords: ["Dutch", "NL", "Nederlands"] },
+  { name: "French", keywords: ["French", "FR", "Français"] },
+  { name: "German", keywords: ["German", "DE", "GER", "Deutsch"] },
+  { name: "Hungarian", keywords: ["Hungarian", "HU", "Magyar"] },
+  { name: "Indonesian", keywords: ["Indonesian", "ID", "Bahasa Indonesia"] },
+  { name: "Italian", keywords: ["Italian", "IT", "Italiano"] },
+  { name: "Polish", keywords: ["Polish", "PL", "Polski"] },
+  { name: "Portuguese", keywords: ["Portuguese", "PT", "Português"] },
+  { name: "Romanian", keywords: ["Romanian", "RO", "Română"] },
+  { name: "Russian", keywords: ["Russian", "RU", "RUS", "Русский"] },
+  { name: "Spanish", keywords: ["Spanish", "ES", "Español"] },
+  { name: "Turkish", keywords: ["Turkish", "TR", "Türkçe"] },
+  { name: "Ukrainian", keywords: ["Ukrainian", "UK", "Українська"] },
+  { name: "Vietnamese", keywords: ["Vietnamese", "VI", "Viet Nam", "Tiếng Việt"] },
+];
+
+const checkLanguage = (serverLanguage: string, filterName: string) => {
+  if (!filterName) {
+    return true;
+  }
+
+  const filter = languageFilters.find((item) => item.name === filterName);
+
+  if (!filter) {
+    return true;
+  }
+
+  const normalizedLanguage = serverLanguage.toLowerCase();
+  return filter.keywords.some((keyword) =>
+    normalizedLanguage.includes(keyword.toLowerCase()),
+  );
 };
 
 // Filters data
@@ -74,9 +130,23 @@ const filterServers = (data: CoreServerData[], q: Query): CoreServerData[] => {
     filteredData = filteredData.filter((s) => s.omp === true);
   }
 
+  if (!q.showPassworded) {
+    filteredData = filteredData.filter((s) => !s.pa);
+  }
+
+  if (q.language) {
+    filteredData = filteredData.filter((s) => checkLanguage(s.la, q.language));
+  }
+
   // Sorting Logic
   if (q.sort === "pc") {
     filteredData.sort((a, b) => b.pc - a.pc); // Sort by players, descending
+  } else if (q.sort === "hn") {
+    filteredData.sort((a, b) => a.hn.localeCompare(b.hn));
+  } else if (q.sort === "gm") {
+    filteredData.sort((a, b) => a.gm.localeCompare(b.gm));
+  } else if (q.sort === "la") {
+    filteredData.sort((a, b) => a.la.localeCompare(b.la));
   }
   //Relevance would be the original order
 
@@ -201,14 +271,14 @@ const AddServer = ({ onAdd }: { onAdd: (server: ServerAllData) => void }) => {
           name="address"
           placeholder={translate({
             id: "servers.add.addressPlaceholder",
-            message: "IP/Domain",
+            message: "play.example.com:7777",
             description: "Add server address input placeholder",
           })}
           value={value}
           onChange={(e) => setValue(e.target.value)}
           className="servers-input"
         />
-        <button type="submit" className="button button--primary button--md2">
+        <button type="submit" className="button button--primary button--md2 servers-submit-button">
           <Translate id="servers.add.submit" description="Add server submit button">
             Add
           </Translate>
@@ -244,6 +314,8 @@ const List = ({ data }: { data: CoreServerData[] }) => {
   const [showEmpty, setShowEmpty] = useState(true);
   const [showPartnersOnly, setShowPartnersOnly] = useState(false);
   const [showOmpOnly, setShowOmpOnly] = useState(false);
+  const [showPassworded, setShowPassworded] = useState(true);
+  const [language, setLanguage] = useState("");
   const [sort, setSort] = useState<SortBy>("relevance");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -253,9 +325,11 @@ const List = ({ data }: { data: CoreServerData[] }) => {
       showEmpty,
       showPartnersOnly,
       showOmpOnly,
+      showPassworded,
+      language,
       sort,
     });
-  }, [data, search, showEmpty, showPartnersOnly, showOmpOnly, sort]);
+  }, [data, search, showEmpty, showPartnersOnly, showOmpOnly, showPassworded, language, sort]);
 
   const rowHeight = 134;
 
@@ -293,6 +367,38 @@ const List = ({ data }: { data: CoreServerData[] }) => {
                 Players
               </Translate>
             </option>
+            <option value="hn">
+              <Translate id="servers.sort.name" description="Sort by server name">
+                Name
+              </Translate>
+            </option>
+            <option value="gm">
+              <Translate id="servers.sort.mode" description="Sort by game mode">
+                Mode
+              </Translate>
+            </option>
+            <option value="la">
+              <Translate id="servers.sort.language" description="Sort by language">
+                Language
+              </Translate>
+            </option>
+          </select>
+
+          <select
+            value={language}
+            onChange={(e) => setLanguage(e.target.value)}
+            className="servers-select"
+          >
+            <option value="">
+              <Translate id="servers.language.all" description="All languages filter option">
+                All languages
+              </Translate>
+            </option>
+            {languageFilters.map((filter) => (
+              <option key={filter.name} value={filter.name}>
+                {filter.name}
+              </option>
+            ))}
           </select>
 
           <input
@@ -317,7 +423,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           <button
             type="button"
             onClick={() => setIsModalOpen(true)}
-            className="button button--primary button--md2"
+            className="button button--primary button--md2 servers-add-button"
           >
             <Translate id="servers.add.openModal" description="Button that opens the add server modal">
               Add server
@@ -334,7 +440,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
               className="servers-checkbox"
             />
             <Translate id="servers.filter.showEmpty" description="Checkbox label to show empty servers">
-              Show empty servers
+              Empty
             </Translate>
           </label>
 
@@ -346,7 +452,19 @@ const List = ({ data }: { data: CoreServerData[] }) => {
               className="servers-checkbox"
             />
             <Translate id="servers.filter.showOmpOnly" description="Checkbox label to show only open.mp servers">
-              Show only open.mp servers
+              open.mp only
+            </Translate>
+          </label>
+
+          <label className="servers-checkbox-label">
+            <input
+              type="checkbox"
+              checked={showPassworded}
+              onChange={(e) => setShowPassworded(e.target.checked)}
+              className="servers-checkbox"
+            />
+            <Translate id="servers.filter.showPassworded" description="Checkbox label to show passworded servers">
+              Passworded
             </Translate>
           </label>
 
@@ -358,7 +476,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
               className="servers-checkbox"
             />
             <Translate id="servers.filter.showPartnersOnly" description="Checkbox label to show only partner servers">
-              Show only partners
+              Partners
             </Translate>
           </label>
         </div>
@@ -379,7 +497,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
         <div className="servers-modal-header">
           <h2 className="servers-modal-title">
             <Translate id="servers.add.modalTitle" description="Add server modal title">
-              Add a server
+              Add Server
             </Translate>
           </h2>
           <button
@@ -398,7 +516,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
         <div className="servers-modal-body">
           <label className="servers-label">
             <Translate id="servers.add.addressLabel" description="Add server address field label">
-              IP or Domain
+              Server address
             </Translate>
           </label>
           <AddServer
@@ -412,38 +530,17 @@ const List = ({ data }: { data: CoreServerData[] }) => {
               description="Help text explaining the required server address format"
               values={{ format: <strong>ip:port</strong> }}
             >
-              {"IP must be in format {format}"}
+              {"Use {format}"}
             </Translate>
           </p>
         </div>
 
-        <div className="servers-modal-footer">
-          <button
-            onClick={() => setIsModalOpen(false)}
-            className="button button--primary button--md2"
-          >
-            <Translate id="servers.add.close" description="Close modal button">
-              Close
-            </Translate>
-          </button>
-        </div>
       </Modal>
     </div>
   );
 };
 
-const Page = (): ReactNode => {
-  if (
-    typeof window !== "undefined" &&
-    window.location &&
-    window.location.pathname &&
-    window.location.pathname.includes(":")
-  ) {
-    const path = window.location.pathname;
-    const server = path.split("/servers/")[1];
-    return <ServerInfoPage ip={server} />;
-  }
-
+const ServersListPage = (): ReactNode => {
   const [loading, setLoading] = useState<boolean>(true);
   const [data, setData] = useState<CoreServerData[]>([]);
 
@@ -469,12 +566,33 @@ const Page = (): ReactNode => {
         })}
       >
         <section className="servers-container">
+          <h1 className="servers-page-title">
+            <Translate id="servers.page.heading" description="Servers page main heading">
+              Servers
+            </Translate>
+          </h1>
+          <p className="servers-page-subtitle">
+            <Translate id="servers.page.subtitle" description="Servers page subtitle">
+              Browse active SA-MP and open.mp servers.
+            </Translate>
+          </p>
           {loading ? <LoadingBanner /> : <List data={data} />}
         </section>
       </Layout>
       <ToastContainer />
     </div>
   );
+};
+
+const Page = (): ReactNode => {
+  const location = useLocation();
+  const serverAddress = getServerAddressFromPathname(location.pathname);
+
+  if (serverAddress) {
+    return <ServerInfoPage ip={serverAddress} />;
+  }
+
+  return <ServersListPage />;
 };
 
 export default Page;
