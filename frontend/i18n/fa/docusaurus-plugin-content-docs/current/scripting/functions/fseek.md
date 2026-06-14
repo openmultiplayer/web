@@ -5,7 +5,7 @@ description: تغییر موقعیت فعلی توی فایل.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

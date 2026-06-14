@@ -5,7 +5,7 @@ description: مقدار معکوس یک سینوس را به درجه دریاف
 tags: ["math"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

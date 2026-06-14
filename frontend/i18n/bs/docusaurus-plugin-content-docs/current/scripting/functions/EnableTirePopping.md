@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 :::warning
 
-Ova je funkcija uklonjena u SA-MP 0.3. Pucanje guma je omogućeno prema zadanim postavkama. Ako želite onemogućiti pucanje guma, morat ćete ga ručno skriptati koristeći [OnVehicleDamageStatusUpdate](OnVehicleDamageStatusUpdate).
+Ova je funkcija uklonjena u SA-MP 0.3. Pucanje guma je omogućeno prema zadanim postavkama. Ako želite onemogućiti pucanje guma, morat ćete ga ručno skriptati koristeći [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate).
 
 :::
 

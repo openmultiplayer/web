@@ -87,7 +87,7 @@ public OnPlayerUpdate(playerid)
 
 ## نکته‌ها
 
-<TipNPCCallbacks />
+<TipNPCCallbacksFA />
 
 :::warning
 

@@ -5,7 +5,7 @@ description: تبدیل یک رشته به عدد صحیح.
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

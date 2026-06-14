@@ -5,13 +5,19 @@ export default function WarningVersion({
   name = "function",
 }: {
   version: string;
-  name: string;
+  name?: string;
 }) {
+  const item =
+    name === "function" ? "função" : name === "callback" ? "callback" : name;
+  const startsWithFeminine = item === "função";
+  const article = startsWithFeminine ? "Esta" : "Este";
+  const added = startsWithFeminine ? "adicionada" : "adicionado";
+
   return (
     <Admonition type="warning">
       <p>
-        Esta {name} foi implementada no {version} e não funcionará em versões
-        anteriores.
+        {article} {item} foi {added} no {version} e não funcionará em versões
+        anteriores!
       </p>
     </Admonition>
   );

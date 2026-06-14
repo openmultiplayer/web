@@ -5,7 +5,7 @@ description: این تابع برای اجرای یک کوئری SQL روی پا
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

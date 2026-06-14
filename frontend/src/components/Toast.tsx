@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { translate } from "@docusaurus/Translate";
 
 interface Toast {
   id: string;
   message: string;
   title: string;
   type: "success" | "error";
+  removing?: boolean;
 }
 
 class ToastEventManager {
@@ -27,13 +29,25 @@ const toastEvents = new ToastEventManager();
 export const ToastContainer = () => {
   const [toasts, setToasts] = useState<Toast[]>([]);
 
+  const removeToast = (id: string) => {
+    setToasts((prev) =>
+      prev.map((toast) =>
+        toast.id === id ? { ...toast, removing: true } : toast
+      )
+    );
+
+    setTimeout(() => {
+      setToasts((prev) => prev.filter((toast) => toast.id !== id));
+    }, 200);
+  };
+
   useEffect(() => {
     const unsubscribe = toastEvents.addListener((toast) => {
       setToasts((prev) => [toast, ...prev]);
 
       setTimeout(() => {
-        setToasts((prev) => prev.filter((t) => t.id !== toast.id));
-      }, 100000);
+        removeToast(toast.id);
+      }, 4000);
     });
 
     return () => unsubscribe();
@@ -46,16 +60,20 @@ export const ToastContainer = () => {
           key={toast.id}
           className={`toast ${
             toast.type === "success" ? "toast-success" : "toast-error"
-          }`}
+          } ${toast.removing ? "removing" : ""}`}
         >
           <div className="toast-header">
             <h4 className="toast-title">{toast.title}</h4>
             <button
               onClick={() =>
-                setToasts((prev) => prev.filter((t) => t.id !== toast.id))
+                removeToast(toast.id)
               }
               className="toast-close"
-              aria-label="Close toast"
+              aria-label={translate({
+                id: "toast.close",
+                message: "Close toast",
+                description: "Accessible label for closing a toast notification",
+              })}
             >
               ×
             </button>

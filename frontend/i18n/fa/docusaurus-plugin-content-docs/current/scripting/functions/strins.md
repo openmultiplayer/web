@@ -5,7 +5,7 @@ description: یک رشته را در رشته‌ای دیگر درج کن.
 tags: ["string"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -5,9 +5,9 @@ description: تبدیل یک رشته به عدد اعشاری.
 tags: ["string", "floating-point"]
 ---
 
-<VersionWarn version='omp v1.1.0.2612' />
+<VersionWarnFA version='omp v1.1.0.2612' />
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

@@ -1,4 +1,4 @@
-import Translate from "@docusaurus/Translate";
+import Translate, { translate } from "@docusaurus/Translate";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import React from "react";
 
@@ -89,6 +89,16 @@ export default function LauncherDownloadsPage(): React.ReactElement {
   return (
     <ReleaseListPage
       config={{
+        layoutTitle: translate({
+          id: "downloads.launcher.pageTitle",
+          message: "open.mp Launcher",
+          description: "Launcher downloads page title",
+        }),
+        layoutDescription: translate({
+          id: "downloads.launcher.layoutDescription",
+          message: "Download open.mp launcher releases",
+          description: "Launcher downloads page meta description",
+        }),
         pageTitle: (
           <Translate id="downloads.launcher.pageTitle" description="Launcher downloads page title">
             open.mp Launcher

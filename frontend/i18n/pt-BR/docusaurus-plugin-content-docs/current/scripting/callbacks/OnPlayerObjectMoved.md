@@ -32,7 +32,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 :::tip
 
-<TipNPCCallbacksPT />
+<TipNPCCallbacks />
 
 :::
 

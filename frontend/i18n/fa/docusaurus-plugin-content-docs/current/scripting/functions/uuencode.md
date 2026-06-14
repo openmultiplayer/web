@@ -5,7 +5,7 @@ description: یک رشته رو به رشته UU-decoded encode کن.
 tags: ["string", "encryption"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

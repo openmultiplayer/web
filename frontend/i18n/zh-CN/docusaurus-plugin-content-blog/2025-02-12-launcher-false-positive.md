@@ -1,7 +1,7 @@
 ---
 slug: launcher-false-positive
 title: Windows Defender 对启动器的误报问题
-authors: itsneufox
+authors: [iamir, itsneufox]
 ---
 
 部分用户报告，**Windows Defender 将 open.mp 启动器误报为木马/病毒**。这是一个**误报**，该启动器完全可以安全使用。

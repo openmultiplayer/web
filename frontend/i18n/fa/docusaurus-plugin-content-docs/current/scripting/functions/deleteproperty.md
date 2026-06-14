@@ -5,7 +5,7 @@ description: حذف یک خاصیت از پیش تنظیم شده (setproperty).
 tags: ["core", "property"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

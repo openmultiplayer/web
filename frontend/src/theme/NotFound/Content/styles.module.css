@@ -1,0 +1,62 @@
+.notFound {
+  display: grid;
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  place-items: center;
+  padding: 4rem 1rem;
+}
+
+.image {
+  display: block;
+  width: min(100%, 760px);
+  margin: 0 auto 1.75rem;
+  border-radius: 4px;
+}
+
+.content {
+  width: min(100%, 820px);
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 1.5rem;
+  color: var(--ifm-heading-color);
+  font-size: clamp(2.5rem, 7vw, 4.75rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.actions {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 0;
+}
+
+.button {
+  width: 220px;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 700px) {
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

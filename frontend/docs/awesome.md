@@ -1,17 +1,17 @@
 ---
 title: Awesome
 sidebar_label: Awesome
-description: A curated list of useful tools, libraries, gamemodes, filterscripts and plugins for SA-MP development.
+description: A curated list of useful tools, libraries, gamemodes, filterscripts and plugins for SA-MP/open.mp development.
 ---
 
 ## Tools
 
 - **[Community Compiler](https://github.com/pawn-lang/compiler)** - A vastly updated version of the compiler, with many fixes and enhancements.
 - **[sampctl](https://github.com/Southclaws/sampctl)** - Package manager for installing libraries and running your server.
-- **[Plugin Runner](https://github.com/Zeex/samp-plugin-runner)** - Tool to run a lightweight version of the server directly from command-line (no server.cfg required) for testing plugins.
+- **[Plugin Runner](https://github.com/Y-Less/samp-plugin-runner)** - Tool to run a lightweight version of the server directly from command-line (no server.cfg required) for testing plugins.
 - **[Plugin Boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate)** - Making a plugin easier with boilerplate.
 - **[SA:MP Plugin Template Library](https://github.com/katursis/samp-ptl)** - Making your own plugins very easy and fast with this template library.
-- **[SA-MP Fiddle](https://fiddle.sa-mp.dev)** - A place to test your scripts (snippets, PoC, debugging, etc) and share it to others.
+- **[Pawn Playground](https://pg.open.mp)** - An official online pawn code playground provided by open.mp.
 - **[Pawn Syntax - Sublime](https://packagecontrol.io/packages/Pawn%20syntax)** - Pawn autocompletes for Sublime Text.
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocompletes for Visual Studio Code.
 - **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Zone Editor for making Area and stuff.
@@ -127,13 +127,14 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 
 ## GDK/SDKs
 
-Now you can make your scripts in languages other than pawn without any plugin using open.mp. See [this blog post](https://www.open.mp/blog/release-candidate-1)
+Now you can make your scripts in languages other than pawn without any plugin using open.mp. See [this blog post](https://www.open.mp/blog/release-candidate-1#sdk)
 
 - **[sampsdk](https://github.com/maddinat0r/samp-plugin-sdk)** - This is the bare minimum that you need to develop plugins.
 - **[sampgdk](https://github.com/Foundation-PAWN/sampgdk-backup)** - C/C++ Language Support for writing a gamemode for SA:MP
 - **[SampSharp](https://github.com/ikkentim/SampSharp)** - C# Language Support for writing a gamemode for SA:MP
 - **[.NET Plugin](https://github.com/Seregamil/.NET-plugin)** - C# Language Support for writing a plugin for SA:MP
 - **[sampgo](https://github.com/sampgo/sampgo)** - Go Language Support for writing a gamemode/plugins for SA:MP
+- **[ompgo](https://github.com/ompgo-dev/ompgo)** - Go Language Support for writing a gamemode/components for open.mp
 - **[samp-node](https://github.com/AmyrAhmady/samp-node)** - Javascript/Typescript Language Support for writing a gamemode for SA:MP
 - **[Shoebill Project](https://github.com/Shoebill/ShoebillPlugin)** - Java Language Support for writing a gamemode for SA:MP
 - **[pySAMP](https://github.com/habecker/PySAMP)** - Python Language Support for writing a gamemode for SA:MP

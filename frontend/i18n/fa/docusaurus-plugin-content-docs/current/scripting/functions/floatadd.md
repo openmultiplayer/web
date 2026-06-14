@@ -5,7 +5,7 @@ description: جمع کردن دو عدد اعشاری.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

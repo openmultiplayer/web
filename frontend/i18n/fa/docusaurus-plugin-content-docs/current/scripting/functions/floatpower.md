@@ -5,7 +5,7 @@ description: مقدار داده شده رو به توان exponent میرسون
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

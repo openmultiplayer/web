@@ -5,7 +5,7 @@ description: محتوای یک فیلد رو از db_query دریافت کنید
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

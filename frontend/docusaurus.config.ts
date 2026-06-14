@@ -5,6 +5,18 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const currentYear = new Date().getFullYear();
+
+const copyrightByLocale: Record<string, string> = {
+  en: `Copyright © ${currentYear} open.mp. Built with Docusaurus.`,
+  uk: `Copyright © ${currentYear} open.mp. Створено на Docusaurus.`,
+  "pt-BR": `Copyright © ${currentYear} open.mp. Feito com Docusaurus.`,
+  "zh-CN": `版权所有 © ${currentYear} open.mp。基于Docusaurus构建"`,
+  tr: `Telif Hakkı © ${currentYear} open.mp. Docusaurus ile yapıldı.`,
+  fa: `حق نشر © ${currentYear} open.mp. ساخته شده با Docusaurus.`,
+
+};
+
 const config: Config = {
   title: "open.mp",
   tagline: "Open Multiplayer",
@@ -29,7 +41,7 @@ const config: Config = {
       removeLegacyPostBuildHeadAttribute: true,
       useCssCascadeLayers: true,
     },
-    experimental_faster: {
+    faster: {
       swcJsLoader: true,
       swcJsMinimizer: true,
       swcHtmlMinimizer: true,
@@ -102,11 +114,10 @@ const config: Config = {
         async contentLoaded({ actions }) {
           const { addRoute } = actions;
 
-          // Add the dynamic route
+          // Add the dynamic server detail route.
           addRoute({
-            path: "/servers/",
+            path: "/servers/:serverAddress",
             component: "@site/src/pages/servers/index.tsx",
-            exact: false,
           });
         },
       };
@@ -331,7 +342,10 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} open.mp. Built with Docusaurus.`,
+      copyright:
+        copyrightByLocale[
+        process.env.DOCUSAURUS_CURRENT_LOCALE || "en"
+        ] || copyrightByLocale.en,
     },
     prism: {
       theme: prismThemes.github,

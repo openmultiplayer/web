@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
-import Translate from '@docusaurus/Translate';
+import { default as Translate, translate } from '@docusaurus/Translate';
 import {
   animations,
   getLibraries,
@@ -77,8 +77,16 @@ const AnimationsPage = () => {
 
   return (
     <Layout
-      title="Animations"
-      description="Interactive open.mp (SA-MP) animations viewer with video previews"
+      title={translate({
+        id: "animations.layoutTitle",
+        message: "Animations",
+        description: "Animations page browser title",
+      })}
+      description={translate({
+        id: "animations.layoutDescription",
+        message: "Interactive open.mp (SA-MP) animations viewer with video previews",
+        description: "Animations page meta description",
+      })}
     >
       <div className={styles.pageContainer}>
             <Heading as="h1" className={styles.pageTitle}>
@@ -156,7 +164,11 @@ const AnimationsPage = () => {
                             target.style.display = "none";
                             const errorDiv = document.createElement("div");
                             errorDiv.className = styles.errorMessage;
-                            errorDiv.textContent = "Video not available";
+                            errorDiv.textContent = translate({
+                              id: "animations.videoUnavailable",
+                              message: "Video not available",
+                              description: "Fallback message when an animation video fails to load",
+                            });
                             target.parentNode?.appendChild(errorDiv);
                           }}
                         />
@@ -203,10 +215,18 @@ const AnimationsPage = () => {
                     <Heading as="h3"><Translate id="animations.usageExamples" description="Usage examples heading">Usage Examples:</Translate></Heading>
                     <pre className={styles.codeBlock}>
                       <code>
-                        {`// For players
+                        {`${translate({
+                          id: "animations.code.forPlayers",
+                          message: "// For players",
+                          description: "Comment in animation usage example for player animations",
+                        })}
 ApplyAnimation(playerid, "${currentAnimation.library}", "${currentAnimation.name}", 4.1, false, false, false, false, SYNC_ALL);
 
-// For actors
+${translate({
+  id: "animations.code.forActors",
+  message: "// For actors",
+  description: "Comment in animation usage example for actor animations",
+})}
 ApplyActorAnimation(actorid, "${currentAnimation.library}", "${currentAnimation.name}", 4.1, false, false, false, false, SYNC_ALL);`}
                       </code>
                     </pre>

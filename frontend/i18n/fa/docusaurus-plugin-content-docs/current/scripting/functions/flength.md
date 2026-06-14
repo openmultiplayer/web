@@ -5,7 +5,7 @@ description: برگرداندن طول یک فایل.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
+<LowercaseNoteFA />
 
 ## توضیحات
 

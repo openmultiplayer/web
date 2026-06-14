@@ -32,7 +32,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## نکته‌ها
 
-<TipNPCCallbacks />
+<TipNPCCallbacksFA />
 
 ## کالبک‌های مرتبط
 
