@@ -3,8 +3,7 @@
 ---
 
 “pawn” is a simple, typeless, 32-bit “scripting” language with a C-like syntax.
-Execution speed, stability, simplicity and a small footprint were essential design criterions for both the language and the interpreter/abstract machine that a
-pawn program runs on.
+Execution speed, stability, simplicity and a small footprint were essential design criterions for both the language and the interpreter/abstract machine that a pawn program runs on.
 
 An application or tool cannot do or be everything for all users.  
 This not
@@ -15,13 +14,9 @@ The pawn language was designed as a flexible language for manipulating objects i
 
 ## ♦
 
-pawn is a descendent of the original Small C by Ron Cain and James Hendrix, which at its turn was a subset of C. Some of the modifications that I did to Small C, e.g. the removal of the type system and the substitution of pointers by references, were so fundamental that I could hardly call my language a “subset of C” or a “C dialect” anymore. Therefore, I stripped off the “C” from the title and used the name “Small” for the name of the language in my publication in Dr. Dobb’s Journal and the years since. During development and maintenance of the product, I received many requests for changes. One of the frequently requested changes was to use a different name for the language —searching for information on the Small scripting language on the Internet was hindered by “small” being such a common word. The name change occurred together with a significant change in the language: the support of “states” (and state
-machines).
+pawn is a descendent of the original Small C by Ron Cain and James Hendrix, which at its turn was a subset of C. Some of the modifications that I did to Small C, e.g. the removal of the type system and the substitution of pointers by references, were so fundamental that I could hardly call my language a “subset of C” or a “C dialect” anymore. Therefore, I stripped off the “C” from the title and used the name “Small” for the name of the language in my publication in Dr. Dobb’s Journal and the years since. During development and maintenance of the product, I received many requests for changes. One of the frequently requested changes was to use a different name for the language —searching for information on the Small scripting language on the Internet was hindered by “small” being such a common word. The name change occurred together with a significant change in the language: the support of “states” (and state machines).
 
-I am indebted to Ron Cain and James Hendrix (and more recently, Andy
-Yuen), and to Dr. Dobb’s Journal to get this ball rolling. Although I must
-have touched nearly every line of the original code multiple times, the Small
-C origins are still clearly visible.
+I am indebted to Ron Cain and James Hendrix (and more recently, Andy Yuen), and to Dr. Dobb’s Journal to get this ball rolling. Although I must have touched nearly every line of the original code multiple times, the Small C origins are still clearly visible.
 
 ## ♦
 
