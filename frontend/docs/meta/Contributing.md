@@ -160,62 +160,6 @@ If a table has headings, they go in the top part:
   | < 250   | On fire (will explode seconds later) |
   ```
 
-## Migrating from SA-MP Wiki
-
-Most of the content has been moved, but if you find a page that's missing, here's a short guide for converting content to Markdown.
-
-### Getting the HTML
-
-1. Click this button
-
-   (Firefox)
-
-   ![image](https://assets.open.mp/assets/images/contributing/04f024579f8d.png)
-
-   (Chrome)
-
-   ![image](https://assets.open.mp/assets/images/contributing/f62bb8112543.png)
-
-2. Hover the top left of the main wiki page, in the left margin or the corner until you see `#content`
-
-   ![image](https://assets.open.mp/assets/images/contributing/65761ffbc429.png)
-
-   Or search for `<div id=content>`
-
-   ![image](https://assets.open.mp/assets/images/contributing/77befe2749fd.png)
-
-3. Copy the inner HTML of that element
-
-   ![image](https://assets.open.mp/assets/images/contributing/8c7c75cfabad.png)
-
-   Now you have _only_ the HTML code for the actual _content_ of the page, the stuff we care about, and you can convert it to Markdown.
-
-### Converting HTML to Markdown
-
-For converting basic HTML (no tables) to Markdown use:
-
-https://mixmark-io.github.io/turndown/
-
-![image](https://assets.open.mp/assets/images/contributing/77f4ea555bbb.png)
-
-^^ Notice now it screwed up the table completely...
-
-### HTML Tables to Markdown Tables
-
-Because the above tool does not support tables, use this tool:
-
-https://jmalarcon.github.io/markdowntables/
-
-And copy only the `<table>` element in:
-
-![image](https://assets.open.mp/assets/images/contributing/57f171ae0da7.png)
-
-### Cleaning Up
-
-The conversion likely won't be perfect. So you'll have to do a bit of manual cleanup. The formatting extensions listed above should help with that but you may still need to just spend some time doing manual work.
-
-If you don't have time, don't worry! Submit an unfinished draft and someone else can pick up where you left off!
-
 ## License Agreement
 
 All open.mp projects have a [Contributor License Agreement](https://cla-assistant.io/openmultiplayer/homepage). This basically just means you agree to let us use your work, and put it under an open-source license. When you open a Pull Request for the first time, the CLA-Assistant bot will post a link where you can sign the agreement.
