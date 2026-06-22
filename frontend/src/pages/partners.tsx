@@ -334,7 +334,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
         </div>
       </form>
 
-      <StatsComponent stats={getStats(data)} />
+      <StatsComponent stats={getStats(filteredData)} />
 
       <div className="servers-virtual-list">
         <FixedSizeList
