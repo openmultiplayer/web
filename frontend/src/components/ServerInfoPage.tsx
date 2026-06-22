@@ -137,7 +137,7 @@ const Info = ({ data }: { data: ServerAllData }) => (
                     <tr key={key}>
                       <td>{key}</td>
                       <td>
-                        {key === "weburl" ? (
+                        {key === "weburl" || key === "discord.invite" ? (
                           <a
                             href={`https://${value}`}
                             target="_blank"
