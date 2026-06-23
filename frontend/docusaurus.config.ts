@@ -86,6 +86,7 @@ const config: Config = {
       "ro",
       "sl",
       "sr",
+      "sn",
       "ta",
       "th",
       "tr",

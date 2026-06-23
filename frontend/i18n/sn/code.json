@@ -1,0 +1,337 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Pooro pooro poyaan wariyun shayun halainr waro"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Chhaa tawhan wt ko puranru AMX payal ahe? Unhe khe open.mp server te halayo ain jeke dost SA-MP client te ahin unhan san gadd raand rahyo."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Shuroo kyo"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Naun ain sutho kayal scripting system."
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "Asaan filhaal pawn te ii rahya ahyun pr wadheek mazbootin san"
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Wadheek diso"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Developer je hawaale san"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Asan Open.mp mn hik ehri API use kayi ahe jeka developers lae tamaam mufeed ahe."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Wadheek diso"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Jadeed ain sutho kayal scripting system"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Asaan pawn khe e choose kyo ahe, pr wadheek sutho kayal system san"
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Suthhyun kayal shayun diso"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Community je hisaab san halandr development"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Jekdhen tawhan madad karanr chahyo tha t sutho ahe. Hi pooro community te halandr project ahe. Mehrbani"
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Wadheek GitHub te diso"
+  },
+  "feature.cppApi.title": {
+    "message": "C++ ji API san"
+  },
+  "feature.cppApi.description": {
+    "message": "Pawn ta ahe pr tawhan C++ b isteemaal kre tha sagho, asan ware GitHub te wanji maaloomaat hasil kanda."
+  },
+  "feature.cppApi.linkText": {
+    "message": "C++ waro SDK diso"
+  },
+  "partners.server.stats": {
+    "message": "{players} rahinr wara ahin {servers} servern men. {average} Average"
+  },
+  "servers.sort.relevance": {
+    "message": "Mutaabiqt"
+  },
+  "servers.sort.players": {
+    "message": "Player"
+  },
+  "servers.search.placeholder": {
+    "message": "IP ya naale san search kryo"
+  },
+  "partners.note": {
+    "message": "Partnern jo achanr hanre bnd thi wyo ahe. Jekdhen tawhan khe ko sawaal ahe ta Discord te raabto kryo. Hi sirf uhe server ahin jin testing mn madad kayi hui."
+  },
+  "announcement.title": {
+    "message": "open.mp ain launcher jo naun achi wyo ahe"
+  },
+  "announcement.link": {
+    "message": "Ealaan diso link"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Hi page crash thi wyo.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Na mili saghyo",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Kujh maslo achi wyo.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Tawhan pehnji dinal URL wari disanda",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "Yaad rakho",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "Faide wari gaalh",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "Khatro",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "Maloomaat",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "Ehtiyat",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Wapis mathe wnjo",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Puraanra",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Puraanra",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog ji list ain page",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Nain post prho",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Puthhin post prho",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} minute laganda",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags ahin",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "open.mp jo nauun version {version} mojood ahe"
+  },
+  "announcement.changelog": {
+    "message": "Tabdeeliyon"
+  },
+  "announcement.download": {
+    "message": "Download kryo"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Launcher jo naun update mojood ahe."
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Diso naun chha ahe"
+  },
+  "announcement.dismiss": {
+    "message": "Bnd kryo"
+  },
+  "homepage.heroDescription": {
+    "message": "Poori poori Grand Theft Auto: San Andreas jo {compatibility} gdd {samp} san."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "Compatibility je baare mn"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Launcher download kryo 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Server download kryo 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Documentation/Madad 📜"
+  },
+  "animations.title": {
+    "message": "open.mp animation"
+  },
+  "animations.library": {
+    "message": "Library:"
+  },
+  "animations.selectLibrary": {
+    "message": "Hik library choondyo..."
+  },
+  "animations.animation": {
+    "message": "Animation:"
+  },
+  "animations.selectAnimation": {
+    "message": "Hik animation choondyo..."
+  },
+  "animations.index": {
+    "message": "Index:"
+  },
+  "animations.frames": {
+    "message": "Frame ahin:"
+  },
+  "animations.duration": {
+    "message": "halnr jo time:"
+  },
+  "animations.seconds": {
+    "message": "Second"
+  },
+  "animations.description": {
+    "message": "Wazaaht:"
+  },
+  "animations.notes": {
+    "message": "Yaad rakhjo:"
+  },
+  "animations.videoCredits": {
+    "message": "Video ji mehrbaani:"
+  },
+  "animations.usageExamples": {
+    "message": "Istemaal karanr ji misaal:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Ko b animation choondyo"
+  },
+  "animations.browsePrompt": {
+    "message": "Animations diso"
+  },
+  "animations.usedByFunctions": {
+    "message": "ApplyAnimation/ApplyActorAnimation san istemaal kryo"
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Rail gaadi je poyaan..."
+  },
+  "serverRow.copied": {
+    "message": "Copy thi wyo"
+  },
+  "serverRow.copy": {
+    "message": "Copy"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Partner jo title!"
+  },
+  "serverRow.ompTitle": {
+    "message": "open.mp server"
+  },
+  "serverRow.players": {
+    "message": "Player"
+  },
+  "serverInfo.backToServers": {
+    "message": "→ Wapisi"
+  },
+  "serverInfo.quickJoin": {
+    "message": "hinjr ee join kryo"
+  },
+  "serverInfo.noDescription": {
+    "message": "Ka b wazaahat nahe"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Online player"
+  },
+  "serverInfo.modVersion": {
+    "message": "Mod jo version"
+  },
+  "serverInfo.language": {
+    "message": "boli"
+  },
+  "serverInfo.rule": {
+    "message": "qanoon"
+  },
+  "serverInfo.value": {
+    "message": "ang"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Update jo akhri time {time}"
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Documents"
+  },
+  "theme.footer.title.Community": {
+    "message": "Raaj"
+  },
+  "theme.footer.title.More": {
+    "message": "Wadheek"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Introduction"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "open.mp dahn hijrat kryo"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Chando dyo"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Server"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Blog"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Animation"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "UID thhaahiyo"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "sbh hqq mojood ahin © {year} open.mp Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "Documents"
+  },
+  "navbar.item.Blog": {
+    "message": "Blog"
+  },
+  "navbar.item.Forums": {
+    "message": "Forums"
+  },
+  "navbar.item.Servers": {
+    "message": "Server"
+  },
+  "navbar.item.Partners": {
+    "message": "Dost"
+  },
+  "navbar.item.Donate": {
+    "message": "Chando dyo"
+  }
+}
