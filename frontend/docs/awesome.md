@@ -16,6 +16,10 @@ description: A curated list of useful tools, libraries, gamemodes, filterscripts
 - **[Pawn Syntax - Visual Marketplace](https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn)** - Pawn autocompletes for Visual Studio Code.
 - **[SA-MP Zone Editor](https://bitbucket.org/Grimrandomer/samp-zone-editor/downloads)** - Zone Editor for making Area and stuff.
 - **[SA-MP Map Editor](https://github.com/openmultiplayer/archive/raw/master/tools/Map%20Editor.zip)** - Popular Map Editor for SA:MP.
+- **[Prineside's Object Model Browser](https://dev.prineside.com/en/gtasa_samp_model_id/)** - Extensive website that makes it easy to browse object model IDs, get object lod data, browse all textures and pinpoint where the objects are used in GTA San Andreas on an interactive map.
+- **[Prineside's Weather Gallery](https://dev.prineside.com/en/gtasa_samp_model_id/)** - Interactive online gallery for every available weather in the game for every ingame hour.
+- **[Prineside's Gangzone Editor](https://dev.prineside.com/en/gtasa_gangzone_editor/)** - Interactive online gangzone creator
+
 
 ## Libraries
 
