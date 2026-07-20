@@ -11,7 +11,7 @@ const copyrightByLocale: Record<string, string> = {
   en: `Copyright © ${currentYear} open.mp. Built with Docusaurus.`,
   uk: `Copyright © ${currentYear} open.mp. Створено на Docusaurus.`,
   "pt-BR": `Copyright © ${currentYear} open.mp. Feito com Docusaurus.`,
-  "zh-CN": `版权所有 © ${currentYear} open.mp。基于Docusaurus构建"`,
+  "zh-CN": `版权所有 © ${currentYear} open.mp。基于Docusaurus构建。`,
   tr: `Telif Hakkı © ${currentYear} open.mp. Docusaurus ile yapıldı.`,
   fa: `حق نشر © ${currentYear} open.mp. ساخته شده با Docusaurus.`,
 

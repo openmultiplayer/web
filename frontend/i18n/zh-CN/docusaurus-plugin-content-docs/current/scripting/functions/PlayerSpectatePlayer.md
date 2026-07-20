@@ -7,13 +7,13 @@ tags: ["玩家"]
 
 ## 描述
 
-此函数用于使指定玩家进入旁观模式并观察另一玩家
+此函数用于使指定玩家进入观战模式并观察另一玩家
 
 | 参数               | 说明                                                           |
 | ------------------ | -------------------------------------------------------------- |
 | playerid           | 观战者玩家 ID                                                  |
 | targetplayerid     | 被观战目标玩家 ID                                              |
-| SPECTATE_MODE:mode | [旁观模式](../resources/spectatemodes)（可选，默认为普通模式） |
+| SPECTATE_MODE:mode | [观战模式](../resources/spectatemodes)（可选，默认为普通模式） |
 
 ## 返回值
 
@@ -26,7 +26,7 @@ tags: ["玩家"]
 ```c
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    TogglePlayerSpectating(playerid, 1); // 启用旁观模式
+    TogglePlayerSpectating(playerid, 1); // 启用观战模式
     PlayerSpectatePlayer(playerid, killerid); // 观察击杀者视角
     return 1;
 }
@@ -36,7 +36,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-- 调用顺序至关重要！必须先使用 TogglePlayerSpectating 启用旁观模式
+- 调用顺序至关重要！必须先使用 TogglePlayerSpectating 启用观战模式
 - 观战者与被观战者必须处于相同虚拟世界和室内环境
 
 :::
@@ -50,4 +50,4 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## 相关资源
 
-- [旁观模式说明](../resources/spectatemodes)
+- [观战模式说明](../resources/spectatemodes)

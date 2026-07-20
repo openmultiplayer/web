@@ -36,85 +36,124 @@ description: 参与SA-MP Wiki与open.mp文档贡献的完整指南
 git clone https://github.com/openmultiplayer/web.git
 ```
 
-推荐使用 Visual Studio Code 编辑，安装以下扩展提升效率：
+在你喜欢的编辑器中打开它。我推荐使用Visual Studio Code，因为它提供了出色的Markdown文件编辑和格式化工具。如你所见，我正在使用Visual Studio Code撰写本文！
 
-- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) - 语法规范检查
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - 自动格式化工具
+![Visual Studio Code Markdown预览](https://assets.open.mp/assets/images/contributing/vscode.png)
 
-启用"保存时格式化"功能确保风格统一。
+我推荐安装两个扩展以提升体验：
 
-## 格式规范
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) by David Anson - 该扩展可确保Markdown格式正确，防止语法和语义错误。并非所有警告都至关重要，但有些有助于提高可读性。请运用最佳判断，如有疑问，直接咨询审阅者！
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by Prettier.js团队 - 这是一个格式化工具，可自动格式化Markdown文件，使其风格统一。维基仓库的`package.json`中包含一些设置，扩展应能自动应用。请务必在编辑器设置中启用"保存时格式化"，这样每次保存时Markdown文件都会自动格式化！
+
+## 注释、提示与约定
 
 ### 内部链接
 
-使用相对路径：
+站点内链接请勿使用绝对URL，应使用相对路径。
 
-```md
-✅ [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)
-❌ [OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)
-```
+- ❌
 
-### 图片资源
+  ```md
+  需配合[OnPlayerClickPlayer](https://www.open.mp/docs/scripting/callbacks/OnPlayerClickPlayer)使用
+  ```
 
-存放路径：`/static/images/子目录`
+- ✔
 
-引用方式：`![描述](/images/文件名.png)`
+  ```md
+  需配合[OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer)使用
+  ```
 
-### 元数据头
+`../`表示"返回上一级目录"。因此，如果你正在编辑的文件位于`functions`目录下，且要链接到`callbacks`，则使用`../`回到`scripting/`目录，再进入`callbacks/`目录，最后指定目标回调的文件名（不含`.md`）。
 
-每个文档开头必须包含：
+### 图片
+
+图片应放置在`/static/images`内的子目录中。在`![]()`中引用图片时，只需使用`/images/`作为基础路径（无需添加`static`，该目录仅为仓库内部使用）。
+
+如有疑问，请查阅其他使用了图片的页面，复制其实现方式。
+
+### 元数据
+
+此处**任何**文档的第一部分应为元数据：
 
 ```mdx
 ---
-title: 文档标题
-sidebar_label: 侧边栏标签
-description: 页面描述
+title: 我的文档
+sidebar_label: 我的文档
+description: 这是一个关于事物、汉堡等内容的页面，耶！
 ---
 ```
 
-### 标题层级
+每个页面都应包含标题和描述。
 
-禁止使用一级标题（由系统自动生成），从二级标题开始：
+关于`---`之间可包含的内容完整列表，请查看[Docusaurus文档](https://docusaurus.io/docs/markdown-features#markdown-headers)。
 
-```md
-✅ ## 子章节
-❌ # 主标题
-```
+### 标题
 
-### 技术术语标注
+请勿使用`#`创建一级标题（`<h1>`），因为这会由系统自动生成。你的第一个标题**始终**应为`##`
 
-函数名、参数等技术要素使用反引号标注：
+- ❌
 
-```md
-`fopen`函数返回带`File:`标签的值
-```
+  ```md
+  # 我的标题
 
-### 表格规范
+  这是关于...的文档
 
-必须包含表头：
+  # 子章节
+  ```
 
-```md
-| 生命值 | 引擎状态 |
-| ------ | -------- |
-| 650    | 完好无损 |
-```
+- ✔
 
-## SA-MP Wiki 迁移指南
+  ```md
+  这是关于...的文档
 
-### HTML 内容提取
+  ## 子章节
+  ```
 
-1. 使用浏览器开发者工具定位`<div id=content>`元素
-2. 复制内部 HTML 代码
+### 技术引用使用`代码`片段
 
-### 格式转换工具
+在撰写包含函数名、数字、表达式或任何非标准书面语言的段落时，请使用反引号\`\`将它们括起来。这有助于区分描述性语言与技术元素的引用，如函数名和代码片段。
 
-- 基础 HTML 转 Markdown：[Turndown](https://mixmark-io.github.io/turndown/)
-- 表格转换：[Markdown Tables](https://jmalarcon.github.io/markdowntables/)
+- ❌
 
-### 内容清理
+  > fopen函数将返回一个带有File:标签的值，该行没有问题，因为返回值被存储到一个同样带有File:标签的变量中（注意大小写也相同）。然而在下一行，值4被添加到文件句柄中。4没有标签[...]
 
-转换后需人工校验格式，未完成稿件可提交 PR 由社区协作完善。
+- ✔
 
-## 贡献者协议
+  > `fopen`函数将返回一个带有`File:`标签的值，该行没有问题，因为返回值被存储到一个同样带有`File:`标签的变量中（注意大小写也相同）。然而在下一行，值`4`被添加到文件句柄中。`4`没有标签
 
-所有贡献需签署[贡献者许可协议(CLA)](https://cla-assistant.io/openmultiplayer/homepage)，首次提交 PR 时系统将自动提示签署流程。
+在上述示例中，`fopen`是一个函数名而非英语单词，因此用`代码`片段标记有助于将其与其他内容区分。
+
+此外，如果段落引用了示例代码块，这有助于读者将文字与示例关联起来。
+
+### 表格
+
+如果表格有表头，它们应位于顶部：
+
+- ❌
+
+  ```md
+  |         |                      |
+  | ------- | -------------------- |
+  | 生命值  | 引擎状态             |
+  | 650     | 完好无损             |
+  | 650-550 | 白色烟雾             |
+  | 550-390 | 灰色烟雾             |
+  | 390-250 | 黑色烟雾             |
+  | < 250   | 起火（数秒后将爆炸） |
+  ```
+
+- ✔
+
+  ```md
+  | 生命值  | 引擎状态             |
+  | ------- | -------------------- |
+  | 650     | 完好无损             |
+  | 650-550 | 白色烟雾             |
+  | 550-390 | 灰色烟雾             |
+  | 390-250 | 黑色烟雾             |
+  | < 250   | 起火（数秒后将爆炸） |
+  ```
+
+## 许可协议
+
+所有open.mp项目均设有[贡献者许可协议](https://cla-assistant.io/openmultiplayer/homepage)。这基本上意味着你同意让我们使用你的作品，并将其置于开源许可之下。当你首次发起拉取请求时，CLA-Assistant机器人将发布一个链接，供你签署协议。
