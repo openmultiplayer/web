@@ -5,7 +5,9 @@ description: SQLite open‑flags definities.
 ---
 
 :::note
-Gebruikt door [DB_Open](../functions/db_open).
+
+Gebruikt door [DB_Open](../functions/DB_Open_Modern) en [db_open](../functions/db_open).
+
 :::
 
 | Definitie                 | Opmerking   |

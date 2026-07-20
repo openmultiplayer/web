@@ -68,14 +68,14 @@ public OnGameModeExit()
 
 :::warning
 
-It will create a new SQLite database file, if there is no SQLite database file with the same file name available. Close your SQLite database connection with [DB_Close](DB_Close)!
+It will create a new SQLite database file, if there is no SQLite database file with the same file name available. Close your SQLite database connection with [DB_Close](DB_Close_Modern)!
 
 :::
 
 ## Related Functions
 
-- [DB_Open](DB_Open): Open a connection to an SQLite database
-- [DB_Close](DB_Close): Close the connection to an SQLite database
+- [DB_Open](DB_Open_Modern): Open a connection to an SQLite database
+- [DB_Close](DB_Close_Modern): Close the connection to an SQLite database
 - [DB_ExecuteQuery](DB_ExecuteQuery): Query an SQLite database
 - [DB_FreeResultSet](DB_FreeResultSet): Free result memory from a DB_ExecuteQuery
 - [DB_GetRowCount](DB_GetRowCount): Get the number of rows in a result

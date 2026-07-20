@@ -116,8 +116,8 @@ public OnGameModeExit()
 
 ## توابع مرتبط
 
-- [DB_Open](DB_Open): اتصال به پایگاه داده SQLite باز کنید
-- [DB_Close](DB_Close): اتصال به پایگاه داده SQLite بسته کنید
+- [DB_Open](DB_Open_Modern): اتصال به پایگاه داده SQLite باز کنید
+- [DB_Close](DB_Close_Modern): اتصال به پایگاه داده SQLite بسته کنید
 - [DB_ExecuteQuery](DB_ExecuteQuery): پایگاه داده SQLite رو کوئری کنید
 - [DB_FreeResultSet](DB_FreeResultSet): حافظه نتیجه رو از DB_ExecuteQuery آزاد کنید
 - [DB_GetRowCount](DB_GetRowCount): تعداد سطرهای یک نتیجه رو دریافت کنید

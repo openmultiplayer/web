@@ -19,8 +19,8 @@ printf("Database connection count: %d", DB_GetDatabaseConnectionCount());
 
 ## توابع مرتبط
 
-- [DB_Open](DB_Open): باز کردن اتصال به پایگاه داده SQLite
-- [DB_Close](DB_Close): بستن اتصال به پایگاه داده SQLite
+- [DB_Open](DB_Open_Modern): باز کردن اتصال به پایگاه داده SQLite
+- [DB_Close](DB_Close_Modern): بستن اتصال به پایگاه داده SQLite
 - [DB_ExecuteQuery](DB_ExecuteQuery): درخواست از پایگاه داده SQLite
 - [DB_FreeResultSet](DB_FreeResultSet): آزاد کردن حافظه نتیجه از DB_ExecuteQuery
 - [DB_GetRowCount](DB_GetRowCount): دریافت تعداد سطرها در نتیجه

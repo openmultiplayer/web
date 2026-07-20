@@ -9,11 +9,11 @@ tags: ["sqlite"]
 
 ## توضیحات
 
-این تابع memory handle مربوط به یک اتصال پایگاه داده SQLite که با [DB_Open](DB_Open) باز شده رو می‌گیره.
+این تابع memory handle مربوط به یک اتصال پایگاه داده SQLite که با [DB_Open](DB_Open_Modern) باز شده رو می‌گیره.
 
 | اسم   | توضیح                                                             |
 | ----- | ----------------------------------------------------------------- |
-| DB:db | شناسه اتصال پایگاه داده (که از [DB_Open](DB_Open) برگردونده شده). |
+| DB:db | شناسه اتصال پایگاه داده (که از [DB_Open](DB_Open_Modern) برگردونده شده). |
 
 ## مقادیر برگشتی
 
@@ -80,8 +80,8 @@ public OnGameModeExit()
 
 ## تابع‌های مرتبط
 
-- [DB_Open](DB_Open): باز کردن اتصال به پایگاه داده SQLite
-- [DB_Close](DB_Close): بستن اتصال به پایگاه داده SQLite
+- [DB_Open](DB_Open_Modern): باز کردن اتصال به پایگاه داده SQLite
+- [DB_Close](DB_Close_Modern): بستن اتصال به پایگاه داده SQLite
 - [DB_ExecuteQuery](DB_ExecuteQuery): کوئری زدن به پایگاه داده SQLite
 - [DB_FreeResultSet](DB_FreeResultSet): آزاد کردن حافظه نتیجه از DB_ExecuteQuery
 - [DB_GetRowCount](DB_GetRowCount): گرفتن تعداد ردیف‌های موجود در نتیجه

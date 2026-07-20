@@ -91,8 +91,8 @@ public OnGameModeExit()
 
 ## 相关函数
 
-- [DB_Open](DB_Open): 建立 SQLite 数据库连接
-- [DB_Close](DB_Close): 关闭 SQLite 数据库连接
+- [DB_Open](DB_Open_Modern): 建立 SQLite 数据库连接
+- [DB_Close](DB_Close_Modern): 关闭 SQLite 数据库连接
 - [DB_ExecuteQuery](DB_ExecuteQuery): 执行 SQL 查询语句
 - [DB_GetRowCount](DB_GetRowCount): 获取结果集行数
 - [DB_SelectNextRow](DB_SelectNextRow): 跳转至下一行数据

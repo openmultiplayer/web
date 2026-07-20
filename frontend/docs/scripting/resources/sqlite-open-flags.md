@@ -6,7 +6,7 @@ description: SQLite open flags definitions.
 
 :::note
 
-These flags are used by [DB_Open](../functions/DB_Open) and [db_open](../functions/db_open).
+These flags are used by [DB_Open](../functions/DB_Open_Modern) and [db_open](../functions/db_open).
 
 :::
 

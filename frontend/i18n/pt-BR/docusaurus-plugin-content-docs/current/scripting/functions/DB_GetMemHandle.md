@@ -7,11 +7,11 @@ tags: ["sqlite"]
 
 ## Descrição
 
-Obtém o handle de memória para uma conexão SQLite aberta com [DB_Open](DB_Open).
+Obtém o handle de memória para uma conexão SQLite aberta com [DB_Open](DB_Open_Modern).
 
 | Nome  | Descrição                                                         |
 | ----- | ----------------------------------------------------------------- |
-| DB:db | Índice da conexão com o banco (retornado por [DB_Open](DB_Open)). |
+| DB:db | Índice da conexão com o banco (retornado por [DB_Open](DB_Open_Modern)). |
 
 ## Retorno
 
@@ -53,8 +53,8 @@ public OnGameModeExit()
 
 ## Funções Relacionadas
 
-- [DB_Open](DB_Open): Abre conexão com banco SQLite
-- [DB_Close](DB_Close): Fecha conexão com banco SQLite
+- [DB_Open](DB_Open_Modern): Abre conexão com banco SQLite
+- [DB_Close](DB_Close_Modern): Fecha conexão com banco SQLite
 - [DB_ExecuteQuery](DB_ExecuteQuery): Executa consulta no banco
 - [DB_FreeResultSet](DB_FreeResultSet): Libera memória do resultado
 - [DB_GetRowCount](DB_GetRowCount): Obtém número de linhas do resultado

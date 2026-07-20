@@ -7,11 +7,11 @@ tags: ["sqlite"]
 
 ## Description
 
-The function gets the memory handle for a SQLite database connection that was opened with [DB_Open](DB_Open).
+The function gets the memory handle for a SQLite database connection that was opened with [DB_Open](DB_Open_Modern).
 
 | Name  | Description                                                            |
 | ----- | ---------------------------------------------------------------------- |
-| DB:db | The index of the database connection (returned by [DB_Open](DB_Open)). |
+| DB:db | The index of the database connection (returned by [DB_Open](DB_Open_Modern)). |
 
 ## Returns
 
@@ -74,8 +74,8 @@ Using an invalid handle other than zero will crash your server! Get a valid data
 
 ## Related Functions
 
-- [DB_Open](DB_Open): Open a connection to an SQLite database
-- [DB_Close](DB_Close): Close the connection to an SQLite database
+- [DB_Open](DB_Open_Modern): Open a connection to an SQLite database
+- [DB_Close](DB_Close_Modern): Close the connection to an SQLite database
 - [DB_ExecuteQuery](DB_ExecuteQuery): Query an SQLite database
 - [DB_FreeResultSet](DB_FreeResultSet): Free result memory from a DB_ExecuteQuery
 - [DB_GetRowCount](DB_GetRowCount): Get the number of rows in a result

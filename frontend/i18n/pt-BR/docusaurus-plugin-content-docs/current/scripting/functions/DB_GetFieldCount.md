@@ -155,8 +155,8 @@ Usar um handle inválido diferente de zero irá crashar o seu servidor! Obtenha 
 
 ## Funções Relacionadas
 
-- [DB_Open](DB_Open): Abre uma conexão com um banco de dados SQLite
-- [DB_Close](DB_Close): Fecha a conexão com um banco de dados SQLite
+- [DB_Open](DB_Open_Modern): Abre uma conexão com um banco de dados SQLite
+- [DB_Close](DB_Close_Modern): Fecha a conexão com um banco de dados SQLite
 - [DB_ExecuteQuery](DB_ExecuteQuery): Consulta um banco de dados SQLite
 - [DB_FreeResultSet](DB_FreeResultSet): Libera a memória do resultado de uma DB_ExecuteQuery
 - [DB_GetRowCount](DB_GetRowCount): Obtém o número de linhas em um resultado

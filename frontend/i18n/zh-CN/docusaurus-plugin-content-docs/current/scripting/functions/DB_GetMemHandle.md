@@ -7,11 +7,11 @@ tags: ["sqlite"]
 
 ## 描述
 
-此函数用于获取通过[DB_Open](DB_Open)建立的 SQLite 数据库连接的内存句柄。
+此函数用于获取通过[DB_Open](DB_Open_Modern)建立的 SQLite 数据库连接的内存句柄。
 
 | 参数  | 说明                                       |
 | ----- | ------------------------------------------ |
-| DB:db | 数据库连接句柄（由[DB_Open](DB_Open)返回） |
+| DB:db | 数据库连接句柄（由[DB_Open](DB_Open_Modern)返回） |
 
 ## 返回值
 
@@ -61,14 +61,14 @@ public OnGameModeExit()
 
 :::warning
 
-使用非法的数据库连接句柄将导致服务器崩溃！请始终通过[DB_Open](DB_Open)获取有效句柄
+使用非法的数据库连接句柄将导致服务器崩溃！请始终通过[DB_Open](DB_Open_Modern)获取有效句柄
 
 :::
 
 ## 相关函数
 
-- [DB_Open](DB_Open): 建立 SQLite 数据库连接
-- [DB_Close](DB_Close): 关闭 SQLite 数据库连接
+- [DB_Open](DB_Open_Modern): 建立 SQLite 数据库连接
+- [DB_Close](DB_Close_Modern): 关闭 SQLite 数据库连接
 - [DB_ExecuteQuery](DB_ExecuteQuery): 执行 SQL 查询语句
 - [DB_FreeResultSet](DB_FreeResultSet): 释放查询结果内存
 - [DB_GetRowCount](DB_GetRowCount): 获取结果集行数
