@@ -103,7 +103,7 @@ public OnGameModeExit()
 - [DB_GetFieldIntByName](DB_GetFieldIntByName): دریافت محتوای فیلد به صورت عدد صحیح با نام مشخص از سطر نتیجه فعلی
 - [DB_GetFieldFloat](DB_GetFieldFloat): دریافت محتوای فیلد به صورت عدد اعشاری با شناسه مشخص از سطر نتیجه فعلی
 - [DB_GetFieldFloatByName](DB_GetFieldFloatByName): دریافت محتوای فیلد به صورت عدد اعشاری با نام مشخص از سطر نتیجه فعلی
-- [DB_GetMemHandle](DB_GetMemHandle): دریافت دستگیره حافظه برای پایگاه داده SQLite که با db_open باز شده
+- [DB_GetMemHandle](DB_GetMemHandle): دریافت دستگیره حافظه برای پایگاه داده SQLite که با DB_Open باز شده
 - [DB_GetLegacyDBResult](DB_GetLegacyDBResult): دریافت دستگیره حافظه برای درخواست SQLite که با DB_ExecuteQuery اجرا شده
 - [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): این تابع تعداد اتصالات باز پایگاه داده را برای اهداف عیب یابی دریافت می کند
 - [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): این تابع تعداد نتایج باز پایگاه داده را دریافت می کند
