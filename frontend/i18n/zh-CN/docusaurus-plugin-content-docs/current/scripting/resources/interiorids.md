@@ -38,7 +38,7 @@ description: SA-MP全室内场景坐标与ID对照表
 | 室内名称     | 室内 ID | X         | Y         | Z         | 预览图                                                              |
 | ------------ | ------- | --------- | --------- | --------- | ------------------------------------------------------------------- |
 | 四龙赌场     | 10      | 2016.1156 | 1017.1541 | 996.875   | ![](https://assets.open.mp/assets/images/interiors/interior41.png)  |
-| 红砂西区赌场 | 12      | 1000.6797 | 1133.35   | -7.8462   | ![](https://assets.open.mp/assets/images/interiors/interior62.png)  |
+| 红砂西区赌场 | 12      | 1133.2007 | -15.7586  | 1000.3251 | ![](https://assets.open.mp/assets/images/interiors/interior62.png)  |
 | 卡利古拉赌场 | 1       | 2233.9363 | 1711.8038 | 1011.6312 | ![](https://assets.open.mp/assets/images/interiors/interior48.png)  |
 | 卡利古拉屋顶 | 1       | 2268.5156 | 1647.7682 | 1084.2344 | ![](https://assets.open.mp/assets/images/interiors/interior131.png) |
 

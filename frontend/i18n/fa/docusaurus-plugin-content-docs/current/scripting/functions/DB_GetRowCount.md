@@ -59,8 +59,8 @@ DB_FreeResultSet(db_result);
 
 ## تابع‌های مرتبط
 
-- [DB_Open](DB_Open): باز کردن اتصال به پایگاه داده SQLite
-- [DB_Close](DB_Close): بستن اتصال به پایگاه داده SQLite
+- [DB_Open](DB_Open_Modern): باز کردن اتصال به پایگاه داده SQLite
+- [DB_Close](DB_Close_Modern): بستن اتصال به پایگاه داده SQLite
 - [DB_ExecuteQuery](DB_ExecuteQuery): کوئری زدن به پایگاه داده SQLite
 - [DB_FreeResultSet](DB_FreeResultSet): آزاد کردن حافظه نتیجه از DB_ExecuteQuery
 - [DB_SelectNextRow](DB_SelectNextRow): رفتن به ردیف بعدی

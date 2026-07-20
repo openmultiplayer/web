@@ -80,8 +80,8 @@ public OnGameModeExit()
 
 ## funções relacionadas
 
-- [DB_Open](DB_Open): Abrir conexão com uma base de dados SQLite
-- [DB_Close](DB_Close): Fechar a conexão com uma base de dados SQLite
+- [DB_Open](DB_Open_Modern): Abrir conexão com uma base de dados SQLite
+- [DB_Close](DB_Close_Modern): Fechar a conexão com uma base de dados SQLite
 - [DB_ExecuteQuery](DB_ExecuteQuery): Executar uma consulta SQL
 - [DB_FreeResultSet](DB_FreeResultSet): Libertar memória do resultado
 - [DB_GetRowCount](DB_GetRowCount): Obter número de linhas do resultado

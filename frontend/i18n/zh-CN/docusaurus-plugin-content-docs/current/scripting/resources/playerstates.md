@@ -22,4 +22,4 @@ tags: ["玩家"]
 | 6   | PLAYER_STATE_ENTER_VEHICLE_PASSENGER | 玩家正以乘客身份进入车辆（主要用于内部处理）   |
 | 7   | PLAYER_STATE_WASTED                  | 玩家处于死亡状态或角色选择界面                 |
 | 8   | PLAYER_STATE_SPAWNED                 | 玩家已重生                                     |
-| 9   | PLAYER_STATE_SPECTATING              | 玩家处于旁观者模式                             |
+| 9   | PLAYER_STATE_SPECTATING              | 玩家处于观战模式                               |

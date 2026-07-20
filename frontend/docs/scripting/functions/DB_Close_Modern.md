@@ -7,11 +7,11 @@ tags: ["sqlite"]
 
 ## Description
 
-Closes a SQLite database connection that was opened with [DB_Open](DB_Open).
+Closes a SQLite database connection that was opened with [DB_Open](DB_Open_Modern).
 
 | Name  | Description                                                                      |
 | ----- | -------------------------------------------------------------------------------- |
-| DB:db | The handle of the database connection to close (returned by [DB_Open](DB_Open)). |
+| DB:db | The handle of the database connection to close (returned by [DB_Open](DB_Open_Modern)). |
 
 ## Returns
 
@@ -69,14 +69,14 @@ public OnGameModeExit()
 
 :::warning
 
-Using an invalid handle other than zero will crash your server! Get a valid database connection handle by using [DB_Open](DB_Open).
+Using an invalid handle other than zero will crash your server! Get a valid database connection handle by using [DB_Open](DB_Open_Modern).
 
 :::
 
 ## Related Functions
 
-- [DB_Open](DB_Open): Open a connection to an SQLite database
-- [DB_Close](DB_Close): Close the connection to an SQLite database
+- [DB_Open](DB_Open_Modern): Open a connection to an SQLite database
+- [DB_Close](DB_Close_Modern): Close the connection to an SQLite database
 - [DB_ExecuteQuery](DB_ExecuteQuery): Query an SQLite database
 - [DB_FreeResultSet](DB_FreeResultSet): Free result memory from a DB_ExecuteQuery
 - [DB_GetRowCount](DB_GetRowCount): Get the number of rows in a result

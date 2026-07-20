@@ -25,8 +25,8 @@ printf("当前数据库结果集数量: %d", DB_GetDatabaseResultSetCount());
 
 ## 相关函数
 
-- [DB_Open](DB_Open): 建立 SQLite 数据库连接
-- [DB_Close](DB_Close): 关闭 SQLite 数据库连接
+- [DB_Open](DB_Open_Modern): 建立 SQLite 数据库连接
+- [DB_Close](DB_Close_Modern): 关闭 SQLite 数据库连接
 - [DB_ExecuteQuery](DB_ExecuteQuery): 执行 SQL 查询语句
 - [DB_FreeResultSet](DB_FreeResultSet): 释放查询结果集内存
 - [DB_GetRowCount](DB_GetRowCount): 获取结果集行数
@@ -39,7 +39,7 @@ printf("当前数据库结果集数量: %d", DB_GetDatabaseResultSetCount());
 - [DB_GetFieldIntByName](DB_GetFieldIntByName): 通过字段名称获取整型数据
 - [DB_GetFieldFloat](DB_GetFieldFloat): 通过字段索引获取浮点数据
 - [DB_GetFieldFloatByName](DB_GetFieldFloatByName): 通过字段名称获取浮点数据
-- [DB_GetMemHandle](DB_GetMemHandle): 获取数据库连接内存句柄
-- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): 获取传统查询结果内存句柄
+- [DB_GetMemHandle](DB_GetMemHandle): 获取通过 DB_Open 打开的 SQLite 数据库的内存句柄
+- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): 获取通过 DB_ExecuteQuery 执行的 SQLite 查询结果的内存句柄
 - [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): 调试用-获取数据库连接数
 - [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): 调试用-获取结果集数量

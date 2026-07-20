@@ -7,11 +7,11 @@ tags: ["sqlite"]
 
 ## 描述
 
-此函数用于获取通过[DB_Open](DB_Open)建立的 SQLite 数据库连接的内存句柄。
+此函数用于获取通过[DB_Open](DB_Open_Modern)建立的 SQLite 数据库连接的内存句柄。
 
-| 参数  | 说明                                       |
-| ----- | ------------------------------------------ |
-| DB:db | 数据库连接句柄（由[DB_Open](DB_Open)返回） |
+| 参数  | 说明                                              |
+| ----- | ------------------------------------------------- |
+| DB:db | 数据库连接句柄（由[DB_Open](DB_Open_Modern)返回） |
 
 ## 返回值
 
@@ -61,16 +61,16 @@ public OnGameModeExit()
 
 :::warning
 
-使用非法的数据库连接句柄将导致服务器崩溃！请始终通过[DB_Open](DB_Open)获取有效句柄
+使用非法的数据库连接句柄将导致服务器崩溃！请始终通过[DB_Open](DB_Open_Modern)获取有效句柄
 
 :::
 
 ## 相关函数
 
-- [DB_Open](DB_Open): 建立 SQLite 数据库连接
-- [DB_Close](DB_Close): 关闭 SQLite 数据库连接
+- [DB_Open](DB_Open_Modern): 建立 SQLite 数据库连接
+- [DB_Close](DB_Close_Modern): 关闭 SQLite 数据库连接
 - [DB_ExecuteQuery](DB_ExecuteQuery): 执行 SQL 查询语句
-- [DB_FreeResultSet](DB_FreeResultSet): 释放查询结果内存
+- [DB_FreeResultSet](DB_FreeResultSet): 释放查询结果集内存
 - [DB_GetRowCount](DB_GetRowCount): 获取结果集行数
 - [DB_SelectNextRow](DB_SelectNextRow): 跳转至下一行数据
 - [DB_GetFieldCount](DB_GetFieldCount): 获取结果集字段数量
@@ -81,6 +81,6 @@ public OnGameModeExit()
 - [DB_GetFieldIntByName](DB_GetFieldIntByName): 通过名称获取整型数据
 - [DB_GetFieldFloat](DB_GetFieldFloat): 通过索引获取浮点数据
 - [DB_GetFieldFloatByName](DB_GetFieldFloatByName): 通过名称获取浮点数据
-- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): 获取传统查询结果句柄
+- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): 获取通过 DB_ExecuteQuery 执行的 SQLite 查询结果的内存句柄
 - [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): 调试用-获取数据库连接数
 - [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): 调试用-获取结果集数量

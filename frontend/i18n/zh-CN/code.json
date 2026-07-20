@@ -68,6 +68,16 @@
   "partners.note": {
     "message": "注：如约暂停合作伙伴计划。已预定席位的服务器仍可加入，但目前不接受新申请。如有疑问欢迎通过Discord咨询，但若涉及新加入方式，我们暂无相关计划。"
   },
+  "partners.note.title": {
+    "message": "合作伙伴计划"
+  },
+  "partners.note.dismiss": {
+    "message": "关闭通知"
+  },
+  "partners.note.dismissAria": {
+    "message": "关闭合作伙伴通知",
+    "description": "关闭合作伙伴通知的无障碍标签"
+  },
   "announcement.title": {
     "message": "新版open.mp服务器与启动器现已发布！"
   },
@@ -381,5 +391,285 @@
   },
   "navbar.item.Donate": {
     "message": "捐赠"
+  },
+  "uid.page.title": {
+    "message": "UID 生成器",
+    "description": "UID 生成器页面标题"
+  },
+  "uid.page.description": {
+    "message": "生成用于 IComponent 或 IExtension 唯一标识符的 UID",
+    "description": "UID 生成器页面描述"
+  },
+  "uid.heading": {
+    "message": "组件 UID 生成器",
+    "description": "UID 生成器页面主标题"
+  },
+  "uid.instructions.intro": {
+    "message": "将下方的 {provideUid} 宏复制到你的新组件中，替换掉默认的 UID 提供者宏。每个组件必须拥有唯一的 UID，因此 {uidInitials} 中的 {uniqueLetter} ({uniqueIdentifier}) 必须修改。默认的 {provideUid} 是无效的且无法编译，旨在防止从模板创建新组件时出现重复。",
+    "description": "UID 生成器说明，解释如何使用生成的宏"
+  },
+  "uid.instructions.findPlaceholder": {
+    "message": "找到这个占位符：",
+    "description": "展示占位符宏之前的 UID 生成器说明"
+  },
+  "uid.instructions.replaceWith": {
+    "message": "并替换为：",
+    "description": "展示生成的替换宏之前的 UID 生成器说明"
+  },
+  "uid.instructions.existingComponent": {
+    "message": "如果你正在修改现有组件，请记得同时替换现有的 UID，那将是一个有效值，而非占位符。",
+    "description": "针对修改现有组件的 UID 生成器提示"
+  },
+  "lowercaseNote.name.function": {
+    "message": "函数",
+    "description": "小写名称警告中的默认项名称"
+  },
+  "lowercaseNote.message": {
+    "message": "此 {name} 以小写字母开头。",
+    "description": "在脚本文档页面显示的警告，针对名称以小写字母开头的 API"
+  },
+  "npcCallbacksTip.message": {
+    "message": "此回调也可能由 NPC 调用。",
+    "description": "在回调文档页面显示的提示，说明 NPC 也可以调用该回调"
+  },
+  "toast.close": {
+    "message": "关闭通知",
+    "description": "关闭 Toast 通知的无障碍标签"
+  },
+  "servers.add.successMessage": {
+    "message": "{serverName} 已添加到我们的待审核列表中。如果最多 48 小时后仍未显示，你可以到 Discord 联系我们！",
+    "description": "提交服务器到待审核列表后显示的 Toast 消息"
+  },
+  "servers.add.successTitle": {
+    "message": "服务器已提交！",
+    "description": "服务器提交成功后的 Toast 标题"
+  },
+  "servers.add.failureMessage": {
+    "message": "状态码 {status}：{error}",
+    "description": "服务器提交失败后的 Toast 消息"
+  },
+  "servers.add.failureTitle": {
+    "message": "提交失败！",
+    "description": "服务器提交失败后的 Toast 标题"
+  },
+  "servers.add.errorMessage": {
+    "message": "提交服务器时发生错误",
+    "description": "发生意外的服务器提交错误时显示的 Toast 消息"
+  },
+  "servers.add.errorTitle": {
+    "message": "错误",
+    "description": "通用的 Toast 错误标题"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "IP / 域名",
+    "description": "添加服务器地址输入框的占位符"
+  },
+  "servers.add.submit": {
+    "message": "添加",
+    "description": "添加服务器的提交按钮"
+  },
+  "servers.add.openModal": {
+    "message": "添加服务器",
+    "description": "打开添加服务器模态框的按钮"
+  },
+  "servers.filter.showEmpty": {
+    "message": "显示空服务器",
+    "description": "显示空服务器的复选框标签"
+  },
+  "servers.filter.showOmpOnly": {
+    "message": "仅显示 open.mp 服务器",
+    "description": "仅显示 open.mp 服务器的复选框标签"
+  },
+  "servers.filter.showPartnersOnly": {
+    "message": "仅显示合作伙伴",
+    "description": "仅显示合作伙伴服务器的复选框标签"
+  },
+  "servers.add.modalTitle": {
+    "message": "添加服务器",
+    "description": "添加服务器模态框的标题"
+  },
+  "servers.add.closeModal": {
+    "message": "关闭添加服务器模态框",
+    "description": "关闭添加服务器模态框的无障碍标签"
+  },
+  "servers.add.addressLabel": {
+    "message": "IP 或域名",
+    "description": "添加服务器地址字段的标签"
+  },
+  "servers.add.addressHelp": {
+    "message": "IP 地址格式必须为 {format}",
+    "description": "解释所需服务器地址格式的帮助文本"
+  },
+  "servers.page.title": {
+    "message": "服务器列表",
+    "description": "服务器页面标题"
+  },
+  "servers.page.description": {
+    "message": "使用 open.mp 和 SA-MP 的圣安地列斯服务器列表",
+    "description": "服务器页面描述"
+  },
+  "partners.page.title": {
+    "message": "合作伙伴服务器",
+    "description": "合作伙伴服务器页面标题"
+  },
+  "partners.page.description": {
+    "message": "使用 open.mp 或 SA-MP 的圣安地列斯服务器列表",
+    "description": "合作伙伴服务器页面描述"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "下载 open.mp 启动器版本",
+    "description": "启动器下载页面的 Meta 描述"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "下载 open.mp 服务器端版本",
+    "description": "服务器下载页面的 Meta 描述"
+  },
+  "downloads.release.githubTitle": {
+    "message": "在 GitHub 查看发布版",
+    "description": "GitHub 发布链接的 Title 属性"
+  },
+  "animations.layoutTitle": {
+    "message": "动画库",
+    "description": "动画页面的浏览器标题"
+  },
+  "animations.layoutDescription": {
+    "message": "open.mp (SA-MP) 的交互式动画查看器，支持视频预览",
+    "description": "动画页面的 Meta 描述"
+  },
+  "animations.videoUnavailable": {
+    "message": "视频不可用",
+    "description": "动画视频加载失败时的回退消息"
+  },
+  "animations.code.forPlayers": {
+    "message": "// 适用于玩家",
+    "description": "玩家动画用法示例中的注释"
+  },
+  "animations.code.forActors": {
+    "message": "// 适用于演员",
+    "description": "演员动画用法示例中的注释"
+  },
+  "homepage.social.discord": {
+    "message": "Discord 图标",
+    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+  },
+  "homepage.social.facebook": {
+    "message": "Facebook 图标",
+    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+  },
+  "homepage.social.instagram": {
+    "message": "Instagram 图标",
+    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+  },
+  "homepage.social.twitch": {
+    "message": "Twitch 图标",
+    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+  },
+  "homepage.social.x": {
+    "message": "X (原 Twitter) 图标",
+    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+  },
+  "homepage.social.youtube": {
+    "message": "YouTube 图标",
+    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+  },
+  "announcement.dismissAria": {
+    "message": "关闭公告",
+    "description": "关闭首页公告的无障碍标签"
+  },
+  "homepage.downloadLauncherTitle": {
+    "message": "下载 open.mp 启动器",
+    "description": "启动器下载按钮的 Title 属性"
+  },
+  "homepage.downloadServerTitle": {
+    "message": "open.mp 现已发布！",
+    "description": "服务器下载按钮的 Title 属性"
+  },
+  "homepage.layoutDescription": {
+    "message": "为《侠盗猎车手：圣安地列斯》打造的全新多人联机模组，与{samp}实现{compatibility}。",
+    "description": "首页 Meta 描述"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "已复制",
+    "description": "UID复制成功提示标题"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "宏UID已复制到剪贴板。",
+    "description": "UID复制成功提示消息"
+  },
+  "uid.instructions.panelIntro": {
+    "message": "在从模板创建新组件时使用此功能。默认占位符{provideUid}故意无效，以便每个组件获得自己的{uidInitials}({uniqueIdentifier})。",
+    "description": "UID生成器面板说明"
+  },
+  "uid.copy": {
+    "message": "复制宏",
+    "description": "复制生成的UID宏按钮"
+  },
+  "uid.regenerate": {
+    "message": "重新生成",
+    "description": "重新生成UID按钮"
+  },
+  "serverInfo.copy": {
+    "message": "复制",
+    "description": "复制服务器地址状态"
+  },
+  "serverInfo.copied": {
+    "message": "已复制",
+    "description": "已复制服务器地址状态"
+  },
+  "servers.filter.showPassworded": {
+    "message": "有密码",
+    "description": "显示有密码服务器的复选框标签"
+  },
+  "servers.sort.name": {
+    "message": "名称",
+    "description": "按服务器名称排序"
+  },
+  "servers.sort.mode": {
+    "message": "模式",
+    "description": "按游戏模式排序"
+  },
+  "servers.sort.language": {
+    "message": "语言",
+    "description": "按语言排序"
+  },
+  "servers.language.all": {
+    "message": "所有语言",
+    "description": "所有语言筛选选项"
+  },
+  "servers.page.heading": {
+    "message": "服务器",
+    "description": "服务器页面主标题"
+  },
+  "servers.page.subtitle": {
+    "message": "浏览活跃的SA-MP和open.mp服务器。",
+    "description": "服务器页面副标题"
+  },
+  "partners.page.heading": {
+    "message": "合作服务器",
+    "description": "合作服务器页面主标题"
+  },
+  "partners.page.subtitle": {
+    "message": "浏览官方合作服务器。",
+    "description": "合作服务器页面副标题"
+  },
+  "notFound.title": {
+    "message": "页面未找到",
+    "description": "404页面标题"
+  },
+  "notFound.imageAlt": {
+    "message": "GTA火车任务截图",
+    "description": "404页面图片替代文本"
+  },
+  "notFound.home": {
+    "message": "首页",
+    "description": "404页面首页按钮"
+  },
+  "notFound.docs": {
+    "message": "文档",
+    "description": "404页面文档按钮"
+  },
+  "notFound.servers": {
+    "message": "服务器",
+    "description": "404页面服务器按钮"
   }
 }

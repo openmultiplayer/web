@@ -155,8 +155,8 @@ public OnGameModeExit()
 
 ## فانکشن‌های مرتبط
 
-- [DB_Open](DB_Open): اتصال به پایگاه داده SQLite را باز می‌کند
-- [DB_Close](DB_Close): اتصال به پایگاه داده SQLite را می‌بندد
+- [DB_Open](DB_Open_Modern): اتصال به پایگاه داده SQLite را باز می‌کند
+- [DB_Close](DB_Close_Modern): اتصال به پایگاه داده SQLite را می‌بندد
 - [DB_ExecuteQuery](DB_ExecuteQuery): کوئری روی پایگاه داده SQLite اجرا می‌کند
 - [DB_FreeResultSet](DB_FreeResultSet): حافظه نتیجه از DB_ExecuteQuery را آزاد می‌کند
 - [DB_GetRowCount](DB_GetRowCount): تعداد ردیف‌ها در نتیجه را دریافت می‌کند
@@ -169,7 +169,7 @@ public OnGameModeExit()
 - [DB_GetFieldIntByName](DB_GetFieldIntByName): محتوای فیلد به عنوان عدد صحیح با نام مشخص از ردیف فعلی را دریافت می‌کند
 - [DB_GetFieldFloat](DB_GetFieldFloat): محتوای فیلد به عنوان عدد اعشاری با ID مشخص از ردیف فعلی را دریافت می‌کند
 - [DB_GetFieldFloatByName](DB_GetFieldFloatByName): محتوای فیلد به عنوان عدد اعشاری با نام مشخص از ردیف فعلی را دریافت می‌کند
-- [DB_GetMemHandle](DB_GetMemHandle): هندل حافظه برای پایگاه داده SQLite که با db_open باز شده را دریافت می‌کند
+- [DB_GetMemHandle](DB_GetMemHandle): هندل حافظه برای پایگاه داده SQLite که با DB_Open باز شده را دریافت می‌کند
 - [DB_GetLegacyDBResult](DB_GetLegacyDBResult): هندل حافظه برای کوئری SQLite که با DB_ExecuteQuery اجرا شده را دریافت می‌کند
 - [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): تعداد اتصالات باز پایگاه داده را برای اهداف دیباگ دریافت می‌کند
 - [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): تعداد نتایج باز پایگاه داده را دریافت می‌کند

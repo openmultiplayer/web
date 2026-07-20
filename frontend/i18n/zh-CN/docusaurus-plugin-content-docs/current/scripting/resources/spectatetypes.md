@@ -1,13 +1,13 @@
 ---
-title: 旁观类型
-sidebar_label: 旁观类型
-description: GetPlayerSpectateType使用的旁观类型
+title: 观战类型
+sidebar_label: 观战类型
+description: GetPlayerSpectateType使用的观战类型
 tags: []
 ---
 
 :::info
 
-[GetPlayerSpectateType](../functions/GetPlayerSpectateType) 函数使用的旁观类型
+[GetPlayerSpectateType](../functions/GetPlayerSpectateType) 函数使用的观战类型
 
 :::
 

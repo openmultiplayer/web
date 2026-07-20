@@ -7,7 +7,7 @@ description: "SQLite definições de sinalizadores abertos."
 
 :::note
 
-Esses sinalizadores são usados por [DB_Open](../functions/db_open).
+Esses sinalizadores são usados por [DB_Open](../functions/DB_Open_Modern) e [db_open](../functions/db_open).
 
 :::
 
