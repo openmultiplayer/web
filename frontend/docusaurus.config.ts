@@ -115,8 +115,9 @@ const config: Config = {
 
           // Add the dynamic server detail route.
           addRoute({
-            path: "/servers/:serverAddress",
-            component: "@site/src/pages/servers/index.tsx",
+            path: "/servers/",
+            component: "@site/src/pages/servers/index",
+            exact: false,
           });
         },
       };
