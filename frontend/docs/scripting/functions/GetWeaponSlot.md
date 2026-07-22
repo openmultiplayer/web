@@ -5,7 +5,7 @@ description: Gets the slot of one weapon.
 tags: ["weapon"]
 ---
 
-<versionWarn version='omp v1.1.0.2612' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## Description
 

@@ -112,13 +112,17 @@ const config: Config = {
         name: "server-routes-plugin",
         async contentLoaded({ actions }) {
           const { addRoute } = actions;
+          const { i18n: { locales, defaultLocale } } = context;
 
           // Add the dynamic server detail route.
-          addRoute({
-            path: "/servers/",
-            component: "@site/src/pages/servers/index",
-            exact: false,
-          });
+          locales.forEach((locale) => {            
+            const prefix = locale === defaultLocale ? '' : `/${locale}`;
+            addRoute({
+              path: `${prefix}/servers/`,
+              component: "@site/src/pages/servers/index",
+              exact: false,
+            });
+          })
         },
       };
     },

@@ -5,7 +5,7 @@ description: اسلات یه اسلحه رو دریافت می‌کنه.
 tags: ["weapon"]
 ---
 
-<versionWarn version='omp v1.1.0.2612' />
+<VersionWarn version='omp v1.1.0.2612' />
 
 ## توضیحات
 

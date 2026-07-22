@@ -20,7 +20,7 @@ import { default as Translate, translate } from "@docusaurus/Translate";
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 
 const getServerAddressFromPathname = (pathname: string) => {
-  const match = pathname.match(/^\/servers\/(.+)$/);
+  const match = pathname.match(/\/servers\/(.+)$/);
 
   if (!match) {
     return undefined;
