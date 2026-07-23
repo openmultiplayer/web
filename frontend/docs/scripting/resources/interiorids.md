@@ -167,8 +167,8 @@ and you'll see the ID of the interior universe. Now you can safely use [SetPlaye
 | Interior           | Interior ID | X        | Y        | Z         | Picture                                                             |
 | ------------------ | ----------- | -------- | -------- | --------- | ------------------------------------------------------------------- |
 | Ganton Gym         | 5           | 770.8033 | -0.7033  | 1000.7267 | ![](https://assets.open.mp/assets/images/interiors/interior1.png)   |
-| Cobra Gym          | 3           | 773.8887 | -47.7698 | 1000.5859 | ![](https://assets.open.mp/assets/images/interiors/interior29.png)  |
-| Below The Belt Gym | 1           | 773.7318 | -74.6957 | 1000.6542 | ![](https://assets.open.mp/assets/images/interiors/interior109.png) |
+| Cobra Gym          | 6           | 773.8887 | -47.7698 | 1000.5859 | ![](https://assets.open.mp/assets/images/interiors/interior29.png)  |
+| Below The Belt Gym | 7           | 773.7318 | -74.6957 | 1000.6542 | ![](https://assets.open.mp/assets/images/interiors/interior109.png) |
 
 ## Clubs, Brothels
 
