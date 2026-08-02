@@ -241,44 +241,44 @@ const config: Config = {
       attributes: {},
       innerHTML: `
 (function() {
-  var locales = ["en","es","ru","ar","bs","de","fil","fr","fa","hu","id","it","nl","pl","pt-BR","ro","sl","sr","ta","th","tr","uk","vi","zh-CN","zh-TW"];
-  var path = window.location.pathname;
-  var firstSegment = path.split("/")[1];
+    var locales = ["en","es","ru","ar","bs","de","fil","fr","fa","hu","id","it","nl","pl","pt-BR","ro","sl","sr","ta","th","tr","uk","vi","zh-CN","zh-TW"];
+    var path = window.location.pathname;
+    var firstSegment = path.split("/")[1];
+    
+    if(locales.indexOf(firstSegment) !== -1) {
+        localStorage.setItem("omp-locale", firstSegment);
+        return;
+    }
 
-  if(locales.indexOf(firstSegment) !== -1) {
-    localStorage.setItem("omp-locale", firstSegment);
-    return;
-  }
+    var saved = localStorage.getItem("omp-locale");
 
-  localStorage.setItem("omp-locale", "en");
+    if(saved && saved !== "en") {
+        window.location.replace("/" + saved + path + window.location.search + window.location.hash);
+        return;
+    }
 
-  var saved = localStorage.getItem("omp-locale");
-  if(saved && saved !== "en") {
-    window.location.replace("/" + saved + path + window.location.search + window.location.hash);
-    return;
-  }
-  if(saved === "en") return;
+    if(saved === "en") return;
 
-  var navLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+    var navLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
 
-  var map = {
-    "pt": "pt-BR", "pt-br": "pt-BR",
-    "zh": "zh-CN", "zh-cn": "zh-CN", "zh-tw": "zh-TW",
-    "zh-hans": "zh-CN", "zh-hant": "zh-TW"
-  };
+    var map = {
+        "pt": "pt-BR", "pt-br": "pt-BR",
+        "zh": "zh-CN", "zh-cn": "zh-CN", "zh-tw": "zh-TW",
+        "zh-hans": "zh-CN", "zh-hant": "zh-TW"
+    };
 
-  var target = map[navLang] || navLang;
+    var target = map[navLang] || navLang;
 
-  if(locales.indexOf(target) === -1 && navLang.indexOf("-") !== -1) {
-    target = navLang.split("-")[0];
-  }
-
-  if (locales.indexOf(target) !== -1 && target !== "en") {
-    localStorage.setItem("omp-locale", target);
-    window.location.replace("/" + target + path + window.location.search + window.location.hash);
-  } else {
-    localStorage.setItem("omp-locale", "en");
-  }
+    if(locales.indexOf(target) === -1 && navLang.indexOf("-") !== -1) {
+        target = navLang.split("-")[0];
+    }
+    
+    if(locales.indexOf(target) !== -1 && target !== "en") {
+        localStorage.setItem("omp-locale", target);
+        window.location.replace("/" + target + path + window.location.search + window.location.hash);
+    } else {
+        localStorage.setItem("omp-locale", "en");
+    }
 })();
       `,
     },
