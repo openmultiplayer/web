@@ -253,7 +253,7 @@ const config: Config = {
     var saved = localStorage.getItem("omp-locale");
 
     if(saved && saved !== "en") {
-        window.location.replace("/" + saved + path + window.location.search + window.location.hash);
+        window.location.href = "/" + saved + path + window.location.search + window.location.hash;
         return;
     }
 
@@ -275,7 +275,7 @@ const config: Config = {
     
     if(locales.indexOf(target) !== -1 && target !== "en") {
         localStorage.setItem("omp-locale", target);
-        window.location.replace("/" + target + path + window.location.search + window.location.hash);
+        window.location.href = "/" + target + path + window.location.search + window.location.hash;
     } else {
         localStorage.setItem("omp-locale", "en");
     }
