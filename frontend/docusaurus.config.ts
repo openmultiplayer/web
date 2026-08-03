@@ -253,7 +253,7 @@ const config: Config = {
     var saved = localStorage.getItem("omp-locale");
 
     if(saved && saved !== "en") {
-        window.location.href = "/" + saved + path + window.location.search + window.location.hash;
+        localStorage.setItem("omp-locale", "en");
         return;
     }
 
