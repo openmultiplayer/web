@@ -11,11 +11,14 @@ tags: ["console"]
 
 Prints a string to the server console (not in-game chat) and logs (log.txt).
 
-| Name                  | Description                   |
-| --------------------- | ----------------------------- | ----------------------------- |
-| const string[]        | The string to print.          |
-| <!--                  | foreground (optional)         | The foreground colour to use. |
-| background (optional) | The background colour to use. | -->                           |
+| Name           | Description          |
+| -------------- | -------------------- |
+| const string[] | The string to print. |
+
+<!--
+| foreground (optional) | The foreground colour to use. |
+| background (optional) | The background colour to use. |
+-->
 
 ## Returns
 

@@ -21,7 +21,6 @@ Primijeni animaciju igraču.
 | freeze     | Postavljanjem ovo na 1 će zalediti aktora nakon što se animacija zavšri. 0 neće.                                                                                                                                                                                                                                               |
 | time       | Tajmer u milisekundama. Za animaciju koja se neprestano ponavlja je 0.                                                                                                                                                                                                                                                         |
 | forcesync  | Postavite na 1 da server sinkronizira animaciju sa svim ostalim igračima u streaming radijusu (opcionalno). 2 radi isto kao i 1, ali SAMO će primijeniti animaciju na reproducirane igrače, ali NE i na stvarnog igrača kojem je animacija primijenjena (korisno za npc animacije i trajne animacije kada se igrači učitavaju) |
-|            |
 
 ## Returns
 
