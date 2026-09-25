@@ -42,12 +42,12 @@ Usado por funções como [NPC_Move](../functions/NPC_Move), [NPC_MoveByPath](../
 
 Usado por funções de movimento para controlar a velocidade NPC.
 
-| Valor | Constante | Descrição |
-| --------- | --------------------- | -------------------------------------- |
-| -1.0 | NPC_MOVE_SPEED_AUTO | Velocidade automática baseada no tipo de movimento |
-| 0.1552086 | NPC_MOVE_SPEED_WALK | Velocidade de caminhada |
-// Use uma velocidade de corrida específica
-| 0.926784 | NPC_MOVE_SPEED_SPRINT | Velocidade de corrida |
+| Valor     | Constante             | Descrição                                          |
+| --------- | --------------------- | -------------------------------------------------- |
+| -1.0      | NPC_MOVE_SPEED_AUTO   | Velocidade automática baseada no tipo de movimento |
+| 0.1552086 | NPC_MOVE_SPEED_WALK   | Velocidade de caminhada                            |
+| 0.56444   | NPC_MOVE_SPEED_JOG    | Velocidade de trote                                |
+| 0.926784  | NPC_MOVE_SPEED_SPRINT | Velocidade de corrida                              |
 
 ## Sinalizadores de verificação de entidade
 

@@ -15,10 +15,9 @@ Ova funkcija započinje malim slovom.
 
 Provjerava postoji li određena datoteka u direktoriju skripti datoteka.
 
-| Ime         | Deskripcija                                           |
-| ----------- | ----------------------------------------------------- |
-| pattern[]   | Ime datoteke, koja po izboru sadrži zamjenske znakove |
-| characters. |
+| Ime       | Deskripcija                                                       |
+| --------- | ----------------------------------------------------------------- |
+| pattern[] | Ime datoteke, koja po izboru sadrži zamjenske znakove characters. |
 
 ## Returns
 

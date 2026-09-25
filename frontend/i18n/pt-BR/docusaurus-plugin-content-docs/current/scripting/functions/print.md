@@ -12,11 +12,14 @@ tags: ["console"]
 
 Imprime uma string no console do servidor (não no chat do jogo) e nos logs (log.txt).
 
-| Nome | Descrição |
-| --------------------- | ----------------------------- | ----------------------------- |
-| const string[] | A string a ser impressa.          |
-| <!-- | primeiro plano (opcional) | A cor de primeiro plano a ser usada. |
-| background (optional) | A cor de fundo a ser usada. | --> |
+| Nome           | Descrição                |
+| -------------- | ------------------------ |
+| const string[] | A string a ser impressa. |
+
+<!--
+| primeiro plano (opcional) | A cor de primeiro plano a ser usada. |
+| background (optional) | A cor de fundo a ser usada. |
+-->
 
 ## Retornos
 

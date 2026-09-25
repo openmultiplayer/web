@@ -12,10 +12,10 @@ tags: ["player"]
 
 Obtenha a cor do **crachá** e do **ponto de radar** de outro jogador.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------------------------- | --- |
-| playerid | O jogador que pode ver a cor alterada do ícone/nome do jogador |     |
-| targetid | O jogador cuja cor foi alterada.                        |
+| Nome     | Descrição                                                      |
+| -------- | -------------------------------------------------------------- |
+| playerid | O jogador que pode ver a cor alterada do ícone/nome do jogador |
+| targetid | O jogador cuja cor foi alterada.                               |
 
 ## Retornos
 

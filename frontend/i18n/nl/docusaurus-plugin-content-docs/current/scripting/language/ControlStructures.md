@@ -74,21 +74,21 @@ if (0 < idx < 5)
 
 De volgende symbolen kun je gebruiken in vergelijkingen, met hun uitleg. Sommige zijn al in voorbeelden gebruikt.
 
-| Operator | Betekenis                                                           | Gebruik                          |
-| -------- | ------------------------------------------------------------------- | -------------------------------- | --- | --------- | --- | -------- |
-| ==       | Links is gelijk aan Rechts                                          | if (Links == Rechts)             |
-| !=       | Links is niet gelijk aan Rechts                                     | if (Links != Rechts)             |
-| >        | Links is groter dan Rechts                                          | if (Links > Rechts)              |
-| >=       | Links is groter dan of gelijk aan Rechts                            | if (Links >= Rechts)             |
-| \<       | Links is kleiner dan Rechts                                         | if (Links \< Rechts)             |
-| \<=      | Links is kleiner dan of gelijk aan Rechts                           | if (Links \<= Rechts)            |
-| &&       | en                                                                  | if (Links && Rechts)             |
-|          |                                                                     |                                  | of  | if (Links |     | Rechts)  |
-| !        | niet                                                                | if (!Variabele)                  |
-|          | nor                                                                 | if (!(Links                      |     | Rechts))  |
-|          | nand                                                                | if (!(Links && Rechts))          |
-|          | exclusieve of (xor, eor) - slechts één is waar, niet beide          | if (!(Links && Rechts) && (Links |     | Rechts))  |
-|          | niet-exclusieve of (nxor, neor) - beide of geen van beide zijn waar | if ((Links && Rechts)            |     | !(Links   |     | Rechts)) |
+| Operator     | Betekenis                                                           | Gebruik                                                          |
+| ------------ | ------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| ==           | Links is gelijk aan Rechts                                          | if (Links == Rechts)                                             |
+| !=           | Links is niet gelijk aan Rechts                                     | if (Links != Rechts)                                             |
+| >            | Links is groter dan Rechts                                          | if (Links > Rechts)                                              |
+| >=           | Links is groter dan of gelijk aan Rechts                            | if (Links >= Rechts)                                             |
+| \<           | Links is kleiner dan Rechts                                         | if (Links \< Rechts)                                             |
+| \<=          | Links is kleiner dan of gelijk aan Rechts                           | if (Links \<= Rechts)                                            |
+| &&           | en                                                                  | if (Links && Rechts)                                             |
+| &#124;&#124; | of                                                                  | if (Links &#124;&#124; Rechts)                                   |
+| !            | niet                                                                | if (!Variabele)                                                  |
+|              | nor                                                                 | if (!(Links &#124;&#124; Rechts))                                |
+|              | nand                                                                | if (!(Links && Rechts))                                          |
+|              | exclusieve of (xor, eor) - slechts één is waar, niet beide          | if (!(Links && Rechts) && (Links &#124;&#124; Rechts))           |
+|              | niet-exclusieve of (nxor, neor) - beide of geen van beide zijn waar | if ((Links && Rechts) &#124;&#124; !(Links &#124;&#124; Rechts)) |
 
 ### Haakjes
 

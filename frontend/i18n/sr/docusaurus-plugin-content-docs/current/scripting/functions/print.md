@@ -11,11 +11,14 @@ tags: ["console"]
 
 Штампа стринг у конзолу сервера (не у игри чету) и у логове (log.txt).
 
-| Име                   | Опис                          |
-| --------------------- | ----------------------------- | ----------------------------- |
-| const string[]        | Стринг који се штампа.        |
-| <!--                  | foreground (optional)         | The foreground colour to use. |
-| background (optional) | The background colour to use. | -->                           |
+| Име            | Опис                   |
+| -------------- | ---------------------- |
+| const string[] | Стринг који се штампа. |
+
+<!--
+| foreground (optional) | The foreground colour to use. |
+| background (optional) | The background colour to use. |
+-->
 
 ## Враћа
 

@@ -15,10 +15,9 @@ This function starts with lowercase letter.
 
 Checks if a specific file exists in the scriptfiles directory.
 
-| Name        | Description                                            |
-| ----------- | ------------------------------------------------------ |
-| pattern[]   | The name of the file, optionally containing wild-cards |
-| characters. |
+| Name      | Description                                                        |
+| --------- | ------------------------------------------------------------------ |
+| pattern[] | The name of the file, optionally containing wild-cards characters. |
 
 ## ส่งคืน
 
