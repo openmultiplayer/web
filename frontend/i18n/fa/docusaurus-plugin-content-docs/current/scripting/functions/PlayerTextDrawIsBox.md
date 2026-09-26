@@ -47,7 +47,7 @@ public OnPlayerConnect(playerid)
 
 ## توابع مرتبط
 
-- [PlayerTextDrawCreate](PlayerTextDrawCreate): ایجاد یک textdraw بازیکن.
+- [CreatePlayerTextDraw](CreatePlayerTextDraw): ایجاد یک textdraw بازیکن.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): حذف یک textdraw بازیکن.
 - [PlayerTextDrawUseBox](PlayerTextDrawUseBox): تغییر وضعیت جعبه روی یک textdraw بازیکن.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): تنظیم رنگ جعبه یک textdraw بازیکن.

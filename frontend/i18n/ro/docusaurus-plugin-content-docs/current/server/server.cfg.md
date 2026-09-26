@@ -15,7 +15,7 @@ description: Server configuration file.
 | ------------- | ------ | -------------------------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | echo          | string | Executing Server Config... | Yes       | No   | What samp-server.exe prints in the server console when executing server.cfg. There is no need to change this at all as you'll be the only one who sees the console.                                                                                          |
 | rcon_password | string | changeme                   | No        | No   | The password used to administrate the server and use the remote console (rcon). You must make sure to change this to something hard to crack so that others cannot take control of your server. Your server will NOT start if changeme is the RCON password! |
-| rcon          | bool   | 1                          | No        | No   | Toggles if the [Remote Console](remoteconsole) feature should be used. Set to 1 to enable or 0 to disable.                                                                                                                                                   |
+| rcon          | bool   | 1                          | No        | No   | Toggles if the [Remote Console](RemoteConsole) feature should be used. Set to 1 to enable or 0 to disable.                                                                                                                                                   |
 
 ## Scripts
 

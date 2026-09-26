@@ -72,6 +72,6 @@ Esta função está desabilitada por padrão para economizar largura de banda. U
 ## Funções Relacionadas
 
 - [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): Obtenha o ID do jogador que um jogador está olhando.
-- [GetPlayerCameraTargetObject](GetplayerCameraTargetObject): Obtenha o ID do objeto que um jogador está olhando.
+- [GetPlayerCameraTargetObject](GetPlayerCameraTargetObject): Obtenha o ID do objeto que um jogador está olhando.
 - [EnablePlayerCameraTarget](EnablePlayerCameraTarget): Habilita funções de direcionamento da câmera do jogador.
-- [GetPlayerCameraFrontVector](GetPlayercameraFrontVector): Coloque a câmera do jogador na frente
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Coloque a câmera do jogador na frente

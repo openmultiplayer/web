@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetPlayerWeaponData](GetPlayerWeaponData): Obtenha a arma e a munição no slot de arma de um jogador específico (por exemplo, a arma no slot 'SMG').
 - [GetPlayerAmmo](GetPlayerAmmo): Obtém a quantidade de munição na arma atual de um jogador.
 - [SetPlayerArmedWeapon](SetPlayerArmedWeapon): Define qual arma (que o jogador já possui) o jogador está segurando.
-- [ResetPlayerWeapon](ResetPlayerWeapons): Remove todas as armas de um jogador.
+- [ResetPlayerWeapons](ResetPlayerWeapons): Remove todas as armas de um jogador.
 - [RemovePlayerWeapon](RemovePlayerWeapon): Remove uma arma específica de um jogador.
 
 ## Recursos relacionados

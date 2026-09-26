@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 :::warning
 
-این تابع فقط می‌تونه در [OnGameModeInit](OnGameModeInit) استفاده بشه. برای زمان‌های دیگه، [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer) رو ببین.
+این تابع فقط می‌تونه در [OnGameModeInit](../callbacks/OnGameModeInit) استفاده بشه. برای زمان‌های دیگه، [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer) رو ببین.
 
 :::
 

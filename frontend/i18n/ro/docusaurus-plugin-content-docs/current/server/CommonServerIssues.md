@@ -63,7 +63,7 @@ Avertisment: Prea multe mesaje ieșite din comandă de la player <ip>: <port> (<
 
 Se întâmplă atunci când `mesaje în afara comenzii` reutilizează setarea mesaj-limită.
 
-Pentru mai multe informații despre acest lucru, consultați [aici](https://open.mp/docs/server/ControllingServer#rcon-commands)
+Pentru mai multe informații despre acest lucru, consultați [aici](ControllingServer#comenzi-rcon)
 
 ## Jucatori primesc constant "Unacceptable NickName" dar numele acestora este valid
 

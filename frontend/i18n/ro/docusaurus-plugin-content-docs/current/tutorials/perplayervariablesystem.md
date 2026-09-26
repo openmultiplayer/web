@@ -42,7 +42,7 @@ Funcțiile pentru setarea și recuperarea variabilelor playerului sunt:
 - [GetPVarString](../scripting/functions/GetPVarString) Obțineți șirul stabilit anterior de la o variabilă de jucător.
 - [SetPVarFloat](../scripting/functions/SetPVarFloat) Setați un float pentru o variabilă de jucător.
 - [GetPVarFloat](../scripting/functions/GetPVarFloat) Obțineți floatul setat anterior de la o variabilă de jucător.
-- [DeletePVar](../scripting/functions/GetPVarFloat) Ștergeți o variabilă de jucător.
+- [DeletePVar](../scripting/functions/DeletePVar) Ștergeți o variabilă de jucător.
 
 ```c
 #define PLAYER_VARTYPE_NONE   (0)

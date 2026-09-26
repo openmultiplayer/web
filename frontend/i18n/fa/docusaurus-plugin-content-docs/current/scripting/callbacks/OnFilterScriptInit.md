@@ -31,7 +31,7 @@ public OnFilterScriptInit()
 
 کالبک های زیر ممکن است مفید باشند، زیرا به نحوی با این کالبک مرتبط هستند.
 
-- [OnFilterSciptExit](OnFilterScriptExit): این کالبک زمانی فرا خوانده می‌شود که یک فیلتر اسکریپت unload شود.
+- [OnFilterScriptExit](OnFilterScriptExit): این کالبک زمانی فرا خوانده می‌شود که یک فیلتر اسکریپت unload شود.
 - [OnGameModeInit](OnGameModeInit): این کالبک زمانی فرا خوانده می‌شود که یک gamemode شروع شود.
 - [OnGameModeExit](OnGameModeExit): این کالبک زمانی فرا خوانده می‌شود که یک gamemode تمام شود.
 

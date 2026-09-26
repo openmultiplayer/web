@@ -59,7 +59,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::tip
 
-Some functions might not work correctly when used in this callback because the player is already disconnected when the callback is called. This means that you can't get unambiguous information from functions like [GetPlayerIp](GetPlayerIp) and [GetPlayerPos](GetPlayerPos).
+Some functions might not work correctly when used in this callback because the player is already disconnected when the callback is called. This means that you can't get unambiguous information from functions like [GetPlayerIp](../functions/GetPlayerIp) and [GetPlayerPos](../functions/GetPlayerPos).
 
 This issue is solved in open.mp server.
 

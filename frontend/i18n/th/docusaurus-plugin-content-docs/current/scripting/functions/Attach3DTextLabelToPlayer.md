@@ -42,4 +42,4 @@ public OnPlayerConnect(playerid)
 - [Update3DTextLabelText](Update3DTextLabelText): Change the text of a 3D text label.
 - [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Create A 3D text label for one player.
 - [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Delete a player's 3D text label.
-- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabel): Change the text of a player's 3D text label.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Change the text of a player's 3D text label.

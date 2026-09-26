@@ -56,7 +56,7 @@ Deze functie wordt niet aangeroepen als de actor onkwetsbaar is ingesteld (WAT S
 ## Gerelateerde Callbacks
 
 - [OnActorStreamOut](OnActorStreamOut): Deze callback wordt aangeroepen wanneer een actor wordt uitgestreamd door de client van een speler.
-- [OnActorStreamIn](OnActorStreamOut): Deze callback wordt aangeroepen wanneer een actor wordt gestreamd door de client van een speler.
+- [OnActorStreamIn](OnActorStreamIn): Deze callback wordt aangeroepen wanneer een actor wordt gestreamd door de client van een speler.
 
 ## Gerelateerde Functies
 

@@ -61,7 +61,7 @@ Warning: Too many out-of-order messages
 
 Ocurre cuando los 'mensajes fuera de orden' reutilizan la configuración de límite de hueco de mensajes.
 
-Para obtener más información al respecto, consulta [este enlace](https://open.mp/docs/server/ControllingServer#rcon-commands).
+Para obtener más información al respecto, consulta [este enlace](ControllingServer#rcon-commands).
 
 ## Jugadores reciben constantemente el error de "Nombre de usuario inaceptable" aunque sea válido
 

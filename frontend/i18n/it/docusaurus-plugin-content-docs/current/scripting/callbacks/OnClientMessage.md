@@ -9,7 +9,7 @@ tags: ["client", "npc"]
 
 ## Descrizione
 
-Questo callback viene chiamato ogni volta che l'NPC riceve un `ClientMessage`. Ciò accade ogni volta che viene utilizzata la funzione [SendClientMessageToAll](SendClientMessageToAll) e ogni volta che una funzione [SendClientMessage](SendClientMessage) viene inviata ad un NPC. Questo callback non viene chiamato quando qualcuno scrive qualcosa in chat.
+Questo callback viene chiamato ogni volta che l'NPC riceve un `ClientMessage`. Ciò accade ogni volta che viene utilizzata la funzione [SendClientMessageToAll](../functions/SendClientMessageToAll) e ogni volta che una funzione [SendClientMessage](../functions/SendClientMessage) viene inviata ad un NPC. Questo callback non viene chiamato quando qualcuno scrive qualcosa in chat.
 
 | Nome     | Descrizione                    |
 | :------- | :----------------------------- |

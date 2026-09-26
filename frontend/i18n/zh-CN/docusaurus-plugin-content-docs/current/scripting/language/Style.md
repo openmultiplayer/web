@@ -21,7 +21,7 @@ description: "关于Pawn源码通用命名规范及其他代码风格要素的�
 a = b + c;
 ```
 
-这是由变量赋值操作组成的语句，其右侧使用了[#表达式]。
+这是由变量赋值操作组成的语句，其右侧使用了[表达式](#表达式expression)。
 
 ```c
 SetPlayerColor(playerid, 0xFF4700FF);
@@ -33,7 +33,7 @@ SetPlayerColor(playerid, 0xFF4700FF);
 x + 8
 ```
 
-这并非语句，因其结果未被使用，仅构成一个[#表达式]。
+这并非语句，因其结果未被使用，仅构成一个[表达式](#表达式expression)。
 
 ### 复合语句（Compound Statement）
 

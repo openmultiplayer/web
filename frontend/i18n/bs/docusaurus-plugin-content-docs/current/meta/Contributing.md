@@ -14,7 +14,7 @@ Na svakoj stranici nalazi se dugme koje vas dovodi na GitHub stranicu za uređiv
 
 ![Uredi ovu stranicu](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-Naprimjer, ukoliko kliknete ovo dugme na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) odvesti će vas na [ovu stranicu](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) koji vam nudi uređivač teksta kako biste mogli napraviti promjene u fajlu (pod pretpostavkom da ste prijavljeni na vaš GitHub račun).
+Naprimjer, ukoliko kliknete ovo dugme na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) odvesti će vas na [ovu stranicu](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md) koji vam nudi uređivač teksta kako biste mogli napraviti promjene u fajlu (pod pretpostavkom da ste prijavljeni na vaš GitHub račun).
 
 Uredi ga i postavi "Pull Request", to znači da će Wiki održavatelji i ostali članovi zajednice pregledati vašu izmjenu, diskutovati o tome da li su potrebne dodatne izmjene i onda primjeniti Vaše izmjene.
 

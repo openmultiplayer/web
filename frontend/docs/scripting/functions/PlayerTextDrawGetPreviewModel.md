@@ -43,7 +43,7 @@ public OnPlayerConnect(playerid)
 
 ## Related Functions
 
-- [PlayerTextDrawCreate](PlayerTextDrawCreate): Create a player-textdraw.
+- [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
 - [PlayerTextDrawSetPreviewModel](PlayerTextDrawSetPreviewModel): Sets a player textdraw 3D preview sprite of a specified model ID.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.

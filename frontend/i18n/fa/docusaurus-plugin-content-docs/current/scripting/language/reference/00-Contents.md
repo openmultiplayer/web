@@ -69,9 +69,9 @@ Eerste Industriestraat 19–21, 1401VL Bussum The Netherlands (Pays Bas)
 
 [ضمائم](Appendices) - صفحه 148-183
 
-∟ [پیام‌های خطا و هشدار](Appendices#error-and-warning-messages) - صفحه 148-168
+∟ [پیام‌های خطا و هشدار](Appendices#پیامهای-خطا-و-هشدار) - صفحه 148-168
 
-∟ [کامپایلر](Appendices#the-compiler) - صفحه 168-174
+∟ [کامپایلر](Appendices#کامپایلر) - صفحه 168-174
 
 ∟ [منطق](Appendices#rationale) - صفحه 174-181
 

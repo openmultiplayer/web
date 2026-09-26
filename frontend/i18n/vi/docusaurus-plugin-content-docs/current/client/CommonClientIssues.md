@@ -50,7 +50,7 @@ Nếu bạn có 2 màn hình thì có 3 cách để giải quyết:
 
 ### Chuột của tôi không hoạt động sau khi thoát khỏi menu tạm dừng
 
-Nếu chuột của bạn dường như bị đóng băng trong game trong khi nó (một phần) hoạt động trong menu tạm dừng, bạn nên tắt tùy chọn đa lõi [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") (đặt thành 0). Nhấn liên tục phím Escape cho đến khi chuột phản hồi trở lại cũng có thể hoạt động, nhưng đây không phải là giải pháp hoàn hảo.
+Nếu chuột của bạn dường như bị đóng băng trong game trong khi nó (một phần) hoạt động trong menu tạm dừng, bạn nên tắt tùy chọn đa lõi [sa-mp.cfg](sa-mp.cfg "sa-mp.cfg") (đặt thành 0). Nhấn liên tục phím Escape cho đến khi chuột phản hồi trở lại cũng có thể hoạt động, nhưng đây không phải là giải pháp hoàn hảo.
 
 ### Tệp dinput8.dll bị thiếu
 

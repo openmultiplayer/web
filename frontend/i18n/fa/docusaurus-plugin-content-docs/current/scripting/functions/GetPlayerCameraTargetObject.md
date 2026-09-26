@@ -59,6 +59,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## تابع‌های مرتبط
 
-- [GetPlayerCameraTargetVehicle](GetplayerCameraTargetVehicle): شناسه وسیله نقلیه‌ای که بازیکن به آن نگاه می‌کند را دریافت کنید.
-- [GetPlayerCameraTargetPlayer](GetplayerCameraTargetPlayer): شناسه بازیکنی که یک بازیکن به آن نگاه می‌کند را دریافت کنید.
+- [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): شناسه وسیله نقلیه‌ای که بازیکن به آن نگاه می‌کند را دریافت کنید.
+- [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): شناسه بازیکنی که یک بازیکن به آن نگاه می‌کند را دریافت کنید.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): بردار جلویی دوربین بازیکن را دریافت کنید

@@ -37,7 +37,7 @@ public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
 
 - ​**\t**​ 添加制表符（增加间距）
 - ​**\n**​ 创建新行
-- [颜色嵌入](colorslist#color-embedding)效果在换行后依然持续
+- [颜色嵌入](colorslist#颜色嵌入)效果在换行后依然持续
 
 :::
 
@@ -74,7 +74,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 - ​**\t**​ 添加制表符（增加间距）
 - ​**\n**​ 创建新行
-- [颜色嵌入](colorslist#color-embedding)效果在换行后依然持续
+- [颜色嵌入](colorslist#颜色嵌入)效果在换行后依然持续
 
 :::
 
@@ -111,7 +111,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 - ​**\t**​ 添加制表符（增加间距）
 - ​**\n**​ 创建新行
-- [颜色嵌入](colorslist#color-embedding)效果在制表符后依然持续
+- [颜色嵌入](colorslist#颜色嵌入)效果在制表符后依然持续
 
 :::
 
@@ -196,7 +196,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 - ​**\t**​ 创建新列
 - ​**\n**​ 创建新行
-- [颜色嵌入](colorslist#color-embedding)效果在换行/制表后重置
+- [颜色嵌入](colorslist#颜色嵌入)效果在换行/制表后重置
 - 首行内容作为表头显示
 
 :::
@@ -242,7 +242,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 - ​**\t**​ 创建新列
 - ​**\n**​ 创建新行
-- [颜色嵌入](colorslist#color-embedding)效果在换行/制表后重置
+- [颜色嵌入](colorslist#颜色嵌入)效果在换行/制表后重置
 - 首行内容作为固定表头显示
 
 :::

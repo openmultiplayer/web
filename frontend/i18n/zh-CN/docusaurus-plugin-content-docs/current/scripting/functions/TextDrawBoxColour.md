@@ -58,6 +58,6 @@ public OnGameModeInit()
 - [TextDrawUseBox](TextDrawUseBox): 控制文本绘图方框的显示开关
 - [TextDrawSetString](TextDrawSetString): 修改现有文本绘图的文字内容
 - [TextDrawShowForPlayer](TextDrawShowForPlayer): 向指定玩家显示文本绘图
-- [TextDrawShowForPlayer](TextDrawHideForPlayer): 对指定玩家隐藏文本绘图
+- [TextDrawHideForPlayer](TextDrawHideForPlayer): 对指定玩家隐藏文本绘图
 - [TextDrawShowForAll](TextDrawShowForAll): 向所有在线玩家显示文本绘图
 - [TextDrawHideForAll](TextDrawHideForAll): 全局隐藏指定文本绘图

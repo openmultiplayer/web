@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-当在[OnPlayerDisconnect](OnPlayerDisconnect)回调中使用时，若玩家正常退出可能返回不准确数据。通常在玩家被踢出或超时的情况下数据准确
+当在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)回调中使用时，若玩家正常退出可能返回不准确数据。通常在玩家被踢出或超时的情况下数据准确
 
 :::
 

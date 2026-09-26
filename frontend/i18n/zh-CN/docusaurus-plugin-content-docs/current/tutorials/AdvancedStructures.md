@@ -285,21 +285,21 @@ List_Remove(slot)
 假设我们有一个有序数组，希望找到数字 7 的位置（若存在）。在此例中，直接遍历数组可能更为高效，但这不是重点。直接搜索的时间随数组大小线性增长，而二分搜索的时间则随数组大小呈对数增长。例如，一个 128 大小的数组直接搜索所需时间是 64 大小数组的两倍，而二分搜索仅需多一次比较。
 
 若从上述数据构建二叉树，结果如下：  
-![Binarytree](https://sampwiki.blast.hk/wiki/Image:Binarytree.GIF)
+![Binarytree](https://sampwiki.blast.hk/wroot/images2/f/fe/Binarytree.GIF)
 
 从左到右阅读，忽略垂直结构，可见数字按顺序排列。现在，我们尝试找到 7。
 
 起始数字为 14，7 小于 14，因此向左移动到 6。7 大于 6，因此向右移动到 9，再向左移动到 7。此过程共进行了 4 次比较（包括最后的确认），而直接搜索则需要 5 次。
 
 假设数组中没有 7，二叉树将如下所示：  
-![Binarytree-7-less](https://sampwiki.blast.hk/wiki/Image:Binarytree-7-less.GIF)
+![Binarytree-7-less](https://sampwiki.blast.hk/wroot/images2/e/e5/Binarytree-7-less.GIF)
 
 与上例不同，此树有一个单子节点（9），以及 2 和 0 子节点。只有当数组大小为(2^n)-1（如 0, 1, 3, 7, 15, 31 等）时，才能构建完美的二叉树。在此例中，当到达 9 时，发现没有左分支，这意味着 7 不存在（它不可能在树的其他位置），因此返回-1 表示无效槽位。
 
 #### 平衡与不平衡
 
 上例中的树称为平衡二叉树，即尽可能使所有分支长度相同（尽管在第二个例子中因数字不足而无法完全实现）。构建平衡树并非易事，通常采用随机插入数字的方法来构建近似平衡的树。例如，以下是一个不平衡的二叉树：  
-![Binarytree-uneven](https://sampwiki.blast.hk/wiki/Image:Binarytree-uneven.GIF)
+![Binarytree-uneven](https://sampwiki.blast.hk/wroot/images2/a/a2/Binarytree-uneven.GIF)
 
 显然，此树仍然有效，但右侧分支比左侧长得多。然而，在此树中查找 25 仅需 7 次比较，而直接搜索则需要 12 次。此外，只要从中间数字开始插入，随机插入方法通常能生成较为平衡的树。最糟糕的情况是按顺序插入数字，这将导致没有左分支（或右分支），但即使如此，二叉树的搜索时间也不会比直接搜索更长。
 

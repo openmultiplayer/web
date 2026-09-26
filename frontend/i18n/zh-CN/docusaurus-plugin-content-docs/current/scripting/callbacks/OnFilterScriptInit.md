@@ -25,6 +25,6 @@ public OnFilterScriptInit()
 
 以下回调可能与当前回调存在关联：
 
-- [OnFilterSciptExit](OnFilterScriptExit)：当滤镜脚本卸载时触发
+- [OnFilterScriptExit](OnFilterScriptExit)：当滤镜脚本卸载时触发
 - [OnGameModeInit](OnGameModeInit)：当游戏模式启动时触发
 - [OnGameModeExit](OnGameModeExit)：当游戏模式结束时触发

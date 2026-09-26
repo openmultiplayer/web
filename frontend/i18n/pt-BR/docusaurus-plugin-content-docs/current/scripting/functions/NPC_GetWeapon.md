@@ -52,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_SetWeapon](NPC_SetWeapon): Definir arma NPC
 - [NPC_GetAmmo](NPC_GetAmmo): Obtenha munição NPC
 - [NPC_SetAmmo](NPC_SetAmmo): Conjunto de munição NPC
-- [NPC_RemoveWeapon](NPC_RemoveWeapon): Remover arma NPC
 
 ## Callbacks Relacionadas
 

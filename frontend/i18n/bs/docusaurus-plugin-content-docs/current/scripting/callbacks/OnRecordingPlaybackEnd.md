@@ -20,5 +20,5 @@ public OnRecordingPlaybackEnd()
 
 ## Related Functions
 
-- [StartRecordingPlayback](StartRecordingPlayback): Počinje da reproducita već snimljeni .rec fajl.
-- [StopRecordingPlayback](StopRecordingPlayback): Prestaje da reproducira .rec fajl.
+- [StartRecordingPlayback](../functions/StartRecordingPlayback): Počinje da reproducita već snimljeni .rec fajl.
+- [StopRecordingPlayback](../functions/StopRecordingPlayback): Prestaje da reproducira .rec fajl.

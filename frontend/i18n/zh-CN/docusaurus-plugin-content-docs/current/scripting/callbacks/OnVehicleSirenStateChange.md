@@ -58,4 +58,4 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## 相关资源
 
-- [车辆参数类型](../resources/vehicleparams)
+- [车辆参数类型](../functions/SetVehicleParamsEx)

@@ -120,7 +120,7 @@ include های مورد نیاز (مثلاً `sscanf2.inc`، `streamer.inc`) ر�
 
 ## گام 9
 
-فایل **[config.json](https://www.open.mp/docs/server/config.json)** را با Notepad یا IDE های دیگر باز کنید
+فایل **[config.json](config.json)** را با Notepad یا IDE های دیگر باز کنید
 
 ![](<https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(9).png>)
 

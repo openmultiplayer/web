@@ -33,4 +33,4 @@ public OnGameModeInit()
 
 - [OnGameModeExit](OnGameModeExit): This callback is called when a gamemode ends.
 - [OnFilterScriptInit](OnFilterScriptInit): This callback is called when a filterscript is loaded.
-- [OnFilterSciptExit](OnFilterScriptExit): This callback is called when a filterscript is unloaded.
+- [OnFilterScriptExit](OnFilterScriptExit): This callback is called when a filterscript is unloaded.

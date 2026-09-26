@@ -51,7 +51,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Funções Relacionadas
 
 - [NPC_EnableReloading](NPC_EnableReloading): Habilitar/desabilitar recarregamento
-- [NPC_Reload](NPC_Reload): Força NPC a recarregar
 - [NPC_GetAmmoInClip](NPC_GetAmmoInClip): Obtenha munição no clipe
 - [NPC_GetWeaponReloadTime](NPC_GetWeaponReloadTime): Obtenha o tempo de recarga
 

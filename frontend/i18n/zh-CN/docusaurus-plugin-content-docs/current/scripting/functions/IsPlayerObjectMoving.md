@@ -50,7 +50,7 @@ public OnPlayerConnect(playerid)
 - [SetPlayerObjectRot](SetPlayerObjectRot): 设置玩家物体旋转角度
 - [GetPlayerObjectPos](GetPlayerObjectPos): 获取玩家物体坐标
 - [GetPlayerObjectRot](GetPlayerObjectRot): 获取玩家物体旋转角度
-- [AttachPlayerObjectToPlayer](AttachObjectToPlayer): 将玩家物体附加至玩家
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): 将玩家物体附加至玩家
 - [CreateObject](CreateObject): 创建物体
 - [DestroyObject](DestroyObject): 销毁物体
 - [IsValidObject](IsValidObject): 验证物体有效性

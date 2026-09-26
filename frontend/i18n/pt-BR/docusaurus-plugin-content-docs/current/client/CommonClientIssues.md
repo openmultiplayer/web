@@ -52,7 +52,7 @@ Se você usa 2 monitores, então há 3 maneiras de resolver isso:
 
 ### Meu mouse não funciona após sair do menu de pausa
 
-Você deve desativar a opção multicore do [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") (coloque em 0).
+Você deve desativar a opção multicore do [sa-mp.cfg](sa-mp.cfg "sa-mp.cfg") (coloque em 0).
 
 ### O arquivo dinput8.dll está faltando
 

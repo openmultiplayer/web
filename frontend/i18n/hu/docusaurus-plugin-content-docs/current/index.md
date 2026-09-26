@@ -10,7 +10,7 @@ Sajnos a SA-MP wiki 2019 szeptember végén egy időre elérhetetlenné vált, m
 
 Szükségünk van a közösség segítségére, hogy a régi wiki tartalmát új otthonába hozzuk át, ide!
 
-Ha érdekel, nézd meg ezt az [oldal](/docs/translations/hu/meta/Contributing)t további információkért.
+Ha érdekel, nézd meg ezt az [oldal](/docs/meta/Contributing)t további információkért.
 
 Ha még nem vagy jártas a GitHub használatában vagy a HTML konvertálásában, ne aggódj!
 Úgy is segíthetsz, ha csak tájékoztatsz minket a kérdésekről (a [Discord](https://discord.com/invite/samp)on, a [Fórum](https://forum.open.mp/)on vagy a közösségi médián keresztül) és a legfontosabb dologról: a szó terjesztéséről!

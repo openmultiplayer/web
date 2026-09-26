@@ -1,6 +1,6 @@
 ---
-title: NPC_GetSurfingOffset
-sidebar_label: NPC_GetSurfingOffset
+title: NPC_GetSurfingOffsets
+sidebar_label: NPC_GetSurfingOffsets
 description: Gets the surfing offset for an NPC.
 tags: ["npc", "surfing"]
 ---
@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
         new Float:offsetX, Float:offsetY, Float:offsetZ;
-        NPC_GetSurfingOffset(npcid, offsetX, offsetY, offsetZ);
+        NPC_GetSurfingOffsets(npcid, offsetX, offsetY, offsetZ);
 
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d surfing offset: X=%.2f, Y=%.2f, Z=%.2f", npcid, offsetX, offsetY, offsetZ);
         return 1;
@@ -53,7 +53,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [NPC_SetSurfingOffset](NPC_SetSurfingOffset): Sets the surfing offset for an NPC
+- [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): Sets the surfing offset for an NPC
 - [NPC_GetSurfingObject](NPC_GetSurfingObject): Gets the object an NPC is surfing on
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): Gets the vehicle an NPC is surfing on
 - [NPC_GetSurfingPlayerObject](NPC_GetSurfingPlayerObject): Gets the player object an NPC is surfing on

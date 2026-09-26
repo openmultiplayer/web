@@ -34,5 +34,5 @@ uuencode(encodedString, normalString, 45);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- Uudecode: Decode an UU-encoded stream.
-- Memcpy: Copy bytes from one location to another.
+- [uudecode](uudecode): Decode an UU-encoded stream.
+- [memcpy](memcpy): Copy bytes from one location to another.

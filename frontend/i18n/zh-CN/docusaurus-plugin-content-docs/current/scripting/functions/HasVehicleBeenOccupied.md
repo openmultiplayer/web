@@ -42,4 +42,3 @@ else
 
 - [SetVehicleBeenOccupied](SetVehicleBeenOccupied): 标记车辆的占用状态
 - [GetVehicleOccupiedTick](GetVehicleOccupiedTick): 获取车辆最后被占用的时间戳
-- [ResetVehicleOccupiedStatus](ResetVehicleOccupiedStatus): 重置车辆的占用记录

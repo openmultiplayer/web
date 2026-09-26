@@ -12,7 +12,7 @@ description: วิธีการมีส่วนร่วมกับเอ�
 
 ![มีลิงค์อยู่ในแต่ละหน้า Wiki เขียนว่า Edit this page](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-ยกตัวอย่างเช่น คลิกไปที่ [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) มันจะพาคุณไป [หน้านี้](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) ซึ่งจะแสดงเครื่องมือในการแก้ไขข้อความเพื่อทำการเปลี่ยนแปลง ไฟล์ (สมมติหาก คุณเข้าสู่ระบบ Github)
+ยกตัวอย่างเช่น คลิกไปที่ [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) มันจะพาคุณไป [หน้านี้](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md) ซึ่งจะแสดงเครื่องมือในการแก้ไขข้อความเพื่อทำการเปลี่ยนแปลง ไฟล์ (สมมติหาก คุณเข้าสู่ระบบ Github)
 
 ทำการแก้ไขในส่วนของคุณและส่ง "Pull Request" ซึ่งหมายถึงผู้ดูแล Wiki และ สมาชิกคอมมูนิตี้คนอื่น ๆ สามารถตรวจสอบการเปลี่ยนแปลงของคุณ และพูดคุยกันว่ามันจำเป็น หรือไม่กับการเปลี่ยนแปลงนี้แล้วรวมเข้าด้วยกัน
 

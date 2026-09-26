@@ -3,7 +3,7 @@ Seja você um iniciante ou apenas queira atualizar seus conhecimentos, este guia
 
 :::warning
 
-Se você está usando o servidor SA:MP e ainda não converteu para open.mp, **[por favor pare aqui e leia este guia primeiro.](https://www.open.mp/docs/server/Installation)**
+Se você está usando o servidor SA:MP e ainda não converteu para open.mp, **[por favor pare aqui e leia este guia primeiro.](Installation)**
 
 :::
 

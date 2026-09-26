@@ -52,6 +52,6 @@ Ez az oldal az elérhető összes festőmunkát tartalmazza. Minden festőmunka 
 ## Kapcsolódó funkciók
 
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Megváltoztatja a jármű festőmunkáját.
-- [ChangeVehicleColor](ChangeVehicleColor): Beállítja a jármű színét.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Beállítja a jármű színét.
 
 - [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): Visszahívja, ha a jármű festőmunkája megváltozik.

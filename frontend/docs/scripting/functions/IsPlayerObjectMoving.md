@@ -48,7 +48,7 @@ public OnPlayerConnect(playerid)
 - [SetPlayerObjectRot](SetPlayerObjectRot): Set the rotation of a player object.
 - [GetPlayerObjectPos](GetPlayerObjectPos): Locate a player object.
 - [GetPlayerObjectRot](GetPlayerObjectRot): Check the rotation of a player object.
-- [AttachPlayerObjectToPlayer](AttachObjectToPlayer): Attach a player object to a player.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Attach a player object to a player.
 - [CreateObject](CreateObject): Create an object.
 - [DestroyObject](DestroyObject): Destroy an object.
 - [IsValidObject](IsValidObject): Checks if a certain object is vaild.

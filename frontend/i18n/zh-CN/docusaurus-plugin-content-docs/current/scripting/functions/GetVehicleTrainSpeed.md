@@ -28,4 +28,3 @@ new Float:speed = GetVehicleTrainSpeed(vehicleid);
 ## 相关函数
 
 - [GetPlayerTrainSpeed](GetPlayerTrainSpeed): 获取玩家当前驾驶的列车速度
-- [SetVehicleTrainSpeed](SetVehicleTrainSpeed): 设置轨道列车的运行速度

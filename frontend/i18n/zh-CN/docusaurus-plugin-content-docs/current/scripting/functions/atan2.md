@@ -44,9 +44,9 @@ public OnGameModeInit()
 
 ## 相关函数
 
-- [floatsin](正弦): 获取指定角度的正弦值
-- [floatcos](余弦): 获取指定角度的余弦值
-- [floattan](正切): 获取指定角度的正切值
-- [asin](反正弦): 计算反正弦角度值
-- [acos](反余弦): 计算反余弦角度值
-- [atan](反正切): 计算单值反正切角度值
+- [floatsin](floatsin): 获取指定角度的正弦值
+- [floatcos](floatcos): 获取指定角度的余弦值
+- [floattan](floattan): 获取指定角度的正切值
+- [asin](asin): 计算反正弦角度值
+- [acos](acos): 计算反余弦角度值
+- [atan](atan): 计算单值反正切角度值

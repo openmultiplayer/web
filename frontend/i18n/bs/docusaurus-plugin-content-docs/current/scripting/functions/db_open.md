@@ -79,7 +79,7 @@ Stvorit će novu datoteku baze podataka SQLite, ako ne postoji datoteka baze pod
 
 ## Srodne Funkcije
 
-- [db_close](b_close): Zatvori konekciju do SQLite databaze.
+- [db_close](db_close): Zatvori konekciju do SQLite databaze.
 - [db_query](db_query): Upitajte SQLite bazu podataka.
 - [db_free_result](db_free_result): Oslobodite memoriju rezultata iz db_query.
 - [db_num_rows](db_num_rows): Dobijte broj redaka u rezultatu.

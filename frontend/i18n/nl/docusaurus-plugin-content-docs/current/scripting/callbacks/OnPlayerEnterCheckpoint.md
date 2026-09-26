@@ -49,7 +49,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Maak een checkpoint voor een speler.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Schakel de huidige checkpoint uit.
-- [IsPlayerInCheckpoint](../functions/IsPlayerInRaceCheckpoint): Check of een speler in een checkpoint staat.
+- [IsPlayerInCheckpoint](../functions/IsPlayerInCheckpoint): Check of een speler in een checkpoint staat.
 - [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint): Maak een race-checkpoint.
 - [DisablePlayerRaceCheckpoint](../functions/DisablePlayerRaceCheckpoint): Schakel de huidige race-checkpoint uit.
 - [IsPlayerInRaceCheckpoint](../functions/IsPlayerInRaceCheckpoint): Check of een speler in een race-checkpoint staat.

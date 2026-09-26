@@ -66,7 +66,7 @@ authors: y_less
 
 [https://github.com/openmultiplayer/compiler](https://github.com/openmultiplayer/compiler)
 
-[https://pawn-lang/compiler](https://pawn-lang/compiler)
+[https://github.com/pawn-lang/compiler](https://github.com/pawn-lang/compiler)
 
 qawno 的文档：
 

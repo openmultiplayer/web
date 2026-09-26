@@ -12,7 +12,7 @@ Dans le cas où vous souhaitez vous voulez participer à la traduction du wiki, 
 
 ### Ajouter du contenu via le navigateur
 
-En parcourant le [Github « docs »](https://github.com/openmultiplayer/web/tree/master/docs) de open.MP, vous aurez un bouton "Add file"
+En parcourant le [Github « docs »](https://github.com/openmultiplayer/web/tree/master/frontend/docs) de open.MP, vous aurez un bouton "Add file"
 
 ![Add file button](https://assets.open.mp/assets/images/contributing/add-new-file.png)
 

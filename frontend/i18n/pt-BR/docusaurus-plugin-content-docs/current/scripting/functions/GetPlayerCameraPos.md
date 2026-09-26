@@ -46,6 +46,6 @@ As posições da câmera do jogador são atualizadas apenas uma vez por segundo,
 - [SetPlayerCameraPos](SetPlayerCameraPos): Defina a posição da câmera de um jogador.
 - [GetPlayerCameraZoom](GetPlayerCameraZoom): Obtenha o nível de zoom da câmera de um jogador.
 - [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRatio): Obtenha a proporção da câmera de um jogador.
-- [GetPlayerCameraMode](GetplayerCameraMode): Obtenha o modo de câmera do jogador.
+- [GetPlayerCameraMode](GetPlayerCameraMode): Obtenha o modo de câmera do jogador.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Obtenha o vetor frontal da câmera do jogador
 - [GetPlayerZAim](GetPlayerZAim): Obtém o Z Aim do jogador.

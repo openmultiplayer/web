@@ -49,7 +49,7 @@ Het password is hetzelfde als je in [server.cfg](server.cfg) hebt ingesteld.
 - IP
 - Datum
 - Tijd
-- Naam (naam van persoon of reden, zie [BanEx](../../functions/BanEx))
+- Naam (naam van persoon of reden, zie [BanEx](../scripting/functions/BanEx))
 - Type ban
 
 Een ban toevoegen doe je door een regel te plaatsen als:

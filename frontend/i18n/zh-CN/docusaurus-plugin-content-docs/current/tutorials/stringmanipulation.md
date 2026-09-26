@@ -196,7 +196,7 @@ while (j++ < 'Z');
 
 它们三个都会输出相同的字符串，即 _ABCDEFGHIJKLMNOPQRSTUVWXYZ_。
 
-如果你觉得上面的循环有些难以理解，建议你深入了解一下循环的工作原理，更多内容可以在[这里](../scripting/language/ControlStructures#loops)和[这里](https://wiki.alliedmods.net/Pawn_Tutorial#Looping)找到。注意我在某些逻辑条件中使用了字符，例如 `j++ < 'Z'` 这很容易被翻译为 `j++ < 90`，再一次强调，字符被当作数字处理，不要感到奇怪，你可以随时查阅 _ASCII_ 表。
+如果你觉得上面的循环有些难以理解，建议你深入了解一下循环的工作原理，更多内容可以在[这里](../scripting/language/ControlStructures#循环结构)和[这里](https://wiki.alliedmods.net/Pawn_Tutorial#Looping)找到。注意我在某些逻辑条件中使用了字符，例如 `j++ < 'Z'` 这很容易被翻译为 `j++ < 90`，再一次强调，字符被当作数字处理，不要感到奇怪，你可以随时查阅 _ASCII_ 表。
 
 假设你想用一个特定字符填充一个字符串（例如“_AAAAAA_”、“_TTTTTT_”、“_vvvvvv_”、“_666_”（_不，这不是巧合_）），大多数脚本编写者可能会想到手动硬编码，但是对于长字符串呢？当然你可以使用循环，但如果我告诉你有一种更高效的方式呢？就像你用相同的值填充数组一样，你也可以对字符串进行相同的操作。
 
@@ -1701,7 +1701,7 @@ printf("%n", "samp");
 #### References
 
 - [GTA 圣安地列斯](https://www.rockstargames.com/sanandreas/)
-- [Textdraw](../scripting/resources/textdraws#what-is-a-textdraw)
+- [Textdraw](../scripting/resources/textdraws#什么是文本绘图)
 - [游戏文本](../scripting/functions/GameTextForPlayer)
 - [限制](../scripting/resources/limits)
 - [ASCII](https://en.wikipedia.org/wiki/ASCII)

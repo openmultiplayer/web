@@ -71,5 +71,5 @@ ReturnCI(iPlayerID)
 
 ## Srodne Funkcije
 
-- [GetNetworkStats]GetNetworkStats): Dobiva mrežne statistike servera i sprema ih u string.
+- [GetNetworkStats](GetNetworkStats): Dobiva mrežne statistike servera i sprema ih u string.
 - [GetPlayerNetworkStats](GetPlayerNetworkStats): Dobija mrežne statistike igrača i pohranjuje ih u string.

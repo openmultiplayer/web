@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Esta função pode não retornar dados precisos quando usada em [OnPlayerDisconnect](OnPlayerDisconnect) se o jogador tiver encerrado normalmente. Geralmente retorna dados precisos se o jogador foi expulso ou expirou.
+Esta função pode não retornar dados precisos quando usada em [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) se o jogador tiver encerrado normalmente. Geralmente retorna dados precisos se o jogador foi expulso ou expirou.
 
 :::
 

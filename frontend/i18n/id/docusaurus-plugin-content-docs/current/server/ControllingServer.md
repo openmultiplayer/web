@@ -1,5 +1,4 @@
 ---
-id: controllingaserver
 title: "Mengendalikan Server"
 description: Perintah yang berguna untuk mengendalikan server.
 ---
@@ -36,7 +35,7 @@ password terserah
 
 ### Masuk
 
-Anda bisa masuk ketika di dalam game dengan mengetik `/rcon login password` atau dari luar game dengan menggunakan moe RCON di [Kendali Konsol Jarak Jauh](remoteconsole).
+Anda bisa masuk ketika di dalam game dengan mengetik `/rcon login password` atau dari luar game dengan menggunakan moe RCON di [Kendali Konsol Jarak Jauh](RemoteConsole).
 
 Kata sandinya sama dengan yang Anda tetap di file [server.cfg](server.cfg)
 

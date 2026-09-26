@@ -21,7 +21,7 @@ A statement is a piece of code that imperatively tells the host program to do so
 a = b + c;
 ```
 
-This is a statement composed of a variable being assigned the result of an [#Expression].
+This is a statement composed of a variable being assigned the result of an [Expression](#expression).
 
 ```c
 SetPlayerColor(playerid, 0xFF4700FF);
@@ -33,7 +33,7 @@ This is a statement telling the program to call a function with some arguments.
 x + 8
 ```
 
-This is _not_ a statement as the result is not used anywhere, this is just an [#Expression].
+This is _not_ a statement as the result is not used anywhere, this is just an [Expression](#expression).
 
 ### Compound Statement
 

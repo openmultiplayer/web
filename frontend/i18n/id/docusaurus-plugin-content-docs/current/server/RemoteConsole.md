@@ -1,5 +1,4 @@
 ---
-id: remoteconsole
 title: "Kendali Konsol Jarak Jauh (Remote Console - RCON)"
 descripion: Administrasi server jarak jauh.
 ---

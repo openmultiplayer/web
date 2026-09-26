@@ -41,4 +41,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Callbacks Relacionadas
 
-- [OnRconLoginAttempt](OnRconLoginAttempt): Chamado quando é feita uma tentativa de login em RCON.
+- [OnRconLoginAttempt](../callbacks/OnRconLoginAttempt): Chamado quando é feita uma tentativa de login em RCON.

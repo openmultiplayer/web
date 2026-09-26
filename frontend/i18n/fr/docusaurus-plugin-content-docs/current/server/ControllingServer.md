@@ -35,7 +35,7 @@ Identique à l'exécution d'un mode de jeu personnalisé, sauf :
 
 ### Se connecter
 
-Vous pouvez vous connecter pendant le jeu en tapant `/rcon login password` ou hors jeu en utilisant le mode RCON dans la [Remote Console] (RemoteConsole).
+Vous pouvez vous connecter pendant le jeu en tapant `/rcon login password` ou hors jeu en utilisant le mode RCON dans la [Remote Console](RemoteConsole).
 
 Le mot de passe est le même que celui que vous avez défini dans [config.json](config.json) dans `rcon.password`.
 

@@ -47,7 +47,7 @@ public OnGameModeExit()
 
 - [OnGameModeInit](OnGameModeInit)：当游戏模式启动时触发
 - [OnFilterScriptInit](OnFilterScriptInit)：当滤镜脚本加载时触发
-- [OnFilterSciptExit](OnFilterScriptExit)：当滤镜脚本卸载时触发
+- [OnFilterScriptExit](OnFilterScriptExit)：当滤镜脚本卸载时触发
 
 ## 相关函数
 

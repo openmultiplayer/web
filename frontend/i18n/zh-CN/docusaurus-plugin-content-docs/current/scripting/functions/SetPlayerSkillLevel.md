@@ -46,4 +46,4 @@ skill 参数不是武器 ID，而是技能类型。[点击此处](../resources/w
 
 ## 相关信息
 
-- [武器技能系统](../resources/weaponskills#skill-levels): 用于设置玩家技能等级的武器技能列表
+- [武器技能系统](../resources/weaponskills#技能等级): 用于设置玩家技能等级的武器技能列表

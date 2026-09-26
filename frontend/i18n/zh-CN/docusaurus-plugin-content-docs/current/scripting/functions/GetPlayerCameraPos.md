@@ -46,6 +46,6 @@ public OnPlayerDisconnect(playerid, reason)
 - [SetPlayerCameraPos](SetPlayerCameraPos): 设置玩家视角位置
 - [GetPlayerCameraZoom](GetPlayerCameraZoom): 获取玩家视角缩放级别
 - [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRatio): 获取玩家视角宽高比
-- [GetPlayerCameraMode](GetplayerCameraMode): 获取玩家视角模式
+- [GetPlayerCameraMode](GetPlayerCameraMode): 获取玩家视角模式
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): 获取玩家视角前向向量
 - [GetPlayerZAim](GetPlayerZAim): 获取玩家垂直瞄准角度

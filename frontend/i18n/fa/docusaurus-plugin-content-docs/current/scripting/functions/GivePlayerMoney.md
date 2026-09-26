@@ -41,7 +41,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## تابع های مرتبط
 
-- [ResetPlayerMoney](../callbacks/ResetPlayerMoney) تنظیم کردن پول بازیکن به $0
-- [GetPlayerMoney](../callbacks/GetPlayerMoney) بررسی کردن مقدار پول یک بازیکن
+- [ResetPlayerMoney](ResetPlayerMoney) تنظیم کردن پول بازیکن به $0
+- [GetPlayerMoney](GetPlayerMoney) بررسی کردن مقدار پول یک بازیکن
 
 </div>

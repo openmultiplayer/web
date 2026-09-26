@@ -1,6 +1,6 @@
 ---
-title: NPC_GetSurfingOffset
-sidebar_label: NPC_GetSurfingOffset
+title: NPC_GetSurfingOffsets
+sidebar_label: NPC_GetSurfingOffsets
 description: "Obtém o deslocamento de navegação para um NPC."
 tags: ["npc", "surfing"]
 ---
@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
 
         new Float:offsetX, Float:offsetY, Float:offsetZ;
-        NPC_GetSurfingOffset(npcid, offsetX, offsetY, offsetZ);
+        NPC_GetSurfingOffsets(npcid, offsetX, offsetY, offsetZ);
 
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d surfing offset: X=%.2f, Y=%.2f, Z=%.2f", npcid, offsetX, offsetY, offsetZ);
         return 1;
@@ -53,7 +53,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Funções Relacionadas
 
-- [NPC_SetSurfingOffset](NPC_SetSurfingOffset): Define o deslocamento de navegação para um NPC
+- [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): Define o deslocamento de navegação para um NPC
 - [NPC_GetSurfingObject](NPC_GetSurfingObject): Obtém o objeto em que um NPC está navegando
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): Obtém o veículo em que um NPC está navegando
 - [NPC_GetSurfingPlayerObject](NPC_GetSurfingPlayerObject): Obtém o objeto do jogador em que um NPC está navegando

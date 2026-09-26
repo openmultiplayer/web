@@ -11,7 +11,7 @@ Menu kelihatannya sangat rumit dan susah dibuat scriptnya untuk kebanyakan pengg
 
 ## Langkah pertama menu
 
-Pertama kita harus membuat sebuah menu. Prefix sebelumnya adalah `Menu:` ini adalah variable [tag](../scripting/language/tags) yang benar. Terdapat beberapa tipe dari beberapa penggunaan seperti `Float:` `bool:` `Text3D:` dan lain-lain. Buatlah kodenya diposisi paling atas di kode kalian:
+Pertama kita harus membuat sebuah menu. Prefix sebelumnya adalah `Menu:` ini adalah variable [tag](../scripting/language/Tags) yang benar. Terdapat beberapa tipe dari beberapa penggunaan seperti `Float:` `bool:` `Text3D:` dan lain-lain. Buatlah kodenya diposisi paling atas di kode kalian:
 
 ```c
 new Menu:teleportmenu;

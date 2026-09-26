@@ -46,4 +46,4 @@ O parâmetro de habilidade não é o ID da arma; é o tipo de habilidade. Clique
 
 ## Informações relacionadas
 
-- [Habilidades com Armas](../resources/weaponskills#skill-levels): Lista de habilidades com armas que são usadas para definir o nível de habilidade do jogador.
+- [Habilidades com Armas](../resources/weaponskills#níveis-de-habilidade): Lista de habilidades com armas que são usadas para definir o nível de habilidade do jogador.

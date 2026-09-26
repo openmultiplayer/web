@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::warning
 
-设置为无敌状态后，演员不会触发[OnPlayerGiveDamageActor](OnPlayerGiveDamageActor)回调。玩家只有在演员被重新流加载时才能看到无敌状态的变化。
+设置为无敌状态后，演员不会触发[OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor)回调。玩家只有在演员被重新流加载时才能看到无敌状态的变化。
 
 :::
 

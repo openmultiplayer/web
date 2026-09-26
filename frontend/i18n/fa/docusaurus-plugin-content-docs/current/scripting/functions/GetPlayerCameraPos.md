@@ -46,6 +46,6 @@ public OnPlayerDisconnect(playerid, reason)
 - [SetPlayerCameraPos](SetPlayerCameraPos): موقعیت دوربین بازیکن را تنظیم کنید.
 - [GetPlayerCameraZoom](GetPlayerCameraZoom): سطح زوم دوربین بازیکن را دریافت کنید.
 - [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRatio): نسبت ابعاد دوربین بازیکن را دریافت کنید.
-- [GetPlayerCameraMode](GetplayerCameraMode): حالت دوربین بازیکن را دریافت کنید.
+- [GetPlayerCameraMode](GetPlayerCameraMode): حالت دوربین بازیکن را دریافت کنید.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): بردار جلویی دوربین بازیکن را دریافت کنید
 - [GetPlayerZAim](GetPlayerZAim): Z Aim بازیکن را دریافت کنید.

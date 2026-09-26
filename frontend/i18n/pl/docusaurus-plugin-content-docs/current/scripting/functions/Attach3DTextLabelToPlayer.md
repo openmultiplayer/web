@@ -42,4 +42,4 @@ public OnPlayerConnect(playerid)
 - [Update3DTextLabelText](Update3DTextLabelText): Zmienia treść tekstu 3D.
 - [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel): Tworzy tekst 3D dla konkretnego gracza.
 - [DeletePlayer3DTextLabel](DeletePlayer3DTextLabel): Kasuje tekst 3D danego gracza.
-- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabel): Zmienia treść tekstu 3D danego gracza.
+- [UpdatePlayer3DTextLabelText](UpdatePlayer3DTextLabelText): Zmienia treść tekstu 3D danego gracza.

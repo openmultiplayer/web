@@ -58,7 +58,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 以下回调函数可能与此回调相关：
 
 - [OnActorStreamOut](OnActorStreamOut): 当演员被玩家客户端流卸载时触发
-- [OnActorStreamIn](OnActorStreamOut): 当演员被玩家客户端流加载时触发
+- [OnActorStreamIn](OnActorStreamIn): 当演员被玩家客户端流加载时触发
 
 ## 相关函数
 

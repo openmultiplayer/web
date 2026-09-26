@@ -9,7 +9,7 @@ description: 在 Ubuntu 或其他基于 Debian 的 Linux 系统上安装 open.mp
 
 :::warning
 
-如果你正在使用 SA:MP 服务器且尚未转换到 open.mp，**[请先停止并阅读此指南](https://www.open.mp/docs/server/Installation)**。
+如果你正在使用 SA:MP 服务器且尚未转换到 open.mp，**[请先停止并阅读此指南](Installation)**。
 
 :::
 

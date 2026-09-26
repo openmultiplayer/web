@@ -53,7 +53,7 @@ Ako imate 2 monitora postoje 3 načina da ovo riješite:
 
 ### Moj miš ne radi nakon izlaska iz pause menija
 
-Ako vam se čini da se vaš miš zaledi u igri dok (polovično) radi u pause meniju, onda morate da isključite multicore opciju [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") (postavite je na 0). Kontinuirano tapkanje escape tipke dok miš ponovo ne reagira također može raditi, ali to nije preporučljiv način za rješenje.
+Ako vam se čini da se vaš miš zaledi u igri dok (polovično) radi u pause meniju, onda morate da isključite multicore opciju [sa-mp.cfg](sa-mp.cfg "sa-mp.cfg") (postavite je na 0). Kontinuirano tapkanje escape tipke dok miš ponovo ne reagira također može raditi, ali to nije preporučljiv način za rješenje.
 
 ### "The file dinput8.dll is missing"
 

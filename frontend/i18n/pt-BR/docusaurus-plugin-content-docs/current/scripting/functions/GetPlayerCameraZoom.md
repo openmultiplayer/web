@@ -35,6 +35,6 @@ Isso recupera o nível de zoom da câmera GAME (incluindo o escopo Sniper), não
 
 ## Funções Relacionadas
 
-- [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRation): Obtenha a proporção da câmera de um jogador.
+- [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRatio): Obtenha a proporção da câmera de um jogador.
 - [GetPlayerCameraPos](GetPlayerCameraPos): Descubra onde está a câmera do jogador.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Obtenha o vetor frontal da câmera do jogador

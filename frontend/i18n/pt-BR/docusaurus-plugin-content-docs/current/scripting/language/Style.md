@@ -21,7 +21,7 @@ Uma instrução é um trecho de código que ordena imperativamente que o program
 a = b + c;
 ```
 
-Esta é uma instrução composta por uma variável recebendo o resultado de uma [#Expression].
+Esta é uma instrução composta por uma variável recebendo o resultado de uma [Expression](#expression-expressão).
 
 ```c
 SetPlayerColor(playerid, 0xFF4700FF);
@@ -33,7 +33,7 @@ Esta é uma instrução que manda o programa chamar uma função com determinado
 x + 8
 ```
 
-Isto _não_ é uma instrução porque o resultado não é usado em lugar nenhum; é apenas uma [#Expression].
+Isto _não_ é uma instrução porque o resultado não é usado em lugar nenhum; é apenas uma [Expression](#expression-expressão).
 
 ### Compound Statement
 

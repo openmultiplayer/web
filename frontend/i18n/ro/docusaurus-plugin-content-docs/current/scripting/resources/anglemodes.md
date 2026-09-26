@@ -6,7 +6,7 @@ description: Constante unitare in sistemul international pentru măsurarea unghi
 
 :::note
 
-Se foloseste cu [floatsin](../functions/Floatsin), [floatcos](../functions/Floatcos), sau [floattan](../functions/Floattan).
+Se foloseste cu [floatsin](../functions/floatsin), [floatcos](../functions/floatcos), sau [floattan](../functions/floattan).
 
 :::
 

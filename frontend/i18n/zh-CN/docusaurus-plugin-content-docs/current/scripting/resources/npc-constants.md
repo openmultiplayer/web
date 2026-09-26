@@ -191,6 +191,6 @@ for (new i = 0; i < NPC_MAX_NODES; i++)
 
 ## 相关页面
 
-- [武器常量](constants#weapon-constants) - 用于 NPC 的武器 ID
+- [武器常量](constants#武器常量) - 用于 NPC 的武器 ID
 - [玩家状态](playerstates) - 可能适用于 NPC 的玩家状态常量
 - [车辆 ID](vehicleid) - NPC 车辆函数中使用的车辆模型 ID

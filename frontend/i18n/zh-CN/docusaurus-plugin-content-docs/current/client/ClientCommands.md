@@ -23,7 +23,7 @@ description: 所有客户端命令列表。
 | /audiomsg      | 切换音频流 URL 加载提示信息显示。对应 sa-mp.cfg 文件的 'audiomsgoff' 选项。                                                                                                                    |
 | /fontsize      | 调整 UI 字体大小（聊天框/对话框等），有效范围-3 至 5。                                                                                                                                         |
 | /ctd           | 该命令在 SA-MP 0.3.7 RC2 版本加入。启用玩家视角目标的客户端调试功能。                                                                                                                          |
-| /rcon          | 主要用于服务器管理。执行远程控制台命令（RCON 是内置管理员系统，全称[远程控制](../server/ControllingServer#using-rcon)）。                                                                      |
+| /rcon          | 主要用于服务器管理。执行远程控制台命令（RCON 是内置管理员系统，全称[远程控制](../server/ControllingServer#使用-rcon)）。                                                                      |
 | /hudscalefix   | 该命令在 SA-MP 0.3.7 R3 版本加入。启用/禁用雷达比例修正，使宽屏分辨率下雷达显示更协调（解决'彩蛋式显示'问题）。对应 sa-mp.cfg 文件的 'nohudscale' 选项。                                       |
 
 ## 配置文件 sa-mp.cfg

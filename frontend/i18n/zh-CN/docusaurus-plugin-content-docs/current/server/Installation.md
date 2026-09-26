@@ -120,7 +120,7 @@ description: 将游戏模式从 SA:MP 服务器迁移至 open.mp 服务器的指
 
 ## 步骤 9
 
-使用记事本或其他 IDE 打开 **[config.json](https://www.open.mp/docs/server/config.json)** 文件
+使用记事本或其他 IDE 打开 **[config.json](config.json)** 文件
 
 ![](<https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(9).png>)
 

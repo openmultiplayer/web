@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 :::warning
 
-此函数只能在[OnGameModeInit](OnGameModeInit)回调中使用。其他场景请使用[ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer)。
+此函数只能在[OnGameModeInit](../callbacks/OnGameModeInit)回调中使用。其他场景请使用[ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer)。
 
 :::
 

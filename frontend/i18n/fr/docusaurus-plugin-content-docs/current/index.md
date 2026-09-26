@@ -2,7 +2,7 @@
 
 Bienvenue sur le wiki de SA:MP, qui est aujourd'hui maintenu par l'équipe open.mp et sa communauté _(et, plus généralement, la communauté SA:MP)_.
 
-Cette documentation tend à recenser de la manière la plus exhaustive tout ce qui pourrait être utile aux développeurs. Elle vise à être la plus accessible possible, il est d'ailleurs très facile d'y [contribuer](/meta/Contributing).
+Cette documentation tend à recenser de la manière la plus exhaustive tout ce qui pourrait être utile aux développeurs. Elle vise à être la plus accessible possible, il est d'ailleurs très facile d'y [contribuer](/docs/meta/Contributing).
 
 ## La disparition du wiki SA:MP
 

@@ -63,7 +63,7 @@ SA:MP 内置浏览器已失效。请下载新版[open.mp 启动器](https://gith
 
 解决方案：
 
-1. 在[sa-mp.cfg](ClientCommands#file-sa-mpcfg)中禁用多核支持（设置 multicore=0）
+1. 在[sa-mp.cfg](sa-mp.cfg)中禁用多核支持（设置 multicore=0）
 2. 反复按 ESC 键直至鼠标恢复响应
 
 ### 缺失 dinput8.dll 文件

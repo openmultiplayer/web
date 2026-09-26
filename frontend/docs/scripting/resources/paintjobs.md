@@ -55,6 +55,6 @@ Each paintjob has information about vehicle's ID and name.
 ## Related Functions
 
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Change a vehicle's paintjob.
-- [ChangeVehicleColor](ChangeVehicleColor): Set the color of a vehicle.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Set the color of a vehicle.
 
 - [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): Called when a vehicle's paintjob is changed.

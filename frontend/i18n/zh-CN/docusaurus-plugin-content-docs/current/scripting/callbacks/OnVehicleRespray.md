@@ -63,8 +63,8 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 - [ChangeVehicleColor](../functions/ChangeVehicleColor): 设置车辆颜色
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): 变更车辆涂装样式
-- [GetVehicleColor](../functions/GetVehicleColor): 获取车辆当前颜色配置
+- [GetVehicleColor](../functions/GetVehicleColours): 获取车辆当前颜色配置
 
 ## 相关资源
 
-- [车辆颜色代码表](../resources/vehiclecolors)
+- [车辆颜色代码表](../resources/vehiclecolorid)

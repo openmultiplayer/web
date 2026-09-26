@@ -286,19 +286,19 @@ List_Remove(slot)
 
 Você tem o array ordenado anterior e deseja encontrar em qual slot o número 7 está (se estiver), neste exemplo provavelmente é mais eficiente apenas percorrer diretamente o array para encontrá-lo, mas esse não é o ponto, esse método aumenta em tempo linearmente com o tamanho do array, o tempo de pesquisa binária aumenta linearmente à medida que o array aumenta exponencialmente em tamanho. Ou seja, um array de tamanho 128 levará o dobro do tempo para pesquisar diretamente do que um array de tamanho 64, mas uma pesquisa binária 128 levará apenas uma verificação a mais do que uma pesquisa binária 64, nada demais.
 
-Se construirmos uma árvore binária a partir dos dados acima, obtemos: ![Binarytree](https://sampwiki.blast.hk/wiki/Image:Binarytree.GIF)
+Se construirmos uma árvore binária a partir dos dados acima, obtemos: ![Binarytree](https://sampwiki.blast.hk/wroot/images2/f/fe/Binarytree.GIF)
 
 Se você ler da esquerda para a direita, ignorando o aspecto vertical, você pode ver que os números estão em ordem. Agora podemos tentar encontrar o 7.
 
 O número inicial é 14, 7 é menor que 14, então vamos para o slot apontado pelo ramo esquerdo do 14. Isso nos leva ao 6, 7 é maior que 6, então vamos para a direita até o 9, depois para a esquerda novamente até o 7. Este método levou 4 comparações para encontrar o número (incluindo a verificação final para confirmar que estamos no 7), usando uma pesquisa direta teria levado 5.
 
-Vamos dizer que não há 7, acabaríamos com esta árvore binária: ![Binarytree-7-less](https://sampwiki.blast.hk/wiki/Image:Binarytree-7-less.GIF)
+Vamos dizer que não há 7, acabaríamos com esta árvore binária: ![Binarytree-7-less](https://sampwiki.blast.hk/wroot/images2/e/e5/Binarytree-7-less.GIF)
 
 Esta, ao contrário do exemplo acima, tem um único número filho (o 9), bem como números filhos 2 e 0. Você só obtém uma árvore perfeita quando há (2^n)-1 números (0, 1, 3, 7, 15, 31 ...), quaisquer outros números darão uma árvore não completamente cheia. Neste caso, quando chegamos ao 9, onde o 7 estaria, encontraremos que não há ramo esquerdo, significando que o 7 não existe (ele não pode estar em nenhum outro lugar na árvore, pense nisso), então retornamos -1 para slot inválido.
 
 #### Balanceadas e desbalanceadas
 
-As árvores nos exemplos acima são chamadas de árvores binárias balanceadas, isso significa que, o mais próximo possível, todos os ramos têm o mesmo comprimento (obviamente no segundo não há números suficientes para que este seja o caso, mas é o mais próximo possível). Construir árvores balanceadas não é fácil, o método geralmente aceito de construir árvores quase balanceadas é colocar os números em ordem aleatória, isso pode significar que você acaba com algo assim: ![Binarytree-uneven](https://sampwiki.blast.hk/wiki/Image:Binarytree-uneven.GIF)
+As árvores nos exemplos acima são chamadas de árvores binárias balanceadas, isso significa que, o mais próximo possível, todos os ramos têm o mesmo comprimento (obviamente no segundo não há números suficientes para que este seja o caso, mas é o mais próximo possível). Construir árvores balanceadas não é fácil, o método geralmente aceito de construir árvores quase balanceadas é colocar os números em ordem aleatória, isso pode significar que você acaba com algo assim: ![Binarytree-uneven](https://sampwiki.blast.hk/wroot/images2/a/a2/Binarytree-uneven.GIF)
 
 Obviamente esta árvore ainda é válida, mas o lado direito é muito maior que o esquerdo, no entanto, encontrar 25 ainda leva apenas 7 comparações nesta em comparação com 12 na lista direta. Além disso, contanto que você comece com um número razoavelmente do meio, o método de inserção aleatória deve produzir uma árvore razoavelmente balanceada. A pior coisa possível que você pode fazer é colocar os números em ordem, pois então não haverá ramos esquerdos (ou ramos direitos se feito ao contrário), no entanto, mesmo neste pior caso, a árvore binária não levará mais tempo para pesquisar do que a lista direta.
 

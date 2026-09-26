@@ -23,6 +23,6 @@ public OnFilterScriptInit()
 
 ## Ähnliche Callbacks
 
-- [OnFilterSciptExit](OnFilterScriptExit): Wird ausgeführt wenn ein Filterscript deaktiviert wird.
+- [OnFilterScriptExit](OnFilterScriptExit): Wird ausgeführt wenn ein Filterscript deaktiviert wird.
 - [OnGameModeInit](OnGameModeInit): Wird ausgeführt wenn ein Gamemode gestartet wird.
 - [OnGameModeExit](OnGameModeExit): Wird ausgeführt wenn ein Gamemode beendet wird.

@@ -120,7 +120,7 @@ then press **F5** to compile.
 
 ## Step 9
 
-Open **[config.json](https://www.open.mp/docs/server/config.json)** file with Notepad or other IDEs
+Open **[config.json](config.json)** file with Notepad or other IDEs
 
 ![](<https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(9).png>)
 

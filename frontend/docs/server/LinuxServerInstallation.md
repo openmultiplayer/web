@@ -9,7 +9,7 @@ Whether you're a beginner or just looking to refresh your knowledge, this guide 
 
 :::warning
 
-If you are using the SA:MP server and didn't convert to open.mp yet, **[please stop here and read this guide first.](https://www.open.mp/docs/server/Installation)**
+If you are using the SA:MP server and didn't convert to open.mp yet, **[please stop here and read this guide first.](Installation)**
 
 :::
 

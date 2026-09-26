@@ -31,9 +31,9 @@ Hay dos formas de crear pickup [CreatePickup](../scripting/functions/CreatePicku
 
 Para este ejemplo, crearemos un pickup en Grove Street.
 
-Ahora debemos decidir qué modelo aparecerá en el mundo, hay muchos modelos para elegir, algunos se enumeran en el sitio externo [aquí] (https://dev.prineside.com/en/gtasa_samp_model_id), aquí elija el número de modelo 1274, que es el signo de dólar.
+Ahora debemos decidir qué modelo aparecerá en el mundo, hay muchos modelos para elegir, algunos se enumeran en el sitio externo [aquí](https://dev.prineside.com/en/gtasa_samp_model_id), aquí elija el número de modelo 1274, que es el signo de dólar.
 
-Finalmente, necesitamos un [Tipo] (../scripting/resources/pickuptypes) para la pickup, en la misma página con los modelos de pickup hay una lista de tipos de pickup que describen lo que hacen los typos. Queremos que esta recolección desaparezca cuando la levante, para que no pueda levantarla repetidamente, pero que vuelva a aparecer después de unos minutos para que pueda levantarla nuevamente, el typo 2 hace exactamente esto.
+Finalmente, necesitamos un [Tipo](../scripting/resources/pickuptypes) para la pickup, en la misma página con los modelos de pickup hay una lista de tipos de pickup que describen lo que hacen los typos. Queremos que esta recolección desaparezca cuando la levante, para que no pueda levantarla repetidamente, pero que vuelva a aparecer después de unos minutos para que pueda levantarla nuevamente, el typo 2 hace exactamente esto.
 
 Las pickups se crean más comúnmente cuando se inicia el script, en [OnGameModeInit](../scripting/callbacks/OnGameModeInit) o en [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) dependiendo del tipo de la script, también se puede ir en cualquier función (por ejemplo, podría crear un script de deja los armas del jugardor, eso se usaría OnPlayerDeath para crear pickup de armas).
 

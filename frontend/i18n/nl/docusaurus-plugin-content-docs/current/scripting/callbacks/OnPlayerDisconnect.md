@@ -59,7 +59,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::tip
 
-Sommige functies werken mogelijk niet correct wanneer ze in deze callback worden gebruikt omdat de speler al is verbroken wanneer de callback wordt aangeroepen. Dit betekent dat je geen ondubbelzinnige informatie kunt krijgen van functies zoals [GetPlayerIp](GetPlayerIp) en [GetPlayerPos](GetPlayerPos).
+Sommige functies werken mogelijk niet correct wanneer ze in deze callback worden gebruikt omdat de speler al is verbroken wanneer de callback wordt aangeroepen. Dit betekent dat je geen ondubbelzinnige informatie kunt krijgen van functies zoals [GetPlayerIp](../functions/GetPlayerIp) en [GetPlayerPos](../functions/GetPlayerPos).
 
 Dit probleem is opgelost in de open.mp server.
 

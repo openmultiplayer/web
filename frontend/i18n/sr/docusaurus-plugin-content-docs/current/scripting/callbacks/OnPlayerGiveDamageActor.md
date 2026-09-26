@@ -58,7 +58,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 Следеће повратне функције могу бити корисне, јер су на један или други начин повезане са овим позивом.
 
 - [OnActorStreamOut](OnActorStreamOut): Ова повратна функција се позива када се актер избаци из стримовања клијента играча.
-- [OnActorStreamIn](OnActorStreamOut): Ова повратна функција се позива када се актер учита у стримовање клијента играча.
+- [OnActorStreamIn](OnActorStreamIn): Ова повратна функција се позива када се актер учита у стримовање клијента играча.
 
 ## Повезане функције
 

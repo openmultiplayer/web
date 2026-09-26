@@ -35,6 +35,6 @@ SendClientMessage(playerid, -1, string);
 
 ## تابع‌های مرتبط
 
-- [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRation): نسبت ابعاد دوربین بازیکن را دریافت کنید.
+- [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRatio): نسبت ابعاد دوربین بازیکن را دریافت کنید.
 - [GetPlayerCameraPos](GetPlayerCameraPos): موقعیت دوربین بازیکن را پیدا کنید.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): بردار جلویی دوربین بازیکن را دریافت کنید

@@ -11,5 +11,5 @@ Overzicht van paintjobs voor [ChangeVehiclePaintjob](../functions/ChangeVehicleP
 ## Gerelateerde functies
 
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Wijzig de paintjob van een voertuig.
-- [ChangeVehicleColor](ChangeVehicleColor): Stel voertuigkleur in.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Stel voertuigkleur in.
 - [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): Aangeroepen wanneer de paintjob wijzigt.
