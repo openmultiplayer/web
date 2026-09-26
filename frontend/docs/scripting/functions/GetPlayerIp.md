@@ -57,7 +57,7 @@ Save players' IPs under [OnPlayerConnect](../callbacks/OnPlayerConnect) if they 
 - [GetPlayerRawIp](GetPlayerRawIp): Get a player's Raw IP.
 - [GetPlayerName](GetPlayerName): Get a player's name.
 - [GetPlayerPing](GetPlayerPing): Get the ping of a player.
-- [GetPlayerVersion](GetPlayerVerion): Get a player's client-version.
+- [GetPlayerVersion](GetPlayerVersion): Get a player's client-version.
 
 ## Related Callbacks
 

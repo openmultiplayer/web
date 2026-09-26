@@ -50,7 +50,7 @@ Eğer 2 monitörünüz varsa, bunu çözmenin 3 yolu vardır:
 
 ### Pause menüsünden çıktıktan sonra farem çalışmıyor
 
-Eğer fare oyun içinde donmuş gibi görünüyorsa (kısmen) ve pause menüsünde çalışıyorsa, [sa-mp.cfg](ClientCommands#file-sa-mpcfg "sa-mp.cfg") dosyasındaki multicore seçeneğini devre dışı bırakmalısınız (0 olarak ayarlayın). Fare tekrar yanıt verene kadar sürekli Escape tuşuna basmak da işe yarayabilir, ancak bu düzgün bir çözüm değildir.
+Eğer fare oyun içinde donmuş gibi görünüyorsa (kısmen) ve pause menüsünde çalışıyorsa, [sa-mp.cfg](sa-mp.cfg "sa-mp.cfg") dosyasındaki multicore seçeneğini devre dışı bırakmalısınız (0 olarak ayarlayın). Fare tekrar yanıt verene kadar sürekli Escape tuşuna basmak da işe yarayabilir, ancak bu düzgün bir çözüm değildir.
 
 ### dinput8.dll dosyası eksik
 

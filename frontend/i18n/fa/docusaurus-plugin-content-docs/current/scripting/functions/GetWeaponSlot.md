@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetPlayerWeaponData](GetPlayerWeaponData): دریافت اسلحه و تیر در اسلات مشخص شده بازیکن (مثلاً اسلحه توی اسلات 'SMG').
 - [GetPlayerAmmo](GetPlayerAmmo): دریافت مقدار تیر اسلحه فعلی بازیکن.
 - [SetPlayerArmedWeapon](SetPlayerArmedWeapon): تنظیم اینکه بازیکن کدوم اسلحه (که قبلاً داره) رو در دست بگیره.
-- [ResetPlayerWeapon](ResetPlayerWeapons): حذف همه اسلحه‌ها از بازیکن.
+- [ResetPlayerWeapons](ResetPlayerWeapons): حذف همه اسلحه‌ها از بازیکن.
 - [RemovePlayerWeapon](RemovePlayerWeapon): حذف یه اسلحه خاص از بازیکن.
 
 ## منابع مرتبط

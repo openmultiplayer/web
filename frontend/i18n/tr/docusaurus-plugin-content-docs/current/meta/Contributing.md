@@ -14,7 +14,7 @@ Her sayfada düzenleme yapabilmek Github düzenleme sayfasına yönlendiren buto
 
 ![Edit this page link present on each wiki page](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-Örneğin, [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) bu tıklatma [bu sayfa](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) sizi bu dosya üzerinde değişiklik yapmanız için yönlendirir. (eğer ki github üzerinden oturum açtıysanız).
+Örneğin, [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) bu tıklatma [bu sayfa](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md) sizi bu dosya üzerinde değişiklik yapmanız için yönlendirir. (eğer ki github üzerinden oturum açtıysanız).
 
 Düzenlemenizi yapın ve bir "Pull Request" gönderin. Wiki üzerinde çalışan takım üyeleri yaptığınız değişiklikleri onaylandığında(incelenmesi ardından) yaptığınız değişiklikler yayınlanır.
 

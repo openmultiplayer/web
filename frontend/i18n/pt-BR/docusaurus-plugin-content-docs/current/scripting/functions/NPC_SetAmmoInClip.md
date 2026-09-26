@@ -58,7 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_GetAmmoInClip](NPC_GetAmmoInClip): Obtenha munição no clipe
 - [NPC_GetWeaponClipSize](NPC_GetWeaponClipSize): Obtenha o tamanho máximo do clipe
-- [NPC_GiveWeapon](NPC_GiveWeapon): Dê arma para NPC
+- [NPC_SetWeapon](NPC_SetWeapon): Definir arma NPC
 - [NPC_GetAmmo](NPC_GetAmmo): Obtenha munição total
 
 ## Callbacks Relacionadas

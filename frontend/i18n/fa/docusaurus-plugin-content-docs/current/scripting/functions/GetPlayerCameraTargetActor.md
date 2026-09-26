@@ -76,7 +76,7 @@ public OnPlayerUpdate(playerid)
 ## تابع‌های مرتبط
 
 - [GetPlayerTargetActor](GetPlayerTargetActor): شناسه اکتوری که توسط بازیکن هدف‌گیری می‌شود را دریافت کنید.
-- [GetPlayerCameraTargetPlayer](GetPlayerCameratargetPlayer): شناسه بازیکنی که یک بازیکن به آن نگاه می‌کند را دریافت کنید.
+- [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): شناسه بازیکنی که یک بازیکن به آن نگاه می‌کند را دریافت کنید.
 - [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): شناسه وسیله نقلیه‌ای که بازیکن به آن نگاه می‌کند را دریافت کنید.
 - [GetPlayerCameraTargetObject](GetPlayerCameraTargetObject): شناسه آبجکتی که بازیکن به آن نگاه می‌کند را دریافت کنید.
-- [GetPlayerCameraFrontVector](GetPlayerCaemraFrontVector): بردار جلویی دوربین بازیکن را دریافت کنید
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): بردار جلویی دوربین بازیکن را دریافت کنید

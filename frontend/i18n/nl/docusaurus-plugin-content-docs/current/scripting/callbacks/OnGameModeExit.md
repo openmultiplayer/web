@@ -31,7 +31,7 @@ Deze functie kan ook gebruikt worden in een filterscript om te detecteren of de 
 
 Bij gebruik van OnGameModeExit in combinatie met het 'rcon gmx' console command, houd er rekening mee dat er een potentieel is voor client bugs.
 
-Een voorbeeld hiervan is overmatige [RemoveBuildingForPlayer](RemoveBuildingForPlayer) calls tijdens [OnGameModeInit](OnGameModeInit) wat kan resulteren in een client crash. Deze callback wordt NIET aangeroepen als de server crasht of het proces wordt beëindigd door andere middelen, zoals het Linux kill command of het drukken van de sluit-knop op de Windows console.
+Een voorbeeld hiervan is overmatige [RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer) calls tijdens [OnGameModeInit](OnGameModeInit) wat kan resulteren in een client crash. Deze callback wordt NIET aangeroepen als de server crasht of het proces wordt beëindigd door andere middelen, zoals het Linux kill command of het drukken van de sluit-knop op de Windows console.
 
 :::
 
@@ -41,7 +41,7 @@ De volgende callbacks kunnen nuttig zijn, omdat ze gerelateerd zijn aan deze cal
 
 - [OnGameModeInit](OnGameModeInit): Deze callback wordt aangeroepen wanneer een gamemode start.
 - [OnFilterScriptInit](OnFilterScriptInit): Deze callback wordt aangeroepen wanneer een filterscript wordt geladen.
-- [OnFilterSciptExit](OnFilterScriptExit): Deze callback wordt aangeroepen wanneer een filterscript wordt uitgezet.
+- [OnFilterScriptExit](OnFilterScriptExit): Deze callback wordt aangeroepen wanneer een filterscript wordt uitgezet.
 
 ## Gerelateerde Functies
 

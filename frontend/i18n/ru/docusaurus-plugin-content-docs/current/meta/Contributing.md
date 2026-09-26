@@ -14,7 +14,7 @@ description: Как внести вклад в Wiki SA-MP и документа�
 
 ![Кнопка редактирования находится на каждой странице](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-Например, клик по [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) перенесёт вас на [эту страницу](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md), которая встретит вас с текстовым редактором для редактирования содержимого (если вы уже вошли в аккаунт GitHub, конечно же).
+Например, клик по [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) перенесёт вас на [эту страницу](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md), которая встретит вас с текстовым редактором для редактирования содержимого (если вы уже вошли в аккаунт GitHub, конечно же).
 
 Сделайте ваши правки и подтвердите "Pull Request" (запрос на слияние), это означает, что руководитель Wiki и другие члены сообщества смогут увидеть ваши изменения, обсудить, что требуется добавить и/или исправить и уже после внести изменения в основной репозиторий.
 

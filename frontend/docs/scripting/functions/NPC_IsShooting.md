@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_Shoot](NPC_Shoot): Make NPC shoot
 - [NPC_AimAt](NPC_AimAt): Make NPC aim and shoot
-- [NPC_StopShoot](NPC_StopShoot): Stop NPC shooting
+- [NPC_StopAim](NPC_StopAim): Stop NPC aiming
 - [NPC_IsAiming](NPC_IsAiming): Check if aiming
 
 ## Related Callbacks

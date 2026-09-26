@@ -57,4 +57,4 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 ## 相关资源
 
-- [车辆涂装样式列表](../resources/paintjobids)
+- [车辆涂装样式列表](../resources/paintjobs)

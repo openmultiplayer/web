@@ -10,7 +10,7 @@ Cores no SA-MP são normalmente representados em código hexadecimal (embora int
 
 _RR_ é a parte vermelha da cor, _GG_ o verde e _BB_ o azul. _AA_ é o valor alpha. Se FF for usado aqui, a cor será exibida sem transparência e se 00 for usado, ficará invisível.
 
-Para obter o código Hex para essas cores, vá para a página [Cores Hex](hex-colors).
+Para obter o código Hex para essas cores, vá para a página [Cores Hex](hexcolors).
 
 ### Valores Alpha (transparência)
 

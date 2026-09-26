@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetPlayerWeaponData](GetPlayerWeaponData): 获取玩家指定槽位的武器及弹药数据（例如 SMG 槽位）
 - [GetPlayerAmmo](GetPlayerAmmo): 获取玩家当前武器的剩余弹药量
 - [SetPlayerArmedWeapon](SetPlayerArmedWeapon): 设置玩家切换至已持有的指定武器
-- [ResetPlayerWeapon](ResetPlayerWeapons): 清空玩家所有武器
+- [ResetPlayerWeapons](ResetPlayerWeapons): 清空玩家所有武器
 - [RemovePlayerWeapon](RemovePlayerWeapon): 移除玩家持有的指定武器
 
 ## 相关资源

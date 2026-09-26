@@ -21,7 +21,7 @@ Bir ifade, ana programı bir şey yapmaya zorlayan bir kod parçasıdır. Bir if
 a = b + c;
 ```
 
-Bu, bir değişkene bir [#İfade] sonucu atan bir ifadedir.
+Bu, bir değişkene bir [İfade](#i̇fade-1) sonucu atan bir ifadedir.
 
 ```c
 SetPlayerColor(playerid, 0xFF4700FF);
@@ -33,7 +33,7 @@ Bu, programı belirli argümanlarla bir işlevi çağırmaya yönlendiren bir if
 x + 8
 ```
 
-Bu bir ifade değildir çünkü sonuç başka bir yerde kullanılmaz, bu sadece bir [#İfade] dir.
+Bu bir ifade değildir çünkü sonuç başka bir yerde kullanılmaz, bu sadece bir [İfade](#i̇fade-1) dir.
 
 ### Bileşik İfade
 

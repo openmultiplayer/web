@@ -186,6 +186,6 @@ for (new i = 0; i < NPC_MAX_NODES; i++)
 ```
 ## Páginas relacionadas
 
-- [Constantes de Arma](constants#weapon-constants) - Para arma IDs usada com NPCs
+- [Constantes de Arma](constants#constantes-de-armas) - Para arma IDs usada com NPCs
 - [Estados do jogador](playerstates) - Para constantes de estado do jogador que podem ser aplicadas a NPCs
 - [Veículo IDs](vehicleid) - Para modelo de veículo IDs usado nas funções do veículo NPC

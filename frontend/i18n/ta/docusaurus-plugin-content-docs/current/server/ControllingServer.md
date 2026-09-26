@@ -38,7 +38,7 @@ password whatever
 
 விளையாட்டின் போது `/rcon login password` என தட்டச்சு செய்வதன் மூலம் உள்நுழையலாம் அல்லது [Remote Console](RemoteConsole) இல் RCON பயன்முறையைப் பயன்படுத்தி கேமிற்கு வெளியே உள்நுழையலாம்.
 
-கடவுச்சொல் நீங்கள் [server.cfg] (server.cfg) இல் அமைக்கப்பட்டுள்ளதைப் போலவே உள்ளது.
+கடவுச்சொல் நீங்கள் [server.cfg](server.cfg) இல் அமைக்கப்பட்டுள்ளதைப் போலவே உள்ளது.
 
 ### Adding Bans
 

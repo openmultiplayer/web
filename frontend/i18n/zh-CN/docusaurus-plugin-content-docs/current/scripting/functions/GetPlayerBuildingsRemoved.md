@@ -36,4 +36,3 @@ public OnPlayerConnect(playerid)
 ## 相关函数
 
 - [RemoveBuildingForPlayer](RemoveBuildingForPlayer): 为玩家移除指定范围内的建筑物
-- [RemoveBuildingForPlayerEx](RemoveBuildingForPlayerEx): （扩展功能）增强版建筑移除函数

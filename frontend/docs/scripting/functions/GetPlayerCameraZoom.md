@@ -35,6 +35,6 @@ This retrieves the zoom level of the GAME Camera (including Sniper scope), not t
 
 ## Related Functions
 
-- [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRation): Get the aspect ratio of a player's camera.
+- [GetPlayerCameraAspectRatio](GetPlayerCameraAspectRatio): Get the aspect ratio of a player's camera.
 - [GetPlayerCameraPos](GetPlayerCameraPos): Find out where the player's camera is.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector

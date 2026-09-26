@@ -58,7 +58,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 کالبک‌های زیر ممکن است مفید باشند، زیرا به نوعی با این کالبک مرتبط هستند.
 
 - [OnActorStreamOut](OnActorStreamOut): این کالبک زمانی فراخوانده می‌شود که اکتور توسط کلاینت بازیکن از stream خارج شود.
-- [OnActorStreamIn](OnActorStreamOut): این کالبک زمانی فراخوانده می‌شود که اکتور توسط کلاینت بازیکن به stream وارد شود.
+- [OnActorStreamIn](OnActorStreamIn): این کالبک زمانی فراخوانده می‌شود که اکتور توسط کلاینت بازیکن به stream وارد شود.
 
 ## توابع مرتبط
 

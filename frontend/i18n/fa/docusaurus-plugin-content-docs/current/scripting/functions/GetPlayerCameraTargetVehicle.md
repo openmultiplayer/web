@@ -72,6 +72,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## تابع‌های مرتبط
 
 - [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): شناسه بازیکنی که یک بازیکن به آن نگاه می‌کند را دریافت کنید.
-- [GetPlayerCameraTargetObject](GetplayerCameraTargetObject): شناسه آبجکتی که بازیکن به آن نگاه می‌کند را دریافت کنید.
+- [GetPlayerCameraTargetObject](GetPlayerCameraTargetObject): شناسه آبجکتی که بازیکن به آن نگاه می‌کند را دریافت کنید.
 - [EnablePlayerCameraTarget](EnablePlayerCameraTarget): توابع هدف‌گیری دوربین بازیکن را فعال کنید.
-- [GetPlayerCameraFrontVector](GetPlayercameraFrontVector): بردار جلویی دوربین بازیکن را دریافت کنید
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): بردار جلویی دوربین بازیکن را دریافت کنید

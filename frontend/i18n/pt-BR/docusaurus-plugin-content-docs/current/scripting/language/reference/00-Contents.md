@@ -69,10 +69,10 @@ Diagramado com TeX usando as fontes “Computer Modern” e “Palatino”, tama
 
 [Apêndices](Appendices) — páginas 148–183
 
-∟ [Mensagens de erro e aviso](Appendices#error-and-warning-messages) — páginas 148–168
+∟ [Mensagens de erro e aviso](Appendices#mensagens-de-erro) — páginas 148–168
 
-∟ [O compilador](Appendices#the-compiler) — páginas 168–174
+∟ [O compilador](Appendices#o-compilador) — páginas 168–174
 
 ∟ [Justificativa](Appendices#rationale) — páginas 174–181
 
-∟ [Licença](Appendices#license) — páginas 181–183
+∟ [Licença](Appendices#licença) — páginas 181–183

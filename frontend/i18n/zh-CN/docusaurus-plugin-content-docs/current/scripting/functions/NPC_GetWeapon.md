@@ -52,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_SetWeapon](NPC_SetWeapon): 设置 NPC 武器
 - [NPC_GetAmmo](NPC_GetAmmo): 获取 NPC 弹药
 - [NPC_SetAmmo](NPC_SetAmmo): 设置 NPC 弹药
-- [NPC_RemoveWeapon](NPC_RemoveWeapon): 移除 NPC 武器
 
 ## 相关回调
 

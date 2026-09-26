@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::warning
 
-وقتی آسیب نپذیر تنظیم بشه، actor دیگه [OnPlayerGiveDamageActor](OnPlayerGiveDamageActor) رو صدا نمی‌زنه. بازیکنا تغییر وضعیت آسیب نپذیری actor رو فقط وقتی می‌بینن که دوباره براشون restream بشه.
+وقتی آسیب نپذیر تنظیم بشه، actor دیگه [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor) رو صدا نمی‌زنه. بازیکنا تغییر وضعیت آسیب نپذیری actor رو فقط وقتی می‌بینن که دوباره براشون restream بشه.
 
 :::
 

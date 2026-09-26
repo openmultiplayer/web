@@ -52,5 +52,5 @@ Maaaring maging kapaki-pakinabang din ang mga sumusunod na callback, dahil nauug
 
 Maaaring maging kapaki-pakinabang ang mga sumusunod na function, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o iba pa.
 
-- [RemovePlayerFromVehicle](../functions/PutPlayerInVehicle): Itapon ang isang manlalaro sa labas ng kanilang sasakyan.
+- [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle): Itapon ang isang manlalaro sa labas ng kanilang sasakyan.
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Suriin kung saan nakaupo ang isang manlalaro.

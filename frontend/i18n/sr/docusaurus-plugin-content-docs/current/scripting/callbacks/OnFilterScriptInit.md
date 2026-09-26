@@ -25,6 +25,6 @@ public OnFilterScriptInit()
 
 Следеће повратне функције могу бити корисне, јер су на неки начин повезане са овом повратном функцијом.
 
-- [OnFilterSciptExit](OnFilterScriptExit): Ова повратна функција се позива када се филтер скрипта искључи.
+- [OnFilterScriptExit](OnFilterScriptExit): Ова повратна функција се позива када се филтер скрипта искључи.
 - [OnGameModeInit](OnGameModeInit): Ова повратна функција се позива када се gamemode покрене.
 - [OnGameModeExit](OnGameModeExit): Ова повратна функција се позива када се gamemode заврши.

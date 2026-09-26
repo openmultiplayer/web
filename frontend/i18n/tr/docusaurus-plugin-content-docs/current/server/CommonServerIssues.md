@@ -63,7 +63,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 Bu, 'out of order messages', yani oyuncularım belirli türdeki mesajları (iletişim paketleri) aşırı miktarda göndermelerini engellemek için olan sınırın aşılması durumunda meydana gelir.
 
-Daha fazla bilgi için, [bu bağlantıya](ControllingServer#rcon-commands) bakın.
+Daha fazla bilgi için, [bu bağlantıya](ControllingServer#rcon-komutları) bakın.
 
 ## Oyuncular sürekli "Unacceptable NickName" hatası alıyor, ancak geçerli
 

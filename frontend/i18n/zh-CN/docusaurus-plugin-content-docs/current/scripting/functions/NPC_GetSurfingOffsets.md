@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
         new Float:offsetX, Float:offsetY, Float:offsetZ;
-        NPC_GetSurfingOffset(npcid, offsetX, offsetY, offsetZ);
+        NPC_GetSurfingOffsets(npcid, offsetX, offsetY, offsetZ);
 
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d 冲浪偏移: X=%.2f, Y=%.2f, Z=%.2f", npcid, offsetX, offsetY, offsetZ);
         return 1;

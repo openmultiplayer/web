@@ -114,7 +114,7 @@ druk vervolgens op **F5** om te compileren.
 
 ## Stap 9
 
-Open het bestand **[config.json](https://www.open.mp/docs/server/config.json)** met Kladblok of een andere IDE
+Open het bestand **[config.json](config.json)** met Kladblok of een andere IDE
 
 ![](<https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(9).png>)
 

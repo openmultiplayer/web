@@ -168,7 +168,7 @@ MyFunction()
 
 ## Parameters
 
-Parameters are a type of [variable](start#variables) which you don't need to declare as they come from the place which called the function:
+Parameters are a type of [variable](../language/Variables) which you don't need to declare as they come from the place which called the function:
 
 ```c
 #include <a_samp>

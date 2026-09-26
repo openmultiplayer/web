@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-This function may not return accurate data when used under [OnPlayerDisconnect](OnPlayerDisconnect) if the player has quit normally. It usually returns accurate data if the player has been kicked or has timed out.
+This function may not return accurate data when used under [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) if the player has quit normally. It usually returns accurate data if the player has been kicked or has timed out.
 
 :::
 

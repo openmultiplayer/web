@@ -28,5 +28,3 @@ new Float:fFract = floatfract(3.14159); // 返回0.14159
 ## 相关函数
 
 - [floatround](floatround): 将浮点数转换为整数（四舍五入）
-- [floatfloor](floatfloor): 获取浮点数的整数部分（向下取整）
-- [floatceil](floatceil): 获取浮点数的整数部分（向上取整）

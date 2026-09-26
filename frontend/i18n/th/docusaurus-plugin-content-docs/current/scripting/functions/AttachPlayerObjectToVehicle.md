@@ -50,11 +50,11 @@ You need to create the object before attempting to attach it to a vehicle.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [CreatePlayerObject](CreateObject): Create an object for only one player.
-- [DestroyPlayerObject](DestroyObject): Destroy a player object.
-- [IsValidPlayerObject](IsValidObject): Checks if a certain player object is vaild.
-- [MovePlayerObject](MoveObject): Move a player object.
-- [StopPlayerObject](StopObject): Stop a player object from moving.
+- [CreatePlayerObject](CreatePlayerObject): Create an object for only one player.
+- [DestroyPlayerObject](DestroyPlayerObject): Destroy a player object.
+- [IsValidPlayerObject](IsValidPlayerObject): Checks if a certain player object is vaild.
+- [MovePlayerObject](MovePlayerObject): Move a player object.
+- [StopPlayerObject](StopPlayerObject): Stop a player object from moving.
 - [SetPlayerObjectRot](SetPlayerObjectRot): Set the rotation of a player object.
 - [GetPlayerObjectPos](GetPlayerObjectPos): Locate a player object.
 - [SetPlayerObjectPos](SetPlayerObjectPos): Set the position of a player object.

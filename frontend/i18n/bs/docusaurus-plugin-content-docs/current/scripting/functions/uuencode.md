@@ -34,5 +34,5 @@ uuencode(encodedString, normalString, 45);
 
 ## Srodne Funkcije
 
-- [Uudecode](Uudecode): Dekodirajte UU kodirani string.
-- [Memcpy](Memcpy): Kopirajte bajtove s jedne lokacije na drugu.
+- [uudecode](uudecode): Dekodirajte UU kodirani string.
+- [memcpy](memcpy): Kopirajte bajtove s jedne lokacije na drugu.

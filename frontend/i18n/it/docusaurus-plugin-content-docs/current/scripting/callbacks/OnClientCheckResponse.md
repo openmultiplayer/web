@@ -9,7 +9,7 @@ tags: ["client"]
 
 ## Descrizione
 
-Questo callback viene chiamato quando una richiesta di [SendClientCheck](SendClientCheck) è completata.
+Questo callback viene chiamato quando una richiesta di [SendClientCheck](../functions/SendClientCheck) è completata.
 
 | Nome       | Descrizione                       |
 | :--------- | :-------------------------------- |
@@ -54,8 +54,8 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 La seguente funzione potrebbe essere utile, in quanto è correlata a questo callback in un modo o nell'altro.
 
-- [SendClientCheck](SendClientCheck): Esegue un controllo della memoria sul client.
+- [SendClientCheck](../functions/SendClientCheck): Esegue un controllo della memoria sul client.
 
 ## Risorse Correlate
 
-- [opcodes](opcodes): ID degli opcode di azione e il loro scopo.
+- [opcodes](../resources/opcodes): ID degli opcode di azione e il loro scopo.

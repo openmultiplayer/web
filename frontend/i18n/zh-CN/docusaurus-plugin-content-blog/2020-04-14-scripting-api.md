@@ -159,12 +159,17 @@ main() {}
 main() {}
 ```
 
-你可能遇到的第一个错误是：`open.mp 脚本需要社区编译器，来自：`
-如果你遇到此错误，请前往 并下载编译器版本 3.10.10 或更高版本。对于正式发布版本，我们希望有一个集成了此编译器的 pawno 等效工具，但尚未完成。
+你可能遇到的第一个错误是：`open.mp scripts require the community compiler from: git.io/pawn-compiler`
+
+如果你遇到此错误，请前往 https://git.io/pawn-compiler 并下载编译器版本 3.10.10 或更高版本。对于正式发布版本，我们希望有一个集成了此编译器的 pawno 等效工具，但尚未完成。
 
 我**强烈建议**首先尝试用此编译器编译你的游戏模式，因为它重新启用了常量正确性警告，所以你可能会立即看到大量新警告（这**不是**编译器的问题，这些是你代码中始终存在但之前被忽略的问题）。
 
-你可能还想将这些头文件替换为：[https://github.com/pawn-lang/pawn-stdlib](https://github.com/pawn-lang/samp-stdlib)
+你可能还想将这些头文件替换为：
+
+https://github.com/pawn-lang/pawn-stdlib  
+https://github.com/pawn-lang/samp-stdlib
+
 即使不使用 open.mp，这样做也是一件好事，因为它们修复了原始头文件中的大量标签和常量问题。
 
 ### 警告

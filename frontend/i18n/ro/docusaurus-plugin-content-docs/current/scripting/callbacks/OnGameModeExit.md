@@ -35,4 +35,4 @@ Această funcție poate fi, de asemenea, utilizată într-un filterscript pentru
 
 - [OnGameModeInit](OnGameModeInit): Apelat când pornește un mod de joc.
 - [OnFilterScriptInit](OnFilterScriptInit): Apelat când este încărcat un filterscript.
-- [OnFilterSciptExit](OnFilterScriptExit): Apelat când un filterscript este descărcat.
+- [OnFilterScriptExit](OnFilterScriptExit): Apelat când un filterscript este descărcat.

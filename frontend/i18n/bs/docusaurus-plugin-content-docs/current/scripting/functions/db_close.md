@@ -15,9 +15,9 @@ Ova funkcija započinje malim slovom.
 
 Zatvara SQLite konekciju databaze kreirane sa [db_open](db_open).
 
-| Ime   | Deskripcija                                                                              |
-| ----- | ---------------------------------------------------------------------------------------- |
-| DB:db | Upravljanje konekcije databaze za zatvaranje (returnovan/vraćen od [db_open] (db_open)). |
+| Ime   | Deskripcija                                                                             |
+| ----- | --------------------------------------------------------------------------------------- |
+| DB:db | Upravljanje konekcije databaze za zatvaranje (returnovan/vraćen od [db_open](db_open)). |
 
 ## Returns
 
@@ -75,7 +75,7 @@ public OnGameModeExit()
 
 :::warning
 
-Upotreba nevaljanog upravitelja databaze koja nije nula srušit će vaš server! Nabavite važeći upravitelj databazom pomoću [db_open] (db_open).
+Upotreba nevaljanog upravitelja databaze koja nije nula srušit će vaš server! Nabavite važeći upravitelj databazom pomoću [db_open](db_open).
 
 :::
 

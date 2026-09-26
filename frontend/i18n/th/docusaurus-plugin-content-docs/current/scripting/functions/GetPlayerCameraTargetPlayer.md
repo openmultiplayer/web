@@ -46,5 +46,5 @@ Do not confuse this function with GetPlayerTargetPlayer. GetPlayerTargetPlayer r
 
 - [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor): Get the ID of the actor (if any) a player is looking at.
 - [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): Get the ID of the vehicle a player is looking at.
-- [GetPlayerCameraTargetObject](GetplayerCameraTargetObject): Get the ID of the object a player is looking at.
-- [GetPlayerCameraFrontVector](GetPlayercameraFrontVector): Get the player's camera front vector
+- [GetPlayerCameraTargetObject](GetPlayerCameraTargetObject): Get the ID of the object a player is looking at.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector

@@ -1,6 +1,6 @@
 ---
-title: NPC_SetSurfingOffset
-sidebar_label: NPC_SetSurfingOffset
+title: NPC_SetSurfingOffsets
+sidebar_label: NPC_SetSurfingOffsets
 description: Sets the surfing offset for an NPC.
 tags: ["npc", "surfing"]
 ---
@@ -79,7 +79,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Related Functions
 
-- [NPC_GetSurfingOffset](NPC_GetSurfingOffsets): Gets the surfing offset for an NPC
+- [NPC_GetSurfingOffsets](NPC_GetSurfingOffsets): Gets the surfing offset for an NPC
 - [NPC_SetSurfingObject](NPC_SetSurfingObject): Sets the object an NPC is surfing on
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): Sets the vehicle an NPC is surfing on
 - [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): Sets the player object an NPC is surfing on

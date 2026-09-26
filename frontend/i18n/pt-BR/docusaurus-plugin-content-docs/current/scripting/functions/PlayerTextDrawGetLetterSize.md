@@ -43,7 +43,7 @@ public OnPlayerConnect(playerid)
 ```
 ## Funções Relacionadas
 
-- [PlayerTextDrawCreate](PlayerTextDrawCreate): Crie um player-textdraw.
+- [CreatePlayerTextDraw](CreatePlayerTextDraw): Crie um player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destrua um player-textdraw.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Defina o tamanho da letra do texto em um player-textdraw.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Defina a cor do texto em um player-textdraw.

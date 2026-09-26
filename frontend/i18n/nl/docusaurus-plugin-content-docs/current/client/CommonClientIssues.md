@@ -50,7 +50,7 @@ Als je 2 monitors hebt, zijn er 3 opties:
 
 ### Mijn muis werkt niet na het sluiten van het pauzemenu
 
-Lijkt je muis ingame vast te zitten terwijl deze (deels) werkt in het pauzemenu, zet dan de `multicore`-optie in [sa-mp.cfg](ClientCommands#file-sa-mpcfg "Sa-mp.cfg") uit (zet op 0). Herhaaldelijk op Escape drukken tot de muis weer reageert kan ook helpen, maar is minder netjes.
+Lijkt je muis ingame vast te zitten terwijl deze (deels) werkt in het pauzemenu, zet dan de `multicore`-optie in [sa-mp.cfg](sa-mp.cfg "Sa-mp.cfg") uit (zet op 0). Herhaaldelijk op Escape drukken tot de muis weer reageert kan ook helpen, maar is minder netjes.
 
 ### Het bestand dinput8.dll ontbreekt
 

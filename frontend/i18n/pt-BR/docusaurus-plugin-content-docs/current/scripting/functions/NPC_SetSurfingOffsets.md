@@ -1,6 +1,6 @@
 ---
-title: NPC_SetSurfingOffset
-sidebar_label: NPC_SetSurfingOffset
+title: NPC_SetSurfingOffsets
+sidebar_label: NPC_SetSurfingOffsets
 description: "Define o deslocamento de navegação para um NPC."
 tags: ["npc", "surfing"]
 ---
@@ -79,7 +79,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Funções Relacionadas
 
-- [NPC_GetSurfingOffset](NPC_GetSurfingOffsets): Obtém o deslocamento de navegação para um NPC
+- [NPC_GetSurfingOffsets](NPC_GetSurfingOffsets): Obtém o deslocamento de navegação para um NPC
 - [NPC_SetSurfingObject](NPC_SetSurfingObject): Define o objeto em que um NPC está navegando
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): Define o veículo em que um NPC está navegando
 - [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): Define o objeto do jogador em que um NPC está navegando

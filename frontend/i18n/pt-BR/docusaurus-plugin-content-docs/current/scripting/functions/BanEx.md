@@ -70,5 +70,5 @@ Qualquer ação realizada diretamente antes do Ban() (como enviar uma mensagem c
 
 ## Funções Relacionadas
 
-- [BanEx](Ban): Bane um jogador do servidor.
+- [Ban](Ban): Bane um jogador do servidor.
 - [Kick](Kick): Expulsa um jogador do servidor.

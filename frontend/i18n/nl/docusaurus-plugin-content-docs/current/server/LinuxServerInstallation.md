@@ -3,7 +3,7 @@ Of je nu beginner bent of je kennis wilt opfrissen, hier vind je vast iets nutti
 
 :::warning
 
-Gebruik je nog de SA:MP-server en ben je nog niet over op open.mp, **[stop hier en lees eerst deze guide.](https://www.open.mp/docs/server/Installation)**
+Gebruik je nog de SA:MP-server en ben je nog niet over op open.mp, **[stop hier en lees eerst deze guide.](Installation)**
 
 :::
 

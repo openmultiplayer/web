@@ -1548,7 +1548,7 @@ Não deixe este exemplo controlar ou limitar suas expectativas sobre o que é po
 #### Referências
 
 - [GTA San Andreas](https://www.rockstargames.com/sanandreas/)
-- [Desenhar texto](../scripting/resources/textdraws#what-is-a-textdraw)
+- [Desenhar texto](../scripting/resources/textdraws#o-que-é-um-textdraw)
 - [Texto do jogo](../scripting/functions/GameTextForPlayer)
 - [Limitações](../scripting/resources/limits)
 - [ASCII](https://en.wikipedia.org/wiki/ASCII)

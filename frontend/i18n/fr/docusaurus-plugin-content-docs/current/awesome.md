@@ -34,7 +34,7 @@ description: Liste exhaustive d'outils, de librairies et de plugins SA:MP néces
 - **[progress2](https://github.com/Southclaws/progress2)** - Affichez l'heure, la santé, le carburant du véhicule et d'autres éléments sous forme de barre progressive.
 - **[weapon-data](https://github.com/Southclaws/samp-weapon-data)** - Données d'armes finement réglées et personnalisables.
 - **[MV_Youtube](https://github.com/MichaelBelgium/MV_Youtube)** - API Youtube Converter pour le flux audio.
-- ** [Instructions préparées MySQL] (https://github.com/PatrickGTR/MySQL-Prepared-Statements) ** - Émulation d'instructions préparées pour le plug-in PAWN MySQL.
+- **[Instructions préparées MySQL](https://github.com/PatrickGTR/MySQL-Prepared-Statements)** - Émulation d'instructions préparées pour le plug-in PAWN MySQL.
 - **[samp-server-weapons](https://github.com/Brunoo16/samp-server-weapons)** - Armes totalement contrôlées par le serveur.
 - **[actor_robbery](https://github.com/PatrickGTR/actor_robbery)** - Inspiré du vol de magasin GTA V. actor_robbery.inc l'imite !
 - **[samp-aviation](https://github.com/Southclaws/samp-aviation)** - Un pilote automatique de base basé sur l'altitude et le roulis pour SA-MP.
@@ -51,7 +51,7 @@ description: Liste exhaustive d'outils, de librairies et de plugins SA:MP néces
 - **[strlib](https://github.com/oscar-broman/strlib)** - Une liste de fonctions de chaîne utiles.
 - **[mathutil](https://github.com/ScavengeSurvive/mathutil)** - Une liste de fonctions mathématiques utiles.
 - **[rotations.inc](https://github.com/sampctl/rotations.inc)** - Une liste de fonctions de rotation utiles par rotations.inc de Nero_3D.
-- ** [Fonctions de distance SA-MP] (https://github.com/Y-Less/samp-distance) ** - Une liste de fonctions de contrôle de distance utiles.
+- **[Fonctions de distance SA-MP](https://github.com/Y-Less/samp-distance)** - Une liste de fonctions de contrôle de distance utiles.
 - **[Nouveaux rappels SA-MP](https://github.com/emmet-jones/New-SA-MP-callbacks)** - Une liste de nouvelles fonctions de rappel utiles.
 - **[Dialogues alternatifs](https://github.com/NexiusTailer/Alternative-Dialogs)** - Dialogues Textdraw avec un nouveau design.
 - **[eSelection](https://github.com/TommyB123/eSelection)** - Ajoute la possibilité de créer des menus de sélection de modèles dynamiques dans vos modes de jeu SA-MP.

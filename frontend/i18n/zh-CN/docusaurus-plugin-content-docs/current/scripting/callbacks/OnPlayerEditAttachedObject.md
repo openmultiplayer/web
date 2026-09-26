@@ -111,5 +111,4 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 - [EditAttachedObject](../functions/EditAttachedObject)：进入附加物体编辑模式
 - [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject)：为玩家附加物体
 - [RemovePlayerAttachedObject](../functions/RemovePlayerAttachedObject)：移除玩家的附加物体
-- [IsPlayerEditingAttachedObject](../functions/IsPlayerEditingAttachedObject)：检测玩家是否正在编辑附加物体
 - [CancelEdit](../functions/CancelEdit)：取消物体编辑

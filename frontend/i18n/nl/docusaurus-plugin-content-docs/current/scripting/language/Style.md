@@ -21,7 +21,7 @@ Een statement is code die het programma imperatief iets laat doen en een resulta
 a = b + c;
 ```
 
-Dit is een statement waarin een variabele het resultaat van een [#Expressie] krijgt.
+Dit is een statement waarin een variabele het resultaat van een [Expressie](#expressie) krijgt.
 
 ```c
 SetPlayerColor(playerid, 0xFF4700FF);
@@ -33,7 +33,7 @@ Dit is een statement dat een functie met argumenten aanroept.
 x + 8
 ```
 
-Dit is géén statement; het resultaat wordt nergens gebruikt. Dit is alleen een [#Expressie].
+Dit is géén statement; het resultaat wordt nergens gebruikt. Dit is alleen een [Expressie](#expressie).
 
 ### Compound Statement
 

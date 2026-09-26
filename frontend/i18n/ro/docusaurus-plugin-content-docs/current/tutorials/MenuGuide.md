@@ -11,7 +11,7 @@ Meniurile arată foarte complicat și greu de redactat pentru cei mai mulți juc
 
 ## Primii pași din meniu
 
-Mai întâi trebuie să creăm un meniu. Prefixul dinainte este `Menu:` aceasta face ca variabila să fie corectă [etichetata](../scripting/language/tags). Există diferite tipuri pentru utilizări diferite, cum ar fi "Float:" bool: "Text3D:" etc. Scrieți următorul cod în partea de sus a scriptului:
+Mai întâi trebuie să creăm un meniu. Prefixul dinainte este `Menu:` aceasta face ca variabila să fie corectă [etichetata](../scripting/language/Tags). Există diferite tipuri pentru utilizări diferite, cum ar fi "Float:" bool: "Text3D:" etc. Scrieți următorul cod în partea de sus a scriptului:
 
 ```c
 new Menu:teleportmenu;

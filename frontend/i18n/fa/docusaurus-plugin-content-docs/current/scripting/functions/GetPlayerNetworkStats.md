@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-این تابع ممکن است داده‌های دقیقی برنگرداند زمانی که در [OnPlayerDisconnect](OnPlayerDisconnect) استفاده شود اگر بازیکن به طور عادی quit کرده باشد. معمولاً داده‌های دقیقی برمی‌گرداند اگر بازیکن kicked شده یا timeout داشته باشد.
+این تابع ممکن است داده‌های دقیقی برنگرداند زمانی که در [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) استفاده شود اگر بازیکن به طور عادی quit کرده باشد. معمولاً داده‌های دقیقی برمی‌گرداند اگر بازیکن kicked شده یا timeout داشته باشد.
 
 :::
 

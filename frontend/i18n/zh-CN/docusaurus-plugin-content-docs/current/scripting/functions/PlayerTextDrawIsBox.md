@@ -48,7 +48,7 @@ public OnPlayerConnect(playerid)
 
 ## 相关函数
 
-- [PlayerTextDrawCreate](PlayerTextDrawCreate): 创建玩家文本绘图
+- [CreatePlayerTextDraw](CreatePlayerTextDraw): 创建玩家文本绘图
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): 销毁玩家文本绘图
 - [PlayerTextDrawUseBox](PlayerTextDrawUseBox): 切换玩家文本绘图的方框显示
 - [PlayerTextDrawColor](PlayerTextDrawColor): 设置玩家文本绘图的文本颜色

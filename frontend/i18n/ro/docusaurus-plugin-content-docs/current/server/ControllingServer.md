@@ -35,7 +35,7 @@ password orice
 
 ### Cum să vă logați în RCON
 
-Puteți să vă logați dacă tastați `/rcon login parola` în joc sau dacă folosiți modul RCON în [Remote Console](remoteconsole).
+Puteți să vă logați dacă tastați `/rcon login parola` în joc sau dacă folosiți modul RCON în [Remote Console](RemoteConsole).
 
 Parola va fi aceeași ca și în [server.cfg](server.cfg).
 

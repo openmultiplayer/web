@@ -38,7 +38,7 @@ if (IsPlayerObjectMoving(playerid, objectid))
 - [SetPlayerObjectRot](SetPlayerObjectRot): Postavi rotaciju player objekta.
 - [GetPlayerObjectPos](GetPlayerObjectPos): Lociraj player objekat.
 - [GetPlayerObjectRot](GetPlayerObjectRot): Provjeri rotaciju player objekta.
-- [AttachPlayerObjectToPlayer](AttachObjectToPlayer): Prikvači player objekat za igrača.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Prikvači player objekat za igrača.
 - [CreateObject](CreateObject): Kreiraj objekat.
 - [DestroyObject](DestroyObject): Uništi objekat.
 - [IsValidObject](IsValidObject): Provjeri da li je određeni objekat validan.

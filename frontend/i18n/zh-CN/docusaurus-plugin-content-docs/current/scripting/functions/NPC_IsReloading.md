@@ -51,7 +51,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 相关函数
 
 - [NPC_EnableReloading](NPC_EnableReloading): 启用/禁用换弹
-- [NPC_Reload](NPC_Reload): 强制 NPC 换弹
 - [NPC_GetAmmoInClip](NPC_GetAmmoInClip): 获取弹夹中的弹药
 - [NPC_GetWeaponReloadTime](NPC_GetWeaponReloadTime): 获取换弹时间
 

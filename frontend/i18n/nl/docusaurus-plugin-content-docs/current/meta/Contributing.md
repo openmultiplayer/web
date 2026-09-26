@@ -14,7 +14,7 @@ Onderaan elke pagina staat een knop die je naar de GitHub-pagina voor bewerken b
 
 ![Link "Bewerk deze pagina" aanwezig op elke wikipagina](https://assets.open.mp/assets/images/contributing/edit-this-page.png)
 
-Als voorbeeld: klikken op [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity.md) brengt je naar [deze pagina](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.mdxx) waar je (als je bent aangemeld bij GitHub) een teksteditor krijgt om wijzigingen aan het bestand te maken.
+Als voorbeeld: klikken op [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) brengt je naar [deze pagina](https://github.com/openmultiplayer/web/edit/master/frontend/docs/scripting/functions/SetVehicleAngularVelocity.md) waar je (als je bent aangemeld bij GitHub) een teksteditor krijgt om wijzigingen aan het bestand te maken.
 
 Maak je wijziging en dien een "Pull Request" in. Dit betekent dat de Wiki-beheerders en andere communityleden je wijziging kunnen beoordelen, bespreken of er extra wijzigingen nodig zijn en deze vervolgens samenvoegen.
 

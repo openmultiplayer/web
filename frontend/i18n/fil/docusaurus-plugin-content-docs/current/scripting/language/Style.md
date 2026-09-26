@@ -21,7 +21,7 @@ Ang `statement` ay isang pirasong code na nagsasabi sa host program na gawen ang
 a = b + c;
 ```
 
-Eto ang isang statement na kinokompose ng variable na nakaassign dito ang isang resulta na tinatawag na [#Expression]
+Eto ang isang statement na kinokompose ng variable na nakaassign dito ang isang resulta na tinatawag na [Expression](#expression)
 
 ```c
 SetPlayerColor(playerid, 0xFF4700FF);
@@ -33,7 +33,7 @@ Eto ay statement na nagsasabi sa program na tumawag ng function na may arugmento
 x + 8
 ```
 
-Ang isang to ay _HINDI_ statement kasi yung resulta ay hindi naman ginagamit kahit saan, eto ay isang [#Expression] lamang.
+Ang isang to ay _HINDI_ statement kasi yung resulta ay hindi naman ginagamit kahit saan, eto ay isang [Expression](#expression) lamang.
 
 ### Compound Statement
 

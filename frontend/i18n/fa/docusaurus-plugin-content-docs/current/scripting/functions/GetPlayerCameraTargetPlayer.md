@@ -42,5 +42,5 @@ if (IsPlayerAdmin(playerTarget))
 
 - [GetPlayerCameraTargetActor](GetPlayerCameraTargetActor): شناسه اکتوری (اگر وجود داشته باشد) که بازیکن به آن نگاه می‌کند را دریافت کنید.
 - [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): شناسه وسیله نقلیه‌ای که بازیکن به آن نگاه می‌کند را دریافت کنید.
-- [GetPlayerCameraTargetObject](GetplayerCameraTargetObject): شناسه آبجکتی که بازیکن به آن نگاه می‌کند را دریافت کنید.
-- [GetPlayerCameraFrontVector](GetPlayercameraFrontVector): بردار جلویی دوربین بازیکن را دریافت کنید
+- [GetPlayerCameraTargetObject](GetPlayerCameraTargetObject): شناسه آبجکتی که بازیکن به آن نگاه می‌کند را دریافت کنید.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): بردار جلویی دوربین بازیکن را دریافت کنید

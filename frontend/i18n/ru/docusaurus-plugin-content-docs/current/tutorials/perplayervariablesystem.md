@@ -40,7 +40,7 @@ description: Система переменных для каждого игро�
 - [GetPVarString](../scripting/functions/GetPVarString): получить значение переменной игрока, как строку.
 - [SetPVarFloat](../scripting/functions/SetPVarFloat): установить переменной игрока значение с плавающей точкой.
 - [GetPVarFloat](../scripting/functions/GetPVarFloat): получить значение переменной игрока, как число с плавающей точкой.
-- [DeletePVar](../scripting/functions/GetPVarFloat): удалить переменную игрока.
+- [DeletePVar](../scripting/functions/DeletePVar): удалить переменную игрока.
 
 ```c
 #define PLAYER_VARTYPE_NONE   (0)

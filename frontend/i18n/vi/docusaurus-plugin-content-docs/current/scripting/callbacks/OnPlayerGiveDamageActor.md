@@ -58,7 +58,7 @@ Hàm này không được gọi nếu diễn viên được đặt là bất kh�
 Các callback sau đây có thể hữu ích vì chúng liên quan đến callback này theo một cách nào đó.
 
 - [OnActorStreamOut](OnActorStreamOut): Callback này được gọi khi một diễn viên bị stream ra khỏi máy khách của người chơi.
-- [OnActorStreamIn](OnActorStreamOut): Callback này được gọi khi một diễn viên được stream vào máy khách của người chơi.
+- [OnActorStreamIn](OnActorStreamIn): Callback này được gọi khi một diễn viên được stream vào máy khách của người chơi.
 
 ## Các Hàm Liên Quan
 

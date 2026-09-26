@@ -63,7 +63,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 当乱序消息数量触发 messageholelimit 设置时出现。
 
-更多信息请参阅[此文档](ControllingServer#rcon-commands)
+更多信息请参阅[此文档](ControllingServer#rcon-命令)
 
 ## 玩家持续收到"昵称不合法"错误但实际有效
 

@@ -50,7 +50,7 @@ As funções a seguir podem ser úteis, pois estão relacionadas a esse callback
 - [NPC_Respawn](../functions/NPC_Respawn): Reaparece um NPC
 - [NPC_Spawn](../functions/NPC_Spawn): Gera um NPC pela primeira vez
 - [NPC_SetHealth](../functions/NPC_SetHealth): Definir a saúde de NPC
-- [NPC_SetPosition](../functions/NPC_SetPosition): Defina a posição de NPC
+- [NPC_SetPos](../functions/NPC_SetPos): Defina a posição de NPC
 
 ## Callbacks Relacionadas
 

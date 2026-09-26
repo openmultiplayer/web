@@ -3,7 +3,7 @@ title: Partes do Corpo
 sidebar_label: Partes do Corpo
 ---
 
-Para ser usado com [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamags), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) e [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
+Para ser usado com [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) e [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
 
 | ID  | Partes do Corpo |
 | --- | --------------- |

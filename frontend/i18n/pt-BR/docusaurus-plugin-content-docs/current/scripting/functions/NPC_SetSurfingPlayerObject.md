@@ -56,7 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_GetSurfingPlayerObject](NPC_GetSurfingPlayerObject): Obtém o objeto do jogador em que um NPC está navegando
 - [NPC_SetSurfingObject](NPC_SetSurfingObject): Define o objeto em que um NPC está navegando
 - [NPC_SetSurfingVehicle](NPC_SetSurfingVehicle): Define o veículo em que um NPC está navegando
-- [NPC_SetSurfingOffset](NPC_SetSurfingOffset): Define o deslocamento de navegação para um NPC
+- [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): Define o deslocamento de navegação para um NPC
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): redefine todos os dados de navegação para um NPC
 
 ## Callbacks Relacionadas

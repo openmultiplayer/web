@@ -41,7 +41,7 @@ Ezek a visszahívások hasznosak lehetnek mivel valamilyen módon kapcsolódik e
 
 [OnGameModeInit](OnGameModeInit): Ezt a visszahívást akkor hívja meg amikor egy játékmód elindul.
 [OnFilterScriptInit](OnFilterScriptInit): Ezt a visszahívást akkor hívja meg amikor egy filterszkript elindul.
-[OnFilterSciptExit](OnFilterScriptExit): Ezt a visszahívást akkor hívja meg amikor egy filterszkript leáll.
+[OnFilterScriptExit](OnFilterScriptExit): Ezt a visszahívást akkor hívja meg amikor egy filterszkript leáll.
 
 ## Kapcsolodó funkciók
 

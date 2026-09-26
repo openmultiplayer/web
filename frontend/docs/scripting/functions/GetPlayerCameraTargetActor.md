@@ -76,7 +76,7 @@ This function is disabled by default to save bandwidth. Use [EnablePlayerCameraT
 ## Related Functions
 
 - [GetPlayerTargetActor](GetPlayerTargetActor): Gets id of an actor which is aimed by certain player.
-- [GetPlayerCameraTargetPlayer](GetPlayerCameratargetPlayer): Get the ID of the player a player is looking at.
+- [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): Get the ID of the player a player is looking at.
 - [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): Get the ID of the vehicle a player is looking at.
 - [GetPlayerCameraTargetObject](GetPlayerCameraTargetObject): Get the ID of the object a player is looking at.
-- [GetPlayerCameraFrontVector](GetPlayerCaemraFrontVector): Get the player's camera front vector
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Get the player's camera front vector

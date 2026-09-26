@@ -33,4 +33,4 @@ uudecode(normalString, encodedString);
 
 ## Srodne Funkcije
 
-- [uuencode](Uuencode): Kodirajte string u UU dekodirani string.
+- [uuencode](uuencode): Kodirajte string u UU dekodirani string.

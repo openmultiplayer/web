@@ -55,7 +55,7 @@ PAWN é case-sensitive (sensível a maiúsculas e minúsculas). GetPlayerIP não
 - [NetStats_GetIpPort](NetStats_GetIpPort): Obtém o IP e porta de um jogador.
 - [GetPlayerName](GetPlayerName): Obtém o nome de um jogador.
 - [GetPlayerPing](GetPlayerPing): Obtém o ping de um jogador.
-- [GetPlayerVersion](GetPlayerVerion): Obtém a versão-client do jogador.
+- [GetPlayerVersion](GetPlayerVersion): Obtém a versão-client do jogador.
 - [OnIncomingConnection](../callbacks/OnIncomingConnection): É chamado quando um jogador está tentando se conectar ao servidor.
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): É chamado quando um jogador se conecta ao servidor.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): É chamado quando um jogador sai do servidor.

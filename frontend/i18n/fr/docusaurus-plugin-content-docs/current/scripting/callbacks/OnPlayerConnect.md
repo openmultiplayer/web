@@ -42,4 +42,4 @@ public OnPlayerConnect(playerid)
 
 ## Callback connexe
 
-- [OnPlayerDisconnect](OnPlayerDisonnect) : Quand un joueur se déconnecte du serveur.
+- [OnPlayerDisconnect](OnPlayerDisconnect) : Quand un joueur se déconnecte du serveur.

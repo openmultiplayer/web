@@ -56,6 +56,6 @@ Cada pintura contém informações sobre o ID e o nome do veículo.
 ## Funções Relacionadas
 
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Altere a pintura de um veículo.
-- [ChangeVehicleColor](ChangeVehicleColor): Defina a cor de um veículo.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): Defina a cor de um veículo.
 
 - [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): Chamado quando a pintura de um veículo é alterada.

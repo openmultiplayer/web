@@ -21,9 +21,9 @@ Ova funkcija je dodana u SA-MP 0.3.7 R1 i ne radi u nižim verzijama!
 
 Dobiva memorijski upravitelj za vezu SQLite databaze koja je otvorena s [db_open](db_open)].
 
-| Ime   | Deskripcija                                            |
-| ----- | ------------------------------------------------------ |
-| DB:db | Indeks upita (returna/vraća ga [db_query] (db_query)). |
+| Ime   | Deskripcija                                           |
+| ----- | ----------------------------------------------------- |
+| DB:db | Indeks upita (returna/vraća ga [db_query](db_query)). |
 
 ## Returns
 
@@ -80,14 +80,14 @@ public OnGameModeExit()
 
 :::warning
 
-Upotreba nevaljanog upravitelja databaze koja nije nula srušit će vaš server! Nabavite važeći upravitelj databazom pomoću [db_open] (db_open).
+Upotreba nevaljanog upravitelja databaze koja nije nula srušit će vaš server! Nabavite važeći upravitelj databazom pomoću [db_open](db_open).
 
 :::
 
 ## Srodne Funkcije
 
 - [db_open](db_open): Otvori konekciju do SQLite databaze.
-- [db_close](b_close): Zatvori konekciju do SQLite databaze.
+- [db_close](db_close): Zatvori konekciju do SQLite databaze.
 - [db_query](db_query): Upitajte SQLite bazu podataka.
 - [db_free_result](db_free_result): Oslobodite memoriju rezultata iz db_query.
 - [db_num_rows](db_num_rows): Dobijte broj redaka u rezultatu.

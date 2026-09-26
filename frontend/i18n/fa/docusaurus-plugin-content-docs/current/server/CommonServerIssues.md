@@ -63,7 +63,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 نشان داده می‌شود زمانی اتفاق می‌افتد که 'پیام‌های خارج از ترتیب' از تنظیم messageholelimit دوباره استفاده می‌کند.
 
-برای اطلاعات بیشتر در مورد این موضوع، به [اینجا](ControllingServer#rcon-commands) مراجعه کنید
+برای اطلاعات بیشتر در مورد این موضوع، به [اینجا](ControllingServer#دستورات-rcon) مراجعه کنید
 
 ## بازیکنان مدام خطای "Unacceptable NickName" دریافت می‌کنند اما معتبر است
 

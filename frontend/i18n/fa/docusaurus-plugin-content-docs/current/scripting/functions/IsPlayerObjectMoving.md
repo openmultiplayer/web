@@ -48,7 +48,7 @@ public OnPlayerConnect(playerid)
 - [SetPlayerObjectRot](SetPlayerObjectRot): تنظیم چرخش یه player object.
 - [GetPlayerObjectPos](GetPlayerObjectPos): مکان‌یابی یه player object.
 - [GetPlayerObjectRot](GetPlayerObjectRot): چک کردن چرخش یه player object.
-- [AttachPlayerObjectToPlayer](AttachObjectToPlayer): اتصال یه player object به بازیکن.
+- [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): اتصال یه player object به بازیکن.
 - [CreateObject](CreateObject): ساخت یه آبجکت.
 - [DestroyObject](DestroyObject): نابود کردن یه آبجکت.
 - [IsValidObject](IsValidObject): چک می‌کنه که آیا یه آبجکت خاص معتبره یا نه.

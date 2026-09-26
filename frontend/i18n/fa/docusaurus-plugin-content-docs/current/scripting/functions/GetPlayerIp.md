@@ -57,7 +57,7 @@ IPهای بازیکنان را در [OnPlayerConnect](../callbacks/OnPlayerConne
 - [GetPlayerRawIp](GetPlayerRawIp): دریافت Raw IP بازیکن.
 - [GetPlayerName](GetPlayerName): دریافت نام بازیکن.
 - [GetPlayerPing](GetPlayerPing): دریافت پینگ بازیکن.
-- [GetPlayerVersion](GetPlayerVerion): دریافت نسخه کلاینت بازیکن.
+- [GetPlayerVersion](GetPlayerVersion): دریافت نسخه کلاینت بازیکن.
 
 ## کالبک‌های مرتبط
 

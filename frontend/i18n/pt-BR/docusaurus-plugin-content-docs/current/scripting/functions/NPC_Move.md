@@ -12,15 +12,15 @@ tags: ["npc", "movement"]
 
 Faz um movimento NPC para uma posição específica.
 
-| Nome | Descrição |
-| ---------------------- | ---------------------------------------------------------------------------------------------- |
-| npcid | O ID do NPC.                                                                             |
-| Float:x | A coordenada X para a qual mover.                                                                   |
-| Float:y | A coordenada Y para a qual mover.                                                                   |
-| Float:z | A coordenada Z para a qual mover.                                                                   |
-| NPC_MOVE_TYPE:moveType | [O tipo de movimento](../resources/npc-constants#movement-types) (padrão: `NPC_MOVE_TYPE_JOG`). |
-| Float:moveSpeed | [Velocidade de movimento](../resources/npc-constants#movement-speed) (padrão: `NPC_MOVE_SPEED_AUTO`).  |
-| Float:stopRange | Distância até o alvo antes de parar (padrão: 0,2).                                             |
+| Nome                   | Descrição                                                                                                      |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------- |
+| npcid                  | O ID do NPC.                                                                                                   |
+| Float:x                | A coordenada X para a qual mover.                                                                              |
+| Float:y                | A coordenada Y para a qual mover.                                                                              |
+| Float:z                | A coordenada Z para a qual mover.                                                                              |
+| NPC_MOVE_TYPE:moveType | [O tipo de movimento](../resources/npc-constants#tipos-de-movimento) (padrão: `NPC_MOVE_TYPE_JOG`).            |
+| Float:moveSpeed        | [Velocidade de movimento](../resources/npc-constants#velocidade-de-movimento) (padrão: `NPC_MOVE_SPEED_AUTO`). |
+| Float:stopRange        | Distância até o alvo antes de parar (padrão: 0,2).                                                             |
 
 ## Retornos
 

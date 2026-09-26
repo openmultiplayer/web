@@ -59,6 +59,6 @@ Esta função está desabilitada por padrão para economizar largura de banda. U
 
 ## Funções Relacionadas
 
-- [GetPlayerCameraTargetVehicle](GetplayerCameraTargetVehicle): Obtenha o ID do veículo que o jogador está olhando.
-- [GetPlayerCameraTargetPlayer](GetplayerCameraTargetPlayer): Obtenha o ID do jogador que um jogador está olhando.
+- [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): Obtenha o ID do veículo que o jogador está olhando.
+- [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): Obtenha o ID do jogador que um jogador está olhando.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Obtenha o vetor frontal da câmera do jogador

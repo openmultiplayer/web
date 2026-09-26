@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 :::warning
 
-This function can only be used in [OnGameModeInit](OnGameModeInit). For other times, see [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer).
+This function can only be used in [OnGameModeInit](../callbacks/OnGameModeInit). For other times, see [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer).
 
 :::
 

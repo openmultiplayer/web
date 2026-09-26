@@ -58,7 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_GetAmmoInClip](NPC_GetAmmoInClip): 获取弹匣中的弹药
 - [NPC_GetWeaponClipSize](NPC_GetWeaponClipSize): 获取最大弹匣容量
-- [NPC_GiveWeapon](NPC_GiveWeapon): 给 NPC 武器
+- [NPC_SetWeapon](NPC_SetWeapon): 设置 NPC 武器
 - [NPC_GetAmmo](NPC_GetAmmo): 获取总弹药
 
 ## 相关回调

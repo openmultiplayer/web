@@ -31,6 +31,6 @@ tags: ["参数", "命令行参数"]
 
 ## 相关函数
 
-- [argcount](参数数量): 获取命令行参数总数
-- [argindex](参数索引): 通过索引获取参数名称
-- [argstr](参数字符串): 获取参数的字符串类型值
+- [argcount](argcount): 获取命令行参数总数
+- [argindex](argindex): 通过索引获取参数名称
+- [argstr](argstr): 获取参数的字符串类型值

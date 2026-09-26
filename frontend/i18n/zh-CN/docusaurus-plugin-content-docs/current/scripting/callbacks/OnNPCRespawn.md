@@ -50,7 +50,7 @@ public OnNPCRespawn(npcid)
 - [NPC_Respawn](../functions/NPC_Respawn): 重生 NPC
 - [NPC_Spawn](../functions/NPC_Spawn): 首次生成 NPC
 - [NPC_SetHealth](../functions/NPC_SetHealth): 设置 NPC 的生命值
-- [NPC_SetPosition](../functions/NPC_SetPosition): 设置 NPC 的位置
+- [NPC_SetPos](../functions/NPC_SetPos): 设置 NPC 的位置
 
 ## 相关回调
 

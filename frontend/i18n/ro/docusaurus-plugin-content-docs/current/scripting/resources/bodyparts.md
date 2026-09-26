@@ -3,7 +3,7 @@ title: Partile corpului
 sidebar_label: Partile corpului
 ---
 
-Se foloseste cu [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamags), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) si [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
+Se foloseste cu [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) si [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
 
 | ID  | Body Part      |
 | --- | -------------- |

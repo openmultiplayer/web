@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_SetSurfingObject](NPC_SetSurfingObject): Sets the object an NPC is surfing on
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): Gets the vehicle an NPC is surfing on
 - [NPC_GetSurfingPlayerObject](NPC_GetSurfingPlayerObject): Gets the player object an NPC is surfing on
-- [NPC_GetSurfingOffset](NPC_GetSurfingOffsets): Gets the surfing offset for an NPC
+- [NPC_GetSurfingOffsets](NPC_GetSurfingOffsets): Gets the surfing offset for an NPC
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): Resets all surfing data for an NPC
 
 ## Related Callbacks

@@ -33,4 +33,4 @@ De volgende callbacks kunnen nuttig zijn, omdat ze gerelateerd zijn aan deze cal
 
 - [OnGameModeExit](OnGameModeExit): Deze callback wordt aangeroepen wanneer een gamemode eindigt.
 - [OnFilterScriptInit](OnFilterScriptInit): Deze callback wordt aangeroepen wanneer een filterscript wordt geladen.
-- [OnFilterSciptExit](OnFilterScriptExit): Deze callback wordt aangeroepen wanneer een filterscript wordt uitgezet.
+- [OnFilterScriptExit](OnFilterScriptExit): Deze callback wordt aangeroepen wanneer een filterscript wordt uitgezet.

@@ -21,7 +21,7 @@ O declarație este o bucată de cod care spune imperativ programului gazdă să 
 a = b + c;
 ```
 
-Aceasta este o declarație compusă dintr-o variabilă căreia i se atribuie rezultatul unei [#Expression].
+Aceasta este o declarație compusă dintr-o variabilă căreia i se atribuie rezultatul unei [Expression](#expresie).
 
 ```c
 SetPlayerColor(playerid, 0xFF4700FF);
@@ -33,7 +33,7 @@ Aceasta este o declarație care spune programului să apeleze o funcție cu cât
 x + 8
 ```
 
-Aceasta _nu_ este o declarație, deoarece rezultatul nu este folosit nicăieri, acesta este doar un [#Expression].
+Aceasta _nu_ este o declarație, deoarece rezultatul nu este folosit nicăieri, acesta este doar un [Expression](#expresie).
 
 ### Declarație compusă
 

@@ -21,7 +21,7 @@ Dobiva broj otvorenih konekcija/veza databaza u svrhu otklanjanja pogrešaka.
 ## Srodne Funkcije
 
 - [db_open](db_open): Otvori konekciju do SQLite databaze.
-- [db_close](b_close): Zatvori konekciju do SQLite databaze.
+- [db_close](db_close): Zatvori konekciju do SQLite databaze.
 - [db_query](db_query): Upitajte SQLite bazu podataka.
 - [db_free_result](db_free_result): Oslobodite memoriju rezultata iz db_query.
 - [db_num_rows](db_num_rows): Dobijte broj redaka u rezultatu.

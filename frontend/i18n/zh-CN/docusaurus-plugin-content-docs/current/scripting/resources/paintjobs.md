@@ -55,5 +55,5 @@ description: 可应用于特定车辆的预设涂装方案。
 ## 相关函数
 
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): 更换车辆涂装
-- [ChangeVehicleColor](ChangeVehicleColor): 设置车辆颜色
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): 设置车辆颜色
 - [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): 当车辆涂装被修改时触发

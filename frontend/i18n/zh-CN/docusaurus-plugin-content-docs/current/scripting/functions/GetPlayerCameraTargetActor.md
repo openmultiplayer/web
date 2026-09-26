@@ -75,7 +75,7 @@ public OnPlayerUpdate(playerid)
 ## 相关函数
 
 - [GetPlayerTargetActor](GetPlayerTargetActor): 获取指定玩家正在瞄准的演员 ID
-- [GetPlayerCameraTargetPlayer](GetPlayerCameratargetPlayer): 获取玩家当前注视的玩家 ID
+- [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): 获取玩家当前注视的玩家 ID
 - [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): 获取玩家当前注视的车辆 ID
 - [GetPlayerCameraTargetObject](GetPlayerCameraTargetObject): 获取玩家当前注视的物体 ID
-- [GetPlayerCameraFrontVector](GetPlayerCaemraFrontVector): 获取玩家视角前向向量
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): 获取玩家视角前向向量

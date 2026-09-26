@@ -52,7 +52,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_SetWeapon](NPC_SetWeapon): Set NPC weapon
 - [NPC_GetAmmo](NPC_GetAmmo): Get NPC ammunition
 - [NPC_SetAmmo](NPC_SetAmmo): Set NPC ammunition
-- [NPC_RemoveWeapon](NPC_RemoveWeapon): Remove NPC weapon
 
 ## Related Callbacks
 

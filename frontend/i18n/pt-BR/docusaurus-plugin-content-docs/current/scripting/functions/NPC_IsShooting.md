@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - [NPC_Shoot](NPC_Shoot): Faça NPC disparar
 - [NPC_AimAt](NPC_AimAt): Faça NPC mirar e atirar
-- [NPC_StopShoot](NPC_StopShoot): Parar a filmagem NPC
+- [NPC_StopAim](NPC_StopAim): Impede NPC de mirar
 - [NPC_IsAiming](NPC_IsAiming): Verifique se está mirando
 
 ## Callbacks Relacionadas

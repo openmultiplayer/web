@@ -156,7 +156,7 @@ MyFunction()
 
 ## Parâmetros
 
-Os parâmetros são um tipo de [variável](start#variables) que você não precisa declarar, pois vêm do local que chamou a função:
+Os parâmetros são um tipo de [variável](../language/Variables) que você não precisa declarar, pois vêm do local que chamou a função:
 
 ```c
 #include <a_samp>
@@ -172,7 +172,7 @@ MyFunction(string[])
     return 1;
 }
 ```
-Este código ainda faz a mesma coisa, mas agora estamos dizendo a MyFunction() o que exibir. A chamada passa a string "Hello World!" para a função onde está armazenado em uma variável chamada string (o \[\] significa que é um [array](start#arrays) conforme explicado posteriormente). A função print é chamada, passando o conteúdo da variável string, sabemos que é uma variável porque não possui mais o "".
+Este código ainda faz a mesma coisa, mas agora estamos dizendo a MyFunction() o que exibir. A chamada passa a string "Hello World!" para a função onde está armazenado em uma variável chamada string (o \[\] significa que é um [array](start#matrizes) conforme explicado posteriormente). A função print é chamada, passando o conteúdo da variável string, sabemos que é uma variável porque não possui mais o "".
 
 # Variáveis
 

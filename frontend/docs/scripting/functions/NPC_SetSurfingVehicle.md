@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - This function allows NPCs to "surf" on vehicles, meaning they will move along with the vehicle while maintaining their position relative to it
 - The NPC will follow the vehicle's movement, rotation, and position changes
-- Use `NPC_SetSurfingOffset` to position the NPC at specific locations on the vehicle (roof, hood, etc.)
+- Use `NPC_SetSurfingOffsets` to position the NPC at specific locations on the vehicle (roof, hood, etc.)
 - The vehicle must exist for surfing to work properly
 
 ## Related Functions
@@ -57,7 +57,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NPC_GetSurfingVehicle](NPC_GetSurfingVehicle): Gets the vehicle an NPC is surfing on
 - [NPC_SetSurfingObject](NPC_SetSurfingObject): Sets the object an NPC is surfing on
 - [NPC_SetSurfingPlayerObject](NPC_SetSurfingPlayerObject): Sets the player object an NPC is surfing on
-- [NPC_SetSurfingOffset](NPC_SetSurfingOffset): Sets the surfing offset for an NPC
+- [NPC_SetSurfingOffsets](NPC_SetSurfingOffsets): Sets the surfing offset for an NPC
 - [NPC_ResetSurfingData](NPC_ResetSurfingData): Resets all surfing data for an NPC
 
 ## Related Callbacks

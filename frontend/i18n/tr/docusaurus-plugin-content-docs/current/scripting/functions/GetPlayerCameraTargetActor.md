@@ -78,7 +78,7 @@ Kullanılmadan önce OnPlayerConnect üzerinden EnablePlayerCameraTarget fonksiy
 ## Bağlantılı Fonksiyonlar
 
 - [GetPlayerTargetActor](GetPlayerTargetActor): Oyuncunun silah ile hedef aldığı oyuncuyu kontrol eder.
-- [GetPlayerCameraTargetPlayer](GetPlayerCameratargetPlayer): Oyuncunun kamerası ile baktığı oyuncuyu kontrol eder.
+- [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): Oyuncunun kamerası ile baktığı oyuncuyu kontrol eder.
 - [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): Oyuncunun kamerası ile baktığı aracı kontrol eder.
 - [GetPlayerCameraTargetObject](GetPlayerCameraTargetObject): Oyuncunun kamerası ile baktığı objeyi kontrol eder.
-- [GetPlayerCameraFrontVector](GetPlayerCaemraFrontVector): Oyuncu kamerasının ön vektörünü alır.
+- [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Oyuncu kamerasının ön vektörünü alır.

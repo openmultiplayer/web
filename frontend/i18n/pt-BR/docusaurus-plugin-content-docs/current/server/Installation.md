@@ -114,7 +114,7 @@ depois pressione **F5** para compilar.
 
 ## Passo 9
 
-Abra o arquivo **[config.json](https://www.open.mp/docs/server/config.json)** com o Bloco de Notas ou outras IDEs
+Abra o arquivo **[config.json](config.json)** com o Bloco de Notas ou outras IDEs
 
 ![](<https://raw.githubusercontent.com/adib-yg/openmp-server-installation/refs/heads/main/screenshots/Screenshot%20(9).png>)
 

@@ -63,6 +63,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 相关函数
 
-- [GetPlayerCameraTargetVehicle](GetplayerCameraTargetVehicle): 获取玩家当前注视的车辆 ID
-- [GetPlayerCameraTargetPlayer](GetplayerCameraTargetPlayer): 获取玩家当前注视的玩家 ID
+- [GetPlayerCameraTargetVehicle](GetPlayerCameraTargetVehicle): 获取玩家当前注视的车辆 ID
+- [GetPlayerCameraTargetPlayer](GetPlayerCameraTargetPlayer): 获取玩家当前注视的玩家 ID
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): 获取玩家视角前向向量
