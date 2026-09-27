@@ -5,8 +5,6 @@ description: یک رشته UU-encoded رو decode کن.
 tags: ["string", "encryption"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 یک رشته UU-encoded رو decode می‌کند.

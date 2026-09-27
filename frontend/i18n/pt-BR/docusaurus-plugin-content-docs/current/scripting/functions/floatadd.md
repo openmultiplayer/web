@@ -6,8 +6,6 @@ tags: ["math", "floating-point"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Adiciona dois carros alegóricos juntos. Esta função é redundante porque o operador padrão (+) faz a mesma coisa.

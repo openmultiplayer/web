@@ -5,8 +5,6 @@ description: Mendapatkan panjang dari sebuah string.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Mendapatkan panjang dari sebuah string.

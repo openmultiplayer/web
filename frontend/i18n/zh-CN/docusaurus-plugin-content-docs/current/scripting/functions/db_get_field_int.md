@@ -5,8 +5,6 @@ description: 通过字段索引从db_query结果中获取整数值。
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用 [DB_GetFieldInt](DB_GetFieldInt)。

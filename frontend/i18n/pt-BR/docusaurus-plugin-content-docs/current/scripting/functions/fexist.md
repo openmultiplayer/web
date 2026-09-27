@@ -6,8 +6,6 @@ tags: ["file management"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Verifica se existe um arquivo específico no diretório scriptfiles.

@@ -5,8 +5,6 @@ description: Fecha uma conexão de banco de dados SQLite que foi aberta com `db_
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Fecha uma conexão de banco de dados SQLite que foi aberta com [db_open](db_open).

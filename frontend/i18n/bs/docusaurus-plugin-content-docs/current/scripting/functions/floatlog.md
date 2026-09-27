@@ -5,12 +5,6 @@ description: Ova funkcija vam omogućuje da dobijete logaritam float vrijednosti
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Ova funkcija vam omogućuje da dobijete logaritam float vrijednosti.

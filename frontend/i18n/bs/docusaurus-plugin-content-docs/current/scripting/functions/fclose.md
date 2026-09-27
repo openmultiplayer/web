@@ -5,12 +5,6 @@ description: Zatvara fajl/datoteku.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Zatvara fajl/datoteku. Fajlove/Datoteke treba uvijek zatvoriti kada ih skripta više ne treba (nakon čitanja / pisanja).

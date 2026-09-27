@@ -5,8 +5,6 @@ description: 修改文件指针位置。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 修改文件指针位置。可在文件中进行正向或反向定位。

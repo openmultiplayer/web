@@ -5,8 +5,6 @@ description: طول یک رشته رو می‌گیره.
 tags: ["string"]
 ---
 
-<LowercaseNoteFA />
-
 <div dir="rtl" style={{ textAlign: "right" }}>
 
 ## توضیحات

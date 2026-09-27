@@ -5,8 +5,6 @@ description: Gets the number of fields from the specified result set allocated w
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_GetFieldCount](DB_GetFieldCount).

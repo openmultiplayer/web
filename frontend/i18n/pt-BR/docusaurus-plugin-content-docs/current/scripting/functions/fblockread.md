@@ -6,8 +6,6 @@ tags: ["file management"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Esta função permite ler dados de um arquivo, sem codificação e terminadores de linha

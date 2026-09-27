@@ -5,12 +5,6 @@ description: Zatvara SQLite konekciju databaze kreirane sa `db_open`.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Zatvara SQLite konekciju databaze kreirane sa [db_open](db_open).

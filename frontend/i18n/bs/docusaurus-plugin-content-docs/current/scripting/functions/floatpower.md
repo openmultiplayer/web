@@ -5,12 +5,6 @@ description: Daje zadanu vrijednost u potenciju eksponenta.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Daje zadanu vrijednost u potenciju eksponenta.

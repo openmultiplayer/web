@@ -5,8 +5,6 @@ description: 比较两个字符串是否相同。
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 比较两个字符串是否相同。

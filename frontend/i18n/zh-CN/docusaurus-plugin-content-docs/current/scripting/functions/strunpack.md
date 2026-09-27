@@ -5,8 +5,6 @@ description: 此函数用于解包字符串。
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 此函数用于解包字符串。

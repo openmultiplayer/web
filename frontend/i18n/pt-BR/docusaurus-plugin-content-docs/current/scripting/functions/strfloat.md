@@ -8,8 +8,6 @@ tags: ["string", "floating-point"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Descrição
 
 Converte uma string em um float.

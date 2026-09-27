@@ -8,8 +8,6 @@ tags: ["file management"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Descrição
 
 Descarregue um arquivo no disco (certifique-se de que todas as gravações foram concluídas). Na verdade, apenas chama [flength](flength) pois isso precisa forçar um flush para ser preciso.

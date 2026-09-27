@@ -5,12 +5,6 @@ description: Preuzmite sadržaj polja iz db_query.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Preuzmite sadržaj polja iz db_query.

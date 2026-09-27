@@ -5,8 +5,6 @@ description: Gets the contents of the field as a string with the specified field
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_GetFieldStringByName](DB_GetFieldStringByName).

@@ -7,8 +7,6 @@ tags: ["文件管理"]
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 复制文件。

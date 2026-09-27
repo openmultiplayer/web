@@ -5,8 +5,6 @@ description: Mengekstrak bagian dari sebuah string ke string lainnya.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Mengekstrak bagian dari sebuah string ke string lainnya.

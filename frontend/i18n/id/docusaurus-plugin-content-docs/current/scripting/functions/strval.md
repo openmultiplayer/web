@@ -5,8 +5,6 @@ description: Mengkonversi sebuah string menjadi integer.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Mengkonversi sebuah string menjadi integer.

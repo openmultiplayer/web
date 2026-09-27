@@ -7,8 +7,6 @@ tags: ["file management"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Description
 
 Flush a file to disk (ensure all writes are complete). Actually just calls [flength](flength) as that has to force a flush to be accurate.

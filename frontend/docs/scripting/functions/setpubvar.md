@@ -5,8 +5,6 @@ description: Sets a specific public variable in the current script.
 tags: ["core", "pubvar", "public variable"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Sets a specific public variable in the current script.

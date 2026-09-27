@@ -5,12 +5,6 @@ description: Oduzima jedan float od drugog.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Oduzima jedan float od drugog. Imajte na umu da ova funkcija nema stvarnu upotrebu, jer se umesto nje može jednostavno koristiti standardni operator (-).

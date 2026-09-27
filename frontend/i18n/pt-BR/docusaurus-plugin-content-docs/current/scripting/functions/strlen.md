@@ -6,8 +6,6 @@ tags: ["string"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtenha o comprimento de uma string.

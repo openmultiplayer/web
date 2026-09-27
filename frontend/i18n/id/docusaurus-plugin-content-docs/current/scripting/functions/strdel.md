@@ -5,8 +5,6 @@ description: Menghapus bagian dari sebuah string.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Menghapus bagian dari sebuah string.

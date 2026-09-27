@@ -5,8 +5,6 @@ description: Get the inversed value of a cosine in degrees.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Get the inversed value of a cosine in degrees. In trigonometrics, arc cosine is the inverse operation of cosine.

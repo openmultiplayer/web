@@ -5,12 +5,6 @@ description: Forsira vrijednost da bude unutar raspona.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Forsira vrijednost da bude unutar raspona.

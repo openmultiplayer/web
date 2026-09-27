@@ -5,12 +5,6 @@ description: Napišite tekst u datoteku.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Napišite tekst u datoteku.

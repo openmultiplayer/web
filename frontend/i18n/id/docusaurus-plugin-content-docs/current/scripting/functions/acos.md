@@ -5,8 +5,6 @@ description: Mengambil nilai kebalikan dari kosinus dalam derajat.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Mengambil nilai kebalikan dari kosinus dalam derajat. Dalam trigonometri, arc cosinus adalah operasi kebalikan dari cosinus.

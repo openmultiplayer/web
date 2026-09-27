@@ -5,8 +5,6 @@ description: Obtém o conteúdo de um campo de db_query.
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtém o conteúdo de um campo de db_query

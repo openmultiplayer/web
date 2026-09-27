@@ -6,8 +6,6 @@ tags: ["floating-point"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Converte um inteiro em um float.

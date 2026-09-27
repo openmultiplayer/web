@@ -7,8 +7,6 @@ tags: ["字符串"]
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 比较两个字符串是否相同。

@@ -5,8 +5,6 @@ description: floatcmp can be used to compare float values to each other, to vali
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 floatcmp can be used to compare float values to each other, to validate the comparison.

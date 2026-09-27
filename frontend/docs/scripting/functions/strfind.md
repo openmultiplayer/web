@@ -5,8 +5,6 @@ description: Search for a sub string in a string.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Search for a sub string in a string.

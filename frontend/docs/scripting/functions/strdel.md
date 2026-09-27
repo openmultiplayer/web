@@ -5,8 +5,6 @@ description: Delete part of a string.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Delete part of a string.

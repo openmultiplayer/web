@@ -5,12 +5,6 @@ description: Dobijte kosinus iz zadanog ugla.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobijte kosinus iz zadanog ugla. Ulazni kut može biti u radijanima, stupnjevima ili stupnjevima.

@@ -5,12 +5,6 @@ description: Decode an UU-encoded string.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Decode an UU-encoded string.

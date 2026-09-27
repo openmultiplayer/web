@@ -5,12 +5,6 @@ description: floatcmp se može koristiti za međusobno uspoređivanje vrijednost
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 floatcmp se može koristiti za međusobno uspoređivanje vrijednosti plutajućeg stanja, kako bi se potvrdila usporedba.

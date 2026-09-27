@@ -5,8 +5,6 @@ description: Decode an UU-encoded string.
 tags: ["string", "encryption"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Decode an UU-encoded string.

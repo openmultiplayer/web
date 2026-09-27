@@ -6,8 +6,6 @@ tags: ["core"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Esta função retorna o ID de uma função pública pelo seu nome.

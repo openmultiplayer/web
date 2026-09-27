@@ -5,8 +5,6 @@ description: Dwing een waarde binnen een bereik te vallen.
 tags: ["core"]
 ---
 
-<LowercaseNote />
-
 ## Beschrijving
 
 Dwing een waarde binnen een bereik te vallen.

@@ -6,8 +6,6 @@ tags: ["file management"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Cria um arquivo no diretório “tmp”, “temp” ou raiz com nome aleatório para leitura e escrita. O arquivo é excluído após fclose() ser usado no arquivo.

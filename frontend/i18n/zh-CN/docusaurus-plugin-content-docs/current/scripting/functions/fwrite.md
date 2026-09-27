@@ -5,8 +5,6 @@ description: 向文件写入文本内容。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 向指定文件写入文本内容。

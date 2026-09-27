@@ -5,8 +5,6 @@ description: بررسی وجود متغیر عمومی مشخص در اسکری�
 tags: ["core", "pubvar", "public variable"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 بررسی وجود متغیر عمومی مشخص در اسکریپت فعلی.

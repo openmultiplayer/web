@@ -5,12 +5,6 @@ description: Obriši dio stringa.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Obriši dio stringa.

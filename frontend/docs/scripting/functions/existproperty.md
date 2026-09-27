@@ -5,8 +5,6 @@ description: Check if a property exist.
 tags: ["core", "property"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Check if a property exist.

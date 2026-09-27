@@ -5,8 +5,6 @@ description: 删除字符串的一部分。
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 删除字符串的指定部分。

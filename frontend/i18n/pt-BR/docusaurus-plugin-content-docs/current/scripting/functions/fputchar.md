@@ -6,8 +6,6 @@ tags: ["file management"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Escreva um caractere em um arquivo.

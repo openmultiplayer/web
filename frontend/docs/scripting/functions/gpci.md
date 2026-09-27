@@ -5,8 +5,6 @@ description: Fetch the CI (computer/client identification) of a user, this is li
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Fetch the CI of a user, this is linked to their SAMP/GTA on their computer.

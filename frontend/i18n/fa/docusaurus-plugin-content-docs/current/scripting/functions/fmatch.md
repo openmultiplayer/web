@@ -5,8 +5,6 @@ description: نام فایلی که با pattern مطابقت داره رو پی
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 نام فایلی که با pattern مطابقت داره رو پیدا میکنه.

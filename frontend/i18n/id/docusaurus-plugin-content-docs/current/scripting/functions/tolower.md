@@ -5,8 +5,6 @@ description: Fungsi ini mengubah sebuah huruf menjadi huruf kecil.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Fungsi ini mengubah sebuah huruf menjadi huruf kecil.

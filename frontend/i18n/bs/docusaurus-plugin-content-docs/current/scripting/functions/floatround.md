@@ -5,12 +5,6 @@ description: Zaokružite broj s pomičnom zarezom na cijelu vrijednost.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Zaokružite broj s pomičnom zarezom na cijelu vrijednost.

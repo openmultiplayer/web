@@ -5,12 +5,6 @@ description: Provjerava je li zadati string spakovan.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Provjerava je li zadati string spakovan.

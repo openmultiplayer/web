@@ -5,8 +5,6 @@ description: Checks if a specific file exists in the scriptfiles directory.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Checks if a specific file exists in the scriptfiles directory.

@@ -5,12 +5,6 @@ description: Dohvatite CI (računarska/klijentska identifikacija) korisnika, ovo
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dohvatite CI (računarska/klijentska identifikacija) korisnika, ovo je povezano s njihovim SAMP/GTA-om na njegovom računaru.

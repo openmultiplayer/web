@@ -6,8 +6,6 @@ tags: ["console"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Produz uma string formatada no console (a janela do servidor, não o chat do jogo).

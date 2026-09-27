@@ -6,8 +6,6 @@ tags: ["core"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Função usada para comparar os valores.

@@ -13,8 +13,6 @@ tags: ["file management"]
 
 :::
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 فضای خالی دیسک را برمی‌گرداند.

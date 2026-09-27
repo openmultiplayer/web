@@ -5,8 +5,6 @@ description: Write one character to a file.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Write one character to a file.

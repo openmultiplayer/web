@@ -5,8 +5,6 @@ description: Libera a memória do resultado alocada de db_query.
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Libera a memória do resultado alocada de db_query.

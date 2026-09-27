@@ -5,8 +5,6 @@ description: 发送包含字符串的数据包（已弃用函数）
 tags: ["数据报"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用[HTTP](HTTP)或[pawn-requests 插件](https://github.com/Southclaws/pawn-requests)

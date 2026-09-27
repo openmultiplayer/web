@@ -5,8 +5,6 @@ description: .
 tags: []
 ---
 
-<LowercaseNote />
-
 :::warning
 
 Zwróć uwagę, że wartość y jest pierwszym parametrem, a x drugim.

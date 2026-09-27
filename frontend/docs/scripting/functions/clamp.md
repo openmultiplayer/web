@@ -5,8 +5,6 @@ description: Force a value to be inside a range.
 tags: ["core"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Force a value to be inside a range.

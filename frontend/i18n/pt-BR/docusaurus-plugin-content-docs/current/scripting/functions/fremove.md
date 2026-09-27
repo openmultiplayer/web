@@ -6,8 +6,6 @@ tags: ["file management"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Exclua um arquivo.

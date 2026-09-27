@@ -6,8 +6,6 @@ tags: ["core", "property"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtenha uma propriedade específica da memória, a string é retornada como uma string compactada!

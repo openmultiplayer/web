@@ -5,8 +5,6 @@ description: 获取玩家的客户端识别码（CI），该编码关联玩家�
 tags: []
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 获取玩家的客户端识别码（Computer/Client Identification），该编码与玩家计算机上的 SAMP/GTA 客户端绑定。

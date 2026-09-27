@@ -5,8 +5,6 @@ description: Obtém o conteúdo do campo como uma string com o nome do campo esp
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtém o conteúdo do campo com nome especificado.

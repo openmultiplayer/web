@@ -5,8 +5,6 @@ description: یک عدد اعشاری رو به عدد صحیح گرد می‌ک
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNoteFA />
-
 <div dir="rtl" style={{ textAlign: "right" }}>
 
 ## توضیحات

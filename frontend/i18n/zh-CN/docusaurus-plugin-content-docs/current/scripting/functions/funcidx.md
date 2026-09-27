@@ -5,8 +5,6 @@ description: 通过函数名获取公共函数的ID。
 tags: ["核心"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 通过函数名获取公共函数的唯一标识符(ID)。

@@ -5,12 +5,6 @@ description: This function returns the ID of a public function by its name.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 This function returns the ID of a public function by its name.

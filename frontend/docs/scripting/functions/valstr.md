@@ -5,8 +5,6 @@ description: Convert an integer into a string.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Convert an integer into a string.

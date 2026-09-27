@@ -5,8 +5,6 @@ description: 根据匹配模式查找文件名。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 根据通配符模式查找匹配的文件名。

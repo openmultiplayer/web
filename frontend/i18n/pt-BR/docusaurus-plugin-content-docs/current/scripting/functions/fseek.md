@@ -6,8 +6,6 @@ tags: ["file management"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Altere a posição atual no arquivo. Você pode avançar ou retroceder no arquivo.

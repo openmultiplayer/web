@@ -5,12 +5,6 @@ description: Convert a string to an integer.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Convert a string to an integer.

@@ -5,8 +5,6 @@ description: The function is used to open a connection to a SQLite database file
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteTR />
-
 ## Açıklama
 
 Bu fonksiyon, /scriptfiles klasörü içerisinde bir SQLite veritabanı açmak için kullanılır.

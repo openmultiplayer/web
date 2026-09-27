@@ -5,8 +5,6 @@ description: این تابع ID یک تابع public رو با اسمش برمی
 tags: ["core"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 این تابع ID یک تابع public رو با اسمش برمیگردونه.

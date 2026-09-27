@@ -6,8 +6,6 @@ tags: ["file management"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Fecha um arquivo. Os arquivos devem sempre ser fechados quando o script não precisar mais deles (após leitura/escrita).

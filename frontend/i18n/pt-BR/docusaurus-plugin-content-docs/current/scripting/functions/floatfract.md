@@ -5,8 +5,6 @@ description: Obtém a parte fracionária de um float.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtém a parte fracionária de um float. Isso significa o valor dos números após o ponto decimal.

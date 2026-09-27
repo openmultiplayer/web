@@ -5,12 +5,6 @@ description: Returns the amount of memory available for the heap/stack in bytes.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Returns the amount of memory available for the heap/stack in bytes.

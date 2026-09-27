@@ -5,12 +5,6 @@ description: Closes a file.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Closes a file. Files should always be closed when the script no longer needs them (after reading/writing).

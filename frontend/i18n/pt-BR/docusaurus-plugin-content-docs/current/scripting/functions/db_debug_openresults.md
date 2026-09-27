@@ -5,8 +5,6 @@ description: Obtém o número de resultados de banco de dados abertos
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 A função obtém o número de resultados de banco de dados abertos.

@@ -5,8 +5,6 @@ description: Delete a file.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Delete a file.

@@ -13,8 +13,6 @@ tags: ["文件管理"]
 
 :::
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 返回可用磁盘空间。

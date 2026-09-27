@@ -5,12 +5,6 @@ description: Promijenite trenutni položaj u datoteci.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Promijenite trenutni položaj u datoteci. Kroz datoteku možete tražiti unaprijed ili unatrag.

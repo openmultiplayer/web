@@ -5,12 +5,6 @@ description: .
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Funkcija korištena za usporedbu vrijednosti.

@@ -6,8 +6,6 @@ tags: ["math", "floating-point"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Multiplica dois carros alegóricos entre si.

@@ -6,8 +6,6 @@ tags: ["string", "encryption"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Codifique uma string em uma string decodificada por UU.

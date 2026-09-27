@@ -5,8 +5,6 @@ description: 在字符串中搜索子字符串。
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 在字符串中搜索指定子字符串。

@@ -6,8 +6,6 @@ tags: ["math", "floating-point"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtenha a tangente de um determinado ângulo. O ângulo de entrada pode estar em radianos, graus ou graus.

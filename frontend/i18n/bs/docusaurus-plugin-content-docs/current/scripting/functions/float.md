@@ -5,12 +5,6 @@ description: Konvertuje cijeli broj u float.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Konvertuje cijeli broj u float.

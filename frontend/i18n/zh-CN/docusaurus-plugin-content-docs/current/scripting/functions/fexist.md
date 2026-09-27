@@ -5,8 +5,6 @@ description: 检查指定文件是否存在于scriptfiles目录中。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 检查指定文件是否存在于 scriptfiles 目录中。

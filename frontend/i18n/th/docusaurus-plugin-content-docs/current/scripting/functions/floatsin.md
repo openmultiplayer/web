@@ -5,12 +5,6 @@ description: Get the sine from a given angle.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Get the sine from a given angle. The input angle may be in radians, degrees or grades.

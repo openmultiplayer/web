@@ -5,12 +5,6 @@ description: Čita jedan znak iz datoteke.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Čita jedan znak iz datoteke.

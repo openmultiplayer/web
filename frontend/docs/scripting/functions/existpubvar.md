@@ -5,8 +5,6 @@ description: Checks if a specific public variable exists in the current script.
 tags: ["core", "pubvar", "public variable"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Checks if a specific public variable exists in the current script.

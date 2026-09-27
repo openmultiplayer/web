@@ -5,12 +5,6 @@ description: Množi dva floata jedni s drugima.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Množi dva floata jedni s drugima.

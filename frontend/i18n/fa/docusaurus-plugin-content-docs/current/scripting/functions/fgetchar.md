@@ -5,8 +5,6 @@ description: خواندن یک کاراکتر از فایل.
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 خواندن یک کاراکتر از فایل.

@@ -6,8 +6,6 @@ tags: ["file management"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Grave dados em um arquivo em formato binário, ignorando freios de linha e codificação.

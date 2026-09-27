@@ -5,8 +5,6 @@ description: .
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Opis
 
 Podaje odwróconą wartość arcus sinusa w radianach.

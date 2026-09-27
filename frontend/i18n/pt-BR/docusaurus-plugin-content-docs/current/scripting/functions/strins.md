@@ -6,8 +6,6 @@ tags: ["string"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Insira uma string em outra string.

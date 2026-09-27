@@ -5,8 +5,6 @@ description: یه property خاص رو از حافظه دریافت می‌کن�
 tags: ["core", "property"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 یه property خاص رو از حافظه دریافت می‌کنه، string به صورت packed برگردونده می‌شه!

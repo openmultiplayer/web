@@ -5,8 +5,6 @@ description: 将整数值转换为字符串形式
 tags: ["字符串处理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 将整数值转换为字符串形式存储。

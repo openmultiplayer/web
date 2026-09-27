@@ -5,8 +5,6 @@ description: Obtém o conteúdo do campo como um número de ponto flutuante com 
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 A função obtém o conteúdo do campo como um número de ponto flutuante do nome do campo especificado.

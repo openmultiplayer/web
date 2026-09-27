@@ -13,8 +13,6 @@ This function has not yet been implemented.
 
 :::
 
-<LowercaseNote />
-
 ## Description
 
 Returns the free disk space.

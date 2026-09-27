@@ -5,8 +5,6 @@ description: I-round ang isang floating point number sa isang integer value.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 I-round ang isang floating point number sa isang integer value.

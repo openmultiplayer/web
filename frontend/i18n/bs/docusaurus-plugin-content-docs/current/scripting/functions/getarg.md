@@ -5,8 +5,6 @@ description: Dobij argument koji je proslijeđen funkciji.
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Deskripcija
 
 Dobij argument koji je proslijeđen funkciji.

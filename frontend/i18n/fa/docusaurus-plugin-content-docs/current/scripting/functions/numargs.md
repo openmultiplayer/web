@@ -5,8 +5,6 @@ description: تعداد آرگومان‌هایی که به یک function پاس
 tags: ["core", "arguments", "args"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 تعداد آرگومان‌هایی که به یک function پاس شده رو دریافت می‌کنه.

@@ -5,8 +5,6 @@ description: Een string formatteren met variabelen/waarden.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Beschrijving
 
 Formatteert een string met variabelen en andere strings.

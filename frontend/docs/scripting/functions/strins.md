@@ -5,8 +5,6 @@ description: Insert a string into another string.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Insert a string into another string.

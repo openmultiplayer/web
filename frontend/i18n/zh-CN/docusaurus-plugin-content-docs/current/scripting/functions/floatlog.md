@@ -5,8 +5,6 @@ description: 计算浮点数的对数。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 此函数用于计算以指定底数的浮点数对数。

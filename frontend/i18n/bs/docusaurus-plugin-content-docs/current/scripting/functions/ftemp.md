@@ -5,12 +5,6 @@ description: Stvara datoteku u "tmp", "temp" ili root direktorijumu sa slučajni
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Stvara datoteku u "tmp", "temp" ili root direktorijumu sa slučajnim imenom za čitanje i pisanje. Datoteka se briše nakon upotrebe fclose() na datoteci.

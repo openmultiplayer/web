@@ -5,12 +5,6 @@ description: Ova funkcija spaja dva stringa u odredišni string.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Ova funkcija spaja dva stringa u odredišni string.

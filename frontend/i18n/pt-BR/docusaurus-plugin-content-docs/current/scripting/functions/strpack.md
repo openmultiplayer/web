@@ -6,8 +6,6 @@ tags: ["string"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Embale uma string. Strings compactadas usam 75% menos memória.

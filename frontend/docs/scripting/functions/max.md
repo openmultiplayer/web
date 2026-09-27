@@ -5,8 +5,6 @@ description: Return the highest of two numbers.
 tags: ["core"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Function used to compare the values.

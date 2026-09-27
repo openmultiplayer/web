@@ -5,8 +5,6 @@ description: Set an argument that was passed to a function.
 tags: ["core", "arguments", "args"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Set an argument that was passed to a function.

@@ -5,12 +5,6 @@ description: Dobijte obrnutu vrijednost tangente luka u radijanima.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobijte obrnutu vrijednost tangente luka u radijanima.

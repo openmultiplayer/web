@@ -5,8 +5,6 @@ description: This function allows you to read data from a file, without encoding
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 This function allows you to read data from a file, without encoding and line terminators

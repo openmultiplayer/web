@@ -7,8 +7,6 @@ tags: ["file management"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Description
 
 Get the current position in the file.

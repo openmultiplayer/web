@@ -5,8 +5,6 @@ description: Swap bytes in a cell.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 | Name | Description                            |

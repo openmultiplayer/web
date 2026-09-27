@@ -5,8 +5,6 @@ description: Reads a single character from a file.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Reads a single character from a file.

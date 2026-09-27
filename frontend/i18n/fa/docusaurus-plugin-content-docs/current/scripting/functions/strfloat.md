@@ -7,8 +7,6 @@ tags: ["string", "floating-point"]
 
 <VersionWarnFA version='omp v1.1.0.2612' />
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 تبدیل یک رشته به عدد اعشاری.

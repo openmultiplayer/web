@@ -8,8 +8,6 @@ tags: ["file management"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Descrição
 
 Defina os atributos do arquivo.

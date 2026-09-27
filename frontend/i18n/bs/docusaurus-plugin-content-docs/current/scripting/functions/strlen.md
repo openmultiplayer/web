@@ -5,12 +5,6 @@ description: Dobij dužinu stringa.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobij dužinu stringa.

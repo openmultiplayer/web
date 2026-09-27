@@ -5,8 +5,6 @@ description: 通过字段索引获取当前结果行的浮点数值。
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用 [DB_GetFieldFloat](DB_GetFieldFloat)。

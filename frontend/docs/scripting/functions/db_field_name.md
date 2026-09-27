@@ -5,8 +5,6 @@ description: Returns the name of the field at the specified index.
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_GetFieldName](DB_GetFieldName).

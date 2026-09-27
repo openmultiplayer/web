@@ -13,8 +13,6 @@ Esta função ainda não foi implementada.
 
 :::
 
-<LowercaseNote />
-
 ## Descrição
 
 Retorna o espaço livre em disco.

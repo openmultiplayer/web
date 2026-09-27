@@ -5,8 +5,6 @@ description: 此函数用于建立与`/scriptfiles`目录下的SQLite数据库�
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 此函数用于建立与`/scriptfiles`目录下的 SQLite 数据库文件的连接。

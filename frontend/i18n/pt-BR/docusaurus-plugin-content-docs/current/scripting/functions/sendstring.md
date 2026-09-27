@@ -6,8 +6,6 @@ tags: ["datagram"]
 ---
 
 
-<LowercaseNote />
-
 :::warning
 
 Esta função está obsoleta. Use o plugin [HTTP](HTTP) ou [solicitações de Pawn](https://github.com/Southclaws/pawn-requests).

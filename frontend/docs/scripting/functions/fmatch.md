@@ -5,8 +5,6 @@ description: Find a filename matching a pattern.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Find a filename matching a pattern.

@@ -5,8 +5,6 @@ description: 将字符串转换为整数值
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 将字符串转换为整数值。

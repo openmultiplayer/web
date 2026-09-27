@@ -5,8 +5,6 @@ description: Return the lowest of two numbers.
 tags: ["core"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Function used to compare the values.

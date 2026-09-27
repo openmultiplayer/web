@@ -6,8 +6,6 @@ tags: ["string"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Procure uma substring em uma string.

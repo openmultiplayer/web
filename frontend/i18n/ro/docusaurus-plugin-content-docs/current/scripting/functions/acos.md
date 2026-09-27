@@ -5,8 +5,6 @@ description: .
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Descriere
 
 Obțineți valoarea inversată a unui cosinus arc în radiani.

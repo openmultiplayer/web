@@ -5,12 +5,6 @@ description: Kopirajte bajtove s jedne lokacije na drugu.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Kopirajte bajtove s jedne lokacije na drugu.

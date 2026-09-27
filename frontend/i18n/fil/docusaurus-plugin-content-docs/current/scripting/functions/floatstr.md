@@ -5,8 +5,6 @@ description: Kino-convert ang isang string sa isang float.
 tags: ["string", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Converts a string to a float.

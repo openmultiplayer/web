@@ -5,8 +5,6 @@ description: 跳转到通过db_query分配的结果集的下一行。
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用 [DB_SelectNextRow](DB_SelectNextRow)。

@@ -5,8 +5,6 @@ description: Fungsi ini mengembalikan angka milisekon saat dari server menyala.
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Fungsi ini dapat digunakan untuk mengganti GetTickCount, pada saat mengembalikan angka milisekon dari saat server menyala.

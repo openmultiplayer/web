@@ -5,8 +5,6 @@ description: نوشتن یک کاراکتر در فایل.
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 یک کاراکتر رو در یک فایل می‌نویسه.

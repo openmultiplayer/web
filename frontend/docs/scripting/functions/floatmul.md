@@ -5,8 +5,6 @@ description: Multiplies two floats with each other.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Multiplies two floats with each other.

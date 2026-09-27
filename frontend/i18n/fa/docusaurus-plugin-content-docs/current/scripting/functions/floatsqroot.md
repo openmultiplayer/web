@@ -5,8 +5,6 @@ description: جذر مربع مقدار داده شده رو محاسبه میک
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 جذر مربع مقدار داده شده رو محاسبه میکنه.

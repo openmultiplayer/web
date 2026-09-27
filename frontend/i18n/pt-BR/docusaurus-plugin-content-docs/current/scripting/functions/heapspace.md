@@ -5,8 +5,6 @@ description: Retorna a quantidade de memória disponível para heap/stack em byt
 tags: ["core"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Retorna a quantidade de memória disponível para heap/stack em bytes.

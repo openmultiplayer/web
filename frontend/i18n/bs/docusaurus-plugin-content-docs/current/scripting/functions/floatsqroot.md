@@ -5,12 +5,6 @@ description: Izračunava kvadratni korijen zadate vrijednosti.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Izračunava kvadratni korijen zadate vrijednosti.

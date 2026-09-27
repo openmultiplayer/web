@@ -5,12 +5,6 @@ description: Copy bytes from one location to another.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Copy bytes from one location to another.

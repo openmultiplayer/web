@@ -5,8 +5,6 @@ description: Arc‑cosinus (in graden) teruggeven.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 ## Beschrijving
 
 Geef de arc‑cosinus (inverse van cosinus) in graden.

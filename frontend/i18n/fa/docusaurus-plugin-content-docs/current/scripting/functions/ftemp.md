@@ -5,8 +5,6 @@ description: توی پوشه‌های "tmp"، "temp" یا root یه فایل ب�
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 توی پوشه‌های "tmp"، "temp" یا root یه فایل با اسم تصادفی میسازه برای خوندن و نوشتن. فایل بعد از استفاده fclose() روی فایل حذف میشه.

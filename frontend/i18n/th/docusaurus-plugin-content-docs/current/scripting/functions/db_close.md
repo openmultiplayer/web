@@ -5,12 +5,6 @@ description: Closes an SQLite database that was opened with db_open.
 tags: [sqlite]
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Closes an SQLite database that was opened with db_open.

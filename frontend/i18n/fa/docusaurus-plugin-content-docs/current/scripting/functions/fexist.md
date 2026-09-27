@@ -5,8 +5,6 @@ description: بررسی وجود یک فایل خاص در دایرکتوری sc
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 بررسی می‌کند که آیا یک فایل خاص در دایرکتوری scriptfiles وجود دارد یا نه.

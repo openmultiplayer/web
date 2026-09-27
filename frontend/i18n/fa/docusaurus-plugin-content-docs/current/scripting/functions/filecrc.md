@@ -7,8 +7,6 @@ tags: ["file management"]
 
 <VersionWarnFA version='omp v1.1.0.2612' />
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 برگرداندن مقدار 32-بیتی CRC یک فایل.

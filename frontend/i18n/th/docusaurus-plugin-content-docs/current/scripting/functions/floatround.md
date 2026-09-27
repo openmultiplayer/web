@@ -5,12 +5,6 @@ description: Round a floating point number to an integer value.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Round a floating point number to an integer value.

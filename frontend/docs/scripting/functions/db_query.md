@@ -5,8 +5,6 @@ description: The function is used to execute an SQL query on an opened SQLite da
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_ExecuteQuery](DB_ExecuteQuery).

@@ -5,8 +5,6 @@ description: بررسی وجود یک خاصیت.
 tags: ["core", "property"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 بررسی وجود یک خاصیت.

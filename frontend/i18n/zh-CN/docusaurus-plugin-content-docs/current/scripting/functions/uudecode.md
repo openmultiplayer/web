@@ -5,8 +5,6 @@ description: 解码UU编码字符串
 tags: ["字符串", "加密"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 解码 UU 编码格式的字符串。

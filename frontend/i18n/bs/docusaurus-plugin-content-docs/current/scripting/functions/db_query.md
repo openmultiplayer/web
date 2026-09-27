@@ -5,12 +5,6 @@ description: Funkcija se koristi za izvršavanje SQL upita na otvorenoj bazi pod
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Funkcija se koristi za izvršavanje SQL upita na otvorenoj bazi podataka SQLite.

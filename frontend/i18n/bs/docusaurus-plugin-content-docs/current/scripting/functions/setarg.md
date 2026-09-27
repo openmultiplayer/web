@@ -5,12 +5,6 @@ description: Postavite argument koji je proslijeđen funkciji.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Postavite argument koji je proslijeđen funkciji.

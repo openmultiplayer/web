@@ -5,8 +5,6 @@ description: Sets up the port number to listen at.
 tags: ["datagram"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated, Use [HTTP](HTTP) or [pawn-requests](https://github.com/Southclaws/pawn-requests) plugin.

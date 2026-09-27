@@ -5,12 +5,6 @@ description: This function is used to open a connection to a SQLite database, wh
 tags: ["sqlite"]
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 This function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder

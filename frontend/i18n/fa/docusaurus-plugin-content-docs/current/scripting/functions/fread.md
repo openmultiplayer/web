@@ -5,8 +5,6 @@ description: خواندن یک خط از یک فایل.
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 یک خط از یک فایل رو می‌خونه.

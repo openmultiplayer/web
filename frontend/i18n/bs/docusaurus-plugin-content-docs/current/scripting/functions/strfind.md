@@ -5,12 +5,6 @@ description: Potraži podstring u stringu.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Potraži podstring u stringu.

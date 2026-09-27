@@ -5,8 +5,6 @@ description: Delete an earlier set property (setproperty).
 tags: ["core", "property"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Delete an earlier set property ([setproperty](setproperty)).

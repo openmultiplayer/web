@@ -5,8 +5,6 @@ description: Define um argumento que foi passado para uma função.
 tags: ["core", "arguments", "args"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Define um argumento que foi passado para uma função.

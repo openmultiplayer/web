@@ -5,12 +5,6 @@ description: Get the current server time, which will be stored in the variables 
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Get the current server time, which will be stored in the variables &hour, &minute and &second.

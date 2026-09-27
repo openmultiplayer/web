@@ -5,8 +5,6 @@ description: A função é usada para abrir uma conexão com um arquivo de banco
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 A função é usada para abrir uma conexão com um arquivo de banco de dados SQLite, que está dentro da pasta `../scriptfiles`.

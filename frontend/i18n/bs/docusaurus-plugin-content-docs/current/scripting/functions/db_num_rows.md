@@ -5,12 +5,6 @@ description: Vraća broj redaka iz db_query.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Vraća broj redaka iz db_query.

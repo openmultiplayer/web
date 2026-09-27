@@ -5,8 +5,6 @@ description: Podaje odwróconą wartość arcus tangensa w radianach.
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Opis
 
 Podaje odwróconą wartość arcus tangensa w radianach.

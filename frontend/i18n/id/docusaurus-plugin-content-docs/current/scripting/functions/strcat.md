@@ -5,8 +5,6 @@ description: Fungsi ini menggabungkan dua buah string menjadi sebuah string.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Fungsi ini menggabungkan dua buah string menjadi sebuah string.

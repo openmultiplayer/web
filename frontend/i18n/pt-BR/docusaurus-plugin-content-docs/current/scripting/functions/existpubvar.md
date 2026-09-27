@@ -5,8 +5,6 @@ description: Verifica se uma variável pública específica existe no script atu
 tags: ["core", "pubvar", "public variable"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Verifica se uma variável pública específica existe no script atual.

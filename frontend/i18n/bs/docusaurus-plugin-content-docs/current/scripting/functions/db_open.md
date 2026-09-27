@@ -5,12 +5,6 @@ description: Funkcija se koristi za otvaranje veze s datotekom baze podataka SQL
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Funkcija se koristi za otvaranje veze s datotekom baze podataka SQLite, koja se nalazi u folderu `/scriptfiles`.

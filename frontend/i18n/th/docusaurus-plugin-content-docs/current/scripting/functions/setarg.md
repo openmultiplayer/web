@@ -5,12 +5,6 @@ description: Set an argument that was passed to a function.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Set an argument that was passed to a function.

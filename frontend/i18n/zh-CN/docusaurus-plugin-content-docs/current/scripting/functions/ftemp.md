@@ -5,8 +5,6 @@ description: 在"tmp"、"temp"目录或根目录创建随机命名的临时文�
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 在"tmp"、"temp"目录或根目录创建随机命名的临时文件用于读写。该文件在使用 fclose()关闭后会自动删除。

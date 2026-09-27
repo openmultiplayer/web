@@ -5,8 +5,6 @@ description: Read a single line from a file.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Read a single line from a file.

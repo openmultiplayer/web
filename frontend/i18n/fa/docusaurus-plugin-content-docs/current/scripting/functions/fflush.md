@@ -7,8 +7,6 @@ tags: ["file management"]
 
 <VersionWarnFA version='omp v1.1.0.2612' />
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 کردن فایل روی دیسک (اطمینان از تمام شدن نوشتن‌ها). در واقع فقط تابع [flength](flength) رو صدا میزنه چون اون مجبوره برای دقت flush کنه.

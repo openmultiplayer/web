@@ -5,8 +5,6 @@ description: Retorna a data atual do servidor, que será armazenada nas variáve
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Retorna a data atual do servidor, que será armazenada nas variáveis &ano, &mes e &dia

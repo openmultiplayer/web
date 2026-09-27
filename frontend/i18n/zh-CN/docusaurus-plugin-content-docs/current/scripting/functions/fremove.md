@@ -5,8 +5,6 @@ description: 删除文件。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 删除指定文件。

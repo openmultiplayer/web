@@ -5,12 +5,6 @@ description: Frees result memory allocated from db_query.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Frees result memory allocated from db_query.

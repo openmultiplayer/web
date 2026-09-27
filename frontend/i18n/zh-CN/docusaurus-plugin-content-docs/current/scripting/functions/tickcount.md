@@ -5,8 +5,6 @@ description: 返回服务器启动至今经过的毫秒数。
 tags: ["时间"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 此函数可作为 GetTickCount 的替代方案，返回服务器启动至今经过的毫秒数。

@@ -5,8 +5,6 @@ description: Ibinabalik ng function na ito ang absolute value ng float.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Ibinabalik ng function na ito ang absolute value ng float.

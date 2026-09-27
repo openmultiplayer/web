@@ -5,8 +5,6 @@ description: Retorna o horário atual do servidor, aonde será guardado nas vari
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Retorna o horário atual do servidor, aonde será guardado nas variáveis &hora, &minuto e &segundo.

@@ -5,12 +5,6 @@ description: Dobiva broj rezultata otvorene databaze.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobiva broj rezultata otvorene databaze.

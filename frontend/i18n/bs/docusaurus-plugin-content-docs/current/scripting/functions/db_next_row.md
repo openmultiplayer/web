@@ -5,12 +5,6 @@ description: Premješta se na sljedeći red skupa rezultata dodijeljen s `db_que
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Premješta se na sljedeći red skupa rezultata dodijeljen s [db_query](db_query).

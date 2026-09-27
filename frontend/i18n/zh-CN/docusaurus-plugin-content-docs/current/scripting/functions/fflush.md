@@ -7,8 +7,6 @@ tags: ["文件管理"]
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 将文件刷入磁盘（确保所有写入完成）。实际调用 [flength](flength) 函数实现，因为此函数需要强制刷新以确保准确性。

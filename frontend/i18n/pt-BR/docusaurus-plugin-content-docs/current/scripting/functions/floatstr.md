@@ -6,8 +6,6 @@ tags: ["string", "floating-point"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Converte uma string em um float.

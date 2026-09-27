@@ -5,12 +5,6 @@ description: Converts a string to a float.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Converts a string to a float.

@@ -6,8 +6,6 @@ tags: ["string"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Exclua parte de uma string.

@@ -5,8 +5,6 @@ description: 调试用-获取已打开的数据库连接数量。
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用 [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount)。

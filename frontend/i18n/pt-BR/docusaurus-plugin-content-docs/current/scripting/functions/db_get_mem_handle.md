@@ -5,8 +5,6 @@ description: Obtém o handle de memória para uma conexão de banco de dados SQL
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 <VersionWarn version='SA-MP 0.3.7 R1' />
 
 ## Descrição

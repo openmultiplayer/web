@@ -5,12 +5,6 @@ description: Ova funkcija vraća ID javne funkcije po imenu.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Ova funkcija vraća ID javne funkcije po imenu.

@@ -5,8 +5,6 @@ description: Write text into a file.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Write text into a file.

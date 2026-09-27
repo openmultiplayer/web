@@ -5,8 +5,6 @@ description: Returns the number of rows from a db_query.
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_GetRowCount](DB_GetRowCount).

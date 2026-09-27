@@ -5,8 +5,6 @@ description: Dobij trenutni datum servera koji će biti pohranjen u varijablama 
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Deskripcija
 
 Dobij trenutni datum servera koji će biti pohranjen u varijablama &year, &month i &day.

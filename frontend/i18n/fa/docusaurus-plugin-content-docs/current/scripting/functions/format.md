@@ -5,8 +5,6 @@ description: فرمت کردن یک string برای شامل کردن متغیر
 tags: ["string"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 یک string رو فرمت می‌کنه تا متغیرها و string‌های دیگر رو درش شامل کنه.

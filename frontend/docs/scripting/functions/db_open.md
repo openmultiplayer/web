@@ -5,8 +5,6 @@ description: The function is used to open a connection to a SQLite database file
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 The function is used to open a connection to a SQLite database, which is inside the "/scriptfiles" folder.

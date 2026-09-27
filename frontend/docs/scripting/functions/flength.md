@@ -5,8 +5,6 @@ description: Returns the length of a file.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Returns the length of a file.

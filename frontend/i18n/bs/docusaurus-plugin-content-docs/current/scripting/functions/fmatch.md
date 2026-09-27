@@ -5,12 +5,6 @@ description: Pronađite naziv datoteke koji odgovara uzorku.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Pronađite naziv datoteke koji odgovara uzorku.

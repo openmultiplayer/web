@@ -5,12 +5,6 @@ description: Provjerava postoji li određena datoteka u direktoriju skripti dato
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Provjerava postoji li određena datoteka u direktoriju skripti datoteka.

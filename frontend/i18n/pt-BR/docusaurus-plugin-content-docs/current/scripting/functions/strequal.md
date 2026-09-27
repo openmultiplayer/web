@@ -8,8 +8,6 @@ tags: ["string"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Descrição
 
 Compara duas strings para ver se elas são iguais.

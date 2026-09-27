@@ -5,8 +5,6 @@ description: یه packet که شامل string هست ارسال می‌کنه. (
 tags: ["datagram"]
 ---
 
-<LowercaseNoteFA />
-
 :::warning
 
 این تابع منسوخ شده، از [HTTP](HTTP) یا پلاگین [pawn-requests](https://github.com/Southclaws/pawn-requests) استفاده کن.
