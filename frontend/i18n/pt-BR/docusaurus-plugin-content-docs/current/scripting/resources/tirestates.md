@@ -7,13 +7,8 @@ description: "Informações sobre o tamanho do byte e seus bits de estado do pne
 
 :::note
 
-Os estados dos pneus são usados por nativos como [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) e [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
-
-:::
-
-:::note
-
-Mesmo veículos com mais de 4 rodas (por exemplo, caminhões) possuem apenas 4 estados de pneus.
+- Os estados dos pneus são usados por nativos como [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) e [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+- Mesmo veículos com mais de 4 rodas (por exemplo, caminhões) possuem apenas 4 estados de pneus.
 
 :::
 

@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 اسکین جدید را بعد از فراخوانی [SetSpawnInfo](SetSpawnInfo) برمی‌گرداند اما قبل از اینکه بازیکن واقعاً ریسپان شود تا اسکین جدید را دریافت کند. اگر بازیکن با تابع [SpawnPlayer](SpawnPlayer) ریسپان شده باشد، اسکین قدیمی برمی‌گرداند.
 

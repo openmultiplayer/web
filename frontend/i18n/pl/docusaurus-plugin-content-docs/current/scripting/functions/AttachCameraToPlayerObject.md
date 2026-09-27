@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Uwagi
 
-:::tip
+:::note
 
 Obiekt musi zostać utworzony, zanim spróbujemy przyczepić do niego inny obiekt.
 

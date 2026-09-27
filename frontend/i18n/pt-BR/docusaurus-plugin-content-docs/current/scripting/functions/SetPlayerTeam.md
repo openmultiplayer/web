@@ -31,7 +31,7 @@ public OnPlayerSpawn(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 - Os jogadores não podem danificar/matar jogadores do mesmo time, a menos que usem uma faca para cortar a garganta.
 

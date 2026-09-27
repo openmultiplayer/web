@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 ## Notes
 
-:::tip
+:::note
 
 **useartwork** or **artwork.enable** must be enabled first in server settings in order for this to work.
 

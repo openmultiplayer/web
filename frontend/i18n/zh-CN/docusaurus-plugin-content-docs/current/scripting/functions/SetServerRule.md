@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 ## 注意
 
-:::tip
+:::note
 
 此函数与[AddServerRule](AddServerRule)功能相同。
 

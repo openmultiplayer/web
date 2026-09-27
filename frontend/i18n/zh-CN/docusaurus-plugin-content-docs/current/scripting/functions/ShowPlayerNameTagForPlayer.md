@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::warning
 
 需先通过[ShowNameTags](ShowNameTags)启用全局名称标签显示，此函数才能生效。建议在玩家流加载时（[OnPlayerStreamIn](../callbacks/OnPlayerStreamIn)回调）预先设置 ShowPlayerNameTagForPlayer(forplayerid, playerid, 0)。
 

@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Vrijeme će automatski napredovati za 6 sati kada igrač umre.
 

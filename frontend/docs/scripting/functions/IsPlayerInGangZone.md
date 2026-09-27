@@ -26,13 +26,8 @@ Check if the player in gangzone.
 
 :::warning
 
-This function is for open.mp, not SA-MP. To use with SA-MP, you need the [YSF](https://github.com/IS4Code/YSF/releases) plugin.
-
-:::
-
-:::warning
-
-This function cannot be used without [UseGangZoneCheck](UseGangZoneCheck) being called first.
+- This function is for open.mp, not SA-MP. To use with SA-MP, you need the [YSF](https://github.com/IS4Code/YSF/releases) plugin.
+- This function cannot be used without [UseGangZoneCheck](UseGangZoneCheck) being called first.
 
 :::
 

@@ -18,13 +18,13 @@ Formatteren is tekst aanpassen voor leesbaarheid. In SA-MP’s Pawn is visuele f
 
 Strings zijn arrays met characters: `naam[groote]`.
 
-::::info
+:::info
 
 **string_name**: geldige variabelenaam (bijv. `str`, `message`, `text`).
 
 **string_size**: maximaal aantal characters.
 
-::::
+:::
 
 ```pawn
 // 5 tekens
@@ -41,11 +41,11 @@ Je kunt constants gebruiken voor maten:
 new str_3[STRING_SIZE];
 ```
 
-::::note
+:::note
 
 De compiler vervangt `STRING_SIZE` met de waarde. Gebruik een integer.
 
-::::
+:::
 
 Je kunt simpele berekeningen doen (geen modulo). Delen door 0 is fout; floats worden afgerond.
 

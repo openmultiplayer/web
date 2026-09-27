@@ -5,7 +5,9 @@ description: Modi om een bestand mee te openen.
 ---
 
 :::note
+
 Gebruikt door [fopen](../functions/fopen).
+
 :::
 
 | Modus        | Omschrijving                                                          |

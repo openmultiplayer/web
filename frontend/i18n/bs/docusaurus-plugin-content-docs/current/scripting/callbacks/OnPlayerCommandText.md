@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback pozvat će i NPC.
 

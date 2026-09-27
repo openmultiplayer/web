@@ -33,7 +33,7 @@ public OnGameModeInit()
 
 ## نکات
 
-:::tip
+:::note
 
 حداکثر 1000 شیء (MAX_OBJECTS) وجود دارد. برای دور زدن این محدودیت، می‌توانید از پلاگین [streamer](https://github.com/samp-incognito/samp-streamer-plugin) استفاده کنید.
 

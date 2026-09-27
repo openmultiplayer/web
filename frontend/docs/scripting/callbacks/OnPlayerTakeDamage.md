@@ -66,7 +66,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## Notes
 
-:::tip
+:::note
 
 - The weaponid will return 37 (flame thrower) from any fire sources (e.g. molotov, 18).
 - The weaponid will return 51 from any weapon that creates an explosion (e.g. RPG, grenade)

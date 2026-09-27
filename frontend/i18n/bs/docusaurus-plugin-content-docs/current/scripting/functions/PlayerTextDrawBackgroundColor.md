@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ako se PlayerTextDrawSetOutline koristi s veličinom> 0, boja obrisa odgovarat će boji koja se koristi u PlayerTextDrawBackgroundColor. Čini se da promjena vrijednosti boje mijenja boju koja se koristi u PlayerTextDrawColor
 

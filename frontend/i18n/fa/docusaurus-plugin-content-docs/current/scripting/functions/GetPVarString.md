@@ -42,7 +42,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## نکات
 
-:::tip
+:::note
 
 اگه طول string صفر باشه (مقدار تنظیم نشده)، متن `output` آپدیت یا تنظیم نمی‌شه و با داده‌های قدیمی باقی می‌مونه، که اگه این رفتار مطلوب نیست، باید متغیر رو صاف کنی اگه [GetPVarString](GetPVarString) صفر برگردونه.
 

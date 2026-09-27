@@ -32,7 +32,7 @@ public OnPlayerText(playerid, text[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback pozvat će i NPC.
 

@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 重要说明
 
-:::tip
+:::note
 
 - 使用此函数将重置车辆的 X/Y 轴旋转（俯仰和横滚）
 - X/Y 轴旋转角度不可通过此函数设置

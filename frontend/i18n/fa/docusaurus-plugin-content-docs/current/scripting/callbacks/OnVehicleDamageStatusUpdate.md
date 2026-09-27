@@ -53,7 +53,7 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 این شامل تغییرات سلامتی وسیله نقلیه نمی‌شود.
 

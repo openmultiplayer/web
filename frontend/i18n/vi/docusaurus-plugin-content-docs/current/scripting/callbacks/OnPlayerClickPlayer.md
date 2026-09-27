@@ -37,7 +37,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 ## Ghi Chú
 
-:::tip
+:::note
 
 Hiện tại chỉ có một 'source' (0 - `CLICK_SOURCE_SCOREBOARD`).
 

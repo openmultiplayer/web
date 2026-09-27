@@ -36,7 +36,7 @@ if (strcmp(cmdtext, "/burnme", true) == 0)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bir oyuncu maksimum 10 tane patlama görebilir.
 

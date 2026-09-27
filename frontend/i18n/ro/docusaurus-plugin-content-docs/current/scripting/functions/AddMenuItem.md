@@ -35,9 +35,15 @@ public OnGameModeInit()
 
 ## Note
 
-:::tip
+:::warning
 
-Se blochează la trecerea unui ID de meniu nevalid. Puteți avea doar 12 elemente pe meniu (al 13-lea merge în partea dreaptă a antetului numelui coloanei (colorat), al 14-lea și superior nu este afișat deloc). Puteți utiliza doar 2 coloane (0 și 1). Puteți adăuga doar 8 coduri de culoare pentru un singur articol (~ r ~, ~ g ~ etc.). Lungimea maximă a elementului de meniu este de 31 de simboluri.
+Se blochează la trecerea unui ID de meniu nevalid.
+
+:::
+
+:::note
+
+Puteți avea doar 12 elemente pe meniu (al 13-lea merge în partea dreaptă a antetului numelui coloanei (colorat), al 14-lea și superior nu este afișat deloc). Puteți utiliza doar 2 coloane (0 și 1). Puteți adăuga doar 8 coduri de culoare pentru un singur articol (`~r~`, `~g~` etc.). Lungimea maximă a elementului de meniu este de 31 de simboluri.
 
 :::
 

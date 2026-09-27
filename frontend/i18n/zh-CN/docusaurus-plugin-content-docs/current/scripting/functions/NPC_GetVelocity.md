@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 所有速度参数都通过引用传递，将被修改
 

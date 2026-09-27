@@ -4,7 +4,9 @@ sidebar_label: "Vechtstijlen"
 ---
 
 :::info
+
 Gebruikt door [SetPlayerFightingStyle](../functions/SetPlayerFightingStyle) en [GetPlayerFightingStyle](../functions/GetPlayerFightingStyle).
+
 :::
 
 | Waarde | Definitie            |

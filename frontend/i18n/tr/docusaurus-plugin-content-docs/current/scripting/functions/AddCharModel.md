@@ -39,7 +39,7 @@ AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
 
 ## Notlar
 
-:::tip
+:::note
 
 Bunun işe yaraması için kullanılabilir resmin öncelikle sunucu ayarlarında etkinleştirilmesi gerekir.
 

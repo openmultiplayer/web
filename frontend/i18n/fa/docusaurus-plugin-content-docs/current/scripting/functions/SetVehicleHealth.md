@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 سلامت کامل وسیله نقلیه ۱۰۰۰ است. مقادیر بالاتر امکان‌پذیر است. برای اطلاعات بیشتر در مورد مقادیر سلامت، [این](../resources/vehiclehealth) صفحه را ببینید.
 

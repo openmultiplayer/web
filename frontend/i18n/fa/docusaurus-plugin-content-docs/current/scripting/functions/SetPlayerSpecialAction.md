@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::warning
 
 حذف jetpack از پلیر ها با تنظیم special action شون به `SPECIAL_ACTION_NONE` (0) باعث می‌شه صدا تا زمان مرگ باقی بمونه. یه راه حل برای این هست، فقط یه انیمیشن تصادفی به پلیر اعمال کن و jetpack اش حذف می‌شه.
 

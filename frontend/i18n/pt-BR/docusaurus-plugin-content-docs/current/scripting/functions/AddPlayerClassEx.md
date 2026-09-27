@@ -46,7 +46,7 @@ public OnGameModeInit()
 
 ## Notas
 
-:::tip
+:::note
 
 A identificação máxima da classe é 319 (começando em 0, portanto, um total de 320 classes). Quando esse limite for atingido, quaisquer outras classes adicionadas substituirão a ID 319.
 

@@ -5,7 +5,9 @@ description: Spectate-typen gebruikt door GetPlayerSpectateType.
 ---
 
 :::info
+
 Gebruikt door [GetPlayerSpectateType](../functions/GetPlayerSpectateType).
+
 :::
 
 | Type    | Waarde |

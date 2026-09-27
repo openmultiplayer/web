@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notas
 
-:::tip
+:::note
 
 Você precisa criar o objeto primeiro, antes de tentar conectar uma câmera do jogador.
 

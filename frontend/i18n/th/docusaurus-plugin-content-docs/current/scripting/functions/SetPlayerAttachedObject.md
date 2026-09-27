@@ -50,7 +50,7 @@ public OnPlayerSpawn(playerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 This function is separate from the CreateObject / CreatePlayerObject pools.
 

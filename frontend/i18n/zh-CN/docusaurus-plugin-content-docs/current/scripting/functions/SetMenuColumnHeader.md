@@ -37,15 +37,10 @@ AddMenuItem(gTestMenu, 1, "第二列项1");
 
 ## 注意事项
 
-:::tip
-
-传入无效菜单 ID 会导致崩溃
-
-:::
-
 :::warning
 
-注意通过[AddMenuItem](AddMenuItem)最多只能添加 12 个菜单项。第 13 个菜单项会覆盖通过此函数设置的列标题
+- 传入无效菜单 ID 会导致崩溃（该问题已在 open.mp 中修复）
+- 注意通过[AddMenuItem](AddMenuItem)最多只能添加 12 个菜单项。第 13 个菜单项会覆盖通过此函数设置的列标题
 
 :::
 

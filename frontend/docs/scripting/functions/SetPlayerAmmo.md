@@ -29,7 +29,7 @@ SetPlayerAmmo(playerid, WEAPON_SHOTGUN, 100); // Set ammo of Shotgun to 100 bull
 
 ## Notes
 
-:::tip
+:::note
 
 The param 'weaponslot' is a typo in the sa-mp include. You must use the weapon ID and not the weapon slot of the weapon you would like to set the ammo of.
 

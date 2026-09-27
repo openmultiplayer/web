@@ -45,7 +45,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## Astuce
 
-:::tip
+:::note
 
 Cette callback ne peut pas être appelée si l'actor est invulnérable _(il l'est par défaut)_. Voir [SetActorInvulnerable](../functions/SetActorInvulnerable).
 

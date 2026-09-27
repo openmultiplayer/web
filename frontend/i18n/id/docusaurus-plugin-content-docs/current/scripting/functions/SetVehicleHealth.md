@@ -36,7 +36,7 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 ## Catatan
 
-:::tip
+:::note
 
 Full health kendaraan adalah 1000. Nilai yang lebih tinggi dimungkinkan. Untuk informasi lebih lanjut tentang health values, lihat [ini.](../resources/vehiclehealth)
 

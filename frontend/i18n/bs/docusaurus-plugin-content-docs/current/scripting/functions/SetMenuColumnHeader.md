@@ -36,15 +36,10 @@ AddMenuItem(gTestMenu, 1, "Row2 Item1");
 
 ## Zabilješke
 
-:::tip
-
-Crashuje kada se proslijedi nevažeći ID menija.
-
-:::
-
 :::warning
 
-Imajte na umu da pomoću AddMenuItem možete dodati samo 12 predmeta/stavki. 13. objekt menija zamijenio bi zaglavlje stupca koje je pravilno postavljeno ovom funkcijom.
+- Crashuje kada se proslijedi nevažeći ID menija.
+- Imajte na umu da pomoću AddMenuItem možete dodati samo 12 predmeta/stavki. 13. objekt menija zamijenio bi zaglavlje stupca koje je pravilno postavljeno ovom funkcijom.
 
 :::
 

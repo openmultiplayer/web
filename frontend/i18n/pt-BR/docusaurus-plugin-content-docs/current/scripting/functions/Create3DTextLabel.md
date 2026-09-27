@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notas
 
-:::tip
+:::note
 
 drawDistance parece ser muito menor quando especta.
 

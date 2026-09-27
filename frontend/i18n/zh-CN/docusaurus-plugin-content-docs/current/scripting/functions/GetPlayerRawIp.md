@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 PAWN 语言区分大小写。使用 GetPlayerRawIP（带大写 IP）将无法生效
 

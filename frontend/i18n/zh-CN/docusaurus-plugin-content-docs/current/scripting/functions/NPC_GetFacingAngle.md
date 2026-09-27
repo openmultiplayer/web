@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 角度通过引用传递且会被修改。
 - 角度以度为单位（0.0 到 360.0）。

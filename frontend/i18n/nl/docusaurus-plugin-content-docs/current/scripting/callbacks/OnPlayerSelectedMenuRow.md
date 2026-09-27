@@ -53,7 +53,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## Notities
 
-:::tip
+:::note
 
 Het menu-ID wordt niet meegegeven aan deze callback. Gebruik [GetPlayerMenu](../functions/GetPlayerMenu) om te bepalen op welk menu de speler een item selecteerde.
 

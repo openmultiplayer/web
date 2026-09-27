@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - The angle is passed by reference and will be modified.
 - Angles are in degrees (0.0 to 360.0).

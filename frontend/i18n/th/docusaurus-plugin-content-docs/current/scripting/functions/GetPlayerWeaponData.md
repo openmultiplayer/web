@@ -38,7 +38,7 @@ for (new i = 0; i <= 12; i++)
 
 ## บันทึก
 
-:::tip
+:::note
 
 Old weapons with no ammo left are still returned.
 

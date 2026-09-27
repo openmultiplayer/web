@@ -10,13 +10,13 @@ tags: []
 
 Defina a gravidade para todos os jogadores.
 
-| Nome | Descrição |
-| ------------- | --------------------------------------------------------------------- |
-| Float:gravity | O valor em que a gravidade deve ser definida (entre -50,0 e 50,0). |
+| Nome          | Descrição                                                      |
+| ------------- | -------------------------------------------------------------- |
+| Float:gravity | O valor em que a gravidade deve ser definida (entre -50 e 50). |
 
 ## Retornos
 
-Esta função sempre retorna 1, mesmo quando falha na execução se a gravidade estiver fora dos limites (menor que -50,0 ou maior que +50,0).
+Esta função sempre retorna 1, mesmo quando falha na execução se a gravidade estiver fora dos limites (menor que -50.0 ou maior que +50.0).
 
 ## Exemplos
 
@@ -31,9 +31,9 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::warning
+:::note
 
-A gravidade padrão é 0,008.
+A gravidade padrão é 0.008.
 
 :::
 

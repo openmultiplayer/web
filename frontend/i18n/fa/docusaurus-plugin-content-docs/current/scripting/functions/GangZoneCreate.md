@@ -54,7 +54,7 @@ public OnGameModeInit()
 
 :::
 
-:::tip
+:::note
 
 این تابع فقط گنگ زون را ایجاد می‌کند، برای نمایش آن باید از [GangZoneShowForPlayer](GangZoneShowForPlayer) یا [GangZoneShowForAll](GangZoneShowForAll) استفاده کنید.
 

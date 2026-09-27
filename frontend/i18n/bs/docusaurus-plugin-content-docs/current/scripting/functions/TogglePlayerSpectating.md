@@ -33,7 +33,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Kada je režim gledatelja onemogućen, automatski će se pozvati OnPlayerSpawn, ako želite vratiti stanje igrača u stanje prije gledanja, morat ćete to riješiti u OnPlayerSpawn. Takođe imajte na umu da taj igrač također može ići na odabir klase prije nego što je koristio F4 za vrijeme gledanja, igrač također MOŽE umrijeti u režimu spektakularnosti zbog različitih kvarova.
 

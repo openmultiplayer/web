@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ako je TextDrawSetOutline korišten sa veličinom > 0, boja outline-a će se uklopiti sa bojom korištenom u TextDrawBackgroundColor. Mijenjanjem vrijednosti boje se čini kao da mijenja boju korištenu u TextDrawColor.
 

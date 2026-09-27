@@ -31,7 +31,7 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Igrači nestaju ako su udaljeni više od 150 metara (vidi server.cfg - stream_distance)
 

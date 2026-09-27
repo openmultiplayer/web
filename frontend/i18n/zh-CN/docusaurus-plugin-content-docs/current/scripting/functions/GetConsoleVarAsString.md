@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 当变量名为"filterscripts"或"plugins"时，此函数仅返回第一个滤镜脚本/插件的名称。
 

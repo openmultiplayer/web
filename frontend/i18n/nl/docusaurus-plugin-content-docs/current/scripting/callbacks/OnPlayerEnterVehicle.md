@@ -33,7 +33,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Notities
 
-:::tip
+:::note
 
 - Deze callback wordt aangeroepen wanneer een speler BEGINT een voertuig in te gaan, niet wanneer ze er al IN zitten. Zie [OnPlayerStateChange](OnPlayerStateChange).
 - Deze callback wordt nog steeds aangeroepen als de speler wordt geweigerd toegang tot een voertuig (bijv. het is vergrendeld of vol) maar alleen als passagier.

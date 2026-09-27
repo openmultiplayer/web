@@ -30,9 +30,10 @@ SetPlayerColor(playerid, 4278190335);
 
 ## Zabilješke
 
-:::tip
+:::note
 
-Ova funkcija će promijeniti boju igrača za sve, čak i ako je boja igrača promijenjena pomoću SetPlayerMarkerForPlayer za bilo koji drugi igrač. Ako se koristi pod OnPlayerConnect, igrač koji utječe neće vidjeti boju u TAB izborniku.
+- Ova funkcija će promijeniti boju igrača za sve, čak i ako je boja igrača promijenjena pomoću SetPlayerMarkerForPlayer za bilo koji drugi igrač.
+- Ako se koristi pod OnPlayerConnect, igrač koji utječe neće vidjeti boju u TAB izborniku.
 
 :::
 

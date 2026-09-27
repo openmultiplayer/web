@@ -41,7 +41,7 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## 注意事项
 
-:::tip
+:::note
 
 需先在服务器配置中启用**useartwork**或**artwork.enable**选项才能使此函数生效。
 

@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数不会返回可用于 OnPlayerPickUpPickup 等回调的拾取物 ID。若需要分配 ID，请使用[CreatePickup](CreatePickup)函数。
 

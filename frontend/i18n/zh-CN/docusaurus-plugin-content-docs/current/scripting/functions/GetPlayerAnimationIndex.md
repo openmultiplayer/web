@@ -41,7 +41,9 @@ public OnPlayerUpdate(playerid)
 ## 注意事项
 
 :::tip
+
 动画索引对应 SA-MP 内置动画库的编号，可通过[GetAnimationName](GetAnimationName)获取具体动画名称
+
 :::
 
 ## 相关函数

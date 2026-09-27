@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 - اگر [TogglePlayerClock](TogglePlayerClock) فعال باشه، آب و هوا آروم آروم طی زمان تغییر می‌کنه، نه اینکه فوری تغییر کنه.
 - فقط 21 ID آب و هوای معتبر در بازی وجود داره (0 - 20)، اما بازی هیچ نوع بررسی محدوده نداره.

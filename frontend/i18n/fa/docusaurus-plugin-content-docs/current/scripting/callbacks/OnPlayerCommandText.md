@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکته ها
 
-:::tip
+:::note
 
 این کالبک توسط NPC نیز قابل فرا خوانی است.
 

@@ -34,7 +34,7 @@ public OnPlayerRequestClass(playerid,classid)
 
 ## Notities
 
-:::tip
+:::note
 
 Deze callback wordt ook aangeroepen wanneer een speler F4 indrukt.
 

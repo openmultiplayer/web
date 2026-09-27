@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 Ang laro ay minsan ay nagbabawas ng \$100 mula sa mga manlalaro pagkatapos ng spawn.
 

@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::warning
 
 Kad su filterskripte ili plugini navedeni kao ime var, ova funkcija vraća samo ime prve navedene filterskripte ili plugina. Ovo je bug.
 

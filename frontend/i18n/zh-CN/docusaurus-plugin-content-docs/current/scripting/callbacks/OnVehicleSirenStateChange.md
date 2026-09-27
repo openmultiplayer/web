@@ -43,7 +43,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## 注意事项
 
-:::tip
+:::note
 
 此回调仅在警报器开关状态切换时触发，长按喇叭触发的交替警报器声不会触发
 

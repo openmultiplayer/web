@@ -56,7 +56,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 ## Notas
 
-:::tip
+:::note
 
 Algunas funciones pueden no funcionar correctamente cuando son usadas en este callback debido a que el jugador ya está desconectado cuando el callback es llamado. Esto quiere decir que no podés obtener información inequívoca de funciones como GetPlayerIp o GetPlayerPos.
 

@@ -40,7 +40,7 @@ public OnRconCommand(cmd[])
 
 ## Notas
 
-:::tip
+:::note
 
 "/rcon " não está inclusa no "cmd" quando um player utiliza um comando. Caso você utilize a função "print", uma mensagem será enviada para o jogador que digitou o comando in-game e também no log do servidor. Essa callback não é executada caso o jogador não esteja logado na RCON. Quando o jogador não está logado na RCON como admin ele deve usar o comando /rcon login, a callback OnRconLoginAttempt será executada ao invés da OnRconCommand. Apesar disso, quando o jogador fizer login na RCON como admin, o uso do comando /rcon fará com que o mesmo execute a callback OnRconCommand.
 

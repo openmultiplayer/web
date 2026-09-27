@@ -44,7 +44,7 @@ public OnGameModeInit()
 
 ## Notlar
 
-:::tip
+:::note
 
 Animasyon kütüphanesini aktör için önceden yüklemelisiniz(preload). Aksi taktirde fonksiyon tekrar çağırılana kadar animasyon aktöre işlemez.
 

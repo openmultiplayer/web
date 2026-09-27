@@ -33,7 +33,7 @@ public OnPlayerSpawn(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ime funkcije je armour, a ne armor (amerikaniziran). Ovo nije u skladu s ostatkom SA-MP-a, pa zapamtite to.
 

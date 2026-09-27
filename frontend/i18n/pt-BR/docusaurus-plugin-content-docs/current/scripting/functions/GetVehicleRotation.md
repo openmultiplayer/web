@@ -39,10 +39,15 @@ GetVehicleRotation(vehicleid, x, y, z);
 ```
 ## Notas
 
-:::tip
+:::note
 
-- Não existe variação ‘definida’ desta função; você não pode SET a rotação de um veículo (além do ângulo Z)
-- Esta função pode retornar valores incorretos para veículos desocupados. A razão é que a terceira linha da matriz de rotação interna do veículo fica corrompida se for atualizada enquanto estiver desocupado.
+Não existe variação ‘definida’ desta função; você não pode SET a rotação de um veículo (além do ângulo Z)
+
+:::
+
+:::warning
+
+Esta função pode retornar valores incorretos para veículos desocupados. A razão é que a terceira linha da matriz de rotação interna do veículo fica corrompida se for atualizada enquanto estiver desocupado.
 
 :::
 

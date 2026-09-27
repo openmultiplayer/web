@@ -22,7 +22,7 @@ Ovaj callback je pozvan kada se stanje bilo koje [podržane](../resources/keys) 
 
 ## Zabilješke
 
-:::info
+:::note
 
 Ovaj callback takođerm ože biti pozvan od strane NPC-a.
 

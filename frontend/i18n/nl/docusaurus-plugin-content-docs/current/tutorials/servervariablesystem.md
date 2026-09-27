@@ -8,17 +8,17 @@ Het **server variable system** (kort: **SVar**) biedt een efficiënte, dynamisch
 
 Ze lijken op [PVars](perplayervariablesystem), maar zijn niet gekoppeld aan een specifieke player ID.
 
-::::warning
+:::warning
 
 Dit systeem is geïntroduceerd in SA-MP 0.3.7 R2-1 en werkt niet in eerdere versies.
 
-::::
+:::
 
-::::note
+:::note
 
 Het SVar-systeem werkt hetzelfde als PVars, maar de variabelen zijn server-breed, niet gekoppeld aan een speler, en blijven bestaan bij het wisselen van gamemode.
 
-::::
+:::
 
 ## Voordelen
 

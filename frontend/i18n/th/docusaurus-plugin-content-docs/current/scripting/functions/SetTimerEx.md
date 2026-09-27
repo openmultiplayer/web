@@ -19,7 +19,7 @@ Sets a timer to call a function after the specified interval. This variant ('Ex'
 
 ## ส่งคืน
 
-The ID of the timer that was started. Timer IDs start at 1 and are never reused. There are no internal checks to verify that the parameters passed are valid (e.g. duration not a minus value). Y_Less' 'fixes2' plugin implements these checks and also vastly improves the accuracy of timers, and also adds support for array/string passing.
+The ID of the timer that was started. Timer IDs start at 1 and are never reused.
 
 ## ตัวอย่าง
 
@@ -62,9 +62,17 @@ public EndAntiSpawnKill(playerid)
 
 ## บันทึก
 
+:::warning
+
+Timer intervals are not accurate (roughly 25% off) in SA-MP. There are fixes available [here](https://sampforum.blast.hk/showthread.php?tid=289675) and [here](https://sampforum.blast.hk/showthread.php?tid=650736). But it is fixed in open.mp.
+
+:::
+
 :::tip
 
-Timer ID variables should be initialized to -1 when they can to minimise the chance of accidentally killing timer ID 0 by mistake (or use timer ID 0 up at the start of OnGameModeInit). Timer intervals are not accurate (roughly 25% off). There are fixes available here and here. The function to be called must be public. That means it has to be forwarded.
+Timer ID variables should be reset to 0 when they can to minimise the chance of accidentally killing new timers by mistake. `-1` is commonly mistaken to be the invalid ID - it isn't.
+
+The function to be called must be public. That means it has to be forwarded.
 
 :::
 

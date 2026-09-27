@@ -6,13 +6,8 @@ description: 字节大小与对应车门状态位的关联信息
 
 :::note
 
-车门状态信息适用于[GetVehicleDamageStatus](../functions/GetVehicleDamageStatus)和[UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus)等原生函数。
-
-:::
-
-:::note
-
-两个后门的状态无法通过[GetVehicleDamageStatus](../functions/GetVehicleDamageStatus)和[UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus)进行处理。
+- 车门状态信息适用于[GetVehicleDamageStatus](../functions/GetVehicleDamageStatus)和[UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus)等原生函数。
+- 两个后门的状态无法通过[GetVehicleDamageStatus](../functions/GetVehicleDamageStatus)和[UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus)进行处理。
 
 :::
 

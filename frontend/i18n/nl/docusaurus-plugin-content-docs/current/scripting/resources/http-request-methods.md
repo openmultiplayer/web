@@ -5,7 +5,9 @@ description: Typen HTTP-aanvragen.
 ---
 
 :::note
+
 Gebruikt door de functie [HTTP](../functions/HTTP).
+
 :::
 
 | ID  | Methode   | Omschrijving                                                                                                                                                                                                   |

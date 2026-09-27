@@ -31,7 +31,7 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 ## บันทึก
 
-:::tip
+:::note
 
 Players stream out if they are more than 150 meters away (see server.cfg - stream_distance)
 

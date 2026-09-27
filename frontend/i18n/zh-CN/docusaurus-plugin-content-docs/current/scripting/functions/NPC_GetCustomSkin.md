@@ -51,11 +51,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 说明
 
-:::warning
+:::note
 
 - 如果 NPC 未设置自定义皮肤或 NPC 无效，则返回-1。
 - 自定义皮肤与常规皮肤不同，通常指的是添加到游戏中的自定义模型。
-- 使用 [NPC_GetSkin](NPC_GetSkin) 来获取常规的皮肤/模型 ID。
+
+:::
+
+:::tip
+
+使用 [NPC_GetSkin](NPC_GetSkin) 来获取常规的皮肤/模型 ID。
 
 :::
 

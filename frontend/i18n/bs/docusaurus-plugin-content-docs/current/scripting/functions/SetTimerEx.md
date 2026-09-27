@@ -19,7 +19,7 @@ Postavlja tajmer za pozivanje funkcije nakon navedenog intervala. Ova varijanta 
 
 ## Returns
 
-ID tajmera koji je pokrenut. ID-ovi odbrojavanja počinju na 1 i nikad se više ne koriste. Ne postoje interne provjere koje bi provjerile jesu li proslijeđeni valjani parametri (npr. Trajanje nije minus vrijednost). Y_Less-ov 'fixes2' plugin implementira ove provjere i također značajno poboljšava preciznost tajmera, a također dodaje podršku za prolazak stringa/niza.
+ID tajmera koji je pokrenut. ID-ovi odbrojavanja počinju na 1 i nikad se više ne koriste.
 
 ## Primjeri
 

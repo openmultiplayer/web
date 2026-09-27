@@ -49,7 +49,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 ## Mga Dapat Unawain
 
-:::tip
+:::note
 
 Ang ibang function ay maaaring di gumana ng maayos kapag ginamit sa callback na ito dahil ang player ay naka diskonekta na bago matatawag ang callback na ito. Dahil din dito, hindi mo magagamit ng buo ang mga importanteng functions na pangkuha ng impormasyon tulad ng `GetPlayerIp` at `GetPlayerPos`.
 

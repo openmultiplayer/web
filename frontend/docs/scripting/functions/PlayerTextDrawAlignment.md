@@ -40,15 +40,10 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::warning
+:::note
 
-For alignment 2 (TEXT_DRAW_ALIGN_CENTER) the x and y values of TextSize need to be swapped, see notes at [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
-
-:::
-
-:::tip
-
-If the textdraw is already shown for the player, it must be re-shown ([PlayerTextDrawShow](PlayerTextDrawShow)) to show the changes of this function.
+- For alignment 2 (TEXT_DRAW_ALIGN_CENTER) the x and y values of TextSize need to be swapped, see notes at [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
+- If the textdraw is already shown for the player, it must be re-shown ([PlayerTextDrawShow](PlayerTextDrawShow)) to show the changes of this function.
 
 :::
 

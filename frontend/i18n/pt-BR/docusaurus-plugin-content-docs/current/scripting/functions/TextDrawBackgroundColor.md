@@ -34,7 +34,7 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
 - Se [TextDrawSetOutline](TextDrawSetOutline) for usado com tamanho > 0, a cor do contorno corresponderá à cor usada em TextDrawBackgroundColor.
 - Alterar o valor da cor parece alterar a cor usada em [TextDrawColor](TextDrawColor).

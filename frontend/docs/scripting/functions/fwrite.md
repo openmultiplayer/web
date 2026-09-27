@@ -106,7 +106,7 @@ else
 
 ## Notes
 
-:::tip
+:::note
 
 This functions writes to the file in UTF-8, which does not support some localized language symbols.
 

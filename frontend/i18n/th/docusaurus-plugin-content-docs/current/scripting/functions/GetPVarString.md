@@ -42,7 +42,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## บันทึก
 
-:::tip
+:::note
 
 If length of string is zero (value not set), string_return text will not be updated or set to anything and will remain with old data, neccesying that you clear the variable to blank value if GetPVarString returns 0 if that behavior is undesired
 

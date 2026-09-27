@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Os mundos virtuais permitem a separação de NPCs e jogadores.
 - NPCs em mundos virtuais diferentes não podem se ver.

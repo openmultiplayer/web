@@ -41,19 +41,12 @@ public OneSecondTimer()
 
 :::warning
 
-فواصل زمانی تایمرها دقیق نیستند (تقریباً ۲۵٪ خطا) در SA-MP. راه حل هایی موجود هستند در [اینجا](https://sampforum.blast.hk/showthread.php?tid=289675) و [اینجا](https://sampforum.blast.hk/showthread.php?tid=650736).
-
-اما این مشکل در open.mp حل شده است.
-
-:::
-
-:::warning
-
-استفاده از تایمر های زیاد باعث افزایش مصرف رم/سی‌پی‌یو خواهد شد.
+- فواصل زمانی تایمرها دقیق نیستند (تقریباً ۲۵٪ خطا) در SA-MP. راه حل هایی موجود هستند در [اینجا](https://sampforum.blast.hk/showthread.php?tid=289675) و [اینجا](https://sampforum.blast.hk/showthread.php?tid=650736). اما این مشکل در open.mp حل شده است.
+- استفاده از تایمر های زیاد باعث افزایش مصرف رم/سی‌پی‌یو خواهد شد.
 
 :::
 
-:::tip
+:::note
 
 شناسه‌های تایمر هرگز دوباره استفاده نمی‌شوند.
 

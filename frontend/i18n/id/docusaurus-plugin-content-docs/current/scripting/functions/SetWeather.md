@@ -29,7 +29,7 @@ if (!strcmp(cmdtext, "/sandstorm", true))
 
 ## Catatan
 
-:::tip
+:::note
 
 Jika TogglePlayerClock menyala, Cuaca perlahan-lahan akan berubah dari waktu ke waktu, alih alih berubah secara instant. Hanya ada 21 ID cuaca yang valid dalam game (0 - 20), Namun game tidak memiliki bentuk cek jangkauan.
 

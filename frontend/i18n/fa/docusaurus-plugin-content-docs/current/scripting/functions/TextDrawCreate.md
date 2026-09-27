@@ -47,12 +47,17 @@ public OnPlayerConnect(playerid)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 - مختصات `x, y` مختصات بالا سمت چپ برای ناحیه text draw بر اساس "بوم" 640x480 است (بدون توجه به رزولوشن صفحه).
 - اگر قصد استفاده از [TextDrawAlignment](TextDrawAlignment) با چینش 3 (`TEXT_DRAW_ALIGN_RIGHT`) را دارید، مختصات `x, y` مختصات بالا سمت راست برای text draw است.
 - این تابع فقط textdraw را ایجاد می‌کند، باید از [TextDrawShowForPlayer](TextDrawShowForPlayer) یا [TextDrawShowForAll](TextDrawShowForAll) برای نمایش آن استفاده کنید.
-- توصیه می‌شود هنگام ایجاد textdraw ها از اعداد کامل به جای موقعیت‌های اعشاری استفاده کنید تا طراحی سازگار با رزولوشن اطمینان حاصل شود.
+
+:::
+
+:::tip
+
+توصیه می‌شود هنگام ایجاد textdraw ها از اعداد کامل به جای موقعیت‌های اعشاری استفاده کنید تا طراحی سازگار با رزولوشن اطمینان حاصل شود.
 
 :::
 

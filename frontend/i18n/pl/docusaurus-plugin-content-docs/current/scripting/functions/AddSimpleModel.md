@@ -41,7 +41,7 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## Uwagi
 
-:::tip
+:::note
 
 `useartwork` musi być włączone w ustawieniach serwera, aby ta funkcja działała. Jeżeli ustawiony jest konkretny wirtualny świat, to gracz pobierze obiekty w momencie wejścia do niego.
 

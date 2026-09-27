@@ -33,7 +33,7 @@ printf("money: %d", GetPVarInt(playerid, "Money"));
 
 ## Notes
 
-:::tip
+:::note
 
 Variables aren't reset until after [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) is called, so the values are still accessible in OnPlayerDisconnect.
 

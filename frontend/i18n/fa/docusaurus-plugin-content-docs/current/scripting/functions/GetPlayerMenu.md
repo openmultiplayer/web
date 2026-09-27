@@ -27,7 +27,7 @@ new Menu:currentMenu = GetPlayerMenu(playerid); // Store the player's current me
 
 ## نکات
 
-:::tip
+:::note
 
 زمانی که هیچ منویی نمایش داده نمی‌شود، منوی قبلی را برمی‌گرداند.
 

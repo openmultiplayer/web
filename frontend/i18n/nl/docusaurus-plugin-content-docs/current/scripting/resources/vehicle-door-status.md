@@ -5,7 +5,9 @@ description: Definities voor deurstatus.
 ---
 
 :::note
+
 Gebruikt door [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) en [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+
 :::
 
 | Definitie                                                         | Waarde     |

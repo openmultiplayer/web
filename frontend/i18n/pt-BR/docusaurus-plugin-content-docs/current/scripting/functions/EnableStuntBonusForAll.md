@@ -36,6 +36,7 @@ Você também pode alternar os bônus de acrobacias via [config.json](../../serv
 ```json
 "use_stunt_bonuses": false,
 ```
+
 :::
 
 ## Funções Relacionadas

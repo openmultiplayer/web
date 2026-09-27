@@ -47,7 +47,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## Ghi Chú
 
-:::tip
+:::note
 
 - Lý do sẽ trả về 37 (vũ khí phun lửa) từ bất kỳ nguồn lửa nào (ví dụ: molotov, 18).
 - Lý do sẽ trả về 51 từ bất kỳ vũ khí nào tạo ra vụ nổ (ví dụ: RPG, grenade).

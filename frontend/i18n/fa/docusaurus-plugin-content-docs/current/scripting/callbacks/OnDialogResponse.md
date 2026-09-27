@@ -138,7 +138,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## نکته ها
 
-:::tip
+:::note
 
 مقدار ها بر اثاث نوع استایل دیالوگ میتوانند محتوای متفاوتی داشته باشند
 

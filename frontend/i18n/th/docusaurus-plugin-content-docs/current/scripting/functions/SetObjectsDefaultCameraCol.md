@@ -60,7 +60,7 @@ public OnGameModeInit()
 
 ## บันทึก
 
-:::tip
+:::note
 
 This function only affects the camera collision of objects created AFTER its use - it does not toggle existing objects' camera collisions.
 

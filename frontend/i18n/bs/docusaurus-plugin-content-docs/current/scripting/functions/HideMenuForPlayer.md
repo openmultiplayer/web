@@ -33,7 +33,7 @@ if (strcmp(cmdtext, "/menuhide", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::warning
 
 Ruši/crasha i server i igrača ako je dat nevažeći ID menija.
 

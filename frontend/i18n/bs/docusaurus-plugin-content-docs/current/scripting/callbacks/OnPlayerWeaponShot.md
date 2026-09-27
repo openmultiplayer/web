@@ -41,7 +41,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback je pozvan samo kada je is only called when kompenzacija zakašnjenja omogućena. Ako je hittype:
 

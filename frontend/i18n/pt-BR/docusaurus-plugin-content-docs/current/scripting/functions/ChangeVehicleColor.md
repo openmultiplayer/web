@@ -34,7 +34,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Notas
 
-:::tip
+:::note
 
 Alguns veículos apenas possuem uma cor primária e outros não podem ter a cor alterada. Alguns (Cement, Squalo) têm 4 cores, das quais 2 não podem ser alteradas no SA:MP.
 

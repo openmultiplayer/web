@@ -31,7 +31,7 @@ public OnScriptLoadPlayer(playerid, bool:isEntryScript)
 
 ## Белешке
 
-:::tip
+:::note
 
 Ова повратна функција се позива када се **учитава** споредна скрипта (филтер скрипт) у току рада.
 

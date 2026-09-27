@@ -40,6 +40,7 @@ Você também pode alternar o filtro de entrada de bate-papo no arquivo config.j
 ```json
 "chat_input_filter": true,
 ```
+
 :::
 
 ## Funções Relacionadas

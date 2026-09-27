@@ -15,6 +15,10 @@ Se foloseste cu [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage), [OnPlayer
 | 8   | Piciorul drept |
 | 9   | Cap            |
 
-:::note Aceste ID-uri nu sunt confirmate 100% și nu sunt definite în niciun SA-MP include - trebuie să fie definite de scripter. Nu se știe dacă ID-urile 0, 1 și 2 au vreo utilizare. :::
+:::note
+
+Aceste ID-uri nu sunt confirmate 100% și nu sunt definite în niciun SA-MP include - trebuie să fie definite de scripter. Nu se știe dacă ID-urile 0, 1 și 2 au vreo utilizare.
+
+:::
 
 ![](https://assets.open.mp/assets/images/bodyParts/Body_parts.jpg)

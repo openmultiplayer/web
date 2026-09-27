@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 مقدار بازگشتی پس از تغییر حالت بازی (استفاده از دستور RCON "gmx") به صفر reset نمی‌شود.
 

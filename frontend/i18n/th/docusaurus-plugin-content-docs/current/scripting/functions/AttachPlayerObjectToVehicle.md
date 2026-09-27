@@ -42,7 +42,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## บันทึก
 
-:::tip
+:::note
 
 You need to create the object before attempting to attach it to a vehicle.
 

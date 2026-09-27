@@ -76,7 +76,7 @@ public MyHttpResponse(index, response_code, data[])
 
 ## Notes
 
-:::tip
+:::note
 
 As well as the response codes listed above, there are also all of the typical HTTP responses such as 404 (Page not found), 500 (Server error) or 403 (forbidden)
 

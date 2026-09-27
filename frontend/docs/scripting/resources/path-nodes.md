@@ -5,8 +5,10 @@ description: GTA SA path node system documentation
 tags: [nodes, paths, ai, navigation, vehicles, pedestrians]
 ---
 
-:::warning Source Attribution
+:::info Source Attribution
+
 This documentation was originally sourced from [GTAMods Wiki - Paths (GTA SA)](<https://gtamods.com/wiki/Paths_(GTA_SA)>) and has been preserved here for archival purposes. The content remains unchanged, with only formatting improvements to enhance readability in the open.mp documentation.
+
 :::
 
 <!-- Image: Colour-coded car path nodes for GTA: SA. (SAPathNodes.png) -->
@@ -72,7 +74,9 @@ The header contains information about the content of the various sections in the
 | 4b   | UINT32 | number of links (section 3/5/6)      |
 
 :::note
+
 Sections related to links (3/5/6) have the same number of entries. These entries belong together and can be treated as one record by editors.
+
 :::
 
 ### Section 1 - Path Nodes
@@ -206,7 +210,9 @@ These are used to characterize path segment behavior, for more information see t
 - The _traffic light direction behavior_ is 1 if the navi node has the same direction as the traffic light and 0 if the navi node points somewhere else.
 
 :::note
+
 (\*) Got clear after knowing how Navis are linked exactly. So you may use this but it is not obligation.
+
 :::
 
 ### Section 3 - Links
@@ -231,6 +237,7 @@ These are links to adjacent navi nodes, one for each link (in section 3), **2 by
 | 2b   | UINT16 | lower 10 bit are the Navi Node ID, upper 6 bit the corresponding Area ID |
 
 :::warning Important Limitations
+
 **Navi Node Limits:**
 
 - Maximum **1024** Navi Nodes per area file
@@ -239,7 +246,8 @@ These are links to adjacent navi nodes, one for each link (in section 3), **2 by
 **Navi Node ID Note:**
 
 - The Navi Node ID is not the Linked Node ID from Section 2, but rather the sequential order in which the Navi Node appears in the file.
-  :::
+
+:::
 
 ### Section 6 - Link Lengths
 

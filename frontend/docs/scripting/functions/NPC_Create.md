@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - The NPC will not be spawned automatically. Use [NPC_Spawn](NPC_Spawn) to spawn it.
 - NPC names must follow the same rules as player names.

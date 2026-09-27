@@ -36,7 +36,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback je pozvan svaki put kada igrač promijeni virtualni svijet (virtual world), iako nema modela koji su prezentovani u tom virtualnom svijetu.
 

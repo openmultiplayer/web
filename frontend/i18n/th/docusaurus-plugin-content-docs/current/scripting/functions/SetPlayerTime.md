@@ -30,7 +30,7 @@ SetPlayerTime(playerid, 0, 0); // Midnight
 
 ## บันทึก
 
-:::tip
+:::note
 
 Using this function under OnPlayerConnect doesn't work.
 

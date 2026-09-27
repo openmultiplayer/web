@@ -49,7 +49,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::warning
 
-Using an invalid component ID crashes the player's game. There are no internal checks for this.
+Using an invalid component ID crashes the player's game. (Fixed in open.mp)
 
 :::
 

@@ -41,19 +41,12 @@ public OneSecondTimer()
 
 :::warning
 
-Timer intervals are not accurate (roughly 25% off) in SA-MP. There are fixes available [here](https://sampforum.blast.hk/showthread.php?tid=289675) and [here](https://sampforum.blast.hk/showthread.php?tid=650736).
-
-But it is fixed in open.mp
-
-:::
-
-:::warning
-
-The use of many timers will result in increased memory/cpu usage.
+- Timer intervals are not accurate (roughly 25% off) in SA-MP. There are fixes available [here](https://sampforum.blast.hk/showthread.php?tid=289675) and [here](https://sampforum.blast.hk/showthread.php?tid=650736). But it is fixed in open.mp.
+- The use of many timers will result in increased memory/cpu usage.
 
 :::
 
-:::tip
+:::note
 
 Timer IDs are never used twice.
 

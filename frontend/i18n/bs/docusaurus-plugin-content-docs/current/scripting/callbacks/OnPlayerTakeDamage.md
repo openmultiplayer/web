@@ -62,7 +62,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## Zabilješke
 
-:::tip
+:::note
 
 ID oružja (weaponid) će return-ovati 37 (flame thrower) od bilo kojeg izvora vatre (npr. molotov, 18) ID oružja (weaponid) će return-ovati 51 od bilo koje vrste eksplozije (npe. RPG, granata) playerid je jedini koji može pozvati ovaj callback. Količina je uvijek maksimalna povreda koju taj ID oružja (weaponid) može da dadne, iako je nivo healtha manji od maksimalne povrede. Tako da kada igrač ima 100.0 healtha i biva pogođen sa Desert Eagle-om koji daje damage vrijednosti 46.2, potrebna su 3 hica da se taj igrač ubije. Sva tri hica će priakzati količinu 46.2, iako zadnji kada zadnji hitac biva ispaljen, igrač ima samo 7.6 preostalog healtha.
 

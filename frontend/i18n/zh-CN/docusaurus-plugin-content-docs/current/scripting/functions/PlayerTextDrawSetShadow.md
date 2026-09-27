@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 当阴影尺寸超过文本区域大小时，阴影可能会被方框边界裁剪
 

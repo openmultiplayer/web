@@ -59,7 +59,7 @@ public OnPlayerConnect(playerid)
 
 :::
 
-:::tip
+:::note
 
 Esta função apenas CRIA a gangzone, você deve usar [PlayerGangZoneShow](PlayerGangZoneShow) para mostrá-la.
 

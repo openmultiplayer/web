@@ -36,7 +36,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## نکات
 
-:::tip
+:::note
 
 - انیمیشن خروج برای بقیه بازیکن‌ها sync نمی‌شه.
 - این function در [OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle) کار نمی‌کنه، چون بازیکن موقع فراخوانی callback در ماشین نیست. بجاش از [OnPlayerStateChange](../callbacks/OnPlayerStateChange) استفاده کن (مثال بالا رو ببین).

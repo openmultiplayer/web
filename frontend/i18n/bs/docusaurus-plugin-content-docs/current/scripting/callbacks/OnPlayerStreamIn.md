@@ -32,7 +32,7 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback pozvat će i NPC.
 

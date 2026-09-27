@@ -5,7 +5,9 @@ description: Statuswaarden voor landingsgestel.
 ---
 
 :::note
+
 Gebruikt door [GetVehicleLandingGearState](../functions/GetVehicleLandingGearState) en [GetPlayerLandingGearState](../functions/GetPlayerLandingGearState).
+
 :::
 
 | Definitie               | ID  |

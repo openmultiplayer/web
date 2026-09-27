@@ -33,7 +33,7 @@ public OnPlayerSpawn(playerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 The function's name is armour, not armor (Americanized). This is inconsistent with the rest of SA-MP, so remember that.
 

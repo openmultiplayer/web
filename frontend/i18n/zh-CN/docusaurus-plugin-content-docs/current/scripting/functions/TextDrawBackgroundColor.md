@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 当使用[TextDrawSetOutline](TextDrawSetOutline)且尺寸>0 时，轮廓颜色将与此函数设置的颜色一致
 - 修改颜色值会影响[TextDrawColor](TextDrawColor)的文本颜色表现

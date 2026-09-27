@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 在附加玩家视角之前，必须先创建对应的玩家创建的物体。
 

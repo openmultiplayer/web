@@ -37,5 +37,7 @@ Gebruikt door [DB_Open](../functions/DB_Open_Modern) en [db_open](../functions/d
 | SQLITE_OPEN_EXRESCODE     |             |
 
 :::note
+
 Meer over VFS: https://www.sqlite.org/c3ref/vfs.html
+
 :::

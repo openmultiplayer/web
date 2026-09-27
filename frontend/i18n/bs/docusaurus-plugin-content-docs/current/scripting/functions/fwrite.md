@@ -97,7 +97,7 @@ else
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova funkcija zapisuje u datoteku u UTF-8, koja ne podržava neke simbole lokaliziranog jezika.
 

@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数功能与乘法运算符(\*)重复，建议直接使用运算符。
 

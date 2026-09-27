@@ -53,7 +53,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Белешке
 
-:::tip
+:::note
 
 DrawDistance изгледа као да је мањи у spectate моду.
 

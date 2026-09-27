@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 观察模式下有效显示距离会显著缩短
 

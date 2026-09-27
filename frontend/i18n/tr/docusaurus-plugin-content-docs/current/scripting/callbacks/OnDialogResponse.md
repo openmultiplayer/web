@@ -137,7 +137,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## Notlar
 
-:::tip
+:::note
 
 Parametrelerde, dialog stillerine göre değişiklikler olabilir. (daha fazla örnek için tıklayın).
 

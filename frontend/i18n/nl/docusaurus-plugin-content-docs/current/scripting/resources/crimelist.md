@@ -5,7 +5,9 @@ description: Crime‑ID's gebruikt door PlayCrimeReportForPlayer.
 ---
 
 :::info
+
 Gebruikt door [PlayCrimeReportForPlayer](../functions/PlayCrimeReportForPlayer).
+
 :::
 
 | Crime ID | Ten‑code | Omschrijving                                            |

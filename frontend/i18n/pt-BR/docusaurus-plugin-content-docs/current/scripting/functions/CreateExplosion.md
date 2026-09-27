@@ -39,7 +39,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## Notas
 
-:::tip
+:::note
 
 Há um limite de quantas explosões podem ser vistas ao mesmo tempo por um jogador. Este é aproximadamente 10.
 

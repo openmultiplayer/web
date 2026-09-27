@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::warning
+:::note
 
 默认重力值为 0.008
 

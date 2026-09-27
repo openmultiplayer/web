@@ -41,7 +41,7 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## Notes
 
-:::tip
+:::note
 
 `useartwork` harus diaktifkan terlebih dahulu dalam pengaturan server agar dapat berfungsi ketika virtualworld diatur, model akan didownload setelah player memasuki world tertentu
 

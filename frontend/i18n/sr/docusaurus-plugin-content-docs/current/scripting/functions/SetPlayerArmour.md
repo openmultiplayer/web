@@ -33,7 +33,7 @@ public OnPlayerSpawn(playerid)
 
 ## Белешке
 
-:::tip
+:::note
 
 Име функције је armour, не armor (Амерички).
 
@@ -42,6 +42,7 @@ public OnPlayerSpawn(playerid)
 :::warning
 
 Панцир се добија заокрушено на integer: постави 50.15, али добијеш 50.0
+
 :::
 
 ## Повезане функције

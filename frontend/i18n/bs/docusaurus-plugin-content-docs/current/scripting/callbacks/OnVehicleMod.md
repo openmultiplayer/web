@@ -37,7 +37,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback neće biti pozvan od strane `AddVehicleComponent`.
 

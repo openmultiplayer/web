@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Klijentska verzija može imati najviše 24 znaka, inače će veza biti odbijena zbog "Nevažeće veze s klijentom". Međutim, normalni igrači mogu se pridružiti samo sa verzijom dužine između 5 (0.3.7) i 9 (0.3.DL-R1) znakova.
 

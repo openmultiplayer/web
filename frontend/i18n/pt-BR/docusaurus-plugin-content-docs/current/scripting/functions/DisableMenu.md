@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Causa crash se for passado um ID de menu inválido.
+Causa crash se for passado um ID de menu inválido. (Corrigido em open.mp)
 
 :::
 

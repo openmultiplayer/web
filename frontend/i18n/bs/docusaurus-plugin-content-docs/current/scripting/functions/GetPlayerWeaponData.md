@@ -38,7 +38,7 @@ for (new i = 0; i <= 12; i++)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Staro oružje bez preostalog streljiva i dalje se vraća.
 

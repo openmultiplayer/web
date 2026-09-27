@@ -59,7 +59,10 @@ if (strcmp(cmdtext, "/superman", true) == 0)
 
 :::warning
 
-Promjena imena igrača u isto ime, ali s različitim slučajevima slova (npr. "John" u "JOHN") neće uspjeti. Ako se koristi u OnPlayerConnect, novo ime neće biti prikazano za povezujećeg igrača. Prosljeđivanje null niza kao novog imena srušit će server. Imena igrača mogu imati do 24 znaka kada se koristi ova funkcija, ali kada se pridružuju serveru iz pregledača servera SA-MP, imena igrača ne smiju biti veća od 20 i manja od 3 znaka (server će odbiti ulazak). Ovo omogućava dodavanje 4 znaka kada koristite SetPlayerName.
+- Promjena imena igrača u isto ime, ali s različitim slučajevima slova (npr. "John" u "JOHN") neće uspjeti.
+- Ako se koristi u OnPlayerConnect, novo ime neće biti prikazano za povezujećeg igrača.
+- Prosljeđivanje null niza kao novog imena srušit će server.
+- Imena igrača mogu imati do 24 znaka kada se koristi ova funkcija, ali kada se pridružuju serveru iz pregledača servera SA-MP, imena igrača ne smiju biti veća od 20 i manja od 3 znaka (server će odbiti ulazak). Ovo omogućava dodavanje 4 znaka kada koristite SetPlayerName.
 
 :::
 

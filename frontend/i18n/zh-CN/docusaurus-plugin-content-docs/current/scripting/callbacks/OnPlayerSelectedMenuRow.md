@@ -56,7 +56,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## 注意事项
 
-:::tip
+:::note
 
 回调函数不会直接传递菜单ID，需使用[GetPlayerMenu](../functions/GetPlayerMenu)获取当前菜单
 

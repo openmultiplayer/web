@@ -25,9 +25,9 @@ SetNameTagDrawDistance(20.0);
 ```
 ## Notas
 
-:::tip
+:::note
 
-A distância padrão é 70,0 unidades SA
+A distância padrão é 70.0 unidades SA
 
 :::
 

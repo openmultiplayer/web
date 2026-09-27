@@ -37,7 +37,7 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Note
 
-:::tip
+:::note
 
 Acest apel invers poate fi apelat și de NPC.
 

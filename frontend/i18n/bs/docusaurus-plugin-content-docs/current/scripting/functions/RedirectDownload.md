@@ -5,7 +5,7 @@ description: Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleMo
 tags: []
 ---
 
-:::note
+:::warning
 
 This function was added in SA-MP 0.3.DL R1 and neće raditi u ranijim verzijama!
 

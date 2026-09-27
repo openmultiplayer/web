@@ -31,7 +31,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## Notas
 
-:::tip
+:::note
 
 Este callback se llama cada vez que un jugador cambia de mundo virtual, incluso si no hay modelos personalizados presentes en ese mundo.
 

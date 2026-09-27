@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 - Se você usar um tipo de marcador inválido, ele criará ID 1 (Quadrado Branco![](https://assets.open.mp/assets/images/mapIcons/icon1.gif)).
 - Se você usar um ícone ID que já esteja em uso, ele substituirá o ícone do mapa atual usando esse ID.

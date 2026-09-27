@@ -48,11 +48,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 所有旋转参数都通过引用传递且会被修改。
 - X = 俯仰角（上下），Y = 偏航角（左右），Z = 翻滚角（倾斜）。
-- 对于简单的朝向，请改用 [NPC_GetFacingAngle](NPC_GetFacingAngle)。
+
+:::
+
+:::tip
+
+对于简单的朝向，请改用 [NPC_GetFacingAngle](NPC_GetFacingAngle)。
 
 :::
 

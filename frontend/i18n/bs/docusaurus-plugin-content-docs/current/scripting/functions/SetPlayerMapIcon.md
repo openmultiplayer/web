@@ -39,7 +39,7 @@ public OnPlayerConnect( playerid )
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ako koristite nevažeći tip markera, stvorit će se ID 1 (Bijeli kvadrat). Ako koristite ID ikone koji se već koristi, on će zamijeniti trenutnu ikonu karte pomoću tog ID-a.
 

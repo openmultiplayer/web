@@ -59,7 +59,7 @@ GetPlayer3DTextLabelAttached(playerid, gVehicle3dText[gVehicleId], parentPlayeri
 
 ## Notes
 
-:::tip
+:::note
 
 This function is just short name of [GetPlayer3DTextLabelAttachedData](GetPlayer3DTextLabelAttachedData).
 

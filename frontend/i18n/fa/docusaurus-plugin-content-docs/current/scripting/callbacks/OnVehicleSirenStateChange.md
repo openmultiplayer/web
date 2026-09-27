@@ -44,7 +44,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 این کالبک فقط زمانی فراخوانده می‌شود که آژیر وسیله نقلیه روشن یا خاموش شود، نه زمانی که آژیر متناوب در استفاده است (نگه داشتن بوق).
 

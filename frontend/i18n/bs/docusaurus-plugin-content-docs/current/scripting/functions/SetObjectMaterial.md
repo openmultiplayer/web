@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Vertex (vrhovno) osvjetljenje objekta će nestati ako se promijeni boja materijala.
 

@@ -34,7 +34,7 @@ public OnPlayerText(playerid, text[])
 
 ## Notes
 
-:::tip
+:::note
 
 You can't see your own chat bubbles. The same applies to attached 3D text labels.
 

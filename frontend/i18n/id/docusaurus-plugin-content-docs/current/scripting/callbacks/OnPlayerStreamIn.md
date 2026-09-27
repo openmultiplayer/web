@@ -32,7 +32,7 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## Catatan
 
-:::tip
+:::note
 
 Callback ini akan terpanggil juga oleh NPC.
 

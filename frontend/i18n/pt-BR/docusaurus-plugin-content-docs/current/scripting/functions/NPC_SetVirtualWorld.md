@@ -49,12 +49,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - O mundo virtual 0 é o mundo padrão onde todos os jogadores começam.
 - NPCs em diferentes mundos virtuais não podem ver ou interagir uns com os outros.
 - Os jogadores devem estar no mesmo mundo virtual para ver NPCs.
-- Use [NPC_GetVirtualWorld](NPC_GetVirtualWorld) para verificar o mundo virtual atual.
+
+:::
+
+:::tip
+
+Use [NPC_GetVirtualWorld](NPC_GetVirtualWorld) para verificar o mundo virtual atual.
 
 :::
 

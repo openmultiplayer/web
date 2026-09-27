@@ -25,7 +25,7 @@ The vehicle's doors state is stored in the specified variables.
 
 ## Notes
 
-:::tip
+:::note
 
 The values returned in each variable are as follows:
 

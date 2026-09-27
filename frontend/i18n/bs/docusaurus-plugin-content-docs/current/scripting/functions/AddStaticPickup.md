@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Funkcija ne returna ID pickupa kojeg možeš koristiti u, naprimjer, OnPlayerPickUpPickup. Koristi CreatePickup ako želite dodijeliti ID-ove.
 

@@ -40,7 +40,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## Notas
 
-:::tip
+:::note
 
 Este callback NO se llama por AddVehicleComponent.
 

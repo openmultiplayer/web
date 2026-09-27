@@ -57,7 +57,8 @@ GetPlayerAttachedObject(playerid, 3, modelid, bone, offsetX, offsetY, offsetZ,
 - 索引范围为 0-9，对应玩家可附加物体的 10 个插槽
 - 偏移量和旋转参数使用浮点数存储，精确到小数点后 4 位
 - 材质颜色使用 32 位 ARGB 格式存储 (0xAARRGGBB)
-  :::
+
+:::
 
 ## 相关函数
 

@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 - A rotação X e Y (inclinação e rotação) de um veículo será redefinida quando esta função for usada.
 - As rotações X e Y não podem ser definidas.

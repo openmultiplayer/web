@@ -79,7 +79,7 @@ public DisableVehicleAlarm(vehicleid)
 
 ## نکات
 
-:::tip
+:::note
 
 - آژیر وقتی تموم شد خودش reset نمی‌شه، باید خودت با این تابع resetش کنی.
 - چراغ‌ها در روز هم کار می‌کنن (فقط وقتی [ManualVehicleEngineAndLights](ManualVehicleEngineAndLights) فعال باشه).

@@ -36,7 +36,7 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 ## Notas
 
-:::tip
+:::note
 
 A vida máxima do veículo é 1000. Valores maiores são possíveis. Para mais informações sobre os valores de vida dos veículos , veja [esta](../resources/vehiclehealth) página.
 

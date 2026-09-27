@@ -42,7 +42,7 @@ public OnGameModeInit()
 
 ## نکات
 
-:::tip
+:::note
 
 هش برگشتی zero padding داره (یعنی ممکنه prefix 00ABCD123... داشته باشه).
 

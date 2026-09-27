@@ -904,7 +904,7 @@ print("Hello \\ World");
 ```
 Hello \ World
 ```
-:::caution ­Warning
+:::caution Warning
 
 A saída irá desconsiderar a primeira barra invertida e imprimir a segunda, já que a primeira está escapando da segunda e enganando o programa para vê-la como um caractere bruto. Uma barra invertida só pode escapar de um caractere por vez, portanto, fazer o seguinte gerará um erro de compilação.
 

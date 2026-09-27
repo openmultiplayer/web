@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Redefine a integridade, posição e estado de NPC.
 - NPC retorna às suas coordenadas originais de spawn.

@@ -36,7 +36,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## 注意要点
 
-:::tip
+:::note
 
 - 退出车辆的动画效果不会同步给其他玩家
 - 此函数在[OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle)回调中无效，因为此时玩家尚未进入车辆。请改用[OnPlayerStateChange](../callbacks/OnPlayerStateChange)回调（参见上方示例）

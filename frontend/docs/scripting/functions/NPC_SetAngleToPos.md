@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - Only the horizontal plane (X/Y) is considered when calculating the facing angle.
 - The NPC will not move; it only rotates to face the position.

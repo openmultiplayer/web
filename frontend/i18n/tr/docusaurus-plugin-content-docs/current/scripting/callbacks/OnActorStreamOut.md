@@ -38,7 +38,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu geri çağırma NPC'ler için de tetiklenebilir.
 

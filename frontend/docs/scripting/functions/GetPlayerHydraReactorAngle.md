@@ -25,7 +25,7 @@ new reactorAngle = GetPlayerHydraReactorAngle(playerid);
 
 ## Notes
 
-:::tip
+:::note
 
 The default value is 5000 if the angle hasn’t changed, and 0 if it is fully up. Otherwise, it seems to be returning random values.
 

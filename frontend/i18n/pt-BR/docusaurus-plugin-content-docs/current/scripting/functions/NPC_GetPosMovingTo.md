@@ -51,11 +51,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Todos os parâmetros de coordenadas são passados por referência e serão modificados.
 - Esta função retorna a posição alvo para a qual NPC está se movendo, não a posição atual.
-- Use [NPC_IsMoving](NPC_IsMoving) para verificar se NPC está se movendo antes de chamar esta função.
+
+:::
+
+:::tip
+
+Use [NPC_IsMoving](NPC_IsMoving) para verificar se NPC está se movendo antes de chamar esta função.
 
 :::
 

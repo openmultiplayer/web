@@ -41,7 +41,7 @@ AttachPlayerObjectToObject(playerid, objectid, parentid, 0.0, 0.0, 1.0, 0.0, 0.0
 
 ## نکات
 
-:::tip
+:::note
 
 هر دو شیء باید قبل از تلاش برای اتصال آن‌ها ایجاد شوند.
 

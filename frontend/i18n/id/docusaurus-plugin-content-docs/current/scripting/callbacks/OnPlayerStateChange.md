@@ -37,7 +37,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Catatan
 
-:::tip
+:::note
 
 Callback ini juga dipanggil oleh NPC
 

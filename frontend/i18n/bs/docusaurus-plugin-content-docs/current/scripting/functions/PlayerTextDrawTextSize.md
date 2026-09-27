@@ -41,7 +41,7 @@ PlayerTextDrawTextSize(playerid, MyTextDraw[playerid], 2.0, 3.6);
 
 ## Zabilješke
 
-:::tip
+:::note
 
 X i y imaju različita značenja s različitim vrijednostima PlayerTextDrawAlignment: 1 (lijevo): oni su krajnji desni ugao box-a, apsolutna kordinatama. 2 (sredina): trebaju se okrenuti (prebaciti dva), a X vrijednost je ukupna širina box-a. 3 (desno): x i y su kordinate krajnjeg lijevog ugla box-a
 

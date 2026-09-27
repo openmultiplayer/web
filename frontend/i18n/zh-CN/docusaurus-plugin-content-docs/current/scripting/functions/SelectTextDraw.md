@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 悬停时高亮显示的是文本内容而非背景框（如果存在背景框）
 

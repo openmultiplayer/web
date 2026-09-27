@@ -53,7 +53,7 @@ public OnPlayerConnect(playerid)
 
 ## 重要提示
 
-:::提示
+:::note
 
 必须通过 ApplyAnimation 为玩家预加载动画资源库，否则演员动画将在下次执行时生效
 

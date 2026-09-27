@@ -48,7 +48,7 @@ GetPlayerWeaponData(playerid, WEAPON_SLOT_PISTOL, weaponid, ammo);
 ```
 ## Notas
 
-:::tip
+:::note
 
 Armas antigas sem munição ainda são devolvidas.
 

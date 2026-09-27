@@ -45,7 +45,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## Note
 
-:::tip
+:::note
 
 Această funcție nu este apelată dacă actorul este setat invulnerabil (CARE ESTE IMPLICIT). Vezi [SetActorInvulnerable](../functions/SetActorInvulnerable).
 

@@ -36,7 +36,7 @@ CallLocalFunction("publicFunc", "ifs", 420, 68.999999999, "Hello world");
 
 :::warning
 
-CallLocalFunction crashes the server if it's passing an empty string.
+CallLocalFunction crashes the server if it's passing an empty string. (Fixed in open.mp)
 
 :::
 

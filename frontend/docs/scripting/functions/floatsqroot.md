@@ -27,7 +27,7 @@ new Float:sqroot = floatsqroot(25.0); // Returns 5.0, because 5x5 = 25
 
 ## Notes
 
-:::tip
+:::note
 
 This function raises a “domain” error if the input value is negative. You may use [floatabs](floatabs) to get the absolute (positive) value.
 

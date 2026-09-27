@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid,text[])
 
 ## نکات
 
-:::tip
+:::note
 
 همیشه فضای داخلی 0 را برای NPCها برمی‌گرداند.
 

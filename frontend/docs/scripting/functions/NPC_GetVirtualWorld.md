@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - Virtual worlds allow separation of NPCs and players.
 - NPCs in different virtual worlds cannot see each other.

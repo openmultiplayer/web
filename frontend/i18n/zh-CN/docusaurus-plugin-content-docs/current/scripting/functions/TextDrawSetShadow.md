@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 如果阴影尺寸设置过大超出区域范围，可能会被文本框区域截断。
 

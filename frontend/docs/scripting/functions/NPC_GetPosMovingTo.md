@@ -51,11 +51,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - All coordinate parameters are passed by reference and will be modified.
 - This function returns the target position the NPC is moving toward, not the current position.
-- Use [NPC_IsMoving](NPC_IsMoving) to check if the NPC is currently moving before calling this function.
+
+:::
+
+:::tip
+
+Use [NPC_IsMoving](NPC_IsMoving) to check if the NPC is currently moving before calling this function.
 
 :::
 

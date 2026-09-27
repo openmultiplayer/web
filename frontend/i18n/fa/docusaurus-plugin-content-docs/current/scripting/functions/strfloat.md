@@ -33,7 +33,7 @@ SetPlayerPos(playerid, 0.0, 0.0, value);
 
 ## نکات
 
-:::tip
+:::note
 
 این تابع مشابه [floatstr](floatstr) است.
 

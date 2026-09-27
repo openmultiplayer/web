@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 ## Notlar
 
-:::tip
+:::note
 
 İzlenme modundayken metin etiketleri daha küçük görülür.
 

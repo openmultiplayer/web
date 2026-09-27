@@ -47,7 +47,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## Notities
 
-:::tip
+:::note
 
 Deze functie wordt niet aangeroepen als de actor onkwetsbaar is ingesteld (WAT STANDAARD IS). Zie [SetActorInvulnerable](../functions/SetActorInvulnerable).
 

@@ -45,7 +45,7 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## Notlar
 
-:::tip
+:::note
 
 Sanal dünya ayarlandığında bunun çalışması için öncelikle sunucu ayarlarında userartwork etkinleştirilmesi gerekir; oynatıcı belirli bir dünyaya girdiğinde modeller indirilir.
 

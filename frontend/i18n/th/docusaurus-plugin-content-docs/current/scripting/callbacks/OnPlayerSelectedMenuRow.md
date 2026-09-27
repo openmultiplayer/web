@@ -47,7 +47,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## บันทึก
 
-:::tip
+:::note
 
 The menu ID is not passed to this callback. GetPlayerMenu must be used to determine which menu the player selected an item on.
 

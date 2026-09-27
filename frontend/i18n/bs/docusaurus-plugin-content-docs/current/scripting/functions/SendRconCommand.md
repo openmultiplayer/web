@@ -19,7 +19,7 @@ Ova funkcija uvijek returna (vraća) 1.
 
 ## Zabilješke
 
-:::warning
+:::note
 
 - Ne podržava login, zbog nedostatka 'playerid' parametra.
 - 'password 0' će ukloniti lozinku servera ako je postavljena.

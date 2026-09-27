@@ -72,7 +72,7 @@ new VehicleColoursTableRGBA[256] =
 
 ## Notes
 
-:::tip
+:::note
 
 Some vehicles have only a primary colour and some can not have the colour changed at all. A few (cement, squallo) have 4 colours, of which 2 can not be changed in SA:MP
 

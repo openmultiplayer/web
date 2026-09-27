@@ -27,7 +27,7 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 }
 ```
 
-:::tip
+:::note
 
 Ovaj callback pozvat će i NPC.
 

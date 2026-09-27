@@ -41,7 +41,7 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## Notes
 
-:::tip
+:::note
 
 Ang `useartwork` ay dapat munang paganahin sa mga setting ng server upang ito ay gumana Kapag ang virtualworld ay nakatakda, ang mga modelo ay mada-download kapag ang manlalaro ay pumasok sa partikular na mundo
 

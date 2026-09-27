@@ -46,8 +46,17 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 
 ## Notas
 
+:::note
+
+- Mantenha em mente que esta função pode ser imprecisa em alguns casos.
+- O weaponid irá retornar 37 (flame thrower) para qualquer fonte que utilize fogo (EX: Molotov).
+- Irá retornar 51 para qualquer fonte que utilize explosões (EX: RPG, granada).
+- A arma sempre irá causar o máximo dano que ele suporta, por exemplo uma Desert Eagle que causa 46.2 de dano, em um pessoa com 100 de vida bastaria 3 tiros para mata-la, porém apesar de após de 2 tiros faltarem apenas 7.6 para mata-lo, a arma ainda causará 46.2 de dano.
+
+:::
+
 :::tip
 
-Mantenha em mente que esta função pode ser imprecisa em alguns casos, Se deseja impedir que um determinado player cause dano a outro use SetPlayerTeam. O weaponid irá retornar 37 (flame thrower) para qualquer fonte que utilize fogo (EX: Molotov). Irá retornar 51 para qualquer fonte que utilize explosões (EX: RPG, granada). A arma sempre irá causar o máximo dano que ele suporta, por exemplo uma Desert Eagle que causa 46.2 de dano, em um pessoa com 100 de vida bastaria 3 tiros para mata-la, porém apesar de após de 2 tiros faltarem apenas 7.6 para mata-lo, a arma ainda causará 46.2 de dano.
+Se deseja impedir que um determinado player cause dano a outro use SetPlayerTeam.
 
 :::

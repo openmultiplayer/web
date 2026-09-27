@@ -36,7 +36,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Notas
 
-:::tip
+:::note
 
 - A animação de saída não é sincronizada para outros jogadores.
 - Esta função não funcionará quando usada em [OnPlayerEnterVehicle](../callbacks/OnPlayerEnterVehicle), porque o jogador ainda não está no veículo quando o callback é chamado. Use [OnPlayerStateChange](../callbacks/OnPlayerStateChange) em vez disso (veja o exemplo acima).

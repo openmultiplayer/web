@@ -95,7 +95,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Vozila se moraju respawnovati kako bi se 'objective' uklonio.
 

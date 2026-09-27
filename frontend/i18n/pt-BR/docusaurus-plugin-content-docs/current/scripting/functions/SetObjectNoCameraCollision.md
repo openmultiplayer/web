@@ -38,7 +38,7 @@ public OnObjectMoved(objectid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 Isso funciona apenas fora dos limites do mapa (após -3.000/3.000 unidades nos eixos x e/ou y).
 

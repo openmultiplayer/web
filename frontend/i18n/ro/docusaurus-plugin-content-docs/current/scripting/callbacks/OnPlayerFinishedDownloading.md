@@ -32,7 +32,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## Note
 
-:::tip
+:::note
 
 Acest callback este apelat de fiecare dată când un jucător schimbă lumi virtuale, chiar dacă nu există modele personalizate prezente în acea lume.
 

@@ -37,7 +37,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 ## Opombe
 
-:::tip
+:::note
 
 Trenutno je na voljo samo ena 'source' (0 - CLICK_SOURCE_SCOREBOARD). Vztrajnost tega argumenta kaže, da bo v prihodnosti morda podprtih več virov.
 

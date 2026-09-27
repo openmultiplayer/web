@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 ## نکات
 
-:::tip
+:::note
 
 این تابع دقیقاً مثل [AddServerRule](AddServerRule) کار می‌کنه.
 

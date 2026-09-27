@@ -171,7 +171,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## Примери
 
-:::tip
+:::note
 
 Параметри могу садржати различите вредности, у зависности од стила дијалога ([кликните за више примера](../resources/dialogstyles)).
 

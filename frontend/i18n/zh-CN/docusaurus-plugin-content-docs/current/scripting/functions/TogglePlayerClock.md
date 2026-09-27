@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 玩家时间不会自动同步！需使用[SetPlayerTime](SetPlayerTime)实现时间同步
 - 玩家死亡时，时间将自动推进 6 小时

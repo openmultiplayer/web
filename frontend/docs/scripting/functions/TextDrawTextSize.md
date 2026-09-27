@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 ## Notes
 
-:::tip
+:::note
 
 - The x and y have different meanings with different TextDrawAlignment values: 1 (left): they are the right-most corner of the box, absolute coordinates. 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box. 3 (right): the x and y are the coordinates of the left-most corner of the box
 - Using font type 4 (sprite) and 5 (model preview) converts X and Y of this function from corner coordinates to WIDTH and HEIGHT (offsets).
@@ -45,7 +45,7 @@ public OnGameModeInit()
 
 :::tip
 
-- If you want to change the text size of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
+If you want to change the text size of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
 
 :::
 

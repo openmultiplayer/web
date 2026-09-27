@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 此设置仅影响特殊攻击（瞄准+次要攻击键），普通拳击攻击不受影响
 

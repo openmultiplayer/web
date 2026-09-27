@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 这将从服务器中完全移除 NPC，ID 在销毁后变为无效。
 

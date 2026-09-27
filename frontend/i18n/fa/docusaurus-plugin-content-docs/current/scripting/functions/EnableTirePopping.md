@@ -32,7 +32,12 @@ public OnGameModeInit()
 
 :::warning
 
-- این تابع در SA-MP 0.3 حذف شده است.
+این تابع در SA-MP 0.3 حذف شده است.
+
+:::
+
+:::note
+
 - ترکیدن لاستیک به طور پیش‌فرض فعال است.
 - اگر می‌خواهید ترکیدن لاستیک را غیرفعال کنید، باید آن را به صورت دستی با استفاده از [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate) اسکریپت کنید.
 

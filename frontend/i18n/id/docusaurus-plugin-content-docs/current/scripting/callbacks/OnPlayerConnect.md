@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 ## Catatan
 
-:::tip
+:::note
 
 Callback ini akan terpanggil juga oleh NPC.
 

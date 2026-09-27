@@ -38,9 +38,9 @@ if (!strcmp(cmdtext, "/disableguns", true))
 
 ## บันทึก
 
-:::tip
+:::warning
 
-Crashes when passed an invalid menu ID.
+Crashes when passed an invalid menu ID. (Fixed in open.mp)
 
 :::
 

@@ -7,12 +7,7 @@ tags: []
 
 :::note
 
-These animations are used by [ApplyAnimation](../functions/ApplyAnimation) function.
-
-:::
-
-:::note
-
+- These animations are used by [ApplyAnimation](../functions/ApplyAnimation) function.
 - Please note that some of the listed animations may not be useable in SA-MP.
 - Animations suffixed with `_O` were meant to be applied to objects (e.g. parachute movement). These will not work when applied to players.
 

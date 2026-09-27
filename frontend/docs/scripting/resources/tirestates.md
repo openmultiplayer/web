@@ -6,13 +6,8 @@ description: Information about byte size and its corresponding tire state bits.
 
 :::note
 
-Tire states are used by natives such as [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
-
-:::
-
-:::note
-
-Even vehicles with more than 4 wheels (e.g. trucks) only have 4 tire states.
+- Tire states are used by natives such as [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+- Even vehicles with more than 4 wheels (e.g. trucks) only have 4 tire states.
 
 :::
 

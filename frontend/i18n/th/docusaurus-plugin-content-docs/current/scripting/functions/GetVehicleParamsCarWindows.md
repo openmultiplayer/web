@@ -29,7 +29,7 @@ The vehicle's windows state is stored in the specified variables.
 
 ## บันทึก
 
-:::tip
+:::note
 
 The values returned in each variable are as follows:
 

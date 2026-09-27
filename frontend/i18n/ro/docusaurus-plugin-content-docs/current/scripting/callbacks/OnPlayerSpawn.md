@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 ## Note
 
-:::tip
+:::note
 
 Jocul scade uneori \$100 de la jucători după apariție.
 

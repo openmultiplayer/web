@@ -42,7 +42,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Uwagi
 
-:::tip
+:::note
 
 Obiekt musi zostać utworzony, zanim spróbujemy przyczepić go do pojazdu.
 

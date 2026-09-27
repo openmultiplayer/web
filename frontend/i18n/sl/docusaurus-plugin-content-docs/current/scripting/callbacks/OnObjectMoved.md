@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## Opombe
 
-:::tip
+:::note
 
 SetObjectPos ne deluje, ko ga uporabljate v tem "callback". Če želite to popraviti, znova ustvarite predmet.
 

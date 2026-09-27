@@ -136,7 +136,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 พารามิเตอร์สามารถมีค่าที่แตกต่างกันได้ ขึ้นอยู่กับรูปแบบของกล่องโต้ตอบ ([คลิกเพื่อดูตัวอย่างเพิ่มเติม](../resources/dialogstyles)).
 

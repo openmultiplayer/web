@@ -139,7 +139,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## Notas
 
-:::tip
+:::note
 
 Los parámetros pueden contener diferentes valores, según el estilo del diálogo ([click para más ejemplos](../resources/dialogstyles)).
 

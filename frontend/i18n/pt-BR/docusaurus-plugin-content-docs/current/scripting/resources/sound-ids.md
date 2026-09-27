@@ -15,7 +15,7 @@ Você deve usar o som ID **0** para interromper o som ID que está sendo reprodu
 
 :::
 
-:::caution Since **0.3.7-R2**:
+:::info Since **0.3.7-R2**:
 
 - O som ID **1** pode ser usado para desativar a trilha de ambiente [interior 0 (padrão)](../functions/SetPlayerInterior) (ruído do vento). _Dica: pode ajudar a criar interiores falses de forma mais realista._
 - O som ID **0** pode ser usado adicionalmente para retornar a trilha normal do ambiente externo do jogo.

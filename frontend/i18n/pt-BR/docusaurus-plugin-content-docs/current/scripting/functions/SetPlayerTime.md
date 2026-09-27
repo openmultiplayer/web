@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 Usar esta função em [OnPlayerConnect](../callbacks/OnPlayerConnect) não funciona.
 

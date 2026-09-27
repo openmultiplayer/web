@@ -32,7 +32,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## Notes
 
-:::tip
+:::note
 
 Callback ini terpanggil sepanjang waktu jika player berganti virtual world, meskipun tidak ada custom models di world itu.
 

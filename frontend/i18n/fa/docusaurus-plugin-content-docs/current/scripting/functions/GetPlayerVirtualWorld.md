@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 دنیاهای مجازی مثل فضاهای داخلی نیستند.
 

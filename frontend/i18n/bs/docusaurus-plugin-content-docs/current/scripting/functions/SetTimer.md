@@ -38,9 +38,16 @@ public message()
 
 ## Zabilješke
 
-:::tip
+:::warning
 
-Intervali tajmera nisu tačni (otprilike 25% popusta). Postoje ispravci dostupni ovdje i ovdje. ID-ovi tajmera nikada se ne koriste dva puta. Možete koristiti KillTimer () na ID-u tajmera i neće biti važno pokreće li se ili ne. Funkcija koju treba pozvati mora biti javna, što znači da mora biti proslijeđena. Korištenje mnogih tajmera rezultirat će povećanom upotrebom memorije / procesora.
+- Intervali tajmera nisu tačni (otprilike 25% popusta). Postoje ispravci dostupni ovdje i ovdje.
+- Korištenje mnogih tajmera rezultirat će povećanom upotrebom memorije / procesora.
+
+:::
+
+:::note
+
+ID-ovi tajmera nikada se ne koriste dva puta. Možete koristiti KillTimer () na ID-u tajmera i neće biti važno pokreće li se ili ne. Funkcija koju treba pozvati mora biti javna, što znači da mora biti proslijeđena.
 
 :::
 

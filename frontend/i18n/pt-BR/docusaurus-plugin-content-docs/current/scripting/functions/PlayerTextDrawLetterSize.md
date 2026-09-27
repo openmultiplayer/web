@@ -39,13 +39,8 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Ao usar esta função apenas para afetar a caixa de desenho de texto, multiplique 'Y' por 0,135 para converter para medidas semelhantes a TextDrawTextSize
-
-:::
-
-:::tip
-
-As fontes parecem ter melhor aparência com uma proporção de X para Y de 1 para 4 (por exemplo, se x for 0,5, y deverá ser 2).
+- Ao usar esta função apenas para afetar a caixa de desenho de texto, multiplique 'Y' por 0.135 para converter para medidas semelhantes a TextDrawTextSize
+- As fontes parecem ter melhor aparência com uma proporção de X para Y de 1 para 4 (por exemplo, se x for 0.5, y deverá ser 2).
 
 :::
 

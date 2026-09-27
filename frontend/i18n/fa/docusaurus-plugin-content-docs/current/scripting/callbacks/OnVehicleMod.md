@@ -38,7 +38,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 این کالبک توسط AddVehicleComponent فراخوانده نمی‌شود.
 

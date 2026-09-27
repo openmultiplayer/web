@@ -36,7 +36,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## Notities
 
-:::tip
+:::note
 
 Zoals de naam al zegt, wordt dit alleen aangeroepen wanneer de speler klikt om een target te markeren, niet bij het indrukken van een toets. De Z-waarde is 0 (ongeldig) als de geklikte locatie ver van de speler is; gebruik de [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) of [ColAndreas](https://github.com/Pottus/ColAndreas) plugin voor nauwkeurige Z-coördinaten.
 

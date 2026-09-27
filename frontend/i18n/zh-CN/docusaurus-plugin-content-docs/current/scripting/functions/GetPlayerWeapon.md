@@ -38,7 +38,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## 注意事项
 
-:::tip
+:::note
 
 当玩家处于驾驶状态(`PLAYER_STATE_DRIVER`)或乘客状态(`PLAYER_STATE_PASSENGER`)时，此函数返回玩家进入车辆前持有的武器。若通过作弊手段在车辆内生成武器，此函数无法检测。
 

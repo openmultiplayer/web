@@ -33,7 +33,7 @@ fremove("Example.txt");
 
 ## บันทึก
 
-:::tip
+:::note
 
 Files that are currently open (fopen) must be closed first (fclose) to be deleted.
 

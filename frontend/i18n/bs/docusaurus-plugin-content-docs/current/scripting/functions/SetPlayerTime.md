@@ -30,7 +30,7 @@ SetPlayerTime(playerid, 0, 0); // Ponoć
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Korištenje ove funkcije unutar OnPlayerConnect neće raditi.
 

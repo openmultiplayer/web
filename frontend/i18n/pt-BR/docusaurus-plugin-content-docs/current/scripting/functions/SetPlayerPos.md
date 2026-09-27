@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 Usar esta função em um jogador em um veículo irá removê-lo instantaneamente do veículo. Útil para ejetar jogadores rapidamente.
 

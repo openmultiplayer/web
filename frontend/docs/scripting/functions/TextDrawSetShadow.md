@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 ## Notes
 
-:::tip
+:::note
 
 The shadow can be cut by the box area if the size is set too big for the area.
 

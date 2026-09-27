@@ -30,8 +30,13 @@ Esta função sempre retorna **0**.
 
 :::warning
 
-- Você deve chamar esta função **antes** de receber o primeiro pacote. Em outras palavras, você deve configurar uma porta em main.
-- Se nenhum número de porta tiver sido escolhido explicitamente, o módulo escutará na porta **9930**.
+Você deve chamar esta função **antes** de receber o primeiro pacote. Em outras palavras, você deve configurar uma porta em main.
+
+:::
+
+:::note
+
+Se nenhum número de porta tiver sido escolhido explicitamente, o módulo escutará na porta **9930**.
 
 :::
 

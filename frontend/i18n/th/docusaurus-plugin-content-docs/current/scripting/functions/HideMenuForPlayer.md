@@ -33,9 +33,9 @@ if (strcmp(cmdtext, "/menuhide", true) == 0)
 
 ## บันทึก
 
-:::tip
+:::warning
 
-Crashes the both server and player if an invalid menu ID given.
+Crashes the both server and player if an invalid menu ID given. (Fixed in open.mp)
 
 :::
 

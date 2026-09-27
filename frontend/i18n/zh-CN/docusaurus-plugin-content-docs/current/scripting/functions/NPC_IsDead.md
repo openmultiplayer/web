@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 当 NPC 的生命值达到 0.0 或以下时被视为死亡。
 - 死亡的 NPC 可以使用[NPC_Respawn](NPC_Respawn)重生。

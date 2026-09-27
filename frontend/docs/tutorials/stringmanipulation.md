@@ -982,7 +982,7 @@ print("Hello \\ World");
 Hello \ World
 ```
 
-:::caution ­Warning
+:::caution Warning
 
 The output will disregard the first backslash, and print the second, as the first is escaping the second and tricking the program into viewing it as a raw character. A backslash can only escape one character at a time, so doing the following will raise a compilation error.
 

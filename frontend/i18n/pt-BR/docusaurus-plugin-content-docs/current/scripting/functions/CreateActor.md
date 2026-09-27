@@ -45,9 +45,10 @@ public OnGameModeExit()
 
 ## Notas
 
-:::tip
+:::note
 
-Atores são projetados para apenas ficar em algum lugar, por exemplo caixas e bartenders. Eles podem executar animações (uma vez ou em loop) usando [ApplyActorAnimation](ApplyActorAnimation).
+- Atores são projetados para apenas ficar em algum lugar, por exemplo caixas e bartenders. Eles podem executar animações (uma vez ou em loop) usando [ApplyActorAnimation](ApplyActorAnimation).
+- Atores são invulneráveis por padrão.
 
 :::
 
@@ -55,7 +56,6 @@ Atores são projetados para apenas ficar em algum lugar, por exemplo caixas e ba
 
 - Atores são completamente separados dos NPCs. Eles NÃO usam IDs/slots de jogadores no servidor e NÃO PODEM ser manipulados como NPCs. Atores são limitados a 1000 (MAX_ACTORS).
 - Atores podem ser empurrados por veículos, use um timer para colocá-los de volta em suas posições.
-- Atores são invulneráveis por padrão.
 
 :::
 

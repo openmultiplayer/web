@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 SetObjectPos จะไม่ทำงานถ้าใช้ใน Callback นี้ วิธีแก้ให้สร้างวัตถุขึ้นใหม่
 

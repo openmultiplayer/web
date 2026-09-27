@@ -41,7 +41,7 @@ public OnPlayerConnect(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 Se utilizar os parâmetros de rotação, o objeto deve ser movido (X/Y/Z). O objeto irá interpolar a rotação desde quando os objetos começam a se mover e quando param.
 

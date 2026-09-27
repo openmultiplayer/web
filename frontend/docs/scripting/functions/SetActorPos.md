@@ -41,7 +41,7 @@ SetActorPos(gMyActor, 2062.2332, -1908.1423, 13.5485);
 
 ## Notes
 
-:::tip
+:::note
 
 When creating an actor with [CreateActor](CreateActor), you specify it's position. You do not need to use this function unless you want to change its position later.
 

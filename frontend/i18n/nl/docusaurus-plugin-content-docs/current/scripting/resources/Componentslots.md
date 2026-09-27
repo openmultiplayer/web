@@ -4,7 +4,9 @@ sidebar_label: "Component‑slots"
 ---
 
 :::info
+
 Automod‑slots voor gebruik met [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot).
+
 :::
 
 | Slot | Definitie                |

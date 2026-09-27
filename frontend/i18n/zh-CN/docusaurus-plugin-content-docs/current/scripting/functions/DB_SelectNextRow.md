@@ -95,7 +95,7 @@ public OnGameModeExit()
 
 ## 注意事项
 
-:::danger
+:::warning
 
 使用非法的结果集句柄将导致服务器崩溃！请始终通过[DB_ExecuteQuery](DB_ExecuteQuery)获取有效的查询结果！
 

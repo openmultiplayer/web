@@ -45,7 +45,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon hasar almayan NPC'lerde çağırılmaz, (NPC'ler varsayılan olarak hasar almazlar.) [SetActorInvulnerable](../functions/SetActorInvulnerable) fonksiyonuna bakın.
 

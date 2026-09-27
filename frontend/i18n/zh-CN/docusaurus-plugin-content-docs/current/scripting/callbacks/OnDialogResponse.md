@@ -159,7 +159,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## 注意
 
-:::tip
+:::note
 
 参数值会根据对话框样式不同而变化（[点击查看详细示例](../resources/dialogstyles)）
 

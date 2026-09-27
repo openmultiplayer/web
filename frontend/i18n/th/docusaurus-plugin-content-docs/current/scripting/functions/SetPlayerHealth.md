@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 If a player's health is set to 0 or a minus value, they will die instantly. If a player's health is below 10 or above 98303, their health bar will flash.
 

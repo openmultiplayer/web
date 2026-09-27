@@ -34,7 +34,7 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
 - Os x e y têm significados diferentes com valores TextDrawAlignment diferentes: 1 (esquerda): são o canto mais direito da caixa, coordenadas absolutas. 2 (centro): eles precisam ser invertidos (trocar os dois) e o valor x é a largura total da caixa. 3 (direita): x e y são as coordenadas do canto mais esquerdo da caixa
 - Usar o tipo de fonte 4 (sprite) e 5 (visualização do modelo) converte X e Y desta função das coordenadas de canto para WIDTH e HEIGHT (offsets).
@@ -45,7 +45,7 @@ public OnGameModeInit()
 
 :::tip
 
-- Se quiser alterar o tamanho do texto de um textdraw que já está mostrado, não é necessário recriá-lo. Basta usar [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) após modificar o textdraw e a alteração ficará visível.
+Se quiser alterar o tamanho do texto de um textdraw que já está mostrado, não é necessário recriá-lo. Basta usar [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) após modificar o textdraw e a alteração ficará visível.
 
 :::
 

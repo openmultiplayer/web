@@ -5,7 +5,9 @@ description: Definities voor bandenstatus.
 ---
 
 :::note
+
 Gebruikt door [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) en [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+
 :::
 
 | Definitie                                                           | Waarde |

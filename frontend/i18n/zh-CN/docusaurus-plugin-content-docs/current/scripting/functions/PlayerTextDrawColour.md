@@ -40,8 +40,13 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-- 可在文本内容中使用游戏文本颜色代码（例如 `~r~` 红色、`~g~` 绿色、`~b~` 蓝色）
-- 修改颜色后需调用 PlayerTextDrawShow 重新显示文本绘图才能生效
+可在文本内容中使用游戏文本颜色代码（例如 `~r~` 红色、`~g~` 绿色、`~b~` 蓝色）
+
+:::
+
+:::note
+
+修改颜色后需调用 PlayerTextDrawShow 重新显示文本绘图才能生效
 
 :::
 

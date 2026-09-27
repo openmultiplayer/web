@@ -41,12 +41,17 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 仅在启用延迟补偿时触发此回调
 - 当hittype为BULLET_HIT_TYPE_NONE时，fX/fY/fZ为绝对坐标（若未命中则返回0.0）
 - 其他命中类型时，坐标为相对于hitid的偏移量
-- 使用[GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors)可获取更详细的弹道向量信息
+
+:::
+
+:::tip
+
+使用[GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors)可获取更详细的弹道向量信息
 
 :::
 

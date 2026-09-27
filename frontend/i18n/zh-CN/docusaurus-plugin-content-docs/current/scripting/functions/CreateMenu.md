@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 此函数仅创建菜单容器，需调用[ShowMenuForPlayer](ShowMenuForPlayer)显示
 - 实际仅支持 0 和 1 两列配置

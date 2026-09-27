@@ -34,7 +34,7 @@ public OnPlayerText(playerid, text[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 Você não pode ver seus próprios balões de bate-papo. O mesmo se aplica às etiquetas de texto 3D anexadas.
 

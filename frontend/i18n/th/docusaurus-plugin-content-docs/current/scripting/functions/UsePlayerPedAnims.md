@@ -21,11 +21,10 @@ public OnGameModeInit()
 
 ## บันทึก
 
-:::tip
+:::note
 
-Only works when placed under [OnGameModeInit](../callbacks/OnGameModeInit).
-
-Not using this function causes two-handed weapons (not dual-handed - a single weapon that is held by both hands) to be held in only one hand.
+- Only works when placed under [OnGameModeInit](../callbacks/OnGameModeInit).
+- Not using this function causes two-handed weapons (not dual-handed - a single weapon that is held by both hands) to be held in only one hand.
 
 :::
 

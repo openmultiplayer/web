@@ -7,13 +7,8 @@ tags: ["sqlite"]
 
 :::warning
 
-Ova funkcija započinje malim slovom.
-
-:::
-
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3.7 R1 i ne radi u nižim verzijama!
+- Ova funkcija započinje malim slovom.
+- Ova funkcija je dodana u SA-MP 0.3.7 R1 i ne radi u nižim verzijama!
 
 :::
 

@@ -52,7 +52,7 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 此回调不包含车辆生命值（Health）变化的检测
 

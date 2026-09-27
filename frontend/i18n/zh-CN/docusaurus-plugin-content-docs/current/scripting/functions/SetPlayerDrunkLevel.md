@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 玩家醉酒等级会基于其帧率(FPS)自动递减（50FPS 的玩家每秒减少 50 等级，可用于检测玩家 FPS）
 - 0.3a 版本中醉酒等级递减至 2000 停止

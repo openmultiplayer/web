@@ -32,7 +32,7 @@ public OnVehicleDeath(vehicleid, killerid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon, bir araç suya girdiğinde de çağrılacaktır, ancak araç ışınlanarak veya bir başka şey tarafından suya düşürüldüyse (yalnızca kısmen suya batırılmışsa) çağrılmaz. Fonksiyon, ikinci kez çağrılmaz, sürücü araçtan çıktığında veya kısa bir süre sonra araç kaybolabilir.
 

@@ -45,7 +45,7 @@ SetActorPos(MyActor, 1.0, 2.0, 3.0);
 
 ## บันทึก
 
-:::tip
+:::note
 
 When creating an actor with CreateActor, you specify it's position. You do not need to use this function unless you want to change its position later.
 

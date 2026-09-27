@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 Time will automatically advance 6 hours when the player dies.
 

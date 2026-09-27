@@ -46,7 +46,7 @@ public OnGameModeInit()
 
 ## Notlar
 
-:::tip
+:::note
 
 Maksimum sınıf kimliği 319'dir (0'dan başlayarak toplam 320 sınıf). Bu sınıra ulaşıldığında, eklenen daha fazla sınıf ID 319'nin yerini alır.
 

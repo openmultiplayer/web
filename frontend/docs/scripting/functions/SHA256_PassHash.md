@@ -42,7 +42,7 @@ public OnGameModeInit()
 
 ## Notes
 
-:::tip
+:::note
 
 The returned hash has zero padding (i.e. possible prefix 00ABCD123...).
 

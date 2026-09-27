@@ -34,7 +34,7 @@ public OnPlayerText(playerid, text[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 玩家无法看到自己的聊天气泡，此规则同样适用于附加的 3D 文本标签
 

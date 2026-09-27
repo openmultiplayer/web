@@ -41,13 +41,18 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## Ghi chú
 
+:::note
+
+Callback này chỉ được gọi khi bù trừ độ trễ (lag compensation) được bật. Nếu `hittype` là:
+
+- `BULLET_HIT_TYPE_NONE`: các tham số fX, fY và fZ là tọa độ bình thường, sẽ trả về 0.0 cho các tọa độ nếu không có gì bị bắn trúng (ví dụ: vật thể ở xa mà viên đạn không thể đến);
+- Các loại khác: fX, fY và fZ là độ dịch chuyển tương đối với `hitid`.
+
+:::
+
 :::tip
 
-- Callback này chỉ được gọi khi bù trừ độ trễ (lag compensation) được bật. Nếu `hittype` là:
-  - `BULLET_HIT_TYPE_NONE`: các tham số fX, fY và fZ là tọa độ bình thường, sẽ trả về 0.0 cho các tọa độ nếu không có gì bị bắn trúng (ví dụ: vật thể ở xa mà viên đạn không thể đến);
-  - Các loại khác: fX, fY và fZ là độ dịch chuyển tương đối với `hitid`.
-
-- [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) có thể được sử dụng trong callback này để có thông tin chi tiết về vector viên đạn.
+[GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) có thể được sử dụng trong callback này để có thông tin chi tiết về vector viên đạn.
 
 :::
 

@@ -49,7 +49,7 @@ public OnPlayerSpawn(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 Usar um valor menor que 1 fornece valores estranhos.
 

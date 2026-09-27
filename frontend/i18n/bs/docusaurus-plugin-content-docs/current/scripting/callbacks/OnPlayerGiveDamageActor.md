@@ -49,7 +49,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova funkcije nije pozvana ako je aktor postavljen na "neranjiv" (invulnerable) (ŠTO JE PO DEFAULTU). Pogledaj [SetActorInvulnerable](../functions/SetActorInvulnerable).
 

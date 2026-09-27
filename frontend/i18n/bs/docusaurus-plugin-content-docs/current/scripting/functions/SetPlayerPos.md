@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Korištenje ove funkcije na igraču koji je u vozilu odmah će ga ukloniti iz vozila. Korisno za brzo izbacivanje igrača.
 

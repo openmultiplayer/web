@@ -56,7 +56,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova funkcija utječe samo na kolizije kamere objekata stvorenih NAKON njezine upotrebe - ne mijenja kolizije kamera postojećih objekata.
 

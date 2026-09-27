@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::warning
 
 Remover jetpacks dos jogadores configurando sua ação especial para `SPECIAL_ACTION_NONE` (0) faz com que o som permaneça até a morte. Existe uma solução para isso, basta aplicar uma animação aleatória ao jogador e seu jetpack será removido.
 

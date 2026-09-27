@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 - If [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline) is used with size > 0, the outline colour will match the colour used in PlayerTextDrawBackgroundColour.
 - Changing the value of colour seems to alter the colour used in PlayerTextDrawColour.

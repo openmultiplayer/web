@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 O mundo virtual padrão é 0.
 

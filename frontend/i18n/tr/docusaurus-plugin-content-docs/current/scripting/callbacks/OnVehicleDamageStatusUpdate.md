@@ -48,7 +48,7 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon, aracın sağlık değerini içermez.
 

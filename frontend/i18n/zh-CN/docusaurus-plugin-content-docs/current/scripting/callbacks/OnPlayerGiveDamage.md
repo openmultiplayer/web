@@ -44,10 +44,9 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 请注意此函数在某些情况下可能不够精确
-- 如需阻止特定玩家互相伤害，请使用[SetPlayerTeam](../functions/SetPlayerTeam)
 - 火焰类武器（如燃烧瓶/18号武器）会返回37号武器ID（火焰喷射器）
 - 爆炸类武器（如RPG、手雷）会返回51号武器ID
 - 只有**playerid**（攻击者）能触发此回调
@@ -55,6 +54,12 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
   - 玩家当前生命值100.0
   - 使用沙漠之鹰（单发伤害46.2）射击
   - 前两发显示伤害46.2，第三发剩余7.6生命时仍显示46.2
+
+:::
+
+:::tip
+
+如需阻止特定玩家互相伤害，请使用[SetPlayerTeam](../functions/SetPlayerTeam)
 
 :::
 

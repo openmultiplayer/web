@@ -50,7 +50,7 @@ else
 ```
 ## Notas
 
-:::tip
+:::note
 
 Os arquivos que estão atualmente abertos (fopen) devem ser fechados primeiro (fclose) para serem excluídos.
 

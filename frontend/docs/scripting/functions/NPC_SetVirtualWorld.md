@@ -49,12 +49,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - Virtual world 0 is the default world where all players start.
 - NPCs in different virtual worlds cannot see or interact with each other.
 - Players must be in the same virtual world to see NPCs.
-- Use [NPC_GetVirtualWorld](NPC_GetVirtualWorld) to check current virtual world.
+
+:::
+
+:::tip
+
+Use [NPC_GetVirtualWorld](NPC_GetVirtualWorld) to check current virtual world.
 
 :::
 

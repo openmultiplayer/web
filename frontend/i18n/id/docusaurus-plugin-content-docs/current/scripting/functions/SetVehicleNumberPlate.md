@@ -30,15 +30,20 @@ SetVehicleNumberPlate(vehicleid, "ABCD 123");
 
 ## Catatan
 
-:::tip
+:::note
 
-Fungsi ini tidak memiliki pemeriksaan kesalahan internal. Jangan menetapkan plat nomor khusus untuk kendaraan tanpa plat (kapal, pesawat, dll) karena ini akan menghasilkan beberapa waktu pemrosesan yang tidak perlu pada client. Kendaraan harus spawn kembali atau stream ulang agar perubahan berlaku. Ada batas 32 karakter pada setiap plat nomor (termasuk warna tertanam). Panjang teks yang dapat dilihat pada plat nomor adalah sekitar 9 hingga 10 karakter, lebih banyak karakter akan menyebabkan teks terpotong. Beberapa model kendaraan memiliki plat nomor mundur, misalnya Boxville (498) (sebagai alternatif untuk kendaraan ini Anda dapat menggunakan model kendaraan ID 609, yang merupakan Boxville duplikat (alias Boxburg), tetapi dengan plat nomor biasa).
+- Fungsi ini tidak memiliki pemeriksaan kesalahan internal.
+- Kendaraan harus spawn kembali atau stream ulang agar perubahan berlaku.
+- Ada batas 32 karakter pada setiap plat nomor (termasuk warna tertanam).
+- Panjang teks yang dapat dilihat pada plat nomor adalah sekitar 9 hingga 10 karakter, lebih banyak karakter akan menyebabkan teks terpotong.
+- Beberapa model kendaraan memiliki plat nomor mundur, misalnya Boxville (498) (sebagai alternatif untuk kendaraan ini Anda dapat menggunakan model kendaraan ID 609, yang merupakan Boxville duplikat (alias Boxburg), tetapi dengan plat nomor biasa).
 
 :::
 
 :::tip
 
-kamu dapat memberikan warna pada plat nomor.
+- Jangan menetapkan plat nomor khusus untuk kendaraan tanpa plat (kapal, pesawat, dll) karena ini akan menghasilkan beberapa waktu pemrosesan yang tidak perlu pada client.
+- kamu dapat memberikan warna pada plat nomor.
 
 :::
 

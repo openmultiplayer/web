@@ -46,7 +46,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## Notas
 
-:::tip
+:::note
 
 El ID del menú no se pasa a este callback. Debes usar GetPlayerMenu para determinar en cuál menú el jugador seleccionó un item.
 

@@ -49,7 +49,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu geri çağırma içerisinde bazı fonksiyonlar doğru bilgiler vermez (GetPlayerIp ve GetPlayerPos gibi)
 

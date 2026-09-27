@@ -37,15 +37,10 @@ AddMenuItem(gTestMenu, 1, "Row2 Item1");
 
 ## Notes
 
-:::tip
-
-Crashes when passed an invalid menu ID.
-
-:::
-
 :::warning
 
-Note that you can add only 12 items with [AddMenuItem](AddMenuItem). The 13th object of a menu would replace the header of the column which is correctly set with this function.
+- Crashes when passed an invalid menu ID. (Fixed in open.mp)
+- Note that you can add only 12 items with [AddMenuItem](AddMenuItem). The 13th object of a menu would replace the header of the column which is correctly set with this function.
 
 :::
 

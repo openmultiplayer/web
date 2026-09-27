@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 - x و y با مقادیر مختلف [PlayerTextDrawAlignment](PlayerTextDrawAlignment) معنی‌های متفاوتی دارن:
   - 1 (چپ): اونها گوشه سمت راست جعبه هستن، مختصات مطلق.

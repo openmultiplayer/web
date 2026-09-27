@@ -44,7 +44,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## Notities
 
-:::tip
+:::note
 
 Deze callback wordt alleen aangeroepen wanneer de sirene van een voertuig wordt in- of uitgeschakeld, NIET wanneer de alternatieve sirene wordt gebruikt (toeter ingedrukt houden).
 

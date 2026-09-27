@@ -58,7 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 Os dados da câmera podem ser obtidos quando o jogador está em qualquer veículo ou a pé.
 

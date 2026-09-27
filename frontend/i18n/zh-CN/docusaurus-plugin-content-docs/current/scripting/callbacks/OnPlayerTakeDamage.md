@@ -66,7 +66,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 火焰类武器（如燃烧瓶，ID18）的weaponid将始终返回37（火焰喷射器）
 - 爆炸类武器（如RPG，手雷）的weaponid将始终返回51

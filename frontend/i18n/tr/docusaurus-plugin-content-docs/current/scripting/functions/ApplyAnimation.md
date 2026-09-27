@@ -34,7 +34,7 @@ ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, 1, 1, 1, 1, 1, 1);
 
 ## Notlar
 
-:::tip
+:::note
 
 'foresync' parametresi opsiyoneldir ve varsayılan ayarı 0'dır. Oyuncular animasyonları kendileri senkronize ettiklerinden çoğu durumda gereksizdir. Bu parametre animasyon oynatılan oyuncuyu gören herkese oyuncunun animasyonu yapıp yapmamasından bağımsız olarak animasyonu oynatmaya zorlar. Bu parametre oyuncunun kendi kendine animasyonu senkron edemediği durumlarda işe yarayabilir. Örneğin dondurulmuş bir oyuncu.
 

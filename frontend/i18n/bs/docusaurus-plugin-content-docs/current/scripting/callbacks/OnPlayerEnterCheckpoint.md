@@ -36,7 +36,7 @@ public OnPlayerEnterCheckpoint(playerid)
 }
 ```
 
-:::tip
+:::note
 
 Ovaj callback pozvat će i NPC.
 

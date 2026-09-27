@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## Catatan
 
-:::tip
+:::note
 
 SetObjectPos tidak akan bekerja ketika menggunakan callback ini. Untuk memperbaiki, buatlah ulang objectnya.
 

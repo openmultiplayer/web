@@ -49,7 +49,7 @@ GetPlayerWeaponData(playerid, WEAPON_SLOT_PISTOL, weaponid, ammo);
 
 ## نکات
 
-:::tip
+:::note
 
 اسلحه‌های قدیمی که مهمات ندارند هنوز هم برگردانده می‌شوند.
 

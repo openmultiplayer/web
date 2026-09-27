@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 PAWN is case-sensitive. GetPlayerRawIP will not work.
 

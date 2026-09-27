@@ -34,7 +34,7 @@ AttachObjectToVehicle(objectid, vehicleid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
 
 ## Notas
 
-:::tip
+:::note
 
 O objeto deve ser criado primeiro.
 

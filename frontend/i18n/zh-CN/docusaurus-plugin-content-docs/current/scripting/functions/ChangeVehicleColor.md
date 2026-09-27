@@ -45,7 +45,7 @@ new VehicleColoursTableRGBA[256] = {
 
 ## 注意事项
 
-:::tip
+:::note
 
 部分车辆仅支持修改主色，少数特殊车辆（如水泥车、快艇）支持四色但 SA-MP 只能修改其中两种
 

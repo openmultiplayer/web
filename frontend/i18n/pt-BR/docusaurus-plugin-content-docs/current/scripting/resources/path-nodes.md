@@ -6,8 +6,10 @@ tags: [nodes, paths, ai, navigation, vehicles, pedestrians]
 ---
 
 
-:::warning Source Attribution
+:::info Source Attribution
+
 Esta documentação foi originalmente obtida de [GTAMods Wiki - Paths (GTA SA)](<https://gtamods.com/wiki/Paths_(GTA_SA)>) e foi preservada aqui para fins de arquivamento. O conteúdo permanece inalterado, apenas com melhorias de formatação para melhorar a legibilidade da documentação open.mp.
+
 :::
 
 <!-- Image: Colour-coded car path nodes for GTA: SA. (SAPathNodes.png) -->
@@ -73,7 +75,9 @@ O cabeçalho contém informações sobre o conteúdo das diversas seções do ar
 | 4b | UINT32 | número de links (seção 3/5/6) |
 
 :::note
+
 As seções relacionadas aos links (3/5/6) possuem o mesmo número de entradas. Essas entradas pertencem umas às outras e podem ser tratadas como um único registro pelos editores.
+
 :::
 
 ### Seção 1 - Nós de caminho
@@ -207,7 +211,9 @@ Eles são usados para caracterizar o comportamento do segmento de caminho. Para 
 - O _comportamento da direção do semáforo_ é 1 se o nó de navegação tiver a mesma direção do semáforo e 0 se o nó de navegação apontar para outro lugar.
 
 :::note
+
 (\*) Ficou claro depois de saber exatamente como os Navis estão vinculados. Então você pode usar isso, mas não é obrigação.
+
 :::
 
 ### Seção 3 - Links
@@ -232,6 +238,7 @@ Estes são links para nós de navegação adjacentes, um para cada link (na seç
 | 2b | UINT16 | os 10 bits inferiores são o Navi Node ID, os 6 bits superiores são a área correspondente ID |
 
 :::warning Important Limitations
+
 **Limites de nós de navegação:**
 
 - Máximo de **1.024** nós Navi por arquivo de área
@@ -240,7 +247,8 @@ Estes são links para nós de navegação adjacentes, um para cada link (na seç
 **Nó Navi ID Nota:**
 
 - O Navi Node ID não é o Linked Node ID da Seção 2, mas sim a ordem sequencial em que o Navi Node aparece no arquivo.
-  :::
+
+:::
 
 ### Seção 6 - Comprimentos dos links
 

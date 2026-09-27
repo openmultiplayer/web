@@ -45,15 +45,10 @@ if (strcmp(cmdtext, "/repair", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::note
 
-Potpuno health stanje vozila je 1000, međutim moguće su veće vrijednosti i povećavaju health stanje vozila. Za više informacija o health vrijednostima pogledajte [ovdje](../resources/vehiclehealth).
-
-:::
-
-:::tip
-
-Vozilo se zapali kad mu je health ispod 250. Eksplodirat će nekoliko sekundi kasnije.
+- Potpuno health stanje vozila je 1000, međutim moguće su veće vrijednosti i povećavaju health stanje vozila. Za više informacija o health vrijednostima pogledajte [ovdje](../resources/vehiclehealth).
+- Vozilo se zapali kad mu je health ispod 250. Eksplodirat će nekoliko sekundi kasnije.
 
 :::
 

@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid,text[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 Always returns 0 for NPCs.
 

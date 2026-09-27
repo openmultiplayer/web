@@ -16,7 +16,7 @@ Disable a specific row in a menu for all players. It will be greyed-out and can'
 
 ## ส่งคืน
 
-This function always returns 1, even if the function fails. If an invalid row is specified, nothing will happen. If an invalid menu ID is specified, the server will crash.
+This function always returns 1, even if the function fails. If an invalid row is specified, nothing will happen.
 
 ## ตัวอย่าง
 
@@ -37,9 +37,17 @@ if (!strcmp(cmdtext, "/disablemenu", true))
 
 ## บันทึก
 
-:::tip
+:::warning
 
-Crashes when passed an invalid menu ID. This function disabled the specified menu row for all players. There is no function to disable a menu row for a specific player. You'd have to create two menus - one with a row disabled, and one without. Or one per player.
+Crashes when passed an invalid menu ID. (Fixed in open.mp)
+
+:::
+
+:::note
+
+- This function disabled the specified menu row for all players.
+- There is no function to disable a menu row for a specific player.
+- You'd have to create two menus - one with a row disabled, and one without. Or one per player.
 
 :::
 

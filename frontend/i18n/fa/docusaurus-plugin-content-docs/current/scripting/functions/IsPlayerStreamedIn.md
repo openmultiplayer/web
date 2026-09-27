@@ -31,7 +31,7 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 ## نکات
 
-:::tip
+:::note
 
 **سرور SA-MP:** بازیکنان اگه بیشتر از 200.0 متر فاصله داشته باشن stream out می‌شن (ببین [server.cfg](../../server/server.cfg) - **stream_distance**)
 

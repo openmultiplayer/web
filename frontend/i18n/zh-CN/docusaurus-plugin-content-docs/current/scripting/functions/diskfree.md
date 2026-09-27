@@ -37,7 +37,7 @@ printf("可用空间 = %d KiB", freeSpace);
 
 ## 注意事项
 
-:::tip
+:::note
 
 最大支持容量为 2048 GiB (2TB)
 

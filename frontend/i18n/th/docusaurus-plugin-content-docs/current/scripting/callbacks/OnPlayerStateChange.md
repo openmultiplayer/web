@@ -37,7 +37,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## บันทึก
 
-:::tip
+:::note
 
 NPC สามารถเรียก Callback นี้ได้
 

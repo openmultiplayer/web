@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Virtualni svjetovi nisu isto šti i enterijeri.
 

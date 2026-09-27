@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 Vertex lightning مربوط به object ناپدید می‌شه اگه رنگ material تغییر کنه.
 

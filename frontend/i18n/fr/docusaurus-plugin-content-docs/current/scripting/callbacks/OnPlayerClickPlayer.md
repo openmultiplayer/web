@@ -33,7 +33,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 ## Astuces
 
-:::tip
+:::note
 
 Il n'y a qu'une seule 'source' de clic (0 - CLICK_SOURCE_SCOREBOARD).
 

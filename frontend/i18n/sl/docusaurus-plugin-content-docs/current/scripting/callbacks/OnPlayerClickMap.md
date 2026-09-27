@@ -36,7 +36,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## Opombe
 
-:::tip
+:::note
 
 Kakšno ime "callback" piše, da se pokliče le, če igralec klikne, da označi tarčo(waypoint) in ne, ko pritisne gumb. Return vrednost "Z" če bi bilo 0 (nepravilno) če je kraj, kjer je igralec kliknil, daleč stran od igralca; Uporaba MapAndreas ali ColAndreas "plugin" da bi bili bolj natančni "Z" koordinate.
 

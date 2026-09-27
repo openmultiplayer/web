@@ -46,9 +46,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::warning
 
-传入无效的菜单 ID 将导致服务端与客户端同时崩溃！
+传入无效的菜单 ID 将导致服务端与客户端同时崩溃（该问题已在 open.mp 中修复）
 
 :::
 

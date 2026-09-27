@@ -26,13 +26,8 @@ tags: ["玩家", "帮派区域"]
 
 :::warning
 
-此函数仅适用于 open.mp 平台，SA-MP 需使用[YSF 插件](https://github.com/IS4Code/YSF/releases)
-
-:::
-
-:::warning
-
-必须预先调用[UseGangZoneCheck](UseGangZoneCheck)函数方可使用本检测功能
+- 此函数仅适用于 open.mp 平台，SA-MP 需使用[YSF 插件](https://github.com/IS4Code/YSF/releases)
+- 必须预先调用[UseGangZoneCheck](UseGangZoneCheck)函数方可使用本检测功能
 
 :::
 

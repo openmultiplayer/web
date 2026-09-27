@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 A iluminação do vértice do objeto desaparecerá se a cor do material for alterada.
 

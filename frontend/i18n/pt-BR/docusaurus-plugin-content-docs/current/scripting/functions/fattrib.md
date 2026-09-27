@@ -41,7 +41,7 @@ else
 ```
 ## Notas
 
-:::tip
+:::note
 
 - O tempo está em número de segundos desde a meia-noite de 1º de janeiro de 1970: o início da época do sistema UNIX.
 - Os atributos do arquivo são uma máscara de bits.

@@ -44,7 +44,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon yalnızca /rcon login komutu oyun içinde kullanıldığında çağrılır. Fonksiyon, yalnızca oyuncu henüz oturum açmamışsa çağrılır. Oyuncu oturum açtığında, bunun yerine OnRconCommand çağrılır.
 

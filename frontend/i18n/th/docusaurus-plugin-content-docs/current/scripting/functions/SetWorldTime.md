@@ -26,7 +26,7 @@ SetWorldTime(12);
 
 ## บันทึก
 
-:::tip
+:::note
 
 This function is only relevant for players that do not use a passing clock - see TogglePlayerClock.
 

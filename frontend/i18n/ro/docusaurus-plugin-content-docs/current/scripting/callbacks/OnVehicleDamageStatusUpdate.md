@@ -48,7 +48,7 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 
 ## Note
 
-:::tip
+:::note
 
 Aceasta nu include modificările de sănătate a vehiculului.
 

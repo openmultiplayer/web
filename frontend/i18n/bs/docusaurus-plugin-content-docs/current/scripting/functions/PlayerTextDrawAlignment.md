@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Za poravnanje 2 (u sredini) vrijednosti x i y TextSize moraju se zamijeniti, pogledajte bilješke na PlayerTextDrawTextSize.
 

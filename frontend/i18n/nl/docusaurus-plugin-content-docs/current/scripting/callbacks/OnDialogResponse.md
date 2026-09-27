@@ -171,7 +171,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## Notities
 
-:::tip
+:::note
 
 De parameters kunnen verschillende waarden hebben afhankelijk van de stijl van de dialog. ([Klik hier voor meer voorbeelden](../resources/dialogstyles)).
 

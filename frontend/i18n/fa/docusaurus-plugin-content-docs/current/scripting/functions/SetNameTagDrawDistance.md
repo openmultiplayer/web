@@ -25,7 +25,7 @@ SetNameTagDrawDistance(20.0);
 
 ## نکات
 
-:::tip
+:::note
 
 فاصله پیش‌فرض 70.0 واحد SA هست
 

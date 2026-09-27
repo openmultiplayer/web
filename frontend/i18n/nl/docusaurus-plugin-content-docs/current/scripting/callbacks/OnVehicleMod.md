@@ -38,7 +38,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## Notities
 
-:::tip
+:::note
 
 Deze callback wordt NIET aangeroepen door AddVehicleComponent.
 

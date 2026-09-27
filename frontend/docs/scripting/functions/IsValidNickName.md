@@ -34,7 +34,7 @@ else
 
 ## Notes
 
-:::tip
+:::note
 
 By default the valid characters in the nick name is (0-9, a-z, A-Z, [], (), \$ @ . \_ and = only).
 

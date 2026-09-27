@@ -27,7 +27,7 @@ new Menu:currentMenu = GetPlayerMenu(playerid); // 将玩家当前菜单存入'c
 
 ## 注意事项
 
-:::tip
+:::note
 
 当没有显示菜单时，会返回上一次显示的菜单 ID
 

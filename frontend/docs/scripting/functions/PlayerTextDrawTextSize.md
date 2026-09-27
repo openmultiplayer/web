@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 - The x and y have different meanings with different [PlayerTextDrawAlignment](PlayerTextDrawAlignment) values:
   - 1 (left): they are the right-most corner of the box, absolute coordinates.

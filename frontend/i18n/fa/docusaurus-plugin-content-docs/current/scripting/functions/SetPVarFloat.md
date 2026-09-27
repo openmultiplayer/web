@@ -38,7 +38,7 @@ SavePlayerPos(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 متغیرها تا بعد از فراخوانی [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) ریست نمی‌شن، پس مقادیر هنوز در OnPlayerDisconnect قابل دسترسی هستن.
 

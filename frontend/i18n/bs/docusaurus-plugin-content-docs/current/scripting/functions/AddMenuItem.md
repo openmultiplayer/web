@@ -35,9 +35,15 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::warning
 
-Crashuje kada se proslijedi nevažeći ID menija. Možete imati samo 12 stavki/itema po meniju (13i ide na desnu stranu zaglavlja od imena rubrike (obojeno), 14i i više se neće uopće pojavljivati). možete koristiti samo 2 rubrike (0 i 1). Možete dodati samo 8 kodova boja po jednoj stavci/itemu (~r~, ~g~ itd.). Maksimalna dužina teksta stavke/itema je 31 simbol.
+Crashuje kada se proslijedi nevažeći ID menija.
+
+:::
+
+:::note
+
+Možete imati samo 12 stavki/itema po meniju (13i ide na desnu stranu zaglavlja od imena rubrike (obojeno), 14i i više se neće uopće pojavljivati). možete koristiti samo 2 rubrike (0 i 1). Možete dodati samo 8 kodova boja po jednoj stavci/itemu (`~r~`, `~g~` itd.). Maksimalna dužina teksta stavke/itema je 31 simbol.
 
 :::
 

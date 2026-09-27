@@ -31,13 +31,8 @@ PlayerTextDrawLetterSize(playerid, gMyTextDraw[playerid], 3.2 ,5.1);
 
 :::tip
 
-Kada ovu funkciju koristite isključivo radi utjecaja na okvir za crtanje teksta, pomnožite 'Y' s 0,135 da biste pretvorili u mjerenja nalik TextDrawTextSize
-
-:::
-
-:::tip
-
-Čini se da fontovi izgledaju najbolje s omjerom X prema Y od 1 do 4 (npr. Ako je x 0.5, tada bi y trebalo biti 2).
+- Kada ovu funkciju koristite isključivo radi utjecaja na okvir za crtanje teksta, pomnožite 'Y' s 0.135 da biste pretvorili u mjerenja nalik TextDrawTextSize
+- Čini se da fontovi izgledaju najbolje s omjerom X prema Y od 1 do 4 (npr. Ako je x 0.5, tada bi y trebalo biti 2).
 
 :::
 

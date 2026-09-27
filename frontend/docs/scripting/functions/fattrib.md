@@ -41,7 +41,7 @@ else
 
 ## Notes
 
-:::tip
+:::note
 
 - The time is in number of seconds since midnight at 1 January 1970: the start of the UNIX system epoch.
 - The file attributes are a bit mask.

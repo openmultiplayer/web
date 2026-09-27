@@ -35,9 +35,11 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Zabilješke
 
-:::tip
+:::note
 
-Izlazna animacija nije sinhronizirana za druge igrače. Ova funkcija neće raditi kada se koristi u OnPlayerEnterVehicle, jer igrač nije u vozilu kad se pozove povratni poziv. Umjesto toga koristite OnPlayerStateChange (pogledajte primjer dolje). Igrač se ne uklanja ako je u RC vozilu.
+- Izlazna animacija nije sinhronizirana za druge igrače.
+- Ova funkcija neće raditi kada se koristi u OnPlayerEnterVehicle, jer igrač nije u vozilu kad se pozove povratni poziv. Umjesto toga koristite OnPlayerStateChange (pogledajte primjer dolje).
+- Igrač se ne uklanja ako je u RC vozilu.
 
 :::
 

@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 	
 ## نکته ها
 
-:::tip
+:::note
 
 این کالبک توسط NPC نیز قابل فرا خوانی است.
 

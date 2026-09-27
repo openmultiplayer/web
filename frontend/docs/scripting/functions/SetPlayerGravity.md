@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::warning
+:::note
 
 Default gravity is 0.008.
 

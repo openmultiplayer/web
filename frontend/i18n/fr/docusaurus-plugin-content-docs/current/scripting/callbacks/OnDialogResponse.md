@@ -52,7 +52,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## Notes
 
-:::tip
+:::note
 
 Les paramètres peuvent changer selon le style de dialog ([voir plus de styles de dialog](../resources/dialogstyles)).
 

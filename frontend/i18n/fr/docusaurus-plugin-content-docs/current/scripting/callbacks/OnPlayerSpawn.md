@@ -36,7 +36,7 @@ public OnPlayerSpawn(playerid)
 
 ## Astuces
 
-:::tip
+:::note
 
 Le jeu déduit parfois \$100 à un joueur après son apparition.
 

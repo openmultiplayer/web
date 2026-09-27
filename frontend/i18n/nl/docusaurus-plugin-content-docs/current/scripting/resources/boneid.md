@@ -4,7 +4,9 @@ sidebar_label: "Bone‑ID's"
 ---
 
 :::note
+
 Bone‑IDs gebruikt door [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject).
+
 :::
 
 | ID  | Bot                           |

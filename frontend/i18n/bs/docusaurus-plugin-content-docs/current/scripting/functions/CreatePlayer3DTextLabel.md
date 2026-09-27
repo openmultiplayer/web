@@ -43,7 +43,7 @@ if (strcmp(cmd, "/playerlabel", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 drawdistance se čini da je mnogo manja prilikom spectateanja
 

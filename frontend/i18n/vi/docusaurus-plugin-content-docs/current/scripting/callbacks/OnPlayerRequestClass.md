@@ -34,7 +34,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 ## Ghi Chú
 
-:::tip
+:::note
 
 Callback này cũng được gọi khi người chơi nhấn F4.
 

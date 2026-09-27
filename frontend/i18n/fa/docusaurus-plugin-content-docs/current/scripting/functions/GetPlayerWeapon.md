@@ -38,7 +38,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## نکات
 
-:::tip
+:::note
 
 زمانی که وضعیت بازیکن `PLAYER_STATE_DRIVER` یا `PLAYER_STATE_PASSENGER` است، این تابع اسلحه‌ای را برمی‌گرداند که بازیکن قبل از ورود به وسیله نقلیه در دست داشته است. اگر از cheat برای spawn کردن اسلحه در وسیله نقلیه استفاده شود، این تابع آن را گزارش نخواهد کرد.
 

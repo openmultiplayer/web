@@ -53,7 +53,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 drawDistance زمانی که در حال تماشا هستید به نظر خیلی کوچکتر می‌آید.
 

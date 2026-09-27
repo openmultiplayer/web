@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## 注意
 
-:::tip
+:::note
 
 对车辆中的玩家使用此函数会立即将其移出车辆。可用于快速弹出玩家。
 

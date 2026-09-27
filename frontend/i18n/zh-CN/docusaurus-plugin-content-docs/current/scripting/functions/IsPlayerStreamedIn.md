@@ -31,7 +31,7 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 ## 注意事项
 
-:::tip
+:::note
 
 **SA-MP 服务器:** 玩家距离超过 200 米时自动流卸载（参见[server.cfg](../../server/server.cfg) - **stream_distance**）
 

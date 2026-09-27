@@ -39,7 +39,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## نکات
 
-:::tip
+:::note
 
 این داخل مرزهای معمولی نقشه SA کار نمی‌کنه.
 

@@ -44,7 +44,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## Lưu ý
 
-:::tip
+:::note
 
 Callback này chỉ được gọi khi còi của xe được bật hoặc tắt, KHÔNG phải khi còi phụ được sử dụng (nhấn giữ còi).
 

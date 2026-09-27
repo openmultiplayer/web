@@ -35,6 +35,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 :::warning
 
 Bu geri çağırma, oyuncu motordan düştüğünde veya SetPlayerPos gibi fonksiyonlar kullanılarak araçtan başka bir şekilde çıkartıldığında çağırılmaz. Bunu sağlamak için OnPlayerStateChange'de eski durumlarının PLAYER_STATE_DRIVER veya PLAYER_STATE_PASSENGER ve yeni durumlarının PLAYER_STATE_ONFOOT olup olmadığına bakmalısınız.
+
 :::
 
 ## Bağlantılı Fonksiyonlar

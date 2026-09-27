@@ -20,7 +20,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Izvlačenje teksta igrača vrijedi samo za igrač za kojeg je stvoren. To znači da ne možete drugom igraču prikazati tekstdraw stvorenog za određenog igrača.
 

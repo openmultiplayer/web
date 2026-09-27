@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notas
 
-:::tip
+:::note
 
 O objeto do jogador deve ser criado antes de tentar anexar a câmera do jogador a ele.
 

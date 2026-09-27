@@ -32,7 +32,12 @@ public OnGameModeInit()
 
 :::warning
 
-- This function was removed in SA-MP 0.3.
+This function was removed in SA-MP 0.3.
+
+:::
+
+:::note
+
 - Tire popping is enabled by default.
 - If you want to disable tire popping, you'll have to manually script it using [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate).
 

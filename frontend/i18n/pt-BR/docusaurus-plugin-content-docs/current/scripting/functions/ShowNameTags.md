@@ -43,6 +43,7 @@ Você também pode alternar os nametags dos jogadores via [config.json](../../se
 ```json
 "use_nametags": false,
 ```
+
 :::
 
 ## Funções Relacionadas

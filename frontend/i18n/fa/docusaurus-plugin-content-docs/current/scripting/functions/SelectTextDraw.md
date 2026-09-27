@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 متن (TEXT) هست که وقتی hover می‌شه برجسته می‌شه، نه جعبه (box) - اگر جعبه نمایش داده بشه.
 

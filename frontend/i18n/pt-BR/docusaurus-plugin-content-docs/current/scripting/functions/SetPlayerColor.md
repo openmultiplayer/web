@@ -30,7 +30,7 @@ SetPlayerColor(playerid, 4278190335);
 ```
 ## Notas
 
-:::tip
+:::note
 
 - Esta função mudará a cor do jogador para todos, mesmo que a cor do jogador tenha sido alterada com SetPlayerMarkerForPlayer para qualquer outro jogador.
 - Se usado em OnPlayerConnect, o jogador afetado não verá a cor no menu TAB.

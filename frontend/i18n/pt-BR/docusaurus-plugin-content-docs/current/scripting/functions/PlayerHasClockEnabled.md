@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 O tempo não está sincronizado com outros jogadores! A hora pode ser sincronizada usando [SetPlayerTime](SetPlayerTime).
 

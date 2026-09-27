@@ -44,7 +44,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 ## Astuces
 
-:::tip
+:::note
 
 Cette callback est appelée uniquement lorsque /rcon login est utilisé.
 

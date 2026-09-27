@@ -60,7 +60,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova funkcija utječe samo na sudare kamera objekata stvorenih NAKON njegove upotrebe - ne uključuje sudare kamera postojećih objekata.
 

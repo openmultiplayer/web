@@ -34,7 +34,7 @@ ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, 1, 1, 1, 1, 1, 1);
 
 ## Uwagi
 
-:::tip
+:::note
 
 Opcjonalny parametr `forcesync`, domyślnie ustawiony na 0, w większości przypadków nie jest potrzebny, ponieważ gracze sami synchronizują animacje. Ten parametr może zmusić wszystkich graczy, którzy mogą zobaczyć `playerid` do włączenia animacji niezależnie od tego, czy konkretny gracz wykonuje tę animację. Jest to przydatne w sytuacji, kiedy gracze nie mogą sami zsynchronizować animacji. Na przykład, gdy są AFK.
 

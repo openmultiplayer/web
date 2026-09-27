@@ -40,7 +40,7 @@ drawDistance = GetPlayer3DTextLabelDrawDist(playerid, playerTextId);
 
 ## Notes
 
-:::tip
+:::note
 
 This function is just short name of [GetPlayer3DTextLabelDrawDistance](GetPlayer3DTextLabelDrawDistance).
 

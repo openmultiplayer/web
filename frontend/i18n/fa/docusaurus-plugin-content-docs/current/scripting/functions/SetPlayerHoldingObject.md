@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 فقط یک object می‌تونه به هر پلیر وصل بشه. این تابع جدا از CreateObject / CreatePlayerObject pool ها هست.
 

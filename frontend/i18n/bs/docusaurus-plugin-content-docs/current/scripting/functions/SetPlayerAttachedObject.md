@@ -47,7 +47,7 @@ public OnPlayerSpawn(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova je funkcija odvojena od spremišta CreateObject / CreatePlayerObject.
 

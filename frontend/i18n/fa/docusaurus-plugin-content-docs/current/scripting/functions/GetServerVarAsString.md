@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 ## نکات
 
-:::tip
+:::warning
 
 وقتی filterscripts یا plugins به عنوان varname مشخص می‌شه، این تابع فقط اسم اولین filterscript یا plugin مشخص شده رو برمی‌گردونه. این یه bug هست.
 

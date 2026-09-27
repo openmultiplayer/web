@@ -58,7 +58,7 @@ public OnPlayerConnect(playerid)
 
 :::
 
-:::tip
+:::note
 
 此函数仅创建区域，需调用[PlayerGangZoneShow](PlayerGangZoneShow)显示可视化效果
 

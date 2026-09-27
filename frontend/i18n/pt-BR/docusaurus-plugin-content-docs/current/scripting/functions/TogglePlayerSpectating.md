@@ -35,7 +35,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 ```
 ## Notas
 
-:::tip
+:::note
 
 Quando o modo espectador estiver desabilitado, OnPlayerSpawn será chamado automaticamente, se você deseja restaurar o estado do jogador antes de ser espectador, você terá que lidar com isso em OnPlayerSpawn. Observe também que o jogador também pode ir para a seleção de classe antes, se tiver usado F4 durante o espectador, um jogador também CAN morre no modo espectador devido a várias falhas.
 

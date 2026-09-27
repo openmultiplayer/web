@@ -34,7 +34,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 ## Notas
 
-:::tip
+:::note
 
 Essa callback não é chamada ao usar ChangeVehicleColor. Estranhamente, não é chamada também ao ir em uma Oficina de Pintura (só Garagens de Personalização).
 

@@ -35,7 +35,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 当玩家按下 F4 键时也会触发此回调
 

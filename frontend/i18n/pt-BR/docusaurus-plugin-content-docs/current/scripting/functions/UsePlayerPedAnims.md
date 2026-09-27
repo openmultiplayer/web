@@ -21,11 +21,10 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
-Funciona apenas quando colocado em [OnGameModeInit](../callbacks/OnGameModeInit).
-
-Não usar esta função faz com que armas de duas mãos (não de duas mãos - uma única arma que é segurada por ambas as mãos) sejam seguradas em apenas uma mão.
+- Funciona apenas quando colocado em [OnGameModeInit](../callbacks/OnGameModeInit).
+- Não usar esta função faz com que armas de duas mãos (não de duas mãos - uma única arma que é segurada por ambas as mãos) sejam seguradas em apenas uma mão.
 
 :::
 
@@ -36,6 +35,7 @@ Você também pode ativar a animação padrão de caminhada do jogador via [conf
 ```json
 "use_player_ped_anims": true,
 ```
+
 :::
 
 ## Funções Relacionadas

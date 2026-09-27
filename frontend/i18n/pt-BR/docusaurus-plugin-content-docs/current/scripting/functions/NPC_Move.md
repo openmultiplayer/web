@@ -53,12 +53,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - O NPC encontrará o caminho para a posição alvo.
 - Os tipos de movimento afetam a animação e a velocidade.
 - O intervalo de parada determina o quão perto o NPC chega antes de parar.
-- Use [NPC_IsMoving](NPC_IsMoving) para verificar se o NPC está se movendo no momento
+
+:::
+
+:::tip
+
+Use [NPC_IsMoving](NPC_IsMoving) para verificar se o NPC está se movendo no momento
 
 :::
 

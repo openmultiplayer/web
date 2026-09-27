@@ -25,7 +25,7 @@ Elle est toujours appelée **1**, il faut donc la remplacer par **0** pour que l
 
 ## Astuces
 
-:::info
+:::note
 
 Cette callback peut aussi être appelée par un NPC.
 

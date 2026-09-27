@@ -44,7 +44,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback je pozvan samo kada se /rcon login iskoristi unutar igra. Ovaj callback je pozvan samo kada igral nije još ulogovan (nije još pristupio) u RCON. Kada se igrač prijavi/uloguje u RCON, OnRconCommand se poziva umjesto toga.
 

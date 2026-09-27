@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 TEKST će biti istaknut kada zadržite pokazivač, a NE okvir (ako je jedan prikazan).
 

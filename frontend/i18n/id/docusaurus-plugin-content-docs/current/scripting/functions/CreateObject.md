@@ -33,9 +33,10 @@ public OnGameModeInit()
 
 ## Catatan
 
-:::tip
+:::note
 
 Ada batas 1000 Object (MAX_OBJECTS). Untuk menghindari batasan ini, Anda dapat menggunakan streamer.
+
 :::
 
 ## Fungsi Terkait

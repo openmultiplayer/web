@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Najveći mogući ID klase je 319 (Počinje od 0, znači maksimalno 320 klasa). Kada je limit dostignut, sve naredne dodane klase će zamijeniti ID 319.
 

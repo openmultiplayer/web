@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意
 
-:::tip
+:::note
 
 - 若已启用[TogglePlayerClock](TogglePlayerClock)，天气会逐渐变化而非立即切换
 - 游戏实际仅有 21 个有效天气 ID（0-20），但系统不会进行范围校验

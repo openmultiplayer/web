@@ -32,7 +32,7 @@ public OnVehicleDeath(vehicleid, killerid)
 
 ## Note
 
-:::tip
+:::note
 
 Acest apel invers va fi apelat și atunci când un vehicul intră în apă, dar vehiculul poate fi salvat de la distrugere prin teleportare sau alungare (dacă este doar parțial scufundat). Reapelarea nu va fi apelată a doua oară, iar vehiculul poate dispărea când șoferul iese sau după o scurtă perioadă de timp.
 

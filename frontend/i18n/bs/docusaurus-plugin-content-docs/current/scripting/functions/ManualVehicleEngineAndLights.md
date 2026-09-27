@@ -22,7 +22,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovu funkciju nije moguće preokrenuti nakon što je korištena. Morate ga koristiti ili ne koristiti.
 

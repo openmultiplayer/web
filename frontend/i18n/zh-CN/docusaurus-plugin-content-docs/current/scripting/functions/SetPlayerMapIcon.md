@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 使用无效图标类型将默认显示 ID1 白方块 ![](https://assets.open.mp/assets/images/mapIcons/icon1.gif)
 - 重复使用相同图标 ID 会覆盖已有图标

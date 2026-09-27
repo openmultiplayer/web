@@ -57,7 +57,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função pode (obviamente) retornar apenas um veículo ID por vez, enquanto o jogador pode estar olhando para vários. Geralmente parece detectar primeiro o veículo mais próximo.
 

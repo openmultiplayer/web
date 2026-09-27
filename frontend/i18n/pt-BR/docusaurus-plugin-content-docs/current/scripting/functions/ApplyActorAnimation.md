@@ -44,7 +44,7 @@ public OnGameModeInit()
 
 ## Notas
 
-:::tip
+:::note
 
 Você deve pré-carregar a biblioteca de animações para o jogador ao qual o ator irá aplicar a animação, e não para o ator. Caso contrário a animação não será aplicada ao ator até que a função seja executada novamente.
 

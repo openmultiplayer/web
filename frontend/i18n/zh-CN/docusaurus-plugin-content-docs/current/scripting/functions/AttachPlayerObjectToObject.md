@@ -41,7 +41,7 @@ AttachPlayerObjectToObject(playerid, objectid, parentid, 0.0, 0.0, 1.0, 0.0, 0.0
 
 ## 注意事项
 
-:::tip
+:::note
 
 在附加操作前必须确保两个物体都已创建
 

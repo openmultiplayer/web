@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 شما باید ابتدا شیء را ایجاد کنید، قبل از تلاش برای اتصال دوربین بازیکن به آن.
 

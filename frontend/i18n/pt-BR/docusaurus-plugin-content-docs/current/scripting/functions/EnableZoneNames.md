@@ -42,4 +42,5 @@ Você também pode ativar ou desativar nomes de zona por meio de [config.json](.
 ```json
 "use_zone_names": true,
 ```
+
 :::

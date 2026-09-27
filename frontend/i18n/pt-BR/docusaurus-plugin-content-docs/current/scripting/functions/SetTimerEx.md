@@ -20,7 +20,7 @@ Define um cronômetro para chamar uma função após o intervalo especificado. E
 
 ## Retornos
 
-O ID do cronômetro que foi iniciado. O temporizador IDs começa em 1 e nunca é reutilizado. Não há verificações internas para verificar se os parâmetros passados ​​são válidos (por exemplo, duração e não um valor negativo). O plugin Y_Less' 'fixes2' implementa essas verificações e também melhora enormemente a precisão dos temporizadores, e também adiciona suporte para passagem de array/string.
+O ID do cronômetro que foi iniciado. O temporizador IDs começa em 1 e nunca é reutilizado.
 
 ## Exemplos
 
@@ -67,9 +67,7 @@ public EndAntiSpawnKill(playerid)
 
 :::warning
 
-Os intervalos do temporizador não são precisos (cerca de 25% de desconto) em SA-MP. Existem correções disponíveis [aqui](https://sampforum.blast.hk/showthread.php?tid=289675) e [aqui](https://sampforum.blast.hk/showthread.php?tid=650736).
-
-Mas está corrigido em open.mp
+Os intervalos do temporizador não são precisos (cerca de 25% de desconto) em SA-MP. Existem correções disponíveis [aqui](https://sampforum.blast.hk/showthread.php?tid=289675) e [aqui](https://sampforum.blast.hk/showthread.php?tid=650736). Mas está corrigido em open.mp.
 
 :::
 

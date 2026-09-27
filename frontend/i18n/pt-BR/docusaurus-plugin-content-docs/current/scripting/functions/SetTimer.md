@@ -41,19 +41,12 @@ public OneSecondTimer()
 
 :::warning
 
-Os intervalos do temporizador não são precisos (cerca de 25% de desconto) em SA-MP. Existem correções disponíveis [aqui](https://sampforum.blast.hk/showthread.php?tid=289675) e [aqui](https://sampforum.blast.hk/showthread.php?tid=650736).
-
-Mas está corrigido em open.mp
-
-:::
-
-:::warning
-
-O uso de muitos temporizadores resultará em aumento do uso de memória/CPU.
+- Os intervalos do temporizador não são precisos (cerca de 25% de desconto) em SA-MP. Existem correções disponíveis [aqui](https://sampforum.blast.hk/showthread.php?tid=289675) e [aqui](https://sampforum.blast.hk/showthread.php?tid=650736). Mas está corrigido em open.mp.
+- O uso de muitos temporizadores resultará em aumento do uso de memória/CPU.
 
 :::
 
-:::tip
+:::note
 
 O temporizador IDs nunca é usado duas vezes.
 

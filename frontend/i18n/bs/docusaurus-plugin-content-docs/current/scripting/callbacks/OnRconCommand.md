@@ -40,7 +40,7 @@ public OnRconCommand(cmd[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 "/rcon " nije uključen/svrstan u "cmd" kada igrač napiše komandu. Ako koristite "print" funkciju ovdje, poslat će poruku igraču koji je upisao naredbu u igri, kao i log. Ovaj callback se ne poziva kada igrač nije prijavljen kao RCON administrator. Kada igrač nije prijavljen kao RCON admin i koristi / rcon prijavu, ovaj povratni poziv neće biti pozvan i umjesto toga će se pozvati OnRconLoginAttempt. Međutim, kada je igrač prijavljen kao RCON administrator, upotreba ove komande pozvat će ovaj callback.
 

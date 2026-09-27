@@ -14,7 +14,7 @@ description: PlayerPlaySound使用的声音ID列表
 
 :::
 
-:::caution 自**0.3.7-R2**起:
+:::info 自**0.3.7-R2**起:
 
 - 声音 ID ​**1**​ 可用于禁用[默认的 0 号室内环境音效](../functions/SetPlayerInterior)（风声背景音）。_提示：有助于创建更逼真的虚拟室内场景_
 - 声音 ID ​**0**​ 可额外用于恢复游戏正常户外环境音效

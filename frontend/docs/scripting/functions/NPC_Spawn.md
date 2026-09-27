@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - The NPC must be created with [NPC_Create](NPC_Create) before spawning.
 

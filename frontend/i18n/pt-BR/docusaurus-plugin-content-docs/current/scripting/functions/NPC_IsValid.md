@@ -41,12 +41,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::tip
 
 - Sempre verifique se um NPC é válido antes de realizar operações nele.
-- Um NPC torna-se inválido quando é destruído.
 - Isso evita erros de execução e travamentos.
 - Use isso em loops ao iterar pelo potencial NPC IDs.
+
+:::
+
+:::note
+
+Um NPC torna-se inválido quando é destruído.
 
 :::
 

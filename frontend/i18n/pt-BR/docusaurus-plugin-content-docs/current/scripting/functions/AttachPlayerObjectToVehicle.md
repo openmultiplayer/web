@@ -44,7 +44,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Notas
 
-:::tip
+:::note
 
 Você precisa criar o objeto antes de tentar anexá-lo a um veículo.
 

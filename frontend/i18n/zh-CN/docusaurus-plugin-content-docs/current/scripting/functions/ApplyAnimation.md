@@ -47,7 +47,7 @@ ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, SY
 
 ## 注意事项
 
-:::tip
+:::note
 
 - forceSync 参数默认值为 0（SYNC_NONE），通常无需设置，玩家会自动同步动画
 - 强制同步模式适用于玩家无法自主同步的特殊场景（如暂停状态）

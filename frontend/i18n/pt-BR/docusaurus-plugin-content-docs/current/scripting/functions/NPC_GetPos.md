@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Todos os parâmetros de coordenadas são passados por referência e serão modificados.
 

@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 نور vertex آبجکت در صورت تغییر رنگ متریال ناپدید خواهد شد.
 

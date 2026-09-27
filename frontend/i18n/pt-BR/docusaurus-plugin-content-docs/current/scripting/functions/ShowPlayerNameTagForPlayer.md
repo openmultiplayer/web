@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::warning
 
 [ShowNameTags](ShowNameTags) deve ser definido como 'true' para poder mostrar tags de nome com ShowPlayerNameTagForPlayer, isso significa que para ser eficaz você precisa ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) com antecedência ([OnPlayerStreamIn](../callbacks/OnPlayerStreamIn) é um bom local).
 

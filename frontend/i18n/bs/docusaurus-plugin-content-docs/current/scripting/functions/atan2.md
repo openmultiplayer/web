@@ -7,13 +7,8 @@ tags: []
 
 :::warning
 
-Ova funkcija započinje malim slovom.
-
-:::
-
-:::warning
-
-Obratite pažnju da je vrijednost y prvi parametar, a vrijednost x drugi parametar.
+- Ova funkcija započinje malim slovom.
+- Obratite pažnju da je vrijednost y prvi parametar, a vrijednost x drugi parametar.
 
 :::
 

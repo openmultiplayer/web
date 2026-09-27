@@ -39,13 +39,8 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-当仅需要调整文本绘图方框大小时，可将 Y 值乘以 0.135 来获得类似 TextDrawTextSize 的效果
-
-:::
-
-:::tip
-
-字体显示效果最佳比例为 X:Y = 1:4（例如 X 设为 0.5 时，Y 应设为 2）
+- 当仅需要调整文本绘图方框大小时，可将 Y 值乘以 0.135 来获得类似 TextDrawTextSize 的效果
+- 字体显示效果最佳比例为 X:Y = 1:4（例如 X 设为 0.5 时，Y 应设为 2）
 
 :::
 

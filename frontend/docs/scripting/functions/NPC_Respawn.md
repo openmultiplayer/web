@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - Resets NPC health, position, and state.
 - NPC returns to their original spawn coordinates.

@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função não suporta scripts de cassino.
 

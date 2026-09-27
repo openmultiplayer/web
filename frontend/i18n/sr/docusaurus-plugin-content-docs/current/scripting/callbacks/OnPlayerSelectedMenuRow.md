@@ -53,7 +53,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## Notes
 
-:::tip
+:::note
 
 ID менија се не прослеђује овом повратном позиву. Потребно је користити [GetPlayerMenu](../functions/GetPlayerMenu) да бисте утврдили из којег је менија играч изабрао ставку.
 

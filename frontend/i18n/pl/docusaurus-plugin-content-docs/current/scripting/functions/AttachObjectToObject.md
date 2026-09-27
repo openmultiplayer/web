@@ -38,7 +38,7 @@ AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
 
 ## Uwagi
 
-:::tip
+:::note
 
 Oba obiekty muszą być utworzone przed próbą ich połączenia. Nie ma odpowiednika tej funkcji dla obiektów gracza (AttachPlayerObjectToObject), dlatego nie jest ona wspierana przez streamery.
 

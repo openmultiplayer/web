@@ -29,7 +29,7 @@ SendClientMessage(playerid, -1, string);
 ```
 ## Notas
 
-:::tip
+:::note
 
 O valor de retorno desta função representa o valor da opção "widescreen" nas configurações de exibição do jogo, não a proporção real da tela do jogador.
 

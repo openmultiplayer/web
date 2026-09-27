@@ -57,6 +57,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 必须使用 ARGB 颜色格式（不同于客户端消息使用的 RGBA 格式）
 同一物体最多只能应用 16 次材质文本修改
+
 :::
 
 ## 相关函数

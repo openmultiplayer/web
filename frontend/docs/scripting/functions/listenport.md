@@ -29,8 +29,13 @@ This function always returns **0**.
 
 :::warning
 
-- You must call this function **before** receiving the first packet. In other words, you should set up a port in main.
-- If no port number has been explicitily chosen, the module will listen at port **9930**.
+You must call this function **before** receiving the first packet. In other words, you should set up a port in main.
+
+:::
+
+:::note
+
+If no port number has been explicitily chosen, the module will listen at port **9930**.
 
 :::
 

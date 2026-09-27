@@ -6,11 +6,10 @@ sidebar_label: "Pickup-typen"
 ### Beschikbare typen
 
 :::note
-Gebruikt door [CreatePickup](../functions/CreatePickup) en [CreatePlayerPickup](../functions/CreatePlayerPickup).
-:::
 
-:::note
-De meeste andere IDs zijn ongedocumenteerd of lijken op type 1; gebruik ze niet zomaar (sommige hebben bijwerkingen zoals 18 en 20).
+- Gebruikt door [CreatePickup](../functions/CreatePickup) en [CreatePlayerPickup](../functions/CreatePlayerPickup).
+- De meeste andere IDs zijn ongedocumenteerd of lijken op type 1; gebruik ze niet zomaar (sommige hebben bijwerkingen zoals 18 en 20).
+
 :::
 
 | ID  | Beschrijving                                                                                                                                                                                                                      |

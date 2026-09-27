@@ -32,7 +32,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 این کالبک هر بار که بازیکن دنیای مجازی را تغییر دهد فراخوانده می‌شود، حتی اگر در آن دنیا هیچ مدل سفارشی وجود نداشته باشد.
 

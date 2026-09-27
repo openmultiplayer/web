@@ -37,7 +37,7 @@ public OnGameModeInit()
 
 ## Notes
 
-:::tip
+:::note
 
 - This function merely CREATES the menu - [ShowMenuForPlayer](ShowMenuForPlayer) must be used to show it.
 - You can only create and access 2 columns (0 & 1).

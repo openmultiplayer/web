@@ -38,7 +38,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 ```
 ## Notas
 
-:::tip
+:::note
 
 Quando o estado do jogador é `PLAYER_STATE_DRIVER` ou `PLAYER_STATE_PASSENGER` esta função retorna a arma que o jogador segurava antes de entrar no veículo. Se um cheat for usado para gerar uma arma dentro de um veículo, esta função não irá reportá-lo.
 

@@ -40,7 +40,7 @@ public OnRconCommand(cmd[])
 
 ## Note
 
-:::tip
+:::note
 
 „/rcon” nu este inclus în „cmd” atunci când un jucător introduce o comandă. Dacă utilizați funcția „printare” aici, aceasta va trimite un mesaj jucătorului care a tastat comanda în joc, precum și jurnalul. Acest apel invers nu este apelat atunci când jucătorul nu este conectat ca administrator RCON. Când jucătorul nu este conectat ca administrator RCON și folosește /rcon login, acest apel invers nu va fi apelat și OnRconLoginAttempt este apelat în schimb. Cu toate acestea, atunci când jucătorul este conectat ca administrator RCON, utilizarea acestei comenzi va apela acest apel invers.
 

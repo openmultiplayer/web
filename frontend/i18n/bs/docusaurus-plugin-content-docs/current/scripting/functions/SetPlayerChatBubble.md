@@ -33,7 +33,7 @@ public OnPlayerText(playerid, text[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ne možete vidjeti svoje lične chat balončiće. Isto se dešava i sa prikavčenim 3D text labelom.
 

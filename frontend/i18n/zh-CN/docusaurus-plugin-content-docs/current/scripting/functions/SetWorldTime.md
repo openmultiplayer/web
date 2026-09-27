@@ -26,7 +26,7 @@ SetWorldTime(12);
 
 ## 注意
 
-:::tip
+:::note
 
 此函数仅对未启用动态时钟的玩家生效（参见[TogglePlayerClock](TogglePlayerClock)）。
 

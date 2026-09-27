@@ -30,9 +30,9 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## บันทึก
 
-:::tip
+:::note
 
-This callback can also be called for NPC.
+NPC สามารถเรียก Callback นี้ได้
 
 :::
 

@@ -139,7 +139,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## Opombe
 
-:::tip
+:::note
 
 Parametri lahko vsebujejo različne vrednosti, odvisno od sloga pogovornega okna ([Kliknite za več primerov](../resources/dialogstyles)).
 

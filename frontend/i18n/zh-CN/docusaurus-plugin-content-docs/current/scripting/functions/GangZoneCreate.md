@@ -54,7 +54,7 @@ public OnGameModeInit()
 
 :::
 
-:::tip
+:::note
 
 此函数仅创建帮派区域，需使用[GangZoneShowForPlayer](GangZoneShowForPlayer)或[GangZoneShowForAll](GangZoneShowForAll)进行显示
 

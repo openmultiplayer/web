@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Sjena može biti presječena/odrezana od strane područja boxa ako je postavljena veličina previše velika za područje.
 

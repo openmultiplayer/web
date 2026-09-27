@@ -41,7 +41,7 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## Note
 
-:::tip
+:::note
 
 `Useartwork` trebuie să fie activat mai întâi în setările serverului pentru ca acesta să funcționeze Când virtualworld este setat, modelele vor fi descărcate odată ce jucătorul intră în lumea specifică
 

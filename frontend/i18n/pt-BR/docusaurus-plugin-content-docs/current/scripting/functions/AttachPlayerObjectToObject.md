@@ -41,7 +41,7 @@ AttachPlayerObjectToObject(playerid, objectid, parentid, 0.0, 0.0, 1.0, 0.0, 0.0
 
 ## Notas
 
-:::tip
+:::note
 
 Ambos os objetos precisam ser criados antes de tentar anexá-los.
 

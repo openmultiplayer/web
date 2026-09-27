@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - This function performs a single rotation; call it again to keep the NPC facing a moving player.
 - The player must be connected, otherwise the NPC will not rotate.

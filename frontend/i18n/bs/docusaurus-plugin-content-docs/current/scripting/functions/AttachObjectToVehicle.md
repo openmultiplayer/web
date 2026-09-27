@@ -34,7 +34,7 @@ AttachObjectToVehicle(objectid, vehicleid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Objekat prvobitno mora biti kreiran.
 

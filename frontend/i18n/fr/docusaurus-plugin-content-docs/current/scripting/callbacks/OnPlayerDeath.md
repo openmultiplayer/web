@@ -43,7 +43,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## Astuces
 
-:::tip
+:::note
 
 Les morts à raison d'une source de feu seront caractérisées par l'ID 37 (lance-flammes) ;
 La raison pour les explosions avec une arme (RPG, grenade, ...) seront caractérisées par l'ID.

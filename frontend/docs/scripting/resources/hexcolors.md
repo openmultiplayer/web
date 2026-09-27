@@ -70,7 +70,7 @@ The number 255 is pretty understandable, but what is 'FF'? Let's take a look at 
 
 ---
 
-:::caution
+:::note
 
 **Note** | '^' is to the power of in this case, not the bitwise exclusive operator.
 
@@ -114,7 +114,7 @@ F * (16^1) + F * (16^0)
 
 There isn't really a sole use for hex, you can use it when ever you want; though it's mostly used for color defines (We'll take a look at this later). Some people use hex as a visual aid to make things look more clearly (Y_Less) for example:
 
-:::caution
+:::note
 
 **Note** | This is a complicated example, don't worry if you don't understand it.
 

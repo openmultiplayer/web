@@ -41,7 +41,7 @@ public OnPlayerConnect(playerid)
 
 ## Notas
 
-:::tip
+:::note
 
 Textdraws de jogador são automaticamente destruídos quando um jogador se desconecta.
 

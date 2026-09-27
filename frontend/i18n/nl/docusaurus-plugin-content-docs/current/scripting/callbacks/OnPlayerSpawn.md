@@ -39,7 +39,7 @@ public OnPlayerSpawn(playerid)
 
 ## Notities
 
-:::tip
+:::note
 
 Wanneer een speler sterft in San Andreas krijgen ze automatisch $100 afgetrokken voor ziekenhuiskosten. Deze functie blijft in SA:MP, maar is verwijderd uit open.mp om scripts hun eigen geld te laten beheren. Verschillende scripts proberen dit al te repareren door $100 toe te voegen aan een speler na de dood, of bij spawn. Als dit jouw script is, verwijder dan de extra fix, hoewel de code in open.mp probeert rekening te houden met scripts die dit doen. Als jouw script afhankelijk was van deze functie, voeg dan de volgende code toe aan [OnPlayerDeath](OnPlayerDeath):
 

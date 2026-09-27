@@ -50,15 +50,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
-A integridade total do veículo é 1000, porém valores mais altos são possíveis e aumentam a integridade do veículo. Para obter mais informações sobre valores de integridade, consulte [aqui](../resources/vehiclehealth).
-
-:::
-
-:::tip
-
-Um veículo pega fogo quando sua saúde está abaixo de 250. Ele explodirá alguns segundos depois.
+- A integridade total do veículo é 1000, porém valores mais altos são possíveis e aumentam a integridade do veículo. Para obter mais informações sobre valores de integridade, consulte [aqui](../resources/vehiclehealth).
+- Um veículo pega fogo quando sua saúde está abaixo de 250. Ele explodirá alguns segundos depois.
 
 :::
 

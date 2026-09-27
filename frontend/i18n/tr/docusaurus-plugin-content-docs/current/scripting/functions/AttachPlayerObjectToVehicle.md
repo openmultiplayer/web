@@ -41,7 +41,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Notlar
 
-:::tip
+:::note
 
 Oyuncu objesi bir araca bağlanmadan önce oluşturulmalıdır.
 

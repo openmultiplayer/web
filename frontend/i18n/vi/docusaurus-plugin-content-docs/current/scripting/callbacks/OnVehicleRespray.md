@@ -34,7 +34,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 ## Lưu ý
 
-:::tip
+:::note
 
 Callback này không được gọi bởi ChangeVehicleColor. Tên của callback này có thể gây hiểu lầm, và nó không được gọi cho các cửa hàng Pay 'n' Spray (chỉ các cửa hàng tùy chỉnh).
 

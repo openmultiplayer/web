@@ -44,14 +44,19 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 
 ## Notities
 
-:::tip
+:::note
 
 - Houd er rekening mee dat deze functie in sommige gevallen onnauwkeurig kan zijn.
-- Als je bepaalde spelers wilt voorkomen elkaar te beschadigen, gebruik [SetPlayerTeam](../functions/SetPlayerTeam).
 - weaponid is 37 (flamethrower) voor vuurbronnen (bijv. molotov, 18).
 - weaponid is 51 voor wapens die explosies veroorzaken (bijv. RPG, granaat).
 - **playerid** is de enige die de callback kan aanroepen.
 - amount is altijd de maximale schade die weaponid kan doen, zelfs als er minder health over is. Bijv. Desert Eagle met 46.2 schade: 3 schoten tonen 46.2, ook al is de laatste effectief lager.
+
+:::
+
+:::tip
+
+Als je bepaalde spelers wilt voorkomen elkaar te beschadigen, gebruik [SetPlayerTeam](../functions/SetPlayerTeam).
 
 :::
 

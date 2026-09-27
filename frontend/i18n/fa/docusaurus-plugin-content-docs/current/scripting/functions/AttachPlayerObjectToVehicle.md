@@ -44,7 +44,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## نکات
 
-:::tip
+:::note
 
 باید شیء را قبل از تلاش برای اتصال آن به وسیله نقلیه ایجاد کنید.
 

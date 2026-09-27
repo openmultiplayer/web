@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 زاویه‌های برگشتی زمانی که در وسیله نقلیه هستید معمولاً صحیح نیستند. برای دریافت زاویه صحیح در حین بودن در وسیله نقلیه، از [GetVehicleZAngle](GetVehicleZAngle) استفاده کنید.
 

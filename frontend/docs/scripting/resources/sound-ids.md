@@ -14,7 +14,7 @@ You have to use sound ID **0** to stop the sound ID that is currently playing.
 
 :::
 
-:::caution Since **0.3.7-R2**:
+:::info Since **0.3.7-R2**:
 
 - Sound ID **1** can be used to disable the [interior 0 (default)](../functions/SetPlayerInterior) ambience track (wind noise). _Hint: it can help to create more realistically fake interiors._
 - Sound ID **0** can be used additionally to return the game's normal outdoor ambience track.

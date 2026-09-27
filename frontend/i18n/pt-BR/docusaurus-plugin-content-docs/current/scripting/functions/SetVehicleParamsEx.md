@@ -79,7 +79,7 @@ public DisableVehicleAlarm(vehicleid)
 
 ## Notas
 
-:::tip
+:::note
 
 - O alarme não será reiniciado quando terminar, você mesmo precisará redefini-lo com esta função.
 - As luzes também funcionam durante o dia (somente quando [ManualVehicleEngineAndLights](ManualVehicleEngineAndLights) está ativado).

@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::tip
+:::note
 
 - A vehicle's X and Y (pitch and roll) rotation will be reset when this function is used.
 - The X and Y rotations can not be set.

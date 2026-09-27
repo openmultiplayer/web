@@ -28,7 +28,7 @@ SendClientMessage(playerid, -1, string);
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数获取的是游戏内置视角系统（包含狙击镜缩放）的缩放级别，与武器模型自带的缩放效果无关
 

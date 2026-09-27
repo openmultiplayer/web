@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 玩家文本绘图具有玩家专属性：
 

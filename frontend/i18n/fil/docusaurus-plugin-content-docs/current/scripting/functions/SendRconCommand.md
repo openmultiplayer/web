@@ -19,7 +19,7 @@ Ang function na ito ay palaging rereturn ng 1.
 
 ## Notes
 
-:::warning
+:::note
 
 - Hindi sinusuportahan ang pag-login, dahil sa kakulangan ng parameter na 'playerid'.
 - Tatanggalin ng 'password 0' ang password ng server kung nakatakda ang isa.

@@ -42,7 +42,7 @@ gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova funkcija samo STVARA gangzonu, za prikaz morate koristiti GangZoneShowForPlayer ili GangZoneShowForAll.
 

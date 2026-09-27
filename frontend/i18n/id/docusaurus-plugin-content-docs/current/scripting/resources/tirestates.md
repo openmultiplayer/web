@@ -6,13 +6,8 @@ description: Information tentang ukuran byte dan bit status ban yang sesuai.
 
 :::note
 
-Keadaan ini untuk digunakan dengan [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) dan [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
-
-:::
-
-:::note
-
-Kendaraan yang memiliki ban lebih dari 4 (contoh: truk) hanya memiliki 4 keadaan ban.
+- Keadaan ini untuk digunakan dengan [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) dan [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+- Kendaraan yang memiliki ban lebih dari 4 (contoh: truk) hanya memiliki 4 keadaan ban.
 
 :::
 

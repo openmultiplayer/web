@@ -5,7 +5,9 @@ description: Definities voor race‑checkpoints.
 ---
 
 :::note
+
 Gebruikt door [SetPlayerRaceCheckpoint](../functions/SetPlayerRaceCheckpoint).
+
 :::
 
 | Definitie             | Waarde | Omschrijving                               |

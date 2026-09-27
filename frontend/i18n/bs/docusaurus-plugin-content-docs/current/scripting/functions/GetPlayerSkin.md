@@ -25,7 +25,7 @@ playerskin = GetPlayerSkin(playerid);
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Vraća novi skin nakon što se pozove SetSpawnInfo, ali prije nego što se igrač stvarno ponovo pokrene da bi dobio novi skin. Vraća stari skin ako je igrač stvoren putem funkcije SpawnPlayer.
 

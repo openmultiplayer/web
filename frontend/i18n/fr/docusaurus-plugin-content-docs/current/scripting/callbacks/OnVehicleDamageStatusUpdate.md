@@ -60,7 +60,7 @@ encode_lights(light1, light2, light3, light4)
 
 ## Astuces
 
-:::tip
+:::note
 
 Cela n'inclut pas les changements de heal du véhicule.
 

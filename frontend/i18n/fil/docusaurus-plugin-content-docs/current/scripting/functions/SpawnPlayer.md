@@ -31,7 +31,7 @@ if (strcmp(cmdtext, "/spawn", true) == 0)
 
 ## Notes
 
-:::tip
+:::warning
 
 Pinapatay ang manlalaro kung sila ay nasa sasakyan at mag i-spawn ng may hawak na bote.
 

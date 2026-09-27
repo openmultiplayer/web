@@ -39,7 +39,7 @@ SetActorFacingAngle(MyActor, 180.0);
 
 ## 注意事项
 
-:::tip
+:::note
 
 使用[CreateActor](CreateActor)创建演员时，已经指定了其朝向角度。除非需要后续调整方向，否则无需使用此函数
 

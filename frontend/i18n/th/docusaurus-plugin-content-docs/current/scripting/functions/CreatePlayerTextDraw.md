@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 Player-textdraws are automatically destroyed when a player disconnects.
 

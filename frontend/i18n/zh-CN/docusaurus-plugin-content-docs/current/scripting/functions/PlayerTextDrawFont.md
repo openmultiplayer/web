@@ -60,7 +60,12 @@ public OnPlayerConnect(playerid)
 
 - 使用 TEXT_DRAW_FONT_SPRITE_DRAW 时可加载.txd 精灵图集
 - 设置字体值为 4-16 区间时需配合 PlayerTextDrawSetPreviewModel 使用模型预览功能
-- 字体值超过 16 会导致客户端立即崩溃
+
+:::
+
+:::warning
+
+字体值超过 16 会导致客户端立即崩溃
 
 :::
 

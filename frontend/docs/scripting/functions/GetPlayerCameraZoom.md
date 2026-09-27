@@ -27,7 +27,7 @@ SendClientMessage(playerid, -1, string);
 
 ## Notes
 
-:::tip
+:::note
 
 This retrieves the zoom level of the GAME Camera (including Sniper scope), not the camera WEAPON.
 

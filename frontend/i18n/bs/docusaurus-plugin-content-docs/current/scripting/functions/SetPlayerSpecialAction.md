@@ -32,7 +32,7 @@ if (strcmp(cmd, "/handsup", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::warning
 
 Uklanjanjem jetpacks-a s igrača postavljanjem njihove posebne akcije na 0 zvuk ostaje do smrti.
 

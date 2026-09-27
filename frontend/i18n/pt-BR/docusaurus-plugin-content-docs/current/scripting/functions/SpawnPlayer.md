@@ -31,7 +31,7 @@ if (strcmp(cmdtext, "/spawn", true) == 0)
 
 ## Notas
 
-:::tip
+:::warning
 
 Mata o jogador se ele tiver no veículo e depois ele spawna com uma garrafa na mão.
 

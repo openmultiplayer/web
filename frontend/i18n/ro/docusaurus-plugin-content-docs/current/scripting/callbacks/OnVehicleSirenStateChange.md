@@ -44,7 +44,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## Note
 
-:::tip
+:::note
 
 Acest callback este apelat numai atunci când sirena unui vehicul este activată sau dezactivată, NU atunci când este utilizată sirena alternativă (claxon de menținere).
 

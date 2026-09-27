@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::tip
+:::note
 
 Full vehicle health is 1000. Higher values are possible. For more information on health values, see [this](../resources/vehiclehealth) page.
 

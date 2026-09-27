@@ -47,7 +47,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## نکات
 
-:::tip
+:::note
 
 این function بازیکن رو با اسلحه‌ای که از قبل داره مسلح می‌کنه؛ اسلحه جدید بهش نمی‌ده. برای اون از GivePlayerWeapon استفاده کن.
 

@@ -44,9 +44,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::warning
 
-Trava o servidor e o jogador se um menu ID for fornecido inválido.
+Trava o servidor e o jogador se um menu ID for fornecido inválido. (Corrigido em open.mp)
 
 :::
 

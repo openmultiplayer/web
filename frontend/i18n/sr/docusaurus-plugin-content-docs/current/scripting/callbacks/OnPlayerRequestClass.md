@@ -34,7 +34,7 @@ public OnPlayerRequestClass(playerid,classid)
 
 ## Белешке
 
-:::tip
+:::note
 
 Ова повратна функција се такође позива када играч притисне F4.
 

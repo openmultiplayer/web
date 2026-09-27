@@ -47,7 +47,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Notes
 
-:::tip
+:::note
 
 This function arms a player with a weapon they already have; it does not give them a new weapon. See GivePlayerWeapon.
 

@@ -6,19 +6,9 @@ description: Information about byte size and its corresponding light state bits.
 
 :::note
 
-Light states are used by natives such as [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
-
-:::
-
-:::note
-
-The lights on vehicles with 2 wheels (and thus 2 lights) can not be changed.
-
-:::
-
-:::note
-
-The two back lights of a vehicle can not be changed separately.
+- Light states are used by natives such as [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) and [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+- The lights on vehicles with 2 wheels (and thus 2 lights) can not be changed.
+- The two back lights of a vehicle can not be changed separately.
 
 :::
 

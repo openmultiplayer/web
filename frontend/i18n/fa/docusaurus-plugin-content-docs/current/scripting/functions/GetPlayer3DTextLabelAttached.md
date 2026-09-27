@@ -69,7 +69,7 @@ GetPlayer3DTextLabelAttached(playerid, gVehicle3dText[gVehicleId], parentPlayeri
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 این تابع اسم کوتاه [GetPlayer3DTextLabelAttachedData](GetPlayer3DTextLabelAttachedData) هست.
 

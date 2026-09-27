@@ -104,7 +104,7 @@ else
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função grava no arquivo em UTF-8, que não suporta alguns símbolos de idioma localizados.
 

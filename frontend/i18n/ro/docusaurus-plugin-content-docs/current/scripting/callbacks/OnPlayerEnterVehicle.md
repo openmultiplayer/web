@@ -33,7 +33,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Note
 
-:::tip
+:::note
 
 Acest apel invers este apelat atunci când un jucător ÎNCEPE să intre într-un vehicul, nu când a intrat în el. Consultați OnPlayerStateChange. Acest apel invers este în continuare apelat dacă jucătorului i se interzice intrarea în vehicul (de exemplu, acesta este blocat sau plin).
 

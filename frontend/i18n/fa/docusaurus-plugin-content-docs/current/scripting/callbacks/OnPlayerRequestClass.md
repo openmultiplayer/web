@@ -34,7 +34,7 @@ public OnPlayerRequestClass(playerid,classid)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 این کالبک همچنین زمانی فراخوانده می‌شود که بازیکن کلید F4 را فشار دهد.
 

@@ -57,7 +57,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 ## Ghi Chú
 
-:::tip
+:::note
 
 Một số hàm có thể không hoạt động chính xác khi sử dụng trong callback này vì người chơi đã bị ngắt kết nối khi callback được gọi. Điều này có nghĩa là bạn không thể lấy thông tin rõ ràng từ các hàm như [GetPlayerIp](../functions/GetPlayerIp) và [GetPlayerPos](../functions/GetPlayerPos).
 

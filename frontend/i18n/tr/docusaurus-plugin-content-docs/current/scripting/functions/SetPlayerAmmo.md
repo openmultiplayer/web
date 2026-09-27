@@ -29,7 +29,7 @@ SetPlayerAmmo(playerid, WEAPON_SHOTGUN, 100); // Shotgun mermilerini 100 olarak 
 
 ## Notlar
 
-:::tip
+:::note
 
 'weaponslot' parametresi SA:MP include'una ait bir yazım hatasıdır. Mermisini değiştirmek istediğiniz silahın slot'u yerine silahın ID'sini girmelisiniz.
 

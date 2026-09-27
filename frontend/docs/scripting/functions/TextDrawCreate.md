@@ -47,12 +47,17 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 - The `x, y` coordinate is the top left coordinate for the text draw area based on a 640x480 "canvas" (irrespective of screen resolution).
 - If you plan on using [TextDrawAlignment](TextDrawAlignment) with alignment 3 (`TEXT_DRAW_ALIGN_RIGHT`), the `x, y` coordinate is the top right coordinate for the text draw.
 - This function merely CREATES the textdraw, you must use [TextDrawShowForPlayer](TextDrawShowForPlayer) or [TextDrawShowForAll](TextDrawShowForAll) to show it.
-- It is recommended to use WHOLE numbers instead of decimal positions when creating textdraws to ensure resolution friendly design.
+
+:::
+
+:::tip
+
+It is recommended to use WHOLE numbers instead of decimal positions when creating textdraws to ensure resolution friendly design.
 
 :::
 

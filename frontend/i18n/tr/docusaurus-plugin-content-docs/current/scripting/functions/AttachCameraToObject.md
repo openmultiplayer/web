@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notlar
 
-:::tip
+:::note
 
 Oyuncuya kamera yerleştirmeden önce, objeyi yaratman gerekir.
 

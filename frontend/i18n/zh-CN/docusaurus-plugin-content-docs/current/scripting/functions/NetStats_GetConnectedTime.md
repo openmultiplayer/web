@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 该返回值在通过 RCON 命令"gmx"切换游戏模式时不会被重置
 

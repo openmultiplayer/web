@@ -38,17 +38,10 @@ AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, true)
 
 ## نکات
 
-:::tip
+:::note
 
-هر دو شیء باید قبل از تلاش برای اتصال آن‌ها ایجاد شوند.
-
-:::
-
-:::tip
-
-نسخه player-object از این تابع در SA-MP وجود ندارد.
-
-اما [AttachPlayerObjectToObject](AttachPlayerObjectToObject) در open.mp وجود دارد
+- هر دو شیء باید قبل از تلاش برای اتصال آن‌ها ایجاد شوند.
+- نسخه player-object از این تابع در SA-MP وجود ندارد. اما [AttachPlayerObjectToObject](AttachPlayerObjectToObject) در open.mp وجود دارد
 
 :::
 

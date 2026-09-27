@@ -39,7 +39,7 @@ LoadPlayerPos(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 玩家变量在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)回调触发后才会重置，因此在断开连接事件中仍可访问
 

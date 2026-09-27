@@ -29,7 +29,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (strcmp(cmdtext, "/fireman", true) == 0)
     {
-        // Устанавливает скин ID 277 ( скин пожарника ).
+        // Устанавливает скин ID 277 (скин пожарного).
         SetPlayerSkin(playerid, 277);
         return 1;
     }
@@ -51,7 +51,7 @@ SetPlayerSkinFix(playerid, skinid)
     GetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
     GetPlayerFacingAngle(playerid, tmpPos[3]);
 
-    // Если значение скина неверное ( меньше 0, или больше 311, или равно 74 ), то ничего не делает и возвращает 0
+    // Если значение скина неверное (меньше 0, или больше 311, или равно 74), то ничего не делает и возвращает 0
     if (0 > skinid > 311 || skinid == 74)
     {
         return 0;
@@ -61,7 +61,7 @@ SetPlayerSkinFix(playerid, skinid)
     {
         SetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
         SetPlayerFacingAngle(playerid, tmpPos[3]);
-        TogglePlayerControllable(playerid, true); // убирает заморозку игрока ( не обязательно )
+        TogglePlayerControllable(playerid, true); // убирает заморозку игрока (не обязательно)
         return SetPlayerSkin(playerid, skinid);
     }
     else if (IsPlayerInAnyVehicle(playerid))
@@ -72,7 +72,7 @@ SetPlayerSkinFix(playerid, skinid)
         RemovePlayerFromVehicle(playerid);
         SetPlayerPos(playerid, tmpPos[0], tmpPos[1], tmpPos[2]);
         SetPlayerFacingAngle(playerid, tmpPos[3]);
-        TogglePlayerControllable(playerid, true); // убирает заморозку игрока ( важно, т.к. запущена анимация выхода из транспорта )
+        TogglePlayerControllable(playerid, true); // убирает заморозку игрока (важно, т.к. запущена анимация выхода из транспорта)
         tmp = SetPlayerSkin(playerid, skinid);
         PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
         return tmp;
@@ -88,7 +88,7 @@ SetPlayerSkinFix(playerid, skinid)
 
 :::warning
 
-Известные Баги: Если игроку установлен скин, когда он присел, находится в машине или выполняет определенные анимации, игрок может заморозиться или произойдёт сбой. Это может быть исправлено путём использования TogglePlayerControllable. Для определения положения сидя игрока используется GetPlayerSpecialAction (SPECIAL_ACTION_DUCK). Другие игроки могут поймать крэш, если он в машине или он входит/выходит из транспорта. Установка скина игроку, когда он мёртв может спровоцировать крэш игрокам, находящимся рядом с ним. Перерывается сидение на байках.
+Известные Баги: Если игроку установлен скин, когда он присел, находится в машине или выполняет определенные анимации, игрок может заморозиться или произойдёт сбой. Это может быть исправлено путём использования TogglePlayerControllable. Для определения положения сидя игрока используется GetPlayerSpecialAction (SPECIAL_ACTION_DUCK). Другие игроки могут поймать краш, если он в машине или он входит/выходит из транспорта. Установка скина игроку, когда он мёртв может спровоцировать краш игрокам, находящимся рядом с ним. Перерывается сидение на байках.
 
 :::
 

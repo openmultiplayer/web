@@ -34,15 +34,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notas
 
-:::tip
+:::note
 
-ClearAnimations não faz nada quando a animação termina se passarmos 'true' para o parâmetro freeze em ApplyAnimation.
-
-:::
-
-:::tip
-
-Ao contrário de outras maneiras de remover o jogador de um veículo, isso também redefinirá a velocidade do veículo para zero, parando instantaneamente o carro. O jogador aparecerá no topo do veículo com a mesma localização que estava no assento do carro.
+- ClearAnimations não faz nada quando a animação termina se passarmos 'true' para o parâmetro freeze em ApplyAnimation.
+- Ao contrário de outras maneiras de remover o jogador de um veículo, isso também redefinirá a velocidade do veículo para zero, parando instantaneamente o carro. O jogador aparecerá no topo do veículo com a mesma localização que estava no assento do carro.
 
 :::
 

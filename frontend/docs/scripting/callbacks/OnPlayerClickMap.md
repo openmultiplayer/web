@@ -36,7 +36,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## Notes
 
-:::tip
+:::note
 
 As the callback name says, its only called when the player click to mark the target and not when pressed the key. The Z value returned will be 0 (invalid) if the clicked area on the map is far away from the player; use the [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) or [ColAndreas](https://github.com/Pottus/ColAndreas) plugin to get a more accurate Z coordinate.
 

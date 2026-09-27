@@ -27,7 +27,7 @@ SendClientMessage(playerid, -1, szString);
 
 ## บันทึก
 
-:::tip
+:::note
 
 This retrieves the zoom level of the GAME camera, not the camera WEAPON.
 

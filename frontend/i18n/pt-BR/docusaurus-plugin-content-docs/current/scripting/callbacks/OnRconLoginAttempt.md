@@ -44,7 +44,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 ## Notas
 
-:::tip
+:::note
 
 Essa callback é executada somente quando o comando /rcon login é utilizado in-game. É executada somente quando o jogador não está logado na RCON. Quando o jogador já está logado na RCON a callback OnRconCommand é executada ao invés dessa.
 

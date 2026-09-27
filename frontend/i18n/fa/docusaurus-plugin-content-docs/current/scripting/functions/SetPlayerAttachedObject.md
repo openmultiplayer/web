@@ -47,7 +47,7 @@ public OnPlayerSpawn(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 این تابع جدا از CreateObject / CreatePlayerObject pool ها هست.
 

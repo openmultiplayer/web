@@ -4,7 +4,9 @@ sidebar_label: "Voertuigkleur‑ID's"
 ---
 
 :::danger
+
 Sinds SA‑MP 0.3x zijn kleur‑ID's 128‑255 vervangen. Raadpleeg de tweede afbeelding voor actuele kleuren.
+
 :::
 
 ![image1](https://assets.open.mp/assets/images/vehicleColorIds/Carcolours_All.jpg)

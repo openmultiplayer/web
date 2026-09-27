@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 玩家时间不会与其他玩家同步！如需同步时间请使用[SetPlayerTime](SetPlayerTime)
 

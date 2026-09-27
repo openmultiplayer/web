@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Todos os parâmetros de velocidade são passados por referência e serão modificados
 

@@ -36,7 +36,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## Astuces
 
-:::tip
+:::note
 
 Cette callback ne sera pas appelée avec [AddVehicleComponent](../functions/AddVehicleComponent).
 

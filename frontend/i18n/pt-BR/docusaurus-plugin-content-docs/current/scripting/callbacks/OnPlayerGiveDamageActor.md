@@ -45,7 +45,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## Notas
 
-:::tip
+:::note
 
 Esta função não é chamada se o ator é posto como vulnerável (QUE É O PADRÃO). Veja a função [SetActorInvulnerable](../functions/SetActorInvulnerable).
 

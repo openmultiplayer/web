@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::tip
+:::warning
 
 [ShowNameTags](ShowNameTags) must be set to 'true' to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time ([OnPlayerStreamIn](../callbacks/OnPlayerStreamIn) is a good spot).
 

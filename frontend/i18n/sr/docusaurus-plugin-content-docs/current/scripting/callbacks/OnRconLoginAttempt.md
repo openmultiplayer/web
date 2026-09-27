@@ -53,7 +53,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 ## Белешке
 
-:::tip
+:::note
 
 Ова повратна функција се позива само када се користи /rcon login у игри. Ова повратна функција се позива само када играч још није пријављен. Када је играч пријављен, уместо тога се позива [OnRconCommand](OnRconCommand).
 

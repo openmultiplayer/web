@@ -33,7 +33,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Ghi Chú
 
-:::tip
+:::note
 
 - Callback này được gọi khi người chơi BẮT ĐẦU vào một phương tiện, không phải khi họ ĐÃ vào phương tiện. Xem [OnPlayerStateChange](OnPlayerStateChange).
 - Callback này vẫn được gọi nếu người chơi bị từ chối vào phương tiện (ví dụ: phương tiện bị khóa hoặc đầy).

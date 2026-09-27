@@ -38,7 +38,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## Lưu ý
 
-:::tip
+:::note
 
 Callback này KHÔNG được gọi bởi AddVehicleComponent.
 

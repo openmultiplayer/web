@@ -32,7 +32,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu geri çağırma oyuncu her virtual world değiştirdiğinde indireceği model olmasa bile çağırılır.
 

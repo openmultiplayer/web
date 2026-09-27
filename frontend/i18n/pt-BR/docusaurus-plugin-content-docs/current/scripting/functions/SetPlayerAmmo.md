@@ -29,7 +29,7 @@ SetPlayerAmmo(playerid, WEAPON_SHOTGUN, 100); // Defina munição de espingarda 
 ```
 ## Notas
 
-:::tip
+:::note
 
 O parâmetro 'weaponslot' é um erro de digitação no sa-mp include. Você deve usar a arma ID e não o slot da arma cuja munição deseja definir.
 

@@ -171,7 +171,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## Ghi Chú
 
-:::tip
+:::note
 
 Các tham số có thể chứa các giá trị khác nhau, dựa trên kiểu hộp thoại ([nhấp để xem thêm ví dụ](../resources/dialogstyles)).
 

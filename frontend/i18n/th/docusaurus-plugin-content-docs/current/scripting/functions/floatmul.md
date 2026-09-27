@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 ## บันทึก
 
-:::tip
+:::note
 
 This function is rather redundant, for it is no different than the conventional multiplication operator (\*).
 

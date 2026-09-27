@@ -29,7 +29,7 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 NPC สามารถเรียก Callback นี้ได้
 

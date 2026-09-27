@@ -40,12 +40,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - The array must be large enough to hold all NPC IDs.
 - Only valid NPCs are included in the array.
 - The function returns the actual number of NPCs found.
-- Use this to iterate through all NPCs on the server.
+
+:::
+
+:::tip
+
+Use this to iterate through all NPCs on the server.
 
 :::
 
