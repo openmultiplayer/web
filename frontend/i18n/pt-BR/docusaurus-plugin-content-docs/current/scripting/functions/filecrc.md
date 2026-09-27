@@ -40,7 +40,7 @@ else
 ```
 ## Notas
 
-:::tip
+:::note
 
 - O valor CRC é uma medida útil para verificar se o conteúdo de um arquivo foi alterado durante a transmissão ou se foi editado (desde que o valor CRC do arquivo original tenha sido salvo).
 - O valor CRC retornado por esta função é o mesmo usado nos arquivos ZIP (PKZip, WinZip) e nos utilitários e formatos de arquivo "SFV".

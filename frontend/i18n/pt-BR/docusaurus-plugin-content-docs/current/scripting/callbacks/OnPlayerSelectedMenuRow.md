@@ -47,7 +47,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## Notas
 
-:::tip
+:::note
 
 O ID do menu não é passado através da callback, portanto, GetPlayerMenu deve ser utilizado para determinar em qual menu o jogador selecionou o item.
 

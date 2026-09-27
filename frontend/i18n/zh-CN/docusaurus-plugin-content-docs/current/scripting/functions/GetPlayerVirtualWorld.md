@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 虚拟世界与室内空间（Interior）是两个独立的概念
 

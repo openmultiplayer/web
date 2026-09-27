@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 ## Notas
 
-:::tip
+:::note
 
 O jogo às vezes deduz $100 dos jogadores após o spawn.
 

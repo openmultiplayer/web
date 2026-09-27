@@ -42,7 +42,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 ```
 ## Notas
 
-:::tip
+:::note
 
 Se o comprimento da string for zero (valor não definido), o texto `output` não será atualizado ou definido como nada e permanecerá com os dados antigos, sendo necessário limpar a variável para o valor em branco se [GetPVarString](GetPVarString) retornar 0 se esse comportamento for indesejado.
 

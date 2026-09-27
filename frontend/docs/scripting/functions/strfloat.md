@@ -33,7 +33,7 @@ SetPlayerPos(playerid, 0.0, 0.0, value);
 
 ## Notes
 
-:::tip
+:::note
 
 This function is the same as [floatstr](floatstr).
 

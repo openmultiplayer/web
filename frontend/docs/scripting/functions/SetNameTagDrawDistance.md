@@ -25,7 +25,7 @@ SetNameTagDrawDistance(20.0);
 
 ## Notes
 
-:::tip
+:::note
 
 Default distance is 70.0 SA units
 

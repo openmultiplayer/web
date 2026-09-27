@@ -27,7 +27,7 @@ SendClientMessage(playerid, -1, string);
 ```
 ## Notas
 
-:::tip
+:::note
 
 Isso recupera o nível de zoom da câmera GAME (incluindo o escopo Sniper), não da câmera WEAPON.
 

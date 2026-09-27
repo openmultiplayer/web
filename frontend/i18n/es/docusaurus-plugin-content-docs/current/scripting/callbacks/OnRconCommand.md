@@ -43,7 +43,7 @@ public OnRconCommand(cmd[])
 
 ## Notas
 
-:::tip
+:::note
 
 "/rcon " no está incluido en "cmd" cuando un jugador esribe un comando. Si usas la función "print" acá, esta enviará un mensaje al jugador que escribió el comando en el juego así como en el log de la consola. Este callback no se llama cuando el jugador no está logeado como un admin RCON. Cuando el jugador no está logeado como RCON y usa /rcon login, este callback no va a ser llamado y OnRconLoginAttempt es llamado en su lugar. Sin embargo, cuando el jugador está logeado como RCON, el uso de este comando llamará este callback.
 

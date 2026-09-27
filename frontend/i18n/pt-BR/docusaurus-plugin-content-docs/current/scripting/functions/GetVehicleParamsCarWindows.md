@@ -26,7 +26,7 @@ O estado das janelas do veículo é armazenado nas variáveis especificadas.
 
 ## Notas
 
-:::tip
+:::note
 
 Os valores retornados em cada variável são os seguintes:
 

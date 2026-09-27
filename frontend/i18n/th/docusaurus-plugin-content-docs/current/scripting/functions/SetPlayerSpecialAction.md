@@ -32,7 +32,7 @@ if (strcmp(cmd, "/handsup", true) == 0)
 
 ## บันทึก
 
-:::tip
+:::warning
 
 Removing jetpacks from players by setting their special action to 0 causes the sound to stay until death.
 

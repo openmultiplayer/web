@@ -44,9 +44,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
-- Um NPC é considerado morto quando sua saúde atinge 0,0 ou menos.
+- Um NPC é considerado morto quando sua saúde atinge 0.0 ou menos.
 - Dead NPCs pode ser reaparecido usando [NPC_Respawn](NPC_Respawn).
 
 :::

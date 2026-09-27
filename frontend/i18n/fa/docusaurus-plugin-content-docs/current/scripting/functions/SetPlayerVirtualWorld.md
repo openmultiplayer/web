@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 دنیای مجازی پیش‌فرض ۰ است.
 

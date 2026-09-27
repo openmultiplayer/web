@@ -48,11 +48,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Todos os parâmetros de rotação são passados por referência e serão modificados.
 - X = inclinação (para cima/para baixo), Y = guinada (esquerda/direita), Z = rotação (inclinação).
-- Para direção de faceamento simples, use [NPC_GetFacingAngle](NPC_GetFacingAngle).
+
+:::
+
+:::tip
+
+Para direção de faceamento simples, use [NPC_GetFacingAngle](NPC_GetFacingAngle).
 
 :::
 

@@ -29,7 +29,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## Notas
 
-:::tip
+:::note
 
 Este callback también puede llamarse por NPC.
 

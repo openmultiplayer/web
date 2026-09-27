@@ -51,12 +51,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 旋转值以度为单位（0-360）。
 - Z 轴旋转影响面向方向（与 [NPC_SetFacingAngle](NPC_SetFacingAngle) 相同）。
 - X 和 Y 旋转可以创建倾斜或倒立的 NPC。
-- 使用 [NPC_GetRot](NPC_GetRot) 检索当前旋转值。
+
+:::
+
+:::tip
+
+使用 [NPC_GetRot](NPC_GetRot) 检索当前旋转值。
 
 :::
 

@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 - اگه از marker type نامعتبری استفاده کنی، ID 1 (مربع سفید ![](https://assets.open.mp/assets/images/mapIcons/icon1.gif)) رو می‌سازه.
 - اگه از icon ID ای استفاده کنی که قبلاً در حال استفاده هست، map icon فعلی که از اون ID استفاده می‌کنه رو جایگزین می‌کنه.

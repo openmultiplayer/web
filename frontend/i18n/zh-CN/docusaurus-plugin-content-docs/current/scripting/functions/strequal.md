@@ -43,7 +43,7 @@ else
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数是基于[strcmp](strcmp)的便捷封装函数。
 

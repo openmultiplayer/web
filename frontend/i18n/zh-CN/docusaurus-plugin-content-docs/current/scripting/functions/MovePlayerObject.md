@@ -41,7 +41,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 当使用旋转参数时，物体必须发生位移（X/Y/Z 坐标变化）。系统将在物体开始移动至停止期间自动插值计算旋转角度
 

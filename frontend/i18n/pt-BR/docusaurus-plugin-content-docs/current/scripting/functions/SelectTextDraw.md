@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 É o TEXT que será destacado quando você passar o mouse sobre ele, não a caixa (se houver).
 

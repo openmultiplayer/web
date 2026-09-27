@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 player-textdraw فقط برای بازیکنی که براش ساخته شده معتبر هست. یعنی نمی‌تونی یک player-textdraw که برای یک بازیکن خاص ساخته شده رو به بازیکن دیگه ای نمایش بدی.
 

@@ -39,7 +39,7 @@ GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, object
 
 ## 注意事项
 
-:::tip
+:::note
 
 若参数未被预先设置（即未使用 SetVehicleParamsEx 进行设置），返回值将为-1（'未设置'状态）
 

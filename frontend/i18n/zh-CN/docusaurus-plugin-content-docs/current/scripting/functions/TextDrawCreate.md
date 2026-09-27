@@ -45,12 +45,17 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 - `x, y`坐标基于 640x480 虚拟画布定位（与屏幕分辨率无关），表示文本区域左上角坐标
 - 若使用[TextDrawAlignment](TextDrawAlignment)设置右对齐（`TEXT_DRAW_ALIGN_RIGHT`），`x, y`将作为文本区域的右上角坐标
 - 此函数仅创建文本绘图，需调用[TextDrawShowForPlayer](TextDrawShowForPlayer)或[TextDrawShowForAll](TextDrawShowForAll)方可显示
-- 建议使用整数值而非小数坐标，以确保不同分辨率下的显示兼容性
+
+:::
+
+:::tip
+
+建议使用整数值而非小数坐标，以确保不同分辨率下的显示兼容性
 
 :::
 

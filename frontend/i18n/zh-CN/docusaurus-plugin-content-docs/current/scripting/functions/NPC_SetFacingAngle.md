@@ -49,11 +49,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 角度以度为单位测量（0-360）。
-- 使用 [NPC_GetFacingAngle](NPC_GetFacingAngle) 获取当前朝向角度。
 - 立即旋转 NPC，没有动画。
+
+:::
+
+:::tip
+
+使用 [NPC_GetFacingAngle](NPC_GetFacingAngle) 获取当前朝向角度。
 
 :::
 

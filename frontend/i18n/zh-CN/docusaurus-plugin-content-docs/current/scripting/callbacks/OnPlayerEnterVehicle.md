@@ -33,7 +33,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 此回调在玩家开始进入车辆时触发，而非完全进入后触发。详见 [OnPlayerStateChange](OnPlayerStateChange)
 - 即使玩家被拒绝进入车辆（例如车辆已上锁或满员），此回调仍会被触发（但仅限作为乘客的情况）

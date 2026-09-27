@@ -39,7 +39,7 @@ public OnPlayerConnect( playerid )
 
 ## บันทึก
 
-:::tip
+:::note
 
 If you use an invalid marker type, it will create ID 1 (White Square). If you use an icon ID that is already in use, it will replace the current map icon using that ID.
 

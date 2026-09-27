@@ -40,7 +40,7 @@ drawDistance = GetPlayer3DTextLabelDrawDist(playerid, playerTextId);
 
 ## نکات
 
-:::tip
+:::note
 
 این تابع فقط نام کوتاه [GetPlayer3DTextLabelDrawDistance](GetPlayer3DTextLabelDrawDistance) است.
 

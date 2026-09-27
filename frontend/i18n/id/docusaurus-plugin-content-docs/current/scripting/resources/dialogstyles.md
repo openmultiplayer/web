@@ -171,7 +171,7 @@ playerid = 0, dialogid = ID_DIALOG_KAMU, response = 0, listitem = -1, inputtext 
 
 ## Gaya 4: `DIALOG_STYLE_TABLIST`
 
-:::tip
+:::warning
 
 Gaya ini telah ditambahkan di **SA-MP 0.3.7** and tidak akan bekerja di versi sebelumnya!
 
@@ -219,7 +219,7 @@ playerid = 0, dialogid = ID_DIALOG_KAMU, response = 0, listitem = 1, inputtext =
 
 ## Gaya 5: `DIALOG_STYLE_TABLIST_HEADERS`
 
-:::tip
+:::warning
 
 Gaya ini telah ditambahkan di **SA-MP 0.3.7** and tidak akan bekerja di versi sebelumnya!
 

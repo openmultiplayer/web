@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 坐标含义根据对齐方式变化：
 

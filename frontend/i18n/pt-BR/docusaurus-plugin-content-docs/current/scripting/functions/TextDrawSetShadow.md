@@ -35,7 +35,7 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
 A sombra pode ser cortada pela área da caixa se o tamanho for muito grande para a área.
 

@@ -43,7 +43,7 @@ SetActorFacingAngle(MyActor, 180.0);
 
 ## บันทึก
 
-:::tip
+:::note
 
 When creating an actor with CreateActor, you specify it's facing angle. You do not need to use this function unless you want to change its facing angle later.
 

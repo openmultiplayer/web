@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::tip
+:::note
 
 There is a limit as to how many explosions can be seen at once by a player. This is roughly 10.
 

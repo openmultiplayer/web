@@ -51,11 +51,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 说明
 
-:::warning
+:::note
 
 - 所有坐标参数均通过引用传递，其值将被修改。
 - 此函数返回的是 NPC 正在移动前往的目标位置，而非当前位置。
-- 在调用此函数前，建议使用 [NPC_IsMoving](NPC_IsMoving) 来检查 NPC 当前是否正在移动。
+
+:::
+
+:::tip
+
+在调用此函数前，建议使用 [NPC_IsMoving](NPC_IsMoving) 来检查 NPC 当前是否正在移动。
 
 :::
 

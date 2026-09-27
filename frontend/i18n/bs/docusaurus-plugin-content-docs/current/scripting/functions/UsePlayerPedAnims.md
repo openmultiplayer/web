@@ -21,11 +21,10 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
-Radi samo kada se postavi pod [OnGameModeInit](../callbacks/OnGameModeInit).
-
-Neupotreba ove funkcije dovodi do toga da se dvoručno oružje (ne dvostruko - jedno oružje koje drže obje ruke) drži u samo jednoj ruci.
+- Radi samo kada se postavi pod [OnGameModeInit](../callbacks/OnGameModeInit).
+- Neupotreba ove funkcije dovodi do toga da se dvoručno oružje (ne dvostruko - jedno oružje koje drže obje ruke) drži u samo jednoj ruci.
 
 :::
 

@@ -5,7 +5,9 @@ description: Constants voor GetVehicleModelInfo.
 ---
 
 :::info
+
 Gebruikt door [GetVehicleModelInfo](../functions/GetVehicleModelInfo). Zie Engelse pagina: [Vehicle Information Types](/docs/scripting/resources/vehicleinformationtypes).
+
 :::
 
 | Type                              | Beschrijving                   |

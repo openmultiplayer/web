@@ -34,7 +34,7 @@ public OnPlayerRequestClass(playerid,classid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon, bir oyuncu F4'e bastığında da çağrılır.
 

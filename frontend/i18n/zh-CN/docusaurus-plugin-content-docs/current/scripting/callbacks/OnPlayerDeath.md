@@ -49,7 +49,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## 注意
 
-:::tip
+:::note
 
 特殊原因ID说明：
 

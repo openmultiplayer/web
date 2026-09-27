@@ -54,7 +54,7 @@ public OnGameModeInit()
 
 :::
 
-:::tip
+:::note
 
 This function merely CREATES the gangzone, you must use [GangZoneShowForPlayer](GangZoneShowForPlayer) or [GangZoneShowForAll](GangZoneShowForAll) to show it.
 

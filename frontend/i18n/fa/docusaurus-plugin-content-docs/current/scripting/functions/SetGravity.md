@@ -31,7 +31,7 @@ public OnGameModeInit()
 
 ## نکات
 
-:::warning
+:::note
 
 جاذبه پیش‌فرض 0.008 هست.
 

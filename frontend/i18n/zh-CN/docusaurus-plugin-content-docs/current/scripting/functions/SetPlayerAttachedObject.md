@@ -47,7 +47,7 @@ public OnPlayerSpawn(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数与 CreateObject/CreatePlayerObject 物体池相互独立
 

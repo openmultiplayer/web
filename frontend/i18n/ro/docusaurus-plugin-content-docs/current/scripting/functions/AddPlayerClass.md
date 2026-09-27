@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 ## Notite
 
-:::tip
+:::note
 
 ID-ul maxim de clasă este 319 (începând de la 0, deci un total de 320 de clase). Când se atinge această limită, orice alte clase adăugate vor înlocui ID 319.
 

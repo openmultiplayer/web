@@ -34,7 +34,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bazı araçlar tek renge sahiptir bu yüzden ikincil rengi olmadığı için değiştirilmez. Bazı araçlar ise (örn: cement, squallo) 4 renge sahiptir, bu 4 rengin ikisi değiştirilirken SA:MP desteklemediği için diğer ikisi değiştirilemez.
 

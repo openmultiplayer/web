@@ -4,9 +4,11 @@ sidebar_label: "Keys"
 ---
 
 :::note
+
 Hier vind je informatie over key input-constants gebruikt door [GetPlayerKeys](../functions/GetPlayerKeys) en [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange).
 
 SA-MP gebruikt bitmasking om te bepalen welke toetsen ingedrukt zijn. Zie: `http://en.wikipedia.org/wiki/Mask_(computing)`
+
 :::
 
 ---

@@ -47,7 +47,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## 注意事项
 
-:::tip
+:::note
 
 若演员设置为无敌状态（默认状态），此回调不会被触发。详见[SetActorInvulnerable](../functions/SetActorInvulnerable)。
 

@@ -12,7 +12,9 @@ tags: ["actor"]
 Questo callback viene chiamato quando un attore entra nel raggio di stream (diventa visibile) da parte del client di un giocatore.
 
 :::warning
+
 Questo callback è stato aggiunto in SA-MP 0.3.7 e **non funzionerà** nelle versioni precedenti!
+
 :::
 
 | Nome          | Descrizione                                                                                    |
@@ -38,7 +40,11 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Note
 
-:::tip Questo callback può essere chiamato anche per NPC (bot). :::
+:::note
+
+Questo callback può essere chiamato anche per NPC (bot).
+
+:::
 
 ## Callback Correlati
 

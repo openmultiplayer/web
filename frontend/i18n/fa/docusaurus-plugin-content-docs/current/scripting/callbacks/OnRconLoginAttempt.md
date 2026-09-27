@@ -53,7 +53,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 این کالبک فقط زمانی فراخوانده می‌شود که /rcon login در بازی استفاده شود. این کالبک فقط زمانی فراخوانده می‌شود که بازیکن هنوز وارد نشده باشد. وقتی بازیکن وارد شود، در عوض [OnRconCommand](OnRconCommand) فراخوانده می‌شود.
 

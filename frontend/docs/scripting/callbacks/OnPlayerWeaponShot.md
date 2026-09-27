@@ -41,7 +41,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## Notes
 
-:::tip
+:::note
 
 This callback is only called when lag compensation is enabled. If hittype is:
 
@@ -54,29 +54,16 @@ This callback is only called when lag compensation is enabled. If hittype is:
 
 [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) can be used in this callback for more detailed bullet vector information.
 
+:::
+
 # Known bugs and issues
 
 :::warning
 
-This callback isn't called when firing from a vehicle as the driver or when shooting while looking backward with the aim enabled (shooting into the air).
-
-:::
-
-:::warning
-
-When shooting a player inside a vehicle, this callback will be triggered as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid). It won't be triggered as BULLET_HIT_TYPE_PLAYER.
-
-:::
-
-:::warning
-
-Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious client, other players' clients may freeze or crash. To prevent this, check if the reported weaponid can, in fact, fire projectiles.
-
-:::
-
-:::warning
-
-This callback is not called when driving-by as a driver, firing the turret of a Seasparrow, Hunter, or any other armed vehicle.
+- This callback isn't called when firing from a vehicle as the driver or when shooting while looking backward with the aim enabled (shooting into the air).
+- When shooting a player inside a vehicle, this callback will be triggered as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid). It won't be triggered as BULLET_HIT_TYPE_PLAYER.
+- Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious client, other players' clients may freeze or crash. To prevent this, check if the reported weaponid can, in fact, fire projectiles.
+- This callback is not called when driving-by as a driver, firing the turret of a Seasparrow, Hunter, or any other armed vehicle.
 
 :::
 

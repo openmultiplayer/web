@@ -49,11 +49,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - Angle is measured in degrees (0-360).
-- Use [NPC_GetFacingAngle](NPC_GetFacingAngle) to get current facing angle.
 - Instantly rotates NPC without animation.
+
+:::
+
+:::tip
+
+Use [NPC_GetFacingAngle](NPC_GetFacingAngle) to get current facing angle.
 
 :::
 

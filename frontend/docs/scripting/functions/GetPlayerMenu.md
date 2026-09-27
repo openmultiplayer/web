@@ -27,7 +27,7 @@ new Menu:currentMenu = GetPlayerMenu(playerid); // Store the player's current me
 
 ## Notes
 
-:::tip
+:::note
 
 Returns previous menu when none is displayed.
 

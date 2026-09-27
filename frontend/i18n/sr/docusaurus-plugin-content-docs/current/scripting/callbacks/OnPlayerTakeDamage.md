@@ -66,7 +66,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## Белешке
 
-:::tip
+:::note
 
 - weaponid ће враћати 37 (бацач пламена) за све изворе ватре (нпр. молотов, 18).
 - weaponid ће враћати 51 за било које оружје које прави експлозију (нпр. RPG, граната).

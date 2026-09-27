@@ -33,7 +33,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback je pozvana kada igrač KRENE da uđe u vozilo, ne kada su UŠLI u njega. Pogledaj `OnPlayerStateChange`. Ovaj callback se poziva i kada je igraču odbijen mogućnost ulaska u vozilo (npr. Vozilo je zaključano ili puno).
 

@@ -5,7 +5,9 @@ description: Definities voor fseek.
 ---
 
 :::note
+
 Gebruikt door [fseek](../functions/fseek).
+
 :::
 
 | Definitie    | Omschrijving                                                                           |

@@ -4,7 +4,9 @@ sidebar_label: "PVar‑typen"
 ---
 
 :::info
+
 Typen speler‑variabelen (pvars) gebruikt in het [per‑speler variabelensysteem](../../tutorials/perplayervariablesystem).
+
 :::
 
 | ID  | Definitie             |

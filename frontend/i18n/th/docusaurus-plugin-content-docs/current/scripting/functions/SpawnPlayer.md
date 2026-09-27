@@ -31,9 +31,9 @@ if (strcmp(cmdtext, "/spawn", true) == 0)
 
 ## บันทึก
 
-:::tip
+:::warning
 
-Kills the player if they are in a vehicle and then they spawn with a bottle in their hand.
+Kills the player if they are in a vehicle and then they spawn with a bottle in their hand. (Fixed in open.mp)
 
 :::
 

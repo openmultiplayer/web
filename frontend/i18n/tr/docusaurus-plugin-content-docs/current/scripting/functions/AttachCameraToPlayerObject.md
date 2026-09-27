@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notlar
 
-:::tip
+:::note
 
 Oyuncunun kamerasını objeye bağlamadan önce oyuncu objesi oluşturulmalıdır.
 

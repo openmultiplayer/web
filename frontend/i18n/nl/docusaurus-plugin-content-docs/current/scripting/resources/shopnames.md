@@ -4,7 +4,9 @@ sidebar_label: "Winkelnamen"
 ---
 
 :::note
+
 Sommige interiors laden scripts op basis van shopnaam. [SetPlayerShopName](../functions/SetPlayerShopName) accepteert een geldige naam (of lege string om te ontladen). Zie de Engelstalige tabel voor alle namen; hieronder enkele voorbeelden.
+
 :::
 
 | Shopnaam | GXT‑naam      | Omschrijving                     | Coördinaten                 |

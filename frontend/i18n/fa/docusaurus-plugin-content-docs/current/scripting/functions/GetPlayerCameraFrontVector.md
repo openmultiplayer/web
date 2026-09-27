@@ -58,7 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 داده‌های دوربین زمانی که بازیکن در هر وسیله‌ای یا پیاده باشد قابل دریافت هستند.
 

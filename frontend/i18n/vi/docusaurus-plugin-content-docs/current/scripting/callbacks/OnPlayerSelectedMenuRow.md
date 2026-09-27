@@ -53,7 +53,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## Ghi chú
 
-:::tip
+:::note
 
 ID của menu không được truyền vào callback này. [GetPlayerMenu](../functions/GetPlayerMenu) phải được sử dụng để xác định menu nào người chơi đã chọn một mục.
 

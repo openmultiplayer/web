@@ -53,7 +53,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 شناسه منو به این کالبک منتقل نمی‌شود. باید از [GetPlayerMenu](../functions/GetPlayerMenu) استفاده کرد تا تعیین شود بازیکن از کدام منو آیتم انتخاب کرده است.
 

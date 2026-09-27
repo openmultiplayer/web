@@ -38,7 +38,7 @@ if (!strcmp(cmdtext, "/disableguns", true))
 
 ## Zabilješke
 
-:::tip
+:::warning
 
 Ruši se kada se proslijedi nevažeći ID meni-a.
 

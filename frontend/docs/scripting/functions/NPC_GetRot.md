@@ -48,11 +48,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - All rotation parameters are passed by reference and will be modified.
 - X = pitch (up/down), Y = yaw (left/right), Z = roll (banking).
-- For simple facing direction, use [NPC_GetFacingAngle](NPC_GetFacingAngle) instead.
+
+:::
+
+:::tip
+
+For simple facing direction, use [NPC_GetFacingAngle](NPC_GetFacingAngle) instead.
 
 :::
 

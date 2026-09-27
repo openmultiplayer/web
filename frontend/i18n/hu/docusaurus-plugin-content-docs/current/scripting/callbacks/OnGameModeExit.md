@@ -27,7 +27,7 @@ Ezt a funckiót filterszkriptben arra is lehet használni, hogy érzékelje a `c
 
 :::
 
-:::figyelmeztetés
+:::warning
 
 Ha az OnGameModeExit parancsot az 'rcon gmx' konzolparanccsal együtt van használva, ne feledd, hogy előfordulhatnak hibák.
 

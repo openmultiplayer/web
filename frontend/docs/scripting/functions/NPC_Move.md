@@ -53,12 +53,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - The NPC will pathfind to the target position.
 - Movement types affect animation and speed.
 - Stop range determines how close the NPC gets before stopping.
-- Use [NPC_IsMoving](NPC_IsMoving) to check if the NPC is currently moving
+
+:::
+
+:::tip
+
+Use [NPC_IsMoving](NPC_IsMoving) to check if the NPC is currently moving
 
 :::
 

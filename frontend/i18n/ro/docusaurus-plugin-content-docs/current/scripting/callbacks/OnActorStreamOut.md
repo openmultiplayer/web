@@ -38,7 +38,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Note
 
-:::tip
+:::note
 
 Acest callback poate fi apelat și de NPC.
 

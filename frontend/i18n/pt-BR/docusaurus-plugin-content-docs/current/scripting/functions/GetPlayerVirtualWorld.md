@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 Os mundos virtuais não são iguais aos interiores.
 

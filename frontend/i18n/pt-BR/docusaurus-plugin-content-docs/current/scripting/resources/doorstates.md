@@ -6,13 +6,8 @@ description: Informações sobre o tamanho de byte e seus bits de estado de port
 
 :::note
 
-Os estados de porta são usados por funções nativas como [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) e [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
-
-:::
-
-:::note
-
-Os estados das 2 portas traseiras não podem ser manipulados por [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) e [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+- Os estados de porta são usados por funções nativas como [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) e [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+- Os estados das 2 portas traseiras não podem ser manipulados por [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) e [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
 
 :::
 

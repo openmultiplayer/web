@@ -5,7 +5,9 @@ description: Waarden voor voertuig health.
 ---
 
 :::info
+
 De waarde (0–1000) voor [SetVehicleHealth](../functions/SetVehicleHealth)/[GetVehicleHealth](../functions/GetVehicleHealth). 0 explodeert; 1000 is onbeschadigd.
+
 :::
 
 | Health  | Effect op motor                                   |

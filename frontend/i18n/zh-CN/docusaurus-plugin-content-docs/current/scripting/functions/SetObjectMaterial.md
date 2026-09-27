@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 若修改材质颜色，物体的顶点光照效果将消失
 

@@ -33,7 +33,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## Notes
 
-:::tip
+:::note
 
 Cette callback n'est appelée que quand le joueur place un point sur la carte, pas nécessairement quand il a fait un clic droit.
 

@@ -32,7 +32,7 @@ if (strcmp(cmd, "/handsup", true) == 0)
 
 ## Notes
 
-:::tip
+:::warning
 
 Ang pag-alis ng mga jetpack mula sa mga player sa pamamagitan ng pagtatakda ng kanilang special action sa 0 ay nagiging sanhi ng tunog na mananatili hanggang kamatayan.
 

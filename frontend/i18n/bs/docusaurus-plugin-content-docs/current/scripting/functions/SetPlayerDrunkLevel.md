@@ -33,7 +33,7 @@ if (strcmp(cmdtext, "/drunk", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Pijani nivo igrača automatski će se smanjiti s vremenom, na osnovu njihovog FPS-a (igrači sa 50 FPS-a izgubit će 50 'nivoa' u sekundi. Ovo je korisno za određivanje FPS-a igrača!). U 0.3a nivo pijanca će se smanjiti i zaustaviti na 2000. U 0.3b + nivo pijanca se smanjuje na nulu.) Nivoi preko 2000 čine igrača pijanim (njihanje kamere i vozila teško kontrolirati). Maksimalni nivo pijanosti je 50000. Dok je nivo pijanosti iznad 5000, HUD igrača (radar itd.) će biti sakriven.
 

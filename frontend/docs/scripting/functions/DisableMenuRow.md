@@ -20,8 +20,6 @@ This function always returns **1**, even if the function fails.
 
 If an invalid row is specified, nothing will happen.
 
-If an invalid menu ID is specified, the server will crash.
-
 ## Examples
 
 ```c
@@ -50,9 +48,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::tip
+:::warning
 
-- Crashes when passed an invalid menu ID.
+Crashes when passed an invalid menu ID. (Fixed in open.mp)
+
+:::
+
+:::note
+
 - This function disabled the specified menu row for all players.
 - There is no function to disable a menu row for a specific player.
 - You'd have to create two menus - one with a row disabled, and one without. Or one per player.

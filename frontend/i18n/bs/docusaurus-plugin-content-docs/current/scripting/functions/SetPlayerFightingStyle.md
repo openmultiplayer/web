@@ -31,7 +31,7 @@ if (strcmp(cmdtext, "/boxing", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 To ne utječe na normalne napade šake - samo na specijalne/sekundarne napade (aim + klikni 'secondary attack' dugme).
 

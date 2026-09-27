@@ -36,7 +36,7 @@ public OnPlayerSpawn(playerid)
 
 ## Notas
 
-:::tip
+:::note
 
 El juego algunas veces le saca \$100 a los jugadores después de spawnear.
 

@@ -36,16 +36,10 @@ public OnGameModeInit()
 
 :::tip
 
-Ao usar esta função apenas para afetar a caixa TextDraw, multiplique 'Y' por 0,135 para converter para medições semelhantes a TextDrawTextSize.
-
-Dica: é mais fácil e extremamente preciso usar o sprite **LD_SPAC:white** para desenhos de texto somente em caixa, TextDrawTextSize terá deslocamentos regulares.
-
-:::
-
-:::tip
-
+- Ao usar esta função apenas para afetar a caixa TextDraw, multiplique 'Y' por 0.135 para converter para medições semelhantes a TextDrawTextSize.
+- Dica: é mais fácil e extremamente preciso usar o sprite **LD_SPAC:white** para desenhos de texto somente em caixa, TextDrawTextSize terá deslocamentos regulares.
 - Se quiser alterar o tamanho da letra de um textdraw que já está mostrado, não é necessário recriá-lo. Basta usar [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) após modificar o textdraw e a alteração ficará visível.
-- As fontes parecem ter melhor aparência com uma proporção de X para Y de 1 para 4 (por exemplo, se x for 0,5, y deverá ser 2).
+- As fontes parecem ter melhor aparência com uma proporção de X para Y de 1 para 4 (por exemplo, se x for 0.5, y deverá ser 2).
 
 :::
 

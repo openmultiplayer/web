@@ -48,7 +48,7 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 
 ## Notas
 
-:::tip
+:::note
 
 Essa função não incluí parâmetros do dano(vida) do veículo.
 

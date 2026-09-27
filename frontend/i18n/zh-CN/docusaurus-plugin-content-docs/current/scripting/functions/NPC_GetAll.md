@@ -40,12 +40,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 数组必须足够大以容纳所有 NPC ID。
 - 只有有效的 NPC 才会包含在数组中。
 - 函数返回实际找到的 NPC 数量。
-- 使用此函数遍历服务器上的所有 NPC。
+
+:::
+
+:::tip
+
+使用此函数遍历服务器上的所有 NPC。
 
 :::
 

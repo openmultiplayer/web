@@ -34,7 +34,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Neka vozilo imaju samo primarnu boju i nekim vozilima se boje ne mogu promjeniti uopšte. Nekoliko vozila (cement, squallo) imaju 4 boje, od kojih se 2 ne mogu promjeniti u SA:MP
 

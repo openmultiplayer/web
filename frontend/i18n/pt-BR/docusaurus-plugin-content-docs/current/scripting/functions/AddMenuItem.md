@@ -34,9 +34,15 @@ public OnGameModeInit()
 
 ## Notas
 
-:::tip
+:::warning
 
-Gera um crash quando é passado um ID de menu inválido. Cada menu só pode ter até 12 itens (o 13º vai para o lado direito do cabeçalho do nome da coluna (colorido), o 14º e posteriores não são exibidos). É possível usar apenas 2 colunas (0 e 1). Cada item só pode ter até 8 códigos de cor (r, g etc.). O tamanho máximo do título do item de menu é de 31 símbolos.
+Gera um crash quando é passado um ID de menu inválido. (Corrigido em open.mp)
+
+:::
+
+:::note
+
+Cada menu só pode ter até 12 itens (o 13º vai para o lado direito do cabeçalho do nome da coluna (colorido), o 14º e posteriores não são exibidos). É possível usar apenas 2 colunas (0 e 1). Cada item só pode ter até 8 códigos de cor (`~r~`, `~g~` etc.). O tamanho máximo do título do item de menu é de 31 símbolos.
 
 :::
 

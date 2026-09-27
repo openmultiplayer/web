@@ -41,12 +41,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::tip
 
 - 在对 NPC 执行操作前始终检查其是否有效。
-- NPC 被销毁后会变为无效。
 - 这可以防止运行时错误和崩溃。
 - 在遍历潜在 NPC ID 的循环中使用此函数。
+
+:::
+
+:::note
+
+NPC 被销毁后会变为无效。
 
 :::
 

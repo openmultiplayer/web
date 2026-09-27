@@ -31,7 +31,7 @@ public OnPlayerSpawn(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 同队伍玩家之间无法造成伤害（使用割喉刀除外）
 - 同队伍玩家驾驶的车辆默认免疫友方伤害，可通过[EnableVehicleFriendlyFire](EnableVehicleFriendlyFire)启用

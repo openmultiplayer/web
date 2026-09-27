@@ -61,6 +61,7 @@ gShopMenu = CreateMenu("text", 2, 100.0, 30.0, 7.0);
 
 HideMenuForPlayer(GetPlayerMenu(playerid), playerid);
 ```
+
 :::
 
 ## Funções Relacionadas

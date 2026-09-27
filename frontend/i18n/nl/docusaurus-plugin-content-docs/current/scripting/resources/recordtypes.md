@@ -5,7 +5,9 @@ description: Typen voor StartRecordingPlayerData.
 ---
 
 :::info
+
 Gebruikt door [StartRecordingPlayerData](../functions/StartRecordingPlayerData).
+
 :::
 
 | Waarde | Definitie                    |

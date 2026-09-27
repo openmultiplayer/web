@@ -51,11 +51,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - Returns -1 if the NPC has no custom skin set or if the NPC is invalid.
 - Custom skins differ from regular skins in that they typically refer to custom models added to the game.
-- Use [NPC_GetSkin](NPC_GetSkin) to get the regular skin/model ID.
+
+:::
+
+:::tip
+
+Use [NPC_GetSkin](NPC_GetSkin) to get the regular skin/model ID.
 
 :::
 

@@ -31,7 +31,7 @@ public OnScriptLoadPlayer(playerid, bool:isEntryScript)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 این کالبک زمانی فراخوانده می‌شود که در حال **بارگذاری** یک side script (filterscript) در زمان اجرا هستید.
 

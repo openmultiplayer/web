@@ -36,7 +36,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 ## 注意
 
-:::tip
+:::note
 
 当前仅支持一个来源类型（0 - `CLICK_SOURCE_SCOREBOARD`表示记分牌点击）  
 参数设计为未来扩展更多点击来源类型预留了支持空间

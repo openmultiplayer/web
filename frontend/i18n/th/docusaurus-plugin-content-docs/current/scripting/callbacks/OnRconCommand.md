@@ -39,15 +39,16 @@ public OnRconCommand(cmd[])
 
 ## บันทึก
 
-:::tip
+:::note
 
-"/rcon " is not included in "cmd" when a player types a command. If you use the "print" function here, it will send a message to the player who typed the command in-game as well as the log. This callback is not called when the player is not logged in as RCON admin. When the player is not logged in as RCON admin and uses /rcon login, this callback will not be called and OnRconLoginAttempt is called instead. However, when the player is logged in as RCON admin, the use of this command will call this callback.
+- The /rcon prefix is not included in the cmd parameter when a player types a command. If you use the print function here, it will send a message to both the player who typed the command in-game and the server log.
+- This callback is not called if the player is not logged in as an RCON admin. When a player uses /rcon login to log in, this callback will not be called, instead, OnRconLoginAttempt is called. Once logged in as an RCON admin, any subsequent commands will trigger this callback.
 
 :::
 
 :::warning
 
-You will need to include this callback in a loaded filterscript for it to work in the gamemode!
+In SA-MP, you need to include this callback in a loaded filterscript for it to work. However, this issue was fixed in open.mp.
 
 :::
 

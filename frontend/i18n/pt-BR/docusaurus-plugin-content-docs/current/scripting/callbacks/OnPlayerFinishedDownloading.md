@@ -32,7 +32,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## Notas
 
-:::tip
+:::note
 
 Esta callback é chamada toda vez que um jogador muda de munda virtual, mesmo que não contenha modelos customizados no mesmo.
 

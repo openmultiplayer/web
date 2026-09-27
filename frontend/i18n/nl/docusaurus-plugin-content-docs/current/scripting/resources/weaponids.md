@@ -4,7 +4,9 @@ sidebar_label: "Wapen-ID's"
 ---
 
 :::info
+
 Deze pagina bevat alle in‑game wapens gebruikt door [OnPlayerDeath](../callbacks/OnPlayerDeath), [GivePlayerWeapon](../functions/GivePlayerWeapon), [SendDeathMessage](../functions/SendDeathMessage).
+
 :::
 
 ---

@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 此函数执行一次性旋转；若要使 NPC 持续朝向移动中的玩家，需重复调用。
 - 玩家必须处于连接状态，否则 NPC 将不会旋转。

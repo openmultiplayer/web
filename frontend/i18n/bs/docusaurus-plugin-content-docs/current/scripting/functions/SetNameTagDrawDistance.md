@@ -25,7 +25,7 @@ SetNameTagDrawDistance(20.0);
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Zadana distanca je 70 SA jedinica.
 

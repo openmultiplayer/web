@@ -53,7 +53,7 @@ public OnPlayerSpawn(playerid)
 
 ## 注意事项
 
-:::提示
+:::tip
 
 可通过[HideObjectForPlayer](HideObjectForPlayer)函数为指定玩家隐藏物体
 

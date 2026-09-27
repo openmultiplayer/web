@@ -44,7 +44,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 ## نکات
 
-:::tip
+:::note
 
 - 6 تا نوع درخواست هست که کلاینت پردازش می‌کنه (2, 5, 69, 70, 71, 72)
 - نوع 72 هیچ کدوم از آرگومان‌های دیگه رو استفاده نمی‌کنه [arg | offset | size].

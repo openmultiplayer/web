@@ -34,15 +34,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notlar
 
-:::tip
+:::note
 
-ApplyAnimation'da freeze parametresi için 1 olarak girilirse, animasyon bittiğinde ClearAnimations hiçbir şey yapmaz.
+- ApplyAnimation'da freeze parametresi için 1 olarak girilirse, animasyon bittiğinde ClearAnimations hiçbir şey yapmaz.
+- Oyuncuyu bir araçtan çıkarmanın diğer bazı yollarının aksine, bu aynı zamanda aracın hızını sıfırlayarak aracı anında durdurur. Oyuncu, araba koltuğu ile aynı konumda aracın üstünde görünecektir.
 
-:::
-
-:::tip
-
-Oyuncuyu bir araçtan çıkarmanın diğer bazı yollarının aksine, bu aynı zamanda aracın hızını sıfırlayarak aracı anında durdurur. Oyuncu, araba koltuğu ile aynı konumda aracın üstünde görünecektir.
 :::
 
 ## Bağlantılı Fonksiyonlar

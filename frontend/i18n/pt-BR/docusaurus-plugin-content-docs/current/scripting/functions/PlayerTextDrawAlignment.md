@@ -40,15 +40,10 @@ public OnPlayerConnect(playerid)
 ```
 ## Notas
 
-:::warning
+:::note
 
-Para o alinhamento 2 (TEXT_DRAW_ALIGN_CENTER), os valores xey de TextSize precisam ser trocados, consulte as notas em [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
-
-:::
-
-:::tip
-
-Caso o textdraw já esteja sendo mostrado para o jogador, ele deve ser mostrado novamente ([PlayerTextDrawShow](PlayerTextDrawShow)) para mostrar as alterações desta função.
+- Para o alinhamento 2 (TEXT_DRAW_ALIGN_CENTER), os valores xey de TextSize precisam ser trocados, consulte as notas em [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
+- Caso o textdraw já esteja sendo mostrado para o jogador, ele deve ser mostrado novamente ([PlayerTextDrawShow](PlayerTextDrawShow)) para mostrar as alterações desta função.
 
 :::
 

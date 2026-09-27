@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 O player-textdraw é válido apenas para o jogador para o qual foi criado. Isso significa que você não pode mostrar um player-textdraw criado para um jogador específico para outro jogador.
 

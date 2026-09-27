@@ -33,7 +33,7 @@ public OnPlayerSpawn(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 O nome da função é armadura, não armadura (americanizada). Isso é inconsistente com o restante de SA-MP, então lembre-se disso.
 

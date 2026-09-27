@@ -21,7 +21,7 @@ Este callback se llama cuando el estado de alguna tecla [soportada](../resources
 
 ## Notas
 
-:::info
+:::note
 
 Este callback también puede ser llamado por NPC.
 

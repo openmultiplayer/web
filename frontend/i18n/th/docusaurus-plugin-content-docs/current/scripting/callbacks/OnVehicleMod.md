@@ -37,7 +37,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 This callback is NOT called by AddVehicleComponent.
 

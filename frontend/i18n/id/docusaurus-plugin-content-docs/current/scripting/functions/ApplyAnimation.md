@@ -34,7 +34,7 @@ ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, 1, 1, 1, 1, 1, 1);
 
 ## Catatan
 
-:::tip
+:::note
 
 parameter opsional 'forcesync' bawaannya adalah 0, dalam banyak kasus tidak diperlukan karena pemain menyinkronkan animasi itu sendiri. Parameter 'forcesync' dapat memaksa semua pemain yang dapat melihat 'playerid' untuk memutar animasi terlepas dari apakah pemain melakukan animasi itu atau tidak. Ini berguna dalam keadaan di mana pemain tidak dapat menyinkronkan animasi itu sendiri. Misalnya, mereka mungkin dijeda.
 

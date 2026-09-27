@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意
 
-:::warning
+:::note
 
 在[OnPlayerConnect](../callbacks/OnPlayerConnect)回调中使用此函数无效。
 

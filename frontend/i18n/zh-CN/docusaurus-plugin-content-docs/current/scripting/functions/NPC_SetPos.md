@@ -50,11 +50,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 此函数瞬间传送 NPC，没有动画
 - 设置位置时会停止任何当前的移动
-- 如果希望 NPC 走向某个位置，请使用 `NPC_Move`
+
+:::
+
+:::tip
+
+如果希望 NPC 走向某个位置，请使用 `NPC_Move`
 
 :::
 

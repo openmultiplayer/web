@@ -36,7 +36,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 ## Notas
 
-:::tip
+:::note
 
 Este callback no se llama por ChangeVehiclePaintJob. Puede usar OnVehicleChangePaintjob desde Vsync para saber cuándo el jugador compra el trabajo de pintura.
 

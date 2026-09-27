@@ -30,7 +30,7 @@ public OnGameModeInit()
 
 ## نکات
 
-:::tip
+:::note
 
 NPCها nametag ندارند. این‌ها را می‌توان با [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer) اسکریپت کرد.
 

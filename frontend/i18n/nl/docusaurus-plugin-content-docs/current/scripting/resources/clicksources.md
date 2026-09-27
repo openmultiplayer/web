@@ -5,7 +5,9 @@ description: Bronnen van kliks in OnPlayerClickPlayer.
 ---
 
 :::info
+
 Klikbronnen gebruikt door [OnPlayerClickPlayer](../callbacks/OnPlayerClickPlayer). Momenteel bestaat er één type.
+
 :::
 
 | Waarde | Constant                |

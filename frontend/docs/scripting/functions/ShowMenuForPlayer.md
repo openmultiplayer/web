@@ -44,9 +44,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::tip
+:::warning
 
-Crashes the both server and player if an invalid menu ID given.
+Crashes the both server and player if an invalid menu ID given. (Fixed in open.mp)
 
 :::
 

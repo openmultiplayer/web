@@ -36,7 +36,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## Catatan
 
-:::tip
+:::note
 
 Nilai Z akan berubah menjadi 0 (invalid) jika sangat jauh dari pemain, gunakan MapAndreas plugin untuk mendapatkan koordinat Z yang akurat.
 

@@ -43,15 +43,17 @@ public OnGameModeInit()
 
 ## บันทึก
 
-:::tip
+:::note
 
-Actors are designed to just stand somewhere, for example cashiers and bartenders. They can perform animations (once or looping) using ApplyActorAnimation.
+- Actors are designed to just stand somewhere, for example cashiers and bartenders. They can perform animations (once or looping) using ApplyActorAnimation.
+- As of 0.3.7 R2 actors default to being invulnerable.
 
 :::
 
 :::warning
 
-Actors are completely separate from NPCs. They do NOT use player IDs/slots on the server and CANNOT be handled like NPCs. Actors are limited to 1000 (MAX_ACTORS). Actors can be pushed by vehicles, use a timer to put them back at their positions. As of 0.3.7 R2 actors default to being invulnerable.
+- Actors are completely separate from NPCs. They do NOT use player IDs/slots on the server and CANNOT be handled like NPCs. Actors are limited to 1000 (MAX_ACTORS).
+- Actors can be pushed by vehicles, use a timer to put them back at their positions.
 
 :::
 

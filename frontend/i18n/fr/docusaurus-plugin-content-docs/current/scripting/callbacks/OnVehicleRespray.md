@@ -34,7 +34,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 ## Astuces
 
-:::tip
+:::note
 
 Étrangement, cette callback n'est pas appelée dans les pay'N'spray (uniquement les garages de modification).
 

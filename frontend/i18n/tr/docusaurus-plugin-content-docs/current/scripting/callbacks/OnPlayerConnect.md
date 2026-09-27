@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu geri çağırma NPC tarafından da çağrılabilir.
 

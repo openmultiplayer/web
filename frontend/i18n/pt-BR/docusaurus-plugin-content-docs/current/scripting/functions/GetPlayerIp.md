@@ -36,17 +36,11 @@ public OnPlayerConnect(playerid)
 
 ## Notas
 
-:::tip
+:::note
 
-PAWN é case-sensitive (sensível a maiúsculas e minúsculas). GetPlayerIP não irá funcionar.
-
-:::
-
-:::warning
-
-**SA-MP server**: Esta função não funciona quando usada em [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) porque o jogador já está desconectado. Irá retornar um IP inválido (255.255.255.255). Salve os IPs dos jogador em [OnPlayerConnect](../callbacks/OnPlayerConnect) se eles precisarem ser usados no [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).
-
-**open.mp server**: This function **work** when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).
+- PAWN é case-sensitive (sensível a maiúsculas e minúsculas). GetPlayerIP não irá funcionar.
+- **SA-MP server**: Esta função não funciona quando usada em [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) porque o jogador já está desconectado. Irá retornar um IP inválido (255.255.255.255). Salve os IPs dos jogador em [OnPlayerConnect](../callbacks/OnPlayerConnect) se eles precisarem ser usados no [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).
+- **open.mp server**: This function **work** when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).
 
 :::
 

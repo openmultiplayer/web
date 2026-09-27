@@ -32,7 +32,7 @@ if (strcmp(cmdtext, "/world3", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Zadani virtualni svijet je 0.
 

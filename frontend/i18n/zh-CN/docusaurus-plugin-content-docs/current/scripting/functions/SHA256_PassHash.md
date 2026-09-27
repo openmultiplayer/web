@@ -42,7 +42,7 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 生成的哈希值可能存在前导零填充（例如可能以 00ABCD123...开头）
 

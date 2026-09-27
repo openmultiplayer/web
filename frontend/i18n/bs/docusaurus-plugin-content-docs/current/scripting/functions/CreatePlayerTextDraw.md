@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Player-textdraws se automatski unište kada se igrač diskonektuje.
 

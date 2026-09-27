@@ -42,7 +42,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ako je dužina niza jednaka nuli (vrijednost nije postavljena), tekst string_return neće se ažurirati ili postaviti na bilo što i ostat će sa starim podacima, nužno obrisati varijablu na praznu vrijednost ako GetPVarString vrati 0 ako to ponašanje nije poželjno.
 

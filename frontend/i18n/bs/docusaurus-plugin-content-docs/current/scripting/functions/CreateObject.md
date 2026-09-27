@@ -33,7 +33,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Postoji limit od 1000 objekata (MAX_OBJECTS). Da biste zaobišli ovo ograničenje, možete upotrijebiti streamer.
 

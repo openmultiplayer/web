@@ -29,7 +29,7 @@ SetPlayerAmmo(playerid, WEAPON_SHOTGUN, 100); // Postavi streljivo za Shotgun na
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Parametar 'weaponslot' je greška u kucanju u sa-mp include-u. Morate koristiti ID oružja, a ne otvor za oružje za koji želite postaviti streljivo.
 

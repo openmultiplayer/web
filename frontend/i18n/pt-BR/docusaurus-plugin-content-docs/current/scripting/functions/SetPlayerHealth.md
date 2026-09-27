@@ -43,16 +43,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
-- Se a saúde de um jogador estiver definida como 0,0 ou um valor negativo, ele morrerá instantaneamente.
-- Se a saúde de um jogador estiver abaixo de 10,0 ou acima de 98303,0, sua barra de saúde piscará.
+- Se a saúde de um jogador estiver definida como 0.0 ou um valor negativo, ele morrerá instantaneamente.
+- Se a saúde de um jogador estiver abaixo de 10.0 ou acima de 98303.0, sua barra de saúde piscará.
 
 :::
 
 :::warning
 
-A saúde é arredondada para números inteiros: defina 50,15, mas obtenha 50,0
+A saúde é arredondada para números inteiros: defina 50.15, mas obtenha 50.0
 
 :::
 

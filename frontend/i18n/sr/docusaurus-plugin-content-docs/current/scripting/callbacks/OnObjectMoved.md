@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## Белешке
 
-:::tip
+:::note
 
 [SetObjectPos](../functions/SetObjectPos) не функционише када се користи у овој повратној функцији. Да бисте исправили, поново креирајте објекат.
 

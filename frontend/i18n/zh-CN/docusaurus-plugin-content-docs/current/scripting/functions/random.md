@@ -49,7 +49,7 @@ public OnPlayerSpawn(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 当参数值小于 1 时会产生异常结果
 

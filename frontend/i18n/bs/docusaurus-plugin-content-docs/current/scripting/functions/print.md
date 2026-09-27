@@ -28,19 +28,9 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 :::tip
 
-Kad kodovi boja ostanu -1, koriste se zadane boje poslužiteljske konzole.
-
-:::
-
-:::tip
-
-Na većini sistema mogu se koristiti sljedeći kodovi boja u prvom planu i pozadini: crna (0), crvena (1), zelena (2), žuta (3), plava (4), magenta (5), cijan (6) i bijela (7).
-
-:::
-
-:::tip
-
-Većina sistema takođe podržava jarke / podebljane verzije ovih boja. Mogu se koristiti sljedeće istaknute vrijednosti: uobičajena (0) i svijetla/podebljana (1).
+- Kad kodovi boja ostanu -1, koriste se zadane boje poslužiteljske konzole.
+- Na većini sistema mogu se koristiti sljedeći kodovi boja u prvom planu i pozadini: crna (0), crvena (1), zelena (2), žuta (3), plava (4), magenta (5), cijan (6) i bijela (7).
+- Većina sistema takođe podržava jarke / podebljane verzije ovih boja. Mogu se koristiti sljedeće istaknute vrijednosti: uobičajena (0) i svijetla/podebljana (1).
 
 :::
 

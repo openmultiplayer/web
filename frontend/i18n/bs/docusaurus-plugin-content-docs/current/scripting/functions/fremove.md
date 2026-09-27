@@ -33,7 +33,7 @@ fremove("Example.txt");
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Datoteke koje su trenutno otvorene (fopen) moraju se prvo zatvoriti (fclose) da bi se izbrisale.
 

@@ -41,7 +41,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 This does not work inside the normal SA map boundaries.
 

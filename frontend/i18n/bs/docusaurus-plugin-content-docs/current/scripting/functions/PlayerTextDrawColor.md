@@ -37,7 +37,13 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Boje Gametext-a možete koristiti i u textdrawu. Textdraw mora se ponovo prikazati za igrača kako bi se ažurirala boja.
+Boje Gametext-a možete koristiti i u textdrawu.
+
+:::
+
+:::note
+
+Textdraw mora se ponovo prikazati za igrača kako bi se ažurirala boja.
 
 :::
 

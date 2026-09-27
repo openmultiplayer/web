@@ -28,7 +28,7 @@ public OnObjectMoved(objectid)
 
 ## Notas
 
-:::tip
+:::note
 
 SetObjectPos no funciona cuando es usado en este callback. Para solucionarlo, vuelva a crear el objeto.
 

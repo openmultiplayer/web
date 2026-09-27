@@ -47,7 +47,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## Ghi Chú
 
-:::tip
+:::note
 
 Hàm này không được gọi nếu diễn viên được đặt là bất khả xâm phạm (MẶC ĐỊNH LÀ NHƯ VẬY). Xem [SetActorInvulnerable](../functions/SetActorInvulnerable).
 

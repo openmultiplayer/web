@@ -49,7 +49,7 @@ GetPlayerWeaponData(playerid, WEAPON_SLOT_PISTOL, weaponid, ammo);
 
 ## Notes
 
-:::tip
+:::note
 
 Old weapons with no ammo left are still returned.
 

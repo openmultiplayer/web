@@ -33,7 +33,7 @@ public OnPlayerConnect(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 - زمان با بازیکنای دیگه همگام نیست! زمان میتونه با استفاده از [SetPlayerTime](SetPlayerTime) همگام بشه.
 - زمان به طور خودکار 6 ساعت جلو میره وقتی بازیکن میمیره.

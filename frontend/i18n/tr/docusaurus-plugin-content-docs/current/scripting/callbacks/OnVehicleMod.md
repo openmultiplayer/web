@@ -37,7 +37,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon AddVehicleComponent tarafından ÇAĞRILMAZ.
 

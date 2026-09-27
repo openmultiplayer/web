@@ -66,7 +66,7 @@ tags: []
 Catatan:
 
 1. Meskipun batasan model kendaraan di 0.3 adalah tak hingga, jika Anda menggunakan model kendaraan dalam jumlah besar, maka akan memengaruhi performa klien.
-2. Meskipun batasan string textdraw adalah 1024 karakter, jika kode warna (contoh: ~r~) digunakan pada karakter ke-255 atau lebih, maka memungkinkan klien akan _crash_.
+2. Meskipun batasan string textdraw adalah 1024 karakter, jika kode warna (contoh: `~r~`) digunakan pada karakter ke-255 atau lebih, maka memungkinkan klien akan _crash_.
 3. Ini memungkinkan untuk memunculkan semua Textdraw dalam satu waktu untuk satu play, bagaimanapun ini tidak direkomendasikan.
 4. Untuk mengatasi batasan-batasan ini, dapat menggunakan sebuah [streamer](https://github.com/samp-incognito/samp-streamer-plugin). Streamer hanya bekerja membuat entitas, dll. yang dekat dengan pemain.
 5. Dikarenakan batasan pada klien hanya dapat memunculkan hingga 51 aktor dalam satu waktu.

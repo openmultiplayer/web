@@ -25,7 +25,7 @@ new Menu:currentMenu = GetPlayerMenu(playerid); // Armazena o menu atual do joga
 
 ## Notas
 
-:::tip
+:::note
 
 Retorna o menu anterior quando nenhum é mostrado.
 

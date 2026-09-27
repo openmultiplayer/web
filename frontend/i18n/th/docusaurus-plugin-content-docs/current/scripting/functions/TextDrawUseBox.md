@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 ## บันทึก
 
-:::tip
+:::note
 
 If the textdraw is already shown, it must be re-shown ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) to show the changes of this function.
 

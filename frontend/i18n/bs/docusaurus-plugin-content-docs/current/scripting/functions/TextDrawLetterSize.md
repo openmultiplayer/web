@@ -36,13 +36,8 @@ public OnGameModeInit()
 
 :::tip
 
-Kada ovu funkciju koristite čisto da biste utjecali na box TextDrawa, pomnožite 'Y' s 0,135 da biste pretvorili u mjerenja nalik TextDrawTextSize. Savjet: Lakše je i izuzetno precizno koristiti LD_SPAC:white sprit za samo crtanje boxa, TextDrawTextSize će imati redovite pomake.
-
-:::
-
-:::tip
-
-Ukoliko želite promijeniti veličinu slova textdrawa koji je već prikazan, ne morate ga ponovno kreirati. Prosto koristite TextDrawShowForPlayer/TextDrawShowForAll nakon uređivanja i promjena će biti vidljiva. Fontovi izgledaju najbolje sa X naprema Y rastojanju od 1 do 4 (npr. ako je x 0.5 onda bi y trebao biti 2).
+- Kada ovu funkciju koristite čisto da biste utjecali na box TextDrawa, pomnožite 'Y' s 0.135 da biste pretvorili u mjerenja nalik TextDrawTextSize. Savjet: Lakše je i izuzetno precizno koristiti LD_SPAC:white sprit za samo crtanje boxa, TextDrawTextSize će imati redovite pomake.
+- Ukoliko želite promijeniti veličinu slova textdrawa koji je već prikazan, ne morate ga ponovno kreirati. Prosto koristite TextDrawShowForPlayer/TextDrawShowForAll nakon uređivanja i promjena će biti vidljiva. Fontovi izgledaju najbolje sa X naprema Y rastojanju od 1 do 4 (npr. ako je x 0.5 onda bi y trebao biti 2).
 
 :::
 

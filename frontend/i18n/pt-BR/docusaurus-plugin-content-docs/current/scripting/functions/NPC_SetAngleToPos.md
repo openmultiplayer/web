@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Somente o plano horizontal (X/Y) é considerado no cálculo do ângulo de faceamento.
 - O NPC não se moverá; ele apenas gira para ficar de frente para a posição.

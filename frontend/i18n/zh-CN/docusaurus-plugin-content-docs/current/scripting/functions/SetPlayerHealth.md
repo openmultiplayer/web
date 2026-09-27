@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 当生命值设为 0.0 或负数时，玩家会立即死亡
 - 当生命值低于 10.0 或超过 98303.0 时，生命值条会闪烁

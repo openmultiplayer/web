@@ -31,7 +31,7 @@ public OnPlayerSpawn(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 - Players can not damage/kill players on the same team unless they use a knife to slit their throat.
 

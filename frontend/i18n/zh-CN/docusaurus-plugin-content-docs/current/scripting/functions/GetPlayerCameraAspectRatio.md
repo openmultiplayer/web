@@ -31,8 +31,10 @@ SendClientMessage(playerid, -1, string);
 
 ## 注意事项
 
-:::tip
+:::note
+
 返回值反映的是游戏内"宽屏"设置的选项值，而非玩家显示设备的实际物理宽高比
+
 :::
 
 ## 相关函数

@@ -42,7 +42,7 @@ gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
 
 ## บันทึก
 
-:::tip
+:::note
 
 This function merely CREATES the gangzone, you must use GangZoneShowForPlayer or GangZoneShowForAll to show it.
 

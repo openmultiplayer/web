@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::tip
+:::note
 
 Ang player-object ay dapat gawin bago subukang ilagay ang camera ng player dito.
 

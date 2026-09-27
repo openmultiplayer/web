@@ -36,7 +36,7 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ukupan health vozila je 1000. Veće vrijednosti su moguće. Za više informacija o vrijednostima healtha, pogledaj [ovu](../resources/vehiclehealth) stranicu.
 

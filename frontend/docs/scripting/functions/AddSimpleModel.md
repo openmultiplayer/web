@@ -41,7 +41,7 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## Notes
 
-:::tip
+:::note
 
 **useartwork** or **artwork.enable** must be enabled first in server settings in order for this to work.
 

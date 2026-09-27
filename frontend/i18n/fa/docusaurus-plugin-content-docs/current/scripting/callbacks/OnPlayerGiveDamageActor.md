@@ -47,7 +47,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 اگر اکتور تنظیم شده به عنوان غیرقابل آسیب باشد (که به طور پیش‌فرض است) این تابع فراخوانده نمی‌شود. [SetActorInvulnerable](../functions/SetActorInvulnerable) را ببینید.
 

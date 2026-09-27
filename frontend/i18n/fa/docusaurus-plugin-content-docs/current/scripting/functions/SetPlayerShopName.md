@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 این تابع از اسکریپت های casino پشتیبانی نمی‌کنه.
 

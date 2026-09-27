@@ -56,7 +56,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 ## 注意
 
-:::tip
+:::note
 
 由于玩家已断开连接，部分函数可能无法正常工作：
 

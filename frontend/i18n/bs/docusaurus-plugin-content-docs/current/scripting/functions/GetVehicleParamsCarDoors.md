@@ -29,7 +29,7 @@ Stanje vrata vozila je pohranjeno u navedenim varijablama.
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Vrijednosti vraćene u svakoj varijabli su kao:
 

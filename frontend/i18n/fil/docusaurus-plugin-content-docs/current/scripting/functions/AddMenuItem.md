@@ -35,9 +35,15 @@ public OnGameModeInit()
 
 ## Notes
 
-:::tip
+:::warning
 
-Nag-crash kapag naipasa ang isang di-wastong ID ng menu. Maaari ka lang magkaroon ng 12 item sa bawat menu (ang ika-13 ay mapupunta sa kanang bahagi ng header ng pangalan ng column (kulay), ika-14 at mas mataas na hindi ipinapakita). Maaari ka lamang gumamit ng 2 column (0 at 1). Maaari ka lamang magdagdag ng 8 color code sa bawat isang item (~r~, ~g~ atbp.). Ang maximum na haba ng item sa menu ay 31 simbolo.
+Nag-crash kapag naipasa ang isang di-wastong ID ng menu.
+
+:::
+
+:::note
+
+Maaari ka lang magkaroon ng 12 item sa bawat menu (ang ika-13 ay mapupunta sa kanang bahagi ng header ng pangalan ng column (kulay), ika-14 at mas mataas na hindi ipinapakita). Maaari ka lamang gumamit ng 2 column (0 at 1). Maaari ka lamang magdagdag ng 8 color code sa bawat isang item (`~r~`, `~g~` atbp.). Ang maximum na haba ng item sa menu ay 31 simbolo.
 
 :::
 

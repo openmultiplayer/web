@@ -19,7 +19,7 @@ This function always returns 1.
 
 ## บันทึก
 
-:::warning
+:::note
 
 - Does not support login, due to the lack of a 'playerid' parameter.
 - 'password 0' will remove the server's password if one is set.

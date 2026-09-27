@@ -36,7 +36,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 ## Astuces
 
-:::tip
+:::note
 
 La callback est appelée lorsque le joueur modifie la peinture DANS le transfender/wheel arch angel !
 

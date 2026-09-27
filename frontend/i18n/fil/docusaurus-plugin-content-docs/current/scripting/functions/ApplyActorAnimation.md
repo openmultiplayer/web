@@ -44,7 +44,7 @@ public OnGameModeInit()
 
 ## Notes
 
-:::tip
+:::note
 
 Dapat mong paunang i-load ang animation library para sa player na pag-aaplayan ng aktor ng animation, at hindi para sa aktor. Kung hindi, hindi mailalapat ang animation sa aktor hanggang sa muling maipatupad ang function.
 

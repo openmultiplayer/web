@@ -76,7 +76,7 @@ public MyHttpResponse(index, response_code, data[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Kao i gore navedeni kodovi odgovora, postoje i svi tipični HTTP odgovori kao što su 404(Stranica nije pronađena), 500(Greška servera) ili 403(zabranjena)
 

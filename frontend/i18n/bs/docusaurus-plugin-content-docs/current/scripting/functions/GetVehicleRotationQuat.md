@@ -27,9 +27,15 @@ Rotacija vozila pohranjena je u navedenim varijablama.
 
 ## Zabilješke
 
-:::tip
+:::note
 
-Ne postoji 'set' varijacija ove funkcije; ne možete podesiti rotaciju vozila (osim Z ugla). Ova funkcija može vratiti netačne vrijednosti za nenaseljena vozila. Razlog je taj što se treći red matrice interne rotacije vozila ošteti ako se ažurira dok je nenastanjen.
+Ne postoji 'set' varijacija ove funkcije; ne možete podesiti rotaciju vozila (osim Z ugla).
+
+:::
+
+:::warning
+
+Ova funkcija može vratiti netačne vrijednosti za nenaseljena vozila. Razlog je taj što se treći red matrice interne rotacije vozila ošteti ako se ažurira dok je nenastanjen.
 
 :::
 

@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 - چرخش X و Y (pitch و roll) ماشین وقتی این تابع استفاده می‌شه reset می‌شن.
 - چرخش X و Y قابل تنظیم نیستن.

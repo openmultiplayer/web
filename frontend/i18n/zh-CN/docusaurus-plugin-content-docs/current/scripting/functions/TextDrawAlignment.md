@@ -39,18 +39,12 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::warning
+:::note
 
-使用`TEXT_DRAW_ALIGN_CENTER`居中对齐时：
-
-- 必须交换[TextDrawTextSize](TextDrawTextSize)参数的 x/y 坐标值
-- 文本绘图的坐标定位点将变为中心点而非左上角
-
-:::
-
-:::tip
-
-若文本绘图已处于显示状态，修改对齐方式后需重新调用显示函数([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer))才能生效
+- 使用`TEXT_DRAW_ALIGN_CENTER`居中对齐时：
+  - 必须交换[TextDrawTextSize](TextDrawTextSize)参数的 x/y 坐标值
+  - 文本绘图的坐标定位点将变为中心点而非左上角
+- 若文本绘图已处于显示状态，修改对齐方式后需重新调用显示函数([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer))才能生效
 
 :::
 

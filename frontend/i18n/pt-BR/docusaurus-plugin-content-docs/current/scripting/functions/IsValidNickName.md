@@ -34,7 +34,7 @@ else
 ```
 ## Notas
 
-:::tip
+:::note
 
 Por padrão, os caracteres válidos no apelido são (0-9, a-z, A-Z, [], (), \$ @ . \_ e = apenas).
 

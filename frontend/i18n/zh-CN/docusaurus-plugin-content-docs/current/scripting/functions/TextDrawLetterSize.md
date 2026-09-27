@@ -36,14 +36,8 @@ public OnGameModeInit()
 
 :::tip
 
-当需要仅调整文本绘图的方框尺寸时，可将 height 参数乘以 0.135 来获得类似 TextDrawTextSize 的尺寸效果。
-
-技巧：对于纯方框型文本绘图，建议使用**LD_SPAC:white**精灵配合 TextDrawTextSize 函数，可获得更精准的尺寸控制。
-
-:::
-
-:::tip
-
+- 当需要仅调整文本绘图的方框尺寸时，可将 height 参数乘以 0.135 来获得类似 TextDrawTextSize 的尺寸效果。
+- 技巧：对于纯方框型文本绘图，建议使用**LD_SPAC:white**精灵配合 TextDrawTextSize 函数，可获得更精准的尺寸控制。
 - 修改已显示的文本绘图字符尺寸后，无需重新创建，调用[TextDrawShowForPlayer](TextDrawShowForPlayer)或[TextDrawShowForAll](TextDrawShowForAll)即可刷新显示
 - 最佳视觉效果通常需要保持宽度与高度的 1:4 比例（例如宽度 0.5 对应高度 2.0）
 

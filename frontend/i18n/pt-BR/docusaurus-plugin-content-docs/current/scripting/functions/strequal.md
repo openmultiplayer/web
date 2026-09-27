@@ -43,7 +43,7 @@ else
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta é uma função conveniente que depende de [strcmp](strcmp).
 

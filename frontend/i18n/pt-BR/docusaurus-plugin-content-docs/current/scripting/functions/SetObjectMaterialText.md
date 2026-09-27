@@ -57,6 +57,7 @@ A incorporação de cores pode ser usada para várias cores no texto.
 
 Você MUST usa o formato de cores ARGB, não RGBA como usado em mensagens de clientes, etc.
 O texto não é atualizado após 16 chamadas no mesmo objeto.
+
 :::
 
 ## Funções Relacionadas

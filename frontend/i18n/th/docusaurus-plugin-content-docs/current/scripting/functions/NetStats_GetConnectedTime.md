@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 The return value is not reset to zero after changing the game mode (using the RCON command "gmx").
 

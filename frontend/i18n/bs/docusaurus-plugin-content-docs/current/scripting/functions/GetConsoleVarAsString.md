@@ -32,9 +32,10 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Kada su filterskripte ili plugini specificirani kao varname, ova funkcija returna samo ime prve specificirane filterskripte ili plugina.
+
 :::
 
 :::tip

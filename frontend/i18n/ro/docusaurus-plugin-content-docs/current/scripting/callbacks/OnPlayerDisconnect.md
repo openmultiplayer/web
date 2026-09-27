@@ -57,7 +57,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 ## Note
 
-:::tip
+:::note
 
 Este posibil ca unele funcții să nu funcționeze corect atunci când sunt utilizate în acest apel invers, deoarece playerul este deja deconectat atunci când este apelat. Aceasta înseamnă că nu puteți obține informații clare din funcții precum GetPlayerIp și GetPlayerPos.
 

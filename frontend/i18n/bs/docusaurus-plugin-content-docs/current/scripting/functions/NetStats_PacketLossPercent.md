@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Imajte na umu da će ova funkcija prijaviti pakete koje je server izgubio. Broj gubitka paketa koji je prijavio klijent **bit će** različit, ne zato što je i jedan i drugi netačan, već zato što su i server i klijent svjesni samo paketa gubitaka koje su poslali.
 

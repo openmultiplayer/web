@@ -50,7 +50,7 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 
 ## Lưu ý
 
-:::tip
+:::note
 
 Điều này không bao gồm thay đổi sức khỏe của xe.
 

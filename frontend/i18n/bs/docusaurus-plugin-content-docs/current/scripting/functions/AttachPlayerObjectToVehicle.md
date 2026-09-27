@@ -42,7 +42,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Morate da kreirate objekat prije nego pokušate da ga privkačite za vozilo.
 

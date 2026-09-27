@@ -34,7 +34,7 @@ AttachObjectToVehicle(objectid, vehicleid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
 
 ## 注意事项
 
-:::tip
+:::note
 
 必须预先创建物体
 

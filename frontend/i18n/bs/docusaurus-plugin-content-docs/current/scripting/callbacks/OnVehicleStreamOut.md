@@ -32,7 +32,7 @@ public OnVehicleStreamOut(vehicleid, forplayerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback pozvat će i NPC.
 

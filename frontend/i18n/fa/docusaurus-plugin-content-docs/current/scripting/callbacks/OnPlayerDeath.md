@@ -47,7 +47,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 دلیل مرگ 37 (شعله‌افکن) را از هر منبع آتش (مثل مولوتوف، 18) برمی‌گرداند. دلیل مرگ 51 را از هر سلاحی که انفجار ایجاد می‌کند (مثل RPG، نارنجک) برمی‌گرداند. شما نیازی ندارید که قبل از استفاده در [SendDeathMessage](../functions/SendDeathMessage) بررسی کنید که killerid معتبر است یا نه. INVALID_PLAYER_ID یک پارامتر killerid معتبر در آن تابع است. playerid تنها کسی است که می‌تواند این کالبک را فراخوانی کند. (برای ضد تقلب مرگ جعلی مفید است)
 

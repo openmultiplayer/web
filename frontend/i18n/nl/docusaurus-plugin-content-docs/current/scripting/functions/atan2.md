@@ -8,7 +8,9 @@ tags: ["math"]
 <LowercaseNote />
 
 :::warning
+
 De y‑waarde is de eerste parameter en x de tweede (y/x‑notatie).
+
 :::
 
 ## Beschrijving

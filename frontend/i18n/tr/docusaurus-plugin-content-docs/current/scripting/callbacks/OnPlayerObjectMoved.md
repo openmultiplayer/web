@@ -30,7 +30,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon, NPC için de çağrılabilir.
 

@@ -34,7 +34,7 @@ public OnPlayerRequestClass(playerid,classid)
 
 ## Notas
 
-:::tip
+:::note
 
 Esta callback também é chamada quando um jogador pressiona F4.
 

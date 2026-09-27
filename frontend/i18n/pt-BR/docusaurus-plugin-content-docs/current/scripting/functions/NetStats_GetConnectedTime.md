@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 O valor de retorno não é zerado após alterar o modo de jogo (usando o comando RCON "gmx").
 

@@ -50,11 +50,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - This function teleports the NPC instantly without animation
 - Any current movement is stopped when setting position
-- Use `NPC_Move` if you want the NPC to walk to a position
+
+:::
+
+:::tip
+
+Use `NPC_Move` if you want the NPC to walk to a position
 
 :::
 

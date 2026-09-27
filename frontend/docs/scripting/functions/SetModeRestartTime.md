@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 The `seconds` parameter is a float.
 

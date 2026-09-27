@@ -37,7 +37,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## Note
 
-:::tip
+:::note
 
 Acest apel invers NU este apelat de AddVehicleComponent.
 

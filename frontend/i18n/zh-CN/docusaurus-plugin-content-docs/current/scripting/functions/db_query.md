@@ -91,7 +91,7 @@ public OnGameModeExit()
 
 ## 注意事项
 
-:::danger
+:::warning
 
 必须使用[db_free_result](db_free_result)释放查询结果，否则会导致内存泄漏！
 

@@ -42,7 +42,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 drawdistance se čini da je mnogo manja prilikom spectateanja
 

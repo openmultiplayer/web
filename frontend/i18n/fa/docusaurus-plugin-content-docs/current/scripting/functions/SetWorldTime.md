@@ -26,7 +26,7 @@ SetWorldTime(12);
 
 ## نکات
 
-:::tip
+:::note
 
 این تابع فقط برای پلیرهایی که از passing clock استفاده نمی‌کنن مربوط هست - [TogglePlayerClock](TogglePlayerClock) رو ببین.
 

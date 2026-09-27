@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 Retorna o novo skin depois que [SetSpawnInfo](SetSpawnInfo) é chamado, mas antes que o jogador realmente reapareça para obter o novo skin. Retorna a skin antiga se o jogador foi gerado através da função [SpawnPlayer](SpawnPlayer).
 

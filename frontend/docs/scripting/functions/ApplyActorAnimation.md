@@ -51,7 +51,7 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 You must preload the animation library for the player the actor will be applying the animation for, and not for the actor. Otherwise, the animation won't be applied to the actor until the function is executed again.
 

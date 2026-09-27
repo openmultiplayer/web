@@ -59,7 +59,7 @@ GetPlayer3DTextLabelAttached(playerid, gVehicle3dText[gVehicleId], parentPlayeri
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数是 [GetPlayer3DTextLabelAttachedData](GetPlayer3DTextLabelAttachedData) 的简写形式
 

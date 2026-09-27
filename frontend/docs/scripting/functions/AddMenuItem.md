@@ -36,9 +36,14 @@ public OnGameModeInit()
 
 ## Notes
 
-:::tip
+:::warning
 
-- Crashes when passed an invalid menu ID.
+Crashes when passed an invalid menu ID. (Fixed in open.mp)
+
+:::
+
+:::note
+
 - You can only have 12 items per menu (13th goes to the right side of the header of column name (colored), 14th and higher not display at all).
 - You can only use 2 columns (0 and 1).
 - You can only add 8 color codes per one item (`~r~`, `~g~` etc.). Maximum length of menu item is 31 symbols.

@@ -52,7 +52,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
     
 ## Notes
 
-:::tip
+:::note
 
 يتم إستدعاء هذا الكالباك فقط عندما يتم تشغيل او إطفاء صفارة الإنظار
 

@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 重置 NPC 生命值、位置和状态。
 - NPC 返回其原始出生坐标。

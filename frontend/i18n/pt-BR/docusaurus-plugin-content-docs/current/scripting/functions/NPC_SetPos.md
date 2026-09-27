@@ -50,11 +50,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Esta função teletransporta o NPC instantaneamente sem animação
 - Qualquer movimento atual é interrompido ao definir a posição
-- Use `NPC_Move` se quiser que o NPC caminhe até uma posição
+
+:::
+
+:::tip
+
+Use `NPC_Move` se quiser que o NPC caminhe até uma posição
 
 :::
 

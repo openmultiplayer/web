@@ -33,7 +33,7 @@ public OnPlayerSpawn(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 نام تابع armour است، نه armor (آمریکایی‌سازی شده). این با بقیه SA-MP ناسازگار است، بنابراین به خاطر داشته باشید.
 

@@ -4,7 +4,9 @@ sidebar_label: "Objectbewerkings‑responstypen"
 ---
 
 :::info
+
 Gebruikt door [OnPlayerEditObject](../callbacks/OnPlayerEditObject).
+
 :::
 
 | Waarde | Definitie            | Beschrijving                                                  |

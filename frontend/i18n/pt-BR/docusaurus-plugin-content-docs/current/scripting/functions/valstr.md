@@ -49,6 +49,7 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 }
 #define valstr FIX_valstr
 ```
+
 :::
 
 ## Funções Relacionadas

@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 ## Catatan
 
-:::tip
+:::note
 
 Terkadang game akan mengurangi \$100 dari pemain setelah spawn.
 

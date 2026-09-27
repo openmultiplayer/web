@@ -32,7 +32,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## Notities
 
-:::tip
+:::note
 
 Deze callback wordt aangeroepen elke keer dat een speler van virtual world wisselt, zelfs als er geen aangepaste modellen aanwezig zijn in die wereld.
 

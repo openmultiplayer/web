@@ -39,7 +39,7 @@ public OnPlayerSpawn(playerid)
 
 ## Ghi chú
 
-:::tip
+:::note
 
 Khi một người chơi chết trong San Andreas, họ sẽ bị trừ $100 để tự động chi trả viện phí. Tính năng này vẫn tồn tại trong SA:MP, nhưng đã bị loại bỏ khỏi open.mp để cho phép các script quản lý tiền của họ. Một số script cố gắng sửa lỗi này bằng cách thêm $100 cho người chơi sau khi chết, hoặc khi xuất hiện. Nếu đây là script của bạn, chỉ cần xóa phần sửa lỗi bổ sung, mặc dù mã trong open.mp cũng cố gắng giải quyết các script làm điều này. Nếu script của bạn dựa vào tính năng này, chỉ cần thêm đoạn mã sau vào [OnPlayerDeath](OnPlayerDeath):
 

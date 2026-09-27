@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意
 
-:::tip
+:::note
 
 此函数不支持赌场脚本。
 

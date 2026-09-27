@@ -41,7 +41,7 @@ SetActorPos(gMyActor, 2062.2332, -1908.1423, 13.5485);
 
 ## 注意事项
 
-:::tip
+:::note
 
 使用[CreateActor](CreateActor)创建演员时，已经指定了其坐标位置。除非需要后续调整位置，否则无需使用此函数
 

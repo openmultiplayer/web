@@ -7,19 +7,9 @@ description: "Informações sobre o tamanho do byte e seus bits de estado leve c
 
 :::note
 
-Os estados leves são usados por nativos como [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) e [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
-
-:::
-
-:::note
-
-As luzes dos veículos com 2 rodas (e portanto com 2 luzes) não podem ser alteradas.
-
-:::
-
-:::note
-
-As duas luzes traseiras de um veículo não podem ser trocadas separadamente.
+- Os estados leves são usados por nativos como [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) e [UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus).
+- As luzes dos veículos com 2 rodas (e portanto com 2 luzes) não podem ser alteradas.
+- As duas luzes traseiras de um veículo não podem ser trocadas separadamente.
 
 :::
 

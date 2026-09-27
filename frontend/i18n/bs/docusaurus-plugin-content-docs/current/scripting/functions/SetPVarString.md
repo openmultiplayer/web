@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Varijable se resetiraju tek nakon što se pozove OnPlayerDisconnect, tako da su vrijednosti i dalje dostupne u OnPlayerDisconnect.
 

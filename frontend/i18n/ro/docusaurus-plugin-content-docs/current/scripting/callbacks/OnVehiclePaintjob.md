@@ -33,7 +33,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 ## Note
 
-:::tip
+:::note
 
 Acest apel invers nu este apelat de ChangeVehiclePaintjob. Puteți utiliza OnVehicleChangePaintjob de la vSync pentru a ști când jucătorul cumpără lucrarea.
 

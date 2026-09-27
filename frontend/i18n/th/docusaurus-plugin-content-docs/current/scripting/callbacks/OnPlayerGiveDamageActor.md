@@ -49,7 +49,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## บันทึก
 
-:::tip
+:::note
 
 This function does not get called if the actor is set invulnerable (WHICH IS BY DEFAULT). See [SetActorInvulnerable](../functions/SetActorInvulnerable).
 

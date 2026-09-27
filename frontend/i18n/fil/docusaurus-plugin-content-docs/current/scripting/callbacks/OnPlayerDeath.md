@@ -47,12 +47,14 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## Notes
 
-:::tip
+:::note
 
 - Ang rason na nagrereturn ng 37 (flame thrower) ay nanggagaling sa anumanng fire sources (e.g molotov, 18).
 - Ang rason na regrereturn ng 51 ay nanggagaling sa anumang baril o weapon na gumagawa ng explosion (e.g. RPG, grenade).
 - Hindi mo na kailangan tignan kung ang killerid ay valid bago gamitin ang SendDeathMessage. Ang INVALID_PLAYER_ID ay isang valid na killerid ID parameter sa function na iyon.
 - Ang playerid lamang ang may kapakanan na tawagin itong callback. (Magandang alamin para sa anti-fake death na mga hacks/cleo.)
+
+:::
 
 :::warning
 

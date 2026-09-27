@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 若文本绘图已显示，必须重新显示（[TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)）才能使此函数修改生效
 

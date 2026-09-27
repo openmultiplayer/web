@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 `useartwork` mora biti omogućen (u server settings) da bi ovo radilo kada je virtualworld postavljen, modeli će se preuzimati kada igrač uđe u određeni svijet
 

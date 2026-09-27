@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## Notlar
 
-:::tip
+:::note
 
 SetObjectPos bu geri çağırma içerisinde çalışmaz. Bunu düzeltmek için objeyi yeniden oluşturun.
 

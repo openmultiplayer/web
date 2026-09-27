@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 You need to create the object first, before attempting to attach a player camera for that.
 

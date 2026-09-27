@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ako je textdraw već prikazan, on mora biti ponovno prikazan ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) kako bi prikazao promjene ove funkcije.
 

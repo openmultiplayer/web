@@ -29,6 +29,7 @@ new flags = GetPlayerAnimFlags(playerid);
 ## 注意事项
 
 :::tip
+
 标志位采用位掩码(bitmask)形式存储，需使用位运算进行解析：
 
 ```c

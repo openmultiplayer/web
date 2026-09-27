@@ -26,7 +26,7 @@ SetWorldTime(12);
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função só é relevante para jogadores que não utilizam relógio de passagem - veja [TogglePlayerClock](TogglePlayerClock).
 

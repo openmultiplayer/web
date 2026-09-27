@@ -30,7 +30,7 @@ public OnGameModeInit()
 
 ## Notlar
 
-:::tip
+:::note
 
 Bağlanan NPC'lerin isim etiketleri bulunmaz. Attach3DTextLabelToPlayer ile yapılabilir.
 

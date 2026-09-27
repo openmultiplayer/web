@@ -49,7 +49,7 @@ GetPlayerWeaponData(playerid, WEAPON_SLOT_PISTOL, weaponid, ammo);
 
 ## 注意事项
 
-:::tip
+:::note
 
 即使武器弹药已耗尽，仍会返回该武器信息
 

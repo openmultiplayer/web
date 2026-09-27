@@ -33,7 +33,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## 注意事项
 
-:::tip
+:::note
 
 禁用观察模式时会自动触发 OnPlayerSpawn 回调。若需恢复玩家原始状态，需在 OnPlayerSpawn 中处理。注意玩家可能通过 F4 进入选角界面，且观察模式中可能因漏洞导致死亡。
 

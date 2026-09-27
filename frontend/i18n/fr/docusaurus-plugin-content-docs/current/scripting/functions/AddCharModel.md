@@ -42,7 +42,7 @@ AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
 
 ## Remarques
 
-:::tip
+:::note
 
 useartwork doit d'abord être activé dans les paramètres du serveur pour que cela fonctionne
 

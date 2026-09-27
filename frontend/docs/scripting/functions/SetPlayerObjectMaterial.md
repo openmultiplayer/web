@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## Notes
 
-:::tip
+:::note
 
 Vertex lightning of the object will disappear if material color is changed.
 

@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova funkcija ne podržava casino skripte.
 

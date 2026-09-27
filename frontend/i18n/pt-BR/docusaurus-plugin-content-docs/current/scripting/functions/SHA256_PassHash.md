@@ -42,7 +42,7 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
 O hash retornado tem preenchimento zero (ou seja, possível prefixo 00ABCD123...).
 

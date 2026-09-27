@@ -38,17 +38,10 @@ AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, true)
 
 ## Notes
 
-:::tip
+:::note
 
-Both objects need to be created before attempting to attach them.
-
-:::
-
-:::tip
-
-There is no player-object version of this function in SA-MP.
-
-But there is [AttachPlayerObjectToObject](AttachPlayerObjectToObject) in open.mp
+- Both objects need to be created before attempting to attach them.
+- There is no player-object version of this function in SA-MP. But there is [AttachPlayerObjectToObject](AttachPlayerObjectToObject) in open.mp
 
 :::
 

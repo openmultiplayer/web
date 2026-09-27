@@ -44,7 +44,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 客户端处理 6 种类型的请求（2、5、69、70、71、72）
 - 类型 72 不使用其他参数 [参数 | 偏移量 | 大小]

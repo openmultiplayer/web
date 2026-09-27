@@ -8,7 +8,8 @@ sidebar_label: "Dialoogstijlen"
 - In [OnDialogResponse](../callbacks/OnDialogResponse) zet **button1** `response` op **1**, **button2** op **0**.
 - Elke dialoog kan een optionele button 2 hebben; leeg laten verbergt deze. ESC triggert dan `response = 0`.
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): kleur‑embedding werkt in `caption`, `info`, `button1`, `button2`.
-  :::
+
+:::
 
 - Deze pagina beschrijft het gedrag van `ShowPlayerDialog` en `OnDialogResponse`.
 - Voor limieten: zie [Limits](../resources/limits).

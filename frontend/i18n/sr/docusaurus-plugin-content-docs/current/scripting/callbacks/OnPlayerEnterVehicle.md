@@ -33,7 +33,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Белешке
 
-:::tip
+:::note
 
 - Ова функција се позива када играч ПОЧНЕ да улази у возило, а не када је УШАО у њега. Погледајте [OnPlayerStateChange](OnPlayerStateChange).
 - Ова функција ће се и даље позвати ако играчу буде одбијен улазак у возило (нпр. ако је закључано или пуно).

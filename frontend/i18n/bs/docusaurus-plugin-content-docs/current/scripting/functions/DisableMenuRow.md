@@ -16,7 +16,7 @@ Onemogućite određeni red u meniju za sve igrače. Bit će zasjenjeno i igrači
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, bilo i da funkcija ne uspije. Ako je naveden nevaljani redak, ništa se neće dogoditi. Ako je naveden nevažeći ID menija, server će crashovati.
+Ova funkcija uvijek returna (vraća) 1, bilo i da funkcija ne uspije. Ako je naveden nevaljani redak, ništa se neće dogoditi.
 
 ## Primjeri
 
@@ -37,9 +37,17 @@ if (!strcmp(cmdtext, "/disablemenu", true))
 
 ## Zabilješke
 
-:::tip
+:::warning
 
-Ruši se kada se proslijedi nevažeći ID menija. Ova je funkcija onemogućila navedeni red menija za sve igrače. Ne postoji funkcija za onemogućavanje reda menija za određenog igrača. Morali biste stvoriti dva menija - jedan s onemogućenim redom i jedan bez. Ili po jedan po igraču.
+Ruši se kada se proslijedi nevažeći ID menija.
+
+:::
+
+:::note
+
+- Ova je funkcija onemogućila navedeni red menija za sve igrače.
+- Ne postoji funkcija za onemogućavanje reda menija za određenog igrača.
+- Morali biste stvoriti dva menija - jedan s onemogućenim redom i jedan bez. Ili po jedan po igraču.
 
 :::
 

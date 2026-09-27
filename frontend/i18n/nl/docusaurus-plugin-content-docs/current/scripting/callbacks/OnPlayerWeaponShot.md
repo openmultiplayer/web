@@ -41,7 +41,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## Notities
 
-:::tip
+:::note
 
 Deze callback wordt alleen aangeroepen wanneer lag compensation is ingeschakeld. Als hittype is:
 
@@ -60,25 +60,10 @@ Deze callback wordt alleen aangeroepen wanneer lag compensation is ingeschakeld.
 
 :::warning
 
-Deze callback wordt niet aangeroepen bij schieten vanuit een voertuig als bestuurder of achteruit gericht met aim (de lucht in).
-
-:::
-
-:::warning
-
-Wanneer een speler in een voertuig geraakt wordt, triggert dit als BULLET_HIT_TYPE_VEHICLE met de juiste hitid (vehicleid van de getroffen speler), niet als BULLET_HIT_TYPE_PLAYER.
-
-:::
-
-:::warning
-
-Gedeeltelijk gefixt in SA-MP 0.3.7: bij fake weapon data van een malafide client kunnen clients vastlopen. Controleer of de gemelde weaponid daadwerkelijk projectielen kan afvuren.
-
-:::
-
-:::warning
-
-Deze callback wordt niet aangeroepen bij drive-bys als bestuurder of bij het afvuren van turrets (Seasparrow, Hunter, etc.).
+- Deze callback wordt niet aangeroepen bij schieten vanuit een voertuig als bestuurder of achteruit gericht met aim (de lucht in).
+- Wanneer een speler in een voertuig geraakt wordt, triggert dit als BULLET_HIT_TYPE_VEHICLE met de juiste hitid (vehicleid van de getroffen speler), niet als BULLET_HIT_TYPE_PLAYER.
+- Gedeeltelijk gefixt in SA-MP 0.3.7: bij fake weapon data van een malafide client kunnen clients vastlopen. Controleer of de gemelde weaponid daadwerkelijk projectielen kan afvuren.
+- Deze callback wordt niet aangeroepen bij drive-bys als bestuurder of bij het afvuren van turrets (Seasparrow, Hunter, etc.).
 
 :::
 

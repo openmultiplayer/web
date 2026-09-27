@@ -53,7 +53,7 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 
 ## Notities
 
-:::tip
+:::note
 
 Dit omvat geen veranderingen in vehicle health.
 

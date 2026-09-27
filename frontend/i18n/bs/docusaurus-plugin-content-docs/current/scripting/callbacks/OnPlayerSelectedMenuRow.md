@@ -47,7 +47,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 ID menija nije proslijeđen ovom callbacku. GetPlayerMenu se mora koristiti kako bi se odredilo na kojem meniju je igrač selektovao stavku.
 

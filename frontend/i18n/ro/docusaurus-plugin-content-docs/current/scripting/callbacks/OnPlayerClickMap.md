@@ -36,7 +36,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## Note
 
-:::tip
+:::note
 
 După cum spune și numele callback-ului, este apelat numai atunci când jucătorul face clic pentru a marca ținta și nu atunci când este apăsat tasta. Valoarea Z returnată va fi 0 (invalidă) dacă zona pe care se face clic pe hartă este departe de jucător; utilizați pluginul MapAndreas sau ColAndreas pentru a obține o coordonată Z mai precisă.
 

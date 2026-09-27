@@ -35,7 +35,7 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função é igual a [AddServerRule](AddServerRule).
 

@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon menüyü sadece OLUŞTURUR. - Oyuncuya gösterilmesi için ShowMenuForPlayer kullanılmalıdır. Yalnıza iki sütun oluşturulabilir. (0 ve 1). Başlığın uzunluğu 32 karaktere eşit veya daha fazlaysa başlık 30 karaktere kısaltılır.
 

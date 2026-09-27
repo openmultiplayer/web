@@ -73,7 +73,7 @@ public DisableVehicleAlarm(vehicleid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Alarm se neće resetirati po završetku, morat ćete ga resetirati sami pomoću ove funkcije. Svjetla rade i danju (samo kada je omogućen ManualVehicleEngineAndLights).
 

@@ -31,7 +31,7 @@ public OnPlayerSpawn(playerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 - Players can not damage/kill players on the same team unless they use a knife to slit their throat.
 - Players are also unable to damage vehicles driven by a player from the same team. This can be enabled with EnableVehicleFriendlyFire.

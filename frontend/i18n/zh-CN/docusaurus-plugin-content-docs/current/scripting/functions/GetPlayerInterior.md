@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid,text[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 NPC 玩家将始终返回室内场景 0
 

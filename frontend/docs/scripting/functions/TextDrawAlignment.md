@@ -39,15 +39,10 @@ public OnGameModeInit()
 
 ## Notes
 
-:::warning
+:::note
 
-For alignment TEXT_DRAW_ALIGN_CENTER (center) the x and y values of TextSize need to be swapped, see notes at [TextDrawTextSize](TextDrawTextSize), also position coordinate become position of center of textdraw and not left/top edges.
-
-:::
-
-:::tip
-
-If the textdraw is already shown, it must be re-shown ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) to show the changes of this function.
+- For alignment TEXT_DRAW_ALIGN_CENTER (center) the x and y values of TextSize need to be swapped, see notes at [TextDrawTextSize](TextDrawTextSize), also position coordinate become position of center of textdraw and not left/top edges.
+- If the textdraw is already shown, it must be re-shown ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) to show the changes of this function.
 
 :::
 

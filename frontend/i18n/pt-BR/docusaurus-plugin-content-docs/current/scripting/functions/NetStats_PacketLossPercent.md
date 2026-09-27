@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função foi considerada atualmente não confiável e a saída não é a esperada quando comparada ao cliente. Portanto, esta função não deve ser usada como kicker de perda de pacotes. Uma função de perda de pacotes mais precisa:
 
@@ -59,9 +59,10 @@ stock GetPlayerPacketLoss(playerid, &Float:packetLoss)
     return 1;
 }
 ```
+
 :::
 
-:::tip
+:::note
 
 Esteja ciente de que esta função reportará os pacotes perdidos pelo servidor. O número de perda de pacotes relatado pelo cliente **será** diferente, não porque qualquer um esteja incorreto, mas porque tanto o servidor quanto o cliente estão cientes apenas dos pacotes perdidos enviados por eles.
 

@@ -47,7 +47,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 
 ## Белешке
 
-:::tip
+:::note
 
 Ова функција се не позива ако је актер подешен као невидљив (**ШТО ЈЕ ПОДРАЗУМЕВАНО**)\*\*. Погледајте [SetActorInvulnerable](../functions/SetActorInvulnerable).
 

@@ -48,7 +48,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Morate unaprijed učitati biblioteku (library) animacija za igrača za kojeg će aktor primijeniti animaciju, a ne za aktora. Uostalom, animacija neće biti primijenjena aktoru sve dok funkcija ne bude izršena ponovo.
 

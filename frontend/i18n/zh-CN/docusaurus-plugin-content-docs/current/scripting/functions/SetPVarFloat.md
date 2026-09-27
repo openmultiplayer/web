@@ -38,7 +38,7 @@ SavePlayerPos(playerid)
 
 ## 注意
 
-:::tip
+:::note
 
 变量在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)回调后才会重置，因此在断开连接时仍可访问。
 

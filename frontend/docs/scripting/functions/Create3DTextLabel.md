@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::tip
+:::note
 
 drawDistance seems to be a lot smaller when spectating.
 

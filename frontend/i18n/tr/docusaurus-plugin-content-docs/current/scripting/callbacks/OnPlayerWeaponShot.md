@@ -41,7 +41,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon, yalnızca gecikme telafisi etkinleştirildiğinde çağrılır. İsabet türü eğer:
 

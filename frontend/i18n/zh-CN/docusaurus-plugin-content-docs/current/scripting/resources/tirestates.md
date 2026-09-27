@@ -6,13 +6,8 @@ description: 关于字节大小及其对应轮胎状态位的说明。
 
 :::note
 
-轮胎状态被原生函数使用，例如[获取车辆损伤状态](../functions/GetVehicleDamageStatus)和[更新车辆损伤状态](../functions/UpdateVehicleDamageStatus)。
-
-:::
-
-:::note
-
-即使超过 4 个轮胎的车辆（如卡车）也仅有 4 个轮胎状态位。
+- 轮胎状态被原生函数使用，例如[获取车辆损伤状态](../functions/GetVehicleDamageStatus)和[更新车辆损伤状态](../functions/UpdateVehicleDamageStatus)。
+- 即使超过 4 个轮胎的车辆（如卡车）也仅有 4 个轮胎状态位。
 
 :::
 

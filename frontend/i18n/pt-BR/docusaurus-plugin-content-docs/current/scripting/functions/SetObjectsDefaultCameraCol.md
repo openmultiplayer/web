@@ -56,7 +56,7 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função afeta apenas a colisão de câmeras de objetos criados AFTER seu uso - ela não alterna as colisões de câmeras de objetos existentes.
 

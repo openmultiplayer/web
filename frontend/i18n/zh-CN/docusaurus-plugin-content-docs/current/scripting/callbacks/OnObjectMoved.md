@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## 注意
 
-:::tip
+:::note
 
 在回调中使用[SetObjectPos](../functions/SetObjectPos)函数无效，需通过重新创建物体解决此问题
 

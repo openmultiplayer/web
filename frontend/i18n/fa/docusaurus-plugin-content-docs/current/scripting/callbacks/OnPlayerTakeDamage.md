@@ -66,7 +66,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 - weaponid مقدار 37 (flame thrower) را از هر منبع آتش (مثل مولوتوف، 18) برخواهد گرداند.
 - weaponid مقدار 51 را از هر اسلحه‌ای که انفجار ایجاد می‌کند (مثل RPG، نارنجک) برخواهد گرداند

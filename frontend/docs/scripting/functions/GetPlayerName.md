@@ -41,7 +41,7 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 A player's name can be up to 24 characters long by using [SetPlayerName](SetPlayerName).
 

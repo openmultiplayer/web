@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 ## نکات
 
-:::warning
+:::note
 
 گرانش پیش‌فرض 0.008 هست.
 

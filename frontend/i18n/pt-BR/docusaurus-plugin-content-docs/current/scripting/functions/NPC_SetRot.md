@@ -51,12 +51,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Os valores de rotação estão em graus (0-360).
 - A rotação do eixo Z afeta a direção de faceamento (o mesmo que [NPC_SetFacingAngle](NPC_SetFacingAngle)).
 - As rotações X e Y podem criar NPCs inclinado ou de cabeça para baixo.
-- Use [NPC_GetRot](NPC_GetRot) para recuperar os valores de rotação atuais.
+
+:::
+
+:::tip
+
+Use [NPC_GetRot](NPC_GetRot) para recuperar os valores de rotação atuais.
 
 :::
 

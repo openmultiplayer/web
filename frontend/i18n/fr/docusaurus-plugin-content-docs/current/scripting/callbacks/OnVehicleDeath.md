@@ -34,7 +34,7 @@ public OnVehicleDeath(vehicleid, killerid)
 
 ## Astuces
 
-:::tip
+:::note
 
 Cette callback est appelée lorsqu'un véhicule entre dans l'eau mais il peut être sauvé de la destruction si il est submergé en partie ou si il est téléporté. Cette callback ne sera pas appelée une seconde fois et le véhicule disparaîtra après la sortie du conducteur, ou peu de temps après.
 

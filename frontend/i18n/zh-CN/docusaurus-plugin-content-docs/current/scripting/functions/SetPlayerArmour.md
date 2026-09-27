@@ -33,7 +33,7 @@ public OnPlayerSpawn(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数使用英式拼写"护甲值"而非美式"armor"，与 SA-MP 其他函数存在拼写差异
 

@@ -35,7 +35,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## 注意
 
-:::tip
+:::note
 
 此回调仅在玩家通过点击地图标记目标时触发，按键操作不会触发。若点击位置距离玩家过远，返回的Z坐标将为0（无效值），建议使用[MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas)或[ColAndreas](https://github.com/Pottus/ColAndreas)插件获取精确Z坐标
 

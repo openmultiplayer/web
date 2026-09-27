@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 ## نکات
 
-:::tip
+:::note
 
 - x و y با مقادیر مختلف TextDrawAlignment معنی متفاوتی دارن: 1 (چپ): اونا گوشه سمت راست جعبه هستن، مختصات مطلق. 2 (وسط): باید معکوس بشن (دو تاشون رو عوض کن) و مقدار x عرض کلی جعبه هست. 3 (راست): x و y مختصات گوشه سمت چپ جعبه هستن
 - استفاده از نوع فونت 4 (sprite) و 5 (model preview) X و Y این تابع رو از مختصات گوشه به WIDTH و HEIGHT (offset ها) تبدیل می‌کنه.
@@ -45,7 +45,7 @@ public OnGameModeInit()
 
 :::tip
 
-- اگر می‌خوای text size یک textdraw که قبلاً نشون داده شده رو تغییر بدی، نیازی نیست دوباره بسازیش. بعد از تغییر textdraw، فقط از [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) استفاده کن و تغییر قابل مشاهده خواهد بود.
+اگر می‌خوای text size یک textdraw که قبلاً نشون داده شده رو تغییر بدی، نیازی نیست دوباره بسازیش. بعد از تغییر textdraw، فقط از [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) استفاده کن و تغییر قابل مشاهده خواهد بود.
 
 :::
 

@@ -30,7 +30,7 @@ PlayerTextDrawSetShadow(playerid, MyTextDraw, 1);
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Sjena se može izrezati po polju boxa/okvira ako je postavljena veličina prevelika za to područje.
 

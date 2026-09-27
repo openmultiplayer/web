@@ -40,12 +40,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - A matriz deve ser grande o suficiente para conter todos os NPC IDs.
 - Somente NPCs válidos estão incluídos na matriz.
 - A função retorna o número real de NPCs encontrados.
-- Use isto para iterar todos os NPCs no servidor.
+
+:::
+
+:::tip
+
+Use isto para iterar todos os NPCs no servidor.
 
 :::
 

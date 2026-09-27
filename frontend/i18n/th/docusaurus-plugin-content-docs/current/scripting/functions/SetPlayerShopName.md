@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 This function does not support casino scripts.
 

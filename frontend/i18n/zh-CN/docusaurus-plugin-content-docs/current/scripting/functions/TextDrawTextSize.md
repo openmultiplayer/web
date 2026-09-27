@@ -34,24 +34,21 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 不同 TextDrawAlignment 值对坐标系的解释差异：
   1（左对齐）：参数值为文本框右侧边界的绝对坐标
   2（居中对齐）：需交换 X/Y 参数顺序，X 值代表整体宽度
   3（右对齐）：参数值为文本框左侧边界的绝对坐标
-
 - 使用 4 号字体（精灵）和 5 号字体（模型预览）时，此函数参数将转换为宽高偏移量
-
 - 文本框坐标系原点（TextDrawCreate 设定坐标）向左偏移 5.0 单位，向上偏移 10.0 单位
-
 - 此函数定义的可点击区域在启用 TextDrawSetSelectable 时生效，无论是否显示文本框
 
 :::
 
 :::tip
 
-- 修改已显示的文本绘图尺寸时无需重建，通过[TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll)刷新即可立即生效
+修改已显示的文本绘图尺寸时无需重建，通过[TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll)刷新即可立即生效
 
 :::
 

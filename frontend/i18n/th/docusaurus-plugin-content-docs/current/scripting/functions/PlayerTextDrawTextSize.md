@@ -41,7 +41,7 @@ PlayerTextDrawTextSize(playerid, MyTextDraw, 2.0, 3.6);
 
 ## บันทึก
 
-:::tip
+:::note
 
 The x and y have different meanings with different PlayerTextDrawAlignment values: 1 (left): they are the right-most corner of the box, absolute coordinates. 2 (center): they need to inverted (switch the two) and the x value is the overall width of the box. 3 (right): the x and y are the coordinates of the left-most corner of the box
 

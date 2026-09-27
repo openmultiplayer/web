@@ -64,7 +64,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## Astuces
 
-:::tip
+:::note
 
 Le weaponid retournera la raison 37 _(lance-flammes)_ de n'importe quelle source de feu _(par exemple molotov, 18)_.
 

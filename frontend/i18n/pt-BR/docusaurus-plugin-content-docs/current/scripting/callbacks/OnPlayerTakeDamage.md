@@ -64,7 +64,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## Notas
 
-:::tip
+:::note
 
 O ID da arma retornará 37 (Lança Chamas) para qualquer fonte que utilize fogo (EX: Molotov). O ID da arma retornará 51 para qualquer fonte que utilize explosões (EX: RPG, granada). 'playerid' é o único que pode chamar esta callback. A quantidade (amount) sempre será o valor máximo do dano que tal arma (weaponid) pode causar, mesmo quando a vida restante é menor do que o dano máximo. Então quando alguém tem 100.0 de vida e é atingido por uma Desert Eagle, que possui um dano total de 46.2, será necessário 3 tiros para matar o jogador. Todos os 3 tiros causarão 46.2 de dano, mesmo que a vida restante do jogador seja apenas de 7.6 após dois tiros.
 

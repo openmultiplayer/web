@@ -43,7 +43,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## Notas
 
-:::tip
+:::note
 
 Este callback solo se llama cuando la sirena de un vehículo se enciende o apaga, NO cuando la sirena alternativa está en uso (sosteniendo la bocina).
 

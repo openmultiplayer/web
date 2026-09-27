@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 ## บันทึก
 
-:::tip
+:::note
 
 When filterscripts or plugins are specified as the varname, this function only returns the name of the first specified filterscript or plugin.
 
@@ -46,7 +46,8 @@ Type 'varlist' in the server console to display a list of available console vari
 
 :::warning
 
-Using this function with anything other than a string (integer, boolean or float) will cause your server to crash. Using it with a nonexistent console variable will also cause your server to crash.
+- Using this function with anything other than a string (integer, boolean or float) will cause your server to crash. (Fixed in open.mp)
+- Using it with a nonexistent console variable will also cause your server to crash. (Fixed in open.mp)
 
 :::
 

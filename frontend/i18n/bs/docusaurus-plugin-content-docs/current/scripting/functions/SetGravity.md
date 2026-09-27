@@ -31,7 +31,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::warning
+:::note
 
 Zadana gravitacija je 0.008.
 

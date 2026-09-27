@@ -34,11 +34,12 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
-X i y imaju različita značenja s različitim vrijednostima TextDrawAlignment: 1 (lijevo): krajnji su desni ugao boxa, apsolutna kordinatama. 2 (sredina): trebaju se okrenuti (prebaciti dva), a X vrijednost je ukupna širina boxa. 3 (desno): x i y su kordinate krajnjeg lijevog ugla boxa.
-
-Upotrebom tipa fonta 4 (sprite) i 5 (pregled modela) pretvara X i Y ove funkcije iz kordinata ugla u WIDTH i HEIGHT (offseti). Okvir TextDraw započinje 10.0 jedinica gore i 5.0 lijevo kao ishodište (TextDrawCreate kordinata). Ova funkcija definira područje na koje je moguće kliknuti za upotrebu s TextDrawSetSelectable, bilo da je box prikazan ili ne.
+- X i y imaju različita značenja s različitim vrijednostima TextDrawAlignment: 1 (lijevo): krajnji su desni ugao boxa, apsolutna kordinatama. 2 (sredina): trebaju se okrenuti (prebaciti dva), a X vrijednost je ukupna širina boxa. 3 (desno): x i y su kordinate krajnjeg lijevog ugla boxa.
+- Upotrebom tipa fonta 4 (sprite) i 5 (pregled modela) pretvara X i Y ove funkcije iz kordinata ugla u WIDTH i HEIGHT (offseti).
+- Okvir TextDraw započinje 10.0 jedinica gore i 5.0 lijevo kao ishodište (TextDrawCreate kordinata).
+- Ova funkcija definira područje na koje je moguće kliknuti za upotrebu s TextDrawSetSelectable, bilo da je box prikazan ili ne.
 
 :::
 

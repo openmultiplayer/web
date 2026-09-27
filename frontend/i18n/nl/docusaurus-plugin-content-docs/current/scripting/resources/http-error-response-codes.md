@@ -5,7 +5,9 @@ description: HTTP-foutcodes en beschrijvingen.
 ---
 
 :::note
+
 Deze codes vullen normale [HTTP](../functions/HTTP)-responscodes aan (in `response_code`).
+
 :::
 
 | Code | Fout                          | Omschrijving                                                                             |

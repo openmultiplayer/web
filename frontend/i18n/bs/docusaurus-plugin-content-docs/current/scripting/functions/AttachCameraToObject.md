@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Prvo morate stvoriti objekt, prije nego što pokušate za to prikvačiti kameru igrača.
 

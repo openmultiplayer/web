@@ -68,13 +68,8 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Kupi o
 
 :::tip
 
-Preporučuje se upotreba enuma (vidi gore) ili definicija (#define) da bi se utvrdilo koji ID dijalozi imaju, kako bi se izbjegla zabuna u budućnosti. Nikada ne biste trebali koristiti doslovne brojeve za ID-ove - postaje zbunjujuće.
-
-:::
-
-:::tip
-
-Koristite ugrađivanje boja za više boja u tekstu. Korišćenje -1 kao dijalogida zatvara sve dijaloge koji su trenutno prikazani na ekranu klijenta.
+- Preporučuje se upotreba enuma (vidi gore) ili definicija (#define) da bi se utvrdilo koji ID dijalozi imaju, kako bi se izbjegla zabuna u budućnosti. Nikada ne biste trebali koristiti doslovne brojeve za ID-ove - postaje zbunjujuće.
+- Koristite ugrađivanje boja za više boja u tekstu. Korišćenje -1 kao dijalogida zatvara sve dijaloge koji su trenutno prikazani na ekranu klijenta.
 
 :::
 

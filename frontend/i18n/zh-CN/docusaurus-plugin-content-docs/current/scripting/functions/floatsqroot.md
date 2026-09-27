@@ -27,7 +27,7 @@ new Float:sqroot = floatsqroot(25.0); // 返回5.0，因为5x5=25
 
 ## 注意事项
 
-:::tip
+:::note
 
 当输入值为负数时，此函数会引发"定义域(domain)"错误。建议使用 [floatabs](floatabs) 获取绝对值（正数值）。
 

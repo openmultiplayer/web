@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - NPCs will continuously follow the target player until stopped.
 - The `updateDelayMS` parameter controls how often the NPC updates its target position.

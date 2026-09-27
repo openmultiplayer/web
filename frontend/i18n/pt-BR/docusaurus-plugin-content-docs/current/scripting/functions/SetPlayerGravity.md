@@ -36,9 +36,9 @@ public OnPlayerConnect(playerid)
 ```
 ## Notas
 
-:::warning
+:::note
 
-A gravidade padrão é 0,008.
+A gravidade padrão é 0.008.
 
 :::
 

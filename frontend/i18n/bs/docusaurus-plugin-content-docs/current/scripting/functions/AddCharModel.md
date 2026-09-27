@@ -46,7 +46,7 @@ AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
 
 ## Zabilješke
 
-:::tip
+:::note
 
 useartwork mora biti omogućen (u server settings) da bi ovo radilo
 

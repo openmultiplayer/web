@@ -67,7 +67,7 @@ O número 255 é bastante compreensível, mas o que é ‘FF’? Vamos dar uma o
 
 ---
 
-:::caution
+:::note
 
 **Nota** | '^' está elevado a neste caso, não o operador exclusivo bit a bit.
 
@@ -109,7 +109,7 @@ F * (16^1) + F * (16^0)
 
 Não existe realmente um uso único para o hexadecimal, você pode usá-lo quando quiser; embora seja usado principalmente para definições de cores (veremos isso mais tarde). Algumas pessoas usam hexadecimal como auxílio visual para tornar as coisas mais claras (Y_Less), por exemplo:
 
-:::caution
+:::note
 
 **Nota** | Este é um exemplo complicado, não se preocupe se não entender.
 

@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 Variables aren't reset until after OnPlayerDisconnect is called, so the values are still accessible in OnPlayerDisconnect.
 

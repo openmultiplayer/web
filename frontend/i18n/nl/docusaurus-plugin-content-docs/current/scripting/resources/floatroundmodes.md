@@ -5,7 +5,9 @@ description: Afrondingsmodi voor floatround.
 ---
 
 :::info
+
 Modi voor [floatround](../functions/floatround).
+
 :::
 
 | Modus               | Omschrijving                                                        |

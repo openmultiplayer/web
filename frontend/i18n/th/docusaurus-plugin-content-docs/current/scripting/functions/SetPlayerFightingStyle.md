@@ -31,7 +31,7 @@ if (strcmp(cmdtext, "/boxing", true) == 0)
 
 ## บันทึก
 
-:::tip
+:::note
 
 This does not affect normal fist attacks - only special/secondary attacks (aim + press 'secondary attack' key).
 

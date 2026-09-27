@@ -35,7 +35,7 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
 Caso o textdraw já esteja sendo mostrado, ele deve ser mostrado novamente ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) para mostrar as alterações desta função.
 

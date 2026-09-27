@@ -34,7 +34,7 @@ ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, 1, 1, 1, 1, 1, 1);
 
 ## Zabilješke
 
-:::tip
+:::note
 
 'forcesync' je neobavezan parametar, koji je po zadanim postavkama 0, u većini slučajeva nije potreban s obzirom da igrači sinhroniziraju animacije sami od sebe. 'forcesync' parametar može natjerati sve igrale koji vide 'playerid' (tog igrača) reprodukciju animacije bez obzira na to da li je igrač izvodi. Ovo je korisno uOvo je korisno u okolnostima kada igrač ne može sam sinhronizirati animaciju. Na primjer, mogu biti pauzirani.
 

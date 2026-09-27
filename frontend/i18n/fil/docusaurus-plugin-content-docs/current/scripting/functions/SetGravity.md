@@ -31,7 +31,7 @@ public OnGameModeInit()
 
 ## Notes
 
-:::warning
+:::note
 
 Ang default na gravity ay 0.008.
 

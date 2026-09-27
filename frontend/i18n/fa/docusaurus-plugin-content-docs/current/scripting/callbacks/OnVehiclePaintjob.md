@@ -33,7 +33,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 این کالبک توسط ChangeVehiclePaintjob فراخوانده نمی‌شود. ممکن است از OnVehicleChangePaintjob از vSync استفاده کنید تا بدانید بازیکن کی paintjob را خریداری می‌کند.
 

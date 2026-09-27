@@ -59,7 +59,7 @@ public OnPlayerConnect(playerid)
 
 :::
 
-:::tip
+:::note
 
 این تابع فقط گنگ زون را ایجاد می‌کند، باید از [PlayerGangZoneShow](PlayerGangZoneShow) برای نمایش آن استفاده کنید.
 

@@ -47,7 +47,7 @@ public OnPlayerSpawn(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função é separada dos pools CreateObject/CreatePlayerObject.
 

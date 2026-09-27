@@ -23,7 +23,9 @@ Bij het maken van strings zijn sommige tekens lastig te noteren; escape‑codes 
 | Teken met hexadecimale code "hhh" | \xhhh;      |
 
 :::note
+
 De puntkomma na `\ddd;` en `\xhhh;` is optioneel en kan de escape‑reeks expliciet beëindigen in een string.
+
 :::
 
 Bron: `pawn-lang.pdf` (p. 99)

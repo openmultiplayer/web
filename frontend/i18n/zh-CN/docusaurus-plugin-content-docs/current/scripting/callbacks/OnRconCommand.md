@@ -44,7 +44,7 @@ public OnRconCommand(cmd[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 当玩家输入指令时，`/rcon`前缀不会包含在cmd参数中
 - 在此回调中使用`print`函数会同时向玩家聊天框和服务器日志输出信息

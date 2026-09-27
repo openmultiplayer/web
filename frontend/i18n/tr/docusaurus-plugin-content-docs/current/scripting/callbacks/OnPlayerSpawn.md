@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Oyuncu spawn olduktan sonra bazen \$100 oyuncunun üzerinden alabilir.
 

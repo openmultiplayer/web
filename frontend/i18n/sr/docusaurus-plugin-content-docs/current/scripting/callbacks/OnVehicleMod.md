@@ -38,7 +38,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## Белешке
 
-:::tip
+:::note
 
 [AddVehicleComponent](../functions/AddVehicleComponent) не позива ову повратну функцију.
 

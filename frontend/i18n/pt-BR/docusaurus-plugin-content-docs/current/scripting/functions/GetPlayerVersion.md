@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 A versão de um cliente pode ter até 24 caracteres, caso contrário a conexão será rejeitada devido a "Conexão de cliente inválida". No entanto, jogadores normais só podem entrar com uma versão com comprimento entre 5 (0.3.7) e 9 (0.3.DL-R1) caracteres.
 

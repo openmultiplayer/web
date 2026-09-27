@@ -31,7 +31,7 @@ public OnScriptUnloadPlayer(playerid, bool:isEntryScript)
 
 ## 注意事项
 
-:::tip
+:::note
 
 此回调在**运行时卸载**侧脚本（滤镜脚本）时触发
 

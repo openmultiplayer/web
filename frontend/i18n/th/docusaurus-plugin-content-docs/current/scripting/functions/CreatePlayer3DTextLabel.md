@@ -17,7 +17,7 @@ Creates a 3D Text Label only for a specific player
 | x               | X Coordinate (or offset if attached)                                            |
 | y               | Y Coordinate (or offset if attached)                                            |
 | z               | Z Coordinate (or offset if attached)                                            |
-| DrawDistance    | The distance where you are able to see the 3D Text Label                        |
+| drawDistance    | The distance where you are able to see the 3D Text Label                        |
 | attachedplayer  | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
 | attachedvehicle | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
 | testLOS         | 0/1 Test the line-of-sight so this text can't be seen through walls             |
@@ -41,15 +41,15 @@ if (strcmp(cmd, "/playerlabel", true) == 0)
 
 ## บันทึก
 
-:::tip
+:::note
 
-drawdistance seems to be a lot smaller when spectating.
+drawDistance seems to be a lot smaller when spectating.
 
 :::
 
 :::warning
 
-If text[] is empty, the server/clients next to the text might crash!
+If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
 
 :::
 

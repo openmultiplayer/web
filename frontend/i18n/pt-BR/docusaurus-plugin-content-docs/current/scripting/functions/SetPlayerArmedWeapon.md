@@ -47,7 +47,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função equipa o jogador com uma arma que ele já possui; não lhes dá uma nova arma. Consulte GivePlayerWeapon.
 

@@ -34,7 +34,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## Astuces
 
-:::tip
+:::note
 
 Cette callback est appelée chaque fois qu'un joueur change de virtual word, même s'il n'y a aucun custom model dans le world concerné.
 

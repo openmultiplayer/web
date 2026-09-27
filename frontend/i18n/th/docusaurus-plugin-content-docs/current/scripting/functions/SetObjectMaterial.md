@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 Vertex lighting of the object will disappear if material color is changed.
 

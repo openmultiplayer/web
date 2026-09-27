@@ -33,7 +33,7 @@ public OnGameModeInit()
 
 ## Notlar
 
-:::tip
+:::note
 
 Obje sınırı 1000(MAX_OBJECTS)'dir. Sınırın aşılması için streamer kullanılabilir.
 

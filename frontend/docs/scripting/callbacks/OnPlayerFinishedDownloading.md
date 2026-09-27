@@ -32,7 +32,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## Notes
 
-:::tip
+:::note
 
 This callback is called every time a player changes virtual worlds, even if there are no custom models present in that world.
 

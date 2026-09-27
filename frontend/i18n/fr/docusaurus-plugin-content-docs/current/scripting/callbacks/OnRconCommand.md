@@ -44,7 +44,7 @@ public OnRconCommand(cmd[])
 
 ## Astuces
 
-:::tip
+:::note
 
 /rcon n'est pas inclut dans `cmd` lorsqu'un joueur tape la commande.
 

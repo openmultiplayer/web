@@ -42,7 +42,9 @@ Deze tags hoeven niet ingesloten te worden:
 | `~k~` | Toetsenmapping (bijv. `~k~~VEHICLE_TURRETLEFT~`). Lijst: zie [Keys](../resources/keys). |
 
 :::caution
+
 Gebruik niet te veel kleuren/specials in één gametext; dit kan clients laten crashen. Zorg voor een even aantal `~`-tekens in de string.
+
 :::
 
 ## Tekststijlen

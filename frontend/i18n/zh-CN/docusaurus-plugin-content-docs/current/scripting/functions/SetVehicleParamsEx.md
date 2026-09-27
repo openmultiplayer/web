@@ -78,7 +78,7 @@ public DisableVehicleAlarm(vehicleid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 警报触发后不会自动停止，需手动调用此函数关闭
 - 启用[ManualVehicleEngineAndLights](ManualVehicleEngineAndLights)后，车灯在白天也会保持开启状态

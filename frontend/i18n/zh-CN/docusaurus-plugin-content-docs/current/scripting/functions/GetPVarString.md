@@ -44,7 +44,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## 注意事项
 
-:::warning
+:::note
 
 当返回值为 0 时（变量未设置），`output` 数组内容不会自动清空，需手动重置数组内容以避免脏数据
 

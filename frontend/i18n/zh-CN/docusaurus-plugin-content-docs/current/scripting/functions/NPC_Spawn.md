@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - NPC 在生成前必须通过 [NPC_Create](NPC_Create) 创建。
 

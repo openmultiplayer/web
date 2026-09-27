@@ -29,7 +29,7 @@ SetPlayerAmmo(playerid, WEAPON_SHOTGUN, 100); // 将霰弹枪弹药设为100发
 
 ## 注意事项
 
-:::tip
+:::note
 
 参数 'weaponslot' 在 SA-MP 头文件中是拼写错误，必须使用武器 ID 而非武器槽编号
 

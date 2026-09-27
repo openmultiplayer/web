@@ -48,7 +48,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## บันทึก
 
-:::tip
+:::note
 
 This callback is only called when a vehicle's siren is toggled on or off, NOT when the alternate siren is in use (holding horn).
 

@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - NPC 不会自动生成。使用 [NPC_Spawn](NPC_Spawn) 来生成它。
 - NPC 名称必须遵循与玩家名称相同的规则。

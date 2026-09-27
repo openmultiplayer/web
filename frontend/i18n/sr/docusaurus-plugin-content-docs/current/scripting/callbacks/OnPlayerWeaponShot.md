@@ -41,7 +41,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## Белешке
 
-:::tip
+:::note
 
 Овај повратни позив се позива само када је компензција за кашњење омогућена. Ако је hittype:
 

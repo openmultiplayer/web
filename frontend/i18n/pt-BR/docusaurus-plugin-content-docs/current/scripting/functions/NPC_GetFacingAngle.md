@@ -47,10 +47,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - O ângulo é passado por referência e será modificado.
-- Os ângulos estão em graus (0,0 a 360,0).
+- Os ângulos estão em graus (0.0 a 360.0).
 - Os ângulos são anti-horários em GTA:SA; 90 graus seria Leste no mundo real, mas em GTA:SA 90 graus é na verdade Oeste. Norte e Sul ainda são 0/360 e 180. Para converter ângulos GTA:SA em ângulos de bússola do mundo real, basta fazer 360 - ângulo.
 
 :::

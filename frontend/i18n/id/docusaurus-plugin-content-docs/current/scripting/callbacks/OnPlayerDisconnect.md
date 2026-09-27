@@ -49,7 +49,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 ## Catatan
 
-:::tip
+:::note
 
 Beberapa fungsi mungkin tidak dapat bekerja dengan benar ketika digunakan di dalam callback ini karena pemain sudah terputus ketika callback ini terpanggil. Ini artinya anda tidak bisa mendapatkan informasi yang tidak ambigu dari fungsi seperti GetPlayerIp dan GetPlayerPos.
 

@@ -47,7 +47,7 @@ public OnPlayerConnect(playerid)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 اسم بازیکن می‌تونه با استفاده از [SetPlayerName](SetPlayerName) تا 24 کاراکتر طولانی باشه.
 

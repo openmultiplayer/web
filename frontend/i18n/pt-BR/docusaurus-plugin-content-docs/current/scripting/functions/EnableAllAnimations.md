@@ -61,5 +61,7 @@ Esta função é particularmente útil quando:
 - Utilizando animações customizadas ou modificadas
 
 :::warning
+
 Algumas animações podem não funcionar corretamente em todas as versões, mesmo quando habilitadas.
+
 :::

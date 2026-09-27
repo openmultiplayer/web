@@ -44,7 +44,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## Notas
 
-:::tip
+:::note
 
 Essa callback **só é chamada** quando a sirene é ligada/desligada, **NÃO** quando a sirene alternativa está sendo usada (segurando a buzina).
 

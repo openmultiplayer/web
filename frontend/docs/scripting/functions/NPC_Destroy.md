@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - This will remove the NPC from the server completely and the ID becomes invalid after destruction.
 

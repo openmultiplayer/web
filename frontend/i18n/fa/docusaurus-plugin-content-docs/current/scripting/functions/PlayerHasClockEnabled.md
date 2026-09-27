@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 زمان با بقیه بازیکنا همگام نیست! زمان رو می‌تونی با استفاده از [SetPlayerTime](SetPlayerTime) همگام کنی.
 

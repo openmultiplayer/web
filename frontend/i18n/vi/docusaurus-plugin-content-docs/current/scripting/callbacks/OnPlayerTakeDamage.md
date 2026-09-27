@@ -66,7 +66,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## Ghi chú
 
-:::tip
+:::note
 
 - weaponid sẽ trả về 37 (súng phun lửa) từ bất kỳ nguồn lửa nào (ví dụ: molotov, 18).
 - weaponid sẽ trả về 51 từ bất kỳ vũ khí nào tạo ra vụ nổ (ví dụ: RPG, lựu đạn).

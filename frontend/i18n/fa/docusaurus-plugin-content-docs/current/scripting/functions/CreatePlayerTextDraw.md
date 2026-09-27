@@ -41,7 +41,7 @@ public OnPlayerConnect(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 Player-textdraw ها هنگام قطع اتصال بازیکن خودکار حذف می‌شوند.
 

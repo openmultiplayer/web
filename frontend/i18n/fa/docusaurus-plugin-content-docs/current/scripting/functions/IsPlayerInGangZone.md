@@ -26,13 +26,8 @@ tags: ["player", "gangzone"]
 
 :::warning
 
-این تابع برای open.mp هست، نه SA-MP. برای استفاده با SA-MP، نیاز به پلاگین [YSF](https://github.com/IS4Code/YSF/releases) داری.
-
-:::
-
-:::warning
-
-این تابع بدون فراخوانی [UseGangZoneCheck](UseGangZoneCheck) در ابتدا نمی‌تونه استفاده بشه.
+- این تابع برای open.mp هست، نه SA-MP. برای استفاده با SA-MP، نیاز به پلاگین [YSF](https://github.com/IS4Code/YSF/releases) داری.
+- این تابع بدون فراخوانی [UseGangZoneCheck](UseGangZoneCheck) در ابتدا نمی‌تونه استفاده بشه.
 
 :::
 

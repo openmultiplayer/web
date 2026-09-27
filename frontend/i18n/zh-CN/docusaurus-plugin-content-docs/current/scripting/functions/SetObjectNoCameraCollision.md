@@ -38,7 +38,7 @@ public OnObjectMoved(objectid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数仅在地图边界外生效（X/Y 轴超过 ±3000 单位时）
 

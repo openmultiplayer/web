@@ -36,7 +36,7 @@ public OnPlayerConnect(playerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at PlayerTextDrawTextSize.
 

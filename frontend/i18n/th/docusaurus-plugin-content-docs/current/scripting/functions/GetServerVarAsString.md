@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 ## บันทึก
 
-:::tip
+:::warning
 
 When filterscripts or plugins is specified as the varname, this function only returns the name of the first specified filterscript or plugin. This is a bug.
 

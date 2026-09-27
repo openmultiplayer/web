@@ -38,7 +38,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Kada je stanje igrača PLAYER_STATE_DRIVER ili PLAYER_STATE_PASSENGER, ova funkcija vraća oružje koje je igrač držao prije nego što je ušao u vozilo. Ako se varalica koristi za stvaranje municije u vozilu, ova funkcija to neće prijaviti.
 

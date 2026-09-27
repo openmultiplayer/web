@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 虚拟世界允许分离 NPC 和玩家。
 - 不同虚拟世界中的 NPC 无法互相看到。

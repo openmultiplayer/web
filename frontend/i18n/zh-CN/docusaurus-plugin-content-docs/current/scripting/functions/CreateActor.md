@@ -43,9 +43,10 @@ public OnGameModeExit()
 
 ## 注意事项
 
-:::tip
+:::note
 
-演员实体适用于静态场景元素（如收银员、酒保），可通过[ApplyActorAnimation](ApplyActorAnimation)执行单次或循环动画
+- 演员实体适用于静态场景元素（如收银员、酒保），可通过[ApplyActorAnimation](ApplyActorAnimation)执行单次或循环动画
+- 默认处于无敌状态
 
 :::
 
@@ -53,7 +54,6 @@ public OnGameModeExit()
 
 - 演员系统独立于 NPC 系统，不占用玩家槽位且操作方式不同（最大数量 1000）
 - 演员会被车辆推动，建议使用定时器重置位置
-- 默认处于无敌状态
 
 :::
 

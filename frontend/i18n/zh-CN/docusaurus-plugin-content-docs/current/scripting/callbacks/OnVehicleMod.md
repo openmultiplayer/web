@@ -38,7 +38,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 此回调不会通过 [AddVehicleComponent](../functions/AddVehicleComponent) 函数触发
 

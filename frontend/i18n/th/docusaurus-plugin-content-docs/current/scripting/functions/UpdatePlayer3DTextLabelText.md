@@ -24,7 +24,7 @@ This function does not return any specific values.
 
 :::warning
 
-If text[] is empty, the server/clients next to the text might crash!
+If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
 
 :::
 

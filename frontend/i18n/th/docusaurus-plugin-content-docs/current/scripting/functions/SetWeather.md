@@ -29,7 +29,7 @@ if (!strcmp(cmdtext, "/sandstorm", true))
 
 ## บันทึก
 
-:::tip
+:::note
 
 If TogglePlayerClock is enabled, weather will slowly change over time, instead of changing instantly. There are only valid 21 weather IDs in the game (0 - 20), however the game does not have any form of range check.
 

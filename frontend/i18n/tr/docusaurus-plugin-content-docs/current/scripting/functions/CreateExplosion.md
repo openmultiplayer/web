@@ -39,7 +39,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bir oyuncu maksimum aynı anda 10 tane patlama görüntüleyebilir.
 

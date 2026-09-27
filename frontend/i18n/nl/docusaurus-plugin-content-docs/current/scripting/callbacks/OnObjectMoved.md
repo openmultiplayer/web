@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## Notities
 
-:::tip
+:::note
 
 [SetObjectPos](../functions/SetObjectPos) werkt niet wanneer het in deze callback gebruikt wordt. Recreate het object om dit te verhelpen.
 

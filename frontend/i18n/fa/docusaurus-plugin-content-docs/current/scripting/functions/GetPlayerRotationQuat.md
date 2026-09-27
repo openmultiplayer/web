@@ -41,7 +41,7 @@ GetPlayerRotationQuat(playerid, w, x, y, z);
 
 ## نکات
 
-:::tip
+:::note
 
 هیچ variation 'set' از این تابع وجود ندارد؛ شما نمی‌توانید چرخش بازیکن را SET کنید ( به جز زاویه نگاه (چرخش Z) ).
 

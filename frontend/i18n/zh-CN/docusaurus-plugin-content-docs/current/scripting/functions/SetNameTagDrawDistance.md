@@ -25,7 +25,7 @@ SetNameTagDrawDistance(20.0);
 
 ## 注意事项
 
-:::tip
+:::note
 
 默认可见距离为 70.0 SA 单位
 

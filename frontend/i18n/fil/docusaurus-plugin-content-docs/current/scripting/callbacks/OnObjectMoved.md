@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## Mga Dapat Unawain
 
-:::tip
+:::note
 
 Ang SetObjectPos ay hindi gumagana kapag ginamit sa callback na ito. Upang ito'y maayos, gawin muli o i-recreate ang object.
 

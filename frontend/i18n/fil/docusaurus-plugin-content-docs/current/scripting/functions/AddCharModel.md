@@ -42,7 +42,7 @@ AddCharModel(305, 20002, "lapdpd2.dff", "lapdpd2.txd");
 
 ## Notes
 
-:::tip
+:::note
 
 ang useartwork ay dapat munang paganahin sa mga setting ng server upang ito ay gumana
 

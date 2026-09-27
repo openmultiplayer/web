@@ -170,7 +170,9 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 ## Estilo 4: `DIALOG_STYLE_TABLIST`
 
-:::tip Este estilo foi adicionado na versão **SA-MP 0.3.7** e não funcionará em versões anteriores!
+:::warning
+
+Este estilo foi adicionado na versão **SA-MP 0.3.7** e não funcionará em versões anteriores!
 
 :::
 
@@ -216,7 +218,9 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 ## Estilo 5: `DIALOG_STYLE_TABLIST_HEADERS`
 
-:::tip Este estilo foi adicionado na versão **SA-MP 0.3.7** e não funcionará em versões anteriores!
+:::warning
+
+Este estilo foi adicionado na versão **SA-MP 0.3.7** e não funcionará em versões anteriores!
 
 :::
 

@@ -19,7 +19,7 @@ Sets a timer to call a function after the specified interval. This variant ('Ex'
 
 ## Returns
 
-The ID of the timer that was started. Timer IDs start at 1 and are never reused. There are no internal checks to verify that the parameters passed are valid (e.g. duration not a minus value). Y_Less' 'fixes2' plugin implements these checks and also vastly improves the accuracy of timers, and also adds support for array/string passing.
+The ID of the timer that was started. Timer IDs start at 1 and are never reused.
 
 ## Examples
 
@@ -68,9 +68,7 @@ public EndAntiSpawnKill(playerid)
 
 :::warning
 
-Timer intervals are not accurate (roughly 25% off) in SA-MP. There are fixes available [here](https://sampforum.blast.hk/showthread.php?tid=289675) and [here](https://sampforum.blast.hk/showthread.php?tid=650736).
-
-But it is fixed in open.mp
+Timer intervals are not accurate (roughly 25% off) in SA-MP. There are fixes available [here](https://sampforum.blast.hk/showthread.php?tid=289675) and [here](https://sampforum.blast.hk/showthread.php?tid=650736). But it is fixed in open.mp.
 
 :::
 

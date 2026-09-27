@@ -42,7 +42,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## บันทึก
 
-:::tip
+:::note
 
 ค่า Z จะถูกส่งกลับเป็น 0 (ไม่ถูกต้อง) หากมันอยู่ไกลจากผู้เล่นเกินไป; ใช้ปลั๊กอิน MapAndreas เพื่อให้ได้พิกัด Z ได้แม่นยำขึ้น
 

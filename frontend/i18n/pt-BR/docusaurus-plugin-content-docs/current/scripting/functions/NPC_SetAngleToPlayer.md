@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Esta função realiza uma única rotação; chame-o novamente para manter o NPC voltado para um jogador em movimento.
 - O jogador deve estar conectado, caso contrário o NPC não girará.

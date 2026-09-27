@@ -30,7 +30,7 @@ public OnGameModeInit()
 
 ## Notas
 
-:::tip
+:::note
 
 NPCs não têm nametags. Estas podem ser criadas com [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer).
 

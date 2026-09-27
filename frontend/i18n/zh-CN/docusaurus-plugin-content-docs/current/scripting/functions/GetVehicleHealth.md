@@ -50,15 +50,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
-车辆满血量为 1000，但更高的数值可以提升车辆耐久度。详细健康值说明请参阅[此处](../resources/vehiclehealth)。
-
-:::
-
-:::tip
-
-当车辆健康值低于 250 时会起火，数秒后将爆炸。
+- 车辆满血量为 1000，但更高的数值可以提升车辆耐久度。详细健康值说明请参阅[此处](../resources/vehiclehealth)。
+- 当车辆健康值低于 250 时会起火，数秒后将爆炸。
 
 :::
 

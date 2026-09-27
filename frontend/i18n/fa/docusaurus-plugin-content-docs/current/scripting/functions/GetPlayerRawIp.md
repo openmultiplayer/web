@@ -32,7 +32,7 @@ public OnPlayerConnect(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 PAWN حساس به حروف کوچک و بزرگ است. GetPlayerRawIP کار نخواهد کرد.
 

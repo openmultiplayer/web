@@ -44,7 +44,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 ## Notes
 
-:::tip
+:::note
 
 - There are 6 types of requests that the client processes (2, 5, 69, 70, 71, 72)
 - Type 72 doesn't use any of the other arguments [arg | offset | size].

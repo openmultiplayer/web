@@ -36,7 +36,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 همانطور که نام کالبک می‌گوید، فقط زمانی فراخوانده می‌شود که بازیکن کلیک کند تا هدف را علامت‌گذاری کند و نه زمانی که کلید را فشار دهد. مقدار Z برگشت داده شده 0 (نامعتبر) خواهد بود اگر ناحیه کلیک شده روی نقشه از بازیکن دور باشد؛ از افزونه [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) یا [ColAndreas](https://github.com/Pottus/ColAndreas) برای به دست آوردن مختصات Z دقیق‌تر استفاده کنید.
 

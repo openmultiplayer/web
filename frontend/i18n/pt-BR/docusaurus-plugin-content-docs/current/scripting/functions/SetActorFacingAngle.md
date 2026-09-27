@@ -39,7 +39,7 @@ SetActorFacingAngle(MyActor, 180.0);
 ```
 ## Notas
 
-:::tip
+:::note
 
 Ao criar um ator com [CreateActor](CreateActor), você especifica seu ângulo de orientação. Você não precisa usar esta função, a menos que queira alterar o ângulo de orientação posteriormente.
 

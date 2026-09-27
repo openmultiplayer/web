@@ -47,7 +47,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova funkcija naoružava igrača oružjem koje već ima; ne daje im novo oružje. Pogledajte GivePlayerWeapon.
 

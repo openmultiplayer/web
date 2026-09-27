@@ -40,8 +40,13 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-- Você também pode usar cores do Gametext em textdraws. (por exemplo, `~r~` `~g~` `~b~`)
-- O textdraw deve ser mostrado novamente ao jogador para atualizar a cor.
+Você também pode usar cores do Gametext em textdraws. (por exemplo, `~r~` `~g~` `~b~`)
+
+:::
+
+:::note
+
+O textdraw deve ser mostrado novamente ao jogador para atualizar a cor.
 
 :::
 

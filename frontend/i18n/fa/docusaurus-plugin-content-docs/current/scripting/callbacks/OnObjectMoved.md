@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 [SetObjectPos](../functions/SetObjectPos) هنگام استفاده در این کالبک کار نمی‌کند. برای رفع این مشکل، شی را دوباره ایجاد کنید.
 

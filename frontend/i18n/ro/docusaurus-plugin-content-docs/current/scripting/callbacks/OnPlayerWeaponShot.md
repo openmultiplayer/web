@@ -41,7 +41,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## Note
 
-:::tip
+:::note
 
 Acest apel invers este apelat numai când este activată compensarea întârzierii. Dacă hittype este:
 

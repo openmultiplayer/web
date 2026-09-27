@@ -49,7 +49,7 @@ public OnPlayerSpawn(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 Using a value smaller than 1 gives weird values.
 

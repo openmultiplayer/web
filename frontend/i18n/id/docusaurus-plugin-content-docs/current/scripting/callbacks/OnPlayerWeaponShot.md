@@ -41,7 +41,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 ## Catatan
 
-:::tip
+:::note
 
 Callback ini hanya di panggil ketika kompensasi lag diaktifkan. Jika tipe hit adalah:
 

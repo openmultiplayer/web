@@ -40,13 +40,18 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-:::tip
+:::note
 
 - The only type of pickup that can be picked up from inside a vehicle is 14 (except for special pickups such as bribes).
 - Pickups are shown to, and can be picked up by all players.
 - It is possible that if DestroyPlayerPickup() is used when a pickup is picked up, more than one player can pick up the pickup, due to lag. This can be circumvented through the use of variables.
 - Certain pickup types come with 'automatic responses', for example using an M4 model in the pickup will automatically give the player the weapon and some ammo.
-- For fully scripted pickups, type 1 should be used.
+
+:::
+
+:::tip
+
+For fully scripted pickups, type 1 should be used.
 
 :::
 

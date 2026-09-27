@@ -36,7 +36,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-Imajte na umu da igrači mogu crashati zbog neparnog broja simbola tilde (~) koji se koriste u tekstu igre. Korištenje kodova u boji (npr. ~r~) izvan 255. znaka može srušiti client.
+Imajte na umu da igrači mogu crashati zbog neparnog broja simbola tilde (~) koji se koriste u tekstu igre. Korištenje kodova u boji (npr. `~r~`) izvan 255. znaka može srušiti client.
 
 Također, prazan prostor na kraju niza može rezultirati neuspjehom. Na primjer: `"Headshot "` rezultira neuspjehom. Umjesto toga, trebao bi biti `"Headshot"` ili `"Headshot_"`.
 

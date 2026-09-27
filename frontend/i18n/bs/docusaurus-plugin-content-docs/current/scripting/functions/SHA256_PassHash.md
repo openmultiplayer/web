@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Vraćeni hash nema nula popunjavanja (npr. mogući prefiks 00ABCD123...).
 

@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 重要说明
 
-:::tip
+:::warning
 
 通过设置特殊动作类型为`SPECIAL_ACTION_NONE`（无动作）来移除喷气背包时，喷射音效会持续到玩家死亡。解决方法是对玩家应用随机动画即可正确移除喷气背包。
 

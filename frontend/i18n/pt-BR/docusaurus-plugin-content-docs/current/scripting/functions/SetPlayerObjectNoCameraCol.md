@@ -39,7 +39,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 Isso não funciona dentro dos limites normais do mapa SA.
 

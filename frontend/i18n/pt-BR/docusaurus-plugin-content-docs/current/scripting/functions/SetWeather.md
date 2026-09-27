@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 - Se [TogglePlayerClock](TogglePlayerClock) estiver ativado, o clima mudará lentamente com o tempo, em vez de mudar instantaneamente.
 - Existem apenas 21 climas IDs válidos no jogo (0 - 20), porém o jogo não possui nenhuma forma de verificação de alcance.

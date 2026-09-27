@@ -5,7 +5,9 @@ description: Wapenslots gebruikt door GetWeaponSlot en GetPlayerWeaponData.
 ---
 
 :::info
+
 Gebruikt door [GetWeaponSlot](../functions/GetWeaponSlot) en [GetPlayerWeaponData](../functions/GetPlayerWeaponData).
+
 :::
 
 | Definitie                 | Waarde |

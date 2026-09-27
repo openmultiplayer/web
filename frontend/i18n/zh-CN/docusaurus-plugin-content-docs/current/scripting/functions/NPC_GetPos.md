@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 所有坐标参数都通过引用传递且会被修改。
 

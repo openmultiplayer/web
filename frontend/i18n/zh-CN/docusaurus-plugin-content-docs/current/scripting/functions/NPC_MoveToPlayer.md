@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - NPC 将持续跟随目标玩家直到被停止。
 - `updateDelayMS` 参数控制 NPC 更新目标位置的频率。

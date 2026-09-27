@@ -5,7 +5,9 @@ description: Lijst met map-iconstijlen.
 ---
 
 :::info
+
 Te gebruiken met [SetPlayerMapIcon](../functions/SetPlayerMapIcon).
+
 :::
 
 | Waarde | Constant                  | Checkpointmarker | Radarbereik                         |

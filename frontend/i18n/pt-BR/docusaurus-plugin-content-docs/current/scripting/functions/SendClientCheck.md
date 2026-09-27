@@ -44,7 +44,7 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 ```
 ## Notas
 
-:::tip
+:::note
 
 - Existem 6 tipos de solicitações que o cliente processa (2, 5, 69, 70, 71, 72)
 - O tipo 72 não usa nenhum dos outros argumentos [arg | compensação | tamanho].

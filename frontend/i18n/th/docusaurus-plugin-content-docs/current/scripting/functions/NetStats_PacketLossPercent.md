@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 Be advised that this function will report the packets lost by the server. The packet loss number reported by the client **will** be different, not because either is incorrect, but because both the server and the client are only aware of the loss packages sent by them.
 

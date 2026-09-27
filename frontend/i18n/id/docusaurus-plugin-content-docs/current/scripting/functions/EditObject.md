@@ -47,6 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::tip
 
 Anda dapat menggerakkan kamera saat mengedit dengan menekan dan menahan spasi (atau W di kendaraan) dan menggerakkan mouse Anda.
+
 :::
 
 ## Fungsi Terkait

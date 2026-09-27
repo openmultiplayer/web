@@ -43,7 +43,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovo ne radi unutar normalnih granica SA mape.
 

@@ -37,7 +37,7 @@ printf("freeSpace = %d KiB", freeSpace);
 
 ## Notes
 
-:::tip
+:::note
 
 The maximum size that can be supported 2048 GiB (2 terabyte).
 

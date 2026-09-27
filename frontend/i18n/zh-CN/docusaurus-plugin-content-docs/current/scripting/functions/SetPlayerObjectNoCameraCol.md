@@ -39,7 +39,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 在正常圣安地列斯地图边界内此函数无效
 

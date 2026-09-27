@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::warning
+:::note
 
 استفاده از این تابع توی [OnPlayerConnect](../callbacks/OnPlayerConnect) کار نمی‌کنه.
 

@@ -32,7 +32,7 @@ public OnPlayerFinishedDownloading(playerid, virtualworld)
 
 ## 注意事项
 
-:::tip
+:::note
 
 每次玩家切换虚拟世界时都会触发此回调，即使该世界中没有自定义模型。
 

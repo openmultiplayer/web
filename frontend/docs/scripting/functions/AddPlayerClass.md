@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 ## Notes
 
-:::tip
+:::note
 
 The maximum class ID is 319 (starting from 0, so a total of 320 classes). When this limit is reached, any more classes that are added will replace ID 319.
 

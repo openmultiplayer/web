@@ -39,7 +39,7 @@ public OnPlayerDisconnect(playerid, reason)
 ```
 ## Notas
 
-:::tip
+:::note
 
 As variáveis não são redefinidas até que [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) seja chamado, portanto, os valores ainda estarão acessíveis em OnPlayerDisconnect.
 

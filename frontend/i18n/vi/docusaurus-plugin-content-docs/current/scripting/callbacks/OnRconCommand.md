@@ -40,7 +40,7 @@ public OnRconCommand(cmd[])
 
 ## Ghi chú
 
-:::tip
+:::note
 
 - "/rcon " không được bao gồm trong "cmd" khi người chơi gõ lệnh. Nếu bạn sử dụng hàm "print" ở đây, nó sẽ gửi thông điệp tới người chơi đã gõ lệnh trong trò chơi cũng như ghi vào log. Callback này không được gọi khi người chơi chưa đăng nhập với tư cách là quản trị viên RCON. Khi người chơi chưa đăng nhập với tư cách là quản trị viên RCON và sử dụng /rcon login, callback này sẽ không được gọi và thay vào đó, `OnRconLoginAttempt` sẽ được gọi. Tuy nhiên, khi người chơi đã đăng nhập với tư cách là quản trị viên RCON, việc sử dụng lệnh này sẽ gọi callback này.
 

@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 The game sometimes deducts \$100 from players after spawn.
 

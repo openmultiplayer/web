@@ -61,7 +61,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数每次只能返回一个车辆 ID（通常为距离玩家最近的车辆），即使玩家视角范围内存在多个车辆
 

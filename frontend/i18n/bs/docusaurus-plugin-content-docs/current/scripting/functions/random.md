@@ -53,7 +53,7 @@ public OnPlayerSpawn(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Korištenje vrijednosti manje od 1 daje čudne vrijednosti.
 

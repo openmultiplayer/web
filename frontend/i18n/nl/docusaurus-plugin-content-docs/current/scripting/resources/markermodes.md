@@ -4,7 +4,9 @@ sidebar_label: "Markermodi"
 ---
 
 :::info
+
 Marker‑modi gebruikt door [ShowPlayerMarkers](../functions/ShowPlayerMarkers).
+
 :::
 
 | ID  | Definitie                    |

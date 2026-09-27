@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 Using this function on a player in a vehicle will instantly remove them from the vehicle. Useful for quickly ejecting players.
 

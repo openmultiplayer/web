@@ -6,19 +6,9 @@ description: 关于字节大小及其对应灯光状态位的信息。
 
 :::note
 
-灯光状态被诸如[GetVehicleDamageStatus](../functions/GetVehicleDamageStatus)和[UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus)等原生函数使用。
-
-:::
-
-:::note
-
-双轮车辆（因此有 2 个车灯）的灯光状态不可更改。
-
-:::
-
-:::note
-
-车辆的两个后车灯无法单独更改。
+- 灯光状态被诸如[GetVehicleDamageStatus](../functions/GetVehicleDamageStatus)和[UpdateVehicleDamageStatus](../functions/UpdateVehicleDamageStatus)等原生函数使用。
+- 双轮车辆（因此有 2 个车灯）的灯光状态不可更改。
+- 车辆的两个后车灯无法单独更改。
 
 :::
 

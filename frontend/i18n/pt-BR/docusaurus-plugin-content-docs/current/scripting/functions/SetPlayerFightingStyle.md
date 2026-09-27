@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 Isso não afeta ataques normais de punho - apenas ataques especiais/secundários (mirar + pressionar a tecla 'ataque secundário').
 

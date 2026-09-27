@@ -103,16 +103,16 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
-- 需要重置车辆（Respawn）才能完全移除目标箭头
-- 必须通过[OnVehicleStreamIn](../callbacks/OnVehicleStreamIn)回调重新应用参数设置
+需要重置车辆（Respawn）才能完全移除目标箭头
 
 :::
 
 :::warning
 
-参数设置在车辆流加载时需要重新应用
+- 必须通过[OnVehicleStreamIn](../callbacks/OnVehicleStreamIn)回调重新应用参数设置
+- 参数设置在车辆流加载时需要重新应用
 
 :::
 

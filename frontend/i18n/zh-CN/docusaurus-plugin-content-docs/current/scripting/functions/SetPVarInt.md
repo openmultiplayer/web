@@ -33,7 +33,7 @@ printf("当前金钱: %d", GetPVarInt(playerid, "Money"));
 
 ## 注意事项
 
-:::tip
+:::note
 
 玩家变量在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)回调触发前不会被重置，因此在此回调中仍可访问变量值。
 

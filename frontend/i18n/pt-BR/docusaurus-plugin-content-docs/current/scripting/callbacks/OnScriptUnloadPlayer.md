@@ -31,7 +31,7 @@ public OnScriptUnloadPlayer(playerid, bool:isEntryScript)
 
 ## Notas
 
-:::tip
+:::note
 
 Este callback é chamado quando você está **descarregando** um script secundário (filterscript) em tempo de execução.
 

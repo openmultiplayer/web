@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 ```
 ## Notas
 
-:::tip
+:::note
 
 - X e y têm significados diferentes com valores [PlayerTextDrawAlignment](PlayerTextDrawAlignment) diferentes:
   - 1 (esquerda): são o canto direito da caixa, coordenadas absolutas.

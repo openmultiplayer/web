@@ -29,7 +29,7 @@ public OnObjectMoved(objectid)
 
 ## Ghi Chú
 
-:::tip
+:::note
 
 [SetObjectPos](../functions/SetObjectPos) không hoạt động khi sử dụng trong callback này. Để khắc phục, hãy tạo lại đối tượng.
 

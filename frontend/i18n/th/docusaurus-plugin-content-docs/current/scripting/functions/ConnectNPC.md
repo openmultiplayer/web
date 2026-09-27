@@ -30,7 +30,7 @@ public OnGameModeInit()
 
 ## บันทึก
 
-:::tip
+:::note
 
 NPCs do not have nametags. These can be scripted with Attach3DTextLabelToPlayer.
 

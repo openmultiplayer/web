@@ -49,12 +49,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 虚拟世界 0 是默认世界，所有玩家都在此开始。
 - 不同虚拟世界中的 NPC 无法看到或相互互动。
 - 玩家必须与 NPC 在相同的虚拟世界中才能看到它们。
-- 使用 [NPC_GetVirtualWorld](NPC_GetVirtualWorld) 检查当前虚拟世界。
+
+:::
+
+:::tip
+
+使用 [NPC_GetVirtualWorld](NPC_GetVirtualWorld) 检查当前虚拟世界。
 
 :::
 

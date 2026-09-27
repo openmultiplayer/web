@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 It is the TEXT which will be highlighted when hovered over, NOT the box (if one is shown).
 

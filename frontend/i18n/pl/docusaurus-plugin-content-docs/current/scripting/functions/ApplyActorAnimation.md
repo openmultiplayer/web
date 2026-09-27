@@ -44,7 +44,7 @@ public OnGameModeInit()
 
 ## Uwagi
 
-:::tip
+:::note
 
 Musisz wstępnie załadować bibliotekę animacji graczowi, u którego animacja będzie wyświetlana, a nie samemu aktorowi. W przeciwnym wypadku, animacja aktora nie zostanie włączona do momentu ponownego uruchomienia funkcji.
 

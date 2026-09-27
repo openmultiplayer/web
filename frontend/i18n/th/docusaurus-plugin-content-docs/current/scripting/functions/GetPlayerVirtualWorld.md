@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## บันทึก
 
-:::tip
+:::note
 
 Virtual worlds are not the same as interiors.
 

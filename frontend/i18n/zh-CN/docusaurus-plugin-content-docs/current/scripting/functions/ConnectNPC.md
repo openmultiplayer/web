@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 ## 注意事项
 
-:::tip
+:::note
 
 NPC 默认没有名牌，可通过[Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer)函数添加自定义 3D 文本标签
 

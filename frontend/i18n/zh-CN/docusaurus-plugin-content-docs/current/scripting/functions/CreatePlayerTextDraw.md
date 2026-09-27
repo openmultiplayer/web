@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 玩家文本绘图会在玩家断开连接时自动销毁
 

@@ -57,7 +57,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 ## Белешке
 
-:::tip
+:::note
 
 Неке функције можда неће радити исправно када се користе у овој функцији јер је играч већ искључен када се функција позива. То значи да не можете добити недвосмислене информације из функција као што су [GetPlayerIp](../functions/GetPlayerIp) и [GetPlayerPos](../functions/GetPlayerPos).
 

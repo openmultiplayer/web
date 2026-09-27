@@ -43,7 +43,7 @@ public OnPlayerConnect(playerid)
 
 ## 重要说明
 
-:::tip
+:::note
 
 玩家变量在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)回调完成后才会重置，因此断开连接时仍可访问变量值。
 

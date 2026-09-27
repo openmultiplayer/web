@@ -31,7 +31,7 @@ public OnScriptUnloadPlayer(playerid, bool:isEntryScript)
 
 ## Белешке
 
-:::tip
+:::note
 
 Ова повратна функција се позива када се **уклони** споредна скрипта (филтер скрипт) у току рада.
 

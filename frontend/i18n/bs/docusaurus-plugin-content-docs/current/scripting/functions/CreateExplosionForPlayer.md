@@ -42,7 +42,7 @@ if (strcmp(cmdtext, "/burnme", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Postoji ograničenje koliko igrač može odjednom vidjeti eksplozije. Ovo je otprilike 10.
 

@@ -69,12 +69,7 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "购买
 
 :::tip
 
-建议使用枚举（如上例）或宏定义来管理对话框 ID，避免直接使用数字造成混乱
-
-:::
-
-:::tip
-
+- 建议使用枚举（如上例）或宏定义来管理对话框 ID，避免直接使用数字造成混乱
 - 可使用颜色嵌入代码实现多色文本
 - 使用**-1**作为 dialogid 可关闭客户端当前显示的所有对话框，也可使用[HidePlayerDialog](HidePlayerDialog)函数
 

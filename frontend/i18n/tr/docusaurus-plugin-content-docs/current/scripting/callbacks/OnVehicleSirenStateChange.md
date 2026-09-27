@@ -44,7 +44,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu geri çağırma sadece bir aracın siren durumu değiştirildiğinde kullanılır, alternatif (H'ye basılı tutma) sirende kullanılmaz.
 

@@ -75,7 +75,9 @@ Gebruik `HexToInt("RRGGBBAA")` voor [SetPlayerColor](../functions/SetPlayerColor
 Kleuren in tekst voor [client messages](../functions/SendClientMessage), [dialogs](../functions/ShowPlayerDialog), [3D‑labels](../functions/Create3DTextLabel), [objectmaterialtekst](../functions/SetObjectMaterialText) en [kentekenplaten](../functions/SetVehicleNumberPlate).
 
 :::caution
+
 Niet in textdraws. Zie [GameTextStyle](../resources/gametextstyles).
+
 :::
 
 #### Voorbeeld

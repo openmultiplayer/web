@@ -42,7 +42,7 @@ public OnObjectMoved(objectid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 This only works outside the map boundaries (past -3000/3000 units on the x and/or y axis).
 

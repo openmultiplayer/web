@@ -34,7 +34,7 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
 Quando filterscripts ou plugins são especificados como varname, esta função retorna apenas o nome do primeiro filterscript ou plugin especificado.
 

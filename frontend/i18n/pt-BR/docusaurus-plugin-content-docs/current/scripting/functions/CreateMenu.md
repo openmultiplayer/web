@@ -37,7 +37,7 @@ public OnGameModeInit()
 
 ## Notas
 
-:::tip
+:::note
 
 - Esta função apenas CRIA o menu - [ShowMenuForPlayer](ShowMenuForPlayer) deve ser usado para mostrá-lo.
 - Você só pode criar e acessar 2 colunas (0 & 1).

@@ -37,7 +37,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 ## Белешке
 
-:::tip
+:::note
 
 Тренутно постоји само један 'извор' (0 - `CLICK_SOURCE_SCOREBOARD`).
 

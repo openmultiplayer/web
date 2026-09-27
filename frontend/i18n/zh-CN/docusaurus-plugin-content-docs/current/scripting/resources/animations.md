@@ -7,12 +7,7 @@ tags: []
 
 :::note
 
-这些动画由[ApplyAnimation](../functions/ApplyAnimation)函数调用
-
-:::
-
-:::note
-
+- 这些动画由[ApplyAnimation](../functions/ApplyAnimation)函数调用
 - 注意部分列出的动画可能在 SA-MP 中无法使用
 - 后缀为`_O`的动画专用于物体（例如降落伞运动），应用于玩家时不会生效
 

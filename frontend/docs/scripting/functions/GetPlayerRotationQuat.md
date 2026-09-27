@@ -41,7 +41,7 @@ GetPlayerRotationQuat(playerid, w, x, y, z);
 
 ## Notes
 
-:::tip
+:::note
 
 There is no 'set' variation of this function; you can not SET a player's rotation ( apart from the facing angle (Z rotation) ).
 

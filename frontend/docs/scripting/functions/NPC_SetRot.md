@@ -51,12 +51,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - Rotation values are in degrees (0-360).
 - Z-axis rotation affects facing direction (same as [NPC_SetFacingAngle](NPC_SetFacingAngle)).
 - X and Y rotations can create tilted or upside-down NPCs.
-- Use [NPC_GetRot](NPC_GetRot) to retrieve current rotation values.
+
+:::
+
+:::tip
+
+Use [NPC_GetRot](NPC_GetRot) to retrieve current rotation values.
 
 :::
 

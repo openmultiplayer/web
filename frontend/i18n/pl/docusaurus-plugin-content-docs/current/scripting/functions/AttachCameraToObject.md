@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Uwagi
 
-:::tip
+:::note
 
 Musisz najpierw utworzyć obiekt, zanim spróbujesz przyczepić do niego kamerę gracza.
 

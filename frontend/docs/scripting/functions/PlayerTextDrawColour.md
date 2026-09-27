@@ -40,8 +40,13 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-- You can also use Gametext colours in textdraws. (e.g. `~r~` `~g~` `~b~`)
-- The textdraw must be re-shown to the player in order to update the colour.
+You can also use Gametext colours in textdraws. (e.g. `~r~` `~g~` `~b~`)
+
+:::
+
+:::note
+
+The textdraw must be re-shown to the player in order to update the colour.
 
 :::
 

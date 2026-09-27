@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::tip
+:::note
 
 - O nível de embriaguez dos jogadores diminuirá automaticamente com o tempo, com base em seu FPS (jogadores com 50 FPS perderão 50 'níveis' por segundo. Isso é útil para determinar o FPS de um jogador!).
 - Em 0.3a o nível de embriaguez diminuirá e parará em 2.000.

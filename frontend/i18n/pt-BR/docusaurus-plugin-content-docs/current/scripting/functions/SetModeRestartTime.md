@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 O parâmetro `seconds` é um ponto flutuante.
 

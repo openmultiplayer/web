@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - 计算朝向角度时，仅考虑水平面（X/Y 坐标）。
 - NPC 不会移动；仅执行旋转操作以朝向目标位置。

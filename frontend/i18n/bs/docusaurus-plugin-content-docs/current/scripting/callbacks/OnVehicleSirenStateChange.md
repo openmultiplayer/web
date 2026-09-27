@@ -48,7 +48,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callback je pozvan samo kada se sirena vozila uključi/isključi, NE kada upravljate sirenom tako što je držite.
 

@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## نکات
 
-:::tip
+:::note
 
 این روی حملات عادی مشت تاثیر نداره - فقط روی حملات ویژه/ثانویه (aim + فشار دادن دکمه 'secondary attack').
 

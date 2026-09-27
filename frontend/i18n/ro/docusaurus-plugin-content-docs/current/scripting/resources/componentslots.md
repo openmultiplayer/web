@@ -5,7 +5,9 @@ sidebar_label: Sloturi pentru componente
 
 :::info
 
-Folosiți-le pentru a lucra cu functia [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot). :::
+Folosiți-le pentru a lucra cu functia [GetVehicleComponentInSlot](../functions/GetVehicleComponentInSlot).
+
+:::
 
 ---
 

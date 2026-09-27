@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 ## نکات
 
-:::tip
+:::note
 
 این تابع ID pickup برنمی‌گرداند که بتوانید مثلاً در OnPlayerPickUpPickup استفاده کنید. اگر می‌خواهید ID ها اختصاص دهید از [CreatePickup](CreatePickup) استفاده کنید.
 

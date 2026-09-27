@@ -36,7 +36,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu geri çağırma sadece haritada bir yer işaretlemek için tıkladığında çağrılır, tuşa basarak işaretlediğinde çağrılmaz. Eğer oyuncu işaretlediği yerden uzaksa Z koordinatı 0 (geçersiz) olarak döndürülür, bunu çözmek için ColAndreas veya MapAndreas pluginini kullanın.
 

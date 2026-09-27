@@ -49,7 +49,7 @@ public OnPlayerSpawn(playerid)
 
 ## نکات
 
-:::tip
+:::note
 
 استفاده از مقداری کمتر از 1 مقادیر عجیبی می‌ده.
 

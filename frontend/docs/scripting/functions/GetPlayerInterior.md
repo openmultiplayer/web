@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid,text[])
 
 ## Notes
 
-:::tip
+:::note
 
 Always returns interior 0 for NPCs.
 

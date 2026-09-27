@@ -32,7 +32,7 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## บันทึก
 
-:::tip
+:::note
 
 NPC สามารถเรียก Callback นี้ได้
 

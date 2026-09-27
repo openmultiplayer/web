@@ -32,7 +32,7 @@ public OnVehicleDeath(vehicleid, killerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovaj callbak će također biti pozvan kada vozilo uđe u vodu, ali vozilo može biti sačuvano od uništenja teleportiranjem ili ako ga izvadite iz vode (upravljanjem, ako je samo djelomično potopljeno). Callback neće biti pozvan drugi put, i vozilo će možda nestati kada igrač izađe, ili nakon kratkog vremena.
 

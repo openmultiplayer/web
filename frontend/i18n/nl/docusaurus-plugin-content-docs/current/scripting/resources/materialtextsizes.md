@@ -5,7 +5,9 @@ description: Lijst met groottes voor SetObjectMaterialText.
 ---
 
 :::info
+
 Voor [SetObjectMaterialText](../functions/SetObjectMaterialText) bestaan uitlijningen en groottes. Groottes staan hieronder.
+
 :::
 
 | Waarde | Definitie                    |

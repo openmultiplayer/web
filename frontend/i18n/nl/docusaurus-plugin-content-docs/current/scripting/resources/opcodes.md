@@ -6,7 +6,9 @@ tags: []
 ---
 
 :::note
+
 Actie/opcode‑ID's gebruikt door [SendClientCheck](../functions/SendClientCheck).
+
 :::
 
 | opcode | Doel                                                                                              |

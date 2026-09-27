@@ -34,7 +34,7 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 
 ## Astuces
 
-:::tip
+:::note
 
 Cette callback est appelée seulement lorsque l'état de la sirène change, PAS quand la sirène alternative est utilisée (maintenir klaxon).
 

@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova je funkcija prilično suvišna, jer se ne razlikuje od konvencionalnog operatora množenja (\*).
 

@@ -7,13 +7,8 @@ sidebar_label: 拾取物类型
 
 :::note
 
-以下类型参数适用于[CreatePickup](../functions/CreatePickup)和[CreatePlayerPickup](../functions/CreatePlayerPickup)函数。
-
-:::
-
-:::note
-
-其他未列出的 ID 可能未被官方文档记录，或表现类似类型 1（但请勿仅因表面相似性使用，部分类型可能产生副作用，如类型 18 和 20）。
+- 以下类型参数适用于[CreatePickup](../functions/CreatePickup)和[CreatePlayerPickup](../functions/CreatePlayerPickup)函数。
+- 其他未列出的 ID 可能未被官方文档记录，或表现类似类型 1（但请勿仅因表面相似性使用，部分类型可能产生副作用，如类型 18 和 20）。
 
 :::
 

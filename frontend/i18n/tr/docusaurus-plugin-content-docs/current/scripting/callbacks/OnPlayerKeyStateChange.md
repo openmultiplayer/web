@@ -22,7 +22,7 @@ Bu fonksiyon, desteklenen(../resources/keys) herhangi bir tuşun durumu değişt
 
 ## Notlar
 
-:::info
+:::note
 
 Bu fonksiyon, NPC tarafından da çağrılabilir.
 

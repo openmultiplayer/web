@@ -51,11 +51,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - Retorna -1 se NPC não tiver nenhum conjunto de skin personalizado ou se NPC for inválido.
 - As skins personalizadas diferem das skins normais porque normalmente se referem a modelos personalizados adicionados ao jogo.
-- Use [NPC_GetSkin](NPC_GetSkin) para obter o skin/modelo normal ID.
+
+:::
+
+:::tip
+
+Use [NPC_GetSkin](NPC_GetSkin) para obter o skin/modelo normal ID.
 
 :::
 

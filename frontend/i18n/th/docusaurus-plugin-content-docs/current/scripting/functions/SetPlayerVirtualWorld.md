@@ -32,7 +32,7 @@ if (strcmp(cmdtext, "/world3", true) == 0)
 
 ## บันทึก
 
-:::tip
+:::note
 
 The default virtual world is 0.
 

@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-:::warning
+:::note
 
 - NPCs seguirá continuamente o jogador alvo até ser interrompido.
 - O parâmetro `updateDelayMS` controla a frequência com que o NPC atualiza sua posição alvo.

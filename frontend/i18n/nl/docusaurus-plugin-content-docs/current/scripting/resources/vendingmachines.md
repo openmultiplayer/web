@@ -5,7 +5,9 @@ description: Modellen en locaties van werkende automaten.
 ---
 
 :::info
+
 In GTA:SA/open.mp zijn diverse vendingmachines bruikbaar. Onderstaande modellen zijn interactief.
+
 :::
 
 | Model ID | Modelnaam      | Omschrijving                    |

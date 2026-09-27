@@ -53,7 +53,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 ## 注意事项
 
-:::tip
+:::note
 
 - 此回调仅在游戏内使用`/rcon login`时触发
 - 仅在玩家未登录RCON时触发，登录成功后触发[OnRconCommand](OnRconCommand)

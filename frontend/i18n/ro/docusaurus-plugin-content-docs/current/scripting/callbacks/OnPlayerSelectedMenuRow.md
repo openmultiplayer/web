@@ -47,7 +47,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## Note
 
-:::tip
+:::note
 
 ID-ul meniului nu este transmis acestui callback. GetPlayerMenu trebuie utilizat pentru a determina în ce meniu jucătorul a selectat un element.
 

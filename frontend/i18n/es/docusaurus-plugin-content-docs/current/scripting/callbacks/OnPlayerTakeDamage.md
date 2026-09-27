@@ -61,7 +61,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## Notas
 
-:::tip
+:::note
 
 El 'weaponid' va a retornar 37 (lanzallamas) de cualquier origen de fuego (ej. molotov, 18), 'weaponid' retornará 51 ante cualquier arma que cree una explosión (ej. lanzamisiles, granada). playerid es el único que puede llamar este callback. La cantidad de daño es siempre el daño máximo que el weaponid puede hacer, incluso cuando la vida restante es menor que el daño máximo de esta. Entonces cuando un jugador tiene 100.0 de salud y recibe un tiro con una Desert Eagle que tiene un valor de daño de 46.2, tomará 3 disparos para matar a ese jugador. Los 3 disparos mostrarán una cantidad de daño de 46.2 sin importar que cuando el último disparo impacta, el jugador tiene sólo 7.6 de salud restante.
 

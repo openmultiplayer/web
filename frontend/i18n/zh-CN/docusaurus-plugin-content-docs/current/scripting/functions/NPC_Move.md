@@ -53,12 +53,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 - NPC 将寻路到目标位置。
 - 移动类型影响动画和速度。
 - 停止范围决定 NPC 在停止前离目标多近。
-- 使用 [NPC_IsMoving](NPC_IsMoving) 检查 NPC 当前是否正在移动
+
+:::
+
+:::tip
+
+使用 [NPC_IsMoving](NPC_IsMoving) 检查 NPC 当前是否正在移动
 
 :::
 

@@ -34,7 +34,7 @@ ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, 1, 1, 1, 1, 1, 1);
 
 ## Notes
 
-:::tip
+:::note
 
 Ang 'forcesync' na opsyonal na parameter, na nagde-default sa 0, sa karamihan ng mga kaso ay hindi kailangan dahil ang mga manlalaro ay nagsi-sync ng mga animation mismo. Ang parameter na 'forcesync' ay maaaring pilitin ang lahat ng mga manlalaro na nakakakita ng 'playerid' na i-play ang animation kahit na ang player ay gumaganap ng animation na iyon. Ito ay kapaki-pakinabang sa mga pagkakataon kung saan ang player ay hindi maaaring i-sync ang animation sa kanilang sarili. Halimbawa, maaaring ma-pause ang mga ito.
 

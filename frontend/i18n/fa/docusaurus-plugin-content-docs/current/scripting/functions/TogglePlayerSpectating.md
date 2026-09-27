@@ -35,7 +35,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## نکات
 
-:::tip
+:::note
 
 وقتی حالت spectator غیرفعال میشه، OnPlayerSpawn به طور خودکار فراخوانی میشه، اگه می‌خوای بازیکن رو به حالت قبل از spectating برگردونی، باید این کار رو توی OnPlayerSpawn انجام بدی. همچنین توجه کن که بازیکن می‌تونه قبل از اینکه F4 رو توی spectate بزنه به class selection هم بره، همچنین بازیکن می‌تونه توی حالت spectate هم به خاطر باگ‌های مختلف بمیره.
 

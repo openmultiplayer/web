@@ -15,6 +15,10 @@ Para ser usado com [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage), [OnPla
 | 8   | Pena direita    |
 | 9   | Cabeça          |
 
-:::note Esses ID's não são 100% confirmados, e não estão definidos em nenhuma include do SA:MP - eles devem ser definidos pelo scripter. Não se sabe se o ID 0, 1 e 2 têm algumas utilidade. :::
+:::note
+
+Esses ID's não são 100% confirmados, e não estão definidos em nenhuma include do SA:MP - eles devem ser definidos pelo scripter. Não se sabe se o ID 0, 1 e 2 têm algumas utilidade.
+
+:::
 
 ![](https://assets.open.mp/assets/images/bodyParts/Body_parts.jpg)

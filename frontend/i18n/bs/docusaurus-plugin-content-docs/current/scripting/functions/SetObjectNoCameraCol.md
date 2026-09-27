@@ -42,7 +42,7 @@ public OnObjectMoved(objectid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ovo radi samo izvan granica karte (prošlih -3000/3000 jedinica na x i/ili y osi).
 

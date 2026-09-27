@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu geri çağırma NPC tarafından da çağrılabilir.
 

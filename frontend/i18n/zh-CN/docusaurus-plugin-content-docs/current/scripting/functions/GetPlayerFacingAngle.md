@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 当玩家处于车辆内时，此函数返回的角度通常不准确。建议使用[GetVehicleZAngle](GetVehicleZAngle)获取车辆 Z 轴旋转角度
 

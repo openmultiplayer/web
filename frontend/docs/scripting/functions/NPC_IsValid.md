@@ -41,12 +41,17 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::tip
 
 - Always check if an NPC is valid before performing operations on it.
-- An NPC becomes invalid when it is destroyed.
 - This prevents runtime errors and crashes.
 - Use this in loops when iterating through potential NPC IDs.
+
+:::
+
+:::note
+
+An NPC becomes invalid when it is destroyed.
 
 :::
 

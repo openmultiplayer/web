@@ -33,7 +33,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 ## Notlar
 
-:::tip
+:::note
 
 Bu fonksiyon ChangeVehiclePaintjob tarafından çağrılmaz. Oyuncunun kaplamayı ne zaman satın aldığını kontrol etmek için vSync'nin OnVehicleChangePaintjob'ını kullanabilirsiniz.
 

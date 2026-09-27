@@ -30,7 +30,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## Note
 
-:::tip
+:::note
 
 Acest callback poate fi apelat și pentru NPC.
 

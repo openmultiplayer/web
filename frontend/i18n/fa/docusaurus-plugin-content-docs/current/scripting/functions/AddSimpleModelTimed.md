@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 ## نکات
 
-:::tip
+:::note
 
 ابتدا باید **useartwork** یا **artwork.enable** در تنظیمات سرور فعال شود تا این کار کند.
 

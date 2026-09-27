@@ -5,7 +5,9 @@ description: Spectate-modi gebruikt door PlayerSpectatePlayer en PlayerSpectateV
 ---
 
 :::info
+
 Gebruikt door [PlayerSpectatePlayer](../functions/PlayerSpectatePlayer) en [PlayerSpectateVehicle](../functions/PlayerSpectateVehicle).
+
 :::
 
 | Type                 | Effect                                                                                                                                                                      |

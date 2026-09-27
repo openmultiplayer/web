@@ -39,7 +39,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## 注意事项
 
-:::tip
+:::note
 
 单个玩家同时可见的爆炸效果存在数量限制（约 10 个）
 

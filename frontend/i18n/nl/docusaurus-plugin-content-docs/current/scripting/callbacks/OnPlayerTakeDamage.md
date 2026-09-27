@@ -64,7 +64,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 ## Notities
 
-:::tip
+:::note
 
 - weaponid is 37 (flamethrower) voor vuurbronnen (bijv. molotov, 18).
 - weaponid is 51 voor wapens die explosies veroorzaken (bijv. RPG, granaat).

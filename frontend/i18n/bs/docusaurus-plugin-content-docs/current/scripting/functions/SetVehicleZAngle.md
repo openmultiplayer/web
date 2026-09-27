@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Zabilješke
 
-:::**tip**
+:::note
 
 Kada se koristi ova funkcija, okretanje vozila X i Y (nagib i kotrljanje) resetirat će se. Rotacije X i Y ne mogu se postaviti. Ova funkcija ne radi na neuzetim vozilima (vjeruje se da je to GTA ograničenje).
 

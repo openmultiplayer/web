@@ -39,7 +39,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Postoji ograničenje koliko igrač može odjednom vidjeti eksplozije. Ovo je otprilike 10.
 

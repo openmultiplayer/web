@@ -40,7 +40,7 @@ if (strcmp(cmdtext, "/tele", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::warning
 
 Crashuje (ruši) i server i igrača ako se proslijedi nevažeći ID menija.
 

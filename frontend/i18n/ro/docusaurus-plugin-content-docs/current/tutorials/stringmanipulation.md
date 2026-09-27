@@ -18,7 +18,9 @@ Bună ziua tuturor, cu siguranță este o noapte liniștită drăguță sau cel 
 
 ### Declarație șir
 
-Așa cum am spus mai înainte, șirurile sunt practic matrici de caractere, deci sunt utilizate în același mod în care sunt matricele și, așa cum am crea o matrice, am face-o pentru șirurile care urmează acest format; `string_name [string_size]`. :::info
+Așa cum am spus mai înainte, șirurile sunt practic matrici de caractere, deci sunt utilizate în același mod în care sunt matricele și, așa cum am crea o matrice, am face-o pentru șirurile care urmează acest format; `string_name [string_size]`.
+
+:::info
 
 **string_name**: numele matricei de caractere (_de exemplu șir, str, mesaj, text ... etc., atâta timp cât este un nume de variabilă valid (începe cu un caracter sau un subliniat)_).
 
@@ -672,7 +674,9 @@ Rețineți că atribuirea tuturor biților la aceeași valoare va avea ca rezult
 
 :::tip
 
-Este posibil să formatați texte cu multicolor simultan, dar pentru aceasta, încorporăm notația **RGB** mai simplă. :::
+Este posibil să formatați texte cu multicolor simultan, dar pentru aceasta, încorporăm notația **RGB** mai simplă.
+
+:::
 
 ##### RGB
 

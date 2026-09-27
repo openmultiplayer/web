@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 
 ## نکته‌ها
 
-:::tip
+:::note
 
 - اگر [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline) با اندازه > 0 استفاده شود، رنگ حاشیه با رنگ استفاده شده در PlayerTextDrawBackgroundColour مطابقت خواهد داشت.
 - تغییر مقدار رنگ به نظر می‌رسد که رنگ استفاده شده در PlayerTextDrawColour را تغییر می‌دهد.

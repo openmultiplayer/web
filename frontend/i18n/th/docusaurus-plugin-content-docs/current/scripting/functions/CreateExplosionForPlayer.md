@@ -36,7 +36,7 @@ if (strcmp(cmdtext, "/burnme", true) == 0)
 
 ## บันทึก
 
-:::tip
+:::note
 
 There is a limit as to how many explosions can be seen at once by a player. This is roughly 10.
 

@@ -40,7 +40,7 @@ drawDistance = GetPlayer3DTextLabelDrawDist(playerid, playerTextId);
 
 ## 注意事项
 
-:::tip
+:::note
 
 此函数是 [GetPlayer3DTextLabelDrawDistance](GetPlayer3DTextLabelDrawDistance) 的简写形式
 

@@ -34,15 +34,16 @@ ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, 1, 1, 1, 1, 1, 1);
 
 ## บันทึก
 
-:::tip
+:::note
 
-The 'forcesync' optional parameter, which defaults to 0, in most cases is not needed since players sync animations themselves. The 'forcesync' parameter can force all players who can see 'playerid' to play the animation regardless of whether the player is performing that animation. This is useful in circumstances where the player can't sync the animation themselves. For example, they may be paused.
+- The 'forceSync' optional parameter, which defaults to 0 (SYNC_NONE), in most cases is not needed since players sync animations themselves.
+- The 'forcesync' parameter can force all players who can see 'playerid' to play the animation regardless of whether the player is performing that animation. This is useful in circumstances where the player can't sync the animation themselves. For example, they may be paused.
 
 :::
 
 :::warning
 
-An invalid animation library will crash the player's game.
+An invalid animation library will crash the player's game. (Fixed in open.mp)
 
 :::
 

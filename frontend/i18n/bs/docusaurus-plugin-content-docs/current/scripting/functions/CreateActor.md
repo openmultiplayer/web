@@ -49,15 +49,17 @@ public OnGameModeExit()
 
 ## Zabilješke
 
-:::tip
+:::note
 
-Aktori su zamišljeni da samo negdje stanu, na primjer blagajnici i barmeni. Oni mogu izvoditi animacije (jednom ili petljom) pomoću ApplyActorAnimation.
+- Aktori su zamišljeni da samo negdje stanu, na primjer blagajnici i barmeni. Oni mogu izvoditi animacije (jednom ili petljom) pomoću ApplyActorAnimation.
+- Od 0.3.7 R2 aktori su zadani da budu neranjivi.
 
 :::
 
 :::warning
 
-Aktori su potpuno odvojeni od NPC-a. NE koriste ID-ove igrača / utora na poslužitelju i NE MOGU se s njima postupati kao s NPC-ima. Aktori su ograničeni na 1000 (MAX_ACTORS). Vozače mogu potiskivati ​​glumce, upotrijebite timer da biste ih vratili na njihova mjesta. Od 0,3,7 R2 aktori su zadani da budu neranjivi.
+- Aktori su potpuno odvojeni od NPC-a. NE koriste ID-ove igrača / utora na poslužitelju i NE MOGU se s njima postupati kao s NPC-ima. Aktori su ograničeni na 1000 (MAX_ACTORS).
+- Vozače mogu potiskivati ​​glumce, upotrijebite timer da biste ih vratili na njihova mjesta.
 
 :::
 

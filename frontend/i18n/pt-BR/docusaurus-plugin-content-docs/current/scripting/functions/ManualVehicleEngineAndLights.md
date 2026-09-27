@@ -21,7 +21,7 @@ public OnGameModeInit()
 
 ## Notas
 
-:::warning
+:::note
 
 Não é possível reverter esta função depois de ter sido usada. Você deve usá-lo ou não usá-lo.
 

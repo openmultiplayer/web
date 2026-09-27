@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - All velocity parameters are passed by reference and will be modified
 

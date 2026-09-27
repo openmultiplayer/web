@@ -11,11 +11,15 @@ Sunt similare cu [PVars](perplayervariablesystem), dar nu sunt legate de un ID d
 
 :::warning
 
-Acest sistem a fost introdus în SA-MP 0.3.7 R2-1 și nu va funcționa în versiunile anterioare! :::
+Acest sistem a fost introdus în SA-MP 0.3.7 R2-1 și nu va funcționa în versiunile anterioare!
+
+:::
 
 :::note
 
-Sistemul SVar este același cu PVars, deși variabilele create sunt la nivel de server, nu sunt atașate la niciun ID de jucător și persistă prin modificări ale modului de joc. :::
+Sistemul SVar este același cu PVars, deși variabilele create sunt la nivel de server, nu sunt atașate la niciun ID de jucător și persistă prin modificări ale modului de joc.
+
+:::
 
 ## Avantaje
 

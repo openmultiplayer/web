@@ -4,7 +4,9 @@ sidebar_label: "Select‑objecttypen"
 ---
 
 :::info
+
 Gebruikt door [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject).
+
 :::
 
 | Waarde | Definitie                   |

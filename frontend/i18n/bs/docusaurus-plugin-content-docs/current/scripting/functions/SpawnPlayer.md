@@ -31,7 +31,7 @@ if (strcmp(cmdtext, "/spawn", true) == 0)
 
 ## Zabilješke
 
-:::tip
+:::warning
 
 Ubija igrača ako je u vozilu, a zatim se spawnaju s bocom u ruci.
 

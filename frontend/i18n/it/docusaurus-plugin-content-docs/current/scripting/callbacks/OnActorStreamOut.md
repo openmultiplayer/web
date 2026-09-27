@@ -12,7 +12,9 @@ tags: ["actor"]
 Questo callback viene chiamato quando un attore esce dal raggio di stream (smette di essere visibile) per il client di un giocatore.
 
 :::warning
+
 Questo callback è stato aggiunto in SA-MP 0.3.7 e **non funzionerà** nelle versioni precedenti!
+
 :::
 
 | Nome          | Descrizione                                                                         |
@@ -38,7 +40,11 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Note
 
-:::tip Questo callback può essere chiamato anche dagli NPC. :::
+:::note
+
+Questo callback può essere chiamato anche dagli NPC.
+
+:::
 
 ## Callback Correlati
 

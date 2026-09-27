@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 
 ## 注意事项
 
-:::tip
+:::note
 
 当前此函数的返回值可能存在偏差，实际结果与客户端显示数据存在差异。建议使用以下更精确的替代方案：
 
@@ -62,7 +62,7 @@ stock GetPlayerPacketLoss(playerid, &Float:packetLoss)
 
 :::
 
-:::tip
+:::note
 
 请注意此函数反映的是服务器的丢包数据。客户端显示的数值**会**有所不同，并非数据错误，而是因为服务器与客户端各自仅能感知自身发送的数据包丢失情况
 

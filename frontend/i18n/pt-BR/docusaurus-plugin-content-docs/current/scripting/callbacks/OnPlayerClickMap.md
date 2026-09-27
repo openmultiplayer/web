@@ -36,7 +36,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 ## Notas
 
-:::tip
+:::note
 
 Como o nome da callback diz, é apenas chamada quando o jogador marca o alvo no mapa, e não quandoa tecla é pressionada. O valor Z retornada será 0 (invalido) se a área clicada no mapa estiver muito distante do jogador. Use os plugins MapAndreas ou ColAndreas para receber uma coordenada Z mais precisa.
 

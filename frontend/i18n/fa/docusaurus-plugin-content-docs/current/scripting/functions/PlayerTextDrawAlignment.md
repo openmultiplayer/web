@@ -40,15 +40,10 @@ public OnPlayerConnect(playerid)
 
 ## نکات
 
-:::warning
+:::note
 
-برای تراز 2 (TEXT_DRAW_ALIGN_CENTER) مقادیر x و y در TextSize باید جابجا بشن، نکات [PlayerTextDrawTextSize](PlayerTextDrawTextSize) رو ببین.
-
-:::
-
-:::tip
-
-اگه textdraw از قبل برای بازیکن نمایش داده می‌شه، باید دوباره نمایش داده بشه ([PlayerTextDrawShow](PlayerTextDrawShow)) تا تغییرات این تابع اعمال بشن.
+- برای تراز 2 (TEXT_DRAW_ALIGN_CENTER) مقادیر x و y در TextSize باید جابجا بشن، نکات [PlayerTextDrawTextSize](PlayerTextDrawTextSize) رو ببین.
+- اگه textdraw از قبل برای بازیکن نمایش داده می‌شه، باید دوباره نمایش داده بشه ([PlayerTextDrawShow](PlayerTextDrawShow)) تا تغییرات این تابع اعمال بشن.
 
 :::
 

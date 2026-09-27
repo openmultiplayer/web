@@ -33,7 +33,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## Astuces
 
-:::tip
+:::note
 
 Cette callback est appelée quand le joueur **COMMENCE** à entrer dans un véhicule, pas quand il effectivement dedans _(v. [OnPlayerStateChange](OnPlayerStateChange))_.
 

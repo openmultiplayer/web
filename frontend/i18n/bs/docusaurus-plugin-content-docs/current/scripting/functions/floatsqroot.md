@@ -31,7 +31,7 @@ floatsqroot(25.0); // Vraća 5, zato što je 5x5 = 25
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Ova funkcija dovodi do greške "domene" ako je ulazna vrijednost negativna. Možete koristiti floatabs da biste dobili apsolutnu (pozitivnu) vrijednost.
 

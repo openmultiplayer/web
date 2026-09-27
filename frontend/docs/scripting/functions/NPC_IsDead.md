@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-:::warning
+:::note
 
 - An NPC is considered dead when its health reaches 0.0 or below.
 - Dead NPCs can be respawned using [NPC_Respawn](NPC_Respawn).

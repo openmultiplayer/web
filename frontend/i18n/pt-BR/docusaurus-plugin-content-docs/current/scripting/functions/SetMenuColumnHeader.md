@@ -37,15 +37,10 @@ AddMenuItem(gTestMenu, 1, "Row2 Item1");
 ```
 ## Notas
 
-:::tip
-
-Trava ao passar por um menu inválido ID.
-
-:::
-
 :::warning
 
-Observe que você pode adicionar apenas 12 itens com [AddMenuItem](AddMenuItem). O 13º objeto de um menu substituiria o cabeçalho da coluna que está corretamente configurada com esta função.
+- Trava ao passar por um menu inválido ID. (Corrigido em open.mp)
+- Observe que você pode adicionar apenas 12 itens com [AddMenuItem](AddMenuItem). O 13º objeto de um menu substituiria o cabeçalho da coluna que está corretamente configurada com esta função.
 
 :::
 

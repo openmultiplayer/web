@@ -45,7 +45,7 @@ AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
 
 ## บันทึก
 
-:::tip
+:::note
 
 useartwork must be enabled first in server settings in order for this to work When virtualworld is set, the models will be downloaded once the player enters the specific world
 

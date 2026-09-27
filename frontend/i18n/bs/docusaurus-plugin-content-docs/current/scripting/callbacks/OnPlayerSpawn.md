@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 ## Zabilješke
 
-:::tip
+:::note
 
 Igrica ponekad odbija igraču \$100 nakon spawnovanja.
 

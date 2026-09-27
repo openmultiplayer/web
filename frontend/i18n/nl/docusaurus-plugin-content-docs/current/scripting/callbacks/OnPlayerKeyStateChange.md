@@ -22,7 +22,7 @@ Deze callback wordt aangeroepen wanneer de status van een [ondersteunde](../reso
 
 ## Notities
 
-:::info
+:::note
 
 Deze callback kan ook door NPC’s worden aangeroepen.
 

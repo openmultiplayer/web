@@ -39,7 +39,7 @@ AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
 
 ## Notlar
 
-:::tip
+:::note
 
 Fonksiyon kullanılmadan önce iki objede oluşturulmalıdır.
 Bu fonksiyon oyuncu için özel oluşturulmuş objelerde çalışmaz.

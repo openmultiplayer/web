@@ -36,7 +36,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 ## Notas
 
-:::tip
+:::note
 
 Actualmente hay un solo origen/source (0 - CLICK_SOURCE_SCOREBOARD). La existencia de este argumento sugiere que más origenes pueden ser soportados en el futuro.
 

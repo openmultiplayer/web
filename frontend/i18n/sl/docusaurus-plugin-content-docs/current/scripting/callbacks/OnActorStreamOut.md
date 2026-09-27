@@ -38,7 +38,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Opombe
 
-:::tip
+:::note
 
 Ta "callback" bo poklical tudi NPC.
 

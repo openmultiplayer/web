@@ -27,7 +27,7 @@ SendClientMessage(playerid, -1, szString);
 
 ## บันทึก
 
-:::tip
+:::note
 
 The return value of this function represents the value of the "widescreen" option in the game's display settings, not the actual aspect ratio of the player's display.
 

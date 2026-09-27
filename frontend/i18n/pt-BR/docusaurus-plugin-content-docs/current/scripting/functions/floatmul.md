@@ -34,7 +34,7 @@ public OnGameModeInit()
 ```
 ## Notas
 
-:::tip
+:::note
 
 Esta função é bastante redundante, pois não é diferente do operador de multiplicação convencional (\*).
 

@@ -47,7 +47,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 ## Notlar
 
-:::tip
+:::note
 
 Menü ID'si bu fonksiyona aktarılmaz. GetPlayerMenu, oyuncunun hangi menüde bir öğe seçtiğini belirlemek için kullanılmalıdır.
 

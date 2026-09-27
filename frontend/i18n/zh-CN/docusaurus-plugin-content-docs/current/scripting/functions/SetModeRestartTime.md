@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-:::warning
+:::note
 
 `seconds`参数为浮点数类型
 
