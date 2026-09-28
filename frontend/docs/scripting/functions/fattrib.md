@@ -68,5 +68,4 @@ else
 - [frename](frename): Rename a file.
 - [fcopy](fcopy): Copy a file.
 - [filecrc](filecrc): Return the 32-bit CRC value of a file.
-- [diskfree](diskfree): Returns the free disk space.
 - [fcreatedir](fcreatedir): Create a directory.

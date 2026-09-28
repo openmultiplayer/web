@@ -63,5 +63,4 @@ else
 - [frename](frename): تغییر نام یک فایل.
 - [fcopy](fcopy): کپی کردن یک فایل.
 - [filecrc](filecrc): برگرداندن مقدار CRC 32-bit یک فایل.
-- [diskfree](diskfree): برگرداندن فضای خالی دیسک.
 - [fattrib](fattrib): تنظیم خصوصیات فایل.

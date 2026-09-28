@@ -63,5 +63,4 @@ To delete the directory again, use [fremove](fremove). The directory must be emp
 - [frename](frename): Rename a file.
 - [fcopy](fcopy): Copy a file.
 - [filecrc](filecrc): Return the 32-bit CRC value of a file.
-- [diskfree](diskfree): Returns the free disk space.
 - [fattrib](fattrib): Set the file attributes.

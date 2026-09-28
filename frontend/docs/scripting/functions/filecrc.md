@@ -65,6 +65,5 @@ else
 - [fstat](fstat): Return the size and the timestamp of a file.
 - [frename](frename): Rename a file.
 - [fcopy](fcopy): Copy a file.
-- [diskfree](diskfree): Returns the free disk space.
 - [fattrib](fattrib): Set the file attributes.
 - [fcreatedir](fcreatedir): Create a directory.

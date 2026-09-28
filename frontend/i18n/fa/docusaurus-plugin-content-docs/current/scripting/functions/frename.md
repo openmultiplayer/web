@@ -55,6 +55,5 @@ else
 - [fstat](fstat): برگردوندن سایز و timestamp فایل.
 - [fcopy](fcopy): کپی کردن فایل.
 - [filecrc](filecrc): برگردوندن مقدار CRC 32-bit فایل.
-- [diskfree](diskfree): برگردوندن فضای خالی دیسک.
 - [fattrib](fattrib): تنظیم attribute های فایل.
 - [fcreatedir](fcreatedir): ساختن پوشه.

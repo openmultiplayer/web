@@ -70,5 +70,4 @@ else
 - [frename](frename): 重命名文件
 - [fcopy](fcopy): 复制文件
 - [filecrc](filecrc): 计算文件 32 位 CRC 校验值
-- [diskfree](diskfree): 获取磁盘剩余空间
 - [fcreatedir](fcreatedir): 创建目录

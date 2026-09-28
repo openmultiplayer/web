@@ -71,6 +71,5 @@ else
 - [frename](frename): تغییر نام فایل.
 - [fcopy](fcopy): کپی فایل.
 - [filecrc](filecrc): برگرداندن مقدار CRC 32-bit فایل.
-- [diskfree](diskfree): برگرداندن فضای خالی دیسک.
 - [fattrib](fattrib): تنظیم خصوصیات فایل.
 - [fcreatedir](fcreatedir): ایجاد یک دایرکتوری.

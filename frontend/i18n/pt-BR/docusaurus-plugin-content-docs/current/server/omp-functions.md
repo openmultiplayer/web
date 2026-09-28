@@ -450,4 +450,3 @@ Esta página contém todas as funções e callbacks que foram adicionadas no ope
 | [fcreatedir](../scripting/functions/fcreatedir) |
 | [fcopy](../scripting/functions/fcopy)           |
 | [fattrib](../scripting/functions/fattrib)       |
-| [diskfree](../scripting/functions/diskfree)     |

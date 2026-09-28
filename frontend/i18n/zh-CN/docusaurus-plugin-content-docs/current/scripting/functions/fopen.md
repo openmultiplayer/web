@@ -155,7 +155,6 @@ else
 - [frename](frename): 文件重命名
 - [fcopy](fcopy): 文件复制
 - [filecrc](filecrc): 计算文件 CRC 校验码
-- [diskfree](diskfree): 查询磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录
 
