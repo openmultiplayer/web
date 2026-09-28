@@ -32,7 +32,7 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## Notities
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 :::warning
 

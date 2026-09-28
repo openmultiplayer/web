@@ -432,9 +432,9 @@
     "message": "Cada componente deve ter um UID único. Se você estiver modificando um componente existente, substitua o UID atual dele em vez do placeholder mostrado acima.",
     "description": "UID generator note for modifying an existing component"
   },
-  "npcCallbacksTip.message": {
+  "npcCallbacksNote.message": {
     "message": "Esta callback também pode ser chamada por NPC.",
-    "description": "Tip shown on callback docs pages when NPCs can also call the callback"
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
   },
   "toast.close": {
     "message": "Fechar notificação",

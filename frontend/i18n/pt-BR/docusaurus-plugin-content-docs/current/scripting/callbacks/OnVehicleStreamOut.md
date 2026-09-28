@@ -32,6 +32,6 @@ public OnVehicleStreamOut(vehicleid, forplayerid)
 
 ## Notas
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Funções Relacionadas

@@ -40,7 +40,7 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Notes
 
-<TipNPCCallbacks/>
+<NoteNPCCallbacks />
 
 ## الاستدعاءات او كالباكات ذات الصلة
 

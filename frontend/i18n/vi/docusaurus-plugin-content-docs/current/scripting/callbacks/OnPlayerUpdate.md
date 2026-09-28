@@ -87,7 +87,7 @@ public OnPlayerUpdate(playerid)
 
 ## Ghi chú
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 :::warning
 

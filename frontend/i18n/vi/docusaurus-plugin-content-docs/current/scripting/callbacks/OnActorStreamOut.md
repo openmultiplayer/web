@@ -34,7 +34,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Ghi Chú
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Callbacks Liên Quan
 

@@ -40,7 +40,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Notes
 
-<TipNPCCallbacks/>
+<NoteNPCCallbacks />
 
 ## الاستدعاءات او كالباكات ذات الصلة
 

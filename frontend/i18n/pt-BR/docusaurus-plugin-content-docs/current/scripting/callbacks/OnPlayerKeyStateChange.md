@@ -22,7 +22,7 @@ Esta callback é chamada quando o estado de qualquer tecla [suportada](../resour
 
 ## Notas
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 :::tip
 

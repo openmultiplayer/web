@@ -34,7 +34,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Белешке
 
-<TipNPCCallbacksSR />
+<NoteNPCCallbacksSR />
 
 ## Повезане функције
 

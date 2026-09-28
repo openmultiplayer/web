@@ -32,7 +32,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Белешке
 
-<TipNPCCallbacksSR />
+<NoteNPCCallbacksSR />
 
 ## Related Callbacks
 

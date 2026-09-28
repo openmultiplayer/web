@@ -84,7 +84,7 @@ public OnPlayerUpdate(playerid)
 
 ## 注意事项
 
-<TipNPCCallbacksZH_CN />
+<NoteNPCCallbacksZH_CN />
 
 :::warning
 

@@ -39,6 +39,6 @@ public OnPlayerConnect(playerid)
 
 ## Notes
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Related Functions

@@ -33,7 +33,7 @@ public OnPlayerRequestSpawn(playerid)
 
 ## Notlar
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 :::tip
 

@@ -1,49 +1,49 @@
 import VersionWarn from "./version-warning";
-import TipNPCCallbacks from "./npc-callbacks-tip";
+import NoteNPCCallbacks from "./npc-callbacks-note";
 
 import VersionWarnID from "./translations/id/version-warning";
-import TipNPCCallbacksID from "./translations/id/npc-callbacks-tip";
+import NoteNPCCallbacksID from "./translations/id/npc-callbacks-note";
 
 import VersionWarnPT_BR from "./translations/pt-BR/version-warning";
-import TipNPCCallbacksPT_BR from "./translations/pt-BR/npc-callbacks-tip";
+import NoteNPCCallbacksPT_BR from "./translations/pt-BR/npc-callbacks-note";
 
 import VersionWarnES from "./translations/es/version-warning";
-import TipNPCCallbacksES from "./translations/es/npc-callbacks-tip";
+import NoteNPCCallbacksES from "./translations/es/npc-callbacks-note";
 
 import VersionWarnZH_CN from "./translations/zh-CN/version-warning";
-import TipNPCCallbacksZH_CN from "./translations/zh-CN/npc-callbacks-tip";
+import NoteNPCCallbacksZH_CN from "./translations/zh-CN/npc-callbacks-note";
 
 import VersionWarnTR from "./translations/tr/version-warning";
-import TipNPCCallbacksTR from "./translations/tr/npc-callbacks-tip";
+import NoteNPCCallbacksTR from "./translations/tr/npc-callbacks-note";
 
 import VersionWarnBS from "./translations/bs/version-warning";
-import TipNPCCallbacksBS from "./translations/bs/npc-callbacks-tip";
+import NoteNPCCallbacksBS from "./translations/bs/npc-callbacks-note";
 
 import VersionWarnSR from "./translations/sr/version-warning";
-import TipNPCCallbacksSR from "./translations/sr/npc-callbacks-tip";
+import NoteNPCCallbacksSR from "./translations/sr/npc-callbacks-note";
 
 import VersionWarnFA from "./translations/fa/version-warning";
-import TipNPCCallbacksFA from "./translations/fa/npc-callbacks-tip";
+import NoteNPCCallbacksFA from "./translations/fa/npc-callbacks-note";
 
 const templates = {
   VersionWarn,
-  TipNPCCallbacks,
+  NoteNPCCallbacks,
   VersionWarnID,
-  TipNPCCallbacksID,
+  NoteNPCCallbacksID,
   VersionWarnPT: VersionWarnPT_BR,
-  TipNPCCallbacksPT: TipNPCCallbacksPT_BR,
+  NoteNPCCallbacksPT: NoteNPCCallbacksPT_BR,
   VersionWarnES,
-  TipNPCCallbacksES,
+  NoteNPCCallbacksES,
   VersionWarnZH_CN,
-  TipNPCCallbacksZH_CN,
+  NoteNPCCallbacksZH_CN,
   VersionWarnTR,
-  TipNPCCallbacksTR,
+  NoteNPCCallbacksTR,
   VersionWarnBS,
-  TipNPCCallbacksBS,
+  NoteNPCCallbacksBS,
   VersionWarnSR,
-  TipNPCCallbacksSR,
+  NoteNPCCallbacksSR,
   VersionWarnFA,
-  TipNPCCallbacksFA,
+  NoteNPCCallbacksFA,
 };
 
 export default templates;

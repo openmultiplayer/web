@@ -1,13 +1,13 @@
 import Admonition from "../Admonition";
 import Translate from "@docusaurus/Translate";
 
-export default function TipNpcCallback() {
+export default function NoteNpcCallback() {
   return (
-    <Admonition type="tip">
+    <Admonition type="note">
       <p>
         <Translate
-          id="npcCallbacksTip.message"
-          description="Tip shown on callback docs pages when NPCs can also call the callback"
+          id="npcCallbacksNote.message"
+          description="Note shown on callback docs pages when NPCs can also call the callback"
         >
           This callback can also be called by NPC.
         </Translate>

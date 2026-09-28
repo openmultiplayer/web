@@ -33,7 +33,7 @@ public OnPlayerRequestSpawn(playerid)
 
 ## Note
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 :::tip
 

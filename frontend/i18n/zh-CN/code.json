@@ -420,9 +420,9 @@
     "message": "如果你正在修改现有组件，请记得同时替换现有的 UID，那将是一个有效值，而非占位符。",
     "description": "针对修改现有组件的 UID 生成器提示"
   },
-  "npcCallbacksTip.message": {
+  "npcCallbacksNote.message": {
     "message": "此回调也可能由 NPC 调用。",
-    "description": "在回调文档页面显示的提示，说明 NPC 也可以调用该回调"
+    "description": "在回调文档页面显示的说明，指出 NPC 也可以调用该回调"
   },
   "toast.close": {
     "message": "关闭通知",

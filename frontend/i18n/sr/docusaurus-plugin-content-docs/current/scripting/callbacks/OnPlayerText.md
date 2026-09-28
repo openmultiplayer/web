@@ -32,7 +32,7 @@ public OnPlayerText(playerid, text[])
 
 ## Белешке
 
-<TipNPCCallbacksSR />
+<NoteNPCCallbacksSR />
 
 ## Повезане повратне функције
 

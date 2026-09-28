@@ -32,7 +32,7 @@ public OnPlayerText(playerid, text[])
 
 ## Ghi chú
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Các Callbacks liên quan
 

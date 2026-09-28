@@ -30,11 +30,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## Notas
 
-:::tip
-
-<TipNPCCallbacks />
-
-:::
+<NoteNPCCallbacks />
 
 ## Funções Relacionadas
 

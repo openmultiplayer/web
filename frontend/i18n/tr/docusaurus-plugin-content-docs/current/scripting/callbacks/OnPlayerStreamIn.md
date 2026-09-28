@@ -32,6 +32,6 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## Notlar
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Bağlantılı Fonksiyonlar

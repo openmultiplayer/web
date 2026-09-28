@@ -32,7 +32,7 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## Ghi chú
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Các Callbacks liên quan
 

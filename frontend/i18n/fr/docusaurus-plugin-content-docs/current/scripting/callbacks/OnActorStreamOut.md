@@ -34,6 +34,6 @@ public OnActorStreamOut(actorid, forplayerid)
 
 ## Astuces
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Fonctions connexes

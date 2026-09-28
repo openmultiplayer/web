@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 ## Ghi Chú
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Các Callback Liên Quan
 

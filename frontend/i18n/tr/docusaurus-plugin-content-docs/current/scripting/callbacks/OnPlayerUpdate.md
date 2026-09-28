@@ -77,7 +77,7 @@ public OnPlayerUpdate(playerid)
 
 ## Notlar
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 :::warning
 

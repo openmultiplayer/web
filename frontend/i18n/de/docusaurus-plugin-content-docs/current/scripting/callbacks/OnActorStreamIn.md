@@ -34,4 +34,4 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Anmerkungen
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
