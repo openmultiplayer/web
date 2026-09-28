@@ -5,8 +5,6 @@ description: 修改文件指针位置。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 修改文件指针位置。可在文件中进行正向或反向定位。
@@ -80,7 +78,6 @@ else
 - [frename](frename): 重命名文件
 - [fcopy](fcopy): 复制文件
 - [filecrc](filecrc): 计算 CRC32 校验值
-- [diskfree](diskfree): 获取磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录
 

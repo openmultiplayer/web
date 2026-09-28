@@ -5,8 +5,6 @@ description: تبدیل یک عدد صحیح به رشته.
 tags: ["string"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 تبدیل یک عدد صحیح به رشته.

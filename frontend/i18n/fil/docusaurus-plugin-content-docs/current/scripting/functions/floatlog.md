@@ -5,8 +5,6 @@ description: Binibigyang-daan ka ng function na ito na makuha ang logarithm ng i
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Binibigyang-daan ka ng function na ito na makuha ang logarithm ng isang float value.

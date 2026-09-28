@@ -5,8 +5,6 @@ description: 计算多值反正切角度（以度为单位）
 tags: ["数学"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 注意参数顺序为 y 值在前，x 值在后。这是为了符合数学中 y/x 的运算顺序惯例。

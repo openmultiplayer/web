@@ -36,7 +36,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Notas
 
-<TipNPCCallbacksES />
+<NoteNPCCallbacksES />
 
 ## Funciones Relacionadas
 

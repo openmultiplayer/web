@@ -5,8 +5,6 @@ description: Troca bytes em uma célula.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 | Nome | Descrição                                    |

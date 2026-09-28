@@ -5,8 +5,6 @@ description: 在已打开的SQLite数据库上执行SQL查询语句。
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用 [DB_ExecuteQuery](DB_ExecuteQuery)。

@@ -5,8 +5,6 @@ description: 从db_query结果中获取字段内容
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用 [DB_GetFieldString](DB_GetFieldString)。

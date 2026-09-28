@@ -5,8 +5,6 @@ description: tangent یک زاویه داده شده رو دریافت کنه.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 tangent یک زاویه داده شده رو دریافت میکنه. زاویه ورودی میتونه بر حسب radian، درجه یا grade باشه.

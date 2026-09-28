@@ -22,11 +22,7 @@ Acest callback este apelat atunci când starea oricărei taste [acceptate](../re
 
 ## Note
 
-:::note
-
-This callback can also be called by NPC.
-
-:::
+<NoteNPCCallbacks />
 
 :::tip
 

@@ -5,12 +5,6 @@ description: Ova se funkcija vraća broj milisekundi od pokretanja poslužitelja
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Ova se funkcija može koristiti kao zamjena za GetTickCount, jer vraća broj milisekundi od pokretanja poslužitelja.

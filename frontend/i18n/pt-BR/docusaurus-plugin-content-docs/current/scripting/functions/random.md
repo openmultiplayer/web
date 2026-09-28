@@ -6,8 +6,6 @@ tags: ["core"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtenha um número pseudo-aleatório.

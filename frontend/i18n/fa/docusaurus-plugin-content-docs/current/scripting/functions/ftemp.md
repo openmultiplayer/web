@@ -5,8 +5,6 @@ description: توی پوشه‌های "tmp"، "temp" یا root یه فایل ب�
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 توی پوشه‌های "tmp"، "temp" یا root یه فایل با اسم تصادفی میسازه برای خوندن و نوشتن. فایل بعد از استفاده fclose() روی فایل حذف میشه.
@@ -134,6 +132,5 @@ else
 - [frename](frename): تغییر نام فایل.
 - [fcopy](fcopy): کپی کردن فایل.
 - [filecrc](filecrc): برگردوندن مقدار CRC 32-bit فایل.
-- [diskfree](diskfree): برگردوندن فضای خالی دیسک.
 - [fattrib](fattrib): تنظیم attribute های فایل.
 - [fcreatedir](fcreatedir): ساختن پوشه.

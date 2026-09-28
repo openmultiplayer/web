@@ -5,12 +5,6 @@ description: Find a filename matching a pattern.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Find a filename matching a pattern.

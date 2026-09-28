@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 
 ## Astuces
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Callback connexe
 

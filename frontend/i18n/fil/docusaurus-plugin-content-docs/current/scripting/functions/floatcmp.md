@@ -5,8 +5,6 @@ description: Ang floatcmp ay maaaring gamitin upang ihambing ang mga halaga ng f
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Ang floatcmp ay maaaring gamitin upang ihambing ang mga halaga ng float sa bawat isa, upang mapatunayan ang paghahambing.

@@ -5,8 +5,6 @@ description: .
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Opis
 
 Podaje odwróconą wartość arcus cosinusa w radianach.

@@ -5,8 +5,6 @@ description: Get an argument that was passed to a function.
 tags: ["core", "arguments", "args"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Get an argument that was passed to a function.

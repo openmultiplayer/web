@@ -5,8 +5,6 @@ description: Magtakda ng argument na naipasa sa isang function.
 tags: []
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Magtakda ng argument na naipasa sa isang function.

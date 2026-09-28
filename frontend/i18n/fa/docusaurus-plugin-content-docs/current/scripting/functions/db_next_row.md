@@ -5,8 +5,6 @@ description: به ردیف بعدی در نتیجه‌ای که از db_query ب
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteFA />
-
 <VersionWarnFA version='SA-MP 0.3.7 R1' />
 
 <div dir="rtl" style={{ textAlign: "right" }}>

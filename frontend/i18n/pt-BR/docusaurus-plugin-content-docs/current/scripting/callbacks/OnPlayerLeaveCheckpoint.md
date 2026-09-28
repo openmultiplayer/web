@@ -29,7 +29,7 @@ public OnPlayerLeaveCheckpoint(playerid)
 
 ## Notas
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Funções Relacionadas
 

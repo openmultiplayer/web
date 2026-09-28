@@ -5,8 +5,6 @@ description: Gets the number of open database results
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount).

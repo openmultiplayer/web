@@ -5,12 +5,6 @@ description: Konvertuje string u float.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Konvertuje string u float.

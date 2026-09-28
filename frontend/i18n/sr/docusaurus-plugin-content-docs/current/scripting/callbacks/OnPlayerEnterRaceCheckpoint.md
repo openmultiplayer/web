@@ -29,7 +29,7 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 ## Белешке
 
-<TipNPCCallbacksSR />
+<NoteNPCCallbacksSR />
 
 ## Повезане повратне функције
 

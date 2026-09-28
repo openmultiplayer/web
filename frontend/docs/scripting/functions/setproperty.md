@@ -5,8 +5,6 @@ description: Add a new property or change an existing property.
 tags: ["core", "property"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Add a new property or change an existing property.

@@ -5,8 +5,6 @@ description: Gets the number of open database connections for debugging purposes
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount).

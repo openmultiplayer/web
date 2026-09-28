@@ -5,8 +5,6 @@ description: sine یک زاویه داده شده رو دریافت کنه.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 sine یک زاویه داده شده رو دریافت میکنه. زاویه ورودی میتونه بر حسب radian، درجه یا grade باشه.

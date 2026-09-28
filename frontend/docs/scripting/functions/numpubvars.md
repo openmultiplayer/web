@@ -5,8 +5,6 @@ description: Counts how many public variables there are in the script.
 tags: ["core", "pubvar", "public variable"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Counts how many public variables there are in the script.

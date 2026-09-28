@@ -7,8 +7,6 @@ tags: ["string"]
 
 <VersionWarnFA version='omp v1.1.0.2612' />
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 مقایسه دو رشته برای دیدن اینکه آیا یکسان هستند.

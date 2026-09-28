@@ -5,8 +5,6 @@ description: Een bestand openen (lezen/schrijven).
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Beschrijving
 
 Open een bestand om te lezen of te schrijven.

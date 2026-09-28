@@ -5,8 +5,6 @@ description: Get the inversed value of a sine in degrees.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Get the inversed value of a sine in degrees. In trigonometrics, arc sine is the inverse operation of sine.

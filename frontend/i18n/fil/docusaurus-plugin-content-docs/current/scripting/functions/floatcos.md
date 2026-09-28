@@ -5,8 +5,6 @@ description: Kunin ang cosine mula sa isang naibigay na anggulo.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Kunin ang cosine mula sa isang naibigay na anggulo. Ang input angle ay maaaring nasa radians, degrees o grades.

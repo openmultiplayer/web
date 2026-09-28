@@ -6,8 +6,6 @@ tags: ["file management"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Altere a posição atual no arquivo. Você pode avançar ou retroceder no arquivo.
@@ -80,7 +78,6 @@ Usar um identificador inválido irá travar seu servidor! Obtenha um identificad
 - [frename](frename): Renomeia um arquivo.
 - [fcopy](fcopy): Copia um arquivo.
 - [filecrc](filecrc): Retorna o valor CRC de 32 bits de um arquivo.
-- [diskfree](diskfree): Retorna o espaço livre em disco.
 - [fattrib](fattrib): Defina os atributos do arquivo.
 - [fcreatedir](fcreatedir): Crie um diretório.
 

@@ -38,7 +38,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## Astuces
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Fonctions connexes
 

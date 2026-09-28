@@ -5,12 +5,6 @@ description: Formatira string tako da sadrži varijable i druge stringove unutar
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Formatira string tako da sadrži varijable i druge stringove unutar njega.

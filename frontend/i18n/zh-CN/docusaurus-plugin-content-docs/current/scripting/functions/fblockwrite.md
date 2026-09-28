@@ -5,8 +5,6 @@ description: 以二进制格式将数据写入文件，忽略换行符和编码�
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 将数据以二进制格式写入文件，不处理换行符和字符编码。
@@ -84,6 +82,5 @@ else
 - [frename](frename): 重命名文件
 - [fcopy](fcopy): 复制文件
 - [filecrc](filecrc): 计算文件 32 位 CRC 校验值
-- [diskfree](diskfree): 获取磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录

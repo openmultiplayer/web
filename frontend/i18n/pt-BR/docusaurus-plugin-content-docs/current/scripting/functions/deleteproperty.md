@@ -5,8 +5,6 @@ description: Apaga uma propriedade definida anteriormente (setproperty).
 tags: ["core", "property"]
 ---
 
-<LowercaseNote />
-
 ## descrição
 
 Apaga uma propriedade definida anteriormente com [setproperty](setproperty).

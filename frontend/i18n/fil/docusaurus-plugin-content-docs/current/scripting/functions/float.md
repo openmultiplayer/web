@@ -5,8 +5,6 @@ description: Kino-convert ang isang integer sa isang float.
 tags: ["floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Kino-convert ang isang integer sa isang float.

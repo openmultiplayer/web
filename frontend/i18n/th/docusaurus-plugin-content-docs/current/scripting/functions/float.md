@@ -5,12 +5,6 @@ description: Converts an integer into a float.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Converts an integer into a float.

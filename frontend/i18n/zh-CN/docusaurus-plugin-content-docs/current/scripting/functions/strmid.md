@@ -5,8 +5,6 @@ description: 从字符串中提取指定范围的字符
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 此函数用于从字符串中提取指定范围的字符。

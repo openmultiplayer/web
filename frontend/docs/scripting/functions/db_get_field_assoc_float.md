@@ -5,8 +5,6 @@ description: Gets the contents of the field as a floating point number with the 
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_GetFieldFloatByName](DB_GetFieldFloatByName).

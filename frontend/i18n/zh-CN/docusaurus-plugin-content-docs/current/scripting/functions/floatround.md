@@ -5,8 +5,6 @@ description: 将浮点数四舍五入为整数值。
 tags: ["数学", "浮点数"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 将浮点数按照指定模式舍入为整数值。

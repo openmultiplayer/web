@@ -8,8 +8,6 @@ tags: ["file management"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtenha a posição atual no arquivo.
@@ -64,6 +62,5 @@ else
 - [frename](frename): Renomeia um arquivo.
 - [fcopy](fcopy): Copia um arquivo.
 - [filecrc](filecrc): Retorna o valor CRC de 32 bits de um arquivo.
-- [diskfree](diskfree): Retorna o espaço livre em disco.
 - [fattrib](fattrib): Defina os atributos do arquivo.
 - [fcreatedir](fcreatedir): Crie um diretório.

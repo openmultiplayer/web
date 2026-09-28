@@ -5,12 +5,6 @@ description: This function changes a single character to uppercase.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 This function changes a single character to uppercase.

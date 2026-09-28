@@ -5,12 +5,6 @@ description: Search for a sub string in a string.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Search for a sub string in a string.

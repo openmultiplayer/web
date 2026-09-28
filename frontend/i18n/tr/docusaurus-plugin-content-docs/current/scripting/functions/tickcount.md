@@ -5,8 +5,6 @@ description: Bu fonksiyon, sunucunun başlatılmasından bu yana geçen milisani
 tags: ["time"]
 ---
 
-<LowercaseNoteTR />
-
 ## Açıklama
 
 Bu fonksiyon, sunucunun başlatılmasından bu yana geçen milisaniye sayısını döndürdüğü için GetTickCount'in yerine kullanılabilir.

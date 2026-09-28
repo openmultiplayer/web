@@ -49,7 +49,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::warning
 
-Usar um ID de componente inválido causa um crash no jogador. Não existe verificação interna para isso.
+Usar um ID de componente inválido causa um crash no jogador. (Corrigido em open.mp)
 
 :::
 

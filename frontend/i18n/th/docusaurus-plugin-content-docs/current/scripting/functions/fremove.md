@@ -5,12 +5,6 @@ description: Delete a file.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Delete a file.

@@ -5,8 +5,6 @@ description: یک رشته را pack کن.
 tags: ["string"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 یک رشته را pack می‌کند. رشته‌های pack شده 75% کمتر حافظه استفاده می‌کنند.

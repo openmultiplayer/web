@@ -5,8 +5,6 @@ description: یک متغیر public خاص رو در اسکریپت فعلی ت�
 tags: ["core", "pubvar", "public variable"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 یک متغیر public خاص رو در اسکریپت فعلی تنظیم می‌کنه.

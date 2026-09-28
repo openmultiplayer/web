@@ -420,17 +420,9 @@
     "message": "如果你正在修改现有组件，请记得同时替换现有的 UID，那将是一个有效值，而非占位符。",
     "description": "针对修改现有组件的 UID 生成器提示"
   },
-  "lowercaseNote.name.function": {
-    "message": "函数",
-    "description": "小写名称警告中的默认项名称"
-  },
-  "lowercaseNote.message": {
-    "message": "此 {name} 以小写字母开头。",
-    "description": "在脚本文档页面显示的警告，针对名称以小写字母开头的 API"
-  },
-  "npcCallbacksTip.message": {
+  "npcCallbacksNote.message": {
     "message": "此回调也可能由 NPC 调用。",
-    "description": "在回调文档页面显示的提示，说明 NPC 也可以调用该回调"
+    "description": "在回调文档页面显示的说明，指出 NPC 也可以调用该回调"
   },
   "toast.close": {
     "message": "关闭通知",

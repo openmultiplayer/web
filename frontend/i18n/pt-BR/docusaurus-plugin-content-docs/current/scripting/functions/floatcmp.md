@@ -6,8 +6,6 @@ tags: ["math", "floating-point"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 floatcmp pode ser usado para comparar valores flutuantes entre si, para validar a comparação.

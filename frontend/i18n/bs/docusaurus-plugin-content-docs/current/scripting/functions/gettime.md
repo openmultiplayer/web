@@ -5,12 +5,6 @@ description: Dobij trenutno vrijeme servera koje će biti pohranjeno u varijabla
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobij trenutno vrijeme servera koje će biti pohranjeno u varijablama &hour, &minute and &second.

@@ -5,8 +5,6 @@ description: Get a pseudo-random number.
 tags: ["core"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Get a pseudo-random number.

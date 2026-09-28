@@ -5,12 +5,6 @@ description: Write text into a file.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Write text into a file.

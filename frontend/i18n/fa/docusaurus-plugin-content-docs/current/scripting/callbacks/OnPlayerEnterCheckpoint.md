@@ -38,7 +38,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## نکته‌ها
 
-<TipNPCCallbacksFA />
+<NoteNPCCallbacksFA />
 
 ## کالبک‌های مرتبط
 

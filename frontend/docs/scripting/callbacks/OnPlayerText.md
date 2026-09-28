@@ -35,7 +35,7 @@ public OnPlayerText(playerid, text[])
 
 ## Notes
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 :::tip
 

@@ -5,12 +5,6 @@ description: Vraća ime polja u navedenom indeksu.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Vraća ime polja u navedenom indeksu.

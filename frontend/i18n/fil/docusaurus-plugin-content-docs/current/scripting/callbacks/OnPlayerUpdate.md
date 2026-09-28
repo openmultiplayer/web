@@ -77,7 +77,7 @@ public OnPlayerUpdate(playerid)
 
 ## Mga Dapat Unawain
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 :::warning
 

@@ -5,8 +5,6 @@ description: Moves to the next row of the result set allocated with `db_query`.
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_SelectNextRow](DB_SelectNextRow).

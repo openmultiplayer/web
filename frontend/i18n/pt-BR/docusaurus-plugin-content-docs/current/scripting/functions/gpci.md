@@ -6,8 +6,6 @@ tags: []
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtenha o CI de um usuário, ele está vinculado ao SAMP/GTA em seu computador.

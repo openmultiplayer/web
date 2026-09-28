@@ -29,7 +29,7 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 ## نکته‌ها
 
-<TipNPCCallbacksFA />
+<NoteNPCCallbacksFA />
 
 ## کالبک‌های مرتبط
 

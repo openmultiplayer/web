@@ -5,8 +5,6 @@ description: Esta função retorna o valor absoluto de um float.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Esta função retorna o valor absoluto de um float.

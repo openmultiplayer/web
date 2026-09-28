@@ -5,8 +5,6 @@ description: 将单个字符转换为大写形式。
 tags: ["字符串处理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 此函数用于将单个字符转换为大写形式。

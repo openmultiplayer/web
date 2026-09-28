@@ -29,7 +29,7 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 ## Notlar
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Bağlantılı Fonksiyonlar
 

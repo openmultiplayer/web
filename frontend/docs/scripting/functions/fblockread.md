@@ -5,8 +5,6 @@ description: This function allows you to read data from a file, without encoding
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 This function allows you to read data from a file, without encoding and line terminators
@@ -104,6 +102,5 @@ Using an invalid handle will crash your server! Get a valid handle by using [fop
 - [frename](frename): Rename a file.
 - [fcopy](fcopy): Copy a file.
 - [filecrc](filecrc): Return the 32-bit CRC value of a file.
-- [diskfree](diskfree): Returns the free disk space.
 - [fattrib](fattrib): Set the file attributes.
 - [fcreatedir](fcreatedir): Create a directory.

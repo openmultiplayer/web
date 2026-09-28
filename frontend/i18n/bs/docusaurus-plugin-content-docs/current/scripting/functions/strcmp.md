@@ -5,12 +5,6 @@ description: Upoređuje dva stringa kako pi vidjelo da li su isti.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Upoređuje dva stringa kako pi vidjelo da li su isti

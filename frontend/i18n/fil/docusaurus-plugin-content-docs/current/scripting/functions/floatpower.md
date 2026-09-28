@@ -5,8 +5,6 @@ description: Itinataas ang ibinigay na halaga sa kapangyarihan ng exponent.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Itinataas ang ibinigay na halaga sa kapangyarihan ng exponent.

@@ -5,8 +5,6 @@ description: Closes a SQLite database connection that was opened with `db_open`.
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteTR />
-
 ## Açıklama
 
 Daha önceden [db_open](db_open) fonksiyonu ile açılmış olan veritabanı bağlantısını kapatır.

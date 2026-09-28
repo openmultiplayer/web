@@ -5,8 +5,6 @@ description: Obtém o conteúdo de um campo como um número de ponto flutuante c
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 A função obtém o conteúdo de um campo como um número de ponto flutuante com o índice do campo especificado.

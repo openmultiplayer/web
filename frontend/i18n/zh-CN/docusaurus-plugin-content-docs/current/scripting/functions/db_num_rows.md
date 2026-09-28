@@ -5,8 +5,6 @@ description: 返回通过db_query执行的查询结果中的行数。
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用 [DB_GetRowCount](DB_GetRowCount)。

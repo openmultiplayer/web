@@ -5,12 +5,6 @@ description: Moves to the next row of the result allocated from db_query.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Moves to the next row of the result allocated from db_query.

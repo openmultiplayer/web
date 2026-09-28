@@ -5,12 +5,6 @@ description: Izbriši prethodno postavljenu imovinu (setproperty).
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Izbriši prethodno postavljenu imovinu (setproperty).

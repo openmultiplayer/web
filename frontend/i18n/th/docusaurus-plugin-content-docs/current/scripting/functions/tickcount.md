@@ -5,12 +5,6 @@ description: Returns the number of milliseconds since the start-up of the server
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 This function can be used as a replacement for GetTickCount, as it returns the number of milliseconds since the start-up of the server.

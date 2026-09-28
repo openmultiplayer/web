@@ -6,8 +6,6 @@ tags: ["console"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Imprime uma string no console do servidor (não no chat do jogo) e nos logs (log.txt).

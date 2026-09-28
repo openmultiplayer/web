@@ -5,8 +5,6 @@ description: Get the multi-valued inversed value of a tangent in degrees.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 Notice that the y-value is the first parameter and the x-value is the second parameter. This is because the mathematical notation is y/x (i.e. y divided by x) and the convention is to write the operands in the order of the operation that is performed on them.

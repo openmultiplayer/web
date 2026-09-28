@@ -5,8 +5,6 @@ description: 获取函数接收的参数数量
 tags: ["核心", "参数"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 用于获取函数接收的参数数量

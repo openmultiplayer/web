@@ -5,12 +5,6 @@ description: Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (se
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (server_log.txt).

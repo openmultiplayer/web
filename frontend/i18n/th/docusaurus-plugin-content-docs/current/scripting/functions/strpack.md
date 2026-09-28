@@ -5,12 +5,6 @@ description: Pack a string.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Pack a string. Packed strings use 75% less memory.

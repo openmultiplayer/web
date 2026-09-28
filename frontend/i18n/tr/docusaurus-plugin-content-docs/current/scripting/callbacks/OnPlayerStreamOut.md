@@ -32,4 +32,4 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## Notlar
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />

@@ -5,8 +5,6 @@ description: Esta função concatena (junta) duas strings numa string de destino
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Esta função concatena (junta) duas strings numa string de destino.

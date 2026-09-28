@@ -6,8 +6,6 @@ tags: ["math", "floating-point"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Eleva o valor fornecido à potência do expoente.

@@ -5,8 +5,6 @@ description: floatcmp میتونه برای مقایسه مقادیر اعشار
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 floatcmp میتونه برای مقایسه مقادیر اعشاری با یکدیگر استفاده بشه تا مقایسه رو تأیید کنه.

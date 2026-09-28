@@ -29,7 +29,7 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 ## Ghi Chú
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Các Callbacks Liên Quan
 

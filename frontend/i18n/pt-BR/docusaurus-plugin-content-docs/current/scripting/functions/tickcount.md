@@ -5,8 +5,6 @@ description: Retorna o número de milissegundos desde a inicialização do servi
 tags: ["time"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Esta função pode ser usada como substituição para GetTickCount, pois retorna o número de milissegundos desde a inicialização do servidor.

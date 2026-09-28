@@ -5,8 +5,6 @@ description: مقدار حافظه موجود برای heap/stack رو بر حس
 tags: ["core"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 مقدار حافظه موجود برای heap/stack رو بر حسب بایت برمی‌گردونه.

@@ -5,12 +5,6 @@ description: Dobij (pseudo-)slučajni broj.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobij (pseudo-)slučajni broj.

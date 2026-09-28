@@ -5,8 +5,6 @@ description: 检查字符串是否已打包
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 检查指定字符串是否处于打包状态。

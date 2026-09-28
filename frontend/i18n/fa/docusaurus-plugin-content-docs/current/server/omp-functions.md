@@ -450,4 +450,3 @@ description: توابع و callback های جدید.
 | [fcreatedir](../scripting/functions/fcreatedir) |
 | [fcopy](../scripting/functions/fcopy)           |
 | [fattrib](../scripting/functions/fattrib)       |
-| [diskfree](../scripting/functions/diskfree)     |

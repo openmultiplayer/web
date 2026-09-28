@@ -30,7 +30,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## Белешке
 
-<TipNPCCallbacksSR />
+<NoteNPCCallbacksSR />
 
 ## Повезане повратне функције
 

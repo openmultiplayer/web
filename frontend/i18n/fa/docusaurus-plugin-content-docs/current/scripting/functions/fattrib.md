@@ -7,8 +7,6 @@ tags: ["file management"]
 
 <VersionWarnFA version='omp v1.1.0.2612' />
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 تنظیم ویژگی‌های فایل.
@@ -70,5 +68,4 @@ else
 - [frename](frename): تغییر نام فایل.
 - [fcopy](fcopy): کپی کردن فایل.
 - [filecrc](filecrc): برگرداندن مقدار CRC 32-بیتی فایل.
-- [diskfree](diskfree): برگرداندن فضای خالی دیسک.
 - [fcreatedir](fcreatedir): ایجاد دایرکتوری.

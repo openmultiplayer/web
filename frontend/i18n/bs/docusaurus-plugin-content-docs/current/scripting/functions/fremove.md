@@ -5,12 +5,6 @@ description: Obriši datoteku.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Obriši datoteku.

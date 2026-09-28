@@ -29,7 +29,7 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 ## Notes
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Related Callbacks
 

@@ -450,4 +450,3 @@ Deze pagina bevat alle functies en callbacks die in open.mp zijn toegevoegd.
 | [fcreatedir](../scripting/functions/fcreatedir) |
 | [fcopy](../scripting/functions/fcopy)           |
 | [fattrib](../scripting/functions/fattrib)       |
-| [diskfree](../scripting/functions/diskfree)     |

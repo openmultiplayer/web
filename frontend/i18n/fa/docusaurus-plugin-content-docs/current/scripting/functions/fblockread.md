@@ -5,8 +5,6 @@ description: این تابع به شما امکان خواندن داده از �
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 این تابع به شما امکان خواندن داده از فایل، بدون کدگذاری و پایان‌دهنده‌های خط را می‌دهد
@@ -104,6 +102,5 @@ else
 - [frename](frename): تغییر نام فایل.
 - [fcopy](fcopy): کپی کردن فایل.
 - [filecrc](filecrc): برگرداندن مقدار CRC 32-بیتی فایل.
-- [diskfree](diskfree): برگرداندن فضای خالی دیسک.
 - [fattrib](fattrib): تنظیم ویژگی‌های فایل.
 - [fcreatedir](fcreatedir): ایجاد دایرکتوری.

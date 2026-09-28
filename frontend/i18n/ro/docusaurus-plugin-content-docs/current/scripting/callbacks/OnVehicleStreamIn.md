@@ -32,6 +32,6 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 ## Notite
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Functii Relatate

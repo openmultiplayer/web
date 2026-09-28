@@ -5,12 +5,6 @@ description: Provjeri da li imovina postoji.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Provjeri da li imovina postoji.

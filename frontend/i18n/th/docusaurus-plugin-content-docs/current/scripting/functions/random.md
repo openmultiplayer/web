@@ -5,12 +5,6 @@ description: Get a pseudo-random number.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Get a pseudo-random number.

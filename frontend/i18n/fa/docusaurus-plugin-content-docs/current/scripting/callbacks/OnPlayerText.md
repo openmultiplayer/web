@@ -35,7 +35,7 @@ public OnPlayerText(playerid, text[])
 
 ## نکته‌ها
 
-<TipNPCCallbacksFA />
+<NoteNPCCallbacksFA />
 
 :::tip
 

@@ -5,8 +5,6 @@ description: Converts an integer into a float.
 tags: ["floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Converts an integer into a float.

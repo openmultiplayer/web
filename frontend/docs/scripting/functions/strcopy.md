@@ -7,8 +7,6 @@ tags: ["string"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Description
 
 Copies a string into the destination string.

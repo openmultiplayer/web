@@ -5,8 +5,6 @@ description: Arc‑sinus (in graden) teruggeven.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 ## Beschrijving
 
 Geef de arc‑sinus (inverse van sinus) in graden.

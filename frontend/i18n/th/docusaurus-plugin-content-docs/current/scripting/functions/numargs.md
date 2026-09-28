@@ -5,12 +5,6 @@ description: Get the number of arguments passed to a function.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Get the number of arguments passed to a function.

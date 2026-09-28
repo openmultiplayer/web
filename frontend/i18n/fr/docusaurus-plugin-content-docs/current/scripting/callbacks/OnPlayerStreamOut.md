@@ -35,6 +35,6 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## Astuces
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Fonctions connexes

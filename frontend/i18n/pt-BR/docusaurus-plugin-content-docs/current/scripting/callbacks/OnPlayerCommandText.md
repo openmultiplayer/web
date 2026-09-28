@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notas
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Funções Relacionadas
 

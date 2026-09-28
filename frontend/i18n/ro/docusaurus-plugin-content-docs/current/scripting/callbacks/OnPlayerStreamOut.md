@@ -32,6 +32,6 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 ## Note
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Funcții similare

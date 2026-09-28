@@ -5,8 +5,6 @@ description: memory handle مربوط به نتیجه پایگاه داده SQLi
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteFA />
-
 <VersionWarnFA version='SA-MP 0.3.7 R1' />
 
 <div dir="rtl" style={{ textAlign: "right" }}>

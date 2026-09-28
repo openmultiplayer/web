@@ -5,12 +5,6 @@ description: This function can be used to unpack a string.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 This function can be used to unpack a string.

@@ -5,8 +5,6 @@ description: 添加新属性或修改现有属性。
 tags: ["核心", "属性"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 添加新属性或修改现有属性。

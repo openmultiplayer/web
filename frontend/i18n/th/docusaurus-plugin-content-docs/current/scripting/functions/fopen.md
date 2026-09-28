@@ -5,12 +5,6 @@ description: Open a file (to read from or write to).
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Open a file (to read from or write to).

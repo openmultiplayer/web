@@ -5,12 +5,6 @@ description: Get the length of a string.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Get the length of a string.

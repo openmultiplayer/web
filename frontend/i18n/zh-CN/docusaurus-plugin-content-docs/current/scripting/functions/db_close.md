@@ -5,8 +5,6 @@ description: 关闭通过`db_open`打开的SQLite数据库连接。
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 关闭通过[db_open](db_open)建立的 SQLite 数据库连接。

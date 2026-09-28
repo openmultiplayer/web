@@ -5,12 +5,6 @@ description: Get the content of a field from db_query.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Get the content of a field from db_query

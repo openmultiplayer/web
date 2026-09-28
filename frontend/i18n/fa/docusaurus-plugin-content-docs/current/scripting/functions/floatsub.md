@@ -5,8 +5,6 @@ description: یک float رو از float دیگه کم میکنه.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 یک float رو از float دیگه کم میکنه. دقت کن که این تابع استفاده واقعی نداره، چونکه میتونی به سادگی از operator استاندارد (-) استفاده کنی.

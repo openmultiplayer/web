@@ -5,12 +5,6 @@ description: floatcmp can be used to compare float values to each other, to vali
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 floatcmp can be used to compare float values to each other, to validate the comparison.

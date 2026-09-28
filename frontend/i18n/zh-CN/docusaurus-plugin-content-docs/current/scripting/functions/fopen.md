@@ -5,8 +5,6 @@ description: 打开文件（用于读取或写入）。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 打开文件以便进行读写操作。
@@ -157,7 +155,6 @@ else
 - [frename](frename): 文件重命名
 - [fcopy](fcopy): 文件复制
 - [filecrc](filecrc): 计算文件 CRC 校验码
-- [diskfree](diskfree): 查询磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录
 

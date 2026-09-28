@@ -5,8 +5,6 @@ description: بررسی وجود یک فایل خاص در دایرکتوری sc
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 بررسی می‌کند که آیا یک فایل خاص در دایرکتوری scriptfiles وجود دارد یا نه.
@@ -58,6 +56,5 @@ else
 - [frename](frename): تغییر نام یک فایل.
 - [fcopy](fcopy): کپی کردن یک فایل.
 - [filecrc](filecrc): برگرداندن مقدار CRC 32-bit یک فایل.
-- [diskfree](diskfree): برگرداندن فضای خالی دیسک.
 - [fattrib](fattrib): تنظیم خصوصیات فایل.
 - [fcreatedir](fcreatedir): ساخت یک دایرکتوری.

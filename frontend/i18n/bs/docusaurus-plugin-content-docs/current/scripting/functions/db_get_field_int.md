@@ -5,12 +5,6 @@ description: Dobijte sadržaj polja kao cijeli broj iz db_query.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobijte sadržaj polja kao cijeli broj iz db_query.

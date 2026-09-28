@@ -5,12 +5,6 @@ description: Pretvori string u cijeli broj.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Pretvori string u cijeli broj.

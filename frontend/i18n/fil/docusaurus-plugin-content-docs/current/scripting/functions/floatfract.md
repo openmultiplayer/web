@@ -5,8 +5,6 @@ description: Kunin ang fractional na bahagi ng float.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Kunin ang fractional na bahagi ng float. Nangangahulugan ito ng halaga ng mga numero pagkatapos ng decimal point.

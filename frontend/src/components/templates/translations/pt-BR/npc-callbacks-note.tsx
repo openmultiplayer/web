@@ -1,8 +1,8 @@
 import Admonition from "../../../Admonition";
 
-export default function TipNpcCallback() {
+export default function NoteNpcCallback() {
   return (
-    <Admonition type="tip">
+    <Admonition type="note">
       <p>Esta callback também pode ser chamada por um NPC.</p>
     </Admonition>
   );

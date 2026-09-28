@@ -41,7 +41,7 @@ O parâmetro opcional 'forcesync', cujo padrão é 0, na maioria dos casos não 
 
 :::warning
 
-Uma biblioteca de animação inválida irá crashar o jogo do jogador.
+Uma biblioteca de animação inválida irá crashar o jogo do jogador. (Corrigido em open.mp)
 
 :::
 

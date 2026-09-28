@@ -22,11 +22,7 @@ This callback is called when the state of any [supported](../resources/keys) key
 
 ## Notes
 
-:::note
-
-This callback can also be called by NPC.
-
-:::
+<NoteNPCCallbacks />
 
 :::tip
 

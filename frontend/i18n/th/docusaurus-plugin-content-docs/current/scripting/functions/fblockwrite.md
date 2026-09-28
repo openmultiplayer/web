@@ -5,12 +5,6 @@ description: Write data to a file in binary format, while ignoring line brakes a
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Write data to a file in binary format, while ignoring line brakes and encoding.

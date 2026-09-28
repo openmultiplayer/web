@@ -5,12 +5,6 @@ description: Ovom se funkcijom može raspakirati string.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Ovom se funkcijom može raspakirati string.

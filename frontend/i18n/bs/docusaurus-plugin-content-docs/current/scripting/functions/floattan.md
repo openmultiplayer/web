@@ -5,12 +5,6 @@ description: Uzmi tangentu iz zadanog ugla.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Uzmi tangentu iz zadanog ugla. Ulazni ugao može biti u radijanima, stupnjevima ili stupnjevima.

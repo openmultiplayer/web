@@ -5,8 +5,6 @@ description: 将数值强制限制在指定范围内
 tags: ["核心"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 将输入的数值强制限制在指定的区间范围内

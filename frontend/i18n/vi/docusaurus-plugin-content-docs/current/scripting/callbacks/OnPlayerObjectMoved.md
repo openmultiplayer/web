@@ -30,7 +30,7 @@ public OnPlayerObjectMoved(playerid, objectid)
 
 ## Ghi Chú
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Callbacks Liên Quan
 

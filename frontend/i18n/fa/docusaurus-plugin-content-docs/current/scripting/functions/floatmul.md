@@ -5,8 +5,6 @@ description: ضرب دو عدد اعشاری در یکدیگر.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 ضرب دو عدد اعشاری در یکدیگر.

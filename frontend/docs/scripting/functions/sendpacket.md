@@ -5,8 +5,6 @@ description: Sends a packet. (deprecated function)
 tags: ["datagram"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated, Use [HTTP](HTTP) or [pawn-requests](https://github.com/Southclaws/pawn-requests) plugin.

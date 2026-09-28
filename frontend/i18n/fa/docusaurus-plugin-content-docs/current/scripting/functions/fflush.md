@@ -7,8 +7,6 @@ tags: ["file management"]
 
 <VersionWarnFA version='omp v1.1.0.2612' />
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 کردن فایل روی دیسک (اطمینان از تمام شدن نوشتن‌ها). در واقع فقط تابع [flength](flength) رو صدا میزنه چون اون مجبوره برای دقت flush کنه.
@@ -69,6 +67,5 @@ else
 - [frename](frename): تغییر نام فایل.
 - [fcopy](fcopy): کپی فایل.
 - [filecrc](filecrc): برگرداندن مقدار 32-بیتی CRC فایل.
-- [diskfree](diskfree): برگرداندن فضای آزاد دیسک.
 - [fattrib](fattrib): تنظیم ویژگی‌های فایل.
 - [fcreatedir](fcreatedir): ساخت پوشه.

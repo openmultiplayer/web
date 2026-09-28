@@ -40,7 +40,7 @@ public OnPlayerText(playerid, text[])
 
 ## Astuces
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Fonctions connexes
 

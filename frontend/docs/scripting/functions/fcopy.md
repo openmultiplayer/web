@@ -7,8 +7,6 @@ tags: ["file management"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Description
 
 Copy a file.
@@ -65,6 +63,5 @@ If the target file already exists, it is overwritten.
 - [fstat](fstat): Return the size and the timestamp of a file.
 - [frename](frename): Rename a file.
 - [filecrc](filecrc): Return the 32-bit CRC value of a file.
-- [diskfree](diskfree): Returns the free disk space.
 - [fattrib](fattrib): Set the file attributes.
 - [fcreatedir](fcreatedir): Create a directory.

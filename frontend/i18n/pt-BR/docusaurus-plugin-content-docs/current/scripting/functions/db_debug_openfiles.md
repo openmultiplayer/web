@@ -5,8 +5,6 @@ description: Obtém o número de conexões de banco de dados abertas para fins d
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 A função obtém o número de conexões de banco de dados abertas para fins de depuração.

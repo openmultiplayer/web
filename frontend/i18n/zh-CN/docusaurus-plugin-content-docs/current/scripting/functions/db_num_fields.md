@@ -5,8 +5,6 @@ description: 获取通过`db_query`分配的结果集中的字段数量。
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用 [DB_GetFieldCount](DB_GetFieldCount)。

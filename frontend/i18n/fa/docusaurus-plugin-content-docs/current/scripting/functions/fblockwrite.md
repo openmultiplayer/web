@@ -5,8 +5,6 @@ description: نوشتن داده در فایل به فرمت باینری، با
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 نوشتن داده در فایل به فرمت باینری، با نادیده گرفتن شکست خط و کدگذاری.
@@ -87,6 +85,5 @@ else
 - [frename](frename): تغییر نام فایل.
 - [fcopy](fcopy): کپی کردن فایل.
 - [filecrc](filecrc): برگرداندن مقدار CRC 32-بیتی فایل.
-- [diskfree](diskfree): برگرداندن فضای خالی دیسک.
 - [fattrib](fattrib): تنظیم ویژگی‌های فایل.
 - [fcreatedir](fcreatedir): ایجاد دایرکتوری.

@@ -5,12 +5,6 @@ description: Checks if a specific file exists in the scriptfiles directory.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Checks if a specific file exists in the scriptfiles directory.

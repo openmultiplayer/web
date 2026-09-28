@@ -5,8 +5,6 @@ description: Calculates the square root of given value.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Calculates the square root of given value.

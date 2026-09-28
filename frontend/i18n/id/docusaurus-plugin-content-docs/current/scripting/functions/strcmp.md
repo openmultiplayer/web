@@ -5,8 +5,6 @@ description: Fungsi ini membandingkan kedua string untuk mengecek apakah mereka 
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Fungsi ini membandingkan kedua string untuk mengecek apakah mereka sama.

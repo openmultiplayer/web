@@ -29,7 +29,7 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 ## Notlar
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Bağlantılı Fonksiyonlar
 

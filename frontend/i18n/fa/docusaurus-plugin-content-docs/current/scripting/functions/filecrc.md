@@ -7,8 +7,6 @@ tags: ["file management"]
 
 <VersionWarnFA version='omp v1.1.0.2612' />
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 برگرداندن مقدار 32-بیتی CRC یک فایل.
@@ -67,6 +65,5 @@ else
 - [fstat](fstat): برگرداندن اندازه و زمان فایل.
 - [frename](frename): تغییر نام فایل.
 - [fcopy](fcopy): کپی فایل.
-- [diskfree](diskfree): برگرداندن فضای آزاد دیسک.
 - [fattrib](fattrib): تنظیم ویژگی‌های فایل.
 - [fcreatedir](fcreatedir): ساخت پوشه.

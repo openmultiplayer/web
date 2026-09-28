@@ -6,8 +6,6 @@ tags: ["core", "arguments", "args"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtenha o número de argumentos passados para uma função.

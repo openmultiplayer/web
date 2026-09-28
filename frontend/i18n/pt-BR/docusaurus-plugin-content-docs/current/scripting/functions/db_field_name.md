@@ -5,8 +5,6 @@ description: Retorna o nome do campo no índice especificado.
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Retorna o nome de um campo em um índice específico.

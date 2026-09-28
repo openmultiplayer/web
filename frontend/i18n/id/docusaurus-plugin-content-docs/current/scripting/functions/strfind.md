@@ -5,8 +5,6 @@ description: Mencari sebuah sub-string di dalam sebuah string.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Deskripsi
 
 Mencari sebuah sub-string di dalam sebuah string.

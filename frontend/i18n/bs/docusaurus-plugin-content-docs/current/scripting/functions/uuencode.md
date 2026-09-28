@@ -5,12 +5,6 @@ description: Kodirajte string u UU dekodirani string.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Kodirajte string u UU dekodirani string.

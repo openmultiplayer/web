@@ -5,8 +5,6 @@ description: تعداد متغیرهای public موجود در اسکریپت �
 tags: ["core", "pubvar", "public variable"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 تعداد متغیرهای public موجود در اسکریپت رو می‌شمره.

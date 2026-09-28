@@ -5,12 +5,6 @@ description: Izvuci niz znakova iz stringa.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Izvuci niz znakova iz stringa.

@@ -5,12 +5,6 @@ description: Add a new property or change an existing property.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Add a new property or change an existing property.

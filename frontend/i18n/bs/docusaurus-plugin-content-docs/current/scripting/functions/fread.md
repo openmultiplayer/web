@@ -5,12 +5,6 @@ description: Pročitajte jedan redak iz datoteke.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Pročitajte jedan redak iz datoteke.

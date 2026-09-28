@@ -5,8 +5,6 @@ description: اتصال پایگاه داده SQLite که با `db_open` باز 
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 اتصال پایگاه داده SQLite که با [db_open](db_open) باز شده را می‌بندد.

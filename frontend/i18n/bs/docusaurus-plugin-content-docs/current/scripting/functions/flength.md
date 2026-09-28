@@ -5,12 +5,6 @@ description: Vraća dužinu datoteke.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Vraća dužinu datoteke.

@@ -5,8 +5,6 @@ description: Nagdaragdag ng dalawang float nang magkasama.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Nagdaragdag ng dalawang float nang magkasama. Ang function na ito ay kalabisan dahil ang karaniwang operator (+) ay gumagawa ng parehong bagay.

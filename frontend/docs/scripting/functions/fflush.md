@@ -7,8 +7,6 @@ tags: ["file management"]
 
 <VersionWarn version='omp v1.1.0.2612' />
 
-<LowercaseNote />
-
 ## Description
 
 Flush a file to disk (ensure all writes are complete). Actually just calls [flength](flength) as that has to force a flush to be accurate.
@@ -69,6 +67,5 @@ else
 - [frename](frename): Rename a file.
 - [fcopy](fcopy): Copy a file.
 - [filecrc](filecrc): Return the 32-bit CRC value of a file.
-- [diskfree](diskfree): Returns the free disk space.
 - [fattrib](fattrib): Set the file attributes.
 - [fcreatedir](fcreatedir): Create a directory.

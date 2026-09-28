@@ -5,8 +5,6 @@ description: 在"tmp"、"temp"目录或根目录创建随机命名的临时文�
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 在"tmp"、"temp"目录或根目录创建随机命名的临时文件用于读写。该文件在使用 fclose()关闭后会自动删除。
@@ -126,6 +124,5 @@ else
 - [frename](frename): 重命名文件
 - [fcopy](fcopy): 复制文件
 - [filecrc](filecrc): 计算 CRC32 校验值
-- [diskfree](diskfree): 获取磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录

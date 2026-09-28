@@ -5,8 +5,6 @@ description: .
 tags: []
 ---
 
-<LowercaseNoteTR />
-
 ## Açıklama
 
 Radyanlardaki bir ark kosininin ters değerini alın.

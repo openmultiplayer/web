@@ -5,8 +5,6 @@ description: Obtém uma variável pública específica do script atual.
 tags: ["core", "pubvar", "public variable"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtém uma variável pública específica do script atual.

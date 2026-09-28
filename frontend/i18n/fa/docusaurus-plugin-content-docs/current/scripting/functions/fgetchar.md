@@ -5,8 +5,6 @@ description: خواندن یک کاراکتر از فایل.
 tags: ["file management"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 خواندن یک کاراکتر از فایل.
@@ -79,6 +77,5 @@ else
 - [frename](frename): تغییر نام فایل.
 - [fcopy](fcopy): کپی فایل.
 - [filecrc](filecrc): برگرداندن مقدار 32-بیتی CRC فایل.
-- [diskfree](diskfree): برگرداندن فضای آزاد دیسک.
 - [fattrib](fattrib): تنظیم ویژگی‌های فایل.
 - [fcreatedir](fcreatedir): ساخت پوشه.

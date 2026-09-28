@@ -5,8 +5,6 @@ description: 返回两个数值中的较大者
 tags: ["核心"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 用于比较数值的函数

@@ -5,8 +5,6 @@ description: Compara duas strings para ver se são iguais.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Compara duas strings para ver se são iguais.

@@ -5,12 +5,6 @@ description: Otvorite datoteku (za čitanje ili pisanje).
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Otvorite datoteku (za čitanje ili pisanje).

@@ -5,8 +5,6 @@ description: تبدیل عدد صحیح به اعشاری.
 tags: ["floating-point"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 تبدیل عدد صحیح به اعشاری.

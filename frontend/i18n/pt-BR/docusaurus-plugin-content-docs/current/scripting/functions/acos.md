@@ -5,8 +5,6 @@ description: Obter o valor invertido de um cosseno em graus.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Obter o valor invertido de um cosseno em graus. Na trigonometria, o arco cosseno é a operação inversa do cosseno.

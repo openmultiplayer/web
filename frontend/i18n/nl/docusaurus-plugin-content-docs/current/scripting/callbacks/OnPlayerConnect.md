@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 ## Notities
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Gerelateerde Callbacks
 

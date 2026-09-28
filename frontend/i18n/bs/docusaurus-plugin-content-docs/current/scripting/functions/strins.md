@@ -5,12 +5,6 @@ description: Umetni string u drugi string.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Umetni string u drugi string.

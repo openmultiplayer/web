@@ -6,8 +6,6 @@ tags: ["core", "property"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Verifique se existe uma propriedade.

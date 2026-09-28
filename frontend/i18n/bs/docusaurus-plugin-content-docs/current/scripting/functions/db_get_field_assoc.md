@@ -5,12 +5,6 @@ description: Dobiva sadržaj polja kao string s navedenim imenom polja.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobiva sadržaj polja kao string s navedenim imenom polja.

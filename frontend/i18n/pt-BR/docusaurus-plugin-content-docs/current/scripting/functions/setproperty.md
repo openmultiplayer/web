@@ -6,8 +6,6 @@ tags: ["core", "property"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Adicione uma nova propriedade ou altere uma propriedade existente.

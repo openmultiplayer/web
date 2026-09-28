@@ -5,12 +5,6 @@ description: Dohvatite broj argumenata proslijeđenih funkciji.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dohvatite broj argumenata proslijeđenih funkciji.

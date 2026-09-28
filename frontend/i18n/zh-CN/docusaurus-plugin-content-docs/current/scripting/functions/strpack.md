@@ -5,8 +5,6 @@ description: 压缩字符串。
 tags: ["字符串"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 压缩字符串。压缩后的字符串可减少 75%的内存占用。

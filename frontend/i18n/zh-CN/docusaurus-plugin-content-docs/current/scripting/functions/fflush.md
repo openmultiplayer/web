@@ -7,8 +7,6 @@ tags: ["文件管理"]
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 将文件刷入磁盘（确保所有写入完成）。实际调用 [flength](flength) 函数实现，因为此函数需要强制刷新以确保准确性。
@@ -69,6 +67,5 @@ else
 - [frename](frename): 重命名文件
 - [fcopy](fcopy): 复制文件
 - [filecrc](filecrc): 返回文件的 32 位 CRC 值
-- [diskfree](diskfree): 返回磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录

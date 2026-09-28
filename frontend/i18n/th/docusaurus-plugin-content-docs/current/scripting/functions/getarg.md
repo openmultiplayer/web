@@ -5,12 +5,6 @@ description: Get an argument that was passed to a function.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Get an argument that was passed to a function.

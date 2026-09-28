@@ -7,8 +7,6 @@ tags: ["文件管理"]
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 重命名指定文件。
@@ -57,6 +55,5 @@ else
 - [fstat](fstat): 获取文件状态信息
 - [fcopy](fcopy): 复制文件
 - [filecrc](filecrc): 计算 CRC32 校验值
-- [diskfree](diskfree): 获取磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录

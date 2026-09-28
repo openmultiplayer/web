@@ -5,8 +5,6 @@ description: Arc‑tangens met y,x (in graden) teruggeven.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 De y‑waarde is de eerste parameter en x de tweede (y/x‑notatie).

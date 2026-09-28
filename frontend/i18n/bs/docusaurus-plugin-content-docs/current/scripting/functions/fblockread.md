@@ -5,12 +5,6 @@ description: Ova funkcija vam omogućuje čitanje podataka iz datoteke, bez kodi
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Ova funkcija vam omogućuje čitanje podataka iz datoteke, bez kodiranja i završetaka linije.

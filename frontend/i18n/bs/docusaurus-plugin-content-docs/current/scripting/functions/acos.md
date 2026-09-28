@@ -5,12 +5,6 @@ description: .
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobijte obrnutu vrijednost kosinusa luka u radijanima.

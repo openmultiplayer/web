@@ -22,11 +22,7 @@ tags: ["player"]
 
 ## Белешке
 
-:::note
-
-Ову повратну функцију такође може позвати NPC.
-
-:::
+<NoteNPCCallbacksSR />
 
 :::tip
 

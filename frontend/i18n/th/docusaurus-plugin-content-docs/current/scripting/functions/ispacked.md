@@ -5,12 +5,6 @@ description: Checks if the given string is packed.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Checks if the given string is packed.

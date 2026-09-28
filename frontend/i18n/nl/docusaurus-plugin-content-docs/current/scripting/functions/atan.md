@@ -5,8 +5,6 @@ description: Arc‑tangens (in graden) teruggeven.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 ## Beschrijving
 
 Geef de arc‑tangens (inverse van tangens) in graden. Door tekenambiguïteit kan de kwadrant niet eenduidig bepaald worden; zie [atan2](../functions/atan2) voor een alternatief met y/x.

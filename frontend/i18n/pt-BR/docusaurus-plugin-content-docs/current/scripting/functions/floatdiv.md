@@ -6,8 +6,6 @@ tags: ["math", "floating-point"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Divida um carro alegórico por outro. Redundante, pois o operador de divisão (/) faz a mesma coisa.

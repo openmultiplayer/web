@@ -6,8 +6,6 @@ tags: ["core", "arguments", "args"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Obtenha um argumento que foi passado para uma função.

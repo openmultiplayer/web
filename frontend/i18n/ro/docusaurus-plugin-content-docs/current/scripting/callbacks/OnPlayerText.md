@@ -32,7 +32,7 @@ public OnPlayerText(playerid, text[])
 
 ## Note
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Funcții similare
 

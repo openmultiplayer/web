@@ -5,8 +5,6 @@ description: Schrijf tekst naar een bestand.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Beschrijving
 
 Schrijf tekst naar een bestand.

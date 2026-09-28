@@ -5,12 +5,6 @@ description: Upakuj string.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Upakuj string. Upakovani stringovi koriste 75% manje memorije.

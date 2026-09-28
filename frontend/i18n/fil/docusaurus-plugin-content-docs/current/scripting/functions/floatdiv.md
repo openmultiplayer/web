@@ -5,8 +5,6 @@ description: Hatiin ang isang float sa isa pa.
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Hatiin ang isang float sa isa pa. Redundant bilang ang operator ng dibisyon (/) ay gumagawa ng parehong bagay.

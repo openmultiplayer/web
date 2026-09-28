@@ -5,8 +5,6 @@ description: حافظه نتیجه تخصیص یافته از db_query را آز
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 حافظه نتیجه تخصیص یافته از db_query را آزاد می کند.

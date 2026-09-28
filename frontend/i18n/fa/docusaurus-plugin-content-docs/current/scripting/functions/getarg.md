@@ -7,8 +7,6 @@ tags: ["core", "arguments", "args"]
 
 <div dir="rtl" style={{ textAlign: "right" }}>
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 آرگومان پاس داده شده به تابع رو می‌گیره.

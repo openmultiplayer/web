@@ -32,7 +32,7 @@ public OnVehicleStreamOut(vehicleid, forplayerid)
 
 ## Белешке
 
-<TipNPCCallbacksSR />
+<NoteNPCCallbacksSR />
 
 ## Повезане повратне функције
 

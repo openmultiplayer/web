@@ -5,8 +5,6 @@ description: جستجوی یک رشته در رشته دیگر.
 tags: ["string"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 جستجوی یک رشته در رشته دیگر.

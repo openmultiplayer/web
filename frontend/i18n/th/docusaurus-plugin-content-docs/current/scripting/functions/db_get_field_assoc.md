@@ -5,12 +5,6 @@ description: Get the contents of field with specified name.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Get the contents of field with specified name.

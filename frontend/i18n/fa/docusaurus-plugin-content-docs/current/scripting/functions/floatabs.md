@@ -5,8 +5,6 @@ description: این تابع مقدار مطلق یک عدد اعشاری رو �
 tags: ["math", "floating-point"]
 ---
 
-<LowercaseNoteFA />
-
 <div dir="rtl" style={{ textAlign: "right" }}>
 
 ## توضیحات

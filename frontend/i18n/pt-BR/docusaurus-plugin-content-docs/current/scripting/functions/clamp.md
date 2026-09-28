@@ -5,8 +5,6 @@ description: Força um valor a estar dentro de um intervalo.
 tags: ["core"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Força um valor a estar dentro de um intervalo.

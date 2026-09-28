@@ -5,12 +5,6 @@ description: Dodaje dva floata zajedno.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dodaje dva floata zajedno. Ova je funkcija suvišna jer standardni operater (+) radi istu stvar.

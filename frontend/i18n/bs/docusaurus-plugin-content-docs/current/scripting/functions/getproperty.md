@@ -6,12 +6,6 @@ description: Uzmite određenu imovinu iz memorije, string se vraća kao spakiran
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Uzmite određenu imovinu iz memorije, string se vraća kao spakirani string!

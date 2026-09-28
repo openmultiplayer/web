@@ -7,8 +7,6 @@ tags: ["文件管理"]
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 创建目录。
@@ -65,5 +63,4 @@ else
 - [frename](frename): 重命名文件
 - [fcopy](fcopy): 复制文件
 - [filecrc](filecrc): 返回文件的 32 位 CRC 值
-- [diskfree](diskfree): 返回磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性

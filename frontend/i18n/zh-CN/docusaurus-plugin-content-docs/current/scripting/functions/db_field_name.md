@@ -5,8 +5,6 @@ description: 返回指定索引处的字段名称。
 tags: ["sqlite"]
 ---
 
-<LowercaseNoteZH_CN />
-
 :::warning
 
 此函数已弃用，请使用 [DB_GetFieldName](DB_GetFieldName)。

@@ -5,12 +5,6 @@ description: Read a single line from a file.
 tags: []
 ---
 
-:::warning
-
-This function starts with lowercase letter.
-
-:::
-
 ## คำอธิบาย
 
 Read a single line from a file.

@@ -5,12 +5,6 @@ description: Ova funkcija mijenja jedan znak u veliko slovo.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Ova funkcija mijenja jedan znak u veliko slovo.

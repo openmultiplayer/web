@@ -5,8 +5,6 @@ description: Obter o valor inverso de um seno em graus.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 ## Descrição
 
 Obter o valor inverso de um seno em graus. Em trigonometria, arco seno é a operação inversa do seno.

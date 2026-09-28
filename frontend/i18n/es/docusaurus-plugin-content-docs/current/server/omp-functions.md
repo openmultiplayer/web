@@ -450,4 +450,3 @@ Esta pagina contiene todas las funciones y callbacks que fueron implementados en
 | [fcreatedir](../scripting/functions/fcreatedir) |
 | [fcopy](../scripting/functions/fcopy)           |
 | [fattrib](../scripting/functions/fattrib)       |
-| [diskfree](../scripting/functions/diskfree)     |

@@ -6,8 +6,6 @@ tags: ["math", "floating-point"]
 ---
 
 
-<LowercaseNote />
-
 ## Descrição
 
 Subtrai um float de outro. Observe que esta função não tem uso real, pois pode simplesmente usar o operador padrão (-).

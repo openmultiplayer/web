@@ -5,12 +5,6 @@ description: Nabavite razlomljeni dio floata.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Nabavite razlomljeni dio floata. To znači vrijednost brojeva nakon decimalne točke.

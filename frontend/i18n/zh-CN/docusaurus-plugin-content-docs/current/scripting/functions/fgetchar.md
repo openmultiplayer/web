@@ -5,8 +5,6 @@ description: 从文件中读取单个字符。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 从文件中读取单个字符。
@@ -79,6 +77,5 @@ else
 - [frename](frename): 重命名文件
 - [fcopy](fcopy): 复制文件
 - [filecrc](filecrc): 返回文件的 32 位 CRC 值
-- [diskfree](diskfree): 返回磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录

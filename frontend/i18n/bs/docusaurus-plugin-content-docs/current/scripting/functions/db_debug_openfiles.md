@@ -5,12 +5,6 @@ description: Dobiva broj otvorenih konekcija/veza databaza u svrhu otklanjanja p
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobiva broj otvorenih konekcija/veza databaza u svrhu otklanjanja pogrešaka.

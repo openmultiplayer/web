@@ -5,8 +5,6 @@ description: Kunin ang inverse value ng isang cosine sa degrees.
 tags: ["math"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Kunin ang inverse value ng isang cosine sa degrees. Sa trigonometriko, ang arc cosine ay ang kabaligtaran na operasyon ng cosine.

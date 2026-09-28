@@ -5,12 +5,6 @@ description: Zapišite podatke u datoteku u binarnom formatu, zanemarujući lini
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Zapišite podatke u datoteku u binarnom formatu, zanemarujući linijske kočnice i kodiranje.

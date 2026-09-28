@@ -5,8 +5,6 @@ description: Lees één regel uit een bestand.
 tags: ["file management"]
 ---
 
-<LowercaseNote />
-
 ## Beschrijving
 
 Lees één regel uit een bestand.

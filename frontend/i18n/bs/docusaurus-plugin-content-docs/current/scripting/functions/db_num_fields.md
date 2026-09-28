@@ -5,12 +5,6 @@ description: Dobija broj polja iz skupa rezultata dodijeljen s `db_query`.
 tags: ["sqlite"]
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dobija broj polja iz skupa rezultata dodijeljen s [db_query](db_query).

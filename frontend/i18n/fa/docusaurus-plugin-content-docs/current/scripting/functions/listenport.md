@@ -5,8 +5,6 @@ description: پورت موردنظر رو برای listen کردن تنظیم م
 tags: ["datagram"]
 ---
 
-<LowercaseNoteFA />
-
 :::warning
 
 این function منسوخ شده است، از [HTTP](HTTP) یا [pawn-requests](https://github.com/Southclaws/pawn-requests) plugin استفاده کنید.

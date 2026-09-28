@@ -1,8 +1,8 @@
 import Admonition from "../../../Admonition";
 
-export default function TipNpcCallback() {
+export default function NoteNpcCallback() {
   return (
-    <Admonition type="tip">
+    <Admonition type="note">
       <p>همچنین این callback می تواند توسط NPC نیز صدا زده شود.</p>
     </Admonition>
   );

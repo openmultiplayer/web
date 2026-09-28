@@ -34,7 +34,7 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## نکات
 
-<TipNPCCallbacksFA />
+<NoteNPCCallbacksFA />
 
 ## Callbackهای مرتبط
 

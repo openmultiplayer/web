@@ -7,8 +7,6 @@ tags: ["文件管理"]
 
 <VersionWarnZH_CN version='omp v1.1.0.2612' />
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 返回文件的 32 位 CRC 值。
@@ -67,6 +65,5 @@ else
 - [fstat](fstat): 返回文件大小和时间戳
 - [frename](frename): 重命名文件
 - [fcopy](fcopy): 复制文件
-- [diskfree](diskfree): 返回磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录

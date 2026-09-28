@@ -5,8 +5,6 @@ description: 根据匹配模式查找文件名。
 tags: ["文件管理"]
 ---
 
-<LowercaseNoteZH_CN />
-
 ## 描述
 
 根据通配符模式查找匹配的文件名。
@@ -66,6 +64,5 @@ else
 - [frename](frename): 重命名文件
 - [fcopy](fcopy): 复制文件
 - [filecrc](filecrc): 计算文件 CRC 校验值
-- [diskfree](diskfree): 获取磁盘剩余空间
 - [fattrib](fattrib): 设置文件属性
 - [fcreatedir](fcreatedir): 创建目录

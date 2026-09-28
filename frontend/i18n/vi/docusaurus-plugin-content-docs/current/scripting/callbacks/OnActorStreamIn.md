@@ -33,7 +33,7 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Ghi Chú
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Callbacks Liên Quan
 

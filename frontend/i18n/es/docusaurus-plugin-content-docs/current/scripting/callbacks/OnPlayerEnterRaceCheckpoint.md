@@ -28,7 +28,7 @@ public OnPlayerEnterRaceCheckpoint(playerid)
 
 ## Notas
 
-<TipNPCCallbacksES />
+<NoteNPCCallbacksES />
 
 ## Funciones Relacionadas
 

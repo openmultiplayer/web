@@ -5,8 +5,6 @@ description: یک property جدید اضافه می‌کنه یا یک property 
 tags: ["core", "property"]
 ---
 
-<LowercaseNoteFA />
-
 ## توضیحات
 
 یک property جدید اضافه می‌کنه یا یک property موجود رو تغییر می‌ده.

@@ -5,8 +5,6 @@ description: Get the length of a string.
 tags: ["string"]
 ---
 
-<LowercaseNote />
-
 ## Description
 
 Get the length of a string.

@@ -5,12 +5,6 @@ description: Ispisuje formatirani niz na konzoli (prozor servera, a ne chat u ig
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Ispisuje formatirani niz na konzoli (prozor servera, a ne chat u igri).

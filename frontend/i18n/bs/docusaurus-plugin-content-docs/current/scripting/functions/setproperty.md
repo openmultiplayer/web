@@ -5,12 +5,6 @@ description: Dodaj novu imovinu ili promijeni već postojeću.
 tags: []
 ---
 
-:::warning
-
-Ova funkcija započinje malim slovom.
-
-:::
-
 ## Deskripcija
 
 Dodaj novu imovinu ili promijeni već postojeću.

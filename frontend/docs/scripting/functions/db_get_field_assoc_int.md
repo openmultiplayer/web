@@ -5,8 +5,6 @@ description: Gets the contents of the field as an integer with the specified fie
 tags: ["sqlite"]
 ---
 
-<LowercaseNote />
-
 :::warning
 
 This function is deprecated. Please see [DB_GetFieldIntByName](DB_GetFieldIntByName).

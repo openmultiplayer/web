@@ -32,7 +32,7 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 ## Notas
 
-<TipNPCCallbacks />
+<NoteNPCCallbacks />
 
 ## Callbacks Relacionados
 
