@@ -46,3 +46,6 @@ The SVar system is the same as the PVars, although the variables created are ser
 - [SetSVarFloat](../scripting/functions/SetSVarFloat): set a float for a server variable.
 - [GetSVarFloat](../scripting/functions/GetSVarFloat): get the previously set float from a server variable
 - [DeleteSVar](../scripting/functions/DeleteSVar): delete a server variable.
+- [GetSVarsUpperIndex](../scripting/functions/GetSVarsUpperIndex): each SVar has an index or 'id', this returns the highest one.
+- [GetSVarNameAtIndex](../scripting/functions/GetSVarNameAtIndex): get the server variable's name from its index.
+- [GetSVarType](../scripting/functions/GetSVarType): get the [type](../scripting/resources/svartypes) of the server variable.

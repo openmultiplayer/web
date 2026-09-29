@@ -16,6 +16,8 @@ Cette callback est appelée quand un joueur tape une commande. Les commandes dé
 
 ## Valeur de retour
 
+Retournez 0 si aucune commande n'a été exécutée. Sinon, retournez 1.
+
 La callback est toujours appelée en premier dans les filterscripts, donc return 1, faute de quoi les autres scripts ne pourront pas communiquer avec cette callback.
 
 ## Exemple

@@ -62,6 +62,10 @@ As of update 0.3.7, the keys "A" and "D" are not recognized when in a vehicle. H
 
 :::
 
+## Related Callbacks
+
+- [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange): Called when a player's keystate changes.
+
 ## Related Resources
 
 - [Keys](../resources/keys)

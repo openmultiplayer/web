@@ -148,7 +148,8 @@ else
 
 :::warning
 
-If you use `io_read` and the file doesn't exist, it will return a NULL reference. Using invalid references on file functions will crash your server!
+- This function can't access files outside the `scriptfiles` folder!
+- If you use `io_read` and the file doesn't exist, it will return a NULL reference. Using invalid references on file functions will crash your server!
 
 :::
 

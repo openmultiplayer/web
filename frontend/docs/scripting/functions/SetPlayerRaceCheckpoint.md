@@ -62,7 +62,8 @@ public SetRaceCheckpoint(playerid, Airrace, target, next)
 
 :::warning
 
-Race checkpoints are asynchronous, meaning only one can be shown at a time. To 'stream' race checkpoints (only show them when players are close enough), use a race checkpoint streamer.
+- Race checkpoints are asynchronous, meaning only one can be shown at a time. To 'stream' race checkpoints (only show them when players are close enough), use a race checkpoint streamer.
+- Race checkpoints created on server-created objects ([CreateObject](CreateObject)/[CreatePlayerObject](CreatePlayerObject)) will appear down on the 'real' ground, but will still function correctly.
 
 :::
 

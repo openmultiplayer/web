@@ -9,6 +9,10 @@ tags: []
 
 Disables the nametag Line-Of-Sight checking so that players can see nametags through objects.
 
+## Returns
+
+This function does not return any specific values.
+
 ## Examples
 
 ```c

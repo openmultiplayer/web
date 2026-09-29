@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player fires a weapon. Only firearms are supported.
+This callback is called when a player fires a weapon. Only firearms are supported. Only passenger drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).
 
 | Name                    | Description                                                         |
 | ----------------------- | ------------------------------------------------------------------- |

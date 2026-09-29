@@ -23,6 +23,8 @@ This callback is called when a player's client updates/syncs the position of a v
 
 ## Returns
 
+Returning 0 in this callback will stop the vehicle's position being synced to other players. Update is still sent to the updating player.
+
 It is always called first in filterscripts so returning 0 there also blocks other scripts from processing it.
 
 ## Examples
@@ -47,6 +49,7 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 - This callback is called very frequently per second per unoccupied vehicle. You should refrain from implementing intensive calculations or intensive file writing/reading operations in this callback.
 - [GetVehiclePos](../functions/GetVehiclePos) will return the old coordinates of the vehicle before this update.
+- This callback is not called for trains.
 
 :::
 

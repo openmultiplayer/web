@@ -8,6 +8,10 @@ tags: []
 
 Este callback es llamado cuando un gamemode termina, ya sea mediante 'gmx', cuando el servidor se apaga, o cuando se usa GameModeExit.
 
+## Devoluciones
+
+Este callback no maneja returns.
+
 ## Ejemplos
 
 ```c

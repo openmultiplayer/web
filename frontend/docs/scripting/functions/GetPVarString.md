@@ -44,7 +44,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-If length of string is zero (value not set), `output` text will not be updated or set to anything and will remain with old data, neccesying that you clear the variable to blank value if [GetPVarString](GetPVarString) returns 0 if that behavior is undesired.
+- Variables aren't reset until after [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) is called, so the values are still accessible in OnPlayerDisconnect.
+- If length of string is zero (value not set), `output` text will not be updated or set to anything and will remain with old data, neccesying that you clear the variable to blank value if [GetPVarString](GetPVarString) returns 0 if that behavior is undesired.
 
 :::
 

@@ -45,7 +45,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- X, Y kordinata je gornja lijeva kordinata za područje textdrawa na osnovu 640x448 "platna" (bez obzira na razlučivost zaslona).
+- X, Y kordinata je gornja lijeva kordinata za područje textdrawa na osnovu 640x480 "platna" (bez obzira na razlučivost zaslona).
 - Ako planirate koristiti TextDrawAlignment s poravnanjem 3 (desno), kordinata x, Y je gornja desna kordinata za crtanje teksta.
 - Ova funkcija samo KREIRA izvlačenje teksta, za prikaz morate koristiti TextDrawShowForPlayer ili TextDrawShowForAll.
 

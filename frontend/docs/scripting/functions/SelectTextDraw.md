@@ -37,7 +37,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-It is the TEXT which will be highlighted when hovered over, NOT the box (if one is shown).
+- [TextDrawSetSelectable](TextDrawSetSelectable) or [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable) MUST be used first, to allow a textdraw to be selectable.
+- It is the TEXT which will be highlighted when hovered over, NOT the box (if one is shown).
 
 :::
 

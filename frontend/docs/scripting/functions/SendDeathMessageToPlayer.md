@@ -9,6 +9,8 @@ tags: ["player"]
 
 Adds a death to the 'killfeed' on the right-hand side of the screen for a single player.
 
+The 5 most recent kills are shown on the right side of players' screens. Pressing F9 will hide/show the list.
+
 | Name     | Description                                                                                                                 |
 | -------- | --------------------------------------------------------------------------------------------------------------------------- |
 | playerid | The ID of the player to send the death message to.                                                                          |

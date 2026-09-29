@@ -16,11 +16,9 @@ Se llama cuando un jugador obtiene una vista previa de una capa de pintura adent
 
 ## Devoluciones
 
-1 - Prevendrá a otros filterscripts de recibir este callback.
+0 - Prevendrá a filterscripts de recibir este callback.
 
-0 - Indica que este callback será pasado al siguiente filterscript.
-
-Siempre se llama primero en filterscripts.
+Siempre se llama primero en el gamemode.
 
 ## Ejemplos
 

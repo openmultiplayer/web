@@ -9,6 +9,10 @@ tags: ["file management"]
 
 Creates a file in the "tmp", "temp" or root directory with random name for reading and writing. The file is deleted after fclose() is used on the file.
 
+## Returns
+
+The temporary file handle. 0 if failed.
+
 ## Examples
 
 ```c

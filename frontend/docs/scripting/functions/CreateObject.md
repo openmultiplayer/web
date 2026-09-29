@@ -20,6 +20,10 @@ Creates an object at specified coordinates in the game world.
 | Float:rotationZ    | The Z rotation of the object.                                                                                             |
 | Float:drawDistance | (optional) The distance that San Andreas renders objects at. 0.0 will cause objects to render at their default distances. |
 
+## Returns
+
+The ID of the object that was created, or INVALID_OBJECT_ID if the object limit (MAX_OBJECTS) was reached.
+
 ## Examples
 
 ```c
@@ -35,7 +39,9 @@ public OnGameModeInit()
 
 :::note
 
-There is a limit of 1000 objects (MAX_OBJECTS). To circumvent this limit, you can use the [streamer](https://github.com/samp-incognito/samp-streamer-plugin) plugin.
+- Objects that emit light (lampposts, police lights, bollard lights, neons etc.) that have a greater rotation than 16.26 degrees (or -16.26) on either the X or Y axis will stop shining. This effect also applies to light objects attached to other objects, players and vehicles. If a light object is attached to a car and the car is rotated over 16.26 degrees (like in a rollover), the object will also stop emitting light. This is a GTA:SA issue, not a server bug.
+- In case the light is attached to another object, one fix for this is to set `syncRotation` to `false` in [AttachObjectToObject](AttachObjectToObject). This will ensure the light stays at 0 rotation. This would only really work for objects that consist ONLY of light, so it wouldn't work for the police light for example.
+- There is a limit of 1000 objects (MAX_OBJECTS). To circumvent this limit, you can use the [streamer](https://github.com/samp-incognito/samp-streamer-plugin) plugin.
 
 :::
 

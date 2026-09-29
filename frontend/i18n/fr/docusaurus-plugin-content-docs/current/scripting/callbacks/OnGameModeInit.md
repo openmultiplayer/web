@@ -9,6 +9,10 @@ tags: [gamemode, démarré, loaded, started, chargé]
 
 Cette callback est appelée quand le gamemode démarre.
 
+## Valeur de retour
+
+Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement dit, `return callback();` ne fonctionnera pas car la callback ne retourne rien, mais un return _(`return 1;` ou `return 0;`)_ doit être effectué dans la callback.
+
 ## Exemple
 
 ```c

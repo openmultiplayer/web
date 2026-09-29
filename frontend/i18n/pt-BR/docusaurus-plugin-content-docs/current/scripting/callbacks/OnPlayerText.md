@@ -16,6 +16,8 @@ Executada quando o Player envia uma mensagem no chat.
 
 ## Retornos
 
+Retornando 0 nesta callback, a mensagem não será enviada.
+
 Sempre executada primeiro nos filterscripts, ao retornar 0 bloqueia outros scripts de visualizarem a mesma.
 
 ## Exemplos

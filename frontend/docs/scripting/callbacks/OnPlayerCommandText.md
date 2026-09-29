@@ -16,6 +16,10 @@ This callback is called when a player enters a command into the client chat wind
 
 ## Returns
 
+1 - The command was processed.
+
+0 - The command was not processed. If the command was not found both in filterscripts and in gamemode, the player will receive a `SERVER: Unknown command.` message.
+
 It is always called first in filterscripts so returning 1 there blocks other scripts from processing it.
 
 ## Examples
