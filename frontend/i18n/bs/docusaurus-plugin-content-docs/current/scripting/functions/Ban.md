@@ -29,6 +29,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         return 1;
     }
 }
+```
+
+```c
 // Da bi se prikazala poruka (npr. razlog) za igrača prije nego se konekcija zatvori
 // morate koristiti timer kako biste stvorili mali razmak. Ovaj razmak treba da bude dug svega nekoliko milisekundi,
 // ali ovaj primjer koristi punu sekundu samo da bi bio na sigurnoj strani.

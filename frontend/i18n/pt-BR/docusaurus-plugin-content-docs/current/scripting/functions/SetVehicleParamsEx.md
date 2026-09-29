@@ -29,10 +29,6 @@ Define os parâmetros de um veículo para todos os jogadores.
 ## Exemplos
 
 ```c
-// No topo do nosso script, declarando uma variável global
-new
-    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
-
 // Se estiver configurando um único parâmetro, obtenha os parâmetros atuais para que eles não sejam todos alterados
 new
     engine, lights, alarm, doors, bonnet, boot, objective;
@@ -40,6 +36,12 @@ new
 // Em algum lugar onde você cria o veículo.
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
 SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // Somente o parâmetro do motor foi alterado para VEHICLE_PARAMS_ON (1)
+```
+
+```c
+// No topo do nosso script, declarando uma variável global
+new
+    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
 
 // A função
 SetVehicleParamsEx_Fixed(vehicleid, &bool:engine, &bool:lights, &bool:alarm, &bool:doors, &bool:bonnet, &bool:boot, &bool:objective)

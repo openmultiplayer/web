@@ -30,7 +30,9 @@ public OnRconCommand(cmd[])
     printf("[RCON]: Escribiste '/rcon %s'!", cmd);
     return 0;
 }
+```
 
+```c
 public OnRconCommand(cmd[])
 {
     if (!strcmp(cmd, "hello", true))

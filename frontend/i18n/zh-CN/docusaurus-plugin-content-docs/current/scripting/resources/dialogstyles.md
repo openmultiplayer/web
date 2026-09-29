@@ -197,7 +197,6 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 - ​**\t**​ 创建新列
 - ​**\n**​ 创建新行
 - [颜色嵌入](colorslist#颜色嵌入)效果在换行/制表后重置
-- 首行内容作为表头显示
 
 :::
 

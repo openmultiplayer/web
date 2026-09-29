@@ -61,7 +61,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
+```
 
+```c
 // Will show vehicle markers for players streaming in for 0.3a+
 new iVehicleObjective[MAX_VEHICLES][2];
 
@@ -84,7 +86,11 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
 }
+```
 
+Another way by theAlone
+
+```c
 //Top
 new myMarkedCar;
 

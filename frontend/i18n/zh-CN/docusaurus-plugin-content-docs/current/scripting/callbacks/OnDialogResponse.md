@@ -124,13 +124,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**表格列表样式 (DIALOG_STYLE_TABLIST)**
+**带表头的表格列表样式 (DIALOG_STYLE_TABLIST_HEADERS)**
 
 ```c
 #define DIALOG_WEAPONS 3
 
 // 在某个指令中
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST, "武器商店",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "武器商店",
 "武器\t弹药\t价格\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

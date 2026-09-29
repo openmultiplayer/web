@@ -23,6 +23,9 @@ tags: ["核心"]
 new value = random(5);
 
 // 'value' 可能为 0, 1, 2, 3 或 4 (共5种可能值)
+```
+
+```c
 new Float:RandomSpawn[][4] =
 {
     // 坐标数组 (X, Y, Z 及朝向角度)

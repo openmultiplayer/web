@@ -25,7 +25,9 @@ public OnRconCommand(cmd[])
     log("RCON command executed: %s", cmd);
     return 0;
 }
+```
 
+```c
 public OnRconCommand(cmd[])
 {
     if (!strcmp(cmd, "broadcast", true))

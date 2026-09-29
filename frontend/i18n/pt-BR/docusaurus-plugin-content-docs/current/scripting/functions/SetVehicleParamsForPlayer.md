@@ -36,7 +36,9 @@ new
 
 GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
 SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, VEHICLE_PARAMS_OFF);
+```
 
+```c
 // Bloqueia o próprio carro de todos os jogadores, exceto o jogador que usou o comando.
 public OnPlayerCommandText(playerid, cmdtext[])
 {
@@ -59,7 +61,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
+```
 
+```c
 // Mostrará marcadores de veículos para jogadores fazendo streaming para 0.3a+
 new iVehicleObjective[MAX_VEHICLES][2];
 
@@ -82,7 +86,9 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
 }
+```
 
+```c
 // No topo
 new myMarkedCar;
 

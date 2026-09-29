@@ -23,6 +23,8 @@ Lagi itong na cacall una sa mga filterscript kaya kapag nag return ng 1 binobloc
 
 ## Mga Halimbawa
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Dito ilalagay ang ID ng isang dialog
 #define DIALOG_RULES 1
@@ -47,7 +49,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Kailangan mag return 0 dito! Kamuka lang ng sa OnPlayerCommandText.
 }
+```
 
+**DIALOG_STYLE_INPUT**
+
+```c
 // Panagalawang halimbawa
 #define DIALOG_LOGIN 2
 
@@ -81,7 +87,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Kailangan mag return 0 dito! Kamuka lang ng sa OnPlayerCommandText.
 }
+```
 
+**DIALOG_STYLE_LIST**
+
+```c
 // Pangatlong halimbawa
 #define DIALOG_WEAPONS 3
 
@@ -107,12 +117,16 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Kailangan mag return 0 dito! Kamuka lang ng sa OnPlayerCommandText.
 }
+```
 
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 // Pangatlong halimbawa pero ibang paraan at ibang mga baril
 #define DIALOG_WEAPONS 3
 
 // In some command
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Weapons",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

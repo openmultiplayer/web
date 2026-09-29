@@ -23,6 +23,9 @@ Slučajan broj u rasponu od 0 do max-1.
 new value = random(5);
 
 // 'value' može biti 0, 1, 2, 3 ili 4, 5 mogućih vrijednosti.
+```
+
+```c
 new Float:RandomSpawn[][4] =
 {
     // Pozicije, (X, Y, Z and Facing Angle)

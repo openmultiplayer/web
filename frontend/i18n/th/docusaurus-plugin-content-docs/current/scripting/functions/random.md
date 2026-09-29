@@ -23,6 +23,9 @@ A random number ranging from 0 to max-1.
 new value = random(5);
 
 // 'value' might be 0, 1, 2, 3 or 4. 5 possible values.
+```
+
+```c
 new Float:RandomSpawn[][4] =
 {
     // Positions, (X, Y, Z and Facing Angle)

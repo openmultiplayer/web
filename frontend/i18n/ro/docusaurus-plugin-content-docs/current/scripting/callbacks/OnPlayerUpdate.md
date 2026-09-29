@@ -49,6 +49,9 @@ stock OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
 
     SendClientMessage(playerid, 0xFFFFFFFF, s);
 }
+```
+
+```c
 public OnPlayerUpdate(playerid)
 {
     nou Float:fHealth;

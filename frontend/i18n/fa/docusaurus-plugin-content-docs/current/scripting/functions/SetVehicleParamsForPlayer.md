@@ -36,7 +36,9 @@ new
 
 GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
 SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, false);
+```
 
+```c
 // mashin khodesho baraye hame playera gholf mikone, joz playeri ke command ro zade.
 public OnPlayerCommandText(playerid, cmdtext[])
 {
@@ -59,7 +61,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
+```
 
+```c
 // vehicle marker haro baraye playerayi ke stream mishan neshon mide 0.3a+
 new bool:iVehicleObjective[MAX_VEHICLES][2];
 
@@ -82,7 +86,9 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
 }
+```
 
+```c
 //Top
 new myMarkedCar;
 

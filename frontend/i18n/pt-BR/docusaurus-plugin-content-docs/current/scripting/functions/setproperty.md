@@ -27,6 +27,9 @@ setproperty(.name = "MyInteger", .value = 42);
 
 new value = getproperty(.name = "MyInteger");
 printf("Value that was stored is: %d", value);
+```
+
+```c
 setproperty(0, "", 123984334, ":)");
 
 new value[4];
@@ -35,6 +38,9 @@ strunpack(value, value, sizeof(value)); // precisamos descompactar a string prim
 print(value);
 
 //deveria imprimir:)
+```
+
+```c
 setproperty(.value = 123984334, .string = ":)");
 
 // O resto é igual ao anterior.

@@ -23,6 +23,9 @@ Um número aleatório variando de 0 a no máximo 1.
 new value = random(5);
 
 // 'value' pode ser 0, 1, 2, 3 ou 4 (5 valores possíveis)
+```
+
+```c
 new Float:RandomSpawn[][4] =
 {
     // Posições, (X, Y, Z e ângulo de face)

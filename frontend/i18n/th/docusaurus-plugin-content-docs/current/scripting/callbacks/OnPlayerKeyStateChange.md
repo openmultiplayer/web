@@ -29,26 +29,41 @@ if ((oldkeys & KEY_FIRE) && !(newkeys & KEY_FIRE))
 if ((newkeys & KEY_FIRE) && (newkeys & KEY_CROUCH))
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
+```
+
+```c
 // HOLDING(keys)
 #define HOLDING(%0) \
     ((newkeys & (%0)) == (%0))
 if (HOLDING( KEY_FIRE ))
 if (HOLDING( KEY_FIRE | KEY_CROUCH ))
+```
+
+```c
 // PRESSED(keys)
 #define PRESSED(%0) \
     (((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
 if (PRESSED( KEY_FIRE ))
 if (PRESSED( KEY_FIRE | KEY_CROUCH ))
+```
+
+```c
 // PRESSING(keyVariable, keys)
 #define PRESSING(%0,%1) \
     (%0 & (%1))
 if (PRESSING( newkeys, KEY_FIRE ))
 if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
+```
+
+```c
 // RELEASED(keys)
 #define RELEASED(%0) \
     (((newkeys & (%0)) != (%0)) && ((oldkeys & (%0)) == (%0)))
 if (RELEASED( KEY_FIRE ))
 if (RELEASED( KEY_FIRE | KEY_CROUCH ))
+```
+
+```c
 public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (PRESSED(KEY_FIRE))
@@ -60,6 +75,9 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
     }
     return 1;
 }
+```
+
+```c
 public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
     if (PRESSED(KEY_JUMP))
@@ -73,6 +91,9 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
     }
     return 1;
 }
+```
+
+```c
 new
     Float:gPlayerHealth[MAX_PLAYERS];
 

@@ -34,6 +34,8 @@ SetTimerEx("EndAntiSpawnKill", 5000, false, "i", playerid);
 
 <br />
 
+**Implementation:**
+
 ```c
 // The event callback (OnPlayerSpawn) - we will start a timer here
 public OnPlayerSpawn(playerid)

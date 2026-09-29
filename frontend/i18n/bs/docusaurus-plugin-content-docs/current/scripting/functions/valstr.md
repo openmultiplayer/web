@@ -25,6 +25,15 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 new string[4];
 new iValue = 250;
 valstr(string,iValue); // string je sada "250"
+```
+
+## Zabilješke
+
+:::warning
+
+Prosljeđivanje velike vrijednosti ovoj funkciji može dovesti do zamrzavanja / pada sistema. Dostupni su popravci. Ispod je popravak koji se može staviti ravno u vašu skriptu (prije nego što se valstr koristi bilo gdje). open.mp uključuje ovaj popravak.
+
+```c
 // valstr fix by Slice
 stock FIX_valstr(dest[], value, bool:pack = false)
 {
@@ -38,12 +47,6 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 }
 #define valstr FIX_valstr
 ```
-
-## Zabilješke
-
-:::warning
-
-Prosljeđivanje velike vrijednosti ovoj funkciji može dovesti do zamrzavanja / pada sistema. Dostupni su popravci. Ispod je popravak koji se može staviti ravno u vašu skriptu (prije nego što se valstr koristi bilo gdje). open.mp uključuje ovaj popravak.
 
 :::
 

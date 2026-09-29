@@ -23,6 +23,8 @@ tags: []
 
 </div>
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Tarif kardane id dialog ke mikhahim ejra shavad
 #define DIALOG_RULES 1
@@ -47,6 +49,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Bayad inja return 0 konid, mesle OnPlayerCommandText
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 #define DIALOG_LOGIN 2
 
 // Dar yek dastoor
@@ -79,6 +86,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Bayad inja return 0 konid, mesle OnPlayerCommandText
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // Dar yek dastoor
@@ -103,10 +115,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Bayad inja return 0 konid, mesle OnPlayerCommandText
 }
+```
+
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // Dar yek dastoor
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Weapons",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

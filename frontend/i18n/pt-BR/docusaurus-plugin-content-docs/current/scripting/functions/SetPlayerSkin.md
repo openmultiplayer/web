@@ -35,7 +35,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
+```
 
+```c
 SetPlayerSkinFix(playerid, skinid)
 {
     if (!IsPlayerConnected(playerid))

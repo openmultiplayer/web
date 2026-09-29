@@ -34,7 +34,7 @@ Vergelijkbaar met INPUT. `listitem = -1`; `inputtext` bevat de invoer (zonder kl
 
 ## Stijl 4: `DIALOG_STYLE_TABLIST`
 
-`\t` maakt een nieuwe kolom; `\n` een nieuw item. Kleur‑embedding reset na `\n` en `\t`. Eerste rij is header. `listitem` is index; `inputtext` is tekst van de eerste kolom.
+`\t` maakt een nieuwe kolom; `\n` een nieuw item. Kleur‑embedding reset na `\n` en `\t`. `listitem` is index; `inputtext` is tekst van de eerste kolom.
 
 ## Stijl 5: `DIALOG_STYLE_TABLIST_HEADERS`
 

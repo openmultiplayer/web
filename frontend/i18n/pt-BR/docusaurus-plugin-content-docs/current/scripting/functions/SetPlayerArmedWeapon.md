@@ -28,7 +28,9 @@ public OnPlayerUpdate(playerid)
     SetPlayerArmedWeapon(playerid, WEAPON_FIST); // desativa as armas
     return 1;
 }
+```
 
+```c
 // Drive-by com SMG por [03]Garsino
 public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {

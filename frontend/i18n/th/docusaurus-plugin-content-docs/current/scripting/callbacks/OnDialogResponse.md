@@ -23,6 +23,8 @@ Callback นี้ถูกเรียกเมื่อผู้เล่น�
 
 ## ตัวอย่าง
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // กำหนดไอดีกล่องโต้ตอบ เพื่อให้เราสามารถควบคุมการตอบสนองได้
 #define DIALOG_RULES 1
@@ -47,6 +49,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // คุณต้องส่งค่าคืนเป็น 0 ตรงนี้! เหมือนกับ OnPlayerCommandText
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 #define DIALOG_LOGIN 2
 
 // คำสั่งประมาณนี้
@@ -79,6 +86,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // คุณต้องส่งค่าคืนเป็น 0 ตรงนี้! เหมือนกับ OnPlayerCommandText
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // คำสั่งประมาณนี้
@@ -103,10 +115,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // คุณต้องส่งค่าคืนเป็น 0 ตรงนี้! เหมือนกับ OnPlayerCommandText
 }
+```
+
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // คำสั่งประมาณนี้
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "อาวุธ",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "อาวุธ",
 "อาวุธ\tกระสุน\tราคา\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

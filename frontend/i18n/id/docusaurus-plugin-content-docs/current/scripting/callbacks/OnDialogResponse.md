@@ -23,6 +23,8 @@ Ini akan selalu terpanggil pertama di filterscripts jadi mengembalikan nilai 1 a
 
 ## Contoh
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Define dialog ID agar nantinya kita bisa mengelola responses
 #define DIALOG_RULES 1
@@ -47,6 +49,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Anda WAJIB return 0 disini! sama seperti OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 #define DIALOG_LOGIN 2
 
 // Di sebuah perintah
@@ -79,6 +86,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Anda WAJIB return 0 disini! sama seperti OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // In some command
@@ -103,10 +115,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Anda WAJIB return 0 disini! sama seperti OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // In some command
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Weapons",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

@@ -29,6 +29,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         return 1;
     }
 }
+```
+
+```c
 // Oyuncuyu yasaklamadan önce bir mesaj (örn. yasaklanma açıklaması) göndermek için
 // bir zamanlayıcı (timer) oluşturmanız gerekir. Bu zamanlayıcının bir kaç milisaniye olması yeterlidir,
 // ancak alt taraftaki örnekte güvenli olması açısından tam bir saniye kullanılmıştır.
