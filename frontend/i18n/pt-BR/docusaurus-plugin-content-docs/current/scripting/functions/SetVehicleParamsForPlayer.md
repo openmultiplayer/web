@@ -5,16 +5,15 @@ description: "Defina os parâmetros de um veículo para um jogador."
 tags: ["player", "vehicle"]
 ---
 
-
 ## Descrição
 
 Defina os parâmetros de um veículo para um jogador.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| vehicle | O ID do veículo para definir os parâmetros.                                                                                |
-| playerid | O ID do jogador para o qual definir os parâmetros do veículo.                                                                      |
-| objective | VEHICLE_PARAMS_OFF para desativar o objetivo ou VEHICLE_PARAMS_ON para mostrá-lo. Esta é uma seta amarela oscilante acima do veículo. |
+| Nome        | Descrição                                                                                                                             |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| vehicle     | O ID do veículo para definir os parâmetros.                                                                                           |
+| playerid    | O ID do jogador para o qual definir os parâmetros do veículo.                                                                         |
+| objective   | VEHICLE_PARAMS_OFF para desativar o objetivo ou VEHICLE_PARAMS_ON para mostrá-lo. Esta é uma seta amarela oscilante acima do veículo. |
 | doorslocked | VEHICLE_PARAMS_OFF para destravar as portas ou VEHICLE_PARAMS_ON para travá-las.                                                      |
 
 ## Retornos
@@ -103,6 +102,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
     return 1;
 }
 ```
+
 ## Notas
 
 :::note

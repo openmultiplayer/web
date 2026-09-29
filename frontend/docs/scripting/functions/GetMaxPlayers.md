@@ -21,8 +21,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);
 
 :::warning
 
-- This function can not be used in place of MAX_PLAYERS.
-- It can not be used at compile time (e.g. for array sizes).
+- This function can not be used in place of MAX_PLAYERS. It can not be used at compile time (e.g. for array sizes).
 - `MAX_PLAYERS` should always be re-defined to what the 'max_players' var will be, or higher.
 
 :::

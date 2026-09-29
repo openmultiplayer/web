@@ -5,14 +5,13 @@ description: "Define qual arma (que o jogador já possui) o jogador está segura
 tags: ["player"]
 ---
 
-
 ## Descrição
 
 Define qual arma (que o jogador já possui) o jogador está segurando.
 
-| Nome | Descrição |
-| --------------- | ------------------------------------------------------------------------------------ |
-| playerid | O ID do jogador para se armar com uma arma.                                           |
+| Nome            | Descrição                                                                      |
+| --------------- | ------------------------------------------------------------------------------ |
+| playerid        | O ID do jogador para se armar com uma arma.                                    |
 | WEAPON:weaponid | O ID da [arma](../resources/weaponids) com a qual o jogador deve estar armado. |
 
 ## Retornos
@@ -45,6 +44,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
     return 1;
 }
 ```
+
 ## Notas
 
 :::note

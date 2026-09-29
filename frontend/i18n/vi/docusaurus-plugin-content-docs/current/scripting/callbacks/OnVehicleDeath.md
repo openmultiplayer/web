@@ -33,8 +33,7 @@ public OnVehicleDeath(vehicleid, killerid)
 
 :::note
 
-- Callback này cũng sẽ được gọi khi một xe vào nước, nhưng xe có thể được cứu khỏi sự phá hủy bằng cách dịch chuyển hoặc lái ra (nếu chỉ bị ngập một phần).
-- Callback sẽ không được gọi lần thứ hai, và xe có thể biến mất khi người lái thoát ra hoặc sau một khoảng thời gian ngắn.
+Callback này cũng sẽ được gọi khi một xe vào nước, nhưng xe có thể được cứu khỏi sự phá hủy bằng cách dịch chuyển hoặc lái ra (nếu chỉ bị ngập một phần). Callback sẽ không được gọi lần thứ hai, và xe có thể biến mất khi người lái thoát ra hoặc sau một khoảng thời gian ngắn.
 
 :::
 

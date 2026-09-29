@@ -57,8 +57,7 @@ Causa crash se receber um ID de menu inválido. (Corrigido em open.mp)
 :::note
 
 - A linha é desativada para TODOS os jogadores
-- Não existe função para desativar linha para um jogador específico
-- Soluções alternativas incluem criar menus diferentes ou um menu por jogador
+- Não existe função para desativar linha para um jogador específico. Soluções alternativas incluem criar menus diferentes ou um menu por jogador
 
 :::
 

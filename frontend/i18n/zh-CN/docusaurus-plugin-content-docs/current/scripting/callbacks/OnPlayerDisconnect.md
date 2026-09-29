@@ -58,11 +58,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::note
 
-由于玩家已断开连接，部分函数可能无法正常工作：
-
-- [GetPlayerIp](../functions/GetPlayerIp) 获取IP
-- [GetPlayerPos](../functions/GetPlayerPos) 获取坐标  
-  该问题已在open.mp服务端修复
+由于玩家已断开连接，部分函数可能无法正常工作：[GetPlayerIp](../functions/GetPlayerIp) 获取IP、[GetPlayerPos](../functions/GetPlayerPos) 获取坐标。该问题已在open.mp服务端修复
 
 :::
 

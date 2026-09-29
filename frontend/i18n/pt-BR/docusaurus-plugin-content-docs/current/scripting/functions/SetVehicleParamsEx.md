@@ -5,21 +5,20 @@ description: "Define os parâmetros de um veículo para todos os jogadores."
 tags: ["vehicle"]
 ---
 
-
 ## Descrição
 
 Define os parâmetros de um veículo para todos os jogadores.
 
-| Nome | Descrição |
-| --------- | --------------------------------------------------------------- |
-| vehicleid | O ID do veículo para definir os parâmetros.                 |
-| engine | Estado do motor. 0 - Desligado, 1 - Ligado.                                 |
-| lights | Estado leve. 0 - Desligado, 1 - Ligado.                                  |
-| alarm | Status do alarme do veículo. Se estiver ativado, o alarme será iniciado. 0 - Desligado, 1 - Ligado. |
-| doors | Estado da fechadura da porta. 0 - Desbloqueado, 1 - Bloqueado.                     |
-| bonnet | Status do capô (capô). 0 - Fechado, 1 - Aberto.                     |
-| boot | Status de inicialização/tronco. 0 - Fechado, 1 - Aberto.                        |
-| objective | Alterne a seta objetiva acima do veículo. 0 - Desligado, 1 - Ligado.  |
+| Nome      | Descrição                                                                                           |
+| --------- | --------------------------------------------------------------------------------------------------- |
+| vehicleid | O ID do veículo para definir os parâmetros.                                                         |
+| engine    | Estado do motor. 0 - Desligado, 1 - Ligado.                                                         |
+| lights    | Estado leve. 0 - Desligado, 1 - Ligado.                                                             |
+| alarm     | Status do alarme do veículo. Se estiver ativado, o alarme será iniciado. 0 - Desligado, 1 - Ligado. |
+| doors     | Estado da fechadura da porta. 0 - Desbloqueado, 1 - Bloqueado.                                      |
+| bonnet    | Status do capô (capô). 0 - Fechado, 1 - Aberto.                                                     |
+| boot      | Status de inicialização/tronco. 0 - Fechado, 1 - Aberto.                                            |
+| objective | Alterne a seta objetiva acima do veículo. 0 - Desligado, 1 - Ligado.                                |
 
 ## Retornos
 
@@ -71,11 +70,12 @@ public DisableVehicleAlarm(vehicleid)
     gVehicleAlarmTimer[vehicleid] = 0;
 }
 ```
+
 ## Definições
 
--`VEHICLE_PARAMS_UNSET` (-1)
--`VEHICLE_PARAMS_OFF` (0)
--`VEHICLE_PARAMS_ON` (1)
+- `VEHICLE_PARAMS_UNSET` (-1)
+- `VEHICLE_PARAMS_OFF` (0)
+- `VEHICLE_PARAMS_ON` (1)
 
 ## Notas
 

@@ -64,8 +64,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-- Het klikbare gebied wordt gedefinieerd door [TextDrawTextSize](../functions/TextDrawTextSize).
-- De `x` en `y` parameters die aan die functie worden doorgegeven mogen niet nul of negatief zijn.
+- Het klikbare gebied wordt gedefinieerd door [TextDrawTextSize](../functions/TextDrawTextSize). De `x` en `y` parameters die aan die functie worden doorgegeven mogen niet nul of negatief zijn.
 - Gebruik [CancelSelectTextDraw](../functions/CancelSelectTextDraw) niet onvoorwaardelijk binnen deze callback. Dit resulteert in een **oneindige lus**.
 
 :::

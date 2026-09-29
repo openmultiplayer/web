@@ -5,14 +5,13 @@ description: "Obtenha um número pseudo-aleatório."
 tags: ["core"]
 ---
 
-
 ## Descrição
 
 Obtenha um número pseudo-aleatório.
 
-| Nome | Descrição |
-| ---- | -------------------------------------------------------------------------- |
-| max | O intervalo de valores (de 0 a este valor menos um) que pode ser retornado. |
+| Nome | Descrição                                                                   |
+| ---- | --------------------------------------------------------------------------- |
+| max  | O intervalo de valores (de 0 a este valor menos um) que pode ser retornado. |
 
 ## Retornos
 
@@ -45,6 +44,7 @@ public OnPlayerSpawn(playerid)
     return 1;
 }
 ```
+
 ## Notas
 
 :::note

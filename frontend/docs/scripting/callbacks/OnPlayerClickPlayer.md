@@ -39,9 +39,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-There is currently only one 'source' (0 - `CLICK_SOURCE_SCOREBOARD`).
-
-The existence of this argument suggests that more sources may be supported in the future.
+There is currently only one 'source' (0 - `CLICK_SOURCE_SCOREBOARD`). The existence of this argument suggests that more sources may be supported in the future.
 
 :::
 

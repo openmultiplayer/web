@@ -57,8 +57,7 @@ Crashes when passed an invalid menu ID. (Fixed in open.mp)
 :::note
 
 - This function disabled the specified menu row for all players.
-- There is no function to disable a menu row for a specific player.
-- You'd have to create two menus - one with a row disabled, and one without. Or one per player.
+- There is no function to disable a menu row for a specific player. You'd have to create two menus - one with a row disabled, and one without. Or one per player.
 
 :::
 

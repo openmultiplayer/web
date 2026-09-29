@@ -66,8 +66,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-- The clickable area is defined by [TextDrawTextSize](../functions/TextDrawTextSize).
-- The `x` and `y` parameters passed to that function must not be zero or negative.
+- The clickable area is defined by [TextDrawTextSize](../functions/TextDrawTextSize). The `x` and `y` parameters passed to that function must not be zero or negative.
 - Do not use [CancelSelectTextDraw](../functions/CancelSelectTextDraw) unconditionally within this callback. This results in an **infinite loop**.
 
 :::

@@ -48,7 +48,10 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-La razón retornará 37 (lanzallamas) por cualquier origen de fuego (ej. molotov, 18). La razón retornará 51 de cualquier arma que cree una explosión (ej. Lanzamisiles, granada). No es necesario comprobar si killerid es válido antes de usarlo en SendDeathMessage, ya que INVALID_PLAYER_ID es un parámetro válido en esa función. playerid es el único que puede llamar el callback. (bueno saberlo para anti fake death)
+- La razón retornará 37 (lanzallamas) por cualquier origen de fuego (ej. molotov, 18).
+- La razón retornará 51 de cualquier arma que cree una explosión (ej. Lanzamisiles, granada).
+- No es necesario comprobar si killerid es válido antes de usarlo en SendDeathMessage, ya que INVALID_PLAYER_ID es un parámetro válido en esa función.
+- playerid es el único que puede llamar el callback. (bueno saberlo para anti fake death)
 
 :::
 

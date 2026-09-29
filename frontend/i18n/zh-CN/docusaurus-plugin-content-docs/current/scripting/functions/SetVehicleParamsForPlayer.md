@@ -111,8 +111,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 :::warning
 
-- 必须通过[OnVehicleStreamIn](../callbacks/OnVehicleStreamIn)回调重新应用参数设置
-- 参数设置在车辆流加载时需要重新应用
+必须通过[OnVehicleStreamIn](../callbacks/OnVehicleStreamIn)回调重新应用参数设置
 
 :::
 

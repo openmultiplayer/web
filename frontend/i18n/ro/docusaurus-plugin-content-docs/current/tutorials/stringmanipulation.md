@@ -1025,7 +1025,9 @@ print("Single quote \'");
 
 Oricum ar fi, ieșirea va fi aceeași:
 
-"" Citat unic: ' ""
+```
+Citat unic: '
+```
 
 Singura utilizare la care mă pot gândi în legătură cu acest lucru este setarea unei variabile a caracterului `** '**`, așa că, evident, dacă faceți următoarele, veți provoca o eroare de compilare;
 

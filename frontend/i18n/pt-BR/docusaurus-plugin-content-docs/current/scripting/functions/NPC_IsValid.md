@@ -5,15 +5,14 @@ description: "Verifica se um NPC ID é válido."
 tags: ["npc"]
 ---
 
-
 <VersionWarn version='omp v1.5.8.3079' />
 
 ## Descrição
 
 Verifica se um NPC ID é válido e se o NPC existe.
 
-| Nome | Descrição |
-| ----- | -------------------- |
+| Nome  | Descrição                |
+| ----- | ------------------------ |
 | npcid | O NPC ID para verificar. |
 
 ## Retornos
@@ -39,12 +38,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
     return 0;
 }
 ```
+
 ## Notas
 
 :::tip
 
-- Sempre verifique se um NPC é válido antes de realizar operações nele.
-- Isso evita erros de execução e travamentos.
+- Sempre verifique se um NPC é válido antes de realizar operações nele. Isso evita erros de execução e travamentos.
 - Use isso em loops ao iterar pelo potencial NPC IDs.
 
 :::

@@ -36,9 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-此函数会触发 [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) 回调并传入 INVALID_TEXT_DRAW (65535)
-
-在 OnPlayerClickTextDraw 回调中使用此函数时，若未处理该无效值情况会导致客户端进入无限循环
+此函数会触发 [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) 回调并传入 INVALID_TEXT_DRAW (65535)。在 OnPlayerClickTextDraw 回调中使用此函数时，若未处理该无效值情况会导致客户端进入无限循环
 
 :::
 

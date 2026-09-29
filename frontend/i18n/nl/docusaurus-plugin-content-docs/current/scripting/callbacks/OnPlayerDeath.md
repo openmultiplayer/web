@@ -49,7 +49,10 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-De reason zal 37 (flame thrower) teruggeven van elke vuurbron (bijv. molotov, 18) De reason zal 51 teruggeven van elk wapen dat een explosie veroorzaakt (bijv. RPG, granaat) Je hoeft niet te controleren of killerid geldig is voordat je het gebruikt in [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID is een geldige killerid parameter in die functie. playerid is de enige die de callback kan aanroepen. (goed om te weten voor anti fake death)
+- De reason zal 37 (flame thrower) teruggeven van elke vuurbron (bijv. molotov, 18)
+- De reason zal 51 teruggeven van elk wapen dat een explosie veroorzaakt (bijv. RPG, granaat)
+- Je hoeft niet te controleren of killerid geldig is voordat je het gebruikt in [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID is een geldige killerid parameter in die functie.
+- playerid is de enige die de callback kan aanroepen. (goed om te weten voor anti fake death)
 
 :::
 

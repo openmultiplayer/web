@@ -39,10 +39,7 @@ public OneSecondTimer()
 
 :::warning
 
-- SA-MP 存在定时器精度问题（误差约 25%），可参考以下修复方案：
-  - [精度修复方案 1](https://sampforum.blast.hk/showthread.php?tid=289675)
-  - [精度修复方案 2](https://sampforum.blast.hk/showthread.php?tid=650736)
-    （open.mp 已修复此问题）
+- SA-MP 存在定时器精度问题（误差约 25%），可参考以下修复方案：[精度修复方案 1](https://sampforum.blast.hk/showthread.php?tid=289675)、[精度修复方案 2](https://sampforum.blast.hk/showthread.php?tid=650736)（open.mp 已修复此问题）
 - 大量使用定时器会增加服务器 CPU/内存消耗
 
 :::

@@ -5,17 +5,16 @@ description: "Adicione uma nova propriedade ou altere uma propriedade existente.
 tags: ["core", "property"]
 ---
 
-
 ## Descrição
 
 Adicione uma nova propriedade ou altere uma propriedade existente.
 
-| Nome | Descrição |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id | A máquina virtual a ser usada, você deve manter este zero. _(opcional=0)_ |
-| name[] | Usado em combinação com valor ao armazenar números inteiros; não use isso se quiser armazenar uma string.                                                   |
-| valor | O valor inteiro a ser armazenado ou o ID exclusivo da propriedade, se estiver armazenando uma string. Use a função hash para calculá-lo a partir de uma string. _(opcional=célulamin)_ |
-| string[] | O valor da propriedade, como uma string. Não use isso se quiser armazenar um número inteiro.                                                               |
+| Nome     | Descrição                                                                                                                                                                              |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id       | A máquina virtual a ser usada, você deve manter este zero. _(opcional=0)_                                                                                                              |
+| name[]   | Usado em combinação com valor ao armazenar números inteiros; não use isso se quiser armazenar uma string.                                                                              |
+| valor    | O valor inteiro a ser armazenado ou o ID exclusivo da propriedade, se estiver armazenando uma string. Use a função hash para calculá-lo a partir de uma string. _(opcional=célulamin)_ |
+| string[] | O valor da propriedade, como uma string. Não use isso se quiser armazenar um número inteiro.                                                                                           |
 
 ## Retornos
 
@@ -40,6 +39,7 @@ setproperty(.value = 123984334, .string = ":)");
 
 // O resto é igual ao anterior.
 ```
+
 ## Notas
 
 :::tip
