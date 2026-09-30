@@ -500,7 +500,7 @@ new myTag: variable = 0,
 
     AppleTag: another = 1;
 ```
-Isso é perfeitamente válido, entretanto, ao adicionar essas duas variáveis ​​_diretamente_, você deve usar '\_:' para 'desetiquetá-las', caso contrário o compilador produzirá um aviso de 'tag incompatível'.
+Isso é perfeitamente válido, entretanto, ao adicionar essas duas variáveis _diretamente_, você deve usar '\_:' para 'desetiquetá-las', caso contrário o compilador produzirá um aviso de 'tag incompatível'.
 
 ---
 

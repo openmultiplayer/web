@@ -744,8 +744,8 @@ Puteți utiliza o altă combinație de caractere pentru a vă juca cu combinați
 | ------------------------------ | ---------------- |
 | \~r\~\~h\~                     | Roșu mai deschis |
 | \~r\~\~h\~\~h\~                | Roșu roz         |
-| \~r\~\~h\~\~h~\~h\~            | Roșu-închis      |
-| \~r\~\~h\~~h~~h~~h\~           | Roz roșu deschis |
+| \~r\~\~h\~\~h\~\~h\~           | Roșu-închis      |
+| \~r\~\~h\~\~h\~\~h\~\~h\~      | Roz roșu deschis |
 | \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Roz              |
 | \~g\~\~h\~                     | Verde deschis    |
 

@@ -47,7 +47,7 @@ Player-textdraws se automatski unište kada se igrač diskonektuje.
 
 :::warning
 
-Kodovi mapiranja tipkovnice (kao što je ~k~~VEHICLE_ENTER_EXIT~ Ne radi duže od 255. znaka).
+Kodovi mapiranja tipkovnice (kao što je `~k~~VEHICLE_ENTER_EXIT~` Ne radi duže od 255. znaka).
 
 :::
 

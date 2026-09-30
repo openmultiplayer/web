@@ -195,7 +195,7 @@ Game text colour tags can be used to form different colours easily. The below co
 
 [![Image:Blueandred.png](https://assets.open.mp/assets/images/colorList/Blueandred.png)
 
-Now these colors are pretty dark. You can make them brighter by using **~h~** after the color code:
+Now these colors are pretty dark. You can make them brighter by using **`~h~`** after the color code:
 
 ```c
 ~w~Hello this is ~b~~h~blue ~w~and this is ~r~~h~red

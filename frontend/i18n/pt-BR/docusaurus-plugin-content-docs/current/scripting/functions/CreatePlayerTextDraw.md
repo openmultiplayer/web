@@ -49,7 +49,7 @@ Textdraws de jogador são automaticamente destruídos quando um jogador se desco
 
 :::warning
 
-Códigos de mapeamento de teclas do teclado (como ~k~~VEHICLE_ENTER_EXIT~) não funcionam além do 255º caractere.
+Códigos de mapeamento de teclas do teclado (como `~k~~VEHICLE_ENTER_EXIT~`) não funcionam além do 255º caractere.
 
 :::
 

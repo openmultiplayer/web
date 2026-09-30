@@ -59,7 +59,7 @@ Preporučuje se upotreba CIJELIH brojeva umjesto decimalnih mjesta prilikom krei
 
 :::warning
 
-Kodovi preslikavanja tipki na tipkovnici (kao npr ~k~~VEHICLE_ENTER_EXIT~ ne rade preko 255-og karaktera.
+Kodovi preslikavanja tipki na tipkovnici (kao npr `~k~~VEHICLE_ENTER_EXIT~` ne rade preko 255-og karaktera.
 
 :::
 

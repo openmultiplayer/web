@@ -63,7 +63,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-کدهای mapping کلیدهای صفحه کلید (مانند ~k~~VEHICLE_ENTER_EXIT~) بعد از کاراکتر 255 کار نمی‌کنند.
+کدهای mapping کلیدهای صفحه کلید (مانند `~k~~VEHICLE_ENTER_EXIT~`) بعد از کاراکتر 255 کار نمی‌کنند.
 
 :::
 
