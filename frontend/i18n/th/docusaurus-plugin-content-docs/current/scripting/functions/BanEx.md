@@ -30,6 +30,9 @@ public OnPlayerCommandText( playerid, cmdtext[] )
         return 1;
     }
 }
+```
+
+```c
 /*In order to display a message (eg. reason) for the player before the connection is closed
 you have to use a timer to create a delay. This delay needs only to be a few milliseconds long,
 but this example uses a full second just to be on the safe side.*/

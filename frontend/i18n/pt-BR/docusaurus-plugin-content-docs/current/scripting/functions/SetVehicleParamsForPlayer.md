@@ -5,16 +5,15 @@ description: "Defina os parâmetros de um veículo para um jogador."
 tags: ["player", "vehicle"]
 ---
 
-
 ## Descrição
 
 Defina os parâmetros de um veículo para um jogador.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| vehicle | O ID do veículo para definir os parâmetros.                                                                                |
-| playerid | O ID do jogador para o qual definir os parâmetros do veículo.                                                                      |
-| objective | VEHICLE_PARAMS_OFF para desativar o objetivo ou VEHICLE_PARAMS_ON para mostrá-lo. Esta é uma seta amarela oscilante acima do veículo. |
+| Nome        | Descrição                                                                                                                             |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| vehicle     | O ID do veículo para definir os parâmetros.                                                                                           |
+| playerid    | O ID do jogador para o qual definir os parâmetros do veículo.                                                                         |
+| objective   | VEHICLE_PARAMS_OFF para desativar o objetivo ou VEHICLE_PARAMS_ON para mostrá-lo. Esta é uma seta amarela oscilante acima do veículo. |
 | doorslocked | VEHICLE_PARAMS_OFF para destravar as portas ou VEHICLE_PARAMS_ON para travá-las.                                                      |
 
 ## Retornos
@@ -37,7 +36,9 @@ new
 
 GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
 SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, VEHICLE_PARAMS_OFF);
+```
 
+```c
 // Bloqueia o próprio carro de todos os jogadores, exceto o jogador que usou o comando.
 public OnPlayerCommandText(playerid, cmdtext[])
 {
@@ -60,7 +61,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
+```
 
+```c
 // Mostrará marcadores de veículos para jogadores fazendo streaming para 0.3a+
 new iVehicleObjective[MAX_VEHICLES][2];
 
@@ -83,7 +86,9 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
 }
+```
 
+```c
 // No topo
 new myMarkedCar;
 
@@ -103,6 +108,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
     return 1;
 }
 ```
+
 ## Notas
 
 :::note

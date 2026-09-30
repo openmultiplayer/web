@@ -33,6 +33,9 @@ Sets a vehicle's parameters for all players.
 new engine, lights, alarm, doors, bonnet, boot, objective;
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
 SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // ONLY the engine param was changed to VEHICLE_PARAMS_ON (1)
+```
+
+```c
 new Timer_VehAlarm[MAX_VEHICLES];
 
 SetVehicleParamsEx_Fixed(vehicleid, &engine, &lights, &alarm, &doors, &bonnet, &boot, &objective)

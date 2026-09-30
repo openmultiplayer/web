@@ -22,11 +22,18 @@ This function does not return any specific values.
 
 ## Examples
 
+**Storing Integers**
+
 ```c
 setproperty(.name = "MyInteger", .value = 42);
 
 new value = getproperty(.name = "MyInteger");
 printf("Value that was stored is: %d", value);
+```
+
+**Storing Strings**
+
+```c
 setproperty(0, "", 123984334, ":)");
 
 new value[4];
@@ -35,6 +42,11 @@ strunpack(value, value, sizeof(value)); // we need to unpack the string first
 print(value);
 
 //should print :)
+```
+
+Or... seeing as _all_ the parameters are optional, a piece of code like this similar:
+
+```c
 setproperty(.value = 123984334, .string = ":)");
 
 // The rest is the same as above.

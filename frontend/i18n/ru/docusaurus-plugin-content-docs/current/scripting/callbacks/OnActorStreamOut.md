@@ -37,3 +37,6 @@ public OnActorStreamOut(actorid, forplayerid)
 <NoteNPCCallbacks />
 
 ## Функции
+
+- [OnActorStreamIn](OnActorStreamIn): Вызывается, когда актёр попадает в зону стрима клиента.
+- [OnPlayerStreamOut](OnPlayerStreamOut): Вызывается, когда игрок пропадает из зоны стрима другого игрока.

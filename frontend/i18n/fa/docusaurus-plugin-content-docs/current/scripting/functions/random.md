@@ -23,6 +23,9 @@ tags: ["core"]
 new value = random(5);
 
 // 'value' mitune 0, 1, 2, 3 ya 4 bashe. (5 meghdar momken)
+```
+
+```c
 new Float:RandomSpawn[][4] =
 {
     // Pozisyonha, (X, Y, Z va Facing Angle)

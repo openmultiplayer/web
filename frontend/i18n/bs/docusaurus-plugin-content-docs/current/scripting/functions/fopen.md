@@ -43,6 +43,9 @@ else
     // Error
     print("The file \"file.txt\" does not exists, or can't be opened.");
 }
+```
+
+```c
 // Otvorite "file.txt" u "write only" načinu (samo pisanje)
 new File:handle = fopen("file.txt", io_write);
 
@@ -62,6 +65,9 @@ else
     // Error
     print("Nesupješno otvaranje file \"file.txt\".");
 }
+```
+
+```c
 // Otvorite "file.txt" u "read and write" načinu (čitanje i pisanje)
 new File:handle = fopen("file.txt"),
 
@@ -90,6 +96,9 @@ else
     // Error
     print("The file \"file.txt\" does not exists, or can't be opened.");
 }
+```
+
+```c
 // Otvorite "file.txt" u "append only" načinu (samo dodavanje)
 new File:handle = fopen("file.txt", io_append);
 

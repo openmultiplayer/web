@@ -9,6 +9,10 @@ tags: []
 
 Esta callback é acionada quando uma gamemode inicia.
 
+## Retornos
+
+Esta callback não lida com retornos.
+
 ## Exemplos
 
 ```c

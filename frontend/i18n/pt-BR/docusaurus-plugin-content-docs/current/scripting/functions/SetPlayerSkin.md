@@ -5,15 +5,14 @@ description: "Defina a skin de um jogador."
 tags: ["player"]
 ---
 
-
 ## Descrição
 
 Defina a skin de um jogador. A pele de um jogador é o modelo de seu personagem.
 
-| Nome | Descrição |
+| Nome     | Descrição                                             |
 | -------- | ----------------------------------------------------- |
 | playerid | O ID do jogador cujo skin será definido.              |
-| skinid | A [skin](../resources/skins) que o jogador deve usar. |
+| skinid   | A [skin](../resources/skins) que o jogador deve usar. |
 
 ## Retornos
 
@@ -36,7 +35,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
+```
 
+```c
 SetPlayerSkinFix(playerid, skinid)
 {
     if (!IsPlayerConnected(playerid))
@@ -84,6 +85,7 @@ SetPlayerSkinFix(playerid, skinid)
     }
 }
 ```
+
 ## Notas
 
 :::warning

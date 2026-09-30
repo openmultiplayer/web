@@ -9,6 +9,10 @@ tags: []
 
 Get the currently global gravity.
 
+## Returns
+
+The current set gravity (as a float).
+
 ## Examples
 
 **SA-MP server:**

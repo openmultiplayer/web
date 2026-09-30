@@ -27,6 +27,9 @@ setproperty(.name = "MyInteger", .value = 42);
 
 new value = getproperty(.name = "MyInteger");
 printf("存储的整数值为: %d", value);
+```
+
+```c
 setproperty(0, "", 123984334, ":)");
 
 new value[4];
@@ -35,6 +38,9 @@ strunpack(value, value, sizeof(value)); // 需要先解压字符串
 print(value);
 
 // 应该打印 :)
+```
+
+```c
 setproperty(.value = 123984334, .string = ":)");
 
 // 其余操作与上述示例相同

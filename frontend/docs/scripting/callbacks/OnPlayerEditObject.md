@@ -100,6 +100,7 @@ The following functions might be useful, as they're related to this callback in 
 - [CreateObject](../functions/CreateObject): Create an object.
 - [DestroyObject](../functions/DestroyObject): Destroy an object.
 - [MoveObject](../functions/MoveObject): Move an object.
+- [EditObject](../functions/EditObject): Edit an object.
 
 ## Related Resources
 

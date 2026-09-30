@@ -14,9 +14,9 @@ Este callback se llama cada vez que un cliente/jugador actualiza su estado con e
 
 ## Devoluciones
 
-1 - Prevendrá a otros filterscripts de recibir este callback.
+0 - Prevendrá a otros filterscripts de recibir este callback.
 
-0 - Indica que este callback será pasado al siguiente filterscript.
+1 - Indica que este callback será pasado al siguiente filterscript.
 
 Siempre se llama primero en filterscripts.
 
@@ -48,6 +48,9 @@ stock OnPlayerChangeWeapon(playerid, oldweapon, newweapon)
 
     SendClientMessage(playerid, 0xFFFFFFFF, s);
 }
+```
+
+```c
 public OnPlayerUpdate(playerid)
 {
     new Float:fHealth;

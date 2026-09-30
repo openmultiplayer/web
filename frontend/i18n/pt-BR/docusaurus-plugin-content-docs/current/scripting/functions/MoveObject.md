@@ -5,21 +5,20 @@ description: "Mova um objeto para uma nova posição com uma velocidade definida
 tags: ["object"]
 ---
 
-
 ## Descrição
 
 Mova um objeto para uma nova posição com uma velocidade definida. Jogadores/veículos irão ‘surfar’ no objeto enquanto ele se move.
 
-| Nome | Descrição |
-| --------------- | --------------------------------------------------------- |
-| objectid | O ID do objeto a ser movido.                             |
-| Float:targetX | A coordenada X para a qual mover o objeto.                   |
-| Float:targetY | A coordenada Y para a qual mover o objeto.                   |
-| Float:targetZ | A coordenada Z para a qual mover o objeto.                   |
-| Float:speed | A velocidade na qual mover o objeto (unidades por segundo). |
-| Float:rotationX | A rotação FINAL X (opcional).                          |
-| Float:rotationY | A rotação FINAL Y (opcional).                          |
-| Float:rotationZ | A rotação FINAL Z (opcional).                          |
+| Nome            | Descrição                                                   |
+| --------------- | ----------------------------------------------------------- |
+| objectid        | O ID do objeto a ser movido.                                |
+| Float:targetX   | A coordenada X para a qual mover o objeto.                  |
+| Float:targetY   | A coordenada Y para a qual mover o objeto.                  |
+| Float:targetZ   | A coordenada Z para a qual mover o objeto.                  |
+| Float:speed     | A velocidade na qual mover o objeto (unidades por segundo). |
+| Float:rotationX | A rotação FINAL X (opcional).                               |
+| Float:rotationY | A rotação FINAL Y (opcional).                               |
+| Float:rotationZ | A rotação FINAL Z (opcional).                               |
 
 ## Retornos
 
@@ -51,6 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     return 0;
 }
 ```
+
 ## Notas
 
 :::warning

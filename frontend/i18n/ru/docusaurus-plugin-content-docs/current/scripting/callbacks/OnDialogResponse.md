@@ -25,6 +25,8 @@ tags: []
 
 ## Пример
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Макрос ID диалога, с которым будет взаимодействие
 #define DIALOG_RULES 1
@@ -49,7 +51,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Вы ДОЛЖНЫ возвращать 0 здесь! Прямо как в OnPlayerCommandText.
 }
+```
 
+**DIALOG_STYLE_INPUT**
+
+```c
 #define DIALOG_LOGIN 2
 
 // В каком-либо месте кода
@@ -82,6 +88,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Вы ДОЛЖНЫ возвращать 0 здесь! Прямо как в OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // In some command
@@ -106,10 +117,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0;// Вы ДОЛЖНЫ возвращать 0 здесь! Прямо как в OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // In some command
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Weapons",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

@@ -64,8 +64,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-- Подручје клика је дефинисано са [TextDrawTextSize](../functions/TextDrawTextSize).
-- `x` и `y` параметри прослеђени тој функцији не смеју бити нула или негативни.
+- Подручје клика је дефинисано са [TextDrawTextSize](../functions/TextDrawTextSize). `x` и `y` параметри прослеђени тој функцији не смеју бити нула или негативни.
 - Не користите [CancelSelectTextDraw](../functions/CancelSelectTextDraw) безусловно унутар ове функције. То може довести до **бесконачне петље**.
 
 :::

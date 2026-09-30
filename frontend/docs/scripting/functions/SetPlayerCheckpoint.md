@@ -54,7 +54,8 @@ public OnPlayerEnterCheckpoint(playerid)
 
 :::warning
 
-Checkpoints are asynchronous, meaning only one can be shown at a time. To 'stream' checkpoints (only show them when players are close enough), use a checkpoint streamer.
+- Checkpoints are asynchronous, meaning only one can be shown at a time. To 'stream' checkpoints (only show them when players are close enough), use a checkpoint streamer.
+- Checkpoints created on server-created objects ([CreateObject](CreateObject)/[CreatePlayerObject](CreatePlayerObject)) will appear down on the 'real' ground, but will still function correctly. A pickup can be used instead.
 
 :::
 

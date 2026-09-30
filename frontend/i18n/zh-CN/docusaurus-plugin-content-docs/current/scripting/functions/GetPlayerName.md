@@ -42,9 +42,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-通过 [SetPlayerName](SetPlayerName) 设置玩家昵称时，最大长度为 24 个字符（定义为`MAX_PLAYER_NAME`）
-
-客户端实际可使用的昵称长度为 3-20 个字符，超出范围的昵称会被服务器拒绝连接
+通过 [SetPlayerName](SetPlayerName) 设置玩家昵称时，最大长度为 24 个字符（定义为`MAX_PLAYER_NAME`）。客户端实际可使用的昵称长度为 3-20 个字符，超出范围的昵称会被服务器拒绝连接
 
 :::
 

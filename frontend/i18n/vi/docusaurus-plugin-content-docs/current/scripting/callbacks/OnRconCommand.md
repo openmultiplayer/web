@@ -25,7 +25,9 @@ public OnRconCommand(cmd[])
     log("RCON command executed: %s", cmd);
     return 0;
 }
+```
 
+```c
 public OnRconCommand(cmd[])
 {
     if (!strcmp(cmd, "broadcast", true))
@@ -48,9 +50,7 @@ public OnRconCommand(cmd[])
 
 :::warning
 
-Trong SA-MP, bạn cần phải bao gồm callback này trong một filterscript đã được tải để nó hoạt động trong gamemode!
-
-Nhưng điều này đã được sửa trong open.mp.
+Trong SA-MP, bạn cần phải bao gồm callback này trong một filterscript đã được tải để nó hoạt động trong gamemode! Nhưng điều này đã được sửa trong open.mp.
 
 :::
 

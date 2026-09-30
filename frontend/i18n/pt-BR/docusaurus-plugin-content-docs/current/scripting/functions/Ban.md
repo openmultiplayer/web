@@ -29,6 +29,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         return 1;
     }
 }
+```
+
+```c
 // Para exibir uma mensagem (por exemplo, motivo) para o jogador antes que a conexão seja fechada
 // você tem que usar um cronômetro (timer) para criar um atraso. Esse atraso precisa ser de apenas alguns milissegundos,
 // mas este exemplo usa um segundo inteiro apenas por garantia.

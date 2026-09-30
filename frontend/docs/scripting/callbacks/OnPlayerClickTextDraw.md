@@ -16,6 +16,8 @@ This callback is called when a player clicks on a textdraw or cancels the select
 
 ## Returns
 
+Returning 1 in this callback will prevent it being called in other scripts. This should be used to signal that the textdraw on which they clicked was 'found' and no further processing is needed. You should return 0 if the textdraw on which they clicked wasn't found, just like in [OnPlayerCommandText](OnPlayerCommandText).
+
 It is always called first in filterscripts so returning 1 there also blocks other scripts from processing it.
 
 ## Examples
@@ -64,8 +66,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-- The clickable area is defined by [TextDrawTextSize](../functions/TextDrawTextSize).
-- The `x` and `y` parameters passed to that function must not be zero or negative.
+- The clickable area is defined by [TextDrawTextSize](../functions/TextDrawTextSize). The `x` and `y` parameters passed to that function must not be zero or negative.
 - Do not use [CancelSelectTextDraw](../functions/CancelSelectTextDraw) unconditionally within this callback. This results in an **infinite loop**.
 
 :::

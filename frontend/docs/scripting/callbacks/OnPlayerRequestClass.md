@@ -16,6 +16,8 @@ This callback is called when a player changes class at class selection (and when
 
 ## Returns
 
+Returning 0 in this callback will prevent the player from spawning. The player can be forced to spawn when [SpawnPlayer](../functions/SpawnPlayer) is used.
+
 It is always called first in filterscripts.
 
 ## Examples

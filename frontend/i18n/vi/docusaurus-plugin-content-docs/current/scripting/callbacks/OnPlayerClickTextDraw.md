@@ -64,8 +64,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-- Khu vực có thể nhấp được xác định bởi [TextDrawTextSize](../functions/TextDrawTextSize).
-- Các tham số `x` và `y` được truyền vào hàm đó không được bằng 0 hoặc âm.
+- Khu vực có thể nhấp được xác định bởi [TextDrawTextSize](../functions/TextDrawTextSize). Các tham số `x` và `y` được truyền vào hàm đó không được bằng 0 hoặc âm.
 - Không nên sử dụng [CancelSelectTextDraw](../functions/CancelSelectTextDraw) một cách không điều kiện trong callback này. Điều này sẽ dẫn đến một **vòng lặp vô hạn**.
 
 :::

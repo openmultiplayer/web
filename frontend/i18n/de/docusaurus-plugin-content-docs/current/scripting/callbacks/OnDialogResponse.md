@@ -23,6 +23,8 @@ Wird in Filterscripts immer zuerst ausgeführt. Bei Nutzung von return 1 können
 
 ## Beispiele
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Definieren der Dialog ID, mit der wie Antworten bearbeiten können
 #define DIALOG_REGELN 1
@@ -47,6 +49,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Hier muss return 0 stehen! Genau wie bei OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 #define DIALOG_LOGIN 2
 
 // In einem Befehl
@@ -79,8 +86,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Hier muss return 0 stehen! Genau wie bei OnPlayerCommandText.
 }
+```
 
+**DIALOG_STYLE_LIST**
 
+```c
 #define DIALOG_WAFFEN 3
 
 // In einem Befehl
@@ -105,12 +115,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Hier muss return 0 stehen! Genau wie bei OnPlayerCommandText.
 }
+```
 
+**DIALOG_STYLE_TABLIST_HEADERS**
 
+```c
 #define DIALOG_WAFFEN 3
 
 // In einem Command
-ShowPlayerDialog(playerid, DIALOG_WAFFEN, DIALOG_STYLE_LIST, "Waffen",
+ShowPlayerDialog(playerid, DIALOG_WAFFEN, DIALOG_STYLE_TABLIST_HEADERS, "Waffen",
 "Waffe\tMunition\tPreis\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

@@ -9,6 +9,10 @@ tags: ["core", "arguments", "args"]
 
 Get the number of arguments passed to a function.
 
+## Returns
+
+The number of arguments passed.
+
 ## Examples
 
 ```c

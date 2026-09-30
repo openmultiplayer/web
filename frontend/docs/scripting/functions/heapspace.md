@@ -9,6 +9,10 @@ tags: ["core"]
 
 Returns the amount of memory available for the heap/stack in bytes.
 
+## Returns
+
+The free space on the heap in bytes. The stack and the heap occupy a shared memory area, so this value indicates the number of bytes that is left for either the stack or the heap.
+
 ## Examples
 
 ```c

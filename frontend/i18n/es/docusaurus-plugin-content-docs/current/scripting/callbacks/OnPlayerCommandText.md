@@ -15,6 +15,8 @@ Este callback se llama cuando un jugador ingresa un comando dentro de la ventana
 
 ## Devoluciones
 
+Retornando 0 este callback será ejecutado en otro script o mostrará `SERVER: Unknown command.` si no hay scripts para pasarle este callback.
+
 1 - Prevendrá a otros filterscripts de recibir este callback.
 
 0 - Indica que este callback será pasado al siguiente filterscript.

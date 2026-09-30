@@ -30,6 +30,9 @@ public OnPlayerCommandText( playerid, cmdtext[] )
         return 1;
     }
 }
+```
+
+```c
 /*Untuk memunculkan pesan (contoh: alasan) untuk player sebelum koneksi terputus
 Anda harus menggunakan timer untuk membuat sebuah delay. Delay ini hanya membutuhkan beberapa milisekon saja,
 akan  tetapi contoh ini menggunakan satu detik penuh hanya untuk berjaga-jaga.*/

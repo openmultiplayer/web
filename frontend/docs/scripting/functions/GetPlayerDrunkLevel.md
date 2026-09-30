@@ -30,6 +30,14 @@ public OnPlayerStateChange(playerid, oldstate, newstate)
 }
 ```
 
+## Notes
+
+:::tip
+
+You can use [ApplyAnimation](ApplyAnimation) to apply a drunk animation.
+
+:::
+
 ## Related Functions
 
 - [SetPlayerDrunkLevel](SetPlayerDrunkLevel): Set a player's drunk level.

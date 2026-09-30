@@ -5,14 +5,13 @@ description: "Obtenha um número pseudo-aleatório."
 tags: ["core"]
 ---
 
-
 ## Descrição
 
 Obtenha um número pseudo-aleatório.
 
-| Nome | Descrição |
-| ---- | -------------------------------------------------------------------------- |
-| max | O intervalo de valores (de 0 a este valor menos um) que pode ser retornado. |
+| Nome | Descrição                                                                   |
+| ---- | --------------------------------------------------------------------------- |
+| max  | O intervalo de valores (de 0 a este valor menos um) que pode ser retornado. |
 
 ## Retornos
 
@@ -24,6 +23,9 @@ Um número aleatório variando de 0 a no máximo 1.
 new value = random(5);
 
 // 'value' pode ser 0, 1, 2, 3 ou 4 (5 valores possíveis)
+```
+
+```c
 new Float:RandomSpawn[][4] =
 {
     // Posições, (X, Y, Z e ângulo de face)
@@ -45,6 +47,7 @@ public OnPlayerSpawn(playerid)
     return 1;
 }
 ```
+
 ## Notas
 
 :::note

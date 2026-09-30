@@ -27,6 +27,8 @@ Elle est toujours appelée en premier dans le gamemode donc retourner **0** dans
 
 ## Exemples
 
+**Exemple - Débogage**
+
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
@@ -49,6 +51,8 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
     return 1;
 }
 ```
+
+**Exemple - Lors d'un headshot au sniper le joueur meurt instantanément.**
 
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)

@@ -40,6 +40,9 @@ else
     // Error
     print("Failed to open file \"file.txt\".");
 }
+```
+
+```c
 // Open "file.txt" in "read and write" mode
 new File:handle = fopen("file.txt"),
 
@@ -68,6 +71,9 @@ else
     // Error
     print("The file \"file.txt\" does not exists, or can't be opened.");
 }
+```
+
+```c
 // Open "file.txt" in "append only" mode
 new File:handle = fopen("file.txt", io_append);
 

@@ -27,6 +27,8 @@ It is always called first in filterscripts so returning 1 there blocks other fil
 
 ## Examples
 
+**Example - Debugging**
+
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
@@ -51,6 +53,8 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```
 
 <br />
+
+**Example - One-shot-kill sniper headshots**
 
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)

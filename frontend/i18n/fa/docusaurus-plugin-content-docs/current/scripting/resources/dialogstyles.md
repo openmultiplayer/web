@@ -228,7 +228,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 - **\t** مقداری فاصله ایجاد میکند.
 - **\n** یک خط جدید میسازد.
-- روش Color-Embedding بعد از \n یا \t ریست میشود. اولین خط **info** شامل سر تیتر میشود.
+- روش Color-Embedding بعد از \n یا \t ریست میشود.
 
 :::
 

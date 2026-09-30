@@ -14,6 +14,8 @@ Este callback se llama cuando un comando es enviado mediante la consola del serv
 
 ## Devoluciones
 
+0 si el comando no fue procesado (de ser posible, el callback será llamado en otro script), 1 si el comando fue procesado.
+
 1 - Prevendrá a otros filterscripts de recibir este callback.
 
 0 - Indica que este callback será pasado al siguiente filterscript.
@@ -28,7 +30,9 @@ public OnRconCommand(cmd[])
     printf("[RCON]: Escribiste '/rcon %s'!", cmd);
     return 0;
 }
+```
 
+```c
 public OnRconCommand(cmd[])
 {
     if (!strcmp(cmd, "hello", true))

@@ -9,6 +9,8 @@ tags: []
 
 Adds a death to the 'killfeed' on the right-hand side of the screen for all players.
 
+The 5 most recent kills are shown on the right side of players' screens. Pressing F9 will hide/show the list.
+
 | Name   | Description                                                                                                                 |
 | ------ | --------------------------------------------------------------------------------------------------------------------------- |
 | killer | The ID of the killer (can be INVALID_PLAYER_ID).                                                                            |

@@ -43,12 +43,16 @@ format(result, sizeof(result), "The number is %i.", number);
 
 new str[] = "simple message";
 format(result, sizeof(result), "This is a %s containing the number %i.", str, number);
+```
 
+```c
 new t[32];
 new h, m, s;
 gettime(h, m, s);
 format(t, sizeof(t), "The time is %02d:%02d:%02d.", h, m, s);
+```
 
+```c
 new pct[32];
 format(pct, sizeof(pct), "43%s of my shirts are black.", "%%");
 ```

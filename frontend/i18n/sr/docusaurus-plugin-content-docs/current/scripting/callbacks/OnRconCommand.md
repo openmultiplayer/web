@@ -25,7 +25,9 @@ public OnRconCommand(cmd[])
     printf("[RCON]: You typed '/rcon %s'!", cmd);
     return 0;
 }
+```
 
+```c
 public OnRconCommand(cmd[])
 {
     if (!strcmp(cmd, "hello", true))
@@ -48,9 +50,7 @@ public OnRconCommand(cmd[])
 
 :::warning
 
-У SA-MP-у ћете морати да укључите ову функцију у учитаној филтерскрипти да би функционисала у главној скрипти!
-
-Али је исправљено у open.mp
+У SA-MP-у ћете морати да укључите ову функцију у учитаној филтерскрипти да би функционисала у главној скрипти! Али је исправљено у open.mp
 
 :::
 

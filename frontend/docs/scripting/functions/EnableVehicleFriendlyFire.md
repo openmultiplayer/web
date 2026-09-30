@@ -9,6 +9,10 @@ tags: ["vehicle"]
 
 Enable friendly fire for team vehicles. Players will be unable to damage teammates' vehicles (SetPlayerTeam must be used!).
 
+## Returns
+
+This function does not return any specific values.
+
 ## Examples
 
 ```c

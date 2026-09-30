@@ -745,8 +745,8 @@ You can use another combination of characters to play with color mixes, **\~h\~*
 | ------------------------------ | -------------- |
 | \~r\~\~h\~                     | Lighter red    |
 | \~r\~\~h\~\~h\~                | Red pink       |
-| \~r\~\~h\~\~h~\~h\~            | Dark red       |
-| \~r\~\~h\~~h~~h~~h\~           | Light red pink |
+| \~r\~\~h\~\~h\~\~h\~           | Dark red       |
+| \~r\~\~h\~\~h\~\~h\~\~h\~      | Light red pink |
 | \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Pink           |
 | \~g\~\~h\~                     | Light green    |
 

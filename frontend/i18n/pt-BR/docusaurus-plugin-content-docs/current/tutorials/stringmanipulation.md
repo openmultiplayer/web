@@ -45,6 +45,7 @@ Você também pode predefinir valores constantes para poder usá-los várias vez
 // declarando uma string com o tamanho do valor de STRING_SIZE
 new str_3[STRING_SIZE];
 ```
+
 :::note
 
 No tempo de compilação, o compilador substituirá todas as ocorrências de `STRING_SIZE` pelo valor `20`, este método economiza tempo e é mais legível na maioria dos casos, lembre-se de que o valor atribuído à constante `STRING_SIZE` deve ser um número inteiro, caso contrário, ocorrerá um erro de compilação.
@@ -311,6 +312,7 @@ Examinaremos mais de perto alguns deles, aqueles que são usados ​​com mais 
   strval("here we go, 2018"); // Retorna “0”.
   strval("2017 ended, welcome 2018"); // Retorna “2017”.
   ```
+
 :::tip
 
 Existem muitas bibliotecas feitas pela comunidade que você pode baixar e que têm a ver com manipulação de strings. Não consigo pensar em uma inclusão melhor do que [strlib](https://github.com/oscar-broman/strlib).
@@ -695,8 +697,8 @@ Você pode usar outra combinação de personagens para brincar com misturas de c
 | ------------------------------ | -------------- |
 | \~r\~\~h\~ | Vermelho mais claro |
 | \~r\~\~h\~\~h\~ | Rosa vermelho |
-| \~r\~\~h\~\~h~\~h\~ | Vermelho escuro |
-| \~r\~\~h\~~h~~h~~h\~ | Rosa vermelho claro |
+| \~r\~\~h\~\~h\~\~h\~ | Vermelho escuro |
+| \~r\~\~h\~\~h\~\~h\~\~h\~ | Rosa vermelho claro |
 | \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Rosa |
 | \~g\~\~h\~ | Verde claro |
 
@@ -904,6 +906,7 @@ print("Hello \\ World");
 ```
 Hello \ World
 ```
+
 :::caution Warning
 
 A saída irá desconsiderar a primeira barra invertida e imprimir a segunda, já que a primeira está escapando da segunda e enganando o programa para vê-la como um caractere bruto. Uma barra invertida só pode escapar de um caractere por vez, portanto, fazer o seguinte gerará um erro de compilação.

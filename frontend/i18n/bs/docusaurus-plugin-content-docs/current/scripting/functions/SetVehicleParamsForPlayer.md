@@ -36,6 +36,9 @@ new
 
 GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
 SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, 0);
+```
+
+```c
 // Zaključava svoje vozilo za sve igrače, osim igrača koji je koristio komandu.
 public OnPlayerCommandText(playerid, cmdtext[])
 {
@@ -51,6 +54,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
+```
+
+```c
 // Will show vehicle markers for players streaming in for 0.3a+
 new iVehicleObjective[MAX_VEHICLES][2];
 
@@ -73,6 +79,9 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 {
     SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
 }
+```
+
+```c
 //Top
 new myMarkedCar;
 

@@ -82,9 +82,7 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Cette callback est appelée environ 30 fois par secondes, par joueur; à utiliser seulement quand vous savez exactement pourquoi.
-
-La fréquence à laquelle est appelée cette callback varie en fonction des joueurs, dépendant de ce que fait le joueur. La fréquence d'appel sera plus élevé quand le joueur conduira, tirera alors qu'elle sera plus basse quand le joueur sera statique.
+Cette callback est appelée environ 30 fois par secondes, par joueur; à utiliser seulement quand vous savez exactement pourquoi. La fréquence à laquelle est appelée cette callback varie en fonction des joueurs, dépendant de ce que fait le joueur. La fréquence d'appel sera plus élevé quand le joueur conduira, tirera alors qu'elle sera plus basse quand le joueur sera statique.
 
 :::
 

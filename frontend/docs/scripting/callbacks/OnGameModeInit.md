@@ -9,6 +9,12 @@ tags: []
 
 This callback is triggered when the gamemode starts.
 
+## Returns
+
+This callback does not handle returns.
+
+It is always called first in gamemode.
+
 ## Examples
 
 ```c

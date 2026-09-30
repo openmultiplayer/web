@@ -25,6 +25,15 @@ This function does not return any specific values.
 new string[4];
 new iValue = 250;
 valstr(string,iValue); // string is now "250"
+```
+
+## บันทึก
+
+:::warning
+
+Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). open.mp includes this fix.
+
+```c
 // valstr fix by Slice
 stock FIX_valstr(dest[], value, bool:pack = false)
 {
@@ -38,12 +47,6 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 }
 #define valstr FIX_valstr
 ```
-
-## บันทึก
-
-:::warning
-
-Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). open.mp includes this fix.
 
 :::
 

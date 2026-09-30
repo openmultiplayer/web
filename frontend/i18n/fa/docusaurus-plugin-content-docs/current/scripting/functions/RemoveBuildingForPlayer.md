@@ -32,7 +32,9 @@ public OnPlayerConnect(playerid)
     RemoveBuildingForPlayer(playerid, 615, 0.0, 0.0, 0.0, 200.0);
     return 1;
 }
+```
 
+```c
 public OnPlayerConnect(playerid)
 {
     // Vaghti ke player vasel mishe, tamame objecthaye map hazf mishan.
