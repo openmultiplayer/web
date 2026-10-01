@@ -1,10 +1,10 @@
 ---
 title: Introduction
-sidebar_label: Introduction
-description: Documentations for open.mp and SA-MP modifications
-sidebar_position: 1
+sidebar_label:VOlT
+description: Documentations for open.mp and SA-MP modifications100
+sidebar_position: 100
 ---
-
+VX VolT
 # SA-MP Wiki and open.mp Documentation
 
 Welcome to the SA-MP/open.mp wiki, maintained by the open.mp team and wider SA-MP community!
