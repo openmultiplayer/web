@@ -36,9 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-این تابع [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) را با INVALID_TEXT_DRAW (65535) فراخوانی می‌کند.
-
-استفاده از این تابع درون OnPlayerClickTextDraw بدون گرفتن این حالت باعث می‌شود که کلاینت‌ها وارد حلقه بی‌نهایت شوند.
+این تابع [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) را با INVALID_TEXT_DRAW (65535) فراخوانی می‌کند. استفاده از این تابع درون OnPlayerClickTextDraw بدون گرفتن این حالت باعث می‌شود که کلاینت‌ها وارد حلقه بی‌نهایت شوند.
 
 :::
 

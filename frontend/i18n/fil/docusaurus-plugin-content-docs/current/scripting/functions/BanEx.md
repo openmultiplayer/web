@@ -30,6 +30,9 @@ public OnPlayerCommandText( playerid, cmdtext[] )
         return 1;
     }
 }
+```
+
+```c
 /*Upang magpakita ng mensahe (hal. dahilan) para sa player bago isara ang koneksyon
 kailangan mong gumamit ng timer para gumawa ng pagkaantala. Ang pagkaantala na ito ay kailangan lang ng ilang millisecond ang haba,
 ngunit ang halimbawang ito ay gumagamit ng isang buong segundo para lamang maging ligtas.*/

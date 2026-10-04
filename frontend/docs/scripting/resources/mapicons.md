@@ -10,6 +10,12 @@ This page has a list of all map icons which can be used by [SetPlayerMapIcon](..
 
 :::
 
+:::warning
+
+Map icon ID 1, 2, 4, and 56 will cause your game to crash if you have map legends enabled while viewing the map.
+
+:::
+
 | ID  | Icon                                                          | Name                              | Notes                                                                                                                                           |
 | --- | ------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | 0   | ![](https://assets.open.mp/assets/images/mapIcons/icon0.gif)  | Colored Square/Triangle (Dynamic) | Can be used in any colour. Used for Single Player objectives. Displays as triangle when the marker isn't at the same ground level with a player |

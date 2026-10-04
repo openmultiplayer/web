@@ -17,6 +17,8 @@ This callback is called when a vehicle is modded.
 
 ## Returns
 
+Return 0 to desync the mod from propagating.
+
 It is always called first in gamemode so returning 0 there also blocks other filterscripts from processing it.
 
 ## Examples

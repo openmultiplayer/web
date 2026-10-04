@@ -126,13 +126,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST**
+**DIALOG_STYLE_TABLIST_HEADERS**
 
 ```c
 #define DIALOG_WEAPONS 3
 
 // In some command
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST, "Weapons",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Weapons",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

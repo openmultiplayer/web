@@ -22,9 +22,11 @@ Este callback se llama cuando el cliente de un jugador actualiza/sincroniza la p
 
 ## Devoluciones
 
-1 - Prevendrá a otros filterscripts de recibir este callback.
+Retornar 0 en esta callback causará que el vehículo deje de sincronizar su posición a otros jugadores.
 
-0 - Indica que este callback será pasado al siguiente filterscript.
+0 - Prevendrá a otros filterscripts de recibir este callback.
+
+1 - Indica que este callback será pasado al siguiente filterscript.
 
 Siempre se llama primero en filterscripts.
 

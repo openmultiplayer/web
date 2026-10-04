@@ -48,7 +48,7 @@ Player textdraw-ovi се аутоматски униште када се игр�
 
 :::warning
 
-Key mapping кодови ( као што су ~k~~VEHICLE_ENTER_EXIT~ ) не раде преко 255ог карактера.
+Key mapping кодови ( као што су `~k~~VEHICLE_ENTER_EXIT~` ) не раде преко 255ог карактера.
 
 :::
 

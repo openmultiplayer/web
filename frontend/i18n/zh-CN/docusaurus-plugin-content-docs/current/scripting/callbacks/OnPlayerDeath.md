@@ -54,9 +54,9 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 特殊原因ID说明：
 
 - 火焰伤害（如燃烧瓶/武器18）会返回37（火焰喷射器ID）
-- 爆炸伤害（如RPG/手雷）会返回51  
-  [SendDeathMessage](../functions/SendDeathMessage)函数可直接使用INVALID_PLAYER_ID作为参数  
-  只有实际死亡的玩家会触发此回调（可用于反伪造死亡检测）
+- 爆炸伤害（如RPG/手雷）会返回51
+- [SendDeathMessage](../functions/SendDeathMessage)函数可直接使用INVALID_PLAYER_ID作为参数
+- 只有实际死亡的玩家会触发此回调（可用于反伪造死亡检测）
 
 :::
 

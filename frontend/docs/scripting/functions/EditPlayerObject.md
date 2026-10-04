@@ -57,3 +57,4 @@ You can move the camera while editing by pressing and holding the spacebar (or W
 - [EditAttachedObject](EditAttachedObject): Edit an attached object.
 - [SelectObject](SelectObject): Select an object.
 - [CancelEdit](CancelEdit): Cancel the edition of an object.
+- [EditObject](EditObject): Edit an object.

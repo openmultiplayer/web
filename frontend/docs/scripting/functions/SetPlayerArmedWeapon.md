@@ -28,7 +28,9 @@ public OnPlayerUpdate(playerid)
     SetPlayerArmedWeapon(playerid, WEAPON_FIST); // disables weapons
     return 1;
 }
+```
 
+```c
 // SMG driveby by [03]Garsino
 public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {

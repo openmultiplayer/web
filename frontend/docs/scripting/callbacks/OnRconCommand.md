@@ -15,6 +15,10 @@ This callback is called when a command is sent through the server console, RCON 
 
 ## Returns
 
+0 - The command was not processed, it will be passed to another script.
+
+1 - The command was processed, it will not be passed to other scripts.
+
 It is always called first in filterscripts so returning 1 on it blocks the main script from processing it.
 
 ## Examples
@@ -25,7 +29,9 @@ public OnRconCommand(cmd[])
     printf("[RCON]: You typed '/rcon %s'!", cmd);
     return 0;
 }
+```
 
+```c
 public OnRconCommand(cmd[])
 {
     if (!strcmp(cmd, "hello", true))

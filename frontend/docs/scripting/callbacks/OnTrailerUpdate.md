@@ -36,7 +36,8 @@ public OnTrailerUpdate(playerid, vehicleid)
 
 :::warning
 
-This callback is called very frequently per second per trailer. You should refrain from implementing intensive calculations or intensive file writing/reading operations in this callback.
+- This callback is called very frequently per second per trailer. You should refrain from implementing intensive calculations or intensive file writing/reading operations in this callback.
+- This callback is not called for trains.
 
 :::
 

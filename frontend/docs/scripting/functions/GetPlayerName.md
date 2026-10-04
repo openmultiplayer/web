@@ -43,11 +43,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-A player's name can be up to 24 characters long by using [SetPlayerName](SetPlayerName).
-
-This is defined as `MAX_PLAYER_NAME`.
-
-However, the client can only join with a nickname between 3 and 20 characters, otherwise the connection will be rejected and the player has to quit to choose a valid name.
+A player's name can be up to 24 characters long by using [SetPlayerName](SetPlayerName). This is defined as `MAX_PLAYER_NAME`. However, the client can only join with a nickname between 3 and 20 characters, otherwise the connection will be rejected and the player has to quit to choose a valid name.
 
 :::
 

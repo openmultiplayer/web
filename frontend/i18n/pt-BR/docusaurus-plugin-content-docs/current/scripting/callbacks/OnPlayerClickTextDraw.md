@@ -16,6 +16,8 @@ Esta callback é chamada quando um jogador clica em uma textdraw ou cancela a se
 
 ## Retorno
 
+Retornando 1/true nesta callback irá impedi-la de ser chamada em outros scripts. Isso deve ser usado para sinalizar que a TextDraw em que foi clicada foi 'encontrada' e nenhum processamento adicional é necessário. Você deve retornar 0/false se a TextDraw em que clicou não foi encontrada, assim como em [OnPlayerCommandText](OnPlayerCommandText).
+
 1 - Irá previnir que outro filterscript receba esta callback.
 
 0 - Indica que esta callback será passada para o próximo filterscript.

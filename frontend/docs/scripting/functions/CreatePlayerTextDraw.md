@@ -43,7 +43,16 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-Player-textdraws are automatically destroyed when a player disconnects.
+- The `x, y` coordinate is the top left coordinate for the text draw area based on a 640x480 "canvas" (irrespective of screen resolution).
+- If you plan on using [PlayerTextDrawAlignment](PlayerTextDrawAlignment) with alignment 3 (`TEXT_DRAW_ALIGN_RIGHT`), the `x, y` coordinate is the top right coordinate for the text draw.
+- This function merely CREATES the textdraw, you must use [PlayerTextDrawShow](PlayerTextDrawShow) to show it to a player.
+- Player-textdraws are automatically destroyed when a player disconnects.
+
+:::
+
+:::tip
+
+It is recommended to use WHOLE numbers instead of decimal positions when creating player textdraws to ensure resolution friendly design.
 
 :::
 

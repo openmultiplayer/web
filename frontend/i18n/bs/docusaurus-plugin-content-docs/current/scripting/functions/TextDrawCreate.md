@@ -45,7 +45,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- X, Y kordinata je gornja lijeva kordinata za područje textdrawa na osnovu 640x448 "platna" (bez obzira na razlučivost zaslona).
+- X, Y kordinata je gornja lijeva kordinata za područje textdrawa na osnovu 640x480 "platna" (bez obzira na razlučivost zaslona).
 - Ako planirate koristiti TextDrawAlignment s poravnanjem 3 (desno), kordinata x, Y je gornja desna kordinata za crtanje teksta.
 - Ova funkcija samo KREIRA izvlačenje teksta, za prikaz morate koristiti TextDrawShowForPlayer ili TextDrawShowForAll.
 
@@ -59,7 +59,7 @@ Preporučuje se upotreba CIJELIH brojeva umjesto decimalnih mjesta prilikom krei
 
 :::warning
 
-Kodovi preslikavanja tipki na tipkovnici (kao npr ~k~~VEHICLE_ENTER_EXIT~ ne rade preko 255-og karaktera.
+Kodovi preslikavanja tipki na tipkovnici (kao npr `~k~~VEHICLE_ENTER_EXIT~` ne rade preko 255-og karaktera.
 
 :::
 

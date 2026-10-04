@@ -39,9 +39,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-Hiện tại chỉ có một 'source' (0 - `CLICK_SOURCE_SCOREBOARD`).
-
-Sự tồn tại của tham số này gợi ý rằng có thể có nhiều nguồn khác được hỗ trợ trong tương lai.
+Hiện tại chỉ có một 'source' (0 - `CLICK_SOURCE_SCOREBOARD`). Sự tồn tại của tham số này gợi ý rằng có thể có nhiều nguồn khác được hỗ trợ trong tương lai.
 
 :::
 

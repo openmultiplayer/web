@@ -37,3 +37,9 @@ public OnActorStreamIn(actorid, forplayerid)
 <NoteNPCCallbacks />
 
 ## Fonctions connexes
+
+- [OnPlayerStreamIn](OnPlayerStreamIn): Quand un joueur est chargé (devient visible) pour un autre joueur.
+- [OnPlayerStreamOut](OnPlayerStreamOut): Quand un joueur est dé-chargé (devient invisible) pour un autre joueur.
+- [OnActorStreamOut](OnActorStreamOut): Quand un actor est déchargé (n'est plus visible) pour un joueur.
+- [OnVehicleStreamIn](OnVehicleStreamIn): Quand un véhicule est chargé (devient visible) pour un joueur.
+- [OnVehicleStreamOut](OnVehicleStreamOut): Quand un véhicule est dé-chargé (devient invisible) pour un joueur.

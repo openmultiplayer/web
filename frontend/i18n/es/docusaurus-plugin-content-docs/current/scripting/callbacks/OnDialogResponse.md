@@ -26,6 +26,8 @@ Siempre se llama primero en filterscripts.
 
 ## Ejemplos
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Definimos el ID del diálogo para poder controlar las respuestas
 #define DIALOG_RULES 1
@@ -50,6 +52,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // TENÉS que devolver 0 acá! Como en OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 #define DIALOG_LOGIN 2
 
 // En algún comando
@@ -82,6 +89,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // TENÉS que devolver 0 acá! Como en OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // En algún comando
@@ -106,10 +118,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // TENÉS que devolver 0 acá! Como en OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // En algún comando
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Armas",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Armas",
 "Arma\tMunición\tPrecio\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

@@ -23,6 +23,8 @@ Uvijek je pozvana prva u filterskripti tako da return-ovanje 1 tu blokira ostale
 
 ## Primjeri
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Definiramo ID dijaloga kako bismo mogli upravljati odgovorima
 #define DIALOG_RULES 1
@@ -47,6 +49,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // MORAŠ dati return 0 ovdje! Kao i u OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 // definiramo drugi dijalog, dajemo mu za jednu veću vrijednost od prošlog
 #define DIALOG_LOGIN 2
 
@@ -80,6 +87,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // MORAŠ dati return 0 ovdje! Kao i u OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 // definiramo treci dijalog, ponovno je vrijednost veca od vrijednosti proslog dijaloga
 #define DIALOG_WEAPONS 3
 
@@ -105,11 +117,16 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // MORAŠ dati return 0 ovdje! Kao i u OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 // ovo je drugi nacin za prikaz i upravljanje za treci dijalog
 #define DIALOG_WEAPONS 3
 
 // U nekoj komandi ga prikazujemo
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Oruzja",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Oruzja",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

@@ -29,10 +29,6 @@ tags: ["车辆"]
 ## 示例代码
 
 ```c
-// 全局变量声明
-new
-    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
-
 // 修改单个参数时需先获取当前状态
 new
     bool:engine, bool:lights, bool:alarm, bool:doors, bool:bonnet, bool:boot, bool:objective;
@@ -40,6 +36,12 @@ new
 // 创建车辆时的设置
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
 SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // 仅修改引擎状态
+```
+
+```c
+// 全局变量声明
+new
+    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
 
 // 带警报自动关闭的增强函数
 SetVehicleParamsEx_Fixed(vehicleid, &bool:engine, &bool:lights, &bool:alarm, &bool:doors, &bool:bonnet, &bool:boot, &bool:objective)

@@ -9,13 +9,13 @@ In GTA: SA (and SA-MP as well), certain scripts are preprogrammed to run wheneve
 
 :::
 
-| Shop name | GXT name      | What is it?                      | Coordinates                 |
-| --------- | ------------- | -------------------------------- | --------------------------- |
-| FDPIZA    | Pizza Stack   | The stock Pizza Stack interior   | 374.0, -119.641, 1000.539   |
-| FDCHICK   | Cluckin' Bell | The stock Cluckin' Bell interior | 368.789, -6.857, 1000.839   |
-| FDBURG    | Burger Shot   | The stock Burger Shot interior   | 375.566, -68.222, 1000.549  |
-| AMMUN1    | Ammunation    | The first Ammu-Nation interior   | 296.506, -38.168, 1000.547  |
-| AMMUN2    | Ammunation    | The second Ammu-Nation interior  | 295.741, -80.479, 1000.534  |
-| AMMUN3    | Ammunation    | The third Ammu-Nation interior   | 290.242, -109.508, 1000.545 |
-| AMMUN4    | Ammunation    | The fourth Ammu-Nation interior  | 308.148, -141.104, 998.618  |
-| AMMUN5    | Ammunation    | The fifth Ammu-Nation interior   | 312.791, -165.949, 998.618  |
+| Shop name | GXT name      | What is it?                      | Coordinates                 | Interior ID |
+| --------- | ------------- | -------------------------------- | --------------------------- | ----------- |
+| FDPIZA    | Pizza Stack   | The stock Pizza Stack interior   | 374.0, -119.641, 1000.539   | 5           |
+| FDCHICK   | Cluckin' Bell | The stock Cluckin' Bell interior | 368.789, -6.857, 1000.839   | 9           |
+| FDBURG    | Burger Shot   | The stock Burger Shot interior   | 375.566, -68.222, 1000.549  | 10          |
+| AMMUN1    | Ammunation    | The first Ammu-Nation interior   | 296.506, -38.168, 1000.547  | 1           |
+| AMMUN2    | Ammunation    | The second Ammu-Nation interior  | 295.741, -80.479, 1000.534  | 4           |
+| AMMUN3    | Ammunation    | The third Ammu-Nation interior   | 290.242, -109.508, 1000.545 | 6           |
+| AMMUN4    | Ammunation    | The fourth Ammu-Nation interior  | 308.148, -141.104, 998.618  | 7           |
+| AMMUN5    | Ammunation    | The fifth Ammu-Nation interior   | 312.791, -165.949, 998.618  | 6           |

@@ -64,8 +64,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-- ناحیه قابل کلیک توسط [TextDrawTextSize](../functions/TextDrawTextSize) تعریف می‌شود.
-- پارامترهای `x` و `y` ارسال شده به آن تابع نباید صفر یا منفی باشند.
+- ناحیه قابل کلیک توسط [TextDrawTextSize](../functions/TextDrawTextSize) تعریف می‌شود. پارامترهای `x` و `y` ارسال شده به آن تابع نباید صفر یا منفی باشند.
 - از [CancelSelectTextDraw](../functions/CancelSelectTextDraw) بدون شرط در داخل این کالبک استفاده نکنید. این منجر به **حلقه بی‌نهایت** می‌شود.
 
 :::

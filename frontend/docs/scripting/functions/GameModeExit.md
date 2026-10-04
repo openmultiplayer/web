@@ -9,6 +9,10 @@ tags: []
 
 Ends the current gamemode.
 
+## Returns
+
+This function does not return any specific values.
+
 ## Examples
 
 ```c
@@ -21,3 +25,7 @@ if (OneTeamHasWon)
 ## Related Functions
 
 - [SetModeRestartTime](SetModeRestartTime): Sets the delay between loading main scripts, in seconds.
+
+## Related Callbacks
+
+- [OnGameModeExit](../callbacks/OnGameModeExit): Called when a gamemode ends.

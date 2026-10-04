@@ -40,6 +40,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
+:::note
+
+There are 7 clickable buttons in edition mode. The three single icons that have X/Y/Z on them can be dragged to edit position/rotation/scale. The four buttons in a row are to select the edition mode and save edition: Move, Rotate, Scale and Save.
+
+:::
+
 :::tip
 
 You can move the camera while editing by pressing and holding the spacebar (or W in vehicle) and moving your mouse.

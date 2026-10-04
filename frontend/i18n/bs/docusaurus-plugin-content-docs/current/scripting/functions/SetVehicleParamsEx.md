@@ -29,10 +29,6 @@ Postavlja parametre vozila za sve igrače.
 ## Primjeri
 
 ```c
-// Na vrhu naše skripte, deklarišemo globalnu varijablu
-new
-    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
-
 // Ako postavljate jedan parametar, trebali biste dobiti trenutne parametre kako se ne bi SVE promijenili
 new
     engine, lights, alarm, doors, bonnet, boot, objective;
@@ -40,6 +36,12 @@ new
 // Negdje gdje kreirate vozilo..
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
 SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // SAMO parametar motora je promijenjen u VEHICLE_PARAMS_ON (1)
+```
+
+```c
+// Na vrhu naše skripte, deklarišemo globalnu varijablu
+new
+    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
 
 // Funkcija
 SetVehicleParamsEx_Fixed(vehicleid, &engine, &lights, &alarm, &doors, &bonnet, &boot, &objective)

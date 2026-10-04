@@ -35,10 +35,6 @@ public OnGameModeInit()
 }
 ```
 
-```c
-AddSimpleModel(-1, 19379, -2000, "wallzzz.dff", "wallzzz.txd");
-```
-
 ## نکات
 
 :::note

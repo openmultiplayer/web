@@ -83,3 +83,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetPlayerObjectPos](GetPlayerObjectPos): Locate a player object.
 - [GetPlayerObjectRot](GetPlayerObjectRot): Check the rotation of a player object.
 - [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): Attach a player object to a player.
+
+## Related Callbacks
+
+- [OnObjectMoved](../callbacks/OnObjectMoved): Called when an object stops moving.

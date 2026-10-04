@@ -27,6 +27,9 @@ setproperty(.name = "MyInteger", .value = 42);
 
 new value = getproperty(.name = "MyInteger");
 printf("Vrijednost koja je sacuvana: %d", value);
+```
+
+```c
 setproperty(0, "", 123984334, ":)");
 
 new value[4];
@@ -35,6 +38,9 @@ strunpack(value, value, sizeof(value)); // Prvo moramo da otpakujemo string
 print(value);
 
 // Ispisati će :)
+```
+
+```c
 setproperty(.value = 123984334, .string = ":)");
 
 // Ostalo je isto kao i gore.

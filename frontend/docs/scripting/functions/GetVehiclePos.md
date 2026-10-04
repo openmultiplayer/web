@@ -57,3 +57,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [SetVehiclePos](SetVehiclePos): Set the position of a vehicle.
 - [GetVehicleZAngle](GetVehicleZAngle): Check the current angle of a vehicle.
 - [GetVehicleRotationQuat](GetVehicleRotationQuat): Get the rotation quaternion of a vehicle.
+- [GetVehicleRotation](GetVehicleRotation): Get the rotation of a vehicle on the XYZ axis.

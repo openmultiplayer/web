@@ -35,6 +35,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
+```
+
+```c
 stock SetPlayerSkinFix(playerid, skinid)
 {
     new

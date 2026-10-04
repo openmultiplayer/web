@@ -9,20 +9,20 @@ tags: ["player", "object", "playerobject"]
 
 Replace the texture of a player object with text.
 
-| Name                                     | Description                                                                    |
-| ---------------------------------------- | ------------------------------------------------------------------------------ |
-| playerid                                 | The ID of the player whose player object to set the text of.                   |
-| objectid                                 | The ID of the object on which to place the text.                               |
-| text[]                                   | The text to set.                                                               |
-| materialIndex                            | The material index to replace with text (DEFAULT: 0).                          |
-| OBJECT_MATERIAL_SIZE:materialSize        | The [size](../resources/materialtextsizes) of the material (DEFAULT: 256x128). |
-| const fontFace[]                         | The font to use (DEFAULT: Arial).                                              |
-| fontSize                                 | The size of the text (DEFAULT: 24) (MAX 255).                                  |
-| bool:bold                                | Bold text. Set to 1 for bold, 0 for not (DEFAULT: 1).                          |
-| fontColour                               | The color of the text (DEFAULT: White).                                        |
-| backgroundColour                         | The background color (DEFAULT: None (transparent)).                            |
-| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | The [alignment](../resources/materialtextsizes) of the text (DEFAULT: Left).   |
-| OPEN_MP_TAGS:...                         | Indefinite number of arguments of any tag.                                     |
+| Name                                     | Description                                                                      |
+| ---------------------------------------- | -------------------------------------------------------------------------------- |
+| playerid                                 | The ID of the player whose player object to set the text of.                     |
+| objectid                                 | The ID of the object on which to place the text.                                 |
+| text[]                                   | The text to set.                                                                 |
+| materialIndex                            | The material index to replace with text (DEFAULT: 0).                            |
+| OBJECT_MATERIAL_SIZE:materialSize        | The [size](../resources/materialtextsizes) of the material (DEFAULT: 256x128).   |
+| const fontFace[]                         | The font to use (DEFAULT: Arial).                                                |
+| fontSize                                 | The size of the text (DEFAULT: 24) (MAX 255).                                    |
+| bool:bold                                | Bold text. Set to 1 for bold, 0 for not (DEFAULT: 1).                            |
+| fontColour                               | The color of the text (DEFAULT: White).                                          |
+| backgroundColour                         | The background color (DEFAULT: None (transparent)).                              |
+| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | The [alignment](../resources/materialtextalignment) of the text (DEFAULT: Left). |
+| OPEN_MP_TAGS:...                         | Indefinite number of arguments of any tag.                                       |
 
 ## Returns
 

@@ -23,6 +23,8 @@ Vedno je bila povabljena prva v "filterscript" torej vrnite 1 tam blokira ostale
 
 ## Primeri
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Določimo ID pogovornega okna, da lahko upravljamo odzive
 #define DIALOG_RULES 1
@@ -47,6 +49,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Tukaj morate vrniti 0! Kot v "OnPlayerCommandText".
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 // definiramo drug dialog, mu damo eno večjo vrednost kot prejšnjemu
 #define DIALOG_LOGIN 2
 
@@ -80,6 +87,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Tukaj morate vrniti 0! Kot v "OnPlayerCommandText".
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 // definiramo tretje pogovorno okno, spet je vrednost večja od vrednosti prejšnjega pogovornega okna
 #define DIALOG_WEAPONS 3
 
@@ -105,11 +117,16 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Tukaj morate vrniti 0! Kot v "OnPlayerCommandText".
 }
+```
+
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 // to je še en način prikaza in upravljanja za tretje pogovorno okno
 #define DIALOG_WEAPONS 3
 
 // Prikažemo ga v ukazu
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Orožje",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Orožje",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

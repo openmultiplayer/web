@@ -145,7 +145,8 @@ else
 
 :::warning
 
-Se você usar `io_read` e o arquivo não existir, ele retornará uma referência NULL. Usar referências inválidas em funções de arquivo irá travar seu servidor!
+- Esta função não pode acessar arquivos fora da pasta 'scriptfiles'!
+- Se você usar `io_read` e o arquivo não existir, ele retornará uma referência NULL. Usar referências inválidas em funções de arquivo irá travar seu servidor!
 
 :::
 

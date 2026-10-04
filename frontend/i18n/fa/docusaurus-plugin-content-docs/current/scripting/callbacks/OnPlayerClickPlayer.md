@@ -39,9 +39,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-در حال حاضر فقط یک 'منبع' (0 - `CLICK_SOURCE_SCOREBOARD`) وجود دارد.
-
-وجود این پارامتر پیشنهاد می‌کند که ممکن است منابع بیشتری در آینده پشتیبانی شوند.
+در حال حاضر فقط یک 'منبع' (0 - `CLICK_SOURCE_SCOREBOARD`) وجود دارد. وجود این پارامتر پیشنهاد می‌کند که ممکن است منابع بیشتری در آینده پشتیبانی شوند.
 
 :::
 

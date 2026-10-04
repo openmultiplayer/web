@@ -29,10 +29,6 @@ Sets a vehicle's parameters for all players.
 ## Examples
 
 ```c
-// On top of our script, declaring a global variable
-new
-    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
-
 // If setting a single parameter, you should obtain the current parameters so they aren't ALL changed
 new
     engine, lights, alarm, doors, bonnet, boot, objective;
@@ -40,6 +36,12 @@ new
 // Somewhere where you create the vehicle..
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
 SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // ONLY the engine param was changed to VEHICLE_PARAMS_ON (1)
+```
+
+```c
+// On top of our script, declaring a global variable
+new
+    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
 
 // The function
 SetVehicleParamsEx_Fixed(vehicleid, &bool:engine, &bool:lights, &bool:alarm, &bool:doors, &bool:bonnet, &bool:boot, &bool:objective)

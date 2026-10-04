@@ -9,6 +9,10 @@ tags: []
 
 Gets the tick rate (like FPS) of the server.
 
+## Returns
+
+The server tick rate (per second). Returns 0 when the server is just started.
+
 ## Examples
 
 ```c

@@ -9,6 +9,10 @@ tags: ["player"]
 
 Uses standard player walking animation (animation of the CJ skin) instead of custom animations for every skin (e.g. skating for skater skins).
 
+## Returns
+
+This function does not return any specific values.
+
 ## Examples
 
 ```c

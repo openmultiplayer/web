@@ -29,10 +29,6 @@ tags: ["vehicle"]
 ## مثال‌ها
 
 ```c
-// balaaye script, yek global variable declare mikonim
-new
-    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
-
 // age yek parameter ro set mikoni, bayad parameteraaye felio begiri ta hame change nashe
 new
     bool:engine, bool:lights, bool:alarm, bool:doors, bool:bonnet, bool:boot, bool:objective;
@@ -40,6 +36,12 @@ new
 // jayi ke vehicle ro create mikoni..
 GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
 SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // faghat engine param be VEHICLE_PARAMS_ON (1) taghir yaft
+```
+
+```c
+// balaaye script, yek global variable declare mikonim
+new
+    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
 
 // tabe
 SetVehicleParamsEx_Fixed(vehicleid, &bool:engine, &bool:lights, &bool:alarm, &bool:doors, &bool:bonnet, &bool:boot, &bool:objective)

@@ -49,7 +49,10 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-Motivul va returna 37 (aruncător de flăcări) din orice sursă de foc (de ex. molotov, 18) Motivul va returna 51 de la orice armă care creează o explozie (de ex. RPG, grenadă) Nu trebuie să verificați dacă Killerid este valid înainte de ao folosi în [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID este un parametru valid ID killerid în acea funcție. playerid este singurul care poate apela înapoi. (Bine de știut pentru anti moartea falsă)
+- Motivul va returna 37 (aruncător de flăcări) din orice sursă de foc (de ex. molotov, 18)
+- Motivul va returna 51 de la orice armă care creează o explozie (de ex. RPG, grenadă)
+- Nu trebuie să verificați dacă Killerid este valid înainte de ao folosi în [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID este un parametru valid ID killerid în acea funcție.
+- playerid este singurul care poate apela înapoi. (Bine de știut pentru anti moartea falsă)
 
 :::
 

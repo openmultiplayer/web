@@ -34,8 +34,7 @@ public OnVehicleDeath(vehicleid, killerid)
 
 :::note
 
-- Deze callback wordt ook aangeroepen wanneer een voertuig water ingaat, maar het voertuig kan worden gered van vernietiging door teleportatie of eruit rijden (als het slechts gedeeltelijk ondergedompeld is).
-- De callback wordt niet een tweede keer aangeroepen, en het voertuig kan verdwijnen wanneer de bestuurder uitstapt, of na korte tijd.
+Deze callback wordt ook aangeroepen wanneer een voertuig water ingaat, maar het voertuig kan worden gered van vernietiging door teleportatie of eruit rijden (als het slechts gedeeltelijk ondergedompeld is). De callback wordt niet een tweede keer aangeroepen, en het voertuig kan verdwijnen wanneer de bestuurder uitstapt, of na korte tijd.
 
 :::
 

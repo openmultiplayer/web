@@ -43,8 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-- Always check if an NPC is valid before performing operations on it.
-- This prevents runtime errors and crashes.
+- Always check if an NPC is valid before performing operations on it. This prevents runtime errors and crashes.
 - Use this in loops when iterating through potential NPC IDs.
 
 :::

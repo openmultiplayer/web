@@ -9,6 +9,10 @@ tags: []
 
 Esta callback é chamada quando uma gamemode finaliza, também através do 'gmx', do servidor ser desligado ou GameModeExit.
 
+## Retornos
+
+Esta callback não lida com retornos.
+
 ## Exemplos
 
 ```c

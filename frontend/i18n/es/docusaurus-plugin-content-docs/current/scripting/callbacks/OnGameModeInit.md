@@ -8,6 +8,10 @@ tags: []
 
 Este callback es desencadenado cuando el gamemode inicia.
 
+## Devoluciones
+
+Este callback no maneja returns.
+
 ## Ejemplos
 
 ```c

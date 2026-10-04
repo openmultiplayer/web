@@ -16,6 +16,8 @@ This callback is called when a player sends a message in chat.
 
 ## Returns
 
+Returning 0 in this callback will stop the text from being sent to all players.
+
 It is always called first in filterscripts so returning 0 on it blocks other scripts from processing it.
 
 ## Examples

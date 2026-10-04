@@ -195,7 +195,6 @@ Showing:
 - **\t** creates a new column.
 - **\n** creates a new list item.
 - [Color embedding](colorslist#color-embedding) resets after **\n** and **\t**.
-- The first **info** row contains the header.
 
 :::
 

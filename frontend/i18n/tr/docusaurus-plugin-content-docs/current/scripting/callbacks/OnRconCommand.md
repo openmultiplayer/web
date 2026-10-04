@@ -25,7 +25,9 @@ public OnRconCommand(cmd[])
     printf("[RCON]: '/rcon %s' komutu girildi!", cmd);
     return 0;
 }
+```
 
+```c
 public OnRconCommand(cmd[])
 {
     if (!strcmp(cmd, "merhaba", true))

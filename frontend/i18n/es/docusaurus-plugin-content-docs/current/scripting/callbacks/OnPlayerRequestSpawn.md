@@ -14,9 +14,9 @@ Se llama cuando un jugador intenta spawnear vía selección de clase ya sea pres
 
 ## Devoluciones
 
-1 - Prevendrá a otros filterscripts de recibir este callback.
+0 - Prevendrá a otros filterscripts de recibir este callback.
 
-0 - Indica que este callback será pasado al siguiente filterscript.
+1 - Indica que este callback será pasado al siguiente filterscript.
 
 Siempre se llama primero en filterscripts.
 

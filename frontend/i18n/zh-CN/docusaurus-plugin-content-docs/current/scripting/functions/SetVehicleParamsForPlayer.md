@@ -36,7 +36,9 @@ new
 
 GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
 SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, false);
+```
 
+```c
 // 锁定自己车辆（排除自己）
 public OnPlayerCommandText(playerid, cmdtext[])
 {
@@ -56,7 +58,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
     }
     return 0;
 }
+```
 
+```c
 // 0.3a+版本流加载处理示例
 new bool:iVehicleObjective[MAX_VEHICLES][2];
 
@@ -80,7 +84,9 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
     // 车辆流加载时重新应用参数
     SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
 }
+```
 
+```c
 // 标记特定车辆示例
 new myMarkedCar;
 
@@ -111,8 +117,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 :::warning
 
-- 必须通过[OnVehicleStreamIn](../callbacks/OnVehicleStreamIn)回调重新应用参数设置
-- 参数设置在车辆流加载时需要重新应用
+必须通过[OnVehicleStreamIn](../callbacks/OnVehicleStreamIn)回调重新应用参数设置
 
 :::
 

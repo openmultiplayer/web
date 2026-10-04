@@ -42,6 +42,8 @@ public OnPlayerCommandText( playerid, cmdtext[] )
 
 <br />
 
+The following code snippet shows a way of displaying a message for the player before they are banned:
+
 ```c
 // In order to display a message (eg. reason) for the player before the connection is closed
 // you have to use a timer to create a delay. This delay needs only to be a few milliseconds long,

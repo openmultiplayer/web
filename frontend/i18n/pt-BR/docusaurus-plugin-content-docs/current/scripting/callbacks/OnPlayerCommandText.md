@@ -16,6 +16,8 @@ Esta callback é chamada quando o jogador entra com um comando na janela de chat
 
 ## Retorno
 
+Retorna 1 se o comando foi processado, caso contrário 0.
+
 1 - Irá previnir que outro filterscript receba esta callback.
 
 0 - Indica que esta callback será passada para o próximo filterscript.

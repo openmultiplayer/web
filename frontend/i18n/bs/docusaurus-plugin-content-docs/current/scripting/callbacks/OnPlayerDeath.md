@@ -49,7 +49,10 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-Razlog će return-ovati 37 (flame thrower/bacač plamena) ako je igrač umro od bilo kojeg izvora vatre (npr. molotov, 18). Razlog će return-ovati 51 ako je igrač umro od bilo koje vrste eksplozije (npr. RPG, granata). Ne moraš provjeravati da li je killerid validan prije nego što ga koristite u `SendDeathMessage`. INVALID_PLAYER_ID je validan killerid ID parametar u toj funkciji. playerid je jedini koji može pozvati ovaj callback. (dobro za znati za sprječavanje lažne smrti 'anti fake death').
+- Razlog će return-ovati 37 (flame thrower/bacač plamena) ako je igrač umro od bilo kojeg izvora vatre (npr. molotov, 18).
+- Razlog će return-ovati 51 ako je igrač umro od bilo koje vrste eksplozije (npr. RPG, granata).
+- Ne moraš provjeravati da li je killerid validan prije nego što ga koristite u `SendDeathMessage`. INVALID_PLAYER_ID je validan killerid ID parametar u toj funkciji.
+- playerid je jedini koji može pozvati ovaj callback. (dobro za znati za sprječavanje lažne smrti 'anti fake death').
 
 :::
 

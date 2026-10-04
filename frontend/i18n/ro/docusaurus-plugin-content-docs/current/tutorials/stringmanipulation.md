@@ -744,8 +744,8 @@ Puteți utiliza o altă combinație de caractere pentru a vă juca cu combinați
 | ------------------------------ | ---------------- |
 | \~r\~\~h\~                     | Roșu mai deschis |
 | \~r\~\~h\~\~h\~                | Roșu roz         |
-| \~r\~\~h\~\~h~\~h\~            | Roșu-închis      |
-| \~r\~\~h\~~h~~h~~h\~           | Roz roșu deschis |
+| \~r\~\~h\~\~h\~\~h\~           | Roșu-închis      |
+| \~r\~\~h\~\~h\~\~h\~\~h\~      | Roz roșu deschis |
 | \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Roz              |
 | \~g\~\~h\~                     | Verde deschis    |
 
@@ -1025,7 +1025,9 @@ print("Single quote \'");
 
 Oricum ar fi, ieșirea va fi aceeași:
 
-"" Citat unic: ' ""
+```
+Citat unic: '
+```
 
 Singura utilizare la care mă pot gândi în legătură cu acest lucru este setarea unei variabile a caracterului `** '**`, așa că, evident, dacă faceți următoarele, veți provoca o eroare de compilare;
 

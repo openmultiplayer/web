@@ -53,3 +53,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetVehiclePos](GetVehiclePos): Get the position of a vehicle.
 - [GetVehicleMatrix](GetVehicleMatrix): Gets the actual rotation matrix of the vehicle.
 - [GetPlayerFacingAngle](GetPlayerFacingAngle): Check where a player is facing.
+- [GetVehicleRotation](GetVehicleRotation): Get the rotation of a vehicle on the XYZ axis.

@@ -9,6 +9,10 @@ tags: ["interior"]
 
 Disable all the interior entrances and exits in the game (the yellow arrows at doors).
 
+## Returns
+
+This function always returns **true**.
+
 ## Examples
 
 ```c

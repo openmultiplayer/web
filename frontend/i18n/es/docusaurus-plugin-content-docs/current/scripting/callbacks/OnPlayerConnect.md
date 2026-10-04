@@ -14,9 +14,9 @@ Este callback se llama cuando un jugador se conecta al servidor.
 
 ## Devoluciones
 
-1 - Prevendrá a otros filterscripts de recibir este callback.
+0 - Prevendrá a otros filterscripts de recibir este callback.
 
-0 - Indica que este callback será pasado al siguiente filterscript.
+1 - Indica que este callback será pasado al siguiente filterscript.
 
 Siempre se llama primero en filterscripts.
 

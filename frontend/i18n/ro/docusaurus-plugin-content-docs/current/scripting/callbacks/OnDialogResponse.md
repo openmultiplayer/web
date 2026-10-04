@@ -23,6 +23,8 @@ Mereu este apelat primul în filterscript-uri deci returnează 1 și blochează 
 
 ## Exemple
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Definim ID-ul dialogului pentru a putea prelucra răspunsurile
 #define DIALOG_RULES 1
@@ -47,6 +49,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // TREBUIE să returnezi 0 aici! La fel ca OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 #define DIALOG_LOGIN 2
 
 // În ceva comandă
@@ -79,6 +86,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // TREBUIE să returnezi 0 aici! La fel ca OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // În ceva comandă
@@ -103,10 +115,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // TREBUIE să returnezi 0 aici! La fel ca OnPlayerCommandText.
 }
+```
+
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // În ceva comandă
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Weapons",
 "Weapon\tAmmo\tPrice\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\

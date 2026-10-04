@@ -23,6 +23,8 @@ Filterscriptler içerisinde 1 olarak döndürmek diğer filterscripts'lerin bunu
 
 ## Örnek
 
+**DIALOG_STYLE_MSGBOX**
+
 ```c
 // Dialog ID'sini tanımlayalım.
 #define DIALOG_RULES 1
@@ -47,6 +49,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Burada return 0 döndürmelisiniz. Tıpkı OnPlayerCommandText'de gösterilen örnek gibi.
 }
+```
+
+**DIALOG_STYLE_INPUT**
+
+```c
 // Tekrar dialog ID'sini tanımlıyoruz.
 #define DIALOG_LOGIN 2
 
@@ -80,6 +87,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Burada return 0 döndürmelisiniz. Tıpkı OnPlayerCommandText'de gösterilen örnek gibi.
 }
+```
+
+**DIALOG_STYLE_LIST**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // Herhangi bir komutun veya eventin içerisine yerleştirelim.
@@ -104,10 +116,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
     return 0; // Burada return 0 döndürmelisiniz. Tıpkı OnPlayerCommandText'de gösterilen örnek gibi.
 }
+```
+
+**DIALOG_STYLE_TABLIST_HEADERS**
+
+```c
 #define DIALOG_WEAPONS 3
 
 // Herhangi bir komutun veya eventin içerisine yerleştirelim.
-ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Silahlar",
+ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Silahlar",
 "Silahlar\tMermi\tFiyat\n\
 M4\t120\t500\n\
 MP5\t90\t350\n\
