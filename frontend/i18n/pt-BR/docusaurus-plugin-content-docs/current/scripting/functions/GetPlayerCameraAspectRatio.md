@@ -10,8 +10,8 @@ tags: ["player", "camera"]
 
 Recupera a proporção da câmera de um jogador.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------------------- |
+| Nome     | Descrição                                         |
+| -------- | ------------------------------------------------- |
 | playerid | O ID do jogador para obter a proporção da câmera. |
 
 ## Retornos

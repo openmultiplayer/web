@@ -12,10 +12,10 @@ tags: ["player", "gangzone"]
 
 Verifique se a gangzone está piscando para o jogador.
 
-| Nome | Descrição |
-| -------- | ----------------------------------- |
+| Nome     | Descrição                         |
+| -------- | --------------------------------- |
 | playerid | O ID do jogador a ser verificado. |
-| zoneid | O ID da gangzone.             |
+| zoneid   | O ID da gangzone.                 |
 
 ## Retornos
 

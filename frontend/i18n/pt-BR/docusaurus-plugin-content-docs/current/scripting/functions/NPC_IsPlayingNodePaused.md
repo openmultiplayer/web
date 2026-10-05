@@ -12,8 +12,8 @@ tags: ["npc", "node"]
 
 Verifica se a reprodução do nó de um NPC está pausada no momento.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

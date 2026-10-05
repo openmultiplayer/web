@@ -13,7 +13,7 @@ tags: ["3dtextlabel"]
 
 | نام              | توضیحات                                                                 |
 | ---------------- | ----------------------------------------------------------------------- |
-| Text3D:textid    | ID ‌ 3D text label که میخوایم داده‌های attached اش رو بگیریم.           |
+| Text3D:textid    | ID 3D text label که میخوایم داده‌های attached اش رو بگیریم.             |
 | &parentPlayerid  | یه متغیر که parentPlayerid رو توش ذخیره میکنیم، با reference پاس میشه.  |
 | &parentVehicleid | یه متغیر که parentVehicleid رو توش ذخیره میکنیم، با reference پاس میشه. |
 

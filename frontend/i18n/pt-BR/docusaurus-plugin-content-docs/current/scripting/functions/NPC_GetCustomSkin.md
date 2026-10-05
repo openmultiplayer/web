@@ -12,8 +12,8 @@ tags: ["npc", "skin", "model"]
 
 Obtém a aparência personalizada ID de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

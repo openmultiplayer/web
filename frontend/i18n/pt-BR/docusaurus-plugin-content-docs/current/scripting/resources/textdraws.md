@@ -153,11 +153,11 @@ Note que esta função apenas cria o textdraw, outras funções são usadas para
 
 TextDrawCreate(Float:x, Float:y, texto[])
 
-| Nome | Descrição |
-| ------ | -------------------------------------------- |
-| x | Coordenada X na qual criar o textdraw |
-| y | Coordenada Y na qual criar o textdraw |
-| text[] | O texto no textdraw.                    |
+| Nome   | Descrição                             |
+| ------ | ------------------------------------- |
+| x      | Coordenada X na qual criar o textdraw |
+| y      | Coordenada Y na qual criar o textdraw |
+| text[] | O texto no textdraw.                  |
 
 **Valores de retorno:**
 
@@ -182,12 +182,12 @@ Existem 4 fontes disponíveis para texto textdraw:
 
 ![Imagem:320px-Textdraw_map.png](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)
 
-| ID | Informações | Dicas |
-| --- | -------------------------------------------------------------- | ------------------------------------------------------ |
-| 0 | A fonte _San Andreas_.                                        | Use para cabeçalho ou títulos, não para uma página inteira.            |
-| 1 | Fonte clara que inclui caracteres maiúsculos e minúsculos. | Pode ser usado para muito texto.                         |
-| 2 | Fonte clara, mas inclui apenas letras maiúsculas.                 | Pode ser usado em vários casos.                      |
-| 3 | _Fonte GTA_ | Mantém a qualidade quando ampliado. Útil para textos grandes. |
+| ID  | Informações                                                | Dicas                                                         |
+| --- | ---------------------------------------------------------- | ------------------------------------------------------------- |
+| 0   | A fonte _San Andreas_.                                     | Use para cabeçalho ou títulos, não para uma página inteira.   |
+| 1   | Fonte clara que inclui caracteres maiúsculos e minúsculos. | Pode ser usado para muito texto.                              |
+| 2   | Fonte clara, mas inclui apenas letras maiúsculas.          | Pode ser usado em vários casos.                               |
+| 3   | _Fonte GTA_                                                | Mantém a qualidade quando ampliado. Útil para textos grandes. |
 
 A partir de SA-MP 0.3d, uma nova fonte (id 4) pode ser definida. Isso é usado em combinação com as funções [TextDrawCreate](../functions/TextDrawCreate) e [TextDrawTextSize](../functions/TextDrawTextSize) para mostrar um 'sprite' de textura na tela do jogador. Abordaremos isso mais tarde.
 
@@ -203,10 +203,10 @@ Para mostrar um textdraw para um único jogador, a função [TextDrawShowForPlay
 
 TextDrawShowForPlayer(playerid, Texto:texto)
 
-| Nome | Descrição |
-| -------- | --------------------------------------------- |
+| Nome     | Descrição                                    |
+| -------- | -------------------------------------------- |
 | playerid | O ID do jogador para mostrar o textdraw para |
-| text | O ID do textdraw para mostrar |
+| text     | O ID do textdraw para mostrar                |
 
 **Valores de retorno:**
 

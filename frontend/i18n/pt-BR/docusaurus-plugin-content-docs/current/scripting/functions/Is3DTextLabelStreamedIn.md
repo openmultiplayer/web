@@ -12,9 +12,9 @@ tags: ["3dtextlabel"]
 
 Verifica se um rótulo de texto 3D é transmitido para um jogador.
 
-| Nome | Descrição |
-| ------------- | ---------------------------- |
-| playerid | O ID do jogador.        |
+| Nome          | Descrição                   |
+| ------------- | --------------------------- |
+| playerid      | O ID do jogador.            |
 | Text3D:textid | O ID do rótulo de texto 3D. |
 
 ## Retornos

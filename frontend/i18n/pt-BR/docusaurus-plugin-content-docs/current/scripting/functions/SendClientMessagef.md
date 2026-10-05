@@ -20,12 +20,12 @@ A função [SendClientMessage](SendClientMessage) agora está integrada ao forma
 
 Esta função envia uma mensagem formatada para um jogador específico com uma cor escolhida no chat. Toda a linha na caixa de bate-papo estará na cor definida, a menos que a incorporação de cores seja usada.
 
-| Nome | Descrição |
-| ----------------- | ----------------------------------------------------- |
-| playerid | O ID do jogador para o qual exibir a mensagem.       |
-| color | A cor da mensagem (formato hexadecimal 0xRRGGBBAA).     |
-| const message[] | O texto que será exibido (máximo 144 caracteres). |
-| \{Float, \_\}:... | Número indefinido de argumentos de qualquer tag |
+| Nome              | Descrição                                           |
+| ----------------- | --------------------------------------------------- |
+| playerid          | O ID do jogador para o qual exibir a mensagem.      |
+| color             | A cor da mensagem (formato hexadecimal 0xRRGGBBAA). |
+| const message[]   | O texto que será exibido (máximo 144 caracteres).   |
+| \{Float, \_\}:... | Número indefinido de argumentos de qualquer tag     |
 
 ## Retornos
 

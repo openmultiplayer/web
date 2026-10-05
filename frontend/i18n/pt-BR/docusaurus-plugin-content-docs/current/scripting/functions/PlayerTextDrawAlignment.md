@@ -10,10 +10,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Defina o alinhamento do texto de um player-textdraw.
 
-| Nome | Descrição |
-| ------------------------- | --------------------------------------------------------------------------- |
-| playerid | O ID do jogador cujo player-textdraw definir o alinhamento.         |
-| PlayerText:textid | O ID do player-textdraw para definir o alinhamento.                      |
+| Nome                      | Descrição                                                               |
+| ------------------------- | ----------------------------------------------------------------------- |
+| playerid                  | O ID do jogador cujo player-textdraw definir o alinhamento.             |
+| PlayerText:textid         | O ID do player-textdraw para definir o alinhamento.                     |
 | TEXT_DRAW_ALIGN:alignment | `TEXT_DRAW_ALIGN_LEFT`/`TEXT_DRAW_ALIGN_CENTER`/`TEXT_DRAW_ALIGN_RIGHT` |
 
 ## Retornos

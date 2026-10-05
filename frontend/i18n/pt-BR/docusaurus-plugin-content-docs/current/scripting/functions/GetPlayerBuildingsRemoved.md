@@ -12,8 +12,8 @@ tags: ["player"]
 
 Obtém o número de edifícios removidos de um jogador.
 
-| Nome | Descrição |
-| -------- | --------------------- |
+| Nome     | Descrição        |
+| -------- | ---------------- |
 | playerid | O ID do jogador. |
 
 ## Retornos

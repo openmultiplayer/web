@@ -12,10 +12,10 @@ tags: ["actor"]
 
 Defina o ângulo de visão de um ator.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------------------------------------ |
-| actorid | O ID do ator para definir o ângulo de visão. Retornado por CreateActor. |
-| Float:angle | O ângulo de visão a ser definido para o ator.                                   |
+| Nome        | Descrição                                                               |
+| ----------- | ----------------------------------------------------------------------- |
+| actorid     | O ID do ator para definir o ângulo de visão. Retornado por CreateActor. |
+| Float:angle | O ângulo de visão a ser definido para o ator.                           |
 
 ## Retornos
 

@@ -10,10 +10,10 @@ tags: ["textdraw"]
 
 Define a cor do texto de um textdraw
 
-| Nome | Descrição |
-| ----------- | ----------------------------------------------- |
+| Nome        | Descrição                                |
+| ----------- | ---------------------------------------- |
 | Text:textid | O ID do textdraw para alterar a cor do.. |
-| textColour | A cor para definir o textdraw.               |
+| textColour  | A cor para definir o textdraw.           |
 
 ## Retornos
 

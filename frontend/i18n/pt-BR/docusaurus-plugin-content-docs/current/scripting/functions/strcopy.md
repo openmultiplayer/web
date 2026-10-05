@@ -12,10 +12,10 @@ tags: ["string"]
 
 Copia uma string na string de destino.
 
-| Nome | Descrição |
-| ------------------------- | --------------------------------------------------- |
-| dest[] | A string na qual copiar a string de origem.          |
-| const source[] | A sequência de origem.                                  |
+| Nome                      | Descrição                                     |
+| ------------------------- | --------------------------------------------- |
+| dest[]                    | A string na qual copiar a string de origem.   |
+| const source[]            | A sequência de origem.                        |
 | maxlength = sizeof (dest) | O comprimento máximo do destino. _(opcional)_ |
 
 ## Retornos

@@ -10,8 +10,8 @@ tags: ["player"]
 
 Verifique o estado da arma de um jogador.
 
-| Nome | Descrição |
-| -------- | --------------------------------------------------- |
+| Nome     | Descrição                                    |
+| -------- | -------------------------------------------- |
 | playerid | O ID do jogador para obter o estado da arma. |
 
 ## Retornos

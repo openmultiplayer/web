@@ -12,8 +12,8 @@ tags: ["player"]
 
 Obtém a identificação de um ator visado por determinado jogador.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------ |
+| Nome     | Descrição                                |
+| -------- | ---------------------------------------- |
 | playerid | O ID do jogador cujo alvo será atingido. |
 
 ## Retornos

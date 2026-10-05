@@ -12,12 +12,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Obtém as cores do veículo de visualização de um player-textdraw de visualização 3D.
 
-| Nome | Descrição |
-| ----------------- | ---------------------------------------------------------------- |
-| playerid | O ID do jogador.                                            |
-| PlayerText:textid | O ID do player-textdraw para obter as cores do veículo.      |
-| &colour1 | Uma variável na qual armazenar color1, passada por referência. |
-| &colour2 | Uma variável na qual armazenar color2, passada por referência. |
+| Nome              | Descrição                                                      |
+| ----------------- | -------------------------------------------------------------- |
+| playerid          | O ID do jogador.                                               |
+| PlayerText:textid | O ID do player-textdraw para obter as cores do veículo.        |
+| &colour1          | Uma variável na qual armazenar color1, passada por referência. |
+| &colour2          | Uma variável na qual armazenar color2, passada por referência. |
 
 ## Exemplos
 

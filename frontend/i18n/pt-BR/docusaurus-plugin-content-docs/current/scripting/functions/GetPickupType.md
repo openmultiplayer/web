@@ -12,8 +12,8 @@ tags: ["pickup"]
 
 Obtém o tipo de pickup.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------- |
+| Nome     | Descrição                           |
+| -------- | ----------------------------------- |
 | pickupid | O ID do captador para obter o tipo. |
 
 ## Retornos

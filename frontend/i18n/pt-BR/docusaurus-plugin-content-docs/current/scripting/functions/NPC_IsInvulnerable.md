@@ -12,8 +12,8 @@ tags: ["npc", "invulnerable", "damage", "protection"]
 
 Verifica se um NPC é invulnerável a danos.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

@@ -10,10 +10,10 @@ tags: ["math", "floating-point"]
 
 Divida um carro alegórico por outro. Redundante, pois o operador de divisão (/) faz a mesma coisa.
 
-| Nome | Descrição |
-| -------------- | ----------------------------------------- |
-| Float:dividend | Primeiro flutuar.                              |
-| Float:divisor | Segundo float (divide o primeiro float.) |
+| Nome           | Descrição                                |
+| -------------- | ---------------------------------------- |
+| Float:dividend | Primeiro flutuar.                        |
+| Float:divisor  | Segundo float (divide o primeiro float.) |
 
 ## Retornos
 

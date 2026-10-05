@@ -12,8 +12,8 @@ tags: ["npc"]
 
 Destrói um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------------------- |
+| Nome  | Descrição                  |
+| ----- | -------------------------- |
 | npcid | O ID do NPC para destruir. |
 
 ## Retornos

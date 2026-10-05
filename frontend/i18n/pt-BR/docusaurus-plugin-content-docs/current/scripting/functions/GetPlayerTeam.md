@@ -10,8 +10,8 @@ tags: ["player"]
 
 Obtenha o ID do time em que o jogador está.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------- |
+| Nome     | Descrição                             |
+| -------- | ------------------------------------- |
 | playerid | O ID do jogador do qual obter o time. |
 
 ## Retornos

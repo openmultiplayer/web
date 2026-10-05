@@ -10,11 +10,11 @@ tags: []
 
 Adiciona uma morte ao 'killfeed' no lado direito da tela para todos os jogadores.
 
-| Nome | Descrição |
-| ------ | --------------------------------------------------------------------------------------------------------------------------- |
-| killer | O ID do assassino (pode ser INVALID_PLAYER_ID).                                                                            |
-| killee | O ID do jogador que morreu.                                                                                             |
-| weapon | O motivo (nem sempre uma arma) da morte da vítima. Ícones especiais também podem ser usados ​​(ICON_CONNECT e ICON_DISCONNECT). |
+| Nome   | Descrição                                                                                                                     |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| killer | O ID do assassino (pode ser INVALID_PLAYER_ID).                                                                               |
+| killee | O ID do jogador que morreu.                                                                                                   |
+| weapon | O motivo (nem sempre uma arma) da morte da vítima. Ícones especiais também podem ser usados (ICON_CONNECT e ICON_DISCONNECT). |
 
 ## Retornos
 

@@ -12,8 +12,8 @@ tags: ["npc", "spawn"]
 
 Verifica se um NPC foi gerado no mundo do jogo.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

@@ -18,12 +18,12 @@ Esta função está obsoleta em open.mp. Use o plugin [samp-bcrypt](https://gith
 
 Faz hash de uma senha usando o algoritmo de hash SHA-256. Inclui um sal. A saída tem sempre 256 bits de comprimento, ou o equivalente a 64 células de penhor.
 
-| Nome | Descrição |
-| ---------------------- | -------------------------------------------------- |
-| const password[] | A senha para hash.                              |
-| const salt[] | O sal para usar no hash.                       |
-| output[] | O hash retornado em resumo hexadecimal maiúsculo. |
-| size = sizeof (output) | O comprimento máximo do hash retornado.                  |
+| Nome                   | Descrição                                         |
+| ---------------------- | ------------------------------------------------- |
+| const password[]       | A senha para hash.                                |
+| const salt[]           | O sal para usar no hash.                          |
+| output[]               | O hash retornado em resumo hexadecimal maiúsculo. |
+| size = sizeof (output) | O comprimento máximo do hash retornado.           |
 
 ## Retornos
 

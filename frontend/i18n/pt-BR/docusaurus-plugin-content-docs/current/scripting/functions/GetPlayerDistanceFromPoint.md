@@ -10,12 +10,12 @@ tags: ["player"]
 
 Calcule a distância entre um jogador e uma coordenada do mapa.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------------- |
+| Nome     | Descrição                                  |
+| -------- | ------------------------------------------ |
 | playerid | O ID do jogador para calcular a distância. |
-| Float:x | A coordenada do mapa X.                                |
-| Float:y | A coordenada do mapa Y.                                |
-| Float:z | A coordenada do mapa Z.                                |
+| Float:x  | A coordenada do mapa X.                    |
+| Float:y  | A coordenada do mapa Y.                    |
+| Float:z  | A coordenada do mapa Z.                    |
 
 ## Retornos
 

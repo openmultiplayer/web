@@ -12,8 +12,8 @@ tags: ["npc", "vehicle"]
 
 Obtém o assento ID de um NPC em um veículo.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

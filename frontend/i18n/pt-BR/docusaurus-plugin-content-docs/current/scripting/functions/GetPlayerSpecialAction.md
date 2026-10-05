@@ -10,8 +10,8 @@ tags: ["player"]
 
 Recupera a ação especial atual de um jogador.
 
-| Nome | Descrição |
-| -------- | -------------------------------------------------- |
+| Nome     | Descrição                                   |
+| -------- | ------------------------------------------- |
 | playerid | O ID do jogador para obter a ação especial. |
 
 ## Retornos

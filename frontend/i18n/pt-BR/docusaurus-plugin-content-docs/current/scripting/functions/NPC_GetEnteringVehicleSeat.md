@@ -12,8 +12,8 @@ tags: ["npc", "vehicle"]
 
 Obtém o assento que um NPC está entrando em um veículo.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

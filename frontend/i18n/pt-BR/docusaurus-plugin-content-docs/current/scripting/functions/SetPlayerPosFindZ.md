@@ -10,12 +10,12 @@ tags: ["player"]
 
 Isso define a posição dos jogadores e depois ajusta a coordenada z dos jogadores para o terreno sólido mais próximo sob a posição.
 
-| Nome | Descrição |
-| -------- | -------------------------------------------- |
-| playerid | O ID do jogador para definir a posição. |
-| Float:x | A coordenada X para posicionar o jogador.  |
-| Float:y | A coordenada X para posicionar o jogador.  |
-| Float:z | A coordenada Z para posicionar o jogador.  |
+| Nome     | Descrição                                 |
+| -------- | ----------------------------------------- |
+| playerid | O ID do jogador para definir a posição.   |
+| Float:x  | A coordenada X para posicionar o jogador. |
+| Float:y  | A coordenada X para posicionar o jogador. |
+| Float:z  | A coordenada Z para posicionar o jogador. |
 
 ## Retornos
 

@@ -10,8 +10,8 @@ tags: ["player"]
 
 Retorna o ID do objeto em que o jogador está navegando.
 
-| Nome | Descrição |
-| -------- | --------------------------------------- |
+| Nome     | Descrição                           |
+| -------- | ----------------------------------- |
 | playerid | O ID do jogador navegando no objeto |
 
 ## Retornos

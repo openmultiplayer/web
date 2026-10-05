@@ -10,8 +10,8 @@ tags: ["network monitoring"]
 
 Obtém a quantidade de dados (em bytes) que o servidor recebeu do jogador.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------ |
+| Nome     | Descrição                               |
+| -------- | --------------------------------------- |
 | playerid | O ID do jogador do qual obter os dados. |
 
 ## Retornos

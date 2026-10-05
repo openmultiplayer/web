@@ -10,8 +10,8 @@ tags: ["vehicle"]
 
 Repara totalmente um veículo, incluindo danos visuais (colisões, amassados, arranhões, pneus estourados, etc.).
 
-| Nome | Descrição |
-| --------- | -------------------------------- |
+| Nome      | Descrição                       |
+| --------- | ------------------------------- |
 | vehicleid | O ID do veículo a ser reparado. |
 
 ## Retornos

@@ -447,17 +447,17 @@ new
 ```
 Esse código criará uma string que consiste apenas em aspas duplas, normalmente uma aspas duplas sinaliza o final de uma string escrita, mas a barra invertida torna as aspas duplas imediatamente após uma parte da string, e as aspas duplas depois disso terminam a string. Outros caracteres especiais são:
 
-| Code | Nome | Finalidade |
-| ------ | --------------- | ------------------------------------------------------------------------------------------------------- |
-| \0 | Caractere NULL | Termina uma string.                                                                                          |
-| EOS | Caractere NULL | (igual ao acima) |
-| \n | Alimentação de linha | use \n para uma nova linha no Linux (também funciona no Windows) |
-| \r | Retorno de transporte | Use \r\n para uma nova linha no Windows |
-| \\\\ | Barra invertida | Usado para colocar uma barra invertida real em uma string |
-| \' | Citação única | Usado para usar aspas simples reais como um caractere entre aspas simples (use: '\'') |
-| \" | Aspas duplas | Usado para colocar aspas duplas reais em uma string |
-| \xNNN; | Número hexadecimal | Usado para definir o caractere representado pelo número hexadecimal especificado em NNN |
-| \NNN; | Número | Usado para definir o caractere representado pelo número especificado no lugar de NNN (consulte \0) |
+| Code   | Nome                  | Finalidade                                                                                         |
+| ------ | --------------------- | -------------------------------------------------------------------------------------------------- |
+| \0     | Caractere NULL        | Termina uma string.                                                                                |
+| EOS    | Caractere NULL        | (igual ao acima)                                                                                   |
+| \n     | Alimentação de linha  | use \n para uma nova linha no Linux (também funciona no Windows)                                   |
+| \r     | Retorno de transporte | Use \r\n para uma nova linha no Windows                                                            |
+| \\\\   | Barra invertida       | Usado para colocar uma barra invertida real em uma string                                          |
+| \'     | Citação única         | Usado para usar aspas simples reais como um caractere entre aspas simples (use: '\'')              |
+| \"     | Aspas duplas          | Usado para colocar aspas duplas reais em uma string                                                |
+| \xNNN; | Número hexadecimal    | Usado para definir o caractere representado pelo número hexadecimal especificado em NNN            |
+| \NNN;  | Número                | Usado para definir o caractere representado pelo número especificado no lugar de NNN (consulte \0) |
 
 Usado para definir o caractere representado pelo número especificado no lugar de NNN (consulte \\0)
 

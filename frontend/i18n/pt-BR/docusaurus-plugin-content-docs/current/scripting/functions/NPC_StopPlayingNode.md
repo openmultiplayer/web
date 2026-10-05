@@ -12,8 +12,8 @@ tags: ["npc", "node"]
 
 Impede que um NPC reproduza seu nó atual.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

@@ -12,10 +12,10 @@ tags: ["npc", "node", "navigation"]
 
 Esse callback é chamado quando um NPC atinge um ponto específico durante a navegação baseada em nó.
 
-| Nome | Descrição |
-| ------- | --------------------------------------------- |
-| npcid | O ID do NPC que atingiu o ponto do nó |
-| nodeid | O ID do nó que está sendo navegado |
+| Nome    | Descrição                                  |
+| ------- | ------------------------------------------ |
+| npcid   | O ID do NPC que atingiu o ponto do nó      |
+| nodeid  | O ID do nó que está sendo navegado         |
 | pointid | O ID do ponto específico que foi alcançado |
 
 ## Exemplos

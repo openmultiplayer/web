@@ -10,13 +10,13 @@ tags: ["textdraw"]
 
 Define a rotação e o zoom de um textdraw de visualização de modelo 3D.
 
-| Nome | Descrição |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Text:textid | O ID do textdraw a ser alterado.                                                                                        |
-| Float:rotationX | O valor de rotação X.                                                                                                    |
-| Float:rotationY | O valor de rotação Y.                                                                                                    |
-| Float:rotationZ | O valor de rotação Z.                                                                                                    |
-| Float:zoom | O valor de zoom, valor padrão 1.0, valores menores aproximam a câmera e valores maiores afastam a câmera. |
+| Nome            | Descrição                                                                                                 |
+| --------------- | --------------------------------------------------------------------------------------------------------- |
+| Text:textid     | O ID do textdraw a ser alterado.                                                                          |
+| Float:rotationX | O valor de rotação X.                                                                                     |
+| Float:rotationY | O valor de rotação Y.                                                                                     |
+| Float:rotationZ | O valor de rotação Z.                                                                                     |
+| Float:zoom      | O valor de zoom, valor padrão 1.0, valores menores aproximam a câmera e valores maiores afastam a câmera. |
 
 ## Retornos
 

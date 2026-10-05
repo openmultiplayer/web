@@ -12,8 +12,8 @@ tags: ["npc", "weapon", "aiming"]
 
 Verifica se um NPC está apontando no momento.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

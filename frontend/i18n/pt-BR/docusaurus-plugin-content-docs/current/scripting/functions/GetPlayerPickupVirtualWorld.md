@@ -12,9 +12,9 @@ tags: ["player", "pickup", "playerpickup"]
 
 Obtém o mundo virtual ID de um player-pickup.
 
-| Nome | Descrição |
-| -------- | ----------------------------------------------------------- |
-| playerid | O ID do jogador.                                       |
+| Nome     | Descrição                                               |
+| -------- | ------------------------------------------------------- |
+| playerid | O ID do jogador.                                        |
 | pickupid | O ID do player-pickup para obter o mundo virtual de ID. |
 
 ## Retornos

@@ -12,8 +12,8 @@ tags: ["player"]
 
 Verifique se o jogador é controlável.
 
-| Nome | Descrição |
-| -------- | --------------------- |
+| Nome     | Descrição        |
+| -------- | ---------------- |
 | playerid | O ID do jogador. |
 
 ## Retornos

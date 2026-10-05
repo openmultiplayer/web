@@ -10,8 +10,8 @@ tags: ["player"]
 
 Obtém o nível desejado de um jogador.
 
-| Nome | Descrição |
-| -------- | -------------------------------------------------------------- |
+| Nome     | Descrição                                              |
+| -------- | ------------------------------------------------------ |
 | playerid | O ID do jogador cujo nível desejado você deseja obter. |
 
 ## Retornos

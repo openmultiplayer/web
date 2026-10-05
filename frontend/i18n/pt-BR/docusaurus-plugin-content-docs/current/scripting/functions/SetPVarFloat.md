@@ -10,11 +10,11 @@ tags: ["player variable", "pvar"]
 
 Defina o valor de uma variável flutuante do jogador.
 
-| Nome | Descrição |
-| ------------ | ------------------------------------------------------- |
-| playerid | O ID do jogador cuja variável de player será definida. |
-| const pvar[] | O nome da variável do jogador.                        |
-| Float:value | O float que você deseja salvar na variável player.      |
+| Nome         | Descrição                                              |
+| ------------ | ------------------------------------------------------ |
+| playerid     | O ID do jogador cuja variável de player será definida. |
+| const pvar[] | O nome da variável do jogador.                         |
+| Float:value  | O float que você deseja salvar na variável player.     |
 
 ## Retornos
 

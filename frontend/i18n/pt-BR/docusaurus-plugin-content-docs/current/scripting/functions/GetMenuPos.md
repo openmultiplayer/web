@@ -12,11 +12,11 @@ tags: ["menu"]
 
 Obtenha a posição x/y da tela do menu.
 
-| Nome | Descrição |
-| ----------- | -------------------------------------------------------------------------- |
-| Menu:menuid | O ID do menu.                                                        |
-| &Float:x | Uma variável float na qual armazenar a posição X, passada por referência. |
-| &Float:y | Uma variável float na qual armazenar a posição Y, passada por referência. |
+| Nome        | Descrição                                                                 |
+| ----------- | ------------------------------------------------------------------------- |
+| Menu:menuid | O ID do menu.                                                             |
+| &Float:x    | Uma variável float na qual armazenar a posição X, passada por referência. |
+| &Float:y    | Uma variável float na qual armazenar a posição Y, passada por referência. |
 
 ## Retornos
 

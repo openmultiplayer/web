@@ -12,8 +12,8 @@ tags: ["npc", "node", "navigation"]
 
 Abre um nó NPC para uso, disponibilizando-o para navegação por NPCs.
 
-| Nome | Descrição |
-| ------ | ------------------ |
+| Nome   | Descrição  |
+| ------ | ---------- |
 | nodeid | O ID do nó |
 
 ## Retornos

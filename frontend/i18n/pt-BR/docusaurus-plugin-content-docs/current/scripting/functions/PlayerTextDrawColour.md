@@ -12,11 +12,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Define a cor do texto de um player-textdraw
 
-| Nome | Descrição |
-| ----------------- | -------------------------------------------------------- |
-| playerid | O ID do jogador que está textdraw para definir a cor de |
-| PlayerText:textid | O TextDraw a ser alterado.                                  |
-| textColour | A cor em formato hexadecimal.                        |
+| Nome              | Descrição                                               |
+| ----------------- | ------------------------------------------------------- |
+| playerid          | O ID do jogador que está textdraw para definir a cor de |
+| PlayerText:textid | O TextDraw a ser alterado.                              |
+| textColour        | A cor em formato hexadecimal.                           |
 
 ## Retornos
 

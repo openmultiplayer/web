@@ -12,8 +12,8 @@ tags: ["object"]
 
 Cancelar o modo de edição de objetos para um jogador
 
-| Nome | Descrição |
-| -------- | ------------------------------------------ |
+| Nome     | Descrição                              |
+| -------- | -------------------------------------- |
 | playerid | O ID do jogador para cancelar a edição |
 
 ## Retornos

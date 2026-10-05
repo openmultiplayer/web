@@ -10,11 +10,11 @@ tags: ["player"]
 
 Altere a cor do crachá de um jogador e do sinal de radar de outro jogador.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------------------------- |
+| Nome     | Descrição                                                  |
+| -------- | ---------------------------------------------------------- |
 | playerid | O jogador que verá a cor alterada do ícone/nome do jogador |
-| targetid | O jogador cuja cor será alterada |
-| colour | Nova cor. Suporta valores alfa.                                |
+| targetid | O jogador cuja cor será alterada                           |
+| colour   | Nova cor. Suporta valores alfa.                            |
 
 ## Retornos
 

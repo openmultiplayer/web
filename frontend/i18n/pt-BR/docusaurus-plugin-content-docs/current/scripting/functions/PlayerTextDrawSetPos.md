@@ -12,12 +12,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Define a posição (na tela x e y) de um player-textdraw.
 
-| Nome | Descrição |
-| ----------------- | ----------------------------------------------------- |
-| playerid | O ID do jogador.                                 |
+| Nome              | Descrição                                       |
+| ----------------- | ----------------------------------------------- |
+| playerid          | O ID do jogador.                                |
 | Playertext:textid | O ID do player-textdraw para definir a posição. |
-| Float:x | A coordenada X.                                     |
-| Float:y | A coordenada Y.                                     |
+| Float:x           | A coordenada X.                                 |
+| Float:y           | A coordenada Y.                                 |
 
 ## Exemplos
 

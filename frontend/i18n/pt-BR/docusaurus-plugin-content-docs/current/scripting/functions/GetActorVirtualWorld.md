@@ -12,8 +12,8 @@ tags: ["actor"]
 
 Obtenha o mundo virtual de um ator.
 
-| Nome | Descrição |
-| ------- | ------------------------------------------------ |
+| Nome    | Descrição                                |
+| ------- | ---------------------------------------- |
 | actorid | O ID do ator para obter o mundo virtual. |
 
 ## Retornos

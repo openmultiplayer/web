@@ -10,13 +10,13 @@ tags: ["player"]
 
 Verifica se um jogador está ao alcance de um ponto. Esta função nativa é mais rápida que a implementação PAWN usando a fórmula de distância.
 
-| Nome | Descrição |
-| ----------- | ---------------------------------------------------------------------- |
-| playerid | O ID do jogador.                                                  |
+| Nome        | Descrição                                                       |
+| ----------- | --------------------------------------------------------------- |
+| playerid    | O ID do jogador.                                                |
 | Float:range | A maior distância que o jogador pode estar do ponto ao alcance. |
-| Float:x | A coordenada X do ponto para o qual verificar o intervalo.                   |
-| Float:y | A coordenada Y do ponto para o qual verificar o intervalo.                   |
-| Float:z | A coordenada Z do ponto para o qual verificar o intervalo.                   |
+| Float:x     | A coordenada X do ponto para o qual verificar o intervalo.      |
+| Float:y     | A coordenada Y do ponto para o qual verificar o intervalo.      |
+| Float:z     | A coordenada Z do ponto para o qual verificar o intervalo.      |
 
 ## Retornos
 

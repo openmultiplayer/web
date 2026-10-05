@@ -12,8 +12,8 @@ tags: ["npc", "vehicle", "train"]
 
 Obtém a velocidade do trem para um NPC dirigindo um trem.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

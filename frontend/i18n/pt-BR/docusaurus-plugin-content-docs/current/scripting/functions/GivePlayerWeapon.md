@@ -10,11 +10,11 @@ tags: ["player"]
 
 Dê ao jogador uma arma com uma quantidade específica de munição.
 
-| Nome | Descrição |
-| --------------- | --------------------------------------------------------------------- |
-| playerid | O ID do jogador para quem dar uma arma.                             |
+| Nome            | Descrição                                                   |
+| --------------- | ----------------------------------------------------------- |
+| playerid        | O ID do jogador para quem dar uma arma.                     |
 | WEAPON:weaponid | O [ID da arma](../resources/weaponids) para dar ao jogador. |
-| ammo | A quantidade de munição a ser dada ao jogador.                             |
+| ammo            | A quantidade de munição a ser dada ao jogador.              |
 
 ## Retornos
 

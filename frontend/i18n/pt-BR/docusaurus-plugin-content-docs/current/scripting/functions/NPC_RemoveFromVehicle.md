@@ -12,8 +12,8 @@ tags: ["npc", "vehicle"]
 
 Remove um NPC do veículo atual.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

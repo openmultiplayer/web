@@ -10,10 +10,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Ocultar um player-textdraw do jogador para o qual foi criado
 
-| Nome | Descrição |
-| ----------------- | --------------------------------------------- |
-| playerid | O ID do jogador para ocultar o textdraw |
-| PlayerText:textid | O ID do textdraw a ser ocultado |
+| Nome              | Descrição                               |
+| ----------------- | --------------------------------------- |
+| playerid          | O ID do jogador para ocultar o textdraw |
+| PlayerText:textid | O ID do textdraw a ser ocultado         |
 
 ## Retornos
 

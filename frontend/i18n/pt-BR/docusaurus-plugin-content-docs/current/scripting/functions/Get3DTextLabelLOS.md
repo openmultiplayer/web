@@ -12,8 +12,8 @@ tags: ["3dtextlabel"]
 
 Obtém a linha de visão do rótulo de texto 3D.
 
-| Nome | Descrição |
-| ------------- | -------------------------------------------------------- |
+| Nome          | Descrição                                               |
+| ------------- | ------------------------------------------------------- |
 | Text3D:textid | O ID do rótulo de texto 3D para obter a linha de visão. |
 
 ## Retornos

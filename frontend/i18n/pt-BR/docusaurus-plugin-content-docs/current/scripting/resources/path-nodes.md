@@ -220,10 +220,10 @@ Eles são usados para caracterizar o comportamento do segmento de caminho. Para 
 
 Esses são links para nós adjacentes, **4 bytes** por entrada.
 
-| Size | Tipo | Descrição |
-| ---- | ------ | ----------- |
-| 2b | UINT16 | Área ID |
-| 2b | UINT16 | Nó ID |
+| Size | Tipo   | Descrição |
+| ---- | ------ | --------- |
+| 2b   | UINT16 | Área ID   |
+| 2b   | UINT16 | Nó ID     |
 
 ### Seção 4 - Preenchimento
 

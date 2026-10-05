@@ -10,9 +10,9 @@ tags: ["vehicle"]
 
 Define o 'mundo virtual' de um veículo. Os jogadores só poderão ver os veículos em seu próprio mundo virtual.
 
-| Nome | Descrição |
-| ------------ | -------------------------------------------------- |
-| vehicleid | O ID do veículo para definir o mundo virtual.     |
+| Nome         | Descrição                                     |
+| ------------ | --------------------------------------------- |
+| vehicleid    | O ID do veículo para definir o mundo virtual. |
 | virtualWorld | O ID do mundo virtual para colocar o veículo. |
 
 ## Retornos

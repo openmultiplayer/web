@@ -12,8 +12,8 @@ tags: ["player", "camera", "actor"]
 
 Permite recuperar o ID do ator que o jogador está olhando (em qualquer).
 
-| Nome | Descrição |
-| -------- | ------------------------------------------------ |
+| Nome     | Descrição                                  |
+| -------- | ------------------------------------------ |
 | playerid | O ID do jogador do qual obter o ator alvo. |
 
 ## Retornos

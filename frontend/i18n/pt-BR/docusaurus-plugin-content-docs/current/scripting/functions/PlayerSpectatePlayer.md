@@ -10,10 +10,10 @@ tags: ["player"]
 
 Faz um jogador assistir (observar) outro jogador.
 
-| Nome | Descrição |
-| ------------------ | ----------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador que irá assistir.                                                  |
-| targetplayerid | O ID do jogador que deve ser assistido.                                            |
+| Nome               | Descrição                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------- |
+| playerid           | O ID do jogador que irá assistir.                                                   |
+| targetplayerid     | O ID do jogador que deve ser assistido.                                             |
 | SPECTATE_MODE:mode | O [modo](../resources/spectatemodes) para assistir (opcional; o padrão é 'normal'). |
 
 ## Retornos

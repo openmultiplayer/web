@@ -12,9 +12,9 @@ tags: ["npc", "angle", "rotation"]
 
 Define o ângulo de face de um NPC.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------ |
-| npcid | O ID do NPC.                   |
+| Nome        | Descrição                          |
+| ----------- | ---------------------------------- |
+| npcid       | O ID do NPC.                       |
 | Float:angle | O ângulo de face em graus (0-360). |
 
 ## Retornos

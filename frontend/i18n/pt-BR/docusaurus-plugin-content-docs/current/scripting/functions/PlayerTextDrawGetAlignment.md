@@ -12,9 +12,9 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Obtém o alinhamento do texto de um player-textdraw.
 
-| Nome | Descrição |
-| ----------------- | ------------------------------------------------------ |
-| playerid | O ID do jogador.                                  |
+| Nome              | Descrição                                         |
+| ----------------- | ------------------------------------------------- |
+| playerid          | O ID do jogador.                                  |
 | PlayerText:textid | O ID do player-textdraw para obter o alinhamento. |
 
 ## Retornos

@@ -12,11 +12,11 @@ tags: ["textdraw"]
 
 Define a posição (na tela x e y) de um textdraw.
 
-| Nome | Descrição |
-| ----------- | ---------------------------------------------- |
+| Nome        | Descrição                                |
+| ----------- | ---------------------------------------- |
 | Text:textid | O ID do textdraw para definir a posição. |
-| Float:x | A coordenada X.                              |
-| Float:y | A coordenada Y.                              |
+| Float:x     | A coordenada X.                          |
+| Float:y     | A coordenada Y.                          |
 
 ## Exemplos
 

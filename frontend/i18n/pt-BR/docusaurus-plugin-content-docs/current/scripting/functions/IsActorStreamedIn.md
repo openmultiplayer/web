@@ -12,9 +12,9 @@ tags: ["actor"]
 
 Verifica se um ator foi transmitido para um jogador.
 
-| Nome | Descrição |
-| -------- | --------------------- |
-| actorid | O ID do ator.  |
+| Nome     | Descrição        |
+| -------- | ---------------- |
+| actorid  | O ID do ator.    |
 | playerid | O ID do jogador. |
 
 ## Retornos

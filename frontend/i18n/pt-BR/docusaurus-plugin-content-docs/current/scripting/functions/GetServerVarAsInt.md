@@ -16,8 +16,8 @@ Esta função, a partir de 0.3.7 R2, está obsoleta. Consulte GetConsoleVarAsInt
 
 Obtenha o valor inteiro de uma variável de servidor.
 
-| Nome | Descrição |
-| --------------- | ----------------------------------------------------- |
+| Nome            | Descrição                                         |
+| --------------- | ------------------------------------------------- |
 | const varname[] | O nome da variável inteira da qual obter o valor. |
 
 ## Retornos

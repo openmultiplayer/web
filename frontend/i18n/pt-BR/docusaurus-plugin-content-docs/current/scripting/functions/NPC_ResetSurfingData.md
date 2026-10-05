@@ -12,8 +12,8 @@ tags: ["npc", "surfing"]
 
 Redefine todos os dados de navegação para um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

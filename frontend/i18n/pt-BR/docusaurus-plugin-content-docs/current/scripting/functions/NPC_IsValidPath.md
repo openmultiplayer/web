@@ -12,8 +12,8 @@ tags: ["npc", "path", "validation"]
 
 Verifica se um caminho ID é válido e existe.
 
-| Nome | Descrição |
-| ------ | ------------------ |
+| Nome   | Descrição       |
+| ------ | --------------- |
 | pathid | O ID do caminho |
 
 ## Retornos

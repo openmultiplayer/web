@@ -10,10 +10,10 @@ tags: ["player"]
 
 Define o nível de embriaguez de um jogador, o que faz com que a câmera do jogador balance e os veículos sejam difíceis de controlar.
 
-| Nome | Descrição |
-| -------- | ----------------------------------------------- |
+| Nome     | Descrição                                  |
+| -------- | ------------------------------------------ |
 | playerid | O ID do jogador para definir a embriaguez. |
-| level | O nível de embriaguez a ser definido.                |
+| level    | O nível de embriaguez a ser definido.      |
 
 ## Retornos
 

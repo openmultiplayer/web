@@ -10,10 +10,10 @@ tags: ["player"]
 
 Defina o mundo virtual de um jogador. Eles só podem ver outros jogadores ou veículos que estejam no mesmo mundo.
 
-| Nome | Descrição |
-| ------------ | ---------------------------------------------------------- |
-| playerid | O ID do jogador cujo mundo virtual você deseja definir. |
-| virtualWorld | O mundo virtual ID para colocar o jogador. |
+| Nome         | Descrição                                               |
+| ------------ | ------------------------------------------------------- |
+| playerid     | O ID do jogador cujo mundo virtual você deseja definir. |
+| virtualWorld | O mundo virtual ID para colocar o jogador.              |
 
 ## Retornos
 

@@ -12,8 +12,8 @@ tags: ["npc", "health"]
 
 Obtém o valor de integridade de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

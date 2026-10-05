@@ -12,8 +12,8 @@ tags: ["npc", "node"]
 
 Verifica se um NPC está reproduzindo um nó no momento.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

@@ -10,12 +10,12 @@ tags: ["player", "camera"]
 
 Esta função retornará a direção atual da mira do jogador no espaço 3-D, as coordenadas são relativas à posição da câmera, consulte [GetPlayerCameraPos](GetPlayerCameraPos).
 
-| Nome | Descrição |
-| -------- | ------------------------------------------------------------------ |
-| playerid | O ID do jogador do qual deseja obter o vetor frontal da câmera |
-| &Float:x | Um float para armazenar a coordenada X, passada por referência.            |
-| &Float:y | Um float para armazenar a coordenada Y, passada por referência.            |
-| &Float:z | Um float para armazenar a coordenada Z, passada por referência.            |
+| Nome     | Descrição                                                       |
+| -------- | --------------------------------------------------------------- |
+| playerid | O ID do jogador do qual deseja obter o vetor frontal da câmera  |
+| &Float:x | Um float para armazenar a coordenada X, passada por referência. |
+| &Float:y | Um float para armazenar a coordenada Y, passada por referência. |
+| &Float:z | Um float para armazenar a coordenada Z, passada por referência. |
 
 ## Retornos
 

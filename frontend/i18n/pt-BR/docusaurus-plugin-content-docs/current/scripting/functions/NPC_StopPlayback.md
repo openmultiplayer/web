@@ -12,8 +12,8 @@ tags: ["npc", "playback", "recording"]
 
 Impede que um NPC reproduza a gravação atual.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

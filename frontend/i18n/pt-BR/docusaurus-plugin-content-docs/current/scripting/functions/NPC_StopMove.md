@@ -12,8 +12,8 @@ tags: ["npc", "movement"]
 
 Impede que um NPC se mova para seu destino atual.
 
-| Nome | Descrição |
-| ----- | ------------------ |
+| Nome  | Descrição    |
+| ----- | ------------ |
 | npcid | O ID do NPC. |
 
 ## Retornos

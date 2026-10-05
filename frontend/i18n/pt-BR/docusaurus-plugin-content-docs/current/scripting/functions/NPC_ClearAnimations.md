@@ -12,8 +12,8 @@ tags: ["npc", "animation"]
 
 Limpa todas as animações de um NPC, retornando-o ao seu estado padrão.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

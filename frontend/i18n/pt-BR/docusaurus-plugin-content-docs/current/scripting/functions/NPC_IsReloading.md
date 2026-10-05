@@ -12,8 +12,8 @@ tags: ["npc", "weapon", "reloading"]
 
 Verifica se um NPC está recarregando sua arma.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

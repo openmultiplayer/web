@@ -12,8 +12,8 @@ tags: ["player"]
 
 Verifique se o alvo da câmera do jogador está habilitado.
 
-| Nome | Descrição |
-| -------- | -------------------- |
+| Nome     | Descrição       |
+| -------- | --------------- |
 | playerid | O ID do jogador |
 
 ## Retornos

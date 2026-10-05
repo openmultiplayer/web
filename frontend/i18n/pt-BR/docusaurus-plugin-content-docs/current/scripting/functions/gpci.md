@@ -18,11 +18,11 @@ O CI de um jogador é não é único, alguns jogadores podem ter CI semelhante o
 
 ## Parâmetros
 
-| Nome | Descrição |
-| --------------------- | --------------------------------------- |
-| playerid | O ID do jogador para buscar seu CI. |
-| serial[] | String para armazenar o CI buscado. |
-| len = sizeof (serial) | Tamanho atribuído da string.            |
+| Nome                  | Descrição                           |
+| --------------------- | ----------------------------------- |
+| playerid              | O ID do jogador para buscar seu CI. |
+| serial[]              | String para armazenar o CI buscado. |
+| len = sizeof (serial) | Tamanho atribuído da string.        |
 
 ## Valores de retorno
 

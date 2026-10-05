@@ -12,8 +12,8 @@ tags: ["file management"]
 
 Retorne o valor CRC de 32 bits de um arquivo.
 
-| Nome | Descrição |
-| ---------------- | --------------------- |
+| Nome             | Descrição          |
+| ---------------- | ------------------ |
 | const filename[] | O nome do arquivo. |
 
 ## Retornos

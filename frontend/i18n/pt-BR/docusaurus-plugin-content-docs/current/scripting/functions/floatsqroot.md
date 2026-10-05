@@ -10,8 +10,8 @@ tags: ["math", "floating-point"]
 
 Calcula a raiz quadrada de determinado valor.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------ |
+| Nome        | Descrição                                 |
+| ----------- | ----------------------------------------- |
 | Float:value | O valor para calcular a raiz quadrada de. |
 
 ## Retornos

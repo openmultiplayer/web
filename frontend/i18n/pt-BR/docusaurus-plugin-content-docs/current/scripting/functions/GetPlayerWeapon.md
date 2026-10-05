@@ -10,8 +10,8 @@ tags: ["player"]
 
 Retorna o ID da arma que o jogador está segurando no momento.
 
-| Nome | Descrição |
-| -------- | --------------------------------------------------------- |
+| Nome     | Descrição                                              |
+| -------- | ------------------------------------------------------ |
 | playerid | O ID do jogador para obter a arma atualmente em poder. |
 
 ## Retornos

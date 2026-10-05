@@ -12,8 +12,8 @@ tags: ["npc", "health"]
 
 Obtém o valor da armadura de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

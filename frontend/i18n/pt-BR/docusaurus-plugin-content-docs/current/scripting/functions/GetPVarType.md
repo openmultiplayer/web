@@ -10,10 +10,10 @@ tags: ["player variable", "pvar"]
 
 Obtém o tipo (inteiro, flutuante ou string) de uma variável do jogador.
 
-| Nome | Descrição |
-| ------------ | -------------------------------------------------------------- |
-| playerid | O ID do jogador cuja variável de jogador deseja obter o tipo. |
-| const pvar[] | O nome da variável do jogador da qual obter o tipo.            |
+| Nome         | Descrição                                                     |
+| ------------ | ------------------------------------------------------------- |
+| playerid     | O ID do jogador cuja variável de jogador deseja obter o tipo. |
+| const pvar[] | O nome da variável do jogador da qual obter o tipo.           |
 
 ## Retornos
 

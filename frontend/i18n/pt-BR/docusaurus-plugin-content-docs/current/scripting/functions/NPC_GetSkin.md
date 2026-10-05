@@ -12,8 +12,8 @@ tags: ["npc", "skin", "model"]
 
 Obtém o skin/modelo ID de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

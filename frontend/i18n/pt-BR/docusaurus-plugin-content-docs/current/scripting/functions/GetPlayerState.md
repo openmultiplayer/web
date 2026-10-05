@@ -10,8 +10,8 @@ tags: ["player"]
 
 Obtenha o estado atual de um jogador.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------------- |
+| Nome     | Descrição                                     |
+| -------- | --------------------------------------------- |
 | playerid | O ID do jogador do qual obter o estado atual. |
 
 ## Retornos

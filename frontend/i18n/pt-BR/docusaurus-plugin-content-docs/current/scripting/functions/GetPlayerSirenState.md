@@ -14,8 +14,8 @@ Obtém o estado da sirene do veículo do jogador.
 
 ## Parâmetros
 
-| Nome | Descrição |
-| -------- | --------------------- |
+| Nome     | Descrição        |
+| -------- | ---------------- |
 | playerid | O ID do jogador. |
 
 ## Valores de retorno

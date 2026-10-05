@@ -12,12 +12,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Defina a cor de um veículo em uma visualização do modelo player-textdraw (se um veículo for mostrado).
 
-| Nome | Descrição |
-| ----------------- | ----------------------------------------------------- |
-| playerid | O ID do jogador cujo player-textdraw será alterado. |
-| PlayerText:textid | O ID do player-textdraw do jogador a ser alterado.     |
-| colour1 | A cor para definir a cor primária do veículo.    |
-| colour2 | A cor para definir a cor secundária do veículo.  |
+| Nome              | Descrição                                           |
+| ----------------- | --------------------------------------------------- |
+| playerid          | O ID do jogador cujo player-textdraw será alterado. |
+| PlayerText:textid | O ID do player-textdraw do jogador a ser alterado.  |
+| colour1           | A cor para definir a cor primária do veículo.       |
+| colour2           | A cor para definir a cor secundária do veículo.     |
 
 ## Retornos
 

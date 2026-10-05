@@ -10,8 +10,8 @@ tags: ["player"]
 
 Recupera o mundo virtual atual em que o jogador está.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------------- |
+| Nome     | Descrição                                   |
+| -------- | ------------------------------------------- |
 | playerid | O ID do jogador para obter o mundo virtual. |
 
 ## Retornos

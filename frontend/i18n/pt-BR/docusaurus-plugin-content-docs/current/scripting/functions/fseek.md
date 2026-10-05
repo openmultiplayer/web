@@ -10,11 +10,11 @@ tags: ["file management"]
 
 Altere a posição atual no arquivo. Você pode avançar ou retroceder no arquivo.
 
-| Nome | Descrição |
-| --------------------------------------------------- | --------------------------------------------------------------------------- |
-| File:handle | O identificador de arquivo a ser usado. Retornado por fopen.                                  |
-| position | A nova posição no arquivo, relativa ao parâmetro de origem (veja abaixo). |
-| [seek_whence:whence](../resources/file-seek-whence) | A posição inicial à qual a posição do parâmetro se refere.                  |
+| Nome                                                | Descrição                                                                 |
+| --------------------------------------------------- | ------------------------------------------------------------------------- |
+| File:handle                                         | O identificador de arquivo a ser usado. Retornado por fopen.              |
+| position                                            | A nova posição no arquivo, relativa ao parâmetro de origem (veja abaixo). |
+| [seek_whence:whence](../resources/file-seek-whence) | A posição inicial à qual a posição do parâmetro se refere.                |
 
 ## Retornos
 

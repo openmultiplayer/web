@@ -10,8 +10,8 @@ tags: ["player"]
 
 Verifique para quem o jogador está mirando.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------ |
+| Nome     | Descrição                                |
+| -------- | ---------------------------------------- |
 | playerid | O ID do jogador cujo alvo será atingido. |
 
 ## Retornos

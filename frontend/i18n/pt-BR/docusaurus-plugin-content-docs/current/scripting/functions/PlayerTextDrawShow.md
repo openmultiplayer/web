@@ -10,10 +10,10 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Mostrar um player-textdraw ao jogador para o qual foi criado
 
-| Nome | Descrição |
-| ----------------- | --------------------------------------------- |
-| playerid | O ID do jogador para mostrar o textdraw para |
-| PlayerText:textid | O ID do textdraw para mostrar |
+| Nome              | Descrição                                    |
+| ----------------- | -------------------------------------------- |
+| playerid          | O ID do jogador para mostrar o textdraw para |
+| PlayerText:textid | O ID do textdraw para mostrar                |
 
 ## Retornos
 

@@ -12,8 +12,8 @@ tags: ["npc", "streaming"]
 
 Verifica se um NPC foi transmitido para algum player no servidor.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

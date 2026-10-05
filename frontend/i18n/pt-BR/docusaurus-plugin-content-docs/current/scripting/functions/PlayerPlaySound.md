@@ -12,13 +12,13 @@ Reproduz o som especificado para um jogador.
 
 Para uma biblioteca que lista todos os sons, confira [isto](https://github.com/WoutProvost/samp-sound-array).
 
-| Nome | Descrição |
-| -------- | ------------------------------------------------------------ |
-| playerid | O ID do jogador para quem o som será reproduzido.             |
-| soundid | O [som](../resources/sound-ids) a ser reproduzido.                 |
-| Float:x | Coordenada X para o som tocar. (0.0 para nenhuma posição) |
-| Float:y | Coordenada Y para o som tocar. (0.0 para nenhuma posição) |
-| Float:z | Coordenada Z para o som tocar. (0.0 para nenhuma posição) |
+| Nome     | Descrição                                                 |
+| -------- | --------------------------------------------------------- |
+| playerid | O ID do jogador para quem o som será reproduzido.         |
+| soundid  | O [som](../resources/sound-ids) a ser reproduzido.        |
+| Float:x  | Coordenada X para o som tocar. (0.0 para nenhuma posição) |
+| Float:y  | Coordenada Y para o som tocar. (0.0 para nenhuma posição) |
+| Float:z  | Coordenada Z para o som tocar. (0.0 para nenhuma posição) |
 
 ## Retornos
 

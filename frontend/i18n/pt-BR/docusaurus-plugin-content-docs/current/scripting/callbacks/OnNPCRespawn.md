@@ -12,8 +12,8 @@ tags: ["npc"]
 
 Este callback é chamado quando um NPC reaparece.
 
-| Nome | Descrição |
-| ----- | -------------------------------- |
+| Nome  | Descrição                  |
+| ----- | -------------------------- |
 | npcid | O ID do NPC que reapareceu |
 
 ## Exemplos

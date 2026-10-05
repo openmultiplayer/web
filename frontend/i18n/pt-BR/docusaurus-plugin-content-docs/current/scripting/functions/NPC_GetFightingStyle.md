@@ -12,8 +12,8 @@ tags: ["npc", "fighting"]
 
 Obtém o estilo de luta de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

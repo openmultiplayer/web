@@ -12,9 +12,9 @@ tags: ["npc", "angle", "position"]
 
 Gira um NPC para que fique voltado para uma posição mundial específica.
 
-| Nome | Descrição |
-| ------- | ------------------------------------ |
-| npcid | O ID do NPC.                   |
+| Nome    | Descrição                     |
+| ------- | ----------------------------- |
+| npcid   | O ID do NPC.                  |
 | Float:x | Coordenada X da posição alvo. |
 | Float:y | Coordenada Y da posição alvo. |
 | Float:z | Coordenada Z da posição alvo. |

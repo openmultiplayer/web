@@ -12,8 +12,8 @@ tags: ["npc"]
 
 Obtém a ação especial atual de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

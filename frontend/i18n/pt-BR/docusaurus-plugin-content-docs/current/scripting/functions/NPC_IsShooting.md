@@ -12,8 +12,8 @@ tags: ["npc", "weapon", "shooting"]
 
 Verifica se um NPC está atirando com sua arma no momento.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

@@ -10,15 +10,15 @@ tags: ["player"]
 
 Recupera a posição inicial e final (acerto) da última bala que um jogador disparou.
 
-| Nome | Descrição |
-| -------------- | --------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador do qual obter as informações do último tiro de bala.                        |
+| Nome           | Descrição                                                                        |
+| -------------- | -------------------------------------------------------------------------------- |
+| playerid       | O ID do jogador do qual obter as informações do último tiro de bala.             |
 | &Float:originX | Uma variável float na qual salvar a coordenada X de onde o marcador se originou. |
 | &Float:originY | Uma variável float na qual salvar a coordenada Y de onde o marcador se originou. |
 | &Float:originZ | Uma variável float na qual salvar a coordenada Z de onde o marcador se originou. |
-| &Float:hitPosX | Uma variável float na qual salvar a coordenada X de onde a bala atingiu.             |
-| &Float:hitPosY | Uma variável float na qual salvar a coordenada Y de onde a bala atingiu.             |
-| &Float:hitPosZ | Uma variável float na qual salvar a coordenada Z de onde a bala atingiu.             |
+| &Float:hitPosX | Uma variável float na qual salvar a coordenada X de onde a bala atingiu.         |
+| &Float:hitPosY | Uma variável float na qual salvar a coordenada Y de onde a bala atingiu.         |
+| &Float:hitPosZ | Uma variável float na qual salvar a coordenada Z de onde a bala atingiu.         |
 
 ## Retornos
 

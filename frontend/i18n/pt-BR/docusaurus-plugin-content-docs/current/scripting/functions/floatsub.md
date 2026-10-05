@@ -10,9 +10,9 @@ tags: ["math", "floating-point"]
 
 Subtrai um float de outro. Observe que esta função não tem uso real, pois pode simplesmente usar o operador padrão (-).
 
-| Nome | Descrição |
-| ----------- | --------------------------------------------------- |
-| Float:oper1 | Primeiro Float.                                        |
+| Nome        | Descrição                                     |
+| ----------- | --------------------------------------------- |
+| Float:oper1 | Primeiro Float.                               |
 | Float:oper2 | Segundo Float (é subtraído do primeiro float) |
 
 ## Retornos

@@ -12,8 +12,8 @@ tags: ["npc", "vehicle", "aircraft", "landing gear"]
 
 Obtém o estado do trem de pouso de uma aeronave NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

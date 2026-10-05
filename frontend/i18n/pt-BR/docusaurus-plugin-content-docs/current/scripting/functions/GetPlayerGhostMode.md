@@ -12,8 +12,8 @@ tags: ["player"]
 
 Obtenha o modo fantasma do jogador.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------- |
+| Nome     | Descrição                                   |
+| -------- | ------------------------------------------- |
 | playerid | O ID do jogador para obter o modo fantasma. |
 
 ## Retornos

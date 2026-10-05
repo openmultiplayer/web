@@ -11,7 +11,7 @@ Omogućuje igraču da uređuje objekt (položaj i rotaciju) pomoću miša na GUI
 
 | Ime      | Deskripcija                                      |
 | -------- | ------------------------------------------------ |
-| playerid | ID igrača koji bi trebao uređivati ​​objekt.     |
+| playerid | ID igrača koji bi trebao uređivati objekt.       |
 | objectid | ID objekta koji će biti uređen od strane igrača. |
 
 ## Returns

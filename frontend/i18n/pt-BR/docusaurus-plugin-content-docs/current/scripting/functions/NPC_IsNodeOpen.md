@@ -12,8 +12,8 @@ tags: ["npc", "node", "navigation"]
 
 Verifica se um nó NPC está aberto e disponível para uso.
 
-| Nome | Descrição |
-| ------ | ------------------ |
+| Nome   | Descrição  |
+| ------ | ---------- |
 | nodeid | O ID do nó |
 
 ## Retornos

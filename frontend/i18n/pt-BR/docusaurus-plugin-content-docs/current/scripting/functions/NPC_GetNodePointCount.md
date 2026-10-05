@@ -12,8 +12,8 @@ tags: ["npc", "node", "navigation"]
 
 Obtém o número de pontos em um nó NPC.
 
-| Nome | Descrição |
-| ------ | ------------------ |
+| Nome   | Descrição  |
+| ------ | ---------- |
 | nodeid | O ID do nó |
 
 ## Retornos

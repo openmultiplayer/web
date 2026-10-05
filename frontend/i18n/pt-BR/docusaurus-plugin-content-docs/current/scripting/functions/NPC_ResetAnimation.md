@@ -12,8 +12,8 @@ tags: ["npc", "animation"]
 
 Redefine a animação atual de um NPC para o estado padrão.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

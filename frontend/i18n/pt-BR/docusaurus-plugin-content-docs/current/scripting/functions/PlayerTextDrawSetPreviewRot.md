@@ -10,14 +10,14 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Define a rotação e o zoom de um player-textdraw de visualização de modelo 3D.
 
-| Nome | Descrição |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| playerid | O ID do jogador cujo player-textdraw será alterado.                                                                    |
-| PlayerText:textid | O ID do player-textdraw a ser alterado.                                                                                 |
-| Float:rotX | O valor de rotação X.                                                                                                    |
-| Float:rotY | O valor de rotação Y.                                                                                                    |
-| Float:rotZ | O valor de rotação Z.                                                                                                    |
-| Float:zoom | O valor de zoom, valor padrão 1.0, valores menores aproximam a câmera e valores maiores afastam a câmera. |
+| Nome              | Descrição                                                                                                 |
+| ----------------- | --------------------------------------------------------------------------------------------------------- |
+| playerid          | O ID do jogador cujo player-textdraw será alterado.                                                       |
+| PlayerText:textid | O ID do player-textdraw a ser alterado.                                                                   |
+| Float:rotX        | O valor de rotação X.                                                                                     |
+| Float:rotY        | O valor de rotação Y.                                                                                     |
+| Float:rotZ        | O valor de rotação Z.                                                                                     |
+| Float:zoom        | O valor de zoom, valor padrão 1.0, valores menores aproximam a câmera e valores maiores afastam a câmera. |
 
 ## Retornos
 

@@ -12,10 +12,10 @@ tags: ["menu"]
 
 Obtenha o número de linhas na coluna fornecida.
 
-| Nome | Descrição |
-| ----------- | ------------------- |
+| Nome        | Descrição     |
+| ----------- | ------------- |
 | Menu:menuid | O ID do menu. |
-| column | A coluna.         |
+| column      | A coluna.     |
 
 ## Retornos
 

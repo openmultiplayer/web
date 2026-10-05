@@ -10,11 +10,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Defina o contorno de um player-textdraw. A cor do contorno não pode ser alterada a menos que [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor) seja usado.
 
-| Nome | Descrição |
-| ----------------- | ---------------------------------------------------------------- |
-| playerid | O ID do jogador cujo player-textdraw definirá o contorno de |
-| PlayerText:textid | O ID do player-textdraw para definir o contorno de |
-| outlineSize | A espessura do contorno.                                    |
+| Nome              | Descrição                                                   |
+| ----------------- | ----------------------------------------------------------- |
+| playerid          | O ID do jogador cujo player-textdraw definirá o contorno de |
+| PlayerText:textid | O ID do player-textdraw para definir o contorno de          |
+| outlineSize       | A espessura do contorno.                                    |
 
 ## Retornos
 

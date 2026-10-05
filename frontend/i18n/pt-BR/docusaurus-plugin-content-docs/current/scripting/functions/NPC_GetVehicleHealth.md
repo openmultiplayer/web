@@ -12,8 +12,8 @@ tags: ["npc", "vehicle"]
 
 Obtém a integridade do veículo de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

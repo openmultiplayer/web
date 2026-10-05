@@ -12,11 +12,11 @@ tags: ["textdraw"]
 
 Obtém as cores do veículo de visualização de um textdraw de visualização 3D.
 
-| Nome | Descrição |
-| ----------- | ---------------------------------------------------------------- |
-| Text:textid | O ID do textdraw para obter as cores do veículo.             |
-| &colour1 | Uma variável na qual armazenar color1, passada por referência. |
-| &colour2 | Uma variável na qual armazenar color2, passada por referência. |
+| Nome        | Descrição                                                      |
+| ----------- | -------------------------------------------------------------- |
+| Text:textid | O ID do textdraw para obter as cores do veículo.               |
+| &colour1    | Uma variável na qual armazenar color1, passada por referência. |
+| &colour2    | Uma variável na qual armazenar color2, passada por referência. |
 
 ## Exemplos
 

@@ -12,10 +12,10 @@ tags: ["actor"]
 
 Defina a pele do ator.
 
-| Nome | Descrição |
-| ------- | ------------------------------- |
-| actorid | O ID do ator a ser definido.     |
-| skin | O ID da skin para dar a eles |
+| Nome    | Descrição                    |
+| ------- | ---------------------------- |
+| actorid | O ID do ator a ser definido. |
+| skin    | O ID da skin para dar a eles |
 
 ## Retornos
 

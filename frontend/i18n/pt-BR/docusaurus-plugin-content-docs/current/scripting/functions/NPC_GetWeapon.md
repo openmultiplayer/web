@@ -12,8 +12,8 @@ tags: ["npc", "weapon"]
 
 Obtém a arma atual que um NPC está segurando.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

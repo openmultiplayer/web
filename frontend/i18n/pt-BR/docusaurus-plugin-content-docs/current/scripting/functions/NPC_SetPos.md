@@ -12,12 +12,12 @@ tags: ["npc", "position"]
 
 Define a posição de um NPC instantaneamente sem animação de movimento.
 
-| Nome | Descrição |
-| ------- | ------------------ |
-| npcid | O ID do NPC. |
-| Float:x | A coordenada X.  |
-| Float:y | A coordenada Y.  |
-| Float:z | A coordenada Z.  |
+| Nome    | Descrição       |
+| ------- | --------------- |
+| npcid   | O ID do NPC.    |
+| Float:x | A coordenada X. |
+| Float:y | A coordenada Y. |
+| Float:z | A coordenada Z. |
 
 ## Retornos
 

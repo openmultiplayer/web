@@ -10,10 +10,10 @@ tags: ["player"]
 
 Remove um ícone de mapa definido anteriormente para um jogador usando SetPlayerMapIcon.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------------------------------------------- |
-| playerid | O ID do jogador cujo ícone será removido.                                      |
-| iconid | O ID do ícone a ser removido. Este é o segundo parâmetro de SetPlayerMapIcon. |
+| Nome     | Descrição                                                                     |
+| -------- | ----------------------------------------------------------------------------- |
+| playerid | O ID do jogador cujo ícone será removido.                                     |
+| iconid   | O ID do ícone a ser removido. Este é o segundo parâmetro de SetPlayerMapIcon. |
 
 ## Retornos
 

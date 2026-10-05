@@ -12,10 +12,10 @@ tags: ["npc", "playback", "recording"]
 
 Este callback é chamado quando um NPC termina a reprodução de um arquivo gravado.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------ |
-| npcid | O ID do NPC que finalizou a reprodução |
-| recordid | O ID do disco que terminou de tocar |
+| Nome     | Descrição                              |
+| -------- | -------------------------------------- |
+| npcid    | O ID do NPC que finalizou a reprodução |
+| recordid | O ID do disco que terminou de tocar    |
 
 ## Exemplos
 

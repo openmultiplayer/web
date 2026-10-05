@@ -14,8 +14,8 @@ Obtém o estado da sirene do veículo.
 
 ## Parâmetros
 
-| Nome | Descrição |
-| --------- | ---------------------- |
+| Nome      | Descrição        |
+| --------- | ---------------- |
 | vehicleid | O ID do veículo. |
 
 ## Valores de retorno

@@ -12,8 +12,8 @@ tags: ["npc", "melee", "fighting"]
 
 Impede que um NPC execute ataques corpo a corpo.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

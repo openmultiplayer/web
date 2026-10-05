@@ -10,8 +10,8 @@ tags: []
 
 Obtenha o valor inteiro de uma variável de console.
 
-| Nome | Descrição |
-| ------------ | ----------------------------------------------------- |
+| Nome         | Descrição                                         |
+| ------------ | ------------------------------------------------- |
 | const cvar[] | O nome da variável inteira da qual obter o valor. |
 
 ## Retornos

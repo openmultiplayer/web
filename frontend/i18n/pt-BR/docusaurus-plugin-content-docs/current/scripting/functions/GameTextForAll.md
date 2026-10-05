@@ -10,12 +10,12 @@ tags: ["gametext"]
 
 Mostra o 'texto do jogo' (texto na tela) por um determinado período de tempo para todos os jogadores.
 
-| Nome | Descrição |
-| ---------------- | ----------------------------------------------------------------- |
-| const format[] | O texto a ser exibido.                                         |
-| time | A duração do texto mostrado em milissegundos.             |
-| style | O [estilo](../resources/gametextstyles) do texto a ser exibido. |
-| OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag.                        |
+| Nome             | Descrição                                                       |
+| ---------------- | --------------------------------------------------------------- |
+| const format[]   | O texto a ser exibido.                                          |
+| time             | A duração do texto mostrado em milissegundos.                   |
+| style            | O [estilo](../resources/gametextstyles) do texto a ser exibido. |
+| OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag.                |
 
 ## Retornos
 

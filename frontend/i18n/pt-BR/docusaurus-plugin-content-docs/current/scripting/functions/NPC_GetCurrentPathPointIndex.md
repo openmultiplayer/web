@@ -12,8 +12,8 @@ tags: ["npc", "path"]
 
 Obtém o índice do ponto do caminho atual para o qual um NPC está se movendo.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

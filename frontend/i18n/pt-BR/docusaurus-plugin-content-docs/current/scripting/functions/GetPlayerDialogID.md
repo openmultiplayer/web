@@ -12,8 +12,8 @@ tags: ["player", "dialog"]
 
 Obtenha o ID da caixa de diálogo atualmente exibida ao jogador.
 
-| Nome | Descrição |
-| -------- | --------------------- |
+| Nome     | Descrição        |
+| -------- | ---------------- |
 | playerid | O ID do jogador. |
 
 ## Valores de retorno

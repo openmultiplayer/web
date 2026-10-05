@@ -10,10 +10,10 @@ tags: ["textdraw"]
 
 Defina o modelo para uma visualização do modelo textdraw.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------------- |
+| Nome        | Descrição                                       |
+| ----------- | ----------------------------------------------- |
 | Text:textid | O ID do textdraw que exibirá a visualização 3D. |
-| model | O modelo GTA SA ou SA:MP ID para exibição.          |
+| model       | O modelo GTA SA ou SA:MP ID para exibição.      |
 
 ## Retornos
 

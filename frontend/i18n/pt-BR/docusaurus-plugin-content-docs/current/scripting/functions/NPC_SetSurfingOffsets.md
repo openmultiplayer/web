@@ -12,12 +12,12 @@ tags: ["npc", "surfing"]
 
 Define o deslocamento de navegação para um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
-| npcid | O ID do NPC |
-| x | O deslocamento X |
-| y | O deslocamento Y |
-| z | O deslocamento Z |
+| Nome  | Descrição        |
+| ----- | ---------------- |
+| npcid | O ID do NPC      |
+| x     | O deslocamento X |
+| y     | O deslocamento Y |
+| z     | O deslocamento Z |
 
 ## Retornos
 

@@ -10,8 +10,8 @@ tags: ["player", "vehicle"]
 
 Obtenha o ID do veículo que o jogador está navegando (preso no teto).
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------------------------- |
+| Nome     | Descrição                                                      |
+| -------- | -------------------------------------------------------------- |
 | playerid | O ID do jogador que você deseja conhecer o veículo de surf ID. |
 
 ## Retornos

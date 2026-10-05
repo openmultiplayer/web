@@ -12,8 +12,8 @@ tags: ["npc"]
 
 Obtém o mundo virtual em que um NPC está.
 
-| Nome | Descrição |
-| ----- | ------------------ |
+| Nome  | Descrição    |
+| ----- | ------------ |
 | npcid | O ID do NPC. |
 
 ## Retornos

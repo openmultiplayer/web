@@ -10,9 +10,9 @@ tags: ["object"]
 
 Defina a rotação de um objeto nos três eixos (X, Y e Z).
 
-| Nome | Descrição |
-| --------------- | -------------------------------------------- |
-| objectid | O ID do objeto do qual definir a rotação. |
+| Nome            | Descrição                                 |
+| --------------- | ----------------------------------------- |
+| objectid        | O ID do objeto do qual definir a rotação. |
 | Float:rotationX | A rotação X.                              |
 | Float:rotationY | A rotação Y.                              |
 | Float:rotationZ | A rotação Z.                              |

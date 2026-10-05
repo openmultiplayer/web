@@ -10,8 +10,8 @@ tags: ["vehicle"]
 
 Obtenha o mundo virtual de um veículo.
 
-| Nome | Descrição |
-| --------- | -------------------------------------------------- |
+| Nome      | Descrição                                   |
+| --------- | ------------------------------------------- |
 | vehicleid | O ID do veículo para obter o mundo virtual. |
 
 ## Retornos
