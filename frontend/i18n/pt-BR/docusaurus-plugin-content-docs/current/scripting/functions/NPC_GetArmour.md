@@ -18,7 +18,7 @@ Obtém o valor da armadura de um NPC.
 
 ## Retornos
 
-Retorna a armadura do NPC como um valor flutuante (0,0 a 100,0).
+Retorna a armadura do NPC como um valor flutuante (0.0 a 100.0).
 
 ## Exemplos
 
@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Os valores de armadura variam de 0,0 a 100,0
+- Os valores de armadura variam de 0.0 a 100.0
 - NPCs começa com armadura 0.0 por padrão, use [NPC_SetArmour](NPC_SetArmour) para definir um valor mais alto
 
 ## Funções Relacionadas

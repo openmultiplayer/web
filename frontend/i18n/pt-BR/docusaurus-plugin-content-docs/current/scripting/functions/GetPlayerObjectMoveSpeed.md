@@ -28,7 +28,7 @@ new playerobjectid = CreatePlayerObject(playerid, 985, 1003.39154, -643.33423, 1
 MovePlayerObject(playerid, playerobjectid, 1003.3915, -643.3342, 114.5122,  0.8);
 
 new Float:moveSpeed = GetPlayerObjectMoveSpeed(playerid, playerobjectid);
-// velocidade de movimento = 0,8
+// velocidade de movimento = 0.8
 ```
 ## Funções Relacionadas
 

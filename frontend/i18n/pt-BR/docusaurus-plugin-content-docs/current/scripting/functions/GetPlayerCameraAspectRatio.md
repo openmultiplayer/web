@@ -18,7 +18,7 @@ Recupera a proporção da câmera de um jogador.
 
 A proporção da câmera do jogador, como um flutuador.
 
-A proporção pode ser um de três valores: 4:3 (1,3333334, Float:0x3FAAAAAB) quando a tela widescreen está desligada, 5:4 (1,2470589, Float:0x3F9F9FA0) quando o modo letterbox está ativado e 16:9 (1,7764707, Float:0x3FE36364) quando a tela widescreen está ativada, independentemente do modo letterbox.
+A proporção pode ser um de três valores: 4:3 (1.3333334, Float:0x3FAAAAAB) quando a tela widescreen está desligada, 5:4 (1.2470589, Float:0x3F9F9FA0) quando o modo letterbox está ativado e 16:9 (1.7764707, Float:0x3FE36364) quando a tela widescreen está ativada, independentemente do modo letterbox.
 
 ## Exemplos
 

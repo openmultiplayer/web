@@ -18,7 +18,7 @@ Faz um movimento NPC em direção e segue um jogador.
 | playerid | O ID do jogador para o qual se mover.                         |
 | NPC_MOVE_TYPE:moveType | Tipo de movimento (padrão: `NPC_MOVE_TYPE_JOG`).                |
 | Float:moveSpeed | Velocidade de movimento (padrão: `NPC_MOVE_SPEED_AUTO`).             |
-| Float:stopRange | Distância até parar do jogador (padrão: 0,2) |
+| Float:stopRange | Distância até parar do jogador (padrão: 0.2) |
 | updateDelayMS | Atraso de atualização da verificação de posição em milissegundos (padrão: 500).  |
 | bool:autoRestart | Se deseja reiniciar automaticamente o seguinte (padrão: false). |
 

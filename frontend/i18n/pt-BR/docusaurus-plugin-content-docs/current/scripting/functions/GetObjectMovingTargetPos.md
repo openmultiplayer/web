@@ -37,9 +37,9 @@ new
     Float:targetZ;
 
 GetObjectMovingTargetPos(objectid, targetX, targetY, targetZ);
-// alvoX = 1003,3915
-// alvoY = -643,3342
-// alvoZ = 114,5122
+// alvoX = 1003.3915
+// alvoY = -643.3342
+// alvoZ = 114.5122
 ```
 ## Funções Relacionadas
 

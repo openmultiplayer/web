@@ -18,7 +18,7 @@ Obtém a integridade do veículo de um NPC.
 
 ## Retornos
 
-Retorna a integridade do veículo como um valor flutuante ou 0,0 se NPC não estiver em um veículo.
+Retorna a integridade do veículo como um valor flutuante ou 0.0 se NPC não estiver em um veículo.
 
 ## Exemplos
 
@@ -49,9 +49,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Retorna 0,0 se NPC não estiver em um veículo
-- A integridade do veículo normalmente varia de 0,0 a 1000,0
-- Saúde abaixo de 250,0 geralmente significa que o veículo pegará fogo
+- Retorna 0.0 se NPC não estiver em um veículo
+- A integridade do veículo normalmente varia de 0.0 a 1000.0
+- Saúde abaixo de 250.0 geralmente significa que o veículo pegará fogo
 
 ## Funções Relacionadas
 

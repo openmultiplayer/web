@@ -409,7 +409,7 @@ new badString[100];
 badString ="Hello :)";
 ```
 
-Am declarat un șir cu _100 celule_, _1 celulă_ ocupă _4 octeți_, hai să facem câteva matematici de bază, _100 \ \* 4 = 400_ octeți, adică aproximativ 0,0004 megabyte*, nimic pentru standardele de astăzi știu, dar se presupune că pe un script imens , evident, va trebui să utilizați mai multe șiruri, \_60*, _70_, naiba _100_ mai multe șiruri? (_posibil mai mult_), acele numere minuscule se vor aduna unul pe celălalt rezultând un număr mult mai mare și vă vor provoca probleme serioase mai târziu și credeți-mă când vă spun că șirul pe care l-am declarat nu se apropie la fel de prost în comparație cu cei care au o dimensiune de cinci ori mai mare sau mai mare.
+Am declarat un șir cu _100 celule_, _1 celulă_ ocupă _4 octeți_, hai să facem câteva matematici de bază, _100 \ \* 4 = 400_ octeți, adică aproximativ 0.0004 megabyte*, nimic pentru standardele de astăzi știu, dar se presupune că pe un script imens , evident, va trebui să utilizați mai multe șiruri, \_60*, _70_, naiba _100_ mai multe șiruri? (_posibil mai mult_), acele numere minuscule se vor aduna unul pe celălalt rezultând un număr mult mai mare și vă vor provoca probleme serioase mai târziu și credeți-mă când vă spun că șirul pe care l-am declarat nu se apropie la fel de prost în comparație cu cei care au o dimensiune de cinci ori mai mare sau mai mare.
 
 Ceea ce am întâlnit mai mult, ceva care este stereotip tip vag, este utilizarea misterioasă dimensiune a șirului -256-, tocmai de ce oamenii? De ce?
 

@@ -16,7 +16,7 @@ Define a precisão de uma arma específica para um NPC.
 | -------- | --------------------------------- |
 | npcid | O ID do NPC |
 | weaponid | A arma ID para definir a precisão |
-| accuracy | O valor de precisão (0,0 a 1,0) |
+| accuracy | O valor de precisão (0.0 a 1.0) |
 
 ## Retornos
 
@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- O valor de precisão varia de 0,0 (nunca acerta) a 1,0 (sempre acerta)
+- O valor de precisão varia de 0.0 (nunca acerta) a 1.0 (sempre acerta)
 - A precisão padrão varia de acordo com o tipo de arma
 - A precisão afeta a propagação da bala e a probabilidade de acerto
 

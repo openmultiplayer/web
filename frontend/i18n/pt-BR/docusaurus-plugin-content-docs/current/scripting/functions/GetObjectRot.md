@@ -30,9 +30,9 @@ public OnGameModeInit()
 
     new Float:rotationX, Float:rotationY, Float:rotationZ;
     GetObjectRot(objectid, rotationX, rotationY, rotationZ);
-    // rotaçãoX = 357,00000
-    // rotaçãoY = 0,00000
-    // rotaçãoZ = -76,00000
+    // rotaçãoX = 357.00000
+    // rotaçãoY = 0.00000
+    // rotaçãoZ = -76.00000
     return 1;
 }
 ```

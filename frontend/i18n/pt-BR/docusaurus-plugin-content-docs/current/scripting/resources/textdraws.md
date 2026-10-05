@@ -232,4 +232,4 @@ public OnPlayerConnect(playerid)
 ## Dicas Diversas
 
 - Tente usar números inteiros ao especificar posições, isso garante a melhor compatibilidade em diferentes resoluções.
-- As fontes parecem ter melhor aparência com uma proporção de X para Y de 1 para 4 (por exemplo, se x = 0,5, então y deve ser 2).
+- As fontes parecem ter melhor aparência com uma proporção de X para Y de 1 para 4 (por exemplo, se x = 0.5, então y deve ser 2).

@@ -50,7 +50,7 @@ Ako je health/zdravlje igrača postavljeno na 0 ili minus vrijednost, oni će od
 
 :::warning
 
-Zdravlje se zaokružuje na cijele brojeve: postavite 50,15, ali ćete dobiti 50,0
+Zdravlje se zaokružuje na cijele brojeve: postavite 50.15, ali ćete dobiti 50.0
 
 :::
 

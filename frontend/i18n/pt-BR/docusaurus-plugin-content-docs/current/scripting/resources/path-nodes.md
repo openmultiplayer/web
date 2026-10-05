@@ -146,25 +146,25 @@ As seguintes _estatísticas sobre uso de sinalizadores_, agrupadas por tipo de c
 
 | Flag | Pediatria | Carros | Total |
 | --------- | --------------- | --------------- | ------ |
-| **Total** | 37.650 | 30.587 | 68.237 |
-| A | 0 | 391 (1,28%) | 391 |
-| B | 0 | 1.596 (5,22%) | 1.596 |
-| C | 6.019 (15,99%) | 7.669 (25,08%) | 13.688 |
+| **Total** | 37,650 | 30,587 | 68,237 |
+| A | 0 | 391 (1.28%) | 391 |
+| B | 0 | 1,596 (5.22%) | 1,596 |
+| C | 6,019 (15.99%) | 7,669 (25.08%) | 13,688 |
 | D | 0 | 0 | 0 |
-| E | 17 (0,05%) | 0 | 17 |
+| E | 17 (0.05%) | 0 | 17 |
 | F | 0 | 0 | 0 |
-| G | 0 | 27.936 (91,33%) | 27.936 |
-| H | 0 | 2.539 (8,3%) | 2.539 |
+| G | 0 | 27,936 (91.33%) | 27,936 |
+| H | 0 | 2,539 (8.3%) | 2,539 |
 | I | 0 | 0 | 0 |
 | J | 0 | 0 | 0 |
-| K | 37.646 (99,98%) | 30.582 (99,98%) | 68.228 |
-| L | 36.676 (97,41%) | 30.141 (98,54%) | 66.817 |
-| M | 36.676 (97,41%) | 30.136 (98,52%) | 66.812 |
-| N | 36.607 (97,22%) | 30.046 (98,23%) | 66.653 |
-| O | 0 | 8 (0,03%) | 8 |
-| P | 0 | 215 (0,7%) | 215 |
+| K | 37,646 (99.98%) | 30,582 (99.98%) | 68,228 |
+| L | 36,676 (97.41%) | 30,141 (98.54%) | 66,817 |
+| M | 36,676 (97.41%) | 30,136 (98.52%) | 66,812 |
+| N | 36,607 (97.22%) | 30,046 (98.23%) | 66,653 |
+| O | 0 | 8 (0.03%) | 8 |
+| P | 0 | 215 (0.7%) | 215 |
 | Q | 0 | 0 | 0 |
-| R | 0 | 16 (0,05%) | 16 |
+| R | 0 | 16 (0.05%) | 16 |
 
 ### Seção 2 - Nós Navi
 
@@ -186,7 +186,7 @@ Pode haver bugs se você não conectar os nós de navegação corretamente. Os l
 
 - **Posição**: Esta é a posição do nó de navegação nas coordenadas mundiais. Para converter as palavras sinalizadas em valores de ponto flutuante, divida-as por 8.
 - **Área ID e Nó ID**: identificam o nó de destino ao qual um nó de navegação está anexado.
-- **Direção**: Este é um vetor normalizado apontando para o nó alvo mencionado acima, definindo assim a direção geral do segmento do caminho. Os componentes do vetor são representados por bytes assinados com valores dentro do intervalo [-100, 100], que corresponde ao intervalo de valores de ponto flutuante [-1,0, 1,0].
+- **Direção**: Este é um vetor normalizado apontando para o nó alvo mencionado acima, definindo assim a direção geral do segmento do caminho. Os componentes do vetor são representados por bytes assinados com valores dentro do intervalo [-100, 100], que corresponde ao intervalo de valores de ponto flutuante [-1.0, 1.0].
 
 #### Sinalizadores de nó Navi
 

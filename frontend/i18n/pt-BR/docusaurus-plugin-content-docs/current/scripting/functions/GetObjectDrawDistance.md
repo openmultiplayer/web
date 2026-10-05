@@ -26,7 +26,7 @@ Retorna a distância de desenho como float.
 new objectid = CreateObject(3335, 672.53485, -656.11023, 15.26560,  3.00000, 0.00000, 0.00000,  100.0);
 
 new Float:drawDistance = GetObjectDrawDistance(objectid);
-// distância de desenho = 100,0
+// distância de desenho = 100.0
 ```
 ## Funções Relacionadas
 

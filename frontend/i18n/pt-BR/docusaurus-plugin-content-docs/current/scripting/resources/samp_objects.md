@@ -728,7 +728,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 ```
 ---
 
-## **Objetos adicionados em 0,3x RC2-4 (6 objetos)**
+## **Objetos adicionados em 0.3x RC2-4 (6 objetos)**
 
 ```
 19516	Hair2_nc

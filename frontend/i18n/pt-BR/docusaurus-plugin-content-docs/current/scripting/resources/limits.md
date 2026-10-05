@@ -68,7 +68,7 @@ tags: []
 
 **Notas:**
 
-1. Embora o limite de modelo de veículo em 0,3 seja ilimitado, se você usar uma grande quantidade de modelos de veículos, isso afetará o desempenho do cliente.
+1. Embora o limite de modelo de veículo em 0.3 seja ilimitado, se você usar uma grande quantidade de modelos de veículos, isso afetará o desempenho do cliente.
 2. Embora o limite da string textdraw seja de 1.024 caracteres, se códigos de cores (por exemplo, `~r~`) forem usados ​​além do 255º caractere, o cliente poderá travar.
 3. É possível mostrar todos os Textdraws ao mesmo tempo para um jogador, porém isso não é recomendado.
 4. Para contornar esses limites, é possível utilizar um [streamer](https://github.com/samp-incognito/samp-streamer-plugin). Os streamers funcionam apenas criando entidades, etc., que estão próximas dos jogadores.

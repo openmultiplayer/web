@@ -26,7 +26,7 @@ Membuat Object pada koordinat tertentu di dalam game.
 public OnGameModeInit()
 {
     CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0); // Object akan dirender pada jarak defaultnya.
-    CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0, 300.0); // Object akan dirender pada 300,0 unit.
+    CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0, 300.0); // Object akan dirender pada 300.0 unit.
     return 1;
 }
 ```

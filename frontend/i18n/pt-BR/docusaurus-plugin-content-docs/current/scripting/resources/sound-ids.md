@@ -97,7 +97,7 @@ Você pode encontrar todos os sons IDs disponíveis no arquivo localizado na pas
 - 1000 - Desative os sons do helicóptero.
 - 1001 - Habilita sons de helicóptero. (útil para corrigir bug de som do heli)
 
-## Som 0,3d IDs (encontrado por WackoX)
+## Som 0.3d IDs (encontrado por WackoX)
 
 #### Rádio Policial
 
@@ -299,7 +299,7 @@ Você pode encontrar todos os sons IDs disponíveis no arquivo localizado na pas
 39000 - "What would your mother think?"
 39002 - "Filth like you always have to pay for sex!"
 ```
-#### Som 0,3d IDs
+#### Som 0.3d IDs
 
 ```
 "ALDEA MALVADA" - 2000

@@ -25,7 +25,7 @@ public OnGameModeInit()
 {
     new Float:Number1 = 2.3, Float:Number2 = 3.5; //Deklarira dva floata, Number1 (2.3) i Number2 (3.5)
     new Float:Product;
-    Product = floatmul(Number1, Number2);       //Sprema proizvod (= 2,3 * 3,5 = 8,05) broja1 i broja2 u plovak "Proizvod"
+    Product = floatmul(Number1, Number2);       //Sprema proizvod (= 2.3 * 3.5 = 8.05) broja1 i broja2 u plovak "Proizvod"
     return 1;
 }
 ```

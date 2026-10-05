@@ -70,7 +70,7 @@ Esteja ciente de que esta função reportará os pacotes perdidos pelo servidor.
 
 :::tip
 
-Qualquer valor superior a 0,0% já deve ser motivo de preocupação. Qualquer coisa superior a 1,0% é totalmente ruim.
+Qualquer valor superior a 0.0% já deve ser motivo de preocupação. Qualquer coisa superior a 1.0% é totalmente ruim.
 
 :::
 

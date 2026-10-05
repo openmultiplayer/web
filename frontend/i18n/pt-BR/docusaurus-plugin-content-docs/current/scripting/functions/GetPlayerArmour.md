@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Mesmo que a armadura possa ser definida para valores quase infinitos no lado do servidor, os clientes individuais reportarão apenas valores até 255. Qualquer valor superior será resolvido; 256 torna-se 0, 257 torna-se 1, etc. A armadura é arredondada para números inteiros: defina 50,15, mas obtenha 50,0
+Mesmo que a armadura possa ser definida para valores quase infinitos no lado do servidor, os clientes individuais reportarão apenas valores até 255. Qualquer valor superior será resolvido; 256 torna-se 0, 257 torna-se 1, etc. A armadura é arredondada para números inteiros: defina 50.15, mas obtenha 50.0
 
 :::
 

@@ -38,9 +38,9 @@ public OnPlayerSpawn(playerid)
         Float:minY;
 
     GetPlayerWorldBounds(playerid, maxX, minX, maxY, minY);
-    // máxX = -1212,0
-    // minX = -1420,0
-    // máxY = 2628,5
+    // máxX = -1212.0
+    // minX = -1420.0
+    // máxY = 2628.5
     // minY = 2.430,5
     return 1;
 }

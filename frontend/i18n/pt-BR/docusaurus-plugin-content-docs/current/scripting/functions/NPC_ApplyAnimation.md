@@ -17,7 +17,7 @@ Aplica uma animação específica a um NPC usando biblioteca e nome de animaçã
 | npcid | O ID do NPC |
 | animlib[] | O nome da biblioteca de animação |
 | animname[] | O nome da animação na biblioteca |
-| delta | A velocidade da animação (normalmente 4,1) |
+| delta | A velocidade da animação (normalmente 4.1) |
 | loop | Se a animação deve repetir |
 | lockX | Bloquear movimento no eixo X |
 | lockY | Bloquear movimento no eixo Y |
@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Use o parâmetro `time` para definir a duração da animação
 - Os parâmetros de bloqueio impedem o movimento em eixos específicos durante a animação
 - Use `NPC_ClearAnimations` para parar todas as animações
-- Delta normalmente varia de 1,0 a 10,0 (4,1 é o padrão)
+- Delta normalmente varia de 1.0 a 10.0 (4.1 é o padrão)
 
 ## Funções Relacionadas
 

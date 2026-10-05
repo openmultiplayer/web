@@ -24,7 +24,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | -------- | ----------- | -------- | --------- | --------- | ------------------------------------------------------------------- |
 | 24/7 1 | 17 | -25.7220 | -187.8216 | 1003.5469 | ![](https://assets.open.mp/assets/images/interiors/interior20.png) |
 | 24/7 2 | 10 | 6.0856 | -28.8966 | 1003.5494 | ![](https://assets.open.mp/assets/images/interiors/interior28.png) |
-| 24/7 3 | 18 | -30,9875 | -89.6806 | 1003.5469 | ![](https://assets.open.mp/assets/images/interiors/interior52.png) |
+| 24/7 3 | 18 | -30.9875 | -89.6806 | 1003.5469 | ![](https://assets.open.mp/assets/images/interiors/interior52.png) |
 | 24/7 4 | 16 | -26.1856 | -140.9164 | 1003.5469 | ![](https://assets.open.mp/assets/images/interiors/interior71.png) |
 | 24/7 5 | 4 | -27.844 | -26.6737 | 1003.5573 | ![](https://assets.open.mp/assets/images/interiors/interior97.png) |
 | 24/7 6 | 6 | -26.8339 | -55.5846 | 1003.5469 | ![](https://assets.open.mp/assets/images/interiors/interior124.png) |
@@ -42,7 +42,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | Interior | Interior ID | X | S | Z | Foto |
 | ---------------------- | ----------- | --------- | --------- | --------- | ------------------------------------------------------------------- |
 | Four Dragons | 10 | 2016.1156 | 1017.1541 | 996.875 | ![](https://assets.open.mp/assets/images/interiors/interior41.png) |
-| Casino (Redsands West) | 12 | 1000.6797 | 1133,35 | -7,8462 | ![](https://assets.open.mp/assets/images/interiors/interior62.png) |
+| Casino (Redsands West) | 12 | 1000.6797 | 1133.35 | -7.8462 | ![](https://assets.open.mp/assets/images/interiors/interior62.png) |
 | Caligula's Casino | 1 | 2233.9363 | 1711.8038 | 1011.6312 | ![](https://assets.open.mp/assets/images/interiors/interior48.png) |
 | Caligula's Roof | 1 | 2268.5156 | 1647.7682 | 1084.2344 | ![](https://assets.open.mp/assets/images/interiors/interior131.png) |
 
@@ -74,7 +74,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | ------------- | ----------- | --------- | -------- | --------- | ------------------------------------------------------------------- |
 | Barber shop 1 | 12 | 411.9707 | -51.9217 | 1001.8984 | ![](https://assets.open.mp/assets/images/interiors/interior107.png) |
 | Barber shop 2 | 2 | 414.2987 | -18.8044 | 1001.8047 | ![](https://assets.open.mp/assets/images/interiors/interior50.png) |
-| Barber shop 3 | 3 | 418.4666 | -80,4595 | 1001.8047 | ![](https://assets.open.mp/assets/images/interiors/interior13.png) |
+| Barber shop 3 | 3 | 418.4666 | -80.4595 | 1001.8047 | ![](https://assets.open.mp/assets/images/interiors/interior13.png) |
 | Tattoo sarlor | 3 | -201.2236 | -43.2465 | 1002.2734 | ![](https://assets.open.mp/assets/images/interiors/interior18.png) |
 | Sex shop | 3 | -100.2674 | -22.9376 | 1000.7188 | ![](https://assets.open.mp/assets/images/interiors/interior17.png) |
 
@@ -98,7 +98,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | Burglary house 14 | 6 | 234.2826 | 1065.229 | 1084.2101 | ![](https://assets.open.mp/assets/images/interiors/interior118.png) |
 | Burglary house 15 | 6 | -68.5145 | 1353.8485 | 1080.2109 | ![](https://assets.open.mp/assets/images/interiors/interior119.png) |
 | Burglary house 16 | 15 | -285.2511 | 1471.197 | 1084.375 | ![](https://assets.open.mp/assets/images/interiors/interior123.png) |
-| Burglary house 17 | 8 | -42.5267 | 1408,23 | 1084.4297 | ![](https://assets.open.mp/assets/images/interiors/interior139.png) |
+| Burglary house 17 | 8 | -42.5267 | 1408.23 | 1084.4297 | ![](https://assets.open.mp/assets/images/interiors/interior139.png) |
 | Burglary house 18 | 9 | 84.9244 | 1324.2983 | 1083.8594 | ![](https://assets.open.mp/assets/images/interiors/interior141.png) |
 | Burglary house 19 | 9 | 260.7421 | 1238.2261 | 1084.2578 | ![](https://assets.open.mp/assets/images/interiors/interior142.png) |
 
@@ -106,7 +106,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 
 | Interior | Interior ID | X | S | Z | Foto |
 | ------------- | ----------- | -------- | --------- | --------- | ------------------------------------------------------------------- |
-| Ammu-nation 1 | 7 | 315.244 | -140,8858 | 999.6016 | ![](https://assets.open.mp/assets/images/interiors/interior24.png) |
+| Ammu-nation 1 | 7 | 315.244 | -140.8858 | 999.6016 | ![](https://assets.open.mp/assets/images/interiors/interior24.png) |
 | Ammu-nation 2 | 1 | 285.8361 | -39.0166 | 1001.5156 | ![](https://assets.open.mp/assets/images/interiors/interior32.png) |
 | Ammu-nation 3 | 4 | 291.7626 | -80.1306 | 1001.5156 | ![](https://assets.open.mp/assets/images/interiors/interior95.png) |
 | Ammu-nation 4 | 6 | 297.144 | -109.8702 | 1001.5156 | ![](https://assets.open.mp/assets/images/interiors/interior121.png) |
@@ -118,7 +118,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | ------------------------- | ----------- | --------- | ---------- | --------- | ------------------------------------------------------------------- |
 | The Johnson house | 3 | 2496.0549 | -1695.1749 | 1014.7422 | ![](https://assets.open.mp/assets/images/interiors/interior46.png) |
 | Angel Pine trailer | 2 | 1.1853 | -3.2387 | 999.4284 | ![](https://assets.open.mp/assets/images/interiors/interior51.png) |
-| Abandoned AC tower | 10 | 419.8936 | 2537.1155 | 10,0000 | ![](https://assets.open.mp/assets/images/interiors/interior59.png) |
+| Abandoned AC tower | 10 | 419.8936 | 2537.1155 | 10.0000 | ![](https://assets.open.mp/assets/images/interiors/interior59.png) |
 | Wardrobe/Changing room | 14 | 256.9047 | -41.6537 | 1002.0234 | ![](https://assets.open.mp/assets/images/interiors/interior60.png) |
 | The Camel's Toe safehouse | 1 | 2216.1282 | -1076.3052 | 1050.4844 | ![](https://assets.open.mp/assets/images/interiors/interior130.png) |
 | Verdant Bluffs safehouse | 8 | 2365.1089 | -1133.0795 | 1050.875 | ![](https://assets.open.mp/assets/images/interiors/interior134.png) |
@@ -159,14 +159,14 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 
 | Interior | Interior ID | X | S | Z | Foto |
 | -------------- | ----------- | ---------- | --------- | --------- | ------------------------------------------------------------------- |
-| Bike school | 3 | 1494.8589 | 1306,48 | 1093.2953 | ![](https://assets.open.mp/assets/images/interiors/interior115.png) |
+| Bike school | 3 | 1494.8589 | 1306.48 | 1093.2953 | ![](https://assets.open.mp/assets/images/interiors/interior115.png) |
 | Driving school | 3 | -2031.1196 | -115.8287 | 1035.1719 | ![](https://assets.open.mp/assets/images/interiors/interior133.png) |
 
 ##GYMs
 
 | Interior | Interior ID | X | S | Z | Foto |
 | ------------------ | ----------- | -------- | -------- | --------- | ------------------------------------------------------------------- |
-| Ganton Gym | 5 | 770.8033 | -0,7033 | 1000.7267 | ![](https://assets.open.mp/assets/images/interiors/interior1.png) |
+| Ganton Gym | 5 | 770.8033 | -0.7033 | 1000.7267 | ![](https://assets.open.mp/assets/images/interiors/interior1.png) |
 | Cobra Gym | 3 | 773.8887 | -47.7698 | 1000.5859 | ![](https://assets.open.mp/assets/images/interiors/interior29.png) |
 | Below The Belt Gym | 1 | 773.7318 | -74.6957 | 1000.6542 | ![](https://assets.open.mp/assets/images/interiors/interior109.png) |
 
@@ -186,20 +186,20 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | Interior | Interior ID | X | S | Z | Foto |
 | ----------- | ----------- | --------- | ------- | --------- | ----------------------------------------------------------------- |
 | Warehouse 1 | 18 | 1290.4106 | 1.9512 | 1001.0201 | ![](https://assets.open.mp/assets/images/interiors/interior7.png) |
-| Warehouse 2 | 1 | 1412.1472 | -2,2836 | 1000.9241 | ![](https://assets.open.mp/assets/images/interiors/interior8.png) |
+| Warehouse 2 | 1 | 1412.1472 | -2.2836 | 1000.9241 | ![](https://assets.open.mp/assets/images/interiors/interior8.png) |
 
 ## Cena, Missões
 
 | Interior | Interior ID | X | S | Z | Foto |
 | ------------------------------ | ----------- | ---------- | ---------- | --------- | ------------------------------------------------------------------- |
 | Inside Track Betting | 3 | 830.6016 | 5.9404 | 1004.1797 | ![](https://assets.open.mp/assets/images/interiors/interior4.png) |
-| Blastin' Fools Records | 3 | 1037.8276 | 0,397 | 1001.2845 | ![](https://assets.open.mp/assets/images/interiors/interior5.png) |
+| Blastin' Fools Records | 3 | 1037.8276 | 0.397 | 1001.2845 | ![](https://assets.open.mp/assets/images/interiors/interior5.png) |
 | B Dup's Apartment | 3 | 1527.0468 | -12.0236 | 1002.0971 | ![](https://assets.open.mp/assets/images/interiors/interior9.png) |
 | B Dup's Crack Palace | 2 | 1523.5098 | -47.8211 | 1002.2699 | ![](https://assets.open.mp/assets/images/interiors/interior10.png) |
 | OG Loc's House | 3 | 512.9291 | -11.6929 | 1001.5653 | ![](https://assets.open.mp/assets/images/interiors/interior12.png) |
 | Ryder's house | 2 | 2447.8704 | -1704.4509 | 1013.5078 | ![](https://assets.open.mp/assets/images/interiors/interior43.png) |
 | Sweet's House | 1 | 2527.0176 | -1679.2076 | 1015.4986 | ![](https://assets.open.mp/assets/images/interiors/interior44.png) |
-| Wu-Zi Mu's | 1 | -2158.6731 | 642,09 | 1052.375 | ![](https://assets.open.mp/assets/images/interiors/interior58.png) |
+| Wu-Zi Mu's | 1 | -2158.6731 | 642.09 | 1052.375 | ![](https://assets.open.mp/assets/images/interiors/interior58.png) |
 | Los Santos Airport | 14 | -1864.9434 | 55.7325 | 1055.5276 | ![](https://assets.open.mp/assets/images/interiors/interior111.png) |
 | Four Dragons' Janitor's Office | 10 | 1893.0731 | 1017.8958 | 31.8828 | ![](https://assets.open.mp/assets/images/interiors/interior137.png) |
 | Jefferson Motel | 15 | 2217.281 | -1150.5349 | 1025.7969 | ![](https://assets.open.mp/assets/images/interiors/interior72.png) |
@@ -210,7 +210,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | RC Battlefield | 10 | -1129.8909 | 1057.5424 | 1346.4141 | ![](https://assets.open.mp/assets/images/interiors/interior45.png) |
 | San Fierro Garage | 1 | -2041.2334 | 178.3969 | 28.8465 | ![](https://assets.open.mp/assets/images/interiors/interior37.png) |
 | The Welcome Pump | 1 | 681.6216 | -451.8933 | -25.6172 | ![](https://assets.open.mp/assets/images/interiors/interior74.png) |
-| 8-Track Stadium | 7 | -1403.0116 | -250,4526 | 1043.5341 | ![](https://assets.open.mp/assets/images/interiors/interior39.png) |
+| 8-Track Stadium | 7 | -1403.0116 | -250.4526 | 1043.5341 | ![](https://assets.open.mp/assets/images/interiors/interior39.png) |
 | Dirtbike Stadium | 4 | -1421.5618 | -663.8262 | 1059.5569 | ![](https://assets.open.mp/assets/images/interiors/interior108.png) |
 | Crack Den | 5 | 322.1117 | 1119.3270 | 1083.8830 | ![](https://assets.open.mp/assets/images/interiors/interior145.png) |
 | Big Smoke's Crack Palace | 2 | 2536.5322 | -1294.8425 | 1044.125 | ![](https://assets.open.mp/assets/images/interiors/interior56.png) |
@@ -218,7 +218,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | Sherman Dam | 17 | -944.2402 | 1886.1536 | 5.0051 | ![](https://assets.open.mp/assets/images/interiors/interior70.png) |
 | Rosenberg's Office | 2 | 2182.2017 | 1628.5848 | 1043.8723 | ![](https://assets.open.mp/assets/images/interiors/interior126.png) |
 | Secret Valley Diner | 6 | 442.1295 | -52.4782 | 999.7167 | ![](https://assets.open.mp/assets/images/interiors/interior125.png) |
-| World of Coq | 1 | 445.6003 | -6,9823 | 1000.7344 | ![](https://assets.open.mp/assets/images/interiors/interior31.png) |
+| World of Coq | 1 | 445.6003 | -6.9823 | 1000.7344 | ![](https://assets.open.mp/assets/images/interiors/interior31.png) |
 | Jays Diner | 5 | 454.9853 | -107.2548 | 999.4376 | ![](https://assets.open.mp/assets/images/interiors/interior21.png) |
 | Madd Dogg's Mansion | 5 | 1267.8407 | -776.9587 | 1091.9063 | ![](https://assets.open.mp/assets/images/interiors/interior55.png) |
 | Colonel Furhberger's | 8 | 2807.3604 | -1171.7048 | 1025.5703 | ![](https://assets.open.mp/assets/images/interiors/interior128.png) |

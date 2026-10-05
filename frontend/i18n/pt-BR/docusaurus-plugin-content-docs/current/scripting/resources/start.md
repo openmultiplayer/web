@@ -486,7 +486,7 @@ new
    Float:fGrav = 5.0;
 SetGravity(fGrav);
 ```
-Isso definirá a gravidade para 6 (6,0 como flutuador) e depois 5 (5,0 como flutuador). Usar a tag errada no lugar errado geralmente causará uma incompatibilidade de tags:
+Isso definirá a gravidade para 6 (6.0 como flutuador) e depois 5 (5.0 como flutuador). Usar a tag errada no lugar errado geralmente causará uma incompatibilidade de tags:
 
 ```c
 SetGravity(MyTag:7);

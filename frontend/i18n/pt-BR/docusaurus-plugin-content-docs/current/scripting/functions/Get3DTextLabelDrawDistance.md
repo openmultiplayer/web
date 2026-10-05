@@ -29,7 +29,7 @@ new Float:drawDistance;
 gMyLabel = Create3DTextLabel("Hello World!", 0x008080FF, 30.0, 40.0, 50.0, 10.0, 0, false);
 
 drawDistance = Get3DTextLabelDrawDistance(gMyLabel);
-// distância de desenho = 10,0
+// distância de desenho = 10.0
 ```
 ## Funções Relacionadas
 

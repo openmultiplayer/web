@@ -19,7 +19,7 @@ Obtém a configuração de precisão para uma arma NPC.
 
 ## Retornos
 
-Retorna o valor de precisão (0,0 a 1,0) ou -1,0 em caso de erro.
+Retorna o valor de precisão (0.0 a 1.0) ou -1.0 em caso de erro.
 
 ## Exemplos
 
@@ -46,8 +46,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- A precisão é um valor entre 0,0 (0% de precisão) e 1,0 (100% de precisão)
-- Retorna -1,0 se NPC ID for inválido ou a arma não existir
+- A precisão é um valor entre 0.0 (0% de precisão) e 1.0 (100% de precisão)
+- Retorna -1.0 se NPC ID for inválido ou a arma não existir
 
 ## Funções Relacionadas
 

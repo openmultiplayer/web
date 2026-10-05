@@ -39,10 +39,10 @@ public OnPlayerConnect(playerid)
 
     new Float:rotationX, Float:rotationY, Float:rotationZ, Float:zoom;
     PlayerTextDrawGetPreviewRot(playerid, gMyTextdraw[playerid], rotationX, rotationY, rotationZ, zoom);
-    // rotaçãoX = -10,0
-    // rotaçãoY = 0,0
-    // rotaçãoZ = -20,0
-    // ampliação = 1,0
+    // rotaçãoX = -10.0
+    // rotaçãoY = 0.0
+    // rotaçãoZ = -20.0
+    // ampliação = 1.0
     return 1;
 }
 ```
