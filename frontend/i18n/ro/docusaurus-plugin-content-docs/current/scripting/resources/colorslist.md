@@ -173,7 +173,7 @@ Etichetele de culoare ale textului jocului pot fi folosite pentru a forma cu uș
 
 [![Image:Blueandred.png](https://assets.open.mp/assets/images/colorList/Blueandred.png)
 
-Acum aceste culori sunt destul de întunecate. Le puteți face mai luminoase folosind ** ~ h ~ ** după codul de culoare:
+Acum aceste culori sunt destul de întunecate. Le puteți face mai luminoase folosind **`~h~`** după codul de culoare:
 
 ```c
 ~w~Hello this is ~b~~h~blue ~w~and this is ~r~~h~red

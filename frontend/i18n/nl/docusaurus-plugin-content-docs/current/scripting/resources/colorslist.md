@@ -86,6 +86,8 @@ Niet in textdraws. Zie [GameTextStyle](../resources/gametextstyles).
 {FFFFFF}Hallo dit is {00FF00}groen {FFFFFF}en dit is {FF0000}rood
 ```
 
+![Image:Example1.png](https://assets.open.mp/assets/images/colorList/Example1.png)
+
 #### Voorbeeld met macro
 
 ```c
@@ -123,3 +125,21 @@ Speciale tags voor GameText-kleuren:
 ```
 
 Combinaties vormen varianten, bijvoorbeeld `~r~~h~` voor lichtrood.
+
+```c
+~y~                yellow
+~r~~h~             light red
+~r~~h~~h~          red pink
+~r~~h~~h~~h~       dark pink
+~r~~h~~h~~h~~h~    light red pink
+~r~~h~~h~~h~~h~~h~ pink
+~g~~h~             light green
+~g~~h~~h~          more light green
+~g~~h~~h~~h~       sea green
+~g~~h~~h~~h~~h~    offwhite
+~b~~h~             blue
+~b~~h~~h~          purplish blue
+~b~~h~~h~~h~       light blue
+~y~~h~~h~          offwhite
+~p~~h~             medium pink
+```

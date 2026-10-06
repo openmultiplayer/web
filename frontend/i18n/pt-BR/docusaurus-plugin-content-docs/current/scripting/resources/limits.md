@@ -36,13 +36,13 @@ tags: []
 
 ## Propriedades do servidor - SA-MP / omp
 
-| Tipo | Limite SA-MP (0.3.7) | op |
-| --------------------------------------------------------- | --------------------- | --------------------- |
-| Gamemodes | 16 | Ilimitado |
-| Filterscripts | 16 | Ilimitado |
-| Text Input (Chat/Commands) | 128 células (512 bytes) | 128 células (512 bytes) |
-| Text Output | 144 células (576 bytes) | 128 células (512 bytes) |
-| Name Length ([SetPlayerName](../functions/SetPlayerName)) | 24 caracteres | 24 caracteres |
+| Tipo                                                      | Limite SA-MP (0.3.7)    | omp                     |
+| --------------------------------------------------------- | ----------------------- | ----------------------- |
+| Gamemodes                                                 | 16                      | Ilimitado               |
+| Filterscripts                                             | 16                      | Ilimitado               |
+| Text Input (Chat/Commands)                                | 128 células (512 bytes) | 128 células (512 bytes) |
+| Text Output                                               | 144 células (576 bytes) | 144 células (576 bytes) |
+| Name Length ([SetPlayerName](../functions/SetPlayerName)) | 24 caracteres           | 24 caracteres           |
 
 ## Textdraws
 

@@ -206,4 +206,4 @@ Aqui está uma lista das cores originais dos carros usadas por cada tipo de carr
 | yosemite | `53,32`, `15,32`, `45,32`, `34,30`, `65,32`, `14,32`, `12,32`, `43,32` |
 | zr350 | `92,1`, `94,1`, `101,1`, `121,1`, `0,1`, `22,1`, `36,1`, `75,1` |
 
-As cores para **camper**, **cimento** e **squalo** são inacessíveis, pois possuem quatro cores IDs em vez de duas.
+As cores para **camper**, **cement** e **squalo** são inacessíveis, pois possuem quatro cores IDs em vez de duas.

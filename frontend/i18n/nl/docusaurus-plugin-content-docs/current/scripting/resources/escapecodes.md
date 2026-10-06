@@ -28,4 +28,4 @@ De puntkomma na `\ddd;` en `\xhhh;` is optioneel en kan de escape‑reeks explic
 
 :::
 
-Bron: `pawn-lang.pdf` (p. 99)
+Bron: [`pawn-lang.pdf` (p. 99)](https://github.com/pawn-lang/compiler/raw/master/doc/pawn-lang.pdf)

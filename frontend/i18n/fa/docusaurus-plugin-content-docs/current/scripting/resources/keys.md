@@ -12,7 +12,7 @@ sidebar_label: "دکمه ها"
 
 :::
 
-| کلان‌دستور (ماکرو)       | مقدار     | کد جایگذاری (روی زمین) (7) | کد جایگذاری (در ماشین) (7)    | کلید پیشفرض (روی زمین)                            | کلید پیشفرض (در ماشین) |
+| کلان‌دستور (ماکرو)       | مقدار     | کد جایگذاری (روی زمین) (6) | کد جایگذاری (در ماشین) (6)    | کلید پیشفرض (روی زمین)                            | کلید پیشفرض (در ماشین) |
 | ------------------------ | --------- | -------------------------- | ----------------------------- | ------------------------------------------------- | ---------------------- |
 | KEY_ACTION               | 1         | \~k~\~PED_ANSWER_PHONE~    | \~k~\~VEHICLE_FIREWEAPON_ALT~ | TAB                                               | ALT GR / LCTRL / NUM0  |
 | KEY_CROUCH               | 2         | \~k~\~PED_DUCK~            | \~k~\~VEHICLE_HORN~           | C                                                 | H / CAPSLOCK           |
@@ -26,13 +26,13 @@ sidebar_label: "دکمه ها"
 | KEY_LOOK_BEHIND          | 512       | \~k~\~PED_LOOKBEHIND~      | \~k~\~VEHICLE_LOOKBEHIND~     | NUM1 / MMB (دکمه وسط ماوس - فشردن دکمه چرخش ماوس) | 2                      |
 | KEY_SUBMISSION           | 512       | -                          | \~k~\~TOGGLE_SUBMISSIONS~     | NUM1 / MMB (دکمه وسط ماوس - فشردن دکمه چرخش ماوس) | 2 / NUMPAD +           |
 | KEY_WALK                 | 1024      | \~k~\~SNEAK_ABOUT~         | -                             | LALT                                              | -                      |
-| KEY_ANALOG_UP            | 2048      | -                          | \~k~\~VEHICLE_TURRETUP~       | NUM8(6)                                           | NUM8                   |
-| KEY_ANALOG_DOWN          | 4096      | -                          | \~k~\~VEHICLE_TURRETDOWN~     | NUM2(6)                                           | NUM2                   |
+| KEY_ANALOG_UP            | 2048      | -                          | \~k~\~VEHICLE_TURRETUP~       | NUM8(5)                                           | NUM8                   |
+| KEY_ANALOG_DOWN          | 4096      | -                          | \~k~\~VEHICLE_TURRETDOWN~     | NUM2(5)                                           | NUM2                   |
 | KEY_ANALOG_LEFT          | 8192      | \~k~\~VEHICLE_LOOKLEFT~    | \~k~\~VEHICLE_TURRETLEFT~     | NUM4                                              | NUM4                   |
 | KEY_ANALOG_RIGHT         | 16384     | \~k~\~VEHICLE_LOOKRIGHT~   | \~k~\~VEHICLE_TURRETRIGHT~    | NUM6                                              | NUM6                   |
 | KEY_YES(2)               | 65536     | \~k~\~CONVERSATION_YES~    | \~k~\~CONVERSATION_YES~       | Y                                                 | Y                      |
 | KEY_NO(2)                | 131072    | \~k~\~CONVERSATION_NO~     | \~k~\~CONVERSATION_NO~        | N                                                 | N                      |
-| KEY_CTRL_BACK(2)         | 262144(4) | \~k~\~GROUP_CONTROL_BWD~   | \~k~\~GROUP_CONTROL_BWD~      | H                                                 | H                      |
+| KEY_CTRL_BACK(2)         | 262144(4) | \~k~\~GROUP_CONTROL_BWD~   | \~k~\~GROUP_CONTROL_BWD~      | H                                                 | H, R                   |
 | UNDEFINED(3)             | -         | \~k~\~GROUP_CONTROL_FWD~   | \~k~\~GROUP_CONTROL_FWD~      | G                                                 | G                      |
 | KEY_UP                   | -128      | \~k~\~GO_FORWARD~          | \~k~\~VEHICLE_STEERUP~        | UP                                                | UP                     |
 | KEY_DOWN                 | 128       | \~k~\~GO_BACK~             | \~k~\~VEHICLE_STEERDOWN~      | DOWN                                              | DOWN                   |
@@ -56,8 +56,8 @@ sidebar_label: "دکمه ها"
 
 **(4)** اگر شماره دکمه "262144" کار نکر از شماره دکمه "2" استفاده کنید.
 
-**(6)** فقط وقتی تشخیص داده میشود که که پیکربندی "JOYPAD" برای کنترل کننده انتخاب شده باشد.
+**(5)** فقط وقتی تشخیص داده میشود که که پیکربندی "JOYPAD" برای کنترل کننده انتخاب شده باشد.
 
-**(7)** کد های جاگذاری فقط برای [پیام های کلاینت](../functions/SendDeathMessage)، [textdraw ها](../functions/TextDrawCreate) و [gametext ها](../functions/GameTextForPlayer) به کار میروند.
+**(6)** کد های جاگذاری فقط برای [پیام های کلاینت](../functions/SendDeathMessage)، [textdraw ها](../functions/TextDrawCreate) و [gametext ها](../functions/GameTextForPlayer) به کار میروند.
 
 </div>

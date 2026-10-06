@@ -7,61 +7,63 @@ tags: []
 
 ## Entitas In-game
 
-| Tipe                                                           | Batasan       |
-| -------------------------------------------------------------- | ------------- |
-| Pemain                                                         | 1000          |
-| Kendaraan (4)(6)                                               | 2000          |
-| Model Kendaraan (1)                                            | Tak hingga    |
-| Objek (4)(6)                                                   | 1000          |
-| Dunia Virtual (_Virtual Worlds_)                               | 2,147,483,647 |
-| Interior                                                       | 256           |
-| Kelas                                                          | 320           |
-| Ikon Peta (4)                                                  | 100           |
-| Cekpoin Balap (_Race Checkpoints_) (4)                         | 1             |
-| Cekpoin (4)                                                    | 1             |
-| Pickup (4)                                                     | 4096          |
-| Label 3D Global (4)                                            | 1024          |
-| Label Teks 3D per-pemain (4)                                   | 1024          |
-| String Chat Bubble                                             | 144 karakter  |
-| Panjang teks SetObjectMaterialText,SetPlayerObjectMaterialText | 2048 karakter |
-| Zona Gang (_Gangzone_)                                         | 1024          |
-| Menu                                                           | 128           |
-| Objek player terpasang                                         | 10            |
-| Variable Player                                                | 800           |
-| Aktor (since 0.3.7) (4)(5)                                     | 1000          |
-| Ledakan                                                        | 10            |
+| Tipe                                                            | Batasan (0.3.7) |
+| --------------------------------------------------------------- | --------------- |
+| Pemain                                                          | 1000            |
+| [Kendaraan](../functions/CreateVehicle)<sup>(4)(6)</sup>        | 2000            |
+| [Model Kendaraan](../functions/CreateVehicle)<sup>(1)</sup>     | Tak hingga      |
+| [Objek](../functions/CreateObject)<sup>(4)(6)</sup>             | 1000            |
+| Dunia Virtual (_Virtual Worlds_)                                | 2,147,483,647   |
+| Interior                                                        | 256             |
+| Kelas                                                           | 320             |
+| Ikon Peta<sup>(4)</sup>                                         | 100             |
+| Cekpoin Balap (_Race Checkpoints_)<sup>(4)</sup>                | 1               |
+| Cekpoin<sup>(4)</sup>                                           | 1               |
+| [Pickup](../functions/CreatePickup)<sup>(4)</sup>               | 4096            |
+| Label 3D Global<sup>(4)</sup>                                   | 1024            |
+| Label Teks 3D per-pemain<sup>(4)</sup>                          | 1024            |
+| String Chat Bubble                                              | 144 karakter    |
+| Panjang teks SetObjectMaterialText, SetPlayerObjectMaterialText | 2048 karakter   |
+| Zona Gang (_Gangzone_)                                          | 1024            |
+|                                                                 | 1024            |
+| Menu                                                            | 128             |
+| Objek player terpasang                                          | 10              |
+| Variable Player                                                 | 800             |
+|                                                                 | Tak hingga      |
+| Aktor (since 0.3.7)<sup>(4)(5)</sup>                            | 1000            |
+| Ledakan                                                         | 10              |
 
-## Properti Server
+## Properti Server - SA-MP / omp
 
-| Tipe                         | Batasan             |
-| ---------------------------- | ------------------- |
-| Gamemodes                    | 16                  |
-| Filterscripts                | 16                  |
-| Masukan Teks (Chat/Perintah) | 128 sel (512 bytes) |
-| Keluaran Teks                | 144 sel (576 bytes) |
-| Panjang Nama (SetPlayerName) | 24 karakter         |
+| Tipe                         | Batasan SA-MP (0.3.7) | omp                 |
+| ---------------------------- | --------------------- | ------------------- |
+| Gamemodes                    | 16                    | Tak hingga          |
+| Filterscripts                | 16                    | Tak hingga          |
+| Masukan Teks (Chat/Perintah) | 128 sel (512 bytes)   | 128 sel (512 bytes) |
+| Keluaran Teks                | 144 sel (576 bytes)   | 144 sel (576 bytes) |
+| Panjang Nama (SetPlayerName) | 24 karakter           | 24 karakter         |
 
 ## Textdraws
 
-| Type                                                 | Limit         |
-| ---------------------------------------------------- | ------------- |
-| Panjang string (2)                                   | 1024 karakter |
-| Yang dapat ditampilkan dalam 1 layar klien (3)       | 2048 + 256    |
-| Yang dapat ditampilkan dalam 1 layar klien (sprites) | 100           |
-| Dibuat oleh _server_ (Global)                        | 2048          |
-| Dibuat oleh _server_ (Per-Player)                    | 256           |
+| Type                                                     | Limit (0.3.7) |
+| -------------------------------------------------------- | ------------- |
+| Panjang string<sup>(2)</sup>                             | 1024 karakter |
+| Yang dapat ditampilkan dalam 1 layar klien<sup>(3)</sup> | 2048 + 256    |
+| Yang dapat ditampilkan dalam 1 layar klien (sprites)     | 100           |
+| Dibuat oleh _server_ (Global)                            | 2048          |
+| Dibuat oleh _server_ (Per-Player)                        | 256           |
 
 ## Dialog
 
-| Tipe                                                                | Batasan |
-| ------------------------------------------------------------------- | ------- |
-| ID Dialog                                                           | 32768   |
-| Info (Teks utama)                                                   | 4096    |
-| Judul                                                               | 64      |
-| Kotak Teks Masukan (_Input Text Box_) (DIALOG_STYLE_INPUT/PASSWORD) | 128     |
-| Jumlah Kolom pada Daftar Tab (DIALOG_STYLE_TABLIST(\_HEADERS))      | 4       |
-| Karakter Kolom pada Daftar Tab (DIALOG_STYLE_TABLIST(\_HEADERS))    | 128     |
-| Karakter Baris pada Daftar Tab (DIALOG_STYLE_TABLIST(\_HEADERS))    | 256     |
+| Tipe                                                                | Batasan (0.3.7) |
+| ------------------------------------------------------------------- | --------------- |
+| ID Dialog                                                           | 32768           |
+| Info (Teks utama)                                                   | 4096            |
+| Judul                                                               | 64              |
+| Kotak Teks Masukan (_Input Text Box_) (DIALOG_STYLE_INPUT/PASSWORD) | 128             |
+| Jumlah Kolom pada Daftar Tab (DIALOG_STYLE_TABLIST(\_HEADERS))      | 4               |
+| Karakter Kolom pada Daftar Tab (DIALOG_STYLE_TABLIST(\_HEADERS))    | 128             |
+| Karakter Baris pada Daftar Tab (DIALOG_STYLE_TABLIST(\_HEADERS))    | 256             |
 
 Catatan:
 

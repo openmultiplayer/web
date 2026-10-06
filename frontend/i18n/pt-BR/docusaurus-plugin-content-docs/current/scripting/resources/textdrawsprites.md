@@ -19,14 +19,14 @@ Alguns sprites do textdraw parecem menores em comparação com seu tamanho real 
 
 ## Bibliotecas
 
-### fontes.txd
+### fonts.txd
 
 | Texture | Visualização |
 | ------- | ----------------------------------------------------------------- |
 | font1 | ![](https://assets.open.mp/assets/images/sprites/fonts/font1.png) |
 | font2 | ![](https://assets.open.mp/assets/images/sprites/fonts/font2.png) |
 
-###hud.txd
+### hud.txd
 
 | Texture | Visualização |
 | ------------------- | ----------------------------------------------------------------------------- |
@@ -152,25 +152,25 @@ Alguns sprites do textdraw parecem menores em comparação com seu tamanho real 
 | jetpack:jetpackicon           | -       | ![](https://assets.open.mp/assets/images/weaponIcons/jetpack.png)          |
 | skateboard:skateboardIcon     | -       | ![](https://assets.open.mp/assets/images/weaponIcons/skateboard.png)       |
 
-### introdução1.txd
+### intro1.txd
 
 | Texture | Visualização |
 | ------- | ------------------------------------------------------------------- |
 | intro1 | ![](https://assets.open.mp/assets/images/sprites/intro1/intro1.png) |
 
-### introdução2.txd
+### intro2.txd
 
 | Texture | Visualização |
 | ------- | ------------------------------------------------------------------- |
 | intro2 | ![](https://assets.open.mp/assets/images/sprites/intro2/intro2.png) |
 
-### introdução3.txd
+### intro3.txd
 
 | Texture | Visualização |
 | ------- | ------------------------------------------------------------------- |
 | intro3 | ![](https://assets.open.mp/assets/images/sprites/intro3/intro3.png) |
 
-### introdução4.txd
+### intro4.txd
 
 | Texture | Visualização |
 | ------- | ------------------------------------------------------------------- |

@@ -40,7 +40,7 @@ tags: []
 | Gamemodes                                                 | 16                    | Unlimited             |
 | Filterscripts                                             | 16                    | Unlimited             |
 | Text Input (Chat/Commands)                                | 128 cells (512 bytes) | 128 cells (512 bytes) |
-| Text Output                                               | 144 cells (576 bytes) | 128 cells (512 bytes) |
+| Text Output                                               | 144 cells (576 bytes) | 144 cells (576 bytes) |
 | Name Length ([SetPlayerName](../functions/SetPlayerName)) | 24 characters         | 24 characters         |
 
 ## Textdraws

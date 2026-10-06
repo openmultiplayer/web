@@ -244,7 +244,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **picador:** 81,8, 32,8, 43,8, 67,8, 11,11, 8,90, 2,2, 83,13
 
-**pizzaboy:** ,3,6
+**pizzaboy:** 3,6
 
 **polmav:** 0,1
 
@@ -254,7 +254,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **premier:** 37,37, 42,42, 53,53, 62,62, 7,7, 10,10, 11,11, 15,15
 
-**previon:** 83,1, 87,1, 92,1, 95,1, 109,1, 119,45, 11,1,
+**previon:** 83,1, 87,1, 92,1, 95,1, 109,1, 119,45, 11,1
 
 **primo:** 122,1, 123,1, 125,1, 10,1, 24,1, 37,1, 55,1, 66,1
 

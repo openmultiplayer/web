@@ -9,7 +9,7 @@ Se foloseste in functia [PlayCrimeReportForPlayer](../functions/PlayCrimeReportF
 | ID Crima | zece-cod | Descriere                                                                |
 | -------- | -------- | ------------------------------------------------------------------------ |
 | 3        | 10-71    | Recomandați natura incendiului (dimensiunea, tipul, conținutul clădirii) |
-| 4        | 10-47    | Sunt necesare reparații de urgență la drum                               |
+| 4        | 10-37    | Sunt necesare reparații de urgență la drum                               |
 | 5        | 10-81    | Raport Breatherlizer                                                     |
 | 6        | 10-24    | Temă finalizată                                                          |
 | 7        | 10-21    | Sunați () prin telefon                                                   |

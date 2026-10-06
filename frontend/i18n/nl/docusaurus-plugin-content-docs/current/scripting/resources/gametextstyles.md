@@ -12,17 +12,35 @@ Deze pagina behandelt gametext-stijlen en gebruik in textdraws en per-speler gam
 
 Gebruik kleurtags om delen van tekst te kleuren, bv. `~y~Gele tekst~y~`.
 
-| Code          | Kleur                                                          | Omschrijving                                   |
-| ------------- | -------------------------------------------------------------- | ---------------------------------------------- |
-| N/B           | ![](https://assets.open.mp/assets/images/gameTextStyles/-.png) | Standaardkleur                                 |
-| `~h~`         | ![](https://assets.open.mp/assets/images/gameTextStyles/h.png) | Lichtere variant van de huidige kleur          |
-| `~r~` …       | ![](https://assets.open.mp/assets/images/gameTextStyles/r.png) | Rood, meerdere lichtheidsniveaus               |
-| `~g~` …       | ![](https://assets.open.mp/assets/images/gameTextStyles/g.png) | Groen, meerdere lichtheidsniveaus              |
-| `~b~` …       | ![](https://assets.open.mp/assets/images/gameTextStyles/b.png) | Blauw, meerdere lichtheidsniveaus              |
-| `~p~` …       | ![](https://assets.open.mp/assets/images/gameTextStyles/p.png) | Paars, meerdere lichtheidsniveaus              |
-| `~y~` …       | ![](https://assets.open.mp/assets/images/gameTextStyles/y.png) | Geel, meerdere lichtheidsniveaus               |
-| `~l~`         | ![](https://assets.open.mp/assets/images/gameTextStyles/l.png) | Kleine letter L, zwart, geen lichting          |
-| `~w~` / `~s~` | ![](https://assets.open.mp/assets/images/gameTextStyles/w.png) | Wit; `~h~` maakt alles uiteindelijk deze kleur |
+| Code                 | Kleur                                                               | Omschrijving                                   |
+| -------------------- | ------------------------------------------------------------------- | ---------------------------------------------- |
+| N/B                  | ![](https://assets.open.mp/assets/images/gameTextStyles/-.png)      | Standaardkleur                                 |
+| `~h~`                | ![](https://assets.open.mp/assets/images/gameTextStyles/h.png)      | Lichtere variant van de huidige kleur          |
+| `~h~~h~`             | ![](https://assets.open.mp/assets/images/gameTextStyles/hh.png)     | Lichtere variant van de huidige kleur          |
+| `~r~`                | ![](https://assets.open.mp/assets/images/gameTextStyles/r.png)      | Rood, meerdere lichtheidsniveaus               |
+| `~r~~h~`             | ![](https://assets.open.mp/assets/images/gameTextStyles/rh.png)     |                                                |
+| `~r~~h~~h~`          | ![](https://assets.open.mp/assets/images/gameTextStyles/rhh.png)    |                                                |
+| `~r~~h~~h~~h~`       | ![](https://assets.open.mp/assets/images/gameTextStyles/rhhh.png)   |                                                |
+| `~r~~h~~h~~h~~h~`    | ![](https://assets.open.mp/assets/images/gameTextStyles/rhhhh.png)  |                                                |
+| `~r~~h~~h~~h~~h~~h~` | ![](https://assets.open.mp/assets/images/gameTextStyles/rhhhhh.png) |                                                |
+| `~g~`                | ![](https://assets.open.mp/assets/images/gameTextStyles/g.png)      | Groen, meerdere lichtheidsniveaus              |
+| `~g~~h~`             | ![](https://assets.open.mp/assets/images/gameTextStyles/gh.png)     |                                                |
+| `~g~~h~~h~`          | ![](https://assets.open.mp/assets/images/gameTextStyles/ghh.png)    |                                                |
+| `~g~~h~~h~~h~`       | ![](https://assets.open.mp/assets/images/gameTextStyles/ghhh.png)   |                                                |
+| `~g~~h~~h~~h~~h~`    | ![](https://assets.open.mp/assets/images/gameTextStyles/ghhhh.png)  |                                                |
+| `~b~`                | ![](https://assets.open.mp/assets/images/gameTextStyles/b.png)      | Blauw, meerdere lichtheidsniveaus              |
+| `~b~~h~`             | ![](https://assets.open.mp/assets/images/gameTextStyles/bh.png)     |                                                |
+| `~b~~h~~h~`          | ![](https://assets.open.mp/assets/images/gameTextStyles/bhh.png)    |                                                |
+| `~b~~h~~h~~h~`       | ![](https://assets.open.mp/assets/images/gameTextStyles/bhhh.png)   |                                                |
+| `~p~`                | ![](https://assets.open.mp/assets/images/gameTextStyles/p.png)      | Paars, meerdere lichtheidsniveaus              |
+| `~p~~h~`             | ![](https://assets.open.mp/assets/images/gameTextStyles/ph.png)     |                                                |
+| `~p~~h~~h~`          | ![](https://assets.open.mp/assets/images/gameTextStyles/phh.png)    |                                                |
+| `~y~`                | ![](https://assets.open.mp/assets/images/gameTextStyles/y.png)      | Geel, meerdere lichtheidsniveaus               |
+| `~y~~h~`             | ![](https://assets.open.mp/assets/images/gameTextStyles/yh.png)     |                                                |
+| `~y~~h~~h~`          | ![](https://assets.open.mp/assets/images/gameTextStyles/yhh.png)    |                                                |
+| `~l~`                | ![](https://assets.open.mp/assets/images/gameTextStyles/l.png)      | Kleine letter L, zwart, geen lichting          |
+| `~w~` / `~s~`        | ![](https://assets.open.mp/assets/images/gameTextStyles/w.png)      | Wit; `~h~` maakt alles uiteindelijk deze kleur |
+| `~w~~h~` / `~s~~h~`  | ![](https://assets.open.mp/assets/images/gameTextStyles/wh.png)     |                                                |
 
 ---
 

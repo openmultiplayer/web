@@ -19,7 +19,7 @@ description: Informasi mengenai Gaya Dialog
 ```c
 public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
 {
-    printf( "playerid = %d, dialogid = ID_DIALOG_KAMU, response = %d, listitem = %d, inputtext = '%s' (size: %d)", playerid, response, listitem, inputtext, strlen( inputtext ) );
+    printf("playerid = %d, dialogid = ID_DIALOG_KAMU, response = %d, listitem = %d, inputtext = '%s' (size: %d)", playerid, response, listitem, inputtext, strlen(inputtext));
     return 1;
 }
 ```

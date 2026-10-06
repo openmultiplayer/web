@@ -16,9 +16,9 @@ Por exemplo, o status dos pneus armazena 4 bits para os 4 pneus. O valor é 1 se
 
 :::note
 
-Para mais informações sobre estados de painéis, veja [Panel States](panelstates).
-Para mais informações sobre estados de portas, veja [Door States](doorstates).
-Para mais informações sobre estados de luzes, veja [Light States](lightstates).
+Para mais informações sobre estados de painéis, veja [Panel States](panelstates).  
+Para mais informações sobre estados de portas, veja [Door States](doorstates).  
+Para mais informações sobre estados de luzes, veja [Light States](lightstates).  
 Para mais informações sobre estados de pneus, veja [Tire States](tirestates).
 
 :::
