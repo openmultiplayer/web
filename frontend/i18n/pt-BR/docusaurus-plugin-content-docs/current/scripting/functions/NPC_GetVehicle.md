@@ -12,8 +12,8 @@ tags: ["npc", "vehicle"]
 
 Obtém o veículo ID do veículo atual de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

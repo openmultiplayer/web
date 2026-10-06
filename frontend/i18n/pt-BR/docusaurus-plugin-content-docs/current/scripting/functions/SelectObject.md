@@ -10,8 +10,8 @@ tags: []
 
 Exiba o cursor e permita que o jogador selecione um objeto. OnPlayerSelectObject é chamado quando o jogador seleciona um objeto.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------------------------- |
+| Nome     | Descrição                                                   |
+| -------- | ----------------------------------------------------------- |
 | playerid | O ID do jogador que deverá ser capaz de selecionar o objeto |
 
 ## Retornos

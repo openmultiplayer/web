@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Function ini dapat digunakan untuk membuat Object berputar dengan lancar. Namun untuk mencapai ini, Object juga harus dipindahkan. Rotasi yang ditentukan adalah rotasi yang akan dimiliki Object setelah gerakan. Oleh karena itu Object tidak akan berputar ketika tidak ada gerakan yang diterapkan. Untuk contoh skrip, lihat skrip filter ferriswheel.pwn yang dibuat oleh Kye yang disertakan dalam paket server (SA-MP 0.3d ke atas). Untuk memahami sepenuhnya catatan di atas, Anda dapat (tetapi tidak terbatas pada) menaikkan posisi z sebesar (+0,001) dan kemudian (-0,001) setelah memindahkannya lagi, karena tidak mengubah X,Y atau Z tidak akan memutar Object.
+Function ini dapat digunakan untuk membuat Object berputar dengan lancar. Namun untuk mencapai ini, Object juga harus dipindahkan. Rotasi yang ditentukan adalah rotasi yang akan dimiliki Object setelah gerakan. Oleh karena itu Object tidak akan berputar ketika tidak ada gerakan yang diterapkan. Untuk contoh skrip, lihat skrip filter ferriswheel.pwn yang dibuat oleh Kye yang disertakan dalam paket server (SA-MP 0.3d ke atas). Untuk memahami sepenuhnya catatan di atas, Anda dapat (tetapi tidak terbatas pada) menaikkan posisi z sebesar (+0.001) dan kemudian (-0.001) setelah memindahkannya lagi, karena tidak mengubah X,Y atau Z tidak akan memutar Object.
 
 :::
 

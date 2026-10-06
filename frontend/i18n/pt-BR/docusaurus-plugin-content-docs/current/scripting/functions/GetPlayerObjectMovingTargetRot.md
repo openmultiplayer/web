@@ -38,9 +38,9 @@ new
     Float:rotationZ;
 
 GetPlayerObjectMovingTargetRot(playerid, playerobjectid, rotationX, rotationY, rotationZ);
-// rotaçãoX = 0,00000
-// rotaçãoY = -90,00000
-// rotaçãoZ = 10,00000
+// rotaçãoX = 0.00000
+// rotaçãoY = -90.00000
+// rotaçãoZ = 10.00000
 ```
 ## Funções Relacionadas
 

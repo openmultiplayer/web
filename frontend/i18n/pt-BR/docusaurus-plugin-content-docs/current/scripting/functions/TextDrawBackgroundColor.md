@@ -10,10 +10,10 @@ tags: ["textdraw"]
 
 Ajusta a cor de fundo da área de desenho de texto (o contorno/sombra, não a caixa. Para a cor da caixa, consulte [TextDrawBoxColor](TextDrawBoxColor)).
 
-| Nome | Descrição |
-| ---------------- | ----------------------------------------------------- |
-| Text:textid | O ID do textdraw para definir a cor de fundo de |
-| backgroundColour | A cor com a qual o textdraw deve ser definido.         |
+| Nome             | Descrição                                       |
+| ---------------- | ----------------------------------------------- |
+| Text:textid      | O ID do textdraw para definir a cor de fundo de |
+| backgroundColour | A cor com a qual o textdraw deve ser definido.  |
 
 ## Retornos
 

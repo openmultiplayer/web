@@ -36,8 +36,8 @@ public OnPlayerConnect(playerid)
 
     new Float:width, Float:height;
     PlayerTextDrawGetTextSize(playerid, welcomeText[playerid], width, height);
-    // largura = 2,0
-    // altura = 3,6
+    // largura = 2.0
+    // altura = 3.6
     return 1;
 }
 ```

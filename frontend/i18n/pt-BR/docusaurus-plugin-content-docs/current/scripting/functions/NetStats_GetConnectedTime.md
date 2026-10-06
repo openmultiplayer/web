@@ -10,8 +10,8 @@ tags: ["network monitoring"]
 
 Obtém a quantidade de tempo (em milissegundos) durante a qual um jogador esteve conectado ao servidor.
 
-| Nome | Descrição |
-| -------- | -------------------------------------------------- |
+| Nome     | Descrição                                      |
+| -------- | ---------------------------------------------- |
 | playerid | O ID do jogador para obter o tempo de conexão. |
 
 ## Retornos

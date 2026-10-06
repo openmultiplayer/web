@@ -12,8 +12,8 @@ tags: ["player", "ip address"]
 
 Obtenha o endereço Raw IP do jogador especificado (v4).
 
-| Nome | Descrição |
-| -------- | -------------------------------------------------- |
+| Nome     | Descrição                                        |
+| -------- | ------------------------------------------------ |
 | playerid | O ID do jogador do qual obter o endereço Raw IP. |
 
 ## Retornos

@@ -12,8 +12,8 @@ tags: ["object"]
 
 Obtenha a rotação sincronizada de um objeto.
 
-| Nome | Descrição |
-| -------- | --------------------- |
+| Nome     | Descrição       |
+| -------- | --------------- |
 | objectid | O ID do objeto. |
 
 ## Retornos

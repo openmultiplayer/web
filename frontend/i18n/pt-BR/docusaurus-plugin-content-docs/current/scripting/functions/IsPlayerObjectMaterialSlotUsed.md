@@ -12,10 +12,10 @@ tags: ["player", "object", "playerobject"]
 
 Verifica se um slot de material de objeto de jogador é usado.
 
-| Nome | Descrição |
-| ------------- | ------------------------------------------- |
-| playerid | O ID do jogador.                       |
-| objectid | O ID do objeto do jogador.                |
+| Nome          | Descrição                                |
+| ------------- | ---------------------------------------- |
+| playerid      | O ID do jogador.                         |
+| objectid      | O ID do objeto do jogador.               |
 | materialIndex | O índice de material no objeto. (0 a 15) |
 
 ## Retornos

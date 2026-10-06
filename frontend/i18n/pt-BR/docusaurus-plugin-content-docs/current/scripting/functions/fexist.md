@@ -10,8 +10,8 @@ tags: ["file management"]
 
 Verifica se existe um arquivo específico no diretório scriptfiles.
 
-| Nome | Descrição |
-| ---------------- | --------------------- |
+| Nome             | Descrição          |
+| ---------------- | ------------------ |
 | const filename[] | O nome do arquivo. |
 
 ## Retornos

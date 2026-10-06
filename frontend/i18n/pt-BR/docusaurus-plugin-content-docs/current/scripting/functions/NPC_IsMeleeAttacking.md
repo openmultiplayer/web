@@ -12,8 +12,8 @@ tags: ["npc", "melee", "fighting"]
 
 Verifica se um NPC está realizando um ataque corpo a corpo.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

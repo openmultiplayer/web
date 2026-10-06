@@ -12,8 +12,8 @@ tags: ["npc", "player", "aiming", "weapon"]
 
 Obtém o ID do jogador que um NPC está visando atualmente.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

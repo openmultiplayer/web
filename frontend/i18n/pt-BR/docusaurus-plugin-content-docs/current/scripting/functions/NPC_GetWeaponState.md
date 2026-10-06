@@ -12,8 +12,8 @@ tags: ["npc", "weapon"]
 
 Obtém o estado da arma de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

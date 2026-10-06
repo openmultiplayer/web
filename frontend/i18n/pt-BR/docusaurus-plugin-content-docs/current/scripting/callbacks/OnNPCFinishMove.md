@@ -12,8 +12,8 @@ tags: ["npc", "movement"]
 
 Esse callback é chamado quando um NPC termina de se mover para seu destino.
 
-| Nome | Descrição |
-| ----- | -------------------------------------- |
+| Nome  | Descrição                            |
+| ----- | ------------------------------------ |
 | npcid | O ID do NPC que terminou de se mover |
 
 ## Exemplos

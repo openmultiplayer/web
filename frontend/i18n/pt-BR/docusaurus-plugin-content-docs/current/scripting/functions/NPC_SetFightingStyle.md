@@ -12,9 +12,9 @@ tags: ["npc", "combat", "fighting", "melee"]
 
 Define o estilo de luta de um NPC para combate corpo a corpo.
 
-| Nome | Descrição |
-| ----- | --------------------- |
-| npcid | O ID do NPC |
+| Nome  | Descrição           |
+| ----- | ------------------- |
+| npcid | O ID do NPC         |
 | style | O estilo de luta ID |
 
 ## Retornos

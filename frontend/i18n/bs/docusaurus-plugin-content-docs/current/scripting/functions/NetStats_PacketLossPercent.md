@@ -42,7 +42,7 @@ Imajte na umu da će ova funkcija prijaviti pakete koje je server izgubio. Broj 
 
 :::tip
 
-Sve veće od 0,0% već bi trebalo biti razlog za zabrinutost. Sve što je veće od 1,0% je potpuno loše.
+Sve veće od 0.0% već bi trebalo biti razlog za zabrinutost. Sve što je veće od 1.0% je potpuno loše.
 
 :::
 

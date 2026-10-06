@@ -12,9 +12,9 @@ tags: ["player", "pickup"]
 
 Mostra uma pickup para um jogador específico.
 
-| Nome | Descrição |
-| -------- | ----------------------------------------------- |
-| playerid | O ID do jogador.                           |
+| Nome     | Descrição                                      |
+| -------- | ---------------------------------------------- |
+| playerid | O ID do jogador.                               |
 | pickupid | O ID do captador a ser exibido para o jogador. |
 
 ## Retornos

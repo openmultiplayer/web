@@ -10,8 +10,8 @@ tags: []
 
 Obtenha o valor booleano de uma variável de console.
 
-| Nome | Descrição |
-| ------------ | ----------------------------------------------------- |
+| Nome         | Descrição                                          |
+| ------------ | -------------------------------------------------- |
 | const cvar[] | O nome da variável booleana da qual obter o valor. |
 
 ## Retornos

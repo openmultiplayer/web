@@ -10,15 +10,15 @@ tags: []
 
 Obtenha o valor flutuante de uma variável de console.
 
-| Nome | Descrição |
-| ------------ | --------------------------------------------------- |
+| Nome         | Descrição                                       |
+| ------------ | ----------------------------------------------- |
 | const cvar[] | O nome da variável float da qual obter o valor. |
 
 ## Retornos
 
 O valor da variável de console especificada.
 
-0,0 se a variável de console especificada não for um número inteiro ou não existir.
+0.0 se a variável de console especificada não for um número inteiro ou não existir.
 
 ## Exemplos
 

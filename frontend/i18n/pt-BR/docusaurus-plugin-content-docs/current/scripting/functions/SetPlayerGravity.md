@@ -12,9 +12,9 @@ tags: ["player"]
 
 Defina a gravidade de um jogador.
 
-| Nome | Descrição |
-| ------------- | ----------------------------------------------------------------- |
-| playerid | O ID do jogador para definir a gravidade.                          |
+| Nome          | Descrição                                                      |
+| ------------- | -------------------------------------------------------------- |
+| playerid      | O ID do jogador para definir a gravidade.                      |
 | Float:gravity | O valor em que a gravidade deve ser definida (entre -50 e 50). |
 
 ## Retornos

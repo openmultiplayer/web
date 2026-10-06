@@ -10,10 +10,10 @@ Esta página lista todas as constantes específicas para funções NPC em open.m
 
 ## Limites
 
-| Valor | Constante | Descrição |
-| ----- | ------------- | ----------------------- |
-| 1000 | MAX_NPCS | Número máximo de NPCs |
-| 64 | NPC_MAX_NODES | Número máximo de nós |
+| Valor | Constante     | Descrição             |
+| ----- | ------------- | --------------------- |
+| 1000  | MAX_NPCS      | Número máximo de NPCs |
+| 64    | NPC_MAX_NODES | Número máximo de nós  |
 
 ## Constantes inválidas
 

@@ -15,7 +15,7 @@ Define o nível de armadura de um NPC.
 | Nome | Descrição |
 | ------ | ----------------------------- |
 | npcid | O ID do NPC |
-| armour | A quantidade de armadura (0,0-100,0) |
+| armour | A quantidade de armadura (0.0-100.0) |
 
 ## Retornos
 
@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- O valor da armadura varia de 0,0 (sem armadura) a 100,0 (armadura completa)
+- O valor da armadura varia de 0.0 (sem armadura) a 100.0 (armadura completa)
 - A armadura absorve o dano antes que a saúde seja afetada
 - Use NPC_GetArmour para verificar o nível de armadura atual
 

@@ -58,7 +58,7 @@ Za potpuno skriptirane pickupe treba koristiti tip 1.
 
 :::warning
 
-Poznati Bug(ovi): Pickupi koji imaju X ili Y niži od -4096,0 ili veći od 4096,0 neće se pojaviti niti će pokrenuti OnPlayerPickUpPickup.
+Poznati Bug(ovi): Pickupi koji imaju X ili Y niži od -4096.0 ili veći od 4096.0 neće se pojaviti niti će pokrenuti OnPlayerPickUpPickup.
 
 :::
 

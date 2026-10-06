@@ -20,8 +20,8 @@ Obtém o último veículo sincronizado do jogador, ID.
 
 ## Parâmetros
 
-| Nome | Descrição |
-| -------- | --------------------- |
+| Nome     | Descrição        |
+| -------- | ---------------- |
 | playerid | O ID do jogador. |
 
 ## Valores de retorno

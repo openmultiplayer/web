@@ -10,9 +10,9 @@ tags: ["math", "floating-point"]
 
 Multiplica dois carros alegóricos entre si.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------------- |
-| Float:oper1 | Primeiro Float.                                      |
+| Nome        | Descrição                                 |
+| ----------- | ----------------------------------------- |
+| Float:oper1 | Primeiro Float.                           |
 | Float:oper2 | Segundo Float, o primeiro é multiplicado. |
 
 ## Retornos

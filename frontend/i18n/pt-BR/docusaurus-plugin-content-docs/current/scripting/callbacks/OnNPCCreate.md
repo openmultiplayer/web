@@ -12,8 +12,8 @@ tags: ["npc"]
 
 Esse callback é chamado quando um NPC é criado e adicionado com êxito ao servidor.
 
-| Nome | Descrição |
-| ----- | ---------------------------------- |
+| Nome  | Descrição                  |
+| ----- | -------------------------- |
 | npcid | O ID do NPC que foi criado |
 
 ## Exemplos

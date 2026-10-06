@@ -18,7 +18,7 @@ Kreira objekat na određenim kordinatama iz igre.
 | Float:rX           | X rotacija za objekat.                                                                                                                                                               |
 | Float:rY           | Y rotacija za objekat.                                                                                                                                                               |
 | Float:rZ           | Z rotacija za objekat.                                                                                                                                                               |
-| Float:DrawDistance | (neobavezno) Udaljenost na kojoj San Andreas prikazuje predmete. 0.0 uzrokovat će prikazivanje objekata na zadanim udaljenostima. Upotrebljiv od 0,3b. Ograničeno na 300 prije 0,3x. |
+| Float:DrawDistance | (neobavezno) Udaljenost na kojoj San Andreas prikazuje predmete. 0.0 uzrokovat će prikazivanje objekata na zadanim udaljenostima. Upotrebljiv od 0.3b. Ograničeno na 300 prije 0.3x. |
 
 ## Primjeri
 
@@ -26,7 +26,7 @@ Kreira objekat na određenim kordinatama iz igre.
 public OnGameModeInit()
 {
     CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0); // Objekt će se prikazati na zadanoj udaljenosti.
-    CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0, 300.0); // Objekt će se prikazati na 300,0 jedinica.
+    CreateObject(2587, 2001.195679, 1547.113892, 14.283400, 0.0, 0.0, 96.0, 300.0); // Objekt će se prikazati na 300.0 jedinica.
     return 1;
 }
 ```

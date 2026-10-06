@@ -12,9 +12,9 @@ tags: ["player", "pickup", "playerpickup"]
 
 Obtém o tipo de coleta de jogador.
 
-| Nome | Descrição |
-| -------- | ----------------------------------------------- |
-| playerid | O ID do jogador.                           |
+| Nome     | Descrição                                |
+| -------- | ---------------------------------------- |
+| playerid | O ID do jogador.                         |
 | pickupid | O ID do player-pickup para obter o tipo. |
 
 ## Retornos

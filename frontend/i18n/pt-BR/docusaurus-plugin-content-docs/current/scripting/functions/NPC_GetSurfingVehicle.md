@@ -12,8 +12,8 @@ tags: ["npc", "surfing", "vehicle"]
 
 Obtém o veículo em que um NPC está navegando.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

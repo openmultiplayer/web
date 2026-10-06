@@ -12,8 +12,8 @@ tags: ["npc", "vehicle"]
 
 Faz um NPC sair de seu veículo atual.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

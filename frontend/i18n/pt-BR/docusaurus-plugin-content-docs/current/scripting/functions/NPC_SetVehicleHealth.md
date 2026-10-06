@@ -15,7 +15,7 @@ Define a integridade do veículo de um NPC.
 | Nome | Descrição |
 | ------ | ----------------------------- |
 | npcid | O ID do NPC |
-| health | O valor de saúde (0,0-1000,0) |
+| health | O valor de saúde (0.0-1000.0) |
 
 ## Retornos
 
@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Funciona apenas quando NPC está em um veículo
-- A saúde varia de 0,0 (destruída) a 1000,0 (condição perfeita)
+- A saúde varia de 0.0 (destruída) a 1000.0 (condição perfeita)
 - Veículos explodem quando a saúde cai abaixo de 250
 
 ## Funções Relacionadas

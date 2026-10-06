@@ -12,8 +12,8 @@ tags: ["npc", "weapon", "ammo"]
 
 Obtém a quantidade de munição da arma atual de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

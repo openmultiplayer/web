@@ -12,8 +12,8 @@ tags: ["npc", "spawn", "respawn"]
 
 Reaparece um NPC em sua posição de surgimento, redefinindo seu estado.
 
-| Nome | Descrição |
-| ----- | ------------------ |
+| Nome  | Descrição    |
+| ----- | ------------ |
 | npcid | O ID do NPC. |
 
 ## Retornos

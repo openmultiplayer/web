@@ -12,9 +12,9 @@ tags: ["npc", "angle", "player"]
 
 Gira um NPC para enfrentar um jogador específico usando a posição atual do jogador.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------- |
-| npcid | O ID do NPC.                             |
+| Nome     | Descrição                                   |
+| -------- | ------------------------------------------- |
+| npcid    | O ID do NPC.                                |
 | playerid | O ID do jogador que o NPC deverá enfrentar. |
 
 ## Retornos

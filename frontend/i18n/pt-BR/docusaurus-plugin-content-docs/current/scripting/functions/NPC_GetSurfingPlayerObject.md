@@ -12,8 +12,8 @@ tags: ["npc", "surfing"]
 
 Obtém o objeto do jogador no qual um NPC está navegando.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

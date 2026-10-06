@@ -10,12 +10,12 @@ tags: []
 
 Esta função envia uma mensagem para um jogador específico com uma cor escolhida no chat. Toda a linha na caixa de bate-papo estará na cor definida, a menos que a incorporação de cores seja usada.
 
-| Nome | Descrição |
-| ---------------- | ----------------------------------------------------- |
-| playerid | O ID do jogador para o qual exibir a mensagem.       |
-| color | A cor da mensagem (formato hexadecimal 0xRRGGBBAA).     |
-| const format[] | O texto que será exibido (máximo 144 caracteres). |
-| OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag.            |
+| Nome             | Descrição                                           |
+| ---------------- | --------------------------------------------------- |
+| playerid         | O ID do jogador para o qual exibir a mensagem.      |
+| color            | A cor da mensagem (formato hexadecimal 0xRRGGBBAA). |
+| const format[]   | O texto que será exibido (máximo 144 caracteres).   |
+| OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag.    |
 
 ## Retornos
 

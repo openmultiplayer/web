@@ -10,8 +10,8 @@ tags: ["math"]
 
 Retorna a norma (comprimento) do vetor fornecido.
 
-| Nome | Descrição |
-| ------- | ------------------------------------- |
+| Nome    | Descrição                       |
+| ------- | ------------------------------- |
 | Float:x | A magnitude do vetor no eixo X. |
 | Float:y | A magnitude do vetor no eixo Y. |
 | Float:z | A magnitude do vetor no eixo Z. |

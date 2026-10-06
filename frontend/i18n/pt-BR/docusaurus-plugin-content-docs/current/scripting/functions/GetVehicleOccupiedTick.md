@@ -14,8 +14,8 @@ Obtenha o tick ocupado de um veículo.
 
 ## Parâmetros
 
-| Nome | Descrição |
-| --------- | ---------------------- |
+| Nome      | Descrição        |
+| --------- | ---------------- |
 | vehicleid | O ID do veículo. |
 
 ## Valores de retorno

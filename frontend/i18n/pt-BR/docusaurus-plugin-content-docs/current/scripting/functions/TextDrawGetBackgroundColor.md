@@ -12,8 +12,8 @@ tags: ["textdraw"]
 
 Obtém a cor de fundo de um textdraw.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------------------ |
+| Nome        | Descrição                                      |
+| ----------- | ---------------------------------------------- |
 | Text:textid | O ID do textdraw do qual obter a cor de fundo. |
 
 ## Retornos

@@ -10,9 +10,9 @@ tags: ["textdraw"]
 
 Defina o alinhamento do texto em um desenho de texto.
 
-| Parameter | Descrição |
-| ------------------------- | --------------------------------------------------------------------------- |
-| Text:textid | O ID do textdraw para definir o alinhamento.                             |
+| Parameter                 | Descrição                                                               |
+| ------------------------- | ----------------------------------------------------------------------- |
+| Text:textid               | O ID do textdraw para definir o alinhamento.                            |
 | TEXT_DRAW_ALIGN:alignment | `TEXT_DRAW_ALIGN_LEFT`/`TEXT_DRAW_ALIGN_CENTER`/`TEXT_DRAW_ALIGN_RIGHT` |
 
 ## Retornos

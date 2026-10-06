@@ -45,7 +45,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 Acest apel invers este apelat numai când este activată compensarea întârzierii. Dacă hittype este:
 
-- `BULLET_HIT_TYPE_NONE`: parametrii fX, fY și fZ sunt coordonate normale, vor da 0,0 pentru coordonate dacă nu a fost lovit nimic (de exemplu, obiect îndepărtat pe care glonțul nu poate ajunge);
+- `BULLET_HIT_TYPE_NONE`: parametrii fX, fY și fZ sunt coordonate normale, vor da 0.0 pentru coordonate dacă nu a fost lovit nimic (de exemplu, obiect îndepărtat pe care glonțul nu poate ajunge);
 - Altele: fX, fY și fZ sunt decalaje relativ la hitid.
 
 :::

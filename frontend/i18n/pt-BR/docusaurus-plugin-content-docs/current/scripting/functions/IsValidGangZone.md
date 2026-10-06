@@ -12,8 +12,8 @@ tags: ["gangzone"]
 
 Verifique se a gangzone é válida.
 
-| Nome | Descrição |
-| ------ | ----------------------- |
+| Nome   | Descrição         |
+| ------ | ----------------- |
 | zoneid | O ID da gangzone. |
 
 ## Retornos

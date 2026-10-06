@@ -10,8 +10,8 @@ tags: ["player"]
 
 Obtém a cor do nome do jogador e do marcador de radar. Só funciona após SetPlayerColor.
 
-| Nome | Descrição |
-| -------- | ----------------------------------------- |
+| Nome     | Descrição                              |
+| -------- | -------------------------------------- |
 | playerid | O ID do jogador cuja cor deseja obter. |
 
 ## Retornos

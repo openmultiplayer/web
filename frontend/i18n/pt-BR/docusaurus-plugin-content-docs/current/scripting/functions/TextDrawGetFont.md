@@ -12,8 +12,8 @@ tags: ["textdraw"]
 
 Obtém a fonte do texto de um textdraw.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------ |
+| Nome        | Descrição                               |
+| ----------- | --------------------------------------- |
 | Text:textid | O ID do textdraw do qual obter a fonte. |
 
 ## Retornos

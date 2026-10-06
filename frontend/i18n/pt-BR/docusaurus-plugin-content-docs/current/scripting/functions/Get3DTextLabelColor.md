@@ -16,8 +16,8 @@ Esta função está obsoleta. Consulte [Get3DTextLabelColour](Get3DTextLabelColo
 
 Obtém a cor do rótulo do texto 3D.
 
-| Nome | Descrição |
-| ------------- | ------------------------------------------------ |
+| Nome          | Descrição                                    |
+| ------------- | -------------------------------------------- |
 | Text3D:textid | O ID do rótulo de texto 3D para obter a cor. |
 
 ## Retornos

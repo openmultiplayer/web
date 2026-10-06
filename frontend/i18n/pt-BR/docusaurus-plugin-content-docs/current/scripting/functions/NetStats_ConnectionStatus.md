@@ -10,8 +10,8 @@ tags: ["network monitoring"]
 
 Obtém o status atual da conexão do jogador.
 
-| Nome | Descrição |
-| -------- | ----------------------------------------------------- |
+| Nome     | Descrição                                          |
+| -------- | -------------------------------------------------- |
 | playerid | O ID do jogador do qual obter o status da conexão. |
 
 ## Retornos

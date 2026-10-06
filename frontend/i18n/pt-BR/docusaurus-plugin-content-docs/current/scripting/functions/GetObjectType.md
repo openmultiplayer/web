@@ -12,9 +12,9 @@ tags: ["object"]
 
 Obtenha o tipo de um objeto. (global ou jogador)
 
-| Nome | Descrição |
-| -------- | ---------------------------------------- |
-| playerid | O ID do jogador.                    |
+| Nome     | Descrição                            |
+| -------- | ------------------------------------ |
+| playerid | O ID do jogador.                     |
 | objectid | O ID do objeto do qual obter o tipo. |
 
 ## Retornos

@@ -10,8 +10,8 @@ tags: ["player"]
 
 Obtenha o estilo de luta que o jogador está usando atualmente.
 
-| Nome | Descrição |
-| -------- | -------------------------------------------------- |
+| Nome     | Descrição                                    |
+| -------- | -------------------------------------------- |
 | playerid | O ID do jogador para obter o estilo de luta. |
 
 ## Retornos

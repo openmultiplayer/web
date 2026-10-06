@@ -10,8 +10,8 @@ tags: ["player variable", "pvar"]
 
 Cada PVar (variável do jogador) possui seu próprio número de identificação exclusivo para pesquisa, esta função retorna o conjunto ID mais alto para um jogador.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------------- |
+| Nome     | Descrição                                          |
+| -------- | -------------------------------------------------- |
 | playerid | O ID do jogador para obter o índice PVar superior. |
 
 ## Retornos

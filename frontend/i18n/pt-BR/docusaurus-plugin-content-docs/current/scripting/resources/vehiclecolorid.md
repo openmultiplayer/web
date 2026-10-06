@@ -6,13 +6,13 @@ sidebar_label: Vehicle Color IDs
 
 :::danger
 
-A partir de SA-MP 0.3x, as informações a seguir estão desatualizadas. A cor do veículo IDs de 128 a 255 foi substituída intencionalmente por novas cores. Verifique a segunda imagem para as cores atualizadas para 0,3x.
+A partir de SA-MP 0.3x, as informações a seguir estão desatualizadas. A cor do veículo IDs de 128 a 255 foi substituída intencionalmente por novas cores. Verifique a segunda imagem para as cores atualizadas para 0.3x.
 
 :::
 
 ![imagem1](https://assets.open.mp/assets/images/vehicleColorIds/Carcolours_All.jpg)
 
-## Cores adicionadas a partir de SA-MP 0,3x
+## Cores adicionadas a partir de SA-MP 0.3x
 
 ![imagem2](https://assets.open.mp/assets/images/vehicleColorIds/Ext_vcolours_2013.jpg)
 

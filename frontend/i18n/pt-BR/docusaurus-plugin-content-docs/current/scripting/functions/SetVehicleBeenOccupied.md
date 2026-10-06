@@ -20,9 +20,9 @@ Define a ocupação do veículo.
 
 ## Parâmetros
 
-| Nome | Descrição |
-| ------------- | -------------------------------------------- |
-| vehicleid | O ID do veículo.                       |
+| Nome          | Descrição                                  |
+| ------------- | ------------------------------------------ |
+| vehicleid     | O ID do veículo.                           |
 | bool:occupied | **true**: ocupado - **false**: não ocupado |
 
 ## Exemplos

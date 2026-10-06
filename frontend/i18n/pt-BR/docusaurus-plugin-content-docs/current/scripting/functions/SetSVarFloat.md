@@ -12,10 +12,10 @@ tags: ["server variable", "svar"]
 
 Defina uma variável de servidor flutuante.
 
-| Nome | Descrição |
-| ------------ | -------------------------------- |
+| Nome         | Descrição                       |
+| ------------ | ------------------------------- |
 | const svar[] | O nome da variável do servidor. |
-| Float:value | O float a ser definido.             |
+| Float:value  | O float a ser definido.         |
 
 ## Retornos
 

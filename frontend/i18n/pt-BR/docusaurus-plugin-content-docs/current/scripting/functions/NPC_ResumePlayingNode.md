@@ -12,8 +12,8 @@ tags: ["npc", "node"]
 
 Retoma a navegação do nó pausado para um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

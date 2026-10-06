@@ -33,9 +33,9 @@ public OnPlayerConnect(playerid)
 
     new Float:rotationX, Float:rotationY, Float:rotationZ;
     GetPlayerObjectRot(playerid, objectid, rotationX, rotationY, rotationZ);
-    // rotaçãoX = 0,0
-    // rotaçãoY = 0,0
-    // rotaçãoZ = 96,0
+    // rotaçãoX = 0.0
+    // rotaçãoY = 0.0
+    // rotaçãoZ = 96.0
     return 1;
 }
 ```

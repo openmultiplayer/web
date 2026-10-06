@@ -12,8 +12,8 @@ tags: ["npc", "recording", "validation"]
 
 Verifica se uma gravação ID é válida e carregada.
 
-| Nome | Descrição |
-| -------- | ----------------------- |
+| Nome     | Descrição        |
+| -------- | ---------------- |
 | recordId | O ID da gravação |
 
 ## Retornos

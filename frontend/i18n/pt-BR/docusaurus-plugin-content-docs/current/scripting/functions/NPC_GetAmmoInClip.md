@@ -12,8 +12,8 @@ tags: ["npc", "weapon", "ammo"]
 
 Obtém a munição do clipe atual da arma de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

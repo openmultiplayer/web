@@ -45,7 +45,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 Callback ini hanya di panggil ketika kompensasi lag diaktifkan. Jika tipe hit adalah:
 
-- `BULLET_HIT_TYPE_NONE`: parameter fX, fY dan fZ adalah koordinat normal, akan memberikan 0,0 untuk koordinat jika tidak ada yang terkena (misalnya objek jauh yang tidak dapat dijangkau oleh peluru);
+- `BULLET_HIT_TYPE_NONE`: parameter fX, fY dan fZ adalah koordinat normal, akan memberikan 0.0 untuk koordinat jika tidak ada yang terkena (misalnya objek jauh yang tidak dapat dijangkau oleh peluru);
 - Others: fX, fY dan fZ adalah offset relatif kepada hitid.
 
 :::

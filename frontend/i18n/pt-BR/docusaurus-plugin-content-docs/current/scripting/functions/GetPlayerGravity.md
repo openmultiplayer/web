@@ -12,8 +12,8 @@ tags: ["player"]
 
 Obtenha a gravidade de um jogador.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------- |
+| Nome     | Descrição                               |
+| -------- | --------------------------------------- |
 | playerid | O ID do jogador para obter a gravidade. |
 
 ## Retornos

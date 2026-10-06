@@ -12,9 +12,9 @@ tags: ["player"]
 
 Remova uma arma específica de um jogador.
 
-| Nome | Descrição |
-| --------------- | --------------------------------------------------------- |
-| playerid | O ID do jogador cuja arma deve ser removida.              |
+| Nome            | Descrição                                              |
+| --------------- | ------------------------------------------------------ |
+| playerid        | O ID do jogador cuja arma deve ser removida.           |
 | WEAPON:weaponid | O [ID da arma](../resources/weaponids) a ser removido. |
 
 ## Retornos

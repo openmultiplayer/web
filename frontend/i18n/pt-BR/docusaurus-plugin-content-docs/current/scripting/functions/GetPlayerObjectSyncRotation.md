@@ -12,9 +12,9 @@ tags: ["player", "object", "playerobject"]
 
 Obtenha a rotação de sincronização de um objeto de jogador.
 
-| Nome | Descrição |
-| -------- | ---------------------------- |
-| playerid | O ID do jogador.        |
+| Nome     | Descrição                  |
+| -------- | -------------------------- |
+| playerid | O ID do jogador.           |
 | objectid | O ID do objeto do jogador. |
 
 ## Retornos

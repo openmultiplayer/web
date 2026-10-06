@@ -10,13 +10,13 @@ tags: ["timer"]
 
 Define um cronômetro para chamar uma função após o intervalo especificado. Esta variante ('Ex') pode passar parâmetros (como um jogador ID) para a função.
 
-| Nome | Descrição |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| const functionName[] | O nome de uma função pública a ser chamada quando o cronômetro expirar.                                                                              |
-| interval | Intervalo em milissegundos (1 segundo = 1000 MS).                                                                                             |
-| bool:repeating | Booleano (true/false (ou 1/0)) que indica se o temporizador deve ser chamado repetidamente (só pode ser interrompido com KillTimer) ou apenas uma vez. |
-| const specifiers[] | Formato especial que indica os tipos de valores que o temporizador passará.                                                                         |
-| OPEN_MP_TAGS:... | Número indefinido de argumentos a serem passados ​​(deve seguir o formato especificado no parâmetro anterior).                                               |
+| Nome                 | Descrição                                                                                                                                              |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| const functionName[] | O nome de uma função pública a ser chamada quando o cronômetro expirar.                                                                                |
+| interval             | Intervalo em milissegundos (1 segundo = 1000 MS).                                                                                                      |
+| bool:repeating       | Booleano (true/false (ou 1/0)) que indica se o temporizador deve ser chamado repetidamente (só pode ser interrompido com KillTimer) ou apenas uma vez. |
+| const specifiers[]   | Formato especial que indica os tipos de valores que o temporizador passará.                                                                            |
+| OPEN_MP_TAGS:...     | Número indefinido de argumentos a serem passados (deve seguir o formato especificado no parâmetro anterior).                                           |
 
 ## Retornos
 

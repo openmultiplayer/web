@@ -10,12 +10,12 @@ tags: ["player"]
 
 Defina a posição de um jogador.
 
-| Nome | Descrição |
-| -------- | -------------------------------------------- |
-| playerid | O ID do jogador para definir a posição. |
-| Float:x | A coordenada X para posicionar o jogador.  |
-| Float:y | A coordenada Y para posicionar o jogador.  |
-| Float:z | A coordenada Z para posicionar o jogador.  |
+| Nome     | Descrição                                 |
+| -------- | ----------------------------------------- |
+| playerid | O ID do jogador para definir a posição.   |
+| Float:x  | A coordenada X para posicionar o jogador. |
+| Float:y  | A coordenada Y para posicionar o jogador. |
+| Float:z  | A coordenada Z para posicionar o jogador. |
 
 ## Retornos
 

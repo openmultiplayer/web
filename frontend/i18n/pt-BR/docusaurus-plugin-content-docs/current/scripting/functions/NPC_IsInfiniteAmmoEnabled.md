@@ -12,8 +12,8 @@ tags: ["npc", "weapon", "ammo"]
 
 Verifica se a munição infinita está habilitada para um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

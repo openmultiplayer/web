@@ -12,10 +12,10 @@ tags: ["npc", "node", "navigation"]
 
 Esse callback é chamado quando um NPC termina de navegar em um nó completo durante a movimentação baseada em nó.
 
-| Nome | Descrição |
-| ------ | ---------------------------------------- |
-| npcid | O ID do NPC que finalizou o nó |
-| nodeid | O ID do nó que foi concluído |
+| Nome   | Descrição                      |
+| ------ | ------------------------------ |
+| npcid  | O ID do NPC que finalizou o nó |
+| nodeid | O ID do nó que foi concluído   |
 
 ## Exemplos
 

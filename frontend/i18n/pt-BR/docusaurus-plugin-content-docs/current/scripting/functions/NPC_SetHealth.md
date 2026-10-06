@@ -49,9 +49,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Os valores de saúde normalmente variam de 0,0 a 100,0, mas podem ser definidos mais altos
-- Definir a saúde para 0,0 matará o NPC
-- NPCs spawn com 100,0 de saúde por padrão
+- Os valores de saúde normalmente variam de 0.0 a 100.0, mas podem ser definidos mais altos
+- Definir a saúde para 0.0 matará o NPC
+- NPCs spawn com 100.0 de saúde por padrão
 
 ## Funções Relacionadas
 

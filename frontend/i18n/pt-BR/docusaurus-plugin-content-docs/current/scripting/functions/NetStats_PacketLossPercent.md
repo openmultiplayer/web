@@ -10,8 +10,8 @@ tags: ["network monitoring"]
 
 Obtém a porcentagem de perda de pacotes de um jogador. Perda de pacote significa que os dados que o jogador está enviando ao servidor estão sendo perdidos (ou vice-versa).
 
-| Nome | Descrição |
-| -------- | ------------------------------------------ |
+| Nome     | Descrição                               |
+| -------- | --------------------------------------- |
 | playerid | O ID do jogador do qual obter os dados. |
 
 ## Retornos
@@ -70,7 +70,7 @@ Esteja ciente de que esta função reportará os pacotes perdidos pelo servidor.
 
 :::tip
 
-Qualquer valor superior a 0,0% já deve ser motivo de preocupação. Qualquer coisa superior a 1,0% é totalmente ruim.
+Qualquer valor superior a 0.0% já deve ser motivo de preocupação. Qualquer coisa superior a 1.0% é totalmente ruim.
 
 :::
 

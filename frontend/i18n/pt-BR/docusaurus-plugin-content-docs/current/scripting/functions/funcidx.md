@@ -10,8 +10,8 @@ tags: ["core"]
 
 Esta função retorna o ID de uma função pública pelo seu nome.
 
-| Nome | Descrição |
-| ------------ | ------------------------------------------------- |
+| Nome         | Descrição                                    |
+| ------------ | -------------------------------------------- |
 | const name[] | O nome da função pública da qual obter o ID. |
 
 ## Retornos

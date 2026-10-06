@@ -10,9 +10,9 @@ tags: ["vehicle"]
 
 Defina uma placa de veículo.
 
-| Nome | Descrição |
-| ------------------- | ------------------------------------------------------ |
-| vehicleid | O ID do veículo para definir a matrícula.      |
+| Nome                | Descrição                                           |
+| ------------------- | --------------------------------------------------- |
+| vehicleid           | O ID do veículo para definir a matrícula.           |
 | const numberPlate[] | O texto que deve ser exibido na placa de matrícula. |
 
 ## Retornos

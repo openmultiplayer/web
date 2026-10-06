@@ -12,8 +12,8 @@ tags: ["npc", "vehicle"]
 
 Verifica se um NPC está atualmente em processo de entrada em um veículo.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

@@ -12,8 +12,8 @@ tags: ["player"]
 
 Retorna o tipo de espectador do jogador (veículo ou jogador).
 
-| Nome | Descrição |
-| -------- | --------------------- |
+| Nome     | Descrição        |
+| -------- | ---------------- |
 | playerid | O ID do jogador. |
 
 ## Retornos

@@ -12,8 +12,8 @@ tags: ["npc"]
 
 Esse callback é chamado quando um NPC é destruído e removido do servidor.
 
-| Nome | Descrição |
-| ----- | ------------------------------------ |
+| Nome  | Descrição                     |
+| ----- | ----------------------------- |
 | npcid | O ID do NPC que foi destruído |
 
 ## Exemplos

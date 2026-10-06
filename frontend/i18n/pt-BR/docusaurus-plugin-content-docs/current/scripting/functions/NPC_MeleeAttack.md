@@ -12,10 +12,10 @@ tags: ["npc", "combat", "melee"]
 
 Faz com que um NPC execute um ataque corpo a corpo por um período especificado.
 
-| Nome | Descrição |
-| --------------- | ------------------------------------------------ |
-| npcid | O ID do NPC |
-| time | A duração do ataque |
+| Nome            | Descrição                                      |
+| --------------- | ---------------------------------------------- |
+| npcid           | O ID do NPC                                    |
+| time            | A duração do ataque                            |
 | secondaryAttack | Se deve usar ataque secundário (padrão: false) |
 
 ## Retornos

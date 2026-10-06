@@ -12,8 +12,8 @@ tags: ["actor"]
 
 Obtenha a pele do ator.
 
-| Nome | Descrição |
-| ------- | --------------------------- |
+| Nome    | Descrição                  |
+| ------- | -------------------------- |
 | actorid | O ID do ator a ser obtido. |
 
 ## Valores de retorno

@@ -12,8 +12,8 @@ tags: ["npc", "vehicle", "hydra"]
 
 Obtém a direção do propulsor de um veículo Hydra de NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

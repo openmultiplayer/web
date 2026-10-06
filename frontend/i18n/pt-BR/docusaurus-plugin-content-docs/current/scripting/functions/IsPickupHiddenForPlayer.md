@@ -12,10 +12,10 @@ tags: ["player", "pickup"]
 
 Verifica se um pickup está oculto para um jogador específico.
 
-| Nome | Descrição |
-| -------- | --------------------- |
+| Nome     | Descrição        |
+| -------- | ---------------- |
 | playerid | O ID do jogador. |
-| pickupid | O ID da picape. |
+| pickupid | O ID da picape.  |
 
 ## Retornos
 

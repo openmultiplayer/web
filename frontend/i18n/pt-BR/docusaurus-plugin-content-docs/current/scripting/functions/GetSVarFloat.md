@@ -20,7 +20,7 @@ Obtém o valor de uma variável de servidor flutuante.
 
 O valor flutuante da variável de servidor especificada.
 
-Ele ainda retornará 0,0 se a variável não estiver definida.
+Ele ainda retornará 0.0 se a variável não estiver definida.
 
 ## Exemplos
 

@@ -12,8 +12,8 @@ tags: ["npc", "weapon", "ammo"]
 
 Verifica se o recarregamento automático está habilitado para um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

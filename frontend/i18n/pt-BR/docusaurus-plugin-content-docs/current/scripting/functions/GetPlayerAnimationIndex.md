@@ -10,8 +10,8 @@ tags: ["player", "animation"]
 
 Retorna o índice de quaisquer animações aplicadas em execução.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------------------------- |
+| Nome     | Descrição                                                     |
+| -------- | ------------------------------------------------------------- |
 | playerid | ID do jogador do qual você deseja obter o índice de animação. |
 
 ## Retornos

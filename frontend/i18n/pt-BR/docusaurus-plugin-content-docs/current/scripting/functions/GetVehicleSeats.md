@@ -11,9 +11,9 @@ tags: ["vehicle"]
 
 Obtém o número de assentos no veículo.
 
-| Nome    | Descrição                 |
-| ------- | ------------------------- |
-| modelid | ID do modelo do veículo.  |
+| Nome    | Descrição                |
+| ------- | ------------------------ |
+| modelid | ID do modelo do veículo. |
 
 ## Valores de Retorno
 

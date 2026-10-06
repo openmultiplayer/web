@@ -11,7 +11,7 @@ Omogućuje igračima da uređuju player objekat (položaj i rotacija) s GUI-jem 
 
 | Ime      | Deskripcija                                      |
 | -------- | ------------------------------------------------ |
-| playerid | ID igrača koji bi trebao uređivati ​​objekt.     |
+| playerid | ID igrača koji bi trebao uređivati objekt.       |
 | objectid | ID objekta koji će biti uređen od strane igrača. |
 
 ## Returns

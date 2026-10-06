@@ -10,10 +10,10 @@ tags: ["vehicle"]
 
 Defina a rotação Z (guinada) de um veículo.
 
-| Nome | Descrição |
-| ----------- | --------------------------------------------- |
-| vehicleid | O ID do veículo para definir a rotação. |
-| Float:angle | O ângulo Z a ser definido.                           |
+| Nome        | Descrição                               |
+| ----------- | --------------------------------------- |
+| vehicleid   | O ID do veículo para definir a rotação. |
+| Float:angle | O ângulo Z a ser definido.              |
 
 ## Retornos
 

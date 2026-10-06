@@ -12,8 +12,8 @@ tags: ["npc", "movement"]
 
 Verifica se um NPC está em movimento no momento.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

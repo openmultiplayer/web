@@ -10,10 +10,10 @@ tags: ["textdraw"]
 
 Exibe o cursor e permite que o jogador selecione um textdraw
 
-| Nome | Descrição |
-| ----------- | -------------------------------------------------------------- |
-| playerid | O ID do jogador que deve ser capaz de selecionar um textdraw |
-| hoverColour | A cor do textdraw ao passar o mouse (RGBA) |
+| Nome        | Descrição                                                    |
+| ----------- | ------------------------------------------------------------ |
+| playerid    | O ID do jogador que deve ser capaz de selecionar um textdraw |
+| hoverColour | A cor do textdraw ao passar o mouse (RGBA)                   |
 
 ## Retornos
 

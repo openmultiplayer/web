@@ -12,8 +12,8 @@ tags: ["npc", "interior"]
 
 Obtém o ID interno de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

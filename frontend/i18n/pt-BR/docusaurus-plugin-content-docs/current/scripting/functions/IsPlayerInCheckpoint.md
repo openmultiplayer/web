@@ -10,8 +10,8 @@ tags: ["player", "checkpoint"]
 
 Verifique se o jogador está dentro de um checkpoint, isso pode ser usado para propriedades ou pontos de teletransporte, por exemplo.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------ |
+| Nome     | Descrição                                |
+| -------- | ---------------------------------------- |
 | playerid | O jogador cujo status você deseja saber. |
 
 ## Retornos

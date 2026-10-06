@@ -41,7 +41,7 @@ O nome da função é armadura, não armadura (americanizada). Isso é inconsist
 
 :::warning
 
-A armadura é arredondada para números inteiros: defina 50,15, mas obtenha 50,0
+A armadura é arredondada para números inteiros: defina 50.15, mas obtenha 50.0
 
 :::
 

@@ -12,10 +12,10 @@ tags: ["player", "object", "playerobject"]
 
 Recupere o modelo ID de um objeto de jogador.
 
-| Nome | Descrição |
-| -------- | ------------------------------------------------------------- |
+| Nome     | Descrição                                                    |
+| -------- | ------------------------------------------------------------ |
 | playerid | O ID do jogador cujo objeto de jogador deseja obter o modelo |
-| objectid | O ID do objeto player do qual recuperar o modelo ID |
+| objectid | O ID do objeto player do qual recuperar o modelo ID          |
 
 ## Retornos
 

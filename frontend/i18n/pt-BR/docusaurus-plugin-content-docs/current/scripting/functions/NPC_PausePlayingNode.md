@@ -12,8 +12,8 @@ tags: ["npc", "node", "navigation"]
 
 Pausa a navegação do nó de um NPC, parando temporariamente seu movimento através do nó.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

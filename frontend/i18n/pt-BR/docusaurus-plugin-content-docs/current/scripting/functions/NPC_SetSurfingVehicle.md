@@ -12,9 +12,9 @@ tags: ["npc", "surfing", "vehicle"]
 
 Define o veículo em que um NPC está navegando.
 
-| Nome | Descrição |
-| --------- | ----------------- |
-| npcid | O ID do NPC |
+| Nome      | Descrição    |
+| --------- | ------------ |
+| npcid     | O ID do NPC  |
 | vehicleid | O veículo ID |
 
 ## Retornos

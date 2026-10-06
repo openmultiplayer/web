@@ -14,8 +14,8 @@ Obtém a contagem de modelos de um modelo de veículo.
 
 ## Parâmetros
 
-| Nome | Descrição |
-| ------- | ------------------------------------------------------ |
+| Nome    | Descrição                                            |
+| ------- | ---------------------------------------------------- |
 | modelid | O ID do [modelo do veículo](../resources/vehicleid). |
 
 ## Exemplos

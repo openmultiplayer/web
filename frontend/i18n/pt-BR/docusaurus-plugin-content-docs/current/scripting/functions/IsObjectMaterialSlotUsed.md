@@ -12,9 +12,9 @@ tags: ["object"]
 
 Verifica se um slot de material do objeto é usado.
 
-| Nome | Descrição |
-| ------------- | ------------------------------------------- |
-| objectid | O ID do objeto.                       |
+| Nome          | Descrição                                |
+| ------------- | ---------------------------------------- |
+| objectid      | O ID do objeto.                          |
 | materialIndex | O índice de material no objeto. (0 a 15) |
 
 ## Retornos

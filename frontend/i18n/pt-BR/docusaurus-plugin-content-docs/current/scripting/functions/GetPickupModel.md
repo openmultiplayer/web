@@ -12,8 +12,8 @@ tags: ["pickup"]
 
 Obtém o modelo ID de uma picape.
 
-| Nome | Descrição |
-| -------- | -------------------------------------------- |
+| Nome     | Descrição                              |
+| -------- | -------------------------------------- |
 | pickupid | O ID da picape para obter o modelo ID. |
 
 ## Retornos

@@ -12,13 +12,13 @@ tags: ["npc", "vehicle", "train"]
 
 Obtém a velocidade do trem para um NPC dirigindo um trem.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos
 
-Retorna a velocidade do trem como um valor flutuante ou 0,0 se não estiver em um trem.
+Retorna a velocidade do trem como um valor flutuante ou 0.0 se não estiver em um trem.
 
 ## Exemplos
 
@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Funciona apenas quando o NPC está dirigindo um veículo ferroviário
-- Retorna 0,0 se NPC não estiver no trem ou não for o maquinista
+- Retorna 0.0 se NPC não estiver no trem ou não for o maquinista
 
 ## Funções Relacionadas
 

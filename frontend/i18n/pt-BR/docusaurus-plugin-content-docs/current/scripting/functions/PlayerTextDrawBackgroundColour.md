@@ -12,11 +12,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Ajuste a cor de fundo de um player-textdraw.
 
-| Nome | Descrição |
-| ----------------- | -------------------------------------------------------------------------- |
-| playerid | O ID do jogador cujo player-textdraw para definir a cor de fundo de |
-| PlayerText:textid | O ID do player-textdraw para definir a cor de fundo de |
-| backgroundColour | A cor com a qual o textdraw deve ser definido.                             |
+| Nome              | Descrição                                                           |
+| ----------------- | ------------------------------------------------------------------- |
+| playerid          | O ID do jogador cujo player-textdraw para definir a cor de fundo de |
+| PlayerText:textid | O ID do player-textdraw para definir a cor de fundo de              |
+| backgroundColour  | A cor com a qual o textdraw deve ser definido.                      |
 
 ## Retornos
 

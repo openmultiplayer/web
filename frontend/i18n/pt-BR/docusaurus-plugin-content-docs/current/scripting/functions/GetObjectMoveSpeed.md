@@ -27,7 +27,7 @@ new objectid = CreateObject(985, 1003.39154, -643.33423, 122.35060,   0.00000, 1
 MoveObject(objectid, 1003.3915, -643.3342, 114.5122,  0.8);
 
 new Float:moveSpeed = GetObjectMoveSpeed(objectid);
-// velocidade de movimento = 0,8
+// velocidade de movimento = 0.8
 ```
 ## Funções Relacionadas
 

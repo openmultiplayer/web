@@ -12,10 +12,10 @@ tags: ["npc", "movement", "path"]
 
 Esse callback é chamado quando um NPC termina de se mover ao longo de um caminho predefinido.
 
-| Nome | Descrição |
-| ------ | ---------------------------------------- |
-| npcid | O ID do NPC que finalizou o caminho |
-| pathid | O ID do caminho que foi concluído |
+| Nome   | Descrição                           |
+| ------ | ----------------------------------- |
+| npcid  | O ID do NPC que finalizou o caminho |
+| pathid | O ID do caminho que foi concluído   |
 
 ## Exemplos
 

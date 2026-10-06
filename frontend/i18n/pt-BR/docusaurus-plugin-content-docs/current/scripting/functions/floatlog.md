@@ -10,10 +10,10 @@ tags: ["math", "floating-point"]
 
 Esta função permite obter o logaritmo de um valor flutuante.
 
-| Nome | Descrição |
-| ----------- | ---------------------------------------- |
+| Nome        | Descrição                          |
+| ----------- | ---------------------------------- |
 | Float:value | O valor do qual obter o logaritmo. |
-| Float:base | A base do logaritmo.                      |
+| Float:base  | A base do logaritmo.               |
 
 ## Retornos
 

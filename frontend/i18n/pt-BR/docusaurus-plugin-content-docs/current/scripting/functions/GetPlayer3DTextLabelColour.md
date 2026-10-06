@@ -12,9 +12,9 @@ tags: ["player", "3dtextlabel"]
 
 Obtém a cor do rótulo de texto 3D do jogador.
 
-| Nome | Descrição |
-| ------------------- | ---------------------------------------------------------- |
-| playerid | O ID do jogador.                                      |
+| Nome                | Descrição                                               |
+| ------------------- | ------------------------------------------------------- |
+| playerid            | O ID do jogador.                                        |
 | PlayerText3D:textid | O ID do rótulo de texto 3D do jogador para obter a cor. |
 
 ## Retornos

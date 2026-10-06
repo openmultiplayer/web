@@ -14,8 +14,8 @@ Verifique se um veículo está morto.
 
 ## Parâmetros
 
-| Nome | Descrição |
-| --------- | ---------------------- |
+| Nome      | Descrição        |
+| --------- | ---------------- |
 | vehicleid | O ID do veículo. |
 
 ## Valores de retorno

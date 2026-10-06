@@ -12,9 +12,9 @@ tags: ["npc", "node", "navigation"]
 
 Define o índice de ponto atual para um nó NPC.
 
-| Nome | Descrição |
-| ------- | --------------------------- |
-| nodeid | O ID do nó |
+| Nome    | Descrição                |
+| ------- | ------------------------ |
+| nodeid  | O ID do nó               |
 | pointid | O índice de pontos no nó |
 
 ## Retornos

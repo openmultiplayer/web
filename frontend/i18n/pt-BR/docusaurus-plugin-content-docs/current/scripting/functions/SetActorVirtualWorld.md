@@ -12,10 +12,10 @@ tags: ["actor"]
 
 Defina o mundo virtual de um ator. Apenas jogadores do mesmo mundo verão o ator.
 
-| Nome | Descrição |
-| ------------ | -------------------------------------------------------------------------- |
-| actorid | O ID do ator (retornado por CreateActor) para definir o mundo virtual de. |
-| virtualWorld | O mundo virtual para colocar o ator ID.                                     |
+| Nome         | Descrição                                                                 |
+| ------------ | ------------------------------------------------------------------------- |
+| actorid      | O ID do ator (retornado por CreateActor) para definir o mundo virtual de. |
+| virtualWorld | O mundo virtual para colocar o ator ID.                                   |
 
 ## Retornos
 

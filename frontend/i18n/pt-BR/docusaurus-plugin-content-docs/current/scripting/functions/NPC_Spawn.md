@@ -12,8 +12,8 @@ tags: ["npc"]
 
 Gera um NPC no mundo do jogo, tornando-o visível e ativo.
 
-| Nome | Descrição |
-| ----- | ------------------ |
+| Nome  | Descrição    |
+| ----- | ------------ |
 | npcid | O ID do NPC. |
 
 ## Retornos

@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 - Os x e y têm significados diferentes com valores TextDrawAlignment diferentes: 1 (esquerda): são o canto mais direito da caixa, coordenadas absolutas. 2 (centro): eles precisam ser invertidos (trocar os dois) e o valor x é a largura total da caixa. 3 (direita): x e y são as coordenadas do canto mais esquerdo da caixa
 - Usar o tipo de fonte 4 (sprite) e 5 (visualização do modelo) converte X e Y desta função das coordenadas de canto para WIDTH e HEIGHT (offsets).
-- A caixa TextDraw inicia 10,0 unidades para cima e 5,0 para a esquerda como origem (coordenada TextDrawCreate).
+- A caixa TextDraw inicia 10.0 unidades para cima e 5.0 para a esquerda como origem (coordenada TextDrawCreate).
 - Esta função define a área clicável para uso com TextDrawSetSelectable, seja uma caixa mostrada ou não.
 
 :::

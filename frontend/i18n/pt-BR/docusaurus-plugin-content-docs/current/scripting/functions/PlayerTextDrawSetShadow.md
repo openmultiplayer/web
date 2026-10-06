@@ -10,11 +10,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Adiciona uma sombra ao lado inferior direito do texto em um player-textdraw. A fonte sombreada corresponde à fonte do texto.
 
-| Nome | Descrição |
-| ----------------- | --------------------------------------------------------------------- |
-| playerid | O ID do jogador cujo player-textdraw definir o tamanho da sombra. |
-| PlayerText:textid | O ID do player-textdraw para alterar a sombra de |
-| shadowSize | O tamanho da sombra. 0 ocultará a sombra.                       |
+| Nome              | Descrição                                                         |
+| ----------------- | ----------------------------------------------------------------- |
+| playerid          | O ID do jogador cujo player-textdraw definir o tamanho da sombra. |
+| PlayerText:textid | O ID do player-textdraw para alterar a sombra de                  |
+| shadowSize        | O tamanho da sombra. 0 ocultará a sombra.                         |
 
 ## Retornos
 

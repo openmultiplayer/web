@@ -10,8 +10,8 @@ tags: ["player"]
 
 Remove objetos anexados.
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------------- |
+| Nome     | Descrição                                           |
+| -------- | --------------------------------------------------- |
 | playerid | ID do jogador do qual você deseja remover o objeto. |
 
 ## Retornos

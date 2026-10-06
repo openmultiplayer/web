@@ -20,7 +20,7 @@ Faz um movimento NPC para uma posição específica.
 | Float:z                | A coordenada Z para a qual mover.                                                                              |
 | NPC_MOVE_TYPE:moveType | [O tipo de movimento](../resources/npc-constants#tipos-de-movimento) (padrão: `NPC_MOVE_TYPE_JOG`).            |
 | Float:moveSpeed        | [Velocidade de movimento](../resources/npc-constants#velocidade-de-movimento) (padrão: `NPC_MOVE_SPEED_AUTO`). |
-| Float:stopRange        | Distância até o alvo antes de parar (padrão: 0,2).                                                             |
+| Float:stopRange        | Distância até o alvo antes de parar (padrão: 0.2).                                                             |
 
 ## Retornos
 

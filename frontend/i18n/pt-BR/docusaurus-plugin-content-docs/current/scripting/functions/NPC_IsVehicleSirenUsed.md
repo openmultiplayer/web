@@ -12,8 +12,8 @@ tags: ["npc", "vehicle", "siren"]
 
 Verifica se um NPC está usando a sirene do veículo.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

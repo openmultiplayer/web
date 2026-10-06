@@ -12,8 +12,8 @@ tags: ["textdraw"]
 
 Obtém a cor do texto de um textdraw.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------- |
+| Nome        | Descrição                          |
+| ----------- | ---------------------------------- |
 | Text:textid | O ID do textdraw para obter a cor. |
 
 ## Retornos

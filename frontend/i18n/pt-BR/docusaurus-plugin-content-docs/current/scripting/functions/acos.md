@@ -20,7 +20,7 @@ O ângulo em graus, no intervalo [0.0,180.0].
 ## Exemplos
 
 ```c
-//O arco cosseno de 0,500000 é de 60,000000 graus.
+//O arco cosseno de 0.500000 é de 60.000000 graus.
 
 public OnGameModeInit()
 {

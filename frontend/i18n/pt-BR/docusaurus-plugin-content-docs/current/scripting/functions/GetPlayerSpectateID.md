@@ -12,8 +12,8 @@ tags: ["player"]
 
 Obtém o ID do jogador ou veículo que o jogador está assistindo (assistindo).
 
-| Nome | Descrição |
-| -------- | --------------------- |
+| Nome     | Descrição        |
+| -------- | ---------------- |
 | playerid | O ID do jogador. |
 
 ## Retornos

@@ -12,8 +12,8 @@ tags: ["npc", "player", "movement"]
 
 Obtém o ID do jogador para o qual um NPC está se movendo no momento.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

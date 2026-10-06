@@ -1328,7 +1328,7 @@ Bertrand Meyer cunhou o termo “design by contract”, inspirado na lógica de 
 - **Pós-condições** descrevem a saída (e o ambiente) após a execução;
 - **Invariantes** são condições que devem ser verdadeiras em pontos-chave da função, independentemente do caminho percorrido.
 
-Por exemplo, uma função que calcula raízes quadradas pode exigir que o parâmetro seja não negativo —pré-condição. Pode ainda afirmar que o resultado, ao ser elevado ao quadrado, difere da entrada em no máximo 0,01% —pós-condição. Se calculada via “bisseção”, cada iteração garante ao menos um bit adicional de precisão, o que seria um invariante (embora difícil de verificar).
+Por exemplo, uma função que calcula raízes quadradas pode exigir que o parâmetro seja não negativo —pré-condição. Pode ainda afirmar que o resultado, ao ser elevado ao quadrado, difere da entrada em no máximo 0.01% —pós-condição. Se calculada via “bisseção”, cada iteração garante ao menos um bit adicional de precisão, o que seria um invariante (embora difícil de verificar).
 
 Pré-condições, pós-condições e invariantes são testes cujo fracasso indica erro na implementação. Em pawn, todos podem ser expressos com `assert`. Coloque as pré-condições no início da função; invariantes nos pontos relevantes; pós-condições antes de cada `return` ou no final.
 

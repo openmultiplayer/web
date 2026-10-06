@@ -56,7 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::warning
 
 - Esta função pode ser usada para fazer objetos girarem suavemente. Para conseguir isso, entretanto, o objeto também deve ser **movido**. A rotação especificada é a rotação que o objeto terá após o movimento. Conseqüentemente, o objeto não girará quando nenhum movimento for aplicado. Para obter um exemplo de script, dê uma olhada no filterscript ferriswheel.pwn feito por Kye incluído no pacote do servidor (SA-MP 0.3d e superior).
-- Para entender completamente a nota acima, você pode (mas não se limitando a) aumentar a posição z em (+0,001) e depois (-0,001) após movê-la novamente, pois não alterar X, Y ou Z não girará o objeto.
+- Para entender completamente a nota acima, você pode (mas não se limitando a) aumentar a posição z em (+0.001) e depois (-0.001) após movê-la novamente, pois não alterar X, Y ou Z não girará o objeto.
 
 :::
 

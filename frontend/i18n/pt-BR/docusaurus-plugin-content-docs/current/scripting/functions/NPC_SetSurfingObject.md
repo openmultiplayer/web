@@ -12,9 +12,9 @@ tags: ["npc", "surfing"]
 
 Define o objeto em que um NPC está navegando.
 
-| Nome | Descrição |
-| -------- | ----------------- |
-| npcid | O ID do NPC |
+| Nome     | Descrição   |
+| -------- | ----------- |
+| npcid    | O ID do NPC |
 | objectid | O objeto ID |
 
 ## Retornos

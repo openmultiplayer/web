@@ -19,7 +19,7 @@ Kreira objekat koji će biti vidljiv samo jednom igraču.
 | Float:rX           | X rotacija objekta.                                                                                                                                                                                                                                                                                        |
 | Float:rY           | Y rotacija objekta.                                                                                                                                                                                                                                                                                        |
 | Float:rZ           | Z rotacija objekta.                                                                                                                                                                                                                                                                                        |
-| Float:DrawDistance | Udaljenost s koje će se igračima prikazati predmeti. 0.0 će objekt prikazati na zadanoj udaljenosti. Ako izostavite ovaj parametar, uzrokovat će se prikazivanje objekata na zadanoj udaljenosti. Maksimalna korisna udaljenost je 300 u verzijama prije 0,3x, u kojima udaljenost može biti neograničena. |
+| Float:DrawDistance | Udaljenost s koje će se igračima prikazati predmeti. 0.0 će objekt prikazati na zadanoj udaljenosti. Ako izostavite ovaj parametar, uzrokovat će se prikazivanje objekata na zadanoj udaljenosti. Maksimalna korisna udaljenost je 300 u verzijama prije 0.3x, u kojima udaljenost može biti neograničena. |
 
 ## Returns
 

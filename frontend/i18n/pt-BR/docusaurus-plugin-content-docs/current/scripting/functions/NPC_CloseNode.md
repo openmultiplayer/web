@@ -12,8 +12,8 @@ tags: ["npc", "node", "navigation"]
 
 Fecha um nó NPC, tornando-o indisponível para uso por NPCs.
 
-| Nome | Descrição |
-| ------ | --------------------------- |
+| Nome   | Descrição                |
+| ------ | ------------------------ |
 | nodeid | O ID do nó a ser fechado |
 
 ## Retornos

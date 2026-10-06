@@ -16,7 +16,7 @@ Define uma animação para um NPC usando a animação ID.
 | ----------- | ------------------------------------------------- |
 | npcid | O ID do NPC |
 | animationid | A animação ID a ser definida |
-| delta | Velocidade de animação (normalmente 4,1) |
+| delta | Velocidade de animação (normalmente 4.1) |
 | loop | Se a animação deve repetir |
 | lockX | Bloquear movimento no eixo X durante a animação |
 | lockY | Bloquear movimento no eixo Y durante a animação |

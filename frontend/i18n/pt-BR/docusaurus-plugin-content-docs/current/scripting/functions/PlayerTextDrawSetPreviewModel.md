@@ -10,11 +10,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Define um sprite de visualização 3D do textdraw do jogador de um modelo especificado ID.
 
-| Nome | Descrição |
-| ----------------- | ------------------------------------------------- |
-| playerid | O jogador PlayerTextDraw ID.                     |
+| Nome              | Descrição                                       |
+| ----------------- | ----------------------------------------------- |
+| playerid          | O jogador PlayerTextDraw ID.                    |
 | PlayerText:textid | O ID do textdraw que exibirá a visualização 3D. |
-| model | O modelo GTA SA ou SA:MP ID para exibição.          |
+| model             | O modelo GTA SA ou SA:MP ID para exibição.      |
 
 ## Retornos
 

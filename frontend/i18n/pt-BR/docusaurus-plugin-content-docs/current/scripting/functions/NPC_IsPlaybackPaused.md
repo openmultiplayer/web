@@ -12,8 +12,8 @@ tags: ["npc", "recording", "playback"]
 
 Verifica se a reprodução de um NPC está pausada no momento.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

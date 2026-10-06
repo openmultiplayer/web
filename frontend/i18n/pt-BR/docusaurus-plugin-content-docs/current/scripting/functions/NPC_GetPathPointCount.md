@@ -12,8 +12,8 @@ tags: ["npc", "path"]
 
 Obtém o número de pontos em um caminho NPC.
 
-| Nome | Descrição |
-| ------ | ------------------ |
+| Nome   | Descrição       |
+| ------ | --------------- |
 | pathid | O ID do caminho |
 
 ## Retornos

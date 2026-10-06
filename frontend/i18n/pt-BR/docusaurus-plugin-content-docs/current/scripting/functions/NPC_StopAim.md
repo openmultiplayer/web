@@ -12,8 +12,8 @@ tags: ["npc", "weapon", "aiming"]
 
 Impede que um NPC mire em qualquer alvo.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

@@ -10,9 +10,9 @@ tags: ["player"]
 
 Esta função permite definir ações especiais dos jogadores.
 
-| Nome | Descrição |
-| ----------------------- | ------------------------------------------------------------------- |
-| playerid | O jogador que deverá realizar a ação |
+| Nome                    | Descrição                                                     |
+| ----------------------- | ------------------------------------------------------------- |
+| playerid                | O jogador que deverá realizar a ação                          |
 | SPECIAL_ACTION:actionid | A [ação](../resources/specialactions) que deve ser executada. |
 
 ## Retornos

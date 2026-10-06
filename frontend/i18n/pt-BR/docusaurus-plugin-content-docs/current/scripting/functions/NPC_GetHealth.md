@@ -12,8 +12,8 @@ tags: ["npc", "health"]
 
 Obtém o valor de integridade de um NPC.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos
@@ -44,8 +44,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Os valores de saúde normalmente variam de 0,0 a 100,0
-- Um NPC com 0,0 de saúde é considerado morto
+- Os valores de saúde normalmente variam de 0.0 a 100.0
+- Um NPC com 0.0 de saúde é considerado morto
 
 ## Funções Relacionadas
 

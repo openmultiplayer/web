@@ -12,12 +12,12 @@ tags: ["npc", "path"]
 
 Adiciona um waypoint a um caminho NPC.
 
-| Nome | Descrição |
-| --------- | ------------------------------------------------------- |
-| pathid | O ID do caminho ao qual adicionar o ponto |
-| x | A coordenada X do waypoint |
-| y | A coordenada Y do waypoint |
-| z | A coordenada Z do waypoint |
+| Nome      | Descrição                                            |
+| --------- | ---------------------------------------------------- |
+| pathid    | O ID do caminho ao qual adicionar o ponto            |
+| x         | A coordenada X do waypoint                           |
+| y         | A coordenada Y do waypoint                           |
+| z         | A coordenada Z do waypoint                           |
 | stopRange | A distância do ponto em que se considera que atingiu |
 
 ## Retornos

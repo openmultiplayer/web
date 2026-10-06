@@ -36,7 +36,7 @@ GetPlayerPos(playerid, X, Y, Z);
 playerTextId = CreatePlayer3DTextLabel(playerid, "Hello\nI'm at your position", 0x008080FF, X, Y, Z, 40.0);
 
 drawDistance = GetPlayer3DTextLabelDrawDist(playerid, playerTextId);
-// distância de desenho = 40,0
+// distância de desenho = 40.0
 ```
 ## Notas
 

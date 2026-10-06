@@ -27,9 +27,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
         g_PatrolPath = pathid;
 
         // Se você quiser, você já pode adicionar pontos ao caminho aqui
-        // NPC_AddPointToPath(g_PatrolPath, x, y, z, 1,5)
-        // NPC_AddPointToPath(g_PatrolPath, x1, y1, z1, 1,5)
-        // NPC_AddPointToPath(g_PatrolPath, x2, y2, z2, 1,5)
+        // NPC_AddPointToPath(g_PatrolPath, x, y, z, 1.5)
+        // NPC_AddPointToPath(g_PatrolPath, x1, y1, z1, 1.5)
+        // NPC_AddPointToPath(g_PatrolPath, x2, y2, z2, 1.5)
 
         SendClientMessage(playerid, 0x00FF00FF, "Created a patrol path %d", g_PatrolPath);
 

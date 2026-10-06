@@ -12,13 +12,13 @@ tags: ["actor"]
 
 Obtenha o ponto de desova inicial do ator.
 
-| Nome | Descrição |
-| ----------------- | ---------------------------------------------------------------------------- |
-| actorid | O ID do ator para obter o ponto de desova de |
-| &skin | Uma variável na qual armazenar o skin, passada por referência.             |
-| &Float:spawnX | Uma variável flutuante na qual armazenar o spawnX, passada por referência.     |
-| &Float:spawnY | Uma variável float na qual armazenar o spawnY, passada por referência.     |
-| &Float:spawnZ | Uma variável flutuante na qual armazenar o spawnZ, passada por referência.     |
+| Nome              | Descrição                                                                  |
+| ----------------- | -------------------------------------------------------------------------- |
+| actorid           | O ID do ator para obter o ponto de desova de                               |
+| &skin             | Uma variável na qual armazenar o skin, passada por referência.             |
+| &Float:spawnX     | Uma variável flutuante na qual armazenar o spawnX, passada por referência. |
+| &Float:spawnY     | Uma variável float na qual armazenar o spawnY, passada por referência.     |
+| &Float:spawnZ     | Uma variável flutuante na qual armazenar o spawnZ, passada por referência. |
 | &Float:spawnAngle | Uma variável float na qual armazenar o spawnAngle, passada por referência. |
 
 ## Valores de retorno

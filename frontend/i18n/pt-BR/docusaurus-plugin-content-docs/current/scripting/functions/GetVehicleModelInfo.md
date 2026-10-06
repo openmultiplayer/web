@@ -29,7 +29,7 @@ new
 	Float: x, Float: y, Float: z;
 // Obtenha o tamanho do veículo de modelo 411 (Infernus)
 GetVehicleModelInfo(411, VEHICLE_MODEL_INFO_SIZE, x, y, z);
-// Imprime "O Infernus tem 2,3 m de largura, 5,7 m de comprimento e 1,3 m de altura" no console
+// Imprime "O Infernus tem 2.3 m de largura, 5.7 m de comprimento e 1.3 m de altura" no console
 printf("The infernus is %.1fm wide, %.1fm long and %.1fm high", X, Y, Z);
 ```
 ## Funções Relacionadas

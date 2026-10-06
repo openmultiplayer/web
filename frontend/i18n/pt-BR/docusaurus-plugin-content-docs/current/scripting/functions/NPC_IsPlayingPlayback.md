@@ -12,8 +12,8 @@ tags: ["npc", "recording", "playback"]
 
 Verifica se um NPC está reproduzindo uma gravação.
 
-| Nome | Descrição |
-| ----- | ----------------- |
+| Nome  | Descrição   |
+| ----- | ----------- |
 | npcid | O ID do NPC |
 
 ## Retornos

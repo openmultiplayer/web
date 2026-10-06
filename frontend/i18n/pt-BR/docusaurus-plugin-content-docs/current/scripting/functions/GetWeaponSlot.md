@@ -12,8 +12,8 @@ tags: ["weapon"]
 
 Obtém o slot de uma arma.
 
-| Nome | Descrição |
-| --------------- | ---------------------------------------- |
+| Nome            | Descrição                       |
+| --------------- | ------------------------------- |
 | WEAPON:weaponid | O ID da arma para obter o slot. |
 
 ## Retornos

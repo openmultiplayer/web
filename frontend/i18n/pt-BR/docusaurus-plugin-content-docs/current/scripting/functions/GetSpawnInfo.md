@@ -58,10 +58,10 @@ public OnPlayerRequestClass(playerid, classid)
     GetSpawnInfo(playerid, team, skin, spawnX, spawnY, spawnZ, angle, weapon1, ammo1, weapon2, ammo2, weapon3, ammo3);
     // equipe = NO_TEAM
     // pele = 293
-    // gerarX = 1139,4786
-    // gerarY = -1761,3989
-    // gerarZ = 13,5844
-    // ângulo = 0,0000
+    // gerarX = 1139.4786
+    // gerarY = -1761.3989
+    // gerarZ = 13.5844
+    // ângulo = 0.0000
     // arma1 = WEAPON_SAWEDOFF
     // munição1 = 36
     // arma2 = ARMA_UZI

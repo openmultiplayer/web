@@ -12,12 +12,12 @@ tags: ["player", "gangzone"]
 
 Obtenha a posição de uma gangzone, representada pelas coordenadas minX, minY, maxX, maxY.
 
-| Nome | Descrição |
-| ----------- | ----------------------------------------------------------- |
-| zoneid | O ID da zona cujas coordenadas deseja obter. |
-| &Float:minX | A coordenada X para o lado oeste da gangzone do jogador.  |
-| &Float:minY | A coordenada Y para o lado sul da gangzone do jogador. |
-| &Float:maxX | A coordenada X para o lado leste da gangzone do jogador.  |
+| Nome        | Descrição                                                |
+| ----------- | -------------------------------------------------------- |
+| zoneid      | O ID da zona cujas coordenadas deseja obter.             |
+| &Float:minX | A coordenada X para o lado oeste da gangzone do jogador. |
+| &Float:minY | A coordenada Y para o lado sul da gangzone do jogador.   |
+| &Float:maxX | A coordenada X para o lado leste da gangzone do jogador. |
 | &Float:maxY | A coordenada Y para o lado norte da gangzone do jogador. |
 
 ## Retornos

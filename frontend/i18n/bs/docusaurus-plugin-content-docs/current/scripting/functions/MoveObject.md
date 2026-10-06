@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Ovu funkciju možete koristiti za nesmetano okretanje objekata. Međutim, da bi se to postiglo, objekt se također mora premjestiti. Navedena rotacija je rotacija koju će objekt imati nakon kretanja. Stoga se objekt neće okretati kada se ne primijeni nikakvo kretanje. Za primjer skripte pogledajte filtrirnu datoteku ferriswheel.pwn koju je izradio Kye uključen u paket poslužitelja (SA-MP 0.3d i noviji). Da biste u potpunosti razumjeli gornju napomenu, možete (ali ne ograničavajući se na to) povećati Z poziciju za (+0,001), a zatim (-0,001) nakon ponovnog pomicanja, jer ako ne promijenite X, Y ili Z neće rotirati objekt.
+Ovu funkciju možete koristiti za nesmetano okretanje objekata. Međutim, da bi se to postiglo, objekt se također mora premjestiti. Navedena rotacija je rotacija koju će objekt imati nakon kretanja. Stoga se objekt neće okretati kada se ne primijeni nikakvo kretanje. Za primjer skripte pogledajte filtrirnu datoteku ferriswheel.pwn koju je izradio Kye uključen u paket poslužitelja (SA-MP 0.3d i noviji). Da biste u potpunosti razumjeli gornju napomenu, možete (ali ne ograničavajući se na to) povećati Z poziciju za (+0.001), a zatim (-0.001) nakon ponovnog pomicanja, jer ako ne promijenite X, Y ili Z neće rotirati objekt.
 
 :::
 

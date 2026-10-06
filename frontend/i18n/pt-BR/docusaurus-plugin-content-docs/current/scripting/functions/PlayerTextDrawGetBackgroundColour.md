@@ -12,9 +12,9 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Obtém a cor de fundo de um player-textdraw
 
-| Nome | Descrição |
-| ----------------- | ------------------------------------------------------------- |
-| playerid | O ID do jogador |
+| Nome              | Descrição                                                |
+| ----------------- | -------------------------------------------------------- |
+| playerid          | O ID do jogador                                          |
 | PlayerText:textid | O ID do textdraw do jogador para obter a cor de fundo de |
 
 ## Retornos

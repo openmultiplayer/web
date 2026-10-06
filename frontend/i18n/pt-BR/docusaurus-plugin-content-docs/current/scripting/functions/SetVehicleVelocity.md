@@ -10,12 +10,12 @@ tags: ["vehicle"]
 
 Define a velocidade X, Y e Z de um veículo.
 
-| Nome | Descrição |
-| --------- | --------------------------------------------- |
+| Nome      | Descrição                                  |
+| --------- | ------------------------------------------ |
 | vehicleid | O ID do veículo para definir a velocidade. |
-| Float:x | A velocidade na direção X.              |
-| Float:y | A velocidade na direção Y.              |
-| Float:z | A velocidade na direção Z.              |
+| Float:x   | A velocidade na direção X.                 |
+| Float:y   | A velocidade na direção Y.                 |
+| Float:z   | A velocidade na direção Z.                 |
 
 ## Retornos
 

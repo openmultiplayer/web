@@ -10,11 +10,11 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Define a cor da caixa de um textdraw (PlayerTextDrawUseBox).
 
-| Nome | Descrição |
-| ----------------- | ------------------------------------------------------------ |
-| playerid | O ID do jogador cujo textdraw definir a cor da caixa. |
-| PlayerText:textid | O ID do textdraw do jogador para definir a cor da caixa.      |
-| boxColour | A cor a ser definida. Alfa (transparência) é compatível.        |
+| Nome              | Descrição                                                |
+| ----------------- | -------------------------------------------------------- |
+| playerid          | O ID do jogador cujo textdraw definir a cor da caixa.    |
+| PlayerText:textid | O ID do textdraw do jogador para definir a cor da caixa. |
+| boxColour         | A cor a ser definida. Alfa (transparência) é compatível. |
 
 ## Retornos
 
