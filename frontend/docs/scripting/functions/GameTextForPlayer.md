@@ -51,6 +51,12 @@ Also, a blank space at end of the string may result in faliure. For example: `"H
 
 :::
 
+:::tip
+
+Android Clients can render some UI elements (called internally as widgets) directly in text, see [this page for more information](../resources/android-widgets.md).
+
+:::
+
 ## Related Functions
 
 - [HideGameTextForPlayer](HideGameTextForPlayer): Stop showing a gametext style to a player.
