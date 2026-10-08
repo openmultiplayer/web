@@ -260,6 +260,6 @@ Item 1 Column 1\tItem 1 Column 2\tItem 1 Column 3\n\
 // Selecionou o primeiro item da lista e clicou com o botão esquerdo
 playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = 0, inputtext = 'Item 1 Column 1' (size: 15)
 
-// Selecionou o primeiro item da lista e clicou com o botão direito
+// Selecionou o segundo item da lista e clicou com o botão direito
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 'Item 2 Column 1' (size: 15)
 ```

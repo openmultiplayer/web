@@ -58,6 +58,6 @@ or use KEY_HANDBRAKE.
 
 **(5):** Only detected when "JOYPAD" configuration is selected for controller.
 
-**(6)** Embedding codes only work for [client messages](../functions/SendDeathMessage), [textdraws](../functions/TextDrawCreate) and [gametexts](../functions/GameTextForPlayer).
+**(6)** Embedding codes only work for [client messages](../functions/SendClientMessage), [textdraws](../functions/TextDrawCreate) and [gametexts](../functions/GameTextForPlayer).
 
 **(7)** If a player sits in a vehicle with no radio stations (Cop cars, RC vehicles), both R and H will return "262144" for their session. But if they don't, pressing H / Caps Lock in vehicle only returns "2", while R button returns "262144".

@@ -54,7 +54,7 @@ pode usá-lo com SetObjectMaterialText() ou SetPlayerObjectMaterialText()
 funções.
 
 ```
-11698	SAMPRoadSign46
+11699	SAMPRoadSign46
 11700	SAMPRoadSign47
 ```
 ### **Luzes de ambulância**
@@ -549,7 +549,7 @@ Pacote de servidor Windows 0.3.7. Ele é criado por padrão a partir de linhas d
 SAMP.IPL arquivo.
 
 ```
-19800	LSACarPark1
+19800	LSBCarPark1
 ```
 ### **Balaclava**
 
@@ -706,7 +706,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 (quebrável).
 
 ```
-19870	MeshFence1
+19870	MetalGate1
 ```
 ---
 
@@ -1562,7 +1562,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18686	explosion_tiny
 18687	extinguisher
 18688	fire
-18689	fire_bike+
+18689	fire_bike
 18690	fire_car
 18691	fire_large
 18692	fire_med

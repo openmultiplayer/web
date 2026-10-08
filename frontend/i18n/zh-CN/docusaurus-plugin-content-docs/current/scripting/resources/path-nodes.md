@@ -134,7 +134,7 @@ LinkCount 定义了从 LinkID 开始递增的条目数量。TrafficLevel 使用 
 | H     | 13    | 是高速公路（行人节点忽略，汽车永远不会是 11 或 00！） |
 | I     | 14    | 零                                                    |
 | J     | 15    | 零                                                    |
-| K-M   | 16-19 | 生成概率（`0x00` 到 `0x0F`）                          |
+| K-N   | 16-19 | 生成概率（`0x00` 到 `0x0F`）                          |
 | O     | 20    | 路障？                                                |
 | P     | 21    | 停车                                                  |
 | Q     | 22    | 零                                                    |
@@ -276,7 +276,7 @@ public:
 ## 工具和脚本
 
 - [Fastman92 路径格式](https://gtamods.com/wiki/Fastman92_Path_Format)
-- [SA 路径编辑器（开发中）](https://gtagmodding.com/1093) 作者：JGuntherS@NL - 仅用于编辑现有路径数据
+- [SA 路径编辑器（开发中）](https://www.gtagarage.com/mods/show.php?id=1093) 作者：JGuntherS@NL - 仅用于编辑现有路径数据
 - [路径编译器（开发中）](https://gtaforums.com/topic/214901-compiled-path-nodes/?do=findComment&comment=3841297) 作者：ocram88 - 允许通过在游戏内生成路径点来创建线性行人路径
 - [路径工具（开发中）](https://gtaforums.com/topic/214901-compiled-path-nodes/?do=findComment&comment=3936074) 作者：steve-m - 附带 MaxScript，可从 Max 导出行人和车辆路径（通过使用样条线形状）
 - [APE v1.1](https://gtaforums.com/topic/295628-ape-v11/) 作者：Aschratt - 基于内存破解并包含反编译器，可以添加路径到现有路径或在游戏内创建全新的路径！

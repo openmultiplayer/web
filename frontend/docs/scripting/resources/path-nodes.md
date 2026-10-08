@@ -134,7 +134,7 @@ The LinkCount defines the number of entries incrementing from the LinkID. The Tr
 | H     | 13    | Is Highway (ignored for PED-Nodes and never 11 or 00 for Cars!) |
 | I     | 14    | zero                                                            |
 | J     | 15    | zero                                                            |
-| K-M   | 16-19 | spawn probability (`0x00` to `0x0F`)                            |
+| K-N   | 16-19 | spawn probability (`0x00` to `0x0F`)                            |
 | O     | 20    | RoadBlock?                                                      |
 | P     | 21    | Parking                                                         |
 | Q     | 22    | zero                                                            |
@@ -276,7 +276,7 @@ The section is followed by 192 bytes of unknown data.
 ## Tools & Scripts
 
 - [Fastman92 Path Format](https://gtamods.com/wiki/Fastman92_Path_Format)
-- [SA Path Editor (WIP)](https://gtagmodding.com/1093) by JGuntherS@NL - Only useful for editing existing path data
+- [SA Path Editor (WIP)](https://www.gtagarage.com/mods/show.php?id=1093) by JGuntherS@NL - Only useful for editing existing path data
 - [Path Compiler (WIP)](https://gtaforums.com/topic/214901-compiled-path-nodes/?do=findComment&comment=3841297) by ocram88 - Allows to create linear ped paths by generating waypoints from inside the game
 - [Path Tool (WIP)](https://gtaforums.com/topic/214901-compiled-path-nodes/?do=findComment&comment=3936074) by steve-m - Comes bundled with a MaxScript to export ped and vehicle paths from Max (by using spline shapes)
 - [APE v1.1](https://gtaforums.com/topic/295628-ape-v11/) by Aschratt - Based on a memhack and including a decompiler it is possible to add path to the existing or to create completely new from ingame!

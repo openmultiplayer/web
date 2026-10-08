@@ -58,6 +58,6 @@ sidebar_label: "دکمه ها"
 
 **(5)** فقط وقتی تشخیص داده میشود که که پیکربندی "JOYPAD" برای کنترل کننده انتخاب شده باشد.
 
-**(6)** کد های جاگذاری فقط برای [پیام های کلاینت](../functions/SendDeathMessage)، [textdraw ها](../functions/TextDrawCreate) و [gametext ها](../functions/GameTextForPlayer) به کار میروند.
+**(6)** کد های جاگذاری فقط برای [پیام های کلاینت](../functions/SendClientMessage)، [textdraw ها](../functions/TextDrawCreate) و [gametext ها](../functions/GameTextForPlayer) به کار میروند.
 
 </div>

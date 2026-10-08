@@ -20,7 +20,7 @@ tags: []
 | Streaming Mem (Memory) Used (Also shows total allowance) | A quantidade de memória de streaming usada e o total disponível.                                                                  |
 | Messages in Send buffer                                  | O número de mensagens de rede aguardando para serem enviadas.                                                                     |
 | Messages sent                                            | O número de mensagens de rede enviadas.                                                                                           |
-| Btyes sent                                               | A quantidade de dados (em bytes) enviados.                                                                                        |
+| Bytes sent                                               | A quantidade de dados (em bytes) enviados.                                                                                        |
 | Acks sent                                                | O número de acks enviados (confirmação de recebimento de um pacote).                                                              |
 | Acks in send buffer                                      | Número de acks aguardando envio (confirmação de recebimento de um pacote).                                                        |
 | Messages waiting for ack                                 | Número de mensagens que estão aguardando para serem confirmadas como recebidas.                                                   |

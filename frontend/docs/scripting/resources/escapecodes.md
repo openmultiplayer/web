@@ -15,16 +15,16 @@ When create a string you may find that some character may be impossible or extre
 | Carriage return                             | \r           |
 | Horizontal tab                              | \t           |
 | Vertical tab                                | \v           |
-| Backslash (\)                               | \\           |
-| Single quote (')                            | \'           |
-| Double quote (")                            | \"           |
-| Percent sign                                | \%           |
+| Backslash (\\)                              | \\\\         |
+| Single quote (')                            | \\'          |
+| Double quote (")                            | \\"          |
+| Percent sign                                | \\%          |
 | Character code with decimal code "ddd".     | \ddd;        |
-| Character code with hexidecimal code "hhh". | \xhhh;       |
+| Character code with hexadecimal code "hhh". | \xhhh;       |
 
 :::note
 
-The semicolon after the nddd; and nxhhh; codes is optional. Its purpose is to give the escape sequence sequence an explicit termination symbol when it is used in a string constant.
+The semicolon after the \ddd; and \xhhh; codes is optional. Its purpose is to give the escape sequence an explicit termination symbol when it is used in a string constant.
 
 :::
 

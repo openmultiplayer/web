@@ -82,7 +82,7 @@ Player-textdraws are only created for one specific player. Up to 256 textdraws c
 - [IsPlayerTextDrawVisible](../functions/IsPlayerTextDrawVisible): Checks if a player-textdraw is shown for the player.
 - [IsValidPlayerTextDraw](../functions/IsValidPlayerTextDraw): Checks if a player-textdraw is valid.
 - [PlayerTextDrawBackgroundColour](../functions/PlayerTextDrawBackgroundColour): Adjust the background colour of a player-textdraw.
-- [PlayerTextDrawBoxColour](../functions/PlayerTextDrawBoxColour): Sets the colour of a textdraw's box (PlayerTextDrawUseBox ).
+- [PlayerTextDrawBoxColour](../functions/PlayerTextDrawBoxColour): Sets the colour of a textdraw's box (PlayerTextDrawUseBox).
 - [PlayerTextDrawColour](../functions/PlayerTextDrawColour): Sets the text colour of a player-textdraw.
 - [PlayerTextDrawGetAlignment](../functions/PlayerTextDrawGetAlignment): Gets the text alignment of a player-textdraw.
 - [PlayerTextDrawGetBackgroundColour](../functions/PlayerTextDrawGetBackgroundColour): Gets the background colour of a player-textdraw.
@@ -182,7 +182,7 @@ We have created a textdraw in the center of the screen that says "Hello World!".
 
 There are 4 fonts available for textdraw text:
 
-![Image:320px-Textdraw_map.png](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)
+![Image:Textdraw_font_styles.png](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)
 
 | ID  | Info                                                           | Tips                                                   |
 | --- | -------------------------------------------------------------- | ------------------------------------------------------ |

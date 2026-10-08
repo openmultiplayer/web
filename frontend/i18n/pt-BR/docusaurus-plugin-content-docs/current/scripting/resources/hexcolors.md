@@ -14,7 +14,8 @@ O sistema numérico hexadecimal, ou comumente conhecido apenas como Hex, é um s
 ### Decimal (base 10)
 
 ```c
-01
+0
+1
 2
 3
 4
@@ -29,7 +30,8 @@ O sistema numérico hexadecimal, ou comumente conhecido apenas como Hex, é um s
 ### Hexadecimal (base 16)
 
 ```c
-01
+0
+1
 2
 3
 4

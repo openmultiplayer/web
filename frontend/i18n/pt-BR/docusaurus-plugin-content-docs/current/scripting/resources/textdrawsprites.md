@@ -638,7 +638,7 @@ Alguns sprites do textdraw parecem menores em comparação com seu tamanho real 
 | 9homby | ![](https://assets.open.mp/assets/images/sprites/LD_TATT/9homby.png) |
 | 9rasta | ![](https://assets.open.mp/assets/images/sprites/LD_TATT/9rasta.png) |
 
-### LD_LOADSCS.txd
+### LOADSCS.txd
 
 | Texture | Visualização |
 | ----------- | ------------------------------------------------------------------------- |

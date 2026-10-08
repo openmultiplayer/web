@@ -135,11 +135,11 @@ NPC_AimAt(npcid, x, y, z, true, 1000, true, 0.0, 0.0, 0.6, NPC_ENTITY_CHECK_OBJE
 
 ```c
 // 向特定位置射击（无目标）
-NPC_Shoot(npcid, INVALID_PLAYER_ID, BULLET_HIT_TYPE_NONE, WEAPON_SNIPER,
+NPC_Shoot(npcid, WEAPON_SNIPER, INVALID_PLAYER_ID, BULLET_HIT_TYPE_NONE,
          x, y, z, 0.0, 0.0, 0.0, false);
 
 // 向玩家射击
-NPC_Shoot(npcid, playerid, BULLET_HIT_TYPE_PLAYER, WEAPON_M4,
+NPC_Shoot(npcid, WEAPON_M4, playerid, BULLET_HIT_TYPE_PLAYER,
          x, y, z, 0.0, 0.0, 0.0, true);
 ```
 

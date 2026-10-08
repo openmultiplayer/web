@@ -33,18 +33,18 @@ A tabela abaixo contém uma lista de tipos de habilidades com armas válidas usa
 
 Existem 3 níveis de habilidade com armas: Pobre, Gangster e Hitman. A tabela a seguir mostra os níveis de habilidade com armas necessários para avançar para o próximo nível de habilidade:
 
-| Weapon | Pobre | Gângster | assassino de aluguel |
-| --------------- | ---- | -------- | ------ |
-| Pistol | 0 | 40 | 999 |
-| Slienced Pistol | 0 | 500 | 999 |
-| Desert Eagle | 0 | 200 | 999 |
-| Shotgun | 0 | 200 | 999 |
-| Sawnoff | 0 | 200 | 999 |
-| Combat | 0 | 200 | 999 |
-| Micro Uzi | 0 | 50 | 999 |
-| TEC-9 | 0 | 50 | 999 |
-| MP5 | 0 | 250 | 999 |
-| AK47 | 0 | 200 | 999 |
-| M4 | 0 | 200 | 999 |
-| Sniper Rifle | 0 | 300 | 999 |
-| Country Rifle | 0 | 300 | 999 |
+| Weapon          | Pobre | Gângster | assassino de aluguel |
+| --------------- | ----- | -------- | -------------------- |
+| Pistol          | 0     | 40       | 999                  |
+| Silenced Pistol | 0     | 500      | 999                  |
+| Desert Eagle    | 0     | 200      | 999                  |
+| Shotgun         | 0     | 200      | 999                  |
+| Sawnoff         | 0     | 200      | 999                  |
+| Combat          | 0     | 200      | 999                  |
+| Micro Uzi       | 0     | 50       | 999                  |
+| TEC-9           | 0     | 50       | 999                  |
+| MP5             | 0     | 250      | 999                  |
+| AK47            | 0     | 200      | 999                  |
+| M4              | 0     | 200      | 999                  |
+| Sniper Rifle    | 0     | 300      | 999                  |
+| Country Rifle   | 0     | 300      | 999                  |

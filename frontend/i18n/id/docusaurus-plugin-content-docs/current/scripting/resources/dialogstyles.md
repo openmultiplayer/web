@@ -87,10 +87,10 @@ ShowPlayerDialog(playerid, ID_DIALOG_KAMU, DIALOG_STYLE_INPUT, "Judul", "Masukka
 :::
 
 ```c
-// menulis "input" and dan menekan tombol kiri
+// menulis "input" dan menekan tombol kiri
 playerid = 0, dialogid = ID_DIALOG_KAMU, response = 1, listitem = -1, inputtext = 'input' (size: 5)
 
-// menulis "input" and dan menekan tombol kanan
+// menulis "input" dan menekan tombol kanan
 playerid = 0, dialogid = ID_DIALOG_KAMU, response = 0, listitem = -1, inputtext = 'input' (size: 5)
 ```
 
@@ -173,7 +173,7 @@ playerid = 0, dialogid = ID_DIALOG_KAMU, response = 0, listitem = -1, inputtext 
 
 :::warning
 
-Gaya ini telah ditambahkan di **SA-MP 0.3.7** and tidak akan bekerja di versi sebelumnya!
+Gaya ini telah ditambahkan di **SA-MP 0.3.7** dan tidak akan bekerja di versi sebelumnya!
 
 :::
 
@@ -221,7 +221,7 @@ playerid = 0, dialogid = ID_DIALOG_KAMU, response = 0, listitem = 1, inputtext =
 
 :::warning
 
-Gaya ini telah ditambahkan di **SA-MP 0.3.7** and tidak akan bekerja di versi sebelumnya!
+Gaya ini telah ditambahkan di **SA-MP 0.3.7** dan tidak akan bekerja di versi sebelumnya!
 
 :::
 
@@ -239,7 +239,7 @@ Menampilkan:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan akan diatur ulang setelah \n and \t. **info** pada baris pertama berisi header.
+- Pewarnaan akan diatur ulang setelah \n dan \t. **info** pada baris pertama berisi header.
 
 :::
 

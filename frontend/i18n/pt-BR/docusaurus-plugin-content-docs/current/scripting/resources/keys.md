@@ -58,4 +58,4 @@ ou usar KEY_HANDBRAKE.
 
 **(5):** Só é detectado quando a configuração "JOYPAD" está selecionada para o controle.
 
-**(6)** Códigos de embedding só funcionam para [mensagens do cliente](../functions/SendDeathMessage), [textdraws](../functions/TextDrawCreate) e [gametexts](../functions/GameTextForPlayer).
+**(6)** Códigos de embedding só funcionam para [mensagens do cliente](../functions/SendClientMessage), [textdraws](../functions/TextDrawCreate) e [gametexts](../functions/GameTextForPlayer).

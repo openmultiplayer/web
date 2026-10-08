@@ -93,10 +93,10 @@ ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_INPUT, "标题", "在下�
 
 ```c
 // 输入"input"后点击左按钮
-playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = -1, inputtext = '输入' (size: 5)
+playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = -1, inputtext = 'input' (size: 5)
 
 // 输入"input"后点击右按钮
-playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext = '输入' (size: 5)
+playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext = 'input' (size: 5)
 ```
 
 ---
@@ -172,10 +172,10 @@ ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_PASSWORD, "标题", "在�
 
 ```c
 // 输入"input"后点击左按钮
-playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = -1, inputtext = '输入' (size: 5)
+playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = -1, inputtext = 'input' (size: 5)
 
 // 输入"input"后点击右按钮
-playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext = '输入' (size: 5)
+playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext = 'input' (size: 5)
 ```
 
 ---

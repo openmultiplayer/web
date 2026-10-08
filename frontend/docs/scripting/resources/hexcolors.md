@@ -6,14 +6,15 @@ description: This deals with the color representation in hexadecimal in SAMP.
 
 ## What is hex?
 
-The hexadecimal numeral system, or commonly known just as Hex, is a numeral system made up of 16 unique symbols (this is also known as base 16). You're probably wondering how this numeral system can have 16 symbols when our beloved decimal system (base 10) only has 10 symbols (0-9). Well the answer is quiet simple, let's take a look at both systems:
+The hexadecimal numeral system, or commonly known just as Hex, is a numeral system made up of 16 unique symbols (this is also known as base 16). You're probably wondering how this numeral system can have 16 symbols when our beloved decimal system (base 10) only has 10 symbols (0-9). Well the answer is quite simple, let's take a look at both systems:
 
 ---
 
 ### Decimal (base 10)
 
 ```c
-01
+0
+1
 2
 3
 4
@@ -29,7 +30,8 @@ The hexadecimal numeral system, or commonly known just as Hex, is a numeral syst
 ### Hexadecimal (base 16)
 
 ```c
-01
+0
+1
 2
 3
 4
@@ -48,7 +50,7 @@ F //15
 
 Since there are no more available numbers, hex uses letters from the alphabet. Don't be scared by this, you can simply view them as place holders who's value is +1 of the previous number. This sounds very confusing and may even look pretty scary, but you will get used to it in no time at all.
 
-Now let's take a look a few bigger numbers.
+Now let's take a look at a few bigger numbers.
 
 ---
 
@@ -112,7 +114,7 @@ F * (16^1) + F * (16^0)
 
 ## When and how to use hex.
 
-There isn't really a sole use for hex, you can use it when ever you want; though it's mostly used for color defines (We'll take a look at this later). Some people use hex as a visual aid to make things look more clearly (Y_Less) for example:
+There isn't really a sole use for hex, you can use it whenever you want; though it's mostly used for color defines (We'll take a look at this later). Some people use hex as a visual aid to make things look more clearly (Y_Less) for example:
 
 :::note
 

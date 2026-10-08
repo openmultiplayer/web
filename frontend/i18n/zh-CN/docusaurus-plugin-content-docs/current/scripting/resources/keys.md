@@ -58,6 +58,6 @@ SA-MP 使用位掩码技术检测按键状态，关于位掩码的详细说明�
 
 **(5)** 仅当控制器配置选择为 "JOYPAD" 时方可被检测。
 
-**(6)** 内嵌代码仅对[死亡信息](../functions/SendDeathMessage)、[文本绘图](../functions/TextDrawCreate) 及[游戏文本](../functions/GameTextForPlayer)生效。
+**(6)** 内嵌代码仅对[客户端消息](../functions/SendClientMessage)、[文本绘图](../functions/TextDrawCreate) 及[游戏文本](../functions/GameTextForPlayer)生效。
 
 **(7)** 若玩家乘坐无电台的车辆（如警车、遥控车等），R 键与 H 键在会话中均返回值 "262144"；反之，若车辆有电台，在车内按下 H 键（或大写锁定键）仅返回 "2"，而 R 键仍返回 "262144"。

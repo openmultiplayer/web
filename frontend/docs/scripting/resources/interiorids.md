@@ -42,7 +42,7 @@ and you'll see the ID of the interior universe. Now you can safely use [SetPlaye
 | Interior               | Interior ID | X         | Y         | Z         | Picture                                                             |
 | ---------------------- | ----------- | --------- | --------- | --------- | ------------------------------------------------------------------- |
 | Four Dragons           | 10          | 2016.1156 | 1017.1541 | 996.875   | ![](https://assets.open.mp/assets/images/interiors/interior41.png)  |
-| Casino (Redsands West) | 12          | 1133.2007 | -15.7586  | 1000.3251   | ![](https://assets.open.mp/assets/images/interiors/interior62.png)  |
+| Casino (Redsands West) | 12          | 1133.2007 | -15.7586  | 1000.3251 | ![](https://assets.open.mp/assets/images/interiors/interior62.png)  |
 | Caligula's Casino      | 1           | 2233.9363 | 1711.8038 | 1011.6312 | ![](https://assets.open.mp/assets/images/interiors/interior48.png)  |
 | Caligula's Roof        | 1           | 2268.5156 | 1647.7682 | 1084.2344 | ![](https://assets.open.mp/assets/images/interiors/interior131.png) |
 
@@ -75,7 +75,7 @@ and you'll see the ID of the interior universe. Now you can safely use [SetPlaye
 | Barber shop 1 | 12          | 411.9707  | -51.9217 | 1001.8984 | ![](https://assets.open.mp/assets/images/interiors/interior107.png) |
 | Barber shop 2 | 2           | 414.2987  | -18.8044 | 1001.8047 | ![](https://assets.open.mp/assets/images/interiors/interior50.png)  |
 | Barber shop 3 | 3           | 418.4666  | -80.4595 | 1001.8047 | ![](https://assets.open.mp/assets/images/interiors/interior13.png)  |
-| Tattoo sarlor | 3           | -201.2236 | -43.2465 | 1002.2734 | ![](https://assets.open.mp/assets/images/interiors/interior18.png)  |
+| Tattoo parlor | 3           | -201.2236 | -43.2465 | 1002.2734 | ![](https://assets.open.mp/assets/images/interiors/interior18.png)  |
 | Sex shop      | 3           | -100.2674 | -22.9376 | 1000.7188 | ![](https://assets.open.mp/assets/images/interiors/interior17.png)  |
 
 ## Burglary houses

@@ -137,11 +137,11 @@ ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_LIST, "Caption", "Item 0\
 
 <div dir="rtl" style={{ textAlign: "right" }}>
 
-### پاسخ خروجی:
+### پاسخ خروجی
 
 :::note
 
-- **listitem**شماره مورد انتخاب شده است. از **0** شروع میشود.
+- **listitem** شماره مورد انتخاب شده است. از **0** شروع میشود.
 - **inputtext** متن مورد انتخاب شده، شامل رنگ ها نمیشود.
 
 :::
@@ -272,7 +272,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 :::note نکته
 
-- شبیه**DIALOG_STYLE_LIST**.
+- شبیه **DIALOG_STYLE_LIST**.
 
 :::
 
@@ -312,6 +312,6 @@ Item 1 Column 1\tItem 1 Column 2\tItem 1 Column 3\n\
 // selected the first list item and pressed the left button
 playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = 0, inputtext = 'Item 1 Column 1' (size: 15)
 
-// selected the first list item and pressed the right button
+// selected the second list item and pressed the right button
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 'Item 2 Column 1' (size: 15)
 ```

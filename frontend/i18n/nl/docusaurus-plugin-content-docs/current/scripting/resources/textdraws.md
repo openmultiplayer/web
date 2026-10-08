@@ -30,7 +30,7 @@ Er zijn 4 tekstfonts (0–3) en een sprite‑font (4) i.c.m. `TextDrawTextSize` 
 
 ## Tonen
 
-Voor één speler: `TextDrawShowForPlayer(playerid, text)`. Voor alle spelers: `TextDrawShowForAll()`.
+Voor één speler: `TextDrawShowForPlayer(playerid, text)`. Voor alle spelers: `TextDrawShowForAll(text)`.
 
 ## Tips
 

@@ -25,7 +25,7 @@ Os vários aspectos serão abordados sucessivamente, mas começaremos examinando
 ```c
 #include <a_samp>
 ```
-Isso basicamente carrega o código de pawno/includes/a_samp.inc em seu script, para que você possa usar tudo o que ele tiver. Uma das coisas que tem é:
+Isso basicamente carrega o código de pawno/include/a_samp.inc em seu script, para que você possa usar tudo o que ele tiver. Uma das coisas que tem é:
 
 ```c
 #include <core>
@@ -122,7 +122,7 @@ MyFunction()
     return 1;
 }
 ```
-Isso faz exatamente o mesmo que o código original, mas é organizado de maneira diferente. Quando main() é chamado quando o modo é iniciado (é chamado automaticamente), ele chama a nova função personalizada chamada MyFunction(). Esta função imprime a mensagem no console do servidor e retorna o número 1 para main(). main() pega o valor retornado (1) e então o retorna para o próprio servidor (ou seja, o local que chamou main em primeiro lugar). Como "retornar MyFunction();" é uma única declaração que você poderia fazer:
+Isso faz exatamente o mesmo que o código original, mas é organizado de maneira diferente. Quando main() é chamado quando o modo é iniciado (é chamado automaticamente), ele chama a nova função personalizada chamada MyFunction(). Esta função imprime a mensagem no console do servidor e retorna o número 1 para main(). main() pega o valor retornado (1) e então o retorna para o próprio servidor (ou seja, o local que chamou main em primeiro lugar). Como "return MyFunction();" é uma única declaração que você poderia fazer:
 
 ```c
 #include <a_samp>
@@ -335,14 +335,14 @@ SetPlayerValue(playerid, value)
 {
     switch(playerid)
     {
-        case 0: gPlayer0 = value; // é o mesmo que fazer se (playerid == 0)
-        case 1: gPlayer1 = value; // é o mesmo que fazer se (playerid == 1)
-        case 2: gPlayer2 = value; // é o mesmo que fazer se (playerid == 2)
-        case 3: gPlayer3 = value; // é o mesmo que fazer se (playerid == 3)
+        case 0: gPlayer0 = value; // é o mesmo que fazer if (playerid == 0)
+        case 1: gPlayer1 = value; // é o mesmo que fazer if (playerid == 1)
+        case 2: gPlayer2 = value; // é o mesmo que fazer if (playerid == 2)
+        case 3: gPlayer3 = value; // é o mesmo que fazer if (playerid == 3)
     }
 }
 ```
-Consulte a seção sobre estruturas de controle para obter mais informações sobre o que está acontecendo lá. Observe também que isso pode ser feito como uma opção, mas é menos claro para o exemplo e, de qualquer maneira, é efetivamente o mesmo código.
+Consulte a seção sobre estruturas de controle para obter mais informações sobre o que está acontecendo lá. Observe também que isso pode ser feito como um switch, mas é menos claro para o exemplo e, de qualquer maneira, é efetivamente o mesmo código.
 
 Agora compare isso com o uso de um array com um slot por jogador, tendo em mente que um índice de array pode ter qualquer valor:
 
@@ -355,7 +355,7 @@ SetPlayerValue(playerid, value)
     gPlayers[playerid] = value;
 }
 ```
-Isso criará um array global (veja a seção sobre escopo) com um slot para cada jogador, então a função atribuirá o que estiver na variável "valor" ao slot do jogador especificado. O primeiro exemplo era grande com apenas quatro jogadores, usando 4 linhas por jogador, são 2.000 linhas para 500 jogadores (se pode ser menos, mas ainda é muito), a segunda versão é uma única linha, não importa quantos jogadores você tenha.
+Isso criará um array global (veja a seção sobre escopo) com um slot para cada jogador, então a função atribuirá o que estiver na variável "value" ao slot do jogador especificado. O primeiro exemplo era grande com apenas quatro jogadores, usando 4 linhas por jogador, são 2.000 linhas para 500 jogadores (pode ser menos, mas ainda é muito), a segunda versão é uma única linha, não importa quantos jogadores você tenha.
 
 ---
 
@@ -371,9 +371,9 @@ Strings em PAWN (e outras linguagens) são chamadas de "NULL finalizadas", isso 
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 ```
-Esse código declara uma nova string com espaço suficiente para uma string de 15 caracteres e a define inicialmente como a string de 5 caracteres "Hello World!", as aspas duplas ao redor do texto indicam que é uma string. Internamente o array ficará assim:
+Esse código declara uma nova string com espaço suficiente para uma string de 15 caracteres e a define inicialmente como a string de 5 caracteres "hello", as aspas duplas ao redor do texto indicam que é uma string. Internamente o array ficará assim:
 
 ```
 104 101 108 108 111 0 x x x x x x x x x x
@@ -384,35 +384,35 @@ Strings podem ser manipuladas como arrays normais, por exemplo:
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = 97;
 ```
-Irá alterar o caractere no slot 1 para o caractere representado pelo número 97 (um "a" minúsculo), resultando na leitura da string "alô". Isso pode ser escrito de forma muito mais legível e fácil de editar como:
+Irá alterar o caractere no slot 1 para o caractere representado pelo número 97 (um "a" minúsculo), resultando na leitura da string "hallo". Isso pode ser escrito de forma muito mais legível e fácil de editar como:
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = 'a';
 ```
 As aspas simples ao redor de "a" significam que é um caractere, não uma string, os caracteres não precisam ser terminados em NULL, pois têm apenas uma célula de comprimento, eles também podem ser usados ​​​​alternadamente com números se você souber o que eles representam.
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = '\0';
 ```
 '\\0' tem dois caracteres, porém o \\ é um caractere especial que modifica o próximo caractere, \\0 significa NULL, esse código é o mesmo que fazer:
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = 0;
 ```
 Mas isso não é o mesmo que fazer:
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = '0';
 ```
 A primeira e a segunda versões resultarão na string sendo simplesmente:
@@ -447,19 +447,17 @@ new
 ```
 Esse código criará uma string que consiste apenas em aspas duplas, normalmente uma aspas duplas sinaliza o final de uma string escrita, mas a barra invertida torna as aspas duplas imediatamente após uma parte da string, e as aspas duplas depois disso terminam a string. Outros caracteres especiais são:
 
-| Code   | Nome                  | Finalidade                                                                                         |
-| ------ | --------------------- | -------------------------------------------------------------------------------------------------- |
-| \0     | Caractere NULL        | Termina uma string.                                                                                |
-| EOS    | Caractere NULL        | (igual ao acima)                                                                                   |
-| \n     | Alimentação de linha  | use \n para uma nova linha no Linux (também funciona no Windows)                                   |
-| \r     | Retorno de transporte | Use \r\n para uma nova linha no Windows                                                            |
-| \\\\   | Barra invertida       | Usado para colocar uma barra invertida real em uma string                                          |
-| \'     | Citação única         | Usado para usar aspas simples reais como um caractere entre aspas simples (use: '\'')              |
-| \"     | Aspas duplas          | Usado para colocar aspas duplas reais em uma string                                                |
-| \xNNN; | Número hexadecimal    | Usado para definir o caractere representado pelo número hexadecimal especificado em NNN            |
-| \NNN;  | Número                | Usado para definir o caractere representado pelo número especificado no lugar de NNN (consulte \0) |
-
-Usado para definir o caractere representado pelo número especificado no lugar de NNN (consulte \\0)
+| Code   | Nome                 | Finalidade                                                                                         |
+| ------ | -------------------- | -------------------------------------------------------------------------------------------------- |
+| \0     | Caractere NULL       | Termina uma string.                                                                                |
+| EOS    | Caractere NULL       | (igual ao acima)                                                                                   |
+| \n     | Alimentação de linha | use \n para uma nova linha no Linux (também funciona no Windows)                                   |
+| \r     | Retorno de carro     | Use \r\n para uma nova linha no Windows                                                            |
+| \\\\   | Barra invertida      | Usado para colocar uma barra invertida real em uma string                                          |
+| \\'    | Aspas simples        | Usado para usar aspas simples reais como um caractere entre aspas simples (use: '\\'')             |
+| \\"    | Aspas duplas         | Usado para colocar aspas duplas reais em uma string                                                |
+| \xNNN; | Número hexadecimal   | Usado para definir o caractere representado pelo número hexadecimal especificado em NNN            |
+| \NNN;  | Número               | Usado para definir o caractere representado pelo número especificado no lugar de NNN (consulte \0) |
 
 Existem outros, mas esses são os principais.
 
@@ -522,9 +520,9 @@ new
 ```
 ---
 
-###locais
+### locais
 
-Uma variável local é aquela declarada “nova” dentro de uma função ou parte de uma função:
+Uma variável local é aquela declarada “new” dentro de uma função ou parte de uma função:
 
 ```c
 MyFunc()

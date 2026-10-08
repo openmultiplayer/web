@@ -205,12 +205,12 @@ tags: []
 
 | Waarde | Constant             |
 | ------ | -------------------- |
-| 0      | FIGHT_STYLE_NORMAL   |
-| 1      | FIGHT_STYLE_BOXING   |
-| 2      | FIGHT_STYLE_KUNGFU   |
-| 3      | FIGHT_STYLE_KNEEHEAD |
-| 4      | FIGHT_STYLE_GRABKICK |
-| 5      | FIGHT_STYLE_ELBOW    |
+| 4      | FIGHT_STYLE_NORMAL   |
+| 5      | FIGHT_STYLE_BOXING   |
+| 6      | FIGHT_STYLE_KUNGFU   |
+| 7      | FIGHT_STYLE_KNEEHEAD |
+| 15     | FIGHT_STYLE_GRABKICK |
+| 16     | FIGHT_STYLE_ELBOW    |
 
 ## Wapenvaardigheden
 

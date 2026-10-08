@@ -49,7 +49,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 下方限速标识包含透明材质覆盖层（索引 3），可配合 SetObjectMaterialText()或 SetPlayerObjectMaterialText()函数使用。
 
 ```
-11698	SAMPRoadSign46
+11699	SAMPRoadSign46
 11700	SAMPRoadSign47
 ```
 
@@ -542,7 +542,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19798	LSACarPark1
 ```
 
-### **卡里古拉赌场金库门（改良版**
+### **卡里古拉赌场金库门（改良版）**
 
 优化枢轴点以适配 MoveObject()函数，并修复夜间顶点着色问题。原物体 ID 为 2634。
 
@@ -555,7 +555,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 配合 LS 海滨建筑替换模块（ID 19596-19597）使用。示例脚本"ls_beachside"展示建筑使用方法，该物体默认通过 SAMP.IPL 文件定义生成。
 
 ```
-19800	LSACarPark1
+19800	LSBCarPark1
 ```
 
 ### **面罩**
@@ -670,7 +670,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### ​**模块化岛屿房屋 1**
 
-这些物体需配合前述模块化岛屿物体（ID:19529-19552）使用。示例脚本"modular_houses"位于 Windows 版 0.3.7 服务端包的"滤镜脚本目录"。
+这些物体需配合前述模块化岛屿物体（ID:19529-19552）使用。示例脚本"modular_houses"位于 Windows 版 0.3.7 服务端包的"filterscripts"目录。
 
 ```
 19849	MIHouse1Land
@@ -713,7 +713,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 此金属闸门与 ID 3036 物体相同，但改为不可破坏属性：
 
 ```
-19870	MeshFence1
+19870	MetalGate1
 ```
 
 ---
@@ -1589,7 +1589,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 18686	explosion_tiny
 18687	extinguisher
 18688	fire
-18689	fire_bike+
+18689	fire_bike
 18690	fire_car
 18691	fire_large
 18692	fire_med

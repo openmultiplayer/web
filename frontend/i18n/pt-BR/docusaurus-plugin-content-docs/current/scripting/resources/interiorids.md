@@ -75,7 +75,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | Barber shop 1 | 12          | 411.9707  | -51.9217 | 1001.8984 | ![](https://assets.open.mp/assets/images/interiors/interior107.png) |
 | Barber shop 2 | 2           | 414.2987  | -18.8044 | 1001.8047 | ![](https://assets.open.mp/assets/images/interiors/interior50.png)  |
 | Barber shop 3 | 3           | 418.4666  | -80.4595 | 1001.8047 | ![](https://assets.open.mp/assets/images/interiors/interior13.png)  |
-| Tattoo sarlor | 3           | -201.2236 | -43.2465 | 1002.2734 | ![](https://assets.open.mp/assets/images/interiors/interior18.png)  |
+| Tattoo parlor | 3           | -201.2236 | -43.2465 | 1002.2734 | ![](https://assets.open.mp/assets/images/interiors/interior18.png)  |
 | Sex shop      | 3           | -100.2674 | -22.9376 | 1000.7188 | ![](https://assets.open.mp/assets/images/interiors/interior17.png)  |
 
 ## Assalto a casas

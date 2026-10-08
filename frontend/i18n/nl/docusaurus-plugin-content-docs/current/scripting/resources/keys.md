@@ -58,4 +58,4 @@ of `KEY_HANDBRAKE` gebruiken.
 
 **(5):** Alleen gedetecteerd als "JOYPAD"-configuratie actief is.
 
-**(6):** Embedding-codes werken voor [client messages](../functions/SendDeathMessage), [textdraws](../functions/TextDrawCreate) en [gametexts](../functions/GameTextForPlayer).
+**(6):** Embedding-codes werken voor client messages, [textdraws](../functions/TextDrawCreate) en [gametexts](../functions/GameTextForPlayer).

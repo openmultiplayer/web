@@ -76,7 +76,7 @@ tags: []
 | 32    | TEC9               | WEAPON_TEC9             |
 | 33    | Rifle              | WEAPON_RIFLE            |
 | 34    | Sniper Rifle       | WEAPON_SNIPER           |
-| 35    | Roocket Launcher   | WEAPON_ROCKETLAUNCHER   |
+| 35    | Rocket Launcher    | WEAPON_ROCKETLAUNCHER   |
 | 36    | Heat Seeker        | WEAPON_HEATSEEKER       |
 | 37    | Flamethrower       | WEAPON_FLAMETHROWER     |
 | 38    | Minigun            | WEAPON_MINIGUN          |
@@ -250,12 +250,12 @@ tags: []
 
 | Valor | Constante            |
 | ----- | -------------------- |
-| 0     | FIGHT_STYLE_NORMAL   |
-| 1     | FIGHT_STYLE_BOXING   |
-| 2     | FIGHT_STYLE_KUNGFU   |
-| 3     | FIGHT_STYLE_KNEEHEAD |
-| 4     | FIGHT_STYLE_GRABKICK |
-| 5     | FIGHT_STYLE_ELBOW    |
+| 4     | FIGHT_STYLE_NORMAL   |
+| 5     | FIGHT_STYLE_BOXING   |
+| 6     | FIGHT_STYLE_KUNGFU   |
+| 7     | FIGHT_STYLE_KNEEHEAD |
+| 15    | FIGHT_STYLE_GRABKICK |
+| 16    | FIGHT_STYLE_ELBOW    |
 
 ## Habilidades com Armas
 
@@ -320,9 +320,9 @@ tags: []
 
 | Valor | Constante                    |
 | ----- | ---------------------------- |
-| 1     | PLAYER_RECORDING_TYPE_NONE   |
-| 2     | PLAYER_RECORDING_TYPE_DRIVER |
-| 3     | PLAYER_RECORDING_TYPE_ONFOOT |
+| 0     | PLAYER_RECORDING_TYPE_NONE   |
+| 1     | PLAYER_RECORDING_TYPE_DRIVER |
+| 2     | PLAYER_RECORDING_TYPE_ONFOOT |
 
 # a_vehicles
 
@@ -349,9 +349,9 @@ tags: []
 
 | Valor | Constante            |
 | ----- | -------------------- |
-| 0     | VEHICLE_PARAMS_UNSET |
-| 1     | VEHICLE_PARAMS_OFF   |
-| 2     | VEHICLE_PARAMS_ON    |
+| -1    | VEHICLE_PARAMS_UNSET |
+| 0     | VEHICLE_PARAMS_OFF   |
+| 1     | VEHICLE_PARAMS_ON    |
 
 ## Informações do Modelo de Veículo
 

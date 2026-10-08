@@ -26,7 +26,7 @@ main()
 #include <a_samp>
 ```
 
-该指令将 pawno/includes/a_samp.inc 文件内容载入脚本，使其所有功能可用。该文件本身包含：
+该指令将 pawno/include/a_samp.inc 文件内容载入脚本，使其所有功能可用。该文件本身包含：
 
 ```c
 #include <core>
@@ -413,10 +413,10 @@ PAWN 中的字符串采用"NULL 终止"机制，即遇到数值 0 时标志字�
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 ```
 
-该代码声明了可容纳 15 字符的字符串数组，并初始化为"Hello World!"。双引号包裹表示字符串字面量。内部数组结构如下：
+该代码声明了可容纳 15 字符的字符串数组，并初始化为"hello"。双引号包裹表示字符串字面量。内部数组结构如下：
 
 ```
 104 101 108 108 111 0 x x x x x x x x x x
@@ -428,7 +428,7 @@ new
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = 97;
 ```
 
@@ -436,7 +436,7 @@ myString[1] = 97;
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = 'a';
 ```
 
@@ -444,7 +444,7 @@ myString[1] = 'a';
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = '\0';
 ```
 
@@ -452,7 +452,7 @@ myString[1] = '\0';
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = 0;
 ```
 
@@ -460,7 +460,7 @@ myString[1] = 0;
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = '0';
 ```
 
@@ -498,12 +498,10 @@ new
 | \n     | 换行符     | Linux 系统换行（Windows 同样支持）            |
 | \r     | 回车符     | Windows 系统换行需使用\r\n                    |
 | \\\\   | 反斜杠     | 在字符串中插入实际反斜杠                      |
-| \'     | 单引号     | 在单引号字符中插入实际单引号（例：'\''）      |
-| \"     | 双引号     | 在字符串中插入实际双引号                      |
+| \\'    | 单引号     | 在单引号字符中插入实际单引号（例：'\\''）     |
+| \\"    | 双引号     | 在字符串中插入实际双引号                      |
 | \xNNN; | 十六进制数 | 使用十六进制数值指定字符（例：\x41; 表示'A'） |
 | \NNN;  | 十进制数   | 使用十进制数值指定字符（例：\65; 表示'A'）    |
-
-用于将字符设置为由指定数字（替换 NNN）所代表的字符（参见\\0 的用法）
 
 虽然还存在其他转义序列，但以上列出的为主要使用类型。
 
