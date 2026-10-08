@@ -1,5 +1,5 @@
 ---
-id: textalignments
+id: materialtextalignment
 title: Penjajaran Teks
 description: Informasi tentang penjajaran teks
 ---
