@@ -9,11 +9,11 @@ sidebar_label: 战斗风格
 
 :::
 
-| 数值 | 定义         |
-| ---- | ------------ |
-| 4    | 普通战斗风格 |
-| 5    | 拳击风格     |
-| 6    | 功夫风格     |
-| 7    | 膝击风格     |
-| 15   | 抓踢风格     |
-| 16   | 肘击风格     |
+| 数值 | 定义                               |
+| ---- | ---------------------------------- |
+| 4    | FIGHT_STYLE_NORMAL（普通战斗风格） |
+| 5    | FIGHT_STYLE_BOXING（拳击风格）     |
+| 6    | FIGHT_STYLE_KUNGFU（功夫风格）     |
+| 7    | FIGHT_STYLE_KNEEHEAD（膝击风格）   |
+| 15   | FIGHT_STYLE_GRABKICK（抓踢风格）   |
+| 16   | FIGHT_STYLE_ELBOW（肘击风格）      |

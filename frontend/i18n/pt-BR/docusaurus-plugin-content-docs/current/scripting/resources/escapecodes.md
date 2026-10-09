@@ -15,16 +15,16 @@ Ao criar uma string, você pode descobrir que alguns caracteres podem ser imposs
 | Retorno de carro                                  | \r         |
 | Tabulação horizontal                              | \t         |
 | Tabulação vertical                                | \v         |
-| Barra invertida (\)                               | \\         |
-| Aspas simples (')                                 | \'         |
-| Aspas duplas (")                                  | \"         |
-| Sinal de porcentagem                              | \%         |
+| Barra invertida (\\)                              | \\\\       |
+| Aspas simples (')                                 | \\'        |
+| Aspas duplas (")                                  | \\"        |
+| Sinal de porcentagem                              | \\%        |
 | Código de caractere com código decimal "ddd".     | \ddd;      |
 | Código de caractere com código hexadecimal "hhh". | \xhhh;     |
 
 :::note
 
-O ponto e vírgula após os códigos nddd; e nxhhh; é opcional. Seu propósito é dar à sequência de escape um símbolo de terminação explícito quando ela é usada em uma constante de string.
+O ponto e vírgula após os códigos \ddd; e \xhhh; é opcional. Seu propósito é dar à sequência de escape um símbolo de terminação explícito quando ela é usada em uma constante de string.
 
 :::
 

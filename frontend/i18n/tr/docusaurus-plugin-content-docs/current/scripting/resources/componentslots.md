@@ -11,6 +11,7 @@ Aşağıdaki araç parça yuvaları, [GetVehicleComponentInSlot](../functions/Ge
 
 | Yuva | Tanım                    |
 | ---- | ------------------------ |
+| -1   | CARMODTYPE_NONE          |
 | 0    | CARMODTYPE_SPOILER       |
 | 1    | CARMODTYPE_HOOD          |
 | 2    | CARMODTYPE_ROOF          |

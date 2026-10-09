@@ -19,7 +19,7 @@ tags: []
 | Streaming Mem (Memory) Used (Also shows total allowance) | The amount of streaming memory being used, and total available.                                                 |
 | Messages in Send buffer                                  | The number of network messages waiting to be sent.                                                              |
 | Messages sent                                            | The number of network messages sent.                                                                            |
-| Btyes sent                                               | The amount of data (in bytes) sent.                                                                             |
+| Bytes sent                                               | The amount of data (in bytes) sent.                                                                             |
 | Acks sent                                                | The number of acks sent (acknowledge receipt of a packet).                                                      |
 | Acks in send buffer                                      | Number of acks waiting to be sent (acknowledge receipt of a packet).                                            |
 | Messages waiting for ack                                 | Number of messages that are waiting to be acknowledged as received.                                             |

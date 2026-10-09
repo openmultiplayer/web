@@ -123,48 +123,48 @@ O LinkCount define o número de entradas incrementadas a partir do LinkID. O Tra
 - 2 = médio
 - 3 = baixo
 
-| Flag | Pouco | Descrição |
+| Flag  | Bit   | Descrição                                                       |
 | ----- | ----- | --------------------------------------------------------------- |
-| A | 06 | Bloqueios de estradas |
-| B | 07 | Barcos |
-| C | 08 | Apenas veículos de emergência |
-| D | 09 | zero/não utilizado |
-| E | 10 | desconhecido, caminhos de entrada da casa do bosque?                           |
-| F | 11 | zero/não utilizado |
-| G | 12 | não é rodovia |
-| H | 13 | É Rodovia (ignorada para nós PED e nunca 11 ou 00 para carros!) |
-| I | 14 | zero |
-| J | 15 | zero |
-| K-M | 16-19 | probabilidade de geração (`0x00` a `0x0F`) |
-| O | 20 | RoadBlock?                                                      |
-| P | 21 | Estacionamento |
-| Q | 22 | zero |
-| R | 23 | RoadBlock?                                                      |
-| 24-31 |       | zero (não utilizado) |
+| A     | 06    | Bloqueios de estradas                                           |
+| B     | 07    | Barcos                                                          |
+| C     | 08    | Apenas veículos de emergência                                   |
+| D     | 09    | zero/não utilizado                                              |
+| E     | 10    | desconhecido, caminhos de entrada da casa do bosque?            |
+| F     | 11    | zero/não utilizado                                              |
+| G     | 12    | não é rodovia                                                   |
+| H     | 13    | É Rodovia (ignorada para nós PED e nunca 11 ou 00 para carros!) |
+| I     | 14    | zero                                                            |
+| J     | 15    | zero                                                            |
+| K-N   | 16-19 | probabilidade de geração (`0x00` a `0x0F`)                      |
+| O     | 20    | RoadBlock?                                                      |
+| P     | 21    | Estacionamento                                                  |
+| Q     | 22    | zero                                                            |
+| R     | 23    | RoadBlock?                                                      |
+| 24-31 |       | zero (não utilizado)                                            |
 
 As seguintes _estatísticas sobre uso de sinalizadores_, agrupadas por tipo de caminho, podem ser úteis para pesquisas futuras:
 
-| Flag | Pediatria | Carros | Total |
+| Flag      | Pedestres       | Carros          | Total  |
 | --------- | --------------- | --------------- | ------ |
-| **Total** | 37,650 | 30,587 | 68,237 |
-| A | 0 | 391 (1.28%) | 391 |
-| B | 0 | 1,596 (5.22%) | 1,596 |
-| C | 6,019 (15.99%) | 7,669 (25.08%) | 13,688 |
-| D | 0 | 0 | 0 |
-| E | 17 (0.05%) | 0 | 17 |
-| F | 0 | 0 | 0 |
-| G | 0 | 27,936 (91.33%) | 27,936 |
-| H | 0 | 2,539 (8.3%) | 2,539 |
-| I | 0 | 0 | 0 |
-| J | 0 | 0 | 0 |
-| K | 37,646 (99.98%) | 30,582 (99.98%) | 68,228 |
-| L | 36,676 (97.41%) | 30,141 (98.54%) | 66,817 |
-| M | 36,676 (97.41%) | 30,136 (98.52%) | 66,812 |
-| N | 36,607 (97.22%) | 30,046 (98.23%) | 66,653 |
-| O | 0 | 8 (0.03%) | 8 |
-| P | 0 | 215 (0.7%) | 215 |
-| Q | 0 | 0 | 0 |
-| R | 0 | 16 (0.05%) | 16 |
+| **Total** | 37,650          | 30,587          | 68,237 |
+| A         | 0               | 391 (1.28%)     | 391    |
+| B         | 0               | 1,596 (5.22%)   | 1,596  |
+| C         | 6,019 (15.99%)  | 7,669 (25.08%)  | 13,688 |
+| D         | 0               | 0               | 0      |
+| E         | 17 (0.05%)      | 0               | 17     |
+| F         | 0               | 0               | 0      |
+| G         | 0               | 27,936 (91.33%) | 27,936 |
+| H         | 0               | 2,539 (8.3%)    | 2,539  |
+| I         | 0               | 0               | 0      |
+| J         | 0               | 0               | 0      |
+| K         | 37,646 (99.98%) | 30,582 (99.98%) | 68,228 |
+| L         | 36,676 (97.41%) | 30,141 (98.54%) | 66,817 |
+| M         | 36,676 (97.41%) | 30,136 (98.52%) | 66,812 |
+| N         | 36,607 (97.22%) | 30,046 (98.23%) | 66,653 |
+| O         | 0               | 8 (0.03%)       | 8      |
+| P         | 0               | 215 (0.7%)      | 215    |
+| Q         | 0               | 0               | 0      |
+| R         | 0               | 16 (0.05%)      | 16     |
 
 ### Seção 2 - Nós Navi
 
@@ -276,7 +276,7 @@ A seção é seguida por 192 bytes de dados desconhecidos.
 ## Ferramentas e scripts
 
 - [Formato de caminho Fastman92](https://gtamods.com/wiki/Fastman92_Path_Format)
-- [SA Path Editor (WIP)](https://gtagmodding.com/1093) por JGuntherS@NL - Útil apenas para editar dados de caminho existentes
+- [SA Path Editor (WIP)](https://www.gtagarage.com/mods/show.php?id=1093) por JGuntherS@NL - Útil apenas para editar dados de caminho existentes
 - [Path Compiler (WIP)](https://gtaforums.com/topic/214901-compiled-path-nodes/?do=findComment&comment=3841297) por ocram88 - Permite criar caminhos ped lineares gerando waypoints de dentro do jogo
 - [Ferramenta Path (WIP)](https://gtaforums.com/topic/214901-compiled-path-nodes/?do=findComment&comment=3936074) por steve-m - Vem com um MaxScript para exportar caminhos de pedestres e veículos do Max (usando formas spline)
 - [APE v1.1](https://gtaforums.com/topic/295628-ape-v11/) por Aschratt - Baseado em um memhack e incluindo um descompilador é possível adicionar caminho ao existente ou criar completamente novo a partir do jogo!

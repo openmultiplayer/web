@@ -12,13 +12,13 @@ Keadaan ini untuk digunakan dengan [GetVehicleDamageStatus](../functions/GetVehi
 
 ## Digit ke-sekian menyimpan apa?
 
-- The **digit pertama** menyimpan keadaan panel **kiri-depan** untuk mobil atau **mesin(-kiri)** untuk pesawat.
-- The **digit ke-dua** menyimpan keadaan panel **kanan-depan** untuk mobil atau **mesin(-kanan)** untuk pesawat.
-- The **digit ke-tiga** menyimpan keadaan panel **kiri-belakang** untuk mobil atau **kemudi (di penyeimbang vertikal)** untuk pesawat.
-- The **digit ke-empat** menyimpan keadaan panel **kanan-belakang** untuk mobil atau **elevator (di ekor)** untuk pesawat.
-- The **digit ke-lima** menyimpan keadaan panel **kaca depan** untuk mobil atau **kemudi guling (di sayap)** untuk pesawat.
-- The **digit ke-enam** menyimpan keadaan panel **bemper depan** untuk mobil.
-- The **digit ke-tujuh** menyimpan keadaan panel **bemper belakang** untuk mobil.
+- **Digit pertama** menyimpan keadaan panel **kiri-depan** untuk mobil atau **mesin(-kiri)** untuk pesawat.
+- **Digit ke-dua** menyimpan keadaan panel **kanan-depan** untuk mobil atau **mesin(-kanan)** untuk pesawat.
+- **Digit ke-tiga** menyimpan keadaan panel **kiri-belakang** untuk mobil atau **kemudi (di penyeimbang vertikal)** untuk pesawat.
+- **Digit ke-empat** menyimpan keadaan panel **kanan-belakang** untuk mobil atau **elevator (di ekor)** untuk pesawat.
+- **Digit ke-lima** menyimpan keadaan panel **kaca depan** untuk mobil atau **kemudi guling (di sayap)** untuk pesawat.
+- **Digit ke-enam** menyimpan keadaan panel **bemper depan** untuk mobil.
+- **Digit ke-tujuh** menyimpan keadaan panel **bemper belakang** untuk mobil.
 
 Tidak semua kendaraan mendukung panel yang telah disebutkan. Tingkat kerusakan memengaruhi penanganan pesawat cukup banyak dan pesawat akan mengeluarkan asap hitam dari bagian apapun yang telah rusak.
 

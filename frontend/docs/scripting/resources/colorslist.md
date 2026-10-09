@@ -16,7 +16,7 @@ For the Hex code for these colors, go to the [Hex colors](hexcolors) page.
 
 ### Alpha values (transparency)
 
-The following images display the effect of transparency values used with a white quare under the player marker and left to the saving floppy icon. Increments of 0x11 (decimal 17) are used for demonstration, but of course you can use any value.
+The following images display the effect of transparency values used with a white square under the player marker and left to the saving floppy icon. Increments of 0x11 (decimal 17) are used for demonstration, but of course you can use any value.
 
 ![Image:trans_matrix.png](https://assets.open.mp/assets/images/colorList/transparency/trans_matrix.png)
 
@@ -24,7 +24,7 @@ The following images display the effect of transparency values used with a white
 
 ### Doing math
 
-Since colors are just numbers it is possible to calculate with them, although it may not always make sense. For example, it is possible to adjust the player's radar marker visibility (see above) while keeping their current color the same, regardless of what is is.
+Since colors are just numbers it is possible to calculate with them, although it may not always make sense. For example, it is possible to adjust the player's radar marker visibility (see above) while keeping their current color the same, regardless of what it is.
 
 ```c
 SetPlayerMarkerVisibility(playerid, alpha = 0xFF)
@@ -34,7 +34,7 @@ SetPlayerMarkerVisibility(playerid, alpha = 0xFF)
     alpha = clamp(alpha, 0x00, 0xFF); // if an out-of-range value is supplied we'll fix it here first
     oldcolor = GetPlayerColor(playerid); // get their color - Note: SetPlayerColor must have been used beforehand
 
-    newcolor = (oldcolor & ~0xFF) | alpha; // first we strip of all alpha data (& ~0xFF) and then we replace it with our desired value (| alpha)
+    newcolor = (oldcolor & ~0xFF) | alpha; // first we strip off all alpha data (& ~0xFF) and then we replace it with our desired value (| alpha)
     return SetPlayerColor(playerid, newcolor); // returns 1 if it succeeded, 0 otherwise
 }
 ```
@@ -121,7 +121,7 @@ Or
 SendClientMessage(playerid, -1, "This is white and {"COLOR_RED_EMBED"}this is red.");
 ```
 
-The second example would be better as is it clearer that embedding is used.
+The second example would be better as it is clearer that embedding is used.
 
 ---
 
@@ -193,7 +193,7 @@ Game text colour tags can be used to form different colours easily. The below co
 ~w~Hello this is ~b~blue ~w~and this is ~r~red
 ```
 
-[![Image:Blueandred.png](https://assets.open.mp/assets/images/colorList/Blueandred.png)
+![Image:Blueandred.png](https://assets.open.mp/assets/images/colorList/Blueandred.png)
 
 Now these colors are pretty dark. You can make them brighter by using **`~h~`** after the color code:
 
@@ -201,4 +201,4 @@ Now these colors are pretty dark. You can make them brighter by using **`~h~`** 
 ~w~Hello this is ~b~~h~blue ~w~and this is ~r~~h~red
 ```
 
-[![Image:Blueandred2.png](https://assets.open.mp/assets/images/colorList/Blueandred2.png)
+![Image:Blueandred2.png](https://assets.open.mp/assets/images/colorList/Blueandred2.png)

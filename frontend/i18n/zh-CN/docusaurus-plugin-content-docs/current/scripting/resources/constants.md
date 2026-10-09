@@ -102,17 +102,17 @@ tags: []
 
 | 数值   | 常量名称             | 对应操作说明             |
 | ------ | -------------------- | ------------------------ |
-| 1      | KEY_ACTION           | 动作键（默认 F）         |
+| 1      | KEY_ACTION           | 动作键（默认 TAB）       |
 | 2      | KEY_CROUCH           | 蹲下键（默认 C）         |
 | 4      | KEY_FIRE             | 开火键（鼠标左键）       |
-| 8      | KEY_SPRINT           | 冲刺键（默认 Shift）     |
-| 16     | KEY_SECONDARY_ATTACK | 次要攻击键（鼠标右键）   |
-| 32     | KEY_JUMP             | 跳跃键（默认空格）       |
-| 64     | KEY_LOOK_RIGHT       | 向右看（默认数字键盘 6） |
+| 8      | KEY_SPRINT           | 冲刺键（默认空格）       |
+| 16     | KEY_SECONDARY_ATTACK | 次要攻击键（回车键）     |
+| 32     | KEY_JUMP             | 跳跃键（默认左 Shift）   |
+| 64     | KEY_LOOK_RIGHT       | 向右看（默认 E）         |
 | 128    | KEY_HANDBRAKE        | 手刹键（默认空格）       |
-| 256    | KEY_LOOK_LEFT        | 向左看（默认数字键盘 4） |
-| 512    | KEY_SUBMISSION       | 投降动作键               |
-| 512    | KEY_LOOK_BEHIND      | 向后看（默认数字键盘 5） |
+| 256    | KEY_LOOK_LEFT        | 向左看（默认 Q）         |
+| 512    | KEY_SUBMISSION       | 子任务键                 |
+| 512    | KEY_LOOK_BEHIND      | 向后看（默认数字键盘 1） |
 | 1024   | KEY_WALK             | 步行模式（默认 Alt）     |
 | 2048   | KEY_ANALOG_UP        | 摇杆上方向               |
 | 4096   | KEY_ANALOG_DOWN      | 摇杆下方向               |
@@ -120,7 +120,7 @@ tags: []
 | 16384  | KEY_ANALOG_RIGHT     | 摇杆右方向               |
 | 65536  | KEY_YES              | 确认键（默认 Y）         |
 | 131072 | KEY_NO               | 取消键（默认 N）         |
-| 262144 | KEY_CTRL_BACK        | 返回键（默认 Backspace） |
+| 262144 | KEY_CTRL_BACK        | 返回键（默认 H）         |
 
 ## 对话框样式
 
@@ -250,12 +250,12 @@ tags: []
 
 | 数值 | 常量名称             | 战斗风格说明 |
 | ---- | -------------------- | ------------ |
-| 0    | FIGHT_STYLE_NORMAL   | 普通战斗风格 |
-| 1    | FIGHT_STYLE_BOXING   | 拳击风格     |
-| 2    | FIGHT_STYLE_KUNGFU   | 功夫风格     |
-| 3    | FIGHT_STYLE_KNEEHEAD | 膝撞攻击风格 |
-| 4    | FIGHT_STYLE_GRABKICK | 抓踢组合风格 |
-| 5    | FIGHT_STYLE_ELBOW    | 肘击攻击风格 |
+| 4    | FIGHT_STYLE_NORMAL   | 普通战斗风格 |
+| 5    | FIGHT_STYLE_BOXING   | 拳击风格     |
+| 6    | FIGHT_STYLE_KUNGFU   | 功夫风格     |
+| 7    | FIGHT_STYLE_KNEEHEAD | 膝撞攻击风格 |
+| 15   | FIGHT_STYLE_GRABKICK | 抓踢组合风格 |
+| 16   | FIGHT_STYLE_ELBOW    | 肘击攻击风格 |
 
 ## 武器技能
 
@@ -320,9 +320,9 @@ tags: []
 
 | 数值 | 常量名称                     | 记录用途说明 |
 | ---- | ---------------------------- | ------------ |
-| 1    | PLAYER_RECORDING_TYPE_NONE   | 无录制状态   |
-| 2    | PLAYER_RECORDING_TYPE_DRIVER | 车辆驾驶记录 |
-| 3    | PLAYER_RECORDING_TYPE_ONFOOT | 步行动作记录 |
+| 0    | PLAYER_RECORDING_TYPE_NONE   | 无录制状态   |
+| 1    | PLAYER_RECORDING_TYPE_DRIVER | 车辆驾驶记录 |
+| 2    | PLAYER_RECORDING_TYPE_ONFOOT | 步行动作记录 |
 
 # a_vehicles
 
@@ -349,9 +349,9 @@ tags: []
 
 | 数值 | 常量名称             | 参数状态说明 |
 | ---- | -------------------- | ------------ |
-| 0    | VEHICLE_PARAMS_UNSET | 参数未设置   |
-| 1    | VEHICLE_PARAMS_OFF   | 参数关闭状态 |
-| 2    | VEHICLE_PARAMS_ON    | 参数启用状态 |
+| -1   | VEHICLE_PARAMS_UNSET | 参数未设置   |
+| 0    | VEHICLE_PARAMS_OFF   | 参数关闭状态 |
+| 1    | VEHICLE_PARAMS_ON    | 参数启用状态 |
 
 ## 车辆模型信息
 

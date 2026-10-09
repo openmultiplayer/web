@@ -211,7 +211,7 @@ You can find all available Sound IDs in the file located within your GTA San And
 
 ```
 4200 - Bandit wheel start
-4201 - Falling coints
+4201 - Falling coins
 4202 - Blip
 4203 - Blip
 ```
@@ -229,7 +229,7 @@ You can find all available Sound IDs in the file located within your GTA San And
 4807 - "Never give your opponent time to recover."
 ```
 
-#### Game Souds
+#### Game Sounds
 
 ```
 5200 - Continuous buzz.
@@ -421,7 +421,7 @@ You can find all available Sound IDs in the file located within your GTA San And
 "PALOMINO CREEK" - 2109
 "PARADISO" - 2110
 "PILGRAMS CREEK" - 2111
-"PILSON INTERSECTIION" - 2112
+"PILSON INTERSECTION" - 2112
 "PLAYA DEL SEVILLE" - 2113
 "PRICKLE PINE" - 2114
 "QUEENS" - 2115
@@ -566,14 +566,14 @@ These Sound IDs work in every version!
 1056 race: green light sound
 1057 race: red light sound (start sound)
 1058 selection sound
-1062 \*Videogame music: Go Go Space Monkey\*
-1068 \*Videogame music: Duality\*
-1076 \*Videogame music: Let´s Get Ready to Bumble\*
+1062 *Videogame music: Go Go Space Monkey*
+1068 *Videogame music: Duality*
+1076 *Videogame music: Let's Get Ready to Bumble*
 1083 map: place a marker
 1084 map: remove a marker
 1085 blip C
 1095 loud hit
-1097 \*background music\*
+1097 *background music*
 1100 metallic fence rattle A
 1101 metallic fence rattle B
 1130 punch A
@@ -599,9 +599,9 @@ These Sound IDs work in every version!
 1159 explosion
 1163 two-feet stomp (after jumping)
 1165 bigger garage (hangar?) doors
-1183 \*Driving school results music\*
-1185 \*Bike and boat school results Music\*
-1187 \*Flight school results music\*
+1183 *Driving school results music*
+1185 *Bike and boat school results Music*
+1187 *Flight school results music*
 1190 slap
 ```
 

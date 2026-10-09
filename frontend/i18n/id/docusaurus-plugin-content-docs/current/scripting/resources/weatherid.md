@@ -28,9 +28,11 @@ Informasi ini untuk digunakan dengan [SetWeather](../functions/SetWeather) dan [
 18 = SUNNY_DESERT
 19 = SANDSTORM_DESERT
 20 = UNDERWATER (kehijauan, berkabut)
+21 = EXTRACOLOURS_1
+22 = EXTRACOLOURS_2
 ```
 
-Ada 21 jenis ID cuaca (0-20), bagaimanapun _game_ tidak ada pemeriksaan rentang ID cuaca dan demikian Anda bisa menggunakan ID cuaca hingga 255. Nilai lebih tinggi dari 255 atau di bawah 0 akan berubah menjadi sisa hasil pembagian dari 256 (sebagai contoh, ID cuaca 300 sama dengan ID 44, jareba 300 % 256 = 44). ID cuaca 0-22 bekerja dengan baik, tapi ID lainnya menghasilkan efek yang aneh, seperti langit merah muda dan tekstur berkilat di waktu tertentu.
+Ada 23 jenis ID cuaca (0-22), bagaimanapun _game_ tidak ada pemeriksaan rentang ID cuaca dan demikian Anda bisa menggunakan ID cuaca hingga 255. Nilai lebih tinggi dari 255 atau di bawah 0 akan berubah menjadi sisa hasil pembagian dari 256 (sebagai contoh, ID cuaca 300 sama dengan ID 44, jareba 300 % 256 = 44). ID cuaca 0-22 bekerja dengan baik, tapi ID lainnya menghasilkan efek yang aneh, seperti langit merah muda dan tekstur berkilat di waktu tertentu.
 
 :::note
 

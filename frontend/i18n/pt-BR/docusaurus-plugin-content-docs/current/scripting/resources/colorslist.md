@@ -16,8 +16,6 @@ Para obter o código Hex para essas cores, vá para a página [Cores Hex](hexcol
 
 As seguintes imagens mostram o efeito dos valores de transparência usados com um quadrado branco debaixo do jogador e à esquerda do ícone de save. Incrementos de 0x11 (17 decimal) são usados para demonstração, mas é claro que você pode usar qualquer valor.
 
-The following images display the effect of transparency values used with a white quare under the player marker and left to the saving floppy icon. Increments of 0x11 (decimal 17) are used for demonstration, but of course you can use any value.
-
 ![Image:trans_matrix.png](https://assets.open.mp/assets/images/colorList/transparency/trans_matrix.png)
 
 ### Fazendo contas
@@ -32,7 +30,7 @@ SetPlayerMarkerVisibility(playerid, alpha = 0xFF)
     alpha = clamp(alpha, 0x00, 0xFF); // if an out-of-range value is supplied we'll fix it here first
     oldcolor = GetPlayerColor(playerid); // get their color - Note: SetPlayerColor must have been used beforehand
 
-    newcolor = (oldcolor & ~0xFF) | alpha; // first we strip of all alpha data (& ~0xFF) and then we replace it with our desired value (| alpha)
+    newcolor = (oldcolor & ~0xFF) | alpha; // first we strip off all alpha data (& ~0xFF) and then we replace it with our desired value (| alpha)
     return SetPlayerColor(playerid, newcolor); // returns 1 if it succeeded, 0 otherwise
 }
 ```
@@ -111,7 +109,7 @@ Or
 SendClientMessage(playerid, -1, "This is white and {"COLOR_RED_EMBED"}this is red.");
 ```
 
-The second example would be better as is it clearer that embedding is used.
+The second example would be better as it is clearer that embedding is used.
 
 #### Using GetPlayerColor
 
@@ -175,7 +173,7 @@ Game text colour tags can be used to form different colours easily. The below co
 ~w~Hello this is ~b~blue ~w~and this is ~r~red
 ```
 
-[![Image:Blueandred.png](https://assets.open.mp/assets/images/colorList/Blueandred.png)
+![Image:Blueandred.png](https://assets.open.mp/assets/images/colorList/Blueandred.png)
 
 Now these colors are pretty dark. You can make them brighter by using **`~h~`** after the color code:
 
@@ -183,4 +181,4 @@ Now these colors are pretty dark. You can make them brighter by using **`~h~`** 
 ~w~Hello this is ~b~~h~blue ~w~and this is ~r~~h~red
 ```
 
-[![Image:Blueandred2.png](https://assets.open.mp/assets/images/colorList/Blueandred2.png)
+![Image:Blueandred2.png](https://assets.open.mp/assets/images/colorList/Blueandred2.png)

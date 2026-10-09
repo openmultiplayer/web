@@ -12,24 +12,35 @@ description: 文本绘图与游戏文本的样式说明
 
 可对文本的特定部分进行不同颜色的绘制。为此，只需使用下列色彩标记，并将特定颜色绘制的文本部分包裹其中（例如 `~y~我以黄色绘制！~y~`）。
 
-| 代码                             | 颜色示例                                                        | 说明                         |
-| -------------------------------- | --------------------------------------------------------------- | ---------------------------- |
-| 无                               | ![](https://assets.open.mp/assets/images/gameTextStyles/-.png)  | 默认颜色，无需代码           |
-| `~h~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/h.png)  | 默认色的浅色版本             |
-| `~h~~h~`                         | ![](https://assets.open.mp/assets/images/gameTextStyles/hh.png) | 默认色的更浅版本             |
-| `~r~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/r.png)  | 红色（支持 5 级亮度调节）    |
-| `~r~~h~` 至 `~r~~h~~h~~h~~h~~h~` | 多级示例图                                                      | 逐步增亮的红色变体           |
-| `~g~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/g.png)  | 绿色（支持 4 级亮度调节）    |
-| `~g~~h~` 至 `~g~~h~~h~~h~~h~`    | 多级示例图                                                      | 逐步增亮的绿色变体           |
-| `~b~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/b.png)  | 蓝色（支持 3 级亮度调节）    |
-| `~b~~h~` 至 `~b~~h~~h~~h~`       | 多级示例图                                                      | 逐步增亮的蓝色变体           |
-| `~p~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/p.png)  | 紫色（支持 2 级亮度调节）    |
-| `~p~~h~` 至 `~p~~h~~h~`          | 多级示例图                                                      | 逐步增亮的紫色变体           |
-| `~y~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/y.png)  | 黄色（支持 2 级亮度调节）    |
-| `~y~~h~` 至 `~y~~h~~h~`          | 多级示例图                                                      | 逐步增亮的黄色变体           |
-| `~l~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/l.png)  | 灰色（不可调节亮度）         |
-| `~w~` 或 `~s~`                   | ![](https://assets.open.mp/assets/images/gameTextStyles/w.png)  | 白色（支持 1 级亮度调节）    |
-| `~w~~h~` 或 `~s~~h~`             | ![](https://assets.open.mp/assets/images/gameTextStyles/wh.png) | 所有颜色过度提亮后的最终状态 |
+| 代码                             | 颜色示例                                                            | 说明                         |
+| -------------------------------- | ------------------------------------------------------------------- | ---------------------------- |
+| 无                               | ![](https://assets.open.mp/assets/images/gameTextStyles/-.png)      | 默认颜色，无需代码           |
+| `~h~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/h.png)      | 默认色的浅色版本             |
+| `~h~~h~`                         | ![](https://assets.open.mp/assets/images/gameTextStyles/hh.png)     | 默认色的更浅版本             |
+| `~r~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/r.png)      | 红色（支持 5 级亮度调节）    |
+| `~r~~h~`                         | ![](https://assets.open.mp/assets/images/gameTextStyles/rh.png)     |                              |
+| `~r~~h~~h~`                      | ![](https://assets.open.mp/assets/images/gameTextStyles/rhh.png)    |                              |
+| `~r~~h~~h~~h~`                   | ![](https://assets.open.mp/assets/images/gameTextStyles/rhhh.png)   |                              |
+| `~r~~h~~h~~h~~h~`                | ![](https://assets.open.mp/assets/images/gameTextStyles/rhhhh.png)  |                              |
+| `~r~~h~~h~~h~~h~~h~`             | ![](https://assets.open.mp/assets/images/gameTextStyles/rhhhhh.png) |                              |
+| `~g~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/g.png)      | 绿色（支持 4 级亮度调节）    |
+| `~g~~h~`                         | ![](https://assets.open.mp/assets/images/gameTextStyles/gh.png)     |                              |
+| `~g~~h~~h~`                      | ![](https://assets.open.mp/assets/images/gameTextStyles/ghh.png)    |                              |
+| `~g~~h~~h~~h~`                   | ![](https://assets.open.mp/assets/images/gameTextStyles/ghhh.png)   |                              |
+| `~g~~h~~h~~h~~h~`                | ![](https://assets.open.mp/assets/images/gameTextStyles/ghhhh.png)  |                              |
+| `~b~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/b.png)      | 蓝色（支持 3 级亮度调节）    |
+| `~b~~h~`                         | ![](https://assets.open.mp/assets/images/gameTextStyles/bh.png)     |                              |
+| `~b~~h~~h~`                      | ![](https://assets.open.mp/assets/images/gameTextStyles/bhh.png)    |                              |
+| `~b~~h~~h~~h~`                   | ![](https://assets.open.mp/assets/images/gameTextStyles/bhhh.png)   |                              |
+| `~p~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/p.png)      | 紫色（支持 2 级亮度调节）    |
+| `~p~~h~`                         | ![](https://assets.open.mp/assets/images/gameTextStyles/ph.png)     |                              |
+| `~p~~h~~h~`                      | ![](https://assets.open.mp/assets/images/gameTextStyles/phh.png)    |                              |
+| `~y~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/y.png)      | 黄色（支持 2 级亮度调节）    |
+| `~y~~h~`                         | ![](https://assets.open.mp/assets/images/gameTextStyles/yh.png)     |                              |
+| `~y~~h~~h~`                      | ![](https://assets.open.mp/assets/images/gameTextStyles/yhh.png)    |                              |
+| `~l~`                            | ![](https://assets.open.mp/assets/images/gameTextStyles/l.png)      | 灰色（不可调节亮度）         |
+| `~w~` 或 `~s~`                   | ![](https://assets.open.mp/assets/images/gameTextStyles/w.png)      | 白色（支持 1 级亮度调节）    |
+| `~w~~h~` 或 `~s~~h~`             | ![](https://assets.open.mp/assets/images/gameTextStyles/wh.png)     | 所有颜色过度提亮后的最终状态 |
 
 ---
 

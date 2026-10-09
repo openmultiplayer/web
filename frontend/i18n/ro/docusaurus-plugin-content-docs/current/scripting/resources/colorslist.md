@@ -28,7 +28,7 @@ SetPlayerMarkerVisibility(playerid, alpha = 0xFF)
     alpha = clamp(alpha, 0x00, 0xFF); // if an out-of-range value is supplied we'll fix it here first
     oldcolor = GetPlayerColor(playerid); // get their color - Note: SetPlayerColor must have been used beforehand
 
-    newcolor = (oldcolor & ~0xFF) | alpha; // first we strip of all alpha data (& ~0xFF) and then we replace it with our desired value (| alpha)
+    newcolor = (oldcolor & ~0xFF) | alpha; // first we strip off all alpha data (& ~0xFF) and then we replace it with our desired value (| alpha)
     return SetPlayerColor(playerid, newcolor); // returns 1 if it succeeded, 0 otherwise
 }
 ```
@@ -121,7 +121,7 @@ SendClientMessage(playerid, 0xffffffff, msg);
 
 %x este substituent pentru valori hexazecimale, 6 asigură că șirul de ieșire va avea întotdeauna șase caractere și 0 îl va bloca cu zerouri dacă nu este. Rețineți că [GetPlayerColor](../functions/GetPlayerColor) funcționează corect numai dacă [SetPlayerColor](../functions/SetPlayerColor) a fost folosit în prealabil.
 
-Culorile folosite la încorporarea culorilor nu sunt asemănătoare culorilor hexagonale normale în Pion. Nu există nici un prefix '0x' și nici o valoare alfa (ultimele 2 cifre).
+Culorile folosite la încorporarea culorilor nu sunt asemănătoare culorilor hexazecimale normale din Pawn. Nu există nici un prefix '0x' și nici o valoare alfa (ultimele 2 cifre).
 
 ### Color Pickers
 
@@ -171,12 +171,12 @@ Etichetele de culoare ale textului jocului pot fi folosite pentru a forma cu uș
 ~w~Hello this is ~b~blue ~w~and this is ~r~red
 ```
 
-[![Image:Blueandred.png](https://assets.open.mp/assets/images/colorList/Blueandred.png)
+![Image:Blueandred.png](https://assets.open.mp/assets/images/colorList/Blueandred.png)
 
-Acum aceste culori sunt destul de întunecate. Le puteți face mai luminoase folosind ** ~ h ~ ** după codul de culoare:
+Acum aceste culori sunt destul de întunecate. Le puteți face mai luminoase folosind **`~h~`** după codul de culoare:
 
 ```c
 ~w~Hello this is ~b~~h~blue ~w~and this is ~r~~h~red
 ```
 
-[![Image:Blueandred2.png](https://assets.open.mp/assets/images/colorList/Blueandred2.png)
+![Image:Blueandred2.png](https://assets.open.mp/assets/images/colorList/Blueandred2.png)

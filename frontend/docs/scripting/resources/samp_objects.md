@@ -56,7 +56,7 @@ can use it with the SetObjectMaterialText() or SetPlayerObjectMaterialText()
 functions.
 
 ```
-11698	SAMPRoadSign46
+11699	SAMPRoadSign46
 11700	SAMPRoadSign47
 ```
 
@@ -599,7 +599,7 @@ Windows 0.3.7 server package. It is created by default from lines defined in the
 SAMP.IPL file.
 
 ```
-19800	LSACarPark1
+19800	LSBCarPark1
 ```
 
 ### **Balaclava**
@@ -770,7 +770,7 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 (breakable).
 
 ```
-19870	MeshFence1
+19870	MetalGate1
 ```
 
 ---
@@ -1646,7 +1646,7 @@ The objects below were added in 0.3c RC1.
 18686	explosion_tiny
 18687	extinguisher
 18688	fire
-18689	fire_bike+
+18689	fire_bike
 18690	fire_car
 18691	fire_large
 18692	fire_med

@@ -32,7 +32,7 @@ description: SQLite 数据库打开标志定义
 | SQLITE_OPEN_FULLMUTEX     |               |
 | SQLITE_OPEN_SHAREDCACHE   |               |
 | SQLITE_OPEN_PRIVATECACHE  |               |
-| SQLITE_OPEN_WAL           |               |
+| SQLITE_OPEN_WAL           | 需要 VFS 支持 |
 | SQLITE_OPEN_NOFOLLOW      |               |
 | SQLITE_OPEN_EXRESCODE     |               |
 

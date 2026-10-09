@@ -40,7 +40,7 @@ tags: []
 | Gamemodes                                                | 16                    | Onbeperkt             |
 | Filterscripts                                            | 16                    | Onbeperkt             |
 | Tekstinvoer (Chat/Commands)                              | 128 cells (512 bytes) | 128 cells (512 bytes) |
-| Tekstuitvoer                                             | 144 cells (576 bytes) | 128 cells (512 bytes) |
+| Tekstuitvoer                                             | 144 cells (576 bytes) | 144 cells (576 bytes) |
 | NaamLengte ([SetPlayerName](../functions/SetPlayerName)) | 24 tekens             | 24 tekens             |
 
 ## Textdraws

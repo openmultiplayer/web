@@ -10,9 +10,9 @@ description: 下载请求类型定义（用于OnPlayerRequestDownload回调）
 
 :::
 
-| ID  | 定义             |
-| --- | ---------------- |
-| -1  | 未知下载请求     |
-| 0   | 空下载请求       |
-| 1   | 模型文件下载请求 |
-| 2   | 纹理文件下载请求 |
+| ID  | 定义                                              |
+| --- | ------------------------------------------------- |
+| -1  | UNKNOWN_DOWNLOAD_REQUEST（未知下载请求）          |
+| 0   | DOWNLOAD_REQUEST_EMPTY（空下载请求）              |
+| 1   | DOWNLOAD_REQUEST_MODEL_FILE（模型文件下载请求）   |
+| 2   | DOWNLOAD_REQUEST_TEXTURE_FILE（纹理文件下载请求） |

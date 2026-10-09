@@ -26,7 +26,7 @@ The various aspects will be covered in turn but we'll start by looking at the fi
 #include <a_samp>
 ```
 
-This basically loads the code from pawno/includes/a_samp.inc into your script, so everything it has you can use. One of the things it has is:
+This basically loads the code from pawno/include/a_samp.inc into your script, so everything it has you can use. One of the things it has is:
 
 ```c
 #include <core>
@@ -53,7 +53,7 @@ The next part has two sides of a function call. main() is a function which you w
 return 1;
 ```
 
-Passes a value (1) back to the place which called main to tell it what happened (the exact value passed here doesn't matter but in other places it does). You now have your first (very basic) script. If you select file->new in pawno it will give you a much bigger start point will all the callbacks in (see below), including main (which isn't technically a callback but acts like one).
+Passes a value (1) back to the place which called main to tell it what happened (the exact value passed here doesn't matter but in other places it does). You now have your first (very basic) script. If you select file->new in pawno it will give you a much bigger start point with all the callbacks in (see below), including main (which isn't technically a callback but acts like one).
 
 ---
 
@@ -71,7 +71,7 @@ The {}s (braces (curly brackets), not parenthesis (brackets)) enclose a group of
 main() print("Hello World!"); return 1;
 ```
 
-You would get an error because now the "return 1;" statement is not grouped so is not part of main. Braces group a set of statements into a single statement (called a compound statement) and functions have a single statement with them. Without the braces print and return are entirely separate statements, so there's two or them so, as a function can only have a single statement, the second is not in a function, which code can't be.
+You would get an error because now the "return 1;" statement is not grouped so is not part of main. Braces group a set of statements into a single statement (called a compound statement) and functions have a single statement with them. Without the braces print and return are entirely separate statements, so there's two of them so, as a function can only have a single statement, the second is not in a function, which code can't be.
 
 But generally, you can expand compound statements with the use of the comma (,) operator but this is not suggested as it is not the best coding practice. An example follows:
 
@@ -185,7 +185,7 @@ MyFunction(string[])
 }
 ```
 
-This code still does the same thing but we're now telling MyFunction() what to display. The call passes the string "Hello World!" to the function where it is stored in a variable called string (the \[\] means it's an [array](start#arrays) as explained later). The print function is the called, passing the contents of the string variable, we know it's a variable because it doesn't have the "" any more.
+This code still does the same thing but we're now telling MyFunction() what to display. The call passes the string "Hello World!" to the function where it is stored in a variable called string (the \[\] means it's an [array](start#arrays) as explained later). The print function is then called, passing the contents of the string variable, we know it's a variable because it doesn't have the "" any more.
 
 # Variables
 
@@ -278,7 +278,7 @@ new
     myArray[5];
 ```
 
-That code will declare an array 5 slots big, so you can store 5 pieces of normal data at once in that single what you can't do is something like the following:
+That code will declare an array 5 slots big, so you can store 5 pieces of normal data at once in that single variable. What you can't do is something like the following:
 
 ```c
 new
@@ -389,7 +389,7 @@ SetPlayerValue(playerid, value)
 }
 ```
 
-That will create a global array (see section on scope) with one slot for every player, then the function will assign whatever is in the variable "value" to the slot for the player specified. The first example was large with only four players, using 4 lines per player, that's 2000 lines for 500 players (if can be less but it's still a lot), the second version is a single line no matter how many players you have.
+That will create a global array (see section on scope) with one slot for every player, then the function will assign whatever is in the variable "value" to the slot for the player specified. The first example was large with only four players, using 4 lines per player, that's 2000 lines for 500 players (it can be less but it's still a lot), the second version is a single line no matter how many players you have.
 
 ---
 
@@ -399,28 +399,28 @@ That will create a global array (see section on scope) with one slot for every p
 
 ---
 
-A string is a special type of array, one which is used to hold multiple characters to create a word or sentence or other human readable text. A character is one byte big (although there are extended sets where a character is multiple bytes but these are not well defined in SA:MP) and by default a character takes up one cell (one normal variable or one array slot). Characters are encoded in a system called [ASCII](https://www.asciitable.com), the character "A" is represented by the number 65, telling the system to display a number will give 65, telling the system to display a character will give a capital a. Obviously is a single character takes up a single cell multiple characters (i.e. text) will take up multiple cells, collections of cells, as just explained, are called arrays.
+A string is a special type of array, one which is used to hold multiple characters to create a word or sentence or other human readable text. A character is one byte big (although there are extended sets where a character is multiple bytes but these are not well defined in SA:MP) and by default a character takes up one cell (one normal variable or one array slot). Characters are encoded in a system called [ASCII](https://www.asciitable.com), the character "A" is represented by the number 65, telling the system to display a number will give 65, telling the system to display a character will give a capital a. Obviously if a single character takes up a single cell multiple characters (i.e. text) will take up multiple cells, collections of cells, as just explained, are called arrays.
 
 Strings in PAWN (and other languages) are what's called "NULL terminated", this means that when 0 is reached, the string ends. This is not the same as the character "0", represented by the number 48, this is the NULL character, represented by the number 0. This means that you can have a string array 20 cells large but only have a string 3 characters long if the fourth character is the NULL character, signalling the end of the string. You can not however have a string 20 characters long as the NULL character MUST be in the string, so in a 20 cell array you can have a 19 character string and a NULL termination character.
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 ```
 
-That code declares a new string with enough space for a 15 character string and sets it initially to the 5 character string "Hello World!", the double quotes around the text indicate that it's a string. Internally the array will look like:
+That code declares a new string with enough space for a 15 character string and sets it initially to the 5 character string "hello", the double quotes around the text indicate that it's a string. Internally the array will look like:
 
 ```
 104 101 108 108 111 0 x x x x x x x x x x
 ```
 
-The "x"s mean anything, in this example they will all be 0 but as they're after the null character is doesn't matter what they are, they won't affect the string.
+The "x"s mean anything, in this example they will all be 0 but as they're after the null character it doesn't matter what they are, they won't affect the string.
 
 Strings can be manipulated like normal arrays, for example:
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = 97;
 ```
 
@@ -428,7 +428,7 @@ Will change the character in slot 1 to the character represented by the number 9
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = 'a';
 ```
 
@@ -436,7 +436,7 @@ The single quotes around the "a" mean it's a character, not a string, characters
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = '\0';
 ```
 
@@ -444,7 +444,7 @@ myString[1] = '\0';
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = 0;
 ```
 
@@ -452,7 +452,7 @@ But is NOT the same as doing:
 
 ```c
 new
-    myString[16] = "Hello World!";
+    myString[16] = "hello";
 myString[1] = '0';
 ```
 
@@ -500,12 +500,10 @@ That code will create a string consisting of only a double quote, normally a dou
 | \n     | Line feed       | use \n for a new line in Linux (also works in Windows)                                                  |
 | \r     | Carriage return | Use \r\n for a new line in Windows                                                                      |
 | \\\\   | Backslash       | Used to put an actual backslash in a string                                                             |
-| \'     | Single quote    | Used to use an actual single quote as a character in single quotes (use: '\'')                          |
-| \"     | Double quotes   | Used to put an actual double quote in a string                                                          |
-| \xNNN; | Hex number      | Used to set the character to the character represented by the hex number specified in place on NNN      |
+| \\'    | Single quote    | Used to use an actual single quote as a character in single quotes (use: '\\'')                         |
+| \\"    | Double quotes   | Used to put an actual double quote in a string                                                          |
+| \xNNN; | Hex number      | Used to set the character to the character represented by the hex number specified in place of NNN      |
 | \NNN;  | Number          | Used to set the character to the character represented by the number specified in place of NNN (see \0) |
-
-Used to set the character to the character represented by the number specified in place of NNN (see \\0)
 
 There are others but those are the main ones.
 

@@ -163,8 +163,8 @@ description: SA-MP全室内场景坐标与ID对照表
 | 室内名称       | 室内 ID | X        | Y        | Z         | 预览图                                                              |
 | -------------- | ------- | -------- | -------- | --------- | ------------------------------------------------------------------- |
 | 甘顿健身房     | 5       | 770.8033 | -0.7033  | 1000.7267 | ![](https://assets.open.mp/assets/images/interiors/interior1.png)   |
-| 眼镜蛇健身房   | 3       | 773.8887 | -47.7698 | 1000.5859 | ![](https://assets.open.mp/assets/images/interiors/interior29.png)  |
-| 腰带之下健身房 | 1       | 773.7318 | -74.6957 | 1000.6542 | ![](https://assets.open.mp/assets/images/interiors/interior109.png) |
+| 眼镜蛇健身房   | 6       | 773.8887 | -47.7698 | 1000.5859 | ![](https://assets.open.mp/assets/images/interiors/interior29.png)  |
+| 腰带之下健身房 | 7       | 773.7318 | -74.6957 | 1000.6542 | ![](https://assets.open.mp/assets/images/interiors/interior109.png) |
 
 ## 夜总会与妓院
 

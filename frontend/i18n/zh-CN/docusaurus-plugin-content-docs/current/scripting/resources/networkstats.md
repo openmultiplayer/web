@@ -19,7 +19,7 @@ tags: []
 | Streaming Mem (Memory) Used (Also shows total allowance) | 当前使用的流内存容量及总可用容量                                            |
 | Messages in Send buffer                                  | 等待发送的网络消息数量                                                      |
 | Messages sent                                            | 已发送的网络消息总数                                                        |
-| Btyes sent                                               | 已发送的数据总量（单位：字节）                                              |
+| Bytes sent                                               | 已发送的数据总量（单位：字节）                                              |
 | Acks sent                                                | 已发送的确认包数量（用于确认数据包接收）                                    |
 | Acks in send buffer                                      | 等待发送的确认包数量                                                        |
 | Messages waiting for ack                                 | 等待接收确认的消息数量                                                      |

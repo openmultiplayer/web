@@ -13,1722 +13,150 @@ Observe que algumas das animações podem não ser utilizáveis no SA-MP.
 
 | Index | Biblioteca   | Animação               | Frames | Duração (sec) | Categoria                 | Comentário (Ação) |
 | ----- | ------------ | ---------------------- | ------ | ------------- | ------------------------- | ----------------- |
-| 1     | AIRPORT      | THRW_BARL_THRW         | 120    | 2.00          |                           |                   |
-| 2     | ATTRACTORS   | STEPSIT_IN             |        |               |                           |                   |
-| 3     | ATTRACTORS   | STEPSIT_LOOP           |        |               |                           |                   |
-| 4     | ATTRACTORS   | STEPSIT_OUT            |        |               |                           |                   |
-| 5     | BAR          | BARCUSTOM_GET          |        |               |                           |                   |
-| 6     | BAR          | BARCUSTOM_LOOP         |        |               |                           |                   |
-| 7     | BAR          | BARCUSTOM_ORDER        |        |               |                           |                   |
-| 8     | BAR          | BARMAN_IDLE            |        |               |                           |                   |
-| 9     | BAR          | BARSERVE_BOTTLE        |        |               |                           |                   |
-| 10    | BAR          | BARSERVE_GIVE          |        |               |                           |                   |
-| 11    | BAR          | BARSERVE_GLASS         |        |               |                           |                   |
-| 12    | BAR          | BARSERVE_IN            |        |               |                           |                   |
-| 13    | BAR          | BARSERVE_LOOP          |        |               |                           |                   |
-| 14    | BAR          | BARSERVE_ORDER         |        |               |                           |                   |
-| 15    | BAR          | DNK_STNDF_LOOP         |        |               |                           |                   |
-| 16    | BAR          | DNK_STNDM_LOOP         |        |               |                           |                   |
-| 17    | BASEBALL     | BAT_1                  |        |               |                           |                   |
-| 18    | BASEBALL     | BAT_2                  |        |               |                           |                   |
-| 19    | BASEBALL     | BAT_3                  |        |               |                           |                   |
-| 20    | BASEBALL     | BAT_4                  |        |               |                           |                   |
-| 21    | BASEBALL     | BAT_BLOCK              |        |               |                           |                   |
-| 22    | BASEBALL     | BAT_HIT_1              |        |               |                           |                   |
-| 23    | BASEBALL     | BAT_HIT_2              |        |               |                           |                   |
-| 24    | BASEBALL     | BAT_HIT_3              |        |               |                           |                   |
-| 25    | BASEBALL     | BAT_IDLE               |        |               |                           |                   |
-| 26    | BASEBALL     | BAT_M                  |        |               |                           |                   |
-| 27    | BASEBALL     | BAT_PART               |        |               |                           |                   |
-| 28    | BD_FIRE      | BD_FIRE1               |        |               |                           |                   |
-| 29    | BD_FIRE      | BD_FIRE2               |        |               |                           |                   |
-| 30    | BD_FIRE      | BD_FIRE3               |        |               |                           |                   |
-| 31    | BD_FIRE      | BD_GF_WAVE             |        |               |                           |                   |
-| 32    | BD_FIRE      | BD_PANIC_01            |        |               |                           |                   |
-| 33    | BD_FIRE      | BD_PANIC_02            |        |               |                           |                   |
-| 34    | BD_FIRE      | BD_PANIC_03            |        |               |                           |                   |
-| 35    | BD_FIRE      | BD_PANIC_04            |        |               |                           |                   |
-| 36    | BD_FIRE      | BD_PANIC_LOOP          |        |               |                           |                   |
-| 37    | BD_FIRE      | GRLFRD_KISS_03         |        |               |                           |                   |
-| 38    | BD_FIRE      | M_SMKLEAN_LOOP         |        |               |                           |                   |
-| 39    | BD_FIRE      | PLAYA_KISS_03          |        |               |                           |                   |
-| 40    | BD_FIRE      | WASH_UP                |        |               |                           |                   |
-| 41    | BEACH        | BATHER                 |        |               |                           |                   |
-| 42    | BEACH        | LAY_BAC_LOOP           |        |               |                           |                   |
-| 43    | BEACH        | PARKSIT_M_LOOP         |        |               |                           |                   |
-| 44    | BEACH        | PARKSIT_W_LOOP         |        |               |                           |                   |
-| 45    | BEACH        | SITNWAIT_LOOP_W        |        |               |                           |                   |
-| 46    | BENCHPRESS   | GYM_BP_CELEBRATE       |        |               |                           |                   |
-| 47    | BENCHPRESS   | GYM_BP_DOWN            |        |               |                           |                   |
-| 48    | BENCHPRESS   | GYM_BP_GETOFF          |        |               |                           |                   |
-| 49    | BENCHPRESS   | GYM_BP_GETON           |        |               |                           |                   |
-| 50    | BENCHPRESS   | GYM_BP_UP_A            |        |               |                           |                   |
-| 51    | BENCHPRESS   | GYM_BP_UP_B            |        |               |                           |                   |
-| 52    | BENCHPRESS   | GYM_BP_UP_SMOOTH       |        |               |                           |                   |
-| 53    | BF_INJECTION | BF_GETIN_LHS           |        |               |                           |                   |
-| 54    | BF_INJECTION | BF_GETIN_RHS           |        |               |                           |                   |
-| 55    | BF_INJECTION | BF_GETOUT_LHS          |        |               |                           |                   |
-| 56    | BF_INJECTION | BF_GETOUT_RHS          |        |               |                           |                   |
-| 58    | BIKED        | BIKED_DRIVEBYFT        |        |               |                           |                   |
-| 59    | BIKED        | BIKED_DRIVEBYLHS       |        |               |                           |                   |
-| 60    | BIKED        | BIKED_DRIVEBYRHS       |        |               |                           |                   |
-| 61    | BIKED        | BIKED_FWD              |        |               |                           |                   |
-| 62    | BIKED        | BIKED_GETOFFBACK       |        |               |                           |                   |
-| 63    | BIKED        | BIKED_GETOFFLHS        |        |               |                           |                   |
-| 64    | BIKED        | BIKED_GETOFFRHS        |        |               |                           |                   |
-| 66    | BIKED        | BIKED_JUMPONL          |        |               |                           |                   |
-| 67    | BIKED        | BIKED_JUMPONR          |        |               |                           |                   |
-| 68    | BIKED        | BIKED_KICK             |        |               |                           |                   |
-| 71    | BIKED        | BIKED_PUSHES           |        |               |                           |                   |
-| 74    | BIKED        | BIKED_SHUFFLE          |        |               |                           |                   |
-| 77    | BIKEH        | BIKEH_DRIVEBYFT        |        |               |                           |                   |
-| 78    | BIKEH        | BIKEH_DRIVEBYLHS       |        |               |                           |                   |
-| 79    | BIKEH        | BIKEH_DRIVEBYRHS       |        |               |                           |                   |
-| 80    | BIKEH        | BIKEH_FWD              |        |               |                           |                   |
-| 81    | BIKEH        | BIKEH_GETOFFBACK       |        |               |                           |                   |
-| 82    | BIKEH        | BIKEH_GETOFFLHS        |        |               |                           |                   |
-| 83    | BIKEH        | BIKEH_GETOFFRHS        |        |               |                           |                   |
-| 85    | BIKEH        | BIKEH_JUMPONL          |        |               |                           |                   |
-| 86    | BIKEH        | BIKEH_JUMPONR          |        |               |                           |                   |
-| 87    | BIKEH        | BIKEH_KICK             |        |               |                           |                   |
-| 90    | BIKEH        | BIKEH_PUSHES           |        |               |                           |                   |
-| 92    | BIKEH        | BIKEH_RIGHT            |        |               |                           |                   |
-| 94    | BIKELEAP     | BK_BLNCE_IN            |        |               |                           |                   |
-| 95    | BIKELEAP     | BK_BLNCE_OUT           |        |               |                           |                   |
-| 96    | BIKELEAP     | BK_JMP                 |        |               |                           |                   |
-| 97    | BIKELEAP     | BK_RDY_IN              |        |               |                           |                   |
-| 98    | BIKELEAP     | BK_RDY_OUT             |        |               |                           |                   |
-| 99    | BIKELEAP     | STRUGGLE_CESAR         |        |               |                           |                   |
-| 100   | BIKELEAP     | STRUGGLE_DRIVER        |        |               |                           |                   |
-| 101   | BIKELEAP     | TRUCK_DRIVER           |        |               |                           |                   |
-| 102   | BIKELEAP     | TRUCK_GETIN            |        |               |                           |                   |
-| 104   | BIKES        | BIKES_DRIVEBYFT        |        |               |                           |                   |
-| 105   | BIKES        | BIKES_DRIVEBYLHS       |        |               |                           |                   |
-| 106   | BIKES        | BIKES_DRIVEBYRHS       |        |               |                           |                   |
-| 107   | BIKES        | BIKES_FWD              |        |               |                           |                   |
-| 108   | BIKES        | BIKES_GETOFFBACK       |        |               |                           |                   |
-| 109   | BIKES        | BIKES_GETOFFLHS        |        |               |                           |                   |
-| 110   | BIKES        | BIKES_GETOFFRHS        |        |               |                           |                   |
-| 112   | BIKES        | BIKES_JUMPONL          |        |               |                           |                   |
-| 113   | BIKES        | BIKES_JUMPONR          |        |               |                           |                   |
-| 114   | BIKES        | BIKES_KICK             |        |               |                           |                   |
-| 115   | BIKES        | BIKES_LEFT             |        |               |                           |                   |
-| 117   | BIKES        | BIKES_PUSHES           |        |               |                           |                   |
-| 119   | BIKES        | BIKES_RIGHT            |        |               |                           |                   |
-| 120   | BIKES        | BIKES_SNATCH_L         |        |               |                           |                   |
-| 121   | BIKES        | BIKES_SNATCH_R         |        |               |                           |                   |
-| 123   | BIKEV        | BIKEV_BACK             |        |               |                           |                   |
-| 124   | BIKEV        | BIKEV_DRIVEBYFT        |        |               |                           |                   |
-| 125   | BIKEV        | BIKEV_DRIVEBYLHS       |        |               |                           |                   |
-| 126   | BIKEV        | BIKEV_DRIVEBYRHS       |        |               |                           |                   |
-| 127   | BIKEV        | BIKEV_FWD              |        |               |                           |                   |
-| 128   | BIKEV        | BIKEV_GETOFFBACK       |        |               |                           |                   |
-| 129   | BIKEV        | BIKEV_GETOFFLHS        |        |               |                           |                   |
-| 130   | BIKEV        | BIKEV_GETOFFRHS        |        |               |                           |                   |
-| 132   | BIKEV        | BIKEV_JUMPONL          |        |               |                           |                   |
-| 133   | BIKEV        | BIKEV_JUMPONR          |        |               |                           |                   |
-| 134   | BIKEV        | BIKEV_KICK             |        |               |                           |                   |
-| 137   | BIKEV        | BIKEV_PUSHES           |        |               |                           |                   |
-| 141   | BIKE_DBZ     | PASS_DRIVEBY_BWD       |        |               |                           |                   |
-| 142   | BIKE_DBZ     | PASS_DRIVEBY_FWD       |        |               |                           |                   |
-| 143   | BIKE_DBZ     | PASS_DRIVEBY_LHS       |        |               |                           |                   |
-| 144   | BIKE_DBZ     | PASS_DRIVEBY_RHS       |        |               |                           |                   |
-| 146   | BMX          | BMX_BUNNYHOP           |        |               |                           |                   |
-| 147   | BMX          | BMX_DRIVEBYFT          |        |               |                           |                   |
-| 148   | BMX          | BMX_DRIVEBY_LHS        |        |               |                           |                   |
-| 149   | BMX          | BMX_DRIVEBY_RHS        |        |               |                           |                   |
-| 151   | BMX          | BMX_GETOFFBACK         |        |               |                           |                   |
-| 152   | BMX          | BMX_GETOFFLHS          |        |               |                           |                   |
-| 153   | BMX          | BMX_GETOFFRHS          |        |               |                           |                   |
-| 154   | BMX          | BMX_JUMPONL            |        |               |                           |                   |
-| 155   | BMX          | BMX_JUMPONR            |        |               |                           |                   |
-| 157   | BMX          | BMX_PEDAL              |        |               |                           |                   |
-| 158   | BMX          | BMX_PUSHES             |        |               |                           |                   |
-| 160   | BMX          | BMX_RIGHT              |        |               |                           |                   |
-| 161   | BMX          | BMX_SPRINT             |        |               |                           |                   |
-| 163   | BOMBER       | BOM_PLANT              |        |               |                           |                   |
-| 164   | BOMBER       | BOM_PLANT_2IDLE        |        |               |                           |                   |
-| 165   | BOMBER       | BOM_PLANT_CROUCH_IN    |        |               |                           |                   |
-| 166   | BOMBER       | BOM_PLANT_CROUCH_OUT   |        |               |                           |                   |
-| 167   | BOMBER       | BOM_PLANT_IN           |        |               |                           |                   |
-| 168   | BOMBER       | BOM_PLANT_LOOP         |        |               |                           |                   |
-| 169   | BOX          | BOXHIPIN               |        |               |                           |                   |
-| 170   | BOX          | BOXHIPUP               |        |               |                           |                   |
-| 171   | BOX          | BOXSHDWN               |        |               |                           |                   |
-| 172   | BOX          | BOXSHUP                |        |               |                           |                   |
-| 173   | BOX          | BXHIPWLK               |        |               |                           |                   |
-| 174   | BOX          | BXHWLKI                |        |               |                           |                   |
-| 175   | BOX          | BXSHWLK                |        |               |                           |                   |
-| 176   | BOX          | BXSHWLKI               |        |               |                           |                   |
-| 177   | BOX          | BXWLKO                 |        |               |                           |                   |
-| 178   | BOX          | CATCH_BOX              |        |               |                           |                   |
-| 179   | BSKTBALL     | BBALL_DEF_JUMP_SHOT    |        |               |                           |                   |
-| 180   | BSKTBALL     | BBALL_DEF_LOOP         |        |               |                           |                   |
-| 181   | BSKTBALL     | BBALL_DEF_STEPL        |        |               |                           |                   |
-| 182   | BSKTBALL     | BBALL_DEF_STEPR        |        |               |                           |                   |
-| 183   | BSKTBALL     | BBALL_DNK              |        |               |                           |                   |
-| 184   | BSKTBALL     | BBALL_DNK_GLI          |        |               |                           |                   |
-| 185   | BSKTBALL     | BBALL_DNK_GLI_O        |        |               |                           |                   |
-| 186   | BSKTBALL     | BBALL_DNK_LNCH         |        |               |                           |                   |
-| 187   | BSKTBALL     | BBALL_DNK_LNCH_O       |        |               |                           |                   |
-| 188   | BSKTBALL     | BBALL_DNK_LND          |        |               |                           |                   |
-| 190   | BSKTBALL     | BBALL_IDLE             |        |               |                           |                   |
-| 191   | BSKTBALL     | BBALL_IDLE2            |        |               |                           |                   |
-| 192   | BSKTBALL     | BBALL_IDLE2_O          |        |               |                           |                   |
-| 193   | BSKTBALL     | BBALL_IDLELOOP         |        |               |                           |                   |
-| 194   | BSKTBALL     | BBALL_IDLELOOP_O       |        |               |                           |                   |
-| 195   | BSKTBALL     | BBALL_IDLE_O           |        |               |                           |                   |
-| 196   | BSKTBALL     | BBALL_JUMP_CANCEL      |        |               |                           |                   |
-| 197   | BSKTBALL     | BBALL_JUMP_CANCEL_O    |        |               |                           |                   |
-| 198   | BSKTBALL     | BBALL_JUMP_END         |        |               |                           |                   |
-| 199   | BSKTBALL     | BBALL_JUMP_SHOT        |        |               |                           |                   |
-| 200   | BSKTBALL     | BBALL_JUMP_SHOT_O      |        |               |                           |                   |
-| 201   | BSKTBALL     | BBALL_NET_DNK_O        |        |               |                           |                   |
-| 202   | BSKTBALL     | BBALL_PICKUP           |        |               |                           |                   |
-| 203   | BSKTBALL     | BBALL_PICKUP_O         |        |               |                           |                   |
-| 204   | BSKTBALL     | BBALL_REACT_MISS       |        |               |                           |                   |
-| 205   | BSKTBALL     | BBALL_REACT_SCORE      |        |               |                           |                   |
-| 206   | BSKTBALL     | BBALL_RUN              |        |               |                           |                   |
-| 207   | BSKTBALL     | BBALL_RUN_O            |        |               |                           |                   |
-| 208   | BSKTBALL     | BBALL_SKIDSTOP_L       |        |               |                           |                   |
-| 209   | BSKTBALL     | BBALL_SKIDSTOP_L_O     |        |               |                           |                   |
-| 210   | BSKTBALL     | BBALL_SKIDSTOP_R       |        |               |                           |                   |
-| 211   | BSKTBALL     | BBALL_SKIDSTOP_R_O     |        |               |                           |                   |
-| 212   | BSKTBALL     | BBALL_WALK             |        |               |                           |                   |
-| 213   | BSKTBALL     | BBALL_WALKSTOP_L       |        |               |                           |                   |
-| 214   | BSKTBALL     | BBALL_WALKSTOP_L_O     |        |               |                           |                   |
-| 215   | BSKTBALL     | BBALL_WALKSTOP_R       |        |               |                           |                   |
-| 216   | BSKTBALL     | BBALL_WALKSTOP_R_O     |        |               |                           |                   |
-| 217   | BSKTBALL     | BBALL_WALK_O           |        |               |                           |                   |
-| 218   | BSKTBALL     | BBALL_WALK_START       |        |               |                           |                   |
-| 219   | BSKTBALL     | BBALL_WALK_START_O     |        |               |                           |                   |
-| 220   | BUDDY        | BUDDY_CROUCHFIRE       |        |               |                           |                   |
-| 221   | BUDDY        | BUDDY_CROUCHRELOAD     |        |               |                           |                   |
-| 222   | BUDDY        | BUDDY_FIRE             |        |               |                           |                   |
-| 223   | BUDDY        | BUDDY_FIRE_POOR        |        |               |                           |                   |
-| 224   | BUDDY        | BUDDY_RELOAD           |        |               |                           |                   |
-| 225   | BUS          | BUS_CLOSE              |        |               |                           |                   |
-| 226   | BUS          | BUS_GETIN_LHS          |        |               |                           |                   |
-| 227   | BUS          | BUS_GETIN_RHS          |        |               |                           |                   |
-| 228   | BUS          | BUS_GETOUT_LHS         |        |               |                           |                   |
-| 229   | BUS          | BUS_GETOUT_RHS         |        |               |                           |                   |
-| 230   | BUS          | BUS_JACKED_LHS         |        |               |                           |                   |
-| 231   | BUS          | BUS_OPEN               |        |               |                           |                   |
-| 232   | BUS          | BUS_OPEN_RHS           |        |               |                           |                   |
-| 233   | BUS          | BUS_PULLOUT_LHS        |        |               |                           |                   |
-| 234   | CAMERA       | CAMCRCH_CMON           |        |               |                           |                   |
-| 235   | CAMERA       | CAMCRCH_IDLELOOP       |        |               |                           |                   |
-| 236   | CAMERA       | CAMCRCH_STAY           |        |               |                           |                   |
-| 237   | CAMERA       | CAMCRCH_TO_CAMSTND     |        |               |                           |                   |
-| 238   | CAMERA       | CAMSTND_CMON           |        |               |                           |                   |
-| 239   | CAMERA       | CAMSTND_IDLELOOP       |        |               |                           |                   |
-| 240   | CAMERA       | CAMSTND_LKABT          |        |               |                           |                   |
-| 241   | CAMERA       | CAMSTND_TO_CAMCRCH     |        |               |                           |                   |
-| 242   | CAMERA       | PICCRCH_IN             |        |               |                           |                   |
-| 243   | CAMERA       | PICCRCH_OUT            |        |               |                           |                   |
-| 244   | CAMERA       | PICCRCH_TAKE           |        |               |                           |                   |
-| 245   | CAMERA       | PICSTND_IN             |        |               |                           |                   |
-| 246   | CAMERA       | PICSTND_OUT            |        |               |                           |                   |
-| 247   | CAMERA       | PICSTND_TAKE           |        |               |                           |                   |
-| 248   | CAR          | FIXN_CAR_LOOP          |        |               |                           |                   |
-| 249   | CAR          | FIXN_CAR_OUT           |        |               |                           |                   |
-| 250   | CAR          | FLAG_DROP              |        |               |                           |                   |
-| 252   | CAR          | TAP_HAND               |        |               |                           |                   |
-| 253   | CAR          | TYD2CAR_BUMP           |        |               |                           |                   |
-| 254   | CAR          | TYD2CAR_HIGH           |        |               |                           |                   |
-| 255   | CAR          | TYD2CAR_LOW            |        |               |                           |                   |
-| 256   | CAR          | TYD2CAR_MED            |        |               |                           |                   |
-| 257   | CAR          | TYD2CAR_TURNL          |        |               |                           |                   |
-| 258   | CAR          | TYD2CAR_TURNR          |        |               |                           |                   |
-| 260   | CARRY        | LIFTUP                 |        |               |                           |                   |
-| 261   | CARRY        | LIFTUP05               |        |               |                           |                   |
-| 262   | CARRY        | LIFTUP105              |        |               |                           |                   |
-| 263   | CARRY        | PUTDWN                 |        |               |                           |                   |
-| 264   | CARRY        | PUTDWN05               |        |               |                           |                   |
-| 265   | CARRY        | PUTDWN105              |        |               |                           |                   |
-| 266   | CAR_CHAT     | CARFONE_IN             |        |               |                           |                   |
-| 267   | CAR_CHAT     | CARFONE_LOOPA          |        |               |                           |                   |
-| 268   | CAR_CHAT     | CARFONE_LOOPA_TO_B     |        |               |                           |                   |
-| 269   | CAR_CHAT     | CARFONE_LOOPB          |        |               |                           |                   |
-| 270   | CAR_CHAT     | CARFONE_LOOPB_TO_A     |        |               |                           |                   |
-| 271   | CAR_CHAT     | CARFONE_OUT            |        |               |                           |                   |
-| 272   | CAR_CHAT     | CAR_SC1_BL             |        |               |                           |                   |
-| 273   | CAR_CHAT     | CAR_SC1_BR             |        |               |                           |                   |
-| 274   | CAR_CHAT     | CAR_SC1_FL             |        |               |                           |                   |
-| 275   | CAR_CHAT     | CAR_SC1_FR             |        |               |                           |                   |
-| 276   | CAR_CHAT     | CAR_SC2_FL             |        |               |                           |                   |
-| 277   | CAR_CHAT     | CAR_SC3_BR             |        |               |                           |                   |
-| 278   | CAR_CHAT     | CAR_SC3_FL             |        |               |                           |                   |
-| 279   | CAR_CHAT     | CAR_SC3_FR             |        |               |                           |                   |
-| 280   | CAR_CHAT     | CAR_SC4_BL             |        |               |                           |                   |
-| 281   | CAR_CHAT     | CAR_SC4_BR             |        |               |                           |                   |
-| 282   | CAR_CHAT     | CAR_SC4_FL             |        |               |                           |                   |
-| 283   | CAR_CHAT     | CAR_SC4_FR             |        |               |                           |                   |
-| 284   | CAR_CHAT     | CAR_TALKM_IN           |        |               |                           |                   |
-| 285   | CAR_CHAT     | CAR_TALKM_LOOP         |        |               |                           |                   |
-| 286   | CAR_CHAT     | CAR_TALKM_OUT          |        |               |                           |                   |
-| 287   | CASINO       | CARDS_IN               |        |               |                           |                   |
-| 288   | CASINO       | CARDS_LOOP             |        |               |                           |                   |
-| 289   | CASINO       | CARDS_LOSE             |        |               |                           |                   |
-| 290   | CASINO       | CARDS_OUT              |        |               |                           |                   |
-| 291   | CASINO       | CARDS_PICK_01          |        |               |                           |                   |
-| 292   | CASINO       | CARDS_PICK_02          |        |               |                           |                   |
-| 293   | CASINO       | CARDS_RAISE            |        |               |                           |                   |
-| 294   | CASINO       | CARDS_WIN              |        |               |                           |                   |
-| 295   | CASINO       | DEALONE                |        |               |                           |                   |
-| 296   | CASINO       | MANWINB                |        |               |                           |                   |
-| 297   | CASINO       | MANWIND                |        |               |                           |                   |
-| 298   | CASINO       | ROULETTE_BET           |        |               |                           |                   |
-| 299   | CASINO       | ROULETTE_IN            |        |               |                           |                   |
-| 300   | CASINO       | ROULETTE_LOOP          |        |               |                           |                   |
-| 301   | CASINO       | ROULETTE_LOSE          |        |               |                           |                   |
-| 302   | CASINO       | ROULETTE_OUT           |        |               |                           |                   |
-| 303   | CASINO       | ROULETTE_WIN           |        |               |                           |                   |
-| 304   | CASINO       | SLOT_BET_01            |        |               |                           |                   |
-| 305   | CASINO       | SLOT_BET_02            |        |               |                           |                   |
-| 306   | CASINO       | SLOT_IN                |        |               |                           |                   |
-| 307   | CASINO       | SLOT_LOSE_OUT          |        |               |                           |                   |
-| 308   | CASINO       | SLOT_PLYR              |        |               |                           |                   |
-| 309   | CASINO       | SLOT_WAIT              |        |               |                           |                   |
-| 310   | CASINO       | SLOT_WIN_OUT           |        |               |                           |                   |
-| 311   | CASINO       | WOF                    |        |               |                           |                   |
-| 312   | CHAINSAW     | CSAW_1                 |        |               |                           |                   |
-| 313   | CHAINSAW     | CSAW_2                 |        |               |                           |                   |
-| 314   | CHAINSAW     | CSAW_3                 |        |               |                           |                   |
-| 315   | CHAINSAW     | CSAW_G                 |        |               |                           |                   |
-| 316   | CHAINSAW     | CSAW_HIT_1             |        |               |                           |                   |
-| 317   | CHAINSAW     | CSAW_HIT_2             |        |               |                           |                   |
-| 318   | CHAINSAW     | CSAW_HIT_3             |        |               |                           |                   |
-| 320   | CHAINSAW     | IDLE_CSAW              |        |               |                           |                   |
-| 321   | CHAINSAW     | WEAPON_CSAW            |        |               |                           |                   |
-| 322   | CHAINSAW     | WEAPON_CSAWLO          |        |               |                           |                   |
-| 323   | CHOPPA       | CHOPPA_BACK            |        |               |                           |                   |
-| 324   | CHOPPA       | CHOPPA_BUNNYHOP        |        |               |                           |                   |
-| 325   | CHOPPA       | CHOPPA_DRIVEBYFT       |        |               |                           |                   |
-| 326   | CHOPPA       | CHOPPA_DRIVEBY_LHS     |        |               |                           |                   |
-| 327   | CHOPPA       | CHOPPA_DRIVEBY_RHS     |        |               |                           |                   |
-| 328   | CHOPPA       | CHOPPA_FWD             |        |               |                           |                   |
-| 329   | CHOPPA       | CHOPPA_GETOFFBACK      |        |               |                           |                   |
-| 330   | CHOPPA       | CHOPPA_GETOFFLHS       |        |               |                           |                   |
-| 331   | CHOPPA       | CHOPPA_GETOFFRHS       |        |               |                           |                   |
-| 332   | CHOPPA       | CHOPPA_JUMPONL         |        |               |                           |                   |
-| 333   | CHOPPA       | CHOPPA_JUMPONR         |        |               |                           |                   |
-| 335   | CHOPPA       | CHOPPA_PEDAL           |        |               |                           |                   |
-| 336   | CHOPPA       | CHOPPA_PUSHES          |        |               |                           |                   |
-| 339   | CHOPPA       | CHOPPA_SPRINT          |        |               |                           |                   |
-| 341   | CLOTHES      | CLO_BUY                |        |               |                           |                   |
-| 342   | CLOTHES      | CLO_IN                 |        |               |                           |                   |
-| 343   | CLOTHES      | CLO_OUT                |        |               |                           |                   |
-| 344   | CLOTHES      | CLO_POSE_HAT           |        |               |                           |                   |
-| 345   | CLOTHES      | CLO_POSE_IN            |        |               |                           |                   |
-| 346   | CLOTHES      | CLO_POSE_IN_O          |        |               |                           |                   |
-| 347   | CLOTHES      | CLO_POSE_LEGS          |        |               |                           |                   |
-| 348   | CLOTHES      | CLO_POSE_LOOP          |        |               |                           |                   |
-| 349   | CLOTHES      | CLO_POSE_OUT           |        |               |                           |                   |
-| 350   | CLOTHES      | CLO_POSE_OUT_O         |        |               |                           |                   |
-| 351   | CLOTHES      | CLO_POSE_SHOES         |        |               |                           |                   |
-| 352   | CLOTHES      | CLO_POSE_TORSO         |        |               |                           |                   |
-| 353   | CLOTHES      | CLO_POSE_WATCH         |        |               |                           |                   |
-| 354   | COACH        | COACH_INL              |        |               |                           |                   |
-| 355   | COACH        | COACH_INR              |        |               |                           |                   |
-| 356   | COACH        | COACH_OPNL             |        |               |                           |                   |
-| 357   | COACH        | COACH_OPNR             |        |               |                           |                   |
-| 358   | COACH        | COACH_OUTL             |        |               |                           |                   |
-| 359   | COACH        | COACH_OUTR             |        |               |                           |                   |
-| 360   | COLT45       | 2GUNS_CROUCHFIRE       |        |               |                           |                   |
-| 361   | COLT45       | COLT45_CROUCHFIRE      |        |               |                           |                   |
-| 362   | COLT45       | COLT45_CROUCHRELOAD    |        |               |                           |                   |
-| 363   | COLT45       | COLT45_FIRE            |        |               |                           |                   |
-| 364   | COLT45       | COLT45_FIRE_2HANDS     |        |               |                           |                   |
-| 365   | COLT45       | COLT45_RELOAD          |        |               |                           |                   |
-| 366   | COLT45       | SAWNOFF_RELOAD         |        |               |                           |                   |
-| 367   | COP_AMBIENT  | COPBROWSE_IN           |        |               |                           |                   |
-| 368   | COP_AMBIENT  | COPBROWSE_LOOP         |        |               |                           |                   |
-| 369   | COP_AMBIENT  | COPBROWSE_NOD          |        |               |                           |                   |
-| 370   | COP_AMBIENT  | COPBROWSE_OUT          |        |               |                           |                   |
-| 371   | COP_AMBIENT  | COPBROWSE_SHAKE        |        |               |                           |                   |
-| 372   | COP_AMBIENT  | COPLOOK_IN             |        |               |                           |                   |
-| 373   | COP_AMBIENT  | COPLOOK_LOOP           |        |               |                           |                   |
-| 374   | COP_AMBIENT  | COPLOOK_NOD            |        |               |                           |                   |
-| 375   | COP_AMBIENT  | COPLOOK_OUT            |        |               |                           |                   |
-| 376   | COP_AMBIENT  | COPLOOK_SHAKE          |        |               |                           |                   |
-| 377   | COP_AMBIENT  | COPLOOK_THINK          |        |               |                           |                   |
-| 378   | COP_AMBIENT  | COPLOOK_WATCH          |        |               |                           |                   |
-| 379   | COP_DVBYZ    | COP_DVBY_B             |        |               |                           |                   |
-| 380   | COP_DVBYZ    | COP_DVBY_FT            |        |               |                           |                   |
-| 381   | COP_DVBYZ    | COP_DVBY_L             |        |               |                           |                   |
-| 382   | COP_DVBYZ    | COP_DVBY_R             |        |               |                           |                   |
-| 383   | CRACK        | BBALBAT_IDLE_01        |        |               |                           |                   |
-| 384   | CRACK        | BBALBAT_IDLE_02        |        |               |                           |                   |
-| 385   | CRACK        | CRCKDETH1              |        |               |                           |                   |
-| 386   | CRACK        | CRCKDETH2              |        |               |                           |                   |
-| 387   | CRACK        | CRCKDETH3              |        |               |                           |                   |
-| 388   | CRACK        | CRCKDETH4              |        |               |                           |                   |
-| 389   | CRACK        | CRCKIDLE1              |        |               |                           |                   |
-| 390   | CRACK        | CRCKIDLE2              |        |               |                           |                   |
-| 391   | CRACK        | CRCKIDLE3              |        |               |                           |                   |
-| 392   | CRACK        | CRCKIDLE4              |        |               |                           |                   |
-| 393   | CRIB         | CRIB_CONSOLE_LOOP      |        |               |                           |                   |
-| 394   | CRIB         | CRIB_USE_SWITCH        |        |               |                           |                   |
-| 395   | CRIB         | PED_CONSOLE_LOOP       |        |               |                           |                   |
-| 396   | CRIB         | PED_CONSOLE_LOOSE      |        |               |                           |                   |
-| 397   | CRIB         | PED_CONSOLE_WIN        |        |               |                           |                   |
-| 398   | DAM_JUMP     | DAM_DIVE_LOOP          |        |               |                           |                   |
-| 399   | DAM_JUMP     | DAM_LAND               |        |               |                           |                   |
-| 400   | DAM_JUMP     | DAM_LAUNCH             |        |               |                           |                   |
-| 401   | DAM_JUMP     | JUMP_ROLL              |        |               |                           |                   |
-| 402   | DAM_JUMP     | SF_JUMPWALL            |        |               |                           |                   |
-| 403   | DANCING      | BD_CLAP                |        |               |                           |                   |
-| 404   | DANCING      | BD_CLAP1               |        |               |                           |                   |
-| 405   | DANCING      | DANCE_LOOP             |        |               |                           |                   |
-| 406   | DANCING      | DAN_DOWN_A             |        |               |                           |                   |
-| 407   | DANCING      | DAN_LEFT_A             |        |               |                           |                   |
-| 408   | DANCING      | DAN_LOOP_A             |        |               |                           |                   |
-| 409   | DANCING      | DAN_RIGHT_A            |        |               |                           |                   |
-| 410   | DANCING      | DAN_UP_A               |        |               |                           |                   |
-| 411   | DANCING      | DNCE_M_A               |        |               |                           |                   |
-| 412   | DANCING      | DNCE_M_B               |        |               |                           |                   |
-| 413   | DANCING      | DNCE_M_C               |        |               |                           |                   |
-| 414   | DANCING      | DNCE_M_D               |        |               |                           |                   |
-| 415   | DANCING      | DNCE_M_E               |        |               |                           |                   |
-| 416   | DEALER       | DEALER_DEAL            |        |               |                           |                   |
-| 417   | DEALER       | DEALER_IDLE            |        |               |                           |                   |
-| 418   | DEALER       | DEALER_IDLE_01         |        |               |                           |                   |
-| 419   | DEALER       | DEALER_IDLE_02         |        |               |                           |                   |
-| 420   | DEALER       | DEALER_IDLE_03         |        |               |                           |                   |
-| 421   | DEALER       | DRUGS_BUY              |        |               |                           |                   |
-| 422   | DEALER       | SHOP_PAY               |        |               |                           |                   |
-| 423   | DILDO        | DILDO_1                |        |               |                           |                   |
-| 424   | DILDO        | DILDO_2                |        |               |                           |                   |
-| 425   | DILDO        | DILDO_3                |        |               |                           |                   |
-| 426   | DILDO        | DILDO_BLOCK            |        |               |                           |                   |
-| 427   | DILDO        | DILDO_G                |        |               |                           |                   |
-| 428   | DILDO        | DILDO_HIT_1            |        |               |                           |                   |
-| 429   | DILDO        | DILDO_HIT_2            |        |               |                           |                   |
-| 430   | DILDO        | DILDO_HIT_3            |        |               |                           |                   |
-| 431   | DILDO        | DILDO_IDLE             |        |               |                           |                   |
-| 432   | DODGE        | COVER_DIVE_01          |        |               |                           |                   |
-| 433   | DODGE        | COVER_DIVE_02          |        |               |                           |                   |
-| 434   | DODGE        | CRUSHED                |        |               |                           |                   |
-| 435   | DODGE        | CRUSH_JUMP             |        |               |                           |                   |
-| 436   | DOZER        | DOZER_ALIGN_LHS        |        |               |                           |                   |
-| 437   | DOZER        | DOZER_ALIGN_RHS        |        |               |                           |                   |
-| 438   | DOZER        | DOZER_GETIN_LHS        |        |               |                           |                   |
-| 439   | DOZER        | DOZER_GETIN_RHS        |        |               |                           |                   |
-| 440   | DOZER        | DOZER_GETOUT_LHS       |        |               |                           |                   |
-| 441   | DOZER        | DOZER_GETOUT_RHS       |        |               |                           |                   |
-| 442   | DOZER        | DOZER_JACKED_LHS       |        |               |                           |                   |
-| 443   | DOZER        | DOZER_JACKED_RHS       |        |               |                           |                   |
-| 444   | DOZER        | DOZER_PULLOUT_LHS      |        |               |                           |                   |
-| 445   | DOZER        | DOZER_PULLOUT_RHS      |        |               |                           |                   |
-| 446   | DRIVEBYS     | GANG_DRIVEBYLHS        |        |               |                           |                   |
-| 447   | DRIVEBYS     | GANG_DRIVEBYLHS_BWD    |        |               |                           |                   |
-| 448   | DRIVEBYS     | GANG_DRIVEBYLHS_FWD    |        |               |                           |                   |
-| 449   | DRIVEBYS     | GANG_DRIVEBYRHS        |        |               |                           |                   |
-| 450   | DRIVEBYS     | GANG_DRIVEBYRHS_BWD    |        |               |                           |                   |
-| 451   | DRIVEBYS     | GANG_DRIVEBYRHS_FWD    |        |               |                           |                   |
-| 452   | DRIVEBYS     | GANG_DRIVEBYTOP_LHS    |        |               |                           |                   |
-| 453   | DRIVEBYS     | GANG_DRIVEBYTOP_RHS    |        |               |                           |                   |
-| 454   | FAT          | FATIDLE                |        |               |                           |                   |
-| 455   | FAT          | FATIDLE_ARMED          |        |               |                           |                   |
-| 456   | FAT          | FATIDLE_CSAW           |        |               |                           |                   |
-| 457   | FAT          | FATIDLE_ROCKET         |        |               |                           |                   |
-| 458   | FAT          | FATRUN                 |        |               |                           |                   |
-| 459   | FAT          | FATRUN_ARMED           |        |               |                           |                   |
-| 460   | FAT          | FATRUN_CSAW            |        |               |                           |                   |
-| 461   | FAT          | FATRUN_ROCKET          |        |               |                           |                   |
-| 462   | FAT          | FATSPRINT              |        |               |                           |                   |
-| 463   | FAT          | FATWALK                |        |               |                           |                   |
-| 464   | FAT          | FATWALKSTART           |        |               |                           |                   |
-| 465   | FAT          | FATWALKSTART_CSAW      |        |               |                           |                   |
-| 466   | FAT          | FATWALKST_ARMED        |        |               |                           |                   |
-| 467   | FAT          | FATWALKST_ROCKET       |        |               |                           |                   |
-| 468   | FAT          | FATWALK_ARMED          |        |               |                           |                   |
-| 469   | FAT          | FATWALK_CSAW           |        |               |                           |                   |
-| 470   | FAT          | FATWALK_ROCKET         |        |               |                           |                   |
-| 471   | FAT          | IDLE_TIRED             |        |               |                           |                   |
-| 472   | FIGHT_B      | FIGHTB_1               |        |               |                           |                   |
-| 473   | FIGHT_B      | FIGHTB_2               |        |               |                           |                   |
-| 474   | FIGHT_B      | FIGHTB_3               |        |               |                           |                   |
-| 475   | FIGHT_B      | FIGHTB_BLOCK           |        |               |                           |                   |
-| 476   | FIGHT_B      | FIGHTB_G               |        |               |                           |                   |
-| 477   | FIGHT_B      | FIGHTB_IDLE            |        |               |                           |                   |
-| 478   | FIGHT_B      | FIGHTB_M               |        |               |                           |                   |
-| 479   | FIGHT_B      | HITB_1                 |        |               |                           |                   |
-| 480   | FIGHT_B      | HITB_2                 |        |               |                           |                   |
-| 481   | FIGHT_B      | HITB_3                 |        |               |                           |                   |
-| 482   | FIGHT_C      | FIGHTC_1               |        |               |                           |                   |
-| 483   | FIGHT_C      | FIGHTC_2               |        |               |                           |                   |
-| 484   | FIGHT_C      | FIGHTC_3               |        |               |                           |                   |
-| 485   | FIGHT_C      | FIGHTC_BLOCK           |        |               |                           |                   |
-| 486   | FIGHT_C      | FIGHTC_BLOCKING        |        |               |                           |                   |
-| 487   | FIGHT_C      | FIGHTC_G               |        |               |                           |                   |
-| 488   | FIGHT_C      | FIGHTC_IDLE            |        |               |                           |                   |
-| 489   | FIGHT_C      | FIGHTC_M               |        |               |                           |                   |
-| 490   | FIGHT_C      | FIGHTC_SPAR            |        |               |                           |                   |
-| 491   | FIGHT_C      | HITC_1                 |        |               |                           |                   |
-| 492   | FIGHT_C      | HITC_2                 |        |               |                           |                   |
-| 493   | FIGHT_C      | HITC_3                 |        |               |                           |                   |
-| 494   | FIGHT_D      | FIGHTD_1               |        |               |                           |                   |
-| 495   | FIGHT_D      | FIGHTD_2               |        |               |                           |                   |
-| 496   | FIGHT_D      | FIGHTD_3               |        |               |                           |                   |
-| 497   | FIGHT_D      | FIGHTD_BLOCK           |        |               |                           |                   |
-| 498   | FIGHT_D      | FIGHTD_G               |        |               |                           |                   |
-| 499   | FIGHT_D      | FIGHTD_IDLE            |        |               |                           |                   |
-| 500   | FIGHT_D      | FIGHTD_M               |        |               |                           |                   |
-| 501   | FIGHT_D      | HITD_1                 |        |               |                           |                   |
-| 502   | FIGHT_D      | HITD_2                 |        |               |                           |                   |
-| 503   | FIGHT_D      | HITD_3                 |        |               |                           |                   |
-| 504   | FIGHT_E      | FIGHTKICK              |        |               |                           |                   |
-| 505   | FIGHT_E      | FIGHTKICK_B            |        |               |                           |                   |
-| 506   | FIGHT_E      | HIT_FIGHTKICK          |        |               |                           |                   |
-| 507   | FIGHT_E      | HIT_FIGHTKICK_B        |        |               |                           |                   |
-| 508   | FINALE       | FIN_CLIMB_IN           |        |               |                           |                   |
-| 509   | FINALE       | FIN_COP1_CLIMBOUT2     |        |               |                           |                   |
-| 510   | FINALE       | FIN_COP1_LOOP          |        |               |                           |                   |
-| 511   | FINALE       | FIN_COP1_STOMP         |        |               |                           |                   |
-| 512   | FINALE       | FIN_HANG_L             |        |               |                           |                   |
-| 513   | FINALE       | FIN_HANG_LOOP          |        |               |                           |                   |
-| 514   | FINALE       | FIN_HANG_R             |        |               |                           |                   |
-| 515   | FINALE       | FIN_HANG_SLIP          |        |               |                           |                   |
-| 516   | FINALE       | FIN_JUMP_ON            |        |               |                           |                   |
-| 517   | FINALE       | FIN_LAND_CAR           |        |               |                           |                   |
-| 518   | FINALE       | FIN_LAND_DIE           |        |               |                           |                   |
-| 519   | FINALE       | FIN_LEGSUP             |        |               |                           |                   |
-| 520   | FINALE       | FIN_LEGSUP_L           |        |               |                           |                   |
-| 521   | FINALE       | FIN_LEGSUP_LOOP        |        |               |                           |                   |
-| 522   | FINALE       | FIN_LEGSUP_R           |        |               |                           |                   |
-| 523   | FINALE       | FIN_LET_GO             |        |               |                           |                   |
-| 524   | FINALE2      | FIN_COP1_CLIMBOUT      |        |               |                           |                   |
-| 525   | FINALE2      | FIN_COP1_FALL          |        |               |                           |                   |
-| 526   | FINALE2      | FIN_COP1_LOOP          |        |               |                           |                   |
-| 527   | FINALE2      | FIN_COP1_SHOT          |        |               |                           |                   |
-| 528   | FINALE2      | FIN_COP1_SWING         |        |               |                           |                   |
-| 529   | FINALE2      | FIN_COP2_CLIMBOUT      |        |               |                           |                   |
-| 530   | FINALE2      | FIN_SWITCH_P           |        |               |                           |                   |
-| 531   | FINALE2      | FIN_SWITCH_S           |        |               |                           |                   |
-| 532   | FLAME        | FLAME_FIRE             |        |               |                           |                   |
-| 533   | FLOWERS      | FLOWER_ATTACK          |        |               |                           |                   |
-| 534   | FLOWERS      | FLOWER_ATTACK_M        |        |               |                           |                   |
-| 535   | FLOWERS      | FLOWER_HIT             |        |               |                           |                   |
-| 536   | FOOD         | EAT_BURGER             |        |               |                           |                   |
-| 537   | FOOD         | EAT_CHICKEN            |        |               |                           |                   |
-| 538   | FOOD         | EAT_PIZZA              |        |               |                           |                   |
-| 539   | FOOD         | EAT_VOMIT_P            |        |               |                           |                   |
-| 540   | FOOD         | EAT_VOMIT_SK           |        |               |                           |                   |
-| 541   | FOOD         | FF_DAM_BKW             |        |               |                           |                   |
-| 542   | FOOD         | FF_DAM_FWD             |        |               |                           |                   |
-| 543   | FOOD         | FF_DAM_LEFT            |        |               |                           |                   |
-| 544   | FOOD         | FF_DAM_RIGHT           |        |               |                           |                   |
-| 545   | FOOD         | FF_DIE_BKW             |        |               |                           |                   |
-| 546   | FOOD         | FF_DIE_FWD             |        |               |                           |                   |
-| 547   | FOOD         | FF_DIE_LEFT            |        |               |                           |                   |
-| 548   | FOOD         | FF_DIE_RIGHT           |        |               |                           |                   |
-| 549   | FOOD         | FF_SIT_EAT1            |        |               |                           |                   |
-| 550   | FOOD         | FF_SIT_EAT2            |        |               |                           |                   |
-| 551   | FOOD         | FF_SIT_EAT3            |        |               |                           |                   |
-| 552   | FOOD         | FF_SIT_IN              |        |               |                           |                   |
-| 553   | FOOD         | FF_SIT_IN_L            |        |               |                           |                   |
-| 554   | FOOD         | FF_SIT_IN_R            |        |               |                           |                   |
-| 555   | FOOD         | FF_SIT_LOOK            |        |               |                           |                   |
-| 556   | FOOD         | FF_SIT_LOOP            |        |               |                           |                   |
-| 557   | FOOD         | FF_SIT_OUT_180         |        |               |                           |                   |
-| 558   | FOOD         | FF_SIT_OUT_L_180       |        |               |                           |                   |
-| 559   | FOOD         | FF_SIT_OUT_R_180       |        |               |                           |                   |
-| 560   | FOOD         | SHP_THANK              |        |               |                           |                   |
-| 561   | FOOD         | SHP_TRAY_IN            |        |               |                           |                   |
-| 562   | FOOD         | SHP_TRAY_LIFT          |        |               |                           |                   |
-| 563   | FOOD         | SHP_TRAY_LIFT_IN       |        |               |                           |                   |
-| 564   | FOOD         | SHP_TRAY_LIFT_LOOP     |        |               |                           |                   |
-| 565   | FOOD         | SHP_TRAY_LIFT_OUT      |        |               |                           |                   |
-| 566   | FOOD         | SHP_TRAY_OUT           |        |               |                           |                   |
-| 567   | FOOD         | SHP_TRAY_POSE          |        |               |                           |                   |
-| 568   | FOOD         | SHP_TRAY_RETURN        |        |               |                           |                   |
-| 569   | FREEWEIGHTS  | GYM_BARBELL            |        |               |                           |                   |
-| 570   | FREEWEIGHTS  | GYM_FREE_A             |        |               |                           |                   |
-| 571   | FREEWEIGHTS  | GYM_FREE_B             |        |               |                           |                   |
-| 572   | FREEWEIGHTS  | GYM_FREE_CELEBRATE     |        |               |                           |                   |
-| 573   | FREEWEIGHTS  | GYM_FREE_DOWN          |        |               |                           |                   |
-| 574   | FREEWEIGHTS  | GYM_FREE_LOOP          |        |               |                           |                   |
-| 575   | FREEWEIGHTS  | GYM_FREE_PICKUP        |        |               |                           |                   |
-| 576   | FREEWEIGHTS  | GYM_FREE_PUTDOWN       |        |               |                           |                   |
-| 577   | FREEWEIGHTS  | GYM_FREE_UP_SMOOTH     |        |               |                           |                   |
-| 578   | GANGS        | DEALER_DEAL            |        |               |                           |                   |
-| 579   | GANGS        | DEALER_IDLE            |        |               |                           |                   |
-| 580   | GANGS        | DRNKBR_PRTL            |        |               |                           |                   |
-| 581   | GANGS        | DRNKBR_PRTL_F          |        |               |                           |                   |
-| 582   | GANGS        | DRUGS_BUY              |        |               |                           |                   |
-| 583   | GANGS        | HNDSHKAA               |        |               |                           |                   |
-| 584   | GANGS        | HNDSHKBA               |        |               |                           |                   |
-| 585   | GANGS        | HNDSHKCA               |        |               |                           |                   |
-| 586   | GANGS        | HNDSHKCB               |        |               |                           |                   |
-| 587   | GANGS        | HNDSHKDA               |        |               |                           |                   |
-| 588   | GANGS        | HNDSHKEA               |        |               |                           |                   |
-| 589   | GANGS        | HNDSHKFA               |        |               |                           |                   |
-| 590   | GANGS        | HNDSHKFA_SWT           |        |               |                           |                   |
-| 591   | GANGS        | INVITE_NO              |        |               |                           |                   |
-| 592   | GANGS        | INVITE_YES             |        |               |                           |                   |
-| 593   | GANGS        | LEANIDLE               |        |               |                           |                   |
-| 594   | GANGS        | LEANIN                 |        |               |                           |                   |
-| 595   | GANGS        | LEANOUT                |        |               |                           |                   |
-| 596   | GANGS        | PRTIAL_GNGTLKA         |        |               |                           |                   |
-| 597   | GANGS        | PRTIAL_GNGTLKB         |        |               |                           |                   |
-| 598   | GANGS        | PRTIAL_GNGTLKC         |        |               |                           |                   |
-| 599   | GANGS        | PRTIAL_GNGTLKD         |        |               |                           |                   |
-| 600   | GANGS        | PRTIAL_GNGTLKE         |        |               |                           |                   |
-| 601   | GANGS        | PRTIAL_GNGTLKF         |        |               |                           |                   |
-| 602   | GANGS        | PRTIAL_GNGTLKG         |        |               |                           |                   |
-| 603   | GANGS        | PRTIAL_GNGTLKH         |        |               |                           |                   |
-| 604   | GANGS        | PRTIAL_HNDSHK_01       |        |               |                           |                   |
-| 605   | GANGS        | PRTIAL_HNDSHK_BIZ_01   |        |               |                           |                   |
-| 606   | GANGS        | SHAKE_CARA             |        |               |                           |                   |
-| 607   | GANGS        | SHAKE_CARK             |        |               |                           |                   |
-| 608   | GANGS        | SHAKE_CARSH            |        |               |                           |                   |
-| 609   | GANGS        | SMKCIG_PRTL            |        |               |                           |                   |
-| 610   | GANGS        | SMKCIG_PRTL_F          |        |               |                           |                   |
-| 611   | GHANDS       | GSIGN1                 |        |               |                           |                   |
-| 612   | GHANDS       | GSIGN1LH               |        |               |                           |                   |
-| 613   | GHANDS       | GSIGN2                 |        |               |                           |                   |
-| 614   | GHANDS       | GSIGN2LH               |        |               |                           |                   |
-| 615   | GHANDS       | GSIGN3                 |        |               |                           |                   |
-| 616   | GHANDS       | GSIGN3LH               |        |               |                           |                   |
-| 617   | GHANDS       | GSIGN4                 |        |               |                           |                   |
-| 618   | GHANDS       | GSIGN4LH               |        |               |                           |                   |
-| 619   | GHANDS       | GSIGN5                 |        |               |                           |                   |
-| 620   | GHANDS       | GSIGN5LH               |        |               |                           |                   |
-| 621   | GHANDS       | LHGSIGN1               |        |               |                           |                   |
-| 622   | GHANDS       | LHGSIGN2               |        |               |                           |                   |
-| 623   | GHANDS       | LHGSIGN3               |        |               |                           |                   |
-| 624   | GHANDS       | LHGSIGN4               |        |               |                           |                   |
-| 625   | GHANDS       | LHGSIGN5               |        |               |                           |                   |
-| 626   | GHANDS       | RHGSIGN1               |        |               |                           |                   |
-| 627   | GHANDS       | RHGSIGN2               |        |               |                           |                   |
-| 628   | GHANDS       | RHGSIGN3               |        |               |                           |                   |
-| 629   | GHANDS       | RHGSIGN4               |        |               |                           |                   |
-| 630   | GHANDS       | RHGSIGN5               |        |               |                           |                   |
-| 631   | GHETTO_DB    | GDB_CAR2_PLY           |        |               |                           |                   |
-| 632   | GHETTO_DB    | GDB_CAR2_SMO           |        |               |                           |                   |
-| 633   | GHETTO_DB    | GDB_CAR2_SWE           |        |               |                           |                   |
-| 634   | GHETTO_DB    | GDB_CAR_PLY            |        |               |                           |                   |
-| 635   | GHETTO_DB    | GDB_CAR_RYD            |        |               |                           |                   |
-| 636   | GHETTO_DB    | GDB_CAR_SMO            |        |               |                           |                   |
-| 637   | GHETTO_DB    | GDB_CAR_SWE            |        |               |                           |                   |
-| 638   | GOGGLES      | GOGGLES_PUT_ON         |        |               |                           |                   |
-| 639   | GRAFFITI     | GRAFFITI_CHKOUT        |        |               |                           |                   |
-| 640   | GRAFFITI     | SPRAYCAN_FIRE          |        |               |                           |                   |
-| 641   | GRAVEYARD    | MRNF_LOOP              |        |               |                           |                   |
-| 642   | GRAVEYARD    | MRNM_LOOP              |        |               |                           |                   |
-| 643   | GRAVEYARD    | PRST_LOOPA             |        |               |                           |                   |
-| 644   | GRENADE      | WEAPON_START_THROW     |        |               |                           |                   |
-| 645   | GRENADE      | WEAPON_THROW           |        |               |                           |                   |
-| 646   | GRENADE      | WEAPON_THROWU          |        |               |                           |                   |
-| 647   | GYMNASIUM    | GYMSHADOWBOX           |        |               |                           |                   |
-| 648   | GYMNASIUM    | GYM_BIKE_CELEBRATE     |        |               |                           |                   |
-| 649   | GYMNASIUM    | GYM_BIKE_FAST          |        |               |                           |                   |
-| 650   | GYMNASIUM    | GYM_BIKE_FASTER        |        |               |                           |                   |
-| 651   | GYMNASIUM    | GYM_BIKE_GETOFF        |        |               |                           |                   |
-| 652   | GYMNASIUM    | GYM_BIKE_GETON         |        |               |                           |                   |
-| 653   | GYMNASIUM    | GYM_BIKE_PEDAL         |        |               |                           |                   |
-| 654   | GYMNASIUM    | GYM_BIKE_SLOW          |        |               |                           |                   |
-| 655   | GYMNASIUM    | GYM_BIKE_STILL         |        |               |                           |                   |
-| 656   | GYMNASIUM    | GYM_JOG_FALLOFF        |        |               |                           |                   |
-| 657   | GYMNASIUM    | GYM_SHADOWBOX          |        |               |                           |                   |
-| 658   | GYMNASIUM    | GYM_TREAD_CELEBRATE    |        |               |                           |                   |
-| 659   | GYMNASIUM    | GYM_TREAD_FALLOFF      |        |               |                           |                   |
-| 660   | GYMNASIUM    | GYM_TREAD_GETOFF       |        |               |                           |                   |
-| 661   | GYMNASIUM    | GYM_TREAD_GETON        |        |               |                           |                   |
-| 662   | GYMNASIUM    | GYM_TREAD_JOG          |        |               |                           |                   |
-| 663   | GYMNASIUM    | GYM_TREAD_SPRINT       |        |               |                           |                   |
-| 664   | GYMNASIUM    | GYM_TREAD_TIRED        |        |               |                           |                   |
-| 665   | GYMNASIUM    | GYM_TREAD_WALK         |        |               |                           |                   |
-| 666   | GYMNASIUM    | GYM_WALK_FALLOFF       |        |               |                           |                   |
-| 667   | GYMNASIUM    | PEDALS_FAST            |        |               |                           |                   |
-| 668   | GYMNASIUM    | PEDALS_MED             |        |               |                           |                   |
-| 669   | GYMNASIUM    | PEDALS_SLOW            |        |               |                           |                   |
-| 670   | GYMNASIUM    | PEDALS_STILL           |        |               |                           |                   |
-| 671   | HAIRCUTS     | BRB_BEARD_01           |        |               |                           |                   |
-| 672   | HAIRCUTS     | BRB_BUY                |        |               |                           |                   |
-| 673   | HAIRCUTS     | BRB_CUT                |        |               |                           |                   |
-| 674   | HAIRCUTS     | BRB_CUT_IN             |        |               |                           |                   |
-| 675   | HAIRCUTS     | BRB_CUT_OUT            |        |               |                           |                   |
-| 676   | HAIRCUTS     | BRB_HAIR_01            |        |               |                           |                   |
-| 677   | HAIRCUTS     | BRB_HAIR_02            |        |               |                           |                   |
-| 678   | HAIRCUTS     | BRB_IN                 |        |               |                           |                   |
-| 679   | HAIRCUTS     | BRB_LOOP               |        |               |                           |                   |
-| 680   | HAIRCUTS     | BRB_OUT                |        |               |                           |                   |
-| 681   | HAIRCUTS     | BRB_SIT_IN             |        |               |                           |                   |
-| 682   | HAIRCUTS     | BRB_SIT_LOOP           |        |               |                           |                   |
-| 683   | HAIRCUTS     | BRB_SIT_OUT            |        |               |                           |                   |
-| 684   | HEIST9       | CAS_G2_GASKO           |        |               |                           |                   |
-| 685   | HEIST9       | SWT_WLLPK_L            |        |               |                           |                   |
-| 686   | HEIST9       | SWT_WLLPK_L_BACK       |        |               |                           |                   |
-| 687   | HEIST9       | SWT_WLLPK_R            |        |               |                           |                   |
-| 688   | HEIST9       | SWT_WLLPK_R_BACK       |        |               |                           |                   |
-| 689   | HEIST9       | SWT_WLLSHOOT_IN_L      |        |               |                           |                   |
-| 690   | HEIST9       | SWT_WLLSHOOT_IN_R      |        |               |                           |                   |
-| 691   | HEIST9       | SWT_WLLSHOOT_OUT_L     |        |               |                           |                   |
-| 692   | HEIST9       | SWT_WLLSHOOT_OUT_R     |        |               |                           |                   |
-| 693   | HEIST9       | USE_SWIPECARD          |        |               |                           |                   |
-| 694   | INT_HOUSE    | BED_IN_L               |        |               |                           |                   |
-| 695   | INT_HOUSE    | BED_IN_R               |        |               |                           |                   |
-| 696   | INT_HOUSE    | BED_LOOP_L             |        |               |                           |                   |
-| 697   | INT_HOUSE    | BED_LOOP_R             |        |               |                           |                   |
-| 698   | INT_HOUSE    | BED_OUT_L              |        |               |                           |                   |
-| 699   | INT_HOUSE    | BED_OUT_R              |        |               |                           |                   |
-| 700   | INT_HOUSE    | LOU_IN                 |        |               |                           |                   |
-| 701   | INT_HOUSE    | LOU_LOOP               |        |               |                           |                   |
-| 702   | INT_HOUSE    | LOU_OUT                |        |               |                           |                   |
-| 703   | INT_HOUSE    | WASH_UP                |        |               |                           |                   |
-| 704   | INT_OFFICE   | FF_DAM_FWD             |        |               |                           |                   |
-| 705   | INT_OFFICE   | OFF_SIT_2IDLE_180      |        |               |                           |                   |
-| 706   | INT_OFFICE   | OFF_SIT_BORED_LOOP     |        |               |                           |                   |
-| 707   | INT_OFFICE   | OFF_SIT_CRASH          |        |               |                           |                   |
-| 708   | INT_OFFICE   | OFF_SIT_DRINK          |        |               |                           |                   |
-| 709   | INT_OFFICE   | OFF_SIT_IDLE_LOOP      |        |               |                           |                   |
-| 710   | INT_OFFICE   | OFF_SIT_IN             |        |               |                           |                   |
-| 711   | INT_OFFICE   | OFF_SIT_READ           |        |               |                           |                   |
-| 712   | INT_OFFICE   | OFF_SIT_TYPE_LOOP      |        |               |                           |                   |
-| 713   | INT_OFFICE   | OFF_SIT_WATCH          |        |               |                           |                   |
-| 714   | INT_SHOP     | SHOP_CASHIER           |        |               |                           |                   |
-| 715   | INT_SHOP     | SHOP_IN                |        |               |                           |                   |
-| 716   | INT_SHOP     | SHOP_LOOKA             |        |               |                           |                   |
-| 717   | INT_SHOP     | SHOP_LOOKB             |        |               |                           |                   |
-| 718   | INT_SHOP     | SHOP_LOOP              |        |               |                           |                   |
-| 719   | INT_SHOP     | SHOP_OUT               |        |               |                           |                   |
-| 720   | INT_SHOP     | SHOP_PAY               |        |               |                           |                   |
-| 721   | INT_SHOP     | SHOP_SHELF             |        |               |                           |                   |
-| 722   | JST_BUISNESS | GIRL_01                |        |               |                           |                   |
-| 723   | JST_BUISNESS | GIRL_02                |        |               |                           |                   |
-| 724   | JST_BUISNESS | PLAYER_01              |        |               |                           |                   |
-| 725   | JST_BUISNESS | SMOKE_01               |        |               |                           |                   |
-| 726   | KART         | KART_GETIN_LHS         |        |               |                           |                   |
-| 727   | KART         | KART_GETIN_RHS         |        |               |                           |                   |
-| 728   | KART         | KART_GETOUT_LHS        |        |               |                           |                   |
-| 729   | KART         | KART_GETOUT_RHS        |        |               |                           |                   |
-| 730   | KISSING      | BD_GF_WAVE             |        |               |                           |                   |
-| 731   | KISSING      | GFWAVE2                |        |               |                           |                   |
-| 732   | KISSING      | GF_CARARGUE_01         |        |               |                           |                   |
-| 733   | KISSING      | GF_CARARGUE_02         |        |               |                           |                   |
-| 734   | KISSING      | GF_CARSPOT             |        |               |                           |                   |
-| 735   | KISSING      | GF_STREETARGUE_01      |        |               |                           |                   |
-| 736   | KISSING      | GF_STREETARGUE_02      |        |               |                           |                   |
-| 737   | KISSING      | GIFT_GET               |        |               |                           |                   |
-| 738   | KISSING      | GIFT_GIVE              |        |               |                           |                   |
-| 739   | KISSING      | GRLFRD_KISS_01         |        |               |                           |                   |
-| 740   | KISSING      | GRLFRD_KISS_02         |        |               |                           |                   |
-| 741   | KISSING      | GRLFRD_KISS_03         |        |               |                           |                   |
-| 742   | KISSING      | PLAYA_KISS_01          |        |               |                           |                   |
-| 743   | KISSING      | PLAYA_KISS_02          |        |               |                           |                   |
-| 744   | KISSING      | PLAYA_KISS_03          |        |               |                           |                   |
-| 745   | KNIFE        | KILL_KNIFE_PED_DAMAGE  |        |               |                           |                   |
-| 746   | KNIFE        | KILL_KNIFE_PED_DIE     |        |               |                           |                   |
-| 747   | KNIFE        | KILL_KNIFE_PLAYER      |        |               |                           |                   |
-| 749   | KNIFE        | KNIFE_1                |        |               |                           |                   |
-| 750   | KNIFE        | KNIFE_2                |        |               |                           |                   |
-| 751   | KNIFE        | KNIFE_3                |        |               |                           |                   |
-| 752   | KNIFE        | KNIFE_4                |        |               |                           |                   |
-| 753   | KNIFE        | KNIFE_BLOCK            |        |               |                           |                   |
-| 754   | KNIFE        | KNIFE_G                |        |               |                           |                   |
-| 755   | KNIFE        | KNIFE_HIT_1            |        |               |                           |                   |
-| 756   | KNIFE        | KNIFE_HIT_2            |        |               |                           |                   |
-| 757   | KNIFE        | KNIFE_HIT_3            |        |               |                           |                   |
-| 758   | KNIFE        | KNIFE_IDLE             |        |               |                           |                   |
-| 759   | KNIFE        | KNIFE_PART             |        |               |                           |                   |
-| 760   | KNIFE        | WEAPON_KNIFEIDLE       |        |               |                           |                   |
-| 761   | LAPDAN1      | LAPDAN_D               |        |               |                           |                   |
-| 762   | LAPDAN1      | LAPDAN_P               |        |               |                           |                   |
-| 763   | LAPDAN2      | LAPDAN_D               |        |               |                           |                   |
-| 764   | LAPDAN2      | LAPDAN_P               |        |               |                           |                   |
-| 765   | LAPDAN3      | LAPDAN_D               |        |               |                           |                   |
-| 766   | LAPDAN3      | LAPDAN_P               |        |               |                           |                   |
-| 767   | LOWRIDER     | F_SMKLEAN_LOOP         |        |               |                           |                   |
-| 768   | LOWRIDER     | LRGIRL_BDBNCE          |        |               |                           |                   |
-| 769   | LOWRIDER     | LRGIRL_HAIR            |        |               |                           |                   |
-| 770   | LOWRIDER     | LRGIRL_HURRY           |        |               |                           |                   |
-| 771   | LOWRIDER     | LRGIRL_IDLELOOP        |        |               |                           |                   |
-| 772   | LOWRIDER     | LRGIRL_IDLE_TO_L0      |        |               |                           |                   |
-| 773   | LOWRIDER     | LRGIRL_L0_BNCE         |        |               |                           |                   |
-| 774   | LOWRIDER     | LRGIRL_L0_LOOP         |        |               |                           |                   |
-| 775   | LOWRIDER     | LRGIRL_L0_TO_L1        |        |               |                           |                   |
-| 776   | LOWRIDER     | LRGIRL_L12_TO_L0       |        |               |                           |                   |
-| 777   | LOWRIDER     | LRGIRL_L1_BNCE         |        |               |                           |                   |
-| 778   | LOWRIDER     | LRGIRL_L1_LOOP         |        |               |                           |                   |
-| 779   | LOWRIDER     | LRGIRL_L1_TO_L2        |        |               |                           |                   |
-| 780   | LOWRIDER     | LRGIRL_L2_BNCE         |        |               |                           |                   |
-| 781   | LOWRIDER     | LRGIRL_L2_LOOP         |        |               |                           |                   |
-| 782   | LOWRIDER     | LRGIRL_L2_TO_L3        |        |               |                           |                   |
-| 783   | LOWRIDER     | LRGIRL_L345_TO_L1      |        |               |                           |                   |
-| 784   | LOWRIDER     | LRGIRL_L3_BNCE         |        |               |                           |                   |
-| 785   | LOWRIDER     | LRGIRL_L3_LOOP         |        |               |                           |                   |
-| 786   | LOWRIDER     | LRGIRL_L3_TO_L4        |        |               |                           |                   |
-| 787   | LOWRIDER     | LRGIRL_L4_BNCE         |        |               |                           |                   |
-| 788   | LOWRIDER     | LRGIRL_L4_LOOP         |        |               |                           |                   |
-| 789   | LOWRIDER     | LRGIRL_L4_TO_L5        |        |               |                           |                   |
-| 790   | LOWRIDER     | LRGIRL_L5_BNCE         |        |               |                           |                   |
-| 791   | LOWRIDER     | LRGIRL_L5_LOOP         |        |               |                           |                   |
-| 792   | LOWRIDER     | M_SMKLEAN_LOOP         |        |               |                           |                   |
-| 793   | LOWRIDER     | M_SMKSTND_LOOP         |        |               |                           |                   |
-| 794   | LOWRIDER     | PRTIAL_GNGTLKB         |        |               |                           |                   |
-| 795   | LOWRIDER     | PRTIAL_GNGTLKC         |        |               |                           |                   |
-| 796   | LOWRIDER     | PRTIAL_GNGTLKD         |        |               |                           |                   |
-| 797   | LOWRIDER     | PRTIAL_GNGTLKE         |        |               |                           |                   |
-| 798   | LOWRIDER     | PRTIAL_GNGTLKF         |        |               |                           |                   |
-| 799   | LOWRIDER     | PRTIAL_GNGTLKG         |        |               |                           |                   |
-| 800   | LOWRIDER     | PRTIAL_GNGTLKH         |        |               |                           |                   |
-| 801   | LOWRIDER     | RAP_A_LOOP             |        |               |                           |                   |
-| 802   | LOWRIDER     | RAP_B_LOOP             |        |               |                           |                   |
-| 803   | LOWRIDER     | RAP_C_LOOP             |        |               |                           |                   |
-| 805   | LOWRIDER     | TAP_HAND               |        |               |                           |                   |
-| 806   | MD_CHASE     | CARHIT_HANGON          |        |               |                           |                   |
-| 807   | MD_CHASE     | CARHIT_TUMBLE          |        |               |                           |                   |
-| 808   | MD_CHASE     | DONUTDROP              |        |               |                           |                   |
-| 809   | MD_CHASE     | FEN_CHOPPA_L1          |        |               |                           |                   |
-| 810   | MD_CHASE     | FEN_CHOPPA_L2          |        |               |                           |                   |
-| 811   | MD_CHASE     | FEN_CHOPPA_L3          |        |               |                           |                   |
-| 812   | MD_CHASE     | FEN_CHOPPA_R1          |        |               |                           |                   |
-| 813   | MD_CHASE     | FEN_CHOPPA_R2          |        |               |                           |                   |
-| 814   | MD_CHASE     | FEN_CHOPPA_R3          |        |               |                           |                   |
-| 815   | MD_CHASE     | HANGON_STUN_LOOP       |        |               |                           |                   |
-| 816   | MD_CHASE     | HANGON_STUN_TURN       |        |               |                           |                   |
-| 817   | MD_CHASE     | MD_BIKE_2_HANG         |        |               |                           |                   |
-| 818   | MD_CHASE     | MD_BIKE_JMP_BL         |        |               |                           |                   |
-| 819   | MD_CHASE     | MD_BIKE_JMP_F          |        |               |                           |                   |
-| 820   | MD_CHASE     | MD_BIKE_LND_BL         |        |               |                           |                   |
-| 821   | MD_CHASE     | MD_BIKE_LND_DIE_BL     |        |               |                           |                   |
-| 822   | MD_CHASE     | MD_BIKE_LND_DIE_F      |        |               |                           |                   |
-| 823   | MD_CHASE     | MD_BIKE_LND_F          |        |               |                           |                   |
-| 824   | MD_CHASE     | MD_BIKE_LND_ROLL       |        |               |                           |                   |
-| 825   | MD_CHASE     | MD_BIKE_LND_ROLL_F     |        |               |                           |                   |
-| 826   | MD_CHASE     | MD_BIKE_PUNCH          |        |               |                           |                   |
-| 827   | MD_CHASE     | MD_BIKE_PUNCH_F        |        |               |                           |                   |
-| 828   | MD_CHASE     | MD_BIKE_SHOT_F         |        |               |                           |                   |
-| 829   | MD_CHASE     | MD_HANG_LND_ROLL       |        |               |                           |                   |
-| 830   | MD_CHASE     | MD_HANG_LOOP           |        |               |                           |                   |
-| 831   | MD_END       | END_SC1_PLY            |        |               |                           |                   |
-| 832   | MD_END       | END_SC1_RYD            |        |               |                           |                   |
-| 833   | MD_END       | END_SC1_SMO            |        |               |                           |                   |
-| 834   | MD_END       | END_SC1_SWE            |        |               |                           |                   |
-| 835   | MD_END       | END_SC2_PLY            |        |               |                           |                   |
-| 836   | MD_END       | END_SC2_RYD            |        |               |                           |                   |
-| 837   | MD_END       | END_SC2_SMO            |        |               |                           |                   |
-| 838   | MD_END       | END_SC2_SWE            |        |               |                           |                   |
-| 839   | MEDIC        | CPR                    |        |               |                           |                   |
-| 840   | MISC         | BITCHSLAP              |        |               |                           |                   |
-| 841   | MISC         | BMX_CELEBRATE          |        |               |                           |                   |
-| 842   | MISC         | BMX_COMEON             |        |               |                           |                   |
-| 843   | MISC         | BMX_IDLELOOP_01        |        |               |                           |                   |
-| 844   | MISC         | BMX_IDLELOOP_02        |        |               |                           |                   |
-| 845   | MISC         | BMX_TALKLEFT_IN        |        |               |                           |                   |
-| 846   | MISC         | BMX_TALKLEFT_LOOP      |        |               |                           |                   |
-| 847   | MISC         | BMX_TALKLEFT_OUT       |        |               |                           |                   |
-| 848   | MISC         | BMX_TALKRIGHT_IN       |        |               |                           |                   |
-| 849   | MISC         | BMX_TALKRIGHT_LOOP     |        |               |                           |                   |
-| 850   | MISC         | BMX_TALKRIGHT_OUT      |        |               |                           |                   |
-| 851   | MISC         | BNG_WNDW               |        |               |                           |                   |
-| 852   | MISC         | BNG_WNDW_02            |        |               |                           |                   |
-| 853   | MISC         | CASE_PICKUP            |        |               |                           |                   |
-| 854   | MISC         | DOOR_JET               |        |               |                           |                   |
-| 855   | MISC         | GRAB_L                 |        |               |                           |                   |
-| 856   | MISC         | GRAB_R                 |        |               |                           |                   |
-| 857   | MISC         | HIKER_POSE             |        |               |                           |                   |
-| 858   | MISC         | HIKER_POSE_L           |        |               |                           |                   |
-| 859   | MISC         | IDLE_CHAT_02           |        |               |                           |                   |
-| 860   | MISC         | KAT_THROW_K            |        |               |                           |                   |
-| 861   | MISC         | KAT_THROW_O            |        |               |                           |                   |
-| 862   | MISC         | KAT_THROW_P            |        |               |                           |                   |
-| 863   | MISC         | PASS_RIFLE_O           |        |               |                           |                   |
-| 864   | MISC         | PASS_RIFLE_PED         |        |               |                           |                   |
-| 865   | MISC         | PASS_RIFLE_PLY         |        |               |                           |                   |
-| 866   | MISC         | PICKUP_BOX             |        |               |                           |                   |
-| 867   | MISC         | PLANE_DOOR             |        |               |                           |                   |
-| 868   | MISC         | PLANE_EXIT             |        |               |                           |                   |
-| 869   | MISC         | PLANE_HIJACK           |        |               |                           |                   |
-| 870   | MISC         | PLUNGER_01             |        |               |                           |                   |
-| 871   | MISC         | PLYRLEAN_LOOP          |        |               |                           |                   |
-| 872   | MISC         | PLYR_SHKHEAD           |        |               |                           |                   |
-| 873   | MISC         | RUN_DIVE               |        |               |                           |                   |
-| 874   | MISC         | SCRATCHBALLS_01        |        |               |                           |                   |
-| 875   | MISC         | SEAT_LR                |        |               |                           |                   |
-| 876   | MISC         | SEAT_TALK_01           |        |               |                           |                   |
-| 877   | MISC         | SEAT_TALK_02           |        |               |                           |                   |
-| 878   | MISC         | SEAT_WATCH             |        |               |                           |                   |
-| 879   | MISC         | SMALPLANE_DOOR         |        |               |                           |                   |
-| 880   | MISC         | SMLPLANE_DOOR          |        |               |                           |                   |
-| 881   | MTB          | MTB_BACK               |        |               |                           |                   |
-| 882   | MTB          | MTB_BUNNYHOP           |        |               |                           |                   |
-| 883   | MTB          | MTB_DRIVEBYFT          |        |               |                           |                   |
-| 884   | MTB          | MTB_DRIVEBY_LHS        |        |               |                           |                   |
-| 885   | MTB          | MTB_DRIVEBY_RHS        |        |               |                           |                   |
-| 886   | MTB          | MTB_FWD                |        |               |                           |                   |
-| 887   | MTB          | MTB_GETOFFBACK         |        |               |                           |                   |
-| 888   | MTB          | MTB_GETOFFLHS          |        |               |                           |                   |
-| 889   | MTB          | MTB_GETOFFRHS          |        |               |                           |                   |
-| 890   | MTB          | MTB_JUMPONL            |        |               |                           |                   |
-| 891   | MTB          | MTB_JUMPONR            |        |               |                           |                   |
-| 893   | MTB          | MTB_PEDAL              |        |               |                           |                   |
-| 894   | MTB          | MTB_PUSHES             |        |               |                           |                   |
-| 897   | MTB          | MTB_SPRINT             |        |               |                           |                   |
-| 899   | MUSCULAR     | MSCLEWALKST_ARMED      |        |               |                           |                   |
-| 900   | MUSCULAR     | MSCLEWALKST_CSAW       |        |               |                           |                   |
-| 901   | MUSCULAR     | MSCLE_RCKT_RUN         |        |               |                           |                   |
-| 902   | MUSCULAR     | MSCLE_RCKT_WALKST      |        |               |                           |                   |
-| 903   | MUSCULAR     | MSCLE_RUN_CSAW         |        |               |                           |                   |
-| 904   | MUSCULAR     | MUSCLEIDLE             |        |               |                           |                   |
-| 905   | MUSCULAR     | MUSCLEIDLE_ARMED       |        |               |                           |                   |
-| 906   | MUSCULAR     | MUSCLEIDLE_CSAW        |        |               |                           |                   |
-| 907   | MUSCULAR     | MUSCLEIDLE_ROCKET      |        |               |                           |                   |
-| 908   | MUSCULAR     | MUSCLERUN              |        |               |                           |                   |
-| 909   | MUSCULAR     | MUSCLERUN_ARMED        |        |               |                           |                   |
-| 910   | MUSCULAR     | MUSCLESPRINT           |        |               |                           |                   |
-| 911   | MUSCULAR     | MUSCLEWALK             |        |               |                           |                   |
-| 912   | MUSCULAR     | MUSCLEWALKSTART        |        |               |                           |                   |
-| 913   | MUSCULAR     | MUSCLEWALK_ARMED       |        |               |                           |                   |
-| 914   | MUSCULAR     | MUSCLEWALK_CSAW        |        |               |                           |                   |
-| 915   | MUSCULAR     | MUSCLEWALK_ROCKET      |        |               |                           |                   |
-| 916   | NEVADA       | NEVADA_GETIN           |        |               |                           |                   |
-| 917   | NEVADA       | NEVADA_GETOUT          |        |               |                           |                   |
-| 918   | ON_LOOKERS   | LKAROUND_IN            |        |               |                           |                   |
-| 919   | ON_LOOKERS   | LKAROUND_LOOP          |        |               |                           |                   |
-| 920   | ON_LOOKERS   | LKAROUND_OUT           |        |               |                           |                   |
-| 921   | ON_LOOKERS   | LKUP_IN                |        |               |                           |                   |
-| 922   | ON_LOOKERS   | LKUP_LOOP              |        |               |                           |                   |
-| 923   | ON_LOOKERS   | LKUP_OUT               |        |               |                           |                   |
-| 924   | ON_LOOKERS   | LKUP_POINT             |        |               |                           |                   |
-| 925   | ON_LOOKERS   | PANIC_COWER            |        |               |                           |                   |
-| 926   | ON_LOOKERS   | PANIC_HIDE             |        |               |                           |                   |
-| 927   | ON_LOOKERS   | PANIC_IN               |        |               |                           |                   |
-| 928   | ON_LOOKERS   | PANIC_LOOP             |        |               |                           |                   |
-| 929   | ON_LOOKERS   | PANIC_OUT              |        |               |                           |                   |
-| 930   | ON_LOOKERS   | PANIC_POINT            |        |               |                           |                   |
-| 931   | ON_LOOKERS   | PANIC_SHOUT            |        |               |                           |                   |
-| 932   | ON_LOOKERS   | POINTUP_IN             |        |               |                           |                   |
-| 933   | ON_LOOKERS   | POINTUP_LOOP           |        |               |                           |                   |
-| 934   | ON_LOOKERS   | POINTUP_OUT            |        |               |                           |                   |
-| 935   | ON_LOOKERS   | POINTUP_SHOUT          |        |               |                           |                   |
-| 936   | ON_LOOKERS   | POINT_IN               |        |               |                           |                   |
-| 937   | ON_LOOKERS   | POINT_LOOP             |        |               |                           |                   |
-| 938   | ON_LOOKERS   | POINT_OUT              |        |               |                           |                   |
-| 939   | ON_LOOKERS   | SHOUT_01               |        |               |                           |                   |
-| 940   | ON_LOOKERS   | SHOUT_02               |        |               |                           |                   |
-| 941   | ON_LOOKERS   | SHOUT_IN               |        |               |                           |                   |
-| 942   | ON_LOOKERS   | SHOUT_LOOP             |        |               |                           |                   |
-| 943   | ON_LOOKERS   | SHOUT_OUT              |        |               |                           |                   |
-| 944   | ON_LOOKERS   | WAVE_IN                |        |               |                           |                   |
-| 945   | ON_LOOKERS   | WAVE_LOOP              |        |               |                           |                   |
-| 946   | ON_LOOKERS   | WAVE_OUT               |        |               |                           |                   |
-| 947   | OTB          | BETSLP_IN              |        |               |                           |                   |
-| 948   | OTB          | BETSLP_LKABT           |        |               |                           |                   |
-| 949   | OTB          | BETSLP_LOOP            |        |               |                           |                   |
-| 950   | OTB          | BETSLP_OUT             |        |               |                           |                   |
-| 951   | OTB          | BETSLP_TNK             |        |               |                           |                   |
-| 952   | OTB          | WTCHRACE_CMON          |        |               |                           |                   |
-| 953   | OTB          | WTCHRACE_IN            |        |               |                           |                   |
-| 954   | OTB          | WTCHRACE_LOOP          |        |               |                           |                   |
-| 955   | OTB          | WTCHRACE_LOSE          |        |               |                           |                   |
-| 956   | OTB          | WTCHRACE_OUT           |        |               |                           |                   |
-| 957   | OTB          | WTCHRACE_WIN           |        |               |                           |                   |
-| 958   | PARACHUTE    | FALL_SKYDIVE           |        |               |                           |                   |
-| 959   | PARACHUTE    | FALL_SKYDIVE_ACCEL     |        |               |                           |                   |
-| 960   | PARACHUTE    | FALL_SKYDIVE_DIE       |        |               |                           |                   |
-| 961   | PARACHUTE    | FALL_SKYDIVE_L         |        |               |                           |                   |
-| 962   | PARACHUTE    | FALL_SKYDIVE_R         |        |               |                           |                   |
-| 963   | PARACHUTE    | PARA_DECEL             |        |               |                           |                   |
-| 964   | PARACHUTE    | PARA_DECEL_O           |        |               |                           |                   |
-| 965   | PARACHUTE    | PARA_FLOAT             |        |               |                           |                   |
-| 966   | PARACHUTE    | PARA_FLOAT_O           |        |               |                           |                   |
-| 967   | PARACHUTE    | PARA_LAND              |        |               |                           |                   |
-| 968   | PARACHUTE    | PARA_LAND_O            |        |               |                           |                   |
-| 969   | PARACHUTE    | PARA_LAND_WATER        |        |               |                           |                   |
-| 970   | PARACHUTE    | PARA_LAND_WATER_O      |        |               |                           |                   |
-| 971   | PARACHUTE    | PARA_OPEN              |        |               |                           |                   |
-| 972   | PARACHUTE    | PARA_OPEN_O            |        |               |                           |                   |
-| 973   | PARACHUTE    | PARA_RIP_LAND_O        |        |               |                           |                   |
-| 974   | PARACHUTE    | PARA_RIP_LOOP_O        |        |               |                           |                   |
-| 975   | PARACHUTE    | PARA_RIP_O             |        |               |                           |                   |
-| 976   | PARACHUTE    | PARA_STEERL            |        |               |                           |                   |
-| 977   | PARACHUTE    | PARA_STEERL_O          |        |               |                           |                   |
-| 978   | PARACHUTE    | PARA_STEERR            |        |               |                           |                   |
-| 979   | PARACHUTE    | PARA_STEERR_O          |        |               |                           |                   |
-| 980   | PARK         | TAI_CHI_IN             |        |               |                           |                   |
-| 981   | PARK         | TAI_CHI_LOOP           |        |               |                           |                   |
-| 982   | PARK         | TAI_CHI_OUT            |        |               |                           |                   |
-| 983   | PAULNMAC     | PISS_IN                |        |               |                           |                   |
-| 984   | PAULNMAC     | PISS_LOOP              |        |               |                           |                   |
-| 985   | PAULNMAC     | PISS_OUT               |        |               |                           |                   |
-| 986   | PAULNMAC     | PNM_ARGUE1_A           |        |               |                           |                   |
-| 987   | PAULNMAC     | PNM_ARGUE1_B           |        |               |                           |                   |
-| 988   | PAULNMAC     | PNM_ARGUE2_A           |        |               |                           |                   |
-| 989   | PAULNMAC     | PNM_ARGUE2_B           |        |               |                           |                   |
-| 990   | PAULNMAC     | PNM_LOOP_A             |        |               |                           |                   |
-| 991   | PAULNMAC     | PNM_LOOP_B             |        |               |                           |                   |
-| 992   | PAULNMAC     | WANK_IN                |        |               |                           |                   |
-| 993   | PAULNMAC     | WANK_LOOP              |        |               |                           |                   |
-| 994   | PAULNMAC     | WANK_OUT               |        |               |                           |                   |
-| 996   | PED          | ARRESTGUN              |        |               |                           |                   |
-| 997   | PED          | ATM                    |        |               |                           |                   |
-| 998   | PED          | BIKE_ELBOWL            |        |               |                           |                   |
-| 999   | PED          | BIKE_ELBOWR            |        |               |                           |                   |
-| 1000  | PED          | BIKE_FALLR             |        |               |                           |                   |
-| 1001  | PED          | BIKE_FALL_OFF          |        |               |                           |                   |
-| 1002  | PED          | BIKE_PICKUPL           |        |               |                           |                   |
-| 1003  | PED          | BIKE_PICKUPR           |        |               |                           |                   |
-| 1004  | PED          | BIKE_PULLUPL           |        |               |                           |                   |
-| 1005  | PED          | BIKE_PULLUPR           |        |               |                           |                   |
-| 1006  | PED          | BOMBER                 |        |               |                           |                   |
-| 1007  | PED          | CAR_ALIGNHI_LHS        |        |               |                           |                   |
-| 1008  | PED          | CAR_ALIGNHI_RHS        |        |               |                           |                   |
-| 1009  | PED          | CAR_ALIGN_LHS          |        |               |                           |                   |
-| 1011  | PED          | CAR_CLOSEDOORL_LHS     |        |               |                           |                   |
-| 1012  | PED          | CAR_CLOSEDOORL_RHS     |        |               |                           |                   |
-| 1013  | PED          | CAR_CLOSEDOOR_LHS      |        |               |                           |                   |
-| 1014  | PED          | CAR_CLOSEDOOR_RHS      |        |               |                           |                   |
-| 1015  | PED          | CAR_CLOSE_LHS          |        |               |                           |                   |
-| 1016  | PED          | CAR_CLOSE_RHS          |        |               |                           |                   |
-| 1017  | PED          | CAR_CRAWLOUTRHS        |        |               |                           |                   |
-| 1020  | PED          | CAR_DOORLOCKED_LHS     |        |               |                           |                   |
-| 1021  | PED          | CAR_DOORLOCKED_RHS     |        |               |                           |                   |
-| 1022  | PED          | CAR_FALLOUT_LHS        |        |               |                           |                   |
-| 1023  | PED          | CAR_FALLOUT_RHS        |        |               |                           |                   |
-| 1024  | PED          | CAR_GETINL_LHS         |        |               |                           |                   |
-| 1025  | PED          | CAR_GETINL_RHS         |        |               |                           |                   |
-| 1026  | PED          | CAR_GETIN_LHS          |        |               |                           |                   |
-| 1027  | PED          | CAR_GETIN_RHS          |        |               |                           |                   |
-| 1028  | PED          | CAR_GETOUTL_LHS        |        |               |                           |                   |
-| 1029  | PED          | CAR_GETOUTL_RHS        |        |               |                           |                   |
-| 1030  | PED          | CAR_GETOUT_LHS         |        |               |                           |                   |
-| 1031  | PED          | CAR_GETOUT_RHS         |        |               |                           |                   |
-| 1032  | PED          | CAR_HOOKERTALK         |        |               |                           |                   |
-| 1033  | PED          | CAR_JACKEDLHS          |        |               |                           |                   |
-| 1034  | PED          | CAR_JACKEDRHS          |        |               |                           |                   |
-| 1035  | PED          | CAR_JUMPIN_LHS         |        |               |                           |                   |
-| 1036  | PED          | CAR_LB                 |        |               |                           |                   |
-| 1037  | PED          | CAR_LB_PRO             |        |               |                           |                   |
-| 1038  | PED          | CAR_LB_WEAK            |        |               |                           |                   |
-| 1039  | PED          | CAR_LJACKEDLHS         |        |               |                           |                   |
-| 1040  | PED          | CAR_LJACKEDRHS         |        |               |                           |                   |
-| 1041  | PED          | CAR_LSHUFFLE_RHS       |        |               |                           |                   |
-| 1043  | PED          | CAR_OPEN_LHS           |        |               |                           |                   |
-| 1044  | PED          | CAR_OPEN_RHS           |        |               |                           |                   |
-| 1045  | PED          | CAR_PULLOUTL_LHS       |        |               |                           |                   |
-| 1046  | PED          | CAR_PULLOUTL_RHS       |        |               |                           |                   |
-| 1047  | PED          | CAR_PULLOUT_LHS        |        |               |                           |                   |
-| 1048  | PED          | CAR_PULLOUT_RHS        |        |               |                           |                   |
-| 1049  | PED          | CAR_QJACKED            |        |               |                           |                   |
-| 1050  | PED          | CAR_ROLLDOOR           |        |               |                           |                   |
-| 1051  | PED          | CAR_ROLLDOORLO         |        |               |                           |                   |
-| 1052  | PED          | CAR_ROLLOUT_LHS        |        |               |                           |                   |
-| 1053  | PED          | CAR_ROLLOUT_RHS        |        |               |                           |                   |
-| 1054  | PED          | CAR_SHUFFLE_RHS        |        |               |                           |                   |
-| 1060  | PED          | CAR_TUNE_RADIO         |        |               |                           |                   |
-| 1061  | PED          | CLIMB_IDLE             |        |               |                           |                   |
-| 1062  | PED          | CLIMB_JUMP             |        |               |                           |                   |
-| 1064  | PED          | CLIMB_JUMP_B           |        |               |                           |                   |
-| 1065  | PED          | CLIMB_PULL             |        |               |                           |                   |
-| 1066  | PED          | CLIMB_STAND            |        |               |                           |                   |
-| 1067  | PED          | CLIMB_STAND_FINISH     |        |               |                           |                   |
-| 1068  | PED          | COWER                  |        |               |                           |                   |
-| 1069  | PED          | CROUCH_ROLL_L          |        |               |                           |                   |
-| 1070  | PED          | CROUCH_ROLL_R          |        |               |                           |                   |
-| 1071  | PED          | DAM_ARML_FRMBK         |        |               |                           |                   |
-| 1072  | PED          | DAM_ARML_FRMFT         |        |               |                           |                   |
-| 1073  | PED          | DAM_ARML_FRMLT         |        |               |                           |                   |
-| 1074  | PED          | DAM_ARMR_FRMBK         |        |               |                           |                   |
-| 1075  | PED          | DAM_ARMR_FRMFT         |        |               |                           |                   |
-| 1076  | PED          | DAM_ARMR_FRMRT         |        |               |                           |                   |
-| 1077  | PED          | DAM_LEGL_FRMBK         |        |               |                           |                   |
-| 1078  | PED          | DAM_LEGL_FRMFT         |        |               |                           |                   |
-| 1079  | PED          | DAM_LEGL_FRMLT         |        |               |                           |                   |
-| 1080  | PED          | DAM_LEGR_FRMBK         |        |               |                           |                   |
-| 1081  | PED          | DAM_LEGR_FRMFT         |        |               |                           |                   |
-| 1082  | PED          | DAM_LEGR_FRMRT         |        |               |                           |                   |
-| 1083  | PED          | DAM_STOMACH_FRMBK      |        |               |                           |                   |
-| 1084  | PED          | DAM_STOMACH_FRMFT      |        |               |                           |                   |
-| 1085  | PED          | DAM_STOMACH_FRMLT      |        |               |                           |                   |
-| 1086  | PED          | DAM_STOMACH_FRMRT      |        |               |                           |                   |
-| 1087  | PED          | DOOR_LHINGE_O          |        |               |                           |                   |
-| 1088  | PED          | DOOR_RHINGE_O          |        |               |                           |                   |
-| 1089  | PED          | DRIVEBYL_L             |        |               |                           |                   |
-| 1090  | PED          | DRIVEBYL_R             |        |               |                           |                   |
-| 1091  | PED          | DRIVEBY_L              |        |               |                           |                   |
-| 1092  | PED          | DRIVEBY_R              |        |               |                           |                   |
-| 1101  | PED          | DRIVE_L_PRO_SLOW       |        |               |                           |                   |
-| 1104  | PED          | DRIVE_L_WEAK_SLOW      |        |               |                           |                   |
-| 1108  | PED          | DRIVE_R_SLOW           |        |               |                           |                   |
-| 1109  | PED          | DRIVE_R_WEAK           |        |               |                           |                   |
-| 1115  | PED          | DROWN                  |        |               |                           |                   |
-| 1116  | PED          | DUCK_COWER             |        |               |                           |                   |
-| 1117  | PED          | ENDCHAT_01             |        |               |                           |                   |
-| 1118  | PED          | ENDCHAT_02             |        |               |                           |                   |
-| 1119  | PED          | ENDCHAT_03             |        |               |                           |                   |
-| 1120  | PED          | EV_DIVE                |        |               |                           |                   |
-| 1121  | PED          | EV_STEP                |        |               |                           |                   |
-| 1123  | PED          | FACGUM                 |        |               |                           |                   |
-| 1126  | PED          | FACTALK                |        |               |                           |                   |
-| 1128  | PED          | FALL_BACK              |        |               |                           |                   |
-| 1129  | PED          | FALL_COLLAPSE          |        |               |                           |                   |
-| 1130  | PED          | FALL_FALL              |        |               |                           |                   |
-| 1131  | PED          | FALL_FRONT             |        |               |                           |                   |
-| 1132  | PED          | FALL_GLIDE             |        |               |                           |                   |
-| 1133  | PED          | FALL_LAND              |        |               |                           |                   |
-| 1134  | PED          | FALL_SKYDIVE           |        |               |                           |                   |
-| 1135  | PED          | FIGHT2IDLE             |        |               |                           |                   |
-| 1136  | PED          | FIGHTA_1               |        |               |                           |                   |
-| 1137  | PED          | FIGHTA_2               |        |               |                           |                   |
-| 1138  | PED          | FIGHTA_3               |        |               |                           |                   |
-| 1139  | PED          | FIGHTA_BLOCK           |        |               |                           |                   |
-| 1140  | PED          | FIGHTA_G               |        |               |                           |                   |
-| 1141  | PED          | FIGHTA_M               |        |               |                           |                   |
-| 1142  | PED          | FIGHTIDLE              |        |               |                           |                   |
-| 1143  | PED          | FIGHTSHB               |        |               |                           |                   |
-| 1144  | PED          | FIGHTSHF               |        |               |                           |                   |
-| 1145  | PED          | FIGHTSH_BWD            |        |               |                           |                   |
-| 1146  | PED          | FIGHTSH_FWD            |        |               |                           |                   |
-| 1147  | PED          | FIGHTSH_LEFT           |        |               |                           |                   |
-| 1148  | PED          | FIGHTSH_RIGHT          |        |               |                           |                   |
-| 1149  | PED          | FLEE_LKAROUND_01       |        |               |                           |                   |
-| 1150  | PED          | FLOOR_HIT              |        |               |                           |                   |
-| 1151  | PED          | FLOOR_HIT_F            |        |               |                           |                   |
-| 1152  | PED          | FUCKU                  |        |               |                           |                   |
-| 1154  | PED          | GAS_CWR                |        |               |                           |                   |
-| 1155  | PED          | GETUP                  |        |               |                           |                   |
-| 1156  | PED          | GETUP_FRONT            |        |               |                           |                   |
-| 1157  | PED          | GUM_EAT                |        |               |                           |                   |
-| 1158  | PED          | GUNCROUCHBWD           |        |               |                           |                   |
-| 1159  | PED          | GUNCROUCHFWD           |        |               |                           |                   |
-| 1160  | PED          | GUNMOVE_BWD            |        |               |                           |                   |
-| 1161  | PED          | GUNMOVE_FWD            |        |               |                           |                   |
-| 1162  | PED          | GUNMOVE_L              |        |               |                           |                   |
-| 1163  | PED          | GUNMOVE_R              |        |               |                           |                   |
-| 1164  | PED          | GUN_2_IDLE             |        |               |                           |                   |
-| 1165  | PED          | GUN_BUTT               |        |               |                           |                   |
-| 1166  | PED          | GUN_BUTT_CROUCH        |        |               |                           |                   |
-| 1168  | PED          | HANDSCOWER             |        |               |                           |                   |
-| 1169  | PED          | HANDSUP                |        |               |                           |                   |
-| 1170  | PED          | HITA_1                 |        |               |                           |                   |
-| 1171  | PED          | HITA_2                 |        |               |                           |                   |
-| 1172  | PED          | HITA_3                 |        |               |                           |                   |
-| 1173  | PED          | HIT_BACK               |        |               |                           |                   |
-| 1174  | PED          | HIT_BEHIND             |        |               |                           |                   |
-| 1175  | PED          | HIT_FRONT              |        |               |                           |                   |
-| 1176  | PED          | HIT_GUN_BUTT           |        |               |                           |                   |
-| 1177  | PED          | HIT_L                  |        |               |                           |                   |
-| 1178  | PED          | HIT_R                  |        |               |                           |                   |
-| 1179  | PED          | HIT_WALK               |        |               |                           |                   |
-| 1180  | PED          | HIT_WALL               |        |               |                           |                   |
-| 1181  | PED          | IDLESTANCE_FAT         |        |               |                           |                   |
-| 1182  | PED          | IDLESTANCE_OLD         |        |               |                           |                   |
-| 1183  | PED          | IDLE_ARMED             |        |               |                           |                   |
-| 1184  | PED          | IDLE_CHAT              |        |               |                           |                   |
-| 1185  | PED          | IDLE_CSAW              |        |               |                           |                   |
-| 1186  | PED          | IDLE_GANG1             |        |               |                           |                   |
-| 1187  | PED          | IDLE_HBHB              |        |               |                           |                   |
-| 1188  | PED          | IDLE_ROCKET            |        |               |                           |                   |
-| 1189  | PED          | IDLE_STANCE            |        |               |                           |                   |
-| 1190  | PED          | IDLE_TAXI              |        |               |                           |                   |
-| 1191  | PED          | IDLE_TIRED             |        |               |                           |                   |
-| 1193  | PED          | JOG_FEMALEA            |        |               |                           |                   |
-| 1194  | PED          | JOG_MALEA              |        |               |                           |                   |
-| 1195  | PED          | JUMP_GLIDE             |        |               |                           |                   |
-| 1196  | PED          | JUMP_LAND              |        |               |                           |                   |
-| 1197  | PED          | JUMP_LAUNCH            |        |               |                           |                   |
-| 1198  | PED          | JUMP_LAUNCH_R          |        |               |                           |                   |
-| 1200  | PED          | KART_L                 |        |               |                           |                   |
-| 1203  | PED          | KD_LEFT                |        |               |                           |                   |
-| 1204  | PED          | KD_RIGHT               |        |               |                           |                   |
-| 1205  | PED          | KO_SHOT_FACE           |        |               |                           |                   |
-| 1206  | PED          | KO_SHOT_FRONT          |        |               |                           |                   |
-| 1207  | PED          | KO_SHOT_STOM           |        |               |                           |                   |
-| 1208  | PED          | KO_SKID_BACK           |        |               |                           |                   |
-| 1209  | PED          | KO_SKID_FRONT          |        |               |                           |                   |
-| 1210  | PED          | KO_SPIN_L              |        |               |                           |                   |
-| 1211  | PED          | KO_SPIN_R              |        |               |                           |                   |
-| 1212  | PED          | PASS_SMOKE_IN_CAR      |        |               |                           |                   |
-| 1213  | PED          | PHONE_IN               |        |               |                           |                   |
-| 1214  | PED          | PHONE_OUT              |        |               |                           |                   |
-| 1215  | PED          | PHONE_TALK             |        |               |                           |                   |
-| 1216  | PED          | PLAYER_SNEAK           |        |               |                           |                   |
-| 1217  | PED          | PLAYER_SNEAK_WALKSTART |        |               |                           |                   |
-| 1218  | PED          | ROADCROSS              |        |               |                           |                   |
-| 1219  | PED          | ROADCROSS_FEMALE       |        |               |                           |                   |
-| 1220  | PED          | ROADCROSS_GANG         |        |               |                           |                   |
-| 1221  | PED          | ROADCROSS_OLD          |        |               |                           |                   |
-| 1222  | PED          | RUN_1ARMED             |        |               |                           |                   |
-| 1223  | PED          | RUN_ARMED              |        |               |                           |                   |
-| 1224  | PED          | RUN_CIVI               |        |               |                           |                   |
-| 1225  | PED          | RUN_CSAW               |        |               |                           |                   |
-| 1226  | PED          | RUN_FAT                |        |               |                           |                   |
-| 1227  | PED          | RUN_FATOLD             |        |               |                           |                   |
-| 1228  | PED          | RUN_GANG1              |        |               |                           |                   |
-| 1229  | PED          | RUN_LEFT               |        |               |                           |                   |
-| 1230  | PED          | RUN_OLD                |        |               |                           |                   |
-| 1231  | PED          | RUN_PLAYER             |        |               |                           |                   |
-| 1232  | PED          | RUN_RIGHT              |        |               |                           |                   |
-| 1233  | PED          | RUN_ROCKET             |        |               |                           |                   |
-| 1234  | PED          | RUN_STOP               |        |               |                           |                   |
-| 1235  | PED          | RUN_STOPR              |        |               |                           |                   |
-| 1236  | PED          | RUN_WUZI               |        |               |                           |                   |
-| 1237  | PED          | SEAT_DOWN              |        |               |                           |                   |
-| 1238  | PED          | SEAT_IDLE              |        |               |                           |                   |
-| 1239  | PED          | SEAT_UP                |        |               |                           |                   |
-| 1240  | PED          | SHOT_LEFTP             |        |               |                           |                   |
-| 1241  | PED          | SHOT_PARTIAL           |        |               |                           |                   |
-| 1242  | PED          | SHOT_PARTIAL_B         |        |               |                           |                   |
-| 1243  | PED          | SHOT_RIGHTP            |        |               |                           |                   |
-| 1244  | PED          | SHOVE_PARTIAL          |        |               |                           |                   |
-| 1245  | PED          | SMOKE_IN_CAR           |        |               |                           |                   |
-| 1246  | PED          | SPRINT_CIVI            |        |               |                           |                   |
-| 1247  | PED          | SPRINT_PANIC           |        |               |                           |                   |
-| 1248  | PED          | SPRINT_WUZI            |        |               |                           |                   |
-| 1249  | PED          | SWAT_RUN               |        |               |                           |                   |
-| 1250  | PED          | SWIM_TREAD             |        |               |                           |                   |
-| 1253  | PED          | TURN_180               |        |               |                           |                   |
-| 1254  | PED          | TURN_L                 |        |               |                           |                   |
-| 1255  | PED          | TURN_R                 |        |               |                           |                   |
-| 1256  | PED          | WALK_ARMED             |        |               |                           |                   |
-| 1257  | PED          | WALK_CIVI              |        |               |                           |                   |
-| 1258  | PED          | WALK_CSAW              |        |               |                           |                   |
-| 1259  | PED          | WALK_DOORPARTIAL       |        |               |                           |                   |
-| 1260  | PED          | WALK_DRUNK             |        |               |                           |                   |
-| 1261  | PED          | WALK_FAT               |        |               |                           |                   |
-| 1262  | PED          | WALK_FATOLD            |        |               |                           |                   |
-| 1263  | PED          | WALK_GANG1             |        |               |                           |                   |
-| 1264  | PED          | WALK_GANG2             |        |               |                           |                   |
-| 1265  | PED          | WALK_OLD               |        |               |                           |                   |
-| 1266  | PED          | WALK_PLAYER            |        |               |                           |                   |
-| 1267  | PED          | WALK_ROCKET            |        |               |                           |                   |
-| 1268  | PED          | WALK_SHUFFLE           |        |               |                           |                   |
-| 1269  | PED          | WALK_START             |        |               |                           |                   |
-| 1270  | PED          | WALK_START_ARMED       |        |               |                           |                   |
-| 1271  | PED          | WALK_START_CSAW        |        |               |                           |                   |
-| 1272  | PED          | WALK_START_ROCKET      |        |               |                           |                   |
-| 1273  | PED          | WALK_WUZI              |        |               |                           |                   |
-| 1274  | PED          | WEAPON_CROUCH          |        |               |                           |                   |
-| 1275  | PED          | WOMAN_IDLESTANCE       |        |               |                           |                   |
-| 1276  | PED          | WOMAN_RUN              |        |               |                           |                   |
-| 1277  | PED          | WOMAN_RUNBUSY          |        |               |                           |                   |
-| 1278  | PED          | WOMAN_RUNFATOLD        |        |               |                           |                   |
-| 1279  | PED          | WOMAN_RUNPANIC         |        |               |                           |                   |
-| 1280  | PED          | WOMAN_RUNSEXY          |        |               |                           |                   |
-| 1281  | PED          | WOMAN_WALKBUSY         |        |               |                           |                   |
-| 1282  | PED          | WOMAN_WALKFATOLD       |        |               |                           |                   |
-| 1283  | PED          | WOMAN_WALKNORM         |        |               |                           |                   |
-| 1284  | PED          | WOMAN_WALKOLD          |        |               |                           |                   |
-| 1285  | PED          | WOMAN_WALKPRO          |        |               |                           |                   |
-| 1286  | PED          | WOMAN_WALKSEXY         |        |               |                           |                   |
-| 1287  | PED          | WOMAN_WALKSHOP         |        |               |                           |                   |
-| 1288  | PED          | XPRESSSCRATCH          |        |               |                           |                   |
-| 1289  | PLAYER_DVBYS | PLYR_DRIVEBYBWD        |        |               |                           |                   |
-| 1290  | PLAYER_DVBYS | PLYR_DRIVEBYFWD        |        |               |                           |                   |
-| 1291  | PLAYER_DVBYS | PLYR_DRIVEBYLHS        |        |               |                           |                   |
-| 1292  | PLAYER_DVBYS | PLYR_DRIVEBYRHS        |        |               |                           |                   |
-| 1293  | PLAYIDLES    | SHIFT                  |        |               |                           |                   |
-| 1294  | PLAYIDLES    | SHLDR                  |        |               |                           |                   |
-| 1295  | PLAYIDLES    | STRETCH                |        |               |                           |                   |
-| 1296  | PLAYIDLES    | STRLEG                 |        |               |                           |                   |
-| 1297  | PLAYIDLES    | TIME                   |        |               |                           |                   |
-| 1298  | POLICE       | COPTRAF_AWAY           |        |               |                           |                   |
-| 1299  | POLICE       | COPTRAF_COME           |        |               |                           |                   |
-| 1300  | POLICE       | COPTRAF_LEFT           |        |               |                           |                   |
-| 1301  | POLICE       | COPTRAF_STOP           |        |               |                           |                   |
-| 1302  | POLICE       | COP_GETOUTCAR_LHS      |        |               |                           |                   |
-| 1303  | POLICE       | COP_MOVE_FWD           |        |               |                           |                   |
-| 1304  | POLICE       | CRM_DRGBST_01          |        |               |                           |                   |
-| 1305  | POLICE       | DOOR_KICK              |        |               |                           |                   |
-| 1306  | POLICE       | PLC_DRGBST_01          |        |               |                           |                   |
-| 1307  | POLICE       | PLC_DRGBST_02          |        |               |                           |                   |
-| 1308  | POOL         | POOL_CHALKCUE          |        |               |                           |                   |
-| 1309  | POOL         | POOL_IDLE_STANCE       |        |               |                           |                   |
-| 1310  | POOL         | POOL_LONG_SHOT         |        |               |                           |                   |
-| 1311  | POOL         | POOL_LONG_SHOT_O       |        |               |                           |                   |
-| 1312  | POOL         | POOL_LONG_START        |        |               |                           |                   |
-| 1313  | POOL         | POOL_LONG_START_O      |        |               |                           |                   |
-| 1314  | POOL         | POOL_MED_SHOT          |        |               |                           |                   |
-| 1315  | POOL         | POOL_MED_SHOT_O        |        |               |                           |                   |
-| 1316  | POOL         | POOL_MED_START         |        |               |                           |                   |
-| 1317  | POOL         | POOL_MED_START_O       |        |               |                           |                   |
-| 1318  | POOL         | POOL_PLACE_WHITE       |        |               |                           |                   |
-| 1319  | POOL         | POOL_SHORT_SHOT        |        |               |                           |                   |
-| 1320  | POOL         | POOL_SHORT_SHOT_O      |        |               |                           |                   |
-| 1321  | POOL         | POOL_SHORT_START       |        |               |                           |                   |
-| 1322  | POOL         | POOL_SHORT_START_O     |        |               |                           |                   |
-| 1323  | POOL         | POOL_WALK              |        |               |                           |                   |
-| 1324  | POOL         | POOL_WALK_START        |        |               |                           |                   |
-| 1325  | POOL         | POOL_XLONG_SHOT        |        |               |                           |                   |
-| 1326  | POOL         | POOL_XLONG_SHOT_O      |        |               |                           |                   |
-| 1327  | POOL         | POOL_XLONG_START       |        |               |                           |                   |
-| 1328  | POOL         | POOL_XLONG_START_O     |        |               |                           |                   |
-| 1329  | POOR         | WINWASH_START          |        |               |                           |                   |
-| 1330  | POOR         | WINWASH_WASH2BEG       |        |               |                           |                   |
-| 1331  | PYTHON       | PYTHON_CROUCHFIRE      |        |               |                           |                   |
-| 1332  | PYTHON       | PYTHON_CROUCHRELOAD    |        |               |                           |                   |
-| 1333  | PYTHON       | PYTHON_FIRE            |        |               |                           |                   |
-| 1334  | PYTHON       | PYTHON_FIRE_POOR       |        |               |                           |                   |
-| 1335  | PYTHON       | PYTHON_RELOAD          |        |               |                           |                   |
-| 1337  | QUAD         | QUAD_DRIVEBY_FT        |        |               |                           |                   |
-| 1338  | QUAD         | QUAD_DRIVEBY_LHS       |        |               |                           |                   |
-| 1339  | QUAD         | QUAD_DRIVEBY_RHS       |        |               |                           |                   |
-| 1340  | QUAD         | QUAD_FWD               |        |               |                           |                   |
-| 1341  | QUAD         | QUAD_GETOFF_B          |        |               |                           |                   |
-| 1342  | QUAD         | QUAD_GETOFF_LHS        |        |               |                           |                   |
-| 1343  | QUAD         | QUAD_GETOFF_RHS        |        |               |                           |                   |
-| 1344  | QUAD         | QUAD_GETON_LHS         |        |               |                           |                   |
-| 1345  | QUAD         | QUAD_GETON_RHS         |        |               |                           |                   |
-| 1347  | QUAD         | QUAD_KICK              |        |               |                           |                   |
-| 1350  | QUAD         | QUAD_REVERSE           |        |               |                           |                   |
-| 1353  | QUAD_DBZ     | PASS_DRIVEBY_BWD       |        |               |                           |                   |
-| 1354  | QUAD_DBZ     | PASS_DRIVEBY_FWD       |        |               |                           |                   |
-| 1355  | QUAD_DBZ     | PASS_DRIVEBY_LHS       |        |               |                           |                   |
-| 1356  | QUAD_DBZ     | PASS_DRIVEBY_RHS       |        |               |                           |                   |
-| 1357  | RAPPING      | LAUGH_01               |        |               |                           |                   |
-| 1358  | RAPPING      | RAP_A_IN               |        |               |                           |                   |
-| 1359  | RAPPING      | RAP_A_LOOP             |        |               |                           |                   |
-| 1360  | RAPPING      | RAP_A_OUT              |        |               |                           |                   |
-| 1361  | RAPPING      | RAP_B_IN               |        |               |                           |                   |
-| 1362  | RAPPING      | RAP_B_LOOP             |        |               |                           |                   |
-| 1363  | RAPPING      | RAP_B_OUT              |        |               |                           |                   |
-| 1364  | RAPPING      | RAP_C_LOOP             |        |               |                           |                   |
-| 1365  | RIFLE        | RIFLE_CROUCHFIRE       |        |               |                           |                   |
-| 1366  | RIFLE        | RIFLE_CROUCHLOAD       |        |               |                           |                   |
-| 1367  | RIFLE        | RIFLE_FIRE             |        |               |                           |                   |
-| 1368  | RIFLE        | RIFLE_FIRE_POOR        |        |               |                           |                   |
-| 1369  | RIFLE        | RIFLE_LOAD             |        |               |                           |                   |
-| 1370  | RIOT         | RIOT_ANGRY             |        |               |                           |                   |
-| 1371  | RIOT         | RIOT_ANGRY_B           |        |               |                           |                   |
-| 1372  | RIOT         | RIOT_CHALLENGE         |        |               |                           |                   |
-| 1373  | RIOT         | RIOT_CHANT             |        |               |                           |                   |
-| 1374  | RIOT         | RIOT_FUKU              |        |               |                           |                   |
-| 1375  | RIOT         | RIOT_PUNCHES           |        |               |                           |                   |
-| 1376  | RIOT         | RIOT_SHOUT             |        |               |                           |                   |
-| 1377  | ROB_BANK     | CAT_SAFE_END           |        |               |                           |                   |
-| 1378  | ROB_BANK     | CAT_SAFE_OPEN          |        |               |                           |                   |
-| 1379  | ROB_BANK     | CAT_SAFE_OPEN_O        |        |               |                           |                   |
-| 1380  | ROB_BANK     | CAT_SAFE_ROB           |        |               |                           |                   |
-| 1381  | ROB_BANK     | SHP_HANDSUP_SCR        |        |               |                           |                   |
-| 1382  | ROCKET       | IDLE_ROCKET            |        |               |                           |                   |
-| 1383  | ROCKET       | ROCKETFIRE             |        |               |                           |                   |
-| 1384  | ROCKET       | RUN_ROCKET             |        |               |                           |                   |
-| 1385  | ROCKET       | WALK_ROCKET            |        |               |                           |                   |
-| 1386  | ROCKET       | WALK_START_ROCKET      |        |               |                           |                   |
-| 1387  | RUSTLER      | PLANE_ALIGN_LHS        |        |               |                           |                   |
-| 1388  | RUSTLER      | PLANE_CLOSE            |        |               |                           |                   |
-| 1389  | RUSTLER      | PLANE_GETIN            |        |               |                           |                   |
-| 1390  | RUSTLER      | PLANE_GETOUT           |        |               |                           |                   |
-| 1391  | RUSTLER      | PLANE_OPEN             |        |               |                           |                   |
-| 1392  | RYDER        | RYD_BECKON_01          |        |               |                           |                   |
-| 1393  | RYDER        | RYD_BECKON_02          |        |               |                           |                   |
-| 1394  | RYDER        | RYD_BECKON_03          |        |               |                           |                   |
-| 1395  | RYDER        | RYD_DIE_PT1            |        |               |                           |                   |
-| 1396  | RYDER        | RYD_DIE_PT2            |        |               |                           |                   |
-| 1397  | RYDER        | VAN_CRATE_L            |        |               |                           |                   |
-| 1398  | RYDER        | VAN_CRATE_R            |        |               |                           |                   |
-| 1399  | RYDER        | VAN_FALL_L             |        |               |                           |                   |
-| 1400  | RYDER        | VAN_FALL_R             |        |               |                           |                   |
-| 1401  | RYDER        | VAN_LEAN_L             |        |               |                           |                   |
-| 1402  | RYDER        | VAN_LEAN_R             |        |               |                           |                   |
-| 1403  | RYDER        | VAN_PICKUP_E           |        |               |                           |                   |
-| 1404  | RYDER        | VAN_PICKUP_S           |        |               |                           |                   |
-| 1405  | RYDER        | VAN_STAND              |        |               |                           |                   |
-| 1406  | RYDER        | VAN_STAND_CRATE        |        |               |                           |                   |
-| 1407  | RYDER        | VAN_THROW              |        |               |                           |                   |
-| 1408  | SCRATCHING   | SCDLDLP                |        |               |                           |                   |
-| 1409  | SCRATCHING   | SCDLULP                |        |               |                           |                   |
-| 1410  | SCRATCHING   | SCDRDLP                |        |               |                           |                   |
-| 1411  | SCRATCHING   | SCDRULP                |        |               |                           |                   |
-| 1412  | SCRATCHING   | SCLNG_L                |        |               |                           |                   |
-| 1413  | SCRATCHING   | SCLNG_R                |        |               |                           |                   |
-| 1414  | SCRATCHING   | SCMID_L                |        |               |                           |                   |
-| 1415  | SCRATCHING   | SCMID_R                |        |               |                           |                   |
-| 1416  | SCRATCHING   | SCSHRTL                |        |               |                           |                   |
-| 1417  | SCRATCHING   | SCSHRTR                |        |               |                           |                   |
-| 1418  | SCRATCHING   | SC_LTOR                |        |               |                           |                   |
-| 1419  | SCRATCHING   | SC_RTOL                |        |               |                           |                   |
-| 1420  | SHAMAL       | SHAMAL_ALIGN           |        |               |                           |                   |
-| 1421  | SHAMAL       | SHAMAL_GETIN_LHS       |        |               |                           |                   |
-| 1422  | SHAMAL       | SHAMAL_GETOUT_LHS      |        |               |                           |                   |
-| 1423  | SHAMAL       | SHAMAL_OPEN            |        |               |                           |                   |
-| 1424  | SHOP         | ROB_2IDLE              |        |               |                           |                   |
-| 1425  | SHOP         | ROB_LOOP               |        |               |                           |                   |
-| 1426  | SHOP         | ROB_LOOP_THREAT        |        |               |                           |                   |
-| 1427  | SHOP         | ROB_SHIFTY             |        |               |                           |                   |
-| 1428  | SHOP         | ROB_STICKUP_IN         |        |               |                           |                   |
-| 1429  | SHOP         | SHP_DUCK               |        |               |                           |                   |
-| 1430  | SHOP         | SHP_DUCK_AIM           |        |               |                           |                   |
-| 1431  | SHOP         | SHP_DUCK_FIRE          |        |               |                           |                   |
-| 1432  | SHOP         | SHP_GUN_AIM            |        |               |                           |                   |
-| 1433  | SHOP         | SHP_GUN_DUCK           |        |               |                           |                   |
-| 1434  | SHOP         | SHP_GUN_FIRE           |        |               |                           |                   |
-| 1435  | SHOP         | SHP_GUN_GRAB           |        |               |                           |                   |
-| 1436  | SHOP         | SHP_GUN_THREAT         |        |               |                           |                   |
-| 1437  | SHOP         | SHP_HANDSUP_SCR        |        |               |                           |                   |
-| 1438  | SHOP         | SHP_JUMP_GLIDE         |        |               |                           |                   |
-| 1439  | SHOP         | SHP_JUMP_LAND          |        |               |                           |                   |
-| 1440  | SHOP         | SHP_JUMP_LAUNCH        |        |               |                           |                   |
-| 1441  | SHOP         | SHP_ROB_GIVECASH       |        |               |                           |                   |
-| 1442  | SHOP         | SHP_ROB_HANDSUP        |        |               |                           |                   |
-| 1443  | SHOP         | SHP_ROB_REACT          |        |               |                           |                   |
-| 1444  | SHOP         | SHP_SERVE_END          |        |               |                           |                   |
-| 1445  | SHOP         | SHP_SERVE_IDLE         |        |               |                           |                   |
-| 1446  | SHOP         | SHP_SERVE_LOOP         |        |               |                           |                   |
-| 1447  | SHOP         | SHP_SERVE_START        |        |               |                           |                   |
-| 1448  | SHOP         | SMOKE_RYD              |        |               |                           |                   |
-| 1449  | SHOTGUN      | SHOTGUN_CROUCHFIRE     |        |               |                           |                   |
-| 1450  | SHOTGUN      | SHOTGUN_FIRE           |        |               |                           |                   |
-| 1451  | SHOTGUN      | SHOTGUN_FIRE_POOR      |        |               |                           |                   |
-| 1452  | SILENCED     | CROUCHRELOAD           |        |               |                           |                   |
-| 1453  | SILENCED     | SILENCECROUCHFIRE      |        |               |                           |                   |
-| 1454  | SILENCED     | SILENCE_FIRE           |        |               |                           |                   |
-| 1455  | SILENCED     | SILENCE_RELOAD         |        |               |                           |                   |
-| 1456  | SKATE        | SKATE_IDLE             |        |               |                           |                   |
-| 1457  | SKATE        | SKATE_RUN              |        |               |                           |                   |
-| 1458  | SKATE        | SKATE_SPRINT           |        |               |                           |                   |
-| 1459  | SMOKING      | F_SMKLEAN_LOOP         |        |               |                           |                   |
-| 1460  | SMOKING      | M_SMKLEAN_LOOP         |        |               |                           |                   |
-| 1461  | SMOKING      | M_SMKSTND_LOOP         |        |               |                           |                   |
-| 1462  | SMOKING      | M_SMK_DRAG             |        |               |                           |                   |
-| 1463  | SMOKING      | M_SMK_IN               |        |               |                           |                   |
-| 1464  | SMOKING      | M_SMK_LOOP             |        |               |                           |                   |
-| 1465  | SMOKING      | M_SMK_OUT              |        |               |                           |                   |
-| 1466  | SMOKING      | M_SMK_TAP              |        |               |                           |                   |
-| 1467  | SNIPER       | WEAPON_SNIPER          |        |               |                           |                   |
-| 1468  | SPRAYCAN     | SPRAYCAN_FIRE          |        |               |                           |                   |
-| 1469  | SPRAYCAN     | SPRAYCAN_FULL          |        |               |                           |                   |
-| 1470  | STRIP        | PLY_CASH               |        |               |                           |                   |
-| 1471  | STRIP        | PUN_CASH               |        |               |                           |                   |
-| 1472  | STRIP        | PUN_HOLLER             |        |               |                           |                   |
-| 1473  | STRIP        | PUN_LOOP               |        |               |                           |                   |
-| 1474  | STRIP        | STRIP_A                |        |               |                           |                   |
-| 1475  | STRIP        | STRIP_B                |        |               |                           |                   |
-| 1476  | STRIP        | STRIP_C                |        |               |                           |                   |
-| 1477  | STRIP        | STRIP_D                |        |               |                           |                   |
-| 1478  | STRIP        | STRIP_E                |        |               |                           |                   |
-| 1479  | STRIP        | STRIP_F                |        |               |                           |                   |
-| 1480  | STRIP        | STRIP_G                |        |               |                           |                   |
-| 1481  | STRIP        | STR_A2B                |        |               |                           |                   |
-| 1482  | STRIP        | STR_B2A                |        |               |                           |                   |
-| 1483  | STRIP        | STR_B2C                |        |               |                           |                   |
-| 1484  | STRIP        | STR_C1                 |        |               |                           |                   |
-| 1485  | STRIP        | STR_C2                 |        |               |                           |                   |
-| 1486  | STRIP        | STR_C2B                |        |               |                           |                   |
-| 1487  | STRIP        | STR_LOOP_A             |        |               |                           |                   |
-| 1488  | STRIP        | STR_LOOP_B             |        |               |                           |                   |
-| 1489  | STRIP        | STR_LOOP_C             |        |               |                           |                   |
-| 1490  | SUNBATHE     | BATHERDOWN             |        |               |                           |                   |
-| 1491  | SUNBATHE     | BATHERUP               |        |               |                           |                   |
-| 1492  | SUNBATHE     | LAY_BAC_IN             |        |               |                           |                   |
-| 1493  | SUNBATHE     | LAY_BAC_OUT            |        |               |                           |                   |
-| 1494  | SUNBATHE     | PARKSIT_M_IDLEA        |        |               |                           |                   |
-| 1495  | SUNBATHE     | PARKSIT_M_IDLEB        |        |               |                           |                   |
-| 1496  | SUNBATHE     | PARKSIT_M_IDLEC        |        |               |                           |                   |
-| 1497  | SUNBATHE     | PARKSIT_M_IN           |        |               |                           |                   |
-| 1498  | SUNBATHE     | PARKSIT_M_OUT          |        |               |                           |                   |
-| 1499  | SUNBATHE     | PARKSIT_W_IDLEA        |        |               |                           |                   |
-| 1500  | SUNBATHE     | PARKSIT_W_IDLEB        |        |               |                           |                   |
-| 1501  | SUNBATHE     | PARKSIT_W_IDLEC        |        |               |                           |                   |
-| 1502  | SUNBATHE     | PARKSIT_W_IN           |        |               |                           |                   |
-| 1503  | SUNBATHE     | PARKSIT_W_OUT          |        |               |                           |                   |
-| 1504  | SUNBATHE     | SBATHE_F_LIEB2SIT      |        |               |                           |                   |
-| 1505  | SUNBATHE     | SBATHE_F_OUT           |        |               |                           |                   |
-| 1506  | SUNBATHE     | SITNWAIT_IN_W          |        |               |                           |                   |
-| 1507  | SUNBATHE     | SITNWAIT_OUT_W         |        |               |                           |                   |
-| 1508  | SWAT         | GNSTWALL_INJURD        |        |               |                           |                   |
-| 1509  | SWAT         | JMP_WALL1M_180         |        |               |                           |                   |
-| 1510  | SWAT         | RAIL_FALL              |        |               |                           |                   |
-| 1511  | SWAT         | RAIL_FALL_CRAWL        |        |               |                           |                   |
-| 1512  | SWAT         | SWT_BREACH_01          |        |               |                           |                   |
-| 1513  | SWAT         | SWT_BREACH_02          |        |               |                           |                   |
-| 1514  | SWAT         | SWT_BREACH_03          |        |               |                           |                   |
-| 1515  | SWAT         | SWT_GO                 |        |               |                           |                   |
-| 1516  | SWAT         | SWT_LKT                |        |               |                           |                   |
-| 1517  | SWAT         | SWT_STY                |        |               |                           |                   |
-| 1518  | SWAT         | SWT_VENT_01            |        |               |                           |                   |
-| 1519  | SWAT         | SWT_VENT_02            |        |               |                           |                   |
-| 1520  | SWAT         | SWT_VNT_SHT_DIE        |        |               |                           |                   |
-| 1521  | SWAT         | SWT_VNT_SHT_IN         |        |               |                           |                   |
-| 1522  | SWAT         | SWT_VNT_SHT_LOOP       |        |               |                           |                   |
-| 1523  | SWAT         | SWT_WLLPK_L            |        |               |                           |                   |
-| 1524  | SWAT         | SWT_WLLPK_L_BACK       |        |               |                           |                   |
-| 1525  | SWAT         | SWT_WLLPK_R            |        |               |                           |                   |
-| 1526  | SWAT         | SWT_WLLPK_R_BACK       |        |               |                           |                   |
-| 1527  | SWAT         | SWT_WLLSHOOT_IN_L      |        |               |                           |                   |
-| 1528  | SWAT         | SWT_WLLSHOOT_IN_R      |        |               |                           |                   |
-| 1529  | SWAT         | SWT_WLLSHOOT_OUT_L     |        |               |                           |                   |
-| 1530  | SWAT         | SWT_WLLSHOOT_OUT_R     |        |               |                           |                   |
-| 1531  | SWEET        | HO_ASS_SLAPPED         |        |               |                           |                   |
-| 1532  | SWEET        | LAFIN_PLAYER           |        |               |                           |                   |
-| 1533  | SWEET        | LAFIN_SWEET            |        |               |                           |                   |
-| 1534  | SWEET        | PLYR_HNDSHLDR_01       |        |               |                           |                   |
-| 1535  | SWEET        | SWEET_ASS_SLAP         |        |               |                           |                   |
-| 1536  | SWEET        | SWEET_HNDSHLDR_01      |        |               |                           |                   |
-| 1537  | SWEET        | SWEET_INJUREDLOOP      |        |               |                           |                   |
-| 1538  | SWIM         | SWIM_BREAST            |        |               |                           |                   |
-| 1539  | SWIM         | SWIM_CRAWL             |        |               |                           |                   |
-| 1540  | SWIM         | SWIM_DIVE_UNDER        |        |               |                           |                   |
-| 1541  | SWIM         | SWIM_GLIDE             |        |               |                           |                   |
-| 1542  | SWIM         | SWIM_JUMPOUT           |        |               |                           |                   |
-| 1543  | SWIM         | SWIM_TREAD             |        |               |                           |                   |
-| 1544  | SWIM         | SWIM_UNDER             |        |               |                           |                   |
-| 1545  | SWORD        | SWORD_1                |        |               |                           |                   |
-| 1546  | SWORD        | SWORD_2                |        |               |                           |                   |
-| 1547  | SWORD        | SWORD_3                |        |               |                           |                   |
-| 1548  | SWORD        | SWORD_4                |        |               |                           |                   |
-| 1549  | SWORD        | SWORD_BLOCK            |        |               |                           |                   |
-| 1550  | SWORD        | SWORD_HIT_1            |        |               |                           |                   |
-| 1551  | SWORD        | SWORD_HIT_2            |        |               |                           |                   |
-| 1552  | SWORD        | SWORD_HIT_3            |        |               |                           |                   |
-| 1553  | SWORD        | SWORD_IDLE             |        |               |                           |                   |
-| 1554  | SWORD        | SWORD_PART             |        |               |                           |                   |
-| 1555  | TANK         | TANK_ALIGN_LHS         |        |               |                           |                   |
-| 1556  | TANK         | TANK_CLOSE_LHS         |        |               |                           |                   |
-| 1557  | TANK         | TANK_DOORLOCKED        |        |               |                           |                   |
-| 1558  | TANK         | TANK_GETIN_LHS         |        |               |                           |                   |
-| 1559  | TANK         | TANK_GETOUT_LHS        |        |               |                           |                   |
-| 1560  | TANK         | TANK_OPEN_LHS          |        |               |                           |                   |
-| 1561  | TATTOOS      | TAT_ARML_IN_O          |        |               |                           |                   |
-| 1562  | TATTOOS      | TAT_ARML_IN_P          |        |               |                           |                   |
-| 1563  | TATTOOS      | TAT_ARML_IN_T          |        |               |                           |                   |
-| 1564  | TATTOOS      | TAT_ARML_OUT_O         |        |               |                           |                   |
-| 1565  | TATTOOS      | TAT_ARML_OUT_P         |        |               |                           |                   |
-| 1566  | TATTOOS      | TAT_ARML_OUT_T         |        |               |                           |                   |
-| 1567  | TATTOOS      | TAT_ARML_POSE_O        |        |               |                           |                   |
-| 1568  | TATTOOS      | TAT_ARML_POSE_P        |        |               |                           |                   |
-| 1569  | TATTOOS      | TAT_ARML_POSE_T        |        |               |                           |                   |
-| 1570  | TATTOOS      | TAT_ARMR_IN_O          |        |               |                           |                   |
-| 1571  | TATTOOS      | TAT_ARMR_IN_P          |        |               |                           |                   |
-| 1572  | TATTOOS      | TAT_ARMR_IN_T          |        |               |                           |                   |
-| 1573  | TATTOOS      | TAT_ARMR_OUT_O         |        |               |                           |                   |
-| 1574  | TATTOOS      | TAT_ARMR_OUT_P         |        |               |                           |                   |
-| 1575  | TATTOOS      | TAT_ARMR_OUT_T         |        |               |                           |                   |
-| 1576  | TATTOOS      | TAT_ARMR_POSE_O        |        |               |                           |                   |
-| 1577  | TATTOOS      | TAT_ARMR_POSE_P        |        |               |                           |                   |
-| 1578  | TATTOOS      | TAT_ARMR_POSE_T        |        |               |                           |                   |
-| 1579  | TATTOOS      | TAT_BACK_IN_O          |        |               |                           |                   |
-| 1580  | TATTOOS      | TAT_BACK_IN_P          |        |               |                           |                   |
-| 1581  | TATTOOS      | TAT_BACK_IN_T          |        |               |                           |                   |
-| 1582  | TATTOOS      | TAT_BACK_OUT_O         |        |               |                           |                   |
-| 1583  | TATTOOS      | TAT_BACK_OUT_P         |        |               |                           |                   |
-| 1584  | TATTOOS      | TAT_BACK_OUT_T         |        |               |                           |                   |
-| 1585  | TATTOOS      | TAT_BACK_POSE_O        |        |               |                           |                   |
-| 1586  | TATTOOS      | TAT_BACK_POSE_P        |        |               |                           |                   |
-| 1587  | TATTOOS      | TAT_BACK_POSE_T        |        |               |                           |                   |
-| 1588  | TATTOOS      | TAT_BACK_SIT_IN_P      |        |               |                           |                   |
-| 1589  | TATTOOS      | TAT_BACK_SIT_LOOP_P    |        |               |                           |                   |
-| 1590  | TATTOOS      | TAT_BACK_SIT_OUT_P     |        |               |                           |                   |
-| 1591  | TATTOOS      | TAT_BEL_IN_O           |        |               |                           |                   |
-| 1592  | TATTOOS      | TAT_BEL_IN_T           |        |               |                           |                   |
-| 1593  | TATTOOS      | TAT_BEL_OUT_O          |        |               |                           |                   |
-| 1594  | TATTOOS      | TAT_BEL_OUT_T          |        |               |                           |                   |
-| 1595  | TATTOOS      | TAT_BEL_POSE_O         |        |               |                           |                   |
-| 1596  | TATTOOS      | TAT_BEL_POSE_T         |        |               |                           |                   |
-| 1597  | TATTOOS      | TAT_CHE_IN_O           |        |               |                           |                   |
-| 1598  | TATTOOS      | TAT_CHE_IN_P           |        |               |                           |                   |
-| 1599  | TATTOOS      | TAT_CHE_IN_T           |        |               |                           |                   |
-| 1600  | TATTOOS      | TAT_CHE_OUT_O          |        |               |                           |                   |
-| 1601  | TATTOOS      | TAT_CHE_OUT_P          |        |               |                           |                   |
-| 1602  | TATTOOS      | TAT_CHE_OUT_T          |        |               |                           |                   |
-| 1603  | TATTOOS      | TAT_CHE_POSE_O         |        |               |                           |                   |
-| 1604  | TATTOOS      | TAT_CHE_POSE_P         |        |               |                           |                   |
-| 1605  | TATTOOS      | TAT_CHE_POSE_T         |        |               |                           |                   |
-| 1606  | TATTOOS      | TAT_DROP_O             |        |               |                           |                   |
-| 1607  | TATTOOS      | TAT_IDLE_LOOP_O        |        |               |                           |                   |
-| 1608  | TATTOOS      | TAT_IDLE_LOOP_T        |        |               |                           |                   |
-| 1609  | TATTOOS      | TAT_SIT_IN_O           |        |               |                           |                   |
-| 1610  | TATTOOS      | TAT_SIT_IN_P           |        |               |                           |                   |
-| 1611  | TATTOOS      | TAT_SIT_IN_T           |        |               |                           |                   |
-| 1612  | TATTOOS      | TAT_SIT_LOOP_O         |        |               |                           |                   |
-| 1613  | TATTOOS      | TAT_SIT_LOOP_P         |        |               |                           |                   |
-| 1614  | TATTOOS      | TAT_SIT_LOOP_T         |        |               |                           |                   |
-| 1615  | TATTOOS      | TAT_SIT_OUT_O          |        |               |                           |                   |
-| 1616  | TATTOOS      | TAT_SIT_OUT_P          |        |               |                           |                   |
-| 1617  | TATTOOS      | TAT_SIT_OUT_T          |        |               |                           |                   |
-| 1618  | TEC          | TEC_CROUCHFIRE         |        |               |                           |                   |
-| 1619  | TEC          | TEC_CROUCHRELOAD       |        |               |                           |                   |
-| 1620  | TEC          | TEC_FIRE               |        |               |                           |                   |
-| 1621  | TEC          | TEC_RELOAD             |        |               |                           |                   |
-| 1622  | TRAIN        | TRAN_GTUP              |        |               |                           |                   |
-| 1623  | TRAIN        | TRAN_HNG               |        |               |                           |                   |
-| 1624  | TRAIN        | TRAN_OUCH              |        |               |                           |                   |
-| 1625  | TRAIN        | TRAN_STMB              |        |               |                           |                   |
-| 1626  | TRUCK        | TRUCK_ALIGN_LHS        |        |               |                           |                   |
-| 1627  | TRUCK        | TRUCK_ALIGN_RHS        |        |               |                           |                   |
-| 1628  | TRUCK        | TRUCK_CLOSEDOOR_LHS    |        |               |                           |                   |
-| 1629  | TRUCK        | TRUCK_CLOSEDOOR_RHS    |        |               |                           |                   |
-| 1630  | TRUCK        | TRUCK_CLOSE_LHS        |        |               |                           |                   |
-| 1631  | TRUCK        | TRUCK_CLOSE_RHS        |        |               |                           |                   |
-| 1632  | TRUCK        | TRUCK_GETIN_LHS        |        |               |                           |                   |
-| 1633  | TRUCK        | TRUCK_GETIN_RHS        |        |               |                           |                   |
-| 1634  | TRUCK        | TRUCK_GETOUT_LHS       |        |               |                           |                   |
-| 1635  | TRUCK        | TRUCK_GETOUT_RHS       |        |               |                           |                   |
-| 1636  | TRUCK        | TRUCK_JACKEDLHS        |        |               |                           |                   |
-| 1637  | TRUCK        | TRUCK_JACKEDRHS        |        |               |                           |                   |
-| 1638  | TRUCK        | TRUCK_OPEN_LHS         |        |               |                           |                   |
-| 1639  | TRUCK        | TRUCK_OPEN_RHS         |        |               |                           |                   |
-| 1640  | TRUCK        | TRUCK_PULLOUT_LHS      |        |               |                           |                   |
-| 1641  | TRUCK        | TRUCK_PULLOUT_RHS      |        |               |                           |                   |
-| 1642  | TRUCK        | TRUCK_SHUFFLE          |        |               |                           |                   |
-| 1643  | UZI          | UZI_CROUCHFIRE         |        |               |                           |                   |
-| 1644  | UZI          | UZI_CROUCHRELOAD       |        |               |                           |                   |
-| 1645  | UZI          | UZI_FIRE               |        |               |                           |                   |
-| 1646  | UZI          | UZI_FIRE_POOR          |        |               |                           |                   |
-| 1647  | UZI          | UZI_RELOAD             |        |               |                           |                   |
-| 1648  | VAN          | VAN_CLOSE_BACK_LHS     |        |               |                           |                   |
-| 1649  | VAN          | VAN_CLOSE_BACK_RHS     |        |               |                           |                   |
-| 1650  | VAN          | VAN_GETIN_BACK_LHS     |        |               |                           |                   |
-| 1651  | VAN          | VAN_GETIN_BACK_RHS     |        |               |                           |                   |
-| 1652  | VAN          | VAN_GETOUT_BACK_LHS    |        |               |                           |                   |
-| 1653  | VAN          | VAN_GETOUT_BACK_RHS    |        |               |                           |                   |
-| 1654  | VAN          | VAN_OPEN_BACK_LHS      |        |               |                           |                   |
-| 1655  | VAN          | VAN_OPEN_BACK_RHS      |        |               |                           |                   |
-| 1656  | VENDING      | VEND_DRINK2_P          |        |               |                           |                   |
-| 1657  | VENDING      | VEND_DRINK_P           |        |               |                           |                   |
-| 1658  | VENDING      | VEND_EAT1_P            |        |               |                           |                   |
-| 1659  | VENDING      | VEND_EAT_P             |        |               |                           |                   |
-| 1660  | VENDING      | VEND_USE               |        |               |                           |                   |
-| 1661  | VENDING      | VEND_USE_PT2           |        |               |                           |                   |
-| 1662  | VORTEX       | CAR_JUMPIN_LHS         |        |               |                           |                   |
-| 1663  | VORTEX       | CAR_JUMPIN_RHS         |        |               |                           |                   |
-| 1664  | VORTEX       | VORTEX_GETOUT_LHS      |        |               |                           |                   |
-| 1665  | VORTEX       | VORTEX_GETOUT_RHS      |        |               |                           |                   |
-| 1667  | WAYFARER     | WF_DRIVEBYFT           |        |               |                           |                   |
-| 1668  | WAYFARER     | WF_DRIVEBYLHS          |        |               |                           |                   |
-| 1669  | WAYFARER     | WF_DRIVEBYRHS          |        |               |                           |                   |
-| 1670  | WAYFARER     | WF_FWD                 |        |               |                           |                   |
-| 1671  | WAYFARER     | WF_GETOFFBACK          |        |               |                           |                   |
-| 1672  | WAYFARER     | WF_GETOFFLHS           |        |               |                           |                   |
-| 1673  | WAYFARER     | WF_GETOFFRHS           |        |               |                           |                   |
-| 1675  | WAYFARER     | WF_JUMPONL             |        |               |                           |                   |
-| 1676  | WAYFARER     | WF_JUMPONR             |        |               |                           |                   |
-| 1677  | WAYFARER     | WF_KICK                |        |               |                           |                   |
-| 1678  | WAYFARER     | WF_LEFT                |        |               |                           |                   |
-| 1680  | WAYFARER     | WF_PUSHES              |        |               |                           |                   |
-| 1684  | WEAPONS      | SHP_1H_LIFT            | 60     | 1.00          |                           |                   |
-| 1685  | WEAPONS      | SHP_1H_LIFT_END        | 20     | 0.33          |                           |                   |
-| 1686  | WEAPONS      | SHP_1H_RET             | 50     | 0.83          |                           |                   |
-| 1687  | WEAPONS      | SHP_1H_RET_S           | 20     | 0.33          |                           |                   |
-| 1688  | WEAPONS      | SHP_2H_LIFT            | 56     | 0.93          |                           |                   |
-| 1689  | WEAPONS      | SHP_2H_LIFT_END        | 20     | 0.33          |                           |                   |
-| 1690  | WEAPONS      | SHP_2H_RET             | 54     | 0.90          |                           |                   |
-| 1691  | WEAPONS      | SHP_2H_RET_S           | 20     | 0.33          |                           |                   |
-| 1692  | WEAPONS      | SHP_AR_LIFT            | 60     | 1.00          |                           |                   |
-| 1693  | WEAPONS      | SHP_AR_LIFT_END        | 20     | 0.33          |                           |                   |
-| 1694  | WEAPONS      | SHP_AR_RET             | 70     | 1.17          |                           |                   |
-| 1695  | WEAPONS      | SHP_AR_RET_S           | 20     | 0.33          |                           |                   |
-| 1696  | WEAPONS      | SHP_G_LIFT_IN          | 40     | 0.67          |                           |                   |
-| 1697  | WEAPONS      | SHP_G_LIFT_OUT         | 40     | 0.67          |                           |                   |
-| 1698  | WEAPONS      | SHP_TRAY_IN            | 40     | 0.67          |                           |                   |
-| 1699  | WEAPONS      | SHP_TRAY_OUT           | 40     | 0.67          |                           |                   |
-| 1700  | WEAPONS      | SHP_TRAY_POSE          | 100    | 2.67          |                           |                   |
-| 1701  | WUZI         | CS_DEAD_GUY            | 304    | 5.07          |                           |                   |
-| 1702  | WUZI         | CS_PLYR_PT1            | 226    | 3.77          |                           |                   |
-| 1703  | WUZI         | CS_PLYR_PT2            | 580    | 9.67          |                           |                   |
-| 1704  | WUZI         | CS_WUZI_PT1            | 226    | 3.77          |                           |                   |
-| 1705  | WUZI         | CS_WUZI_PT2            | 580    | 9.67          |                           |                   |
-| 1706  | WUZI         | WALKSTART_IDLE_01      | 190    | 3.17          |                           |                   |
-| 1707  | WUZI         | WUZI_FOLLOW            | 180    | 3.00          |                           |                   |
-| 1708  | WUZI         | WUZI_GREET_PLYR        | 240    | 4.00          |                           |                   |
-| 1709  | WUZI         | WUZI_GREET_WUZI        | 240    | 4.00          |                           |                   |
-| 1710  | WUZI         | WUZI_GRND_CHK          | 240    | 4.00          |                           |                   |
-| 1711  | WUZI         | WUZI_STAND_LOOP        | 160    | 2.67          |                           |                   |
-| 1712  | WUZI         | WUZI_WALK              | 70     | 1.17          |                           |                   |
-| 1713  | WOP          | DANCE_G1               | 68     | 1.13          |                           |                   |
-| 1714  | WOP          | DANCE_G2               | 70     | 1.17          |                           |                   |
-| 1715  | WOP          | DANCE_G3               | 68     | 1.13          |                           |                   |
-| 1716  | WOP          | DANCE_G4               | 70     | 1.17          |                           |                   |
-| 1717  | WOP          | DANCE_G5               | 68     | 1.13          |                           |                   |
-| 1718  | WOP          | DANCE_G6               | 70     | 1.17          |                           |                   |
-| 1719  | WOP          | DANCE_G7               | 68     | 1.13          |                           |                   |
-| 1720  | WOP          | DANCE_G8               | 70     | 1.17          |                           |                   |
-| 1721  | WOP          | DANCE_G9               | 68     | 1.13          |                           |                   |
-| 1722  | WOP          | DANCE_G10              | 70     | 1.17          |                           |                   |
-| 1723  | WOP          | DANCE_G11              | 68     | 1.13          |                           |                   |
-| 1724  | WOP          | DANCE_G12              | 70     | 1.17          |                           |                   |
-| 1725  | WOP          | DANCE_G13              | 68     | 1.13          |                           |                   |
-| 1726  | WOP          | DANCE_G14              | 70     | 1.17          |                           |                   |
-| 1727  | WOP          | DANCE_G15              | 68     | 1.13          |                           |                   |
-| 1728  | WOP          | DANCE_G16              | 70     | 1.17          |                           |                   |
-| 1729  | WOP          | DANCE_B1               | 68     | 1.13          |                           |                   |
-| 1730  | WOP          | DANCE_B2               | 70     | 1.17          |                           |                   |
-| 1731  | WOP          | DANCE_B3               | 70     | 1.13          |                           |                   |
-| 1732  | WOP          | DANCE_B4               | 70     | 1.17          |                           |                   |
-| 1733  | WOP          | DANCE_B5               | 68     | 1.13          |                           |                   |
-| 1734  | WOP          | DANCE_B6               | 70     | 1.17          |                           |                   |
-| 1735  | WOP          | DANCE_B7               | 68     | 1.13          |                           |                   |
-| 1736  | WOP          | DANCE_B8               | 70     | 1.17          |                           |                   |
-| 1737  | WOP          | DANCE_B9               | 68     | 1.13          |                           |                   |
-| 1738  | WOP          | DANCE_B10              | 70     | 1.17          |                           |                   |
-| 1739  | WOP          | DANCE_B11              | 68     | 1.13          |                           |                   |
-| 1740  | WOP          | DANCE_B12              | 70     | 1.17          |                           |                   |
-| 1741  | WOP          | DANCE_B13              | 68     | 1.13          |                           |                   |
-| 1742  | WOP          | DANCE_B14              | 70     | 1.17          |                           |                   |
-| 1743  | WOP          | DANCE_B15              | 68     | 1.13          |                           |                   |
-| 1744  | WOP          | DANCE_B16              | 70     | 1.17          |                           |                   |
-| 1745  | WOP          | DANCE_LOOP             | 70     | 1.17          |                           |                   |
-| 1746  | GFUNK        | DANCE_G1               | 76     | 1.27          |                           |                   |
-| 1747  | GFUNK        | DANCE_G2               | 76     | 1.27          |                           |                   |
-| 1748  | GFUNK        | DANCE_G3               | 76     | 1.27          |                           |                   |
-| 1749  | GFUNK        | DANCE_G4               | 76     | 1.27          |                           |                   |
-| 1750  | GFUNK        | DANCE_G5               | 76     | 1.27          |                           |                   |
-| 1751  | GFUNK        | DANCE_G6               | 76     | 1.27          |                           |                   |
-| 1752  | GFUNK        | DANCE_G7               | 76     | 1.27          |                           |                   |
-| 1753  | GFUNK        | DANCE_G8               | 76     | 1.27          |                           |                   |
-| 1754  | GFUNK        | DANCE_G9               | 76     | 1.27          |                           |                   |
-| 1755  | GFUNK        | DANCE_G10              | 76     | 1.27          |                           |                   |
-| 1756  | GFUNK        | DANCE_G11              | 76     | 1.27          |                           |                   |
-| 1757  | GFUNK        | DANCE_G12              | 76     | 1.27          |                           |                   |
-| 1758  | GFUNK        | DANCE_G13              | 76     | 1.27          |                           |                   |
-| 1759  | GFUNK        | DANCE_G14              | 76     | 1.27          |                           |                   |
-| 1760  | GFUNK        | DANCE_G15              | 76     | 1.27          |                           |                   |
-| 1761  | GFUNK        | DANCE_G16              | 76     | 1.27          |                           |                   |
-| 1762  | GFUNK        | DANCE_B1               | 76     | 1.27          |                           |                   |
-| 1763  | GFUNK        | DANCE_B2               | 76     | 1.27          |                           |                   |
-| 1764  | GFUNK        | DANCE_B3               | 76     | 1.27          |                           |                   |
-| 1765  | GFUNK        | DANCE_B4               | 76     | 1.27          |                           |                   |
-| 1766  | GFUNK        | DANCE_B5               | 76     | 1.27          |                           |                   |
-| 1767  | GFUNK        | DANCE_B6               | 76     | 1.27          |                           |                   |
-| 1768  | GFUNK        | DANCE_B7               | 76     | 1.27          |                           |                   |
-| 1769  | GFUNK        | DANCE_B8               | 76     | 1.27          |                           |                   |
-| 1770  | GFUNK        | DANCE_B9               | 76     | 1.27          |                           |                   |
-| 1771  | GFUNK        | DANCE_B10              | 76     | 1.27          |                           |                   |
-| 1772  | GFUNK        | DANCE_B11              | 76     | 1.27          |                           |                   |
-| 1773  | GFUNK        | DANCE_B12              | 76     | 1.27          |                           |                   |
-| 1774  | GFUNK        | DANCE_B13              | 76     | 1.27          |                           |                   |
-| 1775  | GFUNK        | DANCE_B14              | 76     | 1.27          |                           |                   |
-| 1776  | GFUNK        | DANCE_B15              | 76     | 1.27          |                           |                   |
-| 1777  | GFUNK        | DANCE_B16              | 76     | 1.27          |                           |                   |
-| 1778  | GFUNK        | DANCE_LOOP             | 70     | 1.17          |                           |                   |
-| 1779  | RUNNINGMAN   | DANCE_G1               | 32     | 0.53          |                           |                   |
-| 1780  | RUNNINGMAN   | DANCE_G2               | 34     | 0.57          |                           |                   |
-| 1781  | RUNNINGMAN   | DANCE_G3               | 32     | 0.53          |                           |                   |
-| 1782  | RUNNINGMAN   | DANCE_G4               | 34     | 0.57          |                           |                   |
-| 1783  | RUNNINGMAN   | DANCE_G5               | 32     | 0.53          |                           |                   |
-| 1784  | RUNNINGMAN   | DANCE_G6               | 34     | 0.57          |                           |                   |
-| 1785  | RUNNINGMAN   | DANCE_G7               | 32     | 0.53          |                           |                   |
-| 1786  | RUNNINGMAN   | DANCE_G8               | 34     | 0.57          |                           |                   |
-| 1787  | RUNNINGMAN   | DANCE_G9               | 32     | 0.53          |                           |                   |
-| 1788  | RUNNINGMAN   | DANCE_G10              | 34     | 0.57          |                           |                   |
-| 1789  | RUNNINGMAN   | DANCE_G11              | 32     | 0.53          |                           |                   |
-| 1790  | RUNNINGMAN   | DANCE_G12              | 34     | 0.57          |                           |                   |
-| 1791  | RUNNINGMAN   | DANCE_G13              | 32     | 0.53          |                           |                   |
-| 1792  | RUNNINGMAN   | DANCE_G14              | 34     | 0.57          |                           |                   |
-| 1793  | RUNNINGMAN   | DANCE_G15              | 32     | 0.53          |                           |                   |
-| 1794  | RUNNINGMAN   | DANCE_G16              | 34     | 0.57          |                           |                   |
-| 1795  | RUNNINGMAN   | DANCE_B1               | 32     | 0.53          |                           |                   |
-| 1796  | RUNNINGMAN   | DANCE_B2               | 34     | 0.57          |                           |                   |
-| 1797  | RUNNINGMAN   | DANCE_B3               | 32     | 0.53          |                           |                   |
-| 1798  | RUNNINGMAN   | DANCE_B4               | 34     | 0.57          |                           |                   |
-| 1799  | RUNNINGMAN   | DANCE_B5               | 32     | 0.53          |                           |                   |
-| 1800  | RUNNINGMAN   | DANCE_B6               | 34     | 0.57          |                           |                   |
-| 1801  | RUNNINGMAN   | DANCE_B7               | 32     | 0.53          |                           |                   |
-| 1802  | RUNNINGMAN   | DANCE_B8               | 34     | 0.57          |                           |                   |
-| 1803  | RUNNINGMAN   | DANCE_B9               | 32     | 0.53          |                           |                   |
-| 1804  | RUNNINGMAN   | DANCE_B10              | 34     | 0.57          |                           |                   |
-| 1805  | RUNNINGMAN   | DANCE_B11              | 32     | 0.53          |                           |                   |
-| 1806  | RUNNINGMAN   | DANCE_B12              | 34     | 0.57          |                           |                   |
-| 1807  | RUNNINGMAN   | DANCE_B13              | 32     | 0.53          |                           |                   |
-| 1808  | RUNNINGMAN   | DANCE_B14              | 34     | 0.57          |                           |                   |
-| 1809  | RUNNINGMAN   | DANCE_B15              | 32     | 0.53          |                           |                   |
-| 1810  | RUNNINGMAN   | DANCE_B16              | 34     | 0.57          |                           |                   |
-| 1811  | RUNNINGMAN   | DANCE_LOOP             | 70     | 1.17          |                           |                   |
-| 1812  | SAMP         | FishingIdle            | 2      | 0.03          | Adicionado na SA-MP 0.3.7 | \_                |
+| 1     | AIRPORT      | thrw_barl_thrw         | 120    | 2.00          |                           |                   |
+| 2     | Attractors   | Stepsit_in             | 100    | 1.67          |                           |                   |
+| 3     | Attractors   | Stepsit_loop           | 200    | 3.33          |                           |                   |
+| 4     | Attractors   | Stepsit_out            | 100    | 1.67          |                           |                   |
+| 5     | BAR          | Barcustom_get          | 180    | 3.00          |                           |                   |
+| 6     | BAR          | Barcustom_loop         | 120    | 2.00          |                           |                   |
+| 7     | BAR          | Barcustom_order        | 220    | 3.67          |                           |                   |
+| 8     | BAR          | BARman_idle            | 500    | 8.33          |                           |                   |
+| 9     | BAR          | Barserve_bottle        | 180    | 3.00          |                           |                   |
+| 10    | BAR          | Barserve_give          | 140    | 2.33          |                           |                   |
+| 11    | BAR          | Barserve_glass         | 220    | 3.67          |                           |                   |
+| 12    | BAR          | Barserve_in            | 100    | 1.67          |                           |                   |
+| 13    | BAR          | Barserve_loop          | 140    | 2.33          |                           |                   |
+| 14    | BAR          | Barserve_order         | 220    | 3.67          |                           |                   |
+| 15    | BAR          | dnk_stndF_loop         | 140    | 2.33          |                           |                   |
+| 16    | BAR          | dnk_stndM_loop         | 140    | 2.33          |                           |                   |
+| 17    | BASEBALL     | Bat_1                  | 54     | 0.90          |                           |                   |
+| 18    | BASEBALL     | Bat_2                  | 68     | 1.13          |                           |                   |
+| 19    | BASEBALL     | Bat_3                  | 72     | 1.20          |                           |                   |
+| 20    | BASEBALL     | Bat_4                  | 60     | 1.00          |                           |                   |
+| 21    | BASEBALL     | Bat_block              | 28     | 0.47          |                           |                   |
+| 22    | BASEBALL     | Bat_Hit_1              | 50     | 0.83          |                           |                   |
+| 23    | BASEBALL     | Bat_Hit_2              | 64     | 1.07          |                           |                   |
+| 24    | BASEBALL     | Bat_Hit_3              | 68     | 1.13          |                           |                   |
+| 25    | BASEBALL     | Bat_IDLE               | 56     | 0.93          |                           |                   |
+| 26    | BASEBALL     | Bat_M                  | 32     | 0.53          |                           |                   |
+| 27    | BASEBALL     | BAT_PART               | 32     | 0.53          |                           |                   |
+| 28    | BD_FIRE      | BD_Fire1               | 110    | 1.83          |                           |                   |
+| 29    | BD_FIRE      | BD_Fire2               | 100    | 1.67          |                           |                   |
+| 30    | BD_FIRE      | BD_Fire3               | 110    | 1.83          |                           |                   |
+| 31    | BD_FIRE      | BD_GF_Wave             | 304    | 5.07          |                           |                   |
+| 32    | BD_FIRE      | BD_Panic_01            | 200    | 3.33          |                           |                   |
+| 33    | BD_FIRE      | BD_Panic_02            | 200    | 3.33          |                           |                   |
+| 34    | BD_FIRE      | BD_Panic_03            | 200    | 3.33          |                           |                   |
+| 35    | BD_FIRE      | BD_Panic_04            | 200    | 3.33          |                           |                   |
+| 36    | BD_FIRE      | BD_Panic_Loop          | 200    | 3.33          |                           |                   |
+| 37    | BD_FIRE      | Grlfrd_Kiss_03         | 420    | 7.00          |                           |                   |
+| 38    | BD_FIRE      | M_smklean_loop         | 300    | 5.00          |                           |                   |
+| 39    | BD_FIRE      | Playa_Kiss_03          | 420    | 7.00          |                           |                   |
+| 40    | BD_FIRE      | wash_up                | 180    | 3.00          |                           |                   |
+| 41    | BEACH        | bather                 | 252    | 4.20          |                           |                   |
+| 42    | BEACH        | Lay_Bac_Loop           | 160    | 2.67          |                           |                   |
+| 43    | BEACH        | ParkSit_M_loop         | 220    | 3.67          |                           |                   |
+| 44    | BEACH        | ParkSit_W_loop         | 200    | 3.33          |                           |                   |
+| 45    | BEACH        | SitnWait_loop_W        | 80     | 1.33          |                           |                   |
+| 46    | benchpress   | gym_bp_celebrate       | 300    | 5.00          |                           |                   |
+| 47    | benchpress   | gym_bp_down            | 60     | 1.00          |                           |                   |
+| 48    | benchpress   | gym_bp_getoff          | 520    | 8.67          |                           |                   |
+| 49    | benchpress   | gym_bp_geton           | 320    | 5.33          |                           |                   |
+| 50    | benchpress   | gym_bp_up_A            | 140    | 2.33          |                           |                   |
+| 51    | benchpress   | gym_bp_up_B            | 160    | 2.67          |                           |                   |
+| 52    | benchpress   | gym_bp_up_smooth       | 80     | 1.33          |                           |                   |
+| 53    | BF_injection | BF_getin_LHS           | 60     | 1.00          |                           |                   |
+| 54    | BF_injection | BF_getin_RHS           | 60     | 1.00          |                           |                   |
+| 55    | BF_injection | BF_getout_LHS          | 68     | 1.13          |                           |                   |
+| 56    | BF_injection | BF_getout_RHS          | 68     | 1.13          |                           |                   |
+| 57    | BIKED        | BIKEd_Back             | 6      | 0.10          |                           |                   |
+| 58    | BIKED        | BIKEd_drivebyFT        | 12     | 0.20          |                           |                   |
+| 59    | BIKED        | BIKEd_drivebyLHS       | 12     | 0.20          |                           |                   |
+| 60    | BIKED        | BIKEd_drivebyRHS       | 12     | 0.20          |                           |                   |
+| 61    | BIKED        | BIKEd_Fwd              | 12     | 0.20          |                           |                   |
+| 62    | BIKED        | BIKEd_getoffBACK       | 88     | 1.47          |                           |                   |
+| 63    | BIKED        | BIKEd_getoffLHS        | 60     | 1.00          |                           |                   |
+| 64    | BIKED        | BIKEd_getoffRHS        | 60     | 1.00          |                           |                   |
+| 65    | BIKED        | BIKEd_hit              | 2      | 0.03          |                           |                   |
+| 66    | BIKED        | BIKEd_jumponL          | 58     | 0.97          |                           |                   |
+| 67    | BIKED        | BIKEd_jumponR          | 58     | 0.97          |                           |                   |
+| 68    | BIKED        | BIKEd_kick             | 64     | 1.07          |                           |                   |
+| 69    | BIKED        | BIKEd_Left             | 6      | 0.10          |                           |                   |
+| 70    | BIKED        | BIKEd_passenger        | 2      | 0.03          |                           |                   |
+| 71    | BIKED        | BIKEd_pushes           | 48     | 0.80          |                           |                   |
+| 72    | BIKED        | BIKEd_Ride             | 2      | 0.03          |                           |                   |
+| 73    | BIKED        | BIKEd_Right            | 6      | 0.10          |                           |                   |
+| 74    | BIKED        | BIKEd_shuffle          | 26     | 0.43          |                           |                   |
+| 75    | BIKED        | BIKEd_Still            | 2      | 0.03          |                           |                   |
+| 76    | BIKEH        | BIKEh_Back             | 6      | 0.10          |                           |                   |
+| 77    | BIKEH        | BIKEh_drivebyFT        | 12     | 0.20          |                           |                   |
+| 78    | BIKEH        | BIKEh_drivebyLHS       | 12     | 0.20          |                           |                   |
+| 79    | BIKEH        | BIKEh_drivebyRHS       | 12     | 0.20          |                           |                   |
+| 80    | BIKEH        | BIKEh_Fwd              | 12     | 0.20          |                           |                   |
+| 81    | BIKEH        | BIKEh_getoffBACK       | 102    | 1.70          |                           |                   |
+| 82    | BIKEH        | BIKEh_getoffLHS        | 46     | 0.77          |                           |                   |
+| 83    | BIKEH        | BIKEh_getoffRHS        | 44     | 0.73          |                           |                   |
+| 84    | BIKEH        | BIKEh_hit              | 2      | 0.03          |                           |                   |
+| 85    | BIKEH        | BIKEh_jumponL          | 88     | 1.47          |                           |                   |
+| 86    | BIKEH        | BIKEh_jumponR          | 90     | 1.50          |                           |                   |
+| 87    | BIKEH        | BIKEh_kick             | 64     | 1.07          |                           |                   |
+| 88    | BIKEH        | BIKEh_Left             | 8      | 0.13          |                           |                   |
+| 89    | BIKEH        | BIKEh_passenger        | 2      | 0.03          |                           |                   |
+| 90    | BIKEH        | BIKEh_pushes           | 58     | 0.97          |                           |                   |
+| 91    | BIKEH        | BIKEh_Ride             | 2      | 0.03          |                           |                   |
+| 92    | BIKEH        | BIKEh_Right            | 8      | 0.13          |                           |                   |
+| 93    | BIKEH        | BIKEh_Still            | 2      | 0.03          |                           |                   |
+| 94    | BIKELEAP     | bk_blnce_in            | 114    | 1.90          |                           |                   |
+| 95    | BIKELEAP     | bk_blnce_out           | 60     | 1.00          |                           |                   |
+| 96    | BIKELEAP     | bk_jmp                 | 24     | 0.40          |                           |                   |
+| 97    | BIKELEAP     | bk_rdy_in              | 30     | 0.50          |                           |                   |
+| 98    | BIKELEAP     | bk_rdy_out             | 24     | 0.40          |                           |                   |
+| 99    | BIKELEAP     | struggle_cesar         | 28     | 0.47          |                           |                   |
+| 100   | BIKELEAP     | struggle_driver        | 28     | 0.47          |                           |                   |
+| 101   | BIKELEAP     | truck_driver           | 44     | 0.73          |                           |                   |
+| 102   | BIKELEAP     | truck_getin            | 150    | 2.50          |                           |                   |
+| 103   | BIKES        | BIKEs_Back             | 6      | 0.10          |                           |                   |
+| 104   | BIKES        | BIKEs_drivebyFT        | 12     | 0.20          |                           |                   |
+| 105   | BIKES        | BIKEs_drivebyLHS       | 12     | 0.20          |                           |                   |
+| 106   | BIKES        | BIKEs_drivebyRHS       | 12     | 0.20          |                           |                   |
+| 107   | BIKES        | BIKEs_Fwd              | 12     | 0.20          |                           |                   |
+| 108   | BIKES        | BIKEs_getoffBACK       | 146    | 2.43          |                           |                   |
+| 109   | BIKES        | BIKEs_getoffLHS        | 66     | 1.10          |                           |                   |
+| 110   | BIKES        | BIKEs_getoffRHS        | 66     | 1.10          |                           |                   |
+| 111   | BIKES        | BIKEs_hit              | 2      | 0.03          |                           |                   |
+| 112   | BIKES        | BIKEs_jumponL          | 54     | 0.90          |                           |                   |
+| 113   | BIKES        | BIKEs_jumponR          | 54     | 0.90          |                           |                   |
+| 114   | BIKES        | BIKEs_kick             | 60     | 1.00          |                           |                   |
+| 115   | BIKES        | BIKEs_Left             | 6      | 0.10          |                           |                   |
+| 116   | BIKES        | BIKEs_passenger        | 2      | 0.03          |                           |                   |
+| 117   | BIKES        | BIKEs_pushes           | 44     | 0.73          |                           |                   |
+| 118   | BIKES        | BIKEs_Ride             | 2      | 0.03          |                           |                   |
+| 119   | BIKES        | BIKEs_Right            | 6      | 0.10          |                           |                   |
+| 120   | BIKES        | BIKEs_Snatch_L         | 26     | 0.43          |                           |                   |
+| 121   | BIKES        | BIKEs_Snatch_R         | 26     | 0.43          |                           |                   |
+| 122   | BIKES        | BIKEs_Still            | 2      | 0.03          |                           |                   |
+| 123   | BIKEV        | BIKEv_Back             | 10     | 0.17          |                           |                   |
+| 124   | BIKEV        | BIKEv_drivebyFT        | 10     | 0.17          |                           |                   |
+| 125   | BIKEV        | BIKEv_drivebyLHS       | 14     | 0.23          |                           |                   |
+| 126   | BIKEV        | BIKEv_drivebyRHS       | 12     | 0.20          |                           |                   |
+| 127   | BIKEV        | BIKEv_Fwd              | 12     | 0.20          |                           |                   |
+| 128   | BIKEV        | BIKEv_getoffBACK       | 102    | 1.70          |                           |                   |
+| 129   | BIKEV        | BIKEv_getoffLHS        | 40     | 0.67          |                           |                   |
+| 130   | BIKEV        | BIKEv_getoffRHS        | 40     | 0.67          |                           |                   |
+| 131   | BIKEV        | BIKEv_hit              | 2      | 0.03          |                           |                   |
+| 132   | BIKEV        | BIKEv_jumponL          | 40     | 0.67          |                           |                   |
+| 133   | BIKEV        | BIKEv_jumponR          | 40     | 0.67          |                           |                   |
+| 134   | BIKEV        | BIKEv_kick             | 60     | 1.00          |                           |                   |
+| 135   | BIKEV        | BIKEv_Left             | 6      | 0.10          |                           |                   |
+| 136   | BIKEV        | BIKEv_passenger        | 2      | 0.03          |                           |                   |
+| 137   | BIKEV        | BIKEv_pushes           | 44     | 0.73          |                           |                   |
+| 138   | BIKEV        | BIKEv_Ride             | 2      | 0.03          |                           |                   |
+| 139   | BIKEV        | BIKEv_Right            | 6      | 0.10          |                           |                   |
+| 140   | BIKEV        | BIKEv_Still            | 2      | 0.03          |                           |                   |
+| 141   | BIKE_DBZ     | Pass_Driveby_BWD       | 50     | 0.83          |                           |                   |
+| 142   | BIKE_DBZ     | Pass_Driveby_FWD       | 50     | 0.83          |                           |                   |
+| 143   | BIKE_DBZ     | Pass_Driveby_LHS       | 50     | 0.83          |                           |                   |
+| 144   | BIKE_DBZ     | Pass_Driveby_RHS       | 50     | 0.83          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Car_End_P           | 248    | 4.13          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Car_End_W           | 220    | 3.67          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Car_Loop_P          | 40     | 0.67          |                           |                   |
@@ -1737,8 +165,8 @@ Observe que algumas das animações podem não ser utilizáveis no SA-MP.
 | no    | BLOWJOBZ     | BJ_Car_Start_W         | 140    | 2.33          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Couch_End_P         | 460    | 7.67          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Couch_End_W         | 460    | 7.67          |                           |                   |
-| no    | BLOWJOBZ     | BJ_Couch_Loop_P        | 120    | 2.0           |                           |                   |
-| no    | BLOWJOBZ     | BJ_Couch_Loop_W        | 120    | 2.0           |                           |                   |
+| no    | BLOWJOBZ     | BJ_Couch_Loop_P        | 120    | 2.00          |                           |                   |
+| no    | BLOWJOBZ     | BJ_Couch_Loop_W        | 120    | 2.00          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Couch_Start_P       | 320    | 5.33          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Couch_Start_W       | 320    | 5.33          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Stand_End_P         | 292    | 4.87          |                           |                   |
@@ -1747,6 +175,1348 @@ Observe que algumas das animações podem não ser utilizáveis no SA-MP.
 | no    | BLOWJOBZ     | BJ_Stand_Loop_W        | 40     | 0.67          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Stand_Start_P       | 120    | 2.00          |                           |                   |
 | no    | BLOWJOBZ     | BJ_Stand_Start_W       | 120    | 2.00          |                           |                   |
+| 145   | BMX          | BMX_back               | 6      | 0.10          |                           |                   |
+| 146   | BMX          | BMX_bunnyhop           | 20     | 0.33          |                           |                   |
+| 147   | BMX          | BMX_drivebyFT          | 12     | 0.20          |                           |                   |
+| 148   | BMX          | BMX_driveby_LHS        | 12     | 0.20          |                           |                   |
+| 149   | BMX          | BMX_driveby_RHS        | 12     | 0.20          |                           |                   |
+| 150   | BMX          | BMX_fwd                | 8      | 0.13          |                           |                   |
+| 151   | BMX          | BMX_getoffBACK         | 82     | 1.37          |                           |                   |
+| 152   | BMX          | BMX_getoffLHS          | 44     | 0.73          |                           |                   |
+| 153   | BMX          | BMX_getoffRHS          | 38     | 0.63          |                           |                   |
+| 154   | BMX          | BMX_jumponL            | 54     | 0.90          |                           |                   |
+| 155   | BMX          | BMX_jumponR            | 54     | 0.90          |                           |                   |
+| 156   | BMX          | BMX_Left               | 8      | 0.13          |                           |                   |
+| 157   | BMX          | BMX_pedal              | 44     | 0.73          |                           |                   |
+| 158   | BMX          | BMX_pushes             | 48     | 0.80          |                           |                   |
+| 159   | BMX          | BMX_Ride               | 2      | 0.03          |                           |                   |
+| 160   | BMX          | BMX_Right              | 8      | 0.13          |                           |                   |
+| 161   | BMX          | BMX_sprint             | 40     | 0.67          |                           |                   |
+| 162   | BMX          | BMX_still              | 2      | 0.03          |                           |                   |
+| 163   | BOMBER       | BOM_Plant              | 160    | 2.67          |                           |                   |
+| 164   | BOMBER       | BOM_Plant_2Idle        | 60     | 1.00          |                           |                   |
+| 165   | BOMBER       | BOM_Plant_Crouch_In    | 48     | 0.80          |                           |                   |
+| 166   | BOMBER       | BOM_Plant_Crouch_Out   | 48     | 0.80          |                           |                   |
+| 167   | BOMBER       | BOM_Plant_In           | 52     | 0.87          |                           |                   |
+| 168   | BOMBER       | BOM_Plant_Loop         | 48     | 0.80          |                           |                   |
+| 169   | BOX          | boxhipin               | 392    | 6.53          |                           |                   |
+| 170   | BOX          | boxhipup               | 300    | 5.00          |                           |                   |
+| 171   | BOX          | boxshdwn               | 366    | 6.10          |                           |                   |
+| 172   | BOX          | boxshup                | 312    | 5.20          |                           |                   |
+| 173   | BOX          | bxhipwlk               | 90     | 1.50          |                           |                   |
+| 174   | BOX          | bxhwlki                | 58     | 0.97          |                           |                   |
+| 175   | BOX          | bxshwlk                | 150    | 2.50          |                           |                   |
+| 176   | BOX          | bxshwlki               | 58     | 0.97          |                           |                   |
+| 177   | BOX          | bxwlko                 | 32     | 0.53          |                           |                   |
+| 178   | BOX          | catch_box              | 90     | 1.50          |                           |                   |
+| 179   | BSKTBALL     | BBALL_def_jump_shot    | 70     | 1.17          |                           |                   |
+| 180   | BSKTBALL     | BBALL_def_loop         | 60     | 1.00          |                           |                   |
+| 181   | BSKTBALL     | BBALL_def_stepL        | 36     | 0.60          |                           |                   |
+| 182   | BSKTBALL     | BBALL_def_stepR        | 36     | 0.60          |                           |                   |
+| 183   | BSKTBALL     | BBALL_Dnk              | 84     | 1.40          |                           |                   |
+| 184   | BSKTBALL     | BBALL_Dnk_Gli          | 22     | 0.37          |                           |                   |
+| 185   | BSKTBALL     | BBALL_Dnk_Gli_O        | 22     | 0.37          |                           |                   |
+| 186   | BSKTBALL     | BBALL_Dnk_Lnch         | 12     | 0.20          |                           |                   |
+| 187   | BSKTBALL     | BBALL_Dnk_Lnch_O       | 12     | 0.20          |                           |                   |
+| 188   | BSKTBALL     | BBALL_Dnk_Lnd          | 56     | 0.93          |                           |                   |
+| 189   | BSKTBALL     | BBALL_Dnk_O            | 6      | 0.10          |                           |                   |
+| 190   | BSKTBALL     | BBALL_idle             | 146    | 2.43          |                           |                   |
+| 191   | BSKTBALL     | BBALL_idle2            | 160    | 2.67          |                           |                   |
+| 192   | BSKTBALL     | BBALL_idle2_O          | 160    | 2.67          |                           |                   |
+| 193   | BSKTBALL     | BBALL_idleloop         | 40     | 0.67          |                           |                   |
+| 194   | BSKTBALL     | BBALL_idleloop_O       | 40     | 0.67          |                           |                   |
+| 195   | BSKTBALL     | BBALL_idle_O           | 146    | 2.43          |                           |                   |
+| 196   | BSKTBALL     | BBALL_Jump_Cancel      | 64     | 1.07          |                           |                   |
+| 197   | BSKTBALL     | BBALL_Jump_Cancel_O    | 64     | 1.07          |                           |                   |
+| 198   | BSKTBALL     | BBALL_Jump_End         | 56     | 0.93          |                           |                   |
+| 199   | BSKTBALL     | BBALL_Jump_Shot        | 100    | 1.67          |                           |                   |
+| 200   | BSKTBALL     | BBALL_Jump_Shot_O      | 40     | 0.67          |                           |                   |
+| 201   | BSKTBALL     | BBALL_Net_Dnk_O        | 110    | 1.83          |                           |                   |
+| 202   | BSKTBALL     | BBALL_pickup           | 110    | 1.83          |                           |                   |
+| 203   | BSKTBALL     | BBALL_pickup_O         | 110    | 1.83          |                           |                   |
+| 204   | BSKTBALL     | BBALL_react_miss       | 48     | 0.80          |                           |                   |
+| 205   | BSKTBALL     | BBALL_react_score      | 66     | 1.10          |                           |                   |
+| 206   | BSKTBALL     | BBALL_run              | 54     | 0.90          |                           |                   |
+| 207   | BSKTBALL     | BBALL_run_O            | 54     | 0.90          |                           |                   |
+| 208   | BSKTBALL     | BBALL_SkidStop_L       | 30     | 0.50          |                           |                   |
+| 209   | BSKTBALL     | BBALL_SkidStop_L_O     | 30     | 0.50          |                           |                   |
+| 210   | BSKTBALL     | BBALL_SkidStop_R       | 30     | 0.50          |                           |                   |
+| 211   | BSKTBALL     | BBALL_SkidStop_R_O     | 30     | 0.50          |                           |                   |
+| 212   | BSKTBALL     | BBALL_walk             | 64     | 1.07          |                           |                   |
+| 213   | BSKTBALL     | BBALL_WalkStop_L       | 30     | 0.50          |                           |                   |
+| 214   | BSKTBALL     | BBALL_WalkStop_L_O     | 30     | 0.50          |                           |                   |
+| 215   | BSKTBALL     | BBALL_WalkStop_R       | 30     | 0.50          |                           |                   |
+| 216   | BSKTBALL     | BBALL_WalkStop_R_O     | 30     | 0.50          |                           |                   |
+| 217   | BSKTBALL     | BBALL_walk_O           | 64     | 1.07          |                           |                   |
+| 218   | BSKTBALL     | BBALL_walk_start       | 12     | 0.20          |                           |                   |
+| 219   | BSKTBALL     | BBALL_walk_start_O     | 12     | 0.20          |                           |                   |
+| 220   | BUDDY        | buddy_crouchfire       | 52     | 0.87          |                           |                   |
+| 221   | BUDDY        | buddy_crouchreload     | 66     | 1.10          |                           |                   |
+| 222   | BUDDY        | buddy_fire             | 48     | 0.80          |                           |                   |
+| 223   | BUDDY        | buddy_fire_poor        | 80     | 1.33          |                           |                   |
+| 224   | BUDDY        | buddy_reload           | 78     | 1.30          |                           |                   |
+| 225   | BUS          | BUS_close              | 24     | 0.40          |                           |                   |
+| 226   | BUS          | BUS_getin_LHS          | 20     | 0.33          |                           |                   |
+| 227   | BUS          | BUS_getin_RHS          | 130    | 2.17          |                           |                   |
+| 228   | BUS          | BUS_getout_LHS         | 48     | 0.80          |                           |                   |
+| 229   | BUS          | BUS_getout_RHS         | 112    | 1.87          |                           |                   |
+| 230   | BUS          | BUS_jacked_LHS         | 68     | 1.13          |                           |                   |
+| 231   | BUS          | BUS_open               | 88     | 1.47          |                           |                   |
+| 232   | BUS          | BUS_open_RHS           | 72     | 1.20          |                           |                   |
+| 233   | BUS          | BUS_pullout_LHS        | 48     | 0.80          |                           |                   |
+| 234   | CAMERA       | camcrch_cmon           | 140    | 2.33          |                           |                   |
+| 235   | CAMERA       | camcrch_idleloop       | 120    | 2.00          |                           |                   |
+| 236   | CAMERA       | camcrch_stay           | 120    | 2.00          |                           |                   |
+| 237   | CAMERA       | camcrch_to_camstnd     | 80     | 1.33          |                           |                   |
+| 238   | CAMERA       | camstnd_cmon           | 180    | 3.00          |                           |                   |
+| 239   | CAMERA       | camstnd_idleloop       | 120    | 2.00          |                           |                   |
+| 240   | CAMERA       | camstnd_lkabt          | 260    | 4.33          |                           |                   |
+| 241   | CAMERA       | camstnd_to_camcrch     | 60     | 1.00          |                           |                   |
+| 242   | CAMERA       | piccrch_in             | 80     | 1.33          |                           |                   |
+| 243   | CAMERA       | piccrch_out            | 120    | 2.00          |                           |                   |
+| 244   | CAMERA       | piccrch_take           | 60     | 1.00          |                           |                   |
+| 245   | CAMERA       | picstnd_in             | 60     | 1.00          |                           |                   |
+| 246   | CAMERA       | picstnd_out            | 40     | 0.67          |                           |                   |
+| 247   | CAMERA       | picstnd_take           | 60     | 1.00          |                           |                   |
+| 248   | CAR          | Fixn_Car_Loop          | 300    | 5.00          |                           |                   |
+| 249   | CAR          | Fixn_Car_Out           | 140    | 2.33          |                           |                   |
+| 250   | CAR          | flag_drop              | 270    | 4.50          |                           |                   |
+| 251   | CAR          | Sit_relaxed            | 2      | 0.03          |                           |                   |
+| 252   | CAR          | Tap_hand               | 20     | 0.33          |                           |                   |
+| 253   | CAR          | Tyd2car_bump           | 50     | 0.83          |                           |                   |
+| 254   | CAR          | Tyd2car_high           | 480    | 8.00          |                           |                   |
+| 255   | CAR          | Tyd2car_low            | 400    | 6.67          |                           |                   |
+| 256   | CAR          | Tyd2car_med            | 400    | 6.67          |                           |                   |
+| 257   | CAR          | Tyd2car_TurnL          | 60     | 1.00          |                           |                   |
+| 258   | CAR          | Tyd2car_TurnR          | 60     | 1.00          |                           |                   |
+| 259   | CARRY        | crry_prtial            | 2      | 0.03          |                           |                   |
+| 260   | CARRY        | liftup                 | 92     | 1.53          |                           |                   |
+| 261   | CARRY        | liftup05               | 38     | 0.63          |                           |                   |
+| 262   | CARRY        | liftup105              | 40     | 0.67          |                           |                   |
+| 263   | CARRY        | putdwn                 | 68     | 1.13          |                           |                   |
+| 264   | CARRY        | putdwn05               | 40     | 0.67          |                           |                   |
+| 265   | CARRY        | putdwn105              | 32     | 0.53          |                           |                   |
+| 266   | CAR_CHAT     | carfone_in             | 360    | 6.00          |                           |                   |
+| 267   | CAR_CHAT     | carfone_loopA          | 240    | 4.00          |                           |                   |
+| 268   | CAR_CHAT     | carfone_loopA_to_B     | 60     | 1.00          |                           |                   |
+| 269   | CAR_CHAT     | carfone_loopB          | 300    | 5.00          |                           |                   |
+| 270   | CAR_CHAT     | carfone_loopB_to_A     | 40     | 0.67          |                           |                   |
+| 271   | CAR_CHAT     | carfone_out            | 180    | 3.00          |                           |                   |
+| 272   | CAR_CHAT     | CAR_Sc1_BL             | 700    | 11.67         |                           |                   |
+| 273   | CAR_CHAT     | CAR_Sc1_BR             | 700    | 11.67         |                           |                   |
+| 274   | CAR_CHAT     | CAR_Sc1_FL             | 700    | 11.67         |                           |                   |
+| 275   | CAR_CHAT     | CAR_Sc1_FR             | 700    | 11.67         |                           |                   |
+| 276   | CAR_CHAT     | CAR_Sc2_FL             | 300    | 5.00          |                           |                   |
+| 277   | CAR_CHAT     | CAR_Sc3_BR             | 650    | 10.83         |                           |                   |
+| 278   | CAR_CHAT     | CAR_Sc3_FL             | 650    | 10.83         |                           |                   |
+| 279   | CAR_CHAT     | CAR_Sc3_FR             | 650    | 10.83         |                           |                   |
+| 280   | CAR_CHAT     | CAR_Sc4_BL             | 264    | 4.40          |                           |                   |
+| 281   | CAR_CHAT     | CAR_Sc4_BR             | 392    | 6.53          |                           |                   |
+| 282   | CAR_CHAT     | CAR_Sc4_FL             | 600    | 10.00         |                           |                   |
+| 283   | CAR_CHAT     | CAR_Sc4_FR             | 600    | 10.00         |                           |                   |
+| 284   | CAR_CHAT     | car_talkm_in           | 100    | 1.67          |                           |                   |
+| 285   | CAR_CHAT     | car_talkm_loop         | 260    | 4.33          |                           |                   |
+| 286   | CAR_CHAT     | car_talkm_out          | 440    | 7.33          |                           |                   |
+| 287   | CASINO       | cards_in               | 40     | 0.67          |                           |                   |
+| 288   | CASINO       | cards_loop             | 200    | 3.33          |                           |                   |
+| 289   | CASINO       | cards_lose             | 200    | 3.33          |                           |                   |
+| 290   | CASINO       | cards_out              | 40     | 0.67          |                           |                   |
+| 291   | CASINO       | cards_pick_01          | 280    | 4.67          |                           |                   |
+| 292   | CASINO       | cards_pick_02          | 320    | 5.33          |                           |                   |
+| 293   | CASINO       | cards_raise            | 100    | 1.67          |                           |                   |
+| 294   | CASINO       | cards_win              | 180    | 3.00          |                           |                   |
+| 295   | CASINO       | dealone                | 48     | 0.80          |                           |                   |
+| 296   | CASINO       | manwinb                | 90     | 1.50          |                           |                   |
+| 297   | CASINO       | manwind                | 100    | 1.67          |                           |                   |
+| 298   | CASINO       | Roulette_bet           | 140    | 2.33          |                           |                   |
+| 299   | CASINO       | Roulette_in            | 40     | 0.67          |                           |                   |
+| 300   | CASINO       | Roulette_loop          | 220    | 3.67          |                           |                   |
+| 301   | CASINO       | Roulette_lose          | 160    | 2.67          |                           |                   |
+| 302   | CASINO       | Roulette_out           | 40     | 0.67          |                           |                   |
+| 303   | CASINO       | Roulette_win           | 140    | 2.33          |                           |                   |
+| 304   | CASINO       | Slot_bet_01            | 280    | 4.67          |                           |                   |
+| 305   | CASINO       | Slot_bet_02            | 120    | 2.00          |                           |                   |
+| 306   | CASINO       | Slot_in                | 220    | 3.67          |                           |                   |
+| 307   | CASINO       | Slot_lose_out          | 240    | 4.00          |                           |                   |
+| 308   | CASINO       | Slot_Plyr              | 80     | 1.33          |                           |                   |
+| 309   | CASINO       | Slot_wait              | 220    | 3.67          |                           |                   |
+| 310   | CASINO       | Slot_win_out           | 560    | 9.33          |                           |                   |
+| 311   | CASINO       | wof                    | 88     | 1.47          |                           |                   |
+| 312   | CHAINSAW     | CSAW_1                 | 60     | 1.00          |                           |                   |
+| 313   | CHAINSAW     | CSAW_2                 | 62     | 1.03          |                           |                   |
+| 314   | CHAINSAW     | CSAW_3                 | 52     | 0.87          |                           |                   |
+| 315   | CHAINSAW     | CSAW_G                 | 70     | 1.17          |                           |                   |
+| 316   | CHAINSAW     | CSAW_Hit_1             | 50     | 0.83          |                           |                   |
+| 317   | CHAINSAW     | CSAW_Hit_2             | 64     | 1.07          |                           |                   |
+| 318   | CHAINSAW     | CSAW_Hit_3             | 68     | 1.13          |                           |                   |
+| 319   | CHAINSAW     | csaw_part              | 8      | 0.13          |                           |                   |
+| 320   | CHAINSAW     | IDLE_csaw              | 90     | 1.50          |                           |                   |
+| 321   | CHAINSAW     | WEAPON_csaw            | 80     | 1.33          |                           |                   |
+| 322   | CHAINSAW     | WEAPON_csawlo          | 114    | 1.90          |                           |                   |
+| 323   | CHOPPA       | CHOPPA_back            | 6      | 0.10          |                           |                   |
+| 324   | CHOPPA       | CHOPPA_bunnyhop        | 20     | 0.33          |                           |                   |
+| 325   | CHOPPA       | CHOPPA_drivebyFT       | 12     | 0.20          |                           |                   |
+| 326   | CHOPPA       | CHOPPA_driveby_LHS     | 12     | 0.20          |                           |                   |
+| 327   | CHOPPA       | CHOPPA_driveby_RHS     | 12     | 0.20          |                           |                   |
+| 328   | CHOPPA       | CHOPPA_fwd             | 12     | 0.20          |                           |                   |
+| 329   | CHOPPA       | CHOPPA_getoffBACK      | 76     | 1.27          |                           |                   |
+| 330   | CHOPPA       | CHOPPA_getoffLHS       | 44     | 0.73          |                           |                   |
+| 331   | CHOPPA       | CHOPPA_getoffRHS       | 38     | 0.63          |                           |                   |
+| 332   | CHOPPA       | CHOPPA_jumponL         | 42     | 0.70          |                           |                   |
+| 333   | CHOPPA       | CHOPPA_jumponR         | 48     | 0.80          |                           |                   |
+| 334   | CHOPPA       | CHOPPA_Left            | 8      | 0.13          |                           |                   |
+| 335   | CHOPPA       | CHOPPA_pedal           | 44     | 0.73          |                           |                   |
+| 336   | CHOPPA       | CHOPPA_Pushes          | 48     | 0.80          |                           |                   |
+| 337   | CHOPPA       | CHOPPA_ride            | 2      | 0.03          |                           |                   |
+| 338   | CHOPPA       | CHOPPA_Right           | 8      | 0.13          |                           |                   |
+| 339   | CHOPPA       | CHOPPA_sprint          | 40     | 0.67          |                           |                   |
+| 340   | CHOPPA       | CHOPPA_Still           | 2      | 0.03          |                           |                   |
+| 341   | CLOTHES      | CLO_Buy                | 124    | 2.07          |                           |                   |
+| 342   | CLOTHES      | CLO_In                 | 240    | 4.00          |                           |                   |
+| 343   | CLOTHES      | CLO_Out                | 160    | 2.67          |                           |                   |
+| 344   | CLOTHES      | CLO_Pose_Hat           | 200    | 3.33          |                           |                   |
+| 345   | CLOTHES      | CLO_Pose_In            | 188    | 3.13          |                           |                   |
+| 346   | CLOTHES      | CLO_Pose_In_O          | 240    | 4.00          |                           |                   |
+| 347   | CLOTHES      | CLO_Pose_Legs          | 200    | 3.33          |                           |                   |
+| 348   | CLOTHES      | CLO_Pose_Loop          | 360    | 6.00          |                           |                   |
+| 349   | CLOTHES      | CLO_Pose_Out           | 240    | 4.00          |                           |                   |
+| 350   | CLOTHES      | CLO_Pose_Out_O         | 240    | 4.00          |                           |                   |
+| 351   | CLOTHES      | CLO_Pose_Shoes         | 200    | 3.33          |                           |                   |
+| 352   | CLOTHES      | CLO_Pose_Torso         | 200    | 3.33          |                           |                   |
+| 353   | CLOTHES      | CLO_Pose_Watch         | 200    | 3.33          |                           |                   |
+| 354   | COACH        | COACH_inL              | 130    | 2.17          |                           |                   |
+| 355   | COACH        | COACH_inR              | 132    | 2.20          |                           |                   |
+| 356   | COACH        | COACH_opnL             | 72     | 1.20          |                           |                   |
+| 357   | COACH        | COACH_opnR             | 72     | 1.20          |                           |                   |
+| 358   | COACH        | COACH_outL             | 104    | 1.73          |                           |                   |
+| 359   | COACH        | COACH_outR             | 110    | 1.83          |                           |                   |
+| 360   | COLT45       | 2guns_crouchfire       | 48     | 0.80          |                           |                   |
+| 361   | COLT45       | colt45_crouchfire      | 48     | 0.80          |                           |                   |
+| 362   | COLT45       | colt45_crouchreload    | 60     | 1.00          |                           |                   |
+| 363   | COLT45       | colt45_fire            | 44     | 0.73          |                           |                   |
+| 364   | COLT45       | colt45_fire_2hands     | 52     | 0.87          |                           |                   |
+| 365   | COLT45       | colt45_reload          | 56     | 0.93          |                           |                   |
+| 366   | COLT45       | sawnoff_reload         | 56     | 0.93          |                           |                   |
+| 367   | COP_AMBIENT  | Copbrowse_in           | 300    | 5.00          |                           |                   |
+| 368   | COP_AMBIENT  | Copbrowse_loop         | 140    | 2.33          |                           |                   |
+| 369   | COP_AMBIENT  | Copbrowse_nod          | 240    | 4.00          |                           |                   |
+| 370   | COP_AMBIENT  | Copbrowse_out          | 160    | 2.67          |                           |                   |
+| 371   | COP_AMBIENT  | Copbrowse_shake        | 110    | 1.83          |                           |                   |
+| 372   | COP_AMBIENT  | Coplook_in             | 80     | 1.33          |                           |                   |
+| 373   | COP_AMBIENT  | Coplook_loop           | 160    | 2.67          |                           |                   |
+| 374   | COP_AMBIENT  | Coplook_nod            | 320    | 5.33          |                           |                   |
+| 375   | COP_AMBIENT  | Coplook_out            | 40     | 0.67          |                           |                   |
+| 376   | COP_AMBIENT  | Coplook_shake          | 240    | 4.00          |                           |                   |
+| 377   | COP_AMBIENT  | Coplook_think          | 200    | 3.33          |                           |                   |
+| 378   | COP_AMBIENT  | Coplook_watch          | 120    | 2.00          |                           |                   |
+| 379   | COP_DVBYZ    | COP_Dvby_B             | 50     | 0.83          |                           |                   |
+| 380   | COP_DVBYZ    | COP_Dvby_FT            | 50     | 0.83          |                           |                   |
+| 381   | COP_DVBYZ    | COP_Dvby_L             | 50     | 0.83          |                           |                   |
+| 382   | COP_DVBYZ    | COP_Dvby_R             | 50     | 0.83          |                           |                   |
+| 383   | CRACK        | Bbalbat_Idle_01        | 400    | 6.67          |                           |                   |
+| 384   | CRACK        | Bbalbat_Idle_02        | 600    | 10.00         |                           |                   |
+| 385   | CRACK        | crckdeth1              | 130    | 2.17          |                           |                   |
+| 386   | CRACK        | crckdeth2              | 180    | 3.00          |                           |                   |
+| 387   | CRACK        | crckdeth3              | 130    | 2.17          |                           |                   |
+| 388   | CRACK        | crckdeth4              | 100    | 1.67          |                           |                   |
+| 389   | CRACK        | crckidle1              | 210    | 3.50          |                           |                   |
+| 390   | CRACK        | crckidle2              | 200    | 3.33          |                           |                   |
+| 391   | CRACK        | crckidle3              | 200    | 3.33          |                           |                   |
+| 392   | CRACK        | crckidle4              | 160    | 2.67          |                           |                   |
+| 393   | CRIB         | CRIB_Console_Loop      | 180    | 3.00          |                           |                   |
+| 394   | CRIB         | CRIB_Use_Switch        | 70     | 1.17          |                           |                   |
+| 395   | CRIB         | PED_Console_Loop       | 180    | 3.00          |                           |                   |
+| 396   | CRIB         | PED_Console_Loose      | 210    | 3.50          |                           |                   |
+| 397   | CRIB         | PED_Console_Win        | 210    | 3.50          |                           |                   |
+| 398   | DAM_JUMP     | DAM_Dive_Loop          | 80     | 1.33          |                           |                   |
+| 399   | DAM_JUMP     | DAM_Land               | 156    | 2.60          |                           |                   |
+| 400   | DAM_JUMP     | DAM_Launch             | 144    | 2.40          |                           |                   |
+| 401   | DAM_JUMP     | Jump_Roll              | 190    | 3.17          |                           |                   |
+| 402   | DAM_JUMP     | SF_JumpWall            | 180    | 3.00          |                           |                   |
+| 403   | DANCING      | bd_clap                | 192    | 3.20          |                           |                   |
+| 404   | DANCING      | bd_clap1               | 158    | 2.63          |                           |                   |
+| 405   | DANCING      | dance_loop             | 70     | 1.17          |                           |                   |
+| 406   | DANCING      | DAN_Down_A             | 60     | 1.00          |                           |                   |
+| 407   | DANCING      | DAN_Left_A             | 60     | 1.00          |                           |                   |
+| 408   | DANCING      | DAN_Loop_A             | 120    | 2.00          |                           |                   |
+| 409   | DANCING      | DAN_Right_A            | 60     | 1.00          |                           |                   |
+| 410   | DANCING      | DAN_Up_A               | 60     | 1.00          |                           |                   |
+| 411   | DANCING      | dnce_M_a               | 128    | 2.13          |                           |                   |
+| 412   | DANCING      | dnce_M_b               | 116    | 1.93          |                           |                   |
+| 413   | DANCING      | dnce_M_c               | 116    | 1.93          |                           |                   |
+| 414   | DANCING      | dnce_M_d               | 146    | 2.43          |                           |                   |
+| 415   | DANCING      | dnce_M_e               | 54     | 0.90          |                           |                   |
+| 416   | DEALER       | DEALER_DEAL            | 190    | 3.17          |                           |                   |
+| 417   | DEALER       | DEALER_IDLE            | 400    | 6.67          |                           |                   |
+| 418   | DEALER       | DEALER_IDLE_01         | 300    | 5.00          |                           |                   |
+| 419   | DEALER       | DEALER_IDLE_02         | 240    | 4.00          |                           |                   |
+| 420   | DEALER       | DEALER_IDLE_03         | 280    | 4.67          |                           |                   |
+| 421   | DEALER       | DRUGS_BUY              | 190    | 3.17          |                           |                   |
+| 422   | DEALER       | shop_pay               | 280    | 4.67          |                           |                   |
+| 423   | DILDO        | DILDO_1                | 58     | 0.97          |                           |                   |
+| 424   | DILDO        | DILDO_2                | 66     | 1.10          |                           |                   |
+| 425   | DILDO        | DILDO_3                | 70     | 1.17          |                           |                   |
+| 426   | DILDO        | DILDO_block            | 28     | 0.47          |                           |                   |
+| 427   | DILDO        | DILDO_G                | 88     | 1.47          |                           |                   |
+| 428   | DILDO        | DILDO_Hit_1            | 46     | 0.77          |                           |                   |
+| 429   | DILDO        | DILDO_Hit_2            | 62     | 1.03          |                           |                   |
+| 430   | DILDO        | DILDO_Hit_3            | 54     | 0.90          |                           |                   |
+| 431   | DILDO        | DILDO_IDLE             | 52     | 0.87          |                           |                   |
+| 432   | DODGE        | Cover_Dive_01          | 360    | 6.00          |                           |                   |
+| 433   | DODGE        | Cover_Dive_02          | 360    | 6.00          |                           |                   |
+| 434   | DODGE        | Crushed                | 56     | 0.93          |                           |                   |
+| 435   | DODGE        | Crush_Jump             | 190    | 3.17          |                           |                   |
+| 436   | DOZER        | DOZER_Align_LHS        | 58     | 0.97          |                           |                   |
+| 437   | DOZER        | DOZER_Align_RHS        | 56     | 0.93          |                           |                   |
+| 438   | DOZER        | DOZER_getin_LHS        | 26     | 0.43          |                           |                   |
+| 439   | DOZER        | DOZER_getin_RHS        | 26     | 0.43          |                           |                   |
+| 440   | DOZER        | DOZER_getout_LHS       | 64     | 1.07          |                           |                   |
+| 441   | DOZER        | DOZER_getout_RHS       | 46     | 0.77          |                           |                   |
+| 442   | DOZER        | DOZER_Jacked_LHS       | 76     | 1.27          |                           |                   |
+| 443   | DOZER        | DOZER_Jacked_RHS       | 64     | 1.07          |                           |                   |
+| 444   | DOZER        | DOZER_pullout_LHS      | 44     | 0.73          |                           |                   |
+| 445   | DOZER        | DOZER_pullout_RHS      | 42     | 0.70          |                           |                   |
+| 446   | DRIVEBYS     | Gang_DrivebyLHS        | 50     | 0.83          |                           |                   |
+| 447   | DRIVEBYS     | Gang_DrivebyLHS_Bwd    | 50     | 0.83          |                           |                   |
+| 448   | DRIVEBYS     | Gang_DrivebyLHS_Fwd    | 50     | 0.83          |                           |                   |
+| 449   | DRIVEBYS     | Gang_DrivebyRHS        | 50     | 0.83          |                           |                   |
+| 450   | DRIVEBYS     | Gang_DrivebyRHS_Bwd    | 50     | 0.83          |                           |                   |
+| 451   | DRIVEBYS     | Gang_DrivebyRHS_Fwd    | 50     | 0.83          |                           |                   |
+| 452   | DRIVEBYS     | Gang_DrivebyTop_LHS    | 50     | 0.83          |                           |                   |
+| 453   | DRIVEBYS     | Gang_DrivebyTop_RHS    | 50     | 0.83          |                           |                   |
+| 454   | FAT          | FatIdle                | 90     | 1.50          |                           |                   |
+| 455   | FAT          | FatIdle_armed          | 92     | 1.53          |                           |                   |
+| 456   | FAT          | FatIdle_Csaw           | 90     | 1.50          |                           |                   |
+| 457   | FAT          | FatIdle_Rocket         | 96     | 1.60          |                           |                   |
+| 458   | FAT          | FatRun                 | 46     | 0.77          |                           |                   |
+| 459   | FAT          | FatRun_armed           | 46     | 0.77          |                           |                   |
+| 460   | FAT          | FatRun_Csaw            | 46     | 0.77          |                           |                   |
+| 461   | FAT          | FatRun_Rocket          | 46     | 0.77          |                           |                   |
+| 462   | FAT          | FatSprint              | 36     | 0.60          |                           |                   |
+| 463   | FAT          | FatWalk                | 70     | 1.17          |                           |                   |
+| 464   | FAT          | FatWalkstart           | 12     | 0.20          |                           |                   |
+| 465   | FAT          | FatWalkstart_Csaw      | 12     | 0.20          |                           |                   |
+| 466   | FAT          | FatWalkSt_armed        | 12     | 0.20          |                           |                   |
+| 467   | FAT          | FatWalkSt_Rocket       | 12     | 0.20          |                           |                   |
+| 468   | FAT          | FatWalk_armed          | 70     | 1.17          |                           |                   |
+| 469   | FAT          | FatWalk_Csaw           | 70     | 1.17          |                           |                   |
+| 470   | FAT          | FatWalk_Rocket         | 70     | 1.17          |                           |                   |
+| 471   | FAT          | IDLE_tired             | 64     | 1.07          |                           |                   |
+| 472   | FIGHT_B      | FightB_1               | 44     | 0.73          |                           |                   |
+| 473   | FIGHT_B      | FightB_2               | 66     | 1.10          |                           |                   |
+| 474   | FIGHT_B      | FightB_3               | 72     | 1.20          |                           |                   |
+| 475   | FIGHT_B      | FightB_block           | 28     | 0.47          |                           |                   |
+| 476   | FIGHT_B      | FightB_G               | 64     | 1.07          |                           |                   |
+| 477   | FIGHT_B      | FightB_IDLE            | 48     | 0.80          |                           |                   |
+| 478   | FIGHT_B      | FightB_M               | 30     | 0.50          |                           |                   |
+| 479   | FIGHT_B      | HitB_1                 | 44     | 0.73          |                           |                   |
+| 480   | FIGHT_B      | HitB_2                 | 50     | 0.83          |                           |                   |
+| 481   | FIGHT_B      | HitB_3                 | 86     | 1.43          |                           |                   |
+| 482   | FIGHT_C      | FightC_1               | 50     | 0.83          |                           |                   |
+| 483   | FIGHT_C      | FightC_2               | 62     | 1.03          |                           |                   |
+| 484   | FIGHT_C      | FightC_3               | 60     | 1.00          |                           |                   |
+| 485   | FIGHT_C      | FightC_block           | 28     | 0.47          |                           |                   |
+| 486   | FIGHT_C      | FightC_blocking        | 192    | 3.20          |                           |                   |
+| 487   | FIGHT_C      | FightC_G               | 46     | 0.77          |                           |                   |
+| 488   | FIGHT_C      | FightC_IDLE            | 60     | 1.00          |                           |                   |
+| 489   | FIGHT_C      | FightC_M               | 54     | 0.90          |                           |                   |
+| 490   | FIGHT_C      | FightC_Spar            | 192    | 3.20          |                           |                   |
+| 491   | FIGHT_C      | HitC_1                 | 18     | 0.30          |                           |                   |
+| 492   | FIGHT_C      | HitC_2                 | 40     | 0.67          |                           |                   |
+| 493   | FIGHT_C      | HitC_3                 | 50     | 0.83          |                           |                   |
+| 494   | FIGHT_D      | FightD_1               | 56     | 0.93          |                           |                   |
+| 495   | FIGHT_D      | FightD_2               | 112    | 1.87          |                           |                   |
+| 496   | FIGHT_D      | FightD_3               | 54     | 0.90          |                           |                   |
+| 497   | FIGHT_D      | FightD_block           | 28     | 0.47          |                           |                   |
+| 498   | FIGHT_D      | FightD_G               | 50     | 0.83          |                           |                   |
+| 499   | FIGHT_D      | FightD_IDLE            | 92     | 1.53          |                           |                   |
+| 500   | FIGHT_D      | FightD_M               | 64     | 1.07          |                           |                   |
+| 501   | FIGHT_D      | HitD_1                 | 40     | 0.67          |                           |                   |
+| 502   | FIGHT_D      | HitD_2                 | 110    | 1.83          |                           |                   |
+| 503   | FIGHT_D      | HitD_3                 | 58     | 0.97          |                           |                   |
+| 504   | FIGHT_E      | FightKick              | 46     | 0.77          |                           |                   |
+| 505   | FIGHT_E      | FightKick_B            | 62     | 1.03          |                           |                   |
+| 506   | FIGHT_E      | Hit_fightkick          | 30     | 0.50          |                           |                   |
+| 507   | FIGHT_E      | Hit_fightkick_B        | 68     | 1.13          |                           |                   |
+| 508   | FINALE       | FIN_Climb_In           | 174    | 2.90          |                           |                   |
+| 509   | FINALE       | FIN_Cop1_ClimbOut2     | 360    | 6.00          |                           |                   |
+| 510   | FINALE       | FIN_Cop1_Loop          | 120    | 2.00          |                           |                   |
+| 511   | FINALE       | FIN_Cop1_Stomp         | 60     | 1.00          |                           |                   |
+| 512   | FINALE       | FIN_Hang_L             | 34     | 0.57          |                           |                   |
+| 513   | FINALE       | FIN_Hang_Loop          | 240    | 4.00          |                           |                   |
+| 514   | FINALE       | FIN_Hang_R             | 34     | 0.57          |                           |                   |
+| 515   | FINALE       | FIN_Hang_Slip          | 200    | 3.33          |                           |                   |
+| 516   | FINALE       | FIN_Jump_On            | 336    | 5.60          |                           |                   |
+| 517   | FINALE       | FIN_Land_Car           | 40     | 0.67          |                           |                   |
+| 518   | FINALE       | FIN_Land_Die           | 142    | 2.37          |                           |                   |
+| 519   | FINALE       | FIN_LegsUp             | 60     | 1.00          |                           |                   |
+| 520   | FINALE       | FIN_LegsUp_L           | 30     | 0.50          |                           |                   |
+| 521   | FINALE       | FIN_LegsUp_Loop        | 80     | 1.33          |                           |                   |
+| 522   | FINALE       | FIN_LegsUp_R           | 30     | 0.50          |                           |                   |
+| 523   | FINALE       | FIN_Let_Go             | 10     | 0.17          |                           |                   |
+| 524   | FINALE2      | FIN_Cop1_ClimbOut      | 240    | 4.00          |                           |                   |
+| 525   | FINALE2      | FIN_Cop1_Fall          | 26     | 0.43          |                           |                   |
+| 526   | FINALE2      | FIN_Cop1_Loop          | 120    | 2.00          |                           |                   |
+| 527   | FINALE2      | FIN_Cop1_Shot          | 124    | 2.07          |                           |                   |
+| 528   | FINALE2      | FIN_Cop1_Swing         | 70     | 1.17          |                           |                   |
+| 529   | FINALE2      | FIN_Cop2_ClimbOut      | 320    | 5.33          |                           |                   |
+| 530   | FINALE2      | FIN_Switch_P           | 238    | 3.97          |                           |                   |
+| 531   | FINALE2      | FIN_Switch_S           | 130    | 2.17          |                           |                   |
+| 532   | FLAME        | FLAME_fire             | 48     | 0.80          |                           |                   |
+| 533   | Flowers      | Flower_attack          | 48     | 0.80          |                           |                   |
+| 534   | Flowers      | Flower_attack_M        | 74     | 1.23          |                           |                   |
+| 535   | Flowers      | Flower_Hit             | 50     | 0.83          |                           |                   |
+| 536   | FOOD         | EAT_Burger             | 300    | 5.00          |                           |                   |
+| 537   | FOOD         | EAT_Chicken            | 300    | 5.00          |                           |                   |
+| 538   | FOOD         | EAT_Pizza              | 300    | 5.00          |                           |                   |
+| 539   | FOOD         | EAT_Vomit_P            | 480    | 8.00          |                           |                   |
+| 540   | FOOD         | EAT_Vomit_SK           | 480    | 8.00          |                           |                   |
+| 541   | FOOD         | FF_Dam_Bkw             | 40     | 0.67          |                           |                   |
+| 542   | FOOD         | FF_Dam_Fwd             | 40     | 0.67          |                           |                   |
+| 543   | FOOD         | FF_Dam_Left            | 40     | 0.67          |                           |                   |
+| 544   | FOOD         | FF_Dam_Right           | 40     | 0.67          |                           |                   |
+| 545   | FOOD         | FF_Die_Bkw             | 40     | 0.67          |                           |                   |
+| 546   | FOOD         | FF_Die_Fwd             | 40     | 0.67          |                           |                   |
+| 547   | FOOD         | FF_Die_Left            | 40     | 0.67          |                           |                   |
+| 548   | FOOD         | FF_Die_Right           | 40     | 0.67          |                           |                   |
+| 549   | FOOD         | FF_Sit_Eat1            | 170    | 2.83          |                           |                   |
+| 550   | FOOD         | FF_Sit_Eat2            | 160    | 2.67          |                           |                   |
+| 551   | FOOD         | FF_Sit_Eat3            | 160    | 2.67          |                           |                   |
+| 552   | FOOD         | FF_Sit_In              | 180    | 3.00          |                           |                   |
+| 553   | FOOD         | FF_Sit_In_L            | 120    | 2.00          |                           |                   |
+| 554   | FOOD         | FF_Sit_In_R            | 120    | 2.00          |                           |                   |
+| 555   | FOOD         | FF_Sit_Look            | 480    | 8.00          |                           |                   |
+| 556   | FOOD         | FF_Sit_Loop            | 160    | 2.67          |                           |                   |
+| 557   | FOOD         | FF_Sit_Out_180         | 170    | 2.83          |                           |                   |
+| 558   | FOOD         | FF_Sit_Out_L_180       | 80     | 1.33          |                           |                   |
+| 559   | FOOD         | FF_Sit_Out_R_180       | 80     | 1.33          |                           |                   |
+| 560   | FOOD         | SHP_Thank              | 70     | 1.17          |                           |                   |
+| 561   | FOOD         | SHP_Tray_In            | 40     | 0.67          |                           |                   |
+| 562   | FOOD         | SHP_Tray_Lift          | 100    | 1.67          |                           |                   |
+| 563   | FOOD         | SHP_Tray_Lift_In       | 30     | 0.50          |                           |                   |
+| 564   | FOOD         | SHP_Tray_Lift_Loop     | 480    | 8.00          |                           |                   |
+| 565   | FOOD         | SHP_Tray_Lift_Out      | 30     | 0.50          |                           |                   |
+| 566   | FOOD         | SHP_Tray_Out           | 40     | 0.67          |                           |                   |
+| 567   | FOOD         | SHP_Tray_Pose          | 40     | 0.67          |                           |                   |
+| 568   | FOOD         | SHP_Tray_Return        | 80     | 1.33          |                           |                   |
+| 569   | Freeweights  | gym_barbell            | 142    | 2.37          |                           |                   |
+| 570   | Freeweights  | gym_free_A             | 116    | 1.93          |                           |                   |
+| 571   | Freeweights  | gym_free_B             | 140    | 2.33          |                           |                   |
+| 572   | Freeweights  | gym_free_celebrate     | 200    | 3.33          |                           |                   |
+| 573   | Freeweights  | gym_free_down          | 34     | 0.57          |                           |                   |
+| 574   | Freeweights  | gym_free_loop          | 40     | 0.67          |                           |                   |
+| 575   | Freeweights  | gym_free_pickup        | 190    | 3.17          |                           |                   |
+| 576   | Freeweights  | gym_free_putdown       | 190    | 3.17          |                           |                   |
+| 577   | Freeweights  | gym_free_up_smooth     | 60     | 1.00          |                           |                   |
+| 578   | GANGS        | DEALER_DEAL            | 70     | 1.17          |                           |                   |
+| 579   | GANGS        | DEALER_IDLE            | 120    | 2.00          |                           |                   |
+| 580   | GANGS        | drnkbr_prtl            | 160    | 2.67          |                           |                   |
+| 581   | GANGS        | drnkbr_prtl_F          | 160    | 2.67          |                           |                   |
+| 582   | GANGS        | DRUGS_BUY              | 70     | 1.17          |                           |                   |
+| 583   | GANGS        | hndshkaa               | 240    | 4.00          |                           |                   |
+| 584   | GANGS        | hndshkba               | 140    | 2.33          |                           |                   |
+| 585   | GANGS        | hndshkca               | 200    | 3.33          |                           |                   |
+| 586   | GANGS        | hndshkcb               | 200    | 3.33          |                           |                   |
+| 587   | GANGS        | hndshkda               | 120    | 2.00          |                           |                   |
+| 588   | GANGS        | hndshkea               | 60     | 1.00          |                           |                   |
+| 589   | GANGS        | hndshkfa               | 250    | 4.17          |                           |                   |
+| 590   | GANGS        | hndshkfa_swt           | 250    | 4.17          |                           |                   |
+| 591   | GANGS        | Invite_No              | 200    | 3.33          |                           |                   |
+| 592   | GANGS        | Invite_Yes             | 260    | 4.33          |                           |                   |
+| 593   | GANGS        | leanIDLE               | 60     | 1.00          |                           |                   |
+| 594   | GANGS        | leanIN                 | 60     | 1.00          |                           |                   |
+| 595   | GANGS        | leanOUT                | 60     | 1.00          |                           |                   |
+| 596   | GANGS        | prtial_gngtlkA         | 240    | 4.00          |                           |                   |
+| 597   | GANGS        | prtial_gngtlkB         | 370    | 6.17          |                           |                   |
+| 598   | GANGS        | prtial_gngtlkC         | 440    | 7.33          |                           |                   |
+| 599   | GANGS        | prtial_gngtlkD         | 180    | 3.00          |                           |                   |
+| 600   | GANGS        | prtial_gngtlkE         | 170    | 2.83          |                           |                   |
+| 601   | GANGS        | prtial_gngtlkF         | 310    | 5.17          |                           |                   |
+| 602   | GANGS        | prtial_gngtlkG         | 420    | 7.00          |                           |                   |
+| 603   | GANGS        | prtial_gngtlkH         | 360    | 6.00          |                           |                   |
+| 604   | GANGS        | prtial_hndshk_01       | 100    | 1.67          |                           |                   |
+| 605   | GANGS        | prtial_hndshk_biz_01   | 140    | 2.33          |                           |                   |
+| 606   | GANGS        | shake_cara             | 100    | 1.67          |                           |                   |
+| 607   | GANGS        | shake_carK             | 76     | 1.27          |                           |                   |
+| 608   | GANGS        | shake_carSH            | 90     | 1.50          |                           |                   |
+| 609   | GANGS        | smkcig_prtl            | 450    | 7.50          |                           |                   |
+| 610   | GANGS        | smkcig_prtl_F          | 450    | 7.50          |                           |                   |
+| 1762  | GFUNK        | Dance_B1               | 76     | 1.27          |                           |                   |
+| 1763  | GFUNK        | Dance_B2               | 76     | 1.27          |                           |                   |
+| 1764  | GFUNK        | Dance_B3               | 76     | 1.27          |                           |                   |
+| 1765  | GFUNK        | Dance_B4               | 76     | 1.27          |                           |                   |
+| 1766  | GFUNK        | Dance_B5               | 76     | 1.27          |                           |                   |
+| 1767  | GFUNK        | Dance_B6               | 76     | 1.27          |                           |                   |
+| 1768  | GFUNK        | Dance_B7               | 76     | 1.27          |                           |                   |
+| 1769  | GFUNK        | Dance_B8               | 76     | 1.27          |                           |                   |
+| 1770  | GFUNK        | Dance_B9               | 76     | 1.27          |                           |                   |
+| 1771  | GFUNK        | Dance_B10              | 76     | 1.27          |                           |                   |
+| 1772  | GFUNK        | Dance_B11              | 76     | 1.27          |                           |                   |
+| 1773  | GFUNK        | Dance_B12              | 76     | 1.27          |                           |                   |
+| 1774  | GFUNK        | Dance_B13              | 76     | 1.27          |                           |                   |
+| 1775  | GFUNK        | Dance_B14              | 76     | 1.27          |                           |                   |
+| 1776  | GFUNK        | Dance_B15              | 76     | 1.27          |                           |                   |
+| 1777  | GFUNK        | Dance_B16              | 76     | 1.27          |                           |                   |
+| 1746  | GFUNK        | Dance_G1               | 76     | 1.27          |                           |                   |
+| 1747  | GFUNK        | Dance_G2               | 76     | 1.27          |                           |                   |
+| 1748  | GFUNK        | Dance_G3               | 76     | 1.27          |                           |                   |
+| 1749  | GFUNK        | Dance_G4               | 76     | 1.27          |                           |                   |
+| 1750  | GFUNK        | Dance_G5               | 76     | 1.27          |                           |                   |
+| 1751  | GFUNK        | Dance_G6               | 76     | 1.27          |                           |                   |
+| 1752  | GFUNK        | Dance_G7               | 76     | 1.27          |                           |                   |
+| 1753  | GFUNK        | Dance_G8               | 76     | 1.27          |                           |                   |
+| 1754  | GFUNK        | Dance_G9               | 76     | 1.27          |                           |                   |
+| 1755  | GFUNK        | Dance_G10              | 76     | 1.27          |                           |                   |
+| 1756  | GFUNK        | Dance_G11              | 76     | 1.27          |                           |                   |
+| 1757  | GFUNK        | Dance_G12              | 76     | 1.27          |                           |                   |
+| 1758  | GFUNK        | Dance_G13              | 76     | 1.27          |                           |                   |
+| 1759  | GFUNK        | Dance_G14              | 76     | 1.27          |                           |                   |
+| 1760  | GFUNK        | Dance_G15              | 76     | 1.27          |                           |                   |
+| 1761  | GFUNK        | Dance_G16              | 76     | 1.27          |                           |                   |
+| 1778  | GFUNK        | dance_loop             | 70     | 1.17          |                           |                   |
+| 611   | GHANDS       | gsign1                 | 286    | 4.77          |                           |                   |
+| 612   | GHANDS       | gsign1LH               | 164    | 2.73          |                           |                   |
+| 613   | GHANDS       | gsign2                 | 128    | 2.13          |                           |                   |
+| 614   | GHANDS       | gsign2LH               | 140    | 2.33          |                           |                   |
+| 615   | GHANDS       | gsign3                 | 280    | 4.67          |                           |                   |
+| 616   | GHANDS       | gsign3LH               | 120    | 2.00          |                           |                   |
+| 617   | GHANDS       | gsign4                 | 250    | 4.17          |                           |                   |
+| 618   | GHANDS       | gsign4LH               | 280    | 4.67          |                           |                   |
+| 619   | GHANDS       | gsign5                 | 372    | 6.20          |                           |                   |
+| 620   | GHANDS       | gsign5LH               | 120    | 2.00          |                           |                   |
+| 621   | GHANDS       | LHGsign1               | 120    | 2.00          |                           |                   |
+| 622   | GHANDS       | LHGsign2               | 120    | 2.00          |                           |                   |
+| 623   | GHANDS       | LHGsign3               | 120    | 2.00          |                           |                   |
+| 624   | GHANDS       | LHGsign4               | 120    | 2.00          |                           |                   |
+| 625   | GHANDS       | LHGsign5               | 120    | 2.00          |                           |                   |
+| 626   | GHANDS       | RHGsign1               | 120    | 2.00          |                           |                   |
+| 627   | GHANDS       | RHGsign2               | 120    | 2.00          |                           |                   |
+| 628   | GHANDS       | RHGsign3               | 120    | 2.00          |                           |                   |
+| 629   | GHANDS       | RHGsign4               | 120    | 2.00          |                           |                   |
+| 630   | GHANDS       | RHGsign5               | 120    | 2.00          |                           |                   |
+| 631   | GHETTO_DB    | GDB_Car2_PLY           | 570    | 9.50          |                           |                   |
+| 632   | GHETTO_DB    | GDB_Car2_SMO           | 570    | 9.50          |                           |                   |
+| 633   | GHETTO_DB    | GDB_Car2_SWE           | 570    | 9.50          |                           |                   |
+| 634   | GHETTO_DB    | GDB_Car_PLY            | 800    | 13.33         |                           |                   |
+| 635   | GHETTO_DB    | GDB_Car_RYD            | 800    | 13.33         |                           |                   |
+| 636   | GHETTO_DB    | GDB_Car_SMO            | 800    | 13.33         |                           |                   |
+| 637   | GHETTO_DB    | GDB_Car_SWE            | 800    | 13.33         |                           |                   |
+| 638   | goggles      | goggles_put_on         | 48     | 0.80          |                           |                   |
+| 639   | GRAFFITI     | graffiti_Chkout        | 280    | 4.67          |                           |                   |
+| 640   | GRAFFITI     | spraycan_fire          | 140    | 2.33          |                           |                   |
+| 641   | GRAVEYARD    | mrnF_loop              | 280    | 4.67          |                           |                   |
+| 642   | GRAVEYARD    | mrnM_loop              | 160    | 2.67          |                           |                   |
+| 643   | GRAVEYARD    | prst_loopa             | 240    | 4.00          |                           |                   |
+| 644   | GRENADE      | WEAPON_start_throw     | 12     | 0.20          |                           |                   |
+| 645   | GRENADE      | WEAPON_throw           | 52     | 0.87          |                           |                   |
+| 646   | GRENADE      | WEAPON_throwu          | 40     | 0.67          |                           |                   |
+| 647   | GYMNASIUM    | GYMshadowbox           | 306    | 5.10          |                           |                   |
+| 648   | GYMNASIUM    | gym_bike_celebrate     | 116    | 1.93          |                           |                   |
+| 649   | GYMNASIUM    | gym_bike_fast          | 24     | 0.40          |                           |                   |
+| 650   | GYMNASIUM    | gym_bike_faster        | 24     | 0.40          |                           |                   |
+| 651   | GYMNASIUM    | gym_bike_getoff        | 100    | 1.67          |                           |                   |
+| 652   | GYMNASIUM    | gym_bike_geton         | 100    | 1.67          |                           |                   |
+| 653   | GYMNASIUM    | gym_bike_pedal         | 24     | 0.40          |                           |                   |
+| 654   | GYMNASIUM    | gym_bike_slow          | 26     | 0.43          |                           |                   |
+| 655   | GYMNASIUM    | gym_bike_still         | 100    | 1.67          |                           |                   |
+| 656   | GYMNASIUM    | gym_jog_falloff        | 130    | 2.17          |                           |                   |
+| 657   | GYMNASIUM    | gym_shadowbox          | 306    | 5.10          |                           |                   |
+| 658   | GYMNASIUM    | gym_tread_celebrate    | 150    | 2.50          |                           |                   |
+| 659   | GYMNASIUM    | gym_tread_falloff      | 120    | 2.00          |                           |                   |
+| 660   | GYMNASIUM    | gym_tread_getoff       | 200    | 3.33          |                           |                   |
+| 661   | GYMNASIUM    | gym_tread_geton        | 150    | 2.50          |                           |                   |
+| 662   | GYMNASIUM    | gym_tread_jog          | 46     | 0.77          |                           |                   |
+| 663   | GYMNASIUM    | gym_tread_sprint       | 40     | 0.67          |                           |                   |
+| 664   | GYMNASIUM    | gym_tread_tired        | 80     | 1.33          |                           |                   |
+| 665   | GYMNASIUM    | gym_tread_walk         | 64     | 1.07          |                           |                   |
+| 666   | GYMNASIUM    | gym_walk_falloff       | 200    | 3.33          |                           |                   |
+| 667   | GYMNASIUM    | Pedals_fast            | 24     | 0.40          |                           |                   |
+| 668   | GYMNASIUM    | Pedals_med             | 24     | 0.40          |                           |                   |
+| 669   | GYMNASIUM    | Pedals_slow            | 26     | 0.43          |                           |                   |
+| 670   | GYMNASIUM    | Pedals_still           | 26     | 0.43          |                           |                   |
+| 671   | HAIRCUTS     | BRB_Beard_01           | 270    | 4.50          |                           |                   |
+| 672   | HAIRCUTS     | BRB_Buy                | 250    | 4.17          |                           |                   |
+| 673   | HAIRCUTS     | BRB_Cut                | 102    | 1.70          |                           |                   |
+| 674   | HAIRCUTS     | BRB_Cut_In             | 50     | 0.83          |                           |                   |
+| 675   | HAIRCUTS     | BRB_Cut_Out            | 80     | 1.33          |                           |                   |
+| 676   | HAIRCUTS     | BRB_Hair_01            | 230    | 3.83          |                           |                   |
+| 677   | HAIRCUTS     | BRB_Hair_02            | 270    | 4.50          |                           |                   |
+| 678   | HAIRCUTS     | BRB_In                 | 80     | 1.33          |                           |                   |
+| 679   | HAIRCUTS     | BRB_Loop               | 160    | 2.67          |                           |                   |
+| 680   | HAIRCUTS     | BRB_Out                | 40     | 0.67          |                           |                   |
+| 681   | HAIRCUTS     | BRB_Sit_In             | 124    | 2.07          |                           |                   |
+| 682   | HAIRCUTS     | BRB_Sit_Loop           | 420    | 7.00          |                           |                   |
+| 683   | HAIRCUTS     | BRB_Sit_Out            | 180    | 3.00          |                           |                   |
+| 684   | HEIST9       | CAS_G2_GasKO           | 200    | 3.33          |                           |                   |
+| 685   | HEIST9       | swt_wllpk_L            | 160    | 2.67          |                           |                   |
+| 686   | HEIST9       | swt_wllpk_L_back       | 30     | 0.50          |                           |                   |
+| 687   | HEIST9       | swt_wllpk_R            | 220    | 3.67          |                           |                   |
+| 688   | HEIST9       | swt_wllpk_R_back       | 26     | 0.43          |                           |                   |
+| 689   | HEIST9       | swt_wllshoot_in_L      | 60     | 1.00          |                           |                   |
+| 690   | HEIST9       | swt_wllshoot_in_R      | 78     | 1.30          |                           |                   |
+| 691   | HEIST9       | swt_wllshoot_out_L     | 120    | 2.00          |                           |                   |
+| 692   | HEIST9       | swt_wllshoot_out_R     | 86     | 1.43          |                           |                   |
+| 693   | HEIST9       | Use_SwipeCard          | 70     | 1.17          |                           |                   |
+| 694   | INT_HOUSE    | BED_In_L               | 200    | 3.33          |                           |                   |
+| 695   | INT_HOUSE    | BED_In_R               | 200    | 3.33          |                           |                   |
+| 696   | INT_HOUSE    | BED_Loop_L             | 200    | 3.33          |                           |                   |
+| 697   | INT_HOUSE    | BED_Loop_R             | 200    | 3.33          |                           |                   |
+| 698   | INT_HOUSE    | BED_Out_L              | 200    | 3.33          |                           |                   |
+| 699   | INT_HOUSE    | BED_Out_R              | 200    | 3.33          |                           |                   |
+| 700   | INT_HOUSE    | LOU_In                 | 110    | 1.83          |                           |                   |
+| 701   | INT_HOUSE    | LOU_Loop               | 200    | 3.33          |                           |                   |
+| 702   | INT_HOUSE    | LOU_Out                | 120    | 2.00          |                           |                   |
+| 703   | INT_HOUSE    | wash_up                | 180    | 3.00          |                           |                   |
+| 704   | INT_OFFICE   | FF_Dam_Fwd             | 40     | 0.67          |                           |                   |
+| 705   | INT_OFFICE   | OFF_Sit_2Idle_180      | 170    | 2.83          |                           |                   |
+| 706   | INT_OFFICE   | OFF_Sit_Bored_Loop     | 170    | 2.83          |                           |                   |
+| 707   | INT_OFFICE   | OFF_Sit_Crash          | 200    | 3.33          |                           |                   |
+| 708   | INT_OFFICE   | OFF_Sit_Drink          | 250    | 4.17          |                           |                   |
+| 709   | INT_OFFICE   | OFF_Sit_Idle_Loop      | 124    | 2.07          |                           |                   |
+| 710   | INT_OFFICE   | OFF_Sit_In             | 166    | 2.77          |                           |                   |
+| 711   | INT_OFFICE   | OFF_Sit_Read           | 200    | 3.33          |                           |                   |
+| 712   | INT_OFFICE   | OFF_Sit_Type_Loop      | 200    | 3.33          |                           |                   |
+| 713   | INT_OFFICE   | OFF_Sit_Watch          | 120    | 2.00          |                           |                   |
+| 714   | INT_SHOP     | shop_cashier           | 400    | 6.67          |                           |                   |
+| 715   | INT_SHOP     | shop_in                | 60     | 1.00          |                           |                   |
+| 716   | INT_SHOP     | shop_lookA             | 120    | 2.00          |                           |                   |
+| 717   | INT_SHOP     | shop_lookB             | 180    | 3.00          |                           |                   |
+| 718   | INT_SHOP     | shop_loop              | 120    | 2.00          |                           |                   |
+| 719   | INT_SHOP     | shop_out               | 80     | 1.33          |                           |                   |
+| 720   | INT_SHOP     | shop_pay               | 400    | 6.67          |                           |                   |
+| 721   | INT_SHOP     | shop_shelf             | 140    | 2.33          |                           |                   |
+| 722   | JST_BUISNESS | girl_01                | 200    | 3.33          |                           |                   |
+| 723   | JST_BUISNESS | girl_02                | 680    | 11.33         |                           |                   |
+| 724   | JST_BUISNESS | player_01              | 1490   | 24.83         |                           |                   |
+| 725   | JST_BUISNESS | smoke_01               | 1500   | 25.00         |                           |                   |
+| 726   | KART         | KART_getin_LHS         | 50     | 0.83          |                           |                   |
+| 727   | KART         | KART_getin_RHS         | 50     | 0.83          |                           |                   |
+| 728   | KART         | KART_getout_LHS        | 50     | 0.83          |                           |                   |
+| 729   | KART         | KART_getout_RHS        | 50     | 0.83          |                           |                   |
+| 730   | KISSING      | BD_GF_Wave             | 304    | 5.07          |                           |                   |
+| 731   | KISSING      | gfwave2                | 160    | 2.67          |                           |                   |
+| 732   | KISSING      | GF_CarArgue_01         | 300    | 5.00          |                           |                   |
+| 733   | KISSING      | GF_CarArgue_02         | 300    | 5.00          |                           |                   |
+| 734   | KISSING      | GF_CarSpot             | 300    | 5.00          |                           |                   |
+| 735   | KISSING      | GF_StreetArgue_01      | 300    | 5.00          |                           |                   |
+| 736   | KISSING      | GF_StreetArgue_02      | 300    | 5.00          |                           |                   |
+| 737   | KISSING      | gift_get               | 320    | 5.33          |                           |                   |
+| 738   | KISSING      | gift_give              | 320    | 5.33          |                           |                   |
+| 739   | KISSING      | Grlfrd_Kiss_01         | 250    | 4.17          |                           |                   |
+| 740   | KISSING      | Grlfrd_Kiss_02         | 346    | 5.77          |                           |                   |
+| 741   | KISSING      | Grlfrd_Kiss_03         | 420    | 7.00          |                           |                   |
+| 742   | KISSING      | Playa_Kiss_01          | 300    | 5.00          |                           |                   |
+| 743   | KISSING      | Playa_Kiss_02          | 346    | 5.77          |                           |                   |
+| 744   | KISSING      | Playa_Kiss_03          | 420    | 7.00          |                           |                   |
+| 745   | KNIFE        | KILL_Knife_Ped_Damage  | 134    | 2.23          |                           |                   |
+| 746   | KNIFE        | KILL_Knife_Ped_Die     | 116    | 1.93          |                           |                   |
+| 747   | KNIFE        | KILL_Knife_Player      | 160    | 2.67          |                           |                   |
+| 748   | KNIFE        | KILL_Partial           | 2      | 0.03          |                           |                   |
+| 749   | KNIFE        | knife_1                | 60     | 1.00          |                           |                   |
+| 750   | KNIFE        | knife_2                | 56     | 0.93          |                           |                   |
+| 751   | KNIFE        | knife_3                | 52     | 0.87          |                           |                   |
+| 752   | KNIFE        | Knife_4                | 54     | 0.90          |                           |                   |
+| 753   | KNIFE        | knife_block            | 28     | 0.47          |                           |                   |
+| 754   | KNIFE        | Knife_G                | 54     | 0.90          |                           |                   |
+| 755   | KNIFE        | knife_hit_1            | 34     | 0.57          |                           |                   |
+| 756   | KNIFE        | knife_hit_2            | 38     | 0.63          |                           |                   |
+| 757   | KNIFE        | knife_hit_3            | 96     | 1.60          |                           |                   |
+| 758   | KNIFE        | knife_IDLE             | 78     | 1.30          |                           |                   |
+| 759   | KNIFE        | knife_part             | 32     | 0.53          |                           |                   |
+| 760   | KNIFE        | WEAPON_knifeidle       | 78     | 1.30          |                           |                   |
+| 761   | LAPDAN1      | LAPDAN_D               | 2264   | 37.73         |                           |                   |
+| 762   | LAPDAN1      | LAPDAN_P               | 2264   | 37.73         |                           |                   |
+| 763   | LAPDAN2      | LAPDAN_D               | 2810   | 46.83         |                           |                   |
+| 764   | LAPDAN2      | LAPDAN_P               | 2810   | 46.83         |                           |                   |
+| 765   | LAPDAN3      | LAPDAN_D               | 3088   | 51.47         |                           |                   |
+| 766   | LAPDAN3      | LAPDAN_P               | 3088   | 51.47         |                           |                   |
+| 767   | LOWRIDER     | F_smklean_loop         | 240    | 4.00          |                           |                   |
+| 768   | LOWRIDER     | lrgirl_bdbnce          | 160    | 2.67          |                           |                   |
+| 769   | LOWRIDER     | lrgirl_hair            | 140    | 2.33          |                           |                   |
+| 770   | LOWRIDER     | lrgirl_hurry           | 170    | 2.83          |                           |                   |
+| 771   | LOWRIDER     | lrgirl_idleloop        | 130    | 2.17          |                           |                   |
+| 772   | LOWRIDER     | lrgirl_idle_to_l0      | 130    | 2.17          |                           |                   |
+| 773   | LOWRIDER     | lrgirl_l0_bnce         | 40     | 0.67          |                           |                   |
+| 774   | LOWRIDER     | lrgirl_l0_loop         | 120    | 2.00          |                           |                   |
+| 775   | LOWRIDER     | lrgirl_l0_to_l1        | 220    | 3.67          |                           |                   |
+| 776   | LOWRIDER     | lrgirl_l12_to_l0       | 120    | 2.00          |                           |                   |
+| 777   | LOWRIDER     | lrgirl_l1_bnce         | 40     | 0.67          |                           |                   |
+| 778   | LOWRIDER     | lrgirl_l1_loop         | 120    | 2.00          |                           |                   |
+| 779   | LOWRIDER     | lrgirl_l1_to_l2        | 80     | 1.33          |                           |                   |
+| 780   | LOWRIDER     | lrgirl_l2_bnce         | 40     | 0.67          |                           |                   |
+| 781   | LOWRIDER     | lrgirl_l2_loop         | 90     | 1.50          |                           |                   |
+| 782   | LOWRIDER     | lrgirl_l2_to_l3        | 90     | 1.50          |                           |                   |
+| 783   | LOWRIDER     | lrgirl_l345_to_l1      | 60     | 1.00          |                           |                   |
+| 784   | LOWRIDER     | lrgirl_l3_bnce         | 40     | 0.67          |                           |                   |
+| 785   | LOWRIDER     | lrgirl_l3_loop         | 120    | 2.00          |                           |                   |
+| 786   | LOWRIDER     | lrgirl_l3_to_l4        | 40     | 0.67          |                           |                   |
+| 787   | LOWRIDER     | lrgirl_l4_bnce         | 40     | 0.67          |                           |                   |
+| 788   | LOWRIDER     | lrgirl_l4_loop         | 140    | 2.33          |                           |                   |
+| 789   | LOWRIDER     | lrgirl_l4_to_l5        | 60     | 1.00          |                           |                   |
+| 790   | LOWRIDER     | lrgirl_l5_bnce         | 50     | 0.83          |                           |                   |
+| 791   | LOWRIDER     | lrgirl_l5_loop         | 100    | 1.67          |                           |                   |
+| 792   | LOWRIDER     | M_smklean_loop         | 300    | 5.00          |                           |                   |
+| 793   | LOWRIDER     | M_smkstnd_loop         | 320    | 5.33          |                           |                   |
+| 794   | LOWRIDER     | prtial_gngtlkB         | 88     | 1.47          |                           |                   |
+| 795   | LOWRIDER     | prtial_gngtlkC         | 90     | 1.50          |                           |                   |
+| 796   | LOWRIDER     | prtial_gngtlkD         | 148    | 2.47          |                           |                   |
+| 797   | LOWRIDER     | prtial_gngtlkE         | 180    | 3.00          |                           |                   |
+| 798   | LOWRIDER     | prtial_gngtlkF         | 160    | 2.67          |                           |                   |
+| 799   | LOWRIDER     | prtial_gngtlkG         | 160    | 2.67          |                           |                   |
+| 800   | LOWRIDER     | prtial_gngtlkH         | 200    | 3.33          |                           |                   |
+| 801   | LOWRIDER     | RAP_A_Loop             | 160    | 2.67          |                           |                   |
+| 802   | LOWRIDER     | RAP_B_Loop             | 160    | 2.67          |                           |                   |
+| 803   | LOWRIDER     | RAP_C_Loop             | 180    | 3.00          |                           |                   |
+| 804   | LOWRIDER     | Sit_relaxed            | 2      | 0.03          |                           |                   |
+| 805   | LOWRIDER     | Tap_hand               | 20     | 0.33          |                           |                   |
+| 806   | MD_CHASE     | Carhit_Hangon          | 92     | 1.53          |                           |                   |
+| 807   | MD_CHASE     | Carhit_Tumble          | 122    | 2.03          |                           |                   |
+| 808   | MD_CHASE     | donutdrop              | 90     | 1.50          |                           |                   |
+| 809   | MD_CHASE     | Fen_Choppa_L1          | 86     | 1.43          |                           |                   |
+| 810   | MD_CHASE     | Fen_Choppa_L2          | 78     | 1.30          |                           |                   |
+| 811   | MD_CHASE     | Fen_Choppa_L3          | 78     | 1.30          |                           |                   |
+| 812   | MD_CHASE     | Fen_Choppa_R1          | 78     | 1.30          |                           |                   |
+| 813   | MD_CHASE     | Fen_Choppa_R2          | 78     | 1.30          |                           |                   |
+| 814   | MD_CHASE     | Fen_Choppa_R3          | 78     | 1.30          |                           |                   |
+| 815   | MD_CHASE     | Hangon_Stun_loop       | 280    | 4.67          |                           |                   |
+| 816   | MD_CHASE     | Hangon_Stun_Turn       | 240    | 4.00          |                           |                   |
+| 817   | MD_CHASE     | MD_BIKE_2_HANG         | 82     | 1.37          |                           |                   |
+| 818   | MD_CHASE     | MD_BIKE_Jmp_BL         | 66     | 1.10          |                           |                   |
+| 819   | MD_CHASE     | MD_BIKE_Jmp_F          | 60     | 1.00          |                           |                   |
+| 820   | MD_CHASE     | MD_BIKE_Lnd_BL         | 54     | 0.90          |                           |                   |
+| 821   | MD_CHASE     | MD_BIKE_Lnd_Die_BL     | 92     | 1.53          |                           |                   |
+| 822   | MD_CHASE     | MD_BIKE_Lnd_Die_F      | 48     | 0.80          |                           |                   |
+| 823   | MD_CHASE     | MD_BIKE_Lnd_F          | 70     | 1.17          |                           |                   |
+| 824   | MD_CHASE     | MD_BIKE_Lnd_Roll       | 162    | 2.70          |                           |                   |
+| 825   | MD_CHASE     | MD_BIKE_Lnd_Roll_F     | 62     | 1.03          |                           |                   |
+| 826   | MD_CHASE     | MD_BIKE_Punch          | 110    | 1.83          |                           |                   |
+| 827   | MD_CHASE     | MD_BIKE_Punch_F        | 110    | 1.83          |                           |                   |
+| 828   | MD_CHASE     | MD_BIKE_Shot_F         | 80     | 1.33          |                           |                   |
+| 829   | MD_CHASE     | MD_HANG_Lnd_Roll       | 162    | 2.70          |                           |                   |
+| 830   | MD_CHASE     | MD_HANG_Loop           | 60     | 1.00          |                           |                   |
+| 831   | MD_END       | END_SC1_PLY            | 300    | 5.00          |                           |                   |
+| 832   | MD_END       | END_SC1_RYD            | 300    | 5.00          |                           |                   |
+| 833   | MD_END       | END_SC1_SMO            | 300    | 5.00          |                           |                   |
+| 834   | MD_END       | END_SC1_SWE            | 300    | 5.00          |                           |                   |
+| 835   | MD_END       | END_SC2_PLY            | 540    | 9.00          |                           |                   |
+| 836   | MD_END       | END_SC2_RYD            | 540    | 9.00          |                           |                   |
+| 837   | MD_END       | END_SC2_SMO            | 540    | 9.00          |                           |                   |
+| 838   | MD_END       | END_SC2_SWE            | 540    | 9.00          |                           |                   |
+| 839   | MEDIC        | CPR                    | 500    | 8.33          |                           |                   |
+| 840   | MISC         | bitchslap              | 70     | 1.17          |                           |                   |
+| 841   | MISC         | BMX_celebrate          | 94     | 1.57          |                           |                   |
+| 842   | MISC         | BMX_comeon             | 46     | 0.77          |                           |                   |
+| 843   | MISC         | bmx_idleloop_01        | 200    | 3.33          |                           |                   |
+| 844   | MISC         | bmx_idleloop_02        | 400    | 6.67          |                           |                   |
+| 845   | MISC         | bmx_talkleft_in        | 40     | 0.67          |                           |                   |
+| 846   | MISC         | bmx_talkleft_loop      | 400    | 6.67          |                           |                   |
+| 847   | MISC         | bmx_talkleft_out       | 40     | 0.67          |                           |                   |
+| 848   | MISC         | bmx_talkright_in       | 40     | 0.67          |                           |                   |
+| 849   | MISC         | bmx_talkright_loop     | 440    | 7.33          |                           |                   |
+| 850   | MISC         | bmx_talkright_out      | 40     | 0.67          |                           |                   |
+| 851   | MISC         | bng_wndw               | 440    | 7.33          |                           |                   |
+| 852   | MISC         | bng_wndw_02            | 440    | 7.33          |                           |                   |
+| 853   | MISC         | Case_pickup            | 60     | 1.00          |                           |                   |
+| 854   | MISC         | door_jet               | 320    | 5.33          |                           |                   |
+| 855   | MISC         | GRAB_L                 | 24     | 0.40          |                           |                   |
+| 856   | MISC         | GRAB_R                 | 24     | 0.40          |                           |                   |
+| 857   | MISC         | Hiker_Pose             | 20     | 0.33          |                           |                   |
+| 858   | MISC         | Hiker_Pose_L           | 20     | 0.33          |                           |                   |
+| 859   | MISC         | Idle_Chat_02           | 434    | 7.23          |                           |                   |
+| 860   | MISC         | KAT_Throw_K            | 200    | 3.33          |                           |                   |
+| 861   | MISC         | KAT_Throw_O            | 200    | 3.33          |                           |                   |
+| 862   | MISC         | KAT_Throw_P            | 200    | 3.33          |                           |                   |
+| 863   | MISC         | PASS_Rifle_O           | 80     | 1.33          |                           |                   |
+| 864   | MISC         | PASS_Rifle_Ped         | 80     | 1.33          |                           |                   |
+| 865   | MISC         | PASS_Rifle_Ply         | 80     | 1.33          |                           |                   |
+| 866   | MISC         | pickup_box             | 24     | 0.40          |                           |                   |
+| 867   | MISC         | Plane_door             | 320    | 5.33          |                           |                   |
+| 868   | MISC         | Plane_exit             | 320    | 5.33          |                           |                   |
+| 869   | MISC         | Plane_hijack           | 320    | 5.33          |                           |                   |
+| 870   | MISC         | Plunger_01             | 200    | 3.33          |                           |                   |
+| 871   | MISC         | Plyrlean_loop          | 160    | 2.67          |                           |                   |
+| 872   | MISC         | plyr_shkhead           | 100    | 1.67          |                           |                   |
+| 873   | MISC         | Run_Dive               | 496    | 8.27          |                           |                   |
+| 874   | MISC         | Scratchballs_01        | 500    | 8.33          |                           |                   |
+| 875   | MISC         | SEAT_LR                | 220    | 3.67          |                           |                   |
+| 876   | MISC         | Seat_talk_01           | 220    | 3.67          |                           |                   |
+| 877   | MISC         | Seat_talk_02           | 200    | 3.33          |                           |                   |
+| 878   | MISC         | SEAT_watch             | 140    | 2.33          |                           |                   |
+| 879   | MISC         | smalplane_door         | 380    | 6.33          |                           |                   |
+| 880   | MISC         | smlplane_door          | 320    | 5.33          |                           |                   |
+| 881   | MTB          | MTB_back               | 6      | 0.10          |                           |                   |
+| 882   | MTB          | MTB_bunnyhop           | 20     | 0.33          |                           |                   |
+| 883   | MTB          | MTB_drivebyFT          | 12     | 0.20          |                           |                   |
+| 884   | MTB          | MTB_driveby_LHS        | 12     | 0.20          |                           |                   |
+| 885   | MTB          | MTB_driveby_RHS        | 12     | 0.20          |                           |                   |
+| 886   | MTB          | MTB_fwd                | 12     | 0.20          |                           |                   |
+| 887   | MTB          | MTB_getoffBACK         | 92     | 1.53          |                           |                   |
+| 888   | MTB          | MTB_getoffLHS          | 44     | 0.73          |                           |                   |
+| 889   | MTB          | MTB_getoffRHS          | 44     | 0.73          |                           |                   |
+| 890   | MTB          | MTB_jumponL            | 48     | 0.80          |                           |                   |
+| 891   | MTB          | MTB_jumponR            | 50     | 0.83          |                           |                   |
+| 892   | MTB          | MTB_Left               | 8      | 0.13          |                           |                   |
+| 893   | MTB          | MTB_pedal              | 40     | 0.67          |                           |                   |
+| 894   | MTB          | MTB_pushes             | 48     | 0.80          |                           |                   |
+| 895   | MTB          | MTB_Ride               | 2      | 0.03          |                           |                   |
+| 896   | MTB          | MTB_Right              | 8      | 0.13          |                           |                   |
+| 897   | MTB          | MTB_sprint             | 48     | 0.80          |                           |                   |
+| 898   | MTB          | MTB_still              | 2      | 0.03          |                           |                   |
+| 899   | MUSCULAR     | MscleWalkst_armed      | 12     | 0.20          |                           |                   |
+| 900   | MUSCULAR     | MscleWalkst_Csaw       | 12     | 0.20          |                           |                   |
+| 901   | MUSCULAR     | Mscle_rckt_run         | 48     | 0.80          |                           |                   |
+| 902   | MUSCULAR     | Mscle_rckt_walkst      | 12     | 0.20          |                           |                   |
+| 903   | MUSCULAR     | Mscle_run_Csaw         | 48     | 0.80          |                           |                   |
+| 904   | MUSCULAR     | MuscleIdle             | 90     | 1.50          |                           |                   |
+| 905   | MUSCULAR     | MuscleIdle_armed       | 90     | 1.50          |                           |                   |
+| 906   | MUSCULAR     | MuscleIdle_Csaw        | 90     | 1.50          |                           |                   |
+| 907   | MUSCULAR     | MuscleIdle_rocket      | 90     | 1.50          |                           |                   |
+| 908   | MUSCULAR     | MuscleRun              | 48     | 0.80          |                           |                   |
+| 909   | MUSCULAR     | MuscleRun_armed        | 48     | 0.80          |                           |                   |
+| 910   | MUSCULAR     | MuscleSprint           | 34     | 0.57          |                           |                   |
+| 911   | MUSCULAR     | MuscleWalk             | 64     | 1.07          |                           |                   |
+| 912   | MUSCULAR     | MuscleWalkstart        | 16     | 0.27          |                           |                   |
+| 913   | MUSCULAR     | MuscleWalk_armed       | 64     | 1.07          |                           |                   |
+| 914   | MUSCULAR     | Musclewalk_Csaw        | 64     | 1.07          |                           |                   |
+| 915   | MUSCULAR     | Musclewalk_rocket      | 64     | 1.07          |                           |                   |
+| 916   | NEVADA       | NEVADA_getin           | 112    | 1.87          |                           |                   |
+| 917   | NEVADA       | NEVADA_getout          | 56     | 0.93          |                           |                   |
+| 918   | ON_LOOKERS   | lkaround_in            | 20     | 0.33          |                           |                   |
+| 919   | ON_LOOKERS   | lkaround_loop          | 420    | 7.00          |                           |                   |
+| 920   | ON_LOOKERS   | lkaround_out           | 20     | 0.33          |                           |                   |
+| 921   | ON_LOOKERS   | lkup_in                | 100    | 1.67          |                           |                   |
+| 922   | ON_LOOKERS   | lkup_loop              | 320    | 5.33          |                           |                   |
+| 923   | ON_LOOKERS   | lkup_out               | 60     | 1.00          |                           |                   |
+| 924   | ON_LOOKERS   | lkup_point             | 200    | 3.33          |                           |                   |
+| 925   | ON_LOOKERS   | panic_cower            | 400    | 6.67          |                           |                   |
+| 926   | ON_LOOKERS   | panic_hide             | 380    | 6.33          |                           |                   |
+| 927   | ON_LOOKERS   | panic_in               | 50     | 0.83          |                           |                   |
+| 928   | ON_LOOKERS   | panic_loop             | 100    | 1.67          |                           |                   |
+| 929   | ON_LOOKERS   | panic_out              | 40     | 0.67          |                           |                   |
+| 930   | ON_LOOKERS   | panic_point            | 360    | 6.00          |                           |                   |
+| 931   | ON_LOOKERS   | panic_shout            | 520    | 8.67          |                           |                   |
+| 932   | ON_LOOKERS   | Pointup_in             | 60     | 1.00          |                           |                   |
+| 933   | ON_LOOKERS   | Pointup_loop           | 160    | 2.67          |                           |                   |
+| 934   | ON_LOOKERS   | Pointup_out            | 60     | 1.00          |                           |                   |
+| 935   | ON_LOOKERS   | Pointup_shout          | 180    | 3.00          |                           |                   |
+| 936   | ON_LOOKERS   | point_in               | 30     | 0.50          |                           |                   |
+| 937   | ON_LOOKERS   | point_loop             | 180    | 3.00          |                           |                   |
+| 938   | ON_LOOKERS   | point_out              | 20     | 0.33          |                           |                   |
+| 939   | ON_LOOKERS   | shout_01               | 160    | 2.67          |                           |                   |
+| 940   | ON_LOOKERS   | shout_02               | 240    | 4.00          |                           |                   |
+| 941   | ON_LOOKERS   | shout_in               | 100    | 1.67          |                           |                   |
+| 942   | ON_LOOKERS   | shout_loop             | 120    | 2.00          |                           |                   |
+| 943   | ON_LOOKERS   | shout_out              | 20     | 0.33          |                           |                   |
+| 944   | ON_LOOKERS   | wave_in                | 50     | 0.83          |                           |                   |
+| 945   | ON_LOOKERS   | wave_loop              | 90     | 1.50          |                           |                   |
+| 946   | ON_LOOKERS   | wave_out               | 50     | 0.83          |                           |                   |
+| 947   | OTB          | betslp_in              | 80     | 1.33          |                           |                   |
+| 948   | OTB          | betslp_lkabt           | 160    | 2.67          |                           |                   |
+| 949   | OTB          | betslp_loop            | 160    | 2.67          |                           |                   |
+| 950   | OTB          | betslp_out             | 60     | 1.00          |                           |                   |
+| 951   | OTB          | betslp_tnk             | 336    | 5.60          |                           |                   |
+| 952   | OTB          | wtchrace_cmon          | 300    | 5.00          |                           |                   |
+| 953   | OTB          | wtchrace_in            | 100    | 1.67          |                           |                   |
+| 954   | OTB          | wtchrace_loop          | 160    | 2.67          |                           |                   |
+| 955   | OTB          | wtchrace_lose          | 240    | 4.00          |                           |                   |
+| 956   | OTB          | wtchrace_out           | 60     | 1.00          |                           |                   |
+| 957   | OTB          | wtchrace_win           | 260    | 4.33          |                           |                   |
+| 958   | PARACHUTE    | FALL_skyDive           | 80     | 1.33          |                           |                   |
+| 959   | PARACHUTE    | FALL_SkyDive_Accel     | 80     | 1.33          |                           |                   |
+| 960   | PARACHUTE    | FALL_skyDive_DIE       | 60     | 1.00          |                           |                   |
+| 961   | PARACHUTE    | FALL_SkyDive_L         | 80     | 1.33          |                           |                   |
+| 962   | PARACHUTE    | FALL_SkyDive_R         | 80     | 1.33          |                           |                   |
+| 963   | PARACHUTE    | PARA_decel             | 120    | 2.00          |                           |                   |
+| 964   | PARACHUTE    | PARA_decel_O           | 120    | 2.00          |                           |                   |
+| 965   | PARACHUTE    | PARA_float             | 120    | 2.00          |                           |                   |
+| 966   | PARACHUTE    | PARA_float_O           | 120    | 2.00          |                           |                   |
+| 967   | PARACHUTE    | PARA_Land              | 100    | 1.67          |                           |                   |
+| 968   | PARACHUTE    | PARA_Land_O            | 130    | 2.17          |                           |                   |
+| 969   | PARACHUTE    | PARA_Land_Water        | 140    | 2.33          |                           |                   |
+| 970   | PARACHUTE    | PARA_Land_Water_O      | 130    | 2.17          |                           |                   |
+| 971   | PARACHUTE    | PARA_open              | 170    | 2.83          |                           |                   |
+| 972   | PARACHUTE    | PARA_open_O            | 140    | 2.33          |                           |                   |
+| 973   | PARACHUTE    | PARA_Rip_Land_O        | 54     | 0.90          |                           |                   |
+| 974   | PARACHUTE    | PARA_Rip_Loop_O        | 60     | 1.00          |                           |                   |
+| 975   | PARACHUTE    | PARA_Rip_O             | 14     | 0.23          |                           |                   |
+| 976   | PARACHUTE    | PARA_steerL            | 120    | 2.00          |                           |                   |
+| 977   | PARACHUTE    | PARA_steerL_O          | 120    | 2.00          |                           |                   |
+| 978   | PARACHUTE    | PARA_steerR            | 120    | 2.00          |                           |                   |
+| 979   | PARACHUTE    | PARA_steerR_O          | 120    | 2.00          |                           |                   |
+| 980   | PARK         | Tai_Chi_in             | 130    | 2.17          |                           |                   |
+| 981   | PARK         | Tai_Chi_Loop           | 720    | 12.00         |                           |                   |
+| 982   | PARK         | Tai_Chi_Out            | 50     | 0.83          |                           |                   |
+| 983   | PAULNMAC     | Piss_in                | 540    | 9.00          |                           |                   |
+| 984   | PAULNMAC     | Piss_loop              | 400    | 6.67          |                           |                   |
+| 985   | PAULNMAC     | Piss_out               | 660    | 11.00         |                           |                   |
+| 986   | PAULNMAC     | PnM_Argue1_A           | 260    | 4.33          |                           |                   |
+| 987   | PAULNMAC     | PnM_Argue1_B           | 260    | 4.33          |                           |                   |
+| 988   | PAULNMAC     | PnM_Argue2_A           | 260    | 4.33          |                           |                   |
+| 989   | PAULNMAC     | PnM_Argue2_B           | 260    | 4.33          |                           |                   |
+| 990   | PAULNMAC     | PnM_Loop_A             | 320    | 5.33          |                           |                   |
+| 991   | PAULNMAC     | PnM_Loop_B             | 320    | 5.33          |                           |                   |
+| 992   | PAULNMAC     | wank_in                | 440    | 7.33          |                           |                   |
+| 993   | PAULNMAC     | wank_loop              | 160    | 2.67          |                           |                   |
+| 994   | PAULNMAC     | wank_out               | 700    | 11.67         |                           |                   |
+| 995   | ped          | abseil                 | 2      | 0.03          |                           |                   |
+| 996   | ped          | ARRESTgun              | 40     | 0.67          |                           |                   |
+| 997   | ped          | ATM                    | 730    | 12.17         |                           |                   |
+| 998   | ped          | BIKE_elbowL            | 58     | 0.97          |                           |                   |
+| 999   | ped          | BIKE_elbowR            | 58     | 0.97          |                           |                   |
+| 1000  | ped          | BIKE_fallR             | 98     | 1.63          |                           |                   |
+| 1001  | ped          | BIKE_fall_off          | 64     | 1.07          |                           |                   |
+| 1002  | ped          | BIKE_pickupL           | 64     | 1.07          |                           |                   |
+| 1003  | ped          | BIKE_pickupR           | 64     | 1.07          |                           |                   |
+| 1004  | ped          | BIKE_pullupL           | 60     | 1.00          |                           |                   |
+| 1005  | ped          | BIKE_pullupR           | 60     | 1.00          |                           |                   |
+| 1006  | ped          | bomber                 | 36     | 0.60          |                           |                   |
+| 1007  | ped          | CAR_alignHI_LHS        | 44     | 0.73          |                           |                   |
+| 1008  | ped          | CAR_alignHI_RHS        | 44     | 0.73          |                           |                   |
+| 1009  | ped          | CAR_align_LHS          | 8      | 0.13          |                           |                   |
+| 1010  | ped          | CAR_align_RHS          | 8      | 0.13          |                           |                   |
+| 1011  | ped          | CAR_closedoorL_LHS     | 36     | 0.60          |                           |                   |
+| 1012  | ped          | CAR_closedoorL_RHS     | 24     | 0.40          |                           |                   |
+| 1013  | ped          | CAR_closedoor_LHS      | 36     | 0.60          |                           |                   |
+| 1014  | ped          | CAR_closedoor_RHS      | 24     | 0.40          |                           |                   |
+| 1015  | ped          | CAR_close_LHS          | 44     | 0.73          |                           |                   |
+| 1016  | ped          | CAR_close_RHS          | 44     | 0.73          |                           |                   |
+| 1017  | ped          | CAR_crawloutRHS        | 130    | 2.17          |                           |                   |
+| 1018  | ped          | CAR_dead_LHS           | 2      | 0.03          |                           |                   |
+| 1019  | ped          | CAR_dead_RHS           | 2      | 0.03          |                           |                   |
+| 1020  | ped          | CAR_doorlocked_LHS     | 80     | 1.33          |                           |                   |
+| 1021  | ped          | CAR_doorlocked_RHS     | 76     | 1.27          |                           |                   |
+| 1022  | ped          | CAR_fallout_LHS        | 34     | 0.57          |                           |                   |
+| 1023  | ped          | CAR_fallout_RHS        | 34     | 0.57          |                           |                   |
+| 1024  | ped          | CAR_getinL_LHS         | 60     | 1.00          |                           |                   |
+| 1025  | ped          | CAR_getinL_RHS         | 60     | 1.00          |                           |                   |
+| 1026  | ped          | CAR_getin_LHS          | 60     | 1.00          |                           |                   |
+| 1027  | ped          | CAR_getin_RHS          | 60     | 1.00          |                           |                   |
+| 1028  | ped          | CAR_getoutL_LHS        | 56     | 0.93          |                           |                   |
+| 1029  | ped          | CAR_getoutL_RHS        | 60     | 1.00          |                           |                   |
+| 1030  | ped          | CAR_getout_LHS         | 68     | 1.13          |                           |                   |
+| 1031  | ped          | CAR_getout_RHS         | 48     | 0.80          |                           |                   |
+| 1032  | ped          | car_hookertalk         | 258    | 4.30          |                           |                   |
+| 1033  | ped          | CAR_jackedLHS          | 174    | 2.90          |                           |                   |
+| 1034  | ped          | CAR_jackedRHS          | 206    | 3.43          |                           |                   |
+| 1035  | ped          | CAR_jumpin_LHS         | 60     | 1.00          |                           |                   |
+| 1036  | ped          | CAR_LB                 | 14     | 0.23          |                           |                   |
+| 1037  | ped          | CAR_LB_pro             | 6      | 0.10          |                           |                   |
+| 1038  | ped          | CAR_LB_weak            | 14     | 0.23          |                           |                   |
+| 1039  | ped          | CAR_LjackedLHS         | 214    | 3.57          |                           |                   |
+| 1040  | ped          | CAR_LjackedRHS         | 208    | 3.47          |                           |                   |
+| 1041  | ped          | CAR_Lshuffle_RHS       | 24     | 0.40          |                           |                   |
+| 1042  | ped          | CAR_Lsit               | 2      | 0.03          |                           |                   |
+| 1043  | ped          | CAR_open_LHS           | 66     | 1.10          |                           |                   |
+| 1044  | ped          | CAR_open_RHS           | 66     | 1.10          |                           |                   |
+| 1045  | ped          | CAR_pulloutL_LHS       | 176    | 2.93          |                           |                   |
+| 1046  | ped          | CAR_pulloutL_RHS       | 176    | 2.93          |                           |                   |
+| 1047  | ped          | CAR_pullout_LHS        | 138    | 2.30          |                           |                   |
+| 1048  | ped          | CAR_pullout_RHS        | 168    | 2.80          |                           |                   |
+| 1049  | ped          | CAR_Qjacked            | 198    | 3.30          |                           |                   |
+| 1050  | ped          | CAR_rolldoor           | 36     | 0.60          |                           |                   |
+| 1051  | ped          | CAR_rolldoorLO         | 36     | 0.60          |                           |                   |
+| 1052  | ped          | CAR_rollout_LHS        | 98     | 1.63          |                           |                   |
+| 1053  | ped          | CAR_rollout_RHS        | 76     | 1.27          |                           |                   |
+| 1054  | ped          | CAR_shuffle_RHS        | 24     | 0.40          |                           |                   |
+| 1055  | ped          | CAR_sit                | 2      | 0.03          |                           |                   |
+| 1056  | ped          | CAR_sitp               | 2      | 0.03          |                           |                   |
+| 1057  | ped          | CAR_sitpLO             | 2      | 0.03          |                           |                   |
+| 1058  | ped          | CAR_sit_pro            | 2      | 0.03          |                           |                   |
+| 1059  | ped          | CAR_sit_weak           | 2      | 0.03          |                           |                   |
+| 1060  | ped          | CAR_tune_radio         | 38     | 0.63          |                           |                   |
+| 1061  | ped          | CLIMB_idle             | 48     | 0.80          |                           |                   |
+| 1062  | ped          | CLIMB_jump             | 34     | 0.57          |                           |                   |
+| 1063  | ped          | CLIMB_jump2fall        | 2      | 0.03          |                           |                   |
+| 1064  | ped          | CLIMB_jump_B           | 58     | 0.97          |                           |                   |
+| 1065  | ped          | CLIMB_Pull             | 52     | 0.87          |                           |                   |
+| 1066  | ped          | CLIMB_Stand            | 48     | 0.80          |                           |                   |
+| 1067  | ped          | CLIMB_Stand_finish     | 12     | 0.20          |                           |                   |
+| 1068  | ped          | cower                  | 48     | 0.80          |                           |                   |
+| 1069  | ped          | Crouch_Roll_L          | 56     | 0.93          |                           |                   |
+| 1070  | ped          | Crouch_Roll_R          | 56     | 0.93          |                           |                   |
+| 1071  | ped          | DAM_armL_frmBK         | 50     | 0.83          |                           |                   |
+| 1072  | ped          | DAM_armL_frmFT         | 50     | 0.83          |                           |                   |
+| 1073  | ped          | DAM_armL_frmLT         | 40     | 0.67          |                           |                   |
+| 1074  | ped          | DAM_armR_frmBK         | 50     | 0.83          |                           |                   |
+| 1075  | ped          | DAM_armR_frmFT         | 30     | 0.50          |                           |                   |
+| 1076  | ped          | DAM_armR_frmRT         | 16     | 0.27          |                           |                   |
+| 1077  | ped          | DAM_LegL_frmBK         | 50     | 0.83          |                           |                   |
+| 1078  | ped          | DAM_LegL_frmFT         | 50     | 0.83          |                           |                   |
+| 1079  | ped          | DAM_LegL_frmLT         | 50     | 0.83          |                           |                   |
+| 1080  | ped          | DAM_LegR_frmBK         | 50     | 0.83          |                           |                   |
+| 1081  | ped          | DAM_LegR_frmFT         | 50     | 0.83          |                           |                   |
+| 1082  | ped          | DAM_LegR_frmRT         | 50     | 0.83          |                           |                   |
+| 1083  | ped          | DAM_stomach_frmBK      | 50     | 0.83          |                           |                   |
+| 1084  | ped          | DAM_stomach_frmFT      | 50     | 0.83          |                           |                   |
+| 1085  | ped          | DAM_stomach_frmLT      | 50     | 0.83          |                           |                   |
+| 1086  | ped          | DAM_stomach_frmRT      | 50     | 0.83          |                           |                   |
+| 1087  | ped          | DOOR_LHinge_O          | 64     | 1.07          |                           |                   |
+| 1088  | ped          | DOOR_RHinge_O          | 64     | 1.07          |                           |                   |
+| 1089  | ped          | DrivebyL_L             | 12     | 0.20          |                           |                   |
+| 1090  | ped          | DrivebyL_R             | 12     | 0.20          |                           |                   |
+| 1091  | ped          | Driveby_L              | 12     | 0.20          |                           |                   |
+| 1092  | ped          | Driveby_R              | 12     | 0.20          |                           |                   |
+| 1093  | ped          | DRIVE_BOAT             | 2      | 0.03          |                           |                   |
+| 1094  | ped          | DRIVE_BOAT_back        | 6      | 0.10          |                           |                   |
+| 1095  | ped          | DRIVE_BOAT_L           | 6      | 0.10          |                           |                   |
+| 1096  | ped          | DRIVE_BOAT_R           | 6      | 0.10          |                           |                   |
+| 1097  | ped          | Drive_L                | 8      | 0.13          |                           |                   |
+| 1098  | ped          | Drive_LO_l             | 8      | 0.13          |                           |                   |
+| 1099  | ped          | Drive_LO_R             | 8      | 0.13          |                           |                   |
+| 1100  | ped          | Drive_L_pro            | 8      | 0.13          |                           |                   |
+| 1101  | ped          | Drive_L_pro_slow       | 8      | 0.13          |                           |                   |
+| 1102  | ped          | Drive_L_slow           | 8      | 0.13          |                           |                   |
+| 1103  | ped          | Drive_L_weak           | 8      | 0.13          |                           |                   |
+| 1104  | ped          | Drive_L_weak_slow      | 8      | 0.13          |                           |                   |
+| 1105  | ped          | Drive_R                | 8      | 0.13          |                           |                   |
+| 1106  | ped          | Drive_R_pro            | 8      | 0.13          |                           |                   |
+| 1107  | ped          | Drive_R_pro_slow       | 8      | 0.13          |                           |                   |
+| 1108  | ped          | Drive_R_slow           | 8      | 0.13          |                           |                   |
+| 1109  | ped          | Drive_R_weak           | 8      | 0.13          |                           |                   |
+| 1110  | ped          | Drive_R_weak_slow      | 8      | 0.13          |                           |                   |
+| 1111  | ped          | Drive_truck            | 2      | 0.03          |                           |                   |
+| 1112  | ped          | DRIVE_truck_back       | 6      | 0.10          |                           |                   |
+| 1113  | ped          | DRIVE_truck_L          | 8      | 0.13          |                           |                   |
+| 1114  | ped          | DRIVE_truck_R          | 8      | 0.13          |                           |                   |
+| 1115  | ped          | Drown                  | 150    | 2.50          |                           |                   |
+| 1116  | ped          | DUCK_cower             | 48     | 0.80          |                           |                   |
+| 1117  | ped          | endchat_01             | 120    | 2.00          |                           |                   |
+| 1118  | ped          | endchat_02             | 120    | 2.00          |                           |                   |
+| 1119  | ped          | endchat_03             | 140    | 2.33          |                           |                   |
+| 1120  | ped          | EV_dive                | 140    | 2.33          |                           |                   |
+| 1121  | ped          | EV_step                | 64     | 1.07          |                           |                   |
+| 1122  | ped          | facanger               | 8      | 0.13          |                           |                   |
+| 1123  | ped          | facgum                 | 62     | 1.03          |                           |                   |
+| 1124  | ped          | facsurp                | 8      | 0.13          |                           |                   |
+| 1125  | ped          | facsurpm               | 8      | 0.13          |                           |                   |
+| 1126  | ped          | factalk                | 140    | 2.33          |                           |                   |
+| 1127  | ped          | facurios               | 8      | 0.13          |                           |                   |
+| 1128  | ped          | FALL_back              | 44     | 0.73          |                           |                   |
+| 1129  | ped          | FALL_collapse          | 60     | 1.00          |                           |                   |
+| 1130  | ped          | FALL_fall              | 44     | 0.73          |                           |                   |
+| 1131  | ped          | FALL_front             | 44     | 0.73          |                           |                   |
+| 1132  | ped          | FALL_glide             | 48     | 0.80          |                           |                   |
+| 1133  | ped          | FALL_land              | 28     | 0.47          |                           |                   |
+| 1134  | ped          | FALL_skyDive           | 80     | 1.33          |                           |                   |
+| 1135  | ped          | Fight2Idle             | 20     | 0.33          |                           |                   |
+| 1136  | ped          | FightA_1               | 26     | 0.43          |                           |                   |
+| 1137  | ped          | FightA_2               | 46     | 0.77          |                           |                   |
+| 1138  | ped          | FightA_3               | 52     | 0.87          |                           |                   |
+| 1139  | ped          | FightA_block           | 28     | 0.47          |                           |                   |
+| 1140  | ped          | FightA_G               | 56     | 0.93          |                           |                   |
+| 1141  | ped          | FightA_M               | 24     | 0.40          |                           |                   |
+| 1142  | ped          | FIGHTIDLE              | 78     | 1.30          |                           |                   |
+| 1143  | ped          | FightShB               | 28     | 0.47          |                           |                   |
+| 1144  | ped          | FightShF               | 32     | 0.53          |                           |                   |
+| 1145  | ped          | FightSh_BWD            | 40     | 0.67          |                           |                   |
+| 1146  | ped          | FightSh_FWD            | 40     | 0.67          |                           |                   |
+| 1147  | ped          | FightSh_Left           | 40     | 0.67          |                           |                   |
+| 1148  | ped          | FightSh_Right          | 40     | 0.67          |                           |                   |
+| 1149  | ped          | flee_lkaround_01       | 120    | 2.00          |                           |                   |
+| 1150  | ped          | FLOOR_hit              | 22     | 0.37          |                           |                   |
+| 1151  | ped          | FLOOR_hit_f            | 24     | 0.40          |                           |                   |
+| 1152  | ped          | fucku                  | 80     | 1.33          |                           |                   |
+| 1153  | ped          | gang_gunstand          | 2      | 0.03          |                           |                   |
+| 1154  | ped          | gas_cwr                | 60     | 1.00          |                           |                   |
+| 1155  | ped          | getup                  | 82     | 1.37          |                           |                   |
+| 1156  | ped          | getup_front            | 82     | 1.37          |                           |                   |
+| 1157  | ped          | gum_eat                | 320    | 5.33          |                           |                   |
+| 1158  | ped          | GunCrouchBwd           | 60     | 1.00          |                           |                   |
+| 1159  | ped          | GunCrouchFwd           | 44     | 0.73          |                           |                   |
+| 1160  | ped          | GunMove_BWD            | 62     | 1.03          |                           |                   |
+| 1161  | ped          | GunMove_FWD            | 60     | 1.00          |                           |                   |
+| 1162  | ped          | GunMove_L              | 60     | 1.00          |                           |                   |
+| 1163  | ped          | GunMove_R              | 60     | 1.00          |                           |                   |
+| 1164  | ped          | Gun_2_IDLE             | 16     | 0.27          |                           |                   |
+| 1165  | ped          | GUN_BUTT               | 26     | 0.43          |                           |                   |
+| 1166  | ped          | GUN_BUTT_crouch        | 26     | 0.43          |                           |                   |
+| 1167  | ped          | Gun_stand              | 2      | 0.03          |                           |                   |
+| 1168  | ped          | handscower             | 116    | 1.93          |                           |                   |
+| 1169  | ped          | handsup                | 36     | 0.60          |                           |                   |
+| 1170  | ped          | HitA_1                 | 18     | 0.30          |                           |                   |
+| 1171  | ped          | HitA_2                 | 32     | 0.53          |                           |                   |
+| 1172  | ped          | HitA_3                 | 34     | 0.57          |                           |                   |
+| 1173  | ped          | HIT_back               | 30     | 0.50          |                           |                   |
+| 1174  | ped          | HIT_behind             | 40     | 0.67          |                           |                   |
+| 1175  | ped          | HIT_front              | 36     | 0.60          |                           |                   |
+| 1176  | ped          | HIT_GUN_BUTT           | 30     | 0.50          |                           |                   |
+| 1177  | ped          | HIT_L                  | 42     | 0.70          |                           |                   |
+| 1178  | ped          | HIT_R                  | 36     | 0.60          |                           |                   |
+| 1179  | ped          | HIT_walk               | 20     | 0.33          |                           |                   |
+| 1180  | ped          | HIT_wall               | 42     | 0.70          |                           |                   |
+| 1181  | ped          | Idlestance_fat         | 100    | 1.67          |                           |                   |
+| 1182  | ped          | idlestance_old         | 120    | 2.00          |                           |                   |
+| 1183  | ped          | IDLE_armed             | 88     | 1.47          |                           |                   |
+| 1184  | ped          | IDLE_chat              | 400    | 6.67          |                           |                   |
+| 1185  | ped          | IDLE_csaw              | 92     | 1.53          |                           |                   |
+| 1186  | ped          | Idle_Gang1             | 100    | 1.67          |                           |                   |
+| 1187  | ped          | IDLE_HBHB              | 160    | 2.67          |                           |                   |
+| 1188  | ped          | IDLE_ROCKET            | 94     | 1.57          |                           |                   |
+| 1189  | ped          | IDLE_stance            | 90     | 1.50          |                           |                   |
+| 1190  | ped          | IDLE_taxi              | 52     | 0.87          |                           |                   |
+| 1191  | ped          | IDLE_tired             | 60     | 1.00          |                           |                   |
+| 1192  | ped          | Jetpack_Idle           | 2      | 0.03          |                           |                   |
+| 1193  | ped          | JOG_femaleA            | 46     | 0.77          |                           |                   |
+| 1194  | ped          | JOG_maleA              | 46     | 0.77          |                           |                   |
+| 1195  | ped          | JUMP_glide             | 30     | 0.50          |                           |                   |
+| 1196  | ped          | JUMP_land              | 14     | 0.23          |                           |                   |
+| 1197  | ped          | JUMP_launch            | 12     | 0.20          |                           |                   |
+| 1198  | ped          | JUMP_launch_R          | 12     | 0.20          |                           |                   |
+| 1199  | ped          | KART_drive             | 2      | 0.03          |                           |                   |
+| 1200  | ped          | KART_L                 | 8      | 0.13          |                           |                   |
+| 1201  | ped          | KART_LB                | 2      | 0.03          |                           |                   |
+| 1202  | ped          | KART_R                 | 8      | 0.13          |                           |                   |
+| 1203  | ped          | KD_left                | 54     | 0.90          |                           |                   |
+| 1204  | ped          | KD_right               | 54     | 0.90          |                           |                   |
+| 1205  | ped          | KO_shot_face           | 126    | 2.10          |                           |                   |
+| 1206  | ped          | KO_shot_front          | 34     | 0.57          |                           |                   |
+| 1207  | ped          | KO_shot_stom           | 190    | 3.17          |                           |                   |
+| 1208  | ped          | KO_skid_back           | 58     | 0.97          |                           |                   |
+| 1209  | ped          | KO_skid_front          | 68     | 1.13          |                           |                   |
+| 1210  | ped          | KO_spin_L              | 52     | 0.87          |                           |                   |
+| 1211  | ped          | KO_spin_R              | 56     | 0.93          |                           |                   |
+| 1212  | ped          | pass_Smoke_in_car      | 104    | 1.73          |                           |                   |
+| 1213  | ped          | phone_in               | 140    | 2.33          |                           |                   |
+| 1214  | ped          | phone_out              | 120    | 2.00          |                           |                   |
+| 1215  | ped          | phone_talk             | 120    | 2.00          |                           |                   |
+| 1216  | ped          | Player_Sneak           | 80     | 1.33          |                           |                   |
+| 1217  | ped          | Player_Sneak_walkstart | 18     | 0.30          |                           |                   |
+| 1218  | ped          | roadcross              | 120    | 2.00          |                           |                   |
+| 1219  | ped          | roadcross_female       | 240    | 4.00          |                           |                   |
+| 1220  | ped          | roadcross_gang         | 120    | 2.00          |                           |                   |
+| 1221  | ped          | roadcross_old          | 240    | 4.00          |                           |                   |
+| 1222  | ped          | run_1armed             | 46     | 0.77          |                           |                   |
+| 1223  | ped          | run_armed              | 42     | 0.70          |                           |                   |
+| 1224  | ped          | run_civi               | 44     | 0.73          |                           |                   |
+| 1225  | ped          | run_csaw               | 42     | 0.70          |                           |                   |
+| 1226  | ped          | run_fat                | 48     | 0.80          |                           |                   |
+| 1227  | ped          | run_fatold             | 48     | 0.80          |                           |                   |
+| 1228  | ped          | run_gang1              | 50     | 0.83          |                           |                   |
+| 1229  | ped          | run_left               | 40     | 0.67          |                           |                   |
+| 1230  | ped          | run_old                | 48     | 0.80          |                           |                   |
+| 1231  | ped          | run_player             | 44     | 0.73          |                           |                   |
+| 1232  | ped          | run_right              | 40     | 0.67          |                           |                   |
+| 1233  | ped          | run_rocket             | 46     | 0.77          |                           |                   |
+| 1234  | ped          | Run_stop               | 52     | 0.87          |                           |                   |
+| 1235  | ped          | Run_stopR              | 48     | 0.80          |                           |                   |
+| 1236  | ped          | Run_Wuzi               | 46     | 0.77          |                           |                   |
+| 1237  | ped          | SEAT_down              | 90     | 1.50          |                           |                   |
+| 1238  | ped          | SEAT_idle              | 120    | 2.00          |                           |                   |
+| 1239  | ped          | SEAT_up                | 70     | 1.17          |                           |                   |
+| 1240  | ped          | SHOT_leftP             | 18     | 0.30          |                           |                   |
+| 1241  | ped          | SHOT_partial           | 22     | 0.37          |                           |                   |
+| 1242  | ped          | SHOT_partial_B         | 20     | 0.33          |                           |                   |
+| 1243  | ped          | SHOT_rightP            | 20     | 0.33          |                           |                   |
+| 1244  | ped          | Shove_Partial          | 32     | 0.53          |                           |                   |
+| 1245  | ped          | Smoke_in_car           | 104    | 1.73          |                           |                   |
+| 1246  | ped          | sprint_civi            | 32     | 0.53          |                           |                   |
+| 1247  | ped          | sprint_panic           | 36     | 0.60          |                           |                   |
+| 1248  | ped          | Sprint_Wuzi            | 40     | 0.67          |                           |                   |
+| 1249  | ped          | swat_run               | 40     | 0.67          |                           |                   |
+| 1250  | ped          | Swim_Tread             | 78     | 1.30          |                           |                   |
+| 1251  | ped          | Tap_hand               | 2      | 0.03          |                           |                   |
+| 1252  | ped          | Tap_handP              | 2      | 0.03          |                           |                   |
+| 1253  | ped          | turn_180               | 38     | 0.63          |                           |                   |
+| 1254  | ped          | Turn_L                 | 48     | 0.80          |                           |                   |
+| 1255  | ped          | Turn_R                 | 48     | 0.80          |                           |                   |
+| 1256  | ped          | WALK_armed             | 64     | 1.07          |                           |                   |
+| 1257  | ped          | WALK_civi              | 68     | 1.13          |                           |                   |
+| 1258  | ped          | WALK_csaw              | 64     | 1.07          |                           |                   |
+| 1259  | ped          | Walk_DoorPartial       | 48     | 0.80          |                           |                   |
+| 1260  | ped          | WALK_drunk             | 236    | 3.93          |                           |                   |
+| 1261  | ped          | WALK_fat               | 80     | 1.33          |                           |                   |
+| 1262  | ped          | WALK_fatold            | 70     | 1.17          |                           |                   |
+| 1263  | ped          | WALK_gang1             | 84     | 1.40          |                           |                   |
+| 1264  | ped          | WALK_gang2             | 84     | 1.40          |                           |                   |
+| 1265  | ped          | WALK_old               | 84     | 1.40          |                           |                   |
+| 1266  | ped          | WALK_player            | 72     | 1.20          |                           |                   |
+| 1267  | ped          | WALK_rocket            | 64     | 1.07          |                           |                   |
+| 1268  | ped          | WALK_shuffle           | 72     | 1.20          |                           |                   |
+| 1269  | ped          | WALK_start             | 16     | 0.27          |                           |                   |
+| 1270  | ped          | WALK_start_armed       | 12     | 0.20          |                           |                   |
+| 1271  | ped          | WALK_start_csaw        | 12     | 0.20          |                           |                   |
+| 1272  | ped          | WALK_start_rocket      | 12     | 0.20          |                           |                   |
+| 1273  | ped          | Walk_Wuzi              | 70     | 1.17          |                           |                   |
+| 1274  | ped          | WEAPON_crouch          | 48     | 0.80          |                           |                   |
+| 1275  | ped          | woman_idlestance       | 320    | 5.33          |                           |                   |
+| 1276  | ped          | woman_run              | 46     | 0.77          |                           |                   |
+| 1277  | ped          | WOMAN_runbusy          | 40     | 0.67          |                           |                   |
+| 1278  | ped          | WOMAN_runfatold        | 72     | 1.20          |                           |                   |
+| 1279  | ped          | woman_runpanic         | 36     | 0.60          |                           |                   |
+| 1280  | ped          | WOMAN_runsexy          | 42     | 0.70          |                           |                   |
+| 1281  | ped          | WOMAN_walkbusy         | 60     | 1.00          |                           |                   |
+| 1282  | ped          | WOMAN_walkfatold       | 72     | 1.20          |                           |                   |
+| 1283  | ped          | WOMAN_walknorm         | 68     | 1.13          |                           |                   |
+| 1284  | ped          | WOMAN_walkold          | 72     | 1.20          |                           |                   |
+| 1285  | ped          | WOMAN_walkpro          | 80     | 1.33          |                           |                   |
+| 1286  | ped          | WOMAN_walksexy         | 70     | 1.17          |                           |                   |
+| 1287  | ped          | WOMAN_walkshop         | 58     | 0.97          |                           |                   |
+| 1288  | ped          | XPRESSscratch          | 238    | 3.97          |                           |                   |
+| 1289  | PLAYER_DVBYS | Plyr_DrivebyBwd        | 50     | 0.83          |                           |                   |
+| 1290  | PLAYER_DVBYS | Plyr_DrivebyFwd        | 50     | 0.83          |                           |                   |
+| 1291  | PLAYER_DVBYS | Plyr_DrivebyLHS        | 50     | 0.83          |                           |                   |
+| 1292  | PLAYER_DVBYS | Plyr_DrivebyRHS        | 50     | 0.83          |                           |                   |
+| 1293  | PLAYIDLES    | shift                  | 216    | 3.60          |                           |                   |
+| 1294  | PLAYIDLES    | shldr                  | 130    | 2.17          |                           |                   |
+| 1295  | PLAYIDLES    | stretch                | 276    | 4.60          |                           |                   |
+| 1296  | PLAYIDLES    | strleg                 | 220    | 3.67          |                           |                   |
+| 1297  | PLAYIDLES    | time                   | 312    | 5.20          |                           |                   |
+| 1298  | POLICE       | CopTraf_Away           | 88     | 1.47          |                           |                   |
+| 1299  | POLICE       | CopTraf_Come           | 172    | 2.87          |                           |                   |
+| 1300  | POLICE       | CopTraf_Left           | 120    | 2.00          |                           |                   |
+| 1301  | POLICE       | CopTraf_Stop           | 120    | 2.00          |                           |                   |
+| 1302  | POLICE       | COP_getoutcar_LHS      | 50     | 0.83          |                           |                   |
+| 1303  | POLICE       | Cop_move_FWD           | 60     | 1.00          |                           |                   |
+| 1304  | POLICE       | crm_drgbst_01          | 1114   | 18.57         |                           |                   |
+| 1305  | POLICE       | Door_Kick              | 80     | 1.33          |                           |                   |
+| 1306  | POLICE       | plc_drgbst_01          | 1236   | 20.60         |                           |                   |
+| 1307  | POLICE       | plc_drgbst_02          | 454    | 7.57          |                           |                   |
+| 1308  | POOL         | POOL_ChalkCue          | 290    | 4.83          |                           |                   |
+| 1309  | POOL         | POOL_Idle_Stance       | 120    | 2.00          |                           |                   |
+| 1310  | POOL         | POOL_Long_Shot         | 100    | 1.67          |                           |                   |
+| 1311  | POOL         | POOL_Long_Shot_O       | 100    | 1.67          |                           |                   |
+| 1312  | POOL         | POOL_Long_Start        | 40     | 0.67          |                           |                   |
+| 1313  | POOL         | POOL_Long_Start_O      | 40     | 0.67          |                           |                   |
+| 1314  | POOL         | POOL_Med_Shot          | 100    | 1.67          |                           |                   |
+| 1315  | POOL         | POOL_Med_Shot_O        | 100    | 1.67          |                           |                   |
+| 1316  | POOL         | POOL_Med_Start         | 40     | 0.67          |                           |                   |
+| 1317  | POOL         | POOL_Med_Start_O       | 40     | 0.67          |                           |                   |
+| 1318  | POOL         | POOL_Place_White       | 150    | 2.50          |                           |                   |
+| 1319  | POOL         | POOL_Short_Shot        | 100    | 1.67          |                           |                   |
+| 1320  | POOL         | POOL_Short_Shot_O      | 100    | 1.67          |                           |                   |
+| 1321  | POOL         | POOL_Short_Start       | 40     | 0.67          |                           |                   |
+| 1322  | POOL         | POOL_Short_Start_O     | 40     | 0.67          |                           |                   |
+| 1323  | POOL         | POOL_Walk              | 76     | 1.27          |                           |                   |
+| 1324  | POOL         | POOL_Walk_Start        | 12     | 0.20          |                           |                   |
+| 1325  | POOL         | POOL_XLong_Shot        | 100    | 1.67          |                           |                   |
+| 1326  | POOL         | POOL_XLong_Shot_O      | 100    | 1.67          |                           |                   |
+| 1327  | POOL         | POOL_XLong_Start       | 40     | 0.67          |                           |                   |
+| 1328  | POOL         | POOL_XLong_Start_O     | 40     | 0.67          |                           |                   |
+| 1329  | POOR         | WINWASH_Start          | 26     | 0.43          |                           |                   |
+| 1330  | POOR         | WINWASH_Wash2Beg       | 128    | 2.13          |                           |                   |
+| 1331  | PYTHON       | python_crouchfire      | 72     | 1.20          |                           |                   |
+| 1332  | PYTHON       | python_crouchreload    | 60     | 1.00          |                           |                   |
+| 1333  | PYTHON       | python_fire            | 70     | 1.17          |                           |                   |
+| 1334  | PYTHON       | python_fire_poor       | 88     | 1.47          |                           |                   |
+| 1335  | PYTHON       | python_reload          | 56     | 0.93          |                           |                   |
+| 1336  | QUAD         | QUAD_back              | 6      | 0.10          |                           |                   |
+| 1337  | QUAD         | QUAD_driveby_FT        | 12     | 0.20          |                           |                   |
+| 1338  | QUAD         | QUAD_driveby_LHS       | 12     | 0.20          |                           |                   |
+| 1339  | QUAD         | QUAD_driveby_RHS       | 12     | 0.20          |                           |                   |
+| 1340  | QUAD         | QUAD_FWD               | 12     | 0.20          |                           |                   |
+| 1341  | QUAD         | QUAD_getoff_B          | 98     | 1.63          |                           |                   |
+| 1342  | QUAD         | QUAD_getoff_LHS        | 40     | 0.67          |                           |                   |
+| 1343  | QUAD         | QUAD_getoff_RHS        | 42     | 0.70          |                           |                   |
+| 1344  | QUAD         | QUAD_geton_LHS         | 44     | 0.73          |                           |                   |
+| 1345  | QUAD         | QUAD_geton_RHS         | 44     | 0.73          |                           |                   |
+| 1346  | QUAD         | QUAD_hit               | 2      | 0.03          |                           |                   |
+| 1347  | QUAD         | QUAD_kick              | 68     | 1.13          |                           |                   |
+| 1348  | QUAD         | QUAD_Left              | 8      | 0.13          |                           |                   |
+| 1349  | QUAD         | QUAD_passenger         | 2      | 0.03          |                           |                   |
+| 1350  | QUAD         | QUAD_reverse           | 10     | 0.17          |                           |                   |
+| 1351  | QUAD         | QUAD_ride              | 2      | 0.03          |                           |                   |
+| 1352  | QUAD         | QUAD_Right             | 8      | 0.13          |                           |                   |
+| 1353  | QUAD_DBZ     | Pass_Driveby_BWD       | 50     | 0.83          |                           |                   |
+| 1354  | QUAD_DBZ     | Pass_Driveby_FWD       | 50     | 0.83          |                           |                   |
+| 1355  | QUAD_DBZ     | Pass_Driveby_LHS       | 50     | 0.83          |                           |                   |
+| 1356  | QUAD_DBZ     | Pass_Driveby_RHS       | 50     | 0.83          |                           |                   |
+| 1357  | RAPPING      | Laugh_01               | 320    | 5.33          |                           |                   |
+| 1358  | RAPPING      | RAP_A_IN               | 50     | 0.83          |                           |                   |
+| 1359  | RAPPING      | RAP_A_Loop             | 160    | 2.67          |                           |                   |
+| 1360  | RAPPING      | RAP_A_OUT              | 20     | 0.33          |                           |                   |
+| 1361  | RAPPING      | RAP_B_IN               | 60     | 1.00          |                           |                   |
+| 1362  | RAPPING      | RAP_B_Loop             | 160    | 2.67          |                           |                   |
+| 1363  | RAPPING      | RAP_B_OUT              | 52     | 0.87          |                           |                   |
+| 1364  | RAPPING      | RAP_C_Loop             | 180    | 3.00          |                           |                   |
+| 1365  | RIFLE        | RIFLE_crouchfire       | 52     | 0.87          |                           |                   |
+| 1366  | RIFLE        | RIFLE_crouchload       | 76     | 1.27          |                           |                   |
+| 1367  | RIFLE        | RIFLE_fire             | 48     | 0.80          |                           |                   |
+| 1368  | RIFLE        | RIFLE_fire_poor        | 48     | 0.80          |                           |                   |
+| 1369  | RIFLE        | RIFLE_load             | 84     | 1.40          |                           |                   |
+| 1370  | RIOT         | RIOT_ANGRY             | 300    | 5.00          |                           |                   |
+| 1371  | RIOT         | RIOT_ANGRY_B           | 38     | 0.63          |                           |                   |
+| 1372  | RIOT         | RIOT_challenge         | 194    | 3.23          |                           |                   |
+| 1373  | RIOT         | RIOT_CHANT             | 104    | 1.73          |                           |                   |
+| 1374  | RIOT         | RIOT_FUKU              | 40     | 0.67          |                           |                   |
+| 1375  | RIOT         | RIOT_PUNCHES           | 40     | 0.67          |                           |                   |
+| 1376  | RIOT         | RIOT_shout             | 60     | 1.00          |                           |                   |
+| 1377  | ROB_BANK     | CAT_Safe_End           | 30     | 0.50          |                           |                   |
+| 1378  | ROB_BANK     | CAT_Safe_Open          | 200    | 3.33          |                           |                   |
+| 1379  | ROB_BANK     | CAT_Safe_Open_O        | 200    | 3.33          |                           |                   |
+| 1380  | ROB_BANK     | CAT_Safe_Rob           | 110    | 1.83          |                           |                   |
+| 1381  | ROB_BANK     | SHP_HandsUp_Scr        | 40     | 0.67          |                           |                   |
+| 1382  | ROCKET       | idle_rocket            | 96     | 1.60          |                           |                   |
+| 1383  | ROCKET       | RocketFire             | 58     | 0.97          |                           |                   |
+| 1384  | ROCKET       | run_rocket             | 46     | 0.77          |                           |                   |
+| 1385  | ROCKET       | walk_rocket            | 64     | 1.07          |                           |                   |
+| 1386  | ROCKET       | WALK_start_rocket      | 12     | 0.20          |                           |                   |
+| 1795  | RUNNINGMAN   | Dance_B1               | 32     | 0.53          |                           |                   |
+| 1796  | RUNNINGMAN   | Dance_B2               | 34     | 0.57          |                           |                   |
+| 1797  | RUNNINGMAN   | Dance_B3               | 32     | 0.53          |                           |                   |
+| 1798  | RUNNINGMAN   | Dance_B4               | 34     | 0.57          |                           |                   |
+| 1799  | RUNNINGMAN   | Dance_B5               | 32     | 0.53          |                           |                   |
+| 1800  | RUNNINGMAN   | Dance_B6               | 34     | 0.57          |                           |                   |
+| 1801  | RUNNINGMAN   | Dance_B7               | 32     | 0.53          |                           |                   |
+| 1802  | RUNNINGMAN   | Dance_B8               | 34     | 0.57          |                           |                   |
+| 1803  | RUNNINGMAN   | Dance_B9               | 32     | 0.53          |                           |                   |
+| 1804  | RUNNINGMAN   | Dance_B10              | 34     | 0.57          |                           |                   |
+| 1805  | RUNNINGMAN   | Dance_B11              | 32     | 0.53          |                           |                   |
+| 1806  | RUNNINGMAN   | Dance_B12              | 34     | 0.57          |                           |                   |
+| 1807  | RUNNINGMAN   | Dance_B13              | 32     | 0.53          |                           |                   |
+| 1808  | RUNNINGMAN   | Dance_B14              | 34     | 0.57          |                           |                   |
+| 1809  | RUNNINGMAN   | Dance_B15              | 32     | 0.53          |                           |                   |
+| 1810  | RUNNINGMAN   | Dance_B16              | 34     | 0.57          |                           |                   |
+| 1779  | RUNNINGMAN   | Dance_G1               | 32     | 0.53          |                           |                   |
+| 1780  | RUNNINGMAN   | Dance_G2               | 34     | 0.57          |                           |                   |
+| 1781  | RUNNINGMAN   | Dance_G3               | 32     | 0.53          |                           |                   |
+| 1782  | RUNNINGMAN   | Dance_G4               | 34     | 0.57          |                           |                   |
+| 1783  | RUNNINGMAN   | Dance_G5               | 32     | 0.53          |                           |                   |
+| 1784  | RUNNINGMAN   | Dance_G6               | 34     | 0.57          |                           |                   |
+| 1785  | RUNNINGMAN   | Dance_G7               | 32     | 0.53          |                           |                   |
+| 1786  | RUNNINGMAN   | Dance_G8               | 34     | 0.57          |                           |                   |
+| 1787  | RUNNINGMAN   | Dance_G9               | 32     | 0.53          |                           |                   |
+| 1788  | RUNNINGMAN   | Dance_G10              | 34     | 0.57          |                           |                   |
+| 1789  | RUNNINGMAN   | Dance_G11              | 32     | 0.53          |                           |                   |
+| 1790  | RUNNINGMAN   | Dance_G12              | 34     | 0.57          |                           |                   |
+| 1791  | RUNNINGMAN   | Dance_G13              | 32     | 0.53          |                           |                   |
+| 1792  | RUNNINGMAN   | Dance_G14              | 34     | 0.57          |                           |                   |
+| 1793  | RUNNINGMAN   | Dance_G15              | 32     | 0.53          |                           |                   |
+| 1794  | RUNNINGMAN   | Dance_G16              | 34     | 0.57          |                           |                   |
+| 1811  | RUNNINGMAN   | dance_loop             | 70     | 1.17          |                           |                   |
+| 1387  | RUSTLER      | Plane_align_LHS        | 44     | 0.73          |                           |                   |
+| 1388  | RUSTLER      | Plane_close            | 24     | 0.40          |                           |                   |
+| 1389  | RUSTLER      | Plane_getin            | 48     | 0.80          |                           |                   |
+| 1390  | RUSTLER      | Plane_getout           | 94     | 1.57          |                           |                   |
+| 1391  | RUSTLER      | Plane_open             | 42     | 0.70          |                           |                   |
+| 1392  | RYDER        | RYD_Beckon_01          | 74     | 1.23          |                           |                   |
+| 1393  | RYDER        | RYD_Beckon_02          | 60     | 1.00          |                           |                   |
+| 1394  | RYDER        | RYD_Beckon_03          | 64     | 1.07          |                           |                   |
+| 1395  | RYDER        | RYD_Die_PT1            | 240    | 4.00          |                           |                   |
+| 1396  | RYDER        | RYD_Die_PT2            | 476    | 7.93          |                           |                   |
+| 1397  | RYDER        | Van_Crate_L            | 40     | 0.67          |                           |                   |
+| 1398  | RYDER        | Van_Crate_R            | 40     | 0.67          |                           |                   |
+| 1399  | RYDER        | Van_Fall_L             | 28     | 0.47          |                           |                   |
+| 1400  | RYDER        | Van_Fall_R             | 56     | 0.93          |                           |                   |
+| 1401  | RYDER        | Van_Lean_L             | 40     | 0.67          |                           |                   |
+| 1402  | RYDER        | Van_Lean_R             | 40     | 0.67          |                           |                   |
+| 1403  | RYDER        | VAN_PickUp_E           | 110    | 1.83          |                           |                   |
+| 1404  | RYDER        | VAN_PickUp_S           | 90     | 1.50          |                           |                   |
+| 1405  | RYDER        | Van_Stand              | 40     | 0.67          |                           |                   |
+| 1406  | RYDER        | Van_Stand_Crate        | 40     | 0.67          |                           |                   |
+| 1407  | RYDER        | Van_Throw              | 82     | 1.37          |                           |                   |
+| 1812  | SAMP         | FishingIdle            |        |               | Adicionado na SA-MP 0.3.7 |                   |
+| 1408  | SCRATCHING   | scdldlp                | 40     | 0.67          |                           |                   |
+| 1409  | SCRATCHING   | scdlulp                | 40     | 0.67          |                           |                   |
+| 1410  | SCRATCHING   | scdrdlp                | 40     | 0.67          |                           |                   |
+| 1411  | SCRATCHING   | scdrulp                | 40     | 0.67          |                           |                   |
+| 1412  | SCRATCHING   | sclng_l                | 60     | 1.00          |                           |                   |
+| 1413  | SCRATCHING   | sclng_r                | 60     | 1.00          |                           |                   |
+| 1414  | SCRATCHING   | scmid_l                | 28     | 0.47          |                           |                   |
+| 1415  | SCRATCHING   | scmid_r                | 28     | 0.47          |                           |                   |
+| 1416  | SCRATCHING   | scshrtl                | 12     | 0.20          |                           |                   |
+| 1417  | SCRATCHING   | scshrtr                | 12     | 0.20          |                           |                   |
+| 1418  | SCRATCHING   | sc_ltor                | 40     | 0.67          |                           |                   |
+| 1419  | SCRATCHING   | sc_rtol                | 40     | 0.67          |                           |                   |
 | no    | SEX          | SEX_1to2_P             | 60     | 1.00          | Bloqueado no SA-MP        |                   |
 | no    | SEX          | SEX_1to2_W             | 60     | 1.00          | Bloqueado no SA-MP        |                   |
 | no    | SEX          | SEX_1_Cum_P            | 400    | 6.67          | Bloqueado no SA-MP        |                   |
@@ -1767,6 +1537,54 @@ Observe que algumas das animações podem não ser utilizáveis no SA-MP.
 | no    | SEX          | SEX_3_Fail_W           | 260    | 4.33          | Bloqueado no SA-MP        |                   |
 | no    | SEX          | SEX_3_P                | 20     | 0.33          | Bloqueado no SA-MP        |                   |
 | no    | SEX          | SEX_3_W                | 20     | 0.33          | Bloqueado no SA-MP        |                   |
+| 1420  | SHAMAL       | SHAMAL_align           | 12     | 0.20          |                           |                   |
+| 1421  | SHAMAL       | SHAMAL_getin_LHS       | 84     | 1.40          |                           |                   |
+| 1422  | SHAMAL       | SHAMAL_getout_LHS      | 82     | 1.37          |                           |                   |
+| 1423  | SHAMAL       | SHAMAL_open            | 36     | 0.60          |                           |                   |
+| 1424  | SHOP         | ROB_2Idle              | 70     | 1.17          |                           |                   |
+| 1425  | SHOP         | ROB_Loop               | 160    | 2.67          |                           |                   |
+| 1426  | SHOP         | ROB_Loop_Threat        | 120    | 2.00          |                           |                   |
+| 1427  | SHOP         | ROB_Shifty             | 340    | 5.67          |                           |                   |
+| 1428  | SHOP         | ROB_StickUp_In         | 32     | 0.53          |                           |                   |
+| 1429  | SHOP         | SHP_Duck               | 40     | 0.67          |                           |                   |
+| 1430  | SHOP         | SHP_Duck_Aim           | 20     | 0.33          |                           |                   |
+| 1431  | SHOP         | SHP_Duck_Fire          | 50     | 0.83          |                           |                   |
+| 1432  | SHOP         | SHP_Gun_Aim            | 38     | 0.63          |                           |                   |
+| 1433  | SHOP         | SHP_Gun_Duck           | 30     | 0.50          |                           |                   |
+| 1434  | SHOP         | SHP_Gun_Fire           | 52     | 0.87          |                           |                   |
+| 1435  | SHOP         | SHP_Gun_Grab           | 52     | 0.87          |                           |                   |
+| 1436  | SHOP         | SHP_Gun_Threat         | 50     | 0.83          |                           |                   |
+| 1437  | SHOP         | SHP_HandsUp_Scr        | 40     | 0.67          |                           |                   |
+| 1438  | SHOP         | SHP_Jump_Glide         | 20     | 0.33          |                           |                   |
+| 1439  | SHOP         | SHP_Jump_Land          | 42     | 0.70          |                           |                   |
+| 1440  | SHOP         | SHP_Jump_Launch        | 34     | 0.57          |                           |                   |
+| 1441  | SHOP         | SHP_Rob_GiveCash       | 230    | 3.83          |                           |                   |
+| 1442  | SHOP         | SHP_Rob_HandsUp        | 160    | 2.67          |                           |                   |
+| 1443  | SHOP         | SHP_Rob_React          | 160    | 2.67          |                           |                   |
+| 1444  | SHOP         | SHP_Serve_End          | 330    | 5.50          |                           |                   |
+| 1445  | SHOP         | SHP_Serve_Idle         | 300    | 5.00          |                           |                   |
+| 1446  | SHOP         | SHP_Serve_Loop         | 250    | 4.17          |                           |                   |
+| 1447  | SHOP         | SHP_Serve_Start        | 80     | 1.33          |                           |                   |
+| 1448  | SHOP         | Smoke_RYD              | 400    | 6.67          |                           |                   |
+| 1449  | SHOTGUN      | shotgun_crouchfire     | 88     | 1.47          |                           |                   |
+| 1450  | SHOTGUN      | shotgun_fire           | 88     | 1.47          |                           |                   |
+| 1451  | SHOTGUN      | shotgun_fire_poor      | 90     | 1.50          |                           |                   |
+| 1452  | SILENCED     | CrouchReload           | 60     | 1.00          |                           |                   |
+| 1453  | SILENCED     | SilenceCrouchfire      | 56     | 0.93          |                           |                   |
+| 1454  | SILENCED     | Silence_fire           | 52     | 0.87          |                           |                   |
+| 1455  | SILENCED     | Silence_reload         | 56     | 0.93          |                           |                   |
+| 1456  | SKATE        | skate_idle             | 60     | 1.00          |                           |                   |
+| 1457  | SKATE        | skate_run              | 50     | 0.83          |                           |                   |
+| 1458  | SKATE        | skate_sprint           | 40     | 0.67          |                           |                   |
+| 1459  | SMOKING      | F_smklean_loop         | 240    | 4.00          |                           |                   |
+| 1460  | SMOKING      | M_smklean_loop         | 300    | 5.00          |                           |                   |
+| 1461  | SMOKING      | M_smkstnd_loop         | 320    | 5.33          |                           |                   |
+| 1462  | SMOKING      | M_smk_drag             | 220    | 3.67          |                           |                   |
+| 1463  | SMOKING      | M_smk_in               | 400    | 6.67          |                           |                   |
+| 1464  | SMOKING      | M_smk_loop             | 200    | 3.33          |                           |                   |
+| 1465  | SMOKING      | M_smk_out              | 180    | 3.00          |                           |                   |
+| 1466  | SMOKING      | M_smk_tap              | 180    | 3.00          |                           |                   |
+| 1467  | SNIPER       | WEAPON_sniper          | 88     | 1.47          |                           |                   |
 | no    | SnM          | SnM_Caned_Idle_P       | 120    | 2.00          |                           |                   |
 | no    | SnM          | SnM_Caned_Idle_W       | 120    | 2.00          |                           |                   |
 | no    | SnM          | SnM_Caned_P            | 80     | 1.33          |                           |                   |
@@ -1789,3 +1607,281 @@ Observe que algumas das animações podem não ser utilizáveis no SA-MP.
 | no    | SnM          | Spanking_SittingIdleW  | 80     | 1.33          |                           |                   |
 | no    | SnM          | Spanking_SittingP      | 60     | 1.00          |                           |                   |
 | no    | SnM          | Spanking_SittingW      | 60     | 1.00          |                           |                   |
+| 1468  | SPRAYCAN     | spraycan_fire          | 140    | 2.33          |                           |                   |
+| 1469  | SPRAYCAN     | spraycan_full          | 270    | 4.50          |                           |                   |
+| 1470  | STRIP        | PLY_CASH               | 100    | 1.67          |                           |                   |
+| 1471  | STRIP        | PUN_CASH               | 200    | 3.33          |                           |                   |
+| 1472  | STRIP        | PUN_HOLLER             | 300    | 5.00          |                           |                   |
+| 1473  | STRIP        | PUN_LOOP               | 116    | 1.93          |                           |                   |
+| 1474  | STRIP        | strip_A                | 124    | 2.07          |                           |                   |
+| 1475  | STRIP        | strip_B                | 60     | 1.00          |                           |                   |
+| 1476  | STRIP        | strip_C                | 58     | 0.97          |                           |                   |
+| 1477  | STRIP        | strip_D                | 114    | 1.90          |                           |                   |
+| 1478  | STRIP        | strip_E                | 200    | 3.33          |                           |                   |
+| 1479  | STRIP        | strip_F                | 62     | 1.03          |                           |                   |
+| 1480  | STRIP        | strip_G                | 136    | 2.27          |                           |                   |
+| 1481  | STRIP        | STR_A2B                | 240    | 4.00          |                           |                   |
+| 1482  | STRIP        | STR_B2A                | 30     | 0.50          |                           |                   |
+| 1483  | STRIP        | STR_B2C                | 300    | 5.00          |                           |                   |
+| 1484  | STRIP        | STR_C1                 | 360    | 6.00          |                           |                   |
+| 1485  | STRIP        | STR_C2                 | 360    | 6.00          |                           |                   |
+| 1486  | STRIP        | STR_C2B                | 60     | 1.00          |                           |                   |
+| 1487  | STRIP        | STR_Loop_A             | 60     | 1.00          |                           |                   |
+| 1488  | STRIP        | STR_Loop_B             | 120    | 2.00          |                           |                   |
+| 1489  | STRIP        | STR_Loop_C             | 180    | 3.00          |                           |                   |
+| 1490  | SUNBATHE     | batherdown             | 236    | 3.93          |                           |                   |
+| 1491  | SUNBATHE     | batherup               | 738    | 12.30         |                           |                   |
+| 1492  | SUNBATHE     | Lay_Bac_in             | 140    | 2.33          |                           |                   |
+| 1493  | SUNBATHE     | Lay_Bac_out            | 180    | 3.00          |                           |                   |
+| 1494  | SUNBATHE     | ParkSit_M_IdleA        | 200    | 3.33          |                           |                   |
+| 1495  | SUNBATHE     | ParkSit_M_IdleB        | 160    | 2.67          |                           |                   |
+| 1496  | SUNBATHE     | ParkSit_M_IdleC        | 260    | 4.33          |                           |                   |
+| 1497  | SUNBATHE     | ParkSit_M_in           | 140    | 2.33          |                           |                   |
+| 1498  | SUNBATHE     | ParkSit_M_out          | 120    | 2.00          |                           |                   |
+| 1499  | SUNBATHE     | ParkSit_W_idleA        | 200    | 3.33          |                           |                   |
+| 1500  | SUNBATHE     | ParkSit_W_idleB        | 300    | 5.00          |                           |                   |
+| 1501  | SUNBATHE     | ParkSit_W_idleC        | 180    | 3.00          |                           |                   |
+| 1502  | SUNBATHE     | ParkSit_W_in           | 240    | 4.00          |                           |                   |
+| 1503  | SUNBATHE     | ParkSit_W_out          | 160    | 2.67          |                           |                   |
+| 1504  | SUNBATHE     | SBATHE_F_LieB2Sit      | 100    | 1.67          |                           |                   |
+| 1505  | SUNBATHE     | SBATHE_F_Out           | 120    | 2.00          |                           |                   |
+| 1506  | SUNBATHE     | SitnWait_in_W          | 280    | 4.67          |                           |                   |
+| 1507  | SUNBATHE     | SitnWait_out_W         | 160    | 2.67          |                           |                   |
+| 1508  | SWAT         | gnstwall_injurd        | 120    | 2.00          |                           |                   |
+| 1509  | SWAT         | JMP_Wall1m_180         | 70     | 1.17          |                           |                   |
+| 1510  | SWAT         | Rail_fall              | 180    | 3.00          |                           |                   |
+| 1511  | SWAT         | Rail_fall_crawl        | 340    | 5.67          |                           |                   |
+| 1512  | SWAT         | swt_breach_01          | 328    | 5.47          |                           |                   |
+| 1513  | SWAT         | swt_breach_02          | 320    | 5.33          |                           |                   |
+| 1514  | SWAT         | swt_breach_03          | 258    | 4.30          |                           |                   |
+| 1515  | SWAT         | swt_go                 | 100    | 1.67          |                           |                   |
+| 1516  | SWAT         | swt_lkt                | 180    | 3.00          |                           |                   |
+| 1517  | SWAT         | swt_sty                | 70     | 1.17          |                           |                   |
+| 1518  | SWAT         | swt_vent_01            | 284    | 4.73          |                           |                   |
+| 1519  | SWAT         | swt_vent_02            | 266    | 4.43          |                           |                   |
+| 1520  | SWAT         | swt_vnt_sht_die        | 40     | 0.67          |                           |                   |
+| 1521  | SWAT         | swt_vnt_sht_in         | 96     | 1.60          |                           |                   |
+| 1522  | SWAT         | swt_vnt_sht_loop       | 16     | 0.27          |                           |                   |
+| 1523  | SWAT         | swt_wllpk_L            | 160    | 2.67          |                           |                   |
+| 1524  | SWAT         | swt_wllpk_L_back       | 30     | 0.50          |                           |                   |
+| 1525  | SWAT         | swt_wllpk_R            | 220    | 3.67          |                           |                   |
+| 1526  | SWAT         | swt_wllpk_R_back       | 26     | 0.43          |                           |                   |
+| 1527  | SWAT         | swt_wllshoot_in_L      | 60     | 1.00          |                           |                   |
+| 1528  | SWAT         | swt_wllshoot_in_R      | 78     | 1.30          |                           |                   |
+| 1529  | SWAT         | swt_wllshoot_out_L     | 120    | 2.00          |                           |                   |
+| 1530  | SWAT         | swt_wllshoot_out_R     | 86     | 1.43          |                           |                   |
+| 1531  | SWEET        | ho_ass_slapped         | 120    | 2.00          |                           |                   |
+| 1532  | SWEET        | LaFin_Player           | 1600   | 26.67         |                           |                   |
+| 1533  | SWEET        | LaFin_Sweet            | 1600   | 26.67         |                           |                   |
+| 1534  | SWEET        | plyr_hndshldr_01       | 240    | 4.00          |                           |                   |
+| 1535  | SWEET        | sweet_ass_slap         | 120    | 2.00          |                           |                   |
+| 1536  | SWEET        | sweet_hndshldr_01      | 240    | 4.00          |                           |                   |
+| 1537  | SWEET        | Sweet_injuredloop      | 120    | 2.00          |                           |                   |
+| 1538  | SWIM         | Swim_Breast            | 78     | 1.30          |                           |                   |
+| 1539  | SWIM         | SWIM_crawl             | 54     | 0.90          |                           |                   |
+| 1540  | SWIM         | Swim_Dive_Under        | 64     | 1.07          |                           |                   |
+| 1541  | SWIM         | Swim_Glide             | 88     | 1.47          |                           |                   |
+| 1542  | SWIM         | Swim_jumpout           | 20     | 0.33          |                           |                   |
+| 1543  | SWIM         | Swim_Tread             | 78     | 1.30          |                           |                   |
+| 1544  | SWIM         | Swim_Under             | 90     | 1.50          |                           |                   |
+| 1545  | SWORD        | sword_1                | 52     | 0.87          |                           |                   |
+| 1546  | SWORD        | sword_2                | 64     | 1.07          |                           |                   |
+| 1547  | SWORD        | sword_3                | 48     | 0.80          |                           |                   |
+| 1548  | SWORD        | sword_4                | 66     | 1.10          |                           |                   |
+| 1549  | SWORD        | sword_block            | 28     | 0.47          |                           |                   |
+| 1550  | SWORD        | Sword_Hit_1            | 50     | 0.83          |                           |                   |
+| 1551  | SWORD        | Sword_Hit_2            | 62     | 1.03          |                           |                   |
+| 1552  | SWORD        | Sword_Hit_3            | 52     | 0.87          |                           |                   |
+| 1553  | SWORD        | sword_IDLE             | 60     | 1.00          |                           |                   |
+| 1554  | SWORD        | sword_part             | 40     | 0.67          |                           |                   |
+| 1555  | TANK         | TANK_align_LHS         | 86     | 1.43          |                           |                   |
+| 1556  | TANK         | TANK_close_LHS         | 20     | 0.33          |                           |                   |
+| 1557  | TANK         | TANK_doorlocked        | 32     | 0.53          |                           |                   |
+| 1558  | TANK         | TANK_getin_LHS         | 26     | 0.43          |                           |                   |
+| 1559  | TANK         | TANK_getout_LHS        | 118    | 1.97          |                           |                   |
+| 1560  | TANK         | TANK_open_LHS          | 18     | 0.30          |                           |                   |
+| 1561  | TATTOOS      | TAT_ArmL_In_O          | 50     | 0.83          |                           |                   |
+| 1562  | TATTOOS      | TAT_ArmL_In_P          | 50     | 0.83          |                           |                   |
+| 1563  | TATTOOS      | TAT_ArmL_In_T          | 50     | 0.83          |                           |                   |
+| 1564  | TATTOOS      | TAT_ArmL_Out_O         | 56     | 0.93          |                           |                   |
+| 1565  | TATTOOS      | TAT_ArmL_Out_P         | 150    | 2.50          |                           |                   |
+| 1566  | TATTOOS      | TAT_ArmL_Out_T         | 56     | 0.93          |                           |                   |
+| 1567  | TATTOOS      | TAT_ArmL_Pose_O        | 50     | 0.83          |                           |                   |
+| 1568  | TATTOOS      | TAT_ArmL_Pose_P        | 50     | 0.83          |                           |                   |
+| 1569  | TATTOOS      | TAT_ArmL_Pose_T        | 50     | 0.83          |                           |                   |
+| 1570  | TATTOOS      | TAT_ArmR_In_O          | 50     | 0.83          |                           |                   |
+| 1571  | TATTOOS      | TAT_ArmR_In_P          | 50     | 0.83          |                           |                   |
+| 1572  | TATTOOS      | TAT_ArmR_In_T          | 50     | 0.83          |                           |                   |
+| 1573  | TATTOOS      | TAT_ArmR_Out_O         | 60     | 1.00          |                           |                   |
+| 1574  | TATTOOS      | TAT_ArmR_Out_P         | 150    | 2.50          |                           |                   |
+| 1575  | TATTOOS      | TAT_ArmR_Out_T         | 60     | 1.00          |                           |                   |
+| 1576  | TATTOOS      | TAT_ArmR_Pose_O        | 50     | 0.83          |                           |                   |
+| 1577  | TATTOOS      | TAT_ArmR_Pose_P        | 50     | 0.83          |                           |                   |
+| 1578  | TATTOOS      | TAT_ArmR_Pose_T        | 50     | 0.83          |                           |                   |
+| 1579  | TATTOOS      | TAT_Back_In_O          | 50     | 0.83          |                           |                   |
+| 1580  | TATTOOS      | TAT_Back_In_P          | 50     | 0.83          |                           |                   |
+| 1581  | TATTOOS      | TAT_Back_In_T          | 50     | 0.83          |                           |                   |
+| 1582  | TATTOOS      | TAT_Back_Out_O         | 56     | 0.93          |                           |                   |
+| 1583  | TATTOOS      | TAT_Back_Out_P         | 150    | 2.50          |                           |                   |
+| 1584  | TATTOOS      | TAT_Back_Out_T         | 56     | 0.93          |                           |                   |
+| 1585  | TATTOOS      | TAT_Back_Pose_O        | 50     | 0.83          |                           |                   |
+| 1586  | TATTOOS      | TAT_Back_Pose_P        | 50     | 0.83          |                           |                   |
+| 1587  | TATTOOS      | TAT_Back_Pose_T        | 50     | 0.83          |                           |                   |
+| 1588  | TATTOOS      | TAT_Back_Sit_In_P      | 50     | 0.83          |                           |                   |
+| 1589  | TATTOOS      | TAT_Back_Sit_Loop_P    | 160    | 2.67          |                           |                   |
+| 1590  | TATTOOS      | TAT_Back_Sit_Out_P     | 50     | 0.83          |                           |                   |
+| 1591  | TATTOOS      | TAT_Bel_In_O           | 50     | 0.83          |                           |                   |
+| 1592  | TATTOOS      | TAT_Bel_In_T           | 50     | 0.83          |                           |                   |
+| 1593  | TATTOOS      | TAT_Bel_Out_O          | 58     | 0.97          |                           |                   |
+| 1594  | TATTOOS      | TAT_Bel_Out_T          | 58     | 0.97          |                           |                   |
+| 1595  | TATTOOS      | TAT_Bel_Pose_O         | 50     | 0.83          |                           |                   |
+| 1596  | TATTOOS      | TAT_Bel_Pose_T         | 50     | 0.83          |                           |                   |
+| 1597  | TATTOOS      | TAT_Che_In_O           | 50     | 0.83          |                           |                   |
+| 1598  | TATTOOS      | TAT_Che_In_P           | 50     | 0.83          |                           |                   |
+| 1599  | TATTOOS      | TAT_Che_In_T           | 50     | 0.83          |                           |                   |
+| 1600  | TATTOOS      | TAT_Che_Out_O          | 56     | 0.93          |                           |                   |
+| 1601  | TATTOOS      | TAT_Che_Out_P          | 150    | 2.50          |                           |                   |
+| 1602  | TATTOOS      | TAT_Che_Out_T          | 56     | 0.93          |                           |                   |
+| 1603  | TATTOOS      | TAT_Che_Pose_O         | 50     | 0.83          |                           |                   |
+| 1604  | TATTOOS      | TAT_Che_Pose_P         | 50     | 0.83          |                           |                   |
+| 1605  | TATTOOS      | TAT_Che_Pose_T         | 50     | 0.83          |                           |                   |
+| 1606  | TATTOOS      | TAT_Drop_O             | 30     | 0.50          |                           |                   |
+| 1607  | TATTOOS      | TAT_Idle_Loop_O        | 160    | 2.67          |                           |                   |
+| 1608  | TATTOOS      | TAT_Idle_Loop_T        | 160    | 2.67          |                           |                   |
+| 1609  | TATTOOS      | TAT_Sit_In_O           | 140    | 2.33          |                           |                   |
+| 1610  | TATTOOS      | TAT_Sit_In_P           | 140    | 2.33          |                           |                   |
+| 1611  | TATTOOS      | TAT_Sit_In_T           | 140    | 2.33          |                           |                   |
+| 1612  | TATTOOS      | TAT_Sit_Loop_O         | 160    | 2.67          |                           |                   |
+| 1613  | TATTOOS      | TAT_Sit_Loop_P         | 160    | 2.67          |                           |                   |
+| 1614  | TATTOOS      | TAT_Sit_Loop_T         | 160    | 2.67          |                           |                   |
+| 1615  | TATTOOS      | TAT_Sit_Out_O          | 170    | 2.83          |                           |                   |
+| 1616  | TATTOOS      | TAT_Sit_Out_P          | 130    | 2.17          |                           |                   |
+| 1617  | TATTOOS      | TAT_Sit_Out_T          | 170    | 2.83          |                           |                   |
+| 1618  | TEC          | TEC_crouchfire         | 58     | 0.97          |                           |                   |
+| 1619  | TEC          | TEC_crouchreload       | 80     | 1.33          |                           |                   |
+| 1620  | TEC          | TEC_fire               | 66     | 1.10          |                           |                   |
+| 1621  | TEC          | TEC_reload             | 90     | 1.50          |                           |                   |
+| 1622  | TRAIN        | tran_gtup              | 190    | 3.17          |                           |                   |
+| 1623  | TRAIN        | tran_hng               | 140    | 2.33          |                           |                   |
+| 1624  | TRAIN        | tran_ouch              | 70     | 1.17          |                           |                   |
+| 1625  | TRAIN        | tran_stmb              | 140    | 2.33          |                           |                   |
+| 1626  | TRUCK        | TRUCK_ALIGN_LHS        | 34     | 0.57          |                           |                   |
+| 1627  | TRUCK        | TRUCK_ALIGN_RHS        | 34     | 0.57          |                           |                   |
+| 1628  | TRUCK        | TRUCK_closedoor_LHS    | 24     | 0.40          |                           |                   |
+| 1629  | TRUCK        | TRUCK_closedoor_RHS    | 24     | 0.40          |                           |                   |
+| 1630  | TRUCK        | TRUCK_close_LHS        | 44     | 0.73          |                           |                   |
+| 1631  | TRUCK        | TRUCK_close_RHS        | 44     | 0.73          |                           |                   |
+| 1632  | TRUCK        | TRUCK_getin_LHS        | 36     | 0.60          |                           |                   |
+| 1633  | TRUCK        | TRUCK_getin_RHS        | 36     | 0.60          |                           |                   |
+| 1634  | TRUCK        | TRUCK_getout_LHS       | 48     | 0.80          |                           |                   |
+| 1635  | TRUCK        | TRUCK_getout_RHS       | 48     | 0.80          |                           |                   |
+| 1636  | TRUCK        | TRUCK_jackedLHS        | 104    | 1.73          |                           |                   |
+| 1637  | TRUCK        | TRUCK_jackedRHS        | 90     | 1.50          |                           |                   |
+| 1638  | TRUCK        | TRUCK_open_LHS         | 32     | 0.53          |                           |                   |
+| 1639  | TRUCK        | TRUCK_open_RHS         | 32     | 0.53          |                           |                   |
+| 1640  | TRUCK        | TRUCK_pullout_LHS      | 54     | 0.90          |                           |                   |
+| 1641  | TRUCK        | TRUCK_pullout_RHS      | 54     | 0.90          |                           |                   |
+| 1642  | TRUCK        | TRUCK_Shuffle          | 24     | 0.40          |                           |                   |
+| 1643  | UZI          | UZI_crouchfire         | 38     | 0.63          |                           |                   |
+| 1644  | UZI          | UZI_crouchreload       | 82     | 1.37          |                           |                   |
+| 1645  | UZI          | UZI_fire               | 34     | 0.57          |                           |                   |
+| 1646  | UZI          | UZI_fire_poor          | 32     | 0.53          |                           |                   |
+| 1647  | UZI          | UZI_reload             | 84     | 1.40          |                           |                   |
+| 1648  | VAN          | VAN_close_back_LHS     | 20     | 0.33          |                           |                   |
+| 1649  | VAN          | VAN_close_back_RHS     | 20     | 0.33          |                           |                   |
+| 1650  | VAN          | VAN_getin_Back_LHS     | 36     | 0.60          |                           |                   |
+| 1651  | VAN          | VAN_getin_Back_RHS     | 36     | 0.60          |                           |                   |
+| 1652  | VAN          | VAN_getout_back_LHS    | 38     | 0.63          |                           |                   |
+| 1653  | VAN          | VAN_getout_back_RHS    | 38     | 0.63          |                           |                   |
+| 1654  | VAN          | VAN_open_back_LHS      | 58     | 0.97          |                           |                   |
+| 1655  | VAN          | VAN_open_back_RHS      | 58     | 0.97          |                           |                   |
+| 1656  | VENDING      | VEND_Drink2_P          | 200    | 3.33          |                           |                   |
+| 1657  | VENDING      | VEND_Drink_P           | 80     | 1.33          |                           |                   |
+| 1658  | VENDING      | vend_eat1_P            | 260    | 4.33          |                           |                   |
+| 1659  | VENDING      | VEND_Eat_P             | 100    | 1.67          |                           |                   |
+| 1660  | VENDING      | VEND_Use               | 156    | 2.60          |                           |                   |
+| 1661  | VENDING      | VEND_Use_pt2           | 24     | 0.40          |                           |                   |
+| 1662  | VORTEX       | CAR_jumpin_LHS         | 60     | 1.00          |                           |                   |
+| 1663  | VORTEX       | CAR_jumpin_RHS         | 56     | 0.93          |                           |                   |
+| 1664  | VORTEX       | vortex_getout_LHS      | 60     | 1.00          |                           |                   |
+| 1665  | VORTEX       | vortex_getout_RHS      | 60     | 1.00          |                           |                   |
+| 1666  | WAYFARER     | WF_Back                | 6      | 0.10          |                           |                   |
+| 1667  | WAYFARER     | WF_drivebyFT           | 12     | 0.20          |                           |                   |
+| 1668  | WAYFARER     | WF_drivebyLHS          | 12     | 0.20          |                           |                   |
+| 1669  | WAYFARER     | WF_drivebyRHS          | 12     | 0.20          |                           |                   |
+| 1670  | WAYFARER     | WF_Fwd                 | 12     | 0.20          |                           |                   |
+| 1671  | WAYFARER     | WF_getoffBACK          | 104    | 1.73          |                           |                   |
+| 1672  | WAYFARER     | WF_getoffLHS           | 54     | 0.90          |                           |                   |
+| 1673  | WAYFARER     | WF_getoffRHS           | 54     | 0.90          |                           |                   |
+| 1674  | WAYFARER     | WF_hit                 | 2      | 0.03          |                           |                   |
+| 1675  | WAYFARER     | WF_jumponL             | 54     | 0.90          |                           |                   |
+| 1676  | WAYFARER     | WF_jumponR             | 54     | 0.90          |                           |                   |
+| 1677  | WAYFARER     | WF_kick                | 62     | 1.03          |                           |                   |
+| 1678  | WAYFARER     | WF_Left                | 8      | 0.13          |                           |                   |
+| 1679  | WAYFARER     | WF_passenger           | 2      | 0.03          |                           |                   |
+| 1680  | WAYFARER     | WF_pushes              | 58     | 0.97          |                           |                   |
+| 1681  | WAYFARER     | WF_Ride                | 2      | 0.03          |                           |                   |
+| 1682  | WAYFARER     | WF_Right               | 8      | 0.13          |                           |                   |
+| 1683  | WAYFARER     | WF_Still               | 2      | 0.03          |                           |                   |
+| 1684  | WEAPONS      | SHP_1H_Lift            | 60     | 1.00          |                           |                   |
+| 1685  | WEAPONS      | SHP_1H_Lift_End        | 20     | 0.33          |                           |                   |
+| 1686  | WEAPONS      | SHP_1H_Ret             | 50     | 0.83          |                           |                   |
+| 1687  | WEAPONS      | SHP_1H_Ret_S           | 20     | 0.33          |                           |                   |
+| 1688  | WEAPONS      | SHP_2H_Lift            | 56     | 0.93          |                           |                   |
+| 1689  | WEAPONS      | SHP_2H_Lift_End        | 20     | 0.33          |                           |                   |
+| 1690  | WEAPONS      | SHP_2H_Ret             | 54     | 0.90          |                           |                   |
+| 1691  | WEAPONS      | SHP_2H_Ret_S           | 20     | 0.33          |                           |                   |
+| 1692  | WEAPONS      | SHP_Ar_Lift            | 60     | 1.00          |                           |                   |
+| 1693  | WEAPONS      | SHP_Ar_Lift_End        | 20     | 0.33          |                           |                   |
+| 1694  | WEAPONS      | SHP_Ar_Ret             | 70     | 1.17          |                           |                   |
+| 1695  | WEAPONS      | SHP_Ar_Ret_S           | 20     | 0.33          |                           |                   |
+| 1696  | WEAPONS      | SHP_G_Lift_In          | 40     | 0.67          |                           |                   |
+| 1697  | WEAPONS      | SHP_G_Lift_Out         | 40     | 0.67          |                           |                   |
+| 1698  | WEAPONS      | SHP_Tray_In            | 40     | 0.67          |                           |                   |
+| 1699  | WEAPONS      | SHP_Tray_Out           | 40     | 0.67          |                           |                   |
+| 1700  | WEAPONS      | SHP_Tray_Pose          | 160    | 2.67          |                           |                   |
+| 1729  | WOP          | Dance_B1               | 68     | 1.13          |                           |                   |
+| 1730  | WOP          | Dance_B2               | 70     | 1.17          |                           |                   |
+| 1731  | WOP          | Dance_B3               | 68     | 1.13          |                           |                   |
+| 1732  | WOP          | Dance_B4               | 70     | 1.17          |                           |                   |
+| 1733  | WOP          | Dance_B5               | 68     | 1.13          |                           |                   |
+| 1734  | WOP          | Dance_B6               | 70     | 1.17          |                           |                   |
+| 1735  | WOP          | Dance_B7               | 68     | 1.13          |                           |                   |
+| 1736  | WOP          | Dance_B8               | 70     | 1.17          |                           |                   |
+| 1737  | WOP          | Dance_B9               | 68     | 1.13          |                           |                   |
+| 1738  | WOP          | Dance_B10              | 70     | 1.17          |                           |                   |
+| 1739  | WOP          | Dance_B11              | 68     | 1.13          |                           |                   |
+| 1740  | WOP          | Dance_B12              | 70     | 1.17          |                           |                   |
+| 1741  | WOP          | Dance_B13              | 68     | 1.13          |                           |                   |
+| 1742  | WOP          | Dance_B14              | 70     | 1.17          |                           |                   |
+| 1743  | WOP          | Dance_B15              | 68     | 1.13          |                           |                   |
+| 1744  | WOP          | Dance_B16              | 70     | 1.17          |                           |                   |
+| 1713  | WOP          | Dance_G1               | 68     | 1.13          |                           |                   |
+| 1714  | WOP          | Dance_G2               | 70     | 1.17          |                           |                   |
+| 1715  | WOP          | Dance_G3               | 68     | 1.13          |                           |                   |
+| 1716  | WOP          | Dance_G4               | 70     | 1.17          |                           |                   |
+| 1717  | WOP          | Dance_G5               | 68     | 1.13          |                           |                   |
+| 1718  | WOP          | Dance_G6               | 70     | 1.17          |                           |                   |
+| 1719  | WOP          | Dance_G7               | 68     | 1.13          |                           |                   |
+| 1720  | WOP          | Dance_G8               | 70     | 1.17          |                           |                   |
+| 1721  | WOP          | Dance_G9               | 68     | 1.13          |                           |                   |
+| 1722  | WOP          | Dance_G10              | 70     | 1.17          |                           |                   |
+| 1723  | WOP          | Dance_G11              | 68     | 1.13          |                           |                   |
+| 1724  | WOP          | Dance_G12              | 70     | 1.17          |                           |                   |
+| 1725  | WOP          | Dance_G13              | 68     | 1.13          |                           |                   |
+| 1726  | WOP          | Dance_G14              | 70     | 1.17          |                           |                   |
+| 1727  | WOP          | Dance_G15              | 68     | 1.13          |                           |                   |
+| 1728  | WOP          | Dance_G16              | 70     | 1.17          |                           |                   |
+| 1745  | WOP          | dance_loop             | 70     | 1.17          |                           |                   |
+| 1701  | WUZI         | CS_Dead_Guy            | 304    | 5.07          |                           |                   |
+| 1702  | WUZI         | CS_Plyr_pt1            | 226    | 3.77          |                           |                   |
+| 1703  | WUZI         | CS_Plyr_pt2            | 580    | 9.67          |                           |                   |
+| 1704  | WUZI         | CS_Wuzi_pt1            | 226    | 3.77          |                           |                   |
+| 1705  | WUZI         | CS_Wuzi_pt2            | 580    | 9.67          |                           |                   |
+| 1706  | WUZI         | Walkstart_Idle_01      | 190    | 3.17          |                           |                   |
+| 1707  | WUZI         | Wuzi_follow            | 180    | 3.00          |                           |                   |
+| 1708  | WUZI         | Wuzi_Greet_Plyr        | 240    | 4.00          |                           |                   |
+| 1709  | WUZI         | Wuzi_Greet_Wuzi        | 240    | 4.00          |                           |                   |
+| 1710  | WUZI         | Wuzi_grnd_chk          | 240    | 4.00          |                           |                   |
+| 1711  | WUZI         | Wuzi_stand_loop        | 160    | 2.67          |                           |                   |
+| 1712  | WUZI         | Wuzi_Walk              | 70     | 1.17          |                           |                   |

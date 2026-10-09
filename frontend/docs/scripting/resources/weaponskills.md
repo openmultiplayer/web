@@ -35,7 +35,7 @@ There are 3 weapon skill levels: Poor, Gangster and Hitman. The follow table sho
 | Weapon          | Poor | Gangster | Hitman |
 | --------------- | ---- | -------- | ------ |
 | Pistol          | 0    | 40       | 999    |
-| Slienced Pistol | 0    | 500      | 999    |
+| Silenced Pistol | 0    | 500      | 999    |
 | Desert Eagle    | 0    | 200      | 999    |
 | Shotgun         | 0    | 200      | 999    |
 | Sawnoff         | 0    | 200      | 999    |

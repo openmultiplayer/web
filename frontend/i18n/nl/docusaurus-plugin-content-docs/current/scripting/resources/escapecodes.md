@@ -15,10 +15,10 @@ Bij het maken van strings zijn sommige tekens lastig te noteren; escape‑codes 
 | Carriage return                   | \r          |
 | Horizontale tab                   | \t          |
 | Verticale tab                     | \v          |
-| Backslash (\)                     | \\          |
-| Enkele aanhalingsteken (')        | \'          |
-| Dubbele aanhalingsteken (")       | \"          |
-| Procentteken                      | \%          |
+| Backslash (\\)                    | \\\\        |
+| Enkel aanhalingsteken (')         | \\'         |
+| Dubbel aanhalingsteken (")        | \\"         |
+| Procentteken                      | \\%         |
 | Teken met decimale code "ddd"     | \ddd;       |
 | Teken met hexadecimale code "hhh" | \xhhh;      |
 
@@ -28,4 +28,4 @@ De puntkomma na `\ddd;` en `\xhhh;` is optioneel en kan de escape‑reeks explic
 
 :::
 
-Bron: `pawn-lang.pdf` (p. 99)
+Bron: [`pawn-lang.pdf` (p. 99)](https://github.com/pawn-lang/compiler/raw/master/doc/pawn-lang.pdf)

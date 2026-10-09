@@ -12,7 +12,7 @@ description: Daftar Ikon Peta
 | 3   | ![](https://assets.open.mp/assets/images/mapIcons/icon3.gif)  | Player (Menu Map)                 |
 | 4   | ![](https://assets.open.mp/assets/images/mapIcons/icon4.gif)  | Utara (North)                     |
 | 5   | ![](https://assets.open.mp/assets/images/mapIcons/icon5.gif)  | Air Yard                          |
-| 6   | ![](https://assets.open.mp/assets/images/mapIcons/icon6.gif)  | Ammunation                        |
+| 6   | ![](https://assets.open.mp/assets/images/mapIcons/icon6.gif)  | Ammu-Nation                       |
 | 7   | ![](https://assets.open.mp/assets/images/mapIcons/icon7.gif)  | Tempat cukur (Barber)             |
 | 8   | ![](https://assets.open.mp/assets/images/mapIcons/icon8.gif)  | Big Smoke                         |
 | 9   | ![](https://assets.open.mp/assets/images/mapIcons/icon9.gif)  | Boat Yard                         |
@@ -32,7 +32,7 @@ description: Daftar Ikon Peta
 | 23  | ![](https://assets.open.mp/assets/images/mapIcons/icon23.gif) | Loco                              |
 | 24  | ![](https://assets.open.mp/assets/images/mapIcons/icon24.gif) | Madd Dogg                         |
 | 25  | ![](https://assets.open.mp/assets/images/mapIcons/icon25.gif) | Caligula's                        |
-| 26  | ![](https://assets.open.mp/assets/images/mapIcons/icon26.gif) | MCs                               |
+| 26  | ![](https://assets.open.mp/assets/images/mapIcons/icon26.gif) | MC Strap                          |
 | 27  | ![](https://assets.open.mp/assets/images/mapIcons/icon27.gif) | Mod garage                        |
 | 28  | ![](https://assets.open.mp/assets/images/mapIcons/icon28.gif) | OG Loc                            |
 | 29  | ![](https://assets.open.mp/assets/images/mapIcons/icon29.gif) | Well Stacked Pizza Co             |

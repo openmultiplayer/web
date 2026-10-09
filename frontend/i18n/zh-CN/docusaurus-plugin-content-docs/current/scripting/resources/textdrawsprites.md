@@ -637,7 +637,7 @@ description: 适用于文本绘图字体4的精灵图列表
 | 9homby  | ![](https://assets.open.mp/assets/images/sprites/LD_TATT/9homby.png)  |
 | 9rasta  | ![](https://assets.open.mp/assets/images/sprites/LD_TATT/9rasta.png)  |
 
-### LD_LOADSCS.txd
+### LOADSCS.txd
 
 | 纹理        | 预览                                                                      |
 | ----------- | ------------------------------------------------------------------------- |

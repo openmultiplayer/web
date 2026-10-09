@@ -32,7 +32,7 @@ Uma lista de clima IDs usada pelas funções [SetWeather](../functions/SetWeathe
 | 21 | EXTRACOLOURS_1 | Horizonte muito escuro e gradiente, roxo | Tempo usado em interiores |
 | 22 | EXTRACOLOURS_2 | Horizonte muito escuro e gradiente, roxo | Tempo usado em interiores |
 
-Existem 23 climas diferentes IDs (0-22), sendo os dois últimos os tipos de clima com cores extras. No entanto, o jogo não apresenta nenhuma verificação de intervalo para o clima IDs e, portanto, você pode usar o clima IDs até 255. Valores maiores que 255 ou menores que 0 são transformados no restante da divisão por 256 (por exemplo, clima ID 300 é o mesmo que ID 44, porque 300% 256 = 44). O clima IDs 0-22 funciona corretamente, mas outros IDs resultam em comportamento indefinido: efeitos estranhos, como céu rosa e texturas piscantes durante determinados horários.
+Existem 23 climas diferentes IDs (0-22), sendo os dois últimos os tipos de clima com cores extras. No entanto, o jogo não apresenta nenhuma verificação de intervalo para o clima IDs e, portanto, você pode usar o clima IDs até 255. Valores maiores que 255 ou menores que 0 são transformados no restante da divisão por 256 (por exemplo, clima ID 300 é o mesmo que ID 44, porque 300 % 256 = 44). O clima IDs 0-22 funciona corretamente, mas outros IDs resultam em comportamento indefinido: efeitos estranhos, como céu rosa e texturas piscantes durante determinados horários.
 
 :::note
 

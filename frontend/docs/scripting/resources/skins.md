@@ -1,7 +1,7 @@
 ---
 title: Skins
 sidebar_label: Skins
-description: This page has the all the available skins in SA-MP.
+description: This page has all the available skins in SA-MP.
 ---
 
 ## Skins List
@@ -123,12 +123,12 @@ This page contains every available skin used by [SetPlayerSkin](../functions/Set
 | 111     | ![Skin ID 111](https://assets.open.mp/assets/images/skins/111.png) | maffa           | The Russian Mafia                        | Around SA                                          | Male   |
 | 112     | ![Skin ID 112](https://assets.open.mp/assets/images/skins/112.png) | maffb           | The Russian Mafia                        | Around SA                                          | Male   |
 | 113     | ![Skin ID 113](https://assets.open.mp/assets/images/skins/113.png) | mafboss         | The Russian Mafia                        | Around SA                                          | Male   |
-| 114     | ![Skin ID 114](https://assets.open.mp/assets/images/skins/114.png) | vla1            | Varios Los Aztecas                       | Los Santos                                         | Male   |
-| 115     | ![Skin ID 115](https://assets.open.mp/assets/images/skins/115.png) | vla2            | Varios Los Aztecas                       | Los Santos                                         | Male   |
-| 116     | ![Skin ID 116](https://assets.open.mp/assets/images/skins/116.png) | vla3            | Varios Los Aztecas                       | Los Santos                                         | Male   |
+| 114     | ![Skin ID 114](https://assets.open.mp/assets/images/skins/114.png) | vla1            | Varrios Los Aztecas                      | Los Santos                                         | Male   |
+| 115     | ![Skin ID 115](https://assets.open.mp/assets/images/skins/115.png) | vla2            | Varrios Los Aztecas                      | Los Santos                                         | Male   |
+| 116     | ![Skin ID 116](https://assets.open.mp/assets/images/skins/116.png) | vla3            | Varrios Los Aztecas                      | Los Santos                                         | Male   |
 | 117     | ![Skin ID 117](https://assets.open.mp/assets/images/skins/117.png) | triada          | Triad                                    | San Fierro                                         | Male   |
 | 118     | ![Skin ID 118](https://assets.open.mp/assets/images/skins/118.png) | triadb          | Triad                                    | San Fierro                                         | Male   |
-| 119     | ![Skin ID 119](https://assets.open.mp/assets/images/skins/119.png) | sindaco         | Johhny Sindacco                          | Las Venturas                                       | Male   |
+| 119     | ![Skin ID 119](https://assets.open.mp/assets/images/skins/119.png) | sindaco         | Johnny Sindacco                          | Las Venturas                                       | Male   |
 | 120     | ![Skin ID 120](https://assets.open.mp/assets/images/skins/120.png) | triboss         | Triad Boss                               | San Fierro                                         | Male   |
 | 121     | ![Skin ID 121](https://assets.open.mp/assets/images/skins/121.png) | dnb1            | Da Nang Boy                              | San Fierro                                         | Male   |
 | 122     | ![Skin ID 122](https://assets.open.mp/assets/images/skins/122.png) | dnb2            | Da Nang Boy                              | San Fierro                                         | Male   |

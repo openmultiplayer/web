@@ -14,7 +14,8 @@ O sistema numérico hexadecimal, ou comumente conhecido apenas como Hex, é um s
 ### Decimal (base 10)
 
 ```c
-01
+0
+1
 2
 3
 4
@@ -29,7 +30,8 @@ O sistema numérico hexadecimal, ou comumente conhecido apenas como Hex, é um s
 ### Hexadecimal (base 16)
 
 ```c
-01
+0
+1
 2
 3
 4
@@ -69,7 +71,7 @@ O número 255 é bastante compreensível, mas o que é ‘FF’? Vamos dar uma o
 
 :::note
 
-**Nota** | '^' está elevado a neste caso, não o operador exclusivo bit a bit.
+'^' está elevado a neste caso, não o operador exclusivo bit a bit.
 
 :::
 
@@ -111,7 +113,7 @@ Não existe realmente um uso único para o hexadecimal, você pode usá-lo quand
 
 :::note
 
-**Nota** | Este é um exemplo complicado, não se preocupe se não entender.
+Este é um exemplo complicado, não se preocupe se não entender.
 
 :::
 
@@ -156,4 +158,4 @@ Vamos dar uma olhada em algumas cores, começando pelo básico e passando para a
 0xFF00FFFF - Bright purple
 0x00FFFFFF - Bright cyan
 ```
-Estas são apenas as cores/combinações básicas, se você está procurando outras cores/tem preguiça de converter, é melhor usar um conversor como este:
+Estas são apenas as cores/combinações básicas, se você está procurando outras cores/tem preguiça de converter, é melhor usar um conversor como este: [ColorHexa](https://www.colorhexa.com/)

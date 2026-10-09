@@ -13,7 +13,7 @@ Esta ferramenta de 'editor de textdraw' pode tornar o design de textdraws muito 
 
 ---
 
-## Sorteios de texto globais
+## Textdraws globais
 
 Textdraws globais podem ser criados e mostrados a todos os jogadores. Porém, existe um [limite](limits) de quantos podem ser criados. Isso significa que se você tiver um servidor com 500 jogadores, não será possível criar mais de 4 textdraws por jogador. É aí que entra o **player**-textdraws. Veja mais abaixo. Aqui está uma lista de todas as funções relacionadas ao **global** textdraws:
 
@@ -83,7 +83,7 @@ Player-textdraws são criados apenas para um jogador específico. Até 256 textd
 - [IsPlayerTextDrawVisible](../functions/IsPlayerTextDrawVisible): Verifica se um player-textdraw é mostrado para o jogador.
 - [IsValidPlayerTextDraw](../functions/IsValidPlayerTextDraw): Verifica se um player-textdraw é válido.
 - [PlayerTextDrawBackgroundColour](../functions/PlayerTextDrawBackgroundColour): Ajusta a cor de fundo de um player-textdraw.
-- [PlayerTextDrawBoxColour](../functions/PlayerTextDrawBoxColour): Define a cor da caixa de um textdraw (PlayerTextDrawUseBox ).
+- [PlayerTextDrawBoxColour](../functions/PlayerTextDrawBoxColour): Define a cor da caixa de um textdraw (PlayerTextDrawUseBox).
 - [PlayerTextDrawColour](../functions/PlayerTextDrawColour): Define a cor do texto de um player-textdraw.
 - [PlayerTextDrawGetAlignment](../functions/PlayerTextDrawGetAlignment): Obtém o alinhamento do texto de um player-textdraw.
 - [PlayerTextDrawGetBackgroundColour](../functions/PlayerTextDrawGetBackgroundColour): Obtém a cor de fundo de um player-textdraw.
@@ -109,7 +109,7 @@ Player-textdraws são criados apenas para um jogador específico. Até 256 textd
 
 ## Declaração de Variável
 
-Ao criar um textdraw, você deve sempre decidir se o textdraw que você vai criar deve ser global (por exemplo, o endereço do seu site, anúncio global) ou se será diferente por jogador (por exemplo, mortes, mortes, pontuação).
+Ao criar um textdraw, você deve sempre decidir se o textdraw que você vai criar deve ser global (por exemplo, o endereço do seu site, anúncio global) ou se será diferente por jogador (por exemplo, abates, mortes, pontuação).
 
 ### Textdraw Global
 
@@ -151,7 +151,7 @@ Note que esta função apenas cria o textdraw, outras funções são usadas para
 
 **Parâmetros:**
 
-TextDrawCreate(Float:x, Float:y, texto[])
+TextDrawCreate(Float:x, Float:y, text[])
 
 | Nome   | Descrição                             |
 | ------ | ------------------------------------- |
@@ -180,7 +180,7 @@ Criamos um textdraw no centro da tela que diz "Hello World!".
 
 Existem 4 fontes disponíveis para texto textdraw:
 
-![Imagem:320px-Textdraw_map.png](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)
+![Imagem:Textdraw_font_styles.png](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)
 
 | ID  | Informações                                                | Dicas                                                         |
 | --- | ---------------------------------------------------------- | ------------------------------------------------------------- |
@@ -201,7 +201,7 @@ Para mostrar um textdraw para um único jogador, a função [TextDrawShowForPlay
 
 **Parâmetros:**
 
-TextDrawShowForPlayer(playerid, Texto:texto)
+TextDrawShowForPlayer(playerid, Text:text)
 
 | Nome     | Descrição                                    |
 | -------- | -------------------------------------------- |

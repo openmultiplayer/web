@@ -5,7 +5,7 @@ description: GameText Styles used in textdraws and gametext.
 ---
 
 This page covers everything you need to know about gametext styles, and how they can be used in textdraws and in text rendered for a (single) player.
-Mainly used by [GameText](../functions/GameTextForPlayer) and [GameTextForAll](../functions/GameTextForAll).
+Mainly used by [GameTextForPlayer](../functions/GameTextForPlayer) and [GameTextForAll](../functions/GameTextForAll).
 
 ---
 

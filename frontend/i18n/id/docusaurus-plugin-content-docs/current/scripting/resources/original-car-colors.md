@@ -54,7 +54,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **boxville:** 11,123, 13,120, 20,117, 24,112, 27,107, 36,105, 37,107, 43,93
 
-**bravura:** 41,41, 47,47, 52,52, 66,66, 74,74, 87,87,91,91, 113,113
+**bravura:** 41,41, 47,47, 52,52, 66,66, 74,74, 87,87, 91,91, 113,113
 
 **broadway:** 12,1, 19,96, 31,64, 25,96, 38,1, 51,96, 57,1, 66,96
 
@@ -76,7 +76,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **cargobob:** 1,1
 
-**cheetah:** 20,1, 25,1, 36,1, 40,1 62,1, 75,1, 92,1, 0,1
+**cheetah:** 20,1, 25,1, 36,1, 40,1, 62,1, 75,1, 92,1, 0,1
 
 **clover:** 13,118, 24,118, 31,93, 32,92, 45,92, 113,92, 119,113, 122,113
 
@@ -86,7 +86,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **coastg:** 56,15, 56,53
 
-**come:** 73,45, 12,12, 2,2, 6,6, 4,4, 46,46, 53,53
+**comet:** 73,45, 12,12, 2,2, 6,6, 4,4, 46,46, 53,53
 
 **copcarla:** 0,1
 
@@ -158,7 +158,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **hotknife:** 1,1, 12,12, 2,2, 6,6, 4,4, 46,46, 53,53
 
-**hotrina:** 7,94, 36,88, 51,75, 53,75 ,58,67, 75,67, 75,61, 79,62
+**hotrina:** 7,94, 36,88, 51,75, 53,75, 58,67, 75,67, 75,61, 79,62
 
 **hotrinb:** 83,66, 87,74, 87,75, 98,83, 101,100, 103,101, 117,116, 123,36
 
@@ -244,7 +244,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **picador:** 81,8, 32,8, 43,8, 67,8, 11,11, 8,90, 2,2, 83,13
 
-**pizzaboy:** ,3,6
+**pizzaboy:** 3,6
 
 **polmav:** 0,1
 
@@ -254,7 +254,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **premier:** 37,37, 42,42, 53,53, 62,62, 7,7, 10,10, 11,11, 15,15
 
-**previon:** 83,1, 87,1, 92,1, 95,1, 109,1, 119,45, 11,1,
+**previon:** 83,1, 87,1, 92,1, 95,1, 109,1, 119,45, 11,1
 
 **primo:** 122,1, 123,1, 125,1, 10,1, 24,1, 37,1, 55,1, 66,1
 
@@ -314,7 +314,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **skimmer:** 1,3, 1,9, 1,18, 1,30, 17,23, 46,23, 46,32, 57,34
 
-**slamvan:** 3,1, 28,1, 31,1, 55,1, 66,1 97,1, 123,1, 118,1
+**slamvan:** 3,1, 28,1, 31,1, 55,1, 66,1, 97,1, 123,1, 118,1
 
 **solair:** 91,1, 101,1, 109,1, 113,1, 4,1, 25,1, 30,1, 36,1
 

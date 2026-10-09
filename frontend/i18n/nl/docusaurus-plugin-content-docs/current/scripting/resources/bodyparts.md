@@ -24,3 +24,5 @@ IDs voor gebruik met [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage), [OnP
 Deze IDs zijn niet 100% bevestigd en niet gedefinieerd in SA‑MP includes; scripter moet ze definiëren. Onbekend of 0–2 bruikbaar zijn.
 
 :::
+
+![](https://assets.open.mp/assets/images/bodyParts/Body_parts.jpg)

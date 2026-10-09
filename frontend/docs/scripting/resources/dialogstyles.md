@@ -117,7 +117,7 @@ Showing:
 ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_LIST, "Caption", "Item 0\n{FFFF00}Item 1\nItem 2", "Button 1", "Button 2");
 ```
 
-### Response output:
+### Response Output
 
 :::note
 
@@ -263,6 +263,6 @@ Item 1 Column 1\tItem 1 Column 2\tItem 1 Column 3\n\
 // selected the first list item and pressed the left button
 playerid = 0, dialogid = YOUR_DIALOGID, response = 1, listitem = 0, inputtext = 'Item 1 Column 1' (size: 15)
 
-// selected the first list item and pressed the right button
+// selected the second list item and pressed the right button
 playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 'Item 2 Column 1' (size: 15)
 ```

@@ -18,7 +18,7 @@ The damage of all lights will be saved together in 1 byte (which is 8 bits). Eac
 
 - The **first bit** stores the state of the **front-left** light.
 - The **third bit** stores the state of the **front-right** light.
-- The **zeventh bit** stores the state of the **back** lights.
+- The **seventh bit** stores the state of the **back** lights.
 - The rest of the bits are empty.
 
 Notice that the bits are counted from behind, so the first bit is the rightmost bit.
