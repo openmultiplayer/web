@@ -74,7 +74,7 @@ The number 255 is pretty understandable, but what is 'FF'? Let's take a look at 
 
 :::note
 
-**Note** | '^' is to the power of in this case, not the bitwise exclusive operator.
+'^' is to the power of in this case, not the bitwise exclusive operator.
 
 :::
 
@@ -118,7 +118,7 @@ There isn't really a sole use for hex, you can use it whenever you want; though 
 
 :::note
 
-**Note** | This is a complicated example, don't worry if you don't understand it.
+This is a complicated example, don't worry if you don't understand it.
 
 :::
 
@@ -167,4 +167,4 @@ Let's take a look at a few colors, starting with the basics and moving into the 
 0x00FFFFFF - Bright cyan
 ```
 
-These are just the basic colors/combination, if you're looking for other colors / are too lazy to convert, you are better using a converter like this one:
+These are just the basic colors/combination, if you're looking for other colors / are too lazy to convert, you are better using a converter like this one: [ColorHexa](https://www.colorhexa.com/)
