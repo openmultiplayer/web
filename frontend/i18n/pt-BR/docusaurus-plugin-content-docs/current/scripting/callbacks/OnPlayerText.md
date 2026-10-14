@@ -36,7 +36,15 @@ public OnPlayerText(playerid, text[])
 
 <NoteNPCCallbacks />
 
+## Callbacks Relacionadas
+
+As seguintes Callbacks também podem ser úteis, pois estão relacionadas a esta Callback.
+
+- [OnPlayerCommandText](OnPlayerCommandText): Chamado quando um jogador digita e envia um comando ao servidor.
+
 ## Funções Relacionadas
+
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
 
 - [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Força um jogador enviar uma mensagem para outro jogador.
 - [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Força um jogador a mandar uma mensagem visível para todos.

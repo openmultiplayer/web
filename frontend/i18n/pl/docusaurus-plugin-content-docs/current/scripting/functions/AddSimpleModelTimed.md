@@ -53,4 +53,5 @@ Aktualnie nie ma żadnych restrykcji co do wywoływania tej funkcji, ale miej na
 
 ## Powiązane funkcje
 
+- [AddSimpleModel](AddSimpleModel): Dodaje do pobrania nowy obiekt.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Wywoływane, kiedy gracz skończy pobierać niestandardowe modele.

@@ -48,3 +48,6 @@ Once set invulnerable, the actor does not call OnPlayerGiveDamageActor. Players 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
+
+- [CreateActor](CreateActor): Create an actor (static NPC).
+- [SetActorHealth](SetActorHealth): Set the health of an actor.

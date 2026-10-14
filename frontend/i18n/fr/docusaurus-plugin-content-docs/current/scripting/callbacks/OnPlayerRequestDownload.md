@@ -15,7 +15,7 @@ Cette callback est appelée quand un joueur sollicite le téléchargement des cu
 | -------------- | ----------------------------------------------------------------------------------------------------------------- |
 | `int` playerid | ID du joueur qui sollicite le téléchargement de custom models ID of the player that request custom model download |
 | `int` type     | Type de requête (voir _infra_)                                                                                    |
-| `int` crc      | Numéro CRC du fichier custom                                                                                      |
+| `int` crc      | Numéro [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) du fichier custom                             |
 
 ## Valeur de retour
 

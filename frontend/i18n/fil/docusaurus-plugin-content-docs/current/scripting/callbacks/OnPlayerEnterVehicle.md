@@ -19,6 +19,8 @@ Ang callback na ito ay natatawag kapag ang isang manlalaro ay pumasok sa loob ng
 
 ## Returns
 
+Hindi nag rereturn ang callback na ito.
+
 Lagi itong na tatawag una sa mga filterscript.
 
 ## Halimbawa ng Paggamit

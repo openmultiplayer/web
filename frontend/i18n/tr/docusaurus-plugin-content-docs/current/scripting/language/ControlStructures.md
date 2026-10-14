@@ -711,3 +711,10 @@ MyFunction(num)
     return 0;
 }
 ```
+
+## Ayrıca bakınız
+
+- [Anahtar Kelimeler: İfadeler](Statements)
+- [Anahtar Kelimeler: Operatörler](Operators)
+- [Anahtar Kelimeler: Direktifler](Directives)
+- [Anahtar Kelimeler: Başlatıcılar](Initialisers)

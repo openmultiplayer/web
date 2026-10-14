@@ -202,3 +202,9 @@ Now these colors are pretty dark. You can make them brighter by using **`~h~`** 
 ```
 
 ![Image:Blueandred2.png](https://assets.open.mp/assets/images/colorList/Blueandred2.png)
+
+---
+
+## Vehicle Color IDs
+
+There is a full list of [vehicle color IDs](vehiclecolorid). You can find the colors used in single player for each car on the [Original Car Colors](original-car-colors) page.

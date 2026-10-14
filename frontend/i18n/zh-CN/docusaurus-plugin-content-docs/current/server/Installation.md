@@ -229,6 +229,18 @@ description: 将游戏模式从 SA:MP 服务器迁移至 open.mp 服务器的指
 ./omp-server
 ```
 
+## 保持服务器在线
+
+这个批处理程序会在服务器崩溃时重启 `omp-server.exe`。你只需要把以下内容存到一个后缀名为 `.bat` 的文本文件里:
+
+```
+:start
+omp-server.exe
+goto start
+```
+
+把这个文件放到 `omp-server.exe` 所在的文件夹下并启动。在服务器控制台里输入 `exit` 来测试它是否有效。
+
 ## 编译错误与警告处理
 
 - **warning 213: 标签不匹配: 预期标签 "?"，但未找到 ("\_")**：

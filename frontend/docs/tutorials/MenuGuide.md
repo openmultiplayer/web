@@ -134,6 +134,8 @@ if(CurrentMenu == teleportmenu)
 }
 ```
 
+Now to explain how the `switch` works: at the top there is `switch(row)`, which defines what to check, in this case the menu row. Then, between the braces under `switch`, there are `case`s. These are the different values that the variable in the `switch` brackets can have, and you define them yourself. Under each `case` are more braces; this is where you put the code that should run if that case is the right one. See [Control Structures](../scripting/language/ControlStructures#switch) for more about `switch`.
+
 ## Last steps
 
 Now we need a command to show the menu. This is the easiest step. Just a comparison with `strcmp` and a `ShowMenuForPlayer`. This is done in `OnPlayerCommandText`. Or, if you have a command processor already, use that instead to call `ShowMenuForPlayer`.

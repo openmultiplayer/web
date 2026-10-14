@@ -11,11 +11,11 @@ tags: ["玩家"]
 
 当玩家请求下载自定义模型资源时触发此回调函数
 
-| 参数                  | 说明                                           |
-| --------------------- | ---------------------------------------------- |
-| playerid              | 发起下载请求的玩家ID                           |
-| DOWNLOAD_REQUEST:type | [下载请求类型](../resources/download-requests) |
-| crc                   | 自定义模型文件的CRC校验值                      |
+| 参数                  | 说明                                                                               |
+| --------------------- | ---------------------------------------------------------------------------------- |
+| playerid              | 发起下载请求的玩家ID                                                               |
+| DOWNLOAD_REQUEST:type | [下载请求类型](../resources/download-requests)                                     |
+| crc                   | 自定义模型文件的[CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)校验值 |
 
 ## 返回值
 
@@ -79,6 +79,14 @@ public OnPlayerRequestDownload(playerid, DOWNLOAD_REQUEST:type, crc)
 以下回调函数可能与此回调相关：
 
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): 当玩家完成下载时触发
+
+## 相关函数
+
+以下函数可能与此回调函数相关：
+
+- [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): 查找现有的自定义皮肤或简单物体模型文件。
+- [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): 查找现有的自定义皮肤或简单物体纹理文件。
+- [RedirectDownload](../functions/RedirectDownload): 将玩家自定义的AddCharModel或AddSimpleModel模型下载请求重定向到指定的HTTP网页。
 
 ## 相关资源
 

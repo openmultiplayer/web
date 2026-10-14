@@ -31,6 +31,16 @@ Esta função também pode ser usada em um filterscript para detectar se a gamem
 
 :::
 
+## Callbacks Relacionadas
+
+As seguintes Callbacks também podem ser úteis, pois estão relacionadas a esta Callback.
+
+- [OnGameModeInit](OnGameModeInit): Chamada na inicialização do gamemode.
+- [OnFilterScriptInit](OnFilterScriptInit): Chamado quando um filterscript é carregado.
+- [OnFilterScriptExit](OnFilterScriptExit): Chamado quando um filterscript é descarregado.
+
 ## Funções Relacionadas
+
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
 
 - [GameModeExit](../functions/GameModeExit): Sair da atual gamemode.

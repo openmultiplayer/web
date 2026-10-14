@@ -18,6 +18,13 @@ Gets the type (integer, float or string) of a player variable.
 
 Returns the type of the PVar. See table below.
 
+| ID  | Type                                                                 |
+| --- | -------------------------------------------------------------------- |
+| 0   | PLAYER_VARTYPE_NONE (player variable with given name does not exist) |
+| 1   | PLAYER_VARTYPE_INT                                                   |
+| 2   | PLAYER_VARTYPE_STRING                                                |
+| 3   | PLAYER_VARTYPE_FLOAT                                                 |
+
 ## ตัวอย่าง
 
 ```c

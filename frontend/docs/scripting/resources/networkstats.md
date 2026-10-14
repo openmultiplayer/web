@@ -5,6 +5,8 @@ description: Information seen when holding down F5 when connected to a server.
 tags: []
 ---
 
+This page breaks down the **Client Network Statistics**, the information seen when holding down F5 while connected to a server.
+
 | Data                                                     | **Description**                                                                                                 |
 | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | Download Rate                                            | The rate at which data is being downloaded from the server.                                                     |

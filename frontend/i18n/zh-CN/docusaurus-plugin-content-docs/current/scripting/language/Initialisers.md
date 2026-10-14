@@ -424,7 +424,7 @@ Float:MyFloatFunction()
 原生函数(native function)是指在虚拟机(即运行脚本的环境)中定义的函数，而非脚本自身实现。此类函数只能通过 SA:MP 或插件进行原生定义，但开发者可以创建伪原生函数。由于.inc 文件中定义的原生函数会被 PAWNO 识别并显示在右侧函数列表框中，使用`native`关键字有助于将自定义函数纳入该列表。典型原生函数声明示例如下：
 
 ```c
-native printf(const format[], \{Float, _\}:...);
+native printf(const format[], {Float, _}:...);
 ```
 
 若希望自定义函数显示在列表却无需实际声明为原生函数，可采用注释伪装法：

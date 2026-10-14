@@ -45,4 +45,6 @@ public OnGameModeInit()
 
 ## 相关函数
 
+- [CreateActor](CreateActor): 创建演员（静态 NPC）
 - [IsActorInvulnerable](IsActorInvulnerable): 检查演员是否无敌
+- [SetActorHealth](SetActorHealth): 设置演员的生命值

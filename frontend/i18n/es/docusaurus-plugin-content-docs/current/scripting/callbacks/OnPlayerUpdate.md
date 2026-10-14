@@ -14,9 +14,9 @@ Este callback se llama cada vez que un cliente/jugador actualiza su estado con e
 
 ## Devoluciones
 
-0 - Prevendrá a otros filterscripts de recibir este callback.
+0 - El nuevo estado del jugador, no sera transmitido al resto de los jugadores.
 
-1 - Indica que este callback será pasado al siguiente filterscript.
+1 - El nuevo estado del jugador, sera transmitido normalmente al resto de los jugadores.
 
 Siempre se llama primero en filterscripts.
 

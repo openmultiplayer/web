@@ -229,6 +229,24 @@ Open the `omp-server.exe` program
 ./omp-server
 ```
 
+:::note
+
+For players outside your local network to be able to join, the server's UDP port (`7777` by default, set with `network.port` in **config.json**) must be forwarded in your router/firewall. See [Port Forwarding](../tutorials/PortForwarding).
+
+:::
+
+## Keeping the server online
+
+If your gamemode or a plugin crashes the server, it shuts down and you have to start it again yourself. On Windows, a simple batch file can restart `omp-server.exe` automatically whenever the process exits. Save a text file with the `.bat` extension and the following content:
+
+```
+:start
+omp-server.exe
+goto start
+```
+
+Put the file in the directory where `omp-server.exe` is located and run it. To test that it works, type `exit` in the server console - the server should start again.
+
 ## Compiler errors and warnings
 
 - **warning 213: tag mismatch: expected tag "?", but found none ("\_")**:

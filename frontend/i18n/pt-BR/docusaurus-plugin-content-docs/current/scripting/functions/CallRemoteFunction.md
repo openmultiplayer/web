@@ -30,6 +30,8 @@ O valor que a última função pública retornou.
 | `f`             | Passa um número de ponto flutuante.                                                                                                                                                                                                                                                                              |
 | `s`             | Passa uma string.                                                                                                                                                                                                                                                                                                |
 
+Os valores dos placeholders seguem exatamente a mesma ordem dos parâmetros na chamada.
+
 ## Exemplos
 
 ```c

@@ -16,3 +16,9 @@ This page has a list of all map icon styles which can be used by [SetPlayerMapIc
 | 1     | MAPICON_GLOBAL            | No                    | Show on radar edge as long as in range |
 | 2     | MAPICON_LOCAL_CHECKPOINT  | Yes                   | Close proximity only                   |
 | 3     | MAPICON_GLOBAL_CHECKPOINT | Yes                   | Show on radar edge as long as in range |
+
+:::note
+
+The checkpoint styles also show a checkpoint-like marker in the game world at the icon's position, so remember to use a correct Z coordinate (not just X and Y) when using them.
+
+:::

@@ -173,4 +173,6 @@ Um dialog de jogador não é escondido ao reiniciar o gamemode, ocasionando em u
 
 ## Funções Relacionadas
 
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
+
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): Show a dialog to a player.

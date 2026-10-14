@@ -18,6 +18,8 @@ Acest callback este apelat atunci când un jucător iese dintr-un magazin de mod
 
 ## Returnări
 
+Returning 0 in this callback will deny the colour change. Returning 1 will allow it.
+
 It is always called first in gamemode so returning 0 there also blocks other filterscripts from seeing it.
 
 ## Exemple

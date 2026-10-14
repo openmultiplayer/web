@@ -63,3 +63,9 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 Si vous voulez empêcher certains joueurs de s'endommager, utilisez SetPlayerTeam.
 
 :::
+
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerTakeDamage](OnPlayerTakeDamage): Cette callback est appelée lorsqu'un joueur subît des dégâts.

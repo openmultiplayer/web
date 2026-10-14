@@ -42,3 +42,9 @@ Como dice el nombre del callback, sólo se llama cuando el jugador hace click pa
 :::
 
 ## Funciones Relacionadas
+
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnPlayerClickMap:
+
+- GetPlayerPos: Obtiene la posicion en el mapa de un jugador.
+- SetPlayerPos: Setea la posicion en el mapa de un jugador.
+- SetPlayerPosFindZ: Cambia la posición en el mapa de un jugador en el punto de colisión más cercano al suelo.

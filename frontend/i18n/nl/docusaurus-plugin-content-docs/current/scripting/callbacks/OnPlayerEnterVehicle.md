@@ -17,6 +17,8 @@ Deze callback wordt aangeroepen wanneer een speler begint een voertuig in te gaa
 
 ## Returns
 
+Deze callback behandelt geen returns.
+
 Wordt altijd als eerste aangeroepen in filterscripts.
 
 ## Voorbeelden

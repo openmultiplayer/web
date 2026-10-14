@@ -17,6 +17,10 @@ Get the specified player's IP address and store it in a string.
 
 ## Returns
 
+The length of the player's IP address.
+
+**-1** if player specified doesn't exist.
+
 The player's IP address is stored in the specified array.
 
 ## Examples

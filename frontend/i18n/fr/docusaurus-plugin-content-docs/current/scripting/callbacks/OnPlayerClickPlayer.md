@@ -35,7 +35,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-Il n'y a qu'une seule 'source' de clic (0 - CLICK_SOURCE_SCOREBOARD).
+Il n'y a qu'une seule 'source' de clic (0 - CLICK_SOURCE_SCOREBOARD). L'existence de ce paramètre suggère que plusieurs ressources seront ajoutées dans le futur.
 
 :::
 

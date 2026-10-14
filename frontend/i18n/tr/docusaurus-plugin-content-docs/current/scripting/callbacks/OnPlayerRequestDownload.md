@@ -11,11 +11,11 @@ tags: ["player"]
 
 Fonksiyon, bir oyuncu özel model indirmeleri istediğinde çağrılır.
 
-| Parametre | Açıklama                                   |
-| --------- | ------------------------------------------ |
-| playerid  | Model indirmesi isteyen oyuncunun ID'si.   |
-| type      | İsteğin türü (aşağıya bakın).              |
-| crc       | Özel model dosyasının CRC sağlama toplamı. |
+| Parametre | Açıklama                                                                                            |
+| --------- | --------------------------------------------------------------------------------------------------- |
+| playerid  | Model indirmesi isteyen oyuncunun ID'si.                                                            |
+| type      | İsteğin türü (aşağıya bakın).                                                                       |
+| crc       | Özel model dosyasının [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) sağlama toplamı. |
 
 ## Çalışınca Vereceği Sonuçlar
 

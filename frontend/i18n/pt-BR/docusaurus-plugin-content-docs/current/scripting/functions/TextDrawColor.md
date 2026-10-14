@@ -33,6 +33,12 @@ public OnGameModeInit()
 ```
 ## Notas
 
+:::tip
+
+Você também pode usar [cores do Gametext](../resources/gametextstyles) em textdraws. (por exemplo, `~r~` `~g~` `~b~`)
+
+:::
+
 :::note
 
 Caso TextDraw já esteja sendo mostrado, ele deverá ser mostrado novamente ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) para que as alterações desta função tenham efeito.

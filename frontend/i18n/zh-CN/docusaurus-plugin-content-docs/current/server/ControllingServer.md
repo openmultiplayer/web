@@ -42,6 +42,8 @@ password whatever
 
 ### 添加封禁
 
+封禁是指阻止一个 IP 连接到服务器。
+
 ##### samp.ban
 
 samp.ban 是用于存储封禁信息的文件，包括以下内容：
@@ -58,7 +60,7 @@ samp.ban 是用于存储封禁信息的文件，包括以下内容：
 IP_HERE [28/05/09 | 13:37:00] PLAYER - 封禁原因
 ```
 
-其中 `IP_HERE` 是你想要封禁的 IP 地址。
+其中 `IP_HERE` 是你想要封禁的 IP 地址。这种方法要比使用 RCON 命令 `banip` 花更长时间, 所以建议使用 RCON `banip`.
 
 ##### Ban() 函数
 

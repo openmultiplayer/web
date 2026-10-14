@@ -17,6 +17,8 @@ Acest callback este apelat atunci când un jucător începe să intre într-un v
 
 ## Returnări
 
+Acest callback nu se ocupă de returnări.
+
 Este întotdeauna numit primul în filterscript-uri.
 
 ## Exemple

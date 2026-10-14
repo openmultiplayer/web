@@ -21,8 +21,9 @@ There are two ways to create pickups. [CreatePickup](../scripting/functions/Crea
 
 **Parameters:**
 
-| model        | The model you'd like to use for the pickup.                                                               |
+| Name         | Description                                                                                               |
 | ------------ | --------------------------------------------------------------------------------------------------------- |
+| model        | The model you'd like to use for the pickup.                                                               |
 | type         | The pickup spawn type, see further down this page.                                                        |
 | Float:X      | The X-coordinate for the pickup to show.                                                                  |
 | Float:Y      | The Y-coordinate for the pickup to show.                                                                  |
@@ -31,7 +32,7 @@ There are two ways to create pickups. [CreatePickup](../scripting/functions/Crea
 
 For this example we will create a cash pickup at Grove Street.
 
-Now we need to decide on a model to appear in the world, there are lots of models to choose from, some are listed on the external site [here](https://dev.prineside.com/en/gtasa_samp_model_id), here choose model number 1274 which is dollar sign.
+Now we need to decide on a model to appear in the world, there are lots of models to choose from, some are listed on the external site [here](https://dev.prineside.com/en/gtasa_samp_model_id), here choose model number 1274 which is dollar sign. There is also a specific list of common pickup models on the [Pickup IDs](../scripting/resources/pickupids) page.
 
 Finally we need a [Type](../scripting/resources/pickuptypes) for the pickup, on the same page with the pickup models is a list of pickup types describing what the various ones do. We want this pickup to disappear when you pick it up, so you can't pick it up repeatedly, but to reappear after a few minutes so you can pick it up again, type 2 does just this.
 

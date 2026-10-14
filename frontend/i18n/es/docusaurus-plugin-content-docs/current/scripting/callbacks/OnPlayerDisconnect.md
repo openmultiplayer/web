@@ -63,3 +63,7 @@ Algunas funciones pueden no funcionar correctamente cuando son usadas en este ca
 :::
 
 ## Funciones Relacionadas
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerDisconnect:
+
+- [OnPlayerConnect](OnPlayerConnect): Llamado cuando se conecta un jugador.

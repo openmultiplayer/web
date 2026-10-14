@@ -29,6 +29,8 @@ If you have doubts about why to extract and what IP octets and port bytes are, s
 |     1     | Port >> 8 & 0xFF |
 |     1     |      OPCODE      |
 
+For example, an `i` query sent to the server `192.168.200.103:7777` consists of these bytes (in hexadecimal): `53 41 4D 50` ("SAMP"), `C0 A8 C8 67` (192, 168, 200 and 103), `61 1E` (7777, which is 0x1E61) and `69` ("i").
+
 [Example in C](https://github.com/Louzindev/sampquery-c/blob/master/src/packet.c)
 
 ## OPCODE
@@ -46,6 +48,27 @@ OPCODE's are package identifiers, and each one represents a different request.
 - **OPCODE "x" or 0x78:** This is an RCON command, and it's completely different from all of the other packets.
 
 - **OPCODE "p" or 0x70:** Four psuedo-random characters are sent to the server, and the same characters are returned. You can use the time between sending and receiving to work out the servers' ping/latency.
+
+:::note
+
+If more than 100 players are online, the server does not respond to the `c` (client list) query.
+
+:::
+
+## RCON Packets
+
+The RCON packet (OPCODE "x") carries more data than the other queries: the 11 bytes described above are followed by the RCON password and the command to execute, each prefixed with its length as a 2-byte number. The server only answers RCON packets when the [Remote Console](../server/RemoteConsole) is enabled (`rcon.enable` in [config.json](../server/config.json)).
+
+The table below uses `changeme` as the RCON password and `varlist` as the command; the values and offsets will be different for other passwords and commands.
+
+| Byte  | Key      | Byte Width | Hexadecimal             | Description                 |
+| ----- | -------- | ---------- | ----------------------- | --------------------------- |
+| 11-12 | (strlen) | 2          | 08 00                   | Length of the RCON password |
+| 13-20 | Password | (strlen)   | 63 68 61 6E 67 65 6D 65 | The RCON password           |
+| 21-22 | (strlen) | 2          | 07 00                   | Length of the RCON command  |
+| 23-29 | Command  | (strlen)   | 76 61 72 6C 69 73 74    | The RCON command            |
+
+The server sends the output of the command back one line per packet: the 11-byte header, followed by the length of the line (2 bytes) and the line itself.
 
 ## Response
 

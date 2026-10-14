@@ -15,11 +15,11 @@ Callback นี้ถูกเพิ่มใน SA-MP 0.3.DL R1 และจะ
 
 This callback is called when a player request for custom model downloads.
 
-| Name     | Description                                              |
-| -------- | -------------------------------------------------------- |
-| playerid | The ID of the player that request custom model download. |
-| type     | The type of the request (see below).                     |
-| crc      | The CRC checksum of custom model file.                   |
+| Name     | Description                                                                                     |
+| -------- | ----------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player that request custom model download.                                        |
+| type     | The type of the request (see below).                                                            |
+| crc      | The [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) checksum of custom model file. |
 
 ## ส่งคืน
 
@@ -63,3 +63,6 @@ public OnPlayerRequestDownload(playerid, type, crc)
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.
+- [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): Find an existing custom skin or simple object model file.
+- [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): Find an existing custom skin or simple object texture file.
+- RedirectDownload: Redirect a player's custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.

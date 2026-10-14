@@ -41,6 +41,10 @@ Este callback también se llama cuando un jugador presiona F4.
 
 :::
 
+## Callbacks Relacionados
+
+- [OnPlayerRequestSpawn](OnPlayerRequestSpawn): Llamado cuando el jugador va a spawnear desde la selección de skin.
+
 ## Funciones Relacionadas
 
 - [AddPlayerClass](../functions/AddPlayerClass): Añadir una clase.

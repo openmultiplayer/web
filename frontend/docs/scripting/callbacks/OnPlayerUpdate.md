@@ -57,6 +57,8 @@ public OnPlayerWeaponChange(playerid, WEAPON:oldWeapon, WEAPON:newWeapon)
 }
 ```
 
+In this example you will probably also want to reset `gPlayerCurrentWeapon[playerid]` in [OnPlayerConnect](OnPlayerConnect).
+
 **Example 2**
 
 ```c

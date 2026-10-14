@@ -41,3 +41,7 @@ public OnPlayerConnect(playerid)
 <NoteNPCCallbacksES />
 
 ## Funciones Relacionadas
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerConnect:
+
+- [OnPlayerDisconnect](OnPlayerDisconnect): Llamado cuando un jugador se desconecta del servidor.

@@ -17,6 +17,8 @@ This callback is called when a player starts to enter a vehicle, meaning the pla
 
 ## ส่งคืน
 
+Callback นี้ไม่มีการส่งค่ากลับ
+
 มันถูกเรียกในฟิลเตอร์สคริปต์ก่อนเสมอ
 
 ## ตัวอย่าง

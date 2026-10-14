@@ -39,6 +39,12 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 <NoteNPCCallbacks />
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerInteriorChange](OnPlayerInteriorChange): Appelée lorsqu'un joueur change d'intérieur.
+
 ## Fonctions connexes
 
 - [GetPlayerState](../functions/GetPlayerState): Permet de connaître l'actuel état du joueur.

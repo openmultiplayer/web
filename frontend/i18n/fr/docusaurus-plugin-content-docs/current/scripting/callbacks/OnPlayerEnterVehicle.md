@@ -41,7 +41,16 @@ OnPlayerEnterVehicle est quand même appelé si le joueur est interdit d'entrer 
 
 :::
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerExitVehicle](OnPlayerExitVehicle): Appelée lorsqu'un joueur quitte un véhicule.
+- [OnPlayerStateChange](OnPlayerStateChange): Appelé quand un joueur change d'état.
+
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [PutPlayerInVehicle](../functions/PutPlayerInVehicle): Met un joueur dans le véhicule.
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Vérifie la place du joueur dans le véhicule.

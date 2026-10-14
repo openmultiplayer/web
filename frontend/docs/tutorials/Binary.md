@@ -288,6 +288,8 @@ and finally:
 11110000 //240
 ```
 
+The only difference between bitwise XOR and bitwise OR is that if **both** bit patterns have the same bit turned on, then the result will not have that bit turned on.
+
 ### Bitwise NOT
 
 This operator flips every bit in the bit pattern, turning all 1's to 0's and vise versa.

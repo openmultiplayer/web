@@ -16,7 +16,9 @@ Gets the type (integer, float or string) of a player variable.
 
 ## Returns
 
-Returns the type of the PVar. See table below.
+Returns the [type](../resources/pvartypes) of the PVar.
+
+Returns `PLAYER_VARTYPE_NONE` (0) if a player variable with the given name does not exist.
 
 ## Examples
 

@@ -58,7 +58,15 @@ Vous DEVEZ vérifier que `killerid` est valide (pas `INVALID_PLAYER_ID`) avant d
 
 :::
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerSpawn](OnPlayerSpawn): Appelée lorsqu'un joueur spawn (apparaît).
+
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [SendDeathMessage](../functions/SendDeathMessage): Ajoute un kill dans le killfeed.
 - [SetPlayerHealth](../functions/SetPlayerHealth): Heal un joueur.

@@ -57,6 +57,7 @@ Unlike text colors, these slugs do not require encapsulation. They can be used a
 | `~d~` | Down arrow (gray)                                                                                                                                                                  |
 | `~<~` | Left arrow (gray)                                                                                                                                                                  |
 | `~>~` | Right arrow (gray)                                                                                                                                                                 |
+| `~t~` | Rectangle                                                                                                                                                                          |
 | `~]~` | Displays a `*` symbol (Only in text styles 3, 4 and 5)                                                                                                                             |
 | `~k~` | Keyboard key mapping (e.g. `~k~~VEHICLE_TURRETLEFT~` and `~k~~PED_FIREWEAPON~`). Look [here](keys) for a list of keys.                                                             |
 

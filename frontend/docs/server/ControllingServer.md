@@ -42,6 +42,8 @@ The password is the same as what you set it as in [server.cfg](server.cfg)
 
 ### Adding Bans
 
+A ban prevents an IP address from connecting to the server.
+
 ##### samp.ban
 
 samp.ban is the file used for storing bans, including the following information about the ban:
@@ -58,7 +60,7 @@ To add a ban, simply add a line like so:
 IP_HERE [28/05/09 | 13:37:00] PLAYER - BAN REASON
 ```
 
-Where `IP_HERE` is, is where you put the IP you would like to ban.
+Where `IP_HERE` is, is where you put the IP you would like to ban. This method takes longer than the RCON `banip` command, so using `banip` is recommended.
 
 ##### Ban() function
 
@@ -149,6 +151,8 @@ To unban them, simply use the `unbanip` command, then execute the RCON `reloadba
 ### RCON Commands
 
 Type cmdlist for commands (or, varlist for variables) making use of the RCON in-game (`/rcon cmdlist`).
+
+You do not need to type the `[ ]` brackets; they are just there to highlight the parameter.
 
 These are the functions that you as admin can use:
 

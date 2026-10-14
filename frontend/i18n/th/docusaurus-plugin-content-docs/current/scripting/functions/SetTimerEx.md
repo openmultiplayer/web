@@ -21,6 +21,23 @@ Sets a timer to call a function after the specified interval. This variant ('Ex'
 
 The ID of the timer that was started. Timer IDs start at 1 and are never reused.
 
+## Format Specifiers
+
+| Specifier | Meaning                                                                          |
+| --------- | -------------------------------------------------------------------------------- |
+| `i`       | Integer.                                                                         |
+| `d`       | Integer.                                                                         |
+| `a`       | Array. The next parameter must be an integer (`i` or `d`) with the array's size. |
+| `s`       | String.                                                                          |
+| `f`       | Float.                                                                           |
+| `b`       | Boolean (true/false).                                                            |
+
+:::note
+
+The array (`a`) and string (`s`) specifiers are unusable in SA-MP. Passing arrays and strings to timers is only supported in open.mp.
+
+:::
+
 ## ตัวอย่าง
 
 ```c

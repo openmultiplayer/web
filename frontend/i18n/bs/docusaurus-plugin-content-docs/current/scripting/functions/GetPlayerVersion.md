@@ -17,6 +17,8 @@ Returna/vraća verziju SA-MP klijenta, kako je izvijestio igrač.
 
 ## Returns
 
+**0** ako navedeni igrač ne postoji.
+
 Verzija klijenta je pohranjena u navedenom nizu.
 
 ## Primjeri

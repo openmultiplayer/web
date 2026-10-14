@@ -37,7 +37,15 @@ No se llama si el jugador se cae de una moto o es removido del vehículo por otr
 
 :::
 
+## Callbacks Relacionados
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerExitVehicle:
+
+- [OnPlayerStateChange](OnPlayerStateChange): Llamado cuando el estado del jugador cambia.
+
 ## Funciones Relacionadas
+
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnPlayerExitVehicle:
 
 - [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle): Sacar a un jugador de un vehículo.
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Comprobar en qué asiento está un jugador.

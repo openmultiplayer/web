@@ -9,7 +9,7 @@ tags: []
 
 ## Deskripsi
 
-Menambah sebuah custom character model untuk didownload. Model file biasanya terletak di Player Documents\GTA San Andreas User Files\SAMP\cache didalam folder Server IP dan Port dalam bentuk nama CRC.
+Menambah sebuah custom character model untuk didownload. Model file biasanya terletak di Player Documents\GTA San Andreas User Files\SAMP\cache didalam folder Server IP dan Port dalam bentuk nama [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nama    | Deskripsi                                                                                                                |
 | ------- | ------------------------------------------------------------------------------------------------------------------------ |

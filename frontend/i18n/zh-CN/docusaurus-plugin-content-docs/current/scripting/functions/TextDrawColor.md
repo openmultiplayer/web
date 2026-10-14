@@ -33,6 +33,12 @@ public OnGameModeInit()
 
 ## 注意事项
 
+:::tip
+
+可在文本内容中使用[游戏文本颜色代码](../resources/gametextstyles)（例如 `~r~` 红色、`~g~` 绿色、`~b~` 蓝色）
+
+:::
+
 :::note
 
 若文本绘图已显示，必须重新显示（[TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)）才能使此函数修改生效

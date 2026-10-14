@@ -37,6 +37,14 @@ Este callback también se llamará cuando un vehículo entre en el agua, pero el
 
 :::
 
+## Callbacks Relacionados
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnVehicleDeath:
+
+- [OnVehicleSpawn](OnVehicleSpawn): Llamado cuando un vehículo **re**aparece.
+
 ## Funciones Relacionadas
+
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnVehicleDeath:
 
 - [SetVehicleHealth](../functions/SetVehicleHealth): Establecer la salud de un vehículo.

@@ -17,6 +17,8 @@ Callback Ini di panggil ketika pemain mulai memasuki kendaraan, artinya pemain b
 
 ## Returns
 
+Callback ini tidak mengelola pengembalian nilai.
+
 Ini selalu di panggil pertama dalam filtersciprt.
 
 ## Contoh

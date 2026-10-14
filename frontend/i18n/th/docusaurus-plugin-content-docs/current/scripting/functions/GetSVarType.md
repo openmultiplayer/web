@@ -17,6 +17,8 @@ Gets the type (integer, float or string) of a server variable.
 
 Returns the type of the SVar. See table below.
 
+Returns `SERVER_VARTYPE_NONE` (0) if a server variable with the given name does not exist.
+
 ## ตัวอย่าง
 
 ```c

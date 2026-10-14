@@ -10,6 +10,15 @@ So, you have arrived to the Port Forward tutorial, made by Leopard.
 
 All you need is a samp-server or omp-server and a router. If you have not a router, then you don't need to port forward!
 
+Port forwarding is the process of unblocking ports in a firewall/router/modem, so that programs can send and receive data through these ports. If other players see your server as "(Retrieving info...)" with a ping of 9999, its port is most likely not forwarded.
+
+:::warning
+
+- Ports are usually blocked for a reason. Once a port is forwarded, anyone who knows your IP address and port number can send data to your computer through it.
+- Your computer needs a static internal IP address, otherwise you may have to change your port forwarding every time you restart your router or computer.
+
+:::
+
 ## The Start
 
 Ok, so here's the start, start off by finding your **gateway**. Assume that you have vista. Click start, click on the search field, and write **cmd**. Then a black box appears. Enter the following; **ipconfig**. Wait for the text to load, then look though it. Keep searching until you find _**gateway**_, and don't close the black box!
@@ -71,3 +80,14 @@ Then your done! Click ok and close it. Launch the server, and see if its working
 Once there, get the ip that is on your screen. Go again to your SA-MP Client, add that ip to your favorites and add YOUR_PORT (standard: 7777) at the end. If its working,
 
 **CONGRATULATIONS**! _You have port-forwarded_!
+
+## Demilitarized Zone (DMZ)
+
+Some routers and broadband modems have a DMZ feature. It is **not** recommended at all: it basically opens every single port on your router and bypasses its firewall. Only use it as a last resort if you can't port forward, and if you do, use a firewall on every computer connected to your router.
+
+## Dynamic DNS services
+
+Most people have a dynamic external IP address (one which changes often). This makes hosting any sort of game server problematic, as you need to send the players your new IP address every time you restart your router or modem. There are some solutions:
+
+- Ask your ISP (Internet Service Provider) to provide you with a static IP address, usually at an extra cost.
+- Use a Dynamic DNS service such as No-IP. These services give you a hostname of your choice that players can enter in the client instead of your IP address; the client turns it back into your current IP address. The service must be kept up to date with your IP address, for example by running a program on your computer that sends your updated IP address to the service you have chosen.

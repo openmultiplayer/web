@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Deze callback wordt aangeroepen wanneer een voertuig wordt gemod.
 
-| Naam        | Beschrijving                                                  |
-| ----------- | ------------------------------------------------------------- |
-| playerid    | Het ID van de bestuurder van het voertuig.                    |
-| vehicleid   | Het ID van het voertuig dat wordt gemod.                      |
-| componentid | Het ID van de component die aan het voertuig werd toegevoegd. |
+| Naam        | Beschrijving                                                                                 |
+| ----------- | -------------------------------------------------------------------------------------------- |
+| playerid    | Het ID van de bestuurder van het voertuig.                                                   |
+| vehicleid   | Het ID van het voertuig dat wordt gemod.                                                     |
+| componentid | Het [ID van de component](../resources/carcomponentid) die aan het voertuig werd toegevoegd. |
 
 ## Returns
 

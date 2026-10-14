@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Color embedding can be used for multiple colors in the text.
+[Color embedding](../resources/colorslist#color-embedding) can be used for multiple colors in the text.
 
 :::
 

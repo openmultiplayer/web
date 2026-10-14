@@ -8,7 +8,7 @@ tags: ["textdraw"]
 
 ## Descrição
 
-Cria um desenho de texto. Textdraws são, como o nome indica, texto (principalmente - pode haver caixas, sprites e visualizações de modelos (skins/veículos/armas/objetos também) que é desenhado nas telas de um jogador. Consulte esta página para obter informações abrangentes sobre textdraws.
+Cria um desenho de texto. Textdraws são, como o nome indica, texto (principalmente - pode haver caixas, sprites e visualizações de modelos (skins/veículos/armas/objetos também) que é desenhado nas telas de um jogador. Consulte [esta página](../resources/textdraws) para obter informações abrangentes sobre textdraws.
 
 | Nome | Descrição |
 | ---------------- | -------------------------------------------------------- |

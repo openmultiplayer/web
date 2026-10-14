@@ -57,4 +57,5 @@ Trenutno ne postoje nikakva ograničenja o pozivanju ove funkcije, ali budite op
 
 ## Srodne Funkcije
 
+- [AddSimpleModel](AddSimpleModel): Dodaje novi prilagođen/custom prost model objekta za preuzimanje.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Pozvano kada igrač dovrši preuzimanje prilagođenih/custom modela.

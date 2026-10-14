@@ -72,6 +72,12 @@ public OnGameModeExit()
 
 ## notas
 
+:::warning
+
+**Sempre** libere o resultado usando [db_free_result](db_free_result), não importa qual a consulta enviada mas sempre libere!
+
+:::
+
 ## funções relacionadas
 
 - [db_open](db_open): Abrir uma conexão com uma base de dados SQLite

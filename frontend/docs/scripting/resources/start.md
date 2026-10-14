@@ -710,3 +710,16 @@ MyFunc2()
 ```
 
 static can also be applied to functions in the same way.
+
+# Control Structures
+
+Control structures determine program flow. They can execute code or not based on the contents of variables, the returns of functions and other things. They can also do things repeatedly if need be. See [Control Structures](../language/ControlStructures) for more information.
+
+# Keywords
+
+The keywords of the language are covered in the following pages:
+
+- [Directives](../language/Directives)
+- [Initialisers](../language/Initialisers)
+- [Operators](../language/Operators)
+- [Statements](../language/Statements)

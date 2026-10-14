@@ -11,11 +11,11 @@ tags: ["player"]
 
 Esta callback é chamada quando um jogador solicita o download de modelos personalizados.
 
-| Nome     | Descrição                                              |
-| -------- | ------------------------------------------------------ |
-| playerid | O ID do jogador que solicitou o download de um modelo. |
-| type     | O tipo de solicitação (veja abaixo).                   |
-| crc      | O CRC de soma de verificação dos modelos.              |
+| Nome     | Descrição                                                                                          |
+| -------- | -------------------------------------------------------------------------------------------------- |
+| playerid | O ID do jogador que solicitou o download de um modelo.                                             |
+| type     | O tipo de solicitação (veja abaixo).                                                               |
+| crc      | O [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) de soma de verificação dos modelos. |
 
 ## Retornos
 
@@ -59,3 +59,6 @@ public OnPlayerRequestDownload(playerid, type, crc)
 ## Funções Relacionadas
 
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Chamada quando um jogador termina de baixar os modelos personalizados.
+- [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): Encontra um arquivo de modelo existente de skin customizada ou objeto simples.
+- [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): Encontra um arquivo de textura existente de skin customizada ou objeto simples.
+- [RedirectDownload](../functions/RedirectDownload): Redirecione o download AddCharModel ou AddSimpleModel personalizado do jogador para uma página da Web HTTP específica.

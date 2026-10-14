@@ -45,3 +45,7 @@ This function has no affect on un-occupied vehicles and does not affect trains.
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
+
+- [SetVehicleAngularVelocity](SetVehicleAngularVelocity): Set the angular velocity of a vehicle.
+- [SetPlayerVelocity](SetPlayerVelocity): Set a player's velocity.
+- [GetPlayerVelocity](GetPlayerVelocity): Get a player's velocity.

@@ -45,4 +45,6 @@ Once set invulnerable, the actor does not call [OnPlayerGiveDamageActor](../call
 
 ## Related Functions
 
+- [CreateActor](CreateActor): Create an actor (static NPC).
 - [IsActorInvulnerable](IsActorInvulnerable): Check if an actor is invulnerable.
+- [SetActorHealth](SetActorHealth): Set the health of an actor.

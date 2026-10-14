@@ -9,7 +9,7 @@ tags: []
 
 ## Description
 
-Nagdaragdag ng bagong custom na modelo ng character para sa pag-download. Ang mga file ng modelo ay maiimbak sa Documents\GTA San Andreas User Files\SAMP\cache ng player sa ilalim ng Server IP at Port folder sa isang CRC-form file name.
+Nagdaragdag ng bagong custom na modelo ng character para sa pag-download. Ang mga file ng modelo ay maiimbak sa Documents\GTA San Andreas User Files\SAMP\cache ng player sa ilalim ng Server IP at Port folder sa isang [CRC-form](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) file name.
 
 | Name    | Description                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------- |

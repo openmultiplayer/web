@@ -16,6 +16,8 @@ Este callback se llama cuando un jugador comienza a entrar a un vehículo, o sea
 
 ## Devoluciones
 
+Este callback no controla devoluciones.
+
 Siempre se llama primero en filterscripts.
 
 ## Ejemplos
@@ -38,7 +40,16 @@ Este callback es llamado cuando un jugador COMIENZA a entrar a un vehículo, no 
 
 :::
 
+## Callbacks Relacionados
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerEnterVehicle:
+
+- [OnPlayerExitVehicle](OnPlayerExitVehicle): Llamado cuando un jugador sale de un vehiculo.
+- [OnPlayerStateChange](OnPlayerStateChange): Llamado cuando el estado del jugador cambia.
+
 ## Funciones Relacionadas
+
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnPlayerEnterVehicle:
 
 - [PutPlayerInVehicle](../functions/PutPlayerInVehicle): Pone a un jugador adentro de un vehículo.
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Comprueba en qué asiento está un jugador.

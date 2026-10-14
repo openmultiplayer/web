@@ -10,6 +10,10 @@ tags: ["server variable", "svar"]
 
 Cada SVar (variável de servidor) possui seu próprio número de identificação exclusivo para pesquisa, esta função retorna o ID mais alto.
 
+## Retornos
+
+O conjunto mais alto SVar ID.
+
 ## Exemplos
 
 ```c

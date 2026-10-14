@@ -17,6 +17,8 @@ Bu geri çağırma, bir oyuncu bir araca binmeye başladığında çağırılır
 
 ## Çalışınca Vereceği Sonuçlar
 
+Bu geri çağırma dönüşleri ele almaz.
+
 Her zaman ilk olarak filterscriptlerde çağırılır.
 
 ## Örnek

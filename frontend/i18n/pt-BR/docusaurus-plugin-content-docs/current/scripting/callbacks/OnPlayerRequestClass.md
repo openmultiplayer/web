@@ -44,4 +44,6 @@ Esta callback também é chamada quando um jogador pressiona F4.
 
 ## Funções Relacionadas
 
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
+
 - [AddPlayerClass](../functions/AddPlayerClass): Adiciona uma classe.

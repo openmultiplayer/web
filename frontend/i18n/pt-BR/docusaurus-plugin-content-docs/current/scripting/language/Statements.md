@@ -366,6 +366,7 @@ printf("Isso será impresso");
 O compilador, no entanto, não lida muito bem com goto, então isso não será otimizado de forma alguma e coisas como:
 
 ```c
+stock MyFunction()
 {
     new
         i = 5;
@@ -435,7 +436,17 @@ if (i < 10)
 
 As condições que if pode aceitar são muitas demais para este post, porém algumas estão listadas abaixo:
 
-Operador Explicação Exemplo Resultado quando a=1, b=0 Resultado quando a=1, b=1 Resultado quando a=0, b=1 Resultado quando a=0, b=0 == Verifica se uma coisa é igual a outra if (a == b) falso verdadeiro falso verdadeiro != Verifica se uma coisa não é igual a outra if (a != b) verdadeiro falso verdadeiro falso < Verifica se uma coisa é menor que outra if (a < b) falso falso verdadeiro falso > Verifica se uma coisa é maior que outra if (a > b) verdadeiro falso falso falso \<= Verifica se uma coisa é menor ou igual a outra if (a \<= b) falso verdadeiro verdadeiro verdadeiro >= Verifica se uma coisa é maior ou igual a outra if (a >= b) verdadeiro verdadeiro falso verdadeiro && Verifica se duas coisas são verdadeiras (não 0) if (a && b) falso verdadeiro falso falso || Verifica se pelo menos uma de duas coisas é verdadeira (não 0) if (a || b) verdadeiro verdadeiro verdadeiro falso ! Verifica se algo é falso if (!(a == b)) verdadeiro falso verdadeiro falso
+| Operador | Explicação                                                     | Exemplo          | Resultado quando a=1, b=0 | Resultado quando a=1, b=1 | Resultado quando a=0, b=1 | Resultado quando a=0, b=0 |
+| -------- | -------------------------------------------------------------- | ---------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- |
+| `==`     | Verifica se uma coisa é igual a outra                          | `if (a == b)`    | falso                     | verdadeiro                | falso                     | verdadeiro                |
+| `!=`     | Verifica se uma coisa não é igual a outra                      | `if (a != b)`    | verdadeiro                | falso                     | verdadeiro                | falso                     |
+| `<`      | Verifica se uma coisa é menor que outra                        | `if (a < b)`     | falso                     | falso                     | verdadeiro                | falso                     |
+| `>`      | Verifica se uma coisa é maior que outra                        | `if (a > b)`     | verdadeiro                | falso                     | falso                     | falso                     |
+| `<=`     | Verifica se uma coisa é menor ou igual a outra                 | `if (a <= b)`    | falso                     | verdadeiro                | verdadeiro                | verdadeiro                |
+| `>=`     | Verifica se uma coisa é maior ou igual a outra                 | `if (a >= b)`    | verdadeiro                | verdadeiro                | falso                     | verdadeiro                |
+| `&&`     | Verifica se duas coisas são verdadeiras (não 0)                | `if (a && b)`    | falso                     | verdadeiro                | falso                     | falso                     |
+| `\|\|`   | Verifica se pelo menos uma de duas coisas é verdadeira (não 0) | `if (a \|\| b)`  | verdadeiro                | verdadeiro                | verdadeiro                | falso                     |
+| `!`      | Verifica se algo é falso                                       | `if (!(a == b))` | verdadeiro                | falso                     | verdadeiro                | falso                     |
 
 Obviamente, com estes você pode construir condicionais complexas:
 

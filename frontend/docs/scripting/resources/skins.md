@@ -8,6 +8,14 @@ description: This page has all the available skins in SA-MP.
 
 This page contains every available skin used by [SetPlayerSkin](../functions/SetPlayerSkin) and [GetPlayerSkin](../functions/GetPlayerSkin) functions.
 
+There are 311 skins available (IDs 0 to 311, except the invalid ID 74), including skins for public services like the police, firemen and ambulance personnel, but also many different gangs, people from specific professions and normal pedestrians.
+
+:::note
+
+Though some skins are listed as skins used in a certain profession such as 'taxi driver', they may still appear elsewhere in singleplayer as a normal pedestrian.
+
+:::
+
 | Skin ID | Preview                                                            | Skin Model Name | Skin Name/Type                           | Singleplayer Location                              | Gender |
 | ------- | ------------------------------------------------------------------ | --------------- | ---------------------------------------- | -------------------------------------------------- | ------ |
 | 0       | ![Skin ID 0](https://assets.open.mp/assets/images/skins/0.png)     | cj              | Carl "CJ" Johnson (Main Character)       | Anywhere                                           | Male   |

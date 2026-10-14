@@ -17,6 +17,8 @@ Obtém o endereço IP de um jogador específico e armazena-o em uma string.
 
 ## Retorno
 
+**-1** se o jogador especificado não existir.
+
 O endereço IP do jogador que está armazenado na array especificada.
 
 ## Exemplos

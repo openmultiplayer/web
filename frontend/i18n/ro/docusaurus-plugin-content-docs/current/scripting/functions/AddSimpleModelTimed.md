@@ -53,4 +53,5 @@ Useartwork trebuie să fie activat mai întâi în setările serverului pentru c
 
 ## Funcții conexe
 
+- [AddSimpleModel](AddSimpleModel): Adaugă un nou model de obiect simplu personalizat pentru descărcare.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Apelat când un jucător termină de descărcat modele personalizate.
