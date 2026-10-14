@@ -145,17 +145,32 @@
   "announcement.serverVersion": {
     "message": "Вийшла версія open.mp {version} із численними виправленнями помилок, покращенням продуктивності та новими функціями!"
   },
+  "announcement.serverReleaseSummary": {
+    "message": "Ця версія сервера додає керування транспортом NPC, покращує рух транспорту NPC та виправляє проблеми з мережею і скриптами."
+  },
   "announcement.changelog": {
-    "message": "Список змін"
+    "message": "Список змін сервера"
   },
   "announcement.download": {
-    "message": "Завантажити"
+    "message": "Завантажити сервер"
   },
   "announcement.launcherUpdate": {
     "message": "Лаунчер оновлено!"
   },
+  "announcement.launcherReleaseSummary": {
+    "message": "Лаунчер покращує внутрішньоігрове накладання, підтримку графічних модифікацій і стабільність з’єднання."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Вийшов open.mp Launcher {version}!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Вийшла нова версія сервера open.mp {version}!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Вийшли нові версії: сервер open.mp {serverVersion} та Launcher {launcherVersion}!"
+  },
   "announcement.seeWhatsNew": {
-    "message": "Переглянути оновлення"
+    "message": "Оновлення Launcher"
   },
   "announcement.dismiss": {
     "message": "Закрити це повідомлення"

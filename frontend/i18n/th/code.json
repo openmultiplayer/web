@@ -148,17 +148,32 @@
   "announcement.serverVersion": {
     "message": "เวอร์ชันเซิร์ฟเวอร์ open.mp {version} พร้อมให้ใช้งานแล้ว พร้อมการแก้ไขบัคมากมาย การปรับปรุงประสิทธิภาพ และคุณสมบัติใหม่!"
   },
+  "announcement.serverReleaseSummary": {
+    "message": "รุ่นเซิร์ฟเวอร์นี้เพิ่มการควบคุมยานพาหนะ NPC ปรับปรุงการเคลื่อนที่ของยานพาหนะ NPC และแก้ไขปัญหาเครือข่ายกับสคริปต์"
+  },
   "announcement.changelog": {
-    "message": "บันทึกการเปลี่ยนแปลง"
+    "message": "บันทึกการเปลี่ยนแปลงเซิร์ฟเวอร์"
   },
   "announcement.download": {
-    "message": "ดาวน์โหลด"
+    "message": "ดาวน์โหลดเซิร์ฟเวอร์"
   },
   "announcement.launcherUpdate": {
     "message": "ตัวเรียกใช้ (Launcher) ก็ได้รับการอัปเดตเช่นกัน!"
   },
+  "announcement.launcherReleaseSummary": {
+    "message": "Launcher ปรับปรุงโอเวอร์เลย์ในเกม การรองรับม็อดกราฟิก และความเสถียรของการเชื่อมต่อ"
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "open.mp Launcher {version} พร้อมใช้งานแล้ว!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "เซิร์ฟเวอร์ open.mp เวอร์ชัน {version} พร้อมใช้งานแล้ว!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "open.mp มีเวอร์ชันใหม่แล้ว: เซิร์ฟเวอร์ {serverVersion} และ Launcher {launcherVersion}!"
+  },
   "announcement.seeWhatsNew": {
-    "message": "ดูว่ามีอะไรใหม่"
+    "message": "อัปเดต Launcher"
   },
   "announcement.dismiss": {
     "message": "ยกเลิกข้อความนี้"

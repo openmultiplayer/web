@@ -148,17 +148,32 @@
   "announcement.serverVersion": {
     "message": "Versi server open.mp {version} tersedia dengan banyak perbaikan bug, peningkatan kinerja, dan fitur baru!"
   },
+  "announcement.serverReleaseSummary": {
+    "message": "Rilis server ini menambahkan kontrol kendaraan NPC, meningkatkan pergerakan kendaraan NPC, serta memperbaiki masalah jaringan dan skrip."
+  },
   "announcement.changelog": {
-    "message": "Catatan Perubahan"
+    "message": "Catatan perubahan server"
   },
   "announcement.download": {
-    "message": "Unduh"
+    "message": "Unduh server"
   },
   "announcement.launcherUpdate": {
     "message": "Launcher juga telah mendapatkan pembaruan!"
   },
+  "announcement.launcherReleaseSummary": {
+    "message": "Launcher meningkatkan overlay dalam game, dukungan mod grafis, dan kestabilan koneksi."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Launcher open.mp {version} kini tersedia!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Versi baru server open.mp {version} kini tersedia!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Rilis baru tersedia: server open.mp {serverVersion} dan Launcher {launcherVersion}!"
+  },
   "announcement.seeWhatsNew": {
-    "message": "Lihat apa yang baru"
+    "message": "Pembaruan Launcher"
   },
   "announcement.dismiss": {
     "message": "Hapus pesan ini"
