@@ -44,20 +44,22 @@ The password is the same as what you set it as in [server.cfg](server.cfg)
 
 A ban prevents an IP address from connecting to the server.
 
-##### samp.ban
+##### bans.json
 
-samp.ban is the file used for storing bans, including the following information about the ban:
+bans.json is the file used for storing bans, including the following information about the ban:
 
 - IP
 - Date
 - Time
-- Name (Name of person or a reason, see [BanEx](../scripting/functions/BanEx))
-- Type of ban
+- Name (Name of person)
+- Reason (see [BanEx](../scripting/functions/BanEx))
 
-To add a ban, simply add a line like so:
+To add a ban, simply add an object to the JSON array like so:
 
-```
-IP_HERE [28/05/09 | 13:37:00] PLAYER - BAN REASON
+```json
+[
+    {"address": "IP_HERE", "player": "PLAYER", "reason": "BAN REASON", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 Where `IP_HERE` is, is where you put the IP you would like to ban. This method takes longer than the RCON `banip` command, so using `banip` is recommended.
@@ -66,8 +68,10 @@ Where `IP_HERE` is, is where you put the IP you would like to ban. This method t
 
 The [Ban](../scripting/functions/Ban) function can be used to ban a player from a script. The [BanEx](../scripting/functions/BanEx) function will add an optional reason like so:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "Cheater", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ##### RCON ban command
@@ -102,27 +106,29 @@ banip IP
 
 Once somebody is banned, there are two ways to unban them.
 
-- Remove from samp.ban
+- Remove from bans.json
 - The RCON `unbanip` command
 
-#### samp.ban
+#### bans.json
 
-samp.ban can be found in your sa-mp server directory, it contains lines with the following information about each ban:
+bans.json can be found in your open.mp server directory, it contains objects with the following information about each ban:
 
 - IP
 - Date
 - Time
-- Name (Name of person or a reason (see [BanEx](../scripting/functions/BanEx)))
-- Type of ban (INGAME, IP BAN etc,)
+- Name (Name of person)
+- Reason (see [BanEx](../scripting/functions/BanEx))
 
 Examples:
 
-```
-127.8.57.32 [13/06/09 | 69:69:69] NONE - IP BAN
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "127.8.57.32", "player": "NONE", "reason": "IP BAN", "time": "2009-06-13T13:37:00+0000"},
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
-To unban them, simply remove the line, then execute the RCON reloadbans command to make the server re-read samp.ban.
+To unban them, simply remove the object, then execute the RCON reloadbans command to make the server re-read bans.json.
 
 #### unbanip
 
@@ -130,8 +136,10 @@ The RCON unbanip command can be used in-game or from the server console (black b
 
 Example:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ```
@@ -142,11 +150,11 @@ Example:
 unbanip 13.37.13.37
 ```
 
-To unban them, simply use the `unbanip` command, then execute the RCON `reloadbans` command to make the server re-read samp.ban.
+To unban them, simply use the `unbanip` command.
 
 #### reloadbans
 
-`samp.ban` is a file that holds the information for the IP's that are currently banned from the server. This file is read when the server is started, so if you unban an IP/person you MUST type the RCON `reloadbans` command to make the server read `samp.ban` again and allow them to join the server.
+`bans.json` is a file that holds the information for the IP's that are currently banned from the server. This file is read when the server is started, so if you unban an IP/person by editing the file you MUST type the RCON `reloadbans` command to make the server read `bans.json` again and allow them to join the server.
 
 ### RCON Commands
 
@@ -170,7 +178,7 @@ These are the functions that you as admin can use:
 | `/rcon ban [ID]`                  | Ban the player with the given ID (_example: /rcon ban 2_).                                                                                           |
 | `/rcon changemode [mode]`         | This command will change the current gamemode to the given one (_example: if you want to play sftdm: /rcon changemode sftdm_).                       |
 | `/rcon gmx`                       | Will load the next gamemode in [server.cfg](server.cfg).                                                                                             |
-| `/rcon reloadbans`                | Reloads the `samp.ban` file where the banned IP addresses are stored. Should be used after unbanning and IP address.                                 |
+| `/rcon reloadbans`                | Reloads the `bans.json` file where the banned IP addresses are stored. Should be used after unbanning and IP address by editing the file.                                 |
 | `/rcon reloadlog`                 | Reloads the `server_log.txt`. Useful for automatic log rotation. Can be triggered by sending the `SIGUSR1` signal to the server (Linux server only). |
 | `/rcon say`                       | shows a message to the players in the client-console (example: `/rcon say hello` will show as `Admin: hello`).                                       |
 | `/rcon players`                   | Shows the players that are in the server (with their name, IP & ping).                                                                               |

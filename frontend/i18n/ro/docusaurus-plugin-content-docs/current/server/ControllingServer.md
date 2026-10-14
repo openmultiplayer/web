@@ -41,20 +41,22 @@ Parola va fi aceeași ca și în [server.cfg](server.cfg).
 
 ### Cum să adăugați interdicții
 
-##### samp.ban
+##### bans.json
 
-samp.ban este fișierul în care se scriu banurile, dar și alte informații despre acestea, printre care:
+bans.json este fișierul în care se scriu banurile, dar și alte informații despre acestea, printre care:
 
 - IP-ul jucătorului
 - Data banului
 - Ora banului
-- Numele (Numele jucătorului sau un motiv, consultați [BanEx](../scripting/functions/BanEx))
-- Tipul banului
+- Numele (Numele jucătorului)
+- Motiv (consultați [BanEx](../scripting/functions/BanEx))
 
-Pentru a adăuga un ban, pur și simplu adăugați o linie ca aceasta în samp.ban:
+Pentru a adăuga un ban, pur și simplu adăugați un obiect ca acesta în array-ul JSON din bans.json:
 
-```
-IP_AICI [28/05/09 | 13:37:00] PLAYER - MOTIV BAN
+```json
+[
+    {"address": "IP_AICI", "player": "PLAYER", "reason": "MOTIV BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 Înlocuiți `IP_AICI` cu IP-ul pe care doriți să îl banați.
@@ -63,8 +65,10 @@ IP_AICI [28/05/09 | 13:37:00] PLAYER - MOTIV BAN
 
 Funcția [Ban](../scripting/functions/Ban) poate fi folosită ca să banați un jucător din script. Funcția [BanEx](../scripting/functions/BanEx) este la fel, doar că puteți adăuga și un motiv:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "Cheater", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ##### Comanda RCON pentru ban
@@ -99,27 +103,29 @@ banip IP
 
 Din moment ce cineva este banat, există două moduri în care puteți să-i dați unban.
 
-- Eliminați banul din samp.ban
+- Eliminați banul din bans.json
 - Folosiți comanda RCON `unbanip`
 
-#### samp.ban
+#### bans.json
 
-samp.ban poate fi găsit în fișierele serverului dumneavoastră, acesta conține următoarele informații pentru fiecare ban:
+bans.json poate fi găsit în fișierele serverului dumneavoastră, acesta conține următoarele informații pentru fiecare ban:
 
 - IP
 - Dată
 - Oră
-- Nume (Numele jucătorului sau un motiv, consultați [BanEx](../scripting/functions/BanEx))
-- Tipul banului (INGAME, IP BAN etc.)
+- Nume (Numele jucătorului)
+- Motiv (consultați [BanEx](../scripting/functions/BanEx))
 
 Exemple:
 
-```
-127.8.57.32 [13/06/09 | 69:69:69] NONE - IP BAN
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "127.8.57.32", "player": "NONE", "reason": "IP BAN", "time": "2009-06-13T13:37:00+0000"},
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
-Ca să-i debanați, pur și simplu ștergeți linia cu pricina, apoi folosiți comanda RCON reloadbans.
+Ca să-i debanați, pur și simplu ștergeți obiectul cu pricina, apoi folosiți comanda RCON reloadbans.
 
 #### unbanip
 
@@ -127,8 +133,10 @@ Comanda RCON unbanip se poate folosi din joc sau din consola serverului. Pentru 
 
 Exemplu:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ```
@@ -139,11 +147,9 @@ Exemplu:
 unbanip 13.37.13.37
 ```
 
-După ce i-ați debanat, folosiși comanda RCON reloadbans pentru a reîncărca fișierul.
-
 #### reloadbans
 
-`samp.ban` este un fișier care conține informații despre IP-urile care sunt banate pe server. Acest fișier este citit atunci când serverul pornește, deci dacă debanați o persoană, trebuie neapărat să folosiți această comandă pentru a face serverul să citească `samp.ban` din nou.
+`bans.json` este un fișier care conține informații despre IP-urile care sunt banate pe server. Acest fișier este citit atunci când serverul pornește, deci dacă debanați o persoană editând fișierul, trebuie neapărat să folosiți această comandă pentru a face serverul să citească `bans.json` din nou.
 
 ### Comenzi RCON
 
@@ -165,7 +171,7 @@ Acestea sunt comenzile pe care le puteți folosi ca admin:
 | `/rcon ban [ID]`                   | Dă ban jucătorului cu ID-ul respectiv (_exemplu: /rcon ban 2_).                                                                                              |
 | `/rcon changemode [mod]`           | Această comandă o să schimbe gamemode-ul curent cu cel pe care l-ați scris în `[mod]` (_exemplu: dacă vreți să schimbați cu sftdm: /rcon changemode sftdm_). |
 | `/rcon gmx`                        | Această comandă va încărca următorul gamemode din [server.cfg](server.cfg).                                                                                  |
-| `/rcon reloadbans`                 | Va reîncărca fișierul samp.ban unde sunt scrise toate adresele de IP banate. Această comandă ar trebui folosită după ce debanați o adresă IP.                |
+| `/rcon reloadbans`                 | Va reîncărca fișierul bans.json unde sunt scrise toate adresele de IP banate. Această comandă ar trebui folosită după ce debanați o adresă IP editând fișierul.                |
 | `/rcon reloadlog`                  | Reîncarcă server_log.txt. Nu are efecte considerabile pe absolut nimic.                                                                                      |
 | `/rcon say`                        | Trimite un mesaj jucătorilor. (exemplu: `/rcon say salut` va afișa `Admin: salut`).                                                                          |
 | `/rcon players`                    | Afișează jucătorii de pe server (cu tot cu nume, IP & ping).                                                                                                 |

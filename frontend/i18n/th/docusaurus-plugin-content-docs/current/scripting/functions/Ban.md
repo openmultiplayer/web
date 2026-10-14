@@ -7,7 +7,7 @@ tags: ["administration"]
 
 ## คำอธิบาย
 
-Ban a player who is currently in the server. They will be unable to join the server ever again. The ban will be IP-based, and be saved in the samp.ban file in the server's root directory. BanEx can be used to give a reason for the ban. IP bans can be added/removed using the RCON banip and unbanip commands (SendRconCommand).
+Ban a player who is currently in the server. They will be unable to join the server ever again. The ban will be IP-based, and be saved in the bans.json file in the server's root directory. BanEx can be used to give a reason for the ban. IP bans can be added/removed using the RCON banip and unbanip commands (SendRconCommand).
 
 | Name     | Description                  |
 | -------- | ---------------------------- |

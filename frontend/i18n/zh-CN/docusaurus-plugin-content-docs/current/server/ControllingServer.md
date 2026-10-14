@@ -44,20 +44,22 @@ password whatever
 
 封禁是指阻止一个 IP 连接到服务器。
 
-##### samp.ban
+##### bans.json
 
-samp.ban 是用于存储封禁信息的文件，包括以下内容：
+bans.json 是用于存储封禁信息的文件，包括以下内容：
 
 - IP
 - 日期
 - 时间
-- 名称（人名或原因，参见 [BanEx](../scripting/functions/BanEx)）
-- 封禁类型
+- 名称（人名）
+- 原因（参见 [BanEx](../scripting/functions/BanEx)）
 
-要添加封禁，只需添加如下一行：
+要添加封禁，只需向 JSON 数组添加如下对象：
 
-```
-IP_HERE [28/05/09 | 13:37:00] PLAYER - 封禁原因
+```json
+[
+    {"address": "IP_HERE", "player": "PLAYER", "reason": "封禁原因", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 其中 `IP_HERE` 是你想要封禁的 IP 地址。这种方法要比使用 RCON 命令 `banip` 花更长时间, 所以建议使用 RCON `banip`.
@@ -66,8 +68,10 @@ IP_HERE [28/05/09 | 13:37:00] PLAYER - 封禁原因
 
 [Ban](../scripting/functions/Ban) 函数可用于从脚本中封禁玩家。[BanEx](../scripting/functions/BanEx) 函数将添加一个可选的原因，如下所示：
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] 作弊者 - 游戏内封禁
+```json
+[
+    {"address": "13.37.13.37", "player": "作弊者", "reason": "游戏内封禁", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ##### RCON 封禁命令
@@ -102,27 +106,29 @@ banip IP
 
 一旦某人被封禁，有两种方法可以解封。
 
-- 从 samp.ban 中移除
+- 从 bans.json 中移除
 - 使用 RCON `unbanip` 命令
 
-#### samp.ban
+#### bans.json
 
-samp.ban 可以在你的 SA-MP 服务器目录中找到，它包含以下信息的行：
+bans.json 可以在你的 open.mp 服务器目录中找到，它包含以下信息的对象：
 
 - IP
 - 日期
 - 时间
-- 名称（人名或原因（参见 [BanEx](../scripting/functions/BanEx)））
-- 封禁类型（游戏内、IP 封禁等）
+- 名称（人名）
+- 原因（参见 [BanEx](../scripting/functions/BanEx)）
 
 示例：
 
-```
-127.8.57.32 [13/06/09 | 69:69:69] 无 - IP 封禁
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - 游戏内封禁
+```json
+[
+    {"address": "127.8.57.32", "player": "无", "reason": "IP 封禁", "time": "2009-06-13T13:37:00+0000"},
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "游戏内封禁", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
-要解封，只需移除该行，然后执行 RCON reloadbans 命令使服务器重新读取 samp.ban。
+要解封，只需移除该对象，然后执行 RCON reloadbans 命令使服务器重新读取 bans.json。
 
 #### unbanip
 
@@ -130,8 +136,10 @@ RCON unbanip 命令可以在游戏内或服务器控制台（黑框）中使用�
 
 示例：
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - 游戏内封禁
+```json
+[
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "游戏内封禁", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ```
@@ -142,11 +150,11 @@ RCON unbanip 命令可以在游戏内或服务器控制台（黑框）中使用�
 unbanip 13.37.13.37
 ```
 
-要解封，只需使用 `unbanip` 命令，然后执行 RCON `reloadbans` 命令使服务器重新读取 samp.ban。
+要解封，只需使用 `unbanip` 命令。
 
 #### reloadbans
 
-`samp.ban` 是一个存储当前被封禁 IP 信息的文件。该文件在服务器启动时读取，因此如果你解封了一个 IP/人，你必须输入 RCON `reloadbans` 命令使服务器重新读取 `samp.ban` 并允许他们加入服务器。
+`bans.json` 是一个存储当前被封禁 IP 信息的文件。该文件在服务器启动时读取，因此如果你通过编辑文件解封了一个 IP/人，你必须输入 RCON `reloadbans` 命令使服务器重新读取 `bans.json` 并允许他们加入服务器。
 
 ### RCON 命令
 
@@ -168,7 +176,7 @@ unbanip 13.37.13.37
 | `/rcon ban [ID]`                 | 封禁指定 ID 的玩家（_示例：/rcon ban 2_）。                                                                   |
 | `/rcon changemode [模式]`        | 此命令将当前游戏模式更改为指定模式（_示例：如果你想玩 sftdm：/rcon changemode sftdm_）。                      |
 | `/rcon gmx`                      | 将加载 [server.cfg](server.cfg) 中的下一个游戏模式。                                                          |
-| `/rcon reloadbans`               | 重新加载存储被封禁 IP 地址的 `samp.ban` 文件。解封 IP 地址后应使用此命令。                                    |
+| `/rcon reloadbans`               | 重新加载存储被封禁 IP 地址的 `bans.json` 文件。通过编辑文件解封 IP 地址后应使用此命令。                                    |
 | `/rcon reloadlog`                | 重新加载 `server_log.txt`。适用于自动日志轮换。可以通过向服务器发送 `SIGUSR1` 信号触发（仅限 Linux 服务器）。 |
 | `/rcon say`                      | 向玩家显示消息到客户端控制台（示例：`/rcon say 你好` 将显示为 `管理员：你好`）。                              |
 | `/rcon players`                  | 显示服务器中的玩家（包括他们的名字、IP 和 ping）。                                                            |
