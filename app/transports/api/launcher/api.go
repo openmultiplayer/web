@@ -54,6 +54,11 @@ Release beta version`, // Deprecated, keeping it for backward compatibility
 						"ompPluginChecksum": "865da2905ba33153c9db9462915db006",
 						"ompPluginDownload": "https://assets.open.mp/omp-client-6.dll",
 					},
+					"7": map[string]string{
+						"download":          "https://github.com/openmultiplayer/launcher/releases/latest",
+						"ompPluginChecksum": "dd705a6c2c9a668c0c0c7ab224e36dc0",
+						"ompPluginDownload": "https://assets.open.mp/omp-client-7.dll",
+					},
 				},
 			}
 
