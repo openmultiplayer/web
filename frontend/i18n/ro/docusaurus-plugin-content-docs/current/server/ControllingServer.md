@@ -172,7 +172,7 @@ Acestea sunt comenzile pe care le puteți folosi ca admin:
 | `/rcon changemode [mod]`           | Această comandă o să schimbe gamemode-ul curent cu cel pe care l-ați scris în `[mod]` (_exemplu: dacă vreți să schimbați cu sftdm: /rcon changemode sftdm_). |
 | `/rcon gmx`                        | Această comandă va încărca următorul gamemode din [server.cfg](server.cfg).                                                                                  |
 | `/rcon reloadbans`                 | Va reîncărca fișierul bans.json unde sunt scrise toate adresele de IP banate. Această comandă ar trebui folosită după ce debanați o adresă IP editând fișierul.                |
-| `/rcon reloadlog`                  | Reîncarcă server_log.txt. Nu are efecte considerabile pe absolut nimic.                                                                                      |
+| `/rcon reloadlog`                  | Reîncarcă log.txt. Nu are efecte considerabile pe absolut nimic.                                                                                      |
 | `/rcon say`                        | Trimite un mesaj jucătorilor. (exemplu: `/rcon say salut` va afișa `Admin: salut`).                                                                          |
 | `/rcon players`                    | Afișează jucătorii de pe server (cu tot cu nume, IP & ping).                                                                                                 |
 | `/rcon banip [IP]`                 | Banează IP-ul respectiv (_exemplu: /rcon banip 127.0.0.1_).                                                                                                  |

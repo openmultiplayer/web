@@ -171,7 +171,7 @@ unbanip 13.37.13.37
 | `/rcon changemode [mode]`         | Изменяет загруженный игровой мод (_пример: /rcon changemode new_v2_).                                                             |
 | `/rcon gmx`                       | Загрузит следующий игровой мод, указанный в `gamemodes` в [server.cfg](server.cfg).                                               |
 | `/rcon reloadbans`                | Обновляет список блокировок из файла bans.json.                                                                                    |
-| `/rcon reloadlog`                 | Перезагружает файл server_log.txt. Нет видимого эффекта.                                                                          |
+| `/rcon reloadlog`                 | Перезагружает файл log.txt. Нет видимого эффекта.                                                                          |
 | `/rcon say`                       | Отправить сообщение в чат на сервере из RCON (\_пример: `/rcon say привет всем` выведет всем в чат `Admin: привет всем`).         |
 | `/rcon players`                   | Выводит список игроков на сервере (с их именами, IP и пингом).                                                                    |
 | `/rcon banip [IP]`                | Блокирует указанный IP (_пример: /rcon banip 127.0.0.1_).                                                                         |

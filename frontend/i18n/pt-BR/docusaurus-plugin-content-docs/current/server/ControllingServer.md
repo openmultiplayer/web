@@ -175,7 +175,7 @@ Estas são as funções que você como admin pode usar:
 | `/rcon changemode [mode]`         | Este comando irá alternar entre as gamemode's (_exemplo: /rcon changemode sftdm_).                  |
 | `/rcon gmx`                       | Irá carregar a próxima gamemode no server.cfg.                                                      |
 | `/rcon reloadbans`                | Carrega e reliza uma nova leitura do bans.json                                                       |
-| `/rcon reloadlog`                 | Carrega novamente o server_log.txt.                                                                 |
+| `/rcon reloadlog`                 | Carrega novamente o log.txt.                                                                 |
 | `/rcon say`                       | Mostra uma mensagem no console dos jogadores (\_exemplo: `/rcon say olá` irá mostrar `Admin: olá`). |
 | `/rcon players`                   | Mostra os jogadores que estão no servidor (Com nome, IP e ping).                                    |
 | `/rcon banip [IP]`                | Bane determinado IP (_exemplo: /rcon banip 127.0.0.1_).                                             |

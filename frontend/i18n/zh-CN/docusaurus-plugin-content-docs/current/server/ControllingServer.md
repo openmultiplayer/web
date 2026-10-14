@@ -177,7 +177,7 @@ unbanip 13.37.13.37
 | `/rcon changemode [模式]`        | 此命令将当前游戏模式更改为指定模式（_示例：如果你想玩 sftdm：/rcon changemode sftdm_）。                      |
 | `/rcon gmx`                      | 将加载 [server.cfg](server.cfg) 中的下一个游戏模式。                                                          |
 | `/rcon reloadbans`               | 重新加载存储被封禁 IP 地址的 `bans.json` 文件。通过编辑文件解封 IP 地址后应使用此命令。                                    |
-| `/rcon reloadlog`                | 重新加载 `server_log.txt`。适用于自动日志轮换。可以通过向服务器发送 `SIGUSR1` 信号触发（仅限 Linux 服务器）。 |
+| `/rcon reloadlog`                | 重新加载 `log.txt`。适用于自动日志轮换。可以通过向服务器发送 `SIGUSR1` 信号触发（仅限 Linux 服务器）。 |
 | `/rcon say`                      | 向玩家显示消息到客户端控制台（示例：`/rcon say 你好` 将显示为 `管理员：你好`）。                              |
 | `/rcon players`                  | 显示服务器中的玩家（包括他们的名字、IP 和 ping）。                                                            |
 | `/rcon banip [IP]`               | 封禁指定 IP（_示例：/rcon banip 127.0.0.1_）。                                                                |

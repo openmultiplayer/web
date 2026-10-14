@@ -174,7 +174,7 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon changemode [mode]`         | Perintah ini akan mengganti gamemode saat ini ke gamemode yang diinginkan (_contoh: jika Anda ingin bermain sftdm: /rcon changemode sftdm_). |
 | `/rcon gmx`                       | Memuat gamemode selanjutnya di [server.cfg](server.cfg).                                                                                     |
 | `/rcon reloadbans`                | Memuat ulang bans.json yang di mana alamat IP yang telah dilarang disimpan. Seharusnya digunakan setelah menghapus pelarangannya dari file.             |
-| `/rcon reloadlog`                 | Memuat ulang server_log.txt. Tidak menampak efek apapun.                                                                                     |
+| `/rcon reloadlog`                 | Memuat ulang log.txt. Tidak menampak efek apapun.                                                                                     |
 | `/rcon say`                       | Memunculkan sebuah pesan ke pemain di konsol klien. (contoh: `/rcon say hello` akan muncul `Admin: hello`).                                  |
 | `/rcon players`                   | Memunculkan pemain yang ada di server (nama, alamat IP, dan ping).                                                                           |
 | `/rcon banip [IP]`                | Melarang berdasarkan alamat IP (_contoh: /rcon banip 127.0.0.1_).                                                                            |

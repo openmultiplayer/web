@@ -173,7 +173,7 @@ Dit zijn de commands die je als admin kunt gebruiken:
 | `/rcon changemode [mode]`         | Wisselt naar de opgegeven gamemode (_voorbeeld: `/rcon changemode sftdm`_).                                               |
 | `/rcon gmx`                       | Laadt de volgende gamemode uit [server.cfg](server.cfg).                                                                  |
 | `/rcon reloadbans`                | Laadt `bans.json` opnieuw (lijst met gebande IP's). Gebruik dit na unbannen via het bestand.                                               |
-| `/rcon reloadlog`                 | Laadt `server_log.txt` opnieuw. Handig voor automatische logrotatie. Op Linux ook te triggeren met het `SIGUSR1`-signaal. |
+| `/rcon reloadlog`                 | Laadt `log.txt` opnieuw. Handig voor automatische logrotatie. Op Linux ook te triggeren met het `SIGUSR1`-signaal. |
 | `/rcon say`                       | Toont een bericht in de client-console van spelers (bijv. `/rcon say hello` toont `Admin: hello`).                        |
 | `/rcon players`                   | Toont de players in de server (met naam, IP en ping).                                                                     |
 | `/rcon banip [IP]`                | Bannt het opgegeven IP (_voorbeeld: `/rcon banip 127.0.0.1`_).                                                            |

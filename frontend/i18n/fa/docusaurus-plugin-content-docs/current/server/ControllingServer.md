@@ -175,7 +175,7 @@ cmdlist را برای دستورات (یا varlist برای متغیرها) تا
 | `/rcon changemode [mode]`         | این دستور gamemode فعلی را به مود داده شده تغییر می‌دهد (_مثال: اگر می‌خواهید sftdm بازی کنید: /rcon changemode sftdm_).                 |
 | `/rcon gmx`                       | gamemode بعدی را در [server.cfg](server.cfg) بارگذاری می‌کند.                                                                            |
 | `/rcon reloadbans`                | فایل `bans.json` که آدرس‌های IP بن شده در آن ذخیره شده‌اند را reload می‌کند. باید بعد از unban کردن آدرس IP با ویرایش فایل استفاده شود.                  |
-| `/rcon reloadlog`                 | `server_log.txt` را reload می‌کند. برای چرخش خودکار لاگ مفید است. می‌تواند با ارسال سیگنال `SIGUSR1` به سرور فعال شود (فقط سرور لینوکس). |
+| `/rcon reloadlog`                 | `log.txt` را reload می‌کند. برای چرخش خودکار لاگ مفید است. می‌تواند با ارسال سیگنال `SIGUSR1` به سرور فعال شود (فقط سرور لینوکس). |
 | `/rcon say`                       | پیامی به بازیکنان در کنسول کلاینت نشان می‌دهد (مثال: `/rcon say hello` به عنوان `Admin: hello` نشان داده می‌شود).                        |
 | `/rcon players`                   | بازیکنانی که در سرور هستند را نشان می‌دهد (با نام، IP و ping آنها).                                                                      |
 | `/rcon banip [IP]`                | IP داده شده را ban می‌کند (_مثال: /rcon banip 127.0.0.1_).                                                                               |

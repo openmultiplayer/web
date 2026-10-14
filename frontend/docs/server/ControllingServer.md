@@ -179,7 +179,7 @@ These are the functions that you as admin can use:
 | `/rcon changemode [mode]`         | This command will change the current gamemode to the given one (_example: if you want to play sftdm: /rcon changemode sftdm_).                       |
 | `/rcon gmx`                       | Will load the next gamemode in [server.cfg](server.cfg).                                                                                             |
 | `/rcon reloadbans`                | Reloads the `bans.json` file where the banned IP addresses are stored. Should be used after unbanning and IP address by editing the file.                                 |
-| `/rcon reloadlog`                 | Reloads the `server_log.txt`. Useful for automatic log rotation. Can be triggered by sending the `SIGUSR1` signal to the server (Linux server only). |
+| `/rcon reloadlog`                 | Reloads the `log.txt`. Useful for automatic log rotation. Can be triggered by sending the `SIGUSR1` signal to the server (Linux server only). |
 | `/rcon say`                       | shows a message to the players in the client-console (example: `/rcon say hello` will show as `Admin: hello`).                                       |
 | `/rcon players`                   | Shows the players that are in the server (with their name, IP & ping).                                                                               |
 | `/rcon banip [IP]`                | Ban the given IP (_example: /rcon banip 127.0.0.1_).                                                                                                 |

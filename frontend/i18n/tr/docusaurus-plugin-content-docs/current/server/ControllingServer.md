@@ -173,7 +173,7 @@ Aşağıdaki komutları sadece RCON girişi yapmış yöneticiler kullanabilir:
 | `/rcon changemode [mod]`         | Bu komut, mevcut oyun modunu belirtilen oyun modu ile değiştirecek (_örnek: sftdm oynamak istiyorsanız: /rcon changemode sftdm_).                        |
 | `/rcon gmx`                      | [server.cfg](server.cfg) dosyasındaki bir sonraki oyun modunu yükler.                                                                                    |
 | `/rcon reloadbans`               | Yasaklı IP adreslerini içeren `bans.json` dosyasını tekrar yükler. Bu, dosyayı düzenleyerek bir IP'yi yasakladıktan sonra kullanılmalıdır.                                     |
-| `/rcon reloadlog`                | `server_log.txt` dosyasını tekrar yükler. Otomatik log döndürme için kullanışlıdır. Sadece Linux sunucuda `SIGUSR1` sinyali gönderilerek tetiklenebilir. |
+| `/rcon reloadlog`                | `log.txt` dosyasını tekrar yükler. Otomatik log döndürme için kullanışlıdır. Sadece Linux sunucuda `SIGUSR1` sinyali gönderilerek tetiklenebilir. |
 | `/rcon say`                      | Oyuncu konsoluna mesaj gösterir (örnek: `/rcon say merhaba` "Admin: merhaba" olarak görüntülenir).                                                       |
 | `/rcon players`                  | Sunucuda bulunan oyuncuları (adları, IP'leri ve ping'leri ile birlikte) gösterir.                                                                        |
 | `/rcon banip [IP]`               | Belirtilen IP'yi yasaklar (_örnek: /rcon banip 127.0.0.1_).                                                                                              |
