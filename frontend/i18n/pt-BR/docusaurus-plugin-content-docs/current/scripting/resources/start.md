@@ -322,7 +322,7 @@ myArray[2]++;
 
 ### Exemplo
 
-Conforme mencionado acima, um tipo comum de array é o array MAX_PLAYERS. MAX_PLAYERS não é uma variável, é uma definição que será explicada mais tarde, mas por enquanto aceite que é um número constante igual ao número máximo de jogadores que um servidor pode conter (por padrão é 500, mesmo se você alterar o número em seu arquivo server.cfg). O código a seguir usa variáveis ​​normais para armazenar dados de 4 jogadores e fazer algo com esses jogadores em uma função (para simplificar, suponha que MAX_PLAYERS seja 4 por enquanto):
+Conforme mencionado acima, um tipo comum de array é o array MAX_PLAYERS. MAX_PLAYERS não é uma variável, é uma definição que será explicada mais tarde, mas por enquanto aceite que é um número constante igual ao número máximo de jogadores que um servidor pode conter (por padrão é 500, mesmo se você alterar o número em seu arquivo config.json). O código a seguir usa variáveis ​​normais para armazenar dados de 4 jogadores e fazer algo com esses jogadores em uma função (para simplificar, suponha que MAX_PLAYERS seja 4 por enquanto):
 
 ```c
 new

@@ -17,14 +17,26 @@ description: Perintah yang berguna untuk mengendalikan server.
 Sama seperti menjalankan gamemode kustom, kecuali:
 
 - Letakkan file .amx di folder `filterscripts`
-- Tambahkan di file server.cfg: `filterscripts <scriptname>`
+- Tambahkan path filterscript tanpa ekstensi `.amx` ke `pawn.side_scripts` di [config.json](config.json):
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
 
 ## Memberi kata sandi untuk server Anda
 
-- Jika Anda ingin memberi kata sandi yang di mana hanya teman-teman Anda yang bisa bergabung, tambahkan ini di [server.cfg](server.cfg):
+- Jika Anda ingin memberi kata sandi yang di mana hanya teman-teman Anda yang bisa bergabung, tambahkan ini di [config.json](config.json):
 
-```
-password terserah
+```json
+{
+    "password": "terserah"
+}
 ```
 
 - Ini akan membuat server Anda terproteksi oleh kata sandi yang telah ditetapkan dengan 'terserah' - gantilah dengan kata sandi yang Anda inginkan.
@@ -37,7 +49,7 @@ password terserah
 
 Anda bisa masuk ketika di dalam game dengan mengetik `/rcon login password` atau dari luar game dengan menggunakan moe RCON di [Kendali Konsol Jarak Jauh](RemoteConsole).
 
-Kata sandinya sama dengan yang Anda tetap di file [server.cfg](server.cfg)
+Kata sandi RCON adalah nilai `rcon.password` yang Anda tetapkan di [config.json](config.json).
 
 ### Menambah Pelarangan
 
@@ -172,9 +184,9 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon kick [ID]`                 | Menendang pemain berdasarkan ID pemain (_contoh: /rcon kick 2_).                                                                             |
 | `/rcon ban [ID]`                  | Melarang pemain berdasarkan ID pemain (_contoh: /rcon ban 2_).                                                                               |
 | `/rcon changemode [mode]`         | Perintah ini akan mengganti gamemode saat ini ke gamemode yang diinginkan (_contoh: jika Anda ingin bermain sftdm: /rcon changemode sftdm_). |
-| `/rcon gmx`                       | Memuat gamemode selanjutnya di [server.cfg](server.cfg).                                                                                     |
-| `/rcon reloadbans`                | Memuat ulang bans.json yang di mana alamat IP yang telah dilarang disimpan. Seharusnya digunakan setelah menghapus pelarangannya dari file.             |
-| `/rcon reloadlog`                 | Memuat ulang log.txt. Tidak menampak efek apapun.                                                                                     |
+| `/rcon gmx`                       | Memuat gamemode selanjutnya di [config.json](config.json).                                                                                   |
+| `/rcon reloadbans`                | Memuat ulang bans.json yang di mana alamat IP yang telah dilarang disimpan. Seharusnya digunakan setelah menghapus pelarangannya dari file.  |
+| `/rcon reloadlog`                 | Memuat ulang log.txt. Tidak menampak efek apapun.                                                                                            |
 | `/rcon say`                       | Memunculkan sebuah pesan ke pemain di konsol klien. (contoh: `/rcon say hello` akan muncul `Admin: hello`).                                  |
 | `/rcon players`                   | Memunculkan pemain yang ada di server (nama, alamat IP, dan ping).                                                                           |
 | `/rcon banip [IP]`                | Melarang berdasarkan alamat IP (_contoh: /rcon banip 127.0.0.1_).                                                                            |

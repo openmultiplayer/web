@@ -16,7 +16,7 @@ tags: []
 | RWObjects                                                | Número de objetos renderizados.                                                                                                   |
 | PedSlotsUsed                                             | Número de slots ped usados (NPCs/jogadores usam um slot 'ped').                                                                   |
 | ObjectSlotsUsed                                          | Slots de objeto usados.                                                                                                           |
-| OnFoot Send Rate                                         | A taxa (em MS) na qual os dados a pé estão sendo sincronizados. Pode ser definido em server.cfg.                                  |
+| OnFoot Send Rate                                         | A taxa (em MS) na qual os dados a pé estão sendo sincronizados. Pode ser definido em [config.json](../../server/config.json).     |
 | Streaming Mem (Memory) Used (Also shows total allowance) | A quantidade de memória de streaming usada e o total disponível.                                                                  |
 | Messages in Send buffer                                  | O número de mensagens de rede aguardando para serem enviadas.                                                                     |
 | Messages sent                                            | O número de mensagens de rede enviadas.                                                                                           |

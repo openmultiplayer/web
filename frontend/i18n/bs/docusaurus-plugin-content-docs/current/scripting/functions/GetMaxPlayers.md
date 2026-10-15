@@ -1,13 +1,13 @@
 ---
 title: GetMaxPlayers
 sidebar_label: GetMaxPlayers
-description: Returna maksimalni broj igrača koji se mogu pridružiti serveru, određeno varijablom servera 'maxplayers'
+description: Returna maksimalni broj igrača koji se mogu pridružiti serveru, određeno varijablom servera 'max_players'.
 tags: ["player"]
 ---
 
 ## Deskripcija
 
-Returna maksimalni broj igrača koji se mogu pridružiti serveru, postavljeno varijablom servera 'maxplayers' u server.cfg.
+Returna maksimalni broj igrača koji se mogu pridružiti serveru, postavljeno varijablom servera 'max_players' u config.json.
 
 ## Primjeri
 
@@ -21,7 +21,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, str);
 
 :::warning
 
-Ova funkcija se ne može koristiti umjesto MAX_PLAYERS. Ne može se koristiti u vrijeme kompajlovanja (npr. za array sizes). MAX_PLAYERS uvijek treba redefinirati na ono što će biti var 'maxplayers' ili više. Pogledajte funkciju MAX_PLAYERS za više informacija.
+Ova funkcija se ne može koristiti umjesto MAX_PLAYERS. Ne može se koristiti u vrijeme kompajlovanja (npr. za array sizes). MAX_PLAYERS uvijek treba redefinirati na ono što će biti var 'max_players' ili više. Pogledajte funkciju MAX_PLAYERS za više informacija.
 
 :::
 

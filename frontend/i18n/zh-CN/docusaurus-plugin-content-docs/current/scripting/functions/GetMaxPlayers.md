@@ -1,7 +1,7 @@
 ---
 title: GetMaxPlayers
 sidebar_label: GetMaxPlayers
-description: 返回服务器配置中设置的最大玩家数量（由config.json中的max_players变量决定）。
+description: 返回服务器配置中设置的最大玩家数量（由config.json决定）。
 tags: ["玩家"]
 ---
 

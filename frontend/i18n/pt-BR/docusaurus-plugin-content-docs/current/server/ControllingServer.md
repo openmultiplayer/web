@@ -18,14 +18,26 @@ description: Comandos úteis para gerenciar um servidor.
 O mesmo que rodar um gamemode customizado, exceto:
 
 - Coloque o .amx em uma pasta chamada `filterscripts`
-- Adicione o seguinte no server.cfg `filterscripts <scriptname>`
+- Adicione o caminho do filterscript sem a extensão `.amx` em `pawn.side_scripts` no [config.json](config.json):
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
 
 ## Colocando senha no seu servidor
 
-- Se você desejar, poderá adicionar uma senha para que apenas seus amigos possam entrar, adicione isso ao seu server.cfg
+- Se você desejar, poderá adicionar uma senha para que apenas seus amigos possam entrar, adicione isso ao seu config.json
 
-```
-password qualquercoisa
+```json
+{
+    "password": "qualquercoisa"
+}
 ```
 
 - Isso irá fazer com que seu servidor contenha uma senha para acessar, que colocamos como 'qualquercoisa', mude-a como desejar.
@@ -38,7 +50,7 @@ password qualquercoisa
 
 Você pode logar quando estiver no jogo, basta escrever `/rcon login senha`, ou quando estiver fora do jogo usando a RCON no Console Remoto.
 
-A senha é a mesma que você colocou no server.cfg
+A senha do RCON é o valor de `rcon.password` que você definiu no [config.json](config.json).
 
 ### Colocando Banimentos
 
@@ -173,9 +185,9 @@ Estas são as funções que você como admin pode usar:
 | `/rcon kick [ID]`                 | Kick o jogador de determinado ID (_exemplo: /rcon kick 2_).                                         |
 | `/rcon ban [ID]`                  | Bane o jogador de determinado ID (_exemplo: /rcon ban 2_).                                          |
 | `/rcon changemode [mode]`         | Este comando irá alternar entre as gamemode's (_exemplo: /rcon changemode sftdm_).                  |
-| `/rcon gmx`                       | Irá carregar a próxima gamemode no server.cfg.                                                      |
-| `/rcon reloadbans`                | Carrega e reliza uma nova leitura do bans.json                                                       |
-| `/rcon reloadlog`                 | Carrega novamente o log.txt.                                                                 |
+| `/rcon gmx`                       | Irá carregar a próxima gamemode no [config.json](config.json).                                      |
+| `/rcon reloadbans`                | Carrega e reliza uma nova leitura do bans.json.                                                     |
+| `/rcon reloadlog`                 | Carrega novamente o log.txt.                                                                        |
 | `/rcon say`                       | Mostra uma mensagem no console dos jogadores (\_exemplo: `/rcon say olá` irá mostrar `Admin: olá`). |
 | `/rcon players`                   | Mostra os jogadores que estão no servidor (Com nome, IP e ping).                                    |
 | `/rcon banip [IP]`                | Bane determinado IP (_exemplo: /rcon banip 127.0.0.1_).                                             |

@@ -17,7 +17,7 @@ This page breaks down the **Client Network Statistics**, the information seen wh
 | RWObjects                                                | Number of rendered objects.                                                                                     |
 | PedSlotsUsed                                             | Number of ped slots used (NPCs/players use a 'ped' slot).                                                       |
 | ObjectSlotsUsed                                          | Object slots used.                                                                                              |
-| OnFoot Send Rate                                         | The rate (in MS) at which on-foot data is being synced. Can be set in server.cfg.                               |
+| OnFoot Send Rate                                         | The rate (in MS) at which on-foot data is being synced. Can be set in [config.json](../../server/config.json).  |
 | Streaming Mem (Memory) Used (Also shows total allowance) | The amount of streaming memory being used, and total available.                                                 |
 | Messages in Send buffer                                  | The number of network messages waiting to be sent.                                                              |
 | Messages sent                                            | The number of network messages sent.                                                                            |

@@ -1,7 +1,7 @@
 ---
 title: GetMaxPlayers
 sidebar_label: GetMaxPlayers
-description: حداکثر تعداد بازیکنانی که می‌تونن به سرور بپیوندن رو برمی‌گردونه، که توسط متغیر سرور 'maxplayers' تنظیم شده.
+description: حداکثر تعداد بازیکنانی که می‌تونن به سرور بپیوندن رو برمی‌گردونه، که توسط متغیر سرور 'max_players' تنظیم شده.
 tags: ["player"]
 ---
 

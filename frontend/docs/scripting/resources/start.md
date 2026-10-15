@@ -354,7 +354,7 @@ myArray[2]++;
 
 ### Example
 
-As mentioned above a common type of array is the MAX_PLAYERS array. MAX_PLAYERS is not a variable, it's a define which is explained later, but for now accept that it is a constant number equal to the max number of players a server can hold (this by default is 500, even if you change the number in your server.cfg file). The following code uses normal variables to hold data for 4 players and do something with those players in a function (for simplicity's sake assume MAX_PLAYERS is 4 for now):
+As mentioned above a common type of array is the MAX_PLAYERS array. MAX_PLAYERS is not a variable, it's a define which is explained later, but for now accept that it is a constant number equal to the max number of players a server can hold (this by default is 500, even if you change the number in your config.json file). The following code uses normal variables to hold data for 4 players and do something with those players in a function (for simplicity's sake assume MAX_PLAYERS is 4 for now):
 
 ```c
 new
