@@ -1,7 +1,7 @@
 ---
 title: Lista de Cores
 sidebar_label: Lista de Cores
-description: Cores estão em toda parte no SA-MP - veículos, nomes de jogadores e blips, textdraws, gametext, chat, textos 3D e dialogs (as color embedding)! Abaixo você pode encontrar informações sobre essas coisas.
+description: Cores estão em toda parte no SA-MP - veículos, nomes de jogadores e blips, textdraws, gametext, chat, textos 3D e dialogs (as color embedding)!
 ---
 
 ## Texto do chat e cor do jogador

@@ -1,7 +1,7 @@
 ---
 title: OnPlayerDeath
 sidebar_label: OnPlayerDeath
-description: Cette callback est appelée quand le joueur est mort. Il peut s'agir aussi bien d'une mort par kill qu'une mort par suicide.
+description: Cette callback est appelée quand le joueur est mort.
 tags: ["player"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
+description: Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialoga yanıt verdiğinde tetiklenir.
 tags: []
 ---
 

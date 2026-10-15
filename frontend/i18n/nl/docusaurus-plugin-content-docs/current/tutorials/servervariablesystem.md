@@ -1,7 +1,7 @@
 ---
 title: Servervariabelensysteem
 sidebar_label: Servervariabelensysteem
-description: "Het server variable system (kort: SVar) is een efficiënte, dynamische manier om globale servervariabelen te maken die tegelijk beschikbaar zijn in gamemode en filterscripts."
+description: "Het server variable system (kort: SVar) is een efficiënte, dynamische manier om globale servervariabelen te maken."
 ---
 
 Het **server variable system** (kort: **SVar**) biedt een efficiënte, dynamische manier om globale servervariabelen te maken. Deze variabelen zijn tegelijk bruikbaar in de gamemode én in filterscripts.

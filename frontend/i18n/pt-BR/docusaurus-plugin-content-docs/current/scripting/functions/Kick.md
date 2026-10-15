@@ -1,7 +1,7 @@
 ---
 title: Kick
 sidebar_label: Kick
-description: Expulsa um jogador do servidor. Ele terá que sair do jogo e re-conectar caso queira continuar jogando.
+description: Expulsa um jogador do servidor.
 tags: ["administration"]
 ---
 

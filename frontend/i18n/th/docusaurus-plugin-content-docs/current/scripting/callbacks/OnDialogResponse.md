@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Callback นี้ถูกเรียกเมื่อผู้เล่นตอบสนองกับกล่องโต้ตอบที่แสดงโดยใช้ ShowPlayerDialog ไม่ว่าจะ คลิกปุ่ม, กด ENTER/ESC หรือดับเบิลคลิกที่รายการไอเทม (หากใช้กล่องโต้ตอบแบบรายการ)
+description: Callback นี้ถูกเรียกเมื่อผู้เล่นตอบสนองกับกล่องโต้ตอบที่แสดงโดยใช้ ShowPlayerDialog
 tags: []
 ---
 

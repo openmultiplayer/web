@@ -1,7 +1,7 @@
 ---
 title: Sistema de Varibles de Jugador
 sidebar_label: Sistema de Varibles de Jugador
-description: El sistema de variables de jugador (abreviado, PVar) es una nueva forma de crear variables de jugador en un método eficiente creado dinámicamente de forma global, lo que significa que se pueden utilizar en el gamemode y en los filterscripts al mismo tiempo.
+description: El sistema de variables de jugador (abreviado, PVar) es una nueva forma de crear variables de jugador en un método eficiente creado dinámicamente de forma global.
 ---
 
 El sistema de variables de jugador (abreviado, PVar) es una nueva forma de crear variables de jugador en un método eficiente creado dinámicamente de forma global, lo que significa que se pueden utilizar en el gamemode y en los filterscripts al mismo tiempo.

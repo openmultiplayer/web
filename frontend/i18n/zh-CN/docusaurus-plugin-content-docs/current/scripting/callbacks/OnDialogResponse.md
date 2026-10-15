@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: 当玩家响应通过ShowPlayerDialog显示的对话框时触发此回调。响应方式包括点击按钮、按下ENTER/ESC键或双击列表项（列表式对话框）。
+description: 当玩家响应通过ShowPlayerDialog显示的对话框时触发此回调。
 tags: ["对话框"]
 ---
 
