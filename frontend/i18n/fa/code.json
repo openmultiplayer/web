@@ -145,17 +145,32 @@
   "announcement.serverVersion": {
     "message": "نسخه {version} سرور open.mp با رفع مشکلات فراوان، بهبود عملکرد و ویژگی‌های جدید در دسترس است!"
   },
+  "announcement.serverReleaseSummary": {
+    "message": "این نسخه سرور، کنترل‌های تازه‌ای برای خودروهای NPC اضافه می‌کند، حرکت خودروهای NPC را بهبود می‌دهد و مشکلات شبکه و اسکریپت‌نویسی را برطرف می‌کند."
+  },
   "announcement.changelog": {
-    "message": "تغییرات"
+    "message": "تغییرات سرور"
   },
   "announcement.download": {
-    "message": "دانلود"
+    "message": "دانلود سرور"
   },
   "announcement.launcherUpdate": {
     "message": "لانچر نیز به‌روزرسانی دریافت کرده است!"
   },
+  "announcement.launcherReleaseSummary": {
+    "message": "لانچر هم‌پوشانی داخل بازی را روان‌تر می‌کند، پشتیبانی از مودهای گرافیکی را بهبود می‌دهد و اتصال را پایدارتر می‌کند."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "لانچر open.mp نسخه {version} منتشر شد!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "نسخه {version} سرور open.mp منتشر شد!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "نسخه‌های جدید منتشر شدند: سرور open.mp {serverVersion} و لانچر {launcherVersion}!"
+  },
   "announcement.seeWhatsNew": {
-    "message": "تازه‌ها را ببینید"
+    "message": "تازه‌های لانچر"
   },
   "announcement.dismiss": {
     "message": "بستن این پیام"

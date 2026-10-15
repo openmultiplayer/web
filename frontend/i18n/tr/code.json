@@ -145,17 +145,32 @@
   "announcement.serverVersion": {
     "message": "{version} sürümüne sahip open.mp birçok hata düzeltmesi, performans artışı ve yeni özelliklerle çıktı!"
   },
+  "announcement.serverReleaseSummary": {
+    "message": "Bu sunucu sürümü NPC araç kontrolleri ekler, NPC araç hareketini iyileştirir ve ağ ile betik sorunlarını giderir."
+  },
   "announcement.changelog": {
-    "message": "Değişiklik Kaydı"
+    "message": "Sunucu değişiklik günlüğü"
   },
   "announcement.download": {
-    "message": "İndir"
+    "message": "Sunucuyu indir"
   },
   "announcement.launcherUpdate": {
     "message": "Başlatıcı güncellendi!"
   },
+  "announcement.launcherReleaseSummary": {
+    "message": "Launcher, oyun içi katmanı, grafik modları desteğini ve bağlantı kararlılığını iyileştirir."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "open.mp Launcher {version} kullanıma sunuldu!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "open.mp sunucusunun {version} sürümü çıktı!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Yeni sürümler çıktı: open.mp sunucusu {serverVersion} ve Launcher {launcherVersion}!"
+  },
   "announcement.seeWhatsNew": {
-    "message": "Yenilikleri Gör"
+    "message": "Launcher yenilikleri"
   },
   "announcement.dismiss": {
     "message": "Bu mesajı kapat"
