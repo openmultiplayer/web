@@ -97,7 +97,7 @@ type HomepageAnnouncementMode = "launcher" | "server" | "both";
 const homepageAnnouncementMode: HomepageAnnouncementMode = "both";
 const homepageAnnouncementVersions = {
   launcher: "v1.7.0",
-  server: "v1.6.7.3217",
+  server: "v1.6.7.3218",
 };
 
 const HomepageHeader = () => {
