@@ -155,17 +155,32 @@
   "announcement.serverVersion": {
     "message": "open.mp服务器{version}版本已发布！包含多项修复、性能优化及新特性！"
   },
+  "announcement.serverReleaseSummary": {
+    "message": "此服务器版本新增了 NPC 车辆控制功能，改进了 NPC 车辆移动，并修复了网络和脚本问题。"
+  },
   "announcement.changelog": {
-    "message": "更新日志"
+    "message": "服务器更新日志"
   },
   "announcement.download": {
-    "message": "下载"
+    "message": "下载服务器"
   },
   "announcement.launcherUpdate": {
     "message": "启动器同步更新！"
   },
+  "announcement.launcherReleaseSummary": {
+    "message": "启动器改进了游戏内覆盖层、图形模组兼容性和连接稳定性。"
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "open.mp 启动器 {version} 现已发布！"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "open.mp 服务器 {version} 新版本现已发布！"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "open.mp 服务器 {serverVersion} 与启动器 {launcherVersion} 新版本现已发布！"
+  },
   "announcement.seeWhatsNew": {
-    "message": "查看新特性"
+    "message": "启动器更新"
   },
   "announcement.dismiss": {
     "message": "忽略此消息"

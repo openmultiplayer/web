@@ -91,6 +91,15 @@ const SocialIcons = () => {
   );
 };
 
+type HomepageAnnouncementMode = "launcher" | "server" | "both";
+
+// Select the release announcement and update its version before publishing.
+const homepageAnnouncementMode: HomepageAnnouncementMode = "both";
+const homepageAnnouncementVersions = {
+  launcher: "v1.7.0",
+  server: "v1.6.7.3217",
+};
+
 const HomepageHeader = () => {
   const [showAnnouncement, setShowAnnouncement] = useState(true);
   const [isClosingAnnouncement, setIsClosingAnnouncement] = useState(false);
@@ -101,6 +110,36 @@ const HomepageHeader = () => {
       setShowAnnouncement(false);
     }, 260);
   };
+
+  const announcementTitle =
+    homepageAnnouncementMode === "launcher" ? (
+      <Translate
+        id="announcement.launcherReleaseTitle"
+        description="Announcement: launcher release title"
+        values={{ version: <b>{homepageAnnouncementVersions.launcher}</b> }}
+      >
+        {'open.mp Launcher {version} is out now!'}
+      </Translate>
+    ) : homepageAnnouncementMode === "server" ? (
+      <Translate
+        id="announcement.serverReleaseTitle"
+        description="Announcement: server release title"
+        values={{ version: <b>{homepageAnnouncementVersions.server}</b> }}
+      >
+        {'open.mp server {version} is out now!'}
+      </Translate>
+    ) : (
+      <Translate
+        id="announcement.bothReleaseTitle"
+        description="Announcement: server and launcher release title"
+        values={{
+          serverVersion: <b>{homepageAnnouncementVersions.server}</b>,
+          launcherVersion: <b>{homepageAnnouncementVersions.launcher}</b>,
+        }}
+      >
+        {'open.mp server {serverVersion} and Launcher {launcherVersion} are now available!'}
+      </Translate>
+    );
 
   return (
     <header className={styles.heroBanner}>
@@ -113,47 +152,35 @@ const HomepageHeader = () => {
             isClosingAnnouncement && "dismissible-admonition-wrapper--closing",
           )}
         >
-          <Admonition
-            className={styles.announcement}
-            type="tip"
-            title={
-              <Translate id="announcement.title" description="Announcement: new version title">
-                A new version of open.mp server and launcher is out now!
-              </Translate>
-            }
-          >
-            <Translate
-              id="announcement.serverVersion"
-              description="Announcement: server version and features"
-              values={{ version: <b>v1.5.8.3079</b> }}
-            >
-              {'Version {version} of open.mp server is out with many fixes, performance boosts, and new features!'}
-            </Translate>{" "}
-            <Link 
-              to="/docs/changelog" 
-              className={styles.enhancedLink}
-            >
-              <Translate id="announcement.changelog" description="Announcement: changelog link">Changelog</Translate>
-            </Link> |{" "}
-            <Link 
-              to="/downloads/server"
-              className={styles.enhancedLink}
-            >
-              <Translate id="announcement.download" description="Announcement: download link">Download</Translate>
-            </Link>
-            .
-            <br />
-            <Translate id="announcement.launcherUpdate" description="Announcement: launcher update">The launcher also got an update!</Translate>{" "}
-            <Link 
-              to="/downloads/launcher"
-              className={styles.enhancedLink}
-            >
-              <Translate id="announcement.seeWhatsNew" description="Announcement: see what's new link">See what's new</Translate>
-            </Link>
-            .
+          <Admonition className={styles.announcement} type="tip" title={announcementTitle}>
+            {homepageAnnouncementMode !== "launcher" && (
+              <>
+                <Translate id="announcement.serverReleaseSummary" description="Announcement: server release summary">
+                  This server release adds NPC vehicle controls, improves NPC vehicle movement, and fixes networking and scripting issues.
+                </Translate>{" "}
+                <Link to="/docs/changelog" className={styles.enhancedLink}>
+                  <Translate id="announcement.changelog" description="Announcement: server changelog link">Server changelog</Translate>
+                </Link> |{" "}
+                <Link to="/downloads/server" className={styles.enhancedLink}>
+                  <Translate id="announcement.download" description="Announcement: server download link">Server download</Translate>
+                </Link>
+              </>
+            )}
+            {homepageAnnouncementMode === "both" && <br />}
+            {homepageAnnouncementMode !== "server" && (
+              <>
+                <Translate id="announcement.launcherReleaseSummary" description="Announcement: launcher release summary">
+                  The launcher improves its in-game overlay, graphics-mod support, and connection reliability.
+                </Translate>{" "}
+                <Link to="/downloads/launcher" className={styles.enhancedLink}>
+                  <Translate id="announcement.seeWhatsNew" description="Announcement: launcher release notes link">Launcher updates</Translate>
+                </Link>
+              </>
+            )}
             <div className="dismissible-admonition-actions">
-              <button 
-                onClick={closeAnnouncement} 
+              <button
+                type="button"
+                onClick={closeAnnouncement}
                 className="dismissible-admonition-button"
                 disabled={isClosingAnnouncement}
                 aria-label={translate({

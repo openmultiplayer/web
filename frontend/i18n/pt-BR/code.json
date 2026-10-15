@@ -155,17 +155,32 @@
   "announcement.serverVersion": {
     "message": "A versão {version} do servidor open.mp está disponível com muitas correções, melhorias de desempenho e novos recursos!"
   },
+  "announcement.serverReleaseSummary": {
+    "message": "Esta versão adiciona controles para veículos NPC, melhora o movimento deles e corrige problemas de rede e scripts."
+  },
   "announcement.changelog": {
-    "message": "Registro de Alterações"
+    "message": "Registro de alterações do servidor"
   },
   "announcement.download": {
-    "message": "Baixar"
+    "message": "Baixar servidor"
   },
   "announcement.launcherUpdate": {
     "message": "O launcher também recebeu uma atualização!"
   },
+  "announcement.launcherReleaseSummary": {
+    "message": "O launcher melhora a sobreposição no jogo, o suporte a mods gráficos e a estabilidade da conexão."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "open.mp Launcher {version} já está disponível!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "A nova versão {version} do servidor open.mp está disponível!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Novas versões disponíveis: servidor open.mp {serverVersion} e Launcher {launcherVersion}!"
+  },
   "announcement.seeWhatsNew": {
-    "message": "Veja as novidades"
+    "message": "Novidades do Launcher"
   },
   "announcement.dismiss": {
     "message": "Dispensar esta mensagem"
