@@ -1,7 +1,7 @@
 ---
 title: "Color Fix"
 sidebar_label: "Color Fix"
-descripion: Базовый скрипт для добавления большего количества цветов для ников игроков.
+description: Базовый скрипт для добавления большего количества цветов для ников игроков.
 ---
 
 Этот туториал предназначен для работы с [GetPlayerColor](../scripting/functions/GetPlayerColor), если вы не используете [SetPlayerColor](../scripting/functions/SetPlayerColor) в вашем скрипте при подключении игрока.

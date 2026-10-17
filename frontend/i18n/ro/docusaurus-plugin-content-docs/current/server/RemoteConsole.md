@@ -1,7 +1,7 @@
 ---
 title: "Consolă la distanță (RCON)"
 sidebar_label: "Consolă la distanță (RCON)"
-descripion: Administrare server de la distanță.
+description: Administrare server de la distanță.
 ---
 
 Remote Console este un prompt de comandă în care puteți utiliza comenzile RCON fără a fi nevoie să fiți în joc și pe server. De la 0.3b, consola de la distanță a fost eliminată din browserul serverului. De acum înainte va trebui să utilizați un alt mod de a accesa Remote RCON, așa cum se explică mai jos.

@@ -1,7 +1,7 @@
 ---
 title: "Correção de Cores"
 sidebar_label: "Correção de Cores"
-descripion: Um script básico para adicionar mais cores de jogadores.
+description: Um script básico para adicionar mais cores de jogadores.
 ---
 
 Este tutorial deve ser usado com [GetPlayerColor](../scripting/functions/GetPlayerColor), se você não usar [SetPlayerColor](../scripting/functions/SetPlayerColor) no seu script quando os jogadores se conectam.

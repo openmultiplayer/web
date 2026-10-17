@@ -1,7 +1,7 @@
 ---
 title: "Color Fix"
 sidebar_label: "Color Fix"
-descripion: Sebuah script dasar untuk menambahkan warna pemain.
+description: Sebuah script dasar untuk menambahkan warna pemain.
 ---
 
 Tutorial ini menggunakan [GetPlayerColor](../scripting/functions/GetPlayerColor), jika kalian tidak menggunakan [SetPlayerColor](../scripting/functions/SetPlayerColor) ketika pemain terhubung di dalam script kalian.

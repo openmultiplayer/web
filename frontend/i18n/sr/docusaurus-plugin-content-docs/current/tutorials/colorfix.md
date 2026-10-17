@@ -1,7 +1,7 @@
 ---
 title: "Color Fix"
 sidebar_label: "Color Fix"
-descripion: Основна скрипта за додавање више боја играча.
+description: Основна скрипта за додавање више боја играча.
 ---
 
 Овај туторијал треба користити са [GetPlayerColor](../scripting/functions/GetPlayerColor), ако не користите [SetPlayerColor](../scripting/functions/SetPlayerColor) у вашем скрипту када се играчи повежу.

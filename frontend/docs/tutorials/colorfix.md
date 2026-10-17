@@ -1,7 +1,7 @@
 ---
 title: "Color Fix"
 sidebar_label: "Color Fix"
-descripion: A basic script to add more player colours.
+description: A basic script to add more player colours.
 ---
 
 This tutorial is to be used with [GetPlayerColor](../scripting/functions/GetPlayerColor), if you do not use [SetPlayerColor](../scripting/functions/SetPlayerColor) in your script when players connect.
