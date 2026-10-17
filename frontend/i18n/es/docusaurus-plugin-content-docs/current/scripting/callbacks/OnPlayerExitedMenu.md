@@ -26,6 +26,10 @@ public OnPlayerExitedMenu(playerid)
 }
 ```
 
+## Callbacks Relacionados
+
+- [OnPlayerSelectedMenuRow](OnPlayerSelectedMenuRow): Llamado cuando un jugador selecciona un item de un menu.
+
 ## Funciones Relacionadas
 
 - [CreateMenu](../functions/CreateMenu): Crea un menú.

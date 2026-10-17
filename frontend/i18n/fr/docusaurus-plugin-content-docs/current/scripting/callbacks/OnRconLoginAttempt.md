@@ -50,7 +50,15 @@ Cette callback est appelée uniquement lorsque /rcon login est utilisé.
 
 :::
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnRconCommand](OnRconCommand): Appelée lorsqu'une commande RCON est exécutée.
+
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Vérifie si un joueur est loggé en RCON.
 - [SendRconCommand](../functions/SendRconCommand): Exécute une commande RCON via le script.

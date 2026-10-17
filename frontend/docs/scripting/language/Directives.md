@@ -76,6 +76,20 @@ Another little known fact about defines is that they can be multi-line if you es
         new i = 0; i < MAX_PLAYERS; i++) \
                 if (IsPlayerConnected(i)
 
+for (PL)
+{
+    printf("%d connected", i);
+}
+```
+
+The `\` character means the define continues onto a new line.
+
+The third major characteristic of defines is their ability to have what are effectively parameters. These are `%0` to `%9` and behave very similarly to normal parameters:
+
+```c
+#define MOO(%0) \
+        ((%0) * 7)
+
 printf("%d", MOO(6));
 ```
 
@@ -110,7 +124,7 @@ Which, due to the order of operations, compules as (5 + (6 \* 7)), whiche is 47 
 
 ```c
 #define PP(%0,%1) \
-        printf(%0, %1)
+        printf(#%0, %1)
 
 PP(%s %s %s, "hi", "hello", "hi");
 ```

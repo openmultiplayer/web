@@ -60,8 +60,12 @@ Vous devez inclure cette callback dans un filterscript chargé pour qu'elle marc
 
 ## Fonction connexe
 
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
+
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Vérifie si un joueur est loggé en RCON.
 
 ## Callback connexe
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
 
 - [OnRconLoginAttempt](OnRconLoginAttempt): Appelée lorsqu'un joueur essaie de se connecter en RCON.

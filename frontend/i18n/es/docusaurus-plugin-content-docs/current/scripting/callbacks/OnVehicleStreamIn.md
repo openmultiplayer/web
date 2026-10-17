@@ -33,4 +33,10 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 <NoteNPCCallbacksES />
 
+## Callbacks Relacionados
+
+- [OnVehicleStreamOut](OnVehicleStreamOut): Llamado cuando un vehiculo es "descargado" para un jugador.
+- [OnPlayerStreamIn](OnPlayerStreamIn): Llamado cuando un jugador es "cargado" para otro jugador.
+- [OnPlayerStreamOut](OnPlayerStreamOut): Llamado cuando un jugador es "descargado" para otro jugador.
+
 ## Funciones Relacionadas

@@ -25,6 +25,8 @@ The ID of the actor the player is looking at.
 
 ## ตัวอย่าง
 
+Actors perform a 'hands up' animation when aimed at:
+
 ```c
 new bool:ActorHandsup[MAX_ACTORS];
 
@@ -67,7 +69,7 @@ public OnPlayerUpdate(playerid)
 
 :::tip
 
-This function only tells you which actor (if any) the player is looking at. To find out if they are aiming at them, you need to use GetPlayerTargetActor.
+This function only tells you which actor (if any) the player is looking at. To find out if they are aiming at them, you need to use [GetPlayerTargetActor](GetPlayerTargetActor).
 
 :::
 

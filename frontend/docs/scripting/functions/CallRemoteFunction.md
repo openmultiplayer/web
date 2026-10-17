@@ -30,6 +30,8 @@ The value that the last public function returned.
 | `f`             | Passes a floating point number.                                                                                                                                                                                                                                                               |
 | `s`             | Passes a string.                                                                                                                                                                                                                                                                              |
 
+The values for the placeholders follow in the exact same order as parameters in the call.
+
 ## Examples
 
 ```c

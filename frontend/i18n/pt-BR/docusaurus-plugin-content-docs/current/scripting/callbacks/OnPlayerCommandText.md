@@ -47,6 +47,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 <NoteNPCCallbacks />
 
+## Callbacks Relacionadas
+
+As seguintes Callbacks também podem ser úteis, pois estão relacionadas a esta Callback.
+
+- [OnPlayerText](OnPlayerText): Chamado quando um jogador envia uma mensagem através do chat.
+
 ## Funções Relacionadas
+
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
 
 - [SendRconCommand](../functions/SendRconCommand): Envia um comando via RCON.

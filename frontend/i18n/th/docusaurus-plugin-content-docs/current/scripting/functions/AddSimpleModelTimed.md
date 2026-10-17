@@ -57,4 +57,5 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
+- [AddSimpleModel](AddSimpleModel): Adds a new custom simple object model for download.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.

@@ -1,7 +1,7 @@
 ---
 title: StartRecordingPlayback
 sidebar_label: StartRecordingPlayback
-description: این تابع یک فایل .rec را اجرا می‌کند که باید در پوشه npcmodes/recordings ذخیره شده باشد. این فایل‌ها به NPC اجازه می‌دهند تا اعمال خاصی را دنبال کنند. اعمال آن‌ها می‌تواند به صورت دستی ضبط شود. برای اطلاعات بیشتر، توابع مرتبط را بررسی کنید.
+description: این تابع یک فایل .rec را اجرا می‌کند که باید در پوشه npcmodes/recordings ذخیره شده باشد.
 tags: []
 ---
 

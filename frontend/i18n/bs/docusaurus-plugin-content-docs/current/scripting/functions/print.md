@@ -1,13 +1,13 @@
 ---
 title: print
 sidebar_label: print
-description: Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (server_log.txt).
+description: Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (log.txt).
 tags: []
 ---
 
 ## Deskripcija
 
-Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (server_log.txt).
+Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (log.txt).
 
 | Ime                   | Deskripcija                         |
 | --------------------- | ----------------------------------- |

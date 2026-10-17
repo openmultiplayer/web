@@ -1,13 +1,13 @@
 ---
 title: print
 sidebar_label: print
-description: Prints a string to the server console (not in-game chat) and logs (server_log.
+description: Prints a string to the server console (not in-game chat) and logs (log.txt).
 tags: []
 ---
 
 ## คำอธิบาย
 
-Prints a string to the server console (not in-game chat) and logs (server_log.txt).
+Prints a string to the server console (not in-game chat) and logs (log.txt).
 
 | Name     | Description          |
 | -------- | -------------------- |

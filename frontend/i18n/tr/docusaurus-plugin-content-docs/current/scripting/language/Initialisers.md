@@ -123,7 +123,7 @@ enum E_EXAMPLE (*= 2)
 }
 ```
 
-Bu durumda tüm değerler 0'dır. Neden? İlk değer varsayılan olarak 0'dır, sonra 0 _ 2 = 0, sonra 0 _ 2 = 0 ve 0 \* 2 = 0. Peki bunu nasıl düzeltebiliriz? İşte bu durumda özel değerler devreye girer:
+Bu durumda tüm değerler 0'dır. Neden? İlk değer varsayılan olarak 0'dır, sonra 0 \* 2 = 0, sonra 0 \* 2 = 0 ve 0 \* 2 = 0. Peki bunu nasıl düzeltebiliriz? İşte bu durumda özel değerler devreye girer:
 
 ```c
 enum E_EXAMPLE (*= 2)
@@ -419,7 +419,7 @@ Not: `forward`, geri dönüş etiketini de içerir.
 Bir doğal işlev, sanal makinede (yani, betikleri çalıştıran şeyde) tanımlanan bir işlevidir, doğrudan betikte değil. SA:MP veya bir eklentiye kodlanmışsa yalnızca doğal işlevleri tanımlayabilirsiniz, ancak sahte doğal işlevler oluşturabilirsiniz. .inc dosyalarındaki doğal işlevler pawno tarafından algılandığından ve pawno'nun sağ tarafındaki listede göründüğünden, kendi özel işlevlerinizi orada listelenmiş olarak görmek faydalı olabilir. Normal bir doğal deklarasyon şu şekilde görünebilir:
 
 ```c
-native printf(const format[], \{Float, _}:...);
+native printf(const format[], {Float, _}:...);
 ```
 
 Eğer kendi işlevlerinizin doğal olarak listelenmesini istiyorsanız, şu şekilde bir şey yapabilirsiniz:

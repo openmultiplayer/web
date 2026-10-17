@@ -8,7 +8,7 @@ sidebar_label: "Pickup Types"
 
 :::note
 
-- Esses tipos de pickup são usados por [CreatePickup](../functions/CreatePickup) e [CreatePlayerPickup](../functions/CreatePlayerPickup).
+- Esses tipos de pickup são usados por [AddStaticPickup](../functions/AddStaticPickup), [CreatePickup](../functions/CreatePickup) e [CreatePlayerPickup](../functions/CreatePlayerPickup).
 - A maioria dos outros IDs não estão documentados ou são semelhantes ao tipo 1 (mas não os use apenas porque parecem semelhantes ao ID 1, pois podem ter efeitos colaterais como ID 18 e 20).
 
 :::

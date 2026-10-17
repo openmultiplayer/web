@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 This callback is called when a vehicle is modded.
 
-| Name        | Description                                             |
-| ----------- | ------------------------------------------------------- |
-| playerid    | The ID of the driver of the vehicle.                    |
-| vehicleid   | The ID of the vehicle which is modded.                  |
-| componentid | The ID of the component which was added to the vehicle. |
+| Name        | Description                                                                            |
+| ----------- | -------------------------------------------------------------------------------------- |
+| playerid    | The ID of the driver of the vehicle.                                                   |
+| vehicleid   | The ID of the vehicle which is modded.                                                 |
+| componentid | The [ID of the component](../resources/carcomponentid) which was added to the vehicle. |
 
 ## Returns
 

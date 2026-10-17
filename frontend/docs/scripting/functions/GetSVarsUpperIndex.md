@@ -9,6 +9,10 @@ tags: ["server variable", "svar"]
 
 Each SVar (server-variable) has its own unique identification number for lookup, this function returns the highest ID.
 
+## Returns
+
+The highest set SVar ID.
+
 ## Examples
 
 ```c

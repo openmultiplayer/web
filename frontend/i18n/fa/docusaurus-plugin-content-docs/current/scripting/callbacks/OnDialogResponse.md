@@ -1,7 +1,7 @@
 ---
 id: OnDialogResponse
 title: OnDialogResponse
-description: این کالبک زمانی  که بازیکن با "ShowPlayerDialog" از طریق کلیک روی دکمه یا فشردن دکمه ESC/ENTER یا کلیک بر روی آیتم(در صورتی که نوع دیالوگ لیست باشد) پاسخ بدهد فرا خوانده میشود
+description: این کالبک زمانی  که بازیکن با "ShowPlayerDialog" پاسخ بدهد فرا خوانده میشود.
 tags: []
 ---
 

@@ -52,6 +52,10 @@ El ID del menú no se pasa a este callback. Debes usar GetPlayerMenu para determ
 
 :::
 
+## Callbacks Relacionados
+
+- [OnPlayerExitedMenu](OnPlayerExitedMenu): Llamado cuando un jugador sale de un menu.
+
 ## Funciones Relacionadas
 
 - [CreateMenu](../functions/CreateMenu): Crear un menú.

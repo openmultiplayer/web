@@ -11,11 +11,11 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător solicită descărcarea unui model personalizat.
 
-| Nume     | Descriere                                                           |
-| -------- | ------------------------------------------------------------------- |
-| playerid | ID-ul jucătorului care solicită descărcarea modelului personalizat. |
-| type     | Tipul cererii (vezi mai jos).                                       |
-| crc      | Suma de control CRC a fișierului model personalizat.                |
+| Nume     | Descriere                                                                                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------- |
+| playerid | ID-ul jucătorului care solicită descărcarea modelului personalizat.                                           |
+| type     | Tipul cererii (vezi mai jos).                                                                                 |
+| crc      | Suma de control [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) a fișierului model personalizat. |
 
 ## Returnări
 

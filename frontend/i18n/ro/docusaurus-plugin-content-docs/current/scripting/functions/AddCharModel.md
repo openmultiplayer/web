@@ -9,7 +9,7 @@ tags: []
 
 ## Descriere
 
-Adaugă un nou model de caractere personalizat pentru descărcare. Fișierele model vor fi stocate în documentele playerului \ GTA San Andreas User Files \ SAMP \ cache sub folderul Server IP și Port într-un nume de fișier CRC.
+Adaugă un nou model de caractere personalizat pentru descărcare. Fișierele model vor fi stocate în documentele playerului \ GTA San Andreas User Files \ SAMP \ cache sub folderul Server IP și Port într-un nume de fișier [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nume    | Descriere                                                                                                                                    |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |

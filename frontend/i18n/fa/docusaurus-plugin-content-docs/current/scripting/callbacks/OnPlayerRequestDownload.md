@@ -11,11 +11,11 @@ tags: ["player"]
 
 این کالبک زمانی فراخوانده می‌شود که بازیکن درخواست دانلود مدل سفارشی کند.
 
-| نام                   | توضیحات                                              |
-| --------------------- | ---------------------------------------------------- |
-| playerid              | شناسه بازیکنی که درخواست دانلود مدل سفارشی کرده است. |
-| DOWNLOAD_REQUEST:type | [نوع](../resources/download-requests) درخواست.       |
-| crc                   | چک‌سام CRC فایل مدل سفارشی.                          |
+| نام                   | توضیحات                                                                              |
+| --------------------- | ------------------------------------------------------------------------------------ |
+| playerid              | شناسه بازیکنی که درخواست دانلود مدل سفارشی کرده است.                                 |
+| DOWNLOAD_REQUEST:type | [نوع](../resources/download-requests) درخواست.                                       |
+| crc                   | چک‌سام [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) فایل مدل سفارشی. |
 
 ## مقادیر برگشتی
 
@@ -67,6 +67,14 @@ public OnPlayerRequestDownload(playerid, DOWNLOAD_REQUEST:type, crc)
 کالبک‌های زیر ممکن است مفید باشند، زیرا به نوعی با این کالبک مرتبط هستند.
 
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): این کالبک زمانی فراخوانده می‌شود که بازیکن دانلود مدل‌های سفارشی را به پایان برساند.
+
+## توابع مرتبط
+
+توابع زیر ممکن است مفید باشند، زیرا به نوعی با این کالبک مرتبط هستند.
+
+- [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): پیدا کردن فایل مدل کاستوم اسکین یا شیء ساده موجود.
+- [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): پیدا کردن فایل تکسچر کاستوم اسکین یا شیء ساده موجود.
+- [RedirectDownload](../functions/RedirectDownload): هدایت دانلود AddCharModel یا AddSimpleModel بازیکن به یک صفحه وب HTTP مشخص
 
 ## منابع مرتبط
 

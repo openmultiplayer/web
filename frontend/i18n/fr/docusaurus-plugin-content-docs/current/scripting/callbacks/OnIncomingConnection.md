@@ -29,6 +29,13 @@ public OnIncomingConnection(playerid, ip_address[], port)
 }
 ```
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerConnect](OnPlayerConnect): Appelée lorsqu'un joueur se connecte.
+- [OnPlayerDisconnect](OnPlayerDisconnect): Quand un joueur se déconnecte du serveur.
+
 ## Fonctions connexes
 
 - [BlockIpAddress](../functions/BlockIpAddress): bloque les tentatives de connexion d'une adresse IP pour un temps déterminé

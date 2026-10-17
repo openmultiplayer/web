@@ -10,11 +10,11 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador solicita por descargas de modelos personalizados.
 
-| Nombre   | Descripción                                              |
-| -------- | -------------------------------------------------------- |
-| playerid | El ID del jugador que solicita descargar modelos custom. |
-| type     | El tipo de solicitud (ver abajo).                        |
-| crc      | La suma de comprobación CRC del archivo del modelo.      |
+| Nombre   | Descripción                                                                                                  |
+| -------- | ------------------------------------------------------------------------------------------------------------ |
+| playerid | El ID del jugador que solicita descargar modelos custom.                                                     |
+| type     | El tipo de solicitud (ver abajo).                                                                            |
+| crc      | La suma de comprobación [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) del archivo del modelo. |
 
 ## Devoluciones
 

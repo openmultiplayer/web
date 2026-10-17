@@ -55,6 +55,7 @@ public OnGameModeInit()
 
 ## توابع مرتبط
 
+- [AddSimpleModel](AddSimpleModel): مدل object ساده سفارشی جدیدی برای دانلود اضافه می‌کند.
 - [IsValidCustomModel](IsValidCustomModel): بررسی می‌کند که آیا ID مدل سفارشی معتبر است.
 - [GetCustomModelPath](GetCustomModelPath): مسیر مدل سفارشی را دریافت کنید.
 

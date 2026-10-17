@@ -49,4 +49,5 @@ public OnGameModeInit()
 
 ## Связанные функции
 
+- [AddSimpleModelTimed](AddSimpleModelTimed): Добавляет сторонний объект для скачивания.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Вызывается когда игрок закончил скачку сторонних файлов.

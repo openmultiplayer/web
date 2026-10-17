@@ -123,7 +123,7 @@ enum E_EXAMPLE (*= 2)
 }
 ```
 
-În aceasta toate valorile sunt 0. De ce? Ei bine, prima valoare implicită este 0, apoi 0 _ 2 = 0, apoi 0 _ 2 = 0 și 0 \ \* 2 = 0. Deci, cum putem corecta acest lucru? Pentru aceasta sunt utilizate valorile personalizate:
+În aceasta toate valorile sunt 0. De ce? Ei bine, prima valoare implicită este 0, apoi 0 \* 2 = 0, apoi 0 \* 2 = 0 și 0 \* 2 = 0. Deci, cum putem corecta acest lucru? Pentru aceasta sunt utilizate valorile personalizate:
 
 ```c
 enum E_EXAMPLE (*= 2)
@@ -417,7 +417,7 @@ Nota ca forward include si tagul pentru returnare.
 O funcție nativă este una definită în mașina virtuală (adică lucrul care rulează scriptul), nu în scriptul în sine. Puteți defini funcții native numai dacă sunt codificate în SA: MP sau într-un plugin, totuși puteți crea nativi falși. Deoarece funcțiile native din fișierele .inc sunt detectate de pawno și listate în caseta din partea dreaptă a pawno, poate fi util să folosiți native pentru a obține propriile funcții personalizate listate acolo. O declarație nativă normală ar putea arăta astfel:
 
 ```c
-native printf(const format[], \{Float, _}:...);
+native printf(const format[], {Float, _}:...);
 ```
 
 Dacă doriți ca propriile funcții să apară fără a fi declarate native, puteți face:
@@ -580,6 +580,7 @@ main()
         BigEndian:a = 7,
         BigEndian:b = 199;
     printf("%d", _:(a + b));
+}
 ```
 
 Va da pur și simplu 42, nimic de-a face cu adăugarea.

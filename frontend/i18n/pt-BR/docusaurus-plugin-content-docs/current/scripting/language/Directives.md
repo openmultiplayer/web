@@ -73,6 +73,11 @@ Pouca gente sabe que você pode criar definições multilinha escapando a quebra
 #define PL \
         new i = 0; i < MAX_PLAYERS; i++) \
                 if (IsPlayerConnected(i)
+
+for (PL)
+{
+    printf("%d connected", i);
+}
 ```
 
 Macros também podem receber parâmetros:
@@ -91,7 +96,7 @@ Se o número de argumentos fornecido for maior que o declarado, o último parâm
 
 ```c
 #define PP(%0,%1) \
-        printf(%0, %1)
+        printf(#%0, %1)
 
 PP(%s %s %s, "hi", "hello", "hi"); // imprime "hi hello hi"
 ```

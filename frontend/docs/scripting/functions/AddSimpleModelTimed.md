@@ -55,6 +55,7 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## Related Functions
 
+- [AddSimpleModel](AddSimpleModel): Adds a new custom simple object model for download.
 - [IsValidCustomModel](IsValidCustomModel): Checks if a custom model ID is valid.
 - [GetCustomModelPath](GetCustomModelPath): Get a custom model path.
 

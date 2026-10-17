@@ -45,4 +45,6 @@ Uma vez definido como invulnerável, o ator não chama [OnPlayerGiveDamageActor]
 
 ## Funções Relacionadas
 
+- [CreateActor](CreateActor): Crie um ator (estático NPC).
 - [IsActorInvulnerable](IsActorInvulnerable): Verifique se um ator é invulnerável.
+- [SetActorHealth](SetActorHealth): Define a saúde de um ator.

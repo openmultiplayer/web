@@ -9,6 +9,10 @@ tags: []
 
 Svaki SVar (server-varijabla) ima svoj jedinstveni identifikacijski broj za traženje, ova funkcija vraća najveći ID.
 
+## Returns
+
+Najviši postavljeni SVar ID.
+
 ## Primjeri
 
 ```c

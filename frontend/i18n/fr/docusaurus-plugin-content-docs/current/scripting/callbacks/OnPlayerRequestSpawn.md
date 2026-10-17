@@ -41,4 +41,10 @@ Pour éviter que les joueurs spawn avec une certaine classe, la classe dernière
 
 :::
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerRequestClass](OnPlayerRequestClass): Appelée lorsqu'un joueur change de classe dans la sélection de classe.
+
 ## Fonctions connexes

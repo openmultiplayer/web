@@ -36,7 +36,16 @@ public OnVehicleSpawn(vehicleid)
 }
 ```
 
+## Callbacks Relacionados
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnVehicleSpawn:
+
+- [OnVehicleDeath](OnVehicleDeath): Llamado cuando un vehiculo muere.
+- [OnPlayerSpawn](OnPlayerSpawn): Llamado cuando un jugador aparece.
+
 ## Funciones Relacionadas
+
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnVehicleSpawn:
 
 - [SetVehicleToRespawn](../functions/SetVehicleToRespawn): Reaparecer un vehículo.
 - [CreateVehicle](../functions/CreateVehicle): Crear un vehículo.

@@ -1,7 +1,7 @@
 ---
 title: Kick
 sidebar_label: Kick
-description: I-kick ang isang manlalaro mula sa server. Kakailanganin nilang umalis sa laro at muling kumonekta kung nais nilang magpatuloy sa paglalaro.
+description: I-kick ang isang manlalaro mula sa server.
 tags: ["administration"]
 ---
 

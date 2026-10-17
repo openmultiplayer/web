@@ -51,4 +51,5 @@ Kasalukuyang walang mga paghihigpit sa kung kailan mo maaaring tawagan ang funct
 
 ## Related Functions
 
+- [AddSimpleModelTimed](AddSimpleModelTimed): Nagdaragdag ng bagong custom na simpleng object model para sa pag-download.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Tinatawag kapag natapos na ng player ang pag-download ng mga custom na modelo.

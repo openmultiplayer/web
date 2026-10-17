@@ -49,3 +49,6 @@ This function has no affect on un-occupied vehicles and does not affect trains.
 ## Related Functions
 
 - [GetVehicleVelocity](GetVehicleVelocity): Get the velocity of a vehicle on the X, Y and Z axes.
+- [SetVehicleAngularVelocity](SetVehicleAngularVelocity): Set the angular velocity of a vehicle.
+- [SetPlayerVelocity](SetPlayerVelocity): Set a player's velocity.
+- [GetPlayerVelocity](GetPlayerVelocity): Get a player's velocity.

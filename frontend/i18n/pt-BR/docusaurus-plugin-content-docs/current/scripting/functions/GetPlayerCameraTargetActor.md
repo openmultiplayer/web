@@ -63,7 +63,7 @@ public OnPlayerUpdate(playerid)
 
 :::tip
 
-Esta função informa apenas para qual ator (se houver) o jogador está olhando. Para descobrir se eles estão mirando neles, você precisa usar GetPlayerTargetActor.
+Esta função informa apenas para qual ator (se houver) o jogador está olhando. Para descobrir se eles estão mirando neles, você precisa usar [GetPlayerTargetActor](GetPlayerTargetActor).
 
 :::
 

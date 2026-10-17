@@ -39,7 +39,15 @@ public OnPlayerText(playerid, text[])
 
 <NoteNPCCallbacksES />
 
+## Callbacks Relacionados
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerText:
+
+- [OnPlayerCommandText](OnPlayerCommandText): Llamado cuando el jugador envia un texto que empieza con el caracter '/'.
+
 ## Funciones Relacionadas
+
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnPlayerText:
 
 - [SendPlayerMessageToPlayer](../functions/SendPlayerMessageToPlayer): Obliga a un jugador a enviar mensajes de texto para un jugador.
 - [SendPlayerMessageToAll](../functions/SendPlayerMessageToAll): Obliga a un jugador a enviar texto para todos los jugadores.

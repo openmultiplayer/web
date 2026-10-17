@@ -76,6 +76,16 @@ Define'lerin çok satırlı olabileceğini, yeni satıra kaçarak yapabileceğin
         new i = 0; i < MAX_PLAYERS; i++) \
                 if (IsPlayerConnected(i)
 
+for (PL)
+{
+    printf("%d connected", i);
+}
+```
+
+```c
+#define MOO(%0) \
+        ((%0) * 7)
+
 printf("%d", MOO(6));
 ```
 
@@ -110,7 +120,7 @@ Operasyonların sırasına bağlı olarak, bunun (5 + (6 \* 7)) olarak derlendi�
 
 ```c
 #define PP(%0,%1) \
-        printf(%0, %1)
+        printf(#%0, %1)
 
 PP(%s %s %s, "hi", "hello", "hi");
 ```

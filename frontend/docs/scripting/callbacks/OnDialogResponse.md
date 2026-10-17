@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: This callback is called when a player responds to a dialog shown using ShowPlayerDialog. The response can be by clicking a button, pressing ENTER/ESC, or double-clicking a list item (in the case of a list-style dialog).
+description: This callback is called when a player responds to a dialog shown using ShowPlayerDialog.
 tags: ["dialog"]
 ---
 

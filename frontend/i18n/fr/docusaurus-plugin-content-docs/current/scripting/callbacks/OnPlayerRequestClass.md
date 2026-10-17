@@ -40,6 +40,12 @@ Cette callback est aussi appelée quand un joueur presse F4.
 
 :::
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerRequestSpawn](OnPlayerRequestSpawn): Appelée lorsqu'un joueur appuie sur le bouton 'spawn' dans la sélection de classe.
+
 ## Fonctions connexes
 
 - [AddPlayerClass](../functions/AddPlayerClass): Ajoute une classe.

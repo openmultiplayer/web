@@ -27,7 +27,15 @@ public OnPlayerExitedMenu(playerid)
 }
 ```
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerSelectedMenuRow](OnPlayerSelectedMenuRow): Appelée quand un joueur sélectionne une ligne d'un menu.
+
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [CreateMenu](../functions/CreateMenu): Créer un menu.
 - [DestroyMenu](../functions/DestroyMenu): Détruit un menu.

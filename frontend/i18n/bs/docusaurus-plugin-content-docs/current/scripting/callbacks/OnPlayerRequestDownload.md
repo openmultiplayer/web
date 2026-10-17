@@ -15,11 +15,11 @@ Ova funkcija je dodana u SA-MP 0.3.DL R1 i ne radi u nižim verzijama!
 
 Ovaj callback je pozvan kada igrač zatraži preuzimanje custom modela.
 
-| Ime      | Deskripcija                                           |
-| -------- | ----------------------------------------------------- |
-| playerid | ID igrača koji je zatražio preuzimanje custom modela. |
-| type     | Tip zahtjevaThe type of the request (pogledaj ispod). |
-| crc      | CRC kontrolna suma datoteke prilagođenog modela.      |
+| Ime      | Deskripcija                                                                                               |
+| -------- | --------------------------------------------------------------------------------------------------------- |
+| playerid | ID igrača koji je zatražio preuzimanje custom modela.                                                     |
+| type     | Tip zahtjevaThe type of the request (pogledaj ispod).                                                     |
+| crc      | [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) kontrolna suma datoteke prilagođenog modela. |
 
 ## Returns
 
@@ -63,3 +63,6 @@ public OnPlayerRequestDownload(playerid, type, crc)
 ## Srodne Funkcije
 
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Pozvano kada igrač završi sa preuzimanjem custom modela.
+- [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): Pronađite postojeću prilagođenu kožu ili datoteku jednostavnog objektnog modela.
+- [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): Pronađite postojeću prilagođenu datoteku teksture kože ili jednostavnog objekta.
+- [RedirectDownload](../functions/RedirectDownload): Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleModel uređaja na određenu HTTP web stranicu.

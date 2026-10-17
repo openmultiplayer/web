@@ -41,6 +41,8 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## Funções Relacionadas
 
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
+
 - [GetPlayerState](../functions/GetPlayerState): Obtém o estado atual do jogador.
 - [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction): Obtém a ação especial atual do jogador.
 - [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction): Define uma ação especial a um jogador.

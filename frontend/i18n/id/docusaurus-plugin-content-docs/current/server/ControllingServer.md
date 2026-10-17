@@ -17,14 +17,26 @@ description: Perintah yang berguna untuk mengendalikan server.
 Sama seperti menjalankan gamemode kustom, kecuali:
 
 - Letakkan file .amx di folder `filterscripts`
-- Tambahkan di file server.cfg: `filterscripts <scriptname>`
+- Tambahkan path filterscript tanpa ekstensi `.amx` ke `pawn.side_scripts` di [config.json](config.json):
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
 
 ## Memberi kata sandi untuk server Anda
 
-- Jika Anda ingin memberi kata sandi yang di mana hanya teman-teman Anda yang bisa bergabung, tambahkan ini di [server.cfg](server.cfg):
+- Jika Anda ingin memberi kata sandi yang di mana hanya teman-teman Anda yang bisa bergabung, tambahkan ini di [config.json](config.json):
 
-```
-password terserah
+```json
+{
+    "password": "terserah"
+}
 ```
 
 - Ini akan membuat server Anda terproteksi oleh kata sandi yang telah ditetapkan dengan 'terserah' - gantilah dengan kata sandi yang Anda inginkan.
@@ -37,24 +49,26 @@ password terserah
 
 Anda bisa masuk ketika di dalam game dengan mengetik `/rcon login password` atau dari luar game dengan menggunakan moe RCON di [Kendali Konsol Jarak Jauh](RemoteConsole).
 
-Kata sandinya sama dengan yang Anda tetap di file [server.cfg](server.cfg)
+Kata sandi RCON adalah nilai `rcon.password` yang Anda tetapkan di [config.json](config.json).
 
 ### Menambah Pelarangan
 
-##### samp.ban
+##### bans.json
 
-samp.ban adalah file yang digunakan untuk menyimpan pelarangan, termasuk informasi tentang pelarangan:
+bans.json adalah file yang digunakan untuk menyimpan pelarangan, termasuk informasi tentang pelarangan:
 
 - IP
 - Tanggal
 - Waktu
-- Nama (Nama dari orang atau alasan, lihat [BanEx](../scripting/functions/BanEx))
-- Jenis pelarangan
+- Nama (Nama dari orang)
+- Alasan (lihat [BanEx](../scripting/functions/BanEx))
 
-Untuk menambah sebuah pelarangan, tambahkan sebuah baris seperti ini:
+Untuk menambah sebuah pelarangan, tambahkan sebuah objek ke array JSON seperti ini:
 
-```
-ALAMAT_IP_DI_SINI [28/05/09 | 13:37:00] PEMAIN - ALASAN PELARANGAN
+```json
+[
+    {"address": "ALAMAT_IP_DI_SINI", "player": "PEMAIN", "reason": "ALASAN PELARANGAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 Di mana `ALAMAT_IP_DI_SINI`, adalah alamat IP yang ingin Anda larang.
@@ -63,8 +77,10 @@ Di mana `ALAMAT_IP_DI_SINI`, adalah alamat IP yang ingin Anda larang.
 
 Fungsi [Ban](../scripting/functions/Ban) dapat digunakan untuk melarang pemain dari sisi skrip. Fungsi [BanEx](../scripting/functions/BanEx) akan menambah alasan opsional seperti ini:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "Cheater", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ##### Perintah pelarangan dari RCON
@@ -99,27 +115,29 @@ banip IP
 
 Ketika seseorang telah dilarang, ada dua cara untuk menghapusnya.
 
-- Hapus dari samp.ban
+- Hapus dari bans.json
 - Menggunakan perintah RCON `unbanip`
 
-#### samp.ban
+#### bans.json
 
-samp.ban dapat ditemukan di direktori server SA-MP Anda, terdapat baris yang berisi informasi di setiap pelarangannya:
+bans.json dapat ditemukan di direktori server open.mp Anda, terdapat objek yang berisi informasi di setiap pelarangannya:
 
 - IP
 - Date
 - Time
-- Nama (Nama dari orang atau alasan, lihat [BanEx](../scripting/functions/BanEx))
-- Jenis pelarangan (INGAME, IP BAN, dll.)
+- Nama (Nama dari orang)
+- Alasan (lihat [BanEx](../scripting/functions/BanEx))
 
 Examples:
 
-```
-127.8.57.32 [13/06/09 | 69:69:69] NONE - IP BAN
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "127.8.57.32", "player": "NONE", "reason": "IP BAN", "time": "2009-06-13T13:37:00+0000"},
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
-Untuk menghapus larangannya, cukup harus baris tersebut, kemudian eksekusi perintah RCON `reloadbans` untuk membuat server membaca ulang samp.ban.
+Untuk menghapus larangannya, cukup harus objek tersebut, kemudian eksekusi perintah RCON `reloadbans` untuk membuat server membaca ulang bans.json.
 
 #### unbanip
 
@@ -127,8 +145,10 @@ Perintah RCON unbanip dapat digunakan di dalam game atau dari konsol server (kot
 
 Contoh:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ```
@@ -139,11 +159,11 @@ Contoh:
 unbanip 13.37.13.37
 ```
 
-Untuk menghapus larangannya, cukup gunakan perintah `unbanip`, kemudian eksekusi perintah RCON `reloadbans` untuk membuat server membaca ulang samp.ban.
+Untuk menghapus larangannya, cukup gunakan perintah `unbanip`.
 
 #### reloadbans
 
-`samp.ban` adalah sebuah file yang menyimpan informasi alamat IP yang saat ini telah dilarang dari server. File ini dibaca ketika server dinyalakan, jadi ketika Anda menghapus larangan IP atau pemain, Anda HARUS mengetika perintah RCON `reloadbans` untuk membuat server membaca ulang `samp.ban` dan memperbolehkan mereka untuk bergabung ke server.
+`bans.json` adalah sebuah file yang menyimpan informasi alamat IP yang saat ini telah dilarang dari server. File ini dibaca ketika server dinyalakan, jadi ketika Anda menghapus larangan IP atau pemain dengan mengedit file, Anda HARUS mengetika perintah RCON `reloadbans` untuk membuat server membaca ulang `bans.json` dan memperbolehkan mereka untuk bergabung ke server.
 
 ### Perintah RCON
 
@@ -164,9 +184,9 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon kick [ID]`                 | Menendang pemain berdasarkan ID pemain (_contoh: /rcon kick 2_).                                                                             |
 | `/rcon ban [ID]`                  | Melarang pemain berdasarkan ID pemain (_contoh: /rcon ban 2_).                                                                               |
 | `/rcon changemode [mode]`         | Perintah ini akan mengganti gamemode saat ini ke gamemode yang diinginkan (_contoh: jika Anda ingin bermain sftdm: /rcon changemode sftdm_). |
-| `/rcon gmx`                       | Memuat gamemode selanjutnya di [server.cfg](server.cfg).                                                                                     |
-| `/rcon reloadbans`                | Memuat ulang samp.ban yang di mana alamat IP yang telah dilarang disimpan. Seharusnya digunakan setelah menghapus pelarangannya.             |
-| `/rcon reloadlog`                 | Memuat ulang server_log.txt. Tidak menampak efek apapun.                                                                                     |
+| `/rcon gmx`                       | Memuat gamemode selanjutnya di [config.json](config.json).                                                                                   |
+| `/rcon reloadbans`                | Memuat ulang bans.json yang di mana alamat IP yang telah dilarang disimpan. Seharusnya digunakan setelah menghapus pelarangannya dari file.  |
+| `/rcon reloadlog`                 | Memuat ulang log.txt. Tidak menampak efek apapun.                                                                                            |
 | `/rcon say`                       | Memunculkan sebuah pesan ke pemain di konsol klien. (contoh: `/rcon say hello` akan muncul `Admin: hello`).                                  |
 | `/rcon players`                   | Memunculkan pemain yang ada di server (nama, alamat IP, dan ping).                                                                           |
 | `/rcon banip [IP]`                | Melarang berdasarkan alamat IP (_contoh: /rcon banip 127.0.0.1_).                                                                            |

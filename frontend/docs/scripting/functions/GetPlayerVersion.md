@@ -17,6 +17,10 @@ Returns the SA-MP client version, as reported by the player.
 
 ## Returns
 
+The length of the player's client version.
+
+**0** if player specified doesn't exist.
+
 The client version is stored in the specified array.
 
 ## Examples

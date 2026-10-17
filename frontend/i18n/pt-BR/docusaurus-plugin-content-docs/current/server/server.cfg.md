@@ -124,3 +124,7 @@ description: Arquivo de configuração do servidor.
 - Valores marcados como "Somente leitura" (conforme mostrado por `/rcon varlist`) não podem ser alterados durante a execução. Todos os outros valores podem ser (temporariamente) alterados passando-os para SendRconCommand.
 - Valores marcados como "Regra" (conforme mostrado por `/rcon varlist`) são exibidos no navegador de servidores na seção Regras.
 - Scripts não precisam estar nas pastas gamemodes ou filterscripts. A informação no server.cfg é um caminho e, portanto, pode usar "..".
+
+```
+filterscripts ../scriptfiles/first ../minimodes/second
+```

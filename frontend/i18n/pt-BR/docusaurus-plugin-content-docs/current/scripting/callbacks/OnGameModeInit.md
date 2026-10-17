@@ -32,3 +32,9 @@ Esta função também pode ser usada em um filterscript para detectar se a gamem
 :::
 
 ## Funções Relacionadas
+
+As seguintes Callbacks também podem ser úteis, pois estão relacionadas a esta Callback.
+
+- [OnGameModeExit](OnGameModeExit): Chamado quando um gamemode é encerrado.
+- [OnFilterScriptInit](OnFilterScriptInit): Chamado quando um filterscript é carregado.
+- [OnFilterScriptExit](OnFilterScriptExit): Chamado quando um filterscript é descarregado.

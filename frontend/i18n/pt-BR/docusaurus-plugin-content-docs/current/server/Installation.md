@@ -223,6 +223,18 @@ Abra o programa `omp-server.exe`
 ./omp-server
 ```
 
+## Mantendo o servidor online
+
+Esse programa vai reiniciar o `omp-server.exe` se o servidor open.mp travar. Tudo que você precisa fazer é salvar um arquivo de texto com a extensão `.bat` com o seguinte conteúdo:
+
+```
+:start
+omp-server.exe
+goto start
+```
+
+Coloque o arquivo no diretório onde o `omp-server.exe` está e inicie-o. Digite `exit` no console do servidor pra testar se o arquivo está funcionando.
+
 ## Erros e avisos do compilador
 
 - **warning 213: tag mismatch: expected tag "?", but found none ("\_")**:

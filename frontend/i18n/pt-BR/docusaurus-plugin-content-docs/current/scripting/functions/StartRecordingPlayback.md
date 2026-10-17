@@ -1,7 +1,7 @@
 ---
 title: StartRecordingPlayback
 sidebar_label: StartRecordingPlayback
-description: "Isso executará um arquivo .rec que deve ser salvo na pasta npcmodes/recordings. Esses arquivos permitem que o NPC siga determinadas ações. Suas ações podem ser registradas manualmente. Para mais informações, verifique as funções relacionadas."
+description: "Isso executará um arquivo .rec que deve ser salvo na pasta npcmodes/recordings."
 tags: []
 ---
 

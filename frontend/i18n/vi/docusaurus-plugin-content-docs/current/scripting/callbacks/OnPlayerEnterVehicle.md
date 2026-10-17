@@ -17,6 +17,8 @@ Callback này được gọi khi một người chơi bắt đầu vào một ph
 
 ## Trả Về
 
+Callback này không xử lý trả về.
+
 Callback này luôn được gọi đầu tiên trong filterscripts.
 
 ## Ví Dụ

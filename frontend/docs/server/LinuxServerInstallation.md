@@ -26,6 +26,7 @@ Before starting, you should have:
 - A machine running Ubuntu (20.04 or later recommended) or another Debian based Linux;
 - WinSCP or Filezilla for file transfers;
 - PuTTY or your hosting SSH solution;
+- A forwarded (or firewall-opened) UDP port for the server, 7777 by default (see [Port Forwarding](../tutorials/PortForwarding));
 
 :::note
 
@@ -226,6 +227,7 @@ sudo -u svc-omp-server tar -xzf open.mp-linux-x86.tar.gz
 17. Upload your custom gamemodes and scripts:
     - Use WinSCP or Filezilla to transfer your gamemodes and scripts to the /opt/omp-server directory.
       Important: Make sure to use .so files for Linux plugins, as .dll files are only supported on Windows.
+    - Put your compiled gamemode (.amx) in the gamemodes folder and your filterscripts in the filterscripts folder, then list them without the .amx extension in [config.json](config.json): the gamemode in `pawn.main_scripts` and each filterscript as `filterscripts/name` in `pawn.side_scripts`. This is also where you change the server name, the RCON password and the other server settings.
 
 ## Help
 

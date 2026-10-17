@@ -11,6 +11,12 @@ description: A list of Map Icons
 | 2   | MAPICON_LOCAL_CHECKPOINT  | Yes                   | Close proximity only                   |
 | 3   | MAPICON_GLOBAL_CHECKPOINT | Yes                   | Show on radar edge as long as in range |
 
+:::note
+
+The checkpoint styles also show a checkpoint-like marker in the game world at the icon's position, so remember to use a correct Z coordinate (not just X and Y) when using them.
+
+:::
+
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - [SetPlayerMapIcon](../functions/SetPlayerMapIcon): Create a mapicon for a player.

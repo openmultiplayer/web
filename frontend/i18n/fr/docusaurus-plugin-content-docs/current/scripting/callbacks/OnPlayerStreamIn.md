@@ -37,4 +37,12 @@ public OnPlayerStreamIn(playerid, forplayerid)
 
 <NoteNPCCallbacks />
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerStreamOut](OnPlayerStreamOut): Quand un joueur est dé-chargé (devient invisible) pour un autre joueur
+- [OnActorStreamIn](OnActorStreamIn): Quand un actor est chargé (devient visible) pour un joueur.
+- [OnVehicleStreamIn](OnVehicleStreamIn): Quand un véhicule est chargé (devient visible) pour un joueur
+
 ## Fonctions connexes

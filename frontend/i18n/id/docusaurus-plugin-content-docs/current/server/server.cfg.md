@@ -124,3 +124,7 @@ description: File konfigurasi server.
 - Nilai-nilai yang ditandai dengan "Read-only" (yang tampil dengan `/rcon varlist`) tidak bisa diubah ketika server sedang jalan. Nilai yang selain dari itu dapat diubah (sementara) dengan mengubahnya melalui SendRconCommand.
 - Nilai-nilai yang ditandai dengan "Rule" (yang tampil dengan `/rcon varlist`) ditampilkan di penjelajah server di bagian Rules.
 - Skrip tidak harus berada di folder gamemodes atau filterscripts. Informasi di server.cfg adalah sebuah direktori, dan maka dari itu bisa menggunakan "..".
+
+```
+filterscripts ../scriptfiles/first ../minimodes/second
+```

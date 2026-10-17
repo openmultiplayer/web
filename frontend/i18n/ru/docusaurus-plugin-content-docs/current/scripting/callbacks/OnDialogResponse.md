@@ -163,7 +163,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Это нормально переключаться между диалогами, если у вас их много.
+Разумно использовать switch для поиска нужного диалога, если вы имеете их много.
 
 :::
 
@@ -174,5 +174,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 :::
 
 ## Функции
+
+Следующие функции могут быть полезны, т.к. они так или иначе связаны с текущей функцией.
 
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): Показать диалог игроку.

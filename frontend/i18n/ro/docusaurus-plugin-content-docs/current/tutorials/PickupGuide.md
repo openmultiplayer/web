@@ -21,8 +21,9 @@ Există două moduri de a crea pickup-uri. [CreatePickup](../scripting/functions
 
 ** Parametri: **
 
-| model        | Modelul pe care doriți să îl utilizați pentru preluare.                                                       |
+| Nume         | Descriere                                                                                                     |
 | ------------ | ------------------------------------------------------------------------------------------------------------- |
+| model        | Modelul pe care doriți să îl utilizați pentru preluare.                                                       |
 | type         | Tipul de reproducere a spawnului, consultați mai jos această pagină.                                          |
 | Float:X      | Coordonata X pentru afișarea preluării.                                                                       |
 | Float:Y      | Coordonata Y pentru afișarea preluării.                                                                       |

@@ -42,6 +42,13 @@ Le jeu déduit parfois \$100 à un joueur après son apparition.
 
 :::
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerDeath](OnPlayerDeath): Appelée lorsqu'un joueur meurt.
+- [OnVehicleSpawn](OnVehicleSpawn): Appelée lorsqu'un véhicule **ré**-apparaît.
+
 ## Fonctions connexes
 
 - [SpawnPlayer](../functions/SpawnPlayer): Force un joueur a spawn.

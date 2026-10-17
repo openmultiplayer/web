@@ -53,4 +53,5 @@ Atualmente não há restrições sobre quando você pode chamar esta função, m
 
 ## Funções Relacionadas
 
+- [AddSimpleModel](AddSimpleModel): Adiciona um novo modelo de objeto simples personalizado para download.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): É chamada quando um jogador termina o download dos modelos personalizados.

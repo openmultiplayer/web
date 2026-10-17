@@ -22,6 +22,8 @@ The keys are stored in the specified variables.
 
 ## Examples
 
+The following example shows how you can regularly check the up/down/left/right values using [OnPlayerUpdate](../callbacks/OnPlayerUpdate).
+
 ```c
 public OnPlayerUpdate(playerid)
 {

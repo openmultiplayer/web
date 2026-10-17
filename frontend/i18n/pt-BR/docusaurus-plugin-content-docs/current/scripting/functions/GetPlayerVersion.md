@@ -18,6 +18,8 @@ Retorna a versão do cliente SA-MP, conforme relatado pelo jogador.
 
 ## Retornos
 
+**0** se o jogador especificado não existir.
+
 A versão do cliente é armazenada na matriz especificada.
 
 ## Exemplos

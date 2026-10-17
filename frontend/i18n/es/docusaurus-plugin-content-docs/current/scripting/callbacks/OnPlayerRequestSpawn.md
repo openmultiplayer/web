@@ -14,6 +14,8 @@ Se llama cuando un jugador intenta spawnear vía selección de clase ya sea pres
 
 ## Devoluciones
 
+**0** impedira que el jugador spawnee.
+
 0 - Prevendrá a otros filterscripts de recibir este callback.
 
 1 - Indica que este callback será pasado al siguiente filterscript.
@@ -45,3 +47,5 @@ Para prevenir a los jugadores de spawnear con ciertas clases, la última clase v
 :::
 
 ## Funciones Relacionadas
+
+- [OnPlayerRequestClass](OnPlayerRequestClass): Llamado cuando un jugador cambia de skin en la seleccion de skin.

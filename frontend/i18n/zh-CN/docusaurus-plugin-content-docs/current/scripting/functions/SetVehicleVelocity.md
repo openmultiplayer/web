@@ -51,3 +51,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 相关函数
 
 - [GetVehicleVelocity](GetVehicleVelocity): 获取车辆当前的三轴速度
+- [SetVehicleAngularVelocity](SetVehicleAngularVelocity): 设置车辆在X、Y、Z轴上的角速度
+- [SetPlayerVelocity](SetPlayerVelocity): 设置玩家的三维速度
+- [GetPlayerVelocity](GetPlayerVelocity): 获取玩家的三维速度

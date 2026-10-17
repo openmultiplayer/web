@@ -1,7 +1,7 @@
 ---
 title: AddPlayerClass
 sidebar_label: AddPlayerClass
-description: Adiciona uma classe à seleção de classes. As classes são usadas para que os jogadores possam aparecer com uma skin (personagem) de sua escolha.
+description: Adiciona uma classe à seleção de classes.
 tags: []
 ---
 

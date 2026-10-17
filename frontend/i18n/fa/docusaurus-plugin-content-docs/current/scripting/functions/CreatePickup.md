@@ -1,7 +1,7 @@
 ---
 title: CreatePickup
 sidebar_label: CreatePickup
-description: این تابع دقیقاً همان کار AddStaticPickup را انجام می‌دهد، به جز اینکه ID پیکاپی را برمی‌گرداند که می‌تواند برای حذف آن و ردیابی با OnPlayerPickUpPickup استفاده شود.
+description: این تابع دقیقاً همان کار AddStaticPickup را انجام می‌دهد، به جز اینکه ID پیکاپی را برمی‌گرداند.
 tags: ["pickup"]
 ---
 

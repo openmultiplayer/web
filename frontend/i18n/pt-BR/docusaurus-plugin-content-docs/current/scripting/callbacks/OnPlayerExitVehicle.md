@@ -38,7 +38,16 @@ Não é chamada quando o jogador cai de uma bicicleta ou é removido do veículo
 
 :::
 
+## Callbacks Relacionadas
+
+As seguintes Callbacks também podem ser úteis, pois estão relacionadas a esta Callback.
+
+- [OnPlayerEnterVehicle](OnPlayerEnterVehicle): Chamado quando um jogador começa a entrar em um veículo.
+- [OnPlayerStateChange](OnPlayerStateChange): Chamado quando um jogador muda de estado.
+
 ## Funções Relacionadas
+
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
 
 - [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle): Tira o jogador do veículo.
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Verifica que assento o jogador está.

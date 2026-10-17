@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Cette callback est appelée lorsqu'un joueur lorsqu'un joueur répond à une boîte de dialogue affichée à l'aide de ShowPlayerDialog en cliquant sur un bouton, en appuyant sur ENTRÉE / ÉCHAP ou en double-cliquant sur un élément de liste (si vous utilisez un `DIALOG_STYLE_LIST`).
+description: Cette callback est appelée lorsqu'un joueur répond à une boîte de dialogue affichée à l'aide de ShowPlayerDialog.
 tags: [Dialog, DIALOG_STYLE_LIST, OnDialogReponse, listitem, dialogid]
 ---
 
@@ -60,7 +60,7 @@ Les paramètres peuvent changer selon le style de dialog ([voir plus de styles d
 
 :::tip
 
-Il est important d'avoir plusieurs dialogids, surtout si vous en faites plusieurs.
+C'est approprié d'utiliser switch à travers les différents IDs de dialog/listitem si vous en avez beaucoup.
 
 :::
 
@@ -71,5 +71,7 @@ Le dialog ouvert par un joueur ne se cache pas quand le serveur redémarre, le s
 :::
 
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): affiche le Dialog à un joueur.

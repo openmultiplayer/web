@@ -47,3 +47,7 @@ Ova funkcija ne utječe na vozila koja nisu zauzeta i ne utječe na vlakove.
 :::
 
 ## Srodne Funkcije
+
+- [SetVehicleAngularVelocity](SetVehicleAngularVelocity): Postavlja ugaonu brzinu X, Y i Z vozila.
+- [SetPlayerVelocity](SetPlayerVelocity): Postavi brzinu igrača.
+- [GetPlayerVelocity](GetPlayerVelocity): Dobij brzinu igrača.

@@ -45,6 +45,8 @@ O jogo às vezes deduz $100 dos jogadores após o spawn.
 
 ## Funções Relacionadas
 
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
+
 - [SpawnPlayer](../functions/SpawnPlayer): Forçar um jogador a spawnar.
 - [AddPlayerClass](../functions/AddPlayerClass): Adiciona uma Classe.
 - [SetSpawnInfo](../functions/SetSpawnInfo): Define a configuração de spawn para um jogador.

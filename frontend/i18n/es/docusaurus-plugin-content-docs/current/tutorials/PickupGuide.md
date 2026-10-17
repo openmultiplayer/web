@@ -21,8 +21,9 @@ Hay dos formas de crear pickup [CreatePickup](../scripting/functions/CreatePicku
 
 **Parameters:**
 
-| modelo       | El modelo que queres usar                                                                               |
+| Nombre       | Descripción                                                                                             |
 | ------------ | ------------------------------------------------------------------------------------------------------- |
+| modelo       | El modelo que queres usar                                                                               |
 | typo         | El typo de pickup que es utiliza                                                                        |
 | Float:X      | La X-coordenada para el pickup.                                                                         |
 | Float:Y      | La Y-coordinate para el pickup.                                                                         |

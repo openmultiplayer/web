@@ -15,6 +15,8 @@ Called when a player attempts to spawn via class selection either by pressing SH
 
 ## ส่งคืน
 
+Returning 0 in this callback will prevent the player from spawning.
+
 It is always called first in filterscripts so returning 0 there also blocks other scripts from seeing it.
 
 ## ตัวอย่าง

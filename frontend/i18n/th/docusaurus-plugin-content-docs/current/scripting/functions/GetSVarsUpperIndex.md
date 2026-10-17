@@ -12,6 +12,10 @@ Each SVar (server-variable) has its own unique identification number for lookup,
 | Name | Description |
 | ---- | ----------- |
 
+## ส่งคืน
+
+The highest set SVar ID.
+
 ## ตัวอย่าง
 
 ```c

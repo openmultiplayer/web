@@ -85,3 +85,10 @@ GetPlayerHealth et GetPlayerArmour renverront les anciens montants du joueur ava
 Vérifiez toujours si `issuerid` est valide avant de l'utiliser comme index de tableau.
 
 :::
+
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerGiveDamage](OnPlayerGiveDamage): Cette callback est appelée lorsqu'un joueur profère des dégâts à un autre joueur.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Appelée lorsqu'un joueur fait feu avec une arme.

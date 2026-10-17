@@ -68,6 +68,8 @@ format(string, sizeof(string), "The time is %02d:%02d:%02d.", hour, minute, seco
 ```
 <br />
 
+Uma maneira de inserir o sinal de porcentagem é fazer:
+
 ```c
 new string[32];
 format(string, sizeof(string), "43%s of my shirts are black.", "%%");

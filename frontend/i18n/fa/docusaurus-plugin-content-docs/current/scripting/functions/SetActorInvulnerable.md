@@ -45,4 +45,6 @@ public OnGameModeInit()
 
 ## توابع مرتبط
 
+- [CreateActor](CreateActor): ساخت یه actor (NPC استاتیک).
 - [IsActorInvulnerable](IsActorInvulnerable): بررسی اینکه آیا actor آسیب نپذیر هست یا نه.
+- [SetActorHealth](SetActorHealth): تنظیم سلامتی یه actor.

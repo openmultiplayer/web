@@ -366,6 +366,7 @@ printf("This will be printed");
 The compiler however doesn't handle goto very well so that will not be optimised at all and things like:
 
 ```c
+stock MyFunction()
 {
     new
         i = 5;
@@ -435,7 +436,17 @@ if (i < 10)
 
 The conditions if can take are way too many for this post however some are listed below:
 
-Operator Explanation Example Result when a=1, b=0 Result when a=1, b=1 Result when a=0, b=1 Result when a=0, b=0 == Checks if one thing is equal to another if (a == b) false true false true != Checks if one thing is not the same as another if (a != b) true false true false < Checks if one thing is less than another if (a < b) false false true false > Checks if one thing is greater than another if (a > b) true false false false \<= Checks if one thing is less than or equal to another if (a \<= b) false true true true >= Checks if one thing is greater than or equal to another if (a >= b) true true false true && Checks if two things are true (not 0) if (a && b) false true false false || Checks if at least one of two things are true (not 0) if (a || b) true true true false ! Checks if something is false if (!(a == b)) true false true false
+| Operator | Explanation                                             | Example          | Result when a=1, b=0 | Result when a=1, b=1 | Result when a=0, b=1 | Result when a=0, b=0 |
+| -------- | ------------------------------------------------------- | ---------------- | -------------------- | -------------------- | -------------------- | -------------------- |
+| `==`     | Checks if one thing is equal to another                 | `if (a == b)`    | false                | true                 | false                | true                 |
+| `!=`     | Checks if one thing is not the same as another          | `if (a != b)`    | true                 | false                | true                 | false                |
+| `<`      | Checks if one thing is less than another                | `if (a < b)`     | false                | false                | true                 | false                |
+| `>`      | Checks if one thing is greater than another             | `if (a > b)`     | true                 | false                | false                | false                |
+| `<=`     | Checks if one thing is less than or equal to another    | `if (a <= b)`    | false                | true                 | true                 | true                 |
+| `>=`     | Checks if one thing is greater than or equal to another | `if (a >= b)`    | true                 | true                 | false                | true                 |
+| `&&`     | Checks if two things are true (not 0)                   | `if (a && b)`    | false                | true                 | false                | false                |
+| `\|\|`   | Checks if at least one of two things are true (not 0)   | `if (a \|\| b)`  | true                 | true                 | true                 | false                |
+| `!`      | Checks if something is false                            | `if (!(a == b))` | true                 | false                | true                 | false                |
 
 Obviously with these you can build up complex conditionals:
 

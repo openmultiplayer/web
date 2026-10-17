@@ -33,4 +33,8 @@ Cette fonction peut aussi être utilisée dans un filterscript pour détecter si
 
 ## Callback connexe
 
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
 - [OnGameModeExit](OnGameModeExit) : callback appelée quand le gamemode s'éteint
+- [OnFilterScriptInit](OnFilterScriptInit) : Appelée lorsqu'un filterscript est chargé.
+- [OnFilterScriptExit](OnFilterScriptExit) : Appelée lorsqu'un filterscript se ferme.

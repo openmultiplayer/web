@@ -51,4 +51,5 @@ public OnGameModeInit()
 
 ## Funcții conexe
 
+- [AddSimpleModelTimed](AddSimpleModelTimed): Adaugă un nou model de obiect simplu personalizat pentru descărcare.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Apelat când un jucător termină de descărcat modele personalizate.

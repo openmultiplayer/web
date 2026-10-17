@@ -89,5 +89,7 @@ L'édition doit être abandonnée si la réponse est '0' (cancelled). Cela doit 
 
 ## Fonctions connexes
 
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
+
 - [EditAttachedObject](../functions/EditAttachedObject): Édition d'un attach object.
 - [SetPlayerAttachedObject](../functions/SetPlayerAttachedObject): Attache un objet à un joueur.

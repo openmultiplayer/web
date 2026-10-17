@@ -31,3 +31,5 @@ public OnClientMessage(color, text[])
 ```
 
 ## Funções Relacionadas
+
+- [OnPlayerText](OnPlayerText): Chamada quando um player ou NPC envia uma mensagem para o chat.

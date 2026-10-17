@@ -76,6 +76,16 @@ for(PL) printf("%d 已连接", i);
         new i = 0; i < MAX_PLAYERS; i++) \
                 if (IsPlayerConnected(i)
 
+for (PL)
+{
+    printf("%d 已连接", i);
+}
+```
+
+```c
+#define MOO(%0) \
+        ((%0) * 7)
+
 printf("%d", MOO(6));
 ```
 
@@ -112,7 +122,7 @@ printf("%d", MOO(5 + 6 * 7));
 
 ```c
 #define PP(%0,%1) \
-        printf(%0, %1)
+        printf(#%0, %1)
 
 PP(%s %s %s, "hi", "hello", "hi");
 ```

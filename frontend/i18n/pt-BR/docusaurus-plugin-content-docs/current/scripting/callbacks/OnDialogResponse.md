@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Esta callback é chamada quando um jogador responde a um dialog mostrado usando ShowPlayerDialog ao clicar em um botão, pressionar ENTER/ESC ou dar clique duplo em um item da lista. (se estiver usando o formato lista).
+description: Esta callback é chamada quando um jogador responde a um dialog mostrado usando ShowPlayerDialog.
 tags: []
 ---
 
@@ -172,5 +172,7 @@ Um dialog de jogador não é escondido ao reiniciar o gamemode, ocasionando em u
 :::
 
 ## Funções Relacionadas
+
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
 
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): Show a dialog to a player.

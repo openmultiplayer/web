@@ -53,6 +53,7 @@ public OnGameModeInit()
 
 ## 相关函数
 
+- [AddSimpleModelTimed](AddSimpleModelTimed): 添加一个带时限的自定义简单物体模型供下载
 - [IsValidCustomModel](IsValidCustomModel): 验证自定义模型 ID 有效性
 - [GetCustomModelPath](GetCustomModelPath): 获取自定义模型路径
 

@@ -124,3 +124,7 @@ description: Serverconfiguratiebestand.
 - Waarden gemarkeerd als "Read-only" (zoals getoond door `/rcon varlist`) kunnen niet tijdens runtime worden gewijzigd. Alle andere waarden kunnen (tijdelijk) worden gewijzigd via `SendRconCommand`.
 - Waarden gemarkeerd als "Rule" (zoals getoond door `/rcon varlist`) worden in de serverbrowser in de sectie Rules weergegeven.
 - Scripts hoeven niet in de mappen `gamemodes` of `filterscripts` te staan. De informatie in `server.cfg` is een pad en kan dus `..` gebruiken.
+
+```
+filterscripts ../scriptfiles/first ../minimodes/second
+```
