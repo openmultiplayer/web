@@ -1302,7 +1302,7 @@ entry() <mirt_override>
 
 ---
 
-If a pedestrian pushes the button during mirt activity, that button press is forgotten. Unless emergencies are a frequent occurence, this is probably a minor nuisance; and it is easy to fix, too.
+If a pedestrian pushes the button during mirt activity, that button press is forgotten. Unless emergencies are a frequent occurrence, this is probably a minor nuisance; and it is easy to fix, too.
 
 ### • State programming wrap-up
 

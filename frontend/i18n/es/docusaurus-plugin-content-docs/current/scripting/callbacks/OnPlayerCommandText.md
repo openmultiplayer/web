@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     return 0;
     // Devolviendo 0 informa al servidor que el comando no fue procesado por este script.
     // OnPlayerCommandText va a ser llamado en otros scripts hasta que uno devuelva 1.
-    // Si ningún script devuelve 1, el mensaje 'SERVER: Unkown Command' va a ser mostrado al jugador.
+    // Si ningún script devuelve 1, el mensaje 'SERVER: Unknown Command' va a ser mostrado al jugador.
 }
 ```
 
