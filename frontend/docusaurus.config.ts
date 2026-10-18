@@ -8,6 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const currentYear = new Date().getFullYear();
 
 const copyrightByLocale: Record<string, string> = {
+  ar: `حقوق النشر © ${currentYear} open.mp. بُني الموقع باستخدام Docusaurus.`,
   en: `Copyright © ${currentYear} open.mp. Built with Docusaurus.`,
   uk: `Copyright © ${currentYear} open.mp. Створено на Docusaurus.`,
   "pt-BR": `Copyright © ${currentYear} open.mp. Feito com Docusaurus.`,
@@ -94,6 +95,10 @@ const config: Config = {
       "zh-TW",
     ],
     localeConfigs: {
+      ar: {
+        label: "العربية",
+        direction: "rtl",
+      },
       "zh-CN": {
         label: "简体中文",
       },

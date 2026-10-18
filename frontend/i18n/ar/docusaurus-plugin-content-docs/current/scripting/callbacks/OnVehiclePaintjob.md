@@ -1,31 +1,25 @@
 ---
 title: OnVehiclePaintjob
 sidebar_label: OnVehiclePaintjob
-description: يتم إستدعاء هذا الكالباك عند تغيير طلاء السيارة في مرآب التعديل
+description: يستدعي الخادم هذه الدالة عند معاينة تصميم طلاء مركبة داخل ورشة تعديل.
 tags: ["vehicle"]
 ---
 
-<div dir="rtl" style={{ textAlign: "right" }}>
-    
-## الوصف
+## الوصف {#description}
 
-يتم إستدعاء هذا الكالباك عند تغيير طلاء السيارة في مرآب التعديل
+يستدعي الخادم هذه الدالة عندما يعاين لاعب تصميم طلاء (paintjob) لمركبته داخل ورشة تعديل. انتبه: المعاينة هي التي تستدعي الدالة، وليس شراء التصميم.
 
-| Name       | Description                                    |
-| ---------- | ---------------------------------------------- |
-| playerid   | إيدي اللاعب الذي غيّر طلاء السيارة             |
-| vehicleid  | إيدي السيارة التي تم تغيير طلائها              |
-| paintjobid | اللون الذي تم تغيير اللون الأساسي للمركبة إليه |
+| الاسم | الوصف |
+| --- | --- |
+| playerid | معرّف اللاعب الذي غيّر تصميم طلاء مركبته. |
+| vehicleid | معرّف المركبة التي تغيّر تصميم طلائها. |
+| paintjobid | معرّف [تصميم الطلاء](../resources/paintjobs) الجديد. |
 
-## Returns
+## القيم المعادة وترتيب الاستدعاء {#returns}
 
-يتم إستدعائه أولا في ال(الغيم مود¹) إذا يرجع 0 و يقوم أيضا بتعطيل بقية الفيلترسكريبتات من رأيته
+تُستدعى أولًا في سكربت نمط اللعب (gamemode). إذا أعادت `0` هناك، فلن تتلقاها السكربتات الجانبية (filterscripts).
 
-¹ غيم مود = gamemode
-
-## أمثلة
-
-</div>
+## مثال {#examples}
 
 ```c
 public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
@@ -37,35 +31,20 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 }
 ```
 
-<div dir="rtl" style={{ textAlign: "right" }}>
-
-## Notes
+## ملاحظات {#notes}
 
 :::note
 
-هذا الكالب باك لا يتم إستدعائه من قبل (ChangeVehiclePaintjob).
-يجب عليك إستعمال OnVehicleChangePaintJob من vSync لمعرفة إن قام اللاعب بدفع ثمن تغيير الطلاء
+استدعاء `ChangeVehiclePaintjob` لا يؤدي إلى استدعاء هذه الدالة. لمعرفة وقت شراء اللاعب تصميم الطلاء، يمكنك استخدام `OnVehicleChangePaintjob` من مكتبة vSync.
 
 :::
 
-:::warning
+## دوال استدعاء ذات صلة {#related-callbacks}
 
-الأخطاء المعروفة : معاينة أحد المكونات في مرآب التعديل قد يستدعي هذا الكال باك
+- [OnVehicleRespray](OnVehicleRespray): عند إعادة طلاء المركبة.
+- [OnVehicleMod](OnVehicleMod): عند تعديل المركبة.
 
-:::
+## دوال ذات صلة {#related-functions}
 
-## الاستدعاءات او كالباكات ذات الصلة
-
-قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى
-
-- [OnVehicleRespray](OnVehicleRespray): هذا الكالباك يتم إستدعائه عندما يتم تغيير طلاء السيارة
-- [OnVehicleMod](OnVehicleMod): هذا الكالباك يتم إستدعائه عندما يتم تغيير مكونات السيارة
-
-## وظائف ذات صلة
-
-قد تكون الوظائف التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى
-
-- [ChangeVehicleColor](../functions/ChangeVehicleColor): يغير لون السيارة
-- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): يغير ستيكرات السيارة
-
-</div>
+- [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): تغيير تصميم طلاء المركبة.
+- [ChangeVehicleColor](../functions/ChangeVehicleColor): تعيين لون المركبة.

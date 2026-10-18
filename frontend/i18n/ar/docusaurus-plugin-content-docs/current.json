@@ -1,32 +1,46 @@
 {
   "sidebar.docsSidebar.category.Scripting": {
-    "message": "البرمجة النصية"
+    "message": "البرمجة",
+    "description": "The label for category 'Scripting' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Callbacks": {
-    "message": "وظائف الاستدعاء"
+    "message": "دوال الاستدعاء",
+    "description": "The label for category 'Callbacks' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Functions": {
-    "message": "الدوال"
+    "message": "الدوال",
+    "description": "The label for category 'Functions' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Language": {
-    "message": "اللغة"
+    "message": "لغة Pawn",
+    "description": "The label for category 'Language' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Reference": {
-    "message": "المراجع"
+    "message": "مرجع اللغة",
+    "description": "The label for category 'Reference' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Resources": {
-    "message": "الموارد"
+    "message": "الجداول والمراجع",
+    "description": "The label for category 'Resources' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Server": {
-    "message": "الخادم"
+    "message": "الخادم",
+    "description": "The label for category 'Server' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Client": {
-    "message": "العميل"
+    "message": "برنامج اللعبة",
+    "description": "The label for category 'Client' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Tutorials": {
-    "message": "الدروس التعليمية"
+    "message": "دروس تطبيقية",
+    "description": "The label for category 'Tutorials' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Meta": {
-    "message": "ميتا"
+    "message": "عن التوثيق",
+    "description": "The label for category 'Meta' in sidebar 'docsSidebar'"
+  },
+  "version.label": {
+    "message": "الإصدار الحالي",
+    "description": "The label for version current"
   }
 }

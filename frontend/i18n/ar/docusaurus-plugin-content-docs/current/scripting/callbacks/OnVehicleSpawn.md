@@ -1,39 +1,32 @@
 ---
 title: OnVehicleSpawn
 sidebar_label: OnVehicleSpawn
-description: يتم إستدعاء هذا الكال باك عند رسبنت السبارة
+description: يستدعي الخادم هذه الدالة عند إعادة ظهور مركبة.
 tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
-
-<div dir="rtl" style={{ textAlign: "right" }}>
-    
 :::warning
 
-هذا الكال باك يتم إستدعائه فقط عندم يتم إعادة رسبنت السيارة . CreateVehicle و AddStaticVehicle(Ex) لن يفعلو هذا الكال باك
+تُستدعى هذه الدالة عند **إعادة** ظهور المركبة فقط. إنشاء مركبة باستخدام `CreateVehicle` أو `AddStaticVehicle` أو `AddStaticVehicleEx` لا يستدعيها.
 
 :::
 
-## الوصف
+## الوصف {#description}
 
-This callback is called when a vehicle respawns.
+يستدعي الخادم هذه الدالة عند إعادة ظهور مركبة.
 
-| Name      | Description             |
-| --------- | ----------------------- |
-| vehicleid | إيدي السيارة التي رسبنت |
+| الاسم | الوصف |
+| --- | --- |
+| vehicleid | معرّف المركبة التي أُعيد إظهارها. |
 
-## Returns
+## القيم المعادة وترتيب الاستدعاء {#returns}
 
-0 - سيمنع بقيت الفلترسكريبتات من تلقي هذا الكال باك
+- `0`: تمنع السكربتات الجانبية الأخرى من تلقي هذا الاستدعاء.
+- `1`: تسمح بتمريره إلى السكربت الجانبي التالي.
 
-1 - يشير إلى أنه سيتم تمرير هذا الكال باك إلى الفيلتر سكريبت القادم
+يُستدعى أولًا في السكربتات الجانبية (filterscripts).
 
-يتم إستدعائه أولا في الفيلترسكريبت
-
-## أمثلة
-
-</div>
+## مثال {#examples}
 
 ```c
 public OnVehicleSpawn(vehicleid)
@@ -43,20 +36,12 @@ public OnVehicleSpawn(vehicleid)
 }
 ```
 
-<div dir="rtl" style={{ textAlign: "right" }}>
+## دوال استدعاء ذات صلة {#related-callbacks}
 
-## الاستدعاءات او كالباكات ذات الصلة
+- [OnVehicleDeath](OnVehicleDeath): عند تدمير مركبة.
+- [OnPlayerSpawn](OnPlayerSpawn): عند ظهور لاعب في عالم اللعبة.
 
-قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى
+## دوال ذات صلة {#related-functions}
 
-- [OnVehicleDeath](OnVehicleDeath): هذا الكال باك يتم إستدعائه عند تدمير السيارة.
-- [OnPlayerSpawn](OnPlayerSpawn): هذا الكال باك يتم إستدعائه عند رسبنت اللاعب.
-
-## وظائف ذات صلة
-
-قد تكون الوظائف التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى
-
-- [SetVehicleToRespawn](../functions/SetVehicleToRespawn):إغادة رسبنت السيارة
-- [CreateVehicle](../functions/CreateVehicle): صنع سيارة
-
-</div>
+- [SetVehicleToRespawn](../functions/SetVehicleToRespawn): إعادة إظهار مركبة.
+- [CreateVehicle](../functions/CreateVehicle): إنشاء مركبة.

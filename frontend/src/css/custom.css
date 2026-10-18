@@ -1283,3 +1283,10 @@ html[data-theme="dark"] {
 .hash-link {
   font-family: var(--ifm-font-family-base);
 }
+
+/* Keep commands, paths and API expressions readable within Arabic prose. */
+html[lang="ar"] .theme-doc-markdown :not(pre) > code {
+  /* rtl:ignore */
+  direction: ltr;
+  unicode-bidi: isolate;
+}

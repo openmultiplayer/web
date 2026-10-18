@@ -1,30 +1,24 @@
 ---
-title: OnActorStreamIn
-sidebar_label: OnActorStreamIn
-description: يتم استدعاء هذا الاستدعاء أو الكال باك عند خروج السيارة بواسطة كلاينت اللاعب
-tags: []
+title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
+description: يستدعي الخادم هذه الدالة عندما تخرج مركبة من نطاق العرض لدى لاعب.
+tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+## الوصف {#description}
 
-<div dir="rtl" style={{ textAlign: "right" }}>
+يستدعي الخادم هذه الدالة عندما تخرج مركبة من نطاق العرض لدى لاعب، مثلما يحدث عندما تبتعد عنه إلى حدّ لا يعود بإمكانه رؤيتها.
 
-## الوصف
+| الاسم | الوصف |
+| --- | --- |
+| vehicleid | معرّف المركبة التي خرجت من نطاق العرض. |
+| forplayerid | معرّف اللاعب الذي لم تعد المركبة معروضة لديه. |
 
-يتم استدعاء هذا الاستدعاء أو الكال باك عند خروج السيارة بواسطة كلاينت اللاعب
+## ترتيب الاستدعاء {#returns}
 
-| الوصف       | الإسم                             |
-| ----------- | --------------------------------- |
-| vehicleid   | ايدي السيارة الذي تم خرجت للاعب.  |
-| forplayerid | هوية اللاعب الذي قام خرجت السيارة |
+يُستدعى أولًا في السكربتات الجانبية (filterscripts).
 
-## Returns
-
-دائمًا يتم استدعاؤه أولاً في الفلترسكربتات.
-
-## أمثلة
-
-</div>
+## مثال {#examples}
 
 ```c
 public OnVehicleStreamOut(vehicleid, forplayerid)
@@ -36,18 +30,12 @@ public OnVehicleStreamOut(vehicleid, forplayerid)
 }
 ```
 
-<div dir="rtl" style={{ textAlign: "right" }}>
-
-## Notes
+## ملاحظات {#notes}
 
 <NoteNPCCallbacks />
 
-## الاستدعاءات او كالباكات ذات الصلة
+## دوال استدعاء ذات صلة {#related-callbacks}
 
-قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى.
-
-- [OnVehicleStreamIn](OnVehicleStreamIn): يتم استدعاؤه عندما يتم تدفق السبارةإلى كلاينت اللاعب.
-- [OnPlayerStreamIn](OnPlayerStreamIn): يتم استدعاؤه عندما يتم تدفق لاعب آخر إلى كلاينت اللاعب.
-- [OnPlayerStreamOut](OnPlayerStreamOut): يتم استدعاؤه عندما يتم تدفق لاعب آخر خارج كلاينت اللاعب.
-
-</div>
+- [OnVehicleStreamIn](OnVehicleStreamIn): عند دخول مركبة نطاق العرض لدى لاعب.
+- [OnPlayerStreamIn](OnPlayerStreamIn): عند دخول لاعب نطاق العرض لدى لاعب آخر.
+- [OnPlayerStreamOut](OnPlayerStreamOut): عند خروج لاعب من نطاق العرض لدى لاعب آخر.

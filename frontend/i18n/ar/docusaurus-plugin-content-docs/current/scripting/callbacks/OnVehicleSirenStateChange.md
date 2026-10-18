@@ -1,37 +1,30 @@
 ---
 title: OnVehicleSirenStateChange
 sidebar_label: OnVehicleSirenStateChange
-description: يتم إستدعاء هذا الكال باك عند تفعيل صفارة الإنذار للسيارة
+description: يستدعي الخادم هذه الدالة عند تشغيل صفّارة إنذار المركبة أو إيقافها.
 tags: ["vehicle"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
 
-<div dir="rtl" style={{ textAlign: "right" }}>
+## الوصف {#description}
 
-## Description
+يستدعي الخادم هذه الدالة عند تشغيل صفّارة إنذار المركبة أو إيقافها.
 
-يتم إستدعاء هذا الكال باك عند تفعيل صفارة الإنذار للسيارة
+| الاسم | الوصف |
+| --- | --- |
+| playerid | معرّف اللاعب الذي شغّل الصفّارة أو أوقفها، وهو السائق. |
+| vehicleid | معرّف المركبة التي تغيّرت حالة صفّارتها. |
+| newstate | القيمة `0` إذا أُوقفت الصفّارة، و`1` إذا شُغّلت. |
 
-| Name      | Description                                    |
-| --------- | ---------------------------------------------- |
-| playerid  | إيدي اللاعب الذي فعّل صفارة الإنذار (السائق)   |
-| vehicleid | إيدي السيارة التي تم تفعيل صفارة الإنذار فيها  |
-| newstate  | 0 إذا تم إطفاء الصفارة، 1 إذا تم تشغيل الصفارة |
+## القيم المعادة وترتيب الاستدعاء {#returns}
 
-## Returns
+- `1`: تمنع وصول هذا الاستدعاء إلى سكربت نمط اللعب (gamemode).
+- `0`: تسمح بتمرير هذا الاستدعاء إلى سكربت نمط اللعب.
 
-1 - سيمنع ال(الغيم مود¹) من تلقي هذا الكالباك
+يُستدعى أولًا في السكربتات الجانبية (filterscripts).
 
-0 - يشير إلى أنه سيتم تمرير هذا الكال باك إلى ال(الغيم مود¹) القادم
-
-¹الغيم مود = gamemode
-
-يتم إستدعائه أولا في الفيلترسكريبتات
-
-## أمثلة
-
-</div>
+## مثال {#examples}
 
 ```c
 public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
@@ -48,20 +41,14 @@ public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 }
 ```
 
-<div dir="rtl" style={{ textAlign: "right" }}>
-    
-## Notes
+## ملاحظات {#notes}
 
 :::note
 
-يتم إستدعاء هذا الكالباك فقط عندما يتم تشغيل او إطفاء صفارة الإنظار
+تُستدعى الدالة فقط عند تشغيل الصفّارة أو إيقافها، ولا تُستدعى عند استخدام الصفّارة البديلة بالاستمرار في الضغط على زر البوق.
 
 :::
 
-## وظائف ذات صلة
+## دوال ذات صلة {#related-functions}
 
-قد تكون الوظائف التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى
-
-- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): التحقق إذ كانت صفارة الإنذار الخاصة بالسيارة مشغلة أو لا
-
-</div>
+- [GetVehicleParamsSirenState](../functions/GetVehicleParamsSirenState): التحقق مما إذا كانت صفّارة المركبة تعمل.

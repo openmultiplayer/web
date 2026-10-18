@@ -1,51 +1,42 @@
 ---
 title: OnActorStreamIn
 sidebar_label: OnActorStreamIn
-description: This callback is called when an actor streams in by a player's client.
-tags: []
+description: يستدعي الخادم هذه الدالة عندما تصبح شخصية actor ضمن نطاق العرض لدى لاعب.
+tags: ["actor"]
 ---
 
 <VersionWarn name='callback' version='SA-MP 0.3.7' />
 
-<div dir="rtl" style={{ textAlign: "right" }}>
+## الوصف {#description}
 
-## الوصف
+يستدعي الخادم هذه الدالة عندما تصبح شخصية من نوع actor ضمن نطاق العرض لدى لاعب ويحمّلها برنامج اللعبة لديه.
 
-يتم استدعاء هذا الاستدعاء أو الكال باك عند تدفق الممثل (أكتور) بواسطة كلاينت اللاعب
+| الاسم | الوصف |
+| --- | --- |
+| actorid | معرّف الشخصية التي دخلت نطاق العرض. |
+| forplayerid | معرّف اللاعب الذي ظهرت لديه الشخصية. |
 
-| Name        | Description                               |
-| ----------- | ----------------------------------------- |
-| actorid     | ايدي الممثل الذي تم تدفقه للاعب.          |
-| forplayerid | هوية اللاعب الذي قام بتدفق الممثل (أكتور) |
+## ترتيب الاستدعاء {#returns}
 
-## Returns
+يُستدعى أولًا في السكربتات الجانبية (filterscripts).
 
-دائمًا يتم استدعاؤه أولاً في الفلترسكربتات.
-
-## أمثلة
-
-</div>
+## مثال {#examples}
 
 ```c
 public OnActorStreamIn(actorid, forplayerid)
 {
-    new string[40];
+    new string[48];
     format(string, sizeof(string), "Actor %d is now streamed in for you.", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }
 ```
 
-<div dir="rtl" style={{ textAlign: "right" }}>
-
-## Notes
+## ملاحظات {#notes}
 
 <NoteNPCCallbacks />
 
-## الاستدعاءات او كالباكات ذات الصلة
+## دوال استدعاء ذات صلة {#related-callbacks}
 
-قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى.
-
-- [OnActorStreamOut](OnActorStreamOut): يتم استدعاؤه عندما يتم تدفق ممثل (أكتور) خارج كلاينت اللاعب.
-
-</div>
+- [OnActorStreamOut](OnActorStreamOut): عند خروج شخصية actor من نطاق العرض لدى لاعب.
+- [OnPlayerStreamIn](OnPlayerStreamIn): عند دخول لاعب نطاق العرض لدى لاعب آخر.

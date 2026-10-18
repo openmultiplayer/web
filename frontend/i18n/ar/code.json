@@ -1,0 +1,92 @@
+{
+  "npcCallbacksNote.message": {
+    "message": "قد تُستدعى هذه الدالة أيضًا لشخصية يتحكم بها الحاسوب (NPC)."
+  },
+  "versionWarn.name.function": {
+    "message": "الدالة"
+  },
+  "versionWarn.name.callback": {
+    "message": "دالة الاستدعاء"
+  },
+  "versionWarn.message": {
+    "message": "أُضيفت {name} في الإصدار {version}، ولن تعمل في الإصدارات الأقدم."
+  },
+  "notFound.title": {
+    "message": "الصفحة غير موجودة"
+  },
+  "notFound.imageAlt": {
+    "message": "لقطة من مهمة القطار في GTA"
+  },
+  "notFound.home": {
+    "message": "الرئيسية"
+  },
+  "notFound.docs": {
+    "message": "التوثيق"
+  },
+  "notFound.servers": {
+    "message": "الخوادم"
+  },
+  "theme.admonition.warning": {
+    "message": "تحذير"
+  },
+  "theme.admonition.caution": {
+    "message": "تنبيه"
+  },
+  "theme.admonition.tip": {
+    "message": "نصيحة"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "نسخ الشيفرة إلى الحافظة"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "تفعيل التفاف الأسطر أو إيقافه"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "فهرس التوثيق"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "إغلاق قائمة التنقل"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "فتح قائمة التنقل أو إغلاقها"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "توسيع قسم «{label}» في الفهرس"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "طيّ قسم «{label}» في الفهرس"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(يفتح في علامة تبويب جديدة)"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "التنقل الرئيسي"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "فتح القائمة المنسدلة"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "إغلاق القائمة المنسدلة"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "مظهر النظام"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "الانتقال إلى المحتوى الرئيسي"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "رابط مباشر إلى العنوان {heading}"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "العودة إلى أعلى الصفحة"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "في هذه الصفحة"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "التنقل بين صفحات التوثيق"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "أحدث إصدار"
+  }
+}
