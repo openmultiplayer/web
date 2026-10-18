@@ -1,0 +1,34 @@
+{
+  "title": {
+    "message": "Open Multiplayer",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "شعار open.mp",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "التوثيق",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Blog": {
+    "message": "المدونة",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Forums": {
+    "message": "المنتديات",
+    "description": "Navbar item with label Forums"
+  },
+  "item.label.Servers": {
+    "message": "الخوادم",
+    "description": "Navbar item with label Servers"
+  },
+  "item.label.Partners": {
+    "message": "الشركاء",
+    "description": "Navbar item with label Partners"
+  },
+  "item.label.Donate": {
+    "message": "تبرّع",
+    "description": "Navbar item with label Donate"
+  }
+}

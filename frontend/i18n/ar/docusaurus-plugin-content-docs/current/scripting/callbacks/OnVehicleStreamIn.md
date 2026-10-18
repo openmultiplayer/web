@@ -1,30 +1,24 @@
 ---
 title: OnVehicleStreamIn
 sidebar_label: OnVehicleStreamIn
-description: يتم استدعاء هذا الاستدعاء أو الكال باك عند تدفق سيارة بواسطة كلاينت اللاعب
-tags: []
+description: يستدعي الخادم هذه الدالة عندما تصبح مركبة ضمن نطاق العرض لدى لاعب.
+tags: ["vehicle"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+## الوصف {#description}
 
-<div dir="rtl" style={{ textAlign: "right" }}>
+يستدعي الخادم هذه الدالة عندما تدخل مركبة نطاق العرض لدى لاعب ويحمّلها برنامج اللعبة لديه.
 
-## الوصف
+| الاسم | الوصف |
+| --- | --- |
+| vehicleid | معرّف المركبة التي دخلت نطاق العرض. |
+| forplayerid | معرّف اللاعب الذي ظهرت لديه المركبة. |
 
-يتم استدعاء هذا الاستدعاء أو الكال باك عند تدفق سيارة بواسطة كلاينت اللاعب
+## ترتيب الاستدعاء {#returns}
 
-| الوصف       | الإسم                              |
-| ----------- | ---------------------------------- |
-| vehicleid   | ايدي السيارة الذي تم تدفقها للاعب. |
-| forplayerid | هوية اللاعب الذي قام بتدفق السيارة |
+يُستدعى أولًا في السكربتات الجانبية (filterscripts).
 
-## Returns
-
-دائمًا يتم استدعاؤه أولاً في الفلترسكربتات.
-
-## أمثلة
-
-</div>
+## مثال {#examples}
 
 ```c
 public OnVehicleStreamIn(vehicleid, forplayerid)
@@ -36,18 +30,12 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 }
 ```
 
-<div dir="rtl" style={{ textAlign: "right" }}>
-
-## Notes
+## ملاحظات {#notes}
 
 <NoteNPCCallbacks />
 
-## الاستدعاءات او كالباكات ذات الصلة
+## دوال استدعاء ذات صلة {#related-callbacks}
 
-قد تكون الاستدعاءات التالية مفيدة، حيث أنها ذات صلة بهذا الاستدعاء بطريقة أو بأخرى.
-
-- [OnVehicleStreamOut](OnVehicleStreamOut): يتم استدعاؤه عندما يتم تدفق السبارة خارج كلاينت اللاعب.
-- [OnPlayerStreamIn](OnPlayerStreamIn): يتم استدعاؤه عندما يتم تدفق لاعب آخر إلى كلاينت اللاعب.
-- [OnPlayerStreamOut](OnPlayerStreamOut): يتم استدعاؤه عندما يتم تدفق لاعب آخر خارج كلاينت اللاعب.
-
-</div>
+- [OnVehicleStreamOut](OnVehicleStreamOut): عند خروج مركبة من نطاق العرض لدى لاعب.
+- [OnPlayerStreamIn](OnPlayerStreamIn): عند دخول لاعب نطاق العرض لدى لاعب آخر.
+- [OnPlayerStreamOut](OnPlayerStreamOut): عند خروج لاعب من نطاق العرض لدى لاعب آخر.
