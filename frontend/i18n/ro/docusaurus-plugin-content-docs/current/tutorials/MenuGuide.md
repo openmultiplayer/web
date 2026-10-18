@@ -150,6 +150,6 @@ Foarte ușor, nu-i așa?
 
 Bine, după ce ați citit acest lucru ȘI l-ați înțeles, încercați propriul meniu. După cum ați putut vedea, nu este atât de dificil, dar îi va impresiona pe jucătorii de pe serverul dvs. cu atât mai mult. Și poți să creezi efecte foarte interesante cu asta. De asemenea, este foarte interesant pentru magazinele generale sau supermarketurile pentru lucrurile pe care le puteți cumpăra. Apoi, puteți scădea niște bani ca efect, iar prețul este afișat într-o altă coloană din meniu. Dar acum, lucrează pe cont propriu.
 
-De asemenea, puteți adăuga [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) cu `false` după`ShowPlayerMenu` și [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) cu `true` la sfârșitul ʻOnPlayerSelectedMen jucătorul respectiv nu se poate mișca în timp ce navighează prin meniuri.
+De asemenea, puteți adăuga [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) cu `false` după`ShowMenuForPlayer` și [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) cu `true` la sfârșitul ʻOnPlayerSelectedMen jucătorul respectiv nu se poate mișca în timp ce navighează prin meniuri.
 
 Sper că ați învățat ceva din acest tutorial. Dacă aveți întrebări, întrebați pe forumuri / discordie.

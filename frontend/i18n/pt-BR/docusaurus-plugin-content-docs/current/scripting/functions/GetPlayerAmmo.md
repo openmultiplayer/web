@@ -21,7 +21,7 @@ A quantidade de munição na arma atual do jogador.
 ## Exemplos
 
 ```c
-ublic OnPlayerCommandText(playerid, cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/myammo", true))
     {

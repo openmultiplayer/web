@@ -152,6 +152,6 @@ if(strcmp(cmdtext, "/teleport", true) == 0)
 
 خوب، بعد از اینکه این را خواندید و متوجه شدید، منوی خودتان را امتحان کنید. همان طور که دیدید، خیلی دشوار نیست، اما بازیکنان سرور شما را بیشتر تحت تأثیر قرار خواهد داد. و می‌توانید افکت‌های واقعاً جالبی با این اسکریپت کنید. همچنین برای فروشگاه‌های عمومی یا سوپرمارکت‌ها برای چیزهایی که می‌توانید بخرید بسیار جالب است. سپس می‌توانید مقداری پول کم کنید و قیمت در ستون دیگر منو نشان داده شود. اما حالا، روی کار خودتان کار کنید.
 
-همچنین می‌توانید [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) با `false` بعد از `ShowPlayerMenu` و [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) با `true` در انتهای `OnPlayerSelectedMenuRow` اضافه کنید تا بازیکن نتواند حرکت کند وقتی منوها را می‌بیند.
+همچنین می‌توانید [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) با `false` بعد از `ShowMenuForPlayer` و [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) با `true` در انتهای `OnPlayerSelectedMenuRow` اضافه کنید تا بازیکن نتواند حرکت کند وقتی منوها را می‌بیند.
 
 امیدوارم از این آموزش چیزی یاد گرفته باشید. اگر سؤالی دارید، در انجمن‌ها/دیسکورد بپرسید.

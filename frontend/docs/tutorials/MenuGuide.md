@@ -30,9 +30,9 @@ Now a bit of an explanation about the [CreateMenu](../scripting/functions/Create
 | Parameter       | Specifies                                                        |
 | --------------- | ---------------------------------------------------------------- |
 | title           | The heading of the menu                                          |
-| columns         | The number here defines how much columns are used (2 is maximum) |
-| Float:x         | The heigth position of the menu on screen (left to right)        |
-| Float:y         | The width position of the menu on screen (up and down)           |
+| columns         | The number here defines how many columns are used (2 is maximum) |
+| Float:x         | The horizontal position of the menu on screen (left to right)    |
+| Float:y         | The vertical position of the menu on screen (up and down)        |
 | Float:col1width | The width of the first column                                    |
 | Float:col2width | The width of the second column                                   |
 
@@ -154,6 +154,6 @@ Really easy, wasn't it?
 
 Okay, after you read this AND understood it, try your own menu. As you could see, it isn't that difficult, but will impress the players on your server all the more. And you can script really cool effects with this. It's also very cool for general stores or supermarkets for the things you can buy. Then you can subtract some money as effect and the price is shown in another column in the menu. But now, work on your own.
 
-You can also add [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) with `false` after `ShowPlayerMenu` and [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) with `true` at end of `OnPlayerSelectedMenuRow` so that player may not move while they are browsing menus.
+You can also add [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) with `false` after `ShowMenuForPlayer` and [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) with `true` at end of `OnPlayerSelectedMenuRow` so that player may not move while they are browsing menus.
 
 I hope you learned something from this tutorial. If you have any questions, ask in the forums/discord.
