@@ -9,6 +9,10 @@ tags: ["vehicle"]
 
 Habilita fogo amigo para veículos de equipe. Jogadores não poderão danificar os veículos dos companheiros de equipe (é necessário usar SetPlayerTeam!).
 
+## Retornos
+
+Esta função não retorna nenhum valor específico.
+
 ## Exemplos
 
 ```c

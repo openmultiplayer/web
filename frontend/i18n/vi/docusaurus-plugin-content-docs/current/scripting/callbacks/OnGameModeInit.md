@@ -9,6 +9,12 @@ tags: []
 
 Callback này được gọi khi gamemode bắt đầu.
 
+## Trả Về
+
+Callback này không xử lý trả về.
+
+Callback này luôn được gọi đầu tiên trong gamemode.
+
 ## Ví Dụ
 
 ```c

@@ -9,6 +9,12 @@ tags: []
 
 Acest callback este apelat atunci când un mod de joc se termină, fie prin „gmx”, serverul fiind oprit, fie GameModeExit.
 
+## Returnări
+
+Acest callback nu se ocupă de returnări.
+
+Este întotdeauna numit primul în modul de joc.
+
 ## Exemple
 
 ```c

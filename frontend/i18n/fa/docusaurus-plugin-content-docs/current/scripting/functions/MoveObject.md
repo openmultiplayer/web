@@ -83,3 +83,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetPlayerObjectPos](GetPlayerObjectPos): آبجکت بازیکن را پیدا کن.
 - [GetPlayerObjectRot](GetPlayerObjectRot): چرخش آبجکت بازیکن را بررسی کن.
 - [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): آبجکت بازیکن را به بازیکن متصل کن.
+
+## کالبک‌های مرتبط
+
+- [OnObjectMoved](../callbacks/OnObjectMoved): زمانی فراخوانی می‌شود که یک شیء حرکت خود را متوقف کند.

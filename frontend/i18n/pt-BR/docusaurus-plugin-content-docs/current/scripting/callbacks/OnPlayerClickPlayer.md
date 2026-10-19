@@ -46,3 +46,7 @@ Há atualmente apenas um 'source' (0 - CLICK_SOURCE_SCOREBOARD). A existência d
 ## Funções Relacionadas
 
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Chamado quando um jogador clica em uma TextDraw.
+
+## Recursos relacionados
+
+- [Click Sources](../resources/clicksources)

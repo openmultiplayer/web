@@ -52,6 +52,10 @@ public OnGameModeInit()
 - [CreatePickup](CreatePickup): pickup ایجاد کنید.
 - [DestroyPickup](DestroyPickup): pickup را نابود کنید.
 
+## کالبک‌های مرتبط
+
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): زمانی فراخوانده می‌شود که بازیکن یک pickup بردارد.
+
 ## منابع مرتبط
 
 - [Pickup IDs](../resources/pickupids)

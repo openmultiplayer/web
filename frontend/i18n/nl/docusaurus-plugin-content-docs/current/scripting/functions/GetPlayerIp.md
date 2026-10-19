@@ -46,3 +46,9 @@ public OnPlayerConnect(playerid)
 - [GetPlayerName](GetPlayerName)
 - [GetPlayerPing](GetPlayerPing)
 - [GetPlayerVersion](GetPlayerVersion)
+
+## Gerelateerde Callbacks
+
+- [OnIncomingConnection](../callbacks/OnIncomingConnection): Deze callback wordt aangeroepen wanneer een speler probeert te verbinden met de server.
+- [OnPlayerConnect](../callbacks/OnPlayerConnect): Deze callback wordt aangeroepen wanneer een speler met de server verbindt.
+- [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Deze callback wordt aangeroepen wanneer een speler de server verlaat.

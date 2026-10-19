@@ -34,3 +34,8 @@ if (handle)
     fclose(handle);
 }
 ```
+
+## Gerelateerde Functies
+
+- [fopen](fopen): Een bestand openen (lezen/schrijven).
+- [fwrite](fwrite): Schrijf tekst naar een bestand.

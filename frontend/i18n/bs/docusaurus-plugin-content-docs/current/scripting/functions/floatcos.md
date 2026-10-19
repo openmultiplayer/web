@@ -41,3 +41,7 @@ GTA / SA-MP u većini slučajeva koriste stupnjeve za uglove, na primjer GetPlay
 
 - [floatsin](floatsin): Uzmite sinus iz određenog ugla.
 - [floattan](floattan): Dobijte tangentu iz određenog ugla.
+
+## Srodne Resources
+
+- [Ugaoni Modovi](../resources/anglemodes): SI jedinične konstante za mjerenje uglova.

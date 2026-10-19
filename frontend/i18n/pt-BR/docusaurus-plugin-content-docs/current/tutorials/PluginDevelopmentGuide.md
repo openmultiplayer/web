@@ -375,6 +375,24 @@ int amx_Push(AMX *amx, cell value);
 | --------- | ------------------- |
 | **amx**   | A máquina abstrata. |
 
+## amx_PushArray
+
+### Sintaxe
+
+```cpp
+int amx_PushArray(AMX *amx, cell *amx_addr, cell **phys_addr, const cell array[], int numcells);
+```
+
+| Parâmetro     | Descrição                                                                                                                                                               |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **amx**       | A máquina abstrata.                                                                                                                                                     |
+| **amx_addr**  | O endereço da célula alocada que o programa Pawn (que roda na máquina abstrata) pode acessar; necessário para liberar o bloco de memória. Esse parâmetro pode ser NULL. |
+| **phys_addr** | O endereço da célula para que programas em C/C++ possam acessá-la. Esse parâmetro pode ser NULL.                                                                        |
+
+**Notas:** Quaisquer parâmetros para uma função pública devem ser empilhados na função antes de chamar `amx_Exec`. Se uma função pública possui múltiplos argumentos, estes devem ser empilhados na ordem inversa. A função aloca memória para o array dentro do "heap" da máquina abstrata. Esta memória deve ser liberada com `amx_Release`. Veja a função `amx_Allot` para mais detalhes sobre os parâmetros `amx_addr` e `phys_addr`.
+
+**Veja também:** [amx_Exec](#amx_exec), [amx_Push](#amx_push), [amx_PushString](#amx_pushstring), [amx_Release](#amx_release)
+
 ## amx_PushString
 
 \- Passa uma string.
@@ -461,6 +479,30 @@ int amx_SetString(cell *dest, char *source, int pack, int use_wchar, size_t size
 **Notas:** Ao passar uma string Unicode e solicitar um formato compactado na máquina abstrata (ou seja, `pack` e `use_wchar` são verdadeiros), os caracteres são truncados para 8 bits.
 
 **Veja também:** [amx_GetString](#amx_getstring)
+
+## amx_StrLen
+
+### Sintaxe
+
+```cpp
+int amx_StrLen(const cell *cstring, int *length);
+```
+
+**Veja também:** [amx_GetAddr](#amx_getaddr), [amx_GetString](#amx_getstring), [amx_SetString](#amx_setstring), [amx_StrParam](#amx_strparam), amx_UTF8Len+
+
+## amx_StrParam
+
+### Sintaxe
+
+```cpp
+amx_StrParam([AMX*] amx, int] param, [char*] result);
+```
+
+| Parâmetro | Descrição           |
+| --------- | ------------------- |
+| **amx**   | A máquina abstrata. |
+
+**Veja também:** [amx_GetAddr](#amx_getaddr), [amx_GetString](#amx_getstring), [amx_StrLen](#amx_strlen)
 
 ## Exemplos de Funções AMX
 

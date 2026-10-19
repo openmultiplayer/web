@@ -36,3 +36,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 - [GetPlayerSpecialAction](GetPlayerSpecialAction)
 - [SetPlayerSpecialAction](SetPlayerSpecialAction)
 - [OnPlayerStateChange](../callbacks/OnPlayerStateChange)
+
+## Gerelateerde Resources
+
+- [Player States](../resources/playerstates)

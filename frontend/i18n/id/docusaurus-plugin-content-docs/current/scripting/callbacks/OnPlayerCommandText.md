@@ -45,6 +45,12 @@ Callback ini akan terpanggil juga oleh NPC.
 
 :::
 
+## Related Callbacks
+
+Callback berikut mungkin berguna, karena terkait dengan callback ini dalam satu atau lain cara
+
+- [OnPlayerText](OnPlayerText): Callback ini akan terpanggil ketika pemain mengirimkan pesan chat.
+
 ## Related Functions
 
 - [SendRconCommand](../functions/SendRconCommand): Mengirimkan perintah RCON melalui skrip.

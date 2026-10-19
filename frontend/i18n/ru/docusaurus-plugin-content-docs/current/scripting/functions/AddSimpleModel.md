@@ -5,6 +5,8 @@ description: Добавляет стороннюю модель объекта �
 tags: []
 ---
 
+<VersionWarn version='SA-MP 0.3.DL R1' />
+
 ## Описание
 
 Добавляет сторонний объект для скачивания. Файл модели будет помещен в папку на компьютер игрока Documents\GTA San Andreas User Files\SAMP\cache под названием IP и Порта сервера в виде CRC формы.

@@ -5,6 +5,8 @@ description: Cette callback est appelée quand un joueur inflige des dégâts à
 tags: ["player"]
 ---
 
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
+
 ## Paramètres
 
 Cette callback est appelée quand un joueur inflige des dégâts à un actor.

@@ -9,6 +9,12 @@ tags: []
 
 Callback này được gọi khi một gamemode kết thúc, qua 'gmx', khi máy chủ bị tắt, hoặc GameModeExit.
 
+## Trả Về
+
+Callback này không xử lý trả về.
+
+Callback này luôn được gọi đầu tiên trong gamemode.
+
 ## Ví Dụ
 
 ```c

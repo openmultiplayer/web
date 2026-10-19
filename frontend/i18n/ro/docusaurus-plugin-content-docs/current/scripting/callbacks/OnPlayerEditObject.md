@@ -96,3 +96,7 @@ Când utilizați „EDIT_RESPONSE_UPDATE”, rețineți că acest callback nu va
 - [CreateObject](../functions/CreateObject): Creați un obiect.
 - [DestroyObject](../functions/DestroyObject): Distruge un obiect.
 - [MoveObject](../functions/MoveObject): Mutați un obiect.
+
+## Related Resources
+
+- [Tipuri de răspuns editare obiect](../resources/objecteditionresponsetypes)

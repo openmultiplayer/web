@@ -51,3 +51,7 @@ Esse callback é usado somente em filterscripts.
 ## Funções Relacionadas
 
 - [SendClientCheck](../functions/SendClientCheck): Realiza uma checagem de memória no cliente.
+
+## Recursos relacionados
+
+- [opcodes](../resources/opcodes)

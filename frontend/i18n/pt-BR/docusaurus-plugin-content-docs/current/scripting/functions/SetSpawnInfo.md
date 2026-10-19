@@ -46,3 +46,8 @@ public OnPlayerRequestClass(playerid, classid)
 - [SetPlayerSkin](SetPlayerSkin): Define a skin de um jogador.
 - [SetPlayerTeam](SetPlayerTeam): Define o time de um jogador.
 - [SpawnPlayer](SpawnPlayer): Força o spawn a um jogador.
+
+## Recursos relacionados
+
+- [IDs de Skins](../resources/skins)
+- [IDs de Armas](../resources/weaponids)

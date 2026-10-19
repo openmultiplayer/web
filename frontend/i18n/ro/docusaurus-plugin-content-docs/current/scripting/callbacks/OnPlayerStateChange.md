@@ -39,6 +39,10 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 <NoteNPCCallbacks />
 
+## Callback-uri similare
+
+- [OnPlayerInteriorChange](OnPlayerInteriorChange): Apelat când un jucător schimbă interiorul.
+
 ## Funcții similare
 
 - [GetPlayerState](../functions/GetPlayerState): Obțineți starea actuală a unui jucător.

@@ -9,6 +9,12 @@ tags: []
 
 Deze callback wordt aangeroepen wanneer een gamemode eindigt, via 'gmx', server shutdown, of GameModeExit.
 
+## Returns
+
+Deze callback behandelt geen returns.
+
+Wordt altijd als eerste aangeroepen in gamemode.
+
 ## Voorbeelden
 
 ```c

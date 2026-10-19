@@ -103,3 +103,7 @@ Poznati Bug(ovi):
 
 - [GetPlayerSkin](GetPlayerSkin): Dobij igračev trenutni skin.
 - [SetSpawnInfo](SetSpawnInfo): Postavi postavke spawnovanja za igrača.
+
+## Srodne Resources
+
+- [Skinovi](../resources/skins)

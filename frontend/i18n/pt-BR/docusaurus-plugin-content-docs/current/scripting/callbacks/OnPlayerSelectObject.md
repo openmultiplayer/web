@@ -49,3 +49,7 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
 ## Funções Relacionadas
 
 - [SelectObject](../functions/SelectObject): Seleciona um objeto.
+
+## Recursos relacionados
+
+- [Tipos de Seleção de Objeto](../resources/selectobjecttypes)

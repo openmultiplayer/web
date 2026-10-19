@@ -62,3 +62,7 @@ public OnPlayerRequestDownload(playerid, type, crc)
 - [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): Encontra um arquivo de modelo existente de skin customizada ou objeto simples.
 - [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): Encontra um arquivo de textura existente de skin customizada ou objeto simples.
 - [RedirectDownload](../functions/RedirectDownload): Redirecione o download AddCharModel ou AddSimpleModel personalizado do jogador para uma página da Web HTTP específica.
+
+## Recursos relacionados
+
+- [Tipos de Solicitação de Download](../resources/download-requests)

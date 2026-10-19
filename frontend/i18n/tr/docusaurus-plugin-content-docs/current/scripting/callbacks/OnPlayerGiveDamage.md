@@ -59,3 +59,10 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 Eğer bir oyuncunun başka bir oyuncudan hasar almasını engellemek istiyorsanız SetPlayerTeam kullanın.
 
 :::
+
+## Bağlantılı Geri Çağırmalar
+
+Aşağıdaki geri çağırmalar bu geri çağırma ile bir şekilde ilişkilidir ve faydalı olabilirler.
+
+- [OnPlayerTakeDamage](OnPlayerTakeDamage): Bu fonksiyon, oyuncu hasar aldığında çağrılır.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Bu fonksiyon, oyuncu ateş ettiğinde çağrılır.

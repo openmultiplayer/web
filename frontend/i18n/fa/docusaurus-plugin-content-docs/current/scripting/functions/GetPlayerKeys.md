@@ -61,6 +61,10 @@ public OnPlayerUpdate(playerid)
 
 :::
 
+## کالبک‌های مرتبط
+
+- [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange): این کالبک زمانی فراخوانده می‌شود که وضعیت هر کلید پشتیبانی شده تغییر کند (فشرده/رها شده).
+
 ## منابع مرتبط
 
 - [Keys](../resources/keys)

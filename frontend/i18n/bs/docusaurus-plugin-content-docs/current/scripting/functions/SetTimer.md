@@ -52,6 +52,12 @@ public message()
 
 :::
 
+## Definicije
+
+| Definicija    | Vrijednost |
+| ------------- | ---------- |
+| INVALID_TIMER | 0          |
+
 ## Srodne Funkcije
 
 - [SetTimerEx](SetTimerEx): Postavi tajmer sa parametrima.

@@ -9,6 +9,12 @@ tags: []
 
 Bu geri çağırma oyun modu sonlandığında, gmx komutu kullanıldığında, sunucu ani kapatıldığında veya GameModeExit kullanıldığında tetiklenir.
 
+## Çalışınca Vereceği Sonuçlar
+
+Bu geri çağırma dönüşleri ele almaz.
+
+Her zaman ilk olarak gamemode'da çağrılır.
+
 ## Örnek
 
 ```c

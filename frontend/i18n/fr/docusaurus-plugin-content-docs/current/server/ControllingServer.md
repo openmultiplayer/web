@@ -158,7 +158,7 @@ Pour les débannir, utilisez simplement la commande `unbanip`.
 
 Tapez cmdlist pour les commandes (ou varlist pour les variables) en utilisant le RCON en jeu (`/rcon cmdlist`).
 
-Voici les fonctions que vous pouvez utiliser en tant qu'administrateur :
+Voici les fonctions que vous pouvez utiliser en tant qu'administrateur:
 
 | Command                           | Description                                                                                                                                                                      |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

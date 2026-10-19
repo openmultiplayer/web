@@ -19,3 +19,7 @@ public OnNPCSpawn()
     return 1;
 }
 ```
+
+## Callbacks connexes
+
+- [OnPlayerSpawn](OnPlayerSpawn): Appelée lorsqu'un joueur spawn (apparaît).

@@ -75,3 +75,8 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 
 - [TextDrawShowForPlayer](TextDrawShowForPlayer): Apresenta um textdraw para certo jogador.
 - [OnDialogResponse](../callbacks/OnDialogResponse): É chamada quando um jogador responde a um dialog.
+
+## Recursos relacionados
+
+- [Dialog Styles](../resources/dialogstyles)
+- [Códigos de Escape](../resources/escapecodes)

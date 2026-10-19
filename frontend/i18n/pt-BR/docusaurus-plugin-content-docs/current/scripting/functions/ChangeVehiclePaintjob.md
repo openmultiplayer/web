@@ -36,3 +36,7 @@ ChangeVehiclePaintjob(GetPlayerVehicleID(playerid), rand); // Altera o paintjob 
 
 - [ChangeVehicleColor](ChangeVehicleColor): Define a cor de um veículo.
 - [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): É chamado quando o paintjob de um veículo é alterado.
+
+## Recursos relacionados
+
+- [Paintjobs](../resources/paintjobs)

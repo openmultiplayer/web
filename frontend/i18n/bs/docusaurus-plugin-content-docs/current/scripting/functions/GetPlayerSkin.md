@@ -35,3 +35,7 @@ playerskin = GetPlayerSkin(playerid);
 ## Srodne Funkcije
 
 - [SetPlayerSkin](SetPlayerSkin): Postavi skin igraču.
+
+## Srodne Resources
+
+- [Skinovi](../resources/skins)

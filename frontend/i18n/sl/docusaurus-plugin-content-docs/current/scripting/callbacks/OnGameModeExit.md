@@ -9,6 +9,10 @@ tags: []
 
 Ta "callback" se pokliče, ko se "gamemode" izklopi prek 'gmx', kadar koli se strežnik izklopi, bodisi pod "GameModeExit"
 
+## Returns
+
+Ta "callback" se ne obdeluje (return).
+
 ## Primeri
 
 ```c

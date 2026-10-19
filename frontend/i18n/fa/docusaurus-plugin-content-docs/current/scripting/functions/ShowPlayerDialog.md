@@ -83,3 +83,11 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 
 - [TextDrawShowForPlayer](TextDrawShowForPlayer)
 - [OnDialogResponse](../callbacks/OnDialogResponse)
+
+<div dir="rtl" style={{ textAlign: "right" }}>
+
+## منابع مرتبط
+
+- [سبک های دیالوگ](../resources/dialogstyles)
+
+</div>

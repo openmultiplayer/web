@@ -9,6 +9,12 @@ tags: []
 
 Ang callback na ito ay itinatawag kapag ang isang gamemode ay isinara or itinapos. Itinatawag ito tuwing itinatawag ang rcon command na `gmx`, o kapag and server ay ishinu-shutdown, o GameModeExit.
 
+## Returns
+
+Hindi nag rereturn ang callback na ito.
+
+Ito ay palaging itinatawag una sa mga gamemode.
+
 ## Examples
 
 ```c

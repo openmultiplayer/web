@@ -46,3 +46,7 @@ public OnPlayerRequestClass(playerid, classid)
 - [SetPlayerSkin](SetPlayerSkin): Postavi skin igraču.
 - [SetPlayerTeam](SetPlayerTeam): Postavi tim igrača.
 - [SpawnPlayer](SpawnPlayer): Natjeraj igrača da se spawnuje.
+
+## Srodne Resources
+
+- [Skinovi](../resources/skins)

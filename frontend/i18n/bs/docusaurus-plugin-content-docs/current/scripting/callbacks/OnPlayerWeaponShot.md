@@ -69,3 +69,7 @@ Poznati Bag(ovi):
 ## Srodne Funkcije
 
 - [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): Dohvaća vektor zadnjeg hica kojeg je igrač ispalio.
+
+## Srodne Resources
+
+- [Vrste Pogodaka Mecima](../resources/bullethittypes)

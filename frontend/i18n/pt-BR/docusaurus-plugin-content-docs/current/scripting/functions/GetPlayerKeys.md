@@ -62,3 +62,11 @@ public OnPlayerUpdate(playerid)
 :::
 
 ## Funções Relacionadas
+
+## Callbacks Relacionadas
+
+- [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange): Esta callback é chamada quando o estado de qualquer tecla suportada muda (pressionado/solto)
+
+## Recursos relacionados
+
+- [Teclas](../resources/keys)

@@ -80,3 +80,7 @@ GetPlayerHealth i GetPlayerArmour će return-ovati stare vrijednosti igračevog 
 
 - [OnPlayerGiveDamage](OnPlayerGiveDamage): This callback is called when a player gives damage.
 - [OnPlayerWeaponShot](OnPlayerWeaponShot): This callback is called when a player fires a weapon.
+
+## Srodne Resources
+
+- [Dijelovi tijela](../resources/bodyparts)

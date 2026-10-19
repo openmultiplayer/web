@@ -46,3 +46,7 @@ Trenutno je dostupan samo jedan 'source' (0 - CLICK_SOURCE_SCOREBOARD). Postojan
 ## Srodne Funkcije
 
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Pozvana kada igrač klikne na textdraw.
+
+## Srodne Resources
+
+- [Izvori Klikanja](../resources/clicksources)

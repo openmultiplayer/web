@@ -58,3 +58,8 @@ A identificação máxima da classe é 319 (começando em 0, portanto, um total 
 - [SetSpawnInfo](SetSpawnInfo): Define a configuração de spawn para um jogador.
 - [SetPlayerTeam](SetPlayerTeam): Define o time de um jogador.
 - [SetPlayerSkin](SetPlayerSkin): Define a skin (personagem) de um jogador.
+
+## Recursos relacionados
+
+- [IDs de Skins](../resources/skins)
+- [IDs de Armas](../resources/weaponids)

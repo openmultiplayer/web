@@ -75,3 +75,9 @@ Eğer hasar bir ateş kaynağındansa (molotof, vb.) weaponid 37(flame thrower) 
 GetPlayerHealth ve GetPlayerArmour, bu fonksiyon çağrılmadan önce oyuncunun eski miktarlarını döndürecektir. Bir dizi dizini kullanmadan önce daima issuerid'in geçerli olup olmadığını kontrol edin.
 
 :::
+
+## Bağlantılı Geri Çağırmalar
+
+Aşağıdaki geri çağırmalar bu geri çağırma ile bir şekilde ilişkilidir ve faydalı olabilirler.
+
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Bu fonksiyon, oyuncu ateş ettiğinde çağrılır.

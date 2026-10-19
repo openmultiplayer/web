@@ -54,3 +54,7 @@ else
 ## 相关函数
 
 - [SetVehicleParamsSirenState](SetVehicleParamsSirenState): 控制车辆警报器的开关状态
+
+## 相关回调
+
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): 车辆警报器状态变化时触发

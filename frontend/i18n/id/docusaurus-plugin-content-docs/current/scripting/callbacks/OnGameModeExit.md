@@ -9,6 +9,12 @@ tags: []
 
 Callback ini akan terpanggil ketika gamemode berakhir, entah itu lewat 'gmx' server yang dimatikan, atau GameModeExit.
 
+## Returns
+
+Callback ini tidak mengelola pengembalian nilai.
+
+Selalu terpanggil pertama di gamemode.
+
 ## Contoh
 
 ```c
@@ -28,6 +34,12 @@ public OnGameModeExit()
 - Callback ini TIDAK akan dipanggil apabila server crash atau prosesnya dimatikan dengan cara lain, seperti menggunakan perintah kill di linux.
 
 :::
+
+## Related Callbacks
+
+Callback berikut mungkin berguna, karena terkait dengan callback ini dalam satu atau lain cara
+
+- [OnFilterScriptExit](OnFilterScriptExit): Callback ini akan terpanggil ketika filterscript dibongkar.
 
 ## Related Functions
 

@@ -54,3 +54,7 @@ else
 ## توابع مرتبط
 
 - [SetVehicleParamsSirenState](SetVehicleParamsSirenState): روشن یا خاموش کردن آژیر یه وسیله نقلیه.
+
+## کالبک‌های مرتبط
+
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): هنگامی که آژیر وسیله نقلیه روشن/خاموش می‌شود فراخوانی می‌شود.

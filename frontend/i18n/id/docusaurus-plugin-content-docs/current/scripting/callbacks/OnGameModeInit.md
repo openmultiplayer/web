@@ -9,6 +9,12 @@ tags: []
 
 Callback ini akan terpanggil ketika sebuah gamemode dimuat.
 
+## Returns
+
+Callback ini tidak mengelola pengembalian nilai.
+
+Selalu terpanggil pertama di gamemode.
+
 ## Contoh
 
 ```c

@@ -74,6 +74,12 @@ Intervali tajmera nisu tačni (otprilike 25% popusta). Postoje ispravci dostupni
 
 :::
 
+## Definicije
+
+| Definicija    | Vrijednost |
+| ------------- | ---------- |
+| INVALID_TIMER | 0          |
+
 ## Srodne Funkcije
 
 - [SetTimer](SetTimer): Postavi tajmer.
