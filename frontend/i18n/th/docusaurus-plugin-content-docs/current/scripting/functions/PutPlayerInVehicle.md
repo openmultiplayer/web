@@ -37,7 +37,6 @@ public OnPlayerEnterVehicle(playerid,vehicleid,ispassanger)
 2 - Back-left passenger
 3 - Back-right passenger
 4+ - Passenger seats (coach etc.)
-
 ```
 
 ## บันทึก

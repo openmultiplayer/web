@@ -28,6 +28,9 @@ tags: []
 #define HTTP_GET                               (1) // Šalje običan HTTP zahtjev.
 #define HTTP_POST                              (2) // Šalje HTTP zahtjev s POST podacima.
 #define HTTP_HEAD                              (3) // Šalje običan HTTP zahtjev, ali zanemaruje sve podatke o odgovoru - vraća samo kod odgovora.
+```
+
+```c
 // HTTP kodovi odgovora na greške
 // Ovi kodovi dopunjuju uobičajene HTTP kodove odgovora vraćene u 'response_code'
 // (10x) (20x OK) (30x Pomjereno) (40x Neovlašteno) (50x Server Error)

@@ -12,7 +12,7 @@ Gets a vehicle's parameters.
 | Name       | Description                                                         |
 | ---------- | ------------------------------------------------------------------- |
 | vehicleid  | The ID of the vehicle to get the parameters from.                   |
-| &engine    | Get the engine status. If 1, the engine is running..                |
+| &engine    | Get the engine status. If 1, the engine is running.                 |
 | &lights    | Get the vehicle's lights' state. If 1 the lights are on.            |
 | &alarm     | Get the vehicle's alarm state. If 1 the alarm is (or was) sounding. |
 | &doors     | Get the lock status of the doors. If 1 the doors are locked.        |

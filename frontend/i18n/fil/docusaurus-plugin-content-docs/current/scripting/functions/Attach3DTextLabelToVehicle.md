@@ -32,7 +32,7 @@ public OnGameModeInit ( )
 {
     gVehicleId = CreateVehicle(510, 0.0, 0.0, 15.0, 5, 0, 120); // Paggawa ng Sasakyan.
     gVehicle3dText[gVehicleId] = Create3DTextLabel("Example Text", 0xFF0000AA, 0.0, 0.0, 0.0, 50.0, 0, 1);
-    Attach3DTextLabelToVehicle(gVehicle3dText[gVehicleId], vehicle_id, 0.0, 0.0, 2.0); // Paglalagay ng Text Label sa Sasakyan.
+    Attach3DTextLabelToVehicle(gVehicle3dText[gVehicleId], gVehicleId, 0.0, 0.0, 2.0); // Paglalagay ng Text Label sa Sasakyan.
 }
 
 public OnGameModeExit ( )

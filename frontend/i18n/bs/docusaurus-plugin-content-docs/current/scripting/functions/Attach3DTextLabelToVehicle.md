@@ -32,7 +32,7 @@ public OnGameModeInit ( )
 {
     gVehicleId = CreateVehicle(510, 0.0. 0.0, 15.0, 5, 0, 120); // Creating the Vehicle.
     gVehicle3dText[gVehicleId] = Create3DTextLabel("Example Text", 0xFF0000AA, 0.0, 0.0, 0.0, 50.0, 0, 1);
-    Attach3DTextLabelToVehicle(gVehicle3dText[gVehicleId], vehicle_id, 0.0, 0.0, 2.0); // Attaching Text Label To Vehicle.
+    Attach3DTextLabelToVehicle(gVehicle3dText[gVehicleId], gVehicleId, 0.0, 0.0, 2.0); // Attaching Text Label To Vehicle.
 }
 
 public OnGameModeExit ( )

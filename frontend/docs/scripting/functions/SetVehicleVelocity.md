@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-This function has no affect on un-occupied vehicles and does not affect trains.
+This function has no affect on unoccupied vehicles and does not affect trains.
 
 :::
 

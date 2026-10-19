@@ -5,8 +5,6 @@ description: Esta callback é chamada quando um jogador causa danos a algum joga
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.d' />
-
 ## Descrição
 
 Esta callback é chamada quando um jogador causa danos a algum jogador.

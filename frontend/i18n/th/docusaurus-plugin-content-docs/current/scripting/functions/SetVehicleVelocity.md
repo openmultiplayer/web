@@ -13,7 +13,7 @@ Sets the X, Y and Z velocity of a vehicle.
 | --------- | --------------------------------------------- |
 | vehicleid | The ID of the vehicle to set the velocity of. |
 | Float:X   | The velocity in the X direction.              |
-| Float:Y   | The velocity in the Y direction .             |
+| Float:Y   | The velocity in the Y direction.              |
 | Float:Z   | The velocity in the Z direction.              |
 
 ## ส่งคืน
@@ -40,7 +40,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-This function has no affect on un-occupied vehicles and does not affect trains.
+This function has no affect on unoccupied vehicles and does not affect trains.
 
 :::
 

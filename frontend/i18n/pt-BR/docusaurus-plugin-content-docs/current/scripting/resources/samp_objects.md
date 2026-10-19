@@ -33,6 +33,7 @@ pacote de servidores.
 ```
 11692	A51LandBit1
 ```
+
 ### **Colinas**
 
 ```
@@ -41,22 +42,25 @@ pacote de servidores.
 11695	Hill250x250Rocky2
 11696	Hill250x250Rocky3
 ```
+
 ### **Ponte modular de string**
 
 ```
 11697	RopeBridgePart1
 11698	RopeBridgePart2
 ```
+
 ### **Mais sinais de trânsito**
 
 A placa de limite de velocidade abaixo possui uma sobreposição de material transparente (índice 3) para que você
-pode usá-lo com SetObjectMaterialText() ou SetPlayerObjectMaterialText()
+pode usá-lo com SetObjectMaterialText ou SetPlayerObjectMaterialText
 funções.
 
 ```
 11699	SAMPRoadSign46
 11700	SAMPRoadSign47
 ```
+
 ### **Luzes de ambulância**
 
 O primeiro objeto está com as luzes acesas e o segundo está com as luzes apagadas.
@@ -65,6 +69,7 @@ O primeiro objeto está com as luzes acesas e o segundo está com as luzes apaga
 11701	AmbulanceLights1
 11702	AmbulanceLights2
 ```
+
 ### **Objeto Guindaste Magnético**
 
 Este objeto é igual ao objeto ID 1382, exceto que GTASA não será automaticamente
@@ -73,6 +78,7 @@ prenda o cabo do guindaste e o ímã a ele.
 ```
 11703	MagnoCrane_03_2
 ```
+
 ### **Itens Extraídos 2**
 
 ```
@@ -112,6 +118,7 @@ prenda o cabo do guindaste e o ímã a ele.
 11737	RockstarMat1
 11738	MedicCase1
 ```
+
 ### **Extraído do Marco's Bistrô**
 
 ```
@@ -122,6 +129,7 @@ prenda o cabo do guindaste e o ímã a ele.
 11743	MCoffeeMachine1
 11744	MPlate1
 ```
+
 ### **Hold All (bolsa de transporte) editado**
 
 Este objeto é igual ao ID 2919, exceto que é menor e não dinâmico.
@@ -129,6 +137,7 @@ Este objeto é igual ao ID 2919, exceto que é menor e não dinâmico.
 ```
 11745	HoldAllEdited1
 ```
+
 ### **Itens Diversos 3**
 
 ```
@@ -136,17 +145,20 @@ Este objeto é igual ao ID 2919, exceto que é menor e não dinâmico.
 11747 Bandage1
 11748 BandagePack1
 ```
+
 ### **Algemas da cena**
 
 ```
 11749	CSHandcuffs1
 ```
+
 As algemas abaixo são iguais às acima, exceto que são dobradas ao meio para que possam
 pode ser preso a um cinto de oficial.
 
 ```
 11750	CSHandcuffs2
 ```
+
 ### **Limites de área**
 
 ```
@@ -154,6 +166,7 @@ pode ser preso a um cinto de oficial.
 11752	AreaBoundary10m
 11753	AreaBoundary1m
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3.7 RC3 (138 objetos)**
@@ -164,12 +177,14 @@ pode ser preso a um cinto de oficial.
 19873	ToiletPaperRoll1
 19874	SoapBar1
 ```
+
 Esta porta é igual ao objeto ID 2947, exceto que não é dinâmica (quebrável) e
 o ponto de articulação foi movido.
 
 ```
 19875	CRDoor01New
 ```
+
 ### **Posto de gasolina Dillimore**
 
 Substitui o objeto IDs 12853 e 12854 por uma versão editável do Dillimore
@@ -181,6 +196,7 @@ pacote.
 19876	DillimoreGasExt1
 19877	DillimoreGasInt1
 ```
+
 ### **Skate GTASA**
 
 Editado para funcionar como um objeto normal e adicionadas cores de vértice.
@@ -188,6 +204,7 @@ Editado para funcionar como um objeto normal e adicionadas cores de vértice.
 ```
 19878	Skateboard1
 ```
+
 ### **LS Wells Fargo**
 
 Este edifício substitui o edifício LS Wells Fargo (objeto ID 4007).
@@ -199,6 +216,7 @@ Pacote de servidor Windows 0.3.7.
 19879	WellsFargoBuild1
 19880	WellsFargoGrgDoor1
 ```
+
 ### **Celeiro de Kylie consertado**
 
 Este celeiro é igual ao objeto ID 14871, exceto que a colisão (COL) foi
@@ -208,6 +226,7 @@ pode ser encontrado na pasta "filterscripts" do pacote do servidor Windows 0.3.7
 ```
 19881	KylieBarnFixed1
 ```
+
 ### **Bife do Marco Cozido**
 
 Este bife é igual ao objeto ID 19582, exceto que está cozido.
@@ -215,11 +234,13 @@ Este bife é igual ao objeto ID 19582, exceto que está cozido.
 ```
 19882	MarcosSteak2
 ```
+
 ### **Fatia de Pão**
 
 ```
 19883	BreadSlice1
 ```
+
 ### **Mais seções de toboáguas**
 
 Esses objetos são projetados para funcionar com o antigo objeto existente IDs 19070
@@ -235,21 +256,24 @@ alguns problemas de renderização alfa.
 19889	WSBend45Deg4
 19890	WSStraight4
 ```
+
 O objeto abaixo pode ser usado para unir essas seções do toboágua a um tubo.
 
 ```
 19891	WSTubeJoiner1
 ```
+
 O objeto abaixo pode ser usado para unir essas seções de toboágua a um módulo modular
 estrada.
 
 ```
 19892	WSRoadJoiner1
 ```
+
 ### **Laptop (estilo antigo)**
 
 O mesmo laptop nas posições aberta e fechada. Você pode alterar a tela usando o
-Função SetObjectMaterial() no índice 1. Existem três variações de tela em
+Função SetObjectMaterial no índice 1. Existem três variações de tela em
 o arquivo TXD (veja a imagem abaixo):
 
 - LaptopScreen1 = tela do mapa GTASA (padrão)
@@ -260,6 +284,7 @@ o arquivo TXD (veja a imagem abaixo):
 19893	LaptopSAMP1
 19894	LaptopSAMP2
 ```
+
 ![Imagem:SAMP-Laptop-1.png](https://assets.open.mp/assets/images/objects/SAMP-Laptop-1.png)
 
 ### **Luzes de caminhão de bombeiros de escada**
@@ -270,6 +295,7 @@ só será visível à noite.
 ```
 19895	LadderFireTruckLts1
 ```
+
 ### **Itens Diversos**
 
 ```
@@ -279,6 +305,7 @@ só será visível à noite.
 19899	ToolCabinet1
 19900	ToolCabinet2
 ```
+
 ### **Objetos ANIM**
 
 Os objetos abaixo são objetos ANIM (animados). Eles foram adicionados no SA-MP 0.3c
@@ -288,12 +315,14 @@ e versões 0.3.7.
 19901	AnimTube
 19902	EnExMarker4
 ```
+
 ### **Itens Diversos Continuação**
 
 ```
 19903	MechanicComputer1
 19904	ConstructionVest1
 ```
+
 ### **Edifícios da Área 51 (69)**
 
 Esses objetos são basicamente iguais aos edifícios originais, mas agora com um
@@ -309,12 +338,14 @@ Pasta "filterscripts" do pacote do servidor Windows 0.3.7.
 19909	A51Building3
 19910	A51Building3GrgDoor
 ```
+
 A porta abaixo foi projetada para caber no Hangar Militar A51/69 (objeto ID
 3268). São necessárias duas portas para fechar a entrada.
 
 ```
 19911	A51HangarDoor1
 ```
+
 ### **Portão de metal e cerca grande**
 
 Este portão é igual ao objeto ID 980, exceto que não tem sinais e o
@@ -323,11 +354,13 @@ ponto de articulação está na borda.
 ```
 19912	SAMPMetalGate1
 ```
+
 Grande cerca metálica que é útil para cercar áreas de eventos ou minijogos.
 
 ```
 19913	SAMPBigFence1
 ```
+
 ### **Extraído da Cutscene IMG e editado 2**
 
 ```
@@ -340,6 +373,7 @@ Grande cerca metálica que é útil para cercar áreas de eventos ou minijogos.
 19920	CutsceneRemote1
 19921	CutsceneToolBox1
 ```
+
 ### **Cozinha Modular**
 
 Esses objetos podem ser usados para montar uma cozinha modular de diversas maneiras.
@@ -365,6 +399,7 @@ Esses objetos podem ser usados para montar uma cozinha modular de diversas manei
 19939	MKShelf2
 19940	MKShelf3
 ```
+
 ### **Itens Diversos 2**
 
 ```
@@ -373,6 +408,7 @@ Esses objetos podem ser usados para montar uma cozinha modular de diversas manei
 19943	StonePillar1
 19944	BodyBag1
 ```
+
 ### **Pontos de verificação**
 
 Esses objetos podem ser usados como uma alternativa aos pontos de verificação normais.
@@ -382,6 +418,7 @@ Esses objetos podem ser usados como uma alternativa aos pontos de verificação 
 19946	CPSize16Green
 19947	CPSize16Blue
 ```
+
 ![Imagem:SAMP-New-Checkpoints.png](https://assets.open.mp/assets/images/objects/SAMP-New-Checkpoints.png)
 
 ### **Sinais de trânsito**
@@ -422,13 +459,15 @@ Uma coleção de vários sinais de trânsito.
 19978	SAMPRoadSign31
 19979	SAMPRoadSign32
 ```
+
 Os dois sinais abaixo possuem uma sobreposição de material transparente (índice 3) para que você possa usar
-com as funções SetObjectMaterialText() ou SetPlayerObjectMaterialText().
+com as funções SetObjectMaterialText ou SetPlayerObjectMaterialText.
 
 ```
 19980	SAMPRoadSign33
 19981	SAMPRoadSign34
 ```
+
 Sinais de limite de velocidade.
 
 ```
@@ -444,6 +483,7 @@ Sinais de limite de velocidade.
 19991	SAMPRoadSign44
 19992	SAMPRoadSign45
 ```
+
 ![Imagem:SAMP-Road-Signs.png](https://assets.open.mp/assets/images/objects/SAMP-Road-Signs.png)
 
 ### **Extraído da Cutscene IMG e editado 3**
@@ -457,6 +497,7 @@ Sinais de limite de velocidade.
 19998	CutsceneLighterFl
 19999	CutsceneChair2
 ```
+
 ### **Extraído da Cutscene IMG e editado 3, continuação**
 
 ```
@@ -465,6 +506,7 @@ Sinais de limite de velocidade.
 11684	CutsceneCouch3
 11685	CutsceneCouch4
 ```
+
 ### **Itens extraídos e editados do Redsands West Casino**
 
 ```
@@ -475,6 +517,7 @@ Sinais de limite de velocidade.
 11690	CTable1
 11691	CTable2
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3.7 RC2 (82 objetos)**
@@ -484,6 +527,7 @@ Sinais de limite de velocidade.
 ```
 19788	15x15RoadCorner1
 ```
+
 ### **Cubos**
 
 ```
@@ -491,16 +535,19 @@ Sinais de limite de velocidade.
 19790	Cube5mx5m
 19791	Cube10mx10m
 ```
+
 ### **Cartão-chave de tamanho normal**
 
 ```
 19792	SAMPKeycard1
 ```
+
 ### **Tora de lenha**
 
 ```
 19793	FireWoodLog1
 ```
+
 ### **LS Muros e Portões da Prisão**
 
 Esses objetos foram projetados para substituir as paredes e portões da Prisão LS para que
@@ -513,6 +560,7 @@ Pasta Filterscripts do pacote do servidor Windows 0.3.7.
 19795	LSPrisonGateEast
 19796	LSPrisonGateSouth
 ```
+
 ### **Viseira Estroboscópica da Polícia**
 
 Este objeto foi concebido para ser utilizado no interior do seu veículo na viseira (por exemplo, em um
@@ -522,6 +570,7 @@ durante o dia e a noite.
 ```
 19797	PoliceVisorStrobe1
 ```
+
 ### **Estacionamento dos apartamentos LS**
 
 Este objeto de estacionamento é usado com o bloco de substituição de apartamentos LS
@@ -532,14 +581,16 @@ Pacote de servidor 0.3.7.
 ```
 19798	LSACarPark1
 ```
+
 ### **Porta do cofre do cassino de Calígula editada**
 
-Editado para corrigir o pivô para que possa ser usado com MoveObject() e também corrigiu o
+Editado para corrigir o pivô para que possa ser usado com MoveObject e também corrigiu o
 cores do vértice noturno. O objeto original ID é 2634.
 
 ```
 19799	CaligulasVaultDoor
 ```
+
 ### **LS BeachSide Estacionamento**
 
 Este objeto de estacionamento é usado com o edifício de substituição LS BeachSide (IDs
@@ -551,19 +602,22 @@ SAMP.IPL arquivo.
 ```
 19800	LSBCarPark1
 ```
+
 ### **Balaclava**
 
 ```
 19801	Balaclava1
 ```
+
 ### **Porta Estática**
 
 Esta porta é igual ao objeto ID 1502, exceto que é estática. Você pode animá-lo
-abrindo e fechando com a função MoveObject().
+abrindo e fechando com a função MoveObject.
 
 ```
 19802	GenDoorINT04Static
 ```
+
 ### **Luzes do caminhão de reboque**
 
 Essas luzes podem ser usadas em cima do caminhão de reboque. A configuração da luz foi
@@ -572,15 +626,17 @@ criado por Vicente. Observe que eles só serão visíveis à noite.
 ```
 19803	TowTruckLights1
 ```
+
 ### **Cadeado**
 
 ```
 19804	Padlock1
 ```
+
 ### **Itens extraídos**
 
 O objeto do quadro branco abaixo possui uma sobreposição de material transparente (índice 1) para que você
-pode usá-lo com SetObjectMaterialText() ou SetPlayerObjectMaterialText()
+pode usá-lo com SetObjectMaterialText ou SetPlayerObjectMaterialText
 funções.
 
 ```
@@ -616,6 +672,7 @@ funções.
 19834	PoliceLineTape1
 19835	CoffeeCup1
 ```
+
 ### **Objetos que usam Particle.TXD**
 
 Os objetos abaixo utilizam texturas do arquivo Particle.TXD GTASA. A grama
@@ -627,6 +684,7 @@ aglomerados podem ser usados para criar um trabalho de corte RP.
 19838	GrassClump2
 19839	GrassClump3
 ```
+
 ### **Cachoeiras Animadas**
 
 Os objetos abaixo usam a animação UV para criar água em movimento para uma cachoeira e/ou
@@ -637,6 +695,7 @@ rio.
 19841	WaterFall2
 19842	WaterFallWater1
 ```
+
 ### **Painéis metálicos**
 
 ```
@@ -645,11 +704,13 @@ rio.
 19845	MetalPanel3
 19846	MetalPanel4
 ```
+
 ### **Perna de presunto**
 
 ```
 19847	LegHam1
 ```
+
 ### **Plataforma CargoBob**
 
 Esta plataforma foi projetada para ser fixada na lateral do helicóptero CargoBob usando
@@ -658,6 +719,7 @@ a função AttachObjectToVehicle para que você possa transportar pessoas.
 ```
 19848	CargoBobPlatform1
 ```
+
 ### **Casa Ilha Modular 1**
 
 Esses objetos são projetados para funcionar com os outros objetos de ilha modular acima
@@ -685,6 +747,7 @@ pacote de servidores.
 19865	MIFenceWood1
 19866	MIFenceBlocks1
 ```
+
 ### **Caixa de correio inquebrável**
 
 Esta caixa de correio é igual ao objeto ID 1478, exceto que não é dinâmica (quebrável) e
@@ -693,6 +756,7 @@ as cores dos vértices noturnos (NVC) foram corrigidas.
 ```
 19867	MailBox1
 ```
+
 ### **Cercas e portões de malha inquebráveis**
 
 Essas seções da cerca são iguais às do objeto IDs 1411 e 1412, exceto que são
@@ -702,21 +766,286 @@ não dinâmico (quebrável).
 19868	MeshFence1
 19869	MeshFence2
 ```
+
 Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 (quebrável).
 
 ```
 19870	MetalGate1
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3.7 RC1 (265 objetos)**
 
 ```
-19305	sec_keypad2
-19306	kmb_goflag2
-19307	kmb_goflag3
+19522	property_red
+19523	property_orange
+19524	property_yellow
+19525	WeddingCake1
+19526	ATMFixed
+19527	Cauldron1
+19528	WitchesHat1
+19529	Plane125x125Grass1
+19530	Plane125x125Sand1
+19531	Plane125x125Conc1
+19532	15x125Road1
+19533	15x62_5Road1
+19534	15x15RoadInters1
+19535	15x15RoadInters2
+19536	Plane62_5x125Grass1
+19537	Plane62_5x125Sand1
+19538	Plane62_5x125Conc1
+19539	Edge62_5x62_5Grass1
+19540	Edge62_5x62_5Grass2
+19541	Edge62_5x15Grass1
+19542	Edge62_5x125Grass1
+19543	Plane62_5x15Grass1
+19544	Plane62_5x15Sand1
+19545	Plane62_5x15Conc1
+19546	Edge62_5x62_5Grass3
+19547	Hill125x125Grass1
+19548	Hill125x125Sand1
+19549	Edge62_5x32_5Grass1
+19550	Plane125x125Grass2
+19551	Plane125x125Sand2
+19552	Plane125x125Conc2
+19553	StrawHat1
+19554	Beanie1
+19555	BoxingGloveL
+19556	BoxingGloveR
+19557	SexyMask1
+19558	PizzaHat1
+19559	HikerBackpack1
+19560	MeatTray1
+19561	CerealBox1
+19562	CerealBox2
+19563	JuiceBox1
+19564	JuiceBox2
+19565	IceCreamBarsBox1
+19566	FishFingersBox1
+19567	IcecreamContainer1
+19568	IcecreamContainer2
+19569	MilkCarton1
+19570	MilkBottle1
+19571	PizzaBox1
+19572	PisshBox1
+19573	BriquettesBag1
+19574	Orange1
+19575	Apple1
+19576	Apple2
+19577	Tomato1
+19578	Banana1
+19579	BreadLoaf1
+19580	Pizza1
+19581	MarcosFryingPan1
+19582	MarcosSteak1
+19583	MarcosKnife1
+19584	MarcosSaucepan1
+19585	MarcosPan1
+19586	MarcosSpatula1
+19587	PlasticTray1
+19588	FootBridge1
+19589	RubbishSkipEmpty1
+19590	WooziesSword1
+19591	WooziesHandFan1
+19592	ShopBasket1
+19593	ZomboTechBuilding1
+19594	ZomboTechLab1
+19595	LSAppartments1
+19597	LSBeachSideInsides
+19598	SFBuilding1Outside
+19599	SFBuilding1Inside
+19600	SFBuilding1Land
+19601	SnowPlow1
+19602	Landmine1
+19603	WaterPlane1
+19604	WaterPlane2
+19605	EnExMarker4-2
+19606	EnExMarker4-3
+19607	EnExMarker4-4
+19608	WoodenStage1
+19609	DrumKit1
+19610	Microphone1
+19611	MicrophoneStand1
+19612	GuitarAmp1
+19613	GuitarAmp2
+19614	GuitarAmp3
+19615	GuitarAmp4
+19616	GuitarAmp5
+19617	GoldRecord1
+19618	Safe1
+19619	SafeDoor1
+19620	LightBar1
+19621	OilCan1
+19622	Broom1
+19623	Camera1
+19624	Case1
+19625	Ciggy1
+19626	Spade1
+19627	Wrench1
+19628	MRoadBend90Banked1
+19629	MRoadBend90Banked2
+19630	Fish1
+19631	SledgeHammer1
+19632	FireWood1
+19633	Ramp360Degree1
+19634	Ramp360Degree2
+19635	Ramp360Degree3
+19636	RedApplesCrate1
+19637	GreenApplesCrate1
+19638	OrangesCrate1
+19639	EmptyCrate1
+19640	EmptyShopShelf1
+19641	FenceSection1
+19642	TubeSeg10m1
+19643	TubeSeg10m2a
+19644	TubeSeg10m2b
+19645	TubeSeg25m1
+19646	TubeHalf10m1
+19647	TubeHalf10mJoin1a
+19648	TubeHalf10mJoin1b
+19649	TubeHalf50m1
+19650	TubeFlat25x25m1
+19651	TubeHalfSpiral1a
+19652	TubeHalfSpiral1b
+19653	TubeHalfSpiral2a
+19654	TubeHalfSpiral2b
+19655	TubeHalfSpiral3a
+19656	TubeHalfSpiral3b
+19657	TubeHalfSpiral4a
+19658	TubeHalfSpiral4b
+19659	TubeHalf180Bend1a
+19660	TubeHalf180Bend1b
+19661	TubeHalf90Bend1a
+19662	TubeHalf90Bend1b
+19663	TubeHalf50mDip1
+19664	TubeHalf50mBump1
+19665	TubeHalfLoop1a
+19666	TubeHalfLoop1b
+19667	TubeHalfLoop2a
+19668	TubeHalfLoop2b
+19669	TubeHalfBowl1
+19670	TubeSupport1
+19671	TubeSupport2
+19672	TubeHalfLight1
+19673	TubeHalf5Bend1a
+19674	TubeHalf5Bend1b
+19675	TubeHalf5Bend2a
+19676	TubeHalf5Bend2b
+19677	TubeHalfTwist1a
+19678	TubeHalfTwist1b
+19679	TubeHalfTwist2a
+19680	TubeHalfTwist2b
+19681	TubeHalf45Bend1a
+19682	TubeHalf45Bend1b
+19683	TubeHalf15Bend1a
+19684	TubeHalf15Bend1b
+19685	TubeHalf15Bend2a
+19686	TubeHalf15Bend2b
+19687	TubeHalf25m1
+19688	TubeHalf45Bend3
+19689	TubeHalf45Bend4
+19690	TubeHalfNtoMJoin1a
+19691	TubeHalfNtoMJoin1b
+19692	MTubeSeg5m1
+19693	MTubeSeg5m2a
+19694	MTubeSeg5m2b
+19695	MTubeSeg12_5m1
+19696	MTubeHalf10m1
+19697	MTubeHalf5mJoin1a
+19698	MTubeHalf5mJoin1b
+19699	MTubeHalf25m1
+19700	MTubeFlt12_5x12_5m1
+19701	MTubeHalfSpiral1a
+19702	MTubeHalfSpiral1b
+19703	MTubeHalfSpiral2a
+19704	MTubeHalfSpiral2b
+19705	MTubeHalfSpiral3a
+19706	MTubeHalfSpiral3b
+19707	MTubeHalfSpiral4a
+19708	MTubeHalfSpiral4b
+19709	MTubeHalf180Bend1a
+19710	MTubeHalf180Bend1b
+19711	MTubeHalf90Bend1a
+19712	MTubeHalf90Bend1b
+19713	MTubeHalf25mDip1
+19714	MTubeHalf25mBump1
+19715	MTubeHalfBowl1
+19716	MTubeSupport1
+19717	MTubeSupport2
+19718	MTubeHalfLight1
+19719	MTubeHalf5Bend1a
+19720	MTubeHalf5Bend1b
+19721	MTubeHalf5Bend2a
+19722	MTubeHalf5Bend2b
+19723	MTubeHalf45Bend1a
+19724	MTubeHalf45Bend1b
+19725	MTubeHalf15Bend1a
+19726	MTubeHalf15Bend1b
+19727	MTubeHalf15Bend2a
+19728	MTubeHalf15Bend2b
+19729	MTubeHalf45Bend3
+19730	MTubeHalf45Bend4
+19731	TubeHalfMtoSJoin1a
+19732	TubeHalfMtoSJoin1B
+19733	STubeSeg5m1
+19734	STubeSeg5m2a
+19735	STubeSeg5m2b
+19736	STubeSeg6_25m1
+19737	STubeHalf10m1
+19738	STubeHalf5mJoin1a
+19739	STubeHalf5mJoin1b
+19740	STubeHalf12_5m1
+19741	STubeFlat6_25m1
+19742	STubeHalfSpiral1a
+19743	STubeHalfSpiral1b
+19744	STubeHalfSpiral2a
+19745	STubeHalfSpiral2b
+19746	STubeHalfSpiral3a
+19747	STubeHalfSpiral3b
+19748	STubeHalfSpiral4a
+19749	STubeHalfSpiral4b
+19750	STubeHalf180Bend1a
+19751	STubeHalf180Bend1b
+19752	STubeHalf90Bend1a
+19753	STubeHalf90Bend1b
+19754	STubeHalf12_5mDip1
+19755	STubeHalf12_5mBump1
+19756	STubeHalfBowl1
+19757	STubeSupport1
+19758	STubeSupport2
+19759	STubeHalfLight1
+19760	STubeHalf5Bend1a
+19761	STubeHalf5Bend1b
+19762	STubeHalf5Bend2a
+19763	STubeHalf5Bend2b
+19764	STubeHalf45Bend1a
+19765	STubeHalf45Bend1b
+19766	STubeHalf15Bend1a
+19767	STubeHalf15Bend1b
+19768	STubeHalf15Bend2a
+19769	STubeHalf15Bend2b
+19770	STubeHalf45Bend3
+19771	STubeHalf45Bend4
+19772	CrushedCarCube1
+19773	GunHolster1
+19774	PoliceBadge2
+19775	PoliceBadge3
+19776	FBIIDCard1
+19777	FBILogo1
+19778	InsigniaDetective1
+19779	InsigniaDetective2
+19780	InsigniaDetective3
+19781	InsigniaSergeant1
+19782	InsigniaSergeant2
+19783	InsigniaPOfficer2
+19784	InsigniaPOfficer3
+19785	InsigniaSeniorLdOff
+19786	LCDTVBig1
+19787	LCDTV1
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3.7 (3 objetos)**
@@ -726,6 +1055,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19306	kmb_goflag2
 19307	kmb_goflag3
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3x RC2-4 (6 objetos)**
@@ -738,6 +1068,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19520	pilotHat01
 19521	policeHat01
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3e RC7 (31 objetos)**
@@ -785,6 +1116,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19514	SWATHgrey
 19515	SWATAgrey
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3e RC6 (5 objetos)**
@@ -796,6 +1128,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19473	grassplant01
 19474	pokertable01
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3e RC4 (44 objetos)**
@@ -846,6 +1179,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19468	bucket01
 19469	scarf01
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3e RC3 (54 objetos)**
@@ -906,6 +1240,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19424	headphones04
 19425	speed_bump01
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3e RC1 (25 objetos)**
@@ -937,6 +1272,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19370	wall018
 19371	wall019
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3d (8 objetos)**
@@ -951,6 +1287,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19345	easter_egg05
 19346	hotdog01
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3d RC7 (16 objetos)**
@@ -973,6 +1310,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19337	Hot_Air_Balloon06
 19338	Hot_Air_Balloon07
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3d RC3-3 (14 objetos)**
@@ -993,6 +1331,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19320	pumpkin01
 19321	cuntainer
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3d RC3-3 (4 objetos)**
@@ -1003,6 +1342,7 @@ Este portão de metal é igual ao objeto ID 3036, exceto que não é dinâmico
 19303	pd_jail_door02
 19304	pd_jail_door_top01
 ```
+
 ## **Ponte de GTALC**
 
 Os seguintes objetos (19300 a 19307) foram removidos em SA:MP 0.3d
@@ -1017,6 +1357,7 @@ Os seguintes objetos (19300 a 19307) foram removidos em SA:MP 0.3d
 19306	verticalift_bridg2
 19307	verticalift_bridge
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3c RC5 (143 objetos)**
@@ -1158,6 +1499,7 @@ Os seguintes objetos (19300 a 19307) foram removidos em SA:MP 0.3d
 19298	PointLight18
 19299	PointLightMoon1
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3c RC4 (109 objetos)**
@@ -1275,6 +1617,7 @@ Os seguintes objetos (19300 a 19307) foram removidos em SA:MP 0.3d
 19163	GimpMask1
 19901	animtube
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3c RC2 e RC3 - 154 objetos**
@@ -1484,6 +1827,7 @@ Os seguintes objetos (19300 a 19307) foram removidos em SA:MP 0.3d
 19052	WatchType14
 19053	WatchType15
 ```
+
 ---
 
 ## **Objetos adicionados em 0.3c RC1**
@@ -1508,6 +1852,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18644	Screwdriver1
 18645	MotorcycleHelmet1
 ```
+
 ### **Luzes**
 
 ```
@@ -1525,6 +1870,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18657	LightBeamRed
 18658	LightBeamBlue
 ```
+
 ### **Etiquetas de pulverização**
 
 ```
@@ -1538,6 +1884,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18666	SprayTag8
 18667	SprayTag9
 ```
+
 ### **Efeitos de Partículas**
 
 ```
@@ -1623,24 +1970,28 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18747	waterfall_end
 18748	WS_factorysmoke
 ```
+
 ### **SA:MP Logotipos**
 
 ```
 18749	SAMPLogoSmall
 18750	SAMPLogoBig
 ```
+
 ### **Massas Terrestres**
 
 ```
 18751	IslandBase1
 18752	Volcano
 ```
+
 ### **Seções básicas**
 
 ```
 18753	Base125mx125m1
 18754	Base250mx250m1
 ```
+
 ### **Elevador de VC**
 
 ```
@@ -1649,17 +2000,20 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18757	ElevatorDoor2
 18758	VCElevatorFront1
 ```
+
 ### **Gaiolas DM**
 
 ```
 18759	DMCage1
 18760	DMCage2
 ```
+
 ### **Corrida**
 
 ```
 18761	RaceFinishLine1
 ```
+
 ### **Parkour**
 
 ```
@@ -1670,6 +2024,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18766	Concrete10mx1mx5m
 18767	ConcreteStair1
 ```
+
 ### **Plataformas de paraquedismo**
 
 ```
@@ -1678,6 +2033,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18770	SkyDivePlatform1b
 18771	SpiralStair1
 ```
+
 ### **Seções do túnel**
 
 ```
@@ -1688,6 +2044,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18776	TunnelJoinSection4
 18777	TunnelSpiral1
 ```
+
 ### **Rampas**
 
 ```
@@ -1702,6 +2059,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18786	FunBoxRamp3
 18787	FunBoxRamp4
 ```
+
 ### **Seções rodoviárias modulares**
 
 ```
@@ -1720,6 +2078,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18800	MRoadHelix1
 18801	MRoadLoop1
 ```
+
 ### **Seções de ponte modular**
 
 ```
@@ -1730,6 +2089,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18806	MBridge150m4
 18807	MBridge75mHalf
 ```
+
 ### **Tubos e Funis**
 
 ```
@@ -1769,6 +2129,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18841	RB50mBend180Tube
 18842	RB50mTube
 ```
+
 ### **Esferas**
 
 ```
@@ -1776,6 +2137,7 @@ Os objetos abaixo foram adicionados em 0.3c RC1.
 18844	WaterUVAnimSphere1
 18845	RTexturesphere
 ```
+
 ### **Mais coisas**
 
 ```

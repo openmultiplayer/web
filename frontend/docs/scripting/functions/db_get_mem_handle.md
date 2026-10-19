@@ -15,7 +15,7 @@ This function is deprecated. Please see [DB_GetMemHandle](DB_GetMemHandle).
 
 ## Description
 
-The function gets the memory handle for a SQLite database connection that was opened with [db_open](db_open)].
+The function gets the memory handle for a SQLite database connection that was opened with [db_open](db_open).
 
 | Name  | Description                                                            |
 | ----- | ---------------------------------------------------------------------- |

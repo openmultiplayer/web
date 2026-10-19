@@ -31,8 +31,8 @@ public OnGameModeInit()
     TextDrawBoxColor(textdraw, 0x000000FF);
     TextDrawTextSize(textdraw, 40.0, 40.0);
     TextDrawSetPreviewModel(textdraw, 411); //Prikaži model 411 (Infernus)
-        //TextDrawSetPreviewModel(textdraw, 1); //Prikaži model 1 (CJ Skin)
-        //TextDrawSetPreviewModel(textdraw, 18646); //Prikaži model 18646 (Police light objekat)
+    //TextDrawSetPreviewModel(textdraw, 1); //Prikaži model 1 (CJ Skin)
+    //TextDrawSetPreviewModel(textdraw, 18646); //Prikaži model 18646 (Police light objekat)
 
     //Još uvijek moraš da koristiš TextDrawShowForAll/TextDrawShowForPlayer kako bi textdraw bio vidljiv.
     return 1;

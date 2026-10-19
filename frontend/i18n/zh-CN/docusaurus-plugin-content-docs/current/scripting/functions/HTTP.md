@@ -28,7 +28,9 @@ tags: ["http"]
 #define HTTP_GET                               (HTTP_METHOD:1) // 发送常规HTTP请求
 #define HTTP_POST                              (HTTP_METHOD:2) // 发送带POST数据的HTTP请求
 #define HTTP_HEAD                              (HTTP_METHOD:3) // 发送HTTP请求但忽略响应内容，仅返回状态码
+```
 
+```c
 // HTTP错误响应码
 // 这些代码是对常规HTTP状态码的补充
 #define HTTP_ERROR_BAD_HOST                    (HTTP_ERROR:1)  // 无效主机

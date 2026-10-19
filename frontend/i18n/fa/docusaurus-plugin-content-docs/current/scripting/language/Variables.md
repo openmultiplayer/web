@@ -75,7 +75,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 
-// Output :
+// Output:
 // The value is 10
 // The value is 100
 
@@ -210,7 +210,7 @@ public OnFilterScriptInit()
     return 1;
 }
 
-// Output :
+// Output:
 a
 1
 1.000000

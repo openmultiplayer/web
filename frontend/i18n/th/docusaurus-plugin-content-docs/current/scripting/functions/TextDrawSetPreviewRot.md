@@ -23,7 +23,7 @@ This function does not return any specific values.
 ## ตัวอย่าง
 
 ```c
-new Text:textdraw
+new Text:textdraw;
 
 public OnGameModeInit()
 {

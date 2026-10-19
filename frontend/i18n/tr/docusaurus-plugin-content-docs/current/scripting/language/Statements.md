@@ -181,7 +181,7 @@ while (i < 10)
 }
 ```
 
-} Koşul anında başarısız olacağından herhangi bir çıktı vermeyecek.
+Koşul anında başarısız olacağından herhangi bir çıktı vermeyecek.
 
 Bu ayrıca çift kontrolleri önlemek için kullanışlıdır:
 

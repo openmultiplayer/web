@@ -12,7 +12,7 @@ The reason why variables are so important is because they are basically small un
 
 ### Declaring Variables
 
-Following is the syntax for variable declaration :
+Following is the syntax for variable declaration:
 
 ```c
 // Creating (more appropriately, 'declaring') a variable named 'myVariable
@@ -24,7 +24,7 @@ new myVariable;
 // Semi-colon is used in the end to close the declaration statement.
 ```
 
-The declaration syntax can be better understood by looking at some examples :
+The declaration syntax can be better understood by looking at some examples:
 
 ```c
 new var;
@@ -34,13 +34,13 @@ new vehicles;
 new topScore;
 ```
 
-Each of the above defined variable has a value by default, which is zero. There are different ways of assigning values to a variable. One method is directly assigning a value to the variable as it’s declared :
+Each of the above defined variable has a value by default, which is zero. There are different ways of assigning values to a variable. One method is directly assigning a value to the variable as it’s declared:
 
 ```c
 new letters = 25;
 ```
 
-In the above example, a variable named ‘letters’ is being declared, with a value of 25. You will notice an equal sign which is a simple Assignment Operator that can be used for assigning values to variables. It evaluates the expression on its right and assigns the resultant value to the variable referenced on its left side. Other than assigning values directly at the declaration, you can also do it in later parts of the code :
+In the above example, a variable named ‘letters’ is being declared, with a value of 25. You will notice an equal sign which is a simple Assignment Operator that can be used for assigning values to variables. It evaluates the expression on its right and assigns the resultant value to the variable referenced on its left side. Other than assigning values directly at the declaration, you can also do it in later parts of the code:
 
 ```c
 new letters;
@@ -75,7 +75,7 @@ public OnPlayerConnect(playerid)
     return 1;
 }
 
-// Output :
+// Output:
 // The value is 10
 // The value is 100
 
@@ -122,24 +122,24 @@ public OnFilterScriptInit()
 
 ### Naming Rules
 
-Now that you know how to declare variables, you need to know the naming rules for declaring variable which are listed below :
+Now that you know how to declare variables, you need to know the naming rules for declaring variable which are listed below:
 
 - All variable names must begin with a letter or an underscore (`_`)
 - After the first initial letter, variable names can contain letters and numbers but no spaces or special characters.
 - The variable names are case sensitive i.e Uppercase letters are distinct from the lowercase letters.
 - Using a reserved word (keyword) as a variable name will show an error.
 
-#### Examples :
+#### Examples:
 
 ```c
-new new; // Incorrect : Using a reserved word
+new new; // Incorrect: Using a reserved word
 new _new; // Correct
 
-new 10letters; // Incorrect : Name starting with a number
+new 10letters; // Incorrect: Name starting with a number
 new letters10; // Correct
 new letters_10; // Correct
 
-new my name; // Incorrect : Space in the name
+new my name; // Incorrect: Space in the name
 new my_name; // Correct
 
 new !nternet; // Incorrect
@@ -148,7 +148,7 @@ new Internet; // Correct
 
 ### Storing different types of Data
 
-After that, now lets look at some examples of what types of data can be stored in variable and how :
+After that, now lets look at some examples of what types of data can be stored in variable and how:
 
 ```c
 new letter = 'M';
@@ -171,7 +171,7 @@ new sentence = "This is a sentence";
 // error 006: must be assigned to an array
 ```
 
-A variable is capable of holding a character, integer value, boolean (true or false) and a float value (decimal value). The comments in the above code show that storing a string in a variable results into an error (as strings can be stored in _Arrays_ only). Other than that, assigning a float value to a variable will result in a compiler warning, which can be avoided by adding ‘tags’. Without proper tags, the script will show warnings upon compilation but will be executable. Tags tell the compiler about the type of data that is intended to be stored in the variable, which in turn informs us in the form of errors or warning if we make a program-breaking mistake in the code. Example of tags :
+A variable is capable of holding a character, integer value, boolean (true or false) and a float value (decimal value). The comments in the above code show that storing a string in a variable results into an error (as strings can be stored in _Arrays_ only). Other than that, assigning a float value to a variable will result in a compiler warning, which can be avoided by adding ‘tags’. Without proper tags, the script will show warnings upon compilation but will be executable. Tags tell the compiler about the type of data that is intended to be stored in the variable, which in turn informs us in the form of errors or warning if we make a program-breaking mistake in the code. Example of tags:
 
 ```c
 new decimalValue = 1.0; // Incorrect
@@ -210,7 +210,7 @@ public OnFilterScriptInit()
     return 1;
 }
 
-// Output :
+// Output:
 a
 1
 1.000000

@@ -17,9 +17,7 @@ Podesite boju pozadine player-textdrawa.
 
 ## Returns
 
-Note
-
-Ako se PlayerTextDrawSetOutline koristi s veličinom> 0, boja obrisa odgovarat će boji koja se koristi u PlayerTextDrawBackgroundColor. Čini se da promjena vrijednosti boje mijenja boju koja se koristi u PlayerTextDrawColor
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 ## Primjeri
 

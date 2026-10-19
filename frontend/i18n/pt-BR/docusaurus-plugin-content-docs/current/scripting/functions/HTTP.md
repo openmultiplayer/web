@@ -29,7 +29,9 @@ Envia uma solicitação HTTP encadeada.
 #define HTTP_GET                               (HTTP_METHOD:1) // Envia uma solicitação HTTP normal.
 #define HTTP_POST                              (HTTP_METHOD:2) // Envia uma solicitação HTTP com dados POST.
 #define HTTP_HEAD                              (HTTP_METHOD:3) // Envia uma solicitação HTTP normal, mas ignora quaisquer dados de resposta - retornando apenas o código de resposta.
+```
 
+```c
 // Códigos de resposta de erro HTTP
 // Esses códigos complementam os códigos de resposta HTTP comuns retornados em 'response_code'
 #define HTTP_ERROR_BAD_HOST                    (HTTP_ERROR:1)

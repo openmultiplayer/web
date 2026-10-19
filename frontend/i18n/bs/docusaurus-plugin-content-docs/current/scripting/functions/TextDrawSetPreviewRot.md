@@ -23,7 +23,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-new Text: gMyTextdraw
+new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {

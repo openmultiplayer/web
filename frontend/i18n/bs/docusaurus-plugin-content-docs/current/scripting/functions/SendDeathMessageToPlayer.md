@@ -5,12 +5,6 @@ description: Dodaje smrt 'killfeedu' s desne strane ekrana za jednog igrača.
 tags: ["player"]
 ---
 
-:::warning
-
-Ova funkcija je dodana u SA-MP 0.3.z R2-2 i ne radi u nižim verzijama!
-
-:::
-
 ## Deskripcija
 
 Dodaje smrt 'killfeedu' s desne strane ekrana za jednog igrača.
