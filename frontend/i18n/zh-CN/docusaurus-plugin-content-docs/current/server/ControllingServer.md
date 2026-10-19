@@ -54,8 +54,6 @@ RCON 密码是你在 [config.json](config.json) 中设置的 `rcon.password` 值
 
 ### 添加封禁
 
-封禁是指阻止一个 IP 连接到服务器。
-
 ##### bans.json
 
 bans.json 是用于存储封禁信息的文件，包括以下内容：
