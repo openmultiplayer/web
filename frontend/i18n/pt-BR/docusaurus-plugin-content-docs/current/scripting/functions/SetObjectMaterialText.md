@@ -67,10 +67,9 @@ O texto não é atualizado após 16 chamadas no mesmo objeto.
 
 ## Editores de mapas avançados
 
-- [Estúdio de Textura](https://github.com/Pottus/Texture-Studio) por Pottus
-- [Criador Supremo](https://github.com/NexiusTailer/Ultimate-Creator) por Nexius
-- [Editor de mapas de Fusez](https://github.com/fusez/Map-Editor-V3) por RedFusion
-- [Editor SetObjectMaterialText](https://sampforum.blast.hk/showthread.php?tid=614667) por RIDE2DAY
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) por Pottus
+- [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) por Nexius
+- [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) por RedFusion
 
 ## Recursos relacionados
 

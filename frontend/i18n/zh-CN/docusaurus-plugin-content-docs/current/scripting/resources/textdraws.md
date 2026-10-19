@@ -8,7 +8,10 @@ description: 文本绘图是在玩家屏幕上绘制的文字元素，可长期�
 
 文本绘图（Textdraw）是在玩家屏幕上显示的文字元素。与[客户端消息](../functions/SendClientMessage)或[游戏文本](../functions/GameTextForPlayer)不同，文本绘图可以无限期显示。既支持简单静态文本（如网站地址），也可创建复杂的动态元素（如进度条）。
 
-推荐使用文本绘图编辑器工具简化设计流程。
+推荐使用文本绘图编辑器工具简化设计流程：
+
+- [Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)
+- [Nexor's Textdraw Editor](https://github.com/nexquery/samp-textdraw-editor)
 
 ---
 

@@ -65,12 +65,11 @@ Text does not update after 16 calls against the same object.
 - [SetPlayerObjectMaterialText](SetPlayerObjectMaterialText): Replace the texture of a player object with text.
 - [SetObjectMaterial](SetObjectMaterial): Replace the texture of an object with the texture from another model in the game.
 
-## Advanaced Map Editors
+## Advanced Map Editors
 
 - [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) by Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) by RedFusion
-- [SetObjectMaterialText Editor](https://sampforum.blast.hk/showthread.php?tid=614667) by RIDE2DAY
 
 ## Related Resources
 

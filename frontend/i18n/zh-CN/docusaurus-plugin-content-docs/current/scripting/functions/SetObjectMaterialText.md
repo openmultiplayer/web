@@ -70,7 +70,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [Texture Studio](https://github.com/Pottus/Texture-Studio) 作者：Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) 作者：Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) 作者：RedFusion
-- [SetObjectMaterialText 编辑器](https://sampforum.blast.hk/showthread.php?tid=614667) 作者：RIDE2DAY
 
 ## 相关资源
 

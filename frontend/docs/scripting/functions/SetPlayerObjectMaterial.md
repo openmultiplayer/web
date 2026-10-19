@@ -62,7 +62,7 @@ You MUST use ARGB color format, not RGBA like used in client messages etc.
 
 - [SetObjectMaterial](SetObjectMaterial): Replace the texture of an object with the texture from another model in the game.
 
-## Advanaced Map Editors
+## Advanced Map Editors
 
 - [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) by Nexius

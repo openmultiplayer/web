@@ -8,7 +8,10 @@ description: As the name implies, a textdraw is text that is drawn on a player's
 
 As the name implies, a textdraw is text that is drawn on a player's screen. Unlike [client messages](../functions/SendClientMessage) or [gametext](../functions/GameTextForPlayer) however, textdraws can be shown on a player's screen for an indefinite period of time. Textdraws can be simple text on the screen such as a website address, or complex scripted dynamic textdraws such as progress bars.
 
-This 'textdraw editor' tool can make designing textdraws much easier.
+This 'textdraw editor' tool can make designing textdraws much easier:
+
+- [Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)
+- [Nexor's Textdraw Editor](https://github.com/nexquery/samp-textdraw-editor)
 
 ---
 
