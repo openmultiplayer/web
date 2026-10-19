@@ -87,7 +87,8 @@ Ovaj callback pozvat će i NPC.
 
 :::warning
 
-Ovaj callback je pozvan, otprilike, 30 puta po sekundi, po igraču; koristite ga samo kada znate za šta znači (ili mnogo bitnije, za šta NE znači).Učestalost pozivanja ovog povratnog poziva za svakog igrača varira, ovisno o tome što igrač radi. Vožnja ili pucanje izazvat će puno više ažuriranja nego u praznom hodu.
+- Ovaj callback je pozvan, otprilike, 30 puta po sekundi, po igraču; koristite ga samo kada znate za šta znači (ili mnogo bitnije, za šta NE znači).
+- Učestalost pozivanja ovog povratnog poziva za svakog igrača varira, ovisno o tome što igrač radi. Vožnja ili pucanje izazvat će puno više ažuriranja nego u praznom hodu.
 
 :::
 

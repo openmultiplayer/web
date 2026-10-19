@@ -45,6 +45,12 @@ Player-textdraws are automatically destroyed when a player disconnects.
 
 :::
 
+:::tip
+
+It is recommended to use WHOLE numbers instead of decimal positions when creating player textdraws to ensure resolution friendly design.
+
+:::
+
 :::warning
 
 Keyboard key mapping codes (such as `~k~~VEHICLE_ENTER_EXIT~` Doesn't work beyond 255th character.

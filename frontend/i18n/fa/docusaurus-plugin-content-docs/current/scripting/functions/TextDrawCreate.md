@@ -49,8 +49,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- مختصات `x, y` مختصات بالا سمت چپ برای ناحیه text draw بر اساس "بوم" 640x480 است (بدون توجه به رزولوشن صفحه).
-- اگر قصد استفاده از [TextDrawAlignment](TextDrawAlignment) با چینش 3 (`TEXT_DRAW_ALIGN_RIGHT`) را دارید، مختصات `x, y` مختصات بالا سمت راست برای text draw است.
+- مختصات `x, y` مختصات بالا سمت چپ برای ناحیه text draw بر اساس "بوم" 640x480 است (بدون توجه به رزولوشن صفحه). اگر قصد استفاده از [TextDrawAlignment](TextDrawAlignment) با چینش 3 (`TEXT_DRAW_ALIGN_RIGHT`) را دارید، مختصات `x, y` مختصات بالا سمت راست برای text draw است.
 - این تابع فقط textdraw را ایجاد می‌کند، باید از [TextDrawShowForPlayer](TextDrawShowForPlayer) یا [TextDrawShowForAll](TextDrawShowForAll) برای نمایش آن استفاده کنید.
 
 :::

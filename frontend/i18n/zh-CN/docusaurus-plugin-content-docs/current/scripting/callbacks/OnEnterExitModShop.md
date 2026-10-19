@@ -37,9 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-已知问题：
-
-- 多名玩家同时进入同一改装店时会发生模型碰撞
+已知问题：多名玩家同时进入同一改装店时会发生模型碰撞
 
 :::
 

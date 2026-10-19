@@ -185,9 +185,7 @@ Het gebruik van een switch-case in plaats van if-blokken is een geschikte manier
 
 :::warning
 
-De dialog van een speler sluit niet automatisch wanneer de gamemode herstart.
-
-Als een speler reageert op een dialog nadat de server is herstart, zal de server de waarschuwing printen: "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID".
+De dialog van een speler sluit niet automatisch wanneer de gamemode herstart. Als een speler reageert op een dialog nadat de server is herstart, zal de server de waarschuwing printen: "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID".
 
 :::
 

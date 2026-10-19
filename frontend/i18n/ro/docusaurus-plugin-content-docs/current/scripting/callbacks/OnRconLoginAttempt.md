@@ -46,7 +46,8 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-Acest callback este apelat numai când autentificarea /rcon este folosită în joc. Acest callback este apelat numai atunci când jucătorul nu este încă conectat. Când jucătorul este conectat, este apelat OnRconCommand.
+- Acest callback este apelat numai când autentificarea /rcon este folosită în joc.
+- Acest callback este apelat numai atunci când jucătorul nu este încă conectat. Când jucătorul este conectat, este apelat OnRconCommand.
 
 :::
 

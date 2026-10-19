@@ -61,7 +61,8 @@ public OnGameModeExit()
 
 :::warning
 
-Ele criará um novo arquivo de banco de dados SQLite, se não houver nenhum arquivo de banco de dados SQLite com o mesmo nome de arquivo disponível. Feche sua conexão com o banco de dados SQLite com [db_close](db_close)!
+- Ele criará um novo arquivo de banco de dados SQLite, se não houver nenhum arquivo de banco de dados SQLite com o mesmo nome de arquivo disponível.
+- Feche sua conexão com o banco de dados SQLite com [db_close](db_close)!
 
 :::
 

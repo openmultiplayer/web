@@ -39,7 +39,8 @@ public OnGameModeInit()
 
 :::note
 
-Ang `useartwork` ay dapat munang paganahin sa mga setting ng server upang ito ay gumana Kapag ang virtualworld ay nakatakda, ang mga modelo ay mada-download kapag ang manlalaro ay pumasok sa partikular na mundo
+- Ang `useartwork` ay dapat munang paganahin sa mga setting ng server upang ito ay gumana
+- Kapag ang virtualworld ay nakatakda, ang mga modelo ay mada-download kapag ang manlalaro ay pumasok sa partikular na mundo
 
 :::
 

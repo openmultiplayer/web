@@ -33,7 +33,9 @@ Stanje prozora vozila pohranjeno je u navedenim varijablama.
 
 Vrijednosti vraćene u svakoj varijabli su kao:
 
--1: Stanje prozora nije postavljeno (općenito zatvoreno, osim ako nije izričito postavljeno na -1) 0: Otvoren 1: Zatvoren
+- -1: Stanje prozora nije postavljeno (općenito zatvoreno, osim ako nije izričito postavljeno na -1)
+- 0: Otvoren
+- 1: Zatvoren
 
 :::
 

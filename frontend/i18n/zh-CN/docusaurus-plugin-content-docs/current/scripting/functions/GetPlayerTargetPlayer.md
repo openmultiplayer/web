@@ -35,7 +35,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-不适用于游戏手柄/控制器，且存在有效距离限制。狙击步枪（Sniper Rifle）无法锁定目标，因此不会返回任何玩家。
+- 不适用于游戏手柄/控制器，且存在有效距离限制。
+- 狙击步枪（Sniper Rifle）无法锁定目标，因此不会返回任何玩家。
 
 :::
 

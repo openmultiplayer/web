@@ -45,6 +45,12 @@ Player-textdraws se automatski unište kada se igrač diskonektuje.
 
 :::
 
+:::tip
+
+Preporučuje se upotreba CIJELIH brojeva umjesto decimalnih mjesta prilikom kreiranja crteža teksta kako bi se osigurao dizajn prilagođen rezoluciji.
+
+:::
+
 :::warning
 
 Kodovi mapiranja tipkovnice (kao što je `~k~~VEHICLE_ENTER_EXIT~` Ne radi duže od 255. znaka).

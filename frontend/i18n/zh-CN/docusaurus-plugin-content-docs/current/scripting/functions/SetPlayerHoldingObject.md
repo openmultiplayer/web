@@ -39,7 +39,8 @@ public OnPlayerSpawn(playerid)
 
 :::note
 
-每个玩家只能附加一个物体。此函数与 CreateObject/CreatePlayerObject 物体池相互独立
+- 每个玩家只能附加一个物体。
+- 此函数与 CreateObject/CreatePlayerObject 物体池相互独立
 
 :::
 

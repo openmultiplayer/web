@@ -37,9 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Known Bug(s):
-
-- Players collide when they get into the same mod shop.
+Known Bug(s): Players collide when they get into the same mod shop.
 
 :::
 

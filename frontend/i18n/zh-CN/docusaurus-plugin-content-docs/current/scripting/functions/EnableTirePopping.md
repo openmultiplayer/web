@@ -38,8 +38,7 @@ public OnGameModeInit()
 
 :::note
 
-- 轮胎爆胎机制默认启用
-- 若需禁用此函数，需通过 [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate) 回调手动实现
+轮胎爆胎机制默认启用若需禁用此函数，需通过 [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate) 回调手动实现
 
 :::
 

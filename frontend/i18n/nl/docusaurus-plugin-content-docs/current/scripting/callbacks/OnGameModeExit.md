@@ -29,9 +29,8 @@ Deze functie kan ook gebruikt worden in een filterscript om te detecteren of de 
 
 :::warning
 
-Bij gebruik van OnGameModeExit in combinatie met het 'rcon gmx' console command, houd er rekening mee dat er een potentieel is voor client bugs.
-
-Een voorbeeld hiervan is overmatige [RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer) calls tijdens [OnGameModeInit](OnGameModeInit) wat kan resulteren in een client crash. Deze callback wordt NIET aangeroepen als de server crasht of het proces wordt beëindigd door andere middelen, zoals het Linux kill command of het drukken van de sluit-knop op de Windows console.
+- Bij gebruik van OnGameModeExit in combinatie met het 'rcon gmx' console command, houd er rekening mee dat er een potentieel is voor client bugs. Een voorbeeld hiervan is overmatige [RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer) calls tijdens [OnGameModeInit](OnGameModeInit) wat kan resulteren in een client crash.
+- Deze callback wordt NIET aangeroepen als de server crasht of het proces wordt beëindigd door andere middelen, zoals het Linux kill command.
 
 :::
 

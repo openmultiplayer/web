@@ -50,7 +50,8 @@ O hash retornado tem preenchimento zero (ou seja, possível prefixo 00ABCD123...
 
 :::tip
 
-O salt é anexado ao final da senha, o que significa que a senha 'foo' e o salt 'bar' formariam 'foobar'. O salt deve ser aleatório, único para cada jogador e pelo menos tão longo quanto a senha com hash. Deve ser armazenado junto com o hash real na conta do jogador.
+- O salt é anexado ao final da senha, o que significa que a senha 'foo' e o salt 'bar' formariam 'foobar'.
+- O salt deve ser aleatório, único para cada jogador e pelo menos tão longo quanto a senha com hash. Deve ser armazenado junto com o hash real na conta do jogador.
 
 :::
 

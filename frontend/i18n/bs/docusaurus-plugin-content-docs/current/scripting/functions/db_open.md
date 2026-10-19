@@ -67,7 +67,8 @@ public OnGameModeExit()
 
 :::warning
 
-Stvorit će novu datoteku baze podataka SQLite, ako ne postoji datoteka baze podataka SQLite s istim imenom datoteke. Zatvorite vezu SQLite baze podataka pomoću [db_close](db_close)!
+- Stvorit će novu datoteku baze podataka SQLite, ako ne postoji datoteka baze podataka SQLite s istim imenom datoteke.
+- Zatvorite vezu SQLite baze podataka pomoću [db_close](db_close)!
 
 :::
 

@@ -33,7 +33,9 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-Poruke smrti mogu se obrisati upotrebom važećeg ID-a igrača za 'playerid' koji nije povezan. Da biste prikazali smrtnu poruku samo za jednog igrača, koristite SendDeathMessageToPlayer. NPC-ove možete koristiti za stvaranje vlastitih razloga smrti.
+- Poruke smrti mogu se obrisati upotrebom važećeg ID-a igrača za 'playerid' koji nije povezan.
+- Da biste prikazali smrtnu poruku samo za jednog igrača, koristite SendDeathMessageToPlayer.
+- NPC-ove možete koristiti za stvaranje vlastitih razloga smrti.
 
 :::
 

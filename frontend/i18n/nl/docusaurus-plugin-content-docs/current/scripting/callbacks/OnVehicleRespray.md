@@ -44,9 +44,7 @@ Fix hier: http://pastebin.com/G81da7N1
 
 :::warning
 
-Bekende Bug(s):
-
-- Het bekijken van een component in een modshop kan deze callback aanroepen.
+Bekende Bug(s): Het bekijken van een component in een modshop kan deze callback aanroepen.
 
 :::
 

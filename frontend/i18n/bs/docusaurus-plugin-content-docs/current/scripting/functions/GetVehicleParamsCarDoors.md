@@ -33,7 +33,9 @@ Stanje vrata vozila je pohranjeno u navedenim varijablama.
 
 Vrijednosti vraćene u svakoj varijabli su kao:
 
--1: Stanje vrata nije postavljeno 1: Otvorena 0: Zatvorena
+- -1: Stanje vrata nije postavljeno
+- 1: Otvorena
+- 0: Zatvorena
 
 :::
 

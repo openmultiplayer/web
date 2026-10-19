@@ -30,11 +30,9 @@ O estado das portas do veículo é armazenado nas variáveis especificadas.
 
 Os valores retornados em cada variável são os seguintes:
 
-**-1**: Estado da porta não definido
-
-**1**: Aberto
-
-**0**: Fechado
+- **-1**: Estado da porta não definido
+- **1**: Aberto
+- **0**: Fechado
 
 :::
 

@@ -36,8 +36,7 @@ public OnGameModeInit()
 
 :::note
 
-- If [TextDrawSetOutline](TextDrawSetOutline) is used with size > 0, the outline color will match the color used in TextDrawBackgroundColor.
-- Changing the value of color seems to alter the color used in [TextDrawColor](TextDrawColor).
+If [TextDrawSetOutline](TextDrawSetOutline) is used with size > 0, the outline color will match the color used in TextDrawBackgroundColor. Changing the value of color seems to alter the color used in [TextDrawColor](TextDrawColor).
 
 :::
 

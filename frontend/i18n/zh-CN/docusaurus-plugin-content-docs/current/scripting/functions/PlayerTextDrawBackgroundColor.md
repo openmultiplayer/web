@@ -37,8 +37,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- 当使用[PlayerTextDrawSetOutline](PlayerTextDrawSetOutline)且尺寸参数>0 时，轮廓颜色将与 PlayerTextDrawBackgroundColor 设置的颜色一致
-- 修改颜色值会影响 PlayerTextDrawColor 函数设置的颜色效果
+当使用[PlayerTextDrawSetOutline](PlayerTextDrawSetOutline)且尺寸参数>0 时，轮廓颜色将与 PlayerTextDrawBackgroundColor 设置的颜色一致修改颜色值会影响 PlayerTextDrawColor 函数设置的颜色效果
 
 :::
 

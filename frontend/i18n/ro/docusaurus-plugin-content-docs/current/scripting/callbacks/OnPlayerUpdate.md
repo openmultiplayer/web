@@ -84,7 +84,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Acest callback este apelat, în medie, de 30 de ori pe secundă, per jucător; folosește-l doar atunci când știi la ce este destinat (sau mai important pentru ce NU este destinat). Frecvența cu care acest apel invers este apelat pentru fiecare jucător variază, în funcție de ceea ce face jucătorul. Conducerea sau fotografierea va declanșa mult mai multe actualizări decât la ralanti.
+- Acest callback este apelat, în medie, de 30 de ori pe secundă, per jucător; folosește-l doar atunci când știi la ce este destinat (sau mai important pentru ce NU este destinat).
+- Frecvența cu care acest apel invers este apelat pentru fiecare jucător variază, în funcție de ceea ce face jucătorul. Conducerea sau fotografierea va declanșa mult mai multe actualizări decât la ralanti.
 
 :::
 

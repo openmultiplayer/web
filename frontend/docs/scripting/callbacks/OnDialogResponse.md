@@ -185,9 +185,7 @@ Using a switch-case statement instead of if blocks is an appropriate method for 
 
 :::warning
 
-A player's dialog doesn't automatically close when the gamemode restarts.
-
-If a player responds to a dialog after the server was restarted, the server will print the warning: "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID".
+A player's dialog doesn't automatically close when the gamemode restarts. If a player responds to a dialog after the server was restarted, the server will print the warning: "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID".
 
 :::
 

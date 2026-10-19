@@ -35,7 +35,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Ne radi za joypad/kontrolere i nakon određene udaljenosti. Ne radi za snajpersku pušku, jer se ništa ne zaključava i kao takva ne može i neće vratiti igrača.
+- Ne radi za joypad/kontrolere i nakon određene udaljenosti.
+- Ne radi za snajpersku pušku, jer se ništa ne zaključava i kao takva ne može i neće vratiti igrača.
 
 :::
 

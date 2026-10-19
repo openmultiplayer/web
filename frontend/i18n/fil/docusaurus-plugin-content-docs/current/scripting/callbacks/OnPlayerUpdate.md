@@ -84,6 +84,7 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-- Ang callback na ito ay tinatawag, sa karaniwan, 30 beses bawat segundo, bawat manlalaro; gamitin lamang ito kapag alam mo kung para saan ito (o mas mahalaga kung ano ang HINDI para sa). Ang dalas ng pagtawag sa callback na ito para sa bawat manlalaro ay nag-iiba, depende sa kung ano ang ginagawa ng manlalaro. Ang pagmamaneho o pagbaril ay magti-trigger ng mas maraming update kaysa sa idling.
+- Ang callback na ito ay tinatawag, sa karaniwan, 30 beses bawat segundo, bawat manlalaro; gamitin lamang ito kapag alam mo kung para saan ito (o mas mahalaga kung ano ang HINDI para sa).
+- Ang dalas ng pagtawag sa callback na ito para sa bawat manlalaro ay nag-iiba, depende sa kung ano ang ginagawa ng manlalaro. Ang pagmamaneho o pagbaril ay magti-trigger ng mas maraming update kaysa sa idling.
 
 :::

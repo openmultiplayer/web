@@ -82,7 +82,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Este callback se llama, en promedio, 30 veces por segundo, por cada jugador; sólo usalo cuando sepas para que sirve (o más importante, para lo que no está pensado). La frecuencia con la que se llama este callback varía por cada jugador, dependiendo qué está haciendo el jugador. Conduciendo o disparando desencadenará muchas mas actualizaciones que estando quieto.
+- Este callback se llama, en promedio, 30 veces por segundo, por cada jugador; sólo usalo cuando sepas para que sirve (o más importante, para lo que no está pensado).
+- La frecuencia con la que se llama este callback varía por cada jugador, dependiendo qué está haciendo el jugador. Conduciendo o disparando desencadenará muchas mas actualizaciones que estando quieto.
 
 :::
 

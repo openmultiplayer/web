@@ -44,8 +44,10 @@ public OnRconCommand(cmd[])
 
 :::note
 
-- De /rcon prefix zit niet in de `cmd` parameter wanneer een speler een command typt. Als je hier `print` gebruikt, gaat het bericht naar zowel de speler die het command intypte als de serverlog.
-- Deze callback wordt niet aangeroepen als de speler niet is ingelogd als RCON admin. Wanneer een speler /rcon login gebruikt om in te loggen, wordt deze callback niet aangeroepen; in plaats daarvan wordt OnRconLoginAttempt aangeroepen. Zodra je bent ingelogd als RCON admin, triggert elk volgend command deze callback.
+- De /rcon prefix zit niet in de `cmd` parameter wanneer een speler een command typt.
+- Als je hier `print` gebruikt, gaat het bericht naar zowel de speler die het command intypte als de serverlog.
+- Deze callback wordt niet aangeroepen als de speler niet is ingelogd als RCON admin.
+- Wanneer een speler /rcon login gebruikt om in te loggen, wordt deze callback niet aangeroepen; in plaats daarvan wordt OnRconLoginAttempt aangeroepen. Zodra je bent ingelogd als RCON admin, triggert elk volgend command deze callback.
 
 :::
 

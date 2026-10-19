@@ -49,8 +49,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- A coordenada `x, y` é a coordenada superior esquerda para a área de desenho de texto com base em uma "tela" de 640x480 (independentemente da resolução da tela).
-- Se você planeja usar [TextDrawAlignment](TextDrawAlignment) com alinhamento 3 (`TEXT_DRAW_ALIGN_RIGHT`), a coordenada `x, y` é a coordenada superior direita para o desenho do texto.
+- A coordenada `x, y` é a coordenada superior esquerda para a área de desenho de texto com base em uma "tela" de 640x480 (independentemente da resolução da tela). Se você planeja usar [TextDrawAlignment](TextDrawAlignment) com alinhamento 3 (`TEXT_DRAW_ALIGN_RIGHT`), a coordenada `x, y` é a coordenada superior direita para o desenho do texto.
 - Esta função apenas CREATES o textdraw, você deve usar [TextDrawShowForPlayer](TextDrawShowForPlayer) ou [TextDrawShowForAll](TextDrawShowForAll) para mostrá-lo.
 
 :::

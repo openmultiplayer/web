@@ -41,7 +41,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-在调用[SetSpawnInfo](SetSpawnInfo)后但玩家尚未重生时，返回的是新设置的皮肤 ID。若通过[SpawnPlayer](SpawnPlayer)重生玩家，会返回旧的皮肤 ID
+- 在调用[SetSpawnInfo](SetSpawnInfo)后但玩家尚未重生时，返回的是新设置的皮肤 ID。
+- 若通过[SpawnPlayer](SpawnPlayer)重生玩家，会返回旧的皮肤 ID
 
 :::
 

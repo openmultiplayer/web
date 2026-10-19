@@ -37,9 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Lỗi Đã Biết:
-
-- Người chơi va chạm khi họ vào cùng một cửa hàng độ xe.
+Lỗi Đã Biết: Người chơi va chạm khi họ vào cùng một cửa hàng độ xe.
 
 :::
 

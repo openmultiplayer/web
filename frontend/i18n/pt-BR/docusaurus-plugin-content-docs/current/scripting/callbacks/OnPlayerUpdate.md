@@ -83,6 +83,7 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Essa callback é executada, aproximadamente, 30 vezes por segundo, por jogador; Use a mesma somente caso saiba o que está fazendo (ou talvez seja mais importante saber para que ela NÃO DEVE SER USADA). A frequência que essa callback é executada varia dependendo da situação e do que o player está fazendo. Dirigir ou participar de um tiroteio vai fazer com que os updates aumentem drasticamente, diferente se o jogador estiver parado...
+- Essa callback é executada, aproximadamente, 30 vezes por segundo, por jogador; Use a mesma somente caso saiba o que está fazendo (ou talvez seja mais importante saber para que ela NÃO DEVE SER USADA).
+- A frequência que essa callback é executada varia dependendo da situação e do que o player está fazendo. Dirigir ou participar de um tiroteio vai fazer com que os updates aumentem drasticamente, diferente se o jogador estiver parado...
 
 :::
