@@ -36,13 +36,13 @@ Sistem baru diperkenalkan di SA-MP 0.3a R5 server di update dengan beberapa keun
 
 Berikut adalah Functions untuk mengatur dan menerima player variable:
 
-- [SetPVarInt](../scripting/functions/SetPVarInt) Mengatur sebuah integer dari sebuah player variable.
-- [GetPVarInt](../scripting/functions/GetPVarInt) Mengambil nilai integer sebelumnya dari sebuah player variable.
-- [SetPVarString](../scripting/functions/SetPVarString) Mengatur sebuah string dari sebuah player variable.
-- [GetPVarString](../scripting/functions/GetPVarString) Mengambil nilai string sebelumnya dari sebuah player variable.
-- [SetPVarFloat](../scripting/functions/SetPVarFloat) Mengatur sebuah float dari sebuah player variable.
-- [GetPVarFloat](../scripting/functions/GetPVarFloat) Mengambil nilai float sebelumnya dari sebuah player variable.
-- [DeletePVar](../scripting/functions/DeletePVar) Menghapus sebuah player variable.
+- [SetPVarInt](../scripting/functions/SetPVarInt): Mengatur sebuah integer dari sebuah player variable.
+- [GetPVarInt](../scripting/functions/GetPVarInt): Mengambil nilai integer sebelumnya dari sebuah player variable.
+- [SetPVarString](../scripting/functions/SetPVarString): Mengatur sebuah string dari sebuah player variable.
+- [GetPVarString](../scripting/functions/GetPVarString): Mengambil nilai string sebelumnya dari sebuah player variable.
+- [SetPVarFloat](../scripting/functions/SetPVarFloat): Mengatur sebuah float dari sebuah player variable.
+- [GetPVarFloat](../scripting/functions/GetPVarFloat): Mengambil nilai float sebelumnya dari sebuah player variable.
+- [DeletePVar](../scripting/functions/DeletePVar): Menghapus sebuah player variable.
 
 ```c
 #define PLAYER_VARTYPE_NONE   (0)
