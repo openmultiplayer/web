@@ -1,6 +1,6 @@
 ---
-título: OnPlayerSpawn
-descripción: Este callback se llama cuando un jugador spawnea.
+title: OnPlayerSpawn
+description: Este callback se llama cuando un jugador spawnea.
 tags: ["player"]
 ---
 

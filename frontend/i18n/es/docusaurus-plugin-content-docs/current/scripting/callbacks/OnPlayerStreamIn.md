@@ -1,6 +1,6 @@
 ---
-título: OnPlayerStreamIn
-descripción: Este callback se llama cuando un jugador es cargado (se hace visible) por el cliente de otros jugadores.
+title: OnPlayerStreamIn
+description: Este callback se llama cuando un jugador es cargado (se hace visible) por el cliente de otros jugadores.
 tags: ["player"]
 ---
 

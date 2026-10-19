@@ -1,6 +1,6 @@
 ---
-título: OnPlayerEditAttachedObject
-descripción: Este callback se llama cuando un jugador sale del modo edición de objetos adjuntos.
+title: OnPlayerEditAttachedObject
+description: Este callback se llama cuando un jugador sale del modo edición de objetos adjuntos.
 tags: ["player"]
 ---
 

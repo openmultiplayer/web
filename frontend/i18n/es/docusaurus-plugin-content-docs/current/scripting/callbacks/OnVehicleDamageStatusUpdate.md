@@ -1,6 +1,6 @@
 ---
-título: OnVehicleDamageStatusUpdate
-descripción: Este callback se llama cuando un elemento de vehículo como las puertas, llantas, paneles, o luces cambiar su estado de daño.
+title: OnVehicleDamageStatusUpdate
+description: Este callback se llama cuando un elemento de vehículo como las puertas, llantas, paneles, o luces cambiar su estado de daño.
 tags: ["vehicle"]
 ---
 

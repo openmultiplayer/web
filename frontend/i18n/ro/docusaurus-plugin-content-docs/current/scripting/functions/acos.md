@@ -1,7 +1,7 @@
 ---
 title: acos
 sidebar_label: acos
-description: .
+description: Obțineți valoarea inversată a unui cosinus arc în radiani.
 tags: []
 ---
 

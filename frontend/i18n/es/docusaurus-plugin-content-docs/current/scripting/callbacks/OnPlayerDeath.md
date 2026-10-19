@@ -1,6 +1,6 @@
 ---
-título: OnPlayerDeath
-descripción: Este callback se llama cuando un jugador muere, ya sea suicidándose o siendo asesinado por otro jugador.
+title: OnPlayerDeath
+description: Este callback se llama cuando un jugador muere, ya sea suicidándose o siendo asesinado por otro jugador.
 tags: ["player"]
 ---
 

@@ -1,6 +1,6 @@
 ---
-título: OnPlayerClickPlayer
-descripción: Se llama cuando un jugador hace doble click a un jugador en el scoreboard (menú TAB).
+title: OnPlayerClickPlayer
+description: Se llama cuando un jugador hace doble click a un jugador en el scoreboard (menú TAB).
 tags: ["player"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: TextDrawBackgroundColor
 sidebar_label: TextDrawBackgroundColor
-description: 调整文本绘图区域的背景颜色（轮廓/阴影部分，非盒子背景。盒子颜色请使用[TextDrawBoxColor](TextDrawBoxColor)）
+description: 调整文本绘图区域的背景颜色（轮廓/阴影部分，非盒子背景）
 tags: ["文本绘图"]
 ---
 

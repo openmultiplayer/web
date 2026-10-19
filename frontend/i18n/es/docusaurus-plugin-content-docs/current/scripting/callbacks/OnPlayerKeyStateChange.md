@@ -1,6 +1,6 @@
 ---
-título: OnPlayerKeyStateChange
-descripción: Este callback se llama cuando el estado de alguna tecla soportada cambia (presionada/soltada).
+title: OnPlayerKeyStateChange
+description: Este callback se llama cuando el estado de alguna tecla soportada cambia (presionada/soltada).
 tags: ["player"]
 ---
 

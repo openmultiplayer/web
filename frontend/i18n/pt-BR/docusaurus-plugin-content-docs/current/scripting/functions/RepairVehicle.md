@@ -1,7 +1,7 @@
 ---
 title: RepairVehicle
 sidebar_label: RepairVehicle
-description: "Repara totalmente um veículo, incluindo danos visuais (colisões, amassados, arranhões, pneus estourados, etc."
+description: "Repara totalmente um veículo, incluindo danos visuais (colisões, amassados, arranhões, pneus estourados, etc.)."
 tags: ["vehicle"]
 ---
 

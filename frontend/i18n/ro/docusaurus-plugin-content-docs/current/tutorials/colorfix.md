@@ -1,6 +1,6 @@
 ---
-titlu: "Culoare Fixata"
-descriere: Un simplu script pentru a adauga mai multe culori la jucatori.
+title: "Culoare Fixata"
+description: Un simplu script pentru a adauga mai multe culori la jucatori.
 ---
 
 Acest tutorial este facut sa fie folosit cu [GetPlayerColor](../scripting/functions/GetPlayerColor), Daca nu il folosesti [SetPlayerColor](../scripting/functions/SetPlayerColor) in scriptul tau cand jucatorii se conecteaza.

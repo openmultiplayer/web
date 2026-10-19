@@ -1,7 +1,7 @@
 ---
 title: Origem do Deslocamento de Arquivo
 sidebar_label: Origem do Deslocamento de Arquivo
-description: Definições de origem de deslocamento de arquivo. (fseek)
+description: Definições de origem de deslocamento de arquivo (fseek).
 ---
 
 :::note

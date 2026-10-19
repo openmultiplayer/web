@@ -1,6 +1,6 @@
 ---
-título: OnPlayerTakeDamage
-descripción: Este callback se llama cuando un jugador sufre daño.
+title: OnPlayerTakeDamage
+description: Este callback se llama cuando un jugador sufre daño.
 tags: ["player"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Sursa Clickului
 sidebar_label: Sursa Clickului
-
 description: Sursa Clickului
 ---
 

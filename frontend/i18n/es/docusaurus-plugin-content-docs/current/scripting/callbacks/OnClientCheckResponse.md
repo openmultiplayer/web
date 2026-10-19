@@ -1,6 +1,6 @@
 ---
-título: OnClientCheckResponse
-descripción: Este callback se llama cuando una función SendClientCheck es completada.
+title: OnClientCheckResponse
+description: Este callback se llama cuando una función SendClientCheck es completada.
 tags: []
 ---
 

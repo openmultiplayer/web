@@ -1,6 +1,6 @@
 ---
-título: OnPlayerClickTextDraw
-descripción: Este callback se llama cuando un jugador clickea en un textdraw o cancela el modo de selección con la tecla ESC.
+title: OnPlayerClickTextDraw
+description: Este callback se llama cuando un jugador clickea en un textdraw o cancela el modo de selección con la tecla ESC.
 tags: ["player", "textdraw"]
 ---
 

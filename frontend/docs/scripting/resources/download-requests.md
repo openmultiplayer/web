@@ -1,7 +1,7 @@
 ---
 title: Download Request Types
 sidebar_label: Download Request Types
-description: Download request types. (used by OnPlayerRequestDownload)
+description: Download request types (used by OnPlayerRequestDownload).
 ---
 
 :::note

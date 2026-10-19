@@ -1,6 +1,6 @@
 ---
-título: OnPlayerPickUpPickup
-descripción: Se llama cuando un jugador recoge un pickup creado con CreatePickup.
+title: OnPlayerPickUpPickup
+description: Se llama cuando un jugador recoge un pickup creado con CreatePickup.
 tags: ["player"]
 ---
 

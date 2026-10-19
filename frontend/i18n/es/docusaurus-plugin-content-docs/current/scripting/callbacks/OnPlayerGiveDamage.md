@@ -1,6 +1,6 @@
 ---
-título: OnPlayerGiveDamage
-descripción: Este callback se llama cuando un jugador le hace daño a otro jugador.
+title: OnPlayerGiveDamage
+description: Este callback se llama cuando un jugador le hace daño a otro jugador.
 tags: ["player"]
 ---
 

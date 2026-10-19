@@ -1,7 +1,7 @@
 ---
 title: TextDrawBackgroundColor
 sidebar_label: TextDrawBackgroundColor
-description: رنگ پس‌زمینه textdraw رو تنظیم کن (outline/shadow - نه رنگ باکس.
+description: رنگ پس‌زمینه textdraw رو تنظیم کن (outline/shadow - نه رنگ باکس).
 tags: ["textdraw"]
 ---
 

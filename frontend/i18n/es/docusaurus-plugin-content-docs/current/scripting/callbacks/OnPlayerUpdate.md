@@ -1,6 +1,6 @@
 ---
-título: OnPlayerUpdate
-descripción: Este callback se llama cada vez que un cliente/jugador actualiza su estado con el servidor.
+title: OnPlayerUpdate
+description: Este callback se llama cada vez que un cliente/jugador actualiza su estado con el servidor.
 tags: ["player"]
 ---
 

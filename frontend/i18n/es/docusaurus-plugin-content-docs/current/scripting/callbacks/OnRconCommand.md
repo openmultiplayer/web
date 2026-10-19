@@ -1,6 +1,6 @@
 ---
-título: OnRconCommand
-descripción: Este callback se llama cuando un comando es enviado mediante la consola del servidor, RCON remoto, o vía el juego usando "/rcon command".
+title: OnRconCommand
+description: Este callback se llama cuando un comando es enviado mediante la consola del servidor, RCON remoto, o vía el juego usando "/rcon command".
 tags: []
 ---
 

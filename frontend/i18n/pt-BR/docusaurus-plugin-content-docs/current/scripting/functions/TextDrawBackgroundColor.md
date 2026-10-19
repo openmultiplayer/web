@@ -1,7 +1,7 @@
 ---
 title: TextDrawBackgroundColor
 sidebar_label: TextDrawBackgroundColor
-description: "Ajusta a cor de fundo da área de desenho de texto (o contorno/sombra, não a caixa."
+description: "Ajusta a cor de fundo da área de desenho de texto (o contorno/sombra, não a caixa)."
 tags: ["textdraw"]
 ---
 

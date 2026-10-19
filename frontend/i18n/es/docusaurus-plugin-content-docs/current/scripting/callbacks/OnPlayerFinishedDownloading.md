@@ -1,6 +1,6 @@
 ---
-título: OnPlayerFinishedDownloading
-descripción: Este callback se llama cuando un jugador finaliza de descargar modelos personalizados.
+title: OnPlayerFinishedDownloading
+description: Este callback se llama cuando un jugador finaliza de descargar modelos personalizados.
 tags: ["player"]
 ---
 

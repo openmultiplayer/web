@@ -1,6 +1,6 @@
 ---
-título: OnPlayerLeaveCheckpoint
-descripción: Este callback se llama cuando un jugador sale del checkpoint establecido a él por SetPlayerCheckpoint.
+title: OnPlayerLeaveCheckpoint
+description: Este callback se llama cuando un jugador sale del checkpoint establecido a él por SetPlayerCheckpoint.
 tags: ["player", "checkpoint"]
 ---
 

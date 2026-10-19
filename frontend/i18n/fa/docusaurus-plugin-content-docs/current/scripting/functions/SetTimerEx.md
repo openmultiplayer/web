@@ -1,7 +1,7 @@
 ---
 title: SetTimerEx
 sidebar_label: SetTimerEx
-description: تنظیم یک تایمر برای فراخوانی تابع پس از یک بازه زمانی مشخص. با قابلیت ارسال مقادیر
+description: تنظیم یک تایمر برای فراخوانی تابع پس از یک بازه زمانی مشخص.
 tags: ["timer"]
 ---
 

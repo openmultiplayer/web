@@ -1,6 +1,6 @@
 ---
-título: OnPlayerRequestDownload
-descripción: Este callback se llama cuando un jugador solicita por descargas de modelos personalizados.
+title: OnPlayerRequestDownload
+description: Este callback se llama cuando un jugador solicita por descargas de modelos personalizados.
 tags: ["player"]
 ---
 

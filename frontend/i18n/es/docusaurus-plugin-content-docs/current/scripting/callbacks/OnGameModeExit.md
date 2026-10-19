@@ -1,6 +1,6 @@
 ---
-título: OnGameModeExit
-descripción: Este callback es llamado cuando un gamemode termina, ya sea mediante 'gmx', cuando el servidor se apaga, o cuando se usa GameModeExit.
+title: OnGameModeExit
+description: Este callback es llamado cuando un gamemode termina, ya sea mediante 'gmx', cuando el servidor se apaga, o cuando se usa GameModeExit.
 tags: []
 ---
 

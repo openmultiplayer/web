@@ -1,6 +1,6 @@
 ---
-título: OnPlayerClickMap
-descripción: OnPlayerClickMap se llama cuando un jugador pone un objetivo/marca en el mapa del menú de pausa (usando click derecho).
+title: OnPlayerClickMap
+description: OnPlayerClickMap se llama cuando un jugador pone un objetivo/marca en el mapa del menú de pausa (usando click derecho).
 tags: ["jugador"]
 ---
 

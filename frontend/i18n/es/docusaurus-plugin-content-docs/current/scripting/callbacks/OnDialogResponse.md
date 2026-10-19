@@ -1,6 +1,6 @@
 ---
-título: OnDialogResponse
-descripción: Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando ShowPlayerDialog ya sea clickeando un botón, presionando ENTER/ESC o haciendo doble click en un elemento de lista (si el diálogo utiliza el estilo DIALOG_STYLE_LIST).
+title: OnDialogResponse
+description: Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando ShowPlayerDialog.
 tags: []
 ---
 

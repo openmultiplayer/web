@@ -1,6 +1,6 @@
 ---
-titlu: "Controlarea unui server"
-descriere: Comenzi utile pentru controlarea unui server.
+title: "Controlarea unui server"
+description: Comenzi utile pentru controlarea unui server.
 ---
 
 ## Schimbarea gamemode-ului

@@ -1,6 +1,6 @@
 ---
-Naslov: "Client Commands"
-Deskripcija: Lista svih client komandi.
+title: "Client Commands"
+description: Lista svih client komandi.
 ---
 
 | Command        | Deskripcija                                                                                                                                                                                                                                                                                                                          |

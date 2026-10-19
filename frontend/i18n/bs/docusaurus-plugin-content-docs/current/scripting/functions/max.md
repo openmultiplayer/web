@@ -1,7 +1,7 @@
 ---
 title: max
 sidebar_label: max
-description: .
+description: Funkcija korištena za usporedbu vrijednosti.
 tags: []
 ---
 

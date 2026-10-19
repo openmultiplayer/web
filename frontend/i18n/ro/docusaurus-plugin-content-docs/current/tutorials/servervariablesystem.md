@@ -1,7 +1,6 @@
 ---
 title: System de variabile pe server
 sidebar_label: System de variabile pe server
-
 description: Sistemul de variabile de server (scurtat, SVar) este un nou mod de a crea variabile de server într-o metodă eficientă creată dinamic la nivel global.
 ---
 

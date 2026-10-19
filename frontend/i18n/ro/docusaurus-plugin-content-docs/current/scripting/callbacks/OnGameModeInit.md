@@ -1,6 +1,6 @@
 ---
-titlu: OnGameModeInit
-descriere: Acest callback este apelat atunci când gamemode-ul a pornit.
+title: OnGameModeInit
+description: Acest callback este apelat atunci când gamemode-ul a pornit.
 tags: []
 ---
 

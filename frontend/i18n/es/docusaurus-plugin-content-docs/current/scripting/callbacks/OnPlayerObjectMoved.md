@@ -1,6 +1,6 @@
 ---
-título: OnPlayerObjectMoved
-descripción: Este callback se llama cuando un objeto de jugador es movido después de MovePlayerObject (cuando este termina de moverse).
+title: OnPlayerObjectMoved
+description: Este callback se llama cuando un objeto de jugador es movido después de MovePlayerObject (cuando este termina de moverse).
 tags: ["player"]
 ---
 

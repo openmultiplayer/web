@@ -1,6 +1,6 @@
 ---
-título: OnVehicleStreamOut
-descripción: Este callback se llama cuando un vehículo es dejado de cargar (deja de ser visible) por el cliente de un jugador.
+title: OnVehicleStreamOut
+description: Este callback se llama cuando un vehículo es dejado de cargar (deja de ser visible) por el cliente de un jugador.
 tags: ["vehicle"]
 ---
 

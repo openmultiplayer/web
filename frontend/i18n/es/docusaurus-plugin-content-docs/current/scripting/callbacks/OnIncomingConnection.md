@@ -1,6 +1,6 @@
 ---
-título: OnIncomingConnection
-descripción: Este callback se llama cuando una dirección IP intenta establecer una conexión con el servidor.
+title: OnIncomingConnection
+description: Este callback se llama cuando una dirección IP intenta establecer una conexión con el servidor.
 tags: []
 ---
 

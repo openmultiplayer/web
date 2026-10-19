@@ -1,6 +1,6 @@
 ---
-título: OnPlayerExitVehicle
-descripción: Este callback se llama cuando un jugador comienza a salir de un vehículo.
+title: OnPlayerExitVehicle
+description: Este callback se llama cuando un jugador comienza a salir de un vehículo.
 tags: ["player", "vehicle"]
 ---
 

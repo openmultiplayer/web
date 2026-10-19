@@ -1,6 +1,6 @@
 ---
-título: OnPlayerConnect
-descripción: Este callback se llama cuando un jugador se conecta al servidor.
+title: OnPlayerConnect
+description: Este callback se llama cuando un jugador se conecta al servidor.
 tags: ["player"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: sendpacket
 sidebar_label: sendpacket
-description: Sends a packet. (deprecated function)
+description: Sends a packet (deprecated function).
 tags: ["datagram"]
 ---
 

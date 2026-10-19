@@ -1,6 +1,6 @@
 ---
-título: OnPlayerClickPlayerTextDraw
-descripción: Este callback se llama cuando un jugador clickea en un player-textdraw.
+title: OnPlayerClickPlayerTextDraw
+description: Este callback se llama cuando un jugador clickea en un player-textdraw.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Kick
 sidebar_label: Kick
-description: بازیکن رو از سرور kick می‌کنه. باید بازی رو ببنده و دوباره وصل بشه اگه می‌خواد به بازی ادامه بده.
+description: بازیکن رو از سرور kick می‌کنه.
 tags: ["player", "administration"]
 ---
 

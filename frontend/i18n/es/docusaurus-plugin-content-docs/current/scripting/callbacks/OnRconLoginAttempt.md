@@ -1,6 +1,6 @@
 ---
-título: OnRconLoginAttempt
-descripción: Este callback se llama cuando alguien intenta identificarse como RCON adentro del juego, sin importar si tiene éxito o no.
+title: OnRconLoginAttempt
+description: Este callback se llama cuando alguien intenta identificarse como RCON adentro del juego, sin importar si tiene éxito o no.
 tags: []
 ---
 

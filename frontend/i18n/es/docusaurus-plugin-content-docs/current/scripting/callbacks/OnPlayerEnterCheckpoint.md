@@ -1,6 +1,6 @@
 ---
-título: OnPlayerEnterCheckpoint
-descripción: Este callback se llama cuando un jugador entra al checkpoint establecido para ese jugador.
+title: OnPlayerEnterCheckpoint
+description: Este callback se llama cuando un jugador entra al checkpoint establecido para ese jugador.
 tags: ["player", "checkpoint"]
 ---
 

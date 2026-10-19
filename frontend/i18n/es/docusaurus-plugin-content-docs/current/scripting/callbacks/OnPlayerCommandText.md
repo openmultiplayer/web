@@ -1,6 +1,6 @@
 ---
-título: OnPlayerCommandText
-descripción: Este callback se llama cuando un jugador ingresa un comando dentro de la ventana de chat del cliente.
+title: OnPlayerCommandText
+description: Este callback se llama cuando un jugador ingresa un comando dentro de la ventana de chat del cliente.
 tags: ["player"]
 ---
 

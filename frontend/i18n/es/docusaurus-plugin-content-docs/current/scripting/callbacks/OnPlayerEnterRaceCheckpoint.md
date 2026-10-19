@@ -1,6 +1,6 @@
 ---
-título: OnPlayerEnterRaceCheckpoint
-descripción: Este callback se llama cuando un jugador entra en un checkpoint de carrera.
+title: OnPlayerEnterRaceCheckpoint
+description: Este callback se llama cuando un jugador entra en un checkpoint de carrera.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: HasObjectCameraCollision
 sidebar_label: HasObjectCameraCollision
-description: "Verifica se um objeto tem colisão de câmera habilitada. (SetObjectNoCameraCollision)"
+description: "Verifica se um objeto tem colisão de câmera habilitada (SetObjectNoCameraCollision)."
 tags: ["object"]
 ---
 

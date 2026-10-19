@@ -1,7 +1,7 @@
 ---
 title: GetObjectType
 sidebar_label: GetObjectType
-description: Get the type of an object. (global or player)
+description: Get the type of an object (global or player).
 tags: ["object"]
 ---
 

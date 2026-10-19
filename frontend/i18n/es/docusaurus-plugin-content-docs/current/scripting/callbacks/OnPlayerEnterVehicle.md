@@ -1,6 +1,6 @@
 ---
-título: OnPlayerEnterVehicle
-descripción: Este callback se llama cuando un jugador comienza a entrar a un vehículo, o sea que el jugador aún no estará en el vehículo cuando este callback se llame.
+title: OnPlayerEnterVehicle
+description: Este callback se llama cuando un jugador comienza a entrar a un vehículo, o sea que el jugador aún no estará en el vehículo cuando este callback se llame.
 tags: ["player", "vehicle"]
 ---
 
