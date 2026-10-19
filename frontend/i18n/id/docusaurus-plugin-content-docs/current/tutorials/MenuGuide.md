@@ -58,10 +58,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 Penjelasan mengenai [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | menuid dari menu yang dimana item akan ditampilkan |
-| ------ | -------------------------------------------------- |
-| column | Kolom tempat item akan ditampilkan                 |
-| text   | Teks dari item                                     |
+| Parameter | Menentukan                                         |
+| --------- | -------------------------------------------------- |
+| menuid    | menuid dari menu yang dimana item akan ditampilkan |
+| column    | Kolom tempat item akan ditampilkan                 |
+| text      | Teks dari item                                     |
 
 ## Membuat efek pada item
 

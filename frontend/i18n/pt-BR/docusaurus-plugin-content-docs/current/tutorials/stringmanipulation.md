@@ -71,20 +71,20 @@ Teoricamente, você pode criar matrizes ridiculamente grandes, mas SA-MP coloca 
 
 SA-MP limita os caracteres que podem ser armazenados em uma única string e evita que os criadores de scripts exagerem no trabalho com texto. Felizmente, não é tão ruim quanto pode parecer, a lista abaixo detalha alguns desses limites;
 
-|                     |                                                                                                                        |      |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---- |
-| **Text input** | O texto que você insere no chat.                                                                                        | 128 |
-| **Text output** | Envie essa saída na tela do cliente.                                                                               | 144 |
-| **Name** | Apelido/nome de usuário do jogador.                                                                                            | 24 |
-| **Textdraw string** | Bastante autoexplicativo.                                                                                               | 1024 |
-| **Dialog info** | O texto exibido em todas as caixas de diálogo do tipo `DIALOG_STYLE_MSGBOX`, `DIALOG_STYLE_INPUT` e `DIALOG_STYLE_PASSWORD`. | 4096 |
-| **Dialog caption** | A legenda/título na parte superior da caixa de diálogo.                                                                                | 64 |
-| **Dialog input** | A caixa de entrada em `DIALOG_STYLE_INPUT` e `DIALOG_STYLE_PASSWORD`.                                                     | 128 |
-| **Dialog column** | Os caracteres em cada coluna de `DIALOG_STYLE_TABLIST_HEADER` e `DIALOG_STYLE_TABLIST`.                             | 128 |
-| **Dialog row** | Os caracteres em cada coluna de `DIALOG_STYLE_TABLIST_HEADER`, `DIALOG_STYLE_TABLIST` e `DIALOG_STYLE_LIST`.        | 256 |
-| **Chat bubble** | O balão de bate-papo exibido acima da etiqueta com o nome do jogador.                                                             | 144 |
-| **Menu title** | O cabeçalho do menu nativo GTA San Andreas (_usado principalmente para lojas_).                                                      | 31 |
-| **Menu item** | O item/linha do menu nativo GTA San Andreas (_usado principalmente para lojas_).                                                    | 31 |
+| Tipo                | Descrição                                                                                                                    | Limite |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------ |
+| **Text input**      | O texto que você insere no chat.                                                                                             | 128    |
+| **Text output**     | Envie essa saída na tela do cliente.                                                                                         | 144    |
+| **Name**            | Apelido/nome de usuário do jogador.                                                                                          | 24     |
+| **Textdraw string** | Bastante autoexplicativo.                                                                                                    | 1024   |
+| **Dialog info**     | O texto exibido em todas as caixas de diálogo do tipo `DIALOG_STYLE_MSGBOX`, `DIALOG_STYLE_INPUT` e `DIALOG_STYLE_PASSWORD`. | 4096   |
+| **Dialog caption**  | A legenda/título na parte superior da caixa de diálogo.                                                                      | 64     |
+| **Dialog input**    | A caixa de entrada em `DIALOG_STYLE_INPUT` e `DIALOG_STYLE_PASSWORD`.                                                        | 128    |
+| **Dialog column**   | Os caracteres em cada coluna de `DIALOG_STYLE_TABLIST_HEADER` e `DIALOG_STYLE_TABLIST`.                                      | 128    |
+| **Dialog row**      | Os caracteres em cada coluna de `DIALOG_STYLE_TABLIST_HEADER`, `DIALOG_STYLE_TABLIST` e `DIALOG_STYLE_LIST`.                 | 256    |
+| **Chat bubble**     | O balão de bate-papo exibido acima da etiqueta com o nome do jogador.                                                        | 144    |
+| **Menu title**      | O cabeçalho do menu nativo GTA San Andreas (_usado principalmente para lojas_).                                              | 31     |
+| **Menu item**       | O item/linha do menu nativo GTA San Andreas (_usado principalmente para lojas_).                                             | 31     |
 
 Se de alguma forma esses limites forem excedidos, poucos inconvenientes podem ocorrer, pode até travar/congelar o servidor em alguns casos (_por exemplo, strings longas de textdraw_), em alguns outros casos, o texto seria apenas truncado como o título do menu (_se atingir 32 caracteres, ele truncará de volta para 30_) e itens.
 
@@ -230,10 +230,9 @@ message_9[0] = EOS;
 ```
 Como eu disse anteriormente no tutorial, você pode ignorar a atribuição do caractere nulo, mas ele está sempre presente nas células vazias, quando você declara uma nova string, todas as suas células são automaticamente ocupadas pelo terminador nulo, então, por exemplo, se eu prosseguir e declarar esta string `text[3]`, todas as suas células recebem o valor `0` por padrão, aqui está uma representação visual simples do conteúdo da string;
 
-|            |      |      |      |
+| Cells      | 0    | 1    | 2    |
 | ---------- | ---- | ---- | ---- |
-| Cells | 0 | 1 | 2 |
-| ASCII code | 0 | 0 | 0 |
+| ASCII code | 0    | 0    | 0    |
 | Characters | '\0' | '\0' | '\0' |
 
 Aqui está outro exemplo de uma string pré-preenchida.
@@ -243,10 +242,9 @@ new text_1[8] = "Hello";
 ```
 Aqui está o conteúdo da string por célula;
 
-|            |     |     |     |     |     |      |      |      |
-| ---------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
-| Cells | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
-| ASCII code | 72 | 101 | 108 | 108 | 111 | 0 | 0 | 0 |
+| Cells      | 0   | 1   | 2    | 3    | 4   | 5    | 6    | 7    |
+| ---------- | --- | --- | ---- | ---- | --- | ---- | ---- | ---- |
+| ASCII code | 72  | 101 | 108  | 108  | 111 | 0    | 0    | 0    |
 | Characters | 'H' | 'e' | 'eu' | 'eu' | 'o' | '\0' | '\0' | '\0' |
 
 Se você, por exemplo, quiser excluir o conteúdo desta string, basta fazer isso usando um dos três exemplos abaixo;
@@ -258,10 +256,9 @@ text_1[0] = '\0';
 ```
 Passar a string por uma varredura de raio-X imprimirá o seguinte;
 
-|            |      |     |     |     |     |      |      |      |
-| ---------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
-| Cells | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
-| ASCII code | 0 | 101 | 108 | 108 | 111 | 0 | 0 | 0 |
+| Cells      | 0    | 1   | 2    | 3    | 4   | 5    | 6    | 7    |
+| ---------- | ---- | --- | ---- | ---- | --- | ---- | ---- | ---- |
+| ASCII code | 0    | 101 | 108  | 108  | 111 | 0    | 0    | 0    |
 | Characters | '\0' | 'e' | 'eu' | 'eu' | 'o' | '\0' | '\0' | '\0' |
 
 Se você tentar gerar esta string, tudo além do número do slot 0 será ignorado e, portanto, rotulado como uma string vazia, até mesmo a função `strlen` retornará 0, pois depende do posicionamento do caractere nulo para recuperar o comprimento da string.
@@ -417,18 +414,16 @@ pkString_1 = !#pawn;
 
 Esta é uma representação visual aproximada do conteúdo de `upkString`;
 
-|            |                      |                      |                      |                      |                   |
+| Cell       | 0                    | 1                    | 2                    | 3                    | 4                 |
 | ---------- | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
-| Cell | 0 | 1 | 2 | 3 | 4 |
-| Bytes | 0. 1. 2. 3 | 0. 1. 2. 3 | 0. 1. 2. 3 | 0. 1. 2. 3 | 0. 1. 2. 3 |
+| Bytes      | 0. 1. 2. 3           | 0. 1. 2. 3           | 0. 1. 2. 3           | 0. 1. 2. 3           | 0. 1. 2. 3        |
 | Characters | \0 . \0 . \0 . **p** | \0 . \0 . \0 . **a** | \0 . \0 . \0 . **o** | \0 . \0 . \0 . **n** | \0 . \0 . \0 . \0 |
 
 E é assim que `pkString_1` seria no segundo exemplo;
 
-|            |                               |                   |
+| Cell       | 0                             | 1                 |
 | ---------- | ----------------------------- | ----------------- |
-| Cell | 0 | 1 |
-| Bytes | 0. 1. 2. 3 | 0. 1. 2. 3 |
+| Bytes      | 0. 1. 2. 3                    | 0. 1. 2. 3        |
 | Characters | **p** . **a** . **c** . **n** | \0 . \0 . \0 . \0 |
 
 Você também pode acessar os indexadores de uma string compactada, como segue;
@@ -679,28 +674,28 @@ Essa foi a abordagem geral na incorporação de cores com strings de diálogo e 
 
 como mencionado acima, a notação **RGB** não é suportada, mas felizmente, temos outras maneiras de contornar esse problema, para textdraws, você pode usar a função nativa [TextDrawColor](../scripting/functions/TextDrawColor) para alterar a cor do textdraw, mas é o mesmo para textdraw como **RGBA** espaços de cores são para mensagens e diálogos do cliente, eles não pode ser incorporado, para isso utilizamos combinações especiais de caracteres para se referir a cores e alguns outros símbolos, você pode vê-los [aqui](../scripting/resources/gametextstyles).
 
-|                |        |
-| -------------- | ------ |
-| \~r\~ | Vermelho |
-| \~g\~ | Verde |
-| \~b\~ | Azul |
-| \~w\~ or \~s\~ | Branco |
-| \~p\~ | Roxo |
-| \~l\~ | Preto |
-| \~y\~ | Amarelo |
+| Código         | Cor      |
+| -------------- | -------- |
+| \~r\~          | Vermelho |
+| \~g\~          | Verde    |
+| \~b\~          | Azul     |
+| \~w\~ or \~s\~ | Branco   |
+| \~p\~          | Roxo     |
+| \~l\~          | Preto    |
+| \~y\~          | Amarelo  |
 
 Portanto, a incorporação de cores pode ser assim: **\~w\~Olá, aqui é \~b\~azul \~w\~e este é \~r\~vermelho**
 
 Você pode usar outra combinação de personagens para brincar com misturas de cores, **\~h\~**, isso deixa uma determinada cor mais clara, aqui estão alguns exemplos:
 
-|                                |                |
-| ------------------------------ | -------------- |
-| \~r\~\~h\~ | Vermelho mais claro |
-| \~r\~\~h\~\~h\~ | Rosa vermelho |
-| \~r\~\~h\~\~h\~\~h\~ | Vermelho escuro |
-| \~r\~\~h\~\~h\~\~h\~\~h\~ | Rosa vermelho claro |
-| \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Rosa |
-| \~g\~\~h\~ | Verde claro |
+| Código                         | Cor                 |
+| ------------------------------ | ------------------- |
+| \~r\~\~h\~                     | Vermelho mais claro |
+| \~r\~\~h\~\~h\~                | Rosa vermelho       |
+| \~r\~\~h\~\~h\~\~h\~           | Vermelho escuro     |
+| \~r\~\~h\~\~h\~\~h\~\~h\~      | Rosa vermelho claro |
+| \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Rosa                |
+| \~g\~\~h\~                     | Verde claro         |
 
 Você pode encontrar mais informações sobre isso [aqui](../scripting/resources/colorslist).
 
@@ -714,21 +709,21 @@ O caractere de escape é um caractere no qual quando prefixado a algum caractere
 
 As sequências de escape facilitam a expressão de determinados caracteres no código fonte do seu script, aqui está uma tabela contendo as sequências de escape usadas no Pawn:
 
-|                                              |              |
-| -------------------------------------------- | ------------ |
-| Audible beep (on server machines) | `\a` ou `\7` |
-| Backspace | `\b` |
-| Escape | `\e` |
-| Form feed | `\f` |
-| New line | `\n` |
-| Carriage return | `\r` |
-| Horizontal tab | `\t` |
-| Vertical tab | `\v` |
-| Backslash | `\\` |
-| Single quote | `\'` |
-| Double quote | `\"` |
-| Character code with decimal values "ddd" | `\ddd;` |
-| Character code with hexadecimal values "hhh" | `\xhhh;` |
+| Descrição                                    | Sequência de escape |
+| -------------------------------------------- | ------------------- |
+| Audible beep (on server machines)            | `\a` ou `\7`        |
+| Backspace                                    | `\b`                |
+| Escape                                       | `\e`                |
+| Form feed                                    | `\f`                |
+| New line                                     | `\n`                |
+| Carriage return                              | `\r`                |
+| Horizontal tab                               | `\t`                |
+| Vertical tab                                 | `\v`                |
+| Backslash                                    | `\\`                |
+| Single quote                                 | `\'`                |
+| Double quote                                 | `\"`                |
+| Character code with decimal values "ddd"     | `\ddd;`             |
+| Character code with hexadecimal values "hhh" | `\xhhh;`            |
 
 Vejamos cada um deles, afinal, a melhor maneira de aprender esse tipo de coisa é praticá-los.
 
@@ -1038,14 +1033,14 @@ Você não pode, no entanto, mudar isso para (`-`), mas qualquer outra coisa é 
 
 Esta parte aqui não tem absolutamente nada a ver com sequências de escape, mas é usada na formatação de textdraws e gametext, é melhor colocá-la aqui do que em qualquer outro lugar;
 
-|       |                                                                                                               |
-| ----- | ------------------------------------------------------------------------------------------------------------- |
-| `~u~` | Seta para cima (cinza) |
-| `~d~` | Seta para baixo (cinza) |
-| `~<~` | Seta para esquerda (cinza) |
-| `~>~` | Seta para a direita (cinza) |
-| `]` | Exibe um símbolo `*` (somente nos estilos de texto 3, 4 e 5) |
-| `~k~` | mapeamento de teclas do teclado (por exemplo, `~k~~VEHICLE_TURRETLEFT~` e `~k~~PED_FIREWEAPON~`). Procure aqui uma lista de chaves |
+| Código | Descrição                                                                                                                          |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `~u~`  | Seta para cima (cinza)                                                                                                             |
+| `~d~`  | Seta para baixo (cinza)                                                                                                            |
+| `~<~`  | Seta para esquerda (cinza)                                                                                                         |
+| `~>~`  | Seta para a direita (cinza)                                                                                                        |
+| `]`    | Exibe um símbolo `*` (somente nos estilos de texto 3, 4 e 5)                                                                       |
+| `~k~`  | mapeamento de teclas do teclado (por exemplo, `~k~~VEHICLE_TURRETLEFT~` e `~k~~PED_FIREWEAPON~`). Procure aqui uma lista de chaves |
 
 mapeamento de teclas do teclado (por exemplo, `~k~~VEHICLE_TURRETLEFT~` e `~k~~PED_FIREWEAPON~`). Procure aqui uma lista de chaves
 
@@ -1064,18 +1059,17 @@ Placeholders são usados ​​apenas em funções que aceitam parâmetros, port
 
 Vejamos os diferentes tipos de saída que podem ser usados:
 
-|               |                                                 |
-| ------------- | ----------------------------------------------- |
-| **Specifier** | **Significado** |
-| `%i` | Inteiro (_número inteiro_) |
-| `%d` | Inteiro (_número inteiro_) |
-| `%s` | Corda |
-| `%f` | Número de ponto flutuante (`Float: tag`) |
-| `%c` | Caractere ASCII |
-| `%x` | Número hexadecimal |
-| `%b` | Número binário |
-| `%%` | Literal `'%'` |
-| `%q` | Escape de um texto para SQLite. (_Adicionado em 0.3.7 R2_) |
+| **Specifier** | **Significado**                                            |
+| ------------- | ---------------------------------------------------------- |
+| `%i`          | Inteiro (_número inteiro_)                                 |
+| `%d`          | Inteiro (_número inteiro_)                                 |
+| `%s`          | Corda                                                      |
+| `%f`          | Número de ponto flutuante (`Float: tag`)                   |
+| `%c`          | Caractere ASCII                                            |
+| `%x`          | Número hexadecimal                                         |
+| `%b`          | Número binário                                             |
+| `%%`          | Literal `'%'`                                              |
+| `%q`          | Escape de um texto para SQLite. (_Adicionado em 0.3.7 R2_) |
 
 - **Os especificadores de número inteiro - `%i` e `%d`**
 
@@ -1485,14 +1479,13 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 ```
 Dada a seguinte lista de jogadores conectados:
 
-|        |                                                 |
+| **ID** | **Jogador**                                     |
 | ------ | ----------------------------------------------- |
-| **ID** | **Jogador** |
-| 0 | <span style={{color: 'red'}}>Compton</span> |
-| 1 | <span style={{color: 'grey'}}>Dark</span> |
-| 5 | <span style={{color: 'red'}}>Player1</span> |
-| 6 | <span style={{color: 'blue'}}>Bartolomew</span> |
-| 11 | <span style={{color: 'grey'}}>unban_pls</span> |
+| 0      | <span style={{color: 'red'}}>Compton</span>     |
+| 1      | <span style={{color: 'grey'}}>Dark</span>       |
+| 5      | <span style={{color: 'red'}}>Player1</span>     |
+| 6      | <span style={{color: 'blue'}}>Bartolomew</span> |
+| 11     | <span style={{color: 'grey'}}>unban_pls</span>  |
 
 Digamos, `playerid` `0` matou `playerid` `6`, as mensagens formatadas devem soletrar “**\{FF0000\}Compton \{000000\}killed > \{0000FF\}Bartolomew**”, que enviará a seguinte mensagem do cliente para todos no servidor:
 

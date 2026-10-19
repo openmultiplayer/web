@@ -62,20 +62,20 @@ new
 
 SA-MP heeft limieten per context:
 
-|                     |                                                                               |      |
-| ------------------- | ----------------------------------------------------------------------------- | ---- |
-| **Text input**      | Chatinvoer                                                                    | 128  |
-| **Text output**     | Tekst op het client-scherm                                                    | 144  |
-| **Name**            | Spelersnaam                                                                   | 24   |
-| **Textdraw string** | Tekst in textdraws                                                            | 1024 |
-| **Dialog info**     | Tekst in `DIALOG_STYLE_MSGBOX`, `DIALOG_STYLE_INPUT`, `DIALOG_STYLE_PASSWORD` | 4096 |
-| **Dialog caption**  | Titel van dialog                                                              | 64   |
-| **Dialog input**    | Invoer bij `DIALOG_STYLE_INPUT` en `DIALOG_STYLE_PASSWORD`                    | 128  |
-| **Dialog column**   | Per kolom in `DIALOG_STYLE_TABLIST(_HEADER)`                                  | 128  |
-| **Dialog row**      | Per rij in `DIALOG_STYLE_TABLIST(_HEADER)` en `DIALOG_STYLE_LIST`             | 256  |
-| **Chat bubble**     | Chat bubble boven nametag                                                     | 144  |
-| **Menu title**      | GTA SA native menu header                                                     | 31   |
-| **Menu item**       | GTA SA native menu item                                                       | 31   |
+| Type                | Beschrijving                                                                  | Limiet |
+| ------------------- | ----------------------------------------------------------------------------- | ------ |
+| **Text input**      | Chatinvoer                                                                    | 128    |
+| **Text output**     | Tekst op het client-scherm                                                    | 144    |
+| **Name**            | Spelersnaam                                                                   | 24     |
+| **Textdraw string** | Tekst in textdraws                                                            | 1024   |
+| **Dialog info**     | Tekst in `DIALOG_STYLE_MSGBOX`, `DIALOG_STYLE_INPUT`, `DIALOG_STYLE_PASSWORD` | 4096   |
+| **Dialog caption**  | Titel van dialog                                                              | 64     |
+| **Dialog input**    | Invoer bij `DIALOG_STYLE_INPUT` en `DIALOG_STYLE_PASSWORD`                    | 128    |
+| **Dialog column**   | Per kolom in `DIALOG_STYLE_TABLIST(_HEADER)`                                  | 128    |
+| **Dialog row**      | Per rij in `DIALOG_STYLE_TABLIST(_HEADER)` en `DIALOG_STYLE_LIST`             | 256    |
+| **Chat bubble**     | Chat bubble boven nametag                                                     | 144    |
+| **Menu title**      | GTA SA native menu header                                                     | 31     |
+| **Menu item**       | GTA SA native menu item                                                       | 31     |
 
 ## Waarden toekennen
 

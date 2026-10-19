@@ -58,10 +58,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 The explanation for [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | The menuid of the menu where the item shall be displayed |
-| ------ | -------------------------------------------------------- |
-| column | The column in which the item shall be shown              |
-| text   | The text of the item                                     |
+| Parameter | Specifies                                                |
+| --------- | -------------------------------------------------------- |
+| menuid    | The menuid of the menu where the item shall be displayed |
+| column    | The column in which the item shall be shown              |
+| text      | The text of the item                                     |
 
 ## Creating the effects for the items
 

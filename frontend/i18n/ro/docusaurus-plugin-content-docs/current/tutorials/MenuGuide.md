@@ -56,10 +56,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 Explicația pentru [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | Meniul din meniul în care va fi afișat elementul |
-| ------ | ------------------------------------------------ |
-| column | Coloana în care va fi afișat elementul           |
-| text   | Textul articolului                               |
+| Parameter | Specifies                                        |
+| --------- | ------------------------------------------------ |
+| menuid    | Meniul din meniul în care va fi afișat elementul |
+| column    | Coloana în care va fi afișat elementul           |
+| text      | Textul articolului                               |
 
 ## Crearea efectelor pentru elemente
 
