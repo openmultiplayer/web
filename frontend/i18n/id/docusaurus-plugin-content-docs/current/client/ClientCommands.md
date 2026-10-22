@@ -1,6 +1,6 @@
 ---
-Judul: "Client Commands"
-Deskripsi: List semua command client.
+title: "Client Commands"
+description: List semua command client.
 ---
 
 ## Commands

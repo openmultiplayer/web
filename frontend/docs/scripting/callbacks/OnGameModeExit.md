@@ -35,9 +35,8 @@ This function can also be used in a filterscript to detect if the gamemode chang
 
 :::warning
 
-When using OnGameModeExit in conjunction with the 'rcon gmx' console command keep in mind there is a potential for client bugs to occur.
-
-An example of this is excessive [RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer) calls during [OnGameModeInit](OnGameModeInit) which could result in a client crash. This callback will NOT be called if the server crashes or the process is killed by other means, such as using the Linux kill command or pressing the close-button on the Windows console.
+- When using OnGameModeExit in conjunction with the 'rcon gmx' console command keep in mind there is a potential for client bugs to occur. An example of this is excessive [RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer) calls during [OnGameModeInit](OnGameModeInit) which could result in a client crash.
+- This callback will NOT be called if the server crashes or the process is killed by other means, such as using the Linux kill command.
 
 :::
 

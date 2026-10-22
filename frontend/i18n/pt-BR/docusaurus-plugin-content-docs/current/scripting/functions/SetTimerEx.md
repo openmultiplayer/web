@@ -73,9 +73,8 @@ Os intervalos do temporizador não são precisos (cerca de 25% de desconto) em S
 
 :::tip
 
-As variáveis do temporizador ID devem ser redefinidas para 0 quando possível, para minimizar a chance de matar acidentalmente novos temporizadores por engano. `-1` é comumente confundido com o ID inválido - não é.
-
-A função a ser chamada deve ser pública. Isso significa que tem que ser encaminhado.
+- As variáveis do temporizador ID devem ser redefinidas para 0 quando possível, para minimizar a chance de matar acidentalmente novos temporizadores por engano. `-1` é comumente confundido com o ID inválido - não é.
+- A função a ser chamada deve ser pública. Isso significa que tem que ser encaminhado.
 
 :::
 

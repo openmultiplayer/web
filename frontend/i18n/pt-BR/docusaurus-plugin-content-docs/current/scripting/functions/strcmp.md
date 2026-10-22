@@ -63,3 +63,7 @@ Se você comparar strings de um arquivo de texto, você deve levar em considera�
 - [strval](strval): Converter uma string em um número inteiro.
 - [strcat](strcat): Concatene duas strings em uma referência de destino.
 - https://www.facom.ufu.br/~madriana/PP/TP6.pdf
+
+## Tutoriais
+
+- [String Manipulation](../../tutorials/stringmanipulation)

@@ -39,7 +39,8 @@ public OnPlayerSpawn(playerid)
 
 :::note
 
-Apenas um objeto pode ser anexado por jogador. Esta função é separada dos pools CreateObject/CreatePlayerObject.
+- Apenas um objeto pode ser anexado por jogador.
+- Esta função é separada dos pools CreateObject/CreatePlayerObject.
 
 :::
 

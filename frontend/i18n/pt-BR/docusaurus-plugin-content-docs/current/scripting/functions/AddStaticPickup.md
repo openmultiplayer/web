@@ -52,3 +52,7 @@ Esta função não retorna um pickup ID que você pode usar, por exemplo, em OnP
 - [CreatePickup](CreatePickup): Cria um pickup.
 - [DestroyPickup](DestroyPickup): Destrói um pickup.
 - [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): É chamado quando um jogador pega num pickup.
+
+## Recursos relacionados
+
+- [Pickup IDs](../resources/pickupids)

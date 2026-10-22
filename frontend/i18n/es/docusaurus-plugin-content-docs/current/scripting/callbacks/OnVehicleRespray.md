@@ -1,6 +1,6 @@
 ---
-título: OnVehicleRespray
-descripción: Este callback se llama cuando un jugador sale de un taller de modificación, sin importar si los colores no fueron cambiados.
+title: OnVehicleRespray
+description: Este callback se llama cuando un jugador sale de un taller de modificación, sin importar si los colores no fueron cambiados.
 tags: ["vehicle"]
 ---
 

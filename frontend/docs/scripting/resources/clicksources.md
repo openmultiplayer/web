@@ -1,7 +1,6 @@
 ---
 title: Click Sources
 sidebar_label: Click Sources
-
 description: Click Sources
 ---
 

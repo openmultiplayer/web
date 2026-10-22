@@ -1,6 +1,6 @@
 ---
-título: OnTrailerUpdate
-descripción: Este callback se llama cuando un jugador envía una actualización de trailer.
+title: OnTrailerUpdate
+description: Este callback se llama cuando un jugador envía una actualización de trailer.
 tags: []
 ---
 

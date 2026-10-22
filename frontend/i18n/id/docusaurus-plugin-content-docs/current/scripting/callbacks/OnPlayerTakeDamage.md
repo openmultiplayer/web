@@ -75,3 +75,9 @@ ID senjata akan mengembalikan nilai 37 (flame thrower) dari semua senjata yang m
 GetPlayerHealth dan GetPlayerArmour akan memberikan amount lama dari pemain sebelum memanggil callback ini. Selalu cek jika issuerid valid sebelum melakukan array index.
 
 :::
+
+## Related Callbacks
+
+Callback berikut mungkin berguna, karena terkait dengan callback ini dalam satu atau lain cara
+
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Callback ini di panggil ketika seorang pemain melepaskan tembakan dari senjata.

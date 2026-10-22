@@ -1,6 +1,6 @@
 ---
-título: OnVehiclePaintjob
-descripción: Se llama cuando un jugador obtiene una vista previa de una capa de pintura adentro de un taller de modificación.
+title: OnVehiclePaintjob
+description: Se llama cuando un jugador obtiene una vista previa de una capa de pintura adentro de un taller de modificación.
 tags: ["vehicle"]
 ---
 

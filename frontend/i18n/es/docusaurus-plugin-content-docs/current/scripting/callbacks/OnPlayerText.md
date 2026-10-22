@@ -1,6 +1,6 @@
 ---
-título: OnPlayerText
-descripción: Se llama cuando un jugador envía un mensaje en el chat.
+title: OnPlayerText
+description: Se llama cuando un jugador envía un mensaje en el chat.
 tags: ["player"]
 ---
 

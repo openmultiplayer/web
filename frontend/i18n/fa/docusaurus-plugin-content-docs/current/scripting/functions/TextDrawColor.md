@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::tip
 
-همچنین می‌توانید از رنگ‌های Gametext در textdraw ها استفاده کنید. (مثل `~r~` `~g~` `~b~`)
+همچنین می‌توانید از رنگ‌های Gametext در textdraw ها استفاده کنید.
 
 :::
 

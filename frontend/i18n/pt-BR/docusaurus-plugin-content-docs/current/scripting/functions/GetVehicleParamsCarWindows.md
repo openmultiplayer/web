@@ -30,11 +30,9 @@ O estado das janelas do veículo é armazenado nas variáveis especificadas.
 
 Os valores retornados em cada variável são os seguintes:
 
-**-1**: Estado da janela não definido (geralmente fechado, a menos que definido explicitamente como -1)
-
-**0**: Aberto
-
-**1**: Fechado
+- **-1**: Estado da janela não definido (geralmente fechado, a menos que definido explicitamente como -1)
+- **0**: Aberto
+- **1**: Fechado
 
 :::
 

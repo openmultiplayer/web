@@ -36,13 +36,13 @@ Noul sistem introdus în serverul SA-MP 0.3a R5 actualizat are câteva avantaje 
 
 Funcțiile pentru setarea și recuperarea variabilelor playerului sunt:
 
-- [SetPVarInt](../scripting/functions/SetPVarInt) Setați un număr întreg pentru o variabilă de jucător.
-- [GetPVarInt](../scripting/functions/GetPVarInt) Obțineți numărul întreg setat anterior de la o variabilă de jucător.
-- [SetPVarString](../scripting/functions/SetPVarString) Setați un șir pentru o variabilă de jucător.
-- [GetPVarString](../scripting/functions/GetPVarString) Obțineți șirul stabilit anterior de la o variabilă de jucător.
-- [SetPVarFloat](../scripting/functions/SetPVarFloat) Setați un float pentru o variabilă de jucător.
-- [GetPVarFloat](../scripting/functions/GetPVarFloat) Obțineți floatul setat anterior de la o variabilă de jucător.
-- [DeletePVar](../scripting/functions/DeletePVar) Ștergeți o variabilă de jucător.
+- [SetPVarInt](../scripting/functions/SetPVarInt): Setați un număr întreg pentru o variabilă de jucător.
+- [GetPVarInt](../scripting/functions/GetPVarInt): Obțineți numărul întreg setat anterior de la o variabilă de jucător.
+- [SetPVarString](../scripting/functions/SetPVarString): Setați un șir pentru o variabilă de jucător.
+- [GetPVarString](../scripting/functions/GetPVarString): Obțineți șirul stabilit anterior de la o variabilă de jucător.
+- [SetPVarFloat](../scripting/functions/SetPVarFloat): Setați un float pentru o variabilă de jucător.
+- [GetPVarFloat](../scripting/functions/GetPVarFloat): Obțineți floatul setat anterior de la o variabilă de jucător.
+- [DeletePVar](../scripting/functions/DeletePVar): Ștergeți o variabilă de jucător.
 
 ```c
 #define PLAYER_VARTYPE_NONE   (0)

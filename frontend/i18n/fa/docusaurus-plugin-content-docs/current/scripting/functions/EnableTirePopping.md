@@ -38,8 +38,7 @@ public OnGameModeInit()
 
 :::note
 
-- ترکیدن لاستیک به طور پیش‌فرض فعال است.
-- اگر می‌خواهید ترکیدن لاستیک را غیرفعال کنید، باید آن را به صورت دستی با استفاده از [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate) اسکریپت کنید.
+ترکیدن لاستیک به طور پیش‌فرض فعال است. اگر می‌خواهید ترکیدن لاستیک را غیرفعال کنید، باید آن را به صورت دستی با استفاده از [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate) اسکریپت کنید.
 
 :::
 

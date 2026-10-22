@@ -19,3 +19,7 @@ public OnNPCSpawn()
     return 1;
 }
 ```
+
+## Повезане повратне функције
+
+- [OnPlayerSpawn](OnPlayerSpawn): Ова повратна функција се позива када играч спавнује.

@@ -35,3 +35,7 @@ public OnActorStreamOut(actorid, forplayerid)
 ## Anmerkungen
 
 <NoteNPCCallbacks />
+
+## Ähnliche Callbacks
+
+- [OnActorStreamIn](OnActorStreamIn): Dieses Callback wird ausgeführt wenn ein Actor von einem Spieler gestreamt wird.

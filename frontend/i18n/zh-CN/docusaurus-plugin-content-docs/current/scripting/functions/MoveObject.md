@@ -83,3 +83,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [GetPlayerObjectPos](GetPlayerObjectPos): 获取玩家物体坐标
 - [GetPlayerObjectRot](GetPlayerObjectRot): 获取玩家物体旋转角度
 - [AttachPlayerObjectToPlayer](AttachPlayerObjectToPlayer): 将玩家物体附加到其他玩家
+
+## 相关回调
+
+- [OnObjectMoved](../callbacks/OnObjectMoved): 当物体停止移动时触发

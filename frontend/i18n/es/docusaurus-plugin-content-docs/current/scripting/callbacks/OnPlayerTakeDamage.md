@@ -1,6 +1,6 @@
 ---
-título: OnPlayerTakeDamage
-descripción: Este callback se llama cuando un jugador sufre daño.
+title: OnPlayerTakeDamage
+description: Este callback se llama cuando un jugador sufre daño.
 tags: ["player"]
 ---
 
@@ -74,3 +74,9 @@ El 'weaponid' va a retornar 37 (lanzallamas) de cualquier origen de fuego (ej. m
 GetPlayerHealth y GetPlayerArmour retornará los valores antiguos antes de este callback. Siempre comprobar si 'issuerid' es válido antes de usarlo en un array.
 
 :::
+
+## Callbacks Relacionados
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerTakeDamage:
+
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Este callback se llama cuando un jugador efectúa un disparo de un arma.

@@ -13,6 +13,12 @@ tags: []
 - 服务器关闭
 - 调用GameModeExit函数
 
+## 返回值
+
+此回调不处理返回值。
+
+此回调在游戏模式中总是优先触发。
+
 ## 示例
 
 ```c
@@ -37,7 +43,7 @@ public OnGameModeExit()
 
 - 配合`rcon gmx`指令使用时可能导致客户端异常
 - 在[OnGameModeInit](OnGameModeInit)中过度调用[RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer)可能引发客户端崩溃
-- 服务器崩溃或进程被强制终止（如Linux kill命令/Windows控制台关闭按钮）不会触发此回调
+- 服务器崩溃或进程被强制终止（如Linux kill命令）不会触发此回调
 
 :::
 

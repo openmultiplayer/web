@@ -1,6 +1,6 @@
 ---
-título: OnVehicleStreamIn
-descripción: Se llama cuando un vehículo es cargado (se hace visible) en el cliente de un jugador.
+title: OnVehicleStreamIn
+description: Se llama cuando un vehículo es cargado (se hace visible) en el cliente de un jugador.
 tags: ["vehicle"]
 ---
 

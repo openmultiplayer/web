@@ -9,6 +9,10 @@ tags: []
 
 Desativa a verificação de linha de visão para nametags, fazendo com que os nomes dos jogadores fiquem visíveis mesmo quando obstruídos por objetos.
 
+## Retornos
+
+Esta função não retorna nenhum valor específico.
+
 ## Exemplos
 
 ```c

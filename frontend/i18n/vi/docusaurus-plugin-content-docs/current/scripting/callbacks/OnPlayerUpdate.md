@@ -91,6 +91,7 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Callback này được gọi, trung bình, 30 lần mỗi giây, mỗi người chơi; chỉ sử dụng nó khi bạn biết mục đích của nó (hoặc quan trọng hơn là những gì nó KHÔNG được dùng cho). Tần suất mà callback này được gọi cho mỗi người chơi thay đổi tùy thuộc vào những gì người chơi đang làm. Lái xe hoặc bắn sẽ kích hoạt nhiều cập nhật hơn so với việc đứng im.
+- Callback này được gọi, trung bình, 30 lần mỗi giây, mỗi người chơi; chỉ sử dụng nó khi bạn biết mục đích của nó (hoặc quan trọng hơn là những gì nó KHÔNG được dùng cho).
+- Tần suất mà callback này được gọi cho mỗi người chơi thay đổi tùy thuộc vào những gì người chơi đang làm. Lái xe hoặc bắn sẽ kích hoạt nhiều cập nhật hơn so với việc đứng im.
 
 :::

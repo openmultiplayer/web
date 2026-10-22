@@ -60,3 +60,7 @@ Usar um ID de componente inválido causa um crash no jogador. (Corrigido em open
 - [GetVehicleComponentType](GetVehicleComponentType): Verifica o tipo de componente pelo ID.
 - [OnVehicleMod](../callbacks/OnVehicleMod): É chamado quando o veículo é modificado/tem componentes.
 - [OnEnterExitModShop](../callbacks/OnEnterExitModShop): É chamado quando um veículo entra ou sai de uma loja de tunning.
+
+## Recursos relacionados
+
+- [Componente do carro IDs](../resources/carcomponentid)

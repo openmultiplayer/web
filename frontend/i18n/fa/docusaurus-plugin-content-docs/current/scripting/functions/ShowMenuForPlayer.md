@@ -45,6 +45,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
 }
 ```
 
+## نکات
+
+:::warning
+
+اگه ID منوی نامعتبر بدی، هم سرور و هم بازیکن کرش می‌کنن. (در open.mp درست شده)
+
+:::
+
 ## توابع مرتبط
 
 - [CreateMenu](CreateMenu): ایجاد یک منو.

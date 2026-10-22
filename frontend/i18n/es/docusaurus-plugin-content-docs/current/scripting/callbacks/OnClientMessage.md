@@ -1,6 +1,6 @@
 ---
-título: OnClientMessage
-descripción: Este callback se llama cuando el NPC ve un ClientMessage.
+title: OnClientMessage
+description: Este callback se llama cuando el NPC ve un ClientMessage.
 tags: [NPC, ClientMessage, SendClientMessageToAll]
 ---
 

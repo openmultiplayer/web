@@ -19,3 +19,7 @@ public OnNPCSpawn()
     return 1;
 }
 ```
+
+## Related Callbacks
+
+- [OnPlayerSpawn](OnPlayerSpawn): Tinatawag kapag nag-spawn ang isang manlalaro.

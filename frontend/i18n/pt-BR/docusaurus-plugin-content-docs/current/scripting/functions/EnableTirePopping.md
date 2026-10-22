@@ -38,8 +38,7 @@ Esta função foi removida em SA-MP 0.3.
 
 :::note
 
-- O estouro de pneus está habilitado por padrão.
-- Se quiser desativar o estouro de pneus, você terá que criar um script manualmente usando [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate).
+O estouro de pneus está habilitado por padrão. Se quiser desativar o estouro de pneus, você terá que criar um script manualmente usando [OnVehicleDamageStatusUpdate](../callbacks/OnVehicleDamageStatusUpdate).
 
 :::
 

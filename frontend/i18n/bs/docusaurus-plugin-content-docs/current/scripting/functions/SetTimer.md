@@ -47,9 +47,16 @@ public message()
 
 :::note
 
-ID-ovi tajmera nikada se ne koriste dva puta. Možete koristiti KillTimer () na ID-u tajmera i neće biti važno pokreće li se ili ne. Funkcija koju treba pozvati mora biti javna, što znači da mora biti proslijeđena.
+- ID-ovi tajmera nikada se ne koriste dva puta. Možete koristiti KillTimer na ID-u tajmera i neće biti važno pokreće li se ili ne.
+- Funkcija koju treba pozvati mora biti javna, što znači da mora biti proslijeđena.
 
 :::
+
+## Definicije
+
+| Definicija    | Vrijednost |
+| ------------- | ---------- |
+| INVALID_TIMER | 0          |
 
 ## Srodne Funkcije
 

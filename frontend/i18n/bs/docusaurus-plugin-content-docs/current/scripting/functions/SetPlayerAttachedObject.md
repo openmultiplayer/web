@@ -64,3 +64,7 @@ U 0.3d verziji pa nadalje, 10 objekata se može prikvačiti za jednog igrača (i
 - [RemovePlayerAttachedObject](RemovePlayerAttachedObject): Ukloni prikvačeni objekat sa igrača
 - [IsPlayerAttachedObjectSlotUsed](IsPlayerAttachedObjectSlotUsed): Provjeri da li je objekat prikvačen za igrača u oređenom indexu.
 - [EditAttachedObject](EditAttachedObject): Uredi prikvačeni objekat.
+
+## Srodne Resources
+
+- [ID Kostiju](../resources/boneid)

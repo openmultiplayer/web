@@ -1,6 +1,6 @@
 ---
-título: OnObjectMoved
-descripción: Este callback se llama cuando un objeto es movido después de usar MoveObject (cuando este termina de moverse).
+title: OnObjectMoved
+description: Este callback se llama cuando un objeto es movido después de usar MoveObject (cuando este termina de moverse).
 tags: []
 ---
 

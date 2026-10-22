@@ -39,6 +39,10 @@ public OnPlayerUpdate(playerid)
 
 Alleen de FUNCTIE van toetsen wordt gedetecteerd; niet de fysieke toets. Bijvoorbeeld SPRINT i.p.v. SPATIE. In voertuigen worden A en D niet herkend; W en S wel via `keys`.
 
+## Gerelateerde Callbacks
+
+- [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange): Deze callback wordt aangeroepen wanneer de status van een ondersteunde toets verandert (ingedrukt/losgelaten).
+
 ## Gerelateerd
 
 - [Keys](../resources/keys)

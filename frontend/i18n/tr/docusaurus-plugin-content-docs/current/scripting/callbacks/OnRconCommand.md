@@ -1,7 +1,7 @@
 ---
 title: OnRconCommand
 sidebar_label: OnRconCommand
-description: Bu fonksiyon, RCON oturumu açmış oyuncu RCON komutu kullandığında çağrılır. (/rcon -komut-)
+description: Bu fonksiyon, RCON oturumu açmış oyuncu RCON komutu kullandığında çağrılır.
 tags: []
 ---
 
@@ -44,7 +44,10 @@ public OnRconCommand(cmd[])
 
 :::note
 
-Bir oyuncu bir komut yazdığında "/rcon" "cmd" ye dahil edilmez. Burada "print" işlevini kullanırsanız, hem oyun içinde komutu yazan oyuncuya hem de günlüğe bir mesaj gönderir. Bu fonksiyon, oyuncu RCON yöneticisi olarak oturum açmadığında çağrılmaz.Oyuncu RCON yöneticisi olarak oturum açmadığında ve /rcon login kullandığında, bu fonksiyon çağrılmaz ve onun yerine OnRconLoginAttempt çağrılır. Ancak, oyuncu RCON yöneticisi olarak oturum açtığında, bu komutun kullanılması bu fonksiyonu çağıracaktır.
+- Bir oyuncu bir komut yazdığında "/rcon" "cmd" ye dahil edilmez.
+- Burada "print" işlevini kullanırsanız, hem oyun içinde komutu yazan oyuncuya hem de günlüğe bir mesaj gönderir.
+- Bu fonksiyon, oyuncu RCON yöneticisi olarak oturum açmadığında çağrılmaz.
+- Oyuncu RCON yöneticisi olarak oturum açmadığında ve /rcon login kullandığında, bu fonksiyon çağrılmaz ve onun yerine OnRconLoginAttempt çağrılır. Ancak, oyuncu RCON yöneticisi olarak oturum açtığında, bu komutun kullanılması bu fonksiyonu çağıracaktır.
 
 :::
 

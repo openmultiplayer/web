@@ -210,7 +210,7 @@ public OnFilterScriptInit ()
     return 1;
 }
 
-// Çıktı :
+// Çıktı:
 a
 1
 1.000000

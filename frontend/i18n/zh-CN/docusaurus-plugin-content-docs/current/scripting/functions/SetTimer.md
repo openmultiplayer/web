@@ -46,8 +46,7 @@ public OneSecondTimer()
 
 :::note
 
-- 定时器 ID 具有全局唯一性，不会重复使用
-- 可通过[KillTimer](KillTimer)安全终止任意定时器（无论是否运行）
+- 定时器 ID 具有全局唯一性，不会重复使用。可通过[KillTimer](KillTimer)安全终止任意定时器（无论是否运行）
 - 目标函数必须声明为`public`且预先`forward`
 
 :::

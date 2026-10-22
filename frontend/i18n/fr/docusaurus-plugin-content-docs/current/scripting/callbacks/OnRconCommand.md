@@ -46,9 +46,8 @@ public OnRconCommand(cmd[])
 
 :::note
 
-/rcon n'est pas inclut dans `cmd` lorsqu'un joueur tape la commande.
-
-Si vous utilisez la fonction `printf` dans cette callback, un message sera envoyé au joueur qui a tapé la commande dans le jeu, et dans les logs.
+- /rcon n'est pas inclut dans `cmd` lorsqu'un joueur tape la commande.
+- Si vous utilisez la fonction `printf` dans cette callback, un message sera envoyé au joueur qui a tapé la commande dans le jeu, et dans les logs.
 
 :::
 

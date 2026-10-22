@@ -64,3 +64,7 @@ Esta função não é chamada se o ator é posto como vulnerável (QUE É O PADR
 
 - [OnActorStreamOut](OnActorStreamOut): Chamada quando um ator é removido da área visível por um jogador.
 - [OnPlayerStreamIn](OnPlayerStreamIn): Chamada quando um jogador aparece na área visível de outro jogador.
+
+## Recursos relacionados
+
+- [Partes do Corpo](../resources/bodyparts)

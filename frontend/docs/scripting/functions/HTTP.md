@@ -28,7 +28,9 @@ Sends a threaded HTTP request.
 #define HTTP_GET                               (HTTP_METHOD:1) // Sends a regular HTTP request.
 #define HTTP_POST                              (HTTP_METHOD:2) // Sends a HTTP request with POST data.
 #define HTTP_HEAD                              (HTTP_METHOD:3) // Sends a regular HTTP request, but ignores any response data - returning only the response code.
+```
 
+```c
 // HTTP error response codes
 // These codes compliment ordinary HTTP response codes returned in 'response_code'
 #define HTTP_ERROR_BAD_HOST                    (HTTP_ERROR:1)

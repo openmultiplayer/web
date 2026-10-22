@@ -16,9 +16,7 @@ Postavite poravnanje teksta u textdrawu.
 
 ## Returns
 
-Note
-
-Za poravnanje 2 (centrirano) x i y vrijednosti TextSize-a treba zamijeniti, pogledaj zabilješke na TextDrawTextSize, zakođer pozicija kordinata postaje pozicija centra textdrawa a ne lijevi/gornji rubovi.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 ## Primjeri
 
@@ -37,7 +35,8 @@ public OnGameModeInit()
 
 :::note
 
-Ako je textdraw već prikazan, on mora biti ponovno prikazan (TextDrawShowForAll/TextDrawShowForPlayer) kako bi se prikazale promjene ove funkcije.
+- Za poravnanje 2 (centrirano) x i y vrijednosti TextSize-a treba zamijeniti, pogledaj zabilješke na TextDrawTextSize, zakođer pozicija kordinata postaje pozicija centra textdrawa a ne lijevi/gornji rubovi.
+- Ako je textdraw već prikazan, on mora biti ponovno prikazan (TextDrawShowForAll/TextDrawShowForPlayer) kako bi se prikazale promjene ove funkcije.
 
 :::
 

@@ -83,7 +83,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Bu fonksiyon, oyuncu başına ortalama olarak saniyede 30 kez çağrılır; yalnızca ne anlama geldiğini (veya daha da önemlisi ne anlama gelmediğini) bildiğiniz zaman kullanın. Her oyuncu için bu çağrılma sıklığı, oyuncunun ne yaptığına bağlı olarak değişir. Araba kullanmak veya ateş etmek, rölantiden çok daha fazla güncellemeyi tetikleyecektir.
+- Bu fonksiyon, oyuncu başına ortalama olarak saniyede 30 kez çağrılır; yalnızca ne anlama geldiğini (veya daha da önemlisi ne anlama gelmediğini) bildiğiniz zaman kullanın.
+- Her oyuncu için bu çağrılma sıklığı, oyuncunun ne yaptığına bağlı olarak değişir. Araba kullanmak veya ateş etmek, rölantiden çok daha fazla güncellemeyi tetikleyecektir.
 
 :::
 

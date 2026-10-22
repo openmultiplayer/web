@@ -1,7 +1,7 @@
 ---
 title: GetObjectType
 sidebar_label: GetObjectType
-description: "Obtenha o tipo de um objeto. (global ou jogador)"
+description: "Obtenha o tipo de um objeto (global ou jogador)."
 tags: ["object"]
 ---
 

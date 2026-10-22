@@ -50,3 +50,7 @@ Poznati Bug(ovi): Ne radi za CARMODTYPE_STEREO. Dijelove prednjeg branika spreml
 - [GetVehicleComponentType](GetVehicleComponentType): Provjeri tip komponente preko ID-a.
 - [OnVehicleMod](../callbacks/OnVehicleMod): Pozvano kada vozilo biva nadograđeno.
 - [OnEnterExitModShop](../callbacks/OnEnterExitModShop): Pozvano kada vozilo uđe ili izađe iz mod shopa.
+
+## Srodne Resources
+
+- [Slotovi komponenti](../resources/componentslots)

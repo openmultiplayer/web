@@ -72,20 +72,20 @@ Theoretically, you can create somewhat ridiculously huge arrays, but SA-MP puts 
 
 SA-MP limits characters that can be stored in a single string and keeps scripters from going overboard with working with text, luckily, it’s not as bad as it might seem, the list below breaks down some of these limits;
 
-|                     |                                                                                                                        |      |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---- |
-| **Text input**      | The text you input on the chat.                                                                                        | 128  |
-| **Text output**     | Text that output on the client's screen.                                                                               | 144  |
-| **Name**            | Player nickname / Username.                                                                                            | 24   |
-| **Textdraw string** | Pretty self-explanatory.                                                                                               | 1024 |
-| **Dialog info**     | The text displayed on all dialogs of the type `DIALOG_STYLE_MSGBOX`, `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`. | 4096 |
-| **Dialog caption**  | The caption/title on top of the dialog.                                                                                | 64   |
-| **Dialog input**    | The input box on `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`.                                                     | 128  |
-| **Dialog column**   | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER` and `DIALOG_STYLE_TABLIST`.                             | 128  |
-| **Dialog row**      | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER`, `DIALOG_STYLE_TABLIST` and `DIALOG_STYLE_LIST`.        | 256  |
-| **Chat bubble**     | The chat bubble that displays above the player's name tag.                                                             | 144  |
-| **Menu title**      | The GTA San Andreas native menu (_mostly used for shops_) header.                                                      | 31   |
-| **Menu item**       | The GTA San Andreas native menu (_mostly used for shops_) item/row.                                                    | 31   |
+| Type                | Description                                                                                                            | Limit |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----- |
+| **Text input**      | The text you input on the chat.                                                                                        | 128   |
+| **Text output**     | Text that output on the client's screen.                                                                               | 144   |
+| **Name**            | Player nickname / Username.                                                                                            | 24    |
+| **Textdraw string** | Pretty self-explanatory.                                                                                               | 1024  |
+| **Dialog info**     | The text displayed on all dialogs of the type `DIALOG_STYLE_MSGBOX`, `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`. | 4096  |
+| **Dialog caption**  | The caption/title on top of the dialog.                                                                                | 64    |
+| **Dialog input**    | The input box on `DIALOG_STYLE_INPUT` and `DIALOG_STYLE_PASSWORD`.                                                     | 128   |
+| **Dialog column**   | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER` and `DIALOG_STYLE_TABLIST`.                             | 128   |
+| **Dialog row**      | The characters on each column of `DIALOG_STYLE_TABLIST_HEADER`, `DIALOG_STYLE_TABLIST` and `DIALOG_STYLE_LIST`.        | 256   |
+| **Chat bubble**     | The chat bubble that displays above the player's name tag.                                                             | 144   |
+| **Menu title**      | The GTA San Andreas native menu (_mostly used for shops_) header.                                                      | 31    |
+| **Menu item**       | The GTA San Andreas native menu (_mostly used for shops_) item/row.                                                    | 31    |
 
 If somehow these limits have been exceeded, few inconveniences might occur, it can even crash/freeze the server in some cases (_e.g. long textdraw strings_), in some other cases, the text would just truncate like the Menu title (_if it reaches 32 characters, it truncates back to 30_) and items.
 
@@ -242,9 +242,8 @@ message_9[0] = EOS;
 
 As I said earlier on the tutorial, you can ignore assigning the null character, but it’s always there at empty cells, when you declare a new string, all of its cells are automatically occupied by the null terminator, so for instance, if I go ahead and declare this string `text[3]`, all of its cells are assigned the value of `0` by default, here’s a simple visual representation of the string’s content;
 
-|            |      |      |      |
-| ---------- | ---- | ---- | ---- |
 | Cells      | 0    | 1    | 2    |
+| ---------- | ---- | ---- | ---- |
 | ASCII code | 0    | 0    | 0    |
 | Characters | '\0' | '\0' | '\0' |
 
@@ -256,9 +255,8 @@ new text_1[8] = "Hello";
 
 Here's the string's content per cell;
 
-|            |     |     |     |     |     |      |      |      |
-| ---------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
 | Cells      | 0   | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ---------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
 | ASCII code | 72  | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | Characters | 'H' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
@@ -272,9 +270,8 @@ text_1[0] = '\0';
 
 Passing the string through an X-Ray scan will print out the following;
 
-|            |      |     |     |     |     |      |      |      |
-| ---------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
 | Cells      | 0    | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ---------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
 | ASCII code | 0    | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | Characters | '\0' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
@@ -444,17 +441,15 @@ That’s simply how it works, you declare a string with the size that it would n
 
 This is an approximate visual representation of `upkString`'s content;
 
-|            |                      |                      |                      |                      |                   |
-| ---------- | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
 | Cell       | 0                    | 1                    | 2                    | 3                    | 4                 |
+| ---------- | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
 | Bytes      | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3     |
 | Characters | \0 . \0 . \0 . **p** | \0 . \0 . \0 . **a** | \0 . \0 . \0 . **w** | \0 . \0 . \0 . **n** | \0 . \0 . \0 . \0 |
 
 And this is what `pkString_1` would be like in the second example;
 
-|            |                               |                   |
-| ---------- | ----------------------------- | ----------------- |
 | Cell       | 0                             | 1                 |
+| ---------- | ----------------------------- | ----------------- |
 | Bytes      | 0 . 1 . 2 . 3                 | 0 . 1 . 2 . 3     |
 | Characters | **p** . **a** . **w** . **n** | \0 . \0 . \0 . \0 |
 
@@ -727,7 +722,7 @@ That was the general approach on color embedding with dialog and client messages
 
 as mentioned above, **RGB** notation is not supported, but luckily, we have other ways to work around this problem, for textdraws, you can use the native [TextDrawColor](../scripting/functions/TextDrawColor) function to change the textdraw's color, but this the same to textdraw as **RGBA** color spaces are to client messages and dialogs, they can’t be embedded, for that, we use special combination of characters to refer to colors and few other symbols, you can see them [here](../scripting/resources/gametextstyles).
 
-|                |        |
+| Code           | Color  |
 | -------------- | ------ |
 | \~r\~          | Red    |
 | \~g\~          | Green  |
@@ -741,7 +736,7 @@ So, embedding colors can go in like this: **\~w\~Hello this is \~b\~blue \~w\~an
 
 You can use another combination of characters to play with color mixes, **\~h\~**, it makes a certain color lighter, here are few examples:
 
-|                                |                |
+| Code                           | Color          |
 | ------------------------------ | -------------- |
 | \~r\~\~h\~                     | Lighter red    |
 | \~r\~\~h\~\~h\~                | Red pink       |
@@ -762,21 +757,21 @@ The escape character is a character in which when prefixed to some character or 
 
 Escape sequences make it easier to express certain characters in the source code of your script, here is a table containing the escape sequences used in pawn:
 
-|                                              |              |
-| -------------------------------------------- | ------------ |
-| Audible beep (on server machines)            | `\a` or `\7` |
-| Backspace                                    | `\b`         |
-| Escape                                       | `\e`         |
-| Form feed                                    | `\f`         |
-| New line                                     | `\n`         |
-| Carriage return                              | `\r`         |
-| Horizontal tab                               | `\t`         |
-| Vertical tab                                 | `\v`         |
-| Backslash                                    | `\\`         |
-| Single quote                                 | `\'`         |
-| Double quote                                 | `\"`         |
-| Character code with decimal values "ddd"     | `\ddd;`      |
-| Character code with hexadecimal values "hhh" | `\xhhh;`     |
+| Description                                  | Escape sequence |
+| -------------------------------------------- | --------------- |
+| Audible beep (on server machines)            | `\a` or `\7`    |
+| Backspace                                    | `\b`            |
+| Escape                                       | `\e`            |
+| Form feed                                    | `\f`            |
+| New line                                     | `\n`            |
+| Carriage return                              | `\r`            |
+| Horizontal tab                               | `\t`            |
+| Vertical tab                                 | `\v`            |
+| Backslash                                    | `\\`            |
+| Single quote                                 | `\'`            |
+| Double quote                                 | `\"`            |
+| Character code with decimal values "ddd"     | `\ddd;`         |
+| Character code with hexadecimal values "hhh" | `\xhhh;`        |
 
 Let’s look at each one of them, after all, the best way to learn these sort of stuff rests within practicing them.
 
@@ -1132,7 +1127,7 @@ You can’t, however, change this to (`-`), but anything else is an acceptable p
 
 This portion here has absolutely nothing to do with escape sequences, but it is used in formatting textdraws and gametext, it’s better to put it here than anywhere else;
 
-|       |                                                                                                               |
+| Code  | Description                                                                                                   |
 | ----- | ------------------------------------------------------------------------------------------------------------- |
 | `~u~` | Up arrow (gray)                                                                                               |
 | `~d~` | Down arrow (gray)                                                                                             |
@@ -1159,9 +1154,8 @@ Placeholders are only used on functions that accept parameters, thus functions l
 
 Let us look at the different output types that can be used:
 
-|               |                                                 |
-| ------------- | ----------------------------------------------- |
 | **Specifier** | **Meaning**                                     |
+| ------------- | ----------------------------------------------- |
 | `%i`          | Integer (_whole number_)                        |
 | `%d`          | Integer (_whole number_)                        |
 | `%s`          | String                                          |
@@ -1629,9 +1623,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 Given the following list of connected players:
 
-|        |                                                 |
-| ------ | ----------------------------------------------- |
 | **ID** | **Player**                                      |
+| ------ | ----------------------------------------------- |
 | 0      | <span style={{color: 'red'}}>Compton</span>     |
 | 1      | <span style={{color: 'grey'}}>Dark</span>       |
 | 5      | <span style={{color: 'red'}}>Player1</span>     |

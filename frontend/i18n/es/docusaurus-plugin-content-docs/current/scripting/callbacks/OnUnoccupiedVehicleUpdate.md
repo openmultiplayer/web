@@ -1,6 +1,6 @@
 ---
-título: OnUnoccupiedVehicleUpdate
-descripción: Este callback se llama cuando el cliente de un jugador actualiza/sincroniza la posición de un vehículo que él no está conduciendo.
+title: OnUnoccupiedVehicleUpdate
+description: Este callback se llama cuando el cliente de un jugador actualiza/sincroniza la posición de un vehículo que él no está conduciendo.
 tags: ["vehicle"]
 ---
 

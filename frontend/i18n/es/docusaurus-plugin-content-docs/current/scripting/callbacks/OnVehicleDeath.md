@@ -1,6 +1,6 @@
 ---
-título: OnVehicleDeath
-descripción: Este callback se llama cuando un vehículo es destruido - ya sea explotando o siendo sumergido en el agua.
+title: OnVehicleDeath
+description: Este callback se llama cuando un vehículo es destruido - ya sea explotando o siendo sumergido en el agua.
 tags: ["vehicle"]
 ---
 

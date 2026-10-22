@@ -64,6 +64,6 @@ Vertex lightning مربوط به object ناپدید می‌شه اگه رنگ m
 
 ## ویرایش کننده‌های پیشرفته نقشه
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus
-- [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) by Nexius
-- [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) by RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus
+- [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) توسط Nexius
+- [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) توسط RedFusion

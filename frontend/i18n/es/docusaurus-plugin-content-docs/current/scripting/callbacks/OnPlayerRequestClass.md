@@ -1,6 +1,6 @@
 ---
-título: OnPlayerRequestClass
-descripción: Se llama cuando un jugador cambia de clase en la selección de clase (y cuando la selección de clase aparece por primera vez).
+title: OnPlayerRequestClass
+description: Se llama cuando un jugador cambia de clase en la selección de clase (y cuando la selección de clase aparece por primera vez).
 tags: ["player"]
 ---
 

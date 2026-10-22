@@ -1,6 +1,6 @@
 ---
-título: OnPlayerDisconnect
-descripción: Este callback se llama cuando un jugador se desconecta del servidor.
+title: OnPlayerDisconnect
+description: Este callback se llama cuando un jugador se desconecta del servidor.
 tags: ["player"]
 ---
 

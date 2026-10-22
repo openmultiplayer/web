@@ -39,7 +39,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::warning
 
-Player's camera positions are only updated once a second, unless aiming.It is recommended to set a 1 second timer if you wish to take action that relies on a player's camera position.
+Player's camera positions are only updated once a second, unless aiming. It is recommended to set a 1 second timer if you wish to take action that relies on a player's camera position.
 
 :::
 

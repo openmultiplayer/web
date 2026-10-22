@@ -84,7 +84,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Callback ini di panggil, rata-rata, 30 kali per detik, per pemain; hanya di gunakan ketika Anda tahu untuk apa itu (atau lebih penting lagi untuk TIDAK di masukkan). Frekuensi panggilan balik ini untuk setiap pemain bervariasi, tergantung pada apa yang dilakukan pemain. Mengemudi atau menembak akan memicu lebih banyak pembaruan daripada diam.
+- Callback ini di panggil, rata-rata, 30 kali per detik, per pemain; hanya di gunakan ketika Anda tahu untuk apa itu (atau lebih penting lagi untuk TIDAK di masukkan).
+- Frekuensi panggilan balik ini untuk setiap pemain bervariasi, tergantung pada apa yang dilakukan pemain. Mengemudi atau menembak akan memicu lebih banyak pembaruan daripada diam.
 
 :::
 

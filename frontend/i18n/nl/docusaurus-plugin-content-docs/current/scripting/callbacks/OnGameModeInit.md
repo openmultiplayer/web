@@ -9,6 +9,12 @@ tags: []
 
 Deze callback wordt getriggerd wanneer de gamemode start.
 
+## Returns
+
+Deze callback behandelt geen returns.
+
+Wordt altijd als eerste aangeroepen in gamemode.
+
 ## Voorbeelden
 
 ```c

@@ -9,6 +9,10 @@ tags: ["interior"]
 
 Desativa todas as entradas e saídas de interiores no jogo (as setas amarelas nas portas).
 
+## Retornos
+
+Esta função sempre retorna **true**.
+
 ## Exemplos
 
 ```c

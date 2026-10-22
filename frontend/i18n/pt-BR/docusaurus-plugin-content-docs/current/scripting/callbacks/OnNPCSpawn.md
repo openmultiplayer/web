@@ -19,3 +19,16 @@ public OnNPCSpawn()
     return 1;
 }
 ```
+
+## Funções Relacionadas
+
+- [NPC_Respawn](../functions/NPC_Respawn): Reaparece um NPC morto
+- [NPC_SetHealth](../functions/NPC_SetHealth): Define a saúde de NPC
+- [NPC_SetWeapon](../functions/NPC_SetWeapon): Defina a arma de NPC
+
+## Callbacks Relacionadas
+
+- [OnNPCCreate](OnNPCCreate): Chamado quando um NPC é criado
+- [OnNPCRespawn](OnNPCRespawn): Chamado quando um NPC reaparece
+- [OnNPCDeath](OnNPCDeath): Chamado quando um NPC morre
+- [OnPlayerSpawn](OnPlayerSpawn): Chamado quando um jogador surge

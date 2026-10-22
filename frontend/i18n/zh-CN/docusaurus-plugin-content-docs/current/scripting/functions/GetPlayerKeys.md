@@ -60,6 +60,10 @@ public OnPlayerUpdate(playerid)
 
 :::
 
+## 相关回调
+
+- [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange): 当玩家操作任何受支持的按键状态发生改变（按下/释放）时触发此回调。
+
 ## 相关资源
 
 - [按键位掩码对照表](../resources/keys)

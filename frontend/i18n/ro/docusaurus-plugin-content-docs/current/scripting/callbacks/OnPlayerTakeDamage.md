@@ -75,3 +75,7 @@ Armă va returna 37 (aruncător de flăcări) din orice sursă de foc (de exempl
 GetPlayerHealth și GetPlayerArmour vor returna vechile sume ale jucătorului înainte de acest apel invers. Verificați întotdeauna dacă issuerid este valid înainte de a-l folosi ca index de matrice.
 
 :::
+
+## Callback-uri similare
+
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Acest callback este apelat atunci când un jucător trage o lovitură dintr-o armă.

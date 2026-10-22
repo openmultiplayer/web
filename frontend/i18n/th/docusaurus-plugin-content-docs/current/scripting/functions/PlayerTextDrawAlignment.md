@@ -17,9 +17,7 @@ Set the text alignment of a player-textdraw.
 
 ## ส่งคืน
 
-Note
-
-For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at PlayerTextDrawTextSize.
+This function does not return any specific values.
 
 ## ตัวอย่าง
 

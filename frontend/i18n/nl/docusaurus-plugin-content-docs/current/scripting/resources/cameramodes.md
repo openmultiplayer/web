@@ -3,6 +3,8 @@ title: "Cameramodi"
 sidebar_label: "Cameramodi"
 ---
 
+## Beschrijving
+
 De volgende cameramodi worden gebruikt door [GetPlayerCameraMode](../functions/GetPlayerCameraMode). Sommige IDs zijn contextafhankelijk of dubbel gebruikt.
 
 | ID  | Definitie                  | Naam in gamefiles      | Beschrijving                                                          |

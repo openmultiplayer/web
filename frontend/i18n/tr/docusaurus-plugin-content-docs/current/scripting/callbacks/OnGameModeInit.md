@@ -9,6 +9,12 @@ tags: []
 
 Bu geri çağırma oyun modu başladığında tetiklenir.
 
+## Çalışınca Vereceği Sonuçlar
+
+Bu geri çağırma dönüşleri ele almaz.
+
+Her zaman ilk olarak gamemode'da çağrılır.
+
 ## Örnek
 
 ```c

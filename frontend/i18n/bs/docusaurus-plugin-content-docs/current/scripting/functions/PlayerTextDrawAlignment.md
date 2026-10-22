@@ -17,9 +17,7 @@ Postavlja poravnanje teksta player-textdrawa.
 
 ## Returns
 
-Note
-
-Za poravnanje 2 (u sredini) vrijednosti x i y TextSize moraju se zamijeniti, pogledajte bilješke na PlayerTextDrawTextSize.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 ## Primjeri
 

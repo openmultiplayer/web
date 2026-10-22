@@ -7,7 +7,7 @@ tags: ["3dtextlabel"]
 
 :::warning
 
-Ova funkcija je dodana u SA-MP 0.3.a i ne radi u nižim verzijama!
+Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
 :::
 

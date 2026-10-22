@@ -28,3 +28,8 @@ if (handle)
     fclose(handle);
 }
 ```
+
+## Gerelateerde Functies
+
+- [fopen](fopen): Een bestand openen (lezen/schrijven).
+- [fread](fread): Lees één regel uit een bestand.

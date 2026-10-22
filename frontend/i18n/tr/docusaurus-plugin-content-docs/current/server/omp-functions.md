@@ -416,3 +416,29 @@ Bu sayfa open.mp'ye eklenen tüm fonksiyonları ve callbackleri içerir
 | --------------------------------------------------------------- |
 | [IsValidCustomModel](../scripting/functions/IsValidCustomModel) |
 | [GetCustomModelPath](../scripting/functions/GetCustomModelPath) |
+
+## String
+
+| İsim     |
+| -------- |
+| strcopy  |
+| strequal |
+
+## Float
+
+| İsim     |
+| -------- |
+| strfloat |
+
+## File
+
+| İsim       |
+| ---------- |
+| ftell      |
+| fstat      |
+| frename    |
+| filecrc    |
+| fflush     |
+| fcreatedir |
+| fcopy      |
+| fattrib    |

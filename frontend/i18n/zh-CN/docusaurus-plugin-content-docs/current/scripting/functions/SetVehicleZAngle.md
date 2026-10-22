@@ -46,8 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-- 使用此函数将重置车辆的 X/Y 轴旋转（俯仰和横滚）
-- X/Y 轴旋转角度不可通过此函数设置
+- 使用此函数将重置车辆的 X/Y 轴旋转（俯仰和横滚）X/Y 轴旋转角度不可通过此函数设置
 - 此函数对无人驾驶的车辆无效（GTA 引擎原生限制）
 
 :::

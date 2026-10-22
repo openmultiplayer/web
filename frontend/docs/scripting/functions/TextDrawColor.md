@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::tip
 
-You can also use [GameText colors](../resources/gametextstyles) in textdraws (e.g. `~r~` `~g~` `~b~`).
+You can also use [GameText colors](../resources/gametextstyles) in textdraws.
 
 :::
 

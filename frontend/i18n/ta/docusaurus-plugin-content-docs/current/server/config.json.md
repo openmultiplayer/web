@@ -229,6 +229,22 @@ omp-server --default-config
 
 ![](https://i.ibb.co/86T8wYG/image.png)
 
+## Environment Variable Expansion
+
+```json
+{
+  "password": "${SERVER_PASSWORD}",
+  "logging": {
+    "enable": "${LOG_TOGGLE}:-true", # this defaults to true
+  },
+  "banners": {
+    "dark": "${BANNER_DARK}:-", # this defaults to no image on the banner
+    "light": "${BANNER_LIGHT}",
+  },
+
+}
+```
+
 <br />
 
 :::note

@@ -1,7 +1,7 @@
 ---
 title: OnVehicleDeath
 sidebar_label: OnVehicleDeath
-description: Bu fonksiyon, bir araç imha edildiğinde çağrılır. - patladığında veya araç suya girdiğinde.
+description: Bu fonksiyon, bir araç imha edildiğinde çağrılır.
 tags: ["vehicle"]
 ---
 

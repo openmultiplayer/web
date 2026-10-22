@@ -1,7 +1,7 @@
 ---
 title: TextDrawBackgroundColor
 sidebar_label: TextDrawBackgroundColor
-description: رنگ پس‌زمینه textdraw رو تنظیم کن (outline/shadow - نه رنگ باکس.
+description: رنگ پس‌زمینه textdraw رو تنظیم کن (outline/shadow - نه رنگ باکس).
 tags: ["textdraw"]
 ---
 
@@ -37,8 +37,7 @@ public OnGameModeInit()
 
 :::note
 
-- اگه از [TextDrawSetOutline](TextDrawSetOutline) با اندازه > 0 استفاده کنی، رنگ outline با رنگی که توی TextDrawBackgroundColor استفاده کردی یکی میشه.
-- تغییر مقدار color به نظر میرسه رنگی که توی [TextDrawColor](TextDrawColor) استفاده میشه رو تغییر میده.
+اگه از [TextDrawSetOutline](TextDrawSetOutline) با اندازه > 0 استفاده کنی، رنگ outline با رنگی که توی TextDrawBackgroundColor استفاده کردی یکی میشه. تغییر مقدار color به نظر میرسه رنگی که توی [TextDrawColor](TextDrawColor) استفاده میشه رو تغییر میده.
 
 :::
 

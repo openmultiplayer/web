@@ -1,6 +1,6 @@
 ---
-título: OnPlayerExitedMenu
-descripción: Se llama cuando un jugador sale de un menú.
+title: OnPlayerExitedMenu
+description: Se llama cuando un jugador sale de un menú.
 tags: ["player", "menu"]
 ---
 

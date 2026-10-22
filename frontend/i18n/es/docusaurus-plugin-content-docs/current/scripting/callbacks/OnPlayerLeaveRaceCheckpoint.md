@@ -1,6 +1,6 @@
 ---
-título: OnPlayerLeaveRaceCheckpoint
-descripcion: Este callback se llama cuando un jugador sale de un checkpoint de carreras.
+title: OnPlayerLeaveRaceCheckpoint
+description: Este callback se llama cuando un jugador sale de un checkpoint de carreras.
 tags: ["player", "checkpoint", "racecheckpoint"]
 ---
 

@@ -38,4 +38,9 @@ Esta callback é chamada toda vez que um jogador muda de munda virtual, mesmo qu
 
 :::
 
-## Funções Relacionadas
+## Callbacks Relacionadas
+
+Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma.
+
+- [OnPlayerConnect](OnPlayerConnect): Este callback é chamado quando um jogador se conecta ao servidor.
+- [OnPlayerDisconnect](OnPlayerDisconnect): Este callback é chamado quando um jogador sai do servidor.

@@ -61,5 +61,3 @@ You MUST use ARGB color format, not RGBA like used in client messages etc.
 
 - SetPlayerObjectMaterial: Replace the texture of a player object with the texture from another model in the game.
 - SetObjectMaterialText: Replace the texture of an object with text.
-- Ultimate Creator by Nexius
-- Fusez's Map Editor by RedFusion

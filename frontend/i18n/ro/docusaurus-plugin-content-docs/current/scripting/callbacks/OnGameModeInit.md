@@ -1,12 +1,18 @@
 ---
-titlu: OnGameModeInit
-descriere: Acest callback este apelat atunci când gamemode-ul a pornit.
+title: OnGameModeInit
+description: Acest callback este apelat atunci când gamemode-ul a pornit.
 tags: []
 ---
 
 ## Descriere
 
 Acest callback este apelat atunci când gamemode-ul a pornit.
+
+## Returnări
+
+Acest callback nu se ocupă de returnări.
+
+Este întotdeauna numit primul în modul de joc.
 
 ## Exemple
 
@@ -26,4 +32,7 @@ Această funcție poate fi utilizată și într-un filterscript pentru a detecta
 
 :::
 
-## Funcții relatate
+## Callback-uri similare
+
+- [OnFilterScriptInit](OnFilterScriptInit): Apelat când este încărcat un filterscript.
+- [OnFilterScriptExit](OnFilterScriptExit): Apelat când un filterscript este descărcat.

@@ -68,3 +68,7 @@ Bug(s) Conhecidos:
 ## Funções Relacionadas
 
 - [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): Retorna o vetor do último disparo realizado pelo jogador.
+
+## Recursos relacionados
+
+- [Tipos de Hit](../resources/bullethittypes)

@@ -1,7 +1,7 @@
 ---
 title: acos
 sidebar_label: acos
-description: .
+description: Dobijte obrnutu vrijednost kosinusa luka u radijanima.
 tags: []
 ---
 

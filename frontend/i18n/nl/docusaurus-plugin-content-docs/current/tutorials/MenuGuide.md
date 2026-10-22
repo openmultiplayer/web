@@ -56,10 +56,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 Uitleg [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | Menu-ID waar het item getoond wordt |
-| ------ | ----------------------------------- |
-| column | Kolomindex                          |
-| text   | Itemtekst                           |
+| Parameter | Betekenis                           |
+| --------- | ----------------------------------- |
+| menuid    | Menu-ID waar het item getoond wordt |
+| column    | Kolomindex                          |
+| text      | Itemtekst                           |
 
 ## Actie bij selectie
 

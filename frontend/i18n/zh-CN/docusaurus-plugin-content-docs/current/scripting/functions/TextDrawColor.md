@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::tip
 
-可在文本内容中使用[游戏文本颜色代码](../resources/gametextstyles)（例如 `~r~` 红色、`~g~` 绿色、`~b~` 蓝色）
+可在文本内容中使用[游戏文本颜色代码](../resources/gametextstyles)
 
 :::
 

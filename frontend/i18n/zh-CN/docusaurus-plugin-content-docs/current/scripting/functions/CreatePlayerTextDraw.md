@@ -46,6 +46,12 @@ public OnPlayerConnect(playerid)
 
 :::
 
+:::tip
+
+建议使用整数值而非小数坐标，以确保不同分辨率下的显示兼容性
+
+:::
+
 :::warning
 
 已知限制：

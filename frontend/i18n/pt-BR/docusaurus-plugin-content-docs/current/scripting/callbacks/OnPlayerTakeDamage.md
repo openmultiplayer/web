@@ -75,3 +75,13 @@ O ID da arma retornará 37 (Lança Chamas) para qualquer fonte que utilize fogo 
 GetPlayerHealth e GetPlayerArmour retornarão as quantidades específicas anteriores a chamada desta callback. Sempre verifique se o ID do jogador que causou o dano (issuerid) é válido antes de usá-lo como index de uma array.
 
 :::
+
+## Callbacks Relacionadas
+
+Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma.
+
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Essa callback é executada todas as vezes que o player realiza um disparo com uma arma.
+
+## Recursos relacionados
+
+- [Partes do Corpo](../resources/bodyparts)

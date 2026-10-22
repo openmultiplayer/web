@@ -1,7 +1,7 @@
 ---
 title: sendpacket
 sidebar_label: sendpacket
-description: یه packet ارسال می‌کنه. (تابع منسوخ)
+description: یه packet ارسال می‌کنه (تابع منسوخ).
 tags: ["datagram"]
 ---
 

@@ -1,6 +1,6 @@
 ---
-título: OnGameModeInit
-descripción: Este callback es desencadenado cuando el gamemode inicia.
+title: OnGameModeInit
+description: Este callback es desencadenado cuando el gamemode inicia.
 tags: []
 ---
 

@@ -75,7 +75,7 @@ public OnPlayerConnect (playerid)
     return 1;
 }
 
-// Output :
+// Output:
 // The value is 10
 // The value is 100
 
@@ -132,14 +132,14 @@ Acum că știți cum să declarați variabile, trebuie să cunoașteți regulile
 #### Exemple:
 
 ```c
-new new; // Incorrect : Using a reserved word
+new new; // Incorrect: Using a reserved word
 new _new; // Correct
 
-new 10letters; // Incorrect : Name starting with a number
+new 10letters; // Incorrect: Name starting with a number
 new letters10; // Correct
 new letters_10; // Correct
 
-new my name; // Incorrect : Space in the name
+new my name; // Incorrect: Space in the name
 new my_name; // Correct
 
 new !nternet; // Incorrect
@@ -210,7 +210,7 @@ public OnFilterScriptInit ()
     return 1;
 }
 
-// Output :
+// Output:
 a
 1
 1.000000

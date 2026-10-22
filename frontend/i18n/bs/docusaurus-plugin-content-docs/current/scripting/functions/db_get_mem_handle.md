@@ -13,7 +13,7 @@ Ova funkcija je dodana u SA-MP 0.3.7 R1 i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Dobiva memorijski upravitelj za vezu SQLite databaze koja je otvorena s [db_open](db_open)].
+Dobiva memorijski upravitelj za vezu SQLite databaze koja je otvorena s [db_open](db_open).
 
 | Ime   | Deskripcija                                           |
 | ----- | ----------------------------------------------------- |

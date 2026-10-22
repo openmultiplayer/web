@@ -70,7 +70,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) توسط Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) توسط RedFusion
-- [SetObjectMaterialText Editor](https://sampforum.blast.hk/showthread.php?tid=614667) توسط RIDE2DAY
 
 ## منابع مرتبط
 

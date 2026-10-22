@@ -1,7 +1,7 @@
 ---
 title: HasPlayerObjectCameraCollision
 sidebar_label: HasPlayerObjectCameraCollision
-description: "Verifica se um objeto do jogador tem colisão de câmera habilitada. (SetPlayerObjectNoCameraCollision)"
+description: "Verifica se um objeto do jogador tem colisão de câmera habilitada (SetPlayerObjectNoCameraCollision)."
 tags: ["player", "object", "playerobject"]
 ---
 

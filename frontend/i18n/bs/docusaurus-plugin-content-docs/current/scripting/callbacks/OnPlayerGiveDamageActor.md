@@ -68,3 +68,7 @@ Ova funkcije nije pozvana ako je aktor postavljen na "neranjiv" (invulnerable) (
 
 - [OnActorStreamOut](OnActorStreamOut): Poziva se kada se aktor pojavi u igračevom klijentu.
 - [OnPlayerStreamIn](OnPlayerStreamIn): Poziva se kada se aktor prestane prikazivati na igračevom klijentu.
+
+## Srodne Resources
+
+- [Dijelovi tijela](../resources/bodyparts)

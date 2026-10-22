@@ -29,8 +29,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp("/jump", cmdtext))
     {
-    SetPlayerVelocity(playerid, 0.0, 0.0, 0.2); // Forsira igrača da skoči (Z brzina + 0.2)
-    return 1;
+        SetPlayerVelocity(playerid, 0.0, 0.0, 0.2); // Forsira igrača da skoči (Z brzina + 0.2)
+        return 1;
     }
     return 0;
 }

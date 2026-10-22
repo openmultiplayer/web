@@ -2,7 +2,7 @@
 title: AddMenuItem
 sidebar_label: AddMenuItem
 description: Dodaje element do konkretnego menu.
-Tags: ["menu"]
+tags: ["menu"]
 ---
 
 ## Opis

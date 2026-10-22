@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::tip
 
-Você também pode usar [cores do Gametext](../resources/gametextstyles) em textdraws. (por exemplo, `~r~` `~g~` `~b~`)
+Você também pode usar [cores do Gametext](../resources/gametextstyles) em textdraws.
 
 :::
 

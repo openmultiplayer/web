@@ -1,13 +1,13 @@
 ---
 title: min
 sidebar_label: min
-description: .
+description: Funkcija korištena za usporedbu vrijednosti.
 tags: []
 ---
 
 ## Deskripcija
 
-Function used to compare the values.
+Funkcija korištena za usporedbu vrijednosti.
 
 | Ime | Deskripcija                |
 | --- | -------------------------- |

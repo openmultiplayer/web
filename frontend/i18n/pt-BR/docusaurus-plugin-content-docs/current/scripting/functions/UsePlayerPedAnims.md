@@ -10,6 +10,10 @@ tags: ["player"]
 
 Usa animação de caminhada padrão do jogador (animação da skin CJ) em vez de animações personalizadas para cada skin (por exemplo, patinação para skins de skatista).
 
+## Retornos
+
+Esta função não retorna nenhum valor específico.
+
 ## Exemplos
 
 ```c

@@ -19,3 +19,7 @@ public OnNPCSpawn()
     return 1;
 }
 ```
+
+## Các Callback Liên Quan
+
+- [OnPlayerSpawn](OnPlayerSpawn): Callback này được gọi khi người chơi xuất hiện.

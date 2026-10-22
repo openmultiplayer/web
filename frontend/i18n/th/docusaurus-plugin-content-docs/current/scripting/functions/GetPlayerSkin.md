@@ -27,7 +27,8 @@ playerskin = GetPlayerSkin(playerid);
 
 :::note
 
-Returns the new skin after SetSpawnInfo is called but before the player actually respawns to get the new skin. Returns the old skin if the player was spawned through SpawnPlayer function.
+- Returns the new skin after SetSpawnInfo is called but before the player actually respawns to get the new skin.
+- Returns the old skin if the player was spawned through SpawnPlayer function.
 
 :::
 

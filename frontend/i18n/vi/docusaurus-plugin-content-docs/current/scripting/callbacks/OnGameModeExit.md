@@ -9,6 +9,12 @@ tags: []
 
 Callback này được gọi khi một gamemode kết thúc, qua 'gmx', khi máy chủ bị tắt, hoặc GameModeExit.
 
+## Trả Về
+
+Callback này không xử lý trả về.
+
+Callback này luôn được gọi đầu tiên trong gamemode.
+
 ## Ví Dụ
 
 ```c
@@ -29,9 +35,8 @@ Hàm này cũng có thể được sử dụng trong một filterscript để ph
 
 :::warning
 
-Khi sử dụng `OnGameModeExit` cùng với lệnh console 'rcon gmx', hãy lưu ý rằng có thể xảy ra các lỗi của client.
-
-Một ví dụ về điều này là việc gọi [RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer) quá mức trong [OnGameModeInit](OnGameModeInit) có thể dẫn đến sự cố client. Callback này sẽ KHÔNG được gọi nếu máy chủ bị lỗi hoặc quy trình bị kết thúc bằng các phương pháp khác, chẳng hạn như sử dụng lệnh `kill` trên Linux hoặc nhấn nút đóng trên console của Windows.
+- Khi sử dụng `OnGameModeExit` cùng với lệnh console 'rcon gmx', hãy lưu ý rằng có thể xảy ra các lỗi của client. Một ví dụ về điều này là việc gọi [RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer) quá mức trong [OnGameModeInit](OnGameModeInit) có thể dẫn đến sự cố client.
+- Callback này sẽ KHÔNG được gọi nếu máy chủ bị lỗi hoặc quy trình bị kết thúc bằng các phương pháp khác, chẳng hạn như sử dụng lệnh `kill` trên Linux.
 
 :::
 

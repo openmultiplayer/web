@@ -58,10 +58,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 The explanation for [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | The menuid of the menu where the item shall be displayed |
-| ------ | -------------------------------------------------------- |
-| column | The column in which the item shall be shown              |
-| text   | The text of the item                                     |
+| Parameter | Specifies                                                |
+| --------- | -------------------------------------------------------- |
+| menuid    | The menuid of the menu where the item shall be displayed |
+| column    | The column in which the item shall be shown              |
+| text      | The text of the item                                     |
 
 ## Creating the effects for the items
 
@@ -133,8 +134,6 @@ if(CurrentMenu == teleportmenu)
     }
 }
 ```
-
-Now to explain how the `switch` works: at the top there is `switch(row)`, which defines what to check, in this case the menu row. Then, between the braces under `switch`, there are `case`s. These are the different values that the variable in the `switch` brackets can have, and you define them yourself. Under each `case` are more braces; this is where you put the code that should run if that case is the right one. See [Control Structures](../scripting/language/ControlStructures#switch) for more about `switch`.
 
 ## Last steps
 

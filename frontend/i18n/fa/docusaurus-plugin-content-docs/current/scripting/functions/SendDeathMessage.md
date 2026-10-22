@@ -39,7 +39,9 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-Death message ها می‌تونن با استفاده از یه player ID معتبر برای 'playerid' که متصل نیست پاک بشن. برای نمایش death message فقط برای یک بازیکن، از [SendDeathMessageToPlayer](SendDeathMessageToPlayer) استفاده کن. می‌تونی از NPC ها برای ایجاد death reason های سفارشی خودت استفاده کنی.
+- Death message ها می‌تونن با استفاده از یه player ID معتبر برای 'playerid' که متصل نیست پاک بشن.
+- برای نمایش death message فقط برای یک بازیکن، از [SendDeathMessageToPlayer](SendDeathMessageToPlayer) استفاده کن.
+- می‌تونی از NPC ها برای ایجاد death reason های سفارشی خودت استفاده کنی.
 
 :::
 

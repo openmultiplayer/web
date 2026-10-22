@@ -1,7 +1,7 @@
 ---
 title: TextDrawBackgroundColor
 sidebar_label: TextDrawBackgroundColor
-description: 调整文本绘图区域的背景颜色（轮廓/阴影部分，非盒子背景。盒子颜色请使用[TextDrawBoxColor](TextDrawBoxColor)）
+description: 调整文本绘图区域的背景颜色（轮廓/阴影部分，非盒子背景）
 tags: ["文本绘图"]
 ---
 
@@ -36,8 +36,7 @@ public OnGameModeInit()
 
 :::note
 
-- 当使用[TextDrawSetOutline](TextDrawSetOutline)且尺寸>0 时，轮廓颜色将与此函数设置的颜色一致
-- 修改颜色值会影响[TextDrawColor](TextDrawColor)的文本颜色表现
+当使用[TextDrawSetOutline](TextDrawSetOutline)且尺寸>0 时，轮廓颜色将与此函数设置的颜色一致修改颜色值会影响[TextDrawColor](TextDrawColor)的文本颜色表现
 
 :::
 

@@ -9,6 +9,12 @@ tags: []
 
 Ang callback na ito ay nag-ti-trigger kapag nagsisimulang mag run ang isang gamemode.
 
+## Returns
+
+Hindi nag rereturn ang callback na ito.
+
+Ito ay palaging itinatawag una sa mga gamemode.
+
 ## Examples
 
 ```c

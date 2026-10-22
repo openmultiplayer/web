@@ -54,8 +54,6 @@ Use the `rcon.password` value from [config.json](config.json) when logging in.
 
 ### Adding Bans
 
-A ban prevents an IP address from connecting to the server.
-
 ##### bans.json
 
 bans.json is the file used for storing bans, including the following information about the ban:
@@ -171,8 +169,6 @@ To unban them, simply use the `unbanip` command.
 ### RCON Commands
 
 Type cmdlist for commands (or, varlist for variables) making use of the RCON in-game (`/rcon cmdlist`).
-
-You do not need to type the `[ ]` brackets; they are just there to highlight the parameter.
 
 These are the functions that you as admin can use:
 

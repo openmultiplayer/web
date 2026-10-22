@@ -1,7 +1,7 @@
 ---
 title: atan2
 sidebar_label: atan2
-description: .
+description: Dobijte obrnutu vrijednost tangente luka od y / x, izraženu u radijanima.
 tags: []
 ---
 

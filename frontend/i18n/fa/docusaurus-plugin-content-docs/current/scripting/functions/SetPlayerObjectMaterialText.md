@@ -59,6 +59,6 @@ Color embedding می‌تونه برای چندین رنگ توی متن است�
 
 ## ویرایش کننده‌های پیشرفته نقشه
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus
-- [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) by Nexius
-- [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) by RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus
+- [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) توسط Nexius
+- [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) توسط RedFusion

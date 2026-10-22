@@ -235,3 +235,10 @@ description: open.mp 新增函数与回调说明。
 | [PlayerTextDrawIsBox](../scripting/functions/PlayerTextDrawIsBox)                                       |
 | [PlayerTextDrawIsProportional](../scripting/functions/PlayerTextDrawIsProportional)                     |
 | [PlayerTextDrawIsSelectable](../scripting/functions/PlayerTextDrawIsSelectable)                         |
+
+## 自定义模型
+
+| 参数                                                            |
+| --------------------------------------------------------------- |
+| [IsValidCustomModel](../scripting/functions/IsValidCustomModel) |
+| [GetCustomModelPath](../scripting/functions/GetCustomModelPath) |

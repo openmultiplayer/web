@@ -33,7 +33,8 @@ public OnPlayerSpawn(playerid)
 
 :::note
 
-Igrači ne mogu oštetiti / ubiti igrače iz istog tima, osim ako nožem ne prerežu grkljan. Od SA-MP 0.3x, igrači takođe ne mogu oštetiti vozila koja vozi igrač iz istog tima. To se može omogućiti pomoću EnableVehicleFriendlyFire. 255 (ili NO_TEAM) je zadani tim koji može pucati na druge igrače, a ne na 0.
+- Igrači ne mogu oštetiti / ubiti igrače iz istog tima, osim ako nožem ne prerežu grkljan. Od SA-MP 0.3x, igrači takođe ne mogu oštetiti vozila koja vozi igrač iz istog tima. To se može omogućiti pomoću EnableVehicleFriendlyFire.
+- 255 (ili NO_TEAM) je zadani tim koji može pucati na druge igrače, a ne na 0.
 
 :::
 

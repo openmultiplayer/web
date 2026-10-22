@@ -42,3 +42,13 @@ public OnGameModeInit()
 - [AddStaticVehicleEx](AddStaticVehicleEx): Adiciona um veículo fixo com tempo de respawn específico.
 - [CreateVehicle](CreateVehicle): Cria um veículo.
 - [DestroyVehicle](DestroyVehicle): Destrói um veículo.
+
+## Callbacks Relacionadas
+
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Chamada quando um veículo reaparece.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Chamando quando um veículo alterna a sirene ligada/desligada.
+
+## Recursos relacionados
+
+- [Vehicle Models](../resources/vehicleid): Lista abrangente de todos os modelos de veículos disponíveis no jogo.
+- [Vehicle Colour IDs](../resources/vehiclecolorid): Lista de todos os IDs de cores de veículos.

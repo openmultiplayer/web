@@ -1,7 +1,7 @@
 ---
 title: GetObjectType
 sidebar_label: GetObjectType
-description: نوع یک آبجکت رو می‌گیره. (global یا player)
+description: نوع یک آبجکت رو می‌گیره (global یا player).
 tags: ["object"]
 ---
 

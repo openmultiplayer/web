@@ -1,6 +1,6 @@
 ---
-título: OnEnterExitModShop
-descripción: Este callback se llama cuando un jugador entra o sale de un taller de modificación.
+title: OnEnterExitModShop
+description: Este callback se llama cuando un jugador entra o sale de un taller de modificación.
 tags: []
 ---
 

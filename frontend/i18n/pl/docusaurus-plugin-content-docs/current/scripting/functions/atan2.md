@@ -1,7 +1,7 @@
 ---
 title: atan2
 sidebar_label: atan2
-description: .
+description: Podaje odwróconą wartość arcus tangensa z y/x w radianach.
 tags: []
 ---
 

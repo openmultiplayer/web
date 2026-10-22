@@ -88,6 +88,7 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Deze callback wordt gemiddeld ~30 keer per seconde per speler aangeroepen; gebruik hem alleen waarvoor hij bedoeld is. De frequentie varieert per activiteit (rijden/schieten meer dan idle).
+- Deze callback wordt gemiddeld ~30 keer per seconde per speler aangeroepen; gebruik hem alleen waarvoor hij bedoeld is.
+- De frequentie varieert per activiteit (rijden/schieten meer dan idle).
 
 :::

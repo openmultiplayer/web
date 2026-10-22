@@ -1,7 +1,6 @@
 ---
 title: 服务器变量系统
 sidebar_label: 服务器变量系统
-
 description: 服务器变量系统（简称SVar）是一种高效动态创建全局服务器变量的新方法，支持在游戏模式(GameMode)与滤镜脚本(FilterScript)中同时使用。
 ---
 

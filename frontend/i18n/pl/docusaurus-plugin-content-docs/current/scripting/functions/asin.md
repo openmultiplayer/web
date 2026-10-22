@@ -1,7 +1,7 @@
 ---
 title: asin
 sidebar_label: asin
-description: .
+description: Podaje odwróconą wartość arcus sinusa w radianach.
 tags: []
 ---
 

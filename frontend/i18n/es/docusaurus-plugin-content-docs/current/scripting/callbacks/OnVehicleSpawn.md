@@ -1,6 +1,6 @@
 ---
-título: OnVehicleSpawn
-descripción: Este callback se llama cuando un vehículo reaparece.
+title: OnVehicleSpawn
+description: Este callback se llama cuando un vehículo reaparece.
 tags: ["vehicle"]
 ---
 

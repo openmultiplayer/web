@@ -43,3 +43,13 @@ public OnGameModeInit()
 
 - [AddStaticVehicle](AddStaticVehicle): Adiciona um veículo fixo.
 - [CreateVehicle](CreateVehicle): Cria um veículo.
+
+## Callbacks Relacionadas
+
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Chamada quando um veículo reaparece.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Chamando quando um veículo alterna a sirene ligada/desligada.
+
+## Recursos relacionados
+
+- [Vehicle Models](../resources/vehicleid): Lista abrangente de todos os modelos de veículos disponíveis no jogo.
+- [Vehicle Colour IDs](../resources/vehiclecolorid): Lista de todos os IDs de cores de veículos.

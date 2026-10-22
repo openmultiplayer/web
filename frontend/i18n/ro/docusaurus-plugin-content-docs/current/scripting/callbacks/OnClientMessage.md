@@ -1,6 +1,6 @@
 ---
-titlu: OnClientMessage
-descriere: Acest callback este apelat oricand NPC-ul vede un ClientMessage
+title: OnClientMessage
+description: Acest callback este apelat oricand NPC-ul vede un ClientMessage
 tags: []
 ---
 

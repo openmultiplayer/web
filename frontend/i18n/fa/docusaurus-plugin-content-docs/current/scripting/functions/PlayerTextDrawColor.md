@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-می‌تونی از رنگ‌های Gametext هم در textdraw ها استفاده کنی. (مثل `~r~` `~g~` `~b~`)
+می‌تونی از رنگ‌های Gametext هم در textdraw ها استفاده کنی.
 
 :::
 

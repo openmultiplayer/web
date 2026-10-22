@@ -58,8 +58,9 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 [AddMenuItem](../scripting/functions/AddMenuItem)参数说明：
 
-| menuid | 目标菜单的 ID |
+| 参数   | 说明          |
 | ------ | ------------- |
+| menuid | 目标菜单的 ID |
 | column | 显示项的列号  |
 | text   | 项文本        |
 

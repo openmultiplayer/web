@@ -1,6 +1,6 @@
 ---
-título: OnPlayerStateChange
-descripción: Este callback se llama cuando un jugador cambia de estado.
+title: OnPlayerStateChange
+description: Este callback se llama cuando un jugador cambia de estado.
 tags: ["player"]
 ---
 

@@ -72,20 +72,20 @@ Teoretic, puteți crea tablouri oarecum ridicol de mari, dar SA-MP pune puține 
 
 SA-MP limitează caracterele care pot fi stocate într-un singur șir și împiedică scripterii să meargă peste bord cu lucrul cu textul, din fericire, nu este atât de rău pe cât ar părea, lista de mai jos descompune unele dintre aceste limite;
 
-|                     |                                                                                                                           |      |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---- |
-| **Text input**      | Textul introdus în chat.                                                                                                  | 128  |
-| **Text output**     | Text care se afișează pe ecranul clientului.                                                                              | 144  |
-| **Name**            | Pseudonimul jucătorului / numele de utilizator.                                                                           | 24   |
-| **Textdraw string** | Destul de auto-explicativ.                                                                                                | 1024 |
-| **Dialog info**     | Textul afișat pe toate casetele de dialog de tipul `DIALOG_STYLE_MSGBOX`,`DIALOG_STYLE_INPUT` și `DIALOG_STYLE_PASSWORD`. | 4096 |
-| **Dialog caption**  | Legenda / titlul din partea de sus a dialogului.                                                                          | 64   |
-| **Dialog input**    | Caseta de introducere de pe „DIALOG_STYLE_INPUT” și „DIALOG_STYLE_PASSWORD”.                                              | 128  |
-| **Dialog columnt**  | Caracterele din fiecare coloană din „DIALOG_STYLE_TABLIST_HEADER” și „DIALOG_STYLE_TABLIST”.                              | 128  |
-| **Dialog row**      | Caracterele din fiecare coloană din "DIALOG_STYLE_TABLIST_HEADER", "DIALOG_STYLE_TABLIST" și "DIALOG_STYLE_LIST".         | 256  |
-| **Chat bubble**     | Balonul de chat care se afișează deasupra etichetei de nume a jucătorului.                                                | 144  |
-| **Menu title**      | Antetul meniului nativ GTA San Andreas (cel mai utilizat pentru magazine\_).                                              | 31   |
-| **Menu item**       | Meniul nativ GTA San Andreas (_ cel mai utilizat pentru magazine_) element / rând.                                        | 31   |
+| Tip                 | Descriere                                                                                                                 | Limită |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------ |
+| **Text input**      | Textul introdus în chat.                                                                                                  | 128    |
+| **Text output**     | Text care se afișează pe ecranul clientului.                                                                              | 144    |
+| **Name**            | Pseudonimul jucătorului / numele de utilizator.                                                                           | 24     |
+| **Textdraw string** | Destul de auto-explicativ.                                                                                                | 1024   |
+| **Dialog info**     | Textul afișat pe toate casetele de dialog de tipul `DIALOG_STYLE_MSGBOX`,`DIALOG_STYLE_INPUT` și `DIALOG_STYLE_PASSWORD`. | 4096   |
+| **Dialog caption**  | Legenda / titlul din partea de sus a dialogului.                                                                          | 64     |
+| **Dialog input**    | Caseta de introducere de pe „DIALOG_STYLE_INPUT” și „DIALOG_STYLE_PASSWORD”.                                              | 128    |
+| **Dialog columnt**  | Caracterele din fiecare coloană din „DIALOG_STYLE_TABLIST_HEADER” și „DIALOG_STYLE_TABLIST”.                              | 128    |
+| **Dialog row**      | Caracterele din fiecare coloană din "DIALOG_STYLE_TABLIST_HEADER", "DIALOG_STYLE_TABLIST" și "DIALOG_STYLE_LIST".         | 256    |
+| **Chat bubble**     | Balonul de chat care se afișează deasupra etichetei de nume a jucătorului.                                                | 144    |
+| **Menu title**      | Antetul meniului nativ GTA San Andreas (cel mai utilizat pentru magazine\_).                                              | 31     |
+| **Menu item**       | Meniul nativ GTA San Andreas (_ cel mai utilizat pentru magazine_) element / rând.                                        | 31     |
 
 Dacă cumva aceste limite au fost depășite, s-ar putea să apară puține inconveniente, acesta poate chiar să blocheze / înghețe serverul în unele cazuri (de exemplu, șiruri lungi de desen text), în alte cazuri, textul s-ar trunchia ca titlul meniului (_daca ajunge la 32 de caractere, se trunchiază la 30_) și articole.
 
@@ -241,9 +241,8 @@ message_9[0] = EOS;
 
 După cum am spus mai devreme în tutorial, puteți ignora atribuirea caracterului nul, dar este întotdeauna acolo la celulele goale, atunci când declarați un șir nou, toate celulele sale sunt ocupate automat de terminatorul nul, deci, de exemplu, dacă merg înainte și declarați acest șir `text[3]`, tuturor celulelor sale li se atribuie valoarea `0` în mod implicit, iată o simplă reprezentare vizuală a conținutului șirului;
 
-|            |      |      |      |
-| ---------- | ---- | ---- | ---- |
 | Cells      | 0    | 1    | 2    |
+| ---------- | ---- | ---- | ---- |
 | ASCII code | 0    | 0    | 0    |
 | Characters | '\0' | '\0' | '\0' |
 
@@ -255,9 +254,8 @@ new text_1[8] = "Hello";
 
 Iată conținutul șirului pe celulă;
 
-|            |     |     |     |     |     |      |      |      |
-| ---------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
 | Cells      | 0   | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ---------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
 | ASCII code | 72  | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | Characters | 'H' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
@@ -271,9 +269,8 @@ text_1[0] = '\0';
 
 Trecerea șirului printr-o scanare cu raze X va imprima următoarele;
 
-|            |      |     |     |     |     |      |      |      |
-| ---------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
 | Cells      | 0    | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ---------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
 | ASCII code | 0    | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | Characters | '\0' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
@@ -443,17 +440,15 @@ Așa funcționează pur și simplu, declarați un șir cu dimensiunea pe care ar
 
 Aceasta este o reprezentare vizuală aproximativă a conținutului `upkString`;
 
-|            |                      |                      |                      |                      |                   |
-| ---------- | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
 | Cell       | 0                    | 1                    | 2                    | 3                    | 4                 |
+| ---------- | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
 | Bytes      | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3     |
 | Characters | \0 . \0 . \0 . **p** | \0 . \0 . \0 . **a** | \0 . \0 . \0 . **w** | \0 . \0 . \0 . **n** | \0 . \0 . \0 . \0 |
 
 Și așa ar fi `pkString_1` în al doilea exemplu;
 
-|            |                               |                   |
-| ---------- | ----------------------------- | ----------------- |
 | Cell       | 0                             | 1                 |
+| ---------- | ----------------------------- | ----------------- |
 | Bytes      | 0 . 1 . 2 . 3                 | 0 . 1 . 2 . 3     |
 | Characters | **p** . **a** . **w** . **n** | \0 . \0 . \0 . \0 |
 
@@ -726,21 +721,21 @@ Aceasta a fost abordarea generală a încorporării culorilor cu șiruri de dial
 
 așa cum s-a menționat mai sus, notația **RGB** nu este acceptată, dar din fericire, avem alte modalități de a rezolva această problemă, pentru textdraws, puteți utiliza funcția nativă [TextDrawColor](../scripting/functions/TextDrawColor) pentru schimbați culoarea textului de desen, dar același lucru cu textul de desenat ca spațiile de culoare ** RGBA ** sunt pentru mesajele și dialogurile clientului, acestea nu pot fi încorporate, pentru aceasta, folosim o combinație specială de caractere pentru a ne referi la culori și alte câteva simboluri , le puteți vedea [aici](../scripting/resources/gametextstyles).
 
-|                |        |
-| -------------- | ------ |
-| \~r\~          | Red    |
-| \~g\~          | Green  |
-| \~b\~          | Blue   |
-| \~w\~ or \~s\~ | White  |
-| \~p\~          | Purple |
-| \~l\~          | Black  |
-| \~y\~          | Yellow |
+| Cod            | Culoare |
+| -------------- | ------- |
+| \~r\~          | Red     |
+| \~g\~          | Green   |
+| \~b\~          | Blue    |
+| \~w\~ or \~s\~ | White   |
+| \~p\~          | Purple  |
+| \~l\~          | Black   |
+| \~y\~          | Yellow  |
 
 Deci, culorile de încorporare pot merge astfel: **\~w\~ Bună ziua acesta este \~b\~ albastru \~w\~ și acesta este \~ r\~ roșu**
 
 Puteți utiliza o altă combinație de caractere pentru a vă juca cu combinații de culori, **\~h\~**, face o anumită culoare mai deschisă, iată câteva exemple:
 
-|                                |                  |
+| Cod                            | Culoare          |
 | ------------------------------ | ---------------- |
 | \~r\~\~h\~                     | Roșu mai deschis |
 | \~r\~\~h\~\~h\~                | Roșu roz         |
@@ -761,21 +756,21 @@ Caracterul de evadare este un caracter în care, atunci când este prefixat la u
 
 Secvențele de evacuare facilitează exprimarea anumitor caractere în codul sursă al scriptului dvs., iată un tabel care conține secvențele de evadare utilizate în pawn:
 
-|                                               |              |
-| --------------------------------------------- | ------------ |
-| Bip sonor (pe mașini server)                  | `\a` or `\7` |
-| Backspace                                     | `\b`         |
-| Evadare                                       | `\e`         |
-| Formular de alimentare                        | `\f`         |
-| Linie nouă                                    | `\n`         |
-| Retur transport                               | `\r`         |
-| Filă orizontală                               | `\t`         |
-| Fila verticală                                | `\v`         |
-| Backslash                                     | `\\`         |
-| Citat unic                                    | `\'`         |
-| Citat dublu                                   | `\"`         |
-| Cod de caractere cu valori zecimale "ddd"     | `\ddd;`      |
-| Cod de caractere cu valori hexazecimale "hhh" | `\xhhh;`     |
+| Descriere                                     | Secvență de evadare |
+| --------------------------------------------- | ------------------- |
+| Bip sonor (pe mașini server)                  | `\a` or `\7`        |
+| Backspace                                     | `\b`                |
+| Evadare                                       | `\e`                |
+| Formular de alimentare                        | `\f`                |
+| Linie nouă                                    | `\n`                |
+| Retur transport                               | `\r`                |
+| Filă orizontală                               | `\t`                |
+| Fila verticală                                | `\v`                |
+| Backslash                                     | `\\`                |
+| Citat unic                                    | `\'`                |
+| Citat dublu                                   | `\"`                |
+| Cod de caractere cu valori zecimale "ddd"     | `\ddd;`             |
+| Cod de caractere cu valori hexazecimale "hhh" | `\xhhh;`            |
 
 Să ne uităm la fiecare dintre ei, la urma urmei, cel mai bun mod de a învăța acest gen de lucruri stă în practicarea lor.
 
@@ -1131,7 +1126,7 @@ Cu toate acestea, nu poți schimba acest lucru în (`-`), dar orice altceva este
 
 Această porțiune de aici nu are absolut nimic de-a face cu secvențele de evadare, dar este utilizată la formatarea textelor și a gametextului, este mai bine să o puneți aici decât oriunde altundeva;
 
-|       |                                                                                                                               |
+| Cod   | Descriere                                                                                                                     |
 | ----- | ----------------------------------------------------------------------------------------------------------------------------- |
 | `~u~` | Săgeată sus (gri)                                                                                                             |
 | `~d~` | Săgeată în jos (gri)                                                                                                          |

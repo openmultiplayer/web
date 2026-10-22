@@ -1,7 +1,7 @@
 ---
 title: GetPlayerWeaponData
 sidebar_label: GetPlayerWeaponData
-description: "Pegue a arma e a munição no slot de arma de um jogador específico (por exemplo,"
+description: "Pegue a arma e a munição no slot de arma de um jogador específico (por exemplo, a arma no slot 'SMG')."
 tags: ["player"]
 ---
 

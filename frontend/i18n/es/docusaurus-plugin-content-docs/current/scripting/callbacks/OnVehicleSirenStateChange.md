@@ -1,6 +1,6 @@
 ---
-título: OnVehicleSirenStateChange
-descripción: Este callback se llama cuando la sirena de un vehículo es alternada.
+title: OnVehicleSirenStateChange
+description: Este callback se llama cuando la sirena de un vehículo es alternada.
 tags: ["vehicle"]
 ---
 

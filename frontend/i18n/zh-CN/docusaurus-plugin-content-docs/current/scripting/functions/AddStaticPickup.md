@@ -52,6 +52,10 @@ public OnGameModeInit()
 - [CreatePickup](CreatePickup): 创建可追踪的拾取物
 - [DestroyPickup](DestroyPickup): 销毁拾取物
 
+## 相关回调
+
+- [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup): 当玩家拾取拾取物时调用
+
 ## 相关资源
 
 - [拾取物 ID 列表](../resources/pickupids)

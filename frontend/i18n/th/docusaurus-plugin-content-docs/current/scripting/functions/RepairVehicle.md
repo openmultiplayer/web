@@ -1,7 +1,7 @@
 ---
 title: RepairVehicle
 sidebar_label: RepairVehicle
-description: Fully repairs a vehicle, including visual damage (bumps, dents, scratches, popped tires etc.
+description: Fully repairs a vehicle, including visual damage (bumps, dents, scratches, popped tires etc.).
 tags: ["vehicle"]
 ---
 

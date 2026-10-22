@@ -1,6 +1,6 @@
 ---
-título: OnPlayerSelectedMenuRow
-descripción: Este callback se llama cuando un jugador selecciona un item de un menú (ShowMenuForPlayer).
+title: OnPlayerSelectedMenuRow
+description: Este callback se llama cuando un jugador selecciona un item de un menú (ShowMenuForPlayer).
 tags: ["player", "menu"]
 ---
 

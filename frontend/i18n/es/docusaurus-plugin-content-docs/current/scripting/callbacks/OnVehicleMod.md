@@ -1,6 +1,6 @@
 ---
-título: OnVehicleMod
-descripción: Este callback se llama cuando un vehículo es tuneado.
+title: OnVehicleMod
+description: Este callback se llama cuando un vehículo es tuneado.
 tags: ["vehicle"]
 ---
 

@@ -1,6 +1,6 @@
 ---
-título: OnActorStreamOut
-descripción: Este callback se llama cuando un actor se deja de cargar (se hace invisible) por el cliente de un jugador.
+title: OnActorStreamOut
+description: Este callback se llama cuando un actor se deja de cargar (se hace invisible) por el cliente de un jugador.
 tags: []
 ---
 

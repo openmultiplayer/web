@@ -61,11 +61,24 @@ public EndAntiSpawnKill(playerid)
 
 ## Zabilješke
 
-:::tip
+:::warning
 
-Varijable ID-a tajmera trebaju se inicijalizirati na -1 kada mogu kako bi se smanjila mogućnost slučajnog ubijanja ID-a tajmera 0 greškom (ili upotrijebite ID tajmera 0 gore na početku OnGameModeInit). Intervali tajmera nisu tačni (otprilike 25% popusta). Postoje ispravci dostupni ovdje i ovdje. Funkcija koju treba pozvati mora biti javna. To znači da se mora proslijediti.
+Intervali tajmera nisu tačni (otprilike 25% popusta). Postoje ispravci dostupni [ovdje](https://sampforum.blast.hk/showthread.php?tid=289675) i [ovdje](https://sampforum.blast.hk/showthread.php?tid=650736).
 
 :::
+
+:::tip
+
+- Varijable ID-a tajmera trebaju se inicijalizirati na -1 kada mogu kako bi se smanjila mogućnost slučajnog ubijanja ID-a tajmera 0 greškom (ili upotrijebite ID tajmera 0 gore na početku OnGameModeInit).
+- Funkcija koju treba pozvati mora biti javna. To znači da se mora proslijediti.
+
+:::
+
+## Definicije
+
+| Definicija    | Vrijednost |
+| ------------- | ---------- |
+| INVALID_TIMER | 0          |
 
 ## Srodne Funkcije
 

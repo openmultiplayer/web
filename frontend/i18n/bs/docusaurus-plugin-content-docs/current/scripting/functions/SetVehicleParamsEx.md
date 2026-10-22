@@ -73,6 +73,12 @@ public DisableVehicleAlarm(vehicleid)
 }
 ```
 
+## Definicije
+
+- `VEHICLE_PARAMS_UNSET` (-1)
+- `VEHICLE_PARAMS_OFF` (0)
+- `VEHICLE_PARAMS_ON` (1)
+
 ## Zabilješke
 
 :::note

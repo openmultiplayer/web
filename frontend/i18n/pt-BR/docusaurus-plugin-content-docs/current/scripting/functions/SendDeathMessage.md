@@ -39,7 +39,9 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-As mensagens de morte podem ser apagadas usando um jogador válido ID para 'playerid' que não esteja conectado. Para mostrar uma mensagem de morte para apenas um jogador, use [SendDeathMessageToPlayer](SendDeathMessageToPlayer). Você pode usar NPCs para criar seus próprios motivos de morte personalizados.
+- As mensagens de morte podem ser apagadas usando um jogador válido ID para 'playerid' que não esteja conectado.
+- Para mostrar uma mensagem de morte para apenas um jogador, use [SendDeathMessageToPlayer](SendDeathMessageToPlayer).
+- Você pode usar NPCs para criar seus próprios motivos de morte personalizados.
 
 :::
 
