@@ -24,22 +24,8 @@ description: 所有客户端命令列表。
 | /fontsize      | 调整 UI 字体大小（聊天框/对话框等），有效范围-3 至 5。                                                                                                                                         |
 | /ctd           | 该命令在 SA-MP 0.3.7 RC2 版本加入。启用玩家视角目标的客户端调试功能。                                                                                                                          |
 | /rcon          | 主要用于服务器管理。执行远程控制台命令（RCON 是内置管理员系统，全称[远程控制](../server/ControllingServer#使用-rcon)）。                                                                      |
-| /hudscalefix   | 该命令在 SA-MP 0.3.7 R3 版本加入。启用/禁用雷达比例修正，使宽屏分辨率下雷达显示更协调（解决'彩蛋式显示'问题）。对应 sa-mp.cfg 文件的 'nohudscale' 选项。                                       |
+| /hudscalefix   | 该命令在 SA-MP 0.3.7 R3 版本加入。启用/禁用雷达比例修正，使宽屏分辨率下雷达显示更协调（解决'彩蛋式显示'问题）。对应 sa-mp.cfg 文件的 'nohudscalefix' 选项。                                       |
 
 ## 配置文件 sa-mp.cfg
 
-| 选项            | 说明                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------------ |
-| pagesize        | 参见 /pagesize                                                                             |
-| fpslimit        | 参见 /fpslimit                                                                             |
-| disableheadmove | 参见 /headmove                                                                             |
-| timestamp       | 参见 /timestamp                                                                            |
-| ime             | 控制聊天窗口是否支持输入法文本编辑和语言切换。1 启用 IME，0 禁用                           |
-| audiomsgoff     | 参见 /audiomsg                                                                             |
-| multicore       | 多核 CPU 支持开关。默认 1（启用多核支持）。若出现鼠标问题可设为 0                          |
-| directmode      | 为存在聊天文本显示问题的玩家启用直接屏幕渲染模式（0 禁用，1 启用）                         |
-| audioproxyoff   | 设为 1 时，即使 Windows 网络设置中配置了代理服务器，SA-MP 音频流也不会使用代理             |
-| nonametagstatus | 参见 /nametagstatus                                                                        |
-| fontface        | 自定义聊天/对话框/积分板字体（如：fontface="Comic Sans MS"）。非官方支持功能，可能导致问题 |
-| fontweight      | 字体粗细设置。0=粗体（默认），1=正常                                                       |
-| nohudscale      | 该选项在 0.3.7 R3 版本加入。参见 /hudscalefix                                              |
+如需了解 `sa-mp.cfg` 中所有选项的说明，请参阅 [`sa-mp.cfg` 文档](./sa-mp.cfg.md)。
