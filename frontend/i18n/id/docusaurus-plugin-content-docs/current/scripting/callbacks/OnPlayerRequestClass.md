@@ -23,7 +23,7 @@ Selalu terpanggil pertama di filterscript.
 ```c
 public OnPlayerRequestClass(playerid,classid)
 {
-    if (classid == 3 && !IsPlayerAdmin(playerid))
+    if (classid == 3 && !IsPlayerAdmin(playerid))
     {
         SendClientMessage(playerid, COLOR_RED, "This skin is only for admins!");
         return 0;

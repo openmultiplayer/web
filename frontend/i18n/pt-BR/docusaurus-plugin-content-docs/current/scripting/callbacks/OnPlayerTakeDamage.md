@@ -30,7 +30,7 @@ Sempre é chamada primeiro em filterscripts, portanto retornar 1 bloqueará que 
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID) // Caso não seja auto-infligido
+    if (issuerid != INVALID_PLAYER_ID) // Caso não seja auto-infligido
     {
         new
             infoString[128],
@@ -53,7 +53,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
+    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
         // Um tiro na cabeça para eliminar o jogador
         SetPlayerHealth(playerid, 0.0);

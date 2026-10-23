@@ -30,7 +30,7 @@ Nó luôn được gọi đầu tiên trong filterscripts nên trả về 1 sẽ
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID) // Nếu không tự gây sát thương
+    if (issuerid != INVALID_PLAYER_ID) // Nếu không tự gây sát thương
     {
         new
             infoString[128],
@@ -55,7 +55,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
+    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
         // Bắn một phát vào đầu bằng súng bắn tỉa để giết
         SetPlayerHealth(playerid, 0.0);

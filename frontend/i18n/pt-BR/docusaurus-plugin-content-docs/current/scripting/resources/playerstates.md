@@ -1,12 +1,12 @@
 ---
 title: Player States
 sidebar_label: Player States
-description: "Uma lista de todos os estados do jogador usados ​​pela função GetPlayerState ou callback OnPlayerStateChange."
+description: "Uma lista de todos os estados do jogador usados pela função GetPlayerState ou callback OnPlayerStateChange."
 tags: ["player"]
 ---
 
 
-Esta página compila a lista de todos os estados do jogador usados ​​pela função [GetPlayerState](../functions/GetPlayerState) ou callback [OnPlayerStateChange](../callbacks/OnPlayerStateChange). Ambas as páginas contêm exemplos de como usar os valores abaixo.
+Esta página compila a lista de todos os estados do jogador usados pela função [GetPlayerState](../functions/GetPlayerState) ou callback [OnPlayerStateChange](../callbacks/OnPlayerStateChange). Ambas as páginas contêm exemplos de como usar os valores abaixo.
 
 Do ponto de vista do desenvolvedor de servidor, ter "estados do jogador" e "ações especiais" pode parecer confuso. A principal diferença entre os dois é que o primeiro é usado para fins de sincronização (e há pacotes associados a alguns deles) e é usado para ações mais “genéricas”. As "ações especiais" não possuem nenhum pacote associado a elas e cobrem ações mais "específicas", e obviamente têm pouco a ver com o estado atual de um jogador.
 

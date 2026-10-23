@@ -76,7 +76,7 @@ SetPlayerSkinFix(playerid, skinid)
         SetPlayerFacingAngle(playerid, tmpPos[3]);
         TogglePlayerControllable(playerid, true); // sprečavanje smrzavanja - bitno! zbog izvođenja animacija izlaska iz vozila
         tmp = SetPlayerSkin(playerid, skinid);
-        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
+        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
         return tmp;
     }
     else

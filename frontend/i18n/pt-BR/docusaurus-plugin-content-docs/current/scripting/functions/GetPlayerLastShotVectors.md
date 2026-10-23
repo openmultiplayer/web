@@ -26,7 +26,7 @@ Recupera a posição inicial e final (acerto) da última bala que um jogador dis
 
 **false** - Falha na execução da função. O jogador especificado não existe.
 
-A posição do último marcador é armazenada nas variáveis ​​especificadas.
+A posição do último marcador é armazenada nas variáveis especificadas.
 
 ## Exemplos
 

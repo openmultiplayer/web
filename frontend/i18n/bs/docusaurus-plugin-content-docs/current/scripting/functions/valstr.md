@@ -38,7 +38,7 @@ Prosljeđivanje velike vrijednosti ovoj funkciji može dovesti do zamrzavanja / 
 stock FIX_valstr(dest[], value, bool:pack = false)
 {
     // format ne može pravilno obraditi cellmin
-    static const cellmin_value[] = !"-2147483648";
+    static const cellmin_value[] = !"-2147483648";
 
     if (value == cellmin)
         pack && strpack(dest, cellmin_value, 12) || strunpack(dest, cellmin_value, 12);

@@ -1,7 +1,7 @@
 ---
 title: SetTeamCount
 sidebar_label: SetTeamCount
-description: "Esta função é usada para alterar a quantidade de times usados ​​no modo de jogo."
+description: "Esta função é usada para alterar a quantidade de times usados no modo de jogo."
 tags: []
 ---
 

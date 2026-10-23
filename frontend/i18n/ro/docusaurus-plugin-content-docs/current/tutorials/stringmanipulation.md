@@ -1632,7 +1632,7 @@ Având în vedere următoarea listă de jucători conectați:
 
 Spuneți, `playerid` `0` a ucis `playerid` `6` , mesajele formatate ar trebui să scrie `** {FF0000} Compton {000000} ucis> {0000FF} Bartolomew ** `, care va trimite următorul mesaj client tuturor pe server:
 
-> <span style={{color: 'red'}}>Compton</span> ­ <span style={{color: '#000000'}}>killed</span> ­ <span style={{color: 'blue'}}>Bartolomew</span>
+> <span style={{color: 'red'}}>Compton</span>  <span style={{color: '#000000'}}>killed</span>  <span style={{color: 'blue'}}>Bartolomew</span>
 
 Îmi cer scuze dacă v-am confundat folosind [shift bit logic](https://en.wikipedia.org/wiki/Logical_shift), a fost pur și simplu folosit aici pentru a transforma numărul zecimal returnat de funcția `GetPlayerColor` în un număr hexazecimal care reprezintă o culoare, schimbarea în sine este utilizată pentru a omite spațiul -alfa-, pentru mai multe despre acest lucru, vă recomand cu tărie să verificați [acest tutorial](Binary) de **Kyosaur**.
 

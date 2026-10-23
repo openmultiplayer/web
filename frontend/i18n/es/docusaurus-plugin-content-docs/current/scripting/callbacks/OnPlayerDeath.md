@@ -33,7 +33,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     SendDeathMessage(killerid, playerid, reason); //Muestra el asesinato en la tabla de asesinatos
 
     //Comprueba si 'killerid' es válida antes de hacer cualquier cosa con ella.
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         PlayerKills[killerid] ++;
     }

@@ -34,4 +34,4 @@ public OnGameModeInit()
 ## Funções Relacionadas
 
 - [CreateVehicle](CreateVehicle): Crie um veículo.
-- [GetVehicleModelsUsed](GetVehicleModelsUsed): Obtenha a quantidade de modelos de veículos usados ​​no servidor.
+- [GetVehicleModelsUsed](GetVehicleModelsUsed): Obtenha a quantidade de modelos de veículos usados no servidor.

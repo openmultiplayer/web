@@ -40,4 +40,4 @@ Ova funkcija se može koristiti samo u OnGameModeInit. Za ostala vremena, pogled
 
 - [DisableNameTagLOS](DisableNameTagLOS): Onemogućite provjeru oznake imena.
 - [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Prikaži ili sakrij nametag za određenog igrača.
-- [ShowPlayerMarkers](ShowPlayerMarkers): Odlučite hoće li server prikazivati ​​oznake na radaru.
+- [ShowPlayerMarkers](ShowPlayerMarkers): Odlučite hoće li server prikazivati oznake na radaru.

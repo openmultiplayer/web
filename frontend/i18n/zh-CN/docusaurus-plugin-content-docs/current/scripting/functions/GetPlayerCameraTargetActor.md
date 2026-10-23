@@ -35,7 +35,7 @@ public OnPlayerUpdate(playerid)
     // 检测玩家当前注视的演员（若有）
     new playerTargetActor = GetPlayerCameraTargetActor(playerid);
 
-    if (playerTargetActor != INVALID_ACTOR_ID)
+    if (playerTargetActor != INVALID_ACTOR_ID)
     {
         // 获取玩家当前武器以检测是否持械
         new playerWeapon = GetPlayerWeapon(playerid);

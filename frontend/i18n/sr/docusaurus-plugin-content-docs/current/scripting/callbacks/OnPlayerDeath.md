@@ -34,7 +34,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     SendDeathMessage(killerid, playerid, reason); // Приказује убиство у фееду за убиства.
 
     // Проверите да ли је killerid валидан пре него што било шта урадите са њим.
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         PlayerKills[killerid] ++;
     }

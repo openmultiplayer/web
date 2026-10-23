@@ -23,7 +23,7 @@ Ta "callback" se ne obdeluje (return).
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Stanje na banki : $0") != -1)
+    if (strfind(text,"Stanje na banki : $0") != -1)
     {
         SendClientMessage(playerid, -1, "Reven sem :(");
     }

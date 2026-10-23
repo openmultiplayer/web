@@ -27,7 +27,7 @@ Defina a pontuação de um jogador. As pontuações dos jogadores são mostradas
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // Adicione 1 à pontuação deste assassino. Devemos verificar primeiro se é válido.
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         SetPlayerScore(killerid, GetPlayerScore(killerid) + 1);
     }

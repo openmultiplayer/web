@@ -32,7 +32,7 @@ new File:handle = fopen("file.txt", io_read),
 if (handle)
 {
     // Pročitajte sve znakove, zanemarujući UTF-8.
-    while((g_char = fgetchar(handle, 0, false)) != EOF)
+    while((g_char = fgetchar(handle, 0, false)) != EOF)
     {
         // Ispiši karakter
         printf("[ \"file.txt\" ] 0x%x", g_char);

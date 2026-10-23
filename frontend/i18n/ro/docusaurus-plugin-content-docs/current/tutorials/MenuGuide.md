@@ -45,7 +45,7 @@ AddMenuItem(teleportmenu, 0, "SF");
 AddMenuItem(teleportmenu, 0, "SF");
 AddMenuItem(teleportmenu, 0, "LV");
 AddMenuItem(teleportmenu, 0, "LV");
- 
+
 AddMenuItem(teleportmenu, 1, "Grove Street");
 AddMenuItem(teleportmenu, 1, "Starfish Tower");
 AddMenuItem(teleportmenu, 1, "Wheel Arch Angels");

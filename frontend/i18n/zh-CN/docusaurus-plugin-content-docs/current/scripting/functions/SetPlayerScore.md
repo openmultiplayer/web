@@ -26,7 +26,7 @@ tags: ["玩家"]
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
     // 给击杀者的分数加1。需先验证有效性
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         SetPlayerScore(killerid, GetPlayerScore(killerid) + 1);
     }

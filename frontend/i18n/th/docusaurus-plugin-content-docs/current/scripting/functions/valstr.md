@@ -38,7 +38,7 @@ Passing a high value to this function can cause the server to freeze/crash. Fixe
 stock FIX_valstr(dest[], value, bool:pack = false)
 {
     // format can't handle cellmin properly
-    static const cellmin_value[] = !"-2147483648";
+    static const cellmin_value[] = !"-2147483648";
 
     if (value == cellmin)
         pack && strpack(dest, cellmin_value, 12) || strunpack(dest, cellmin_value, 12);

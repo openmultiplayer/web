@@ -28,7 +28,7 @@ public OnRconLoginAttempt(ip[], password[], success)
     {
         printf("FAILED RCON LOGIN BY IP %s USING PASSWORD %s",ip, password);
         new pip[16];
-        for(new i = GetPlayerPoolSize(); i != -1; --i) //Loop through all players
+        for(new i = GetPlayerPoolSize(); i != -1; --i) //Loop through all players
         {
             GetPlayerIp(i, pip, sizeof(pip));
             if (!strcmp(ip, pip, true)) //If a player's IP is the IP that failed the login

@@ -30,7 +30,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     SendDeathMessage(killerid, playerid, reason); // Notification dans le killfeed
 
     // Vérifie si le killerid est valide
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         PlayerKills[killerid] ++;
     }

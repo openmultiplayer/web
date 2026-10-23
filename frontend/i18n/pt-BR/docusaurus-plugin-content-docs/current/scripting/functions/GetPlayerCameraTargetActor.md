@@ -37,7 +37,7 @@ public OnPlayerUpdate(playerid)
     new playerTargetActor = GetPlayerCameraTargetActor(playerid);
 
     // Se ele ESTÁ olhando para ALGUM ator
-    if (playerTargetActor != INVALID_ACTOR_ID)
+    if (playerTargetActor != INVALID_ACTOR_ID)
     {
         // Guarde a arma do jogador para que possamos verificar se ele está armado
         new playerWeapon = GetPlayerWeapon(playerid);

@@ -62,7 +62,7 @@ NOTE: Ovaj primjer je isključivo u demonstracijske svrhe i nije zajamčeno da �
 
 :::tip
 
-Ne morate ponovo prikazivati ​​TextDraw da biste primijenili promjene.
+Ne morate ponovo prikazivati TextDraw da biste primijenili promjene.
 
 :::
 

@@ -23,7 +23,7 @@ Retourner **0** va empêcher le joueur de changer de classe.
 ```c
 public OnPlayerRequestClass(playerid,classid)
 {
-    if (classid == 3 && !IsPlayerAdmin(playerid))
+    if (classid == 3 && !IsPlayerAdmin(playerid))
     {
         SendClientMessage(playerid, COLOR_RED, "Ce  skin est seulement pour les admins !");
         return 0;

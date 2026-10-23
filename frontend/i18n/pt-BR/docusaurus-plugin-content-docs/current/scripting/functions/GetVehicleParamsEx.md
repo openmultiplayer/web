@@ -27,7 +27,7 @@ Obtém os parâmetros de um veículo.
 
 **false** - falha (veículo inválido ID).
 
-Os parâmetros do veículo são armazenados nas variáveis ​​referenciadas, não no valor de retorno.
+Os parâmetros do veículo são armazenados nas variáveis referenciadas, não no valor de retorno.
 
 ## Exemplos
 

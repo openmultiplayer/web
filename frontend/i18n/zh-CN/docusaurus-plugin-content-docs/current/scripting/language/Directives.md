@@ -311,7 +311,7 @@ main() {printf("%d", gOldVariable);}
 stock MyIncFunc() {printf("Hello");}
 ```
 
-**游戏主脚本：​**
+**游戏主脚本：**
 
 ```c
 #tryinclude <myinc>

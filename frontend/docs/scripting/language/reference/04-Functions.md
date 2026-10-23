@@ -806,7 +806,7 @@ Listing: onkey function
 
 public onkey(keycode)
 {
-    if (key==’~’)
+    if (key=='~')
         return 160 /* replace ~ by hard space (code 160 in Latin-1) */
     else
         return key /* leave other keys unaltered */
@@ -828,7 +828,7 @@ Listing: @onkey function
 ```c
 
 @onkey(keycode)
-    return key==’~’ ? 160 : key
+    return key=='~' ? 160 : key
 
 ```
 

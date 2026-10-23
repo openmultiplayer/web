@@ -30,7 +30,7 @@ if (t_handle)
     if (handle = fopen("file.txt", io_read))
     {
         // 读取源文件所有字符
-        while((g_char = fgetchar(handle, 0, false)) != EOF)
+        while((g_char = fgetchar(handle, 0, false)) != EOF)
         {
             // 将小写字符写入临时文件
             fputchar(t_handle, tolower(g_char), false);
@@ -46,7 +46,7 @@ if (t_handle)
         if (handle = fopen("file1.txt", io_write))
         {
             // 读取临时文件所有字符
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // 写入目标文件1
                 fputchar(handle, g_char, false);
@@ -67,7 +67,7 @@ if (t_handle)
         if (handle = fopen("file2.txt", io_write))
         {
             // 读取临时文件所有字符
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // 写入目标文件2
                 fputchar(handle, g_char, false);

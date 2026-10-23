@@ -65,7 +65,7 @@ public OnPlayerUpdate(playerid)
     new Float:fHealth;
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // Здравље играча је промењено од последњег ажурирања -> серверу, тако да је очигледно то оно што је ажурирано.
         // Направимо даље провере да видимо да ли је изгубио или добио здравље, анти-чеат на здравље? ;

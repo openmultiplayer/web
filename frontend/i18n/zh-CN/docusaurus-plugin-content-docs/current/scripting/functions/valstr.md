@@ -38,7 +38,7 @@ valstr(string, value); // 字符串内容变为"250"
 stock FIX_valstr(dest[], value, bool:pack = false)
 {
     // 处理cellmin特殊值
-    static const cellmin_value[] = !"-2147483648";
+    static const cellmin_value[] = !"-2147483648";
 
     if (value == cellmin)
         pack && strpack(dest, cellmin_value, 12) || strunpack(dest, cellmin_value, 12);

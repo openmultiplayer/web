@@ -32,7 +32,7 @@ It is always called first in filterscripts so returning 1 there blocks other fil
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID) // If not self-inflicted
+    if (issuerid != INVALID_PLAYER_ID) // If not self-inflicted
     {
         new
             infoString[128],
@@ -59,7 +59,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
+    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
         // One shot to the head to kill with sniper rifle
         SetPlayerHealth(playerid, 0.0);

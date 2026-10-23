@@ -23,7 +23,7 @@ Bu geri çağırma herhangi bir sonuç vermez.
 ```c
 public OnClientMessage(color, text[])
 {
-    if(strfind(text,"Banka Parası: $0") != -1) SendChat("Ben fakirim. :(");
+    if(strfind(text,"Banka Parası: $0") != -1) SendChat("Ben fakirim. :(");
 }
 ```
 

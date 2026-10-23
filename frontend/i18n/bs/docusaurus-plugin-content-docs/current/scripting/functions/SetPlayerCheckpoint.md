@@ -54,7 +54,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 :::warning
 
-Checkpointi su asinhroni, što znači da se odjednom može prikazivati ​​samo jedan. Za 'streamanje' checkpointa (pokažite ih samo kada su igrači dovoljno blizu), upotrijebite streamer za provjeru checkpointa.
+Checkpointi su asinhroni, što znači da se odjednom može prikazivati samo jedan. Za 'streamanje' checkpointa (pokažite ih samo kada su igrači dovoljno blizu), upotrijebite streamer za provjeru checkpointa.
 
 :::
 

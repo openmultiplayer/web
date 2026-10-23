@@ -39,10 +39,10 @@ new string3[] = "Hell";
 if (!strcmp(string2, string3, false, 4))
 
 // Check for null strings with isnull()
-if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
+if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 
 // Definition for isnull():
-#if !defined isnull
+#if !defined isnull
     #define isnull(%1) ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
 #endif
 ```

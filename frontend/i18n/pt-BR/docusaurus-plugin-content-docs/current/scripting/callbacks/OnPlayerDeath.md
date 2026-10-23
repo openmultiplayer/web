@@ -34,7 +34,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     SendDeathMessage(killerid, playerid, reason); // Mostra o kill no killfeed
 
     // Verifica se o ID do jogador que matou é valido antes de fazer qualquer coisa
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         PlayerKills[killerid] ++;
     }

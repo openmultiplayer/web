@@ -25,7 +25,7 @@ Retorna a rotação de um veículo como euler.
 
 **false** - Falha na execução da função. Isso significa que o veículo especificado não existe.
 
-A rotação do veículo é armazenada nas variáveis ​​especificadas.
+A rotação do veículo é armazenada nas variáveis especificadas.
 
 ## Exemplos
 

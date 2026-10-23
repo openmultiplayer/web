@@ -714,7 +714,7 @@ SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
 ```
 
-At compilation time, all predefined constants will be replaced by their values, and thus, this `"COL_RED"I’m a red text` becomes this `”{FF0000}”I’m a red text`, notice how we used two methode to predifne those colors, `RRGGBB` and `{RRGGBB}`, it’ goes into personal preference which methode to go by, personaly, I find defining them as `RRGGBB` much cleared, as the usages of curly brackets is present, and thus makes it noticable that we’re embedding a color.
+At compilation time, all predefined constants will be replaced by their values, and thus, this `"COL_RED"I’m a red text` becomes this `"{FF0000}"I’m a red text`, notice how we used two methode to predifne those colors, `RRGGBB` and `{RRGGBB}`, it’ goes into personal preference which methode to go by, personaly, I find defining them as `RRGGBB` much cleared, as the usages of curly brackets is present, and thus makes it noticable that we’re embedding a color.
 
 That was the general approach on color embedding with dialog and client messages strings, it is possible to use colors within text in client messages, dialogs, 3D text labels, object material texts and vehicle number plates, but hey, SA-MP has also texdraws and gametexts functionalities, however those don’t support the RGB notation, and thus, adding colors is done differently.
 
@@ -1261,7 +1261,7 @@ Again, just like the integer specifier, this accepts pre-defined constants, vari
 
 ```pawn
 #define NAME "Max"
-new message[] = “Hello there!”;
+new message[] = "Hello there!";
 
 printf("His name is %s", NAME);
 printf("Hey, %s", message);
@@ -1633,7 +1633,7 @@ Given the following list of connected players:
 
 Say, `playerid` `0` killed `playerid` `6`, the formatted messages should spell “**\{FF0000\}Compton \{000000\}killed > \{0000FF\}Bartolomew**”, which will send the following client message to everybody on the server:
 
-> <span style={{color: 'red'}}>Compton</span> ­ <span style={{color: '#000000'}}>killed</span> ­ <span style={{color: 'blue'}}>Bartolomew</span>
+> <span style={{color: 'red'}}>Compton</span>  <span style={{color: '#000000'}}>killed</span>  <span style={{color: 'blue'}}>Bartolomew</span>
 
 I apologize if I had you confused by using [bitwise logical shift](https://en.wikipedia.org/wiki/Logical_shift), it was simply used here in order to turn the decimal number returned by the `GetPlayerColor` function into a hexadecimal number representing a color, the shift itself is utilized to omit the -alpha- space, for more about this, I highly recommend checking out [this tutorial](Binary) by **Kyosaur**.
 

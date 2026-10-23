@@ -24,7 +24,7 @@ O número de caracteres compactados.
 
 ```c
 new string[17];
-new pstring[17 char] = !"Hi, how are you?";
+new pstring[17 char] = !"Hi, how are you?";
 strunpack(string, pstring);
 ```
 ## Funções Relacionadas

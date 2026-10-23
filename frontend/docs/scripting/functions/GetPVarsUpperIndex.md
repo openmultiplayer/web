@@ -28,13 +28,13 @@ new pVarCount;
 
 new pVarName[128];
 
-for(new i = 0; i != PVarUpperIndex; i++) // Loop through all pVar IDs under the upper index
+for(new i = 0; i != PVarUpperIndex; i++) // Loop through all pVar IDs under the upper index
 {
     // At first, we need to get PVar name
     GetPVarNameAtIndex(playerid, i, pVarName, sizeof(pVarName));
 
     // If the var is set (type not 0), increment pVarCount.
-    if (GetPVarType(playerid, pVarName) != 0)
+    if (GetPVarType(playerid, pVarName) != 0)
     {
         pVarCount++;
     }

@@ -11,7 +11,7 @@ Dohvatite CI (računarska/klijentska identifikacija) korisnika, ovo je povezano 
 
 :::warning
 
-CI igrač NIJE JEDINSTVEN, neki igrači mogu imati sličan ili isti CI, nemojte banovati ​​samo zbog toga pto im je isti CI.
+CI igrač NIJE JEDINSTVEN, neki igrači mogu imati sličan ili isti CI, nemojte banovati samo zbog toga pto im je isti CI.
 
 :::
 

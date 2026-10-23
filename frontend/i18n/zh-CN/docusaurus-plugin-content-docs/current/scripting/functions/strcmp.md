@@ -39,10 +39,10 @@ new string3[] = "Hell";
 if (!strcmp(string2, string3, false, 4))
 
 // 使用 isnull() 检查空字符串
-if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
+if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 
 // isnull() 宏定义：
-#if !defined isnull
+#if !defined isnull
     #define isnull(%1) ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
 #endif
 ```

@@ -26,7 +26,7 @@ Siempre se llama primero en filterscripts.
 public OnPlayerUpdate(playerid)
 {
     new iCurWeap = GetPlayerWeapon(playerid); // Devuelve el arma en mano actual del jugador
-    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Si cambió de arma desde la última actualización
+    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Si cambió de arma desde la última actualización
     {
         // Vamos a llamar un callback nombrado OnPlayerChangeWeapon
         OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
@@ -57,7 +57,7 @@ public OnPlayerUpdate(playerid)
 
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // La salud del jugador cambió desde la última actualización con el servidor, así que obviamente eso es lo actualizado.
         // Hagamos mas comprobaciones para ver si aumentó o disminuyó de salud, anti-health cheat? ;)

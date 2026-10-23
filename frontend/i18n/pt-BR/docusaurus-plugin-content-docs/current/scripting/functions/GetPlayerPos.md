@@ -28,10 +28,10 @@ Obtenha a posição de um jogador, representada pelas coordenadas X, Y e Z.
 ```c
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    // Declare 3 variáveis ​​flutuantes para armazenar as coordenadas X, Y e Z em
+    // Declare 3 variáveis flutuantes para armazenar as coordenadas X, Y e Z em
     new Float:x, Float:y, Float:z;
 
-    // Use GetPlayerPos, passando as 3 variáveis ​​flutuantes que acabamos de criar
+    // Use GetPlayerPos, passando as 3 variáveis flutuantes que acabamos de criar
     GetPlayerPos(playerid, x, y, z);
 
     // Crie uma retirada de dinheiro na posição do jogador

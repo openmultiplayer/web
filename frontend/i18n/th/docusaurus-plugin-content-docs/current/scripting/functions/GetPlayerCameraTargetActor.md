@@ -42,7 +42,7 @@ public OnPlayerUpdate(playerid)
     new playerTargetActor = GetPlayerCameraTargetActor(playerid);
 
     // If they ARE looking at ANY actor
-    if (playerTargetActor != INVALID_ACTOR_ID)
+    if (playerTargetActor != INVALID_ACTOR_ID)
     {
         // Store the player's weapon so we can check if they are armed
         new playerWeapon = GetPlayerWeapon(playerid);

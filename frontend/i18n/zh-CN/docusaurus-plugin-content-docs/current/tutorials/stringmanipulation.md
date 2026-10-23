@@ -1259,7 +1259,7 @@ H
 
 ```cpp
 #define NAME "Max"
-new message[] = “Hello there!”;
+new message[] = "Hello there!";
 
 printf("His name is %s", NAME);
 printf("Hey, %s", message);
@@ -1637,7 +1637,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 假设 `playerid` 为 `0` 的玩家杀死了 `playerid` 为 `6` 的玩家，格式化消息应该显示为 “**\{FF0000\}Compton \{000000\} 杀害了 > \{0000FF\}Bartolomew**”，这将向服务器上的每个人发送以下客户端消息：
 
-> <span style={{color: 'red'}}>Compton</span> ­ <span style={{color: '#000000'}}>杀害了</span> ­ <span style={{color: 'blue'}}>Bartolomew</span>
+> <span style={{color: 'red'}}>Compton</span>  <span style={{color: '#000000'}}>杀害了</span>  <span style={{color: 'blue'}}>Bartolomew</span>
 
 我为使用 [按位逻辑移位](https://en.wikipedia.org/wiki/Logical_shift) 而可能让你感到困惑感到抱歉，它仅用于将 `GetPlayerColor` 函数返回的十进制数字转换为代表颜色的十六进制数字，移位本身用于省略 -alpha- 空间，更多信息我强烈建议你查看 **Kyosaur** 的 [这个教程](Binary)。
 

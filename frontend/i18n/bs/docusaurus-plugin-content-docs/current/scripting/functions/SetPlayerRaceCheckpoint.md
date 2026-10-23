@@ -52,7 +52,7 @@ public SetRaceCheckpoint(playerid, Airrace, target, next)
 
 :::warning
 
-Race checkpointi su asinhroni, što znači da se odjednom može prikazivati ​​samo jedan. Za 'streamovanje' race checkpointa (pokažite ih samo kad su igrači dovoljno blizu), upotrijebite streamer za provjeru checkpointa.
+Race checkpointi su asinhroni, što znači da se odjednom može prikazivati samo jedan. Za 'streamovanje' race checkpointa (pokažite ih samo kad su igrači dovoljno blizu), upotrijebite streamer za provjeru checkpointa.
 
 :::
 

@@ -76,7 +76,7 @@ SetPlayerSkinFix(playerid, skinid)
         SetPlayerFacingAngle(playerid, tmpPos[3]);
         TogglePlayerControllable(playerid, true); // preventing any freeze - important! because of doing animations of exiting vehicle
         tmp = SetPlayerSkin(playerid, skinid);
-        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
+        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
         return tmp;
     }
     else
