@@ -32,6 +32,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
         NPC_StopAim(npcid);
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d 停止瞄准。", npcid);
+    }
 }
 ```
 

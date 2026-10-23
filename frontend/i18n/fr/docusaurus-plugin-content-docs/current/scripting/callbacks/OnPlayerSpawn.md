@@ -25,7 +25,7 @@ public OnPlayerSpawn(playerid)
     new PlayerName[MAX_PLAYER_NAME],
         string[40];
 
-    GetPlayerName(playerid, PlayerName, sizeof(PlayerName
+    GetPlayerName(playerid, PlayerName, sizeof(PlayerName));
 
     format(string, sizeof(string), "[ ! ] %s a spawn.", PlayerName);
     SendClientMessageToAll(0xFFFFFFFF, string);

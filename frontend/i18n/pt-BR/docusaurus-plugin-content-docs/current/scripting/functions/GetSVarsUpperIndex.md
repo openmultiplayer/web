@@ -18,7 +18,7 @@ O conjunto mais alto SVar ID.
 
 ```c
 // Armazene o índice superior na variável 'SVarUpperIndex' + 1
-new SVarUpperIndex = GetSVarsUpperIndex() + 1;
+new sVarUpperIndex = GetSVarsUpperIndex() + 1;
 
 // Esta variável sVarCount armazenará quantos sVars são definidos à medida que os contamos.
 new sVarCount;

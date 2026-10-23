@@ -17,7 +17,7 @@ The highest set SVar ID.
 
 ```c
 // Store the upper index in the variable 'SVarUpperIndex' + 1
-new SVarUpperIndex = GetSVarsUpperIndex() + 1;
+new sVarUpperIndex = GetSVarsUpperIndex() + 1;
 
 // This sVarCount variable will store how many sVars are set as we count them.
 new sVarCount;

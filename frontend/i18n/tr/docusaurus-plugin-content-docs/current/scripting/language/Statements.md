@@ -244,7 +244,7 @@ new
     checkVar = 2;
 if (checkVar == 1)
 {
-    printf("Bu çağrılmayacak"):
+    printf("Bu çağrılmayacak");
 }
 else if (checkVar == 2)
 {

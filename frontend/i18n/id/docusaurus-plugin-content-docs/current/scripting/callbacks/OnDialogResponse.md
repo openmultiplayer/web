@@ -137,6 +137,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if(response) // Jika mereka mengklik 'Pilih' atau mengklik dua kali senjata yang dipilih
         {
             // Berikan mereka senjata yang mereka mau
+            switch (listitem)
+            {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Berikan mereka sebuah M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Berikan mereka sebuah MP5
                 case 2: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Berikan mereka sebuah AK-47

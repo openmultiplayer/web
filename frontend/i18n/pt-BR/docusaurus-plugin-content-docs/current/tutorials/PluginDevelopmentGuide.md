@@ -495,7 +495,7 @@ int amx_StrLen(const cell *cstring, int *length);
 ### Sintaxe
 
 ```cpp
-amx_StrParam([AMX*] amx, int] param, [char*] result);
+amx_StrParam([AMX*] amx, [int] param, [char*] result);
 ```
 
 | Parâmetro | Descrição           |

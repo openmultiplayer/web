@@ -706,11 +706,11 @@ The latter can be done on embedded colors too;
 
 ```cpp
 #define COL_RED "{FF0000}"
-#define COL_GREEN {00FF4A}
+#define COL_GREEN "00FF4A"
 #define COL_BLUE "{0058FF}"
 
 SendClientMessageToAll(-1, ""COL_RED"我是红色的文本");
-SendClientMessageToAll(-1, "{"COL_GREEN}"我是绿色"COL_BLUE"和蓝色");
+SendClientMessageToAll(-1, "{"COL_GREEN"}我是绿色"COL_BLUE"和蓝色");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "注意", "{"COL_GREEN"}你好! "COL_RED"近况如何?", "关闭", "");
 ```
 
@@ -1034,7 +1034,7 @@ new chr = ''';
 这是因为编译器会将第一对单引号视为一个实体，而将第二对单引号视为一个未封闭的引号序列，因此要解决这个问题，我们必须转义中间的单引号;
 
 ```cpp
-new chr = ''\';
+new chr = '\'';
 ```
 
 - **“双引号” 转义序列 - `\"`**
@@ -1572,7 +1572,7 @@ Lua
 但在现实世界中，大多数人不喜欢看终端，它们对普通用户来说太可怕、复杂，正如你们所知道的，_客户端消息_ 会显示在游戏屏幕上，而不是控制台，然而，这些不能动态格式化，更像是 `print` 函数的行为，为了绕过这个限制，我们使用另一个非常有效的函数，称为 `format`，我们不会深入其定义，因为我们已经在早期部分解释过了，（参考 [this](../scripting/functions/format)），但这里是其语法的提醒：
 
 ```cpp
-format(output[], len, const format[], \{Float, _}: ...}
+format(output[], len, const format[], {Float, _}: ...)
 ```
 
 让我们看这些示例；

@@ -20,7 +20,7 @@ tags: ["车辆"]
 ## 示例代码
 
 ```c
-new LANDING_GEAR_STATE:state = GetVehicleLandingGearState(vehicleid);
+new LANDING_GEAR_STATE:landingGearState = GetVehicleLandingGearState(vehicleid);
 ```
 
 ## 相关函数

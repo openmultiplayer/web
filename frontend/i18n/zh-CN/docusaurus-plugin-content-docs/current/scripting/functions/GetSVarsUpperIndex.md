@@ -13,7 +13,7 @@ tags: ["服务器变量"]
 
 ```c
 // 将最大索引值存入变量'SVarUpperIndex'并加1
-new SVarUpperIndex = GetSVarsUpperIndex() + 1;
+new sVarUpperIndex = GetSVarsUpperIndex() + 1;
 
 // 该变量用于统计已设置的服务器变量数量
 new sVarCount;

@@ -24,7 +24,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/wstate", true))
     {
-        new WEAPONSTATE:state = GetPlayerWeaponState(playerid);
+        new WEAPONSTATE:weaponState = GetPlayerWeaponState(playerid);
 
         static weaponStates[4][64] =
         {
@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         };
 
         new string[144];
-        format(string, sizeof(string), "你的武器状态：%s", weaponStates[_:state]);
+        format(string, sizeof(string), "你的武器状态：%s", weaponStates[_:weaponState]);
         SendClientMessage(playerid, -1, string);
         return 1;
     }

@@ -321,7 +321,7 @@ Existem muitas bibliotecas feitas pela comunidade que você pode baixar e que t�
 Esta é provavelmente a função relacionada a strings mais usada na comunidade, muito simples e amigável, tudo o que faz é formatar pedaços de texto e juntá-los, pode ser implementada em diversas situações, como vincular variáveis e strings, incorporar cores, adicionar quebras de linha... etc.
 
 ```pawn
-format(output[], len, const format[], \{Float, _\}:...)
+format(output[], len, const format[], {Float, _}:...)
 ```
 A função de formatação toma como parâmetros o array de saída, seu tamanho (_número de suas células_), a string de formatação (_isso pode ser pré-armazenado em outro array, ou atribuído diretamente de dentro da função_) e, finalmente, alguns parâmetros opcionais, que podem ser variáveis de diferentes tipos. Vamos usar esta função para atribuir um valor a uma string vazia.
 
@@ -659,11 +659,11 @@ Este último também pode ser feito em cores incorporadas;
 
 ```pawn
 #define COL_RED "{FF0000}"
-#define COL_GREEN {FF0000}
+#define COL_GREEN "FF0000"
 #define COL_BLUE "{FF0000}"
 
 SendClientMessageToAll(-1, ""COL_RED"I'm a red text");
-SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
+SendClientMessageToAll(-1, "{"COL_GREEN"}I'm a green "COL_BLUE"and blue");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
 ```
 No momento da compilação, todas as constantes predefinidas serão substituídas por seus valores, e assim, este `"COL_RED"I’m a red text` se torna este `"{FF0000}"I’m a red text`, observe como usamos dois métodos para predizer essas cores, `RRGGBB` e `{RRGGBB}`, vai para a preferência pessoal qual método seguir, pessoalmente, acho que defini-los como `RRGGBB` muito desmarcado, pois o uso de chaves está presente e, portanto, torna perceptível que estamos incorporando uma cor.
@@ -951,7 +951,7 @@ new chr = ''';
 Simplesmente porque o compilador considerará o primeiro par de aspas simples como uma entidade e o segundo como uma sequência de cotações não fechadas, então, para corrigir isso, teremos que escapar da do meio;
 
 ```pawn
-new chr = ''\';
+new chr = '\'';
 ```
 - **A sequência de escape “Aspas duplas” - `\"`**
 
@@ -1428,7 +1428,7 @@ Colocando em ação tudo o que vimos até agora, podemos formatar nossas strings
 Mas no mundo real, a maioria das pessoas não gosta de olhar para terminais, eles são muito assustadores e complicados para o usuário médio, e como todos vocês sabem, _mensagens do cliente_ aparecem na tela do jogo, e não no console, no entanto, elas não podem ser formatadas em movimento, são mais como uma função de impressão, por assim dizer, para contornar essa limitação, utilizamos outra função muito eficaz, chamada `format`, não vamos nos aprofundar em sua definição, como já abordamos explicando-o nas partes anteriores (consulte [isto](../scripting/functions/format)), mas aqui está um lembrete de sua sintaxe;
 
 ```pawn
-format(output[], len, const format[], \{Float, _\}: ...}
+format(output[], len, const format[], {Float, _}: ...)
 ```
 Vamos dar uma olhada nestes exemplos;
 

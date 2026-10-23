@@ -542,7 +542,7 @@ int amx_StrLen(const cell *cstring, int *length);
 ### Syntax
 
 ```cpp
-amx_StrParam([AMX*] amx, int] param, [char*] result);
+amx_StrParam([AMX*] amx, [int] param, [char*] result);
 ```
 
 | Parameter  | Description                                     |
@@ -642,6 +642,7 @@ cell AMX_NATIVE_CALL PrintPawnString2(AMX* amx, cell* params)
         logprintf(text);
     }
     return 1;
+}
 
 ```
 
@@ -800,6 +801,7 @@ cell AMX_NATIVE_CALL EmitPawnCallback(AMX* amx, cell* params)
 
     }
     return 1;
+}
 ```
 
 ## Calling natives and hooking callbacks

@@ -24,7 +24,7 @@ This function does not return any specific values.
 
 ```c
 MyTextDraw = CreatePlayerTextDraw(playerid, 100.0, 33.0,"Example TextDraw");
-PlayerTextDrawLetterSize(playerid, MyTextDraw, 3.2 ,5.1);
+PlayerTextDrawLetterSize(playerid, MyTextDraw, 3.2, 5.1);
 ```
 
 ## บันทึก

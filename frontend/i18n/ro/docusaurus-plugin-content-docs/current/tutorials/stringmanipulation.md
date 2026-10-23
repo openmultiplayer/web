@@ -705,11 +705,11 @@ Acesta din urmă poate fi realizat și pe culorile încorporate;
 
 ```cpp
 #define COL_RED "{FF0000}"
-#define COL_GREEN {FF0000}
+#define COL_GREEN "FF0000"
 #define COL_BLUE "{FF0000}"
 
 SendClientMessageToAll(-1, ""COL_RED"I'm a red text");
-SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
+SendClientMessageToAll(-1, "{"COL_GREEN"}I'm a green "COL_BLUE"and blue");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
 ```
 
@@ -1033,7 +1033,7 @@ new chr = ''';
 Pur și simplu pentru că compilatorul va considera prima pereche de ghilimele simple ca o singură entitate, iar a doua ca o secvență de ghilimele nedeschise, așa că, pentru a remedia acest lucru, va trebui să scăpăm de cel din mijloc;
 
 ```cpp
-new chr = ''\';
+new chr = '\'';
 ```
 
 - ** Secvența de evadare `Citat dublu` - `\"`**
@@ -1260,7 +1260,7 @@ Din nou, la fel ca specificatorul întregului, acesta acceptă constante, variab
 
 ```cpp
 #define NAME "Max"
-new message[] = `Hello there!`;
+new message[] = "Hello there!";
 
 printf("His name is %s", NAME);
 printf("Hey, %s", message);
@@ -1567,7 +1567,7 @@ Punând toate acțiunile pe care le-am văzut până acum la acțiune, putem ori
 Însă în lumea reală, majorității oamenilor nu le place să se uite la terminale, sunt prea înfricoșători și complicate pentru utilizatorul obișnuit și, după cum știți cu toții, mesajele clientului apar pe ecranul jocului și nu consola, totuși , acestea nu pot fi formatate în mișcare, sunt mai mult ca o funcție de imprimare s-ar putea spune, pentru a ocoli această limitare, folosim și o altă funcție foarte eficientă, numită `format`, nu vom aprofunda definiția acesteia, așa cum am am trecut deja prin explicarea acestuia în părțile anterioare, (consultați [acest](../scripting/functions/format)), dar, iată un memento al sintaxei sale;
 
 ```cpp
-format(output[], len, const format[], \{Float, _}: ...}
+format(output[], len, const format[], {Float, _}: ...)
 ```
 
 Să aruncăm o privire la aceste exemple;

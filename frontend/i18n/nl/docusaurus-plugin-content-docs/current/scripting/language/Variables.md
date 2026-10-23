@@ -72,7 +72,7 @@ Strings zijn arrays van tekens en NUL-termineren (`\0`).
 ```c
 new myString[16] = "Hello World!";
 myString[1] = 'a';
-myString[2] = '\\0'; // NUL-terminator plaatsen
+myString[2] = '\0'; // NUL-terminator plaatsen
 ```
 
 Backslash-escapes: `\n`, `\r`, `\\`, `\'`, `\"`, `\0`, `\xNN`, `\NNN`.

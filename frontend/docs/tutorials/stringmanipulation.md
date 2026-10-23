@@ -337,7 +337,7 @@ There are many community-made libraries you can download that have to do with st
 This is probably the most used string-related function in the community, very simple and user-friendly, all it does, is format chunks of text and pieces them together, it can be implemented in various situations, like linking variables and strings together, embedding colors, adding line-breaks... etc.
 
 ```pawn
-format(output[], len, const format[], \{Float, _\}:...)
+format(output[], len, const format[], {Float, _}:...)
 ```
 
 The format function takes as parameters the output array, its size (_number of its cells_), the formatting string (_this can be pre-stored on another array, or directly assigned from inside the function_), and finally some optional parameters, those can be variables from different types. Let’s use this function to assign a value to an empty string.
@@ -706,11 +706,11 @@ The latter can be done on embedded colors too;
 
 ```pawn
 #define COL_RED "{FF0000}"
-#define COL_GREEN {FF0000}
+#define COL_GREEN "FF0000"
 #define COL_BLUE "{FF0000}"
 
 SendClientMessageToAll(-1, ""COL_RED"I'm a red text");
-SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
+SendClientMessageToAll(-1, "{"COL_GREEN"}I'm a green "COL_BLUE"and blue");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
 ```
 
@@ -1034,7 +1034,7 @@ new chr = ''';
 Simply because the compiler will regard the first pair of single quotes as one entity, and the second as an unclosed quotation sequence, so to fix that, we will have to escape the middle one;
 
 ```pawn
-new chr = ''\';
+new chr = '\'';
 ```
 
 - **The “Double quote” escape sequence - `\"`**
@@ -1568,7 +1568,7 @@ Putting all what we’ve seen so far to action, we can format our strings pretty
 But in the real world, most people don’t like looking at terminals, they are just too scary, and complicated to the average user, and as you all know, _client messages_ show up on the game’s screen, and not the console, however, those cannot be formatted on the go, they are more like a print function one might say, to bypass this limitation, we utilize and other very effective function, called `format`, we won’t go deeper on its definition, as we have already gone through explaining it on earlier parts, (refer to [this](../scripting/functions/format)), but, here is a reminder of its syntax;
 
 ```pawn
-format(output[], len, const format[], \{Float, _\}: ...}
+format(output[], len, const format[], {Float, _}: ...)
 ```
 
 Let’s take a look at these examples;
