@@ -24,22 +24,8 @@ description: Danh sách tất cả các lệnh của Client.
 | /fontsize      | Thay đổi kích thước phông chữ của UI (chat, hộp thoại, v.v.). Kích thước phông chữ hợp lệ là từ -3 đến 5.                                                                                                                                                                                                                        |
 | /ctd           | Lệnh này được thêm vào trong SA-MP 0.3.7 RC2. Nó bật chế độ gỡ lỗi client của mục tiêu camera của người chơi.                                                                                                                                                                                                                    |
 | /rcon          | Liên quan nhiều hơn đến máy chủ hơn là client. Lệnh này được sử dụng để thực thi các lệnh RCON. RCON là hệ thống quản trị tích hợp. RCON là viết tắt của [Remote Control](../server/ControllingServer#using-rcon).                                                                                                               |
-| /hudscalefix   | Lệnh này được thêm vào trong SA-MP 0.3.7 R3. Bật/tắt sửa lỗi tỷ lệ radar, để radar của trò chơi có tỷ lệ tốt hơn trong các độ phân giải màn hình rộng (tức là không còn 'egg of finding'). Lệnh này thiết lập tùy chọn 'nohudscale' trong sa-mp.cfg.                                                                             |
+| /hudscalefix   | Lệnh này được thêm vào trong SA-MP 0.3.7 R3. Bật/tắt sửa lỗi tỷ lệ radar, để radar của trò chơi có tỷ lệ tốt hơn trong các độ phân giải màn hình rộng (tức là không còn 'egg of finding'). Lệnh này thiết lập tùy chọn 'nohudscalefix' trong sa-mp.cfg.                                                                             |
 
 ## File sa-mp.cfg
 
-| Option          | Mô tả                                                                                                                                                              |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| pagesize        | Đọc /pagesize.                                                                                                                                                     |
-| fpslimit        | Đọc /fpslimit.                                                                                                                                                     |
-| disableheadmove | Đọc /headmove.                                                                                                                                                     |
-| timestamp       | Đọc /timestamp.                                                                                                                                                    |
-| ime             | Điều này kiểm soát việc cửa sổ chat có hỗ trợ chỉnh sửa văn bản và chuyển đổi ngôn ngữ hay không. 1 là bật IME, 0 là tắt.                                          |
-| audiomsgoff     | Đọc /audiomsg.                                                                                                                                                     |
-| multicore       | Bật/tắt việc client SA-MP sử dụng nhiều lõi CPU khi chạy. Mặc định là 1 (SỬ DỤNG nhiều lõi CPU). Đặt thành 0 nếu bạn gặp vấn đề với chuột.                         |
-| directmode      | Điều này cho phép người chơi có vấn đề về việc vẽ văn bản chat sử dụng chế độ kết xuất văn bản trực tiếp lên màn hình. 0 để tắt, 1 để bật.                         |
-| audioproxyoff   | Nếu tùy chọn này được đặt thành 1 và có một máy chủ proxy được đặt trong Tùy chọn Internet của Windows, proxy sẽ không được sử dụng khi phát âm thanh trong SA-MP. |
-| nonametagstatus | Đọc /nametagstatus.                                                                                                                                                |
-| fontface        | Cho phép bạn thay đổi phông chữ của chat, hộp thoại và bảng điểm. Ví dụ: fontface="Comic Sans MS". Không được hỗ trợ chính thức và có thể gây ra lỗi xung đột.     |
-| fontweight      | Tùy chọn này bật/tắt việc phông chữ chat của bạn có đậm hay không. 0 = ĐẬM (mặc định) và 1 = BÌNH THƯỜNG.                                                          |
-| nohudscale      | Tùy chọn này được thêm vào trong 0.3.7 R3. Xem /hudscalefix.                                                                                                       |
+Xem tài liệu [`sa-mp.cfg`](./sa-mp.cfg.md) để biết mô tả về tất cả tùy chọn trong tệp này.
