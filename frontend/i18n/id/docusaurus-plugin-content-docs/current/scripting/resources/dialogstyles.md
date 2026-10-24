@@ -17,7 +17,7 @@ description: Informasi mengenai Gaya Dialog
 - Untuk contoh responnya, berikut ini adalah kodenya:
 
 ```c
-public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
+public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     printf("playerid = %d, dialogid = ID_DIALOG_KAMU, response = %d, listitem = %d, inputtext = '%s' (size: %d)", playerid, response, listitem, inputtext, strlen(inputtext));
     return 1;

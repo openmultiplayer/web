@@ -21,7 +21,7 @@ Ang function na ito ay hindi nagbabalik ng anumang value.
 
 ```c
 // Gumawa ng pickup para sa armor.
-pickup_armour = CreatePickup ( 1242, 2, 1503.3359, 1432.3585, 10.1191 );
+pickup_armour = CreatePickup(1242, 2, 1503.3359, 1432.3585, 10.1191);
 
 // mamaya
 DestroyPickup(pickup_armour);

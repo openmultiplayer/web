@@ -23,7 +23,7 @@ Esta função retorna a quantidade de tempo (em milissegundos) que um jogador es
 ## Exemplos
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/connectedtime"))
     {

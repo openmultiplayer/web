@@ -26,7 +26,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/mynetstats"))
     {
-        new stats[400+1];
+        new stats[400 + 1];
         GetPlayerNetworkStats(playerid, stats, sizeof(stats));
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "My Network Stats", stats, "Okay", "");
     }

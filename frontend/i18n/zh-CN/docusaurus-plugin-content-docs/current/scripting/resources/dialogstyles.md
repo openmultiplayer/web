@@ -18,7 +18,7 @@ sidebar_label: 对话框样式
 - 响应示例均使用以下测试代码：
 
 ```c
-public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
+public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     printf("玩家id = %d, 对话框id = YOUR_DIALOGID, 响应 = %d, 列项 = %d, 输入文本 = '%s' (长度: %d)", playerid, response, listitem, inputtext, strlen(inputtext));
     return 1;

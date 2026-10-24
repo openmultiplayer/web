@@ -24,7 +24,7 @@ Obtenha a posição de um objeto de jogador ([CreatePlayerObject](CreatePlayerOb
 
 **false** - Falha na execução da função. O jogador e/ou o objeto não existem.
 
-A posição do objeto é armazenada nas variáveis ​​especificadas.
+A posição do objeto é armazenada nas variáveis especificadas.
 
 ## Exemplos
 

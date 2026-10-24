@@ -33,7 +33,7 @@ Geçersiz araç ID'si (65535): araç oluşturulamadı. (hatalı model ya da ara�
 public OnGameModeInit()
 {
     // Oyuna boş bırakıldıktan 15 saniye sonra re-spawn olacak bir hydra ekle (520 model)
-    AddStaticVehicleEx (520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
+    AddStaticVehicleEx(520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
 
     return 1;
 }

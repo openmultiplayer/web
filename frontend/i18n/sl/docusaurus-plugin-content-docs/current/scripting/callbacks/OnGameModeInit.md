@@ -18,7 +18,7 @@ Ta "callback" se ne obdeluje (return).
 ```c
 public OnGameModeInit()
 {
-    print(""Gamemode" začela!");
+    print("Gamemode začela!");
     return 1;
 }
 ```

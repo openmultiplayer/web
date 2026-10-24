@@ -25,7 +25,7 @@ Checks if a vehicle is streamed in for a player. Only nearby vehicles are stream
 ```c
 new streamedVehicleCount;
 
-for(new v = 1; v <= MAX_VEHICLES; v++)
+for (new v = 1; v <= MAX_VEHICLES; v++)
 {
     if (IsVehicleStreamedIn(v, playerid))
     {

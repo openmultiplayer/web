@@ -50,7 +50,7 @@ if (handle)
     file_len = flength(handle);
 
     // Ako je datoteka jednako velika od niza
-    if (file_len == (some_enum*4))
+    if (file_len == (some_enum * 4))
     {
         // Uspješno
 

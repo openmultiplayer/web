@@ -22,9 +22,9 @@ tags: ["player"]
 ```c
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    new PLAYER_STATE:state = GetPlayerState(killerid); // Get the killer's state
+    new PLAYER_STATE:playerState = GetPlayerState(killerid); // Get the killer's state
 
-    if (state == PLAYER_STATE_DRIVER) // If the killer was in a vehicle
+    if (playerState == PLAYER_STATE_DRIVER) // If the killer was in a vehicle
     {
         //It's a driver drive-by, take some money
         GivePlayerMoney(killerid, -10000);

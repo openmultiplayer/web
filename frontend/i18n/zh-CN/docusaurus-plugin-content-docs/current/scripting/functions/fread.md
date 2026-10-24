@@ -35,7 +35,7 @@ if (handle)
     // 操作成功
 
     // 读取整个文件内容
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }
@@ -65,7 +65,7 @@ if (handle)
     // 操作成功
 
     // 读取整个文件内容
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

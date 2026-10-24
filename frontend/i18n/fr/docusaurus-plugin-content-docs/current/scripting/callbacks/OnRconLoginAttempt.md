@@ -24,14 +24,14 @@ Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement di
 ```c
 public OnRconLoginAttempt(ip[], password[], success)
 {
-    if(!success) //Si le mot de passe est incorrect
+    if (!success) //Si le mot de passe est incorrect
     {
-        printf("CONNEXION RCON ECHOUÉE PAR L'IP %s EN UTILISANT LE MOT DE PASSE %s",ip, password);
+        printf("CONNEXION RCON ECHOUÉE PAR L'IP %s EN UTILISANT LE MOT DE PASSE %s", ip, password);
         new pip[16];
-        for(new i=0; i<MAX_PLAYERS; i++) //Boucle qui passe par tous les joueurs
+        for (new i = 0; i < MAX_PLAYERS; i++) //Boucle qui passe par tous les joueurs
         {
             GetPlayerIp(i, pip, sizeof(pip));
-            if(!strcmp(ip, pip, true)) //Si l'IP du joueur est l'IP qui a tentée de se connecter.
+            if (!strcmp(ip, pip, true)) //Si l'IP du joueur est l'IP qui a tentée de se connecter.
             {
                 SendClientMessage(i, 0xFFFFFFFF, "Mauvais mot de passe. Bye!"); //Envoie un message
                 Ban(i); //Il est maintenant banni

@@ -24,7 +24,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 :::warning
 
-Textdraw MORA koristiti font TEXT_DRAW_FONT_MODEL_PREVIEW i prikazivati ​​vozilo kako bi ova funkcija imala efekta.
+Textdraw MORA koristiti font TEXT_DRAW_FONT_MODEL_PREVIEW i prikazivati vozilo kako bi ova funkcija imala efekta.
 
 :::
 

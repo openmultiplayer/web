@@ -57,20 +57,20 @@ Modificarea valorii unei variabile este posibilă numai dacă partea codului în
 
 new g_var = 5;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     g_var = 10;
 
-    printf ("The value is %i", g_var);
+    printf("The value is %i", g_var);
 
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     g_var = 100;
 
-    printf ("The value is %i", g_var);
+    printf("The value is %i", g_var);
 
     return 1;
 }
@@ -87,7 +87,7 @@ public OnPlayerConnect (playerid)
 ```c
 #include <a_samp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new localVar;
 
@@ -96,7 +96,7 @@ public OnFilterScriptInit ()
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     localVar = 10; // This line will show an error upon compilation
 
@@ -113,7 +113,7 @@ Un lucru important de remarcat este că nu puteți declara variabile cu aceleaș
 
 new g_score;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new g_score = 5; // This line will show an error.
     return 1;
@@ -190,22 +190,22 @@ Pawnul fiind un limbaj fără tip ne permite să stocăm diferite tipuri de date
 ```c
 #include <a_samp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
 
-    new var ;
+    new var;
 
     var = 'a';
-    printf ("%c", var);
+    printf("%c", var);
 
     var = 1;
-    printf ("%d", var);
+    printf("%d", var);
 
     var = 1.0;
-    printf ("%f", var);
+    printf("%f", var);
 
     var = true;
-    printf ("%d", var); // prints a value 0 or 1
+    printf("%d", var); // prints a value 0 or 1
 
     return 1;
 }

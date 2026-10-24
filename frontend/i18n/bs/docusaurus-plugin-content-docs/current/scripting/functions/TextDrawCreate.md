@@ -30,7 +30,7 @@ public OnGameModeInit()
 {
     // Ova linija nam korisit kako bismo kreirali textdraw
     // Zabilješka: Ovo kreira textdraw bez ikakvog formatiranja.
-    gMyTextdraw = TextDrawCreate(240.0,580.0,"Dobrodosli na moj SA-MP server");
+    gMyTextdraw = TextDrawCreate(240.0, 580.0, "Dobrodosli na moj SA-MP server");
     return 1;
 }
 

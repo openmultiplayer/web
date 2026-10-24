@@ -72,7 +72,7 @@ Binary (base 2)
 Belangrijk: alleen bits die 1 zijn tel je mee. Een handige rij machten van 2:
 
 ```c
-4096,2048,1024,512,256,128,64,32,16,8,4,2,1
+4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1
 ```
 
 ### Een diepere blik op bits

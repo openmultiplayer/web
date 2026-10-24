@@ -23,7 +23,7 @@ Broj znakova prije podstringa (početna pozicija podstringa) ili -1 ako nije pro
 ## Primjeri
 
 ```c
-if (strfind("Are you in here?", "you", true) != -1) //vraća 4, zato što početak od 'you' (y) je na indexu 4 u stringu
+if (strfind("Are you in here?", "you", true) != -1) //vraća 4, zato što početak od 'you' (y) je na indexu 4 u stringu
 {
     SendClientMessageToAll(0xFFFFFFFF, "Pronašao sam te!");
 }

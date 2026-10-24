@@ -29,8 +29,8 @@ public OnGameModeInit()
         a, b, rezultat;
     a = 5;
     b = 10;
-    rezultat = min(a,b);
-    printf ("min(a,b) =", param, rezultat);
+    rezultat = min(a, b);
+    printf("min(a,b) =", param, rezultat);
     return 0;
 }
 ```

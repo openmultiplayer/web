@@ -26,7 +26,7 @@ Defina a posição de um jogador.
 ## Exemplos
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/middle", true))
     {

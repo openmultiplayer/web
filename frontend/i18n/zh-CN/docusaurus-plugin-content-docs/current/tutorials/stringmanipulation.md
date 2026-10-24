@@ -309,7 +309,7 @@ native memcpy(dest[], const source[], index=0, numbytes, maxlength=sizeof dest);
 
   ```cpp
   new str_dest[12] = "Hello", str_source[7] = " World";
-  strcat(str_dest,str_source);
+  strcat(str_dest, str_source);
   ```
 
 如果我们输出 `str_dest`，它将显示 **Hello World**，这两个字符串被添加到一起，结果存储在 `str_dest` 中，_“Hello” + “ World” = “Hello World”_，注意我们在第二个字符串中包含了一个空格，是的，空格本身也是一个字符，根据 _ASCII_ 表，它的值是 `32`。如果我们没有添加空格，结果字符串将是 **HelloWorld**。
@@ -404,7 +404,7 @@ format(formatMsg, sizeof(formatMsg), "This is reality""...""or is it?!");
 
 ```cpp
 new badString[100];
-badString ="Hello :)";
+badString = "Hello :)";
 ```
 
 我们声明了一个包含 _100 个单元格_ 的字符串，_1 个单元格_ 占用 _4 字节_，让我们做一些基本的数学运算，_100 \* 4 = 400_ 字节，这大约是 _0.0004 兆字节_，对于今天的标准来说，这确实不算什么，但假设在一个庞大的脚本中，你显然会使用多个字符串，_60_，_70_，甚至 _100_ 个字符串？（_可能更多_），这些微小的数字会叠加在一起，导致一个更大的总数，并且可能会给你带来严重的问题。我敢保证，当你与那些大小是五倍以上的字符串相比时，我们声明的字符串还远远算不上愚蠢。
@@ -415,7 +415,7 @@ badString ="Hello :)";
 
 ```cpp
 new goodString[12];
-goodString="Good string";
+goodString = "Good string";
 ```
 
 看看我们如何节省了内存？仅仅 **48** 字节，没有额外的负担，避免了后续可能出现的问题，感觉好多了。
@@ -606,7 +606,7 @@ SendClientMessage(1, -1, "Hello there!");
 new mornMsg[] = "Hello!";
 
 SendClientMessage(0, -1, mornMsg);
-SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
+SendClientMessage(0, -1, "How are you ", STRING_MSG#?);
 ```
 
 正如你在上面的示例中看到的，这将向 ID _0_ 的玩家发送两条白色的信息，第一条信息将显示“_Hello!_”，第二条信息将显示“_How are you today?_”，这与其他函数的工作方式非常相似。请记住，预定义的常量整数必须以 `#` 号作为前缀.
@@ -706,11 +706,11 @@ The latter can be done on embedded colors too;
 
 ```cpp
 #define COL_RED "{FF0000}"
-#define COL_GREEN {00FF4A}
+#define COL_GREEN "00FF4A"
 #define COL_BLUE "{0058FF}"
 
 SendClientMessageToAll(-1, ""COL_RED"我是红色的文本");
-SendClientMessageToAll(-1, "{"COL_GREEN}"我是绿色"COL_BLUE"和蓝色");
+SendClientMessageToAll(-1, "{"COL_GREEN"}我是绿色"COL_BLUE"和蓝色");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "注意", "{"COL_GREEN"}你好! "COL_RED"近况如何?", "关闭", "");
 ```
 
@@ -1034,7 +1034,7 @@ new chr = ''';
 这是因为编译器会将第一对单引号视为一个实体，而将第二对单引号视为一个未封闭的引号序列，因此要解决这个问题，我们必须转义中间的单引号;
 
 ```cpp
-new chr = ''\';
+new chr = '\'';
 ```
 
 - **“双引号” 转义序列 - `\"`**
@@ -1259,7 +1259,7 @@ H
 
 ```cpp
 #define NAME "Max"
-new message[] = “Hello there!”;
+new message[] = "Hello there!";
 
 printf("His name is %s", NAME);
 printf("Hey, %s", message);
@@ -1572,7 +1572,7 @@ Lua
 但在现实世界中，大多数人不喜欢看终端，它们对普通用户来说太可怕、复杂，正如你们所知道的，_客户端消息_ 会显示在游戏屏幕上，而不是控制台，然而，这些不能动态格式化，更像是 `print` 函数的行为，为了绕过这个限制，我们使用另一个非常有效的函数，称为 `format`，我们不会深入其定义，因为我们已经在早期部分解释过了，（参考 [this](../scripting/functions/format)），但这里是其语法的提醒：
 
 ```cpp
-format(output[], len, const format[], \{Float, _}: ...}
+format(output[], len, const format[], {Float, _}: ...)
 ```
 
 让我们看这些示例；
@@ -1584,7 +1584,8 @@ format(output[], len, const format[], \{Float, _}: ...}
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[信息]: ID 为 %d 的玩家名为 {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[信息]: ID 为 %d 的玩家名为 {EE11CC}%s.", playerid, playerName);
+SendClientMessageToAll(0, output);
 ```
 
 > [信息]: ID 为 9 的玩家名为 <span style={{color: '#ee11cc'}}>Player1</span>。
@@ -1637,7 +1638,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 假设 `playerid` 为 `0` 的玩家杀死了 `playerid` 为 `6` 的玩家，格式化消息应该显示为 “**\{FF0000\}Compton \{000000\} 杀害了 > \{0000FF\}Bartolomew**”，这将向服务器上的每个人发送以下客户端消息：
 
-> <span style={{color: 'red'}}>Compton</span> ­ <span style={{color: '#000000'}}>杀害了</span> ­ <span style={{color: 'blue'}}>Bartolomew</span>
+> <span style={{color: 'red'}}>Compton</span>  <span style={{color: '#000000'}}>杀害了</span>  <span style={{color: 'blue'}}>Bartolomew</span>
 
 我为使用 [按位逻辑移位](https://en.wikipedia.org/wiki/Logical_shift) 而可能让你感到困惑感到抱歉，它仅用于将 `GetPlayerColor` 函数返回的十进制数字转换为代表颜色的十六进制数字，移位本身用于省略 -alpha- 空间，更多信息我强烈建议你查看 **Kyosaur** 的 [这个教程](Binary)。
 

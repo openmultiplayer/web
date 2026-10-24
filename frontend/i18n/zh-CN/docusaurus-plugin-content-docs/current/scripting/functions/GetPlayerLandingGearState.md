@@ -20,7 +20,7 @@ tags: ["玩家", "车辆"]
 ## 示例代码
 
 ```c
-new LANDING_GEAR_STATE:state = GetPlayerLandingGearState(playerid);
+new LANDING_GEAR_STATE:landingGearState = GetPlayerLandingGearState(playerid);
 ```
 
 ## 相关函数

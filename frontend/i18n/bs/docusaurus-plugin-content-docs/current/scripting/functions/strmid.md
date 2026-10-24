@@ -15,7 +15,7 @@ Izvuci niz znakova iz stringa.
 | const source[]        | String iz kojeg se izdvajaju karakteri.                        |
 | start                 | Pozicija prvog karaktera.                                      |
 | end                   | Pozicija posljednjeg karaktera.                                |
-| maxlength=sizeof dest | Dužina odredišta. (Biće veličina dest-a po zadanim postavkama) |
+| maxlength = sizeof dest | Dužina odredišta. (Biće veličina dest-a po zadanim postavkama) |
 
 ## Returns
 

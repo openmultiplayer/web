@@ -37,7 +37,7 @@ SetPlayerMarkerForPlayer(42, 1, (GetPlayerColor(1) | 0x000000FF));
 
 ## Srodne Funkcije
 
-- [ShowPlayerMarkers](ShowPlayerMarkers): Odlučite hoće li server prikazivati ​​oznake na radaru.
+- [ShowPlayerMarkers](ShowPlayerMarkers): Odlučite hoće li server prikazivati oznake na radaru.
 - [LimitPlayerMarkerRadius](LimitPlayerMarkerRadius): Ograničite radijus markera/oznake igrača.
 - [SetPlayerColor](SetPlayerColor): Postavi boju igrača.
 - [ShowPlayerNameTagForPlayer](ShowPlayerNameTagForPlayer): Prikaži ili sakrij nametag za određenog igrača.

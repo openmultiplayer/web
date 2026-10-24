@@ -24,7 +24,7 @@ Sets a vehicle back to the position at where it was created.
 ```c
 // Respawns the first vehicle.
 SetVehicleToRespawn(1);
-for(new i = GetVehiclePoolSize(); i > 0; i--)
+for (new i = GetVehiclePoolSize(); i > 0; i--)
 {
     SetVehicleToRespawn(i);
 }

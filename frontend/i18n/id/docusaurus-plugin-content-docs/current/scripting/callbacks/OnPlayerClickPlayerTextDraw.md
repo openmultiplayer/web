@@ -28,8 +28,8 @@ public OnPlayerConnect(playerid)
     // Buat TexDraw nya disini
     gPlayerTextDraw[playerid] = CreatePlayerTextDraw(playerid, 10.000000, 141.000000, "TextDrawKu");
     PlayerTextDrawTextSize(playerid, gPlayerTextDraw[playerid], 60.000000, 20.000000);
-    PlayerTextDrawAlignment(playerid, gPlayerTextDraw[playerid],0);
-    PlayerTextDrawBackgroundColor(playerid, gPlayerTextDraw[playerid],0x000000ff);
+    PlayerTextDrawAlignment(playerid, gPlayerTextDraw[playerid], 0);
+    PlayerTextDrawBackgroundColor(playerid, gPlayerTextDraw[playerid], 0x000000ff);
     PlayerTextDrawFont(playerid, gPlayerTextDraw[playerid], 1);
     PlayerTextDrawLetterSize(playerid, gPlayerTextDraw[playerid], 0.250000, 1.000000);
     PlayerTextDrawColor(playerid, gPlayerTextDraw[playerid], 0xffffffff);
@@ -46,7 +46,7 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
-    if(newkeys == KEY_SUBMISSION)
+    if (newkeys == KEY_SUBMISSION)
     {
         SelectTextDraw(playerid, 0xFF4040AA);
     }
@@ -55,7 +55,7 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 
 public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 {
-    if(playertextid == gPlayerTextDraw[playerid])
+    if (playertextid == gPlayerTextDraw[playerid])
     {
          SendClientMessage(playerid, 0xFFFFFFAA, "Anda mengklik sebuah TextDraw, wow!.");
          CancelSelectTextDraw(playerid);

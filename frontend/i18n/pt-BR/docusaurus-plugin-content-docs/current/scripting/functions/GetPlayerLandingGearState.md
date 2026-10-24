@@ -20,7 +20,7 @@ Obtém o [estado do trem de pouso](../resources/landinggearstate) do veículo at
 ## Exemplos
 
 ```c
-new LANDING_GEAR_STATE:state = GetPlayerLandingGearState(playerid);
+new LANDING_GEAR_STATE:landingGearState = GetPlayerLandingGearState(playerid);
 ```
 
 ## Funções Relacionadas

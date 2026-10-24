@@ -20,7 +20,7 @@ Obtém o [estado do trem de pouso](../resources/landinggearstate) atual do veíc
 ## Exemplos
 
 ```c
-new LANDING_GEAR_STATE:state = GetVehicleLandingGearState(vehicleid);
+new LANDING_GEAR_STATE:landingGearState = GetVehicleLandingGearState(vehicleid);
 ```
 
 ## Funções Relacionadas

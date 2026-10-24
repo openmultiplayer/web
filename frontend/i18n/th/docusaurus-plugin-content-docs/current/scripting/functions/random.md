@@ -40,7 +40,7 @@ public OnPlayerSpawn(playerid)
     new rand = random(sizeof(RandomSpawn));
 
     // SetPlayerPos to the random spawn data
-    SetPlayerPos(playerid, RandomSpawn[rand][0], RandomSpawn[rand][1],RandomSpawn[rand][2]);
+    SetPlayerPos(playerid, RandomSpawn[rand][0], RandomSpawn[rand][1], RandomSpawn[rand][2]);
 
     // SetPlayerFacingAngle to the random facing angle data
     SetPlayerFacingAngle(playerid, RandomSpawn[rand][3]);

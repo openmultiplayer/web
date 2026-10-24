@@ -150,7 +150,7 @@ unbanip 13.37.13.37
 
 Pour les débannir, utilisez simplement la commande `unbanip`.
 
-#### reloadbans
+#### reloadbans
 
 `bans.json` est un fichier qui contient les informations sur les adresses IP actuellement bannies du serveur. Ce fichier est lu au démarrage du serveur, donc si vous débloquez une adresse IP/personne en modifiant le fichier, vous DEVEZ taper la commande RCON `reloadbans` pour que le serveur lise à nouveau `bans.json` et lui permette de rejoindre le serveur.
 

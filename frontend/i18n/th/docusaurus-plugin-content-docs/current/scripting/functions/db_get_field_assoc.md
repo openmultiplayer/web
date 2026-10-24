@@ -27,7 +27,7 @@ Returns 1 if successful, otherwise 0 if DBResult:dbresult is a NULL reference or
 GetNameBySpawnID(spawn_id)
 {
     // Declare "p_name"
-    new p_name[MAX_PLAYER_NAME+1];
+    new p_name[MAX_PLAYER_NAME + 1];
 
     // Declare "query" and "db_result"
     static query[61], DBResult:db_result;

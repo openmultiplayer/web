@@ -31,7 +31,7 @@ tags: ["车辆"]
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("车辆 %i 已重生！",vehicleid);
+    printf("车辆 %i 已重生！", vehicleid);
     return 1;
 }
 ```

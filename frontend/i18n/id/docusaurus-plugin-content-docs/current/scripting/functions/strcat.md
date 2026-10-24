@@ -13,7 +13,7 @@ Fungsi ini menggabungkan dua buah string menjadi sebuah string.
 | --------------------- | ----------------------------------------- |
 | dest[]                | Hasil dari string yang akan digabungkan.  |
 | const source[]        | String awal.                              |
-| maxlength=sizeof dest | Panjang maksimum dari hasil penggabungan. |
+| maxlength = sizeof dest | Panjang maksimum dari hasil penggabungan. |
 
 ## Returns
 

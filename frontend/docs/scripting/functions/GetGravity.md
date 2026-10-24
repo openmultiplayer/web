@@ -20,7 +20,7 @@ The current set gravity (as a float).
 ```c
 #include <a_samp>
 
-#if !defined GetGravity
+#if !defined GetGravity
     native Float:GetGravity();
 #endif
 

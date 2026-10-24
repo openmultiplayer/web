@@ -15,7 +15,7 @@ Ta "callback" imenuje se, ko je "filterscript" ustavil. Kliče se samo znotraj "
 public OnFilterScriptExit()
 {
     print("\n--------------------------------------");
-    print(" Moj "filterscript" se ustavil");
+    print(" Moj filterscript se ustavil");
     print("--------------------------------------\n");
     return 1;
 }

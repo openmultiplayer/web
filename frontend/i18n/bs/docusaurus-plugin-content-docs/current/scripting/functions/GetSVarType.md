@@ -22,7 +22,7 @@ Returna/vraća tip SVar-a. Pogledaj tabelu ispod.
 ```c
 stock PrintSVar(varname[])
 {
-    switch(GetSVarType(varname))
+    switch (GetSVarType(varname))
     {
         case SERVER_VARTYPE_NONE:
         {

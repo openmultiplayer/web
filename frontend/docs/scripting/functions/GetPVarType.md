@@ -25,7 +25,7 @@ Returns `PLAYER_VARTYPE_NONE` (0) if a player variable with the given name does 
 ```c
 stock PrintPVar(playerid, varname[])
 {
-    switch(GetPVarType(playerid, varname))
+    switch (GetPVarType(playerid, varname))
     {
         case PLAYER_VARTYPE_NONE:
         {

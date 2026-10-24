@@ -25,7 +25,7 @@ Returns 1 if the player is using the open.mp launcher, otherwise 0.
 public OnPlayerConnect(playerid)
 {
     // Player is using the open.mp launcher
-    if(IsPlayerUsingOmp(playerid))
+    if (IsPlayerUsingOmp(playerid))
     {
         SendClientMessage(playerid, -1, "You are using the open.mp launcher.");
     }

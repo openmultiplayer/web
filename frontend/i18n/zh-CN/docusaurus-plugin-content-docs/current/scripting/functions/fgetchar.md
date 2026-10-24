@@ -32,7 +32,7 @@ new g_char;
 if (handle)
 {
     // 读取所有字符（忽略UTF-8编码）
-    while((g_char = fgetchar(handle, 0, false)) != EOF)
+    while ((g_char = fgetchar(handle, 0, false)) != EOF)
     {
         // 输出字符
         printf("[ \"file.txt\" ] 0x%x", g_char);

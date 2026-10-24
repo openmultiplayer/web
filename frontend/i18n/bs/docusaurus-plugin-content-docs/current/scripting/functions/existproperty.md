@@ -22,7 +22,7 @@ Tačno (true) ako imovina postoji, uostalom netačno (false).
 ## Primjeri
 
 ```c
-if ( existproperty(0, "", 123984334) )
+if (existproperty(0, "", 123984334))
 {
     //imovina postoji, radi nešto
 }

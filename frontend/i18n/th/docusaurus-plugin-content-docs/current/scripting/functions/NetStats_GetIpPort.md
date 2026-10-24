@@ -22,7 +22,7 @@ The player's IP and port is stored in the specified array.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/ipandport"))
     {

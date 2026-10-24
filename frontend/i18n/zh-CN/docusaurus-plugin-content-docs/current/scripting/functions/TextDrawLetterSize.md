@@ -26,7 +26,7 @@ new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(100.0, 33.0,"示例文本绘图");
+    gMyTextdraw = TextDrawCreate(100.0, 33.0, "示例文本绘图");
     TextDrawLetterSize(gMyTextdraw, 3.2, 5.1);
     return 1;
 }

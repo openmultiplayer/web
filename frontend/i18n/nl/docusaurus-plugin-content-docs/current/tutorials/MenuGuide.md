@@ -64,7 +64,7 @@ Uitleg [AddMenuItem](../scripting/functions/AddMenuItem):
 
 ## Actie bij selectie
 
-Wanneer een speler een item kiest, wordt [OnPlayerSelectedMenuRow](../scripting/callbacks/OnPlayerSelectedMenuRow) aangeroepen. Gebruik `GetPlayerMenu` om te controleren of het ons menu is, en `switch(row)` voor de keuze.
+Wanneer een speler een item kiest, wordt [OnPlayerSelectedMenuRow](../scripting/callbacks/OnPlayerSelectedMenuRow) aangeroepen. Gebruik `GetPlayerMenu` om te controleren of het ons menu is, en `switch` voor de keuze.
 
 ```pawn
 public OnPlayerSelectedMenuRow(playerid, row)

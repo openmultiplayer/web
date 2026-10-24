@@ -34,7 +34,7 @@ do
 }
 
 // While next row has been fetched
-while(db_next_row(db_handle));
+while (db_next_row(db_handle));
 
 // Frees result
 db_free_result(db_result);

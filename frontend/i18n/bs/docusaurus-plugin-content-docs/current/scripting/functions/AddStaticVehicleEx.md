@@ -33,7 +33,7 @@ INVALID_VEHICLE_ID (65535) je vozilo koje nije kreirano (limit vozila je dostign
 public OnGameModeInit()
 {
     // Dodaj Hydru (520) u igru koja će se respawnovati 15 sekundi nakon što bude napuštena
-    AddStaticVehicleEx (520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
+    AddStaticVehicleEx(520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
 
     return 1;
 }

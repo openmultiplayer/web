@@ -30,7 +30,7 @@ if (t_handle)
     if (handle = fopen("file.txt", io_read))
     {
         // همه کاراکترها رو از "file.txt" بگیر
-        while((g_char = fgetchar(handle, 0, false)) != EOF)
+        while ((g_char = fgetchar(handle, 0, false)) != EOF)
         {
             // کاراکتر رو با حروف کوچیک توی فایل موقت بنویس
             fputchar(t_handle, tolower(g_char), false);
@@ -48,7 +48,7 @@ if (t_handle)
             // موفق بود
 
             // همه کاراکترها رو از فایل موقت بگیر
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while ((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // کاراکتر رو توی "file1.txt" بنویس
                 fputchar(handle, g_char, false);
@@ -72,7 +72,7 @@ if (t_handle)
             // موفق بود
 
             // همه کاراکترها رو از فایل موقت بگیر
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while ((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // کاراکتر رو توی "file2.txt" بنویس
                 fputchar(handle, g_char, false);

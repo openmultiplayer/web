@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
             return SendClientMessage(playerid, 0xFF0000FF, "无效的节点 ID。必须在 0 到 63 之间。");
 
         new idx = 15;
-        while (cmdtext[idx] != ' && cmdtext[idx] != '\0') idx++;
+        while (cmdtext[idx] != ' ' && cmdtext[idx] != '\0') idx++;
         while (cmdtext[idx] == ' ') idx++;
 
         if (cmdtext[idx] == '\0')

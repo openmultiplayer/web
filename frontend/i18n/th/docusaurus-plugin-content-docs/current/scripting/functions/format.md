@@ -25,16 +25,16 @@ This function does not return any specific values.
 ```c
 new result[128];
 new number = 42;
-format(result,sizeof(result), "The number is %i.",number);  //-> The number is 42.
-new string[]= "simple message";
-format(result,sizeof(result), "This is a %s containing the number %i.", string, number);
+format(result, sizeof(result), "The number is %i.", number);  //-> The number is 42.
+new string[] = "simple message";
+format(result, sizeof(result), "This is a %s containing the number %i.", string, number);
 // This is a simple message containing the number 42.
 ```
 
 ```c
 new string[64];
-format(string,sizeof(string),"Your score is: %d",GetPlayerScore(playerid));
-SendClientMessage(playerid,0xFFFFFFAA,string);
+format(string, sizeof(string), "Your score is: %d", GetPlayerScore(playerid));
+SendClientMessage(playerid, 0xFFFFFFAA, string);
 ```
 
 ```c
@@ -47,8 +47,8 @@ SendClientMessage(playerid, -1, string);
 
 ```c
 new string[35];
-format(string,sizeof(string),"43%s of my shirts are black.","%%");
-SendClientMessage(playerid,0xFFFFFAA,string);
+format(string, sizeof(string), "43%s of my shirts are black.", "%%");
+SendClientMessage(playerid, 0xFFFFFAA, string);
 ```
 
 ## บันทึก

@@ -103,7 +103,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Dacă au apăsat pe butonul de 'Select' or sau au dat dublu-click pe o armă
         {
             // Give them the weapon
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Le dăm desert eagle
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Le dăm un AK-47
@@ -137,7 +137,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Dacă au apăsat pe butonul de 'Select' or sau au dat dublu-click pe o armă
         {
             // Give them the weapon
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Give them an M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Give them an MP5

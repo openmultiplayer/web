@@ -20,7 +20,7 @@ Ova funkcija vraća količinu vremena (u milisekundama) za koje je igrač poveza
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/connectedtime"))
     {

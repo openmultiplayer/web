@@ -32,7 +32,7 @@ new g_char;
 if (handle)
 {
     // Read all characters, while ignoring UTF-8.
-    while((g_char = fgetchar(handle, 0, false)) != EOF)
+    while ((g_char = fgetchar(handle, 0, false)) != EOF)
     {
         // Print the character
         printf("[ \"file.txt\" ] 0x%x", g_char);

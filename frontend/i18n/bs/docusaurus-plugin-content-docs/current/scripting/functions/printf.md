@@ -40,13 +40,13 @@ Po želji možete staviti broj između `%` i slovo koda rezerviranog mjesta. Ova
 
 ```c
 new number = 42;
-printf("The number is %d.",number);  //-> Broj je 42.
+printf("The number is %d.", number);  //-> Broj je 42.
 
-new string[]= "prosta poruka";
+new string[] = "prosta poruka";
 printf("This is a %s containing the number %d.", string, number); //-> Ovo je prosta poruka koja sadrži broj 42.
 
 new character = 64;
-printf("I'm %c home",character); //-> I'm @ home
+printf("I'm %c home", character); //-> I'm @ home
 ```
 
 ## Zabilješke

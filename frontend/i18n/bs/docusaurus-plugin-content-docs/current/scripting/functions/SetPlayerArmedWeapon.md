@@ -25,7 +25,7 @@ Postavlja koje oružje (koje igrač posjeduje) igrač trenutno drži.
 ```c
 public OnPlayerUpdate(playerid)
 {
-    SetPlayerArmedWeapon(playerid,0); // onemogućuje oružja
+    SetPlayerArmedWeapon(playerid, 0); // onemogućuje oružja
     return 1;
 }
 ```

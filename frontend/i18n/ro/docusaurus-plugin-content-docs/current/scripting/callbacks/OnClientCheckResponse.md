@@ -31,7 +31,7 @@ public OnPlayerConnect(playerid)
 
 public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
-    if(actionid == 0x48) // sau 72
+    if (actionid == 0x48) // sau 72
     {
         print("WARNING: Jucătorul nu pare să folosească un computer obișnuit!");
         Kick(playerid);

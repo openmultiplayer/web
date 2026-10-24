@@ -21,7 +21,7 @@ A pontuação do jogador.
 ## Exemplos
 
 ```c
-public OnPlayerCommandText(playerid,text[])
+public OnPlayerCommandText(playerid, text[])
 {
     if (!strcmp(cmdtext, "/score", true))
     {

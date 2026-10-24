@@ -22,7 +22,7 @@ IP i port uređaja pohranjeni su u navedenom nizu.
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/ipandport"))
     {

@@ -17,7 +17,7 @@ tags: ["车辆"]
 RepairAllVehicles()
 {
     // 车辆ID从1开始计数
-    for(new i = 1, j = GetVehiclePoolSize(); i <= j; i++)
+    for (new i = 1, j = GetVehiclePoolSize(); i <= j; i++)
     {
         RepairVehicle(i);
     }

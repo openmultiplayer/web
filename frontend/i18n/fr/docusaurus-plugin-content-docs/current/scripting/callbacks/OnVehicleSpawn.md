@@ -28,7 +28,7 @@ Cette fonction ne retourne pas de valeur spécifique.
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("Vehicle %i spawn!",vehicleid);
+    printf("Vehicle %i spawn!", vehicleid);
     return 1;
 }
 ```

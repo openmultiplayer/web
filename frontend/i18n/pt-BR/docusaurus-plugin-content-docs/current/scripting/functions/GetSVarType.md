@@ -23,7 +23,7 @@ Retorna o [tipo](../resources/svartypes) do SVar.
 ```c
 stock PrintSVar(varname[])
 {
-    switch(GetSVarType(varname))
+    switch (GetSVarType(varname))
     {
         case SERVER_VARTYPE_NONE:
         {

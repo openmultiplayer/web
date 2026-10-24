@@ -32,7 +32,7 @@ Luôn được gọi đầu tiên trong filterscripts.
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("Vehicle %i spawned!",vehicleid);
+    printf("Vehicle %i spawned!", vehicleid);
     return 1;
 }
 ```

@@ -26,7 +26,7 @@ Provjeri da li igrač ima prikvačen objekat u određenom indexu (slotu).
 stock CountAttachedObjects(playerid)
 {
     new count;
-    for(new i = 0; i < MAX_PLAYER_ATTACHED_OBJECTS; i++)
+    for (new i = 0; i < MAX_PLAYER_ATTACHED_OBJECTS; i++)
     {
         if (IsPlayerAttachedObjectSlotUsed(playerid, i))
         {

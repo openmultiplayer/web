@@ -28,7 +28,7 @@ Her zaman Filterscript komutlarında ilk olarak çağrılır, bu nedenle 1 dönd
 ## Örnek
 
 ```c
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)|
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
     if (issuerid != INVALID_PLAYER_ID) // Hasar veren kişi kendi değilse...
     {

@@ -25,7 +25,7 @@ Sets the drunk level of a player which makes the player's camera sway and vehicl
 ```c
 if (strcmp(cmdtext, "/drunk", true) == 0)
 {
-    SetPlayerDrunkLevel (playerid, 4000);
+    SetPlayerDrunkLevel(playerid, 4000);
     SendClientMessage(playerid, 0xFFFFFFAA, "You are now drunk; don't drink and drive!");
     return 1;
 }

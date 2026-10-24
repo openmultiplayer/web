@@ -23,7 +23,7 @@ The object's rotation is stored in the referenced variables, not in the return v
 ## ตัวอย่าง
 
 ```c
-new Float:RotX,Float:RotY,Float:RotZ;
+new Float:RotX, Float:RotY, Float:RotZ;
 GetObjectRot(objectid, RotX, RotY, RotZ);
 ```
 

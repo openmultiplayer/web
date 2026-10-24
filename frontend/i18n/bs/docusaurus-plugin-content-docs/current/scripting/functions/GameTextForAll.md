@@ -28,12 +28,12 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     // "[playerName] je preminuo" na ekranu svih,
     // nakon što je igrač umro ili ubijen.
     // Prikazuje se u obliku teksta 3, na 5 sekundi (5000 ms)
-    new name[ 24 ], string[ 64 ];
-    GetPlayerName( playerid, name, 24 );
+    new name[24], string[64];
+    GetPlayerName(playerid, name, 24);
 
     // Pravilno formatirajte preminulu poruku i pokažite je svima:
-    format( string, sizeof(string), "~w~%s je umro", name );
-    GameTextForAll( string, 5000, 3 );
+    format(string, sizeof(string), "~w~%s je umro", name);
+    GameTextForAll(string, 5000, 3);
 
     return 1;
 }

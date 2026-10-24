@@ -30,14 +30,14 @@ public OnGameModeInit()
 {
     // This line is used to create the textdraw.
     // Note: This creates a textdraw without any formatting.
-    welcomeText = TextDrawCreate(240.0,580.0,"Welcome to my SA-MP server");
+    welcomeText = TextDrawCreate(240.0, 580.0, "Welcome to my SA-MP server");
     return 1;
 }
 
 public OnPlayerConnect(playerid)
 {
     //This is used to show the player the textdraw when they connect.
-    TextDrawShowForPlayer(playerid,welcomeText);
+    TextDrawShowForPlayer(playerid, welcomeText);
 }
 ```
 

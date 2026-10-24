@@ -22,7 +22,7 @@ Obtenha o tempo de jogo atual do jogador. Definido por [SetWorldTime](SetWorldTi
 
 **false** - Falha na execução da função. O jogador especificado não existe.
 
-O tempo atual do jogo é armazenado nas variáveis ​​especificadas.
+O tempo atual do jogo é armazenado nas variáveis especificadas.
 
 ## Exemplos
 

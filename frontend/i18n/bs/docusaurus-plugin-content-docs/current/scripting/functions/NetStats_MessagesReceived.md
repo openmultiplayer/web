@@ -20,7 +20,7 @@ Ova funkcija vraća broj poruka koje je server primio od klijenta za reprodukcij
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/msgs"))
     {

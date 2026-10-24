@@ -21,7 +21,7 @@ This function does not return any specific values.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerCommandText( playerid, cmdtext[] )
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/banme", true))
     {

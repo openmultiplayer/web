@@ -15,7 +15,7 @@ Olá a todos, com certeza está uma noite tranquila e agradável, ou pelo menos 
 
 Em geral, formatar um texto é o ato de manipulá-lo para melhorar visualmente sua legibilidade, seja alterando a família da fonte, cor, peso e assim por diante.
 
-Strings sendo uma matriz de caracteres (_alfabetos, números, símbolos_), que não chamaríamos especificamente de texto em si, mas são referidos como tal quando exibidos, podem ser processados ​​com a mesma abordagem, mas infelizmente, a interpretação de Pawn de SA-MP não permite muito (_ainda? Talvez nunca_), de modo geral, mudar a cor é o máximo que podemos chegar, sim, você ainda pode alterar/personalizar o fonte, mas isso é apenas do lado do cliente, e sim, [GTA San Andreas](https://www.rockstargames.com/sanandreas/) (_o jogo pai_) fornece algumas fontes extras, mas isso só funciona em [textdraws](../scripting/resources/textdraws) e [gametext](../scripting/functions/GameTextForPlayer), isso causa limitações em relação à apresentação de texto, mas ei, já faz mais de uma década agora, e sobrevivemos muito bem.
+Strings sendo uma matriz de caracteres (_alfabetos, números, símbolos_), que não chamaríamos especificamente de texto em si, mas são referidos como tal quando exibidos, podem ser processados com a mesma abordagem, mas infelizmente, a interpretação de Pawn de SA-MP não permite muito (_ainda? Talvez nunca_), de modo geral, mudar a cor é o máximo que podemos chegar, sim, você ainda pode alterar/personalizar o fonte, mas isso é apenas do lado do cliente, e sim, [GTA San Andreas](https://www.rockstargames.com/sanandreas/) (_o jogo pai_) fornece algumas fontes extras, mas isso só funciona em [textdraws](../scripting/resources/textdraws) e [gametext](../scripting/functions/GameTextForPlayer), isso causa limitações em relação à apresentação de texto, mas ei, já faz mais de uma década agora, e sobrevivemos muito bem.
 
 ### Declaração de string
 
@@ -286,7 +286,7 @@ native uudecode(dest[], const source[], maxlength=sizeof dest);
 native uuencode(dest[], const source[], numbytes, maxlength=sizeof dest);
 native memcpy(dest[], const source[], index=0, numbytes, maxlength=sizeof dest);
 ```
-Examinaremos mais de perto alguns deles, aqueles que são usados ​​com mais frequência.
+Examinaremos mais de perto alguns deles, aqueles que são usados com mais frequência.
 
 - A função `strlen` (este e `sizeof` são coisas completamente diferentes), que pega uma string como parâmetro, retorna o comprimento dessa string (o número de caracteres que ela possui), mas preste atenção pois isso é um pouco complicado de como funciona, já disse isso anteriormente no tutorial, esta função depende da posição do caracter nulo para determinar o comprimento da string, portanto qualquer outro caractere não nulo válido que vier depois não será contado, pois assim que o primeiro caractere nulo for alcançado, a função retornará o número de células desde o início até esse caractere nulo.
 
@@ -294,7 +294,7 @@ Examinaremos mais de perto alguns deles, aqueles que são usados ​​com mais 
 
   ```pawn
   new str_dest[12] = "Hello", str_source[7] = " World";
-  strcat(str_dest,str_source);
+  strcat(str_dest, str_source);
   ```
   Se produzíssemos `str_dest`, ele mostraria **Hello World**, as duas strings foram adicionadas uma à outra e o resultado foi armazenado em `str_dest`, _“Hello” + “World” = “Hello World”_, observe como incluímos esse espaço na segunda string, sim, os próprios espaços são caracteres, de acordo com a tabela _ASCII_, seu valor é `32`, se não tivéssemos adicionado o espaço, a string resultante teria sido **HelloWorld**.
 
@@ -318,12 +318,12 @@ Existem muitas bibliotecas feitas pela comunidade que você pode baixar e que t�
 
 ### A função de formato
 
-Esta é provavelmente a função relacionada a strings mais usada na comunidade, muito simples e amigável, tudo o que faz é formatar pedaços de texto e juntá-los, pode ser implementada em diversas situações, como vincular variáveis ​​e strings, incorporar cores, adicionar quebras de linha... etc.
+Esta é provavelmente a função relacionada a strings mais usada na comunidade, muito simples e amigável, tudo o que faz é formatar pedaços de texto e juntá-los, pode ser implementada em diversas situações, como vincular variáveis e strings, incorporar cores, adicionar quebras de linha... etc.
 
 ```pawn
-format(output[], len, const format[], \{Float, _\}:...)
+format(output[], len, const format[], {Float, _}:...)
 ```
-A função de formatação toma como parâmetros o array de saída, seu tamanho (_número de suas células_), a string de formatação (_isso pode ser pré-armazenado em outro array, ou atribuído diretamente de dentro da função_) e, finalmente, alguns parâmetros opcionais, que podem ser variáveis ​​de diferentes tipos. Vamos usar esta função para atribuir um valor a uma string vazia.
+A função de formatação toma como parâmetros o array de saída, seu tamanho (_número de suas células_), a string de formatação (_isso pode ser pré-armazenado em outro array, ou atribuído diretamente de dentro da função_) e, finalmente, alguns parâmetros opcionais, que podem ser variáveis de diferentes tipos. Vamos usar esta função para atribuir um valor a uma string vazia.
 
 ```pawn
 new formatMsg[6];
@@ -358,7 +358,7 @@ O código acima irá inserir **Hello World**, este método de inserção de stri
 new formatMsg[23];
 format(formatMsg, sizeof(formatMsg), "This is "#THIS_YEAR", not"NEW_YEAR);
 ```
-Isso gerará **Este é 2018, não 2019**, a razão pela qual enfatizei que as duas constantes são de tipos diferentes é o uso do sinal numérico `#`, se o valor **não** for uma string, então você deve prefixá-lo com o sinal numérico `#THIS_YEAR` para que seja tratado como `"2018"`, ou então você receberá alguns erros de compilação, pois para um valor de string, você pode optar por incluir ou omitir o sinal numérico, porque funcionará de qualquer maneira (`NEW_YEAR` é o mesmo que `#NEW_YEAR`). Você só pode usar isso para recuperar valores de constantes predefinidas, não funcionará com variáveis ​​regulares, ou arrays/strings, pois o tratamento deles pode ser feito usando espaços reservados, mais sobre isso mais tarde.
+Isso gerará **Este é 2018, não 2019**, a razão pela qual enfatizei que as duas constantes são de tipos diferentes é o uso do sinal numérico `#`, se o valor **não** for uma string, então você deve prefixá-lo com o sinal numérico `#THIS_YEAR` para que seja tratado como `"2018"`, ou então você receberá alguns erros de compilação, pois para um valor de string, você pode optar por incluir ou omitir o sinal numérico, porque funcionará de qualquer maneira (`NEW_YEAR` é o mesmo que `#NEW_YEAR`). Você só pode usar isso para recuperar valores de constantes predefinidas, não funcionará com variáveis regulares, ou arrays/strings, pois o tratamento deles pode ser feito usando espaços reservados, mais sobre isso mais tarde.
 
 Você também pode alinhar quantas aspas duplas quiser, uma ao lado da outra, embora não faça sentido, pois é mais natural apenas escrever uma frase em um único par de aspas duplas, aqui está um exemplo da mesma frase escrita em ambos os conceitos;
 
@@ -381,7 +381,7 @@ A primeira coisa que deve ser mencionada, e que pessoalmente me desencadeia, é 
 
 ```pawn
 new badString[100];
-badString ="Hello :)";
+badString = "Hello :)";
 ```
 Declaramos uma string com _100 células_, _1 célula_ ocupa _4 bytes_, vamos fazer algumas contas básicas, _100 \* 4 = 400_ bytes, isso é aproximadamente _0,0004 Megabyte_, nada para os padrões de hoje, eu sei, mas supostamente, em um script enorme, obviamente você terá que usar mais de uma string, _60_, _70_, caramba _100_ mais strings? (_possivelmente mais_), esses números minúsculos vão se acumular, resultando em um número muito maior, e causar sérios problemas mais tarde, e acredite em mim quando digo, a string que declaramos não chega tão perto de parecer estúpida quando comparada com aquelas com tamanho cinco vezes maior ou mais.
 
@@ -391,7 +391,7 @@ Tenha em mente os limites que SA-MP coloca ao lidar com strings, onde a string _
 
 ```pawn
 new goodString[12];
-goodString="Good string";
+goodString = "Good string";
 ```
 Viu como preservamos a memória? Apenas **48** bytes e nenhum peso extra que possa causar problemas mais tarde são muito melhores.
 
@@ -481,7 +481,7 @@ What about you?
 ```
 Observe como usamos o símbolo numérico aqui da mesma forma que fizemos com a função de formato, se o valor for um número inteiro, você o prefixa com `#` para que seja tratado como uma string.
 
-Lembre-se também de que a função `print` suporta strings compactadas, porém aceita apenas variáveis ​​​​do tipo string (_array de caracteres_), passando qualquer coisa que não seja um array, uma string (_seja entre aspas duplas ou prefixada pelo símbolo numérico_) causará erros de compilação, portanto, fazer qualquer um dos seguintes não funcionará;
+Lembre-se também de que a função `print` suporta strings compactadas, porém aceita apenas variáveis do tipo string (_array de caracteres_), passando qualquer coisa que não seja um array, uma string (_seja entre aspas duplas ou prefixada pelo símbolo numérico_) causará erros de compilação, portanto, fazer qualquer um dos seguintes não funcionará;
 
 ```pawn
 // Caso 1
@@ -539,11 +539,11 @@ Observe como, de forma semelhante às funções `print` e `format`, aninhamos es
 ```
 Hey Vsauce, Micheal here! #2018
 ```
-A função `printf`, como eu disse antes, realmente brilha quando **especificadores de formato** são usados, é o que a distingue e a diferencia, você pode anexar quantas variáveis ​​quiser e produzir strings simples e complexas com facilidade, teremos uma visão muito mais profunda sobre isso quando formos apresentados a esses especificadores mais tarde.
+A função `printf`, como eu disse antes, realmente brilha quando **especificadores de formato** são usados, é o que a distingue e a diferencia, você pode anexar quantas variáveis quiser e produzir strings simples e complexas com facilidade, teremos uma visão muito mais profunda sobre isso quando formos apresentados a esses especificadores mais tarde.
 
 #### Mensagens do cliente
 
-Além dos outros textos de bonecos que você pode imprimir no console do servidor, que são usados principalmente para depuração, há mensagens que são impressas na tela do cliente, na seção de chat, essas também podem ser formatadas da mesma forma, mas também suportam incorporação de cores, o que torna uma apresentação maravilhosa para textos (_se usados ​​corretamente, é claro_).
+Além dos outros textos de bonecos que você pode imprimir no console do servidor, que são usados principalmente para depuração, há mensagens que são impressas na tela do cliente, na seção de chat, essas também podem ser formatadas da mesma forma, mas também suportam incorporação de cores, o que torna uma apresentação maravilhosa para textos (_se usados corretamente, é claro_).
 
 Tenha em mente que as restrições de SA-MP na exibição de strings também se aplicam a este tipo de mensagens, sendo como as anteriores, limitadas a menos de _144 caracteres_, caso contrário a mensagem não será enviada, às vezes até travarão alguns comandos.
 
@@ -566,7 +566,7 @@ Obviamente, você também pode passar um array de caracteres, strings formatadas
 new mornMsg[] = "Hello!";
 
 SendClientMessage(0, -1, mornMsg);
-SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
+SendClientMessage(0, -1, "How are you ", STRING_MSG#?);
 ```
 Como você pode ver no exemplo acima, isso enviará ao jogador com o id _0_ duas mensagens coloridas em branco, a primeira mensagem dirá “_Olá!_”, e a segunda dirá, “_Como você está hoje?_”, bem semelhante ao funcionamento de outras funções. Lembre-se de que números inteiros constantes predefinidos devem ser prefixados com o símbolo `#`.
 
@@ -659,14 +659,14 @@ Este último também pode ser feito em cores incorporadas;
 
 ```pawn
 #define COL_RED "{FF0000}"
-#define COL_GREEN {FF0000}
+#define COL_GREEN "FF0000"
 #define COL_BLUE "{FF0000}"
 
 SendClientMessageToAll(-1, ""COL_RED"I'm a red text");
-SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
+SendClientMessageToAll(-1, "{"COL_GREEN"}I'm a green "COL_BLUE"and blue");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
 ```
-No momento da compilação, todas as constantes predefinidas serão substituídas por seus valores, e assim, este `"COL_RED"I’m a red text` se torna este `”{FF0000}”I’m a red text`, observe como usamos dois métodos para predizer essas cores, `RRGGBB` e `{RRGGBB}`, vai para a preferência pessoal qual método seguir, pessoalmente, acho que defini-los como `RRGGBB` muito desmarcado, pois o uso de chaves está presente e, portanto, torna perceptível que estamos incorporando uma cor.
+No momento da compilação, todas as constantes predefinidas serão substituídas por seus valores, e assim, este `"COL_RED"I’m a red text` se torna este `"{FF0000}"I’m a red text`, observe como usamos dois métodos para predizer essas cores, `RRGGBB` e `{RRGGBB}`, vai para a preferência pessoal qual método seguir, pessoalmente, acho que defini-los como `RRGGBB` muito desmarcado, pois o uso de chaves está presente e, portanto, torna perceptível que estamos incorporando uma cor.
 
 Essa foi a abordagem geral na incorporação de cores com strings de diálogo e mensagens do cliente, é possível usar cores dentro do texto em mensagens do cliente, diálogos, rótulos de texto 3D, textos de materiais de objetos e placas de veículos, mas ei, SA-MP também possui funcionalidades de texdraws e gametexts, porém eles não suportam a notação RGB e, portanto, a adição de cores é feita diferentemente.
 
@@ -951,7 +951,7 @@ new chr = ''';
 Simplesmente porque o compilador considerará o primeiro par de aspas simples como uma entidade e o segundo como uma sequência de cotações não fechadas, então, para corrigir isso, teremos que escapar da do meio;
 
 ```pawn
-new chr = ''\';
+new chr = '\'';
 ```
 - **A sequência de escape “Aspas duplas” - `\"`**
 
@@ -1055,7 +1055,7 @@ Placeholders ou especificadores são caracteres escapados por um sinal de porcen
 ```
 Os atributos entre colchetes são todos opcionais e cabe a você usuário mantê-los ou não, o que realmente define um especificador do formato amplamente conhecido de **%type**, a parte do tipo é substituída por um caractere para representar um determinado tipo de saída; (_inteiro, flutuante... etc_).
 
-Placeholders são usados ​​apenas em funções que aceitam parâmetros, portanto funções como print não terão efeito, uma alternativa é o `printf` mais avançado.
+Placeholders são usados apenas em funções que aceitam parâmetros, portanto funções como print não terão efeito, uma alternativa é o `printf` mais avançado.
 
 Vejamos os diferentes tipos de saída que podem ser usados:
 
@@ -1087,7 +1087,7 @@ printf("%d + %i = %i", 5, 6, 5 + 6);
 printf("%d is here", 2018);
 printf("%d + %i = %i", 5, 6, 5 + 6);
 ```
-A saída também suporta constantes, variáveis ​​e funções predefinidas.
+A saída também suporta constantes, variáveis e funções predefinidas.
 
 ```pawn
 #define CURRENT_YEAR 2018
@@ -1156,7 +1156,7 @@ Novamente, assim como o especificador de número inteiro, aceita constantes, var
 
 ```pawn
 #define NAME "Max"
-new message[] = “Hello there!”;
+new message[] = "Hello there!";
 
 printf("His name is %s", NAME);
 printf("Hey, %s", message);
@@ -1249,7 +1249,7 @@ O primeiro valor `1.5` resultará em um comportamento indefinido ao ser converti
 
 - **Os especificadores binários - `%b`**
 
-O especificador a seguir, abreviação de “_binary_” é usado para imprimir valores passados ​​como números binários, a passagem de caracteres converterá seu código _ASCII_ em binário, e o mesmo acontece com strings onde apenas o primeiro caractere é considerado, os booleanos são considerados true e false respectivamente, os números flutuantes se enquadram no caso de comportamento indefinido, já para inteiros e hexadecimais, eles são convertidos em binários e de saída.
+O especificador a seguir, abreviação de “_binary_” é usado para imprimir valores passados como números binários, a passagem de caracteres converterá seu código _ASCII_ em binário, e o mesmo acontece com strings onde apenas o primeiro caractere é considerado, os booleanos são considerados true e false respectivamente, os números flutuantes se enquadram no caso de comportamento indefinido, já para inteiros e hexadecimais, eles são convertidos em binários e de saída.
 
 ```pawn
 printf("%b", 0b0011);
@@ -1370,7 +1370,7 @@ printf("%.*s", 7, "Hello world!");
 Hello
 Hello w
 ```
-Como você pode ver, os valores de precisão dinâmica podem ser usados ​​tanto com os espaços reservados float quanto com os strings.
+Como você pode ver, os valores de precisão dinâmica podem ser usados tanto com os espaços reservados float quanto com os strings.
 
 Um truque muito legal que podemos fazer graças ao campo de precisão é obter substrings, agora, agora, existem muitos métodos que podemos usar para fazer isso, e isso sem considerar a função nativa [strfind](../scripting/functions/strfind), e não vamos esquecer as funções incríveis que temos no [strlib](https://github.com/oscar-broman/strlib) do **Slice**.
 
@@ -1428,7 +1428,7 @@ Colocando em ação tudo o que vimos até agora, podemos formatar nossas strings
 Mas no mundo real, a maioria das pessoas não gosta de olhar para terminais, eles são muito assustadores e complicados para o usuário médio, e como todos vocês sabem, _mensagens do cliente_ aparecem na tela do jogo, e não no console, no entanto, elas não podem ser formatadas em movimento, são mais como uma função de impressão, por assim dizer, para contornar essa limitação, utilizamos outra função muito eficaz, chamada `format`, não vamos nos aprofundar em sua definição, como já abordamos explicando-o nas partes anteriores (consulte [isto](../scripting/functions/format)), mas aqui está um lembrete de sua sintaxe;
 
 ```pawn
-format(output[], len, const format[], \{Float, _\}: ...}
+format(output[], len, const format[], {Float, _}: ...)
 ```
 Vamos dar uma olhada nestes exemplos;
 
@@ -1439,11 +1439,12 @@ Vamos dar uma olhada nestes exemplos;
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);
+SendClientMessageToAll(0, output);
 ```
 > [Info]: o jogador com id 9 se chama <span style={{color: '#ee11cc'}}>Player1</span>.
 
-Simplesmente, basta obter o nome do jogador e começar a formatar a string, o espaço reservado `%d` é responsável por exibir as variáveis ​​​​`playerid`, que contém o valor `9`, o espaço reservado `%s` exibe a string `playerName` que contém o nome do jogador graças à função `GetPlayerName`.
+Simplesmente, basta obter o nome do jogador e começar a formatar a string, o espaço reservado `%d` é responsável por exibir as variáveis `playerid`, que contém o valor `9`, o espaço reservado `%s` exibe a string `playerName` que contém o nome do jogador graças à função `GetPlayerName`.
 
 Em seguida, mostramos a string formatada para todos no servidor usando a função `SendClientMessageToAll`, observe que o valor `0` em seu primeiro parâmetro indicando a cor preta, que será a cor da mensagem, o valor hexadecimal embutido `{FFFF00}` é o que resultou no nome do jogador ser amarelo.
 

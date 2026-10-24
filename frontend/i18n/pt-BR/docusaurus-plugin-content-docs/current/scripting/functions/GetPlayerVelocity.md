@@ -19,7 +19,7 @@ Obtenha a velocidade (velocidade) de um jogador nos eixos X, Y e Z.
 
 ## Retornos
 
-A função em si não retorna um valor específico. As velocidades X, Y e Z são armazenadas nas variáveis ​​especificadas.
+A função em si não retorna um valor específico. As velocidades X, Y e Z são armazenadas nas variáveis especificadas.
 
 ## Exemplos
 

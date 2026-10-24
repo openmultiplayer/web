@@ -27,7 +27,7 @@ This functions allows you to toggle the drawing of player nametags, healthbars a
 //The player who typed /nameoff will not be able to see any other players nametag.
 if (strcmp("/nameoff", cmdtext, true) == 0)
 {
-    for(new i = GetPlayerPoolSize(); i != -1; --i) ShowPlayerNameTagForPlayer(playerid, i, false);
+    for (new i = GetPlayerPoolSize(); i != -1; --i) ShowPlayerNameTagForPlayer(playerid, i, false);
     GameTextForPlayer(playerid, "~W~Nametags ~R~off", 5000, 5);
     return 1;
 }

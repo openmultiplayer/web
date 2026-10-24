@@ -23,7 +23,7 @@ Callback นี้ไม่มีการส่งค่ากลับ
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"ยอดเงินในธนาคาร: $0") != -1)
+    if (strfind(text, "ยอดเงินในธนาคาร: $0") != -1)
     {
         SendClientMessage(playerid, -1, "ฉันจน :(");
     }

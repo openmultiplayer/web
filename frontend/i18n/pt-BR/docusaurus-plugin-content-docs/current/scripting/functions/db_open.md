@@ -30,7 +30,7 @@ public OnGameModeInit()
     gDBConnectionHandle = db_open("exemplo.db");
 
     // Se a conexão com o banco de dados existir
-    if(gDBConnectionHandle)
+    if (gDBConnectionHandle)
     {
         // Envia uma mensagem no console dizendo que uma conexão com o banco de dados foi criada com sucesso
         print("Conexão com o banco de dados \"exemplo.db\" criada com sucesso.");
@@ -46,7 +46,7 @@ public OnGameModeInit()
 public OnGameModeExit()
 {
     // Feche a conexão com o banco de dados se a conexão estiver aberta
-    if(db_close(gDBConnectionHandle))
+    if (db_close(gDBConnectionHandle))
     {
         // Limpeza extra
         gDBConnectionHandle = DB:0;

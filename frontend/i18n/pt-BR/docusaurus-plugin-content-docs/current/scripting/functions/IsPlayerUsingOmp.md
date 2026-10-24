@@ -26,7 +26,7 @@ Retorna 1 se o jogador estiver usando o inicializador open.mp, caso contrário, 
 public OnPlayerConnect(playerid)
 {
     // O jogador está usando o iniciador open.mp
-    if(IsPlayerUsingOmp(playerid))
+    if (IsPlayerUsingOmp(playerid))
     {
         SendClientMessage(playerid, -1, "You are using the open.mp launcher.");
     }

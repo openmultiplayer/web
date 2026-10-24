@@ -54,7 +54,7 @@ public OnGameModeExit()
 public OnPlayerSpawn(playerid)
 {
     // Declare "query" and "p_name"
-    static query[98], p_name[MAX_PLAYER_NAME+1];
+    static query[98], p_name[MAX_PLAYER_NAME + 1];
 
     // Stores the name of the player to "p_name"
     GetPlayerName(playerid, p_name, sizeof p_name);
@@ -72,7 +72,7 @@ public OnPlayerSpawn(playerid)
 GetNameBySpawnID(spawn_id)
 {
     // Declare "p_name"
-    new p_name[MAX_PLAYER_NAME+1];
+    new p_name[MAX_PLAYER_NAME + 1];
 
     // Declare "query" and "db_result"
     static query[60], DBResult:db_result;

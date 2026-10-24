@@ -1,7 +1,7 @@
 ---
 title: SetTeamCount
 sidebar_label: SetTeamCount
-description: "Esta função é usada para alterar a quantidade de times usados ​​no modo de jogo."
+description: "Esta função é usada para alterar a quantidade de times usados no modo de jogo."
 tags: []
 ---
 
@@ -21,7 +21,7 @@ Esta função não retorna nenhum valor específico.
 ## Exemplos
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     // Usamos equipes 18 neste modo Team-Deathmatch, defina-o;
     SetTeamCount(18);

@@ -28,13 +28,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
      // Zaledi igrača kada napiše /freezeme
      if (strcmp(cmdtext, "/freezeme", true) == 0)
      {
-          TogglePlayerControllable(playerid,0);
+          TogglePlayerControllable(playerid, 0);
           return 1;
      }
      // Odledi igrača kada napiše /unfreezeme
      if (strcmp(cmdtext, "/unfreezeme", true) == 0)
      {
-          TogglePlayerControllable(playerid,1);
+          TogglePlayerControllable(playerid, 1);
           return 1;
      }
      return 0;

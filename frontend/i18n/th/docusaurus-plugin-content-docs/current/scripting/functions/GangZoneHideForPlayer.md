@@ -37,7 +37,7 @@ public OnPlayerSpawn(playerid)
 
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    GangZoneHideForPlayer(playerid,gangzone);
+    GangZoneHideForPlayer(playerid, gangzone);
     return 1;
 }
 ```

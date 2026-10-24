@@ -22,7 +22,7 @@ Uvijek je pozvana prva u gamemode-u.
 ```c
 public OnPlayerExitedMenu(playerid)
 {
-    TogglePlayerControllable(playerid,1); // odledi igrača kada napusti meni
+    TogglePlayerControllable(playerid, 1); // odledi igrača kada napusti meni
     return 1;
 }
 ```

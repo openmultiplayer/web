@@ -27,7 +27,7 @@ Ova funkcija ti omogućava da omogućite/onemogućite iscrtavanje nametag-ova, h
 //igrač koji je napisao /nameoff neće biti u mogućnosti da vidi nametagove ostalih igrača.
 if (strcmp("/nameoff", cmdtext, true) == 0)
 {
-    for (new i = 0; i != MAX_PLAYERS; -- i)
+    for (new i = 0; i != MAX_PLAYERS; -- i)
     {
         ShowPlayerNameTagForPlayer(playerid, i, false);
     }

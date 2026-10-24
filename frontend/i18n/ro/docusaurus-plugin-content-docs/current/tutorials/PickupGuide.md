@@ -56,7 +56,7 @@ Când un jucător ridică noul nostru pick-up, vrem să le dăm 100 \$, pentru a
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
     // Check that the pickup ID of the pickup they picked up is gMyPickup
-    if(pickupid == gMyPickup)
+    if (pickupid == gMyPickup)
     {
         // Message the player
         SendClientMessage(playerid, 0xFFFFFFFF, "You received $100!");

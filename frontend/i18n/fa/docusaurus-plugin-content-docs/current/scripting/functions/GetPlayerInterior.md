@@ -20,7 +20,7 @@ ID فضای داخلی که بازیکن در حال حاضر در آن قرار
 ## مثال‌ها
 
 ```c
-public OnPlayerCommandText(playerid,text[])
+public OnPlayerCommandText(playerid, text[])
 {
     if (strcmp(cmdtext, "/int", true) == 0)
     {

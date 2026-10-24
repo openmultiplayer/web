@@ -33,15 +33,15 @@ Provjerava da li je vozilo kreirano.
 #endif
 
 // Count vehicles
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext,"/countvehicles",true))
+    if (!strcmp(cmdtext, "/countvehicles", true))
     {
         new
             count,
             msg[60];
 
-        for(new i; i < MAX_VEHICLES; i++)
+        for (new i; i < MAX_VEHICLES; i++)
         {
             if (IsValidVehicle(i)) count++;
         }

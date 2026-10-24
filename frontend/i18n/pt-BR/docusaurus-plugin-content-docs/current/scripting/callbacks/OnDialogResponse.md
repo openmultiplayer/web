@@ -103,7 +103,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Se clicar em 'Select' ou dar clique duplo na arma
         {
             // Give them the weapon
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Entrega uma Deagle
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Entra uma AK-47
@@ -137,7 +137,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Se clicar em 'Select' ou usar clique duplo na arma
         {
             // Devolve uma arma
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Entrega uma M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Entrega uma MP5

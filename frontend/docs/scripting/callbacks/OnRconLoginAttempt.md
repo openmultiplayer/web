@@ -30,7 +30,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
         new ipAddress[16];
 
-        for (new i = 0; i�< MAX_PLAYERS; i++) // Loop through all players
+        for (new i = 0; i < MAX_PLAYERS; i++) // Loop through all players
         {
             if (!IsPlayerConnected(i))
             {

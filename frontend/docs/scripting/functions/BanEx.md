@@ -29,7 +29,7 @@ Any action taken directly before BanEx() (such as sending a message with [SendCl
 ## Examples
 
 ```c
-public OnPlayerCommandText( playerid, cmdtext[] )
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/banme", true))
     {

@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/netstats"))
     {
-        new stats[400+1];
+        new stats[400 + 1];
         GetNetworkStats(stats, sizeof(stats)); // 获取服务器网络统计数据
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "服务器网络状态", stats, "关闭", "");
     }

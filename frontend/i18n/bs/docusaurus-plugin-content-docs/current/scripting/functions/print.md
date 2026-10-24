@@ -31,7 +31,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     print("Gamemode se pokrenuo.");
     return 1;

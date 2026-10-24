@@ -49,7 +49,7 @@ public OnPlayerUpdate(playerid)
         if (!ActorHandsup[playerTargetActor] && playerWeapon >= 22 && playerWeapon <= 42 && keys & KEY_AIM)
         {
             // Aktör ellerini kaldırma animasyonunu uygular.
-            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr",4.1,0,0,0,1,0);
+            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr", 4.1, 0, 0, 0, 1, 0);
 
             // Hedef alınan aktör'ün ellerini kaldırma değişkeni true yani aktif/doğru hale gelir.
             ActorHandsup[playerTargetActor] = true;

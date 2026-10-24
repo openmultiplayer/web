@@ -22,9 +22,9 @@ tags: ["玩家"]
 ```c
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    new PLAYER_STATE:state = GetPlayerState(killerid); // 获取击杀者的状态
+    new PLAYER_STATE:playerState = GetPlayerState(killerid); // 获取击杀者的状态
 
-    if (state == PLAYER_STATE_DRIVER) // 如果击杀者处于驾驶状态
+    if (playerState == PLAYER_STATE_DRIVER) // 如果击杀者处于驾驶状态
     {
         // 驾驶车辆时击杀，扣除金钱
         GivePlayerMoney(killerid, -10000);

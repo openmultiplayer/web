@@ -24,7 +24,7 @@ O número de caracteres antes da substring (a posição inicial da substring) ou
 ## Exemplos
 
 ```c
-if (strfind("Are you in here?", "you", true) != -1) // Retorna 4, porque o início de 'you' (y) está no índice 4 na string
+if (strfind("Are you in here?", "you", true) != -1) // Retorna 4, porque o início de 'you' (y) está no índice 4 na string
 {
     SendClientMessageToAll(0xFFFFFFFF, "I found you!");
 }

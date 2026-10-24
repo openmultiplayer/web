@@ -25,7 +25,7 @@ Postavlja nivo pijanosti igrača zbog kojeg se igračeva kamera njiše i vozila 
 ```c
 if (strcmp(cmdtext, "/drunk", true) == 0)
 {
-    SetPlayerDrunkLevel (playerid, 4000);
+    SetPlayerDrunkLevel(playerid, 4000);
     SendClientMessage(playerid, 0xFFFFFFAA, "Sada si pijan; nemoj da piješ i voziš!");
     return 1;
 }

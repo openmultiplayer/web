@@ -25,7 +25,7 @@ No script, eles podem ser usados como constantes. Exemplo:
 #define CopyRightString     "(c) Copyright 2004 by me"
 main()
 {
-    print( Copyright )
+    print( CopyRightString )
     new sprites[maxsprites]
 }
 
@@ -117,7 +117,7 @@ Se a expansão de uma macro contém trechos que coincidem com outras macros, ess
 ```c
 
 #define a(%1)       (1+b(%1))
-#define b(%1)       (2\*(%1))
+#define b(%1)       (2*(%1))
 new c = a(8)
 
 ```

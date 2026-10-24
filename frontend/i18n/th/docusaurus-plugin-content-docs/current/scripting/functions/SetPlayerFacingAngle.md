@@ -23,7 +23,7 @@ Set a player's facing angle (Z rotation).
 ## ตัวอย่าง
 
 ```c
-SetPlayerFacingAngle( playerid, 0 ); //Player faces north
+SetPlayerFacingAngle(playerid, 0); //Player faces north
 ```
 
 ```

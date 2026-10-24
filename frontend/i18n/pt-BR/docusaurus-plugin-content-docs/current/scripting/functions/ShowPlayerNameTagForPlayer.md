@@ -30,7 +30,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     // O jogador que digitou /nameoff não poderá ver o crachá de nenhum outro jogador.
     if (strcmp("/nameoff", cmdtext, true) == 0)
     {
-        for (new i = 0; i < MAX_PLAYERS; i++)
+        for (new i = 0; i < MAX_PLAYERS; i++)
         {
             ShowPlayerNameTagForPlayer(playerid, i, false);
         }

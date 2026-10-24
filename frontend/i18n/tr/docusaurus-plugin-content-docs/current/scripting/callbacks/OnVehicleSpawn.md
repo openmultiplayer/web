@@ -32,7 +32,7 @@ Her zaman ilk filterscriptslerde çağrılır.
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("Araç %i spawnlandı!",vehicleid);
+    printf("Araç %i spawnlandı!", vehicleid);
     return 1;
 }
 ```

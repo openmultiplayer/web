@@ -59,7 +59,7 @@ public OnGameModeExit()
 :::warning
 
 - Aktori su potpuno odvojeni od NPC-a. NE koriste ID-ove igrača / utora na poslužitelju i NE MOGU se s njima postupati kao s NPC-ima. Aktori su ograničeni na 1000 (MAX_ACTORS).
-- Vozače mogu potiskivati ​​glumce, upotrijebite timer da biste ih vratili na njihova mjesta.
+- Vozače mogu potiskivati glumce, upotrijebite timer da biste ih vratili na njihova mjesta.
 
 :::
 

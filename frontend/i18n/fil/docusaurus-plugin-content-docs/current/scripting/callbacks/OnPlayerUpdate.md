@@ -27,7 +27,7 @@ Lagi itong na tatawag una sa mga filterscript.
 public OnPlayerUpdate(playerid)
 {
     new iCurWeap = GetPlayerWeapon(playerid); // Ibalik ang kasalukuyang sandata ng manlalaro
-    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Kung nagpalit siya ng armas simula noong huling update
+    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Kung nagpalit siya ng armas simula noong huling update
     {
         // Tawagan natin ang isang callback na pinangalanang OnPlayerChangeWeapon
         OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
@@ -58,7 +58,7 @@ public OnPlayerUpdate(playerid)
 
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // Ang kalusugan ng manlalaro ay nagbago mula noong huling pag-update -> server, kaya malinaw na na-update ang bagay.
         // Suriin natin kung mawawalan o makakakuha ng buhay ang manlalaro, anti-health cheat? ;)

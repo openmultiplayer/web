@@ -24,7 +24,7 @@ Ini akan selalu terpanggil pertama di filterscripts
 ```c
 public OnEnterExitModShop(playerid, enterexit, interiorid)
 {
-    if(enterexit == 0) // Jika enterexit bernilai 0, tandanya mereka sudah keluar
+    if (enterexit == 0) // Jika enterexit bernilai 0, tandanya mereka sudah keluar
     {
         SendClientMessage(playerid, COLOR_WHITE, "Keren abiez kendaraannya! tapi kena pajak $100 jiahahaha.");
         GivePlayerMoney(playerid, -100);
