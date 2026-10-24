@@ -22,7 +22,7 @@ Called when a player exits a menu.
 ```c
 public OnPlayerExitedMenu(playerid)
 {
-    TogglePlayerControllable(playerid,1); // unfreeze the player when they exit a menu
+    TogglePlayerControllable(playerid, 1); // unfreeze the player when they exit a menu
     return 1;
 }
 ```

@@ -34,7 +34,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     SendDeathMessage(killerid, playerid, reason); // killfeed(Sağdaki öldüren, silah ve ölen oyuncu) listesine ölen, öldüren ve ölüm nedenini gösterir.
 
     // killerid ile herhangi bir işlem yapmadan önce, killerid'nin geçerli olup olmadığını kontrol eder.
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         PlayerKills[killerid] ++;
     }

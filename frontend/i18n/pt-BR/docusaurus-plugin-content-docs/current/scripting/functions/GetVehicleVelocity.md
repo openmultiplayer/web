@@ -23,7 +23,7 @@ Obtenha a velocidade de um veículo nos eixos X, Y e Z.
 
 **false** - Falha na execução da função. Isso significa que o veículo especificado não existe.
 
-A velocidade do veículo é armazenada nas variáveis ​​especificadas.
+A velocidade do veículo é armazenada nas variáveis especificadas.
 
 ## Exemplos
 

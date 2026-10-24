@@ -24,7 +24,7 @@ Este întotdeauna numit primul în modul de joc, așa că întoarcerea 0 blochea
 ```c
 public OnVehicleMod(playerid, vehicleid, componentid)
 {
-    printf("Vehiculul %d a fost modificat de ID %d cu componentul %d",vehicleid, playerid,componentid);
+    printf("Vehiculul %d a fost modificat de ID %d cu componentul %d", vehicleid, playerid, componentid);
     if (GetPlayerInterior(playerid) == 0)
     {
         BanEx(playerid, "Trucuri de reglare"); // Script anti-tuning hacks

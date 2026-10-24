@@ -176,7 +176,7 @@ Este código ainda faz a mesma coisa, mas agora estamos dizendo a MyFunction() o
 
 # Variáveis
 
-Uma variável é basicamente um pedaço de memória, é onde os dados são armazenados e podem ser alterados e lidos conforme necessário. As variáveis ​​​​são uma ou mais células, uma célula tem 32 bits (4 bytes) de tamanho e, por padrão, assinada para que possam armazenar de -2147483648 a 2147483647 (embora -2147483648 seja mal definido em PAWN e forneça resultados estranhos se exibido). Uma variável feita de mais de uma célula é chamada de array, strings são um tipo especial de array onde cada célula contém um caractere da string (ou 4 caracteres em strings compactadas, mas eles não são abordados aqui).
+Uma variável é basicamente um pedaço de memória, é onde os dados são armazenados e podem ser alterados e lidos conforme necessário. As variáveis são uma ou mais células, uma célula tem 32 bits (4 bytes) de tamanho e, por padrão, assinada para que possam armazenar de -2147483648 a 2147483647 (embora -2147483648 seja mal definido em PAWN e forneça resultados estranhos se exibido). Uma variável feita de mais de uma célula é chamada de array, strings são um tipo especial de array onde cada célula contém um caractere da string (ou 4 caracteres em strings compactadas, mas eles não são abordados aqui).
 
 ---
 
@@ -262,7 +262,7 @@ new
     myVariable = 5,
     myArray[myVariable];
 ```
-Parece que esse código criaria uma matriz do tamanho de qualquer número armazenado em myVariable (aqui 5, mas pode ser qualquer coisa), mas você não pode fazer isso. Em PAWN a memória para variáveis ​​é atribuída quando você compila seu código, isso significa que os arrays são sempre do mesmo tamanho, você não pode definir o tamanho como quiser quando quiser.
+Parece que esse código criaria uma matriz do tamanho de qualquer número armazenado em myVariable (aqui 5, mas pode ser qualquer coisa), mas você não pode fazer isso. Em PAWN a memória para variáveis é atribuída quando você compila seu código, isso significa que os arrays são sempre do mesmo tamanho, você não pode definir o tamanho como quiser quando quiser.
 
 ---
 
@@ -275,7 +275,7 @@ new
     myArray[5];
 myArray[2] = 7;
 ```
-Isso declarará um array com 5 slots e dará ao slot THIRD o valor 7, visto que as variáveis ​​sempre começam como 0 isso fará com que os valores no array:
+Isso declarará um array com 5 slots e dará ao slot THIRD o valor 7, visto que as variáveis sempre começam como 0 isso fará com que os valores no array:
 
 ```
 0, 0, 7, 0, 0
@@ -322,7 +322,7 @@ myArray[2]++;
 
 ### Exemplo
 
-Conforme mencionado acima, um tipo comum de array é o array MAX_PLAYERS. MAX_PLAYERS não é uma variável, é uma definição que será explicada mais tarde, mas por enquanto aceite que é um número constante igual ao número máximo de jogadores que um servidor pode conter (por padrão é 500, mesmo se você alterar o número em seu arquivo config.json). O código a seguir usa variáveis ​​normais para armazenar dados de 4 jogadores e fazer algo com esses jogadores em uma função (para simplificar, suponha que MAX_PLAYERS seja 4 por enquanto):
+Conforme mencionado acima, um tipo comum de array é o array MAX_PLAYERS. MAX_PLAYERS não é uma variável, é uma definição que será explicada mais tarde, mas por enquanto aceite que é um número constante igual ao número máximo de jogadores que um servidor pode conter (por padrão é 500, mesmo se você alterar o número em seu arquivo config.json). O código a seguir usa variáveis normais para armazenar dados de 4 jogadores e fazer algo com esses jogadores em uma função (para simplificar, suponha que MAX_PLAYERS seja 4 por enquanto):
 
 ```c
 new
@@ -333,7 +333,7 @@ new
 
 SetPlayerValue(playerid, value)
 {
-    switch(playerid)
+    switch (playerid)
     {
         case 0: gPlayer0 = value; // é o mesmo que fazer if (playerid == 0)
         case 1: gPlayer1 = value; // é o mesmo que fazer if (playerid == 1)
@@ -394,7 +394,7 @@ new
     myString[16] = "hello";
 myString[1] = 'a';
 ```
-As aspas simples ao redor de "a" significam que é um caractere, não uma string, os caracteres não precisam ser terminados em NULL, pois têm apenas uma célula de comprimento, eles também podem ser usados ​​​​alternadamente com números se você souber o que eles representam.
+As aspas simples ao redor de "a" significam que é um caractere, não uma string, os caracteres não precisam ser terminados em NULL, pois têm apenas uma célula de comprimento, eles também podem ser usados alternadamente com números se você souber o que eles representam.
 
 ```c
 new
@@ -504,7 +504,7 @@ Isso é perfeitamente válido, entretanto, ao adicionar essas duas variáveis _d
 
 ## Escopo
 
-Escopo é onde uma variável pode ser usada. Existem quatro escopos principais: local, estático local, estático global e global. Todas as variáveis ​​só podem ser usadas depois de declaradas, então está certo:
+Escopo é onde uma variável pode ser usada. Existem quatro escopos principais: local, estático local, estático global e global. Todas as variáveis só podem ser usadas depois de declaradas, então está certo:
 
 ```c
 new
@@ -540,7 +540,7 @@ MyFunc()
 }
 // var1 não existe mais
 ```
-Variáveis ​​locais são redefinidas sempre, por exemplo:
+Variáveis locais são redefinidas sempre, por exemplo:
 
 ```c
 for (new i = 0; i < 3; i++)

@@ -8,7 +8,7 @@ description: "Uitleg over hexadecimale kleurweergave in SA:MP/open.mp."
 
 Het hexadecimale talstelsel (base 16) gebruikt 16 symbolen: 0–9 en A–F. `A` staat voor 10, `B` voor 11, …, `F` voor 15. Getallen worden als machten van 16 geschreven, vergelijkbaar met decimalen (machten van 10).
 
-Voorbeeld: decimaal `255` is hex `FF` omdat `15*16^1 + 15*16^0 = 240 + 15`.
+Voorbeeld: decimaal `255` is hex `FF` omdat `15 * 16^1 + 15 * 16^0 = 240 + 15`.
 
 Hex in Pawn gebruikt de prefix `0x`, zoals `0x04` (vergelijk met `0b` voor binair).
 

@@ -20,7 +20,7 @@ IGračev [status konekcije](../resources/connectionstatus), kao cjelobrojna vrij
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/connectionstatus"))
     {

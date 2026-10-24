@@ -21,7 +21,7 @@ The integer value of the specified player variable. It will still return 0 if th
 ## ตัวอย่าง
 
 ```c
-public OnPlayerDisconnect(playerid,reason)
+public OnPlayerDisconnect(playerid, reason)
 {
     printf("money: %d", GetPVarInt(playerid, "money")); // get the saved value ('money')
     // will print 'money: amount'

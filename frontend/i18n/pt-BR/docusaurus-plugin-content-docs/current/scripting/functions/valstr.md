@@ -38,7 +38,7 @@ Passar um valor alto para esta função pode fazer com que o servidor congele/tr
 stock FIX_valstr(dest[], value, bool:pack = false)
 {
     // o formato não consegue lidar com o cellmin corretamente
-    static const cellmin_value[] = !"-2147483648";
+    static const cellmin_value[] = !"-2147483648";
 
     if (value == cellmin)
         pack && strpack(dest, cellmin_value, 12) || strunpack(dest, cellmin_value, 12);

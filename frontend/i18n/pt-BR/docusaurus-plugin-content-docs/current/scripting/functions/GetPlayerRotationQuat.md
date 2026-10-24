@@ -26,7 +26,7 @@ Retorna a rotação de um jogador em todos os eixos como um quatérnio.
 
 **false** - Falha na execução da função. Isso significa que o jogador especificado não existe.
 
-A rotação do jogador é armazenada nas variáveis ​​especificadas.
+A rotação do jogador é armazenada nas variáveis especificadas.
 
 ## Exemplos
 

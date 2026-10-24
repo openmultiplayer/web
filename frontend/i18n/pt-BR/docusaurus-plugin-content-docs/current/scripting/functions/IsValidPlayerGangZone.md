@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 public OnPlayerSpawn(playerid)
 {
     // Verifique se esta gangzone existe
-    if(IsValidPlayerGangZone(playerid, gGangZoneID[playerid]))
+    if (IsValidPlayerGangZone(playerid, gGangZoneID[playerid]))
     {
         PlayerGangZoneDestroy(playerid, gGangZoneID[playerid]);
         gGangZoneID[playerid] = INVALID_GANG_ZONE;

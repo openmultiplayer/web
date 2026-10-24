@@ -28,7 +28,7 @@ Ukoliko je boja vozila crna, paintjob može da bude nevidljiv. Bolje je napravit
 
 ```c
 new rand = random(3); // biće ili 0 1 ili 2 (sve važeće)
-ChangeVehicleColor(GetPlayerVehicleID(playerid),1,1); // pazimo da li je bijela za bolji rezultat
+ChangeVehicleColor(GetPlayerVehicleID(playerid), 1, 1); // pazimo da li je bijela za bolji rezultat
 ChangeVehiclePaintjob(GetPlayerVehicleID(playerid), rand); // mijenja paintjob igračevog trenutnog vozila u nasumičan
 ```
 

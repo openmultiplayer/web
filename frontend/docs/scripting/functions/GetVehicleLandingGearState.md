@@ -20,7 +20,7 @@ Gets the current vehicle [landing gear state](../resources/landinggearstate) fro
 ## Examples
 
 ```c
-new LANDING_GEAR_STATE:state = GetVehicleLandingGearState(vehicleid);
+new LANDING_GEAR_STATE:landingGearState = GetVehicleLandingGearState(vehicleid);
 ```
 
 ## Related Functions

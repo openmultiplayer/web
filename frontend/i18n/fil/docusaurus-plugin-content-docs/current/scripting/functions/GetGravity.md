@@ -12,7 +12,7 @@ Kunin ang kasalukuyang naka set na gravity.
 ## Examples
 
 ```c
-#if !defined GetGravity
+#if !defined GetGravity
     native Float:GetGravity();
 #endif
 

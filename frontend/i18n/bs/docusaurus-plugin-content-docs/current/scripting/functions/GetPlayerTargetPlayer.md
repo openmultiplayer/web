@@ -23,8 +23,8 @@ ID ciljanog igrača, ili INVALID_PLAYER_ID ako ga nema.
 public OnPlayerUpdate(playerid)
 {
     // Store the ID
-    new playerTarDobij ID = GetPlayerTargetPlayer(playerid);
-    if (playerTarDobij ID != INVALID_PLAYER_ID && GetPlayerTeam(playerTarDobij ID) == GetPlayerTeam(playerid))
+    new playerTarDobijID = GetPlayerTargetPlayer(playerid);
+    if (playerTarDobijID != INVALID_PLAYER_ID && GetPlayerTeam(playerTarDobijID) == GetPlayerTeam(playerid))
     {
         GameTextForPlayer(playerid, "~R~ne pucaj na saigrače!", 5000, 3);
     }

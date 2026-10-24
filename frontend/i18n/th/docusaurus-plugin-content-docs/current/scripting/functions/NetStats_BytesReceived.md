@@ -20,7 +20,7 @@ This function returns the number of bytes the server has received from the playe
 ## ตัวอย่าง
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/bytesreceived"))
     {

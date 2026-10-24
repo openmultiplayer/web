@@ -1,7 +1,7 @@
 ---
 title: format
 sidebar_label: format
-description: "Formata uma string para incluir variáveis ​​e outras strings dentro dela."
+description: "Formata uma string para incluir variáveis e outras strings dentro dela."
 tags: ["string"]
 ---
 

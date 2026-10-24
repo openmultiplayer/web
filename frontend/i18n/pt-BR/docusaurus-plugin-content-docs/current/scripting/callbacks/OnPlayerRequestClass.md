@@ -23,9 +23,9 @@ Sempre é chamada primeiro em Filterscripts.
 ## Exemplos
 
 ```c
-public OnPlayerRequestClass(playerid,classid)
+public OnPlayerRequestClass(playerid, classid)
 {
-    if (classid == 3 && !IsPlayerAdmin(playerid))
+    if (classid == 3 && !IsPlayerAdmin(playerid))
     {
         SendClientMessage(playerid, COLOR_RED, "Esta skin é apenas para ADMINS!");
         return 0;

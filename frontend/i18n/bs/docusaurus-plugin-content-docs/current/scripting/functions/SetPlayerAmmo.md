@@ -37,7 +37,7 @@ Parametar 'weaponslot' je greška u kucanju u sa-mp include-u. Morate koristiti 
 
 :::tip
 
-Postavite streljivo na 0 da biste uklonili oružje iz inventara igrača. Imajte na umu da će se oružje i dalje prikazivati ​​u GetPlayerWeaponData, iako sa 0 streljiva.
+Postavite streljivo na 0 da biste uklonili oružje iz inventara igrača. Imajte na umu da će se oružje i dalje prikazivati u GetPlayerWeaponData, iako sa 0 streljiva.
 
 :::
 

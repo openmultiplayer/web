@@ -28,7 +28,7 @@ Kung itim ang kulay ng sasakyan , maaaring hindi makita ang paintjob. Mas mainam
 
 ```c
 new rand = random(3); // Magiging 0 1 o 2 (lahat ay valid)
-ChangeVehicleColor(GetPlayerVehicleID(playerid),1,1); // siguraduhing puti ito para sa mas magandang resulta
+ChangeVehicleColor(GetPlayerVehicleID(playerid), 1, 1); // siguraduhing puti ito para sa mas magandang resulta
 ChangeVehiclePaintjob(GetPlayerVehicleID(playerid), rand); // binabago ang paintjob ng kasalukuyang sasakyan ng player sa isang random
 ```
 

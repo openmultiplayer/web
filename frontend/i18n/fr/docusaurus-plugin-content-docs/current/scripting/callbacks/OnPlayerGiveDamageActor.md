@@ -32,7 +32,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 {
     new
       string[128],
-      attacker[MAX_PLAYER_NAME];
+      attacker[MAX_PLAYER_NAME],
       weaponname[24];
 
     GetPlayerName(playerid, attacker, sizeof (attacker));

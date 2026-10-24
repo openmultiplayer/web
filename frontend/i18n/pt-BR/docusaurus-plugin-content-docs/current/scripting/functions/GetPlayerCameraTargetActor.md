@@ -37,7 +37,7 @@ public OnPlayerUpdate(playerid)
     new playerTargetActor = GetPlayerCameraTargetActor(playerid);
 
     // Se ele ESTÁ olhando para ALGUM ator
-    if (playerTargetActor != INVALID_ACTOR_ID)
+    if (playerTargetActor != INVALID_ACTOR_ID)
     {
         // Guarde a arma do jogador para que possamos verificar se ele está armado
         new playerWeapon = GetPlayerWeapon(playerid);
@@ -50,7 +50,7 @@ public OnPlayerUpdate(playerid)
         if (!ActorHandsup[playerTargetActor] && playerWeapon >= 22 && playerWeapon <= 42 && keys & KEY_AIM)
         {
             // Aplicar animação 'mãos ao alto'
-            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr",4.1,0,0,0,1,0);
+            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr", 4.1, 0, 0, 0, 1, 0);
 
             // Defina 'ActorHandsup' como verdadeiro, para que a animação não continue sendo reaplicada
             ActorHandsup[playerTargetActor] = true;

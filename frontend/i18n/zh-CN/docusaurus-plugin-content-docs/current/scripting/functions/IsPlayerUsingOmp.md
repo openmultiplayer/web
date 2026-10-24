@@ -25,7 +25,7 @@ tags: ["玩家"]
 public OnPlayerConnect(playerid)
 {
     // 玩家正在使用open.mp启动器
-    if(IsPlayerUsingOmp(playerid))
+    if (IsPlayerUsingOmp(playerid))
     {
         SendClientMessage(playerid, -1, "你正在使用open.mp启动器。");
     }

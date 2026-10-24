@@ -170,7 +170,7 @@ As seguintes _estatísticas sobre uso de sinalizadores_, agrupadas por tipo de c
 
 A segunda seção contém nós adicionais. Esses nós são _nós de navegação_ (mas são chamados neste artigo como "nós de navegação" por questões de brevidade). Cada registro tem um tamanho de **14 bytes**.
 
-Os nós Navi são usados ​​para definir informações adicionais para segmentos do caminho do veículo; eles não são usados ​​por caminhos ped. Eles geralmente são posicionados entre dois nós adjacentes do veículo em uma curva interpolada.
+Os nós Navi são usados para definir informações adicionais para segmentos do caminho do veículo; eles não são usados por caminhos ped. Eles geralmente são posicionados entre dois nós adjacentes do veículo em uma curva interpolada.
 
 Pode haver bugs se você não conectar os nós de navegação corretamente. Os links sempre vão de um nó com área/nó ID superior para outro com ID inferior, portanto, o destino é sempre o nó inferior.
 

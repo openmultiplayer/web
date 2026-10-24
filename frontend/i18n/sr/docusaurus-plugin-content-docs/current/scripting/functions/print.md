@@ -43,7 +43,7 @@ Vecina sistema takodje podrzava svetlije/tamnije boje od ovih boja. Za highlight
 ## Пример
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     print("Gamemode started.");
     return 1;

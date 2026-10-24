@@ -65,7 +65,7 @@ public OnPlayerUpdate(playerid)
     new Float:fHealth;
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // 检测生命值变化，可用于反作弊检测
         if (fHealth > GetPVarFloat(playerid, "faPlayerHealth"))

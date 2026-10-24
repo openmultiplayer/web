@@ -20,7 +20,7 @@ tags: ["player", "vehicle"]
 ## مثال‌ها
 
 ```c
-new LANDING_GEAR_STATE:state = GetPlayerLandingGearState(playerid);
+new LANDING_GEAR_STATE:landingGearState = GetPlayerLandingGearState(playerid);
 ```
 
 ## توابع مرتبط

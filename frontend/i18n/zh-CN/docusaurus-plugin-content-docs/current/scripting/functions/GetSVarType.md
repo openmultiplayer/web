@@ -22,7 +22,7 @@ tags: ["服务器变量"]
 ```c
 stock PrintSVar(varname[])
 {
-    switch(GetSVarType(varname))
+    switch (GetSVarType(varname))
     {
         case SERVER_VARTYPE_NONE:
         {

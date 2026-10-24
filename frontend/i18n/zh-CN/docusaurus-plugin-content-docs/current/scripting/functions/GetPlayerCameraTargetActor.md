@@ -35,7 +35,7 @@ public OnPlayerUpdate(playerid)
     // 检测玩家当前注视的演员（若有）
     new playerTargetActor = GetPlayerCameraTargetActor(playerid);
 
-    if (playerTargetActor != INVALID_ACTOR_ID)
+    if (playerTargetActor != INVALID_ACTOR_ID)
     {
         // 获取玩家当前武器以检测是否持械
         new playerWeapon = GetPlayerWeapon(playerid);
@@ -48,7 +48,7 @@ public OnPlayerUpdate(playerid)
         if (!ActorHandsup[playerTargetActor] && playerWeapon >= 22 && playerWeapon <= 42 && keys & KEY_AIM)
         {
             // 应用举手动画
-            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr",4.1,0,0,0,1,0);
+            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr", 4.1, 0, 0, 0, 1, 0);
 
             // 标记演员已举手状态
             ActorHandsup[playerTargetActor] = true;

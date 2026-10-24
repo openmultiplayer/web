@@ -26,7 +26,7 @@ Postavite poziciju igrača.
 
 ```c
 // Teleportuje igrača u centar San Andreasa kada napiše /middle
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/middle", true))
     {

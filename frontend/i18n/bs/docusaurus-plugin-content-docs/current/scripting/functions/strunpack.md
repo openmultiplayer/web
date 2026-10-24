@@ -23,7 +23,7 @@ Broj upakovanih karaktera.
 
 ```c
 new string[17];
-new pstring[17 char] = !"Cao, kako si?";
+new pstring[17 char] = !"Cao, kako si?";
 strunpack(string, pstring);
 ```
 

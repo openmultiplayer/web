@@ -11,9 +11,9 @@ Get the current server date, which will be stored in the variables &year, &month
 
 | Name    | Description                                              |
 | ------- | -------------------------------------------------------- |
-| year=0  | The variable to store the year in, passed by reference.  |
-| month=0 | The variable to store the month in, passed by reference. |
-| day=0   | The variable to store the day in, passed by reference.   |
+| year = 0 | The variable to store the year in, passed by reference.  |
+| month = 0 | The variable to store the month in, passed by reference. |
+| day = 0 | The variable to store the day in, passed by reference.   |
 
 ## ส่งคืน
 

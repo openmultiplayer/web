@@ -31,8 +31,8 @@ public OnPlayerConnect(playerid)
     // Create the textdraw
     gPlayerTextDraw[playerid] = CreatePlayerTextDraw(playerid, 10.000000, 141.000000, "MyTextDraw");
     PlayerTextDrawTextSize(playerid, gPlayerTextDraw[playerid], 60.000000, 20.000000);
-    PlayerTextDrawAlignment(playerid, gPlayerTextDraw[playerid],0);
-    PlayerTextDrawBackgroundColor(playerid, gPlayerTextDraw[playerid],0x000000ff);
+    PlayerTextDrawAlignment(playerid, gPlayerTextDraw[playerid], 0);
+    PlayerTextDrawBackgroundColor(playerid, gPlayerTextDraw[playerid], 0x000000ff);
     PlayerTextDrawFont(playerid, gPlayerTextDraw[playerid], 1);
     PlayerTextDrawLetterSize(playerid, gPlayerTextDraw[playerid], 0.250000, 1.000000);
     PlayerTextDrawColor(playerid, gPlayerTextDraw[playerid], 0xffffffff);

@@ -378,7 +378,7 @@ main()
     new  Rational:  Celsius
     new  Rational:  Fahrenheit
     print  "Celsius\t  Fahrenheit\n"
-    for  (Celsius  =  5;  Celsius  <=  25;  Celsius++)
+    for (Celsius  =  5;  Celsius  <=  25;  Celsius++)
     {
         Fahrenheit  =  (Celsius  *  1.8)  +  32
         printf  "%r  \t  %r\n",  Celsius,  Fahrenheit
@@ -1503,27 +1503,13 @@ main()
         printf "%d-%d-%d tarihi şu gün: ", day, month, year;
         switch (wkday)
         {
-            case 0:
-                print "Cumartesi";
-                break;
-            case 1:
-                print "Pazar";
-                break;
-            case 2:
-                print "Pazartesi";
-                break;
-            case 3:
-                print "Salı";
-                break;
-            case 4:
-                print "Çarşamba";
-                break;
-            case 5:
-                print "Perşembe";
-                break;
-            case 6:
-                print "Cuma";
-                break;
+            case 0: print "Cumartesi";
+            case 1: print "Pazar";
+            case 2: print "Pazartesi";
+            case 3: print "Salı";
+            case 4: print "Çarşamba";
+            case 5: print "Perşembe";
+            case 6: print "Cuma";
         }
     }
     else

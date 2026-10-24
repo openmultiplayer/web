@@ -27,14 +27,14 @@ Replace the texture of an object with the texture from another model in the game
 ## ตัวอย่าง
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext,"/mycommand",true))
+    if (!strcmp(cmdtext, "/mycommand", true))
     {
         new Float:X, Float:Y, Float:Z;
         new myobject;
         GetPlayerPos(playerid, X, Y, Z);
-        myobject = CreateObject(19371, X, Y, Z+0.5, 0.0, 0.0, 0.0, 300.0);
+        myobject = CreateObject(19371, X, Y, Z + 0.5, 0.0, 0.0, 0.0, 300.0);
         SetObjectMaterial(myobject, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
         //Replaces the texture of our object with the texture of object 19341
         return 1;

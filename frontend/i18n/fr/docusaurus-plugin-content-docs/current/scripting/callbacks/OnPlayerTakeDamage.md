@@ -32,7 +32,7 @@ Elle est toujours appelée en premier dans le gamemode donc retourner **0** dans
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if(issuerid != INVALID_PLAYER_ID) // Si il ne se les inflige pas lui même
+    if (issuerid != INVALID_PLAYER_ID) // Si il ne se les inflige pas lui même
     {
         new
             infoString[128],
@@ -57,7 +57,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if(issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
+    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
         //Tirez une fois dans la tête au sniper tue instantanément
         SetPlayerHealth(playerid, 0.0);

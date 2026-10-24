@@ -29,7 +29,7 @@ Selalu terpanggil pertama di filterscripts.
 ```c
 public OnActorStreamIn(actorid, forplayerid)
 {
-    new sring[40];
+    new string[40];
     format(string, sizeof(string), "Actor %d berada disekitar anda.", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;

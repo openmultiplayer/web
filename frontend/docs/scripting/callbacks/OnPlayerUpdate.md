@@ -67,7 +67,7 @@ public OnPlayerUpdate(playerid)
     new Float:fHealth;
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // Player health has changed since the last update -> server, so obviously thats the thing updated.
         // Lets do further checks see if he's lost or gained health, anti-health cheat? ;)

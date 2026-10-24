@@ -26,21 +26,21 @@ new Text:gTextDraw;
 public OnGameModeInit()
 {
     gTextDraw = TextDrawCreate(10.000000, 141.000000, "TextDrawKu");
-    TextDrawTextSize(gTextDraw,60.000000, 20.000000);
-    TextDrawAlignment(gTextDraw,0);
-    TextDrawBackgroundColor(gTextDraw,0x000000ff);
-    TextDrawFont(gTextDraw,1);
-    TextDrawLetterSize(gTextDraw,0.250000, 1.000000);
-    TextDrawColor(gTextDraw,0xffffffff);
-    TextDrawSetProportional(gTextDraw,1);
-    TextDrawSetShadow(gTextDraw,1);
+    TextDrawTextSize(gTextDraw, 60.000000, 20.000000);
+    TextDrawAlignment(gTextDraw, 0);
+    TextDrawBackgroundColor(gTextDraw, 0x000000ff);
+    TextDrawFont(gTextDraw, 1);
+    TextDrawLetterSize(gTextDraw, 0.250000, 1.000000);
+    TextDrawColor(gTextDraw, 0xffffffff);
+    TextDrawSetProportional(gTextDraw, 1);
+    TextDrawSetShadow(gTextDraw, 1);
     TextDrawSetSelectable(gTextDraw, 1);
     return 1;
 }
 
 public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 {
-    if(newkeys == KEY_SUBMISSION)
+    if (newkeys == KEY_SUBMISSION)
     {
         TextDrawShowForPlayer(playerid, gTextDraw);
         SelectTextDraw(playerid, 0xFF4040AA);
@@ -50,7 +50,7 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 
 public OnPlayerClickTextDraw(playerid, Text:clickedid)
 {
-    if(clickedid == gTextDraw)
+    if (clickedid == gTextDraw)
     {
          SendClientMessage(playerid, 0xFFFFFFAA, "Anda mengklik sebuah TextDraw, wow!.");
          CancelSelectTextDraw(playerid);

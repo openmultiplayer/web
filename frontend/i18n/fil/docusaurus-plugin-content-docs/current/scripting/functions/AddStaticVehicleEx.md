@@ -33,7 +33,7 @@ INVALID_VEHICLE_ID (65535) kung hindi ginawa ang sasakyan (naabot na ang limitas
 public OnGameModeInit()
 {
     // Mag lagay ng Hydra (520) sa laro na respawn 15 segundo pagkatapos maiwan
-    AddStaticVehicleEx (520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
+    AddStaticVehicleEx(520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
 
     return 1;
 }

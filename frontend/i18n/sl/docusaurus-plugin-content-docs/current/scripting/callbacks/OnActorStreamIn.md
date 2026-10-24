@@ -30,7 +30,7 @@ Vedno je bila povabljena prva v "filterscript".
 public OnActorStreamIn(actorid, forplayerid)
 {
     new string[40];
-    format(string, sizeof(string), "Actor %d pojavil v vaši "client".", actorid);
+    format(string, sizeof(string), "Actor %d pojavil v vaši client.", actorid);
     SendClientMessage(forplayerid, 0xFFFFFFFF, string);
     return 1;
 }

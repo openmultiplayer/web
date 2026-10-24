@@ -30,7 +30,7 @@ tags: ["玩家变量"]
 ```c
 stock PrintPVar(playerid, varname[])
 {
-    switch(GetPVarType(playerid, varname))
+    switch (GetPVarType(playerid, varname))
     {
         case PLAYER_VARTYPE_NONE:
         {

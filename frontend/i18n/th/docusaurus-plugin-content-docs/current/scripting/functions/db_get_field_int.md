@@ -12,7 +12,7 @@ Get the content of a field as an integer from db_query
 | Name              | Description                      |
 | ----------------- | -------------------------------- |
 | DBResult:dbresult | The result to get the data from. |
-| field=0           | The field to get the data from.  |
+| field = 0         | The field to get the data from.  |
 
 ## ส่งคืน
 

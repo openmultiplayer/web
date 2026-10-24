@@ -27,8 +27,8 @@ tags: ["npc"]
 
 ```c
 new Float:x, Float:y, Float:z;
-GetMyPos(x,y,z);
-printf("الان تو موقعیت %f, %f, %f هستم!",x,y,z);
+GetMyPos(x, y, z);
+printf("الان تو موقعیت %f, %f, %f هستم!", x, y, z);
 ```
 
 <div dir="rtl" style={{ textAlign: "right" }}>

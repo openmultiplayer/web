@@ -55,7 +55,7 @@ if (handle)
     // Uspješno
 
     // Čitajte cijelu datoteku
-    while(fread(handle, buf)) print(buf);
+    while (fread(handle, buf)) print(buf);
 
     // Postavite pokazivač datoteke na prvi bajt
     fseek(handle, _, seek_begin);

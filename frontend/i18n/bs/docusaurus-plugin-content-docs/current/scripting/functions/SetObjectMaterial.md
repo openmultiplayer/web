@@ -27,16 +27,16 @@ Zamijeni teksturu objekta sa teksturom drugog modela iz igre.
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext,"/mycommand",true))
+    if (!strcmp(cmdtext, "/mycommand", true))
     {
         new
-            Float: X, Float: Y, Float: Z,
+            Float:X, Float:Y, Float:Z,
             myObject;
 
         GetPlayerPos(playerid, X, Y, Z);
-        myObject = CreateObject(19371, X, Y, Z+0.5, 0.0, 0.0, 0.0, 300.0);
+        myObject = CreateObject(19371, X, Y, Z + 0.5, 0.0, 0.0, 0.0, 300.0);
         SetObjectMaterial(myObject, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
         // Zamjenjuje teksturu našeg objekta sa teksturom objekta 19341
         return 1;

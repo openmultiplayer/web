@@ -56,7 +56,7 @@ Quando um jogador pegar nosso novo pickup, queremos dar a ele $100, para fazer i
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
     // Verifica se o ID do pickup que eles pegaram é gMyPickup
-    if(pickupid == gMyPickup)
+    if (pickupid == gMyPickup)
     {
         // Envia mensagem ao jogador
         SendClientMessage(playerid, 0xFFFFFFFF, "Você recebeu $100!");

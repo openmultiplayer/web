@@ -57,7 +57,7 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

@@ -37,7 +37,7 @@ public OnPlayerRequestClass(playerid, classid)
     // Ovo je jednostavan primjer koji demonstrira kako spawnovati igrala automatski sa
     // CJ skinom, koji je broj 0. Igrač će se spawnovati u Las Venturasu sa
     // 36 Sawnoff-Shotgun i 150 Tec9 metaka.
-    SetSpawnInfo( playerid, 0, 0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0 );
+    SetSpawnInfo(playerid, 0, 0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0);
 }
 ```
 

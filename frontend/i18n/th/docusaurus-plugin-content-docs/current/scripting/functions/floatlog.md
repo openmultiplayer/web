@@ -23,7 +23,7 @@ The logarithm as a float value.
 ```c
 public OnGameModeInit()
 {
-    printf("The logarithm of 15.0 with the base 10.0 is %f", floatlog( 15.0, 10.0 ));
+    printf("The logarithm of 15.0 with the base 10.0 is %f", floatlog(15.0, 10.0));
     return 1;
 }
 ```

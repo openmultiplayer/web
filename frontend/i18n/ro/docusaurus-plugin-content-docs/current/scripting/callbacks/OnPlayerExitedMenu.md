@@ -22,7 +22,7 @@ Este întotdeauna numit primul în modul de joc.
 ```c
 public OnPlayerExitedMenu(playerid)
 {
-    TogglePlayerControllable(playerid,1); // dezgheață playerul când iese dintr-un meniu
+    TogglePlayerControllable(playerid, 1); // dezgheață playerul când iese dintr-un meniu
     return 1;
 }
 ```

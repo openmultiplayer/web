@@ -29,7 +29,7 @@ Place an icon/marker on a player's map. Can be used to mark locations such as ba
 ## ตัวอย่าง
 
 ```c
-public OnPlayerConnect( playerid )
+public OnPlayerConnect(playerid)
 {
     // This example demonstrates how to create a dollar-icon on top of a 24/7 located
     // in Las Venturas. This way new players know where to go with their money!

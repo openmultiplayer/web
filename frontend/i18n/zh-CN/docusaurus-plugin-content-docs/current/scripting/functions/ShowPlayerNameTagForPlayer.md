@@ -29,7 +29,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     // 输入/nameoff的玩家将无法看到其他玩家的名称标签
     if (strcmp("/nameoff", cmdtext, true) == 0)
     {
-        for (new i = 0; i < MAX_PLAYERS; i++)
+        for (new i = 0; i < MAX_PLAYERS; i++)
         {
             ShowPlayerNameTagForPlayer(playerid, i, false);
         }

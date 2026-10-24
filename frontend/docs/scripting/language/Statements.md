@@ -244,7 +244,7 @@ new
     checkVar = 2;
 if (checkVar == 1)
 {
-    printf("This will not be called"):
+    printf("This will not be called");
 }
 else if (checkVar == 2)
 {

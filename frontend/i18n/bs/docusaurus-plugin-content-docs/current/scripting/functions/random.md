@@ -40,7 +40,7 @@ public OnPlayerSpawn(playerid)
     new rand = random(sizeof(RandomSpawn));
 
     // SetPlayerPos na slučajne podatke o spawnu
-    SetPlayerPos(playerid, RandomSpawn[rand][0], RandomSpawn[rand][1],RandomSpawn[rand][2]);
+    SetPlayerPos(playerid, RandomSpawn[rand][0], RandomSpawn[rand][1], RandomSpawn[rand][2]);
 
     // SetPlayerFacingAngle na slučajne podatke o smjeru gledanja
     SetPlayerFacingAngle(playerid, RandomSpawn[rand][3]);

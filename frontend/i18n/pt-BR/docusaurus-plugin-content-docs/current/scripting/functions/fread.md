@@ -36,7 +36,7 @@ if (handle)
     // Sucesso
 
     // Leia o arquivo inteiro
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }
@@ -65,7 +65,7 @@ if (handle)
     // Sucesso
 
     // Leia o arquivo inteiro
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

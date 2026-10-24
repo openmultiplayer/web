@@ -21,7 +21,7 @@ A porcentagem de perda de pacotes como um valor flutuante. 0 se o jogador não e
 ## Exemplos
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/packetloss"))
     {
@@ -43,18 +43,18 @@ stock GetPlayerPacketLoss(playerid, &Float:packetLoss)
 {
     /* Retorna a porcentagem de perda de pacotes do playerid fornecido - Feito por Fusez */
 
-    if(!IsPlayerConnected(playerid))
+    if (!IsPlayerConnected(playerid))
     {
         return 0;
     }
 
-    new nstats[400+1], nstats_loss[20], start, end;
+    new nstats[400 + 1], nstats_loss[20], start, end;
     GetPlayerNetworkStats(playerid, nstats, sizeof (nstats));
 
     start = strfind(nstats, "packetloss", true);
     end = strfind(nstats, "%", true, start);
 
-    strmid(nstats_loss, nstats, start+12, end, sizeof (nstats_loss));
+    strmid(nstats_loss, nstats, start + 12, end, sizeof (nstats_loss));
     packetLoss = floatstr(nstats_loss);
     return 1;
 }

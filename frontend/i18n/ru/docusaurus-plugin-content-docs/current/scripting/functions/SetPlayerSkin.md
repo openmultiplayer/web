@@ -76,7 +76,7 @@ SetPlayerSkinFix(playerid, skinid)
         SetPlayerFacingAngle(playerid, tmpPos[3]);
         TogglePlayerControllable(playerid, true); // убирает заморозку игрока (важно, т.к. запущена анимация выхода из транспорта)
         tmp = SetPlayerSkin(playerid, skinid);
-        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
+        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
         return tmp;
     }
     else

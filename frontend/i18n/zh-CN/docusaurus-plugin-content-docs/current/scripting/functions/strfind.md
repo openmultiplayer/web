@@ -23,7 +23,7 @@ tags: ["字符串"]
 ## 示例代码
 
 ```c
-if (strfind("Are you in here?", "you", true) != -1) // 返回4，因为子字符串'you'的起始位置在索引4
+if (strfind("Are you in here?", "you", true) != -1) // 返回4，因为子字符串'you'的起始位置在索引4
 {
     SendClientMessageToAll(0xFFFFFFFF, "找到目标字符串！");
 }

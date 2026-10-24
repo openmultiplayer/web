@@ -35,7 +35,7 @@ if (handle)
     // موفق
 
     // خواندن کل فایل
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }
@@ -65,7 +65,7 @@ if (handle)
     // موفق
 
     // خواندن کل فایل
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

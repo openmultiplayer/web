@@ -23,8 +23,8 @@ Ova funkcija ne returna (ne vraća) nikakve specifične vrijednosti.
 
 ```c
 new Float:x, Float:y, Float:z;
-GetMyPos(x,y,z);
-printf("Trenutno sam na %f, %f, %f!",x,y,z);
+GetMyPos(x, y, z);
+printf("Trenutno sam na %f, %f, %f!", x, y, z);
 ```
 
 ## Srodne Funkcije

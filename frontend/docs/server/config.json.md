@@ -275,12 +275,12 @@ omp-server --default-config
 {
   "password": "${SERVER_PASSWORD}",
   "logging": {
-    "enable": "${LOG_TOGGLE}:-true", # this defaults to true
+    "enable": "${LOG_TOGGLE}:-true" // this defaults to true
   },
   "banners": {
-    "dark": "${BANNER_DARK}:-", # this defaults to no image on the banner
-    "light": "${BANNER_LIGHT}",
-  },
+    "dark": "${BANNER_DARK}:-", // this defaults to no image on the banner
+    "light": "${BANNER_LIGHT}"
+  }
 
 }
 ```

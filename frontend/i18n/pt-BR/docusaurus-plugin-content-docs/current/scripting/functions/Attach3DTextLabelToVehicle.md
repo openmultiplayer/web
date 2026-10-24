@@ -28,14 +28,14 @@ new
     Text3D:gVehicle3dText[MAX_VEHICLES], // Criando a TextLabel para usar depois
     gVehicleId;
 
-public OnGameModeInit ( )
+public OnGameModeInit()
 {
-    gVehicleId = CreateVehicle(510, 0.0. 0.0, 15.0, 5, 0, 120); // Criando o veículo.
+    gVehicleId = CreateVehicle(510, 0.0, 0.0, 15.0, 5, 0, 120); // Criando o veículo.
     gVehicle3dText[gVehicleId] = Create3DTextLabel("Exemplo Texto", 0xFF0000AA, 0.0, 0.0, 0.0, 50.0, 0, 1);
     Attach3DTextLabelToVehicle(gVehicle3dText[gVehicleId], gVehicleId, 0.0, 0.0, 2.0); // Anexando a TextLabel ao veículo.
 }
 
-public OnGameModeExit ( )
+public OnGameModeExit()
 {
     Delete3DTextLabel(gVehicle3dText[gVehicleId]);
     return true;

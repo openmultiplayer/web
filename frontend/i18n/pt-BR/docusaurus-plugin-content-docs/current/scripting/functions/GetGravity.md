@@ -12,7 +12,7 @@ Obtém a gravidade atualmente definida.
 ## Exemplos
 
 ```c
-#if !defined GetGravity
+#if !defined GetGravity
     native Float:GetGravity();
 #endif
 

@@ -20,7 +20,7 @@ The interior ID the player is currently in.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,text[])
+public OnPlayerCommandText(playerid, text[])
 {
     if (strcmp(cmdtext, "/int", true) == 0)
     {

@@ -26,14 +26,14 @@ new Text:gTextDraw;
 public OnGameModeInit()
 {
     gTextDraw = TextDrawCreate(10.000000, 141.000000, "TextDraw");
-    TextDrawTextSize(gTextDraw,60.000000, 20.000000);
-    TextDrawAlignment(gTextDraw,0);
-    TextDrawBackgroundColor(gTextDraw,0x000000ff);
-    TextDrawFont(gTextDraw,1);
-    TextDrawLetterSize(gTextDraw,0.250000, 1.000000);
-    TextDrawColor(gTextDraw,0xffffffff);
-    TextDrawSetProportional(gTextDraw,1);
-    TextDrawSetShadow(gTextDraw,1);
+    TextDrawTextSize(gTextDraw, 60.000000, 20.000000);
+    TextDrawAlignment(gTextDraw, 0);
+    TextDrawBackgroundColor(gTextDraw, 0x000000ff);
+    TextDrawFont(gTextDraw, 1);
+    TextDrawLetterSize(gTextDraw, 0.250000, 1.000000);
+    TextDrawColor(gTextDraw, 0xffffffff);
+    TextDrawSetProportional(gTextDraw, 1);
+    TextDrawSetShadow(gTextDraw, 1);
     TextDrawSetSelectable(gTextDraw, 1);
     return 1;
 }

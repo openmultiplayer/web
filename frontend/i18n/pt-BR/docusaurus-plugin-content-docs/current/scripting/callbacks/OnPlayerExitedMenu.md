@@ -22,7 +22,7 @@ Sempre é chamada primeiro em filterscripts.
 ```c
 public OnPlayerExitedMenu(playerid)
 {
-    TogglePlayerControllable(playerid,1); // Descongela o jogador quando ele sai do menu
+    TogglePlayerControllable(playerid, 1); // Descongela o jogador quando ele sai do menu
     return 1;
 }
 ```

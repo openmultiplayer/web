@@ -29,7 +29,7 @@ Siempre se llama primero en filterscripts.
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID) // Si no fue causado por él mismo
+    if (issuerid != INVALID_PLAYER_ID) // Si no fue causado por él mismo
     {
         new
             infoString[128],
@@ -52,7 +52,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
+    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
         // Un disparo en la cabeza con sniper matará instantáneamente al jugador
         SetPlayerHealth(playerid, 0.0);

@@ -115,7 +115,7 @@ Nuttige natives (uit `string.inc`): `strlen`, `strcat`, `strmid`, `strins`, `str
 Formatteert tekst met placeholders.
 
 ```pawn
-format(output[], len, const format[], \{Float, _\}:...)
+format(output[], len, const format[], {Float, _}:...)
 ```
 
 Gebruik `sizeof(array)` voor de juiste lengte.

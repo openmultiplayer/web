@@ -22,7 +22,7 @@ Her zaman öncelikle oyun modunda çağrılır.
 ```c
 public OnPlayerExitedMenu(playerid)
 {
-    TogglePlayerControllable(playerid,1); // oyuncuyu menüden çıktığında unfreeze durumuna getirir
+    TogglePlayerControllable(playerid, 1); // oyuncuyu menüden çıktığında unfreeze durumuna getirir
     return 1;
 }
 ```

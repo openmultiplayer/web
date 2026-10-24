@@ -20,7 +20,7 @@ Gets the [landing gear state](../resources/landinggearstate) of the current play
 ## Examples
 
 ```c
-new LANDING_GEAR_STATE:state = GetPlayerLandingGearState(playerid);
+new LANDING_GEAR_STATE:landingGearState = GetPlayerLandingGearState(playerid);
 ```
 
 ## Related Functions

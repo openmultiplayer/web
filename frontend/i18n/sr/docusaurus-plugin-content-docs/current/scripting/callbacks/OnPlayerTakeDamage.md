@@ -30,7 +30,7 @@ tags: ["player"]
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID) // Ако није самонанета.
+    if (issuerid != INVALID_PLAYER_ID) // Ако није самонанета.
     {
         new
             infoString[128],
@@ -55,7 +55,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
+    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
         // Убија одмах снајпером уколико се погоди у главу
         SetPlayerHealth(playerid, 0.0);

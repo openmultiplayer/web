@@ -105,7 +105,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Če so pritisnili 'Izberi' ali dvokliknili na element seznama
         {
             // Daje jim orožje
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Daje jim desert eagle
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Daje jim AK-47
@@ -140,7 +140,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Če je pritisnil 'Select' ali dvakrat pritisnil orožje
         {
             // Daje jim orožje
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Daje jim M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Daje jim MP5

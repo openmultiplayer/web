@@ -25,7 +25,7 @@ Cette callback est appelée à chaque fois qu'un client/joueur modifie son statu
 public OnPlayerUpdate(playerid)
 {
     new iCurWeap = GetPlayerWeapon(playerid); // Retourne l'arme actuelle du joueur
-    if(iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // S'il l'arme à changer depuis la dernière mise à jour
+    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // S'il l'arme à changer depuis la dernière mise à jour
     {
         // Appelons une callback nommée OnPlayerChangeWeapon
         OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
@@ -56,12 +56,12 @@ public OnPlayerUpdate(playerid)
 
 	GetPlayerHealth(playerid, fHealth);
 
-	if(fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+	if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
 	{
 	    // La vie du joueur a changé depuis la dernière mise à jour, c'est donc bien la mise à jour qui a été envoyée.
 	    // Vérifions s'il a perdu ou gagné de la vie (anti-cheat vie ? ;))
 
-	    if(fHealth > GetPVarFloat(playerid, "faPlayerHealth"))
+	    if (fHealth > GetPVarFloat(playerid, "faPlayerHealth"))
 	    {
 	        /* Il a gagné de la vie! Triche? */
 

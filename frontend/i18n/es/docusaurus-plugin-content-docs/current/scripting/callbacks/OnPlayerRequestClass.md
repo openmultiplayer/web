@@ -22,9 +22,9 @@ Siempre se llama primero en filterscripts.
 ## Ejemplos
 
 ```c
-public OnPlayerRequestClass(playerid,classid)
+public OnPlayerRequestClass(playerid, classid)
 {
-    if (classid == 3 && !IsPlayerAdmin(playerid))
+    if (classid == 3 && !IsPlayerAdmin(playerid))
     {
         SendClientMessage(playerid, COLOR_RED, "Este skin es solo para administradores!");
         return 0;

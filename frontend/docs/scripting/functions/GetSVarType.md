@@ -24,7 +24,7 @@ Returns `SERVER_VARTYPE_NONE` (0) if a server variable with the given name does 
 ```c
 stock PrintSVar(varname[])
 {
-    switch(GetSVarType(varname))
+    switch (GetSVarType(varname))
     {
         case SERVER_VARTYPE_NONE:
         {

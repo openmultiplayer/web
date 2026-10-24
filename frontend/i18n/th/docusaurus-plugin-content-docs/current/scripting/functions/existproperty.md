@@ -22,7 +22,7 @@ True if the property exists and false otherwise.
 ## ตัวอย่าง
 
 ```c
-if ( existproperty(0, "", 123984334) )
+if (existproperty(0, "", 123984334))
 {
     //the property exists, do something
 }

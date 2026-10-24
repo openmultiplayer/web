@@ -14,7 +14,7 @@ Umetni string u drugi string.
 | string[]                | String u kojeg želite umetnuti substr.       |
 | const substr[]          | String kojeg želite umetnuti u drugi string. |
 | pos                     | Pozicija za početak umetanja.                |
-| maxlength=sizeof string | Maksimalna veličina za unijeti.              |
+| maxlength = sizeof string | Maksimalna veličina za unijeti.              |
 
 ## Returns
 

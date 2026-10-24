@@ -23,7 +23,7 @@ Ini akan selalu terpanggil pertama di filterscripts jadi mengembalikan nilai 1 a
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(!strcmp(cmdtext, "/help", true))
+    if (!strcmp(cmdtext, "/help", true))
     {
         SendClientMessage(playerid, -1, "SERVER: Ini adalah perintah /help");
         return 1;

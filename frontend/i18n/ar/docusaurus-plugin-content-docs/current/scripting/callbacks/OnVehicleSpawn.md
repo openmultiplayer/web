@@ -38,7 +38,7 @@ This callback is called when a vehicle respawns.
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("Vehicle %i spawned!",vehicleid);
+    printf("Vehicle %i spawned!", vehicleid);
     return 1;
 }
 ```

@@ -373,7 +373,7 @@ new
 
 SetPlayerValue(playerid, value)
 {
-    switch(playerid)
+    switch (playerid)
     {
         case 0: gPlayer0 = value; // 等同于 if (playerid == 0)
         case 1: gPlayer1 = value; // 等同于 if (playerid == 1)

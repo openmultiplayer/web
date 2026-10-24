@@ -26,7 +26,7 @@ texture یک player-object رو با texture از مدل دیگه‌ای توی 
 ## مثال‌ها
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/objmat", true))
     {
@@ -35,7 +35,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
             myObject;
 
         GetPlayerPos(playerid, x, y, z);
-        myObject = CreatePlayerObject(playerid, 19371, x, y, z+0.5, 0.0, 0.0, 0.0, 300.0);
+        myObject = CreatePlayerObject(playerid, 19371, x, y, z + 0.5, 0.0, 0.0, 0.0, 300.0);
         SetPlayerObjectMaterial(playerid, myObject, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
         // Texture e player-object ro ba texture e model 19341 jaygozin mikone
         return 1;

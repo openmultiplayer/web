@@ -23,7 +23,7 @@ tags: ["player variable", "pvar"]
 ## مثال‌ها
 
 ```c
-public OnPlayerConnect(playerid,reason)
+public OnPlayerConnect(playerid, reason)
 {
     new playerName[MAX_PLAYER_NAME];
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);

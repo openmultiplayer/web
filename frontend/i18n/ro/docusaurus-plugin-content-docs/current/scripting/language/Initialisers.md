@@ -314,7 +314,7 @@ enum (<<= 1)
 }
 ```
 
-Acum TEAM_COP este 1, TEAM_ROBBER este 2, TEAM_CIV este 4 etc, care în binar este 0b00000001, 0b00000010 și 0b00000100. Aceasta înseamnă că, dacă echipa unui jucător este de 3, atunci se află atât în ​​echipa de polițiști, cât și în echipa de tâlhari. Poate suna inutil, dar deschide posibilități:
+Acum TEAM_COP este 1, TEAM_ROBBER este 2, TEAM_CIV este 4 etc, care în binar este 0b00000001, 0b00000010 și 0b00000100. Aceasta înseamnă că, dacă echipa unui jucător este de 3, atunci se află atât în echipa de polițiști, cât și în echipa de tâlhari. Poate suna inutil, dar deschide posibilități:
 
 ```c
 enum (<<= 1)

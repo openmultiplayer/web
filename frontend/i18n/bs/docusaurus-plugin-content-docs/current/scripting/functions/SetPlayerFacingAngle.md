@@ -23,7 +23,7 @@ Postavi smjer gledanja igrača (Z rotacija).
 ## Primjeri
 
 ```c
-SetPlayerFacingAngle( playerid, 0 ); // Igrač gleda sjeverno
+SetPlayerFacingAngle(playerid, 0); // Igrač gleda sjeverno
 ```
 
 ```

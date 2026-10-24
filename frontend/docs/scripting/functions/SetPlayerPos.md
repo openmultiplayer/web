@@ -25,7 +25,7 @@ Set a player's position.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/middle", true))
     {

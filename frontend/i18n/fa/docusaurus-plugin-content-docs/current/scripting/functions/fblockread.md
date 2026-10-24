@@ -50,7 +50,7 @@ if (handle)
     file_len = flength(handle);
 
     // اگر فایل به اندازه مساوی با آرایه بزرگ‌تر باشد
-    if (file_len == (some_enum*4))
+    if (file_len == (some_enum * 4))
     {
         // موفقیت
 

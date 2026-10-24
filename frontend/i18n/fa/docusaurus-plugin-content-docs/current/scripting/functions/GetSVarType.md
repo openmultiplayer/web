@@ -22,7 +22,7 @@ tags: ["server variable", "svar"]
 ```c
 stock PrintSVar(varname[])
 {
-    switch(GetSVarType(varname))
+    switch (GetSVarType(varname))
     {
         case SERVER_VARTYPE_NONE:
         {

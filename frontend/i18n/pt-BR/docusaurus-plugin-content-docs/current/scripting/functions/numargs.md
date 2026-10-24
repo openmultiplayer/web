@@ -1,7 +1,7 @@
 ---
 title: numargs
 sidebar_label: numargs
-description: "Obtenha o número de argumentos passados ​​para uma função."
+description: "Obtenha o número de argumentos passados para uma função."
 tags: ["core", "arguments", "args"]
 ---
 

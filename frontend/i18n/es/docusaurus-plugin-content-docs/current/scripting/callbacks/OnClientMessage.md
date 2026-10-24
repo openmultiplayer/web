@@ -22,7 +22,7 @@ Este callback no controla devoluciones.
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Balance Bancario: $0") != -1)
+    if (strfind(text, "Balance Bancario: $0") != -1)
     {
         SendClientMessage(playerid, -1, "Soy pobre :(");
     }

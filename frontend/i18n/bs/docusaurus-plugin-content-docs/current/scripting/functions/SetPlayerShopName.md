@@ -27,8 +27,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         SetPlayerInterior(playerid, 5);
         SetPlayerPos(playerid, 372.5565, -131.3607, 1001.4922);
-        SetPlayerShopName(playerid,"FDPIZA");
-        SendClientMessage(playerid,0xFFFFFFFF,"Dobrodošao u Pizza Stack!");
+        SetPlayerShopName(playerid, "FDPIZA");
+        SendClientMessage(playerid, 0xFFFFFFFF, "Dobrodošao u Pizza Stack!");
         return 1;
     }
     return 0;

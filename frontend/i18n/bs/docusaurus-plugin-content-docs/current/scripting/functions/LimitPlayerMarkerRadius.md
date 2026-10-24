@@ -28,6 +28,6 @@ public OnGameModeInit()
 
 ## Srodne Funkcije
 
-- [ShowPlayerMarkers](ShowPlayerMarkers): Odlučite hoće li server prikazivati ​​oznake na radaru.
+- [ShowPlayerMarkers](ShowPlayerMarkers): Odlučite hoće li server prikazivati oznake na radaru.
 - [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Postavite marker/oznaku igrača.
 - [LimitGlobalChatRadius](LimitGlobalChatRadius): Ograničite udaljenost između igrača potrebnih da biste vidjeli njihov chat.

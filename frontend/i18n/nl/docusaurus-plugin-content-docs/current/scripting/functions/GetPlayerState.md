@@ -22,8 +22,8 @@ De huidige staat als integer (zie: [Player States](../resources/playerstates)).
 ```c
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    new PLAYER_STATE:state = GetPlayerState(killerid);
-    if (state == PLAYER_STATE_DRIVER)
+    new PLAYER_STATE:playerState = GetPlayerState(killerid);
+    if (playerState == PLAYER_STATE_DRIVER)
     {
         GivePlayerMoney(killerid, -10000);
     }

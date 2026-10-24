@@ -49,7 +49,7 @@ public OnPlayerUpdate(playerid)
         if (!ActorHandsup[playerTargetActor] && playerWeapon >= 22 && playerWeapon <= 42 && keys & KEY_AIM)
         {
             // Apply 'hands up' animation
-            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr",4.1,0,0,0,1,0);
+            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr", 4.1, 0, 0, 0, 1, 0);
 
             // Set 'ActorHandsup' to true, so the animation won't keep being reapplied
             ActorHandsup[playerTargetActor] = true;

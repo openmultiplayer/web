@@ -22,7 +22,7 @@ Cette callback ne retourne rien, mais doit retourner quelque chose. Autrement di
 ```c
 public OnPlayerExitedMenu(playerid)
 {
-    TogglePlayerControllable(playerid,1); // unfreeze le joueur quand il quitte le menu
+    TogglePlayerControllable(playerid, 1); // unfreeze le joueur quand il quitte le menu
     return 1;
 }
 ```

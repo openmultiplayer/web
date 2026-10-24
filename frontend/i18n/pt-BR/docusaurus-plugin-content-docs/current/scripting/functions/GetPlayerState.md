@@ -23,9 +23,9 @@ O estado atual do jogador como um número inteiro (consulte: [Estados do jogador
 ```c
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    new PLAYER_STATE:state = GetPlayerState(killerid); // Obtenha o estado do assassino
+    new PLAYER_STATE:playerState = GetPlayerState(killerid); // Obtenha o estado do assassino
 
-    if (state == PLAYER_STATE_DRIVER) // Se o assassino estivesse em um veículo
+    if (playerState == PLAYER_STATE_DRIVER) // Se o assassino estivesse em um veículo
     {
         // É um motorista fazendo drive-by; pegue algum dinheiro
         GivePlayerMoney(killerid, -10000);

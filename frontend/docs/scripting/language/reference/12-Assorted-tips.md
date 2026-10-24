@@ -547,7 +547,7 @@ Listing: quine.p
 
 `See the separate application note for proposed native functions that operate on both packed and unpacked strings`
 
-`EOS: predefined constant to mark the End Of String; it has the value ’\0’`
+`EOS: predefined constant to mark the End Of String; it has the value '\0'`
 
 `Predefined constants: 102`
 

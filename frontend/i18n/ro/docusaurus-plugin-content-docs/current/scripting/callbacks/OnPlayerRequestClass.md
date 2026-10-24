@@ -21,7 +21,7 @@ Este întotdeauna numit primul în filterscript-uri.
 ## Exemple
 
 ```c
-public OnPlayerRequestClass(playerid,classid)
+public OnPlayerRequestClass(playerid, classid)
 {
     if (classid == 3 && !IsPlayerAdmin(playerid))
     {

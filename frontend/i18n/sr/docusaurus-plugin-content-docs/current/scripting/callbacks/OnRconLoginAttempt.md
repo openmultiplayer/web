@@ -30,7 +30,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
         new ipAddress[16];
 
-        for (new i = 0; i < MAX_PLAYERS; i++) // Прођите кроз све играче
+        for (new i = 0; i < MAX_PLAYERS; i++) // Прођите кроз све играче
         {
             if (!IsPlayerConnected(i))
             {

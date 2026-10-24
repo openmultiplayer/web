@@ -18,7 +18,7 @@ Ta "callback" se ne obdeluje (return).
 ```c
 public OnGameModeExit()
 {
-    print(""Gamemode" se ustavil.");
+    print("Gamemode se ustavil.");
     return 1;
 }
 ```

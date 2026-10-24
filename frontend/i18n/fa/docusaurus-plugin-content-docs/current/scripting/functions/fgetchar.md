@@ -32,7 +32,7 @@ new g_char;
 if (handle)
 {
     // خوندن همه کاراکترها، با نادیده گرفتن UTF-8.
-    while((g_char = fgetchar(handle, 0, false)) != EOF)
+    while ((g_char = fgetchar(handle, 0, false)) != EOF)
     {
         // چاپ کاراکتر
         printf("[ \"file.txt\" ] 0x%x", g_char);

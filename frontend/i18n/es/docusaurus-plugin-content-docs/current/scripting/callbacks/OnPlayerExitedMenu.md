@@ -21,7 +21,7 @@ Siempre se llama primero en filterscripts.
 ```c
 public OnPlayerExitedMenu(playerid)
 {
-    TogglePlayerControllable(playerid,1); // descongela al jugador cuando este sale de un menú
+    TogglePlayerControllable(playerid, 1); // descongela al jugador cuando este sale de un menú
     return 1;
 }
 ```

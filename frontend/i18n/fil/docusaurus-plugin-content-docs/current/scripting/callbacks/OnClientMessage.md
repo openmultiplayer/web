@@ -23,7 +23,7 @@ Hindi nag rereturn ang callback na ito.
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Bank Balance: $0") != -1)
+    if (strfind(text, "Bank Balance: $0") != -1)
     {
         SendClientMessage(playerid, -1, "I am poor :(");
     }

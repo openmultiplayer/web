@@ -24,7 +24,7 @@ The float from the specified player variable
 forward LoadPos(playerid);
 public LoadPos(playerid)
 {
-    SetPlayerPos(playerid, GetPVarFloat(playerid,"xpos"), GetPVarFloat(playerid,"ypos"), GetPVarFloat(playerid,"zpos"));
+    SetPlayerPos(playerid, GetPVarFloat(playerid, "xpos"), GetPVarFloat(playerid, "ypos"), GetPVarFloat(playerid, "zpos"));
     return 1;
 }
 ```

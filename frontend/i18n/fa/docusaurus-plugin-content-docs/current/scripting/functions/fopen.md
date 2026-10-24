@@ -37,7 +37,7 @@ if (handle)
     // موفق
 
     // کل فایل رو بخون
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }
@@ -97,7 +97,7 @@ if (handle)
     // موفق
 
     // کل فایل رو بخون
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

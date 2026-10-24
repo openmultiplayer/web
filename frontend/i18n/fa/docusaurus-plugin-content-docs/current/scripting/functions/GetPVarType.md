@@ -23,7 +23,7 @@ tags: ["player variable", "pvar"]
 ```c
 stock PrintPVar(playerid, varname[])
 {
-    switch(GetPVarType(playerid, varname))
+    switch (GetPVarType(playerid, varname))
     {
         case PLAYER_VARTYPE_NONE:
         {
