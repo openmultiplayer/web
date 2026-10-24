@@ -1,7 +1,7 @@
 ---
 title: GetMaxPlayers
 sidebar_label: GetMaxPlayers
-description: Returns the maximum number of players that can join the server, as set by the server variable 'maxplayers' in server.
+description: Returns the maximum number of players that can join the server, as set by the server variable 'max_players'.
 tags: ["player"]
 ---
 
@@ -21,8 +21,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);
 
 :::warning
 
-- This function can not be used in place of MAX_PLAYERS. It can not be used at compile time (e.g. for array sizes).
-- `MAX_PLAYERS` should always be re-defined to what the 'max_players' var will be, or higher.
+This function can not be used in place of MAX_PLAYERS. It can not be used at compile time (e.g. for array sizes). `MAX_PLAYERS` should always be re-defined to what the 'max_players' var will be, or higher.
 
 :::
 

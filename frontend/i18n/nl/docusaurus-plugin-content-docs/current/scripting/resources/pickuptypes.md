@@ -7,7 +7,7 @@ sidebar_label: "Pickup-typen"
 
 :::note
 
-- Gebruikt door [CreatePickup](../functions/CreatePickup) en [CreatePlayerPickup](../functions/CreatePlayerPickup).
+- Gebruikt door AddStaticPickup, [CreatePickup](../functions/CreatePickup) en [CreatePlayerPickup](../functions/CreatePlayerPickup).
 - De meeste andere IDs zijn ongedocumenteerd of lijken op type 1; gebruik ze niet zomaar (sommige hebben bijwerkingen zoals 18 en 20).
 
 :::

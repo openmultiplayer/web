@@ -33,7 +33,7 @@ INVALID_VEHICLE_ID (65535) if vehicle was not created (vehicle limit reached or 
 public OnGameModeInit()
 {
     // Add a Hydra (520) to the game that will respawn 15 seconds after being left
-    AddStaticVehicleEx (520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
+    AddStaticVehicleEx(520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
 
     return 1;
 }

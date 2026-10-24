@@ -22,7 +22,7 @@ This function returns the amount of time (in milliseconds) that a player has bee
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/connectedtime"))
     {

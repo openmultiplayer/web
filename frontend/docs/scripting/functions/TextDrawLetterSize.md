@@ -26,7 +26,7 @@ new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
+    gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
     TextDrawLetterSize(gMyTextdraw, 3.2, 5.1);
     return 1;
 }
@@ -36,8 +36,7 @@ public OnGameModeInit()
 
 :::tip
 
-- When using this function purely for the benefit of affecting the TextDraw box, multiply 'Y' by 0.135 to convert to TextDrawTextSize-like measurements.
-- Hint: it is easier and extremely precise to use **LD_SPAC:white** sprite for box-only textdraws, TextDrawTextSize will have regular offsets.
+- When using this function purely for the benefit of affecting the TextDraw box, multiply 'Y' by 0.135 to convert to TextDrawTextSize-like measurements. Hint: it is easier and extremely precise to use **LD_SPAC:white** sprite for box-only textdraws, TextDrawTextSize will have regular offsets.
 - If you want to change the letter size of a textdraw that is already shown, you don't have to recreate it. Simply use [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) after modifying the textdraw and the change will be visible.
 - Fonts appear to look the best with an X to Y ratio of 1 to 4 (e.g. if x is 0.5 then y should be 2).
 

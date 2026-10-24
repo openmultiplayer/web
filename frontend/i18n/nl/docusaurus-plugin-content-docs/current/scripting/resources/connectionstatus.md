@@ -4,6 +4,8 @@ sidebar_label: "Verbindingsstatus"
 description: Statussen gebruikt door NetStats_ConnectionStatus.
 ---
 
+## Beschrijving
+
 Deze statussen worden gebruikt door [NetStats_ConnectionStatus](../functions/NetStats_ConnectionStatus) (RakNet).
 
 | ID  | Status                                                                                | Betekenis (beknopt)                             |

@@ -39,9 +39,8 @@ public OnGameModeInit()
 
 :::note
 
-ابتدا باید **useartwork** یا **artwork.enable** در تنظیمات سرور فعال شود تا این کار کند.
-
-وقتی `virtualworld` تنظیم شود، مدل‌ها یک بار دانلود خواهند شد که بازیکن وارد دنیای خاص شود.
+- ابتدا باید **useartwork** یا **artwork.enable** در تنظیمات سرور فعال شود تا این کار کند.
+- وقتی `virtualworld` تنظیم شود، مدل‌ها یک بار دانلود خواهند شد که بازیکن وارد دنیای خاص شود.
 
 :::
 
@@ -53,6 +52,7 @@ public OnGameModeInit()
 
 ## توابع مرتبط
 
+- [AddSimpleModelTimed](AddSimpleModelTimed): مدل object ساده سفارشی جدیدی برای دانلود اضافه می‌کند.
 - [IsValidCustomModel](IsValidCustomModel): بررسی می‌کند که آیا ID مدل سفارشی معتبر است.
 - [GetCustomModelPath](GetCustomModelPath): مسیر مدل سفارشی را دریافت کنید.
 

@@ -51,6 +51,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::
 
+## کالبک‌های مرتبط
+
+کالبک‌های زیر ممکن است مفید باشند، زیرا به نوعی با این کالبک مرتبط هستند.
+
+- [OnPlayerText](OnPlayerText): این کالبک زمانی فراخوانده می‌شود که بازیکن پیام چت ارسال می‌کند.
+- [OnRconCommand](OnRconCommand): این کالبک زمانی فراخوانده می‌شود که دستوری از طریق کنسول سرور، RCON، یا از طریق دستور "/rcon command" در بازی ارسال شود.
+
 ## تابع های مرتبط
 
 - [SendRconCommand](../functions/SendRconCommand): یک دستور RCON را از طریق اسکریپت ارسال میکند.

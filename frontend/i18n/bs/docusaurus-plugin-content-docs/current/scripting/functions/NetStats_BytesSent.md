@@ -20,7 +20,7 @@ Returna/vraća količinu navedenih podataka.
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/bytes_sent"))
     {

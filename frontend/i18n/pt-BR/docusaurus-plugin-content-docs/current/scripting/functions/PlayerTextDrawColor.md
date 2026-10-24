@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Você também pode usar cores do Gametext em textdraws. (por exemplo, `~r~` `~g~` `~b~`)
+Você também pode usar cores do Gametext em textdraws.
 
 :::
 

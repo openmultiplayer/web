@@ -15,11 +15,11 @@ Callback นี้ถูกเพิ่มใน SA-MP 0.3.DL R1 และจะ
 
 This callback is called when a player request for custom model downloads.
 
-| Name     | Description                                              |
-| -------- | -------------------------------------------------------- |
-| playerid | The ID of the player that request custom model download. |
-| type     | The type of the request (see below).                     |
-| crc      | The CRC checksum of custom model file.                   |
+| Name     | Description                                                                                     |
+| -------- | ----------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player that request custom model download.                                        |
+| type     | The type of the request (see below).                                                            |
+| crc      | The [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) checksum of custom model file. |
 
 ## ส่งคืน
 
@@ -38,22 +38,22 @@ new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {
-    new fullurl[256+1];
-    new dlfilename[64+1];
-    new foundfilename=0;
+    new fullurl[256 + 1];
+    new dlfilename[64 + 1];
+    new foundfilename = 0;
 
     if (!IsPlayerConnected(playerid)) return 0;
 
     if (type == DOWNLOAD_REQUEST_TEXTURE_FILE) {
-        foundfilename = FindTextureFileNameFromCRC(crc,dlfilename,64);
+        foundfilename = FindTextureFileNameFromCRC(crc, dlfilename, 64);
     }
     else if (type == DOWNLOAD_REQUEST_MODEL_FILE) {
-        foundfilename = FindModelFileNameFromCRC(crc,dlfilename,64);
+        foundfilename = FindModelFileNameFromCRC(crc, dlfilename, 64);
     }
 
     if (foundfilename) {
-        format(fullurl,256,"%s/%s",baseurl,dlfilename);
-        RedirectDownload(playerid,fullurl);
+        format(fullurl, 256, "%s/%s", baseurl, dlfilename);
+        RedirectDownload(playerid, fullurl);
     }
 
     return 0;
@@ -63,3 +63,6 @@ public OnPlayerRequestDownload(playerid, type, crc)
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.
+- [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): Find an existing custom skin or simple object model file.
+- [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): Find an existing custom skin or simple object texture file.
+- RedirectDownload: Redirect a player's custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.

@@ -21,8 +21,9 @@ Hay dos formas de crear pickup [CreatePickup](../scripting/functions/CreatePicku
 
 **Parameters:**
 
-| modelo       | El modelo que queres usar                                                                               |
+| Nombre       | Descripción                                                                                             |
 | ------------ | ------------------------------------------------------------------------------------------------------- |
+| modelo       | El modelo que queres usar                                                                               |
 | typo         | El typo de pickup que es utiliza                                                                        |
 | Float:X      | La X-coordenada para el pickup.                                                                         |
 | Float:Y      | La Y-coordinate para el pickup.                                                                         |
@@ -53,7 +54,7 @@ Cuando un jugador recoge nuestra nueva pickup, queremos darle $100, para hacer e
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
     // Checka que el jugador esta en la correcta pickup
-    if(pickupid == gMiPickup)
+    if (pickupid == gMiPickup)
     {
         // Mensaje a al jugador
         SendClientMessage(playerid, 0xFFFFFFFF, "You received $100!");

@@ -24,10 +24,10 @@ This function does not return any specific values.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new h,m,s,str[50];
-    gettime(h,m,s); // get the time
-    format(str,50,"Connected: %d:%d:%d",h,m,s); // create the string with the connect time
-    SetPVarString(playerid,"timeconnected",str); // save the string into a player variable
+    new h, m, s, str[50];
+    gettime(h, m, s); // get the time
+    format(str, 50, "Connected: %d:%d:%d", h, m, s); // create the string with the connect time
+    SetPVarString(playerid, "timeconnected", str); // save the string into a player variable
     return 1;
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: sendstring
 sidebar_label: sendstring
-description: یه packet که شامل string هست ارسال می‌کنه. (تابع منسوخ)
+description: یه packet که شامل string هست ارسال می‌کنه (تابع منسوخ).
 tags: ["datagram"]
 ---
 

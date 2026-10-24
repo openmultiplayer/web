@@ -27,7 +27,7 @@ Ini selalu di panggil pertama dalam filtersciprt.
 public OnPlayerUpdate(playerid)
 {
     new iCurWeap = GetPlayerWeapon(playerid); // Mengembalikan senjata kepada pemain saat ini
-    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Jika dia mengganti senjata sejak pembaruan terakhir
+    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Jika dia mengganti senjata sejak pembaruan terakhir
     {
         // Mari kita memanggil balik panggilan bernama OnPlayerChangeWeapon
         OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
@@ -58,7 +58,7 @@ public OnPlayerUpdate(playerid)
 
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // Darah pemain telah berubah sejak pembaruan terakhir -> server, jadi jelas itu yang diperbarui.
         // Mari kita lakukan pemeriksaan lanjutan untuk melihat apakah dia kehilangan atau memperoleh Darah, cheat anti-health? ;)
@@ -84,7 +84,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Callback ini di panggil, rata-rata, 30 kali per detik, per pemain; hanya di gunakan ketika Anda tahu untuk apa itu (atau lebih penting lagi untuk TIDAK di masukkan). Frekuensi panggilan balik ini untuk setiap pemain bervariasi, tergantung pada apa yang dilakukan pemain. Mengemudi atau menembak akan memicu lebih banyak pembaruan daripada diam.
+- Callback ini di panggil, rata-rata, 30 kali per detik, per pemain; hanya di gunakan ketika Anda tahu untuk apa itu (atau lebih penting lagi untuk TIDAK di masukkan).
+- Frekuensi panggilan balik ini untuk setiap pemain bervariasi, tergantung pada apa yang dilakukan pemain. Mengemudi atau menembak akan memicu lebih banyak pembaruan daripada diam.
 
 :::
 

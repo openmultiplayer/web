@@ -1,6 +1,6 @@
 ---
-título: OnPlayerConnect
-descripción: Este callback se llama cuando un jugador se conecta al servidor.
+title: OnPlayerConnect
+description: Este callback se llama cuando un jugador se conecta al servidor.
 tags: ["player"]
 ---
 
@@ -41,3 +41,7 @@ public OnPlayerConnect(playerid)
 <NoteNPCCallbacksES />
 
 ## Funciones Relacionadas
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerConnect:
+
+- [OnPlayerDisconnect](OnPlayerDisconnect): Llamado cuando un jugador se desconecta del servidor.

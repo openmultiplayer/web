@@ -1,6 +1,6 @@
 ---
-título: OnVehicleSpawn
-descripción: Este callback se llama cuando un vehículo reaparece.
+title: OnVehicleSpawn
+description: Este callback se llama cuando un vehículo reaparece.
 tags: ["vehicle"]
 ---
 
@@ -31,12 +31,21 @@ Siempre se llama primero en filterscripts.
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("El vehículo %i spawneó!",vehicleid);
+    printf("El vehículo %i spawneó!", vehicleid);
     return 1;
 }
 ```
 
+## Callbacks Relacionados
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnVehicleSpawn:
+
+- [OnVehicleDeath](OnVehicleDeath): Llamado cuando un vehiculo muere.
+- [OnPlayerSpawn](OnPlayerSpawn): Llamado cuando un jugador aparece.
+
 ## Funciones Relacionadas
+
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnVehicleSpawn:
 
 - [SetVehicleToRespawn](../functions/SetVehicleToRespawn): Reaparecer un vehículo.
 - [CreateVehicle](../functions/CreateVehicle): Crear un vehículo.

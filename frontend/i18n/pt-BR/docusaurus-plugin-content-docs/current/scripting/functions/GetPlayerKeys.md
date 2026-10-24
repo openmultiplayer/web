@@ -56,8 +56,17 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Apenas a FUNÇÃO das teclas pode ser detectada; não as teclas reais. Por exemplo, não é possivel detectar se um jogador pressiona ESPAÇO, mas você pode detectar se ele pressiona SPRINT (que pode ser mapeado(atribuído/vinculado) a QUALQUER tecla (mas é espaço por padrão)). A partir da atualização 0.3.7, as teclas "A" e "D" não são reconhecidas quando está em um veículo. No entanto, as teclas "W" e "S" podem ser detectadas com o parâmetro "keys".
+- Apenas a FUNÇÃO das teclas pode ser detectada; não as teclas reais. Por exemplo, não é possivel detectar se um jogador pressiona ESPAÇO, mas você pode detectar se ele pressiona SPRINT (que pode ser mapeado(atribuído/vinculado) a QUALQUER tecla (mas é espaço por padrão)).
+- A partir da atualização 0.3.7, as teclas "A" e "D" não são reconhecidas quando está em um veículo. No entanto, as teclas "W" e "S" podem ser detectadas com o parâmetro "keys".
 
 :::
 
 ## Funções Relacionadas
+
+## Callbacks Relacionadas
+
+- [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange): Esta callback é chamada quando o estado de qualquer tecla suportada muda (pressionado/solto)
+
+## Recursos relacionados
+
+- [Teclas](../resources/keys)

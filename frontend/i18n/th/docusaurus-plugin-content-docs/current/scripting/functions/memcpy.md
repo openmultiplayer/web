@@ -15,7 +15,7 @@ Copy bytes from one location to another.
 | const source[]        | The source array.                                                                     |
 | index                 | The start index in bytes in the destination array where the data should be copied to. |
 | numbytes              | The number of bytes (not cells) to copy.                                              |
-| maxlength=sizeof dest | The maximum number of cells that fit in the destination buffer.                       |
+| maxlength = sizeof dest | The maximum number of cells that fit in the destination buffer.                       |
 
 ## ส่งคืน
 

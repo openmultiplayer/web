@@ -37,9 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Познат bug:
-
-- Играчима се дешава судар када уђу у исти мод шоп.
+Познат bug: Играчима се дешава судар када уђу у исти мод шоп.
 
 :::
 

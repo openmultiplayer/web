@@ -26,7 +26,7 @@ Cette callback ne retourne aucune valeur particulière.
 ```c
 public OnVehicleSirenStateChange(playerid, vehicleid, newstate)
 {
-    if(newstate) GameTextForPlayer(playerid, "~W~Sirene ~G~on", 1000, 3);
+    if (newstate) GameTextForPlayer(playerid, "~W~Sirene ~G~on", 1000, 3);
     GameTextForPlayer(playerid, "~W~Sirene ~r~off", 1000, 3);
     return 1;
 }

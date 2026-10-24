@@ -39,10 +39,13 @@ public OnGameModeInit()
 
 :::warning
 
-Once set invulnerable, the actor does not call [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor). Players will have actor's invulnerability state changed only when it is restreamed to them.
+- Once set invulnerable, the actor does not call [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
+- Players will have actor's invulnerability state changed only when it is restreamed to them.
 
 :::
 
 ## Related Functions
 
+- [CreateActor](CreateActor): Create an actor (static NPC).
 - [IsActorInvulnerable](IsActorInvulnerable): Check if an actor is invulnerable.
+- [SetActorHealth](SetActorHealth): Set the health of an actor.

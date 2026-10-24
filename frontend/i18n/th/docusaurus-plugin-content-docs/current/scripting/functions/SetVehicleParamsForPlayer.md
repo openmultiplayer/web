@@ -42,13 +42,13 @@ SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iB
 // Locks own car for all players, except the player who used the command.
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext,"/lock",true))
+    if (!strcmp(cmdtext, "/lock", true))
     {
-        if (!IsPlayerInAnyVehicle(playerid)) return SendClientMessage(playerid,0xFFFFFFAA,"You have to be inside a vehicle.");
-        for(new i=0; i < MAX_PLAYERS; i++)
+        if (!IsPlayerInAnyVehicle(playerid)) return SendClientMessage(playerid, 0xFFFFFFAA, "You have to be inside a vehicle.");
+        for (new i = 0; i < MAX_PLAYERS; i++)
         {
             if (i == playerid) continue;
-            SetVehicleParamsForPlayer(GetPlayerVehicleID(playerid),i,0,1);
+            SetVehicleParamsForPlayer(GetPlayerVehicleID(playerid), i, 0, 1);
         }
         return 1;
     }
@@ -62,7 +62,7 @@ new iVehicleObjective[MAX_VEHICLES][2];
 
 public OnGameModeInit() //Or another callback
 {
-    new temp = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0,0, -1); //ID 1
+    new temp = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0, 0, -1); //ID 1
     iVehicleObjective[temp][0] = 1; //Marker
     iVehicleObjective[temp][1] = 0; //Door Lock
     return 1;
@@ -87,7 +87,7 @@ new myMarkedCar;
 
 public OnGameModeInit() //Or another callback
 {
-    myMarkedCar = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0,0, -1); //For example: Black Landstalker near Blueberry Acres
+    myMarkedCar = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0, 0, -1); //For example: Black Landstalker near Blueberry Acres
     return 1;
 }
 

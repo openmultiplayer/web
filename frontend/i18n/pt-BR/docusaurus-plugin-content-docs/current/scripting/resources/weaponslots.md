@@ -1,7 +1,7 @@
 ---
 title: Weapon Slots
 sidebar_label: Weapon Slots
-description: "Slots de armas usados ​​por GetWeaponSlot e GetPlayerWeaponData."
+description: "Slots de armas usados por GetWeaponSlot e GetPlayerWeaponData."
 ---
 
 

@@ -15,7 +15,7 @@ Get the currently set gravity.
 ## ตัวอย่าง
 
 ```c
-#if !defined GetGravity
+#if !defined GetGravity
     native Float:GetGravity();
 #endif
 

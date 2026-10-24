@@ -27,10 +27,22 @@ public OnGameModeExit()
 
 :::tip
 
-Cette fonction peut également être utilisée dans un filterscript pour détecter si le gamemode change avec les commandes RCON comme changemode ou gmx, car le changement de gamemode ne recharge pas un filterscript. Lorsque vous utilisez OnGameModeExit en conjonction avec la commande de console 'rcon gmx', gardez à l'esprit qu'il y a un risque que des bugs se produisent, par exemple avec les callbacks RemoveBuildingForPlayer excessifs pendant OnGameModeInit qui pourraient faire crash le joueur. Cette callback ne sera PAS appelée si le serveur crash ou si le processus est fermé par d'autres moyens, par exemple en appuyant sur le bouton de fermeture de la console Windows.
+- Cette fonction peut également être utilisée dans un filterscript pour détecter si le gamemode change avec les commandes RCON comme changemode ou gmx, car le changement de gamemode ne recharge pas un filterscript.
+- Lorsque vous utilisez OnGameModeExit en conjonction avec la commande de console 'rcon gmx', gardez à l'esprit qu'il y a un risque que des bugs se produisent, par exemple avec les callbacks RemoveBuildingForPlayer excessifs pendant OnGameModeInit qui pourraient faire crash le joueur.
+- Cette callback ne sera PAS appelée si le serveur crash ou si le processus est fermé par d'autres moyens.
 
 :::
 
 ## Callback connexe
 
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
 - [OnGameModeInit](OnGameModeInit) : callback appelée quand le gamemode démarre
+- [OnFilterScriptInit](OnFilterScriptInit) : Appelée lorsqu'un filterscript est chargé.
+- [OnFilterScriptExit](OnFilterScriptExit) : Appelée lorsqu'un filterscript se ferme.
+
+## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
+
+- GameModeExit : Ferme le gamemode courant.

@@ -25,7 +25,7 @@ public OnPlayerSpawn(playerid)
     new PlayerName[MAX_PLAYER_NAME],
         string[40];
 
-    GetPlayerName(playerid, PlayerName, sizeof(PlayerName
+    GetPlayerName(playerid, PlayerName, sizeof(PlayerName));
 
     format(string, sizeof(string), "[ ! ] %s a spawn.", PlayerName);
     SendClientMessageToAll(0xFFFFFFFF, string);
@@ -41,6 +41,13 @@ public OnPlayerSpawn(playerid)
 Le jeu déduit parfois \$100 à un joueur après son apparition.
 
 :::
+
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerDeath](OnPlayerDeath): Appelée lorsqu'un joueur meurt.
+- [OnVehicleSpawn](OnVehicleSpawn): Appelée lorsqu'un véhicule **ré**-apparaît.
 
 ## Fonctions connexes
 

@@ -1,7 +1,7 @@
 ---
 title: CreatePickup
 sidebar_label: CreatePickup
-description: Esta função faz exatamente o mesmo que AddStaticPickup, exceto que retorna um ID de pickup que pode ser usado para destruí-lo posteriormente e ser rastreado usando OnPlayerPickUpPickup.
+description: Esta função faz exatamente o mesmo que AddStaticPickup, exceto que retorna um ID de pickup.
 tags: ["pickup"]
 ---
 
@@ -58,9 +58,7 @@ Para pickups totalmente programados, o tipo 1 deve ser usado.
 
 :::warning
 
-Bug(s) Conhecido(s):
-
-- Pickups que têm um X ou Y menor que -4096.0 ou maior que 4096.0 não aparecerão e não acionarão OnPlayerPickUpPickup também.
+Bug(s) Conhecido(s): Pickups que têm um X ou Y menor que -4096.0 ou maior que 4096.0 não aparecerão e não acionarão OnPlayerPickUpPickup também.
 
 :::
 

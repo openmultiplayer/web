@@ -9,12 +9,16 @@ tags: []
 
 Ta "callback" se pokliče, ko se "gamemode" izklopi prek 'gmx', kadar koli se strežnik izklopi, bodisi pod "GameModeExit"
 
+## Returns
+
+Ta "callback" se ne obdeluje (return).
+
 ## Primeri
 
 ```c
 public OnGameModeExit()
 {
-    print(""Gamemode" se ustavil.");
+    print("Gamemode se ustavil.");
     return 1;
 }
 ```
@@ -23,7 +27,9 @@ public OnGameModeExit()
 
 :::tip
 
-Ta funkcijo se lahko uporablja tudi znotraj "filterscript" da zazna, če "gamemode" spremenite z uporabo ukazov RCON, kot je "changemode" ali "gmx", ker sprememba "gamemode" se ne zažene znova "filterscript". Ko se uporablja "OnGameModeExit" skupaj z'rcon gmx' ukaz v konzoli, upoštevajte, da lahko v "client" obstajajo morebitne napake, kot primer tega je pretirano kliče `RemoveBuildingForPlayer` med `OnGameModeInit` kar lahko povzroči "client" odjemalca. Ta "callback" ne bo poklican, če se strežnik zruši ali če postopek ubijete z drugimi sredstvi, kot je ukaz Linux "kill" ali s pritiskom na gumb za zapiranje v konzoli Windows.
+- Ta funkcijo se lahko uporablja tudi znotraj "filterscript" da zazna, če "gamemode" spremenite z uporabo ukazov RCON, kot je "changemode" ali "gmx", ker sprememba "gamemode" se ne zažene znova "filterscript".
+- Ko se uporablja "OnGameModeExit" skupaj z'rcon gmx' ukaz v konzoli, upoštevajte, da lahko v "client" obstajajo morebitne napake, kot primer tega je pretirano kliče `RemoveBuildingForPlayer` med `OnGameModeInit` kar lahko povzroči "client" odjemalca.
+- Ta "callback" ne bo poklican, če se strežnik zruši ali če postopek ubijete z drugimi sredstvi, kot je ukaz Linux "kill".
 
 :::
 

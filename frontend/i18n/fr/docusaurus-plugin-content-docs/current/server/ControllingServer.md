@@ -41,20 +41,22 @@ Le mot de passe est le même que celui que vous avez défini dans [config.json](
 
 ### Bannir un joueur
 
-##### samp.ban
+##### bans.json
 
-samp.ban est le fichier utilisé pour stocker les joueurs bannis, y compris les informations suivantes sur l'interdiction :
+bans.json est le fichier utilisé pour stocker les joueurs bannis, y compris les informations suivantes sur l'interdiction :
 
 - IP
 - Date
 - Temps
-- Nom (Nom de la personne ou un motif, voir [BanEx](../scripting/functions/BanEx))
-- Type d'interdiction
+- Nom (Nom de la personne)
+- Motif (voir [BanEx](../scripting/functions/BanEx))
 
-Pour ajouter un nouveau joueur à bannir, ajoutez simplement une ligne comme ceci :
+Pour ajouter un nouveau joueur à bannir, ajoutez simplement un objet au tableau JSON comme ceci :
 
-```
-ADRESSE_IP [28/05/09 | 13:37:00] JOUEUR - RAISON DU BAN
+```json
+[
+    {"address": "ADRESSE_IP", "player": "JOUEUR", "reason": "RAISON DU BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 `ADRESSE_IP` étant l'adresse IP du joueur à bannir.
@@ -63,8 +65,10 @@ ADRESSE_IP [28/05/09 | 13:37:00] JOUEUR - RAISON DU BAN
 
 La fonction [Ban](../scripting/functions/Ban) peut être utilisée pour bannir un joueur à partir d'un script. La fonction [BanEx](../scripting/functions/BanEx) ajoutera une raison facultative comme ceci :
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] JOUEUR - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "JOUEUR", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ##### Commande de ban avec RCON
@@ -100,27 +104,29 @@ banip IP
 
 Une fois que quelqu'un est banni, il y a deux façons de le débannir.
 
-- Supprimer de samp.ban
+- Supprimer de bans.json
 - La commande RCON `unbanip`
 
-#### samp.ban
+#### bans.json
 
-samp.ban se trouve dans le répertoire de votre serveur sa-mp, il contient des lignes avec les informations suivantes sur chaque interdiction :
+bans.json se trouve dans le répertoire de votre serveur open.mp, il contient des objets avec les informations suivantes sur chaque interdiction :
 
 - IP
 - Date
 - Temps
-- Nom (Nom de la personne ou un motif (voir [BanEx](../scripting/functions/BanEx)))
-- Type d'interdiction (INGAME, IP BAN etc,)
+- Nom (Nom de la personne)
+- Motif (voir [BanEx](../scripting/functions/BanEx))
 
 Exemples:
 
-```
-127.8.57.32 [13/06/09 | 69:69:69] AUCUN - INTERDICTION IP
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INTERDICTION DE JEU
+```json
+[
+    {"address": "127.8.57.32", "player": "AUCUN", "reason": "INTERDICTION IP", "time": "2009-06-13T13:37:00+0000"},
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INTERDICTION DE JEU", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
-Pour les débannir, supprimez simplement la ligne, puis exécutez la commande RCON `reloadbans` pour actualiser la liste des joueurs bannis à partir du fichier samp.ban.
+Pour les débannir, supprimez simplement l'objet, puis exécutez la commande RCON `reloadbans` pour actualiser la liste des joueurs bannis à partir du fichier bans.json.
 
 #### unbanip
 
@@ -128,8 +134,10 @@ La commande RCON unbanip peut être utilisée dans le jeu ou depuis la console d
 
 Exemple:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INTERDICTION DE JEU
+```json
+[
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INTERDICTION DE JEU", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ```
@@ -140,51 +148,51 @@ Exemple:
 unbanip 13.37.13.37
 ```
 
-Pour les débannir, utilisez simplement la commande `unbanip`, puis exécutez la commande RCON `reloadbans` pour actualiser la liste des joueurs bannis à partir du fichier samp.ban.
+Pour les débannir, utilisez simplement la commande `unbanip`.
 
-#### reloadbans
+#### reloadbans
 
-`samp.ban` est un fichier qui contient les informations sur les adresses IP actuellement bannies du serveur. Ce fichier est lu au démarrage du serveur, donc si vous débloquez une adresse IP/personne, vous DEVEZ taper la commande RCON `reloadbans` pour que le serveur lise à nouveau `samp.ban` et lui permette de rejoindre le serveur.
+`bans.json` est un fichier qui contient les informations sur les adresses IP actuellement bannies du serveur. Ce fichier est lu au démarrage du serveur, donc si vous débloquez une adresse IP/personne en modifiant le fichier, vous DEVEZ taper la commande RCON `reloadbans` pour que le serveur lise à nouveau `bans.json` et lui permette de rejoindre le serveur.
 
 ### Commandes RCON
 
 Tapez cmdlist pour les commandes (ou varlist pour les variables) en utilisant le RCON en jeu (`/rcon cmdlist`).
 
-Voici les fonctions que vous pouvez utiliser en tant qu'administrateur :
+Voici les fonctions que vous pouvez utiliser en tant qu'administrateur:
 
-| Command                           | Description                                                                                                                                                                             |
-| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/rcon cmdlist`                   | Affiche la liste des commandes                                                                                                                                                          |
-| `/rcon varlist`                   | Affiche la liste des variables                                                                                                                                                          |
-| `/rcon exit`                      | Arrête le serveur.                                                                                                                                                                      |
-| `/rcon echo [text]`               | Affiche le texte `[text]` dans la console (ce texte n'apparait PAS dans le jeu).                                                                                                        |
-| `/rcon hostname [name]`           | Change le nom du serveur (_exemple: /rcon hostname mon nouveau serveur_).                                                                                                               |
-| `/rcon gamemodetext [name]`       | Change le nom du mode de jeu (_exemple: /rcon gamemodetext mon mode de jeu_).                                                                                                           |
-| `/rcon mapname [name]`            | Change le nom de la map (_exemple: /rcon mapname San Andreas_).                                                                                                                         |
-| `/rcon exec [filename]`           | Executes the file which contains server cfg (_exemple: /rcon exec blah.cfg_).                                                                                                           |
-| `/rcon kick [ID]`                 | Kick le joueur ayant l'identifiant ID (_exemple: /rcon kick 2_).                                                                                                                        |
-| `/rcon ban [ID]`                  | Ban le joueur ayant l'identifiant ID (_exemple: /rcon ban 2_).                                                                                                                          |
-| `/rcon changemode [mode]`         | Change le mode de jeu actuel (relance le serveur avec un nouveu fichier .amx) (_exemple: si tu veux lancer le mode sftdm.amx: /rcon changemode sftdm_).                                 |
-| `/rcon gmx`                       | Charge le prochain gamemode du fichier [config.json](config.json).                                                                                                                      |
-| `/rcon reloadbans`                | Recharge le fichier `samp.ban` où sont stockés les joueurs et IP bannis. Doit être utilisé après avoir modifié le fichier.                                                              |
-| `/rcon reloadlog`                 | Recharge le fichier `server_log.txt`. Utile pour une rotation automatique de journalisation. Peut être déclenché en envoyant un signal `SIGUSR1` au serveur (Serveur Linux uniquement). |
-| `/rcon say`                       | Affiche un message dans le chat des joueurs (exemple: `/rcon say hello` affichera dans le chat: `Admin: hello`).                                                                        |
-| `/rcon players`                   | Affiche la liste des joueurs connectés (nom, IP et ping).                                                                                                                               |
-| `/rcon banip [IP]`                | Ban l'adresse IP (_exemple: /rcon banip 127.0.0.1_).                                                                                                                                    |
-| `/rcon unbanip [IP]`              | Unban l'adresse IP (_exemple: /rcon unbanip 127.0.0.1_).                                                                                                                                |
-| `/rcon gravity`                   | Modifie la gravité (_exemple: /rcon gravity 0.008_).                                                                                                                                    |
-| `/rcon weather [ID]`              | Modifie la météo (_exemple: /rcon weather 1_).                                                                                                                                          |
-| `/rcon loadfs`                    | Charge un filterscript (_exemple: /rcon loadfs adminfs_).                                                                                                                               |
-| `/rcon weburl [server url]`       | Change l'URL affichée dans le client open.mp                                                                                                                                            |
-| `/rcon unloadfs`                  | Retire le filterscript (_exemple: /rcon unloadfs adminfs_).                                                                                                                             |
-| `/rcon reloadfs`                  | Recharge le filterscript (_exemple: /rcon reloadfs adminfs_).                                                                                                                           |
-| `/rcon rcon\_password [PASSWORD]` | Change le mot de passe RCON                                                                                                                                                             |
-| `/rcon password [password]`       | Change ou reset le mot de passe du serveur                                                                                                                                              |
-| `/rcon messageslimit [count]`     | Modifie le nombre de message par secondes que le client envoie au serveur (valeur par défaut: 500)                                                                                      |
-| `/rcon ackslimit [count]`         | Modifie le nombre de "acks" (nombre de paquets envoyés avant d'attendre un accusé de réception) (valeur par défaut: 3000)                                                               |
-| `/rcon messageholelimit [count]`  | Modifie le nombre de "message holes" (nombre de messages perdus possibles avant déconnexion) (valeur par défaut: 3000)                                                                  |
-| `/rcon playertimeout [limit m/s]` | Modifie le nombre de millisecondes à attendre avant de déconnecter un joueur qui n'envoie plus de paquet (valeur par défaut: 1000)                                                      |
-| `/rcon language [language]`       | Change la langue du serveur (_example: /rcon language English_). Affiché dans le client open.mp.                                                                                        |
+| Command                           | Description                                                                                                                                                                      |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/rcon cmdlist`                   | Affiche la liste des commandes                                                                                                                                                   |
+| `/rcon varlist`                   | Affiche la liste des variables                                                                                                                                                   |
+| `/rcon exit`                      | Arrête le serveur.                                                                                                                                                               |
+| `/rcon echo [text]`               | Affiche le texte `[text]` dans la console (ce texte n'apparait PAS dans le jeu).                                                                                                 |
+| `/rcon hostname [name]`           | Change le nom du serveur (_exemple: /rcon hostname mon nouveau serveur_).                                                                                                        |
+| `/rcon gamemodetext [name]`       | Change le nom du mode de jeu (_exemple: /rcon gamemodetext mon mode de jeu_).                                                                                                    |
+| `/rcon mapname [name]`            | Change le nom de la map (_exemple: /rcon mapname San Andreas_).                                                                                                                  |
+| `/rcon exec [filename]`           | Executes the file which contains server cfg (_exemple: /rcon exec blah.cfg_).                                                                                                    |
+| `/rcon kick [ID]`                 | Kick le joueur ayant l'identifiant ID (_exemple: /rcon kick 2_).                                                                                                                 |
+| `/rcon ban [ID]`                  | Ban le joueur ayant l'identifiant ID (_exemple: /rcon ban 2_).                                                                                                                   |
+| `/rcon changemode [mode]`         | Change le mode de jeu actuel (relance le serveur avec un nouveu fichier .amx) (_exemple: si tu veux lancer le mode sftdm.amx: /rcon changemode sftdm_).                          |
+| `/rcon gmx`                       | Charge le prochain gamemode du fichier [config.json](config.json).                                                                                                               |
+| `/rcon reloadbans`                | Recharge le fichier `bans.json` où sont stockés les joueurs et IP bannis. Doit être utilisé après avoir modifié le fichier.                                                      |
+| `/rcon reloadlog`                 | Recharge le fichier `log.txt`. Utile pour une rotation automatique de journalisation. Peut être déclenché en envoyant un signal `SIGUSR1` au serveur (Serveur Linux uniquement). |
+| `/rcon say`                       | Affiche un message dans le chat des joueurs (exemple: `/rcon say hello` affichera dans le chat: `Admin: hello`).                                                                 |
+| `/rcon players`                   | Affiche la liste des joueurs connectés (nom, IP et ping).                                                                                                                        |
+| `/rcon banip [IP]`                | Ban l'adresse IP (_exemple: /rcon banip 127.0.0.1_).                                                                                                                             |
+| `/rcon unbanip [IP]`              | Unban l'adresse IP (_exemple: /rcon unbanip 127.0.0.1_).                                                                                                                         |
+| `/rcon gravity`                   | Modifie la gravité (_exemple: /rcon gravity 0.008_).                                                                                                                             |
+| `/rcon weather [ID]`              | Modifie la météo (_exemple: /rcon weather 1_).                                                                                                                                   |
+| `/rcon loadfs`                    | Charge un filterscript (_exemple: /rcon loadfs adminfs_).                                                                                                                        |
+| `/rcon weburl [server url]`       | Change l'URL affichée dans le client open.mp                                                                                                                                     |
+| `/rcon unloadfs`                  | Retire le filterscript (_exemple: /rcon unloadfs adminfs_).                                                                                                                      |
+| `/rcon reloadfs`                  | Recharge le filterscript (_exemple: /rcon reloadfs adminfs_).                                                                                                                    |
+| `/rcon rcon\_password [PASSWORD]` | Change le mot de passe RCON                                                                                                                                                      |
+| `/rcon password [password]`       | Change ou reset le mot de passe du serveur                                                                                                                                       |
+| `/rcon messageslimit [count]`     | Modifie le nombre de message par secondes que le client envoie au serveur (valeur par défaut: 500)                                                                               |
+| `/rcon ackslimit [count]`         | Modifie le nombre de "acks" (nombre de paquets envoyés avant d'attendre un accusé de réception) (valeur par défaut: 3000)                                                        |
+| `/rcon messageholelimit [count]`  | Modifie le nombre de "message holes" (nombre de messages perdus possibles avant déconnexion) (valeur par défaut: 3000)                                                           |
+| `/rcon playertimeout [limit m/s]` | Modifie le nombre de millisecondes à attendre avant de déconnecter un joueur qui n'envoie plus de paquet (valeur par défaut: 1000)                                               |
+| `/rcon language [language]`       | Change la langue du serveur (_example: /rcon language English_). Affiché dans le client open.mp.                                                                                 |
 
 Les valeurs count et limit des 4 dernières commandes sont configurés pour éviter les attaques de potentiels outils pouvant bloquer ou crasher le serveur. Configurez les en fonction de votre serveur, testez avec les valeurs par défaut, si vous voyez des kicks incohérents augmentez les valeurs, jusqu'à ne plus voir de personnes kickés par un problème de connexion.
 

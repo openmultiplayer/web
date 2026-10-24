@@ -1,7 +1,7 @@
 ---
 title: Weapon Skills
 sidebar_label: Weapon Skills
-description: "Valores de habilidade com arma a serem usados ​​com SetPlayerSkillLevel."
+description: "Valores de habilidade com arma a serem usados com SetPlayerSkillLevel."
 ---
 
 

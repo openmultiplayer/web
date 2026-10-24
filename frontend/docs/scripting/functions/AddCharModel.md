@@ -9,14 +9,14 @@ tags: ["custom skin", "char model"]
 
 ## Description
 
-Adds a new custom character model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
+Adds a new custom character model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a [CRC-form](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) file name.
 
-| Name                   | Description                                                                                                    |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------- |
-| baseid                 | The base skin model ID to use (behavior of the character & original character to use when download is failed). |
-| newid                  | The new skin model ID ranged from 20001 to 30000 (10000 slots) to be used later with SetPlayerSkin             |
-| const dff[]            | Name of the .dff model collision file located in models server folder by default (artpath setting).            |
-| const textureLibrary[] | Name of the .txd model texture file located in models server folder by default (artpath setting).              |
+| Name                   | Description                                                                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| baseid                 | The base [skin model ID](../resources/skins) to use (behavior of the character & original character to use when download is failed). |
+| newid                  | The new skin model ID ranged from 20001 to 30000 (10000 slots) to be used later with SetPlayerSkin                                   |
+| const dff[]            | Name of the .dff model collision file located in models server folder by default (artpath setting).                                  |
+| const textureLibrary[] | Name of the .txd model texture file located in models server folder by default (artpath setting).                                    |
 
 ## Returns
 

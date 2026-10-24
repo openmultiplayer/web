@@ -11,11 +11,11 @@ tags: ["player"]
 
 Fonksiyon, bir oyuncu özel model indirmeleri istediğinde çağrılır.
 
-| Parametre | Açıklama                                   |
-| --------- | ------------------------------------------ |
-| playerid  | Model indirmesi isteyen oyuncunun ID'si.   |
-| type      | İsteğin türü (aşağıya bakın).              |
-| crc       | Özel model dosyasının CRC sağlama toplamı. |
+| Parametre | Açıklama                                                                                            |
+| --------- | --------------------------------------------------------------------------------------------------- |
+| playerid  | Model indirmesi isteyen oyuncunun ID'si.                                                            |
+| type      | İsteğin türü (aşağıya bakın).                                                                       |
+| crc       | Özel model dosyasının [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) sağlama toplamı. |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -34,22 +34,22 @@ new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {
-    new fullurl[256+1];
-    new dlfilename[64+1];
-    new foundfilename=0;
+    new fullurl[256 + 1];
+    new dlfilename[64 + 1];
+    new foundfilename = 0;
 
     if (!IsPlayerConnected(playerid)) return 0;
 
     if (type == DOWNLOAD_REQUEST_TEXTURE_FILE) {
-        foundfilename = FindTextureFileNameFromCRC(crc,dlfilename,64);
+        foundfilename = FindTextureFileNameFromCRC(crc, dlfilename, 64);
     }
     else if (type == DOWNLOAD_REQUEST_MODEL_FILE) {
-        foundfilename = FindModelFileNameFromCRC(crc,dlfilename,64);
+        foundfilename = FindModelFileNameFromCRC(crc, dlfilename, 64);
     }
 
     if (foundfilename) {
-        format(fullurl,256,"%s/%s",baseurl,dlfilename);
-        RedirectDownload(playerid,fullurl);
+        format(fullurl, 256, "%s/%s", baseurl, dlfilename);
+        RedirectDownload(playerid, fullurl);
     }
 
     return 0;

@@ -21,6 +21,8 @@ The ID of the actor the player is looking at.
 
 ## Examples
 
+Actors perform a 'hands up' animation when aimed at:
+
 ```c
 new bool:ActorHandsup[MAX_ACTORS];
 
@@ -36,7 +38,7 @@ public OnPlayerUpdate(playerid)
     new playerTargetActor = GetPlayerCameraTargetActor(playerid);
 
     // If they ARE looking at ANY actor
-    if (playerTargetActor != INVALID_ACTOR_ID)
+    if (playerTargetActor != INVALID_ACTOR_ID)
     {
         // Store the player's weapon so we can check if they are armed
         new playerWeapon = GetPlayerWeapon(playerid);
@@ -49,7 +51,7 @@ public OnPlayerUpdate(playerid)
         if (!ActorHandsup[playerTargetActor] && playerWeapon >= 22 && playerWeapon <= 42 && keys & KEY_AIM)
         {
             // Apply 'hands up' animation
-            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr",4.1,0,0,0,1,0);
+            ApplyActorAnimation(playerTargetActor, "SHOP", "SHP_HandsUp_Scr", 4.1, 0, 0, 0, 1, 0);
 
             // Set 'ActorHandsup' to true, so the animation won't keep being reapplied
             ActorHandsup[playerTargetActor] = true;
@@ -63,7 +65,7 @@ public OnPlayerUpdate(playerid)
 
 :::tip
 
-This function only tells you which actor (if any) the player is looking at. To find out if they are aiming at them, you need to use GetPlayerTargetActor.
+This function only tells you which actor (if any) the player is looking at. To find out if they are aiming at them, you need to use [GetPlayerTargetActor](GetPlayerTargetActor).
 
 :::
 

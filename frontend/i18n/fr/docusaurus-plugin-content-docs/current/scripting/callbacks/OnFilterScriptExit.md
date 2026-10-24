@@ -23,4 +23,8 @@ public OnFilterScriptExit()
 
 ## Callback connnexe
 
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
 - [OnFilterScriptInit](OnFilterScriptInit) : chargement d'un filterscript
+- [OnGameModeInit](OnGameModeInit) : Appelée lorsqu'un gamemode se charge.
+- [OnGameModeExit](OnGameModeExit) : Appelée lorsqu'un gamemode se ferme.

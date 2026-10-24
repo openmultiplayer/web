@@ -24,7 +24,7 @@ The number of rows in the result.
 GetNameBySpawnID(spawn_id)
 {
     // Declare "p_name"
-    new p_name[MAX_PLAYER_NAME+1];
+    new p_name[MAX_PLAYER_NAME + 1];
 
     // Declare "query" and "db_result"
     static query[60], DBResult:db_result;

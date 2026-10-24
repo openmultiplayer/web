@@ -20,6 +20,10 @@ tags: ["物体"]
 | Float:rotationZ    | Z 轴旋转角度                                 |
 | Float:drawDistance | （可选参数）自定义渲染距离（0.0=使用默认值） |
 
+## 返回值
+
+返回创建物体的 ID，若达到物体数量上限（MAX_OBJECTS）则返回 INVALID_OBJECT_ID。
+
 ## 应用示例
 
 ```c

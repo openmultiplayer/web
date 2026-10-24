@@ -39,10 +39,13 @@ public OnGameModeInit()
 
 :::warning
 
-设置为无敌状态后，演员不会触发[OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor)回调。玩家只有在演员被重新流加载时才能看到无敌状态的变化。
+- 设置为无敌状态后，演员不会触发[OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor)回调。
+- 玩家只有在演员被重新流加载时才能看到无敌状态的变化。
 
 :::
 
 ## 相关函数
 
+- [CreateActor](CreateActor): 创建演员（静态 NPC）
 - [IsActorInvulnerable](IsActorInvulnerable): 检查演员是否无敌
+- [SetActorHealth](SetActorHealth): 设置演员的生命值

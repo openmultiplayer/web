@@ -20,7 +20,7 @@ tags: ["actor"]
 ```c
 SetAllActorsHealth(Float:health)
 {
-    for(new i = 0, j = GetActorPoolSize(); i <= j; i++)
+    for (new i = 0, j = GetActorPoolSize(); i <= j; i++)
     {
         if (IsValidActor(i))
         {

@@ -39,10 +39,13 @@ public OnGameModeInit()
 
 :::warning
 
-وقتی آسیب نپذیر تنظیم بشه، actor دیگه [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor) رو صدا نمی‌زنه. بازیکنا تغییر وضعیت آسیب نپذیری actor رو فقط وقتی می‌بینن که دوباره براشون restream بشه.
+- وقتی آسیب نپذیر تنظیم بشه، actor دیگه [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor) رو صدا نمی‌زنه.
+- بازیکنا تغییر وضعیت آسیب نپذیری actor رو فقط وقتی می‌بینن که دوباره براشون restream بشه.
 
 :::
 
 ## توابع مرتبط
 
+- [CreateActor](CreateActor): ساخت یه actor (NPC استاتیک).
 - [IsActorInvulnerable](IsActorInvulnerable): بررسی اینکه آیا actor آسیب نپذیر هست یا نه.
+- [SetActorHealth](SetActorHealth): تنظیم سلامتی یه actor.

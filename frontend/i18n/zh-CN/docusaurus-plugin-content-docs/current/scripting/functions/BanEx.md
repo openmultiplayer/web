@@ -29,7 +29,7 @@ tags: ["玩家", "管理"]
 ## 示例
 
 ```c
-public OnPlayerCommandText( playerid, cmdtext[] )
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/banme", true))
     {

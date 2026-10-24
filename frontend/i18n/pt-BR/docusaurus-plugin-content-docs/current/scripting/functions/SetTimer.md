@@ -48,9 +48,8 @@ public OneSecondTimer()
 
 :::note
 
-O temporizador IDs nunca é usado duas vezes.
-
-Você pode usar [KillTimer](KillTimer) em um timer ID e não importa se ele está funcionando ou não. A função que deve ser chamada deve ser pública, ou seja, deve ser encaminhada.
+- O temporizador IDs nunca é usado duas vezes. Você pode usar [KillTimer](KillTimer) em um timer ID e não importa se ele está funcionando ou não.
+- A função que deve ser chamada deve ser pública, ou seja, deve ser encaminhada.
 
 :::
 

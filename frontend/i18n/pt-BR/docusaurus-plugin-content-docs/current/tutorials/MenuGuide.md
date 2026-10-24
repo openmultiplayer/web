@@ -58,10 +58,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 A explicação para [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | O menuid do menu onde o item deve ser exibido |
-| ------ | --------------------------------------------- |
-| column | A coluna na qual o item deve ser mostrado     |
-| text   | O texto do item                               |
+| Parâmetro | Especifica                                    |
+| --------- | --------------------------------------------- |
+| menuid    | O menuid do menu onde o item deve ser exibido |
+| column    | A coluna na qual o item deve ser mostrado     |
+| text      | O texto do item                               |
 
 ## Criando os efeitos para os itens
 
@@ -90,9 +91,9 @@ public OnPlayerSelectedMenuRow(playerid, row)
 Agora, entre essas chaves é onde fica o `switch`, que verifica qual item o jogador selecionou ou `row`. Isso pode ser feito com declarações `if` verificando qual `row` é, mas o `switch` é uma forma muito mais simples de escrever.
 
 ```pawn
-if(CurrentMenu == teleportmenu)
+if (CurrentMenu == teleportmenu)
 {
-    switch(row)
+    switch (row)
     {
         case 0: //Grove Street
         {
@@ -139,9 +140,9 @@ if(CurrentMenu == teleportmenu)
 Agora precisamos de um comando para mostrar o menu. Este é o passo mais fácil. Apenas uma comparação com `strcmp` e um `ShowMenuForPlayer`. Isso é feito em `OnPlayerCommandText`. Ou, se você já tiver um processador de comandos, use-o para chamar `ShowMenuForPlayer`.
 
 ```pawn
-if(strcmp(cmdtext, "/teleport", true) == 0)
+if (strcmp(cmdtext, "/teleport", true) == 0)
 {
-    ShowMenuForPlayer(teleportmenu,playerid);
+    ShowMenuForPlayer(teleportmenu, playerid);
     return 1;
 }
 ```

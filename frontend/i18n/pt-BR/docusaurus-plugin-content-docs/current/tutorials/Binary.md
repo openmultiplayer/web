@@ -65,7 +65,7 @@ Decimal (base 10)
 
 //que é igual a
 
-10+3
+10 + 3
 
 //que é igual a
 
@@ -83,7 +83,7 @@ Binário (base 2)
 
 //que é igual a
 
-8+4+0+1
+8 + 4 + 0 + 1
 
 //que é igual a
 
@@ -95,7 +95,7 @@ Podemos ver pelo exemplo anterior que se um bit está definido como 0, podemos i
 Aqui estão 12 potências de 2 do topo da minha cabeça:
 
 ```c
-4096,2048,1024,512,256,128,64,32,16,8,4,2,1
+4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1
 ```
 
 Se você não sabe nada sobre trabalhar com potências, isso provavelmente não faz sentido algum para você. Uma potência é um número multiplicado por si mesmo x vezes. Com essa informação em mente, a lista anterior de potências provavelmente faz mais sentido; bem, com exceção do 1. Você pode estar curioso sobre por que 2 elevado à potência de 0 dá um resultado de 1, tudo o que posso dizer sobre isso é que simplesmente é assim.
@@ -134,7 +134,7 @@ Podemos ver que quando nos movemos para a direita, nosso valor anterior é multi
 1 * (2^3) = 8
 
 
-131072+65536+32768+8192+4096+512+128+64+32+16+8
+131072 + 65536 + 32768 + 8192 + 4096 + 512 + 128 + 64 + 32 + 16 + 8
 =
 242424
 ```

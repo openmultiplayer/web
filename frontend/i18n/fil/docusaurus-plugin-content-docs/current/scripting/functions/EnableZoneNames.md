@@ -1,7 +1,7 @@
 ---
 title: EnableZoneNames
 sidebar_label: EnableZoneNames
-description: Binibigyang-daan ng function na ito na i-on ang mga pangalan ng zone / area gaya ng text na "Vinewood" o "Doherty" sa kanang ibaba ng screen habang papasok ang mga ito sa lugar.
+description: Binibigyang-daan ng function na ito na i-on ang mga pangalan ng zone / area.
 tags: []
 ---
 

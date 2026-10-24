@@ -20,7 +20,7 @@ Ang function na ito ay hindi nagbabalik ng anumang value.
 ## Examples
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     // Gumagamit kami ng 18 team sa paggamit na ito ng Team-Deathmatch mode, tukuyin ito;
     SetTeamCount(18);

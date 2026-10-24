@@ -96,3 +96,7 @@ Ao usar 'EDIT_RESPONSE_UPDATE' fique ciente que esta callback não será chamada
 - [CreateObject](../functions/CreateObject): Cria um objeto.
 - [DestroyObject](../functions/DestroyObject): Destroi um objeto.
 - [MoveObject](../functions/MoveObject): Move um objeto.
+
+## Recursos relacionados
+
+- [Tipos de Resposta da Edição de Objeto](../resources/objecteditionresponsetypes)

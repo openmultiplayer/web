@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (!IsPlayerInAnyVehicle(playerid))
         {
-            return SendClientMessage(playerid,0xFFFFFFAA,"You have to be inside a vehicle.");
+            return SendClientMessage(playerid, 0xFFFFFFAA, "You have to be inside a vehicle.");
         }
 
         for (new i = 0; i < MAX_PLAYERS; i++)

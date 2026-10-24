@@ -52,7 +52,7 @@ server package.
 ### **More Road Signs**
 
 The speed limit sign below has a transparent material overlay (index 3) so you
-can use it with the SetObjectMaterialText() or SetPlayerObjectMaterialText()
+can use it with the SetObjectMaterialText or SetPlayerObjectMaterialText
 functions.
 
 ```
@@ -272,7 +272,7 @@ road.
 ### **Laptop (Old Style)**
 
 Same laptop in open and closed positions. You can change the screen using the
-SetObjectMaterial() function on index 1. There are three screen variations in
+SetObjectMaterial function on index 1. There are three screen variations in
 the TXD file (see below for picture):
 
 - LaptopScreen1 = GTASA map screen (default)
@@ -460,7 +460,7 @@ A collection of various road signs.
 ```
 
 The two signs below have a transparent material overlay (index 3) so you can use
-it with the SetObjectMaterialText() or SetPlayerObjectMaterialText() functions.
+it with the SetObjectMaterialText or SetPlayerObjectMaterialText functions.
 
 ```
 19980	SAMPRoadSign33
@@ -583,7 +583,7 @@ can be used... it can be found in the "filterscripts" folder of the Windows
 
 ### **Caligula's Casino Vault Door Edited**
 
-Edited to fix the pivot so it can be used with MoveObject() and also fixed the
+Edited to fix the pivot so it can be used with MoveObject and also fixed the
 night vertex colours. Original object ID is 2634.
 
 ```
@@ -611,7 +611,7 @@ SAMP.IPL file.
 ### **Static Door**
 
 This door is the same as object ID 1502 except it is static. You can animate it
-opening and closing with the MoveObject() function.
+opening and closing with the MoveObject function.
 
 ```
 19802	GenDoorINT04Static
@@ -635,7 +635,7 @@ created by Vince. Note that they will only be visible at night.
 ### **Extracted Items**
 
 The whiteboard object below has a transparent material overlay (index 1) so you
-can use it with the SetObjectMaterialText() or SetPlayerObjectMaterialText()
+can use it with the SetObjectMaterialText or SetPlayerObjectMaterialText
 functions.
 
 ```
@@ -777,10 +777,563 @@ This metal gate is the same as object ID 3036 except it is not dynamic
 
 ## **Objects added in 0.3.7 RC1 (265 objects)**
 
+### **Property Icons**
+
 ```
-19305	sec_keypad2
-19306	kmb_goflag2
-19307	kmb_goflag3
+19522	property_red
+19523	property_orange
+19524	property_yellow
+```
+
+### **Wedding Cake**
+
+```
+19525	WeddingCake1
+```
+
+### **ATM Fixed**
+
+```
+19526	ATMFixed
+```
+
+### **Halloween Stuff**
+
+```
+19527	Cauldron1
+19528	WitchesHat1
+```
+
+### **Modular Island (grass|sand|concrete and roads)**
+
+```
+19529	Plane125x125Grass1
+19530	Plane125x125Sand1
+19531	Plane125x125Conc1
+19532	15x125Road1
+19533	15x62_5Road1
+19534	15x15RoadInters1
+19535	15x15RoadInters2
+19536	Plane62_5x125Grass1
+19537	Plane62_5x125Sand1
+19538	Plane62_5x125Conc1
+19539	Edge62_5x62_5Grass1
+19540	Edge62_5x62_5Grass2
+19541	Edge62_5x15Grass1
+19542	Edge62_5x125Grass1
+19543	Plane62_5x15Grass1
+19544	Plane62_5x15Sand1
+19545	Plane62_5x15Conc1
+19546	Edge62_5x62_5Grass3
+19547	Hill125x125Grass1
+19548	Hill125x125Sand1
+19549	Edge62_5x32_5Grass1
+19550	Plane125x125Grass2
+19551	Plane125x125Sand2
+19552	Plane125x125Conc2
+```
+
+### **Extracted from Skins**
+
+```
+19553	StrawHat1
+19554	Beanie1
+19555	BoxingGloveL
+19556	BoxingGloveR
+19557	SexyMask1
+19558	PizzaHat1
+19559	HikerBackpack1
+```
+
+### **Extracted from Supermarket Items**
+
+```
+19560	MeatTray1
+19561	CerealBox1
+19562	CerealBox2
+19563	JuiceBox1
+19564	JuiceBox2
+19565	IceCreamBarsBox1
+19566	FishFingersBox1
+19567	IcecreamContainer1
+19568	IcecreamContainer2
+19569	MilkCarton1
+19570	MilkBottle1
+19571	PizzaBox1
+19572	PisshBox1
+19573	BriquettesBag1
+```
+
+### **Fruit**
+
+```
+19574	Orange1
+19575	Apple1
+19576	Apple2
+19577	Tomato1
+19578	Banana1
+```
+
+### **Loaf of Bread**
+
+```
+19579	BreadLoaf1
+```
+
+### **Extracted Pepperoni Pizza**
+
+```
+19580	Pizza1
+```
+
+### **Extracted from Marco's Bistro Kitchen**
+
+```
+19581	MarcosFryingPan1
+19582	MarcosSteak1
+19583	MarcosKnife1
+19584	MarcosSaucepan1
+19585	MarcosPan1
+19586	MarcosSpatula1
+```
+
+### **Extracted from a Stack of Plastic Trays and Edited**
+
+```
+19587	PlasticTray1
+```
+
+### **Wooden Foot Bridge**
+
+```
+19588	FootBridge1
+```
+
+### **Extracted and Edited Rubbish Skip**
+
+```
+19589	RubbishSkipEmpty1
+```
+
+### **Extracted from Woozie's Apartment**
+
+```
+19590	WooziesSword1
+19591	WooziesHandFan1
+```
+
+### **Extracted from a Stack of Baskets and Edited**
+
+```
+19592	ShopBasket1
+```
+
+### **SF ZomboTech Building and Lab**
+
+These objects can be used to replace the ZomboTech building in SF. The
+filterscript called "sf_zombotech" can be used to remove the existing GTASA map
+objects, replace the building, add the new lab building below the ground and add
+an elevator... it can be found in the "filterscripts" folder of the Windows
+0.3.7 server package.
+
+```
+19593	ZomboTechBuilding1
+19594	ZomboTechLab1
+```
+
+### **LS Apartments**
+
+This object can be used to replace a block of apartments in LS. The filterscript
+called "ls_apartments1" can be used to remove the existing GTASA map objects,
+replace the building, add an underground car park and elevator... it can be
+found in the "filterscripts" folder of the Windows 0.3.7 server package.
+
+```
+19595	LSAppartments1
+```
+
+### **LS BeachSide**
+
+These objects are used to replace a block of apartments on the beach in LS. The
+apartment building now has a multiple floor interior and an underground car
+park. The filterscript called "ls_beachside" can be used to add an elevator...
+it can be found in the "filterscripts" folder of the Windows 0.3.7 server
+package.
+
+Also, object ID 19596 has been moved to model ID 6391 to replace the existing
+GTASA building. The interior floors object (19597) and underground car park
+object (19800) are also created by default from lines defined in the SAMP.IPL
+file. This means you do not need to create these objects (building exterior,
+interior floors and underground car park) as they are created by default on all
+0.3.7 clients. You do however need to remove the night lights object as
+demonstrated in the filterscript to remove some occlusion boxes inside the
+building that cause camera problems.
+
+```
+19597	LSBeachSideInsides
+```
+
+### **SF Building 1**
+
+These objects can be used to replace a building near the hospital in SF. The
+filterscript called "sf_building1" can be used to remove the existing GTASA map
+objects and replace the building... it can be found in the "filterscripts"
+folder of the Windows 0.3.7 server package.
+
+```
+19598	SFBuilding1Outside
+19599	SFBuilding1Inside
+19600	SFBuilding1Land
+```
+
+### **Snow Plow**
+
+```
+19601	SnowPlow1
+```
+
+### **Landmine Edited**
+
+```
+19602	Landmine1
+```
+
+### **Water Plane**
+
+```
+19603	WaterPlane1
+19604	WaterPlane2
+```
+
+### **Different Coloured EnEx Markers**
+
+```
+19605	EnExMarker4-2
+19606	EnExMarker4-3
+19607	EnExMarker4-4
+```
+
+### **Stage and Music Equipment**
+
+```
+19608	WoodenStage1
+19609	DrumKit1
+19610	Microphone1
+19611	MicrophoneStand1
+19612	GuitarAmp1
+19613	GuitarAmp2
+19614	GuitarAmp3
+19615	GuitarAmp4
+19616	GuitarAmp5
+19617	GoldRecord1
+```
+
+### **Safe with Separate Door**
+
+You can use the MoveObject function to make the safe door open and close. The
+"safe_animated" filterscript shows you an example of how to do it... it can be
+found in the "filterscripts" folder of the Windows 0.3.7 server package.
+
+```
+19618	Safe1
+19619	SafeDoor1
+```
+
+### **New Police Light Bar Model**
+
+This object uses UV animation so it is visible during the day as well as night.
+
+```
+19620	LightBar1
+```
+
+### **Extracted from Cutscene IMG and Edited**
+
+```
+19621	OilCan1
+19622	Broom1
+19623	Camera1
+19624	Case1
+19625	Ciggy1
+19626	Spade1
+19627	Wrench1
+```
+
+### **Modular Road Banked Corners**
+
+These banked road corner objects are designed to work with the modular road
+objects (IDs 18788 to 18807) added in the SA-MP 0.3c version.
+
+```
+19628	MRoadBend90Banked1
+19629	MRoadBend90Banked2
+```
+
+### **3D Fish (Bream)**
+
+This fish object can be used with the fishing rod object (ID 18632) and the
+fishing animation pose. The "samp_anims" filterscript shows you an example of
+how to use the custom animation pose... it can be found in the "filterscripts"
+folder of the Windows 0.3.7 server package.
+
+```
+19630	Fish1
+```
+
+### **Sledge Hammer**
+
+```
+19631	SledgeHammer1
+```
+
+### **Burning Logs**
+
+```
+19632	FireWood1
+```
+
+### **360 Degree Ramps**
+
+```
+19633	Ramp360Degree1
+19634	Ramp360Degree2
+19635	Ramp360Degree3
+```
+
+### **Fruit Crates**
+
+```
+19636	RedApplesCrate1
+19637	GreenApplesCrate1
+19638	OrangesCrate1
+19639	EmptyCrate1
+```
+
+### **Empty Shop Shelf**
+
+This empty shop shelf can be stocked with your preferred supermarket items (IDs
+19560 to 19573). Three fruit crates (IDs 19636 to 19639) will fit side by side
+on the bottom shelf.
+
+```
+19640	EmptyShopShelf1
+```
+
+### **Wooden Fence Section**
+
+```
+19641	FenceSection1
+```
+
+### **Half Tube Objects**
+
+The MatTubes TXD file contains different coloured textures (RedDirt1,
+GreenDirt1, BlueDirt1, YellowDirt1 and PurpleDirt1) that can be used to
+re-colour the tubes below by using the SetObjectMaterial or
+SetPlayerObjectMaterial functions. Re-colouring the tubes this way preserves
+the shading (the vertex colours and vertex illumination).
+
+The tubes are available in three sizes... normal (100%), medium (50%) and small
+(25%).
+
+The filterscript called "stunt_island" shows an example setup... it can be found
+in the "filterscripts" folder of the Windows 0.3.7 server package.
+
+The tubes in this section are normal size.
+
+```
+19642	TubeSeg10m1
+19643	TubeSeg10m2a
+19644	TubeSeg10m2b
+19645	TubeSeg25m1
+19646	TubeHalf10m1
+19647	TubeHalf10mJoin1a
+19648	TubeHalf10mJoin1b
+19649	TubeHalf50m1
+19650	TubeFlat25x25m1
+19651	TubeHalfSpiral1a
+19652	TubeHalfSpiral1b
+19653	TubeHalfSpiral2a
+19654	TubeHalfSpiral2b
+19655	TubeHalfSpiral3a
+19656	TubeHalfSpiral3b
+19657	TubeHalfSpiral4a
+19658	TubeHalfSpiral4b
+19659	TubeHalf180Bend1a
+19660	TubeHalf180Bend1b
+19661	TubeHalf90Bend1a
+19662	TubeHalf90Bend1b
+19663	TubeHalf50mDip1
+19664	TubeHalf50mBump1
+19665	TubeHalfLoop1a
+19666	TubeHalfLoop1b
+19667	TubeHalfLoop2a
+19668	TubeHalfLoop2b
+19669	TubeHalfBowl1
+19670	TubeSupport1
+19671	TubeSupport2
+19672	TubeHalfLight1
+19673	TubeHalf5Bend1a
+19674	TubeHalf5Bend1b
+19675	TubeHalf5Bend2a
+19676	TubeHalf5Bend2b
+19677	TubeHalfTwist1a
+19678	TubeHalfTwist1b
+19679	TubeHalfTwist2a
+19680	TubeHalfTwist2b
+19681	TubeHalf45Bend1a
+19682	TubeHalf45Bend1b
+19683	TubeHalf15Bend1a
+19684	TubeHalf15Bend1b
+19685	TubeHalf15Bend2a
+19686	TubeHalf15Bend2b
+19687	TubeHalf25m1
+19688	TubeHalf45Bend3
+19689	TubeHalf45Bend4
+```
+
+### **Join normal and medium tubes**
+
+The tubes in this section join normal tubes (above) to medium tubes (below).
+
+```
+19690	TubeHalfNtoMJoin1a
+19691	TubeHalfNtoMJoin1b
+```
+
+### **Tubes Medium Size**
+
+The tubes in this section are medium size.
+
+```
+19692	MTubeSeg5m1
+19693	MTubeSeg5m2a
+19694	MTubeSeg5m2b
+19695	MTubeSeg12_5m1
+19696	MTubeHalf10m1
+19697	MTubeHalf5mJoin1a
+19698	MTubeHalf5mJoin1b
+19699	MTubeHalf25m1
+19700	MTubeFlt12_5x12_5m1
+19701	MTubeHalfSpiral1a
+19702	MTubeHalfSpiral1b
+19703	MTubeHalfSpiral2a
+19704	MTubeHalfSpiral2b
+19705	MTubeHalfSpiral3a
+19706	MTubeHalfSpiral3b
+19707	MTubeHalfSpiral4a
+19708	MTubeHalfSpiral4b
+19709	MTubeHalf180Bend1a
+19710	MTubeHalf180Bend1b
+19711	MTubeHalf90Bend1a
+19712	MTubeHalf90Bend1b
+19713	MTubeHalf25mDip1
+19714	MTubeHalf25mBump1
+19715	MTubeHalfBowl1
+19716	MTubeSupport1
+19717	MTubeSupport2
+19718	MTubeHalfLight1
+19719	MTubeHalf5Bend1a
+19720	MTubeHalf5Bend1b
+19721	MTubeHalf5Bend2a
+19722	MTubeHalf5Bend2b
+19723	MTubeHalf45Bend1a
+19724	MTubeHalf45Bend1b
+19725	MTubeHalf15Bend1a
+19726	MTubeHalf15Bend1b
+19727	MTubeHalf15Bend2a
+19728	MTubeHalf15Bend2b
+19729	MTubeHalf45Bend3
+19730	MTubeHalf45Bend4
+```
+
+### **Join medium and small tubes**
+
+The tubes in this section join medium tubes (above) to small tubes (below).
+
+```
+19731	TubeHalfMtoSJoin1a
+19732	TubeHalfMtoSJoin1B
+```
+
+### **Tubes Small Size**
+
+The tubes in this section are small size.
+
+```
+19733	STubeSeg5m1
+19734	STubeSeg5m2a
+19735	STubeSeg5m2b
+19736	STubeSeg6_25m1
+19737	STubeHalf10m1
+19738	STubeHalf5mJoin1a
+19739	STubeHalf5mJoin1b
+19740	STubeHalf12_5m1
+19741	STubeFlat6_25m1
+19742	STubeHalfSpiral1a
+19743	STubeHalfSpiral1b
+19744	STubeHalfSpiral2a
+19745	STubeHalfSpiral2b
+19746	STubeHalfSpiral3a
+19747	STubeHalfSpiral3b
+19748	STubeHalfSpiral4a
+19749	STubeHalfSpiral4b
+19750	STubeHalf180Bend1a
+19751	STubeHalf180Bend1b
+19752	STubeHalf90Bend1a
+19753	STubeHalf90Bend1b
+19754	STubeHalf12_5mDip1
+19755	STubeHalf12_5mBump1
+19756	STubeHalfBowl1
+19757	STubeSupport1
+19758	STubeSupport2
+19759	STubeHalfLight1
+19760	STubeHalf5Bend1a
+19761	STubeHalf5Bend1b
+19762	STubeHalf5Bend2a
+19763	STubeHalf5Bend2b
+19764	STubeHalf45Bend1a
+19765	STubeHalf45Bend1b
+19766	STubeHalf15Bend1a
+19767	STubeHalf15Bend1b
+19768	STubeHalf15Bend2a
+19769	STubeHalf15Bend2b
+19770	STubeHalf45Bend3
+19771	STubeHalf45Bend4
+```
+
+### **Crushed Car Cube**
+
+```
+19772	CrushedCarCube1
+```
+
+### **Police and FBI Stuff**
+
+```
+19773	GunHolster1
+19774	PoliceBadge2
+19775	PoliceBadge3
+19776	FBIIDCard1
+19777	FBILogo1
+19778	InsigniaDetective1
+19779	InsigniaDetective2
+19780	InsigniaDetective3
+19781	InsigniaSergeant1
+19782	InsigniaSergeant2
+19783	InsigniaPOfficer2
+19784	InsigniaPOfficer3
+19785	InsigniaSeniorLdOff
+```
+
+### **LCD TVs**
+
+Material index 1 is the LCD screen... it can be used to put any picture from a
+TXD file on the screen.
+
+```
+19786	LCDTVBig1
+19787	LCDTV1
 ```
 
 ---

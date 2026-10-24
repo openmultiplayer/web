@@ -1,6 +1,6 @@
 ---
-título: OnPlayerStreamIn
-descripción: Este callback se llama cuando un jugador es cargado (se hace visible) por el cliente de otros jugadores.
+title: OnPlayerStreamIn
+description: Este callback se llama cuando un jugador es cargado (se hace visible) por el cliente de otros jugadores.
 tags: ["player"]
 ---
 
@@ -34,3 +34,6 @@ public OnPlayerStreamIn(playerid, forplayerid)
 <NoteNPCCallbacksES />
 
 ## Funciones Relacionadas
+
+- [OnPlayerStreamOut](OnPlayerStreamOut): Llamado cuando un jugador es "descargado" para otro jugador.
+- [OnVehicleStreamIn](OnVehicleStreamIn): Llamado cuando un vehiculo es "cargado" para un jugador.

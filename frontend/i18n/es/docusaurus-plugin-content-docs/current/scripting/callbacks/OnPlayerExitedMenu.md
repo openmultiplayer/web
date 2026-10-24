@@ -1,6 +1,6 @@
 ---
-título: OnPlayerExitedMenu
-descripción: Se llama cuando un jugador sale de un menú.
+title: OnPlayerExitedMenu
+description: Se llama cuando un jugador sale de un menú.
 tags: ["player", "menu"]
 ---
 
@@ -21,10 +21,14 @@ Siempre se llama primero en filterscripts.
 ```c
 public OnPlayerExitedMenu(playerid)
 {
-    TogglePlayerControllable(playerid,1); // descongela al jugador cuando este sale de un menú
+    TogglePlayerControllable(playerid, 1); // descongela al jugador cuando este sale de un menú
     return 1;
 }
 ```
+
+## Callbacks Relacionados
+
+- [OnPlayerSelectedMenuRow](OnPlayerSelectedMenuRow): Llamado cuando un jugador selecciona un item de un menu.
 
 ## Funciones Relacionadas
 

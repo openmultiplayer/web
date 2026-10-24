@@ -350,7 +350,7 @@ for (new a = 9; a < 10; a++) // 初始化a=9，条件a<10，每次循环a递增
 典型应用场景——遍历玩家列表：
 
 ```c
-for(new i, maxPlayers = GetMaxPlayers(); i < maxPlayers; i++) // 初始化最大玩家数
+for (new i, maxPlayers = GetMaxPlayers(); i < maxPlayers; i++) // 初始化最大玩家数
 {
     if (IsPlayerConnected(i)) // 检查玩家是否在线
     {
@@ -711,3 +711,10 @@ MyFunction(num)
     return 0;
 }
 ```
+
+## 相关阅读
+
+- [关键字：语句](Statements)
+- [关键字：操作符](Operators)
+- [关键字：预处理器指令](Directives)
+- [关键字：初始化器](Initialisers)

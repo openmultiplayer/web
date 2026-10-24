@@ -26,7 +26,7 @@ new Text:gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
+    gMyTextdraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
     TextDrawLetterSize(gMyTextdraw, 3.2, 5.1);
     return 1;
 }
@@ -36,8 +36,7 @@ public OnGameModeInit()
 
 :::tip
 
-- وقتی از این تابع فقط برای تأثیر روی جعبه TextDraw استفاده می‌کنی، 'Y' رو در 0.135 ضرب کن تا به اندازه‌گیری‌های مشابه TextDrawTextSize تبدیل بشه.
-- نکته: استفاده از sprite **LD_SPAC:white** برای textdraw های فقط جعبه آسون‌تر و دقیق‌تره، TextDrawTextSize offset های معمولی خواهد داشت.
+- وقتی از این تابع فقط برای تأثیر روی جعبه TextDraw استفاده می‌کنی، 'Y' رو در 0.135 ضرب کن تا به اندازه‌گیری‌های مشابه TextDrawTextSize تبدیل بشه. نکته: استفاده از sprite **LD_SPAC:white** برای textdraw های فقط جعبه آسون‌تر و دقیق‌تره، TextDrawTextSize offset های معمولی خواهد داشت.
 - اگر می‌خوای اندازه حروف یک textdraw که قبلاً نشون داده شده رو تغییر بدی، نیازی نیست دوباره بسازیش. بعد از تغییر textdraw، فقط از [TextDrawShowForPlayer](TextDrawShowForPlayer)/[TextDrawShowForAll](TextDrawShowForAll) استفاده کن و تغییر قابل مشاهده خواهد بود.
 - فونت‌ها با نسبت X به Y برابر 1 به 4 بهترین ظاهر رو دارن (مثلاً اگر x برابر 0.5 باشه، y باید 2 باشه).
 

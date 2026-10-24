@@ -27,11 +27,11 @@ This function does not return any specific values.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerConnect( playerid )
+public OnPlayerConnect(playerid)
 {
     // Allows the Player to teleport by right-clicking on the map
     // since this is in OnPlayerConnect, this will be done for EACH player
-    AllowPlayerTeleport( playerid, 1 );
+    AllowPlayerTeleport(playerid, 1);
 }
 ```
 

@@ -252,7 +252,7 @@ new
 a = (b == 3) ? (5) : (7);
 ```
 
-A parte antes do '?' é a condição, é exatamente o mesmo que uma condição normal. A parte entre o '?' e o ':' é o valor que irá retornar se a condição for verdadeira, a outro parte é o valor que irá retornar se a condição for falsa.
+A parte antes do '?' é a condição, é exatamente o mesmo que uma condição normal. A parte entre o '?' e o ':' é o valor que irá retornar se a condição for verdadeira, a outro parte é o valor que irá retornar se a condição for falsa. Você pode empilhá-los com varias comparações também:
 
 ```c
 new
@@ -351,9 +351,9 @@ for (new a = 9; a < 10; a++)
 Este é um simples código para realizar um loop através de todos os players:
 
 ```c
-for(new i,a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
-        if(IsPlayerConnected(i))
+        if (IsPlayerConnected(i))
         {
                  //Faça algo
         }
@@ -708,3 +708,10 @@ MinhaFunção(num)
     return 0;
 }
 ```
+
+## Veja também
+
+- [Palavras-chave: Declarações](Statements)
+- [Palavras-chave: operadores](Operators)
+- [Palavras-chave: diretivas](Directives)
+- [Palavras-chave: inicializadores](Initialisers)

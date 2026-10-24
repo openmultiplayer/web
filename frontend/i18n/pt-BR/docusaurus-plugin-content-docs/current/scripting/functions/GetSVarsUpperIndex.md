@@ -10,18 +10,22 @@ tags: ["server variable", "svar"]
 
 Cada SVar (variável de servidor) possui seu próprio número de identificação exclusivo para pesquisa, esta função retorna o ID mais alto.
 
+## Retornos
+
+O conjunto mais alto SVar ID.
+
 ## Exemplos
 
 ```c
 // Armazene o índice superior na variável 'SVarUpperIndex' + 1
-new SVarUpperIndex = GetSVarsUpperIndex() + 1;
+new sVarUpperIndex = GetSVarsUpperIndex() + 1;
 
 // Esta variável sVarCount armazenará quantos sVars são definidos à medida que os contamos.
 new sVarCount;
 
 new sVarName[128];
 
-for(new i = 0; i != sVarUpperIndex; i++) // Percorra todos os IDs sVar no índice superior
+for (new i = 0; i != sVarUpperIndex; i++) // Percorra todos os IDs sVar no índice superior
 {
     // Primeiramente, precisamos obter o nome SVar
     GetSVarNameAtIndex(i, sVarName, sizeof(sVarName));
@@ -33,7 +37,7 @@ for(new i = 0; i != sVarUpperIndex; i++) // Percorra todos os IDs sVar no índic
     }
 }
 
-printf("There are %i server-variables set. Upper index (highest ID): %i.", sVarCount, SVarUpperIndex-1);
+printf("There are %i server-variables set. Upper index (highest ID): %i.", sVarCount, SVarUpperIndex - 1);
 ```
 ## Funções Relacionadas
 

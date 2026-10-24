@@ -58,10 +58,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 Penjelasan mengenai [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | menuid dari menu yang dimana item akan ditampilkan |
-| ------ | -------------------------------------------------- |
-| column | Kolom tempat item akan ditampilkan                 |
-| text   | Teks dari item                                     |
+| Parameter | Menentukan                                         |
+| --------- | -------------------------------------------------- |
+| menuid    | menuid dari menu yang dimana item akan ditampilkan |
+| column    | Kolom tempat item akan ditampilkan                 |
+| text      | Teks dari item                                     |
 
 ## Membuat efek pada item
 
@@ -90,9 +91,9 @@ public OnPlayerSelectedMenuRow(playerid, row)
 Sekarang diantara braket ini adalah tempat `switch` berada, ini memastikan item apa yang pemain pilih atau `row` bisa digunakan dengan statement `if` untuk memeriksa apa benar itu `row`, tapi `switch` adalah cara yang jauh lebih sederhana untuk menulisnya.
 
 ```c
-if(CurrentMenu == teleportmenu)
+if (CurrentMenu == teleportmenu)
 {
-    switch(row)
+    switch (row)
     {
         case 0: //Grove Street
         {
@@ -139,9 +140,9 @@ if(CurrentMenu == teleportmenu)
 Sekarang kita membutuhkan perintah untuk menampilkan menu. Ini adalah cara yang paling mudah. Dibandingkan dengan `strcmp` dan `ShowMenuForPlayer`. Ini bisa dilakukan dengan `OnPlayerCommandText`. Atau, jika kalian sudah memiliki command processor, gunakanlah itu sebagai ganti dari `ShowMenuForPlayer`.
 
 ```c
-if(strcmp(cmdtext, "/teleport", true) == 0)
+if (strcmp(cmdtext, "/teleport", true) == 0)
 {
-    ShowMenuForPlayer(teleportmenu,playerid);
+    ShowMenuForPlayer(teleportmenu, playerid);
     return 1;
 }
 ```

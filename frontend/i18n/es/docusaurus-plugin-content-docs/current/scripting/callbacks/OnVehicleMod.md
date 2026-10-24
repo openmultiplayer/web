@@ -1,6 +1,6 @@
 ---
-título: OnVehicleMod
-descripción: Este callback se llama cuando un vehículo es tuneado.
+title: OnVehicleMod
+description: Este callback se llama cuando un vehículo es tuneado.
 tags: ["vehicle"]
 ---
 
@@ -25,7 +25,7 @@ Siempre se llama primero en el gamemode.
 ```c
 public OnVehicleMod(playerid, vehicleid, componentid)
 {
-    printf("El vehículo %d fue modificado por ID %d con el id de componente %d",vehicleid, playerid,componentid);
+    printf("El vehículo %d fue modificado por ID %d con el id de componente %d", vehicleid, playerid, componentid);
     if (GetPlayerInterior(playerid) == 0)
     {
         BanEx(playerid, "Hack de tuning"); // script Anti-tuning hacks

@@ -37,9 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Bekende Bug(s):
-
-- Spelers botsen wanneer ze in dezelfde modshop komen.
+Bekende Bug(s): Spelers botsen wanneer ze in dezelfde modshop komen.
 
 :::
 

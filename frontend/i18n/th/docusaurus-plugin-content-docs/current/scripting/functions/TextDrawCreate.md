@@ -30,14 +30,14 @@ public OnGameModeInit()
 {
     // This line is used to create the textdraw.
     // Note: This creates a textdraw without any formatting.
-    welcomeText = TextDrawCreate(240.0,580.0,"Welcome to my SA-MP server");
+    welcomeText = TextDrawCreate(240.0, 580.0, "Welcome to my SA-MP server");
     return 1;
 }
 
 public OnPlayerConnect(playerid)
 {
     //This is used to show the player the textdraw when they connect.
-    TextDrawShowForPlayer(playerid,welcomeText);
+    TextDrawShowForPlayer(playerid, welcomeText);
 }
 ```
 
@@ -45,8 +45,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- The x,y coordinate is the top left coordinate for the text draw area based on a 640x480 "canvas" (irrespective of screen resolution).
-- If you plan on using TextDrawAlignment with alignment 3 (right), the x,y coordinate is the top right coordinate for the text draw.
+- The x,y coordinate is the top left coordinate for the text draw area based on a 640x480 "canvas" (irrespective of screen resolution). If you plan on using TextDrawAlignment with alignment 3 (right), the x,y coordinate is the top right coordinate for the text draw.
 - This function merely CREATES the textdraw, you must use TextDrawShowForPlayer or TextDrawShowForAll to show it.
 
 :::

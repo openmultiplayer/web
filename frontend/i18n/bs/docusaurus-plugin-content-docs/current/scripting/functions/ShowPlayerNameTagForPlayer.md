@@ -17,9 +17,9 @@ Ova funkcija ti omogućava da omogućite/onemogućite iscrtavanje nametag-ova, h
 
 ## Returns
 
-## Važna Bilješka
+1: Funkcija uspješno izvršena.
 
-ShowNameTags mora biti postavljen na 1 da bi bilo moguće prikazati name tagove sa ShowPlayerNameTagForPlayer, to znači da u slučaju da bude efikasno moraš da izvršiš funkciju: ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ispred vremena (OnPlayerStreamIn je dobro mjesto).
+0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
 ## Primjeri
 
@@ -27,7 +27,7 @@ ShowNameTags mora biti postavljen na 1 da bi bilo moguće prikazati name tagove 
 //igrač koji je napisao /nameoff neće biti u mogućnosti da vidi nametagove ostalih igrača.
 if (strcmp("/nameoff", cmdtext, true) == 0)
 {
-    for (new i = 0; i != MAX_PLAYERS; -- i)
+    for (new i = 0; i != MAX_PLAYERS; -- i)
     {
         ShowPlayerNameTagForPlayer(playerid, i, false);
     }

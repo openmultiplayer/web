@@ -8,7 +8,7 @@ tags: ["textdraw"]
 
 ## Descrição
 
-Cria um desenho de texto. Textdraws são, como o nome indica, texto (principalmente - pode haver caixas, sprites e visualizações de modelos (skins/veículos/armas/objetos também) que é desenhado nas telas de um jogador. Consulte esta página para obter informações abrangentes sobre textdraws.
+Cria um desenho de texto. Textdraws são, como o nome indica, texto (principalmente - pode haver caixas, sprites e visualizações de modelos (skins/veículos/armas/objetos também) que é desenhado nas telas de um jogador. Consulte [esta página](../resources/textdraws) para obter informações abrangentes sobre textdraws.
 
 | Nome | Descrição |
 | ---------------- | -------------------------------------------------------- |
@@ -49,8 +49,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- A coordenada `x, y` é a coordenada superior esquerda para a área de desenho de texto com base em uma "tela" de 640x480 (independentemente da resolução da tela).
-- Se você planeja usar [TextDrawAlignment](TextDrawAlignment) com alinhamento 3 (`TEXT_DRAW_ALIGN_RIGHT`), a coordenada `x, y` é a coordenada superior direita para o desenho do texto.
+- A coordenada `x, y` é a coordenada superior esquerda para a área de desenho de texto com base em uma "tela" de 640x480 (independentemente da resolução da tela). Se você planeja usar [TextDrawAlignment](TextDrawAlignment) com alinhamento 3 (`TEXT_DRAW_ALIGN_RIGHT`), a coordenada `x, y` é a coordenada superior direita para o desenho do texto.
 - Esta função apenas CREATES o textdraw, você deve usar [TextDrawShowForPlayer](TextDrawShowForPlayer) ou [TextDrawShowForAll](TextDrawShowForAll) para mostrá-lo.
 
 :::

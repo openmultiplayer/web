@@ -20,7 +20,7 @@ tags: ["network monitoring"]
 ## مثال‌ها
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/msgsent"))
     {

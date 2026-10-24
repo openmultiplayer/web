@@ -55,4 +55,5 @@ Sanal dünya ayarlandığında bunun çalışması için öncelikle sunucu ayarl
 
 ## Bağlantılı Fonksiyonlar
 
+- [AddSimpleModelTimed](AddSimpleModelTimed): İndirmek için yeni bir basit nesne modeli ekler.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Bir oyuncu özel modelleri indirmeyi bitirdiğinde çağrılır.

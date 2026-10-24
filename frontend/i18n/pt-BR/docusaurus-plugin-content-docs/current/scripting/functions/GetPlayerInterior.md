@@ -20,12 +20,12 @@ O ID do interior onde o jogador está atualmente.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,text[])
+public OnPlayerCommandText(playerid, text[])
 {
-    if (strcmp(cmdtext,"/int",true) == 0)
+    if (strcmp(cmdtext, "/int", true) == 0)
     {
         new string[128];
-        format(string, sizeof(string), "Você está no interior: %i",GetPlayerInterior(playerid));
+        format(string, sizeof(string), "Você está no interior: %i", GetPlayerInterior(playerid));
         SendClientMessage(playerid, 0xFF8000FF, string);
         return 1;
     }

@@ -59,3 +59,12 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 Ako želite spriječiti da određeni igrači povrjeđuju, koristite `SetPlayerTeam`.
 
 :::
+
+## Srodne Callbacks
+
+- [OnPlayerTakeDamage](OnPlayerTakeDamage): Ovaj callback je pozvan kada igrač prima ozljede.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Ovaj callback je pozvan kada igrač ispali hitac iz oružja.
+
+## Srodne Resources
+
+- [Dijelovi tijela](../resources/bodyparts)

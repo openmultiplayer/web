@@ -21,6 +21,23 @@ Sets a timer to call a function after the specified interval. This variant ('Ex'
 
 The ID of the timer that was started. Timer IDs start at 1 and are never reused.
 
+## Format Specifiers
+
+| Specifier | Meaning                                                                          |
+| --------- | -------------------------------------------------------------------------------- |
+| `i`       | Integer.                                                                         |
+| `d`       | Integer.                                                                         |
+| `a`       | Array. The next parameter must be an integer (`i` or `d`) with the array's size. |
+| `s`       | String.                                                                          |
+| `f`       | Float.                                                                           |
+| `b`       | Boolean (true/false).                                                            |
+
+:::note
+
+The array (`a`) and string (`s`) specifiers are unusable in SA-MP. Passing arrays and strings to timers is only supported in open.mp.
+
+:::
+
 ## Examples
 
 ```c
@@ -76,9 +93,8 @@ Timer intervals are not accurate (roughly 25% off) in SA-MP. There are fixes ava
 
 :::tip
 
-Timer ID variables should be reset to 0 when they can to minimise the chance of accidentally killing new timers by mistake. `-1` is commonly mistaken to be the invalid ID - it isn't.
-
-The function to be called must be public. That means it has to be forwarded.
+- Timer ID variables should be reset to 0 when they can to minimise the chance of accidentally killing new timers by mistake. `-1` is commonly mistaken to be the invalid ID - it isn't.
+- The function to be called must be public. That means it has to be forwarded.
 
 :::
 

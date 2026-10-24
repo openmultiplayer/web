@@ -34,8 +34,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-- Не позива се ако играч падне са бицикла или буде уклоњен из возила другим средствима као што је коришћење [SetPlayerPos](../functions/SetPlayerPos).
-- Треба користити [OnPlayerStateChange](OnPlayerStateChange) и проверити да ли је њихово старо стање `PLAYER_STATE_DRIVER` или `PLAYER_STATE_PASSENGER` и њихово ново стање `PLAYER_STATE_ONFOOT`.
+Не позива се ако играч падне са бицикла или буде уклоњен из возила другим средствима као што је коришћење [SetPlayerPos](../functions/SetPlayerPos). Треба користити [OnPlayerStateChange](OnPlayerStateChange) и проверити да ли је њихово старо стање `PLAYER_STATE_DRIVER` или `PLAYER_STATE_PASSENGER` и њихово ново стање `PLAYER_STATE_ONFOOT`.
 
 :::
 

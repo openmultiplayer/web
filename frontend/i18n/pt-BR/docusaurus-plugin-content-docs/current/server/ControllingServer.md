@@ -18,14 +18,26 @@ description: Comandos úteis para gerenciar um servidor.
 O mesmo que rodar um gamemode customizado, exceto:
 
 - Coloque o .amx em uma pasta chamada `filterscripts`
-- Adicione o seguinte no server.cfg `filterscripts <scriptname>`
+- Adicione o caminho do filterscript sem a extensão `.amx` em `pawn.side_scripts` no [config.json](config.json):
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
 
 ## Colocando senha no seu servidor
 
-- Se você desejar, poderá adicionar uma senha para que apenas seus amigos possam entrar, adicione isso ao seu server.cfg
+- Se você desejar, poderá adicionar uma senha para que apenas seus amigos possam entrar, adicione isso ao seu config.json
 
-```
-password qualquercoisa
+```json
+{
+    "password": "qualquercoisa"
+}
 ```
 
 - Isso irá fazer com que seu servidor contenha uma senha para acessar, que colocamos como 'qualquercoisa', mude-a como desejar.
@@ -38,24 +50,26 @@ password qualquercoisa
 
 Você pode logar quando estiver no jogo, basta escrever `/rcon login senha`, ou quando estiver fora do jogo usando a RCON no Console Remoto.
 
-A senha é a mesma que você colocou no server.cfg
+A senha do RCON é o valor de `rcon.password` que você definiu no [config.json](config.json).
 
 ### Colocando Banimentos
 
-##### samp.ban
+##### bans.json
 
-samp.ban é o arquivo usado para organizar banimentos, incluindo as seguintes informações sobre o mesmo:
+bans.json é o arquivo usado para organizar banimentos, incluindo as seguintes informações sobre o mesmo:
 
 - IP
 - Data
 - Tempo
-- Nome (Nome da pessoa ou motivo, veja [BanEx](../scripting/functions/BanEx))
-- Tipo de ban
+- Nome (Nome da pessoa)
+- Motivo (veja [BanEx](../scripting/functions/BanEx))
 
-Para adicionar um banido, basta colocar uma linha como esta:
+Para adicionar um banido, basta colocar um objeto no array JSON como este:
 
-```
-IP_AQUI [28/05/09 | 13:37:00] JOGADOR - INGAME BAN
+```json
+[
+    {"address": "IP_AQUI", "player": "JOGADOR", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 Onde `IP_AQUI` é onde você coloca o IP que gostaria de banir.
@@ -64,8 +78,10 @@ Onde `IP_AQUI` é onde você coloca o IP que gostaria de banir.
 
 A função de [Ban](../scripting/functions/Ban) pode ser usada para banir um jogador de um script. O [BanEx](../scripting/functions/BanEx) irá adicionar uma opção como esta:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Cheater - BANIMENTO NO JOGO
+```json
+[
+    {"address": "13.37.13.37", "player": "Cheater", "reason": "BANIMENTO NO JOGO", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ##### RCON Comando de Banimento
@@ -100,27 +116,29 @@ banip IP
 
 Uma vez que alguém é banido, há duas maneiras de desabnir o mesmo.
 
-- Remover do samp.ban
+- Remover do bans.json
 - O comando `unbanip` do RCON
 
-#### samp.ban
+#### bans.json
 
-samp.ban pode ser encontrado no diretório do seu servidor, ele contém linhas com as seguintes informações sobre cada banimento
+bans.json pode ser encontrado no diretório do seu servidor, ele contém objetos com as seguintes informações sobre cada banimento
 
 - IP
 - Data
 - Tempo
-- Nome (Nome do jogador ou motivo (veja [BanEx](../scripting/functions/BanEx)))
-- Tipo do banimento (INGAME, IP BAN etc,)
+- Nome (Nome do jogador)
+- Motivo (veja [BanEx](../scripting/functions/BanEx))
 
 Exemplos:
 
-```
-127.8.57.32 [13/06/09 | 69:69:69] NONE - IP BAN
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "127.8.57.32", "player": "NONE", "reason": "IP BAN", "time": "2009-06-13T13:37:00+0000"},
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
-Para desbanir alguém, simplesmente remova a linha, então execute o comando do RCON "reloadbans" para fazer com que o servidor faça a leitura novamente do arquivo.
+Para desbanir alguém, simplesmente remova o objeto, então execute o comando do RCON "reloadbans" para fazer com que o servidor faça a leitura novamente do arquivo.
 
 #### unbanip
 
@@ -128,8 +146,10 @@ O comando de "unbanip" do RCON pode ser usado no jogo ou no console do servidor.
 
 Exemplo:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ```
@@ -140,11 +160,11 @@ Exemplo:
 unbanip 13.37.13.37
 ```
 
-Para desbanir alguém, simplesmente use `unbanip`, então execute o comando do RCON "reloadbans" para fazer com que o servidor faça a leitura novamente do arquivo.
+Para desbanir alguém, simplesmente use `unbanip`.
 
 #### reloadbans
 
-`samp.ban` é um arquivo que contém informações dos IP's que já foram banidos do servidor. Este arquivo é lido quando o servidor é iniciado. então caso desbane um IP/Jogador você PRECISA digitar no RCON `reloadbans` para fazer com que o servidor leia novamente o arquivo, permitindo com que os jogadores desbanidos entrem no servidor.
+`bans.json` é um arquivo que contém informações dos IP's que já foram banidos do servidor. Este arquivo é lido quando o servidor é iniciado. então caso desbane um IP/Jogador editando o arquivo você PRECISA digitar no RCON `reloadbans` para fazer com que o servidor leia novamente o arquivo, permitindo com que os jogadores desbanidos entrem no servidor.
 
 ### Comandos do RCON
 
@@ -165,9 +185,9 @@ Estas são as funções que você como admin pode usar:
 | `/rcon kick [ID]`                 | Kick o jogador de determinado ID (_exemplo: /rcon kick 2_).                                         |
 | `/rcon ban [ID]`                  | Bane o jogador de determinado ID (_exemplo: /rcon ban 2_).                                          |
 | `/rcon changemode [mode]`         | Este comando irá alternar entre as gamemode's (_exemplo: /rcon changemode sftdm_).                  |
-| `/rcon gmx`                       | Irá carregar a próxima gamemode no server.cfg.                                                      |
-| `/rcon reloadbans`                | Carrega e reliza uma nova leitura do samp.ban                                                       |
-| `/rcon reloadlog`                 | Carrega novamente o server_log.txt.                                                                 |
+| `/rcon gmx`                       | Irá carregar a próxima gamemode no [config.json](config.json).                                      |
+| `/rcon reloadbans`                | Carrega e reliza uma nova leitura do bans.json.                                                     |
+| `/rcon reloadlog`                 | Carrega novamente o log.txt.                                                                        |
 | `/rcon say`                       | Mostra uma mensagem no console dos jogadores (\_exemplo: `/rcon say olá` irá mostrar `Admin: olá`). |
 | `/rcon players`                   | Mostra os jogadores que estão no servidor (Com nome, IP e ping).                                    |
 | `/rcon banip [IP]`                | Bane determinado IP (_exemplo: /rcon banip 127.0.0.1_).                                             |

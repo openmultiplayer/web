@@ -1,7 +1,7 @@
 ---
 title: Lista de Cores
 sidebar_label: Lista de Cores
-description: Cores estão em toda parte no SA-MP - veículos, nomes de jogadores e blips, textdraws, gametext, chat, textos 3D e dialogs (as color embedding)! Abaixo você pode encontrar informações sobre essas coisas.
+description: Cores estão em toda parte no SA-MP - veículos, nomes de jogadores e blips, textdraws, gametext, chat, textos 3D e dialogs (as color embedding)!
 ---
 
 ## Texto do chat e cor do jogador
@@ -182,3 +182,9 @@ Now these colors are pretty dark. You can make them brighter by using **`~h~`** 
 ```
 
 ![Image:Blueandred2.png](https://assets.open.mp/assets/images/colorList/Blueandred2.png)
+
+---
+
+## Vehicle Color IDs
+
+There is a full list of [vehicle color IDs](vehiclecolorid). You can find the colors used in single player for each car on the [Original Car Colors](original-car-colors) page.

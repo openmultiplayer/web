@@ -1,7 +1,7 @@
 ---
 title: atan2
 sidebar_label: atan2
-description: .
+description: Dobijte obrnutu vrijednost tangente luka od y / x, izraženu u radijanima.
 tags: []
 ---
 
@@ -36,8 +36,8 @@ public OnGameModeInit()
     new Float:x, Float:y, Float:result;
     x = -10.0;
     y = 10.0;
-    result = atan2 (y,x) * 180 / PI;
-    printf ("Tangenta luka za (x=%f, y=%f) je %f stepeni\n", x, y, result );
+    result = atan2(y, x) * 180 / PI;
+    printf("Tangenta luka za (x=%f, y=%f) je %f stepeni\n", x, y, result);
     return 0;
 }
 ```

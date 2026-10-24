@@ -23,7 +23,7 @@ Esta função retorna o número de bytes que o servidor enviou ao jogador.
 ## Exemplos
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/bytes_sent"))
     {

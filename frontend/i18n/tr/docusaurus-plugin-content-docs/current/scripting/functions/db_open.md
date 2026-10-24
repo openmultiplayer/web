@@ -67,6 +67,7 @@ public OnGameModeExit()
 
 :::warning
 
-Eğer /scriptsfolder içerisinde SQLite veritabanı dosyası yoksa bunu kendisi oluşturacaktır, sunucu kapanırken veritabanı bağlantısını [db_close](db_close)! fonksiyonu ile kesin.
+- Eğer /scriptsfolder içerisinde SQLite veritabanı dosyası yoksa bunu kendisi oluşturacaktır, sunucu kapanırken veritabanı bağlantısını [db_close](db_close)!
+- fonksiyonu ile kesin.
 
 :::

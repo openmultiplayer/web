@@ -1,6 +1,6 @@
 ---
-título: OnPlayerEditObject
-descripción: Este callback se llama cuando un jugador termina de editar un objeto (EditObject/EditPlayerObject).
+title: OnPlayerEditObject
+description: Este callback se llama cuando un jugador termina de editar un objeto (EditObject/EditPlayerObject).
 tags: ["player"]
 ---
 

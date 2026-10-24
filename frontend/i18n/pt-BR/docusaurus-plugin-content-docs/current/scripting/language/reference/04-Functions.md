@@ -465,7 +465,7 @@ intersection(dest[rectangle], const src1[rectangle], const src2[rectangle])
     if (src1[right] > src2[left] && src1[left] < src2[right]
     && src1[bottom] > src2[top] && src1[top] < src2[bottom])
     {
-        \* there is an intersection, calculate it using the "min" and
+        /* there is an intersection, calculate it using the "min" and
          *"max" functions from the "core" library, see page 124. */
 
         dest[left] = max(src1[left], src2[left])
@@ -631,7 +631,7 @@ Listing: onkey function
 
 public onkey(keycode)
 {
-    if (key==’~’)
+    if (key=='~')
         return 160 /* replace ~ by hard space (code 160 in Latin-1) */
     else
         return key /* leave other keys unaltered */
@@ -653,7 +653,7 @@ Listing: @onkey function
 ```c
 
 @onkey(keycode)
-    return key==’~’ ? 160 : key
+    return key=='~' ? 160 : key
 
 ```
 
@@ -821,21 +821,21 @@ stock ones: operator+(ones: a, ones: b)
     new ones: carry
     restart:                                        /* code label (goto target) */
 
-    \* add carry of the new low word to the high word, then
+    /* add carry of the new low word to the high word, then
     * strip it from the low word */
 
     carry = (r1 >>> shift)
     r2 += carry
     r1 &= mask
 
-    \* add the carry from the new high word back to the low
+    /* add the carry from the new high word back to the low
     * word, then strip it from the high word */
 
     carry = (r2 >>> shift)
     r1 += carry
     r2 &= mask
 
-    \* a carry from the high word injected back into the low
+    /* a carry from the high word injected back into the low
     * word may cause the new low to overflow, so restart in that case */
 
     if (carry)
@@ -1015,7 +1015,7 @@ The include file † for fixed point arithmetic contains definitions like:
 
 ```c
 
-native Fixed: operator\*(Fixed: val1, Fixed: val2) = fmul
+native Fixed: operator*(Fixed: val1, Fixed: val2) = fmul
 native Fixed: operator/(Fixed: val1, Fixed: val2) = fdiv
 
 ```

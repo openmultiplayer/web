@@ -30,7 +30,7 @@ tags: ["玩家"]
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID) // 若非自伤
+    if (issuerid != INVALID_PLAYER_ID) // 若非自伤
     {
         new
             infoString[128],
@@ -55,7 +55,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
+    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
         // 使用狙击步枪爆头一击必杀
         SetPlayerHealth(playerid, 0.0);

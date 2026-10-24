@@ -24,7 +24,7 @@ Puts a player in a vehicle.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerEnterVehicle(playerid,vehicleid,ispassanger)
+public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 {
     PutPlayerInVehicle(playerid, vehicleid, 0);
     return 1;
@@ -37,7 +37,6 @@ public OnPlayerEnterVehicle(playerid,vehicleid,ispassanger)
 2 - Back-left passenger
 3 - Back-right passenger
 4+ - Passenger seats (coach etc.)
-
 ```
 
 ## บันทึก

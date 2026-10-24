@@ -24,7 +24,7 @@ Retorna o tipo de PVar. Veja a tabela abaixo.
 ```c
 stock PrintPVar(playerid, varname[])
 {
-    switch(GetPVarType(playerid, varname))
+    switch (GetPVarType(playerid, varname))
     {
         case PLAYER_VARTYPE_NONE:
         {

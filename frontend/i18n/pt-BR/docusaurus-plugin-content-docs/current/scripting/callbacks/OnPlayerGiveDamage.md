@@ -5,8 +5,6 @@ description: Esta callback é chamada quando um jogador causa danos a algum joga
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.d' />
-
 ## Descrição
 
 Esta callback é chamada quando um jogador causa danos a algum jogador.
@@ -60,3 +58,14 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 Se deseja impedir que um determinado player cause dano a outro use SetPlayerTeam.
 
 :::
+
+## Callbacks Relacionadas
+
+Os seguintes callbacks podem ser úteis, pois estão relacionados a este callback de alguma forma.
+
+- [OnPlayerTakeDamage](OnPlayerTakeDamage): Esta callback é chama quando algum jogador recebe dano.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Essa callback é executada todas as vezes que o player realiza um disparo com uma arma.
+
+## Recursos relacionados
+
+- [Partes do Corpo](../resources/bodyparts)

@@ -55,7 +55,6 @@ Ugradnja boja može se koristiti za više boja u tekstu.
 
 ## Filterskripte koje podržavaju teksturisanje/text
 
-- Ultimate Creator od Nexius
-- Texture Studio od \[uL\]Pottus
-- Fusez's Map Editor od RedFusion
-- Map Editor I od adri1
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) od Pottus
+- [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) od Nexius
+- [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) od RedFusion

@@ -51,7 +51,7 @@ if (handle)
     file_len = flength(handle);
 
     // Se o arquivo for igual ou maior que o array
-    if (file_len == (some_enum*4))
+    if (file_len == (some_enum * 4))
     {
         // Sucesso
 

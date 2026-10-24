@@ -46,8 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-- A rotação X e Y (inclinação e rotação) de um veículo será redefinida quando esta função for usada.
-- As rotações X e Y não podem ser definidas.
+- A rotação X e Y (inclinação e rotação) de um veículo será redefinida quando esta função for usada. As rotações X e Y não podem ser definidas.
 - Esta função não funciona em veículos desocupados (acredita-se que seja uma limitação GTA).
 
 :::

@@ -9,7 +9,7 @@ tags: []
 
 ## Description
 
-Ajoute un nouveau modèle de personnage personnalisé à télécharger. Les fichiers modèles seront stockés dans le dossier Documents\GTA San Andreas User Files\SAMP\cache du lecteur sous le dossier IP et port du serveur dans un nom de fichier au format CRC.
+Ajoute un nouveau modèle de personnage personnalisé à télécharger. Les fichiers modèles seront stockés dans le dossier Documents\GTA San Andreas User Files\SAMP\cache du lecteur sous le dossier IP et port du serveur dans un nom de fichier au [format CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nom     | Description                                                                                                                                 |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -21,8 +21,9 @@ new gMyPickup;
 
 **پارامترها:**
 
-| model        | مدلی که می‌خواهید برای pickup استفاده کنید.                                                    |
+| نام          | توضیحات                                                                                        |
 | ------------ | ---------------------------------------------------------------------------------------------- |
+| model        | مدلی که می‌خواهید برای pickup استفاده کنید.                                                    |
 | type         | نوع spawn pickup، پایین‌تر در این صفحه ببینید.                                                 |
 | Float:X      | مختصات X برای نمایش pickup.                                                                    |
 | Float:Y      | مختصات Y برای نمایش pickup.                                                                    |
@@ -55,7 +56,7 @@ gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
     // بررسی کن که ID pickup که برداشته‌اند gMyPickup است
-    if(pickupid == gMyPickup)
+    if (pickupid == gMyPickup)
     {
         // پیام به بازیکن
         SendClientMessage(playerid, 0xFFFFFFFF, "You received $100!");

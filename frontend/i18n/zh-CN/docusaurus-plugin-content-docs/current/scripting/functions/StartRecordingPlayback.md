@@ -1,7 +1,7 @@
 ---
 title: StartRecordingPlayback
 sidebar_label: StartRecordingPlayback
-description: 加载并运行存储在npcmodes/recordings目录下的.rec文件。这些录制文件允许NPC执行特定动作，可通过手动录制生成。更多信息请参考相关函数。
+description: 加载并运行存储在npcmodes/recordings目录下的.rec文件。
 tags: []
 ---
 

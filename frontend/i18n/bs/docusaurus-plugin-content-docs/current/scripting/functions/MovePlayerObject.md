@@ -20,12 +20,6 @@ Premjestite player objekat na novi položaj zadanom brzinom. Također podržava 
 | Float:RotX  | FINALNA X rotacija (neobavezna).                       |
 | Float:RotY  | FINALNA Y rotacija (neobavezna).                       |
 | Float:RotZ  | FINALNA Z rotacija (neobavezna).                       |
-| playerid    | Igrač kojeg si povezao sa ovim objektom.               |
-| objectid    | ID objekta kojeg želiš pomjeriti.                      |
-| Float:X     | Nova X kordinata.                                      |
-| Float:Y     | Nova Y kordinata.                                      |
-| Float:Z     | Nova Z kordinata.                                      |
-| Float:Speed | Brzina kojom se objekt premješta.                      |
 
 ## Returns
 

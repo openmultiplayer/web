@@ -37,7 +37,6 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 2 - Lijevi-pozadi
 3 - Desni-pozadi
 4+ - Putnička sjedala (kauč i sl.)
-
 ```
 
 ## Zabilješke

@@ -6,7 +6,7 @@ sidebar_label: "Pickup IDs"
 
 :::note
 
-O modelo de objeto válido ANY pode ser usado para [CreatePickup](../functions/CreatePickup) e [CreatePlayerPickup](../functions/CreatePlayerPickup). Esta página apenas lista alguns modelos de objetos comuns que têm o tamanho certo para serem usados ​​como captador.
+O modelo de objeto válido ANY pode ser usado para [CreatePickup](../functions/CreatePickup) e [CreatePlayerPickup](../functions/CreatePlayerPickup). Esta página apenas lista alguns modelos de objetos comuns que têm o tamanho certo para serem usados como captador.
 
 :::
 

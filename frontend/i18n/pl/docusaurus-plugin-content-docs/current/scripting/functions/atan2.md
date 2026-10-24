@@ -1,7 +1,7 @@
 ---
 title: atan2
 sidebar_label: atan2
-description: .
+description: Podaje odwróconą wartość arcus tangensa z y/x w radianach.
 tags: []
 ---
 
@@ -36,7 +36,7 @@ public OnGameModeInit()
     new Float:x, Float:y, Float:result;
     x = -10.0;
     y = 10.0;
-    result = atan2(y,x);
+    result = atan2(y, x);
     printf("Arcus tangens dlar (x=%f, y=%f) wynosi %f stopni.", x, y, result);
     return 1;
 }

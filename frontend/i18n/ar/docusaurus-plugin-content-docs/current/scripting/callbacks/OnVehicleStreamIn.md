@@ -5,8 +5,6 @@ description: يتم استدعاء هذا الاستدعاء أو الكال ب�
 tags: []
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
-
 <div dir="rtl" style={{ textAlign: "right" }}>
 
 ## الوصف

@@ -15,7 +15,7 @@ Ta "callback" imenuje se, ko je "filterscript" začne.. Kliče se samo znotraj "
 public OnFilterScriptInit()
 {
     print("\n--------------------------------------");
-    print(" Moj "filterscript" se začne");
+    print(" Moj filterscript se začne");
     print("--------------------------------------\n");
     return 1;
 }

@@ -37,8 +37,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- Se [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline) for usado com tamanho > 0, a cor do contorno corresponderá à cor usada em PlayerTextDrawBackgroundColour.
-- Alterar o valor da cor parece alterar a cor usada em PlayerTextDrawColour.
+Se [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline) for usado com tamanho > 0, a cor do contorno corresponderá à cor usada em PlayerTextDrawBackgroundColour. Alterar o valor da cor parece alterar a cor usada em PlayerTextDrawColour.
 
 :::
 

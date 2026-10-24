@@ -35,7 +35,7 @@ if (t_handle)
     if (handle = fopen("file.txt", io_read))
     {
         // Obtenha todos os caracteres de "file.txt"
-        while((g_char = fgetchar(handle, 0, false)) != EOF)
+        while ((g_char = fgetchar(handle, 0, false)) != EOF)
         {
             // Escreva caracteres em letras minúsculas no fluxo de arquivos temporários
             fputchar(t_handle, tolower(g_char), false);
@@ -53,7 +53,7 @@ if (t_handle)
             // Sucesso
 
             // Obtenha todos os caracteres do fluxo de arquivos temporários
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while ((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // Escreva o caractere em "file1.txt"
                 fputchar(handle, g_char, false);
@@ -77,7 +77,7 @@ if (t_handle)
             // Sucesso
 
             // Obtenha todos os caracteres do fluxo de arquivos temporários
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while ((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // Escreva o caractere em "file2.txt"
                 fputchar(handle, g_char, false);

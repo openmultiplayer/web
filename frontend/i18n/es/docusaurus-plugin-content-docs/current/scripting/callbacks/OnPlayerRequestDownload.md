@@ -1,6 +1,6 @@
 ---
-título: OnPlayerRequestDownload
-descripción: Este callback se llama cuando un jugador solicita por descargas de modelos personalizados.
+title: OnPlayerRequestDownload
+description: Este callback se llama cuando un jugador solicita por descargas de modelos personalizados.
 tags: ["player"]
 ---
 
@@ -10,11 +10,11 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador solicita por descargas de modelos personalizados.
 
-| Nombre   | Descripción                                              |
-| -------- | -------------------------------------------------------- |
-| playerid | El ID del jugador que solicita descargar modelos custom. |
-| type     | El tipo de solicitud (ver abajo).                        |
-| crc      | La suma de comprobación CRC del archivo del modelo.      |
+| Nombre   | Descripción                                                                                                  |
+| -------- | ------------------------------------------------------------------------------------------------------------ |
+| playerid | El ID del jugador que solicita descargar modelos custom.                                                     |
+| type     | El tipo de solicitud (ver abajo).                                                                            |
+| crc      | La suma de comprobación [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) del archivo del modelo. |
 
 ## Devoluciones
 
@@ -33,22 +33,22 @@ new baseurl[] = "https://assets.open.mp";
 
 public OnPlayerRequestDownload(playerid, type, crc)
 {
-    new fullurl[256+1];
-    new dlfilename[64+1];
-    new foundfilename=0;
+    new fullurl[256 + 1];
+    new dlfilename[64 + 1];
+    new foundfilename = 0;
 
     if (!IsPlayerConnected(playerid)) return 0;
 
     if (type == DOWNLOAD_REQUEST_TEXTURE_FILE) {
-        foundfilename = FindTextureFileNameFromCRC(crc,dlfilename,64);
+        foundfilename = FindTextureFileNameFromCRC(crc, dlfilename, 64);
     }
     else if (type == DOWNLOAD_REQUEST_MODEL_FILE) {
-        foundfilename = FindModelFileNameFromCRC(crc,dlfilename,64);
+        foundfilename = FindModelFileNameFromCRC(crc, dlfilename, 64);
     }
 
     if (foundfilename) {
-        format(fullurl,256,"%s/%s",baseurl,dlfilename);
-        RedirectDownload(playerid,fullurl);
+        format(fullurl, 256, "%s/%s", baseurl, dlfilename);
+        RedirectDownload(playerid, fullurl);
     }
 
     return 0;

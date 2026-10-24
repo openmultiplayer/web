@@ -34,8 +34,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-- اگر بازیکن از موتورسیکلت بیفتد یا به وسایل دیگری مثل استفاده از [SetPlayerPos](../functions/SetPlayerPos) از وسیله نقلیه حذف شود، فراخوانده نمی‌شود.
-- باید از [OnPlayerStateChange](OnPlayerStateChange) استفاده کنید و بررسی کنید که آیا وضعیت قبلی آن‌ها `PLAYER_STATE_DRIVER` یا `PLAYER_STATE_PASSENGER` و وضعیت جدید آن‌ها `PLAYER_STATE_ONFOOT` است.
+اگر بازیکن از موتورسیکلت بیفتد یا به وسایل دیگری مثل استفاده از [SetPlayerPos](../functions/SetPlayerPos) از وسیله نقلیه حذف شود، فراخوانده نمی‌شود. باید از [OnPlayerStateChange](OnPlayerStateChange) استفاده کنید و بررسی کنید که آیا وضعیت قبلی آن‌ها `PLAYER_STATE_DRIVER` یا `PLAYER_STATE_PASSENGER` و وضعیت جدید آن‌ها `PLAYER_STATE_ONFOOT` است.
 
 :::
 

@@ -1,8 +1,7 @@
 ---
 title: Sistema de variáveis do servidor
 sidebar_label: Sistema de variáveis do servidor
-
-description: O sistema de variáveis do servidor (abreviado, SVar) é uma nova forma de criar variáveis de servidor de maneira eficiente e dinâmica globalmente, o que significa que podem ser usadas no gamemode e filterscripts do servidor ao mesmo tempo.
+description: O sistema de variáveis do servidor (abreviado, SVar) é uma nova forma de criar variáveis de servidor de maneira eficiente e dinâmica globalmente.
 ---
 
 O **sistema de variáveis do servidor** (abreviado, **SVar**) é uma nova forma de criar variáveis globais de servidor de maneira eficiente e dinâmica, o que significa que podem ser usadas no gamemode e filterscripts do servidor ao mesmo tempo.

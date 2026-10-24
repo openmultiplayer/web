@@ -20,7 +20,7 @@ the number of messages the player has received in the last second.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/msgpersec"))
     {

@@ -17,7 +17,7 @@ Obtém o atorid mais alto criado no servidor. Observe que em SA:MP esta função
 ```c
 SetAllActorsHealth(Float:health)
 {
-    for(new i = 0, j = GetActorPoolSize(); i <= j; i++)
+    for (new i = 0, j = GetActorPoolSize(); i <= j; i++)
     {
         if (IsValidActor(i))
         {

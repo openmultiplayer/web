@@ -1,6 +1,6 @@
 ---
-titlu: OnClientMessage
-descriere: Acest callback este apelat oricand NPC-ul vede un ClientMessage
+title: OnClientMessage
+description: Acest callback este apelat oricand NPC-ul vede un ClientMessage
 tags: []
 ---
 
@@ -22,7 +22,7 @@ Acest callback nu accepta returns.
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Bank Balance: $0") != -1)
+    if (strfind(text, "Bank Balance: $0") != -1)
     {
         SendClientMessage(playerid, -1, "I am poor :(");
     }

@@ -21,7 +21,7 @@ Dobiva najveći id vozila koji se trenutno koristi na serveru.
 RepairAllVehicles()
 {
     // vehicleids počinje sa 1
-    for(new i = 1, j = GetVehiclePoolSize(); i <= j; i++)
+    for (new i = 1, j = GetVehiclePoolSize(); i <= j; i++)
     {
         RepairVehicle(i);
     }

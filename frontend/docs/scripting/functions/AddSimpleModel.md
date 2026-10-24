@@ -39,9 +39,8 @@ public OnGameModeInit()
 
 :::note
 
-**useartwork** or **artwork.enable** must be enabled first in server settings in order for this to work.
-
-When `virtualworld` is set, the models will be downloaded once the player enters the specific world.
+- **useartwork** or **artwork.enable** must be enabled first in server settings in order for this to work.
+- When `virtualworld` is set, the models will be downloaded once the player enters the specific world.
 
 :::
 
@@ -53,6 +52,7 @@ There are currently no restrictions on when you can call this function, but be a
 
 ## Related Functions
 
+- [AddSimpleModelTimed](AddSimpleModelTimed): Adds a new custom simple object model for download, which is only visible during a set time of day.
 - [IsValidCustomModel](IsValidCustomModel): Checks if a custom model ID is valid.
 - [GetCustomModelPath](GetCustomModelPath): Get a custom model path.
 

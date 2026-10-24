@@ -1,7 +1,7 @@
 ---
 title: File Seek Whence
 sidebar_label: File Seek Whence
-description: File seek whence definitions. (fseek)
+description: File seek whence definitions (fseek).
 ---
 
 :::note

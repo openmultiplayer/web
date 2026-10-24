@@ -22,6 +22,14 @@ Esta callback é chamada quando um jogador disconecta do servidor.
 
 Sempre é chamada primeiro em filterscripts.
 
+## Motivos
+
+| ID  | Motivo                                               |
+| --- | ---------------------------------------------------- |
+| 0   | Tempo esgotado (perda de conexão) ou Crash.          |
+| 1   | Saiu normalmente (/quit (/q) ou pelo menu de pausa). |
+| 2   | Kickado ou banido (Conexão com o servidor fechada).  |
+
 ## Exemplos
 
 ```c
@@ -56,3 +64,7 @@ Algumas funções podem não funcionar corretamente quando usadas nesta callback
 :::
 
 ## Funções Relacionadas
+
+As seguintes Callbacks também podem ser úteis, pois estão relacionadas a esta Callback.
+
+- [OnPlayerConnect](OnPlayerConnect): Chamado quando um jogador conecta ao servidor.

@@ -30,7 +30,7 @@ public OnGameModeInit()
 {
     // Ova linija nam korisit kako bismo kreirali textdraw
     // Zabilješka: Ovo kreira textdraw bez ikakvog formatiranja.
-    gMyTextdraw = TextDrawCreate(240.0,580.0,"Dobrodosli na moj SA-MP server");
+    gMyTextdraw = TextDrawCreate(240.0, 580.0, "Dobrodosli na moj SA-MP server");
     return 1;
 }
 
@@ -45,8 +45,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- X, Y kordinata je gornja lijeva kordinata za područje textdrawa na osnovu 640x480 "platna" (bez obzira na razlučivost zaslona).
-- Ako planirate koristiti TextDrawAlignment s poravnanjem 3 (desno), kordinata x, Y je gornja desna kordinata za crtanje teksta.
+- X, Y kordinata je gornja lijeva kordinata za područje textdrawa na osnovu 640x480 "platna" (bez obzira na razlučivost zaslona). Ako planirate koristiti TextDrawAlignment s poravnanjem 3 (desno), kordinata x, Y je gornja desna kordinata za crtanje teksta.
 - Ova funkcija samo KREIRA izvlačenje teksta, za prikaz morate koristiti TextDrawShowForPlayer ili TextDrawShowForAll.
 
 :::

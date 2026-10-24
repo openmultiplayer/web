@@ -30,7 +30,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
         new ipAddress[16];
 
-        for (new i = 0; i�< MAX_PLAYERS; i++) // Loop through all players
+        for (new i = 0; i < MAX_PLAYERS; i++) // Loop through all players
         {
             if (!IsPlayerConnected(i))
             {
@@ -55,7 +55,8 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-This callback is only called when /rcon login is used in-game. This callback is only called when the player is not yet logged in. When the player is logged in, [OnRconCommand](OnRconCommand) is called instead.
+- This callback is only called when /rcon login is used in-game.
+- This callback is only called when the player is not yet logged in. When the player is logged in, [OnRconCommand](OnRconCommand) is called instead.
 
 :::
 

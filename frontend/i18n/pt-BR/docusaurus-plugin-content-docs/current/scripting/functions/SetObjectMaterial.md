@@ -28,7 +28,7 @@ Substitua a textura de um objeto pela textura de outro modelo do jogo.
 ## Exemplos
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/mycommand", true))
     {
@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
             myObject;
 
         GetPlayerPos(playerid, x, y, z);
-        myObject = CreateObject(19371, x, y, z+0.5, 0.0, 0.0, 0.0, 300.0);
+        myObject = CreateObject(19371, x, y, z + 0.5, 0.0, 0.0, 0.0, 300.0);
         SetObjectMaterial(myObject, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
         // Substitui a textura do nosso objeto pela textura do objeto 19341
         return 1;
@@ -66,6 +66,6 @@ Você MUST usa o formato de cores ARGB, não RGBA como usado em mensagens de cli
 
 ## Editores de mapas avançados
 
-- [Estúdio de Textura](https://github.com/Pottus/Texture-Studio) por Pottus
-- [Criador Supremo](https://github.com/NexiusTailer/Ultimate-Creator) por Nexius
-- [Editor de mapas de Fusez](https://github.com/fusez/Map-Editor-V3) por RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) por Pottus
+- [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) por Nexius
+- [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) por RedFusion

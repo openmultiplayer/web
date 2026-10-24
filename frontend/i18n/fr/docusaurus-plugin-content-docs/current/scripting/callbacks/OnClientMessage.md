@@ -23,7 +23,7 @@ Aucun return.
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Solde bancaire : $0") != -1)
+    if (strfind(text, "Solde bancaire : $0") != -1)
     {
         SendClientMessage(playerid, -1, "Je suis pauvre :(");
     }

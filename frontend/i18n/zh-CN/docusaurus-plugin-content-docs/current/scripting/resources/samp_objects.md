@@ -46,7 +46,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **扩展道路标识**
 
-下方限速标识包含透明材质覆盖层（索引 3），可配合 SetObjectMaterialText()或 SetPlayerObjectMaterialText()函数使用。
+下方限速标识包含透明材质覆盖层（索引 3），可配合 SetObjectMaterialText或 SetPlayerObjectMaterialText函数使用。
 
 ```
 11699	SAMPRoadSign46
@@ -250,7 +250,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **旧式笔记本电脑**
 
-提供开启与闭合两种状态。可通过 SetObjectMaterial()函数修改索引 1 的屏幕材质，TXD 文件包含三种屏幕样式（参见下图）：
+提供开启与闭合两种状态。可通过 SetObjectMaterial函数修改索引 1 的屏幕材质，TXD 文件包含三种屏幕样式（参见下图）：
 
 - LaptopScreen1 = GTASA 地图界面（默认）
 - LaptopScreen2 = 文本界面
@@ -429,7 +429,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19979	SAMPRoadSign32
 ```
 
-以下两个标识包含透明材质覆盖层（索引 3），可配合 SetObjectMaterialText()或 SetPlayerObjectMaterialText()函数使用：
+以下两个标识包含透明材质覆盖层（索引 3），可配合 SetObjectMaterialText或 SetPlayerObjectMaterialText函数使用：
 
 ```
 19980	SAMPRoadSign33
@@ -544,7 +544,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **卡里古拉赌场金库门（改良版）**
 
-优化枢轴点以适配 MoveObject()函数，并修复夜间顶点着色问题。原物体 ID 为 2634。
+优化枢轴点以适配 MoveObject函数，并修复夜间顶点着色问题。原物体 ID 为 2634。
 
 ```
 19799	CaligulasVaultDoor
@@ -566,7 +566,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **静态门体**
 
-与 ID 1502 物体相同但改为静态属性，可通过 MoveObject()函数实现开关动画。
+与 ID 1502 物体相同但改为静态属性，可通过 MoveObject函数实现开关动画。
 
 ```
 19802	GenDoorINT04Static
@@ -588,7 +588,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **提取物品系列**
 
-下方白板物体包含透明材质覆盖层（索引 1），可配合 SetObjectMaterialText()或 SetPlayerObjectMaterialText()函数使用：
+下方白板物体包含透明材质覆盖层（索引 1），可配合 SetObjectMaterialText或 SetPlayerObjectMaterialText函数使用：
 
 ```
 19805	Whiteboard1
@@ -624,7 +624,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19835	CoffeeCup1
 ```
 
-### ​**使用 Particle.TXD 材质的物体**
+### **使用 Particle.TXD 材质的物体**
 
 以下物体使用 GTASA 的 Particle.TXD 纹理文件。草丛物体可用于模拟除草作业场景。
 
@@ -635,7 +635,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19839	GrassClump3
 ```
 
-### ​**动态瀑布**
+### **动态瀑布**
 
 通过 UV 动画技术实现水流效果，适用于瀑布/河流场景搭建。
 
@@ -645,7 +645,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19842	WaterFallWater1
 ```
 
-### ​**金属面板系列**
+### **金属面板系列**
 
 ```
 19843	MetalPanel1
@@ -654,13 +654,13 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19846	MetalPanel4
 ```
 
-### ​**火腿腿**
+### **火腿腿**
 
 ```
 19847	LegHam1
 ```
 
-### ​**货运波比平台**
+### **货运波比平台**
 
 该平台可通过 AttachObjectToVehicle 函数附加至货运波比直升机侧部，用于载人运输。
 
@@ -668,7 +668,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19848	CargoBobPlatform1
 ```
 
-### ​**模块化岛屿房屋 1**
+### **模块化岛屿房屋 1**
 
 这些物体需配合前述模块化岛屿物体（ID:19529-19552）使用。示例脚本"modular_houses"位于 Windows 版 0.3.7 服务端包的"filterscripts"目录。
 
@@ -693,7 +693,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19866	MIFenceBlocks1
 ```
 
-### ​**不可破坏邮箱**
+### **不可破坏邮箱**
 
 与 ID 1478 物体相同，但移除动态属性（不可破坏）并修复夜间顶点着色(NVC)。
 
@@ -701,7 +701,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19867	MailBox1
 ```
 
-### ​**不可破坏网状围栏及闸门**
+### **不可破坏网状围栏及闸门**
 
 以下围栏与 ID 1411-1412 物体相同，但改为不可破坏属性：
 
@@ -718,7 +718,279 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3.7 RC1 版本新增物体（265 个物体）​**
+## **0.3.7 RC1 版本新增物体（265 个物体）**
+
+```
+19522	property_red
+19523	property_orange
+19524	property_yellow
+19525	WeddingCake1
+19526	ATMFixed
+19527	Cauldron1
+19528	WitchesHat1
+19529	Plane125x125Grass1
+19530	Plane125x125Sand1
+19531	Plane125x125Conc1
+19532	15x125Road1
+19533	15x62_5Road1
+19534	15x15RoadInters1
+19535	15x15RoadInters2
+19536	Plane62_5x125Grass1
+19537	Plane62_5x125Sand1
+19538	Plane62_5x125Conc1
+19539	Edge62_5x62_5Grass1
+19540	Edge62_5x62_5Grass2
+19541	Edge62_5x15Grass1
+19542	Edge62_5x125Grass1
+19543	Plane62_5x15Grass1
+19544	Plane62_5x15Sand1
+19545	Plane62_5x15Conc1
+19546	Edge62_5x62_5Grass3
+19547	Hill125x125Grass1
+19548	Hill125x125Sand1
+19549	Edge62_5x32_5Grass1
+19550	Plane125x125Grass2
+19551	Plane125x125Sand2
+19552	Plane125x125Conc2
+19553	StrawHat1
+19554	Beanie1
+19555	BoxingGloveL
+19556	BoxingGloveR
+19557	SexyMask1
+19558	PizzaHat1
+19559	HikerBackpack1
+19560	MeatTray1
+19561	CerealBox1
+19562	CerealBox2
+19563	JuiceBox1
+19564	JuiceBox2
+19565	IceCreamBarsBox1
+19566	FishFingersBox1
+19567	IcecreamContainer1
+19568	IcecreamContainer2
+19569	MilkCarton1
+19570	MilkBottle1
+19571	PizzaBox1
+19572	PisshBox1
+19573	BriquettesBag1
+19574	Orange1
+19575	Apple1
+19576	Apple2
+19577	Tomato1
+19578	Banana1
+19579	BreadLoaf1
+19580	Pizza1
+19581	MarcosFryingPan1
+19582	MarcosSteak1
+19583	MarcosKnife1
+19584	MarcosSaucepan1
+19585	MarcosPan1
+19586	MarcosSpatula1
+19587	PlasticTray1
+19588	FootBridge1
+19589	RubbishSkipEmpty1
+19590	WooziesSword1
+19591	WooziesHandFan1
+19592	ShopBasket1
+19593	ZomboTechBuilding1
+19594	ZomboTechLab1
+19595	LSAppartments1
+19597	LSBeachSideInsides
+19598	SFBuilding1Outside
+19599	SFBuilding1Inside
+19600	SFBuilding1Land
+19601	SnowPlow1
+19602	Landmine1
+19603	WaterPlane1
+19604	WaterPlane2
+19605	EnExMarker4-2
+19606	EnExMarker4-3
+19607	EnExMarker4-4
+19608	WoodenStage1
+19609	DrumKit1
+19610	Microphone1
+19611	MicrophoneStand1
+19612	GuitarAmp1
+19613	GuitarAmp2
+19614	GuitarAmp3
+19615	GuitarAmp4
+19616	GuitarAmp5
+19617	GoldRecord1
+19618	Safe1
+19619	SafeDoor1
+19620	LightBar1
+19621	OilCan1
+19622	Broom1
+19623	Camera1
+19624	Case1
+19625	Ciggy1
+19626	Spade1
+19627	Wrench1
+19628	MRoadBend90Banked1
+19629	MRoadBend90Banked2
+19630	Fish1
+19631	SledgeHammer1
+19632	FireWood1
+19633	Ramp360Degree1
+19634	Ramp360Degree2
+19635	Ramp360Degree3
+19636	RedApplesCrate1
+19637	GreenApplesCrate1
+19638	OrangesCrate1
+19639	EmptyCrate1
+19640	EmptyShopShelf1
+19641	FenceSection1
+19642	TubeSeg10m1
+19643	TubeSeg10m2a
+19644	TubeSeg10m2b
+19645	TubeSeg25m1
+19646	TubeHalf10m1
+19647	TubeHalf10mJoin1a
+19648	TubeHalf10mJoin1b
+19649	TubeHalf50m1
+19650	TubeFlat25x25m1
+19651	TubeHalfSpiral1a
+19652	TubeHalfSpiral1b
+19653	TubeHalfSpiral2a
+19654	TubeHalfSpiral2b
+19655	TubeHalfSpiral3a
+19656	TubeHalfSpiral3b
+19657	TubeHalfSpiral4a
+19658	TubeHalfSpiral4b
+19659	TubeHalf180Bend1a
+19660	TubeHalf180Bend1b
+19661	TubeHalf90Bend1a
+19662	TubeHalf90Bend1b
+19663	TubeHalf50mDip1
+19664	TubeHalf50mBump1
+19665	TubeHalfLoop1a
+19666	TubeHalfLoop1b
+19667	TubeHalfLoop2a
+19668	TubeHalfLoop2b
+19669	TubeHalfBowl1
+19670	TubeSupport1
+19671	TubeSupport2
+19672	TubeHalfLight1
+19673	TubeHalf5Bend1a
+19674	TubeHalf5Bend1b
+19675	TubeHalf5Bend2a
+19676	TubeHalf5Bend2b
+19677	TubeHalfTwist1a
+19678	TubeHalfTwist1b
+19679	TubeHalfTwist2a
+19680	TubeHalfTwist2b
+19681	TubeHalf45Bend1a
+19682	TubeHalf45Bend1b
+19683	TubeHalf15Bend1a
+19684	TubeHalf15Bend1b
+19685	TubeHalf15Bend2a
+19686	TubeHalf15Bend2b
+19687	TubeHalf25m1
+19688	TubeHalf45Bend3
+19689	TubeHalf45Bend4
+19690	TubeHalfNtoMJoin1a
+19691	TubeHalfNtoMJoin1b
+19692	MTubeSeg5m1
+19693	MTubeSeg5m2a
+19694	MTubeSeg5m2b
+19695	MTubeSeg12_5m1
+19696	MTubeHalf10m1
+19697	MTubeHalf5mJoin1a
+19698	MTubeHalf5mJoin1b
+19699	MTubeHalf25m1
+19700	MTubeFlt12_5x12_5m1
+19701	MTubeHalfSpiral1a
+19702	MTubeHalfSpiral1b
+19703	MTubeHalfSpiral2a
+19704	MTubeHalfSpiral2b
+19705	MTubeHalfSpiral3a
+19706	MTubeHalfSpiral3b
+19707	MTubeHalfSpiral4a
+19708	MTubeHalfSpiral4b
+19709	MTubeHalf180Bend1a
+19710	MTubeHalf180Bend1b
+19711	MTubeHalf90Bend1a
+19712	MTubeHalf90Bend1b
+19713	MTubeHalf25mDip1
+19714	MTubeHalf25mBump1
+19715	MTubeHalfBowl1
+19716	MTubeSupport1
+19717	MTubeSupport2
+19718	MTubeHalfLight1
+19719	MTubeHalf5Bend1a
+19720	MTubeHalf5Bend1b
+19721	MTubeHalf5Bend2a
+19722	MTubeHalf5Bend2b
+19723	MTubeHalf45Bend1a
+19724	MTubeHalf45Bend1b
+19725	MTubeHalf15Bend1a
+19726	MTubeHalf15Bend1b
+19727	MTubeHalf15Bend2a
+19728	MTubeHalf15Bend2b
+19729	MTubeHalf45Bend3
+19730	MTubeHalf45Bend4
+19731	TubeHalfMtoSJoin1a
+19732	TubeHalfMtoSJoin1B
+19733	STubeSeg5m1
+19734	STubeSeg5m2a
+19735	STubeSeg5m2b
+19736	STubeSeg6_25m1
+19737	STubeHalf10m1
+19738	STubeHalf5mJoin1a
+19739	STubeHalf5mJoin1b
+19740	STubeHalf12_5m1
+19741	STubeFlat6_25m1
+19742	STubeHalfSpiral1a
+19743	STubeHalfSpiral1b
+19744	STubeHalfSpiral2a
+19745	STubeHalfSpiral2b
+19746	STubeHalfSpiral3a
+19747	STubeHalfSpiral3b
+19748	STubeHalfSpiral4a
+19749	STubeHalfSpiral4b
+19750	STubeHalf180Bend1a
+19751	STubeHalf180Bend1b
+19752	STubeHalf90Bend1a
+19753	STubeHalf90Bend1b
+19754	STubeHalf12_5mDip1
+19755	STubeHalf12_5mBump1
+19756	STubeHalfBowl1
+19757	STubeSupport1
+19758	STubeSupport2
+19759	STubeHalfLight1
+19760	STubeHalf5Bend1a
+19761	STubeHalf5Bend1b
+19762	STubeHalf5Bend2a
+19763	STubeHalf5Bend2b
+19764	STubeHalf45Bend1a
+19765	STubeHalf45Bend1b
+19766	STubeHalf15Bend1a
+19767	STubeHalf15Bend1b
+19768	STubeHalf15Bend2a
+19769	STubeHalf15Bend2b
+19770	STubeHalf45Bend3
+19771	STubeHalf45Bend4
+19772	CrushedCarCube1
+19773	GunHolster1
+19774	PoliceBadge2
+19775	PoliceBadge3
+19776	FBIIDCard1
+19777	FBILogo1
+19778	InsigniaDetective1
+19779	InsigniaDetective2
+19780	InsigniaDetective3
+19781	InsigniaSergeant1
+19782	InsigniaSergeant2
+19783	InsigniaPOfficer2
+19784	InsigniaPOfficer3
+19785	InsigniaSeniorLdOff
+19786	LCDTVBig1
+19787	LCDTV1
+```
+
+---
+
+## **0.3.7 版本新增物体（3 个物体）**
 
 ```
 19305	sec_keypad2
@@ -728,17 +1000,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3.7 版本新增物体（3 个物体）​**
-
-```
-19305	sec_keypad2
-19306	kmb_goflag2
-19307	kmb_goflag3
-```
-
----
-
-## ​**0.3x RC2-4 版本新增物体（6 个物体）​**
+## **0.3x RC2-4 版本新增物体（6 个物体）**
 
 ```
 19516	Hair2_nc
@@ -751,7 +1013,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3e RC7 版本新增物体（31 个物体）​**
+## **0.3e RC7 版本新增物体（31 个物体）**
 
 ```
 19475	Plane001
@@ -799,7 +1061,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3e RC6 版本新增物体（5 个物体）​**
+## **0.3e RC6 版本新增物体（5 个物体）**
 
 ```
 19470	forsale01
@@ -811,7 +1073,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3e RC4 版本新增物体（44 个物体）​**
+## **0.3e RC4 版本新增物体（44 个物体）**
 
 ```
 19426	wall066
@@ -862,7 +1124,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3e RC3 版本新增物体（54 个物体）​**
+## **0.3e RC3 版本新增物体（54 个物体）**
 
 ```
 19372	wall020
@@ -923,7 +1185,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3e RC1 版本新增物体（25 个物体）​**
+## **0.3e RC1 版本新增物体（25 个物体）**
 
 ```
 19347	badge01
@@ -955,7 +1217,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3d 版本新增物体（8 个物体）​**
+## **0.3d 版本新增物体（8 个物体）**
 
 ```
 19339	coffin01
@@ -970,7 +1232,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3d RC7 版本新增物体（16 个物体）​**
+## **0.3d RC7 版本新增物体（16 个物体）**
 
 ```
 19322	mallb_laW02
@@ -993,7 +1255,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3d RC3-3 版本新增物体（14 个物体）​**
+## **0.3d RC3-3 版本新增物体（14 个物体）**
 
 ```
 19308	taxi01
@@ -1014,7 +1276,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3d RC3-3 版本新增物体（4 个物体）​**
+## **0.3d RC3-3 版本新增物体（4 个物体）**
 
 ```
 19301	mp_sfpd_nocell
@@ -1023,7 +1285,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19304	pd_jail_door_top01
 ```
 
-## ​**GTALC 移植桥梁**
+## **GTALC 移植桥梁**
 
 以下物体（19300 至 19307）已在 SA:MP 0.3d 版本中移除
 
@@ -1040,7 +1302,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3c RC5 版本新增物体（143 个物体）​**
+## **0.3c RC5 版本新增物体（143 个物体）**
 
 ```
 19164	GTASAMap1
@@ -1182,7 +1444,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ---
 
-## ​**0.3c RC4 版本新增物体（109 个物体）​**
+## **0.3c RC4 版本新增物体（109 个物体）**
 
 ```
 19054	XmasBox1

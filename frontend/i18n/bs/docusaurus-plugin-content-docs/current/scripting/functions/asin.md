@@ -1,7 +1,7 @@
 ---
 title: asin
 sidebar_label: asin
-description: .
+description: Dobijte obrnutu vrijednost sinusnog luka u radijanima.
 tags: []
 ---
 
@@ -26,8 +26,8 @@ public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 0.5;
-    result = asin (param) * 180.0 / PI;
-    printf ("Sinusni luk od %f je %f stepeni\n", param, result);
+    result = asin(param) * 180.0 / PI;
+    printf("Sinusni luk od %f je %f stepeni\n", param, result);
     return 0;
 }
 ```

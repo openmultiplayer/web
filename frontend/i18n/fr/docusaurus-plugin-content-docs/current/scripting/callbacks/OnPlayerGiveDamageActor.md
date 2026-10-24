@@ -5,6 +5,8 @@ description: Cette callback est appelée quand un joueur inflige des dégâts à
 tags: ["player"]
 ---
 
+<VersionWarn name='callback' version='SA-MP 0.3.7' />
+
 ## Paramètres
 
 Cette callback est appelée quand un joueur inflige des dégâts à un actor.
@@ -30,7 +32,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
 {
     new
       string[128],
-      attacker[MAX_PLAYER_NAME];
+      attacker[MAX_PLAYER_NAME],
       weaponname[24];
 
     GetPlayerName(playerid, attacker, sizeof (attacker));

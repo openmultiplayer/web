@@ -13,7 +13,7 @@ This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions
 
 ## คำอธิบาย
 
-Adds a new custom character model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
+Adds a new custom character model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a [CRC-form](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) file name.
 
 | Name    | Description                                                                                                    |
 | ------- | -------------------------------------------------------------------------------------------------------------- |

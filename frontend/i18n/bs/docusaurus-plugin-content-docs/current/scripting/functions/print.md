@@ -1,13 +1,13 @@
 ---
 title: print
 sidebar_label: print
-description: Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (server_log.txt).
+description: Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (log.txt).
 tags: []
 ---
 
 ## Deskripcija
 
-Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (server_log.txt).
+Ispisuje formatirani niz na konzoli (ne chat u igri) i logovima (log.txt).
 
 | Ime                   | Deskripcija                         |
 | --------------------- | ----------------------------------- |
@@ -31,7 +31,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     print("Gamemode se pokrenuo.");
     return 1;

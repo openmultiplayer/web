@@ -15,7 +15,7 @@ Kopirajte bajtove s jedne lokacije na drugu.
 | const source[]        | Izvorni niz.                                                                |
 | index                 | Početni indeks u bajtovima u odredišnom nizu u koji treba kopirati podatke. |
 | numbytes              | Broj bajtova (ne ćelija) za kopiranje.                                      |
-| maxlength=sizeof dest | Maksimalan broj ćelija koje se uklapaju u odredišni međuspremnik.           |
+| maxlength = sizeof dest | Maksimalan broj ćelija koje se uklapaju u odredišni međuspremnik.           |
 
 ## Returns
 

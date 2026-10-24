@@ -13,7 +13,7 @@ This callback is called when a player previews a vehicle paintjob inside a mod s
 | ---------- | ---------------------------------------------------------------- |
 | playerid   | The ID of the player that changed the paintjob of their vehicle. |
 | vehicleid  | The ID of the vehicle that had its paintjob changed.             |
-| paintjobid | The ID of the new paintjob.                                      |
+| paintjobid | The ID of the new [paintjob](../resources/paintjobs).            |
 
 ## Returns
 

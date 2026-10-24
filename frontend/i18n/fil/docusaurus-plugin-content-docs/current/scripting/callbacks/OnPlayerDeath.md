@@ -34,7 +34,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     SendDeathMessage(killerid, playerid, reason); // - Ipinapakita ang impormasyon ng pagpatay sa kill feed.
 
     // - Tignan muna kung valid ang player ID ng pumatay.
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         PlayerKills[killerid] ++; // Dagdagan ang PlayerKills ng pumatay.
     }
@@ -61,6 +61,12 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 Kailangan mong tignan kung ang 'killerid' ay valid (not IVALID_PLAYER_ID) bago gamitin ito sa isang array (o kahit saan), dahil ito ay nagdudulot ng crash sa script ng OnPlayerDeath (hindi ang buong script). Ito ay dahil ang INVALID_PLAYER_ID ay defined as 65535, kapag ang array ay mayroon lamang 'MAX_PLAYERS' elements, e.g. 500, ikaw ay nagtatangkang i-access ang index na mahigit pa sa 499, na out of bounds.
 
 :::
+
+## Related Callbacks
+
+Maaaring maging kapaki-pakinabang ang mga sumusunod na callback, dahil nauugnay ang mga ito sa callback na ito sa isang paraan o iba pa.
+
+- [OnPlayerSpawn](OnPlayerSpawn): Tinatawag ang callback na ito kapag nag-spawn ang isang player.
 
 ## Related Functions
 

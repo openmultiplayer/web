@@ -1,7 +1,7 @@
 ---
 title: GetMaxPlayers
 sidebar_label: GetMaxPlayers
-description: حداکثر تعداد بازیکنانی که می‌تونن به سرور بپیوندن رو برمی‌گردونه، که توسط متغیر سرور 'maxplayers' تنظیم شده.
+description: حداکثر تعداد بازیکنانی که می‌تونن به سرور بپیوندن رو برمی‌گردونه، که توسط متغیر سرور 'max_players' تنظیم شده.
 tags: ["player"]
 ---
 
@@ -27,8 +27,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);
 
 :::warning
 
-- این تابع نمی‌تونه به جای MAX_PLAYERS استفاده بشه. نمی‌تونه در زمان compile استفاده بشه (مثل برای اندازه آرایه‌ها).
-- `MAX_PLAYERS` همیشه باید دوباره تعریف بشه روی همون مقداری که 'max_players' میشه، یا بالاتر.
+این تابع نمی‌تونه به جای MAX_PLAYERS استفاده بشه. نمی‌تونه در زمان compile استفاده بشه (مثل برای اندازه آرایه‌ها). `MAX_PLAYERS` همیشه باید دوباره تعریف بشه روی همون مقداری که 'max_players' میشه، یا بالاتر.
 
 :::
 

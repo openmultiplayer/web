@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: This callback is called when a player responds to a dialog shown using ShowPlayerDialog. The response can be by clicking a button, pressing ENTER/ESC, or double-clicking a list item (in the case of a list-style dialog).
+description: This callback is called when a player responds to a dialog shown using ShowPlayerDialog.
 tags: ["dialog"]
 ---
 
@@ -185,9 +185,7 @@ Using a switch-case statement instead of if blocks is an appropriate method for 
 
 :::warning
 
-A player's dialog doesn't automatically close when the gamemode restarts.
-
-If a player responds to a dialog after the server was restarted, the server will print the warning: "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID".
+A player's dialog doesn't automatically close when the gamemode restarts. If a player responds to a dialog after the server was restarted, the server will print the warning: "Warning: PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID".
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title: acos
 sidebar_label: acos
-description: .
+description: Podaje odwróconą wartość arcus cosinusa w radianach.
 tags: []
 ---
 

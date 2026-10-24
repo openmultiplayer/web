@@ -33,7 +33,7 @@ INVALID_VEHICLE_ID (65535) caso o veículo não tenha sido criado (limite de ve�
 public OnGameModeInit()
 {
     // Adiciona um Hydra (520) ao jogo, que irá re-spawnar 15 segundos após ser deixado.
-    AddStaticVehicleEx (520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
+    AddStaticVehicleEx(520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
 
     return 1;
 }
@@ -43,3 +43,13 @@ public OnGameModeInit()
 
 - [AddStaticVehicle](AddStaticVehicle): Adiciona um veículo fixo.
 - [CreateVehicle](CreateVehicle): Cria um veículo.
+
+## Callbacks Relacionadas
+
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Chamada quando um veículo reaparece.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Chamando quando um veículo alterna a sirene ligada/desligada.
+
+## Recursos relacionados
+
+- [Vehicle Models](../resources/vehicleid): Lista abrangente de todos os modelos de veículos disponíveis no jogo.
+- [Vehicle Colour IDs](../resources/vehiclecolorid): Lista de todos os IDs de cores de veículos.

@@ -72,7 +72,7 @@ new
 
 SA-MP 限制了可以存储在单个字符串中的字符数，并防止脚本编写者在处理文本时过度操作。幸运的是，这并不像看起来那么糟糕，下面的列表列出了其中的一些限制：
 
-|                     |                                                                                                    |      |
+| 类型                | 说明                                                                                               | 限制 |
 | ------------------- | -------------------------------------------------------------------------------------------------- | ---- |
 | **文本输入**        | 你在聊天中输入的文本。                                                                             | 128  |
 | **文本输出**        | 在客户端屏幕上输出的文本。                                                                         | 144  |
@@ -242,9 +242,8 @@ message_9[0] = EOS;
 
 正如我在教程前面所说的，你可以忽略分配空字符，但它总是在空单元格中存在。当你声明一个新字符串时，所有单元格都会自动被空字符占据。因此，例如，如果我声明这个字符串 `text[3]`，它的所有单元格默认都会被分配值 `0`，这里是该字符串内容的简单可视化表示：
 
-|          |      |      |      |
-| -------- | ---- | ---- | ---- |
 | 单元格   | 0    | 1    | 2    |
+| -------- | ---- | ---- | ---- |
 | ASCII 码 | 0    | 0    | 0    |
 | 字符     | '\0' | '\0' | '\0' |
 
@@ -256,9 +255,8 @@ new text_1[8] = "Hello";
 
 以下是每个单元格的字符串内容;
 
-|          |     |     |     |     |     |      |      |      |
-| -------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
 | 单元格   | 0   | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| -------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
 | ASCII 码 | 72  | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | 字符     | 'H' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
@@ -272,9 +270,8 @@ text_1[0] = '\0';
 
 将字符串通过 X-Ray 扫描会打印出以下结果;
 
-|          |      |     |     |     |     |      |      |      |
-| -------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
 | 单元格   | 0    | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| -------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
 | ASCII 码 | 0    | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | 字符     | '\0' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
@@ -312,7 +309,7 @@ native memcpy(dest[], const source[], index=0, numbytes, maxlength=sizeof dest);
 
   ```cpp
   new str_dest[12] = "Hello", str_source[7] = " World";
-  strcat(str_dest,str_source);
+  strcat(str_dest, str_source);
   ```
 
 如果我们输出 `str_dest`，它将显示 **Hello World**，这两个字符串被添加到一起，结果存储在 `str_dest` 中，_“Hello” + “ World” = “Hello World”_，注意我们在第二个字符串中包含了一个空格，是的，空格本身也是一个字符，根据 _ASCII_ 表，它的值是 `32`。如果我们没有添加空格，结果字符串将是 **HelloWorld**。
@@ -407,7 +404,7 @@ format(formatMsg, sizeof(formatMsg), "This is reality""...""or is it?!");
 
 ```cpp
 new badString[100];
-badString ="Hello :)";
+badString = "Hello :)";
 ```
 
 我们声明了一个包含 _100 个单元格_ 的字符串，_1 个单元格_ 占用 _4 字节_，让我们做一些基本的数学运算，_100 \* 4 = 400_ 字节，这大约是 _0.0004 兆字节_，对于今天的标准来说，这确实不算什么，但假设在一个庞大的脚本中，你显然会使用多个字符串，_60_，_70_，甚至 _100_ 个字符串？（_可能更多_），这些微小的数字会叠加在一起，导致一个更大的总数，并且可能会给你带来严重的问题。我敢保证，当你与那些大小是五倍以上的字符串相比时，我们声明的字符串还远远算不上愚蠢。
@@ -418,7 +415,7 @@ badString ="Hello :)";
 
 ```cpp
 new goodString[12];
-goodString="Good string";
+goodString = "Good string";
 ```
 
 看看我们如何节省了内存？仅仅 **48** 字节，没有额外的负担，避免了后续可能出现的问题，感觉好多了。
@@ -444,17 +441,15 @@ pkString_1 = !#pawn;
 
 这是 `upkString` 内容的近似视觉表示;
 
-|        |                      |                      |                      |                      |                   |
-| ------ | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
 | 单元格 | 0                    | 1                    | 2                    | 3                    | 4                 |
+| ------ | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
 | 字节   | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3     |
 | 字符   | \0 . \0 . \0 . **p** | \0 . \0 . \0 . **a** | \0 . \0 . \0 . **w** | \0 . \0 . \0 . **n** | \0 . \0 . \0 . \0 |
 
 And this is what `pkString_1` would be like in the second example;
 
-|        |                               |                   |
-| ------ | ----------------------------- | ----------------- |
 | 单元格 | 0                             | 1                 |
+| ------ | ----------------------------- | ----------------- |
 | 字节   | 0 . 1 . 2 . 3                 | 0 . 1 . 2 . 3     |
 | 字符   | **p** . **a** . **w** . **n** | \0 . \0 . \0 . \0 |
 
@@ -611,7 +606,7 @@ SendClientMessage(1, -1, "Hello there!");
 new mornMsg[] = "Hello!";
 
 SendClientMessage(0, -1, mornMsg);
-SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
+SendClientMessage(0, -1, "How are you ", STRING_MSG#?);
 ```
 
 正如你在上面的示例中看到的，这将向 ID _0_ 的玩家发送两条白色的信息，第一条信息将显示“_Hello!_”，第二条信息将显示“_How are you today?_”，这与其他函数的工作方式非常相似。请记住，预定义的常量整数必须以 `#` 号作为前缀.
@@ -711,11 +706,11 @@ The latter can be done on embedded colors too;
 
 ```cpp
 #define COL_RED "{FF0000}"
-#define COL_GREEN {00FF4A}
+#define COL_GREEN "00FF4A"
 #define COL_BLUE "{0058FF}"
 
 SendClientMessageToAll(-1, ""COL_RED"我是红色的文本");
-SendClientMessageToAll(-1, "{"COL_GREEN}"我是绿色"COL_BLUE"和蓝色");
+SendClientMessageToAll(-1, "{"COL_GREEN"}我是绿色"COL_BLUE"和蓝色");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "注意", "{"COL_GREEN"}你好! "COL_RED"近况如何?", "关闭", "");
 ```
 
@@ -727,7 +722,7 @@ ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "注意", "{"COL_GREEN"}你�
 
 如上所述，**RGB** 表示法不被支持，但幸运的是，我们有其他方法来解决这个问题，对于文本绘图，你可以使用本地函数 [TextDrawColor](../scripting/functions/TextDrawColor) 来更改文本绘图的颜色，但这与文本绘图的 **RGBA** 颜色空间对于客户端消息和对话框是一样的，颜色不能被嵌入。为此，我们使用特殊的字符组合来引用颜色和其他一些符号，你可以在 [这里](../scripting/resources/gametextstyles) 查看它们。
 
-|                |      |
+| 代码           | 颜色 |
 | -------------- | ---- |
 | \~r\~          | 红色 |
 | \~g\~          | 绿色 |
@@ -741,7 +736,7 @@ ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "注意", "{"COL_GREEN"}你�
 
 你还可以使用另一种字符组合来玩混色游戏, **\~h\~**, 它会使某种颜色变浅，以下是几个例子:
 
-|                                |        |
+| 代码                           | 颜色   |
 | ------------------------------ | ------ |
 | \~r\~\~h\~                     | 亮红色 |
 | \~r\~\~h\~\~h\~                | 粉红色 |
@@ -762,7 +757,7 @@ ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "注意", "{"COL_GREEN"}你�
 
 转义序列使得在脚本的源代码中表达某些字符变得更容易，下面是 pawn 中使用的转义序列表：
 
-|                           |              |
+| 说明                      | 转义序列     |
 | ------------------------- | ------------ |
 | 响铃（在服务器机器上）    | `\a` 或 `\7` |
 | 退格符                    | `\b`         |
@@ -1039,7 +1034,7 @@ new chr = ''';
 这是因为编译器会将第一对单引号视为一个实体，而将第二对单引号视为一个未封闭的引号序列，因此要解决这个问题，我们必须转义中间的单引号;
 
 ```cpp
-new chr = ''\';
+new chr = '\'';
 ```
 
 - **“双引号” 转义序列 - `\"`**
@@ -1132,7 +1127,7 @@ Hello
 
 这一部分与转义序列完全无关，但它用于格式化文本绘图和游戏文本，放在这里比放在其他地方更合适；
 
-|       |                                                                                                 |
+| 代码  | 功能说明                                                                                        |
 | ----- | ----------------------------------------------------------------------------------------------- |
 | `~u~` | 向上箭头（灰色）                                                                                |
 | `~d~` | 向下箭头（灰色）                                                                                |
@@ -1157,9 +1152,8 @@ Hello
 
 让我们来看一下可以使用的不同输出类型:
 
-|               |                                                 |
-| ------------- | ----------------------------------------------- |
 | **Specifier** | **含义**                                        |
+| ------------- | ----------------------------------------------- |
 | `%i`          | 整数 (_整数_)                                   |
 | `%d`          | 整数 (_整数_)                                   |
 | `%s`          | 字符串                                          |
@@ -1265,7 +1259,7 @@ H
 
 ```cpp
 #define NAME "Max"
-new message[] = “Hello there!”;
+new message[] = "Hello there!";
 
 printf("His name is %s", NAME);
 printf("Hey, %s", message);
@@ -1578,7 +1572,7 @@ Lua
 但在现实世界中，大多数人不喜欢看终端，它们对普通用户来说太可怕、复杂，正如你们所知道的，_客户端消息_ 会显示在游戏屏幕上，而不是控制台，然而，这些不能动态格式化，更像是 `print` 函数的行为，为了绕过这个限制，我们使用另一个非常有效的函数，称为 `format`，我们不会深入其定义，因为我们已经在早期部分解释过了，（参考 [this](../scripting/functions/format)），但这里是其语法的提醒：
 
 ```cpp
-format(output[], len, const format[], \{Float, _}: ...}
+format(output[], len, const format[], {Float, _}: ...)
 ```
 
 让我们看这些示例；
@@ -1590,7 +1584,8 @@ format(output[], len, const format[], \{Float, _}: ...}
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[信息]: ID 为 %d 的玩家名为 {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[信息]: ID 为 %d 的玩家名为 {EE11CC}%s.", playerid, playerName);
+SendClientMessageToAll(0, output);
 ```
 
 > [信息]: ID 为 9 的玩家名为 <span style={{color: '#ee11cc'}}>Player1</span>。
@@ -1633,9 +1628,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 给定以下连接玩家列表：
 
-|        |                                                 |
-| ------ | ----------------------------------------------- |
 | **ID** | **玩家**                                        |
+| ------ | ----------------------------------------------- |
 | 0      | <span style={{color: 'red'}}>Compton</span>     |
 | 1      | <span style={{color: 'grey'}}>Dark</span>       |
 | 5      | <span style={{color: 'red'}}>Player1</span>     |
@@ -1644,7 +1638,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 假设 `playerid` 为 `0` 的玩家杀死了 `playerid` 为 `6` 的玩家，格式化消息应该显示为 “**\{FF0000\}Compton \{000000\} 杀害了 > \{0000FF\}Bartolomew**”，这将向服务器上的每个人发送以下客户端消息：
 
-> <span style={{color: 'red'}}>Compton</span> ­ <span style={{color: '#000000'}}>杀害了</span> ­ <span style={{color: 'blue'}}>Bartolomew</span>
+> <span style={{color: 'red'}}>Compton</span>  <span style={{color: '#000000'}}>杀害了</span>  <span style={{color: 'blue'}}>Bartolomew</span>
 
 我为使用 [按位逻辑移位](https://en.wikipedia.org/wiki/Logical_shift) 而可能让你感到困惑感到抱歉，它仅用于将 `GetPlayerColor` 函数返回的十进制数字转换为代表颜色的十六进制数字，移位本身用于省略 -alpha- 空间，更多信息我强烈建议你查看 **Kyosaur** 的 [这个教程](Binary)。
 

@@ -58,10 +58,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 توضیح [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | شناسه منویی که آیتم در آن نمایش داده شود |
-| ------ | ---------------------------------------- |
-| column | ستونی که آیتم در آن نشان داده شود        |
-| text   | متن آیتم                                 |
+| پارامتر | تعیین‌کننده                              |
+| ------- | ---------------------------------------- |
+| menuid  | شناسه منویی که آیتم در آن نمایش داده شود |
+| column  | ستونی که آیتم در آن نشان داده شود        |
+| text    | متن آیتم                                 |
 
 ## ایجاد افکت برای آیتم‌ها
 
@@ -90,9 +91,9 @@ public OnPlayerSelectedMenuRow(playerid, row)
 حالا بین این براکت‌ها جایی است که `switch` قرار می‌گیرد، این بررسی می‌کند بازیکن کدام آیتم را انتخاب کرده یا `row` این می‌تواند با if statement‌های بررسی اینکه کدام `row` است انجام شود، اما `switch` راه ساده‌تری برای نوشتن آن است.
 
 ```pawn
-if(CurrentMenu == teleportmenu)
+if (CurrentMenu == teleportmenu)
 {
-    switch(row)
+    switch (row)
     {
         case 0: //Grove Street
         {
@@ -139,9 +140,9 @@ if(CurrentMenu == teleportmenu)
 حالا نیاز به دستوری برای نشان دادن منو داریم. این ساده‌ترین قدم است. فقط یک مقایسه با `strcmp` و یک `ShowMenuForPlayer`. این در `OnPlayerCommandText` انجام می‌شود. یا، اگر پردازنده دستور دارید، به جای آن از آن برای صدا زدن `ShowMenuForPlayer` استفاده کنید.
 
 ```pawn
-if(strcmp(cmdtext, "/teleport", true) == 0)
+if (strcmp(cmdtext, "/teleport", true) == 0)
 {
-    ShowMenuForPlayer(teleportmenu,playerid);
+    ShowMenuForPlayer(teleportmenu, playerid);
     return 1;
 }
 ```

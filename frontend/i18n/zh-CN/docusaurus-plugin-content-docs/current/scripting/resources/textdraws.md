@@ -8,7 +8,10 @@ description: 文本绘图是在玩家屏幕上绘制的文字元素，可长期�
 
 文本绘图（Textdraw）是在玩家屏幕上显示的文字元素。与[客户端消息](../functions/SendClientMessage)或[游戏文本](../functions/GameTextForPlayer)不同，文本绘图可以无限期显示。既支持简单静态文本（如网站地址），也可创建复杂的动态元素（如进度条）。
 
-推荐使用文本绘图编辑器工具简化设计流程。
+推荐使用文本绘图编辑器工具简化设计流程：
+
+- [Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)
+- [Nexor's Textdraw Editor](https://github.com/nexquery/samp-textdraw-editor)
 
 ---
 
@@ -146,7 +149,7 @@ new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;
 
 需特别注意：此函数仅完成文本绘图的创建操作，后续需调用其他函数进行属性修改及玩家显示操作。
 
-**参数：​**
+**参数：**
 
 TextDrawCreate(Float:x, Float:y, text[])
 
@@ -156,7 +159,7 @@ TextDrawCreate(Float:x, Float:y, text[])
 | y      | 文本绘图的 Y 轴坐标 |
 | text[] | 文本绘图显示的内容  |
 
-**返回值：​**
+**返回值：**
 
 创建的文本绘图 ID
 
@@ -195,7 +198,7 @@ SA-MP 0.3d 版本新增第四种字体（ID 4），需配合 [TextDrawCreate](..
 
 以下示例展示在玩家加入服务器时显示全局文本绘图。使用 [TextDrawShowForPlayer](../functions/TextDrawShowForPlayer) 函数向指定玩家展示。
 
-**参数：​**
+**参数：**
 
 TextDrawShowForPlayer(playerid, Text:text)
 
@@ -204,7 +207,7 @@ TextDrawShowForPlayer(playerid, Text:text)
 | playerid | 目标玩家 ID         |
 | text     | 要显示的文本绘图 ID |
 
-**返回值：​**
+**返回值：**
 
 不返回特定值。
 

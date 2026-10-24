@@ -1,7 +1,7 @@
 ---
 title: max
 sidebar_label: max
-description: .
+description: Funkcija korištena za usporedbu vrijednosti.
 tags: []
 ---
 
@@ -29,8 +29,8 @@ public OnGameModeInit()
         a, b, rezultat;
     a = 5;
     b = 10;
-    rezultat = max(a,b);
-    printf ("max(a,b) =", param, rezultat);
+    rezultat = max(a, b);
+    printf("max(a,b) =", param, rezultat);
     return 0;
 }
 ```

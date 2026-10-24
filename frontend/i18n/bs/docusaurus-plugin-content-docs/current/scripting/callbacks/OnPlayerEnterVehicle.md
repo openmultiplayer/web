@@ -17,6 +17,8 @@ Ovaj callback je pozvan kada igrač krene da uđe u vozilo, u smislu da igrač n
 
 ## Returns
 
+Ovaj callback ne obrađuje povratne vrijednosti (returnove).
+
 Uvijek je pozvana prva u filterskripti.
 
 ## Primjeri

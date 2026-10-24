@@ -27,12 +27,12 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     // This example shows a large, white text saying "[playerName] has
     // passed away" on everyone's screen, after a player has died or
     // has been killed. It shows in text-type 3, for 5 seconds (5000 ms)
-    new name[ 24 ], string[ 64 ];
-    GetPlayerName( playerid, name, 24 );
+    new name[24], string[64];
+    GetPlayerName(playerid, name, 24);
 
     // Format the passed-away message properly, and show it to everyone:
-    format( string, sizeof(string), "~w~%s has passed away", name );
-    GameTextForAll( string, 5000, 3 );
+    format(string, sizeof(string), "~w~%s has passed away", name);
+    GameTextForAll(string, 5000, 3);
 
     return 1;
 }

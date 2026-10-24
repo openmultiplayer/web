@@ -28,7 +28,7 @@ Ova funkcija ne returna(vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-AttachPlayerObjectToPlayer(objectplayer, objectid, attachplayer, 1.5, 0.5, 0, 0, 1.5, 2 );
+AttachPlayerObjectToPlayer(objectplayer, objectid, attachplayer, 1.5, 0.5, 0, 0, 1.5, 2);
 ```
 
 ## Zabilješke

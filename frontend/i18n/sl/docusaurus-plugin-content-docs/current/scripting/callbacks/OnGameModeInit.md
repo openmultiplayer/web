@@ -9,12 +9,16 @@ tags: []
 
 Ta callback se aktivira, ko se zažene "gamemode".
 
+## Returns
+
+Ta "callback" se ne obdeluje (return).
+
 ## Primeri
 
 ```c
 public OnGameModeInit()
 {
-    print(""Gamemode" začela!");
+    print("Gamemode začela!");
     return 1;
 }
 ```

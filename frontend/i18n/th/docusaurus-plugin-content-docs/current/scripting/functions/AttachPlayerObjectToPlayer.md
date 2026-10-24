@@ -28,7 +28,7 @@ This function does not return any specific values.
 ## ตัวอย่าง
 
 ```c
-AttachPlayerObjectToPlayer(objectplayer, objectid, attachplayer, 1.5, 0.5, 0, 0, 1.5, 2 );
+AttachPlayerObjectToPlayer(objectplayer, objectid, attachplayer, 1.5, 0.5, 0, 0, 1.5, 2);
 ```
 
 ## บันทึก

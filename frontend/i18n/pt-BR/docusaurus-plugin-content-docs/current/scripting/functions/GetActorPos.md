@@ -25,7 +25,7 @@ Obtenha a posição de um ator.
 
 **false** - Falha na execução da função. O ator especificado não existe.
 
-A posição do ator é armazenada nas variáveis ​​especificadas.
+A posição do ator é armazenada nas variáveis especificadas.
 
 ## Exemplos
 

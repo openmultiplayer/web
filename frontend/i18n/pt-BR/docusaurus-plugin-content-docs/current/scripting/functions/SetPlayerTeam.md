@@ -33,10 +33,7 @@ public OnPlayerSpawn(playerid)
 
 :::note
 
-- Os jogadores não podem danificar/matar jogadores do mesmo time, a menos que usem uma faca para cortar a garganta.
-
-- Os jogadores também não podem danificar veículos dirigidos por um jogador do mesmo time. Isso pode ser habilitado com [EnableVehicleFriendlyFire](EnableVehicleFriendlyFire).
-
+- Os jogadores não podem danificar/matar jogadores do mesmo time, a menos que usem uma faca para cortar a garganta. Os jogadores também não podem danificar veículos dirigidos por um jogador do mesmo time. Isso pode ser habilitado com [EnableVehicleFriendlyFire](EnableVehicleFriendlyFire).
 - 255 (ou `NO_TEAM`) é o time padrão para poder atirar em outros jogadores, não 0.
 
 :::

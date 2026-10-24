@@ -26,7 +26,7 @@ tags: ["车辆"]
 new streamedVehicleCount; // 已加载车辆计数器
 
 // 遍历所有车辆ID
-for(new i = 1; i < MAX_VEHICLES; i++)
+for (new i = 1; i < MAX_VEHICLES; i++)
 {
     if (IsVehicleStreamedIn(i, playerid))
     {

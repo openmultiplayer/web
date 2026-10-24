@@ -23,7 +23,7 @@ Jumlah karakter sebelum sub-string (posisi awal sub-string) atau -1 jika tidak d
 ## Contoh
 
 ```c
-if (strfind("Are you in here?", "you", true) != -1) //me-return 4, karena awalan 'you' (y) ada di indeks 4 dalam string
+if (strfind("Are you in here?", "you", true) != -1) //me-return 4, karena awalan 'you' (y) ada di indeks 4 dalam string
 {
     SendClientMessageToAll(0xFFFFFFFF, "I found you!");
 }

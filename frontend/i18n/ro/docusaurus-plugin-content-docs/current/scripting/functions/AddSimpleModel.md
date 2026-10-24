@@ -39,7 +39,8 @@ public OnGameModeInit()
 
 :::note
 
-`Useartwork` trebuie să fie activat mai întâi în setările serverului pentru ca acesta să funcționeze Când virtualworld este setat, modelele vor fi descărcate odată ce jucătorul intră în lumea specifică
+- `useartwork` trebuie să fie activat mai întâi în setările serverului pentru ca acesta să funcționeze
+- Când virtualworld este setat, modelele vor fi descărcate odată ce jucătorul intră în lumea specifică
 
 :::
 
@@ -51,4 +52,5 @@ public OnGameModeInit()
 
 ## Funcții conexe
 
+- [AddSimpleModelTimed](AddSimpleModelTimed): Adaugă un nou model de obiect simplu personalizat pentru descărcare.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Apelat când un jucător termină de descărcat modele personalizate.

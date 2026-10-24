@@ -76,7 +76,7 @@ SetPlayerSkinFix(playerid, skinid)
         SetPlayerFacingAngle(playerid, tmpPos[3]);
         TogglePlayerControllable(playerid, true); // preventing any freeze - important! because of doing animations of exiting vehicle
         tmp = SetPlayerSkin(playerid, skinid);
-        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
+        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
         return tmp;
     }
     else
@@ -92,8 +92,7 @@ SetPlayerSkinFix(playerid, skinid)
 
 Known Bug(s):
 
-- If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using [TogglePlayerControllable](TogglePlayerControllable).
-- Players can be detected as being crouched through [GetPlayerSpecialAction](GetPlayerSpecialAction) (SPECIAL_ACTION_DUCK).
+- If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using [TogglePlayerControllable](TogglePlayerControllable). Players can be detected as being crouched through [GetPlayerSpecialAction](GetPlayerSpecialAction) (SPECIAL_ACTION_DUCK).
 - Other players around the player may crash if he is in a vehicle or if he is entering/leaving a vehicle.
 - Setting a player's skin when he is dead may crash players around him.
 - Breaks sitting on bikes.

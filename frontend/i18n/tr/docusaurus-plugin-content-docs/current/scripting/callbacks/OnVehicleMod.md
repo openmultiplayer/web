@@ -24,7 +24,7 @@ Oyun modunda her zaman ilk olarak çağrılır, bu nedenle 0 döndürülürse, d
 ```c
 public OnVehicleMod(playerid, vehicleid, componentid)
 {
-    printf("%d ID'li oyuncu %d ID'li araca %d numaralı bileşeni ekledi.", playerid, vehicleid,componentid);
+    printf("%d ID'li oyuncu %d ID'li araca %d numaralı bileşeni ekledi.", playerid, vehicleid, componentid);
     if (GetPlayerInterior(playerid) == 0)
     {
         BanEx(playerid, "Tuning Hacks"); // Anti modifiye hilesi.

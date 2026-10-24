@@ -43,8 +43,12 @@ public OnGameModeInit()
 
 :::warning
 
-Jednom postavljen za neranjivog, aktor ne poziva OnPlayerGiveDamageActor. Igračima će se stanje aktorove neranjivosti promijeniti samo kad im se to ponovno učita.
+- Jednom postavljen za neranjivog, aktor ne poziva OnPlayerGiveDamageActor.
+- Igračima će se stanje aktorove neranjivosti promijeniti samo kad im se to ponovno učita.
 
 :::
 
 ## Srodne Funkcije
+
+- [CreateActor](CreateActor): Kreiraj aktora (statičnog NPC-a).
+- [SetActorHealth](SetActorHealth): Postavi zdravlje aktoru.

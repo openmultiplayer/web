@@ -21,7 +21,7 @@ O número de mensagens que o servidor enviou ao jogador.
 ## Exemplos
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/msgsent"))
     {

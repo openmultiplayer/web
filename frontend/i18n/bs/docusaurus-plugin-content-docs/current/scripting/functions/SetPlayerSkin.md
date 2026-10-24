@@ -76,7 +76,7 @@ SetPlayerSkinFix(playerid, skinid)
         SetPlayerFacingAngle(playerid, tmpPos[3]);
         TogglePlayerControllable(playerid, true); // sprečavanje smrzavanja - bitno! zbog izvođenja animacija izlaska iz vozila
         tmp = SetPlayerSkin(playerid, skinid);
-        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
+        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
         return tmp;
     }
     else
@@ -90,7 +90,12 @@ SetPlayerSkinFix(playerid, skinid)
 
 :::warning
 
-Poznati Bug(ovi): Ako je igračeva koža postavljena kada čuči, u vozilu ili izvodi određene animacije, postat će smrznuti ili na neki drugi način uklonjeni. To se može popraviti pomoću TogglePlayerControllable. Igrači se mogu otkriti kako su čučali preko GetPlayerSpecialAction (SPECIAL_ACTION_DUCK). Ostali igrači oko igrača mogu se srušiti ako je u vozilu ili ako ulazi/izlazi iz vozila. Postavljanje kože igrača kada je mrtav može srušiti igrače oko njega. Prekidi sjedeći na biciklima.
+Poznati Bug(ovi):
+
+- Ako je igračeva koža postavljena kada čuči, u vozilu ili izvodi određene animacije, postat će smrznuti ili na neki drugi način uklonjeni. To se može popraviti pomoću TogglePlayerControllable. Igrači se mogu otkriti kako su čučali preko GetPlayerSpecialAction (SPECIAL_ACTION_DUCK).
+- Ostali igrači oko igrača mogu se srušiti ako je u vozilu ili ako ulazi/izlazi iz vozila.
+- Postavljanje kože igrača kada je mrtav može srušiti igrače oko njega.
+- Prekidi sjedeći na biciklima.
 
 :::
 
@@ -98,3 +103,7 @@ Poznati Bug(ovi): Ako je igračeva koža postavljena kada čuči, u vozilu ili i
 
 - [GetPlayerSkin](GetPlayerSkin): Dobij igračev trenutni skin.
 - [SetSpawnInfo](SetSpawnInfo): Postavi postavke spawnovanja za igrača.
+
+## Srodne Resources
+
+- [Skinovi](../resources/skins)

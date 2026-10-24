@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         new string[64];
 
-        format(string, sizeof(string), "Vehicle collision for you is now '%s'", (gPlayerVehicleCollision[playerid] == false) ? ("Disabled") : ("Enabled"));
+        format(string, sizeof(string), "Vehicle collision for you is now '%s'", (gPlayerVehicleCollision[playerid] == false) ? ("Disabled") : ("Enabled"));
         SendClientMessage(playerid, 0xFFFFFFFF, string);
 
         gPlayerVehicleCollision[playerid] = !gPlayerVehicleCollision[playerid];

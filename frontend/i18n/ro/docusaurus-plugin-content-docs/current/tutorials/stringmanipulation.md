@@ -72,20 +72,20 @@ Teoretic, puteți crea tablouri oarecum ridicol de mari, dar SA-MP pune puține 
 
 SA-MP limitează caracterele care pot fi stocate într-un singur șir și împiedică scripterii să meargă peste bord cu lucrul cu textul, din fericire, nu este atât de rău pe cât ar părea, lista de mai jos descompune unele dintre aceste limite;
 
-|                     |                                                                                                                           |      |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---- |
-| **Text input**      | Textul introdus în chat.                                                                                                  | 128  |
-| **Text output**     | Text care se afișează pe ecranul clientului.                                                                              | 144  |
-| **Name**            | Pseudonimul jucătorului / numele de utilizator.                                                                           | 24   |
-| **Textdraw string** | Destul de auto-explicativ.                                                                                                | 1024 |
-| **Dialog info**     | Textul afișat pe toate casetele de dialog de tipul `DIALOG_STYLE_MSGBOX`,`DIALOG_STYLE_INPUT` și `DIALOG_STYLE_PASSWORD`. | 4096 |
-| **Dialog caption**  | Legenda / titlul din partea de sus a dialogului.                                                                          | 64   |
-| **Dialog input**    | Caseta de introducere de pe „DIALOG_STYLE_INPUT” și „DIALOG_STYLE_PASSWORD”.                                              | 128  |
-| **Dialog columnt**  | Caracterele din fiecare coloană din „DIALOG_STYLE_TABLIST_HEADER” și „DIALOG_STYLE_TABLIST”.                              | 128  |
-| **Dialog row**      | Caracterele din fiecare coloană din "DIALOG_STYLE_TABLIST_HEADER", "DIALOG_STYLE_TABLIST" și "DIALOG_STYLE_LIST".         | 256  |
-| **Chat bubble**     | Balonul de chat care se afișează deasupra etichetei de nume a jucătorului.                                                | 144  |
-| **Menu title**      | Antetul meniului nativ GTA San Andreas (cel mai utilizat pentru magazine\_).                                              | 31   |
-| **Menu item**       | Meniul nativ GTA San Andreas (_ cel mai utilizat pentru magazine_) element / rând.                                        | 31   |
+| Tip                 | Descriere                                                                                                                 | Limită |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------ |
+| **Text input**      | Textul introdus în chat.                                                                                                  | 128    |
+| **Text output**     | Text care se afișează pe ecranul clientului.                                                                              | 144    |
+| **Name**            | Pseudonimul jucătorului / numele de utilizator.                                                                           | 24     |
+| **Textdraw string** | Destul de auto-explicativ.                                                                                                | 1024   |
+| **Dialog info**     | Textul afișat pe toate casetele de dialog de tipul `DIALOG_STYLE_MSGBOX`,`DIALOG_STYLE_INPUT` și `DIALOG_STYLE_PASSWORD`. | 4096   |
+| **Dialog caption**  | Legenda / titlul din partea de sus a dialogului.                                                                          | 64     |
+| **Dialog input**    | Caseta de introducere de pe „DIALOG_STYLE_INPUT” și „DIALOG_STYLE_PASSWORD”.                                              | 128    |
+| **Dialog columnt**  | Caracterele din fiecare coloană din „DIALOG_STYLE_TABLIST_HEADER” și „DIALOG_STYLE_TABLIST”.                              | 128    |
+| **Dialog row**      | Caracterele din fiecare coloană din "DIALOG_STYLE_TABLIST_HEADER", "DIALOG_STYLE_TABLIST" și "DIALOG_STYLE_LIST".         | 256    |
+| **Chat bubble**     | Balonul de chat care se afișează deasupra etichetei de nume a jucătorului.                                                | 144    |
+| **Menu title**      | Antetul meniului nativ GTA San Andreas (cel mai utilizat pentru magazine\_).                                              | 31     |
+| **Menu item**       | Meniul nativ GTA San Andreas (_ cel mai utilizat pentru magazine_) element / rând.                                        | 31     |
 
 Dacă cumva aceste limite au fost depășite, s-ar putea să apară puține inconveniente, acesta poate chiar să blocheze / înghețe serverul în unele cazuri (de exemplu, șiruri lungi de desen text), în alte cazuri, textul s-ar trunchia ca titlul meniului (_daca ajunge la 32 de caractere, se trunchiază la 30_) și articole.
 
@@ -241,9 +241,8 @@ message_9[0] = EOS;
 
 După cum am spus mai devreme în tutorial, puteți ignora atribuirea caracterului nul, dar este întotdeauna acolo la celulele goale, atunci când declarați un șir nou, toate celulele sale sunt ocupate automat de terminatorul nul, deci, de exemplu, dacă merg înainte și declarați acest șir `text[3]`, tuturor celulelor sale li se atribuie valoarea `0` în mod implicit, iată o simplă reprezentare vizuală a conținutului șirului;
 
-|            |      |      |      |
-| ---------- | ---- | ---- | ---- |
 | Cells      | 0    | 1    | 2    |
+| ---------- | ---- | ---- | ---- |
 | ASCII code | 0    | 0    | 0    |
 | Characters | '\0' | '\0' | '\0' |
 
@@ -255,9 +254,8 @@ new text_1[8] = "Hello";
 
 Iată conținutul șirului pe celulă;
 
-|            |     |     |     |     |     |      |      |      |
-| ---------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
 | Cells      | 0   | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ---------- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
 | ASCII code | 72  | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | Characters | 'H' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
@@ -271,9 +269,8 @@ text_1[0] = '\0';
 
 Trecerea șirului printr-o scanare cu raze X va imprima următoarele;
 
-|            |      |     |     |     |     |      |      |      |
-| ---------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
 | Cells      | 0    | 1   | 2   | 3   | 4   | 5    | 6    | 7    |
+| ---------- | ---- | --- | --- | --- | --- | ---- | ---- | ---- |
 | ASCII code | 0    | 101 | 108 | 108 | 111 | 0    | 0    | 0    |
 | Characters | '\0' | 'e' | 'l' | 'l' | 'o' | '\0' | '\0' | '\0' |
 
@@ -311,7 +308,7 @@ Vom arunca o privire mai atentă asupra câtorva dintre ele, cele sunt mai des u
 
   ```cpp
   new str_dest[12] = "Hello", str_source[7] = " World";
-  strcat(str_dest,str_source);
+  strcat(str_dest, str_source);
   ```
 
   Dacă ar fi să ieșim `str_dest`, va apărea ** Hello World **, cele două șiruri au fost adăugate una la cealaltă, iar rezultatul a fost stocat în` str_dest`, _`Hello` + `World` =` Hello World`_, observați cum am inclus acel spațiu în cel de-al doilea șir, da, spațiile sunt caracter în sine, conform tabelului _ASCII_, valoarea lor este`32`, dacă nu am adăuga spațiul, șirul rezultat ar fi fost **Salut Lume**.
@@ -406,7 +403,7 @@ Primul lucru care trebuie adus în discuție și care mă declanșează personal
 
 ```cpp
 new badString[100];
-badString ="Hello :)";
+badString = "Hello :)";
 ```
 
 Am declarat un șir cu _100 celule_, _1 celulă_ ocupă _4 octeți_, hai să facem câteva matematici de bază, _100 \ \* 4 = 400_ octeți, adică aproximativ 0.0004 megabyte*, nimic pentru standardele de astăzi știu, dar se presupune că pe un script imens , evident, va trebui să utilizați mai multe șiruri, \_60*, _70_, naiba _100_ mai multe șiruri? (_posibil mai mult_), acele numere minuscule se vor aduna unul pe celălalt rezultând un număr mult mai mare și vă vor provoca probleme serioase mai târziu și credeți-mă când vă spun că șirul pe care l-am declarat nu se apropie la fel de prost în comparație cu cei care au o dimensiune de cinci ori mai mare sau mai mare.
@@ -417,7 +414,7 @@ Rețineți limitele pe care le pune SA-MP atunci când se ocupă de șiruri, und
 
 ```cpp
 new goodString[12];
-goodString="Good string";
+goodString = "Good string";
 ```
 
 Vedeți cum am păstrat memoria? Doar **48** octeți și nici o greutate suplimentară care ar provoca probleme mai târziu, se simte mult mai bine.
@@ -443,17 +440,15 @@ Așa funcționează pur și simplu, declarați un șir cu dimensiunea pe care ar
 
 Aceasta este o reprezentare vizuală aproximativă a conținutului `upkString`;
 
-|            |                      |                      |                      |                      |                   |
-| ---------- | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
 | Cell       | 0                    | 1                    | 2                    | 3                    | 4                 |
+| ---------- | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
 | Bytes      | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3        | 0 . 1 . 2 . 3     |
 | Characters | \0 . \0 . \0 . **p** | \0 . \0 . \0 . **a** | \0 . \0 . \0 . **w** | \0 . \0 . \0 . **n** | \0 . \0 . \0 . \0 |
 
 Și așa ar fi `pkString_1` în al doilea exemplu;
 
-|            |                               |                   |
-| ---------- | ----------------------------- | ----------------- |
 | Cell       | 0                             | 1                 |
+| ---------- | ----------------------------- | ----------------- |
 | Bytes      | 0 . 1 . 2 . 3                 | 0 . 1 . 2 . 3     |
 | Characters | **p** . **a** . **w** . **n** | \0 . \0 . \0 . \0 |
 
@@ -610,7 +605,7 @@ Evident, puteți trece și o serie de caractere, șiruri formatate ... etc. Și 
 new mornMsg[] = "Hello!";
 
 SendClientMessage(0, -1, mornMsg);
-SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
+SendClientMessage(0, -1, "How are you ", STRING_MSG#?);
 ```
 
 După cum puteți vedea în exemplul de mai sus, acest lucru va trimite jucătorului cu id-ul _0_ două mesaje colorate în alb, primele mesaje vor spune `_Bună ziua!_`, Iar al doilea va spune, `_Cum ești astăzi?_`, destul de similar cu modul în care funcționează alte funcții. Rețineți că numerele întregi constante predefinite trebuie să fie prefixate cu simbolul "#".
@@ -710,11 +705,11 @@ Acesta din urmă poate fi realizat și pe culorile încorporate;
 
 ```cpp
 #define COL_RED "{FF0000}"
-#define COL_GREEN {FF0000}
+#define COL_GREEN "FF0000"
 #define COL_BLUE "{FF0000}"
 
 SendClientMessageToAll(-1, ""COL_RED"I'm a red text");
-SendClientMessageToAll(-1, "{"COL_GREEN}"I'm a green "COL_BLUE"and blue");
+SendClientMessageToAll(-1, "{"COL_GREEN"}I'm a green "COL_BLUE"and blue");
 ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Notice", "{"COL_GREEN"}Hello! "COL_RED"what's up?", "Close", "");
 ```
 
@@ -726,21 +721,21 @@ Aceasta a fost abordarea generală a încorporării culorilor cu șiruri de dial
 
 așa cum s-a menționat mai sus, notația **RGB** nu este acceptată, dar din fericire, avem alte modalități de a rezolva această problemă, pentru textdraws, puteți utiliza funcția nativă [TextDrawColor](../scripting/functions/TextDrawColor) pentru schimbați culoarea textului de desen, dar același lucru cu textul de desenat ca spațiile de culoare ** RGBA ** sunt pentru mesajele și dialogurile clientului, acestea nu pot fi încorporate, pentru aceasta, folosim o combinație specială de caractere pentru a ne referi la culori și alte câteva simboluri , le puteți vedea [aici](../scripting/resources/gametextstyles).
 
-|                |        |
-| -------------- | ------ |
-| \~r\~          | Red    |
-| \~g\~          | Green  |
-| \~b\~          | Blue   |
-| \~w\~ or \~s\~ | White  |
-| \~p\~          | Purple |
-| \~l\~          | Black  |
-| \~y\~          | Yellow |
+| Cod            | Culoare |
+| -------------- | ------- |
+| \~r\~          | Red     |
+| \~g\~          | Green   |
+| \~b\~          | Blue    |
+| \~w\~ or \~s\~ | White   |
+| \~p\~          | Purple  |
+| \~l\~          | Black   |
+| \~y\~          | Yellow  |
 
 Deci, culorile de încorporare pot merge astfel: **\~w\~ Bună ziua acesta este \~b\~ albastru \~w\~ și acesta este \~ r\~ roșu**
 
 Puteți utiliza o altă combinație de caractere pentru a vă juca cu combinații de culori, **\~h\~**, face o anumită culoare mai deschisă, iată câteva exemple:
 
-|                                |                  |
+| Cod                            | Culoare          |
 | ------------------------------ | ---------------- |
 | \~r\~\~h\~                     | Roșu mai deschis |
 | \~r\~\~h\~\~h\~                | Roșu roz         |
@@ -761,21 +756,21 @@ Caracterul de evadare este un caracter în care, atunci când este prefixat la u
 
 Secvențele de evacuare facilitează exprimarea anumitor caractere în codul sursă al scriptului dvs., iată un tabel care conține secvențele de evadare utilizate în pawn:
 
-|                                               |              |
-| --------------------------------------------- | ------------ |
-| Bip sonor (pe mașini server)                  | `\a` or `\7` |
-| Backspace                                     | `\b`         |
-| Evadare                                       | `\e`         |
-| Formular de alimentare                        | `\f`         |
-| Linie nouă                                    | `\n`         |
-| Retur transport                               | `\r`         |
-| Filă orizontală                               | `\t`         |
-| Fila verticală                                | `\v`         |
-| Backslash                                     | `\\`         |
-| Citat unic                                    | `\'`         |
-| Citat dublu                                   | `\"`         |
-| Cod de caractere cu valori zecimale "ddd"     | `\ddd;`      |
-| Cod de caractere cu valori hexazecimale "hhh" | `\xhhh;`     |
+| Descriere                                     | Secvență de evadare |
+| --------------------------------------------- | ------------------- |
+| Bip sonor (pe mașini server)                  | `\a` or `\7`        |
+| Backspace                                     | `\b`                |
+| Evadare                                       | `\e`                |
+| Formular de alimentare                        | `\f`                |
+| Linie nouă                                    | `\n`                |
+| Retur transport                               | `\r`                |
+| Filă orizontală                               | `\t`                |
+| Fila verticală                                | `\v`                |
+| Backslash                                     | `\\`                |
+| Citat unic                                    | `\'`                |
+| Citat dublu                                   | `\"`                |
+| Cod de caractere cu valori zecimale "ddd"     | `\ddd;`             |
+| Cod de caractere cu valori hexazecimale "hhh" | `\xhhh;`            |
 
 Să ne uităm la fiecare dintre ei, la urma urmei, cel mai bun mod de a învăța acest gen de lucruri stă în practicarea lor.
 
@@ -1038,7 +1033,7 @@ new chr = ''';
 Pur și simplu pentru că compilatorul va considera prima pereche de ghilimele simple ca o singură entitate, iar a doua ca o secvență de ghilimele nedeschise, așa că, pentru a remedia acest lucru, va trebui să scăpăm de cel din mijloc;
 
 ```cpp
-new chr = ''\';
+new chr = '\'';
 ```
 
 - ** Secvența de evadare `Citat dublu` - `\"`**
@@ -1131,7 +1126,7 @@ Cu toate acestea, nu poți schimba acest lucru în (`-`), dar orice altceva este
 
 Această porțiune de aici nu are absolut nimic de-a face cu secvențele de evadare, dar este utilizată la formatarea textelor și a gametextului, este mai bine să o puneți aici decât oriunde altundeva;
 
-|       |                                                                                                                               |
+| Cod   | Descriere                                                                                                                     |
 | ----- | ----------------------------------------------------------------------------------------------------------------------------- |
 | `~u~` | Săgeată sus (gri)                                                                                                             |
 | `~d~` | Săgeată în jos (gri)                                                                                                          |
@@ -1265,7 +1260,7 @@ Din nou, la fel ca specificatorul întregului, acesta acceptă constante, variab
 
 ```cpp
 #define NAME "Max"
-new message[] = `Hello there!`;
+new message[] = "Hello there!";
 
 printf("His name is %s", NAME);
 printf("Hey, %s", message);
@@ -1572,7 +1567,7 @@ Punând toate acțiunile pe care le-am văzut până acum la acțiune, putem ori
 Însă în lumea reală, majorității oamenilor nu le place să se uite la terminale, sunt prea înfricoșători și complicate pentru utilizatorul obișnuit și, după cum știți cu toții, mesajele clientului apar pe ecranul jocului și nu consola, totuși , acestea nu pot fi formatate în mișcare, sunt mai mult ca o funcție de imprimare s-ar putea spune, pentru a ocoli această limitare, folosim și o altă funcție foarte eficientă, numită `format`, nu vom aprofunda definiția acesteia, așa cum am am trecut deja prin explicarea acestuia în părțile anterioare, (consultați [acest](../scripting/functions/format)), dar, iată un memento al sintaxei sale;
 
 ```cpp
-format(output[], len, const format[], \{Float, _}: ...}
+format(output[], len, const format[], {Float, _}: ...)
 ```
 
 Să aruncăm o privire la aceste exemple;
@@ -1584,7 +1579,8 @@ Să aruncăm o privire la aceste exemple;
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);
+SendClientMessageToAll(0, output);
 ```
 
 > [Informații]: playerul cu ID-ul 9 este numit <span style={{color: '#ee11cc'}}>Player1</span>.
@@ -1637,7 +1633,7 @@ Având în vedere următoarea listă de jucători conectați:
 
 Spuneți, `playerid` `0` a ucis `playerid` `6` , mesajele formatate ar trebui să scrie `** {FF0000} Compton {000000} ucis> {0000FF} Bartolomew ** `, care va trimite următorul mesaj client tuturor pe server:
 
-> <span style={{color: 'red'}}>Compton</span> ­ <span style={{color: '#000000'}}>killed</span> ­ <span style={{color: 'blue'}}>Bartolomew</span>
+> <span style={{color: 'red'}}>Compton</span>  <span style={{color: '#000000'}}>killed</span>  <span style={{color: 'blue'}}>Bartolomew</span>
 
 Îmi cer scuze dacă v-am confundat folosind [shift bit logic](https://en.wikipedia.org/wiki/Logical_shift), a fost pur și simplu folosit aici pentru a transforma numărul zecimal returnat de funcția `GetPlayerColor` în un număr hexazecimal care reprezintă o culoare, schimbarea în sine este utilizată pentru a omite spațiul -alfa-, pentru mai multe despre acest lucru, vă recomand cu tărie să verificați [acest tutorial](Binary) de **Kyosaur**.
 

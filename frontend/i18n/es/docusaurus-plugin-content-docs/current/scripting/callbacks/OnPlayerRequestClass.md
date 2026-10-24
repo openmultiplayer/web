@@ -1,6 +1,6 @@
 ---
-título: OnPlayerRequestClass
-descripción: Se llama cuando un jugador cambia de clase en la selección de clase (y cuando la selección de clase aparece por primera vez).
+title: OnPlayerRequestClass
+description: Se llama cuando un jugador cambia de clase en la selección de clase (y cuando la selección de clase aparece por primera vez).
 tags: ["player"]
 ---
 
@@ -22,9 +22,9 @@ Siempre se llama primero en filterscripts.
 ## Ejemplos
 
 ```c
-public OnPlayerRequestClass(playerid,classid)
+public OnPlayerRequestClass(playerid, classid)
 {
-    if (classid == 3 && !IsPlayerAdmin(playerid))
+    if (classid == 3 && !IsPlayerAdmin(playerid))
     {
         SendClientMessage(playerid, COLOR_RED, "Este skin es solo para administradores!");
         return 0;
@@ -40,6 +40,10 @@ public OnPlayerRequestClass(playerid,classid)
 Este callback también se llama cuando un jugador presiona F4.
 
 :::
+
+## Callbacks Relacionados
+
+- [OnPlayerRequestSpawn](OnPlayerRequestSpawn): Llamado cuando el jugador va a spawnear desde la selección de skin.
 
 ## Funciones Relacionadas
 

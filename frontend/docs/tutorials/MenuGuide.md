@@ -47,7 +47,7 @@ AddMenuItem(teleportmenu, 0, "SF");
 AddMenuItem(teleportmenu, 0, "SF");
 AddMenuItem(teleportmenu, 0, "LV");
 AddMenuItem(teleportmenu, 0, "LV");
- 
+
 AddMenuItem(teleportmenu, 1, "Grove Street");
 AddMenuItem(teleportmenu, 1, "Starfish Tower");
 AddMenuItem(teleportmenu, 1, "Wheel Arch Angels");
@@ -58,10 +58,11 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 The explanation for [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | The menuid of the menu where the item shall be displayed |
-| ------ | -------------------------------------------------------- |
-| column | The column in which the item shall be shown              |
-| text   | The text of the item                                     |
+| Parameter | Specifies                                                |
+| --------- | -------------------------------------------------------- |
+| menuid    | The menuid of the menu where the item shall be displayed |
+| column    | The column in which the item shall be shown              |
+| text      | The text of the item                                     |
 
 ## Creating the effects for the items
 
@@ -90,9 +91,9 @@ public OnPlayerSelectedMenuRow(playerid, row)
 Now in between these brackets is where the `switch` is, this checks what item the player selected or `row` this can be done with `if` statements checking what `row` it is, but the `switch` is a much simpler way of writing it.
 
 ```pawn
-if(CurrentMenu == teleportmenu)
+if (CurrentMenu == teleportmenu)
 {
-    switch(row)
+    switch (row)
     {
         case 0: //Grove Street
         {
@@ -139,9 +140,9 @@ if(CurrentMenu == teleportmenu)
 Now we need a command to show the menu. This is the easiest step. Just a comparison with `strcmp` and a `ShowMenuForPlayer`. This is done in `OnPlayerCommandText`. Or, if you have a command processor already, use that instead to call `ShowMenuForPlayer`.
 
 ```pawn
-if(strcmp(cmdtext, "/teleport", true) == 0)
+if (strcmp(cmdtext, "/teleport", true) == 0)
 {
-    ShowMenuForPlayer(teleportmenu,playerid);
+    ShowMenuForPlayer(teleportmenu, playerid);
     return 1;
 }
 ```

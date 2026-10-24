@@ -32,7 +32,7 @@ It is always called first in filterscripts.
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("Vehicle %i spawned!",vehicleid);
+    printf("Vehicle %i spawned!", vehicleid);
     return 1;
 }
 ```

@@ -1,6 +1,6 @@
 ---
-título: OnPlayerDeath
-descripción: Este callback se llama cuando un jugador muere, ya sea suicidándose o siendo asesinado por otro jugador.
+title: OnPlayerDeath
+description: Este callback se llama cuando un jugador muere, ya sea suicidándose o siendo asesinado por otro jugador.
 tags: ["player"]
 ---
 
@@ -33,7 +33,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     SendDeathMessage(killerid, playerid, reason); //Muestra el asesinato en la tabla de asesinatos
 
     //Comprueba si 'killerid' es válida antes de hacer cualquier cosa con ella.
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         PlayerKills[killerid] ++;
     }

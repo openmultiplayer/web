@@ -44,3 +44,7 @@ Korištenje funkcija kamere izravno nakon omogućavanja režima spectatora ne ra
 - [SetCameraBehindPlayer](SetCameraBehindPlayer): Postavi kameru igrača iza njega.
 - [GetPlayerCameraPos](GetPlayerCameraPos): Saznajte gdje je kamera igrača.
 - [GetPlayerCameraFrontVector](GetPlayerCameraFrontVector): Dobij prednji vektor kamere igrača.
+
+## Srodne Resources
+
+- [Stilovi Rezanja Kamere](../resources/cameracutstyles)

@@ -1,13 +1,13 @@
 ---
 title: Ban
 sidebar_label: Ban
-description: Bane um jogador que está atualmente online no servidor. Ele não poderá mais entrar no servidor. A proibição será baseada em IP e será salva no arquivo samp.ban no diretório raiz do servidor. O BanEx pode ser usado para justificar o banimento. Os banimentos de IP podem ser adicionados ou removidos usando os comandos RCON banip e unbanip (SendRconCommand).
+description: Bane um jogador que está atualmente online no servidor.
 tags: []
 ---
 
 ## Descrição
 
-Bane um jogador que está atualmente online no servidor. Ele não poderá mais entrar no servidor. A proibição será baseada em IP e será salva no arquivo samp.ban no diretório raiz do servidor. O BanEx pode ser usado para justificar o banimento. Os banimentos de IP podem ser adicionados ou removidos usando os comandos RCON banip e unbanip (SendRconCommand).
+Bane um jogador que está atualmente online no servidor. Ele não poderá mais entrar no servidor. A proibição será baseada em IP e será salva no arquivo **bans.json** no diretório raiz do servidor. O BanEx pode ser usado para justificar o banimento. Os banimentos de IP podem ser adicionados ou removidos usando os comandos RCON banip e unbanip (SendRconCommand).
 
 | Nome     | Descrição                     |
 | -------- | ----------------------------- |
@@ -22,7 +22,7 @@ Esta função não retorna nenhum valor específico.
 ```c
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/banme", true) == 0)
+    if (strcmp(cmdtext, "/banme", true) == 0)
     {
         // Bane o jogador que executar este comando.
         Ban(playerid);
@@ -44,7 +44,7 @@ public DelayedBan(playerid)
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if(strcmp(cmdtext, "/banme", true) == 0)
+    if (strcmp(cmdtext, "/banme", true) == 0)
     {
         // Bane o jogador que executar este comando.
 

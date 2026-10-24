@@ -86,3 +86,62 @@ if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH)
 ```
 
 Voorbeelden met deze macros staan in het origineel en werken 1:1 in het Nederlands.
+
+## Voorbeelden
+
+```c
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
+{
+	if (PRESSED(KEY_FIRE))
+	{
+		if (IsPlayerInAnyVehicle(playerid))
+		{
+			AddVehicleComponent(GetPlayerVehicleID(playerid), 1010);
+		}
+	}
+	return 1;
+}
+```
+
+```c
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
+{
+	if (PRESSED(KEY_JUMP))
+	{
+		new
+			Float:x,
+			Float:y,
+			Float:z;
+		GetPlayerPos(playerid, x, y, z);
+		SetPlayerPos(playerid, x, y, z + 10.0);
+	}
+	return 1;
+}
+```
+
+```c
+new
+	Float:gPlayerHealth[MAX_PLAYERS];
+
+#if !defined INFINITY
+	#define INFINITY (Float:0x7F800000)
+#endif
+
+public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
+{
+	if (PRESSED(KEY_ACTION))
+	{
+		// They just pressed the action key, save their
+		// old health for restoration.
+		GetPlayerHealth(playerid, gPlayerHealth[playerid]);
+		SetPlayerHealth(playerid, INFINITY);
+	}
+	else if (RELEASED(KEY_ACTION))
+	{
+		// They just let go of action - restore
+		// their old health again.
+		SetPlayerHealth(playerid, gPlayerHealth[playerid]);
+	}
+	return 1;
+}
+```

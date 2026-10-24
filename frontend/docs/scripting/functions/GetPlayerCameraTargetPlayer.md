@@ -35,7 +35,7 @@ if (IsPlayerAdmin(playerTarget))
 :::warning
 
 - This function is disabled by default to save bandwidth. Use [EnablePlayerCameraTarget](EnablePlayerCameraTarget) to enable it for each player.
-- Do not confuse this function with GetPlayerTargetPlayer. GetPlayerTargetPlayer returns the ID of the player playerid is aming at (with a weapon). GetPlayerCameraTargetPlayer returns the ID of the player playerid is looking at (reference point is the center of the screen).
+- Do not confuse this function with GetPlayerTargetPlayer. GetPlayerTargetPlayer returns the ID of the player playerid is aiming at (with a weapon). GetPlayerCameraTargetPlayer returns the ID of the player playerid is looking at (reference point is the center of the screen).
 
 :::
 

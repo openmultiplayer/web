@@ -41,7 +41,7 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
     {
         EditPlayerObject(playerid, objectid);
     }
-    SendClientMessage(playerid, 0xFFFFFFFF, "Agora você pode editar seu objeto"");
+    SendClientMessage(playerid, 0xFFFFFFFF, "Agora você pode editar seu objeto");
     return 1;
 }
 ```
@@ -49,3 +49,7 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
 ## Funções Relacionadas
 
 - [SelectObject](../functions/SelectObject): Seleciona um objeto.
+
+## Recursos relacionados
+
+- [Tipos de Seleção de Objeto](../resources/selectobjecttypes)

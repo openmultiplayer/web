@@ -20,7 +20,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     // Koristimo 18 timova, definirajmo ih;
     SetTeamCount(18);

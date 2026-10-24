@@ -36,7 +36,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     SendDeathMessage(killerid, playerid, reason); // 在击杀feed中显示击杀信息
 
     // 使用前必须验证killerid有效性
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         PlayerKills[killerid]++;
     }

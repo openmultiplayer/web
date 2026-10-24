@@ -33,6 +33,12 @@ public OnGameModeInit()
 
 ## Zabilješke
 
+:::tip
+
+Boje Gametext-a možete koristiti i u textdrawu.
+
+:::
+
 :::note
 
 Ako je textdraw već prikazan, on mora biti ponovno prikazan (TextDrawShowForAll/TextDrawShowForPlayer) kako bi izmjene ove funkcije imale efekta.

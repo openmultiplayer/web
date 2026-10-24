@@ -30,7 +30,7 @@ Uvijek je pozvan prvo u filterskripti tako da će return-ovanje 1 ovdje blokirat
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID) // If not self-inflicted
+    if (issuerid != INVALID_PLAYER_ID) // If not self-inflicted
     {
         new
             infoString[128],
@@ -53,7 +53,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
+    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
         // Jedan metak u glavu sa sniperom da ga odmah ubije
         SetPlayerHealth(playerid, 0.0);
@@ -80,3 +80,7 @@ GetPlayerHealth i GetPlayerArmour će return-ovati stare vrijednosti igračevog 
 
 - [OnPlayerGiveDamage](OnPlayerGiveDamage): This callback is called when a player gives damage.
 - [OnPlayerWeaponShot](OnPlayerWeaponShot): This callback is called when a player fires a weapon.
+
+## Srodne Resources
+
+- [Dijelovi tijela](../resources/bodyparts)

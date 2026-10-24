@@ -288,7 +288,7 @@ for (new a = 9; a < 10; a++)
 Door alle spelers itereren:
 
 ```c
-for(new i,a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
         if (IsPlayerConnected(i))
         {
@@ -450,3 +450,10 @@ for (new a = 0; a < 3; a++)
 ### return
 
 Stopt een functie en keert terug naar de aanroeper; kan ook een waarde retourneren.
+
+## Zie ook
+
+- [Trefwoorden: Statements](Statements)
+- [Trefwoorden: Operators](Operators)
+- [Trefwoorden: Directives](Directives)
+- [Trefwoorden: Initialisers](Initialisers)

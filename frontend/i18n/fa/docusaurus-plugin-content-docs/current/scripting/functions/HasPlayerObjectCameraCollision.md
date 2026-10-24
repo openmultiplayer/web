@@ -1,7 +1,7 @@
 ---
 title: HasPlayerObjectCameraCollision
 sidebar_label: HasPlayerObjectCameraCollision
-description: چک می‌کنه که آیا یه player-object برخورد دوربین فعال داره یا نه. (SetPlayerObjectNoCameraCollision)
+description: چک می‌کنه که آیا یه player-object برخورد دوربین فعال داره یا نه (SetPlayerObjectNoCameraCollision).
 tags: ["player", "object", "playerobject"]
 ---
 

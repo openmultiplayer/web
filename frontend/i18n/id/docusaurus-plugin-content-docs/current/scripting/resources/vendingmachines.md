@@ -1,7 +1,7 @@
 ---
 id: vendingmachines
 title: Mesin Penjual Otomatis
-description: Daftar semua lokasi mesin penjual otomatis, pemain menggunakannya dengan jarak 2 unik. Sangat berguna untuk anti-cheat.
+description: Daftar semua lokasi mesin penjual otomatis, pemain menggunakannya dengan jarak 2 unik.
 ---
 
 Eksterior:

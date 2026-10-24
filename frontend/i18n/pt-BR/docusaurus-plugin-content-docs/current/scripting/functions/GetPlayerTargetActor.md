@@ -38,7 +38,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Não funciona para joypads/controladores e após uma certa distância. Não funciona para o rifle de precisão, pois não trava em nada e, como tal, não pode e não irá devolver um jogador.
+- Não funciona para joypads/controladores e após uma certa distância.
+- Não funciona para o rifle de precisão, pois não trava em nada e, como tal, não pode e não irá devolver um jogador.
 
 :::
 

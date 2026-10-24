@@ -27,11 +27,11 @@ Ta funkcja nie zwraca żadnych konkretnych wartości.
 ## Przykłady
 
 ```c
-public OnPlayerConnect( playerid )
+public OnPlayerConnect(playerid)
 {
     // Pozwala graczowi na teleportację przez kliknięcie prawym przyciskiem myszy na mapie,
     // ponieważ jest to w OnPlayerConnect, wykona się to dla KAŻDEGO gracza
-    AllowPlayerTeleport( playerid, 1 );
+    AllowPlayerTeleport(playerid, 1);
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
-título: OnPlayerGiveDamage
-descripción: Este callback se llama cuando un jugador le hace daño a otro jugador.
+title: OnPlayerGiveDamage
+description: Este callback se llama cuando un jugador le hace daño a otro jugador.
 tags: ["player"]
 ---
 
@@ -58,3 +58,10 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 Si lo que buscás es prevenir a ciertos jugadores de dañarse entre sí, usá SetPlayerTeam.
 
 :::
+
+## Callbacks Relacionados
+
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerGiveDamage:
+
+- [OnPlayerTakeDamage](OnPlayerTakeDamage): Este callback se llama cuando un jugador sufre daño.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Este callback se llama cuando un jugador efectúa un disparo de un arma.

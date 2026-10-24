@@ -28,7 +28,7 @@ Se a cor do veículo for preta, o paintjob pode não ser visível. É melhor dei
 
 ```c
 new rand = random(3); // Será 0, 1 ou 2 (todos válidos)
-ChangeVehicleColor(GetPlayerVehicleID(playerid),1,1); // Certifique-se que é branco para um resultado melhor.
+ChangeVehicleColor(GetPlayerVehicleID(playerid), 1, 1); // Certifique-se que é branco para um resultado melhor.
 ChangeVehiclePaintjob(GetPlayerVehicleID(playerid), rand); // Altera o paintjob para um aleatório, do atual veículo do jogador.
 ```
 
@@ -36,3 +36,7 @@ ChangeVehiclePaintjob(GetPlayerVehicleID(playerid), rand); // Altera o paintjob 
 
 - [ChangeVehicleColor](ChangeVehicleColor): Define a cor de um veículo.
 - [OnVehiclePaintjob](../callbacks/OnVehiclePaintjob): É chamado quando o paintjob de um veículo é alterado.
+
+## Recursos relacionados
+
+- [Paintjobs](../resources/paintjobs)

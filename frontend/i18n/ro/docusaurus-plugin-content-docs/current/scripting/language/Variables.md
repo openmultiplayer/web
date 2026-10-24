@@ -57,25 +57,25 @@ Modificarea valorii unei variabile este posibilă numai dacă partea codului în
 
 new g_var = 5;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     g_var = 10;
 
-    printf ("The value is %i", g_var);
+    printf("The value is %i", g_var);
 
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     g_var = 100;
 
-    printf ("The value is %i", g_var);
+    printf("The value is %i", g_var);
 
     return 1;
 }
 
-// Output :
+// Output:
 // The value is 10
 // The value is 100
 
@@ -87,7 +87,7 @@ public OnPlayerConnect (playerid)
 ```c
 #include <a_samp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new localVar;
 
@@ -96,7 +96,7 @@ public OnFilterScriptInit ()
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     localVar = 10; // This line will show an error upon compilation
 
@@ -113,7 +113,7 @@ Un lucru important de remarcat este că nu puteți declara variabile cu aceleaș
 
 new g_score;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new g_score = 5; // This line will show an error.
     return 1;
@@ -132,14 +132,14 @@ Acum că știți cum să declarați variabile, trebuie să cunoașteți regulile
 #### Exemple:
 
 ```c
-new new; // Incorrect : Using a reserved word
+new new; // Incorrect: Using a reserved word
 new _new; // Correct
 
-new 10letters; // Incorrect : Name starting with a number
+new 10letters; // Incorrect: Name starting with a number
 new letters10; // Correct
 new letters_10; // Correct
 
-new my name; // Incorrect : Space in the name
+new my name; // Incorrect: Space in the name
 new my_name; // Correct
 
 new !nternet; // Incorrect
@@ -190,27 +190,27 @@ Pawnul fiind un limbaj fără tip ne permite să stocăm diferite tipuri de date
 ```c
 #include <a_samp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
 
-    new var ;
+    new var;
 
     var = 'a';
-    printf ("%c", var);
+    printf("%c", var);
 
     var = 1;
-    printf ("%d", var);
+    printf("%d", var);
 
     var = 1.0;
-    printf ("%f", var);
+    printf("%f", var);
 
     var = true;
-    printf ("%d", var); // prints a value 0 or 1
+    printf("%d", var); // prints a value 0 or 1
 
     return 1;
 }
 
-// Output :
+// Output:
 a
 1
 1.000000

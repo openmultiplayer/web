@@ -20,9 +20,9 @@ Ang score ng player.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,text[])
+public OnPlayerCommandText(playerid, text[])
 {
-    if (!strcmp(cmdtext,"/score",true))
+    if (!strcmp(cmdtext, "/score", true))
     {
         new string[128];
         format(string, sizeof(string), "Score: %i", GetPlayerScore(playerid));

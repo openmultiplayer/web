@@ -40,7 +40,17 @@ public OnPlayerEnterCheckpoint(playerid)
 
 <NoteNPCCallbacks />
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerLeaveCheckpoint](OnPlayerLeaveCheckpoint): Appelée lorsqu'un joueur sort d'un checkpoint.
+- [OnPlayerEnterRaceCheckpoint](OnPlayerEnterRaceCheckpoint): Appelée lorsqu'un joueur entre dans un checkpoint de course.
+- [OnPlayerLeaveRaceCheckpoint](OnPlayerLeaveRaceCheckpoint): Appelée lorsqu'un joueur sort d'un checkpoint de course.
+
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Créer un checkpoint pour un joueur.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Désactive le checkpoint du joueur.

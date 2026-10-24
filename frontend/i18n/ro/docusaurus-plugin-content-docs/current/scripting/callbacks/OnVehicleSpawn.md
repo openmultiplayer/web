@@ -32,7 +32,7 @@ Este întotdeauna numit primul în filterscript-uri.
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("Vehiculul %i a apărut!",vehicleid);
+    printf("Vehiculul %i a apărut!", vehicleid);
     return 1;
 }
 ```

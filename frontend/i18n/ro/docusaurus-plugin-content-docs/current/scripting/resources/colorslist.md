@@ -1,7 +1,7 @@
 ---
 title: Lista de culori
 sidebar_label: Lista de culori
-description: Culorile sunt pretutindeni în SA-MP - vehicule, nume de jucători și clipuri, extrase de text, gametext, chat, texte 3D și dialoguri (ca încorporare a culorilor)! Mai jos puteți găsi informații despre aceste lucruri diferite.
+description: Culorile sunt pretutindeni în SA-MP - vehicule, nume de jucători și clipuri, extrase de text, gametext, chat, texte 3D și dialoguri (ca încorporare a culorilor)!
 ---
 
 ## Chat text and player color

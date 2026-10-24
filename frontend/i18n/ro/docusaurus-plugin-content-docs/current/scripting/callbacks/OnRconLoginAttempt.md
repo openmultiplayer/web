@@ -26,9 +26,9 @@ public OnRconLoginAttempt(ip[], password[], success)
 {
     if (!success) //Dacă parola a fost incorectă
     {
-        printf("CONECTARE RCON ESUATA PRIN IP %s FOLOSIND PAROLA %s",ip, password);
+        printf("CONECTARE RCON ESUATA PRIN IP %s FOLOSIND PAROLA %s", ip, password);
         new pip[16];
-        for(new i = GetPlayerPoolSize(); i != -1; --i) //Buclă prin toți jucătorii
+        for (new i = GetPlayerPoolSize(); i != -1; --i) //Buclă prin toți jucătorii
         {
             GetPlayerIp(i, pip, sizeof(pip));
             if (!strcmp(ip, pip, true)) //Dacă IP-ul unui jucător este IP-ul care a eșuat autentificarea
@@ -46,7 +46,8 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-Acest callback este apelat numai când autentificarea /rcon este folosită în joc. Acest callback este apelat numai atunci când jucătorul nu este încă conectat. Când jucătorul este conectat, este apelat OnRconCommand.
+- Acest callback este apelat numai când autentificarea /rcon este folosită în joc.
+- Acest callback este apelat numai atunci când jucătorul nu este încă conectat. Când jucătorul este conectat, este apelat OnRconCommand.
 
 :::
 

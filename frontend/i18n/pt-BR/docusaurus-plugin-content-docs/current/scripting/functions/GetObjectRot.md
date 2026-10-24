@@ -8,7 +8,7 @@ tags: ["object"]
 
 ## Descrição
 
-Use esta função para obter a rotação atual dos objetos. A rotação é salva por referência em três variáveis ​​de rotaçãoX/rotaçãoY/rotaçãoZ.
+Use esta função para obter a rotação atual dos objetos. A rotação é salva por referência em três variáveis de rotaçãoX/rotaçãoY/rotaçãoZ.
 
 | Nome | Descrição |
 | ---------------- | ------------------------------------------------------------- |

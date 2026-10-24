@@ -44,9 +44,7 @@ Fix ở đây: https://pastebin.com/G81da7N1
 
 :::warning
 
-Lỗi đã biết:
-
-- Xem trước một thành phần bên trong cửa hàng tùy chỉnh có thể gọi callback này.
+Lỗi đã biết: Xem trước một thành phần bên trong cửa hàng tùy chỉnh có thể gọi callback này.
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title: GetMaxPlayers
 sidebar_label: GetMaxPlayers
-description: 返回服务器配置中设置的最大玩家数量（由config.json中的max_players变量决定）。
+description: 返回服务器配置中设置的最大玩家数量（由config.json决定）。
 tags: ["玩家"]
 ---
 
@@ -21,8 +21,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);  // 向玩家发送服务器最
 
 :::warning
 
-- 此函数不能替代 MAX_PLAYERS 宏定义，不可用于编译时数组大小定义
-- 应始终将 MAX_PLAYERS 宏定义为与 max_players 配置相同或更大的值
+此函数不能替代 MAX_PLAYERS 宏定义，不可用于编译时数组大小定义应始终将 MAX_PLAYERS 宏定义为与 max_players 配置相同或更大的值
 
 :::
 

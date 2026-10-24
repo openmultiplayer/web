@@ -50,10 +50,14 @@ Bug connu : la prévisualisation d'un composant dans une boutique de mods peut a
 
 ## Fonctions connexes
 
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
+
 - [ChangeVehicleColor](../functions/ChangeVehicleColor): Modifie la couleur d'un véhicule.
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Change la peinture d'un véhicule.
 
 ## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
 
 - [OnVehiclePaintjob](OnVehiclePaintjob): Appelée lorsque la peinture d'un véhicule est changée.
 - [OnVehicleMod](OnVehicleMod): Appelée lorsqu'un véhicule est modifié.

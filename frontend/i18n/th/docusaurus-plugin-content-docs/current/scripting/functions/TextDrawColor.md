@@ -33,6 +33,12 @@ public OnGameModeInit()
 
 ## บันทึก
 
+:::tip
+
+You can also use GameText colors in textdraws.
+
+:::
+
 :::note
 
 If the TextDraw is already shown, it must be re-shown (TextDrawShowForAll/TextDrawShowForPlayer) for the changes of this function to take effect.

@@ -1,7 +1,7 @@
 ---
 title: OnPlayerDeath
 sidebar_label: OnPlayerDeath
-description: Cette callback est appelée quand le joueur est mort. Il peut s'agir aussi bien d'une mort par kill qu'une mort par suicide.
+description: Cette callback est appelée quand le joueur est mort.
 tags: ["player"]
 ---
 
@@ -30,7 +30,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
     SendDeathMessage(killerid, playerid, reason); // Notification dans le killfeed
 
     // Vérifie si le killerid est valide
-    if (killerid != INVALID_PLAYER_ID)
+    if (killerid != INVALID_PLAYER_ID)
     {
         PlayerKills[killerid] ++;
     }
@@ -58,7 +58,15 @@ Vous DEVEZ vérifier que `killerid` est valide (pas `INVALID_PLAYER_ID`) avant d
 
 :::
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerSpawn](OnPlayerSpawn): Appelée lorsqu'un joueur spawn (apparaît).
+
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [SendDeathMessage](../functions/SendDeathMessage): Ajoute un kill dans le killfeed.
 - [SetPlayerHealth](../functions/SetPlayerHealth): Heal un joueur.

@@ -26,7 +26,7 @@ new Text:MyTextdraw;
 
 public OnGameModeInit()
 {
-    MyTextDraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
+    MyTextDraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
     TextDrawTextSize(MyTextDraw, 2.0, 3.6);
     return 1;
 }

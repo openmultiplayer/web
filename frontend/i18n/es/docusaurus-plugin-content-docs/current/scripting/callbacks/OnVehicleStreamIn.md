@@ -1,6 +1,6 @@
 ---
-título: OnVehicleStreamIn
-descripción: Se llama cuando un vehículo es cargado (se hace visible) en el cliente de un jugador.
+title: OnVehicleStreamIn
+description: Se llama cuando un vehículo es cargado (se hace visible) en el cliente de un jugador.
 tags: ["vehicle"]
 ---
 
@@ -32,5 +32,11 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 ## Notas
 
 <NoteNPCCallbacksES />
+
+## Callbacks Relacionados
+
+- [OnVehicleStreamOut](OnVehicleStreamOut): Llamado cuando un vehiculo es "descargado" para un jugador.
+- [OnPlayerStreamIn](OnPlayerStreamIn): Llamado cuando un jugador es "cargado" para otro jugador.
+- [OnPlayerStreamOut](OnPlayerStreamOut): Llamado cuando un jugador es "descargado" para otro jugador.
 
 ## Funciones Relacionadas

@@ -113,10 +113,10 @@ Listing: good declaration
 
 new i = 1
 new j                                   /* j is zero */
-new k = ’a’                             /* k has character code for letter ’a’ */
+new k = 'a'                             /* k has character code for letter ’a’ */
 
 new a[] = {1,4,9,16,25}                 /* a has 5 elements */
-new s1[20] = {’a’,’b’}                  /* the other 18 elements are 0 */
+new s1[20] = {'a','b'}                  /* the other 18 elements are 0 */
 
 new s2[] = "Hello world..."             /* a unpacked string */
 
@@ -259,7 +259,7 @@ Listing: tag names
 new bool:flag = true            /* "flag" can only hold "true" or "false" */
 
 const error:success = 0
-const error:fatal= 1
+const error:fatal = 1
 const error:nonfatal = 2
 
 error:errno = fatal

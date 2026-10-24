@@ -27,7 +27,7 @@ Essa callback é executada quando o cliente/player faz o update do seu status pa
 public OnPlayerUpdate(playerid)
 {
     new iCurWeap = GetPlayerWeapon(playerid); // Retorna a arma atual do jogador
-    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Caso o mesmo tenha trocado de arma após o último update
+    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Caso o mesmo tenha trocado de arma após o último update
     {
         // Vamos chamar a callback OnPlayerChangeWeapon
         OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
@@ -58,7 +58,7 @@ public OnPlayerUpdate(playerid)
 
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // A vida do jogador mudou desde o último update -> server, então obviamente foi atualizada.
         // Vamos fazer uma checagem mais profunda para ver se o mesmo esta ganhando ou perdendo vida, anti-health cheat? ;)
@@ -83,6 +83,7 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Essa callback é executada, aproximadamente, 30 vezes por segundo, por jogador; Use a mesma somente caso saiba o que está fazendo (ou talvez seja mais importante saber para que ela NÃO DEVE SER USADA). A frequência que essa callback é executada varia dependendo da situação e do que o player está fazendo. Dirigir ou participar de um tiroteio vai fazer com que os updates aumentem drasticamente, diferente se o jogador estiver parado...
+- Essa callback é executada, aproximadamente, 30 vezes por segundo, por jogador; Use a mesma somente caso saiba o que está fazendo (ou talvez seja mais importante saber para que ela NÃO DEVE SER USADA).
+- A frequência que essa callback é executada varia dependendo da situação e do que o player está fazendo. Dirigir ou participar de um tiroteio vai fazer com que os updates aumentem drasticamente, diferente se o jogador estiver parado...
 
 :::

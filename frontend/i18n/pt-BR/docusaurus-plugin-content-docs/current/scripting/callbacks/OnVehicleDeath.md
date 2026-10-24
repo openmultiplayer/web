@@ -40,4 +40,6 @@ Essa callback também será executada quando o veículo entrar na água, mesmo p
 
 ## Funções Relacionadas
 
+As seguintes funções podem ser úteis, pois estão relacionadas a esta callback.
+
 - [SetVehicleHealth](../functions/SetVehicleHealth): Define a vida do veículo.

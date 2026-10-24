@@ -49,3 +49,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## توابع مرتبط
 
 - [GetVehicleVelocity](GetVehicleVelocity): سرعت یه ماشین رو در محورهای X، Y و Z دریافت می‌کنه.
+- [SetVehicleAngularVelocity](SetVehicleAngularVelocity): سرعت زاویه‌ای X، Y و Z یه ماشین رو تنظیم می‌کنه.
+- [SetPlayerVelocity](SetPlayerVelocity): تنظیم سرعت یه بازیکن.
+- [GetPlayerVelocity](GetPlayerVelocity): دریافت سرعت یه بازیکن.

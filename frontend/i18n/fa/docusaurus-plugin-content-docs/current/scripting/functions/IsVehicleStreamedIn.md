@@ -25,7 +25,7 @@ tags: ["vehicle"]
 ```c
 new streamedVehicleCount;
 
-for(new i = 1; i < MAX_VEHICLES; i++)
+for (new i = 1; i < MAX_VEHICLES; i++)
 {
     if (IsVehicleStreamedIn(i, playerid))
     {

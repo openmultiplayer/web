@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
+description: Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialoga yanıt verdiğinde tetiklenir.
 tags: []
 ---
 
@@ -34,9 +34,9 @@ ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Sunucu Kuralları
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_RULES)
+    if (dialogid == DIALOG_RULES)
     {
-        if(response) // Eğer Evet'e tıklarsa çalışacak işlem.
+        if (response) // Eğer Evet'e tıklarsa çalışacak işlem.
         {
             SendClientMessage(playerid, COLOR_GREEN, "Kuralları kabul ettiğiniz için teşekkürler.");
         }
@@ -62,15 +62,15 @@ ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Giriş", "Şifreni
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_LOGIN)
+    if (dialogid == DIALOG_LOGIN)
     {
-        if(!response) // Cancel tuşuna basarsa çalışacak işlem.
+        if (!response) // Cancel tuşuna basarsa çalışacak işlem.
         {
             Kick(playerid);
         }
         else // Eğer Cancel dışında bir işleme tıklarsa gerçekleşecek işlem.
         {
-            if(CheckPassword(playerid, inputtext))
+            if (CheckPassword(playerid, inputtext))
             {
                 SendClientMessage(playerid, COLOR_RED, "Giriş yaptın.");
             }
@@ -99,12 +99,12 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Silahlar", "Deser
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // Select'e tıklandığında çalışacak işlem.
+        if (response) // Select'e tıklandığında çalışacak işlem.
         {
             // Oyuncuya seçtiği liste id'sine göre silah veriliyor.
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Desert Eagle veriliyor.
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // AK-47 veriliyor.
@@ -133,12 +133,12 @@ AK-47\t120\t400",
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // Select butonuna tıklandığında çalışır.
+        if (response) // Select butonuna tıklandığında çalışır.
         {
             // Give them the weapon
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Give them an M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Give them an MP5

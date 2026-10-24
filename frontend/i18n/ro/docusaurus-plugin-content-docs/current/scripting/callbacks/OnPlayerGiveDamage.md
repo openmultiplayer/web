@@ -59,3 +59,8 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 Dacă doriți să împiedicați anumiți jucători să-și deterioreze unii pe alții, utilizați SetPlayerTeam.
 
 :::
+
+## Callback-uri similare
+
+- [OnPlayerTakeDamage](OnPlayerTakeDamage): Acest callback este apelat atunci când un jucător primește daune.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Acest callback este apelat atunci când un jucător trage o lovitură dintr-o armă.

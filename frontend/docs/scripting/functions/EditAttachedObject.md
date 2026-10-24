@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-There are 7 clickable buttons in edition mode. The three single icons that have X/Y/Z on them can be dragged to edit position/rotation/scale. The four buttons in a row are to select the edition mode and save edition: Move, Rotate, Scale and Save.
+There are 7 clickable buttons in edition mode. The three single icons that have X/Y/Z on them can be dragged to edit position/rotation/scale. The four buttons in a row are to select the edition mode and save edition: Move, Rotate, Scale and Save. Clicking Save will call [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject).
 
 :::
 

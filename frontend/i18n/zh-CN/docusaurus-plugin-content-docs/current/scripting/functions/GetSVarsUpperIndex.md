@@ -13,14 +13,14 @@ tags: ["服务器变量"]
 
 ```c
 // 将最大索引值存入变量'SVarUpperIndex'并加1
-new SVarUpperIndex = GetSVarsUpperIndex() + 1;
+new sVarUpperIndex = GetSVarsUpperIndex() + 1;
 
 // 该变量用于统计已设置的服务器变量数量
 new sVarCount;
 
 new sVarName[128];
 
-for(new i = 0; i != sVarUpperIndex; i++) // 遍历所有在最大索引值以下的服务器变量ID
+for (new i = 0; i != sVarUpperIndex; i++) // 遍历所有在最大索引值以下的服务器变量ID
 {
     // 首先获取服务器变量名称
     GetSVarNameAtIndex(i, sVarName, sizeof(sVarName));
@@ -32,7 +32,7 @@ for(new i = 0; i != sVarUpperIndex; i++) // 遍历所有在最大索引值以下
     }
 }
 
-printf("当前共设置了 %i 个服务器变量。最大索引值（最高ID）: %i.", sVarCount, SVarUpperIndex-1);
+printf("当前共设置了 %i 个服务器变量。最大索引值（最高ID）: %i.", sVarCount, SVarUpperIndex - 1);
 ```
 
 ## 相关函数

@@ -33,8 +33,8 @@ if (strcmp(cmd, "/playerlabel", true) == 0)
 {
     new PlayerText3D:playertextid;
     new Float:X, Float:Y, Float:Z;
-    GetPlayerPos( playerid, X, Y, Z );
-    playertextid = CreatePlayer3DTextLabel(playerid,"Hello\nI'm at your position",0x008080FF,X,Y,Z,40.0);
+    GetPlayerPos(playerid, X, Y, Z);
+    playertextid = CreatePlayer3DTextLabel(playerid, "Hello\nI'm at your position", 0x008080FF, X, Y, Z, 40.0);
     return 1;
 }
 ```

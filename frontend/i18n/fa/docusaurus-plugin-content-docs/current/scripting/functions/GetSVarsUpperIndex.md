@@ -9,18 +9,22 @@ tags: ["server variable", "svar"]
 
 هر SVar (متغیر سرور) یه شناسه منحصر به فرد برای lookup داره، این تابع بالاترین ID رو برمی‌گردونه.
 
+## مقادیر برگشتی
+
+بالاترین ID تنظیم شده SVar.
+
 ## مثال‌ها
 
 ```c
 // Store the upper index in the variable 'SVarUpperIndex' + 1
-new SVarUpperIndex = GetSVarsUpperIndex() + 1;
+new sVarUpperIndex = GetSVarsUpperIndex() + 1;
 
 // This sVarCount variable will store how many sVars are set as we count them.
 new sVarCount;
 
 new sVarName[128];
 
-for(new i = 0; i != sVarUpperIndex; i++) // Loop through all sVar IDs under the upper index
+for (new i = 0; i != sVarUpperIndex; i++) // Loop through all sVar IDs under the upper index
 {
     // At first, we need to get SVar name
     GetSVarNameAtIndex(i, sVarName, sizeof(sVarName));
@@ -32,7 +36,7 @@ for(new i = 0; i != sVarUpperIndex; i++) // Loop through all sVar IDs under the 
     }
 }
 
-printf("There are %i server-variables set. Upper index (highest ID): %i.", sVarCount, SVarUpperIndex-1);
+printf("There are %i server-variables set. Upper index (highest ID): %i.", sVarCount, SVarUpperIndex - 1);
 ```
 
 ## توابع مرتبط

@@ -354,7 +354,7 @@ myArray[2]++;
 
 ### Example
 
-As mentioned above a common type of array is the MAX_PLAYERS array. MAX_PLAYERS is not a variable, it's a define which is explained later, but for now accept that it is a constant number equal to the max number of players a server can hold (this by default is 500, even if you change the number in your server.cfg file). The following code uses normal variables to hold data for 4 players and do something with those players in a function (for simplicity's sake assume MAX_PLAYERS is 4 for now):
+As mentioned above a common type of array is the MAX_PLAYERS array. MAX_PLAYERS is not a variable, it's a define which is explained later, but for now accept that it is a constant number equal to the max number of players a server can hold (this by default is 500, even if you change the number in your config.json file). The following code uses normal variables to hold data for 4 players and do something with those players in a function (for simplicity's sake assume MAX_PLAYERS is 4 for now):
 
 ```c
 new
@@ -365,7 +365,7 @@ new
 
 SetPlayerValue(playerid, value)
 {
-    switch(playerid)
+    switch (playerid)
     {
         case 0: gPlayer0 = value; // is the same as doing if (playerid == 0)
         case 1: gPlayer1 = value; // is the same as doing if (playerid == 1)
@@ -710,3 +710,16 @@ MyFunc2()
 ```
 
 static can also be applied to functions in the same way.
+
+# Control Structures
+
+Control structures determine program flow. They can execute code or not based on the contents of variables, the returns of functions and other things. They can also do things repeatedly if need be. See [Control Structures](../language/ControlStructures) for more information.
+
+# Keywords
+
+The keywords of the language are covered in the following pages:
+
+- [Directives](../language/Directives)
+- [Initialisers](../language/Initialisers)
+- [Operators](../language/Operators)
+- [Statements](../language/Statements)

@@ -1,7 +1,7 @@
 ---
 title: OnPlayerEditObject
 sidebar_label: OnPlayerEditObject
-description: Callback này được gọi khi một người chơi kết thúc việc chỉnh sửa một đối tượng ([BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)).
+description: Callback này được gọi khi một người chơi kết thúc việc chỉnh sửa một đối tượng.
 tags: ["player", "object"]
 ---
 

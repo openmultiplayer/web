@@ -15,6 +15,8 @@ Chamada quando um jogador tenta spawnar através da seleção de classe pression
 
 ## Retorno
 
+Retornando 0 nesta callback irá impedir que o player spawne.
+
 Sempre é chamada primeiro em Filterscripts.
 
 ## Exemplos

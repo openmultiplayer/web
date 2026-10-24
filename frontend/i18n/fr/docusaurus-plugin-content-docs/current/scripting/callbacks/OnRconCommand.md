@@ -32,7 +32,7 @@ public OnRconCommand(cmd[])
 ```c
 public OnRconCommand(cmd[])
 {
-    if(!strcmp(cmd, "bonjour", true))
+    if (!strcmp(cmd, "bonjour", true))
     {
         SendClientMessageToAll(0xFFFFFFAA, "Bonjour tous le monde!!");
         print("Vous avez envoyé un message de bonjour à tous les joueurs!");
@@ -46,9 +46,8 @@ public OnRconCommand(cmd[])
 
 :::note
 
-/rcon n'est pas inclut dans `cmd` lorsqu'un joueur tape la commande.
-
-Si vous utilisez la fonction `printf` dans cette callback, un message sera envoyé au joueur qui a tapé la commande dans le jeu, et dans les logs.
+- /rcon n'est pas inclut dans `cmd` lorsqu'un joueur tape la commande.
+- Si vous utilisez la fonction `printf` dans cette callback, un message sera envoyé au joueur qui a tapé la commande dans le jeu, et dans les logs.
 
 :::
 
@@ -60,8 +59,12 @@ Vous devez inclure cette callback dans un filterscript chargé pour qu'elle marc
 
 ## Fonction connexe
 
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
+
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Vérifie si un joueur est loggé en RCON.
 
 ## Callback connexe
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
 
 - [OnRconLoginAttempt](OnRconLoginAttempt): Appelée lorsqu'un joueur essaie de se connecter en RCON.

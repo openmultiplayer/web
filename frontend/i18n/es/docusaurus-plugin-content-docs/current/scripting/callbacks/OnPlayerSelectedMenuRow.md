@@ -1,6 +1,6 @@
 ---
-título: OnPlayerSelectedMenuRow
-descripción: Este callback se llama cuando un jugador selecciona un item de un menú (ShowMenuForPlayer).
+title: OnPlayerSelectedMenuRow
+description: Este callback se llama cuando un jugador selecciona un item de un menú (ShowMenuForPlayer).
 tags: ["player", "menu"]
 ---
 
@@ -34,7 +34,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 {
     if (GetPlayerMenu(playerid) == MyMenu)
     {
-        switch(row)
+        switch (row)
         {
             case 0: print("Item 1 Seleccionado");
             case 1: print("Item 2 Seleccionado");
@@ -51,6 +51,10 @@ public OnPlayerSelectedMenuRow(playerid, row)
 El ID del menú no se pasa a este callback. Debes usar GetPlayerMenu para determinar en cuál menú el jugador seleccionó un item.
 
 :::
+
+## Callbacks Relacionados
+
+- [OnPlayerExitedMenu](OnPlayerExitedMenu): Llamado cuando un jugador sale de un menu.
 
 ## Funciones Relacionadas
 

@@ -76,7 +76,7 @@ SetPlayerSkinFix(playerid, skinid)
         SetPlayerFacingAngle(playerid, tmpPos[3]);
         TogglePlayerControllable(playerid, true); // 必须解除控制，防止上下车动画导致冻结
         tmp = SetPlayerSkin(playerid, skinid);
-        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
+        PutPlayerInVehicle(playerid, vehicleid, (seatid == 128) ? 0 : seatid);
         return tmp;
     }
     else
@@ -92,8 +92,7 @@ SetPlayerSkinFix(playerid, skinid)
 
 已知问题：
 
-- 当玩家处于下蹲、车辆内或特定动画状态时切换皮肤会导致角色冻结/异常，可通过[TogglePlayerControllable](TogglePlayerControllable)解除
-- 使用[GetPlayerSpecialAction](GetPlayerSpecialAction)检测 SPECIAL_ACTION_DUCK 状态可判断玩家是否下蹲
+- 当玩家处于下蹲、车辆内或特定动画状态时切换皮肤会导致角色冻结/异常，可通过[TogglePlayerControllable](TogglePlayerControllable)解除使用[GetPlayerSpecialAction](GetPlayerSpecialAction)检测 SPECIAL_ACTION_DUCK 状态可判断玩家是否下蹲
 - 玩家在车辆内切换皮肤可能导致周围玩家客户端崩溃
 - 玩家死亡时切换皮肤可能引发周围玩家崩溃
 - 会中断自行车乘坐状态

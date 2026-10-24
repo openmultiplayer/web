@@ -41,7 +41,8 @@ public OnGameModeInit()
 
 :::note
 
-ang useartwork ay dapat munang paganahin sa mga setting ng server upang ito ay gumana Kapag ang virtualworld ay nakatakda, ang mga modelo ay mada-download kapag ang player ay pumasok sa partikular na mundo
+- ang useartwork ay dapat munang paganahin sa mga setting ng server upang ito ay gumana
+- Kapag ang virtualworld ay nakatakda, ang mga modelo ay mada-download kapag ang player ay pumasok sa partikular na mundo
 
 :::
 
@@ -53,4 +54,5 @@ Kasalukuyang walang mga paghihigpit sa kung kailan mo maaaring tawagan ang funct
 
 ## Related Functions
 
+- [AddSimpleModel](AddSimpleModel): Nagdaragdag ng bagong custom na simpleng object model para sa pag-download.
 - [OnPlayerFinishedDownloading](../callbacks/OnPlayerFinishedDownloading): Tinatawag kapag natapos na ng player ang pag-download ng mga custom na modelo.

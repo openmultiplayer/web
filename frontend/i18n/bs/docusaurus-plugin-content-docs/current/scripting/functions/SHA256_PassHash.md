@@ -48,7 +48,8 @@ Vraćeni hash nema nula popunjavanja (npr. mogući prefiks 00ABCD123...).
 
 :::tip
 
-Salt je dodan na kraj lozinke, što znači da lozinka 'foo' i salt 'bar' čine 'foobar'. Salt bi treba biti nasumičan, jedinstven za svakog igrača i najmanje dug kao hashirana lozinka. Treba ga pohraniti uz stvarni heš na računu igrača.
+- Salt je dodan na kraj lozinke, što znači da lozinka 'foo' i salt 'bar' čine 'foobar'.
+- Salt bi treba biti nasumičan, jedinstven za svakog igrača i najmanje dug kao hashirana lozinka. Treba ga pohraniti uz stvarni heš na računu igrača.
 
 :::
 

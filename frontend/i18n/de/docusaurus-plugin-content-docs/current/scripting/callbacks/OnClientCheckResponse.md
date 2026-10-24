@@ -31,7 +31,7 @@ public OnPlayerConnect(playerid)
 
 public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
-    if(actionid == 0x48) // or 72
+    if (actionid == 0x48) // or 72
     {
         print("WARNUNG: Der Spieler scheint keinen stanrdmäßigen Computer zu nutzen!");
         Kick(playerid);

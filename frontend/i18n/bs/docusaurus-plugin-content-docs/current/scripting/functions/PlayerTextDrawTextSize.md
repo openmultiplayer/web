@@ -18,19 +18,7 @@ Promijeni veličinu player-textdrawa (box ako je PlayerTextDrawUseBox omogućen 
 
 ## Returns
 
-X i y imaju različita značenja s različitim vrijednostima PlayerTextDrawAlignment: 1 (lijevo): oni su krajnji desni ugao box-a, apsolutna kordinatama. 2 (sredina): trebaju se okrenuti (prebaciti dva), a X vrijednost je ukupna širina box-a. 3 (desno): x i y su kordinate krajnjeg lijevog ugla box-a
-
-1 (left): oni su krajnji desni ugao kutije, apsolutna kordinata.
-
-2 (center): trebaju ih okrenuti (prebaciti dva), a X vrijednost je ukupna širina boxa.
-
-3 (right): x i y su kordinate krajnjeg lijevog ugla kutije
-
-Upotrebom fonta tipa 4 (sprite) i 5 (pregled modela) pretvara se X i Y ove funkcije iz kordinatama ugla u WIDTH i HEIGHT (offseti).
-
-Box TextDraw-a započinje 10.0 jedinica gore i 5.0 lijevo kao ishodište (TextDrawCreate kordinata).
-
-Ova funkcija definira područje na koje je moguće kliknuti za upotrebu s PlayerTextDrawSetSelectable, bilo da je box prikazan ili ne.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 ## Primjeri
 

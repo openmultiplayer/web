@@ -12,7 +12,7 @@ Dobij trenutno postavljenu gravitaciju servera.
 ## Primjeri
 
 ```c
-#if !defined GetGravity
+#if !defined GetGravity
     native Float:GetGravity();
 #endif
 

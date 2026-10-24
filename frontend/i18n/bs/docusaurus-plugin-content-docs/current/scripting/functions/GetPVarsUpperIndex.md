@@ -26,20 +26,20 @@ new PVarUpperIndex = GetPVarsUpperIndex(playerid) + 1;
 // Ova pVarCount varijabla će pohraniti koliko pVar-ova igrač ima postavljenih pa ih brojimo.
 new pVarCount;
 
-for(new i=0; i != PVarUpperIndex; i++) // Pokreni petlju kroz sve pVar ID-eve unutar gornjeg indexa.
+for (new i = 0; i != PVarUpperIndex; i++) // Pokreni petlju kroz sve pVar ID-eve unutar gornjeg indexa.
 {
     // Prvo, trebamo dobiti ime PVar-a
     new pVarName[128];
     GetPVarNameAtIndex(playerid, i, pVarName, sizeof(pVarName));
     // ako je var postavljen (tip nije 0), prirasti pVarCount.
-    if (GetPVarType(playerid, pVarName) != 0)
+    if (GetPVarType(playerid, pVarName) != 0)
     {
         pVarCount++;
     }
 }
 
 new szString[66];
-format(szString, sizeof(szString), "Imaš %i postavljenih igračevih varijabli. Gornji index (najveći ID): %i.", pVarCount, PVarUpperIndex-1);
+format(szString, sizeof(szString), "Imaš %i postavljenih igračevih varijabli. Gornji index (najveći ID): %i.", pVarCount, PVarUpperIndex - 1);
 SendClientMessage(playerid, -1, szString);
 ```
 

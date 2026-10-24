@@ -32,6 +32,8 @@ Se a função não existe, retorna 0.
 | `f`             | Passa um número de ponto flutuante.                                                                                                                                                                                                                                                                              |
 | `s`             | Passa uma string.                                                                                                                                                                                                                                                                                                |
 
+Os valores dos placeholders seguem exatamente a mesma ordem dos parâmetros na chamada.
+
 ## Exemplos
 
 ```c

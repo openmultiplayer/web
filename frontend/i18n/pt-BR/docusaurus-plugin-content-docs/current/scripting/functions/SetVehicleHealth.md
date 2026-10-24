@@ -48,3 +48,7 @@ A vida máxima do veículo é 1000. Valores maiores são possíveis. Para mais i
 - [RepairVehicle](RepairVehicle): Repara totalmente um veículo.
 - [SetPlayerHealth](SetPlayerHealth): Define a vida de um jogador.
 - [OnVehicleDeath](../callbacks/OnVehicleDeath): É chamado quando um veículo é destruído.
+
+## Recursos relacionados
+
+- [Valores de integridade do veículo](../resources/vehiclehealth)

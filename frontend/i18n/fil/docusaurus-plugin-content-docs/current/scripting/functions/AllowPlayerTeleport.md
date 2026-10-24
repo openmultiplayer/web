@@ -27,11 +27,11 @@ Ang function na ito ay hindi nagbabalik ng anumang partikular na halaga.
 ## Examples
 
 ```c
-public OnPlayerConnect( playerid )
+public OnPlayerConnect(playerid)
 {
     // Pinapayagan ang Manlalaro na mag-teleport sa pamamagitan ng pag-right-click sa mapa
     // dahil nasa OnPlayerConnect ito, gagawin ito para sa BAWAT manlalaro
-    AllowPlayerTeleport( playerid, 1 );
+    AllowPlayerTeleport(playerid, 1);
 }
 ```
 

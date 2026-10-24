@@ -32,3 +32,12 @@ if (handle)
     fclose(handle);
 }
 ```
+
+## Gerelateerde Functies
+
+- [fwrite](fwrite): Schrijf tekst naar een bestand.
+- [fread](fread): Lees één regel uit een bestand.
+
+## Gerelateerde Resources
+
+- [Bestandsmodi](../resources/file-modes)

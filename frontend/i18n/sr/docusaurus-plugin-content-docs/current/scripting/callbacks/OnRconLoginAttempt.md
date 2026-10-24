@@ -30,7 +30,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
         new ipAddress[16];
 
-        for (new i = 0; i < MAX_PLAYERS; i++) // Прођите кроз све играче
+        for (new i = 0; i < MAX_PLAYERS; i++) // Прођите кроз све играче
         {
             if (!IsPlayerConnected(i))
             {
@@ -55,7 +55,8 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-Ова повратна функција се позива само када се користи /rcon login у игри. Ова повратна функција се позива само када играч још није пријављен. Када је играч пријављен, уместо тога се позива [OnRconCommand](OnRconCommand).
+- Ова повратна функција се позива само када се користи /rcon login у игри.
+- Ова повратна функција се позива само када играч још није пријављен. Када је играч пријављен, уместо тога се позива [OnRconCommand](OnRconCommand).
 
 :::
 

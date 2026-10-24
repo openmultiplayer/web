@@ -1,6 +1,6 @@
 ---
-título: OnPlayerInteriorChange
-descripción: Se llama cuando un jugador cambia de interior.
+title: OnPlayerInteriorChange
+description: Se llama cuando un jugador cambia de interior.
 tags: ["player"]
 ---
 

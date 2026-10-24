@@ -29,8 +29,8 @@ tags: ["npc"]
 
 ```c
 new Float:x, Float:y, Float:z;
-GetMyPos(x,y,z);
-printf("我现在位于 %f, %f, %f!",x,y,z);
+GetMyPos(x, y, z);
+printf("我现在位于 %f, %f, %f!", x, y, z);
 ```
 
 ## 相关函数

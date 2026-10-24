@@ -1,7 +1,7 @@
 ---
 title: AddPlayerClass
 sidebar_label: AddPlayerClass
-description: Adiciona uma classe à seleção de classes. As classes são usadas para que os jogadores possam aparecer com uma skin (personagem) de sua escolha.
+description: Adiciona uma classe à seleção de classes.
 tags: []
 ---
 
@@ -54,3 +54,8 @@ A identificação máxima da classe é 319 (começando em 0, portanto, um total 
 - [AddPlayerClassEx](AddPlayerClassEx): Adiciona uma classe com uma equipe padrão.
 - [SetSpawnInfo](SetSpawnInfo): Define a configuração de spawn para um jogador.
 - [SetPlayerSkin](SetPlayerSkin): Define a skin (personagem) de um jogador.
+
+## Recursos relacionados
+
+- [IDs de Skins](../resources/skins)
+- [IDs de Armas](../resources/weaponids)

@@ -31,7 +31,7 @@ public OnPlayerConnect(playerid)
 
 public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 {
-    if(actionid == 0x48) // ou 72
+    if (actionid == 0x48) // ou 72
     {
         print("AVISO: O jogador não parece estar usando um computador!");
         Kick(playerid);
@@ -51,3 +51,7 @@ Esse callback é usado somente em filterscripts.
 ## Funções Relacionadas
 
 - [SendClientCheck](../functions/SendClientCheck): Realiza uma checagem de memória no cliente.
+
+## Recursos relacionados
+
+- [opcodes](../resources/opcodes)

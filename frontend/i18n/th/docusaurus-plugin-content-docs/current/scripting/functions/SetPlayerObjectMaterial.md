@@ -26,14 +26,14 @@ This function does not return any specific values.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp(cmdtext,"/objmat",true))
+    if (!strcmp(cmdtext, "/objmat", true))
     {
         new Float:X, Float:Y, Float:Z;
         new myobject;
         GetPlayerPos(playerid, X, Y, Z);
-        myobject = CreatePlayerObject(playerid, 19371, X, Y, Z+0.5, 0.0, 0.0, 0.0, 300.0);
+        myobject = CreatePlayerObject(playerid, 19371, X, Y, Z + 0.5, 0.0, 0.0, 0.0, 300.0);
         SetPlayerObjectMaterial(playerid, myobject, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
         // Replaces the texture of our player-object with the texture of model 19341
         return 1;
@@ -59,7 +59,3 @@ You MUST use ARGB color format, not RGBA like used in client messages etc.
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - SetObjectMaterial: Replace the texture of an object with the texture from another model in the game.
-- Ultimate Creator by Nexius
-- Texture Studio by [uL]Pottus
-- Fusez's Map Editor by RedFusion
-- Map Editor I by adri1

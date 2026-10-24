@@ -21,8 +21,9 @@ Există două moduri de a crea pickup-uri. [CreatePickup](../scripting/functions
 
 ** Parametri: **
 
-| model        | Modelul pe care doriți să îl utilizați pentru preluare.                                                       |
+| Nume         | Descriere                                                                                                     |
 | ------------ | ------------------------------------------------------------------------------------------------------------- |
+| model        | Modelul pe care doriți să îl utilizați pentru preluare.                                                       |
 | type         | Tipul de reproducere a spawnului, consultați mai jos această pagină.                                          |
 | Float:X      | Coordonata X pentru afișarea preluării.                                                                       |
 | Float:Y      | Coordonata Y pentru afișarea preluării.                                                                       |
@@ -55,7 +56,7 @@ Când un jucător ridică noul nostru pick-up, vrem să le dăm 100 \$, pentru a
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
     // Check that the pickup ID of the pickup they picked up is gMyPickup
-    if(pickupid == gMyPickup)
+    if (pickupid == gMyPickup)
     {
         // Message the player
         SendClientMessage(playerid, 0xFFFFFFFF, "You received $100!");

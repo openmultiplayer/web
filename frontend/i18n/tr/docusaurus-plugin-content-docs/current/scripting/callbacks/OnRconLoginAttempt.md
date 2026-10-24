@@ -26,9 +26,9 @@ public OnRconLoginAttempt(ip[], password[], success)
 {
     if (!success) //Eğer parola yanlışsa.
     {
-        printf("%s IP ADRESİNE SAHİP OYUNCU RCON OTURUMU AÇMAYI DENEDİ FAKAT BAŞARISIZ OLDU, GİRMEYE ÇALIŞTIĞI PAROLA: %s",ip, password);
+        printf("%s IP ADRESİNE SAHİP OYUNCU RCON OTURUMU AÇMAYI DENEDİ FAKAT BAŞARISIZ OLDU, GİRMEYE ÇALIŞTIĞI PAROLA: %s", ip, password);
         new pip[16];
-        for(new i = GetPlayerPoolSize(); i != -1; --i) //Tüm oyuncular arasında döngü oluşturun.
+        for (new i = GetPlayerPoolSize(); i != -1; --i) //Tüm oyuncular arasında döngü oluşturun.
         {
             GetPlayerIp(i, pip, sizeof(pip));
             if (!strcmp(ip, pip, true)) //Bir oyuncunun IP'si, oturum açma sırasında başarısız olan IP ise...
@@ -46,7 +46,8 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-Bu fonksiyon yalnızca /rcon login komutu oyun içinde kullanıldığında çağrılır. Fonksiyon, yalnızca oyuncu henüz oturum açmamışsa çağrılır. Oyuncu oturum açtığında, bunun yerine OnRconCommand çağrılır.
+- Bu fonksiyon yalnızca /rcon login komutu oyun içinde kullanıldığında çağrılır.
+- Fonksiyon, yalnızca oyuncu henüz oturum açmamışsa çağrılır. Oyuncu oturum açtığında, bunun yerine OnRconCommand çağrılır.
 
 :::
 

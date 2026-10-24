@@ -1,6 +1,6 @@
 ---
-título: OnPlayerWeaponShot
-descripción: Este callback se llama cuando un jugador efectúa un disparo de un arma.
+title: OnPlayerWeaponShot
+description: Este callback se llama cuando un jugador efectúa un disparo de un arma.
 tags: ["player"]
 ---
 

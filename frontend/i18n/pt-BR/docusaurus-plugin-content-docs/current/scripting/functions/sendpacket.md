@@ -1,7 +1,7 @@
 ---
 title: sendpacket
 sidebar_label: sendpacket
-description: "Envia um pacote. (função obsoleta)"
+description: "Envia um pacote (função obsoleta)."
 tags: ["datagram"]
 ---
 

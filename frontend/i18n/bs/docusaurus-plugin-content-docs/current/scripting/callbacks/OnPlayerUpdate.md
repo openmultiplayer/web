@@ -27,7 +27,7 @@ Uvijek je pozvan prvo u filterskripti.
 public OnPlayerUpdate(playerid)
 {
     new iCurWeap = GetPlayerWeapon(playerid); // return-uje igračevo trenutno oružje
-    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // ako je promijenio oružje nakon posljednjeg ažuriranja
+    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // ako je promijenio oružje nakon posljednjeg ažuriranja
     {
         // pozovimo callback OnPlayerChangeWeapon
         OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
@@ -58,7 +58,7 @@ public OnPlayerUpdate(playerid)
 
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // Zdravlje igrača se promijenilo od zadnjeg ažuriranja -> servera, pa je očito da je to stvar ažurirano.
         // Dalje provjeravamo je li izgubio ili stekao zdravlje, anti-health cheat? ;)
@@ -87,7 +87,8 @@ Ovaj callback pozvat će i NPC.
 
 :::warning
 
-Ovaj callback je pozvan, otprilike, 30 puta po sekundi, po igraču; koristite ga samo kada znate za šta znači (ili mnogo bitnije, za šta NE znači).Učestalost pozivanja ovog povratnog poziva za svakog igrača varira, ovisno o tome što igrač radi. Vožnja ili pucanje izazvat će puno više ažuriranja nego u praznom hodu.
+- Ovaj callback je pozvan, otprilike, 30 puta po sekundi, po igraču; koristite ga samo kada znate za šta znači (ili mnogo bitnije, za šta NE znači).
+- Učestalost pozivanja ovog povratnog poziva za svakog igrača varira, ovisno o tome što igrač radi. Vožnja ili pucanje izazvat će puno više ažuriranja nego u praznom hodu.
 
 :::
 

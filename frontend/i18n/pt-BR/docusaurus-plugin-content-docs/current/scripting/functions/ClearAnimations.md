@@ -1,7 +1,7 @@
 ---
 title: ClearAnimations
 sidebar_label: ClearAnimations
-description: Limpa todas as animações para o jogador especificado (também cancela todas as tarefas atuais como jetpack, paraquedas, entrar em veículos, dirigir (remove o jogador do veículo), nadar, etc).
+description: Limpa todas as animações para o jogador especificado.
 tags: ["player", "animation"]
 ---
 

@@ -1,6 +1,6 @@
 ---
-título: OnPlayerUpdate
-descripción: Este callback se llama cada vez que un cliente/jugador actualiza su estado con el servidor.
+title: OnPlayerUpdate
+description: Este callback se llama cada vez que un cliente/jugador actualiza su estado con el servidor.
 tags: ["player"]
 ---
 
@@ -14,9 +14,9 @@ Este callback se llama cada vez que un cliente/jugador actualiza su estado con e
 
 ## Devoluciones
 
-0 - Prevendrá a otros filterscripts de recibir este callback.
+0 - El nuevo estado del jugador, no sera transmitido al resto de los jugadores.
 
-1 - Indica que este callback será pasado al siguiente filterscript.
+1 - El nuevo estado del jugador, sera transmitido normalmente al resto de los jugadores.
 
 Siempre se llama primero en filterscripts.
 
@@ -26,7 +26,7 @@ Siempre se llama primero en filterscripts.
 public OnPlayerUpdate(playerid)
 {
     new iCurWeap = GetPlayerWeapon(playerid); // Devuelve el arma en mano actual del jugador
-    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Si cambió de arma desde la última actualización
+    if (iCurWeap != GetPVarInt(playerid, "iCurrentWeapon")) // Si cambió de arma desde la última actualización
     {
         // Vamos a llamar un callback nombrado OnPlayerChangeWeapon
         OnPlayerChangeWeapon(playerid, GetPVarInt(playerid, "iCurrentWeapon"), iCurWeap);
@@ -57,7 +57,7 @@ public OnPlayerUpdate(playerid)
 
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // La salud del jugador cambió desde la última actualización con el servidor, así que obviamente eso es lo actualizado.
         // Hagamos mas comprobaciones para ver si aumentó o disminuyó de salud, anti-health cheat? ;)
@@ -82,7 +82,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Este callback se llama, en promedio, 30 veces por segundo, por cada jugador; sólo usalo cuando sepas para que sirve (o más importante, para lo que no está pensado). La frecuencia con la que se llama este callback varía por cada jugador, dependiendo qué está haciendo el jugador. Conduciendo o disparando desencadenará muchas mas actualizaciones que estando quieto.
+- Este callback se llama, en promedio, 30 veces por segundo, por cada jugador; sólo usalo cuando sepas para que sirve (o más importante, para lo que no está pensado).
+- La frecuencia con la que se llama este callback varía por cada jugador, dependiendo qué está haciendo el jugador. Conduciendo o disparando desencadenará muchas mas actualizaciones que estando quieto.
 
 :::
 

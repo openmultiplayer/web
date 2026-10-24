@@ -1,7 +1,7 @@
 ---
 title: Tipos de Solicitação de Download
 sidebar_label: Tipos de Solicitação de Download
-description: Tipos de solicitação de download. (usado por OnPlayerRequestDownload)
+description: Tipos de solicitação de download (usado por OnPlayerRequestDownload).
 ---
 
 :::note

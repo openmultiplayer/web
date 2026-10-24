@@ -20,7 +20,7 @@ Procenat gubitka paketa kao float. 0 ako igrač nije povezan.
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/packetloss"))
     {

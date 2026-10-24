@@ -1,7 +1,7 @@
 ---
 title: StartRecordingPlayback
 sidebar_label: StartRecordingPlayback
-description: This will run a .rec file which has to be saved in the npcmodes/recordings folder. These files allow the NPC to follow certain actions. Their actions can be recorded manually. For more information, check the related functions.
+description: This will run a .rec file which has to be saved in the npcmodes/recordings folder.
 tags: []
 ---
 

@@ -17,9 +17,9 @@ This functions allows you to toggle the drawing of player nametags, healthbars a
 
 ## ส่งคืน
 
-ImportantNote
+1: The function executed successfully.
 
-ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time(OnPlayerStreamIn is a good spot).
+0: The function failed to execute. This means the player is not connected.
 
 ## ตัวอย่าง
 
@@ -27,7 +27,7 @@ ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTa
 //The player who typed /nameoff will not be able to see any other players nametag.
 if (strcmp("/nameoff", cmdtext, true) == 0)
 {
-    for(new i = GetPlayerPoolSize(); i != -1; --i) ShowPlayerNameTagForPlayer(playerid, i, false);
+    for (new i = GetPlayerPoolSize(); i != -1; --i) ShowPlayerNameTagForPlayer(playerid, i, false);
     GameTextForPlayer(playerid, "~W~Nametags ~R~off", 5000, 5);
     return 1;
 }

@@ -36,3 +36,6 @@ public OnGameModeInit()
 ```
 
 ## Funções Relacionadas
+
+- [GetActorHealth](GetActorHealth): Pega a vida do ator.
+- [SetActorInvulnerable](SetActorInvulnerable): Alterna a invulnerabilidade do ator.

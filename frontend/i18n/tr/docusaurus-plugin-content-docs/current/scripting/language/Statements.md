@@ -181,7 +181,7 @@ while (i < 10)
 }
 ```
 
-} Koşul anında başarısız olacağından herhangi bir çıktı vermeyecek.
+Koşul anında başarısız olacağından herhangi bir çıktı vermeyecek.
 
 Bu ayrıca çift kontrolleri önlemek için kullanışlıdır:
 
@@ -244,7 +244,7 @@ new
     checkVar = 2;
 if (checkVar == 1)
 {
-    printf("Bu çağrılmayacak"):
+    printf("Bu çağrılmayacak");
 }
 else if (checkVar == 2)
 {
@@ -366,6 +366,7 @@ printf("Bu yazdırılacak");
 Ancak derleyici goto'yu çok iyi işlemez, bu yüzden hiçbir şekilde optimize edilmez ve şunun gibi şeyler:
 
 ```c
+stock MyFunction()
 {
     new
         i = 5;
@@ -437,7 +438,17 @@ if (i < 10)
 
 If'ın alabileceği koşullar bu gönderi için çok fazla olduğundan, bazıları aşağıda listelenmiştir:
 
-Operator Açıklama Örnek a=1, b=0 Durum a=1, b=1 Durum a=0, b=1 Durum a=0, b=0 Durum == Bir şeyin başka bir şeye eşit olup olmadığını kontrol eder if (a == b) false true false true != Bir şeyin başka bir şeye eşit olmadığını kontrol eder if (a != b) true false true false {'<'} Bir şeyin başka bir şeyden küçük olup olmadığını kontrol eder if (a {'<'} b) false false true false > Bir şeyin başka bir şeyden büyük olup olmadığını kontrol eder if (a > b) true false false false {'<='} Bir şeyin başka bir şeyden küçük veya eşit olup olmadığını kontrol eder if (a {'<='} b) false true true true >= Bir şeyin başka bir şeyden büyük veya eşit olup olmadığını kontrol eder if (a >= b) true true false true && İki şeyin doğru olup olmadığını kontrol eder (0 değil) if (a && b) false true false false || İki şeyden en az birinin doğru olup olmadığını kontrol eder (0 değil) if (a || b) true true true false ! Bir şeyin yanlış olup olmadığını kontrol eder if (!(a == b)) true false true false
+| Operator | Açıklama                                                                | Örnek            | a=1, b=0 Durum | a=1, b=1 Durum | a=0, b=1 Durum | a=0, b=0 Durum |
+| -------- | ----------------------------------------------------------------------- | ---------------- | -------------- | -------------- | -------------- | -------------- |
+| `==`     | Bir şeyin başka bir şeye eşit olup olmadığını kontrol eder              | `if (a == b)`    | false          | true           | false          | true           |
+| `!=`     | Bir şeyin başka bir şeye eşit olmadığını kontrol eder                   | `if (a != b)`    | true           | false          | true           | false          |
+| `<`      | Bir şeyin başka bir şeyden küçük olup olmadığını kontrol eder           | `if (a < b)`     | false          | false          | true           | false          |
+| `>`      | Bir şeyin başka bir şeyden büyük olup olmadığını kontrol eder           | `if (a > b)`     | true           | false          | false          | false          |
+| `<=`     | Bir şeyin başka bir şeyden küçük veya eşit olup olmadığını kontrol eder | `if (a <= b)`    | false          | true           | true           | true           |
+| `>=`     | Bir şeyin başka bir şeyden büyük veya eşit olup olmadığını kontrol eder | `if (a >= b)`    | true           | true           | false          | true           |
+| `&&`     | İki şeyin doğru olup olmadığını kontrol eder (0 değil)                  | `if (a && b)`    | false          | true           | false          | false          |
+| `\|\|`   | İki şeyden en az birinin doğru olup olmadığını kontrol eder (0 değil)   | `if (a \|\| b)`  | true           | true           | true           | false          |
+| `!`      | Bir şeyin yanlış olup olmadığını kontrol eder                           | `if (!(a == b))` | true           | false          | true           | false          |
 
 Bu ifadelerle karmaşık koşullar oluşturabilirsiniz:
 

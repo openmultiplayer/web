@@ -1,6 +1,6 @@
 ---
-título: OnDialogResponse
-descripción: Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando ShowPlayerDialog ya sea clickeando un botón, presionando ENTER/ESC o haciendo doble click en un elemento de lista (si el diálogo utiliza el estilo DIALOG_STYLE_LIST).
+title: OnDialogResponse
+description: Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando ShowPlayerDialog.
 tags: []
 ---
 
@@ -106,7 +106,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Si clickeó en 'Seleccionar' o apretó enter.
         {
             // Dándole el arma al jugador
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Dándole una Desert Eagle
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Dándole una AK-47
@@ -140,7 +140,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Si clickeó en seleccionar o hizo doble click en algún arma
         {
             // Dándole el arma al jugador
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Dándole una M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Dándole una MP5

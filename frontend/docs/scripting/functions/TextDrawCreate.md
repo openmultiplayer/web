@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Description
 
-Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See this page for extensive information about textdraws.
+Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See [this page](../resources/textdraws) for extensive information about textdraws.
 
 | Name             | Description                                              |
 | ---------------- | -------------------------------------------------------- |
@@ -49,8 +49,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- The `x, y` coordinate is the top left coordinate for the text draw area based on a 640x480 "canvas" (irrespective of screen resolution).
-- If you plan on using [TextDrawAlignment](TextDrawAlignment) with alignment 3 (`TEXT_DRAW_ALIGN_RIGHT`), the `x, y` coordinate is the top right coordinate for the text draw.
+- The `x, y` coordinate is the top left coordinate for the text draw area based on a 640x480 "canvas" (irrespective of screen resolution). If you plan on using [TextDrawAlignment](TextDrawAlignment) with alignment 3 (`TEXT_DRAW_ALIGN_RIGHT`), the `x, y` coordinate is the top right coordinate for the text draw.
 - This function merely CREATES the textdraw, you must use [TextDrawShowForPlayer](TextDrawShowForPlayer) or [TextDrawShowForAll](TextDrawShowForAll) to show it.
 
 :::

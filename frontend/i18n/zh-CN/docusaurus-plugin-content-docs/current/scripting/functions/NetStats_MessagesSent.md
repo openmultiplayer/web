@@ -20,7 +20,7 @@ tags: ["网络监控"]
 ## 示例
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/msgsent"))
     {

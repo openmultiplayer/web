@@ -21,8 +21,9 @@ Existem duas maneiras de criar pickups. [CreatePickup](../scripting/functions/Cr
 
 **Parâmetros:**
 
-| model        | O modelo que você gostaria de usar para o pickup.                                                   |
+| Nome         | Descrição                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------- |
+| model        | O modelo que você gostaria de usar para o pickup.                                                   |
 | type         | O tipo de spawn do pickup, veja mais abaixo nesta página.                                           |
 | Float:X      | A coordenada X para o pickup aparecer.                                                              |
 | Float:Y      | A coordenada Y para o pickup aparecer.                                                              |
@@ -55,7 +56,7 @@ Quando um jogador pegar nosso novo pickup, queremos dar a ele $100, para fazer i
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
     // Verifica se o ID do pickup que eles pegaram é gMyPickup
-    if(pickupid == gMyPickup)
+    if (pickupid == gMyPickup)
     {
         // Envia mensagem ao jogador
         SendClientMessage(playerid, 0xFFFFFFFF, "Você recebeu $100!");

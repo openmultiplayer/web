@@ -40,7 +40,16 @@ Il faudra utiliser [OnPlayerStateChange](OnPlayerStateChange) et vérifier si l'
 
 :::
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerEnterVehicle](OnPlayerEnterVehicle): Appelée lorsqu'un joueur commence à entrer dans un véhicule.
+- [OnPlayerStateChange](OnPlayerStateChange): Appelé quand un joueur change d'état.
+
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [RemovePlayerFromVehicle](../functions/RemovePlayerFromVehicle): Sort de force un joueur du véhicule.
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Vérifie la place du joueur dans le véhicule.

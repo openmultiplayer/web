@@ -13,7 +13,7 @@ This function concatenates (joins together) two strings into the destination str
 | --------------------- | ---------------------------------------------------- |
 | dest[]                | The string to store the two concatenated strings in. |
 | const source[]        | The source string.                                   |
-| maxlength=sizeof dest | The maximum length of the destination.               |
+| maxlength = sizeof dest | The maximum length of the destination.               |
 
 ## ส่งคืน
 

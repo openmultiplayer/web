@@ -1,6 +1,6 @@
 ---
-título: OnPlayerRequestSpawn
-descripción: Se llama cuando un jugador intenta spawnear vía selección de clase ya sea presionando SHIFT o clickeando el botón 'Spawn'.
+title: OnPlayerRequestSpawn
+description: Se llama cuando un jugador intenta spawnear vía selección de clase ya sea presionando SHIFT o clickeando el botón 'Spawn'.
 tags: ["player"]
 ---
 
@@ -13,6 +13,8 @@ Se llama cuando un jugador intenta spawnear vía selección de clase ya sea pres
 | playerid | El ID del jugador que solicitó spawnear. |
 
 ## Devoluciones
+
+**0** impedira que el jugador spawnee.
 
 0 - Prevendrá a otros filterscripts de recibir este callback.
 
@@ -45,3 +47,5 @@ Para prevenir a los jugadores de spawnear con ciertas clases, la última clase v
 :::
 
 ## Funciones Relacionadas
+
+- [OnPlayerRequestClass](OnPlayerRequestClass): Llamado cuando un jugador cambia de skin en la seleccion de skin.

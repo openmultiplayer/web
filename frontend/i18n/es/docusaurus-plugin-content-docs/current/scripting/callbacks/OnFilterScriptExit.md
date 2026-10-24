@@ -1,7 +1,6 @@
 ---
-título: OnFilterScriptExit
-descripción: Este callback se llama cuando termina la ejecución de un filterscript. Sólo se llama adentro del mismo filterscript.
-
+title: OnFilterScriptExit
+description: Este callback se llama cuando termina la ejecución de un filterscript.
 tags: []
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: acos
 sidebar_label: acos
-description: .
+description: Radyanlardaki bir ark kosininin ters değerini alın.
 tags: []
 ---
 

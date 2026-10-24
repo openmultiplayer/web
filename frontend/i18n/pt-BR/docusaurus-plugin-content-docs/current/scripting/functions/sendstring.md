@@ -1,7 +1,7 @@
 ---
 title: sendstring
 sidebar_label: sendstring
-description: "Envia um pacote contendo uma string. (função obsoleta)"
+description: "Envia um pacote contendo uma string (função obsoleta)."
 tags: ["datagram"]
 ---
 

@@ -25,7 +25,7 @@ tags: ["字符串"]
 
 ```c
 new string[17];
-new pstring[17 char] = !"Hi, how are you?";
+new pstring[17 char] = !"Hi, how are you?";
 strunpack(string, pstring);  // 解包已压缩字符串
 ```
 

@@ -32,7 +32,7 @@ Elle est toujours appelée en premier dans le gamemode donc retourner **0** dans
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if(issuerid != INVALID_PLAYER_ID) // Si il ne se les inflige pas lui même
+    if (issuerid != INVALID_PLAYER_ID) // Si il ne se les inflige pas lui même
     {
         new
             infoString[128],
@@ -57,7 +57,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 ```c
 public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
 {
-    if(issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
+    if (issuerid != INVALID_PLAYER_ID && weaponid == 34 && bodypart == 9)
     {
         //Tirez une fois dans la tête au sniper tue instantanément
         SetPlayerHealth(playerid, 0.0);
@@ -85,3 +85,10 @@ GetPlayerHealth et GetPlayerArmour renverront les anciens montants du joueur ava
 Vérifiez toujours si `issuerid` est valide avant de l'utiliser comme index de tableau.
 
 :::
+
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerGiveDamage](OnPlayerGiveDamage): Cette callback est appelée lorsqu'un joueur profère des dégâts à un autre joueur.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): Appelée lorsqu'un joueur fait feu avec une arme.

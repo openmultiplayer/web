@@ -54,3 +54,7 @@ Upotrijebite TogglePlayerSpectating da se objekti prikažu igraču/klijentu toko
 - [InterpolateCameraLookAt](InterpolateCameraLookAt): Premjestite prikaz kamere igrača s jedne lokacije na drugu.
 - [SetPlayerCameraPos](SetPlayerCameraPos): Postavi poziciju kamere igrača.
 - [SetPlayerCameraLookAt](SetPlayerCameraLookAt): Postavite gdje će igračeva kamera gledati.
+
+## Srodne Resources
+
+- [Stilovi Rezanja Kamere](../resources/cameracutstyles)

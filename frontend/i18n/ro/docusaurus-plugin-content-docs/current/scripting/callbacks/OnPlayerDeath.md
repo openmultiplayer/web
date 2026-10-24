@@ -62,6 +62,10 @@ TREBUIE să verificați dacă „killerid” este valid (nu INVALID_PLAYER_ID) �
 
 :::
 
+## Callback-uri similare
+
+- [OnPlayerSpawn](OnPlayerSpawn): Acest callback este apelat atunci când apare un jucător.
+
 ## Funcții similare
 
 - [SendDeathMessage](../functions/SendDeathMessage): Adăugați o ucidere pe lista morților.

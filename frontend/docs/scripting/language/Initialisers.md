@@ -123,7 +123,7 @@ enum E_EXAMPLE (*= 2)
 }
 ```
 
-In this all the values are 0. Why? Well the first value by default is 0, then 0 _ 2 = 0, then 0 _ 2 = 0 and 0 \* 2 = 0. So how do we correct this? This is what custom values are for:
+In this all the values are 0. Why? Well the first value by default is 0, then 0 \* 2 = 0, then 0 \* 2 = 0 and 0 \* 2 = 0. So how do we correct this? This is what custom values are for:
 
 ```c
 enum E_EXAMPLE (*= 2)
@@ -417,7 +417,7 @@ Note the forward includes the return tag too.
 A native function is one defined in the virtual machine (i.e. the thing which runs the script), not in the script itself. You can only define native functions if they're coded into SA:MP or a plugin, however you can create fake natives. Because the native functions from .inc files are detected by pawno and listed in the box on the right hand side of pawno it can be useful to use native to get your own custom functions listed there. A normal native declaration could look like:
 
 ```c
-native printf(const format[], \{Float, _\}:...);
+native printf(const format[], {Float, _}:...);
 ```
 
 If you want your own functions to appear without being declared native you can do:
@@ -580,6 +580,7 @@ main()
         BigEndian:a = 7,
         BigEndian:b = 199;
     printf("%d", _:(a + b));
+}
 ```
 
 Will simply give 42, nothing to do with addition.

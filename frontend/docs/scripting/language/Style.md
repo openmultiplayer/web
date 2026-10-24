@@ -1,7 +1,7 @@
 ---
 title: "Pawn Style Guide"
 sidebar_label: "Pawn Style Guide"
-description: A short guide on the generally accepted naming conventions and other aspects of Pawn source code to aid easier communication of intent and streamline debugging and sharing of code.
+description: A short guide on the generally accepted naming conventions and other aspects of Pawn source code.
 ---
 
 This document is a short guide on the generally accepted naming conventions and other aspects of Pawn source code to aid easier communication of intent and streamline debugging and sharing of code.

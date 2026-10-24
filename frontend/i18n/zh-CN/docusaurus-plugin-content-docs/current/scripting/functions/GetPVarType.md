@@ -22,15 +22,15 @@ tags: ["玩家变量"]
 | --------------------- | ---- | ----------------- |
 | PLAYER_VARTYPE_NONE   | 0    | 变量不存在/未设置 |
 | PLAYER_VARTYPE_INT    | 1    | 整型变量          |
-| PLAYER_VARTYPE_FLOAT  | 2    | 浮点型变量        |
-| PLAYER_VARTYPE_STRING | 3    | 字符串型变量      |
+| PLAYER_VARTYPE_STRING | 2    | 字符串型变量      |
+| PLAYER_VARTYPE_FLOAT  | 3    | 浮点型变量        |
 
 ## 示例代码
 
 ```c
 stock PrintPVar(playerid, varname[])
 {
-    switch(GetPVarType(playerid, varname))
+    switch (GetPVarType(playerid, varname))
     {
         case PLAYER_VARTYPE_NONE:
         {

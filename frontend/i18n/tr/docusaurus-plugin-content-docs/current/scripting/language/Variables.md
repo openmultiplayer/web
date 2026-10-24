@@ -57,20 +57,20 @@ Bir değişkenin değerini değiştirmek, değişkeni referans aldığınız kod
 
 new g_var = 5;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     g_var = 10;
 
-    printf ("Değer %i", g_var);
+    printf("Değer %i", g_var);
 
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     g_var = 100;
 
-    printf ("Değer %i", g_var);
+    printf("Değer %i", g_var);
 
     return 1;
 }
@@ -87,7 +87,7 @@ public OnPlayerConnect (playerid)
 ```c
 #include <a_samp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new localVar;
 
@@ -96,7 +96,7 @@ public OnFilterScriptInit ()
     return 1;
 }
 
-public OnPlayerConnect (playerid)
+public OnPlayerConnect(playerid)
 {
     localVar = 10; // Bu satır derleme sırasında bir hata verecektir
 
@@ -113,7 +113,7 @@ Bir şeyi unutmamanız gereken önemli bir şey, kapsamlarının iç içe girmes
 
 new g_score;
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
     new g_score = 5; // Bu satır bir hatayı gösterecektir.
     return 1;
@@ -190,27 +190,27 @@ Pawn, tip olmayan bir dil olduğu için aynı değişkende farklı türde verile
 ```c
 #include <a_samp>
 
-public OnFilterScriptInit ()
+public OnFilterScriptInit()
 {
 
-    new var ;
+    new var;
 
     var = 'a';
-    printf ("%c", var);
+    printf("%c", var);
 
     var = 1;
-    printf ("%d", var);
+    printf("%d", var);
 
     var = 1.0;
-    printf ("%f", var);
+    printf("%f", var);
 
     var = true;
-    printf ("%d", var); // 0 veya 1 değerini yazdırır
+    printf("%d", var); // 0 veya 1 değerini yazdırır
 
     return 1;
 }
 
-// Çıktı :
+// Çıktı:
 a
 1
 1.000000

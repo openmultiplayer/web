@@ -1,7 +1,7 @@
 ---
 title: TextDrawBackgroundColor
 sidebar_label: TextDrawBackgroundColor
-description: Adjusts the text draw area background color (the outline/shadow - NOT the box.
+description: Adjusts the text draw area background color (the outline/shadow - NOT the box).
 tags: ["textdraw"]
 ---
 
@@ -25,7 +25,7 @@ new Text:MyTextdraw;
 
 public OnGameModeInit()
 {
-    MyTextdraw= TextDrawCreate(320.0, 425.0, "This is an example textdraw");
+    MyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
     TextDrawUseBox(MyTextdraw, 1);
     TextDrawBackgroundColor(MyTextdraw, 0xFFFFFFFF); // Set the background color of MyTextdraw to white
     return 1;

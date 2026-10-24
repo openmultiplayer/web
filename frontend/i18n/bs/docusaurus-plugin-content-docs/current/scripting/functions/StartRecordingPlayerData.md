@@ -40,3 +40,7 @@ if (!strcmp("/recordme", cmdtext))
 ## Srodne Funkcije
 
 - [StopRecordingPlayerData](StopRecordingPlayerData): Zaustavlja snimanje podataka sa igrača.
+
+## Srodne Resources
+
+- [Vrste Zapisa](../resources/recordtypes)

@@ -29,7 +29,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     // The player who typed /nameoff will not be able to see any other players nametag.
     if (strcmp("/nameoff", cmdtext, true) == 0)
     {
-        for (new i = 0; i < MAX_PLAYERS; i++)
+        for (new i = 0; i < MAX_PLAYERS; i++)
         {
             ShowPlayerNameTagForPlayer(playerid, i, false);
         }

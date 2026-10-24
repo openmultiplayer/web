@@ -20,7 +20,7 @@ tags: ["网络监控"]
 ## 示例
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/packetloss"))
     {
@@ -43,18 +43,18 @@ stock GetPlayerPacketLoss(playerid, &Float:packetLoss)
 {
     /* 返回指定玩家的丢包率百分比 - 由Fusez制作 */
 
-    if(!IsPlayerConnected(playerid))
+    if (!IsPlayerConnected(playerid))
     {
         return 0;
     }
 
-    new nstats[400+1], nstats_loss[20], start, end;
+    new nstats[400 + 1], nstats_loss[20], start, end;
     GetPlayerNetworkStats(playerid, nstats, sizeof (nstats));
 
     start = strfind(nstats, "packetloss", true);
     end = strfind(nstats, "%", true, start);
 
-    strmid(nstats_loss, nstats, start+12, end, sizeof (nstats_loss));
+    strmid(nstats_loss, nstats, start + 12, end, sizeof (nstats_loss));
     packetLoss = floatstr(nstats_loss);
     return 1;
 }

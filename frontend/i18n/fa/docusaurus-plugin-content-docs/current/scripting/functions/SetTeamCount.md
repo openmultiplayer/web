@@ -20,7 +20,7 @@ tags: []
 ## مثال‌ها
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     // ma 18 team dar in Team-Deathmatch mode estefade mikonim, define konid;
     SetTeamCount(18);

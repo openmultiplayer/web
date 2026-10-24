@@ -36,6 +36,7 @@ public OnPlayerConnect(playerid)
     welcomeText[playerid] = CreatePlayerTextDraw(playerid, 240.0, 580.0, "Welcome to my SA-MP server");
     // Set the font of player-textdraw 'welcomeText' to 2.
     PlayerTextDrawFont(playerid, welcomeText[playerid], 2);
+}
 ```
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน

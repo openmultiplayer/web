@@ -1,7 +1,7 @@
 ---
 title: Vending Machines
 sidebar_label: Vending Machines
-description: "Lista de todos os locais das máquinas de venda automática. O jogador que as utiliza deve estar a 2 unidades de distância."
+description: "Lista de todos os locais das máquinas de venda automática."
 ---
 
 

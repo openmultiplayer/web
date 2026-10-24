@@ -1,7 +1,7 @@
 ---
 title: HasObjectCameraCollision
 sidebar_label: HasObjectCameraCollision
-description: چک می‌کنه که آیا یه آبجکت برخورد دوربین فعال داره یا نه. (SetObjectNoCameraCollision)
+description: چک می‌کنه که آیا یه آبجکت برخورد دوربین فعال داره یا نه (SetObjectNoCameraCollision).
 tags: ["object"]
 ---
 

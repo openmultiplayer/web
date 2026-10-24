@@ -23,8 +23,8 @@ ID ciljanog igrača, ili INVALID_PLAYER_ID ako ga nema.
 public OnPlayerUpdate(playerid)
 {
     // Store the ID
-    new playerTarDobij ID = GetPlayerTargetPlayer(playerid);
-    if (playerTarDobij ID != INVALID_PLAYER_ID && GetPlayerTeam(playerTarDobij ID) == GetPlayerTeam(playerid))
+    new playerTarDobijID = GetPlayerTargetPlayer(playerid);
+    if (playerTarDobijID != INVALID_PLAYER_ID && GetPlayerTeam(playerTarDobijID) == GetPlayerTeam(playerid))
     {
         GameTextForPlayer(playerid, "~R~ne pucaj na saigrače!", 5000, 3);
     }
@@ -35,7 +35,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-Ne radi za joypad/kontrolere i nakon određene udaljenosti. Ne radi za snajpersku pušku, jer se ništa ne zaključava i kao takva ne može i neće vratiti igrača.
+- Ne radi za joypad/kontrolere i nakon određene udaljenosti.
+- Ne radi za snajpersku pušku, jer se ništa ne zaključava i kao takva ne može i neće vratiti igrača.
 
 :::
 

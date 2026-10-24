@@ -39,10 +39,13 @@ public OnGameModeInit()
 
 :::warning
 
-Uma vez definido como invulnerável, o ator não chama [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor). Os jogadores terão o estado de invulnerabilidade do ator alterado somente quando for transmitido novamente para eles.
+- Uma vez definido como invulnerável, o ator não chama [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
+- Os jogadores terão o estado de invulnerabilidade do ator alterado somente quando for transmitido novamente para eles.
 
 :::
 
 ## Funções Relacionadas
 
+- [CreateActor](CreateActor): Crie um ator (estático NPC).
 - [IsActorInvulnerable](IsActorInvulnerable): Verifique se um ator é invulnerável.
+- [SetActorHealth](SetActorHealth): Define a saúde de um ator.

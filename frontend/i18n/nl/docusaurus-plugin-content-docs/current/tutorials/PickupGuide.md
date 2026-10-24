@@ -21,8 +21,9 @@ Er zijn twee manieren: [CreatePickup](../scripting/functions/CreatePickup) en [A
 
 **Parameters:**
 
-| model        | Het model voor de pickup.                                             |
+| Naam         | Beschrijving                                                          |
 | ------------ | --------------------------------------------------------------------- |
+| model        | Het model voor de pickup.                                             |
 | type         | Het spawn-type van de pickup, zie onderaan op deze pagina.            |
 | Float:X      | X-coördinaat.                                                         |
 | Float:Y      | Y-coördinaat.                                                         |

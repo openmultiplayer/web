@@ -44,10 +44,14 @@ La callback est appelée lorsque le joueur modifie la peinture DANS le transfend
 
 ## Fonctions connexes
 
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
+
 - [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob): Change the paintjob on a vehicle.
 - [ChangeVehicleColor](../functions/ChangeVehicleColor): Set the color of a vehicle.
 
 ## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
 
 - [OnVehicleRespray](OnVehicleRespray): Called when a vehicle is resprayed.
 - [OnVehicleMod](OnVehicleMod): Called when a vehicle is modded.

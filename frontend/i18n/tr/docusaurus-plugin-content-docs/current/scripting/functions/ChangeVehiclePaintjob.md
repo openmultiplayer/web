@@ -1,7 +1,7 @@
 ---
 title: ChangeVehiclePaintjob
 sidebar_label: ChangeVehiclePaintjob
-description: Aracın kaplamasını değiştirme. (düz renkler için bkz. ChangeVehicleColor).
+description: Aracın kaplamasını değiştirme.
 tags: ["vehicle"]
 ---
 
@@ -28,7 +28,7 @@ Eğer aracın rengi siyahsa kaplama gözükmeyebilir. Aracı beyaza boyamak daha
 
 ```c
 new rand = random(3); // 0, 1 veya 2 olacaktır (tümü geçerlidir)
-ChangeVehicleColor(GetPlayerVehicleID(playerid),1,1); // kaplamanın daha iyi gözükmesi için aracın beyaz renkte olduğundan emin olduk.
+ChangeVehicleColor(GetPlayerVehicleID(playerid), 1, 1); // kaplamanın daha iyi gözükmesi için aracın beyaz renkte olduğundan emin olduk.
 ChangeVehiclePaintjob(GetPlayerVehicleID(playerid), rand); // Oyuncunun bulunduğu aracı rastgele çıkan sayıya eşit olan kaplama ID'sine boyadık.
 ```
 

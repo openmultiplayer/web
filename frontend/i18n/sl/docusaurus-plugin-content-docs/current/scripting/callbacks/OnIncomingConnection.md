@@ -28,7 +28,7 @@ Vedno je bila povabljena prva v "filterscript".
 ```c
 public OnIncomingConnection(playerid, ip_address[], port)
 {
-    printf(Dohodna povezava iz ID-ja igralca %i [IP/port: %s:%i]", playerid, ip_address, port);
+    printf("Dohodna povezava iz ID-ja igralca %i [IP/port: %s:%i]", playerid, ip_address, port);
     return 1;
 }
 ```

@@ -20,7 +20,7 @@ Gets the amount of data (in bytes) that the server has sent to the player.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/bytes_sent"))
     {

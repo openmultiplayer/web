@@ -1,11 +1,11 @@
 ---
 title: Sound IDs
 sidebar_label: Sound IDs
-description: "Uma lista de sons IDs usados ​​por PlayerPlaySound."
+description: "Uma lista de sons IDs usados por PlayerPlaySound."
 ---
 
 
-Aqui você pode encontrar todos os sons IDs usados ​​pela função [PlayerPlaySound](../functions/PlayerPlaySound).
+Aqui você pode encontrar todos os sons IDs usados pela função [PlayerPlaySound](../functions/PlayerPlaySound).
 
 Para [som do relatório de crime IDs](../functions/PlayCrimeReportForPlayer), verifique [aqui](crimelist).
 

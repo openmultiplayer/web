@@ -21,9 +21,9 @@ Retourner **0** va empêcher le joueur de changer de classe.
 ## Exemple
 
 ```c
-public OnPlayerRequestClass(playerid,classid)
+public OnPlayerRequestClass(playerid, classid)
 {
-    if (classid == 3 && !IsPlayerAdmin(playerid))
+    if (classid == 3 && !IsPlayerAdmin(playerid))
     {
         SendClientMessage(playerid, COLOR_RED, "Ce  skin est seulement pour les admins !");
         return 0;
@@ -39,6 +39,12 @@ public OnPlayerRequestClass(playerid,classid)
 Cette callback est aussi appelée quand un joueur presse F4.
 
 :::
+
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnPlayerRequestSpawn](OnPlayerRequestSpawn): Appelée lorsqu'un joueur appuie sur le bouton 'spawn' dans la sélection de classe.
 
 ## Fonctions connexes
 

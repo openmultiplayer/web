@@ -40,6 +40,14 @@ Cette callback est appelée lorsqu'un véhicule entre dans l'eau mais il peut ê
 
 :::
 
+## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
+
+- [OnVehicleSpawn](OnVehicleSpawn): Appelée lorsqu'un véhicule **ré**-apparaît.
+
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [SetVehicleHealth](../functions/SetVehicleHealth): Modifie la vie d'un véhicule.

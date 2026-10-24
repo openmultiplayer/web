@@ -1,6 +1,6 @@
 ---
-título: OnPlayerSelectObject
-descripción: Este callback se llama cuando un jugador selecciona un objeto después de que SelectObject fue usado.
+title: OnPlayerSelectObject
+description: Este callback se llama cuando un jugador selecciona un objeto después de que SelectObject fue usado.
 tags: ["player"]
 ---
 

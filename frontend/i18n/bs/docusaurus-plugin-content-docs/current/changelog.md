@@ -57,7 +57,7 @@ Podstičemo svaki open.mp server da se ažurira na ovu verziju. Došlo je ne sam
 
 **Dodano:**
 
-- Nove konfiguracijske varijable za postavljanje banera i invajtova za Discord koji će se prikazivati ​​u [open.mp launcher-u](https://github.com/openmultiplayer/launcher/releases/latest).
+- Nove konfiguracijske varijable za postavljanje banera i invajtova za Discord koji će se prikazivati u [open.mp launcher-u](https://github.com/openmultiplayer/launcher/releases/latest).
 - Nova konfiguracijska varijabla za poruke o pridruživanju. (`logging.log_connection_messages`)
 - Nova konfiguracijska varijabla za provjeru validaciju animacije. (`game.validate_animations`)
 - Nova definicija koja omogućava miješane funkcije pravopisa u vašem kodu. (`#define MIXED_SPELLINGS`)

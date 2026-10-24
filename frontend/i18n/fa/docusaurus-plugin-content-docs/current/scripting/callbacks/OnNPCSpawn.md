@@ -23,3 +23,11 @@ public OnNPCSpawn()
     return 1;
 }
 ```
+
+<div dir="rtl" style={{ textAlign: "right" }}>
+
+## کالبک‌های مرتبط
+
+- [OnPlayerSpawn](OnPlayerSpawn): زمانی که بازیکن spawn می‌شود فراخوانی می‌شود.
+
+</div>

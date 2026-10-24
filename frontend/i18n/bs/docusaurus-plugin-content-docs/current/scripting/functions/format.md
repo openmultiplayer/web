@@ -43,16 +43,16 @@ Po želji možete staviti broj između `%` i slovo koda rezerviranog mjesta. Ova
 ```c
 new result[128];
 new number = 42;
-format(result,sizeof(result), "Broj je %i.",number);  //-> The number is 42.
-new string[]= "simple message";
-format(result,sizeof(result), "Ovo je %s koji sadrži broj %i.", string, number);
+format(result, sizeof(result), "Broj je %i.", number);  //-> The number is 42.
+new string[] = "simple message";
+format(result, sizeof(result), "Ovo je %s koji sadrži broj %i.", string, number);
 // Ovo je jednostavna poruka koja sadrži broj 42.
 ```
 
 ```c
 new string[64];
-format(string,sizeof(string),"Vaš rezultat je: %d",GetPlayerScore(playerid));
-SendClientMessage(playerid,0xFFFFFFAA,string);
+format(string, sizeof(string), "Vaš rezultat je: %d", GetPlayerScore(playerid));
+SendClientMessage(playerid, 0xFFFFFFAA, string);
 ```
 
 ```c
@@ -65,8 +65,8 @@ SendClientMessage(playerid, -1, string);
 
 ```c
 new string[35];
-format(string,sizeof(string),"43% mojih majica je crno.","%%");
-SendClientMessage(playerid,0xFFFFFAA,string);
+format(string, sizeof(string), "43% mojih majica je crno.", "%%");
+SendClientMessage(playerid, 0xFFFFFAA, string);
 ```
 
 ## Zabilješke

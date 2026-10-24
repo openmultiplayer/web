@@ -28,6 +28,9 @@ tags: []
 #define HTTP_GET                               (1) // Šalje običan HTTP zahtjev.
 #define HTTP_POST                              (2) // Šalje HTTP zahtjev s POST podacima.
 #define HTTP_HEAD                              (3) // Šalje običan HTTP zahtjev, ali zanemaruje sve podatke o odgovoru - vraća samo kod odgovora.
+```
+
+```c
 // HTTP kodovi odgovora na greške
 // Ovi kodovi dopunjuju uobičajene HTTP kodove odgovora vraćene u 'response_code'
 // (10x) (20x OK) (30x Pomjereno) (40x Neovlašteno) (50x Server Error)
@@ -46,7 +49,7 @@ forward MyHttpResponse(index, response_code, data[]);
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp("/hello",cmdtext,true))
+    if (!strcmp("/hello", cmdtext, true))
     {
         HTTP(playerid, HTTP_GET, "assets.open.mp/hello.txt", "", "MyHttpResponse");
         return 1;
@@ -58,7 +61,7 @@ public MyHttpResponse(index, response_code, data[])
 {
     // U ovom povratnom pozivu "index" bi se obično zvao "playerid" (ako ga već niste dobili :))
     new
-        buffer[ 128 ];
+        buffer[128];
     if (response_code == 200) //Da li je zahtjev uspio?
     {
         //Da!

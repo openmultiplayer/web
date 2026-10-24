@@ -24,11 +24,11 @@ This callback is called when the state of any supported key is changed (pressed/
 ```c
 if (newkeys == KEY_FIRE)
 if (newkeys & KEY_FIRE)
-if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
-if ((oldkeys & KEY_FIRE) && !(newkeys & KEY_FIRE))
+if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
+if ((oldkeys & KEY_FIRE) && !(newkeys & KEY_FIRE))
 if ((newkeys & KEY_FIRE) && (newkeys & KEY_CROUCH))
-if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
-if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
+if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
+if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
 
 ```c
@@ -42,7 +42,7 @@ if (HOLDING( KEY_FIRE | KEY_CROUCH ))
 ```c
 // PRESSED(keys)
 #define PRESSED(%0) \
-    (((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
+    (((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
 if (PRESSED( KEY_FIRE ))
 if (PRESSED( KEY_FIRE | KEY_CROUCH ))
 ```
@@ -58,7 +58,7 @@ if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
 ```c
 // RELEASED(keys)
 #define RELEASED(%0) \
-    (((newkeys & (%0)) != (%0)) && ((oldkeys & (%0)) == (%0)))
+    (((newkeys & (%0)) != (%0)) && ((oldkeys & (%0)) == (%0)))
 if (RELEASED( KEY_FIRE ))
 if (RELEASED( KEY_FIRE | KEY_CROUCH ))
 ```
@@ -97,7 +97,7 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 new
     Float:gPlayerHealth[MAX_PLAYERS];
 
-#if !defined INFINITY
+#if !defined INFINITY
     #define INFINITY (Float:0x7F800000)
 #endif
 

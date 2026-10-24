@@ -24,7 +24,7 @@ Postavlja vozila nazad na poziciju gdje je kreirano.
 ```c
 // Respawnuje prvo vozilo.
 SetVehicleToRespawn(1);
-for(new i = GetVehiclePoolSize(); i > 0; i--)
+for (new i = GetVehiclePoolSize(); i > 0; i--)
 {
     SetVehicleToRespawn(i);
 }

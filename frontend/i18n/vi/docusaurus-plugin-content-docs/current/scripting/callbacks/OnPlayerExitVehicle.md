@@ -34,8 +34,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-- Không được gọi nếu người chơi bị rơi khỏi xe đạp hoặc bị loại khỏi phương tiện bằng các phương pháp khác như sử dụng [SetPlayerPos](../functions/SetPlayerPos).
-- Bạn cần sử dụng [OnPlayerStateChange](OnPlayerStateChange) và kiểm tra xem trạng thái cũ của họ là `PLAYER_STATE_DRIVER` hoặc `PLAYER_STATE_PASSENGER` và trạng thái mới của họ là `PLAYER_STATE_ONFOOT`.
+Không được gọi nếu người chơi bị rơi khỏi xe đạp hoặc bị loại khỏi phương tiện bằng các phương pháp khác như sử dụng [SetPlayerPos](../functions/SetPlayerPos). Bạn cần sử dụng [OnPlayerStateChange](OnPlayerStateChange) và kiểm tra xem trạng thái cũ của họ là `PLAYER_STATE_DRIVER` hoặc `PLAYER_STATE_PASSENGER` và trạng thái mới của họ là `PLAYER_STATE_ONFOOT`.
 
 :::
 

@@ -227,7 +227,7 @@ Sem o `forward`, o compilador precisa “reprocessar” quando encontra uma fun�
 Nativas são funções implementadas fora do script (no servidor ou em plugins). Você só pode declará-las se já existir uma implementação; porém, pode criar “falsas” nativas para listar funções no painel do Pawno.
 
 ```c
-native printf(const format[], {Float,_}:...);
+native printf(const format[], {Float, _}:...);
 ```
 
 Para exibir uma função personalizada na lista sem declará-la de fato:

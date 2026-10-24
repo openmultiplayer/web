@@ -124,3 +124,7 @@ description: Server configuration file.
 - Values marked as "Read-only" (as shown by `/rcon varlist`) can not be changed during runtime. All other values can be (temporarily) changed by passing them to SendRconCommand.
 - Values marked as "Rule" (as shown by `/rcon varlist`) are displayed in the server browser in the Rules section.
 - Scripts do not have to be in the gamemodes or filterscripts folders. The information in server.cfg is a path, and can therefore use "..".
+
+```
+filterscripts ../scriptfiles/first ../minimodes/second
+```

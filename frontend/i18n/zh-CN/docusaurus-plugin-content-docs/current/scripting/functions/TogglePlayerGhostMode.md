@@ -1,7 +1,7 @@
 ---
 title: TogglePlayerGhostMode
 sidebar_label: TogglePlayerGhostMode
-description: 切换玩家的幽灵模式。幽灵模式将禁用玩家模型之间的碰撞。
+description: 切换玩家的幽灵模式。
 tags: ["玩家"]
 ---
 

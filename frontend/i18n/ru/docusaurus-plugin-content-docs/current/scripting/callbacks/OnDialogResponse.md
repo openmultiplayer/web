@@ -105,7 +105,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Если игрок нажал 'Выбрать' или сделал двойной клик по оружию
         {
             // Выдаём ему оружие
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Выдаём desert eagle
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Выдаём AK-47
@@ -139,7 +139,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Если игрок нажал 'Выбрать' или сделал двойной клик по оружию
         {
             // Выдаём ему оружие
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Выдаём M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Выдаём MP5
@@ -163,7 +163,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-Это нормально переключаться между диалогами, если у вас их много.
+Разумно использовать switch для поиска нужного диалога, если вы имеете их много.
 
 :::
 
@@ -174,5 +174,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 :::
 
 ## Функции
+
+Следующие функции могут быть полезны, т.к. они так или иначе связаны с текущей функцией.
 
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): Показать диалог игроку.

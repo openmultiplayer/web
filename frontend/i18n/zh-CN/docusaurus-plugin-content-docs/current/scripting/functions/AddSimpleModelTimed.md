@@ -42,9 +42,8 @@ public OnGameModeInit()
 
 :::note
 
-需先在服务器配置中启用**useartwork**或**artwork.enable**选项才能使此函数生效。
-
-当 virtualworld 参数设置时，模型将在玩家进入指定虚拟世界时自动下载。
+- 需先在服务器配置中启用**useartwork**或**artwork.enable**选项才能使此函数生效。
+- 当 virtualworld 参数设置时，模型将在玩家进入指定虚拟世界时自动下载。
 
 :::
 
@@ -56,6 +55,7 @@ public OnGameModeInit()
 
 ## 相关函数
 
+- [AddSimpleModel](AddSimpleModel): 添加一个新的自定义简单物体模型供下载
 - [IsValidCustomModel](IsValidCustomModel): 验证自定义模型 ID 有效性
 - [GetCustomModelPath](GetCustomModelPath): 获取自定义模型路径
 

@@ -10,8 +10,8 @@ tags: []
 | Word         | Meaning                                                                                                 |
 | ------------ | ------------------------------------------------------------------------------------------------------- |
 | PAWN         | The scripting language used to make SA:MP and open.mp scripts                                           |
-| Gamemode     | The main script that runs on a server                                                                   |
-| Filterscript | Scripts that run alongside gamemodes                                                                    |
+| Gamemode     | The main script that runs on a server, often shortened to GM                                            |
+| Filterscript | Scripts that run alongside gamemodes, often shortened to FS                                             |
 | Plugin       | Extra functions/capabilities added through a .dll (Windows) or .so (Linux) file                         |
 | Component    | The open.mp equivalent of a plugin, loaded from the `components` folder                                 |
 | Include      | Pieces of script placed in .inc files to be included in Filterscripts/Gamemodes using `#include <name>` |
@@ -41,10 +41,10 @@ tags: []
 
 ## Entities
 
-| Word  | Meaning                                                                                                            |
-| ----- | ------------------------------------------------------------------------------------------------------------------ |
-| NPC   | A non-player character that connects to the server like a player and is driven by a script, and uses a player slot |
-| Actor | A static non-player character used for decoration or interaction, such as a cashier, that uses no player slot      |
+| Word  | Meaning                                                                                                                                            |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| NPC   | A non-player character that connects to the server like a player and is driven by a script, and uses a player slot. Sometimes referred to as a bot |
+| Actor | A static non-player character used for decoration or interaction, such as a cashier, that uses no player slot                                      |
 
 ## Common gamemode types
 

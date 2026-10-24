@@ -42,6 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         return 1;
     }
     return 0;
+}
 ```
 
 ## 注意事项

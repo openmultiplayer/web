@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Essa callback é executada quando um veículo é modificado.
 
-| Nome        | Descrição                                       |
-| ----------- | ----------------------------------------------- |
-| playerid    | ID do motorista do veículo.                     |
-| vehicleid   | ID do veículo modificado.                       |
-| componentid | ID do componente que foi adicionado ao veículo. |
+| Nome        | Descrição                                                                      |
+| ----------- | ------------------------------------------------------------------------------ |
+| playerid    | ID do motorista do veículo.                                                    |
+| vehicleid   | ID do veículo modificado.                                                      |
+| componentid | [ID do componente](../resources/carcomponentid) que foi adicionado ao veículo. |
 
 ## Retornos
 
@@ -24,7 +24,7 @@ Sempre executada primeiro no gamemode, retornar 0 irá impedir outros filterscri
 ```c
 public OnVehicleMod(playerid, vehicleid, componentid)
 {
-    printf("O veículo %d foi modificado pelo ID %d com o componente %d",vehicleid, playerid,componentid);
+    printf("O veículo %d foi modificado pelo ID %d com o componente %d", vehicleid, playerid, componentid);
     if (GetPlayerInterior(playerid) == 0)
     {
         BanEx(playerid, "Tuning Hacks"); // Anti-tuning hacks script

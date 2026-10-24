@@ -1,6 +1,6 @@
 ---
-título: OnPlayerStreamOut
-descripción: Este callback se llama cuando un jugador se deja de cargar (ya no es visible) por el cliente de algún otro jugador.
+title: OnPlayerStreamOut
+description: Este callback se llama cuando un jugador se deja de cargar (ya no es visible) por el cliente de algún otro jugador.
 tags: ["player"]
 ---
 
@@ -34,3 +34,6 @@ public OnPlayerStreamOut(playerid, forplayerid)
 <NoteNPCCallbacksES />
 
 ## Funciones Relacionadas
+
+- [OnPlayerStreamIn](OnPlayerStreamIn): Llamado cuando un jugador es "cargado" para otro jugador.
+- [OnVehicleStreamOut](OnVehicleStreamOut): Llamado cuando un vehiculo es "descargado" para un jugador.

@@ -56,14 +56,15 @@ AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 
 Uitleg [AddMenuItem](../scripting/functions/AddMenuItem):
 
-| menuid | Menu-ID waar het item getoond wordt |
-| ------ | ----------------------------------- |
-| column | Kolomindex                          |
-| text   | Itemtekst                           |
+| Parameter | Betekenis                           |
+| --------- | ----------------------------------- |
+| menuid    | Menu-ID waar het item getoond wordt |
+| column    | Kolomindex                          |
+| text      | Itemtekst                           |
 
 ## Actie bij selectie
 
-Wanneer een speler een item kiest, wordt [OnPlayerSelectedMenuRow](../scripting/callbacks/OnPlayerSelectedMenuRow) aangeroepen. Gebruik `GetPlayerMenu` om te controleren of het ons menu is, en `switch(row)` voor de keuze.
+Wanneer een speler een item kiest, wordt [OnPlayerSelectedMenuRow](../scripting/callbacks/OnPlayerSelectedMenuRow) aangeroepen. Gebruik `GetPlayerMenu` om te controleren of het ons menu is, en `switch` voor de keuze.
 
 ```pawn
 public OnPlayerSelectedMenuRow(playerid, row)

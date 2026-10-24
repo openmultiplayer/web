@@ -49,3 +49,6 @@ Esta função não afeta veículos desocupados e não afeta trens.
 ## Funções Relacionadas
 
 - [GetVehicleVelocity](GetVehicleVelocity): Obtenha a velocidade de um veículo nos eixos X, Y e Z.
+- [SetVehicleAngularVelocity](SetVehicleAngularVelocity): Define a velocidade angular X, Y e Z de um veículo.
+- [SetPlayerVelocity](SetPlayerVelocity): Define a velocidade de um jogador.
+- [GetPlayerVelocity](GetPlayerVelocity): Obtenha a velocidade de um jogador.

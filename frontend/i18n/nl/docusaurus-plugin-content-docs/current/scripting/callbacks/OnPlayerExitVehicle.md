@@ -34,8 +34,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-- Wordt niet aangeroepen als de speler van een fiets valt of uit een voertuig wordt gehaald door andere middelen zoals [SetPlayerPos](../functions/SetPlayerPos).
-- Je moet [OnPlayerStateChange](OnPlayerStateChange) gebruiken en controleren of hun oude staat `PLAYER_STATE_DRIVER` of `PLAYER_STATE_PASSENGER` is en hun nieuwe staat `PLAYER_STATE_ONFOOT`.
+Wordt niet aangeroepen als de speler van een fiets valt of uit een voertuig wordt gehaald door andere middelen zoals [SetPlayerPos](../functions/SetPlayerPos). Je moet [OnPlayerStateChange](OnPlayerStateChange) gebruiken en controleren of hun oude staat `PLAYER_STATE_DRIVER` of `PLAYER_STATE_PASSENGER` is en hun nieuwe staat `PLAYER_STATE_ONFOOT`.
 
 :::
 

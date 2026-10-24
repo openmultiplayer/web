@@ -1,7 +1,7 @@
 ---
 title: Sistema de Varibles de Jugador
 sidebar_label: Sistema de Varibles de Jugador
-description: El sistema de variables de jugador (abreviado, PVar) es una nueva forma de crear variables de jugador en un método eficiente creado dinámicamente de forma global, lo que significa que se pueden utilizar en el gamemode y en los filterscripts al mismo tiempo.
+description: El sistema de variables de jugador (abreviado, PVar) es una nueva forma de crear variables de jugador en un método eficiente creado dinámicamente de forma global.
 ---
 
 El sistema de variables de jugador (abreviado, PVar) es una nueva forma de crear variables de jugador en un método eficiente creado dinámicamente de forma global, lo que significa que se pueden utilizar en el gamemode y en los filterscripts al mismo tiempo.
@@ -36,13 +36,13 @@ El nuevo sistema introducido en SA-MP 0.3a R5, tiene varias ventajas importantes
 
 Las funciones para establecer y obtener las variables de jugador son:
 
-- [SetPVarInt](../scripting/functions/SetPVarInt) Establece un valor de tipo Int para una variable de jugador.
-- [GetPVarInt](../scripting/functions/GetPVarInt) Obtiene un valor de tipo Int de una variable de jugador.
-- [SetPVarString](../scripting/functions/SetPVarString) Establece un valor de tipo String para una variable de jugador.
-- [GetPVarString](../scripting/functions/GetPVarString) Obtiene un valor de tipo String de una variable de jugador.
-- [SetPVarFloat](../scripting/functions/SetPVarFloat) Establecer un valor de tipo Float para una variable de jugador..
-- [GetPVarFloat](../scripting/functions/GetPVarFloat) Obtiene una variable de tipo float de una variable de jugador.
-- [DeletePVar](../scripting/functions/DeletePVar) Elimina una variable de jugador.
+- [SetPVarInt](../scripting/functions/SetPVarInt): Establece un valor de tipo Int para una variable de jugador.
+- [GetPVarInt](../scripting/functions/GetPVarInt): Obtiene un valor de tipo Int de una variable de jugador.
+- [SetPVarString](../scripting/functions/SetPVarString): Establece un valor de tipo String para una variable de jugador.
+- [GetPVarString](../scripting/functions/GetPVarString): Obtiene un valor de tipo String de una variable de jugador.
+- [SetPVarFloat](../scripting/functions/SetPVarFloat): Establecer un valor de tipo Float para una variable de jugador..
+- [GetPVarFloat](../scripting/functions/GetPVarFloat): Obtiene una variable de tipo float de una variable de jugador.
+- [DeletePVar](../scripting/functions/DeletePVar): Elimina una variable de jugador.
 
 ```c
 #define PLAYER_VARTYPE_NONE   (0)

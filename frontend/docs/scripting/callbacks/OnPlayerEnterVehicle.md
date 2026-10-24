@@ -17,6 +17,8 @@ This callback is called when a player starts to enter a vehicle, meaning the pla
 
 ## Returns
 
+This callback does not handle returns.
+
 It is always called first in filterscripts.
 
 ## Examples

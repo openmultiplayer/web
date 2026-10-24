@@ -1,6 +1,6 @@
 ---
-titolo: contribuire
-descrizione: Come contribuire alla documentazione della Wiki di SA-MP e open.mp
+title: contribuire
+description: Come contribuire alla documentazione della Wiki di SA-MP e open.mp
 ---
 
 Questa documentazione è open-source per chiunque voglia contribuire! Basta solamente un account [GitHub](https://github.com) e del tempo libero. Non hai nemmeno bisogno di conoscere il linguaggio Git, puoi direttamente contribuire dall'interfaccia web!

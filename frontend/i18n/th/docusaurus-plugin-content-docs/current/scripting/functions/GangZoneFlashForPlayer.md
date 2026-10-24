@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 public OnPlayerSpawn(playerid)
 {
-    GangZoneFlashForPlayer(playerid,gangzone,COLOR_RED);
+    GangZoneFlashForPlayer(playerid, gangzone, COLOR_RED);
     return 1;
 }
 ```

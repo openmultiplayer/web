@@ -212,7 +212,7 @@ https://jmalarcon.github.io/markdowntables/
 
 ### Takarítás
 
-Az átalakítás valószínűleg nem lesz tökéletes. Tehát egy kis kézi tisztítást kell végezni. A fent felsorolt ​​formázó kiterjesztések segítenek ebben, de előfordulhat, hogy csak egy kis időt kell töltenie a kézi munkával.
+Az átalakítás valószínűleg nem lesz tökéletes. Tehát egy kis kézi tisztítást kell végezni. A fent felsorolt formázó kiterjesztések segítenek ebben, de előfordulhat, hogy csak egy kis időt kell töltenie a kézi munkával.
 
 Ha nincs időd, ne aggódj! Küld be a befejezetlen vázlatot, és valaki más folytathatja, ahol abbahagytad!
 

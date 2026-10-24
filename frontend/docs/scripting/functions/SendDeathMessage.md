@@ -41,7 +41,9 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-Death messages can be cleared by using a valid player ID for 'playerid' that is not connected. To show a death message for just a single player, use [SendDeathMessageToPlayer](SendDeathMessageToPlayer). You can use NPCs to create your own custom death reasons.
+- Death messages can be cleared by using a valid player ID for 'playerid' that is not connected.
+- To show a death message for just a single player, use [SendDeathMessageToPlayer](SendDeathMessageToPlayer).
+- You can use NPCs to create your own custom death reasons.
 
 :::
 

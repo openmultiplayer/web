@@ -352,7 +352,7 @@ for (new a = 9; a < 10; a++)
 این یک کد ساده برای حلقه زدن روی همه بازیکن‌ها است:
 
 ```c
-for(new i,a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
         if (IsPlayerConnected(i))
         {
@@ -709,3 +709,10 @@ MyFunction(num)
     return 0;
 }
 ```
+
+## همچنین ببینید
+
+- [کلمات کلیدی: دستورات](Statements)
+- [کلمات کلیدی: عملگرها](Operators)
+- [کلمات کلیدی: دستورالعمل‌ها](Directives)
+- [کلمات کلیدی: مقداردهان‌ها](Initialisers)

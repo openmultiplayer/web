@@ -24,8 +24,8 @@ Retournez **0** pour empêcher la modification d'être visible pour les autres j
 ```c
 public OnVehicleMod(playerid, vehicleid, componentid)
 {
-    printf("Le véhicule %d a été modifié par le joueur ID %d. L'ID de la partie de la voiture modifiée est %d",vehicleid,playerid,componentid);
-    if(GetPlayerInterior(playerid) == 0)
+    printf("Le véhicule %d a été modifié par le joueur ID %d. L'ID de la partie de la voiture modifiée est %d", vehicleid, playerid, componentid);
+    if (GetPlayerInterior(playerid) == 0)
     {
         BanEx(playerid, "Hack Tuning"); // Anti-tuning hacks script
         //Testé et approuvé sur les serveurs où il est impossible de modifier un véhicule hors d'un transfender/wheel arch angel
@@ -44,9 +44,13 @@ Cette callback ne sera pas appelée avec [AddVehicleComponent](../functions/AddV
 
 ## Fonctions connexes
 
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
+
 - [AddVehicleComponent](../functions/AddVehicleComponent): Ajoute un composant sur un véhicule.
 
 ## Callbacks connexes
+
+Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callback.
 
 - [OnEnterExitModShop](OnEnterExitModShop): Appelée lorsqu'un joueur dans un véhicule entre ou sort d'un garage de modification.
 - [OnVehiclePaintjob](OnVehiclePaintjob): Appelée lorsque la peinture d'un véhicule est changée.

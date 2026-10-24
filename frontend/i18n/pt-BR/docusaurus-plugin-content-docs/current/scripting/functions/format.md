@@ -1,7 +1,7 @@
 ---
 title: format
 sidebar_label: format
-description: "Formata uma string para incluir variáveis ​​e outras strings dentro dela."
+description: "Formata uma string para incluir variáveis e outras strings dentro dela."
 tags: ["string"]
 ---
 
@@ -67,6 +67,8 @@ format(string, sizeof(string), "The time is %02d:%02d:%02d.", hour, minute, seco
 // produzirá algo como "A hora é 09:45:02."
 ```
 <br />
+
+Uma maneira de inserir o sinal de porcentagem é fazer:
 
 ```c
 new string[32];

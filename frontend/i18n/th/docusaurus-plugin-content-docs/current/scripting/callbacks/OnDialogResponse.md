@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Callback นี้ถูกเรียกเมื่อผู้เล่นตอบสนองกับกล่องโต้ตอบที่แสดงโดยใช้ ShowPlayerDialog ไม่ว่าจะ คลิกปุ่ม, กด ENTER/ESC หรือดับเบิลคลิกที่รายการไอเทม (หากใช้กล่องโต้ตอบแบบรายการ)
+description: Callback นี้ถูกเรียกเมื่อผู้เล่นตอบสนองกับกล่องโต้ตอบที่แสดงโดยใช้ ShowPlayerDialog
 tags: []
 ---
 
@@ -103,7 +103,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // หากพวกเขาคลิก 'เลือก' หรือดับเบิลคลิกที่อาวุธ
         {
             // ให้อาวุธพวกเขา
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // ให้ desert eagle พวกเขา
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // ให้ AK-47 พวกเขา
@@ -137,7 +137,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // หากพวกเขาคลิก 'เลือก' หรือดับเบิลคลิกที่อาวุธ
         {
             // ให้อาวุธพวกเขา
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // ให้ M4 พวกเขา
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // ให้ MP5 พวกเขา

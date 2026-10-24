@@ -65,7 +65,7 @@ public OnPlayerUpdate(playerid)
     new Float:fHealth;
     GetPlayerHealth(playerid, fHealth);
 
-    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
+    if (fHealth != GetPVarFloat(playerid, "faPlayerHealth"))
     {
         // 检测生命值变化，可用于反作弊检测
         if (fHealth > GetPVarFloat(playerid, "faPlayerHealth"))
@@ -88,7 +88,8 @@ public OnPlayerUpdate(playerid)
 
 :::warning
 
-此回调函数平均每秒触发30次/玩家，请谨慎使用。触发频率会根据玩家行为变化：驾驶或射击时更新频率远高于静止状态。
+- 此回调函数平均每秒触发30次/玩家，请谨慎使用。
+- 触发频率会根据玩家行为变化：驾驶或射击时更新频率远高于静止状态。
 
 :::
 

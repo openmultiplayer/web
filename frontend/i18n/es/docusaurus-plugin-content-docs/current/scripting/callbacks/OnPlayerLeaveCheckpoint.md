@@ -1,6 +1,6 @@
 ---
-título: OnPlayerLeaveCheckpoint
-descripción: Este callback se llama cuando un jugador sale del checkpoint establecido a él por SetPlayerCheckpoint.
+title: OnPlayerLeaveCheckpoint
+description: Este callback se llama cuando un jugador sale del checkpoint establecido a él por SetPlayerCheckpoint.
 tags: ["player", "checkpoint"]
 ---
 
@@ -29,6 +29,12 @@ public OnPlayerLeaveCheckpoint(playerid)
 ## Notas
 
 <NoteNPCCallbacksES />
+
+## Callbacks Relacionados
+
+- [OnPlayerEnterCheckpoint](OnPlayerEnterCheckpoint): Llamado cuando un jugador ingresa a un checkpoint.
+- [OnPlayerEnterRaceCheckpoint](OnPlayerEnterRaceCheckpoint): Llamado cuando un jugador ingresa a un checkpoint de carreras.
+- [OnPlayerLeaveRaceCheckpoint](OnPlayerLeaveRaceCheckpoint): Llamado cuando un jugador sale de un checkpoint de carreras.
 
 ## Funciones Relacionadas
 

@@ -30,7 +30,7 @@ public OnGameModeInit()
     gDBConnectionHandle = db_open("exemplo.db");
 
     // Se a conexão com o banco de dados existir
-    if(gDBConnectionHandle)
+    if (gDBConnectionHandle)
     {
         // Envia uma mensagem no console dizendo que uma conexão com o banco de dados foi criada com sucesso
         print("Conexão com o banco de dados \"exemplo.db\" criada com sucesso.");
@@ -46,7 +46,7 @@ public OnGameModeInit()
 public OnGameModeExit()
 {
     // Feche a conexão com o banco de dados se a conexão estiver aberta
-    if(db_close(gDBConnectionHandle))
+    if (db_close(gDBConnectionHandle))
     {
         // Limpeza extra
         gDBConnectionHandle = DB:0;
@@ -61,7 +61,8 @@ public OnGameModeExit()
 
 :::warning
 
-Ele criará um novo arquivo de banco de dados SQLite, se não houver nenhum arquivo de banco de dados SQLite com o mesmo nome de arquivo disponível. Feche sua conexão com o banco de dados SQLite com [db_close](db_close)!
+- Ele criará um novo arquivo de banco de dados SQLite, se não houver nenhum arquivo de banco de dados SQLite com o mesmo nome de arquivo disponível.
+- Feche sua conexão com o banco de dados SQLite com [db_close](db_close)!
 
 :::
 
@@ -84,3 +85,7 @@ Ele criará um novo arquivo de banco de dados SQLite, se não houver nenhum arqu
 - [db_get_result_mem_handle](db_get_result_mem_handle): Obtenha o identificador de memória para uma consulta SQLite que foi executada com db_query.
 - [db_debug_openfiles](db_debug_openfiles): A função obtém o número de conexões de banco de dados abertas para fins de depuração.
 - [db_debug_openresults](db_debug_openresults): A função obtém o número de resultados do banco de dados aberto.
+
+## Recursos relacionados
+
+- [SQLite Open Flags](../resources/sqlite-open-flags)
