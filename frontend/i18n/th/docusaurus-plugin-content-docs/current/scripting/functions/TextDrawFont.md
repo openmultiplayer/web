@@ -31,7 +31,7 @@ new Text:MyTextdraw;
 
 public OnGameModeInit()
 {
-    MyTextdraw= TextDrawCreate(320.0, 425.0, "This is an example textdraw");
+    MyTextdraw = TextDrawCreate(320.0, 425.0, "This is an example textdraw");
     TextDrawFont(MyTextdraw, 2);
     return 1;
 }

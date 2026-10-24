@@ -17,7 +17,7 @@ tags: ["演员"]
 SetAllActorsHealth(Float:health)
 {
     // 遍历所有可能的演员ID
-    for(new i = 0, j = GetActorPoolSize(); i <= j; i++)
+    for (new i = 0, j = GetActorPoolSize(); i <= j; i++)
     {
         if (IsValidActor(i))
         {

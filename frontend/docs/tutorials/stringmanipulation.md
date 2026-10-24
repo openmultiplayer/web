@@ -309,7 +309,7 @@ We will take a closer look at few of them, the ones are more often used.
 
   ```pawn
   new str_dest[12] = "Hello", str_source[7] = " World";
-  strcat(str_dest,str_source);
+  strcat(str_dest, str_source);
   ```
 
   If we were to output `str_dest`, it will show **Hello World**, the two strings were added to each other, and the result was stored in `str_dest`, _“Hello” + “ World” = “Hello World”_, notice how we included that space in the second string, yes, spaces are character themselves, according to the _ASCII_ table, their value is `32`, hadn't we add the space, the resulting string would have been **HelloWorld**.
@@ -404,7 +404,7 @@ The first thing that must be brought up, and that personally triggers me, is see
 
 ```pawn
 new badString[100];
-badString ="Hello :)";
+badString = "Hello :)";
 ```
 
 We declared a string with _100 cells_, _1 cell_ takes up _4 bytes_, let’s do some basic math, _100 \* 4 = 400_ bytes, that’s roughly _0.0004 Megabyte_, nothing for today’s standards I know, but supposedly, on a huge script, obviously you will have to use more than one string, _60_, _70_, heck _100_ more strings? (_possibly more_), those tiny numbers will stack up on each other resulting in a much bigger number, and cause you serious trouble later on, and believe me when I tell you, the string we declared doesn’t come as near to looking stupid when compared to the likes of those with a size five times bigger or more.
@@ -415,7 +415,7 @@ Keep in mind the limits SA-MP puts when dealing with strings, where does the _25
 
 ```pawn
 new goodString[12];
-goodString="Good string";
+goodString = "Good string";
 ```
 
 See how we preserved memory? A mere **48** bytes, and no extra weigh that would cause trouble later, feels much better.
@@ -606,7 +606,7 @@ Obviously, you can also pass an array of characters, formatted strings...etc. An
 new mornMsg[] = "Hello!";
 
 SendClientMessage(0, -1, mornMsg);
-SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
+SendClientMessage(0, -1, "How are you ", STRING_MSG#?);
 ```
 
 As you can see at the example above, this will send the player with the id _0_ two messages colored in white, the first messages will say “_Hello!_”, and the second will say, “_How are you today?_”, pretty similar to how other functions work. Keep in mind that predefined constant integers must be prefixed with the `#` symbol.
@@ -1580,7 +1580,8 @@ Let’s take a look at these examples;
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);
+SendClientMessageToAll(0, output);
 ```
 
 > [Info]: the player with the id of 9 is called <span style={{color: '#ee11cc'}}>Player1</span>.

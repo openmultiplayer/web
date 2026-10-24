@@ -48,7 +48,7 @@ if (handle)
     file_len = flength(handle);
 
     // 校验文件尺寸与数据结构匹配
-    if (file_len == (some_enum*4))
+    if (file_len == (some_enum * 4))
     {
         // 执行块读取操作
         fblockread(handle, some_data);

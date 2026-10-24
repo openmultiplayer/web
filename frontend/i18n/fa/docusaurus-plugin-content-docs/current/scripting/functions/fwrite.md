@@ -57,7 +57,7 @@ if (handle)
     // موفق بود
 
     // خوندن کل فایل
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

@@ -65,7 +65,7 @@ Zecimal (baza 10)
 
 //which equals
 
-10+3
+10 + 3
 
 //which equals
 
@@ -83,7 +83,7 @@ Binar (baza 2)
 
 //which equals
 
-8+4+0+1
+8 + 4 + 0 + 1
 
 //which equals
 
@@ -95,7 +95,7 @@ Putem vedea din exemplul precedent că, dacă un bit este setat la 0, îl putem 
 Iată 12 puteri de 2 chiar lângă vârful capului meu:
 
 ```c
-4096,2048,1024,512,256,128,64,32,16,8,4,2,1
+4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1
 ```
 
 Dacă nu știi nimic despre lucrul cu puteri, probabil că acest lucru nu are deloc sens pentru tine. O putere este un număr înmulțit cu el însuși x de câte ori. Având în vedere aceste informații, lista precedentă de puteri are probabil mai mult sens; Ei bine, cu excepția lui 1. S-ar putea să fiți curios de ce 2 ridicat la puterea lui 0 dă un rezultat de 1, tot ce pot spune la acest lucru este că doar o face.
@@ -134,7 +134,7 @@ Putem vedea că atunci când ne deplasăm spre dreapta, valoarea noastră anteri
 1 * (2^3) = 8
 
 
-131072+65536+32768+8192+4096+512+128+64+32+16+8
+131072 + 65536 + 32768 + 8192 + 4096 + 512 + 128 + 64 + 32 + 16 + 8
 =
 242424
 ```

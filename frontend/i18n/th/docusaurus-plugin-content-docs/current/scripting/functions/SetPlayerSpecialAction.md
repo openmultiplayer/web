@@ -25,7 +25,7 @@ This function allows to set players special action.
 ```c
 if (strcmp(cmd, "/handsup", true) == 0)
 {
-    SetPlayerSpecialAction(playerid,SPECIAL_ACTION_HANDSUP);
+    SetPlayerSpecialAction(playerid, SPECIAL_ACTION_HANDSUP);
     return 1;
 }
 ```

@@ -22,7 +22,7 @@ new sVarUpperIndex = GetSVarsUpperIndex() + 1;
 // Ova sVarCount varijabla će pohraniti koliko sVar-ova je postavljeno pa ih brojimo.
 new sVarCount;
 
-for(new i=0; i != sVarUpperIndex; i++) // Loop through all sVar IDs under the upper index
+for (new i = 0; i != sVarUpperIndex; i++) // Loop through all sVar IDs under the upper index
 {
     // Prvo, trebamo dobiti ime SVar-a
     new sVarName[128];
@@ -35,7 +35,7 @@ for(new i=0; i != sVarUpperIndex; i++) // Loop through all sVar IDs under the up
 }
 
 new szString[66];
-printf("%i server varijabli je postavljeno. Gornji index (najveći ID): %i.", sVarCount, SVarUpperIndex-1);
+printf("%i server varijabli je postavljeno. Gornji index (najveći ID): %i.", sVarCount, SVarUpperIndex - 1);
 ```
 
 ## Srodne Funkcije

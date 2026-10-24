@@ -351,9 +351,9 @@ for (new a = 9; a < 10; a++)
 Este é um simples código para realizar um loop através de todos os players:
 
 ```c
-for(new i,a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
-        if(IsPlayerConnected(i))
+        if (IsPlayerConnected(i))
         {
                  //Faça algo
         }

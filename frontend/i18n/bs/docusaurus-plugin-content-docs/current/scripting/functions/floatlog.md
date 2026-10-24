@@ -23,7 +23,7 @@ Logaritam kao float vrijednost.
 ```c
 public OnGameModeInit()
 {
-    printf("Logaritam 15,0 sa osnovom 10,0 je %f", floatlog( 15.0, 10.0 ));
+    printf("Logaritam 15,0 sa osnovom 10,0 je %f", floatlog(15.0, 10.0));
     return 1;
 }
 ```

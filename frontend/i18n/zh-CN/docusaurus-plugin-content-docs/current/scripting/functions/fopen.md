@@ -36,7 +36,7 @@ if (handle)
     // 成功
 
     // 逐行读取文件内容
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf); // 输出每行内容
     }
@@ -84,7 +84,7 @@ new buf[128];
 if (handle)
 {
     // 读取现有内容
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

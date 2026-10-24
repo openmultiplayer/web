@@ -65,7 +65,7 @@ gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 public OnPlayerPickUpPickup(playerid, pickupid)
 {
     // 验证拾取物ID是否为预设的gMyPickup
-    if(pickupid == gMyPickup)
+    if (pickupid == gMyPickup)
     {
         // 发送提示信息
         SendClientMessage(playerid, 0xFFFFFFFF, "你获得了$100!");

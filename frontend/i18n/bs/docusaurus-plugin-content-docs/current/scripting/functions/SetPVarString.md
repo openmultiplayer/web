@@ -24,10 +24,10 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ```c
 public OnPlayerConnect(playerid)
 {
-    new h,m,s,str[50];
-    gettime(h,m,s); // Dobij vrijeme
-    format(str,50,"Connected: %d:%d:%d",h,m,s); // kreiraj string sa povezanim vremenom
-    SetPVarString(playerid,"timeconnected",str); // sačuvaj string u varijablu igrača
+    new h, m, s, str[50];
+    gettime(h, m, s); // Dobij vrijeme
+    format(str, 50, "Connected: %d:%d:%d", h, m, s); // kreiraj string sa povezanim vremenom
+    SetPVarString(playerid, "timeconnected", str); // sačuvaj string u varijablu igrača
     return 1;
 }
 ```

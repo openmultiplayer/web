@@ -259,7 +259,7 @@ Listing: tag names
 new bool:flag = true            /* "flag" can only hold "true" or "false" */
 
 const error:success = 0
-const error:fatal= 1
+const error:fatal = 1
 const error:nonfatal = 2
 
 error:errno = fatal

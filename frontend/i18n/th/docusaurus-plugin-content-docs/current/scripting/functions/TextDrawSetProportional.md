@@ -25,8 +25,8 @@ new Text:MyTextdraw;
 
 public OnGameModeInit()
 {
-    MyTextDraw = TextDrawCreate(100.0, 33.0,"Example TextDraw");
-    TextDrawSetProportional(MyTextDraw,1);
+    MyTextDraw = TextDrawCreate(100.0, 33.0, "Example TextDraw");
+    TextDrawSetProportional(MyTextDraw, 1);
     return 1;
 }
 ```

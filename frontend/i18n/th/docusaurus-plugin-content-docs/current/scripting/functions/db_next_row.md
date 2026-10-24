@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         }
 
         // While next row has been fetched
-        while(db_next_row(db_result));
+        while (db_next_row(db_result));
 
         // Returns 1
         return 1;

@@ -23,7 +23,7 @@ Esta função retorna o número de mensagens que o servidor recebeu do jogador.
 ## Exemplos
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/msgs"))
     {

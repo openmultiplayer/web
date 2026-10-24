@@ -333,7 +333,7 @@ new
 
 SetPlayerValue(playerid, value)
 {
-    switch(playerid)
+    switch (playerid)
     {
         case 0: gPlayer0 = value; // é o mesmo que fazer if (playerid == 0)
         case 1: gPlayer1 = value; // é o mesmo que fazer if (playerid == 1)

@@ -26,9 +26,9 @@ public OnRconLoginAttempt(ip[], password[], success)
 {
     if (!success) //Caso a senha esteja incorreta
     {
-        printf("FAILED RCON LOGIN BY IP %s USING PASSWORD %s",ip, password);
+        printf("FAILED RCON LOGIN BY IP %s USING PASSWORD %s", ip, password);
         new pip[16];
-        for(new i = GetPlayerPoolSize(); i != -1; --i) //Faz um loop por todos os jogadores.
+        for (new i = GetPlayerPoolSize(); i != -1; --i) //Faz um loop por todos os jogadores.
         {
             GetPlayerIp(i, pip, sizeof(pip));
             if (!strcmp(ip, pip, true)) //Caso o IP do jogador seja o mesmo que falhou ao realizar o login.

@@ -27,11 +27,11 @@ Ova funkcija ne return-a nikakve specifične vrijednosti.
 ## Primjeri
 
 ```c
-public OnPlayerConnect( playerid )
+public OnPlayerConnect(playerid)
 {
     // Dozvoljava mogućnost teleportovanja igrača kada koristi desni klik na mapu
     // s obzirom da se ovo nalazi u OnPlayerConnect, ovo će biti primijenjeno na SVAKOG igrača
-    AllowPlayerTeleport( playerid, 1 );
+    AllowPlayerTeleport(playerid, 1);
 }
 ```
 

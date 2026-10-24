@@ -22,7 +22,7 @@ Siempre se llama primero en filterscripts.
 ## Ejemplos
 
 ```c
-public OnPlayerRequestClass(playerid,classid)
+public OnPlayerRequestClass(playerid, classid)
 {
     if (classid == 3 && !IsPlayerAdmin(playerid))
     {

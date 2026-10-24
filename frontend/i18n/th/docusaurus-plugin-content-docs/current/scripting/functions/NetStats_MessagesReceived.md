@@ -20,7 +20,7 @@ This function returns the number of messages the server has received from the pl
 ## ตัวอย่าง
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/msgs"))
     {

@@ -31,7 +31,7 @@ The player's health is stored in the specified variable.
 if (strcmp(cmdtext, "/doctor", true) == 0)
 {
     new Float:health;
-    GetPlayerHealth(playerid,health);
+    GetPlayerHealth(playerid, health);
     if (health < 50.0)
     {
         SetPlayerHealth(playerid, 50.0);

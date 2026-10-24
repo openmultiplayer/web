@@ -20,7 +20,7 @@ new sVarCount;
 
 new sVarName[128];
 
-for(new i = 0; i != sVarUpperIndex; i++) // 遍历所有在最大索引值以下的服务器变量ID
+for (new i = 0; i != sVarUpperIndex; i++) // 遍历所有在最大索引值以下的服务器变量ID
 {
     // 首先获取服务器变量名称
     GetSVarNameAtIndex(i, sVarName, sizeof(sVarName));
@@ -32,7 +32,7 @@ for(new i = 0; i != sVarUpperIndex; i++) // 遍历所有在最大索引值以下
     }
 }
 
-printf("当前共设置了 %i 个服务器变量。最大索引值（最高ID）: %i.", sVarCount, SVarUpperIndex-1);
+printf("当前共设置了 %i 个服务器变量。最大索引值（最高ID）: %i.", sVarCount, SVarUpperIndex - 1);
 ```
 
 ## 相关函数

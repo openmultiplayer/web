@@ -16,7 +16,7 @@ Sunucuda oluşturulan en yüksek aktör ID'sini kontrol etme.
 ```c
 SetAllActorsHealth(Float:health)
 {
-    for(new i = 0, j = GetActorPoolSize(); i <= j; i++) // Aktör havuzunu oluşturduk. J fonksiyonunu oluşturulmuş en yüksek ID'ye sahip aktöre eşitledik ve döngümüzü oluşturduk.
+    for (new i = 0, j = GetActorPoolSize(); i <= j; i++) // Aktör havuzunu oluşturduk. J fonksiyonunu oluşturulmuş en yüksek ID'ye sahip aktöre eşitledik ve döngümüzü oluşturduk.
     {
         if (IsValidActor(i)) // Eğer i fonksiyonundaki ID geçerli/oluşturulmuş bir aktörse...
         {

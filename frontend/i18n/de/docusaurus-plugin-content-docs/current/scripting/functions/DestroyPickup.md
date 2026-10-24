@@ -21,7 +21,7 @@ Diese Funktion hat keinen Rückgabewert.
 
 ```c
 // Erstelle ein Pickup für Armor (Rüstung). ID wird in pickup_armor gespeichert.
-pickup_armour = CreatePickup ( 1242, 2, 1503.3359, 1432.3585, 10.1191 );
+pickup_armour = CreatePickup(1242, 2, 1503.3359, 1432.3585, 10.1191);
 
 //Lösche das Pickup über die gespeicherte ID wieder...
 DestroyPickup(pickup_armour);

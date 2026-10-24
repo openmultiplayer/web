@@ -31,7 +31,7 @@ Siempre se llama primero en filterscripts.
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("El vehículo %i spawneó!",vehicleid);
+    printf("El vehículo %i spawneó!", vehicleid);
     return 1;
 }
 ```

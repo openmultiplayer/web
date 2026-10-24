@@ -34,7 +34,7 @@ tags: []
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"银行余额: $0") != -1)
+    if (strfind(text, "银行余额: $0") != -1)
     {
         SendClientMessage(playerid, -1, "我是个穷光蛋 :(");
     }

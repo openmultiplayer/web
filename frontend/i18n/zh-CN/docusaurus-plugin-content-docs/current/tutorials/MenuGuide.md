@@ -89,9 +89,9 @@ public OnPlayerSelectedMenuRow(playerid, row)
 具体传送逻辑实现：
 
 ```pawn
-if(CurrentMenu == teleportmenu)
+if (CurrentMenu == teleportmenu)
 {
-    switch(row)
+    switch (row)
     {
         case 0: // 格罗夫街
         {
@@ -138,9 +138,9 @@ if(CurrentMenu == teleportmenu)
 现在需要创建显示菜单的命令。这是最简单的步骤：在`OnPlayerCommandText`中使用`strcmp`进行命令比对并调用`ShowMenuForPlayer`。如果你已有命令处理器，可直接通过处理器调用：
 
 ```pawn
-if(strcmp(cmdtext, "/teleport", true) == 0)
+if (strcmp(cmdtext, "/teleport", true) == 0)
 {
-    ShowMenuForPlayer(teleportmenu,playerid);
+    ShowMenuForPlayer(teleportmenu, playerid);
     return 1;
 }
 ```

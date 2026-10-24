@@ -15,7 +15,7 @@ Extract a range of characters from a string.
 | const source[]        | The string from which to extract characters.                         |
 | start                 | The position of the first character.                                 |
 | end                   | The position of the last character.                                  |
-| maxlength=sizeof dest | The length of the destination. (Will be the size of dest by default) |
+| maxlength = sizeof dest | The length of the destination. (Will be the size of dest by default) |
 
 ## ส่งคืน
 

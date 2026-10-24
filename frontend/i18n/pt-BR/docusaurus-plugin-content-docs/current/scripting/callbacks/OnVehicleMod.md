@@ -24,7 +24,7 @@ Sempre executada primeiro no gamemode, retornar 0 irá impedir outros filterscri
 ```c
 public OnVehicleMod(playerid, vehicleid, componentid)
 {
-    printf("O veículo %d foi modificado pelo ID %d com o componente %d",vehicleid, playerid,componentid);
+    printf("O veículo %d foi modificado pelo ID %d com o componente %d", vehicleid, playerid, componentid);
     if (GetPlayerInterior(playerid) == 0)
     {
         BanEx(playerid, "Tuning Hacks"); // Anti-tuning hacks script

@@ -24,7 +24,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ```c
 new string[4];
 new iValue = 250;
-valstr(string,iValue); // string je sada "250"
+valstr(string, iValue); // string je sada "250"
 ```
 
 ## Zabilješke

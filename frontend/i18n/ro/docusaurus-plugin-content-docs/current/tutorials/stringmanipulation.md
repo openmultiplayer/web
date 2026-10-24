@@ -308,7 +308,7 @@ Vom arunca o privire mai atentă asupra câtorva dintre ele, cele sunt mai des u
 
   ```cpp
   new str_dest[12] = "Hello", str_source[7] = " World";
-  strcat(str_dest,str_source);
+  strcat(str_dest, str_source);
   ```
 
   Dacă ar fi să ieșim `str_dest`, va apărea ** Hello World **, cele două șiruri au fost adăugate una la cealaltă, iar rezultatul a fost stocat în` str_dest`, _`Hello` + `World` =` Hello World`_, observați cum am inclus acel spațiu în cel de-al doilea șir, da, spațiile sunt caracter în sine, conform tabelului _ASCII_, valoarea lor este`32`, dacă nu am adăuga spațiul, șirul rezultat ar fi fost **Salut Lume**.
@@ -403,7 +403,7 @@ Primul lucru care trebuie adus în discuție și care mă declanșează personal
 
 ```cpp
 new badString[100];
-badString ="Hello :)";
+badString = "Hello :)";
 ```
 
 Am declarat un șir cu _100 celule_, _1 celulă_ ocupă _4 octeți_, hai să facem câteva matematici de bază, _100 \ \* 4 = 400_ octeți, adică aproximativ 0.0004 megabyte*, nimic pentru standardele de astăzi știu, dar se presupune că pe un script imens , evident, va trebui să utilizați mai multe șiruri, \_60*, _70_, naiba _100_ mai multe șiruri? (_posibil mai mult_), acele numere minuscule se vor aduna unul pe celălalt rezultând un număr mult mai mare și vă vor provoca probleme serioase mai târziu și credeți-mă când vă spun că șirul pe care l-am declarat nu se apropie la fel de prost în comparație cu cei care au o dimensiune de cinci ori mai mare sau mai mare.
@@ -414,7 +414,7 @@ Rețineți limitele pe care le pune SA-MP atunci când se ocupă de șiruri, und
 
 ```cpp
 new goodString[12];
-goodString="Good string";
+goodString = "Good string";
 ```
 
 Vedeți cum am păstrat memoria? Doar **48** octeți și nici o greutate suplimentară care ar provoca probleme mai târziu, se simte mult mai bine.
@@ -605,7 +605,7 @@ Evident, puteți trece și o serie de caractere, șiruri formatate ... etc. Și 
 new mornMsg[] = "Hello!";
 
 SendClientMessage(0, -1, mornMsg);
-SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
+SendClientMessage(0, -1, "How are you ", STRING_MSG#?);
 ```
 
 După cum puteți vedea în exemplul de mai sus, acest lucru va trimite jucătorului cu id-ul _0_ două mesaje colorate în alb, primele mesaje vor spune `_Bună ziua!_`, Iar al doilea va spune, `_Cum ești astăzi?_`, destul de similar cu modul în care funcționează alte funcții. Rețineți că numerele întregi constante predefinite trebuie să fie prefixate cu simbolul "#".
@@ -1579,7 +1579,8 @@ Să aruncăm o privire la aceste exemple;
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);
+SendClientMessageToAll(0, output);
 ```
 
 > [Informații]: playerul cu ID-ul 9 este numit <span style={{color: '#ee11cc'}}>Player1</span>.

@@ -31,7 +31,7 @@ public OnPlayerUpdate(playerid)
         new animlib[32];
         new animname[32];
         new msg[128];
-        GetAnimationName(GetPlayerAnimationIndex(playerid),animlib,32,animname,32);
+        GetAnimationName(GetPlayerAnimationIndex(playerid), animlib, 32, animname, 32);
         format(msg, 128, "Running anim: %s %s", animlib, animname);
         SendClientMessage(playerid, 0xFFFFFFFF, msg);
     }

@@ -182,7 +182,7 @@ a instrução completa não pode se estender por mais de uma linha.
 
         Por exemplo
 
-        `#pragma ctrlchar '\$'**`
+        `#pragma ctrlchar '$'`
 
         Você pode dar o novo valor para o caractere de controle como uma constante
         de caractere (entre aspas simples) ou como um valor decimal ou hexadecimal.

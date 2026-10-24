@@ -29,7 +29,7 @@ Postavi ikonu/marker na mapu igrača. Može se koristiti da označite lokacije k
 ## Primjeri
 
 ```c
-public OnPlayerConnect( playerid )
+public OnPlayerConnect(playerid)
 {
     // Ovaj primjer demonstrira kako kreirati dollar-ikonicu na vrh locirane 24/7 trgovine
     // u Las Venturasu. Na ovaj način novi igrači znaju gdje da odu sa svojim novcem!

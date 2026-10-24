@@ -20,7 +20,7 @@ The percentage packet loss as a float. 0 if player not connected.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/packetloss"))
     {

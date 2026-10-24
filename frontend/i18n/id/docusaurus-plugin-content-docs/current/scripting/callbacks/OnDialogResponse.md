@@ -34,9 +34,9 @@ ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Server Rules", "-
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_RULES)
+    if (dialogid == DIALOG_RULES)
     {
-        if(response) // Jika mereka mengklik tombol 'Ya' atau menekan enter
+        if (response) // Jika mereka mengklik tombol 'Ya' atau menekan enter
         {
             SendClientMessage(playerid, COLOR_GREEN, "Terimakasih telah menyetujui persyaratannya!");
         }
@@ -61,15 +61,15 @@ ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Masukkan 
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_LOGIN)
+    if (dialogid == DIALOG_LOGIN)
     {
-        if(!response) // Jika dia mengklik tombol 'Quit' atau menekan ESC
+        if (!response) // Jika dia mengklik tombol 'Quit' atau menekan ESC
         {
             Kick(playerid);
         }
         else // Menekan ENTER atau mengklik tombol 'Login'
         {
-            if(CheckPassword(playerid, inputtext))
+            if (CheckPassword(playerid, inputtext))
             {
                 SendClientMessage(playerid, COLOR_RED, "You are now logged in!");
             }
@@ -98,12 +98,12 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons", "Desert
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // Jika mereka mengklik 'Pilih' atau mengklik dua kali senjata yang dipilih
+        if (response) // Jika mereka mengklik 'Pilih' atau mengklik dua kali senjata yang dipilih
         {
             // Berikan mereka senjata yang mereka mau
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Berikan mereka sebuah desert eagle
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Berikan mereka sebuah AK-47
@@ -132,9 +132,9 @@ AK-47\t120\t400",
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // Jika mereka mengklik 'Pilih' atau mengklik dua kali senjata yang dipilih
+        if (response) // Jika mereka mengklik 'Pilih' atau mengklik dua kali senjata yang dipilih
         {
             // Berikan mereka senjata yang mereka mau
             switch (listitem)

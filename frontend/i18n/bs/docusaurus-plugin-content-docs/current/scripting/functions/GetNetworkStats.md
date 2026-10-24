@@ -21,11 +21,11 @@ Ova funkcija uvijek returna (vraća) 1.
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/netstats"))
     {
-        new stats[400+1];
+        new stats[400 + 1];
         GetNetworkStats(stats, sizeof(stats)); // funkcija pomoću koje dobivamo mrežne statistike servera
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Server Network Stats", stats, "Close", "");
     }

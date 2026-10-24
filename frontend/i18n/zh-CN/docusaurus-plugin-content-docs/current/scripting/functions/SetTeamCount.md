@@ -20,7 +20,7 @@ tags: []
 ## 示例
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     // 我们在此团队死斗模式中使用18个队伍，进行定义
     SetTeamCount(18);

@@ -32,7 +32,7 @@ Lagi itong na tatawag una sa mga filterscript.
 ```c
 public OnVehicleSpawn(vehicleid)
 {
-    printf("Vehicle %i spawned!",vehicleid);
+    printf("Vehicle %i spawned!", vehicleid);
     return 1;
 }
 ```

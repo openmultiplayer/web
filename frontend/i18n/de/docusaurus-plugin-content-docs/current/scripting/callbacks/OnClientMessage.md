@@ -23,7 +23,7 @@ Dieses Callback hat keinen Rückgabewert.
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Kontostand: $0") != -1)
+    if (strfind(text, "Kontostand: $0") != -1)
     {
         SendClientMessage(playerid, -1, "Ich bin arm :(");
     }

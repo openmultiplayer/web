@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     {
         if (!IsPlayerInAnyVehicle(playerid))
         {
-            return SendClientMessage(playerid,0xFFFFFFAA,"请进入车辆后使用此命令");
+            return SendClientMessage(playerid, 0xFFFFFFAA, "请进入车辆后使用此命令");
         }
 
         for (new i = 0; i < MAX_PLAYERS; i++)

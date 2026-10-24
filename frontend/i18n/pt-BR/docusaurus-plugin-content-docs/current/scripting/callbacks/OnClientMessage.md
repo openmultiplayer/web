@@ -23,7 +23,7 @@ Esta callback não suporta retornos.
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Balanço Bancário: $0") != -1)
+    if (strfind(text, "Balanço Bancário: $0") != -1)
     {
         SendClientMessage(playerid, -1, "Eu sou pobre :(");
     }

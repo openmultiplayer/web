@@ -82,7 +82,7 @@ O número 255 é bastante compreensível, mas o que é ‘FF’? Vamos dar uma o
 
 // que equivale a
 
-200+50+5
+200 + 50 + 5
 
 // que equivale a
 
@@ -103,7 +103,7 @@ F * (16^1) + F * (16^0)
 
 // que equivale a
 
-240+15
+240 + 15
 ```
 ---
 

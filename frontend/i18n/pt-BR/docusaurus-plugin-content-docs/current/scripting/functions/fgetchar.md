@@ -33,7 +33,7 @@ new g_char;
 if (handle)
 {
     // Leia todos os caracteres, ignorando UTF-8.
-    while((g_char = fgetchar(handle, 0, false)) != EOF)
+    while ((g_char = fgetchar(handle, 0, false)) != EOF)
     {
         // Imprima o caractere
         printf("[ \"file.txt\" ] 0x%x", g_char);

@@ -23,7 +23,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-gMyTextDraw[playerid] = CreatePlayerTextDraw(playerid, 100.0, 33.0,"Primjer Textdrawa");
+gMyTextDraw[playerid] = CreatePlayerTextDraw(playerid, 100.0, 33.0, "Primjer Textdrawa");
 PlayerTextDrawLetterSize(playerid, gMyTextDraw[playerid], 3.2, 5.1);
 ```
 

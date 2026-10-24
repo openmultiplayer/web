@@ -352,7 +352,7 @@ for (new a = 9; a < 10; a++)
 That's a simple code to loop through all players:
 
 ```c
-for(new i,a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
         if (IsPlayerConnected(i))
         {

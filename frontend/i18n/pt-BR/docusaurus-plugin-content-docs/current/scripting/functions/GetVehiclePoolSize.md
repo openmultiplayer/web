@@ -18,7 +18,7 @@ Obtém o veículo mais alto atualmente em uso no servidor. Observe que em SA:MP 
 RepairAllVehicles()
 {
     // veículosids começam em 1
-    for(new i = 1, j = GetVehiclePoolSize(); i <= j; i++)
+    for (new i = 1, j = GetVehiclePoolSize(); i <= j; i++)
     {
         RepairVehicle(i);
     }

@@ -255,7 +255,7 @@ Bir atama işleminde, “=” işareti sağ tarafta etiketlenebilir. Etiketli de
 new bool:flag = true            /* "flag" sadece "true" veya "false" değerini alabilir */
 
 const error:success = 0
-const error:fatal= 1
+const error:fatal = 1
 const error:nonfatal = 2
 
 error:errno = fatal

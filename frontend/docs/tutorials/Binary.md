@@ -65,7 +65,7 @@ Decimal (base 10)
 
 //which equals
 
-10+3
+10 + 3
 
 //which equals
 
@@ -83,7 +83,7 @@ Binary (base 2)
 
 //which equals
 
-8+4+0+1
+8 + 4 + 0 + 1
 
 //which equals
 
@@ -95,7 +95,7 @@ We can see from the preceding example that if a bit is set to 0, we can ignore i
 Here are 12 powers of 2 just off the top of my head:
 
 ```c
-4096,2048,1024,512,256,128,64,32,16,8,4,2,1
+4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1
 ```
 
 If you know nothing about working with powers, this probably makes no sense to you at all. A power is a number multiplied by itself x amount of times. With this information in mind, the preceding list of powers probably makes more sense; well with the exception of 1. You may be curious why 2 raised to the power of 0 gives a result of 1, all i can say to this is that it just does.
@@ -134,7 +134,7 @@ We can see that when we move to the right, our previous value is multiplied by 2
 1 * (2^3) = 8
 
 
-131072+65536+32768+8192+4096+512+128+64+32+16+8
+131072 + 65536 + 32768 + 8192 + 4096 + 512 + 128 + 64 + 32 + 16 + 8
 =
 242424
 ```

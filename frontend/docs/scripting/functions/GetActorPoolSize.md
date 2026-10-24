@@ -16,7 +16,7 @@ Gets the highest actorid created on the server. Note that in SA:MP this function
 ```c
 SetAllActorsHealth(Float:health)
 {
-    for(new i = 0, j = GetActorPoolSize(); i <= j; i++)
+    for (new i = 0, j = GetActorPoolSize(); i <= j; i++)
     {
         if (IsValidActor(i))
         {

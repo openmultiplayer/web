@@ -20,7 +20,7 @@ This function does not return any specific values.
 ## ตัวอย่าง
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     print("Gamemode started.");
     return 1;

@@ -20,7 +20,7 @@ tags: ["玩家"]
 ## 示例代码
 
 ```c
-public OnPlayerCommandText(playerid,text[])
+public OnPlayerCommandText(playerid, text[])
 {
     if (strcmp(cmdtext, "/int", true) == 0)
     {

@@ -23,7 +23,7 @@ Returna/vraća tip PVar-a. Pogledaj tabelu ispod.
 ```c
 stock PrintPVar(playerid, varname[])
 {
-    switch(GetPVarType(playerid, varname))
+    switch (GetPVarType(playerid, varname))
     {
         case PLAYER_VARTYPE_NONE:
         {

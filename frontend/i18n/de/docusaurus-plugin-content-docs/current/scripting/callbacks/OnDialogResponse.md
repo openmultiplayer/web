@@ -103,7 +103,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Wenn 'Wählen' geklickt oder eine Waffe per Doppelklick gewählt wurde
         {
             // Die gewählte Waffe geben
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Gibt dem Spieler eine Desert Eagle
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Gibt dem Spieler eine AK-47
@@ -137,7 +137,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Wenn 'Wählen' geklickt oder eine Waffe per Doppelklick gewählt wurde
         {
             // Die gewählte Waffe geben
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Gibt dem Spieler eine M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Gibt dem Spieler eine MP5

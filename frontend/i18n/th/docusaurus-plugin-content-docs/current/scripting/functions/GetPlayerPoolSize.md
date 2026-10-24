@@ -24,7 +24,7 @@ Gets the highest playerid currently in use on the server.
 FreezeAll()
 {
     // note that we assign the return value to a new variable (j) to avoid calling the function with each iteration
-    for(new i = 0, j = GetPlayerPoolSize(); i <= j; i++)
+    for (new i = 0, j = GetPlayerPoolSize(); i <= j; i++)
     {
         TogglePlayerControllable(i, 0);
     }

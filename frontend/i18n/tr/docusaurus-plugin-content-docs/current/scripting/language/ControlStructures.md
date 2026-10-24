@@ -354,7 +354,7 @@ for (new a = 9; a < 10; a++)
 İşte tüm oyuncuları döngülemek için basit bir kod:
 
 ```c
-for(new i, a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
         if (IsPlayerConnected(i))
         {

@@ -28,7 +28,7 @@ new pVarCount;
 
 new pVarName[128];
 
-for(new i = 0; i != PVarUpperIndex; i++) // Loop through all pVar IDs under the upper index
+for (new i = 0; i != PVarUpperIndex; i++) // Loop through all pVar IDs under the upper index
 {
     // At first, we need to get PVar name
     GetPVarNameAtIndex(playerid, i, pVarName, sizeof(pVarName));
@@ -41,7 +41,7 @@ for(new i = 0; i != PVarUpperIndex; i++) // Loop through all pVar IDs under the 
 }
 
 new szString[128];
-format(szString, sizeof(szString), "You have %i player-variables set. Upper index (highest ID): %i.", pVarCount, PVarUpperIndex-1);
+format(szString, sizeof(szString), "You have %i player-variables set. Upper index (highest ID): %i.", pVarCount, PVarUpperIndex - 1);
 SendClientMessage(playerid, -1, szString);
 ```
 

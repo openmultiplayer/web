@@ -34,7 +34,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 {
     if (GetPlayerMenu(playerid) == MyMenu)
     {
-        switch(row)
+        switch (row)
         {
             case 0: print("Item 1 Seleccionado");
             case 1: print("Item 2 Seleccionado");

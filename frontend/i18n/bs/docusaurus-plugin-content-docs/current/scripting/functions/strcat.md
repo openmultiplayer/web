@@ -13,7 +13,7 @@ Ova funkcija spaja dva stringa u odredišni string.
 | --------------------- | ---------------------------------------- |
 | dest[]                | String za pohraniti dva spojena stringa. |
 | const source[]        | Izvorni string.                          |
-| maxlength=sizeof dest | Maksimalna dužina odredišta.             |
+| maxlength = sizeof dest | Maksimalna dužina odredišta.             |
 
 ## Returns
 

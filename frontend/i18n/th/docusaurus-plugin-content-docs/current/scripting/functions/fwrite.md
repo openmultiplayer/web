@@ -55,7 +55,7 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf)) print(buf);
+    while (fread(handle, buf)) print(buf);
 
     // Set the file pointer to the first byte
     fseek(handle, _, seek_begin);

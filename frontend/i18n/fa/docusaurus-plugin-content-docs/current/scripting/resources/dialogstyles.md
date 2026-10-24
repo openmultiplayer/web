@@ -20,7 +20,7 @@ sidebar_label: سبک های دیالوگ
 </div>
 
 ```c
-public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
+public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     printf("playerid = %d, dialogid = YOUR_DIALOGID, response = %d, listitem = %d, inputtext = '%s' (size: %d)", playerid, response, listitem, inputtext, strlen(inputtext));
     return 1;

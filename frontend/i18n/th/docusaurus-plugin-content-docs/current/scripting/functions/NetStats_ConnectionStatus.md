@@ -20,7 +20,7 @@ The player's [connection status](../resources/connectionstatus), as an integer v
 ## ตัวอย่าง
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/connectionstatus"))
     {

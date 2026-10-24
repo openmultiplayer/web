@@ -20,7 +20,7 @@ tags: ["player"]
 ## مثال‌ها
 
 ```c
-public OnPlayerCommandText(playerid,text[])
+public OnPlayerCommandText(playerid, text[])
 {
     if (!strcmp(cmdtext, "/score", true))
     {

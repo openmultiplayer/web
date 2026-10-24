@@ -32,7 +32,7 @@ public OnRconCommand(cmd[])
 ```c
 public OnRconCommand(cmd[])
 {
-    if(!strcmp(cmd, "bonjour", true))
+    if (!strcmp(cmd, "bonjour", true))
     {
         SendClientMessageToAll(0xFFFFFFAA, "Bonjour tous le monde!!");
         print("Vous avez envoyé un message de bonjour à tous les joueurs!");

@@ -27,7 +27,7 @@ tags: ["object"]
 ## مثال‌ها
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/mycommand", true))
     {
@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
             myObject;
 
         GetPlayerPos(playerid, x, y, z);
-        myObject = CreateObject(19371, x, y, z+0.5, 0.0, 0.0, 0.0, 300.0);
+        myObject = CreateObject(19371, x, y, z + 0.5, 0.0, 0.0, 0.0, 300.0);
         SetObjectMaterial(myObject, 0, 19341, "egg_texts", "easter_egg01", 0xFFFFFFFF);
         // بافت آبجکت ما را با بافت آبجکت 19341 جایگزین می‌کند
         return 1;

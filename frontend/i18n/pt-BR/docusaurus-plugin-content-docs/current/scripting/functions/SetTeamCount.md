@@ -21,7 +21,7 @@ Esta função não retorna nenhum valor específico.
 ## Exemplos
 
 ```c
-public OnGameModeInit( )
+public OnGameModeInit()
 {
     // Usamos equipes 18 neste modo Team-Deathmatch, defina-o;
     SetTeamCount(18);

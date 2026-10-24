@@ -25,7 +25,7 @@ Sets which weapon (that a player already has) the player is holding.
 ```c
 public OnPlayerUpdate(playerid)
 {
-    SetPlayerArmedWeapon(playerid,0); // disables weapons
+    SetPlayerArmedWeapon(playerid, 0); // disables weapons
     return 1;
 }
 ```

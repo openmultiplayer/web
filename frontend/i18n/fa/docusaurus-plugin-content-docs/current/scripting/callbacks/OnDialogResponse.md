@@ -38,9 +38,9 @@ ShowPlayerDialog(playerid, DIALOG_RULES, DIALOG_STYLE_MSGBOX, "Server Rules", "-
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_RULES)
+    if (dialogid == DIALOG_RULES)
     {
-        if(response) // Agar bar rooye "Bale" click kard
+        if (response) // Agar bar rooye "Bale" click kard
         {
             SendClientMessage(playerid, COLOR_GREEN, "Thank you for agreeing to the server rules!");
         }
@@ -65,15 +65,15 @@ ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", "Please en
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_LOGIN)
+    if (dialogid == DIALOG_LOGIN)
     {
-        if(!response) // Agar rooye "Cancel" click kard ya dokme ESC ra zad
+        if (!response) // Agar rooye "Cancel" click kard ya dokme ESC ra zad
         {
             Kick(playerid);
         }
         else // Agar rooye dokme "Login" click kard ya dokme ENTER ra zad
         {
-            if(CheckPassword(playerid, inputtext))
+            if (CheckPassword(playerid, inputtext))
             {
                 SendClientMessage(playerid, COLOR_RED, "Shoma vared shodid!");
             }
@@ -102,12 +102,12 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_LIST, "Weapons", "Desert
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // If they clicked 'Select' or double-clicked a weapon
+        if (response) // If they clicked 'Select' or double-clicked a weapon
         {
             // Give them the weapon
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Give them a desert eagle
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Give them an AK-47
@@ -136,12 +136,12 @@ AK-47\t120\t400",
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(dialogid == DIALOG_WEAPONS)
+    if (dialogid == DIALOG_WEAPONS)
     {
-        if(response) // Agar rooye 'Select' click kard ya dokme ENTER ra zad
+        if (response) // Agar rooye 'Select' click kard ya dokme ENTER ra zad
         {
             // Dadane aslahe be bazikon
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Give them an M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Give them an MP5

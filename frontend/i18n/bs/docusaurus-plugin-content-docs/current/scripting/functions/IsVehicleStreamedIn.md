@@ -25,7 +25,7 @@ Provjerava ako je vozilo učitano za igrača. Samo vozila u blizini su učitana 
 ```c
 new streamedVehicleCount;
 
-for(new v = 1; v <= MAX_VEHICLES; v++)
+for (new v = 1; v <= MAX_VEHICLES; v++)
 {
     if (IsVehicleStreamedIn(v, playerid))
     {

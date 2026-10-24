@@ -21,7 +21,7 @@ Retourner **0** va empêcher le joueur de changer de classe.
 ## Exemple
 
 ```c
-public OnPlayerRequestClass(playerid,classid)
+public OnPlayerRequestClass(playerid, classid)
 {
     if (classid == 3 && !IsPlayerAdmin(playerid))
     {

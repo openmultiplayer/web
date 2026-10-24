@@ -26,9 +26,9 @@ public OnRconLoginAttempt(ip[], password[], success)
 {
     if (!success) //Ako je lozinka netačna
     {
-        printf("NESUPJESNA KONEKCIJA NA RCON, IP %s KORISTIO LOZINKU %s",ip, password);
+        printf("NESUPJESNA KONEKCIJA NA RCON, IP %s KORISTIO LOZINKU %s", ip, password);
         new pip[16];
-        for(new i = GetPlayerPoolSize(); i != -1; --i) //Petlja kroz sve igrače
+        for (new i = GetPlayerPoolSize(); i != -1; --i) //Petlja kroz sve igrače
         {
             GetPlayerIp(i, pip, sizeof(pip));
             if (!strcmp(ip, pip, true)) //Ako je IP igrača isti kao i IP koji nije uspio pristupiti RCONu

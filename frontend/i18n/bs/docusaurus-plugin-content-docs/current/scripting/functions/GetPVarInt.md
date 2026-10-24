@@ -21,7 +21,7 @@ Cjelobrojna vrijednost navedene varijable igrača. I dalje će vraćati 0 ako va
 ## Primjeri
 
 ```c
-public OnPlayerDisconnect(playerid,reason)
+public OnPlayerDisconnect(playerid, reason)
 {
     printf("money: %d", GetPVarInt(playerid, "money")); // dobij sačuvanu vrijednost ('money')
     // ispisati će 'money: amount'

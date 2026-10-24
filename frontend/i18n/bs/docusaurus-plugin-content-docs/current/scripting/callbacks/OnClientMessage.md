@@ -23,7 +23,7 @@ Ovaj callback ne obrađuje povratne vrijednosti (returnove).
 ```c
 public OnClientMessage(color, text[])
 {
-    if (strfind(text,"Bank Balance: $0") != -1)
+    if (strfind(text, "Bank Balance: $0") != -1)
     {
         SendClientMessage(playerid, -1, "Ja sam siromasan :(");
     }

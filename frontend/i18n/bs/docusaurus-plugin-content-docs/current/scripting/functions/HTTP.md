@@ -49,7 +49,7 @@ forward MyHttpResponse(index, response_code, data[]);
 
 public OnPlayerCommandText(playerid, cmdtext[])
 {
-    if (!strcmp("/hello",cmdtext,true))
+    if (!strcmp("/hello", cmdtext, true))
     {
         HTTP(playerid, HTTP_GET, "assets.open.mp/hello.txt", "", "MyHttpResponse");
         return 1;
@@ -61,7 +61,7 @@ public MyHttpResponse(index, response_code, data[])
 {
     // U ovom povratnom pozivu "index" bi se obično zvao "playerid" (ako ga već niste dobili :))
     new
-        buffer[ 128 ];
+        buffer[128];
     if (response_code == 200) //Da li je zahtjev uspio?
     {
         //Da!

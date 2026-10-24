@@ -33,7 +33,7 @@ INVALID_VEHICLE_ID (65535) jeżeli pojazd nie został utworzony (osiągnięto li
 public OnGameModeInit()
 {
     // Dodaje Hydrę (520) do gry, która będzie respawnowana po 15 sekundach od porzucenia
-    AddStaticVehicleEx (520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
+    AddStaticVehicleEx(520, 2109.1763, 1503.0453, 32.2887, 82.2873, -1, -1, 15);
 
     return 1;
 }

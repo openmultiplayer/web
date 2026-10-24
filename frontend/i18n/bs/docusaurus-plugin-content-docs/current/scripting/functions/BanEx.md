@@ -21,7 +21,7 @@ Ova funkcija ne returna(vraća) nikakve posebne vrijednosti.
 ## Primjeri
 
 ```c
-public OnPlayerCommandText( playerid, cmdtext[] )
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/banme", true))
     {

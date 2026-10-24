@@ -89,9 +89,9 @@ public OnPlayerSelectedMenuRow(playerid, row)
 Acum între aceste paranteze este locul unde se află comutatorul, acest lucru verifică ce element selectat de jucător sau `rând` se poate face cu instrucțiunile `dacă` verificând ce `rând` este, dar `comutatorul` este mult mai simplu mod de a-l scrie.
 
 ```c
-if(CurrentMenu == teleportmenu)
+if (CurrentMenu == teleportmenu)
 {
-    switch(row)
+    switch (row)
     {
         case 0: //Grove Street
         {
@@ -138,9 +138,9 @@ if(CurrentMenu == teleportmenu)
 Acum avem nevoie de o comandă pentru a afișa meniul. Acesta este cel mai ușor pas. Doar o comparație cu `strcmp` și un `ShowMenuForPlayer`. Acest lucru se face în `OnPlayerCommandText`. Sau, dacă aveți deja un procesor de comandă, utilizați-l în schimb pentru a apela `ShowMenuForPlayer`.
 
 ```c
-if(strcmp(cmdtext, "/teleport", true) == 0)
+if (strcmp(cmdtext, "/teleport", true) == 0)
 {
-    ShowMenuForPlayer(teleportmenu,playerid);
+    ShowMenuForPlayer(teleportmenu, playerid);
     return 1;
 }
 ```

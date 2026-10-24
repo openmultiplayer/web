@@ -30,7 +30,7 @@ if (t_handle)
     if (handle = fopen("file.txt", io_read))
     {
         // Preuzmi sve znakove iz "file.txt"
-        while((g_char = fgetchar(handle, 0, false)) != EOF)
+        while ((g_char = fgetchar(handle, 0, false)) != EOF)
         {
             // Zapišite znak malim slovima u privremeni tok datoteka
             fputchar(t_handle, tolower(g_char), false);
@@ -48,7 +48,7 @@ if (t_handle)
             // Uspješno
 
             // Preuzmite sve znakove iz privremenog toka datoteka
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while ((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // Zapiši znak u "file1.txt"
                 fputchar(handle, g_char, false);
@@ -72,7 +72,7 @@ if (t_handle)
             // Uspješno
 
             // Preuzmite sve znakove iz privremenog toka datoteka
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while ((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // Napišite karakter u "file2.txt"
                 fputchar(handle, g_char, false);

@@ -25,7 +25,7 @@ new sVarCount;
 
 new sVarName[128];
 
-for(new i = 0; i != sVarUpperIndex; i++) // Percorra todos os IDs sVar no índice superior
+for (new i = 0; i != sVarUpperIndex; i++) // Percorra todos os IDs sVar no índice superior
 {
     // Primeiramente, precisamos obter o nome SVar
     GetSVarNameAtIndex(i, sVarName, sizeof(sVarName));
@@ -37,7 +37,7 @@ for(new i = 0; i != sVarUpperIndex; i++) // Percorra todos os IDs sVar no índic
     }
 }
 
-printf("There are %i server-variables set. Upper index (highest ID): %i.", sVarCount, SVarUpperIndex-1);
+printf("There are %i server-variables set. Upper index (highest ID): %i.", sVarCount, SVarUpperIndex - 1);
 ```
 ## Funções Relacionadas
 

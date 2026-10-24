@@ -33,7 +33,7 @@ if (t_handle)
     if (handle = fopen("file.txt", io_read))
     {
         // Get all the characters from "file.txt"
-        while((g_char = fgetchar(handle, 0, false)) != EOF)
+        while ((g_char = fgetchar(handle, 0, false)) != EOF)
         {
             // Write character in lowercase into the temporary file stream
             fputchar(t_handle, tolower(g_char), false);
@@ -51,7 +51,7 @@ if (t_handle)
             // Success
 
             // Get all the characters from the temporary file stream
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while ((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // Write character into "file1.txt"
                 fputchar(handle, g_char, false);
@@ -75,7 +75,7 @@ if (t_handle)
             // Success
 
             // Get all the characters from the temporary file stream
-            while((g_char = fgetchar(t_handle, 0, false)) != EOF)
+            while ((g_char = fgetchar(t_handle, 0, false)) != EOF)
             {
                 // Write character into "file2.txt"
                 fputchar(handle, g_char, false);

@@ -20,7 +20,7 @@ Broj poruka koje je igrač primio u posljednjoj sekundi.
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/msgpersec"))
     {

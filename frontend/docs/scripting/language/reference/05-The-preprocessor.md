@@ -37,7 +37,7 @@ example:
 #define CopyRightString     "(c) Copyright 2004 by me"
 main()
 {
-    print( Copyright )
+    print( CopyRightString )
     new sprites[maxsprites]
 }
 

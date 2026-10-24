@@ -23,7 +23,7 @@ Callback ini tidak mengelola pengembalian nilai.
 ```c
 public OnClientMessage(color, text[])
 {
-    if(strfind(text,"Saldo Bank: $0") != -1) SendChat("Aku kok miskin? :(");
+    if (strfind(text, "Saldo Bank: $0") != -1) SendChat("Aku kok miskin? :(");
 }
 ```
 

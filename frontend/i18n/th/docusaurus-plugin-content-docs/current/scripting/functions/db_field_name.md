@@ -33,7 +33,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
         new DBResult:db_result = db_query(db_handle, "SELECT * FROM `join_log`"), i, columns = db_num_fields(db_result), info[30];
 
         // Iterate from 0 to "columns-1"
-        for(; i < columns; i++)
+        for (; i < columns; i++)
         {
             // Store the name of the i indexed column name into "info"
             db_field_name(db_result, i, info, sizeof info);

@@ -105,7 +105,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Kung pinili ang `Select` o pumili sa isang baril na nakalista
         {
             // Ibibigay ang baril na pinili
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Magbibigay ng ID 24 na baril o (Deagle)
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Magbibigay ng ID 30 na baril o (AK-47)
@@ -140,7 +140,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Kung pinili ang `Select` o pumili sa isang baril na nakalista
         {
             // Ibibigay ang baril na pinili
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Magbibigay ng ID 31 na baril o (M4)
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Magbibigay ng ID 29 na baril o (MP5)

@@ -37,7 +37,7 @@ public OnPlayerRequestClass(playerid, classid)
     // Este exemplo simples demonstra como spawnar cada jogador automaticamente com
     // a skin do CJ, que é o número 0. O jogador irá spawnar em Las Venturas, com
     // 36 munições de Sawnoff-Shotgun e 150 munições de Tec9.
-    SetSpawnInfo( playerid, 0, 0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0 );
+    SetSpawnInfo(playerid, 0, 0, 1958.33, 1343.12, 15.36, 269.15, 26, 36, 28, 150, 0, 0);
 }
 ```
 

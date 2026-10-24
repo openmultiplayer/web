@@ -55,7 +55,7 @@ new buf[128];
 if (handle)
 {
     // 读取文件全部内容
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

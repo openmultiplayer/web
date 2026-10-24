@@ -23,9 +23,9 @@ The length of the string.
 ## ตัวอย่าง
 
 ```c
-public OnPlayerConnect(playerid,reason)
+public OnPlayerConnect(playerid, reason)
 {
-    new playerName[MAX_PLAYER_NAME+1];
+    new playerName[MAX_PLAYER_NAME + 1];
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
     SetPVarString(playerid, "PlayerName", playerName);
     return 1;
@@ -33,7 +33,7 @@ public OnPlayerConnect(playerid,reason)
 
 public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 {
-    new playerName[MAX_PLAYER_NAME+1];
+    new playerName[MAX_PLAYER_NAME + 1];
     GetPVarString(playerid, "PlayerName", playerName, sizeof(playerName));
 
     printf("%s died.", playerName);

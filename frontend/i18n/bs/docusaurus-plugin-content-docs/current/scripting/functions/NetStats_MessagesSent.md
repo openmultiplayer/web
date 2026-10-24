@@ -20,7 +20,7 @@ Broj poruka koje je server poslao igraču za reprodukciju.
 ## Primjeri
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/msgsent"))
     {

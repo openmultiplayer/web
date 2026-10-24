@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 public OnPlayerSpawn(playerid)
 {
     // 检测帮派区域有效性
-    if(IsValidPlayerGangZone(playerid, gGangZoneID[playerid]))
+    if (IsValidPlayerGangZone(playerid, gGangZoneID[playerid]))
     {
         PlayerGangZoneDestroy(playerid, gGangZoneID[playerid]);
         gGangZoneID[playerid] = INVALID_GANG_ZONE;

@@ -184,7 +184,7 @@ the complete instruction may not span more than one line.
 
         For example
 
-        `#pragma ctrlchar '\$'**`
+        `#pragma ctrlchar '$'`
 
         You may give the new value for the control character as a char-
         acter constant (between single quotes) or as a decimal or hex-

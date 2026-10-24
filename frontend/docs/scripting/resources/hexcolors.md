@@ -85,7 +85,7 @@ The number 255 is pretty understandable, but what is 'FF'? Let's take a look at 
 
 //which equals
 
-200+50+5
+200 + 50 + 5
 
 //which equals
 
@@ -107,7 +107,7 @@ F * (16^1) + F * (16^0)
 
 //which equals
 
-240+15
+240 + 15
 ```
 
 ---

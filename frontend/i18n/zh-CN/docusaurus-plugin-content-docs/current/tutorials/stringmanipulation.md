@@ -309,7 +309,7 @@ native memcpy(dest[], const source[], index=0, numbytes, maxlength=sizeof dest);
 
   ```cpp
   new str_dest[12] = "Hello", str_source[7] = " World";
-  strcat(str_dest,str_source);
+  strcat(str_dest, str_source);
   ```
 
 如果我们输出 `str_dest`，它将显示 **Hello World**，这两个字符串被添加到一起，结果存储在 `str_dest` 中，_“Hello” + “ World” = “Hello World”_，注意我们在第二个字符串中包含了一个空格，是的，空格本身也是一个字符，根据 _ASCII_ 表，它的值是 `32`。如果我们没有添加空格，结果字符串将是 **HelloWorld**。
@@ -404,7 +404,7 @@ format(formatMsg, sizeof(formatMsg), "This is reality""...""or is it?!");
 
 ```cpp
 new badString[100];
-badString ="Hello :)";
+badString = "Hello :)";
 ```
 
 我们声明了一个包含 _100 个单元格_ 的字符串，_1 个单元格_ 占用 _4 字节_，让我们做一些基本的数学运算，_100 \* 4 = 400_ 字节，这大约是 _0.0004 兆字节_，对于今天的标准来说，这确实不算什么，但假设在一个庞大的脚本中，你显然会使用多个字符串，_60_，_70_，甚至 _100_ 个字符串？（_可能更多_），这些微小的数字会叠加在一起，导致一个更大的总数，并且可能会给你带来严重的问题。我敢保证，当你与那些大小是五倍以上的字符串相比时，我们声明的字符串还远远算不上愚蠢。
@@ -415,7 +415,7 @@ badString ="Hello :)";
 
 ```cpp
 new goodString[12];
-goodString="Good string";
+goodString = "Good string";
 ```
 
 看看我们如何节省了内存？仅仅 **48** 字节，没有额外的负担，避免了后续可能出现的问题，感觉好多了。
@@ -606,7 +606,7 @@ SendClientMessage(1, -1, "Hello there!");
 new mornMsg[] = "Hello!";
 
 SendClientMessage(0, -1, mornMsg);
-SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
+SendClientMessage(0, -1, "How are you ", STRING_MSG#?);
 ```
 
 正如你在上面的示例中看到的，这将向 ID _0_ 的玩家发送两条白色的信息，第一条信息将显示“_Hello!_”，第二条信息将显示“_How are you today?_”，这与其他函数的工作方式非常相似。请记住，预定义的常量整数必须以 `#` 号作为前缀.
@@ -1584,7 +1584,8 @@ format(output[], len, const format[], {Float, _}: ...)
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[信息]: ID 为 %d 的玩家名为 {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[信息]: ID 为 %d 的玩家名为 {EE11CC}%s.", playerid, playerName);
+SendClientMessageToAll(0, output);
 ```
 
 > [信息]: ID 为 9 的玩家名为 <span style={{color: '#ee11cc'}}>Player1</span>。

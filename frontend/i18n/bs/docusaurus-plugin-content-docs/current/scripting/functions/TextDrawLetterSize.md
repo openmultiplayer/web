@@ -26,7 +26,7 @@ new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate(100.0, 33.0,"Primjer Textdrawa");
+    gMyTextdraw = TextDrawCreate(100.0, 33.0, "Primjer Textdrawa");
     TextDrawLetterSize(gMyTextdraw, 3.2, 5.1);
     return 1;
 }

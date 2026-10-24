@@ -20,7 +20,7 @@ The percentage packet loss as a float. 0 if player not connected.
 ## Examples
 
 ```c
-public OnPlayerCommandText(playerid,cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/packetloss"))
     {
@@ -43,18 +43,18 @@ stock GetPlayerPacketLoss(playerid, &Float:packetLoss)
 {
     /* Returns the packetloss percentage of the given playerid - Made by Fusez */
 
-    if(!IsPlayerConnected(playerid))
+    if (!IsPlayerConnected(playerid))
     {
         return 0;
     }
 
-    new nstats[400+1], nstats_loss[20], start, end;
+    new nstats[400 + 1], nstats_loss[20], start, end;
     GetPlayerNetworkStats(playerid, nstats, sizeof (nstats));
 
     start = strfind(nstats, "packetloss", true);
     end = strfind(nstats, "%", true, start);
 
-    strmid(nstats_loss, nstats, start+12, end, sizeof (nstats_loss));
+    strmid(nstats_loss, nstats, start + 12, end, sizeof (nstats_loss));
     packetLoss = floatstr(nstats_loss);
     return 1;
 }

@@ -294,7 +294,7 @@ Examinaremos mais de perto alguns deles, aqueles que são usados com mais frequ�
 
   ```pawn
   new str_dest[12] = "Hello", str_source[7] = " World";
-  strcat(str_dest,str_source);
+  strcat(str_dest, str_source);
   ```
   Se produzíssemos `str_dest`, ele mostraria **Hello World**, as duas strings foram adicionadas uma à outra e o resultado foi armazenado em `str_dest`, _“Hello” + “World” = “Hello World”_, observe como incluímos esse espaço na segunda string, sim, os próprios espaços são caracteres, de acordo com a tabela _ASCII_, seu valor é `32`, se não tivéssemos adicionado o espaço, a string resultante teria sido **HelloWorld**.
 
@@ -381,7 +381,7 @@ A primeira coisa que deve ser mencionada, e que pessoalmente me desencadeia, é 
 
 ```pawn
 new badString[100];
-badString ="Hello :)";
+badString = "Hello :)";
 ```
 Declaramos uma string com _100 células_, _1 célula_ ocupa _4 bytes_, vamos fazer algumas contas básicas, _100 \* 4 = 400_ bytes, isso é aproximadamente _0,0004 Megabyte_, nada para os padrões de hoje, eu sei, mas supostamente, em um script enorme, obviamente você terá que usar mais de uma string, _60_, _70_, caramba _100_ mais strings? (_possivelmente mais_), esses números minúsculos vão se acumular, resultando em um número muito maior, e causar sérios problemas mais tarde, e acredite em mim quando digo, a string que declaramos não chega tão perto de parecer estúpida quando comparada com aquelas com tamanho cinco vezes maior ou mais.
 
@@ -391,7 +391,7 @@ Tenha em mente os limites que SA-MP coloca ao lidar com strings, onde a string _
 
 ```pawn
 new goodString[12];
-goodString="Good string";
+goodString = "Good string";
 ```
 Viu como preservamos a memória? Apenas **48** bytes e nenhum peso extra que possa causar problemas mais tarde são muito melhores.
 
@@ -566,7 +566,7 @@ Obviamente, você também pode passar um array de caracteres, strings formatadas
 new mornMsg[] = "Hello!";
 
 SendClientMessage(0, -1, mornMsg);
-SendClientMessage(0, -1, "How are you ",STRING_MSG#?);
+SendClientMessage(0, -1, "How are you ", STRING_MSG#?);
 ```
 Como você pode ver no exemplo acima, isso enviará ao jogador com o id _0_ duas mensagens coloridas em branco, a primeira mensagem dirá “_Olá!_”, e a segunda dirá, “_Como você está hoje?_”, bem semelhante ao funcionamento de outras funções. Lembre-se de que números inteiros constantes predefinidos devem ser prefixados com o símbolo `#`.
 
@@ -1439,7 +1439,8 @@ Vamos dar uma olhada nestes exemplos;
 new playerName[MAX_PLAYER_NAME + 1], output[128], playerid = 9;
 
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
-format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);SendClientMessageToAll(0, output);
+format(output, sizeof(output), "[Info]: the player with the id of %d is called {EE11CC}%s.", playerid, playerName);
+SendClientMessageToAll(0, output);
 ```
 > [Info]: o jogador com id 9 se chama <span style={{color: '#ee11cc'}}>Player1</span>.
 

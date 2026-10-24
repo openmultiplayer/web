@@ -14,7 +14,7 @@ Insert a string into another string.
 | string[]                | The string you want to insert substr in.   |
 | const substr[]          | The string you want to insert into string. |
 | pos                     | The position to start inserting.           |
-| maxlength=sizeof string | The maximum size to insert.                |
+| maxlength = sizeof string | The maximum size to insert.                |
 
 ## ส่งคืน
 
@@ -24,7 +24,7 @@ This function does not return any specific values.
 
 ```c
 // Add an [AFK] tag to the start of players' names
-new playerName[MAX_PLAYER_NAME+1];
+new playerName[MAX_PLAYER_NAME + 1];
 GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);
 strins(playerName, "[AFK]", 0);
 SetPlayerName(playerid, playerName);

@@ -105,7 +105,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Ako su pritisnuli 'Odaberi' ili dva puta pritisnuli na list item
         {
             // Daje im weapon
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_DEAGLE, 14); // Daje im desert eagle
                 case 1: GivePlayerWeapon(playerid, WEAPON_AK47, 120); // Daje im AK-47
@@ -140,7 +140,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response) // Ako je pritisnuo 'Odaberi' ili dva puta pritisnuo na weapon
         {
             // Daje im weapon
-            switch(listitem)
+            switch (listitem)
             {
                 case 0: GivePlayerWeapon(playerid, WEAPON_M4, 120); // Daje im M4
                 case 1: GivePlayerWeapon(playerid, WEAPON_MP5, 90); // Daje im MP5

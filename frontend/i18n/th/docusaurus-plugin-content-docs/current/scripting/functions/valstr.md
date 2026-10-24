@@ -24,7 +24,7 @@ This function does not return any specific values.
 ```c
 new string[4];
 new iValue = 250;
-valstr(string,iValue); // string is now "250"
+valstr(string, iValue); // string is now "250"
 ```
 
 ## บันทึก
