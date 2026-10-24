@@ -153,6 +153,6 @@ Muito fácil, não foi?
 
 Ok, depois de ler isso E entender, tente seu próprio menu. Como você pôde ver, não é tão difícil, mas vai impressionar os jogadores do seu servidor ainda mais. E você pode programar efeitos muito legais com isso. Também é muito legal para lojas gerais ou supermercados para as coisas que você pode comprar. Então você pode subtrair algum dinheiro como efeito e o preço é mostrado em outra coluna no menu. Mas agora, trabalhe no seu próprio.
 
-Você também pode adicionar [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) com `false` após `ShowPlayerMenu` e [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) com `true` no final de `OnPlayerSelectedMenuRow` para que o jogador não possa se mover enquanto estiver navegando nos menus.
+Você também pode adicionar [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) com `false` após `ShowMenuForPlayer` e [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) com `true` no final de `OnPlayerSelectedMenuRow` para que o jogador não possa se mover enquanto estiver navegando nos menus.
 
 Espero que você tenha aprendido algo com este tutorial. Se tiver alguma dúvida, pergunte nos fóruns/discord.

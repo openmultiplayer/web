@@ -40,7 +40,7 @@ public OnPlayerSpawn(playerid)
 :::note
 
 - Only one object may be attached per player.
-- This function is seperate from the CreateObject / CreatePlayerObject pools.
+- This function is separate from the CreateObject / CreatePlayerObject pools.
 
 :::
 

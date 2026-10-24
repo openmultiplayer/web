@@ -296,7 +296,7 @@ new
 main() {printf("%d", gOldVariable);}
 ```
 
-That will give a warning that gOldVariable should not be used anymore. This is mostly useful for functions to preserve backwards compatability while updating the API.
+That will give a warning that gOldVariable should not be used anymore. This is mostly useful for functions to preserve backwards compatibility while updating the API.
 
 ### `#tryinclude`
 

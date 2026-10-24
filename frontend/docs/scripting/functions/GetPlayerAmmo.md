@@ -20,7 +20,7 @@ The amount of ammo in the player's current weapon.
 ## Examples
 
 ```c
-ublic OnPlayerCommandText(playerid, cmdtext[])
+public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/myammo", true))
     {

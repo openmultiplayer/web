@@ -153,6 +153,6 @@ Sangat mudah, bukan?
 
 Oke, setelah kalian membaca ini dan memahaminya, cobalah untuk membuat menu kalian sendiri. Seperti yang kalian lihat, ini tidaklah sulit, tapi ini akan membuat pemain di dalam server kamu sangat terkesan. Dan kalian dapat membuatnya lebih keren daripada ini. Ini sangatlah berguna bagi general store dan supermarket untuk membeli sesuatu. Lalu kalian dapat mengurangi uang sebagai efek dan harga yang ditampilkan di kolom lain pada menu. Tapi sekarang, buatlah sesuai kebutuhan kalian.
 
-Kalian dapat menambahkan [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) dengan `false` setelah `ShowPlayerMenu` dan [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) dengan `true` pada akhir `OnPlayerSelectedMenuRow`, jadi pemain tidak dapat berpindah ketika memilih sesuatu di dalam menu.
+Kalian dapat menambahkan [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) dengan `false` setelah `ShowMenuForPlayer` dan [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) dengan `true` pada akhir `OnPlayerSelectedMenuRow`, jadi pemain tidak dapat berpindah ketika memilih sesuatu di dalam menu.
 
 Saya harap kalian dapat mempelajari sesuatu dari tutorial ini. Jika kamu memiliki pertanyaan, silahkan bertanya di forum/discord.
