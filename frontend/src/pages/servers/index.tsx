@@ -584,13 +584,16 @@ const ServersListPage = (): ReactNode => {
 const Page = (): ReactNode => {
   const location = useLocation();
   const [serverAddress, setServerAddress] = useState<string | null>(null);
+  const [from, setFrom] = useState<string>("");
 
   useEffect(() => {
-    setServerAddress(getServerAddressFromQuery(location.search));
+    const params = new URLSearchParams(location.search);
+    setServerAddress(params.get("ip") ?? "");
+    setFrom(params.get("from") ?? "");
   }, [location.search]);
 
   if (serverAddress) {
-    return <ServerInfoPage ip={serverAddress} />;
+    return <ServerInfoPage ip={serverAddress} from={from} />;
   }
 
   return <ServersListPage />;

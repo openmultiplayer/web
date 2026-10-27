@@ -259,6 +259,9 @@
   "serverInfo.backToServers": {
     "message": "← Sunuculara Geri Dön"
   },
+  "serverInfo.backToPartners": {
+    "message": "← İş Ortağı Sunuculara Dön"
+  },
   "serverInfo.quickJoin": {
     "message": "Hızlı Katıl"
   },

@@ -272,6 +272,9 @@
   "serverInfo.backToServers": {
     "message": "← 返回服务器列表"
   },
+  "serverInfo.backToPartners": {
+    "message": "← 返回合作伙伴服务器"
+  },
   "serverInfo.quickJoin": {
     "message": "快速加入"
   },

@@ -223,7 +223,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
     const server = filteredData[index];
     return (
       <div style={style}>
-        <ServerRow key={server.ip} server={server} />
+        <ServerRow key={server.ip} server={server} from="partners" />
       </div>
     );
   };

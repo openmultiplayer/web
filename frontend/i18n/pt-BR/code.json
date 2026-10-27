@@ -272,6 +272,9 @@
   "serverInfo.backToServers": {
     "message": "← Voltar aos Servidores"
   },
+  "serverInfo.backToPartners": {
+    "message": "← Voltar aos Servidores Parceiros"
+  },
   "serverInfo.quickJoin": {
     "message": "Entrar Rapidamente"
   },

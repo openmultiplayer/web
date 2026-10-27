@@ -265,6 +265,9 @@
   "serverInfo.backToServers": {
     "message": "← Kembali ke Server"
   },
+  "serverInfo.backToPartners": {
+    "message": "← Kembali ke Server Mitra"
+  },
   "serverInfo.quickJoin": {
     "message": "Bergabung Cepat"
   },

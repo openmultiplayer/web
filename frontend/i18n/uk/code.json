@@ -259,6 +259,9 @@
   "serverInfo.backToServers": {
     "message": "← Назад до серверів"
   },
+  "serverInfo.backToPartners": {
+    "message": "← Назад до серверів-партнерів"
+  },
   "serverInfo.quickJoin": {
     "message": "Швидкий вхід"
   },

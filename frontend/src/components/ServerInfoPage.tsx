@@ -21,9 +21,15 @@ const getServer = async (ip: string): Promise<ServerAllData | undefined> => {
 };
 
 const BackLink: React.FC<{ to: string }> = ({ to }) => {
+  const isPartners = to === "/partners";
+
   return (
     <Link to={to} className="button server-info-back-link">
-      <Translate id="serverInfo.backToServers" description="Back to servers link">← Back to Servers</Translate>
+      {isPartners ? (
+        <Translate id="serverInfo.backToPartners" description="Back to partners link">← Back to Partner Servers</Translate>
+      ) : (
+        <Translate id="serverInfo.backToServers" description="Back to servers link">← Back to Servers</Translate>
+      )}
     </Link>
   );
 };
@@ -246,7 +252,7 @@ const Content = ({ ip }: { ip: string }) => {
   return <Info data={data} />;
 };
 
-const ServerInfoPage = ({ ip }: { ip: string }) => {
+const ServerInfoPage = ({ ip, from }: { ip: string; from?: string }) => {
   if (!ip) {
     return <LoadingBanner />;
   }
@@ -255,7 +261,7 @@ const ServerInfoPage = ({ ip }: { ip: string }) => {
     <Layout title={ip} description={"Server Information for " + ip}>
       <section className="server-info-section">
         <div className="server-info-stack">
-          <BackLink to="/servers" />
+          <BackLink to={from === "partners" ? "/partners" : "/servers"} />
           <Content ip={ip} />
         </div>
       </section>

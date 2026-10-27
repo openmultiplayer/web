@@ -265,6 +265,9 @@
   "serverInfo.backToServers": {
     "message": "← กลับไปที่เซิร์ฟเวอร์"
   },
+  "serverInfo.backToPartners": {
+    "message": "← กลับไปที่เซิร์ฟเวอร์พันธมิตร"
+  },
   "serverInfo.quickJoin": {
     "message": "เข้าร่วมอย่างรวดเร็ว"
   },
