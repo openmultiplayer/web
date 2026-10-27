@@ -265,6 +265,9 @@
   "serverInfo.backToServers": {
     "message": "← กลับไปที่เซิร์ฟเวอร์"
   },
+  "serverInfo.backToPartners": {
+    "message": "← กลับไปที่เซิร์ฟเวอร์พันธมิตร"
+  },
   "serverInfo.quickJoin": {
     "message": "เข้าร่วมอย่างรวดเร็ว"
   },
@@ -288,6 +291,9 @@
   },
   "serverInfo.lastUpdated": {
     "message": "อัปเดตเมื่อ {time} ที่แล้ว"
+  },
+  "serverInfo.notFound": {
+    "message": "ไม่พบเซิร์ฟเวอร์นี้ อาจออฟไลน์อยู่หรือถูกนำออกจากรายการแล้ว"
   },
   "downloads.server.pageTitle": {
     "message": "เซิร์ฟเวอร์ open.mp"

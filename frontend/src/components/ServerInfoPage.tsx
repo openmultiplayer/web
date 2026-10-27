@@ -1,11 +1,12 @@
 import Link from "@docusaurus/Link";
+import Translate from "@docusaurus/Translate";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import LoadingBanner from "@site/src/components/LoadingBanner";
 import { API_ADDRESS } from "@site/src/constants";
+import { formatElapsed } from "@site/src/lib/time";
 import { ServerAllData } from "@site/src/types";
 import Layout from "@theme/Layout";
-import Translate from "@docusaurus/Translate";
 import { useEffect, useState } from "react";
-import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const API_SERVER = (ip: string) => `${API_ADDRESS}/servers/${ip}`;
 
@@ -20,9 +21,15 @@ const getServer = async (ip: string): Promise<ServerAllData | undefined> => {
 };
 
 const BackLink: React.FC<{ to: string }> = ({ to }) => {
+  const isPartners = to === "/partners";
+
   return (
     <Link to={to} className="button server-info-back-link">
-      <Translate id="serverInfo.backToServers" description="Back to servers link">← Back to Servers</Translate>
+      {isPartners ? (
+        <Translate id="serverInfo.backToPartners" description="Back to partners link">← Back to Partner Servers</Translate>
+      ) : (
+        <Translate id="serverInfo.backToServers" description="Back to servers link">← Back to Servers</Translate>
+      )}
     </Link>
   );
 };
@@ -69,6 +76,45 @@ const ServerAddressCopy = ({ address }: { address: string }) => {
         )}
       </span>
     </button>
+  );
+};
+
+const useNow = (intervalMs = 60_000): number | null => {
+  const [now, setNow] = useState<number | null>(null);
+
+  useEffect(() => {
+    const tick = () => setNow(Date.now());
+    tick();
+    const id = window.setInterval(tick, intervalMs);
+    return () => window.clearInterval(id);
+  }, [intervalMs]);
+
+  return now;
+};
+
+const UpdatedFooter = ({ lastUpdated }: { lastUpdated: string }) => {
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+  const now = useNow();
+  const timestamp = new Date(lastUpdated).getTime();
+
+  if (now === null || Number.isNaN(timestamp)) {
+    return null;
+  }
+
+  return (
+    <div className="server-info-footer">
+      <time className="server-info-last-updated" dateTime={lastUpdated}>
+        <Translate
+          id="serverInfo.lastUpdated"
+          description="Last updated label"
+          values={{ time: formatElapsed(currentLocale, timestamp, now) }}
+        >
+          {"Last updated {time} ago"}
+        </Translate>
+      </time>
+    </div>
   );
 };
 
@@ -159,26 +205,7 @@ const Info = ({ data }: { data: ServerAllData }) => (
 
         <div className="server-info-divider" />
 
-        <BrowserOnly>
-          {() => (
-            <div className="server-info-footer">
-              <time className="server-info-last-updated">
-                <Translate
-                  id="serverInfo.lastUpdated"
-                  description="Last updated label"
-                  values={{
-                    time: formatDistance(
-                      new Date(data.lastUpdated),
-                      new Date(),
-                    ),
-                  }}
-                >
-                  {"Last updated {time} ago"}
-                </Translate>
-              </time>
-            </div>
-          )}
-        </BrowserOnly>
+        <UpdatedFooter lastUpdated={data.lastUpdated} />
       </div>
     </div>
   </article>
@@ -189,21 +216,43 @@ const Content = ({ ip }: { ip: string }) => {
   const [data, setData] = useState<ServerAllData | undefined>(undefined);
 
   useEffect(() => {
+    let cancelled = false;
+
     setLoading(true);
     getServer(ip).then((server) => {
-      setLoading(false);
+      if (cancelled) {
+        return;
+      }
       setData(server);
+      setLoading(false);
     });
+
+    return () => {
+      cancelled = true;
+    };
   }, [ip]);
 
-  if (!data || loading) {
+  if (loading) {
     return <LoadingBanner />;
+  }
+
+  if (!data) {
+    return (
+      <p className="server-info-description">
+        <Translate
+          id="serverInfo.notFound"
+          description="Shown when a server address is unknown or the server is gone"
+        >
+          This server could not be found. It may be offline or no longer listed.
+        </Translate>
+      </p>
+    );
   }
 
   return <Info data={data} />;
 };
 
-const ServerInfoPage = ({ ip }: { ip: string }) => {
+const ServerInfoPage = ({ ip, from }: { ip: string; from?: string }) => {
   if (!ip) {
     return <LoadingBanner />;
   }
@@ -212,7 +261,7 @@ const ServerInfoPage = ({ ip }: { ip: string }) => {
     <Layout title={ip} description={"Server Information for " + ip}>
       <section className="server-info-section">
         <div className="server-info-stack">
-          <BackLink to="/servers" />
+          <BackLink to={from === "partners" ? "/partners" : "/servers"} />
           <Content ip={ip} />
         </div>
       </section>
@@ -221,35 +270,3 @@ const ServerInfoPage = ({ ip }: { ip: string }) => {
 };
 
 export default ServerInfoPage;
-
-const formatDistance = (
-  date: Date | string | number,
-  baseDate: Date | string | number = new Date()
-): string => {
-  const compareDate = date instanceof Date ? date : new Date(date);
-  const baseDateObj = baseDate instanceof Date ? baseDate : new Date(baseDate);
-
-  const diff = baseDateObj.getTime() - compareDate.getTime();
-  const absDiff = Math.abs(diff);
-
-  const seconds = Math.floor(absDiff / 1000);
-  const minutes = Math.floor(seconds / 60);
-  const hours = Math.floor(minutes / 60);
-  const days = Math.floor(hours / 24);
-  const months = Math.floor(days / 30);
-  const years = Math.floor(days / 365);
-
-  if (years > 0) {
-    return years === 1 ? "1 year" : `${years} years`;
-  } else if (months > 0) {
-    return months === 1 ? "1 month" : `${months} months`;
-  } else if (days > 0) {
-    return days === 1 ? "1 day" : `${days} days`;
-  } else if (hours > 0) {
-    return hours === 1 ? "1 hour" : `${hours} hours`;
-  } else if (minutes > 0) {
-    return minutes === 1 ? "1 minute" : `${minutes} minutes`;
-  } else {
-    return "less than a minute";
-  }
-};

@@ -105,28 +105,6 @@ const config: Config = {
 
   staticDirectories: ["public"],
 
-  plugins: [
-    async function serverRoutesPlugin(context, options) {
-      return {
-        name: "server-routes-plugin",
-        async contentLoaded({ actions }) {
-          const { addRoute } = actions;
-          const { i18n: { locales, defaultLocale } } = context;
-
-          // Add the dynamic server detail route.
-          locales.forEach((locale) => {            
-            const prefix = locale === defaultLocale ? '' : `/${locale}`;
-            addRoute({
-              path: `${prefix}/servers/`,
-              component: "@site/src/pages/servers/index",
-              exact: false,
-            });
-          })
-        },
-      };
-    },
-  ],
-
   presets: [
     [
       "classic",
@@ -244,7 +222,29 @@ const config: Config = {
     var locales = ["en","es","ru","ar","bs","de","fil","fr","fa","hu","id","it","nl","pl","pt-BR","ro","sl","sr","ta","th","tr","uk","vi","zh-CN","zh-TW"];
     var path = window.location.pathname;
     var firstSegment = path.split("/")[1];
-    
+
+    var pageLocale = document.documentElement.getAttribute("lang") || "en";
+    var lastSegment = path.split("/").pop();
+    var is404Page = lastSegment === "404" || lastSegment === "404.html";
+
+    var localePrefix = locales.indexOf(firstSegment) !== -1 ? "/" + firstSegment : "";
+    var rest = path.slice(localePrefix.length);
+    var serversPrefix = "/servers/";
+
+    if(rest.indexOf(serversPrefix) === 0 && rest.length > serversPrefix.length) {
+        var address = rest.slice(serversPrefix.length);
+        if(address.charAt(address.length - 1) === "/") address = address.slice(0, -1);
+        try { address = decodeURIComponent(address); } catch (e) {}
+        window.location.replace(localePrefix + "/servers?ip=" + encodeURIComponent(address));
+        return;
+    }
+
+    if(!is404Page && firstSegment !== pageLocale && locales.indexOf(firstSegment) !== -1) {
+        localStorage.setItem("omp-locale", firstSegment);
+        window.location.replace("/" + firstSegment + "/404");
+        return;
+    }
+
     if(locales.indexOf(firstSegment) !== -1) {
         localStorage.setItem("omp-locale", firstSegment);
         return;
@@ -272,7 +272,7 @@ const config: Config = {
     if(locales.indexOf(target) === -1 && navLang.indexOf("-") !== -1) {
         target = navLang.split("-")[0];
     }
-    
+
     if(locales.indexOf(target) !== -1 && target !== "en") {
         localStorage.setItem("omp-locale", target);
         window.location.href = "/" + target + path + window.location.search + window.location.hash;

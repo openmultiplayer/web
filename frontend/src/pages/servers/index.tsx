@@ -19,15 +19,8 @@ import { default as Translate, translate } from "@docusaurus/Translate";
 
 const API_SERVERS = `${API_ADDRESS}/servers/`;
 
-const getServerAddressFromPathname = (pathname: string) => {
-  const match = pathname.match(/\/servers\/(.+)$/);
-
-  if (!match) {
-    return undefined;
-  }
-
-  return decodeURIComponent(match[1].replace(/\/$/, ""));
-};
+const getServerAddressFromQuery = (search: string): string =>
+  new URLSearchParams(search).get("ip") ?? "";
 
 const getServers = async () => {
   try {
@@ -545,6 +538,10 @@ const ServersListPage = (): ReactNode => {
   const [data, setData] = useState<CoreServerData[]>([]);
 
   useEffect(() => {
+    if (getServerAddressFromQuery(window.location.search)) {
+      return;
+    }
+
     getServers().then((servers) => {
       setLoading(false);
       setData(servers);
@@ -586,10 +583,17 @@ const ServersListPage = (): ReactNode => {
 
 const Page = (): ReactNode => {
   const location = useLocation();
-  const serverAddress = getServerAddressFromPathname(location.pathname);
+  const [serverAddress, setServerAddress] = useState<string | null>(null);
+  const [from, setFrom] = useState<string>("");
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    setServerAddress(params.get("ip") ?? "");
+    setFrom(params.get("from") ?? "");
+  }, [location.search]);
 
   if (serverAddress) {
-    return <ServerInfoPage ip={serverAddress} />;
+    return <ServerInfoPage ip={serverAddress} from={from} />;
   }
 
   return <ServersListPage />;

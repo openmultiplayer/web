@@ -265,6 +265,9 @@
   "serverInfo.backToServers": {
     "message": "← Kembali ke Server"
   },
+  "serverInfo.backToPartners": {
+    "message": "← Kembali ke Server Mitra"
+  },
   "serverInfo.quickJoin": {
     "message": "Bergabung Cepat"
   },
@@ -288,6 +291,9 @@
   },
   "serverInfo.lastUpdated": {
     "message": "Diperbarui {time} yang lalu"
+  },
+  "serverInfo.notFound": {
+    "message": "Server ini tidak ditemukan. Mungkin server sedang offline atau tidak lagi terdaftar."
   },
   "downloads.server.pageTitle": {
     "message": "Server open.mp"

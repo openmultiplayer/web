@@ -36,12 +36,12 @@ const CopyBadge = ({ text }: { text: string }) => {
   );
 };
 
-const ServerRow = ({ server }: { server: CoreServerData }) => {
+const ServerRow = ({ server, from }: { server: CoreServerData; from?: string }) => {
   return (
     <div className="server-row-card">
       <div className="server-header">
         <Link
-          to={`/servers/${encodeURIComponent(server.ip)}`}
+          to={`/servers?ip=${encodeURIComponent(server.ip)}${from ? `&from=${from}` : ""}`}
           className="server-link"
         >
           <h2 className="server-heading">{server.hn}</h2>

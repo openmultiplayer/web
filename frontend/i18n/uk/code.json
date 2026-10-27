@@ -259,6 +259,9 @@
   "serverInfo.backToServers": {
     "message": "← Назад до серверів"
   },
+  "serverInfo.backToPartners": {
+    "message": "← Назад до серверів-партнерів"
+  },
   "serverInfo.quickJoin": {
     "message": "Швидкий вхід"
   },
@@ -282,6 +285,9 @@
   },
   "serverInfo.lastUpdated": {
     "message": "Оновлено {time} тому"
+  },
+  "serverInfo.notFound": {
+    "message": "Сервер не знайдено. Можливо, він офлайн або його більше немає у списку."
   },
   "theme.footer.title.Documentations": {
     "message": "Документація"
