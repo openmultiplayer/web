@@ -296,6 +296,9 @@
   "serverInfo.lastUpdated": {
     "message": "Atualizado há {time}"
   },
+  "serverInfo.notFound": {
+    "message": "Este servidor não foi encontrado. Ele pode estar offline ou não estar mais na lista."
+  },
   "downloads.server.pageTitle": {
     "message": "Servidor open.mp"
   },

@@ -289,6 +289,9 @@
   "serverInfo.lastUpdated": {
     "message": "Diperbarui {time} yang lalu"
   },
+  "serverInfo.notFound": {
+    "message": "Server ini tidak ditemukan. Mungkin server sedang offline atau tidak lagi terdaftar."
+  },
   "downloads.server.pageTitle": {
     "message": "Server open.mp"
   },

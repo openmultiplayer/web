@@ -41,7 +41,7 @@ const ServerRow = ({ server }: { server: CoreServerData }) => {
     <div className="server-row-card">
       <div className="server-header">
         <Link
-          to={`/servers/${encodeURIComponent(server.ip)}`}
+          to={`/servers?ip=${encodeURIComponent(server.ip)}`}
           className="server-link"
         >
           <h2 className="server-heading">{server.hn}</h2>

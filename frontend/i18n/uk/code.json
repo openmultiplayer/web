@@ -283,6 +283,9 @@
   "serverInfo.lastUpdated": {
     "message": "Оновлено {time} тому"
   },
+  "serverInfo.notFound": {
+    "message": "Сервер не знайдено. Можливо, він офлайн або його більше немає у списку."
+  },
   "theme.footer.title.Documentations": {
     "message": "Документація"
   },

@@ -283,6 +283,9 @@
   "serverInfo.lastUpdated": {
     "message": "{time} پیش به‌روزرسانی شده"
   },
+  "serverInfo.notFound": {
+    "message": "این سرور پیدا نشد. ممکن است آفلاین باشد یا دیگر در فهرست نباشد."
+  },
   "theme.footer.title.Documentations": {
     "message": "مستندات"
   },

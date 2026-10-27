@@ -296,6 +296,9 @@
   "serverInfo.lastUpdated": {
     "message": "{time}前更新"
   },
+  "serverInfo.notFound": {
+    "message": "找不到该服务器，它可能已离线或不再列出。"
+  },
   "downloads.server.pageTitle": {
     "message": "open.mp 服务器"
   },

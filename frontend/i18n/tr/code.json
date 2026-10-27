@@ -283,6 +283,9 @@
   "serverInfo.lastUpdated": {
     "message": "{time} önce güncellendi"
   },
+  "serverInfo.notFound": {
+    "message": "Bu sunucu bulunamadı. Çevrimdışı olabilir veya artık listelenmiyor olabilir."
+  },
   "theme.footer.title.Documentations": {
     "message": "Dokümantasyon"
   },
