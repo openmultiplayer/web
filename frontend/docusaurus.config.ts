@@ -239,11 +239,16 @@ const config: Config = {
         return;
     }
 
-    if(!is404Page && firstSegment !== pageLocale && locales.indexOf(firstSegment) !== -1) {
+    function redirectLocale404() {
+        if(is404Page || firstSegment === pageLocale || locales.indexOf(firstSegment) === -1) return;
+        if(!document.querySelector("meta[name=omp-not-found]")) return;
+
         localStorage.setItem("omp-locale", firstSegment);
         window.location.replace("/" + firstSegment + "/404");
-        return;
     }
+
+    redirectLocale404();
+    document.addEventListener("DOMContentLoaded", redirectLocale404);
 
     if(locales.indexOf(firstSegment) !== -1) {
         localStorage.setItem("omp-locale", firstSegment);
