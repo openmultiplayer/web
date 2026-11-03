@@ -41,7 +41,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 
 | Interior               | Interior ID | X         | Y         | Z         | Foto                                                                |
 | ---------------------- | ----------- | --------- | --------- | --------- | ------------------------------------------------------------------- |
-| Four Dragons           | 10          | 2016.1156 | 1017.1541 | 996.875   | ![](https://assets.open.mp/assets/images/interiors/interior41.png)  |
+| The Four Dragons       | 10          | 2016.1156 | 1017.1541 | 996.875   | ![](https://assets.open.mp/assets/images/interiors/interior41.png)  |
 | Casino (Redsands West) | 12          | 1133.2007 | -15.7586  | 1000.3251 | ![](https://assets.open.mp/assets/images/interiors/interior62.png)  |
 | Caligula's Casino      | 1           | 2233.9363 | 1711.8038 | 1011.6312 | ![](https://assets.open.mp/assets/images/interiors/interior48.png)  |
 | Caligula's Roof        | 1           | 2268.5156 | 1647.7682 | 1084.2344 | ![](https://assets.open.mp/assets/images/interiors/interior131.png) |
