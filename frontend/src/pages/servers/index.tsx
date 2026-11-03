@@ -7,7 +7,11 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { List as FixedSizeList, RowComponentProps } from "react-window";
+import {
+  List as FixedSizeList,
+  RowComponentProps,
+  useListRef,
+} from "react-window";
 import { useLocation } from "@docusaurus/router";
 import LoadingBanner from "../../components/LoadingBanner";
 import ServerRow from "../../components/ServerRow";
@@ -301,28 +305,28 @@ const Modal = ({
   );
 };
 
+const initialQuery: Query = {
+  search: "",
+  showEmpty: true,
+  showPartnersOnly: false,
+  showOmpOnly: false,
+  showPassworded: true,
+  language: "",
+  sort: "relevance",
+};
+
 // List Component
 const List = ({ data }: { data: CoreServerData[] }) => {
-  const [search, setSearch] = useState("");
-  const [showEmpty, setShowEmpty] = useState(true);
-  const [showPartnersOnly, setShowPartnersOnly] = useState(false);
-  const [showOmpOnly, setShowOmpOnly] = useState(false);
-  const [showPassworded, setShowPassworded] = useState(true);
-  const [language, setLanguage] = useState("");
-  const [sort, setSort] = useState<SortBy>("relevance");
+  const [query, setQuery] = useState<Query>(initialQuery);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const filteredData = useMemo(() => {
-    return filterServers(data, {
-      search,
-      showEmpty,
-      showPartnersOnly,
-      showOmpOnly,
-      showPassworded,
-      language,
-      sort,
-    });
-  }, [data, search, showEmpty, showPartnersOnly, showOmpOnly, showPassworded, language, sort]);
+  const filteredData = useMemo(() => filterServers(data, query), [data, query]);
+
+  const listRef = useListRef(null);
+
+  useEffect(() => {
+    listRef.current?.element?.scrollTo({ top: 0, behavior: "smooth" });
+  }, [query]);
 
   const rowHeight = 134;
 
@@ -340,8 +344,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
       <form className="servers-list-form">
         <div className="servers-controls">
           <select
-            value={sort}
-            onChange={(e) => setSort(e.target.value as SortBy)}
+            value={query.sort}
+            onChange={(e) =>
+              setQuery((q) => ({ ...q, sort: e.target.value as SortBy }))
+            }
             className="servers-select"
           >
             <option value="relevance">
@@ -378,8 +384,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           </select>
 
           <select
-            value={language}
-            onChange={(e) => setLanguage(e.target.value)}
+            value={query.language}
+            onChange={(e) =>
+              setQuery((q) => ({ ...q, language: e.target.value }))
+            }
             className="servers-select"
           >
             <option value="">
@@ -403,8 +411,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
             })}
             name="search"
             id="search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            value={query.search}
+            onChange={(e) =>
+              setQuery((q) => ({ ...q, search: e.target.value }))
+            }
             onKeyDown={(e) => {
               if (e.key === "Enter") {
                 e.preventDefault();
@@ -428,8 +438,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           <label className="servers-checkbox-label">
             <input
               type="checkbox"
-              checked={showEmpty}
-              onChange={(e) => setShowEmpty(e.target.checked)}
+              checked={query.showEmpty}
+              onChange={(e) =>
+                setQuery((q) => ({ ...q, showEmpty: e.target.checked }))
+              }
               className="servers-checkbox"
             />
             <Translate id="servers.filter.showEmpty" description="Checkbox label to show empty servers">
@@ -440,8 +452,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           <label className="servers-checkbox-label">
             <input
               type="checkbox"
-              checked={showOmpOnly}
-              onChange={(e) => setShowOmpOnly(e.target.checked)}
+              checked={query.showOmpOnly}
+              onChange={(e) =>
+                setQuery((q) => ({ ...q, showOmpOnly: e.target.checked }))
+              }
               className="servers-checkbox"
             />
             <Translate id="servers.filter.showOmpOnly" description="Checkbox label to show only open.mp servers">
@@ -452,8 +466,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           <label className="servers-checkbox-label">
             <input
               type="checkbox"
-              checked={showPassworded}
-              onChange={(e) => setShowPassworded(e.target.checked)}
+              checked={query.showPassworded}
+              onChange={(e) =>
+                setQuery((q) => ({ ...q, showPassworded: e.target.checked }))
+              }
               className="servers-checkbox"
             />
             <Translate id="servers.filter.showPassworded" description="Checkbox label to show passworded servers">
@@ -464,8 +480,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           <label className="servers-checkbox-label">
             <input
               type="checkbox"
-              checked={showPartnersOnly}
-              onChange={(e) => setShowPartnersOnly(e.target.checked)}
+              checked={query.showPartnersOnly}
+              onChange={(e) =>
+                setQuery((q) => ({ ...q, showPartnersOnly: e.target.checked }))
+              }
               className="servers-checkbox"
             />
             <Translate id="servers.filter.showPartnersOnly" description="Checkbox label to show only partner servers">
@@ -479,6 +497,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
 
       <div className="servers-virtual-list">
         <FixedSizeList
+          listRef={listRef}
           rowComponent={Row}
           rowHeight={rowHeight}
           rowCount={filteredData.length}
