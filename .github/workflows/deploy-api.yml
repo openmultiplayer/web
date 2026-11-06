@@ -1,0 +1,25 @@
+name: Fly Deploy Backend
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+jobs:
+  deploy:
+    name: Deploy backend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.12.1
+        with:
+          workflow_id: 42688837
+          access_token: ${{ github.token }}
+      - uses: actions/checkout@v3
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+        with:
+          version: 0.1.101
+      - run: flyctl deploy --remote-only --wait-timeout 300
