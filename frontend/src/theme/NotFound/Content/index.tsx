@@ -1,3 +1,4 @@
+import Head from "@docusaurus/Head";
 import Link from "@docusaurus/Link";
 import Translate, { translate } from "@docusaurus/Translate";
 import type { Props } from "@theme/NotFound/Content";
@@ -9,6 +10,9 @@ import styles from "./styles.module.css";
 export default function NotFoundContent({ className }: Props): ReactNode {
   return (
     <main className={clsx(styles.notFound, className)}>
+      <Head>
+        <meta name="omp-not-found" />
+      </Head>
       <section className={styles.content}>
         <h1 className={styles.title}>
           <Translate id="notFound.title" description="404 page title">

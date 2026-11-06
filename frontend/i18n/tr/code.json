@@ -259,6 +259,9 @@
   "serverInfo.backToServers": {
     "message": "← Sunuculara Geri Dön"
   },
+  "serverInfo.backToPartners": {
+    "message": "← İş Ortağı Sunuculara Dön"
+  },
   "serverInfo.quickJoin": {
     "message": "Hızlı Katıl"
   },
@@ -282,6 +285,9 @@
   },
   "serverInfo.lastUpdated": {
     "message": "{time} önce güncellendi"
+  },
+  "serverInfo.notFound": {
+    "message": "Bu sunucu bulunamadı. Çevrimdışı olabilir veya artık listelenmiyor olabilir."
   },
   "theme.footer.title.Documentations": {
     "message": "Dokümantasyon"

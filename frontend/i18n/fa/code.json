@@ -259,6 +259,9 @@
   "serverInfo.backToServers": {
     "message": "→ بازگشت به سرورها"
   },
+  "serverInfo.backToPartners": {
+    "message": "← بازگشت به سرورهای شریک"
+  },
   "serverInfo.quickJoin": {
     "message": "ورود سریع"
   },
@@ -282,6 +285,9 @@
   },
   "serverInfo.lastUpdated": {
     "message": "{time} پیش به‌روزرسانی شده"
+  },
+  "serverInfo.notFound": {
+    "message": "این سرور پیدا نشد. ممکن است آفلاین باشد یا دیگر در فهرست نباشد."
   },
   "theme.footer.title.Documentations": {
     "message": "مستندات"

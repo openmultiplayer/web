@@ -2,7 +2,11 @@ import Layout from "@theme/Layout";
 import { ReactNode, useEffect, useMemo, useState } from "react";
 import clsx from "clsx";
 import { default as Translate, translate } from "@docusaurus/Translate";
-import { List as FixedSizeList, RowComponentProps } from "react-window";
+import {
+  List as FixedSizeList,
+  RowComponentProps,
+  useListRef,
+} from "react-window";
 import LoadingBanner from "../components/LoadingBanner";
 import Admonition from "../components/Admonition";
 import ServerRow from "../components/ServerRow";
@@ -199,23 +203,25 @@ const StatsComponent = ({ stats: { players, servers } }: { stats: Stats }) => {
   );
 };
 
+const initialQuery: Query = {
+  search: "",
+  showEmpty: true,
+  showPassworded: true,
+  language: "",
+  sort: "relevance",
+};
+
 // List Component
 const List = ({ data }: { data: CoreServerData[] }) => {
-  const [search, setSearch] = useState("");
-  const [showEmpty, setShowEmpty] = useState(true);
-  const [showPassworded, setShowPassworded] = useState(true);
-  const [language, setLanguage] = useState("");
-  const [sort, setSort] = useState<SortBy>("relevance");
+  const [query, setQuery] = useState<Query>(initialQuery);
 
-  const filteredData = useMemo(() => {
-    return filterServers(data, {
-      search,
-      showEmpty,
-      showPassworded,
-      language,
-      sort,
-    });
-  }, [data, search, showEmpty, showPassworded, language, sort]);
+  const filteredData = useMemo(() => filterServers(data, query), [data, query]);
+
+  const listRef = useListRef(null);
+
+  useEffect(() => {
+    listRef.current?.element?.scrollTo({ top: 0, behavior: "smooth" });
+  }, [query]);
 
   const rowHeight = 134;
 
@@ -223,7 +229,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
     const server = filteredData[index];
     return (
       <div style={style}>
-        <ServerRow key={server.ip} server={server} />
+        <ServerRow key={server.ip} server={server} from="partners" />
       </div>
     );
   };
@@ -233,8 +239,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
       <form className="servers-list-form">
         <div className="servers-controls">
           <select
-            value={sort}
-            onChange={(e) => setSort(e.target.value as SortBy)}
+            value={query.sort}
+            onChange={(e) =>
+              setQuery((q) => ({ ...q, sort: e.target.value as SortBy }))
+            }
             className="servers-select"
           >
             <option value="relevance">
@@ -271,8 +279,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           </select>
 
           <select
-            value={language}
-            onChange={(e) => setLanguage(e.target.value)}
+            value={query.language}
+            onChange={(e) =>
+              setQuery((q) => ({ ...q, language: e.target.value }))
+            }
             className="servers-select"
           >
             <option value="">
@@ -296,8 +306,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
             })}
             name="search"
             id="search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            value={query.search}
+            onChange={(e) =>
+              setQuery((q) => ({ ...q, search: e.target.value }))
+            }
             onKeyDown={(e) => {
               if (e.key === "Enter") {
                 e.preventDefault();
@@ -311,8 +323,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           <label className="servers-checkbox-label">
             <input
               type="checkbox"
-              checked={showEmpty}
-              onChange={(e) => setShowEmpty(e.target.checked)}
+              checked={query.showEmpty}
+              onChange={(e) =>
+                setQuery((q) => ({ ...q, showEmpty: e.target.checked }))
+              }
               className="servers-checkbox"
             />
             <Translate id="servers.filter.showEmpty" description="Checkbox label to show empty servers">
@@ -323,8 +337,10 @@ const List = ({ data }: { data: CoreServerData[] }) => {
           <label className="servers-checkbox-label">
             <input
               type="checkbox"
-              checked={showPassworded}
-              onChange={(e) => setShowPassworded(e.target.checked)}
+              checked={query.showPassworded}
+              onChange={(e) =>
+                setQuery((q) => ({ ...q, showPassworded: e.target.checked }))
+              }
               className="servers-checkbox"
             />
             <Translate id="servers.filter.showPassworded" description="Checkbox label to show passworded servers">
@@ -338,6 +354,7 @@ const List = ({ data }: { data: CoreServerData[] }) => {
 
       <div className="servers-virtual-list">
         <FixedSizeList
+          listRef={listRef}
           rowComponent={Row}
           rowHeight={rowHeight}
           rowCount={filteredData.length}
