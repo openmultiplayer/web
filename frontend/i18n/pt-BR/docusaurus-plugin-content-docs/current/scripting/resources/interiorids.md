@@ -41,7 +41,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 
 | Interior               | Interior ID | X         | Y         | Z         | Foto                                                                |
 | ---------------------- | ----------- | --------- | --------- | --------- | ------------------------------------------------------------------- |
-| Four Dragons           | 10          | 2016.1156 | 1017.1541 | 996.875   | ![](https://assets.open.mp/assets/images/interiors/interior41.png)  |
+| The Four Dragons       | 10          | 2016.1156 | 1017.1541 | 996.875   | ![](https://assets.open.mp/assets/images/interiors/interior41.png)  |
 | Casino (Redsands West) | 12          | 1133.2007 | -15.7586  | 1000.3251 | ![](https://assets.open.mp/assets/images/interiors/interior62.png)  |
 | Caligula's Casino      | 1           | 2233.9363 | 1711.8038 | 1011.6312 | ![](https://assets.open.mp/assets/images/interiors/interior48.png)  |
 | Caligula's Roof        | 1           | 2268.5156 | 1647.7682 | 1084.2344 | ![](https://assets.open.mp/assets/images/interiors/interior131.png) |
@@ -61,11 +61,11 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 
 | Interior             | Interior ID | X         | Y         | Z         | Foto                                                                |
 | -------------------- | ----------- | --------- | --------- | --------- | ------------------------------------------------------------------- |
-| Pizza Stack          | 5           | 372.5565  | -131.3607 | 1001.4922 | ![](https://assets.open.mp/assets/images/interiors/interior22.png)  |
+| Well Stacked Pizza   | 5           | 372.5565  | -131.3607 | 1001.4922 | ![](https://assets.open.mp/assets/images/interiors/interior22.png)  |
 | Rusty Brown's Donuts | 17          | 378.026   | -190.5155 | 1000.6328 | ![](https://assets.open.mp/assets/images/interiors/interior23.png)  |
 | Burger Shot          | 10          | 366.0248  | -73.3478  | 1001.5078 | ![](https://assets.open.mp/assets/images/interiors/interior47.png)  |
 | Cluckin' Bell        | 9           | 366.0002  | -9.4338   | 1001.8516 | ![](https://assets.open.mp/assets/images/interiors/interior129.png) |
-| Bar                  | 11          | 501.9578  | -70.5648  | 998.7578  | ![](https://assets.open.mp/assets/images/interiors/interior138.png) |
+| Ten Green Bottles    | 11          | 501.9578  | -70.5648  | 998.7578  | ![](https://assets.open.mp/assets/images/interiors/interior138.png) |
 | Lil' Probe Inn       | 18          | -227.5703 | 1401.5544 | 27.7656   | ![](https://assets.open.mp/assets/images/interiors/interior86.png)  |
 
 ## Barbeiro, tatuagem, sexshops
@@ -178,7 +178,7 @@ e você verá o ID do universo interior. Agora você pode usar com segurança [S
 | Brothel 2                  | 3           | 961.9308  | -51.9071  | 1001.1172 | ![](https://assets.open.mp/assets/images/interiors/interior3.png)   |
 | The Big Spread Ranch       | 3           | 1212.1489 | -28.5388  | 1000.9531 | ![](https://assets.open.mp/assets/images/interiors/interior6.png)   |
 | The Pig Pen                | 2           | 1204.668  | -13.5429  | 1000.9219 | ![](https://assets.open.mp/assets/images/interiors/interior40.png)  |
-| Club                       | 17          | 493.1443  | -24.2607  | 1000.6797 | ![](https://assets.open.mp/assets/images/interiors/interior64.png)  |
+| Alhambra                   | 17          | 493.1443  | -24.2607  | 1000.6797 | ![](https://assets.open.mp/assets/images/interiors/interior64.png)  |
 | Fanny Batter's Whore House | 6           | 748.4623  | 1438.2378 | 1102.9531 | ![](https://assets.open.mp/assets/images/interiors/interior127.png) |
 
 ## Armazéns
