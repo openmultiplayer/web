@@ -24,22 +24,8 @@ description: Lijst van alle client commands.
 | /fontsize      | Wijzigt de font size van de UI (chat, dialogs etc.). Geldige `fontsize` is -3 t/m 5.                                                                                                                                                                                                                      |
 | /ctd           | Toegevoegd in SA-MP 0.3.7 RC2. Schakelt client debugging van de player camera target in.                                                                                                                                                                                                                  |
 | /rcon          | Meer serverspecifiek dan client. Wordt gebruikt om RCON commands uit te voeren. RCON is het ingebouwde adminsysteem. RCON staat voor [Remote Control](../server/ControllingServer#rcon-gebruiken).                                                                                                        |
-| /hudscalefix   | Toegevoegd in SA-MP 0.3.7 R3. Schakelt de radar scale fix in/uit, zodat de radar beter schaalt op widescreen resoluties (dus geen 'egg of finding' meer). Stelt de `nohudscale` optie in `sa-mp.cfg` in.                                                                                                  |
+| /hudscalefix   | Toegevoegd in SA-MP 0.3.7 R3. Schakelt de radar scale fix in/uit, zodat de radar beter schaalt op widescreen resoluties (dus geen 'egg of finding' meer). Stelt de `nohudscalefix` optie in `sa-mp.cfg` in.                                                                                                  |
 
 ## Bestand sa-mp.cfg
 
-| Optie           | Beschrijving                                                                                                                                             |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| pagesize        | Zie /pagesize.                                                                                                                                           |
-| fpslimit        | Zie /fpslimit.                                                                                                                                           |
-| disableheadmove | Zie /headmove.                                                                                                                                           |
-| timestamp       | Zie /timestamp.                                                                                                                                          |
-| ime             | Bepaalt of de invoer van het chatvenster IME-tekstbewerking en taalwissel ondersteunt. 1 = aan, 0 = uit.                                                 |
-| audiomsgoff     | Zie /audiomsg.                                                                                                                                           |
-| multicore       | Schakelt gebruik van meerdere CPU-cores door de SA-MP-client in. Standaard 1 (GEBRUIKT meerdere cores). Zet op 0 bij muisproblemen.                      |
-| directmode      | Voor spelers met problemen met chattekstweergave: gebruikt de tragere direct-to-screen-tekstmodus. 0 = uit, 1 = aan.                                     |
-| audioproxyoff   | Als dit op 1 staat en er is een proxy ingesteld in Windows Internetopties, wordt die proxy niet gebruikt bij audiostreams in SA-MP.                      |
-| nonametagstatus | Zie /nametagstatus.                                                                                                                                      |
-| fontface        | Wijzigt het lettertype van chat, dialogen en scoreboard. Bijvoorbeeld `fontface="Comic Sans MS"`. Niet officieel ondersteund; kan problemen veroorzaken. |
-| fontweight      | Schakelt vetgedrukte chatlettertypes. 0 = VET (standaard) en 1 = NORMAAL.                                                                                |
-| nohudscale      | Toegevoegd in 0.3.7 R3. Zie /hudscalefix.                                                                                                                |
+Bekijk de documentatie over [`sa-mp.cfg`](./sa-mp.cfg.md) voor uitleg over alle opties.

@@ -24,22 +24,8 @@ description: List of all client commands.
 | /fontsize      | Changes the font size of the UI (chat, dialogs etc.). Valid fontsize is -3 to 5.                                                                                                                                                                                                                                                       |
 | /ctd           | This command was added in SA-MP 0.3.7 RC2. It enables client debugging of the player camera target.                                                                                                                                                                                                                                    |
 | /rcon          | More related to the server rather than the client. This command is used to execute RCON commands. RCON is the built-in admin system. RCON stands for [Remote Control](../server/ControllingServer#using-rcon).                                                                                                                         |
-| /hudscalefix   | This command was added in SA-MP 0.3.7 R3. Enables/disables the radar scale fix, so that the game's radar scales better in widescreen resolutions (i.e. no more 'egg of finding'). This sets the sa-mp.cfg 'nohudscale' option.                                                                                                         |
+| /hudscalefix   | This command was added in SA-MP 0.3.7 R3. Enables/disables the radar scale fix, so that the game's radar scales better in widescreen resolutions (i.e. no more 'egg of finding'). This sets the sa-mp.cfg 'nohudscalefix' option.                                                                                                         |
 
 ## File sa-mp.cfg
 
-| Option          | Description                                                                                                                                                   |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| pagesize        | See /pagesize.                                                                                                                                                |
-| fpslimit        | See /fpslimit.                                                                                                                                                |
-| disableheadmove | See /headmove.                                                                                                                                                |
-| timestamp       | See /timestamp.                                                                                                                                               |
-| ime             | This controls whether the chat window input supports Input Method text editing and language switching. 1 enables IME, 0 disables it.                          |
-| audiomsgoff     | See /audiomsg.                                                                                                                                                |
-| multicore       | Toggle whether the SA-MP client uses multiple CPU cores when running. Default is 1 (DOES use multiple CPU cores). Set to 0 if you experience mouse problems.  |
-| directmode      | This allows players with chat text drawing problems to use the slower direct-to-screen text rendering mode. 0 to disable, 1 to enable.                        |
-| audioproxyoff   | If this option is set to 1, and there is a proxy server set in your Windows Internet Options, the proxy will not be used when playing audio streams in SA-MP. |
-| nonametagstatus | See /nametagstatus.                                                                                                                                           |
-| fontface        | Allows you to change the font of chat, dialogs and the scoreboard. i.e. fontface="Comic Sans MS". Not officially supported, and may cause problems.           |
-| fontweight      | This option toggles whether your chat font is bold or not. 0 = BOLD (default) and 1 = NORMAL.                                                                 |
-| nohudscale      | This option was added in 0.3.7 R3. See /hudscalefix.                                                                                                          |
+For descriptions of all options in `sa-mp.cfg`, see the [`sa-mp.cfg` documentation](./sa-mp.cfg.md).
