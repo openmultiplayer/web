@@ -73,9 +73,11 @@ Don't use absolute URLs for inter-site links. Use relative paths.
 
 ### Images
 
-Images go inside a subdirectory inside `/static/images`. Then when you link an image in a `![]()` you just use `/images/` as the base path (no need for `static` that's just for the repository).
+Images that only the wiki needs go inside a subdirectory of `public/images`. Then when you link an image in a `![]()` you just use `/images/` as the base path (no need for `public`, that is just the repository directory).
 
-If in doubt, read another page that uses images and copy how its done there.
+Images shared across many pages (screenshots, icons, illustrations) are published to the CDN by the `upload-assets` task in `Taskfile.yml`, which copies `frontend/public/images` to `https://assets.open.mp/assets/images/`. Reference those with the full `https://assets.open.mp/assets/images/...` URL, as most pages in the wiki do.
+
+If in doubt, read another page that uses images and copy how it's done there.
 
 ### Metadata
 
