@@ -354,5 +354,21 @@
   },
   "navbar.item.Donate": {
     "message": "Донат"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Фільтрувати документацію",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Очистити фільтр",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Немає відповідних документів",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Спробуйте інший пошуковий запит.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
   }
 }

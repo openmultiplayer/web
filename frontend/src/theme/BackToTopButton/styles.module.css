@@ -1,0 +1,6 @@
+.pageButton {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 3rem;
+  z-index: calc(var(--ifm-z-index-fixed) - 1);
+}
