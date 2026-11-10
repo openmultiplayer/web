@@ -24,10 +24,10 @@ import {
   INDENT,
   buildSidebarNodes,
   clearTextWidthCache,
+  countMatchingNodes,
   findActiveNode,
   getInitialOpenState,
   getRowHeight,
-  hasMatchingNodes,
   matchesSidebarNode,
   type SidebarNode,
 } from './model';
@@ -89,11 +89,11 @@ export default function DocsSidebarTree({
     () => findActiveNode(nodes, path),
     [nodes, path],
   );
-  const hasMatches = useMemo(
-    () => !hasFilter || hasMatchingNodes(nodes, deferredFilter),
+  const matchCount = useMemo(
+    () => (hasFilter ? countMatchingNodes(nodes, deferredFilter) : 0),
     [deferredFilter, hasFilter, nodes],
   );
-  const isEmpty = hasFilter && !hasMatches;
+  const isEmpty = hasFilter && matchCount === 0;
 
   const filterPlaceholder = translate({
     id: 'theme.docs.sidebar.filterPlaceholder',
@@ -441,7 +441,10 @@ export default function DocsSidebarTree({
           <input
             ref={inputRef}
             type="search"
-            className={styles.filterInput}
+            className={clsx(
+              styles.filterInput,
+              filter.length > 0 && styles.filterInputWithActions,
+            )}
             value={filter}
             onChange={(event) => setFilter(event.target.value)}
             onKeyDown={(event) => {
@@ -455,6 +458,11 @@ export default function DocsSidebarTree({
             autoComplete="off"
             spellCheck={false}
           />
+          {hasFilter && (
+            <span className={styles.filterCount}>
+              {matchCount.toLocaleString()}
+            </span>
+          )}
           {filter.length > 0 && (
             <button
               type="button"

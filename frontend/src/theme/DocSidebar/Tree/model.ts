@@ -286,20 +286,22 @@ export function matchesSidebarNode(
   return !term || normalizeFilter(node.data.label).includes(term);
 }
 
-export function hasMatchingNodes(
+export function countMatchingNodes(
   nodes: readonly SidebarNode[],
   filter: string,
-): boolean {
+): number {
   const term = normalizeFilter(filter.trim());
   if (!term) {
-    return true;
+    return 0;
   }
 
-  const visit = (items: readonly SidebarNode[]): boolean =>
-    items.some(
-      (node) =>
-        normalizeFilter(node.label).includes(term) ||
-        (node.children ? visit(node.children) : false),
+  const visit = (items: readonly SidebarNode[]): number =>
+    items.reduce(
+      (count, node) =>
+        count +
+        (normalizeFilter(node.label).includes(term) ? 1 : 0) +
+        (node.children ? visit(node.children) : 0),
+      0,
     );
 
   return visit(nodes);
