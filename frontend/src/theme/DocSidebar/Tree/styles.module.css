@@ -8,10 +8,6 @@
   overflow: visible;
 }
 
-.mobileContainer {
-  min-height: 240px;
-}
-
 /* Keep the divider visible above the tree scrollbar. */
 @media (min-width: 997px) {
   .container::after {

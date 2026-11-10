@@ -19,7 +19,6 @@ const DocSidebarMobileSecondaryMenu: NavbarSecondaryMenuComponent<Props> = ({
       <DocsSidebarTree
         sidebar={sidebar}
         path={path}
-        variant="mobile"
         onItemClick={(item) => {
           // Mobile sidebar should only be closed if the category has a link
           if (item.type === 'category' && item.href) {

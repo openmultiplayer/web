@@ -44,14 +44,12 @@ const BACK_TO_TOP_THRESHOLD = 200;
 export type DocsSidebarTreeProps = {
   sidebar: readonly PropSidebarItem[];
   path: string;
-  variant?: 'desktop' | 'mobile';
   onItemClick?: (item: PropSidebarItem) => void;
 };
 
 export default function DocsSidebarTree({
   sidebar,
   path,
-  variant = 'desktop',
   onItemClick,
 }: DocsSidebarTreeProps): ReactNode {
   const isBrowser = useIsBrowser();
@@ -224,10 +222,7 @@ export default function DocsSidebarTree({
     const measure = () => {
       const rect = element.getBoundingClientRect();
       const width = Math.max(0, Math.floor(rect.width));
-      const height =
-        variant === 'mobile'
-          ? Math.max(0, Math.floor(window.innerHeight - rect.top - 8))
-          : Math.max(0, Math.floor(rect.height));
+      const height = Math.max(0, Math.floor(rect.height));
 
       setSize((previous) =>
         previous &&
@@ -251,7 +246,7 @@ export default function DocsSidebarTree({
       observer.disconnect();
       window.removeEventListener('resize', measure);
     };
-  }, [variant]);
+  }, []);
 
   const treeWidth = size?.width ?? DEFAULT_SIDEBAR_WIDTH;
   const showTree = Boolean(
@@ -433,7 +428,6 @@ export default function DocsSidebarTree({
       className={clsx(
         ThemeClassNames.docs.docSidebarMenu,
         styles.container,
-        variant === 'mobile' && styles.mobileContainer,
       )}>
       <div className={styles.filterBar} role="search">
         <div className={styles.filterField}>
