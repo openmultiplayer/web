@@ -275,31 +275,15 @@ export function normalizeFilter(value: string): string {
 }
 
 /**
- * Match a node by its own label or an ancestor category label, so matching a
- * category keeps its subtree visible.
+ * Match a node's own label. react-arborist keeps ancestor rows as context, so
+ * matching a category does not pull its whole subtree into the results.
  */
 export function matchesSidebarNode(
   node: NodeApi<SidebarNode>,
   searchTerm: string,
 ): boolean {
   const term = normalizeFilter(searchTerm.trim());
-  if (!term) {
-    return true;
-  }
-
-  if (normalizeFilter(node.data.label).includes(term)) {
-    return true;
-  }
-
-  let parent = node.parent;
-  while (parent && !parent.isRoot) {
-    if (normalizeFilter(parent.data.label).includes(term)) {
-      return true;
-    }
-    parent = parent.parent;
-  }
-
-  return false;
+  return !term || normalizeFilter(node.data.label).includes(term);
 }
 
 export function hasMatchingNodes(
