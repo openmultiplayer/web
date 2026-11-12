@@ -5,7 +5,7 @@ description: Destrói um ator que foi criado com CreateActor.
 tags: []
 ---
 
-Esta função foi adicionada no SA-MP 0.3.7 e não funcionará em versões anteriores!
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Descrição
 

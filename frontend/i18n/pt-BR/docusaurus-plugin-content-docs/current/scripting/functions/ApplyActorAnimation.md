@@ -5,7 +5,7 @@ description: Aplica uma animação a um ator.
 tags: []
 ---
 
-Esta função foi adicionada no SA-MP 0.3.7 e não funcionará em versões anteriores!
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Descrição
 
@@ -21,7 +21,7 @@ Aplica uma animação a um ator.
 | lockx      | Se definido **0**, o ator vai retornar à sua coordenada X antiga, assim que a animação concluir (para animações que o ator move, como caminhar). **1** não irá retornar à posição antiga. |
 | locky      | O mesmo que acima, mas para o eixo Y. Same as above but for the Y axis. Deve ser mantido igual ao parâmetro anterior.                                                                     |
 | freeze     | Definir para **1** vai congelar o ator no fim da animação. **0** não irá congelar.                                                                                                        |
-| time       | Tempo em milisegundos. Para um ciclo infinito o valor deve ser 0.                                                                                                                         |
+| time       | Tempo em milisegundos. Para um ciclo infinito o valor deve ser **0**.                                                                                                                     |
 
 ## Retorno
 

@@ -34,7 +34,7 @@ if (strcmp(cmdtext, "/world3", true) == 0)
 
 :::note
 
-Zadani virtualni svijet je 0.
+Zadani virtualni svijet je **0**.
 
 :::
 

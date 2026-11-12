@@ -22,7 +22,7 @@ Aktörün can değerini çekin.
 
 **0** - Fonksiyon çalışmadı. (Girilen ID'ye sahip aktör yok/oluşturulmamış.)
 
-NOTE: Aktörün can değeri dönüş değerinde değil, oluşturulan float değişkeninde saklanır.
+**NOTE:** Aktörün can değeri dönüş değerinde değil, oluşturulan float değişkeninde saklanır.
 
 ## Örnekler
 

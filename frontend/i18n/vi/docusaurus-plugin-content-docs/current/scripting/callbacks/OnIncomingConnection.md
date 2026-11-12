@@ -17,8 +17,8 @@ Callback này được gọi khi một địa chỉ IP cố gắng kết nối v
 
 ## Trả Về
 
-- `1` - Sẽ ngăn các filterscript khác nhận callback này.
-- `0` - Chỉ ra rằng callback này sẽ được truyền đến filterscript tiếp theo.
+- **1** - Sẽ ngăn các filterscript khác nhận callback này.
+- **0** - Chỉ ra rằng callback này sẽ được truyền đến filterscript tiếp theo.
 
 Hàm này luôn được gọi đầu tiên trong các filterscript.
 

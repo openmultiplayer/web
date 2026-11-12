@@ -21,9 +21,9 @@ Ovaj callback je pozvan kada se vozilo respawnuje/ponovo stvori.
 
 ## Returns
 
-**1** - Spriječiti će da ostale filterskripte primaju ovaj callback.
+**0** - Spriječiti će da ostale filterskripte primaju ovaj callback.
 
-**0** - Ukazuje da će ovaj callback biti proslijeđen do naredne filterskripte.
+**1** - Ukazuje da će ovaj callback biti proslijeđen do naredne filterskripte.
 
 Uvijek je pozvan prvo u filterskriptama.
 

@@ -9,7 +9,7 @@ tags: ["sqlite"]
 
 ## Descrição
 
-A função obtém o handle de memória para um conjunto de resultados de banco de dados SQLite que foi alocado com [db_query](db_query).
+A função obtém o **handle de memória** para um conjunto de resultados de banco de dados SQLite que foi alocado com [db_query](db_query).
 
 | Nome  | Descrição                                                  |
 | ----- | ---------------------------------------------------------- |

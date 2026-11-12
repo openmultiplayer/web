@@ -12,7 +12,7 @@ Dodaj novu imovinu ili promijeni već postojeću.
 | Ime      | Deskripcija                                                                                                                                         |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id       | Virtualna mašina za upotrebu, trebali biste zadržati ovu nulu.                                                                                      |
-| name[]   | Koristi se u kombinaciji s vrijednošću prilikom pohrane cijelih brojeva; nemojte koristiti ovo ako želite pohraniti niz.                            |
+| name[]   | Koristi se u kombinaciji s _vrijednošću_ prilikom pohrane cijelih brojeva; nemojte koristiti ovo ako želite pohraniti niz.                          |
 | value    | Cjelobrojna vrijednost za pohraniti **ili** jedinstveni ID imovine ako pohranjujemo string. Upotrijebite hash-funkciju za izračunavanje iz stringa. |
 | string[] | Vrijednost svojstva, kao string. Ne koristite ovo ako želite pohraniti cijeli broj.                                                                 |
 

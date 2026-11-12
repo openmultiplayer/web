@@ -19,7 +19,7 @@ Gets a float server variable's value.
 
 The float value of the specified server variable.
 
-It will still return 0.0 if the variable is not set.
+It will still return **0.0** if the variable is not set.
 
 ## Examples
 

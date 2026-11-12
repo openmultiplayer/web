@@ -15,9 +15,9 @@ Ovaj callback je pozvan kada se igrač konektovao na server.
 
 ## Returns
 
-**1** - Spriječiti će da druge filterskripte primaju ovaj callback.
+**0** - Spriječiti će da druge filterskripte primaju ovaj callback.
 
-**0** - Označava da će ovaj callback biti proslijeđen do sljedeće filterskripte.
+**1** - Označava da će ovaj callback biti proslijeđen do sljedeće filterskripte.
 
 Uvijek je pozvana prva u filterskripti.
 

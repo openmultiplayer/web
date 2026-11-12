@@ -51,14 +51,14 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 - Motivul va returna 37 (aruncător de flăcări) din orice sursă de foc (de ex. molotov, 18)
 - Motivul va returna 51 de la orice armă care creează o explozie (de ex. RPG, grenadă)
-- Nu trebuie să verificați dacă Killerid este valid înainte de ao folosi în [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID este un parametru valid ID killerid în acea funcție.
-- **playerid** este singurul care poate apela înapoi. (Bine de știut pentru anti moartea falsă)
+- Nu trebuie să verificați dacă `killerid` este valid înainte de ao folosi în [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID este un parametru valid ID killerid în acea funcție.
+- `playerid` este singurul care poate apela înapoi. (Bine de știut pentru anti moartea falsă)
 
 :::
 
 :::warning
 
-TREBUIE să verificați dacă „killerid” este valid (nu INVALID_PLAYER_ID) înainte de a-l folosi într-o matrice (sau chiar oriunde), deoarece va cauza blocarea scriptului OnPlayerDeath (nu a întregului script). Acest lucru se datorează faptului că INVALID_PLAYER_ID este definit ca 65535, iar dacă o matrice are doar elemente „MAX_PLAYERS”, de ex. 500, încercați să accesați un index care este peste 499, care este în afara limitelor.
+TREBUIE să verificați dacă `killerid` este valid (nu INVALID_PLAYER_ID) înainte de a-l folosi într-o matrice (sau chiar oriunde), deoarece va cauza blocarea scriptului OnPlayerDeath (nu a întregului script). Acest lucru se datorează faptului că INVALID_PLAYER_ID este definit ca 65535, iar dacă o matrice are doar elemente „MAX_PLAYERS”, de ex. 500, încercați să accesați un index care este peste 499, care este în afara limitelor.
 
 :::
 

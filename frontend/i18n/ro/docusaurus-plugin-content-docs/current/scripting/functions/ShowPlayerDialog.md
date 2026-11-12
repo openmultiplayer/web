@@ -69,7 +69,8 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 :::tip
 
 - Este recomandat să se folosească enumerații (vezi mai sus) sau definiții (#define) pentru a determina care ID-uri sunt ale căror dialoguri, pentru ca pe viitor să se evite confuzia.
-- Folosește color embedding pentru mai multe culori în text. Folosind **-1** ca și _dialogid_ închide toate dialog-urile deschise pe ecranul clientului.
+- Folosește color embedding pentru mai multe culori în text.
+- Folosind **-1** ca și `dialogid` închide toate dialog-urile deschise pe ecranul clientului.
 
 :::
 

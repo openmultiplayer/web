@@ -64,7 +64,7 @@ printf("%d", 7);
 ```c
 #define PL new i = 0; i < MAX_PLAYERS; i++) if (IsPlayerConnected(i)
 
-for(PL) printf("%d connected", i);
+for (PL) printf("%d connected", i);
 ```
 
 به حلقه بازیکن که همه می‌شناسیم کامپایل خواهد شد (نفرت داریم). توجه کنید که چگونه پرانتزها اینجا استفاده شده‌اند، برخی از for و برخی از ماکرو define (جایگزینی).

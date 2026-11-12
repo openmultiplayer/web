@@ -15,7 +15,7 @@ Essa callback é chamada quando a sirene de um carro é ligada/desligada.
 | --------- | ------------------------------------------------------------------------------ |
 | playerid  | ID do jogador que ligou/desligou a sirene (motorista).                         |
 | vehicleid | ID do veículo que teve a sirene ligada/desligada.                              |
-| newstate  | Retorna o novo estado da sirene após a troca. **0** para desligada, **1** para ligada. |
+| newstate  | Retorna o novo estado da sirene após a troca. 0 para desligada, 1 para ligada. |
 
 ## Retornos
 

@@ -67,7 +67,8 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 :::tip
 
 - É recomendado usar enumerações (enums - veja abaixo) ou constantes (#define) para determinar quais dialogid's estão sendo usados, para evitar confusões no futuro. Você nunca deve usar números direto, porque isso gera confusões.
-- Use cores embutidas para múltiplas cores no texto. Usando **-1** como _dialogid_ fecha todos os dialogs abertos na tela do cliente (jogador).
+- Use cores embutidas para múltiplas cores no texto.
+- Usando **-1** como `dialogid` fecha todos os dialogs abertos na tela do cliente (jogador).
 
 :::
 

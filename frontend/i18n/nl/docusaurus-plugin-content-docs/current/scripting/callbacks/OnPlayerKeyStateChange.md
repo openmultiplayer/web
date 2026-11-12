@@ -42,7 +42,7 @@ Richtingstoetsen triggeren OnPlayerKeyStateChange niet (omhoog/omlaag/links/rech
 
 ### Introductie
 
-Deze callback wordt aangeroepen wanneer een speler één van de ondersteunde toetsen indrukt of loslaat (zie [Keys](../resources/keys)).<br/>De ondersteunde toetsen zijn geen echte toetsenbordtoetsen, maar San Andreas-functietoetsen. Je kunt bijvoorbeeld niet detecteren wanneer iemand de spatiebalk indrukt, maar wel wanneer de **sprint**-toets wordt ingedrukt (die standaard aan de spatiebalk is gekoppeld).
+Deze callback wordt aangeroepen wanneer een speler één van de ondersteunde toetsen indrukt of loslaat (zie [Keys](../resources/keys)).<br/>De ondersteunde toetsen zijn geen echte toetsenbordtoetsen, maar San Andreas-functietoetsen. Je kunt bijvoorbeeld niet detecteren wanneer iemand de **spatiebalk** indrukt, maar wel wanneer de **sprint**-toets wordt ingedrukt (die standaard aan de spatiebalk is gekoppeld).
 
 ### Parameters
 

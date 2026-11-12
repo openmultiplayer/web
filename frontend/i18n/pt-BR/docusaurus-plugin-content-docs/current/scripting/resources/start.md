@@ -198,7 +198,7 @@ Isto diz ao sistema para criar uma nova variável chamada myVariable, o valor in
 new
     myVariable = 7;
 ```
-Isso declara uma nova variável e define seu valor inicial como 7, então imprimir a variável agora resultará em 7. Para exibir uma variável que não seja uma string, precisamos voltar à função printf mencionada anteriormente e fazer:
+Isso declara uma nova variável e define seu valor inicial como 7, então imprimir a variável agora resultará em 7. Para exibir uma variável que não seja uma string, precisamos voltar à função `printf` mencionada anteriormente e fazer:
 
 ```c
 new

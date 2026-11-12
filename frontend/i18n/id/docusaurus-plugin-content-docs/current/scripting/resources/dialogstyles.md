@@ -69,7 +69,7 @@ Menampilkan:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan tidak akan diatur ulang (_reset_) setelah \n \t
+- Pewarnaan tidak akan diatur ulang (_reset_) setelah **\n** **\t**
 
 :::
 
@@ -104,7 +104,7 @@ Showing:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan tidak akan diatur ulang (_reset_) setelah \n \t
+- Pewarnaan tidak akan diatur ulang (_reset_) setelah **\n** **\t**
 
 :::
 
@@ -205,7 +205,7 @@ Pistol\t$1000\t50",
 
 :::note
 
-- **inputtext** teks yang berisi nilai dari **listitem** yang dipilih pada kolom pertama, tanpa warna-warnanya.
+- **inputtext** teks yang berisi nilai dari **listitem** yang dipilih pada _kolom pertama_, tanpa warna-warnanya.
 
 :::
 
@@ -239,7 +239,7 @@ Menampilkan:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan akan diatur ulang setelah \n dan \t. **info** pada baris pertama berisi header.
+- Pewarnaan akan diatur ulang setelah **\n** dan **\t**. **info** pada baris pertama berisi header.
 
 :::
 
@@ -253,7 +253,7 @@ Item 1 Column 1\tItem 1 Column 2\tItem 1 Column 3\n\
 
 :::note
 
-- **inputtext** berisi teks dari **listitem** yang dipilih pada kolom pertama, tanpa warna-warnanya.
+- **inputtext** berisi teks dari **listitem** yang dipilih pada _kolom pertama_, tanpa warna-warnanya.
 
 :::
 

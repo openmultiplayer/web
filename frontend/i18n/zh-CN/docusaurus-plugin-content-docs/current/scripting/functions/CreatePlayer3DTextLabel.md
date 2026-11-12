@@ -25,7 +25,7 @@ tags: ["玩家", "3D文本标签"]
 
 ## 返回值
 
-成功返回私有 3D 文本标签 ID，达到**玩家**标签上限（MAX_3DTEXT_PLAYER）时返回 INVALID_3DTEXT_ID。
+成功返回**私有** 3D 文本标签 ID，达到**玩家**标签上限（MAX_3DTEXT_PLAYER）时返回 INVALID_3DTEXT_ID。
 
 ## 应用示例
 

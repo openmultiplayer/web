@@ -19,7 +19,7 @@ Ovaj callback je pozvan kada se uključi/isključi sirena vozila.
 | --------- | ------------------------------------------------------ |
 | playerid  | ID igrača koji je uključio/isključio sirenu (vozač).   |
 | vehicleid | ID vozila u kojem je sirena uključena/isključena.      |
-| newstate  | **0** ako je sirena isključena, **1** ako je sirena uključena. |
+| newstate  | 0 ako je sirena isključena, 1 ako je sirena uključena. |
 
 ## Returns
 

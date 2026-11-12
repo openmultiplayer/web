@@ -17,7 +17,7 @@ Zamijeni teksturu objekta sa tekstom.
 | materialsize  | [Veličina](../resources/materialtextsizes) materijala.                                   |
 | fontface      | Font za koristiti.                                                                       |
 | fontsize      | Veličina teksta (MAX 255).                                                               |
-| bold          | Bold text. Postavi na **1** za bold (deblji font), **0** za ne.                                  |
+| bold          | Bold text. Postavi na 1 za bold (deblji font), 0 za ne.                                  |
 | fontcolor     | Boja teksta, u ARGB formatu.                                                             |
 | backcolor     | Boja pozadine, u ARGB formatu.                                                           |
 | textalignment | [Poravnanje](../resources/materialtextalignment) teksta (po zadanim postavkama: lijevo). |
@@ -62,6 +62,6 @@ MORAŠ koristiti **ARGB** format boje, ne RGBA kao što se koristi u klijent por
 
 ## Filterskripte koje podržavaju teksturisanje/text
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) od Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) od Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) od RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) od Pottus

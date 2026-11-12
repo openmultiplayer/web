@@ -53,7 +53,7 @@ public OnRconCommand(cmd[])
 
 :::warning
 
-Você precisa incluir essa callback em um filterscript ja carregado para que a mesma funcione no gamemode!
+Você precisa incluir essa callback em um filterscript ja carregado para que a mesma funcione no gamemode! (Corrigido em open.mp)
 
 :::
 

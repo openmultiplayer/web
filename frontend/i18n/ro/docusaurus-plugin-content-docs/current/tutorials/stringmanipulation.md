@@ -964,7 +964,7 @@ Hello                    World
 
 Pe vremea vechii mașini de scris, aceasta a avut o utilizare mai populară, a fost folosită pentru a trece la următoarea linie pe verticală, dar acum, acest lucru nu mai este cazul, nu are nicio utilizare vizibilă în zilele noastre și asta include imprimante și chiar și limbaje de programare, iar pionul nu face excepție.
 
-- **\_The `Backslash` escape sequence - `\*`**
+- **The `Backslash` escape sequence - `\\`**
 
 După cum am văzut, backslash-ul este considerat caracterul de evadare, așa că ori de câte ori programul îl observă, îl consideră un punct de plecare al unei secvențe de evadare, nu îl privește ca pe un personaj independent și, astfel, fie va da o eroare de compilare (_dacă nu a fost urmat de un caracter valid_), fie nu o va imprima, în cazul amanetului, compilatorul va ridica o eroare (_error 027: constantă de caracter nevalid_). Din fericire, putem rezolva această problemă scăpând de bară inversă, iar acest lucru se face prin prefixarea unei alte baruri inversă:
 

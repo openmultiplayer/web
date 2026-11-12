@@ -13,7 +13,7 @@ Callback ini akan terpanggil ketika pemain merespon kepada dialog yang muncul me
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID dari pemain yang merespon dialog.                                                                                                  |
 | dialogid    | ID dari dialog yang pemain respond sebagaimana ditetapkan di ShowPlayerDialog.                                                        |
-| response    | **1** Untuk tombol kiri dan **0** untuk tombol kanan (Jika hanya satu tombol yang ada, maka hanya **1**)                                  |
+| response    | **1** Untuk tombol kiri dan **0** untuk tombol kanan (Jika hanya satu tombol yang ada, maka hanya 1).                                 |
 | listitem    | ID dari list item yang dipilih oleh player (dimulai dari 0) (hanya ketika menggunakan list style dialog, sebaliknya akan menjadi -1). |
 | inputtext[] | Sebuah text yang dimasukkan kedalam input box dari player atau text dari list item yang terpilih.                                     |
 

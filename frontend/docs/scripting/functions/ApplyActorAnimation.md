@@ -11,17 +11,17 @@ tags: ["actor", "animation"]
 
 Apply an animation to an actor.
 
-| Name                     | Description                                                                                                                                                                                            |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| actorid                  | The ID of the actor to apply the animation to.                                                                                                                                                         |
-| const animationLibrary[] | The animation library from which to apply an animation.                                                                                                                                                |
-| const animationName[]    | The name of the animation to apply, within the specified library.                                                                                                                                      |
-| float:delta              | The speed to play the animation (use 4.1).                                                                                                                                                             |
+| Name                     | Description                                                                                                                                                                                                    |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| actorid                  | The ID of the actor to apply the animation to.                                                                                                                                                                 |
+| const animationLibrary[] | The animation library from which to apply an animation.                                                                                                                                                        |
+| const animationName[]    | The name of the animation to apply, within the specified library.                                                                                                                                              |
+| float:delta              | The speed to play the animation (use 4.1).                                                                                                                                                                     |
 | bool:loop                | If set to **true**, the animation will loop. If set to **false**, the animation will play once.                                                                                                                |
 | bool:lockX               | If set to **false**, the actor is returned to their old X coordinate once the animation is complete (for animations that move the actor such as walking). **true** will not return them to their old position. |
-| bool:lockY               | Same as above but for the Y axis. Should be kept the same as the previous parameter.                                                                                                                   |
+| bool:lockY               | Same as above but for the Y axis. Should be kept the same as the previous parameter.                                                                                                                           |
 | bool:freeze              | Setting this to **true** will freeze an actor at the end of the animation. **false** will not.                                                                                                                 |
-| time                     | Timer in milliseconds. For a never-ending loop it should be **0**.                                                                                                                                     |
+| time                     | Timer in milliseconds. For a never-ending loop it should be **0**.                                                                                                                                             |
 
 ## Returns
 

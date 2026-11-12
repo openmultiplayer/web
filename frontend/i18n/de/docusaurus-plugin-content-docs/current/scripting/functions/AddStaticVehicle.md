@@ -23,7 +23,7 @@ Fügt ein 'static' vehicle (models werden für den Spieler vorgeladen) zum Gamem
 
 Die vehicleID des erstellten Fahrzeug (zwischen 1 und MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) wenn das Fahrzeug nicht erstellt werden konnte (Fahrzeug-Limit ist erreicht oder fehlerhafte model ID).
+**INVALID_VEHICLE_ID (65535)** wenn das Fahrzeug nicht erstellt werden konnte (Fahrzeug-Limit ist erreicht oder fehlerhafte model ID).
 
 ## Beispiele
 

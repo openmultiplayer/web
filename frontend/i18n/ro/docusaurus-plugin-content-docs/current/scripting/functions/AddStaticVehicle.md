@@ -23,7 +23,7 @@ Adaugă un vehicul 'static' (modelele sunt preîncărcate pentru jucători) la m
 
 Codul vehiculului vehiculului creat (între 1 și MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) dacă vehiculul nu a fost creat (limita vehiculului a fost atinsă sau ID-ul modelului vehiculului nevalid a fost trecut).
+**INVALID_VEHICLE_ID (65535)** dacă vehiculul nu a fost creat (limita vehiculului a fost atinsă sau ID-ul modelului vehiculului nevalid a fost trecut).
 
 ## Exemple
 

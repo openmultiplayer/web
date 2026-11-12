@@ -13,7 +13,7 @@ Callback này được gọi khi một người chơi phản hồi một hộp t
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | playerid    | ID của người chơi đã phản hồi hộp thoại.                                                                                       |
 | dialogid    | ID của hộp thoại mà người chơi đã phản hồi, được gán trong ShowPlayerDialog.                                                   |
-| response    | **1** cho nút trái và **0** cho nút phải (nếu chỉ có một nút được hiển thị, luôn luôn là **1**)                                    |
+| response    | **1** cho nút trái và **0** cho nút phải (nếu chỉ có một nút được hiển thị, luôn luôn là 1).                                   |
 | listitem    | ID của mục trong danh sách được người chơi chọn (bắt đầu từ 0) (chỉ nếu sử dụng hộp thoại kiểu danh sách, nếu không sẽ là -1). |
 | inputtext[] | Văn bản được nhập vào ô nhập bởi người chơi hoặc văn bản của mục trong danh sách đã chọn.                                      |
 

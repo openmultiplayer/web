@@ -502,7 +502,7 @@ printf("%d", myVar);
 
 全局变量(即函数外声明的变量)通过`new`声明后，可在声明位置之后的所有位置使用：
 
-文件 File1.pwn：
+**文件 File1.pwn：**
 
 ```c
 MyFunc1()
@@ -525,7 +525,7 @@ MyFunc2()
 #include "file2.pwn"
 ```
 
-文件 file2.pwn：
+**文件 file2.pwn：**
 
 ```c
 MyFunc3()
@@ -600,7 +600,7 @@ main()
 
 公共函数在 amx 文件中存储其文本名称，而普通函数仅存储跳转地址，这为反编译增加了难度。这种机制使得可以通过名称从脚本外部调用函数，同时也支持在脚本内部通过名称调用函数(需通过跨脚本上下文切换)。原生函数(native)调用机制与公共函数形成互补——前者从脚本内部调用外部函数，后者则反之。结合两者可实现如 SetTimer、SetTimerEx、CallRemoteFunction 和 CallLocalFunction 等通过名称(而非地址)调用的函数。
 
-通过名称调用函数的示例：
+**通过名称调用函数的示例：**
 
 ```c
 forward MyPublicFunc();
@@ -699,7 +699,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn
+**file2.pwn**
 
 ```c
 MyFunc3()
@@ -711,7 +711,7 @@ MyFunc3()
 
 将其修改为静态将得到：
 
-file1.pwn
+**file1.pwn**
 
 ```c
 MyFunc1()
@@ -734,7 +734,7 @@ MyFunc2()
 #include "file2.pwn"
 ```
 
-文件 file2.pwn
+**文件 file2.pwn**
 
 ```c
 MyFunc3()

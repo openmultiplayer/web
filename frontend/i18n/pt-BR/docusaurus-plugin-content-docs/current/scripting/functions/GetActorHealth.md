@@ -23,7 +23,7 @@ Obtenha a saúde de um ator.
 
 **false** - falha (ou seja, o ator não foi criado).
 
-NOTE: A saúde do ator é armazenada na variável especificada, não no valor de retorno.
+**NOTE:** A saúde do ator é armazenada na variável especificada, não no valor de retorno.
 
 ## Exemplos
 

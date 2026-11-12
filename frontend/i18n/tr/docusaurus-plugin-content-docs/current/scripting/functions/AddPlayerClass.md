@@ -45,7 +45,7 @@ public OnGameModeInit()
 
 :::note
 
-Maksimum class numarası **319** olabileceği için (class numaralı sıfırdan başlar, yani 320 adet class olabilir) sunucu içerisinde bulunan class sayısı maksimuma ulaştığı zaman en son eklenen class, bilgilerini 319 numaralı class'a aktaracaktır.
+Maksimum class numarası 319 olabileceği için (class numaralı sıfırdan başlar, yani 320 adet class olabilir) sunucu içerisinde bulunan class sayısı maksimuma ulaştığı zaman en son eklenen class, bilgilerini 319 numaralı class'a aktaracaktır.
 
 :::
 

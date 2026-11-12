@@ -196,7 +196,7 @@ Dit zijn de commands die je als admin kunt gebruiken:
 | `/rcon weburl [server url]`       | Wijzigt de server-URL in de masterlists/SA-MP client.                                                              |
 | `/rcon unloadfs`                  | Unloadt het opgegeven filterscript (_voorbeeld: `/rcon unloadfs adminfs`_).                                        |
 | `/rcon reloadfs`                  | Reloadt het opgegeven filterscript (_voorbeeld: `/rcon reloadfs adminfs`_).                                        |
-| `/rcon rcon\_password [PASSWORD]` | Wijzigt het RCON-wachtwoord.                                                                                       |
+| `/rcon rcon_password [PASSWORD]`  | Wijzigt het RCON-wachtwoord.                                                                                       |
 | `/rcon password [password]`       | Zet/reset het serverpassword.                                                                                      |
 | `/rcon messageslimit [count]`     | Wijzigt het max. aantal messages per seconde per client (standaard 500).                                           |
 | `/rcon ackslimit [count]`         | Wijzigt de acks-limit (standaard 3000).                                                                            |

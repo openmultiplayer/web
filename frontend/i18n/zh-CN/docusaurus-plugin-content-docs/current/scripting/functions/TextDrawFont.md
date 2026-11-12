@@ -14,10 +14,10 @@ tags: ["文本绘图"]
 | Text:textid         | 需要修改的文本绘图 ID                                                                                                                                                                       |
 | TEXT_DRAW_FONT:font | SA-MP 提供四种字体样式选择机制：1. **字体值 4** 表示使用 txd 精灵图字体 2. **字体值 5** 用于 3D 模型预览显示功能 3. **字体值 >5** 时文本内容将不可见 4. **字体值 >16** 会导致客户端程序崩溃 |
 
-可用样式预览：
+**可用样式预览：**
 ![可用样式](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)
 
-字体效果展示：
+**字体效果展示：**
 ![字体效果](https://assets.open.mp/assets/images/textdraws/Textdraw_Fonts.png)
 
 ## 返回值

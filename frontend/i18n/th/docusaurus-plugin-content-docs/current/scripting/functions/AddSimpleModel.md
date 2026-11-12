@@ -44,7 +44,7 @@ public OnGameModeInit()
 :::note
 
 - **useartwork** must be enabled first in server settings in order for this to work
-- When virtualworld is set, the models will be downloaded once the player enters the specific world
+- When `virtualworld` is set, the models will be downloaded once the player enters the specific world
 
 :::
 

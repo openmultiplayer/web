@@ -15,16 +15,16 @@ Apply an animation to a player.
 | const animationLibrary[] | The [animation library](../resources/animations) from which to apply an animation.                                                                                                                                                                                                                            |
 | const animationName[]    | The name of the animation to apply, within the specified library.                                                                                                                                                                                                                                             |
 | Float:delta              | The speed to play the animation (use 4.1).                                                                                                                                                                                                                                                                    |
-| bool:loop                | If set to '**true**', the animation will loop. If set to '**false**', the animation will play once.                                                                                                                                                                                                                   |
-| bool:lockX               | If set to '**false**', the player is returned to their old X coordinate once the animation is complete (for animations that move the player such as walking). '**true**' will not return them to their old position.                                                                                                  |
+| bool:loop                | If set to **true**, the animation will loop. If set to **false**, the animation will play once.                                                                                                                                                                                                               |
+| bool:lockX               | If set to **false**, the player is returned to their old X coordinate once the animation is complete (for animations that move the player such as walking). **true** will not return them to their old position.                                                                                              |
 | bool:lockY               | Same as above but for the Y axis. Should be kept the same as the previous parameter.                                                                                                                                                                                                                          |
-| bool:freeze              | Setting this to '**true**' will freeze the player at the end of the animation. '**false**' will not.                                                                                                                                                                                                                  |
+| bool:freeze              | Setting this to **true** will freeze the player at the end of the animation. **false** will not.                                                                                                                                                                                                              |
 | time                     | Timer in milliseconds. For a never-ending loop it should be **0**.                                                                                                                                                                                                                                            |
 | FORCE_SYNC:forceSync     | Set to 1 to make server sync the animation with all other players in streaming radius (optional). 2 works same as 1, but will ONLY apply the animation to streamed-in players, but NOT the actual player being animated (useful for npc animations and persistent animations when players are being streamed) |
 
 ## Returns
 
-This function always returns true, even if the player specified does not exist, or any of the parameters are invalid (e.g. invalid library).
+This function always returns **true**, even if the player specified does not exist, or any of the parameters are invalid (e.g. invalid library).
 
 ## Examples
 
@@ -49,7 +49,7 @@ ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, true, true, true, true, 1, SY
 
 :::note
 
-The 'forceSync' optional parameter, which defaults to 0 (SYNC_NONE), in most cases is not needed since players sync animations themselves. The 'forcesync' parameter can force all players who can see 'playerid' to play the animation regardless of whether the player is performing that animation. This is useful in circumstances where the player can't sync the animation themselves. For example, they may be paused.
+The `forceSync` optional parameter, which defaults to 0 (SYNC_NONE), in most cases is not needed since players sync animations themselves. The `forceSync` parameter can force all players who can see `playerid` to play the animation regardless of whether the player is performing that animation. This is useful in circumstances where the player can't sync the animation themselves. For example, they may be paused.
 
 :::
 

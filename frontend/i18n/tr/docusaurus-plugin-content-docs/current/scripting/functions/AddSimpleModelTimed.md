@@ -45,7 +45,7 @@ public OnGameModeInit()
 
 :::note
 
-Sanal dünya ayarlandığında bunun çalışması için öncelikle sunucu ayarlarında **userartwork** etkinleştirilmesi gerekir; oynatıcı belirli bir dünyaya girdiğinde modeller indirilir.
+Sanal dünya ayarlandığında bunun çalışması için öncelikle sunucu ayarlarında **useartwork** etkinleştirilmesi gerekir; oynatıcı belirli bir dünyaya girdiğinde modeller indirilir.
 
 :::
 

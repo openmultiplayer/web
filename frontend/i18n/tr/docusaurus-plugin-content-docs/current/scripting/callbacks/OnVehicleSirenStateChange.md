@@ -15,7 +15,7 @@ Bu geri çağırma bir aracın siren durumu değiştiğinde çağrılır.
 | --------- | ------------------------------------------------ |
 | playerid  | Siren durumunu değiştiren oyuncu ID'si (sürücü). |
 | vehicleid | Siren durumu değiştirilen araç ID'si.            |
-| newstate  | **0** ise siren kapalı, **1** ise açık durumda.          |
+| newstate  | 0 ise siren kapalı, 1 ise açık durumda.          |
 
 ## Çalışınca Vereceği Sonuçlar
 

@@ -198,7 +198,7 @@ unbanip 13.37.13.37
 | `/rcon weburl [服务器 URL]`       | 更改主列表/SA-MP 客户端中的服务器 URL                                                                  |
 | `/rcon unloadfs`                  | 卸载指定滤镜脚本（_示例：/rcon unloadfs adminfs_）。                                                   |
 | `/rcon reloadfs`                  | 重新加载指定滤镜脚本（_示例：/rcon reloadfs adminfs_）。                                               |
-| `/rcon rcon\_password [whatever]` | 更改 RCON 密码                                                                                         |
+| `/rcon rcon_password [whatever]`  | 更改 RCON 密码                                                                                         |
 | `/rcon password [whatever]`       | 设置/重置服务器密码                                                                                    |
 | `/rcon messageslimit [数量]`      | 更改客户端每秒发送到服务器的消息数量。（默认 500）                                                     |
 | `/rcon ackslimit [数量]`          | 更改 acks 限制（默认 3000）                                                                            |

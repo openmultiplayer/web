@@ -15,9 +15,9 @@ Esta callback é chamda quando um jogador conecta no servidor.
 
 ## Retorno
 
-**1** - Irá previnir que outro filterscript receba esta callback.
+**0** - Irá previnir que outro filterscript receba esta callback.
 
-**0** - Indica que esta callback será passada para o próximo filterscript.
+**1** - Indica que esta callback será passada para o próximo filterscript.
 
 Sempre é chamada primeiro em filterscripts.
 

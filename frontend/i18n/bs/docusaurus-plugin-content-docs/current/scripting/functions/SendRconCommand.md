@@ -21,7 +21,7 @@ Ova funkcija uvijek returna (vraća) **1**.
 
 :::note
 
-- Ne podržava **login**, zbog nedostatka 'playerid' parametra.
+- Ne podržava **login**, zbog nedostatka `playerid` parametra.
 - 'password 0' će ukloniti lozinku servera ako je postavljena.
 - Ova funkcija će rezultirati da se OnRconCommand pozove.
 

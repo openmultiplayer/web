@@ -23,7 +23,7 @@ tags: []
 
 当死亡原因无效时，会显示默认骷髅交叉骨图标
 
-killerid 为无效值（`INVALID_PLAYER_ID`）是有效参数
+killer 为无效值（`INVALID_PLAYER_ID`）是有效参数
 
 ## 示例代码
 

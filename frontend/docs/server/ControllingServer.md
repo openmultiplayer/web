@@ -198,7 +198,7 @@ These are the functions that you as admin can use:
 | `/rcon weburl [server url]`       | Changes the server URL in the masterlists/SA-MP client                                                                                        |
 | `/rcon unloadfs`                  | Unload the given filterscript (_example: /rcon unloadfs adminfs_).                                                                            |
 | `/rcon reloadfs`                  | Reloads the given filterscript (_example: /rcon reloadfs adminfs_).                                                                           |
-| `/rcon rcon\_password [PASSWORD]` | Change the rcon's password                                                                                                                    |
+| `/rcon rcon_password [PASSWORD]`  | Change the rcon's password                                                                                                                    |
 | `/rcon password [password]`       | Sets/resets the server password                                                                                                               |
 | `/rcon messageslimit [count]`     | Change the number of messages per second a client sends to the server. (default 500)                                                          |
 | `/rcon ackslimit [count]`         | Change the limit of acks (default 3000)                                                                                                       |

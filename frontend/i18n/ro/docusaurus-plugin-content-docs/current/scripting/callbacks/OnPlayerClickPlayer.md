@@ -12,7 +12,7 @@ Apelat atunci când un jucător dă dublu clic pe un jucător de pe scoreboard.
 | Nume            | Descriere                                                       |
 | --------------- | --------------------------------------------------------------- |
 | playerid        | ID-ul jucătorului care a apăsat pe un jucător de pe scoreboard. |
-| clickedplayerid | ID-ul jucătorului pe care a apăsat .                            |
+| clickedplayerid | ID-ul jucătorului pe care a apăsat.                             |
 | source          | [source](../resources/clicksources) clicului jucătorului.       |
 
 ## Returnări

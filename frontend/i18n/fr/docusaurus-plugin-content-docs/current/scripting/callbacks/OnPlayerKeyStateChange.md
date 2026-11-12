@@ -47,7 +47,7 @@ Les touches directionnelles ne fonctionnent pas avec OnPlayerKeyStateChange. Ell
 
 Cette callback est appelée indifféremment selon que le joueur presse une touche ou la relâche _(v. [Keys](../resources/keys))_.
 
-Les touches qui sont prises en charge ne sont pas les touches réelles du clavier, mais des touches de fonction attribuées à San Andreas. Cela signifie que, par exemple, vous ne pouvez pas détecter quand quelqu'un appuie sur la barre d'espace, mais ils peuvent détecter le moment où ils pressent leur touche **sprint** (qui peut, ou pas, être affectée à la barre d'espacement).
+Les touches qui sont prises en charge ne sont pas les touches réelles du clavier, mais des touches de fonction attribuées à San Andreas. Cela signifie que, par exemple, vous ne pouvez pas détecter quand quelqu'un appuie sur la **barre d'espace**, mais ils peuvent détecter le moment où ils pressent leur touche **sprint** (qui peut, ou pas, être affectée à la barre d'espacement).
 
 ### Paramètres
 

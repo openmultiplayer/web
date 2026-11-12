@@ -15,9 +15,9 @@ Ovaj callback je pozvan kada se igrač spawnuje (stvori). (npr. nakon korištenj
 
 ## Returns
 
-**1** - Spriječiti će da druge filterskripte primaju ovaj callback.
+**0** - Spriječiti će da druge filterskripte primaju ovaj callback.
 
-**0** - Govori da će ovaj callback biti proslijeđen do naredne filterskripte.
+**1** - Govori da će ovaj callback biti proslijeđen do naredne filterskripte.
 
 Uvijek je pozvan prvo u filterskripti.
 

@@ -25,7 +25,7 @@ Nagdaragdag ng 'static' na sasakyan (mga modelo ay paunang na-load para sa mga m
 
 Ang ID ng sasakyan ng sasakyang ginawa (1 - MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) kung hindi ginawa ang sasakyan (naabot na ang limitasyon ng sasakyan o naipasa ang di-wastong ID ng modelo ng sasakyan).
+**INVALID_VEHICLE_ID (65535)** kung hindi ginawa ang sasakyan (naabot na ang limitasyon ng sasakyan o naipasa ang di-wastong ID ng modelo ng sasakyan).
 
 ## Examples
 

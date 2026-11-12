@@ -12,7 +12,7 @@ Isto é de um tópico de Tutorial nos Fóruns SA-MP. O autor é **Kyosaur**.
 
 Binário é um sistema numeral que usa dois símbolos únicos para representar números. Enquanto o sistema decimal mais comum usa dez numerais (**base 10**), o binário usa apenas 0 e 1. Isso pode parecer inútil no dia a dia, mas o binário é essencial quando se trata de computadores. Os computadores em seu nível mais baixo realizam todos os seus cálculos manipulando o fluxo de eletricidade para indicar estados ligado e desligado. Isto é exatamente o que o binário é, apenas um monte de interruptores ligados e desligados. Este é um conceito meio alienígena para a maioria das pessoas, então vamos dar uma olhada nos sistemas decimal e binário lado a lado.
 
-Decimal (base 10)
+**Decimal (base 10)**
 
 ```c
 0
@@ -31,7 +31,7 @@ Decimal (base 10)
 13
 ```
 
-Binário (Base 2)
+**Binário (Base 2)**
 
 ```c
 0 //0
@@ -54,7 +54,7 @@ Olhando ambos os sistemas lado a lado, você notará que eles se comportam exata
 
 **NOTA:** '^' é potência nestes próximos exemplos, não exclusivo bit a bit (que cobriremos mais tarde.)
 
-Decimal (base 10)
+**Decimal (base 10)**
 
 ```c
 13
@@ -72,7 +72,7 @@ Decimal (base 10)
 13
 ```
 
-Binário (base 2)
+**Binário (base 2)**
 
 ```c
 1101

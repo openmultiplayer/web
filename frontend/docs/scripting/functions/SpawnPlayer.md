@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Known Bug(s):
+**Known Bug(s):**
 
 - Kills the player if they are in a vehicle and then they spawn with a bottle in their hand. (Fixed in open.mp)
 

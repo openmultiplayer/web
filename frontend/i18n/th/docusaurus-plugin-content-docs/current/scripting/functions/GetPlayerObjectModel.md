@@ -22,7 +22,7 @@ Retrieve the model ID of a player-object.
 
 ## ส่งคืน
 
-The model ID of the player object. If the player or object don't exist, it will return -1 or 0 if the player or object does not exist.
+The model ID of the player object. If the player or object don't exist, it will return **-1** or **0** if the player or object does not exist.
 
 ## ตัวอย่าง
 

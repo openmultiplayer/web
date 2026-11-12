@@ -51,14 +51,14 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 - Lý do sẽ trả về 37 (vũ khí phun lửa) từ bất kỳ nguồn lửa nào (ví dụ: molotov, 18).
 - Lý do sẽ trả về 51 từ bất kỳ vũ khí nào tạo ra vụ nổ (ví dụ: RPG, grenade).
-- Bạn không cần kiểm tra xem killerid có hợp lệ không trước khi sử dụng nó trong [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID là một tham số ID hợp lệ trong hàm đó.
-- **playerid** là người duy nhất có thể gọi callback này (hữu ích cho chống giả chết).
+- Bạn không cần kiểm tra xem `killerid` có hợp lệ không trước khi sử dụng nó trong [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID là một tham số ID hợp lệ trong hàm đó.
+- `playerid` là người duy nhất có thể gọi callback này (hữu ích cho chống giả chết).
 
 :::
 
 :::warning
 
-Bạn PHẢI kiểm tra xem 'killerid' có hợp lệ (không phải INVALID_PLAYER_ID) trước khi sử dụng nó trong một mảng (hoặc bất kỳ đâu), vì điều này sẽ gây ra sự cố với script OnPlayerDeath (không phải toàn bộ script). INVALID_PLAYER_ID được định nghĩa là 65535, và nếu một mảng chỉ có 'MAX_PLAYERS' phần tử, ví dụ 500, bạn đang cố gắng truy cập một chỉ số vượt quá 499, điều này sẽ ra ngoài phạm vi.
+Bạn PHẢI kiểm tra xem `killerid` có hợp lệ (không phải INVALID_PLAYER_ID) trước khi sử dụng nó trong một mảng (hoặc bất kỳ đâu), vì điều này sẽ gây ra sự cố với script OnPlayerDeath (không phải toàn bộ script). INVALID_PLAYER_ID được định nghĩa là 65535, và nếu một mảng chỉ có 'MAX_PLAYERS' phần tử, ví dụ 500, bạn đang cố gắng truy cập một chỉ số vượt quá 499, điều này sẽ ra ngoài phạm vi.
 
 :::
 

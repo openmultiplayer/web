@@ -13,7 +13,7 @@ Ova funkcija je dodana u SA-MP 0.3.7 R1 i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Dobiva memorijski upravitelj za vezu SQLite databaze koja je dodijeljena sa s [db_query](db_query).
+Dobiva **memorijski upravitelj** za vezu SQLite databaze koja je dodijeljena sa s [db_query](db_query).
 
 | Ime   | Deskripcija                                           |
 | ----- | ----------------------------------------------------- |

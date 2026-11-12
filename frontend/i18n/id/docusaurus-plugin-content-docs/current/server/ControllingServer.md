@@ -197,7 +197,7 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon weburl [server url]`       | Mengganti URL server di masterlists/klien SA-MP.                                                                                             |
 | `/rcon unloadfs`                  | Menghentikan filterscript (_contoh: /rcon unloadfs adminfs_).                                                                                |
 | `/rcon reloadfs`                  | Memuat ulang filterscript (_contoh: /rcon reloadfs adminfs_).                                                                                |
-| `/rcon rcon\_password [PASSWORD]` | Mengganti password RCON                                                                                                                      |
+| `/rcon rcon_password [PASSWORD]`  | Mengganti password RCON                                                                                                                      |
 | `/rcon password [password]`       | Mengatur/menghapus kata sandi server                                                                                                         |
 | `/rcon messageslimit [count]`     | Mengubah jumlah pesan yang dikirim klien ke server per detik. (nilai awal 500)                                                               |
 | `/rcon ackslimit [count]`         | Mengubah batasan acks (nilai awal 3000)                                                                                                      |

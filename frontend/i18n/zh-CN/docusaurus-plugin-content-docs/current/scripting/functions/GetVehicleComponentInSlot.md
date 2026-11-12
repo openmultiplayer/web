@@ -51,10 +51,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 **已知缺陷**：
 
-- 对 CARMODTYPE_STEREO 槽位无效
-- 前防撞杠和前保险杠组件都存储在 CARMODTYPE_FRONT_BUMPER 槽位，若同时安装仅返回最后安装的组件
-- 后防撞杠和后保险杠组件都存储在 CARMODTYPE_REAR_BUMPER 槽位，若同时安装仅返回最后安装的组件
-- 左右侧裙组件都存储在 CARMODTYPE_SIDESKIRT 槽位，若同时安装仅返回最后安装的组件
+- 对 `CARMODTYPE_STEREO` 槽位无效
+- 前防撞杠和前保险杠组件都存储在 `CARMODTYPE_FRONT_BUMPER` 槽位，若同时安装仅返回最后安装的组件
+- 后防撞杠和后保险杠组件都存储在 `CARMODTYPE_REAR_BUMPER` 槽位，若同时安装仅返回最后安装的组件
+- 左右侧裙组件都存储在 `CARMODTYPE_SIDESKIRT` 槽位，若同时安装仅返回最后安装的组件
 
 :::
 

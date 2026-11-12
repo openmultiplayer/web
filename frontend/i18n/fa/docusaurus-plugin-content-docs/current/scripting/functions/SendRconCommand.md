@@ -39,7 +39,7 @@ SendRconCommand("game.map %s", szMapName);
 
 :::note
 
-- از **login** پشتیبانی نمی‌کنه، به دلیل نبود پارامتر 'playerid'.
+- از **login** پشتیبانی نمی‌کنه، به دلیل نبود پارامتر `playerid`.
 - 'password 0' پسورد سرور رو حذف می‌کنه اگر یکی تنظیم شده باشه.
 - این تابع باعث می‌شه [OnRconCommand](../callbacks/OnRconCommand) صدا زده بشه.
 

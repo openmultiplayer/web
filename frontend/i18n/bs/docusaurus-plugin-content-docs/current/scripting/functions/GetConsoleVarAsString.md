@@ -34,7 +34,7 @@ public OnGameModeInit()
 
 :::note
 
-Kada su filterskripte ili plugini specificirani kao _varname_, ova funkcija returna samo ime prve specificirane filterskripte ili plugina.
+Kada su _filterscripts_ ili _plugins_ specificirani kao varname, ova funkcija returna samo ime prve specificirane filterskripte ili plugina.
 
 :::
 

@@ -15,10 +15,10 @@ Ova funkcija, kao u 0.3d, je zastarjela. Provjerite [OnPlayerClickMap](../callba
 
 O(ne)mogući mogućnost teleportovanja igrača kada koristi desni klik na mapu.
 
-| Ime      | Deskripcija                                    |
-| -------- | ---------------------------------------------- |
-| playerid | ID igrača kojem je teleport dozvoljen.         |
-| allow    | **1**-omogući/dozvoli, **0**-onemogući/zabrani |
+| Ime      | Deskripcija                                         |
+| -------- | --------------------------------------------------- |
+| playerid | ID igrača kojem je teleport dozvoljen.              |
+| allow    | **1** - omogući/dozvoli, **0** - onemogući/zabrani. |
 
 ## Returns
 

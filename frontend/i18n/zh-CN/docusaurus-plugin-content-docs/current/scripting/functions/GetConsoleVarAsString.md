@@ -34,13 +34,13 @@ public OnGameModeInit()
 
 :::note
 
-当*变量名*为"filterscripts"或"plugins"时，此函数仅返回第一个滤镜脚本/插件的名称。
+当*变量名*为 _filterscripts_ 或 _plugins_ 时，此函数仅返回第一个滤镜脚本/插件的名称。
 
 :::
 
 :::tip
 
-在服务器控制台输入 `varlist` 可查看所有可用控制台变量及其类型。
+在服务器控制台输入 'varlist' 可查看所有可用控制台变量及其类型。
 
 :::
 

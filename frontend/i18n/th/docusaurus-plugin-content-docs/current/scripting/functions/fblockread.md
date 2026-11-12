@@ -9,11 +9,11 @@ tags: []
 
 This function allows you to read data from a file, without encoding and line terminators
 
-| Name                 | Description                           |
-| -------------------- | ------------------------------------- |
-| handle               | File handle to use, opened by fopen.  |
-| buffer               | The buffer to save the read data in.  |
-| size = sizeof buffer | The number of cells to read.          |
+| Name                 | Description                          |
+| -------------------- | ------------------------------------ |
+| handle               | File handle to use, opened by fopen. |
+| buffer               | The buffer to save the read data in. |
+| size = sizeof buffer | The number of cells to read.         |
 
 ## ส่งคืน
 

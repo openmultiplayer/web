@@ -14,10 +14,10 @@ Mijenja font teksta.
 | text | Textdraw za izmijeniti.                                                                                                                                                                                                                                                 |
 | font | Postoje četiri stila fonrova koji su prikazani dole. Font vrijednosti **4** precizira da je to txd sprite; **5** precizira da je ovo textdraw koji može prikazati pregled modela. Vrijednost fonta veća od 5 se neće prikazati, a sve više od 16 će crashovati klijent. |
 
-Dostupni stilovi:
+**Dostupni stilovi:**
 ![Available Styles](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)
 
-Dostupni fontovi:
+**Dostupni fontovi:**
 ![Available Fonts](https://assets.open.mp/assets/images/textdraws/Textdraw_Fonts.png)
 
 ## Returns

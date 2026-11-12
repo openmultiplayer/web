@@ -21,7 +21,7 @@ Włącza animację aktorowi.
 | lockx      | Jeżeli jest ustawione na **0**, aktor wróci do swojego starego koordynatu X po skończeniu animacji (w przypadku animacji, które poruszają aktorem, np. chodzenie). **1** nie przywróci go do starej pozycji. |
 | locky      | Tak samo jak powyżej, tyle że dla osi Y. Wartość powinna być taka sama, jak przy poprzednim parametrze.                                                                                                      |
 | freeze     | Ustawienie tego na **1** zamrozi aktora po ukończeniu animacji. **0** tego nie zrobi.                                                                                                                        |
-| time       | Timer w milisekundach. Dla nieskończonej pętli powinien być ustawiony na 0.                                                                                                                                  |
+| time       | Timer w milisekundach. Dla nieskończonej pętli powinien być ustawiony na **0**.                                                                                                                              |
 
 ## Zwracane wartości
 

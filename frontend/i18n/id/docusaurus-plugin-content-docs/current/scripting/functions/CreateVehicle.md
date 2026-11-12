@@ -25,7 +25,7 @@ Membuat kendaraan di dunia. Dapat digunakan sebagai pengganti AddStaticVehicleEx
 
 ID kendaraan dari kendaraan yang dibuat (1 hingga MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) jika kendaraan tidak dibuat (batas kendaraan terlewati atau ID model kendaraan tidak valid).
+**INVALID_VEHICLE_ID (65535)** jika kendaraan tidak dibuat (batas kendaraan terlewati atau ID model kendaraan tidak valid).
 
 **0** jika kendaraan tidak dibuat (IDs 538 or 537 berhasil, yaitu kereta api).
 

@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Deskripcija
 
-Kreira textdraw. Textdraw-ovi su, kako samo ime implicira, tekst (uglavnom - ovdje također mogu biti boxovi, sprite-ovi i pregledi modela (skinovi/vozila/oružja/objekti) koji je iscrtan na igračevom zaslonu. Pogledaj ovu stranicu za opsežne informacije o textdraw-ovima.
+Kreira textdraw. Textdraw-ovi su, kako samo ime implicira, tekst (uglavnom - ovdje također mogu biti boxovi, sprite-ovi i pregledi modela (skinovi/vozila/oružja/objekti) koji je iscrtan na igračevom zaslonu. Pogledaj **ovu stranicu** za opsežne informacije o textdraw-ovima.
 
 | Ime     | Deskripcija                                         |
 | ------- | --------------------------------------------------- |

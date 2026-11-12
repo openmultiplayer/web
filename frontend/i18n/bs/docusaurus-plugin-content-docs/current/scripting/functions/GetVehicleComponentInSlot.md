@@ -40,7 +40,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-**Poznati Bug(ovi):** Ne radi za CARMODTYPE_STEREO. Dijelove prednjeg branika spremljeni su u slot CARMODTYPE_FRONT_BUMPER. Ako su u vozilu instalirana oba, ova funkcija vraća samo ono zadnje instalirano. I stražnji branici spremljeni su u slot CARMODTYPE_REAR_BUMPER. Ako su u vozilu instalirana oba, ova funkcija vraća samo ono zadnje instalirano. Lijevi i desni "skirt" spremljeni su u slot CARMODTYPE_SIDESKIRT. Ako su u vozilu instalirana oba, ova funkcija vraća samo ono zadnje instalirano.
+**Poznati Bug(ovi):**
+
+- Ne radi za `CARMODTYPE_STEREO`.
+- Dijelove prednjeg branika spremljeni su u slot `CARMODTYPE_FRONT_BUMPER`. Ako su u vozilu instalirana oba, ova funkcija vraća samo ono zadnje instalirano.
+- I stražnji branici spremljeni su u slot `CARMODTYPE_REAR_BUMPER`. Ako su u vozilu instalirana oba, ova funkcija vraća samo ono zadnje instalirano.
+- Lijevi i desni "skirt" spremljeni su u slot `CARMODTYPE_SIDESKIRT`. Ako su u vozilu instalirana oba, ova funkcija vraća samo ono zadnje instalirano.
 
 :::
 

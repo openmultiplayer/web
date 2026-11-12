@@ -15,7 +15,7 @@ This function is used to open a connection to a SQLite database, which is inside
 
 ## ส่งคืน
 
-Returns index (**starting at 1**) of the database connection .
+Returns index (**starting at 1**) of the database connection.
 
 ## ตัวอย่าง
 

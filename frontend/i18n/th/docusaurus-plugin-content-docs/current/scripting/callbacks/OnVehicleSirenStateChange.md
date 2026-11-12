@@ -19,7 +19,7 @@ This callback is called when a vehicle's siren is toggled.
 | --------- | --------------------------------------------------------- |
 | playerid  | The ID of the player that toggled the siren (driver).     |
 | vehicleid | The ID of the vehicle of which the siren was toggled for. |
-| newstate  | **0** if siren was turned off, **1** if siren was turned on.      |
+| newstate  | 0 if siren was turned off, 1 if siren was turned on.      |
 
 ## ส่งคืน
 

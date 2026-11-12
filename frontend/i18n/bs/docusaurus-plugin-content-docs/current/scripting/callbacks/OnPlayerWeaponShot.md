@@ -61,8 +61,8 @@ Ovaj callback je pozvan samo kada je is only called when kompenzacija zakašnjen
 **Poznati Bag(ovi):**
 
 - Nije pozvan kada ispalite hitac u vozilo kao vozač ili ako gledate iza sa omogućenim aim-anjem (pucanje u zrak).
-- Pozvan je kada `BULLET_HIT_TYPE_VEHICLE` sa korektnim hitid-em (hit iz igračevog vozila) ako pucate igrača koji je u vozilu. Neće biti pozvan kao `BULLET_HIT_TYPE_PLAYER` nikako.
-- **Djelomično popravljeno u SA-MP 0.3.7**: Ako zlonamjerni korisnik pošalje lažne podatke o fake oružju, drugi klijenti igrača mogu se zalediti ili crashovati. Da biste se izborili protiv toga, provjerite može li prijavljeni weaponid stvarno ispaliti metke.
+- Pozvan je kada `BULLET_HIT_TYPE_VEHICLE` sa korektnim `hitid`-em (hit iz igračevog vozila) ako pucate igrača koji je u vozilu. Neće biti pozvan kao `BULLET_HIT_TYPE_PLAYER` nikako.
+- **Djelomično popravljeno u SA-MP 0.3.7**: Ako zlonamjerni korisnik pošalje lažne podatke o fake oružju, drugi klijenti igrača mogu se zalediti ili crashovati. Da biste se izborili protiv toga, provjerite može li prijavljeni `weaponid` stvarno ispaliti metke.
 
 :::
 

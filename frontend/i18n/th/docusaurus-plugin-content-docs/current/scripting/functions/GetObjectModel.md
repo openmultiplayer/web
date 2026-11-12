@@ -21,7 +21,7 @@ Get the model ID of an object (CreateObject).
 
 ## ส่งคืน
 
-The model ID of the object. -1 if object does not exist.
+The model ID of the object. **-1** if object does not exist.
 
 ## ตัวอย่าง
 

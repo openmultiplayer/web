@@ -22,7 +22,7 @@ Dobij health actora
 
 **0** - neuspješno (tj. actor nije kreiran).
 
-NAPOMENA: Health actora je pohranjen u navedenoj varijabli, a ne u returnanoj (povratnoj) vrijednosti.
+**NAPOMENA:** Health actora je pohranjen u navedenoj varijabli, a ne u returnanoj (povratnoj) vrijednosti.
 
 ## Primjeri
 

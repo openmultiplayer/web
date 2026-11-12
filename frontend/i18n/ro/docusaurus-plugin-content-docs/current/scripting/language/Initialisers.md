@@ -446,7 +446,7 @@ print(const string[])
 }
 ```
 
-Acum, de fiecare dată când print este utilizat într-un script, funcția dvs. va fi apelată în locul originalului și puteți face ceea ce doriți. În acest caz este imprimat mai întâi un alt mesaj, apoi mesajul original.
+Acum, de fiecare dată când `print` este utilizat într-un script, funcția dvs. va fi apelată în locul originalului și puteți face ceea ce doriți. În acest caz este imprimat mai întâi un alt mesaj, apoi mesajul original.
 
 ## `new`
 
@@ -495,7 +495,7 @@ Exemplul de mai sus arată, de asemenea, de ce este atât de importantă indenta
 
 Dacă o variabilă globală (adică una declarată în afara unei funcții) este declarată nouă, ea poate fi utilizată peste tot după declarație:
 
-File1.pwn:
+**File1.pwn:**
 
 ```c
 MyFunc1()
@@ -518,7 +518,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn:
+**file2.pwn:**
 
 ```c
 MyFunc3()
@@ -591,7 +591,7 @@ public este utilizat pentru a face o funcție vizibilă mașinii virtuale, adic�
 
 O funcție publică are numele său text stocat în fișierul amx, spre deosebire de funcțiile normale care își au adresa stocată doar pentru salturi, ceea ce reprezintă un alt dezavantaj al decompilării. Aceasta este astfel încât să puteți apela funcția după nume din afara scriptului, vă permite, de asemenea, să apelați funcțiile după nume din interiorul scriptului, ieșind și reintroducându-l. Un apel de funcție nativă este aproape opusul unui apel de funcție publică, apelează o funcție din afara scriptului din interiorul scriptului, spre deosebire de apelarea unei funcții din interiorul scriptului din afara scriptului. Dacă combinați cele două, veți obține funcții precum SetTimer, SetTimerEx, CallRemoteFunction și CallLocalFunction care apelează funcții după nume, nu adresă.
 
-Apelarea unei funcții după nume:
+**Apelarea unei funcții după nume:**
 
 ```c
 forward MyPublicFunc();
@@ -667,7 +667,7 @@ Acest lucru este, evident, mult mai rapid decât utilizarea CallLocalFunction sa
 
 O variabilă statică este ca o nouă variabilă globală, dar cu un domeniu de aplicare mai limitat. Când statica este utilizată global, variabilele create rezultate sunt limitate doar la secțiunea în care au fost create (a se vedea # secțiune). Așadar, luând exemplul „nou” anterior:
 
-file1.pwn
+**file1.pwn**
 
 ```c
 MyFunc1()
@@ -690,7 +690,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn
+**file2.pwn**
 
 ```c
 MyFunc3()
@@ -702,7 +702,7 @@ MyFunc3()
 
 Și modificarea acestuia pentru statică ar da:
 
-file1.pwn
+**file1.pwn**
 
 ```c
 MyFunc1()
@@ -725,7 +725,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn
+**file2.pwn**
 
 ```c
 MyFunc3()

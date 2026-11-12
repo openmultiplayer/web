@@ -12,7 +12,7 @@ Este callback se llama cuando un jugador responde a un cuadro de diálogo mostra
 | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
 | playerid    | El ID del jugador que respondió el diálogo.                                                                            |
 | dialogid    | El ID del diálogo al que respondió el jugador, asignado en ShowPlayerDialog.                                           |
-| response    | **1** para botón izquierdo y **0** para botón derecho (si sólo hay un botón, siempre **1**).                               |
+| response    | **1** para botón izquierdo y **0** para botón derecho (si sólo hay un botón, siempre 1).                               |
 | listitem    | El ID del elemento de lista que seleccionó el jugador (empieza de 0) (si no se está usando DIALOG_STYLE_LIST, será -1) |
 | inputtext[] | El texto ingresado en la caja de entrada por el jugador o el texto del elemento de lista seleccionado.                 |
 

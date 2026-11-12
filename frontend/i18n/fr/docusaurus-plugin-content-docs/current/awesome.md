@@ -149,5 +149,5 @@ description: Liste exhaustive d'outils, de librairies et de plugins SA:MP néces
 - **[IsPlayerUsingAndroid](https://github.com/Fairuz-Afdhal/IsPlayerUsingAndroid)** - Vérifie si un joueur est un utilisateur Android.
 - **[Nickk's TextDraw Editor](https://github.com/Nickk888SAMP/TextDraw-Editor)** - Un éditeur TextDraw doté de fonctionnalités riches.
 - **[Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator)** - Éditeur de carte avancé avec de nombreuses fonctionnalités.
-- **[Éditeur de carte de Fusez](https://github.com/fusez/Map-Editor-V3)** - Un éditeur de carte en jeu pour SA:MP.
+- **[Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3)** - Un éditeur de carte en jeu pour SA:MP.
 - **[Texture Studio](https://github.com/Pottus/Texture-Studio)** - Il s'agit d'un éditeur de cartes en jeu qui vous permettra de texturer jusqu'à l'indice de matériau 15 (16 matériaux) ainsi que de définir couleur pour cet index de matériau sur les objets.

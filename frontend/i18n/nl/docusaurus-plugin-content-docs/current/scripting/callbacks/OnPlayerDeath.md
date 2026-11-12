@@ -49,16 +49,16 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-- De reason zal 37 (flame thrower) teruggeven van elke vuurbron (bijv. molotov, 18)
-- De reason zal 51 teruggeven van elk wapen dat een explosie veroorzaakt (bijv. RPG, granaat)
-- Je hoeft niet te controleren of killerid geldig is voordat je het gebruikt in [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID is een geldige killerid parameter in die functie.
-- **playerid** is de enige die de callback kan aanroepen. (goed om te weten voor anti fake death)
+- De `reason` zal 37 (flame thrower) teruggeven van elke vuurbron (bijv. molotov, 18)
+- De `reason` zal 51 teruggeven van elk wapen dat een explosie veroorzaakt (bijv. RPG, granaat)
+- Je hoeft niet te controleren of `killerid` geldig is voordat je het gebruikt in [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID is een geldige killerid parameter in die functie.
+- `playerid` is de enige die de callback kan aanroepen. (goed om te weten voor anti fake death)
 
 :::
 
 :::warning
 
-Je MOET controleren of 'killerid' geldig is (niet INVALID_PLAYER_ID) voordat je het gebruikt in een array (of echt overal), omdat het ervoor zorgt dat het OnPlayerDeath script crasht (niet het hele script). Dit komt omdat INVALID_PLAYER_ID gedefinieerd is als 65535, en als een array alleen 'MAX_PLAYERS' elementen heeft, bijv. 500, probeer je een index te benaderen die boven 499 ligt, wat buiten de grenzen is.
+Je MOET controleren of `killerid` geldig is (niet INVALID_PLAYER_ID) voordat je het gebruikt in een array (of echt overal), omdat het ervoor zorgt dat het OnPlayerDeath script crasht (niet het hele script). Dit komt omdat INVALID_PLAYER_ID gedefinieerd is als 65535, en als een array alleen 'MAX_PLAYERS' elementen heeft, bijv. 500, probeer je een index te benaderen die boven 499 ligt, wat buiten de grenzen is.
 
 :::
 

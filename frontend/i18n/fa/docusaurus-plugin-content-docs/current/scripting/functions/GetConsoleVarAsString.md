@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::note
 
-وقتی filterscripts یا plugins به عنوان _varname_ مشخص می‌شن، این تابع فقط اسم اولین filterscript یا plugin مشخص شده رو برمی‌گردونه.
+وقتی _filterscripts_ یا _plugins_ به عنوان varname مشخص می‌شن، این تابع فقط اسم اولین filterscript یا plugin مشخص شده رو برمی‌گردونه.
 
 :::
 

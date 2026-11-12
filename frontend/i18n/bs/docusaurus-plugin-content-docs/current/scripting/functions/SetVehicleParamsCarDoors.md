@@ -18,10 +18,10 @@ Dozvoljava ti da otvoriš i zatvoriš vrata vozila.
 | Ime       | Deskripcija                                                                           |
 | --------- | ------------------------------------------------------------------------------------- |
 | vehicleid | ID vozila za postaviti stanje vrata.                                                  |
-| driver    | Stanje vozačevih vrata. **0** za otvoriti, **1** za zatvoriti.                        |
-| passenger | Stanje suvozačevih vrata. **0** za otvoriti, **1** za zatvoriti.                      |
-| backleft  | Stanje lijevih pozadi vrata (ako je dostupno). **0** za otvoriti, **1** za zatvoriti. |
-| backright | Stanje desnih pozadi vrata (ako je dostupno). **0** za otvoriti, **1** za zatvoriti.  |
+| driver    | Stanje vozačevih vrata. **1** za otvoriti, **0** za zatvoriti.                        |
+| passenger | Stanje suvozačevih vrata. **1** za otvoriti, **0** za zatvoriti.                      |
+| backleft  | Stanje lijevih pozadi vrata (ako je dostupno). **1** za otvoriti, **0** za zatvoriti. |
+| backright | Stanje desnih pozadi vrata (ako je dostupno). **1** za otvoriti, **0** za zatvoriti.  |
 
 ## Returns
 

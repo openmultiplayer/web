@@ -39,8 +39,8 @@ public OnGameModeInit()
 
 :::note
 
-- `useartwork` trebuie să fie activat mai întâi în setările serverului pentru ca acesta să funcționeze
-- Când virtualworld este setat, modelele vor fi descărcate odată ce jucătorul intră în lumea specifică
+- **useartwork** trebuie să fie activat mai întâi în setările serverului pentru ca acesta să funcționeze
+- Când `virtualworld` este setat, modelele vor fi descărcate odată ce jucătorul intră în lumea specifică
 
 :::
 

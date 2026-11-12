@@ -45,8 +45,8 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 This callback is only called when lag compensation is **enabled**. If **hittype** is:
 
-- BULLET_HIT_TYPE_NONE: The fX, fY, and fZ parameters are absolute coordinates. These will return 0.0 if nothing was hit (e.g., a distant object that the bullet can't reach).
-- Other values: The fX, fY, and fZ values are offsets relative to hitid.
+- `BULLET_HIT_TYPE_NONE`: The **fX**, **fY**, and **fZ** parameters are absolute coordinates. These will return 0.0 if nothing was hit (e.g., a distant object that the bullet can't reach).
+- Other values: The **fX**, **fY**, and **fZ** values are offsets relative to **hitid**.
 
 :::
 
@@ -61,8 +61,8 @@ This callback is only called when lag compensation is **enabled**. If **hittype*
 :::warning
 
 - This callback isn't called when firing from a vehicle as the driver or when shooting while looking backward with the aim enabled (shooting into the air).
-- When shooting a player inside a vehicle, this callback will be triggered as BULLET_HIT_TYPE_VEHICLE with the correct hitid (the hit player's vehicleid). It won't be triggered as BULLET_HIT_TYPE_PLAYER.
-- **Partially fixed in SA-MP 0.3.7**: If fake weapon data is sent by a malicious client, other players' clients may freeze or crash. To prevent this, check if the reported weaponid can, in fact, fire projectiles.
+- When shooting a player inside a vehicle, this callback will be triggered as `BULLET_HIT_TYPE_VEHICLE` with the correct `hitid` (the hit player's vehicleid). It won't be triggered as `BULLET_HIT_TYPE_PLAYER`.
+- **Partially fixed in SA-MP 0.3.7**: If fake weapon data is sent by a malicious client, other players' clients may freeze or crash. To prevent this, check if the reported `weaponid` can, in fact, fire projectiles.
 - This callback is not called when driving-by as a driver, firing the turret of a Seasparrow, Hunter, or any other armed vehicle.
 
 :::

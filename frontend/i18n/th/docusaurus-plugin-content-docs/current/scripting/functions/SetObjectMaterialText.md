@@ -17,7 +17,7 @@ Replace the texture of an object with text.
 | materialsize  | The [size](../resources/materialtextsizes) of the material.                      |
 | fontface      | The font to use.                                                                 |
 | fontsize      | The size of the text (MAX 255).                                                  |
-| bold          | Bold text. Set to **1** for bold, **0** for not.                                         |
+| bold          | Bold text. Set to 1 for bold, 0 for not.                                         |
 | fontcolor     | The color of the text, in ARGB format.                                           |
 | backcolor     | The background color, in ARGB format.                                            |
 | textalignment | The [alignment](../resources/materialtextalignment) of the text (default: left). |

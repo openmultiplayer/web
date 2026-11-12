@@ -21,7 +21,7 @@ Mag-apply ng animation sa isang artista.
 | lockx      | Kung itatakda sa **0**, ibabalik ang aktor sa kanilang lumang X coordinate kapag kumpleto na ang animation (para sa mga animation na gumagalaw sa aktor gaya ng paglalakad). **1** hindi na sila ibabalik sa dati nilang posisyon. |
 | locky      | Pareho sa itaas ngunit para sa Y axis. Dapat panatilihing pareho sa nakaraang parameter.                                                                                                                                           |
 | freeze     | Ang pagtatakda nito sa **1** ay mag-freeze ng isang aktor sa dulo ng animation. **0** ay hindi.                                                                                                                                    |
-| time       | Timer sa millisecond. Para sa isang walang katapusang loop dapat itong 0.                                                                                                                                                          |
+| time       | Timer sa millisecond. Para sa isang walang katapusang loop dapat itong **0**.                                                                                                                                                      |
 
 ## Returns
 

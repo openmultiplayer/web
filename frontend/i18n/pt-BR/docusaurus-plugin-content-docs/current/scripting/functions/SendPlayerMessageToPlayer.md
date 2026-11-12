@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Envia uma mensagem em nome de um jogador para outro jogador no servidor. A mensagem aparecerá na caixa de chat, mas só poderá ser vista pelo usuário especificado com 'playerid'. A linha começará com o nome do remetente na sua cor, seguido da mensagem em branco.
+Envia uma mensagem em nome de um jogador para outro jogador no servidor. A mensagem aparecerá na caixa de chat, mas só poderá ser vista pelo usuário especificado com `playerid`. A linha começará com o nome do remetente na sua cor, seguido da mensagem em branco.
 
 | Nome | Descrição |
 | ---------------- | ---------------------------------------------------------- |

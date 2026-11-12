@@ -25,7 +25,7 @@ Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at an
 
 ID vozila koji je kreiran (1 do MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) ako vozilo nije kreirano (dostignut je limit vozila ili unesen nevažeći model vozila).
+**INVALID_VEHICLE_ID (65535)** ako vozilo nije kreirano (dostignut je limit vozila ili unesen nevažeći model vozila).
 
 **0** Ako vozilo nije kreirano (Prošla su vozila 538 ili 537, a to su vozovi).
 

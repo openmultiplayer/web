@@ -18,9 +18,9 @@ OnPlayerClickMap akan terpanggil ketika pemain menaruh target/waypoint saat jeda
 
 ## Returns
 
-**0** - Akan melarang filterscript lain untuk menerima callback ini.
+**1** - Akan melarang filterscript lain untuk menerima callback ini.
 
-**1** - Mengindikasikan bahwa callback ini akan dilanjutkan ke filtercript lain.
+**0** - Mengindikasikan bahwa callback ini akan dilanjutkan ke filtercript lain.
 
 Selalu terpanggil pertama di filterscripts.
 

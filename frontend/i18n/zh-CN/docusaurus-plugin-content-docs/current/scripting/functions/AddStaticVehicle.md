@@ -23,7 +23,7 @@ tags: ["车辆"]
 
 成功创建的车辆 ID（范围 1 至 MAX_VEHICLES）。
 
-若创建失败（达到车辆上限或无效模型 ID）返回 INVALID_VEHICLE_ID（65535）。
+若创建失败（达到车辆上限或无效模型 ID）返回 **INVALID_VEHICLE_ID（65535）**。
 
 ## 示例
 

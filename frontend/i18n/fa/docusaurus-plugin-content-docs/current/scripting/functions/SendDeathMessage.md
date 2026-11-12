@@ -19,11 +19,11 @@ tags: []
 
 این تابع همیشه **true** برمی‌گردونه، حتی اگر تابع اجرا نشه.
 
-تابع اجرا نمی‌شه (هیچ death message نمایش داده نمی‌شه) اگر 'playerid' معتبر نباشه.
+تابع اجرا نمی‌شه (هیچ death message نمایش داده نمی‌شه) اگر `killee` معتبر نباشه.
 
-اگر 'reason' معتبر نباشه، یه آیکون کلی جمجمه و استخون متقابل نمایش داده می‌شه.
+اگر `weapon` معتبر نباشه، یه آیکون کلی جمجمه و استخون متقابل نمایش داده می‌شه.
 
-'killerid' که معتبر نباشه (`INVALID_PLAYER_ID`) معتبر هست.
+`killer` که معتبر نباشه (`INVALID_PLAYER_ID`) معتبر هست.
 
 ## مثال‌ها
 
@@ -39,7 +39,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-- Death message ها می‌تونن با استفاده از یه player ID معتبر برای 'playerid' که **متصل نیست** پاک بشن.
+- Death message ها می‌تونن با استفاده از یه player ID معتبر برای `killee` که **متصل نیست** پاک بشن.
 - برای نمایش death message فقط برای یک بازیکن، از [SendDeathMessageToPlayer](SendDeathMessageToPlayer) استفاده کن.
 - می‌تونی از NPC ها برای ایجاد death reason های سفارشی خودت استفاده کنی.
 

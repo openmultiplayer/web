@@ -82,7 +82,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 - **\t** مقداری فاصله ایجاد میکند.
 - **\n** یک خط جدید میسازد.
-- روش Color-Embedding بعد از \n \t ریست نمیشود و رنگ آن عوض نمیشود.
+- روش Color-Embedding بعد از **\n** **\t** ریست نمیشود و رنگ آن عوض نمیشود.
 
 :::
 
@@ -125,7 +125,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 - **\t** مقداری فاصله ایجاد میکند.
 - **\n** یک خط جدید میسازد.
-- روش Color-Embedding بعد از \n \t ریست نمیشود و رنگ آن عوض نمیشود.
+- روش Color-Embedding بعد از **\n** **\t** ریست نمیشود و رنگ آن عوض نمیشود.
 
 :::
 
@@ -246,7 +246,7 @@ Pistol\t$1000\t50",
 
 :::note نکته
 
-- **inputtext** متن اولین ستون از **listitem** انتخاب شده، بدون رنگ ها.
+- **inputtext** متن _اولین ستون_ از **listitem** انتخاب شده، بدون رنگ ها.
 
 :::
 
@@ -284,7 +284,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 - **\t** مقداری فاصله ایجاد میکند.
 - **\n** یک خط جدید میسازد.
-- روش Color-Embedding بعد از \n یا \t ریست میشود. اولین خط **info** شامل سر تیتر میشود.
+- روش Color-Embedding بعد از **\n** یا **\t** ریست میشود. اولین خط **info** شامل سر تیتر میشود.
 
 :::
 
@@ -302,7 +302,7 @@ Item 1 Column 1\tItem 1 Column 2\tItem 1 Column 3\n\
 
 :::note نکته
 
-- **inputtext** متن اولین ستون از **listitem** انتخاب شده، بدون رنگ ها.
+- **inputtext** متن _اولین ستون_ از **listitem** انتخاب شده، بدون رنگ ها.
 
 :::
 

@@ -17,7 +17,7 @@ tags: ["物体"]
 | OBJECT_MATERIAL_SIZE:materialsize        | 材质[尺寸](../resources/materialtextsizes)                         |
 | const fontFace[]                         | 使用的字体名称                                                     |
 | fontSize                                 | 字体大小（最大 255）                                               |
-| bool:bold                                | 是否加粗（**true** 为加粗，**false** 为正常）                              |
+| bool:bold                                | 是否加粗（true 为加粗，false 为正常）                              |
 | fontColour                               | 文本颜色（ARGB 格式）                                              |
 | backgroundColour                         | 背景颜色（ARGB 格式）                                              |
 | OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | 文本[对齐方式](../resources/materialtextalignment)（默认：左对齐） |
@@ -67,9 +67,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 进阶地图编辑器
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) 作者：Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) 作者：Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) 作者：RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) 作者：Pottus
 
 ## 相关资源
 

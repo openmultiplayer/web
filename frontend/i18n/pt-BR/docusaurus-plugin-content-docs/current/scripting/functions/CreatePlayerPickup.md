@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- O único tipo de pickup que pode ser coletado de dentro de um veículo é 14 (exceto para pickups especiais como propinas).
+- O único tipo de pickup que pode ser coletado de dentro de um veículo é **14** (exceto para pickups especiais como propinas).
 - Pickups são mostrados para, e podem ser coletados por todos os jogadores.
 - É possível que se DestroyPlayerPickup for usado quando um pickup é coletado, mais de um jogador pode coletar o pickup, devido ao lag. Isso pode ser evitado através do uso de variáveis.
 - Certos tipos de pickup vêm com 'respostas automáticas', por exemplo usar um modelo M4 no pickup automaticamente dará ao jogador a arma e alguma munição.

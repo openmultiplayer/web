@@ -106,11 +106,11 @@ description: File konfigurasi server.
 
 ## Model kustom
 
-| Pengaturan | Tipe   | Nilai awal | Read-only | Rule  | Efek                                                                                                                                                                                                                                                               |
-| ---------- | ------ | ---------- | --------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| useartwork | bool   | 0          | Ya        | Tidak | Menyalakan jika server menggunakan model kustom dari folder _model_. Ubah menjadi **1** untuk menyalakan atau **0** untuk mematikan.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya. |
-| artwork    | string | No         | Ya        | Ya    | Kemungkinan diatur secara otomatis ke **No** or **Yes**, tergantung pada pengaturan **useartwork**.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya.                                  |
-| artpath    | string | models     | Ya        | Tidak | Lokasi model kustom.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya.                                                                                                                 |
+| Pengaturan | Tipe   | Nilai awal | Read-only | Rule  | Efek                                                                                                                                                                                                                                                                |
+| ---------- | ------ | ---------- | --------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| useartwork | bool   | 0          | Ya        | Tidak | Menyalakan jika server menggunakan model kustom dari folder `models`. Ubah menjadi **1** untuk menyalakan atau **0** untuk mematikan.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya. |
+| artwork    | string | No         | Ya        | Ya    | Kemungkinan diatur secara otomatis ke **No** or **Yes**, tergantung pada pengaturan **useartwork**.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya.                                   |
+| artpath    | string | models     | Ya        | Tidak | Lokasi model kustom.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya.                                                                                                                  |
 
 ## Lainnya
 

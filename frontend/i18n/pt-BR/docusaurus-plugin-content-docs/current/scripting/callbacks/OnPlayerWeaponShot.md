@@ -60,8 +60,9 @@ A função [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) pod
 
 **Bug(s) Conhecidos:**
 
-- Não é executada quando você atira sendo motorista de um veículo ou caso você esteja olhando para trás com a mira ativa (atirando para o alto). Caso você esteja disparando em um veículo o tipo a ser retornado será `BULLET_HIT_TYPE_VEHICLE` e não `BULLET_HIT_TYPE_PLAYER`, o valor retornado no hitid será o ID do veículo, mesmo que você mire e atire diretamente no jogador que está no veículo o parâmetro `BULLET_HIT_TYPE_VEHICLE` persiste!
-- **Parcialmente arrumado na versão 0.3.7**: Caso 'Fake Weapon Data' seja enviada por um jogador malicioso, outros jogadores podem crashar ou congelar. Para impedir isso de acontecer verifique se o weaponid (arma) pode realmente disparar balas.
+- Não é executada quando você atira sendo motorista de um veículo ou caso você esteja olhando para trás com a mira ativa (atirando para o alto).
+- Caso você esteja disparando em um veículo o tipo a ser retornado será `BULLET_HIT_TYPE_VEHICLE` e não `BULLET_HIT_TYPE_PLAYER`, o valor retornado no `hitid` será o ID do veículo, mesmo que você mire e atire diretamente no jogador que está no veículo o parâmetro `BULLET_HIT_TYPE_VEHICLE` persiste!
+- **Parcialmente arrumado na versão 0.3.7**: Caso 'Fake Weapon Data' seja enviada por um jogador malicioso, outros jogadores podem crashar ou congelar. Para impedir isso de acontecer verifique se o `weaponid` (arma) pode realmente disparar balas.
 
 :::
 

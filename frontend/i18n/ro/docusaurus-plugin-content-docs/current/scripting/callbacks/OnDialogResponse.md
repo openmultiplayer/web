@@ -13,7 +13,7 @@ Acest callback este apelat când un jucător răspunde unui dialog afișat prin 
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID-ul jucătorului care a răspuns dialogului.                                                                                 |
 | dialogid    | ID-ul dialogului căruia jucătorul i-a răspuns, atribuit în ShowPlayerDialog.                                                 |
-| response    | **1** pentru butonul din stânga, **0** pentru butonul din dreapta (dacă numai un buton este afișat atunci mereu **1**)           |
+| response    | **1** pentru butonul din stânga, **0** pentru butonul din dreapta (dacă numai un buton este afișat atunci mereu 1).          |
 | listitem    | ID-ul elementului din listă selectat (începe de la 0) (doar dacă s-a folosit un dialog de tip listă, altfel va fi mereu -1). |
 | inputtext[] | Textul inserat de către jucător în căsuța de intrare, sau textul elementului din listă selectat.                             |
 

@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::warning
 
-Kad su _filterskripte_ ili _plugini_ navedeni kao ime var, ova funkcija vraća samo ime prve navedene filterskripte ili plugina. Ovo je bug.
+Kad su _filterscripts_ ili _plugins_ navedeni kao ime var, ova funkcija vraća samo ime prve navedene filterskripte ili plugina. Ovo je bug.
 
 :::
 

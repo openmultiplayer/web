@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Sends a message in the name of a player to another player on the server. The message will appear in the chat box but can only be seen by the user specified with 'playerid'. The line will start with the sender's name in their color, followed by the message in white.
+Sends a message in the name of a player to another player on the server. The message will appear in the chat box but can only be seen by the user specified with `playerid`. The line will start with the sender's name in their color, followed by the message in white.
 
 | Name             | Description                                                |
 | ---------------- | ---------------------------------------------------------- |

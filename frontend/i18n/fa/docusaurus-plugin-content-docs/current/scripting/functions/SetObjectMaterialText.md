@@ -17,7 +17,7 @@ tags: ["object"]
 | OBJECT_MATERIAL_SIZE:materialsize        | [اندازه](../resources/materialtextsizes) متریال.                  |
 | const fontFace[]                         | فونت مورد استفاده.                                                |
 | fontSize                                 | اندازه متن (حداکثر ۲۵۵).                                          |
-| bool:bold                                | متن ضخیم. برای ضخیم **true**، برای غیرضخیم **false** تنظیم کنید.          |
+| bool:bold                                | متن ضخیم. برای ضخیم true، برای غیرضخیم false تنظیم کنید.          |
 | fontColour                               | رنگ متن، در فرمت ARGB.                                            |
 | backgroundColour                         | رنگ پس‌زمینه، در فرمت ARGB.                                       |
 | OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | [تراز](../resources/materialtextalignment) متن (پیش‌فرض: چپ‌چین). |
@@ -67,9 +67,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ویرایشگرهای نقشه پیشرفته
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) توسط Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) توسط RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus
 
 ## منابع مرتبط
 

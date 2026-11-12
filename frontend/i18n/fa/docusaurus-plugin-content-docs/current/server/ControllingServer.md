@@ -198,7 +198,7 @@ cmdlist را برای دستورات (یا varlist برای متغیرها) تا
 | `/rcon weburl [server url]`       | URL سرور را در masterlists/کلاینت SA-MP تغییر می‌دهد                                                                                    |
 | `/rcon unloadfs`                  | filterscript داده شده را unload می‌کند (_مثال: /rcon unloadfs adminfs_).                                                                |
 | `/rcon reloadfs`                  | filterscript داده شده را reload می‌کند (_مثال: /rcon reloadfs adminfs_).                                                                |
-| `/rcon rcon\_password [PASSWORD]` | رمز عبور rcon را تغییر می‌دهد                                                                                                           |
+| `/rcon rcon_password [PASSWORD]`  | رمز عبور rcon را تغییر می‌دهد                                                                                                           |
 | `/rcon password [password]`       | رمز عبور سرور را تنظیم/بازنشانی می‌کند                                                                                                  |
 | `/rcon messageslimit [count]`     | تعداد پیام‌های در ثانیه که کلاینت به سرور ارسال می‌کند را تغییر می‌دهد. (پیش‌فرض 500)                                                   |
 | `/rcon ackslimit [count]`         | حد ack ها را تغییر می‌دهد (پیش‌فرض 3000)                                                                                                |

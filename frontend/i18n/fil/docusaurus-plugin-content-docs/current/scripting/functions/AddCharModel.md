@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-ang **useartwork** ay dapat munang paganahin sa mga setting ng server upang ito ay gumana
+Ang **useartwork** ay dapat munang paganahin sa mga setting ng server upang ito ay gumana
 
 :::
 

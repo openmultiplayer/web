@@ -39,7 +39,7 @@ SendRconCommand("game.map %s", szMapName);
 
 :::note
 
-- Não suporta **login**, devido à falta do parâmetro 'playerid'.
+- Não suporta **login**, devido à falta do parâmetro `playerid`.
 - 'password 0' removerá a senha do servidor se alguma estiver definida.
 - Esta função resultará na chamada de [OnRconCommand](../callbacks/OnRconCommand).
 

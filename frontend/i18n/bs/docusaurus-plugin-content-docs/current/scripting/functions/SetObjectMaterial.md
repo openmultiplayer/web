@@ -66,6 +66,6 @@ MORAŠ koristiti **ARGB** format boje, ne RGBA kao što se koristi u klijent por
 
 ## Filterskripte koje podržavaju teksturisanje/text
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) od Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) od Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) od RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) od Pottus

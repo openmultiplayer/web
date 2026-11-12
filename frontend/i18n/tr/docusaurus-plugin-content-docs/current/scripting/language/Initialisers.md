@@ -497,7 +497,7 @@ Yukarıdaki örnek, doğru girintinin neden bu kadar önemli olduğunu da göste
 
 Eğer global bir değişken (yani, bir işlevin dışında bildirilen) yeni olarak bildirilirse, bildirimden sonra her yerde kullanılabilir:
 
-File1.pwn:
+**File1.pwn:**
 
 ```c
 MyFunc1()
@@ -520,7 +520,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn:
+**file2.pwn:**
 
 ```c
 MyFunc3()
@@ -593,7 +593,7 @@ Yalnızca 42 elde edersiniz, toplamadan hiçbir şey değil.
 
 Bir `public` fonksiyonun amx dosyasında metinsel adının saklandığı unutulmamalıdır. Bu, normal fonksiyonların yalnızca atlama için adreslerinin saklandığı şekilden farklıdır ve dekompilasyonun başka bir dezavantajıdır. Bu, fonksiyonu adıyla dış betikten çağırmanıza izin verir; aynı zamanda adını bırakarak ve tekrar girerek betiğin içinden fonksiyonları adlarıyla çağırmanıza da izin verir. Bir native fonksiyon çağrısı, neredeyse bir public fonksiyon çağrısının tersidir; dış betikten iç betikteki bir fonksiyonu değil, iç betikten dış betikteki bir fonksiyonu çağırır. İkisini birleştirirseniz, SetTimer, SetTimerEx, CallRemoteFunction ve CallLocalFunction gibi fonksiyonlar elde edersiniz; bunlar adlarıyla değil, adresleriyle fonksiyonları çağırır.
 
-Adıyla bir fonksiyon çağırma örneği:
+**Adıyla bir fonksiyon çağırma örneği:**
 
 ```c
 forward MyPublicFunc();
@@ -692,7 +692,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn
+**file2.pwn**
 
 ```c
 MyFunc3()
@@ -704,7 +704,7 @@ MyFunc3()
 
 Ve bunu `static` ile değiştirirsek:
 
-file1.pwn
+**file1.pwn**
 
 ```c
 MyFunc1()
@@ -727,7 +727,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn
+**file2.pwn**
 
 ```c
 MyFunc3()

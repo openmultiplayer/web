@@ -12,7 +12,7 @@ Uključuje / isključuje da li igrač može kontrolirati svog lika ili ne.
 | Ime      | Deskripcija                                       |
 | -------- | ------------------------------------------------- |
 | playerid | ID igrača za prebacivanje mogućnosti upravljanja. |
-| toggle   | 0 da ne mogu kontrolisati, 1 da mogu.             |
+| toggle   | **0** da ne mogu kontrolisati, **1** da mogu.     |
 
 ## Returns
 

@@ -68,9 +68,9 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 :::note
 
-- 火焰类武器（如燃烧瓶，ID18）的weaponid将始终返回37（火焰喷射器）
-- 爆炸类武器（如RPG，手雷）的weaponid将始终返回51
-- 只有**playerid**参数对应的玩家会触发此回调
+- 火焰类武器（如燃烧瓶，ID18）的`weaponid`将始终返回37（火焰喷射器）
+- 爆炸类武器（如RPG，手雷）的`weaponid`将始终返回51
+- 只有`playerid`参数对应的玩家会触发此回调
 - 伤害值始终显示武器最大伤害值，即使实际剩余生命值不足。例如：玩家有100点生命值时，使用伤害值46.2的沙漠之鹰需要3枪致死，所有3次伤害都会显示46.2点
 
 :::
@@ -78,7 +78,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 :::warning
 
 - [GetPlayerHealth](../functions/GetPlayerHealth) 和 [GetPlayerArmour](../functions/GetPlayerArmour) 将返回玩家受伤前的数值
-- 使用issuerid作为数组索引前请**务必**验证其有效性
+- 使用`issuerid`作为数组索引前请**务必**验证其有效性
 
 :::
 

@@ -18,7 +18,7 @@ Paganahin/Huwag paganahin ang kakayahang mag-teleport para sa isang manlalaro sa
 | Name     | Description                                  |
 | -------- | -------------------------------------------- |
 | playerid | Ang ID ng player upang payagan ang teleport. |
-| allow    | **1**-payagan, **0**-hindi payagan           |
+| allow    | **1** - payagan, **0** - hindi payagan.      |
 
 ## Returns
 

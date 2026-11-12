@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Deskripcija
 
-Ova funkcija dobija ID vozila u kojem je igrač trenutno. Zabilješka: **NE** ID modela vozila. Pogledaj GetVehicleModel za to.
+Ova funkcija dobija ID vozila u kojem je igrač trenutno. **Zabilješka:** **NE** ID modela vozila. Pogledaj GetVehicleModel za to.
 
 | Ime      | Deskripcija                                             |
 | -------- | ------------------------------------------------------- |

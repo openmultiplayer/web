@@ -10,10 +10,10 @@ description: floatround函数使用的舍入模式说明
 
 :::
 
-| 模式                | 说明                                                                |
-| ------------------- | ------------------------------------------------------------------- |
-| `floatround_round`  | 四舍五入到最接近的整数。当小数部分正好为 0.5 时向上舍入（默认模式） |
-| `floatround_floor`  | 向下取整                                                            |
-| `floatround_ceil`   | 向上取整                                                            |
-| `floatround_tozero` | 正数向下取整，负数向上取整（"向零取整"）                            |
-| `floatround_unbiased` | 与 `floatround_round` 功能相同                                        |
+| 模式                  | 说明                                                                |
+| --------------------- | ------------------------------------------------------------------- |
+| `floatround_round`    | 四舍五入到最接近的整数。当小数部分正好为 0.5 时向上舍入（默认模式） |
+| `floatround_floor`    | 向下取整                                                            |
+| `floatround_ceil`     | 向上取整                                                            |
+| `floatround_tozero`   | 正数向下取整，负数向上取整（"向零取整"）                            |
+| `floatround_unbiased` | 与 `floatround_round` 功能相同                                      |

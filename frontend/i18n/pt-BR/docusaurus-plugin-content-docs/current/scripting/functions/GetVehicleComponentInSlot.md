@@ -51,10 +51,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 **Erros conhecidos:**
 
-- Não funciona para CARMODTYPE_STEREO.
-- Tanto as barras frontais quanto os componentes do pára-choque dianteiro são salvos no slot CARMODTYPE_FRONT_BUMPER. Se um veículo tiver os dois instalados, esta função retornará apenas aquele que foi instalado por último.
-- Tanto as barras de proteção traseiras quanto os componentes do pára-choque traseiro são salvos no slot CARMODTYPE_REAR_BUMPER. Se um veículo tiver os dois instalados, esta função retornará apenas aquele que foi instalado por último.
-- Tanto a saia lateral esquerda quanto a saia lateral direita são salvas no slot CARMODTYPE_SIDESKIRT. Se um veículo tiver os dois instalados, esta função retornará apenas aquele que foi instalado por último.
+- Não funciona para `CARMODTYPE_STEREO`.
+- Tanto as barras frontais quanto os componentes do pára-choque dianteiro são salvos no slot `CARMODTYPE_FRONT_BUMPER`. Se um veículo tiver os dois instalados, esta função retornará apenas aquele que foi instalado por último.
+- Tanto as barras de proteção traseiras quanto os componentes do pára-choque traseiro são salvos no slot `CARMODTYPE_REAR_BUMPER`. Se um veículo tiver os dois instalados, esta função retornará apenas aquele que foi instalado por último.
+- Tanto a saia lateral esquerda quanto a saia lateral direita são salvas no slot `CARMODTYPE_SIDESKIRT`. Se um veículo tiver os dois instalados, esta função retornará apenas aquele que foi instalado por último.
 
 :::
 

@@ -9,23 +9,23 @@ tags: ["车辆"]
 
 在游戏世界中动态创建车辆，可在脚本任意时刻替代 AddStaticVehicleEx 使用。
 
-| 参数                                   | 说明                                                        |
-| -------------------------------------- | ----------------------------------------------------------- |
-| [modelid](../resources/vehicleid)      | 车辆模型 ID                                                 |
-| Float:spawnX                           | 车辆生成的 X 轴坐标                                         |
-| Float:spawnY                           | 车辆生成的 Y 轴坐标                                         |
-| Float:spawnZ                           | 车辆生成的 Z 轴坐标                                         |
-| Float:angle                            | 车辆初始朝向角度                                            |
-| [colour1](../resources/vehiclecolorid) | 主颜色 ID                                                   |
-| [colour2](../resources/vehiclecolorid) | 副颜色 ID                                                   |
+| 参数                                   | 说明                                                         |
+| -------------------------------------- | ------------------------------------------------------------ |
+| [modelid](../resources/vehicleid)      | 车辆模型 ID                                                  |
+| Float:spawnX                           | 车辆生成的 X 轴坐标                                          |
+| Float:spawnY                           | 车辆生成的 Y 轴坐标                                          |
+| Float:spawnZ                           | 车辆生成的 Z 轴坐标                                          |
+| Float:angle                            | 车辆初始朝向角度                                             |
+| [colour1](../resources/vehiclecolorid) | 主颜色 ID                                                    |
+| [colour2](../resources/vehiclecolorid) | 副颜色 ID                                                    |
 | respawnDelay                           | 无驾驶员时车辆重生延迟（**秒**）。使用 **-1** 将禁用自动重生 |
-| bool:addSiren                          | 默认值'false'。为车辆启用警报器功能（需车辆自带喇叭）       |
+| bool:addSiren                          | 默认值'false'。为车辆启用警报器功能（需车辆自带喇叭）        |
 
 ## 返回值
 
 返回创建的车辆 ID（范围 1 至 MAX_VEHICLES）。
 
-若达到车辆数量上限或模型 ID 无效，返回 INVALID_VEHICLE_ID (65535)。
+若达到车辆数量上限或模型 ID 无效，返回 **INVALID_VEHICLE_ID (65535)**。
 
 若使用火车模型 ID（538 或 537），返回 **0**（不可用）。
 

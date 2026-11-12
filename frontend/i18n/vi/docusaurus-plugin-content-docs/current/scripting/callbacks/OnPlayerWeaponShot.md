@@ -43,10 +43,10 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-Callback này chỉ được gọi khi bù trừ độ trễ (lag compensation) được **bật**. Nếu `hittype` là:
+Callback này chỉ được gọi khi bù trừ độ trễ (lag compensation) được **bật**. Nếu **hittype** là:
 
 - `BULLET_HIT_TYPE_NONE`: các tham số **fX**, **fY** và **fZ** là tọa độ bình thường, sẽ trả về 0.0 cho các tọa độ nếu không có gì bị bắn trúng (ví dụ: vật thể ở xa mà viên đạn không thể đến);
-- Các loại khác: **fX**, **fY** và **fZ** là độ dịch chuyển tương đối với `hitid`.
+- Các loại khác: **fX**, **fY** và **fZ** là độ dịch chuyển tương đối với **hitid**.
 
 :::
 

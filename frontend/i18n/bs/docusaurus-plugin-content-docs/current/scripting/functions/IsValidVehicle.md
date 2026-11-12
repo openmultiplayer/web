@@ -7,7 +7,7 @@ tags: []
 
 :::note
 
-Ova funkcija nije prisutna u starim bibliotekama/library-ima pakiranim sa SA-MP serverom, međutim [najnovije verzije održavanih biblioteka/library-a](https://github.com/pawn-lang/samp-stdlib) sadrže ovu i druge deklaracije koje su ranije nedostajale .
+Ova funkcija nije prisutna u starim bibliotekama/library-ima pakiranim sa SA-MP serverom, međutim [najnovije verzije održavanih biblioteka/library-a](https://github.com/pawn-lang/samp-stdlib) sadrže ovu i druge deklaracije koje su ranije nedostajale.
 
 :::
 

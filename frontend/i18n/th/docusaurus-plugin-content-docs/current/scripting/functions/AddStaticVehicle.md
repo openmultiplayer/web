@@ -23,7 +23,7 @@ Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
 
 The vehicle ID of the vehicle created (between 1 and MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) if vehicle was not created (vehicle limit reached or invalid vehicle model ID passed).
+**INVALID_VEHICLE_ID (65535)** if vehicle was not created (vehicle limit reached or invalid vehicle model ID passed).
 
 ## ตัวอย่าง
 

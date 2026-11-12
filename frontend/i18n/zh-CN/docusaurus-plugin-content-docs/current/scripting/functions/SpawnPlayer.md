@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-已知问题：
+**已知问题：**
 
 - 若玩家处于车辆中执行生成，会导致玩家手持瓶子异常（该问题已在 open.mp 修复）
 

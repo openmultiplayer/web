@@ -66,6 +66,6 @@ Você MUST usa o formato de cores **ARGB**, não RGBA como usado em mensagens de
 
 ## Editores de mapas avançados
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) por Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) por Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) por RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) por Pottus

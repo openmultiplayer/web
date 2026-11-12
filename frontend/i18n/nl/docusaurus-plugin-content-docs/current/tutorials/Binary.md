@@ -12,7 +12,7 @@ Deze tutorial is gebaseerd op een topic op de SA-MP-forums. De auteur is **Kyosa
 
 Binary (binair) is een talstelsel dat twee symbolen gebruikt: 0 en 1. Waar decimaal (**base 10**) tien cijfers gebruikt, gebruikt binary alleen 0 en 1. Voor computers is dit essentieel: op het laagste niveau worden berekeningen uitgevoerd met aan/uit (1/0). Vergelijk decimaal en binair naast elkaar:
 
-Decimal (base 10)
+**Decimal (base 10)**
 
 ```c
 0
@@ -31,7 +31,7 @@ Decimal (base 10)
 13
 ```
 
-Binary (base 2)
+**Binary (base 2)**
 
 ```c
 0 //0
@@ -52,7 +52,7 @@ Binary (base 2)
 
 Plaatswaardes in binary heten “bits” (**b**inary dig**its**) en zijn machten van 2; net zoals in decimaal machten van 10 zijn. Voorbeeld: 13 in decimaal en binair:
 
-Decimal (base 10)
+**Decimal (base 10)**
 
 ```c
 13
@@ -60,7 +60,7 @@ Decimal (base 10)
 // 1 * (10^1) + 3 * (10^0) = 10 + 3 = 13
 ```
 
-Binary (base 2)
+**Binary (base 2)**
 
 ```c
 1101

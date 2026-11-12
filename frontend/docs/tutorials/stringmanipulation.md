@@ -965,7 +965,7 @@ Hello                    World
 
 During the old typewriter era, this had a more popular use, it was used to move to the next line vertically, but now, this is no longer the case, it doesn’t have any noticeable usage nowadays, and that includes modern printers and even programming languages, and pawn is no exception.
 
-- **\_The “Backslash” escape sequence - `\*`**
+- **The “Backslash” escape sequence - `\\`**
 
 As we’ve seen, the backslash is regarded as the escape character, so whenever the program spots it, it thinks of it as a starting point of some escape sequence, it doesn’t look at it as an independent character, and thus, will either give a compilation error (_if it wasn’t followed by a valid character_), or will not print it, in pawn’s case, the compilator will raise an error (_error 027: invalid character constant_). Luckily, we can solve this problem by escaping out backslash, and that’s done by prefixing yet another backslash to it:
 

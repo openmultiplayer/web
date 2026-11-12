@@ -12,7 +12,7 @@ Bu geri çağırma, bir oyuncu modifiye garajlarından birine giriş veya çık�
 | Parametre  | Açıklama                                                                     |
 | ---------- | ---------------------------------------------------------------------------- |
 | playerid   | Modifiye garajına giriş/çıkış yapan oyuncunun ID'si.                         |
-| enterexit  | Giriş yaptıysa **1**, çıkış yaptıysa 2 değerini alır.                        |
+| enterexit  | Giriş yaptıysa **1**, çıkış yaptıysa **0** değerini alır.                    |
 | interiorid | Girilen modifiye garajının interior ID'si. (eğer çıkıyorsa 0 değerini alır.) |
 
 ## Çalışınca Vereceği Sonuçlar

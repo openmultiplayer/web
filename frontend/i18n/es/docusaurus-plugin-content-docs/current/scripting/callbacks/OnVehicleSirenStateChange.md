@@ -14,7 +14,7 @@ Este callback se llama cuando la sirena de un vehículo es alternada.
 | --------- | ----------------------------------------------------- |
 | playerid  | El ID del jugador que alternó la sirena (conductor).  |
 | vehicleid | El ID del vehículo en el que la sirena fue alternada. |
-| newstate  | **0** si la sirena se apagó, **1** si se prendió.             |
+| newstate  | 0 si la sirena se apagó, 1 si se prendió.             |
 
 ## Devoluciones
 

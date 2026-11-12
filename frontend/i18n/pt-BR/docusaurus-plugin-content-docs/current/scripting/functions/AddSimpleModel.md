@@ -5,7 +5,7 @@ description: Adiciona um novo modelo de objeto simples personalizado para downlo
 tags: []
 ---
 
-Esta função foi adicionada no SA-MP 0.3.DL-R1 e não funcionará em versões anteriores!
+<VersionWarn version='SA-MP 0.3.DL R1' />
 
 ## Descrição
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-"**useartwork**" deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
+**useartwork** deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
 
 :::
 

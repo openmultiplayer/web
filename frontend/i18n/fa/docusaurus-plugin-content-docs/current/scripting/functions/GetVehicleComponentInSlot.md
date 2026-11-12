@@ -51,10 +51,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 **Bug های شناخته شده:**
 
-- برای CARMODTYPE_STEREO کار نمی‌کنه.
-- هم front bull bars و هم front bumper کامپوننت‌ها در slot CARMODTYPE_FRONT_BUMPER ذخیره می‌شن. اگه یه وسیله نقلیه هر دوتاشون رو نصب داشته باشه، این تابع فقط اونی رو برمی‌گردونه که آخری نصب شده.
-- هم rear bull bars و هم rear bumper کامپوننت‌ها در slot CARMODTYPE_REAR_BUMPER ذخیره می‌شن. اگه یه وسیله نقلیه هر دوتاشون رو نصب داشته باشه، این تابع فقط اونی رو برمی‌گردونه که آخری نصب شده.
-- هم left side skirt و هم right side skirt در slot CARMODTYPE_SIDESKIRT ذخیره می‌شن. اگه یه وسیله نقلیه هر دوتاشون رو نصب داشته باشه، این تابع فقط اونی رو برمی‌گردونه که آخری نصب شده.
+- برای `CARMODTYPE_STEREO` کار نمی‌کنه.
+- هم front bull bars و هم front bumper کامپوننت‌ها در slot `CARMODTYPE_FRONT_BUMPER` ذخیره می‌شن. اگه یه وسیله نقلیه هر دوتاشون رو نصب داشته باشه، این تابع فقط اونی رو برمی‌گردونه که آخری نصب شده.
+- هم rear bull bars و هم rear bumper کامپوننت‌ها در slot `CARMODTYPE_REAR_BUMPER` ذخیره می‌شن. اگه یه وسیله نقلیه هر دوتاشون رو نصب داشته باشه، این تابع فقط اونی رو برمی‌گردونه که آخری نصب شده.
+- هم left side skirt و هم right side skirt در slot `CARMODTYPE_SIDESKIRT` ذخیره می‌شن. اگه یه وسیله نقلیه هر دوتاشون رو نصب داشته باشه، این تابع فقط اونی رو برمی‌گردونه که آخری نصب شده.
 
 :::
 
