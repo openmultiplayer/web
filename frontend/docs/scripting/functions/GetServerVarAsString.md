@@ -52,7 +52,7 @@ Type 'varlist' in the server console to display a list of available server varia
 
 :::warning
 
-Using this function on anything other than a **string** (int, bool or float) or a **nonexistent** server variable, will **crash** your server! This is a bug.
+Using this function on anything other than a **string** (int, bool or float) or a **nonexistent** server variable, will **crash** your server! This is a bug. (Fixed in open.mp)
 
 :::
 

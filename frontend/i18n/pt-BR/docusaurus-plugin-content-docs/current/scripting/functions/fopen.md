@@ -146,7 +146,7 @@ else
 :::warning
 
 - Esta função não pode acessar arquivos fora da pasta 'scriptfiles'!
-- Se você usar `io_read` e o arquivo não existir, ele retornará uma referência _NULL_. Usar **referências inválidas** em funções de arquivo irá **travar** seu servidor!
+- Se você usar `io_read` e o arquivo não existir, ele retornará uma referência _NULL_. Usar **referências inválidas** em funções de arquivo irá **travar** seu servidor! (Corrigido em open.mp)
 
 :::
 

@@ -111,7 +111,7 @@ else
 
 :::warning
 
-Esta função pode travar o servidor quando o diretório correto não for criado.
+Esta função pode travar o servidor quando o diretório correto não for criado. (Corrigido em open.mp)
 
 :::
 

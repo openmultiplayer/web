@@ -111,7 +111,7 @@ else
 
 :::warning
 
-This function can crash the server when the right directory isn't created.
+This function can crash the server when the right directory isn't created. (Fixed in open.mp)
 
 :::
 
