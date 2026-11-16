@@ -50,6 +50,12 @@ Do note that the players may crash because of odd number of tilde (~) symbols us
 
 :::
 
+:::tip
+
+Android Clients can render some UI elements (called internally as widgets) directly in text, see [this page for more information](../resources/android-widgets.md).
+
+:::
+
 ## Related Functions
 
 - [HideGameTextForAll](HideGameTextForAll): Stop showing a gametext style for all players.
