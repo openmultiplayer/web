@@ -1,0 +1,1156 @@
+/* Shared page parts. Colours and radii come from the --omp-* tokens in custom.css,
+   so a change here or there reaches every page that uses them. */
+
+/* Page frame */
+.omp-page {
+  width: 100%;
+  max-width: var(--omp-page-width);
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4.5rem;
+}
+
+.omp-page--narrow {
+  max-width: 60rem;
+}
+
+.omp-page-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.omp-page-head-text {
+  min-width: 0;
+}
+
+.omp-page-title {
+  margin: 0;
+  color: var(--omp-ink);
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+
+.omp-page-subtitle {
+  max-width: 44rem;
+  margin: 0.5rem 0 0;
+  color: var(--omp-muted);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.omp-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+/* Surfaces */
+.omp-panel {
+  padding: 1.5rem;
+  border-radius: var(--omp-radius);
+  background: var(--omp-item);
+}
+
+/* Buttons: Infima's classes, in the launcher's shape */
+.button {
+  border-radius: var(--omp-radius-small);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.button--primary {
+  box-shadow: 0 0 20px var(--omp-glow);
+}
+
+.button--lg {
+  --ifm-button-size-multiplier: 1;
+  min-height: 2.875rem;
+  padding: 0 1.25rem;
+  font-size: 1rem;
+}
+
+.button--secondary {
+  --ifm-button-background-color: var(--omp-button);
+  --ifm-button-border-color: var(--omp-button);
+  --ifm-button-color: var(--omp-ink);
+  color: var(--omp-ink);
+}
+
+.button--secondary:not(.button--outline):hover {
+  --ifm-button-background-color: var(--omp-button-hover);
+  --ifm-button-border-color: var(--omp-button-hover);
+  color: var(--omp-ink);
+}
+
+/* Form controls */
+.omp-input,
+.omp-select {
+  height: 2.5rem;
+  min-width: 0;
+  padding: 0 0.75rem;
+  border: 0;
+  border-radius: var(--omp-radius-small);
+  background-color: var(--omp-input);
+  color: var(--omp-ink);
+  font-family: inherit;
+  font-size: 0.9375rem;
+}
+
+.omp-select {
+  padding-right: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.omp-select:disabled {
+  color: var(--omp-faint);
+  cursor: not-allowed;
+}
+
+.omp-select option {
+  background: var(--omp-surface);
+  color: var(--omp-ink);
+}
+
+.omp-input::placeholder {
+  color: var(--omp-faint);
+}
+
+.omp-input:focus-visible,
+.omp-select:focus-visible,
+.omp-check:has(input:focus-visible) {
+  outline: 2px solid var(--omp-accent);
+  outline-offset: 1px;
+}
+
+.omp-field-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--omp-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.omp-check {
+  display: inline-flex;
+  height: 2rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.75rem;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-input);
+  color: var(--omp-ink);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.omp-check input {
+  accent-color: var(--omp-primary);
+}
+
+/* Rule and value rows, as in the launcher's side panel */
+.omp-rows {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.omp-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-surface);
+}
+
+.omp-row > :last-child {
+  min-width: 0;
+  color: var(--omp-muted);
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.omp-row--head {
+  min-height: 0;
+  padding-bottom: 0.5rem;
+  background: none;
+}
+
+.omp-label {
+  color: var(--omp-faint);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Code */
+.omp-code {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-input);
+  color: var(--omp-ink);
+  font-size: 0.9rem;
+  overflow-x: auto;
+}
+
+.omp-code code {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+}
+
+/* Dialog */
+.omp-modal {
+  position: fixed;
+  z-index: 300;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.omp-modal-box {
+  width: 100%;
+  max-width: 28rem;
+  padding: 1.5rem;
+  border-radius: var(--omp-radius);
+  background: var(--omp-surface);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+.omp-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.omp-modal-head h2 {
+  margin: 0;
+  color: var(--omp-ink);
+  font-size: 1.25rem;
+}
+
+.omp-modal-close {
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-item);
+  color: var(--omp-ink);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Server list */
+.server-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.server-toolbar .omp-input {
+  flex: 1 1 16rem;
+}
+
+.server-toolbar-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.server-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.server-stats {
+  margin: 0;
+  color: var(--omp-muted);
+  font-size: 0.875rem;
+}
+
+.server-stats strong {
+  color: var(--omp-ink);
+}
+
+.server-columns,
+.server-row-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 13rem 8rem 13rem 6rem;
+  gap: 0 1rem;
+  align-items: center;
+}
+
+.server-columns {
+  margin: 1.25rem 0 0.25rem;
+  padding: 0 0.75rem 0 calc(2.25rem + 0.5rem + 0.75rem);
+  color: var(--omp-faint);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.server-columns > :last-child {
+  text-align: right;
+}
+
+/* The list is part of the page, split into pages, rather than a scroll box inside it. */
+.server-list {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.server-columns {
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
+}
+
+.server-pages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: 1.5rem;
+}
+
+.server-pages button {
+  display: grid;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  padding: 0 0.625rem;
+  border: 0;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-button);
+  color: var(--omp-ink);
+  font: inherit;
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background-color 150ms ease, opacity 150ms ease;
+}
+
+.server-pages button:hover:not(:disabled):not([aria-current]) {
+  background: var(--omp-item);
+}
+
+.server-pages button[aria-current="page"] {
+  background: var(--omp-primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.server-pages button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.server-pages button:focus-visible {
+  outline: 2px solid var(--omp-primary-hover);
+  outline-offset: 2px;
+}
+
+.server-pages-gap {
+  min-width: 1.25rem;
+  color: var(--omp-muted);
+  text-align: center;
+}
+
+.server-row {
+  display: flex;
+  height: 2.5rem;
+  gap: 0.5rem;
+}
+
+.server-row-status {
+  display: grid;
+  width: 2.25rem;
+  flex: none;
+  place-items: center;
+  border-radius: var(--omp-radius-small);
+  background: #7af1aa1a;
+}
+
+.server-row-status > span {
+  background-color: #2b8a57;
+}
+
+[data-theme="dark"] .server-row-status > span {
+  background-color: #7af1aa;
+}
+
+.server-row-status--locked {
+  background: #eb40343a;
+}
+
+.server-row-status--locked > span,
+[data-theme="dark"] .server-row-status--locked > span {
+  background-color: #eb4034;
+}
+
+.server-row-body {
+  flex: 1;
+  min-width: 0;
+  padding: 0 0.75rem;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-item);
+  font-size: 0.9375rem;
+  transition: background-color 0.3s;
+}
+
+.server-row-body:hover {
+  background: var(--omp-row);
+  transition-duration: 0.15s;
+}
+
+.server-row-name {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--omp-ink);
+  font-weight: 600;
+}
+
+.server-row-players-word {
+  display: none;
+}
+
+.server-row-name:hover {
+  color: var(--omp-accent);
+  text-decoration: none;
+}
+
+.server-row-name img {
+  flex: none;
+}
+
+.server-row-name span,
+.server-row-mode,
+.server-row-language {
+  overflow: hidden;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.server-row-mode,
+.server-row-language {
+  color: var(--omp-muted);
+}
+
+.server-row-address {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--omp-muted);
+  font-size: 0.875rem;
+}
+
+.server-row-address > span {
+  overflow: hidden;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.server-row-copy {
+  flex: none;
+  height: 1.375rem;
+  padding: 0 0.35rem;
+  border: 0;
+  border-radius: 4px;
+  background: var(--omp-primary);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.server-row-players {
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.server-row-players small {
+  color: var(--omp-faint);
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Server detail page */
+.server-back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--omp-accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.server-copy-state {
+  margin-left: 0.5rem;
+  color: var(--omp-faint);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.server-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.server-detail-stats {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.server-detail-stats strong {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--omp-ink);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.server-detail-updated {
+  margin: 0.75rem 0 0;
+  color: var(--omp-faint);
+  font-size: 0.875rem;
+}
+
+.omp-empty {
+  padding: 3rem 1rem;
+  color: var(--omp-muted);
+  text-align: center;
+}
+
+/* UID generator */
+.uid-step {
+  margin-top: 1.25rem;
+}
+
+.uid-generated {
+  outline: 1px solid var(--omp-accent);
+}
+
+.uid-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
+}
+
+.uid-note {
+  margin: 1.25rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--omp-line);
+  color: var(--omp-muted);
+}
+
+.omp-panel > p:first-child {
+  margin-top: 0;
+}
+
+/* Carousel: faded slides and previous/next buttons */
+[data-faded] {
+  opacity: 0.3;
+}
+
+[dir="rtl"] .omp-carousel-nav svg {
+  transform: scaleX(-1);
+}
+
+.omp-carousel-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.875rem;
+}
+
+.omp-carousel-nav button {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--omp-button);
+  color: var(--omp-ink);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity 150ms ease, background-color 150ms ease;
+}
+
+.omp-carousel-nav button:hover:not(:disabled) {
+  background: var(--omp-button-hover);
+}
+
+.omp-carousel-nav button:disabled {
+  cursor: default;
+  opacity: 0.4;
+}
+
+.omp-carousel-nav button:focus-visible {
+  outline: 2px solid var(--omp-accent);
+  outline-offset: 2px;
+}
+
+/* Page motion: things arrive once, then stay still. Off for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  /* On load. Set --enter on each element to stagger them. */
+  .omp-enter {
+    animation: ompRise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: calc(var(--enter, 0) * 80ms);
+  }
+
+  /* On scroll, see useScrollReveal. */
+  [data-reveal] {
+    transition:
+      opacity 700ms cubic-bezier(0.2, 0.7, 0.2, 1),
+      transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  [data-reveal="pending"] {
+    opacity: 0;
+    transform: translateY(1.75rem);
+  }
+
+  .button {
+    transition:
+      background-color 150ms ease,
+      border-color 150ms ease,
+      box-shadow 150ms ease,
+      transform 150ms ease;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+  }
+
+  .button:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  .button > svg {
+    transition: transform 200ms ease;
+  }
+
+  .button:hover > svg {
+    transform: translateX(3px);
+  }
+
+  .omp-carousel-nav button {
+    transition:
+      opacity 150ms ease,
+      background-color 150ms ease,
+      transform 150ms ease;
+  }
+
+  .omp-carousel-nav button:hover:not(:disabled) {
+    transform: scale(1.08);
+  }
+
+  .omp-carousel-nav button:active:not(:disabled) {
+    transform: scale(0.94);
+  }
+}
+
+@keyframes ompRise {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Blog */
+.blog-wrapper {
+  max-width: var(--omp-page-width);
+}
+
+.blog-list-page article,
+.blog-post-page article {
+  padding: 1.5rem;
+  border-radius: var(--omp-radius);
+  background: var(--omp-item);
+}
+
+/* Infima's .margin-bottom--xl (5rem) is !important inside a CSS layer, so it can't be
+   overridden directly. Pull the next post back up to leave a 0.75rem gap. */
+.blog-list-page article + article {
+  margin-top: -4.25rem;
+}
+
+.blog-wrapper article header h1,
+.blog-wrapper article header h2 {
+  margin-bottom: 0.4rem;
+  color: var(--omp-ink);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.blog-wrapper article header h2 a {
+  color: inherit;
+}
+
+.blog-wrapper article header h2 a:hover {
+  color: var(--omp-accent);
+  text-decoration: none;
+}
+
+.blog-wrapper article time,
+.blog-wrapper article header [class*="container_"] {
+  color: var(--omp-faint);
+  font-size: 0.875rem;
+}
+
+.blog-wrapper article footer a {
+  color: var(--omp-accent);
+}
+
+.blog-wrapper aside h3,
+.blog-wrapper [class*="sidebarItemTitle"] {
+  color: var(--omp-faint);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.blog-wrapper [class*="yearGroupHeading"] {
+  color: var(--omp-ink);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.blog-wrapper [class*="sidebarItemLink"] {
+  color: var(--omp-muted);
+  font-size: 0.9rem;
+}
+
+.blog-wrapper [class*="sidebarItemLinkActive"],
+.blog-wrapper [class*="sidebarItemLink"]:hover {
+  color: var(--omp-accent) !important;
+}
+
+/* Docs and shared theme parts */
+.menu__link {
+  border-radius: var(--omp-radius-small);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--omp-item);
+}
+
+.theme-admonition {
+  border-radius: var(--omp-radius);
+}
+
+.pagination-nav__link {
+  border-color: transparent;
+  border-radius: var(--omp-radius);
+  background: var(--omp-item);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--omp-accent);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .server-columns,
+  .server-row-body {
+    grid-template-columns: minmax(0, 1fr) 10rem 12.5rem 5.5rem;
+  }
+
+  .server-row-language,
+  .server-columns > :nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .omp-page {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .omp-page-head {
+    margin-bottom: 1.25rem;
+  }
+
+  .omp-page-head-text {
+    width: 100%;
+  }
+
+  .omp-page-subtitle {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .server-back {
+    display: block;
+    text-align: center;
+  }
+
+  .server-stats,
+  .server-detail-updated,
+  .server-detail-stats {
+    text-align: center;
+  }
+
+  .omp-carousel-nav {
+    justify-content: center;
+  }
+
+  .blog-wrapper article header {
+    text-align: center;
+  }
+
+  .blog-wrapper article header [class*="authorCol"],
+  .blog-wrapper article header .row {
+    justify-content: center;
+  }
+
+
+  .omp-panel {
+    padding: 1.125rem;
+  }
+
+  /* 16px or larger, or iPhones zoom the page when a field is tapped. Taller for thumbs. */
+  .omp-input,
+  .omp-select {
+    height: 2.75rem;
+    font-size: 1rem;
+  }
+
+  .button {
+    min-height: 2.75rem;
+  }
+
+  .omp-check {
+    height: 2.5rem;
+    flex: none;
+  }
+
+  /* Server list: search on its own line, the two selects beside each other */
+  .server-toolbar .omp-input,
+  .server-toolbar .button {
+    flex: 1 1 100%;
+  }
+
+  .server-toolbar .omp-select {
+    flex: 1 1 0;
+    width: 0;
+  }
+
+  .server-toolbar-foot {
+    display: block;
+  }
+
+  /* Filters stay on one line and swipe sideways, up to the screen edge */
+  .server-filters {
+    flex-wrap: nowrap;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .server-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .server-stats {
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .server-columns {
+    display: none;
+  }
+
+  .server-list {
+    margin-top: 0.75rem;
+  }
+
+  .server-row {
+    height: auto;
+    min-height: 4.75rem;
+    gap: 0.4rem;
+  }
+
+  .server-row-status {
+    width: 2rem;
+  }
+
+  .server-row-body {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    align-content: center;
+    gap: 0.35rem 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* Everything the desktop row shows: name, then mode and language, then address and players */
+  .server-row-name {
+    grid-column: 1 / -1;
+    min-height: 1.5rem;
+  }
+
+  .server-row-mode,
+  .server-row-language {
+    font-size: 0.875rem;
+  }
+
+  .server-row-language {
+    display: block;
+    max-width: 9rem;
+    text-align: right;
+  }
+
+  .server-row-players-word {
+    display: inline;
+  }
+
+  .server-row-copy {
+    height: 1.75rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Server detail */
+  .server-detail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .server-detail-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .server-detail-stats strong {
+    font-size: 1.25rem;
+    overflow-wrap: anywhere;
+  }
+
+  .server-detail-stats > .omp-panel:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .server-detail-updated {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+
+  .omp-page-actions,
+  .omp-page-actions > * {
+    width: 100%;
+  }
+
+  .uid-actions > * {
+    flex: 1 1 100%;
+  }
+
+  /* Blog */
+  .blog-list-page article,
+  .blog-post-page article {
+    padding: 1.125rem;
+  }
+
+  /* Menu: Download first and as a real button, links big enough for thumbs */
+  .navbar-sidebar__items .menu__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-sidebar__items .menu__link {
+    display: flex;
+    min-height: 2.75rem;
+    align-items: center;
+  }
+}
+
+/* Controls that need JavaScript step aside when it's off. Rows still scroll by swipe,
+   scrollbar or keyboard, and the phone menu's links move into the navbar. */
+/* A page notice: a quiet card with an icon, a short title and a close button */
+.omp-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  margin: 0 0 1.5rem;
+  padding: 1rem 0.75rem 1rem 1.125rem;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-item);
+  box-shadow: inset 0 0 0 1px var(--omp-line);
+}
+
+.omp-notice-icon {
+  flex: none;
+  margin-top: 0.15rem;
+  color: var(--omp-accent);
+  font-size: 1.125rem;
+}
+
+/* Only the icon carries the kind of notice */
+.omp-notice--warning .omp-notice-icon {
+  color: #d99a00;
+}
+
+.omp-notice--danger .omp-notice-icon {
+  color: #e5484d;
+}
+
+.omp-notice--tip .omp-notice-icon {
+  color: #30a46c;
+}
+
+[data-theme="dark"] .omp-notice--warning .omp-notice-icon {
+  color: #f5c045;
+}
+
+[data-theme="dark"] .omp-notice--danger .omp-notice-icon {
+  color: #ff6369;
+}
+
+[data-theme="dark"] .omp-notice--tip .omp-notice-icon {
+  color: #4cc38a;
+}
+
+.omp-notice-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.omp-notice-text strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.omp-notice-text p {
+  max-width: 68ch;
+  margin: 0;
+  color: var(--omp-muted);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.omp-notice-close {
+  display: grid;
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  margin-top: -0.25rem;
+  border: 0;
+  border-radius: var(--omp-radius-small);
+  background: none;
+  color: var(--omp-muted);
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.omp-notice-close:hover:not(:disabled) {
+  background: var(--omp-button);
+  color: var(--omp-ink);
+}
+
+.omp-notice-close:focus-visible {
+  outline: 2px solid var(--omp-primary-hover);
+  outline-offset: 2px;
+}
+
+.omp-noscript {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-item);
+  color: var(--omp-muted);
+}
+
+@media (scripting: none) {
+  .omp-carousel-nav,
+  .loading-banner,
+  .navbar__items--right [class*="colorModeToggle"],
+  .navbar__items--right [class*="navbarSearchContainer"] {
+    display: none;
+  }
+}
+
+@media (scripting: none) and (max-width: 996px) {
+  .navbar__toggle {
+    display: none;
+  }
+
+  .navbar.navbar--fixed-top {
+    position: static;
+    height: auto;
+  }
+
+  .navbar__inner {
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+  }
+
+  .navbar__items,
+  .navbar__items--right {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 0.25rem;
+  }
+
+  .navbar__brand {
+    flex: 1 1 100%;
+  }
+
+  .navbar__items .navbar__item.navbar__link {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .navbar__items .navbar__item.dropdown {
+    display: inline-block;
+  }
+
+  .navbar__items--right > .navbar__item.navbar__link,
+  .navbar__items--right > .navbar__item.dropdown > .navbar__link {
+    display: inline-flex;
+  }
+}

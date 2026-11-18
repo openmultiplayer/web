@@ -207,7 +207,7 @@ const config: Config = {
           onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: ["./src/css/custom.css", "./src/css/ui.css"],
         },
       } satisfies Preset.Options,
     ],
@@ -302,23 +302,25 @@ const config: Config = {
         {
           type: "docSidebar",
           sidebarId: "docsSidebar",
-          position: "right",
+          position: "left",
           label: "Docs",
+          className: "navbar-icon navbar-icon-docs",
         },
-        { to: "/blog", label: "Blog", position: "right" },
-        { to: "https://forum.open.mp/", label: "Forums", position: "right" },
-        { to: "/servers", label: "Servers", position: "right" },
-        { to: "/partners", label: "Partners", position: "right" },
+        { to: "/blog", label: "Blog", position: "left", className: "navbar-icon navbar-icon-blog" },
+        { to: "https://forum.open.mp/", label: "Forums", position: "left", className: "navbar-icon navbar-icon-forums" },
+        { to: "/servers", label: "Servers", position: "left", className: "navbar-icon navbar-icon-servers" },
+        { to: "/partners", label: "Partners", position: "left", className: "navbar-icon navbar-icon-partners" },
+        {
+          href: "https://opencollective.com/openmultiplayer",
+          label: "Donate to us",
+          position: "left",
+          className: "navbar-icon navbar-icon-donate navbar-donate",
+        },
         // {
         //   href: "https://github.com/openmultiplayer",
         //   label: "GitHub",
         //   position: "right",
         // },
-        {
-          href: "https://opencollective.com/openmultiplayer",
-          label: "Donate",
-          position: "right",
-        },
         {
           type: "localeDropdown", // This adds the language switcher
           position: "right",
@@ -327,12 +329,14 @@ const config: Config = {
     },
     footer: {
       logo: {
-        alt: "open.mp logo",
-        src: "images/assets/logo.svg",
+        alt: "open.mp",
+        src: "images/assets/wordmark-coloured.svg",
+        href: "/",
+        height: 44,
       },
       links: [
         {
-          title: "Documentations",
+          title: "Documentation",
           items: [
             {
               label: "Introduction",
@@ -376,6 +380,14 @@ const config: Config = {
         {
           title: "More",
           items: [
+            {
+              label: "Download Launcher",
+              to: "/downloads/launcher",
+            },
+            {
+              label: "Download Server",
+              to: "/downloads/server",
+            },
             {
               label: "Servers",
               to: "/servers",

@@ -1,10 +1,11 @@
+import { Page, PageHeader } from "@site/src/components/ui/Page";
 import Link from "@docusaurus/Link";
 import Translate, { translate } from "@docusaurus/Translate";
 import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
 import React, { useState } from "react";
 
-import Admonition from "../../components/Admonition";
+import { Notice } from "../../components/ui/Notice";
 import { INITIAL_VISIBLE_RELEASES } from "./constants";
 import styles from "../../pages/downloads.module.css";
 import BrowserOnly from "@docusaurus/BrowserOnly";
@@ -135,24 +136,23 @@ export function ReleaseListPage({ config }: ReleaseListPageProps): React.ReactEl
 
   return (
     <Layout title={config.layoutTitle} description={config.layoutDescription}>
-      <main className={styles.pageContainer}>
-        <Heading as="h1" className={styles.pageTitle}>
-          {config.pageTitle}
-        </Heading>
-        <p className={styles.pageSubtitle}>{config.pageSubtitle}</p>
+      <Page narrow>
+        <PageHeader title={config.pageTitle} subtitle={config.pageSubtitle} />
 
         {config.announcement && (
-          <div className={styles.topAdmonition}>
-            <Admonition type={config.announcement.type} title={config.announcement.title}>
-              {config.announcement.body}
-            </Admonition>
-          </div>
+          <Notice
+            className={styles.topNotice}
+            type={config.announcement.type}
+            title={config.announcement.title}
+          >
+            {config.announcement.body}
+          </Notice>
         )}
 
         {visibleReleases.map((release, index) => {
           const assets = release.assets;
           return (
-            <div key={release.tag + release.publishedAt} className={styles.productSection}>
+            <div key={release.tag + release.publishedAt} className={`omp-panel ${styles.release}`}>
               <Heading as="h2" className={styles.productTitle}>
                 {release.tag}
                 {index === 0 && (
@@ -179,11 +179,13 @@ export function ReleaseListPage({ config }: ReleaseListPageProps): React.ReactEl
               </BrowserOnly>
 
               {release.admonition && (
-                <div className={styles.releaseAdmonition}>
-                  <Admonition type={release.admonition.type} title={release.admonition.title}>
-                    {release.admonition.body}
-                  </Admonition>
-                </div>
+                <Notice
+                  className={styles.releaseNotice}
+                  type={release.admonition.type}
+                  title={release.admonition.title}
+                >
+                  {release.admonition.body}
+                </Notice>
               )}
 
               {release.highlights && release.highlights.length > 0 && (
@@ -219,7 +221,7 @@ export function ReleaseListPage({ config }: ReleaseListPageProps): React.ReactEl
                   assets.map((asset) => (
                     <Link
                       key={asset.url}
-                      className={`button button--primary button--lg ${styles.downloadButton}`}
+                      className={`button button--primary ${styles.downloadButton}`}
                       to={asset.url}
                     >
                       <div className={styles.downloadLabel}>
@@ -229,7 +231,7 @@ export function ReleaseListPage({ config }: ReleaseListPageProps): React.ReactEl
                     </Link>
                   ))
                 ) : (
-                  <Link className={`button button--primary button--lg ${styles.downloadButton}`} to={release.htmlUrl}>
+                  <Link className={`button button--primary ${styles.downloadButton}`} to={release.htmlUrl}>
                     <Translate id="downloads.release.viewOnGitHub" description="Fallback button per release">
                       View release on GitHub
                     </Translate>
@@ -270,7 +272,7 @@ export function ReleaseListPage({ config }: ReleaseListPageProps): React.ReactEl
         {hasMore && (
           <div className={styles.showMoreWrapper}>
             <button
-              className={styles.showMoreButton}
+              className="button button--secondary"
               onClick={() => setShowAll((prev) => !prev)}
               type="button"
             >
@@ -291,15 +293,15 @@ export function ReleaseListPage({ config }: ReleaseListPageProps): React.ReactEl
           </div>
         )}
 
-        <div className={styles.footerTrust}>
-          <div className={styles.trustSection}>
+        <div className={`omp-panel ${styles.trust}`}>
+          <div>
             <p className={styles.trustText}>
               <Translate id="downloads.opensourceTrust" description="Open source trust message for downloads pages">
                 Every release is open source. Build from source, or download directly from GitHub.
               </Translate>
             </p>
             <div className={styles.trustActions}>
-              <Link className={`button button--secondary button--lg ${styles.downloadButton}`} to={config.releasesUrl}>
+              <Link className="button button--secondary" to={config.releasesUrl}>
                 <Translate id="downloads.downloadFromGithub" description="Button label to open GitHub releases page">
                   Download from GitHub
                 </Translate>
@@ -307,7 +309,7 @@ export function ReleaseListPage({ config }: ReleaseListPageProps): React.ReactEl
             </div>
           </div>
         </div>
-      </main>
+      </Page>
     </Layout>
   );
 }
