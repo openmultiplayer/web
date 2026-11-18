@@ -405,5 +405,21 @@
   },
   "navbar.item.Donate": {
     "message": "Donasi"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Filter dokumentasi",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Hapus filter",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Tidak ada dokumen yang cocok",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Coba kata kunci lain.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
   }
 }

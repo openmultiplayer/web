@@ -405,5 +405,21 @@
   },
   "navbar.item.Donate": {
     "message": "บริจาค"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "กรองเอกสาร",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "ล้างตัวกรอง",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "ไม่พบเอกสารที่ตรงกัน",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "ลองใช้คำค้นหาอื่น",
+    "description": "Hint shown when the docs sidebar filter has no matches"
   }
 }

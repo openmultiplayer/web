@@ -124,6 +124,22 @@
     "message": "返回顶部",
     "description": "返回顶部按钮的ARIA标签"
   },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "筛选文档",
+    "description": "文档侧边栏筛选输入框的占位文本"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "清除筛选",
+    "description": "清除文档侧边栏筛选的ARIA标签"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "没有匹配的文档",
+    "description": "文档侧边栏筛选无结果时显示的标题"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "换个关键词试试。",
+    "description": "文档侧边栏筛选无结果时显示的提示"
+  },
   "theme.blog.archive.title": {
     "message": "归档",
     "description": "博客归档页面的页面标题和主标题"

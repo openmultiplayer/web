@@ -1,0 +1,353 @@
+.container {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow: visible;
+}
+
+/* Keep the divider visible above the tree scrollbar. */
+@media (min-width: 997px) {
+  .container::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 1px;
+    background: var(--ifm-toc-border-color, var(--ifm-color-emphasis-200));
+    content: '';
+    pointer-events: none;
+  }
+}
+
+.filterBar {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  padding: 0 0 0.5rem 0;
+}
+
+@media (min-width: 997px) {
+  .filterBar {
+    padding-right: 0.5rem;
+  }
+}
+
+.filterField {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.filterIcon {
+  position: absolute;
+  left: 0.7rem;
+  width: 1rem;
+  height: 1rem;
+  color: var(--ifm-color-emphasis-500);
+  pointer-events: none;
+}
+
+.filterInput {
+  width: 100%;
+  height: 2.25rem;
+  margin: 0;
+  padding: 0 2.5rem 0 2.2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 0.5rem;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    background-color 150ms ease;
+}
+
+.filterInputWithActions {
+  padding-right: 5.25rem;
+}
+
+.filterInput::placeholder {
+  color: var(--ifm-color-emphasis-500);
+  opacity: 1;
+}
+
+.filterInput:hover {
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.filterInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px rgba(144, 131, 210, 0.18);
+  box-shadow: 0 0 0 3px
+    color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+}
+
+.filterInput::-webkit-search-cancel-button,
+.filterInput::-webkit-search-decoration {
+  display: none;
+}
+
+.clearButton {
+  position: absolute;
+  right: 0.4rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-600);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition:
+    background-color 150ms ease,
+    color 150ms ease,
+    transform 150ms ease;
+}
+
+.filterCount {
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.clearButton svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.clearButton:hover {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.clearButton:active {
+  transform: translateY(-50%) scale(0.92);
+}
+
+.clearButton:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.treeViewport {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.treeViewport:focus {
+  outline: none;
+}
+
+.highlight {
+  padding: 0;
+  border-radius: 0.2em;
+  background: rgba(144, 131, 210, 0.22);
+  background: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 22%,
+    transparent
+  );
+  color: inherit;
+}
+
+.emptyState {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.25rem 1rem 1rem;
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+  pointer-events: none;
+}
+
+.emptyIcon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-bottom: 0.6rem;
+  color: var(--ifm-color-emphasis-400);
+}
+
+.emptyTitle {
+  color: var(--ifm-heading-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.emptyQuery {
+  max-width: 100%;
+  margin-top: 0.2rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
+.emptyHint {
+  margin-top: 0.6rem;
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.78rem;
+}
+
+.backToTop {
+  --back-to-top-size: 2.25rem;
+  --back-to-top-icon-size: 1rem;
+
+  position: absolute;
+  right: 2rem;
+  bottom: 1.25rem;
+  z-index: 4;
+}
+
+@media (max-width: 996px) {
+  .filterInput {
+    /* Avoid the automatic zoom-on-focus in mobile Safari. */
+    font-size: 1rem;
+  }
+}
+
+.tree {
+  outline: none;
+  overflow-x: hidden !important;
+  scrollbar-gutter: stable;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animated [role='treeitem'] {
+    transition:
+      top 240ms var(--ifm-transition-timing-default, ease-in-out),
+      height 240ms var(--ifm-transition-timing-default, ease-in-out),
+      opacity 120ms ease-out 120ms;
+  }
+
+  /* Fade in new rows after the rows below make room. */
+  @starting-style {
+    .animated [role='treeitem'] {
+      opacity: 0;
+    }
+  }
+}
+
+/* Disable row transitions while scrolling. */
+.noTransition [role='treeitem'] {
+  transition: none !important;
+  opacity: 1 !important;
+}
+
+.treeRow {
+  width: 100%;
+  min-width: 0 !important;
+  box-sizing: border-box;
+}
+
+.treeRow:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.staticList {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.staticRow {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.rowInner {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  /* Virtual rows include the gap that .menu__list used to add. */
+  padding-top: 4px;
+  margin-top: 0 !important;
+}
+
+/* Prevent links from overflowing their virtual row. */
+.rowInner :global(.menu__link) {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.categoryWrapper {
+  width: 100%;
+  min-width: 0;
+}
+
+.categoryLink {
+  overflow: hidden;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Two-line clamp; flex items blockify -webkit-box, so use max-height. */
+.categoryLabel,
+.linkLabel {
+  display: block;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+  max-height: 2.5rem; /* two lines at the 1.25 line-height */
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.menuExternalLink {
+  align-items: center;
+}
+
+.htmlRow {
+  width: 100%;
+  margin: 0 !important;
+}
+
+:global(.menu__link--sublist-caret)::after {
+  margin-left: var(--ifm-menu-link-padding-vertical);
+}

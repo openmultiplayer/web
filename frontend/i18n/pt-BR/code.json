@@ -696,5 +696,21 @@
   "notFound.servers": {
     "message": "Servidores",
     "description": "404 page servers button"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Filtrar documentação",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Limpar filtro",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Nenhum documento correspondente",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Tente outro termo de pesquisa.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
   }
 }

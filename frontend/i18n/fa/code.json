@@ -354,5 +354,21 @@
   },
   "navbar.item.Donate": {
     "message": "حمایت مالی"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "فیلتر مستندات",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "پاک کردن فیلتر",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "مستند مطابقی یافت نشد",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "عبارت جستجوی دیگری را امتحان کنید.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
   }
 }

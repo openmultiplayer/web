@@ -1,0 +1,15 @@
+.mobileMenu {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* Keep the back button intact when the tree takes the remaining height. */
+:global(.navbar-sidebar__back) {
+  flex: 0 0 auto;
+}
+
+/* Only the panel that contains the docs menu becomes a flex column. */
+:global(.navbar-sidebar__item):has(.mobileMenu) {
+  display: flex;
+  flex-direction: column;
+}

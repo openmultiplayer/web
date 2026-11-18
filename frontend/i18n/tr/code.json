@@ -354,5 +354,21 @@
   },
   "navbar.item.Donate": {
     "message": "Bağış Yap"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Belgeleri filtrele",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Filtreyi temizle",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Eşleşen belge yok",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Farklı bir arama terimi deneyin.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
   }
 }
