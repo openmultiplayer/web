@@ -10,11 +10,11 @@ tags: []
 
 Exibe uma mensagem no chat para todos os jogadores. Este é um equivalente multijogador de [SendClientMessage](SendClientMessage).
 
-| Nome | Descrição |
-| ---------------- | ------------------------------------------------- |
-| colour | A cor da mensagem (formato hexadecimal 0xRRGGBBAA). |
-| const format[] | A mensagem a ser exibida (máximo de 144 caracteres).         |
-| OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag.        |
+| Nome             | Descrição                                                |
+| ---------------- | -------------------------------------------------------- |
+| colour           | A cor da mensagem (formato hexadecimal 0xRRGGBBAA).      |
+| const format[]   | A mensagem a ser exibida **(máximo de 144 caracteres)**. |
+| OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag.         |
 
 ## Retornos
 

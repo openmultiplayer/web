@@ -13,7 +13,7 @@ Ova funkcija ti omogućava da omogućite/onemogućite iscrtavanje nametag-ova, h
 | ------------ | ------------------------------------------------- |
 | playerid     | Igrač koji će vidjeti rezultate ove funkcije.     |
 | showplayerid | Player čiji će nametag biti skriven ili prikazan. |
-| show         | 1-prikaži nametag, 0-sakrij nametag.              |
+| show         | **1**-prikaži nametag, **0**-sakrij nametag.      |
 
 ## Returns
 

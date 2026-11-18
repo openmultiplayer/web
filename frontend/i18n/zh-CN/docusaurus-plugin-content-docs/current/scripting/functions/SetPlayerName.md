@@ -59,9 +59,9 @@ if (strcmp(cmdtext, "/superman", true) == 0)
 :::warning
 
 - 仅修改大小写的昵称变更无效（如"John"改为"JOHN"）
-- 在 [OnPlayerConnect](../callbacks/OnPlayerConnect) 回调中使用时，新昵称对连接中的玩家不可见
+- 在 [OnPlayerConnect](../callbacks/OnPlayerConnect) 回调中使用时，新昵称对连接中的玩家**不**可见
 - 传递空字符串作为新昵称会导致服务器崩溃（open.mp 版本已修复）
-- 通过此函数最多可设置 24 字符昵称，但玩家通过 SA-MP 服务器浏览器加入时昵称不得超过 20 字符
+- 通过此函数最多可设置 **24** 字符昵称，但玩家通过 SA-MP 服务器浏览器加入时昵称不得超过 **20** 字符
 
 :::
 

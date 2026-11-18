@@ -21,9 +21,9 @@ Retrieves the start and end (hit) position of the last bullet a player fired.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**0**: The function failed to execute. The player specified does not exist.
 
 The position of the last bullet is stored in the specified variables.
 
@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-This function will only work when lag compensation is enabled. If the player hit nothing, the hit positions will be 0. This means you can't currently calculate how far a bullet travels through open air.
+This function will only work when lag compensation is **enabled**. If the player hit nothing, the hit positions will be 0. This means you can't currently calculate how far a bullet travels through open air.
 
 :::
 

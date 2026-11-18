@@ -16,9 +16,9 @@ Checks if a player is streamed in another player's client.
 
 ## Returns
 
-**true** - The player is streamed in.
+**true** - The player _is_ streamed in.
 
-**false** - The player is not streamed in.
+**false** - The player is _not_ streamed in.
 
 ## Examples
 

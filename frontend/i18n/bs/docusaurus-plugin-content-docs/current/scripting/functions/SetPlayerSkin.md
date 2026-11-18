@@ -16,9 +16,9 @@ Postavi skin igrača. Igračev skin je njegov model karaktera.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
 Zapamti da je 'success' (uspješno) prijavljeno i kada je ID skina nevažeći (nije 0-311, ili 74), ali skin će biti postavljen na ID 0 (CJ).
 
@@ -90,7 +90,7 @@ SetPlayerSkinFix(playerid, skinid)
 
 :::warning
 
-Poznati Bug(ovi):
+**Poznati Bug(ovi):**
 
 - Ako je igračeva koža postavljena kada čuči, u vozilu ili izvodi određene animacije, postat će smrznuti ili na neki drugi način uklonjeni. To se može popraviti pomoću TogglePlayerControllable. Igrači se mogu otkriti kako su čučali preko GetPlayerSpecialAction (SPECIAL_ACTION_DUCK).
 - Ostali igrači oko igrača mogu se srušiti ako je u vozilu ili ako ulazi/izlazi iz vozila.

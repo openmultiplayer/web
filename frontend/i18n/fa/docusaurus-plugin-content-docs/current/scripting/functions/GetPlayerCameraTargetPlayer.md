@@ -34,7 +34,7 @@ if (IsPlayerAdmin(playerTarget))
 
 :::warning
 
-این تابع را با GetPlayerTargetPlayer اشتباه نگیرید. GetPlayerTargetPlayer شناسه بازیکنی که playerid با سلاح به آن نشانه‌گیری می‌کند را برمی‌گرداند. GetPlayerCameraTargetPlayer شناسه بازیکنی که playerid به آن نگاه می‌کند (نقطه مرجع مرکز صفحه است) را برمی‌گرداند.
+این تابع را با GetPlayerTargetPlayer اشتباه نگیرید. GetPlayerTargetPlayer شناسه بازیکنی که playerid با سلاح به آن **نشانه‌گیری می‌کند** را برمی‌گرداند. GetPlayerCameraTargetPlayer شناسه بازیکنی که playerid به آن **نگاه می‌کند** (نقطه مرجع مرکز صفحه است) را برمی‌گرداند.
 
 :::
 

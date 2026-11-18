@@ -443,7 +443,7 @@ PAWNO 不识别此类注释格式，仍会将函数加入列表，而编译器�
 native my_print(const string[]) = print;
 ```
 
-此时`print`函数在脚本层面已不存在。虽然 SA:MP 底层仍保留此函数，且编译器通过"= print"知晓其真实名称，但在 PAWN 代码中调用`print()`将报错，因其已被重命名为`my_print`。鉴于`print`的脚本级定义已移除，开发者可自由重新定义：
+此时`print`函数在脚本层面已不存在。虽然 SA:MP 底层仍保留此函数，且编译器通过"= print"知晓其真实名称，但在 PAWN 代码中调用`print`将报错，因其已被重命名为`my_print`。鉴于`print`的脚本级定义已移除，开发者可自由重新定义：
 
 ```c
 print(const string[])
@@ -453,7 +453,7 @@ print(const string[])
 }
 ```
 
-此后脚本中所有`print()`调用均会触发自定义函数而非原函数。此例中，每次调用会先输出提示信息再打印原始内容。
+此后脚本中所有`print`调用均会触发自定义函数而非原函数。此例中，每次调用会先输出提示信息再打印原始内容。
 
 ## `new`
 
@@ -502,7 +502,7 @@ printf("%d", myVar);
 
 全局变量(即函数外声明的变量)通过`new`声明后，可在声明位置之后的所有位置使用：
 
-文件 File1.pwn：
+**文件 File1.pwn：**
 
 ```c
 MyFunc1()
@@ -525,7 +525,7 @@ MyFunc2()
 #include "file2.pwn"
 ```
 
-文件 file2.pwn：
+**文件 file2.pwn：**
 
 ```c
 MyFunc3()
@@ -600,7 +600,7 @@ main()
 
 公共函数在 amx 文件中存储其文本名称，而普通函数仅存储跳转地址，这为反编译增加了难度。这种机制使得可以通过名称从脚本外部调用函数，同时也支持在脚本内部通过名称调用函数(需通过跨脚本上下文切换)。原生函数(native)调用机制与公共函数形成互补——前者从脚本内部调用外部函数，后者则反之。结合两者可实现如 SetTimer、SetTimerEx、CallRemoteFunction 和 CallLocalFunction 等通过名称(而非地址)调用的函数。
 
-通过名称调用函数的示例：
+**通过名称调用函数的示例：**
 
 ```c
 forward MyPublicFunc();
@@ -699,7 +699,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn
+**file2.pwn**
 
 ```c
 MyFunc3()
@@ -711,7 +711,7 @@ MyFunc3()
 
 将其修改为静态将得到：
 
-file1.pwn
+**file1.pwn**
 
 ```c
 MyFunc1()
@@ -734,7 +734,7 @@ MyFunc2()
 #include "file2.pwn"
 ```
 
-文件 file2.pwn
+**文件 file2.pwn**
 
 ```c
 MyFunc3()

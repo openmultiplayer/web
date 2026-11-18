@@ -16,7 +16,7 @@ Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a 
 
 ## ส่งคืน
 
-The ID of the component installed in the specified slot. Returns 0 if no component in specified vehicle's specified slot, or if vehicle doesn't exist.
+The ID of the component installed in the specified slot. Returns **0** if no component in specified vehicle's specified slot, or if vehicle doesn't exist.
 
 ## ตัวอย่าง
 
@@ -39,7 +39,12 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Known Bug(s): Doesn't work for CARMODTYPE_STEREO. Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last. Both rear bull bars and rear bumper components are saved in the CARMODTYPE_REAR_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last. Both left side skirt and right side skirt are saved in the CARMODTYPE_SIDESKIRT slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
+**Known Bug(s):**
+
+- Doesn't work for `CARMODTYPE_STEREO`.
+- Both front bull bars and front bumper components are saved in the `CARMODTYPE_FRONT_BUMPER` slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
+- Both rear bull bars and rear bumper components are saved in the `CARMODTYPE_REAR_BUMPER` slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
+- Both left side skirt and right side skirt are saved in the `CARMODTYPE_SIDESKIRT` slot. If a vehicle has both of them installed, this function will only return the one which was installed last.
 
 :::
 

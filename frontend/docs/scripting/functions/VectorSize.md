@@ -17,7 +17,7 @@ Returns the norm (length) of the provided vector.
 
 ## Returns
 
-The norm (length) of the provided vector as a float.
+The norm (length) of the provided vector as a **float**.
 
 ## Examples
 

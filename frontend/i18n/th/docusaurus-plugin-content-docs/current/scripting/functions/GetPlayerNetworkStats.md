@@ -17,7 +17,7 @@ Gets a player's network stats and saves them into a string.
 
 ## ส่งคืน
 
-This function always returns 1.
+This function always returns **1**.
 
 ## ตัวอย่าง
 

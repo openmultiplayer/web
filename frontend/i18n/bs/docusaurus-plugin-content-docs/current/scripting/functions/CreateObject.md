@@ -9,16 +9,16 @@ tags: []
 
 Kreira objekat na određenim kordinatama iz igre.
 
-| Ime                | Deskripcija                                                                                                                                                                          |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| modelid            | Model za kreirati.                                                                                                                                                                   |
-| Float:X            | X kordinata za kreirati objekat.                                                                                                                                                     |
-| Float:Y            | Y kordinata za kreirati objekat.                                                                                                                                                     |
-| Float:Z            | Z kordinata za kreirati objekat.                                                                                                                                                     |
-| Float:rX           | X rotacija za objekat.                                                                                                                                                               |
-| Float:rY           | Y rotacija za objekat.                                                                                                                                                               |
-| Float:rZ           | Z rotacija za objekat.                                                                                                                                                               |
-| Float:DrawDistance | (neobavezno) Udaljenost na kojoj San Andreas prikazuje predmete. 0.0 uzrokovat će prikazivanje objekata na zadanim udaljenostima. Upotrebljiv od 0.3b. Ograničeno na 300 prije 0.3x. |
+| Ime                | Deskripcija                                                                                                                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| modelid            | Model za kreirati.                                                                                                                                                                       |
+| Float:X            | X kordinata za kreirati objekat.                                                                                                                                                         |
+| Float:Y            | Y kordinata za kreirati objekat.                                                                                                                                                         |
+| Float:Z            | Z kordinata za kreirati objekat.                                                                                                                                                         |
+| Float:rX           | X rotacija za objekat.                                                                                                                                                                   |
+| Float:rY           | Y rotacija za objekat.                                                                                                                                                                   |
+| Float:rZ           | Z rotacija za objekat.                                                                                                                                                                   |
+| Float:DrawDistance | (neobavezno) Udaljenost na kojoj San Andreas prikazuje predmete. 0.0 uzrokovat će prikazivanje objekata na zadanim udaljenostima. Upotrebljiv od 0.3b. Ograničeno na **300** prije 0.3x. |
 
 ## Primjeri
 

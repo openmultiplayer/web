@@ -18,13 +18,13 @@ Disables collisions between occupied vehicles for a player.
 | Name     | Description                                                   |
 | -------- | ------------------------------------------------------------- |
 | playerid | The ID of the player for whom you want to disable collisions. |
-| disable  | 1 to disable collisions, 0 to enable collisions.              |
+| disable  | **1** to disable collisions, **0** to enable collisions.      |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**0**: The function failed to execute. The player specified does not exist.
 
 ## ตัวอย่าง
 

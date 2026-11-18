@@ -18,9 +18,9 @@ Shows 'game text' (on-screen text) for a certain length of time for a specific p
 
 ## ส่งคืน
 
-1: The function executed successfully. Success is reported when the style and/or time is invalid. Nothing will happen though (no text displayed). May also cause game crashes.
+**1**: The function executed successfully. Success is reported when the style and/or time is invalid. Nothing will happen though (no text displayed). May also cause game crashes.
 
-0: The function failed to execute. This means either the string is null or the player is not connected.
+**0**: The function failed to execute. This means either the string is null or the player is not connected.
 
 ## ตัวอย่าง
 

@@ -44,7 +44,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 :::note
 
 هذا الكالب باك لا يتم إستدعائه من قبل (ChangeVehiclePaintjob).
-يجب عليك إستعمال OnVehicleChangePaintJob من vSync لمعرفة إن قام اللاعب بدفع ثمن تغيير الطلاء
+يجب عليك إستعمال OnVehicleChangePaintJob من vSync لمعرفة إن قام اللاعب **بدفع ثمن** تغيير الطلاء
 
 :::
 

@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-Ito ay mag ru-run ng .rec file na kailangang i-save sa npcmodes/recordings folder. Ang mga file na ito ay nagpapahintulot sa NPC na sundin ang ilang mga aksyon. Ang kanilang mga aksyon ay maaaring maitala nang manu-mano. Para sa karagdagang impormasyon, tingnan ang mga kaugnay na function.
+Ito ay mag ru-run ng .rec file na kailangang i-save sa `npcmodes/recordings` folder. Ang mga file na ito ay nagpapahintulot sa NPC na sundin ang ilang mga aksyon. Ang kanilang mga aksyon ay maaaring maitala nang manu-mano. Para sa karagdagang impormasyon, tingnan ang mga kaugnay na function.
 
 | Name         | Description                                                    |
 | ------------ | -------------------------------------------------------------- |

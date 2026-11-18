@@ -19,9 +19,9 @@ Callback này được gọi khi một người chơi bị nhận sát thương.
 
 ## Giá trị trả về
 
-1 - Callback sẽ không được gọi trong các filterscripts khác.
+**1** - Callback sẽ không được gọi trong các filterscripts khác.
 
-0 - Cho phép callback này được gọi trong các filterscripts khác.
+**0** - Cho phép callback này được gọi trong các filterscripts khác.
 
 Nó luôn được gọi đầu tiên trong filterscripts nên trả về 1 sẽ chặn các filterscripts khác không thấy được nó.
 
@@ -68,17 +68,17 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 :::note
 
-- weaponid sẽ trả về 37 (súng phun lửa) từ bất kỳ nguồn lửa nào (ví dụ: molotov, 18).
-- weaponid sẽ trả về 51 từ bất kỳ vũ khí nào tạo ra vụ nổ (ví dụ: RPG, lựu đạn).
-- **playerid** là người duy nhất có thể gọi callback này.
-- amount luôn là sát thương tối đa mà weaponid có thể gây ra, ngay cả khi máu còn lại ít hơn sát thương tối đa đó. Vì vậy, khi một người chơi có 100.0 máu và bị bắn bằng Desert Eagle với sát thương là 46.2, cần 3 phát bắn để giết người chơi đó. Cả 3 phát bắn đều sẽ hiển thị lượng sát thương là 46.2, mặc dù khi phát bắn cuối cùng trúng đích, người chơi chỉ còn 7.6 máu.
+- `weaponid` sẽ trả về 37 (súng phun lửa) từ bất kỳ nguồn lửa nào (ví dụ: molotov, 18).
+- `weaponid` sẽ trả về 51 từ bất kỳ vũ khí nào tạo ra vụ nổ (ví dụ: RPG, lựu đạn).
+- `playerid` là người duy nhất có thể gọi callback này.
+- `amount` luôn là sát thương tối đa mà weaponid có thể gây ra, ngay cả khi máu còn lại ít hơn sát thương tối đa đó. Vì vậy, khi một người chơi có 100.0 máu và bị bắn bằng Desert Eagle với sát thương là 46.2, cần 3 phát bắn để giết người chơi đó. Cả 3 phát bắn đều sẽ hiển thị lượng sát thương là 46.2, mặc dù khi phát bắn cuối cùng trúng đích, người chơi chỉ còn 7.6 máu.
 
 :::
 
 :::warning
 
 - [GetPlayerHealth](../functions/GetPlayerHealth) và [GetPlayerArmour](../functions/GetPlayerArmour) sẽ trả về lượng máu và giáp cũ của người chơi trước khi callback này được gọi.
-- Luôn kiểm tra xem issuerid có hợp lệ trước khi sử dụng nó làm chỉ số mảng.
+- **Luôn** kiểm tra xem `issuerid` có hợp lệ trước khi sử dụng nó làm chỉ số mảng.
 
 :::
 

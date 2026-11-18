@@ -18,7 +18,7 @@ Retorna a classe do skin personalizado do jogador baixado do servidor.
 
 ## Retornos
 
-O ID de skin personalizado especificado em [AddCharModel](AddCharModel) newid.
+O ID de skin personalizado especificado em [AddCharModel](AddCharModel) **newid**.
 
 ## Exemplos
 

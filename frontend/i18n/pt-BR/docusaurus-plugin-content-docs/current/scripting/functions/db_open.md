@@ -15,7 +15,7 @@ A função é usada para abrir uma conexão com um arquivo de banco de dados SQL
 
 ## Retorno
 
-Retorna o índice (começando em 1) da conexão com o banco de dados.
+Retorna o índice (**começando em 1**) da conexão com o banco de dados.
 
 ## Exemplos
 
@@ -62,7 +62,7 @@ public OnGameModeExit()
 :::warning
 
 - Ele criará um novo arquivo de banco de dados SQLite, se não houver nenhum arquivo de banco de dados SQLite com o mesmo nome de arquivo disponível.
-- Feche sua conexão com o banco de dados SQLite com [db_close](db_close)!
+- **Feche** sua conexão com o banco de dados SQLite com [db_close](db_close)!
 
 :::
 

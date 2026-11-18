@@ -21,9 +21,9 @@ Shows the player a synchronous (only one at a time) dialog box.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the player is not connected.
+**0**: The function failed to execute. This means the player is not connected.
 
 ## ตัวอย่าง
 
@@ -67,7 +67,8 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 :::tip
 
 - It is recommended to use enumerations (see above) or definitions (#define) to determine which IDs dialogs have, to avoid confusion in the future. You should never use literal numbers for IDs - it gets confusing.
-- Use color embedding for multiple colors in the text. Using -1 as dialogid closes all dialogs currently shown on the client's screen.
+- Use color embedding for multiple colors in the text.
+- Using **-1** as `dialogid` closes all dialogs currently shown on the client's screen.
 
 :::
 

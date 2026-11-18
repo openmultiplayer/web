@@ -21,9 +21,9 @@ Acest callback este apelat atunci când un vehicul reapare.
 
 ## Returnări
 
-0 - Va împiedica alte filterscript-uri să primească acest apel invers.
+**0** - Va împiedica alte filterscript-uri să primească acest apel invers.
 
-1 - Indică faptul că acest callback va fi transmis următorului filterscript.
+**1** - Indică faptul că acest callback va fi transmis următorului filterscript.
 
 Este întotdeauna numit primul în filterscript-uri.
 

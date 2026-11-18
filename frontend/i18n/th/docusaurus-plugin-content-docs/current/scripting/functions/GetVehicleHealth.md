@@ -16,9 +16,9 @@ Get the health of a vehicle.
 
 ## ส่งคืน
 
-1 - success
+**1** - success
 
-0 - failure (invalid vehicle ID).
+**0** - failure (invalid vehicle ID).
 
 The vehicle's health is stored in the referenced variable, not in the return value.
 
@@ -43,7 +43,7 @@ if (strcmp(cmdtext, "/repair", true) == 0)
 
 :::note
 
-- Full vehicle health is 1000, however higher values are possible and increase the health of the vehicle. For more information on health values, see here.
+- Full vehicle health is **1000**, however higher values are possible and increase the health of the vehicle. For more information on health values, see here.
 - A vehicle catches on fire when its health is below 250. It will explode a few seconds later.
 
 :::

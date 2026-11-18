@@ -19,9 +19,9 @@ Przyczepia tekst 3D do gracza.
 
 ## Zwracane wartości
 
-1: Funkcja wykonała się prawidłowo.
+**1**: Funkcja wykonała się prawidłowo.
 
-0: Funkcja nie wykonała się prawidłowo. Oznacza to, że gracz i/lub tekst 3D nie istnieją.
+**0**: Funkcja nie wykonała się prawidłowo. Oznacza to, że gracz i/lub tekst 3D nie istnieją.
 
 ## Przykłady
 

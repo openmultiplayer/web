@@ -16,9 +16,9 @@ Define a vida de um veículo. Quando a vida do veículo diminui, o motor irá fa
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao ser executada. Isso significa que o veículo não existe.
+**0**: A função falhou ao ser executada. Isso significa que o veículo não existe.
 
 ## Exemplos
 
@@ -38,7 +38,7 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 :::note
 
-A vida máxima do veículo é 1000. Valores maiores são possíveis. Para mais informações sobre os valores de vida dos veículos , veja [esta](../resources/vehiclehealth) página.
+A vida máxima do veículo é **1000**. Valores maiores são possíveis. Para mais informações sobre os valores de vida dos veículos , veja [esta](../resources/vehiclehealth) página.
 
 :::
 

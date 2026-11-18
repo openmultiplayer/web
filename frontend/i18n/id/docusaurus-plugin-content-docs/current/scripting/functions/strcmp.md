@@ -18,7 +18,7 @@ Fungsi ini membandingkan kedua string untuk mengecek apakah mereka sama.
 
 ## Returns
 
-0 jika stringnya sama dengan lainnya pada panjang tertentu;1 atau -1 jika sebuah karakter tidak sama: string1[i] - string2[i] ('i' mewakili indeks karakter dimulai dari 0);perbedaan jumlah karakter jika satu string cocok dengan bagian dari string lain.
+**0** jika stringnya sama dengan lainnya pada panjang tertentu; **1** atau **-1** jika sebuah karakter tidak sama: string1[i] - string2[i] ('i' mewakili indeks karakter dimulai dari 0); **perbedaan jumlah karakter** jika satu string cocok dengan bagian dari string lain.
 
 ## Contoh
 

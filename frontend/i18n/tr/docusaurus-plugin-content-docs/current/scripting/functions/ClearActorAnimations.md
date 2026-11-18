@@ -17,9 +17,9 @@ Herhangi bir oluşturulan aktörün yaptığı animasyonunu durdurur.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Fonksiyon başarıyla çalıştı.
+**1**: Fonksiyon başarıyla çalıştı.
 
-0: Fonksiyon geçersiz aktör ID'si girildiği için çalışmadı.
+**0**: Fonksiyon geçersiz aktör ID'si girildiği için çalışmadı.
 
 ## Örnekler
 

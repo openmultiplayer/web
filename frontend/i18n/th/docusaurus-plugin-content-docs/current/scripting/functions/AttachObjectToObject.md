@@ -25,13 +25,13 @@ You can use this function to attach objects to other objects. The objects will f
 | Float:RotX    | The X rotation between the object and the main object.                  |
 | Float:RotY    | The Y rotation between the object and the main object.                  |
 | Float:RotZ    | The Z rotation between the object and the main object.                  |
-| SyncRotation  | If set to 0, objectid's rotation will not change with attachtoid's.     |
+| SyncRotation  | If set to **0**, objectid's rotation will not change with attachtoid's. |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the first object (objectid) does not exist. There are no internal checks to verify that the second object (attachtoid) exists.
+**0**: The function failed to execute. This means the first object (objectid) does not exist. There are no internal checks to verify that the second object (attachtoid) exists.
 
 ## ตัวอย่าง
 

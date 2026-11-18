@@ -12,7 +12,7 @@ tags: ["3dtextlabel"]
 | Parametre    | Açıklama                                                       |
 | ------------ | -------------------------------------------------------------- |
 | text[]       | Metin dizesi.                                                  |
-| color        | RGBA renk biçiminde renk kodu.                                 |
+| color        | **RGBA** renk biçiminde renk kodu.                             |
 | x            | X Koordinatı                                                   |
 | y            | Y Koordinatı                                                   |
 | z            | Z oordinatı                                                    |

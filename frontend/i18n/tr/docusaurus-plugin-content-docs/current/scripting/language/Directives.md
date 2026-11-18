@@ -64,7 +64,7 @@ Bu nedenle, tüm tanımlamaların dekompilasyonda kaybolduğu bir durumdur (tüm
 ```c
 #define PL new i = 0; i < MAX_PLAYERS; i++) if (IsPlayerConnected(i)
 
-for(PL) printf("%d connected", i);
+for (PL) printf("%d connected", i);
 ```
 
 Bu, hepimizin (nefret ettiğimiz) oyuncu döngüsüne derlenir. Burada parantezlerin nasıl kullanıldığına dikkat edin, bunlar hem for'dan hem de define makrosundan (değiştirme) gelir.

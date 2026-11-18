@@ -20,9 +20,9 @@ Bu işlev oyuna "statik" bir toplama ekler. Bu manyetikler, komut dosyası yazma
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 kaldırma mekanizması başarıyla oluşturuldu.
+**1** kaldırma mekanizması başarıyla oluşturuldu.
 
-0 oluşturulamadı.
+**0** oluşturulamadı.
 
 ## Örnekler
 

@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač krene da uđe u vozilo, u smislu da igrač nije još u vozilu u trenutku kada se ovaj callback poziva.
+Ovaj callback je pozvan kada igrač **krene** da uđe u vozilo, u smislu da igrač nije još u vozilu u trenutku kada se ovaj callback poziva.
 
 | Ime         | Deskripcija                                    |
 | ----------- | ---------------------------------------------- |
@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-Ovaj callback je pozvana kada igrač KRENE da uđe u vozilo, ne kada su UŠLI u njega. Pogledaj `OnPlayerStateChange`. Ovaj callback se poziva i kada je igraču odbijen mogućnost ulaska u vozilo (npr. Vozilo je zaključano ili puno).
+Ovaj callback je pozvana kada igrač **KRENE** da uđe u vozilo, ne kada su UŠLI u njega. Pogledaj `OnPlayerStateChange`. Ovaj callback se poziva i kada je igraču odbijen mogućnost ulaska u vozilo (npr. Vozilo je zaključano ili puno).
 
 :::
 

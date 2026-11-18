@@ -47,7 +47,7 @@ else
 
 :::warning
 
-Como um estado de sirene de -1 ou 0 significa 'desligado', você não pode usar uma instrução condicional booleana para verificar se as sirenes estão ligadas. Se você fizer 'if (sirenstate)', será true para qualquer coisa diferente de 0 (então -1 ou 1). Você deve verificar se o estado da sirene é explicitamente igual a 1.
+Como um estado de sirene de -1 ou 0 significa 'desligado', você não pode usar uma instrução condicional booleana para verificar se as sirenes estão ligadas. Se você fizer 'if (sirenstate)', será true para qualquer coisa diferente de 0 (então -1 ou 1). Você deve verificar se o estado da sirene é explicitamente igual a **1**.
 
 :::
 

@@ -74,7 +74,7 @@ To add a ban, simply add an object to the JSON array like so:
 
 Where `IP_HERE` is, is where you put the IP you would like to ban. This method takes longer than the RCON `banip` command, so using `banip` is recommended.
 
-##### Ban() function
+##### Ban function
 
 The [Ban](../scripting/functions/Ban) function can be used to ban a player from a script. The [BanEx](../scripting/functions/BanEx) function will add an optional reason like so:
 
@@ -198,7 +198,7 @@ These are the functions that you as admin can use:
 | `/rcon weburl [server url]`       | Changes the server URL in the masterlists/SA-MP client                                                                                        |
 | `/rcon unloadfs`                  | Unload the given filterscript (_example: /rcon unloadfs adminfs_).                                                                            |
 | `/rcon reloadfs`                  | Reloads the given filterscript (_example: /rcon reloadfs adminfs_).                                                                           |
-| `/rcon rcon\_password [PASSWORD]` | Change the rcon's password                                                                                                                    |
+| `/rcon rcon_password [PASSWORD]`  | Change the rcon's password                                                                                                                    |
 | `/rcon password [password]`       | Sets/resets the server password                                                                                                               |
 | `/rcon messageslimit [count]`     | Change the number of messages per second a client sends to the server. (default 500)                                                          |
 | `/rcon ackslimit [count]`         | Change the limit of acks (default 3000)                                                                                                       |

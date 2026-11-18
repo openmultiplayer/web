@@ -16,9 +16,9 @@ Povezuje vozilo za enterijer. Vozila mogu biti vidljiva samo igračima u istom e
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
 
 ## Primjeri
 

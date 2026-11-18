@@ -17,9 +17,9 @@ Set a float player variable's value.
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. Either the player specified is not connected, or the variable name is null or over 40 characters.
+**0**: The function failed to execute. Either the player specified is not connected, or the variable name is null or over 40 characters.
 
 ## ตัวอย่าง
 

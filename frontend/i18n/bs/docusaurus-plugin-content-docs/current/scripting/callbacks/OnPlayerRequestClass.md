@@ -36,7 +36,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::note
 
-Ovaj callback je također pozvan kada igrač pritisne F4.
+Ovaj callback je također pozvan kada igrač pritisne **F4**.
 
 :::
 

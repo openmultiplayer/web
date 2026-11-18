@@ -17,9 +17,9 @@ Makes a player spectate (watch) another player.
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. One of the players specified does not exist.
+**0**: The function failed to execute. One of the players specified does not exist.
 
 ## ตัวอย่าง
 

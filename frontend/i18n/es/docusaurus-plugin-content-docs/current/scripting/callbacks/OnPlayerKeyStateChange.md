@@ -43,7 +43,7 @@ Las teclas direccionales no desencadenan OnPlayerKeyStateChange (arriba, abajo, 
 
 ### Introducción
 
-Este callback es llamado cuando un jugador presiona o suelta una de las teclas soportadas (vea [Teclas](../resources/keys)).<br/> Las teclas que son compatibles no son las teclas actuales del teclado, sino las teclas funcionales mapeadas del GTA San Andreas, esto quiere decir que, por ejemplo, no podés detectar cuando alguien presiona la <strong>barra espaciadora</strong>, pero sí podés detectar cuando este presiona su tecla la tecla de correr, (que puede, o no, ser asignada a la barra espaciadora (así es por defecto en el juego)).
+Este callback es llamado cuando un jugador presiona o suelta una de las teclas soportadas (vea [Teclas](../resources/keys)).<br/> Las teclas que son compatibles no son las teclas actuales del teclado, sino las teclas funcionales mapeadas del GTA San Andreas, esto quiere decir que, por ejemplo, no podés detectar cuando alguien presiona la <strong>barra espaciadora</strong>, pero sí podés detectar cuando este presiona su tecla la tecla de **correr**, (que puede, o no, ser asignada a la barra espaciadora (así es por defecto en el juego)).
 
 ### Parámetros
 

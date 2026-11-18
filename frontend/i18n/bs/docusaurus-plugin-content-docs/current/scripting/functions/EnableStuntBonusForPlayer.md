@@ -9,16 +9,16 @@ tags: ["player"]
 
 Omogućuje ili onemogućava stunt bonuse za igrača. Omogućeno po zadanim postavkama.
 
-| Ime      | Deskripcija                                              |
-| -------- | -------------------------------------------------------- |
-| playerid | ID igrača za kojeg se uključuju/isključuju stunt bonusi. |
-| enable   | 1 da uključite stunt bonuse i 0 da ih isključite.        |
+| Ime      | Deskripcija                                               |
+| -------- | --------------------------------------------------------- |
+| playerid | ID igrača za kojeg se uključuju/isključuju stunt bonusi.  |
+| enable   | **1** da uključite stunt bonuse i **0** da ih isključite. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
 ## Primjeri
 

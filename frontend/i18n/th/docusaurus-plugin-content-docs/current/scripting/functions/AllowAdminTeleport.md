@@ -15,9 +15,9 @@ This function, as of 0.3d, is deprecated. Please see OnPlayerClickMap.
 
 This function will determine whether RCON admins will be teleported to their waypoint when they set one.
 
-| Name  | Description                   |
-| ----- | ----------------------------- |
-| allow | 0 to disable and 1 to enable. |
+| Name  | Description                           |
+| ----- | ------------------------------------- |
+| allow | **0** to disable and **1** to enable. |
 
 ## ส่งคืน
 

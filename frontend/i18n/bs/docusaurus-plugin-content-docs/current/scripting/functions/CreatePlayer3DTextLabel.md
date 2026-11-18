@@ -24,7 +24,7 @@ Kreira 3D Text Label samo za jednog određenog igrača.
 
 ## Returns
 
-ID novokreiranog 3D Text Labela, ili INVALID_3DTEXT_ID ako je dostignut Player 3D Text Label limit (MAX_3DTEXT_PLAYER).
+ID novokreiranog 3D Text Labela, ili INVALID_3DTEXT_ID ako je dostignut **Player** 3D Text Label limit (MAX_3DTEXT_PLAYER).
 
 ## Primjeri
 

@@ -18,9 +18,9 @@ Ang OnPlayerClickMap ay itinatawag kapag ang player ay naglagay ng isang target 
 
 ## Returns
 
-1 - Pinipigilan ang ibang filterscript na tanggapin itong callback.
+**1** - Pinipigilan ang ibang filterscript na tanggapin itong callback.
 
-0 - Ipinapahiwatig na ang callback na ito ay ipapasa sa ibang filterscript.
+**0** - Ipinapahiwatig na ang callback na ito ay ipapasa sa ibang filterscript.
 
 Ito ay palaging itinatawag una sa mga gamemode.
 

@@ -34,7 +34,7 @@ SetVehiclePos(vehicleid, 0.0, 0.0, 3.0);
 
 :::warning
 
-Known Bug(s):
+**Known Bug(s):**
 
 - An empty vehicle will not fall after being teleported into the air!
 

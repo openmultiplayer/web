@@ -17,7 +17,7 @@ Essa callback é executada quando um veículo é modificado.
 
 ## Retornos
 
-Sempre executada primeiro no gamemode, retornar 0 irá impedir outros filterscripts de acessar a mesma.
+Sempre executada primeiro no gamemode, retornar **0** irá impedir outros filterscripts de acessar a mesma.
 
 ## Exemplos
 

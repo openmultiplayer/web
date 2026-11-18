@@ -22,7 +22,7 @@ Este callback se llama cuando el cliente de un jugador actualiza/sincroniza la p
 
 ## Devoluciones
 
-Retornar 0 en esta callback causará que el vehículo deje de sincronizar su posición a otros jugadores.
+Retornar **0** en esta callback causará que el vehículo deje de sincronizar su posición a otros jugadores.
 
 0 - Prevendrá a otros filterscripts de recibir este callback.
 

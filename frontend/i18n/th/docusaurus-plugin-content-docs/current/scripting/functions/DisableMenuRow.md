@@ -7,7 +7,7 @@ tags: ["menu"]
 
 ## คำอธิบาย
 
-Disable a specific row in a menu for all players. It will be greyed-out and can't be selected by players.
+Disable a specific row in a menu **for all players**. It will be greyed-out and can't be selected by players.
 
 | Name        | Description                                                                                                       |
 | ----------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -45,7 +45,7 @@ Crashes when passed an invalid menu ID. (Fixed in open.mp)
 
 :::note
 
-This function disabled the specified menu row for all players. There is no function to disable a menu row for a specific player. You'd have to create two menus - one with a row disabled, and one without. Or one per player.
+This function disabled the specified menu row for **all players**. There is no function to disable a menu row for a specific player. You'd have to create two menus - one with a row disabled, and one without. Or one per player.
 
 :::
 

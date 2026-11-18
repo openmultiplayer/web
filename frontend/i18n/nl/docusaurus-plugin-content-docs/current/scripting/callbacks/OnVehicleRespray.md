@@ -18,7 +18,7 @@ Deze callback wordt aangeroepen wanneer een speler een modshop verlaat, zelfs al
 
 ## Returns
 
-Wordt altijd als eerste aangeroepen in gamemode; return 0 blokkeert ook andere filterscripts.
+Wordt altijd als eerste aangeroepen in gamemode; return **0** blokkeert ook andere filterscripts.
 
 ## Voorbeelden
 
@@ -44,7 +44,7 @@ Fix hier: http://pastebin.com/G81da7N1
 
 :::warning
 
-Bekende Bug(s): Het bekijken van een component in een modshop kan deze callback aanroepen.
+**Bekende Bug(s):** Het bekijken van een component in een modshop kan deze callback aanroepen.
 
 :::
 

@@ -17,9 +17,9 @@ Doznajte trenutno igračevo vrijeme igre. Postavlja SetWorldTime ili vraća vrij
 
 ## Returns
 
-1: Funkcija uspješno izvršena..
+**1**: Funkcija uspješno izvršena..
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
 Trenutno vrijeme igre pohranjeno je u navedenim varijablama.
 

@@ -25,9 +25,9 @@ Nagdaragdag ng klase sa pagpili ng klase. Ginagamit ang mga klase upang ang mga 
 
 ## Returns
 
-Ang ID ng klase na kakadagdag lang.
+Ang **ID ng klase** na kakadagdag lang.
 
-319 kung naabot ang limitasyon ng klase (320). Ang pinakamataas na posibleng class ID ay 319.
+**319** kung naabot ang limitasyon ng klase (320). Ang pinakamataas na posibleng class ID ay 319.
 
 ## Examples
 

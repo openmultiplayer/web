@@ -15,7 +15,7 @@ Obriši 3D text label (kreiran sa Create3DTextLabel).
 
 ## Returns
 
-1 ako je 3D text label obrisan, uostalom 0.
+**1** ako je 3D text label obrisan, uostalom **0**.
 
 ## Primjeri
 

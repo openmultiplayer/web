@@ -11,7 +11,7 @@ tags: ["文件管理"]
 
 | 参数                   | 说明                                   |
 | ---------------------- | -------------------------------------- |
-| File:handle            | 通过 fopen()打开的文件句柄             |
+| File:handle            | 通过 fopen打开的文件句柄               |
 | const buffer[]         | 要写入文件的数据缓冲区                 |
 | size = sizeof (buffer) | 要写入的数据单元数量（默认缓冲区大小） |
 
@@ -57,7 +57,7 @@ else
 
 :::warning
 
-使用无效句柄将导致服务器崩溃！请通过[fopen](fopen)或[ftemp](ftemp)获取有效句柄
+使用**无效句柄**将导致服务器崩溃！请通过[fopen](fopen)或[ftemp](ftemp)获取**有效句柄**
 
 :::
 

@@ -51,7 +51,7 @@ else
 
 :::warning
 
-Budući da stanje sirene -1 ili 0 znači 'isključeno', ne možete koristiti logičku uvjetnu naredbu da provjerite jesu li sirene uključene. Ako napravite 'if (sirenstate)', to će važiti za sve što NIJE 0 (dakle -1 ili 1). Trebali biste provjeriti je li stanje sirene izričito jednako 1.
+Budući da stanje sirene -1 ili 0 znači 'isključeno', ne možete koristiti logičku uvjetnu naredbu da provjerite jesu li sirene uključene. Ako napravite 'if (sirenstate)', to će važiti za sve što NIJE 0 (dakle -1 ili 1). Trebali biste provjeriti je li stanje sirene izričito jednako **1**.
 
 :::
 

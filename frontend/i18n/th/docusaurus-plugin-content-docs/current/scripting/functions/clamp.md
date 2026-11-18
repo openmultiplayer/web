@@ -17,7 +17,7 @@ Force a value to be inside a range.
 
 ## ส่งคืน
 
-value, if it is in the range min–max, min, if value is lower than min or max, if value is higher than max.
+**value**, if it is in the range min–max, **min**, if value is lower than min or **max**, if value is higher than max.
 
 ## ตัวอย่าง
 

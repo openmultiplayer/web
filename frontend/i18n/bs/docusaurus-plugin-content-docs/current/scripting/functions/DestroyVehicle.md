@@ -15,9 +15,9 @@ Uništi vozilo. Istog će trena nestati.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Vozilo ne postoji.
 
 ## Primjeri
 

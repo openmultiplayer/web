@@ -25,9 +25,9 @@ Dohvatite status oštećenja vozila.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeno vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeno vozilo ne postoji.
 
 ## Primjeri
 

@@ -15,9 +15,9 @@ Acest callback este apelat de fiecare dată când un client/jucător actualizeaz
 
 ## Returnări
 
-0 - Actualizarea de la acest player nu va fi replicată altor clienți.
+**0** - Actualizarea de la acest player nu va fi replicată altor clienți.
 
-1 - Indică faptul că această actualizare poate fi procesată normal și trimisă altor jucători.
+**1** - Indică faptul că această actualizare poate fi procesată normal și trimisă altor jucători.
 
 Este întotdeauna numit primul în filterscript-uri.
 

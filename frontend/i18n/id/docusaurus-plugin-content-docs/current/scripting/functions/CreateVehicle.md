@@ -18,16 +18,16 @@ Membuat kendaraan di dunia. Dapat digunakan sebagai pengganti AddStaticVehicleEx
 | Float:rotation                        | Sudut menghadap dari kendaraan                                                                                                                                             |
 | [color1](../resources/vehiclecolorid) | ID warna primer kendaraan                                                                                                                                                  |
 | [color2](../resources/vehiclecolorid) | ID warna sekunder                                                                                                                                                          |
-| respawn_delay                         | Penundaan hingga mobil respawn tanpa pengemudi dalam hitungan detik. Menggunakan -1 akan mencegah kendaraan dari respawning.                                               |
+| respawn_delay                         | Penundaan hingga mobil respawn tanpa pengemudi dalam hitungan **detik**. Menggunakan **-1** akan mencegah kendaraan dari respawning.                                       |
 | bool:addsiren                         | Ditambahkan di 0.3.7; Tidak akan berfungsi di versi sebelumnya. Memiliki nilai bawaan 'false'. Memungkinkan kendaraan memiliki sirine, asalkan kendaraan memiliki klakson. |
 
 ## Returns
 
 ID kendaraan dari kendaraan yang dibuat (1 hingga MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) jika kendaraan tidak dibuat (batas kendaraan terlewati atau ID model kendaraan tidak valid).
+**INVALID_VEHICLE_ID (65535)** jika kendaraan tidak dibuat (batas kendaraan terlewati atau ID model kendaraan tidak valid).
 
-0 jika kendaraan tidak dibuat (IDs 538 or 537 berhasil, yaitu kereta api).
+**0** jika kendaraan tidak dibuat (IDs 538 or 537 berhasil, yaitu kereta api).
 
 ## Contoh
 

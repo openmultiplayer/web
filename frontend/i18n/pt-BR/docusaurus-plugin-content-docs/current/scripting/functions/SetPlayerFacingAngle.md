@@ -16,9 +16,9 @@ Define o ângulo para qual o jogador está voltado (olhando) (rotação Z).
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: Falha ao executar a função. O jogador especificado não existe.
+**0**: Falha ao executar a função. O jogador especificado não existe.
 
 ## Exemplos
 
@@ -38,7 +38,7 @@ SetPlayerFacingAngle(playerid, 0); // Posiciona o jogador para o norte.
 
 :::warning
 
-Os ângulos são invertidos no GTA: SA; 90 graus seria o leste no mundo real, mas no GTA: SA 90 graus seria na verdade o oeste. Norte e Sul ainda são 0/360 e 180. Para converter isso, basta fazer 360 - ângulo.
+Os ângulos são invertidos no GTA: SA; 90 graus seria o _leste_ no mundo real, mas no GTA: SA 90 graus seria na verdade o _oeste_. Norte e Sul ainda são 0/360 e 180. Para converter isso, basta fazer **360 - ângulo**.
 
 :::
 

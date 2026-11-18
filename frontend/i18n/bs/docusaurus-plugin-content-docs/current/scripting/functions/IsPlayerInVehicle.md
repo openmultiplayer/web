@@ -9,16 +9,16 @@ tags: ["player", "vehicle"]
 
 Provjerava da li je igrač u određenom vozilu.
 
-| Ime       | Deskripcija                        |
-| --------- | ---------------------------------- |
-| playerid  | ID igrača.                         |
-| vehicleid | ID vozila. Zabilješka: NE Modelid! |
+| Ime       | Deskripcija                            |
+| --------- | -------------------------------------- |
+| playerid  | ID igrača.                             |
+| vehicleid | ID vozila. **Zabilješka:** NE Modelid! |
 
 ## Returns
 
-1 - Igrač JE u vozilu.
+**1** - Igrač JE u vozilu.
 
-0 - Igrač NIJE u vozilu.
+**0** - Igrač NIJE u vozilu.
 
 ## Primjeri
 

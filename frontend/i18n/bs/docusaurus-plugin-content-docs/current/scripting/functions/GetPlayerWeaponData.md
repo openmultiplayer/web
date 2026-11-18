@@ -18,9 +18,9 @@ Dobij oružje i streljivo u određenom igračevom slotu oružja (npr. oružje u 
 
 ## Returns
 
-1: Funkcija uspješno izvršena..
+**1**: Funkcija uspješno izvršena..
 
-0: Funkcija neuspješno izvršena. Igrač nije povezan i/ili je navedeni slot za oružje nevažeći (važeće 0-12).
+**0**: Funkcija neuspješno izvršena. Igrač nije povezan i/ili je navedeni slot za oružje nevažeći (važeće 0-12).
 
 ## Primjeri
 

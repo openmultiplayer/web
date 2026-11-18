@@ -18,9 +18,9 @@ Dobij poziciju objekta.
 
 ## Returns
 
-1: Funkcija je uspješno izvršena.
+**1**: Funkcija je uspješno izvršena.
 
-0: Funkcija nije uspjela da se izvrši. Navedeni objekt ne postoji.
+**0**: Funkcija nije uspjela da se izvrši. Navedeni objekt ne postoji.
 
 ## Primjeri
 

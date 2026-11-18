@@ -16,9 +16,9 @@ Set the skin of a player. A player's skin is their character model.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**0**: The function failed to execute. This means the player specified does not exist.
 
 Note that 'success' is reported even when skin ID is invalid (not 0-311, or 74), but the skin will be set to ID 0 (CJ).
 
@@ -77,7 +77,7 @@ stock SetPlayerSkinFix(playerid, skinid)
 
 :::warning
 
-Known Bug(s):
+**Known Bug(s):**
 
 - If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using TogglePlayerControllable. Players can be detected as being crouched through GetPlayerSpecialAction (SPECIAL_ACTION_DUCK).
 - Other players around the player may crash if he is in a vehicle or if he is entering/leaving a vehicle.

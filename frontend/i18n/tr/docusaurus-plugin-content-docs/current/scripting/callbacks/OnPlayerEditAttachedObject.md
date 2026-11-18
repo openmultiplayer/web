@@ -9,28 +9,28 @@ tags: ["player"]
 
 Bu geri çağırma oyuncu üzerine takılan objenin düzenlemesini bitirdiğinde çağrılır.
 
-| Parametre              | Açıklama                                                          |
-| ---------------------- | ----------------------------------------------------------------- |
-| playerid               | Düzenlemeyi bitiren oyuncunun id'si.                              |
-| EDIT_RESPONSE:response | Eğer iptal ettiyse 0, kaydet tuşuna bastıysa 1 değerini döndürür. |
-| index                  | The index of the attached object (0-9)                            |
-| modelid                | model id'si.                                                      |
-| boneid                 | objenin takıldığı kemik numarası.                                 |
-| Float:fOffsetX         | Editlenen objenin X offset'i.                                     |
-| Float:fOffsetY         | Editlenen objenin Y offset'i.                                     |
-| Float:fOffsetZ         | Editlenen objenin Z offset'i.                                     |
-| Float:fRotX            | Editlenen objenin X açısı.                                        |
-| Float:fRotY            | Editlenen objenin Y açısı.                                        |
-| Float:fRotZ            | Editlenen objenin Z açısı.                                        |
-| Float:fScaleX          | Editlenen objenin X skalası.                                      |
-| Float:fScaleY          | Editlenen objenin Y skalası.                                      |
-| Float:fScaleZ          | Editlenen objenin Z skalası.                                      |
+| Parametre              | Açıklama                                                                  |
+| ---------------------- | ------------------------------------------------------------------------- |
+| playerid               | Düzenlemeyi bitiren oyuncunun id'si.                                      |
+| EDIT_RESPONSE:response | Eğer iptal ettiyse **0**, kaydet tuşuna bastıysa **1** değerini döndürür. |
+| index                  | The index of the attached object (0-9)                                    |
+| modelid                | model id'si.                                                              |
+| boneid                 | objenin takıldığı kemik numarası.                                         |
+| Float:fOffsetX         | Editlenen objenin X offset'i.                                             |
+| Float:fOffsetY         | Editlenen objenin Y offset'i.                                             |
+| Float:fOffsetZ         | Editlenen objenin Z offset'i.                                             |
+| Float:fRotX            | Editlenen objenin X açısı.                                                |
+| Float:fRotY            | Editlenen objenin Y açısı.                                                |
+| Float:fRotZ            | Editlenen objenin Z açısı.                                                |
+| Float:fScaleX          | Editlenen objenin X skalası.                                              |
+| Float:fScaleY          | Editlenen objenin Y skalası.                                              |
+| Float:fScaleZ          | Editlenen objenin Z skalası.                                              |
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Diğer filterscriptlerde çağrılmasını engeller.
+**1** - Diğer filterscriptlerde çağrılmasını engeller.
 
-0 - Diğer filterscriptlerde çağrılması için pas geçilir.
+**0** - Diğer filterscriptlerde çağrılması için pas geçilir.
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 

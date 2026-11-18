@@ -12,7 +12,7 @@ Acest callback este apelat când un jucâtor intră sau iese dintr-un mod shop.
 | Nume       | Descriere                                                             |
 | ---------- | --------------------------------------------------------------------- |
 | playerid   | ID-ul jucătorului care a intrat sau a ieșit din modshop               |
-| enterexit  | 1 dacă jucătorul a intrat sau 0 dacă a ieșit                          |
+| enterexit  | **1** dacă jucătorul a intrat sau **0** dacă a ieșit                  |
 | interiorid | ID-ul interiorului modshop-ului dacă playerul intră (sau 0 dacă iese) |
 
 ## Returnări
@@ -37,7 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Bug-uri cunoscute: Jucătorii se lovesc înte ei când intră în același mod shop.
+**Bug-uri cunoscute:** Jucătorii se lovesc înte ei când intră în același mod shop.
 
 :::
 

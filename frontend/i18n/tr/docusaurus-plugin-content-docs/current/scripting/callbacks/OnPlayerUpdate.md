@@ -15,9 +15,9 @@ Bu fonksiyon, bir istemci veya oyuncu sunucu durumlarıyla ilgili her güncellen
 
 ## Çalışınca Vereceği Sonuçlar
 
-0 - Bu oyuncunun güncellemesi diğer oyunculara/istemcilere senkronize edilmeyecektir.
+**0** - Bu oyuncunun güncellemesi diğer oyunculara/istemcilere senkronize edilmeyecektir.
 
-1 - Bu güncellemenin normal şekilde işlenebileceğini ve diğer oyunculara gönderilebileceğini gösterir.
+**1** - Bu güncellemenin normal şekilde işlenebileceğini ve diğer oyunculara gönderilebileceğini gösterir.
 
 Filterscript komutlarında her zaman ilk olarak çağrılır.
 

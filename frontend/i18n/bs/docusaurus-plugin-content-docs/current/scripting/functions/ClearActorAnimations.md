@@ -21,9 +21,9 @@ Uklanja bilo koju animaciju koja je postavljena aktoru.
 
 ## Returns
 
-1: Funkcija je uspješno izvršena.
+**1**: Funkcija je uspješno izvršena.
 
-0: Funkcija nije uspješno izvršena. Aktor ne postoji.
+**0**: Funkcija nije uspješno izvršena. Aktor ne postoji.
 
 ## Primjeri
 

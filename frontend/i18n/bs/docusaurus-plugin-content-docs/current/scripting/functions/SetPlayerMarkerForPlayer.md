@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Promijeni boju igračevog nametag-a i bljeskalice na radaru za drugog igrača.
+Promijeni boju igračevog **nametag-a** i **bljeskalice na radaru** za drugog igrača.
 
 | Ime          | Deskripcija                                                                  |
 | ------------ | ---------------------------------------------------------------------------- |

@@ -13,7 +13,7 @@ Set the text alignment of a player-textdraw.
 | --------- | ------------------------------------------------------------------- |
 | playerid  | The ID of the player whose player-textdraw to set the alignment of. |
 | Text:text | The ID of the player-textdraw to set the alignment of.              |
-| alignment | 1-left 2-centered 3-right                                           |
+| alignment | **1**-left **2**-centered **3**-right                               |
 
 ## ส่งคืน
 

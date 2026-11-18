@@ -20,9 +20,9 @@ Ta funkcja dodaje „statyczny” pickup do gry. Pickupy wspierają bronie, zdro
 
 ## Zwracane wartości
 
-1: Pickup został utworzony pomyślnie.
+**1**: Pickup został utworzony pomyślnie.
 
-0: Pickup nie został utworzony.
+**0**: Pickup nie został utworzony.
 
 ## Przykłady
 

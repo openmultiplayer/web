@@ -35,7 +35,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 :::note
 
-Deze callback wordt niet aangeroepen door ChangeVehiclePaintjob. Je kunt OnVehicleChangePaintjob van vSync gebruiken om te weten wanneer de speler de paintjob koopt.
+Deze callback wordt niet aangeroepen door ChangeVehiclePaintjob. Je kunt OnVehicleChangePaintjob van vSync gebruiken om te weten wanneer de speler de paintjob **koopt**.
 
 :::
 

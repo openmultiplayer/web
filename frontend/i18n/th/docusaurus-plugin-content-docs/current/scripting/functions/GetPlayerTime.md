@@ -17,9 +17,9 @@ Get the player's current game time. Set by SetWorldTime, or by the game automati
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**0**: The function failed to execute. The player specified does not exist.
 
 The current game time is stored in the specified variables.
 

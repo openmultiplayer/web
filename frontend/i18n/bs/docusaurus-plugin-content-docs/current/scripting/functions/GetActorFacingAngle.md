@@ -18,9 +18,9 @@ Pogledaj ugao posmatranja actora
 
 ## Returns
 
-1: Funkcija je uspješno izvršena.
+**1**: Funkcija je uspješno izvršena.
 
-0: Funkcija nije uspjela da se izvrši. Navedeni actor ne postoji.
+**0**: Funkcija nije uspjela da se izvrši. Navedeni actor ne postoji.
 
 Ugao gledanja actora je pohranjen u navedenoj varijabli.
 

@@ -9,28 +9,28 @@ tags: ["player"]
 
 Ovaj callback je pozvan kada igrač napusti mod uređivanja prikvačenih objekata (attached object edition mode).
 
-| Ime                    | Deskripcija                                                   |
-| ---------------------- | ------------------------------------------------------------- |
-| playerid               | ID igrača koji je napustio mod uređivanja                     |
-| EDIT_RESPONSE:response | 0 ako su prekinuli (ESC) ili 1 ako su kliknuli na save ikonu. |
-| index                  | The index of the attached object (0-9)                        |
-| modelid                | Model prikvačenog objekta koji je uređen                      |
-| boneid                 | Kost na kojoj se nalazi uređeni prikvačeni objekat            |
-| Float:fOffsetX         | Ofset X prikvačenog objekta koji je editovan                  |
-| Float:fOffsetY         | Ofset Y prikvačenog objekta koji je editovan                  |
-| Float:fOffsetZ         | Ofset Z prikvačenog objekta koji je editovan                  |
-| Float:fRotX            | Rotacija X prikvačenog objekta koji je editovan               |
-| Float:fRotY            | Rotacija Y prikvačenog objekta koji je editovan               |
-| Float:fRotZ            | Rotacija Z prikvačenog objekta koji je editovan               |
-| Float:fScaleX          | Skala X prikvačenog objekta koji je editovan                  |
-| Float:fScaleY          | Skala X prikvačenog objekta koji je editovan                  |
-| Float:fScaleZ          | Skala X prikvačenog objekta koji je editovan                  |
+| Ime                    | Deskripcija                                                           |
+| ---------------------- | --------------------------------------------------------------------- |
+| playerid               | ID igrača koji je napustio mod uređivanja                             |
+| EDIT_RESPONSE:response | **0** ako su prekinuli (ESC) ili **1** ako su kliknuli na save ikonu. |
+| index                  | The index of the attached object (0-9)                                |
+| modelid                | Model prikvačenog objekta koji je uređen                              |
+| boneid                 | Kost na kojoj se nalazi uređeni prikvačeni objekat                    |
+| Float:fOffsetX         | Ofset X prikvačenog objekta koji je editovan                          |
+| Float:fOffsetY         | Ofset Y prikvačenog objekta koji je editovan                          |
+| Float:fOffsetZ         | Ofset Z prikvačenog objekta koji je editovan                          |
+| Float:fRotX            | Rotacija X prikvačenog objekta koji je editovan                       |
+| Float:fRotY            | Rotacija Y prikvačenog objekta koji je editovan                       |
+| Float:fRotZ            | Rotacija Z prikvačenog objekta koji je editovan                       |
+| Float:fScaleX          | Skala X prikvačenog objekta koji je editovan                          |
+| Float:fScaleY          | Skala X prikvačenog objekta koji je editovan                          |
+| Float:fScaleZ          | Skala X prikvačenog objekta koji je editovan                          |
 
 ## Returns
 
-1 - Spriječiti će da druge skripte primaju ovaj callback.
+**1** - Spriječiti će da druge skripte primaju ovaj callback.
 
-0 - Označava da će ovaj callback biti proslijeđen narednoj skripti.
+**0** - Označava da će ovaj callback biti proslijeđen narednoj skripti.
 
 Uvijek je pozvana prva u filterskripti.
 

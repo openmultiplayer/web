@@ -34,7 +34,7 @@ if (IsPlayerAdmin(playerTarget))
 
 :::warning
 
-Não confunda esta função com GetPlayerTargetPlayer. GetPlayerTargetPlayer retorna o ID do jogador que playerid está atacando (com uma arma). GetPlayerCameraTargetPlayer retorna o ID do jogador que o playerid está olhando (o ponto de referência é o centro da tela).
+Não confunda esta função com GetPlayerTargetPlayer. GetPlayerTargetPlayer retorna o ID do jogador que playerid está **atacando** (com uma arma). GetPlayerCameraTargetPlayer retorna o ID do jogador que o playerid está **olhando** (o ponto de referência é o centro da tela).
 
 :::
 

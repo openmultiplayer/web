@@ -23,7 +23,7 @@ Essa callback é executada quando o cliente do jogador faz o update/sincroniza a
 
 ## Retornos
 
-Sempre execurada primeiro nos filterscripts, retorne 0 para impedir que outros scripts a vejam.
+Sempre execurada primeiro nos filterscripts, retorne **0** para impedir que outros scripts a vejam.
 
 ## Exemplos
 

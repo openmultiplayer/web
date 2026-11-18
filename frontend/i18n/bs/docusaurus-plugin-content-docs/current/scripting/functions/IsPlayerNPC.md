@@ -15,9 +15,9 @@ Provjerava ako je igrač pravi igrač ili NPC.
 
 ## Returns
 
-1: Igrač je NPC.
+**1**: Igrač je NPC.
 
-0: Igrač nije NPC (pravi je igrač).
+**0**: Igrač nije NPC (pravi je igrač).
 
 ## Primjeri
 

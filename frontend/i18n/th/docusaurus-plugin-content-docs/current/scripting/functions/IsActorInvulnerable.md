@@ -21,9 +21,9 @@ Check if an actor is invulnerable.
 
 ## ส่งคืน
 
-1: The actor is invulnerable.
+**1**: The actor is invulnerable.
 
-0: The actor is vulnerable.
+**0**: The actor is vulnerable.
 
 ## ตัวอย่าง
 

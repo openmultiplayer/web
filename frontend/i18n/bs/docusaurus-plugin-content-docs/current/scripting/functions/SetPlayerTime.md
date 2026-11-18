@@ -17,9 +17,9 @@ Postavlja vrijeme igre za igrača. Ako je sat igrača uključen (TogglePlayerClo
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
 ## Primjeri
 

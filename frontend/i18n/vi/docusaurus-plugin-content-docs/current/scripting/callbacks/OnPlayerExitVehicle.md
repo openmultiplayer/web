@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Mô Tả
 
-Callback này được gọi khi một người chơi bắt đầu thoát khỏi một phương tiện.
+Callback này được gọi khi một người chơi **bắt đầu** thoát khỏi một phương tiện.
 
 | Tên       | Mô Tả                                             |
 | --------- | ------------------------------------------------- |

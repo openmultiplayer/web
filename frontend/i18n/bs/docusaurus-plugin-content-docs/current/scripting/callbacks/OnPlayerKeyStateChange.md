@@ -44,7 +44,7 @@ Tipke sa smjerom neće uzrokovati pozivanje `OnPlayerKeyStateChange` (gore/dole/
 
 ### Uvod
 
-Ovaj callback je pozvan kad god igrač pritisne ili pusti jedan od podržanih tipku (pogledajte [Keys](../resources/keys)).<br/>Tipke koje su podržane nisu zapravo tipke sa tipkovnice, već San Andreas preslikane funkcijske tipke, to znači da, naprimjer, ne možete detektovati kada neko pritisne <strong>spacebar</strong>, ali možete detektovati kada neko pritisne "sprint key" (koji može, ili ne mora biti dodijeljen razmaknici (to je prema zadanim postavkama)).
+Ovaj callback je pozvan kad god igrač pritisne ili pusti jedan od podržanih tipku (pogledajte [Keys](../resources/keys)).<br/>Tipke koje su podržane nisu zapravo tipke sa tipkovnice, već San Andreas preslikane funkcijske tipke, to znači da, naprimjer, ne možete detektovati kada neko pritisne <strong>spacebar</strong>, ali možete detektovati kada neko pritisne "**sprint** key" (koji može, ili ne mora biti dodijeljen razmaknici (to je prema zadanim postavkama)).
 
 ### Parametri
 

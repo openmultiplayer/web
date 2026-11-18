@@ -15,7 +15,7 @@ Gets the packet loss percentage of a player. Packet loss means data the player i
 
 ## ส่งคืน
 
-The percentage packet loss as a float. 0 if player not connected.
+The percentage packet loss as a float. **0** if player not connected.
 
 ## ตัวอย่าง
 

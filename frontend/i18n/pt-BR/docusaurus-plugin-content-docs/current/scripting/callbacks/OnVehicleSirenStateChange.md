@@ -19,9 +19,9 @@ Essa callback é chamada quando a sirene de um carro é ligada/desligada.
 
 ## Retornos
 
-0 - Vai prevenir que outros Filterscripts chamem essa callback.
+**0** - Vai prevenir que outros Filterscripts chamem essa callback.
 
-1 - Indica que essa callback vai ser passada para o Gamemode em seguida.
+**1** - Indica que essa callback vai ser passada para o Gamemode em seguida.
 
 Sempre é chamada primeiro em Filterscripts.
 

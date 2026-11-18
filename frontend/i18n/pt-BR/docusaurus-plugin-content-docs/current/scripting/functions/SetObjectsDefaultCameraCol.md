@@ -12,9 +12,9 @@ tags: ["object", "camera"]
 
 Permite que as colisões de câmeras com objetos recém-criados sejam desabilitadas por padrão.
 
-| Nome | Descrição |
-| ------- | --------------------------------------------------------------------------------------------------- |
-| disable | 1 para desabilitar colisões de câmera para objetos recém-criados e 0 para habilitá-los (habilitado por padrão). |
+| Nome    | Descrição                                                                                                                 |
+| ------- | ------------------------------------------------------------------------------------------------------------------------- |
+| disable | **1** para desabilitar colisões de câmera para _objetos recém-criados_ e **0** para habilitá-los (habilitado por padrão). |
 
 ## Retornos
 

@@ -16,7 +16,7 @@ Checks if the given object ID is valid for the given player.
 
 ## ส่งคืน
 
-1 if the object exists, 0 if not.
+**1** if the object exists, **0** if not.
 
 ## ตัวอย่าง
 

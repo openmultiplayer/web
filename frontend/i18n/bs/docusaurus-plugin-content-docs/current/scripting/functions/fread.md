@@ -11,14 +11,14 @@ Pročitajte jedan redak iz datoteke.
 
 | Ime    | Deskripcija                                                       |
 | ------ | ----------------------------------------------------------------- |
-| handle | Upravitelj datoteke za upotrebu, otvorila je fopen ()             |
+| handle | Upravitelj datoteke za upotrebu, otvorila je fopen.               |
 | string | String niza za čuvanje pročitanog teksta, proslijeđen referencom. |
 | size   | Broj bajtova za čitanje.                                          |
 | pack   | Da li bi niz trebao biti spakovan? true/false.                    |
 
 ## Returns
 
-Dužina niza (pročitani tekst) kao cijeli broj.
+Dužina **niza** (pročitani tekst) kao cijeli broj.
 
 ## Primjeri
 
@@ -82,7 +82,7 @@ else
 
 :::warning
 
-Korištenje nevaljanog upravitelja srušit će vaš server! Nabavite važeći upravitelj pomoću fopen ili ftemp.
+Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću fopen ili ftemp.
 
 :::
 

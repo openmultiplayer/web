@@ -16,7 +16,7 @@ tags: []
 
 ## Returns
 
-Ova funkcija uvijek returna/vraća 1, bilo da odabrani igrač nije konektovan.
+Ova funkcija uvijek returna/vraća **1**, bilo da odabrani igrač nije konektovan.
 
 ## Primjeri
 

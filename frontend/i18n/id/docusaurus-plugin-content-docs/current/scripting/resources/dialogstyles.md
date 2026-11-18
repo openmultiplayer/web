@@ -6,7 +6,7 @@ description: Informasi mengenai Gaya Dialog
 
 :::note
 
-- Pada [OnDialogResponse](../callbacks/OnDialogResponse), menekan **button1** menetapkan nilai **response** menjadi 1, sedangkan menekan **button2** menetapkan nilai **response** menjadi **0**.
+- Pada [OnDialogResponse](../callbacks/OnDialogResponse), menekan **button1** menetapkan nilai **response** menjadi **1**, sedangkan menekan **button2** menetapkan nilai **response** menjadi **0**.
 - Setiap dialog bisa memiliki tombol ke-dua karena sifatnya opsional. Untuk menghilangkannya, cukup dikosongkan saja, seperti pada contoh pertama. Player tidak dapat menekan tombol tersebut, tapi player dapat menekan tombol ESC dan memicu [OnDialogResponse](../callbacks/OnDialogResponse) dengan **response** bernilai **0**.
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): Pewarnaan dapan digunakan di setiap string: **caption**, **info**, **button1**, dan **button2**.
 
@@ -34,7 +34,7 @@ Menampilkan:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan tidak akan diatur ulang (_reset_) setelah \n \t
+- Pewarnaan tidak akan diatur ulang (_reset_) setelah **\n** **\t**
 
 :::
 
@@ -69,7 +69,7 @@ Menampilkan:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan tidak akan diatur ulang (_reset_) setelah \n \t
+- Pewarnaan tidak akan diatur ulang (_reset_) setelah **\n** **\t**
 
 :::
 
@@ -104,7 +104,7 @@ Showing:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan tidak akan diatur ulang (_reset_) setelah \n \t
+- Pewarnaan tidak akan diatur ulang (_reset_) setelah **\n** **\t**
 
 :::
 
@@ -117,7 +117,7 @@ ShowPlayerDialog(playerid, ID_DIALOG_KAMU, DIALOG_STYLE_LIST, "Judul", "Item 0\n
 :::note
 
 - **listitem** adalah nomor dari nilai yang dipilih, dimulai dari **0**.
-- **inputtext** adalah nilai yang terdapat pada listitem yang dipilih, tanpa warnanya.
+- **inputtext** adalah nilai yang terdapat pada **listitem** yang dipilih, tanpa warnanya.
 
 :::
 
@@ -191,7 +191,7 @@ Menampilkan:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan akan diatur ulang (_reset_) setelah \n \t
+- Pewarnaan akan diatur ulang (_reset_) setelah **\n** **\t**
 
 :::
 
@@ -205,7 +205,7 @@ Pistol\t$1000\t50",
 
 :::note
 
-- **inputtext** teks yang berisi nilai dari **listitem** yang dipilih pada kolom pertama, tanpa warna-warnanya.
+- **inputtext** teks yang berisi nilai dari **listitem** yang dipilih pada _kolom pertama_, tanpa warna-warnanya.
 
 :::
 
@@ -239,7 +239,7 @@ Menampilkan:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan akan diatur ulang setelah \n dan \t. **info** pada baris pertama berisi header.
+- Pewarnaan akan diatur ulang setelah **\n** dan **\t**. **info** pada baris pertama berisi header.
 
 :::
 
@@ -253,7 +253,7 @@ Item 1 Column 1\tItem 1 Column 2\tItem 1 Column 3\n\
 
 :::note
 
-- **inputtext** berisi teks dari **listitem** yang dipilih pada kolom pertama, tanpa warna-warnanya.
+- **inputtext** berisi teks dari **listitem** yang dipilih pada _kolom pertama_, tanpa warna-warnanya.
 
 :::
 

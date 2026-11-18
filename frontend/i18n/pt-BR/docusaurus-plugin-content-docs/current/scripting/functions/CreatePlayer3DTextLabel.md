@@ -25,7 +25,7 @@ Cria um rótulo de texto 3D apenas para um jogador específico
 
 ## Retorno
 
-O ID do rótulo de texto 3D do jogador recém-criado, ou `INVALID_3DTEXT_ID` se o limite de rótulos de texto 3D do jogador (`MAX_3DTEXT_PLAYER`) foi atingido.
+O ID do rótulo de texto 3D do **jogador** recém-criado, ou `INVALID_3DTEXT_ID` se o limite de rótulos de texto 3D do **jogador** (`MAX_3DTEXT_PLAYER`) foi atingido.
 
 ## Exemplos
 

@@ -20,7 +20,7 @@ Extraia um intervalo de caracteres de uma string.
 
 ## Retornos
 
-O número de caracteres armazenados em dest[]
+O número de caracteres armazenados em `dest[]`
 
 ## Exemplos
 

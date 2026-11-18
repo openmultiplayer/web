@@ -4,7 +4,7 @@ sidebar_label: "Remote Console (RCON)"
 description: Remote serveradministratie.
 ---
 
-De Remote Console is een command prompt waarmee je RCON-commands kunt uitvoeren zonder in-game op je server te zitten. Sinds 0.3b is de Remote Console uit de Server Browser verwijderd. Vanaf dat moment moet je op een andere manier Remote RCON benaderen, zoals hieronder uitgelegd.
+De **Remote Console** is een command prompt waarmee je RCON-commands kunt uitvoeren zonder in-game op je server te zitten. Sinds 0.3b is de **Remote Console** uit de **Server Browser** verwijderd. Vanaf dat moment moet je op een andere manier **Remote RCON** benaderen, zoals hieronder uitgelegd.
 
 1. Open een teksteditor.
 2. Schrijf de volgende regel: `rcon.exe IP PORT RCON-PASS` (vervang IP/PORT/PASS door je serverdetails)

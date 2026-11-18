@@ -40,7 +40,7 @@ Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/
 
 ### Introducere
 
-Acest callback este apelat ori de câte ori un jucător apasă sau eliberează una dintre tastele acceptate (consultați [Taste](../resources/keys)).<br/>Tastele care sunt acceptate nu sunt taste reale de la tastatură, ci funcția mapată in San Andreas, aceasta înseamnă că, de exemplu, nu puteți detecta când cineva apasă pe <strong>bara de spațiu</strong>, dar puteți detecta când apăsă tasta de sprint (care poate fi sau nu atribuită barei de spațiu ( este implicit)).
+Acest callback este apelat ori de câte ori un jucător apasă sau eliberează una dintre tastele acceptate (consultați [Taste](../resources/keys)).<br/>Tastele care sunt acceptate nu sunt taste reale de la tastatură, ci funcția mapată in San Andreas, aceasta înseamnă că, de exemplu, nu puteți detecta când cineva apasă pe <strong>bara de spațiu</strong>, dar puteți detecta când apăsă tasta de **sprint** (care poate fi sau nu atribuită barei de spațiu ( este implicit)).
 
 ### Parametrii
 

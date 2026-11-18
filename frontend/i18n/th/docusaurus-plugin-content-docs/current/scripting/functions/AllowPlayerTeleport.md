@@ -18,7 +18,7 @@ Enable/Disable the teleporting ability for a player by right-clicking on the map
 | Name     | Description                             |
 | -------- | --------------------------------------- |
 | playerid | The ID of the player to allow teleport. |
-| allow    | 1-allow, 0-disallow                     |
+| allow    | **1** - allow, **0** - disallow.        |
 
 ## ส่งคืน
 

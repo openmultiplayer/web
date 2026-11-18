@@ -22,9 +22,9 @@ Sets a vehicle's parameters for all players.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the vehicle does not exist.
+**0**: The function failed to execute. This means the vehicle does not exist.
 
 ## ตัวอย่าง
 

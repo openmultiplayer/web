@@ -17,9 +17,9 @@ Callback này được gọi khi một người chơi nhấp đúp vào một ng
 
 ## Trả Về
 
-1 - Sẽ ngăn các filterscript khác nhận được callback này.
+**1** - Sẽ ngăn các filterscript khác nhận được callback này.
 
-0 - Cho biết rằng callback này sẽ được chuyển cho filterscript tiếp theo.
+**0** - Cho biết rằng callback này sẽ được chuyển cho filterscript tiếp theo.
 
 Callback này luôn được gọi đầu tiên trong filterscripts.
 

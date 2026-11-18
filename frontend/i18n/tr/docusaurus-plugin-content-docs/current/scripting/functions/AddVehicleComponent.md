@@ -16,9 +16,9 @@ Girilen araç ID'sine uygun şekilde modifikasyon yapmanızı sağlar.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Modifikasyon başarıyla araca yüklendi.
+**1**: Modifikasyon başarıyla araca yüklendi.
 
-0: Modifikasyon yapılamadı çünkü böyle bir araç yok.
+**0**: Modifikasyon yapılamadı çünkü böyle bir araç yok.
 
 ## Örnekler
 

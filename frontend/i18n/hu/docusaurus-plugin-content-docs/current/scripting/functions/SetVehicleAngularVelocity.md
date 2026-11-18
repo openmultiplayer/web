@@ -24,9 +24,9 @@ Beállítja a jármű X, Y és Z szögsebességét
 
 ## Visszatérés
 
-1: A funkció sikeresen végrehajtva.
+**1**: A funkció sikeresen végrehajtva.
 
-0: A funkció végrehajtása nem sikerült. A jármű nem létezik.
+**0**: A funkció végrehajtása nem sikerült. A jármű nem létezik.
 
 ## Példák
 

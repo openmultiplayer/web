@@ -15,7 +15,7 @@ Gets the ID of the menu the player is currently viewing (shown by ShowMenuForPla
 
 ## ส่งคืน
 
-The ID of the player's currently shown menu, or INVALID_MENU (255) if no menu shown. Value returned is tagged with Menu:.
+The ID of the player's currently shown menu, or INVALID_MENU (255) if no menu shown. Value returned is tagged with **Menu**:.
 
 ## ตัวอย่าง
 

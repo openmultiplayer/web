@@ -17,9 +17,9 @@ CreateActor ile oluşturulan aktörü silin.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Fonksiyon çalıştı ve aktör başarıyla silindi.
+**1**: Fonksiyon çalıştı ve aktör başarıyla silindi.
 
-0: Fonksiyon geçersiz aktör ID'si girildiği için çalışmadı.
+**0**: Fonksiyon geçersiz aktör ID'si girildiği için çalışmadı.
 
 ## Örnekler
 

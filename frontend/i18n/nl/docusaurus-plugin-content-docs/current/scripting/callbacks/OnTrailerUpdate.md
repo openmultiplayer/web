@@ -16,9 +16,9 @@ Deze callback wordt aangeroepen wanneer een speler een trailer-update stuurt.
 
 ## Returns
 
-0 - Annuleert alle trailer-updates die naar andere spelers worden gestuurd. Update wordt nog steeds naar de bijwerkende speler gestuurd.
+**0** - Annuleert alle trailer-updates die naar andere spelers worden gestuurd. Update wordt nog steeds naar de bijwerkende speler gestuurd.
 
-1 - Verwerkt de trailer-update normaal en synchroniseert het tussen alle spelers.
+**1** - Verwerkt de trailer-update normaal en synchroniseert het tussen alle spelers.
 
 Wordt altijd als eerste aangeroepen in filterscripts.
 

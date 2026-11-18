@@ -9,11 +9,11 @@ tags: []
 
 Write data to a file in binary format, while ignoring line brakes and encoding.
 
-| Name                 | Description                                |
-| -------------------- | ------------------------------------------ |
-| handle               | The File handle to use, opened by fopen(). |
-| const buffer[]       | The data to write to the file.             |
-| size = sizeof buffer | The number of cells to write.              |
+| Name                 | Description                              |
+| -------------------- | ---------------------------------------- |
+| handle               | The File handle to use, opened by fopen. |
+| const buffer[]       | The data to write to the file.           |
+| size = sizeof buffer | The number of cells to write.            |
 
 ## ส่งคืน
 
@@ -60,7 +60,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using fopen or ftemp.
 
 :::
 

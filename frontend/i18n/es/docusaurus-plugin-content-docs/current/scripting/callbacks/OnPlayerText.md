@@ -15,7 +15,7 @@ Se llama cuando un jugador envía un mensaje en el chat.
 
 ## Devoluciones
 
-Retornar 0 en esta callback evitará que el texto escrito se muestre en el chat.
+Retornar **0** en esta callback evitará que el texto escrito se muestre en el chat.
 
 0 - Prevendrá a otros filterscripts de recibir este callback.
 

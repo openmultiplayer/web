@@ -47,7 +47,7 @@ else
 
 :::warning
 
-Because a siren state of -1 or 0 means 'off', you cannot use a boolean conditional statement to check whether sirens are on. If you do 'if (sirenstate)', it will be true for anything NOT 0 (so -1 or 1). You should check that the siren state explicitly equals 1.
+Because a siren state of -1 or 0 means 'off', you cannot use a boolean conditional statement to check whether sirens are on. If you do 'if (sirenstate)', it will be true for anything NOT 0 (so -1 or 1). You should check that the siren state explicitly equals **1**.
 
 :::
 

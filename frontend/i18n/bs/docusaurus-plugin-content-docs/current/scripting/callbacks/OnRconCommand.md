@@ -15,7 +15,7 @@ Ovaj callback je pozvan kada je komanda poslana kroz server konzolu, upravljanje
 
 ## Returns
 
-Vijek je pozvan prvo u filterskriptama tako da će return-ovanje 0 ovdje blokirati gamemode da ga vidi.
+Vijek je pozvan prvo u filterskriptama tako da će return-ovanje **0** ovdje blokirati gamemode da ga vidi.
 
 ## Primjeri
 
@@ -47,7 +47,7 @@ public OnRconCommand(cmd[])
 - "/rcon " nije uključen/svrstan u "cmd" kada igrač napiše komandu.
 - Ako koristite "print" funkciju ovdje, poslat će poruku igraču koji je upisao naredbu u igri, kao i log.
 - Ovaj callback se ne poziva kada igrač nije prijavljen kao RCON administrator.
-- Kada igrač nije prijavljen kao RCON admin i koristi / rcon prijavu, ovaj povratni poziv neće biti pozvan i umjesto toga će se pozvati OnRconLoginAttempt. Međutim, kada je igrač prijavljen kao RCON administrator, upotreba ove komande pozvat će ovaj callback.
+- Kada igrač nije prijavljen kao RCON admin i koristi `/rcon login`, ovaj povratni poziv neće biti pozvan i umjesto toga će se pozvati OnRconLoginAttempt. Međutim, kada je igrač prijavljen kao RCON administrator, upotreba ove komande pozvat će ovaj callback.
 
 :::
 

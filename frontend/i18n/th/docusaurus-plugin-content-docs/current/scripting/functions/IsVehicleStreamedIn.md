@@ -16,9 +16,9 @@ Checks if a vehicle is streamed in for a player. Only nearby vehicles are stream
 
 ## ส่งคืน
 
-0: Vehicle is not streamed in for the player, or the function failed to execute (player and/or vehicle do not exist).
+**0**: Vehicle is _not_ streamed in for the player, or the function failed to execute (player and/or vehicle do not exist).
 
-1: Vehicle is streamed in for the player.
+**1**: Vehicle _is_ streamed in for the player.
 
 ## ตัวอย่าง
 

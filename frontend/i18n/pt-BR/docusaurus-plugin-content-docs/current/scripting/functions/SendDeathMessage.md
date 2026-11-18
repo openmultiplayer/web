@@ -20,11 +20,11 @@ Adiciona uma morte ao 'killfeed' no lado direito da tela para todos os jogadores
 
 Esta função sempre retorna **true**, mesmo se a execução da função falhar.
 
-A função falha na execução (nenhuma mensagem de morte é mostrada) se 'playerid' for inválido.
+A função falha na execução (nenhuma mensagem de morte é mostrada) se `killee` for inválido.
 
-Se 'razão' for inválido, um ícone genérico de caveira e ossos cruzados será mostrado.
+Se `weapon` for inválido, um ícone genérico de caveira e ossos cruzados será mostrado.
 
-'killerid' sendo inválido (`INVALID_PLAYER_ID`) é válido.
+`killer` sendo inválido (`INVALID_PLAYER_ID`) é válido.
 
 ## Exemplos
 
@@ -39,7 +39,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-- As mensagens de morte podem ser apagadas usando um jogador válido ID para 'playerid' que não esteja conectado.
+- As mensagens de morte podem ser apagadas usando um jogador válido ID para `killee` que **não esteja conectado**.
 - Para mostrar uma mensagem de morte para apenas um jogador, use [SendDeathMessageToPlayer](SendDeathMessageToPlayer).
 - Você pode usar NPCs para criar seus próprios motivos de morte personalizados.
 

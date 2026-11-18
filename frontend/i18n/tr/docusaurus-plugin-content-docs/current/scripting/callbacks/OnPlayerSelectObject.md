@@ -21,9 +21,9 @@ Bu fonksiyon, oyuncu SelectObject kullanıldıktan sonra bir obje seçtiğinde �
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Diğer komut dosyalarının bu fonksiyonu çağırmasını engelleyecektir.
+**1** - Diğer komut dosyalarının bu fonksiyonu çağırmasını engelleyecektir.
 
-0 - Bu fonksiyonun bir sonraki komuta geçirileceğini gösterir.
+**0** - Bu fonksiyonun bir sonraki komuta geçirileceğini gösterir.
 
 Filterscript komutlarında her zaman ilk olarak çağrılır.
 

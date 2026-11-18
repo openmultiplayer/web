@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Altere a cor do crachá de um jogador e do sinal de radar de outro jogador.
+Altere a cor do **crachá** de um jogador e do **sinal de radar** de outro jogador.
 
 | Nome     | Descrição                                                  |
 | -------- | ---------------------------------------------------------- |

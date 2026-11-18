@@ -16,7 +16,7 @@ Called when a player sends a chat message.
 
 ## ส่งคืน
 
-It is always called first in filterscripts so returning 0 there blocks other scripts from seeing it.
+It is always called first in filterscripts so returning **0** there blocks other scripts from seeing it.
 
 ## ตัวอย่าง
 

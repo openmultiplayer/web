@@ -16,7 +16,7 @@ Altere o paintjob de um veículo (para cores normais, consulte ChangeVehicleColo
 
 ## Retorno
 
-Esta função sempre retorna 1 (sucesso), mesmo que o veículo não exista.
+Esta função sempre retorna **1** (sucesso), mesmo que o veículo não exista.
 
 :::warning
 

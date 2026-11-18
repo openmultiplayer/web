@@ -15,7 +15,7 @@ Postavi gravitaciju za sve igrače.
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, čak i kada se neuspješno izvrši ako je gravitacija iznad limita (manja od -50 ili veća od +50).
+Ova funkcija uvijek returna (vraća) **1**, čak i kada se neuspješno izvrši ako je gravitacija iznad limita (manja od -50 ili veća od +50).
 
 ## Primjeri
 

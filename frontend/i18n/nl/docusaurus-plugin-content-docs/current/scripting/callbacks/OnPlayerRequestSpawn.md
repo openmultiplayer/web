@@ -15,7 +15,7 @@ Deze callback wordt aangeroepen wanneer een speler probeert te spawnen via klass
 
 ## Returns
 
-Wordt altijd als eerste aangeroepen in filterscripts, dus return 0 blokkeert ook andere scripts.
+Wordt altijd als eerste aangeroepen in filterscripts, dus return **0** blokkeert ook andere scripts.
 
 ## Voorbeelden
 

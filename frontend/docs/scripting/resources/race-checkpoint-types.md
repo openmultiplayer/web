@@ -15,7 +15,7 @@ These definitions are used by [SetPlayerRaceCheckpoint](../functions/SetPlayerRa
 | UNKNOWN_CP_TYPE       | -1    |                                                      |
 | CP_TYPE_GROUND_NORMAL | 0     | Normal                                               |
 | CP_TYPE_GROUND_FINISH | 1     | Finish                                               |
-| CP_TYPE_GROUND_EMPTY  | 2     | Nothing (Only the checkpoint without anything on it) |
+| CP_TYPE_GROUND_EMPTY  | 2     | Nothing (only the checkpoint without anything on it) |
 | CP_TYPE_AIR_NORMAL    | 3     | Air normal                                           |
 | CP_TYPE_AIR_FINISH    | 4     | Air finish                                           |
 | CP_TYPE_AIR_ROTATING  | 5     | Air (rotates and stops)                              |

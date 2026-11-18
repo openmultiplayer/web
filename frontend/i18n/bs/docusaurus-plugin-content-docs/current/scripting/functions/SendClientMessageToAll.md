@@ -9,14 +9,14 @@ tags: []
 
 Prikazuje poruku u chatu za sve igrače. Ovo je ekvivalent SendClientMessage za više igrača.
 
-| Ime             | Deskripcija                              |
-| --------------- | ---------------------------------------- |
-| color           | Boja poruke (0xRRGGBBAA Hex format).     |
-| const message[] | Poruka za prikazati (max 144 karaktera). |
+| Ime             | Deskripcija                                  |
+| --------------- | -------------------------------------------- |
+| color           | Boja poruke (0xRRGGBBAA Hex format).         |
+| const message[] | Poruka za prikazati **(max 144 karaktera)**. |
 
 ## Returns
 
-Ova funkcija ubijek vraća true/uspješno (1).
+Ova funkcija ubijek vraća **true**/uspješno (**1**).
 
 ## Primjeri
 

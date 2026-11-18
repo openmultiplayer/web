@@ -20,9 +20,9 @@ Este callback se llama cuando un vehículo reaparece.
 
 ## Devoluciones
 
-0 - Prevendrá a otros filterscripts de recibir este callback.
+**0** - Prevendrá a otros filterscripts de recibir este callback.
 
-1 - Indica que este callback será pasado al siguiente filterscript.
+**1** - Indica que este callback será pasado al siguiente filterscript.
 
 Siempre se llama primero en filterscripts.
 

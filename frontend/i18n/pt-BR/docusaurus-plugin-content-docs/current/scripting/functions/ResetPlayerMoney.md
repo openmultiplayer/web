@@ -15,9 +15,9 @@ Resetar o dinheiro de um jogador para \$0.
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao ser executada. Isso significa que o jogador não está conectado.
+**0**: A função falhou ao ser executada. Isso significa que o jogador não está conectado.
 
 ## Exemplos
 

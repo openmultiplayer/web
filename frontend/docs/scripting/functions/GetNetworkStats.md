@@ -16,7 +16,7 @@ Gets the server's network stats and stores them in a string.
 
 ## Returns
 
-This function always returns 1.
+This function always returns **1**.
 
 ## Examples
 

@@ -701,4 +701,4 @@ while (i < 10)
 }
 ```
 
-Veja do e for para mais informações.
+Veja **do** e **for** para mais informações.

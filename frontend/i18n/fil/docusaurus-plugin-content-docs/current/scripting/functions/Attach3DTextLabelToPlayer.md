@@ -19,9 +19,9 @@ Mag-attach ng 3D text label sa isang player.
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Nangangahulugan ito na ang player at/o label ay wala.
+**0**: Nabigo ang function na isagawa. Nangangahulugan ito na ang player at/o label ay wala.
 
 ## Examples
 

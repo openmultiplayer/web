@@ -23,7 +23,7 @@ Oyun moduna bir "statik" araç ekler (modeller oyuncular için önceden yükleni
 
 Oluşturulan aracın araç kimliği (1 ile MAX_VEHICLES arasında).
 
-Araç oluşturulmamışsa INVALID_VEHICLE_ID (65535) (araç sınırına ulaşıldı veya geçersiz araç model kimliği).
+Araç oluşturulmamışsa **INVALID_VEHICLE_ID (65535)** (araç sınırına ulaşıldı veya geçersiz araç model kimliği).
 
 ## Örnekler
 

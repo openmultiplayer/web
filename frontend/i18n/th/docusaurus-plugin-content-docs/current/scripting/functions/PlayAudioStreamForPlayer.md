@@ -27,9 +27,9 @@ Play an 'audio stream' for a player. Normal audio files also work (e.g. MP3).
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**0**: The function failed to execute. The player specified does not exist.
 
 ## ตัวอย่าง
 

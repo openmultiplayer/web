@@ -69,7 +69,7 @@ public OnGameModeExit()
 
 :::warning
 
-使用非零的无效句柄将导致服务器崩溃！请始终使用[db_open](db_open)获取有效数据库连接句柄
+使用非零的**无效句柄**将导致服务器崩溃！请始终使用[db_open](db_open)获取有效数据库连接句柄
 
 :::
 

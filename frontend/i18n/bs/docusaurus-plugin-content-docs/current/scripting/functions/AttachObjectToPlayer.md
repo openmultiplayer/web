@@ -22,7 +22,7 @@ Prikvači objekat za igrača.
 
 ## Returns
 
-Ova funkcija uvijek returna(vraća) 0.
+Ova funkcija uvijek returna(vraća) **0**.
 
 ## Primjeri
 

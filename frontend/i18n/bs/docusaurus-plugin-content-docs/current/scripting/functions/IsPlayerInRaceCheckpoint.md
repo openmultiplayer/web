@@ -15,9 +15,9 @@ Provjerava ako je igrač unutar njihovog trenutno postavljenog race checkpointa/
 
 ## Returns
 
-0: Igrač nije u race checkpointu/markeru.
+**0**: Igrač nije u race checkpointu/markeru.
 
-1: Igrač jeste u race checkpointu/markeru.
+**1**: Igrač jeste u race checkpointu/markeru.
 
 ## Primjeri
 

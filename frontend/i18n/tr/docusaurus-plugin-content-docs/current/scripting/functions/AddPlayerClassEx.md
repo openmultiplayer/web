@@ -26,9 +26,9 @@ Bu işlev, bir takım parametresi eklenmesiyle birlikte AddPlayerClass işleviyl
 
 ## Çalışınca Vereceği Sonuçlar
 
-Yeni eklenen sınıfın kimliği.
+Yeni eklenen **sınıfın kimliği**.
 
-319 sınıf sınırına (320) ulaşıldıysa. Mümkün olan en yüksek sınıf kimliği 319'dir.
+**319** sınıf sınırına (320) ulaşıldıysa. Mümkün olan en yüksek sınıf kimliği 319'dir.
 
 ## Örnekler
 

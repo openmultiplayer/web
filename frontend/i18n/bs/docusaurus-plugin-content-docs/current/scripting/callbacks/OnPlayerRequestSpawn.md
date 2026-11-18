@@ -15,7 +15,7 @@ Pozvano kada igrač pokuša da se spawnuje (stvori) preko selekcije klase bilo p
 
 ## Returns
 
-UVijek je pozvan prvi u filterskripti tako da return-ovanje 0 ovdje će blokirati da ga ostale skripte vide.
+Uvijek je pozvan prvi u filterskripti tako da return-ovanje **0** ovdje će blokirati da ga ostale skripte vide.
 
 ## Primjeri
 

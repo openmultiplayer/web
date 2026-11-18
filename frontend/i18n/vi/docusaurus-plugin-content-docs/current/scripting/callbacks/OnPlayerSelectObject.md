@@ -21,9 +21,9 @@ Callback này được gọi khi người chơi chọn một đối tượng sau
 
 ## Giá trị trả về
 
-1 - Sẽ ngăn các script khác nhận callback này.
+**1** - Sẽ ngăn các script khác nhận callback này.
 
-0 - Cho biết callback này sẽ được truyền cho script tiếp theo.
+**0** - Cho biết callback này sẽ được truyền cho script tiếp theo.
 
 Nó luôn được gọi đầu tiên trong filterscripts.
 

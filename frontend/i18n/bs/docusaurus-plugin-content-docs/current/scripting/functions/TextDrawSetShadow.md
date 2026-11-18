@@ -9,16 +9,16 @@ tags: ["textdraw"]
 
 Postavlja veličinu sjene teksta u textdrawu.
 
-| Ime  | Deskripcija                                                                                         |
-| ---- | --------------------------------------------------------------------------------------------------- |
-| text | ID textdrawa za postaviti veličinu sjene teksta.                                                    |
-| size | Veličina sjene. 1 se najčešće koristi za normalnu veličinu sjene. 0 onemogućava sjenu u potpunosti. |
+| Ime  | Deskripcija                                                                                                 |
+| ---- | ----------------------------------------------------------------------------------------------------------- |
+| text | ID textdrawa za postaviti veličinu sjene teksta.                                                            |
+| size | Veličina sjene. **1** se najčešće koristi za normalnu veličinu sjene. **0** onemogućava sjenu u potpunosti. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Textdraw ne postoji.
+**0**: Funkcija neuspješno izvršena. Textdraw ne postoji.
 
 ## Primjeri
 

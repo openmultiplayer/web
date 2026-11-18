@@ -18,7 +18,7 @@ Promijeni poziciju objekta.
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, even if Navedeni objekat ne postoji.
+Ova funkcija uvijek returna (vraća) **1**, even if Navedeni objekat ne postoji.
 
 ## Primjeri
 

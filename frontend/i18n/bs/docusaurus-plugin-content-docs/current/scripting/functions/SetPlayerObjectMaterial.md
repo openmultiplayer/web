@@ -17,7 +17,7 @@ Zamijeni teksturu player-objekta sa teksturom drugog modela u igri.
 | modelid       | ID modela na kome se nalazi zamjenska tekstura. Koristite 0 za alfa. Koristite -1 za promjenu boje materijala bez mijenjanja postojeće teksture. |
 | txdname       | Ime txd fatoteke koja sadrži zamjensku teksturu (koristi "none" ako nije potrebno)                                                               |
 | texturename   | Ime teksture za koristiti kao zamjensku (koristi "none" ako nije potrebno)                                                                       |
-| materialcolor | Boja objekta za postaviti, kao cijeli broj ili hex u ARGB formatu. Korištenjem 0 čuva trenutnu boju materijala.                                  |
+| materialcolor | Boja objekta za postaviti, kao cijeli broj ili hex u **ARGB formatu**. Korištenjem **0** čuva trenutnu boju materijala.                          |
 
 ## Returns
 
@@ -54,7 +54,7 @@ Vertex (vrhovno) osvjetljenje objekta će nestati ako se promijeni boja materija
 
 :::warning
 
-MORAŠ koristiti ARGB format boje, ne RGBA kao u client porukama itd.
+MORAŠ koristiti **ARGB** format boje, ne RGBA kao u client porukama itd.
 
 :::
 
@@ -64,6 +64,6 @@ MORAŠ koristiti ARGB format boje, ne RGBA kao u client porukama itd.
 
 ## Filterskripte koje podržavaju teksturisanje/text
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) od Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) od Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) od RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) od Pottus

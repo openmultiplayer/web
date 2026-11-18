@@ -15,9 +15,9 @@ Zatvara SQLite konekciju databaze kreirane sa [db_open](db_open).
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo može značiti da upravljanje konekcijom databaze nije validno.
+**0**: Funkcija neuspješno izvršena. Ovo može značiti da upravljanje konekcijom databaze nije validno.
 
 ## Primjeri
 
@@ -69,7 +69,7 @@ public OnGameModeExit()
 
 :::warning
 
-Upotreba nevaljanog upravitelja databaze koja nije nula srušit će vaš server! Nabavite važeći upravitelj databazom pomoću [db_open](db_open).
+Upotreba **nevaljanog upravitelja** databaze koja nije nula srušit će vaš server! Nabavite važeći upravitelj databazom pomoću [db_open](db_open).
 
 :::
 

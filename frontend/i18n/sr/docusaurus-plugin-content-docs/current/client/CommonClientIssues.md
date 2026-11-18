@@ -5,7 +5,7 @@ sidebar_label: Уобичајени проблеми са клијентом
 
 ### Добијате грешку "San Andreas cannot be found" (San Andreas није пронађен).
 
-San Andreas Multiplayer **није** самостални програм! Додаје multiplayer функцију у San Andreas, и стога вам је потребан GTA San Andreas за рачунар - такође мора бити EU/US v1.0, друге верзије као што су v2.0 или Steam и Direct2Drive верзије неће радити. [Кликните овде да преузмете закрпу за смањење верзије вашег GTA: SA на 1.0](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
+San Andreas Multiplayer **није** самостални програм! Додаје multiplayer функцију у San Andreas, и стога вам је потребан GTA San Andreas за рачунар - такође мора бити **EU/US v1.0**, друге верзије као што су v2.0 или Steam и Direct2Drive верзије неће радити. [Кликните овде да преузмете закрпу за смањење верзије вашег GTA: SA на 1.0](https://www.gamefront.com/games/grand-theft-auto-san-andreas/file/gta-sa-downgrader-patch)
 
 ### Не могу да видим никакве сервере у SA:MP прегледачу
 

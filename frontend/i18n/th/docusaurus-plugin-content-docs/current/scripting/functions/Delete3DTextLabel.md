@@ -15,7 +15,7 @@ Delete a 3D text label (created with Create3DTextLabel).
 
 ## ส่งคืน
 
-1 if the 3D text label was deleted, otherwise 0.
+**1** if the 3D text label was deleted, otherwise **0**.
 
 ## ตัวอย่าง
 

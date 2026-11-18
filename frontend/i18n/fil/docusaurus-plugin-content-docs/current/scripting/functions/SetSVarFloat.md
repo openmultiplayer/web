@@ -18,9 +18,9 @@ Magtakda ng server variable na float.
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Ang variable na pangalan ay null o higit sa 40 character.
+**0**: Nabigo ang function na isagawa. Ang variable na pangalan ay null o higit sa 40 character.
 
 ## Examples
 

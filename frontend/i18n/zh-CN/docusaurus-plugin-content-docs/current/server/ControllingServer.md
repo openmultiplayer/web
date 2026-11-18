@@ -74,7 +74,7 @@ bans.json 是用于存储封禁信息的文件，包括以下内容：
 
 其中 `IP_HERE` 是你想要封禁的 IP 地址。这种方法要比使用 RCON 命令 `banip` 花更长时间, 所以建议使用 RCON `banip`.
 
-##### Ban() 函数
+##### Ban 函数
 
 [Ban](../scripting/functions/Ban) 函数可用于从脚本中封禁玩家。[BanEx](../scripting/functions/BanEx) 函数将添加一个可选的原因，如下所示：
 
@@ -198,7 +198,7 @@ unbanip 13.37.13.37
 | `/rcon weburl [服务器 URL]`       | 更改主列表/SA-MP 客户端中的服务器 URL                                                                  |
 | `/rcon unloadfs`                  | 卸载指定滤镜脚本（_示例：/rcon unloadfs adminfs_）。                                                   |
 | `/rcon reloadfs`                  | 重新加载指定滤镜脚本（_示例：/rcon reloadfs adminfs_）。                                               |
-| `/rcon rcon\_password [whatever]` | 更改 RCON 密码                                                                                         |
+| `/rcon rcon_password [whatever]`  | 更改 RCON 密码                                                                                         |
 | `/rcon password [whatever]`       | 设置/重置服务器密码                                                                                    |
 | `/rcon messageslimit [数量]`      | 更改客户端每秒发送到服务器的消息数量。（默认 500）                                                     |
 | `/rcon ackslimit [数量]`          | 更改 acks 限制（默认 3000）                                                                            |

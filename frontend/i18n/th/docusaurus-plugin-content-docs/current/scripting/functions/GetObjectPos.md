@@ -18,9 +18,9 @@ Get the position of an object.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The specified object does not exist.
+**0**: The function failed to execute. The specified object does not exist.
 
 ## ตัวอย่าง
 

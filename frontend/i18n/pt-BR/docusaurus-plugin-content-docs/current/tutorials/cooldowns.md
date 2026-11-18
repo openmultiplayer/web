@@ -89,9 +89,9 @@ OnPlayerFinishRace(playerid)
 
 Esses dois exemplos são comuns e funcionam bem. No entanto, há uma forma muito melhor de alcançar ambos os resultados, que é muito mais precisa e pode dar tempos de cronômetro até o milissegundo!
 
-## Usando `GetTickCount()` e `gettime()`
+## Usando `GetTickCount` e `gettime`
 
-`GetTickCount()` é uma função que retorna o tempo em milissegundos desde que o processo do servidor foi aberto. `gettime()` retorna o número de segundos desde 1º de janeiro de 1970, também conhecido como Timestamp Unix.
+`GetTickCount` é uma função que retorna o tempo em milissegundos desde que o processo do servidor foi aberto. `gettime` retorna o número de segundos desde 1º de janeiro de 1970, também conhecido como Timestamp Unix.
 
 Se você chamar qualquer uma dessas funções em dois momentos diferentes e subtrair o primeiro tempo do segundo, de repente você tem um intervalo entre esses dois eventos em milissegundos ou segundos respectivamente! Veja este exemplo:
 
@@ -120,7 +120,7 @@ OnPlayerInteractWithServer(playerid)
 }
 ```
 
-Ou, alternativamente, a versão com `gettime()`:
+Ou, alternativamente, a versão com `gettime`:
 
 ```pawn
 static PlayerAllowedSeconds[MAX_PLAYERS];
@@ -224,7 +224,7 @@ OnPlayerFinishRace(playerid)
 
 Aqui é onde o cálculo do intervalo acontece, bom, eu digo cálculo, mas é apenas subtrair dois valores!
 
-GetTickCount() retorna a contagem de ticks atual, então será maior que a contagem de ticks inicial, o que significa que você subtrai a contagem de ticks inicial da contagem de ticks atual para obter seu intervalo entre as duas medidas.
+GetTickCount retorna a contagem de ticks atual, então será maior que a contagem de ticks inicial, o que significa que você subtrai a contagem de ticks inicial da contagem de ticks atual para obter seu intervalo entre as duas medidas.
 
 Então, como dissemos, o jogador termina a corrida 1 minuto e 40 segundos depois (100 segundos, ou 100.000 milissegundos), GetTickCount retornará 160.000. Subtraia o valor inicial (que é 60.000) do novo valor (que é 160.000) e você obtém 100.000 milissegundos, que é 1 minuto e 40 segundos, que é o tempo que o jogador levou para fazer a corrida!
 
@@ -241,4 +241,4 @@ Por último, você não quer ficar dizendo aos seus jogadores valores de tempo e
 
 [Este pacote](https://github.com/ScavengeSurvive/timeutil) contém uma função para formatar milissegundos em uma string.
 
-Espero que isso tenha ajudado! Eu escrevi porque ajudei algumas pessoas recentemente que não sabiam como usar `GetTickCount()` ou `gettime()` como alternativa para timers ou para obter intervalos etc.
+Espero que isso tenha ajudado! Eu escrevi porque ajudei algumas pessoas recentemente que não sabiam como usar `GetTickCount` ou `gettime` como alternativa para timers ou para obter intervalos etc.

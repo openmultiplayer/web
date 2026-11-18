@@ -9,23 +9,23 @@ tags: ["玩家", "物体", "附加"]
 
 将物体附加到玩家指定骨骼上。
 
-| 参数            | 说明                                              |
-| --------------- | ------------------------------------------------- |
-| playerid        | 目标玩家 ID                                       |
-| index           | 附加槽位索引（0-9）                               |
-| modelid         | 要附加的物体模型 ID                               |
-| bone            | 目标[骨骼 ID](../resources/boneid)                |
-| Float:offsetX   | (可选) X 轴位置偏移量                             |
-| Float:offsetY   | (可选) Y 轴位置偏移量                             |
-| Float:offsetZ   | (可选) Z 轴位置偏移量                             |
-| Float:rotationX | (可选) X 轴旋转角度                               |
-| Float:rotationY | (可选) Y 轴旋转角度                               |
-| Float:rotationZ | (可选) Z 轴旋转角度                               |
-| Float:scaleX    | (可选) X 轴缩放比例                               |
-| Float:scaleY    | (可选) Y 轴缩放比例                               |
-| Float:scaleZ    | (可选) Z 轴缩放比例                               |
-| materialColour1 | (可选) 第一材质颜色（整数或 ARGB 十六进制颜色值） |
-| materialColour2 | (可选) 第二材质颜色（整数或 ARGB 十六进制颜色值） |
+| 参数            | 说明                                                  |
+| --------------- | ----------------------------------------------------- |
+| playerid        | 目标玩家 ID                                           |
+| index           | 附加槽位索引（0-9）                                   |
+| modelid         | 要附加的物体模型 ID                                   |
+| bone            | 目标[骨骼 ID](../resources/boneid)                    |
+| Float:offsetX   | (可选) X 轴位置偏移量                                 |
+| Float:offsetY   | (可选) Y 轴位置偏移量                                 |
+| Float:offsetZ   | (可选) Z 轴位置偏移量                                 |
+| Float:rotationX | (可选) X 轴旋转角度                                   |
+| Float:rotationY | (可选) Y 轴旋转角度                                   |
+| Float:rotationZ | (可选) Z 轴旋转角度                                   |
+| Float:scaleX    | (可选) X 轴缩放比例                                   |
+| Float:scaleY    | (可选) Y 轴缩放比例                                   |
+| Float:scaleZ    | (可选) Z 轴缩放比例                                   |
+| materialColour1 | (可选) 第一材质颜色（整数或 **ARGB** 十六进制颜色值） |
+| materialColour2 | (可选) 第二材质颜色（整数或 **ARGB** 十六进制颜色值） |
 
 ## 返回值
 

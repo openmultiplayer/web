@@ -9,10 +9,10 @@ tags: ["textdraw"]
 
 Postavite poravnanje teksta u textdrawu.
 
-| Ime       | Deskripcija                           |
-| --------- | ------------------------------------- |
-| Text:text | ID textdrawa za postaviti poravnanje. |
-| alignment | 1-lijevo 2-centrirano 3-desno.        |
+| Ime       | Deskripcija                                |
+| --------- | ------------------------------------------ |
+| Text:text | ID textdrawa za postaviti poravnanje.      |
+| alignment | **1**-lijevo **2**-centrirano **3**-desno. |
 
 ## Returns
 

@@ -16,9 +16,9 @@ Callback này được gọi khi một người chơi gửi cập nhật về tr
 
 ## Trả về
 
-0 - Hủy bỏ bất kỳ cập nhật trailer nào được gửi đến các người chơi khác. Cập nhật vẫn được gửi đến người chơi đang cập nhật.
+**0** - Hủy bỏ bất kỳ cập nhật trailer nào được gửi đến các người chơi khác. Cập nhật vẫn được gửi đến người chơi đang cập nhật.
 
-1 - Xử lý cập nhật trailer theo cách bình thường và đồng bộ hóa giữa tất cả các người chơi.
+**1** - Xử lý cập nhật trailer theo cách bình thường và đồng bộ hóa giữa tất cả các người chơi.
 
 ## Ví dụ
 

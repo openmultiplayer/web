@@ -10,9 +10,9 @@ tags: ["file management"]
 
 Exclua um arquivo.
 
-| Nome | Descrição |
-| ---------------- | ------------------------------- |
-| const filename[] | O caminho do arquivo a ser excluído. |
+| Nome             | Descrição                                |
+| ---------------- | ---------------------------------------- |
+| const filename[] | O **caminho** do arquivo a ser excluído. |
 
 ## Retornos
 

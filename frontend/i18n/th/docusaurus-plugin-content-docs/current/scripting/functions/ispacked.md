@@ -15,7 +15,7 @@ Checks if the given string is packed.
 
 ## ส่งคืน
 
-1 if the string is packed, 0 if it's unpacked.
+**1** if the string is packed, **0** if it's unpacked.
 
 ## ตัวอย่าง
 

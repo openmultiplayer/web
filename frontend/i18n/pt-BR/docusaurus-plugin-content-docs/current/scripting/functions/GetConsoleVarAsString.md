@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::note
 
-Quando filterscripts ou plugins são especificados como varname, esta função retorna apenas o nome do primeiro filterscript ou plugin especificado.
+Quando _filterscripts_ ou _plugins_ são especificados como varname, esta função retorna apenas o nome do primeiro filterscript ou plugin especificado.
 
 :::
 
@@ -48,7 +48,7 @@ Digite 'varlist' no console do servidor para exibir uma lista de variáveis de c
 
 :::warning
 
-- Usar esta função com qualquer coisa que não seja uma string (inteira, booleana ou flutuante) fará com que seu servidor trave. (Corrigido em open.mp)
+- Usar esta função com qualquer coisa que não seja uma **string** (inteira, booleana ou flutuante) fará com que seu servidor trave. (Corrigido em open.mp)
 - Usá-lo com uma variável de console inexistente também fará com que seu servidor trave. (Corrigido em open.mp)
 
 :::

@@ -21,9 +21,9 @@ Prikazuje igraču za sinkroni (samo jedan po jedan) dijaloški box.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
 ## Primjeri
 
@@ -69,7 +69,8 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Kupi o
 :::tip
 
 - Preporučuje se upotreba enuma (vidi gore) ili definicija (#define) da bi se utvrdilo koji ID dijalozi imaju, kako bi se izbjegla zabuna u budućnosti. Nikada ne biste trebali koristiti doslovne brojeve za ID-ove - postaje zbunjujuće.
-- Koristite ugrađivanje boja za više boja u tekstu. Korišćenje -1 kao dijalogida zatvara sve dijaloge koji su trenutno prikazani na ekranu klijenta.
+- Koristite ugrađivanje boja za više boja u tekstu.
+- Korišćenje **-1** kao dijalogida zatvara sve dijaloge koji su trenutno prikazani na ekranu klijenta.
 
 :::
 

@@ -155,7 +155,7 @@ Note that this function merely creates the textdraw, other functions are used to
 
 **Parameters:**
 
-TextDrawCreate(Float:x, Float:y, text[])
+`TextDrawCreate(Float:x, Float:y, text[])`
 
 | Name   | Description                                  |
 | ------ | -------------------------------------------- |
@@ -206,7 +206,7 @@ To show a textdraw for a single player, the function [TextDrawShowForPlayer](../
 
 **Parameters:**
 
-TextDrawShowForPlayer(playerid, Text:text)
+`TextDrawShowForPlayer(playerid, Text:text)`
 
 | Name     | Description                                   |
 | -------- | --------------------------------------------- |

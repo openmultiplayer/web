@@ -18,7 +18,7 @@ Change the position of an object.
 
 ## ส่งคืน
 
-This function always returns 1, even if the object specified does not exist.
+This function always returns **1**, even if the object specified does not exist.
 
 ## ตัวอย่าง
 

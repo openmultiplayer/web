@@ -16,7 +16,7 @@ Callback này được gọi khi một người chơi gửi tin nhắn trò chuy
 
 ## Giá trị trả về
 
-Nó luôn được gọi đầu tiên trong filterscripts nên trả về 0 sẽ chặn các script khác không thấy được nó.
+Nó luôn được gọi đầu tiên trong filterscripts nên trả về **0** sẽ chặn các script khác không thấy được nó.
 
 ## Ví dụ
 

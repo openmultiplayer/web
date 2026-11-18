@@ -43,9 +43,9 @@ pickup = 0; // varijablu pickupa treba resetirati kako bi se izbjegli budući pr
 
 :::note
 
-- Jedina vrsta pickupa koja se može pokupiti iz vozila je 14 (osim posebnih pickupa poput bribe-a).
+- Jedina vrsta pickupa koja se može pokupiti iz vozila je **14** (osim posebnih pickupa poput bribe-a).
 - Pickupi su prikazani i mogu ih pokupiti svi igrači.
-- Moguće je da ako se DestroyPickup () koristi kada se podiže, više od jednog igrača može pokupiti pickup zbog zaostajanja. To se može zaobići korištenjem varijabli.
+- Moguće je da ako se DestroyPickup koristi kada se podiže, više od jednog igrača može pokupiti pickup zbog zaostajanja. To se može zaobići korištenjem varijabli.
 - Određene vrste pickupa dolaze s "automatskim odgovorima", na primjer, upotreba modela M4 u pickupa automatski će dati igraču oružje i malo streljiva.
 
 :::
@@ -58,7 +58,7 @@ Za potpuno skriptirane pickupe treba koristiti tip 1.
 
 :::warning
 
-Poznati Bug(ovi): Pickupi koji imaju X ili Y niži od -4096.0 ili veći od 4096.0 neće se pojaviti niti će pokrenuti OnPlayerPickUpPickup.
+**Poznati Bug(ovi):** Pickupi koji imaju X ili Y niži od -4096.0 ili veći od 4096.0 neće se pojaviti niti će pokrenuti OnPlayerPickUpPickup.
 
 :::
 

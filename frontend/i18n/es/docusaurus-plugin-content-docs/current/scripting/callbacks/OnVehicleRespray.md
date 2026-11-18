@@ -17,7 +17,7 @@ Este callback se llama cuando un jugador sale de un taller de modificación, sin
 
 ## Devoluciones
 
-0 - Prevendrá a filterscripts de recibir este callback.
+**0** - Prevendrá a filterscripts de recibir este callback.
 
 Siempre se llama primero en el gamemode.
 
@@ -45,7 +45,7 @@ Solución acá: https://pastebin.com/G81da7N1
 
 :::warning
 
-Bugs Conocidos: La vista previa de un componente dentro de una tienda de modificación podría llamar a este callback.
+**Bugs Conocidos:** La vista previa de un componente dentro de una tienda de modificación podría llamar a este callback.
 
 :::
 

@@ -10,10 +10,10 @@ tags: ["textdraw"]
 
 Define o tamanho da sombra do texto de um textdraw.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------------------------------------------------------------------- |
-| Text:textid | O ID do textdraw para definir o tamanho da sombra.                                                       |
-| shadowSize | O tamanho da sombra. 1 é geralmente usado para um tamanho de sombra normal. 0 desativa a sombra completamente. |
+| Nome        | Descrição                                                                                                              |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Text:textid | O ID do textdraw para definir o tamanho da sombra.                                                                     |
+| shadowSize  | O tamanho da sombra. **1** é geralmente usado para um tamanho de sombra normal. **0** desativa a sombra completamente. |
 
 ## Retornos
 

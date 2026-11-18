@@ -16,9 +16,9 @@ The function GetPlayerHealth allows you to retrieve the health of a player. Usef
 
 ## ส่งคืน
 
-1 - success
+**1** - success
 
-0 - failure (i.e. player not connected).
+**0** - failure (i.e. player not connected).
 
 The player's health is stored in the specified variable.
 

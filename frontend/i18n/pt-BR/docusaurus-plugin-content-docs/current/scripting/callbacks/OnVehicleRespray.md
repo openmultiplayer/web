@@ -18,7 +18,7 @@ Essa callback é chamada quando um jogador sai de uma Garagem de Personalizaçã
 
 ## Retornos
 
-Sempre é chamada primeiro no Gamemode então retornar 0 lá bloqueia Filterscripts de chamarem ela.
+Sempre é chamada primeiro no Gamemode então retornar **0** lá bloqueia Filterscripts de chamarem ela.
 
 ## Exemplos
 
@@ -44,7 +44,7 @@ Código para conserto: https://pastebin.com/G81da7N1
 
 :::warning
 
-Bug(s) Notados: Visualizar certos componentes dentro da Garagem de Personalização podem chamar essa callback sem querer.
+**Bug(s) Notados:** Visualizar certos componentes dentro da Garagem de Personalização podem chamar essa callback sem querer.
 
 :::
 

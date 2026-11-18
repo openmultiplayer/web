@@ -56,7 +56,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using fopen or ftemp.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using fopen or ftemp.
 
 :::
 

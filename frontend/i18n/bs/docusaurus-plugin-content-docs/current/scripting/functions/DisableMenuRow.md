@@ -7,7 +7,7 @@ tags: ["menu"]
 
 ## Deskripcija
 
-Onemogućite određeni red u meniju za sve igrače. Bit će zasjenjeno i igrači ga neće moći odabrati.
+Onemogućite određeni red u meniju **za sve igrače**. Bit će zasjenjeno i igrači ga neće moći odabrati.
 
 | Ime         | Deskripcija                                                                                                          |
 | ----------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -45,7 +45,7 @@ Ruši se kada se proslijedi nevažeći ID menija.
 
 :::note
 
-Ova je funkcija onemogućila navedeni red menija za sve igrače. Ne postoji funkcija za onemogućavanje reda menija za određenog igrača. Morali biste stvoriti dva menija - jedan s onemogućenim redom i jedan bez. Ili po jedan po igraču.
+Ova je funkcija onemogućila navedeni red menija za **sve igrače**. Ne postoji funkcija za onemogućavanje reda menija za određenog igrača. Morali biste stvoriti dva menija - jedan s onemogućenim redom i jedan bez. Ili po jedan po igraču.
 
 :::
 

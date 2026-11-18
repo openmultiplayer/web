@@ -12,7 +12,7 @@ Callback ini akan terpanggil ketika pemain memasuki atau keluar dari mod shop.
 | Nama       | Deskripsi                                                        |
 | ---------- | ---------------------------------------------------------------- |
 | playerid   | ID dari pemain yang masuk atau keluar dari modshop               |
-| enterexit  | 1 jika pemain masuk 0 jika player keluar                         |
+| enterexit  | **1** jika pemain masuk **0** jika player keluar                 |
 | interiorid | ID Interior dari modshop yang pemain masuki (atau 0 jika keluar) |
 
 ## Returns
@@ -37,7 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Bug yang dikenal: Pemain akan menyatu ketika berada di dalam mod shop yang sama.
+**Bug yang dikenal:** Pemain akan menyatu ketika berada di dalam mod shop yang sama.
 
 :::
 

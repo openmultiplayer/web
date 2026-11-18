@@ -19,7 +19,7 @@ Mengekstrak bagian dari sebuah string ke string lainnya.
 
 ## Returns
 
-Jumlah karakter yang diekstrak ke dest[]
+Jumlah karakter yang diekstrak ke `dest[]`
 
 ## Contoh
 

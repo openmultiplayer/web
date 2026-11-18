@@ -17,9 +17,9 @@ Verifica se um jogador está sendo transmitido no cliente de outro player.
 
 ## Retornos
 
-**true** – O jogador está sendo transmitido.
+**true** – O jogador _está_ sendo transmitido.
 
-**false** - O jogador não está transmitindo.
+**false** - O jogador _não_ está transmitindo.
 
 ## Exemplos
 

@@ -17,7 +17,7 @@ Poziva javnu funkciju u bilo kojoj skripti koja se učita.
 
 ## Returns
 
-Vrijednost koju je vratila zadnja javna funkcija.
+Vrijednost koju je vratila **zadnja** javna funkcija.
 
 ## Examples
 

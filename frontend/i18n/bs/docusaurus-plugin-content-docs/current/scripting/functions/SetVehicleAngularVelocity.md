@@ -24,9 +24,9 @@ Postavlja ugaonu brzinu X, Y i Z vozila.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Vozilo ne postoji.
 
 ## Primjeri
 

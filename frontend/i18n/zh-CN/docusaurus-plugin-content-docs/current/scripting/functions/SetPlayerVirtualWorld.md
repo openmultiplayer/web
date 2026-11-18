@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-默认虚拟世界 ID 为 0。
+默认虚拟世界 ID 为 **0**。
 
 :::
 

@@ -72,7 +72,7 @@ Oyuncu yasaklamak için, basitçe JSON dizisine şu şekilde bir nesne ekleyin:
 
 `IP_BURAYA` kısmına, yasaklamak istediğiniz IP'yi ekleyin.
 
-##### Ban() Fonksiyonu
+##### Ban Fonksiyonu
 
 [Ban](../scripting/functions/Ban) fonksiyonu bir oyuncuyu script üzerinden yasaklamak için kullanılabilir. [BanEx](../scripting/functions/BanEx) fonksiyonu, aşağıdaki gibi isteğe bağlı bir neden ekler:
 

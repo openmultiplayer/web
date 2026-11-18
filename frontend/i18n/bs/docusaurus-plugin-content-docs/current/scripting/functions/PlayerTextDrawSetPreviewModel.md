@@ -17,9 +17,9 @@ Postavlja player-textdrawu 3D pregled određenog ID-a modela.
 
 ## Returns
 
-1: Funkcija uspješno izvršena. Ako je proslijeđen nevažeći ID modela 'success' (uspješno) je poslano, ali Model će se prikazati kao crno-žuti upitnik.
+**1**: Funkcija uspješno izvršena. Ako je proslijeđen nevažeći ID modela 'success' (uspješno) je poslano, ali Model će se prikazati kao crno-žuti upitnik.
 
-0: Funkcija neuspješno izvršena. Igrač i/ili textdraw ne postoje.
+**0**: Funkcija neuspješno izvršena. Igrač i/ili textdraw ne postoje.
 
 ## Primjeri
 

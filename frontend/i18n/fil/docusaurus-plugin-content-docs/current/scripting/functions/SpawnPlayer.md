@@ -15,9 +15,9 @@ tags: ["player"]
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Nangangahulugan ito na ang manlalaro ay hindi konektado.
+**0**: Nabigo ang function na isagawa. Nangangahulugan ito na ang manlalaro ay hindi konektado.
 
 ## Examples
 

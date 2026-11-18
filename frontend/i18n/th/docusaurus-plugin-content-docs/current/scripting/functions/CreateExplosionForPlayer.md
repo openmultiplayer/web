@@ -20,7 +20,7 @@ Creates an explosion that is only visible to a single player. This can be used t
 
 ## ส่งคืน
 
-This function always returns 1, even if the function failed to excute (player doesn't exist, invalid radius, or invalid explosion type).
+This function always returns **1**, even if the function failed to excute (player doesn't exist, invalid radius, or invalid explosion type).
 
 ## ตัวอย่าง
 

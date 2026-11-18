@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This callback is called when a player fires a shot from a weapon. Only bullet weapons are supported. Only passenger drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).
+This callback is called when a player fires a shot from a weapon. Only bullet weapons are supported. Only **passenger** drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).
 
 | Name                    | Description                                                                                               |
 | ----------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -43,10 +43,10 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-This callback is only called when lag compensation is enabled. If hittype is:
+This callback is only called when lag compensation is **enabled**. If **hittype** is:
 
-- `BULLET_HIT_TYPE_NONE`: the fX, fY and fZ parameters are normal coordinates, will give 0.0 for coordinates if nothing was hit (e.g. far object that the bullet can't reach);
-- Others: the fX, fY and fZ are offsets relative to the hitid.
+- `BULLET_HIT_TYPE_NONE`: the **fX**, **fY** and **fZ** parameters are normal coordinates, will give 0.0 for coordinates if nothing was hit (e.g. far object that the bullet can't reach);
+- Others: the **fX**, **fY** and **fZ** are offsets relative to the **hitid**.
 
 :::
 
@@ -58,11 +58,11 @@ This callback is only called when lag compensation is enabled. If hittype is:
 
 :::warning
 
-Known Bug(s):
+**Known Bug(s):**
 
 - Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled (shooting in air).
 - It is called as `BULLET_HIT_TYPE_VEHICLE` with the correct `hitid` (the hit player's vehicleid) if you are shooting a player which is in a vehicle. It won't be called as `BULLET_HIT_TYPE_PLAYER` at all.
-- Partially fixed in SA-MP 0.3.7: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported weaponid can actually fire bullets.
+- **Partially fixed in SA-MP 0.3.7**: If fake weapon data is sent by a malicious user, other player clients may freeze or crash. To combat this, check if the reported `weaponid` can actually fire bullets.
 
 :::
 

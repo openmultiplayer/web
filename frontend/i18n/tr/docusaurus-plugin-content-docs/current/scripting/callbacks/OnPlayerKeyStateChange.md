@@ -44,7 +44,7 @@ Yön tuşları, OnPlayerKeyStateChange'i (yukarı / aşağı / sola / sağa) tet
 
 ### Giriş
 
-Bu fonksiyon, bir oyuncu desteklenen tuşlardan birine bastığında veya bıraktığında çağrılır (bkz. [Tuşlar](../resources/keys)). <br/>Desteklenen tuşlar gerçek klavye tuşları değildir, ancak San Andreas eşlenmiş işlevi Bu, örneğin, birisinin <strong>boşluk</strong> tuşuna bastığını algılayamayacağınız, ancak sprint tuşuna bastığını algılayabileceğiniz anlamına gelir (bu, boşluk çubuğuna atanabilir veya atanmayabilir).
+Bu fonksiyon, bir oyuncu desteklenen tuşlardan birine bastığında veya bıraktığında çağrılır (bkz. [Tuşlar](../resources/keys)). <br/>Desteklenen tuşlar gerçek klavye tuşları değildir, ancak San Andreas eşlenmiş işlevi Bu, örneğin, birisinin <strong>boşluk</strong> tuşuna bastığını algılayamayacağınız, ancak **sprint** tuşuna bastığını algılayabileceğiniz anlamına gelir (bu, boşluk çubuğuna atanabilir veya atanmayabilir).
 
 ### Parametreler
 

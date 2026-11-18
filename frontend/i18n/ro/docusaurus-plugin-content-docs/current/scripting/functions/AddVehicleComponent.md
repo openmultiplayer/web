@@ -16,9 +16,9 @@ Adaugă o 'componentă' (adesea denumită 'mod' (modificare)) unui vehicul. Comp
 
 ## Se intoarce
 
-0 - Componenta nu a fost adăugată deoarece vehiculul nu există.
+**0** - Componenta nu a fost adăugată deoarece vehiculul nu există.
 
-1 - Componenta a fost adăugată cu succes la vehicul.
+**1** - Componenta a fost adăugată cu succes la vehicul.
 
 ## Exemple
 

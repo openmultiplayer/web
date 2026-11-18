@@ -20,9 +20,9 @@ Ova funkcija kreira 'statični' pickup u igru. Ovi pickup-ovi podržavaju oružj
 
 ## Returns
 
-1 ako je pickup uspješno kreiran.
+**1** ako je pickup uspješno kreiran.
 
-0 ako je neuspješno kreiran.
+**0** ako je neuspješno kreiran.
 
 ## Primjeri
 

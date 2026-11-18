@@ -16,9 +16,9 @@ Postavlja helte (zdravlje/health) vozila. Kada se health stanje vozila smanji, m
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
 
 ## Primjeri
 
@@ -38,7 +38,7 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 :::note
 
-Ukupan health vozila je 1000. Veće vrijednosti su moguće. Za više informacija o vrijednostima healtha, pogledaj [ovu](../resources/vehiclehealth) stranicu.
+Ukupan health vozila je **1000**. Veće vrijednosti su moguće. Za više informacija o vrijednostima healtha, pogledaj [ovu](../resources/vehiclehealth) stranicu.
 
 :::
 

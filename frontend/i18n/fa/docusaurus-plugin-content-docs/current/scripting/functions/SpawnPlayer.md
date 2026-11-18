@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-باگ‌های شناخته شده:
+**باگ‌های شناخته شده:**
 
 - اگر آنها در خودرو باشند بازیکن را می‌کشد و سپس با یک بطری در دست spawn می‌شوند. (در open.mp اصلاح شده)
 

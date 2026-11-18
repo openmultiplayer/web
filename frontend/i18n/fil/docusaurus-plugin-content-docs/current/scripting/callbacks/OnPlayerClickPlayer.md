@@ -17,9 +17,9 @@ Itinatawag kapag ang player ay nag-double-click sa isang player sa scoreboard. (
 
 ## Returns
 
-1 - Ay pipigilan ang ibang filterscripts na tanggapin itong callback.
+**1** - Ay pipigilan ang ibang filterscripts na tanggapin itong callback.
 
-0 - Ipinapahiwatig na ang callback na ito ay ipapasa sa susunod na filterscript.
+**0** - Ipinapahiwatig na ang callback na ito ay ipapasa sa susunod na filterscript.
 
 Ito ay palaging itinatawag una sa mga filterscripts.
 

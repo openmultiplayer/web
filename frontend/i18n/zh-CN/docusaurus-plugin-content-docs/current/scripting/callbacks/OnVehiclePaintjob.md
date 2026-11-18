@@ -36,7 +36,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 :::note
 
 - 此回调不会通过 [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob) 函数触发
-- 如需检测玩家购买涂装行为，可使用 vSync 插件的 OnVehicleChangePaintjob 回调
+- 如需检测玩家**购买**涂装行为，可使用 vSync 插件的 OnVehicleChangePaintjob 回调
 
 :::
 

@@ -14,7 +14,7 @@ Esta função está obsoleta. Consulte [NPC_StartPlayback](NPC_StartPlayback).
 
 ## Descrição
 
-Isso executará um arquivo .rec que deve ser salvo na pasta npcmodes/recordings. Esses arquivos permitem que o NPC siga determinadas ações. Suas ações podem ser registradas manualmente. Para mais informações, verifique as funções relacionadas.
+Isso executará um arquivo .rec que deve ser salvo na pasta `npcmodes/recordings`. Esses arquivos permitem que o NPC siga determinadas ações. Suas ações podem ser registradas manualmente. Para mais informações, verifique as funções relacionadas.
 
 | Nome | Descrição |
 | ------------ | --------------------------------------------------------------- |

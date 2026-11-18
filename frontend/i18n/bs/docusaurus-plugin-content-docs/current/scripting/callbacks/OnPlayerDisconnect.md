@@ -16,9 +16,9 @@ Ovaj callback je pozvan kada se igrač diskonektuje sa servera.
 
 ## Returns
 
-0 - Spriječiti će da ostale filterskripte primaju ovaj callback.
+**0** - Spriječiti će da ostale filterskripte primaju ovaj callback.
 
-1 - Označava da će ovaj callback biti proslijeđen narednoj filterskripti.
+**1** - Označava da će ovaj callback biti proslijeđen narednoj filterskripti.
 
 Uvijek je pozvana prva u filterskripti.
 

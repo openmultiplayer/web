@@ -9,19 +9,19 @@ tags: ["player"]
 
 Provjerava ako je igrač u blizinu određene tačke. Ova izvorna funkcija je brža od implementacije PAWN-a koristeći formulu udaljenosti.
 
-| Ime         | Deskripcija                                                         |
-| ----------- | ------------------------------------------------------------------- |
-| playerid    | ID igrača.                                                          |
-| Float:range | Najdalja udaljenost koju igrač može biti od točke da bude u dometu. |
-| Float:x     | X kordinata točke do koje treba provjeriti domet.                   |
-| Float:y     | Y kordinata točke do koje treba provjeriti domet.                   |
-| Float:z     | Z kordinata točke do koje treba provjeriti domet.                   |
+| Ime         | Deskripcija                                                           |
+| ----------- | --------------------------------------------------------------------- |
+| playerid    | ID igrača.                                                            |
+| Float:range | Najdalja udaljenost koju igrač može biti od točke da bude _u dometu_. |
+| Float:x     | X kordinata točke do koje treba provjeriti domet.                     |
+| Float:y     | Y kordinata točke do koje treba provjeriti domet.                     |
+| Float:z     | Z kordinata točke do koje treba provjeriti domet.                     |
 
 ## Returns
 
-true - Igrač je u dometu/blizini točke.
+**true** - Igrač je u dometu/blizini točke.
 
-false - Igrač nije u dometu/blizini točke.
+**false** - Igrač nije u dometu/blizini točke.
 
 ## Primjeri
 

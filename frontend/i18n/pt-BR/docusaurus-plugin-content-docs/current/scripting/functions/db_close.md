@@ -15,9 +15,9 @@ Fecha uma conexão de banco de dados SQLite que foi aberta com [db_open](db_open
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao executar. Isso pode significar que o identificador de conexão do banco de dados é inválido.
+**0**: A função falhou ao executar. Isso pode significar que o identificador de conexão do banco de dados é inválido.
 
 ## Exemplos
 
@@ -63,7 +63,7 @@ public OnGameModeExit()
 
 :::warning
 
-Usar um identificador inválido diferente de zero irá travar seu servidor! Obtenha um identificador de conexão de banco de dados válido usando [db_open](db_open).
+Usar um **identificador inválido** diferente de zero irá travar seu servidor! Obtenha um identificador de conexão de banco de dados válido usando [db_open](db_open).
 
 :::
 

@@ -11,11 +11,11 @@ tags: ["custom model", "custom skin", "simple model"]
 
 Encontra um arquivo de modelo existente de skin customizada ou objeto simples. Os arquivos de modelo ficam na pasta `models` do servidor por padrão (configuração artpath).
 
-| Name                   | Description                                                             |
-| ---------------------- | ----------------------------------------------------------------------- |
-| crc                    | O checksum CRC do arquivo de modelo customizado.                        |
-| output[]               | Um array para armazenar o nome do arquivo .dff, passado por referência. |
-| size = sizeof (output) | O tamanho da string que deve ser armazenada.                            |
+| Name                   | Description                                                                 |
+| ---------------------- | --------------------------------------------------------------------------- |
+| crc                    | O checksum CRC do arquivo de modelo customizado.                            |
+| output[]               | Um array para armazenar o nome do arquivo **.dff**, passado por referência. |
+| size = sizeof (output) | O tamanho da string que deve ser armazenada.                                |
 
 ## Retorno
 

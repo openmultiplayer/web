@@ -10,23 +10,23 @@ tags: ["player", "object", "attachment"]
 
 Anexe um objeto a um osso específico de um jogador.
 
-| Nome | Descrição |
-| --------------- | ------------------------------------------------------------------------------------ |
-| playerid | O ID do jogador ao qual anexar o objeto.                                        |
-| index | O índice (slot 0-9) ao qual atribuir o objeto.                                        |
-| modelid | O modelo a ser anexado.                                                                 |
-| bone | O [osso](../resources/boneid) ao qual anexar o objeto.                             |
-| Float:offsetX | (opcional) Deslocamento do eixo X para a posição do objeto.                                    |
-| Float:offsetY | (opcional) Deslocamento do eixo Y para a posição do objeto.                                    |
-| Float:offsetZ | (opcional) Deslocamento do eixo Z para a posição do objeto.                                    |
-| Float:rotationX | (opcional) Rotação do eixo X do objeto.                                            |
-| Float:rotationY | (opcional) Rotação do eixo Y do objeto.                                            |
-| Float:rotationZ | (opcional) Rotação do eixo Z do objeto.                                            |
-| Float:scaleX | (opcional) Escala do eixo X do objeto.                                               |
-| Float:scaleY | (opcional) Escala do eixo Y do objeto.                                               |
-| Float:scaleZ | (opcional) Escala do eixo Z do objeto.                                               |
-| materialColour1 | (opcional) A primeira cor do objeto a ser definida, como um número inteiro ou hexadecimal no formato de cor ARGB. |
-| materialColour2 | (opcional) A segunda cor do objeto a ser definida, como um número inteiro ou hexadecimal no formato de cor ARGB |
+| Nome            | Descrição                                                                                                             |
+| --------------- | --------------------------------------------------------------------------------------------------------------------- |
+| playerid        | O ID do jogador ao qual anexar o objeto.                                                                              |
+| index           | O índice (slot 0-9) ao qual atribuir o objeto.                                                                        |
+| modelid         | O modelo a ser anexado.                                                                                               |
+| bone            | O [osso](../resources/boneid) ao qual anexar o objeto.                                                                |
+| Float:offsetX   | (opcional) Deslocamento do eixo X para a posição do objeto.                                                           |
+| Float:offsetY   | (opcional) Deslocamento do eixo Y para a posição do objeto.                                                           |
+| Float:offsetZ   | (opcional) Deslocamento do eixo Z para a posição do objeto.                                                           |
+| Float:rotationX | (opcional) Rotação do eixo X do objeto.                                                                               |
+| Float:rotationY | (opcional) Rotação do eixo Y do objeto.                                                                               |
+| Float:rotationZ | (opcional) Rotação do eixo Z do objeto.                                                                               |
+| Float:scaleX    | (opcional) Escala do eixo X do objeto.                                                                                |
+| Float:scaleY    | (opcional) Escala do eixo Y do objeto.                                                                                |
+| Float:scaleZ    | (opcional) Escala do eixo Z do objeto.                                                                                |
+| materialColour1 | (opcional) A primeira cor do objeto a ser definida, como um número inteiro ou hexadecimal no formato de cor **ARGB**. |
+| materialColour2 | (opcional) A segunda cor do objeto a ser definida, como um número inteiro ou hexadecimal no formato de cor **ARGB**   |
 
 ## Retornos
 

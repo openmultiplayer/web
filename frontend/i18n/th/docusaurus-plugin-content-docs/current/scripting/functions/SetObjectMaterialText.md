@@ -24,9 +24,9 @@ Replace the texture of an object with text.
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute.
+**0**: The function failed to execute.
 
 ## ตัวอย่าง
 
@@ -51,7 +51,7 @@ Color embedding can be used for multiple colors in the text.
 
 :::warning
 
-You MUST use ARGB color format, not RGBA like used in client messages etc.
+You MUST use **ARGB** color format, not RGBA like used in client messages etc.
 
 :::
 

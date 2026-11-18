@@ -15,9 +15,9 @@ Checks if an object with the ID provided exists.
 
 ## ส่งคืน
 
-1: The object exists.
+**1**: The object exists.
 
-0: The object does not exist.
+**0**: The object does not exist.
 
 ## ตัวอย่าง
 

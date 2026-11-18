@@ -12,7 +12,7 @@ Set the alignment of text in a text draw.
 | Name      | Description                                     |
 | --------- | ----------------------------------------------- |
 | Text:text | The ID of the textdraw to set the alignment of. |
-| alignment | 1-left 2-centered 3-right.                      |
+| alignment | **1**-left **2**-centered **3**-right.          |
 
 ## ส่งคืน
 

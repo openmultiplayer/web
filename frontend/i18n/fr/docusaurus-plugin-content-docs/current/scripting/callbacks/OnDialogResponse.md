@@ -13,14 +13,14 @@ Cette callback est appelée lorsqu'un joueur lorsqu'un joueur répond à une bo�
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `int` playerid       | ID du joueur qui a répondu au dialog                                                                                    |
 | `int` dialogid       | ID du dialog auquel le joueur répond, assigné dans ShowPlayerDialog                                                     |
-| `int` response       | 1 pour le bouton de gauche, 0 pour celui de droite (s'il n'y a qu'un bouton apparent = toujours 1)                      |
+| `int` response       | **1** pour le bouton de gauche, **0** pour celui de droite (s'il n'y a qu'un bouton apparent = toujours 1)              |
 | `int` listitem       | ID de l'item sélectionné par le joueur \_(commence à 0, seulement dans les `DIALOG_STYLE_LIST`, pour le reste c'est -1) |
 | `string` inputtext[] | Texte inséré dans la boîte de saisie par le joueur, ou le texte de l'élément de l'item sélectionné                      |
 
 ## Valeur de retour
 
-Return 1 à la fin de chaque boîte de dialogue manipulée.
-En revanche, return 0 à la fin de la callback.
+Return **1** à la fin de chaque boîte de dialogue manipulée.
+En revanche, return **0** à la fin de la callback.
 
 ## Exemple
 

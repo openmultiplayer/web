@@ -4,7 +4,7 @@ sidebar_label: Sistema de Varibles de Jugador
 description: El sistema de variables de jugador (abreviado, PVar) es una nueva forma de crear variables de jugador en un método eficiente creado dinámicamente de forma global.
 ---
 
-El sistema de variables de jugador (abreviado, PVar) es una nueva forma de crear variables de jugador en un método eficiente creado dinámicamente de forma global, lo que significa que se pueden utilizar en el gamemode y en los filterscripts al mismo tiempo.
+El **sistema de variables de jugador** (abreviado, **PVar**) es una nueva forma de crear variables de jugador en un método eficiente creado dinámicamente de forma global, lo que significa que se pueden utilizar en el gamemode y en los filterscripts al mismo tiempo.
 
 Son similiares a [SVars](servervariablesystem), pero son por jugador. Ver los 2 últimos posts en este hilo para leer sobre la diferencia entre propiedades de pawn y PVars.
 

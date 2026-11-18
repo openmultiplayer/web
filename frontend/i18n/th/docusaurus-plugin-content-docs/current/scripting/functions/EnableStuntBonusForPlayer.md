@@ -9,16 +9,16 @@ tags: ["player"]
 
 Toggle stunt bonuses for a player. Enabled by default.
 
-| Name     | Description                                       |
-| -------- | ------------------------------------------------- |
-| playerid | The ID of the player to toggle stunt bonuses for. |
-| enable   | 1 to enable stunt bonuses and 0 to disable them.  |
+| Name     | Description                                              |
+| -------- | -------------------------------------------------------- |
+| playerid | The ID of the player to toggle stunt bonuses for.        |
+| enable   | **1** to enable stunt bonuses and **0** to disable them. |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player is not connected.
+**0**: The function failed to execute. The player is not connected.
 
 ## ตัวอย่าง
 

@@ -36,7 +36,7 @@ PlayerPlaySound(playerid, 1130, 0.0, 0.0, 10.0);
 
 :::tip
 
-Use as coordenadas apenas se quiser que o som seja reproduzido em uma determinada posição. Defina todas as coordenadas como 0.0 para apenas reproduzir o som.
+Use as coordenadas apenas se quiser que o som seja reproduzido em uma determinada posição. Defina todas as coordenadas como **0.0** para apenas reproduzir o som.
 
 :::
 

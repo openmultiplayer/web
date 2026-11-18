@@ -17,9 +17,9 @@ Sets a player to spectate another vehicle. Their camera will be attached to the 
 
 ## ส่งคืน
 
-1: The function was executed successfully. Note that success is reported if the player is not in spectator mode (TogglePlayerSpectating), but nothing will happen. TogglePlayerSpectating MUST be used first.
+**1**: The function was executed successfully. Note that success is reported if the player is not in spectator mode (TogglePlayerSpectating), but nothing will happen. TogglePlayerSpectating MUST be used first.
 
-0: The function failed to execute. The player, vehicle, or both don't exist.
+**0**: The function failed to execute. The player, vehicle, or both don't exist.
 
 ## ตัวอย่าง
 

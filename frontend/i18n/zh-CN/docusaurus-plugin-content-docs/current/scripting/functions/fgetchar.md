@@ -52,7 +52,7 @@ else
 
 :::warning
 
-使用无效句柄将导致服务器崩溃！请通过 [fopen](fopen) 或 [ftemp](ftemp) 获取有效句柄。
+使用**无效句柄**将导致服务器崩溃！请通过 [fopen](fopen) 或 [ftemp](ftemp) 获取**有效句柄**。
 
 :::
 

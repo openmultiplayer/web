@@ -36,7 +36,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::note
 
-This callback is also called when a player presses F4.
+This callback is also called when a player presses **F4**.
 
 :::
 

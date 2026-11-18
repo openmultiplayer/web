@@ -16,9 +16,9 @@ Links a vehicle to an interior. Vehicles can only be seen by players in the same
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle does not exist.
+**0**: The function failed to execute. This means the vehicle does not exist.
 
 ## ตัวอย่าง
 

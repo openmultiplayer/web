@@ -15,7 +15,7 @@ tags: ["player"]
 
 ## مقادیر برگشتی
 
-وضعیت فعلی بازیکن به صورت integer (مراجعه کنید به: [Player States](../resources/playerstates)).
+**وضعیت** فعلی بازیکن به صورت integer (مراجعه کنید به: [Player States](../resources/playerstates)).
 
 ## مثال‌ها
 

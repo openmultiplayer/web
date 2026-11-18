@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::warning
 
-وقتی filterscripts یا plugins به عنوان varname مشخص می‌شه، این تابع فقط اسم اولین filterscript یا plugin مشخص شده رو برمی‌گردونه. این یه bug هست.
+وقتی _filterscripts_ یا _plugins_ به عنوان varname مشخص می‌شه، این تابع فقط اسم اولین filterscript یا plugin مشخص شده رو برمی‌گردونه. این یه bug هست.
 
 :::
 
@@ -52,7 +52,7 @@ public OnGameModeInit()
 
 :::warning
 
-استفاده از این تابع روی چیزی غیر از string (int، bool یا float) یا متغیر سرور غیرموجود، سرورت رو crash می‌کنه! این یه bug هست.
+استفاده از این تابع روی چیزی غیر از **string** (int، bool یا float) یا متغیر سرور **غیرموجود**، سرورت رو **crash** می‌کنه! این یه bug هست. (توی open.mp درست شده)
 
 :::
 

@@ -16,7 +16,7 @@ Bu geri çağırma oyuncu chat ekranında herhangi bir komut kullandığında ç
 
 ## Çalışınca Vereceği Sonuçlar
 
-Her zaman öncelikle filterscriptlerde çalışır ve 1 değerini döndürmek diğer scriptlerin çağrılmasını engeller.
+Her zaman öncelikle filterscriptlerde çalışır ve **1** değerini döndürmek diğer scriptlerin çağrılmasını engeller.
 
 ## Örnek
 

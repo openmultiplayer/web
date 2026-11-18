@@ -17,9 +17,9 @@ Kliče se, ko igralec dvakrat klikne na igralca na semaforju (TAB).
 
 ## Returns
 
-1 - Preprečil bo druge "filterskript" prejeli to "callback".
+**1** - Preprečil bo druge "filterskript" prejeli to "callback".
 
-0 - Pomeni, da bo ta "callback" se posreduje na naslednjo "filterskripte".
+**0** - Pomeni, da bo ta "callback" se posreduje na naslednjo "filterskripte".
 
 Vedno je bila povabljena prva v "filterscript".
 

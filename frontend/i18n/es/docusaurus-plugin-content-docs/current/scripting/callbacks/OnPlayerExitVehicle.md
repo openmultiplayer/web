@@ -6,7 +6,7 @@ tags: ["player", "vehicle"]
 
 ## Descripción
 
-Este callback se llama cuando un jugador comienza a salir de un vehículo.
+Este callback se llama cuando un jugador **comienza** a salir de un vehículo.
 
 | Nombre    | Descripción                                          |
 | --------- | ---------------------------------------------------- |

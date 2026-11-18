@@ -15,9 +15,9 @@ This callback is called every time a client/player updates the server with their
 
 ## Returns
 
-0 - Update from this player will not be replicated to other clients.
+**0** - Update from this player will not be replicated to other clients.
 
-1 - Indicates that this update can be processed normally and sent to other players.
+**1** - Indicates that this update can be processed normally and sent to other players.
 
 It is always called first in filterscripts.
 

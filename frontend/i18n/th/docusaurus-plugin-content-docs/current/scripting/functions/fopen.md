@@ -16,7 +16,7 @@ Open a file (to read from or write to).
 
 ## ส่งคืน
 
-Returns the file handle. This handle is used for reading and writing. 0 if failed to open file.
+Returns the file handle. This handle is used for reading and writing. **0** if failed to open file.
 
 ## ตัวอย่าง
 
@@ -131,7 +131,7 @@ io_append    Appends (adds) to file, write-only. If the file does not exist, it 
 
 :::warning
 
-If you use io_read and the file doesn't exist, it will return a NULL reference. Using invalid references on file functions will crash your server!
+If you use io_read and the file doesn't exist, it will return a _NULL_ reference. Using **invalid references** on file functions will **crash** your server!
 
 :::
 

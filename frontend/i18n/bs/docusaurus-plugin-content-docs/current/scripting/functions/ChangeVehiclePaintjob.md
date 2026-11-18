@@ -16,7 +16,7 @@ Promjena paintjob-a vozila (za obične boje pogledajte ChangeVehicleColor).
 
 ## Returns
 
-This function always returns 1 (success), even if the vehicle passed is not created.
+This function always returns **1** (success), even if the vehicle passed is not created.
 
 :::warning
 

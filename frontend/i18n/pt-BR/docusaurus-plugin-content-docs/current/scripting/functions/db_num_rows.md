@@ -79,7 +79,7 @@ public OnGameModeExit()
 
 :::warning
 
-Usando um identificador inválido seu servidor irá crashar! Pegue um identificador válido usando [db_query](db_query). Mas é protegido contra referências nulas.
+Usando um **identificador inválido** seu servidor irá crashar! Pegue um **identificador válido** usando [db_query](db_query). Mas é protegido contra referências **nulas**.
 
 :::
 

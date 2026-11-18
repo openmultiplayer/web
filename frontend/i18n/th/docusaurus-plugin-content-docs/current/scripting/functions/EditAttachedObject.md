@@ -16,7 +16,7 @@ Enter edition mode for an attached object.
 
 ## ส่งคืน
 
-1 on success and 0 on failure.
+**1** on success and **0** on failure.
 
 ## ตัวอย่าง
 
@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-You can move the camera while editing by pressing and holding the spacebar (or W in vehicle) and moving your mouse.
+You can move the camera while editing by pressing and holding the **spacebar** (or **W** in vehicle) and moving your mouse.
 
 :::
 

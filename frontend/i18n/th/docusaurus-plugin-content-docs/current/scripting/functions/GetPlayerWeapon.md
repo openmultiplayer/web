@@ -15,7 +15,7 @@ Returns the ID of the weapon a player is currently holding.
 
 ## ส่งคืน
 
-The ID of the player's current weapon. Returns -1 if the player specified does not exist.
+The ID of the player's current weapon. Returns **-1** if the player specified does not exist.
 
 ## ตัวอย่าง
 

@@ -7,7 +7,7 @@ tags: ["menu"]
 
 ## Descrição
 
-Desativa uma linha específica num menu para todos os jogadores. A linha ficará acinzentada e não poderá ser selecionada.
+Desativa uma linha específica num menu **para todos os jogadores**. A linha ficará acinzentada e não poderá ser selecionada.
 
 | Parâmetro   | Descrição                                                                                                |
 | ----------- | -------------------------------------------------------------------------------------------------------- |
@@ -56,7 +56,7 @@ Causa crash se receber um ID de menu inválido. (Corrigido em open.mp)
 
 :::note
 
-A linha é desativada para TODOS os jogadores Não existe função para desativar linha para um jogador específico. Soluções alternativas incluem criar menus diferentes ou um menu por jogador
+A linha é desativada para **TODOS os jogadores** Não existe função para desativar linha para um jogador específico. Soluções alternativas incluem criar menus diferentes ou um menu por jogador
 
 :::
 

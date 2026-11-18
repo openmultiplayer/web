@@ -15,9 +15,9 @@ Essa callback é executada quando o cliente/player faz o update do seu status pa
 
 ## Retornos
 
-0 - Update do jogador não será replicado para os outros.
+**0** - Update do jogador não será replicado para os outros.
 
-1 - Indica que o update do jogador deve ser processado e eviado para os outros jogadores.
+**1** - Indica que o update do jogador deve ser processado e eviado para os outros jogadores.
 
 É sempre executada primeiro nos filterscripts.
 

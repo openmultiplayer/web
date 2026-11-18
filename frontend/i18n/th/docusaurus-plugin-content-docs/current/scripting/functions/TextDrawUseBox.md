@@ -12,13 +12,13 @@ Toggle whether a textdraw uses a box or not.
 | Name | Description                                       |
 | ---- | ------------------------------------------------- |
 | text | The ID of the text textdraw to toggle the box of. |
-| use  | 1 to show a box or 0 to not show a box.           |
+| use  | **1** to show a box or **0** to not show a box.   |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the textdraw specified does not exist.
+**0**: The function failed to execute. This means the textdraw specified does not exist.
 
 ## ตัวอย่าง
 

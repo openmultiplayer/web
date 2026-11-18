@@ -18,9 +18,9 @@ Bu geri çağırma oyuncu haritada bir yer işaretlediğinde çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Diğer filterscriptlerin bu geri çağırma çalıştırmasını engeller.
+**1** - Diğer filterscriptlerin bu geri çağırma çalıştırmasını engeller.
 
-0 - Diğer filterscriptler içinde aranması için pas geçilir.
+**0** - Diğer filterscriptler içinde aranması için pas geçilir.
 
 Her zaman öncelikle oyun modunda çağrılır.
 

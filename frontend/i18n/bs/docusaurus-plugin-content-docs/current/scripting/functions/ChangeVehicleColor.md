@@ -17,9 +17,9 @@ Promjena primarne i sekundarne boje vozila.
 
 ## Returns
 
-1: Funkcija je uspješno izvršena. Boje vozila su uspješno promjenjene.
+**1**: Funkcija je uspješno izvršena. Boje vozila su uspješno promjenjene.
 
-0: Funkcija nije uspješno izvršena. Vozilo ne postoji.
+**0**: Funkcija nije uspješno izvršena. Vozilo ne postoji.
 
 ## Primjeri
 

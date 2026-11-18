@@ -16,7 +16,7 @@ Mata (para) um cronômetro em execução.
 
 ## Retornos
 
-Esta função sempre retorna 0.
+Esta função sempre retorna **0**.
 
 ## Exemplos
 

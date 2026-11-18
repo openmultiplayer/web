@@ -296,11 +296,11 @@ GivePlayerWeapon(playerid, WEAPON_KNIFE, 1);
 
 替换方案：
 
-`GetPlayerPoolSize()` → `MAX_PLAYERS`
+`GetPlayerPoolSize` → `MAX_PLAYERS`
 
-`GetVehiclePoolSize()` → `MAX_VEHICLES`
+`GetVehiclePoolSize` → `MAX_VEHICLES`
 
-`GetActorPoolSize()` → `MAX_ACTORS`
+`GetActorPoolSize` → `MAX_ACTORS`
 
 <hr />
 

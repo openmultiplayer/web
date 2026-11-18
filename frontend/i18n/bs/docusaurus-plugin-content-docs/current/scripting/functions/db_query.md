@@ -16,7 +16,7 @@ Funkcija se koristi za izvršavanje SQL upita na otvorenoj bazi podataka SQLite.
 
 ## Returns
 
-Indeks rezultata querya (počinje sa 1) ako je uspješno, uostalom 0.
+Indeks rezultata querya (**počinje sa 1**) ako je uspješno, uostalom 0.
 
 ## Primjeri
 
@@ -92,7 +92,7 @@ public OnGameModeExit()
 
 :::warning
 
-Uvijek oslobađajte setove rezultata sa [db_free_result](db_free_result)!
+**Uvijek** oslobađajte setove rezultata sa [db_free_result](db_free_result)!
 
 :::
 

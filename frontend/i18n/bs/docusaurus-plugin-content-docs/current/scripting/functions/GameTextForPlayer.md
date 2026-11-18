@@ -18,9 +18,9 @@ Prikazuje 'game text' (tekst na ekranu) određeno vrijeme za određenog igrača.
 
 ## Returns
 
-1: Funkcija uspješno izvršena. Uspjeh se prijavljuje kada su stil i / ili vrijeme nevaljani. Ipak se ništa neće dogoditi (tekst se ne prikazuje). Može takođe uzrokovati pad sistema.
+**1**: Funkcija uspješno izvršena. Uspjeh se prijavljuje kada su stil i / ili vrijeme nevaljani. Ipak se ništa neće dogoditi (tekst se ne prikazuje). Može takođe uzrokovati pad sistema.
 
-0: Funkcija neuspješno izvršena. To znači da je string prazan ili Igrač nije konektovan..
+**0**: Funkcija neuspješno izvršena. To znači da je string prazan ili Igrač nije konektovan..
 
 ## Primjeri
 

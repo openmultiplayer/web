@@ -22,9 +22,9 @@ Postavi virtualni svijet za aktora. Samo igrači u istom virtualnom svijetu će 
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni aktor ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni aktor ne postoji.
 
 ## Primjeri
 

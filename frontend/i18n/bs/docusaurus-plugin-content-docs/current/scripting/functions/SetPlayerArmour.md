@@ -9,16 +9,16 @@ tags: ["player"]
 
 Postavi nivo armora (pancira) igrača.
 
-| Ime          | Deskripcija                                                                                                                            |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | ID igrača za postaviti nivo armora.                                                                                                    |
-| Float:armour | Količina armora za postaviti, kao postotak (float). Vrijednosti veće od 100 su validne ali neće biti prikazane u armor bar-u na HUD-u. |
+| Ime          | Deskripcija                                                                                                                              |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid     | ID igrača za postaviti nivo armora.                                                                                                      |
+| Float:armour | Količina armora za postaviti, kao postotak (float). Vrijednosti veće od 100 su _validne_ ali neće biti prikazane u armor bar-u na HUD-u. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
 ## Primjeri
 

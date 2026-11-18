@@ -21,9 +21,9 @@ Deze callback wordt aangeroepen wanneer een speler schade toebrengt aan een acto
 
 ## Returns
 
-1 - Callback wordt niet aangeroepen in andere filterscripts.
+**1** - Callback wordt niet aangeroepen in andere filterscripts.
 
-0 - Staat toe dat deze callback wordt aangeroepen in andere filterscripts.
+**0** - Staat toe dat deze callback wordt aangeroepen in andere filterscripts.
 
 Wordt altijd als eerste aangeroepen in filterscripts; return 1 blokkeert andere filterscripts.
 

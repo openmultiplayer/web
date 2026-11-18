@@ -19,9 +19,9 @@ Postavlja poziciju player-objekta u navedenim kordinatama.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Igrač i/ili objekat ne postoje.
+**0**: Funkcija neuspješno izvršena. Igrač i/ili objekat ne postoje.
 
 ## Primjeri
 

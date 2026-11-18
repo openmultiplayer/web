@@ -15,9 +15,9 @@ Bu fonksiyon, oyuncu doğduğunda çağrılır.(ör. SpawnPlayer'i çalıştırd
 
 ## Çalışınca Vereceği Sonuçlar
 
-0 - Diğer filterscript komutlarının bu çağrıyı almasını önleyecektir.
+**0** - Diğer filterscript komutlarının bu çağrıyı almasını önleyecektir.
 
-1 - Bu geri çağrının sonraki filterscript komutuna aktarılacağını belirtir.
+**1** - Bu geri çağrının sonraki filterscript komutuna aktarılacağını belirtir.
 
 Filterscript komutlarında her zaman ilk olarak çağırılır.
 

@@ -67,7 +67,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Ang anumang aksyon na direktang ginawa bago ang BanEx() (tulad ng pagpapadala ng mensahe gamit ang SendClientMessage) ay hindi makakarating sa player. Dapat gumamit ng timer para maantala ang pagbabawal.
+Ang anumang aksyon na direktang ginawa bago ang BanEx (tulad ng pagpapadala ng mensahe gamit ang SendClientMessage) ay hindi makakarating sa player. Dapat gumamit ng timer para maantala ang pagbabawal.
 
 :::
 

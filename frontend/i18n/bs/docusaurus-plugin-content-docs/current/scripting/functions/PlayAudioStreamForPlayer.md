@@ -21,9 +21,9 @@ Reprodukujte 'audio stream' za igrač. Uobičajene audio datoteke takođe rade (
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
 ## Primjeri
 

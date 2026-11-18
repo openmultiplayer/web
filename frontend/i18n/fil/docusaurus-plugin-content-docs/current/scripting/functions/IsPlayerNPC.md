@@ -15,9 +15,9 @@ Suriin kung ang isang player ay isang aktwal na player o isang NPC.
 
 ## Returns
 
-1: Ang player ay isang NPC.
+**1**: Ang player ay isang NPC.
 
-0: Ang player ay hindi isang NPC.
+**0**: Ang player ay hindi isang NPC.
 
 ## Examples
 

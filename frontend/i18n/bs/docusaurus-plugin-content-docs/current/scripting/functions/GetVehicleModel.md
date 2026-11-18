@@ -15,7 +15,7 @@ Dobij ID modela vozila.
 
 ## Returns
 
-ID modela vozila, ili 0 ako vozilo ne postoji.
+ID modela vozila, ili **0** ako vozilo ne postoji.
 
 ## Primjeri
 

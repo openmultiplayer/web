@@ -15,7 +15,7 @@ This function is used to open a connection to a SQLite database, which is inside
 
 ## ส่งคืน
 
-Returns index (starting at 1) of the database connection .
+Returns index (**starting at 1**) of the database connection.
 
 ## ตัวอย่าง
 
@@ -54,7 +54,7 @@ public OnGameModeExit()
 :::warning
 
 - It will create a new SQLite database, if there is no SQLite database with the same file name available.
-- Close your database connection with db_close!
+- **Close** your database connection with db_close!
 
 :::
 

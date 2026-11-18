@@ -74,7 +74,7 @@ Para adicionar um banido, basta colocar um objeto no array JSON como este:
 
 Onde `IP_AQUI` é onde você coloca o IP que gostaria de banir.
 
-##### Função Ban()
+##### Função Ban
 
 A função de [Ban](../scripting/functions/Ban) pode ser usada para banir um jogador de um script. O [BanEx](../scripting/functions/BanEx) irá adicionar uma opção como esta:
 
@@ -198,7 +198,7 @@ Estas são as funções que você como admin pode usar:
 | `/rcon weburl [server url]`       | Muda o URL do servidor no cliente                                                                   |
 | `/rcon unloadfs`                  | Descarrega o determinado filterscript (_exemplo: /rcon unloadfs adminfs_).                          |
 | `/rcon reloadfs`                  | Recarrega o determinado filterscript (_exemplo: /rcon reloadfs adminfs_).                           |
-| `/rcon rcon\_password [PASSWORD]` | Muda a senha do RCON                                                                                |
+| `/rcon rcon_password [PASSWORD]`  | Muda a senha do RCON                                                                                |
 | `/rcon password [password]`       | Coloca/Reseta a senha do servidor                                                                   |
 | `/rcon messageslimit [count]`     | Muda o número e mensagens por segundo que um jogador pode enviar. (padrão: 500)                     |
 | `/rcon ackslimit [count]`         | Muda o limite de acks (padrão: 3000)                                                                |

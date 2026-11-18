@@ -16,9 +16,9 @@ Dodaje 'komponentu' (često nazvana'mod' (modifikacija)) na vozilo. Validne komp
 
 ## Returns
 
-0 - Komponenta nije dodana zato što vozilo ne postoji.
+**0** - Komponenta nije dodana zato što vozilo ne postoji.
 
-1 - Komponenta je uspješno dodana na vozilo.
+**1** - Komponenta je uspješno dodana na vozilo.
 
 ## Primjeri
 

@@ -16,7 +16,7 @@ Obtém a porcentagem de perda de pacotes de um jogador. Perda de pacote signific
 
 ## Retornos
 
-A porcentagem de perda de pacotes como um valor flutuante. 0 se o jogador não estiver conectado.
+A porcentagem de perda de pacotes como um valor flutuante. **0** se o jogador não estiver conectado.
 
 ## Exemplos
 

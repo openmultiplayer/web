@@ -169,7 +169,7 @@ Nu veți mai primi un avertisment de compilator așa cum ați avea înainte, deo
 return float(_:oper);
 ```
 
-Acesta este un exemplu de suprascriere a etichetelor, `_:` din fața oper înseamnă că compilatorul ignoră practic faptul că oper are un tip de etichetă Mytag: și îl tratează ca tip de etichetă `_:` (adică fără tip de etichetă). Funcția `float ()` etichetează un număr normal, așa că trebuie trecut unul. În acest exemplu, se presupune că `Mytag` stochează un număr întreg obișnuit, dar suprascrierea trebuie tratată foarte atent, de exemplu, următoarele vor da rezultate foarte ciudate:
+Acesta este un exemplu de suprascriere a etichetelor, `_:` din fața oper înseamnă că compilatorul ignoră practic faptul că oper are un tip de etichetă Mytag: și îl tratează ca tip de etichetă `_:` (adică fără tip de etichetă). Funcția `float` etichetează un număr normal, așa că trebuie trecut unul. În acest exemplu, se presupune că `Mytag` stochează un număr întreg obișnuit, dar suprascrierea trebuie tratată foarte atent, de exemplu, următoarele vor da rezultate foarte ciudate:
 
 ```c
 new

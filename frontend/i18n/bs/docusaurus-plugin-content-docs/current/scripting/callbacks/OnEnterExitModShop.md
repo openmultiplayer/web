@@ -12,7 +12,7 @@ Ovaj callback se poziva kada igrač uđe ili izađe iz mod shopa.
 | Ime        | Deskripcija                                              |
 | ---------- | -------------------------------------------------------- |
 | playerid   | ID igrača koji je ušao ili izašao iz modshop-a           |
-| enterexit  | 1 ako je igrač ušao 0 ako je izašao iz modshop-a         |
+| enterexit  | **1** ako je igrač ušao **0** ako je izašao iz modshop-a |
 | interiorid | ID interijera modshopa u koji igrač ulazi (0 ako izlazi) |
 
 ## Returns
@@ -37,7 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Poznati Bug(ovi): Igrači se sudaraju kad uđu u isti modshop
+**Poznati Bug(ovi):** Igrači se sudaraju kad uđu u isti modshop
 
 :::
 

@@ -21,9 +21,9 @@ Bu geri çağırma bir araç respawn edildiğinde çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-0 - Diğer filterscriptslerin bu geri çağırmayı çağırmasını önler.
+**0** - Diğer filterscriptslerin bu geri çağırmayı çağırmasını önler.
 
-1 - Bu geri çağırmanın sonraki filterscriptslerde pas geçileceğini gösterir.
+**1** - Bu geri çağırmanın sonraki filterscriptslerde pas geçileceğini gösterir.
 
 Her zaman ilk filterscriptslerde çağrılır.
 

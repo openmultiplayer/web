@@ -21,9 +21,9 @@ Mostra um dialog (janela) asíncrono (um único por vez).
 
 ## Retorno
 
-1: A função foi executada corretamente.
+**1**: A função foi executada corretamente.
 
-0: A função falhou ao executar. Isto significa que o jogador não está conectado.
+**0**: A função falhou ao executar. Isto significa que o jogador não está conectado.
 
 ## Exemplos
 
@@ -67,7 +67,8 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 :::tip
 
 - É recomendado usar enumerações (enums - veja abaixo) ou constantes (#define) para determinar quais dialogid's estão sendo usados, para evitar confusões no futuro. Você nunca deve usar números direto, porque isso gera confusões.
-- Use cores embutidas para múltiplas cores no texto. Usando -1 como dialogid fecha todos os dialogs abertos na tela do cliente (jogador).
+- Use cores embutidas para múltiplas cores no texto.
+- Usando **-1** como `dialogid` fecha todos os dialogs abertos na tela do cliente (jogador).
 
 :::
 

@@ -9,16 +9,16 @@ tags: ["gangzone"]
 
 Mostra uma gangzone com a cor desejada para todos os jogadores.
 
-| Nome  | Descrição                                                                                                        |
-| ----- | ---------------------------------------------------------------------------------------------------------------- |
-| zone  | O ID da gangzone a ser mostrada (retornada por GangZoneCreate).                                                  |
-| color | A cor a ser mostrada na gangzone, pode ser integer ou hex no formato de cor RGBA. Transparência Alpha suportada. |
+| Nome  | Descrição                                                                                                            |
+| ----- | -------------------------------------------------------------------------------------------------------------------- |
+| zone  | O ID da gangzone a ser mostrada (retornada por GangZoneCreate).                                                      |
+| color | A cor a ser mostrada na gangzone, pode ser integer ou hex no formato de cor **RGBA**. Transparência Alpha suportada. |
 
 ## Retorno
 
-1: A função foi executada com sucesso. A gangzone foi mostrada para todos os jogadores.
+**1**: A função foi executada com sucesso. A gangzone foi mostrada para todos os jogadores.
 
-0: A função falhou ao ser executada. A gangzone não existe.
+**0**: A função falhou ao ser executada. A gangzone não existe.
 
 ## Exemplos
 

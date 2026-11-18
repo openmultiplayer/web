@@ -14,7 +14,7 @@ Adiciona uma sombra ao lado inferior direito do texto em um player-textdraw. A f
 | ----------------- | ----------------------------------------------------------------- |
 | playerid          | O ID do jogador cujo player-textdraw definir o tamanho da sombra. |
 | PlayerText:textid | O ID do player-textdraw para alterar a sombra de                  |
-| shadowSize        | O tamanho da sombra. 0 ocultará a sombra.                         |
+| shadowSize        | O tamanho da sombra. **0** ocultará a sombra.                     |
 
 ## Retornos
 

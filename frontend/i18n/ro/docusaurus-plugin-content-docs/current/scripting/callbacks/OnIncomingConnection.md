@@ -17,9 +17,9 @@ This callback is called when an IP address attempts a connection to the server. 
 
 ## Returnări
 
-1 - Va împiedica alte filterscript-uri să primească acest apel invers.
+**1** - Va împiedica alte filterscript-uri să primească acest apel invers.
 
-0 - Indică faptul că acest callback va fi transmis următorului filterscript.
+**0** - Indică faptul că acest callback va fi transmis următorului filterscript.
 
 Este întotdeauna numit primul în filterscript-uri.
 

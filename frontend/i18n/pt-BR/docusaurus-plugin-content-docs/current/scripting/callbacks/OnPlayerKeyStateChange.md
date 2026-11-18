@@ -38,7 +38,7 @@ Teclas direcionais não ativam o OnPlayerKeyStateChange (Para cima, baixo, direi
 
 ### Introdução
 
-Esta callback é chamada sempre que um jogador pressionar ou soltar uma das teclas suportadas como dito acima. As teclas suportadas não são exatamente teclas do teclado, mas sim, teclas mapeadas do San Andreas, isso significa que, por exemplo, você não pode detectar quando alguém pressiona a tecla espaço, mas pode detecar quando alguém pressiona a "sprint key" (botão de correr, que pode ou não estar definido para o espaço, pois é o padrão).
+Esta callback é chamada sempre que um jogador pressionar ou soltar uma das teclas suportadas como dito acima. As teclas suportadas não são exatamente teclas do teclado, mas sim, teclas mapeadas do San Andreas, isso significa que, por exemplo, você não pode detectar quando alguém pressiona a tecla **espaço**, mas pode detecar quando alguém pressiona a "**sprint** key" (botão de correr, que pode ou não estar definido para o espaço, pois é o padrão).
 
 ### Parâmetros
 

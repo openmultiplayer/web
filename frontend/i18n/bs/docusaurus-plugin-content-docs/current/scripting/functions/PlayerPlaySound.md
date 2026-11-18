@@ -21,9 +21,9 @@ Pogledajte library koji sadrži sve zvukove, [ovo](https://github.com/WoutProvos
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
 ## Primjeri
 
@@ -36,7 +36,7 @@ PlayerPlaySound(playerid, 1130, 0.0, 0.0, 10.0);
 
 :::tip
 
-Koristite kordinate samo ako želite da se zvuk reproducira na određenoj poziciji. Postavite kordinatama sve na 0.0 da samo reproducira zvuk.
+Koristite kordinate samo ako želite da se zvuk reproducira na određenoj poziciji. Postavite kordinatama sve na **0.0** da samo reproducira zvuk.
 
 :::
 

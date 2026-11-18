@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Deskripsi
 
-Callback Ini di panggil ketika pemain mulai memasuki kendaraan, artinya pemain belum berada di kendaraan pada saat callback ini dipanggil.
+Callback Ini di panggil ketika pemain **mulai** memasuki kendaraan, artinya pemain belum berada di kendaraan pada saat callback ini dipanggil.
 
 | Nama        | Deskripsi                                                       |
 | ----------- | --------------------------------------------------------------- |
@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-Callback ini di panggil ketika PEMAIN mulai memasuki kendaraan, bukan ketika pemain TELAH memasukinya. Lihat OnPlayerStateChange. Callback ini tetap dipanggil jika pemain di tolak masuk ke kendaraan (misalnya terkunci atau penuh).
+Callback ini di panggil ketika PEMAIN **mulai** memasuki kendaraan, bukan ketika pemain TELAH memasukinya. Lihat OnPlayerStateChange. Callback ini tetap dipanggil jika pemain di tolak masuk ke kendaraan (misalnya terkunci atau penuh).
 
 :::
 

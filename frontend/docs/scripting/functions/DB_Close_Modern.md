@@ -69,7 +69,7 @@ public OnGameModeExit()
 
 :::warning
 
-Using an invalid handle other than zero will crash your server! Get a valid database connection handle by using [DB_Open](DB_Open_Modern).
+Using an **invalid handle** other than zero will crash your server! Get a valid database connection handle by using [DB_Open](DB_Open_Modern).
 
 :::
 

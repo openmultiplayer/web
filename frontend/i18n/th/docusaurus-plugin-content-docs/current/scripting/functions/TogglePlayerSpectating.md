@@ -9,16 +9,16 @@ tags: ["player"]
 
 Toggle whether a player is in spectator mode or not. While in spectator mode a player can spectate (watch) other players and vehicles. After using this function, either PlayerSpectatePlayer or PlayerSpectateVehicle needs to be used.
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| playerid | The ID of the player who should spectate |
-| toggle   | 1 to enable spectating and 0 to disable  |
+| Name     | Description                                     |
+| -------- | ----------------------------------------------- |
+| playerid | The ID of the player who should spectate        |
+| toggle   | **1** to enable spectating and **0** to disable |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player does not exist.
+**0**: The function failed to execute. The player does not exist.
 
 ## ตัวอย่าง
 

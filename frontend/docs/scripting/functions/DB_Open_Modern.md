@@ -16,7 +16,7 @@ The function is used to open a connection to a SQLite database, which is inside 
 
 ## Returns
 
-Returns index (starting at 1) of the database connection.
+Returns index (**starting at 1**) of the database connection.
 
 ## Examples
 
@@ -69,7 +69,7 @@ public OnGameModeExit()
 :::warning
 
 - It will create a new SQLite database file, if there is no SQLite database file with the same file name available.
-- Close your SQLite database connection with [DB_Close](DB_Close_Modern)!
+- **Close** your SQLite database connection with [DB_Close](DB_Close_Modern)!
 
 :::
 

@@ -18,9 +18,9 @@ This callback is called when a player places a target/waypoint on the pause menu
 
 ## Returns
 
-1 - Will prevent other filterscripts from receiving this callback.
+**1** - Will prevent other filterscripts from receiving this callback.
 
-0 - Indicates that this callback will be passed to the next filterscript.
+**0** - Indicates that this callback will be passed to the next filterscript.
 
 It is always called first in gamemode.
 

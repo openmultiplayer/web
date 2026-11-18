@@ -90,7 +90,7 @@ SetPlayerSkinFix(playerid, skinid)
 
 :::warning
 
-Erros conhecidos:
+**Erros conhecidos:**
 
 - Se a skin de um jogador for definida quando ele estiver agachado, em um veículo ou executando certas animações, ele ficará congelado ou com falhas. Isso pode ser corrigido usando [TogglePlayerControllable](TogglePlayerControllable). Os jogadores podem ser detectados como agachados através de [GetPlayerSpecialAction](GetPlayerSpecialAction) (SPECIAL_ACTION_DUCK).
 - Outros jogadores ao redor do jogador podem bater se ele estiver em um veículo ou se estiver entrando/saindo de um veículo.

@@ -37,7 +37,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::warning
 
-As posições da câmera do jogador são atualizadas apenas uma vez por segundo, a menos que esteja mirando. É recomendado definir um cronômetro de 1 segundo se você deseja realizar uma ação que dependa da posição da câmera do jogador.
+As posições da câmera do jogador são atualizadas apenas uma vez por segundo, **a menos que esteja mirando**. É recomendado definir um cronômetro de 1 segundo se você deseja realizar uma ação que dependa da posição da câmera do jogador.
 
 :::
 

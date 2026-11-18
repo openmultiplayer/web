@@ -16,11 +16,11 @@ Postavlja ime igrača.
 
 ## Returns
 
-1 Ime je uspješno promijenjeno
+**1** Ime je uspješno promijenjeno
 
-0 Igrač već ima to ime
+**0** Igrač već ima to ime
 
--1 Ime se ne može promijeniti (već je u upitrebi, previše je veliko ili sadrži nevažeće karaktere)
+**-1** Ime se ne može promijeniti (već je u upitrebi, previše je veliko ili sadrži nevažeće karaktere)
 
 ## Primjeri
 
@@ -60,9 +60,9 @@ if (strcmp(cmdtext, "/superman", true) == 0)
 :::warning
 
 - Promjena imena igrača u isto ime, ali s različitim slučajevima slova (npr. "John" u "JOHN") neće uspjeti.
-- Ako se koristi u OnPlayerConnect, novo ime neće biti prikazano za povezujećeg igrača.
+- Ako se koristi u OnPlayerConnect, novo ime **neće** biti prikazano za povezujećeg igrača.
 - Prosljeđivanje null niza kao novog imena srušit će server.
-- Imena igrača mogu imati do 24 znaka kada se koristi ova funkcija, ali kada se pridružuju serveru iz pregledača servera SA-MP, imena igrača ne smiju biti veća od 20 i manja od 3 znaka (server će odbiti ulazak). Ovo omogućava dodavanje 4 znaka kada koristite SetPlayerName.
+- Imena igrača mogu imati do **24** znaka kada se koristi ova funkcija, ali kada se pridružuju serveru iz pregledača servera SA-MP, imena igrača ne smiju biti veća od **20** i manja od **3** znaka (server će odbiti ulazak). Ovo omogućava dodavanje 4 znaka kada koristite SetPlayerName.
 
 :::
 

@@ -18,9 +18,9 @@ OnPlayerClickMap este apelat atunci când un jucător plasează o țintă/un pun
 
 ## Returnări
 
-1 - Va împiedica alte filterscript-uri să primească acest callback.
+**1** - Va împiedica alte filterscript-uri să primească acest callback.
 
-0 - Indică faptul că acest callback va fi transmis următorului filterscript.
+**0** - Indică faptul că acest callback va fi transmis următorului filterscript.
 
 Este întotdeauna numit primul în modul de joc.
 

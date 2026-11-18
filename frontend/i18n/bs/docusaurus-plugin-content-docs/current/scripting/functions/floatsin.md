@@ -41,7 +41,7 @@ GetPosInFrontOfPlayer(playerid, Float:distance, &Float:x, &Float:y, &Float:z)
 
 :::warning
 
-GTA / SA-MP u većini slučajeva koristi stupnjeve za uglove, na primjer GetPlayerFacingAngle. Stoga ćete najvjerojatnije htjeti koristiti način rada pod uglom 'stupnjeva', a ne radijane. Takođe imajte na umu da su uglovi u GTA suprotno kazaljkama na satu; 270° je istočno, a 90° zapadno. Jug je i dalje 180°, a sjever još uvijek 0° / 360°.
+GTA / SA-MP u većini slučajeva koristi **stupnjeve** za uglove, na primjer GetPlayerFacingAngle. Stoga ćete najvjerojatnije htjeti koristiti način rada pod uglom '**degrees**', a _ne_ radijane. Takođe imajte na umu da su uglovi u GTA suprotno kazaljkama na satu; 270° je istočno, a 90° zapadno. Jug je i dalje 180°, a sjever još uvijek 0° / 360°.
 
 :::
 

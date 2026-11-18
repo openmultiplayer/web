@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::warning
 
-Kad su filterskripte ili plugini navedeni kao ime var, ova funkcija vraća samo ime prve navedene filterskripte ili plugina. Ovo je bug.
+Kad su _filterscripts_ ili _plugins_ navedeni kao ime var, ova funkcija vraća samo ime prve navedene filterskripte ili plugina. Ovo je bug.
 
 :::
 
@@ -52,7 +52,7 @@ Napiši 'varlist' u server konzoli da prikažeš listu dostupnih server varijabl
 
 :::warning
 
-Korištenje ove funkcije na bilo čemu osim stringa (cijeli broj, bool ili float) ili nepostojeće varijable servera srušit će vaš server! Ovo je bug.
+Korištenje ove funkcije na bilo čemu osim **stringa** (cijeli broj, bool ili float) ili **nepostojeće** varijable servera **srušit** će vaš server! Ovo je bug.
 
 :::
 

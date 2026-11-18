@@ -9,28 +9,28 @@ tags: ["player"]
 
 Callback ini terpanggil ketika player sudah selesai mengedit attached object dengan edit mode.
 
-| Name                   | Description                                                      |
-| ---------------------- | ---------------------------------------------------------------- |
-| playerid               | ID player yang telah selesai mengedit attached object            |
-| EDIT_RESPONSE:response | 0 jika mereka membatalkan (ESC) atau 1 jika mereka mengklik save |
-| index                  | The index of the attached object (0-9)                           |
-| modelid                | Model/object yang diedit oleh player tersebut                    |
-| boneid                 | 'bone' yang sedang diedit di attached object                     |
-| Float:fOffsetX         | Offset X untuk objek yang telah diedit                           |
-| Float:fOffsetY         | Offset Y untuk objek yang telah diedit                           |
-| Float:fOffsetZ         | Offset Z untuk objek yang telah diedit                           |
-| Float:fRotX            | Rotasi X untuk objek yang telah diedit                           |
-| Float:fRotY            | Rotasi Y untuk objek yang telah diedit                           |
-| Float:fRotZ            | Rotasi Z untuk objek yang telah diedit                           |
-| Float:fScaleX          | Skala X untuk objek yang telah diedit                            |
-| Float:fScaleY          | Skala Y untuk objek yang telah diedit                            |
-| Float:fScaleZ          | Skala Z untuk objek yang telah diedit                            |
+| Name                   | Description                                                              |
+| ---------------------- | ------------------------------------------------------------------------ |
+| playerid               | ID player yang telah selesai mengedit attached object                    |
+| EDIT_RESPONSE:response | **0** jika mereka membatalkan (ESC) atau **1** jika mereka mengklik save |
+| index                  | The index of the attached object (0-9)                                   |
+| modelid                | Model/object yang diedit oleh player tersebut                            |
+| boneid                 | 'bone' yang sedang diedit di attached object                             |
+| Float:fOffsetX         | Offset X untuk objek yang telah diedit                                   |
+| Float:fOffsetY         | Offset Y untuk objek yang telah diedit                                   |
+| Float:fOffsetZ         | Offset Z untuk objek yang telah diedit                                   |
+| Float:fRotX            | Rotasi X untuk objek yang telah diedit                                   |
+| Float:fRotY            | Rotasi Y untuk objek yang telah diedit                                   |
+| Float:fRotZ            | Rotasi Z untuk objek yang telah diedit                                   |
+| Float:fScaleX          | Skala X untuk objek yang telah diedit                                    |
+| Float:fScaleY          | Skala Y untuk objek yang telah diedit                                    |
+| Float:fScaleZ          | Skala Z untuk objek yang telah diedit                                    |
 
 ## Returns
 
-1 - Akan mencegah skrip lain untuk memanggil callback ini.
+**1** - Akan mencegah skrip lain untuk memanggil callback ini.
 
-0 - Mengindikasi bahwa callback ini akan terpanggil di script lain.
+**0** - Mengindikasi bahwa callback ini akan terpanggil di script lain.
 
 Selalu terpanggil pertama kali di filterscripts.
 

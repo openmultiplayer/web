@@ -11,16 +11,16 @@ tags: ["player"]
 
 I-toggle ang mga function sa pag-target ng camera para sa isang player. Naka-disable bilang default para makatipid ng bandwidth.
 
-| Name     | Description                                                                                  |
-| -------- | -------------------------------------------------------------------------------------------- |
-| playerid | Ang ID ng player upang i-toggle ang mga function ng pag-target sa camera.                    |
-| enable   | 1 upang paganahin ang mga function ng pag-target sa camera at 0 upang i-disable ang mga ito. |
+| Name     | Description                                                                                          |
+| -------- | ---------------------------------------------------------------------------------------------------- |
+| playerid | Ang ID ng player upang i-toggle ang mga function ng pag-target sa camera.                            |
+| enable   | **1** upang paganahin ang mga function ng pag-target sa camera at **0** upang i-disable ang mga ito. |
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Hindi konektado ang player.
+**0**: Nabigo ang function na isagawa. Hindi konektado ang player.
 
 ## Examples
 

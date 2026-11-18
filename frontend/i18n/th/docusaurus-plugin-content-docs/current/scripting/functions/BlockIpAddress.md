@@ -35,7 +35,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::tip
 
-Wildcards can be used with this function, for example blocking the IP '6.9._._' will block all IPs where the first two octets are 6 and 9 respectively. Any number can be in place of an asterisk.
+Wildcards can be used with this function, for example blocking the IP `6.9.*.*` will block all IPs where the first two octets are **6** and **9** respectively. Any number can be in place of an asterisk.
 
 :::
 

@@ -21,9 +21,9 @@ Callback này được gọi khi một xe hồi sinh.
 
 ## Trả về
 
-0 - Ngăn các filterscript khác nhận callback này.
+**0** - Ngăn các filterscript khác nhận callback này.
 
-1 - Cho biết callback này sẽ được chuyển đến filterscript tiếp theo.
+**1** - Cho biết callback này sẽ được chuyển đến filterscript tiếp theo.
 
 Luôn được gọi đầu tiên trong filterscripts.
 

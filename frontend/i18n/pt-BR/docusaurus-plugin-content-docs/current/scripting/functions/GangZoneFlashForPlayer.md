@@ -9,11 +9,11 @@ tags: ["player", "gangzone"]
 
 Faz a gangzone piscar para um jogador.
 
-| Nome       | Descrição                                                                                                     |
-| ---------- | ------------------------------------------------------------------------------------------------------------- |
-| playerid   | O ID do jogador para o qual piscar a gangzone.                                                                |
-| zone       | O ID da gangzone a piscar.                                                                                    |
-| flashcolor | A cor para piscar na gangzone, pode ser integer ou hex no formato de cor RGBA. Transparência Alpha suportada. |
+| Nome       | Descrição                                                                                                         |
+| ---------- | ----------------------------------------------------------------------------------------------------------------- |
+| playerid   | O ID do jogador para o qual piscar a gangzone.                                                                    |
+| zone       | O ID da gangzone a piscar.                                                                                        |
+| flashcolor | A cor para piscar na gangzone, pode ser integer ou hex no formato de cor **RGBA**. Transparência Alpha suportada. |
 
 ## Retorno
 

@@ -15,9 +15,9 @@ Ang callback na ito ay itinatawag kapag ang isang player ay kumonek sa server.
 
 ## Returns
 
-0 - Ay papagbawalan ang ibang filterscript na tanggapin itong callback.
+**0** - Ay papagbawalan ang ibang filterscript na tanggapin itong callback.
 
-1 - Ay nagpapahiwatig na ang callback na ito ay ipapasa sa susunod na filterscript.
+**1** - Ay nagpapahiwatig na ang callback na ito ay ipapasa sa susunod na filterscript.
 
 Ito ay palaging unang tinatawag sa mga filterscript.
 

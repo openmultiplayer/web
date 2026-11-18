@@ -14,7 +14,7 @@ Find a filename matching a pattern.
 | const filename[]         | The string to hold the result in, returned as a packed string.           |
 | const pattern[]          | The pattern that should be matched. May contain wildcards.               |
 | index                    | The number of the file, in case there are multiple matches. (default: 0) |
-| size = sizeof (filename) | The maximum size of parameter name                                       |
+| size = sizeof (filename) | The maximum size of parameter _name_                                     |
 
 ## Returns
 

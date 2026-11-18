@@ -19,9 +19,9 @@ This callback is called when a vehicle's siren is toggled.
 
 ## Returns
 
-1 - Will prevent gamemode from receiving this callback.
+**1** - Will prevent gamemode from receiving this callback.
 
-0 - Indicates that this callback will be passed to the gamemode.
+**0** - Indicates that this callback will be passed to the gamemode.
 
 It is always called first in filterscripts.
 

@@ -16,9 +16,9 @@ Bu geri çağırma oyuncu sunucudan ayrıldığında çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-0 - Diğer filterscriptlerde çağrılmasını engeller.
+**0** - Diğer filterscriptlerde çağrılmasını engeller.
 
-1 - Diğer filterscriptlerde aranması için pas geçirilir.
+**1** - Diğer filterscriptlerde aranması için pas geçirilir.
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 

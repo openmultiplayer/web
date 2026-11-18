@@ -15,9 +15,9 @@ Daha önceden [db_open](db_open) fonksiyonu ile açılmış olan veritabanı ba�
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Fonksiyon başarılı bir şekilde gerçekleştirildi.
+**1**: Fonksiyon başarılı bir şekilde gerçekleştirildi.
 
-0: Fonksiyon gerçekleştirilemedi. Bu, veritabanı bağlantı adı geçersiz anlamına gelebilir.
+**0**: Fonksiyon gerçekleştirilemedi. Bu, veritabanı bağlantı adı geçersiz anlamına gelebilir.
 
 ## Örnekler
 
@@ -69,7 +69,7 @@ public OnGameModeExit()
 
 :::warning
 
-Sıfırdan başka bir geçersiz işlem kullanmak sunucunuzu çökertir! [db_open](db_open) kullanarak geçerli bir veritabanı bağlantı işleyicisi alın.
+Sıfırdan başka bir **geçersiz işlem** kullanmak sunucunuzu çökertir! [db_open](db_open) kullanarak geçerli bir veritabanı bağlantı işleyicisi alın.
 
 :::
 

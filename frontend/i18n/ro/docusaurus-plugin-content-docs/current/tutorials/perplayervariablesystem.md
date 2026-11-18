@@ -4,7 +4,7 @@ sidebar_label: Sistem de variabile pe jucător
 description: Sistemul de variabile per jucător (pe scurt, PVar) este un nou mod de a crea variabile de jucător într-o metodă eficientă creată dinamic la nivel global.
 ---
 
-Sistemul de variabile per jucător (pe scurt, PVar) este un nou mod de a crea variabile de jucător într-o metodă eficientă creată dinamic la nivel global, ceea ce înseamnă că pot fi folosite în modul de joc al serverului și în scripturile filtrelor în același timp.
+**Sistemul de variabile per jucător** (pe scurt, **PVar**) este un nou mod de a crea variabile de jucător într-o metodă eficientă creată dinamic la nivel global, ceea ce înseamnă că pot fi folosite în modul de joc al serverului și în scripturile filtrelor în același timp.
 
 Sunt similare cu [SVars](servervariablesystem), dar sunt pe bază de jucător. Vedeți ultimele 2 postări din acest thread pentru a citi despre diferența dintre proprietățile amanetului și PVars.
 

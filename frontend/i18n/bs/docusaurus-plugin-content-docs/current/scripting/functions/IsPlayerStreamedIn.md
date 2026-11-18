@@ -16,9 +16,9 @@ Provjerava ako je igrač učitan u klijent drugog igrača.
 
 ## Returns
 
-1: Igrač je učitan.
+**1**: Igrač _je_ učitan.
 
-0: Igrač nije učitan.
+**0**: Igrač _nije_ učitan.
 
 ## Primjeri
 

@@ -15,9 +15,9 @@ Callback này được gọi khi người chơi xuất hiện. (ví dụ: sau kh
 
 ## Giá trị trả về
 
-0 - Sẽ ngăn các filterscripts khác nhận callback này.
+**0** - Sẽ ngăn các filterscripts khác nhận callback này.
 
-1 - Cho biết callback này sẽ được truyền cho filterscript tiếp theo.
+**1** - Cho biết callback này sẽ được truyền cho filterscript tiếp theo.
 
 Nó luôn được gọi đầu tiên trong filterscripts.
 

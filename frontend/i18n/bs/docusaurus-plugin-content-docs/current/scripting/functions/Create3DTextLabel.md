@@ -18,7 +18,7 @@ Kreira 3D Text Label na određenoj lokaciji u svijetu.
 | Ime          | Deskripcija                                                                |
 | ------------ | -------------------------------------------------------------------------- |
 | text[]       | Početni tekstualni niz.                                                    |
-| color        | Boja texta, kao cjelobrojni ili hexadcimalni u RGBA formatu                |
+| color        | Boja texta, kao cjelobrojni ili hexadcimalni u **RGBA** formatu            |
 | x            | X-Kordinata                                                                |
 | y            | Y-Kordinata                                                                |
 | z            | Z-Kordinata                                                                |

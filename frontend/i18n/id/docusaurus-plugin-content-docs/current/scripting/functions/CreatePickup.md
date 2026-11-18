@@ -43,9 +43,9 @@ pickup = 0; // Variable pickup perlu diatur ulang untuk menghindari konflik kede
 
 :::note
 
-- Satu-satunya pickup yang dapat diambil dari dalam kendaraan adalah 14 (kecuali pickup khusus seperti suap).
+- Satu-satunya pickup yang dapat diambil dari dalam kendaraan adalah **14** (kecuali pickup khusus seperti suap).
 - Pickups ditunjukan, dan dapat diambil oleh semua pemain.
-- Ada kemungkinan jika DestroyPickup() digunakan saat pickup diambil, lebih dari satu pemain dapat mengambil pickup, karena lag. Ini dapat dielakan melalui penggunaan variabel.
+- Ada kemungkinan jika DestroyPickup digunakan saat pickup diambil, lebih dari satu pemain dapat mengambil pickup, karena lag. Ini dapat dielakan melalui penggunaan variabel.
 - Jenis pickup tertentu datang dengan 'respons otomatis', misalnya menggunakan model M4 di pickup akan secara otomatis memberikan pemain senjata dan beberapa amunisi.
 
 :::
@@ -58,7 +58,7 @@ Untuk pickup yang sepenuhnya scripted, tipe 1 harus digunakan.
 
 :::warning
 
-Bug yang diketahui: Pickups yang mempunyai X atau Y kurang dari -4096.0 atau lebih besar dari 4096.0 tidak akan muncul dan tidak akan memicu OnPlayerPickUpPickup salah satu.
+**Bug yang diketahui:** Pickups yang mempunyai X atau Y kurang dari -4096.0 atau lebih besar dari 4096.0 tidak akan muncul dan tidak akan memicu OnPlayerPickUpPickup salah satu.
 
 :::
 

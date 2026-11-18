@@ -15,7 +15,7 @@ Gets the amount of data (in bytes) that the server has received from the player.
 
 ## Returns
 
-This function returns the number of bytes the server has received from the player. 0 is returned if the Igrač nije konektovan.
+This function returns the number of bytes the server has received from the player. **0** is returned if the Igrač nije konektovan.
 
 ## Primjeri
 

@@ -18,7 +18,7 @@ Lees één regel uit een bestand.
 
 ## Retourneert
 
-De lengte van de gelezen tekst (integer).
+De lengte van de **gelezen tekst** (integer).
 
 ## Voorbeeld
 

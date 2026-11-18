@@ -16,9 +16,9 @@ Get the rotation of a vehicle on the Z axis (yaw).
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle does not exist.
+**0**: The function failed to execute. This means the vehicle does not exist.
 
 The vehicle's rotation is stored in the specified variable.
 

@@ -16,9 +16,9 @@ Allows a player to edit an object (position and rotation) using their mouse on a
 
 ## Returns
 
-1: The function executed successfully. Success is reported when a non-existent object is specified, but nothing will happen.
+**1**: The function executed successfully. Success is reported when a non-existent object is specified, but nothing will happen.
 
-0: The function failed to execute. The player is not connected.
+**0**: The function failed to execute. The player is not connected.
 
 ## Examples
 
@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-You can move the camera while editing by pressing and holding the spacebar (or W in vehicle) and moving your mouse.
+You can move the camera while editing by pressing and holding the **spacebar** (or **W** in vehicle) and moving your mouse.
 
 :::
 

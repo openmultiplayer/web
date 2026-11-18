@@ -18,7 +18,7 @@ This callback is called when a player exits a mod shop, even if the colors weren
 
 ## ส่งคืน
 
-Returning 0 in this callback will deny the colour change. Returning 1 will allow it.
+Returning **0** in this callback will deny the colour change. Returning **1** will allow it.
 
 It is always called first in gamemode so returning 0 there also blocks other filterscripts from seeing it.
 
@@ -46,7 +46,7 @@ Fix here: https://pastebin.com/G81da7N1
 
 :::warning
 
-Known Bug(s): previewing a component inside a mod shop might call this callback.
+**Known Bug(s):** previewing a component inside a mod shop might call this callback.
 
 :::
 

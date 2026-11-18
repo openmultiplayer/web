@@ -17,9 +17,9 @@ Sets the game time for a player. If a player's clock is enabled (TogglePlayerClo
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**0**: The function failed to execute. The player specified does not exist.
 
 ## ตัวอย่าง
 

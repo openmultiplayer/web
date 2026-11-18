@@ -17,7 +17,7 @@ tags: ["player"]
 
 ## مقدار بازگشتی
 
-شناسه اسکین سفارشی که در [AddCharModel](AddCharModel) newid مشخص شده بود.
+شناسه اسکین سفارشی که در [AddCharModel](AddCharModel) **newid** مشخص شده بود.
 
 ## مثال‌ها
 

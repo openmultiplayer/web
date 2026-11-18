@@ -16,9 +16,9 @@ Allows players to edit a player-object (position and rotation) with a GUI and th
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. Player or object not valid.
+**0**: The function failed to execute. Player or object not valid.
 
 ## ตัวอย่าง
 
@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-You can move the camera while editing by pressing and holding the spacebar (or W in vehicle) and moving your mouse.
+You can move the camera while editing by pressing and holding the **spacebar** (or **W** in vehicle) and moving your mouse.
 
 :::
 

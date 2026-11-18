@@ -16,9 +16,9 @@ Postavlja nivo pijanosti igrača zbog kojeg se igračeva kamera njiše i vozila 
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
 ## Primjeri
 

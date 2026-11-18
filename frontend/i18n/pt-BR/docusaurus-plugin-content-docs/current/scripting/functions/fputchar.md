@@ -10,11 +10,11 @@ tags: ["file management"]
 
 Escreva um caractere em um arquivo.
 
-| Nome | Descrição |
-| ----------- | ----------------------------------------------------------------------------- |
-| File:handle | O identificador de arquivo a ser usado, aberto anteriormente por fopen().                            |
-| valor | O caractere a ser gravado no arquivo.                                         |
-| bool:utf8 | Se for `true`, escreva no modo UTF8, caso contrário, em ASCII estendido. (padrão: `true`) |
+| Nome        | Descrição                                                                                 |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| File:handle | O identificador de arquivo a ser usado, aberto anteriormente por fopen.                   |
+| valor       | O caractere a ser gravado no arquivo.                                                     |
+| bool:utf8   | Se for `true`, escreva no modo UTF8, caso contrário, em ASCII estendido. (padrão: `true`) |
 
 ## Retornos
 
@@ -46,7 +46,7 @@ else
 
 :::warning
 
-Usar um identificador inválido irá travar seu servidor! Obtenha um identificador válido usando [fopen](fopen) ou [ftemp](ftemp).
+Usar um **identificador inválido** irá travar seu servidor! Obtenha um **identificador válido** usando [fopen](fopen) ou [ftemp](ftemp).
 
 :::
 

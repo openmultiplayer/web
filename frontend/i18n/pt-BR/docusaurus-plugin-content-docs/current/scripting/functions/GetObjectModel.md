@@ -5,7 +5,7 @@ description: Obtém o ID do modelo de um objeto (CreateObject).
 tags: []
 ---
 
-Esta função foi adicionada no SA-MP 0.3.7 e não funcionará em versões anteriores!
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Descrição
 
@@ -17,7 +17,7 @@ Obtém o ID do modelo de um objeto (CreateObject).
 
 ## Retorno
 
-O modelo ID do objeto. -1 se o objeto não existir.
+O modelo ID do objeto. **-1** se o objeto não existir.
 
 ## Exemplos
 

@@ -48,7 +48,7 @@ There are 7 clickable buttons in edition mode. The three single icons that have 
 
 :::tip
 
-You can move the camera while editing by pressing and holding the spacebar (or W in vehicle) and moving your mouse.
+You can move the camera while editing by pressing and holding the **spacebar** (or **W** in vehicle) and moving your mouse.
 
 :::
 

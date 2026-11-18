@@ -104,7 +104,7 @@ public OnGameModeExit()
 
 :::warning
 
-使用非法的结果集句柄将导致服务器崩溃！请始终通过[db_query](db_query)获取有效的查询结果
+使用**非法的结果集句柄**将导致服务器崩溃！请始终通过[db_query](db_query)获取有效的查询结果
 
 :::
 

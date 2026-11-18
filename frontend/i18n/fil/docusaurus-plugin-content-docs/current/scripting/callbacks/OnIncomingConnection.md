@@ -17,9 +17,9 @@ Ang callback na ito ay itinatawag kapag mayroong IP address na nag-tatangkang ku
 
 ## Returns
 
-1 - Pipigilan ang ibang filterscripts na tanggapin itong callback.
+**1** - Pipigilan ang ibang filterscripts na tanggapin itong callback.
 
-0 - Ipinapahiwatig na ang callback na ito ay ipapasa sa ibang filterscript.
+**0** - Ipinapahiwatig na ang callback na ito ay ipapasa sa ibang filterscript.
 
 Ito ay palaging tinatawag una sa mga filterscripts.
 

@@ -16,9 +16,9 @@ Dobij healthe vozila.
 
 ## Returns
 
-1 - uspješno
+**1** - uspješno
 
-0 - greška (nevažeći ID vozila).
+**0** - greška (nevažeći ID vozila).
 
 Healthi vozila su pohranjeni u varijablama, ne u return vrijednosti.
 
@@ -47,7 +47,7 @@ if (strcmp(cmdtext, "/repair", true) == 0)
 
 :::note
 
-- Potpuno health stanje vozila je 1000, međutim moguće su veće vrijednosti i povećavaju health stanje vozila. Za više informacija o health vrijednostima pogledajte [ovdje](../resources/vehiclehealth).
+- Potpuno health stanje vozila je **1000**, međutim moguće su veće vrijednosti i povećavaju health stanje vozila. Za više informacija o health vrijednostima pogledajte [ovdje](../resources/vehiclehealth).
 - Vozilo se zapali kad mu je health ispod 250. Eksplodirat će nekoliko sekundi kasnije.
 
 :::

@@ -15,9 +15,9 @@ Provjerava da li je igrač konektovan (Ako je ID uzet od stanje konektovanog igr
 
 ## Returns
 
-0: Igrač nije konektovan.
+**0**: Igrač nije konektovan.
 
-1: igrač JESTE konektovan.
+**1**: igrač JESTE konektovan.
 
 ## Primjeri
 

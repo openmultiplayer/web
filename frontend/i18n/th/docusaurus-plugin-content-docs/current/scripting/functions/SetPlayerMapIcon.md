@@ -17,14 +17,14 @@ Place an icon/marker on a player's map. Can be used to mark locations such as ba
 | Float:y    | The Y coordinate to place the map icon at.                                                                                                                |
 | Float:z    | The Z coordinate to place the map icon at.                                                                                                                |
 | markertype | The [icon](../resources/mapicons) to set.                                                                                                                 |
-| color      | The color of the icon, as an integer or hex in RGBA color format. This should only be used with the square icon (ID: 0).                                  |
+| color      | The color of the icon, as an integer or hex in **RGBA** color format. This should only be used with the square icon (ID: 0).                              |
 | style      | The [style](../resources/mapiconstyles) of icon.                                                                                                          |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. Player is not connected.
+**0**: The function failed to execute. Player is not connected.
 
 ## ตัวอย่าง
 

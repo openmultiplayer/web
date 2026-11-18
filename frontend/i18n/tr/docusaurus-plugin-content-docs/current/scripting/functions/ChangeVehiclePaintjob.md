@@ -16,7 +16,7 @@ Aracın kaplamasını değiştirme. (düz renkler için bkz. ChangeVehicleColor)
 
 ## Çalışınca Vereceği Sonuçlar
 
-Bu fonksiyon belirtilen araç ID'si oluşturulmamış olsa bile her zaman 1'i (başarılı) döndürür.
+Bu fonksiyon belirtilen araç ID'si oluşturulmamış olsa bile her zaman **1**'i (başarılı) döndürür.
 
 :::warning
 

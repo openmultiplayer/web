@@ -19,9 +19,9 @@ Set the direction a player's camera looks at. Generally meant to be used in comb
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**0**: The function failed to execute. The player specified does not exist.
 
 ## ตัวอย่าง
 

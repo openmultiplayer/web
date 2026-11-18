@@ -15,9 +15,9 @@ This callback is called when a player spawns.(i.e. after caling SpawnPlayer func
 
 ## ส่งคืน
 
-0 - Will prevent other filterscripts from receiving this callback.
+**0** - Will prevent other filterscripts from receiving this callback.
 
-1 - Indicates that this callback will be passed to the next filterscript.
+**1** - Indicates that this callback will be passed to the next filterscript.
 
 มันถูกเรียกในฟิลเตอร์สคริปต์ก่อนเสมอ
 

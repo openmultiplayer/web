@@ -15,7 +15,7 @@ Get a player's current state.
 
 ## ส่งคืน
 
-The player's current state as an integer (see: [Player States](../resources/playerstates)).
+The player's current **state** as an integer (see: [Player States](../resources/playerstates)).
 
 ## ตัวอย่าง
 

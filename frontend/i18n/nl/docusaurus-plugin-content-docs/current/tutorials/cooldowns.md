@@ -16,9 +16,9 @@ Vervolgens een stopwatch met `SetTimerEx` die elke seconde telt.
 
 Beide werken, maar er is een betere manier: nauwkeuriger, en met milliseconden!
 
-## `GetTickCount()` en `gettime()`
+## `GetTickCount` en `gettime`
 
-`GetTickCount()` geeft milliseconden sinds het serverproces startte. `gettime()` geeft Unix-tijd (seconden sinds 1-1-1970). Neem twee meetmomenten en trek ze af: je hebt een interval.
+`GetTickCount` geeft milliseconden sinds het serverproces startte. `gettime` geeft Unix-tijd (seconden sinds 1-1-1970). Neem twee meetmomenten en trek ze af: je hebt een interval.
 
 ### Een cooldown
 
@@ -43,17 +43,17 @@ OnPlayerInteractWithServer(playerid)
 }
 ```
 
-Of met seconden via `gettime()`.
+Of met seconden via `gettime`.
 
 Je kunt de resterende tijd tonen door het verschil uit te rekenen en in het bericht te zetten.
 
 ### Een stopwatch
 
-Meet de tijd tussen start en finish met twee `GetTickCount()`-calls en trek ze af. Formatteer desgewenst naar `mm:ss.ms` voor spelers.
+Meet de tijd tussen start en finish met twee `GetTickCount`-calls en trek ze af. Formatteer desgewenst naar `mm:ss.ms` voor spelers.
 
 ## Samenvatting
 
-- `GetTickCount()`: milliseconden sinds start serverproces
+- `GetTickCount`: milliseconden sinds start serverproces
 - Neem twee timestamps en bereken nauwkeurig het interval zonder timers
 - Handig voor cooldowns én metingen (stopwatch)
 

@@ -16,7 +16,7 @@ Obtenha o estado atual de um jogador.
 
 ## Retornos
 
-O estado atual do jogador como um número inteiro (consulte: [Estados do jogador](../resources/playerstates)).
+O **estado** atual do jogador como um número inteiro (consulte: [Estados do jogador](../resources/playerstates)).
 
 ## Exemplos
 

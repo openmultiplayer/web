@@ -25,9 +25,9 @@ Adds a class to class selection. Classes are used so players may spawn with a sk
 
 ## Returns
 
-The ID of the class which was just added.
+The **ID of the class** which was just added.
 
-319 if the class limit (320) was reached. The highest possible class ID is 319.
+**319** if the class limit (320) was reached. The highest possible class ID is 319.
 
 ## Examples
 

@@ -9,7 +9,7 @@ tags: ["player", "vehicle"]
 
 This function gets the ID of the vehicle the player is currently in.
 
-**Note:** NOT the model id of the vehicle. See [GetVehicleModel](GetVehicleModel) for that.
+**Note:** **NOT** the model id of the vehicle. See [GetVehicleModel](GetVehicleModel) for that.
 
 | Name     | Description                                                        |
 | -------- | ------------------------------------------------------------------ |

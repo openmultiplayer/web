@@ -19,9 +19,9 @@ Callback này được gọi khi một người chơi gây thiệt hại cho ng�
 
 ## Trả Về
 
-1 - Callback sẽ không được gọi trong các filterscript khác.
+**1** - Callback sẽ không được gọi trong các filterscript khác.
 
-0 - Cho phép callback này được gọi trong các filterscript khác.
+**0** - Cho phép callback này được gọi trong các filterscript khác.
 
 Callback này luôn được gọi đầu tiên trong filterscripts, vì vậy việc trả về 1 ở đó sẽ ngăn callback được thấy trong các filterscript khác.
 
@@ -47,9 +47,9 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 :::note
 
 - Lưu ý rằng hàm này có thể không chính xác trong một số trường hợp.
-- weaponid sẽ trả về 37 (súng phun lửa) từ bất kỳ nguồn lửa nào (ví dụ: molotov, 18)
-- weaponid sẽ trả về 51 từ bất kỳ vũ khí nào tạo ra vụ nổ (ví dụ: RPG, lựu đạn)
-- **playerid** là người duy nhất có thể gọi callback này.
+- `weaponid` sẽ trả về 37 (súng phun lửa) từ bất kỳ nguồn lửa nào (ví dụ: molotov, 18)
+- `weaponid` sẽ trả về 51 từ bất kỳ vũ khí nào tạo ra vụ nổ (ví dụ: RPG, lựu đạn)
+- `playerid` là người duy nhất có thể gọi callback này.
 - Số lượng luôn là lượng thiệt hại tối đa mà weaponid có thể gây ra, ngay cả khi sức khỏe còn lại nhỏ hơn lượng thiệt hại tối đa đó. Vì vậy, khi một người chơi có 100.0 máu và bị bắn bởi Desert Eagle có giá trị thiệt hại là 46.2, cần 3 phát bắn để tiêu diệt người chơi đó. Cả 3 phát bắn sẽ hiển thị số lượng 46.2, ngay cả khi khi phát bắn cuối cùng trúng, người chơi chỉ còn 7.6 máu.
 
 :::

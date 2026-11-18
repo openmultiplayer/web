@@ -15,13 +15,13 @@ Oyuncuyu sunucudan atma. Oynamaya devam etmek istiyorsa oyundan çıkıp tekrar 
 
 ## Çalışınca Vereceği Sonuçlar
 
-Bu fonksiyon, fonksiyonun yürütülmesi başarısız olsa bile her zaman 1 döndürür. (belirtilen ID oyunda olmasa bile).
+Bu fonksiyon, fonksiyonun yürütülmesi başarısız olsa bile her zaman **1** döndürür. (belirtilen ID oyunda olmasa bile).
 
 ## Notlar
 
 :::warning
 
-Kick() fonksiyonu kullanılmadan önce giden mesaj (örn. SendClientMessage) veya başka bir fonksiyon oyuncuya ulaşmayacaktır. Mesajın veya bir başka fonksiyonun oyuncuya ulaşması için zamanlayıcı (timer) kullanılmalıdır.
+Kick fonksiyonu kullanılmadan önce giden mesaj (örn. SendClientMessage) veya başka bir fonksiyon oyuncuya ulaşmayacaktır. Mesajın veya bir başka fonksiyonun oyuncuya ulaşması için zamanlayıcı (timer) kullanılmalıdır.
 
 :::
 

@@ -9,21 +9,21 @@ tags: []
 
 ## Descriere
 
-Adaugă un nou model de obiect simplu personalizat pentru descărcare. Fișierele model vor fi stocate în documentele playerului \ GTA San Andreas User Files \ SAMP \ cache sub folderul Server IP și Port într-un nume de fișier CRC.
+Adaugă un nou model de obiect simplu personalizat pentru descărcare. Fișierele model vor fi stocate în `Documents\GTA San Andreas User Files\SAMP\cache` sub folderul Server IP și Port într-un nume de fișier CRC.
 
 | Nume         | Descriere                                                                                                                                            |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | virtualworld | ID-ul lumii virtuale pentru a face modelul disponibil la. Folosiți -1 pentru toate lumile.                                                           |
 | baseid       | ID-ul modelului de obiect de bază de utilizat (obiectul original de utilizat atunci când descărcarea eșuează).                                       |
 | newid        | ID-ul noului model de obiect a variat de la -1000 la -30000 (29000 de sloturi) pentru a fi utilizat ulterior cu CreateObject sau CreatePlayerObject. |
-| dffname      | Numele fișierului de coliziune a modelului .dff situat în dosarul serverului de modele în mod implicit (setare artpath)                              |
-| txdname      | Numele fișierului de textură model .txd situat în dosarul serverului modele în mod implicit (setare artpath).                                        |
+| dffname      | Numele fișierului de coliziune a modelului **.dff** situat în dosarul serverului de modele în mod implicit (setare artpath).                         |
+| txdname      | Numele fișierului de textură model **.txd** situat în dosarul serverului modele în mod implicit (setare artpath).                                    |
 
 ## Se intoarce
 
-1: Funcția executată cu succes.
+**1**: Funcția executată cu succes.
 
-0: Funcția nu a putut fi executată.
+**0**: Funcția nu a putut fi executată.
 
 ## Exemple
 
@@ -39,8 +39,8 @@ public OnGameModeInit()
 
 :::note
 
-- `useartwork` trebuie să fie activat mai întâi în setările serverului pentru ca acesta să funcționeze
-- Când virtualworld este setat, modelele vor fi descărcate odată ce jucătorul intră în lumea specifică
+- **useartwork** trebuie să fie activat mai întâi în setările serverului pentru ca acesta să funcționeze
+- Când `virtualworld` este setat, modelele vor fi descărcate odată ce jucătorul intră în lumea specifică
 
 :::
 

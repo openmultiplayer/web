@@ -16,9 +16,9 @@ Adiciona um 'componente' (frequentemente chamado de 'mod' (modificação)) a um 
 
 ## Retorno
 
-0 - O componente não foi adicionar porque o veículo não existe.
+**0** - O componente não foi adicionar porque o veículo não existe.
 
-1 - O componente foi adicionar com sucesso ao veículo.
+**1** - O componente foi adicionar com sucesso ao veículo.
 
 ## Exemplos
 

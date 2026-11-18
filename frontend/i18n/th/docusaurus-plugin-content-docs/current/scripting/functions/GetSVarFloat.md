@@ -21,7 +21,7 @@ Gets a float server variable's value.
 
 ## ส่งคืน
 
-The float value of the specified server variable. It will still return 0 if the variable is not set.
+The float value of the specified server variable. It will still return **0** if the variable is not set.
 
 ## ตัวอย่าง
 

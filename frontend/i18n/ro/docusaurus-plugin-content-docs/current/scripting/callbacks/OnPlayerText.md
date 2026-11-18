@@ -16,7 +16,7 @@ Apelat atunci când un jucător trimite un mesaj de chat.
 
 ## Returnări
 
-Este întotdeauna numit primul în filterscript-uri, astfel încât returnarea 0 acolo blochează alte scripturi să-l vadă.
+Este întotdeauna numit primul în filterscript-uri, astfel încât returnarea **0** acolo blochează alte scripturi să-l vadă.
 
 ## Exemple
 

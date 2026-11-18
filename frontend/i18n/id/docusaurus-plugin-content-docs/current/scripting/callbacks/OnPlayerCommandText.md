@@ -16,7 +16,7 @@ Callback ini akan terpanggil ketika pemain memasukkan perintah kedalam chat wind
 
 ## Returns
 
-Ini akan selalu terpanggil pertama di filterscripts jadi mengembalikan nilai 1 akan melarang filterscript lain untuk melihatnya.
+Ini akan selalu terpanggil pertama di filterscripts jadi mengembalikan nilai **1** akan melarang filterscript lain untuk melihatnya.
 
 ## Contoh
 

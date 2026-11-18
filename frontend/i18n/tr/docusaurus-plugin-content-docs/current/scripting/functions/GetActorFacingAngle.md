@@ -18,9 +18,9 @@ Aktörün açısını kontrol etme.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Fonksiyon başarıyla çalıştı.
+**1**: Fonksiyon başarıyla çalıştı.
 
-0: Fonksiyon çalışmadı. Girilen aktör ID'si geçersiz.
+**0**: Fonksiyon çalışmadı. Girilen aktör ID'si geçersiz.
 
 Aktörün açısı belirtilen değişkende saklanır.
 

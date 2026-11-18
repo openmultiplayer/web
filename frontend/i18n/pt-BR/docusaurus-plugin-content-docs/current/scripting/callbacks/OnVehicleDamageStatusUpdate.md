@@ -22,9 +22,9 @@ Essa callback é executada quando elementos do veíclo como portas, rodas, pain�
 
 ## Retornos
 
-1 - Irá previnir que outros filterscripts recebam essa callback.
+**1** - Irá previnir que outros filterscripts recebam essa callback.
 
-0 - Indica que essa callback pode ser passada para o próximo filterscript.
+**0** - Indica que essa callback pode ser passada para o próximo filterscript.
 
 Sempre executada primeiro nos filterscripts.
 

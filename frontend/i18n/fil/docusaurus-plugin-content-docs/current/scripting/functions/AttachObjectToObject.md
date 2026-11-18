@@ -9,23 +9,23 @@ tags: []
 
 Maaari mong gamitin ang function na ito upang ilagay ang mga object sa iba pang mga object.
 
-| Name          | Description                                                                       |
-| ------------- | --------------------------------------------------------------------------------- |
-| objectid      | Ang object na ikakabit sa isa pang object.                                        |
-| attachtoid    | Ang object na ikakabit sa object.                                                 |
-| Float:OffsetX | Ang distansya sa pagitan ng pangunahing object at object sa direksyon ng X.       |
-| Float:OffsetY | Ang distansya sa pagitan ng pangunahing object at object sa direksyon ng Y.       |
-| Float:OffsetZ | Ang distansya sa pagitan ng pangunahing object at object sa direksyon ng Z.       |
-| Float:RotX    | Ang pag-ikot ng X sa pagitan ng object at ng pangunahing object                   |
-| Float:RotY    | Ang pag-ikot ng Y sa pagitan ng object at ng pangunahing object.                  |
-| Float:RotZ    | Ang pag-ikot ng Z sa pagitan ng object at ng pangunahing object.                  |
-| SyncRotation  | Kung nakatakda sa 0, ang pag-ikot ng objectid ay hindi magbabago sa attachtoid's. |
+| Name          | Description                                                                           |
+| ------------- | ------------------------------------------------------------------------------------- |
+| objectid      | Ang object na ikakabit sa isa pang object.                                            |
+| attachtoid    | Ang object na ikakabit sa object.                                                     |
+| Float:OffsetX | Ang distansya sa pagitan ng pangunahing object at object sa direksyon ng X.           |
+| Float:OffsetY | Ang distansya sa pagitan ng pangunahing object at object sa direksyon ng Y.           |
+| Float:OffsetZ | Ang distansya sa pagitan ng pangunahing object at object sa direksyon ng Z.           |
+| Float:RotX    | Ang pag-ikot ng X sa pagitan ng object at ng pangunahing object                       |
+| Float:RotY    | Ang pag-ikot ng Y sa pagitan ng object at ng pangunahing object.                      |
+| Float:RotZ    | Ang pag-ikot ng Z sa pagitan ng object at ng pangunahing object.                      |
+| SyncRotation  | Kung nakatakda sa **0**, ang pag-ikot ng objectid ay hindi magbabago sa attachtoid's. |
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Nangangahulugan ito na ang unang object (objectid) ay wala. Walang mga panloob na pagsusuri upang i-verify na ang pangalawang object (attachtoid) ay umiiral.
+**0**: Nabigo ang function na isagawa. Nangangahulugan ito na ang unang object (objectid) ay wala. Walang mga panloob na pagsusuri upang i-verify na ang pangalawang object (attachtoid) ay umiiral.
 
 ## Examples
 

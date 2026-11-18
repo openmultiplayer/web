@@ -19,7 +19,7 @@ Obtém o valor de uma variável inteira do jogador.
 
 O valor inteiro da variável de jogador especificada.
 
-Ele ainda retornará 0 se a variável não estiver definida ou se o jogador não existir.
+Ele ainda retornará **0** se a variável não estiver definida ou se o jogador não existir.
 
 ## Exemplos
 

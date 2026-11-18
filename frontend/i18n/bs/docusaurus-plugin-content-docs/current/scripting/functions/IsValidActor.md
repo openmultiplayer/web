@@ -21,9 +21,9 @@ Provjerava ako je ID aktora važeći.
 
 ## Returns
 
-1 - Aktor je važeći.
+**1** - Aktor je važeći.
 
-0 - Aktor je nevažeći.
+**0** - Aktor je nevažeći.
 
 ## Primjeri
 

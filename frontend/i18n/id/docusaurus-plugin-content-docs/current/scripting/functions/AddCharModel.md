@@ -9,20 +9,20 @@ tags: []
 
 ## Deskripsi
 
-Menambah sebuah custom character model untuk didownload. Model file biasanya terletak di Player Documents\GTA San Andreas User Files\SAMP\cache didalam folder Server IP dan Port dalam bentuk nama [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
+Menambah sebuah custom character model untuk didownload. Model file biasanya terletak di Player `Documents\GTA San Andreas User Files\SAMP\cache` didalam folder Server IP dan Port dalam bentuk nama [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nama    | Deskripsi                                                                                                                |
 | ------- | ------------------------------------------------------------------------------------------------------------------------ |
 | baseid  | Model ID skin dasar yang ingin digunakan (sifat dari karakter & original karakter untuk dipakai setelah download gagal). |
 | newid   | Model ID skin baru dari jangkauan 20000 sampai 30000 (10000 slot) untuk digunakan nanti bersamaan dengan SetPlayerSkin   |
-| dffname | Nama file model collision file .dff didalam folder models server secara default (setting artpath).                       |
-| txdname | Nama file model texture file .txd didalam folder models server secara default (setting artpath).                         |
+| dffname | Nama file model collision file **.dff** didalam folder `models` server secara default (setting artpath).                 |
+| txdname | Nama file model texture file **.txd** didalam folder `models` server secara default (setting artpath).                   |
 
 ## Returns
 
-1: Function berhasil dijalankan.
+**1**: Function berhasil dijalankan.
 
-0: Function gagal dijalankan.
+**0**: Function gagal dijalankan.
 
 ## Contoh
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork harus diaktifkan terlebih dahulu di server settings agar fungsi ini berfungsi.
+**useartwork** harus diaktifkan terlebih dahulu di server settings agar fungsi ini berfungsi.
 
 :::
 

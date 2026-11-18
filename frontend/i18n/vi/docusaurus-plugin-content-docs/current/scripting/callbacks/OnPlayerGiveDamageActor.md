@@ -21,9 +21,9 @@ Callback này được gọi khi một người chơi gây thiệt hại cho m�
 
 ## Trả Về
 
-1 - Callback sẽ không được gọi trong các filterscript khác.
+**1** - Callback sẽ không được gọi trong các filterscript khác.
 
-0 - Cho phép callback này được gọi trong các filterscript khác.
+**0** - Cho phép callback này được gọi trong các filterscript khác.
 
 Callback này luôn được gọi đầu tiên trong filterscripts, vì vậy việc trả về 1 ở đó sẽ ngăn callback được thấy trong các filterscript khác.
 

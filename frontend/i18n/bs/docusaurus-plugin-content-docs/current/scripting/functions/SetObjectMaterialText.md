@@ -24,9 +24,9 @@ Zamijeni teksturu objekta sa tekstom.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena.
+**0**: Funkcija neuspješno izvršena.
 
 ## Primjeri
 
@@ -51,7 +51,7 @@ Ugradnja boja može se koristiti za više boja u tekstu.
 
 :::warning
 
-MORAŠ koristiti ARGB format boje, ne RGBA kao što se koristi u klijent porukama i sl.
+MORAŠ koristiti **ARGB** format boje, ne RGBA kao što se koristi u klijent porukama i sl.
 
 :::
 
@@ -62,6 +62,6 @@ MORAŠ koristiti ARGB format boje, ne RGBA kao što se koristi u klijent porukam
 
 ## Filterskripte koje podržavaju teksturisanje/text
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) od Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) od Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) od RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) od Pottus

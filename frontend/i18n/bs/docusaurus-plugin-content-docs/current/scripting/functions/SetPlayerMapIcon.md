@@ -17,14 +17,14 @@ Postavi ikonu/marker na mapu igrača. Može se koristiti da označite lokacije k
 | Float:y    | Y kordinata za postaviti map ikonicu.                                                                                                       |
 | Float:z    | Z kordinata za postaviti map ikonicu.                                                                                                       |
 | markertype | [Ikonica](../resources/mapicons) za postaviti.                                                                                              |
-| color      | Boja ikonice, kao cijeli broj ili hex u RGBA formatu. Ovo bi se trebalo koristiti samo sa ikonicom kocke (ID: 0).                           |
+| color      | Boja ikonice, kao cijeli broj ili hex u **RGBA** formatu. Ovo bi se trebalo koristiti samo sa ikonicom kocke (ID: 0).                       |
 | style      | [Stil](../resources/mapiconstyles) ikonice.                                                                                                 |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
 ## Primjeri
 

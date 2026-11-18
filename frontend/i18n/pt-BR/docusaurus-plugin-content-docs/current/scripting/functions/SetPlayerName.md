@@ -60,9 +60,9 @@ if (strcmp(cmdtext, "/superman", true) == 0)
 :::warning
 
 - Alterar o nome dos jogadores para o mesmo nome, mas com casos de personagem diferentes (por exemplo, "John" para "JOHN") não funcionará.
-- Se usado em [OnPlayerConnect](../callbacks/OnPlayerConnect), o novo nome não será mostrado para o jogador conectado.
+- Se usado em [OnPlayerConnect](../callbacks/OnPlayerConnect), o novo nome **não** será mostrado para o jogador conectado.
 - Passar uma string nula como novo nome irá travar o servidor. (Corrigido em open.mp)
-- Os nomes dos jogadores podem ter até 24 caracteres ao usar esta função, mas ao ingressar no servidor a partir do navegador do servidor SA-MP, os nomes dos jogadores não devem ter mais que 20 e menos que 3 caracteres (o servidor negará a entrada). Isso permite 4 caracteres extras ao usar SetPlayerName.
+- Os nomes dos jogadores podem ter até **24** caracteres ao usar esta função, mas ao ingressar no servidor a partir do navegador do servidor SA-MP, os nomes dos jogadores não devem ter mais que **20** e menos que **3** caracteres (o servidor negará a entrada). Isso permite 4 caracteres extras ao usar SetPlayerName.
 
 :::
 

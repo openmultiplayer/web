@@ -19,9 +19,9 @@ Deze callback wordt aangeroepen wanneer een speler schade toebrengt aan een ande
 
 ## Returns
 
-1 - Callback wordt niet in andere filterscripts aangeroepen.
+**1** - Callback wordt niet in andere filterscripts aangeroepen.
 
-0 - Staat toe dat deze callback in andere filterscripts wordt aangeroepen.
+**0** - Staat toe dat deze callback in andere filterscripts wordt aangeroepen.
 
 Wordt altijd als eerste aangeroepen in filterscripts; return 1 blokkeert verdere verwerking.
 
@@ -47,10 +47,10 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 :::note
 
 - Houd er rekening mee dat deze functie in sommige gevallen onnauwkeurig kan zijn.
-- weaponid is 37 (flamethrower) voor vuurbronnen (bijv. molotov, 18).
-- weaponid is 51 voor wapens die explosies veroorzaken (bijv. RPG, granaat).
-- **playerid** is de enige die de callback kan aanroepen.
-- amount is altijd de maximale schade die weaponid kan doen, zelfs als er minder health over is. Bijv. Desert Eagle met 46.2 schade: 3 schoten tonen 46.2, ook al is de laatste effectief lager.
+- `weaponid` is 37 (flamethrower) voor vuurbronnen (bijv. molotov, 18).
+- `weaponid` is 51 voor wapens die explosies veroorzaken (bijv. RPG, granaat).
+- `playerid` is de enige die de callback kan aanroepen.
+- `amount` is altijd de maximale schade die weaponid kan doen, zelfs als er minder health over is. Bijv. Desert Eagle met 46.2 schade: 3 schoten tonen 46.2, ook al is de laatste effectief lager.
 
 :::
 

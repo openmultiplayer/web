@@ -17,9 +17,9 @@ Set the ammo of a player's weapon.
 
 ## ส่งคืน
 
-1: The function was executed successfully. Success is also returned when the weapon slot specified is invalid (not 0-12).
+**1**: The function was executed successfully. Success is also returned when the weapon slot specified is invalid (not 0-12).
 
-0: The function failed to execute. The player isn't connected.
+**0**: The function failed to execute. The player isn't connected.
 
 ## ตัวอย่าง
 

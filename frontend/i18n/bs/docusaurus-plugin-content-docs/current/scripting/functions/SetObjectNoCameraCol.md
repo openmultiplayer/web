@@ -21,9 +21,9 @@ Onemogućite sudare između kamera igrača i navedenog objekta.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni objekat ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni objekat ne postoji.
 
 ## Primjeri
 

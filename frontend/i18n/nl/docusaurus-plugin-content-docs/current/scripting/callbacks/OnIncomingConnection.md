@@ -17,9 +17,9 @@ Deze callback wordt aangeroepen wanneer een IP-adres een verbinding met de serve
 
 ## Returns
 
-1 - Voorkomt dat andere filterscripts deze callback ontvangen.
+**1** - Voorkomt dat andere filterscripts deze callback ontvangen.
 
-0 - Geeft aan dat deze callback wordt doorgegeven aan het volgende filterscript.
+**0** - Geeft aan dat deze callback wordt doorgegeven aan het volgende filterscript.
 
 Wordt altijd als eerste aangeroepen in filterscripts.
 

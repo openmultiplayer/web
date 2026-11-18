@@ -24,9 +24,9 @@ Define a velocidade angular X, Y e Z de um veículo.
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao ser executada. O veículo não existe.
+**0**: A função falhou ao ser executada. O veículo não existe.
 
 ## Exemplos
 

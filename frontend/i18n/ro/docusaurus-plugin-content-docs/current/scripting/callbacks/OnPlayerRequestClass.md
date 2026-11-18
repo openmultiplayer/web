@@ -36,7 +36,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::note
 
-Acest callback este apelat și atunci când un jucător apasă F4.
+Acest callback este apelat și atunci când un jucător apasă **F4**.
 
 :::
 

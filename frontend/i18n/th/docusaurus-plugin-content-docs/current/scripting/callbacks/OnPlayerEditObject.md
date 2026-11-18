@@ -9,24 +9,24 @@ tags: ["player"]
 
 This callback is called when a player finishes editing an object (EditObject/EditPlayerObject).
 
-| Name                   | Description                                                     |
-| ---------------------- | --------------------------------------------------------------- |
-| playerid               | The ID of the player that edited an object                      |
-| playerobject           | 0 if it is a global object or 1 if it is a playerobject.        |
-| objectid               | The ID of the edited object                                     |
-| EDIT_RESPONSE:response | The [type of response](../resources/objecteditionresponsetypes) |
-| Float:fX               | The X offset for the object that was edited                     |
-| Float:fY               | The Y offset for the object that was edited                     |
-| Float:fZ               | The Z offset for the object that was edited                     |
-| Float:fRotX            | The X rotation for the object that was edited                   |
-| Float:fRotY            | The Y rotation for the object that was edited                   |
-| Float:fRotZ            | The Z rotation for the object that was edited                   |
+| Name                   | Description                                                      |
+| ---------------------- | ---------------------------------------------------------------- |
+| playerid               | The ID of the player that edited an object                       |
+| playerobject           | **0** if it is a global object or **1** if it is a playerobject. |
+| objectid               | The ID of the edited object                                      |
+| EDIT_RESPONSE:response | The [type of response](../resources/objecteditionresponsetypes)  |
+| Float:fX               | The X offset for the object that was edited                      |
+| Float:fY               | The Y offset for the object that was edited                      |
+| Float:fZ               | The Z offset for the object that was edited                      |
+| Float:fRotX            | The X rotation for the object that was edited                    |
+| Float:fRotY            | The Y rotation for the object that was edited                    |
+| Float:fRotZ            | The Z rotation for the object that was edited                    |
 
 ## ส่งคืน
 
-1 - Will prevent other scripts from receiving this callback.
+**1** - Will prevent other scripts from receiving this callback.
 
-0 - Indicates that this callback will be passed to the next script.
+**0** - Indicates that this callback will be passed to the next script.
 
 มันถูกเรียกในฟิลเตอร์สคริปต์ก่อนเสมอ
 

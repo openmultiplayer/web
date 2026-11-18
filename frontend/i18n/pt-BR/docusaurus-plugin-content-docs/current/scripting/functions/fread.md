@@ -19,7 +19,7 @@ Leia uma única linha de um arquivo.
 
 ## Retornos
 
-O comprimento da string (o texto lido) como um número inteiro.
+O comprimento da **string** (o texto lido) como um número inteiro.
 
 ## Exemplos
 
@@ -89,7 +89,7 @@ else
 
 :::warning
 
-Usar um identificador inválido irá travar seu servidor! Obtenha um identificador válido usando [fopen](fopen) ou [ftemp](ftemp).
+Usar um **identificador inválido** irá travar seu servidor! Obtenha um **identificador válido** usando [fopen](fopen) ou [ftemp](ftemp).
 
 :::
 

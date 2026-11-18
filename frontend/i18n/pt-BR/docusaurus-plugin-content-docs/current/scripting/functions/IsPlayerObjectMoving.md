@@ -17,7 +17,7 @@ Verifica se o objectid do jogador fornecido está se movendo.
 
 ## Retornos
 
-1 se o objeto do jogador estiver se movendo, 0 se não estiver.
+**1** se o objeto do jogador estiver se movendo, **0** se não estiver.
 
 ## Exemplos
 

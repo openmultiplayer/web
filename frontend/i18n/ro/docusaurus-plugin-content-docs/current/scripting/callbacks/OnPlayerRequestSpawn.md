@@ -15,7 +15,7 @@ Apelat atunci când un jucător încearcă să apară prin selecția clasei, fie
 
 ## Returnări
 
-Este întotdeauna numit primul în filterscript-uri, așa că returnarea 0 acolo blochează și alte scripturi să-l vadă.
+Este întotdeauna numit primul în filterscript-uri, așa că returnarea **0** acolo blochează și alte scripturi să-l vadă.
 
 ## Exemple
 

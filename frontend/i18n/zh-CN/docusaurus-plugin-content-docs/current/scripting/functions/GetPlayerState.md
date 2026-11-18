@@ -15,7 +15,7 @@ tags: ["玩家"]
 
 ## 返回值
 
-返回玩家当前的[状态值](../resources/playerstates)（整数形式）
+返回玩家当前的[**状态值**](../resources/playerstates)（整数形式）
 
 ## 示例代码
 

@@ -17,9 +17,9 @@ Chamado quando um jogador realiza um clique duplo em um jogador no placar.
 
 ## Retornos
 
-1 - Irá previnir que outro filterscript receba esta callback.
+**1** - Irá previnir que outro filterscript receba esta callback.
 
-0 - Indica que esta callback será passada para o próximo filterscript.
+**0** - Indica que esta callback será passada para o próximo filterscript.
 
 Sempre é chamada primeiro em filterscripts.
 

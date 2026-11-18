@@ -9,23 +9,23 @@ tags: ["player", "object", "attachment"]
 
 Attach an object to a specific bone on a player.
 
-| Name            | Description                                                                          |
-| --------------- | ------------------------------------------------------------------------------------ |
-| playerid        | The ID of the player to attach the object to.                                        |
-| index           | The index (slot 0-9) to assign the object to.                                        |
-| modelid         | The model to attach.                                                                 |
-| bone            | The [bone](../resources/boneid) to attach the object to.                             |
-| Float:offsetX   | (optional) X axis offset for the object position.                                    |
-| Float:offsetY   | (optional) Y axis offset for the object position.                                    |
-| Float:offsetZ   | (optional) Z axis offset for the object position.                                    |
-| Float:rotationX | (optional) X axis rotation of the object.                                            |
-| Float:rotationY | (optional) Y axis rotation of the object.                                            |
-| Float:rotationZ | (optional) Z axis rotation of the object.                                            |
-| Float:scaleX    | (optional) X axis scale of the object.                                               |
-| Float:scaleY    | (optional) Y axis scale of the object.                                               |
-| Float:scaleZ    | (optional) Z axis scale of the object.                                               |
-| materialColour1 | (optional) The first object color to set, as an integer or hex in ARGB color format. |
-| materialColour2 | (optional) The second object color to set, as an integer or hex in ARGB color format |
+| Name            | Description                                                                              |
+| --------------- | ---------------------------------------------------------------------------------------- |
+| playerid        | The ID of the player to attach the object to.                                            |
+| index           | The index (slot 0-9) to assign the object to.                                            |
+| modelid         | The model to attach.                                                                     |
+| bone            | The [bone](../resources/boneid) to attach the object to.                                 |
+| Float:offsetX   | (optional) X axis offset for the object position.                                        |
+| Float:offsetY   | (optional) Y axis offset for the object position.                                        |
+| Float:offsetZ   | (optional) Z axis offset for the object position.                                        |
+| Float:rotationX | (optional) X axis rotation of the object.                                                |
+| Float:rotationY | (optional) Y axis rotation of the object.                                                |
+| Float:rotationZ | (optional) Z axis rotation of the object.                                                |
+| Float:scaleX    | (optional) X axis scale of the object.                                                   |
+| Float:scaleY    | (optional) Y axis scale of the object.                                                   |
+| Float:scaleZ    | (optional) Z axis scale of the object.                                                   |
+| materialColour1 | (optional) The first object color to set, as an integer or hex in **ARGB** color format. |
+| materialColour2 | (optional) The second object color to set, as an integer or hex in **ARGB** color format |
 
 ## Returns
 

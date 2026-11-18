@@ -15,9 +15,9 @@ Check if the player is inside their current set race checkpoint (SetPlayerRaceCh
 
 ## ส่งคืน
 
-0: Player is not in a race checkpoint.
+**0**: Player is not in a race checkpoint.
 
-1: Player is in a race checkpoint.
+**1**: Player is in a race checkpoint.
 
 ## ตัวอย่าง
 

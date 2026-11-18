@@ -16,9 +16,9 @@ Este callback se llama cuando un jugador muere, ya sea suicidándose o siendo as
 
 ## Devoluciones
 
-0 - Prevendrá a otros filterscripts de recibir este callback.
+**0** - Prevendrá a otros filterscripts de recibir este callback.
 
-1 - Indica que este callback será pasado al siguiente filterscript.
+**1** - Indica que este callback será pasado al siguiente filterscript.
 
 Siempre se llama primero en filterscripts.
 
@@ -50,14 +50,14 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 - La razón retornará 37 (lanzallamas) por cualquier origen de fuego (ej. molotov, 18).
 - La razón retornará 51 de cualquier arma que cree una explosión (ej. Lanzamisiles, granada).
-- No es necesario comprobar si killerid es válido antes de usarlo en SendDeathMessage, ya que INVALID_PLAYER_ID es un parámetro válido en esa función.
-- playerid es el único que puede llamar el callback. (bueno saberlo para anti fake death)
+- No es necesario comprobar si `killerid` es válido antes de usarlo en SendDeathMessage, ya que INVALID_PLAYER_ID es un parámetro válido en esa función.
+- `playerid` es el único que puede llamar el callback. (bueno saberlo para anti fake death)
 
 :::
 
 :::warning
 
-TENÉS que comprobar que 'killerid' sea válido (no INVALID_PLAYER-ID) antes de usarlo en un array (o realmente en donde sea), ya que causará que el script OnPlayerDeath crashee (no el script entero). Esto es debido a que INVALID_PLAYER_ID es definido como 65535, y si un array sólo tiene 'MAX_PLAYERS' elementos, ejemplo 500, vas a estar intentando acceder a un índice por arriba de 499, que está fuera de alcance (out of bonds).
+TENÉS que comprobar que `killerid` sea válido (no `INVALID_PLAYER_ID`) antes de usarlo en un array (o realmente en donde sea), ya que causará que el script OnPlayerDeath crashee (no el script entero). Esto es debido a que INVALID_PLAYER_ID es definido como 65535, y si un array sólo tiene 'MAX_PLAYERS' elementos, ejemplo 500, vas a estar intentando acceder a un índice por arriba de 499, que está fuera de alcance (out of bonds).
 
 :::
 

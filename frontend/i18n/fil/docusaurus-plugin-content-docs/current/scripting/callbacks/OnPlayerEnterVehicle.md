@@ -39,7 +39,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-- Ang callback na ito ay tinatawag kapag ang isang manlalaro ay NAGSIMULA na pumasok sa isang sasakyan, hindi kapag napasok na nila ito.
+- Ang callback na ito ay tinatawag kapag ang isang manlalaro ay **NAGSIMULA** na pumasok sa isang sasakyan, hindi kapag napasok na nila ito.
 - Ang callback na ito ay tinatawag pa rin kung ang player ay tinanggihan sa pagpasok sa sasakyan (hal. ito ay naka-lock o puno).
 
 :::

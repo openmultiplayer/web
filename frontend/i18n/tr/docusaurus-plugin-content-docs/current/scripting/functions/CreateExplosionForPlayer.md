@@ -20,7 +20,7 @@ Tek bir oyuncunun gördüğü patlama oluşturma. Bu, patlamaları diğer oyuncu
 
 ## Çalışınca Vereceği Sonuçlar
 
-Fonksiyon, oyuncu ID'si, patlama türü veya patlamanın yarıçapı geçersiz olsa bile her zaman 1 olarak döndürülür.
+Fonksiyon, oyuncu ID'si, patlama türü veya patlamanın yarıçapı geçersiz olsa bile her zaman **1** olarak döndürülür.
 
 ## Örnekler
 

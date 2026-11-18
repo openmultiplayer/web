@@ -9,7 +9,7 @@ tags: ["玩家", "车辆"]
 
 获取玩家当前乘坐的车辆 ID
 
-**注意：** 并非车辆的模型 ID，获取模型 ID 请参考[GetVehicleModel](GetVehicleModel)
+**注意：** **并非**车辆的模型 ID，获取模型 ID 请参考[GetVehicleModel](GetVehicleModel)
 
 | 参数     | 说明                      |
 | -------- | ------------------------- |

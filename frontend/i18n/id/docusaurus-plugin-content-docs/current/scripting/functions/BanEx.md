@@ -67,7 +67,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Tindakan apa pun yang diambil langsung sebelum Ban() (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player, oleh karena itu timer harus digunakan untuk menunda pelarangan
+Tindakan apa pun yang diambil langsung sebelum BanEx (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player, oleh karena itu timer harus digunakan untuk menunda pelarangan
 
 :::
 

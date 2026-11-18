@@ -61,7 +61,7 @@ Pour ajouter un nouveau joueur à bannir, ajoutez simplement un objet au tableau
 
 `ADRESSE_IP` étant l'adresse IP du joueur à bannir.
 
-##### Fonction Ban()
+##### Fonction Ban
 
 La fonction [Ban](../scripting/functions/Ban) peut être utilisée pour bannir un joueur à partir d'un script. La fonction [BanEx](../scripting/functions/BanEx) ajoutera une raison facultative comme ceci :
 
@@ -186,7 +186,7 @@ Voici les fonctions que vous pouvez utiliser en tant qu'administrateur:
 | `/rcon weburl [server url]`       | Change l'URL affichée dans le client open.mp                                                                                                                                     |
 | `/rcon unloadfs`                  | Retire le filterscript (_exemple: /rcon unloadfs adminfs_).                                                                                                                      |
 | `/rcon reloadfs`                  | Recharge le filterscript (_exemple: /rcon reloadfs adminfs_).                                                                                                                    |
-| `/rcon rcon\_password [PASSWORD]` | Change le mot de passe RCON                                                                                                                                                      |
+| `/rcon rcon_password [PASSWORD]`  | Change le mot de passe RCON                                                                                                                                                      |
 | `/rcon password [password]`       | Change ou reset le mot de passe du serveur                                                                                                                                       |
 | `/rcon messageslimit [count]`     | Modifie le nombre de message par secondes que le client envoie au serveur (valeur par défaut: 500)                                                                               |
 | `/rcon ackslimit [count]`         | Modifie le nombre de "acks" (nombre de paquets envoyés avant d'attendre un accusé de réception) (valeur par défaut: 3000)                                                        |

@@ -18,7 +18,7 @@ Postavi rotaciju objekta na tri ose (X, Y i Z).
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, bilo da objekat ne postoji.
+Ova funkcija uvijek returna (vraća) **1**, bilo da objekat ne postoji.
 
 ## Primjeri
 

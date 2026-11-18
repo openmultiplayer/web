@@ -9,17 +9,17 @@ tags: []
 
 Ova funkcija šalje poruku navedenom igraču sa odabranom bojom u chatu. Cijela linija u chatboxu će biti u postavljenoj boji sve dok se ne koristi ugrađivanje boja u tekstu.
 
-| Ime             | Deskripcija                             |
-| --------------- | --------------------------------------- |
-| playerid        | ID igrača za prikazati poruku.          |
-| color           | Boja poruke (0xRRGGBBAA Hex format).    |
-| const message[] | Tekst za prikazati (max 144 karaktera). |
+| Ime             | Deskripcija                                 |
+| --------------- | ------------------------------------------- |
+| playerid        | ID igrača za prikazati poruku.              |
+| color           | Boja poruke (0xRRGGBBAA Hex format).        |
+| const message[] | Tekst za prikazati **(max 144 karaktera)**. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena. Uspješno je prijavljeno i kada je string veći od 144 karaktera, ali poruka neće biti poslana.
+**1**: Funkcija uspješno izvršena. Uspješno je prijavljeno i kada je string veći od 144 karaktera, ali poruka neće biti poslana.
 
-0: Funkcija neuspješno izvršena. Igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
 ## Primjeri
 

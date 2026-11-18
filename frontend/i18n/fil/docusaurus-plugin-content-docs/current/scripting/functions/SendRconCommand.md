@@ -15,13 +15,13 @@ Nagpapadala ng command na RCON (Remote Console).
 
 ## Returns
 
-Ang function na ito ay palaging rereturn ng 1.
+Ang function na ito ay palaging rereturn ng **1**.
 
 ## Notes
 
 :::note
 
-- Hindi sinusuportahan ang pag-login, dahil sa kakulangan ng parameter na 'playerid'.
+- Hindi sinusuportahan ang **pag-login**, dahil sa kakulangan ng parameter na `playerid`.
 - Tatanggalin ng 'password 0' ang password ng server kung nakatakda ang isa.
 - Ang function na ito ay magreresulta sa OnRconCommand na tinatawag.
 

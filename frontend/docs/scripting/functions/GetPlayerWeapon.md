@@ -15,7 +15,7 @@ Returns the ID of the weapon a player is currently holding.
 
 ## Returns
 
-The ID of the player's current weapon. Returns -1 if the player specified does not exist.
+The ID of the player's current weapon. Returns **-1** if the player specified does not exist.
 
 ## Examples
 

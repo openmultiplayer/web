@@ -16,7 +16,7 @@ Retorna o ID do objeto em que o jogador está navegando.
 
 ## Retornos
 
-O ID do objeto em movimento que o jogador está navegando. Se o jogador não estiver navegando em um objeto em movimento, ele retornará `INVALID_OBJECT_ID`
+O ID do objeto **em movimento** que o jogador está navegando. Se o jogador não estiver navegando em um objeto **em movimento**, ele retornará `INVALID_OBJECT_ID`
 
 ## Exemplos
 

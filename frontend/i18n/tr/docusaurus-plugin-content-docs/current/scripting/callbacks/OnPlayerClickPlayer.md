@@ -17,9 +17,9 @@ Bu geri çağırma oyuncu skor tablosunda bir oyuncuya iki kez tıkladığında 
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Bu geri çağırma diğer filterscriptlerde çağrılmasını engeller.
+**1** - Bu geri çağırma diğer filterscriptlerde çağrılmasını engeller.
 
-0 - Diğer filterscriptler içinde aranması için pas geçilir.
+**0** - Diğer filterscriptler içinde aranması için pas geçilir.
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 

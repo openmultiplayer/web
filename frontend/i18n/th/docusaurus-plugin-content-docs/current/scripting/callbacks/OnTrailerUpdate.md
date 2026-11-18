@@ -16,9 +16,9 @@ This callback is called when a player sent a trailer update.
 
 ## ส่งคืน
 
-0 - Cancels any trailer updates from being sent to other players. Update is still sent to the updating player.
+**0** - Cancels any trailer updates from being sent to other players. Update is still sent to the updating player.
 
-1 - Processes the trailer update as normal and synchronizes it between all players.
+**1** - Processes the trailer update as normal and synchronizes it between all players.
 
 มันถูกเรียกในฟิลเตอร์สคริปต์ก่อนเสมอ
 

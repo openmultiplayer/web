@@ -20,9 +20,9 @@ Este callback se llama cuando un jugador selecciona un objeto después de que Se
 
 ## Devoluciones
 
-1 - Prevendrá a otros filterscripts de recibir este callback.
+**1** - Prevendrá a otros filterscripts de recibir este callback.
 
-0 - Indica que este callback será pasado al siguiente filterscript.
+**0** - Indica que este callback será pasado al siguiente filterscript.
 
 Siempre se llama primero en filterscripts.
 

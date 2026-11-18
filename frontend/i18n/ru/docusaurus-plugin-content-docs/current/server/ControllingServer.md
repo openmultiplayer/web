@@ -74,7 +74,7 @@ bans.json это файл, располагающейся в папку с се�
 
 Где `IP_ПОЛЬЗОВАТЕЛЯ` это IP адрес, который вы хотите заблокировать.
 
-##### Функция Ban()
+##### Функция Ban
 
 Функция [Ban](../scripting/functions/Ban) используется для аналогичного метода блокировки, но из самого скрипта. Функция [BanEx](../scripting/functions/BanEx) добавляет к параметрам причину блокировки:
 
@@ -194,7 +194,7 @@ unbanip 13.37.13.37
 | `/rcon weburl [server url]`       | Изменяет веб-адрес сервера в лаунчере                                                                                             |
 | `/rcon unloadfs`                  | Выгружает указанный filterscript (_пример: /rcon unloadfs adminfs_).                                                              |
 | `/rcon reloadfs`                  | Перезагружает указанный filterscript (_пример: /rcon reloadfs adminfs_).                                                          |
-| `/rcon rcon\_password [PASSWORD]` | Меняет пароль RCON администраторов                                                                                                |
+| `/rcon rcon_password [PASSWORD]`  | Меняет пароль RCON администраторов                                                                                                |
 | `/rcon password [password]`       | Устанавливает/снимает пароль сервера                                                                                              |
 | `/rcon messageslimit [count]`     | Устанавливает лимит сообщений, отправляемых клиентом в секунду. (по умолчанию 500)                                                |
 | `/rcon ackslimit [count]`         | Устанавливает лимит подтверждений (acks), отправляемых клиентом в секунду (по умолчанию 3000)                                     |

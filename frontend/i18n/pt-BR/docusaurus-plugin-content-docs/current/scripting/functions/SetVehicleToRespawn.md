@@ -15,9 +15,9 @@ Coloca um veículo de volta para a posição onde foi criado.
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao ser executada. O veículo não existe.
+**0**: A função falhou ao ser executada. O veículo não existe.
 
 ## Exemplos
 

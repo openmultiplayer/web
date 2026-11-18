@@ -17,9 +17,9 @@ Inilalagay ang isang manlalaro sa isang sasakyan.
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigong maisagawa ang function. Ang manlalaro o sasakyan ay wala.
+**0**: Nabigong maisagawa ang function. Ang manlalaro o sasakyan ay wala.
 
 ## Halimbawa ng Paggamit
 

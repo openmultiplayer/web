@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::warning
 
-Quando filterscripts ou plugins são especificados como varname, esta função retorna apenas o nome do primeiro filterscript ou plugin especificado. Isso é um bug.
+Quando _filterscripts_ ou _plugins_ são especificados como varname, esta função retorna apenas o nome do primeiro filterscript ou plugin especificado. Isso é um bug.
 
 :::
 
@@ -52,7 +52,7 @@ Digite 'varlist' no console do servidor para exibir uma lista de variáveis de s
 
 :::warning
 
-Usar esta função em qualquer coisa que não seja uma string (int, bool ou float) ou uma variável de servidor inexistente irá travar seu servidor! Isso é um bug.
+Usar esta função em qualquer coisa que não seja uma **string** (int, bool ou float) ou uma variável de servidor **inexistente** irá **travar** seu servidor! Isso é um bug. (Corrigido em open.mp)
 
 :::
 

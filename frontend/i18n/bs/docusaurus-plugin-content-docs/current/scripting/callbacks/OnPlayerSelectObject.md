@@ -21,9 +21,9 @@ Ovaj callback je pozvan kada igrač selektuje objekat nakon što je SelectObject
 
 ## Returns
 
-1 - Spriječiti će da druge skripte primaju ovaj callback.
+**1** - Spriječiti će da druge skripte primaju ovaj callback.
 
-0 - Govori da će ovaj callback biti proslijeđen do naredne skripte.
+**0** - Govori da će ovaj callback biti proslijeđen do naredne skripte.
 
 Uvijek je pozvan prvi u filterskripti.
 

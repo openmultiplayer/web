@@ -17,9 +17,9 @@ Change a vehicle's primary and secondary colors.
 
 ## Returns
 
-1: The function executed successfully. The vehicle's color was successfully changed.
+**1**: The function executed successfully. The vehicle's color was successfully changed.
 
-0: The function failed to execute. The vehicle does not exist.
+**0**: The function failed to execute. The vehicle does not exist.
 
 ## Examples
 

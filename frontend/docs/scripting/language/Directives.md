@@ -64,7 +64,7 @@ This is why all defines are lost in decompilation as they don't exist when the c
 ```c
 #define PL new i = 0; i < MAX_PLAYERS; i++) if (IsPlayerConnected(i)
 
-for(PL) printf("%d connected", i);
+for (PL) printf("%d connected", i);
 ```
 
 Will compile to the player loop we all know and love (despise). Notice how the brackets are used here, some from the for and some from the define macro(the replacement).

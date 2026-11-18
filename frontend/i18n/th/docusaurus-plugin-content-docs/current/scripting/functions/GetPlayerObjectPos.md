@@ -19,9 +19,9 @@ Get the position of a player object (CreatePlayerObject).
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player and/or the object don't exist.
+**0**: The function failed to execute. The player and/or the object don't exist.
 
 The object's position is stored in the specified variables.
 

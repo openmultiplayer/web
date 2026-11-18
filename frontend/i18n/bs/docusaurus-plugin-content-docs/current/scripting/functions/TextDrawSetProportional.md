@@ -9,10 +9,10 @@ tags: ["textdraw"]
 
 Prilagođava razmak između teksta proporcionalnom omjeru. Korisno kada se koristi TextDrawLetterSize kako bi se osiguralo da tekst ima ravnomjeran razmak između znakova.
 
-| Ime  | Deskripcija                                        |
-| ---- | -------------------------------------------------- |
-| text | ID textdrawa za postaviti proporcionalnost.        |
-| set  | 1 za omogućiti proporcionalnost, 0 za onemogućiti. |
+| Ime  | Deskripcija                                                |
+| ---- | ---------------------------------------------------------- |
+| text | ID textdrawa za postaviti proporcionalnost.                |
+| set  | **1** za omogućiti proporcionalnost, **0** za onemogućiti. |
 
 ## Returns
 

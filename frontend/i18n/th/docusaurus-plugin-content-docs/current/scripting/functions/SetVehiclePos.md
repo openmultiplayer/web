@@ -18,9 +18,9 @@ Set a vehicle's position
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The vehicle specified does not exist.
+**0**: The function failed to execute. The vehicle specified does not exist.
 
 ## ตัวอย่าง
 

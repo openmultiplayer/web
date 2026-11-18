@@ -16,7 +16,7 @@ Executa uma consulta SQL numa base de dados SQLite já aberta.
 
 ## retorno
 
-Retorna o índice do resultado (começa em 1) se a consulta for bem-sucedida, ou 0 em caso de falha.
+Retorna o índice do resultado (**começa em 1**) se a consulta for bem-sucedida, ou 0 em caso de falha.
 
 ## exemplo
 

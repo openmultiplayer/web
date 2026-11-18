@@ -25,7 +25,7 @@ Dodaje 'statično' vozilo (modeli su unaprijed učitani za igrač) u gamemode-u.
 
 ID vozila koje je kreirano (1 - MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) je vozilo koje nije kreirano (limit vozila je dostignut ili je proslijeđen nevažeći model ID vozila).
+**INVALID_VEHICLE_ID (65535)** je vozilo koje nije kreirano (limit vozila je dostignut ili je proslijeđen nevažeći model ID vozila).
 
 ## Primjeri
 

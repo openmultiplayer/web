@@ -106,7 +106,7 @@ public OnGameModeExit()
 
 :::warning
 
-Upotreba nevaljanog upravitelja databaze koja nije nula srušit će vaš server! Nabavite važeći upravitelj databazom pomoću [db_open](db_open).
+Upotreba **nevaljanog upravitelja** databaze koja nije nula srušit će vaš server! Nabavite važeći upravitelj databazom pomoću [db_open](db_open).
 
 :::
 

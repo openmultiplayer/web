@@ -15,13 +15,13 @@ Sends an RCON (Remote Console) command.
 
 ## ส่งคืน
 
-This function always returns 1.
+This function always returns **1**.
 
 ## บันทึก
 
 :::note
 
-- Does not support login, due to the lack of a 'playerid' parameter.
+- Does not support **login**, due to the lack of a `playerid` parameter.
 - 'password 0' will remove the server's password if one is set.
 - This function will result in OnRconCommand being called.
 

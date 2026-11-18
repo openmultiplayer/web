@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Change the colour of a player's nametag and radar blip for another player.
+Change the colour of a player's **nametag** and **radar blip** for another player.
 
 | Name         | Description                                                      |
 | ------------ | ---------------------------------------------------------------- |

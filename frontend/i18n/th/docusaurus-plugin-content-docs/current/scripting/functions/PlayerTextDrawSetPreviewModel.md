@@ -17,9 +17,9 @@ Sets a player textdraw 2D preview sprite of a specified model ID.
 
 ## ส่งคืน
 
-1: The function was executed successfully. If an invalid model is passed 'success' is reported, but the model will appear as a yellow/black question mark.
+**1**: The function was executed successfully. If an invalid model is passed 'success' is reported, but the model will appear as a yellow/black question mark.
 
-0: The function failed to execute. Player and/or textdraw do not exist.
+**0**: The function failed to execute. Player and/or textdraw do not exist.
 
 ## ตัวอย่าง
 

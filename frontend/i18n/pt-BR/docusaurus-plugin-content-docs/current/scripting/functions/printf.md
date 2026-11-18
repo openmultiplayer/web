@@ -53,7 +53,7 @@ printf("I'm %c home", character); // Estou em casa
 
 :::warning
 
-A string de formato ou sua saída não deve exceder 1.024 caracteres. Qualquer coisa além desse comprimento pode causar a falha do servidor.
+A string de formato ou sua saída não deve exceder 1.024 caracteres. Qualquer coisa além desse comprimento pode causar a falha do servidor. (Corrigido em open.mp)
 
 :::
 

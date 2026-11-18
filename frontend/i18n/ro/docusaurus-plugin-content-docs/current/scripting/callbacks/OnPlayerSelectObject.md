@@ -21,9 +21,9 @@ Acest callback este apelat atunci când un jucător selectează un obiect după 
 
 ## Returnări
 
-1 - Will prevent other scripts from receiving this callback.
+**1** - Will prevent other scripts from receiving this callback.
 
-0 - Indicates that this callback will be passed to the next script.
+**0** - Indicates that this callback will be passed to the next script.
 
 It is always called first in filterscripts.
 

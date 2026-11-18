@@ -15,7 +15,7 @@ Provjerava je li zadati string spakovan.
 
 ## Returns
 
-1 ako je string upakovan, 0 if ako je raspakiran.
+**1** ako je string upakovan, **0** if ako je raspakiran.
 
 ## Primjeri
 

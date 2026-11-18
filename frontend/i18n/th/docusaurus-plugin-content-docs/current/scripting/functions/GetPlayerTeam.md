@@ -15,11 +15,11 @@ Get the ID of the team the player is on.
 
 ## ส่งคืน
 
-0-254: The player's team. (0 is a valid team)
+**0-254**: The player's team. (0 is a valid team)
 
-255: Defined as NO_TEAM. The player is not on any team.
+**255**: Defined as NO_TEAM. The player is not on any team.
 
--1: The function failed to execute. Player is not connected.
+**-1**: The function failed to execute. Player is not connected.
 
 ## ตัวอย่าง
 

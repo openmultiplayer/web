@@ -21,9 +21,9 @@ Ang callback na ito ay tinatawag kapag ang isang sasakyan ay nag respawn.
 
 ## Returns
 
-0 - Pipigilan ang iba pang mga filterscript mula sa pagtanggap ng callback na ito.
+**0** - Pipigilan ang iba pang mga filterscript mula sa pagtanggap ng callback na ito.
 
-1 - Isinasaad na ang callback na ito ay ipapasa sa susunod na filterscript.
+**1** - Isinasaad na ang callback na ito ay ipapasa sa susunod na filterscript.
 
 Lagi itong na tatawag una sa mga filterscript.
 

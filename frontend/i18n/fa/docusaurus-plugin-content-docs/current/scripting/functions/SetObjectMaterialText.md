@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-شما باید از فرمت رنگ ARGB استفاده کنید، نه RGBA که در پیام‌های کلاینت و غیره استفاده می‌شود.
+شما باید از فرمت رنگ **ARGB** استفاده کنید، نه RGBA که در پیام‌های کلاینت و غیره استفاده می‌شود.
 متن پس از ۱۶ فراخوانی در مقابل همان آبجکت به‌روزرسانی نمی‌شود.
 
 :::
@@ -67,9 +67,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ویرایشگرهای نقشه پیشرفته
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) توسط Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) توسط RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus
 
 ## منابع مرتبط
 

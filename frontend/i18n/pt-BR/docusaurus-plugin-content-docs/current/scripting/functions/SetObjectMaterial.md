@@ -10,14 +10,14 @@ tags: ["object"]
 
 Substitua a textura de um objeto pela textura de outro modelo do jogo.
 
-| Nome                   | Descrição                                                                                                                                  |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| objectid               | O ID do objeto cuja textura será alterada                                                                                                  |
-| materialIndex          | O índice de material no objeto a ser alterado (0 a 15)                                                                                     |
-| modelid                | O modelid no qual a textura de substituição está localizada. Use 0 para alfa. Use -1 para alterar a cor do material sem alterar a textura. |
-| const textureLibrary[] | O nome do arquivo txd que contém a textura de substituição (use "none" se não for necessário)                                              |
-| const textureName[]    | O nome da textura a ser usada como substituição (use "none" se não for necessário)                                                         |
-| materialColour         | A cor do objeto a ser definida, como um número inteiro ou hexadecimal no formato de cor ARGB. Usar 0 mantém a cor do material existente.   |
+| Nome                   | Descrição                                                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| objectid               | O ID do objeto cuja textura será alterada                                                                                                        |
+| materialIndex          | O índice de material no objeto a ser alterado (0 a 15)                                                                                           |
+| modelid                | O modelid no qual a textura de substituição está localizada. Use 0 para alfa. Use -1 para alterar a cor do material sem alterar a textura.       |
+| const textureLibrary[] | O nome do arquivo txd que contém a textura de substituição (use "none" se não for necessário)                                                    |
+| const textureName[]    | O nome da textura a ser usada como substituição (use "none" se não for necessário)                                                               |
+| materialColour         | A cor do objeto a ser definida, como um número inteiro ou hexadecimal no formato de cor **ARGB**. Usar **0** mantém a cor do material existente. |
 
 ## Retornos
 
@@ -55,7 +55,7 @@ A iluminação do vértice do objeto desaparecerá se a cor do material for alte
 
 :::warning
 
-Você MUST usa o formato de cores ARGB, não RGBA como usado em mensagens de clientes, etc.
+Você MUST usa o formato de cores **ARGB**, não RGBA como usado em mensagens de clientes, etc.
 
 :::
 
@@ -66,6 +66,6 @@ Você MUST usa o formato de cores ARGB, não RGBA como usado em mensagens de cli
 
 ## Editores de mapas avançados
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) por Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) por Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) por RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) por Pottus

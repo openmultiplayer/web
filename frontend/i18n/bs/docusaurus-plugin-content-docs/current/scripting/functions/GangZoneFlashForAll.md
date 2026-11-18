@@ -9,10 +9,10 @@ tags: ["gangzone"]
 
 GangZoneFlashForAll treperi gangzonu za sve igrače.
 
-| Ime        | Deskripcija                                                                                              |
-| ---------- | -------------------------------------------------------------------------------------------------------- |
-| zone       | Zona za treperiti.                                                                                       |
-| flashcolor | Boja za bljeskanje gangzone, kao cijeli broj ili hex u RGBA formatu boja. Podržana alfa transparentnost. |
+| Ime        | Deskripcija                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------ |
+| zone       | Zona za treperiti.                                                                                           |
+| flashcolor | Boja za bljeskanje gangzone, kao cijeli broj ili hex u **RGBA** formatu boja. Podržana alfa transparentnost. |
 
 ## Returns
 

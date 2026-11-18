@@ -22,7 +22,7 @@ Przyczepia obiekt do gracza.
 
 ## Zwracane wartości
 
-Ta funkcja zawsze zwraca 0.
+Ta funkcja zawsze zwraca **0**.
 
 ## Przykłady
 

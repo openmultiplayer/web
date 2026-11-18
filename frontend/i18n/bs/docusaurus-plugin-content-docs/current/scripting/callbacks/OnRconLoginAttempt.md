@@ -13,7 +13,7 @@ Ovaj callback je potvan kada neko pokuša da se uloguje/da pristupi RCONu in-gam
 | ---------- | ---------------------------------------------------- |
 | ip[]       | IP igrača koji se pokušao ulogovati/pristupi u RCON. |
 | password[] | Lozinka kojim je pokušao pristupiti.                 |
-| success    | 0 ako je lozinka netačna 1 je tačna.                 |
+| success    | **0** ako je lozinka netačna **1** je tačna.         |
 
 ## Returns
 
@@ -46,7 +46,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-- Ovaj callback je pozvan samo kada se /rcon login iskoristi unutar igra.
+- Ovaj callback je pozvan samo kada se `/rcon login` iskoristi unutar igra.
 - Ovaj callback je pozvan samo kada igral nije još ulogovan (nije još pristupio) u RCON. Kada se igrač prijavi/uloguje u RCON, OnRconCommand se poziva umjesto toga.
 
 :::

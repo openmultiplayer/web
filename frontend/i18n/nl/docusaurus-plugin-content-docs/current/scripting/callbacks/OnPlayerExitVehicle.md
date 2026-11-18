@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Beschrijving
 
-Deze callback wordt aangeroepen wanneer een speler begint een voertuig te verlaten.
+Deze callback wordt aangeroepen wanneer een speler **begint** een voertuig te verlaten.
 
 | Naam      | Beschrijving                                   |
 | --------- | ---------------------------------------------- |

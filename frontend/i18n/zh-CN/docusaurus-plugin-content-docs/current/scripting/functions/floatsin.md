@@ -41,7 +41,7 @@ GetPosInFrontOfPlayer(playerid, Float:distance, &Float:x, &Float:y, &Float:z)
 
 :::warning
 
-在大多数情况下，GTA/SA-MP 使用角度制表示方向，例如[GetPlayerFacingAngle](GetPlayerFacingAngle)。因此建议优先使用'degrees'角度模式而非弧度制。同时注意 GTA 的角度系统采用逆时针方向：270° 为东方，90° 为西方，南方仍为 180°，北方仍为 0°/360°。
+在大多数情况下，GTA/SA-MP 使用**角度制**表示方向，例如[GetPlayerFacingAngle](GetPlayerFacingAngle)。因此建议优先使用'**degrees**'角度模式而*非*弧度制。同时注意 GTA 的角度系统采用逆时针方向：270° 为东方，90° 为西方，南方仍为 180°，北方仍为 0°/360°。
 
 :::
 

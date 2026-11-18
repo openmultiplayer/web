@@ -9,11 +9,11 @@ tags: ["player", "gangzone"]
 
 Pravi gangzone bljesak za igrača.
 
-| Ime        | Deskripcija                                                                                              |
-| ---------- | -------------------------------------------------------------------------------------------------------- |
-| playerid   | ID igrača za kojeg će gangzona da treperi.                                                               |
-| zone       | Zona za treperiti.                                                                                       |
-| flashcolor | Boja za bljeskanje gangzone, kao cijeli broj ili hex u RGBA formatu boja. Podržana alfa transparentnost. |
+| Ime        | Deskripcija                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------ |
+| playerid   | ID igrača za kojeg će gangzona da treperi.                                                                   |
+| zone       | Zona za treperiti.                                                                                           |
+| flashcolor | Boja za bljeskanje gangzone, kao cijeli broj ili hex u **RGBA** formatu boja. Podržana alfa transparentnost. |
 
 ## Returns
 

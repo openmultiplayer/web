@@ -9,23 +9,23 @@ tags: []
 
 Możesz używać tej funkcji, aby przyczepiać obiekty do innych obiektów. Obiekty będą podążać za głównym obiektem.
 
-| Nazwa         | Opis                                                                                   |
-| ------------- | -------------------------------------------------------------------------------------- |
-| objectid      | Obiekt, który ma zostać przyczepiony do innego obiektu.                                |
-| attachtoid    | Obiekt, do którego inny obiekt ma zostać przyczepiony.                                 |
-| Float:OffsetX | Dystans pomiędzy głównym obiektem, a przyczepianym obiektem (koordynat X).             |
-| Float:OffsetY | Dystans pomiędzy głównym obiektem, a przyczepianym obiektem (koordynat Y).             |
-| Float:OffsetZ | Dystans pomiędzy głównym obiektem, a przyczepianym obiektem (koordynat Z).             |
-| Float:RotX    | Rotacja X pomiędzy przyczepianym obiektem, a głównym obiektem.                         |
-| Float:RotY    | Rotacja Y pomiędzy przyczepianym obiektem, a głównym obiektem.                         |
-| Float:RotZ    | Rotacja Z pomiędzy przyczepianym obiektem, a głównym obiektem.                         |
-| SyncRotation  | Jeżeli ustawione na 0, rotacja objectid nie będzie się zmieniała razem z `attachtoid`. |
+| Nazwa         | Opis                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| objectid      | Obiekt, który ma zostać przyczepiony do innego obiektu.                                    |
+| attachtoid    | Obiekt, do którego inny obiekt ma zostać przyczepiony.                                     |
+| Float:OffsetX | Dystans pomiędzy głównym obiektem, a przyczepianym obiektem (koordynat X).                 |
+| Float:OffsetY | Dystans pomiędzy głównym obiektem, a przyczepianym obiektem (koordynat Y).                 |
+| Float:OffsetZ | Dystans pomiędzy głównym obiektem, a przyczepianym obiektem (koordynat Z).                 |
+| Float:RotX    | Rotacja X pomiędzy przyczepianym obiektem, a głównym obiektem.                             |
+| Float:RotY    | Rotacja Y pomiędzy przyczepianym obiektem, a głównym obiektem.                             |
+| Float:RotZ    | Rotacja Z pomiędzy przyczepianym obiektem, a głównym obiektem.                             |
+| SyncRotation  | Jeżeli ustawione na **0**, rotacja objectid nie będzie się zmieniała razem z `attachtoid`. |
 
 ## Zwracane wartości
 
-1: Funkcja wykonała się prawidłowo.
+**1**: Funkcja wykonała się prawidłowo.
 
-0: Funkcja nie wykonała się prawidłowo. To oznacza, że pierwszy obiekt (objectid) nie istnieje. Nie ma żadnej wbudowanej weryfikacji tego, czy drugi obiekt (attachtoid) istnieje.
+**0**: Funkcja nie wykonała się prawidłowo. To oznacza, że pierwszy obiekt (objectid) nie istnieje. Nie ma żadnej wbudowanej weryfikacji tego, czy drugi obiekt (attachtoid) istnieje.
 
 ## Przykłady
 

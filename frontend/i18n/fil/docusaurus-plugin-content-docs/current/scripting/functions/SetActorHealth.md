@@ -18,9 +18,9 @@ I-set ang health ng isang actor.
 
 ## Returns
 
-1 - tagumpay
+**1** - tagumpay
 
-0 - pagkabigo (ibig sabihin, hindi nilikha ang aktor).
+**0** - pagkabigo (ibig sabihin, hindi nilikha ang aktor).
 
 ## Examples
 

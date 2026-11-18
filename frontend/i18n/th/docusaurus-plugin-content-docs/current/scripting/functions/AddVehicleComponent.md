@@ -16,9 +16,9 @@ Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. V
 
 ## ส่งคืน
 
-0 - The component was not added because the vehicle does not exist.
+**0** - The component was not added because the vehicle does not exist.
 
-1 - The component was successfully added to the vehicle.
+**1** - The component was successfully added to the vehicle.
 
 ## ตัวอย่าง
 

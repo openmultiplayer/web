@@ -19,7 +19,7 @@ Calcule a distância entre um jogador e uma coordenada do mapa.
 
 ## Retornos
 
-A distância entre o jogador e o ponto como um flutuador.
+A distância entre o jogador e o ponto como um **flutuador**.
 
 ## Exemplos
 

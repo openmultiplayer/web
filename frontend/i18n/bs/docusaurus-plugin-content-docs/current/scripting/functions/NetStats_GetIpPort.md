@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Nabavite IP adresu i port igrača.
+Nabavite IP adresu **i port** igrača.
 
 | Ime         | Deskripcija                                                  |
 | ----------- | ------------------------------------------------------------ |

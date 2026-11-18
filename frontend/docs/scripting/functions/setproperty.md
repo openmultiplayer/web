@@ -9,12 +9,12 @@ tags: ["core", "property"]
 
 Add a new property or change an existing property.
 
-| Name     | Description                                                                                                                                           |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id       | The virtual machine to use, you should keep this zero. _(optional=0)_                                                                                 |
-| name[]   | Used in combination with value when storing integers; don't use this if you want to store a string.                                                   |
-| value    | The integer value to store or the property's unique ID if storing a string. Use the hash-function to calculate it from a string. _(optional=cellmin)_ |
-| string[] | The value of the property, as a string. Don't use this if you want to store an integer.                                                               |
+| Name     | Description                                                                                                                                               |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id       | The virtual machine to use, you should keep this zero. _(optional=0)_                                                                                     |
+| name[]   | Used in combination with _value_ when storing integers; don't use this if you want to store a string.                                                     |
+| value    | The integer value to store **or** the property's unique ID if storing a string. Use the hash-function to calculate it from a string. _(optional=cellmin)_ |
+| string[] | The value of the property, as a string. Don't use this if you want to store an integer.                                                                   |
 
 ## Returns
 

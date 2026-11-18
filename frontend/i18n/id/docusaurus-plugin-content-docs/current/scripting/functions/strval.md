@@ -15,7 +15,7 @@ Mengkonversi sebuah string menjadi integer.
 
 ## Returns
 
-Nilai integer dari sebuah string. 0 jika string bukan numerik.
+Nilai integer dari sebuah string. **0** jika string bukan numerik.
 
 ## Contoh
 

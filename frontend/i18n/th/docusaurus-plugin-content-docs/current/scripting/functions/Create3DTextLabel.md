@@ -12,7 +12,7 @@ Creates a 3D Text Label at a specific location in the world
 | Name         | Description                                                           |
 | ------------ | --------------------------------------------------------------------- |
 | text[]       | The initial text string.                                              |
-| color        | The text Color, as an integer or hex in RGBA color format             |
+| color        | The text Color, as an integer or hex in **RGBA** color format         |
 | x            | X-Coordinate                                                          |
 | y            | Y-Coordinate                                                          |
 | z            | Z-Coordinate                                                          |

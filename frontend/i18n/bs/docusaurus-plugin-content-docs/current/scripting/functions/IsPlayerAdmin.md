@@ -15,7 +15,7 @@ Provjerite je li igrač prijavljen kao RCON administrator.
 
 ## Returns
 
-1: Igrač je RCON administrator. 0: Igrač NIJE RCON administrator.
+**1**: Igrač je RCON administrator. **0**: Igrač NIJE RCON administrator.
 
 ## Primjeri
 

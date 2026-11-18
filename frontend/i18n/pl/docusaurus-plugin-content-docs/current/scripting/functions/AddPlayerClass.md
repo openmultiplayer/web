@@ -25,9 +25,9 @@ Dodaje klasę do wyboru klas. Klasy umożliwiają graczom spawnowanie się z wyb
 
 ## Zwracane wartości
 
-ID klasy, która właśnie została dodana.
+**ID klasy**, która właśnie została dodana.
 
-319, jeżeli limit klas (320) został osiągnięty. Najwyższe możliwe ID klasy to 319.
+**319**, jeżeli limit klas (320) został osiągnięty. Najwyższe możliwe ID klasy to 319.
 
 ## Przykłady
 

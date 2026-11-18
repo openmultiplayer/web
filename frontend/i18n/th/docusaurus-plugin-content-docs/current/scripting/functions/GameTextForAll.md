@@ -17,7 +17,7 @@ Shows 'game text' (on-screen text) for a certain length of time for all players.
 
 ## ส่งคืน
 
-This function always returns 1.
+This function always returns **1**.
 
 ## ตัวอย่าง
 

@@ -20,9 +20,9 @@ This function adds a 'static' pickup to the game. These pickups support weapons,
 
 ## ส่งคืน
 
-1 if the pickup is successfully created.
+**1** if the pickup is successfully created.
 
-0 if failed to create.
+**0** if failed to create.
 
 ## ตัวอย่าง
 

@@ -15,7 +15,7 @@ Fonksiyon, Bir oyuncu SHIFT'e basarak veya 'Spawn' düğmesine tıklayarak sın�
 
 ## Çalışınca Vereceği Sonuçlar
 
-Filterscript komut dosyalarında her zaman ilk olarak çağrılır, bu nedenle 0 döndürmek diğer komut dosyalarının da görmesini engeller.
+Filterscript komut dosyalarında her zaman ilk olarak çağrılır, bu nedenle **0** döndürmek diğer komut dosyalarının da görmesini engeller.
 
 ## Örnek
 

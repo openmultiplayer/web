@@ -17,7 +17,7 @@ tags: ["玩家"]
 | Float:y       | 图标 Y 坐标                                                                                    |
 | Float:z       | 图标 Z 坐标                                                                                    |
 | markerType    | 要设置的[图标类型](../resources/mapicons)                                                      |
-| colour        | 图标颜色（RGBA 格式整数或十六进制），仅适用于方形图标（ID:0）                                  |
+| colour        | 图标颜色（**RGBA** 格式整数或十六进制），仅适用于方形图标（ID:0）                              |
 | MAPICON:style | 图标[显示样式](../resources/mapiconstyles)                                                     |
 
 ## 返回值

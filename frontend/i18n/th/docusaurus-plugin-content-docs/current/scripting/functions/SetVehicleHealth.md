@@ -16,9 +16,9 @@ Set a vehicle's health. When a vehicle's health decreases the engine will produc
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the vehicle does not exist.
+**0**: The function failed to execute. This means the vehicle does not exist.
 
 ## ตัวอย่าง
 
@@ -36,7 +36,7 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 :::note
 
-Full vehicle health is 1000. Higher values are possible. For more information on health values, see this page.
+Full vehicle health is **1000**. Higher values are possible. For more information on health values, see this page.
 
 :::
 

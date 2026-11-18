@@ -18,7 +18,7 @@ Upoređuje dva stringa kako pi vidjelo da li su isti
 
 ## Returns
 
-0 ako se stringovi podudaraju na zadanoj dužini; 1 ili -1 ako se neki znak ne podudara: string1 [i] - string2 [i] ('i' predstavlja indeks znakova počevši od 0); razlika u broju znakova ako jedan niz odgovara samo dijelu drugog stringa.
+**0** ako se stringovi podudaraju na zadanoj dužini; **1** ili **-1** ako se neki znak ne podudara: string1 [i] - string2 [i] ('i' predstavlja indeks znakova počevši od 0); **razlika u broju znakova** ako jedan niz odgovara samo dijelu drugog stringa.
 
 ## Primjeri
 

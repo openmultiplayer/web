@@ -9,24 +9,24 @@ tags: ["player", "object"]
 
 Callback này được gọi khi một người chơi kết thúc việc chỉnh sửa một đối tượng ([BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)).
 
-| Tên                    | Mô Tả                                                                     |
-| ---------------------- | ------------------------------------------------------------------------- |
-| playerid               | ID của người chơi đã chỉnh sửa một đối tượng                              |
-| playerobject           | 0 nếu đó là đối tượng toàn cục hoặc 1 nếu đó là đối tượng của người chơi. |
-| objectid               | ID của đối tượng đã được chỉnh sửa                                        |
-| EDIT_RESPONSE:response | [Loại phản hồi](../resources/objecteditionresponsetypes)                  |
-| Float:fX               | Độ lệch X của đối tượng đã được chỉnh sửa                                 |
-| Float:fY               | Độ lệch Y của đối tượng đã được chỉnh sửa                                 |
-| Float:fZ               | Độ lệch Z của đối tượng đã được chỉnh sửa                                 |
-| Float:fRotX            | Góc quay X của đối tượng đã được chỉnh sửa                                |
-| Float:fRotY            | Góc quay Y của đối tượng đã được chỉnh sửa                                |
-| Float:fRotZ            | Góc quay Z của đối tượng đã được chỉnh sửa                                |
+| Tên                    | Mô Tả                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------- |
+| playerid               | ID của người chơi đã chỉnh sửa một đối tượng                                      |
+| playerobject           | **0** nếu đó là đối tượng toàn cục hoặc **1** nếu đó là đối tượng của người chơi. |
+| objectid               | ID của đối tượng đã được chỉnh sửa                                                |
+| EDIT_RESPONSE:response | [Loại phản hồi](../resources/objecteditionresponsetypes)                          |
+| Float:fX               | Độ lệch X của đối tượng đã được chỉnh sửa                                         |
+| Float:fY               | Độ lệch Y của đối tượng đã được chỉnh sửa                                         |
+| Float:fZ               | Độ lệch Z của đối tượng đã được chỉnh sửa                                         |
+| Float:fRotX            | Góc quay X của đối tượng đã được chỉnh sửa                                        |
+| Float:fRotY            | Góc quay Y của đối tượng đã được chỉnh sửa                                        |
+| Float:fRotZ            | Góc quay Z của đối tượng đã được chỉnh sửa                                        |
 
 ## Trả Về
 
-1 - Sẽ ngăn các script khác nhận được callback này.
+**1** - Sẽ ngăn các script khác nhận được callback này.
 
-0 - Chỉ ra rằng callback này sẽ được chuyển đến script tiếp theo.
+**0** - Chỉ ra rằng callback này sẽ được chuyển đến script tiếp theo.
 
 Callback này luôn được gọi đầu tiên trong filterscripts.
 

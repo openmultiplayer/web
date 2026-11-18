@@ -9,10 +9,10 @@ tags: ["gangzone"]
 
 Flashes a gangzone for all players.
 
-| Name        | Description                                                                                                |
-| ----------- | ---------------------------------------------------------------------------------------------------------- |
-| zoneid      | The zone to flash.                                                                                         |
-| flashColour | The color to flash the gang zone, as an integer or hex in RGBA color format. Alpha transparency supported. |
+| Name        | Description                                                                                                    |
+| ----------- | -------------------------------------------------------------------------------------------------------------- |
+| zoneid      | The zone to flash.                                                                                             |
+| flashColour | The color to flash the gang zone, as an integer or hex in **RGBA** color format. Alpha transparency supported. |
 
 ## Returns
 

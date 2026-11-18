@@ -20,9 +20,9 @@ Fügt ein 'static' Pickup zum Spiel hinzu. Diese Pickups unterstützen Waffen, L
 
 ## Rückgabe(return value)
 
-1 wenn das Pickup erstellt wurde.
+**1** wenn das Pickup erstellt wurde.
 
-0 wenn das Pickup nicht erstellt werden konnte.
+**0** wenn das Pickup nicht erstellt werden konnte.
 
 ## Beispiele
 

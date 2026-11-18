@@ -21,9 +21,9 @@ This callback is called when a player selects an object after SelectObject has b
 
 ## ส่งคืน
 
-1 - Will prevent other scripts from receiving this callback.
+**1** - Will prevent other scripts from receiving this callback.
 
-0 - Indicates that this callback will be passed to the next script.
+**0** - Indicates that this callback will be passed to the next script.
 
 มันถูกเรียกในฟิลเตอร์สคริปต์ก่อนเสมอ
 

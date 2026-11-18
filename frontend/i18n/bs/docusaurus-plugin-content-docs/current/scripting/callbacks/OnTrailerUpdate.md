@@ -16,9 +16,9 @@ Ovaj callback je pozvan kada igrač pošalje trailer update.
 
 ## Returns
 
-0 - Prekida svako trailer ažuriranje da bude poslano ostalim igračima. Ažuriranje se i dalje šalje igraču za ažuriranje.
+**0** - Prekida svako trailer ažuriranje da bude poslano ostalim igračima. Ažuriranje se i dalje šalje igraču za ažuriranje.
 
-1 - Obrađuje trailer ažuriranje normalno i sinhronizira ga između svih igrača.
+**1** - Obrađuje trailer ažuriranje normalno i sinhronizira ga između svih igrača.
 
 Uvijek je pozvan prvo u filterskriptama.
 

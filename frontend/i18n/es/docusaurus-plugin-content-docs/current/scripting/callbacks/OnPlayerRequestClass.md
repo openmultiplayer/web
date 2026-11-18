@@ -15,7 +15,7 @@ Se llama cuando un jugador cambia de clase en la selección de clase (y cuando l
 
 ## Devoluciones
 
-Retornar 0 en este callback evitará que el jugador spawnee. Se puede forzar al jugador a spawnear usando la función [SpawnPlayer](../functions/SpawnPlayer).
+Retornar **0** en este callback evitará que el jugador spawnee. Se puede forzar al jugador a spawnear usando la función [SpawnPlayer](../functions/SpawnPlayer).
 
 Siempre se llama primero en filterscripts.
 
@@ -37,7 +37,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::note
 
-Este callback también se llama cuando un jugador presiona F4.
+Este callback también se llama cuando un jugador presiona **F4**.
 
 :::
 

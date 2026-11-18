@@ -36,7 +36,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::note
 
-Callback ini juga dipanggil ketika pemain menekan tombol F4.
+Callback ini juga dipanggil ketika pemain menekan tombol **F4**.
 
 :::
 

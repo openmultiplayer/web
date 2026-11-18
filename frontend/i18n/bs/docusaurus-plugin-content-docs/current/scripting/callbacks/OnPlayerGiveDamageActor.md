@@ -25,9 +25,9 @@ Ovaj callback je pozvan kada igrač nanese povredu aktoru.
 
 ## Returns
 
-1 - Spriječiti će da druge filterskripte primaju ovaj callback.
+**1** - Spriječiti će da druge filterskripte primaju ovaj callback.
 
-0 - Označava da će ovaj callback biti proslijeđen narednoj filterskripti.
+**0** - Označava da će ovaj callback biti proslijeđen narednoj filterskripti.
 
 Uvijek je pozvana prva u filterskripti.
 

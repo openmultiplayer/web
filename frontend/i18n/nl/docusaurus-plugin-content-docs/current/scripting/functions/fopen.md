@@ -16,7 +16,7 @@ Open een bestand om te lezen of te schrijven.
 
 ## Retourneert
 
-Een file‑handle (te gebruiken met lees/schrijf functies), of 0 bij falen.
+Een file‑handle (te gebruiken met lees/schrijf functies), of **0** bij falen.
 
 ## Voorbeelden
 

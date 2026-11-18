@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Pošalji poruku u ime drugog igrača nekom drugom igraču na serveru. Poruka će se pojaviti u chat boxu ali će je vidjeti samo igrač naveden kao 'playerid'. Linija će početi sa imenom pošiljaoca u njegovoj boji, prateći poruku u bijeloj boji.
+Pošalji poruku u ime drugog igrača nekom drugom igraču na serveru. Poruka će se pojaviti u chat boxu ali će je vidjeti samo igrač naveden kao `playerid`. Linija će početi sa imenom pošiljaoca u njegovoj boji, prateći poruku u bijeloj boji.
 
 | Ime             | Deskripcija                                               |
 | --------------- | --------------------------------------------------------- |

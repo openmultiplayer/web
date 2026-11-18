@@ -20,9 +20,9 @@ Aktörün koordinat değerlerini kontrol etme.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Fonksiyon çalıştı.
+**1**: Fonksiyon çalıştı.
 
-0: Fonksiyon geçersiz aktör ID'si girildiği için çalışmadı.
+**0**: Fonksiyon geçersiz aktör ID'si girildiği için çalışmadı.
 
 Aktörün XYZ değeri oluşturulan değişkenlerde saklanır.
 

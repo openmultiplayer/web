@@ -23,7 +23,7 @@ Acest callback este apelat atunci când clientul unui jucător actualizează/sin
 
 ## Returnări
 
-Este întotdeauna numit primul în filterscript-uri, așa că returnarea 0 acolo blochează și alte scripturi să-l vadă.
+Este întotdeauna numit primul în filterscript-uri, așa că returnarea **0** acolo blochează și alte scripturi să-l vadă.
 
 ## Exemple
 

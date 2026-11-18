@@ -26,9 +26,9 @@ Esta função é exatamente igual à função AddPlayerClass, com a adição de 
 
 ## Retorno
 
-O ID da classe que acabou de ser adicionada.
+O **ID da classe** que acabou de ser adicionada.
 
-319 se o limite da classe (320) foi atingido. O maior ID de classe possível é 319.
+**319** se o limite da classe (320) foi atingido. O maior ID de classe possível é 319.
 
 ## Exemplos
 

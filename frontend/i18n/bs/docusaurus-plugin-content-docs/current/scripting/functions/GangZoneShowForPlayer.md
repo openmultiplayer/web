@@ -9,15 +9,15 @@ tags: ["player", "gangzone"]
 
 Prikaži gang zonu za igrača. Prvo mora biti kreirana sa GangZoneCreate.
 
-| Ime      | Deskripcija                                                                                              |
-| -------- | -------------------------------------------------------------------------------------------------------- |
-| playerid | ID igrača kojem želite prikazati gangzonu.                                                               |
-| zone     | ID gang zone koju želite prikazati igrači. Returnovana/vraćena od GangZoneCreate                         |
-| color    | Boja za bljeskanje gangzone, kao cijeli broj ili hex u RGBA formatu boja. Podržana alfa transparentnost. |
+| Ime      | Deskripcija                                                                                                  |
+| -------- | ------------------------------------------------------------------------------------------------------------ |
+| playerid | ID igrača kojem želite prikazati gangzonu.                                                                   |
+| zone     | ID gang zone koju želite prikazati igrači. Returnovana/vraćena od GangZoneCreate                             |
+| color    | Boja za bljeskanje gangzone, kao cijeli broj ili hex u **RGBA** formatu boja. Podržana alfa transparentnost. |
 
 ## Returns
 
-1 ako je gangzona prikazana, usotalom 0 (ne postoji).
+**1** ako je gangzona prikazana, usotalom **0** (ne postoji).
 
 ## Primjeri
 

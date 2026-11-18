@@ -9,14 +9,14 @@ tags: ["npc"]
 
 Connect an NPC to the server.
 
-| Name     | Description                                                                              |
-| -------- | ---------------------------------------------------------------------------------------- |
-| name[]   | The name the NPC should connect as. Must follow the same rules as normal player names.   |
-| script[] | The NPC script name that is located in the npcmodes folder (without the .amx extension). |
+| Name     | Description                                                                                  |
+| -------- | -------------------------------------------------------------------------------------------- |
+| name[]   | The name the NPC should connect as. Must follow the same rules as normal player names.       |
+| script[] | The NPC script name that is located in the **npcmodes** folder (without the .amx extension). |
 
 ## ส่งคืน
 
-This function always return 1.
+This function always return **1**.
 
 ## ตัวอย่าง
 

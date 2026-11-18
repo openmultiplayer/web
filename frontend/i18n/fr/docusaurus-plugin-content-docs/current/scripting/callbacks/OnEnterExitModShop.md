@@ -12,7 +12,7 @@ Cette callback est appelée quand un joueur entre / sort d'un modshop.
 | Nom              | Description                                                                          |
 | ---------------- | ------------------------------------------------------------------------------------ |
 | `int` playerid   | ID du joueur qui entre / sort du modshop                                             |
-| `int` enterexit  | 1 si le joueur entre, 0 si le joueur sort                                            |
+| `int` enterexit  | **1** si le joueur entre, **0** si le joueur sort                                    |
 | `int` interiorid | ID de l'intérieur du modshop dans lequel le joueur est entré \_(0 si le joueur sort) |
 
 ## Valeur de retour
@@ -37,7 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Bug(s) connus : Les joueurs entrent en collision lorsqu'ils entrent dans le même magasin de mods
+**Bug(s) connus :** Les joueurs entrent en collision lorsqu'ils entrent dans le même magasin de mods
 
 :::
 

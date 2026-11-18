@@ -17,18 +17,18 @@ Calls a public function in any script that is loaded.
 
 ## Returns
 
-The value that the last public function returned.
+The value that the **last** public function returned.
 
 ## Format Specifiers
 
-| **Placeholder** | **Meaning**                                                                                                                                                                                                                                                                                   |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `a`             | Passes an array (the next placeholder should be d or i for the array size, so the function will be aware of it).<br/><br/>**NOTE**: It accepts only one dimension, so a trick like sizeof (array) + sizeof (array) \* sizeof (array[]) for the array size would be needed to pass a 2D array. |
-| `c`             | Passes a single character.                                                                                                                                                                                                                                                                    |
-| `d`,`i`         | Passes an integer (whole) number.                                                                                                                                                                                                                                                             |
-| `x`             | Passes a number in hexadecimal notation.                                                                                                                                                                                                                                                      |
-| `f`             | Passes a floating point number.                                                                                                                                                                                                                                                               |
-| `s`             | Passes a string.                                                                                                                                                                                                                                                                              |
+| **Placeholder** | **Meaning**                                                                                                                                                                                                                                                                                           |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `a`             | Passes an array (the next placeholder should be **d** or **i** for the array size, so the function will be aware of it).<br/><br/>**NOTE**: It accepts only one dimension, so a trick like sizeof (array) + sizeof (array) \* sizeof (array[]) for the array size would be needed to pass a 2D array. |
+| `c`             | Passes a single character.                                                                                                                                                                                                                                                                            |
+| `d`,`i`         | Passes an integer (whole) number.                                                                                                                                                                                                                                                                     |
+| `x`             | Passes a number in hexadecimal notation.                                                                                                                                                                                                                                                              |
+| `f`             | Passes a floating point number.                                                                                                                                                                                                                                                                       |
+| `s`             | Passes a string.                                                                                                                                                                                                                                                                                      |
 
 The values for the placeholders follow in the exact same order as parameters in the call.
 

@@ -19,7 +19,7 @@ Girilen koordinatlarda patlama oluşturma.
 
 ## Çalışınca Vereceği Sonuçlar
 
-Fonksiyon patlamanın türü veya yarıçapı geçersiz olsa bile her zaman 1 döndürür.
+Fonksiyon patlamanın türü veya yarıçapı geçersiz olsa bile her zaman **1** döndürür.
 
 ## Örnekler
 

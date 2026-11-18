@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-Ginagamit ang function na ito upang baguhin ang dami ng mga team na ginamit sa gamemode. Wala itong malinaw na paraan ng paggamit, ngunit makakatulong upang ipahiwatig ang bilang ng mga koponan na ginamit para sa mas mahusay (mas epektibo) panloob na paghawak. Ang function na ito ay dapat lamang gamitin sa OnGameModeInit callback. Mahalaga: Maaari kang pumasa ng 2 bilyon dito kung gusto mo, walang epekto ang function na ito.
+Ginagamit ang function na ito upang baguhin ang dami ng mga team na ginamit sa gamemode. Wala itong malinaw na paraan ng paggamit, ngunit makakatulong upang ipahiwatig ang bilang ng mga koponan na ginamit para sa mas mahusay (mas epektibo) panloob na paghawak. Ang function na ito ay dapat lamang gamitin sa OnGameModeInit callback. **Mahalaga**: Maaari kang pumasa ng 2 bilyon dito kung gusto mo, walang epekto ang function na ito.
 
 | Name  | Description                                |
 | ----- | ------------------------------------------ |

@@ -9,9 +9,9 @@ tags: []
 
 Sa ovom funkcijom možete da omogućite ili onemogućite pucanje guma.
 
-| Ime  | Deskripcija                                    |
-| ---- | ---------------------------------------------- |
-| show | 1 da omogućite, 0 da onemogućite pucanje guma. |
+| Ime  | Deskripcija                                            |
+| ---- | ------------------------------------------------------ |
+| show | **1** da omogućite, **0** da onemogućite pucanje guma. |
 
 ## Returns
 

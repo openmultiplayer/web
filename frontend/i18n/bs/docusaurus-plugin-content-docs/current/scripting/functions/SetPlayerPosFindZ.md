@@ -18,9 +18,9 @@ Ovo postavlja poziciju igrača a potom prilagođava igračevu Z-kordinatu na naj
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
 ## Primjeri
 

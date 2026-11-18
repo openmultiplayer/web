@@ -52,7 +52,7 @@ else
 
 :::warning
 
-Usar um identificador inválido irá travar seu servidor! Obtenha um identificador válido usando [fopen](fopen) ou [ftemp](ftemp).
+Usar um **identificador inválido** irá travar seu servidor! Obtenha um **identificador válido** usando [fopen](fopen) ou [ftemp](ftemp).
 
 :::
 

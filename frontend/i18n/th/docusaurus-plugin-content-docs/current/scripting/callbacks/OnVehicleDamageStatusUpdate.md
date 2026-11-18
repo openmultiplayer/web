@@ -16,9 +16,9 @@ This callback is called when a vehicle element such as doors, tires, panels, or 
 
 ## ส่งคืน
 
-1 - Will prevent other filterscripts from receiving this callback.
+**1** - Will prevent other filterscripts from receiving this callback.
 
-0 - Indicates that this callback will be passed to the next filterscript.
+**0** - Indicates that this callback will be passed to the next filterscript.
 
 มันถูกเรียกในฟิลเตอร์สคริปต์ก่อนเสมอ
 

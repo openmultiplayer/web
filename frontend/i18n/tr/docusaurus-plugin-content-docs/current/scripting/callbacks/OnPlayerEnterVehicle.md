@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Açıklama
 
-Bu geri çağırma, bir oyuncu bir araca binmeye başladığında çağırılır, oyuncu araca bindiğinde çağırılmaz, binmeye başladığında (araca doğru yürüme/koşma animasyonu başladığında) çağırılır.
+Bu geri çağırma, bir oyuncu bir araca binmeye **başladığında** çağırılır, oyuncu araca bindiğinde çağırılmaz, binmeye başladığında (araca doğru yürüme/koşma animasyonu başladığında) çağırılır.
 
 | Parametre   | Açıklama                                            |
 | ----------- | --------------------------------------------------- |
@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-Bu geri çağırma oyuncu araca binmeye BAŞLADIĞINDA çağırılır, oyuncu ARACA BİNDİĞİNDE çağırılmaz. Araca bindiğinde çağırılması için OnPlayerStateChange geri çağırmasını inceleyin. Araç kilitli veya dolu olsa bile oyuncu araca binmeye çalıştığında çağırılacaktır.
+Bu geri çağırma oyuncu araca binmeye **BAŞLADIĞINDA** çağırılır, oyuncu ARACA BİNDİĞİNDE çağırılmaz. Araca bindiğinde çağırılması için OnPlayerStateChange geri çağırmasını inceleyin. Araç kilitli veya dolu olsa bile oyuncu araca binmeye çalıştığında çağırılacaktır.
 
 :::
 

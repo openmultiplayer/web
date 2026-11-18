@@ -9,15 +9,15 @@ tags: ["自定义模型", "简单模型"]
 
 ## 描述
 
-添加可供下载的新自定义简单物体模型。模型文件将存储在玩家的「文档\GTA San Andreas User Files\SAMP\cache」目录下，按服务器 IP 和端口分类的文件夹中，并以 CRC 格式文件名保存。
+添加可供下载的新自定义简单物体模型。模型文件将存储在玩家的「`文档\GTA San Andreas User Files\SAMP\cache`」目录下，按服务器 IP 和端口分类的文件夹中，并以 CRC 格式文件名保存。
 
 | 参数                   | 说明                                                                                                     |
 | ---------------------- | -------------------------------------------------------------------------------------------------------- |
 | virtualWorld           | 模型生效的虚拟世界 ID，使用-1 表示全虚拟世界                                                             |
 | baseid                 | 基础物体模型 ID（当下载失败时将使用该原始物体模型）                                                      |
 | newid                  | 新物体模型 ID（范围-1000 至-30000，共 29000 个槽位），后续可通过 CreateObject 或 CreatePlayerObject 使用 |
-| const dff[]            | .dff 模型碰撞文件名，默认位于服务器的 models 文件夹（可通过 artpath 配置修改路径）                       |
-| const textureLibrary[] | .txd 模型贴图文件名，默认位于服务器的 models 文件夹（可通过 artpath 配置修改路径）                       |
+| const dff[]            | **.dff** 模型碰撞文件名，默认位于服务器的 `models` 文件夹（可通过 artpath 配置修改路径）                 |
+| const textureLibrary[] | **.txd** 模型贴图文件名，默认位于服务器的 `models` 文件夹（可通过 artpath 配置修改路径）                 |
 
 ## 返回值
 

@@ -17,9 +17,9 @@ Poziva se kada igrač dva puta klikne na igrača na scoreboard-u (TAB).
 
 ## Returns
 
-1 - Spriječiti će da druge filterskripte primaju ovaj callback.
+**1** - Spriječiti će da druge filterskripte primaju ovaj callback.
 
-0 - Označava da će ovaj callback biti proslijeđen do sljedeće filterskripte.
+**0** - Označava da će ovaj callback biti proslijeđen do sljedeće filterskripte.
 
 Uvijek je pozvana prva u filterskripti.
 

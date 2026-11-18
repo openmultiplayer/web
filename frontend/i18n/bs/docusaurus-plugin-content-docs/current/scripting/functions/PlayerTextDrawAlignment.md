@@ -13,7 +13,7 @@ Postavlja poravnanje teksta player-textdrawa.
 | --------- | --------------------------------------------------------- |
 | playerid  | ID igrača čijem se player-textdrawu postavlja poravnanje. |
 | Text:text | ID player-textdrawa za postaviti poravnanje.              |
-| alignment | 1-lijevo 2-centrirano 3-desno                             |
+| alignment | **1**-lijevo **2**-centrirano **3**-desno                 |
 
 ## Returns
 

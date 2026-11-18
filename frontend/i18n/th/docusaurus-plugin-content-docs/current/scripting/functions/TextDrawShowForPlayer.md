@@ -16,9 +16,9 @@ Shows a textdraw for a specific player.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means either the player and/or textdraw specified does not exist.
+**0**: The function failed to execute. This means either the player and/or textdraw specified does not exist.
 
 ## ตัวอย่าง
 

@@ -18,7 +18,7 @@ Set the rotation of an object on the three axes (X, Y and Z).
 
 ## Returns
 
-This function always returns 1, even if the object doesn't exist.
+This function always returns **1**, even if the object doesn't exist.
 
 ## Examples
 

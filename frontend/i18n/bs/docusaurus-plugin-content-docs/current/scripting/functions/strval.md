@@ -15,7 +15,7 @@ Pretvori string u cijeli broj.
 
 ## Returns
 
-Cjelobrojna vrijednost stringa. '0 ako string nije numerički.
+Cjelobrojna vrijednost stringa. **0** ako string nije numerički.
 
 ## Primjeri
 

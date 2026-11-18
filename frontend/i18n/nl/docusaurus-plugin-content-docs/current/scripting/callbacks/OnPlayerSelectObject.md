@@ -21,9 +21,9 @@ Deze callback wordt aangeroepen wanneer een speler een object selecteert na het 
 
 ## Returns
 
-1 - Voorkomt dat andere scripts deze callback ontvangen.
+**1** - Voorkomt dat andere scripts deze callback ontvangen.
 
-0 - Geeft aan dat deze callback wordt doorgegeven aan het volgende script.
+**0** - Geeft aan dat deze callback wordt doorgegeven aan het volgende script.
 
 Wordt altijd als eerste aangeroepen in filterscripts.
 

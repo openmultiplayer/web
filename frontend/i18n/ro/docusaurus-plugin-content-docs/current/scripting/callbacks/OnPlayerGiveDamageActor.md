@@ -21,9 +21,9 @@ Acest callback este apelat atunci când un jucător dă daune unui actor.
 
 ## Returnări
 
-1 - Callback-ul nu va fi apelat în alte filterscript-uri.
+**1** - Callback-ul nu va fi apelat în alte filterscript-uri.
 
-0 - Permite apelarea acestui callback în alte filterscript-uri.
+**0** - Permite apelarea acestui callback în alte filterscript-uri.
 
 Este întotdeauna numit primul în filterscript-uri, astfel încât returnarea 1 acolo blochează alte filterscript-uri să-l vadă.
 

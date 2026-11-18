@@ -20,9 +20,9 @@ Esta função adiciona um pickup 'fixo' no jogo. Esses pickups suportam armas, v
 
 ## Retorno
 
-1 se o pickup é criado com sucesso.
+**1** se o pickup é criado com sucesso.
 
-0 se falhar ao criar.
+**0** se falhar ao criar.
 
 ## Exemplos
 

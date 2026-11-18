@@ -24,7 +24,7 @@ Creates a 3D Text Label only for a specific player
 
 ## ส่งคืน
 
-The ID of the newly created Player 3D Text Label, or INVALID_3DTEXT_ID if the Player 3D Text Label limit (MAX_3DTEXT_PLAYER) was reached.
+The ID of the newly created **Player** 3D Text Label, or INVALID_3DTEXT_ID if the **Player** 3D Text Label limit (MAX_3DTEXT_PLAYER) was reached.
 
 ## ตัวอย่าง
 

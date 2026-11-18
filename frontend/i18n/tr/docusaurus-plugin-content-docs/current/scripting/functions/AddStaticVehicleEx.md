@@ -25,7 +25,7 @@ Oyun modunda oyuncular için modeli daha önceden yüklenmiş olan statik araç 
 
 Oluşturulan aracın ID'si: (1 - MAX_VEHICLES) araç oluşturuldu.
 
-Geçersiz araç ID'si (65535): araç oluşturulamadı. (hatalı model ya da araç limiti aşıldığı için).
+**INVALID_VEHICLE_ID (65535)**: araç oluşturulamadı. (hatalı model ya da araç limiti aşıldığı için).
 
 ## Örnekler
 

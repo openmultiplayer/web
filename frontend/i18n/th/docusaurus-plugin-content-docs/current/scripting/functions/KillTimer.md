@@ -15,7 +15,7 @@ Kills (stops) a running timer.
 
 ## ส่งคืน
 
-This function always returns 0.
+This function always returns **0**.
 
 ## ตัวอย่าง
 

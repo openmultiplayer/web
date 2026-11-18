@@ -15,9 +15,9 @@ Provjerava ako vozilo ima prikvačenu prikolicu za sebe. Koristi GetVehicleTrail
 
 ## Returns
 
-1: Vozilo ima prikvačenu prikolicu.
+**1**: Vozilo ima prikvačenu prikolicu.
 
-0: Vozilo nema prikvačenu prikolicu.
+**0**: Vozilo nema prikvačenu prikolicu.
 
 ## Primjeri
 

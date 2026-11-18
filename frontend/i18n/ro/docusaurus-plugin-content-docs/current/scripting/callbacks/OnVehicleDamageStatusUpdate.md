@@ -22,9 +22,9 @@ This callback is called when a vehicle element such as doors, tires, panels, or 
 
 ## Returnări
 
-1 - Va împiedica alte filterscript-uri să primească acest apel invers.
+**1** - Va împiedica alte filterscript-uri să primească acest apel invers.
 
-0 - Indică faptul că acest apel invers va fi transmis următorului filterscript.
+**0** - Indică faptul că acest apel invers va fi transmis următorului filterscript.
 
 Este întotdeauna numit primul în filterscript-uri.
 

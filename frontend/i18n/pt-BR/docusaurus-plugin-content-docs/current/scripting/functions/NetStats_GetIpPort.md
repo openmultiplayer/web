@@ -8,7 +8,7 @@ tags: ["network monitoring", "ip address"]
 
 ## Descrição
 
-Obtenha o IP e a porta de um jogador.
+Obtenha o IP **e a porta** de um jogador.
 
 | Nome | Descrição |
 | ---------------------- | ---------------------------------------------------------------- |

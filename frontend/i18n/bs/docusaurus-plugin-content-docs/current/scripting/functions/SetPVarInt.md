@@ -17,9 +17,9 @@ Postavi cjelobrojnu player (igračevu) varijablu.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ili navedeni igrač nije konektovan, ili je ime varijable prazno ili preko 40 karaktera.
+**0**: Funkcija neuspješno izvršena. Ili navedeni igrač nije konektovan, ili je ime varijable prazno ili preko 40 karaktera.
 
 ## Primjeri
 

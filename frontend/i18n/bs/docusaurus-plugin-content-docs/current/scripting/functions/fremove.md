@@ -9,15 +9,15 @@ tags: []
 
 Obriši datoteku.
 
-| Ime    | Deskripcija                                                           |
-| ------ | --------------------------------------------------------------------- |
-| name[] | Path do datoteke koju želite izbrisati. (NOTE: Ne upravljač datoteke) |
+| Ime    | Deskripcija                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| name[] | **Path** do datoteke koju želite izbrisati. (NOTE: Ne upravljač datoteke) |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Datoteka ne postoji ili nemate dozvolu da je izbrišete.
+**0**: Funkcija neuspješno izvršena. Datoteka ne postoji ili nemate dozvolu da je izbrišete.
 
 ## Primjeri
 

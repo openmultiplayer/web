@@ -17,9 +17,9 @@ Bu geri çağırma bir IP adresi sunucuya erişim sağlamaya çalıştığında 
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Diğer filterscriptlerin bu geri çağırmayı engeller.
+**1** - Diğer filterscriptlerin bu geri çağırmayı engeller.
 
-0 - Diğer filterscriptler içinde aranması için pas geçilir.
+**0** - Diğer filterscriptler içinde aranması için pas geçilir.
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 

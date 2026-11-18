@@ -12,11 +12,11 @@ Displays a message in chat to all players. This is a multi-player equivalent of 
 | Name            | Description                                       |
 | --------------- | ------------------------------------------------- |
 | color           | The color of the message (0xRRGGBBAA Hex format). |
-| const message[] | The message to show (max 144 characters).         |
+| const message[] | The message to show **(max 144 characters)**.     |
 
 ## ส่งคืน
 
-This function always returns true (1).
+This function always returns **true (1)**.
 
 ## ตัวอย่าง
 

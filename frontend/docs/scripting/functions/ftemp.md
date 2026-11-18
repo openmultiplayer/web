@@ -7,11 +7,11 @@ tags: ["file management"]
 
 ## Description
 
-Creates a file in the "tmp", "temp" or root directory with random name for reading and writing. The file is deleted after fclose() is used on the file.
+Creates a file in the "tmp", "temp" or root directory with random name for reading and writing. The file is deleted after fclose is used on the file.
 
 ## Returns
 
-The temporary file handle. 0 if failed.
+The temporary file handle. **0** if failed.
 
 ## Examples
 
@@ -111,7 +111,7 @@ else
 
 :::warning
 
-This function can crash the server when the right directory isn't created.
+This function can crash the server when the right directory isn't created. (Fixed in open.mp)
 
 :::
 

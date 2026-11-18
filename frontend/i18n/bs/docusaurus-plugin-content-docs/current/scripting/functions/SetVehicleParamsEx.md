@@ -22,9 +22,9 @@ Postavlja parametre vozila za sve igrače.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
 
 ## Primjeri
 

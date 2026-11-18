@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Paramètres
 
-Cette callback est appelée quand un joueur commence à entrer dans un véhicule, c'est-à-dire que le joueur n'est pas encore dans le véhicule quand la callback est appelée.
+Cette callback est appelée quand un joueur **commence** à entrer dans un véhicule, c'est-à-dire que le joueur n'est pas encore dans le véhicule quand la callback est appelée.
 
 | Nom               | Description                                                  |
 | ----------------- | ------------------------------------------------------------ |

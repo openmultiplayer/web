@@ -17,9 +17,9 @@ Dodaje sjenku na donju desnu stranu teksta u player-textdrawu. Font sjene odgova
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da player-textdraw ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da player-textdraw ne postoji.
 
 ## Primjeri
 

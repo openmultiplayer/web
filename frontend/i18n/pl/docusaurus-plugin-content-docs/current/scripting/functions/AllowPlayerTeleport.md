@@ -18,7 +18,7 @@ Włącza/wyłącza graczom możliwość teleportacji przez klikanie prawym przyc
 | Nazwa    | Opis                                                         |
 | -------- | ------------------------------------------------------------ |
 | playerid | ID gracza, który ma mieć przełączoną możliwość teleportacji. |
-| allow    | 1 - włącza, 0 - wyłącza.                                     |
+| allow    | **1** - włącza, **0** - wyłącza.                             |
 
 ## Zwracane wartości
 

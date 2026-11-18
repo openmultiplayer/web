@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-The default virtual world is 0.
+The default virtual world is **0**.
 
 :::
 

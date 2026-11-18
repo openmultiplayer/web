@@ -18,9 +18,9 @@ Postavlja kameru u određenu poziciju za igrača.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
 ## Primjeri
 

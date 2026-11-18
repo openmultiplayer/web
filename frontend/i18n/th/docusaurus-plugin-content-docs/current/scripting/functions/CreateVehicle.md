@@ -9,25 +9,25 @@ tags: ["vehicle"]
 
 Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at any time in the script.
 
-| Name                                   | Description                                                                                                          |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [modelid](../resources/vehicleid)      | The model for the vehicle.                                                                                           |
-| Float:spawnX                           | The X coordinate for the vehicle.                                                                                    |
-| Float:spawnY                           | The Y coordinate for the vehicle.                                                                                    |
-| Float:spawnZ                           | The Z coordinate for the vehicle.                                                                                    |
-| Float:angle                            | The facing angle for the vehicle.                                                                                    |
-| [colour1](../resources/vehiclecolorid) | The primary color ID.                                                                                                |
-| [colour2](../resources/vehiclecolorid) | The secondary color ID.                                                                                              |
-| respawnDelay                           | The delay until the car is respawned without a driver in seconds. Using -1 will prevent the vehicle from respawning. |
-| bool:addSiren                          | Has a default value 'false'. Enables the vehicle to have a siren, providing the vehicle has a horn.                  |
+| Name                                   | Description                                                                                                                  |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [modelid](../resources/vehicleid)      | The model for the vehicle.                                                                                                   |
+| Float:spawnX                           | The X coordinate for the vehicle.                                                                                            |
+| Float:spawnY                           | The Y coordinate for the vehicle.                                                                                            |
+| Float:spawnZ                           | The Z coordinate for the vehicle.                                                                                            |
+| Float:angle                            | The facing angle for the vehicle.                                                                                            |
+| [colour1](../resources/vehiclecolorid) | The primary color ID.                                                                                                        |
+| [colour2](../resources/vehiclecolorid) | The secondary color ID.                                                                                                      |
+| respawnDelay                           | The delay until the car is respawned without a driver in **seconds**. Using **-1** will prevent the vehicle from respawning. |
+| bool:addSiren                          | Has a default value 'false'. Enables the vehicle to have a siren, providing the vehicle has a horn.                          |
 
 ## ส่งคืน
 
 The vehicle ID of the vehicle created (1 to MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) if vehicle was not created (vehicle limit reached or invalid vehicle model ID passed).
+**INVALID_VEHICLE_ID (65535)** if vehicle was not created (vehicle limit reached or invalid vehicle model ID passed).
 
-0 if vehicle was not created (IDs 538 or 537 passed, which is trains).
+**0** if vehicle was not created (IDs 538 or 537 passed, which is trains).
 
 ## ตัวอย่าง
 

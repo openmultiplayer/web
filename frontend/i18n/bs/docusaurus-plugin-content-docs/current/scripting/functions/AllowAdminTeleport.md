@@ -15,9 +15,9 @@ Ova funkcija, kao 0.3d, je zastarjela. Molim vas pogledajte [OnPlayerClickMap](.
 
 Ovaj funkcija će da odredi da li će RCON admini biti teleportovani do waypointa/markera kojeg su postavili.
 
-| Ime   | Deskripcija                       |
-| ----- | --------------------------------- |
-| allow | 0 da onemogućite, 1 da omogućite. |
+| Ime   | Deskripcija                               |
+| ----- | ----------------------------------------- |
+| allow | **0** da onemogućite, **1** da omogućite. |
 
 ## Returns
 

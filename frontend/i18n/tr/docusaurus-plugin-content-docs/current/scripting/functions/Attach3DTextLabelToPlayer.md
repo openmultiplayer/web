@@ -19,9 +19,9 @@ Oyuncuya 3D Text Label bağlama fonksiyonu.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Fonksiyon başarıyla çalıştı.
+**1**: Fonksiyon başarıyla çalıştı.
 
-0: Fonksiyon çalışamadı. Oyuncu veya label yok.
+**0**: Fonksiyon çalışamadı. Oyuncu veya label yok.
 
 ## Örnekler
 

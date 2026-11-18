@@ -213,7 +213,7 @@ new
     myVariable = 7;
 ```
 
-This declares a new variable and sets it's initial value to 7, so printing the variable now will give 7. To display a variable which isn't a string we need to go back to the printf() function mentioned earlier and do:
+This declares a new variable and sets it's initial value to 7, so printing the variable now will give 7. To display a variable which isn't a string we need to go back to the `printf` function mentioned earlier and do:
 
 ```c
 new

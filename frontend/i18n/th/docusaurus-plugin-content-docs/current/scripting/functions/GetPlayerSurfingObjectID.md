@@ -15,7 +15,7 @@ Returns the ID of the object the player is surfing on.
 
 ## ส่งคืน
 
-The ID of the moving object the player is surfing. If the player isn't surfing a moving object, it will return INVALID_OBJECT_ID
+The ID of the **moving** object the player is surfing. If the player isn't surfing a **moving** object, it will return INVALID_OBJECT_ID
 
 ## ตัวอย่าง
 

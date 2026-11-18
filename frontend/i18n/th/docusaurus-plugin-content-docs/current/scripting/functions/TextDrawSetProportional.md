@@ -12,7 +12,7 @@ Appears to scale text spacing to a proportional ratio. Useful when using TextDra
 | Name | Description                                          |
 | ---- | ---------------------------------------------------- |
 | text | The ID of the textdraw to set the proportionality of |
-| set  | 1 to enable proportionality, 0 to disable.           |
+| set  | **1** to enable proportionality, **0** to disable.   |
 
 ## ส่งคืน
 

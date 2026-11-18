@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-- Full vehicle health is 1000, however higher values are possible and increase the health of the vehicle. For more information on health values, see [here](../resources/vehiclehealth).
+- Full vehicle health is **1000**, however higher values are possible and increase the health of the vehicle. For more information on health values, see [here](../resources/vehiclehealth).
 - A vehicle catches on fire when its health is below 250. It will explode a few seconds later.
 
 :::

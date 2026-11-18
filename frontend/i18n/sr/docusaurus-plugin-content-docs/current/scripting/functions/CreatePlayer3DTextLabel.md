@@ -25,7 +25,7 @@ tags: ["player", "3dtextlabel"]
 
 ## Враћа
 
-ID од новокреираног 3D label-а, или `INVALID_3DTEXT_ID` ако смо прешли ограничење 3D Player Text Label-а (`MAX_3DTEXT_PLAYER`).
+ID од новокреираног 3D label-а, или `INVALID_3DTEXT_ID` ако смо прешли ограничење 3D **Player** Text Label-а (`MAX_3DTEXT_PLAYER`).
 
 ## Примери
 

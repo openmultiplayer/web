@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-You MUST use ARGB color format, not RGBA like used in client messages etc.
+You MUST use **ARGB** color format, not RGBA like used in client messages etc.
 Text does not update after 16 calls against the same object.
 
 :::
@@ -67,9 +67,9 @@ Text does not update after 16 calls against the same object.
 
 ## Advanced Map Editors
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) by Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) by RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus
 
 ## Related Resources
 

@@ -22,9 +22,9 @@ Uključite/isključite aktorovu neranjivost.
 
 ## Returns
 
-1 - uspješno
+**1** - uspješno
 
-0 - greška (Aktor nije kreiran).
+**0** - greška (Aktor nije kreiran).
 
 ## Primjeri
 

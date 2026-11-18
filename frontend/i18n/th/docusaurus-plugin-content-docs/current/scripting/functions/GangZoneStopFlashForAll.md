@@ -15,9 +15,9 @@ Stops a gangzone flashing for all players.
 
 ## ส่งคืน
 
-1: The function executed successfully. Success is reported even if the gang zone wasn't flashing to begin with.
+**1**: The function executed successfully. Success is reported even if the gang zone wasn't flashing to begin with.
 
-0: The function failed to execute. The gangzone specified does not exist.
+**0**: The function failed to execute. The gangzone specified does not exist.
 
 ## ตัวอย่าง
 

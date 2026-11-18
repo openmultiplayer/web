@@ -17,7 +17,7 @@ Força um valor a estar dentro de um intervalo.
 
 ## Retorno
 
-value, se estiver no intervalo min–max, min, se value for menor que min ou max, se value for maior que max.
+**value**, se estiver no intervalo min–max, **min**, se value for menor que min ou **max**, se value for maior que max.
 
 ## Exemplos
 

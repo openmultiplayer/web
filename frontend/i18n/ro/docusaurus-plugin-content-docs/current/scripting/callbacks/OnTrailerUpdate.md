@@ -16,9 +16,9 @@ Acest callback este apelat atunci când un jucător a trimis o actualizare a tra
 
 ## Returnări
 
-0 - Anulează orice actualizări ale trailerului pentru a fi trimise altor jucători. Actualizarea este încă trimisă jucătorului de actualizare.
+**0** - Anulează orice actualizări ale trailerului pentru a fi trimise altor jucători. Actualizarea este încă trimisă jucătorului de actualizare.
 
-1 - Procesează actualizarea trailerului ca de obicei și o sincronizează între toți jucătorii.
+**1** - Procesează actualizarea trailerului ca de obicei și o sincronizează între toți jucătorii.
 
 Este întotdeauna numit primul în filterscript-uri.
 

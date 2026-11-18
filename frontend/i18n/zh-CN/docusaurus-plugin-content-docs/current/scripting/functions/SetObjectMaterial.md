@@ -16,7 +16,7 @@ tags: ["物体"]
 | modelid                | 包含替换纹理的模型 ID（0 表示透明通道，-1 表示仅修改材质颜色不改变纹理） |
 | const textureLibrary[] | 包含替换纹理的 txd 文件名称（不需要时使用"none"）                        |
 | const textureName[]    | 要使用的替换纹理名称（不需要时使用"none"）                               |
-| materialColour         | 要设置的材质颜色（ARGB 格式的整型或十六进制值，0 表示保留原色）          |
+| materialColour         | 要设置的材质颜色（**ARGB** 格式的整型或十六进制值，**0** 表示保留原色）  |
 
 ## 返回值
 
@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-必须使用 ARGB 颜色格式（不同于客户端消息使用的 RGBA 格式）
+必须使用 **ARGB** 颜色格式（不同于客户端消息使用的 RGBA 格式）
 
 :::
 
@@ -66,6 +66,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 高级地图编辑器
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) 作者：Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) 作者：Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) 作者：RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) 作者：Pottus

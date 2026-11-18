@@ -9,20 +9,20 @@ tags: []
 
 ## Description
 
-Ajoute un nouveau modèle de personnage personnalisé à télécharger. Les fichiers modèles seront stockés dans le dossier Documents\GTA San Andreas User Files\SAMP\cache du lecteur sous le dossier IP et port du serveur dans un nom de fichier au [format CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
+Ajoute un nouveau modèle de personnage personnalisé à télécharger. Les fichiers modèles seront stockés dans le dossier `Documents\GTA San Andreas User Files\SAMP\cache` du lecteur sous le dossier IP et port du serveur dans un nom de fichier au [format CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nom     | Description                                                                                                                                 |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | L'ID du modèle de skin de base à utiliser (comportement du personnage et personnage d'origine à utiliser lorsque le téléchargement échoue). |
 | newid   | Le nouvel ID de modèle de skin allait de 20 000 à 30 000 (10 000 emplacements) à utiliser ultérieurement avec SetPlayerSkin                 |
-| dffname | Nom du fichier de collision de modèles .dff situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                     |
-| txdname | Nom du fichier de texture de modèle .txd situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                        |
+| dffname | Nom du fichier de collision de modèles **.dff** situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                 |
+| txdname | Nom du fichier de texture de modèle **.txd** situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                    |
 
 ## Retour
 
-1: La fonction s'est exécutée avec succès.
+**1**: La fonction s'est exécutée avec succès.
 
-0: La fonction n'a pas pu s'exécuter.
+**0**: La fonction n'a pas pu s'exécuter.
 
 ## Exemples
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork doit d'abord être activé dans les paramètres du serveur pour que cela fonctionne
+**useartwork** doit d'abord être activé dans les paramètres du serveur pour que cela fonctionne
 
 :::
 

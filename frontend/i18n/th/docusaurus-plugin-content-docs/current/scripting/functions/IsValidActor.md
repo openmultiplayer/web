@@ -21,9 +21,9 @@ Checks if an actor ID is valid.
 
 ## ส่งคืน
 
-1 - The actor is valid.
+**1** - The actor is valid.
 
-0 - The actor is not valid.
+**0** - The actor is not valid.
 
 ## ตัวอย่าง
 

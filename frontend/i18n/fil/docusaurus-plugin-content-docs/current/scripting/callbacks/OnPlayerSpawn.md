@@ -15,9 +15,9 @@ Tinatawag ang callback na ito kapag nag-spawn ang isang player.(i.e. pagkatapos 
 
 ## Returns
 
-0 - Pipigilan ang ibang mga filterscript na matanggap ang callback na ito.
+**0** - Pipigilan ang ibang mga filterscript na matanggap ang callback na ito.
 
-1 - Isinasaad na ang callback na ito ay ipapasa sa susunod na filterscript.
+**1** - Isinasaad na ang callback na ito ay ipapasa sa susunod na filterscript.
 
 Palaging una itong tinatawag sa mga filterscript.
 

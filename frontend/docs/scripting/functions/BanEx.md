@@ -22,7 +22,7 @@ This function does not return any specific values.
 
 :::warning
 
-Any action taken directly before BanEx() (such as sending a message with [SendClientMessage](SendClientMessage)) will not reach the player. A timer must be used to delay the ban.
+Any action taken directly before BanEx (such as sending a message with [SendClientMessage](SendClientMessage)) will not reach the player. A timer must be used to delay the ban.
 
 :::
 

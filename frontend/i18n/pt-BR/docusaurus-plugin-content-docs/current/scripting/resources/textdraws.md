@@ -154,7 +154,7 @@ Note que esta função apenas cria o textdraw, outras funções são usadas para
 
 **Parâmetros:**
 
-TextDrawCreate(Float:x, Float:y, text[])
+`TextDrawCreate(Float:x, Float:y, text[])`
 
 | Nome   | Descrição                             |
 | ------ | ------------------------------------- |
@@ -204,7 +204,7 @@ Para mostrar um textdraw para um único jogador, a função [TextDrawShowForPlay
 
 **Parâmetros:**
 
-TextDrawShowForPlayer(playerid, Text:text)
+`TextDrawShowForPlayer(playerid, Text:text)`
 
 | Nome     | Descrição                                    |
 | -------- | -------------------------------------------- |

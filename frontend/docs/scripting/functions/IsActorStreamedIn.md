@@ -18,7 +18,7 @@ Checks if an actor is streamed in for a player.
 
 ## Returns
 
-This function returns 1 if the actor is streamed in for the player, or 0 if it is not.
+This function returns **1** if the actor is streamed in for the player, or **0** if it is not.
 
 ## Examples
 

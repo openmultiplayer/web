@@ -19,7 +19,7 @@ Cria uma explosão nas coordenadas especificadas.
 
 ## Retorno
 
-Esta função sempre retorna 1, mesmo quando os valores do tipo de explosão e/ou raio são inválidos.
+Esta função sempre retorna **1**, mesmo quando os valores do tipo de explosão e/ou raio são inválidos.
 
 ## Exemplos
 

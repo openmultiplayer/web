@@ -9,18 +9,18 @@ tags: ["player", "object"]
 
 Ова функција се позива када играч заврши са уређивањем објекта ([BeginObjectEditing](../functions/BeginObjectEditing)/[BeginPlayerObjectEditing](../functions/BeginPlayerObjectEditing)).
 
-| Име                    | Опис                                                     |
-| ---------------------- | -------------------------------------------------------- |
-| playerid               | ID играча који едитује објекат.                          |
-| playerobject           | 0 if it is a global object or 1 if it is a playerobject. |
-| objectid               | ID уређеног објекта.                                     |
-| EDIT_RESPONSE:response | Тип [одговора](../resources/objecteditionresponsetypes)  |
-| Float:fX               | X помак за уређени објекат.                              |
-| Float:fY               | Y помак за уређени објекат.                              |
-| Float:fZ               | Z помак за уређени објекат.                              |
-| Float:fRotX            | X ротација за уређени објекат.                           |
-| Float:fRotY            | Y ротација за уређени објекат.                           |
-| Float:fRotZ            | Z ротација за уређени објекат.                           |
+| Име                    | Опис                                                             |
+| ---------------------- | ---------------------------------------------------------------- |
+| playerid               | ID играча који едитује објекат.                                  |
+| playerobject           | **0** if it is a global object or **1** if it is a playerobject. |
+| objectid               | ID уређеног објекта.                                             |
+| EDIT_RESPONSE:response | Тип [одговора](../resources/objecteditionresponsetypes)          |
+| Float:fX               | X помак за уређени објекат.                                      |
+| Float:fY               | Y помак за уређени објекат.                                      |
+| Float:fZ               | Z помак за уређени објекат.                                      |
+| Float:fRotX            | X ротација за уређени објекат.                                   |
+| Float:fRotY            | Y ротација за уређени објекат.                                   |
+| Float:fRotZ            | Z ротација за уређени објекат.                                   |
 
 ## Враћа
 

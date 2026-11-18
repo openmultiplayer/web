@@ -19,9 +19,9 @@ Attach a 3D text label to a player.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the player and/or label do not exist.
+**0**: The function failed to execute. This means the player and/or label do not exist.
 
 ## ตัวอย่าง
 

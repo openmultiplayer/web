@@ -16,9 +16,9 @@ Hides a menu for a player.
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute.
+**0**: The function failed to execute.
 
 ## ตัวอย่าง
 

@@ -16,9 +16,9 @@ Checks if a player is streamed in another player's client.
 
 ## ส่งคืน
 
-1: The player is streamed in.
+**1**: The player _is_ streamed in.
 
-0: The player is not streamed in.
+**0**: The player is _not_ streamed in.
 
 ## ตัวอย่าง
 

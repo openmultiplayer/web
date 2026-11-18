@@ -15,9 +15,9 @@ Callback này được gọi mỗi khi một client/người chơi cập nhật 
 
 ## Giá trị trả về
 
-0 - Cập nhật từ người chơi này sẽ không được nhân rộng cho các client khác.
+**0** - Cập nhật từ người chơi này sẽ không được nhân rộng cho các client khác.
 
-1 - Chỉ ra rằng cập nhật này có thể được xử lý bình thường và gửi đến các người chơi khác.
+**1** - Chỉ ra rằng cập nhật này có thể được xử lý bình thường và gửi đến các người chơi khác.
 
 Nó luôn được gọi đầu tiên trong filterscripts.
 

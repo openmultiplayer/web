@@ -9,23 +9,23 @@ tags: []
 
 Možete koristiti ovu funkciju da prikvačite objekat za drugi objekat. Objekti će pratiti glavni objekat.
 
-| Ime           | Deskripcija                                                                    |
-| ------------- | ------------------------------------------------------------------------------ |
-| objectid      | Objekat kojeg želite prikvačiti za neki drugi.                                 |
-| attachtoid    | Objekat za kojeg želite zakačiti prvi objekat.                                 |
-| Float:OffsetX | Razdaljina između glavnog objekta i objekta za prikvačiti u X smjeru.          |
-| Float:OffsetY | Razdaljina između glavnog objekta i objekta za prikvačiti u Y smjeru.          |
-| Float:OffsetZ | Razdaljina između glavnog objekta i objekta za prikvačiti u Z smjeru.          |
-| Float:RotX    | X rotacija između glavnog objekta i objekta za prikvačiti.                     |
-| Float:RotY    | Y rotacija između glavnog objekta i objekta za prikvačiti.                     |
-| Float:RotZ    | Z rotacija između glavnog objekta i objekta za prikvačiti.                     |
-| SyncRotation  | Ako je stavljeno na 0, rotacija objectid-a se neće mijenjati sa attachtoid-em. |
+| Ime           | Deskripcija                                                                        |
+| ------------- | ---------------------------------------------------------------------------------- |
+| objectid      | Objekat kojeg želite prikvačiti za neki drugi.                                     |
+| attachtoid    | Objekat za kojeg želite zakačiti prvi objekat.                                     |
+| Float:OffsetX | Razdaljina između glavnog objekta i objekta za prikvačiti u X smjeru.              |
+| Float:OffsetY | Razdaljina između glavnog objekta i objekta za prikvačiti u Y smjeru.              |
+| Float:OffsetZ | Razdaljina između glavnog objekta i objekta za prikvačiti u Z smjeru.              |
+| Float:RotX    | X rotacija između glavnog objekta i objekta za prikvačiti.                         |
+| Float:RotY    | Y rotacija između glavnog objekta i objekta za prikvačiti.                         |
+| Float:RotZ    | Z rotacija između glavnog objekta i objekta za prikvačiti.                         |
+| SyncRotation  | Ako je stavljeno na **0**, rotacija objectid-a se neće mijenjati sa attachtoid-em. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija nije uspjela da se izvrši. Ovo znali da prvi objekat (objectid) ne postoji. Ne postoje interne provjere da se potvrdi da li drugi objekat (attachtoid) postoji.
+**0**: Funkcija nije uspjela da se izvrši. Ovo znali da prvi objekat (objectid) ne postoji. Ne postoje interne provjere da se potvrdi da li drugi objekat (attachtoid) postoji.
 
 ## Primjeri
 

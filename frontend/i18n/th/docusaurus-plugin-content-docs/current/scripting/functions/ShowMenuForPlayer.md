@@ -16,9 +16,9 @@ Shows a previously created menu for a player.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. Menu and/or player doesn't exist.
+**0**: The function failed to execute. Menu and/or player doesn't exist.
 
 ## ตัวอย่าง
 

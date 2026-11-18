@@ -19,9 +19,9 @@ Anexa uma text label 3D a um jogador.
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao ser executada. Isso significa que o jogador e/ou TextLabel 3D não existe.
+**0**: A função falhou ao ser executada. Isso significa que o jogador e/ou TextLabel 3D não existe.
 
 ## Exemplos
 

@@ -4,7 +4,7 @@ sidebar_label: "La consola remota (RCON)"
 description: Gestionar el servidor remotamente.
 ---
 
-La consola remota es una línea de comandos en la que puedes usar comandos RCON sin tener que estar en el juego o en el servidor. Desde la 0.3b la consola remota fue removida del buscador de servidores. Desde ahora tendrás que usar otra forma para acceder, explicada debajo.
+La **consola remota** es una línea de comandos en la que puedes usar comandos RCON sin tener que estar en el juego o en el servidor. Desde la 0.3b la **consola remota** fue removida del **buscador de servidores**. Desde ahora tendrás que usar otra forma para acceder, explicada debajo.
 
 1. Abre un editor de texto (puede ser VSCode, Sublime Text, o simplemente Notepad.exe).
 2. Escribe allí la línea: `rcon.exe IP PUERTO CONTRASEÑA RCON` (reemplaza IP/PUERTO/CONTRASEÑA con la que corresponde en tu servidor)

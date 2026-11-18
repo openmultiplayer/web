@@ -22,7 +22,7 @@ Bir objeyi oyuncuya bağlar.
 
 ## Çalışınca Vereceği Sonuçlar
 
-Bu fonksiyon her zaman 0 döndürür.
+Bu fonksiyon her zaman **0** döndürür.
 
 ## Örnekler
 

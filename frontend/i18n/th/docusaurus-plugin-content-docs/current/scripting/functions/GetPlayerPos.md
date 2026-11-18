@@ -18,9 +18,9 @@ Get the position of a player, represented by X, Y and Z coordinates.
 
 ## ส่งคืน
 
-true on success.
+**true** on success.
 
-false on failure (i.e. player not connected).
+**false** on failure (i.e. player not connected).
 
 ## ตัวอย่าง
 

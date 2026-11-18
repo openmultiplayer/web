@@ -12,11 +12,11 @@ Sunucuya NPC bağlama.
 | Parametre | Açıklama                                                                                 |
 | --------- | ---------------------------------------------------------------------------------------- |
 | name[]    | NPC'ye verilen isim. Normal oyuncu isimleriyle aynı kurallara uymalıdır (ğ,ü içermez vb) |
-| script[]  | npcmodes klasöründe bulunan NPC uzantılı komut dosyası adı. (.amx uzantısı olmadan)      |
+| script[]  | **npcmodes** klasöründe bulunan NPC uzantılı komut dosyası adı. (.amx uzantısı olmadan)  |
 
 ## Çalışınca Vereceği Sonuçlar
 
-Bu fonksiyon her zaman 1 döndürür.
+Bu fonksiyon her zaman **1** döndürür.
 
 ## Örnekler
 

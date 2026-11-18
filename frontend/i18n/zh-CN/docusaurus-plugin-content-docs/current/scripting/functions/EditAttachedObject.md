@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-编辑过程中按住空格键（车内按 W 键）并移动鼠标可调整视角
+编辑过程中按住**空格键**（车内按 **W** 键）并移动鼠标可调整视角
 
 :::
 

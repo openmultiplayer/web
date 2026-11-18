@@ -19,9 +19,9 @@ Postavi smjer u kojem će gledati kamera igrača. Generalno namijenjeno korište
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
 ## Primjeri
 

@@ -16,9 +16,9 @@ Bu fonksiyon, oyuncu aracına römork bağladığında çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-0 - Herhangi bir römork güncellemelerinin diğer oyunculara gönderilmesini iptal eder. Güncelleme, güncelleyen oyuncuya hala gönderilir.
+**0** - Herhangi bir römork güncellemelerinin diğer oyunculara gönderilmesini iptal eder. Güncelleme, güncelleyen oyuncuya hala gönderilir.
 
-1 - Römork güncellemesini normal şekilde işler ve tüm oyuncular arasında senkronize eder.
+**1** - Römork güncellemesini normal şekilde işler ve tüm oyuncular arasında senkronize eder.
 
 Filterscript komutlarında her zaman ilk olarak çağrılır.
 

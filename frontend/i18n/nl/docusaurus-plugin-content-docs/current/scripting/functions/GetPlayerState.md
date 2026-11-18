@@ -15,7 +15,7 @@ Haal de huidige staat van een speler op.
 
 ## Retourneert
 
-De huidige staat als integer (zie: [Player States](../resources/playerstates)).
+De huidige **staat** als integer (zie: [Player States](../resources/playerstates)).
 
 ## Voorbeeld
 

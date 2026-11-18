@@ -17,9 +17,9 @@ Dajte igraču oružje sa određenom količinom streljiva.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
 ## Primjeri
 

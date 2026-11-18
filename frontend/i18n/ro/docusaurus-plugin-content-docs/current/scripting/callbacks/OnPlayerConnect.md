@@ -15,9 +15,9 @@ Acest callback este apelat atunci când un jucător se conectează la server.
 
 ## Returnări
 
-0 - Va împiedica alte filterscript-uri să primească acest callback.
+**0** - Va împiedica alte filterscript-uri să primească acest callback.
 
-1 - Indică faptul că acest callback va fi transmis următorului filterscript.
+**1** - Indică faptul că acest callback va fi transmis următorului filterscript.
 
 Este întotdeauna numit primul în filterscript-uri.
 

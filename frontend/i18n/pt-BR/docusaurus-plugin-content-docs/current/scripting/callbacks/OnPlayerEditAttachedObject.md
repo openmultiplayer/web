@@ -9,28 +9,28 @@ tags: ["player"]
 
 Esta callback é chamada quando um jogador termina o modo de edição de objetos anexados.
 
-| Name                   | Descrição                                                        |
-| ---------------------- | ---------------------------------------------------------------- |
-| playerid               | O ID do jogador que terminou a edição                            |
-| EDIT_RESPONSE:response | 0 se foi cancelado (ESC), ou 1 se o botão de salvar foi clicado. |
-| index                  | The index of the attached object (0-9)                           |
-| modelid                | O modelo do objeto que foi anexado                               |
-| boneid                 | O ID da parte em que o modelo foi anexado                        |
-| Float:fOffsetX         | O desclocamento de X para o objeto editado.                      |
-| Float:fOffsetY         | O desclocamento de Y para o objeto editado.                      |
-| Float:fOffsetZ         | O desclocamento de Z para o objeto editado.                      |
-| Float:fRotX            | A rotação de X para o objeto editado.                            |
-| Float:fRotY            | A rotação de Y para o objeto editado.                            |
-| Float:fRotZ            | A rotação de Z para o objeto editado.                            |
-| Float:fScaleX          | A escala de X para o objeto editado.                             |
-| Float:fScaleY          | A escala de Y para o objeto editado.                             |
-| Float:fScaleZ          | A escala de Z para o objeto editado.                             |
+| Name                   | Descrição                                                                |
+| ---------------------- | ------------------------------------------------------------------------ |
+| playerid               | O ID do jogador que terminou a edição                                    |
+| EDIT_RESPONSE:response | **0** se foi cancelado (ESC), ou **1** se o botão de salvar foi clicado. |
+| index                  | The index of the attached object (0-9)                                   |
+| modelid                | O modelo do objeto que foi anexado                                       |
+| boneid                 | O ID da parte em que o modelo foi anexado                                |
+| Float:fOffsetX         | O desclocamento de X para o objeto editado.                              |
+| Float:fOffsetY         | O desclocamento de Y para o objeto editado.                              |
+| Float:fOffsetZ         | O desclocamento de Z para o objeto editado.                              |
+| Float:fRotX            | A rotação de X para o objeto editado.                                    |
+| Float:fRotY            | A rotação de Y para o objeto editado.                                    |
+| Float:fRotZ            | A rotação de Z para o objeto editado.                                    |
+| Float:fScaleX          | A escala de X para o objeto editado.                                     |
+| Float:fScaleY          | A escala de Y para o objeto editado.                                     |
+| Float:fScaleZ          | A escala de Z para o objeto editado.                                     |
 
 ## Retorno
 
-1 - Irá previnir que outro filterscript receba esta callback.
+**1** - Irá previnir que outro filterscript receba esta callback.
 
-0 - Indica que esta callback será passada para o próximo filterscript.
+**0** - Indica que esta callback será passada para o próximo filterscript.
 
 Sempre é chamada primeiro em filterscripts.
 

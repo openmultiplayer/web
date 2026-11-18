@@ -34,7 +34,7 @@ public OnPlayerSpawn(playerid)
 
 :::warning
 
-skill 参数不是武器 ID，而是技能类型。[点击此处](../resources/weaponskills)查看技能类型列表。
+**skill** 参数不是武器 ID，而是技能类型。[点击此处](../resources/weaponskills)查看技能类型列表。
 
 :::
 

@@ -7,26 +7,22 @@ tags: []
 
 ## Descrição
 
-:::warning
+<VersionWarn version='SA-MP 0.3.DL R1' />
 
-Esta função foi adicionada no SA-MP 0.3.DL-R1 e não funcionará em versões anteriores!
-
-:::
-
-Adiciona um novo modelo de personagem personalizado para download. Os arquivos do modelo serão armazenados em Documentos\GTA San Andreas User Files\SAMP\cache do jogador sob a pasta IP e Porta do Servidor em um arquivo no [formato CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
+Adiciona um novo modelo de personagem personalizado para download. Os arquivos do modelo serão armazenados em `Documentos\GTA San Andreas User Files\SAMP\cache` do jogador sob a pasta IP e Porta do Servidor em um arquivo no [formato CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nome    | Descrição                                                                                                                              |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | O [ID do modelo da skin](../resources/skins) original a ser usado como base (personagens originais são usados caso o download falhar). |
 | newid   | O ID do modelo da nova skin. Varia entre 20001 a 30000 (10000 slots) para serem usados posteriormente com SetPlayerSkin.               |
-| dffname | Nome do arquivo de extensão .dff localizado na pasta do servidor de modelos por padrão (configuração artpath).                         |
-| txdname | Nome do arquivo de textura de extensão .txd localizado na pasta do servidor de modelos por padrão (configuração artpath).              |
+| dffname | Nome do arquivo de extensão **.dff** localizado na pasta do servidor de modelos por padrão (configuração artpath).                     |
+| txdname | Nome do arquivo de textura de extensão **.txd** localizado na pasta do servidor de modelos por padrão (configuração artpath).          |
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: Falha ao executar a função.
+**0**: Falha ao executar a função.
 
 ## Exemplos
 
@@ -43,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-"useartwork" deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
+**useartwork** deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
 
 :::
 

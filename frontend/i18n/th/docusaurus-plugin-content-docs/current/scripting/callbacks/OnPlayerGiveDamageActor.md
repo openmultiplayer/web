@@ -25,9 +25,9 @@ This callback is called when a player gives damage to an actor.
 
 ## ส่งคืน
 
-1 - Callback will not be called in other filterscripts.
+**1** - Callback will not be called in other filterscripts.
 
-0 - Allows this callback to be called in other filterscripts.
+**0** - Allows this callback to be called in other filterscripts.
 
 It is always called first in filterscripts so returning 1 there blocks other filterscripts from seeing it.
 

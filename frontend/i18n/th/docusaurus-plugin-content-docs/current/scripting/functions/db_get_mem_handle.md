@@ -13,7 +13,7 @@ This function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
 
 ## คำอธิบาย
 
-Get memory handle for an SQLite database that was opened with db_open.
+Get **memory handle** for an SQLite database that was opened with db_open.
 
 | Name  | Description                                                 |
 | ----- | ----------------------------------------------------------- |

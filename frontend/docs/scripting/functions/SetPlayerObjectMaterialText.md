@@ -59,6 +59,6 @@ Color embedding can be used for multiple colors in the text.
 
 ## Advanced Map Editors
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) by Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) by RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus

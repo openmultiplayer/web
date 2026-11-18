@@ -12,11 +12,11 @@ Ikonekta ang isang NPC sa server.
 | Name     | Description                                                                                                                       |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | name[]   | Ang pangalan na dapat ikonekta ng NPC bilang. Dapat sundin ang parehong mga patakaran tulad ng mga karaniwang pangalan ng player. |
-| script[] | Ang pangalan ng script ng NPC na matatagpuan sa folder ng npcmodes (nang walang extension na .amx).                               |
+| script[] | Ang pangalan ng script ng NPC na matatagpuan sa folder ng **npcmodes** (nang walang extension na .amx).                           |
 
 ## Returns
 
-Ang function na ito ay palaging nag rereturn ng 1.
+Ang function na ito ay palaging nag rereturn ng **1**.
 
 ## Examples
 

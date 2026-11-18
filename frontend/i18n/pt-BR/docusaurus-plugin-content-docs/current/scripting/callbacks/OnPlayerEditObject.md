@@ -12,7 +12,7 @@ Esta callback é chamada quando um jogador termina de editar um objeto (EditObje
 | Name                   | Descrição                                                     |
 | ---------------------- | ------------------------------------------------------------- |
 | playerid               | O ID do jogador que edtiou um objeto                          |
-| playerobject           | 0 se for global, ou 1 se for um playerobject.                 |
+| playerobject           | **0** se for global, ou **1** se for um playerobject.         |
 | objectid               | O ID do objeto que foi editado.                               |
 | EDIT_RESPONSE:response | O [tipo de resposta](../resources/objecteditionresponsetypes) |
 | Float:fX               | O desclocamento de X para o objeto editado.                   |
@@ -24,9 +24,9 @@ Esta callback é chamada quando um jogador termina de editar um objeto (EditObje
 
 ## Retorno
 
-1 - Irá previnir que outro filterscript receba esta callback.
+**1** - Irá previnir que outro filterscript receba esta callback.
 
-0 - Indica que esta callback será passada para o próximo filterscript.
+**0** - Indica que esta callback será passada para o próximo filterscript.
 
 Sempre é chamada primeiro em filterscripts.
 

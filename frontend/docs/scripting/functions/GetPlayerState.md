@@ -15,7 +15,7 @@ Get a player's current state.
 
 ## Returns
 
-The player's current state as an integer (see: [Player States](../resources/playerstates)).
+The player's current **state** as an integer (see: [Player States](../resources/playerstates)).
 
 ## Examples
 

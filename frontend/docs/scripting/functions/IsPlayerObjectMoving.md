@@ -16,7 +16,7 @@ Checks if the given player objectid is moving.
 
 ## Returns
 
-1 if the player object is moving, 0 if not.
+**1** if the player object is moving, **0** if not.
 
 ## Examples
 

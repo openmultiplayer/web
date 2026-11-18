@@ -19,9 +19,9 @@ Vraća rotaciju vozila na svim osama kao kvaternion.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeno vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeno vozilo ne postoji.
 
 Rotacija vozila pohranjena je u navedenim varijablama.
 

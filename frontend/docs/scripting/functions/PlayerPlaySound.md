@@ -36,7 +36,7 @@ PlayerPlaySound(playerid, 1130, 0.0, 0.0, 10.0);
 
 :::tip
 
-Only use the coordinates if you want the sound to be played at a certain position. Set coordinates all to 0.0 to just play the sound.
+Only use the coordinates if you want the sound to be played at a certain position. Set coordinates all to **0.0** to just play the sound.
 
 :::
 

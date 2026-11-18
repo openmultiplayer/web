@@ -17,7 +17,7 @@ Calls a public function in any script that is loaded.
 
 ## ส่งคืน
 
-The value that the last public function returned.
+The value that the **last** public function returned.
 
 ## ตัวอย่าง
 

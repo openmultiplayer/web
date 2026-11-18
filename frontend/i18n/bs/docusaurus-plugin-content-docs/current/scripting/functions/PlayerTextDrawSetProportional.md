@@ -13,7 +13,7 @@ Prilagođava razmak između teksta proporcionalnom omjeru. Korisno pri korišće
 | -------- | ------------------------------------------------------------------ |
 | playerid | ID igrača čijem player-textdrawu treba postaviti proporcionalnost. |
 | text     | ID player-textdrawa za postaviti proporcionalnost.                 |
-| set      | 1 da omogućite proporcionalnost, 0 da onemogućite.                 |
+| set      | **1** da omogućite proporcionalnost, **0** da onemogućite.         |
 
 ## Returns
 

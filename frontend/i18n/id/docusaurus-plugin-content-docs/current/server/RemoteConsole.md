@@ -3,7 +3,7 @@ title: "Kendali Konsol Jarak Jauh (Remote Console - RCON)"
 description: Administrasi server jarak jauh.
 ---
 
-Kendali Konsole Jarak Jauh (RCON) adalah sebuah perintah cepat yang di mana Anda dapat menggunakan perintah RCON tanpa harus di dalam game atau di server Anda. Sejak versi 0.3b, RCON dihapuskan dari Penjelajah Server. Mulai sekarang, Anda harus menggunakan cara lain untuk mengakses RCON seperti penjelasan berikut.
+**Kendali Konsole Jarak Jauh** (RCON) adalah sebuah perintah cepat yang di mana Anda dapat menggunakan perintah RCON tanpa harus di dalam game atau di server Anda. Sejak versi 0.3b, **RCON** dihapuskan dari **Penjelajah Server**. Mulai sekarang, Anda harus menggunakan cara lain untuk mengakses **RCON** seperti penjelasan berikut.
 
 1. Buka sebuah editor teks.
 2. Tulis di baris pertama seperti ini: `rcon.exe IP PORT RCON-PASS` (Ganti IP/PORT/PASS dengan informasi server Anda)

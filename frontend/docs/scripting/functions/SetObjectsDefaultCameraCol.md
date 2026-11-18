@@ -11,9 +11,9 @@ tags: ["object", "camera"]
 
 Allows camera collisions with newly created objects to be disabled by default.
 
-| Name    | Description                                                                                         |
-| ------- | --------------------------------------------------------------------------------------------------- |
-| disable | 1 to disable camera collisions for newly created objects and 0 to enable them (enabled by default). |
+| Name    | Description                                                                                                   |
+| ------- | ------------------------------------------------------------------------------------------------------------- |
+| disable | **1** to disable camera collisions for _newly created objects_ and **0** to enable them (enabled by default). |
 
 ## Returns
 

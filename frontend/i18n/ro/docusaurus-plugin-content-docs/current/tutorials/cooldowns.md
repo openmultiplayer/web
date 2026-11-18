@@ -78,9 +78,9 @@ OnPlayerFinishRace(playerid)
 
 Aceste două exemple sunt comune și pot funcționa bine. Cu toate acestea, există o modalitate mult mai bună de a obține ambele rezultate, care este mult mai precisă și poate da temporizări ale cronometrului până la milisecunde!
 
-## Folosind `GetTickCount()` și `gettime()`
+## Folosind `GetTickCount` și `gettime`
 
-`GetTickCount()` este o funcție care vă oferă timpul în milisecunde de la deschiderea procesului serverului. `gettime()` returnează numărul de secunde de la 1 ianuarie 1970, cunoscut și sub numele de Unix Timestamp.
+`GetTickCount` este o funcție care vă oferă timpul în milisecunde de la deschiderea procesului serverului. `gettime` returnează numărul de secunde de la 1 ianuarie 1970, cunoscut și sub numele de Unix Timestamp.
 
 Dacă apelați oricare dintre aceste funcții în două momente diferite și scădeți prima dată din a doua, aveți brusc un interval între aceste două evenimente în milisecunde sau, respectiv, în secunde! Aruncați o privire la acest exemplu:
 
@@ -106,7 +106,7 @@ OnPlayerInteractWithServer(playerid)
 }
 ```
 
-Sau, alternativ, versiunea `gettime()`:
+Sau, alternativ, versiunea `gettime`:
 
 ```c
 static PlayerAllowedSeconds[MAX_PLAYERS];
@@ -201,7 +201,7 @@ OnPlayerFinishRace(playerid)
 
 Aici se întâmplă calculul intervalului, ei bine, spun calculul, este doar scăderea a două valori!
 
-GetTickCount() returnează numărul curent de căpușe, deci va fi mai mare decât numărul de căpușe inițial, ceea ce înseamnă că scădeți numărul de căpușe inițial din numărul curent de căpușe pentru a obține intervalul dintre cele două măsuri.
+GetTickCount returnează numărul curent de căpușe, deci va fi mai mare decât numărul de căpușe inițial, ceea ce înseamnă că scădeți numărul de căpușe inițial din numărul curent de căpușe pentru a obține intervalul dintre cele două măsuri.
 
 Deci, așa cum am spus, jucătorul termină cursa 1 minut și 40 de secunde mai târziu (100 de secunde sau 100.000 de milisecunde), GetTickCount va reveni la 160.000. Scadeți valoarea inițială (care este 60.000) din noua valoare (care este 160.000) și obțineți 100.000 milisecunde, adică 1 minut 40 secunde, care este timpul necesar jucătorului pentru a face cursa!
 
@@ -218,4 +218,4 @@ Cel mai bine este să folosiți o funcție care ia milisecundele și o converte�
 
 [Acest pachet](https://github.com/ScavengeSurvive/timeutil) conține o funcție de formatare a milisecundelor într-un șir.
 
-Sper că acest lucru a ajutat! Am scris-o pentru că am ajutat recent câteva persoane care nu știau cum să folosească `GetTickCount()` sau `gettime()` ca alternativă pentru temporizatoare sau pentru obținerea de intervale etc.
+Sper că acest lucru a ajutat! Am scris-o pentru că am ajutat recent câteva persoane care nu știau cum să folosească `GetTickCount` sau `gettime` ca alternativă pentru temporizatoare sau pentru obținerea de intervale etc.

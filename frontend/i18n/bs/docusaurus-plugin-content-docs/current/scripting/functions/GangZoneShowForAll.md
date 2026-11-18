@@ -9,16 +9,16 @@ tags: ["gangzone"]
 
 Prikazuje gangzonu sa željenom bojom svim igračima.
 
-| Ime   | Deskripcija                                                                                              |
-| ----- | -------------------------------------------------------------------------------------------------------- |
-| zone  | ID gangzone za prikazati (returnovana/vraćena od GangZoneCreate).                                        |
-| color | Boja za bljeskanje gangzone, kao cijeli broj ili hex u RGBA formatu boja. Podržana alfa transparentnost. |
+| Ime   | Deskripcija                                                                                                  |
+| ----- | ------------------------------------------------------------------------------------------------------------ |
+| zone  | ID gangzone za prikazati (returnovana/vraćena od GangZoneCreate).                                            |
+| color | Boja za bljeskanje gangzone, kao cijeli broj ili hex u **RGBA** formatu boja. Podržana alfa transparentnost. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena. Gangzona je prikazana svim igračima.
+**1**: Funkcija uspješno izvršena. Gangzona je prikazana svim igračima.
 
-0: Funkcija neuspješno izvršena. Gangzona ne postoji.
+**0**: Funkcija neuspješno izvršena. Gangzona ne postoji.
 
 ## Primjeri
 

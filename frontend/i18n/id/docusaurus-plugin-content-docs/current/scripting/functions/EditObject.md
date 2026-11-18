@@ -16,9 +16,9 @@ Memungkinkan Player untuk mengedit object (posisi dan rotasi) menggunakan mouse 
 
 ## Returns
 
-1: Function berhasil dijalankan. Sukses akan di laporkan ketika Object tidak di tentukan, Tetapi tidak akan terjadi apa-apa.
+**1**: Function berhasil dijalankan. Sukses akan di laporkan ketika Object tidak di tentukan, Tetapi tidak akan terjadi apa-apa.
 
-0: Function gagal di jalankan. Karena pemain tidak terhubung.
+**0**: Function gagal di jalankan. Karena pemain tidak terhubung.
 
 ## Contoh
 
@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Anda dapat menggerakkan kamera saat mengedit dengan menekan dan menahan spasi (atau W di kendaraan) dan menggerakkan mouse Anda.
+Anda dapat menggerakkan kamera saat mengedit dengan menekan dan menahan **spasi** (atau **W** di kendaraan) dan menggerakkan mouse Anda.
 
 :::
 

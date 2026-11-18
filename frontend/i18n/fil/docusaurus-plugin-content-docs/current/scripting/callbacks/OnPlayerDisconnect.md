@@ -16,9 +16,9 @@ Ang callback na ito ay natatawag kapag ang player ay nag diskonekta mula sa serv
 
 ## Returns
 
-0 - Ay hindi hahayaan ang ibang filterscript na ma gamit ang callback na ito.
+**0** - Ay hindi hahayaan ang ibang filterscript na ma gamit ang callback na ito.
 
-1 - Iniindika na ang callback na ito ay pwedeng ma-ipasa o magamit sa susunod the filterscript.
+**1** - Iniindika na ang callback na ito ay pwedeng ma-ipasa o magamit sa susunod the filterscript.
 
 Lagi itong natatawag una sa mga filterscript.
 

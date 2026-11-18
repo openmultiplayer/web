@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ova se funkcija koristi za promjenu količine timova korištenih u gamemodeu. Nema očigledan način upotrebe, ali može pomoći da se naznači broj timova koji se koriste za bolje (efikasnije) interno rukovanje. Ovu funkciju treba koristiti samo u OnGameModeInit povratnom pozivu. Važno: Ovdje možete proslijediti 2 milijarde ako želite, ova funkcija uopće nema efekta.
+Ova se funkcija koristi za promjenu količine timova korištenih u gamemodeu. Nema očigledan način upotrebe, ali može pomoći da se naznači broj timova koji se koriste za bolje (efikasnije) interno rukovanje. Ovu funkciju treba koristiti samo u OnGameModeInit povratnom pozivu. **Važno**: Ovdje možete proslijediti 2 milijarde ako želite, ova funkcija uopće nema efekta.
 
 | Ime   | Deskripcija                    |
 | ----- | ------------------------------ |

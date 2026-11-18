@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Description
 
-This callback is called when a player starts to exit a vehicle.
+This callback is called when a player **starts** to exit a vehicle.
 
 | Name      | Description                                     |
 | --------- | ----------------------------------------------- |

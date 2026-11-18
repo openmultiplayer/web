@@ -9,16 +9,16 @@ tags: ["player", "vehicle"]
 
 Checks if a player is in a specific vehicle.
 
-| Name      | Description                               |
-| --------- | ----------------------------------------- |
-| playerid  | ID of the player.                         |
-| vehicleid | ID of the vehicle. Note: NOT the modelid! |
+| Name      | Description                                   |
+| --------- | --------------------------------------------- |
+| playerid  | ID of the player.                             |
+| vehicleid | ID of the vehicle. **Note:** NOT the modelid! |
 
 ## ส่งคืน
 
-1 - Player IS in the vehicle.
+**1** - Player IS in the vehicle.
 
-0 - Player is NOT in the vehicle.
+**0** - Player is NOT in the vehicle.
 
 ## ตัวอย่าง
 

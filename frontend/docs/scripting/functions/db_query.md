@@ -22,7 +22,7 @@ The function is used to execute an SQL query on an opened SQLite database.
 
 ## Returns
 
-The query result index (starting at 1) if successful, otherwise 0.
+The query result index (**starting at 1**) if successful, otherwise 0.
 
 ## Examples
 
@@ -98,7 +98,7 @@ public OnGameModeExit()
 
 :::warning
 
-Always free results by using [db_free_result](db_free_result)!
+**Always** free results by using [db_free_result](db_free_result)!
 
 :::
 

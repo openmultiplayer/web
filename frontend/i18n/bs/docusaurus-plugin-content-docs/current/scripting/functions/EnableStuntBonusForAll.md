@@ -9,9 +9,9 @@ tags: []
 
 Omogućuje ili onemogućava stunt bonuse za sve igrače. Ako je omogućeno, igrači će primati nagrade kada izvedu neki stunt u vozilu (npr. wheelie).
 
-| Ime    | Deskripcija                                       |
-| ------ | ------------------------------------------------- |
-| enable | 1 da uključite stunt bonuse i 0 da ih isključite. |
+| Ime    | Deskripcija                                               |
+| ------ | --------------------------------------------------------- |
+| enable | **1** da uključite stunt bonuse i **0** da ih isključite. |
 
 ## Returns
 

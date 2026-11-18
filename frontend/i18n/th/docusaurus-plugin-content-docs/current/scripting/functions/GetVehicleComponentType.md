@@ -15,7 +15,7 @@ Find out what type of component a certain ID is.
 
 ## ส่งคืน
 
-The component slot ID of the specified component or -1 if the component is invalid.
+The component slot ID of the specified component or **-1** if the component is invalid.
 
 ## ตัวอย่าง
 

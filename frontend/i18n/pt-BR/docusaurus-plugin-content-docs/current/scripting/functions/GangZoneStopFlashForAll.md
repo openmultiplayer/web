@@ -15,9 +15,9 @@ Pare uma Gangzone de piscar para todos os jogadores.
 
 ## Retorno
 
-1: A função foi executada com sucesso. Sucesso é relatado mesmo que a gangzone não começe a piscar.
+**1**: A função foi executada com sucesso. Sucesso é relatado mesmo que a gangzone não começe a piscar.
 
-0: A função falhou ao ser executada. A gangzone especificada não existe.
+**0**: A função falhou ao ser executada. A gangzone especificada não existe.
 
 ## Exemplos
 

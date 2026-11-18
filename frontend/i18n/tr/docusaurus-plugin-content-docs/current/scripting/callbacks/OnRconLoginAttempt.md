@@ -9,11 +9,11 @@ tags: []
 
 Bu fonksiyon, bir oyuncu RCON olarak oturum açmaya çalıştığında giriş denemesi başarısız olsa bile çağrılır.
 
-| Parametre  | Açıklama                                                  |
-| ---------- | --------------------------------------------------------- |
-| ip[]       | RCON oturumu açmaya çalışan IP adresi.                    |
-| password[] | Oturum açmaya çalışırken girilen parola.                  |
-| success    | Giriş sonucu. Parola yanlışsa 0, doğruysa 1 olarak döner. |
+| Parametre  | Açıklama                                                          |
+| ---------- | ----------------------------------------------------------------- |
+| ip[]       | RCON oturumu açmaya çalışan IP adresi.                            |
+| password[] | Oturum açmaya çalışırken girilen parola.                          |
+| success    | Giriş sonucu. Parola yanlışsa **0**, doğruysa **1** olarak döner. |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -46,7 +46,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-- Bu fonksiyon yalnızca /rcon login komutu oyun içinde kullanıldığında çağrılır.
+- Bu fonksiyon yalnızca `/rcon login` komutu oyun içinde kullanıldığında çağrılır.
 - Fonksiyon, yalnızca oyuncu henüz oturum açmamışsa çağrılır. Oyuncu oturum açtığında, bunun yerine OnRconCommand çağrılır.
 
 :::

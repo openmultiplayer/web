@@ -891,7 +891,7 @@ Hello                    World
 
 Na era da máquina de escrever antiga, ela tinha um uso mais popular, era usada para passar para a próxima linha verticalmente, mas agora não é mais o caso, não tem nenhum uso perceptível hoje em dia, e isso inclui impressoras modernas e até linguagens de programação, e o Pawn não é exceção.
 
-- **\_A sequência de escape “Barra invertida” - `\*`**
+- **A sequência de escape “Barra invertida” - `\\`**
 
 Como vimos, a barra invertida é considerada como o caractere de escape, então sempre que o programa a identifica, ele pensa nela como um ponto de partida de alguma sequência de escape, não a vê como um caractere independente e, portanto, dará um erro de compilação (_se não for seguido por um caractere válido_), ou não irá imprimi-la, no caso do Pawn, o compilador irá gerar um erro (_erro 027: constante de caractere inválido_). Felizmente, podemos resolver esse problema escapando da barra invertida, e isso é feito prefixando outra barra invertida:
 

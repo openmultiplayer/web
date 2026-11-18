@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-- This function will only work when lag compensation is enabled.
+- This function will only work when lag compensation is **enabled**.
 - If the player hit nothing, the hit positions will be 0. This means you can't currently calculate how far a bullet travels through open air.
 - The function will return last shot information even if that shot was desynced (by returning 0 in [OnPlayerWeaponShot](../callbacks/OnPlayerWeaponShot)).
 

@@ -15,9 +15,9 @@ Esta função, a partir da 0.3d está descontinuada. Por favor veja [OnPlayerCli
 
 Esta função vai determinar se Administradores RCON vão ser teleportados para a marcação quando definirem uma.
 
-| Nome  | Descrição                              |
-| ----- | -------------------------------------- |
-| allow | 0 para desabilitar e 1 para habilitar. |
+| Nome  | Descrição                                      |
+| ----- | ---------------------------------------------- |
+| allow | **0** para desabilitar e **1** para habilitar. |
 
 ## Retorno
 

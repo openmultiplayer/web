@@ -9,16 +9,16 @@ tags: ["textdraw"]
 
 Uključite ili isključite da li textdraw koristi box ili ne.
 
-| Ime  | Deskripcija                               |
-| ---- | ----------------------------------------- |
-| text | ID textdrawa za uključiti/isključiti box. |
-| use  | 1 za prikazati box 0 za sakriti box.      |
+| Ime  | Deskripcija                                  |
+| ---- | -------------------------------------------- |
+| text | ID textdrawa za uključiti/isključiti box.    |
+| use  | **1** za prikazati box **0** za sakriti box. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni textdraw ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeni textdraw ne postoji.
 
 ## Primjeri
 

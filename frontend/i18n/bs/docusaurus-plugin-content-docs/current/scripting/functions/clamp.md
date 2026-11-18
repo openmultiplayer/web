@@ -17,7 +17,7 @@ Forsira vrijednost da bude unutar raspona.
 
 ## Returns
 
-Vrijednost, ukoliko se nalazi u rasponu min-max, min, ako je vrijednost manja od min ili max, ako je vrijednost veća od max.
+**Vrijednost**, ukoliko se nalazi u rasponu min-max, **min**, ako je vrijednost manja od min ili **max**, ako je vrijednost veća od max.
 
 ## Primjeri
 

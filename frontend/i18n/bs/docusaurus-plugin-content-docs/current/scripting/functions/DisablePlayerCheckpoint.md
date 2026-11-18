@@ -15,9 +15,9 @@ Onemogućava (skriva/uništava) checkpoint postavljenog za igrača. Igrači mogu
 
 ## Returns
 
-1: Funkcija uspješno izvršena. Uspješno se također returna/vraća ako igrač nema trenutno prikazan checkpoint
+**1**: Funkcija uspješno izvršena. Uspješno se također returna/vraća ako igrač nema trenutno prikazan checkpoint
 
-0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
 ## Primjeri
 

@@ -34,7 +34,7 @@ public OnPlayerSpawn(playerid)
 
 :::warning
 
-Parametar vještine NIJE ID oružja, to je vrsta vještine. Kliknite ovdje za listu vrsta vještina.
+Parametar **vještine** NIJE ID oružja, to je vrsta vještine. Kliknite ovdje za listu vrsta vještina.
 
 :::
 

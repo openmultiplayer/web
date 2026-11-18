@@ -16,7 +16,7 @@ Replace the texture of an object with the texture from another model in the game
 | modelid                | The modelid on which the replacement texture is located. Use 0 for alpha. Use -1 to change the material color without altering the texture. |
 | const textureLibrary[] | The name of the txd file which contains the replacement texture (use "none" if not required)                                                |
 | const textureName[]    | The name of the texture to use as the replacement (use "none" if not required)                                                              |
-| materialColour         | The object color to set, as an integer or hex in ARGB color format. Using 0 keeps the existing material color.                              |
+| materialColour         | The object color to set, as an integer or hex in **ARGB** color format. Using **0** keeps the existing material color.                      |
 
 ## Returns
 
@@ -55,7 +55,7 @@ Vertex lighting of the object will disappear if material color is changed.
 
 :::warning
 
-You MUST use ARGB color format, not RGBA like used in client messages etc.
+You MUST use **ARGB** color format, not RGBA like used in client messages etc.
 
 :::
 
@@ -66,6 +66,6 @@ You MUST use ARGB color format, not RGBA like used in client messages etc.
 
 ## Advanced Map Editors
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) by Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) by RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) by Pottus

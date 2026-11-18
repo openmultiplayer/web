@@ -37,7 +37,7 @@ public OnPlayerUpdate(playerid)
 
 ## Opmerkingen
 
-Alleen de FUNCTIE van toetsen wordt gedetecteerd; niet de fysieke toets. Bijvoorbeeld SPRINT i.p.v. SPATIE. In voertuigen worden A en D niet herkend; W en S wel via `keys`.
+Alleen de FUNCTIE van toetsen wordt gedetecteerd; niet de fysieke toets. Bijvoorbeeld **SPRINT** i.p.v. **SPATIE**. In voertuigen worden A en D niet herkend; W en S wel via `keys`.
 
 ## Gerelateerde Callbacks
 

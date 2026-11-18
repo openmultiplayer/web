@@ -12,7 +12,7 @@ Creates a 3D Text Label at a specific location in the world
 | Name               | Description                                                                    |
 | ------------------ | ------------------------------------------------------------------------------ |
 | const text[]       | The initial text string.                                                       |
-| colour             | The text Color, as an integer or hex in RGBA color format                      |
+| colour             | The text Color, as an integer or hex in **RGBA** color format                  |
 | Float:x            | X-Coordinate                                                                   |
 | Float:y            | Y-Coordinate                                                                   |
 | Float:z            | Z-Coordinate                                                                   |

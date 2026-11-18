@@ -19,7 +19,7 @@ Verifica se um ator foi transmitido para um jogador.
 
 ## Retornos
 
-Esta função retorna 1 se o ator for transmitido para o jogador ou 0 se não for.
+Esta função retorna **1** se o ator for transmitido para o jogador ou **0** se não for.
 
 ## Exemplos
 

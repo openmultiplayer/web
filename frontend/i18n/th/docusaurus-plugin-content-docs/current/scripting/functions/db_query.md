@@ -16,7 +16,7 @@ This function is used to execute an SQL query on an opened SQLite database.
 
 ## ส่งคืน
 
-The query result index (starting at 1).
+The query result index (**starting at 1**).
 
 ## ตัวอย่าง
 
@@ -102,7 +102,7 @@ GetNameBySpawnID(spawn_id)
 
 :::warning
 
-Always free the result by using db_free_result!
+**Always** free the result by using db_free_result!
 
 :::
 

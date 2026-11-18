@@ -15,7 +15,7 @@ Provjerite je li igrač trenutno u checkpointu/markeru, ovo bi se moglo koristit
 
 ## Returns
 
-false/lažno ako igrač nije u checkpointu/markeru, uostalom true/tačno
+**false**/lažno ako igrač nije u checkpointu/markeru, uostalom **true**/tačno
 
 ## Primjeri
 

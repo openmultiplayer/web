@@ -112,7 +112,7 @@ This functions writes to the file in UTF-8, which does not support some localize
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
+Using an **invalid handle** will crash your server! Get a **valid handle** by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 

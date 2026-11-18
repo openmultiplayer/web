@@ -18,7 +18,7 @@ Gets an integer player variable's value.
 
 The integer value of the specified player variable.
 
-It will still return 0 if the variable is not set, or the player does not exist.
+It will still return **0** if the variable is not set, or the player does not exist.
 
 ## Examples
 

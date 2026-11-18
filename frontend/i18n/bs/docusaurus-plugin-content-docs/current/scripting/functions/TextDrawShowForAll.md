@@ -15,9 +15,9 @@ Prikazuje textdraw svim igračima.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni textdraw ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeni textdraw ne postoji.
 
 ## Primjeri
 

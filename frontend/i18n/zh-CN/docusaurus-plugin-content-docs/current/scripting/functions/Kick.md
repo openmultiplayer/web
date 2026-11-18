@@ -15,13 +15,13 @@ tags: ["玩家", "管理"]
 
 ## 返回值
 
-此函数总是返回 1，即使执行失败（指定玩家不存在）。
+此函数总是返回 **1**，即使执行失败（指定玩家不存在）。
 
 ## 注意事项
 
 :::warning
 
-任何在 Kick()之前直接执行的操作（如使用[SendClientMessage](SendClientMessage)发送消息）将无法送达玩家。必须使用定时器延迟踢出操作。
+任何在 Kick之前直接执行的操作（如使用[SendClientMessage](SendClientMessage)发送消息）将无法送达玩家。必须使用定时器延迟踢出操作。
 
 :::
 

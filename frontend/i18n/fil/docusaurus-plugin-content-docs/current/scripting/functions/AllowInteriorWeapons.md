@@ -9,9 +9,9 @@ tags: []
 
 I-toggle kung pinapayagan o hindi ang paggamit ng mga armas sa interior.
 
-| Name  | Description                                                                                                                    |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------ |
-| allow | 1 upang paganahin ang mga armas sa mga interior (naka-enable bilang default), 0 upang i-disable ang mga armas sa mga interior. |
+| Name  | Description                                                                                                                            |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| allow | **1** upang paganahin ang mga armas sa mga interior (naka-enable bilang default), **0** upang i-disable ang mga armas sa mga interior. |
 
 ## Returns
 

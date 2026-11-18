@@ -15,9 +15,9 @@ Sets a vehicle back to the position at where it was created.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The vehicle does not exist
+**0**: The function failed to execute. The vehicle does not exist
 
 ## ตัวอย่าง
 

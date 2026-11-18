@@ -19,7 +19,7 @@ Kunin ang model ID ng isang object (CreateObject).
 
 Ang model ID ng object.
 
--1 kung walang object.
+**-1** kung walang object.
 
 ## Examples
 

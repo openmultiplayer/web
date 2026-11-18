@@ -16,7 +16,7 @@ Acest callback este apelat atunci când un jucător introduce o comandă în cha
 
 ## Returns
 
-Este întotdeauna numit primul în filterscript-uri, astfel încât returnarea 1 blochează alte scripturi să-l vadă.
+Este întotdeauna numit primul în filterscript-uri, astfel încât returnarea **1** blochează alte scripturi să-l vadă.
 
 ## Examples
 

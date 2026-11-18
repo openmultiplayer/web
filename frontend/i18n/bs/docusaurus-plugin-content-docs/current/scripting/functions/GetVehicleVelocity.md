@@ -18,9 +18,9 @@ Dobij brzinu vozila na X,Y i Z osi.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeno vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeno vozilo ne postoji.
 
 Brzina vozila pohranjena je u navedenim varijablama.
 

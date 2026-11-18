@@ -18,7 +18,7 @@ Get the contents of field with specified name.
 
 ## ส่งคืน
 
-Returns 1 if successful, otherwise 0 if DBResult:dbresult is a NULL reference or the column index not available.
+Returns **1** if successful, otherwise **0** if **DBResult:dbresult** is a _NULL_ reference or the column index not available.
 
 ## ตัวอย่าง
 
@@ -57,7 +57,7 @@ GetNameBySpawnID(spawn_id)
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using db_query. But it's protected against _NULL_ references.
 
 :::
 

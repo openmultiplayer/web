@@ -9,18 +9,18 @@ tags: ["player", "vehicle"]
 
 Postavi parametre vozila za igrača.
 
-| Ime         | Deskripcija                                                                                         |
-| ----------- | --------------------------------------------------------------------------------------------------- |
-| vehicle     | ID vozila za postaviti parametre.                                                                   |
-| playerid    | ID igrača za kojeg treba postaviti parametre vozila.                                                |
-| objective   | 0 da onemogućite cilj (objective) ili 1 da ga prikažete. Ovo je klimava žuta strelica iznad vozila. |
-| doorslocked | 0 za otključati vrata ili 1 da ih zaključate.                                                       |
+| Ime         | Deskripcija                                                                                                 |
+| ----------- | ----------------------------------------------------------------------------------------------------------- |
+| vehicle     | ID vozila za postaviti parametre.                                                                           |
+| playerid    | ID igrača za kojeg treba postaviti parametre vozila.                                                        |
+| objective   | **0** da onemogućite cilj (objective) ili **1** da ga prikažete. Ovo je klimava žuta strelica iznad vozila. |
+| doorslocked | **0** za otključati vrata ili **1** da ih zaključate.                                                       |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač i/ili vozilo ne postoje.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač i/ili vozilo ne postoje.
 
 ## Primjeri
 

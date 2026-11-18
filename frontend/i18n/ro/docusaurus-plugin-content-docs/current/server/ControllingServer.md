@@ -73,7 +73,7 @@ Pentru a adăuga un ban, pur și simplu adăugați un obiect ca acesta în array
 
 Înlocuiți `IP_AICI` cu IP-ul pe care doriți să îl banați.
 
-##### Funcția Ban()
+##### Funcția Ban
 
 Funcția [Ban](../scripting/functions/Ban) poate fi folosită ca să banați un jucător din script. Funcția [BanEx](../scripting/functions/BanEx) este la fel, doar că puteți adăuga și un motiv:
 
@@ -195,7 +195,7 @@ Acestea sunt comenzile pe care le puteți folosi ca admin:
 | `/rcon weburl [URL server]`        | Schimbă URL-ul serverului în masterlists/SA-MP client.                                                                                                          |
 | `/rcon unloadfs`                   | Dezactivează filterscript-ul respectiv (_exemplu: /rcon unloadfs adminfs_).                                                                                     |
 | `/rcon reloadfs`                   | Reîncarcă filterscriptul respectiv (_examplu: /rcon reloadfs adminfs_).                                                                                         |
-| `/rcon rcon\_password [parolă]`    | Schimbă parola RCON.                                                                                                                                            |
+| `/rcon rcon_password [parolă]`     | Schimbă parola RCON.                                                                                                                                            |
 | `/rcon password [parolă]`          | Setează/resetează parola serverului.                                                                                                                            |
 | `/rcon messageslimit [număr]`      | Schimbă numărul de mesaje pe care un jucător le poate să le trimită. (implicit 500)                                                                             |
 | `/rcon ackslimit [număr]`          | Schimbă limita de acks (implicit 3000)                                                                                                                          |

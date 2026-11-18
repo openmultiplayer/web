@@ -15,7 +15,7 @@ Convert a string to an integer.
 
 ## Returns
 
-The integer value of the string. '0 if the string is not numeric.
+The integer value of the string. **0** if the string is not numeric.
 
 ## Examples
 

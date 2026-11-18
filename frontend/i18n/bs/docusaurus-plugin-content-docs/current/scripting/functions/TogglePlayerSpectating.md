@@ -9,16 +9,16 @@ tags: ["player"]
 
 Uključite ili isključite da li je igrač u režimu spectatora/gledatelja. Dok je u spectator režimu igrač može gledati ostale igrače i vozila. Nakon korištenja ove funkcije ili PlayerSpectatePlayer ili PlayerSpectateVehicle mora biti korišten.
 
-| Ime      | Deskripcija                                           |
-| -------- | ----------------------------------------------------- |
-| playerid | ID koji bi trebao gledati                             |
-| toggle   | 1 da uključite spectate-anje/gledanje 0 da isključite |
+| Ime      | Deskripcija                                                   |
+| -------- | ------------------------------------------------------------- |
+| playerid | ID koji bi trebao gledati                                     |
+| toggle   | **1** da uključite spectate-anje/gledanje **0** da isključite |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Igrač ne postoji.
 
 ## Primjeri
 

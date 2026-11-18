@@ -15,9 +15,9 @@ Suriin kung ang isang manlalaro ay naka-log in bilang isang RCON admin.
 
 ## Returns
 
-1: Ang player ay isang RCON admin.
+**1**: Ang player ay isang RCON admin.
 
-0: Ang manlalaro ay HINDI isang RCON admin.
+**0**: Ang manlalaro ay HINDI isang RCON admin.
 
 ## Examples
 

@@ -15,7 +15,7 @@ Dobija procenat gubitka paketa (packet loss) igrača. Gubitak paketa znači da s
 
 ## Returns
 
-Procenat gubitka paketa kao float. 0 ako igrač nije povezan.
+Procenat gubitka paketa kao float. **0** ako igrač nije povezan.
 
 ## Primjeri
 

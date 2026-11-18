@@ -16,7 +16,7 @@ Fonksiyon, oyuncu sohbet mesajı gönderdiğinde çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-Her zaman Filterscript komutlarında ilk olarak çağrılır, bu nedenle 0 döndürmek diğer scriptlerin görmesini engeller.
+Her zaman Filterscript komutlarında ilk olarak çağrılır, bu nedenle **0** döndürmek diğer scriptlerin görmesini engeller.
 
 ## örnekler
 

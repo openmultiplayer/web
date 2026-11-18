@@ -9,24 +9,24 @@ tags: ["player"]
 
 Acest callback este apelat atunci când un jucător termină editarea unui obiect (EditObject/EditPlayerObject).
 
-| Nume                   | Descriere                                                      |
-| ---------------------- | -------------------------------------------------------------- |
-| playerid               | ID-ul jucătorului care a editat un obiect                      |
-| playerobject           | 0 dacă este un obiect global sau 1 dacă este un obiect player. |
-| objectid               | ID-ul obiectului editat                                        |
-| EDIT_RESPONSE:response | [type of response](../resources/objecteditionresponsetypes)    |
-| Float:fX               | Decalajul X pentru obiectul care a fost editat                 |
-| Float:fY               | Decalajul Y pentru obiectul care a fost editat                 |
-| Float:fZ               | Decalajul Z pentru obiectul care a fost editat                 |
-| Float:fRotX            | Rotația X pentru obiectul care a fost editat                   |
-| Float:fRotY            | Rotația Y pentru obiectul care a fost editat                   |
-| Float:fRotZ            | Rotația Z pentru obiectul care a fost editat                   |
+| Nume                   | Descriere                                                              |
+| ---------------------- | ---------------------------------------------------------------------- |
+| playerid               | ID-ul jucătorului care a editat un obiect                              |
+| playerobject           | **0** dacă este un obiect global sau **1** dacă este un obiect player. |
+| objectid               | ID-ul obiectului editat                                                |
+| EDIT_RESPONSE:response | [type of response](../resources/objecteditionresponsetypes)            |
+| Float:fX               | Decalajul X pentru obiectul care a fost editat                         |
+| Float:fY               | Decalajul Y pentru obiectul care a fost editat                         |
+| Float:fZ               | Decalajul Z pentru obiectul care a fost editat                         |
+| Float:fRotX            | Rotația X pentru obiectul care a fost editat                           |
+| Float:fRotY            | Rotația Y pentru obiectul care a fost editat                           |
+| Float:fRotZ            | Rotația Z pentru obiectul care a fost editat                           |
 
 ## Returnări
 
-1 - Va împiedica alte scripturi să primească acest callback.
+**1** - Va împiedica alte scripturi să primească acest callback.
 
-0 - Indică faptul că acest callback va fi transmis următorului script.
+**0** - Indică faptul că acest callback va fi transmis următorului script.
 
 Este întotdeauna numit primul în filterscript-uri.
 

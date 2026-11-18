@@ -23,9 +23,9 @@ Ovaj callback je pozvan kada se uključi/isključi sirena vozila.
 
 ## Returns
 
-1 - Spriječiti će da gamemode prima ovaj callback.
+**1** - Spriječiti će da gamemode prima ovaj callback.
 
-0 - Ukazuje da će ovaj callback biti proslijeđen do gamemodea.
+**0** - Ukazuje da će ovaj callback biti proslijeđen do gamemodea.
 
 Uvijek je pozvan prvo u filterskriptama.
 

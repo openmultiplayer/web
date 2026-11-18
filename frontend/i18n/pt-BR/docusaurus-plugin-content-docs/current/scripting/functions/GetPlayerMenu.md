@@ -15,7 +15,7 @@ Obtém o ID do menu que o player está a visualizar no momento (mostrado por Sho
 
 ## Retorno
 
-O ID do menu visualizado no momento pelo jogador, ou INVALID_MENU (255) se nenhum menu for mostrado. O valor retornado é marcado com Menu:.
+O ID do menu visualizado no momento pelo jogador, ou INVALID_MENU (255) se nenhum menu for mostrado. O valor retornado é marcado com **Menu:**.
 
 ## Exemplos
 

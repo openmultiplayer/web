@@ -16,9 +16,9 @@ Check if a player has an object attached in the specified index (slot).
 
 ## ส่งคืน
 
-1: The specified slot is used for an attached object.
+**1**: The specified slot is used for an attached object.
 
-0: The specified slot is not in use for an attached object.
+**0**: The specified slot is not in use for an attached object.
 
 ## ตัวอย่าง
 

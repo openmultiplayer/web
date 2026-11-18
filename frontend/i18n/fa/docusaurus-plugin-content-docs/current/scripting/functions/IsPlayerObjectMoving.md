@@ -16,7 +16,7 @@ tags: ["player", "object", "playerobject"]
 
 ## مقادیر برگشتی
 
-1 اگه player object در حال حرکت باشه، 0 اگه نباشه.
+**1** اگه player object در حال حرکت باشه، **0** اگه نباشه.
 
 ## مثال‌ها
 

@@ -19,7 +19,7 @@ Create an explosion at the specified coordinates.
 
 ## Returns
 
-This function always returns 1, even when the explosion type and/or radius values are invalid.
+This function always returns **1**, even when the explosion type and/or radius values are invalid.
 
 ## Examples
 

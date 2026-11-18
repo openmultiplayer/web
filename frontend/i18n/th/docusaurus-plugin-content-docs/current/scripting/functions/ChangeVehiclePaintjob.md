@@ -16,7 +16,7 @@ Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).
 
 ## ส่งคืน
 
-This function always returns 1 (success), even if the vehicle passed is not created.
+This function always returns **1** (success), even if the vehicle passed is not created.
 
 ## ตัวอย่าง
 

@@ -703,4 +703,4 @@ while (i < 10)
 }
 ```
 
-Daha fazla bilgi için do ve for'a bakabilirsiniz.
+Daha fazla bilgi için **do** ve **for**'a bakabilirsiniz.

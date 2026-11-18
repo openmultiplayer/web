@@ -12,7 +12,7 @@ Displays a message in chat to all players. This is a multi-player equivalent of 
 | Name             | Description                                       |
 | ---------------- | ------------------------------------------------- |
 | colour           | The color of the message (0xRRGGBBAA Hex format). |
-| const format[]   | The message to show (max 144 characters).         |
+| const format[]   | The message to show **(max 144 characters)**.     |
 | OPEN_MP_TAGS:... | Indefinite number of arguments of any tag.        |
 
 ## Returns

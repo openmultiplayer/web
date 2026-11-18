@@ -15,7 +15,7 @@ Dobija količinu vremena (u milisekundama) za koje je igrač povezan na server.
 
 ## Returns
 
-Ova funkcija vraća količinu vremena (u milisekundama) za koje je igrač povezan sa serverom. 0 je vraćeno ako igrač nije konektovan.
+Ova funkcija vraća količinu vremena (u milisekundama) za koje je igrač povezan sa serverom. **0** je vraćeno ako igrač nije konektovan.
 
 ## Primjeri
 

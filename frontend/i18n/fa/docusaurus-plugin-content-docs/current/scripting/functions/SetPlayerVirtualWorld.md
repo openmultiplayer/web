@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-دنیای مجازی پیش‌فرض ۰ است.
+دنیای مجازی پیش‌فرض **۰** است.
 
 :::
 

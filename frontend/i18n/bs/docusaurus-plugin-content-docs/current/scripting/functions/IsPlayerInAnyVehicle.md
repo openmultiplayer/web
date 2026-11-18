@@ -15,9 +15,9 @@ Provjerava da li je igrač unutar bilo kojeg vozila (kao vozač ili suvozač).
 
 ## Returns
 
-1: Igrač je u vozilu.
+**1**: Igrač je u vozilu.
 
-0: Igrač nije u vozilu.
+**0**: Igrač nije u vozilu.
 
 ## Primjeri
 

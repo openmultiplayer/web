@@ -17,7 +17,7 @@ Vraća normu (dužinu) navedenog vektora.
 
 ## Returns
 
-Norma (dužina) predviđenog vektora kao float.
+Norma (dužina) predviđenog vektora kao **float**.
 
 ## Primjeri
 

@@ -16,9 +16,9 @@ Set plat nomor kendaraan.
 
 ## Returns
 
-1: Fungsi berhasil dijalankan.
+**1**: Fungsi berhasil dijalankan.
 
-0: Fungsi gagal dijalankan. Ini berarti kendaraan tidak ada.
+**0**: Fungsi gagal dijalankan. Ini berarti kendaraan tidak ada.
 
 ## Contoh
 

@@ -15,16 +15,16 @@ tags: ["player"]
 
 Toggle camera targeting functions for a player. Disabled by default to save bandwidth.
 
-| Name     | Description                                                    |
-| -------- | -------------------------------------------------------------- |
-| playerid | The ID of the player to toggle camera targeting functions for. |
-| enable   | 1 to enable camera targeting functions and 0 to disable them.  |
+| Name     | Description                                                           |
+| -------- | --------------------------------------------------------------------- |
+| playerid | The ID of the player to toggle camera targeting functions for.        |
+| enable   | **1** to enable camera targeting functions and **0** to disable them. |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player is not connected.
+**0**: The function failed to execute. The player is not connected.
 
 ## ตัวอย่าง
 

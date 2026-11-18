@@ -15,7 +15,7 @@ Check the state of a player's weapon.
 
 ## ส่งคืน
 
-The state of the player's weapon. 0 if player specified does not exist.
+The state of the player's weapon. **0** if player specified does not exist.
 
 ## ตัวอย่าง
 

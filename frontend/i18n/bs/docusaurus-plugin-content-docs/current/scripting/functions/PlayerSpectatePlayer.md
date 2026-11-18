@@ -17,9 +17,9 @@ Daje mogućnost igraču da spectate-a (nadgleda) drugog igrača.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Jedan od navedenih igrača ne postoji.
+**0**: Funkcija neuspješno izvršena. Jedan od navedenih igrača ne postoji.
 
 ## Primjeri
 

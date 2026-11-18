@@ -62,7 +62,7 @@ public OnPlayerUpdate(playerid)
 
 :::tip
 
-此函数仅返回玩家视角方向上的演员 ID，如需检测玩家是否正在瞄准该演员，请使用[GetPlayerTargetActor](GetPlayerTargetActor)
+此函数仅返回玩家**视角方向**上的演员 ID，如需检测玩家是否正在**瞄准**该演员，请使用[GetPlayerTargetActor](GetPlayerTargetActor)
 
 :::
 

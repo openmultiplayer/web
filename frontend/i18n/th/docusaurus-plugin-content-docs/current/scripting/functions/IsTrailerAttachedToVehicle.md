@@ -15,9 +15,9 @@ Checks if a vehicle has a trailer attached to it. Use GetVehicleTrailer to get t
 
 ## ส่งคืน
 
-1: The vehicle has a trailer attached.
+**1**: The vehicle has a trailer attached.
 
-0: The vehicle does not have a trailer attached.
+**0**: The vehicle does not have a trailer attached.
 
 ## ตัวอย่าง
 

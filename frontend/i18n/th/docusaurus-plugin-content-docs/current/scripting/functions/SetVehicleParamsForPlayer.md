@@ -9,18 +9,18 @@ tags: ["player", "vehicle"]
 
 Set the parameters of a vehicle for a player.
 
-| Name        | Description                                                                                   |
-| ----------- | --------------------------------------------------------------------------------------------- |
-| vehicle     | The ID of the vehicle to set the parameters of.                                               |
-| playerid    | The ID of the player to set the vehicle's parameters for.                                     |
-| objective   | 0 to disable the objective or 1 to show it. This is a bobbing yellow arrow above the vehicle. |
-| doorslocked | 0 to unlock the doors or 1 to lock them.                                                      |
+| Name        | Description                                                                                           |
+| ----------- | ----------------------------------------------------------------------------------------------------- |
+| vehicle     | The ID of the vehicle to set the parameters of.                                                       |
+| playerid    | The ID of the player to set the vehicle's parameters for.                                             |
+| objective   | **0** to disable the objective or **1** to show it. This is a bobbing yellow arrow above the vehicle. |
+| doorslocked | **0** to unlock the doors or **1** to lock them.                                                      |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player and/or vehicle specified do not exist.
+**0**: The function failed to execute. The player and/or vehicle specified do not exist.
 
 ## ตัวอย่าง
 

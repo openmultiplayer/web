@@ -34,7 +34,7 @@ public OnPlayerSpawn(playerid)
 
 :::warning
 
-پارامتر skill آیدی اسلحه نیست، نوع مهارته. [اینجا](../resources/weaponskills) رو کلیک کن برای لیست انواع مهارت.
+پارامتر **skill** آیدی اسلحه نیست، نوع مهارته. [اینجا](../resources/weaponskills) رو کلیک کن برای لیست انواع مهارت.
 
 :::
 

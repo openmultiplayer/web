@@ -15,7 +15,7 @@ Provjeri stanje igračevog oružja.
 
 ## Returns
 
-Stanje igračevog oružja. 0 ako navedeni igrač ne postoji.
+Stanje igračevog oružja. **0** ako navedeni igrač ne postoji.
 
 ## Primjeri
 

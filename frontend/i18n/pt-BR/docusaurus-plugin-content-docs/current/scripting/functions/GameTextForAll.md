@@ -19,7 +19,7 @@ Mostra o 'texto do jogo' (texto na tela) por um determinado período de tempo pa
 
 ## Retornos
 
-Esta função sempre retorna 1.
+Esta função sempre retorna **1**.
 
 ## Exemplos
 

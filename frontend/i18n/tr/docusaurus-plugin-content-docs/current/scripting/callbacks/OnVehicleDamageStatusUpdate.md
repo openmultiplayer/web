@@ -22,9 +22,9 @@ Bu geri çağırma, aracın kapıları, farları, lastikleri veya panelleri gibi
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Diğer filterscript komutlarının çağrıyı almasını önleyecektir.
+**1** - Diğer filterscript komutlarının çağrıyı almasını önleyecektir.
 
-0 - Çağrının sonraki filterscript komutuna aktarılacağını belirtir.
+**0** - Çağrının sonraki filterscript komutuna aktarılacağını belirtir.
 
 Filterscript komutlarında her zaman ilk olarak çağrılır.
 

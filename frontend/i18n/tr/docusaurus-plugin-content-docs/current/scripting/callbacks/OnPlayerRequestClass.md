@@ -36,7 +36,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::note
 
-Bu fonksiyon, bir oyuncu F4'e bastığında da çağrılır.
+Bu fonksiyon, bir oyuncu **F4**'e bastığında da çağrılır.
 
 :::
 

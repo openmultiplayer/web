@@ -22,9 +22,9 @@ Callback này được gọi khi client của người chơi cập nhật/sync v
 
 ## Trả về
 
-0 - Hủy bỏ bất kỳ cập nhật nào về vị trí xe từ những người chơi khác. Cập nhật vẫn được gửi đến người chơi đang gửi cập nhật.
+**0** - Hủy bỏ bất kỳ cập nhật nào về vị trí xe từ những người chơi khác. Cập nhật vẫn được gửi đến người chơi đang gửi cập nhật.
 
-1 - Xử lý cập nhật vị trí xe bình thường và đồng bộ hóa giữa tất cả các người chơi.
+**1** - Xử lý cập nhật vị trí xe bình thường và đồng bộ hóa giữa tất cả các người chơi.
 
 ## Ví dụ
 

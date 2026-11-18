@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-必须使用 ARGB 颜色格式（不同于客户端消息使用的 RGBA 格式）
+必须使用 **ARGB** 颜色格式（不同于客户端消息使用的 RGBA 格式）
 同一物体最多只能应用 16 次材质文本修改
 
 :::
@@ -67,9 +67,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 进阶地图编辑器
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) 作者：Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) 作者：Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) 作者：RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) 作者：Pottus
 
 ## 相关资源
 

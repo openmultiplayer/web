@@ -15,7 +15,7 @@ Funkcija se koristi za otvaranje veze s datotekom baze podataka SQLite, koja se 
 
 ## Returns
 
-Returna/vraća indeks (počinje sa 1) konekecije databaze.
+Returna/vraća indeks (**počinje sa 1**) konekecije databaze.
 
 ## Primjeri
 
@@ -68,7 +68,7 @@ public OnGameModeExit()
 :::warning
 
 - Stvorit će novu datoteku baze podataka SQLite, ako ne postoji datoteka baze podataka SQLite s istim imenom datoteke.
-- Zatvorite vezu SQLite baze podataka pomoću [db_close](db_close)!
+- **Zatvorite** vezu SQLite baze podataka pomoću [db_close](db_close)!
 
 :::
 

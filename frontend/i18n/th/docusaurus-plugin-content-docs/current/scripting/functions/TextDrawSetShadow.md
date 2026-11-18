@@ -9,16 +9,16 @@ tags: ["textdraw"]
 
 Sets the size of a textdraw's text's shadow.
 
-| Name | Description                                                                                             |
-| ---- | ------------------------------------------------------------------------------------------------------- |
-| text | The ID of the textdraw to set the shadow size of.                                                       |
-| size | The size of the shadow. 1 is generally used for a normal shadow size. 0 disables the shadow completely. |
+| Name | Description                                                                                                     |
+| ---- | --------------------------------------------------------------------------------------------------------------- |
+| text | The ID of the textdraw to set the shadow size of.                                                               |
+| size | The size of the shadow. **1** is generally used for a normal shadow size. **0** disables the shadow completely. |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The textdraw does not exist.
+**0**: The function failed to execute. The textdraw does not exist.
 
 ## ตัวอย่าง
 

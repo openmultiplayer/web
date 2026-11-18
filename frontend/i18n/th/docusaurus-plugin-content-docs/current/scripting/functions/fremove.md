@@ -9,15 +9,15 @@ tags: []
 
 Delete a file.
 
-| Name   | Description                                               |
-| ------ | --------------------------------------------------------- |
-| name[] | The path of the file to delete. (NOTE: NOT a file handle) |
+| Name   | Description                                                   |
+| ------ | ------------------------------------------------------------- |
+| name[] | The **path** of the file to delete. (NOTE: NOT a file handle) |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The file doesn't exist, or you don't have permission to delete it.
+**0**: The function failed to execute. The file doesn't exist, or you don't have permission to delete it.
 
 ## ตัวอย่าง
 

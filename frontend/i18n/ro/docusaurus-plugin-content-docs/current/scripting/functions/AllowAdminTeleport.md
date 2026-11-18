@@ -15,9 +15,9 @@ Această funcție, începând cu 0.3d, este depreciată. Vă rugăm să consulta
 
 Această funcție va determina dacă administratorii RCON vor fi teleportați la punctul lor de cale atunci când vor seta unul.
 
-| Nume  | Descriere                                  |
-| ----- | ------------------------------------------ |
-| allow | 0 pentru a dezactiva și 1 pentru a activa. |
+| Nume  | Descriere                                          |
+| ----- | -------------------------------------------------- |
+| allow | **0** pentru a dezactiva și **1** pentru a activa. |
 
 ## Se intoarce
 

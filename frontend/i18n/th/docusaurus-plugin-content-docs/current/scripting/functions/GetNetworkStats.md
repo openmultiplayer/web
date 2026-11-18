@@ -16,7 +16,7 @@ Gets the server's network stats and stores them in a string.
 
 ## ส่งคืน
 
-This function always returns 1.
+This function always returns **1**.
 
 ## ตัวอย่าง
 

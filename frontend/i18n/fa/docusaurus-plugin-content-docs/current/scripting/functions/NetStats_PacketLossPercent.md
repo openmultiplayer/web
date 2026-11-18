@@ -15,7 +15,7 @@ tags: ["network monitoring"]
 
 ## مقدار بازگشتی
 
-درصد packet loss به عنوان float. 0 اگر بازیکن متصل نباشد.
+درصد packet loss به عنوان float. **0** اگر بازیکن متصل نباشد.
 
 ## مثال‌ها
 

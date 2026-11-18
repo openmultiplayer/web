@@ -18,11 +18,11 @@ Aktörün can değerini çekin.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Fonksiyon başarıyla çalıştı.
+**1** - Fonksiyon başarıyla çalıştı.
 
-0 - Fonksiyon çalışmadı. (Girilen ID'ye sahip aktör yok/oluşturulmamış.)
+**0** - Fonksiyon çalışmadı. (Girilen ID'ye sahip aktör yok/oluşturulmamış.)
 
-NOTE: Aktörün can değeri dönüş değerinde değil, oluşturulan float değişkeninde saklanır.
+**NOTE:** Aktörün can değeri dönüş değerinde değil, oluşturulan float değişkeninde saklanır.
 
 ## Örnekler
 

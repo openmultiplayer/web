@@ -19,9 +19,9 @@ Prikvači 3D tekst label za igrača.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija nije uspjela da se izvrši. To znači da igrač i/ili label ne postoje.
+**0**: Funkcija nije uspjela da se izvrši. To znači da igrač i/ili label ne postoje.
 
 ## Primjeri
 

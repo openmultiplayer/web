@@ -18,7 +18,7 @@ Bu geri çağırma, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağ
 
 ## Çalışınca Vereceği Sonuçlar
 
-Her zaman ilk olarak oyun modunda çağrılır, bu yüzden 0 döndürerek diğer filterscriptslerin görmesini engeller.
+Her zaman ilk olarak oyun modunda çağrılır, bu yüzden **0** döndürerek diğer filterscriptslerin görmesini engeller.
 
 ## Örnek
 
@@ -44,7 +44,7 @@ Buradan düzeltilebilir: https://pastebin.com/G81da7N1
 
 :::warning
 
-Bilinen Bug(lar): Mod mağazasında bir parçayı önizlemek bu geri çağırmayı çalıştırabilir.
+**Bilinen Bug(lar):** Mod mağazasında bir parçayı önizlemek bu geri çağırmayı çalıştırabilir.
 
 :::
 

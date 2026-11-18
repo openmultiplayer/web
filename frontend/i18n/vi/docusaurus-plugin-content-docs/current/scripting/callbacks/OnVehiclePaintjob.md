@@ -35,7 +35,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 :::note
 
-Callback này không được gọi bởi ChangeVehiclePaintjob. Bạn có thể sử dụng OnVehicleChangePaintjob từ vSync để biết khi người chơi mua lớp sơn.
+Callback này không được gọi bởi ChangeVehiclePaintjob. Bạn có thể sử dụng OnVehicleChangePaintjob từ vSync để biết khi người chơi **mua** lớp sơn.
 
 :::
 

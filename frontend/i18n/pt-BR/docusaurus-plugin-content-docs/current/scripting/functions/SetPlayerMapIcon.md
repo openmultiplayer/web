@@ -10,16 +10,16 @@ tags: ["player"]
 
 Coloque um ícone/marcador no mapa de um jogador. Pode ser usado para marcar locais como bancos e hospitais para os jogadores.
 
-| Nome | Descrição |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador para o qual definir o ícone do mapa.                                                                                                             |
-| iconid | O ícone do jogador ID, variando de 0 a 99. Isso significa que há no máximo 100 ícones de mapa. ID pode ser usado em [RemovePlayerMapIcon](RemovePlayerMapIcon). |
-| Float:x | A coordenada X na qual colocar o ícone do mapa.                                                                                                                |
-| Float:y | A coordenada Y na qual colocar o ícone do mapa.                                                                                                                |
-| Float:z | A coordenada Z na qual colocar o ícone do mapa.                                                                                                                |
-| markerType | O [ícone](../resources/mapicons) a ser definido.                                                                                                                 |
-| colour | A cor do ícone, como um número inteiro ou hexadecimal no formato de cor RGBA. Deve ser usado apenas com o ícone quadrado (ID: 0).                                  |
-| MAPICON:style | O [estilo](../resources/mapiconstyles) do ícone.                                                                                                          |
+| Nome          | Descrição                                                                                                                                                       |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid      | O ID do jogador para o qual definir o ícone do mapa.                                                                                                            |
+| iconid        | O ícone do jogador ID, variando de 0 a 99. Isso significa que há no máximo 100 ícones de mapa. ID pode ser usado em [RemovePlayerMapIcon](RemovePlayerMapIcon). |
+| Float:x       | A coordenada X na qual colocar o ícone do mapa.                                                                                                                 |
+| Float:y       | A coordenada Y na qual colocar o ícone do mapa.                                                                                                                 |
+| Float:z       | A coordenada Z na qual colocar o ícone do mapa.                                                                                                                 |
+| markerType    | O [ícone](../resources/mapicons) a ser definido.                                                                                                                |
+| colour        | A cor do ícone, como um número inteiro ou hexadecimal no formato de cor **RGBA**. Deve ser usado apenas com o ícone quadrado (ID: 0).                           |
+| MAPICON:style | O [estilo](../resources/mapiconstyles) do ícone.                                                                                                                |
 
 ## Retornos
 

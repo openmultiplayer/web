@@ -18,7 +18,7 @@ Obtém a quantidade de dados (em bytes) que o servidor recebeu do jogador.
 
 Esta função retorna o número de bytes que o servidor recebeu do jogador.
 
-0 é retornado se o jogador não estiver conectado.
+**0** é retornado se o jogador não estiver conectado.
 
 ## Exemplos
 

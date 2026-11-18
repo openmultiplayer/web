@@ -20,9 +20,9 @@ Această funcție adaugă o preluare „statică” la joc. Aceste pickup-uri ac
 
 ## Se intoarce
 
-1 dacă pickup-ul este creat cu succes.
+**1** dacă pickup-ul este creat cu succes.
 
-0 dacă nu s-a putut crea.
+**0** dacă nu s-a putut crea.
 
 ## Exemple
 

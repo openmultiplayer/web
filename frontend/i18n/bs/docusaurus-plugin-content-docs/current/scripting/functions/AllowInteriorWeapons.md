@@ -9,9 +9,9 @@ tags: []
 
 O(ne)mogućava da li je korištenje oružja u interijerima dozvoljeno ili nije.
 
-| Ime   | Deskripcija                                                                                                                 |
-| ----- | --------------------------------------------------------------------------------------------------------------------------- |
-| allow | 1 da odobrite oružja u enterijerima (Po zadanim postavkama je odobreno), 0 da onemogućite korištenje oružja u enterijerima. |
+| Ime   | Deskripcija                                                                                                                         |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| allow | **1** da odobrite oružja u enterijerima (Po zadanim postavkama je odobreno), **0** da onemogućite korištenje oružja u enterijerima. |
 
 ## Returns
 

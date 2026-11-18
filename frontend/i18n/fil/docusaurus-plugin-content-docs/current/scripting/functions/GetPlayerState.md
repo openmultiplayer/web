@@ -15,7 +15,7 @@ Kunin ang kasalukuyang estado ng isang manlalaro.
 
 ## Returns
 
-Ang kasalukuyang estado ng manlalaro bilang isang integer (tingnan ang: [Player States](../resources/playerstates)).
+Ang kasalukuyang **estado** ng manlalaro bilang isang integer (tingnan ang: [Player States](../resources/playerstates)).
 
 ## Examples
 

@@ -19,9 +19,9 @@ Postavi rotaciju player objekta na X, Y i Z osi.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena.
+**0**: Funkcija neuspješno izvršena.
 
 ## Primjeri
 

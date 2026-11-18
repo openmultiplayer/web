@@ -15,9 +15,9 @@ Bu geri çağırma oyuncu sunucuya bağlandığında çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-0 - Diğer filterscriptler içerisinde çağrılmasını engeller.
+**0** - Diğer filterscriptler içerisinde çağrılmasını engeller.
 
-1 - Diğer filterscriptler içinde aranması için pas geçilir.
+**1** - Diğer filterscriptler içinde aranması için pas geçilir.
 
 Her zaman öncelikle filterscriptlerde çağrılır.
 

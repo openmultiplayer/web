@@ -23,9 +23,9 @@ This callback is called when a vehicle's siren is toggled.
 
 ## ส่งคืน
 
-1 - Will prevent gamemode from receiving this callback.
+**1** - Will prevent gamemode from receiving this callback.
 
-0 - Indicates that this callback will be passed to the gamemode.
+**0** - Indicates that this callback will be passed to the gamemode.
 
 มันถูกเรียกในฟิลเตอร์สคริปต์ก่อนเสมอ
 

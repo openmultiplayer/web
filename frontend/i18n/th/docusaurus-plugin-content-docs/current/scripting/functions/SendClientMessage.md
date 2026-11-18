@@ -9,17 +9,17 @@ tags: []
 
 This function sends a message to a specific player with a chosen color in the chat. The whole line in the chatbox will be in the set color unless color embedding is used.
 
-| Name            | Description                                           |
-| --------------- | ----------------------------------------------------- |
-| playerid        | The ID of the player to display the message to.       |
-| color           | The color of the message (0xRRGGBBAA Hex format).     |
-| const message[] | The text that will be displayed (max 144 characters). |
+| Name            | Description                                               |
+| --------------- | --------------------------------------------------------- |
+| playerid        | The ID of the player to display the message to.           |
+| color           | The color of the message (0xRRGGBBAA Hex format).         |
+| const message[] | The text that will be displayed **(max 144 characters)**. |
 
 ## ส่งคืน
 
-1: The function was executed successfully. Success is reported when the string is over 144 characters, but the message won't be sent.
+**1**: The function was executed successfully. Success is reported when the string is over 144 characters, but the message won't be sent.
 
-0: The function failed to execute. The player is not connected.
+**0**: The function failed to execute. The player is not connected.
 
 ## ตัวอย่าง
 

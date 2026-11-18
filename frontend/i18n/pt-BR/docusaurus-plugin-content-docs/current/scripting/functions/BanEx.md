@@ -69,7 +69,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Qualquer ação realizada diretamente antes do Ban() (como enviar uma mensagem com SendClientMessage) não chegará ao jogador. Um cronômetro (timer) deve ser usado para atrasar o banimento.
+Qualquer ação realizada diretamente antes do BanEx (como enviar uma mensagem com SendClientMessage) não chegará ao jogador. Um cronômetro (timer) deve ser usado para atrasar o banimento.
 
 :::
 

@@ -16,7 +16,7 @@ Deze callback wordt aangeroepen wanneer een speler een command invoert in het cl
 
 ## Returns
 
-Wordt altijd als eerste aangeroepen in filterscripts, dus return 1 blokkeert andere scripts om het te verwerken.
+Wordt altijd als eerste aangeroepen in filterscripts, dus return **1** blokkeert andere scripts om het te verwerken.
 
 ## Voorbeelden
 

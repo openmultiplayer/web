@@ -9,9 +9,9 @@ tags: ["file management"]
 
 Delete a file.
 
-| Name             | Description                     |
-| ---------------- | ------------------------------- |
-| const filename[] | The path of the file to delete. |
+| Name             | Description                         |
+| ---------------- | ----------------------------------- |
+| const filename[] | The **path** of the file to delete. |
 
 ## Returns
 

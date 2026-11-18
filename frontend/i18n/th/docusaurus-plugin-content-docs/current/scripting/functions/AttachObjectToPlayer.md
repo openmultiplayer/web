@@ -22,7 +22,7 @@ Attach an object to a player.
 
 ## ส่งคืน
 
-This function always returns 0.
+This function always returns **0**.
 
 ## ตัวอย่าง
 

@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Beschrijving
 
-Deze callback wordt aangeroepen wanneer een speler begint een voertuig in te gaan, wat betekent dat de speler nog niet in het voertuig is wanneer deze callback wordt aangeroepen.
+Deze callback wordt aangeroepen wanneer een speler **begint** een voertuig in te gaan, wat betekent dat de speler nog niet in het voertuig is wanneer deze callback wordt aangeroepen.
 
 | Naam        | Beschrijving                                           |
 | ----------- | ------------------------------------------------------ |
@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-- Deze callback wordt aangeroepen wanneer een speler BEGINT een voertuig in te gaan, niet wanneer ze er al IN zitten. Zie [OnPlayerStateChange](OnPlayerStateChange).
+- Deze callback wordt aangeroepen wanneer een speler **BEGINT** een voertuig in te gaan, niet wanneer ze er al IN zitten. Zie [OnPlayerStateChange](OnPlayerStateChange).
 - Deze callback wordt nog steeds aangeroepen als de speler wordt geweigerd toegang tot een voertuig (bijv. het is vergrendeld of vol) maar alleen als passagier.
 
 :::

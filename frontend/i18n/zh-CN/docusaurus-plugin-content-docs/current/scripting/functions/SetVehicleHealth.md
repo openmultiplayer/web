@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-- 车辆满血状态为 1000.0，允许设置更高数值
+- 车辆满血状态为 **1000.0**，允许设置更高数值
 - 详细生命值参数说明请参考[此文档](../resources/vehiclehealth)
 
 :::

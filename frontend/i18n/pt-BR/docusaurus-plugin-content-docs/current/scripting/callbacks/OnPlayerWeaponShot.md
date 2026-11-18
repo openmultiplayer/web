@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Essa callback é executada todas as vezes que o player realiza um disparo com uma arma. Somente armas com balas são suportadas. Somente o drive-by do passageiro é registrado (drive-by feitos pelo motorista, disparos de helicópteros como o sea sparrow / hunter também não são suportados).
+Essa callback é executada todas as vezes que o player realiza um disparo com uma arma. Somente armas com balas são suportadas. Somente o drive-by do **passageiro** é registrado (drive-by feitos pelo motorista, disparos de helicópteros como o sea sparrow / hunter também não são suportados).
 
 | Nome                    | Descrição                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -43,10 +43,10 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-Essa callback é executada somente quando o "lag compensation" está ativado. Caso o tipo de acerto seja:
+Essa callback é executada somente quando o "lag compensation" está **ativado**. Caso o **tipo de acerto** seja:
 
-- `BULLET_HIT_TYPE_NONE`: Os parâmetros fX, fY e fZ irão retornar 0.0 nas coordenadas, caso não haja acerto em nenhuma superficíe (ex. Objeto distante no qual a bala não consegue chegar);
-- Outros: Os parâmetros fX, fY e fZ são offsets relativos ao hitid.
+- `BULLET_HIT_TYPE_NONE`: Os parâmetros **fX**, **fY** e **fZ** irão retornar 0.0 nas coordenadas, caso não haja acerto em nenhuma superficíe (ex. Objeto distante no qual a bala não consegue chegar);
+- Outros: Os parâmetros **fX**, **fY** e **fZ** são offsets relativos ao **hitid**.
 
 :::
 
@@ -58,10 +58,11 @@ A função [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors) pod
 
 :::warning
 
-Bug(s) Conhecidos:
+**Bug(s) Conhecidos:**
 
-- Não é executada quando você atira sendo motorista de um veículo ou caso você esteja olhando para trás com a mira ativa (atirando para o alto). Caso você esteja disparando em um veículo o tipo a ser retornado será `BULLET_HIT_TYPE_VEHICLE` e não `BULLET_HIT_TYPE_PLAYER`, o valor retornado no hitid será o ID do veículo, mesmo que você mire e atire diretamente no jogador que está no veículo o parâmetro `BULLET_HIT_TYPE_VEHICLE` persiste!
-- Parcialmente arrumado na versão 0.3.7: Caso 'Fake Weapon Data' seja enviada por um jogador malicioso, outros jogadores podem crashar ou congelar. Para impedir isso de acontecer verifique se o weaponid (arma) pode realmente disparar balas.
+- Não é executada quando você atira sendo motorista de um veículo ou caso você esteja olhando para trás com a mira ativa (atirando para o alto).
+- Caso você esteja disparando em um veículo o tipo a ser retornado será `BULLET_HIT_TYPE_VEHICLE` e não `BULLET_HIT_TYPE_PLAYER`, o valor retornado no `hitid` será o ID do veículo, mesmo que você mire e atire diretamente no jogador que está no veículo o parâmetro `BULLET_HIT_TYPE_VEHICLE` persiste!
+- **Parcialmente arrumado na versão 0.3.7**: Caso 'Fake Weapon Data' seja enviada por um jogador malicioso, outros jogadores podem crashar ou congelar. Para impedir isso de acontecer verifique se o `weaponid` (arma) pode realmente disparar balas.
 
 :::
 

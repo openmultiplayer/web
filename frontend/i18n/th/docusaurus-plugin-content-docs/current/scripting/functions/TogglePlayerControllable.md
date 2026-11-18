@@ -9,16 +9,16 @@ tags: ["player"]
 
 Toggles whether a player can control their character or not. The player will also be unable to move their camera.
 
-| Name     | Description                                                 |
-| -------- | ----------------------------------------------------------- |
-| playerid | The ID of the player to toggle the controllability of       |
-| toggle   | 0 to make them uncontrollable, 1 to make them controllable. |
+| Name     | Description                                                         |
+| -------- | ------------------------------------------------------------------- |
+| playerid | The ID of the player to toggle the controllability of               |
+| toggle   | **0** to make them uncontrollable, **1** to make them controllable. |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player specified does not exist.
+**0**: The function failed to execute. The player specified does not exist.
 
 ## ตัวอย่าง
 

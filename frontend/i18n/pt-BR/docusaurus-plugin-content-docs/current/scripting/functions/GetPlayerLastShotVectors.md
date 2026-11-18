@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-- Esta função só funcionará quando a compensação de atraso estiver habilitada.
+- Esta função só funcionará quando a compensação de atraso estiver **habilitada**.
 - Se o jogador não acertar nada, as posições de acerto serão 0. Isso significa que atualmente você não pode calcular a distância que uma bala percorre no ar livre.
 
 :::

@@ -5,29 +5,29 @@ description: Aplica uma animação a um ator.
 tags: []
 ---
 
-Esta função foi adicionada no SA-MP 0.3.7 e não funcionará em versões anteriores!
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Descrição
 
 Aplica uma animação a um ator.
 
-| Nome       | Descrição                                                                                                                                                                         |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| actorid    | O ID do ator a aplicar a animação.                                                                                                                                                |
-| animlib[]  | A biblioteca de animação da qual aplicar a animação.                                                                                                                              |
-| animname[] | O nome da animação a aplicar, dentro da biblioteca especificada.                                                                                                                  |
-| fDelta     | A velocidade para reproduzir a animação (use 4.1).                                                                                                                                |
-| loop       | Se definido 1, a animação irá repetir. Se definido 0, a animação vai reproduzir uma vez.                                                                                          |
-| lockx      | Se definido 0, o ator vai retornar à sua coordenada X antiga, assim que a animação concluir (para animações que o ator move, como caminhar). 1 não irá retornar à posição antiga. |
-| locky      | O mesmo que acima, mas para o eixo Y. Same as above but for the Y axis. Deve ser mantido igual ao parâmetro anterior.                                                             |
-| freeze     | Definir para 1 vai congelar o ator no fim da animação. 0 não irá congelar.                                                                                                        |
-| time       | Tempo em milisegundos. Para um ciclo infinito o valor deve ser 0.                                                                                                                 |
+| Nome       | Descrição                                                                                                                                                                                 |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| actorid    | O ID do ator a aplicar a animação.                                                                                                                                                        |
+| animlib[]  | A biblioteca de animação da qual aplicar a animação.                                                                                                                                      |
+| animname[] | O nome da animação a aplicar, dentro da biblioteca especificada.                                                                                                                          |
+| fDelta     | A velocidade para reproduzir a animação (use 4.1).                                                                                                                                        |
+| loop       | Se definido **1**, a animação irá repetir. Se definido **0**, a animação vai reproduzir uma vez.                                                                                          |
+| lockx      | Se definido **0**, o ator vai retornar à sua coordenada X antiga, assim que a animação concluir (para animações que o ator move, como caminhar). **1** não irá retornar à posição antiga. |
+| locky      | O mesmo que acima, mas para o eixo Y. Same as above but for the Y axis. Deve ser mantido igual ao parâmetro anterior.                                                                     |
+| freeze     | Definir para **1** vai congelar o ator no fim da animação. **0** não irá congelar.                                                                                                        |
+| time       | Tempo em milisegundos. Para um ciclo infinito o valor deve ser **0**.                                                                                                                     |
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou a ser executada. O ator específico não existe.
+**0**: A função falhou a ser executada. O ator específico não existe.
 
 ## Exemplos
 

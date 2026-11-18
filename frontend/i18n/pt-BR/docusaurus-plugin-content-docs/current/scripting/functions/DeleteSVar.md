@@ -15,9 +15,9 @@ Exclui uma variável do servidor definida anteriormente.
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao ser executada. Não existe variável definida com o nome fornecido.
+**0**: A função falhou ao ser executada. Não existe variável definida com o nome fornecido.
 
 ## Exemplos
 
@@ -33,7 +33,7 @@ DeleteSVar("SomeVarName");
 
 :::note
 
-Quando a variável é excluída, tentativas de recuperar o valor irão retornar 0 (para integers/floats e NULL para strings).
+Quando a variável é excluída, tentativas de recuperar o valor irão retornar **0** (para integers/floats e **NULL** para strings).
 
 :::
 

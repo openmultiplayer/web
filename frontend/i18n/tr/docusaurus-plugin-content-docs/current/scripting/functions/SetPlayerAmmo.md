@@ -17,9 +17,9 @@ Bir oyuncunun silahındaki mermi sayısını ayarlar.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Fonksiyon başarıyla çalıştı. Silah ID'si geçersiz olsa bile sonuç döndürülür. (0-12 silah ID'leri hariç)
+**1**: Fonksiyon başarıyla çalıştı. Silah ID'si geçersiz olsa bile sonuç döndürülür. (0-12 silah ID'leri hariç)
 
-0: Girilen ID oyunda olmadığı için fonksiyon çalışmadı.
+**0**: Girilen ID oyunda olmadığı için fonksiyon çalışmadı.
 
 ## Örnekler
 

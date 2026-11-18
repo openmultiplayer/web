@@ -9,15 +9,15 @@ tags: ["custom model", "simple model"]
 
 ## Description
 
-Adds a new custom simple object model for download. The model files will be stored in player's Documents\GTA San Andreas User Files\SAMP\cache under the Server IP and Port folder in a CRC-form file name.
+Adds a new custom simple object model for download. The model files will be stored in player's `Documents\GTA San Andreas User Files\SAMP\cache` under the Server IP and Port folder in a CRC-form file name.
 
 | Name                   | Description                                                                                                                 |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | virtualWorld           | The virtual world ID to make the model available at. Use -1 for all worlds.                                                 |
 | baseid                 | The base object model ID to use (original object to use when download is failed).                                           |
 | newid                  | The new object model ID ranged from -1000 to -30000 (29000 slots) to be used later with CreateObject or CreatePlayerObject. |
-| const dff[]            | Name of the .dff model collision file located in models server folder by default (artpath setting)                          |
-| const textureLibrary[] | Name of the .txd model texture file located in models server folder by default (artpath setting).                           |
+| const dff[]            | Name of the **.dff** model collision file located in `models` server folder by default (artpath setting).                   |
+| const textureLibrary[] | Name of the **.txd** model texture file located in `models` server folder by default (artpath setting).                     |
 
 ## Returns
 

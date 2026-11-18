@@ -13,7 +13,7 @@ This function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
 
 ## คำอธิบาย
 
-Get memory handle for an SQLite query that was executed with db_query.
+Get **memory handle** for an SQLite query that was executed with db_query.
 
 | Name  | Description                                    |
 | ----- | ---------------------------------------------- |

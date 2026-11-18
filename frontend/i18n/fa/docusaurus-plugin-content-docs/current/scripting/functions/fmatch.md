@@ -14,7 +14,7 @@ tags: ["file management"]
 | const filename[]         | string که نتیجه توش ذخیره میشه، به صورت packed string برمیگردونه. |
 | const pattern[]          | pattern که باید match بشه. میتونه wildcard داشته باشه.            |
 | index                    | شماره فایل، در صورتی که چندین match وجود داشته باشه. (پیش‌فرض: 0) |
-| size = sizeof (filename) | بیشترین اندازه پارامتر name                                       |
+| size = sizeof (filename) | بیشترین اندازه پارامتر _name_                                     |
 
 ## برگشتی
 

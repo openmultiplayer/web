@@ -8,11 +8,11 @@ tags: ["rcon", "administration"]
 
 Callback này được gọi khi ai đó cố gắng đăng nhập vào RCON trong trò chơi; thành công hoặc không.
 
-| Tên        | Mô tả                                                    |
-| ---------- | -------------------------------------------------------- |
-| ip[]       | Địa chỉ IP của người chơi đã cố gắng đăng nhập vào RCON. |
-| password[] | Mật khẩu đã được sử dụng để đăng nhập.                   |
-| success    | 0 nếu mật khẩu không chính xác hoặc 1 nếu chính xác.     |
+| Tên        | Mô tả                                                        |
+| ---------- | ------------------------------------------------------------ |
+| ip[]       | Địa chỉ IP của người chơi đã cố gắng đăng nhập vào RCON.     |
+| password[] | Mật khẩu đã được sử dụng để đăng nhập.                       |
+| success    | **0** nếu mật khẩu không chính xác hoặc **1** nếu chính xác. |
 
 ## Giá trị trả về
 
@@ -54,7 +54,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-- Callback này chỉ được gọi khi sử dụng lệnh /rcon login trong trò chơi.
+- Callback này chỉ được gọi khi sử dụng lệnh `/rcon login` trong trò chơi.
 - Callback này chỉ được gọi khi người chơi chưa đăng nhập. Khi người chơi đã đăng nhập, [OnRconCommand](OnRconCommand) sẽ được gọi thay vào đó.
 
 :::

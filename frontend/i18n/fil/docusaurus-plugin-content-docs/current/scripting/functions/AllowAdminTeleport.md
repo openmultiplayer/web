@@ -15,9 +15,9 @@ Ang function na ito, mula sa 0.3d, ay hindi na ginagamit. Mangyaring tingnan [On
 
 Tutukuyin ng function na ito kung ang mga admin ng RCON ay mai-teleport sa kanilang waypoint kapag nagtakda sila ng isa.
 
-| Name  | Description                                   |
-| ----- | --------------------------------------------- |
-| allow | 0 upang huwag paganahin at 1 upang paganahin. |
+| Name  | Description                                           |
+| ----- | ----------------------------------------------------- |
+| allow | **0** upang huwag paganahin at **1** upang paganahin. |
 
 ## Returns
 

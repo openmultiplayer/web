@@ -15,9 +15,9 @@ Zaustavlja treptanje gangzone za sve igrače.
 
 ## Returns
 
-1: Funkcija uspješno izvršena. Izvještava se o uspjehu čak i ako zona bandi za početak nije treptala.
+**1**: Funkcija uspješno izvršena. Izvještava se o uspjehu čak i ako zona bandi za početak nije treptala.
 
-0: Funkcija neuspješno izvršena. Navedeni gangzone ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni gangzone ne postoji.
 
 ## Primjeri
 

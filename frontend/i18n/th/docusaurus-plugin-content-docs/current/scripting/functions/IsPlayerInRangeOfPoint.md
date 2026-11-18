@@ -9,19 +9,19 @@ tags: ["player"]
 
 Checks if a player is in range of a point. This native function is faster than the PAWN implementation using distance formula.
 
-| Name        | Description                                                            |
-| ----------- | ---------------------------------------------------------------------- |
-| playerid    | The ID of the player.                                                  |
-| Float:range | The furthest distance the player can be from the point to be in range. |
-| Float:x     | The X coordinate of the point to check the range to.                   |
-| Float:y     | The Y coordinate of the point to check the range to.                   |
-| Float:z     | The Z coordinate of the point to check the range to.                   |
+| Name        | Description                                                              |
+| ----------- | ------------------------------------------------------------------------ |
+| playerid    | The ID of the player.                                                    |
+| Float:range | The furthest distance the player can be from the point to be _in range_. |
+| Float:x     | The X coordinate of the point to check the range to.                     |
+| Float:y     | The Y coordinate of the point to check the range to.                     |
+| Float:z     | The Z coordinate of the point to check the range to.                     |
 
 ## ส่งคืน
 
-true - The player is in range of the point.
+**true** - The player is in range of the point.
 
-false - The player is not in range of the point.
+**false** - The player is not in range of the point.
 
 ## ตัวอย่าง
 

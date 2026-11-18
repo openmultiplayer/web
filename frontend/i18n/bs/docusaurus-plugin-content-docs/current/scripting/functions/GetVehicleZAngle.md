@@ -16,9 +16,9 @@ Nabavite rotaciju vozilo na Z osi (nagib).
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
 
 Rotacija vozila pohranjena je u navedenoj varijabli.
 

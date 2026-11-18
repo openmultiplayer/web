@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Get a player's IP and port.
+Get a player's IP **and port**.
 
 | Name        | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |

@@ -16,9 +16,9 @@ Esta callback é chamada quando um jogador disconecta do servidor.
 
 ## Retorno
 
-1 - Irá previnir que outro filterscript receba esta callback.
+**0** - Irá previnir que outro filterscript receba esta callback.
 
-0 - Indica que esta callback será passada para o próximo filterscript.
+**1** - Indica que esta callback será passada para o próximo filterscript.
 
 Sempre é chamada primeiro em filterscripts.
 
@@ -59,7 +59,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::note
 
-Algumas funções podem não funcionar corretamente quando usadas nesta callback pois o jogador já está desconectado quando a callback é chamada. Isso significa que você não pode ter informações inequívocas de funções como GetPlayerIp e GetPlayerPos.
+Algumas funções podem não funcionar corretamente quando usadas nesta callback pois o jogador já está desconectado quando a callback é chamada. Isso significa que você não pode ter informações inequívocas de funções como GetPlayerIp e GetPlayerPos. (Corrigido em open.mp)
 
 :::
 

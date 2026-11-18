@@ -21,7 +21,7 @@ Returns the class of the players custom skin downloaded from the server.
 
 ## ส่งคืน
 
-The custom skin id that was specified in AddCharModel newid
+The custom skin id that was specified in AddCharModel **newid**
 
 ## ตัวอย่าง
 

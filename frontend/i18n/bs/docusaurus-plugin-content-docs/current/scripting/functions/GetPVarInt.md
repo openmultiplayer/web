@@ -16,7 +16,7 @@ Dobiva vrijednost cijelog broja varijable igrača.
 
 ## Returns
 
-Cjelobrojna vrijednost navedene varijable igrača. I dalje će vraćati 0 ako varijabla nije postavljena ili igrač ne postoji.
+Cjelobrojna vrijednost navedene varijable igrača. I dalje će vraćati **0** ako varijabla nije postavljena ili igrač ne postoji.
 
 ## Primjeri
 

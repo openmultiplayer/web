@@ -55,7 +55,7 @@ printf("I'm %c home", character); // I'm @ home
 
 :::warning
 
-The format string or its output should not exceed 1024 characters. Anything beyond that length can lead to a server to crash.
+The format string or its output should not exceed 1024 characters. Anything beyond that length can lead to a server to crash. (Fixed in open.mp)
 
 :::
 

@@ -16,7 +16,7 @@ Callback này được gọi khi một người chơi nhập lệnh vào cửa s
 
 ## Trả Về
 
-Callback này luôn được gọi đầu tiên trong filterscripts, vì vậy việc trả về 1 ở đây sẽ chặn các script khác nhận được callback này.
+Callback này luôn được gọi đầu tiên trong filterscripts, vì vậy việc trả về **1** ở đây sẽ chặn các script khác nhận được callback này.
 
 ## Ví Dụ
 

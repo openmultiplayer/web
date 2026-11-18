@@ -4,7 +4,7 @@ sidebar_label: "Uzak Konsol (RCON)"
 description: Uzak sunucu yönetimi.
 ---
 
-Uzak Konsol, oyun içinde olmadan ve sunucunuzda RCON komutlarını kullanabileceğiniz bir komut istemidir. 0.3b sürümünden itibaren Uzak Konsol, Sunucu Tarayıcısı'ndan kaldırıldı. Bundan sonra, aşağıda açıklandığı gibi Uzak RCON'a erişmek için başka bir yol kullanmanız gerekecek.
+**Uzak Konsol**, oyun içinde olmadan ve sunucunuzda RCON komutlarını kullanabileceğiniz bir komut istemidir. 0.3b sürümünden itibaren **Uzak Konsol**, **Sunucu Tarayıcısı**'ndan kaldırıldı. Bundan sonra, aşağıda açıklandığı gibi **Uzak RCON**'a erişmek için başka bir yol kullanmanız gerekecek.
 
 1. Bir metin düzenleyicisi açın.
 2. Aşağıdaki satırı yazın: `rcon.exe IP PORT RCON-PASS` (IP/PORT/PASS'ı sunucu bilgilerinizle değiştirin)

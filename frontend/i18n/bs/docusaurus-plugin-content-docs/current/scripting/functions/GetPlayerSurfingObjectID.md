@@ -15,7 +15,7 @@ Vraća ID objekta na kojem igrač surfa.
 
 ## Returns
 
-ID objekta u pokretu kojim igrač surfuje. Ako igrač ne surfuje pokretnim objektom, vratit će INVALID_OBJECT_ID
+ID objekta **u pokretu** kojim igrač surfuje. Ako igrač ne surfuje **pokretnim** objektom, vratit će INVALID_OBJECT_ID
 
 ## Primjeri
 

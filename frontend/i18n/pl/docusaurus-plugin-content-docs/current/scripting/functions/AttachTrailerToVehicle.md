@@ -16,7 +16,7 @@ Przyczepia jeden pojazd do drugiego jako przyczepa.
 
 ## Zwracane wartości
 
-Ta funkcja zawsze zwraca 1, nawet jeśli żadne z podanych ID pojazdów nie jest prawidłowe.
+Ta funkcja zawsze zwraca **1**, nawet jeśli żadne z podanych ID pojazdów nie jest prawidłowe.
 
 ## Przykłady
 

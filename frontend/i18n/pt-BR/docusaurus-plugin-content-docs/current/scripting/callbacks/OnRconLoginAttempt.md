@@ -9,11 +9,11 @@ tags: []
 
 Essa callback é executada quando algum jogador tenta login na RCON; seja ele bem sucedido ou não.
 
-| Nome       | Descrição                                               |
-| ---------- | ------------------------------------------------------- |
-| ip[]       | IP do jogador que tentou fazer login na RCON.           |
-| password[] | A senha utilizada no login.                             |
-| success    | 0 caso a senha esteja incorreta, 1 caso esteja correta. |
+| Nome       | Descrição                                                       |
+| ---------- | --------------------------------------------------------------- |
+| ip[]       | IP do jogador que tentou fazer login na RCON.                   |
+| password[] | A senha utilizada no login.                                     |
+| success    | **0** caso a senha esteja incorreta, **1** caso esteja correta. |
 
 ## Retornos
 
@@ -46,7 +46,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-- Essa callback é executada somente quando o comando /rcon login é utilizado in-game.
+- Essa callback é executada somente quando o comando `/rcon login` é utilizado in-game.
 - É executada somente quando o jogador não está logado na RCON. Quando o jogador já está logado na RCON a callback OnRconCommand é executada ao invés dessa.
 
 :::

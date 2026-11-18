@@ -15,7 +15,7 @@ I-set ang gravity para sa lahat ng player.
 
 ## Returns
 
-Ang function na ito ay palaging rereturn ng 1, kahit na nabigo itong isagawa kung ang gravity ay wala sa mga limitasyon (mas mababa sa -50 o mataas sa +50).
+Ang function na ito ay palaging rereturn ng **1**, kahit na nabigo itong isagawa kung ang gravity ay wala sa mga limitasyon (mas mababa sa -50 o mataas sa +50).
 
 ## Examples
 

@@ -15,7 +15,7 @@ This callback is called when a player attempts to spawn via class selection eith
 
 ## Returns
 
-Returning 0 in this callback will prevent the player from spawning.
+Returning **0** in this callback will prevent the player from spawning.
 
 It is always called first in filterscripts so returning 0 there also blocks other scripts from processing it.
 

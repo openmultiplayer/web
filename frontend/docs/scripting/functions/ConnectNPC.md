@@ -15,14 +15,14 @@ This function is deprecated. Please see [NPC_Create](NPC_Create).
 
 Connect an NPC to the server.
 
-| Name           | Description                                                                              |
-| -------------- | ---------------------------------------------------------------------------------------- |
-| const name[]   | The name the NPC should connect as. Must follow the same rules as normal player names.   |
-| const script[] | The NPC script name that is located in the npcmodes folder (without the .amx extension). |
+| Name           | Description                                                                                  |
+| -------------- | -------------------------------------------------------------------------------------------- |
+| const name[]   | The name the NPC should connect as. Must follow the same rules as normal player names.       |
+| const script[] | The NPC script name that is located in the **npcmodes** folder (without the .amx extension). |
 
 ## Returns
 
-This function always return 1.
+This function always return **1**.
 
 ## Examples
 

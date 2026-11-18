@@ -16,9 +16,9 @@ Prikazuje prethodno kreirani meni za igrača.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Menu i/ili igrač ne postoje.
+**0**: Funkcija neuspješno izvršena. Menu i/ili igrač ne postoje.
 
 ## Primjeri
 

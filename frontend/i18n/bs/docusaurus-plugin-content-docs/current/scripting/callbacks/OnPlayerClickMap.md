@@ -18,9 +18,9 @@ OnPlayerClickMap je pozvan kada igrač postavi metu(target/waypoint) na pause me
 
 ## Returns
 
-1 - Spriječiti će da druge filterskripte primaju ovaj callback.
+**1** - Spriječiti će da druge filterskripte primaju ovaj callback.
 
-0 - Označava da će ovaj callback biti proslijeđen do sljedeće filterskripte.
+**0** - Označava da će ovaj callback biti proslijeđen do sljedeće filterskripte.
 
 Uvijek je pozvana prva u filterskripti.
 

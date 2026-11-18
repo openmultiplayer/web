@@ -19,7 +19,7 @@ Kreiraj eksploziju na određenim kordinatama.
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, bilo da je tip eksplozije i/ili vrijednost radijusa nevažeća.
+Ova funkcija uvijek returna (vraća) **1**, bilo da je tip eksplozije i/ili vrijednost radijusa nevažeća.
 
 ## Primjeri
 

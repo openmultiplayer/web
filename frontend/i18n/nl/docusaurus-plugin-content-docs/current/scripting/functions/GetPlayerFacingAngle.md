@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Opmerkingen
 
 - In voertuigen is de teruggegeven rotatie vaak onjuist; gebruik [GetVehicleZAngle](GetVehicleZAngle).
-- Hoeken zijn in GTA:SA gespiegeld: 90° is West (i.p.v. Oost). Converteer met `360 - angle`.
+- Hoeken zijn in GTA:SA gespiegeld: 90° is _West_ (i.p.v. _Oost_). Converteer met `360 - angle`.
 
 ## Gerelateerd
 

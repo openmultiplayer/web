@@ -16,9 +16,9 @@ Omogućuje igračima da uređuju player objekat (položaj i rotacija) s GUI-jem 
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Igrač ili objekat su nevažeći!
+**0**: Funkcija neuspješno izvršena. Igrač ili objekat su nevažeći!
 
 ## Primjeri
 
@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Kameru možete pomicati tijekom uređivanja pritiskom i držanjem razmaknice (ili W u vozilu) i pomicanjem miša.
+Kameru možete pomicati tijekom uređivanja pritiskom i držanjem **razmaknice** (ili **W** u vozilu) i pomicanjem miša.
 
 :::
 

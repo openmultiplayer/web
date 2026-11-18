@@ -64,7 +64,7 @@ printf("%d", 7);
 ```c
 #define PL new i = 0; i < MAX_PLAYERS; i++) if (IsPlayerConnected(i)
 
-for(PL) printf("%d 已连接", i);
+for (PL) printf("%d 已连接", i);
 ```
 
 将展开为经典的玩家循环结构。注意此处括号的运用：部分来自 for 语句，部分来自宏展开。

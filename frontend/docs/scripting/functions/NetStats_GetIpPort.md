@@ -7,7 +7,7 @@ tags: ["network monitoring", "ip address"]
 
 ## Description
 
-Get a player's IP and port.
+Get a player's IP **and port**.
 
 | Name                   | Description                                                      |
 | ---------------------- | ---------------------------------------------------------------- |

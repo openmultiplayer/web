@@ -9,11 +9,11 @@ tags: []
 
 Ang callback na ito ay na cacall kapag ang player ay pumasok o umalis mula sa mod shop.
 
-| Pangalan   | Deskripsyong                                                                 |
-| ---------- | ---------------------------------------------------------------------------- |
-| playerid   | Ang ID ng player na pumasok o umalis ng mod shop                             |
-| enterexit  | 1 kapag ang player ay pumasok o 0 kapag ang player ay umalis mula sa modshop |
-| interiorid | Ang Interior ID ng modshop na pinasukan ng player (0 kapag umaalis)          |
+| Pangalan   | Deskripsyong                                                                         |
+| ---------- | ------------------------------------------------------------------------------------ |
+| playerid   | Ang ID ng player na pumasok o umalis ng mod shop                                     |
+| enterexit  | **1** kapag ang player ay pumasok o **0** kapag ang player ay umalis mula sa modshop |
+| interiorid | Ang Interior ID ng modshop na pinasukan ng player (0 kapag umaalis)                  |
 
 ## Returns
 
@@ -37,7 +37,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 :::warning
 
-Mga Kadalasang Bugs: Nag bubungguan ang mga players kapag parehas na pumasok sa mod shop.
+**Mga Kadalasang Bugs:** Nag bubungguan ang mga players kapag parehas na pumasok sa mod shop.
 
 :::
 

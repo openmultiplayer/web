@@ -17,9 +17,9 @@ Callback ini akan terpanggil ketika sebuah IP address mencoba untuk koneksi keda
 
 ## Returns
 
-0 - Akan melarang filterscript lain untuk menerima callback ini.
+**1** - Akan melarang filterscript lain untuk menerima callback ini.
 
-1 - Mengindikasikan bahwa callback ini akan dilanjutkan ke filtercript lain.
+**0** - Mengindikasikan bahwa callback ini akan dilanjutkan ke filtercript lain.
 
 Selalu terpanggil pertama di filterscripts.
 

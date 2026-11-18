@@ -22,7 +22,7 @@ Provjerava da li je aktor učitan kod igrača.
 
 ## Returns
 
-Ova funkcija vraća 1 ako je aktor učitan kod igrača ili 0 ako nije.
+Ova funkcija vraća **1** ako je aktor učitan kod igrača ili **0** ako nije.
 
 ## Primjeri
 

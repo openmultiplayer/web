@@ -16,9 +16,9 @@ This function stores the armour of a player into a variable.
 
 ## ส่งคืน
 
-1 - success
+**1** - success
 
-0 - failure (i.e. player not connected).
+**0** - failure (i.e. player not connected).
 
 The player's armour is stored in the specified variable.
 

@@ -21,9 +21,9 @@ Uništi aktora koji je kreiran sa CreateActor.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Aktor sa određenim ID-em ne postoji.
+**0**: Funkcija neuspješno izvršena. Aktor sa određenim ID-em ne postoji.
 
 ## Primjeri
 

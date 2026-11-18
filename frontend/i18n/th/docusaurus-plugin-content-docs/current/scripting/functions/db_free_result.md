@@ -15,7 +15,7 @@ Frees result memory allocated from db_query.
 
 ## ส่งคืน
 
-If DBResult:dbhandle is a valid handle, it returns 1, otherwise 0 if DBResult:dbhandle is a NULL reference.
+If **DBResult:dbhandle** is a valid handle, it returns 1, otherwise 0 if **DBResult:dbhandle** is a _NULL_ reference.
 
 ## ตัวอย่าง
 

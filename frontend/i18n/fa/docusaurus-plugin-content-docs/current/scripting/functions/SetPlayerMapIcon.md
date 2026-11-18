@@ -17,7 +17,7 @@ tags: ["player"]
 | Float:y       | مختصات Y برای قرار دادن map icon                                                                                                                  |
 | Float:z       | مختصات Z برای قرار دادن map icon                                                                                                                  |
 | markerType    | [آیکونی](../resources/mapicons) که قراره تنظیم بشه                                                                                                |
-| colour        | رنگ آیکون، به عنوان عدد صحیح یا hex با فرمت رنگ RGBA. این باید فقط با آیکون مربعی (ID: 0) استفاده بشه                                             |
+| colour        | رنگ آیکون، به عنوان عدد صحیح یا hex با فرمت رنگ **RGBA**. این باید فقط با آیکون مربعی (ID: 0) استفاده بشه                                         |
 | MAPICON:style | [سبک](../resources/mapiconstyles) آیکون                                                                                                           |
 
 ## مقادیر بازگشتی

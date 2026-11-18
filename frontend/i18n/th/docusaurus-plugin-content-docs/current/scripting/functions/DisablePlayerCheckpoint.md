@@ -15,9 +15,9 @@ Disables (hides/destroys) a player's set checkpoint. Players can only have a sin
 
 ## ส่งคืน
 
-1: The function executed successfully. Success is also returned if the player doesn't have a checkpoint shown already.
+**1**: The function executed successfully. Success is also returned if the player doesn't have a checkpoint shown already.
 
-0: The function failed to execute. This means the player is not connected.
+**0**: The function failed to execute. This means the player is not connected.
 
 ## ตัวอย่าง
 

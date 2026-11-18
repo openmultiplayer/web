@@ -16,9 +16,9 @@ Postavi smjer gledanja igrača (Z rotacija).
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
 ## Primjeri
 
@@ -38,7 +38,7 @@ SetPlayerFacingAngle(playerid, 0); // Igrač gleda sjeverno
 
 :::warning
 
-Uglovi su obrnuti u GTA:SA; 90 stepeni bi bilo istočno u stvarnom svijetu, ali u GTA:SA 90 stepeni je zapravo zapad. Sjever i Jug su i dalje 0/360 i 180. Da biste to pretvorili, jednostavno napravite kut od 360.
+Uglovi su obrnuti u GTA:SA; 90 stepeni bi bilo _istočno_ u stvarnom svijetu, ali u GTA:SA 90 stepeni je zapravo _zapad_. Sjever i Jug su i dalje 0/360 i 180. Da biste to pretvorili, jednostavno napravite kut od 360.
 
 :::
 

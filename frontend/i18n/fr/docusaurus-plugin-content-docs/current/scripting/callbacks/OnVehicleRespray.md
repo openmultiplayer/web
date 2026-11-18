@@ -44,7 +44,7 @@ Solution ici: https://pastebin.com/zX96D4dA
 
 :::warning
 
-Bug connu : la prévisualisation d'un composant dans une boutique de mods peut appeler la callback.
+**Bug connu :** la prévisualisation d'un composant dans une boutique de mods peut appeler la callback.
 
 :::
 

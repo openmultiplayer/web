@@ -19,9 +19,9 @@ Returns a vehicle's rotation on all axes as a quaternion.
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle specified does not exist.
+**0**: The function failed to execute. This means the vehicle specified does not exist.
 
 The vehicle's rotation is stored in the specified variables.
 

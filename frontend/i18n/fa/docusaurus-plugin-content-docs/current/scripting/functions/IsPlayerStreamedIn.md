@@ -16,9 +16,9 @@ tags: ["player"]
 
 ## مقادیر برگشتی
 
-**true** - بازیکن stream شده.
+**true** - بازیکن stream _شده_.
 
-**false** - بازیکن stream نشده.
+**false** - بازیکن stream _نشده_.
 
 ## مثال‌ها
 

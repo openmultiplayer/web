@@ -15,7 +15,7 @@ Set the gravity for all players.
 
 ## ส่งคืน
 
-This function always returns 1, even when it fails to execute if the gravity is out of the limits (lower than -50 or high than +50).
+This function always returns **1**, even when it fails to execute if the gravity is out of the limits (lower than -50 or high than +50).
 
 ## ตัวอย่าง
 

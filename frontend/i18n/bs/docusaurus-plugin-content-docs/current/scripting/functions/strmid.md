@@ -19,7 +19,7 @@ Izvuci niz znakova iz stringa.
 
 ## Returns
 
-Broj karaktera pohranjenih u dest[]
+Broj karaktera pohranjenih u `dest[]`
 
 ## Primjeri
 

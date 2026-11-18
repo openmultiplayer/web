@@ -22,7 +22,7 @@ tags: ["player", "administration"]
 
 :::warning
 
-Свака акција одмах пре BanEx(), као што је слање порука са [SendClientMessage](SendClientMessage), неће доћи до играча. Мора се поставити
+Свака акција одмах пре BanEx, као што је слање порука са [SendClientMessage](SendClientMessage), неће доћи до играча. Мора се поставити
 тајмер да би се направио временски размак бан-у.
 
 :::

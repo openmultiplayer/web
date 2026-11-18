@@ -19,7 +19,7 @@ Extract a range of characters from a string.
 
 ## ส่งคืน
 
-The number of characters stored in dest[]
+The number of characters stored in `dest[]`
 
 ## ตัวอย่าง
 

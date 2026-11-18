@@ -21,9 +21,9 @@ Destroy an actor which was created with CreateActor.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The actor with the ID specified does not exist.
+**0**: The function failed to execute. The actor with the ID specified does not exist.
 
 ## ตัวอย่าง
 

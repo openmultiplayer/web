@@ -9,9 +9,9 @@ tags: []
 
 Toggle whether the usage of weapons in interiors is allowed or not.
 
-| Name  | Description                                                                               |
-| ----- | ----------------------------------------------------------------------------------------- |
-| allow | 1 to enable weapons in interiors (enabled by default), 0 to disable weapons in interiors. |
+| Name  | Description                                                                                       |
+| ----- | ------------------------------------------------------------------------------------------------- |
+| allow | **1** to enable weapons in interiors (enabled by default), **0** to disable weapons in interiors. |
 
 ## ส่งคืน
 

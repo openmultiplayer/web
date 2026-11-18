@@ -18,8 +18,8 @@ Compara duas strings para ver se são iguais.
 
 ## Retorno
 
-0 se as strings combinam entre si em determinado comprimento;
-1 ou -1 se algum caractere não combina: string1[i] - string2[i] ('i' representa o índice de caracteres começando em 0); Diferença no número de caracteres se uma string corresponde apenas a parte de outra string.
+**0** se as strings combinam entre si em determinado comprimento;
+**1** ou **-1** se algum caractere não combina: string1[i] - string2[i] ('i' representa o índice de caracteres começando em 0); **Diferença no número de caracteres** se uma string corresponde apenas a parte de outra string.
 
 ## Exemplos
 
@@ -48,7 +48,7 @@ if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 
 :::warning
 
-Se você comparar strings de um arquivo de texto, você deve levar em consideração os caracteres especiais 'carriage return' e 'new line' (\r \n), conforme eles são incluídos, ao usar fread().
+Se você comparar strings de um arquivo de texto, você deve levar em consideração os caracteres especiais 'carriage return' e 'new line' (\r \n), conforme eles são incluídos, ao usar fread.
 
 :::
 

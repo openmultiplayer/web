@@ -15,7 +15,7 @@ Saznaj koji je tip komponente određeni ID.
 
 ## Returns
 
-ID slota za komponentu navedene komponente ili -1 ako je komponenta nevaljana.
+ID slota za komponentu navedene komponente ili **-1** ako je komponenta nevaljana.
 
 ## Primjeri
 

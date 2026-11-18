@@ -15,7 +15,7 @@ Moves to the next row of the result allocated from db_query.
 
 ## ส่งคืน
 
-Returns 1 on success, otherwise 0 if DBResult:dbresult is a NULL reference or the last row is reached.
+Returns **1** on success, otherwise **0** if **DBResult:dbresult** is a _NULL_ reference or the last row is reached.
 
 ## ตัวอย่าง
 
@@ -61,7 +61,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using db_query. But it's protected against _NULL_ references.
 
 :::
 

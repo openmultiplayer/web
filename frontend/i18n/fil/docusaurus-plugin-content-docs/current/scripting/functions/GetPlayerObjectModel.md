@@ -20,7 +20,7 @@ Kunin ang model ID ng isang player-object.
 
 Ang model ID ng object ng player.
 
-Kung wala ang player o object, mag rereturn ito -1 o 0 kung wala ang player o object.
+Kung wala ang player o object, mag rereturn ito **-1** o **0** kung wala ang player o object.
 
 ## Examples
 

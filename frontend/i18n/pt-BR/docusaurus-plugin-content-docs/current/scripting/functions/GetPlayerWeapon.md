@@ -16,7 +16,7 @@ Retorna o ID da arma que o jogador está segurando no momento.
 
 ## Retornos
 
-O ID da arma atual do jogador. Retorna -1 se o jogador especificado não existir.
+O ID da arma atual do jogador. Retorna **-1** se o jogador especificado não existir.
 
 ## Exemplos
 

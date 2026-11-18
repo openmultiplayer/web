@@ -17,9 +17,9 @@ Get the name of a weapon.
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. The weapon specified does not exist.
+**0**: The function failed to execute. The weapon specified does not exist.
 
 The weapon's name is stored in the specified array.
 

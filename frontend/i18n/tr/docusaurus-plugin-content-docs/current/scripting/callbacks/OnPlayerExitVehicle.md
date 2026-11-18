@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Açıklama
 
-Bu geri çağırma, araçta bulunan bir oyuncu bir araçtan inmeye başladığında çağırılır.
+Bu geri çağırma, araçta bulunan bir oyuncu bir araçtan inmeye **başladığında** çağırılır.
 
 | Parametre | Açıklama                               |
 | --------- | -------------------------------------- |

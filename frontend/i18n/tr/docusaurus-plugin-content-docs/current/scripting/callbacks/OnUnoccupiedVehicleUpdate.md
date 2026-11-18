@@ -23,7 +23,7 @@ Bu fonksiyon, oyuncunun istemcisi sürmediği bir aracın konumunu güncellediğ
 
 ## Çalışınca Vereceği Sonuçlar
 
-Filterscript dosyalarında her zaman ilk olarak çağrılır, bu nedenle 0 döndürmek diğer komut dosyalarının da görmesini engeller.
+Filterscript dosyalarında her zaman ilk olarak çağrılır, bu nedenle **0** döndürmek diğer komut dosyalarının da görmesini engeller.
 
 ## Örnek
 

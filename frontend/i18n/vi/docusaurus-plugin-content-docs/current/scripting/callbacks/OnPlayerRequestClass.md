@@ -36,7 +36,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::note
 
-Callback này cũng được gọi khi người chơi nhấn F4.
+Callback này cũng được gọi khi người chơi nhấn **F4**.
 
 :::
 

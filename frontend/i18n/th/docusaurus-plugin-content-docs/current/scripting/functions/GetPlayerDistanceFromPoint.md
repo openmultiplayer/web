@@ -18,7 +18,7 @@ Calculate the distance between a player and a map coordinate.
 
 ## ส่งคืน
 
-The distance between the player and the point as a float.
+The distance between the player and the point as a **float**.
 
 ## ตัวอย่าง
 

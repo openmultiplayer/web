@@ -7,7 +7,7 @@ tags: ["玩家", "车辆"]
 
 ## 描述
 
-当玩家开始进入车辆时触发此回调函数（此时玩家尚未完全进入车辆）。
+当玩家**开始**进入车辆时触发此回调函数（此时玩家尚未完全进入车辆）。
 
 | 参数        | 说明                                   |
 | ----------- | -------------------------------------- |
@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-- 此回调在玩家开始进入车辆时触发，而非完全进入后触发。详见 [OnPlayerStateChange](OnPlayerStateChange)
+- 此回调在玩家**开始**进入车辆时触发，而非完全进入后触发。详见 [OnPlayerStateChange](OnPlayerStateChange)
 - 即使玩家被拒绝进入车辆（例如车辆已上锁或满员），此回调仍会被触发（但仅限作为乘客的情况）
 
 :::

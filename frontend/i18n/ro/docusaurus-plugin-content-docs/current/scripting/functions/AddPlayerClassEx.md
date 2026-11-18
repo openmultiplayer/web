@@ -11,9 +11,9 @@ Această funcție este exact aceeași cu funcția AddPlayerClass, cu adăugarea 
 
 ## Se intoarce
 
-ID-ul clasei care tocmai a fost adăugat.
+**ID-ul clasei** care tocmai a fost adăugat.
 
-319 dacă limita de clasă (320) a fost atinsă. Cel mai mare ID de clasă posibil este 319.
+**319** dacă limita de clasă (320) a fost atinsă. Cel mai mare ID de clasă posibil este 319.
 
 ## Exemple
 

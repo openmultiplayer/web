@@ -16,7 +16,7 @@ Otvorite datoteku (za čitanje ili pisanje).
 
 ## Returns
 
-Vraća upravitelj datoteke. Ovaj upravitelj se koristi za čitanje i pisanje. 0 ako nije uspjelo otvoriti datoteku.
+Vraća upravitelj datoteke. Ovaj upravitelj se koristi za čitanje i pisanje. **0** ako nije uspjelo otvoriti datoteku.
 
 ## Primjeri
 
@@ -131,7 +131,7 @@ io_append     Dodaje (dodaje) u datoteku, samo za pisanje. Ako datoteka ne posto
 
 :::warning
 
-Ako koristite io_read, a datoteka ne postoji, vratit će NULL referencu. Korištenje nevažećih referenci na funkcijama datoteka srušit će vaš server!
+Ako koristite io_read, a datoteka ne postoji, vratit će _NULL_ referencu. Korištenje **nevažećih referenci** na funkcijama datoteka **srušit** će vaš server!
 
 :::
 

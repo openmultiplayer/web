@@ -17,9 +17,9 @@ Ta "callback" se pokliče, ko se naslov IP poskuša povezati s strežnikom. Če 
 
 ## Returns
 
-1 - Preprečil bo druge "filterscript" to prejmem "callback".
+**1** - Preprečil bo druge "filterscript" to prejmem "callback".
 
-0 -Pomeni, da bo ta "callback" se posreduje na naslednjo "filterscript".
+**0** -Pomeni, da bo ta "callback" se posreduje na naslednjo "filterscript".
 
 Vedno je bila povabljena prva v "filterscript".
 

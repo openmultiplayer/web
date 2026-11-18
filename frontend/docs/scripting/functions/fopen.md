@@ -18,7 +18,7 @@ Open a file (to read from or write to).
 
 Returns the file handle. This handle is used for reading and writing.
 
-0 if failed to open file.
+**0** if failed to open file.
 
 ## Examples
 
@@ -149,7 +149,7 @@ else
 :::warning
 
 - This function can't access files outside the `scriptfiles` folder!
-- If you use `io_read` and the file doesn't exist, it will return a NULL reference. Using invalid references on file functions will crash your server!
+- If you use `io_read` and the file doesn't exist, it will return a _NULL_ reference. Using **invalid references** on file functions will **crash** your server! (Fixed in open.mp)
 
 :::
 

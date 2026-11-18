@@ -16,7 +16,7 @@ Oyuncunun uyguladığı bütün animasyonları ipta eder. (Aynı zamanda jetpack
 
 ## Çalışınca Vereceği Sonuçlar
 
-Bu fonksiyon her zaman belirtilen ID oyunda olmasa bile her zaman 1 döner.
+Bu fonksiyon her zaman belirtilen ID oyunda olmasa bile her zaman **1** döner.
 
 ## Örnekler
 

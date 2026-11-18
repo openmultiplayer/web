@@ -13,20 +13,20 @@ Ova funkcija je dodana u SA-MP 0.3.DL R1 i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Dodaje novog prilagođenog karaktera za preuzimanje. Fajlovi modela će biti pohranjeni u igračevim: Documents\GTA San Andreas User Files\SAMP\cache ispod Server IP i Port foldera u [CRC-formi](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) imena fajla.
+Dodaje novog prilagođenog karaktera za preuzimanje. Fajlovi modela će biti pohranjeni u igračevim: `Documents\GTA San Andreas User Files\SAMP\cache` ispod Server IP i Port foldera u [CRC-formi](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) imena fajla.
 
 | Ime     | Deskripcija                                                                                                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | Osnovni [skin model ID](../resources/skins) za korištenje (ponašanje karaktera i originalnog karaktera za upotrebu kada preuzimanje nije uspjelo). |
 | newid   | Novi skin model ID između 20001 i 30000 (10000 slotova) da bi se kasnije koristio sa SetPlayerSkin.                                                |
-| dffname | Ime .dff collision modela fajla koji se nalazi u 'models' server folderu po zadanim postavkama (artpath postavka).                                 |
-| txdname | Ime .txd texture modela fajla koji se nalazi u 'models' server folderu po zadanim postavkama (artpath postavka).                                   |
+| dffname | Ime **.dff** collision modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka).                           |
+| txdname | Ime **.txd** texture modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka).                             |
 
 ## Returns
 
-1: Funkcija je uspješno izvršena.
+**1**: Funkcija je uspješno izvršena.
 
-0: Funkcija je neuspješno izvršena.
+**0**: Funkcija je neuspješno izvršena.
 
 ## Primjeri
 
@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork mora biti omogućen (u server settings) da bi ovo radilo
+**useartwork** mora biti omogućen (u server settings) da bi ovo radilo
 
 :::
 

@@ -9,25 +9,25 @@ tags: ["vehicle"]
 
 Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at any time in the script.
 
-| Ime                                   | Deskripcija                                                                                                                 |
-| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| vehicletype                           | Model vozila.                                                                                                               |
-| Float:X                               | X kordinata vozila.                                                                                                         |
-| Float:Y                               | Y kordinata vozila.                                                                                                         |
-| Float:Z                               | Z kordinata vozila.                                                                                                         |
-| Float:rotation                        | Rotacija/smjer vozila.                                                                                                      |
-| [color1](../resources/vehiclecolorid) | ID Primarne boje.                                                                                                           |
-| [color2](../resources/vehiclecolorid) | ID Sekundarne boje                                                                                                          |
-| respawn_delay                         | Razmak do ponovnog respawnovanja automobila bez vozača u sekundi. Korištenjem -1 spriječit će ponovno respawnovanje vozila. |
-| bool:addsiren                         | Ima zadanu vrijednost 'false'. Omogućuje vozilu da ima sirenu, pod uvjetom da vozilo ima sirenu(trubu H).                   |
+| Ime                                   | Deskripcija                                                                                                                         |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| vehicletype                           | Model vozila.                                                                                                                       |
+| Float:X                               | X kordinata vozila.                                                                                                                 |
+| Float:Y                               | Y kordinata vozila.                                                                                                                 |
+| Float:Z                               | Z kordinata vozila.                                                                                                                 |
+| Float:rotation                        | Rotacija/smjer vozila.                                                                                                              |
+| [color1](../resources/vehiclecolorid) | ID Primarne boje.                                                                                                                   |
+| [color2](../resources/vehiclecolorid) | ID Sekundarne boje                                                                                                                  |
+| respawn_delay                         | Razmak do ponovnog respawnovanja automobila bez vozača u **sekundi**. Korištenjem **-1** spriječit će ponovno respawnovanje vozila. |
+| bool:addsiren                         | Ima zadanu vrijednost 'false'. Omogućuje vozilu da ima sirenu, pod uvjetom da vozilo ima sirenu(trubu H).                           |
 
 ## Returns
 
 ID vozila koji je kreiran (1 do MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) ako vozilo nije kreirano (dostignut je limit vozila ili unesen nevažeći model vozila).
+**INVALID_VEHICLE_ID (65535)** ako vozilo nije kreirano (dostignut je limit vozila ili unesen nevažeći model vozila).
 
-0 Ako vozilo nije kreirano (Prošla su vozila 538 ili 537, a to su vozovi).
+**0** Ako vozilo nije kreirano (Prošla su vozila 538 ili 537, a to su vozovi).
 
 ## Primjeri
 

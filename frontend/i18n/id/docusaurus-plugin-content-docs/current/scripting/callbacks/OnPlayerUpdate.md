@@ -15,9 +15,9 @@ Callback ini di panggil ketika klien/pemain memperbarui server dengan statusnya.
 
 ## Returns
 
-0 - Pembaruan dari pemain ini tidak akan di duplikat ke klien lain.
+**0** - Pembaruan dari pemain ini tidak akan di duplikat ke klien lain.
 
-1 - Menunjukkan bahwa pembaruan ini dapat diproses secara normal dan dikirim ke pemain lain.
+**1** - Menunjukkan bahwa pembaruan ini dapat diproses secara normal dan dikirim ke pemain lain.
 
 Ini selalu di panggil pertama dalam filtersciprt.
 

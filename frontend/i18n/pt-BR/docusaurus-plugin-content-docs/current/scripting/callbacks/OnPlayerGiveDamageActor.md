@@ -21,9 +21,9 @@ Esta callback é chamada quando o jogador causa dano a um ator.
 
 ## Retorno
 
-1 - Callback não será chamada em outros fillterscripts.
+**1** - Callback não será chamada em outros fillterscripts.
 
-0 - Permite que essa callback seja chamada em outros filterscripts.
+**0** - Permite que essa callback seja chamada em outros filterscripts.
 
 É sempre chamada primeiro em filterscripts então ao retornar 1 bloqueia outros filterscripts de vê-la.
 

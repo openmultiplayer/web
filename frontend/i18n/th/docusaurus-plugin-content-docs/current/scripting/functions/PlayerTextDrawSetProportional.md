@@ -13,7 +13,7 @@ Appears to scale text spacing to a proportional ratio. Useful when using PlayerT
 | -------- | ------------------------------------------------------------------------ |
 | playerid | The ID of the player whose player-textdraw to set the proportionality of |
 | text     | The ID of the player-textdraw to set the proportionality of              |
-| set      | 1 to enable proportionality, 0 to disable.                               |
+| set      | **1** to enable proportionality, **0** to disable.                       |
 
 ## ส่งคืน
 

@@ -19,9 +19,9 @@ Deze callback wordt aangeroepen wanneer de sirene van een voertuig wordt omgesch
 
 ## Returns
 
-1 - Voorkomt dat gamemode deze callback ontvangt.
+**1** - Voorkomt dat gamemode deze callback ontvangt.
 
-0 - Geeft aan dat deze callback wordt doorgegeven aan de gamemode.
+**0** - Geeft aan dat deze callback wordt doorgegeven aan de gamemode.
 
 Wordt altijd als eerste aangeroepen in filterscripts.
 

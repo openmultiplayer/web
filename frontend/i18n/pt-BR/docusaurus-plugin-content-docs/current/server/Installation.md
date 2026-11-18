@@ -288,11 +288,11 @@ Ou se você preferir, pode usar as grafias mistas:
 - **warning 234: function is deprecated (symbol "GetVehiclePoolSize") This function is fundamentally broken.**
 - **warning 234: function is deprecated (symbol "GetActorPoolSize") This function is fundamentally broken.**
 
-Substitua `GetPlayerPoolSize()` por `MAX_PLAYERS`
+Substitua `GetPlayerPoolSize` por `MAX_PLAYERS`
 
-Substitua `GetVehiclePoolSize()` por `MAX_VEHICLES`
+Substitua `GetVehiclePoolSize` por `MAX_VEHICLES`
 
-Substitua `GetActorPoolSize()` por `MAX_ACTORS`
+Substitua `GetActorPoolSize` por `MAX_ACTORS`
 
 <hr />
 

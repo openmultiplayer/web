@@ -15,7 +15,7 @@ Checks if the given objectid is moving.
 
 ## ส่งคืน
 
-1 if the object is moving, 0 if not.
+**1** if the object is moving, **0** if not.
 
 ## ตัวอย่าง
 

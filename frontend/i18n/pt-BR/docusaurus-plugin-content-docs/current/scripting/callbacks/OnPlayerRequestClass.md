@@ -16,7 +16,7 @@ Chamado quando um jogador muda de classe na seleção de classe (e quando a sele
 
 ## Retorno
 
-Retornando 0 nesta callback irá impedir que o player spawne. O player pode ser forçado a spawnar quando [SpawnPlayer](../functions/SpawnPlayer) for usado.
+Retornando **0** nesta callback irá impedir que o player spawne. O player pode ser forçado a spawnar quando [SpawnPlayer](../functions/SpawnPlayer) for usado.
 
 Sempre é chamada primeiro em Filterscripts.
 
@@ -38,7 +38,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::note
 
-Esta callback também é chamada quando um jogador pressiona F4.
+Esta callback também é chamada quando um jogador pressiona **F4**.
 
 :::
 

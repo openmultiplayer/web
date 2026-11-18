@@ -16,9 +16,9 @@ I-set ang score ng player. Ang mga player scores ay ipinapakita sa scoreboard (i
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Nangangahulugan ito na ang tinukoy na manlalaro ay hindi umiiral.
+**0**: Nabigo ang function na isagawa. Nangangahulugan ito na ang tinukoy na manlalaro ay hindi umiiral.
 
 ## Examples
 

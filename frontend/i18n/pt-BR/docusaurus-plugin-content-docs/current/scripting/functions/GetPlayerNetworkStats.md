@@ -18,7 +18,7 @@ Obtém as estatísticas de rede de um jogador e as salva em uma string.
 
 ## Retornos
 
-Esta função sempre retorna 1.
+Esta função sempre retorna **1**.
 
 ## Exemplos
 

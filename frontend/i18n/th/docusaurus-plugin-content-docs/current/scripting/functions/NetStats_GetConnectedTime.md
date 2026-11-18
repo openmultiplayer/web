@@ -15,7 +15,7 @@ Gets the amount of time (in milliseconds) that a player has been connected to th
 
 ## ส่งคืน
 
-This function returns the amount of time (in milliseconds) that a player has been connected to the server for. 0 is returned if the player is not connected.
+This function returns the amount of time (in milliseconds) that a player has been connected to the server for. **0** is returned if the player is not connected.
 
 ## ตัวอย่าง
 

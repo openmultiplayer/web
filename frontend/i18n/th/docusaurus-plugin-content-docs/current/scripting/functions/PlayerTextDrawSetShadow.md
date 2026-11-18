@@ -17,9 +17,9 @@ Adds a shadow to the bottom-right side of the text in a player-textdraw. The sha
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. This means the player-textdraw doesn't exist.
+**0**: The function failed to execute. This means the player-textdraw doesn't exist.
 
 ## ตัวอย่าง
 

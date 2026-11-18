@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Descriere
 
-Acest callback este apelat atunci când un jucător începe să intre într-un vehicul, ceea ce înseamnă că jucătorul nu se află încă în vehicul în momentul în care este apelat.
+Acest callback este apelat atunci când un jucător **începe** să intre într-un vehicul, ceea ce înseamnă că jucătorul nu se află încă în vehicul în momentul în care este apelat.
 
 | Nume        | Descriere                                                 |
 | ----------- | --------------------------------------------------------- |
@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-Acest apel invers este apelat atunci când un jucător ÎNCEPE să intre într-un vehicul, nu când a intrat în el. Consultați OnPlayerStateChange. Acest apel invers este în continuare apelat dacă jucătorului i se interzice intrarea în vehicul (de exemplu, acesta este blocat sau plin).
+Acest apel invers este apelat atunci când un jucător **ÎNCEPE** să intre într-un vehicul, nu când a intrat în el. Consultați OnPlayerStateChange. Acest apel invers este în continuare apelat dacă jucătorului i se interzice intrarea în vehicul (de exemplu, acesta este blocat sau plin).
 
 :::
 

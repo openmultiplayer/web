@@ -15,7 +15,7 @@ Check if the player is currently inside a checkpoint, this could be used for pro
 
 ## ส่งคืน
 
-false if player isn't in his checkpoint else true
+**false** if player isn't in his checkpoint else **true**
 
 ## ตัวอย่าง
 

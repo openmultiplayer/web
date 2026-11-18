@@ -17,7 +17,7 @@ Place an icon/marker on a player's map. Can be used to mark locations such as ba
 | Float:y       | The Y coordinate to place the map icon at.                                                                                                                |
 | Float:z       | The Z coordinate to place the map icon at.                                                                                                                |
 | markerType    | The [icon](../resources/mapicons) to set.                                                                                                                 |
-| colour        | The color of the icon, as an integer or hex in RGBA color format. This should only be used with the square icon (ID: 0).                                  |
+| colour        | The color of the icon, as an integer or hex in **RGBA** color format. This should only be used with the square icon (ID: 0).                              |
 | MAPICON:style | The [style](../resources/mapiconstyles) of icon.                                                                                                          |
 
 ## Returns

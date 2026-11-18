@@ -16,9 +16,9 @@ Uništi 3D text label koji je kreiran koristeći CreatePlayer3DTextLabel.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da spomenuti label ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da spomenuti label ne postoji.
 
 ## Primjeri
 

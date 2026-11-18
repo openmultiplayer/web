@@ -21,9 +21,9 @@ Essa callback é chamada quando um veículo renasce.
 
 ## Retornos
 
-0 - Vai prevenir que outros Filterscripts chamem essa callback.
+**0** - Vai prevenir que outros Filterscripts chamem essa callback.
 
-1 - Indica que essa callback vai ser passada para outros Filterscripts em seguida.
+**1** - Indica que essa callback vai ser passada para outros Filterscripts em seguida.
 
 Sempre é chamada primeiro em Filterscripts.
 

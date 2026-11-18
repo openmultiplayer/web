@@ -19,9 +19,9 @@ Bu geri çağırma bir aracın siren durumu değiştiğinde çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Oyun modunda bu geri çağırmanın kullanılmasını önler.
+**1** - Oyun modunda bu geri çağırmanın kullanılmasını önler.
 
-0 - Bu geri çağırmanın oyun modunda pas geçileceğini gösterir.
+**0** - Bu geri çağırmanın oyun modunda pas geçileceğini gösterir.
 
 Her zaman ilk filterscriptslerde çağrılır.
 

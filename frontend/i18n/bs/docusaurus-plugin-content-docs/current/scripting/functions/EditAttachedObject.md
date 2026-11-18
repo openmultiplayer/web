@@ -16,7 +16,7 @@ Pristupi modu uređivanja za prikvačeni objekat.
 
 ## Returns
 
-1 uspješno i 0 neuspješno.
+**1** uspješno i **0** neuspješno.
 
 ## Primjeri
 
@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Kameru možete pomicati tijekom uređivanja pritiskom i držanjem razmaknice (ili W u vozilu) i pomicanjem miša.
+Kameru možete pomicati tijekom uređivanja pritiskom i držanjem **razmaknice** (ili **W** u vozilu) i pomicanjem miša.
 
 :::
 

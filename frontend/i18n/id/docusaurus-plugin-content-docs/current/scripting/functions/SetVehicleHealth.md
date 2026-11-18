@@ -16,9 +16,9 @@ Mengatur Health kendaraan. Ketika kendaraan menurun, mesin kendaraan akan mengel
 
 ## Returns
 
-1: Fungsi berhasil dijalankan.
+**1**: Fungsi berhasil dijalankan.
 
-0: Fungsi gagal dijalankan. Ini berarti kendaraan tidak ada.
+**0**: Fungsi gagal dijalankan. Ini berarti kendaraan tidak ada.
 
 ## Contoh
 
@@ -38,7 +38,7 @@ if (strcmp("/fixengine", cmdtext, true) == 0)
 
 :::note
 
-Full health kendaraan adalah 1000. Nilai yang lebih tinggi dimungkinkan. Untuk informasi lebih lanjut tentang health values, lihat [ini.](../resources/vehiclehealth)
+Full health kendaraan adalah **1000**. Nilai yang lebih tinggi dimungkinkan. Untuk informasi lebih lanjut tentang health values, lihat [ini.](../resources/vehiclehealth)
 
 :::
 

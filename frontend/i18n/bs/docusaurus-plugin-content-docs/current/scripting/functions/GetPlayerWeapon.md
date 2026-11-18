@@ -15,7 +15,7 @@ Vraća ID oružja kojeg igrač trenutno drži.
 
 ## Returns
 
-ID igračevog trenutnog oružja. Returna/vraća -1 ako navedeni igrač ne postoji.
+ID igračevog trenutnog oružja. Returna/vraća **-1** ako navedeni igrač ne postoji.
 
 ## Primjeri
 

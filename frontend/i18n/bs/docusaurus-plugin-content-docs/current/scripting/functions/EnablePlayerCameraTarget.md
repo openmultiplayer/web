@@ -15,16 +15,16 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 Uključite ili isključite funkcije ciljanja kamere za igrača. Po zadanim postavkama onemogućeno radi uštede propusnosti.
 
-| Ime      | Deskripcija                                                          |
-| -------- | -------------------------------------------------------------------- |
-| playerid | ID igrača za kojeg se uključuje/isključuje funkcija ciljanja kamere. |
-| enable   | 1 da uključite funkciju ciljanja kamere i 0 da je isključite.        |
+| Ime      | Deskripcija                                                           |
+| -------- | --------------------------------------------------------------------- |
+| playerid | ID igrača za kojeg se uključuje/isključuje funkcija ciljanja kamere.  |
+| enable   | **1** da uključite funkciju ciljanja kamere i **0** da je isključite. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
 ## Primjeri
 

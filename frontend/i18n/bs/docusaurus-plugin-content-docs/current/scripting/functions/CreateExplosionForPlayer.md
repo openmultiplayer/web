@@ -20,7 +20,7 @@ Kreira eksploziju koja je vidljiva samo jednom igraču. Ovo se može koristiti d
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, bilo da funkcija ne uspije da se izvrši (igrač ne postoji, nevažeći radijus, nevažeći tip eksplozije).
+Ova funkcija uvijek returna (vraća) **1**, bilo da funkcija ne uspije da se izvrši (igrač ne postoji, nevažeći radijus, nevažeći tip eksplozije).
 
 ## Primjeri
 

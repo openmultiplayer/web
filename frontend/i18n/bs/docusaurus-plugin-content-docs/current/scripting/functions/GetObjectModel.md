@@ -17,7 +17,7 @@ Dobij ID modela određenog objekta (CreateObject).
 
 ## Returns
 
-Model ID određenog objekta. -1 ako objekt ne postoji.
+Model ID određenog objekta. **-1** ako objekt ne postoji.
 
 ## Primjeri
 

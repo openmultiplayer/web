@@ -16,7 +16,7 @@ Obtém as estatísticas da rede do servidor e as armazena em uma string.
 
 ## Retorno
 
-Esta função sempre retorna 1.
+Esta função sempre retorna **1**.
 
 ## Exemplos
 

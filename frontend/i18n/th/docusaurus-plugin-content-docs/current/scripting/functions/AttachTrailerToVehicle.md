@@ -16,7 +16,7 @@ Attach a vehicle to another vehicle as a trailer.
 
 ## ส่งคืน
 
-This function always returns 1, even if neither of the vehicle IDs passed are valid.
+This function always returns **1**, even if neither of the vehicle IDs passed are valid.
 
 ## ตัวอย่าง
 

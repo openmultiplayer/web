@@ -17,7 +17,7 @@ tags: ["core"]
 
 ## مقدار بازگشتی
 
-value، اگر در محدوده min–max باشد، min، اگر value کمتر از min باشد یا max، اگر value بیشتر از max باشد.
+**value**، اگر در محدوده min–max باشد، **min**، اگر value کمتر از min باشد یا **max**، اگر value بیشتر از max باشد.
 
 ## مثال‌ها
 

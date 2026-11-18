@@ -16,7 +16,7 @@ Defina a gravidade para todos os jogadores.
 
 ## Retornos
 
-Esta função sempre retorna 1, mesmo quando falha na execução se a gravidade estiver fora dos limites (menor que -50.0 ou maior que +50.0).
+Esta função sempre retorna **1**, mesmo quando falha na execução se a gravidade estiver fora dos limites (menor que -50.0 ou maior que +50.0).
 
 ## Exemplos
 

@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Você pode mover a câmera durante a edição pressionando e segurando a barra de espaço (ou W em veículo) e movendo o mouse.
+Você pode mover a câmera durante a edição pressionando e segurando a **barra de espaço** (ou **W** em veículo) e movendo o mouse.
 
 :::
 

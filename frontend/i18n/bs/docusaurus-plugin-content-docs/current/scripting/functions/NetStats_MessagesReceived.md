@@ -15,7 +15,7 @@ Dobija broj poruka koje je server primio od klijenta za reprodukciju.
 
 ## Returns
 
-Ova funkcija vraća broj poruka koje je server primio od klijenta za reprodukciju. 0 se vraća ako igrač nije konektovan.
+Ova funkcija vraća broj poruka koje je server primio od klijenta za reprodukciju. **0** se vraća ako igrač nije konektovan.
 
 ## Primjeri
 

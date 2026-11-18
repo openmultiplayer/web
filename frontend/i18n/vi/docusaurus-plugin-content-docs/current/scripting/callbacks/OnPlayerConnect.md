@@ -15,9 +15,9 @@ Callback này được gọi khi một người chơi kết nối với server.
 
 ## Trả Về
 
-0 - Sẽ ngăn các filterscripts khác nhận được callback này.
+**0** - Sẽ ngăn các filterscripts khác nhận được callback này.
 
-1 - Chỉ ra rằng callback này sẽ được chuyển đến filterscript tiếp theo.
+**1** - Chỉ ra rằng callback này sẽ được chuyển đến filterscript tiếp theo.
 
 Callback này luôn được gọi đầu tiên trong filterscripts.
 

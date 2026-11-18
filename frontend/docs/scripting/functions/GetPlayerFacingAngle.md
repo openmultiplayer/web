@@ -52,7 +52,7 @@ Angles returned when inside a vehicle is rarely correct. To get the correct faci
 
 :::warning
 
-Angles are reversed in GTA:SA; 90 degrees would be East in the real world, but in GTA:SA 90 degrees is in fact West. North and South are still 0/360 and 180. To convert this, simply do 360 - angle.
+Angles are reversed in GTA:SA; 90 degrees would be _East_ in the real world, but in GTA:SA 90 degrees is in fact _West_. North and South are still 0/360 and 180. To convert this, simply do **360 - angle**.
 
 :::
 

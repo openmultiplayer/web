@@ -35,7 +35,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::tip
 
-Globs podem ser usados nesta função, por exemplo bloquear o IP '6.9._._' bloqueará todos os IPs onde os primeiros dois octetos são 6 e 9 respectivamente. Qualquer número pode estar no lugar do underscore.
+Globs podem ser usados nesta função, por exemplo bloquear o IP `6.9.*.*` bloqueará todos os IPs onde os primeiros dois octetos são **6** e **9** respectivamente. Qualquer número pode estar no lugar do asterisco.
 
 :::
 

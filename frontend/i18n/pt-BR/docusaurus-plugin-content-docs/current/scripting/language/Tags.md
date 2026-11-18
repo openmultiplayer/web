@@ -169,7 +169,7 @@ No exemplo de sobrecarga acima, a linha funcional foi:
 return float(_:oper);
 ```
 
-Esse é um exemplo de sobrescrita de tag: o `_:` antes de `oper` indica ao compilador que ignore o fato de a variável ter tag `Mytag:` e a trate como `_:` (sem tag). A função `float()` aplica a tag a um número comum, então precisa receber um número sem tag. No exemplo consideramos que `Mytag` armazena um inteiro comum, mas é necessário cuidado com a sobrescrita; o código a seguir gera resultados estranhos:
+Esse é um exemplo de sobrescrita de tag: o `_:` antes de `oper` indica ao compilador que ignore o fato de a variável ter tag `Mytag:` e a trate como `_:` (sem tag). A função `float` aplica a tag a um número comum, então precisa receber um número sem tag. No exemplo consideramos que `Mytag` armazena um inteiro comum, mas é necessário cuidado com a sobrescrita; o código a seguir gera resultados estranhos:
 
 ```c
 new

@@ -22,9 +22,9 @@ Toggle an actor's invulnerability.
 
 ## ส่งคืน
 
-1 - Success
+**1** - Success
 
-0 - Failure (i.e. Actor is not created).
+**0** - Failure (i.e. Actor is not created).
 
 ## ตัวอย่าง
 

@@ -22,7 +22,7 @@ tags: ["player", "administration"]
 
 :::warning
 
-هر عملی که مستقیماً قبل از BanEx() انجام شود (مانند ارسال پیام با [SendClientMessage](SendClientMessage)) به بازیکن نخواهد رسید. باید از تایمر برای تأخیر مسدودیت استفاده کرد.
+هر عملی که مستقیماً قبل از BanEx انجام شود (مانند ارسال پیام با [SendClientMessage](SendClientMessage)) به بازیکن نخواهد رسید. باید از تایمر برای تأخیر مسدودیت استفاده کرد.
 
 :::
 

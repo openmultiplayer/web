@@ -446,7 +446,7 @@ print(const string[])
 }
 ```
 
-Now whenever print() is used in a script your function will be called instead of the original and you can do what you like. In this case another message is printed first then the original message.
+Now whenever `print` is used in a script your function will be called instead of the original and you can do what you like. In this case another message is printed first then the original message.
 
 ## `new`
 
@@ -495,7 +495,7 @@ The example above also shows why correct indentation is so important.
 
 If a global variable (i.e. one declared outside a function) is declared new, it can be used everywhere after the declaration:
 
-File1.pwn:
+**File1.pwn:**
 
 ```c
 MyFunc1()
@@ -518,7 +518,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn:
+**file2.pwn:**
 
 ```c
 MyFunc3()
@@ -591,7 +591,7 @@ public is used to make a function visible to the Virtual Machine, i.e. it allows
 
 A public function has it's textual name stored in the amx file, unlike normal functions which only have their address stored for jumps, which is another drawback to decompilation. This is so that you can call the function by name from outside the script, it also allows you to call functions by name from inside the script by leaving and re-entering it. A native function call is almost the opposite of a public function call, it calls a function outside the script from inside the script as opposed to calling a function inside the script from outside the script. If you combine the two you get functions like SetTimer, SetTimerEx, CallRemoteFunction and CallLocalFunction which call functions by name, not address.
 
-Calling a function by name:
+**Calling a function by name:**
 
 ```c
 forward MyPublicFunc();
@@ -690,7 +690,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn
+**file2.pwn**
 
 ```c
 MyFunc3()
@@ -702,7 +702,7 @@ MyFunc3()
 
 And modifying it for static would give:
 
-file1.pwn
+**file1.pwn**
 
 ```c
 MyFunc1()
@@ -725,7 +725,7 @@ MuFunc2()
 #include "file2.pwn"
 ```
 
-file2.pwn
+**file2.pwn**
 
 ```c
 MyFunc3()

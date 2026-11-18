@@ -11,23 +11,23 @@ tags: []
 
 Włącza animację aktorowi.
 
-| Nazwa      | Opis                                                                                                                                                                                                 |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| actorid    | ID aktora, któremu chcesz włączyć animację.                                                                                                                                                          |
-| animlib[]  | Biblioteka, z której ma być zastosowana animacja.                                                                                                                                                    |
-| animname[] | Nazwa animacji, która ma zostać zastosowana (z powyższej biblioteki).                                                                                                                                |
-| fDelta     | Prędkość odtwarzania animacji (używaj 4.1).                                                                                                                                                          |
-| loop       | Jeżeli jest ustawione na 1, animacja będzie zapętlona. Jeżeli jest ustawione na 0, animacja zostanie odtworzona tylko raz.                                                                           |
-| lockx      | Jeżeli jest ustawione na 0, aktor wróci do swojego starego koordynatu X po skończeniu animacji (w przypadku animacji, które poruszają aktorem, np. chodzenie). 1 nie przywróci go do starej pozycji. |
-| locky      | Tak samo jak powyżej, tyle że dla osi Y. Wartość powinna być taka sama, jak przy poprzednim parametrze.                                                                                              |
-| freeze     | Ustawienie tego na 1 zamrozi aktora po ukończeniu animacji. 0 tego nie zrobi.                                                                                                                        |
-| time       | Timer w milisekundach. Dla nieskończonej pętli powinien być ustawiony na 0.                                                                                                                          |
+| Nazwa      | Opis                                                                                                                                                                                                         |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| actorid    | ID aktora, któremu chcesz włączyć animację.                                                                                                                                                                  |
+| animlib[]  | Biblioteka, z której ma być zastosowana animacja.                                                                                                                                                            |
+| animname[] | Nazwa animacji, która ma zostać zastosowana (z powyższej biblioteki).                                                                                                                                        |
+| fDelta     | Prędkość odtwarzania animacji (używaj 4.1).                                                                                                                                                                  |
+| loop       | Jeżeli jest ustawione na **1**, animacja będzie zapętlona. Jeżeli jest ustawione na **0**, animacja zostanie odtworzona tylko raz.                                                                           |
+| lockx      | Jeżeli jest ustawione na **0**, aktor wróci do swojego starego koordynatu X po skończeniu animacji (w przypadku animacji, które poruszają aktorem, np. chodzenie). **1** nie przywróci go do starej pozycji. |
+| locky      | Tak samo jak powyżej, tyle że dla osi Y. Wartość powinna być taka sama, jak przy poprzednim parametrze.                                                                                                      |
+| freeze     | Ustawienie tego na **1** zamrozi aktora po ukończeniu animacji. **0** tego nie zrobi.                                                                                                                        |
+| time       | Timer w milisekundach. Dla nieskończonej pętli powinien być ustawiony na **0**.                                                                                                                              |
 
 ## Zwracane wartości
 
-1: Funkcja wykonała się prawidłowo.
+**1**: Funkcja wykonała się prawidłowo.
 
-0: Funkcja nie wykonała się prawidłowo. Podany aktor nie istnieje.
+**0**: Funkcja nie wykonała się prawidłowo. Podany aktor nie istnieje.
 
 ## Przykłady
 

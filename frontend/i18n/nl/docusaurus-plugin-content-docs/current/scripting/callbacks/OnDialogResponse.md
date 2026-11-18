@@ -13,7 +13,7 @@ Deze callback wordt aangeroepen wanneer een speler reageert op een dialog die is
 | ----------- | ------------------------------------------------------------------------------------------------- |
 | playerid    | Het ID van de speler die reageerde op de dialog.                                                  |
 | dialogid    | Het ID van de dialog waarop de speler reageerde, zoals meegegeven in ShowPlayerDialog.            |
-| response    | 1 voor de linker knop, en 0 voor de rechter knop (bij één knop is het altijd 1).                  |
+| response    | **1** voor de linker knop, en **0** voor de rechter knop (bij één knop is het altijd 1).          |
 | listitem    | Het ID van het door de speler geselecteerde lijstitem (start bij 0). Bij niet-lijst dialogs: -1.  |
 | inputtext[] | De tekst die in de invoervak door de speler is ingevoerd, of de tekst van het geselecteerde item. |
 

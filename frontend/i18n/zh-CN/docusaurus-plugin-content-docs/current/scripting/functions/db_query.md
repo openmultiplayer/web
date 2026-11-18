@@ -22,7 +22,7 @@ tags: ["sqlite"]
 
 ## 返回值
 
-- 执行成功返回结果集句柄索引（从 1 开始）
+- 执行成功返回结果集句柄索引（**从 1 开始**）
 - 执行失败返回 0
 
 ## 示例
@@ -91,7 +91,7 @@ public OnGameModeExit()
 
 :::warning
 
-必须使用[db_free_result](db_free_result)释放查询结果，否则会导致内存泄漏！
+**必须**使用[db_free_result](db_free_result)释放查询结果，否则会导致内存泄漏！
 
 :::
 

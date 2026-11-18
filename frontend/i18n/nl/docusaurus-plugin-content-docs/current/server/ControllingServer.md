@@ -74,7 +74,7 @@ Een ban toevoegen doe je door een object in de JSON-array te plaatsen als:
 
 Op de plek van `IP_HERE` zet je het IP dat je wilt bannen.
 
-##### Ban() function
+##### Ban function
 
 De functie [Ban](../scripting/functions/Ban) kun je vanuit een script gebruiken om een speler te bannen. De functie [BanEx](../scripting/functions/BanEx) voegt optioneel een reden toe, zoals:
 
@@ -196,7 +196,7 @@ Dit zijn de commands die je als admin kunt gebruiken:
 | `/rcon weburl [server url]`       | Wijzigt de server-URL in de masterlists/SA-MP client.                                                              |
 | `/rcon unloadfs`                  | Unloadt het opgegeven filterscript (_voorbeeld: `/rcon unloadfs adminfs`_).                                        |
 | `/rcon reloadfs`                  | Reloadt het opgegeven filterscript (_voorbeeld: `/rcon reloadfs adminfs`_).                                        |
-| `/rcon rcon\_password [PASSWORD]` | Wijzigt het RCON-wachtwoord.                                                                                       |
+| `/rcon rcon_password [PASSWORD]`  | Wijzigt het RCON-wachtwoord.                                                                                       |
 | `/rcon password [password]`       | Zet/reset het serverpassword.                                                                                      |
 | `/rcon messageslimit [count]`     | Wijzigt het max. aantal messages per seconde per client (standaard 500).                                           |
 | `/rcon ackslimit [count]`         | Wijzigt de acks-limit (standaard 3000).                                                                            |

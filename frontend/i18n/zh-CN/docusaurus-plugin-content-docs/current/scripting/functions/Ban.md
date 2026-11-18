@@ -27,7 +27,7 @@ tags: ["玩家", "管理"]
 
 :::warning
 
-在 Ban()之前立即执行的操作（如使用[SendClientMessage](SendClientMessage)发送消息）将无法送达玩家。必须使用定时器延迟封禁操作。
+在 Ban之前立即执行的操作（如使用[SendClientMessage](SendClientMessage)发送消息）将无法送达玩家。必须使用定时器延迟封禁操作。
 
 :::
 

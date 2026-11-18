@@ -18,7 +18,7 @@ Obtém a quantidade de tempo (em milissegundos) durante a qual um jogador esteve
 
 Esta função retorna a quantidade de tempo (em milissegundos) que um jogador esteve conectado ao servidor.
 
-0 é retornado se o jogador não estiver conectado.
+**0** é retornado se o jogador não estiver conectado.
 
 ## Exemplos
 

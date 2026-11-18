@@ -16,7 +16,7 @@ tags: ["object"]
 | modelid                | شناسه مدلی که بافت جایگزین روی آن قرار دارد. از ۰ برای شفافیت استفاده کنید. از -۱ برای تغییر رنگ متریال بدون تغییر بافت استفاده کنید. |
 | const textureLibrary[] | نام فایل txd که شامل بافت جایگزین است (در صورت عدم نیاز از "none" استفاده کنید)                                                       |
 | const textureName[]    | نام بافتی که به عنوان جایگزین استفاده می‌شود (در صورت عدم نیاز از "none" استفاده کنید)                                                |
-| materialColour         | رنگ آبجکت که تنظیم می‌شود، به صورت عدد صحیح یا هگزادسیمال در فرمت رنگ ARGB. استفاده از ۰ رنگ موجود متریال را حفظ می‌کند.              |
+| materialColour         | رنگ آبجکت که تنظیم می‌شود، به صورت عدد صحیح یا هگزادسیمال در فرمت رنگ **ARGB**. استفاده از **۰** رنگ موجود متریال را حفظ می‌کند.      |
 
 ## مقدار بازگشتی
 
@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-شما باید از فرمت رنگ ARGB استفاده کنید، نه RGBA که در پیام‌های کلاینت و غیره استفاده می‌شود.
+شما باید از فرمت رنگ **ARGB** استفاده کنید، نه RGBA که در پیام‌های کلاینت و غیره استفاده می‌شود.
 
 :::
 
@@ -66,6 +66,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ویرایشگرهای نقشه پیشرفته
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) توسط Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) توسط RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus

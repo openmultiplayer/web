@@ -16,9 +16,9 @@ This callback is called when a player disconnects from the server.
 
 ## Returns
 
-0 - Will prevent other filterscripts from receiving this callback.
+**0** - Will prevent other filterscripts from receiving this callback.
 
-1 - Indicates that this callback will be passed to the next filterscript.
+**1** - Indicates that this callback will be passed to the next filterscript.
 
 It is always called first in filterscripts.
 

@@ -16,7 +16,7 @@ Prikvačite vozilo za drugo vozilo kao prikolicu.
 
 ## Returns
 
-Ova funkcija uvijek returna(vraća) 1, bilo da ni jedan od ID-eva vozila koji su proslijeđeni ne budu validni.
+Ova funkcija uvijek returna(vraća) **1**, bilo da ni jedan od ID-eva vozila koji su proslijeđeni ne budu validni.
 
 ## Primjeri
 

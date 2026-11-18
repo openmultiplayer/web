@@ -16,9 +16,9 @@ Provjerava ako je vozilo učitano za igrača. Samo vozila u blizini su učitana 
 
 ## Returns
 
-0: Vozilo nije učitano za igrača, ili funkcija nije uspjela da se izvrši (igrač i/ili vozilo ne postoje).
+**0**: Vozilo nije učitano za igrača, ili funkcija nije uspjela da se izvrši (igrač i/ili vozilo ne postoje).
 
-1: Vozilo je učitano za igrača.
+**1**: Vozilo je učitano za igrača.
 
 ## Primjeri
 

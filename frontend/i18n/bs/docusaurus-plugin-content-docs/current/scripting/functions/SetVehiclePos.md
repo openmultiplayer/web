@@ -18,9 +18,9 @@ Postavlja poziciju vozila.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeno vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeno vozilo ne postoji.
 
 ## Primjeri
 

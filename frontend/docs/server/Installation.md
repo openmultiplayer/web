@@ -294,11 +294,11 @@ Or if you prefer you can use the mixed spellings:
 - **warning 234: function is deprecated (symbol "GetVehiclePoolSize") This function is broken.**
 - **warning 234: function is deprecated (symbol "GetActorPoolSize") This function is broken.**
 
-Replace `GetPlayerPoolSize()` with `MAX_PLAYERS`
+Replace `GetPlayerPoolSize` with `MAX_PLAYERS`
 
-Replace `GetVehiclePoolSize()` with `MAX_VEHICLES`
+Replace `GetVehiclePoolSize` with `MAX_VEHICLES`
 
-Replace `GetActorPoolSize()` with `MAX_ACTORS`
+Replace `GetActorPoolSize` with `MAX_ACTORS`
 
 <hr />
 

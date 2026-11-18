@@ -26,9 +26,9 @@ Ova funkcija je u potpunosti ista kao i AddPlayerClass funkcija, sa akcentom na 
 
 ## Returns
 
-ID klase koja je upravo dodana.
+**ID klase** koja je upravo dodana.
 
-319 ako je limit klasa (320) dostignut. Najveći mogući ID klase je 319.
+**319** ako je limit klasa (320) dostignut. Najveći mogući ID klase je 319.
 
 ## Primjeri
 

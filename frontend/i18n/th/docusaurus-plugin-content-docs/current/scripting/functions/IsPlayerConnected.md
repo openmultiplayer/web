@@ -15,9 +15,9 @@ Checks if a player is connected (if an ID is taken by a connected player).
 
 ## ส่งคืน
 
-0: Player is NOT connected.
+**0**: Player is NOT connected.
 
-1: Player IS connected.
+**1**: Player IS connected.
 
 ## ตัวอย่าง
 

@@ -22,9 +22,9 @@ Ovaj callback je pozvan kada dio vozila kao npr vrata, gume, paneli, ili svjetla
 
 ## Returns
 
-1 - Spriječiti će da ostale filterskripte primaju ovaj callback.
+**1** - Spriječiti će da ostale filterskripte primaju ovaj callback.
 
-0 - Ukazuje da će ovaj callback biti proslijeđen do naredne filterskripte.
+**0** - Ukazuje da će ovaj callback biti proslijeđen do naredne filterskripte.
 
 Uvijek je pozvan prvo u filterskriptama.
 

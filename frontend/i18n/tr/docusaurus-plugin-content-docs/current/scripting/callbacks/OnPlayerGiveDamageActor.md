@@ -21,9 +21,9 @@ Bu geri çağırma, bir oyuncu bir NPC'ye hasar verdiğinde çağırılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1- Geri çağırma diğer filterscriptlerde çağırılmayacak.
+**1**- Geri çağırma diğer filterscriptlerde çağırılmayacak.
 
-0 - Geri çağırma diğer filterscriptlerde de çağırılacak.
+**0** - Geri çağırma diğer filterscriptlerde de çağırılacak.
 
 Her zaman ilk önce filterscriptlerde çağırılır, yani 1 değerini döndürmek diğer filterscriptlerin bu geri çağırmayı görmesini engeller.
 

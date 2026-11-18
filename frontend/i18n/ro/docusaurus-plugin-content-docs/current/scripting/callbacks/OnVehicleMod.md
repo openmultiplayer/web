@@ -17,7 +17,7 @@ Acest callback este apelat atunci când un vehicul este modificat.
 
 ## Returnări
 
-Este întotdeauna numit primul în modul de joc, așa că întoarcerea 0 blochează și alte filterscript-uri să-l vadă.
+Este întotdeauna numit primul în modul de joc, așa că întoarcerea **0** blochează și alte filterscript-uri să-l vadă.
 
 ## Exemple
 

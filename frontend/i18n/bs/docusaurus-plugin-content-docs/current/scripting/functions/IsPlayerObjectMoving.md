@@ -16,7 +16,7 @@ Provjerava ako se dati player objectid pomjera.
 
 ## Returns
 
-1 ako se player obejkat kreće, 0 ako ne.
+**1** ako se player obejkat kreće, **0** ako ne.
 
 ## Primjeri
 

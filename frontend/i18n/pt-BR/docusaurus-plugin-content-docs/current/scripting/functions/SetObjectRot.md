@@ -19,7 +19,7 @@ Defina a rotação de um objeto nos três eixos (X, Y e Z).
 
 ## Retornos
 
-Esta função sempre retorna 1, mesmo que o objeto não exista.
+Esta função sempre retorna **1**, mesmo que o objeto não exista.
 
 ## Exemplos
 

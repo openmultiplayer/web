@@ -14,11 +14,11 @@ Find a filename matching a pattern.
 | name          | The string to hold the result in, returned as a packed string. |
 | const pattern | The pattern that should be matched. May contain wildcards.     |
 | index         | The number of the file, in case there are multiple matches.    |
-| size          | The maximum size of parameter name                             |
+| size          | The maximum size of parameter _name_                           |
 
 ## ส่งคืน
 
-true on success, false on failure
+**true** on success, **false** on failure
 
 ## บันทึก
 

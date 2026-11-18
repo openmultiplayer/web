@@ -5,7 +5,7 @@ description: Define a vida de um ator.
 tags: []
 ---
 
-Esta função foi adicionada no SA-MP 0.3.7 e não funcionará em versões anteriores!
+<VersionWarn version='SA-MP 0.3.7' />
 
 ## Descrição
 
@@ -18,9 +18,9 @@ Define a vida de um ator.
 
 ## Retorno
 
-1 - Sucesso
+**1** - Sucesso
 
-0 - Falha (por exemplo, o ator não está criado).
+**0** - Falha (por exemplo, o ator não está criado).
 
 ## Exemplos
 

@@ -51,7 +51,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::note
 
-Esta função equipa o jogador com uma arma que ele já possui; não lhes dá uma nova arma. Consulte GivePlayerWeapon.
+Esta função _equipa_ o jogador com uma arma que ele **já possui**; não lhes _dá_ uma nova arma. Consulte GivePlayerWeapon.
 
 :::
 

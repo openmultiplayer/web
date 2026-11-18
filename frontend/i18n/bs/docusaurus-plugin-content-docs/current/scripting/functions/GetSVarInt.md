@@ -21,7 +21,7 @@ Dobija cjelobrojnu vrijednost server varijable.
 
 ## Returns
 
-Cijelobrojna vrijednost navedene varijable servera. I dalje će vraćati 0 ako varijabla nije postavljena.
+Cijelobrojna vrijednost navedene varijable servera. I dalje će vraćati **0** ako varijabla nije postavljena.
 
 ## Primjeri
 

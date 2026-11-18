@@ -18,9 +18,9 @@ Sets the camera to a specific position for a player.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player specified doesn't exist.
+**0**: The function failed to execute. The player specified doesn't exist.
 
 ## ตัวอย่าง
 

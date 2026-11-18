@@ -15,7 +15,7 @@ Kills (stops) a running timer.
 
 ## Returns
 
-This function always returns 0.
+This function always returns **0**.
 
 ## Examples
 

@@ -16,9 +16,9 @@ A função GetPlayerHealth permite obter a vida de um jogador. Útil para deteta
 
 ## Retorno
 
-1 - Sucesso
+**1** - Sucesso
 
-0 - Falha (por exemplo, jogador não está conectado).
+**0** - Falha (por exemplo, jogador não está conectado).
 
 A vida de um jogador é armazenada na variável especificada.
 

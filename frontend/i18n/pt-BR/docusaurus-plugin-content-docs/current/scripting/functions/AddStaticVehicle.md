@@ -23,7 +23,7 @@ Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao 
 
 O ID do veículo criado (entre 1 e MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) caso o veículo não tenha sido criado (limite de veículos alcançado ou modelo inválido).
+**INVALID_VEHICLE_ID (65535)** caso o veículo não tenha sido criado (limite de veículos alcançado ou modelo inválido).
 
 ## Exemplos
 

@@ -7,7 +7,7 @@ tags: ["administration"]
 
 ## Deskripsi
 
-Melarang player yang sedang berada di dalam server. Player tersebut tidak bisa bergabung lagi selamanya. Pelarangan pemain berbasis IP ini akan disimpan di dalam format file **bans.json** di dalam direktori root server. BanEx dapat digunakan untuk memberi alasan mengapa player tersebut di ban. IP ban dapat di tambah/di hapus menggunakan command RCON banip dan unbanip (SendRconCommand).
+Melarang player yang sedang berada di dalam server. Player tersebut tidak bisa bergabung lagi selamanya. Pelarangan pemain berbasis IP ini akan disimpan di dalam format file **bans.json** di dalam direktori root server. BanEx dapat digunakan untuk memberi alasan mengapa player tersebut di ban. IP ban dapat di tambah/di hapus menggunakan command RCON `banip` dan `unbanip` (SendRconCommand).
 
 | Nama     | Deskripsi                              |
 | -------- | -------------------------------------- |
@@ -63,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Tindakan apa pun yang diambil langsung sebelum Ban() (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player. Timer harus digunakan untuk menunda ban.
+Tindakan apa pun yang diambil langsung sebelum Ban (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player. Timer harus digunakan untuk menunda ban.
 
 :::
 

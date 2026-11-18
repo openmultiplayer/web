@@ -126,7 +126,7 @@ print(const string[])
 }
 ```
 
-Hierdoor wordt bij het aanroepen van `print()` jouw implementatie uitgevoerd en kun je extra gedrag toevoegen.
+Hierdoor wordt bij het aanroepen van `print` jouw implementatie uitgevoerd en kun je extra gedrag toevoegen.
 
 ## `new`
 

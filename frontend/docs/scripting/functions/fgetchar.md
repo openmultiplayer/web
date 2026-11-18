@@ -52,7 +52,7 @@ else
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using [fopen](fopen) or [ftemp](ftemp).
+Using an **invalid handle** will crash your server! Get a **valid handle** by using [fopen](fopen) or [ftemp](ftemp).
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## คำอธิบาย
 
-Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See this page for extensive information about textdraws.
+Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See **this page** for extensive information about textdraws.
 
 | Name    | Description                                              |
 | ------- | -------------------------------------------------------- |

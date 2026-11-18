@@ -23,7 +23,7 @@ Deze callback wordt aangeroepen wanneer de client van een speler de positie van 
 
 ## Returns
 
-Wordt altijd als eerste aangeroepen in filterscripts; return 0 blokkeert ook andere scripts.
+Wordt altijd als eerste aangeroepen in filterscripts; return **0** blokkeert ook andere scripts.
 
 ## Voorbeelden
 

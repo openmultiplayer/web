@@ -9,25 +9,25 @@ tags: ["vehicle"]
 
 Cria um veículo no mundo. Pode ser usado no lugar de AddStaticVehicleEx a qualquer momento no script.
 
-| Nome                                   | Descrição                                                                                                              |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [modelid](../resources/vehicleid)      | O modelo do veículo.                                                                                                   |
-| Float:spawnX                           | A coordenada X do veículo.                                                                                             |
-| Float:spawnY                           | A coordenada Y do veículo.                                                                                             |
-| Float:spawnZ                           | A coordenada Z do veículo.                                                                                             |
-| Float:angle                            | O ângulo de direção do veículo.                                                                                        |
-| [colour1](../resources/vehiclecolorid) | O ID da cor primária.                                                                                                  |
-| [colour2](../resources/vehiclecolorid) | O ID da cor secundária.                                                                                                |
-| respawnDelay                           | O tempo de espera até que o veículo reapareça sem um motorista, em segundos. Usar -1 impedirá que o veículo reapareça. |
-| bool:addSiren                          | Possui um valor padrão 'falso'. Permite que o veículo tenha uma sirene, desde que o veículo possua uma buzina.         |
+| Nome                                   | Descrição                                                                                                                      |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| [modelid](../resources/vehicleid)      | O modelo do veículo.                                                                                                           |
+| Float:spawnX                           | A coordenada X do veículo.                                                                                                     |
+| Float:spawnY                           | A coordenada Y do veículo.                                                                                                     |
+| Float:spawnZ                           | A coordenada Z do veículo.                                                                                                     |
+| Float:angle                            | O ângulo de direção do veículo.                                                                                                |
+| [colour1](../resources/vehiclecolorid) | O ID da cor primária.                                                                                                          |
+| [colour2](../resources/vehiclecolorid) | O ID da cor secundária.                                                                                                        |
+| respawnDelay                           | O tempo de espera até que o veículo reapareça sem um motorista, em **segundos**. Usar **-1** impedirá que o veículo reapareça. |
+| bool:addSiren                          | Possui um valor padrão 'falso'. Permite que o veículo tenha uma sirene, desde que o veículo possua uma buzina.                 |
 
 ## Retornos
 
 O ID do veículo criado (1 até MAX_VEHICLES).
 
-INVALID_VEHICLE_ID (65535) se o veículo não for criado (limite de veículos atingido ou modelo de veículo inválido).
+**INVALID_VEHICLE_ID (65535)** se o veículo não for criado (limite de veículos atingido ou modelo de veículo inválido).
 
-0 se o veículo não for criado (IDs 538 ou 537 passado, que são trens).
+**0** se o veículo não for criado (IDs 538 ou 537 passado, que são trens).
 
 ## Exemplos
 

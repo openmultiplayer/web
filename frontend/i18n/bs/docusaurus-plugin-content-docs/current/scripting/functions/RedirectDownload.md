@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-This function was added in SA-MP 0.3.DL R1 and neće raditi u ranijim verzijama!
+Ova funkcija je dodana u SA-MP 0.3.DL R1 i ne radi u nižim verzijama!
 
 :::
 
@@ -24,8 +24,8 @@ Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleModel uređaja 
 
 ## Return Values
 
-- 1: Funkcija uspješno izvršena.
-- 0: Funkcija neuspješno izvršena.
+- **1**: Funkcija uspješno izvršena.
+- **0**: Funkcija neuspješno izvršena.
 
 ## Primjer upotrebe iz dl_redirect filterskripte
 

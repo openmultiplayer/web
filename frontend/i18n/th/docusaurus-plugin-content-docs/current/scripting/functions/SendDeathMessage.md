@@ -17,7 +17,7 @@ Adds a death to the 'killfeed' on the right-hand side of the screen for all play
 
 ## ส่งคืน
 
-This function always returns 1, even if the function fails to execute. The function fails to execute (no death message shown) if 'playerid' is invalid. If 'reason' is invalid, a generic skull-and-crossbones icon is shown. 'killerid' being invalid (INVALID_PLAYER_ID) is valid.
+This function always returns 1, even if the function fails to execute. The function fails to execute (no death message shown) if `playerid` is invalid. If `weapon` is invalid, a generic skull-and-crossbones icon is shown. `killer` being invalid (INVALID_PLAYER_ID) is valid.
 
 ## ตัวอย่าง
 
@@ -33,7 +33,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-- Death messages can be cleared by using a valid player ID for 'playerid' that is not connected.
+- Death messages can be cleared by using a valid player ID for `playerid` that **is not connected**.
 - To show a death message for just a single player, use SendDeathMessageToPlayer.
 - You can use NPCs to create your own custom death reasons.
 

@@ -16,9 +16,9 @@ Uklanja ikonicu na mapi koja je prethodno postavljena za igrača koristeći SetP
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena.
+**0**: Funkcija neuspješno izvršena.
 
 ## Primjeri
 

@@ -16,9 +16,9 @@ Dodaje „komponent” (część tuningową) do pojazdu. Listę komponentów zna
 
 ## Zwracane wartości
 
-0 - Komponent nie został zamontowany, ponieważ pojazd nie istnieje.
+**0** - Komponent nie został zamontowany, ponieważ pojazd nie istnieje.
 
-1 - Komponent został pomyślnie zamontowany w pojeździe.
+**1** - Komponent został pomyślnie zamontowany w pojeździe.
 
 ## Przykłady
 

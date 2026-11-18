@@ -20,9 +20,9 @@ Ang function na ito ay nagdaragdag ng 'static' pickup sa laro. Sinusuportahan ng
 
 ## Returns
 
-1 kung matagumpay na nagawa ang pickup.
+**1** kung matagumpay na nagawa ang pickup.
 
-0 kung nabigong gumawa.
+**0** kung nabigong gumawa.
 
 ## Examples
 

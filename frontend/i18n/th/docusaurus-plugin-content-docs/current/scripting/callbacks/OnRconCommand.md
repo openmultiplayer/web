@@ -15,7 +15,7 @@ This callback is called when a command is sent through the server console, remot
 
 ## ส่งคืน
 
-It is always called first in filterscripts so returning 1 there blocks gamemode from seeing it.
+It is always called first in filterscripts so returning **1** there blocks gamemode from seeing it.
 
 ## ตัวอย่าง
 
@@ -47,7 +47,7 @@ public OnRconCommand(cmd[])
 - The /rcon prefix is not included in the cmd parameter when a player types a command.
 - If you use the print function here, it will send a message to both the player who typed the command in-game and the server log.
 - This callback is not called if the player is not logged in as an RCON admin.
-- When a player uses /rcon login to log in, this callback will not be called, instead, OnRconLoginAttempt is called. Once logged in as an RCON admin, any subsequent commands will trigger this callback.
+- When a player uses `/rcon login` to log in, this callback will not be called, instead, OnRconLoginAttempt is called. Once logged in as an RCON admin, any subsequent commands will trigger this callback.
 
 :::
 

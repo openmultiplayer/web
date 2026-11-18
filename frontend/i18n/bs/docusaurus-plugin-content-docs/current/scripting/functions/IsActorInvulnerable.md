@@ -21,9 +21,9 @@ Provjerite je li aktor neranjiv.
 
 ## Returns
 
-1: Aktor je neranjiv.
+**1**: Aktor je neranjiv.
 
-0: Aktor je ranjiv.
+**0**: Aktor je ranjiv.
 
 ## Primjeri
 

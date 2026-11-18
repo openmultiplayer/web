@@ -26,9 +26,9 @@ Ta funkcja jest dokładnie taka sama, jak funkcja AddPlayerClass, z wyjątkiem d
 
 ## Zwracane wartości
 
-ID klasy, która właśnie została dodana.
+**ID klasy**, która właśnie została dodana.
 
-319, jeżeli limit klas (320) został osiągnięty. Najwyższe możliwe ID klasy to 319.
+**319**, jeżeli limit klas (320) został osiągnięty. Najwyższe możliwe ID klasy to 319.
 
 ## Przykłady
 

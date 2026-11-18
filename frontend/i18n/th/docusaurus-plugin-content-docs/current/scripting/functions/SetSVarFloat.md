@@ -22,9 +22,9 @@ Set a float server variable.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The variable name is null or over 40 characters.
+**0**: The function failed to execute. The variable name is null or over 40 characters.
 
 ## ตัวอย่าง
 

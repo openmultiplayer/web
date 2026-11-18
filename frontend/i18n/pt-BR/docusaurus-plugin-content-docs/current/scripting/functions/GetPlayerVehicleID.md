@@ -9,7 +9,7 @@ tags: ["player", "vehicle"]
 
 Esta função obtém o ID do veículo em que o jogador está atualmente.
 
-**Nota:** NÃO é o ID do modelo do veículo. Veja [GetVehicleModel](GetVehicleModel) para isso.
+**Nota:** **NÃO** é o ID do modelo do veículo. Veja [GetVehicleModel](GetVehicleModel) para isso.
 
 | Nome     | Descrição                                                 |
 | -------- | --------------------------------------------------------- |

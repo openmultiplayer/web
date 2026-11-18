@@ -13,7 +13,7 @@ Ang callback na ito ay na cacall kapag ang player ay nag respond sa isang dialog
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | Ang ID ng player na nag respond sa dialog.                                                                                                            |
 | dialogid    | Ang ID ng dialog na pinag respond ng player, naka assign ito sa ShowPlayerDialog.                                                                     |
-| response    | 1 para sa unang button (kaliwa) at 0 para sa pangalawang button (kanan), kung isa lang ang button, ang 1 ang magagamit.                               |
+| response    | **1** para sa unang button (kaliwa) at **0** para sa pangalawang button (kanan), kung isa lang ang button, ang 1 ang magagamit.                       |
 | listitem    | Ang ID ng nilalaman ng list na pinili ng isang player (nag uumpisa sa 0) (kapag lamang gumagamit ng DIALOG_STYLE_LIST, kung hindi ito ay magiging -1. |
 | inputtext[] | Ang text/sulat na nilagay ng player sa input box o ang piniling nilalaman ng list.                                                                    |
 

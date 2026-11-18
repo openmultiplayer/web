@@ -89,9 +89,9 @@ OnPlayerFinishRace(playerid)
 
 These two examples are common and they may work fine. However, there is a much better way of achieving both of these outcomes, which is more way accurate and can give stopwatch timings down to the millisecond!
 
-## Using `GetTickCount()` and `gettime()`
+## Using `GetTickCount` and `gettime`
 
-`GetTickCount()` is a function that gives you the time in milliseconds since the server process was opened. `gettime()` returns the number of seconds since January 1st 1970, also known as a Unix Timestamp.
+`GetTickCount` is a function that gives you the time in milliseconds since the server process was opened. `gettime` returns the number of seconds since January 1st 1970, also known as a Unix Timestamp.
 
 If you call either of these functions at two different times, and subtract the first time from the second you suddenly have an interval between those two events in milliseconds or seconds respectively! Take a look at this example:
 
@@ -120,7 +120,7 @@ OnPlayerInteractWithServer(playerid)
 }
 ```
 
-Or, alternatively the `gettime()` version:
+Or, alternatively the `gettime` version:
 
 ```pawn
 static PlayerAllowedSeconds[MAX_PLAYERS];
@@ -224,7 +224,7 @@ OnPlayerFinishRace(playerid)
 
 Here is where the calculation of the interval happens, well, I say calculation, it's just subtracting two values!
 
-GetTickCount() returns the current tick count, so it will be bigger than the initial tick count which means you subtract the initial tick count from the current tick count to get your interval between the two measures.
+GetTickCount returns the current tick count, so it will be bigger than the initial tick count which means you subtract the initial tick count from the current tick count to get your interval between the two measures.
 
 So, as we said the player finishes the race 1 minute and 40 seconds later (100 seconds, or 100,000 milliseconds), GetTickCount will return 160,000. Subtract the initial value (Which is 60,000) from the new value (Which is 160,000) and you get 100,000 milliseconds, which is 1 minute 40 seconds, which is the time it took the player to do the race!
 
@@ -241,4 +241,4 @@ It's best to use a function that takes the milliseconds and converts it to a rea
 
 [This package](https://github.com/ScavengeSurvive/timeutil) contains a function to format milliseconds into a string.
 
-I hope this helped! I wrote it because I've helped a few people out recently who didn't know how to use `GetTickCount()` or `gettime()` as an alternative for timers or for getting intervals etc.
+I hope this helped! I wrote it because I've helped a few people out recently who didn't know how to use `GetTickCount` or `gettime` as an alternative for timers or for getting intervals etc.

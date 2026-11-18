@@ -35,7 +35,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::tip
 
-Joker karakterler bu fonksiyonla kullanılabilir, örneğin '6.9 ._._' IP'sinin engellenmesi, ilk iki sekizlinin sırasıyla 6 ve 9 olduğu tüm IP'leri engeller. Yıldız işareti yerine herhangi bir sayı olabilir.
+Joker karakterler bu fonksiyonla kullanılabilir, örneğin `6.9.*.*` IP'sinin engellenmesi, ilk iki sekizlinin sırasıyla **6** ve **9** olduğu tüm IP'leri engeller. Yıldız işareti yerine herhangi bir sayı olabilir.
 
 :::
 

@@ -12,13 +12,13 @@ Uključuje / isključuje da li igrač može kontrolirati svog lika ili ne.
 | Ime      | Deskripcija                                       |
 | -------- | ------------------------------------------------- |
 | playerid | ID igrača za prebacivanje mogućnosti upravljanja. |
-| toggle   | 0 da ne mogu kontrolisati, 1 da mogu.             |
+| toggle   | **0** da ne mogu kontrolisati, **1** da mogu.     |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
 ## Primjeri
 

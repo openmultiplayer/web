@@ -17,7 +17,7 @@ Returns the class of the players custom skin downloaded from the server.
 
 ## Returns
 
-The custom skin id that was specified in [AddCharModel](AddCharModel) newid.
+The custom skin id that was specified in [AddCharModel](AddCharModel) **newid**.
 
 ## Examples
 

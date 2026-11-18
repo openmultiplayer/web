@@ -17,9 +17,9 @@ Stavlja igrača u vozilo.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Igrač ili vozilo ne postoje.
+**0**: Funkcija neuspješno izvršena. Igrač ili vozilo ne postoje.
 
 ## Primjeri
 

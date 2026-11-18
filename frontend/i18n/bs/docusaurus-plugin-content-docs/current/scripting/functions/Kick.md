@@ -15,7 +15,7 @@ Izbacuje igrača sa servera. Morati će napustiti igru i ponovno se konektovati 
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, bilo da funckija ne uspije da se izvrši (navedeni igrač ne postoji).
+Ova funkcija uvijek returna (vraća) **1**, bilo da funckija ne uspije da se izvrši (navedeni igrač ne postoji).
 
 ## Zabilješke
 

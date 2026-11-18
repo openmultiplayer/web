@@ -12,7 +12,7 @@ Acesta este dintr-un subiect Tutorial din SA-MP Forums. Autorul este **Kyosaur**
 
 Binarul este un sistem numeric care folosește două simboluri unice pentru a reprezenta numerele. În timp ce sistemul zecimal mai obișnuit folosește zece cifre (**baza 10**), binarul folosește doar 0 și 1. Acest lucru poate suna inutil în viața de zi cu zi, dar binarul este esențial atunci când vine vorba de computere. Calculatoarele la cel mai scăzut nivel își efectuează toate calculele prin manipularea fluxului de energie electrică pentru a indica stările de pornire și oprire. Exact asta este binarul, doar o tonă de comutatoare pornite și oprite. Acesta este un fel de concept extraterestru pentru majoritatea oamenilor, așa că să aruncăm o privire la sistemul zecimal și binar unul lângă celălalt.
 
-Zecimal (baza 10)
+**Zecimal (baza 10)**
 
 ```c
 0
@@ -31,7 +31,7 @@ Zecimal (baza 10)
 13
 ```
 
-Binar (baza 2)
+**Binar (baza 2)**
 
 ```c
 0 //0
@@ -54,7 +54,7 @@ Privind ambele sisteme unul lângă altul, veți observa că se comportă exact 
 
 ** NOTĂ: ** '^' este putere în următoarele câteva exemple, nu este exclusiv bitologic (pe care îl vom acoperi mai târziu).
 
-Zecimal (baza 10)
+**Zecimal (baza 10)**
 
 ```c
 13
@@ -72,7 +72,7 @@ Zecimal (baza 10)
 13
 ```
 
-Binar (baza 2)
+**Binar (baza 2)**
 
 ```c
 1101
@@ -238,7 +238,7 @@ A fost puțin ușor, să aruncăm o privire mai grea:
 00001000 //8
 ```
 
-Privirea exemplelor ar trebui să vă ofere o idee destul de bună despre ceea ce face acest operator. Compară două seturi de biți împreună, dacă ambele partajează un bit de 1, rezultatul va avea același bit activat. Dacă nu împart deloc biți, atunci rezultatul este 0.
+Privirea exemplelor ar trebui să vă ofere o idee destul de bună despre ceea ce face acest operator. Compară două seturi de biți împreună, dacă **ambele** partajează un bit de 1, rezultatul va avea același bit activat. Dacă nu împart deloc biți, atunci rezultatul este 0.
 
 ### Bitwise OR
 

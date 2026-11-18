@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Açıklama
 
-Bu fonksiyon, oyuncu ateş ettiğinde çağrılır. Bu fonksiyon ateşli silahları destekler. Sadece yolcu drive-by'ını destekler.(buna sürücünün drive-by atması, sea sparrow/hunter gibi araçların silahları dahil değildir.).
+Bu fonksiyon, oyuncu ateş ettiğinde çağrılır. Bu fonksiyon ateşli silahları destekler. Sadece **yolcu** drive-by'ını destekler.(buna sürücünün drive-by atması, sea sparrow/hunter gibi araçların silahları dahil değildir.).
 
 | Parametre | Açıklama                                                                                    |
 | --------- | ------------------------------------------------------------------------------------------- |
@@ -43,10 +43,10 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-Bu fonksiyon, yalnızca gecikme telafisi etkinleştirildiğinde çağrılır. İsabet türü eğer:
+Bu fonksiyon, yalnızca gecikme telafisi **etkinleştirildiğinde** çağrılır. **İsabet türü** eğer:
 
-- BULLET_HIT_TYPE_NONE ise : fX, fY ve fZ parametreleri normal koordinatlardır, eğer hiçbir şey vurulmadıysa koordinatlar için 0.0 döner. (örneğin, merminin ulaşamadığı uzak nesne)
-- Diğerleri ise : fX, fY ve fZ, hitid'ye göre ofsetlerdir.
+- `BULLET_HIT_TYPE_NONE` ise : **fX**, **fY** ve **fZ** parametreleri normal koordinatlardır, eğer hiçbir şey vurulmadıysa koordinatlar için 0.0 döner. (örneğin, merminin ulaşamadığı uzak nesne)
+- Diğerleri ise : **fX**, **fY** ve **fZ**, **hitid**'ye göre ofsetlerdir.
 
 :::
 
@@ -58,9 +58,11 @@ GetPlayerLastShotVectors, detaylı mermi vektör bilgileri için bu çağrıda k
 
 :::warning
 
-Bilinen Hata(lar): Şoför olarak araca ateş ettiyseniz veya hedef etkinken arkanıza bakıyorsanız fonksiyon çağrılmaz. Araç içindeki bir oyuncuya ateş ediyorsanız vuruş tipi BULLET_HIT_TYPE_VEHICLE (vurulan oyuncunun araç ID'si) olarak geçer. Hiç BULLET_HIT_TYPE_PLAYER olarak çağrılmaz.
+**Bilinen Hata(lar):**
 
-SA-MP 0.3.7 sürümünde kısmen düzeltildi: Sahte silah verileri kötü niyetli bir kullanıcı tarafından gönderilirse, diğer oyuncu istemcileri donabilir veya çökebilir. Bunu önlemek için, ateşlenen silahın gerçekten mermi ateşleyip ateşleyemeyeceğini kontrol edin.
+- Şoför olarak araca ateş ettiyseniz veya hedef etkinken arkanıza bakıyorsanız fonksiyon çağrılmaz.
+- Araç içindeki bir oyuncuya ateş ediyorsanız vuruş tipi `BULLET_HIT_TYPE_VEHICLE` (vurulan oyuncunun araç ID'si) olarak geçer. Hiç `BULLET_HIT_TYPE_PLAYER` olarak çağrılmaz.
+- **SA-MP 0.3.7 sürümünde kısmen düzeltildi**: Sahte silah verileri kötü niyetli bir kullanıcı tarafından gönderilirse, diğer oyuncu istemcileri donabilir veya çökebilir. Bunu önlemek için, ateşlenen silahın gerçekten mermi ateşleyip ateşleyemeyeceğini kontrol edin.
 
 :::
 

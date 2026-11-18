@@ -16,7 +16,7 @@ Ovaj callback je pozvan kada igrač unese komandu u chat prozoru njegovog klijen
 
 ## Returns
 
-Uvijek je pozvana prva u filterskripti tako da return-ovanje 1 tu blokira ostale skripte da je vide.
+Uvijek je pozvana prva u filterskripti tako da return-ovanje **1** tu blokira ostale skripte da je vide.
 
 ## Primjeri
 

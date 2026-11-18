@@ -15,7 +15,7 @@ Provjerava da li se zadati objectid kreće.
 
 ## Returns
 
-1 ako se objekat kreće, 0 ako ne.
+**1** ako se objekat kreće, **0** ako ne.
 
 ## Primjeri
 

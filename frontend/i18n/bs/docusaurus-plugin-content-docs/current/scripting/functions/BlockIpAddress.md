@@ -35,7 +35,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::tip
 
-Sa ovom funkcijom mogu se koristiti zamjenski znakovi, na primjer, blokiranjem IP-a '6.9 ._._' blokirat će se sve IP-ove gdje su prva dva okteta 6, odnosno 9. Bilo koji broj može biti umjesto zvjezdice.
+Sa ovom funkcijom mogu se koristiti zamjenski znakovi, na primjer, blokiranjem IP-a `6.9.*.*` blokirat će se sve IP-ove gdje su prva dva okteta **6**, odnosno **9**. Bilo koji broj može biti umjesto zvjezdice.
 
 :::
 

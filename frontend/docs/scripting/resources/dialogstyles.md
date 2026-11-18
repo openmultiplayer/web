@@ -122,7 +122,7 @@ ShowPlayerDialog(playerid, YOUR_DIALOGID, DIALOG_STYLE_LIST, "Caption", "Item 0\
 :::note
 
 - **listitem** is the number of the selected item, starting from **0**.
-- **inputtext** is the text contained by the selected listitem, without the colors.
+- **inputtext** is the text contained by the selected **listitem**, without the colors.
 
 :::
 

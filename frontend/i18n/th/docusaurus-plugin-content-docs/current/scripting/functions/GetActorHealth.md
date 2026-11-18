@@ -22,11 +22,11 @@ Get the health of an actor.
 
 ## ส่งคืน
 
-1 - success
+**1** - success
 
-0 - failure (i.e. actor is not created).
+**0** - failure (i.e. actor is not created).
 
-NOTE: The actor's health is stored in the specified variable, not in the return value.
+**NOTE:** The actor's health is stored in the specified variable, not in the return value.
 
 ## ตัวอย่าง
 

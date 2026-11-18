@@ -294,11 +294,11 @@ GivePlayerWeapon(playerid, WEAPON_KNIFE, 1);
 - **warning 234: function is deprecated (symbol "GetVehiclePoolSize") This function is broken.**
 - **warning 234: function is deprecated (symbol "GetActorPoolSize") This function is broken.**
 
-`GetPlayerPoolSize()` را با `MAX_PLAYERS` جایگزین کنید
+`GetPlayerPoolSize` را با `MAX_PLAYERS` جایگزین کنید
 
-`GetVehiclePoolSize()` را با `MAX_VEHICLES` جایگزین کنید
+`GetVehiclePoolSize` را با `MAX_VEHICLES` جایگزین کنید
 
-`GetActorPoolSize()` را با `MAX_ACTORS` جایگزین کنید
+`GetActorPoolSize` را با `MAX_ACTORS` جایگزین کنید
 
 <hr />
 

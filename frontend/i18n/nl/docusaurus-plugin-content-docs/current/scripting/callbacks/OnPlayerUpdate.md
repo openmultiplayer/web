@@ -15,9 +15,9 @@ Deze callback wordt aangeroepen telkens wanneer een client/speler de server bijw
 
 ## Returns
 
-0 - Update van deze speler wordt niet gerepliceerd naar andere clients.
+**0** - Update van deze speler wordt niet gerepliceerd naar andere clients.
 
-1 - Update wordt normaal verwerkt en naar andere spelers gestuurd.
+**1** - Update wordt normaal verwerkt en naar andere spelers gestuurd.
 
 Wordt altijd als eerste aangeroepen in filterscripts.
 

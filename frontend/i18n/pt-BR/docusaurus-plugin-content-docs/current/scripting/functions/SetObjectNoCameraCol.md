@@ -18,9 +18,9 @@ Desative as colisões entre as câmeras dos jogadores e o objeto especificado.
 
 ## Retornos
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função não foi executada. O objeto especificado não existe.
+**0**: A função não foi executada. O objeto especificado não existe.
 
 ## Exemplos
 

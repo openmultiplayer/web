@@ -16,9 +16,9 @@ Provjeri da li igrač ima prikvačen objekat u određenom indexu (slotu).
 
 ## Returns
 
-1: Navedeni slot koristi se za prikvačeni objekt.
+**1**: Navedeni slot koristi se za prikvačeni objekt.
 
-0: Navedeni slot se ne koristi za prikvačeni objekt.
+**0**: Navedeni slot se ne koristi za prikvačeni objekt.
 
 ## Primjeri
 

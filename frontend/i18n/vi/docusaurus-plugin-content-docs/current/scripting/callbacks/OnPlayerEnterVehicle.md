@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Mô Tả
 
-Callback này được gọi khi một người chơi bắt đầu vào một phương tiện, có nghĩa là người chơi chưa vào phương tiện vào thời điểm callback này được gọi.
+Callback này được gọi khi một người chơi **bắt đầu** vào một phương tiện, có nghĩa là người chơi chưa vào phương tiện vào thời điểm callback này được gọi.
 
 | Tên         | Mô Tả                                                           |
 | ----------- | --------------------------------------------------------------- |
@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-- Callback này được gọi khi người chơi BẮT ĐẦU vào một phương tiện, không phải khi họ ĐÃ vào phương tiện. Xem [OnPlayerStateChange](OnPlayerStateChange).
+- Callback này được gọi khi người chơi **BẮT ĐẦU** vào một phương tiện, không phải khi họ ĐÃ vào phương tiện. Xem [OnPlayerStateChange](OnPlayerStateChange).
 - Callback này vẫn được gọi nếu người chơi bị từ chối vào phương tiện (ví dụ: phương tiện bị khóa hoặc đầy).
 
 :::

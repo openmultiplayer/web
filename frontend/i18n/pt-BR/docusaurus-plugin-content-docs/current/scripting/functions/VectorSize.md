@@ -18,7 +18,7 @@ Retorna a norma (comprimento) do vetor fornecido.
 
 ## Retornos
 
-A norma (comprimento) do vetor fornecido como um ponto flutuante.
+A norma (comprimento) do vetor fornecido como um **ponto flutuante**.
 
 ## Exemplos
 

@@ -18,9 +18,9 @@ Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in t
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. The player isn't connected and/or the weapon slot specified is invalid (valid is 0-12).
+**0**: The function failed to execute. The player isn't connected and/or the weapon slot specified is invalid (valid is 0-12).
 
 ## ตัวอย่าง
 

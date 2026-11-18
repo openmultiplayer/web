@@ -15,7 +15,7 @@ Gets the model ID of a vehicle.
 
 ## ส่งคืน
 
-The vehicle's model ID, or 0 if the vehicle doesn't exist.
+The vehicle's model ID, or **0** if the vehicle doesn't exist.
 
 ## ตัวอย่าง
 

@@ -74,7 +74,7 @@ bans.json என்பது தடை பற்றிய பின்வரு�
 
 `IP_HERE` என்பது எங்கே, நீங்கள் தடைசெய்ய விரும்பும் IP ஐ வைக்கும் இடமாகும்.
 
-##### Ban() function
+##### Ban function
 
 [Ban](../scripting/functions/Ban) செயல்பாடு ஒரு ஸ்கிரிப்டில் இருந்து ஒரு பிளேயரை தடை செய்ய பயன்படுத்தப்படலாம். [BanEx](../scripting/functions/BanEx) செயல்பாடு இது போன்ற ஒரு விருப்பக் காரணத்தைச் சேர்க்கும்:
 
@@ -198,7 +198,7 @@ RCON இன்-கேமில் (`/rcon cmdlist`) பயன்படுத்�
 | `/rcon weburl [server url]`       | "masterlists/SA-MP client" சர்வர் URL ஐ மாற்றவும்                                                                                                                               |
 | `/rcon unloadfs`                  | கொடுக்கப்பட்ட "filterscript" இறக்கவும் (_எடுத்துக்காட்டு: /rcon unloadfs adminfs_).                                                                                             |
 | `/rcon reloadfs`                  | கொடுக்கப்பட்ட "filterscript" மீண்டும் ஏற்றுகிறது (_எடுத்துக்காட்டு: /rcon reloadfs adminfs_).                                                                                   |
-| `/rcon rcon\_password [PASSWORD]` | rcon இன் கடவுச்சொல்லை மாற்றவும்                                                                                                                                                 |
+| `/rcon rcon_password [PASSWORD]`  | rcon இன் கடவுச்சொல்லை மாற்றவும்                                                                                                                                                 |
 | `/rcon password [password]`       | சேவையக கடவுச்சொல்லை அமைக்கிறது/மீட்டமைக்கிறது                                                                                                                                   |
 | `/rcon messageslimit [count]`     | ஒரு கிளையன்ட் சர்வருக்கு அனுப்பும் ஒரு நொடிக்கு செய்திகளின் எண்ணிக்கையை மாற்றவும். (இயல்புநிலை 500)                                                                             |
 | `/rcon ackslimit [count]`         | அக்குகளின் வரம்பை மாற்றவும் (இயல்புநிலை 3000)                                                                                                                                   |

@@ -4,7 +4,7 @@ sidebar_label: Per-player variable system
 description: Sistem per-player variable (atau pendeknya, PVar) adalah cara baru untuk membuat variabel player dalam bentuk yang efisien membuat method secara global.
 ---
 
-Sistem per-player variable (atau pendeknya, PVar) adalah cara baru untuk membuat variabel player dalam bentuk yang efisien membuat method secara global, artinya mereka dapan menggunakan gamemode server dan filterscripts secara bersamaan.
+**Sistem per-player variable** (atau pendeknya, **PVar**) adalah cara baru untuk membuat variabel player dalam bentuk yang efisien membuat method secara global, artinya mereka dapan menggunakan gamemode server dan filterscripts secara bersamaan.
 
 Hal ini mirip dengan [SVars](servervariablesystem), namun dalam basis per-player. Lihat 2 post terakhir di dalam thread ini untuk mempelajari lebih lanjut perbedaan antara pawn properties dan PVars.
 

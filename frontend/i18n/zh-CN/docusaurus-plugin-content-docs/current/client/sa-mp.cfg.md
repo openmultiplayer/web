@@ -23,4 +23,4 @@ description: SA-MP客户端配置文件
 | **audioproxyoff**   | 禁用 Windows 代理服务器进行音频流传输（1=绕过代理）。                                                                                                     |
 | **nonametagstatus** | 暂停玩家昵称标签旁显示沙漏图标（默认 0=启用）。使用 `/nametagstatus` 命令调整。                                                                           |
 | **fontface**        | 自定义 UI 字体（示例：`fontface="Comic Sans MS"`）。非官方支持功能，可能导致异常。                                                                        |
-| **fontweight**      | 字体粗细设置（0=粗体[默认] 1=正常）。                                                                                                                     |
+| **fontweight**      | 字体粗细设置（**0=粗体[默认] 1=正常**）。                                                                                                                 |

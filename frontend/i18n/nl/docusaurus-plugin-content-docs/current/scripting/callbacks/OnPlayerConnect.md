@@ -15,9 +15,9 @@ Deze callback wordt aangeroepen wanneer een speler verbindt met de server.
 
 ## Returns
 
-0 - Voorkomt dat andere filterscripts deze callback ontvangen.
+**0** - Voorkomt dat andere filterscripts deze callback ontvangen.
 
-1 - Geeft aan dat deze callback wordt doorgegeven aan het volgende filterscript.
+**1** - Geeft aan dat deze callback wordt doorgegeven aan het volgende filterscript.
 
 Wordt altijd als eerste aangeroepen in filterscripts.
 

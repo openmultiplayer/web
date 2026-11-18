@@ -15,16 +15,16 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 Igraču onemogućava sudare između zauzetih vozila.
 
-| Ime      | Deskripcija                                      |
-| -------- | ------------------------------------------------ |
-| playerid | ID igrača kojem želite da onemogućite sudaranje. |
-| disable  | 1 da onemogućite sudare, 0 da omogućite sudare.  |
+| Ime      | Deskripcija                                             |
+| -------- | ------------------------------------------------------- |
+| playerid | ID igrača kojem želite da onemogućite sudaranje.        |
+| disable  | **1** da onemogućite sudare, **0** da omogućite sudare. |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
 ## Primjeri
 

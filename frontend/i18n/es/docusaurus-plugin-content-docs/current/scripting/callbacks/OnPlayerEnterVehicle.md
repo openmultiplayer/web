@@ -6,13 +6,13 @@ tags: ["player", "vehicle"]
 
 ## Descripción
 
-Este callback se llama cuando un jugador comienza a entrar a un vehículo, o sea que el jugador aún no estará en el vehículo cuando este callback se llame.
+Este callback se llama cuando un jugador **comienza** a entrar a un vehículo, o sea que el jugador aún no estará en el vehículo cuando este callback se llame.
 
-| Nombre      | Descripción                                                          |
-| ----------- | -------------------------------------------------------------------- |
-| playerid    | ID del jugador que intenta entrar a un vehículo.                     |
-| vehicleid   | ID del vehículo al que el jugador está intentando entrar.            |
-| ispassenger | 0 si está entrando como conductor. 1 si está entrando como pasajero. |
+| Nombre      | Descripción                                                                  |
+| ----------- | ---------------------------------------------------------------------------- |
+| playerid    | ID del jugador que intenta entrar a un vehículo.                             |
+| vehicleid   | ID del vehículo al que el jugador está intentando entrar.                    |
+| ispassenger | **0** si está entrando como conductor. **1** si está entrando como pasajero. |
 
 ## Devoluciones
 
@@ -36,7 +36,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-Este callback es llamado cuando un jugador COMIENZA a entrar a un vehículo, no cuando este ENTRÓ realmente. Vea OnPlayerStateChange. Este callback es igualmente llamado si al jugador se le niega la entrada (ej. el auto está cerrado o lleno).
+Este callback es llamado cuando un jugador **COMIENZA** a entrar a un vehículo, no cuando este ENTRÓ realmente. Vea OnPlayerStateChange. Este callback es igualmente llamado si al jugador se le niega la entrada (ej. el auto está cerrado o lleno).
 
 :::
 

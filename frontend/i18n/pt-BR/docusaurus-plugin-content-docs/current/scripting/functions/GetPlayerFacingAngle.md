@@ -16,9 +16,9 @@ Obtém o ângulo que um jogador está voltado (rotação Z).
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: Falha ao executar a função. Isso significa que o jogador não existe.
+**0**: Falha ao executar a função. Isso significa que o jogador não existe.
 
 O ângulo do jogador é armazenado na variável especificada.
 
@@ -41,7 +41,7 @@ Os ângulos retornados quando dentro de um veículo raramente são corretos. Par
 
 :::warning
 
-Os ângulos são invertidos em GTA: SA; 90 graus seria o leste no mundo real, mas em GTA: SA 90 graus seria na verdade o oeste. Norte e Sul ainda são 0/360 e 180. Para converter isso, basta fazer 360 - ângulo.
+Os ângulos são invertidos em GTA: SA; 90 graus seria o _leste_ no mundo real, mas em GTA: SA 90 graus seria na verdade o _oeste_. Norte e Sul ainda são 0/360 e 180. Para converter isso, basta fazer **360 - ângulo**.
 
 :::
 

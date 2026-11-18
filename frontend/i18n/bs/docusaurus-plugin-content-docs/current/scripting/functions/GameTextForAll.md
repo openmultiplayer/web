@@ -17,7 +17,7 @@ Prikazuje 'game text' (tekst na ekranu) određeno vrijeme za sve igrače.
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1.
+Ova funkcija uvijek returna (vraća) **1**.
 
 ## Primjeri
 

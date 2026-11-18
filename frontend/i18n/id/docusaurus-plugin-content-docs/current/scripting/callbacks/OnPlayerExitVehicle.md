@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Deskripsi
 
-Callback ini di panggil ketika pemain mulai keluar dari kendaraan.
+Callback ini di panggil ketika pemain **mulai** keluar dari kendaraan.
 
 | Nama      | Deskripsi                             |
 | --------- | ------------------------------------- |

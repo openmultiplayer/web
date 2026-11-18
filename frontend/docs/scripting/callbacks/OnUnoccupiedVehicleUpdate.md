@@ -23,7 +23,7 @@ This callback is called when a player's client updates/syncs the position of a v
 
 ## Returns
 
-Returning 0 in this callback will stop the vehicle's position being synced to other players. Update is still sent to the updating player.
+Returning **0** in this callback will stop the vehicle's position being synced to other players. Update is still sent to the updating player.
 
 It is always called first in filterscripts so returning 0 there also blocks other scripts from processing it.
 

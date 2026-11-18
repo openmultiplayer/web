@@ -36,7 +36,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 :::note
 
-Este callback no se llama por ChangeVehiclePaintJob. Puede usar OnVehicleChangePaintjob desde Vsync para saber cuándo el jugador compra el trabajo de pintura.
+Este callback no se llama por ChangeVehiclePaintJob. Puede usar OnVehicleChangePaintjob desde Vsync para saber cuándo el jugador **compra** el trabajo de pintura.
 
 :::
 

@@ -23,7 +23,7 @@ Ovaj callback je pozvan kada igračev klijent ažurira/sinhronizuje poziciju voz
 
 ## Returns
 
-Uvijek je pozvan prvo u filterskriptama tako da će return-ovanje 0 ovdje blokirati ostale skripte da ga vide.
+Uvijek je pozvan prvo u filterskriptama tako da će return-ovanje **0** ovdje blokirati ostale skripte da ga vide.
 
 ## Primjeri
 

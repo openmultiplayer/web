@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Stvara datoteku u "tmp", "temp" ili root direktorijumu sa slučajnim imenom za čitanje i pisanje. Datoteka se briše nakon upotrebe fclose() na datoteci.
+Stvara datoteku u "tmp", "temp" ili root direktorijumu sa slučajnim imenom za čitanje i pisanje. Datoteka se briše nakon upotrebe fclose na datoteci.
 
 ## Primjeri
 

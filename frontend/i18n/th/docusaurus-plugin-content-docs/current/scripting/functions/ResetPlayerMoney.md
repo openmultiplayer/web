@@ -15,9 +15,9 @@ Reset a player's money to \$0.
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. This means the player is not connected.
+**0**: The function failed to execute. This means the player is not connected.
 
 ## ตัวอย่าง
 

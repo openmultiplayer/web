@@ -12,7 +12,7 @@ Bu geri çağırma bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (Ed
 | Parametre              | Açıklama                                                               |
 | ---------------------- | ---------------------------------------------------------------------- |
 | playerid               | Düzenlemeyi yapan oyuncunun ID'si.                                     |
-| playerobject           | Genel bir obje ise 0 olur, oyuncu objesi ise 1 olur.                   |
+| playerobject           | Genel bir obje ise **0** olur, oyuncu objesi ise **1** olur.           |
 | objectid               | Düzenlenen objenin ID'si.                                              |
 | EDIT_RESPONSE:response | Verilen cevabın tipi. [tıkla](../resources/objecteditionresponsetypes) |
 | Float:fX               | Düzenlenen objenin X yönündeki koordinatı.                             |
@@ -24,9 +24,9 @@ Bu geri çağırma bir oyuncu obje düzenlemeyi bitirdiğinde çağırılır (Ed
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Diğer scriptlerin bu geri çağırmaya ulaşmasını engeller.
+**1** - Diğer scriptlerin bu geri çağırmaya ulaşmasını engeller.
 
-0 - Bu script bittikten sonra geri çağırma diğer scriptlerde işlenir.
+**0** - Bu script bittikten sonra geri çağırma diğer scriptlerde işlenir.
 
 Her zaman ilk olarak filterscriptlerde çağırılır.
 

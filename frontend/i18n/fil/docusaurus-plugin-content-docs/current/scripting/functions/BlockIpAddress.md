@@ -35,7 +35,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::tip
 
-Maaaring gamitin ang mga wildcard sa function na ito, halimbawa, ang pagharang sa IP '6.9._._' ay haharangan ang lahat ng IP kung saan ang unang dalawang octet ay 6 at 9 ayon sa pagkakabanggit. Anumang numero ay maaaring maging kapalit ng isang asterisk.
+Maaaring gamitin ang mga wildcard sa function na ito, halimbawa, ang pagharang sa IP `6.9.*.*` ay haharangan ang lahat ng IP kung saan ang unang dalawang octet ay **6** at **9** ayon sa pagkakabanggit. Anumang numero ay maaaring maging kapalit ng isang asterisk.
 
 :::
 

@@ -4,7 +4,7 @@ sidebar_label: "Remote Console (RCON)"
 description: Remote server administation.
 ---
 
-The Remote Console is a command prompt where you can use RCON commands without having to be in game and on your server. Since 0.3b the Remote Console got removed from the Server Browser. From now on you will have to use another way to access Remote RCON as explained below.
+The **Remote Console** is a command prompt where you can use RCON commands without having to be in game and on your server. Since 0.3b the **Remote Console** got removed from the **Server Browser**. From now on you will have to use another way to access **Remote RCON** as explained below.
 
 1. Open a text editor.
 2. Write in the following line: `rcon.exe IP PORT RCON-PASS` (Replace IP/PORT/PASS with your server details)

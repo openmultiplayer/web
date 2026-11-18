@@ -41,7 +41,7 @@ GetPosInFrontOfPlayer(playerid, Float:distance, &Float:x, &Float:y, &Float:z)
 
 :::warning
 
-GTA/SA-MP از درجه برای زاویه‌ها در اکثر شرایط استفاده میکنن، مثلاً [GetPlayerFacingAngle](GetPlayerFacingAngle). بنابراین، احتمالاً میخوای از حالت زاویه 'degrees' استفاده کنی، نه radian. همچنین دقت کن که زاویه‌ها در GTA پادساعتگردن؛ 270° شرق و 90° غرب. جنوب هنوز 180° و شمال هنوز 0°/360°.
+GTA/SA-MP از **درجه** برای زاویه‌ها در اکثر شرایط استفاده میکنن، مثلاً [GetPlayerFacingAngle](GetPlayerFacingAngle). بنابراین، احتمالاً میخوای از حالت زاویه '**degrees**' استفاده کنی، _نه_ radian. همچنین دقت کن که زاویه‌ها در GTA پادساعتگردن؛ 270° شرق و 90° غرب. جنوب هنوز 180° و شمال هنوز 0°/360°.
 
 :::
 

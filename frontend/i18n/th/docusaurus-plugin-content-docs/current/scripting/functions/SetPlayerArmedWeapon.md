@@ -16,9 +16,9 @@ Sets which weapon (that a player already has) the player is holding.
 
 ## ส่งคืน
 
-1: The function was executed successfully. Success is returned even when the function fails to execute (the player doesn't have the weapon specified, or it is an invalid weapon).
+**1**: The function was executed successfully. Success is returned even when the function fails to execute (the player doesn't have the weapon specified, or it is an invalid weapon).
 
-0: The function failed to execute. The player is not connected.
+**0**: The function failed to execute. The player is not connected.
 
 ## ตัวอย่าง
 
@@ -48,7 +48,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::note
 
-This function arms a player with a weapon they already have; it does not give them a new weapon. See GivePlayerWeapon.
+This function _arms_ a player with a weapon they **already have**; it does not _give_ them a new weapon. See GivePlayerWeapon.
 
 :::
 

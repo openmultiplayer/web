@@ -21,7 +21,7 @@ Dobija float vrijednost server varijable.
 
 ## Returns
 
-Float vrijednost navedene varijable poslužitelja. I dalje će vraćati 0 ako varijabla nije postavljena.
+Float vrijednost navedene varijable poslužitelja. I dalje će vraćati **0** ako varijabla nije postavljena.
 
 ## Primjeri
 

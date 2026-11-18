@@ -15,9 +15,9 @@ Ovaj callback je pozvan svaki put kada klijent/igrač ažurira server sa svojim 
 
 ## Returns
 
-0 - Ažuriranje od ovog igrača neće biti replicirano drugim klijentima.
+**0** - Ažuriranje od ovog igrača neće biti replicirano drugim klijentima.
 
-1 - Označava da će ovo ažuriranje biti obrađeno normalno i poslano ostalim igračima.
+**1** - Označava da će ovo ažuriranje biti obrađeno normalno i poslano ostalim igračima.
 
 Uvijek je pozvan prvo u filterskripti.
 

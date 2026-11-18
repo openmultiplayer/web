@@ -16,7 +16,7 @@ Bir aracı bir başka araca römork olarak bağlama.
 
 ## Çalışınca Vereceği Sonuçlar
 
-Bu fonksiyon römork işlevi görecek olan araç yaratılmamış/geçersiz olsa bile her zaman 1 olarak döner.
+Bu fonksiyon römork işlevi görecek olan araç yaratılmamış/geçersiz olsa bile her zaman **1** olarak döner.
 
 ## Örnekler
 

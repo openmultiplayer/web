@@ -25,9 +25,9 @@ Fügt eine Klasse zur Klassen-Auswahl(class-selection) hinzu. Klassen ermöglich
 
 ## Rückgabe(return value)
 
-Die ID der Klasse die erstellt wurde.
+Die **ID der Klasse** die erstellt wurde.
 
-319 wenn das Class-Limit (320) erreicht ist. Höchstmögliche Class ID: 319.
+**319** wenn das Class-Limit (320) erreicht ist. Höchstmögliche Class ID: 319.
 
 ## Beispiele
 

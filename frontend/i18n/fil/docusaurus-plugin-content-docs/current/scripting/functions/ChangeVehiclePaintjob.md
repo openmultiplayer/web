@@ -16,7 +16,7 @@ Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).
 
 ## Returns
 
-Ang function na ito ay palaging nagbabalik ng 1 (tagumpay), kahit na ang sasakyang dumaan ay hindi nilikha.
+Ang function na ito ay palaging nagbabalik ng **1** (tagumpay), kahit na ang sasakyang dumaan ay hindi nilikha.
 
 :::warning
 

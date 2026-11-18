@@ -53,7 +53,7 @@ else
 
 :::warning
 
-使用无效句柄会导致服务器崩溃！请通过 [fopen](fopen) 或 [ftemp](ftemp) 获取有效文件句柄。
+使用**无效句柄**会导致服务器崩溃！请通过 [fopen](fopen) 或 [ftemp](ftemp) 获取**有效文件句柄**。
 
 :::
 

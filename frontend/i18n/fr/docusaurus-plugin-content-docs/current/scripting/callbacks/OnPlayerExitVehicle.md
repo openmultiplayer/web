@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Paramètres
 
-Cette callback est appelée quand un joueur commence à sortir d'un véhicule.
+Cette callback est appelée quand un joueur **commence** à sortir d'un véhicule.
 
 | Nom             | Description                          |
 | --------------- | ------------------------------------ |

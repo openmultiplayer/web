@@ -34,7 +34,7 @@ public OnPlayerSpawn(playerid)
 
 :::warning
 
-O parâmetro de habilidade não é o ID da arma; é o tipo de habilidade. Clique [aqui](../resources/weaponskills) para obter uma lista de tipos de habilidades.
+O parâmetro de **habilidade** não é o ID da arma; é o tipo de habilidade. Clique [aqui](../resources/weaponskills) para obter uma lista de tipos de habilidades.
 
 :::
 

@@ -19,9 +19,9 @@ Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the rada
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**0**: The function failed to execute. This means the player specified does not exist.
 
 ## ตัวอย่าง
 

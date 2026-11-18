@@ -9,9 +9,9 @@ tags: []
 
 With this function you can enable or disable tire popping.
 
-| Name | Description                             |
-| ---- | --------------------------------------- |
-| show | 1 to enable, 0 to disable tire popping. |
+| Name | Description                                     |
+| ---- | ----------------------------------------------- |
+| show | **1** to enable, **0** to disable tire popping. |
 
 ## ส่งคืน
 

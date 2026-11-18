@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač krene da izlazi iz vozila.
+Ovaj callback je pozvan kada igrač **krene** da izlazi iz vozila.
 
 | Name      | Deskripcija                      |
 | --------- | -------------------------------- |

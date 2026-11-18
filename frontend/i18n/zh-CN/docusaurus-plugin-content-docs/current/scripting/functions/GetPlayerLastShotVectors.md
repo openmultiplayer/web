@@ -52,7 +52,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-- 此函数仅在开启延迟补偿时生效
+- 此函数仅在**开启**延迟补偿时生效
 - 若子弹未命中任何物体，命中点坐标将返回 0。当前无法计算子弹在空中的飞行距离
 
 :::

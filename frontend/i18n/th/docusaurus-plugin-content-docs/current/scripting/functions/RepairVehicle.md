@@ -15,9 +15,9 @@ Fully repairs a vehicle, including visual damage (bumps, dents, scratches, poppe
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. This means the vehicle specified does not exist.
+**0**: The function failed to execute. This means the vehicle specified does not exist.
 
 ## ตัวอย่าง
 

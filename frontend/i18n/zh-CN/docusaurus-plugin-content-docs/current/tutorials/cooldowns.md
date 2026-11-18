@@ -89,9 +89,9 @@ OnPlayerFinishRace(playerid)
 
 上述案例虽然常见且有效，但存在更优解决方案——既能精准控制冷却时间，又能实现毫秒级计时！
 
-## 使用`GetTickCount()`与`gettime()`
+## 使用`GetTickCount`与`gettime`
 
-`GetTickCount()`返回服务器启动后的毫秒数，`gettime()`返回自 1970 年 1 月 1 日以来的秒数（即 Unix 时间戳）。
+`GetTickCount`返回服务器启动后的毫秒数，`gettime`返回自 1970 年 1 月 1 日以来的秒数（即 Unix 时间戳）。
 
 通过两次调用上述函数并计算差值，即可获得精确的时间间隔。请看示例：
 
@@ -120,7 +120,7 @@ OnPlayerInteractWithServer(playerid)
 }
 ```
 
-或使用`gettime()`版本：
+或使用`gettime`版本：
 
 ```pawn
 static PlayerAllowedSeconds[MAX_PLAYERS];
@@ -222,17 +222,17 @@ OnPlayerFinishRace(playerid)
 }
 ```
 
-这里就是计算时间间隔的核心所在——其实所谓的计算，本质上只是两次调用`GetTickCount()`的结果相减！
+这里就是计算时间间隔的核心所在——其实所谓的计算，本质上只是两次调用`GetTickCount`的结果相减！
 
-`GetTickCount()`返回当前滴答计数，该值必然大于初始记录值。因此用当前值减去初始值即可得到精确的时间间隔。
+`GetTickCount`返回当前滴答计数，该值必然大于初始记录值。因此用当前值减去初始值即可得到精确的时间间隔。
 
-假设玩家在 1 分 40 秒后（即 100 秒或 100,000 毫秒）完成竞速，此时`GetTickCount()`将返回 160,000。用新值 160,000 减去初始值 60,000，得到 100,000 毫秒，即 1 分 40 秒的精确耗时！
+假设玩家在 1 分 40 秒后（即 100 秒或 100,000 毫秒）完成竞速，此时`GetTickCount`将返回 160,000。用新值 160,000 减去初始值 60,000，得到 100,000 毫秒，即 1 分 40 秒的精确耗时！
 
 ## 要点总结
 
 通过本教程我们掌握：
 
-- `GetTickCount()`返回服务器运行后的毫秒级时间戳
+- `GetTickCount`返回服务器运行后的毫秒级时间戳
 - 通过两次调用记录时间戳并相减，可精准计算事件间隔
 
 最后提醒：切勿直接向玩家显示毫秒数值！若竞速耗时长达一小时该如何阅读？
@@ -241,4 +241,4 @@ OnPlayerFinishRace(playerid)
 
 [此工具包](https://github.com/ScavengeSurvive/timeutil)提供毫秒格式化功能，可将数值转换为易读字符串。
 
-希望本文对你有所启发！撰写初衷是发现许多开发者尚未掌握`GetTickCount()`和`gettime()`作为定时器替代方案的妙用。
+希望本文对你有所启发！撰写初衷是发现许多开发者尚未掌握`GetTickCount`和`gettime`作为定时器替代方案的妙用。

@@ -15,9 +15,9 @@ Ang callback na ito ay tinatawag sa tuwing ina-update ng isang kliyente/manlalar
 
 ## Returns
 
-0 - Ang pag-update mula sa player na ito ay hindi mai-replicate sa ibang mga kliyente.
+**0** - Ang pag-update mula sa player na ito ay hindi mai-replicate sa ibang mga kliyente.
 
-1 - Isinasaad na ang update na ito ay maaaring maproseso nang normal at maipadala sa iba pang mga manlalaro.
+**1** - Isinasaad na ang update na ito ay maaaring maproseso nang normal at maipadala sa iba pang mga manlalaro.
 
 Lagi itong na tatawag una sa mga filterscript.
 

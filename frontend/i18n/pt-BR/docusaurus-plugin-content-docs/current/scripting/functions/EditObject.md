@@ -16,9 +16,9 @@ Permite que um jogador edite um objeto (posição e rotação) utilizando o mous
 
 ## Retornos
 
-1: A função foi executada com sucesso. O sucesso é reportado mesmo se um objeto inexistente for especificado, porém nada acontecerá.
+**1**: A função foi executada com sucesso. O sucesso é reportado mesmo se um objeto inexistente for especificado, porém nada acontecerá.
 
-0: A função falhou ao executar. O jogador não está conectado.
+**0**: A função falhou ao executar. O jogador não está conectado.
 
 ## Exemplos
 
@@ -46,7 +46,7 @@ return 0;
 
 :::tip
 
-Você pode mover a câmera durante a edição pressionando e segurando a barra de espaço (ou W em veículo) e movendo o mouse.
+Você pode mover a câmera durante a edição pressionando e segurando a **barra de espaço** (ou **W** em veículo) e movendo o mouse.
 
 :::
 

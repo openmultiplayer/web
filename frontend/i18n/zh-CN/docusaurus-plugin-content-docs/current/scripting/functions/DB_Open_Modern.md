@@ -16,7 +16,7 @@ tags: ["sqlite"]
 
 ## 返回值
 
-返回数据库连接句柄索引（从 1 开始）。
+返回数据库连接句柄索引（**从 1 开始**）。
 
 ## 示例
 
@@ -61,7 +61,7 @@ public OnGameModeExit()
 :::warning
 
 - 当指定数据库文件不存在时，将自动创建新数据库文件！
-- 请务必使用[DB_Close](DB_Close_Modern)关闭数据库连接！
+- 请务必使用[DB_Close](DB_Close_Modern)**关闭**数据库连接！
 
 :::
 

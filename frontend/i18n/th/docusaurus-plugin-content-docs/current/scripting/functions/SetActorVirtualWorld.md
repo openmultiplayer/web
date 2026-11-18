@@ -22,9 +22,9 @@ Set the virtual world of an actor. Only players in the same world will see the a
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. The actor specified does not exist.
+**0**: The function failed to execute. The actor specified does not exist.
 
 ## ตัวอย่าง
 

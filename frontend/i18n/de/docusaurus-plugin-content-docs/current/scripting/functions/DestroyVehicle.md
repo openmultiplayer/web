@@ -15,9 +15,9 @@ Löscht ein Fahrzeug. Fahrzeug verschwindet sofort.
 
 ## Rückgabe(return value)
 
-1: Funktion erfolgreich ausgeführt.
+**1**: Funktion erfolgreich ausgeführt.
 
-0: Funktion fehlgeschlagen. Das Fahrzeug existiert nicht.
+**0**: Funktion fehlgeschlagen. Das Fahrzeug existiert nicht.
 
 ## Beispiele
 

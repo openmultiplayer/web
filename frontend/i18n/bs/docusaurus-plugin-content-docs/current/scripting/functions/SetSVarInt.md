@@ -22,9 +22,9 @@ Postavlja cjelobrojnu server varijablu.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ime varijable je prazno ili je preko 40 karaktera.
+**0**: Funkcija neuspješno izvršena. Ime varijable je prazno ili je preko 40 karaktera.
 
 ## Primjeri
 

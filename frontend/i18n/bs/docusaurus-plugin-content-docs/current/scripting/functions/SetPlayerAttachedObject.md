@@ -9,27 +9,27 @@ tags: ["player"]
 
 Prikvači objekat na određenu kost igrača.
 
-| Ime            | Deskripcija                                                                              |
-| -------------- | ---------------------------------------------------------------------------------------- |
-| playerid       | ID igrača za prikvačiti objekat.                                                         |
-| index          | Index (slot) za dodijeliti objekat (0-9 od 0.3d, 0-4 u ranijim verzijama).               |
-| modelid        | Model kojeg želite koristiti.                                                            |
-| bone           | [Kost](../resources/boneid) za koju želite prikvačiti objekat.                           |
-| fOffsetX       | (neobavezno) Pomak osi X za položaj objekta.                                             |
-| fOffsetY       | (neobavezno) Pomak osi Y za položaj objekta.                                             |
-| fOffsetZ       | (neobavezno) Pomak osi Z za položaj objekta.                                             |
-| fRotX          | (neobavezno) Pomak osi X za rotaciju objekta.                                            |
-| fRotY          | (neobavezno) Pomak osi Y za rotaciju objekta.                                            |
-| fRotZ          | (neobavezno) Pomak osi Z za rotaciju objekta.                                            |
-| fScaleX        | (optional) Pomak osi X za veličinu objekta.                                              |
-| fScaleY        | (optional) Pomak osi Y za veličinu objekta.                                              |
-| fScaleZ        | (optional) Pomak osi Z za veličinu objekta.                                              |
-| materialcolor1 | (optional) Primarna boja za postaviti objektu, kao cijeli broj ili hex u ARGB formatu.   |
-| materialcolor2 | (optional) Sekundarna boja za postaviti objektu, kao cijeli broj ili hex u ARGB formatu. |
+| Ime            | Deskripcija                                                                                  |
+| -------------- | -------------------------------------------------------------------------------------------- |
+| playerid       | ID igrača za prikvačiti objekat.                                                             |
+| index          | Index (slot) za dodijeliti objekat (0-9 od 0.3d, 0-4 u ranijim verzijama).                   |
+| modelid        | Model kojeg želite koristiti.                                                                |
+| bone           | [Kost](../resources/boneid) za koju želite prikvačiti objekat.                               |
+| fOffsetX       | (neobavezno) Pomak osi X za položaj objekta.                                                 |
+| fOffsetY       | (neobavezno) Pomak osi Y za položaj objekta.                                                 |
+| fOffsetZ       | (neobavezno) Pomak osi Z za položaj objekta.                                                 |
+| fRotX          | (neobavezno) Pomak osi X za rotaciju objekta.                                                |
+| fRotY          | (neobavezno) Pomak osi Y za rotaciju objekta.                                                |
+| fRotZ          | (neobavezno) Pomak osi Z za rotaciju objekta.                                                |
+| fScaleX        | (optional) Pomak osi X za veličinu objekta.                                                  |
+| fScaleY        | (optional) Pomak osi Y za veličinu objekta.                                                  |
+| fScaleZ        | (optional) Pomak osi Z za veličinu objekta.                                                  |
+| materialcolor1 | (optional) Primarna boja za postaviti objektu, kao cijeli broj ili hex u **ARGB** formatu.   |
+| materialcolor2 | (optional) Sekundarna boja za postaviti objektu, kao cijeli broj ili hex u **ARGB** formatu. |
 
 ## Returns
 
-1 uspješno, 0 pri grešci.
+**1** uspješno, **0** pri grešci.
 
 ## Primjeri
 

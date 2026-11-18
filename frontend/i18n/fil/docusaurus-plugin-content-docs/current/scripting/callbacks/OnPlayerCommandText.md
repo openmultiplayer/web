@@ -16,7 +16,7 @@ Ang callback na ito ay itinatawag kapag ang player ay nag-input ng command sa cl
 
 ## Returns
 
-Ito ay palaging itinatawag una sa mga filterscript, kaya ang pag return ng 1 ay ipinagbabawal ang ibang script na makita ito.
+Ito ay palaging itinatawag una sa mga filterscript, kaya ang pag return ng **1** ay ipinagbabawal ang ibang script na makita ito.
 
 ## Examples
 

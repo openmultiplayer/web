@@ -16,7 +16,7 @@ Provjerava da li je dati ID objekta važeći za datog igrača.
 
 ## Returns
 
-1 ako objekat postoji, 0 ako ne.
+**1** ako objekat postoji, **0** ako ne.
 
 ## Primjeri
 

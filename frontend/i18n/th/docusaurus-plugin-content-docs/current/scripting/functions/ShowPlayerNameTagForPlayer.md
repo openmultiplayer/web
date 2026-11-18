@@ -13,7 +13,7 @@ This functions allows you to toggle the drawing of player nametags, healthbars a
 | ------------ | ------------------------------------------------ |
 | playerid     | Player who will see the results of this function |
 | showplayerid | Player whose name tag will be shown or hidden    |
-| show         | 1-show name tag, 0-hide name tag                 |
+| show         | **1**-show name tag, **0**-hide name tag         |
 
 ## ส่งคืน
 

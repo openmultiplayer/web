@@ -19,9 +19,9 @@ Sets the position of a player-object to the specified coordinates.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. Player and/or object do not exist.
+**0**: The function failed to execute. Player and/or object do not exist.
 
 ## ตัวอย่าง
 

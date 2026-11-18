@@ -12,7 +12,7 @@ Ovaj callback je pozvan kada igrač dovrši uređivanje objekta (EditObject/Edit
 | Ime                    | Deskripcija                                             |
 | ---------------------- | ------------------------------------------------------- |
 | playerid               | ID igrača koji je uredi objekat                         |
-| playerobject           | 0 ako je globalni objekat 1 ako je playerobject         |
+| playerobject           | **0** ako je globalni objekat **1** ako je playerobject |
 | objectid               | ID uređenog objekta                                     |
 | EDIT_RESPONSE:response | [Tip odgovora](../resources/objecteditionresponsetypes) |
 | Float:fX               | Ofset X prikvačenog objekta koji je editovan            |
@@ -24,9 +24,9 @@ Ovaj callback je pozvan kada igrač dovrši uređivanje objekta (EditObject/Edit
 
 ## Returns
 
-1 - Spriječiti će da druge skripte primaju ovaj callback.
+**1** - Spriječiti će da druge skripte primaju ovaj callback.
 
-0 - Označava da će ovaj callback biti proslijeđen narednoj skripti.
+**0** - Označava da će ovaj callback biti proslijeđen narednoj skripti.
 
 Uvijek je pozvana prva u filterskripti.
 

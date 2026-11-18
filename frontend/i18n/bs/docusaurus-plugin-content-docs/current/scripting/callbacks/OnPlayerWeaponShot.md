@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač ispali hitac iz oružja. Samo oružja sa mecima su podržana. Drive-by je podržan samo od strane putnika (ne vozačev drive-by, i ne hice koje pucate iz sea sparrowa / huntera).
+Ovaj callback je pozvan kada igrač ispali hitac iz oružja. Samo oružja sa mecima su podržana. Drive-by je podržan samo od strane **putnika** (ne vozačev drive-by, i ne hice koje pucate iz sea sparrowa / huntera).
 
 | Ime                     | Deskripcija                                                                                                |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -43,10 +43,10 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-Ovaj callback je pozvan samo kada je is only called when kompenzacija zakašnjenja omogućena. Ako je hittype:
+Ovaj callback je pozvan samo kada je is only called when kompenzacija zakašnjenja **omogućena**. Ako je **hittype**:
 
-- `BULLET_HIT_TYPE_NONE`: fX, fY i fZ parametri su normalne kordinate, dati će 0.0 za kordinatu ako ništa nije pogođeno (npr. daleki objekat kojeg metak ne može dohvatiti);
-- Ostali: fX, fY i fZ su pomaci u odnosu na hitid.
+- `BULLET_HIT_TYPE_NONE`: **fX**, **fY** i **fZ** parametri su normalne kordinate, dati će 0.0 za kordinatu ako ništa nije pogođeno (npr. daleki objekat kojeg metak ne može dohvatiti);
+- Ostali: **fX**, **fY** i **fZ** su pomaci u odnosu na **hitid**.
 
 :::
 
@@ -58,11 +58,11 @@ Ovaj callback je pozvan samo kada je is only called when kompenzacija zakašnjen
 
 :::warning
 
-Poznati Bag(ovi):
+**Poznati Bag(ovi):**
 
 - Nije pozvan kada ispalite hitac u vozilo kao vozač ili ako gledate iza sa omogućenim aim-anjem (pucanje u zrak).
-- Pozvan je kada `BULLET_HIT_TYPE_VEHICLE` sa korektnim hitid-em (hit iz igračevog vozila) ako pucate igrača koji je u vozilu. Neće biti pozvan kao `BULLET_HIT_TYPE_PLAYER` nikako.
-- Djelomično popravljeno u SA-MP 0.3.7: Ako zlonamjerni korisnik pošalje lažne podatke o fake oružju, drugi klijenti igrača mogu se zalediti ili crashovati. Da biste se izborili protiv toga, provjerite može li prijavljeni weaponid stvarno ispaliti metke.
+- Pozvan je kada `BULLET_HIT_TYPE_VEHICLE` sa korektnim `hitid`-em (hit iz igračevog vozila) ako pucate igrača koji je u vozilu. Neće biti pozvan kao `BULLET_HIT_TYPE_PLAYER` nikako.
+- **Djelomično popravljeno u SA-MP 0.3.7**: Ako zlonamjerni korisnik pošalje lažne podatke o fake oružju, drugi klijenti igrača mogu se zalediti ili crashovati. Da biste se izborili protiv toga, provjerite može li prijavljeni `weaponid` stvarno ispaliti metke.
 
 :::
 

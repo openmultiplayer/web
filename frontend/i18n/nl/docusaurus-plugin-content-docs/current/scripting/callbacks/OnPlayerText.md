@@ -16,7 +16,7 @@ Deze callback wordt aangeroepen wanneer een speler een bericht verstuurt in de c
 
 ## Returns
 
-Wordt altijd als eerste aangeroepen in filterscripts, dus return 0 blokkeert andere scripts om het te verwerken.
+Wordt altijd als eerste aangeroepen in filterscripts, dus return **0** blokkeert andere scripts om het te verwerken.
 
 ## Voorbeelden
 

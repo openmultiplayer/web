@@ -17,9 +17,9 @@ I-clear ang anumang mga animation na inilapat sa isang aktor.
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Ang aktor na tinukoy ay wala.
+**0**: Nabigo ang function na isagawa. Ang aktor na tinukoy ay wala.
 
 ## Examples
 

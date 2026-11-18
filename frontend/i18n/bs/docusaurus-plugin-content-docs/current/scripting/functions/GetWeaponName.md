@@ -17,9 +17,9 @@ Dobij ime oružja.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeno oružje ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeno oružje ne postoji.
 
 Ime oružja pohranjeno je u navedenom nizu.
 

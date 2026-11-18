@@ -432,7 +432,7 @@ Observe que funções callback são geralmente nativas, e seus nomes dependem do
 
 ## Entrada de arquivo em PAWN
 
-A linguagem PAWN não tem nenhuma funcionalidade E/S embutida. Isso significa que só é possível ler arquivos por meios específicos que a implementação fornece (se houver). A aplicação iniesta pode, por exemplo, suportar funções como fopen() e fread().
+A linguagem PAWN não tem nenhuma funcionalidade E/S embutida. Isso significa que só é possível ler arquivos por meios específicos que a implementação fornece (se houver). A aplicação iniesta pode, por exemplo, suportar funções como fopen e fread.
 
 Em outros sistemas embarcados, os dados necessários para a execução do script podem ser armazenados como dados na RAM ou ROM em vez de armazenados no disco como um arquivo
 

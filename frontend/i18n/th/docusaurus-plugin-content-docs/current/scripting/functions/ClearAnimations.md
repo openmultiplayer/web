@@ -16,7 +16,7 @@ Clears all animations for the given player (it also cancels all current tasks su
 
 ## ส่งคืน
 
-This function always returns 1, even when the player specified is not connected.
+This function always returns **1**, even when the player specified is not connected.
 
 ## ตัวอย่าง
 

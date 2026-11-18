@@ -12,7 +12,7 @@ Cria um rótulo de texto 3D em uma localização específica no mundo
 | Nome               | Descrição                                                                                      |
 | ------------------ | ---------------------------------------------------------------------------------------------- |
 | const text[]       | A string de texto inicial.                                                                     |
-| colour             | A cor do texto, como um inteiro ou hex no formato de cor RGBA                                  |
+| colour             | A cor do texto, como um inteiro ou hex no formato de cor **RGBA**                              |
 | Float:x            | Coordenada X                                                                                   |
 | Float:y            | Coordenada Y                                                                                   |
 | Float:z            | Coordenada Z                                                                                   |

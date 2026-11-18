@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Description
 
-This callback is called when a player starts to enter a vehicle, meaning the player is not in vehicle yet at the time this callback is called.
+This callback is called when a player **starts** to enter a vehicle, meaning the player is not in vehicle yet at the time this callback is called.
 
 | Name        | Description                                          |
 | ----------- | ---------------------------------------------------- |
@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-- This callback is called when a player BEGINS to enter a vehicle, not when they HAVE entered it. See [OnPlayerStateChange](OnPlayerStateChange).
+- This callback is called when a player **BEGINS** to enter a vehicle, not when they HAVE entered it. See [OnPlayerStateChange](OnPlayerStateChange).
 - This callback is still called if the player is denied entry to a vehicle (e.g. it is locked or full) but only as a passenger.
 
 :::

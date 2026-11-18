@@ -18,7 +18,7 @@ Shows 'game text' (on-screen text) for a certain length of time for all players.
 
 ## Returns
 
-This function always returns 1.
+This function always returns **1**.
 
 ## Examples
 

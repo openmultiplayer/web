@@ -40,7 +40,7 @@ The following functions might be useful, as they're related to this callback in 
 
 ### Introduction
 
-This callback is called whenever a player presses or releases one of the supported keys (see [Keys](../resources/keys)).<br/>The keys which are supported are not actual keyboard keys, but San Andreas mapped function keys, this means that, for example, you can't detect when someone presses the <strong>spacebar</strong>, but can detect when they press their sprint key (which may, or may not, be assigned to the spacebar (it is by default)).
+This callback is called whenever a player presses or releases one of the supported keys (see [Keys](../resources/keys)).<br/>The keys which are supported are not actual keyboard keys, but San Andreas mapped function keys, this means that, for example, you can't detect when someone presses the <strong>spacebar</strong>, but can detect when they press their **sprint** key (which may, or may not, be assigned to the spacebar (it is by default)).
 
 ### Parameters
 

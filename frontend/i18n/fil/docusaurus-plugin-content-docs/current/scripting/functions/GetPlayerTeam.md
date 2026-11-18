@@ -15,11 +15,11 @@ Kunin ang ID ng koponan kung nasaan ang manlalaro.
 
 ## Returns
 
-0-254: Ang koponan ng manlalaro. (0 ay isang wastong koponan)
+**0-254**: Ang koponan ng manlalaro. (0 ay isang wastong koponan)
 
-255: Tinukoy bilang NO_TEAM. Ang manlalaro ay wala sa alinmang koponan.
+**255**: Tinukoy bilang NO_TEAM. Ang manlalaro ay wala sa alinmang koponan.
 
--1: Nabigo ang function na isagawa. Hindi konektado ang player.
+**-1**: Nabigo ang function na isagawa. Hindi konektado ang player.
 
 ## Examples
 

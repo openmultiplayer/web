@@ -9,9 +9,9 @@ tags: []
 
 Omogući/onemogući iscrtavanje nametag-ova, healthbar-ova i armora iznad igrača.
 
-| Ime     | Deskripcija                                                         |
-| ------- | ------------------------------------------------------------------- |
-| enabled | 0 za onemogućiti, 1 za omogućiti (omogućeno po zadanim postavkama). |
+| Ime     | Deskripcija                                                                 |
+| ------- | --------------------------------------------------------------------------- |
+| enabled | **0** za onemogućiti, **1** za omogućiti (omogućeno po zadanim postavkama). |
 
 ## Returns
 

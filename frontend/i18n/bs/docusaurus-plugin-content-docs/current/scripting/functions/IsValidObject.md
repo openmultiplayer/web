@@ -15,9 +15,9 @@ Provjerava da li je navedeni ID objekta postojeći.
 
 ## Returns
 
-1: Objekat postoji.
+**1**: Objekat postoji.
 
-0: Objekat ne postoji.
+**0**: Objekat ne postoji.
 
 ## Primjeri
 

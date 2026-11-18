@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-O mundo virtual padrão é 0.
+O mundo virtual padrão é **0**.
 
 :::
 

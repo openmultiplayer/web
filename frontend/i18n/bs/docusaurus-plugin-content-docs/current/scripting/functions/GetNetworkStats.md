@@ -16,7 +16,7 @@ Funkcija koja dobiva mrežne statistike servera i pohranjuje ih u string (niz).
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1.
+Ova funkcija uvijek returna (vraća) **1**.
 
 ## Primjeri
 

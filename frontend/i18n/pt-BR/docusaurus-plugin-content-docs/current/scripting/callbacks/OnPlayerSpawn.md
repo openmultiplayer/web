@@ -15,9 +15,9 @@ Este evento é chamado quando um spawna. (Após chamada da função SpawnPlayer)
 
 ## Retorno
 
-0 - Impedirá que outros filterscripts recebam este retorno de chamada.
+**0** - Impedirá que outros filterscripts recebam este retorno de chamada.
 
-1 - Indica que este retorno de chamada será passado para o próximo filterscript.
+**1** - Indica que este retorno de chamada será passado para o próximo filterscript.
 
 É sempre chamado primeiro nos filterscripts.
 

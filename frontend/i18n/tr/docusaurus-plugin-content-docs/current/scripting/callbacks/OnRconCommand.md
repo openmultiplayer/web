@@ -15,7 +15,7 @@ Bu fonksiyon, RCON oturumu açmış oyuncu RCON komutu kullandığında çağrı
 
 ## Çalışınca Verilen Sonuçlar
 
-Filterscript komut dosyalarında her zaman ilk olarak çağrılır, bu nedenle 1 döndürmek oyun modunun görmesini engeller.
+Filterscript komut dosyalarında her zaman ilk olarak çağrılır, bu nedenle **1** döndürmek oyun modunun görmesini engeller.
 
 ## Örnek
 
@@ -47,7 +47,7 @@ public OnRconCommand(cmd[])
 - Bir oyuncu bir komut yazdığında "/rcon" "cmd" ye dahil edilmez.
 - Burada "print" işlevini kullanırsanız, hem oyun içinde komutu yazan oyuncuya hem de günlüğe bir mesaj gönderir.
 - Bu fonksiyon, oyuncu RCON yöneticisi olarak oturum açmadığında çağrılmaz.
-- Oyuncu RCON yöneticisi olarak oturum açmadığında ve /rcon login kullandığında, bu fonksiyon çağrılmaz ve onun yerine OnRconLoginAttempt çağrılır. Ancak, oyuncu RCON yöneticisi olarak oturum açtığında, bu komutun kullanılması bu fonksiyonu çağıracaktır.
+- Oyuncu RCON yöneticisi olarak oturum açmadığında ve `/rcon login` kullandığında, bu fonksiyon çağrılmaz ve onun yerine OnRconLoginAttempt çağrılır. Ancak, oyuncu RCON yöneticisi olarak oturum açtığında, bu komutun kullanılması bu fonksiyonu çağıracaktır.
 
 :::
 

@@ -15,13 +15,13 @@ Tendang player dari server. Player harus keluar dari game dan re-connect jika me
 
 ## Returns
 
-Fungsi ini selalu me-return 1, walaupun fungsi gagal di eksekusi (tidak ada player tersebut didalam server).
+Fungsi ini selalu me-return **1**, walaupun fungsi gagal di eksekusi (tidak ada player tersebut didalam server).
 
 ## Catatan
 
 :::warning
 
-Tindakan apa pun yang diambil langsung sebelum Kick() (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player. Timer harus digunakan untuk menunda kick.
+Tindakan apa pun yang diambil langsung sebelum Kick (seperti mengirim pesan dengan SendClientMessage) tidak akan sampai ke player. Timer harus digunakan untuk menunda kick.
 
 :::
 

@@ -110,7 +110,7 @@ Esta função grava no arquivo em UTF-8, que não suporta alguns símbolos de id
 
 :::warning
 
-Usar um identificador inválido irá travar seu servidor! Obtenha um identificador válido usando [fopen](fopen) ou [ftemp](ftemp).
+Usar um **identificador inválido** irá travar seu servidor! Obtenha um **identificador válido** usando [fopen](fopen) ou [ftemp](ftemp).
 
 :::
 

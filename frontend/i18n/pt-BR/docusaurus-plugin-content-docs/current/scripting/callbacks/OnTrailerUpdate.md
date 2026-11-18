@@ -16,9 +16,9 @@ Essa callback é executada quando o jogador envia um update para um trailer.
 
 ## Retornos
 
-0 - Cancela o update ser transmitido para outros jogadores. O update continua a ser processado pelo jogador que enviou.
+**0** - Cancela o update ser transmitido para outros jogadores. O update continua a ser processado pelo jogador que enviou.
 
-1 - Processa o update do trailer normalmente e sincroniza com todos os jogadores.
+**1** - Processa o update do trailer normalmente e sincroniza com todos os jogadores.
 
 Sempre executada primeiro em filterscripts.
 

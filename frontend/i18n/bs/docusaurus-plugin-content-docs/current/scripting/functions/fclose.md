@@ -15,9 +15,9 @@ Zatvara fajl/datoteku. Fajlove/Datoteke treba uvijek zatvoriti kada ih skripta v
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Datoteka/fajl se ne može zatvoriti. Možda je već zatvorena.
+**0**: Funkcija neuspješno izvršena. Datoteka/fajl se ne može zatvoriti. Možda je već zatvorena.
 
 ## Primjeri
 
@@ -47,7 +47,7 @@ else
 
 :::warning
 
-Korištenje nevaljanog upravitelja srušit će vaš server! Nabavite važeći upravitelj pomoću fopen ili ftemp.
+Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću fopen ili ftemp.
 
 :::
 

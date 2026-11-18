@@ -150,7 +150,7 @@ public OnGameModeExit()
 
 :::warning
 
-Usar um handle inválido diferente de zero irá crashar o seu servidor! Obtenha um handle de conexão de banco de dados válido usando [db_query](db_query).
+Usar um **handle inválido** diferente de zero irá crashar o seu servidor! Obtenha um handle de conexão de banco de dados válido usando [db_query](db_query).
 
 :::
 

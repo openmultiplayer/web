@@ -18,7 +18,7 @@ Returns the name of a field at a particular index.
 
 ## ส่งคืน
 
-Returns 1, if the function was successful, otherwise 0 if DBResult:dbresult is a NULL reference or the column index not available.
+Returns **1**, if the function was successful, otherwise **0** if **DBResult:dbresult** is a _NULL_ reference or the column index not available.
 
 ## ตัวอย่าง
 
@@ -58,7 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Using an invalid handle will crash your server! Get a valid handle by using db_query. But it's protected against NULL references.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using db_query. But it's protected against _NULL_ references.
 
 :::
 

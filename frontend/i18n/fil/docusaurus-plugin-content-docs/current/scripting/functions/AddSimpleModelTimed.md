@@ -9,23 +9,23 @@ tags: []
 
 ## Description
 
-Nagdaragdag ng bagong custom na simpleng object model para sa pag-download. Ang mga file ng modelo ay maiimbak sa Documents\GTA San Andreas User Files\SAMP\cache ng player sa ilalim ng Server IP at Port folder sa isang CRC-form file name.
+Nagdaragdag ng bagong custom na simpleng object model para sa pag-download. Ang mga file ng modelo ay maiimbak sa `Documents\GTA San Andreas User Files\SAMP\cache` ng player sa ilalim ng Server IP at Port folder sa isang CRC-form file name.
 
 | Name         | Description                                                                                                                                            |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | virtualworld | Ang virtual world ID para gawing available ang modelo sa. Gamitin ang -1 para sa lahat ng mundo.                                                       |
 | baseid       | Ang batayang object model ID na gagamitin (orihinal na object na gagamitin kapag nabigo ang pag-download).                                             |
 | newid        | Ang bagong object model ID ay mula -1000 hanggang -30000 (29000 slots) na gagamitin sa ibang pagkakataon kasama ang CreateObject o CreatePlayerObject. |
-| dffname      | Pangalan ng .dff model collision file na matatagpuan sa folder ng server ng mga modelo bilang default (setting ng artpath)                             |
-| txdname      | Pangalan ng .txd model texture file na matatagpuan sa folder ng server ng mga modelo bilang default (setting ng artpath).                              |
+| dffname      | Pangalan ng **.dff** model collision file na matatagpuan sa folder ng server ng mga modelo bilang default (setting ng artpath).                        |
+| txdname      | Pangalan ng **.txd** model texture file na matatagpuan sa folder ng server ng mga modelo bilang default (setting ng artpath).                          |
 | timeon       | Ang oras ng laro sa mundo (oras) ang bagay na ito ay lilitaw                                                                                           |
 | timeoff      | Ang oras ng laro sa mundo (oras) ang bagay na ito ay mawawala                                                                                          |
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa.
+**0**: Nabigo ang function na isagawa.
 
 ## Examples
 
@@ -41,8 +41,8 @@ public OnGameModeInit()
 
 :::note
 
-- ang useartwork ay dapat munang paganahin sa mga setting ng server upang ito ay gumana
-- Kapag ang virtualworld ay nakatakda, ang mga modelo ay mada-download kapag ang player ay pumasok sa partikular na mundo
+- Ang **useartwork** ay dapat munang paganahin sa mga setting ng server upang ito ay gumana
+- Kapag ang `virtualworld` ay nakatakda, ang mga modelo ay mada-download kapag ang player ay pumasok sa partikular na mundo
 
 :::
 

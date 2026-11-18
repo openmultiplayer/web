@@ -18,11 +18,11 @@ Konektuj NPC-a na server.
 | Ime      | Deskripcija                                                                       |
 | -------- | --------------------------------------------------------------------------------- |
 | Ime[]    | Ime sa kojim će se NPC konektovati. Mora poštovati ista pravila kao i ime igrača. |
-| script[] | Naziv NPC skripte koji se nalazi u mapi npcmodes (bez nastavka .amx).             |
+| script[] | Naziv NPC skripte koji se nalazi u mapi **npcmodes** (bez nastavka .amx).         |
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1.
+Ova funkcija uvijek returna (vraća) **1**.
 
 ## Primjeri
 

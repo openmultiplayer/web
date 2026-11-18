@@ -17,7 +17,7 @@ texture یک player-object رو با texture از مدل دیگه‌ای توی 
 | modelid                | آیدی مدلی که texture جایگزین روش قرار داره. از 0 برای alpha استفاده کن. از -1 برای تغییر رنگ material بدون تغییر texture موجود استفاده کن |
 | const textureLibrary[] | اسم فایل txd که شامل texture جایگزین هست (از "none" استفاده کن اگه نیاز نیست)                                                             |
 | const textureName[]    | اسم texture ای که قراره به عنوان جایگزین استفاده بشه (از "none" استفاده کن اگه نیاز نیست)                                                 |
-| materialColour         | رنگ object که قراره تنظیم بشه، به عنوان عدد صحیح یا hex با فرمت ARGB. استفاده از 0 رنگ material موجود رو نگه می‌داره                      |
+| materialColour         | رنگ object که قراره تنظیم بشه، به عنوان عدد صحیح یا hex با **فرمت ARGB**. استفاده از **0** رنگ material موجود رو نگه می‌داره              |
 
 ## مقادیر بازگشتی
 
@@ -54,7 +54,7 @@ Vertex lightning مربوط به object ناپدید می‌شه اگه رنگ m
 
 :::warning
 
-حتماً باید از فرمت رنگ ARGB استفاده کنی، نه RGBA مثل چیزی که توی پیام‌های client استفاده می‌شه.
+حتماً باید از فرمت رنگ **ARGB** استفاده کنی، نه RGBA مثل چیزی که توی پیام‌های client استفاده می‌شه.
 
 :::
 
@@ -64,6 +64,6 @@ Vertex lightning مربوط به object ناپدید می‌شه اگه رنگ m
 
 ## ویرایش کننده‌های پیشرفته نقشه
 
-- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus
 - [Ultimate Creator](https://github.com/NexiusTailer/Ultimate-Creator) توسط Nexius
 - [Fusez's Map Editor](https://github.com/fusez/Map-Editor-V3) توسط RedFusion
+- [Texture Studio](https://github.com/Pottus/Texture-Studio) توسط Pottus

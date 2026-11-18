@@ -16,9 +16,9 @@ Nagdaragdag ng 'bahagi' (madalas na tinutukoy bilang 'mod' (pagbabago)) sa isang
 
 ## Returns
 
-0 - Hindi naidagdag ang component dahil wala ang sasakyan.
+**0** - Hindi naidagdag ang component dahil wala ang sasakyan.
 
-1 - Ang bahagi ay matagumpay na naidagdag sa sasakyan.
+**1** - Ang bahagi ay matagumpay na naidagdag sa sasakyan.
 
 ## Examples
 

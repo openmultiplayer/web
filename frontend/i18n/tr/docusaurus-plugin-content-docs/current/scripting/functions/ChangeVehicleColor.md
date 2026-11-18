@@ -17,9 +17,9 @@ Aracın birincil ve ikincil rengini değiştirme.
 
 ## Çalşınca Vereceği Sonuçlar
 
-1: Fonksiyon başarılı, aracın rengi değiştirildi.
+**1**: Fonksiyon başarılı, aracın rengi değiştirildi.
 
-0: Fonksiyon başarısız, geçersiz araç ID'si.
+**0**: Fonksiyon başarısız, geçersiz araç ID'si.
 
 ## Örnekler
 

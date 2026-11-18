@@ -9,9 +9,9 @@ tags: []
 
 Define se o uso de armas no interior é permitido ou não.
 
-| Name  | Descrição                                                                                             |
-| ----- | ----------------------------------------------------------------------------------------------------- |
-| allow | 1 para habilitar armas em interiores (habilitado por padrão), 0 para desabilitar armas em interiores. |
+| Name  | Descrição                                                                                                     |
+| ----- | ------------------------------------------------------------------------------------------------------------- |
+| allow | **1** para habilitar armas em interiores (habilitado por padrão), **0** para desabilitar armas em interiores. |
 
 ## Retorno
 

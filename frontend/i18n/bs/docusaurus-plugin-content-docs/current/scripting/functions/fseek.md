@@ -11,7 +11,7 @@ Promijenite trenutni položaj u datoteci. Kroz datoteku možete tražiti unaprij
 
 | Ime          | Deskripcija                                                                                                        |
 | ------------ | ------------------------------------------------------------------------------------------------------------------ |
-| handle       | Upravitelj datoteke za upotrebu, otvorila je fopen ()                                                              |
+| handle       | Upravitelj datoteke za upotrebu, otvorila je fopen.                                                                |
 | position     | Nova pozicija u datoteci, u odnosu na parametar odakle (vidi dolje).                                               |
 | whence       | Početni položaj na koji se odnosi položaj parametra.                                                               |
 | seek_start   | Postavite položaj datoteke u odnosu na početak datoteke (parametar položaja mora biti pozitivan).                  |
@@ -56,7 +56,7 @@ else
 
 :::warning
 
-Korištenje nevaljanog upravitelja srušit će vaš server! Nabavite važeći upravitelj pomoću fopen ili ftemp.
+Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću fopen ili ftemp.
 
 :::
 

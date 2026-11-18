@@ -15,9 +15,9 @@ Check if a player is an actual player or an NPC.
 
 ## ส่งคืน
 
-1: The player is an NPC.
+**1**: The player is an NPC.
 
-0: The player is not an NPC.
+**0**: The player is not an NPC.
 
 ## ตัวอย่าง
 

@@ -17,9 +17,9 @@ Postavi streljivo igračevog oružja.
 
 ## Returns
 
-1: Funkcija uspješno izvršena. Uspješno je također vraćeno i kada je navedeni slot oružja nevažeći (nije 0-12).
+**1**: Funkcija uspješno izvršena. Uspješno je također vraćeno i kada je navedeni slot oružja nevažeći (nije 0-12).
 
-0: Funkcija neuspješno izvršena. Igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
 ## Primjeri
 

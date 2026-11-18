@@ -9,9 +9,9 @@ tags: []
 
 Toggle the drawing of nametags, health bars and armor bars above players.
 
-| Name    | Description                                     |
-| ------- | ----------------------------------------------- |
-| enabled | 0 to disable, 1 to enable (enabled by default). |
+| Name    | Description                                             |
+| ------- | ------------------------------------------------------- |
+| enabled | **0** to disable, **1** to enable (enabled by default). |
 
 ## ส่งคืน
 

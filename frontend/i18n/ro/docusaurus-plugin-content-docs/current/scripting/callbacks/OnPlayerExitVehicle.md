@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## Descriere
 
-Acest callback este apelat atunci când un jucător începe să părăsească un vehicul.
+Acest callback este apelat atunci când un jucător **începe** să părăsească un vehicul.
 
 | Nume      | Descriere                                     |
 | --------- | --------------------------------------------- |

@@ -15,9 +15,9 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 Omogućuje da se sudaranje kamere s novostvorenim objektima onemogući prema zadanim postavkama.
 
-| Ime     | Deskripcija                                                                                                                 |
-| ------- | --------------------------------------------------------------------------------------------------------------------------- |
-| disable | 1 za onemogućavanje sudara kamere za novostvorene objekte i 0 za njihovo omogućavanje (omogućeno prema zadanim postavkama). |
+| Ime     | Deskripcija                                                                                                                           |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| disable | **1** za onemogućavanje sudara kamere za _novostvorene objekte_ i **0** za njihovo omogućavanje (omogućeno prema zadanim postavkama). |
 
 ## Returns
 

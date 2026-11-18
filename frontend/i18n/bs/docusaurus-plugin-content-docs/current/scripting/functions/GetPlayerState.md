@@ -15,7 +15,7 @@ Dobij trenutno stanje igrača.
 
 ## Returns
 
-Trenutno stanje igrača kao cijeli broj (pogledaj: [Stanja Igrača](../resources/playerstates)).
+Trenutno **stanje** igrača kao cijeli broj (pogledaj: [Stanja Igrača](../resources/playerstates)).
 
 ## Primjeri
 

@@ -7,7 +7,7 @@ tags: []
 
 ## Descrição
 
-Bane um jogador que está atualmente online no servidor. Ele não poderá mais entrar no servidor. A proibição será baseada em IP e será salva no arquivo **bans.json** no diretório raiz do servidor. O BanEx pode ser usado para justificar o banimento. Os banimentos de IP podem ser adicionados ou removidos usando os comandos RCON banip e unbanip (SendRconCommand).
+Bane um jogador que está atualmente online no servidor. Ele não poderá mais entrar no servidor. A proibição será baseada em IP e será salva no arquivo **bans.json** no diretório raiz do servidor. O BanEx pode ser usado para justificar o banimento. Os banimentos de IP podem ser adicionados ou removidos usando os comandos RCON `banip` e `unbanip` (SendRconCommand).
 
 | Nome     | Descrição                     |
 | -------- | ----------------------------- |
@@ -63,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Qualquer ação realizada diretamente antes do Ban() (como enviar uma mensagem com SendClientMessage) não chegará ao jogador. Um cronômetro (timer) deve ser usado para atrasar o banimento.
+Qualquer ação realizada diretamente antes do Ban (como enviar uma mensagem com SendClientMessage) não chegará ao jogador. Um cronômetro (timer) deve ser usado para atrasar o banimento.
 
 :::
 
