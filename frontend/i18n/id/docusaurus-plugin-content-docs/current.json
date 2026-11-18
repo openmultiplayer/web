@@ -28,5 +28,9 @@
   },
   "sidebar.docsSidebar.category.Meta": {
     "message": "Meta"
+  },
+  "version.label": {
+    "message": "Berikutnya",
+    "description": "The label for version current"
   }
 }

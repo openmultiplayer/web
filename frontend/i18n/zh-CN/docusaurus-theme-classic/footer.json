@@ -1,7 +1,7 @@
 {
-  "link.title.Documentations": {
+  "link.title.Documentation": {
     "message": "文档",
-    "description": "页脚中标题为Documentations的链接列标题"
+    "description": "The title of the footer links column with title=Documentation in the footer"
   },
   "link.title.Community": {
     "message": "社区",
@@ -62,5 +62,21 @@
   "link.item.label.SA-MP": {
     "message": "SA-MP",
     "description": "标签为SA-MP的页脚链接，指向https://sa-mp.mp/"
+  },
+  "link.item.label.Download Launcher": {
+    "message": "下载启动器",
+    "description": "The label of footer link with label=Download Launcher linking to /downloads/launcher"
+  },
+  "link.item.label.Download Server": {
+    "message": "下载服务器",
+    "description": "The label of footer link with label=Download Server linking to /downloads/server"
+  },
+  "copyright": {
+    "message": "版权所有 © 2026 open.mp。基于 Docusaurus 构建。",
+    "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "open.mp",
+    "description": "The alt text of footer logo"
   }
 }

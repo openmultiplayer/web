@@ -1,7 +1,7 @@
 {
-  "link.title.Documentations": {
+  "link.title.Documentation": {
     "message": "Dokümantasyon",
-    "description": "The title of the footer links column with title=Documentations in the footer"
+    "description": "The title of the footer links column with title=Documentation in the footer"
   },
   "link.title.Community": {
     "message": "Topluluk",
@@ -62,5 +62,21 @@
   "link.item.label.SA-MP": {
     "message": "SA-MP",
     "description": "The label of footer link with label=SA-MP linking to https://sa-mp.mp/"
+  },
+  "link.item.label.Download Launcher": {
+    "message": "Başlatıcıyı İndir",
+    "description": "The label of footer link with label=Download Launcher linking to /downloads/launcher"
+  },
+  "link.item.label.Download Server": {
+    "message": "Sunucuyu İndir",
+    "description": "The label of footer link with label=Download Server linking to /downloads/server"
+  },
+  "copyright": {
+    "message": "Telif Hakkı © 2026 open.mp. Docusaurus ile yapıldı.",
+    "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "open.mp",
+    "description": "The alt text of footer logo"
   }
 }

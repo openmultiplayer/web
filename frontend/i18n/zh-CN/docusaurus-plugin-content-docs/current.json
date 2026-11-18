@@ -28,5 +28,9 @@
   },
   "sidebar.docsSidebar.category.Meta": {
     "message": "元数据"
+  },
+  "version.label": {
+    "message": "下一版本",
+    "description": "The label for version current"
   }
 }

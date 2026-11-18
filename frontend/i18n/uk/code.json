@@ -355,6 +355,872 @@
   "navbar.item.Donate": {
     "message": "Донат"
   },
+  "serverInfo.copied": {
+    "message": "Скопійовано",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Копіювати",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Ігровий режим",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Закрити сповіщення",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Анімації",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Інтерактивний переглядач анімацій open.mp (SA-MP) з відеопрев’ю",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Відео недоступне",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Для гравців",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Для акторів",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Мультиплеєрний мод для Grand Theft Auto: San Andreas, повністю зворотно сумісний із San Andreas Multiplayer",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Закрити примітку про партнерство",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Сервери-партнери",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Список серверів San Andreas, що працюють на open.mp або SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Скопійовано",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "Макрос UID скопійовано в буфер обміну.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "Генератор UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Згенеруйте UID для унікальних ідентифікаторів IComponent або IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Підключитися",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Ваш сервер",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Сервер",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Адреса",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Гравці",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Нікнейм",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "Версія SA-MP",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Обране",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Інтернет",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Партнери",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Нещодавні",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Нікнейм...",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Пошук за назвою або режимом сервера",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Назва",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Пінг",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Режим",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Підключитися",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Додати в обране",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Копіювати інформацію про сервер",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Правило",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Значення",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Фільтри:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Лише сервери open.mp",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Непорожні сервери",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Сервери без пароля",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Мова:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Додано в обране!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "Лаунчер open.mp зі списком прикладів серверів",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Гравець",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Рахунок",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "КОПІЮВАТИ",
+    "description": "Launcher preview: copy address"
+  },
+  "servers.add.successMessage": {
+    "message": "{serverName} додано до списку очікування. Якщо сервер не з’явиться протягом 48 годин, зв’яжіться з нами в Discord!",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Сервер надіслано!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Статус {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Не вдалося надіслати!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "Під час надсилання сервера сталася помилка",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Помилка",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "Сторінки списку серверів",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Попередня сторінка",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Наступна сторінка",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "За назвою",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "За режимом",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "За мовою",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Усі мови",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "Закрити вікно додавання сервера",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "npcCallbacksNote.message": {
+    "message": "Цей колбек також може викликатися NPC.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "функція",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "колбек",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Цей елемент ({name}) додано у версії {version}, і в попередніх версіях він не працюватиме!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "carousel.previous": {
+    "message": "Попередній",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Наступний",
+    "description": "Carousel next button"
+  },
+  "downloads.latestBadge": {
+    "message": "НАЙНОВІША",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Випущено {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Основне",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Переглянути повний список змін",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Переглянути випуск на GitHub",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Переглянути випуск на GitHub",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* Версія DynSSL потребує встановленої бібліотеки libssl у вашому дистрибутиві Linux.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Сховати старіші випуски",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "Показати старіші випуски ({count})",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Кожен випуск має відкритий вихідний код. Зберіть його самостійно або завантажте безпосередньо з GitHub.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Завантажити з GitHub",
+    "description": "Button label to open GitHub releases page"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "Лаунчер open.mp",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Завантажити випуски лаунчера open.mp",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Грайте в GTA San Andreas по мережі на серверах open.mp і SA-MP.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "Сервер open.mp",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Завантажити випуски сервера open.mp",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Запустіть власний мультиплеєрний сервер GTA San Andreas.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Сервери",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Список серверів San Andreas, що працюють на open.mp та SA-MP",
+    "description": "Servers page description"
+  },
+  "notFound.title": {
+    "message": "Сторінку не знайдено",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Знімок екрана місії з потягом у GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Головна",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Документація",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Сервери",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Навігація по сторінці посту блогу",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Наступний пост",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Попередній пост",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Переглянути всі теги",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Автоматичний режим",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "Світлий режим",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "Темний режим",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Перемикання між темним та світлим режимом (зараз використовується {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Навігаційний ланцюжок поточної сторінки",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "сторінка документації",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Попередня сторінка",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Наступна сторінка",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Одна сторінка|{count} сторінки|{count} сторінок",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} з тегом \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Версія: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Це документація для майбутньої версії {siteTitle} {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Це документація {siteTitle} для версії {versionLabel}, яка вже не підтримується.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Актуальна документація знаходиться на сторінці {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "остання версія",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Відредагувати цю сторінку",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Пряме посилання на {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " від {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Останнє оновлення{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Версії",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Теги:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.admonition.warning": {
+    "message": "попередження",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Закрити",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Навігація за останніми постами у блозі",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Розгорнути категорію в сайдбарі '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Згорнути категорію в сайдбарі '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(відкривається в новій вкладці)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Головна",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Мови",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Зміст цієї сторінки",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Читати далі",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Докладніше про {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Копіювати",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Скопійовано",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Копіювати в буфер обміну",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Перемикання обведення слів",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Головна сторінка",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Згорнути сайдбар",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Згорнути сайдбар",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Сайдбар документації",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Закрити сайдбар",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Перейти до головного меню",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Перемкнути сайдбар",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Розгорнути випадаючий список",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Згорнути випадаючий список",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Розгорнути сайдбар",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Розгорнути сайдбар",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Переглянути всі результати ({count})"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "{count} документ|{count} документи|{count} документів",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Результати пошуку за запитом \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Пошук по сайту",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Введіть ваш пошук тут",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Пошук",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Працює на Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Не знайдено результатів",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Завантаження нових результатів пошуку...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchBar.label": {
+    "message": "Пошук",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Очистити запит",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Скасувати",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Пошук у документації",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Поставте інше запитання...",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "Відповідаю...",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "пошук",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "ввести",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Пошук",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Назад до пошуку за ключовими словами",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Назад до пошуку за ключовими словами",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Останні",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Немає останніх пошуків",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Зберегти цей пошук",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Видалити цей пошук з історії",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Обране",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Видалити цей пошук з обраного",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Нещодавні розмови",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Видалити цю розмову з історії",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Не вдалося отримати результати",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Перевірте підключення до мережі.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "Запитати ШІ: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "Відповіді генеруються ШІ, який може помилятися. Перевіряйте їх.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Пов’язані джерела",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "Думаю...",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Копіювати",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Скопійовано!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Копіювати",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Подобається",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Не подобається",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Дякуємо за відгук!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Шукаю...",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Шукаю ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "Знайдено за запитом",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "обрати",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Надіслати запитання",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Клавіша Enter",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "до навігації",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Стрілка вгору",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Стрілка вниз",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "закрити",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Клавіша Escape",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Пошук за допомогою",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Назад до пошуку",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "Немає результатів для",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Спробуйте пошукати",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Чи вважаєте ви, що цей запит має повернути результати?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Дайте нам знати.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Пошук документів",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} запис|{count} записи|{count} записів",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} з тегом \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Автори",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Переглянути всіх авторів",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Цей автор ще не написав жодної публікації.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Непублічна сторінка",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Ця сторінка є непублічною. Пошукові системи її не індексуватимуть, і доступ до неї матимуть лише користувачі з прямим посиланням.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Чернетка",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Це чернетка. Ця сторінка видима лише в режимі розробки й буде виключена з фінальної збірки.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} елемент|{count} елементи|{count} елементів",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Спробуйте ще раз",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Перейти до основного вмісту",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
   "theme.docs.sidebar.filterPlaceholder": {
     "message": "Фільтрувати документацію",
     "description": "Placeholder for the docs sidebar filter input"
