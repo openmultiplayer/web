@@ -9,9 +9,9 @@ tags: ["file management"]
 
 Returns the length of a file.
 
-| Name        | Description                                |
-| ----------- | ------------------------------------------ |
-| File:handle | The file handle returned by fopen or ftemp |
+| Name        | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| File:handle | The file handle returned by [fopen](fopen) or [ftemp](ftemp) |
 
 ## Returns
 

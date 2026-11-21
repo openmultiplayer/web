@@ -9,10 +9,10 @@ tags: ["player"]
 
 Chamado quando um jogador muda de classe na seleção de classe (e quando a seleção de classe aparece pela primeira vez).
 
-| Nome     | Descrição                                                                   |
-| -------- | --------------------------------------------------------------------------- |
-| playerid | O ID do jogador que mudou de classe                                         |
-| classid  | O ID da classe atual que está sendo vista (retornardo pelo AddPlayerClass). |
+| Nome     | Descrição                                                                                                  |
+| -------- | ---------------------------------------------------------------------------------------------------------- |
+| playerid | O ID do jogador que mudou de classe                                                                        |
+| classid  | O ID da classe atual que está sendo vista (retornardo pelo [AddPlayerClass](../functions/AddPlayerClass)). |
 
 ## Retorno
 

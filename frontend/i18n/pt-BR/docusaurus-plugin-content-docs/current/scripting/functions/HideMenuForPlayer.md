@@ -10,10 +10,10 @@ tags: ["player", "menu"]
 
 Oculta um menu para um jogador.
 
-| Nome | Descrição |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Menu:menuid | O ID do menu a ser ocultado. Retornado por CreateMenu e passado para [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow). |
-| playerid | O ID do jogador para o qual o menu ficará oculto.                                                                            |
+| Nome        | Descrição                                                                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Menu:menuid | O ID do menu a ser ocultado. Retornado por [CreateMenu](CreateMenu) e passado para [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow). |
+| playerid    | O ID do jogador para o qual o menu ficará oculto.                                                                                                   |
 
 ## Retornos
 

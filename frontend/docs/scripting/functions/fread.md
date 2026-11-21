@@ -9,12 +9,12 @@ tags: ["file management"]
 
 Read a single line from a file.
 
-| Name                   | Description                                                    |
-| ---------------------- | -------------------------------------------------------------- |
-| File:handle            | The handle of the file to read from (returned by fopen).       |
-| string[]               | A string array to store the read text in, passed by reference. |
-| size = sizeof (string) | The number of bytes to read.                                   |
-| bool:pack              | Should the string be packed? (default: false).                 |
+| Name                   | Description                                                       |
+| ---------------------- | ----------------------------------------------------------------- |
+| File:handle            | The handle of the file to read from (returned by [fopen](fopen)). |
+| string[]               | A string array to store the read text in, passed by reference.    |
+| size = sizeof (string) | The number of bytes to read.                                      |
+| bool:pack              | Should the string be packed? (default: false).                    |
 
 ## Returns
 

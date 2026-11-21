@@ -15,10 +15,10 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 Postavi virtualni svijet za aktora. Samo igrači u istom virtualnom svijetu će ga vidjeti.
 
-| Ime     | Deskripcija                                                                 |
-| ------- | --------------------------------------------------------------------------- |
-| actorid | ID aktora (returnovan/vraćen od CreateActor) za postaviti virtualni svijet. |
-| vworld  | Virtualni svijet za ubaciti aktora.                                         |
+| Ime     | Deskripcija                                                                                |
+| ------- | ------------------------------------------------------------------------------------------ |
+| actorid | ID aktora (returnovan/vraćen od [CreateActor](CreateActor)) za postaviti virtualni svijet. |
+| vworld  | Virtualni svijet za ubaciti aktora.                                                        |
 
 ## Returns
 

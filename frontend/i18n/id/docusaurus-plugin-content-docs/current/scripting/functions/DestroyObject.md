@@ -9,9 +9,9 @@ tags: []
 
 Menghancurkan (menghapus) Object yang dibuat menggunakan [CreateObject](CreateObject).
 
-| Name     | Description                                                      |
-| -------- | ---------------------------------------------------------------- |
-| objectid | ID Object yang akan dihancurkan. Dikembalikan oleh CreateObject. |
+| Name     | Description                                                                      |
+| -------- | -------------------------------------------------------------------------------- |
+| objectid | ID Object yang akan dihancurkan. Dikembalikan oleh [CreateObject](CreateObject). |
 
 ## Returns
 

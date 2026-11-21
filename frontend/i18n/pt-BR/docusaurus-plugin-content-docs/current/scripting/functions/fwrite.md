@@ -10,10 +10,10 @@ tags: ["file management"]
 
 Escreva texto em um arquivo.
 
-| Nome | Descrição |
-| -------------- | ------------------------------------------------------- |
-| File:handle | O identificador do arquivo no qual gravar (retornado por fopen). |
-| const string[] | A sequência de texto a ser gravada no arquivo.             |
+| Nome           | Descrição                                                                 |
+| -------------- | ------------------------------------------------------------------------- |
+| File:handle    | O identificador do arquivo no qual gravar (retornado por [fopen](fopen)). |
+| const string[] | A sequência de texto a ser gravada no arquivo.                            |
 
 ## Retornos
 

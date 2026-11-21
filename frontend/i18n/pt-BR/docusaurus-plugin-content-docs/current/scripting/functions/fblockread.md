@@ -10,11 +10,11 @@ tags: ["file management"]
 
 Esta função permite ler dados de um arquivo, sem codificação e terminadores de linha
 
-| Nome                   | Descrição                                               |
-| ---------------------- | ------------------------------------------------------- |
-| File:handle            | Identificador de arquivo a ser usado, aberto por fopen. |
-| buffer                 | O buffer para salvar os dados lidos.                    |
-| size = sizeof (buffer) | O número de células a serem lidas.                      |
+| Nome                   | Descrição                                                        |
+| ---------------------- | ---------------------------------------------------------------- |
+| File:handle            | Identificador de arquivo a ser usado, aberto por [fopen](fopen). |
+| buffer                 | O buffer para salvar os dados lidos.                             |
+| size = sizeof (buffer) | O número de células a serem lidas.                               |
 
 ## Retornos
 

@@ -12,12 +12,12 @@ tags: ["actor"]
 
 Obtenha a posição de um ator.
 
-| Nome | Descrição |
-| -------- | --------------------------------------------------------------------------------------- |
-| actorid | O ID do ator para obter a posição. Retornado por CreateActor.                    |
-| &Float:x | Uma variável flutuante, passada por referência, na qual armazena a coordenada X do ator. |
+| Nome     | Descrição                                                                                 |
+| -------- | ----------------------------------------------------------------------------------------- |
+| actorid  | O ID do ator para obter a posição. Retornado por [CreateActor](CreateActor).              |
+| &Float:x | Uma variável flutuante, passada por referência, na qual armazena a coordenada X do ator.  |
 | &Float:y | Uma variável flutuante, passada por referência, na qual armazenar a coordenada Y do ator. |
-| &Float:z | Uma variável flutuante, passada por referência, na qual armazena a coordenada Z do ator. |
+| &Float:z | Uma variável flutuante, passada por referência, na qual armazena a coordenada Z do ator.  |
 
 ## Retornos
 

@@ -9,10 +9,10 @@ tags: ["player"]
 
 Pozvano kada igrač promijeni klasu na odabiru klase (i kada se odabir klase prvi put pojavi).
 
-| Ime      | Deskripcija                                                          |
-| -------- | -------------------------------------------------------------------- |
-| playerid | ID igrača koji je promijenio klasu.                                  |
-| classid  | ID trenutne klase koja se pregledava (return-uje je AddPlayerClass). |
+| Ime      | Deskripcija                                                                                         |
+| -------- | --------------------------------------------------------------------------------------------------- |
+| playerid | ID igrača koji je promijenio klasu.                                                                 |
+| classid  | ID trenutne klase koja se pregledava (return-uje je [AddPlayerClass](../functions/AddPlayerClass)). |
 
 ## Returns
 

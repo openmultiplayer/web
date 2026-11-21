@@ -10,11 +10,11 @@ tags: ["textdraw"]
 
 Se um modelo de veículo for usado em um textdraw de visualização 3D, isso definirá os dois valores de cores para esse veículo.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------------------------------ |
+| Nome        | Descrição                                                                       |
+| ----------- | ------------------------------------------------------------------------------- |
 | Text:textid | O ID do textdraw definido para exibir uma visualização do modelo de veículo 3D. |
-| colour1 | A cor primária ID para definir o veículo.                        |
-| colour2 | A cor secundária ID para definir o veículo.                      |
+| colour1     | A [cor primária ID](../resources/vehiclecolorid) para definir o veículo.        |
+| colour2     | A [cor secundária ID](../resources/vehiclecolorid) para definir o veículo.      |
 
 ## Retornos
 

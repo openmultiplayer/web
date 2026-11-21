@@ -11,7 +11,7 @@ Membuat Object pada koordinat tertentu di dalam game.
 
 | Name               | Description                                                                                                   |
 | ------------------ | ------------------------------------------------------------------------------------------------------------- |
-| modelid            | Model Object yang ingin di buat.                                                                              |
+| modelid            | [Model Object](https://dev.prineside.com/en/gtasa_samp_model_id/) yang ingin di buat.                         |
 | Float:X            | Cordinat X untuk membuat suatu Object.                                                                        |
 | Float:Y            | Cordinat Y untuk membuat suatu Object.                                                                        |
 | Float:Z            | Cordinat Z untuk membuat suatu Object.                                                                        |

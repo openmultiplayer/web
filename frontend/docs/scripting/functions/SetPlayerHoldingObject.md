@@ -12,7 +12,7 @@ Attaches an object to a bone.
 | Name     | Description                                                       |
 | -------- | ----------------------------------------------------------------- |
 | playerid | ID of the player you want to attach the object to.                |
-| modelid  | The model you want to use.                                        |
+| modelid  | The [model](../resources/samp_objects) you want to use.           |
 | bone     | The [bone](../resources/boneid) you want to attach the object to. |
 | fOffsetX | (optional) X axis offset for the object position.                 |
 | fOffsetY | (optional) Y axis offset for the object position.                 |

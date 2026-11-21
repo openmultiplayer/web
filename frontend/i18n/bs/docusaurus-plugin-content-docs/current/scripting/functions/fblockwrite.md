@@ -9,11 +9,11 @@ tags: []
 
 Zapišite podatke u datoteku u binarnom formatu, zanemarujući linijske kočnice i kodiranje.
 
-| Ime                  | Deskripcija                                         |
-| -------------------- | --------------------------------------------------- |
-| handle               | Upravitelj datoteke za upotrebu, otvorila je fopen. |
-| buffer               | Upremnik za spremanje pročitanih podataka.          |
-| size = sizeof buffer | Broj ćelija za čitanje.                             |
+| Ime                  | Deskripcija                                                  |
+| -------------------- | ------------------------------------------------------------ |
+| handle               | Upravitelj datoteke za upotrebu, otvorila je [fopen](fopen). |
+| buffer               | Upremnik za spremanje pročitanih podataka.                   |
+| size = sizeof buffer | Broj ćelija za čitanje.                                      |
 
 ## Returns
 

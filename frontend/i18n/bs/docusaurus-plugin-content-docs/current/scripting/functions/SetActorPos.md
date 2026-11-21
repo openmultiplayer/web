@@ -15,12 +15,12 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 Postavi poziciju aktora.
 
-| Ime     | Deskripcija                                                        |
-| ------- | ------------------------------------------------------------------ |
-| actorid | ID aktora za postaviti poziciju. Returnovan/vraćen od CreateActor. |
-| X       | X kordinata za pozicionirati aktora.                               |
-| Y       | Y kordinata za pozicionirati aktora.                               |
-| Z       | Z kordinata za pozicionirati aktora.                               |
+| Ime     | Deskripcija                                                                       |
+| ------- | --------------------------------------------------------------------------------- |
+| actorid | ID aktora za postaviti poziciju. Returnovan/vraćen od [CreateActor](CreateActor). |
+| X       | X kordinata za pozicionirati aktora.                                              |
+| Y       | Y kordinata za pozicionirati aktora.                                              |
+| Z       | Z kordinata za pozicionirati aktora.                                              |
 
 ## Returns
 

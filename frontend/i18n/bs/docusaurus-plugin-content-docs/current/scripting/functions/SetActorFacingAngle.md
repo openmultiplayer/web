@@ -15,10 +15,10 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 Postavi smjer gledanja aktora.
 
-| Ime     | Deskripcija                                                              |
-| ------- | ------------------------------------------------------------------------ |
-| actorid | ID aktora za postaviti smjer gledanja. Returnovan/vraćen od CreateActor. |
-| ang     | Smjer gledanja za postaviti.                                             |
+| Ime     | Deskripcija                                                                             |
+| ------- | --------------------------------------------------------------------------------------- |
+| actorid | ID aktora za postaviti smjer gledanja. Returnovan/vraćen od [CreateActor](CreateActor). |
+| ang     | Smjer gledanja za postaviti.                                                            |
 
 ## Returns
 

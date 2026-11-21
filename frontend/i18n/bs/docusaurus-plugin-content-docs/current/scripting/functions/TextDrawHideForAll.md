@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Sakriva textdraw za sve igrače.
 
-| Ime  | Deskripcija                                                    |
-| ---- | -------------------------------------------------------------- |
-| text | ID textdrawa za sakriti (returnovan/vraćen od TextDrawCreate). |
+| Ime  | Deskripcija                                                                      |
+| ---- | -------------------------------------------------------------------------------- |
+| text | ID textdrawa za sakriti (returnovan/vraćen od [TextDrawCreate](TextDrawCreate)). |
 
 ## Returns
 

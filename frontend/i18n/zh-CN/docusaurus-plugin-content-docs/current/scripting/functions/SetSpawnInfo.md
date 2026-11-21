@@ -18,11 +18,11 @@ tags: ["玩家"]
 | Float:spawnY   | 生成点的 Y 坐标                           |
 | Float:spawnZ   | 生成点的 Z 坐标                           |
 | Float:angle    | 生成后的面朝方向（角度制）                |
-| WEAPON:weapon1 | 第一主武器 ID                             |
+| WEAPON:weapon1 | 第一[主武器 ID](../resources/weaponids)   |
 | ammo1          | 第一主武器弹药量                          |
-| WEAPON:weapon2 | 第二副武器 ID                             |
+| WEAPON:weapon2 | 第二[副武器 ID](../resources/weaponids)   |
 | ammo2          | 第二副武器弹药量                          |
-| WEAPON:weapon3 | 第三近战武器 ID                           |
+| WEAPON:weapon3 | 第三[近战武器 ID](../resources/weaponids) |
 | ammo3          | 第三近战武器弹药量                        |
 
 ## 返回值

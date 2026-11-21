@@ -11,11 +11,11 @@ tags: []
 
 Maghanap ng umiiral nang custom [skin](AddCharModel) o simple [object](AddSimpleModel) texture file. Ang mga file ng model ay matatagpuan sa folder ng server ng mga `models` bilang default (setting ng artpath).
 
-| Name        | Description                                                                                  |
-| ----------- | -------------------------------------------------------------------------------------------- |
-| crc         | Ang checksum ng CRC ng custom na file ng model.                                              |
-| retstr[]    | Isang array kung saan iimbak ang **.txd** file name, na ipinasa sa pamamagitan ng reference. |
-| retstr_size | Ang haba ng string na dapat itabi.                                                           |
+| Name        | Description                                                                                              |
+| ----------- | -------------------------------------------------------------------------------------------------------- |
+| crc         | Ang checksum ng [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) ng custom na file ng model. |
+| retstr[]    | Isang array kung saan iimbak ang **.txd** file name, na ipinasa sa pamamagitan ng reference.             |
+| retstr_size | Ang haba ng string na dapat itabi.                                                                       |
 
 ## Returns
 

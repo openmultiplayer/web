@@ -9,10 +9,10 @@ tags: ["player", "menu"]
 
 Shows a [previously created](CreateMenu) menu for a player.
 
-| Name        | Description                                          |
-| ----------- | ---------------------------------------------------- |
-| Menu:menuid | The ID of the menu to show. Returned by CreateMenu.  |
-| playerid    | The ID of the player to whom the menu will be shown. |
+| Name        | Description                                                       |
+| ----------- | ----------------------------------------------------------------- |
+| Menu:menuid | The ID of the menu to show. Returned by [CreateMenu](CreateMenu). |
+| playerid    | The ID of the player to whom the menu will be shown.              |
 
 ## Returns
 

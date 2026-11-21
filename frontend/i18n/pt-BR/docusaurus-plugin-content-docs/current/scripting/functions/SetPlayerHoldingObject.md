@@ -10,17 +10,17 @@ tags: ["player"]
 
 Anexa um objeto a um osso.
 
-| Nome | Descrição |
-| -------- | ----------------------------------------------------------------- |
-| playerid | ID do jogador ao qual você deseja anexar o objeto.                |
-| modelid | O modelo que você deseja usar.                                        |
-| bone | O [osso](../resources/boneid) ao qual você deseja anexar o objeto. |
-| fOffsetX | (opcional) Deslocamento do eixo X para a posição do objeto.                 |
-| fOffsetY | (opcional) Deslocamento do eixo Y para a posição do objeto.                 |
-| fOffsetZ | (opcional) Deslocamento do eixo Z para a posição do objeto.                 |
-| fRotX | (opcional) Rotação do eixo X do objeto.                         |
-| fRotY | (opcional) Rotação do eixo Y do objeto.                         |
-| fRotZ | (opcional) Rotação do eixo Z do objeto.                         |
+| Nome     | Descrição                                                          |
+| -------- | ------------------------------------------------------------------ |
+| playerid | ID do jogador ao qual você deseja anexar o objeto.                 |
+| modelid  | O [modelo](../resources/samp_objects) que você deseja usar.        |
+| bone     | O [osso](../resources/boneid) ao qual você deseja anexar o objeto. |
+| fOffsetX | (opcional) Deslocamento do eixo X para a posição do objeto.        |
+| fOffsetY | (opcional) Deslocamento do eixo Y para a posição do objeto.        |
+| fOffsetZ | (opcional) Deslocamento do eixo Z para a posição do objeto.        |
+| fRotX    | (opcional) Rotação do eixo X do objeto.                            |
+| fRotY    | (opcional) Rotação do eixo Y do objeto.                            |
+| fRotZ    | (opcional) Rotação do eixo Z do objeto.                            |
 
 ## Retornos
 

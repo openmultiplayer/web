@@ -13,7 +13,7 @@ Poziva se kada igrač dva puta klikne na igrača na scoreboard-u (TAB).
 | --------------- | ---------------------------------------------------- |
 | playerid        | ID igrača koji je kliknuo na igrača na scoreboard-u. |
 | clickedplayerid | ID igrača koji je kliknut.                           |
-| source          | Izvor igračevog klika.                               |
+| source          | [Izvor](../resources/clicksources) igračevog klika.  |
 
 ## Returns
 

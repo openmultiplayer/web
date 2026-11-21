@@ -10,11 +10,11 @@ tags: ["player"]
 
 Defina o nível de habilidade de um determinado tipo de arma para um jogador.
 
-| Nome | Descrição |
-| ----------------- | ---------------------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador para definir a habilidade da arma.                                                     |
-| WEAPONSKILL:skill | A [arma](../resources/weaponskills) para definir a habilidade.                                         |
-| level | O nível de habilidade a ser definido para aquela arma, variando de 0 a 999. Um nível fora do alcance irá maximizá-lo. |
+| Nome              | Descrição                                                                                                                                                               |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid          | O ID do jogador para definir a habilidade da arma.                                                                                                                      |
+| WEAPONSKILL:skill | A [arma](../resources/weaponskills) para definir a habilidade.                                                                                                          |
+| level             | O [nível de habilidade](../resources/weaponskills#níveis-de-habilidade) a ser definido para aquela arma, variando de 0 a 999. Um nível fora do alcance irá maximizá-lo. |
 
 ## Retornos
 

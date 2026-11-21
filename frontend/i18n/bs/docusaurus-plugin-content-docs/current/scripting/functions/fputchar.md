@@ -11,7 +11,7 @@ Napišite jedan znak u datoteku.
 
 | Ime    | Deskripcija                                                      |
 | ------ | ---------------------------------------------------------------- |
-| handle | Upravitelj datoteke za upotrebu, otvorila je fopen.              |
+| handle | Upravitelj datoteke za upotrebu, otvorila je [fopen](fopen).     |
 | value  | Ovaj parametar nema koristi, samo ga ostavite na "0".            |
 | utf8   | Ako je tačno, čitajte znak kao UTF-8, inače kao prošireni ASCII. |
 

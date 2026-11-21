@@ -40,24 +40,24 @@ tags: []
 | Gamemodes                                                 | 16                    | Unlimited             |
 | Filterscripts                                             | 16                    | Unlimited             |
 | Text Input (Chat/Commands)                                | 128 cells (512 bytes) | 128 cells (512 bytes) |
-| Text Output                                               | 144 cells (576 bytes) | 144 cells (576 bytes) |
+| [Text Output](../functions/SendClientMessage)             | 144 cells (576 bytes) | 144 cells (576 bytes) |
 | Name Length ([SetPlayerName](../functions/SetPlayerName)) | 24 characters         | 24 characters         |
 
 ## Textdraws
 
-| Type                                            | Limit (0.3.7)   |
-| ----------------------------------------------- | --------------- |
-| String Length<sup>(2)</sup>                     | 1024 characters |
-| Shown In A Single Client's Screen<sup>(3)</sup> | 2048 + 256      |
-| Shown In A Single Client's Screen (sprites)     | 100             |
-| Created Serverwise (Global)                     | 2048            |
-| Created Serverwise (Per-Player)                 | 256             |
+| Type                                                                 | Limit (0.3.7)   |
+| -------------------------------------------------------------------- | --------------- |
+| String Length<sup>(2)</sup>                                          | 1024 characters |
+| Shown In A Single Client's Screen<sup>(3)</sup>                      | 2048 + 256      |
+| Shown In A Single Client's Screen (sprites)                          | 100             |
+| Created Serverwise ([Global](../functions/TextDrawCreate))           | 2048            |
+| Created Serverwise ([Per-Player](../functions/CreatePlayerTextDraw)) | 256             |
 
 ## Dialogs
 
 | Type                                                         | Limit (0.3.7) |
 | ------------------------------------------------------------ | ------------- |
-| Dialog IDs                                                   | 32768         |
+| [Dialog IDs](../functions/ShowPlayerDialog)                  | 32768         |
 | Info (Main text)                                             | 4096          |
 | Caption                                                      | 64            |
 | Input Text Box (DIALOG_STYLE_INPUT/PASSWORD)                 | 128           |

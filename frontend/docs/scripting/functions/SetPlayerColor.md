@@ -9,10 +9,10 @@ tags: ["player"]
 
 Set the colour of a player's nametag and marker (radar blip).
 
-| Name     | Description                              |
-| -------- | ---------------------------------------- |
-| playerid | The ID of the player whose color to set. |
-| colour   | The color to set. Supports alpha values. |
+| Name     | Description                                                                                   |
+| -------- | --------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player whose color to set.                                                      |
+| colour   | The color to set. Supports [alpha values](../resources/colorslist#alpha-values-transparency). |
 
 ## Returns
 

@@ -10,11 +10,11 @@ tags: ["file management"]
 
 Lê um único caractere de um arquivo.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------------------------------------------------ |
-| File:handle | O identificador de arquivo a ser usado; retornado por fopen.                                           |
-| valor | Este parâmetro não tem utilidade, basta mantê-lo em “0”.                                         |
-| bool:utf8 | Se for `true`, leia um caractere como UTF-8, caso contrário, como ASCII estendido. (padrão: `true`) |
+| Nome        | Descrição                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| File:handle | O identificador de arquivo a ser usado; retornado por [fopen](fopen).                               |
+| valor       | Este parâmetro não tem utilidade, basta mantê-lo em “0”.                                            |
+| bool:utf8   | Se for `true`, leia um caractere como UTF-8, caso contrário, como ASCII estendido. (padrão: `true`) |
 
 ## Retornos
 

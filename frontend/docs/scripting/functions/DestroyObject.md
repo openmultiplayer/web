@@ -9,9 +9,9 @@ tags: ["object"]
 
 Destroys (removes) an object that was created using [CreateObject](CreateObject).
 
-| Name     | Description                                                |
-| -------- | ---------------------------------------------------------- |
-| objectid | The ID of the object to destroy. Returned by CreateObject. |
+| Name     | Description                                                                |
+| -------- | -------------------------------------------------------------------------- |
+| objectid | The ID of the object to destroy. Returned by [CreateObject](CreateObject). |
 
 ## Returns
 

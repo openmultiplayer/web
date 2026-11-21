@@ -9,11 +9,11 @@ tags: ["vehicle"]
 
 Change a vehicle's primary and secondary colors.
 
-| Name      | Description                                    |
-| --------- | ---------------------------------------------- |
-| vehicleid | The ID of the vehicle to change the colors of. |
-| color1    | The new vehicle's primary color ID.            |
-| color2    | The new vehicle's secondary color ID.          |
+| Name      | Description                                                          |
+| --------- | -------------------------------------------------------------------- |
+| vehicleid | The ID of the vehicle to change the colors of.                       |
+| color1    | The new vehicle's primary [color ID](../resources/vehiclecolorid).   |
+| color2    | The new vehicle's secondary [color ID](../resources/vehiclecolorid). |
 
 ## Returns
 

@@ -9,9 +9,9 @@ tags: ["pickup"]
 
 Menghancurkan item yang dibuat dengan [CreatePickup](CreatePickup).
 
-| Nama   | Deskripsi                                                              |
-| ------ | ---------------------------------------------------------------------- |
-| pickup | ID dari pickup yang akan dihancurkan (dikembalikan oleh CreatePickup). |
+| Nama   | Deskripsi                                                                              |
+| ------ | -------------------------------------------------------------------------------------- |
+| pickup | ID dari pickup yang akan dihancurkan (dikembalikan oleh [CreatePickup](CreatePickup)). |
 
 ## Returns
 

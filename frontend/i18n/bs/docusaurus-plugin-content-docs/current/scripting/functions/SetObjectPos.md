@@ -9,12 +9,12 @@ tags: []
 
 Promijeni poziciju [objekta](CreateObject).
 
-| Ime      | Deskripcija                                                          |
-| -------- | -------------------------------------------------------------------- |
-| objectid | ID objekta za postaviti poziciju. Returnovan/vraćen od CreateObject. |
-| Float:X  | X kordinata za pozicionirati objekat.                                |
-| Float:Y  | Y kordinata za pozicionirati objekat.                                |
-| Float:Z  | Z kordinata za pozicionirati objekat.                                |
+| Ime      | Deskripcija                                                                          |
+| -------- | ------------------------------------------------------------------------------------ |
+| objectid | ID objekta za postaviti poziciju. Returnovan/vraćen od [CreateObject](CreateObject). |
+| Float:X  | X kordinata za pozicionirati objekat.                                                |
+| Float:Y  | Y kordinata za pozicionirati objekat.                                                |
+| Float:Z  | Z kordinata za pozicionirati objekat.                                                |
 
 ## Returns
 

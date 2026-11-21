@@ -10,10 +10,10 @@ tags: ["administration"]
 
 Envia um comando RCON (console remoto).
 
-| Nome | Descrição |
-| ---------------- | ------------------------------------------ |
-| const format[] | O comando RCON a ser executado.           |
-| OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag. |
+| Nome             | Descrição                                                                          |
+| ---------------- | ---------------------------------------------------------------------------------- |
+| const format[]   | O [comando RCON](../../server/ControllingServer#comandos-do-rcon) a ser executado. |
+| OPEN_MP_TAGS:... | Número indefinido de argumentos de qualquer tag.                                   |
 
 ## Retornos
 

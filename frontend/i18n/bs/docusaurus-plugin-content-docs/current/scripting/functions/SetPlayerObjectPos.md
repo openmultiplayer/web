@@ -9,13 +9,13 @@ tags: ["player"]
 
 Postavlja poziciju player-objekta u navedenim kordinatama.
 
-| Ime      | Deskripcija                                                                       |
-| -------- | --------------------------------------------------------------------------------- |
-| playerid | ID čijem će se player-objektu promijeniti pozicija.                               |
-| objectid | ID player-objekta za postaviti poziciju. Returnovan/vraćen od CreatePlayerObject. |
-| Float:X  | X kordinata za staviti objekat.                                                   |
-| Float:Y  | Y kordinata za staviti objekat.                                                   |
-| Float:Z  | Z kordinata za staviti objekat.                                                   |
+| Ime      | Deskripcija                                                                                             |
+| -------- | ------------------------------------------------------------------------------------------------------- |
+| playerid | ID čijem će se player-objektu promijeniti pozicija.                                                     |
+| objectid | ID player-objekta za postaviti poziciju. Returnovan/vraćen od [CreatePlayerObject](CreatePlayerObject). |
+| Float:X  | X kordinata za staviti objekat.                                                                         |
+| Float:Y  | Y kordinata za staviti objekat.                                                                         |
+| Float:Z  | Z kordinata za staviti objekat.                                                                         |
 
 ## Returns
 

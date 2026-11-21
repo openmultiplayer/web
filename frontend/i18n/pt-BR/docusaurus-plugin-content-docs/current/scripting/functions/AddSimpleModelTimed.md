@@ -11,15 +11,15 @@ tags: []
 
 Adiciona um novo [modelo de objeto](CreateObject) simples personalizado para download. Os arquivos do modelo são armazenados em `Documentos\GTA San Andreas User Files\SAMP\cache` do jogador sob a pasta IP e Porta do Servidor em um arquivo no formato [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
-| Nome         | Descrição                                                                                                                                        |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| virtualworld | O ID do mundo virtual ao qual pretende colocar o modelo. Use -1 para todos os mundos.                                                            |
-| baseid       | O ID do modelo do objeto original a ser usado como base (objeto original é usado se o download falhar).                                          |
-| newid        | O ID do modelo do novo objeto. Varia entre -1000 a -30000 (29000 slots) para serem usados posteriormente com CreateObject ou CreatePlayerObject. |
-| dffname      | Nome do arquivo de extensão **.dff** localizado na pasta do servidor de modelos por padrão (configuração artpath).                               |
-| txdname      | Nome do arquivo de textura de extensão **.txd** localizado na pasta do servidor de modelos por padrão (configuração artpath).                    |
-| timeon       | O horário do jogo (em horas) em que este objeto irá aparecer.                                                                                    |
-| timeoff      | O horário do jogo (em horas) em que este objecto irá desaparecer.                                                                                |
+| Nome         | Descrição                                                                                                                                                                              |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtualworld | O [ID do mundo virtual](SetPlayerVirtualWorld) ao qual pretende colocar o modelo. Use -1 para todos os mundos.                                                                         |
+| baseid       | O [ID do modelo do objeto](https://dev.prineside.com/en/gtasa_samp_model_id/) original a ser usado como base (objeto original é usado se o download falhar).                           |
+| newid        | O ID do modelo do novo objeto. Varia entre -1000 a -30000 (29000 slots) para serem usados posteriormente com [CreateObject](CreateObject) ou [CreatePlayerObject](CreatePlayerObject). |
+| dffname      | Nome do arquivo de extensão **.dff** localizado na pasta do servidor de modelos por padrão (configuração [artpath](../../server/server.cfg#modelos-personalizados)).                   |
+| txdname      | Nome do arquivo de textura de extensão **.txd** localizado na pasta do servidor de modelos por padrão (configuração [artpath](../../server/server.cfg#modelos-personalizados)).        |
+| timeon       | O horário do jogo (em horas) em que este objeto irá aparecer.                                                                                                                          |
+| timeoff      | O horário do jogo (em horas) em que este objecto irá desaparecer.                                                                                                                      |
 
 ## Retorno
 

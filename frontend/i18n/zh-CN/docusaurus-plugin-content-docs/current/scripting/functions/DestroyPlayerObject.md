@@ -9,10 +9,10 @@ tags: ["玩家", "物体", "玩家物体"]
 
 销毁通过 [CreatePlayerObject](CreatePlayerObject) 创建的玩家专属物体。
 
-| 参数     | 说明                                                  |
-| -------- | ----------------------------------------------------- |
-| playerid | 要销毁其玩家专属物体的玩家 ID                         |
-| objectid | 要销毁的玩家专属物体 ID（由 CreatePlayerObject 返回） |
+| 参数     | 说明                                                                        |
+| -------- | --------------------------------------------------------------------------- |
+| playerid | 要销毁其玩家专属物体的玩家 ID                                               |
+| objectid | 要销毁的玩家专属物体 ID（由 [CreatePlayerObject](CreatePlayerObject) 返回） |
 
 ## 返回值
 

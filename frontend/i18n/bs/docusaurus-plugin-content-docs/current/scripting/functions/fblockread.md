@@ -9,11 +9,11 @@ tags: []
 
 Ova funkcija vam omogućuje čitanje podataka iz datoteke, bez kodiranja i završetaka linije.
 
-| Ime                  | Deskripcija                                         |
-| -------------------- | --------------------------------------------------- |
-| handle               | Upravitelj datoteke za upotrebu, otvorila je fopen. |
-| buffer               | Upremnik za spremanje pročitanih podataka.          |
-| size = sizeof buffer | Broj ćelija za čitanje.                             |
+| Ime                  | Deskripcija                                                  |
+| -------------------- | ------------------------------------------------------------ |
+| handle               | Upravitelj datoteke za upotrebu, otvorila je [fopen](fopen). |
+| buffer               | Upremnik za spremanje pročitanih podataka.                   |
+| size = sizeof buffer | Broj ćelija za čitanje.                                      |
 
 ## Returns
 

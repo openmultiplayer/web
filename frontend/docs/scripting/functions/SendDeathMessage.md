@@ -11,11 +11,11 @@ Adds a death to the 'killfeed' on the right-hand side of the screen for all play
 
 The 5 most recent kills are shown on the right side of players' screens. Pressing **F9** will hide/show the list.
 
-| Name   | Description                                                                                                                 |
-| ------ | --------------------------------------------------------------------------------------------------------------------------- |
-| killer | The ID of the killer (can be INVALID_PLAYER_ID).                                                                            |
-| killee | The ID of the player that died.                                                                                             |
-| weapon | The reason (not always a weapon) for the victim's death. Special icons can also be used (ICON_CONNECT and ICON_DISCONNECT). |
+| Name   | Description                                                                                                                                           |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| killer | The ID of the killer (can be INVALID_PLAYER_ID).                                                                                                      |
+| killee | The ID of the player that died.                                                                                                                       |
+| weapon | The [reason](../resources/weaponids) (not always a weapon) for the victim's death. Special icons can also be used (ICON_CONNECT and ICON_DISCONNECT). |
 
 ## Returns
 

@@ -9,10 +9,10 @@ tags: ["player", "menu"]
 
 Prikazuje [prethodno kreirani](CreateMenu) meni za igrača.
 
-| Ime      | Deskripcija                                              |
-| -------- | -------------------------------------------------------- |
-| menuid   | ID menija za prikazati. Returnovan/vraćen od CreateMenu. |
-| playerid | ID igrača kojem će meni biti prikazan.                   |
+| Ime      | Deskripcija                                                            |
+| -------- | ---------------------------------------------------------------------- |
+| menuid   | ID menija za prikazati. Returnovan/vraćen od [CreateMenu](CreateMenu). |
+| playerid | ID igrača kojem će meni biti prikazan.                                 |
 
 ## Returns
 

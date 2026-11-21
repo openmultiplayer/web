@@ -9,12 +9,12 @@ tags: ["player"]
 
 Verifica quais teclas um jogador está pressionando.
 
-| Nome      | Descrição                                                                                                                                                |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | O ID do jogador do qual deseja obter as teclas.                                                                                                          |
-| keys      | Um conjunto de bits contendo o estado das teclas do jogador. Este valor é chamado de máscara de bits (bit mask). Clique aqui para ver a lista de teclas. |
-| updown    | Up/down state.                                                                                                                                           |
-| leftright | Left/right state.                                                                                                                                        |
+| Nome      | Descrição                                                                                                                                                                                                  |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | O ID do jogador do qual deseja obter as teclas.                                                                                                                                                            |
+| keys      | Um conjunto de bits contendo o estado das teclas do jogador. Este valor é chamado de máscara de bits ([bit mask](https://en.wikipedia.org/wiki/Mask_(computing))). Clique aqui para ver a lista de teclas. |
+| updown    | Up/down state.                                                                                                                                                                                             |
+| leftright | Left/right state.                                                                                                                                                                                          |
 
 ## Retorno
 

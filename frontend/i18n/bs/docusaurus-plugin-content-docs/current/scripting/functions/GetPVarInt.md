@@ -9,10 +9,10 @@ tags: ["pvar"]
 
 Dobiva vrijednost cijelog broja varijable igrača.
 
-| Ime      | Deskripcija                                                                           |
-| -------- | ------------------------------------------------------------------------------------- |
-| playerid | ID igrača za dobiti igračevu varijablu.                                               |
-| varname  | Ime igračeve varijable (osjetljivo na velika i mala slova). Dodijeljeno u SetPVarInt. |
+| Ime      | Deskripcija                                                                                         |
+| -------- | --------------------------------------------------------------------------------------------------- |
+| playerid | ID igrača za dobiti igračevu varijablu.                                                             |
+| varname  | Ime igračeve varijable (osjetljivo na velika i mala slova). Dodijeljeno u [SetPVarInt](SetPVarInt). |
 
 ## Returns
 

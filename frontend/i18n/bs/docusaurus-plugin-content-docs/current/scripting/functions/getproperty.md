@@ -9,12 +9,12 @@ tags: []
 
 Uzmite određenu imovinu iz memorije, string se vraća kao spakirani string!
 
-| Ime      | Deskripcija                                                                     |
-| -------- | ------------------------------------------------------------------------------- |
-| id       | Virtualna mašina za upotrebu, trebali biste zadržati ovu nulu.                  |
-| name[]   | Ime imovine, trebali biste ovo zadržati "".                                     |
-| value    | Jedinstveni ID imovine, upotrijebite hash-funkciju za izračunavanje iz stringa. |
-| string[] | Varijabla za pohraniti rezultat, proslijeđeno referencom.                       |
+| Ime      | Deskripcija                                                                                                     |
+| -------- | --------------------------------------------------------------------------------------------------------------- |
+| id       | Virtualna [mašina](https://en.wikipedia.org/wiki/Virtual_machine) za upotrebu, trebali biste zadržati ovu nulu. |
+| name[]   | Ime imovine, trebali biste ovo zadržati "".                                                                     |
+| value    | Jedinstveni ID imovine, upotrijebite hash-funkciju za izračunavanje iz stringa.                                 |
+| string[] | Varijabla za pohraniti rezultat, proslijeđeno referencom.                                                       |
 
 ## Returns
 

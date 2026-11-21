@@ -9,10 +9,10 @@ tags: ["file management"]
 
 Schrijf tekst naar een bestand.
 
-| Naam           | Beschrijving                        |
-| -------------- | ----------------------------------- |
-| File:handle    | Handle van het bestand (van fopen). |
-| const string[] | De te schrijven tekst.              |
+| Naam           | Beschrijving                                 |
+| -------------- | -------------------------------------------- |
+| File:handle    | Handle van het bestand (van [fopen](fopen)). |
+| const string[] | De te schrijven tekst.                       |
 
 ## Retourneert
 

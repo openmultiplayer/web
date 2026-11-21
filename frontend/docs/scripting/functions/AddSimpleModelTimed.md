@@ -11,15 +11,15 @@ tags: ["custom model", "simple model"]
 
 Adds a new custom simple [object model](CreateObject) for download. The model files will be stored in player's `Documents\GTA San Andreas User Files\SAMP\cache` under the Server IP and Port folder in a [CRC-form](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) file name.
 
-| Name                   | Description                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| virtualWorld           | The virtual world ID to make the model available at. Use -1 for all worlds.                                                 |
-| baseid                 | The base object model ID to use (original object to use when download is failed).                                           |
-| newid                  | The new object model ID ranged from -1000 to -30000 (29000 slots) to be used later with CreateObject or CreatePlayerObject. |
-| const dff[]            | Name of the **.dff** model collision file located in `models` server folder by default (artpath setting).                   |
-| const textureLibrary[] | Name of the **.txd** model texture file located in `models` server folder by default (artpath setting).                     |
-| timeOn                 | The world game time (hour) this object will appear                                                                          |
-| timeOff                | The world game time (hour) this object will disappear                                                                       |
+| Name                   | Description                                                                                                                                                       |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtualWorld           | The [virtual world ID](SetPlayerVirtualWorld) to make the model available at. Use -1 for all worlds.                                                              |
+| baseid                 | The base [object model ID](https://dev.prineside.com/en/gtasa_samp_model_id/) to use (original object to use when download is failed).                            |
+| newid                  | The new object model ID ranged from -1000 to -30000 (29000 slots) to be used later with [CreateObject](CreateObject) or [CreatePlayerObject](CreatePlayerObject). |
+| const dff[]            | Name of the **.dff** model collision file located in `models` server folder by default ([artpath setting](../../server/server.cfg#custom-models)).                |
+| const textureLibrary[] | Name of the **.txd** model texture file located in `models` server folder by default ([artpath setting](../../server/server.cfg#custom-models)).                  |
+| timeOn                 | The [world game time (hour)](SetWorldTime) this object will appear                                                                                                |
+| timeOff                | The [world game time (hour)](SetWorldTime) this object will disappear                                                                                             |
 
 ## Returns
 

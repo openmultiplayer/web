@@ -15,9 +15,9 @@ This function is deprecated. Please see [DB_GetRowCount](DB_GetRowCount).
 
 Returns the number of rows from a [db_query](db_query).
 
-| Name              | Description            |
-| ----------------- | ---------------------- |
-| DBResult:dbresult | The result of db_query |
+| Name              | Description                        |
+| ----------------- | ---------------------------------- |
+| DBResult:dbresult | The result of [db_query](db_query) |
 
 ## Returns
 

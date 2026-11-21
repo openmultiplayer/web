@@ -9,9 +9,9 @@ tags: []
 
 Uništava pickup kreiran sa [CreatePickup](CreatePickup).
 
-| Ime    | Deskripcija                                           |
-| ------ | ----------------------------------------------------- |
-| pickup | ID pickup-a koji se unišava (kreiran sa CreatePickup) |
+| Ime    | Deskripcija                                                           |
+| ------ | --------------------------------------------------------------------- |
+| pickup | ID pickup-a koji se unišava (kreiran sa [CreatePickup](CreatePickup)) |
 
 ## Returns
 

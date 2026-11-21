@@ -11,7 +11,7 @@ tags: ["车辆"]
 
 | 参数                        | 说明                                                       |
 | --------------------------- | ---------------------------------------------------------- |
-| vehiclemodel                | 需要查询的车辆模型 ID                                      |
+| vehiclemodel                | 需要查询的[车辆模型](../resources/vehicleid) ID            |
 | VEHICLE_MODEL_INFO:infotype | 需要获取的[信息类型](../resources/vehicleinformationtypes) |
 | &Float:x                    | 用于存储 X 轴数据的浮点变量                                |
 | &Float:y                    | 用于存储 Y 轴数据的浮点变量                                |

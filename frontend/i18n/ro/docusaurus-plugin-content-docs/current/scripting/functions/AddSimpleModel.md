@@ -11,13 +11,13 @@ tags: []
 
 Adaugă un nou model de obiect simplu personalizat pentru descărcare. Fișierele model vor fi stocate în `Documents\GTA San Andreas User Files\SAMP\cache` sub folderul Server IP și Port într-un nume de fișier [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
-| Nume         | Descriere                                                                                                                                            |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| virtualworld | ID-ul lumii virtuale pentru a face modelul disponibil la. Folosiți -1 pentru toate lumile.                                                           |
-| baseid       | ID-ul modelului de obiect de bază de utilizat (obiectul original de utilizat atunci când descărcarea eșuează).                                       |
-| newid        | ID-ul noului model de obiect a variat de la -1000 la -30000 (29000 de sloturi) pentru a fi utilizat ulterior cu CreateObject sau CreatePlayerObject. |
-| dffname      | Numele fișierului de coliziune a modelului **.dff** situat în dosarul serverului de modele în mod implicit (setare artpath).                         |
-| txdname      | Numele fișierului de textură model **.txd** situat în dosarul serverului modele în mod implicit (setare artpath).                                    |
+| Nume         | Descriere                                                                                                                                                           |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtualworld | ID-ul lumii virtuale pentru a face modelul disponibil la. Folosiți -1 pentru toate lumile.                                                                          |
+| baseid       | [ID-ul modelului de obiect](https://dev.prineside.com/en/gtasa_samp_model_id/) de bază de utilizat (obiectul original de utilizat atunci când descărcarea eșuează). |
+| newid        | ID-ul noului model de obiect a variat de la -1000 la -30000 (29000 de sloturi) pentru a fi utilizat ulterior cu CreateObject sau CreatePlayerObject.                |
+| dffname      | Numele fișierului de coliziune a modelului **.dff** situat în dosarul serverului de modele în mod implicit (setare artpath).                                        |
+| txdname      | Numele fișierului de textură model **.txd** situat în dosarul serverului modele în mod implicit (setare artpath).                                                   |
 
 ## Se intoarce
 

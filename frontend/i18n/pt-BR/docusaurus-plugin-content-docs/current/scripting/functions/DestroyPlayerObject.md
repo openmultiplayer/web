@@ -9,10 +9,10 @@ tags: ["player"]
 
 Destrói um objeto de jogador (player-object) criado usando [CreatePlayerObject](CreatePlayerObject).
 
-| Nome     | Descrição                                                               |
-| -------- | ----------------------------------------------------------------------- |
-| playerid | The ID of the player whose player-object to destroy.                    |
-| objectid | The ID of the player-object to destroy. Returned by CreatePlayerObject. |
+| Nome     | Descrição                                                                                     |
+| -------- | --------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player whose player-object to destroy.                                          |
+| objectid | The ID of the player-object to destroy. Returned by [CreatePlayerObject](CreatePlayerObject). |
 
 ## Retorno
 

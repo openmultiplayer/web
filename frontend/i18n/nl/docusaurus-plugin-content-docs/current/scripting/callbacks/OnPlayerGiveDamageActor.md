@@ -16,7 +16,7 @@ Deze callback wordt aangeroepen wanneer een speler schade toebrengt aan een acto
 | playerid        | Het ID van de speler die schade toebracht.                     |
 | damaged_actorid | Het ID van de actor die schade ontving.                        |
 | Float:amount    | De hoeveelheid gezondheid/pantser die damaged_actorid verloor. |
-| WEAPON:weaponid | De reden die de schade veroorzaakte.                           |
+| WEAPON:weaponid | De [reden](../resources/weaponids) die de schade veroorzaakte. |
 | bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat werd geraakt    |
 
 ## Returns

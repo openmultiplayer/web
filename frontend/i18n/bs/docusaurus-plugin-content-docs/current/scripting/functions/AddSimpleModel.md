@@ -15,13 +15,13 @@ Ova funkcija je dodana u SA-MP 0.3.DL R1 i ne radi u nižim verzijama!
 
 Dodaje novi prilagođen/custom prost [model objekta](CreateObject) za preuzimanje. Fajlovi modela će biti pohranjeni u igračevim: `Documents\GTA San Andreas User Files\SAMP\cache` ispod Server IP i Port foldera u [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)-formi imena fajla.
 
-| Ime          | Deskripcija                                                                                                              |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| virtualworld | ID virtualnog svijeta za kojeg će model biti dostupan, koristi -1 za sve svjetove.                                       |
-| baseid       | The base object model ID to use (original object to use when download is failed).                                        |
-| newid        | Novi skin model ID između -1000 i -30000 (29000 slotova) da bi se kasnije koristio sa CreateObject i CreatePlayerObject. |
-| dffname      | Ime **.dff** collision modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka). |
-| txdname      | Ime **.txd** texture modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka).   |
+| Ime          | Deskripcija                                                                                                                                                    |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtualworld | [ID virtualnog svijeta](SetPlayerVirtualWorld) za kojeg će model biti dostupan, koristi -1 za sve svjetove.                                                    |
+| baseid       | The base [object model ID](https://dev.prineside.com/en/gtasa_samp_model_id/) to use (original object to use when download is failed).                         |
+| newid        | Novi skin model ID između -1000 i -30000 (29000 slotova) da bi se kasnije koristio sa [CreateObject](CreateObject) i [CreatePlayerObject](CreatePlayerObject). |
+| dffname      | Ime **.dff** collision modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka).                                       |
+| txdname      | Ime **.txd** texture modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka).                                         |
 
 ## Returns
 

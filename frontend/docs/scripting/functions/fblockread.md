@@ -9,11 +9,11 @@ tags: ["file management"]
 
 This function allows you to read data from a file, without encoding and line terminators
 
-| Name                   | Description                          |
-| ---------------------- | ------------------------------------ |
-| File:handle            | File handle to use, opened by fopen. |
-| buffer                 | The buffer to save the read data in. |
-| size = sizeof (buffer) | The number of cells to read.         |
+| Name                   | Description                                   |
+| ---------------------- | --------------------------------------------- |
+| File:handle            | File handle to use, opened by [fopen](fopen). |
+| buffer                 | The buffer to save the read data in.          |
+| size = sizeof (buffer) | The number of cells to read.                  |
 
 ## Returns
 

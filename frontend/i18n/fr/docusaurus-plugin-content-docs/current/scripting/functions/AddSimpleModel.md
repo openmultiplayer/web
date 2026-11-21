@@ -10,13 +10,13 @@ tags: []
 
 Ajoute un nouveau modèle d'objet simple personnalisé à télécharger. Les fichiers modèles seront stockés dans le dossier `Documents\GTA San Andreas User Files\SAMP\cache` du lecteur sous le dossier IP et port du serveur dans un nom de fichier au format [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
-| Nom          | Description                                                                                                                                            |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| virtualworld | L'identifiant du monde virtuel sur lequel rendre le modèle disponible. Utilisez -1 pour tous les mondes.                                               |
-| baseid       | ID de modèle d'objet de base à utiliser (objet d'origine à utiliser lorsque le téléchargement échoue).                                                 |
-| newid        | Le nouvel ID de modèle d'objet allait de -1000 à -30000 (29000 emplacements) pour être utilisé ultérieurement avec CreateObject ou CreatePlayerObject. |
-| dffname      | Nom du fichier de collision de modèles **.dff** situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                            |
-| txdname      | Nom du fichier de texture de modèle **.txd** situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                               |
+| Nom          | Description                                                                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtualworld | L'identifiant du monde virtuel sur lequel rendre le modèle disponible. Utilisez -1 pour tous les mondes.                                                    |
+| baseid       | [ID de modèle d'objet](https://dev.prineside.com/en/gtasa_samp_model_id/) de base à utiliser (objet d'origine à utiliser lorsque le téléchargement échoue). |
+| newid        | Le nouvel ID de modèle d'objet allait de -1000 à -30000 (29000 emplacements) pour être utilisé ultérieurement avec CreateObject ou CreatePlayerObject.      |
+| dffname      | Nom du fichier de collision de modèles **.dff** situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                                 |
+| txdname      | Nom du fichier de texture de modèle **.txd** situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                                    |
 
 ## Retour
 

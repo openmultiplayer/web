@@ -11,7 +11,7 @@ Write one character to a file.
 
 | Name        | Description                                                                   |
 | ----------- | ----------------------------------------------------------------------------- |
-| File:handle | The File handle to use, earlier opened by fopen.                              |
+| File:handle | The File handle to use, earlier opened by [fopen](fopen).                     |
 | value       | The character to write into the file.                                         |
 | bool:utf8   | If `true`, write in UTF8 mode, otherwise in extended ASCII. (default: `true`) |
 

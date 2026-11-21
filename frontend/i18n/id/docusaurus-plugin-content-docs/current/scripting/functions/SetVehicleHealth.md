@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Mengatur Health kendaraan. Ketika kendaraan menurun, mesin kendaraan akan mengeluarkan asap, dan akhirnya api ketika menurun health kendaraan berkurang menjadi 250 (%25)
 
-| Nama         | Deskripsi                              |
-| ------------ | -------------------------------------- |
-| vehicleid    | ID Kendaraan untuk set health kendaran |
-| Float:health | Health, diberikan sebagai nilai Float  |
+| Nama         | Deskripsi                                                           |
+| ------------ | ------------------------------------------------------------------- |
+| vehicleid    | ID Kendaraan untuk set health kendaran                              |
+| Float:health | [Health](../resources/vehiclehealth), diberikan sebagai nilai Float |
 
 ## Returns
 

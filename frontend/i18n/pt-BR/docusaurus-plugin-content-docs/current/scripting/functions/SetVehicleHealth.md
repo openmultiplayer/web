@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Define a vida de um veículo. Quando a vida do veículo diminui, o motor irá fazer fumaça, até que arde quando diminuir para menos de 250 (25%).
 
-| Nome         | Descrição                         |
-| ------------ | --------------------------------- |
-| vehicleid    | O ID do veículo a definir a vida. |
-| Float:health | A vida, em valor float.           |
+| Nome         | Descrição                                             |
+| ------------ | ----------------------------------------------------- |
+| vehicleid    | O ID do veículo a definir a vida.                     |
+| Float:health | A [vida](../resources/vehiclehealth), em valor float. |
 
 ## Retorno
 

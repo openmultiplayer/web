@@ -21,7 +21,7 @@ Ovaj callback je pozvan kada igrač nanese povredu aktoru.
 | damaged_actorid | ID aktora koji je primio povredu.                          |
 | Float:amount    | Količina healtha i armora kojeg je izgubi damaged_actorid. |
 | WEAPON:weaponid | Razlog zbog kojeg je zadobio povredu.                      |
-| bodypart        | Dio tijela koji je udaren.                                 |
+| bodypart        | [Dio tijela](../resources/bodyparts) koji je udaren.       |
 
 ## Returns
 

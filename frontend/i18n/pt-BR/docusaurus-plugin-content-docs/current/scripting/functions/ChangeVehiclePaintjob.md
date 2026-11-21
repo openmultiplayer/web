@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Altere o paintjob de um veículo (para cores normais, consulte [ChangeVehicleColor](ChangeVehicleColor)).
 
-| Nome       | Descrição                                                   |
-| ---------- | ----------------------------------------------------------- |
-| vehicleid  | O ID do veículo para alterar o paintjob.                    |
-| paintjobid | O ID do paintjob a aplicar. Use 3 para remover um paintjob. |
+| Nome       | Descrição                                                                             |
+| ---------- | ------------------------------------------------------------------------------------- |
+| vehicleid  | O ID do veículo para alterar o paintjob.                                              |
+| paintjobid | O ID do [paintjob](../resources/paintjobs) a aplicar. Use 3 para remover um paintjob. |
 
 ## Retorno
 

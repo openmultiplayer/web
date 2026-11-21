@@ -11,7 +11,7 @@ Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao 
 
 | Nome                                  | Descrição                                                                                                                                                         |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| modelid                               | O modelo ID para o veículo.                                                                                                                                       |
+| [modelid](../resources/vehicleid)     | O modelo ID para o veículo.                                                                                                                                       |
 | Float:spawn_X                         | A coordenada-X para o veículo.                                                                                                                                    |
 | Float:spawn_Y                         | A coordenada-Y para o veículo.                                                                                                                                    |
 | Float:spawn_Z                         | A coordenada-Z para o veículo.                                                                                                                                    |

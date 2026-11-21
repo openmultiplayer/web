@@ -10,11 +10,11 @@ tags: []
 
 Obtenha o nome de uma arma.
 
-| Nome | Descrição |
-| --------------------- | ----------------------------------------------------------------------- |
-| WEAPON:weaponid | O ID da arma cujo nome deseja obter.                                |
-| weapon[] | Um array para armazenar o nome da arma, passado por referência.            |
-| len = sizeof (weapon) | O comprimento máximo do nome da arma a ser armazenado. Deve ser sizeof(nome). |
+| Nome                  | Descrição                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------------- |
+| WEAPON:weaponid       | O [ID da arma](../resources/weaponids) cujo nome deseja obter.                            |
+| weapon[]              | Um array para armazenar o nome da [arma](../resources/weaponids), passado por referência. |
+| len = sizeof (weapon) | O comprimento máximo do nome da arma a ser armazenado. Deve ser sizeof(nome).             |
 
 ## Retornos
 

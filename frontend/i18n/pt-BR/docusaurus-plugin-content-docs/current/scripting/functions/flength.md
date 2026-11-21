@@ -10,9 +10,9 @@ tags: ["file management"]
 
 Retorna o comprimento de um arquivo.
 
-| Nome | Descrição |
-| ----------- | ------------------------------------------ |
-| File:handle | O identificador de arquivo retornado por fopen ou ftemp |
+| Nome        | Descrição                                                                 |
+| ----------- | ------------------------------------------------------------------------- |
+| File:handle | O identificador de arquivo retornado por [fopen](fopen) ou [ftemp](ftemp) |
 
 ## Retornos
 

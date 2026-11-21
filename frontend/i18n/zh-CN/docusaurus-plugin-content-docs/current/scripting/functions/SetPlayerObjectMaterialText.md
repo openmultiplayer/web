@@ -9,20 +9,20 @@ tags: ["玩家", "物体", "玩家物体"]
 
 将玩家物体的材质替换为文本。
 
-| 参数                                     | 说明                                                           |
-| ---------------------------------------- | -------------------------------------------------------------- |
-| playerid                                 | 目标玩家 ID                                                    |
-| objectid                                 | 要设置文本的物体 ID                                            |
-| text[]                                   | 要显示的文本内容                                               |
-| materialIndex                            | 材质索引（默认：0）                                            |
-| OBJECT_MATERIAL_SIZE:materialSize        | 材质[尺寸](../resources/materialtextsizes)（默认：256x128）    |
-| const fontFace[]                         | 字体名称（默认：Arial）                                        |
-| fontSize                                 | 字体大小（默认：24）（最大值 255）                             |
-| bool:bold                                | 粗体显示（1 启用/0 禁用，默认：1）                             |
-| fontColour                               | 字体颜色（默认：白色）                                         |
-| backgroundColour                         | 背景颜色（默认：透明）                                         |
-| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | 文本[对齐方式](../resources/materialtextsizes)（默认：左对齐） |
-| OPEN_MP_TAGS:...                         | 不定数量的任意标签参数                                         |
+| 参数                                     | 说明                                                               |
+| ---------------------------------------- | ------------------------------------------------------------------ |
+| playerid                                 | 目标玩家 ID                                                        |
+| objectid                                 | 要设置文本的物体 ID                                                |
+| text[]                                   | 要显示的文本内容                                                   |
+| materialIndex                            | 材质索引（默认：0）                                                |
+| OBJECT_MATERIAL_SIZE:materialSize        | 材质[尺寸](../resources/materialtextsizes)（默认：256x128）        |
+| const fontFace[]                         | 字体名称（默认：Arial）                                            |
+| fontSize                                 | 字体大小（默认：24）（最大值 255）                                 |
+| bool:bold                                | 粗体显示（1 启用/0 禁用，默认：1）                                 |
+| fontColour                               | 字体颜色（默认：白色）                                             |
+| backgroundColour                         | 背景颜色（默认：透明）                                             |
+| OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | 文本[对齐方式](../resources/materialtextalignment)（默认：左对齐） |
+| OPEN_MP_TAGS:...                         | 不定数量的任意标签参数                                             |
 
 ## 返回值
 

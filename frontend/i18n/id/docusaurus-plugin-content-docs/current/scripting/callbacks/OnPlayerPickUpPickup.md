@@ -9,10 +9,10 @@ tags: ["player"]
 
 Callback ini dipanggil ketika pemain mengambil pickup yang dibuat dengan [CreatePickup](../functions/CreatePickup).
 
-| Nama     | Deskripsi                                  |
-| -------- | ------------------------------------------ |
-| playerid | ID pemain yang mengambil pickup.           |
-| pickupid | ID pickup, dikembalikan oleh CreatePickup. |
+| Nama     | Deskripsi                                                               |
+| -------- | ----------------------------------------------------------------------- |
+| playerid | ID pemain yang mengambil pickup.                                        |
+| pickupid | ID pickup, dikembalikan oleh [CreatePickup](../functions/CreatePickup). |
 
 ## Returns
 

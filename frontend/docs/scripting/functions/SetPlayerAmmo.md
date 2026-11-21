@@ -9,11 +9,11 @@ tags: ["player"]
 
 Set the ammo of a player's weapon.
 
-| Name            | Description                                                                      |
-| --------------- | -------------------------------------------------------------------------------- |
-| playerid        | The ID of the player to set the weapon ammo of.                                  |
-| WEAPON:weaponid | The ID of the weapon to set the ammo of. (not the weaponslot as in samp include) |
-| ammo            | The amount of ammo to set.                                                       |
+| Name            | Description                                                                                                |
+| --------------- | ---------------------------------------------------------------------------------------------------------- |
+| playerid        | The ID of the player to set the weapon ammo of.                                                            |
+| WEAPON:weaponid | The [ID of the weapon](../resources/weaponids) to set the ammo of. (not the weaponslot as in samp include) |
+| ammo            | The amount of ammo to set.                                                                                 |
 
 ## Returns
 

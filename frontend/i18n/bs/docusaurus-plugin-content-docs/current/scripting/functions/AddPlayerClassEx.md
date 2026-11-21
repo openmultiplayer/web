@@ -9,20 +9,20 @@ tags: ["player"]
 
 Ova funkcija je u potpunosti ista kao i [AddPlayerClass](AddPlayerClass) funkcija, sa akcentom na 'Tim' parametar.
 
-| Ime           | Deskripcija                                                |
-| ------------- | ---------------------------------------------------------- |
-| teamid        | Tim u koji hoćete da se igrač spawnuje/stvori.             |
-| modelid       | Skin sa kojim će se igrač spawnovati/stvoriti.             |
-| Float:spawn_x | X kordinata spawnpointa ove klase.                         |
-| Float:spawn_y | Y kordinata spawnpointa ove klase.                         |
-| Float:spawn_z | Z kordinata spawnpointa ove klase.                         |
-| Float:z_angle | Smjer u koji će igrač gledati nakon spawnovanja/stvaranja. |
-| weapon1       | Prvo spawn-oružje za igrača.                               |
-| weapon1_ammo  | Količina municije za primarno spawn oružje.                |
-| weapon2       | Drugo spawn-oružje za igrača.                              |
-| weapon2_ammo  | Količina municije za sekundarno spawn oružje.              |
-| weapon3       | Treće spawn-oružje za igrača.                              |
-| weapon3_ammo  | Količina municije za treće spawn oružje.                   |
+| Ime                           | Deskripcija                                                |
+| ----------------------------- | ---------------------------------------------------------- |
+| teamid                        | Tim u koji hoćete da se igrač spawnuje/stvori.             |
+| [modelid](../resources/skins) | Skin sa kojim će se igrač spawnovati/stvoriti.             |
+| Float:spawn_x                 | X kordinata spawnpointa ove klase.                         |
+| Float:spawn_y                 | Y kordinata spawnpointa ove klase.                         |
+| Float:spawn_z                 | Z kordinata spawnpointa ove klase.                         |
+| Float:z_angle                 | Smjer u koji će igrač gledati nakon spawnovanja/stvaranja. |
+| weapon1                       | Prvo spawn-oružje za igrača.                               |
+| weapon1_ammo                  | Količina municije za primarno spawn oružje.                |
+| weapon2                       | Drugo spawn-oružje za igrača.                              |
+| weapon2_ammo                  | Količina municije za sekundarno spawn oružje.              |
+| weapon3                       | Treće spawn-oružje za igrača.                              |
+| weapon3_ammo                  | Količina municije za treće spawn oružje.                   |
 
 ## Returns
 

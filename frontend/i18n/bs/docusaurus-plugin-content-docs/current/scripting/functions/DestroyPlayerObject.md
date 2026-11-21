@@ -9,10 +9,10 @@ tags: ["player"]
 
 Uništava objekat igrača kreiran sa [CreatePlayerObject](CreatePlayerObject).
 
-| Ime      | Deskripcija                                                |
-| -------- | ---------------------------------------------------------- |
-| playerid | ID igrača za kojeg se uništava objekat                     |
-| objectid | ID objekta koji se uništava. Kreiran sa CreatePlayerObject |
+| Ime      | Deskripcija                                                                      |
+| -------- | -------------------------------------------------------------------------------- |
+| playerid | ID igrača za kojeg se uništava objekat                                           |
+| objectid | ID objekta koji se uništava. Kreiran sa [CreatePlayerObject](CreatePlayerObject) |
 
 ## Returns
 

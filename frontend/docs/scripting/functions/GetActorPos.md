@@ -13,7 +13,7 @@ Get the position of an actor.
 
 | Name     | Description                                                                             |
 | -------- | --------------------------------------------------------------------------------------- |
-| actorid  | The ID of the actor to get the position of. Returned by CreateActor.                    |
+| actorid  | The ID of the actor to get the position of. Returned by [CreateActor](CreateActor).     |
 | &Float:x | A float variable, passed by reference, in which to store the X coordinate of the actor. |
 | &Float:y | A float variable, passed by reference, in which to store the Y coordinate of the actor. |
 | &Float:z | A float variable, passed by reference, in which to store the Z coordinate of the actor. |

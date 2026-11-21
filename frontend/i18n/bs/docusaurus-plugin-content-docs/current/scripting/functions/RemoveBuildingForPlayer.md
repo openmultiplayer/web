@@ -9,14 +9,14 @@ tags: ["player"]
 
 Uklanja standardni model San Andreasa za jednog igrača u određenom opsegu.
 
-| Ime           | Deskripcija                                                            |
-| ------------- | ---------------------------------------------------------------------- |
-| playerid      | ID igrača za ukloniti objekte.                                         |
-| modelid       | Model za ukloniti.                                                     |
-| Float:fX      | X kordinata oko koje će objekat biti obrisan.                          |
-| Float:fY      | Y kordinata oko koje će objekat biti obrisan.                          |
-| Float:fZ      | Z kordinata oko koje će objekat biti obrisan.                          |
-| Float:fRadius | Radijus oko navedene točke za uklanjanje objekata s navedenim modelom. |
+| Ime           | Deskripcija                                                             |
+| ------------- | ----------------------------------------------------------------------- |
+| playerid      | ID igrača za ukloniti objekte.                                          |
+| modelid       | [Model](https://dev.prineside.com/en/gtasa_samp_model_id/) za ukloniti. |
+| Float:fX      | X kordinata oko koje će objekat biti obrisan.                           |
+| Float:fY      | Y kordinata oko koje će objekat biti obrisan.                           |
+| Float:fZ      | Z kordinata oko koje će objekat biti obrisan.                           |
+| Float:fRadius | Radijus oko navedene točke za uklanjanje objekata s navedenim modelom.  |
 
 ## Returns
 

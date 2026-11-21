@@ -9,12 +9,12 @@ tags: ["pvar"]
 
 Dobija igračevu varijablu kao string.
 
-| Ime            | Deskripcija                                                  |
-| -------------- | ------------------------------------------------------------ |
-| playerid       | ID igrača za dobiti igračevu varijablu.                      |
-| varname        | Ime igračeve varijable, postavljeno od SetPVarString.        |
-| &string_return | Niz za pohraniti string vrijednost, proslijeđeno referencom. |
-| len            | Maksimalna dužina returnovanog/vraćenog stringa.             |
+| Ime            | Deskripcija                                                            |
+| -------------- | ---------------------------------------------------------------------- |
+| playerid       | ID igrača za dobiti igračevu varijablu.                                |
+| varname        | Ime igračeve varijable, postavljeno od [SetPVarString](SetPVarString). |
+| &string_return | Niz za pohraniti string vrijednost, proslijeđeno referencom.           |
+| len            | Maksimalna dužina returnovanog/vraćenog stringa.                       |
 
 ## Returns
 

@@ -9,10 +9,10 @@ tags: ["textdraw"]
 
 Changes the text font.
 
-| Name                | Description                                                                                                                                                                                                                                                    |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Text:textid         | The TextDraw to change                                                                                                                                                                                                                                         |
-| TEXT_DRAW_FONT:font | There are four font styles as shown below. Font value **4** specifies that this is a txd sprite; **5** specifies that this textdraw can display preview models. A font value greater than 5 does not display, and anything greater than 16 crashes the client. |
+| Name                | Description                                                                                                                                                                                                                                                                                                               |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Text:textid         | The TextDraw to change                                                                                                                                                                                                                                                                                                    |
+| TEXT_DRAW_FONT:font | There are four font styles as shown below. Font value **4** specifies that this is a [txd sprite](../resources/textdrawsprites); **5** specifies that this textdraw can display [preview models](TextDrawSetPreviewModel). A font value greater than 5 does not display, and anything greater than 16 crashes the client. |
 
 **Available Styles:**
 ![Available Styles](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)

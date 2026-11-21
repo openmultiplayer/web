@@ -9,9 +9,9 @@ tags: ["pickup"]
 
 Destrói um pickup criado com [CreatePickup](CreatePickup).
 
-| Nome   | Descrição                                              |
-| ------ | ------------------------------------------------------ |
-| pickup | O ID do pickup a destruir (retornado por CreatePickup) |
+| Nome   | Descrição                                                              |
+| ------ | ---------------------------------------------------------------------- |
+| pickup | O ID do pickup a destruir (retornado por [CreatePickup](CreatePickup)) |
 
 ## retorno
 

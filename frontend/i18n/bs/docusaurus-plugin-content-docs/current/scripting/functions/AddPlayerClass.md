@@ -9,19 +9,19 @@ tags: ["player"]
 
 Dodaje klasu na listu selekcije klasa. Klase se koriste da se igrači spawnaju sa skinom njihovog odabira.
 
-| Ime           | Deskripcija                                                |
-| ------------- | ---------------------------------------------------------- |
-| modelid       | Skin sa kojim će se igrač spawnovati/stvoriti.             |
-| Float:spawn_x | X kordinata spawnpointa ove klase.                         |
-| Float:spawn_y | Y kordinata spawnpointa ove klase.                         |
-| Float:spawn_z | Z kordinata spawnpointa ove klase.                         |
-| Float:z_angle | Smjer u koji će igrač gledati nakon spawnovanja/stvaranja. |
-| weapon1       | Prvo spawn-oružje za igrača.                               |
-| weapon1_ammo  | Količina municije za primarno spawn oružje.                |
-| weapon2       | Drugo spawn-oružje za igrača.                              |
-| weapon2_ammo  | Količina municije za sekundarno spawn oružje.              |
-| weapon3       | Treće spawn-oružje za igrača.                              |
-| weapon3_ammo  | Količina municije za treće spawn oružje.                   |
+| Ime                           | Deskripcija                                                |
+| ----------------------------- | ---------------------------------------------------------- |
+| [modelid](../resources/skins) | Skin sa kojim će se igrač spawnovati/stvoriti.             |
+| Float:spawn_x                 | X kordinata spawnpointa ove klase.                         |
+| Float:spawn_y                 | Y kordinata spawnpointa ove klase.                         |
+| Float:spawn_z                 | Z kordinata spawnpointa ove klase.                         |
+| Float:z_angle                 | Smjer u koji će igrač gledati nakon spawnovanja/stvaranja. |
+| weapon1                       | Prvo spawn-oružje za igrača.                               |
+| weapon1_ammo                  | Količina municije za primarno spawn oružje.                |
+| weapon2                       | Drugo spawn-oružje za igrača.                              |
+| weapon2_ammo                  | Količina municije za sekundarno spawn oružje.              |
+| weapon3                       | Treće spawn-oružje za igrača.                              |
+| weapon3_ammo                  | Količina municije za treće spawn oružje.                   |
 
 ## Returns
 

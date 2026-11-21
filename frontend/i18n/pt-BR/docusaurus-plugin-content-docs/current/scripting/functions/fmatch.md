@@ -10,12 +10,12 @@ tags: ["file management"]
 
 Encontre um nome de arquivo que corresponda a um padrão.
 
-| Nome                     | Descrição                                                                  |
-| ------------------------ | -------------------------------------------------------------------------- |
-| const filename[]         | A string para armazenar o resultado, retornada como uma string compactada. |
-| const pattern[]          | O padrão que deve ser correspondido. Pode conter curingas.                 |
-| index                    | O número do arquivo, caso haja múltiplas correspondências. (padrão: 0)     |
-| size = sizeof (filename) | O tamanho máximo do _nome_ do parâmetro.                                   |
+| Nome                     | Descrição                                                                               |
+| ------------------------ | --------------------------------------------------------------------------------------- |
+| const filename[]         | A string para armazenar o resultado, retornada como uma [string compactada](strunpack). |
+| const pattern[]          | O padrão que deve ser correspondido. Pode conter curingas.                              |
+| index                    | O número do arquivo, caso haja múltiplas correspondências. (padrão: 0)                  |
+| size = sizeof (filename) | O tamanho máximo do _nome_ do parâmetro.                                                |
 
 ## Retornos
 

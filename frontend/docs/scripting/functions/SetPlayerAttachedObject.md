@@ -13,7 +13,7 @@ Attach an object to a specific bone on a player.
 | --------------- | ---------------------------------------------------------------------------------------- |
 | playerid        | The ID of the player to attach the object to.                                            |
 | index           | The index (slot 0-9) to assign the object to.                                            |
-| modelid         | The model to attach.                                                                     |
+| modelid         | The [model](../resources/samp_objects) to attach.                                        |
 | bone            | The [bone](../resources/boneid) to attach the object to.                                 |
 | Float:offsetX   | (optional) X axis offset for the object position.                                        |
 | Float:offsetY   | (optional) Y axis offset for the object position.                                        |

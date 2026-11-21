@@ -14,7 +14,7 @@ Esta callback é chama quando algum jogador recebe dano.
 | playerid        | O ID do jogador que recebeu determinado dano.                                      |
 | issuerid        | O ID do jogador que causou o dano. INVALID_PLAYER_ID se o dano for auto-infligido. |
 | Float:amount    | A quantidade de dano total que o jogador recebey (vida e colete combinados).       |
-| WEAPON:weaponid | O ID da arma/razão do determinado dano.                                            |
+| WEAPON:weaponid | O ID da [arma/razão](../resources/weaponids) do determinado dano.                  |
 | bodypart        | A [Parte do Corpo](../resources/bodyparts) que foi atingida.                       |
 
 ## Retornos

@@ -11,7 +11,7 @@ Cria um objeto em coordenadas especificadas no mundo do jogo.
 
 | Nome               | Descrição                                                                                                                                                                                        |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| modelid            | O modelo do objeto.                                                                                                                                                                              |
+| modelid            | O [modelo do objeto](https://dev.prineside.com/en/gtasa_samp_model_id/).                                                                                                                         |
 | Float:X            | A coordenada X para criar o objeto.                                                                                                                                                              |
 | Float:Y            | A coordenada Y para criar o objeto.                                                                                                                                                              |
 | Float:Z            | A coordenada Z para criar o objeto.                                                                                                                                                              |

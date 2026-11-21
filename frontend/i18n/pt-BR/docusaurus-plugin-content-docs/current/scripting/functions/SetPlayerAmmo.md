@@ -10,11 +10,11 @@ tags: ["player"]
 
 Defina a munição da arma de um jogador.
 
-| Nome            | Descrição                                                                      |
-| --------------- | ------------------------------------------------------------------------------ |
-| playerid        | O ID do jogador para definir a munição da arma.                                |
-| WEAPON:weaponid | O ID da arma para definir a munição. (não o slot de armas como no samp inclui) |
-| ammo            | A quantidade de munição a ser definida.                                        |
+| Nome            | Descrição                                                                                                |
+| --------------- | -------------------------------------------------------------------------------------------------------- |
+| playerid        | O ID do jogador para definir a munição da arma.                                                          |
+| WEAPON:weaponid | O [ID da arma](../resources/weaponids) para definir a munição. (não o slot de armas como no samp inclui) |
+| ammo            | A quantidade de munição a ser definida.                                                                  |
 
 ## Retornos
 

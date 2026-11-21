@@ -19,7 +19,7 @@ Executada quando um jogador pré-visualiza um paintjob na garagem (modshop). Cui
 | ---------- | ----------------------------------------------------- |
 | playerid   | ID do jogador que está mudando o paintjob do veículo. |
 | vehicleid  | ID do veículo que está mudando o paintjob.            |
-| paintjobid | ID do novo paintjob.                                  |
+| paintjobid | ID do novo [paintjob](../resources/paintjobs).        |
 
 ## Retornos
 

@@ -9,10 +9,10 @@ tags: ["player"]
 
 Apelat atunci când un jucător schimbă clasa la selecția clasei (și când apare prima dată selecția clasei).
 
-| Nume     | Descriere                                                                |
-| -------- | ------------------------------------------------------------------------ |
-| playerid | ID-ul jucătorului care a schimbat clasa.                                 |
-| classid  | ID-ul clasei curente care este vizualizată (returnat de AddPlayerClass). |
+| Nume     | Descriere                                                                                               |
+| -------- | ------------------------------------------------------------------------------------------------------- |
+| playerid | ID-ul jucătorului care a schimbat clasa.                                                                |
+| classid  | ID-ul clasei curente care este vizualizată (returnat de [AddPlayerClass](../functions/AddPlayerClass)). |
 
 ## Returnări
 

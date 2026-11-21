@@ -9,9 +9,9 @@ tags: []
 
 Vraća dužinu datoteke.
 
-| Ime    | Deskripcija                                 |
-| ------ | ------------------------------------------- |
-| handle | Upravitelj datoteke vraćena fopen ili ftemp |
+| Ime    | Deskripcija                                                   |
+| ------ | ------------------------------------------------------------- |
+| handle | Upravitelj datoteke vraćena [fopen](fopen) ili [ftemp](ftemp) |
 
 ## Returns
 

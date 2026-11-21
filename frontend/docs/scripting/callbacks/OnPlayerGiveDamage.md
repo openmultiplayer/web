@@ -9,13 +9,13 @@ tags: ["player"]
 
 This callback is called when a player gives damage to another player.
 
-| Name            | Description                                                |
-| --------------- | ---------------------------------------------------------- |
-| playerid        | The ID of the player that gave damage.                     |
-| damagedid       | The ID of the player that received damage.                 |
-| Float:amount    | The amount of health/armour damagedid has lost (combined). |
-| WEAPON:weaponid | The reason that caused the damage.                         |
-| bodypart        | The [body part](../resources/bodyparts) that was hit.      |
+| Name            | Description                                                  |
+| --------------- | ------------------------------------------------------------ |
+| playerid        | The ID of the player that gave damage.                       |
+| damagedid       | The ID of the player that received damage.                   |
+| Float:amount    | The amount of health/armour damagedid has lost (combined).   |
+| WEAPON:weaponid | The [reason](../resources/weaponids) that caused the damage. |
+| bodypart        | The [body part](../resources/bodyparts) that was hit.        |
 
 ## Returns
 

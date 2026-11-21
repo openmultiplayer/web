@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Prikazuje [textdraw](TextDrawCreate) za određenog igrača.
 
-| Ime      | Deskripcija                                                     |
-| -------- | --------------------------------------------------------------- |
-| playerid | ID igrača za prikazati textdraw.                                |
-| text     | ID textdrawa za prikazati. Returnovan/vraćen od TextDrawCreate. |
+| Ime      | Deskripcija                                                                       |
+| -------- | --------------------------------------------------------------------------------- |
+| playerid | ID igrača za prikazati textdraw.                                                  |
+| text     | ID textdrawa za prikazati. Returnovan/vraćen od [TextDrawCreate](TextDrawCreate). |
 
 ## Returns
 

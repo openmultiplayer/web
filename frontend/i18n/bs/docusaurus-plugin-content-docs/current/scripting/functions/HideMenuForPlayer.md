@@ -9,10 +9,10 @@ tags: ["player", "menu"]
 
 Sakriva meni za igrača.
 
-| Ime      | Deskripcija                                                                          |
-| -------- | ------------------------------------------------------------------------------------ |
-| menuid   | ID menija za sakriti. Vraćen od CreateMenu i proslijeđen do OnPlayerSelectedMenuRow. |
-| playerid | ID igrača za kojeg će meni biti sakriven.                                            |
+| Ime      | Deskripcija                                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| menuid   | ID menija za sakriti. Vraćen od [CreateMenu](CreateMenu) i proslijeđen do [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow). |
+| playerid | ID igrača za kojeg će meni biti sakriven.                                                                                                  |
 
 ## Returns
 

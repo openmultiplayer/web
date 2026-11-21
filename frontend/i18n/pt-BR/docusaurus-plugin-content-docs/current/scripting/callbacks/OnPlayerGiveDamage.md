@@ -9,13 +9,13 @@ tags: ["player"]
 
 Esta callback é chamada quando um jogador causa danos a algum jogador.
 
-| Nome                               | Descrição                           |
-| ---------------------------------- | ----------------------------------- |
-| playerid                           | O ID do jogador que causou o dano.  |
-| damagedid                          | O ID do jogador que recebeu o dano. |
-| Float:amount                       | A quantidade de dano causado.       |
-| WEAPON:weaponid                    | O motivo que causou o dano.         |
-| [bodypart](../resources/bodyparts) | A parte do corpo que foi atingida.  |
+| Nome                               | Descrição                                             |
+| ---------------------------------- | ----------------------------------------------------- |
+| playerid                           | O ID do jogador que causou o dano.                    |
+| damagedid                          | O ID do jogador que recebeu o dano.                   |
+| Float:amount                       | A quantidade de dano causado.                         |
+| WEAPON:weaponid                    | O [motivo](../resources/weaponids) que causou o dano. |
+| [bodypart](../resources/bodyparts) | A parte do corpo que foi atingida.                    |
 
 ## Retorno
 

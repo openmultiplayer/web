@@ -10,9 +10,9 @@ tags: ["textdraw"]
 
 Destrói um textdraw criado anteriormente.
 
-| Nome | Descrição |
-| ----------- | -------------------------------------------------------------- |
-| Text:textid | O ID do textdraw a ser destruído. Retornado por TextDrawCreate. |
+| Nome        | Descrição                                                                         |
+| ----------- | --------------------------------------------------------------------------------- |
+| Text:textid | O ID do textdraw a ser destruído. Retornado por [TextDrawCreate](TextDrawCreate). |
 
 ## Retornos
 

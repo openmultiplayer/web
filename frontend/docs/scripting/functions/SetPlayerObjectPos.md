@@ -9,13 +9,13 @@ tags: ["player", "object", "playerobject"]
 
 Sets the position of a player-object to the specified coordinates.
 
-| Name     | Description                                                                         |
-| -------- | ----------------------------------------------------------------------------------- |
-| playerid | The ID of the player whose player-object to set the position of.                    |
-| objectid | The ID of the player-object to set the position of. Returned by CreatePlayerObject. |
-| Float:x  | The X coordinate to put the object at.                                              |
-| Float:y  | The Y coordinate to put the object at.                                              |
-| Float:z  | The Z coordinate to put the object at.                                              |
+| Name     | Description                                                                                               |
+| -------- | --------------------------------------------------------------------------------------------------------- |
+| playerid | The ID of the player whose player-object to set the position of.                                          |
+| objectid | The ID of the player-object to set the position of. Returned by [CreatePlayerObject](CreatePlayerObject). |
+| Float:x  | The X coordinate to put the object at.                                                                    |
+| Float:y  | The Y coordinate to put the object at.                                                                    |
+| Float:z  | The Z coordinate to put the object at.                                                                    |
 
 ## Returns
 

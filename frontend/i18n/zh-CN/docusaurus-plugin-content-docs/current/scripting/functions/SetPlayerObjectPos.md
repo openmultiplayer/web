@@ -9,13 +9,13 @@ tags: ["玩家", "物体", "玩家物体"]
 
 设置玩家物体到指定坐标位置。
 
-| 参数名   | 说明                                      |
-| -------- | ----------------------------------------- |
-| playerid | 目标玩家 ID                               |
-| objectid | 玩家物体 ID（由 CreatePlayerObject 创建） |
-| Float:x  | 目标位置 X 坐标                           |
-| Float:y  | 目标位置 Y 坐标                           |
-| Float:z  | 目标位置 Z 坐标                           |
+| 参数名   | 说明                                                            |
+| -------- | --------------------------------------------------------------- |
+| playerid | 目标玩家 ID                                                     |
+| objectid | 玩家物体 ID（由 [CreatePlayerObject](CreatePlayerObject) 创建） |
+| Float:x  | 目标位置 X 坐标                                                 |
+| Float:y  | 目标位置 Y 坐标                                                 |
+| Float:z  | 目标位置 Z 坐标                                                 |
 
 ## 返回值
 

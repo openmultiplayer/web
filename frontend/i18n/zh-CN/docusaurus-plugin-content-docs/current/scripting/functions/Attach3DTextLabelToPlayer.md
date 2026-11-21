@@ -9,13 +9,13 @@ tags: ["玩家", "3d文本标签"]
 
 将 [3D 文本标签](Create3DTextLabel)附加到玩家身上。
 
-| 参数          | 说明                                                 |
-| ------------- | ---------------------------------------------------- |
-| Text3D:textid | 要附加的 3D 文本标签 ID（由 Create3DTextLabel 返回） |
-| playerid      | 要附加标签的玩家 ID                                  |
-| Float:offsetX | 玩家坐标的 X 轴偏移量                                |
-| Float:offsetY | 玩家坐标的 Y 轴偏移量                                |
-| Float:offsetZ | 玩家坐标的 Z 轴偏移量                                |
+| 参数          | 说明                                                                      |
+| ------------- | ------------------------------------------------------------------------- |
+| Text3D:textid | 要附加的 3D 文本标签 ID（由 [Create3DTextLabel](Create3DTextLabel) 返回） |
+| playerid      | 要附加标签的玩家 ID                                                       |
+| Float:offsetX | 玩家坐标的 X 轴偏移量                                                     |
+| Float:offsetY | 玩家坐标的 Y 轴偏移量                                                     |
+| Float:offsetZ | 玩家坐标的 Z 轴偏移量                                                     |
 
 ## 返回值
 

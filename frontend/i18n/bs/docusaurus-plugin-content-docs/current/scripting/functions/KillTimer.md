@@ -9,9 +9,9 @@ tags: []
 
 Ubija (stopira) pokrenuti tajmer.
 
-| Ime     | Deskripcija                                                         |
-| ------- | ------------------------------------------------------------------- |
-| timerid | ID tajmera za ubiti (returnovan/vraćen od SetTimer ili SetTimerEx). |
+| Ime     | Deskripcija                                                                                   |
+| ------- | --------------------------------------------------------------------------------------------- |
+| timerid | ID tajmera za ubiti (returnovan/vraćen od [SetTimer](SetTimer) ili [SetTimerEx](SetTimerEx)). |
 
 ## Returns
 

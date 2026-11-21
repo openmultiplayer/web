@@ -11,12 +11,12 @@ tags: ["玩家", "文本绘图", "玩家文本绘图"]
 
 设置玩家文本绘图 3D 预览中显示的车辆主副配色（需预览模型为车辆）
 
-| 参数              | 说明                      |
-| ----------------- | ------------------------- |
-| playerid          | 要修改的玩家 ID           |
-| PlayerText:textid | 要修改的玩家文本绘图的 ID |
-| colour1           | 车辆主颜色 ID             |
-| colour2           | 车辆副颜色 ID             |
+| 参数              | 说明                                         |
+| ----------------- | -------------------------------------------- |
+| playerid          | 要修改的玩家 ID                              |
+| PlayerText:textid | 要修改的玩家文本绘图的 ID                    |
+| colour1           | 车辆主[颜色 ID](../resources/vehiclecolorid) |
+| colour2           | 车辆副[颜色 ID](../resources/vehiclecolorid) |
 
 ## 返回值
 

@@ -10,13 +10,13 @@ tags: []
 
 Obtenha a biblioteca/nome da animação para o índice.
 
-| Nome | Descrição |
-| -------------------------------- | --------------------------------------------------------- |
-| index | O índice de animação, retornado por GetPlayerAnimationIndex. |
-| animationLibrary[] | Variável string que armazena a biblioteca de animação.        |
-| len1 = sizeof (animationLibrary) | Tamanho da string que armazena a biblioteca de animação.     |
-| animationName[] | Variável string que armazena o nome da animação.           |
-| len2 = sizeof (animationName) | Tamanho da string que armazena o nome da animação.        |
+| Nome                             | Descrição                                                                               |
+| -------------------------------- | --------------------------------------------------------------------------------------- |
+| index                            | O índice de animação, retornado por [GetPlayerAnimationIndex](GetPlayerAnimationIndex). |
+| animationLibrary[]               | Variável string que armazena a biblioteca de animação.                                  |
+| len1 = sizeof (animationLibrary) | Tamanho da string que armazena a biblioteca de animação.                                |
+| animationName[]                  | Variável string que armazena o nome da animação.                                        |
+| len2 = sizeof (animationName)    | Tamanho da string que armazena o nome da animação.                                      |
 
 ## Retornos
 

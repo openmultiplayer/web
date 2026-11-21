@@ -23,7 +23,7 @@ Ada dua cara untuk membuat pickup. [CreatePickup](../scripting/functions/CreateP
 
 | Nama         | Deskripsi                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------ |
-| model        | Model yang anda suka gunakan untuk pickup.                                                             |
+| model        | [Model](../scripting/resources/pickupids) yang anda suka gunakan untuk pickup.                         |
 | type         | Tipe pickup spawn, lihat lebih lanjut dibawah halaman ini.                                             |
 | Float:X      | Koordinat titik X munculnya pickup.                                                                    |
 | Float:Y      | Koordinat titik Y munculnya pickup.                                                                    |

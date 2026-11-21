@@ -15,13 +15,13 @@ tags: ["车辆"]
 
 设置车辆的各类视觉损坏状态，包括爆胎、车灯破损和车身面板损伤。
 
-| 参数                        | 说明                      |
-| --------------------------- | ------------------------- |
-| vehicleid                   | 需要设置损坏状态的车辆 ID |
-| VEHICLE_PANEL_STATUS:panels | 包含面板损坏状态的位集合  |
-| VEHICLE_DOOR_STATUS:doors   | 包含车门损坏状态的位集合  |
-| VEHICLE_LIGHT_STATUS:lights | 包含车灯损坏状态的位集合  |
-| VEHICLE_TIRE_STATUS:tires   | 包含轮胎损坏状态的位集合  |
+| 参数                        | 说明                                                 |
+| --------------------------- | ---------------------------------------------------- |
+| vehicleid                   | 需要设置损坏状态的车辆 ID                            |
+| VEHICLE_PANEL_STATUS:panels | 包含[面板损坏状态](../resources/panelstates)的位集合 |
+| VEHICLE_DOOR_STATUS:doors   | 包含[车门损坏状态](../resources/doorstates)的位集合  |
+| VEHICLE_LIGHT_STATUS:lights | 包含[车灯损坏状态](../resources/lightstates)的位集合 |
+| VEHICLE_TIRE_STATUS:tires   | 包含[轮胎损坏状态](../resources/tirestates)的位集合  |
 
 ## 返回值
 

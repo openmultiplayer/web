@@ -11,10 +11,10 @@ tags: ["actor"]
 
 Set the facing angle of an actor.
 
-| Name        | Description                                                              |
-| ----------- | ------------------------------------------------------------------------ |
-| actorid     | The ID of the actor to set the facing angle of. Returned by CreateActor. |
-| Float:angle | The facing angle to set for the actor.                                   |
+| Name        | Description                                                                             |
+| ----------- | --------------------------------------------------------------------------------------- |
+| actorid     | The ID of the actor to set the facing angle of. Returned by [CreateActor](CreateActor). |
+| Float:angle | The facing angle to set for the actor.                                                  |
 
 ## Returns
 

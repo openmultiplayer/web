@@ -11,11 +11,11 @@ tags: ["custom model", "custom skin", "simple model"]
 
 Find an existing custom [skin](AddCharModel) or simple [object](AddSimpleModel) model file. The model files are located in `models` server folder by default ([artpath setting](../../server/server.cfg#custom-models)).
 
-| Name                   | Description                                                               |
-| ---------------------- | ------------------------------------------------------------------------- |
-| crc                    | The CRC checksum of custom model file.                                    |
-| output[]               | An array into which to store the **.dff** file name, passed by reference. |
-| size = sizeof (output) | The length of the string that should be stored.                           |
+| Name                   | Description                                                                                     |
+| ---------------------- | ----------------------------------------------------------------------------------------------- |
+| crc                    | The [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) checksum of custom model file. |
+| output[]               | An array into which to store the **.dff** file name, passed by reference.                       |
+| size = sizeof (output) | The length of the string that should be stored.                                                 |
 
 ## Returns
 

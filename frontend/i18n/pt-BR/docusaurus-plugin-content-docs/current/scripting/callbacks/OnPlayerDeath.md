@@ -13,7 +13,7 @@ Esta callback é chamada quando um jogador morre, tanto por suicídio ou por ser
 | ------------- | ------------------------------------------------------------------------------------- |
 | playerid      | O ID do jogador que morreu                                                            |
 | killerid      | O ID do jogador que matou o jogador que morreu, ou INVALID_PLAYER_ID se não houve um. |
-| WEAPON:reason | O ID do motivo da morte do jogador.                                                   |
+| WEAPON:reason | O ID do [motivo da morte](../resources/weaponids) do jogador.                         |
 
 ## Retorno
 

@@ -15,13 +15,13 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 Kreiraj statičnog aktora u svijetu. Ovi aktori su kao NPC-ovi, kakogod imaju ograničene mogućnosti. Ne zauzimaju server slotove.
 
-| Ime      | Deskripcija                                     |
-| -------- | ----------------------------------------------- |
-| modelid  | ID modela (skin ID) kojeg će aktor imati.       |
-| x        | X kordinata na kojoj će se kreirati aktor.      |
-| y        | Y kordinata na kojoj će se kreirati aktor.      |
-| z        | Z kordinata na kojoj će se kreirati aktor.      |
-| Rotation | Smjer gledanja (rotacija) kojeg će imati aktor. |
+| Ime      | Deskripcija                                                     |
+| -------- | --------------------------------------------------------------- |
+| modelid  | ID modela ([skin ID](../resources/skins)) kojeg će aktor imati. |
+| x        | X kordinata na kojoj će se kreirati aktor.                      |
+| y        | Y kordinata na kojoj će se kreirati aktor.                      |
+| z        | Z kordinata na kojoj će se kreirati aktor.                      |
+| Rotation | Smjer gledanja (rotacija) kojeg će imati aktor.                 |
 
 ## Returns
 

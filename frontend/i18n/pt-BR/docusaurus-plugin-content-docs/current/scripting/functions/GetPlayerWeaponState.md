@@ -10,9 +10,9 @@ tags: ["player"]
 
 Verifique o [estado](../resources/weaponstates) da arma de um jogador.
 
-| Nome     | Descrição                                    |
-| -------- | -------------------------------------------- |
-| playerid | O ID do jogador para obter o estado da arma. |
+| Nome     | Descrição                                                                 |
+| -------- | ------------------------------------------------------------------------- |
+| playerid | O ID do jogador para obter o [estado da arma](../resources/weaponstates). |
 
 ## Retornos
 

@@ -10,12 +10,12 @@ tags: ["object"]
 
 Alterar a posição de um [objeto](CreateObject).
 
-| Nome | Descrição |
-| -------- | ---------------------------------------------------------------------- |
-| objectid | O ID do objeto cuja posição será definida. Retornado por CreateObject. |
-| Float:x | A coordenada X na qual posicionar o objeto.                            |
-| Float:y | A coordenada Y na qual posicionar o objeto.                            |
-| Float:z | A coordenada Z na qual posicionar o objeto.                            |
+| Nome     | Descrição                                                                              |
+| -------- | -------------------------------------------------------------------------------------- |
+| objectid | O ID do objeto cuja posição será definida. Retornado por [CreateObject](CreateObject). |
+| Float:x  | A coordenada X na qual posicionar o objeto.                                            |
+| Float:y  | A coordenada Y na qual posicionar o objeto.                                            |
+| Float:z  | A coordenada Z na qual posicionar o objeto.                                            |
 
 ## Retornos
 

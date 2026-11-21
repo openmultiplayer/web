@@ -9,10 +9,10 @@ tags: ["player"]
 
 Uklanja ikonicu na mapi koja je prethodno postavljena za igrača koristeći [SetPlayerMapIcon](SetPlayerMapIcon).
 
-| Ime      | Deskripcija                                                         |
-| -------- | ------------------------------------------------------------------- |
-| playerid | ID igrača čija će ikonica biti uklonjena.                           |
-| iconid   | ID ikonice za ukloniti. Ovo je drugi parametar od SetPlayerMapIcon. |
+| Ime      | Deskripcija                                                                             |
+| -------- | --------------------------------------------------------------------------------------- |
+| playerid | ID igrača čija će ikonica biti uklonjena.                                               |
+| iconid   | ID ikonice za ukloniti. Ovo je drugi parametar od [SetPlayerMapIcon](SetPlayerMapIcon). |
 
 ## Returns
 

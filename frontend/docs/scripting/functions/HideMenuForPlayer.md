@@ -9,10 +9,10 @@ tags: ["player", "menu"]
 
 Hides a menu for a player.
 
-| Name        | Description                                                                                                                       |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Menu:menuid | The ID of the menu to hide. Returned by CreateMenu and passed to [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow). |
-| playerid    | The ID of the player that the menu will be hidden for.                                                                            |
+| Name        | Description                                                                                                                                     |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Menu:menuid | The ID of the menu to hide. Returned by [CreateMenu](CreateMenu) and passed to [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow). |
+| playerid    | The ID of the player that the menu will be hidden for.                                                                                          |
 
 ## Returns
 

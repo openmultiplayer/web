@@ -10,10 +10,10 @@ tags: ["textdraw"]
 
 Altera a fonte do texto.
 
-| Nome                | Descrição                                                                                                                                                                                                                                                                                 |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Text:textid         | O TextDraw para mudar                                                                                                                                                                                                                                                                     |
-| TEXT_DRAW_FONT:font | Existem quatro estilos de fonte, conforme mostrado abaixo. O valor da fonte **4** especifica que este é um sprite txd; **5** especifica que este textdraw pode exibir modelos de visualização. Um valor de fonte maior que 5 não é exibido e qualquer valor maior que 16 trava o cliente. |
+| Nome                | Descrição                                                                                                                                                                                                                                                                                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Text:textid         | O TextDraw para mudar                                                                                                                                                                                                                                                                                                                                |
+| TEXT_DRAW_FONT:font | Existem quatro estilos de fonte, conforme mostrado abaixo. O valor da fonte **4** especifica que este é um [sprite txd](../resources/textdrawsprites); **5** especifica que este textdraw pode exibir [modelos de visualização](TextDrawSetPreviewModel). Um valor de fonte maior que 5 não é exibido e qualquer valor maior que 16 trava o cliente. |
 
 **Estilos disponíveis:**
 ![Estilos disponíveis](https://assets.open.mp/assets/images/textdraws/Textdraw_font_styles.png)

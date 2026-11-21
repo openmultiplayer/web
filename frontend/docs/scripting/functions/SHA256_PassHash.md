@@ -17,12 +17,12 @@ This function is deprecated in open.mp, Use [samp-bcrypt](https://github.com/Sre
 
 Hashes a password using the SHA-256 hashing algorithm. Includes a salt. The output is always 256 bits in length, or the equivalent of 64 Pawn cells.
 
-| Name                   | Description                                        |
-| ---------------------- | -------------------------------------------------- |
-| const password[]       | The password to hash.                              |
-| const salt[]           | The salt to use in the hash.                       |
-| output[]               | The returned hash in uppercase hexadecimal digest. |
-| size = sizeof (output) | The returned hash maximum length.                  |
+| Name                   | Description                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------- |
+| const password[]       | The password to hash.                                                             |
+| const salt[]           | The [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) to use in the hash. |
+| output[]               | The returned hash in uppercase hexadecimal digest.                                |
+| size = sizeof (output) | The returned hash maximum length.                                                 |
 
 ## Returns
 

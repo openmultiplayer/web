@@ -12,7 +12,7 @@ Remove um modelo de San Andreas para um único jogador em um raio específico.
 | Nome          | Descrição                                                                             |
 | ------------- | ------------------------------------------------------------------------------------- |
 | playerid      | O ID do jogador para o qual remover os objetos.                                       |
-| modelid       | O modelo a ser removido.                                                              |
+| modelid       | O [modelo](https://dev.prineside.com/en/gtasa_samp_model_id/) a ser removido.         |
 | Float:fX      | A coordenada X em torno da qual os objetos serão removidos.                           |
 | Float:fY      | A coordenada Y em torno da qual os objetos serão removidos.                           |
 | Float:fZ      | A coordenada Z em torno da qual os objetos serão removidos.                           |

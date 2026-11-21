@@ -11,7 +11,7 @@ Creates an object at specified coordinates in the game world.
 
 | Name               | Description                                                                                                               |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| modelid            | The model to create.                                                                                                      |
+| modelid            | The [model](https://dev.prineside.com/en/gtasa_samp_model_id/) to create.                                                 |
 | Float:X            | The X coordinate to create the object at.                                                                                 |
 | Float:Y            | The Y coordinate to create the object at.                                                                                 |
 | Float:Z            | The Z coordinate to create the object at.                                                                                 |

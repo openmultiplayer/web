@@ -11,7 +11,7 @@ Kreira objekat na određenim kordinatama iz igre.
 
 | Ime                | Deskripcija                                                                                                                                                                              |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| modelid            | Model za kreirati.                                                                                                                                                                       |
+| modelid            | [Model za kreirati](https://dev.prineside.com/en/gtasa_samp_model_id/).                                                                                                                  |
 | Float:X            | X kordinata za kreirati objekat.                                                                                                                                                         |
 | Float:Y            | Y kordinata za kreirati objekat.                                                                                                                                                         |
 | Float:Z            | Z kordinata za kreirati objekat.                                                                                                                                                         |

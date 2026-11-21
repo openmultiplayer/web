@@ -9,10 +9,10 @@ tags: []
 
 Uzmi [sinus](https://en.wikipedia.org/wiki/Sine_and_cosine) iz zadanog ugla. Ulazni ugao može biti u radijanima, stupnjevima ili stupnjevima.
 
-| Ime         | Deskripcija                                                |
-| ----------- | ---------------------------------------------------------- |
-| Float:value | Ugao iz kojeg se dobija sinus.                             |
-| anglemode   | Način kuta koji se koristi, ovisno o unesenoj vrijednosti. |
+| Ime                                  | Deskripcija                                                |
+| ------------------------------------ | ---------------------------------------------------------- |
+| Float:value                          | Ugao iz kojeg se dobija sinus.                             |
+| [anglemode](../resources/anglemodes) | Način kuta koji se koristi, ovisno o unesenoj vrijednosti. |
 
 ## Returns
 

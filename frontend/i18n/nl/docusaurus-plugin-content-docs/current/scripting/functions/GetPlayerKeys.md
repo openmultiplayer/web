@@ -9,12 +9,12 @@ tags: ["player"]
 
 Lees de huidige key‑states van een speler.
 
-| Naam      | Beschrijving                                            |
-| --------- | ------------------------------------------------------- |
-| playerid  | ID van de speler.                                       |
-| &KEY:keys | Bitmask met key‑states (zie [Keys](../resources/keys)). |
-| updown    | Up/down‑state.                                          |
-| leftright | Left/right‑state.                                       |
+| Naam      | Beschrijving                                                                                              |
+| --------- | --------------------------------------------------------------------------------------------------------- |
+| playerid  | ID van de speler.                                                                                         |
+| &KEY:keys | [Bitmask](https://en.wikipedia.org/wiki/Mask_(computing)) met key‑states (zie [Keys](../resources/keys)). |
+| updown    | Up/down‑state.                                                                                            |
+| leftright | Left/right‑state.                                                                                         |
 
 ## Retourneert
 

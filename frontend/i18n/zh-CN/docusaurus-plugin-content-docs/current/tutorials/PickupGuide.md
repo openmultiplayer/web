@@ -19,14 +19,14 @@ new gMyPickup;
 
 **[CreatePickup](../scripting/functions/CreatePickup) 参数说明：**
 
-| 参数         | 说明                                 |
-| ------------ | ------------------------------------ |
-| model        | 拾取物显示模型 ID                    |
-| type         | 生成类型（详见下文）                 |
-| Float:X      | X 坐标                               |
-| Float:Y      | Y 坐标                               |
-| Float:Z      | Z 坐标                               |
-| Virtualworld | 虚拟世界 ID（-1 表示全虚拟世界可见） |
+| 参数         | 说明                                                  |
+| ------------ | ----------------------------------------------------- |
+| model        | 拾取物显示[模型 ID](../scripting/resources/pickupids) |
+| type         | 生成类型（详见下文）                                  |
+| Float:X      | X 坐标                                                |
+| Float:Y      | Y 坐标                                                |
+| Float:Z      | Z 坐标                                                |
+| Virtualworld | 虚拟世界 ID（-1 表示全虚拟世界可见）                  |
 
 以在格罗夫街创建金钱拾取物为例：
 

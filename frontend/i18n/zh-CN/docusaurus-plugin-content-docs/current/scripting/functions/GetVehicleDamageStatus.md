@@ -15,13 +15,13 @@ tags: ["车辆"]
 
 获取车辆的损坏状态信息
 
-| 参数                        | 说明                                   |
-| --------------------------- | -------------------------------------- |
-| vehicleid                   | 要获取损坏状态的车辆 ID                |
-| VEHICLE_PANEL_STATUS:panels | 存储面板损坏数据的变量（通过引用传递） |
-| VEHICLE_DOOR_STATUS:doors   | 存储车门损坏数据的变量（通过引用传递） |
-| VEHICLE_LIGHT_STATUS:lights | 存储车灯损坏数据的变量（通过引用传递） |
-| VEHICLE_TYRE_STATUS:tyres   | 存储轮胎损坏数据的变量（通过引用传递） |
+| 参数                                                    | 说明                                   |
+| ------------------------------------------------------- | -------------------------------------- |
+| vehicleid                                               | 要获取损坏状态的车辆 ID                |
+| VEHICLE_PANEL_STATUS:[panels](../resources/panelstates) | 存储面板损坏数据的变量（通过引用传递） |
+| VEHICLE_DOOR_STATUS:[doors](../resources/doorstates)    | 存储车门损坏数据的变量（通过引用传递） |
+| VEHICLE_LIGHT_STATUS:[lights](../resources/lightstates) | 存储车灯损坏数据的变量（通过引用传递） |
+| VEHICLE_TYRE_STATUS:[tyres](../resources/tirestates)    | 存储轮胎损坏数据的变量（通过引用传递） |
 
 ## 返回值
 

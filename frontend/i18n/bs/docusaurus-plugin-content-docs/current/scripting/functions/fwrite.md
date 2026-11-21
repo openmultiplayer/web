@@ -9,10 +9,10 @@ tags: []
 
 Napišite tekst u datoteku.
 
-| Ime    | Deskripcija                                         |
-| ------ | --------------------------------------------------- |
-| handle | Upravitelj datoteke za upotrebu, otvorila je fopen. |
-| string | String za upisati u fajl.                           |
+| Ime    | Deskripcija                                                  |
+| ------ | ------------------------------------------------------------ |
+| handle | Upravitelj datoteke za upotrebu, otvorila je [fopen](fopen). |
+| string | String za upisati u fajl.                                    |
 
 ## Returns
 

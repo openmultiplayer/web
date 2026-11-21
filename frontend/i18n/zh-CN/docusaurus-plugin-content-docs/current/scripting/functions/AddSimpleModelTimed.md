@@ -11,15 +11,15 @@ tags: ["自定义模型", "简单模型"]
 
 添加具有时间限制的自定义简单[物体模型](CreateObject)。模型文件将存储在玩家的「`文档\GTA San Andreas User Files\SAMP\cache`」目录下，按服务器 IP 和端口分类的文件夹中，并以 [CRC 格式](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)文件名保存。
 
-| 参数                   | 说明                                                                                                     |
-| ---------------------- | -------------------------------------------------------------------------------------------------------- |
-| virtualWorld           | 模型生效的虚拟世界 ID，使用-1 表示全虚拟世界                                                             |
-| baseid                 | 基础物体模型 ID（当下载失败时将使用该原始物体模型）                                                      |
-| newid                  | 新物体模型 ID（范围-1000 至-30000，共 29000 个槽位），后续可通过 CreateObject 或 CreatePlayerObject 使用 |
-| const dff[]            | **.dff** 模型碰撞文件名，默认位于服务器的 `models` 文件夹（可通过 artpath 配置修改路径）                 |
-| const textureLibrary[] | **.txd** 模型贴图文件名，默认位于服务器的 `models` 文件夹（可通过 artpath 配置修改路径）                 |
-| timeOn                 | 模型开始渲染的世界游戏时间（小时）                                                                       |
-| timeOff                | 模型停止渲染的世界游戏时间（小时）                                                                       |
+| 参数                   | 说明                                                                                                                                           |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtualWorld           | 模型生效的[虚拟世界 ID](SetPlayerVirtualWorld)，使用-1 表示全虚拟世界                                                                          |
+| baseid                 | 基础[物体模型 ID](https://dev.prineside.com/en/gtasa_samp_model_id/)（当下载失败时将使用该原始物体模型）                                       |
+| newid                  | 新物体模型 ID（范围-1000 至-30000，共 29000 个槽位），后续可通过 [CreateObject](CreateObject) 或 [CreatePlayerObject](CreatePlayerObject) 使用 |
+| const dff[]            | **.dff** 模型碰撞文件名，默认位于服务器的 `models` 文件夹（可通过 [artpath](../../server/server.cfg#自定义模型) 配置修改路径）                 |
+| const textureLibrary[] | **.txd** 模型贴图文件名，默认位于服务器的 `models` 文件夹（可通过 [artpath](../../server/server.cfg#自定义模型) 配置修改路径）                 |
+| timeOn                 | 模型开始渲染的世界[游戏时间](SetWorldTime)（小时）                                                                                             |
+| timeOff                | 模型停止渲染的世界[游戏时间](SetWorldTime)（小时）                                                                                             |
 
 ## 返回值
 

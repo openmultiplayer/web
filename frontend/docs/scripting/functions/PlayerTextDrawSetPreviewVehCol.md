@@ -9,12 +9,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Set the color of a vehicle in a player-textdraw model preview (if a vehicle is shown).
 
-| Name              | Description                                           |
-| ----------------- | ----------------------------------------------------- |
-| playerid          | The ID of the player whose player-textdraw to change. |
-| PlayerText:textid | The ID of the player's player-textdraw to change.     |
-| colour1           | The color to set the vehicle's primary color to.      |
-| colour2           | The color to set the vehicle's secondary color to.    |
+| Name              | Description                                                                       |
+| ----------------- | --------------------------------------------------------------------------------- |
+| playerid          | The ID of the player whose player-textdraw to change.                             |
+| PlayerText:textid | The ID of the player's player-textdraw to change.                                 |
+| colour1           | The [color](../resources/vehiclecolorid) to set the vehicle's primary color to.   |
+| colour2           | The [color](../resources/vehiclecolorid) to set the vehicle's secondary color to. |
 
 ## Returns
 

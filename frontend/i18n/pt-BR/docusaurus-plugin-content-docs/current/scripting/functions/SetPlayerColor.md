@@ -10,10 +10,10 @@ tags: ["player"]
 
 Defina a cor do crachá e do marcador de um jogador (ponto de radar).
 
-| Nome | Descrição |
-| -------- | ---------------------------------------- |
-| playerid | O ID do jogador cuja cor será definida. |
-| colour | A cor a ser definida. Suporta valores alfa. |
+| Nome     | Descrição                                                                                          |
+| -------- | -------------------------------------------------------------------------------------------------- |
+| playerid | O ID do jogador cuja cor será definida.                                                            |
+| colour   | A cor a ser definida. Suporta [valores alfa](../resources/colorslist#valores-alpha-transparência). |
 
 ## Retornos
 

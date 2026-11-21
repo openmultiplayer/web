@@ -9,21 +9,21 @@ tags: []
 
 Ova funkcija se može koristiti za promijeniti spawn informacije određenog igrača. Ona omogućava da automatski postaviš nekome spawn oružje, njihov tim, skin ili spawn poziciju, normalno se koristi u slučaju miniigara ili automatskih spawn sistema. Ova funkcija je sigurnija od crasha u odnosu na SetPlayerSkin u OnPlayerSpawn i/ili OnPlayerRequestClass, iako je ovo ispravljeno u 0.2.
 
-| Ime            | Deskripcija                                               |
-| -------------- | --------------------------------------------------------- |
-| playerid       | ID igrača kojem želite postaviti spawn informacije.       |
-| team           | Team-ID odabranog igrača.                                 |
-| skin           | Skin s kojim će se igrač spawnovati.                      |
-| Float:X        | X-kordinata igračeve spawn pozicije.                      |
-| Float:Y        | Y-kordinata igračeve spawn pozicije.                      |
-| Float:Z        | Z-kordinata igračeve spawn pozicije.                      |
-| Float:rotation | Smjer u kojem igrač treba da gleda nakon što se spawnuje. |
-| weapon1        | Prvo spawn-oružje za igrača.                              |
-| weapon1_ammo   | Količina streljiva za primarni spawnweapon.               |
-| weapon2        | Drugo spawn-oružje za igrača.                             |
-| weapon2_ammo   | Količina streljiva za sekundarni spawnweapon.             |
-| weapon3        | Treće spawn-oružje za igrača.                             |
-| weapon3_ammo   | Količina streljiva za treći spawnweapon.                  |
+| Ime            | Deskripcija                                                |
+| -------------- | ---------------------------------------------------------- |
+| playerid       | ID igrača kojem želite postaviti spawn informacije.        |
+| team           | Team-ID odabranog igrača.                                  |
+| skin           | [Skin](../resources/skins) s kojim će se igrač spawnovati. |
+| Float:X        | X-kordinata igračeve spawn pozicije.                       |
+| Float:Y        | Y-kordinata igračeve spawn pozicije.                       |
+| Float:Z        | Z-kordinata igračeve spawn pozicije.                       |
+| Float:rotation | Smjer u kojem igrač treba da gleda nakon što se spawnuje.  |
+| weapon1        | Prvo spawn-oružje za igrača.                               |
+| weapon1_ammo   | Količina streljiva za primarni spawnweapon.                |
+| weapon2        | Drugo spawn-oružje za igrača.                              |
+| weapon2_ammo   | Količina streljiva za sekundarni spawnweapon.              |
+| weapon3        | Treće spawn-oružje za igrača.                              |
+| weapon3_ammo   | Količina streljiva za treći spawnweapon.                   |
 
 ## Returns
 
