@@ -30,9 +30,3 @@ sidebar_label: 视角模式
 | 53  | CAM_MODE_AIMWEAPON         | MODE_AIMWEAPON         | 常规武器瞄准                                                                                   |
 | 55  | CAM_MODE_AIMWEAPON_FROMCAR | MODE_AIMWEAPON_FROMCAR | 车辆乘客射击视角（玩家进行乘车射击时）                                                         |
 | 56  | CAM_MODE_DW_HELI_CHASE     | MODE_DW_HELI_CHASE     | 追逐视角：直升机/鸟瞰视角                                                                      |
-| 57  | -                          | MODE_DW_CAM_MAN        | 追逐视角：地面视角，会快速拉近并对准车辆                                                       |
-| 58  | -                          | MODE_DW_BIRDY          | 追逐视角：水平飞越车辆的过场视角                                                               |
-| 59  | -                          | MODE_DW_PLANE_SPOTTER  | 追逐视角（仅限飞行车辆）：地面视角，仰视空中车辆                                               |
-| 62  | -                          | MODE_DW_PLANECAM1      | 追逐视角（仅限飞行车辆）：垂直飞越空中车辆的过场视角                                           |
-| 63  | -                          | MODE_DW_PLANECAM2      | 追逐视角（仅限飞行车辆）：水平飞越空中车辆的过场视角（类似 58 和 62）                          |
-| 64  | -                          | MODE_DW_PLANECAM3      | 追逐视角（仅限飞行车辆）：聚焦飞行员的视角，类似于步行时按下"向后看"键的效果，但应用于飞行车辆 |

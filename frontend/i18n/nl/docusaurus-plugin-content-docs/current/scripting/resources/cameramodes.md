@@ -22,9 +22,3 @@ De volgende cameramodi worden gebruikt door [GetPlayerCameraMode](../functions/G
 | 53  | CAM_MODE_AIMWEAPON         | MODE_AIMWEAPON         | Richten met ander wapen                                               |
 | 55  | CAM_MODE_AIMWEAPON_FROMCAR | MODE_AIMWEAPON_FROMCAR | Passagiers‑drive‑by camera                                            |
 | 56  | CAM_MODE_DW_HELI_CHASE     | MODE_DW_HELI_CHASE     | Chase: helikopter/bird view                                           |
-| 57  | -                          | MODE_DW_CAM_MAN        | Chase: grondcamera; zoomt snel in en pant naar voertuig               |
-| 58  | -                          | MODE_DW_BIRDY          | Chase: horizontale flyby                                              |
-| 59  | -                          | MODE_DW_PLANE_SPOTTER  | Chase (lucht): grondcamera, omhoog naar vliegtuig                     |
-| 62  | -                          | MODE_DW_PLANECAM1      | Chase (lucht): verticale flyby                                        |
-| 63  | -                          | MODE_DW_PLANECAM2      | Chase (lucht): horizontale flyby                                      |
-| 64  | -                          | MODE_DW_PLANECAM3      | Chase (lucht): focus op piloot, vergelijkbaar met LOOK_BEHIND te voet |

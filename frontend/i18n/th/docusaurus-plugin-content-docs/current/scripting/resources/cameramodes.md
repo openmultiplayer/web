@@ -24,9 +24,3 @@ A list of possible camera modes to be used with [GetPlayerCameraMode](../functio
 | 53  | CAM_MODE_AIMWEAPON         | Aiming any other weapon                                                                                                        |
 | 55  | CAM_MODE_AIMWEAPON_FROMCAR | Vehicle passenger aiming camera (drive by as a player)                                                                         |
 | 56  | CAM_MODE_DW_HELI_CHASE     | Chase camera: helicopter/bird view                                                                                             |
-| 57  | -                          | Chase camera: ground camera, zooms in quite quickly and pan to the vehicle                                                     |
-| 58  | -                          | Chase camera: horizontal flyby past vehicle                                                                                    |
-| 59  | -                          | Chase camera (for air vehicles only): ground camera, looking up to the air vehicle                                             |
-| 62  | -                          | Chase camera (for air vehicles only): vertical flyby past air vehicle                                                          |
-| 63  | -                          | Chase camera (for air vehicles only): horizontal flyby past air vehicle (similar to 58 and 62)                                 |
-| 64  | -                          | Chase camera (for air vehicles only): camera focused on pilot, similar to pressing LOOK_BEHIND key on foot, but in air vehicle |
