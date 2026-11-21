@@ -13,7 +13,7 @@ Ovaj callback je pozvan **samo** kada se vozilo **re**spawnuje! CreateVehicle i 
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada se vozilo respawnuje/ponovo stvori.
+Ovaj callback je pozvan kada se vozilo **re**spawnuje/ponovo stvori.
 
 | Ime       | Deskripcija                            |
 | --------- | -------------------------------------- |

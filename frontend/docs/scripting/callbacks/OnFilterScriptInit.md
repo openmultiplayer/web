@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-This callback is called when a filterscript is initialized (loaded). It is only called inside the filterscript which is starting.
+This callback is called when a filterscript is **init**ialized (loaded). It is only called inside the filterscript which is starting.
 
 ## Examples
 

@@ -13,7 +13,7 @@ Deze callback wordt **alleen** aangeroepen wanneer een voertuig **re**spawnt! Cr
 
 ## Beschrijving
 
-Deze callback wordt aangeroepen wanneer een voertuig respawnt.
+Deze callback wordt aangeroepen wanneer een voertuig **re**spawnt.
 
 | Naam      | Beschrijving                         |
 | --------- | ------------------------------------ |

@@ -13,7 +13,7 @@ Ang callback na ito ay tinatawag **lamang** kapag ang sasakyan ay **muling** umu
 
 ## Paglalarawan
 
-Ang callback na ito ay tinatawag kapag ang isang sasakyan ay nag respawn.
+Ang callback na ito ay tinatawag kapag ang isang sasakyan ay nag **re**spawn.
 
 | Name      | Description                        |
 | --------- | ---------------------------------- |

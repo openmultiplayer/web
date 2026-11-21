@@ -50,7 +50,7 @@ Binarul este un sistem numeric care folosește două simboluri unice pentru a re
 1101 //13
 ```
 
-Privind ambele sisteme unul lângă altul, veți observa că se comportă exact la fel. Odată ce ați ajuns la ultimul număr disponibil, trebuie să treceți la un alt loc. Aceste locuri în binar sunt denumite biți (**b** inary dig **its**) și sunt pur și simplu puteri a două; la fel cum locurile din sistemul zecimal sunt puteri de 10. Pentru a demonstra acest lucru, să aruncăm o privire la numărul 13 din notația standard.
+Privind ambele sisteme unul lângă altul, veți observa că se comportă exact la fel. Odată ce ați ajuns la ultimul număr disponibil, trebuie să treceți la un alt loc. Aceste locuri în binar sunt denumite biți (**b**inary dig**its**) și sunt pur și simplu puteri a două; la fel cum locurile din sistemul zecimal sunt puteri de 10. Pentru a demonstra acest lucru, să aruncăm o privire la numărul 13 din notația standard.
 
 ** NOTĂ: ** '^' este putere în următoarele câteva exemple, nu este exclusiv bitologic (pe care îl vom acoperi mai târziu).
 

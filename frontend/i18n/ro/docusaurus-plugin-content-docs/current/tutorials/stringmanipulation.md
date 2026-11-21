@@ -227,7 +227,7 @@ Deci, terminatorul nul (_aka caracterul nul_), este un caracter prezent pe toate
 
 În _pawn_, îl puteți tasta ca valoare numerică sau ca caracter `_\0_`. Backslashul acționează ca un personaj care scapă, este acolo pentru a spune mașinii că acel caracter este caracterul nul cu valoarea 0 și **NU** caracterul `0` care are valoarea `48`.
 
-Există un simbol folosit în _pawn_, ** EOS **, prescurtarea pentru **E** nd **O**f**S** tring, este o macro predefinită pentru terminatorul nul, puteți seta terminatorul nul în multe feluri diferite;
+Există un simbol folosit în _pawn_, **EOS**, prescurtarea pentru **E**nd **O**f **S**tring, este o macro predefinită pentru terminatorul nul, puteți seta terminatorul nul în multe feluri diferite;
 
 ```cpp
 message_9[0] = 0;

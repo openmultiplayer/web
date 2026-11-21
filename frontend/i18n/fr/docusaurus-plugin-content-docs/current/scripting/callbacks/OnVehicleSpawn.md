@@ -13,7 +13,7 @@ Cette callback est appelée **seulement** quand un véhicule **re**spawn ! [Crea
 
 ## Paramètres
 
-description: Cette callback est appelée lorsqu'un véhicule respawn _(réapparaît)_.
+description: Cette callback est appelée lorsqu'un véhicule **re**spawn _(réapparaît)_.
 
 | Nom             | Description                    |
 | --------------- | ------------------------------ |
