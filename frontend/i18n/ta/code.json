@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "ஏற்கெனவே உள்ள ஸ்கிரிப்ட்கள் மற்றும் கிளையண்ட்களுடன் முழுப் பின்னோக்கி இணக்கத்தன்மை"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "பழைய AMX கோப்பு உள்ளதா? அதை நேரடியாக open.mp சேவையகத்தில் ஏற்றி, SA-MP கிளையண்ட் வழியாக நண்பர்களுடன் இணையுங்கள். குறியீட்டை மேம்படுத்த ஆவணங்களைப் பார்க்கவும்."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "தொடங்குங்கள்"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "புதிய, மேம்படுத்தப்பட்ட ஸ்கிரிப்டிங் அமைப்பு"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "ஏற்கெனவே உள்ள SA-MP ஸ்கிரிப்ட்கள் மற்றும் செருகுநிரல்களை open.mp ஆதரிக்கிறது. சிறந்த மோட்களை உருவாக்க தரவுக் கட்டமைப்புகள், ஒத்திசைவற்ற I/O போன்ற வசதிகளை அதன் நவீன API வழங்குகிறது."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "மேலும் அறிக"
+  },
+  "feature.developerFriendly.title": {
+    "message": "உருவாக்குநர்களுக்கு ஏற்றது"
+  },
+  "feature.developerFriendly.description": {
+    "message": "சீரான API, புதுப்பித்த ஆவணங்கள், உதவும் சமூகம், முழுத் திறந்த மூலக் குறியீடு ஆகியவற்றுடன் open.mp-ஐ உருவாக்குகிறோம். அனைத்துப் பங்களிப்புகளையும் வரவேற்கிறோம்."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "பங்களிக்கவும்"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "புதிய, மேம்படுத்தப்பட்ட ஸ்கிரிப்டிங் அமைப்பு"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Pawn மொழியைத் தொடர்ந்து பயன்படுத்துகிறோம். புதிய தொகுப்பி குறியீட்டை வலுப்படுத்துகிறது. கூடுதல் செயல்பாடுகள் சேவையகம் மற்றும் கிளையண்டின் திறன்களை விரிவுபடுத்துகின்றன."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "மேம்பாடுகளை அறிக"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "சமூகத்தால் உருவாக்கப்படுகிறது"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "சேவையகத்தின் மூலக் குறியீடு முழுமையாகத் திறந்துள்ளது. அடுத்த வெளியீட்டை உருவாக்க உதவுங்கள் அல்லது கண்ட பிழைகளைப் புகாரளியுங்கள். ஒவ்வொரு பங்களிப்பும் கருத்தும் முக்கியம்."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "GitHub அமைப்பைப் பார்வையிடுங்கள்"
+  },
+  "feature.cppApi.title": {
+    "message": "விரிவாக்கக்கூடிய C++ API"
+  },
+  "feature.cppApi.description": {
+    "message": "Pawn-இன் சேவையக அம்சங்களுடன் C++ நூலகங்களையும் கட்டமைப்புகளையும் பயன்படுத்தலாம். சேவையகத்தை மேம்படுத்த GitHub-இல் பங்களிக்கலாம்."
+  },
+  "feature.cppApi.linkText": {
+    "message": "SDK களஞ்சியத்தைப் பார்க்கவும்"
+  },
+  "partners.server.stats": {
+    "message": "{servers} சேவையகங்களில் {players} வீரர்கள். சேவையகத்துக்குச் சராசரியாக {average} வீரர்கள்."
+  },
+  "servers.sort.relevance": {
+    "message": "பொருத்தம்"
+  },
+  "servers.sort.players": {
+    "message": "வீரர்கள்"
+  },
+  "servers.search.placeholder": {
+    "message": "IP முகவரி அல்லது பெயரால் தேடவும்"
+  },
+  "partners.note": {
+    "message": "அறிவித்தபடி, கூட்டாளர் திட்டம் தற்போது விண்ணப்பங்களை ஏற்கவில்லை. முன்பதிவு செய்த சேவையகங்கள் இன்னும் இணையலாம். பிற கேள்விகளை எங்கள் Discord-இல் கேளுங்கள்."
+  },
+  "announcement.title": {
+    "message": "open.mp சேவையகம் மற்றும் துவக்கியின் புதிய பதிப்பு கிடைக்கிறது!"
+  },
+  "announcement.link": {
+    "message": "இங்கே மேலும் படிக்கவும்"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "இந்தப் பக்கம் செயலிழந்தது.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "பக்கம் கிடைக்கவில்லை",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "நீங்கள் தேடியதைக் கண்டுபிடிக்க முடியவில்லை.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "உங்களை இந்த முகவரிக்கு அனுப்பிய தளத்தின் உரிமையாளரிடம் இணைப்பு செயல்படவில்லை என்று தெரிவிக்கவும்.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "குறிப்பு",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "உதவிக்குறிப்பு",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "ஆபத்து",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "தகவல்",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "கவனம்",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "மேலே திரும்பவும்",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "காப்பகம்",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "காப்பகம்",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "வலைப்பதிவுப் பட்டியல் வழிசெலுத்தல்",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "புதிய பதிவுகள்",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "பழைய பதிவுகள்",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} நிமிட வாசிப்பு",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "குறிச்சொற்கள்",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "பல பிழைத் திருத்தங்கள், செயல்திறன் மேம்பாடுகள் மற்றும் புதிய அம்சங்களுடன் open.mp சேவையகம் {version} கிடைக்கிறது!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "இந்த வெளியீடு NPC வாகனக் கட்டுப்பாடுகளைச் சேர்க்கிறது, அவற்றின் இயக்கத்தை மேம்படுத்துகிறது மற்றும் பிணைய, ஸ்கிரிப்டிங் பிழைகளைச் சரிசெய்கிறது."
+  },
+  "announcement.changelog": {
+    "message": "சேவையக மாற்றப் பதிவு"
+  },
+  "announcement.download": {
+    "message": "சேவையகத்தைப் பதிவிறக்கவும்"
+  },
+  "announcement.launcherUpdate": {
+    "message": "துவக்கியும் புதுப்பிக்கப்பட்டுள்ளது!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "விளையாட்டுக்குள் காட்டப்படும் மேலடுக்கு, வரைகலை மோட்களுக்கான ஆதரவு, இணைப்பின் நிலைத்தன்மை ஆகியவை மேம்படுத்தப்பட்டுள்ளன."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "open.mp துவக்கி {version} கிடைக்கிறது!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "open.mp சேவையகம் {version} கிடைக்கிறது!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "open.mp சேவையகம் {serverVersion} மற்றும் துவக்கி {launcherVersion} கிடைக்கின்றன!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "துவக்கியில் புதியவை"
+  },
+  "announcement.dismiss": {
+    "message": "இந்தச் செய்தியை மூடவும்"
+  },
+  "homepage.heroDescription": {
+    "message": "Grand Theft Auto: San Andreas-க்கான புதிய பல்வீரர் மோட், {samp} உடன் {compatibility}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "முழுமையாக இணங்குகிறது"
+  },
+  "homepage.downloadLauncher": {
+    "message": "துவக்கியைப் பதிவிறக்கவும் 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "சேவையகத்தைப் பதிவிறக்கவும் 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "ஆவணங்கள் 📜"
+  },
+  "animations.title": {
+    "message": "open.mp அசைவூட்டப் பார்வையகம்"
+  },
+  "animations.library": {
+    "message": "நூலகம்:"
+  },
+  "animations.selectLibrary": {
+    "message": "ஒரு நூலகத்தைத் தேர்ந்தெடுக்கவும்…"
+  },
+  "animations.animation": {
+    "message": "அசைவூட்டம்:"
+  },
+  "animations.selectAnimation": {
+    "message": "ஓர் அசைவூட்டத்தைத் தேர்ந்தெடுக்கவும்…"
+  },
+  "animations.index": {
+    "message": "குறியெண்:"
+  },
+  "animations.frames": {
+    "message": "சட்டங்கள்:"
+  },
+  "animations.duration": {
+    "message": "கால அளவு:"
+  },
+  "animations.seconds": {
+    "message": "வினாடிகள்"
+  },
+  "animations.description": {
+    "message": "விளக்கம்:"
+  },
+  "animations.notes": {
+    "message": "குறிப்புகள்:"
+  },
+  "animations.videoCredits": {
+    "message": "காணொளிப் பங்களிப்புகள்:"
+  },
+  "animations.usageExamples": {
+    "message": "பயன்பாட்டு எடுத்துக்காட்டுகள்:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "முன்னோட்டத்தைக் காண மேலுள்ள பட்டியலிலிருந்து ஓர் அசைவூட்டத்தைத் தேர்ந்தெடுக்கவும்."
+  },
+  "animations.browsePrompt": {
+    "message": "கிடைக்கும் அனைத்து அசைவூட்டங்களையும் உலாவி முன்னோட்டம் பார்க்கவும்."
+  },
+  "animations.usedByFunctions": {
+    "message": "இவற்றை ApplyAnimation/ApplyActorAnimation செயல்பாடுகள் பயன்படுத்துகின்றன."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "அந்தச் சனியன் பிடித்த ரயிலைத் துரத்துகிறது…"
+  },
+  "serverRow.copied": {
+    "message": "நகலெடுக்கப்பட்டது"
+  },
+  "serverRow.copy": {
+    "message": "நகலெடுக்கவும்"
+  },
+  "serverRow.partnerTitle": {
+    "message": "கூட்டாளர் சேவையகம்!"
+  },
+  "serverRow.ompTitle": {
+    "message": "open.mp சேவையகம்"
+  },
+  "serverRow.players": {
+    "message": "வீரர்கள்"
+  },
+  "serverInfo.backToServers": {
+    "message": "← சேவையகங்களுக்குத் திரும்பவும்"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← கூட்டாளர் சேவையகங்களுக்குத் திரும்பவும்"
+  },
+  "serverInfo.quickJoin": {
+    "message": "விரைவாக இணையவும்"
+  },
+  "serverInfo.noDescription": {
+    "message": "இந்தச் சேவையகத்துக்கு விளக்கம் இல்லை"
+  },
+  "serverInfo.playersOnline": {
+    "message": "இணையத்திலுள்ள வீரர்கள்"
+  },
+  "serverInfo.modVersion": {
+    "message": "மோட் பதிப்பு"
+  },
+  "serverInfo.language": {
+    "message": "மொழி"
+  },
+  "serverInfo.rule": {
+    "message": "விதி"
+  },
+  "serverInfo.value": {
+    "message": "மதிப்பு"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "{time} முன்பு புதுப்பிக்கப்பட்டது"
+  },
+  "serverInfo.notFound": {
+    "message": "இந்தச் சேவையகம் கிடைக்கவில்லை. அது இணையத்தில் இல்லாமல் இருக்கலாம் அல்லது பட்டியலிலிருந்து நீக்கப்பட்டிருக்கலாம்."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "ஆவணங்கள்"
+  },
+  "theme.footer.title.Community": {
+    "message": "சமூகம்"
+  },
+  "theme.footer.title.More": {
+    "message": "மேலும்"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "அறிமுகம்"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "open.mp-க்கு மாறுதல்"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "நன்கொடை அளிக்கவும்"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "சேவையகங்கள்"
+  },
+  "theme.footer.link.Blog": {
+    "message": "வலைப்பதிவு"
+  },
+  "theme.footer.link.Animations": {
+    "message": "அசைவூட்டங்கள்"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "UID உருவாக்கி"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "பதிப்புரிமை © {year} open.mp. Docusaurus மூலம் உருவாக்கப்பட்டது."
+  },
+  "navbar.item.Docs": {
+    "message": "ஆவணங்கள்"
+  },
+  "navbar.item.Blog": {
+    "message": "வலைப்பதிவு"
+  },
+  "navbar.item.Forums": {
+    "message": "கருத்துக்களங்கள்"
+  },
+  "navbar.item.Servers": {
+    "message": "சேவையகங்கள்"
+  },
+  "navbar.item.Partners": {
+    "message": "கூட்டாளர்கள்"
+  },
+  "navbar.item.Donate": {
+    "message": "நன்கொடை அளிக்கவும்"
+  },
+  "serverInfo.copied": {
+    "message": "நகலெடுக்கப்பட்டது",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "நகலெடுக்கவும்",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "விளையாட்டு முறை",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "அறிவிப்பை மூடவும்",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "அசைவூட்டங்கள்",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "காணொளி முன்னோட்டங்களுடன் திறன்செயலுள்ள open.mp (SA-MP) அசைவூட்டப் பார்வையகம்",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "காணொளி கிடைக்கவில்லை",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// வீரர்களுக்கு",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// கதாபாத்திரங்களுக்கு",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "San Andreas Multiplayer உடன் முழுப் பின்னோக்கி இணக்கமுள்ள Grand Theft Auto: San Andreas பல்வீரர் மோட்",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "கூட்டாளர் திட்ட அறிவிப்பை மூடவும்",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "கூட்டாளர் சேவையகங்கள்",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "open.mp அல்லது SA-MP பயன்படுத்தும் San Andreas சேவையகங்களின் பட்டியல்",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "நகலெடுக்கப்பட்டது",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "UID மேக்ரோ கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "UID உருவாக்கி",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "IComponent அல்லது IExtension-க்கான தனித்த அடையாளமாக UID ஒன்றை உருவாக்கவும்",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "இணையவும்",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "உங்கள் சேவையகம்",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "சேவையகம்",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "முகவரி",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "வீரர்கள்",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "புனைப்பெயர்",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "SA-MP பதிப்பு",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "பிடித்தவை",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "இணையம்",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "கூட்டாளர்கள்",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "சமீபத்தில் இணைந்தவை",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "புனைப்பெயர்…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "சேவையகப் பெயர் அல்லது விளையாட்டு முறையால் தேடவும்",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "பெயர்",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "தாமதம்",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "விளையாட்டு முறை",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "இணையவும்",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "பிடித்தவற்றில் சேர்க்கவும்",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "சேவையகத் தகவலை நகலெடுக்கவும்",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "விதி",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "மதிப்பு",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "வடிகட்டிகள்:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "open.mp சேவையகங்கள் மட்டும்",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "வீரர்கள் உள்ள சேவையகங்கள்",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "கடவுச்சொல் இல்லாத சேவையகங்கள்",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "மொழி:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "பிடித்தவற்றில் சேர்க்கப்பட்டது!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "மாதிரி சேவையகங்களின் பட்டியலைக் காட்டும் open.mp துவக்கி",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "வீரர்",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "மதிப்பெண்",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "நகலெடுக்கவும்",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "இந்த கால்பேக்கை NPC-யும் அழைக்கலாம்.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "செயல்பாடு",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "கால்பேக்",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "{name} என்பது {version} பதிப்பில் சேர்க்கப்பட்டது. இது முந்தைய பதிப்புகளில் இயங்காது!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "{serverName} காத்திருப்புப் பட்டியலில் சேர்க்கப்பட்டது. 48 மணி நேரத்துக்குள் தோன்றாவிட்டால் Discord-இல் எங்களைத் தொடர்புகொள்ளுங்கள்.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "சேவையகம் சமர்ப்பிக்கப்பட்டது!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "நிலை {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "சமர்ப்பிக்க முடியவில்லை!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "சேவையகத்தைச் சமர்ப்பிக்கும்போது பிழை ஏற்பட்டது",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "பிழை",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "சேவையகப் பட்டியலின் பக்கங்கள்",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "முந்தைய பக்கம்",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "அடுத்த பக்கம்",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "பெயர்",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "விளையாட்டு முறை",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "மொழி",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "அனைத்து மொழிகளும்",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "சேவையகம் சேர்க்கும் உரையாடலை மூடவும்",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "முந்தையது",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "அடுத்தது",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "open.mp துவக்கி",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "open.mp துவக்கி வெளியீடுகளைப் பதிவிறக்கவும்",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "open.mp மற்றும் SA-MP சேவையகங்களில் GTA San Andreas பல்வீரர் விளையாட்டை விளையாடுங்கள்.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "open.mp சேவையகம்",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "open.mp சேவையக வெளியீடுகளைப் பதிவிறக்கவும்",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "உங்கள் சொந்த GTA San Andreas பல்வீரர் சேவையகத்தை இயக்குங்கள்.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "சேவையகங்கள்",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "open.mp மற்றும் SA-MP பயன்படுத்தும் San Andreas சேவையகங்களின் பட்டியல்",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "சமீபத்தியது",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "{date} அன்று வெளியானது",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "முக்கிய மாற்றங்கள்",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "முழு மாற்றப் பதிவைப் பார்க்கவும்",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "GitHub-இல் வெளியீட்டைப் பார்க்கவும்",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "GitHub-இல் வெளியீட்டைப் பார்க்கவும்",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* DynSSL பதிப்புக்கு உங்கள் Linux வழங்கலில் libssl நிறுவப்பட்டிருக்க வேண்டும்.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "பழைய வெளியீடுகளை மறைக்கவும்",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "பழைய வெளியீடுகளைக் காண்க ({count})",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "ஒவ்வொரு வெளியீடும் திறந்த மூலமானது. மூலக் குறியீட்டிலிருந்து உருவாக்குங்கள் அல்லது GitHub-இலிருந்து நேரடியாகப் பதிவிறக்குங்கள்.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "GitHub-இலிருந்து பதிவிறக்கவும்",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "பக்கம் கிடைக்கவில்லை",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "GTA ரயில் பணியின் திரைப்பிடிப்பு",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "முகப்பு",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "ஆவணங்கள்",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "சேவையகங்கள்",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "வலைப்பதிவுப் பக்க வழிசெலுத்தல்",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "புதிய பதிவு",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "பழைய பதிவு",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "அனைத்துக் குறிச்சொற்களையும் பார்க்கவும்",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "கணினி பயன்முறை",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "ஒளிப் பயன்முறை",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "இருள் பயன்முறை",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "ஒளி மற்றும் இருள் பயன்முறைகளுக்கு இடையில் மாறவும் (தற்போது {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "பக்கப் பாதை",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "ஆவணப் பக்கங்கள்",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "முந்தையது",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "அடுத்தது",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "குறிச்சொல் இடப்பட்ட {count} ஆவணம்|குறிச்சொல் இடப்பட்ட {count} ஆவணங்கள்",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{tagName} என்ற குறிச்சொல்லுடன் {nDocsTagged}",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "பதிப்பு: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "இது {siteTitle} {versionLabel} பதிப்பிற்கான இன்னும் வெளியிடப்படாத ஆவணம்.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "இது தற்போது பராமரிக்கப்படாத {siteTitle} {versionLabel} பதிப்பின் ஆவணம்.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "புதுப்பிக்கப்பட்ட ஆவணங்களுக்கு {latestVersionLink} ({versionLabel}) பார்க்கவும்.",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "சமீபத்திய பதிப்பு",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "இந்தப் பக்கத்தைத் திருத்தவும்",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "{heading} பகுதிக்கான நேரடி இணைப்பு",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date} அன்று",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " {user} மூலம்",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "கடைசியாகப் புதுப்பிக்கப்பட்டது{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "பதிப்புகள்",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "குறிச்சொற்கள்:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "மூடவும்",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "எச்சரிக்கை",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "சமீபத்திய வலைப்பதிவுகளின் வழிசெலுத்தல்",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "பக்கப்பட்டியில் உள்ள ‘{label}’ வகையை விரிக்கவும்",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "பக்கப்பட்டியில் உள்ள ‘{label}’ வகையைச் சுருக்கவும்",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(புதிய தாவலில் திறக்கும்)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "முதன்மை வழிசெலுத்தல்",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "மொழிகள்",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "இந்தப் பக்கத்தில்",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "மேலும் படிக்கவும்",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "{title} பற்றி மேலும் படிக்கவும்",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "நகலெடுக்கவும்",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "நகலெடுக்கப்பட்டது",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "குறியீட்டைக் கிளிப்போர்டுக்கு நகலெடுக்கவும்",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "வரி மடிப்பை மாற்றவும்",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "முகப்புப் பக்கம்",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "பக்கப்பட்டியைச் சுருக்கவும்",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "பக்கப்பட்டியைச் சுருக்கவும்",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "ஆவணப் பக்கப்பட்டி",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "வழிசெலுத்தல் பட்டியை மூடவும்",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← முதன்மைப் பட்டிக்குத் திரும்பவும்",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "வழிசெலுத்தல் பட்டியைக் காட்டவும் அல்லது மறைக்கவும்",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "கீழ்விரிப் பட்டியை விரிக்கவும்",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "கீழ்விரிப் பட்டியைச் சுருக்கவும்",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "பக்கப்பட்டியை விரிக்கவும்",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "பக்கப்பட்டியை விரிக்கவும்",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "அனைத்து {count} முடிவுகளையும் காண்க"
+  },
+  "theme.SearchBar.label": {
+    "message": "தேடல்",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "தேடலை அழிக்கவும்",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "ரத்துசெய்யவும்",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "ஆவணங்களைத் தேடவும்",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "வேறொரு கேள்வியைக் கேளுங்கள்…",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "பதிலளிக்கிறது…",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "தேடவும்",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "அனுப்பவும்",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "தேடல்",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "முக்கியச்சொல் தேடலுக்குத் திரும்பவும்",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "முக்கியச்சொல் தேடலுக்குத் திரும்பவும்",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "சமீபத்தியவை",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "சமீபத்திய தேடல்கள் இல்லை",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "இந்தத் தேடலைச் சேமிக்கவும்",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "வரலாற்றிலிருந்து இந்தத் தேடலை நீக்கவும்",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "பிடித்தவை",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "பிடித்தவற்றிலிருந்து இந்தத் தேடலை நீக்கவும்",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "சமீபத்திய உரையாடல்கள்",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "வரலாற்றிலிருந்து இந்த உரையாடலை நீக்கவும்",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "முடிவுகளைப் பெற முடியவில்லை",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "உங்கள் பிணைய இணைப்பைச் சரிபார்க்கவும்.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "AI-யிடம் கேளுங்கள்: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "AI உருவாக்கும் பதில்களில் தவறுகள் இருக்கலாம். பதில்களைச் சரிபார்க்கவும்.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "தொடர்புடைய ஆதாரங்கள்",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "பதில் தயாராகிறது…",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "நகலெடுக்கவும்",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "நகலெடுக்கப்பட்டது!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "நகலெடுக்கவும்",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "பிடித்திருக்கிறது",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "பிடிக்கவில்லை",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "உங்கள் கருத்துக்கு நன்றி!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "தேடுகிறது…",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "தேடுவது: ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "தேடியது:",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "தேர்ந்தெடுக்கவும்",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "கேள்வியை அனுப்பவும்",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter விசை",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "வழிசெல்லவும்",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "மேல் அம்புக்குறி",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "கீழ் அம்புக்குறி",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "மூடவும்",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Escape விசை",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "இயக்குவது",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "தேடலுக்குத் திரும்பவும்",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "இதற்கு முடிவுகள் கிடைக்கவில்லை:",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "இதைத் தேடிப் பார்க்கவும்:",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "இந்தத் தேடலுக்கு முடிவுகள் கிடைக்க வேண்டும் என நினைக்கிறீர்களா?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "எங்களுக்குத் தெரிவிக்கவும்.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "ஆவணங்களைத் தேடவும்",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "{count} ஆவணம் கிடைத்தது|{count} ஆவணங்கள் கிடைத்தன",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "“{query}” என்பதற்கான தேடல் முடிவுகள்",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "ஆவணங்களில் தேடவும்",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "தேட வேண்டியதை இங்கே உள்ளிடவும்",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "தேடல்",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Algolia மூலம் இயக்கப்படுகிறது",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "முடிவுகள் கிடைக்கவில்லை",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "புதிய முடிவுகள் பெறப்படுகின்றன…",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} பதிவு|{count} பதிவுகள்",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "“{tagName}” குறிச்சொல்லுடன் {nPosts}",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "ஆசிரியர்கள்",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "அனைத்து ஆசிரியர்களையும் காண்க",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "இந்த ஆசிரியர் இதுவரை எந்தப் பதிவையும் வெளியிடவில்லை.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "பட்டியலிடப்படாத பக்கம்",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "இந்தப் பக்கம் பட்டியலிடப்படவில்லை. தேடுபொறிகள் இதை அட்டவணைப்படுத்தாது. நேரடி இணைப்பு உள்ளவர்கள் மட்டுமே இதை அணுகலாம்.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "வரைவுப் பக்கம்",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "இந்தப் பக்கம் ஒரு வரைவு. இது உருவாக்கப் பயன்முறையில் மட்டுமே தெரியும். இறுதி வெளியீட்டில் சேர்க்கப்படாது.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} உருப்படி|{count} உருப்படிகள்",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "மீண்டும் முயற்சிக்கவும்",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "முதன்மை உள்ளடக்கத்துக்குச் செல்லவும்",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "ஆவணங்களை வடிகட்டவும்",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "வடிகட்டியை நீக்கவும்",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "பொருந்தும் ஆவணங்கள் இல்லை",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "வேறு தேடல் சொல்லைப் பயன்படுத்தவும்.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

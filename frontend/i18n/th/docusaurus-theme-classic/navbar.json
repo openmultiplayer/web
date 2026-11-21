@@ -30,5 +30,9 @@
   "item.label.Donate to us": {
     "message": "บริจาคให้เรา",
     "description": "Navbar item with label Donate to us"
+  },
+  "item.label.Donate": {
+    "message": "บริจาค",
+    "description": "Navbar item with label Donate"
   }
 }

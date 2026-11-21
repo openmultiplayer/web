@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Потпуна компатибилност са постојећим скриптама и клијентима"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Имаш стари AMX? Учитај га директно на open.mp сервер и придружи се пријатељима преко SA-MP клијента. Кад пожелиш да побољшаш код, погледај документацију."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Први кораци"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Нови и побољшани систем за скриптирање"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp подржава постојеће SA-MP скрипте и додатке. Савремени API нуди структуре података, асинхрони улаз и излаз и друге могућности за боље модове."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Сазнај више"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Прилагођено програмерима"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Правимо open.mp са доследним API-јем, ажурном документацијом, заједницом која радо помаже и потпуно отвореним кодом. Сваки допринос је добродошао."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Доприноси"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Нови и побољшани систем за скриптирање"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "И даље користимо Pawn. Нови компајлер чини код робуснијим, а додатне функције проширују могућности сервера и клијента."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Погледај побољшања"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Развија заједница"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Код сервера је потпуно отворен. Помози у припреми следећег издања или пријави грешке које пронађеш. Сваки допринос и свака повратна информација су важни."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Посети организацију на GitHub-у"
+  },
+  "feature.cppApi.title": {
+    "message": "Прошириви C++ API"
+  },
+  "feature.cppApi.description": {
+    "message": "Користи све серверске функције доступне у Pawn-у, као и C++ библиотеке и оквире. На GitHub-у можеш да помогнеш у побољшању сервера."
+  },
+  "feature.cppApi.linkText": {
+    "message": "Погледај репозиторијум SDK-а"
+  },
+  "partners.server.stats": {
+    "message": "{players} играча на {servers} сервера, у просеку {average} играча по серверу."
+  },
+  "servers.sort.relevance": {
+    "message": "Релевантност"
+  },
+  "servers.sort.players": {
+    "message": "Играчи"
+  },
+  "servers.search.placeholder": {
+    "message": "Претражи по IP адреси или називу"
+  },
+  "partners.note": {
+    "message": "Као што смо најавили, партнерски програм тренутно не прима пријаве. Сервери који су резервисали место и даље могу да се придруже. За остала питања пиши нам на Discord-у."
+  },
+  "announcement.title": {
+    "message": "Доступна је нова верзија open.mp сервера и покретача!"
+  },
+  "announcement.link": {
+    "message": "Прочитај више"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Ова страница је престала да ради.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Страница није пронађена",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Тражени резултат не постоји.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Молимо вас да контактирате власника сајта који вас је упутио овде и обавестите га да је њихова веза нетачна.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "Напомена",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "Савет",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "Опасност",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "Информације",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "Опрез",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Иди горе",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Архива",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Архива",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Навигација за странице блога",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Нови постови",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Стари постови",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} минут читања|{readingTime} минута читања|{readingTime} минута читања",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Ознаке",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "Доступан је open.mp сервер {version}, са исправкама, бољим перформансама и новим функцијама!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "Ово издање додаје контроле за возила NPC-ева, побољшава њихово кретање и исправља мрежне грешке и грешке у скриптама."
+  },
+  "announcement.changelog": {
+    "message": "Измене сервера"
+  },
+  "announcement.download": {
+    "message": "Преузми сервер"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Ажуриран је и покретач!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "Покретач побољшава приказ преко игре, подршку за графичке модове и стабилност везе."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Доступан је open.mp покретач {version}!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Доступан је open.mp сервер {version}!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Доступни су open.mp сервер {serverVersion} и покретач {launcherVersion}!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Новости у покретачу"
+  },
+  "announcement.dismiss": {
+    "message": "Затвори ову поруку"
+  },
+  "homepage.heroDescription": {
+    "message": "Нови мод за више играча за Grand Theft Auto: San Andreas који је {compatibility} са модом {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "потпуно компатибилан"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Преузми покретач 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Преузми сервер 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Документација 📜"
+  },
+  "animations.title": {
+    "message": "Прегледач анимација за open.mp"
+  },
+  "animations.library": {
+    "message": "Библиотека:"
+  },
+  "animations.selectLibrary": {
+    "message": "Изабери библиотеку…"
+  },
+  "animations.animation": {
+    "message": "Анимација:"
+  },
+  "animations.selectAnimation": {
+    "message": "Изабери анимацију…"
+  },
+  "animations.index": {
+    "message": "Индекс:"
+  },
+  "animations.frames": {
+    "message": "Кадрови:"
+  },
+  "animations.duration": {
+    "message": "Трајање:"
+  },
+  "animations.seconds": {
+    "message": "сек."
+  },
+  "animations.description": {
+    "message": "Опис:"
+  },
+  "animations.notes": {
+    "message": "Напомене:"
+  },
+  "animations.videoCredits": {
+    "message": "Аутори видеа:"
+  },
+  "animations.usageExamples": {
+    "message": "Примери коришћења:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Изабери анимацију из менија изнад да је прегледаш."
+  },
+  "animations.browsePrompt": {
+    "message": "Прегледај све доступне анимације."
+  },
+  "animations.usedByFunctions": {
+    "message": "Ове анимације користе функције ApplyAnimation/ApplyActorAnimation."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "У потери за проклетим возом…"
+  },
+  "serverRow.copied": {
+    "message": "КОПИРАНО"
+  },
+  "serverRow.copy": {
+    "message": "КОПИРАЈ"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Партнерски сервер!"
+  },
+  "serverRow.ompTitle": {
+    "message": "open.mp сервер"
+  },
+  "serverRow.players": {
+    "message": "Играчи"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Назад на сервере"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← Назад на партнерске сервере"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Брзо придруживање"
+  },
+  "serverInfo.noDescription": {
+    "message": "Овај сервер нема опис"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Играчи на мрежи"
+  },
+  "serverInfo.modVersion": {
+    "message": "Верзија мода"
+  },
+  "serverInfo.language": {
+    "message": "Језик"
+  },
+  "serverInfo.rule": {
+    "message": "Правило"
+  },
+  "serverInfo.value": {
+    "message": "Вредност"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Ажурирано пре {time}"
+  },
+  "serverInfo.notFound": {
+    "message": "Сервер није пронађен. Можда није на мрежи или више није на списку."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Документација"
+  },
+  "theme.footer.title.Community": {
+    "message": "Заједница"
+  },
+  "theme.footer.title.More": {
+    "message": "Још"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Увод"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Прелазак на open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Донирај"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Сервери"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Блог"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Анимације"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "Генератор UID-а"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Ауторска права © {year} open.mp. Направљено помоћу Docusaurus-а."
+  },
+  "navbar.item.Docs": {
+    "message": "Документација"
+  },
+  "navbar.item.Blog": {
+    "message": "Блог"
+  },
+  "navbar.item.Forums": {
+    "message": "Форуми"
+  },
+  "navbar.item.Servers": {
+    "message": "Сервери"
+  },
+  "navbar.item.Partners": {
+    "message": "Партнери"
+  },
+  "navbar.item.Donate": {
+    "message": "Донирај"
+  },
+  "serverInfo.copied": {
+    "message": "Копирано",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Копирај",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Режим игре",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Затвори обавештење",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Анимације",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Интерактивни прегледач open.mp (SA-MP) анимација са видео-прегледом",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Видео није доступан",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// За играче",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// За актере",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Мод за више играча за Grand Theft Auto: San Andreas који је потпуно компатибилан са San Andreas Multiplayer-ом",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Затвори обавештење о партнерском програму",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Партнерски сервери",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Списак сервера за San Andreas који користе open.mp или SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Копирано",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "UID макро је копиран у привремену меморију.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "Генератор UID-а",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Генериши UID као јединствени идентификатор за IComponent или IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Повежи се",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Твој сервер",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Сервер",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Адреса",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Играчи",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Надимак",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "Верзија SA-MP-а",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Омиљени",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Интернет",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Партнери",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Недавно посећени",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Надимак…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Претражи по називу сервера или режиму игре",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Назив",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Пинг",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Режим игре",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Повежи се",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Додај у омиљене",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Копирај податке о серверу",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Правило",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Вредност",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Филтери:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Само open.mp сервери",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Сервери са играчима",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Сервери без лозинке",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Језик:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Додато у омиљене!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "open.mp покретач приказује примере сервера",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Играч",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Резултат",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "КОПИРАЈ",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "Овај повратни позив може да покрене и NPC.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "функција",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "повратни позив",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Додато у верзији {version}. Ова ставка не ради у старијим верзијама. Врста: {name}.",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "Сервер {serverName} је на листи чекања. Ако се не појави у року од 48 сати, пиши нам на Discord-у.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Сервер је послат!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Статус {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Слање није успело!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "Дошло је до грешке при слању сервера",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Грешка",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "Странице списка сервера",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Претходна страница",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Следећа страница",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "Назив",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Режим игре",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Језик",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Сви језици",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "Затвори прозор за додавање сервера",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "Назад",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Даље",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "open.mp покретач",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Преузми издања open.mp покретача",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Играј GTA San Andreas са другим играчима на open.mp и SA-MP серверима.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "open.mp сервер",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Преузми издања open.mp сервера",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Покрени свој GTA San Andreas сервер за више играча.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Сервери",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Списак сервера за San Andreas који користе open.mp и SA-MP",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "НАЈНОВИЈЕ",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Објављено {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Најважније измене",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Погледај све измене",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Погледај издање на GitHub-у",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Погледај издање на GitHub-у",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* За верзију DynSSL мораш да инсталираш libssl на својој Linux дистрибуцији.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Сакриј старија издања",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "Погледај старија издања ({count})",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Свако издање има отворен код. Изгради га из изворног кода или преузми директно са GitHub-а.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Преузми са GitHub-а",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "Страница није пронађена",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Снимак екрана мисије са возом у GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Почетна",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Документација",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Сервери",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Навигација за странице блога",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Нови пост",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Стари пост",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Погледај све ознаке",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Системски режим",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "Светли режим",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "Тамни режим",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Пребаци између тамног и светлог режима (тренутно: {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Путања странице",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "странице докумената",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Назад",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Даље",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Означен је {count} документ|Означена су {count} документа|Означено је {count} докумената",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} означени са \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Верзија: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Ово је необјављена документација за верзију {siteTitle} {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Ово је документација за {siteTitle} {versionLabel}, која се више не одржава",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "За најновију верзију документације погледајте {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "Најновија верзија",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Уреди ову страницу",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Веза до {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " на {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " од {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Последња измена {atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Верзије",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Ознаке:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Затвори",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "Упозорење",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Недавни постови на блогу",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Развиј категорију „{label}“ у бочној траци",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Скупи категорију „{label}“ у бочној траци",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(отвара се у новој картици)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Главна навигација",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Језици",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "На овој страници",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Прочитајте више",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Прочитај више о теми {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Копирај",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Копирано",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Копирај код у меморију",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Укључи или искључи преламање редова",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Почетна страница",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Сакриј бочну листу",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Сакриј бочну листу",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Бочна трака документације",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Затвори навигациону траку",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Назад на главни мени",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Прикажи или сакриј навигациону траку",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Отвори падајући мени",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Затвори падајући мени",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Прошири бочну листу",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Прошири бочну листу",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Погледај све резултате ({count})"
+  },
+  "theme.SearchBar.label": {
+    "message": "Тражи",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Обриши упит",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Откажи",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Претражи документацију",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Постави друго питање…",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "Припрема одговора…",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "Тражи",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "пошаљи",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Тражи",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Назад на претрагу по кључним речима",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Назад на претрагу по кључним речима",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Недавно",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Нема недавних претрага",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Сачувај ову претрагу",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Уклони ову претрагу из историје",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Омиљено",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Уклони ову претрагу из омиљених",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Недавни разговори",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Уклони овај разговор из историје",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Није могуће учитати резултате",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Провери мрежну везу.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "Питај вештачку интелигенцију: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "Одговоре генерише вештачка интелигенција и могу бити погрешни. Провери одговоре.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Повезани извори",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "Припрема одговора…",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Копирај",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Копирано!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Копирај",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Свиђа ми се",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Не свиђа ми се",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Хвала на повратној информацији!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Претрага…",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Претражујем: ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "Претражено:",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "to select",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Пошаљи питање",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Тастер Enter",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "to navigate",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Стрелица нагоре",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Стрелица надоле",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Затвори",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Тастер Esc",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Омогућава",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Назад на претрагу",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "No results for",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Покушај да претражиш",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Мислиш да би требало да има резултата?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Јави нам.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Претражи документацију",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Пронађен је {count} документ|Пронађена су {count} документа|Пронађено је {count} докумената",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Резултати за \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Тражи документацију",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Овде унесите термин",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Тражи",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Покреће Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Резултати нису пронађени",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Траже се нови резултати...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} објава|{count} објаве|{count} објава",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} означени са \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Аутори",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Прикажи све ауторе",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Овај аутор још ништа није објавио.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Страница ван списка",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Ова страница није на списку. Претраживачи је не индексирају, а доступна је само преко директне везе.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Нацрт странице",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Ова страница је нацрт. Види се само током развоја и неће бити у објављеној верзији.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} ставка|{count} ставке|{count} ставки",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Покушај поново",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Пређи на главни садржај",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Филтрирај документацију",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Очисти филтер",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Нема одговарајућих докумената",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Покушај са другим појмом за претрагу.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

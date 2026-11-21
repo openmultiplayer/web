@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Tương thích ngược hoàn toàn với các tập lệnh và ứng dụng khách hiện có"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Bạn có tệp AMX cũ? Hãy nạp thẳng vào máy chủ open.mp rồi tham gia cùng bạn bè bằng ứng dụng khách SA-MP. Hãy xem tài liệu khi muốn cải thiện mã."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Bắt đầu"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Hệ thống viết tập lệnh mới và cải tiến"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp hỗ trợ các tập lệnh và plugin SA-MP hiện có. API hiện đại cung cấp cấu trúc dữ liệu, thao tác vào/ra bất đồng bộ và nhiều tính năng khác để tạo bản mod tốt hơn."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Tìm hiểu thêm"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Thân thiện với nhà phát triển"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Chúng tôi xây dựng open.mp với API nhất quán, tài liệu cập nhật, cộng đồng sẵn sàng hỗ trợ và mã nguồn mở hoàn toàn. Mọi đóng góp đều được hoan nghênh."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Đóng góp"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Hệ thống viết tập lệnh mới và cải tiến"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Chúng tôi tiếp tục dùng Pawn, với trình biên dịch mới giúp mã ổn định hơn và nhiều hàm bổ sung cho máy chủ và ứng dụng khách."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Tìm hiểu các cải tiến"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Do cộng đồng phát triển"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Máy chủ có mã nguồn mở hoàn toàn. Hãy giúp chuẩn bị bản phát hành tiếp theo hoặc báo lỗi bạn gặp. Mọi đóng góp và phản hồi đều có giá trị."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Xem tổ chức trên GitHub"
+  },
+  "feature.cppApi.title": {
+    "message": "API C++ có thể mở rộng"
+  },
+  "feature.cppApi.description": {
+    "message": "Dùng tất cả tính năng máy chủ có trong Pawn cùng các thư viện và framework C++. Bạn có thể góp phần cải thiện máy chủ trên GitHub."
+  },
+  "feature.cppApi.linkText": {
+    "message": "Xem kho mã SDK"
+  },
+  "partners.server.stats": {
+    "message": "{players} người chơi trên {servers} máy chủ, trung bình {average} người chơi mỗi máy chủ."
+  },
+  "servers.sort.relevance": {
+    "message": "Độ liên quan"
+  },
+  "servers.sort.players": {
+    "message": "Người chơi"
+  },
+  "servers.search.placeholder": {
+    "message": "Tìm theo IP hoặc tên"
+  },
+  "partners.note": {
+    "message": "Như đã thông báo, chương trình đối tác hiện ngừng nhận đăng ký. Các máy chủ đã giữ chỗ vẫn có thể tham gia. Nếu có câu hỏi khác, hãy liên hệ trên Discord của chúng tôi."
+  },
+  "announcement.title": {
+    "message": "Phiên bản mới của máy chủ và trình khởi chạy open.mp đã có mặt!"
+  },
+  "announcement.link": {
+    "message": "Đọc thêm tại đây"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Trang này đã gặp lỗi.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Không tìm thấy trang",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Chúng tôi không thể tìm thấy nội dung bạn đang tìm kiếm.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Vui lòng liên hệ với trang web đã đưa bạn đến đây và thông báo rằng đường dẫn này bị lỗi.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "ghi chú",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "mẹo",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "cảnh báo",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "thông tin",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "cẩn thận",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Trở lại đầu trang",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Lưu trữ",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Lưu trữ",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Thanh điều hướng của trang danh sách bài viết",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Bài mới hơn",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Bài cũ hơn",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} phút để đọc",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Thẻ",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "Máy chủ open.mp {version} đã ra mắt với nhiều bản sửa lỗi, cải tiến hiệu năng và tính năng mới!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "Bản phát hành này thêm tính năng điều khiển phương tiện NPC, cải thiện chuyển động của phương tiện và sửa lỗi mạng và tập lệnh."
+  },
+  "announcement.changelog": {
+    "message": "Thay đổi của máy chủ"
+  },
+  "announcement.download": {
+    "message": "Tải xuống máy chủ"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Trình khởi chạy cũng đã được cập nhật!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "Trình khởi chạy cải thiện lớp phủ trong trò chơi, khả năng hỗ trợ mod đồ họa và độ ổn định của kết nối."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Trình khởi chạy open.mp {version} đã ra mắt!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Máy chủ open.mp {version} đã ra mắt!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Máy chủ open.mp {serverVersion} và trình khởi chạy {launcherVersion} đã ra mắt!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Điểm mới trong trình khởi chạy"
+  },
+  "announcement.dismiss": {
+    "message": "Đóng thông báo này"
+  },
+  "homepage.heroDescription": {
+    "message": "Bản mod nhiều người chơi mới dành cho Grand Theft Auto: San Andreas, {compatibility} với {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "tương thích hoàn toàn"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Tải trình khởi chạy 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Tải máy chủ 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Tài liệu 📜"
+  },
+  "animations.title": {
+    "message": "Trình xem hoạt ảnh open.mp"
+  },
+  "animations.library": {
+    "message": "Thư viện:"
+  },
+  "animations.selectLibrary": {
+    "message": "Chọn một thư viện…"
+  },
+  "animations.animation": {
+    "message": "Hoạt ảnh:"
+  },
+  "animations.selectAnimation": {
+    "message": "Chọn một hoạt ảnh…"
+  },
+  "animations.index": {
+    "message": "Chỉ mục:"
+  },
+  "animations.frames": {
+    "message": "Khung hình:"
+  },
+  "animations.duration": {
+    "message": "Thời lượng:"
+  },
+  "animations.seconds": {
+    "message": "giây"
+  },
+  "animations.description": {
+    "message": "Mô tả:"
+  },
+  "animations.notes": {
+    "message": "Ghi chú:"
+  },
+  "animations.videoCredits": {
+    "message": "Nguồn video:"
+  },
+  "animations.usageExamples": {
+    "message": "Ví dụ sử dụng:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Chọn một hoạt ảnh từ danh sách trên để xem trước."
+  },
+  "animations.browsePrompt": {
+    "message": "Duyệt và xem trước tất cả hoạt ảnh hiện có."
+  },
+  "animations.usedByFunctions": {
+    "message": "Các hàm ApplyAnimation/ApplyActorAnimation sử dụng những hoạt ảnh này."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Đang đuổi theo cái tàu chết tiệt…"
+  },
+  "serverRow.copied": {
+    "message": "ĐÃ SAO CHÉP"
+  },
+  "serverRow.copy": {
+    "message": "SAO CHÉP"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Máy chủ đối tác!"
+  },
+  "serverRow.ompTitle": {
+    "message": "Máy chủ open.mp"
+  },
+  "serverRow.players": {
+    "message": "Người chơi"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Quay lại máy chủ"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← Quay lại máy chủ đối tác"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Tham gia nhanh"
+  },
+  "serverInfo.noDescription": {
+    "message": "Máy chủ này không có mô tả"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Người chơi trực tuyến"
+  },
+  "serverInfo.modVersion": {
+    "message": "Phiên bản mod"
+  },
+  "serverInfo.language": {
+    "message": "Ngôn ngữ"
+  },
+  "serverInfo.rule": {
+    "message": "Quy tắc"
+  },
+  "serverInfo.value": {
+    "message": "Giá trị"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Cập nhật cách đây {time}"
+  },
+  "serverInfo.notFound": {
+    "message": "Không tìm thấy máy chủ này. Máy chủ có thể đã ngoại tuyến hoặc bị gỡ khỏi danh sách."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Tài liệu"
+  },
+  "theme.footer.title.Community": {
+    "message": "Cộng đồng"
+  },
+  "theme.footer.title.More": {
+    "message": "Thêm"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Giới thiệu"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Chuyển sang open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Quyên góp"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Máy chủ"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Blog"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Hoạt ảnh"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "Trình tạo UID"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Bản quyền © {year} open.mp. Xây dựng bằng Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "Tài liệu"
+  },
+  "navbar.item.Blog": {
+    "message": "Blog"
+  },
+  "navbar.item.Forums": {
+    "message": "Diễn đàn"
+  },
+  "navbar.item.Servers": {
+    "message": "Máy chủ"
+  },
+  "navbar.item.Partners": {
+    "message": "Đối tác"
+  },
+  "navbar.item.Donate": {
+    "message": "Quyên góp"
+  },
+  "serverInfo.copied": {
+    "message": "Đã sao chép",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Sao chép",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Chế độ chơi",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Đóng thông báo",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Hoạt ảnh",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Trình xem hoạt ảnh tương tác cho open.mp (SA-MP) có video xem trước",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Video không có sẵn",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Cho người chơi",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Cho nhân vật",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Bản mod nhiều người chơi dành cho Grand Theft Auto: San Andreas, tương thích ngược hoàn toàn với San Andreas Multiplayer",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Đóng thông báo về chương trình đối tác",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Máy chủ đối tác",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Danh sách máy chủ San Andreas dùng open.mp hoặc SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Đã sao chép",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "Đã sao chép macro UID vào bảng nhớ tạm.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "Trình tạo UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Tạo UID làm mã định danh duy nhất cho IComponent hoặc IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Kết nối",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Máy chủ của bạn",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Máy chủ",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Địa chỉ",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Người chơi",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Biệt danh",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "Phiên bản SA-MP",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Yêu thích",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Internet",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Đối tác",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Đã tham gia gần đây",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Biệt danh…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Tìm theo tên hoặc chế độ chơi của máy chủ",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Tên",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Độ trễ",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Chế độ chơi",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Kết nối",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Thêm vào mục yêu thích",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Sao chép thông tin máy chủ",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Quy tắc",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Giá trị",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Bộ lọc:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Chỉ máy chủ open.mp",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Máy chủ có người chơi",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Máy chủ không có mật khẩu",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Ngôn ngữ:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Đã thêm vào mục yêu thích!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "Trình khởi chạy open.mp hiển thị danh sách máy chủ mẫu",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Người chơi",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Điểm",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "SAO CHÉP",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "NPC cũng có thể gọi hàm gọi lại này.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "hàm",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "hàm gọi lại",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Đã thêm {name} trong phiên bản {version}. Mục này không hoạt động trên các phiên bản cũ hơn!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "Đã đưa {serverName} vào danh sách chờ. Nếu máy chủ không xuất hiện sau 48 giờ, hãy liên hệ với chúng tôi trên Discord.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Đã gửi máy chủ!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Trạng thái {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Gửi thất bại!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "Đã xảy ra lỗi khi gửi máy chủ",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Lỗi",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "Các trang danh sách máy chủ",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Trang trước",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Trang sau",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "Tên",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Chế độ chơi",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Ngôn ngữ",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Mọi ngôn ngữ",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "Đóng hộp thoại thêm máy chủ",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "Trước",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Kế tiếp",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "Trình khởi chạy open.mp",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Tải các bản phát hành của trình khởi chạy open.mp",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Chơi GTA San Andreas nhiều người chơi trên máy chủ open.mp và SA-MP.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "Máy chủ open.mp",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Tải các bản phát hành máy chủ open.mp",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Tự vận hành máy chủ GTA San Andreas nhiều người chơi.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Máy chủ",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Danh sách máy chủ San Andreas dùng open.mp và SA-MP",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "MỚI NHẤT",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Phát hành ngày {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Điểm nổi bật",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Xem toàn bộ thay đổi",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Xem bản phát hành trên GitHub",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Xem bản phát hành trên GitHub",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* Bản DynSSL yêu cầu cài đặt libssl trên bản phân phối Linux của bạn.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Ẩn bản phát hành cũ",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "Xem thêm {count} bản phát hành cũ",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Tất cả bản phát hành đều có mã nguồn mở. Biên dịch từ mã nguồn hoặc tải trực tiếp từ GitHub.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Tải xuống từ GitHub",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "Không tìm thấy trang",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Ảnh chụp nhiệm vụ đuổi theo tàu trong GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Trang chủ",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Tài liệu",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Máy chủ",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Thanh điều hướng của trang bài viết",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Bài mới hơn",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Bài cũ hơn",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Xem tất cả thẻ",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Chế độ hệ thống",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "chế độ sáng",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "chế độ tối",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Chuyển đổi chế độ sáng và tối (hiện tại là {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Liên kết điều hướng",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Trang tài liệu",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Trước",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Kế tiếp",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "{count} tài liệu đã gắn thẻ",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} được gắn thẻ \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Phiên bản: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Đây là tài liệu chưa được phát hành chính thức của {siteTitle} phiên bản {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Đây là tài liệu của {siteTitle} {versionLabel}, hiện không còn được bảo trì.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Để xem các cập nhật mới nhất, vui lòng xem phiên bản {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "phiên bản mới nhất",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Sửa trang này",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Đường dẫn trực tiếp đến {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " vào {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " bởi {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Cập nhật lần cuối{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Phiên bản",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Thẻ:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Đóng",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "cảnh báo",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Điều hướng các bài viết gần đây trên blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Xem thêm danh mục '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Thu gọn danh mục '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(mở trong thẻ mới)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Thanh điều hướng",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Ngôn ngữ",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Trên trang này",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Đọc tiếp",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Đọc thêm về {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Sao chép",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Đã sao chép",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Sao chép mã vào bộ nhớ tạm",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Chuyển đổi văn bản xuống dòng",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Trang chủ",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Thu gọn thanh bên",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Thu gọn thanh bên",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Thanh điều hướng tài liệu",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Đóng thanh điều hướng",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Trở lại menu chính",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Đóng - mở thanh điều hướng",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Mở menu thả xuống",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Đóng menu thả xuống",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Mở rộng thanh bên",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Mở rộng thanh bên",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Xem tất cả {count} kết quả"
+  },
+  "theme.SearchBar.label": {
+    "message": "Tìm kiếm",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Xóa truy vấn",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Hủy bỏ",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Tìm kiếm tài liệu",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Đặt câu hỏi khác…",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "Đang trả lời…",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "Tìm kiếm",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "gửi",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Tìm kiếm",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Quay lại tìm kiếm theo từ khóa",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Quay lại tìm kiếm theo từ khóa",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Gần đây",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Không có tìm kiếm nào gần đây",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Lưu tìm kiếm này",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Xóa tìm kiếm này khỏi lịch sử",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Yêu thích",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Xóa tìm kiếm này khỏi danh sách yêu thích",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Cuộc trò chuyện gần đây",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Xóa cuộc trò chuyện này khỏi lịch sử",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Không thể tìm nạp dữ liệu",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Bạn nên kiểm tra lại kết nối mạng của mình.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "Hỏi AI: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "Câu trả lời do AI tạo và có thể chứa lỗi. Hãy kiểm tra lại câu trả lời.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Nguồn liên quan",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "Đang chuẩn bị câu trả lời…",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Sao chép",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Đã sao chép!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Sao chép",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Thích",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Không thích",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Cảm ơn bạn đã góp ý!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Đang tìm kiếm…",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Đang tìm: ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "Đã tìm:",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "để chọn",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Gửi câu hỏi",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Nhập khóa",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "để điều hướng",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Mũi tên lên",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Mũi tên xuống",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Đóng",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Phím thoát",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Tìm kiếm theo",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Quay lại tìm kiếm",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "Không có kết quả dành cho",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Thử tìm kiếm",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Tin rằng truy vấn này sẽ trả về kết quả?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Hãy để chúng tôi biết.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Tìm kiếm tài liệu",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Tìm thấy {count} kết quả",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Kết quả tìm kiếm cho \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Tìm kiếm",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Nhập tìm kiếm của bạn ở đây",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Tìm kiếm",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Được cung cấp bởi Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Không tìm thấy kết quả",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Đang tải thêm kết quả...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} bài viết",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} được gắn thẻ \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Tác giả",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Xem tất cả tác giả",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Tác giả này chưa viết bài nào.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Trang không công khai",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Trang này không công khai. Công cụ tìm kiếm sẽ không đánh chỉ mục trang này và chỉ những ai có liên kết mới có thể truy cập trang.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Trang nháp",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Trang này là bản nháp. Nó chỉ hiển thị trong môi trường phát triển và bị loại khỏi bản sản xuất.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} mục",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Thử lại",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Chuyển tới nội dung chính",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Lọc tài liệu",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Xóa bộ lọc",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Không có tài liệu phù hợp",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Hãy thử một từ khóa khác.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

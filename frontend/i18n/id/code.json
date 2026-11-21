@@ -1173,7 +1173,7 @@
     "description": "The title of the authors page"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "View All Authors",
+    "message": "Lihat semua penulis",
     "description": "The label of the link targeting the blog authors page"
   },
   "theme.blog.author.noPosts": {
