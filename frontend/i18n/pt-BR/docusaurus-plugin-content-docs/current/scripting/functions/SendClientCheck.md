@@ -54,9 +54,8 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::warning
 
-**SA:MP Servidor**: Esta função só funciona quando está em um filterscript.
-
-**Servidor multijogador aberto**: Funciona normalmente dentro de um gamemode/filterscript.
+- **SA-MP servidor**: Esta função só funciona quando está em um filterscript.
+- **open.mp servidor**: Funciona normalmente dentro de um gamemode/filterscript.
 
 :::
 

@@ -50,7 +50,8 @@ Esta função apenas CRIA a gangzone, você deve usar GangZoneShowForPlayer ou G
 
 :::warning
 
-Existe um limite de 1024 gangzones. Colocar parâmetros na ordem errada resulta em glitches.
+- Existe um limite de 1024 gangzones.
+- Colocar parâmetros na ordem errada resulta em glitches.
 
 :::
 

@@ -62,7 +62,9 @@ Unlike text colors, these slugs do not require encapsulation. They can be used a
 
 :::caution
 
-Be careful, using too many text colors or special characters in one gametext may crash every player the gametext is shown to. Additionally, avoid using an uneven usage of the `~` character. Example: `~~r~Hello, ~g~how are ~y~you?`
+Be careful, using too many text colors or special characters in one gametext may crash every player the gametext is shown to. Additionally, avoid using an uneven usage of the `~` character.
+
+Example: `~~r~Hello, ~g~how are ~y~you?`
 
 :::
 

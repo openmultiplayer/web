@@ -238,7 +238,8 @@ Showing:
 
 - **\t** cria uma nova coluna.
 - **\n** cria um novo item na lista.
-- Cores embutidas reiniciarão após **\n** e **\t**. A primeira linha **info** define o cabeçalho.
+- Cores embutidas reiniciarão após **\n** e **\t**.
+- A primeira linha **info** define o cabeçalho.
 
 :::
 

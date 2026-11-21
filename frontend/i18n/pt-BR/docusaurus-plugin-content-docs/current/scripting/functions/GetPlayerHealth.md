@@ -44,7 +44,8 @@ if (strcmp(cmdtext, "/doctor", true) == 0)
 
 :::warning
 
-Mesmo que a vida possa ser definida para valores quase infinitos no lado do servidor, os usuários vão reportar valores até 255. Qualquer valor superior não funcionará; 256 passa a 0, 257 passa a 1, etc. A vida é obtida arredondando os integers: se definir 50.15, o jogador obtém 50.0.
+- Mesmo que a vida possa ser definida para valores quase infinitos no lado do servidor, os usuários vão reportar valores até 255. Qualquer valor superior não funcionará; 256 passa a 0, 257 passa a 1, etc.
+- A vida é obtida arredondando os integers: se definir 50.15, o jogador obtém 50.0.
 
 :::
 

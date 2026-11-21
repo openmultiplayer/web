@@ -16,7 +16,9 @@ Haal de rotatie op waar de speler naartoe kijkt.
 
 ## Retourneert
 
-**true** bij succes, **false** als de speler niet bestaat. De rotatie wordt in de variabele opgeslagen.
+**true** bij succes, **false** als de speler niet bestaat.
+
+De rotatie wordt in de variabele opgeslagen.
 
 ## Voorbeeld
 

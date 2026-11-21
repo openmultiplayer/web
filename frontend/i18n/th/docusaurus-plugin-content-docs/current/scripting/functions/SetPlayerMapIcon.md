@@ -41,13 +41,15 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-If you use an invalid marker type, it will create ID 1 (White Square). If you use an icon ID that is already in use, it will replace the current map icon using that ID.
+- If you use an invalid marker type, it will create ID 1 (White Square).
+- If you use an icon ID that is already in use, it will replace the current map icon using that ID.
 
 :::
 
 :::warning
 
-You can only have 100 map icons! Marker type 1 (![](https://assets.open.mp/assets/images/mapIcons/icon1.gif)), 2 (![](https://assets.open.mp/assets/images/mapIcons/icon2.gif)), 4 (![](https://assets.open.mp/assets/images/mapIcons/icon4.gif)), and 56 (![](https://assets.open.mp/assets/images/mapIcons/icon56.gif)) will cause your game to crash if you have map legends enabled while viewing the map.
+- You can only have 100 map icons!
+- Marker type 1 (![](https://assets.open.mp/assets/images/mapIcons/icon1.gif)), 2 (![](https://assets.open.mp/assets/images/mapIcons/icon2.gif)), 4 (![](https://assets.open.mp/assets/images/mapIcons/icon4.gif)), and 56 (![](https://assets.open.mp/assets/images/mapIcons/icon56.gif)) will cause your game to crash if you have map legends enabled while viewing the map.
 
 :::
 

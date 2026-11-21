@@ -40,7 +40,8 @@ AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
 
 :::note
 
-Ang parehong object ay kailangang gawin bago subukang ilakip ang mga ito. Walang player-object na bersyon ng function na ito (AttachPlayerObjectToObject), ibig sabihin ay hindi ito susuportahan ng mga streamer.
+- Ang parehong object ay kailangang gawin bago subukang ilakip ang mga ito.
+- Walang player-object na bersyon ng function na ito (AttachPlayerObjectToObject), ibig sabihin ay hindi ito susuportahan ng mga streamer.
 
 :::
 

@@ -45,9 +45,8 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::warning
 
-In case you don't need to set a team to the player, make sure that the "team" parameter is set to `NO_TEAM` (255).
-
-Team ID 0 in open.mp is a valid team while in SA-MP it is not (SA-MP bug).
+- In case you don't need to set a team to the player, make sure that the "team" parameter is set to `NO_TEAM` (255).
+- Team ID 0 in open.mp is a valid team while in SA-MP it is not (SA-MP bug).
 
 :::
 

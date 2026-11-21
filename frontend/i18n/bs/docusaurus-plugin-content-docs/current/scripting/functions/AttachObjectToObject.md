@@ -40,7 +40,8 @@ AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
 
 :::note
 
-Oba objekta treba stvoriti prije pokušaja da ih prikačite. Ne postoji verzija ove funkcije player-objekta (AttachPlayerObjectToObject), što znači da je streameri neće podržati.
+- Oba objekta treba stvoriti prije pokušaja da ih prikačite.
+- Ne postoji verzija ove funkcije player-objekta (AttachPlayerObjectToObject), što znači da je streameri neće podržati.
 
 :::
 

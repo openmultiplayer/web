@@ -64,7 +64,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Klikljivo područje je definirano preko TextDrawTextSize. Parametri x i y prosljeđeni toj funkciji ne smiju biti nula ili negativni. Ne koristi CancelSelectTextDraw bezuslovno unutar ovog callback-a. To rezultira beskonačnom petljom.
+- Klikljivo područje je definirano preko TextDrawTextSize. Parametri x i y prosljeđeni toj funkciji ne smiju biti nula ili negativni.
+- Ne koristi CancelSelectTextDraw bezuslovno unutar ovog callback-a. To rezultira beskonačnom petljom.
 
 :::
 

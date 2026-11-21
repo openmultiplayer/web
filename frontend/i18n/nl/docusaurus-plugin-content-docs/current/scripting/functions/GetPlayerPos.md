@@ -18,7 +18,9 @@ Haal de positie van een speler op, als X‑, Y‑ en Z‑coördinaten.
 
 ## Retourneert
 
-**true** bij succes, **false** bij falen (speler niet verbonden). Coördinaten worden in de variabelen opgeslagen.
+**true** bij succes, **false** bij falen (speler niet verbonden).
+
+Coördinaten worden in de variabelen opgeslagen.
 
 ## Voorbeeld
 

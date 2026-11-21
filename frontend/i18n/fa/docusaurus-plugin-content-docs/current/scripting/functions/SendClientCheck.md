@@ -54,9 +54,8 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::warning
 
-**SA:MP Server**: این تابع فقط وقتی در filterscript باشه کار می‌کنه.
-
-**Open Multiplayer Server**: این تابع معمولی در gamemode / filterscript کار می‌کنه.
+- **SA-MP server**: این تابع فقط وقتی در filterscript باشه کار می‌کنه.
+- **open.mp server**: این تابع معمولی در gamemode / filterscript کار می‌کنه.
 
 :::
 

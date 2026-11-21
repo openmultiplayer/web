@@ -32,7 +32,7 @@ SetVehicleNumberPlate(vehicleid, "ABCD 123");
 
 :::note
 
-- Fungsi ini tidak memiliki pemeriksaan kesalahan internal.
+- Fungsi ini tidak memiliki pemeriksaan kesalahan internal. Jangan menetapkan plat nomor khusus untuk kendaraan tanpa plat (kapal, pesawat, dll) karena ini akan menghasilkan beberapa waktu pemrosesan yang tidak perlu pada client.
 - Kendaraan harus spawn kembali atau stream ulang agar perubahan berlaku.
 - Ada batas 32 karakter pada setiap plat nomor (termasuk warna tertanam).
 - Panjang teks yang dapat dilihat pada plat nomor adalah sekitar 9 hingga 10 karakter, lebih banyak karakter akan menyebabkan teks terpotong.
@@ -42,8 +42,7 @@ SetVehicleNumberPlate(vehicleid, "ABCD 123");
 
 :::tip
 
-- Jangan menetapkan plat nomor khusus untuk kendaraan tanpa plat (kapal, pesawat, dll) karena ini akan menghasilkan beberapa waktu pemrosesan yang tidak perlu pada client.
-- kamu dapat memberikan warna pada plat nomor.
+kamu dapat memberikan warna pada plat nomor.
 
 :::
 

@@ -70,7 +70,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-A área 'clicável' é definida pelo TextDrawTextSize. Os parâmetros de X e Y passados pela função não devem ser "0" ou negativo. Não utilize CancelSelectTextDraw incondicionalmente dentro desta callback. Isso resultaria em um loop infinito.
+- A área 'clicável' é definida pelo TextDrawTextSize. Os parâmetros de X e Y passados pela função não devem ser "0" ou negativo.
+- Não utilize CancelSelectTextDraw incondicionalmente dentro desta callback. Isso resultaria em um loop infinito.
 
 :::
 

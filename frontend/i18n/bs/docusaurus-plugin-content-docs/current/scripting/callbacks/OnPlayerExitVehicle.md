@@ -34,7 +34,8 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-Nije pozvan kada igrač spadne sa bicikla ili ako je uklonjen iz vozila iz drugih namjera ili načina kao npr. korištenjem funkcije `SetPlayerPos`. Moraš koristiti `OnPlayerStateChange` i provjeriti da li je igračevo posljednje stanje PLAYER_STATE_DRIVER ili PLAYER_STATE_PASSENGER i da li je njihovo novo stanje PLAYER_STATE_ONFOOT.
+- Nije pozvan kada igrač spadne sa bicikla ili ako je uklonjen iz vozila iz drugih namjera ili načina kao npr. korištenjem funkcije `SetPlayerPos`.
+- Moraš koristiti `OnPlayerStateChange` i provjeriti da li je igračevo posljednje stanje PLAYER_STATE_DRIVER ili PLAYER_STATE_PASSENGER i da li je njihovo novo stanje PLAYER_STATE_ONFOOT.
 
 :::
 

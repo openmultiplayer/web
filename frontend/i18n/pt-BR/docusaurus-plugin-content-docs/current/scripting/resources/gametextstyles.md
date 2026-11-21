@@ -62,7 +62,9 @@ Diferentemente das cores de texto, esses slugs (código de texto) não exigem en
 
 :::caution
 
-Tenha cuidado, usar muitas cores de texto ou caracteres especiais em um gametext pode travar todos os jogadores para os quais o gametext é exibido. Além disso, evite usar o caractere `~` de forma desigual. Exemplo: `~~r~Olá, ~g~como vai ~y~você?`
+Tenha cuidado, usar muitas cores de texto ou caracteres especiais em um gametext pode travar todos os jogadores para os quais o gametext é exibido. Além disso, evite usar o caractere `~` de forma desigual.
+
+Exemplo: `~~r~Olá, ~g~como vai ~y~você?`
 
 :::
 

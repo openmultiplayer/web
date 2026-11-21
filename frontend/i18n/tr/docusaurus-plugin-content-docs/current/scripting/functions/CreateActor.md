@@ -54,7 +54,8 @@ public OnGameModeExit()
 
 :::warning
 
-- Aktörler NPC'lerden tamamen farklıdır. Sunucunun slotlarını KULLANMAZLAR ve NPC'ler gibi KULLANILMAZLAR. Aktörler 1000 (MAX_ACTORS) ile sınırlıdır.
+- Aktörler NPC'lerden tamamen farklıdır. Sunucunun slotlarını KULLANMAZLAR ve NPC'ler gibi KULLANILMAZLAR.
+- Aktörler 1000 (MAX_ACTORS) ile sınırlıdır.
 - Araçlar ile itilebilirler, ayrıca konumlarına geri koymak içinde timer kullanılabilir.
 
 :::

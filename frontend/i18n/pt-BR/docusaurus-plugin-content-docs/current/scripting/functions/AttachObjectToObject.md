@@ -24,6 +24,7 @@ Você pode usar esta função para anexar objetos a outros objetos. Os objetos s
 ## Retorno
 
 **true** - A função foi executada com sucesso.
+
 **false** - A função falhou ao executar. Isso significa que o primeiro objeto (objectid) não existe. Não há verificações internas para verificar se o segundo objeto (attachtoid) existe.
 
 ## Exemplos

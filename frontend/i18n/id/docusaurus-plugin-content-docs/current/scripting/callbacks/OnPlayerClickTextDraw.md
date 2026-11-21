@@ -64,7 +64,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Area yang dapat diklik ditentukan oleh TextDrawTextSize. parameter x dan y yang diteruskan ke fungsi tersbut tidak boleh nol atau negatif. Jangan pernah gunakan CancelSelectextDraw tanpa pengecekan dalam callback ini. Kemungkinan pengulangan tak terbatas bisa terjadi.
+- Area yang dapat diklik ditentukan oleh TextDrawTextSize. parameter x dan y yang diteruskan ke fungsi tersbut tidak boleh nol atau negatif.
+- Jangan pernah gunakan CancelSelectextDraw tanpa pengecekan dalam callback ini. Kemungkinan pengulangan tak terbatas bisa terjadi.
 
 :::
 

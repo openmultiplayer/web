@@ -32,7 +32,8 @@ PlayerSpectateVehicle(playerid, vehicleid);
 
 :::warning
 
-Red je KRITIČAN! Obavezno koristite TogglePlayerSpectating prije PlayerSpectateVehicle. Igrač i vozilo moraju biti u istom unutrašnjosti i virtualnom svijetu da bi ova funkcija radila ispravno.
+- Red je KRITIČAN! Obavezno koristite TogglePlayerSpectating prije PlayerSpectateVehicle.
+- Igrač i vozilo moraju biti u istom unutrašnjosti i virtualnom svijetu da bi ova funkcija radila ispravno.
 
 :::
 

@@ -34,7 +34,8 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-Não é chamada quando o jogador cai de uma bicicleta ou é removido do veículo por outros meios como o uso do SetPlayerPos. Você deve usar OnPlayerStateChange e checar se o antigo estado é PLAYER_STATE_DRIVER ou PLAYER_STATE_PASSENGER e se o novo estado é PLAYER_STATE_ONFOOT.
+- Não é chamada quando o jogador cai de uma bicicleta ou é removido do veículo por outros meios como o uso do SetPlayerPos.
+- Você deve usar OnPlayerStateChange e checar se o antigo estado é PLAYER_STATE_DRIVER ou PLAYER_STATE_PASSENGER e se o novo estado é PLAYER_STATE_ONFOOT.
 
 :::
 

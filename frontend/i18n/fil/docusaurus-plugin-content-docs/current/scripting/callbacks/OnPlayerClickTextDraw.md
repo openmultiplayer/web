@@ -70,7 +70,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Ang napipindot na area ay na dedefine sa TextDrawTextSize. Ang x at y na parameter ay napapass sa function na iyon at hindi eto pwedeng maging zero o negative. Wag gamitin ang CancelSelectTextdraw ng hindi alam ang gagawin o walang pasubali sa callback. Magreresulta ito sa infinite na loop.
+- Ang napipindot na area ay na dedefine sa TextDrawTextSize. Ang x at y na parameter ay napapass sa function na iyon at hindi eto pwedeng maging zero o negative.
+- Wag gamitin ang CancelSelectTextdraw ng hindi alam ang gagawin o walang pasubali sa callback. Magreresulta ito sa infinite na loop.
 
 :::
 

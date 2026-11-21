@@ -44,9 +44,8 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::warning
 
-**Serveur SA:MP**: Ce rappel est uniquement appelé lorsqu'il est dans un filterscript..
-
-**Serveur Open Multiplayer**: Ce rappel fonctionne normalement dans un gamemode / filterscript.
+- **Serveur SA-MP**: Ce rappel est uniquement appelé lorsqu'il est dans un filterscript..
+- **Serveur open.mp**: Ce rappel fonctionne normalement dans un gamemode / filterscript.
 
 :::
 

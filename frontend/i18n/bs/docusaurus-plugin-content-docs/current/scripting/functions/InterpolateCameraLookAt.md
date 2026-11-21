@@ -47,7 +47,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Upotrijebite TogglePlayerSpectating da se objekti prikažu igraču/klijentu tokom reprodukcije kamere. Pomoću SetCameraBehindPlayer možete resetovati kameru iza igrača/klijenta.
+- Upotrijebite TogglePlayerSpectating da se objekti prikažu igraču/klijentu tokom reprodukcije kamere.
+- Pomoću SetCameraBehindPlayer možete resetovati kameru iza igrača/klijenta.
 
 :::
 

@@ -16,7 +16,9 @@ Haal de health van een speler op (nuttig o.a. voor cheat‑detectie).
 
 ## Retourneert
 
-**true** bij succes, **false** bij falen (niet verbonden). Health wordt in de variabele geplaatst.
+**true** bij succes, **false** bij falen (niet verbonden).
+
+Health wordt in de variabele geplaatst.
 
 ## Voorbeeld
 
@@ -36,7 +38,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Opmerkingen
 
-De client rapporteert waarden tot maximaal 255; hogere waarden lopen over (256→0, 257→1, …). Bij het opvragen wordt de waarde afgerond naar een geheel getal.
+- De client rapporteert waarden tot maximaal 255; hogere waarden lopen over (256→0, 257→1, …).
+- Bij het opvragen wordt de waarde afgerond naar een geheel getal.
 
 ## Gerelateerd
 

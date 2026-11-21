@@ -43,10 +43,10 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-This callback is only called when lag compensation is **enabled**. If **hittype** is:
-
-- `BULLET_HIT_TYPE_NONE`: the **fX**, **fY** and **fZ** parameters are normal coordinates, will give 0.0 for coordinates if nothing was hit (e.g. far object that the bullet can't reach);
-- Others: the **fX**, **fY** and **fZ** are offsets relative to the **hitid**.
+- This callback is only called when lag compensation is **enabled**.
+- If **hittype** is:
+  - `BULLET_HIT_TYPE_NONE`: the **fX**, **fY** and **fZ** parameters are normal coordinates, will give 0.0 for coordinates if nothing was hit (e.g. far object that the bullet can't reach);
+  - Others: the **fX**, **fY** and **fZ** are offsets relative to the **hitid**.
 
 :::
 

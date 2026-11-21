@@ -53,7 +53,8 @@ U SA-MP 0.3.7 možete koristiti -1 za Modelid za uklanjanje svih objekata unutar
 
 :::warning
 
-Čini se da postoji ograničenje od oko 1000 linija/objekata. Zaobilazno rješenje nema. Kada uklonite isti predmet za igrača, oni će se srušiti. Obično se igrači sruše pri ponovnom povezivanju s serverom jer server uklanja zgrade na OnPlayerConnectu.
+- Čini se da postoji ograničenje od oko 1000 linija/objekata. Zaobilazno rješenje nema.
+- Kada uklonite isti predmet za igrača, oni će se srušiti. Obično se igrači sruše pri ponovnom povezivanju s serverom jer server uklanja zgrade na OnPlayerConnectu.
 
 :::
 

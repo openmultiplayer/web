@@ -43,7 +43,10 @@ Geçersiz bir menü kimliği geçtiğinde çöker.
 
 :::note
 
-Menü başına yalnızca 12 öğe olabilir (13. Sütun adı üstbilgisinin sağ tarafına gider (renkli), 14. Ve üstü hiç görüntülenmez). Yalnızca 2 sütun (0 ve 1) kullanabilirsiniz. Bir öğe başına yalnızca 8 renk kodu ekleyebilirsiniz (`~r~`, `~g~` vb.). Menü öğesinin maksimum uzunluğu 31 simgedir.
+- Menü başına yalnızca 12 öğe olabilir (13. Sütun adı üstbilgisinin sağ tarafına gider (renkli), 14. Ve üstü hiç görüntülenmez).
+- Yalnızca 2 sütun (0 ve 1) kullanabilirsiniz.
+- Bir öğe başına yalnızca 8 renk kodu ekleyebilirsiniz (`~r~`, `~g~` vb.).
+- Menü öğesinin maksimum uzunluğu 31 simgedir.
 
 :::
 

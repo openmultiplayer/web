@@ -18,6 +18,7 @@ O jogador pode usar armas?
 ## Retorno
 
 **true** - Jogador está permitido.
+
 **false** - Jogador não está permitido.
 
 ## Exemplos

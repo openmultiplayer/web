@@ -44,9 +44,8 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::warning
 
-**SA:MP Sunucusu**: Bu geri çağırma yalnızca bir filterscript içindeyken çağrılır.
-
-**Open Multiplayer Sunucusu**: Bu geri çağırma bir oyun modu / filterscript içinde normal şekilde çalışır.
+- **SA-MP sunucusu**: Bu geri çağırma yalnızca bir filterscript içindeyken çağrılır.
+- **open.mp sunucusu**: Bu geri çağırma bir oyun modu / filterscript içinde normal şekilde çalışır.
 
 :::
 

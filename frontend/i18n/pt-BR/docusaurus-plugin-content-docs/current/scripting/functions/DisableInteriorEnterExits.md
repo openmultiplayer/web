@@ -27,9 +27,8 @@ public OnGameModeInit()
 
 :::warning
 
-Esta função só terá efeito se for usada ANTES de um jogador se conectar (recomenda-se usá-la em [OnGameModeInit](../callbacks/OnGameModeInit)). Ela não remove os marcadores de jogadores já conectados.
-
-Se o gamemode for alterado após o uso desta função, e o novo gamemode não desativar os marcadores, eles NÃO reaparecerão para jogadores já conectados (mas aparecerão para novos jogadores).
+- Esta função só terá efeito se for usada ANTES de um jogador se conectar (recomenda-se usá-la em [OnGameModeInit](../callbacks/OnGameModeInit)). Ela não remove os marcadores de jogadores já conectados.
+- Se o gamemode for alterado após o uso desta função, e o novo gamemode não desativar os marcadores, eles NÃO reaparecerão para jogadores já conectados (mas aparecerão para novos jogadores).
 
 :::
 

@@ -32,7 +32,7 @@ SetVehicleNumberPlate(vehicleid, "ABCD 123");
 
 :::note
 
-- Esta função não possui verificação de erros internos.
+- Esta função não possui verificação de erros internos. Não atribua matrículas personalizadas a veículos sem matrícula (barcos, aviões, etc.), pois isso resultará em algum tempo de processamento desnecessário para o cliente.
 - O veículo deve ser gerado novamente ou transmitido novamente para que as alterações tenham efeito.
 - Há um limite de 32 caracteres em cada matrícula (incluindo cores incorporadas).
 - O comprimento do texto que pode ser visto na placa de matrícula é de cerca de 9 a 10 caracteres, mais caracteres farão com que o texto seja dividido.
@@ -42,8 +42,7 @@ SetVehicleNumberPlate(vehicleid, "ABCD 123");
 
 :::tip
 
-- Não atribua matrículas personalizadas a veículos sem matrícula (barcos, aviões, etc.), pois isso resultará em algum tempo de processamento desnecessário para o cliente.
-- Você pode usar a incorporação de cores no texto da placa de matrícula.
+Você pode usar a incorporação de cores no texto da placa de matrícula.
 
 :::
 

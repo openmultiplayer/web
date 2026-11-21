@@ -54,7 +54,8 @@ public OnGameModeExit()
 
 :::warning
 
-- Atores são completamente separados dos NPCs. Eles NÃO usam IDs/slots de jogadores no servidor e NÃO PODEM ser manipulados como NPCs. Atores são limitados a 1000 (MAX_ACTORS).
+- Atores são completamente separados dos NPCs. Eles NÃO usam IDs/slots de jogadores no servidor e NÃO PODEM ser manipulados como NPCs.
+- Atores são limitados a 1000 (MAX_ACTORS).
 - Atores podem ser empurrados por veículos, use um timer para colocá-los de volta em suas posições.
 
 :::

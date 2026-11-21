@@ -47,7 +47,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Use TogglePlayerSpectating to make objects stream in for the player while the camera is moving. You can reset the camera behind the player with SetCameraBehindPlayer.
+- Use TogglePlayerSpectating to make objects stream in for the player while the camera is moving.
+- You can reset the camera behind the player with SetCameraBehindPlayer.
 
 :::
 

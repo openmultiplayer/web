@@ -39,7 +39,8 @@ public OnGameModeInit()
 
 :::note
 
-**useartwork** harus diaktifkan terlebih dahulu dalam pengaturan server agar dapat berfungsi ketika `virtualworld` diatur, model akan didownload setelah player memasuki world tertentu
+- **useartwork** harus diaktifkan terlebih dahulu dalam pengaturan server agar dapat berfungsi.
+- Ketika `virtualworld` diatur, model akan didownload setelah player memasuki world tertentu
 
 :::
 

@@ -14,6 +14,7 @@ Armas podem ser usadas em interiores?
 ## Retorno
 
 true: Permitido.
+
 false: Não permitido.
 
 ## Exemplos

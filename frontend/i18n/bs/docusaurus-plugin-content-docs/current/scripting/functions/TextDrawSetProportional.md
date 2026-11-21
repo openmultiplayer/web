@@ -35,7 +35,8 @@ public OnGameModeInit()
 
 :::tip
 
-Proporcionalnost je po zadanim postavkama postavljena na 1, mogli biste preskočiti ovu funkciju ako ne želite da je onemogućite. Ukoliko želite promijeniti proporcionalnost textdrawa koji je već prikazan, ne morate ga ponovno kreirati. Prosto koristite TextDrawShowForPlayer/TextDrawShowForAll nakon uređivanja i promjena će biti vidljiva.
+- Proporcionalnost je po zadanim postavkama postavljena na 1, mogli biste preskočiti ovu funkciju ako ne želite da je onemogućite.
+- Ukoliko želite promijeniti proporcionalnost textdrawa koji je već prikazan, ne morate ga ponovno kreirati. Prosto koristite TextDrawShowForPlayer/TextDrawShowForAll nakon uređivanja i promjena će biti vidljiva.
 
 :::
 

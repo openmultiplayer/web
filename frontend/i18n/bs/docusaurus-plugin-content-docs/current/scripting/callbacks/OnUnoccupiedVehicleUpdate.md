@@ -45,7 +45,8 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 :::warning
 
-Ovaj callback poziva se vrlo često u sekundi po nezauzetom vozilu. Trebali biste se suzdržati od provođenja intenzivnih proračuna ili intenzivnih operacija pisanja / čitanja datoteka u ovom callbacku. GetVehiclePos return-ovati će stare koordinate vozila prije ovog ažuriranja.
+- Ovaj callback poziva se vrlo često u sekundi po nezauzetom vozilu. Trebali biste se suzdržati od provođenja intenzivnih proračuna ili intenzivnih operacija pisanja / čitanja datoteka u ovom callbacku.
+- GetVehiclePos return-ovati će stare koordinate vozila prije ovog ažuriranja.
 
 :::
 

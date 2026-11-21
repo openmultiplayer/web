@@ -35,7 +35,8 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 :::note
 
-Ovaj callback nije pozvan od strane `ChangeVehiclePaintjob`. Možete koristiti `OnVehicleChangePaintjob` iz vSync-a u slučaju da znate kada igrač **kupi** paintjob.
+- Ovaj callback nije pozvan od strane `ChangeVehiclePaintjob`.
+- Možete koristiti `OnVehicleChangePaintjob` iz vSync-a u slučaju da znate kada igrač **kupi** paintjob.
 
 :::
 

@@ -31,7 +31,8 @@ if (!strcmp(cmdtext, "/sandstorm", true))
 
 :::note
 
-Ako je omogućen TogglePlayerClock, vrijeme će se polahko mijenjati s vremenom, umjesto da se promijeni trenutno. U igri postoje samo važeći 21 vremenski ID (0 - 20), ali igra nema bilo kakav oblik provjere dometa.
+- Ako je omogućen TogglePlayerClock, vrijeme će se polahko mijenjati s vremenom, umjesto da se promijeni trenutno.
+- U igri postoje samo važeći 21 vremenski ID (0 - 20), ali igra nema bilo kakav oblik provjere dometa.
 
 :::
 

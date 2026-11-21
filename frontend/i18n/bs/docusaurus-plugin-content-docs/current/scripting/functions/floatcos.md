@@ -33,7 +33,8 @@ public OnGameModeInit()
 
 :::warning
 
-GTA / SA-MP u većini slučajeva koriste **stupnjeve** za uglove, na primjer GetPlayerFacingAngle. Stoga ćete najvjerojatnije htjeti koristiti način rada pod uglom '**degrees**', a _ne_ radijane. Takođe imajte na umu da su uglovi u GTA suprotno kazaljki na satu; 270° je istok, a 90° zapad. Jug je i dalje 180°, a sjever još uvijek 0° / 360°.
+- GTA / SA-MP u većini slučajeva koriste **stupnjeve** za uglove, na primjer GetPlayerFacingAngle. Stoga ćete najvjerojatnije htjeti koristiti način rada pod uglom '**degrees**', a _ne_ radijane.
+- Takođe imajte na umu da su uglovi u GTA suprotno kazaljki na satu; 270° je istok, a 90° zapad. Jug je i dalje 180°, a sjever još uvijek 0° / 360°.
 
 :::
 

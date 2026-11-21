@@ -34,9 +34,8 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-Cette callback n'est pas appelée en cas de chute d'une moto ou si le joueur est sorti du véhicule par un autre moyen que la touche F, par exemple avec SetPlayerPos.
-
-Il faudra utiliser [OnPlayerStateChange](OnPlayerStateChange) et vérifier si l'ancien état du joueur est `PLAYER_STATE_DRIVER` ou `PLAYER_STATE_PASSENGER` et que son nouvel état est `PLAYER_STATE_ONFOOT`.
+- Cette callback n'est pas appelée en cas de chute d'une moto ou si le joueur est sorti du véhicule par un autre moyen que la touche F, par exemple avec SetPlayerPos.
+- Il faudra utiliser [OnPlayerStateChange](OnPlayerStateChange) et vérifier si l'ancien état du joueur est `PLAYER_STATE_DRIVER` ou `PLAYER_STATE_PASSENGER` et que son nouvel état est `PLAYER_STATE_ONFOOT`.
 
 :::
 

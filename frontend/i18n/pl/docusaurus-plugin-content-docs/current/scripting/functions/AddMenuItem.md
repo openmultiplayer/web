@@ -43,7 +43,10 @@ Podanie nieprawidłowego ID menu powoduje crash.
 
 :::note
 
-Możesz mieć tylko 12 elementów w każdym menu (13 przechodzi na prawą stronę nagłówka nazwy kolumny (pokolorowany), 14 i większe nie są wyświetlane wcale. Możesz używać tylko 2 kolumn (0 i 1). Możesz dodać tylko 8 kolorów do jednego elementu (`~r~`, `~g~`, itd.). Maksymalna długość elementu menu to 31 znaków.
+- Możesz mieć tylko 12 elementów w każdym menu (13 przechodzi na prawą stronę nagłówka nazwy kolumny (pokolorowany), 14 i większe nie są wyświetlane wcale.
+- Możesz używać tylko 2 kolumn (0 i 1).
+- Możesz dodać tylko 8 kolorów do jednego elementu (`~r~`, `~g~`, itd.).
+- Maksymalna długość elementu menu to 31 znaków.
 
 :::
 

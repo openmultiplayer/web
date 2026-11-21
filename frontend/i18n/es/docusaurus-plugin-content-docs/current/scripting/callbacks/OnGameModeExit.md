@@ -40,8 +40,8 @@ Los siguientes callbacks pueden ser útiles, ya que están relacionados de algun
 - [OnFilterScriptInit](OnFilterScriptInit): Este callback es llamado cuando un filterscript inicia.
 - [OnFilterScriptExit](OnFilterScriptExit): Este callback es llamado cuando un filterscript finaliza.
 
-- ## Funciones Relacionadas
+## Funciones Relacionadas
 
-  La siguiente función puede ser útil, ya que está relacionada de alguna forma u otra con OnGameModeExit:
+La siguiente función puede ser útil, ya que está relacionada de alguna forma u otra con OnGameModeExit:
 
 - [GameModeExit](../functions/GameModeExit): Finaliza el modo de juego actual.

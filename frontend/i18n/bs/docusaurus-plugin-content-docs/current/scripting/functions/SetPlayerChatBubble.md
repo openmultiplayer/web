@@ -41,7 +41,8 @@ Ne možete vidjeti svoje lične chat balončiće. Isto se dešava i sa prikavče
 
 :::tip
 
-Ugradnju boja možete koristiti za više boja u poruci. Korištenje '-1' kao boje učinit će tekst bijelim (iz jednostavnog razloga što je -1, kada je predstavljen u heksadecimalnom zapisu, 0xFFFFFFFF).
+- Ugradnju boja možete koristiti za više boja u poruci.
+- Korištenje '-1' kao boje učinit će tekst bijelim (iz jednostavnog razloga što je -1, kada je predstavljen u heksadecimalnom zapisu, 0xFFFFFFFF).
 
 :::
 

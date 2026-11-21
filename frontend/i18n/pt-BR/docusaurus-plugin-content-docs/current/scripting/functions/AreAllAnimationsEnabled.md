@@ -14,6 +14,7 @@ As animações ausentes em algumas versões estão habilitadas?
 ## Retorno
 
 true: Habilitado.
+
 false: Desabilitado.
 
 ## Exemplos

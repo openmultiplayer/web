@@ -43,10 +43,10 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-Deze callback wordt alleen aangeroepen wanneer lag compensation is **ingeschakeld**. Als **hittype** is:
-
-- `BULLET_HIT_TYPE_NONE`: **fX**, **fY** en **fZ** zijn absolute coördinaten (0.0 als niets geraakt is).
-- Anders: **fX**, **fY** en **fZ** zijn offsets relatief ten opzichte van **hitid**.
+- Deze callback wordt alleen aangeroepen wanneer lag compensation is **ingeschakeld**.
+- Als **hittype** is:
+  - `BULLET_HIT_TYPE_NONE`: **fX**, **fY** en **fZ** zijn absolute coördinaten (0.0 als niets geraakt is).
+  - Anders: **fX**, **fY** en **fZ** zijn offsets relatief ten opzichte van **hitid**.
 
 :::
 

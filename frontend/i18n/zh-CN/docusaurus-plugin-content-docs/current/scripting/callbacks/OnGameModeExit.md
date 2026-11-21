@@ -41,8 +41,7 @@ public OnGameModeExit()
 
 使用OnGameModeExit时需注意：
 
-- 配合`rcon gmx`指令使用时可能导致客户端异常
-- 在[OnGameModeInit](OnGameModeInit)中过度调用[RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer)可能引发客户端崩溃
+- 配合`rcon gmx`指令使用时可能导致客户端异常。例如，在[OnGameModeInit](OnGameModeInit)中过度调用[RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer)可能引发客户端崩溃
 - 服务器崩溃或进程被强制终止（如Linux kill命令）不会触发此回调
 
 :::

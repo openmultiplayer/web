@@ -33,9 +33,8 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**SA-MP 服务器:** 玩家距离超过 200 米时自动流卸载（参见[server.cfg](../../server/server.cfg) - **stream_distance**）
-
-**open.mp 服务器:** 玩家距离超过 200 米时自动流卸载（参见[config.json](../../server/config.json) - **network.stream_radius**）
+- **SA-MP 服务器:** 玩家距离超过 200 米时自动流卸载（参见[server.cfg](../../server/server.cfg) - **stream_distance**）
+- **open.mp 服务器:** 玩家距离超过 200 米时自动流卸载（参见[config.json](../../server/config.json) - **network.stream_radius**）
 
 :::
 

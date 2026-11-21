@@ -50,7 +50,8 @@ Ova funkcija samo STVARA gangzonu, za prikaz morate koristiti GangZoneShowForPla
 
 :::warning
 
-Postoji ograničenje od 1024 gangzone. Stavljanje parametara u pogrešan redoslijed rezultira glitchy ponašanjem.
+- Postoji ograničenje od 1024 gangzone.
+- Stavljanje parametara u pogrešan redoslijed rezultira glitchy ponašanjem.
 
 :::
 

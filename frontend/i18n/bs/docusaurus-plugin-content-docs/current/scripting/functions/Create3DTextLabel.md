@@ -56,7 +56,8 @@ Upotrijebite ugrađivanje boja za više boja u tekstu.
 
 :::warning
 
-Ako je text[] prazan, server/clients pored teksta če možda crashati! Ako je virtualworld postavljen na -1 tekst se neće pojaviti.
+- Ako je text[] prazan, server/clients pored teksta če možda crashati!
+- Ako je virtualworld postavljen na -1 tekst se neće pojaviti.
 
 :::
 

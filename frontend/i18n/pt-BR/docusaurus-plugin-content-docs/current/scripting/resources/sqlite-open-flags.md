@@ -39,8 +39,7 @@ Esses sinalizadores são usados por [DB_Open](../functions/DB_Open_Modern) e [db
 
 :::note
 
-Saiba mais sobre essas bandeiras em https://www.sqlite.org/c3ref/open.html
-
-Saiba mais sobre VFS em https://www.sqlite.org/c3ref/vfs.html
+- Saiba mais sobre essas bandeiras em https://www.sqlite.org/c3ref/open.html
+- Saiba mais sobre VFS em https://www.sqlite.org/c3ref/vfs.html
 
 :::

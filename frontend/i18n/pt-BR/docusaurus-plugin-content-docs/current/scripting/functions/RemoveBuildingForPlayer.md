@@ -53,7 +53,8 @@ No SA-MP 0.3.7 você pode usar -1 no modelid para remover todos os objetos dentr
 
 :::warning
 
-Há um limite de cerca de 1000 linhas/objetos. Não há solução alternativa. Ao remover o mesmo objeto para um jogador, eles travarão. Comummente, os jogadores travam ao se reconectar ao servidor porque o servidor remove o objeto no OnPlayerConnect.
+- Há um limite de cerca de 1000 linhas/objetos. Não há solução alternativa.
+- Ao remover o mesmo objeto para um jogador, eles travarão. Comummente, os jogadores travam ao se reconectar ao servidor porque o servidor remove o objeto no OnPlayerConnect.
 
 :::
 

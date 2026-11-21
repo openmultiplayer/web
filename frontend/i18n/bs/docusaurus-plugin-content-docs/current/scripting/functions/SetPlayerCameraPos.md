@@ -32,7 +32,8 @@ SetPlayerCameraPos(playerid, 652.23, 457.21, 10.84);
 
 :::tip
 
-Možda ćete morati koristiti SetPlayerCameraLookAt s ovom funkcijom da bis ispravno radila. Koristite SetCameraBehindPlayer da vratite kameru iza uređaja.
+- Možda ćete morati koristiti SetPlayerCameraLookAt s ovom funkcijom da bis ispravno radila.
+- Koristite SetCameraBehindPlayer da vratite kameru iza uređaja.
 
 :::
 

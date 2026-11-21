@@ -45,9 +45,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-Observe que os jogadores podem travar devido ao número ímpar de símbolos de til (~) usados no texto do jogo. Usar códigos de cores (por exemplo, `~r~`) além do 255º caractere pode travar o cliente.
-
-Além disso, um espaço em branco no final da string pode resultar em falha. Por exemplo: `"Headshot "` resulta em falha. Em vez disso, deveria ser `"Headshot"` ou `"Headshot_"`.
+- Observe que os jogadores podem travar devido ao número ímpar de símbolos de til (~) usados no texto do jogo. Usar códigos de cores (por exemplo, `~r~`) além do 255º caractere pode travar o cliente.
+- Além disso, um espaço em branco no final da string pode resultar em falha. Por exemplo: `"Headshot "` resulta em falha. Em vez disso, deveria ser `"Headshot"` ou `"Headshot_"`.
 
 :::
 

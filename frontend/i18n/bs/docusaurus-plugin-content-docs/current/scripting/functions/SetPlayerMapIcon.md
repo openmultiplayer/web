@@ -41,13 +41,15 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-Ako koristite nevažeći tip markera, stvorit će se ID 1 (Bijeli kvadrat). Ako koristite ID ikone koji se već koristi, on će zamijeniti trenutnu ikonu karte pomoću tog ID-a.
+- Ako koristite nevažeći tip markera, stvorit će se ID 1 (Bijeli kvadrat).
+- Ako koristite ID ikone koji se već koristi, on će zamijeniti trenutnu ikonu karte pomoću tog ID-a.
 
 :::
 
 :::warning
 
-Možete imati samo 100 ikona mapa! Oznake tipa 1 (), 2 (), 4 () i 56 () uzrokovat će pad vaše igre ako ste tijekom pregledavanja karte omogućili legende karte.
+- Možete imati samo 100 ikona mapa!
+- Oznake tipa 1, 2, 4 i 56 uzrokovat će pad vaše igre ako ste tijekom pregledavanja karte omogućili legende karte.
 
 :::
 

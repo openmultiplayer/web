@@ -38,7 +38,8 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 :::note
 
-Sabi nga sa pangalan ng callback, ito ay itinatawag lang kapag ang player ay nag right click upang mag mark sa kanilang mapa, at hindi sa pagpindot ng key. Ang Z value na irereturn ay magiging 0 (invalid) kapag ang area na ipinindot ng player ay malayo sa kanila; gamitin ang MapAndreas o ColAndreas na plugin upang makakuha ng mas tumpak na Z coordinate.
+- Sabi nga sa pangalan ng callback, ito ay itinatawag lang kapag ang player ay nag right click upang mag mark sa kanilang mapa, at hindi sa pagpindot ng key.
+- Ang Z value na irereturn ay magiging 0 (invalid) kapag ang area na ipinindot ng player ay malayo sa kanila; gamitin ang MapAndreas o ColAndreas na plugin upang makakuha ng mas tumpak na Z coordinate.
 
 :::
 

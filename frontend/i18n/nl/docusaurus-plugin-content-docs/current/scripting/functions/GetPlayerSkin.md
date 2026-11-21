@@ -36,7 +36,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Opmerkingen
 
-Geeft de nieuwe skin terug nadat [SetSpawnInfo](SetSpawnInfo) is aangeroepen, maar vóór de speler daadwerkelijk respawnt. Als de speler via [SpawnPlayer](SpawnPlayer) is gespawned, wordt de oude skin teruggegeven.
+- Geeft de nieuwe skin terug nadat [SetSpawnInfo](SetSpawnInfo) is aangeroepen, maar vóór de speler daadwerkelijk respawnt.
+- Als de speler via [SpawnPlayer](SpawnPlayer) is gespawned, wordt de oude skin teruggegeven.
 
 ## Gerelateerd
 
