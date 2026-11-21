@@ -406,6 +406,808 @@
   "navbar.item.Donate": {
     "message": "บริจาค"
   },
+  "serverInfo.copied": {
+    "message": "คัดลอกแล้ว",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "คัดลอก",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "โหมดเกม",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "ปิดการแจ้งเตือน",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "แอนิเมชัน",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "ตัวดูแอนิเมชัน open.mp (SA-MP) แบบอินเทอร์แอคทีฟพร้อมวิดีโอตัวอย่าง",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "ไม่มีวิดีโอ",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// สำหรับผู้เล่น",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// สำหรับแอคเตอร์",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "ม็อดหลายผู้เล่นสำหรับ Grand Theft Auto: San Andreas ที่รองรับการทำงานย้อนหลังได้เต็มที่กับ San Andreas Multiplayer",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "ปิดหมายเหตุเกี่ยวกับพันธมิตร",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "เซิร์ฟเวอร์พันธมิตร",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "รายชื่อเซิร์ฟเวอร์ San Andreas ที่ใช้ open.mp หรือ SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "คัดลอกแล้ว",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "คัดลอกมาโคร UID ไปยังคลิปบอร์ดแล้ว",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "ตัวสร้าง UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "สร้าง UID สำหรับใช้เป็นตัวระบุเฉพาะของ IComponent หรือ IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "เชื่อมต่อ",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "เซิร์ฟเวอร์ของคุณ",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "เซิร์ฟเวอร์",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "ที่อยู่",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "ผู้เล่น",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "ชื่อเล่น",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "เวอร์ชัน SA-MP",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "รายการโปรด",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "อินเทอร์เน็ต",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "พันธมิตร",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "เข้าร่วมล่าสุด",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "ชื่อเล่น...",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "ค้นหาชื่อโฮสต์/โหมดของเซิร์ฟเวอร์",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "ชื่อ",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "ปิง",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "โหมด",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "เชื่อมต่อ",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "เพิ่มในรายการโปรด",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "คัดลอกข้อมูลเซิร์ฟเวอร์",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "กฎ",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "ค่า",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "ตัวกรอง:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "เฉพาะเซิร์ฟเวอร์ open.mp",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "เซิร์ฟเวอร์ที่มีผู้เล่น",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "เซิร์ฟเวอร์ที่ไม่มีรหัสผ่าน",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "ภาษา:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "เพิ่มในรายการโปรดแล้ว!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "ตัวเรียกใช้ open.mp ที่แสดงรายชื่อเซิร์ฟเวอร์ตัวอย่าง",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "ผู้เล่น",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "คะแนน",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "คัดลอก",
+    "description": "Launcher preview: copy address"
+  },
+  "servers.add.successMessage": {
+    "message": "เพิ่ม {serverName} ในรายการรอดำเนินการแล้ว หากยังไม่ปรากฏภายใน 48 ชั่วโมง คุณสามารถติดต่อเราได้ทาง Discord!",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "ส่งเซิร์ฟเวอร์แล้ว!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "สถานะ {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "ส่งไม่สำเร็จ!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "เกิดข้อผิดพลาดขณะส่งเซิร์ฟเวอร์",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "ข้อผิดพลาด",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "หน้ารายชื่อเซิร์ฟเวอร์",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "หน้าก่อนหน้า",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "หน้าถัดไป",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "ชื่อ",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "โหมด",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "ภาษา",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "ทุกภาษา",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "ปิดหน้าต่างเพิ่มเซิร์ฟเวอร์",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "npcCallbacksNote.message": {
+    "message": "คอลแบ็กนี้สามารถถูกเรียกโดย NPC ได้เช่นกัน",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "ฟังก์ชัน",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "คอลแบ็ก",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "{name}นี้ถูกเพิ่มใน {version} และจะไม่ทำงานในเวอร์ชันก่อนหน้า!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "carousel.previous": {
+    "message": "ก่อนหน้า",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "ถัดไป",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "ดาวน์โหลดตัวเรียกใช้ open.mp เวอร์ชันต่าง ๆ",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "ดาวน์โหลดเซิร์ฟเวอร์ open.mp เวอร์ชันต่าง ๆ",
+    "description": "Server downloads page meta description"
+  },
+  "servers.page.title": {
+    "message": "เซิร์ฟเวอร์",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "รายชื่อเซิร์ฟเวอร์ San Andreas ที่ใช้ open.mp และ SA-MP",
+    "description": "Servers page description"
+  },
+  "downloads.release.githubTitle": {
+    "message": "ดูเวอร์ชันนี้บน GitHub",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "notFound.title": {
+    "message": "ไม่พบหน้าที่ต้องการ",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "ภาพหน้าจอภารกิจรถไฟใน GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "หน้าแรก",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "เอกสารประกอบ",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "เซิร์ฟเวอร์",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "การนำทางหน้าโพสต์บล็อก",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "โพสต์ใหม่กว่า",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "โพสต์เก่ากว่า",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "ดูแท็กทั้งหมด",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "โหมดตามระบบ",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "โหมดสว่าง",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "โหมดมืด",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "สลับระหว่างโหมดมืดและโหมดสว่าง (ปัจจุบัน: {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "เส้นทางนำทาง",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "หน้าเอกสาร",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "ก่อนหน้า",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "ถัดไป",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "เวอร์ชัน: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "นี่คือเอกสารที่ยังไม่เผยแพร่ของ {siteTitle} เวอร์ชัน {versionLabel}",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "นี่คือเอกสารของ {siteTitle} {versionLabel} ซึ่งไม่ได้รับการดูแลอย่างต่อเนื่องแล้ว",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "สำหรับเอกสารที่เป็นปัจจุบัน โปรดดู{latestVersionLink} ({versionLabel})",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "เวอร์ชันล่าสุด",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "แก้ไขหน้านี้",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "ลิงก์ตรงไปยัง {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " เมื่อ {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " โดย {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "อัปเดตล่าสุด{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "เวอร์ชัน",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "แท็ก:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.admonition.warning": {
+    "message": "คำเตือน",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "ปิด",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "การนำทางโพสต์บล็อกล่าสุด",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "ขยายหมวดหมู่ '{label}' ในแถบด้านข้าง",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "ยุบหมวดหมู่ '{label}' ในแถบด้านข้าง",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(เปิดในแท็บใหม่)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "หลัก",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "ภาษา",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "ในหน้านี้",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "อ่านเพิ่มเติม",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "อ่านเพิ่มเติมเกี่ยวกับ {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "คัดลอก",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "คัดลอกแล้ว",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "คัดลอกโค้ดไปยังคลิปบอร์ด",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "สลับการตัดบรรทัด",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "หน้าแรก",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "ยุบแถบด้านข้าง",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "ยุบแถบด้านข้าง",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "แถบด้านข้างเอกสาร",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "ปิดแถบนำทาง",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← กลับไปที่เมนูหลัก",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "สลับแถบนำทาง",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "ขยายเมนูดรอปดาวน์",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "ยุบเมนูดรอปดาวน์",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "ขยายแถบด้านข้าง",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "ขยายแถบด้านข้าง",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "ดูผลลัพธ์ทั้งหมด {count} รายการ"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "พบเอกสาร {count} รายการ|พบเอกสาร {count} รายการ",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "ผลการค้นหาสำหรับ \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "ค้นหาในเอกสาร",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "พิมพ์คำค้นหาที่นี่",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "ค้นหา",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "ขับเคลื่อนโดย Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "ไม่พบผลลัพธ์",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "กำลังโหลดผลลัพธ์ใหม่...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchBar.label": {
+    "message": "ค้นหา",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "ล้างคำค้นหา",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "ยกเลิก",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "ค้นหาเอกสาร",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "ถามคำถามอื่น...",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "กำลังตอบ...",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "ค้นหา",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "ส่ง",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "ค้นหา",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "กลับไปที่การค้นหาด้วยคีย์เวิร์ด",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "กลับไปที่การค้นหาด้วยคีย์เวิร์ด",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "ล่าสุด",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "ไม่มีการค้นหาล่าสุด",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "บันทึกการค้นหานี้",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "ลบการค้นหานี้ออกจากประวัติ",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "รายการโปรด",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "ลบการค้นหานี้ออกจากรายการโปรด",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "บทสนทนาล่าสุด",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "ลบบทสนทนานี้ออกจากประวัติ",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "ไม่สามารถโหลดผลลัพธ์ได้",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "คุณอาจต้องตรวจสอบการเชื่อมต่อเครือข่ายของคุณ",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "ถาม AI: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "คำตอบสร้างขึ้นโดย AI ซึ่งอาจผิดพลาดได้ โปรดตรวจสอบคำตอบ",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "แหล่งข้อมูลที่เกี่ยวข้อง",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "กำลังคิด...",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "คัดลอก",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "คัดลอกแล้ว!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "คัดลอก",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "ถูกใจ",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "ไม่ถูกใจ",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "ขอบคุณสำหรับความคิดเห็นของคุณ!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "กำลังค้นหา...",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "กำลังค้นหา ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "ค้นหาแล้ว",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "เลือก",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "ส่งคำถาม",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "ปุ่ม Enter",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "เลื่อน",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "ลูกศรขึ้น",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "ลูกศรลง",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "ปิด",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "ปุ่ม Escape",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "ขับเคลื่อนโดย",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "กลับไปที่การค้นหา",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "ไม่พบผลลัพธ์สำหรับ",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "ลองค้นหา",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "คิดว่าคำค้นหานี้ควรมีผลลัพธ์ใช่ไหม?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "แจ้งให้เราทราบ",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "ค้นหาเอกสาร",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} โพสต์|{count} โพสต์",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} ที่มีแท็ก \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "ผู้เขียน",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "ดูผู้เขียนทั้งหมด",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "ผู้เขียนคนนี้ยังไม่ได้เขียนโพสต์ใด ๆ",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "หน้าที่ไม่แสดงในรายการ",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "หน้านี้ไม่แสดงในรายการ เครื่องมือค้นหาจะไม่จัดทำดัชนี และเฉพาะผู้ที่มีลิงก์โดยตรงเท่านั้นที่เข้าถึงได้",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "หน้าฉบับร่าง",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "หน้านี้เป็นฉบับร่าง จะแสดงเฉพาะในโหมดพัฒนาและจะไม่ถูกรวมในบิลด์สำหรับใช้งานจริง",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} รายการ|{count} รายการ",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "ลองอีกครั้ง",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "ข้ามไปยังเนื้อหาหลัก",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
   "theme.docs.sidebar.filterPlaceholder": {
     "message": "กรองเอกสาร",
     "description": "Placeholder for the docs sidebar filter input"

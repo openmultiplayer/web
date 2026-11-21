@@ -14,7 +14,7 @@ export default function NotFoundContent({ className }: Props): ReactNode {
         <meta name="omp-not-found" />
       </Head>
       <section className={styles.content}>
-        <h1 className={styles.title}>
+        <h1 className="omp-page-title">
           <Translate id="notFound.title" description="404 page title">
             Page Not Found
           </Translate>
@@ -30,7 +30,7 @@ export default function NotFoundContent({ className }: Props): ReactNode {
         />
         <div className={styles.actions}>
           <Link
-            className={clsx("button button--primary button--lg", styles.button)}
+            className={"button button--primary"}
             to="/"
           >
             <Translate id="notFound.home" description="404 page home button">
@@ -38,7 +38,7 @@ export default function NotFoundContent({ className }: Props): ReactNode {
             </Translate>
           </Link>
           <Link
-            className={clsx("button button--secondary button--lg", styles.button)}
+            className={"button button--secondary"}
             to="/docs"
           >
             <Translate id="notFound.docs" description="404 page documentation button">
@@ -46,7 +46,7 @@ export default function NotFoundContent({ className }: Props): ReactNode {
             </Translate>
           </Link>
           <Link
-            className={clsx("button button--secondary button--lg", styles.button)}
+            className={"button button--secondary"}
             to="/servers"
           >
             <Translate id="notFound.servers" description="404 page servers button">

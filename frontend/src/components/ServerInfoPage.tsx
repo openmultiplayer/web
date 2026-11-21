@@ -5,6 +5,7 @@ import LoadingBanner from "@site/src/components/LoadingBanner";
 import { API_ADDRESS } from "@site/src/constants";
 import { formatElapsed } from "@site/src/lib/time";
 import { ServerAllData } from "@site/src/types";
+import { Page, PageHeader } from "@site/src/components/ui/Page";
 import Layout from "@theme/Layout";
 import { useEffect, useState } from "react";
 
@@ -24,7 +25,7 @@ const BackLink: React.FC<{ to: string }> = ({ to }) => {
   const isPartners = to === "/partners";
 
   return (
-    <Link to={to} className="button server-info-back-link">
+    <Link to={to} className="server-back">
       {isPartners ? (
         <Translate id="serverInfo.backToPartners" description="Back to partners link">← Back to Partner Servers</Translate>
       ) : (
@@ -40,10 +41,10 @@ const ServerLink = ({ address }: { address: string }) => {
       href={address}
       target="_blank"
       rel="noopener noreferrer"
-      className="server-info-quick-join-button"
+      className="button button--primary"
     >
       <Translate id="serverInfo.quickJoin" description="Quick join button">Quick Join</Translate>
-      <span className="server-info-arrow">→</span>
+      {" →"}
     </a>
   );
 };
@@ -52,7 +53,7 @@ const ServerAddressCopy = ({ address }: { address: string }) => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const onCopy = () => {
-    navigator.clipboard.writeText(address);
+    navigator.clipboard?.writeText(address);
     setHasCopied(true);
     setTimeout(() => setHasCopied(false), 2000);
   };
@@ -60,11 +61,11 @@ const ServerAddressCopy = ({ address }: { address: string }) => {
   return (
     <button
       type="button"
-      className={`server-info-ip-address ${hasCopied ? "copied" : ""}`}
+      className="button button--secondary"
       onClick={onCopy}
     >
       <span>{address}</span>
-      <span className="server-info-copy-state">
+      <span className="server-copy-state">
         {hasCopied ? (
           <Translate id="serverInfo.copied" description="Copied server address state">
             Copied
@@ -104,8 +105,8 @@ const UpdatedFooter = ({ lastUpdated }: { lastUpdated: string }) => {
   }
 
   return (
-    <div className="server-info-footer">
-      <time className="server-info-last-updated" dateTime={lastUpdated}>
+    <p className="server-detail-updated">
+      <time dateTime={lastUpdated}>
         <Translate
           id="serverInfo.lastUpdated"
           description="Last updated label"
@@ -114,99 +115,70 @@ const UpdatedFooter = ({ lastUpdated }: { lastUpdated: string }) => {
           {"Last updated {time} ago"}
         </Translate>
       </time>
-    </div>
+    </p>
   );
 };
 
 const Info = ({ data }: { data: ServerAllData }) => (
-  <article className="server-info-wrapper">
-    <header className="server-info-page-header">
-      <h1 className="server-info-name">{data.core.hn}</h1>
-      {data.description && (
-        <p className="server-info-description">{data.description}</p>
-      )}
-
-      <div className="server-info-actions">
-        <ServerAddressCopy address={data.dm ?? data.ip} />
-        <ServerLink address={`samp://${data.dm ?? data.ip}`} />
-      </div>
-    </header>
-
-    <div className="server-info-container">
-      <div className="server-info-box">
-        <div
-          className={`server-info-content-wrapper ${
-            data.ru ? "" : "server-info-content-wrapper-single"
-          }`}
-        >
-          <div className="server-info-stats-section">
-            <div className="server-info-stat-item">
-              <span className="server-info-stat-label">
-                <Translate id="serverInfo.playersOnline" description="Players online label">
-                  Players Online
-                </Translate>
-              </span>
-              <span className="server-info-stat-value">
-                {data.core.pc}/{data.core.pm}
-              </span>
-            </div>
-
-            <div className="server-info-stat-item">
-              <span className="server-info-stat-label">
-                <Translate id="serverInfo.language" description="Language label">
-                  Language
-                </Translate>
-              </span>
-              <span className="server-info-stat-value">{data.core.la}</span>
-            </div>
-          </div>
-
-          {data.ru && (
-            <div className="server-info-rules-section">
-              <table className="server-info-rules-table">
-                <thead>
-                  <tr>
-                    <th>
-                      <Translate id="serverInfo.rule" description="Rule table header">
-                        Rule
-                      </Translate>
-                    </th>
-                    <th>
-                      <Translate id="serverInfo.value" description="Value table header">
-                        Value
-                      </Translate>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {Object.entries(data.ru).map(([key, value]) => (
-                    <tr key={key}>
-                      <td>{key}</td>
-                      <td>
-                        {key === "weburl" || key === "discord.invite" ? (
-                          <a
-                            href={`https://${value}`}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            {value}
-                          </a>
-                        ) : (
-                          value
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
+  <article>
+    <PageHeader
+      title={data.core.hn}
+      subtitle={data.description}
+      actions={
+        <>
+          <ServerAddressCopy address={data.dm ?? data.ip} />
+          <ServerLink address={`samp://${data.dm ?? data.ip}`} />
+        </>
+      }
+    />
+    <div className="server-detail">
+      <div className="server-detail-stats">
+        <div className="omp-panel">
+          <span className="omp-label">
+            <Translate id="serverInfo.playersOnline" description="Players online label">Players Online</Translate>
+          </span>
+          <strong>{data.core.pc}/{data.core.pm}</strong>
         </div>
-
-        <div className="server-info-divider" />
-
+        <div className="omp-panel">
+          <span className="omp-label">
+            <Translate id="serverInfo.language" description="Language label">Language</Translate>
+          </span>
+          <strong>{data.core.la}</strong>
+        </div>
+        <div className="omp-panel">
+          <span className="omp-label">
+            <Translate id="serverInfo.gameMode" description="Game mode label">Game Mode</Translate>
+          </span>
+          <strong>{data.core.gm}</strong>
+        </div>
         <UpdatedFooter lastUpdated={data.lastUpdated} />
       </div>
+      {data.ru && (
+        <div className="omp-panel">
+          <div className="omp-row omp-row--head">
+            <span className="omp-label">
+              <Translate id="serverInfo.rule" description="Rule table header">Rule</Translate>
+            </span>
+            <span className="omp-label">
+              <Translate id="serverInfo.value" description="Value table header">Value</Translate>
+            </span>
+          </div>
+          <div className="omp-rows">
+            {Object.entries(data.ru).map(([key, value]) => (
+              <div key={key} className="omp-row">
+                <span>{key}</span>
+                <span>
+                  {key === "weburl" || key === "discord.invite" ? (
+                    <a href={`https://${value}`} target="_blank" rel="noreferrer">{value}</a>
+                  ) : (
+                    value
+                  )}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   </article>
 );
@@ -238,7 +210,7 @@ const Content = ({ ip }: { ip: string }) => {
 
   if (!data) {
     return (
-      <p className="server-info-description">
+      <p className="omp-empty">
         <Translate
           id="serverInfo.notFound"
           description="Shown when a server address is unknown or the server is gone"
@@ -259,12 +231,10 @@ const ServerInfoPage = ({ ip, from }: { ip: string; from?: string }) => {
 
   return (
     <Layout title={ip} description={"Server Information for " + ip}>
-      <section className="server-info-section">
-        <div className="server-info-stack">
-          <BackLink to={from === "partners" ? "/partners" : "/servers"} />
-          <Content ip={ip} />
-        </div>
-      </section>
+      <Page>
+        <BackLink to={from === "partners" ? "/partners" : "/servers"} />
+        <Content ip={ip} />
+      </Page>
     </Layout>
   );
 };

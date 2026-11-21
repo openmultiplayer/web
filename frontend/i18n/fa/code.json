@@ -355,6 +355,872 @@
   "navbar.item.Donate": {
     "message": "حمایت مالی"
   },
+  "serverInfo.copied": {
+    "message": "کپی شد",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "کپی",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "گیم‌مود",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "بستن اعلان",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "انیمیشن‌ها",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "نمایشگر تعاملی انیمیشن‌های open.mp (SA-MP) همراه با پیش‌نمایش ویدیویی",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "ویدیو در دسترس نیست",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// برای بازیکنان",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// برای اکتورها",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "یک ماد چندنفره برای Grand Theft Auto: San Andreas که کاملاً با San Andreas Multiplayer سازگار است",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "بستن یادداشت شراکت",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "سرورهای شریک",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "فهرست سرورهای San Andreas که از open.mp یا SA-MP استفاده می‌کنند",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "کپی شد",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "ماکروی UID در کلیپ‌بورد کپی شد.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "تولیدکننده UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "تولید UID برای استفاده به‌عنوان شناسه یکتای IComponent یا IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "اتصال",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "سرور شما",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "سرور",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "آدرس",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "بازیکنان",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "نام مستعار",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "نسخه SA-MP",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "علاقه‌مندی‌ها",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "اینترنت",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "شرکاء",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "اخیراً وارد شده",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "نام مستعار...",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "جستجوی نام یا مود سرور",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "نام",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "پینگ",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "مود",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "اتصال",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "افزودن به علاقه‌مندی‌ها",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "کپی اطلاعات سرور",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "قانون",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "مقدار",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "فیلترها:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "فقط سرورهای open.mp",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "سرورهای غیرخالی",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "سرورهای بدون رمز",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "زبان:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "به علاقه‌مندی‌ها اضافه شد!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "لانچر open.mp که فهرستی از سرورهای نمونه را نشان می‌دهد",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "بازیکن",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "امتیاز",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "کپی",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "این فراخوانی می‌تواند توسط NPC نیز اجرا شود.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "تابع",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "فراخوانی",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "این {name} در نسخه {version} اضافه شده و در نسخه‌های قبلی کار نخواهد کرد!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "{serverName} به فهرست انتظار ما اضافه شد. اگر پس از حداکثر ۴۸ ساعت در دسترس نبود، می‌توانید در Discord با ما تماس بگیرید!",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "سرور ارسال شد!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "وضعیت {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "ارسال ناموفق بود!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "هنگام ارسال سرور خطایی رخ داد",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "خطا",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "صفحات فهرست سرورها",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "صفحه قبلی",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "صفحه بعدی",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "نام",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "مود",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "زبان",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "همه زبان‌ها",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "بستن پنجره افزودن سرور",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "قبلی",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "بعدی",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "لانچر open.mp",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "دانلود نسخه‌های لانچر open.mp",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "GTA San Andreas را به‌صورت چندنفره در سرورهای open.mp و SA-MP بازی کنید.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "سرور open.mp",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "دانلود نسخه‌های سرور open.mp",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "سرور چندنفره GTA San Andreas خودتان را میزبانی کنید.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "سرورها",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "فهرست سرورهای San Andreas که از open.mp و SA-MP استفاده می‌کنند",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "جدیدترین",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "منتشرشده در {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "نکات برجسته",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "مشاهده تغییرات کامل",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "مشاهده نسخه در GitHub",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "مشاهده نسخه در GitHub",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* نسخه DynSSL نیاز دارد که libssl روی توزیع لینوکس شما نصب باشد.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "پنهان کردن نسخه‌های قدیمی‌تر",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "مشاهده {count} نسخه قدیمی‌تر",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "همه نسخه‌ها متن‌باز هستند. از سورس بیلد کنید یا مستقیماً از GitHub دانلود کنید.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "دانلود از GitHub",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "صفحه پیدا نشد",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "تصویری از مأموریت قطار در GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "صفحه اصلی",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "مستندات",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "سرورها",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "کنترل پست‌های صفحه وبلاگ",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "پست جدید‌تر",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "پست قدیمی‌تر",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "مشاهده تمام برچسب‌ها",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "حالت سیستم",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "حالت روشن",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "حالت تیره",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "بین حالت تاریک و روشن سوئیچ کنید (الان {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "نشانگر صفحات",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "صفحات مستندات",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "قبلی",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "بعدی",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "یک مطلب برچسب شده|{count} مطلب برچسب شده",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} با \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "نسخه: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "نسخه {siteTitle} {versionLabel} هنوز به صورت کامل منتشر نشده است.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "نسخه {siteTitle} {versionLabel} دیگر به روز رسانی نمی شود.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "برای دیدن آخرین نسخه این متن، نسخه {latestVersionLink} ({versionLabel}) را ببینید.",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "آخرین نسخه",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "ویرایش مطالب این صفحه",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "لینک مستقیم به {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " در تاریخ {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " توسط {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "آخرین به روز رسانی{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "نسخه‌ها",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "برچسب‌ها:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "بستن",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "هشدار",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "کنترل پست‌های اخیر وبلاگ",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "باز کردن دسته بندی در نوار کناری '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "بستن دسته بندی در نوار کناری '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(در زبانه جدید باز می‌شود)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "صفحه اصلی",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "زبان‌ها",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "مطالب این صفحه",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "ادامه مطلب",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "درباره {title} بیشتر بخوانید",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "کپی",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "کپی شد",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "کپی به کلیپ‌بورد",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "تغییر نحوه نمایش کلمه",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "صفحه اصلی",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "بستن نوار کناری",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "بستن نوار کناری",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "نوار کناری مستندات",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "بستن منو",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "→ بازگشت به منو اصلی",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "باز و بست منو",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "باز کردن منوی کشویی",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "بستن منوی کشویی",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "باز کردن نوار کناری",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "باز کردن نوار کناری",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "نمایش {count} نتیجه"
+  },
+  "theme.SearchBar.label": {
+    "message": "جستجو",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "پاک کردن جستجو",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "کنسل",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "جستجو در مستندات",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "سؤال دیگری بپرسید...",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "در حال پاسخ دادن...",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "جستجو",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "ارسال",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "جستجو",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "بازگشت به جستجوی کلیدواژه",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "بازگشت به جستجوی کلیدواژه",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "اخیرا",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "جستجوی اخیر مشاهده نشد",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "ذخیره این جستجو",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "این جستجو از تاریخچه پاک شود",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "برگزیده",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "این جستجو از برگزیده ها پاک شود",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "گفتگوهای اخیر",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "حذف این گفتگو از تاریخچه",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "دریافت نتایج ممکن نیست",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "لطفا اتصال شبکه خود را بررسی کنید.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "از هوش مصنوعی بپرسید: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "پاسخ‌ها با هوش مصنوعی تولید می‌شوند که ممکن است اشتباه کند. پاسخ‌ها را بررسی کنید.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "منابع مرتبط",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "در حال فکر کردن...",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "کپی",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "کپی شد!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "کپی",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "پسندیدم",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "نپسندیدم",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "از بازخورد شما سپاسگزاریم!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "در حال جستجو...",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "در حال جستجو برای ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "جستجو شد برای",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "انتخاب",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "ارسال سؤال",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "کلید اینتر",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "پیمایش",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "کلید بالا",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "کلید پایین",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "بستن",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "کلید Escape",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "جستجو برای",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "بازگشت به جستجو",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "هیچ نتیجه ای برای",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "جستجو پیشنهادی برای",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "آیا اطمینان دارید این جستجو باید نتیجه ای داشته باشد؟",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "با ما در میان بگذارید.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "جستجوی مستندات",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "یک مورد پیدا شد|{count} مورد پیدا شد",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "جستجو برای عبارت \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "جستجو در متن",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "جستجوی خود را اینجا تایپ کنید",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "جستجو",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "قدرت گرفته از Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "هیچ نتیجه‌ای پیدا نشد",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "در حال دریافت نتایج...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "یک پست|{count} پست",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} با برچسب \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "نویسندگان",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View All Authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "این نویسنده هنوز هیچ پستی ننوشته است.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "صفحه فهرست نشده",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "این صفحه فهرست نشده است. موتورهای جستجو آن را ایندکس نمی کنند و فقط کاربرانی که لینک مستقیم دارند می توانند به آن دسترسی داشته باشند.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "صفحه پیش‌نویس",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "این صفحه یک پیش‌نویس است. فقط در حالت توسعه قابل مشاهده است و از نسخه نهایی (production) حذف خواهد شد.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} مورد",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "تلاش مجدد",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "پرش به مطلب اصلی",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
   "theme.docs.sidebar.filterPlaceholder": {
     "message": "فیلتر مستندات",
     "description": "Placeholder for the docs sidebar filter input"

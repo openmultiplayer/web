@@ -1,0 +1,46 @@
+{
+  "version.label": {
+    "message": "Наступна",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Scripting": {
+    "message": "Скриптинг",
+    "description": "The label for category 'Scripting' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Callbacks": {
+    "message": "Колбеки",
+    "description": "The label for category 'Callbacks' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Functions": {
+    "message": "Функції",
+    "description": "The label for category 'Functions' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Language": {
+    "message": "Мова",
+    "description": "The label for category 'Language' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "Довідник",
+    "description": "The label for category 'Reference' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Resources": {
+    "message": "Ресурси",
+    "description": "The label for category 'Resources' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Server": {
+    "message": "Сервер",
+    "description": "The label for category 'Server' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Client": {
+    "message": "Клієнт",
+    "description": "The label for category 'Client' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Tutorials": {
+    "message": "Посібники",
+    "description": "The label for category 'Tutorials' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Meta": {
+    "message": "Мета",
+    "description": "The label for category 'Meta' in sidebar 'docsSidebar'"
+  }
+}

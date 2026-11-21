@@ -28,5 +28,9 @@
   },
   "sidebar.docsSidebar.category.Meta": {
     "message": "เมตา"
+  },
+  "version.label": {
+    "message": "ถัดไป",
+    "description": "The label for version current"
   }
 }

@@ -1,40 +1,14 @@
-import Layout from "@theme/Layout";
-import { ReactNode, useEffect, useMemo, useState } from "react";
-import clsx from "clsx";
 import { default as Translate, translate } from "@docusaurus/Translate";
-import {
-  List as FixedSizeList,
-  RowComponentProps,
-  useListRef,
-} from "react-window";
+import Layout from "@theme/Layout";
+import clsx from "clsx";
+import { ReactNode, useEffect, useState } from "react";
+
 import LoadingBanner from "../components/LoadingBanner";
-import Admonition from "../components/Admonition";
-import ServerRow from "../components/ServerRow";
+import ServerList, { getServers } from "../components/ServerList";
 import { ToastContainer } from "../components/Toast";
-import { API_ADDRESS } from "../constants";
+import { Notice } from "../components/ui/Notice";
+import { NoScriptNotice, Page, PageHeader } from "../components/ui/Page";
 import { CoreServerData } from "../types";
-
-const API_SERVERS = `${API_ADDRESS}/servers/`;
-
-const getServers = async () => {
-  try {
-    const r: Response = await fetch(API_SERVERS);
-    const servers: CoreServerData[] = await r.json();
-    return servers;
-  } catch (e) {
-    return [];
-  }
-};
-
-type Stats = {
-  players: number;
-  servers: number;
-};
-
-const getStats = (servers: CoreServerData[]): Stats => ({
-  players: servers.map((s) => s.pc).reduce((acc, pc) => acc + pc, 0),
-  servers: servers.length,
-});
 
 const PartnerNotice = ({
   onDismiss,
@@ -42,330 +16,35 @@ const PartnerNotice = ({
 }: {
   onDismiss: () => void;
   isClosing: boolean;
-}): ReactNode => {
-  return (
-    <Admonition
-      type="warning"
-      className="servers-partners-note"
-      title={
-        <Translate id="partners.note.title" description="Partner note title">
-          Partnership Program
-        </Translate>
-      }
-    >
-      <p className="partners-note-body">
-        <Translate id="partners.note">
-          The partnership program is currently closed for applications, as
-          promised. Servers that already reserved a slot can still join, but
-          we are not accepting new requests at this time. For other questions,
-          please ask in our Discord.
-        </Translate>
-      </p>
-      <div className="dismissible-admonition-actions">
-        <button
-          type="button"
-          className="dismissible-admonition-button"
-          onClick={onDismiss}
-          disabled={isClosing}
-          aria-label={translate({
-            id: "partners.note.dismissAria",
-            message: "Dismiss partnership note",
-            description: "Accessible label for dismissing the partner note",
-          })}
-        >
-          <Translate
-            id="partners.note.dismiss"
-            description="Dismiss button label on partner note"
-          >
-            Dismiss this message
-          </Translate>
-        </button>
-      </div>
-    </Admonition>
-  );
-};
+}): ReactNode => (
+  <Notice
+    type="info"
+    title={
+      <Translate id="partners.note.title" description="Partner note title">
+        Partnership Program
+      </Translate>
+    }
+    onDismiss={onDismiss}
+    dismissDisabled={isClosing}
+    dismissLabel={translate({
+      id: "partners.note.dismissAria",
+      message: "Dismiss partnership note",
+      description: "Accessible label for dismissing the partner note",
+    })}
+  >
+    <Translate id="partners.note">
+      The partnership program is currently closed for applications, as
+      promised. Servers that already reserved a slot can still join, but
+      we are not accepting new requests at this time. For other questions,
+      please ask in our Discord.
+    </Translate>
+  </Notice>
+);
 
-type SortBy = "relevance" | "pc" | "hn" | "gm" | "la";
+// Remembers the dismissal in this browser, so the note doesn't come back on every visit.
+const NOTE_KEY = "omp-partners-note-dismissed";
 
-type Query = {
-  search?: string;
-  showEmpty: boolean;
-  showPassworded: boolean;
-  language: string;
-  sort: SortBy;
-};
-
-type LanguageFilter = {
-  name: string;
-  keywords: string[];
-};
-
-const languageFilters: LanguageFilter[] = [
-  { name: "English", keywords: ["English", "EN", "Eng"] },
-  { name: "Arabic", keywords: ["Arabic", "العربية"] },
-  { name: "Czech", keywords: ["Czech", "CZ", "Čeština"] },
-  { name: "Chinese", keywords: ["Chinese", "CN", "ZH", "中文"] },
-  { name: "Dutch", keywords: ["Dutch", "NL", "Nederlands"] },
-  { name: "French", keywords: ["French", "FR", "Français"] },
-  { name: "German", keywords: ["German", "DE", "GER", "Deutsch"] },
-  { name: "Hungarian", keywords: ["Hungarian", "HU", "Magyar"] },
-  { name: "Indonesian", keywords: ["Indonesian", "ID", "Bahasa Indonesia"] },
-  { name: "Italian", keywords: ["Italian", "IT", "Italiano"] },
-  { name: "Polish", keywords: ["Polish", "PL", "Polski"] },
-  { name: "Portuguese", keywords: ["Portuguese", "PT", "Português"] },
-  { name: "Romanian", keywords: ["Romanian", "RO", "Română"] },
-  { name: "Russian", keywords: ["Russian", "RU", "RUS", "Русский"] },
-  { name: "Spanish", keywords: ["Spanish", "ES", "Español"] },
-  { name: "Turkish", keywords: ["Turkish", "TR", "Türkçe"] },
-  { name: "Ukrainian", keywords: ["Ukrainian", "UK", "Українська"] },
-  { name: "Vietnamese", keywords: ["Vietnamese", "VI", "Viet Nam", "Tiếng Việt"] },
-];
-
-const checkLanguage = (serverLanguage: string, filterName: string) => {
-  if (!filterName) {
-    return true;
-  }
-
-  const filter = languageFilters.find((item) => item.name === filterName);
-
-  if (!filter) {
-    return true;
-  }
-
-  const normalizedLanguage = serverLanguage.toLowerCase();
-  return filter.keywords.some((keyword) =>
-    normalizedLanguage.includes(keyword.toLowerCase()),
-  );
-};
-
-// Filters data
-const filterServers = (data: CoreServerData[], q: Query): CoreServerData[] => {
-  let filteredData = [...data];
-
-  if (q.search) {
-    const searchTerm = q.search.toLowerCase();
-    filteredData = filteredData.filter(
-      (s) =>
-        s.ip.toLowerCase().includes(searchTerm) ||
-        s.hn.toLowerCase().includes(searchTerm) ||
-        s.gm.toLowerCase().includes(searchTerm),
-    );
-  }
-
-  if (!q.showEmpty) {
-    filteredData = filteredData.filter((s) => s.pc > 0);
-  }
-
-  if (!q.showPassworded) {
-    filteredData = filteredData.filter((s) => !s.pa);
-  }
-
-  if (q.language) {
-    filteredData = filteredData.filter((s) => checkLanguage(s.la, q.language));
-  }
-
-  // Sorting Logic
-  if (q.sort === "pc") {
-    filteredData.sort((a, b) => b.pc - a.pc); // Sort by players, descending
-  } else if (q.sort === "hn") {
-    filteredData.sort((a, b) => a.hn.localeCompare(b.hn));
-  } else if (q.sort === "gm") {
-    filteredData.sort((a, b) => a.gm.localeCompare(b.gm));
-  } else if (q.sort === "la") {
-    filteredData.sort((a, b) => a.la.localeCompare(b.la));
-  }
-  //Relevance would be the original order
-
-  return filteredData;
-};
-
-const StatsComponent = ({ stats: { players, servers } }: { stats: Stats }) => {
-  const average = players / servers;
-  const averageStr = (isNaN(average) ? 0 : average).toFixed(1);
-  return (
-    <div className="servers-center">
-      <p className="servers-stats">
-        <Translate
-          id="partners.server.stats"
-          description="Stats summary: {players} players on {servers} servers with an average of {average} players per server."
-          values={{
-            players: <strong>{players}</strong>,
-            servers: <strong>{servers}</strong>,
-            average: <strong>{averageStr}</strong>,
-          }}
-        >
-          {
-            "{players} players on {servers} servers with an average of {average} players per server."
-          }
-        </Translate>
-      </p>
-    </div>
-  );
-};
-
-const initialQuery: Query = {
-  search: "",
-  showEmpty: true,
-  showPassworded: true,
-  language: "",
-  sort: "relevance",
-};
-
-// List Component
-const List = ({ data }: { data: CoreServerData[] }) => {
-  const [query, setQuery] = useState<Query>(initialQuery);
-
-  const filteredData = useMemo(() => filterServers(data, query), [data, query]);
-
-  const listRef = useListRef(null);
-
-  useEffect(() => {
-    listRef.current?.element?.scrollTo({ top: 0, behavior: "smooth" });
-  }, [query]);
-
-  const rowHeight = 134;
-
-  const Row = ({ index, style }: RowComponentProps) => {
-    const server = filteredData[index];
-    return (
-      <div style={style}>
-        <ServerRow key={server.ip} server={server} from="partners" />
-      </div>
-    );
-  };
-
-  return (
-    <div className="servers-list-wrapper">
-      <form className="servers-list-form">
-        <div className="servers-controls">
-          <select
-            value={query.sort}
-            onChange={(e) =>
-              setQuery((q) => ({ ...q, sort: e.target.value as SortBy }))
-            }
-            className="servers-select"
-          >
-            <option value="relevance">
-              <Translate
-                id="servers.sort.relevance"
-                description="Sort by relevance"
-              >
-                Relevance
-              </Translate>
-            </option>
-            <option value="pc">
-              <Translate
-                id="servers.sort.players"
-                description="Sort by players"
-              >
-                Players
-              </Translate>
-            </option>
-            <option value="hn">
-              <Translate id="servers.sort.name" description="Sort by server name">
-                Name
-              </Translate>
-            </option>
-            <option value="gm">
-              <Translate id="servers.sort.mode" description="Sort by game mode">
-                Mode
-              </Translate>
-            </option>
-            <option value="la">
-              <Translate id="servers.sort.language" description="Sort by language">
-                Language
-              </Translate>
-            </option>
-          </select>
-
-          <select
-            value={query.language}
-            onChange={(e) =>
-              setQuery((q) => ({ ...q, language: e.target.value }))
-            }
-            className="servers-select"
-          >
-            <option value="">
-              <Translate id="servers.language.all" description="All languages filter option">
-                All languages
-              </Translate>
-            </option>
-            {languageFilters.map((filter) => (
-              <option key={filter.name} value={filter.name}>
-                {filter.name}
-              </option>
-            ))}
-          </select>
-
-          <input
-            type="text"
-            placeholder={translate({
-              id: "servers.search.placeholder",
-              message: "Search by IP or Name",
-              description: "Search input placeholder",
-            })}
-            name="search"
-            id="search"
-            value={query.search}
-            onChange={(e) =>
-              setQuery((q) => ({ ...q, search: e.target.value }))
-            }
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                e.preventDefault();
-              }
-            }}
-            className="servers-search"
-          />
-        </div>
-
-        <div className="servers-checkboxes">
-          <label className="servers-checkbox-label">
-            <input
-              type="checkbox"
-              checked={query.showEmpty}
-              onChange={(e) =>
-                setQuery((q) => ({ ...q, showEmpty: e.target.checked }))
-              }
-              className="servers-checkbox"
-            />
-            <Translate id="servers.filter.showEmpty" description="Checkbox label to show empty servers">
-              Empty
-            </Translate>
-          </label>
-
-          <label className="servers-checkbox-label">
-            <input
-              type="checkbox"
-              checked={query.showPassworded}
-              onChange={(e) =>
-                setQuery((q) => ({ ...q, showPassworded: e.target.checked }))
-              }
-              className="servers-checkbox"
-            />
-            <Translate id="servers.filter.showPassworded" description="Checkbox label to show passworded servers">
-              Passworded
-            </Translate>
-          </label>
-        </div>
-      </form>
-
-      <StatsComponent stats={getStats(filteredData)} />
-
-      <div className="servers-virtual-list">
-        <FixedSizeList
-          listRef={listRef}
-          rowComponent={Row}
-          rowHeight={rowHeight}
-          rowCount={filteredData.length}
-          rowProps={{}}
-        />
-      </div>
-    </div>
-  );
-};
-
-const Page = (): ReactNode => {
+const PartnersPage = (): ReactNode => {
   const [loading, setLoading] = useState<boolean>(true);
   const [data, setData] = useState<CoreServerData[]>([]);
   const [showPartnerNote, setShowPartnerNote] = useState<boolean>(true);
@@ -377,10 +56,23 @@ const Page = (): ReactNode => {
     }
 
     setIsClosingPartnerNote(true);
+    try {
+      window.localStorage.setItem(NOTE_KEY, "1");
+    } catch {
+      // Storage can be blocked; the note just comes back next time.
+    }
     window.setTimeout(() => {
       setShowPartnerNote(false);
     }, 260);
   };
+
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem(NOTE_KEY)) setShowPartnerNote(false);
+    } catch {
+      // Storage can be blocked; keep showing the note.
+    }
+  }, []);
 
   useEffect(() => {
     getServers().then((servers) => {
@@ -403,17 +95,19 @@ const Page = (): ReactNode => {
           description: "Partner servers page description",
         })}
       >
-        <section className="servers-container">
-          <h1 className="servers-page-title">
-            <Translate id="partners.page.heading" description="Partner servers page main heading">
-              Partner Servers
-            </Translate>
-          </h1>
-          <p className="servers-page-subtitle">
-            <Translate id="partners.page.subtitle" description="Partner servers page subtitle">
-              Browse official partner servers.
-            </Translate>
-          </p>
+        <Page>
+          <PageHeader
+            title={
+              <Translate id="partners.page.heading" description="Partner servers page main heading">
+                Partner Servers
+              </Translate>
+            }
+            subtitle={
+              <Translate id="partners.page.subtitle" description="Partner servers page subtitle">
+                Browse official partner servers.
+              </Translate>
+            }
+          />
           {showPartnerNote && (
             <div
               className={clsx(
@@ -427,12 +121,21 @@ const Page = (): ReactNode => {
               />
             </div>
           )}
-          {loading ? <LoadingBanner /> : <List data={data} />}
-        </section>
+          <NoScriptNotice>
+            <Translate
+              id="noscript.partners"
+              description="Shown on the partners page when JavaScript is off"
+              values={{ link: <a href="https://api.open.mp/servers/">api.open.mp/servers</a> }}
+            >
+              {"The partner list loads live and needs JavaScript. You can also read it as JSON at {link}, where partners have pr set to true."}
+            </Translate>
+          </NoScriptNotice>
+          {loading ? <LoadingBanner /> : <ServerList data={data} partners />}
+        </Page>
       </Layout>
       <ToastContainer />
     </div>
   );
 };
 
-export default Page;
+export default PartnersPage;
