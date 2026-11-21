@@ -28,5 +28,9 @@
   },
   "sidebar.docsSidebar.category.Meta": {
     "message": "متا"
+  },
+  "version.label": {
+    "message": "بعدی",
+    "description": "The label for version current"
   }
 }

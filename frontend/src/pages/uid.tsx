@@ -1,3 +1,4 @@
+import { NoScriptNotice, Page, PageHeader } from "../components/ui/Page";
 import { default as Translate, translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import { ReactNode, useEffect, useState } from "react";
@@ -15,7 +16,7 @@ const createUID = (): string => {
   )}${toHex(rnd[4])}${toHex(rnd[5])}${toHex(rnd[6])}${toHex(rnd[7])}`;
 };
 
-const Page = (): ReactNode => {
+const UidPage = (): ReactNode => {
   const [uid, setUID] = useState<string>("");
 
   useEffect(() => {
@@ -60,17 +61,17 @@ const Page = (): ReactNode => {
           description: "UID generator page description",
         })}
       >
-        <section className="uid-container">
-          <header className="uid-page-header">
-            <h1 className="uid-page-title">
+        <Page narrow>
+          <PageHeader
+            title={<>
               <Translate
                 id="uid.heading"
                 description="UID generator page heading"
               >
                 Component UID Generator
               </Translate>
-            </h1>
-            <p className="uid-page-subtitle">
+            </>}
+            subtitle={<>
               <Translate
                 id="uid.instructions.intro"
                 description="UID generator instructions explaining how to use the generated macro"
@@ -85,11 +86,16 @@ const Page = (): ReactNode => {
                   "Generate a unique {provideUid} macro for a new component or extension."
                 }
               </Translate>
-            </p>
-          </header>
+            </>}
+          />
 
-          <div className="uid-panel">
-            <p className="uid-panel-intro">
+          <NoScriptNotice>
+            <Translate id="noscript.uid" description="Shown on the UID generator when JavaScript is off">
+              The generator runs in your browser and needs JavaScript.
+            </Translate>
+          </NoScriptNotice>
+          <div className="omp-panel">
+            <p>
               <Translate
                 id="uid.instructions.panelIntro"
                 description="UID generator panel explanation"
@@ -107,7 +113,7 @@ const Page = (): ReactNode => {
             </p>
 
             <div className="uid-step">
-              <p className="uid-step-label">
+              <p className="omp-field-label">
                 <Translate
                   id="uid.instructions.findPlaceholder"
                   description="UID generator instruction before the placeholder macro"
@@ -115,13 +121,13 @@ const Page = (): ReactNode => {
                   Find this placeholder:
                 </Translate>
               </p>
-              <pre className="uid-code-block">
+              <pre className="omp-code">
                 <code>PROVIDE_UID(/* UID GOES HERE */);</code>
               </pre>
             </div>
 
             <div className="uid-step">
-              <p className="uid-step-label">
+              <p className="omp-field-label">
                 <Translate
                   id="uid.instructions.replaceWith"
                   description="UID generator instruction before the generated replacement macro"
@@ -129,7 +135,7 @@ const Page = (): ReactNode => {
                   And replace it with:
                 </Translate>
               </p>
-              <pre className="uid-code-block uid-code-block-generated">
+              <pre className="omp-code uid-generated">
                 <code>{generatedMacro}</code>
               </pre>
             </div>
@@ -137,7 +143,7 @@ const Page = (): ReactNode => {
             <div className="uid-actions">
               <button
                 type="button"
-                className="button button--primary uid-action-button"
+                className="button button--primary"
                 onClick={copyUID}
                 disabled={!uid}
               >
@@ -147,7 +153,7 @@ const Page = (): ReactNode => {
               </button>
               <button
                 type="button"
-                className="button button--secondary uid-action-button"
+                className="button button--secondary"
                 onClick={() => setUID(createUID())}
               >
                 <Translate id="uid.regenerate" description="Regenerate UID button">
@@ -167,14 +173,14 @@ const Page = (): ReactNode => {
               </Translate>
             </p>
           </div>
-        </section>
+        </Page>
       </Layout>
       <ToastContainer />
     </div>
   );
 };
 
-export default Page;
+export default UidPage;
 
 function randomBytes(size: number): Uint8Array {
   // Input validation

@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Blog",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "open.mp blogu",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Son gönderiler",
+    "description": "The label for the left sidebar"
+  }
+}

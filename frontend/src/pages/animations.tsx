@@ -1,3 +1,4 @@
+import { NoScriptNotice, Page, PageHeader } from "../components/ui/Page";
 import React, { useState, useMemo, useEffect } from "react";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
@@ -88,29 +89,37 @@ const AnimationsPage = () => {
         description: "Animations page meta description",
       })}
     >
-      <div className={styles.pageContainer}>
-            <Heading as="h1" className={styles.pageTitle}>
-              <Translate id="animations.title" description="Animations page title">
-                open.mp Animations Viewer
-              </Translate>
-            </Heading>
-            <p className={styles.pageSubtitle}>
-              <Translate id="animations.subtitle" description="Animations page subtitle">
-                Browse and preview all available open.mp animations.
-              </Translate>
-            </p>
+      <Page>
+        <PageHeader
+          title={
+            <Translate id="animations.title" description="Animations page title">
+              open.mp Animations Viewer
+            </Translate>
+          }
+          subtitle={
+            <Translate id="animations.subtitle" description="Animations page subtitle">
+              Browse and preview all available open.mp animations.
+            </Translate>
+          }
+        />
 
-            <div className={styles.animationDisplay}>
+        <NoScriptNotice>
+          <Translate id="noscript.animations" description="Shown on the animations viewer when JavaScript is off">
+            Previewing animations needs JavaScript.
+          </Translate>
+        </NoScriptNotice>
+
+            <div className="omp-panel">
               <div className={styles.controls}>
-                <div className={styles.dropdownContainer}>
-                  <label htmlFor="library-select" className={styles.label}>
+                <div>
+                  <label htmlFor="library-select" className="omp-field-label">
                     <Translate id="animations.library" description="Library label">Library:</Translate>
                   </label>
                   <select
                     id="library-select"
                     value={selectedLibrary}
                     onChange={(e) => handleLibraryChange(e.target.value)}
-                    className={styles.select}
+                    className={`omp-select ${styles.select}`}
                   >
                     <option value=""><Translate id="animations.selectLibrary" description="Select library option">Select a library...</Translate></option>
                     {libraries.map((library) => (
@@ -121,15 +130,15 @@ const AnimationsPage = () => {
                   </select>
                 </div>
 
-                <div className={styles.dropdownContainer}>
-                  <label htmlFor="animation-select" className={styles.label}>
+                <div>
+                  <label htmlFor="animation-select" className="omp-field-label">
                     <Translate id="animations.animation" description="Animation label">Animation:</Translate>
                   </label>
                   <select
                     id="animation-select"
                     value={selectedAnimation}
                     onChange={(e) => handleAnimationChange(e.target.value)}
-                    className={styles.select}
+                    className={`omp-select ${styles.select}`}
                     disabled={!selectedLibrary}
                     key={selectedLibrary}
                   >
@@ -146,8 +155,7 @@ const AnimationsPage = () => {
               {currentAnimation && (
                 <>
                   <div className={styles.topSection}>
-                    <div className={styles.videoContainer}>
-                      <div className={styles.videoWrapper}>
+                    <div className={styles.videoWrapper}>
                         <video
                           src={getVideoPath(
                             currentAnimation.library,
@@ -172,31 +180,30 @@ const AnimationsPage = () => {
                             target.parentNode?.appendChild(errorDiv);
                           }}
                         />
-                      </div>
                     </div>
 
-                    <div className={styles.animationInfo}>
-                      <div className={styles.animationDetails}>
-                        <div className={styles.detailItem}>
+                    <div>
+                      <div className="omp-rows">
+                        <div className="omp-row">
                           <strong><Translate id="animations.index" description="Index label">Index:</Translate></strong> {currentAnimation.index}
                         </div>
-                        <div className={styles.detailItem}>
+                        <div className="omp-row">
                           <strong><Translate id="animations.frames" description="Frames label">Frames:</Translate></strong> {currentAnimation.frames}
                         </div>
-                        <div className={styles.detailItem}>
+                        <div className="omp-row">
                           <strong><Translate id="animations.duration" description="Duration label">Duration:</Translate></strong> {currentAnimation.duration}{" "}
                           <Translate id="animations.seconds" description="Seconds label">seconds</Translate>
                         </div>
-                        <div className={styles.detailItem}>
+                        <div className="omp-row">
                           <strong><Translate id="animations.description" description="Description label">Description:</Translate></strong>{" "}
                           {currentAnimation.description}
                         </div>
                         {currentAnimation.notes && (
-                          <div className={styles.detailItem}>
+                          <div className="omp-row">
                             <strong><Translate id="animations.notes" description="Notes label">Notes:</Translate></strong> {currentAnimation.notes}
                           </div>
                         )}
-                        <div className={styles.creditsInDetails}>
+                        <div className={styles.credits}>
                           <p>
                             <Translate id="animations.videoCredits" description="Video credits label">Video credits:</Translate>{" "}
                             <a
@@ -213,7 +220,7 @@ const AnimationsPage = () => {
                   </div>
                   <div className={styles.codeExample}>
                     <Heading as="h3"><Translate id="animations.usageExamples" description="Usage examples heading">Usage Examples:</Translate></Heading>
-                    <pre className={styles.codeBlock}>
+                    <pre className="omp-code">
                       <code>
                         {`${translate({
                           id: "animations.code.forPlayers",
@@ -254,7 +261,7 @@ ApplyActorAnimation(actorid, "${currentAnimation.library}", "${currentAnimation.
                   </p>
               )}
             </div>
-      </div>
+      </Page>
     </Layout>
   );
 };

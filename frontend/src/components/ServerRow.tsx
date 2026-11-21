@@ -1,31 +1,24 @@
 import Link from "@docusaurus/Link";
+import Translate, { translate } from "@docusaurus/Translate";
+import clsx from "clsx";
 import { useState } from "react";
-import Translate from "@docusaurus/Translate";
-import { renderToStaticMarkup } from "react-dom/server";
+
+import { Icon } from "./LauncherSim";
 import { CoreServerData } from "../types";
 
-  const translate = (id: string, message: string, description?: string) => {
-    return renderToStaticMarkup(
-      <Translate id={id} description={description}>{message}</Translate>
-    );
-  };
-
-const CopyBadge = ({ text }: { text: string }) => {
+const CopyAddress = ({ text }: { text: string }) => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const onCopy = () => {
-    navigator.clipboard.writeText(text);
+    navigator.clipboard?.writeText(text);
     setHasCopied(true);
-    setTimeout(() => setHasCopied(false), 2000); // Reset after 2 seconds
+    setTimeout(() => setHasCopied(false), 2000);
   };
 
   return (
-    <div className="copy-badge-container">
-      <span className="copy-badge-text">{text}</span>
-      <button
-        className={`copy-badge-button ${hasCopied ? "copied" : ""}`}
-        onClick={onCopy}
-      >
+    <div className="server-row-address">
+      <span>{text}</span>
+      <button type="button" className="server-row-copy" onClick={onCopy}>
         {hasCopied ? (
           <Translate id="serverRow.copied" description="Copied badge">COPIED</Translate>
         ) : (
@@ -36,49 +29,54 @@ const CopyBadge = ({ text }: { text: string }) => {
   );
 };
 
+// A row of the launcher's server list.
 const ServerRow = ({ server, from }: { server: CoreServerData; from?: string }) => {
-  return (
-    <div className="server-row-card">
-      <div className="server-header">
-        <Link
-          to={`/servers?ip=${encodeURIComponent(server.ip)}${from ? `&from=${from}` : ""}`}
-          className="server-link"
-        >
-          <h2 className="server-heading">{server.hn}</h2>
-        </Link>
-        <div className="server-badges">
-          {server.pr && (
-            <img
-              src="/images/assets/partners.png"
-              alt="partner server"
-              title={translate("serverRow.partnerTitle", "Has partnership!", "Partner server badge title")}
-              className="server-badge-image"
-            />
-          )}
-          {server.omp && (
-            <img
-              src="/images/assets/logo-light-trans.svg"
-              alt="open.mp server"
-              title={translate("serverRow.ompTitle", "open.mp server", "open.mp server badge title")}
-              className="server-badge-image"
-            />
-          )}
-        </div>
-      </div>
+  const ompLabel = translate({ id: "serverRow.ompTitle", message: "open.mp server", description: "open.mp server badge title" });
+  const partnerLabel = translate({ id: "serverRow.partnerTitle", message: "Has partnership!", description: "Partner server badge title" });
 
-      <div className="server-info">
-        <div className="server-details">
-          <span className="server-game-mode">{server.gm}</span>
-          <div className="server-players">
-            <div className="server-player-count">
-              <span>{server.pc}</span>/<span>{server.pm}</span>
-            </div>
-            <Translate id="serverRow.players" description="Players label">players</Translate>
-          </div>
-        </div>
-        <CopyBadge text={server.ip} />
-      </div>
+  return (
+  <div className="server-row">
+    <span className={clsx("server-row-status", server.pa && "server-row-status--locked")}>
+      <Icon name={server.pa ? "locked" : "unlocked"} size={15} />
+    </span>
+    <div className="server-row-body">
+      <Link
+        to={`/servers?ip=${encodeURIComponent(server.ip)}${from ? `&from=${from}` : ""}`}
+        className="server-row-name"
+      >
+        {server.omp && (
+          <img
+            src="/images/launcher/omp.png"
+            width={18}
+            height={18}
+            alt={ompLabel}
+            title={ompLabel}
+          />
+        )}
+        {server.pr && (
+          <img
+            src="/images/assets/partners.png"
+            width={18}
+            height={18}
+            alt={partnerLabel}
+            title={partnerLabel}
+          />
+        )}
+        <span title={server.hn}>{server.hn}</span>
+      </Link>
+      <span className="server-row-mode" title={server.gm}>{server.gm}</span>
+      <span className="server-row-language" title={server.la}>{server.la}</span>
+      <CopyAddress text={server.ip} />
+      <span className="server-row-players">
+        {server.pc}
+        <small>/{server.pm}</small>
+        <small className="server-row-players-word">
+          {" "}
+          <Translate id="serverRow.players" description="Players label">players</Translate>
+        </small>
+      </span>
     </div>
+  </div>
   );
 };
 

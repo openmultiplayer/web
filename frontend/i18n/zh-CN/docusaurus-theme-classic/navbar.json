@@ -26,5 +26,13 @@
   "item.label.Donate": {
     "message": "捐赠",
     "description": "标签为Donate的导航栏项目"
+  },
+  "logo.alt": {
+    "message": "open.mp 标志",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Donate to us": {
+    "message": "向我们捐赠",
+    "description": "Navbar item with label Donate to us"
   }
 }

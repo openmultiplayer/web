@@ -26,5 +26,13 @@
   "item.label.Donate": {
     "message": "Bağış Yap",
     "description": "Navbar item with label Donate"
+  },
+  "logo.alt": {
+    "message": "open.mp logosu",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Donate to us": {
+    "message": "Bize Bağış Yapın",
+    "description": "Navbar item with label Donate to us"
   }
 }

@@ -1,0 +1,126 @@
+/* Sizes follow the launcher's JoinServerPrompt styles after its sc() scaler. */
+.prompt {
+  position: relative;
+  width: 100%;
+  max-width: 21.25rem;
+  overflow: hidden;
+  border-radius: 9px;
+  background: var(--omp-surface);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: var(--omp-ink);
+  font-size: 0.875rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.banner {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(20, 16, 50, 0.45), rgba(20, 16, 50, 0.45)),
+    url(/images/assets/hero-bg.jpg) center / cover;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: #897af1;
+}
+
+
+.closeIcon {
+  background-color: #fff !important;
+}
+
+.logoRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 2.25rem;
+  padding: 0.45rem 1.1rem 0 0.6rem;
+}
+
+.logo {
+  display: grid;
+  width: 4.375rem;
+  height: 4.375rem;
+  flex: none;
+  place-items: center;
+  margin-top: -2.5rem;
+  border: 2px solid var(--omp-surface);
+  border-radius: 50%;
+  background: var(--omp-item);
+}
+
+.play {
+  background-color: #897af1 !important;
+}
+
+.info {
+  padding: 0.6rem 0.95rem 0;
+}
+
+.infoLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.form {
+  padding: 0.75rem 0.95rem 0.95rem;
+}
+
+.input {
+  display: flex;
+  height: 2.05rem;
+  align-items: center;
+  margin-top: 0.25rem;
+  padding: 0 0.55rem;
+  border-radius: 4px;
+  background: var(--omp-input);
+  color: var(--omp-faint);
+  font-style: italic;
+}
+
+.version {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0.6rem;
+}
+
+.version span {
+  display: flex;
+  height: 1.65rem;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--omp-input);
+}
+
+.connect {
+  display: flex;
+  height: 2.05rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.75rem;
+  border-radius: 4px;
+  background: var(--omp-primary);
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}

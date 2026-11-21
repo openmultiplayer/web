@@ -1,231 +1,992 @@
-.heroBanner {
-  padding: 5rem 1.5rem 0;
-  position: relative;
+/* Colours and radii come from the --omp-* tokens in src/css/custom.css. */
+.page {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: none;
-  min-height: auto;
-  margin-bottom: 100px;
+  color: var(--omp-ink);
 }
 
-.announcementWrapper {
+.container {
+  width: 100%;
+  max-width: var(--omp-page-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  /* Two cards side by side come to the same width as the hero's text and launcher */
+  --slide-width: min((100vw - 5rem) / 2, 35.5rem);
+  --pair-width: calc(var(--slide-width) * 2 + 1rem);
+  padding: 4.5rem 0;
+  scroll-margin-top: 4rem;
+}
+
+.sectionTitle {
+  margin: 0;
+  color: inherit;
+  font-size: clamp(1.75rem, 2.8vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.sectionLead {
+  max-width: 30rem;
+  margin: 0.75rem 0 0;
+  color: var(--omp-muted);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.sectionLead a {
+  color: var(--omp-accent);
+  font-weight: 600;
+}
+
+/* Hero: the map lives here and only here, fading out into the page. */
+.hero {
   position: relative;
-  max-width: 900px;
-  width: 100%;
-  margin-bottom: 4rem;
-  opacity: 1;
 }
 
-.announcement {
-  max-width: 900px;
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  animation: slideDown 0.6s ease-out;
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(/images/assets/map.png) center 30% / cover no-repeat;
+  -webkit-mask-image: linear-gradient(#000 60%, transparent);
+  mask-image: linear-gradient(#000 60%, transparent);
+  pointer-events: none;
+}
+
+.heroInner {
   position: relative;
-  padding-bottom: 2rem;
-}
-
-.enhancedLink {
-  color: var(--ifm-color-primary-darker);
-  font-weight: bold;
-  text-decoration: underline;
-  transition: color 0.2s ease;
-}
-
-.enhancedLink:hover {
-  color: var(--ifm-color-primary-darkest);
-  text-decoration: underline;
-}
-
-.heroContent {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
+  display: grid;
+  /* Text and launcher sit together as one centred group */
+  grid-template-columns: minmax(0, 24rem) minmax(0, 44rem);
   gap: 4rem;
-  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--omp-page-width);
+  margin: 0 auto;
+  padding: 3rem 2rem 3.5rem;
 }
 
-.heroText {
+.heroCopy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 600px;
+}
+
+.versions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--omp-muted) !important;
+  font-size: 0.875rem;
+  text-decoration: none !important;
+}
+
+.versions > svg {
+  flex: none;
+  color: var(--omp-accent);
+}
+
+.newTag {
+  flex: none;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.versions:hover {
+  color: var(--omp-ink) !important;
 }
 
 .heroTitle {
-  color: #9083d2;
-  margin-bottom: 2rem;
-  font-size: 4rem;
+  margin: 0;
+  color: inherit;
+  font-size: clamp(2.5rem, 3.6vw, 3.25rem);
   font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.5px;
-  animation: fadeIn 1s ease-out;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
 }
 
-.heroDescription {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  color: var(--ifm-color-emphasis-800);
-  animation: fadeIn 1s ease-out 0.2s both;
+.heroLead {
+  margin: 0.75rem 0 1.5rem;
+  color: var(--omp-muted);
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 
-.heroButtons {
+.liveStats {
+  min-height: 1.4rem;
+  margin: 1rem 0 0;
+  color: var(--omp-muted);
+  font-size: 0.9rem;
+}
+
+.liveStats b {
+  color: var(--omp-ink);
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.heroWindow {
+  min-width: 0;
+}
+
+/* Never taller than the screen leaves room for, and never oversized on big monitors. */
+.devices {
+  position: relative;
+  width: 100%;
+  max-width: min(44rem, calc((100vh - 14rem) * 10 / 7));
+  margin-left: auto;
+}
+
+.launcherCrop {
+  aspect-ratio: 10 / 7;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px var(--omp-line), 0 30px 70px -30px rgba(90, 75, 189, 0.5);
+  container-type: inline-size;
+}
+
+.launcherCrop > div {
+  width: 1000px;
+  transform: scale(var(--launcher-scale, tan(atan2(100cqw, 1000px))));
+  transform-origin: top left;
+}
+
+.devicePhone {
+  position: absolute;
+  z-index: 2;
+  right: 10.5%;
+  bottom: -4%;
+  width: 28%;
+}
+
+
+/* Features: swipeable rows of slides, each a big visual tile with the text underneath.
+   The arrows and fading are in src/components/ui/Carousel.tsx. */
+.slides {
+  /* Space beside the centred pair of cards: the next and previous ones show there, fading out */
+  --edge: calc((100vw - var(--slide-width) * 2 - 1rem) / 2);
+  display: flex;
+  width: 100vw;
+  align-items: stretch;
+  gap: 1rem;
+  margin: 2rem calc(50% - 50vw) 0;
+  padding: 0 var(--edge);
+  /* Slides melt into the page instead of being cut off at the screen edge */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 var(--edge), #000 calc(100% - var(--edge)), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 var(--edge), #000 calc(100% - var(--edge)), transparent);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline-start: var(--edge);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slides:focus-visible {
+  border-radius: var(--omp-radius-small);
+  outline: 2px solid var(--omp-primary-hover);
+  outline-offset: -2px;
+}
+
+.slides > * {
+  min-width: 0;
+  flex: 0 0 var(--slide-width);
+  scroll-snap-align: start;
+}
+
+.box {
+  --tile-height: 20rem;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.box h3 {
+  margin: 1rem 0 0;
+  color: inherit;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.box p {
+  margin: 0.35rem 0 0;
+  color: var(--omp-muted);
+  line-height: 1.5;
+}
+
+/* The visual tile: always first, always the same size */
+.boxArt,
+.promptArt,
+.miniCode,
+.code,
+.badge {
+  position: relative;
+  order: -1;
+  width: 100%;
+  height: var(--tile-height);
+  flex: none;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--omp-radius);
+  background: var(--omp-item);
+}
+
+.boxArt {
+  display: grid;
+  align-content: center;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+}
+
+/* Results collapse upward as the search narrows, so the box itself never moves */
+/* Tiles showing the real launcher UI, cropped: see LauncherPiece */
+.boxArt.uiArt {
+  display: block;
+  padding: 0;
+  background: var(--omp-surface);
+  box-shadow: inset 0 0 0 1px var(--omp-line);
+  container-type: inline-size;
+}
+
+.pieceTabs {
+  margin-bottom: 8px;
+}
+
+.pieceRules {
+  position: absolute;
+  z-index: 2;
+  top: 154px;
+  left: 13px;
+  width: calc(var(--zoom-view) - 26px);
+}
+
+/* The right-click menu in the favorites tile, beside the row it opened on */
+.pieceMenu {
+  position: absolute;
+  z-index: 4;
+  left: 140px;
+}
+
+.pieceCursor {
+  position: absolute;
+  z-index: 5;
+}
+
+.nickBar {
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+}
+
+
+
+.promptArt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.promptArt > div {
+  flex: none;
+}
+
+.code,
+.miniCode {
+  font-size: 0.875rem;
+  direction: ltr;
+  text-align: left;
+}
+
+.code > div,
+.miniCode > div {
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Code tiles are pictures, cropped by the tile, so nothing fights the swipe */
+.code :global(pre),
+.miniCode :global(pre) {
+  overflow: hidden;
+}
+
+.badge {
+  display: grid;
+  place-items: center;
+  border: 0;
+  box-shadow: none;
+  color: var(--omp-accent);
+  font-family: inherit;
+  font-size: var(--badge-size, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.badge > svg {
+  transform: scale(var(--badge-icon-scale, 3.4));
+}
+
+/* Runs on your hardware: one open column per system, split by hairlines rather than boxed,
+   so nothing reads as a button. */
+.boxArt.platforms {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  animation: fadeIn 1s ease-out 0.4s both;
+  gap: 0.75rem;
+  padding: 1rem;
 }
 
-.button {
-  width: 320px;
-  font-weight: 600;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  transition: all 0.3s ease;
-  text-align: center;
-  padding: 1rem 1.5rem;
-  font-size: 1.1rem;
-}
-
-.button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.socialIcon {
-  filter: brightness(0) invert(1);
-}
-
-.socialLinks {
+.platformGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.5rem;
-  margin-top: 3rem;
-  animation: simpleFadeIn 1s ease-out 0.6s both;
-  max-width: 600px;
-  width: 100%;
+  flex: 1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 0;
 }
 
-.socialLink {
+.platform {
   display: flex;
+  min-width: 0;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  background-color: #9083d2;
+  gap: 0.5rem;
 }
 
-.socialLink:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+.platform + .platform {
+  border-inline-start: 1px solid var(--omp-line);
 }
 
-.mainContainer {
-  margin-top: 0;
+.platform b {
+  font-size: 0.9375rem;
+  font-weight: 600;
 }
 
-/* Animations */
-@keyframes fadeIn {
+.platformLogo {
+  flex: none;
+  color: var(--omp-ink);
+  font-size: 3.25rem;
+}
+
+.platformChips {
+  display: flex;
+  min-height: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.5rem;
+  padding: 0 0.25rem;
+}
+
+/* Plain labels with a status dot, not filled or outlined pills */
+.chipStable,
+.chipNightly {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.chipStable::before,
+.chipNightly::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+
+.chipStable {
+  color: var(--omp-ink);
+}
+
+.chipStable::before {
+  background: var(--omp-primary);
+}
+
+.chipNightly {
+  color: var(--omp-muted);
+}
+
+.chipNightly::before {
+  box-shadow: inset 0 0 0 1px var(--omp-muted);
+}
+
+.platformLegend {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--omp-muted);
+  font-size: 0.75rem;
+}
+
+.platformLegend span {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* The legend reuses the dots alone */
+.platformLegend i {
+  font-size: 0;
+  gap: 0;
+  margin-inline-end: 0.35rem;
+}
+
+@media (max-width: 720px) {
+  .boxArt.platforms {
+    gap: 0.5rem;
+    padding: 0.625rem;
+  }
+
+  .platformLogo {
+    font-size: 2.25rem;
+  }
+
+  .platform b {
+    font-size: 0.8125rem;
+  }
+
+  .chipStable,
+  .chipNightly {
+    font-size: 0.6875rem;
+  }
+}
+
+/* Most of a keyboard: quiet keys cropped by the tile and fading out, one lit */
+.keyboard {
+  --keyboard-key: 2.5rem;
+  --keyboard-gap: 0.3rem;
+  display: grid;
+  width: max-content;
+  gap: var(--keyboard-gap);
+  direction: ltr;
+  /* A mask clips everything outside the element's box, and the lit key sits in the top row,
+     so its glow would be cut off flat. Room above and below, taken back by the margins, keeps
+     the glow inside the mask; the ellipse is adjusted so the fade lands where it did. */
+  margin-block: -1.5rem;
+  padding-block: 1.5rem;
+  transform: translateX(calc(var(--keyboard-key) * -1.5));
+  -webkit-mask-image: radial-gradient(ellipse 62% 74% at 62% 34%, #000 55%, transparent 100%);
+  mask-image: radial-gradient(ellipse 62% 74% at 62% 34%, #000 55%, transparent 100%);
+}
+
+.keyRow {
+  display: flex;
+  gap: var(--keyboard-gap);
+}
+
+/* Rows of a real keyboard sit staggered */
+.keyRow:nth-child(3) {
+  margin-left: calc(var(--keyboard-key) * 0.5);
+}
+
+.keyRow:nth-child(4) {
+  margin-left: calc(var(--keyboard-key) * 0.75);
+}
+
+.keyRow:nth-child(5) {
+  margin-left: calc(var(--keyboard-key) * 1.25);
+}
+
+.key {
+  display: grid;
+  width: var(--keyboard-key);
+  height: var(--keyboard-key);
+  flex: none;
+  place-items: center;
+  padding-bottom: 0.15rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: var(--omp-surface);
+  box-shadow:
+    inset 0 -0.15rem 0 rgba(0, 0, 0, 0.22),
+    0 0.1rem 0 rgba(0, 0, 0, 0.3);
+  color: var(--omp-faint);
+  font-family: inherit;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.keycap {
+  position: relative;
+  background: linear-gradient(160deg, #8d7ff0 0%, var(--omp-primary) 55%, var(--omp-primary-strong) 100%);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.35),
+    inset 0 -0.2rem 0 rgba(0, 0, 0, 0.28),
+    0 0.2rem 0 #3d3290,
+    0 0.5rem 1.5rem rgba(111, 96, 214, 0.65);
+  z-index: 1;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.boxAccent .badge {
+  background: var(--omp-primary-strong);
+  color: #fff;
+}
+
+.boxLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  color: var(--omp-accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Same parts as the launcher's nickname field and its recent-names dropdown
+   (src/containers/NavBar.tsx in the launcher repo). */
+.nickField {
+  display: flex;
+  align-items: flex-start;
+}
+
+.nickIcon {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-surface);
+}
+
+.nickIcon > span {
+  background-color: var(--omp-faint);
+}
+
+.nickField {
+  margin-left: 9px;
+}
+
+.nickInput {
+  width: 190px;
+  flex: none;
+  margin-left: 9px;
+  font-size: 14.8px;
+}
+
+.nickValue {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 0 0.35rem;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-input);
+}
+
+.nickDropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.1rem;
+  overflow: hidden;
+  border: 1px solid var(--omp-faint);
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-item);
+  font-size: inherit;
+}
+
+.nickDropdown span {
+  padding: 0.35rem 0.5rem;
+}
+
+.nickDropdown {
+  position: relative;
+}
+
+.nickPicked {
+  background: color-mix(in srgb, var(--omp-primary) 45%, transparent);
+}
+
+.miniRow {
+  display: flex;
+  min-width: 0;
+  height: 2.125rem;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0 0.6rem;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-surface);
+}
+
+
+
+
+
+
+.miniName {
+  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.miniMuted {
+  flex: none;
+  color: var(--omp-faint);
+}
+
+.sectionHead,
+.section :global(.omp-carousel-nav) {
+  max-width: var(--pair-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sectionHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+}
+
+.archTag {
+  flex: none;
+  color: var(--omp-accent);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.heroSocials {
+  margin-top: 1.25rem;
+}
+
+.heroSocials .socials a {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.heroSocials .socials svg {
+  font-size: 1.125rem;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.socials a {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border-radius: var(--omp-radius-small);
+  background: var(--omp-item);
+  color: var(--omp-muted);
+  transition: background-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+/* Hover must stand out from the page, in both themes */
+.socials a:hover {
+  background: var(--omp-primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.socials svg {
+  display: block;
+  font-size: 1.25rem;
+}
+
+/* Page arrival: the phone lands after the launcher; cards slide in from the right, in turn */
+@media (prefers-reduced-motion: no-preference) {
+  .devicePhone {
+    animation: phoneArrive 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 650ms both;
+  }
+
+  /* The slide's contents move, never the slide: it is the scroll-snap target, and moving
+     it drags the row along and leaves it off position. */
+  .slides > * {
+    transition: opacity 300ms ease;
+  }
+
+  .slides > * > * {
+    transition: translate 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .slides > :nth-child(2) > * { transition-delay: 70ms; }
+  .slides > :nth-child(3) > * { transition-delay: 140ms; }
+  .slides > :nth-child(4) > * { transition-delay: 210ms; }
+  .slides > :nth-child(n + 5) > * { transition-delay: 280ms; }
+
+  [data-reveal="pending"] .slides > * > * {
+    translate: 3rem 0;
+  }
+
+  :global([dir="rtl"]) [data-reveal="pending"] .slides > * > * {
+    translate: -3rem 0;
+  }
+}
+
+@keyframes phoneArrive {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(2.5rem) rotate(2deg);
   }
 
   to {
     opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+/* Motion, only where it says something: the key is pressed, a search is typed,
+   a favorite is hearted, a recent name is chosen.
+   Timings are deliberately uneven so tiles never pulse together. Faded slides pause. */
+
+[data-faded] *,
+[data-faded] *::before,
+[data-faded] *::after {
+  animation-play-state: paused !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .keycap {
+    animation: keyPress 4.3s ease-in-out infinite;
+  }
+
+}
+
+@keyframes keyPress {
+  0%, 62%, 82%, 100% {
+    box-shadow:
+      inset 0 1px 1px rgba(255, 255, 255, 0.35),
+      inset 0 -0.2rem 0 rgba(0, 0, 0, 0.28),
+      0 0.2rem 0 #3d3290,
+      0 0.5rem 1.5rem rgba(111, 96, 214, 0.65);
     transform: translateY(0);
   }
-}
 
-@keyframes simpleFadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  70%, 74% {
+    box-shadow:
+      inset 0 1px 1px rgba(255, 255, 255, 0.25),
+      inset 0 -0.2rem 0 rgba(0, 0, 0, 0.28),
+      0 0.05rem 0 #3d3290,
+      0 0.25rem 2.25rem rgba(141, 127, 240, 0.95);
+    transform: translateY(0.15rem);
   }
 }
 
-/* Responsive styles */
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 4rem 1.5rem 0;
-    margin-bottom: 80px;
+
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .heroInner {
+    justify-content: stretch;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding-top: 2.5rem;
   }
 
-  .heroContent {
-    flex-direction: column;
-    text-align: center;
-    gap: 3rem;
+  .devices {
+    margin-right: auto;
   }
 
-  .heroText {
+  /* Once the hero stacks, the text sits centered above the launcher. */
+  .heroCopy {
     align-items: center;
     text-align: center;
-    max-width: 100%;
+  }
+
+  .heroLead {
+    max-width: 34rem;
+  }
+
+  .heroActions {
+    justify-content: center;
+  }
+
+  .heroCopy .socials {
+    justify-content: center;
+  }
+
+  .heroCopy .liveStats {
+    text-align: center;
   }
 
   .heroTitle {
-    font-size: 3rem;
-  }
-
-  .button {
-    width: 100%;
-  }
-
-  .heroButtons {
-    width: 100%;
-    max-width: 350px;
+    max-width: none;
+    font-size: clamp(2.5rem, 6vw, 3.25rem);
   }
 }
 
-@media screen and (max-width: 768px) {
-  .heroBanner {
-    padding: 3rem 1rem 0;
-    margin-bottom: 60px;
+@media (max-width: 600px) {
+  .container,
+  .heroInner {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
-  .heroTitle {
-    font-size: 2.5rem;
+  .section {
+    padding: 3.5rem 0;
   }
 
-  .heroDescription {
-    font-size: 1.25rem;
+
+
+  .heroActions > :global(.button) {
+    flex: 1 1 100%;
+  }
+}
+
+/* Phones: the launcher is shown like a product shot, the real window scaled down and
+   cropped at the screen edge, with the phone in front. */
+@media (max-width: 720px) {
+  .section {
+    padding: 2.75rem 0;
   }
 
-  .socialLinks {
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columns on mobile so we can avoid the icons making a line break*/
-    max-width: 300px;
-    gap: 1rem;
+  .heroInner {
+    gap: 1.75rem;
+    padding-bottom: 2.25rem;
   }
 
-  .socialLink {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
+  .heroCopy .heroActions {
+    width: 100%;
   }
 
+  .devices {
+    max-width: none;
+  }
+
+  .devicePhone {
+    right: 0.5rem;
+    bottom: -1.25rem;
+    width: 6rem;
+  }
+
+
+  .sectionHead {
+    justify-content: flex-start;
+  }
+
+  .sectionTitle {
+    width: 100%;
+  }
+
+  .sectionHead .heroActions {
+    width: 100%;
+  }
+
+  .sectionHead .heroActions {
+    gap: 0.5rem;
+  }
+
+  .sectionHead .heroActions > :global(.button) {
+    flex: 1 1 auto;
+    padding: 0 0.625rem;
+    font-size: 0.9375rem;
+    white-space: nowrap;
+  }
+
+  /* Each slide snaps to the middle of the screen, its neighbours peeking in either side. */
+  .sectionHead,
+  .section :global(.omp-carousel-nav) {
+    max-width: none;
+  }
+
+  .slides {
+    --slide-width: min(82vw, 21rem);
+    --edge: calc((100vw - var(--slide-width)) / 2);
+    width: auto;
+    --badge-size: 4.5rem;
+    --badge-icon-scale: 2.6;
+    --cipher-size: 1.0625rem;
+    gap: 0.75rem;
+    margin: 1.25rem -1rem 0;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 var(--edge), #000 calc(100% - var(--edge)), transparent);
+    mask-image: linear-gradient(to right, transparent, #000 var(--edge), #000 calc(100% - var(--edge)), transparent);
+    scroll-padding-inline-start: 0;
+  }
+
+  .slides > * {
+    scroll-snap-align: center;
+  }
+
+  .box {
+    --tile-height: 15rem;
+  }
+
+  .keyboard {
+    --keyboard-key: 2rem;
+    --keyboard-gap: 0.2rem;
+  }
+
+  .box h3 {
+    margin-top: 0.875rem;
+    font-size: 1.0625rem;
+  }
+
+  .box p {
+    font-size: 0.9375rem;
+    line-height: 1.45;
+  }
+
+  .boxArt {
+    padding: 1rem;
+  }
+
+  .promptArt {
+    padding: 1rem 1rem 0;
+  }
+
+  .code,
+  .miniCode {
+    font-size: 0.75rem;
+  }
+
+  .boxLink {
+    font-size: 0.875rem;
+  }
+
+}
+
+/* Without JavaScript there are no arrows, so the scrollbar stays and nothing is faded out. */
+@media (scripting: none) {
+  .slides {
+    padding-bottom: 0.75rem;
+    -webkit-mask-image: none;
+    mask-image: none;
+    scrollbar-color: var(--omp-faint) transparent;
+    scrollbar-width: thin;
+  }
+
+  .slides::-webkit-scrollbar {
+    display: block;
+    height: 0.5rem;
+  }
+
+  .slides::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: var(--omp-faint);
+  }
 }

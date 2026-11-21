@@ -26,5 +26,13 @@
   "item.label.Donate": {
     "message": "Doar",
     "description": "Navbar item with label Donate"
+  },
+  "logo.alt": {
+    "message": "Logo do open.mp",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Donate to us": {
+    "message": "Faça uma doação",
+    "description": "Navbar item with label Donate to us"
   }
 }
