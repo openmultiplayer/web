@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripcija
 
-Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at any time in the script.
+Creates a vehicle in the world. Can be used in place of [AddStaticVehicleEx](AddStaticVehicleEx) at any time in the script.
 
 | Ime                                   | Deskripcija                                                                                                                         |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -44,7 +44,7 @@ public OnGameModeInit()
 
 :::warning
 
-Vozovi se mogu dodati samo sa AddStaticVehicle i AddStaticVehicleEx.
+Vozovi se mogu dodati samo sa [AddStaticVehicle](AddStaticVehicle) i [AddStaticVehicleEx](AddStaticVehicleEx).
 
 :::
 

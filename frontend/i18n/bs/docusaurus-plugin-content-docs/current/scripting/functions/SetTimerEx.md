@@ -69,7 +69,7 @@ Intervali tajmera nisu tačni (otprilike 25% popusta). Postoje ispravci dostupni
 
 :::tip
 
-- Varijable ID-a tajmera trebaju se inicijalizirati na -1 kada mogu kako bi se smanjila mogućnost slučajnog ubijanja ID-a tajmera 0 greškom (ili upotrijebite ID tajmera 0 gore na početku OnGameModeInit).
+- Varijable ID-a tajmera trebaju se inicijalizirati na -1 kada mogu kako bi se smanjila mogućnost slučajnog ubijanja ID-a tajmera 0 greškom (ili upotrijebite ID tajmera 0 gore na početku [OnGameModeInit](../callbacks/OnGameModeInit)).
 - Funkcija koju treba pozvati mora biti javna. To znači da se mora proslijediti.
 
 :::

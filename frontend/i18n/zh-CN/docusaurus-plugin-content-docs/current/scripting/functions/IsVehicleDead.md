@@ -38,4 +38,4 @@ else
 
 ## 相关函数
 
-- [`SetVehicleDead`](SetVehicleDead): 设置车辆损毁状态
+- [SetVehicleDead](SetVehicleDead): 设置车辆损毁状态

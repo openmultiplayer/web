@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Prikaži miš i dozvoli igraču da selektuje objekat. OnPlayerSelectObject je pozvan kada igrač selektuje objekat.
+Prikaži miš i dozvoli igraču da selektuje objekat. [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject) je pozvan kada igrač selektuje objekat.
 
 | Ime      | Deskripcija                        |
 | -------- | ---------------------------------- |

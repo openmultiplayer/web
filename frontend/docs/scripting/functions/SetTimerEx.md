@@ -94,7 +94,7 @@ Timer intervals are not accurate (roughly 25% off) in SA-MP. There are fixes ava
 :::tip
 
 - Timer ID variables should be reset to 0 when they can to minimise the chance of accidentally killing new timers by mistake. `-1` is commonly mistaken to be the invalid ID - it isn't.
-- The function to be called must be public. That means it has to be forwarded.
+- The function to be called must be [public](../language/reference/Functions#-public-functions-function-main). That means it has to be [forwarded](../language/reference/Functions#-forward-declarations).
 
 :::
 

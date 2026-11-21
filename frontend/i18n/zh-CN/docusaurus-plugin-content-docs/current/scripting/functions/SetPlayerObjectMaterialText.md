@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-可使用颜色嵌入语法实现多色文本效果
+可使用[颜色嵌入](../resources/colorslist#颜色嵌入)语法实现多色文本效果
 
 :::
 

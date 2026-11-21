@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Ova funkcija ti omogućava da omogućite/onemogućite iscrtavanje nametag-ova, healthbar-pva i armoa igrača koji se prikazuju iznad njegove glave. Za upotrebu slične funkcije poput ove na globalnom nivou, funkcija ShowNameTags.
+Ova funkcija ti omogućava da omogućite/onemogućite iscrtavanje nametag-ova, healthbar-pva i armoa igrača koji se prikazuju iznad njegove glave. Za upotrebu slične funkcije poput ove na globalnom nivou, funkcija [ShowNameTags](ShowNameTags).
 
 | Ime          | Deskripcija                                       |
 | ------------ | ------------------------------------------------- |
@@ -40,7 +40,7 @@ if (strcmp("/nameoff", cmdtext, true) == 0)
 
 :::warning
 
-ShowNameTags mora biti postavljen na 1 da bi bilo moguće prikazati name tagove sa ShowPlayerNameTagForPlayer, to znači da u slučaju da bude efikasno moraš da izvršiš funkciju: ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ispred vremena (OnPlayerStreamIn je dobro mjesto).
+[ShowNameTags](ShowNameTags) mora biti postavljen na 1 da bi bilo moguće prikazati name tagove sa ShowPlayerNameTagForPlayer, to znači da u slučaju da bude efikasno moraš da izvršiš funkciju: `ShowPlayerNameTagForPlayer(forplayerid, playerid, 0)` ispred vremena (OnPlayerStreamIn je dobro mjesto).
 
 :::
 

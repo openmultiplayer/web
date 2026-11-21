@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Uništava objekat igrača kreiran sa CreatePlayerObject.
+Uništava objekat igrača kreiran sa [CreatePlayerObject](CreatePlayerObject).
 
 | Ime      | Deskripcija                                                |
 | -------- | ---------------------------------------------------------- |

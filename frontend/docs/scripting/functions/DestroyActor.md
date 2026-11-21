@@ -9,7 +9,7 @@ tags: ["actor"]
 
 ## Description
 
-Destroy an actor which was created with CreateActor.
+Destroy an actor which was created with [CreateActor](CreateActor).
 
 | Name    | Description                                              |
 | ------- | -------------------------------------------------------- |

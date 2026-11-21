@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Get the ping of a player. The ping measures the amount of time it takes for the server to 'ping' the client and for the client to send the message back.
+Get the [ping](https://en.wikipedia.org/wiki/Ping_(networking_utility)) of a player. The ping measures the amount of time it takes for the server to 'ping' the client and for the client to send the message back.
 
 | Name     | Description                              |
 | -------- | ---------------------------------------- |

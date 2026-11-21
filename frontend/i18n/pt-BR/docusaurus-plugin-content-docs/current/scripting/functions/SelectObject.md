@@ -8,7 +8,7 @@ tags: []
 
 ## Descrição
 
-Exiba o cursor e permita que o jogador selecione um objeto. OnPlayerSelectObject é chamado quando o jogador seleciona um objeto.
+Exiba o cursor e permita que o jogador selecione um objeto. [OnPlayerSelectObject](../callbacks/OnPlayerSelectObject) é chamado quando o jogador seleciona um objeto.
 
 | Nome     | Descrição                                                   |
 | -------- | ----------------------------------------------------------- |

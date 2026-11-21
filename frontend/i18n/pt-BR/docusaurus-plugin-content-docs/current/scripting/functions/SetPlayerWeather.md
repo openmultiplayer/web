@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Defina o clima de um jogador.
+Defina o [clima](../resources/weatherid) de um jogador.
 
 | Nome | Descrição |
 | -------- | --------------------------------------------- |

@@ -29,7 +29,7 @@ public OnGameModeInit()
 
 :::tip
 
-Bu geri çağırma ayrıca bir filterscript içinde eğer oyun modu changemode veya gmx gibi komutlarla değiştirilirse oyun modu değişim kontrolünün yapılması için kullanılabilir.(filterscript yeniden yüklenmez)
+Bu geri çağırma ayrıca bir filterscript içinde eğer oyun modu changemode veya gmx gibi [komutlarla](../../server/ControllingServer#rcon-komutları) değiştirilirse oyun modu değişim kontrolünün yapılması için kullanılabilir.(filterscript yeniden yüklenmez)
 
 :::
 

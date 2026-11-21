@@ -15,7 +15,7 @@ Returns the current GTA [camera mode](../resources/cameramodes) for the requeste
 
 ## Returns
 
-The camera mode as an integer (or -1 if player is not connected)
+The [camera mode](../resources/cameramodes) as an integer (or -1 if player is not connected)
 
 ## Examples
 

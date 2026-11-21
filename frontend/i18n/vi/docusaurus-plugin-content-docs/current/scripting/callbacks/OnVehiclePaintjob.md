@@ -36,7 +36,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 :::note
 
 - Callback này không được gọi bởi ChangeVehiclePaintjob.
-- Bạn có thể sử dụng OnVehicleChangePaintjob từ vSync để biết khi người chơi **mua** lớp sơn.
+- Bạn có thể sử dụng OnVehicleChangePaintjob từ [vSync](https://github.com/Vasily-X/vSync) để biết khi người chơi **mua** lớp sơn.
 
 :::
 

@@ -32,14 +32,14 @@ SetPlayerCameraPos(playerid, 652.23, 457.21, 10.84);
 
 :::tip
 
-- Možda ćete morati koristiti SetPlayerCameraLookAt s ovom funkcijom da bis ispravno radila.
-- Koristite SetCameraBehindPlayer da vratite kameru iza uređaja.
+- Možda ćete morati koristiti [SetPlayerCameraLookAt](SetPlayerCameraLookAt) s ovom funkcijom da bis ispravno radila.
+- Koristite [SetCameraBehindPlayer](SetCameraBehindPlayer) da vratite kameru iza uređaja.
 
 :::
 
 :::warning
 
-Korištenje funkcija kamere izravno nakon omogućavanja režima spectatora ne radi.
+Korištenje funkcija kamere izravno nakon [omogućavanja režima spectatora](TogglePlayerSpectating) ne radi.
 
 :::
 

@@ -83,7 +83,7 @@ SendClientMessage(playerid, 0xFF8000FF, string); // 显示"43%的衬衫是黑色
 
 :::warning
 
-- 此函数不支持压缩字符串(packed strings)
+- 此函数不支持压缩字符串([packed](strpack) strings)
 
 :::
 

@@ -49,7 +49,7 @@ public OnPlayerSpawn(playerid)
 
 :::note
 
-This function is separate from the CreateObject / CreatePlayerObject pools.
+This function is separate from the [CreateObject](CreateObject) / [CreatePlayerObject](CreatePlayerObject) pools.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Beschrijving
 
-Deze callback wordt aangeroepen wanneer een speler van staat verandert. Bijvoorbeeld, wanneer een speler verandert van bestuurder van een voertuig naar lopend.
+Deze callback wordt aangeroepen wanneer een speler van [staat](../resources/playerstates) verandert. Bijvoorbeeld, wanneer een speler verandert van bestuurder van een voertuig naar lopend.
 
 | Naam                  | Beschrijving                                   |
 | --------------------- | ---------------------------------------------- |

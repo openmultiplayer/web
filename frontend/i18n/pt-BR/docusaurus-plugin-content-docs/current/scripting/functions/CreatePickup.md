@@ -7,7 +7,7 @@ tags: ["pickup"]
 
 ## Descrição
 
-Esta função faz exatamente o mesmo que AddStaticPickup, exceto que retorna um ID de pickup que pode ser usado para destruí-lo posteriormente e ser rastreado usando OnPlayerPickUpPickup.
+Esta função faz exatamente o mesmo que [AddStaticPickup](AddStaticPickup), exceto que retorna um ID de pickup que pode ser usado para destruí-lo posteriormente e ser rastreado usando [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup).
 
 | Nome                             | Descrição                                                                                |
 | -------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -43,7 +43,7 @@ pickup_Armour = 0; // variável pickup precisa ser resetada para evitar conflito
 
 :::note
 
-- O único tipo de pickup que pode ser coletado de dentro de um veículo é **14** (exceto para pickups especiais como propinas).
+- O único [tipo de pickup](../resources/pickuptypes) que pode ser coletado de dentro de um veículo é **14** (exceto para pickups especiais como propinas).
 - Pickups são mostrados para, e podem ser coletados por todos os jogadores.
 - É possível que se DestroyPickup for usado quando um pickup é coletado, mais de um jogador pode coletar o pickup, devido ao lag. Isso pode ser evitado através do uso de variáveis.
 - Certos tipos de pickup vêm com 'respostas automáticas', por exemplo usar um modelo M4 no pickup automaticamente dará ao jogador a arma e alguma munição.
@@ -58,7 +58,7 @@ Para pickups totalmente programados, o tipo 1 deve ser usado.
 
 :::warning
 
-**Bug(s) Conhecido(s):** Pickups que têm um X ou Y menor que -4096.0 ou maior que 4096.0 não aparecerão e não acionarão OnPlayerPickUpPickup também.
+**Bug(s) Conhecido(s):** Pickups que têm um X ou Y menor que -4096.0 ou maior que 4096.0 não aparecerão e não acionarão [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup) também.
 
 :::
 

@@ -40,13 +40,13 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-همچنین می‌توانید از رنگ‌های Gametext در textdraw ها استفاده کنید. (مثل `~r~` `~g~` `~b~`)
+همچنین می‌توانید از رنگ‌های Gametext در textdraw ها استفاده کنید.
 
 :::
 
 :::note
 
-textdraw باید دوباره به بازیکن نشان داده شود تا رنگ به‌روزرسانی شود.
+textdraw باید دوباره به بازیکن [نشان داده شود](PlayerTextDrawShow) تا رنگ به‌روزرسانی شود.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["math"]
 
 ## Descrição
 
-Obter o valor inverso de uma tangente em graus. Em trigonometria, arco tangente é a operação inversa da tangente. Note que devido à ambiguidade de sinal, a função não consegue determinar com certeza em qual quadrante o ângulo se encontra apenas pelo seu valor de tangente. Veja [atan2](atan2) para uma alternativa que aceita um argumento fracional.
+Obter o valor inverso de uma [tangente](https://en.wikipedia.org/wiki/Trigonometric_functions) em graus. Em trigonometria, arco tangente é a operação inversa da tangente. Note que devido à ambiguidade de sinal, a função não consegue determinar com certeza em qual quadrante o ângulo se encontra apenas pelo seu valor de tangente. Veja [atan2](atan2) para uma alternativa que aceita um argumento fracional.
 
 | Nome        | Descrição                             |
 | ----------- | ------------------------------------- |

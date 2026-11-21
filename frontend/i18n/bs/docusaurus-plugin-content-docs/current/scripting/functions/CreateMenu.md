@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 :::note
 
-- Ova funkcija samo STVARA meni - ShowMenuForPlayer mora se koristiti za prikaz.
+- Ova funkcija samo STVARA meni - [ShowMenuForPlayer](ShowMenuForPlayer) mora se koristiti za prikaz.
 - Možete stvoriti i pristupiti samo dvije kolone (0 i 1).
 - Ako je dužina naslova jednaka ili veća od 32 znaka, naslov je skraćen na 30 znakova.
 

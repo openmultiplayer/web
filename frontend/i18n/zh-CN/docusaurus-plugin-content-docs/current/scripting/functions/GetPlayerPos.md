@@ -43,7 +43,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)和 OnPlayerRequestClass 回调中使用时可能返回不可靠值（因玩家尚未生成）
+在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)和 [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass) 回调中使用时可能返回不可靠值（因玩家尚未生成）
 
 :::
 

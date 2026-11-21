@@ -111,7 +111,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 :::note
 
-需要重置车辆（Respawn）才能完全移除目标箭头
+需要[重置车辆](SetVehicleToRespawn)（Respawn）才能完全移除目标箭头
 
 :::
 

@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-دنیاهای مجازی مثل فضاهای داخلی نیستند.
+دنیاهای مجازی مثل [فضاهای داخلی](GetPlayerInterior) نیستند.
 
 :::
 

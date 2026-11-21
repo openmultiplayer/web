@@ -80,7 +80,7 @@ SendClientMessage(playerid, 0xFF8000FF, string);
 
 :::warning
 
-این تابع از packed string‌ها پشتیبانی نمی‌کنه.
+این تابع از [packed](strpack) string‌ها پشتیبانی نمی‌کنه.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["玩家", "检查点", "竞速检查点"]
 
 ## 描述
 
-检测玩家是否处于通过 SetPlayerRaceCheckpoint 设置的竞速检查点范围内
+检测玩家是否处于通过 [SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint) 设置的竞速检查点范围内
 
 | 参数名   | 说明              |
 | -------- | ----------------- |

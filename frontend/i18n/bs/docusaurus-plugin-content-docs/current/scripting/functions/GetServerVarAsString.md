@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-This function, as of 0.3.7 R2, is deprecated. Please see GetConsoleVarAsString
+This function, as of 0.3.7 R2, is deprecated. Please see [GetConsoleVarAsString](GetConsoleVarAsString)
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["玩家", "菜单"]
 
 ## 描述
 
-获取玩家当前正在查看的菜单 ID（由 ShowMenuForPlayer 显示）
+获取玩家当前正在查看的菜单 ID（由 [ShowMenuForPlayer](ShowMenuForPlayer) 显示）
 
 | 参数名   | 说明                      |
 | -------- | ------------------------- |

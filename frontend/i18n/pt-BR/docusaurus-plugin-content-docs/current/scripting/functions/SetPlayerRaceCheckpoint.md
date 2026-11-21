@@ -8,7 +8,7 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 ## Descrição
 
-Cria um ponto de verificação de corrida. Quando o jogador entra, o callback OnPlayerEnterRaceCheckpoint é chamado.
+Cria um ponto de verificação de corrida. Quando o jogador entra, o callback [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint) é chamado.
 
 | Nome | Descrição |
 | ------------- | -------------------------------------------------------------- |

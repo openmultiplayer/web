@@ -38,5 +38,5 @@ else
 
 ## 相关函数
 
-- [`SetVehicleParamsSirenState`](SetVehicleParamsSirenState): 设置车辆警报器状态
-- [`ToggleVehicleSirenEnabled`](ToggleVehicleSirenEnabled): 切换车辆警报器状态
+- [SetVehicleParamsSirenState](SetVehicleParamsSirenState): 设置车辆警报器状态
+- [ToggleVehicleSirenEnabled](ToggleVehicleSirenEnabled): 切换车辆警报器状态

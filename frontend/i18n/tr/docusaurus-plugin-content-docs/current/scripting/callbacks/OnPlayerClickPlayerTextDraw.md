@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Açıklama
 
-Bu geri çağırma, bir oyuncu bir player-textdrawa tıkladığı zaman çağırılır. Oyuncu seçim modunu ESC ile iptal ettiğinde çağırılmaz ancak OnPlayerClickTextDraw'da çağırılır.
+Bu geri çağırma, bir oyuncu bir player-textdrawa tıkladığı zaman çağırılır. Oyuncu seçim modunu ESC ile iptal ettiğinde çağırılmaz ancak [OnPlayerClickTextDraw](OnPlayerClickTextDraw)'da çağırılır.
 
 | Parametre    | Açıklama                            |
 | ------------ | ----------------------------------- |
@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Bir oyuncu textdraw seçimini ESC'ye basarak iptal ettiğinde 'INVALID_TEXT_DRAW' ID'si ile OnPlayerClickTextDraw çağırılır. OnPlayerClickPlayerTextDraw çağırılmaz.
+Bir oyuncu textdraw seçimini ESC'ye basarak iptal ettiğinde 'INVALID_TEXT_DRAW' ID'si ile [OnPlayerClickTextDraw](OnPlayerClickTextDraw) çağırılır. OnPlayerClickPlayerTextDraw çağırılmaz.
 
 :::
 

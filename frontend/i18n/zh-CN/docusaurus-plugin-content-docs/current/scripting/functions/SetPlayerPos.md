@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-设置玩家位置至室内时，必须同时设置其室内环境。
+设置玩家位置至室内时，必须同时[设置其室内环境](SetPlayerInterior)。
 
 :::
 

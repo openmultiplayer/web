@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ovaj callback se poziva kada IP adresa pokuša da se konektuje na server. Da blokirate nadolazeće konekcije, koristite BlockIpAddress.
+Ovaj callback se poziva kada IP adresa pokuša da se konektuje na server. Da blokirate nadolazeće konekcije, koristite [BlockIpAddress](../functions/BlockIpAddress).
 
 | Name         | Description                                    |
 | ------------ | ---------------------------------------------- |

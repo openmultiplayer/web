@@ -37,13 +37,13 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-When spectator mode is disabled, OnPlayerSpawn will automatically be called, if you wish to restore player to state before spectating, you will have to handle that in OnPlayerSpawn. Note also, that player can also go to class selection before if they used F4 during spectate, a player also CAN die in spectate mode due to various glitches.
+When spectator mode is disabled, [OnPlayerSpawn](../callbacks/OnPlayerSpawn) will automatically be called, if you wish to restore player to state before spectating, you will have to handle that in OnPlayerSpawn. Note also, that player can also go to class selection before if they used F4 during spectate, a player also CAN die in spectate mode due to various glitches.
 
 :::
 
 :::tip
 
-When a player is in spectate mode their HUD is hidden, making it useful for setting a player's camera without the HUD. Also, objects near the player's camera will be streamed in, making this useful for interpolating cameras.
+When a player is in spectate mode their HUD is hidden, making it useful for setting a player's camera without the HUD. Also, objects near the player's camera will be streamed in, making this useful for [interpolating cameras](InterpolateCameraPos).
 
 :::
 

@@ -36,8 +36,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-- Red je KRITIČNA! Obavezno koristite TogglePlayerSpectating prije PlayerSpectatePlayer.
-- Virtualni svijet i interijer playerida i targetplayerida moraju biti isti da bi ova funkcija radila ispravno.
+- Red je KRITIČNA! Obavezno koristite [TogglePlayerSpectating](TogglePlayerSpectating) prije PlayerSpectatePlayer.
+- [Virtualni svijet](SetPlayerVirtualWorld) i [interijer](SetPlayerInterior) playerida i targetplayerida moraju biti isti da bi ova funkcija radila ispravno.
 
 :::
 

@@ -10,7 +10,7 @@ tags: ["custom model", "custom skin", "simple model"]
 
 ## Descrição
 
-Redirecione o download AddCharModel ou AddSimpleModel personalizado do jogador para uma página da Web HTTP específica.
+Redirecione o download [AddCharModel](AddCharModel) ou [AddSimpleModel](AddSimpleModel) personalizado do jogador para uma página da Web HTTP específica.
 
 ## Parâmetros
 

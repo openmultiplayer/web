@@ -8,7 +8,7 @@ tags: ["math", "floating-point"]
 
 ## Descrição
 
-Calcula a raiz quadrada de determinado valor.
+Calcula a [raiz quadrada](https://en.wikipedia.org/wiki/Square_root) de determinado valor.
 
 | Nome        | Descrição                                 |
 | ----------- | ----------------------------------------- |

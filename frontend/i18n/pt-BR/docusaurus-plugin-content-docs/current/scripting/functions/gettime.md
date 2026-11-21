@@ -17,7 +17,7 @@ Retorna o horário atual do servidor, aonde será guardado nas variáveis &hora,
 
 ## Retorno
 
-A própria função se retorna em Unix Timestamp.
+A própria função se retorna em [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 ## Exemplos
 

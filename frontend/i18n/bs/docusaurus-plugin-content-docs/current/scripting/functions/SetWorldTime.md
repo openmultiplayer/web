@@ -28,13 +28,13 @@ SetWorldTime(12);
 
 :::note
 
-Ova je funkcija relevantna samo za igrače koji ne koriste sat koji prolazi - pogledajte TogglePlayerClock.
+Ova je funkcija relevantna samo za igrače koji ne koriste sat koji prolazi - pogledajte [TogglePlayerClock](TogglePlayerClock).
 
 :::
 
 :::tip
 
-Da biste postavili minute i/ili postavili vrijeme za pojedine igrače, pogledajte SetPlayerTime.
+Da biste postavili minute i/ili postavili vrijeme za pojedine igrače, pogledajte [SetPlayerTime](SetPlayerTime).
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Gets the model ID of a vehicle.
+Gets the [model ID](../resources/vehicleid) of a vehicle.
 
 | Name      | Description                                |
 | --------- | ------------------------------------------ |

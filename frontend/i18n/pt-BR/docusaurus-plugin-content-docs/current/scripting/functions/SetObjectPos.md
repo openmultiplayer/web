@@ -8,7 +8,7 @@ tags: ["object"]
 
 ## Descrição
 
-Alterar a posição de um objeto.
+Alterar a posição de um [objeto](CreateObject).
 
 | Nome | Descrição |
 | -------- | ---------------------------------------------------------------------- |

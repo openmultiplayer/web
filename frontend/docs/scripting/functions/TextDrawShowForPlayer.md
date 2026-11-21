@@ -7,7 +7,7 @@ tags: ["player", "textdraw"]
 
 ## Description
 
-Shows a textdraw for a specific player.
+Shows a [textdraw](TextDrawCreate) for a specific player.
 
 | Name        | Description                                                                        |
 | ----------- | ---------------------------------------------------------------------------------- |
@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-If only a single player will see a textdraw, it might be wise to use player-textdraws instead. This is also useful for textdraws that need to show information specific for an individual player.
+If only a single player will see a textdraw, it might be wise to use [player-textdraws](CreatePlayerTextDraw) instead. This is also useful for textdraws that need to show information specific for an individual player.
 
 :::
 

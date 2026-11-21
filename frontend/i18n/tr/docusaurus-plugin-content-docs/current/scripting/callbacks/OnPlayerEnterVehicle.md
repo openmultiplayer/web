@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-- Bu geri çağırma oyuncu araca binmeye **BAŞLADIĞINDA** çağırılır, oyuncu ARACA BİNDİĞİNDE çağırılmaz. Araca bindiğinde çağırılması için OnPlayerStateChange geri çağırmasını inceleyin.
+- Bu geri çağırma oyuncu araca binmeye **BAŞLADIĞINDA** çağırılır, oyuncu ARACA BİNDİĞİNDE çağırılmaz. Araca bindiğinde çağırılması için [OnPlayerStateChange](OnPlayerStateChange) geri çağırmasını inceleyin.
 - Araç kilitli veya dolu olsa bile oyuncu araca binmeye çalıştığında çağırılacaktır.
 
 :::

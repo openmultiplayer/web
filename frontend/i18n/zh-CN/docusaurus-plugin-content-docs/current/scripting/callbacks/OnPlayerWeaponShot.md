@@ -43,7 +43,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-- 仅在**启用**延迟补偿时触发此回调
+- 仅在**启用**[延迟补偿](../../server/LagCompensation)时触发此回调
 - 坐标的含义取决于**hittype**：
   - 当命中类型为BULLET_HIT_TYPE_NONE时，fX/fY/fZ为绝对坐标（若未命中则返回0.0）
   - 其他命中类型时，坐标为相对于hitid的偏移量

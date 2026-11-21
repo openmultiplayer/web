@@ -7,7 +7,7 @@ tags: ["dialog"]
 
 ## Description
 
-This callback is called when a player responds to a dialog shown using ShowPlayerDialog. The response can be by clicking a button, pressing ENTER/ESC, or double-clicking a list item (in the case of a list-style dialog).
+This callback is called when a player responds to a dialog shown using [ShowPlayerDialog](../functions/ShowPlayerDialog). The response can be by clicking a button, pressing ENTER/ESC, or double-clicking a list item (in the case of a list-style dialog).
 
 | Name        | Description                                                                                                   |
 | ----------- | ------------------------------------------------------------------------------------------------------------- |
@@ -179,7 +179,7 @@ The parameters can have different values depending on the dialog's style. ([Clic
 
 :::tip
 
-Using a switch-case statement instead of if blocks is an appropriate method for handling multiple dialogs.
+Using a [switch-case statement](../language/Statements#switch) instead of if blocks is an appropriate method for handling multiple dialogs.
 
 :::
 

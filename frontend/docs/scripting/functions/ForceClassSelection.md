@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::warning
 
 - The player will not return to class selection until they re-spawn. This can be achieved with [TogglePlayerSpectating](TogglePlayerSpectating), as seen in the example above.
-- This function does not perform a state change to `PLAYER_STATE_WASTED` when combined with TogglePlayerSpectating (see example above), as is listed here.
+- This function does not perform a [state change](../callbacks/OnPlayerStateChange) to `PLAYER_STATE_WASTED` when combined with [TogglePlayerSpectating](TogglePlayerSpectating) (see example above), as is listed [here](../resources/playerstates).
 
 :::
 

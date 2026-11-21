@@ -7,7 +7,7 @@ tags: ["pickup"]
 
 ## Deskripsi
 
-Menghancurkan item yang dibuat dengan CreatePickup.
+Menghancurkan item yang dibuat dengan [CreatePickup](CreatePickup).
 
 | Nama   | Deskripsi                                                              |
 | ------ | ---------------------------------------------------------------------- |

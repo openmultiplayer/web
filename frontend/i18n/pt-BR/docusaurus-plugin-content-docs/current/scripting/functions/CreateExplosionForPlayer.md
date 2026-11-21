@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Cria uma explosão que é visível apenas para um único jogador. Isso pode ser usado para isolar explosões de outros jogadores ou para fazê-las aparecer apenas em mundos virtuais específicos.
+Cria uma explosão que é visível apenas para um único jogador. Isso pode ser usado para isolar explosões de outros jogadores ou para fazê-las aparecer apenas em [mundos virtuais](SetPlayerVirtualWorld) específicos.
 
 | Nome         | Descrição                                         |
 | ------------ | ------------------------------------------------- |

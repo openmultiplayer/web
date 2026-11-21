@@ -51,7 +51,7 @@ if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 
 :::warning
 
-Se você comparar strings de um arquivo de texto, você deve levar em consideração os caracteres especiais 'carriage return' e 'new line' (\r \n), conforme eles são incluídos, ao usar fread.
+Se você comparar strings de um arquivo de texto, você deve levar em consideração os caracteres especiais 'carriage return' e 'new line' (\r \n), conforme eles são incluídos, ao usar [fread](fread).
 
 :::
 

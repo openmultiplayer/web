@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-\*Ova funkcija poziva OnPlayerClickTextDraw sa INVALID_TEXT_DRAW (65535). Korištenje ove funkcije unutar OnPlayerClickTextDraw bez zahvatanja ovog slučaja izazvati će to da će klijenti ući u beskonačnu petlju.
+Ova funkcija poziva [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) sa INVALID_TEXT_DRAW (65535). Korištenje ove funkcije unutar OnPlayerClickTextDraw bez zahvatanja ovog slučaja izazvati će to da će klijenti ući u beskonačnu petlju.
 
 :::
 

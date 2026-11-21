@@ -49,7 +49,7 @@ public OnPlayerSpawn(playerid)
 
 :::note
 
-این تابع جدا از CreateObject / CreatePlayerObject pool ها هست.
+این تابع جدا از [CreateObject](CreateObject) / [CreatePlayerObject](CreatePlayerObject) pool ها هست.
 
 :::
 

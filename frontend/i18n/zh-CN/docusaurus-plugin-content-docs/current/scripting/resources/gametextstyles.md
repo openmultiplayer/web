@@ -4,7 +4,7 @@ sidebar_label: 游戏文本样式
 description: 文本绘图与游戏文本的样式说明
 ---
 
-本文详细说明在文本绘图（TextDraw）和玩家游戏文本（GameText）中使用的样式规则，主要应用于[GameTextForPlayer](../functions/GameTextForPlayer)和[GameTextForAll](../functions/GameTextForAll)函数。
+本文详细说明在[文本绘图（TextDraw）](../functions/TextDrawCreate)和玩家游戏文本（GameText）中使用的样式规则，主要应用于[GameTextForPlayer](../functions/GameTextForPlayer)和[GameTextForAll](../functions/GameTextForAll)函数。
 
 ---
 

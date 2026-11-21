@@ -104,7 +104,7 @@ else
 
 :::note
 
-Esta função grava no arquivo em UTF-8, que não suporta alguns símbolos de idioma localizados.
+Esta função grava no arquivo em [UTF-8](https://en.wikipedia.org/wiki/UTF-8), que não suporta alguns símbolos de idioma localizados.
 
 :::
 

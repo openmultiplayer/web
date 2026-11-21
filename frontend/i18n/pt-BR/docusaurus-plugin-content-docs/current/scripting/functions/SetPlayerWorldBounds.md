@@ -52,7 +52,7 @@ Os limites mundiais de um jogador podem ser redefinidos definindo-os para 20.000
 
 :::warning
 
-Esta função não funciona em interiores!
+Esta função não funciona em [interiores](../resources/interiorids)!
 
 :::
 

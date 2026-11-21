@@ -7,7 +7,7 @@ tags: ["math", "floating-point"]
 
 ## Descrição
 
-Esta função retorna o valor absoluto de um float.
+Esta função retorna o [valor absoluto](https://en.wikipedia.org/wiki/Absolute_value) de um float.
 
 | Name        | Description                                |
 | ----------- | ------------------------------------------ |

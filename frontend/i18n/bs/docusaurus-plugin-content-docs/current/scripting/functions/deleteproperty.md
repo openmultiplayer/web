@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Izbriši prethodno postavljenu imovinu (setproperty).
+Izbriši prethodno postavljenu imovinu ([setproperty](setproperty)).
 
 | Ime   | Deskripcija                                                                  |
 | ----- | ---------------------------------------------------------------------------- |

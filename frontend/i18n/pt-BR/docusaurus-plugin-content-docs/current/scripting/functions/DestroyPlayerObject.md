@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Destrói um objeto de jogador (player-object) criado usando CreatePlayerObject.
+Destrói um objeto de jogador (player-object) criado usando [CreatePlayerObject](CreatePlayerObject).
 
 | Nome     | Descrição                                                               |
 | -------- | ----------------------------------------------------------------------- |

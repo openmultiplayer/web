@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when a player changes state. For example, when a player changes from being the driver of a vehicle to being on-foot.
+This callback is called when a player changes [state](../resources/playerstates). For example, when a player changes from being the driver of a vehicle to being on-foot.
 
 | Name                  | Description                              |
 | --------------------- | ---------------------------------------- |

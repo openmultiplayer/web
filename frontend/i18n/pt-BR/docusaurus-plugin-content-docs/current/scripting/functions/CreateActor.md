@@ -48,7 +48,7 @@ public OnGameModeExit()
 :::note
 
 - Atores são projetados para apenas ficar em algum lugar, por exemplo caixas e bartenders. Eles podem executar animações (uma vez ou em loop) usando [ApplyActorAnimation](ApplyActorAnimation).
-- Atores são invulneráveis por padrão.
+- Atores são [invulneráveis](SetActorInvulnerable) por padrão.
 
 :::
 

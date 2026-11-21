@@ -37,7 +37,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-- Callback ini di panggil ketika PEMAIN **mulai** memasuki kendaraan, bukan ketika pemain TELAH memasukinya. Lihat OnPlayerStateChange.
+- Callback ini di panggil ketika PEMAIN **mulai** memasuki kendaraan, bukan ketika pemain TELAH memasukinya. Lihat [OnPlayerStateChange](OnPlayerStateChange).
 - Callback ini tetap dipanggil jika pemain di tolak masuk ke kendaraan (misalnya terkunci atau penuh).
 
 :::

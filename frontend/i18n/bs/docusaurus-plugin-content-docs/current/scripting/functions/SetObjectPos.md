@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Promijeni poziciju objekta.
+Promijeni poziciju [objekta](CreateObject).
 
 | Ime      | Deskripcija                                                          |
 | -------- | -------------------------------------------------------------------- |

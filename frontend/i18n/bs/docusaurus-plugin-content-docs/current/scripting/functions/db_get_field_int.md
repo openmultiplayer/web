@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## Deskripcija
 
-Dobijte sadržaj polja kao cijeli broj iz db_query.
+Dobijte sadržaj polja kao cijeli broj iz [db_query](db_query).
 
 | Ime               | Deskripcija                      |
 | ----------------- | -------------------------------- |

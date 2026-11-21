@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::note
 
-Ada batas 1000 Object (MAX_OBJECTS). Untuk menghindari batasan ini, Anda dapat menggunakan streamer.
+Ada batas 1000 Object ([MAX_OBJECTS](../resources/limits)). Untuk menghindari batasan ini, Anda dapat menggunakan [streamer](https://github.com/samp-incognito/samp-streamer-plugin).
 
 :::
 

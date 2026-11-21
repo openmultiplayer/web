@@ -29,7 +29,7 @@ Rotacija vozila pohranjena je u navedenim varijablama.
 
 :::note
 
-Ne postoji 'set' varijacija ove funkcije; ne možete podesiti rotaciju vozila (osim Z ugla).
+Ne postoji 'set' varijacija ove funkcije; ne možete podesiti rotaciju vozila (osim [Z ugla](SetVehicleZAngle)).
 
 :::
 

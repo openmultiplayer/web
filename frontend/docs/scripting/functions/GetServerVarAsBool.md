@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-This function, as of 0.3.7 R2, is deprecated. Please see GetConsoleVarAsBool
+This function, as of 0.3.7 R2, is deprecated. Please see [GetConsoleVarAsBool](GetConsoleVarAsBool)
 
 :::
 

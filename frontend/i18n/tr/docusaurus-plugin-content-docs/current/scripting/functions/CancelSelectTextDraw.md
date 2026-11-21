@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-\*Bu fonksiyon OnPlayerClickTextDraw'ı ile INVALID_TEXT_DRAW(65535) çağırır. Bu işlevi OnPlayerClickTextDraw içinde bu duruma yakalanmadan kullanmak, istemcilerin sonsuz bir döngüye girmesine neden olur.
+Bu fonksiyon [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw)'ı ile INVALID_TEXT_DRAW(65535) çağırır. Bu işlevi OnPlayerClickTextDraw içinde bu duruma yakalanmadan kullanmak, istemcilerin sonsuz bir döngüye girmesine neden olur.
 
 :::
 

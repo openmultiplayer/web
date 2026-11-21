@@ -15,7 +15,7 @@ Find out what type of component a certain ID is.
 
 ## Returns
 
-The component slot ID of the specified component or **-1** if the component is invalid.
+The [component slot](../resources/componentslots) ID of the specified component or **-1** if the component is invalid.
 
 ## Examples
 

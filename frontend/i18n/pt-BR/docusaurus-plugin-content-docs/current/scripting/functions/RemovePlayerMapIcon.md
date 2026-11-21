@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Remove um ícone de mapa definido anteriormente para um jogador usando SetPlayerMapIcon.
+Remove um ícone de mapa definido anteriormente para um jogador usando [SetPlayerMapIcon](SetPlayerMapIcon).
 
 | Nome     | Descrição                                                                     |
 | -------- | ----------------------------------------------------------------------------- |

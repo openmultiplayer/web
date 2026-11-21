@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Uzmi tangentu iz zadanog ugla. Ulazni ugao može biti u radijanima, stupnjevima ili stupnjevima.
+Uzmi [tangentu](https://en.wikipedia.org/wiki/Trigonometric_functions) iz zadanog ugla. Ulazni ugao može biti u radijanima, stupnjevima ili stupnjevima.
 
 | Ime         | Deskripcija                                                |
 | ----------- | ---------------------------------------------------------- |

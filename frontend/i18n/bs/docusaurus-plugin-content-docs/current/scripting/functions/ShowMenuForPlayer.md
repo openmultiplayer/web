@@ -7,7 +7,7 @@ tags: ["player", "menu"]
 
 ## Deskripcija
 
-Prikazuje prethodno kreirani meni za igrača.
+Prikazuje [prethodno kreirani](CreateMenu) meni za igrača.
 
 | Ime      | Deskripcija                                              |
 | -------- | -------------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Use esta função antes que qualquer jogador se conecte (OnGameModeInit) para informar a todos os clientes que o script controlará os motores e as luzes do veículo. Isso evita que o jogo ligue / desligue automaticamente o motor quando os jogadores entram/saem dos veículos e os faróis acendem automaticamente quando está escuro.
+Use esta função antes que qualquer jogador se conecte ([OnGameModeInit](../callbacks/OnGameModeInit)) para informar a todos os clientes que o script controlará os motores e as luzes do veículo. Isso evita que o jogo ligue / desligue automaticamente o motor quando os jogadores entram/saem dos veículos e os faróis acendem automaticamente quando está escuro.
 
 ## Retornos
 

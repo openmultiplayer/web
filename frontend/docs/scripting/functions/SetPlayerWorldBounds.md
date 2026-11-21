@@ -53,7 +53,7 @@ A player's world boundaries can be reset by setting them to 20000.0000, -20000.0
 
 :::warning
 
-This function doesn't work in interiors!
+This function doesn't work in [interiors](../resources/interiorids)!
 
 :::
 

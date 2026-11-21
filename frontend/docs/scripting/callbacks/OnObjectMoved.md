@@ -7,7 +7,7 @@ tags: ["object"]
 
 ## Description
 
-This callback is called when an object is moved after MoveObject (when it stops moving).
+This callback is called when an object is moved after [MoveObject](../functions/MoveObject) (when it stops moving).
 
 | Name     | Description                         |
 | -------- | ----------------------------------- |

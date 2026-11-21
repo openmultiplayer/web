@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Habilita fogo amigo para veículos de equipe. Jogadores não poderão danificar os veículos dos companheiros de equipe (é necessário usar SetPlayerTeam!).
+Habilita fogo amigo para veículos de equipe. Jogadores não poderão danificar os veículos dos companheiros de equipe (é necessário usar [SetPlayerTeam](SetPlayerTeam)!).
 
 ## Retornos
 

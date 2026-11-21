@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripcija
 
-Dodaje 'statično' vozilo (modeli su unaprijed učitani za igrač) u gamemode-u. Od `AddStaticVehicle` razlikuje se u tome što dozvoljava da se postavi proizvoljno respawn vrijeme za bozilo kada igrač napusti mjesto vozača.
+Dodaje 'statično' vozilo (modeli su unaprijed učitani za igrač) u gamemode-u. Od [AddStaticVehicle](AddStaticVehicle) razlikuje se u tome što dozvoljava da se postavi proizvoljno respawn vrijeme za bozilo kada igrač napusti mjesto vozača.
 
 | Ime                                   | Deskripcija                                                                                                                                                   |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |

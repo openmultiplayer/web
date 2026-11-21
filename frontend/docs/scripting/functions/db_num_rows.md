@@ -13,7 +13,7 @@ This function is deprecated. Please see [DB_GetRowCount](DB_GetRowCount).
 
 ## Description
 
-Returns the number of rows from a db_query
+Returns the number of rows from a [db_query](db_query).
 
 | Name              | Description            |
 | ----------------- | ---------------------- |

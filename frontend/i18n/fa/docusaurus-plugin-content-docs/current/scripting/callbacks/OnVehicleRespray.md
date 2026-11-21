@@ -36,7 +36,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-- این کالبک توسط ChangeVehicleColor فراخوانده نمی‌شود.
+- این کالبک توسط [ChangeVehicleColor](../functions/ChangeVehicleColor) فراخوانده نمی‌شود.
 - گمراه‌کننده است، این کالبک برای pay 'n' spray فراخوانده نمی‌شود (فقط modshop ها).
 
 رفع اینجا: https://pastebin.com/G81da7N1

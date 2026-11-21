@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač dovrši uređivanje objekta (EditObject/EditPlayerObject).
+Ovaj callback je pozvan kada igrač dovrši uređivanje objekta ([EditObject](../functions/EditObject)/[EditPlayerObject](../functions/EditPlayerObject)).
 
 | Ime                    | Deskripcija                                             |
 | ---------------------- | ------------------------------------------------------- |

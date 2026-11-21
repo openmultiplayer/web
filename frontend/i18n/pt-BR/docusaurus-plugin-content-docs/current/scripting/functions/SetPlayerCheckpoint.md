@@ -8,7 +8,7 @@ tags: ["player", "checkpoint"]
 
 ## Descrição
 
-Define um ponto de verificação (cilindro vermelho) para um jogador. Também mostra uma mancha vermelha no radar. Quando os jogadores entram em um checkpoint, OnPlayerEnterCheckpoint é chamado e ações podem ser executadas.
+Define um ponto de verificação (cilindro vermelho) para um jogador. Também mostra uma mancha vermelha no radar. Quando os jogadores entram em um checkpoint, [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint) é chamado e ações podem ser executadas.
 
 | Nome | Descrição |
 | ------------- | -------------------------------------------------- |

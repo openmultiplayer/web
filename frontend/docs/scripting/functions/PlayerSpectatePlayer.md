@@ -36,8 +36,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-- Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectatePlayer.
-- playerid and targetplayerid's virtual world and interior must be the same for this function to work properly.
+- Order is CRITICAL! Ensure that you use [TogglePlayerSpectating](TogglePlayerSpectating) before PlayerSpectatePlayer.
+- playerid and targetplayerid's [virtual world](SetPlayerVirtualWorld) and [interior](SetPlayerInterior) must be the same for this function to work properly.
 
 :::
 

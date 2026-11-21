@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-此函数自 0.3.7 R2 版本起已弃用，请使用 GetConsoleVarAsString
+此函数自 0.3.7 R2 版本起已弃用，请使用 [GetConsoleVarAsString](GetConsoleVarAsString)
 
 :::
 

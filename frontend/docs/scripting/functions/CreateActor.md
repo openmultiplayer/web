@@ -48,7 +48,7 @@ public OnGameModeExit()
 :::note
 
 - Actors are designed to just stand somewhere, for example cashiers and bartenders. They can perform animations (once or looping) using [ApplyActorAnimation](ApplyActorAnimation).
-- Actors default to being invulnerable.
+- Actors default to being [invulnerable](SetActorInvulnerable).
 
 :::
 

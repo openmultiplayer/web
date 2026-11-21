@@ -7,7 +7,7 @@ tags: ["player", "menu"]
 
 ## Description
 
-Shows a previously created menu for a player.
+Shows a [previously created](CreateMenu) menu for a player.
 
 | Name        | Description                                          |
 | ----------- | ---------------------------------------------------- |

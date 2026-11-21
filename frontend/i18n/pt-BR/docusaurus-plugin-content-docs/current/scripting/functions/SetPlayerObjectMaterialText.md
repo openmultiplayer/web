@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-A incorporação de cores pode ser usada para várias cores no texto.
+A [incorporação de cores](../resources/colorslist#color-embedding) pode ser usada para várias cores no texto.
 
 :::
 

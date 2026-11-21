@@ -8,7 +8,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Verifica se um veículo possui um trailer acoplado. Use GetVehicleTrailer para obter o veículo ID do trailer (se houver).
+Verifica se um veículo possui um trailer acoplado. Use [GetVehicleTrailer](GetVehicleTrailer) para obter o veículo ID do trailer (se houver).
 
 | Nome | Descrição |
 | --------- | -------------------------------------------- |

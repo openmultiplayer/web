@@ -7,7 +7,7 @@ tags: ["对话框"]
 
 ## 描述
 
-当玩家响应通过ShowPlayerDialog显示的对话框时触发此回调。响应方式包括：
+当玩家响应通过[ShowPlayerDialog](../functions/ShowPlayerDialog)显示的对话框时触发此回调。响应方式包括：
 
 - 点击按钮
 - 按下ENTER/ESC键
@@ -167,7 +167,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-使用switch-case语句处理多个对话框比if语句更高效
+使用[switch-case](../language/Statements#switch)语句处理多个对话框比if语句更高效
 
 :::
 

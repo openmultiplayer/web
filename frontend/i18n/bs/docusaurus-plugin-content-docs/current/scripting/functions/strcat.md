@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ova funkcija spaja dva stringa u odredišni string.
+Ova funkcija [spaja](https://en.wikipedia.org/wiki/Concatenation) dva stringa u odredišni string.
 
 | Ime                   | Deskripcija                              |
 | --------------------- | ---------------------------------------- |

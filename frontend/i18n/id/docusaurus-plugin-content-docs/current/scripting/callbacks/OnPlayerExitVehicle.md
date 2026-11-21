@@ -35,7 +35,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 :::warning
 
 - Tidak di panggil jika pemain jatuh dari sepeda atau dikeluarkan dari kendaraan dengan cara lain seperti menggunakan SetPlayerPos.
-- Anda harus menggunakan OnPlayerStateChange dan memeriksa apakah status lama mereka adalah PLAYER_STATE_DRIVER atau PLAYER_STATE_PASSENGER dan status baru mereka adalah PLAYER_STATE_ONFOOT.
+- Anda harus menggunakan [OnPlayerStateChange](OnPlayerStateChange) dan memeriksa apakah status lama mereka adalah PLAYER_STATE_DRIVER atau PLAYER_STATE_PASSENGER dan status baru mereka adalah PLAYER_STATE_ONFOOT.
 
 :::
 

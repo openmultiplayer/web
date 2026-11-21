@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Pozvano kada igrač pokupi pickup kreiran funkcijom CreatePickup.
+Pozvano kada igrač pokupi pickup kreiran funkcijom [CreatePickup](../functions/CreatePickup).
 
 | Ime      | Deskripcija                                      |
 | -------- | ------------------------------------------------ |

@@ -7,7 +7,7 @@ tags: ["player", "checkpoint"]
 
 ## Descrição
 
-Esta callback é chamada quando um jogador sai de um checkpoint definido para eles por SetPlayerCheckpoint. Apenas um checkpoint pode ser definido por vez.
+Esta callback é chamada quando um jogador sai de um checkpoint definido para eles por [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint). Apenas um checkpoint pode ser definido por vez.
 
 | Nome     | Descrição                                          |
 | -------- | -------------------------------------------------- |

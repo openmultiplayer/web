@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This function returns a player's score as it was set using SetPlayerScore
+This function returns a player's score as it was set using SetPlayerScore.
 
 | Name     | Description                     |
 | -------- | ------------------------------- |

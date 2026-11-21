@@ -9,7 +9,7 @@ tags: []
 
 ## Description
 
-Menambahkan model simpel kustom objek diunggah. Model file bawaanya terletak pada folder `Documents\GTA San Andreas User Files\SAMP\cache` milik player bernama IP dan PORT dalam bentuk nama CRC.
+Menambahkan model simpel kustom objek diunggah. Model file bawaanya terletak pada folder `Documents\GTA San Andreas User Files\SAMP\cache` milik player bernama IP dan PORT dalam bentuk nama [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Name         | Description                                                                                                                   |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -46,7 +46,7 @@ public OnGameModeInit()
 
 :::warning
 
-Saat ini tidak ada batasan kapan Anda dapat memanggil fungsi ini, tetapi perhatikan bahwa jika Anda tidak memanggilnya di dalam OnFilterScriptInit/OnGameModeInit, Anda berisiko bahwa beberapa player, yang sudah ada di server, mungkin belum mendownload modelnya.
+Saat ini tidak ada batasan kapan Anda dapat memanggil fungsi ini, tetapi perhatikan bahwa jika Anda tidak memanggilnya di dalam [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit), Anda berisiko bahwa beberapa player, yang sudah ada di server, mungkin belum mendownload modelnya.
 
 :::
 

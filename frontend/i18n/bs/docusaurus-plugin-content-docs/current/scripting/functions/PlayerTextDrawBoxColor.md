@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Deskripcija
 
-Postavlja boju box-a textdraw-a (PlayerTextDrawUseBox).
+Postavlja boju box-a textdraw-a ([PlayerTextDrawUseBox](PlayerTextDrawUseBox)).
 
 | Ime             | Deskripcija                                               |
 | --------------- | --------------------------------------------------------- |

@@ -43,7 +43,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-- Essa callback é executada somente quando o "lag compensation" está **ativado**.
+- Essa callback é executada somente quando o [lag compensation](../../server/LagCompensation) está **ativado**.
 - Caso o **tipo de acerto** seja:
   - `BULLET_HIT_TYPE_NONE`: Os parâmetros **fX**, **fY** e **fZ** irão retornar 0.0 nas coordenadas, caso não haja acerto em nenhuma superficíe (ex. Objeto distante no qual a bala não consegue chegar);
   - Outros: Os parâmetros **fX**, **fY** e **fZ** são offsets relativos ao **hitid**.

@@ -41,8 +41,8 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 :::note
 
-- Essa callback não é executada pela função ChangeVehiclePaintjob.
-- Você deve utilizar o OnVehicleChangePaintjob juntamente com o vSync para saber exatamente quando o player **fez a compra**.
+- Essa callback não é executada pela função [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob).
+- Você deve utilizar o OnVehicleChangePaintjob juntamente com o [vSync](https://github.com/Vasily-X/vSync) para saber exatamente quando o player **fez a compra**.
 
 :::
 

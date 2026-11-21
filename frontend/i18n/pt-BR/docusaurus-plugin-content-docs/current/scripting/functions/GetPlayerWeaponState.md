@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Verifique o estado da arma de um jogador.
+Verifique o [estado](../resources/weaponstates) da arma de um jogador.
 
 | Nome     | Descrição                                    |
 | -------- | -------------------------------------------- |

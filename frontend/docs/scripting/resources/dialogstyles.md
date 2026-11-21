@@ -7,7 +7,7 @@ sidebar_label: Dialog Styles
 
 - In [OnDialogResponse](../callbacks/OnDialogResponse), pressing **button1** sets **response** to **1**, while pressing **button2** sets **response** to **0**.
 - Every dialog can have an optional button 2. To make it disappear leave it empty, like in the first example. Players won't be able to click it, but they will be able to press ESC and trigger [OnDialogResponse](../callbacks/OnDialogResponse) with **response** = **0**.
-- [ShowPlayerDialog](../functions/ShowPlayerDialog): Color embedding can be used for every string: **caption**, **info**, **button1** and **button2**.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): [Color embedding](colorslist#color-embedding) can be used for every string: **caption**, **info**, **button1** and **button2**.
 
 :::
 

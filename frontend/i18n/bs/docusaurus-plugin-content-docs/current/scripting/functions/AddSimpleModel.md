@@ -13,7 +13,7 @@ Ova funkcija je dodana u SA-MP 0.3.DL R1 i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Dodaje novi prilagođen/custom prost model objekta za preuzimanje. Fajlovi modela će biti pohranjeni u igračevim: `Documents\GTA San Andreas User Files\SAMP\cache` ispod Server IP i Port foldera u CRC-formi imena fajla.
+Dodaje novi prilagođen/custom prost [model objekta](CreateObject) za preuzimanje. Fajlovi modela će biti pohranjeni u igračevim: `Documents\GTA San Andreas User Files\SAMP\cache` ispod Server IP i Port foldera u [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)-formi imena fajla.
 
 | Ime          | Deskripcija                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------ |
@@ -50,7 +50,7 @@ public OnGameModeInit()
 
 :::warning
 
-Trenutno ne postoje nikakva ograničenja o pozivanju ove funkcije, ali budite oprezni jer ako ih ne koristite unutar OnFilterScriptInit/OnGameModeInit, riskirate da neki igrači, koji su već na server, možda ne preuzmu modele.
+Trenutno ne postoje nikakva ograničenja o pozivanju ove funkcije, ali budite oprezni jer ako ih ne koristite unutar [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit), riskirate da neki igrači, koji su već na server, možda ne preuzmu modele.
 
 :::
 

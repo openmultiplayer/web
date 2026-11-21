@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-This function concatenates (joins together) two strings into the destination string.
+This function [concatenates](https://en.wikipedia.org/wiki/Concatenation) (joins together) two strings into the destination string.
 
 | Name                  | Description                                          |
 | --------------------- | ---------------------------------------------------- |

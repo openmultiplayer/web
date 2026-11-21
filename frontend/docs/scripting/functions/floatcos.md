@@ -7,7 +7,7 @@ tags: ["math", "floating-point"]
 
 ## Description
 
-Get the cosine from a given angle. The input angle may be in radians, degrees or grades.
+Get the [cosine](https://en.wikipedia.org/wiki/Sine_and_cosine) from a given angle. The input angle may be in radians, degrees or grades.
 
 | Name           | Description                                                                                         |
 | -------------- | --------------------------------------------------------------------------------------------------- |

@@ -13,7 +13,7 @@ tags: ["玩家", "管理"]
 
 使用[BanEx](BanEx)可以指定封禁原因。
 
-可通过 RCON 命令`banip`和`unbanip`管理 IP 封禁（需配合[SendRconCommand](SendRconCommand)使用）。
+可通过 [RCON](../../server/RemoteConsole) 命令`banip`和`unbanip`管理 IP 封禁（需配合[SendRconCommand](SendRconCommand)使用）。
 
 | 参数     | 说明            |
 | -------- | --------------- |

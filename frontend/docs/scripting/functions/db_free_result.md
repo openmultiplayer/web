@@ -13,7 +13,7 @@ This function is deprecated. Please see [DB_FreeResultSet](DB_FreeResultSet).
 
 ## Description
 
-Frees result memory allocated from db_query.
+Frees result memory allocated from [db_query](db_query).
 
 | Name              | Description                                              |
 | ----------------- | -------------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Deblokirajte IP adresu koja je prethodno bila blokirana pomoću BlockIpAddress.
+Deblokirajte IP adresu koja je prethodno bila blokirana pomoću [BlockIpAddress](BlockIpAddress).
 
 | Ime        | Deskripcija                |
 | ---------- | -------------------------- |

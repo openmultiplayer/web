@@ -48,7 +48,7 @@ Você pode mover a câmera durante a edição pressionando e segurando a **barra
 
 :::warning
 
-Jogadores poderão escalonar objetos para tamanhos muito grandes ou valores negativos. Limites devem ser implementados usando OnPlayerEditAttachedObject para abortar a edição ou limitar os valores de escala.
+Jogadores poderão escalonar objetos para tamanhos muito grandes ou valores negativos. Limites devem ser implementados usando [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject) para abortar a edição ou limitar os valores de escala.
 
 :::
 

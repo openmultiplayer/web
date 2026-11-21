@@ -47,7 +47,7 @@ Korištenje ove funkcije na igraču koji je u vozilu odmah će ga ukloniti iz vo
 
 :::tip
 
-Kada postavljate položaj igrača u enterijer, mora se postaviti i njegov enterijer.
+Kada postavljate položaj igrača u enterijer, mora se postaviti i [njegov enterijer](SetPlayerInterior).
 
 :::
 

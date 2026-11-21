@@ -42,7 +42,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-Para prevenir a los jugadores de spawnear con ciertas clases, la última clase vista debe ser guardada en una variable en OnPlayerRequestClass.
+Para prevenir a los jugadores de spawnear con ciertas clases, la última clase vista debe ser guardada en una variable en [OnPlayerRequestClass](OnPlayerRequestClass).
 
 :::
 

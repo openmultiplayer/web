@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-Pentru a împiedica jucătorii să apară cu anumite clase, ultima clasă vizualizată trebuie salvată într-o variabilă în OnPlayerRequestClass.
+Pentru a împiedica jucătorii să apară cu anumite clase, ultima clasă vizualizată trebuie salvată într-o variabilă în [OnPlayerRequestClass](OnPlayerRequestClass).
 
 :::
 

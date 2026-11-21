@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripcija
 
-Omogućite "friendly-fire" za timska vozila. Igrači neće moći oštetiti vozila suigrača (mora se koristiti SetPlayerTeam!).
+Omogućite "friendly-fire" za timska vozila. Igrači neće moći oštetiti vozila suigrača (mora se koristiti [SetPlayerTeam](SetPlayerTeam)!).
 
 ## Primjeri
 

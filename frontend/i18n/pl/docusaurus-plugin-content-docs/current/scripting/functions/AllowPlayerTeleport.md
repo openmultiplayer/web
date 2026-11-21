@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-Ta funkcja będzie działać tylko jeżeli AllowAdminTeleport jest włączone, musisz być również administratorem.
+Ta funkcja będzie działać tylko jeżeli [AllowAdminTeleport](AllowAdminTeleport) jest włączone, musisz być również administratorem.
 
 :::
 

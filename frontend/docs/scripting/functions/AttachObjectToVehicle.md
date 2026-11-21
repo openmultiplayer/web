@@ -7,7 +7,7 @@ tags: ["object", "vehicle"]
 
 ## Description
 
-Attach an object to a vehicle.
+Attach an [object](CreateObject) to a [vehicle](CreateVehicle).
 
 | Name            | Description                                                                                                                                   |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,13 +36,13 @@ AttachObjectToVehicle(objectid, vehicleid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
 
 :::note
 
-The object must be created first.
+The object must be [created](CreateObject) first.
 
 :::
 
 :::warning
 
-When the vehicle is destroyed or respawned, the attached objects won't be destroyed with it; they will remain stationary at the position the vehicle disappeared and be reattached to the next vehicle to claim the vehicle ID that the objects were attached to.
+When the vehicle is [destroyed](DestroyVehicle) or respawned, the attached objects won't be destroyed with it; they will remain stationary at the position the vehicle disappeared and be reattached to the next vehicle to claim the vehicle ID that the objects were attached to.
 
 :::
 

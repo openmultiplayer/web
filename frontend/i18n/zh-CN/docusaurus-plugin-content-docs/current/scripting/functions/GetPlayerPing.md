@@ -7,7 +7,7 @@ tags: ["玩家"]
 
 ## 描述
 
-获取玩家的网络延迟（Ping）。Ping 值表示服务器与客户端之间通信的往返时间。
+获取玩家的网络[延迟](https://en.wikipedia.org/wiki/Ping_(networking_utility))（Ping）。Ping 值表示服务器与客户端之间通信的往返时间。
 
 | 参数名   | 说明                      |
 | -------- | ------------------------- |

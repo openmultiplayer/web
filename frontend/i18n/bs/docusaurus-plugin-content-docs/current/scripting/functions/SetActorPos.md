@@ -47,7 +47,7 @@ SetActorPos(gMyActor, 1.0, 2.0, 3.0);
 
 :::note
 
-Kada kreirate aktora pomoću CreateActor, vi odredite njegovu poziciju. Ovu funkciju ne trebate koristiti ako kasnije ne želite promijeniti njegov položaj.
+Kada kreirate aktora pomoću [CreateActor](CreateActor), vi odredite njegovu poziciju. Ovu funkciju ne trebate koristiti ako kasnije ne želite promijeniti njegov položaj.
 
 :::
 

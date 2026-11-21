@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Links a vehicle to an interior. Vehicles can only be seen by players in the same interior (SetPlayerInterior).
+Links a vehicle to an interior. Vehicles can only be seen by players in the same interior ([SetPlayerInterior](SetPlayerInterior)).
 
 | Name       | Description                                                |
 | ---------- | ---------------------------------------------------------- |

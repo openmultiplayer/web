@@ -33,7 +33,7 @@ SetVehicleNumberPlate(vehicleid, "ABCD 123");
 :::note
 
 - Ova funkcija nema internu provjeru grešaka. Ne dodjeljujte prilagođene registarske tablice vozilima bez tablica (čamci, avioni, itd.) Jer će to rezultirati nekim nepotrebnim vremenom obrade na klijentu.
-- Da bi promjene stupile na snagu, vozilo se mora ponovno mrijestiti ili reproducirati.
+- Da bi promjene stupile na snagu, vozilo se mora [ponovno mrijestiti](SetVehicleToRespawn) ili reproducirati.
 - Na svakoj tablici postoji ograničenje od 32 znaka (uključujući ugrađene boje).
 - Dužina teksta koja se može vidjeti na pločici s brojevima je oko 9 do 10 znakova, a više znakova uzrokovat će razdvajanje teksta.
 - Neki modeli vozila imaju unazad registarsku tablicu, npr. Boxville (498) (kao alternativu ovom vozilu možete koristiti model vozila ID 609, koji je duplicirani Boxville (zvan Boxburg), ali s redovnom tablicom).

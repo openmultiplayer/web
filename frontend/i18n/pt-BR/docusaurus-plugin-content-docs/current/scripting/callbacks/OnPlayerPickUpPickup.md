@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Esta callback é chamada quando um jogador coleta um pickup criado com CreatePickup.
+Esta callback é chamada quando um jogador coleta um pickup criado com [CreatePickup](../functions/CreatePickup).
 
 | Nome     | Descrição                                         |
 | -------- | ------------------------------------------------- |

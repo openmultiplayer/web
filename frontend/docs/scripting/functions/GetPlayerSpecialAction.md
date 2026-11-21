@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Retrieves a player's current special action.
+Retrieves a player's current [special action](../resources/specialactions).
 
 | Name     | Description                                        |
 | -------- | -------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Set a player's weather.
+Set a player's [weather](../resources/weatherid).
 
 | Name     | Description                                   |
 | -------- | --------------------------------------------- |

@@ -39,13 +39,13 @@ public OnGameModeInit()
 
 :::note
 
-**useartwork** harus diaktifkan terlebih dahulu di server settings agar fungsi ini berfungsi.
+**useartwork** harus diaktifkan terlebih dahulu di [server settings](../../server/server.cfg#model-kustom) agar fungsi ini berfungsi.
 
 :::
 
 :::warning
 
-Saat ini tidak ada batasan kapan Anda dapat memanggil fungsi ini, tetapi perhatikan bahwa jika Anda tidak memanggilnya di dalam OnFilterScriptInit/OnGameModeInit, anda bisa membuat player lain beresiko, dimana sudah didalam server, tidak bisa mendownload models.
+Saat ini tidak ada batasan kapan Anda dapat memanggil fungsi ini, tetapi perhatikan bahwa jika Anda tidak memanggilnya di dalam [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit), anda bisa membuat player lain beresiko, dimana sudah didalam server, tidak bisa mendownload models.
 
 :::
 

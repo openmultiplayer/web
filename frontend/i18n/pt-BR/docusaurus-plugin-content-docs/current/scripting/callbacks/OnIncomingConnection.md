@@ -7,7 +7,7 @@ tags: []
 
 ## Descrição
 
-Esta callback é chamada quando um endereço de IP tenta conectar no servidor. Para bloquear tentativas de conexão, use BlockIpAddress.
+Esta callback é chamada quando um endereço de IP tenta conectar no servidor. Para bloquear tentativas de conexão, use [BlockIpAddress](../functions/BlockIpAddress).
 
 | Nome         | Descrição                             |
 | ------------ | ------------------------------------- |

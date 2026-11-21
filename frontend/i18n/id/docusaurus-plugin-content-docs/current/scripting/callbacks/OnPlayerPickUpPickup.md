@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripsi
 
-Callback ini dipanggil ketika pemain mengambil pickup yang dibuat dengan CreatePickup.
+Callback ini dipanggil ketika pemain mengambil pickup yang dibuat dengan [CreatePickup](../functions/CreatePickup).
 
 | Nama     | Deskripsi                                  |
 | -------- | ------------------------------------------ |

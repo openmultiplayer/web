@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Cria um veículo no mundo. Pode ser usado no lugar de AddStaticVehicleEx a qualquer momento no script.
+Cria um veículo no mundo. Pode ser usado no lugar de [AddStaticVehicleEx](AddStaticVehicleEx) a qualquer momento no script.
 
 | Nome                                   | Descrição                                                                                                                      |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |

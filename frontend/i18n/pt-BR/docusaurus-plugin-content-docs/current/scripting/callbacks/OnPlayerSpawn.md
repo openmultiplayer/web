@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Este evento é chamado quando um spawna. (Após chamada da função SpawnPlayer)
+Este evento é chamado quando um spawna. (Após chamada da função [SpawnPlayer](../functions/SpawnPlayer))
 
 | Nome     | Descrição                  |
 | -------- | -------------------------- |

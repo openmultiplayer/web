@@ -7,7 +7,7 @@ tags: ["core"]
 
 ## Descrição
 
-Obtenha um número pseudo-aleatório.
+Obtenha um [número pseudo-aleatório](https://en.wikipedia.org/wiki/Pseudorandom_number_generator).
 
 | Nome | Descrição                                                                   |
 | ---- | --------------------------------------------------------------------------- |

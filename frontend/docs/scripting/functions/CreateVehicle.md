@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at any time in the script.
+Creates a vehicle in the world. Can be used in place of [AddStaticVehicleEx](AddStaticVehicleEx) at any time in the script.
 
 | Name                                   | Description                                                                                                                  |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |

@@ -50,7 +50,7 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 
 :::tip
 
-- 仅适用于通过CreatePickup创建的常规拾取物
+- 仅适用于通过[CreatePickup](../functions/CreatePickup)创建的常规拾取物
 - 武器拾取物（通过CreateWeaponPickup创建）不会触发此回调
 - 使用前请用IsValidPickup验证拾取物有效性
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Açıklamalar
 
-Bu işlev, bir takım parametresi eklenmesiyle birlikte AddPlayerClass işleviyle tamamen aynıdır.
+Bu işlev, bir takım parametresi eklenmesiyle birlikte [AddPlayerClass](AddPlayerClass) işleviyle tamamen aynıdır.
 
 | İsim          | Açıklama                                |
 | ------------- | --------------------------------------- |

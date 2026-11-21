@@ -13,7 +13,7 @@ Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacak
 
 ## Açıklama
 
-İndirmek için yeni bir basit nesne modeli ekler. Model dosyaları, oynatıcının `Belgelerim\GTA San Andreas User Files\SAMP\cache` dizinindeki Sunucu IP'si ve Bağlantı Noktası klasörü altında, CRC biçiminde dosya adlarıyla saklanır.
+İndirmek için yeni bir basit nesne modeli ekler. Model dosyaları, oynatıcının `Belgelerim\GTA San Andreas User Files\SAMP\cache` dizinindeki Sunucu IP'si ve Bağlantı Noktası klasörü altında, [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) biçiminde dosya adlarıyla saklanır.
 
 | İsim         | Açıklama                                                                                                                      |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -52,7 +52,7 @@ public OnGameModeInit()
 
 :::warning
 
-Şu anda bu fonksiyonu ne zaman arayabileceğiniz konusunda herhangi bir kısıtlama yoktur, ancak OnFilterScriptInit/OnGameModeInit içinde aramamanız durumunda, halihazırda sunucuda bulunan bazı oyuncuların modelleri indirmemiş olma riskini çalıştırdığınızı unutmayın.
+Şu anda bu fonksiyonu ne zaman arayabileceğiniz konusunda herhangi bir kısıtlama yoktur, ancak [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit) içinde aramamanız durumunda, halihazırda sunucuda bulunan bazı oyuncuların modelleri indirmemiş olma riskini çalıştırdığınızı unutmayın.
 
 :::
 

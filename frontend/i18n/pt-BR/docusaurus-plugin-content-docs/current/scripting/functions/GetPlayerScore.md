@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Esta função retorna a pontuação de um jogador conforme foi definida usando SetPlayerScore
+Esta função retorna a pontuação de um jogador conforme foi definida usando [SetPlayerScore](SetPlayerScore).
 
 | Nome | Descrição |
 | -------- | ------------------------------- |

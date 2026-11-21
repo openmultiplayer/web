@@ -29,7 +29,7 @@ public OnGameModeInit()
 
 :::tip
 
-此回调也可用于滤镜脚本中，通过RCON指令（如changemode或gmx）检测游戏模式变更，因为更换游戏模式不会重新加载滤镜脚本
+此回调也可用于滤镜脚本中，通过[RCON指令](../../server/ControllingServer#rcon-命令)（如changemode或gmx）检测游戏模式变更，因为更换游戏模式不会重新加载滤镜脚本
 
 :::
 

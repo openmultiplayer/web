@@ -7,7 +7,7 @@ tags: []
 
 ## Descrição
 
-Esta função é exatamente igual à função AddPlayerClass, com a adição de um parâmetro de equipe.
+Esta função é exatamente igual à função [AddPlayerClass](AddPlayerClass), com a adição de um parâmetro de equipe.
 
 | Nome           | Descrição                                                 |
 | -------------- | --------------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## توضیحات
 
-رنگ نام و نشانگر رادار بازیکن را دریافت می‌کند. فقط بعد از استفاده از SetPlayerColor کار می‌کند.
+رنگ نام و نشانگر رادار بازیکن را دریافت می‌کند. فقط بعد از استفاده از [SetPlayerColor](SetPlayerColor) کار می‌کند.
 
 | نام      | توضیحات                                    |
 | -------- | ------------------------------------------ |
@@ -32,7 +32,7 @@ SendClientMessage(playerid, -1, output);
 
 :::warning
 
-GetPlayerColor چیزی برنمی‌گرداند (0) مگر اینکه قبلاً SetPlayerColor استفاده شده باشد. برای حل این مشکل [اینجا](../../tutorials/colorfix) کلیک کنید.
+GetPlayerColor چیزی برنمی‌گرداند (0) مگر اینکه قبلاً [SetPlayerColor](SetPlayerColor) استفاده شده باشد. برای حل این مشکل [اینجا](../../tutorials/colorfix) کلیک کنید.
 
 :::
 

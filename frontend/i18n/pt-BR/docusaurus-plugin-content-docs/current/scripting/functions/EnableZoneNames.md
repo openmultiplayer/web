@@ -8,7 +8,7 @@ tags: []
 
 ## Descrição
 
-Esta função permite ativar nomes de zonas/áreas, como o texto "Vinewood" ou "Doherty" no canto inferior direito da tela à medida que entram na área. Esta é uma opção de modo de jogo e deve ser definida no callback OnGameModeInit.
+Esta função permite ativar nomes de zonas/áreas, como o texto "Vinewood" ou "Doherty" no canto inferior direito da tela à medida que entram na área. Esta é uma opção de modo de jogo e deve ser definida no callback [OnGameModeInit](../callbacks/OnGameModeInit).
 
 | Nome | Descrição |
 | ----------- | ---------------------------------------------------------------------------------------------------- |

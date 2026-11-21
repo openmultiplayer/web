@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Postavi smjer u kojem će gledati kamera igrača. Generalno namijenjeno korištenju u kombinaciji s SetPlayerCameraPos.
+Postavi smjer u kojem će gledati kamera igrača. Generalno namijenjeno korištenju u kombinaciji s [SetPlayerCameraPos](SetPlayerCameraPos).
 
 | Ime      | Deskripcija                                                                                                                                          |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,7 +34,7 @@ SetPlayerCameraLookAt(playerid, 324.34, 54.122, 173.35);
 
 :::warning
 
-Korištenje funkcija kamere izravno nakon omogućavanja režima spectatora ne radi.
+Korištenje funkcija kamere izravno nakon [omogućavanja režima spectatora](TogglePlayerSpectating) ne radi.
 
 :::
 

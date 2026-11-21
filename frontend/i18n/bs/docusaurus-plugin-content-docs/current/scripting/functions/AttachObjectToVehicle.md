@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripcija
 
-Prikvači objekat za vozilo.
+Prikvači [objekat](CreateObject) za [vozilo](CreateVehicle).
 
 | Ime           | Deskripcija                                                                                                                                 |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,13 +36,13 @@ AttachObjectToVehicle(objectid, vehicleid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
 
 :::note
 
-Objekat prvobitno mora biti kreiran.
+Objekat prvobitno mora biti [kreiran](CreateObject).
 
 :::
 
 :::warning
 
-Kada se vozilo uništi ili respawnuje, prikvačeni predmeti se neće uništiti s njim; ostat će stacionarni na mjestu na kojem je vozilo nestalo i biti ponovno će se prikvačiti na sljedeće vozilo kako bi zatražili ID vozila na koje su predmeti prikvačeni.
+Kada se vozilo [uništi](DestroyVehicle) ili [respawnuje](../callbacks/OnVehicleSpawn), prikvačeni predmeti se neće uništiti s njim; ostat će stacionarni na mjestu na kojem je vozilo nestalo i biti ponovno će se prikvačiti na sljedeće vozilo kako bi zatražili ID vozila na koje su predmeti prikvačeni.
 
 :::
 

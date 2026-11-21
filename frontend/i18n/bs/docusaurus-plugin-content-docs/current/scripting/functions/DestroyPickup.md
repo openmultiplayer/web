@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Uništava pickup kreiran sa CreatePickup.
+Uništava pickup kreiran sa [CreatePickup](CreatePickup).
 
 | Ime    | Deskripcija                                           |
 | ------ | ----------------------------------------------------- |

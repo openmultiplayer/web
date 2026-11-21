@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Dobij trenutno postavljenu gravitaciju servera.
+Dobij trenutno postavljenu [gravitaciju](SetGravity) servera.
 
 ## Primjeri
 

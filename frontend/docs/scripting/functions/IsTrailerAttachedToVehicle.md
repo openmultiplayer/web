@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Checks if a vehicle has a trailer attached to it. Use GetVehicleTrailer to get the vehicle ID of the trailer (if any).
+Checks if a vehicle has a trailer attached to it. Use [GetVehicleTrailer](GetVehicleTrailer) to get the vehicle ID of the trailer (if any).
 
 | Name      | Description                                  |
 | --------- | -------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Returns a vehicle's rotation on all axes as a quaternion.
+Returns a vehicle's rotation on all axes as a [quaternion](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation).
 
 | Name      | Description                                                                          |
 | --------- | ------------------------------------------------------------------------------------ |
@@ -41,7 +41,7 @@ GetVehicleRotationQuat(vehicleid, w, x, y, z);
 
 :::note
 
-There is no 'set' variation of this function; you can not SET a vehicle's rotation (apart from the Z angle)
+There is no 'set' variation of this function; you can not SET a vehicle's rotation (apart from the [Z angle](SetVehicleZAngle))
 
 :::
 

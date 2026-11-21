@@ -36,7 +36,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 :::note
 
 - Ова повратна функција се не позива од стране [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob).
-- Можете користити OnVehicleChangePaintjob из vSync како бисте знали када играч **купи** боју.
+- Можете користити OnVehicleChangePaintjob из [vSync](https://github.com/Vasily-X/vSync) како бисте знали када играч **купи** боју.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač klikne na player-textdraw. Nije pozvan kada igrač napusti select mode (ESC) - međutim, OnPlayerClickTextDraw jeste.
+Ovaj callback je pozvan kada igrač klikne na player-textdraw. Nije pozvan kada igrač napusti select mode (ESC) - međutim, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) jeste.
 
 | Ime          | Deskripcija                                    |
 | ------------ | ---------------------------------------------- |
@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Kada igrač pritisne ESC da prekine selektovanje textdraw-a, OnPlayerClickTextDraw biva pozvan sa textdraw IDem od 'INVALID_TEXT_DRAW'. OnPlayerClickPlayerTextDraw neće biti pozvan.
+Kada igrač pritisne ESC da prekine selektovanje textdraw-a, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) biva pozvan sa textdraw IDem od 'INVALID_TEXT_DRAW'. OnPlayerClickPlayerTextDraw neće biti pozvan.
 
 :::
 

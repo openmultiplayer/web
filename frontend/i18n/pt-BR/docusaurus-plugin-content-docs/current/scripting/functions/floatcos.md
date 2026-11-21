@@ -8,7 +8,7 @@ tags: ["math", "floating-point"]
 
 ## Descrição
 
-Obtenha o cosseno de um determinado ângulo. O ângulo de entrada pode estar em radianos, graus ou graus.
+Obtenha o [cosseno](https://en.wikipedia.org/wiki/Sine_and_cosine) de um determinado ângulo. O ângulo de entrada pode estar em radianos, graus ou graus.
 
 | Nome | Descrição |
 | -------------- | --------------------------------------------------------------------------------------------------- |

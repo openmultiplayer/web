@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-如需限制玩家使用特定职业生成，需在 OnPlayerRequestClass 回调中保存最后查看的职业类别
+如需限制玩家使用特定职业生成，需在 [OnPlayerRequestClass](OnPlayerRequestClass) 回调中保存最后查看的职业类别
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Uklanja ikonicu na mapi koja je prethodno postavljena za igrača koristeći SetPlayerMapIcon.
+Uklanja ikonicu na mapi koja je prethodno postavljena za igrača koristeći [SetPlayerMapIcon](SetPlayerMapIcon).
 
 | Ime      | Deskripcija                                                         |
 | -------- | ------------------------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripcija
 
-Provjerava ako vozilo ima prikvačenu prikolicu za sebe. Koristi GetVehicleTrailer da dobiješ ID vozila prikolice (ako ima).
+Provjerava ako vozilo ima prikvačenu prikolicu za sebe. Koristi [GetVehicleTrailer](GetVehicleTrailer) da dobiješ ID vozila prikolice (ako ima).
 
 | Ime       | Deskripcija                               |
 | --------- | ----------------------------------------- |

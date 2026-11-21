@@ -39,7 +39,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 :::note
 
 - Kako samo ime callback-a kaže, poziva se samo kada igrač klikne da označi metu(waypoint) a ne kada pritisne tipku.
-- Return-ovana vrijednost Z če biti 0 (netačno) ako je mjesto gdje je igrač kliknuo mnogo daleko od igrača; Koristi MapAndreas ili ColAndreas plugin kako bi dobio precizniju Z kordinatu.
+- Return-ovana vrijednost Z če biti 0 (netačno) ako je mjesto gdje je igrač kliknuo mnogo daleko od igrača; Koristi [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) ili [ColAndreas](https://github.com/Pottus/ColAndreas) plugin kako bi dobio precizniju Z kordinatu.
 
 :::
 

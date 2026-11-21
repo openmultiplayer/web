@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Reproduz o som especificado para um jogador.
+Reproduz o [som](../resources/sound-ids) especificado para um jogador.
 
 Para uma biblioteca que lista todos os sons, confira [isto](https://github.com/WoutProvost/samp-sound-array).
 

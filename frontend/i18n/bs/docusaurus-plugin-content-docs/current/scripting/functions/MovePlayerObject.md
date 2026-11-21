@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Premjestite player objekat na novi položaj zadanom brzinom. Također podržava rotaciju. Also supports rotation. Igrači/vozila će 'surfati' objektom dok se kreće.
+Premjestite [player objekat](CreatePlayerObject) na novi položaj zadanom brzinom. Također podržava rotaciju. Also supports rotation. Igrači/vozila će 'surfati' objektom dok se kreće.
 
 | Ime         | Deskripcija                                            |
 | ----------- | ------------------------------------------------------ |

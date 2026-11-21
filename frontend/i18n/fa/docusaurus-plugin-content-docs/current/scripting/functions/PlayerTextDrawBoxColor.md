@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## توضیحات
 
-رنگ جعبه یک textdraw (PlayerTextDrawUseBox) رو تنظیم می‌کنه.
+رنگ جعبه یک textdraw ([PlayerTextDrawUseBox](PlayerTextDrawUseBox)) رو تنظیم می‌کنه.
 
 | نام               | توضیحات                                                   |
 | ----------------- | --------------------------------------------------------- |

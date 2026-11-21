@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Creates an explosion that is only visible to a single player. This can be used to isolate explosions from other players or to make them only appear in specific virtual worlds.
+Creates an explosion that is only visible to a single player. This can be used to isolate explosions from other players or to make them only appear in specific [virtual worlds](SetPlayerVirtualWorld).
 
 | Name         | Description                                              |
 | ------------ | -------------------------------------------------------- |

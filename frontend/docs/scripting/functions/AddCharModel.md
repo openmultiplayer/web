@@ -9,7 +9,7 @@ tags: ["custom skin", "char model"]
 
 ## Description
 
-Adds a new custom character model for download. The model files will be stored in player's `Documents\GTA San Andreas User Files\SAMP\cache` under the Server IP and Port folder in a [CRC-form](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) file name.
+Adds a new custom [character model](SetPlayerSkin) for download. The model files will be stored in player's `Documents\GTA San Andreas User Files\SAMP\cache` under the Server IP and Port folder in a [CRC-form](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) file name.
 
 | Name                   | Description                                                                                                                          |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-**useartwork** or **artwork.enable** must be enabled first in server settings in order for this to work.
+**useartwork** or **artwork.enable** must be enabled first in [server settings](../../server/server.cfg#custom-models) in order for this to work.
 
 :::
 

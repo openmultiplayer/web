@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-O valor de retorno não é zerado após alterar o modo de jogo (usando o comando RCON "gmx").
+O valor de retorno não é zerado após alterar o modo de jogo (usando o comando RCON "[gmx](../../server/ControllingServer#comandos-do-rcon)").
 
 :::
 

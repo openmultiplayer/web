@@ -9,7 +9,7 @@ tags: []
 
 ## Description
 
-Maghanap ng umiiral nang custom skin o simple object texture file. Ang mga file ng model ay matatagpuan sa folder ng server ng mga `models` bilang default (setting ng artpath).
+Maghanap ng umiiral nang custom [skin](AddCharModel) o simple [object](AddSimpleModel) texture file. Ang mga file ng model ay matatagpuan sa folder ng server ng mga `models` bilang default (setting ng artpath).
 
 | Name        | Description                                                                                  |
 | ----------- | -------------------------------------------------------------------------------------------- |

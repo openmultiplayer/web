@@ -44,7 +44,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-textdraw باید دوباره برای بازیکن نمایش داده بشه تا رنگ بروزرسانی بشه.
+textdraw باید دوباره برای بازیکن [نمایش داده بشه](PlayerTextDrawShow) تا رنگ بروزرسانی بشه.
 
 :::
 

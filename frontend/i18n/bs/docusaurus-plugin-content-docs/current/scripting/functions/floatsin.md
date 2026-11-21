@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Uzmi sinus iz zadanog ugla. Ulazni ugao može biti u radijanima, stupnjevima ili stupnjevima.
+Uzmi [sinus](https://en.wikipedia.org/wiki/Sine_and_cosine) iz zadanog ugla. Ulazni ugao može biti u radijanima, stupnjevima ili stupnjevima.
 
 | Ime         | Deskripcija                                                |
 | ----------- | ---------------------------------------------------------- |

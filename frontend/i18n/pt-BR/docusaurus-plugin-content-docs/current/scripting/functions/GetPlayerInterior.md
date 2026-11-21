@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Obtém o interior atual de um jogador. Uma lista com os interiores atualmente conhecidos, com as suas posições, podem ser encontrados nesta página.
+Obtém o interior atual de um jogador. Uma lista com os interiores atualmente conhecidos, com as suas posições, podem ser encontrados [nesta página](../resources/interiorids).
 
 | Nome     | Descrição                                        |
 | -------- | ------------------------------------------------ |

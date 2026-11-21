@@ -8,7 +8,7 @@ tags: ["player", "textdraw"]
 
 ## Descrição
 
-Mostra um textdraw para um jogador específico.
+Mostra um [textdraw](TextDrawCreate) para um jogador específico.
 
 | Nome | Descrição |
 | ----------- | ---------------------------------------------------------------------------------- |
@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Se apenas um único jogador verá um textdraws, pode ser aconselhável usar player-textdraws. Isto também é útil para textdraws que precisam mostrar informações específicas para um jogador individual.
+Se apenas um único jogador verá um textdraws, pode ser aconselhável usar [player-textdraws](CreatePlayerTextDraw). Isto também é útil para textdraws que precisam mostrar informações específicas para um jogador individual.
 
 :::
 

@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Obtém a cor do nome do jogador e do marcador de radar. Só funciona após SetPlayerColor.
+Obtém a cor do nome do jogador e do marcador de radar. Só funciona após [SetPlayerColor](SetPlayerColor).
 
 | Nome     | Descrição                              |
 | -------- | -------------------------------------- |
@@ -32,7 +32,7 @@ SendClientMessage(playerid, -1, output);
 
 :::warning
 
-GetPlayerColor não retornará nada (0), a menos que SetPlayerColor tenha sido usado primeiro. Clique em [HERE](../../tutorials/colorfix) para obter uma correção.
+GetPlayerColor não retornará nada (0), a menos que [SetPlayerColor](SetPlayerColor) tenha sido usado primeiro. Clique em [HERE](../../tutorials/colorfix) para obter uma correção.
 
 :::
 

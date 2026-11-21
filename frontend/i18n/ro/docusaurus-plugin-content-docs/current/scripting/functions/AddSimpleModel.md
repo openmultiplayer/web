@@ -9,7 +9,7 @@ tags: []
 
 ## Descriere
 
-Adaugă un nou model de obiect simplu personalizat pentru descărcare. Fișierele model vor fi stocate în `Documents\GTA San Andreas User Files\SAMP\cache` sub folderul Server IP și Port într-un nume de fișier CRC.
+Adaugă un nou model de obiect simplu personalizat pentru descărcare. Fișierele model vor fi stocate în `Documents\GTA San Andreas User Files\SAMP\cache` sub folderul Server IP și Port într-un nume de fișier [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nume         | Descriere                                                                                                                                            |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -46,7 +46,7 @@ public OnGameModeInit()
 
 :::warning
 
-În prezent, nu există restricții cu privire la momentul în care puteți apela această funcție, dar rețineți că, dacă nu le apelați în OnFilterScriptInit / OnGameModeInit, aveți riscul ca unii jucători, care sunt deja pe server, să nu fi descărcat modelele.
+În prezent, nu există restricții cu privire la momentul în care puteți apela această funcție, dar rețineți că, dacă nu le apelați în [OnFilterScriptInit](../callbacks/OnFilterScriptInit) / [OnGameModeInit](../callbacks/OnGameModeInit), aveți riscul ca unii jucători, care sunt deja pe server, să nu fi descărcat modelele.
 
 :::
 

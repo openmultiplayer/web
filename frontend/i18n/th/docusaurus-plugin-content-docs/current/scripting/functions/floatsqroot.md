@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Calculates the square root of given value.
+Calculates the [square root](https://en.wikipedia.org/wiki/Square_root) of given value.
 
 | Name  | Description                                |
 | ----- | ------------------------------------------ |

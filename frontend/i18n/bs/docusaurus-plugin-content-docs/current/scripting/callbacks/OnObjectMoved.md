@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ovaj callback se poziva kada je objekt pomjeren nakon MoveObject (kada se prestane kretati).
+Ovaj callback se poziva kada je objekt pomjeren nakon [MoveObject](../functions/MoveObject) (kada se prestane kretati).
 
 | Ime      | Deskripcija                 |
 | -------- | --------------------------- |
@@ -31,7 +31,7 @@ public OnObjectMoved(objectid)
 
 :::note
 
-SetObjectPos ne radi kada ga koristite u ovom callback-u. Kako biste popravili to, ponovo kreirajte objekat.
+[SetObjectPos](../functions/SetObjectPos) ne radi kada ga koristite u ovom callback-u. Kako biste popravili to, ponovo kreirajte objekat.
 
 :::
 

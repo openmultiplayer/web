@@ -7,7 +7,7 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 ## توضیحات
 
-چک می‌کنه که آیا بازیکن داخل race checkpoint فعلی تنظیم شده‌ش هست یا نه (SetPlayerRaceCheckpoint).
+چک می‌کنه که آیا بازیکن داخل race checkpoint فعلی تنظیم شده‌ش هست یا نه ([SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint)).
 
 | نام      | توضیحات                    |
 | -------- | -------------------------- |

@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## Deskripcija
 
-Preuzmite sadržaj polja iz db_query.
+Preuzmite sadržaj polja iz [db_query](db_query).
 
 | Ime               | Deskripcija                      |
 | ----------------- | -------------------------------- |

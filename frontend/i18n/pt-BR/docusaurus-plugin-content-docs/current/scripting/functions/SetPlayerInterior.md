@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Defina o interior de um jogador. Uma lista de interiores atualmente conhecidos e suas posições pode ser encontrada aqui.
+Defina o interior de um jogador. Uma lista de interiores atualmente conhecidos e suas posições pode ser encontrada [aqui](../resources/interiorids).
 
 | Nome | Descrição |
 | ---------- | ----------------------------------------------------------------- |

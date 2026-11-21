@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Esta callback é chamada quando o estado de um jogador muda. Por exemplo, quando um jogador deixa de ser o piloto de um veículo e fica a pé.
+Esta callback é chamada quando o [estado](../resources/playerstates) de um jogador muda. Por exemplo, quando um jogador deixa de ser o piloto de um veículo e fica a pé.
 
 | Nome     | Desrição                                    |
 | -------- | ------------------------------------------- |

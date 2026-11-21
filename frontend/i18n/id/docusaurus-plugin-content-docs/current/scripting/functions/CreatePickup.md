@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripsi
 
-Fungsi ini melakukan sama persis dengan AddStaticPickup, kecuali ia mengembalikan ID pengembalian yang dapat digunakan untuk menghancurkannya setelah itu dilacak menggunakan OnPlayerPickUpPickup.
+Fungsi ini melakukan sama persis dengan AddStaticPickup, kecuali ia mengembalikan ID pengembalian yang dapat digunakan untuk menghancurkannya setelah itu dilacak menggunakan [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup).
 
 | Nama                             | Deskripsi                                                                           |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
@@ -58,7 +58,7 @@ Untuk pickup yang sepenuhnya scripted, tipe 1 harus digunakan.
 
 :::warning
 
-**Bug yang diketahui:** Pickups yang mempunyai X atau Y kurang dari -4096.0 atau lebih besar dari 4096.0 tidak akan muncul dan tidak akan memicu OnPlayerPickUpPickup salah satu.
+**Bug yang diketahui:** Pickups yang mempunyai X atau Y kurang dari -4096.0 atau lebih besar dari 4096.0 tidak akan muncul dan tidak akan memicu [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup) salah satu.
 
 :::
 

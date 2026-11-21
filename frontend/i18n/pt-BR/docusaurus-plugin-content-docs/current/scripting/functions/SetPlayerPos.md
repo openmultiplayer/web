@@ -47,7 +47,7 @@ Usar esta função em um jogador em um veículo irá removê-lo instantaneamente
 
 :::tip
 
-Ao definir a posição de um jogador para um interior, o seu interior também deve ser definido.
+Ao definir a posição de um jogador para um interior, [o seu interior](SetPlayerInterior) também deve ser definido.
 
 :::
 

@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-- ClearAnimations doesn't do anything when the animation ends if we pass 'true' for the freeze parameter in ApplyAnimation.
+- ClearAnimations doesn't do anything when the animation ends if we pass 'true' for the freeze parameter in [ApplyAnimation](ApplyAnimation).
 - Unlike some other ways to remove player from a vehicle, this will also reset the vehicle's velocity to zero, instantly stopping the car. Player will appear on top of the vehicle with the same location as he was in his car seat.
 
 :::

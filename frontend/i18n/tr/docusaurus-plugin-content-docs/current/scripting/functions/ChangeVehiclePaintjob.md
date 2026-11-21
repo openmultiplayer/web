@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Açıklama
 
-Aracın kaplamasını değiştirme. (düz renkler için bkz. ChangeVehicleColor).
+Aracın kaplamasını değiştirme. (düz renkler için bkz. [ChangeVehicleColor](ChangeVehicleColor)).
 
 | Parametre  | Açıklama                                                     |
 | ---------- | ------------------------------------------------------------ |
@@ -20,7 +20,11 @@ Bu fonksiyon belirtilen araç ID'si oluşturulmamış olsa bile her zaman **1**'
 
 :::warning
 
-Eğer aracın rengi siyahsa kaplama gözükmeyebilir. Aracı beyaza boyamak daha iyi olabilir, yapmak için ChangeVehicleColor(vehicleid,1,1); kullanılabilir.
+Eğer aracın rengi siyahsa kaplama gözükmeyebilir. Aracı beyaza boyamak daha iyi olabilir; bunu yapmak için aşağıdaki kod kullanılabilir:
+
+```c
+ChangeVehicleColor(vehicleid, 1, 1);
+```
 
 :::
 

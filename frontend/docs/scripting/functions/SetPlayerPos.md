@@ -47,7 +47,7 @@ Using this function on a player in a vehicle will instantly remove them from the
 
 :::tip
 
-When setting a player's position to an interior, their interior must be set also.
+When setting a player's position to an interior, [their interior](SetPlayerInterior) must be set also.
 
 :::
 

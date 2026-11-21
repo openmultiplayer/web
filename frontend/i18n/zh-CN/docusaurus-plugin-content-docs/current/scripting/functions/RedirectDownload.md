@@ -9,7 +9,7 @@ tags: ["自定义模型", "自定义皮肤", "简单模型"]
 
 ## 描述
 
-将玩家通过 AddCharModel 或 AddSimpleModel 请求的自定义模型下载重定向到指定的 HTTP 网页。
+将玩家通过 [AddCharModel](AddCharModel) 或 [AddSimpleModel](AddSimpleModel) 请求的自定义模型下载重定向到指定的 HTTP 网页。
 
 ## 参数
 

@@ -106,13 +106,13 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 :::note
 
-Vozila se moraju respawnovati kako bi se 'objective' uklonio.
+Vozila se moraju [respawnovati](SetVehicleToRespawn) kako bi se 'objective' uklonio.
 
 :::
 
 :::warning
 
-Od 0.3a verzije morati ćete ponovo primijeniti ovu funkciju kada je OnVehicleStreamIn pozvan.
+Od 0.3a verzije morati ćete ponovo primijeniti ovu funkciju kada je [OnVehicleStreamIn](../callbacks/OnVehicleStreamIn) pozvan.
 
 :::
 

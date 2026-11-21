@@ -17,7 +17,7 @@ tags: ["时间"]
 
 ## 返回值
 
-返回 Unix 时间戳。
+返回 [Unix 时间戳](https://en.wikipedia.org/wiki/Unix_time)。
 
 ## 示例
 

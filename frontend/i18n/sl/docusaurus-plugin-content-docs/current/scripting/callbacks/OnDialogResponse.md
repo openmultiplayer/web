@@ -1,18 +1,18 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Ta "callback" se pokliče, ko se predvajalnik odzove na pogovorno okno, imenovano "ShowPlayerDialog".
+description: Ta "callback" se pokliče, ko se predvajalnik odzove na pogovorno okno, imenovano ShowPlayerDialog.
 tags: []
 ---
 
 ## Opis
 
-Ta "callback" se pokliče, ko se predvajalnik odzove na pogovorno okno s funkcijo "ShowPlayerDialog" s klikom na gumb, s pritiskom na tipko ENTER/ESC ali z dvojnim klikom na element seznama (če uporabljate pogovorno okno sloga seznama).
+Ta "callback" se pokliče, ko se predvajalnik odzove na pogovorno okno s funkcijo ShowPlayerDialog s klikom na gumb, s pritiskom na tipko ENTER/ESC ali z dvojnim klikom na element seznama (če uporabljate pogovorno okno sloga seznama).
 
 | Ime         | Opis                                                                                                                              |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID igralca, ki se je odzval na dialog.                                                                                            |
-| dialogid    | ID pogovornega okna, na katerega se je predvajalnik odzval, dodeljena iz "ShowPlayerDialog".                                      |
+| dialogid    | ID pogovornega okna, na katerega se je predvajalnik odzval, dodeljena iz ShowPlayerDialog.                                        |
 | response    | **1** za levi in **0** za desni gumb (če je prikazan samo en gumb, vedno 1).                                                      |
 | listitem    | ID seznama elementa, ki ga je izbrala naprava (začne se pri 0) (samo če uporabljate pogovorno okno za slog seznama, sicer bo -1). |
 | inputtext[] | Besedilo vneseno v "input box" s strani igralca ali besedilo izbranega elementa seznama.                                          |

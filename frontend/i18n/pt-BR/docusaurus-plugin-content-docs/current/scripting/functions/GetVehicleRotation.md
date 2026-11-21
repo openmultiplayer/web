@@ -41,7 +41,7 @@ GetVehicleRotation(vehicleid, x, y, z);
 
 :::note
 
-Não existe variação ‘definida’ desta função; você não pode SET a rotação de um veículo (além do ângulo Z)
+Não existe variação ‘definida’ desta função; você não pode SET a rotação de um veículo (além do [ângulo Z](SetVehicleZAngle))
 
 :::
 

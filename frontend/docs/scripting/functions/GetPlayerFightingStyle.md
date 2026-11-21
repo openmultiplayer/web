@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Get the fighting style the player currently using.
+Get the [fighting style](../resources/fightingstyles) the player currently using.
 
 | Name     | Description                                        |
 | -------- | -------------------------------------------------- |

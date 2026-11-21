@@ -8,7 +8,7 @@ tags: ["math", "floating-point"]
 
 ## Descrição
 
-Obtenha a tangente de um determinado ângulo. O ângulo de entrada pode estar em radianos, graus ou graus.
+Obtenha a [tangente](https://en.wikipedia.org/wiki/Trigonometric_functions) de um determinado ângulo. O ângulo de entrada pode estar em radianos, graus ou graus.
 
 | Nome | Descrição |
 | ----------- | --------------------------------------------------------------------------------------------------- |

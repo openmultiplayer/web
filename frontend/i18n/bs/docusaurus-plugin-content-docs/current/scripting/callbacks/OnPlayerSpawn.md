@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada se igrač spawnuje (stvori). (npr. nakon korištenja SpawnPlayer funkcije)
+Ovaj callback je pozvan kada se igrač spawnuje (stvori). (npr. nakon korištenja [SpawnPlayer](../functions/SpawnPlayer) funkcije)
 
 | Ime      | Deskripcija                          |
 | -------- | ------------------------------------ |

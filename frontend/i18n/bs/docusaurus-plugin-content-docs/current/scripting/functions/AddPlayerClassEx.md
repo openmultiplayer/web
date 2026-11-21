@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Ova funkcija je u potpunosti ista kao i AddPlayerClass funkcija, sa akcentom na 'Tim' parametar.
+Ova funkcija je u potpunosti ista kao i [AddPlayerClass](AddPlayerClass) funkcija, sa akcentom na 'Tim' parametar.
 
 | Ime           | Deskripcija                                                |
 | ------------- | ---------------------------------------------------------- |

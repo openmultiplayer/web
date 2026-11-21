@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::warning
 
-- Jednom postavljen za neranjivog, aktor ne poziva OnPlayerGiveDamageActor.
+- Jednom postavljen za neranjivog, aktor ne poziva [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
 - Igračima će se stanje aktorove neranjivosti promijeniti samo kad im se to ponovno učita.
 
 :::

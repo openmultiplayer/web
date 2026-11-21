@@ -7,7 +7,7 @@ tags: ["player"]
 
 :::warning
 
-This function, as of 0.3d, is deprecated. Check OnPlayerClickMap.
+This function, as of 0.3d, is deprecated. Check [OnPlayerClickMap](../callbacks/OnPlayerClickMap).
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Zaustavi player-object koji se kreće nakon što se MovePlayerObject koristio.
+Zaustavi player-object koji se kreće nakon što se [MovePlayerObject](MovePlayerObject) koristio.
 
 | Ime      | Deskripcija                                    |
 | -------- | ---------------------------------------------- |

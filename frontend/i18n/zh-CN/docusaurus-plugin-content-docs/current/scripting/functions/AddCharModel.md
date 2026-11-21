@@ -9,7 +9,7 @@ tags: ["自定义皮肤", "角色模型"]
 
 ## 描述
 
-添加可供下载的新自定义角色模型。模型文件将存储在玩家的「`文档\GTA San Andreas User Files\SAMP\cache`」目录下，按服务器 IP 和端口分类的文件夹中，并以 [CRC 格式](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)文件名保存。
+添加可供下载的新自定义[角色模型](SetPlayerSkin)。模型文件将存储在玩家的「`文档\GTA San Andreas User Files\SAMP\cache`」目录下，按服务器 IP 和端口分类的文件夹中，并以 [CRC 格式](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)文件名保存。
 
 | 参数                   | 说明                                                                                              |
 | ---------------------- | ------------------------------------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-需先在服务器配置中启用**useartwork**或**artwork.enable**选项才能使此函数生效。
+需先在[服务器配置](../../server/server.cfg#自定义模型)中启用**useartwork**或**artwork.enable**选项才能使此函数生效。
 
 :::
 

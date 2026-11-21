@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## คำอธิบาย
 
-Get the content of a field as a float from db_query
+Get the content of a field as a float from db_query.
 
 | Name              | Description                      |
 | ----------------- | -------------------------------- |

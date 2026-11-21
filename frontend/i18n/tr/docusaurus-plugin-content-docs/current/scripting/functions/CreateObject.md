@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::note
 
-Obje sınırı 1000(MAX_OBJECTS)'dir. Sınırın aşılması için streamer kullanılabilir.
+Obje sınırı 1000(MAX_OBJECTS)'dir. Sınırın aşılması için [streamer](https://github.com/samp-incognito/samp-streamer-plugin) kullanılabilir.
 
 :::
 

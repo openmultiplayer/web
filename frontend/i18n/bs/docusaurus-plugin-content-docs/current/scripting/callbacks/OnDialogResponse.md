@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcijom bilo klikom dugmeta, klikom ENTER7ESC tipke ili duplim klikom na list item (ukoliko koristite list style dijalog).
+Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan [ShowPlayerDialog](../functions/ShowPlayerDialog) funkcijom bilo klikom dugmeta, klikom ENTER7ESC tipke ili duplim klikom na list item (ukoliko koristite list style dijalog).
 
 | Ime         | Deskripcija                                                                                                                            |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |

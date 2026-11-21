@@ -35,7 +35,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 :::warning
 
 - Nu este apelat dacă jucătorul cade de pe bicicletă sau este scos dintr-un vehicul prin alte mijloace, cum ar fi utilizarea SetPlayerPos.
-- Trebuie să utilizați OnPlayerStateChange și să verificați dacă starea lor veche este PLAYER_STATE_DRIVER sau PLAYER_STATE_PASSENGER și dacă noua lor stare este PLAYER_STATE_ONFOOT.
+- Trebuie să utilizați [OnPlayerStateChange](OnPlayerStateChange) și să verificați dacă starea lor veche este PLAYER_STATE_DRIVER sau PLAYER_STATE_PASSENGER și dacă noua lor stare este PLAYER_STATE_ONFOOT.
 
 :::
 

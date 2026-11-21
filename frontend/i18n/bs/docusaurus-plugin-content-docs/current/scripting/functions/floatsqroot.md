@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Izračunava kvadratni korijen zadate vrijednosti.
+Izračunava [kvadratni korijen](https://en.wikipedia.org/wiki/Square_root) zadate vrijednosti.
 
 | Ime   | Deskripcija                                      |
 | ----- | ------------------------------------------------ |
@@ -27,7 +27,7 @@ floatsqroot(25.0); // Vraća 5, zato što je 5x5 = 25
 
 :::note
 
-Ova funkcija dovodi do greške "domene" ako je ulazna vrijednost negativna. Možete koristiti floatabs da biste dobili apsolutnu (pozitivnu) vrijednost.
+Ova funkcija dovodi do greške "domene" ako je ulazna vrijednost negativna. Možete koristiti [floatabs](floatabs) da biste dobili apsolutnu (pozitivnu) vrijednost.
 
 :::
 

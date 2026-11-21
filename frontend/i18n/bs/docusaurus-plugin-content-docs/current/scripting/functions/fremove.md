@@ -29,7 +29,7 @@ fremove("Example.txt");
 
 :::note
 
-Datoteke koje su trenutno otvorene (fopen) moraju se prvo zatvoriti (fclose) da bi se izbrisale.
+Datoteke koje su trenutno otvorene ([fopen](fopen)) moraju se prvo zatvoriti ([fclose](fclose)) da bi se izbrisale.
 
 :::
 

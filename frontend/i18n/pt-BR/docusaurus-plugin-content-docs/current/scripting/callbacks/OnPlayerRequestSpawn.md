@@ -39,7 +39,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-Para previnir jogadores de spawnar em determinadas classes, a última classe vista deve ser salva em uma variavel em OnPlayerRequestClass.
+Para previnir jogadores de spawnar em determinadas classes, a última classe vista deve ser salva em uma variavel em [OnPlayerRequestClass](OnPlayerRequestClass).
 
 :::
 

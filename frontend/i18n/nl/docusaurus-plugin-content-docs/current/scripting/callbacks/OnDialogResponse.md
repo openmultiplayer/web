@@ -179,7 +179,7 @@ De parameters kunnen verschillende waarden hebben afhankelijk van de stijl van d
 
 :::tip
 
-Het gebruik van een switch-case in plaats van if-blokken is een geschikte manier om meerdere dialogs af te handelen.
+Het gebruik van een [switch-case](../language/Statements#switch) in plaats van if-blokken is een geschikte manier om meerdere dialogs af te handelen.
 
 :::
 

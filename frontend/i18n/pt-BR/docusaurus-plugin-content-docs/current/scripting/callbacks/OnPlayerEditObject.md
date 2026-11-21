@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descição
 
-Esta callback é chamada quando um jogador termina de editar um objeto (EditObject/EditPlayerObject).
+Esta callback é chamada quando um jogador termina de editar um objeto ([EditObject](../functions/EditObject)/[EditPlayerObject](../functions/EditPlayerObject)).
 
 | Name                   | Descrição                                                     |
 | ---------------------- | ------------------------------------------------------------- |

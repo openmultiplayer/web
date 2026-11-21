@@ -7,11 +7,11 @@ sidebar_label: "Dialoogstijlen"
 
 - In [OnDialogResponse](../callbacks/OnDialogResponse) zet **button1** `response` op **1**, **button2** op **0**.
 - Elke dialoog kan een optionele button 2 hebben; leeg laten verbergt deze. ESC triggert dan `response = 0`.
-- [ShowPlayerDialog](../functions/ShowPlayerDialog): kleur‑embedding werkt in `caption`, `info`, `button1`, `button2`.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): [kleur‑embedding](colorslist#kleur-embedding) werkt in `caption`, `info`, `button1`, `button2`.
 
 :::
 
-- Deze pagina beschrijft het gedrag van `ShowPlayerDialog` en `OnDialogResponse`.
+- Deze pagina beschrijft het gedrag van ShowPlayerDialog en OnDialogResponse.
 - Voor limieten: zie [Limits](../resources/limits).
 
 ## Stijl 0: `DIALOG_STYLE_MSGBOX`
@@ -20,7 +20,7 @@ sidebar_label: "Dialoogstijlen"
 
 - `\t` voegt een TAB toe.
 - `\n` nieuwe regel.
-- Kleur‑embedding reset niet op `\n` of `\t`.
+- [Kleur‑embedding](colorslist#kleur-embedding) reset niet op `\n` of `\t`.
 
 :::
 
@@ -50,7 +50,7 @@ Vergelijkbaar met INPUT.
 
 - `\t` maakt een nieuwe kolom.
 - `\n` een nieuw item.
-- Kleur‑embedding reset na `\n` en `\t`.
+- [Kleur‑embedding](colorslist#kleur-embedding) reset na `\n` en `\t`.
 
 :::
 

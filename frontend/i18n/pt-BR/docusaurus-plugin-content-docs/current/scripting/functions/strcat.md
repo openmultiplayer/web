@@ -7,7 +7,7 @@ tags: ["string"]
 
 ## Descrição
 
-Esta função concatena (junta) duas strings numa string de destino.
+Esta função [concatena](https://en.wikipedia.org/wiki/Concatenation) (junta) duas strings numa string de destino.
 
 | Nome                      | Descrição                                                     |
 | ------------------------- | ------------------------------------------------------------- |

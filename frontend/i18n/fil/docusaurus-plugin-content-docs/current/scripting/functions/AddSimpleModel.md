@@ -9,7 +9,7 @@ tags: []
 
 ## Description
 
-Nagdaragdag ng bagong custom na simpleng object model para sa pag-download. Ang mga file ng modelo ay maiimbak sa `Documents\GTA San Andreas User Files\SAMP\cache` ng player sa ilalim ng Server IP at Port folder sa isang CRC-form file name.
+Nagdaragdag ng bagong custom na simpleng object model para sa pag-download. Ang mga file ng modelo ay maiimbak sa `Documents\GTA San Andreas User Files\SAMP\cache` ng player sa ilalim ng Server IP at Port folder sa isang [CRC-form](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) file name.
 
 | Name         | Description                                                                                                                                            |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -46,7 +46,7 @@ public OnGameModeInit()
 
 :::warning
 
-Kasalukuyang walang mga paghihigpit sa kung kailan mo maaaring tawagan ang function na ito, ngunit magkaroon ng kamalayan na kung hindi mo sila tatawagan sa loob ng OnFilterScriptInit/OnGameModeInit, magkakaroon ka ng panganib na ang ilang mga manlalaro, na nasa server na, ay maaaring hindi na-download ang mga modelo.
+Kasalukuyang walang mga paghihigpit sa kung kailan mo maaaring tawagan ang function na ito, ngunit magkaroon ng kamalayan na kung hindi mo sila tatawagan sa loob ng [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit), magkakaroon ka ng panganib na ang ilang mga manlalaro, na nasa server na, ay maaaring hindi na-download ang mga modelo.
 
 :::
 

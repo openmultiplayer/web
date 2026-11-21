@@ -9,7 +9,7 @@ tags: []
 
 ## Opis
 
-Dodaje nowy niestandardowy obiekt do pobrania. Pliki modelu będą przechowywane w ścieżce `Dokumenty\GTA San Andreas User Files\SAMP\cache` w katalogu nazwanym adresem IP oraz portem serwera, z nazwami w formie sum kontrolnych CRC.
+Dodaje nowy niestandardowy obiekt do pobrania. Pliki modelu będą przechowywane w ścieżce `Dokumenty\GTA San Andreas User Files\SAMP\cache` w katalogu nazwanym adresem IP oraz portem serwera, z nazwami w formie sum kontrolnych [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nazwa        | Opis                                                                                                                      |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------- |

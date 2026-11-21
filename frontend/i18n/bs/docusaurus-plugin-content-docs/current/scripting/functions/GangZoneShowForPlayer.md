@@ -7,7 +7,7 @@ tags: ["player", "gangzone"]
 
 ## Deskripcija
 
-Prikaži gang zonu za igrača. Prvo mora biti kreirana sa GangZoneCreate.
+Prikaži gang zonu za igrača. Prvo mora biti kreirana sa [GangZoneCreate](GangZoneCreate).
 
 | Ime      | Deskripcija                                                                                                  |
 | -------- | ------------------------------------------------------------------------------------------------------------ |

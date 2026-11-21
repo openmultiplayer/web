@@ -10,7 +10,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Descrição
 
-Define a cor da caixa de um textdraw (PlayerTextDrawUseBox).
+Define a cor da caixa de um textdraw ([PlayerTextDrawUseBox](PlayerTextDrawUseBox)).
 
 | Nome              | Descrição                                                |
 | ----------------- | -------------------------------------------------------- |

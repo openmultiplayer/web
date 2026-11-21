@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Dobijte kosinus iz zadanog ugla. Ulazni kut može biti u radijanima, stupnjevima ili stupnjevima.
+Dobijte [kosinus](https://en.wikipedia.org/wiki/Sine_and_cosine) iz zadanog ugla. Ulazni kut može biti u radijanima, stupnjevima ili stupnjevima.
 
 | Ime         | Deskripcija                                                |
 | ----------- | ---------------------------------------------------------- |

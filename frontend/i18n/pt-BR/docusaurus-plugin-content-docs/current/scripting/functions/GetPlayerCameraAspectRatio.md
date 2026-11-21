@@ -8,7 +8,7 @@ tags: ["player", "camera"]
 
 ## Descrição
 
-Recupera a proporção da câmera de um jogador.
+Recupera a [proporção](https://en.wikipedia.org/wiki/Aspect_ratio_(image)) da câmera de um jogador.
 
 | Nome     | Descrição                                         |
 | -------- | ------------------------------------------------- |

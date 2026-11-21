@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Prikazuje poruku u chatu za sve igrače. Ovo je ekvivalent SendClientMessage za više igrača.
+Prikazuje poruku u chatu za sve igrače. Ovo je ekvivalent [SendClientMessage](SendClientMessage) za više igrača.
 
 | Ime             | Deskripcija                                  |
 | --------------- | -------------------------------------------- |

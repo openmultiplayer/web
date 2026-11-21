@@ -9,7 +9,7 @@ tags: []
 
 <VersionWarn version='SA-MP 0.3.DL R1' />
 
-Adiciona um novo modelo de personagem personalizado para download. Os arquivos do modelo serão armazenados em `Documentos\GTA San Andreas User Files\SAMP\cache` do jogador sob a pasta IP e Porta do Servidor em um arquivo no [formato CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
+Adiciona um novo [modelo de personagem](SetPlayerSkin) personalizado para download. Os arquivos do modelo serão armazenados em `Documentos\GTA San Andreas User Files\SAMP\cache` do jogador sob a pasta IP e Porta do Servidor em um arquivo no [formato CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nome    | Descrição                                                                                                                              |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,13 +39,13 @@ public OnGameModeInit()
 
 :::note
 
-**useartwork** deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
+**useartwork** deve ser habilitado primeiro nas [configurações do servidor](../../server/server.cfg#modelos-personalizados) para que essa função funcione.
 
 :::
 
 :::warning
 
-Atualmente não há restrições sobre quando você pode chamar esta função, mas esteja ciente de que se você não chamá-los dentro de OnFilterScriptInit ou OnGameModeInit, você corre o risco de que alguns jogadores, que já estão no servidor, não tenham baixado os modelos.
+Atualmente não há restrições sobre quando você pode chamar esta função, mas esteja ciente de que se você não chamá-los dentro de [OnFilterScriptInit](../callbacks/OnFilterScriptInit) ou [OnGameModeInit](../callbacks/OnGameModeInit), você corre o risco de que alguns jogadores, que já estão no servidor, não tenham baixado os modelos.
 
 :::
 

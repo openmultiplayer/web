@@ -7,7 +7,7 @@ tags: ["player", "3dtextlabel"]
 
 ## Açıklama
 
-Oyuncuya 3D Text Label bağlama fonksiyonu.
+Oyuncuya [3D Text Label](Create3DTextLabel) bağlama fonksiyonu.
 
 | Parametre     | Açıklama                                                                        |
 | ------------- | ------------------------------------------------------------------------------- |

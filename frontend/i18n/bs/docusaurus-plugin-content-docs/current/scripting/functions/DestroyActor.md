@@ -13,7 +13,7 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Uništi aktora koji je kreiran sa CreateActor.
+Uništi aktora koji je kreiran sa [CreateActor](CreateActor).
 
 | Ime     | Deskripcija                                        |
 | ------- | -------------------------------------------------- |

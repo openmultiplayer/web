@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-Bu işlev, OnPlayerPickUpPickup gibi kullanabileceğiniz bir pickup kimliği getirmez. Kimlik atamak istiyorsanız CreatePickup'ı kullanın.
+Bu işlev, [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup) gibi kullanabileceğiniz bir pickup kimliği getirmez. Kimlik atamak istiyorsanız CreatePickup'ı kullanın.
 
 :::
 

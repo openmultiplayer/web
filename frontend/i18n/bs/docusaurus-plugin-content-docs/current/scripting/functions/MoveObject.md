@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Premjestite objekt na novi položaj zadanom brzinom. Igrači/vozila će 'surfati' objektom dok se kreće.
+Premjestite [objekt](CreateObject) na novi položaj zadanom brzinom. Igrači/vozila će 'surfati' objektom dok se kreće.
 
 | Ime         | Deskripcija                                            |
 | ----------- | ------------------------------------------------------ |

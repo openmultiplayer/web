@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-این تابع وقتی با TogglePlayerSpectating ترکیب می‌شه (مثال بالا رو ببینین) تغییر وضعیت به `PLAYER_STATE_WASTED` انجام نمی‌ده، همونطور که اینجا لیست شده.
+این تابع وقتی با [TogglePlayerSpectating](TogglePlayerSpectating) ترکیب می‌شه (مثال بالا رو ببینین) [تغییر وضعیت](../callbacks/OnPlayerStateChange) به `PLAYER_STATE_WASTED` انجام نمی‌ده، همونطور که اینجا لیست شده.
 
 :::
 

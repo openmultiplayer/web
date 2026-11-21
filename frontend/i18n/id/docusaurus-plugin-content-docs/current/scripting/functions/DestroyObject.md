@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripsi
 
-Menghancurkan (menghapus) Object yang dibuat menggunakan CreateObject..
+Menghancurkan (menghapus) Object yang dibuat menggunakan [CreateObject](CreateObject).
 
 | Name     | Description                                                      |
 | -------- | ---------------------------------------------------------------- |

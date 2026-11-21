@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Description
 
-Sets the thickness of a textdraw's text's outline. TextDrawBackgroundColor can be used to change the color.
+Sets the thickness of a textdraw's text's outline. [TextDrawBackgroundColor](TextDrawBackgroundColor) can be used to change the color.
 
 | Name        | Description                                                    |
 | ----------- | -------------------------------------------------------------- |

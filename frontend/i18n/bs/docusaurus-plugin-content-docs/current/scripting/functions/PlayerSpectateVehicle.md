@@ -17,7 +17,7 @@ Postavlja igrača da spectate-a (nadgleda) neko vozilo. Njegova kamera će biti 
 
 ## Returns
 
-**1**: Funkcija uspješno izvršena. Imajte na umu da se uspjeh prijavljuje ako igrač nije u režimu gledatelja (TogglePlayerSpectating), ali ništa se neće dogoditi. TogglePlayerSpectating MORA se prvo koristiti.
+**1**: Funkcija uspješno izvršena. Imajte na umu da se uspjeh prijavljuje ako igrač nije u režimu gledatelja ([TogglePlayerSpectating](TogglePlayerSpectating)), ali ništa se neće dogoditi. TogglePlayerSpectating MORA se prvo koristiti.
 
 **0**: Funkcija neuspješno izvršena. Igrač, vozilo ili oboje ne postoje.
 
@@ -32,7 +32,7 @@ PlayerSpectateVehicle(playerid, vehicleid);
 
 :::warning
 
-- Red je KRITIČAN! Obavezno koristite TogglePlayerSpectating prije PlayerSpectateVehicle.
+- Red je KRITIČAN! Obavezno koristite [TogglePlayerSpectating](TogglePlayerSpectating) prije PlayerSpectateVehicle.
 - Igrač i vozilo moraju biti u istom unutrašnjosti i virtualnom svijetu da bi ova funkcija radila ispravno.
 
 :::

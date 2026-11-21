@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Verifica o nível de embriaguez do jogador. Se o nível for inferior a 2.000, o jogador está sóbrio. O nível de embriaguez do jogador diminui lentamente e automaticamente (26 níveis por segundo), mas sempre chegará a 2.000 no final. Os níveis mais elevados de embriaguez afetam a câmera do jogador e o manuseio do carro. O nível de embriaguez aumenta quando o jogador bebe de uma garrafa (você pode usar SetPlayerSpecialAction para dar garrafas).
+Verifica o nível de embriaguez do jogador. Se o nível for inferior a 2.000, o jogador está sóbrio. O nível de embriaguez do jogador diminui lentamente e automaticamente (26 níveis por segundo), mas sempre chegará a 2.000 no final. Os níveis mais elevados de embriaguez afetam a câmera do jogador e o manuseio do carro. O nível de embriaguez aumenta quando o jogador bebe de uma garrafa (você pode usar [SetPlayerSpecialAction](SetPlayerSpecialAction) para dar garrafas).
 
 | Nome | Descrição |
 | -------- | ------------------------------------------------------ |

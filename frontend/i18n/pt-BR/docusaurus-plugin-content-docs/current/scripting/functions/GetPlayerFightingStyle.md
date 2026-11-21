@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Obtenha o estilo de luta que o jogador está usando atualmente.
+Obtenha o [estilo de luta](../resources/fightingstyles) que o jogador está usando atualmente.
 
 | Nome     | Descrição                                    |
 | -------- | -------------------------------------------- |

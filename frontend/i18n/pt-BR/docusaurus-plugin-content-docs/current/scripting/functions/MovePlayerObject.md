@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Mova um objeto do jogador com uma velocidade definida. Também suporta rotação. Jogadores/veículos navegarão em objetos em movimento.
+Mova um [objeto do jogador](CreatePlayerObject) com uma velocidade definida. Também suporta rotação. Jogadores/veículos navegarão em objetos em movimento.
 
 | Nome | Descrição |
 | --------------- | ------------------------------------------------- |

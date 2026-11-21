@@ -35,7 +35,7 @@ public OnPlayerText(playerid, text[])
 
 :::note
 
-Ne možete vidjeti svoje lične chat balončiće. Isto se dešava i sa prikavčenim 3D text labelom.
+Ne možete vidjeti svoje lične chat balončiće. Isto se dešava i sa prikavčenim [3D text labelom](Attach3DTextLabelToPlayer).
 
 :::
 

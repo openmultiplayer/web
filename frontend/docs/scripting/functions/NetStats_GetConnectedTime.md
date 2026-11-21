@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-The return value is not reset to zero after changing the game mode (using the RCON command "gmx").
+The return value is not reset to zero after changing the game mode (using the RCON command "[gmx](../../server/ControllingServer#rcon-commands)").
 
 :::
 

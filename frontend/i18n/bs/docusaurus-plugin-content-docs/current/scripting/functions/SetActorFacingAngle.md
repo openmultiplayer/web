@@ -45,7 +45,7 @@ SetActorFacingAngle(MyActor, 180.0);
 
 :::note
 
-Kada kreirate aktora pomoću CreateActor-a, odredite njegov okrenuti ugao/smjer gledanja. Ovu funkciju ne morate koristiti ako kasnije ne želite promijeniti njegov ugao/smjer gledanja okretanja.
+Kada kreirate aktora pomoću [CreateActor](CreateActor)-a, odredite njegov okrenuti ugao/smjer gledanja. Ovu funkciju ne morate koristiti ako kasnije ne želite promijeniti njegov ugao/smjer gledanja okretanja.
 
 :::
 

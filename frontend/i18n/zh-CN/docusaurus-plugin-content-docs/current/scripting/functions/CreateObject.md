@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 :::note
 
-全局物体数量上限为 1000（MAX_OBJECTS），建议使用[流加载插件](https://github.com/samp-incognito/samp-streamer-plugin)突破限制
+全局物体数量上限为 1000（[MAX_OBJECTS](../resources/limits)），建议使用[流加载插件](https://github.com/samp-incognito/samp-streamer-plugin)突破限制
 
 :::
 

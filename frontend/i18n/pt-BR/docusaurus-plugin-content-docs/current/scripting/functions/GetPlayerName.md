@@ -41,7 +41,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-O nome do jogador pode ter até 24 caracteres (a partir da 0.3d R2) usando SetPlayerName. Isso é definido na a_samp.inc em MAX_PLAYER_NAME. Porém, no client só pode entrar com um nickname entre 3 e 20 caracteres, caso contrário a conexão será rejeitada e o jogador terá que sair e escolher um nome válido.
+O nome do jogador pode ter até 24 caracteres (a partir da 0.3d R2) usando [SetPlayerName](SetPlayerName). Isso é definido na a_samp.inc em MAX_PLAYER_NAME. Porém, no client só pode entrar com um nickname entre 3 e 20 caracteres, caso contrário a conexão será rejeitada e o jogador terá que sair e escolher um nome válido.
 
 :::
 

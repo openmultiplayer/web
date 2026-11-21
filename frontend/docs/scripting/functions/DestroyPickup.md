@@ -7,7 +7,7 @@ tags: ["pickup"]
 
 ## Description
 
-Destroys a pickup created with CreatePickup.
+Destroys a pickup created with [CreatePickup](CreatePickup).
 
 | Name   | Description                                                 |
 | ------ | ----------------------------------------------------------- |

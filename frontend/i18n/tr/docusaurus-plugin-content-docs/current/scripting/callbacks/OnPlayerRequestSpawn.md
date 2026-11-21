@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-Oyuncuların belirli sınıflarla ortaya çıkmasını önlemek için son görüntülenen sınıf, OnPlayerRequestClass içinde bir değişkene kaydedilmelidir.
+Oyuncuların belirli sınıflarla ortaya çıkmasını önlemek için son görüntülenen sınıf, [OnPlayerRequestClass](OnPlayerRequestClass) içinde bir değişkene kaydedilmelidir.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["object"]
 
 ## Description
 
-Change the position of an object.
+Change the position of an [object](CreateObject).
 
 | Name     | Description                                                            |
 | -------- | ---------------------------------------------------------------------- |

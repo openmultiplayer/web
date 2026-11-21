@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Zaustavi objekat koji se kreće nakon što se MoveObject koristio.
+Zaustavi objekat koji se kreće nakon što se [MoveObject](MoveObject) koristio.
 
 | Ime      | Deskripcija               |
 | -------- | ------------------------- |

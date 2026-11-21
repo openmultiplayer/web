@@ -40,7 +40,7 @@ AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, true)
 
 :::note
 
-- 在附加操作前必须确保两个物体都已创建
+- 在附加操作前必须确保两个物体都已[创建](CreateObject)
 - SA-MP 原生版本没有玩家物体版的此函数
   但 open.mp 提供了[AttachPlayerObjectToObject](AttachPlayerObjectToObject)
 

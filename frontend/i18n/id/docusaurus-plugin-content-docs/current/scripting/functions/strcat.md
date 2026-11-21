@@ -7,7 +7,7 @@ tags: ["string"]
 
 ## Deskripsi
 
-Fungsi ini menggabungkan dua buah string menjadi sebuah string.
+Fungsi ini [menggabungkan](https://en.wikipedia.org/wiki/Concatenation) dua buah string menjadi sebuah string.
 
 | Nama                  | Deskripsi                                 |
 | --------------------- | ----------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["player", "camera"]
 
 ## Descrição
 
-Anexa a câmera de um jogador a um objeto do jogador. O jogador consegue mover sua câmera enquanto ela está anexada a um objeto. Pode ser usada com MovePlayerObject e AttachPlayerObjectToVehicle.
+Anexa a câmera de um jogador a um objeto do jogador. O jogador consegue mover sua câmera enquanto ela está anexada a um objeto. Pode ser usada com [MovePlayerObject](MovePlayerObject) e [AttachPlayerObjectToVehicle](AttachPlayerObjectToVehicle).
 
 | Nome           | Descrição                                                           |
 | -------------- | ------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-O objeto do jogador deve ser criado antes de tentar anexar a câmera do jogador a ele.
+O objeto do jogador deve ser [criado](CreatePlayerObject) antes de tentar anexar a câmera do jogador a ele.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Description
 
-Creates a textdraw for a single player. This can be used as a way around the global text-draw limit.
+Creates a textdraw for a single player. This can be used as a way around the [global text-draw](TextDrawCreate) limit.
 
 | Name             | Description                                     |
 | ---------------- | ----------------------------------------------- |

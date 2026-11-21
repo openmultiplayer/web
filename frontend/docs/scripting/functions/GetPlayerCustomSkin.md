@@ -9,7 +9,7 @@ tags: ["player"]
 
 ## Description
 
-Returns the class of the players custom skin downloaded from the server.
+Returns the class of the players custom skin [downloaded from the server](AddCharModel).
 
 | Name     | Description                              |
 | -------- | ---------------------------------------- |

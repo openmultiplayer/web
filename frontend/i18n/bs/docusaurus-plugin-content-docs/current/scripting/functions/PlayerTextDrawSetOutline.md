@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Deskripcija
 
-Postavite outline za player-textdraw. Boja outline-a ne može biti promijenjena osim ako se PlayerTextDrawBackgroundColor ne koristi.
+Postavite outline za player-textdraw. Boja outline-a ne može biti promijenjena osim ako se [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor) ne koristi.
 
 | Ime      | Deskripcija                                          |
 | -------- | ---------------------------------------------------- |

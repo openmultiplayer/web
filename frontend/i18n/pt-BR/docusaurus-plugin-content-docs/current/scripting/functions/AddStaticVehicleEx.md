@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode. Diferente do AddStaticVehicle numa única maneira: permite re-spawnar após um tempo, quando o veículo estiver sem condutor.
+Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode. Diferente do [AddStaticVehicle](AddStaticVehicle) numa única maneira: permite re-spawnar após um tempo, quando o veículo estiver sem condutor.
 
 | Nome                                  | Descrição                                                                                                                                                         |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |

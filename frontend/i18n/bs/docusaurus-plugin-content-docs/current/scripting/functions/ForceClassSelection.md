@@ -33,7 +33,7 @@ if (!strcmp(cmdtext, "/class", true))
 
 :::warning
 
-Ova funkcija ne vrši promjenu stanja u PLAYER_STATE_WASTED kada se kombinira s TogglePlayerSpectating (pogledajte primjer dolje), kao što je ovdje navedeno.
+Ova funkcija ne vrši [promjenu stanja](../callbacks/OnPlayerStateChange) u PLAYER_STATE_WASTED kada se kombinira s [TogglePlayerSpectating](TogglePlayerSpectating) (pogledajte primjer dolje), kao što je ovdje navedeno.
 
 :::
 

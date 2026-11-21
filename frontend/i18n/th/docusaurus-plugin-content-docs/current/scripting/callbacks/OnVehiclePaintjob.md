@@ -36,7 +36,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 :::note
 
 - This callback is not called by ChangeVehiclePaintjob.
-- You might use OnVehicleChangePaintjob from vSync in order to know when the player **buys** the paintjob.
+- You might use OnVehicleChangePaintjob from [vSync](https://github.com/Vasily-X/vSync) in order to know when the player **buys** the paintjob.
 
 :::
 

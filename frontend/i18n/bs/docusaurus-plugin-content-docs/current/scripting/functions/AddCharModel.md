@@ -49,7 +49,7 @@ public OnGameModeInit()
 
 :::warning
 
-Trenutno ne postoje nikakva ograničenja o pozivanju ove funkcije, ali budite oprezni jer ako ih ne koristite unutar OnFilterScriptInit/OnGameModeInit, riskirate da neki igrači, koji su već na server, možda ne preuzmu modele.
+Trenutno ne postoje nikakva ograničenja o pozivanju ove funkcije, ali budite oprezni jer ako ih ne koristite unutar [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit), riskirate da neki igrači, koji su već na server, možda ne preuzmu modele.
 
 :::
 

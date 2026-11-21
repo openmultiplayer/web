@@ -29,7 +29,7 @@ public OnGameModeExit()
 
 :::tip
 
-Deze functie kan ook gebruikt worden in een filterscript om te detecteren of de gamemode verandert met RCON commands zoals changemode of gmx, omdat het veranderen van de gamemode een filterscript niet herlaadt.
+Deze functie kan ook gebruikt worden in een filterscript om te detecteren of de gamemode verandert met [RCON commands](../../server/ControllingServer#rcon-commands) zoals changemode of gmx, omdat het veranderen van de gamemode een filterscript niet herlaadt.
 
 :::
 

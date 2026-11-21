@@ -8,7 +8,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Retorna a rotação de um veículo em todos os eixos como um quatérnio.
+Retorna a rotação de um veículo em todos os eixos como um [quatérnio](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation).
 
 | Nome | Descrição |
 | --------- | ------------------------------------------------------------------------------------ |
@@ -41,7 +41,7 @@ GetVehicleRotationQuat(vehicleid, w, x, y, z);
 
 :::note
 
-Não existe variação ‘definida’ desta função; você não pode SET a rotação de um veículo (além do ângulo Z)
+Não existe variação ‘definida’ desta função; você não pode SET a rotação de um veículo (além do [ângulo Z](SetVehicleZAngle))
 
 :::
 

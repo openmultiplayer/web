@@ -7,7 +7,7 @@ tags: ["玩家", "检查点"]
 
 ## 描述
 
-为玩家设置检查点（红色圆柱体），同时在小地图显示红色标记。当玩家进入检查点时，将触发 OnPlayerEnterCheckpoint 回调并执行相关操作。
+为玩家设置检查点（红色圆柱体），同时在小地图显示红色标记。当玩家进入检查点时，将触发 [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint) 回调并执行相关操作。
 
 | 参数          | 说明                  |
 | ------------- | --------------------- |

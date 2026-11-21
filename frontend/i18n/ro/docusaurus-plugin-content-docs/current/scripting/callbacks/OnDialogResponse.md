@@ -7,7 +7,7 @@ tags: []
 
 ## Descriere
 
-Acest callback este apelat când un jucător răspunde unui dialog afișat prin ShowPlayerDialog, după apăsarea unui buton, apăsarea de ENTER/ESC sau dublu-click pe un element al unei liste (dacă s-a folosit un dialog de tip listă).
+Acest callback este apelat când un jucător răspunde unui dialog afișat prin [ShowPlayerDialog](../functions/ShowPlayerDialog), după apăsarea unui buton, apăsarea de ENTER/ESC sau dublu-click pe un element al unei liste (dacă s-a folosit un dialog de tip listă).
 
 | Nume        | Descriere                                                                                                                    |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |

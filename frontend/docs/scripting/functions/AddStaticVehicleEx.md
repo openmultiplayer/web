@@ -9,7 +9,7 @@ tags: ["vehicle"]
 
 Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
 
-Differs from AddStaticVehicle in only one way: allows a respawn time to be set for when the vehicle is left unoccupied by the driver.
+Differs from [AddStaticVehicle](AddStaticVehicle) in only one way: allows a respawn time to be set for when the vehicle is left unoccupied by the driver.
 
 | Name                                   | Description                                                                                         |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["object"]
 
 ## Description
 
-Destroys (removes) an object that was created using CreateObject.
+Destroys (removes) an object that was created using [CreateObject](CreateObject).
 
 | Name     | Description                                                |
 | -------- | ---------------------------------------------------------- |

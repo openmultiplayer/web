@@ -34,7 +34,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-Da biste uklonili pojedinačno oružje sa igrača, postavite njegovu municiju na 0 pomoću SetPlayerAmmo.
+Da biste uklonili pojedinačno oružje sa igrača, postavite njegovu municiju na 0 pomoću [SetPlayerAmmo](SetPlayerAmmo).
 
 :::
 

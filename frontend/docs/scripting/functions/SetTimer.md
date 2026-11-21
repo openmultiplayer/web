@@ -49,7 +49,7 @@ public OneSecondTimer()
 :::note
 
 - Timer IDs are never used twice. You can use [KillTimer](KillTimer) on a timer ID and it won't matter if it's running or not.
-- The function that should be called, must be public, meaning it has to be forwarded.
+- The function that should be called, must be [public](../language/reference/Functions#-public-functions-function-main), meaning it has to be [forwarded](../language/reference/Functions#-forward-declarations).
 
 :::
 

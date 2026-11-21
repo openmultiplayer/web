@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Beschrijving
 
-Haal de ping van een speler op (round‑trip tijd in milliseconden).
+Haal de [ping](https://en.wikipedia.org/wiki/Ping_(networking_utility)) van een speler op (round‑trip tijd in milliseconden).
 
 | Naam     | Beschrijving      |
 | -------- | ----------------- |

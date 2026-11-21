@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ova funkcija vam omogućuje da dobijete logaritam float vrijednosti.
+Ova funkcija vam omogućuje da dobijete [logaritam](https://en.wikipedia.org/wiki/Logarithm) float vrijednosti.
 
 | Ime         | Deskripcija                             |
 | ----------- | --------------------------------------- |

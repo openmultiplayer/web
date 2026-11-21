@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripsi
 
-Memindahkan Object ke posisi baru dengan kecepatan yang ditentukan. Pemain/kendaraan akan 'menjelajah' Object saat bergerak.
+Memindahkan [Object](CreateObject) ke posisi baru dengan kecepatan yang ditentukan. Pemain/kendaraan akan 'menjelajah' Object saat bergerak.
 
 | Name        | Description                                |
 | ----------- | ------------------------------------------ |

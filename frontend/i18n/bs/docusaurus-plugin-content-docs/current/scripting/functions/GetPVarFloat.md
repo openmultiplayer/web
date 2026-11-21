@@ -33,7 +33,7 @@ public LoadPos(playerid)
 
 :::note
 
-Varijable se resetiraju tek nakon što se pozove OnPlayerDisconnect, tako da su vrijednosti i dalje dostupne u OnPlayerDisconnect.
+Varijable se resetiraju tek nakon što se pozove [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect), tako da su vrijednosti i dalje dostupne u OnPlayerDisconnect.
 
 :::
 

@@ -29,8 +29,8 @@ public OnGameModeExit()
 
 :::tip
 
-- Această funcție poate fi, de asemenea, utilizată într-un filterscript pentru a detecta dacă modul de joc se schimbă cu comenzi RCON precum changemode sau gmx, deoarece schimbarea modului de joc nu reîncarcă un filterscript.
-- Când utilizați OnGameModeExit împreună cu comanda consolei „rcon gmx”, rețineți că există potențialul de apariție a erorilor clientului, un exemplu în acest sens este apelurile excesive la RemoveBuildingForPlayer în timpul OnGameModeInit, care ar putea duce la o blocare a clientului.
+- Această funcție poate fi, de asemenea, utilizată într-un filterscript pentru a detecta dacă modul de joc se schimbă cu [comenzi RCON](../../server/ControllingServer#comenzi-rcon) precum changemode sau gmx, deoarece schimbarea modului de joc nu reîncarcă un filterscript.
+- Când utilizați OnGameModeExit împreună cu comanda consolei „rcon gmx”, rețineți că există potențialul de apariție a erorilor clientului, un exemplu în acest sens este apelurile excesive la RemoveBuildingForPlayer în timpul [OnGameModeInit](OnGameModeInit), care ar putea duce la o blocare a clientului.
 - Acest callback NU va fi apelat dacă serverul se blochează sau procesul este oprit prin alte mijloace, cum ar fi utilizarea comenzii Linux kill.
 
 :::

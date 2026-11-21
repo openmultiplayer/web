@@ -36,14 +36,14 @@ public OnPlayerText(playerid, text[])
 
 :::note
 
-Você não pode ver seus próprios balões de bate-papo. O mesmo se aplica às etiquetas de texto 3D anexadas.
+Você não pode ver seus próprios balões de bate-papo. O mesmo se aplica às [etiquetas de texto 3D](Attach3DTextLabelToPlayer) anexadas.
 
 :::
 
 :::tip
 
-- Você pode usar a incorporação de cores para várias cores na mensagem.
-- Usar '-1' como cor tornará o texto branco (pela simples razão de que -1, quando representado em notação hexadecimal, é 0xFFFFFFFF).
+- Você pode usar a [incorporação de cores](../resources/colorslist#color-embedding) para várias cores na mensagem.
+- Usar '-1' como cor tornará o texto branco (pela simples razão de que -1, quando representado em [notação hexadecimal](../resources/hexcolors), é 0xFFFFFFFF).
 
 :::
 

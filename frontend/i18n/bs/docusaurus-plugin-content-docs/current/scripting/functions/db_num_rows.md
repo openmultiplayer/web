@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## Deskripcija
 
-Vraća broj redaka iz db_query.
+Vraća broj redaka iz [db_query](db_query).
 
 | Ime               | Deskripcija          |
 | ----------------- | -------------------- |

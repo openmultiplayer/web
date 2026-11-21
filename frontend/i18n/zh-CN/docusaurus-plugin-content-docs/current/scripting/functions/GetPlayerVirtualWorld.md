@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-虚拟世界与室内空间（Interior）是两个独立的概念
+虚拟世界与[室内空间](GetPlayerInterior)（Interior）是两个独立的概念
 
 :::
 

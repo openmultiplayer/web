@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripcija
 
-Koristite ovu funkciju prije nego što se bilo koji igrač poveže (OnGameModeInit) kako biste svim klijentima rekli da će skripta kontrolirati motore i svjetla vozila.Ovo sprečava da igra automatski uključuje/isključuje motor kada igrači ulaze/izlaze iz vozila i kada se farovi automatski pale kad je mrak.
+Koristite ovu funkciju prije nego što se bilo koji igrač poveže ([OnGameModeInit](../callbacks/OnGameModeInit)) kako biste svim klijentima rekli da će skripta kontrolirati motore i svjetla vozila. Ovo sprečava da igra automatski uključuje/isključuje motor kada igrači ulaze/izlaze iz vozila i kada se farovi automatski pale kad je mrak.
 
 ## Primjeri
 

@@ -68,7 +68,7 @@ tags: []
 **Notities:**
 
 1. Veel voertuigmodellen kunnen clientperformance beïnvloeden.
-2. Boven ~255 met kleurcodes kan de client crashen.
+2. Boven ~255 met [kleurcodes](gametextstyles#tekstkleuren) kan de client crashen.
 3. Alle textdraws tegelijk tonen kan, maar is niet aan te raden.
 4. Gebruik een [streamer](https://github.com/samp-incognito/samp-streamer-plugin) om limieten te omzeilen (nabij speler creëren).
 5. Door clientlimieten worden maximaal 51 actors tegelijk getoond.

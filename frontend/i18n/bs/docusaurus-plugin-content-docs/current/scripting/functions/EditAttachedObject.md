@@ -48,7 +48,7 @@ Kameru možete pomicati tijekom uređivanja pritiskom i držanjem **razmaknice**
 
 :::warning
 
-Igrači će moći skalirati objekte do vrlo velike ili negativne vrijednosti. Ograničenja treba uspostaviti pomoću OnPlayerEditAttachedObject za prekid uređivanja ili isjecanja vrijednosti skale.
+Igrači će moći skalirati objekte do vrlo velike ili negativne vrijednosti. Ograničenja treba uspostaviti pomoću [OnPlayerEditAttachedObject](../callbacks/OnPlayerEditAttachedObject) za prekid uređivanja ili isjecanja vrijednosti skale.
 
 :::
 

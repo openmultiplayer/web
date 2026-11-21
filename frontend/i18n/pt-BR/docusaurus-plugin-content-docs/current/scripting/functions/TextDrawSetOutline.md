@@ -8,7 +8,7 @@ tags: ["textdraw"]
 
 ## Descrição
 
-Define a espessura do contorno do texto de um textdraw. TextDrawBackgroundColor pode ser usado para alterar a cor.
+Define a espessura do contorno do texto de um textdraw. [TextDrawBackgroundColor](TextDrawBackgroundColor) pode ser usado para alterar a cor.
 
 | Nome | Descrição |
 | ----------- | -------------------------------------------------------------- |

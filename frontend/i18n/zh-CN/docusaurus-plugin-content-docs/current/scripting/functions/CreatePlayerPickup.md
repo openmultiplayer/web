@@ -59,7 +59,7 @@ public OnPlayerConnect(playerid)
 
 **已知缺陷**：
 
-- 当 X 或 Y 坐标小于-4096.0 或大于 4096.0 时，拾取物将不可见且不会触发 OnPlayerPickUpPlayerPickup 回调
+- 当 X 或 Y 坐标小于-4096.0 或大于 4096.0 时，拾取物将不可见且不会触发 [OnPlayerPickUpPlayerPickup](../callbacks/OnPlayerPickUpPlayerPickup) 回调
 
 :::
 

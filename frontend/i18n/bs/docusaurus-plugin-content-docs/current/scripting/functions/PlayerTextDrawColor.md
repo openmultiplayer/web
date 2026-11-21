@@ -43,7 +43,7 @@ Boje Gametext-a možete koristiti i u textdrawu.
 
 :::note
 
-Textdraw mora se ponovo prikazati za igrača kako bi se ažurirala boja.
+Textdraw mora se [ponovo prikazati](PlayerTextDrawShow) za igrača kako bi se ažurirala boja.
 
 :::
 

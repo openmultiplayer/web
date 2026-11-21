@@ -28,7 +28,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-One common use for GetTickCount is for benchmarking. It can be used to calculate how much time some code takes to execute.
+One common use for GetTickCount is for [benchmarking](https://en.wikipedia.org/wiki/Benchmark_(computing)). It can be used to calculate how much time some code takes to execute.
 
 :::
 

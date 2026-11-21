@@ -45,7 +45,7 @@ public OnGameModeInit()
 
 :::warning
 
-În prezent, nu există restricții cu privire la momentul în care puteți apela această funcție, dar rețineți că, dacă nu le apelați în OnFilterScriptInit / OnGameModeInit, aveți riscul ca unii jucători, care sunt deja pe server, să nu fi descărcat modelele.
+În prezent, nu există restricții cu privire la momentul în care puteți apela această funcție, dar rețineți că, dacă nu le apelați în [OnFilterScriptInit](../callbacks/OnFilterScriptInit) / [OnGameModeInit](../callbacks/OnGameModeInit), aveți riscul ca unii jucători, care sunt deja pe server, să nu fi descărcat modelele.
 
 :::
 

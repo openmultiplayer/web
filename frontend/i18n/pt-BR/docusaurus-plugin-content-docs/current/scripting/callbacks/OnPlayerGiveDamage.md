@@ -55,7 +55,7 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 
 :::tip
 
-Se deseja impedir que um determinado player cause dano a outro use SetPlayerTeam.
+Se deseja impedir que um determinado player cause dano a outro use [SetPlayerTeam](../functions/SetPlayerTeam).
 
 :::
 

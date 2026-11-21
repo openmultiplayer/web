@@ -41,7 +41,7 @@ Ovaj callback pozvat će i NPC.
 
 :::tip
 
-Kako biste spriječili da se igrači spawnaju (stvore) sa određenim klasama, zadnja viđena klasa mora biti sačuvana u varijabli u OnPlayerRequestClass.
+Kako biste spriječili da se igrači spawnaju (stvore) sa određenim klasama, zadnja viđena klasa mora biti sačuvana u varijabli u [OnPlayerRequestClass](OnPlayerRequestClass).
 
 :::
 

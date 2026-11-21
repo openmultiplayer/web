@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Opis
 
-Odpowiednik AttachObjectToPlayer, tylko dla obiektów stworzonych dla danego gracza.
+Odpowiednik [AttachObjectToPlayer](AttachObjectToPlayer), tylko dla obiektów stworzonych dla danego gracza.
 
 | Nazwa         | Opis                                                 |
 | ------------- | ---------------------------------------------------- |

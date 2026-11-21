@@ -7,7 +7,7 @@ tags: ["player", "gangzone"]
 
 ## Descrição
 
-Mostra a gangzone para um jogador. Deve ser criado com GangZoneCreate primeiro.
+Mostra a gangzone para um jogador. Deve ser criado com [GangZoneCreate](GangZoneCreate) primeiro.
 
 | Nome     | Descrição                                                                                                            |
 | -------- | -------------------------------------------------------------------------------------------------------------------- |

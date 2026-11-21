@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Dobijte obrnutu vrijednost tangente luka u radijanima.
+Dobijte obrnutu vrijednost [tangente](https://en.wikipedia.org/wiki/Trigonometric_functions) luka u radijanima.
 
 | Ime         | Deskripcija             |
 | ----------- | ----------------------- |

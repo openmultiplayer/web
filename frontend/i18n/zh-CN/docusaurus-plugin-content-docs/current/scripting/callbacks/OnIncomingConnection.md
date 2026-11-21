@@ -7,7 +7,7 @@ tags: []
 
 ## 描述
 
-当IP地址尝试连接服务器时触发此回调。如需阻止连接，请使用BlockIpAddress函数。
+当IP地址尝试连接服务器时触发此回调。如需阻止连接，请使用[BlockIpAddress](../functions/BlockIpAddress)函数。
 
 | 参数         | 说明                 |
 | ------------ | -------------------- |

@@ -7,7 +7,7 @@ tags: []
 
 ## Descrição
 
-Esta callback é chamada quando um jogador responde a um dialog mostrado usando ShowPlayerDialog ao clicar em um botão, pressionar ENTER/ESC ou dar clique duplo em um item da lista. (se estiver usando o formato lista).
+Esta callback é chamada quando um jogador responde a um dialog mostrado usando [ShowPlayerDialog](../functions/ShowPlayerDialog) ao clicar em um botão, pressionar ENTER/ESC ou dar clique duplo em um item da lista. (se estiver usando o formato lista).
 
 | Parâmetro   | Descrição                                                                                                                                |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- |

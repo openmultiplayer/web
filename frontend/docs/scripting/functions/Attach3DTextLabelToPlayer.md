@@ -7,7 +7,7 @@ tags: ["player", "3dtextlabel"]
 
 ## Description
 
-Attach a 3D text label to a player.
+Attach a [3D text label](Create3DTextLabel) to a player.
 
 | Name          | Description                                                           |
 | ------------- | --------------------------------------------------------------------- |

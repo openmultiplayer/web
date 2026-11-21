@@ -9,7 +9,7 @@ tags: ["custom model", "simple model"]
 
 ## توضیحات
 
-مدل object ساده سفارشی جدیدی برای دانلود اضافه می‌کند. فایل‌های مدل در `Documents\GTA San Andreas User Files\SAMP\cache` بازیکن در پوشه IP و Port سرور با نام فایل به شکل CRC ذخیره خواهند شد.
+مدل object ساده سفارشی جدیدی برای دانلود اضافه می‌کند. فایل‌های مدل در `Documents\GTA San Andreas User Files\SAMP\cache` بازیکن در پوشه IP و Port سرور با نام فایل به شکل [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) ذخیره خواهند شد.
 
 | نام                    | توضیحات                                                                                                            |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 :::note
 
-- ابتدا باید **useartwork** یا **artwork.enable** در تنظیمات سرور فعال شود تا این کار کند.
+- ابتدا باید **useartwork** یا **artwork.enable** در [تنظیمات سرور](../../server/server.cfg#مدلهای-سفارشی) فعال شود تا این کار کند.
 - وقتی `virtualworld` تنظیم شود، مدل‌ها یک بار دانلود خواهند شد که بازیکن وارد دنیای خاص شود.
 
 :::

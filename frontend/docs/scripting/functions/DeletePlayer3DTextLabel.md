@@ -7,7 +7,7 @@ tags: ["player", "3dtextlabel"]
 
 ## Description
 
-Destroy a 3D text label that was created using CreatePlayer3DTextLabel.
+Destroy a 3D text label that was created using [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel).
 
 | Name                | Description                                         |
 | ------------------- | --------------------------------------------------- |

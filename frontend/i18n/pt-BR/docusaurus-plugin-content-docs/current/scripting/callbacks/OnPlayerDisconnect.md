@@ -59,7 +59,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::note
 
-Algumas funções podem não funcionar corretamente quando usadas nesta callback pois o jogador já está desconectado quando a callback é chamada. Isso significa que você não pode ter informações inequívocas de funções como GetPlayerIp e GetPlayerPos. (Corrigido em open.mp)
+Algumas funções podem não funcionar corretamente quando usadas nesta callback pois o jogador já está desconectado quando a callback é chamada. Isso significa que você não pode ter informações inequívocas de funções como [GetPlayerIp](../functions/GetPlayerIp) e [GetPlayerPos](../functions/GetPlayerPos). (Corrigido em open.mp)
 
 :::
 

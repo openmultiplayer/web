@@ -43,7 +43,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-- Bu fonksiyon, yalnızca gecikme telafisi **etkinleştirildiğinde** çağrılır.
+- Bu fonksiyon, yalnızca [gecikme telafisi](../../server/LagCompensation) **etkinleştirildiğinde** çağrılır.
 - **İsabet türü** eğer:
   - `BULLET_HIT_TYPE_NONE` ise : **fX**, **fY** ve **fZ** parametreleri normal koordinatlardır, eğer hiçbir şey vurulmadıysa koordinatlar için 0.0 döner. (örneğin, merminin ulaşamadığı uzak nesne)
   - Diğerleri ise : **fX**, **fY** ve **fZ**, **hitid**'ye göre ofsetlerdir.

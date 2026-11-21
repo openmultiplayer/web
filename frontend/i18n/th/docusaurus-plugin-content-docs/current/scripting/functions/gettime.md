@@ -17,7 +17,7 @@ Get the current server time, which will be stored in the variables &hour, &minut
 
 ## ส่งคืน
 
-The function itself returns a Unix Timestamp.
+The function itself returns a [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 ## ตัวอย่าง
 

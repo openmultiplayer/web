@@ -56,7 +56,7 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 
 :::tip
 
-Ako želite spriječiti da određeni igrači povrjeđuju, koristite `SetPlayerTeam`.
+Ako želite spriječiti da određeni igrači povrjeđuju, koristite [SetPlayerTeam](../functions/SetPlayerTeam).
 
 :::
 

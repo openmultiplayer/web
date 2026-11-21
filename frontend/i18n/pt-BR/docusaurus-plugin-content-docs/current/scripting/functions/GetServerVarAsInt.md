@@ -8,7 +8,7 @@ tags: []
 
 :::warning
 
-Esta função, a partir de 0.3.7 R2, está obsoleta. Consulte GetConsoleVarAsInt
+Esta função, a partir de 0.3.7 R2, está obsoleta. Consulte [GetConsoleVarAsInt](GetConsoleVarAsInt)
 
 :::
 
