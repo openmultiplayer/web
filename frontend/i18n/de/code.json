@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Vollständig abwärtskompatibel mit bestehenden Skripten und Clients"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Du hast eine alte AMX-Datei? Lade sie direkt auf den open.mp-Server und spiele mit Freunden im SA-MP-Client. In der Dokumentation erfährst du, wie du deinen Code verbessern kannst."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Erste Schritte"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Neues, verbessertes Skriptsystem"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp unterstützt vorhandene SA-MP-Skripte und -Plugins. Eine moderne API bietet Datenstrukturen, asynchrone Ein- und Ausgabe und mehr für bessere Mods."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Mehr erfahren"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Entwicklerfreundlich"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Wir entwickeln open.mp mit einer einheitlichen API, aktueller Dokumentation, einer hilfsbereiten Community und vollständig offenem Quellcode. Beiträge sind willkommen."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Mitwirken"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Neues, verbessertes Skriptsystem"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Pawn bleibt erhalten. Ein neuer Compiler macht deinen Code robuster, und zusätzliche Funktionen erweitern die Möglichkeiten von Server und Client."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Die Verbesserungen kennenlernen"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Von der Community entwickelt"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Der Server ist vollständig quelloffen. Kleine wie große Beiträge sind willkommen. Hilf bei der nächsten Version oder melde Fehler, die du findest. Dein Feedback zählt."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "GitHub-Organisation besuchen"
+  },
+  "feature.cppApi.title": {
+    "message": "Erweiterbare C++-API"
+  },
+  "feature.cppApi.description": {
+    "message": "Nutze alle Serverfunktionen von Pawn und zusätzlich C++-Bibliotheken und -Frameworks. Auf GitHub kannst du den Server mitverbessern."
+  },
+  "feature.cppApi.linkText": {
+    "message": "SDK-Repository ansehen"
+  },
+  "partners.server.stats": {
+    "message": "{players} Spieler auf {servers} Servern, im Schnitt {average} Spieler pro Server."
+  },
+  "servers.sort.relevance": {
+    "message": "Relevanz"
+  },
+  "servers.sort.players": {
+    "message": "Spieler"
+  },
+  "servers.search.placeholder": {
+    "message": "Nach IP oder Name suchen"
+  },
+  "partners.note": {
+    "message": "Wie angekündigt nimmt das Partnerprogramm derzeit keine Bewerbungen an. Server mit reserviertem Platz können noch teilnehmen. Andere Fragen kannst du auf unserem Discord stellen."
+  },
+  "announcement.title": {
+    "message": "Eine neue Version des open.mp-Servers und -Launchers ist verfügbar!"
+  },
+  "announcement.link": {
+    "message": "Hier weiterlesen"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Die Seite ist abgestürzt.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Seite nicht gefunden",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Wir konnten nicht finden, wonach Sie gesucht haben.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Bitte kontaktieren Sie den Besitzer der Seite, die Sie mit der ursprünglichen URL verlinkt hat, und teilen Sie ihm mit, dass der Link nicht mehr funktioniert.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "hinweis",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tipp",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "gefahr",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "Information",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "vorsicht",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Zurück nach oben scrollen",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archiv",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archiv",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navigation der Blog-Listenseite",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Neuere Einträge",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Ältere Einträge",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Eine Minute Lesezeit|{readingTime} Minuten Lesezeit",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Schlagwörter",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "Der open.mp-Server {version} ist verfügbar und bringt Fehlerkorrekturen, Leistungsverbesserungen und neue Funktionen!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "Diese Version ermöglicht neue Steuerungsfunktionen für NPC-Fahrzeuge, verbessert deren Bewegung und behebt Netzwerk- und Skriptfehler."
+  },
+  "announcement.changelog": {
+    "message": "Änderungen am Server"
+  },
+  "announcement.download": {
+    "message": "Server herunterladen"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Auch der Launcher wurde aktualisiert!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "Der Launcher verbessert das Overlay im Spiel, die Unterstützung für Grafikmods und die Verbindungsstabilität."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Der open.mp-Launcher {version} ist verfügbar!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Der open.mp-Server {version} ist verfügbar!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Der open.mp-Server {serverVersion} und der Launcher {launcherVersion} sind verfügbar!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Neues im Launcher"
+  },
+  "announcement.dismiss": {
+    "message": "Diese Meldung schließen"
+  },
+  "homepage.heroDescription": {
+    "message": "Eine neue Mehrspieler-Mod für Grand Theft Auto: San Andreas, die {compatibility} mit {samp} ist."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "vollständig kompatibel"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Launcher herunterladen 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Server herunterladen 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Dokumentation 📜"
+  },
+  "animations.title": {
+    "message": "open.mp-Animationsvorschau"
+  },
+  "animations.library": {
+    "message": "Bibliothek:"
+  },
+  "animations.selectLibrary": {
+    "message": "Bibliothek auswählen …"
+  },
+  "animations.animation": {
+    "message": "Animation:"
+  },
+  "animations.selectAnimation": {
+    "message": "Animation auswählen …"
+  },
+  "animations.index": {
+    "message": "Index:"
+  },
+  "animations.frames": {
+    "message": "Einzelbilder:"
+  },
+  "animations.duration": {
+    "message": "Dauer:"
+  },
+  "animations.seconds": {
+    "message": "Sekunden"
+  },
+  "animations.description": {
+    "message": "Beschreibung:"
+  },
+  "animations.notes": {
+    "message": "Anmerkungen:"
+  },
+  "animations.videoCredits": {
+    "message": "Videonachweis:"
+  },
+  "animations.usageExamples": {
+    "message": "Anwendungsbeispiele:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Wähle oben eine Animation aus, um eine Vorschau zu sehen."
+  },
+  "animations.browsePrompt": {
+    "message": "Durchsuche alle verfügbaren Animationen und sieh sie dir an."
+  },
+  "animations.usedByFunctions": {
+    "message": "Diese Animationen werden von den Funktionen ApplyAnimation/ApplyActorAnimation verwendet."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Dem verdammten Zug auf der Spur …"
+  },
+  "serverRow.copied": {
+    "message": "KOPIERT"
+  },
+  "serverRow.copy": {
+    "message": "KOPIEREN"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Partnerserver!"
+  },
+  "serverRow.ompTitle": {
+    "message": "open.mp-Server"
+  },
+  "serverRow.players": {
+    "message": "Spieler"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Zurück zu den Servern"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← Zurück zu den Partnerservern"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Schnell beitreten"
+  },
+  "serverInfo.noDescription": {
+    "message": "Dieser Server hat keine Beschreibung"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Spieler online"
+  },
+  "serverInfo.modVersion": {
+    "message": "Mod-Version"
+  },
+  "serverInfo.language": {
+    "message": "Sprache"
+  },
+  "serverInfo.rule": {
+    "message": "Regel"
+  },
+  "serverInfo.value": {
+    "message": "Wert"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Vor {time} aktualisiert"
+  },
+  "serverInfo.notFound": {
+    "message": "Dieser Server wurde nicht gefunden. Er ist möglicherweise offline oder nicht mehr gelistet."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Dokumentation"
+  },
+  "theme.footer.title.Community": {
+    "message": "Community"
+  },
+  "theme.footer.title.More": {
+    "message": "Mehr"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Einführung"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Umstieg auf open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Spenden"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Server"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Blog"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Animationen"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "UID-Generator"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Copyright © {year} open.mp. Erstellt mit Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "Dokumentation"
+  },
+  "navbar.item.Blog": {
+    "message": "Blog"
+  },
+  "navbar.item.Forums": {
+    "message": "Foren"
+  },
+  "navbar.item.Servers": {
+    "message": "Server"
+  },
+  "navbar.item.Partners": {
+    "message": "Partner"
+  },
+  "navbar.item.Donate": {
+    "message": "Spenden"
+  },
+  "serverInfo.copied": {
+    "message": "Kopiert",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Kopieren",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Spielmodus",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Benachrichtigung schließen",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Animationen",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Interaktive open.mp-Animationsvorschau (SA-MP) mit Videos",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Video nicht verfügbar",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Für Spieler",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Für Akteure",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Eine Mehrspieler-Mod für Grand Theft Auto: San Andreas, die vollständig mit San Andreas Multiplayer abwärtskompatibel ist",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Hinweis zum Partnerprogramm schließen",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Partnerserver",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Liste der San-Andreas-Server mit open.mp oder SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Kopiert",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "Das UID-Makro wurde in die Zwischenablage kopiert.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "UID-Generator",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Erstelle eine UID als eindeutige Kennung für IComponent oder IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Verbinden",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Dein Server",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Server",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Adresse",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Spieler",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Spitzname",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "SA-MP-Version",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Favoriten",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Internet",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Partner",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Zuletzt besucht",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Spitzname…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Nach Servername oder Spielmodus suchen",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Name",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Ping",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Spielmodus",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Verbinden",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Zu Favoriten hinzufügen",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Serverinformationen kopieren",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Regel",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Wert",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Filter:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Nur open.mp-Server",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Server mit Spielern",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Server ohne Passwort",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Sprache:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Zu den Favoriten hinzugefügt!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "Der open.mp-Launcher zeigt eine Liste mit Beispielservern",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Spieler",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Punktestand",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "KOPIEREN",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "Auch NPCs können diesen Callback aufrufen.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "Funktion",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "Callback",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Diese {name} wurde in {version} hinzugefügt und funktioniert in älteren Versionen nicht!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "{serverName} wurde zur Warteliste hinzugefügt. Falls der Server nach 48 Stunden noch nicht erscheint, melde dich auf Discord!",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Server eingereicht!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Status {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Einreichen fehlgeschlagen!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "Beim Einreichen des Servers ist ein Fehler aufgetreten",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Fehler",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "Seiten der Serverliste",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Vorherige Seite",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Nächste Seite",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "Name",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Spielmodus",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Sprache",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Alle Sprachen",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "Dialog zum Hinzufügen eines Servers schließen",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "Zurück",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Weiter",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "open.mp-Launcher",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Versionen des open.mp-Launchers herunterladen",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Spiele GTA San Andreas im Mehrspielermodus auf open.mp- und SA-MP-Servern.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "open.mp-Server",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Versionen des open.mp-Servers herunterladen",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Betreibe deinen eigenen Multiplayer-Server für GTA San Andreas.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Server",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Liste der San-Andreas-Server mit open.mp und SA-MP",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "NEUESTE VERSION",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Veröffentlicht am {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Highlights",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Vollständiges Änderungsprotokoll ansehen",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Version auf GitHub ansehen",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Version auf GitHub ansehen",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* Die DynSSL-Version setzt voraus, dass libssl auf deiner Linux-Distribution installiert ist.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Ältere Versionen ausblenden",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "{count} ältere Versionen ansehen",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Alle Versionen sind quelloffen. Kompiliere den Quellcode oder lade direkt von GitHub herunter.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Von GitHub herunterladen",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "Seite nicht gefunden",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Screenshot der Zugmission in GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Startseite",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Dokumentation",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Server",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog Post Seiten Navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Neuer Post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Älterer Post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Alle Tags anzeigen",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Systemmodus",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "heller Modus",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dunkler Modus",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Umschalten zwischen dunkler und heller Ansicht (momentan {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Brotkrümelnavigation",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Dokumentation Seiten",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Zurück",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Weiter",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Ein doc getaggt|{count} docs getaggt",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} mit \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Das ist die unveröffentlichte Dokumentation für {siteTitle} {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Das ist die Dokumentation für {siteTitle} {versionLabel} und wird nicht weiter gewartet.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Für die aktuellste Dokumentation bitte auf {latestVersionLink} ({versionLabel}) gehen.",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "letzte Version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Diese Seite bearbeiten",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direkter Link zur {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " am {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " von {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Letztes Update{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versionen",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Schlagwörter:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Schließen",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "warnung",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigation der letzten Beiträge im Blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Seitenleistenkategorie „{label}“ ausklappen",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Seitenleistenkategorie „{label}“ einklappen",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(öffnet in neuem Tab)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Hauptnavigation",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Sprachen",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Auf dieser Seite",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Mehr lesen",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Mehr lesen über {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopieren",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Kopiert",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "In die Zwischenablage kopieren",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Zeilenumbruch umschalten",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Startseite",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Seitenleiste einklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Seitenleiste einklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Dokumentationsseitenleiste",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Navigationsleiste schließen",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Zurück zum Hauptmenü",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Navigationsleiste ein- oder ausblenden",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Auswahlmenü öffnen",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Auswahlmenü schließen",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Seitenleiste ausklappen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Seitenleiste ausklappen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Alle {count} Ergebnisse anzeigen"
+  },
+  "theme.SearchBar.label": {
+    "message": "Suche",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Suchanfrage löschen",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Abbrechen",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Dokumentation durchsuchen",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Weitere Frage stellen...",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "Antwortet...",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "suchen",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "eingeben",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Suche",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Zurück zur Stichwortsuche",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Zurück zur Stichwortsuche",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Zuletzt gesucht",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Keine letzten Suchanfragen",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Diese Suche speichern",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Diese Suche aus dem Verlauf entfernen",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Favoriten",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Diese Suche aus den Favoriten entfernen",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Letzte Gespräche",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Dieses Gespräch aus dem Verlauf entfernen",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Ergebnisse konnten nicht geladen werden",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Überprüfe deine Netzwerkverbindung.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "KI fragen: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "Antworten werden von KI generiert und können Fehler enthalten. Bitte überprüfen Sie die Antworten.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Verwandte Quellen",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "Denkt nach...",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Kopieren",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Kopiert!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Kopieren",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Gefällt mir",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Gefällt mir nicht",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Danke für Ihr Feedback!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Suche...",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Suche nach ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "Gesucht nach ",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "to select",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Frage absenden",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Eingabetaste",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "to navigate",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Pfeil nach oben",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Pfeil nach unten",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Schließen",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Esc-Taste",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Bereitgestellt von",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Zurück zur Suche",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "No results for",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Suche stattdessen nach",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Sollte diese Suche Ergebnisse liefern?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Sag uns Bescheid.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Dokumentation durchsuchen",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Ein Dokument gefunden|{count} Dokumente gefunden",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Suchergebnisse für \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Suche in der Dokumentation",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Geben Sie hier Ihre Suche ein",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Suche",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Unterstützt von Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Es wurden keine Ergebnisse gefunden",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Neue Ergebnisse abrufen...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Ein Post|{count} Posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} getaggt mit \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Autoren",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Alle Autoren anzeigen",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Dieser Autor hat noch keine Beiträge veröffentlicht.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Nicht gelistete Seite",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Diese Seite ist nicht gelistet. Suchmaschinen erfassen sie nicht. Sie ist nur über einen direkten Link erreichbar.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Seitenentwurf",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Diese Seite ist ein Entwurf. Sie ist nur während der Entwicklung sichtbar und fehlt in der veröffentlichten Version.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 Eintrag|{count} Einträge",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Nochmal versuchen",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Zum Hauptinhalt springen",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Dokumentation filtern",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Filter zurücksetzen",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Keine passenden Dokumente",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Versuche es mit einem anderen Suchbegriff.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

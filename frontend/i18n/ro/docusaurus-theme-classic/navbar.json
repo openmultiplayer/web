@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "Open Multiplayer",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Documentație",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Forums": {
+    "message": "Forumuri",
+    "description": "Navbar item with label Forums"
+  },
+  "item.label.Servers": {
+    "message": "Servere",
+    "description": "Navbar item with label Servers"
+  },
+  "item.label.Partners": {
+    "message": "Parteneri",
+    "description": "Navbar item with label Partners"
+  },
+  "item.label.Donate": {
+    "message": "Donează",
+    "description": "Navbar item with label Donate"
+  },
+  "logo.alt": {
+    "message": "Sigla open.mp",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Donate to us": {
+    "message": "Fă o donație",
+    "description": "Navbar item with label Donate to us"
+  }
+}

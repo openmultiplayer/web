@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "توافق تام مع السكربتات والعملاء الحاليين"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "هل لديك ملف AMX قديم؟ حمّله مباشرةً على خادم open.mp وانضم إلى أصدقائك عبر عميل SA-MP. راجع التوثيق عندما ترغب في تحسين الشفرة."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "البدء"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "نظام سكربتات جديد ومحسّن"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "يدعم open.mp سكربتات SA-MP وإضافاته الحالية، ويقدّم واجهة API حديثة تضم هياكل بيانات وعمليات إدخال وإخراج غير متزامنة وغيرها لتطوير تعديلات أفضل."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "اعرف المزيد"
+  },
+  "feature.developerFriendly.title": {
+    "message": "مصمّم للمطورين"
+  },
+  "feature.developerFriendly.description": {
+    "message": "نطوّر open.mp بواجهة API متسقة وتوثيق محدّث ومجتمع متعاون وشفرة مفتوحة بالكامل. نرحب بكل المساهمات."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "ساهم في المشروع"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "نظام سكربتات جديد ومحسّن"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "نواصل استخدام Pawn مع مصرّف جديد يجعل الشفرة أكثر متانة ودوال إضافية للخادم والعميل."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "تعرّف على التحسينات"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "يطوّره المجتمع"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "شفرة الخادم مفتوحة بالكامل. ساعد في إعداد الإصدار التالي أو أبلغ عن الأخطاء التي تجدها. نرحب بكل مساهمة ونقدّر ملاحظاتك."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "زيارة المؤسسة على GitHub"
+  },
+  "feature.cppApi.title": {
+    "message": "واجهة C++ قابلة للتوسعة"
+  },
+  "feature.cppApi.description": {
+    "message": "استخدم جميع وظائف الخادم المتاحة في Pawn إلى جانب مكتبات C++ وأطرها. يمكنك المساهمة في تحسين الخادم على GitHub."
+  },
+  "feature.cppApi.linkText": {
+    "message": "تصفّح مستودع SDK"
+  },
+  "partners.server.stats": {
+    "message": "عدد اللاعبين {players} على {servers} من الخوادم، بمتوسط {average} لكل خادم."
+  },
+  "servers.sort.relevance": {
+    "message": "مدى الصلة"
+  },
+  "servers.sort.players": {
+    "message": "اللاعبون"
+  },
+  "servers.search.placeholder": {
+    "message": "ابحث بعنوان IP أو الاسم"
+  },
+  "partners.note": {
+    "message": "كما أعلنّا، لا يقبل برنامج الشراكة طلبات جديدة حاليًا. لا يزال بإمكان الخوادم التي حجزت مكانًا الانضمام. اطرح أسئلتك الأخرى على خادمنا في Discord."
+  },
+  "announcement.title": {
+    "message": "يتوفر الآن إصدار جديد من خادم open.mp ومشغّله!"
+  },
+  "announcement.link": {
+    "message": "اقرأ المزيد هنا"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "هذه الصفحة لا تستجيب.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "الصفحة غير موجودة",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "لم نتمكن من العثور على ما كنت تبحث عنه.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "يُـرجى الإتصال بمالك الموقع الذي ربطك بعنوان URL الأصلي وإخباره بأن الارتباط الخاص به مُعطل.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "ملاحظة",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "تلميح",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "خطر",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "معلومات",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "حذر",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "إنتقل للأعلى",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "أرشيف",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "أرشيف",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "التنقل في صفحة قائمة المدونة",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "أحدث الإدخالات",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "أقدم الإدخالات",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "أقل من دقيقة للقراءة|دقيقة للقراءة|دقيقتان للقراءة|{readingTime} دقائق للقراءة|{readingTime} دقيقة للقراءة|{readingTime} دقيقة للقراءة",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "الوسوم",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "يتوفر خادم open.mp {version} مع إصلاحات كثيرة وتحسينات في الأداء وميزات جديدة!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "يضيف هذا الإصدار أدوات للتحكم في مركبات NPC ويحسّن حركتها ويصلح مشاكل الشبكة والسكربتات."
+  },
+  "announcement.changelog": {
+    "message": "سجل تعديلات الخادم"
+  },
+  "announcement.download": {
+    "message": "تنزيل الخادم"
+  },
+  "announcement.launcherUpdate": {
+    "message": "حصل المشغّل أيضًا على تحديث!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "يحسّن المشغّل الواجهة المتراكبة داخل اللعبة ودعم التعديلات الرسومية واستقرار الاتصال."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "يتوفر الآن مشغّل open.mp {version}!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "يتوفر الآن خادم open.mp {version}!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "يتوفر الآن خادم open.mp {serverVersion} والمشغّل {launcherVersion}!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "جديد المشغّل"
+  },
+  "announcement.dismiss": {
+    "message": "إغلاق هذه الرسالة"
+  },
+  "homepage.heroDescription": {
+    "message": "تعديل جديد متعدد اللاعبين للعبة Grand Theft Auto: San Andreas، وهو {compatibility} مع {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "متوافق تمامًا"
+  },
+  "homepage.downloadLauncher": {
+    "message": "تنزيل المشغّل 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "تنزيل الخادم 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "التوثيق 📜"
+  },
+  "animations.title": {
+    "message": "عارض الحركات في open.mp"
+  },
+  "animations.library": {
+    "message": "المكتبة:"
+  },
+  "animations.selectLibrary": {
+    "message": "اختر مكتبة…"
+  },
+  "animations.animation": {
+    "message": "الحركة:"
+  },
+  "animations.selectAnimation": {
+    "message": "اختر حركة…"
+  },
+  "animations.index": {
+    "message": "الفهرس:"
+  },
+  "animations.frames": {
+    "message": "الإطارات:"
+  },
+  "animations.duration": {
+    "message": "المدة:"
+  },
+  "animations.seconds": {
+    "message": "ثانية"
+  },
+  "animations.description": {
+    "message": "الوصف:"
+  },
+  "animations.notes": {
+    "message": "الملاحظات:"
+  },
+  "animations.videoCredits": {
+    "message": "مساهمو الفيديو:"
+  },
+  "animations.usageExamples": {
+    "message": "أمثلة الاستخدام:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "اختر حركة من القائمة أعلاه لمعاينتها."
+  },
+  "animations.browsePrompt": {
+    "message": "تصفّح جميع الحركات المتوفرة وعاينها."
+  },
+  "animations.usedByFunctions": {
+    "message": "تستخدم الدالتان ApplyAnimation/ApplyActorAnimation هذه الحركات."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "نلاحق ذلك القطار اللعين…"
+  },
+  "serverRow.copied": {
+    "message": "تم النسخ"
+  },
+  "serverRow.copy": {
+    "message": "نسخ"
+  },
+  "serverRow.partnerTitle": {
+    "message": "خادم شريك!"
+  },
+  "serverRow.ompTitle": {
+    "message": "خادم open.mp"
+  },
+  "serverRow.players": {
+    "message": "اللاعبون"
+  },
+  "serverInfo.backToServers": {
+    "message": "→ العودة إلى الخوادم"
+  },
+  "serverInfo.backToPartners": {
+    "message": "→ العودة إلى الخوادم الشريكة"
+  },
+  "serverInfo.quickJoin": {
+    "message": "انضمام سريع"
+  },
+  "serverInfo.noDescription": {
+    "message": "لا يوجد وصف لهذا الخادم"
+  },
+  "serverInfo.playersOnline": {
+    "message": "اللاعبون المتصلون"
+  },
+  "serverInfo.modVersion": {
+    "message": "إصدار التعديل"
+  },
+  "serverInfo.language": {
+    "message": "اللغة"
+  },
+  "serverInfo.rule": {
+    "message": "القاعدة"
+  },
+  "serverInfo.value": {
+    "message": "القيمة"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "آخر تحديث قبل {time}"
+  },
+  "serverInfo.notFound": {
+    "message": "تعذّر العثور على الخادم. قد يكون غير متصل أو لم يعد في القائمة."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "التوثيق"
+  },
+  "theme.footer.title.Community": {
+    "message": "المجتمع"
+  },
+  "theme.footer.title.More": {
+    "message": "المزيد"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "مقدمة"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "الانتقال إلى open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "تبرّع"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "الخوادم"
+  },
+  "theme.footer.link.Blog": {
+    "message": "المدونة"
+  },
+  "theme.footer.link.Animations": {
+    "message": "الحركات"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "مولّد UID"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "حقوق النشر © {year} open.mp. بُني باستخدام Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "التوثيق"
+  },
+  "navbar.item.Blog": {
+    "message": "المدونة"
+  },
+  "navbar.item.Forums": {
+    "message": "المنتديات"
+  },
+  "navbar.item.Servers": {
+    "message": "الخوادم"
+  },
+  "navbar.item.Partners": {
+    "message": "الشركاء"
+  },
+  "navbar.item.Donate": {
+    "message": "تبرّع"
+  },
+  "serverInfo.copied": {
+    "message": "تم النسخ",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "نسخ",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "نمط اللعب",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "إغلاق الإشعار",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "الحركات",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "عارض تفاعلي لحركات open.mp ‏(SA-MP) مع معاينات فيديو",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "الفيديو غير متاح",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// للاعبين",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// للشخصيات",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "تعديل متعدد اللاعبين للعبة Grand Theft Auto: San Andreas متوافق تمامًا مع San Andreas Multiplayer",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "إغلاق إشعار الشراكة",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "الخوادم الشريكة",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "قائمة خوادم San Andreas التي تستخدم open.mp أو SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "تم النسخ",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "نُسخ ماكرو UID إلى الحافظة.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "مولّد UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "ولّد UID لاستخدامه معرّفًا فريدًا لـ IComponent أو IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "اتصال",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "خادمك",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "الخادم",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "العنوان",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "اللاعبون",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "الاسم المستعار",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "إصدار SA-MP",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "المفضلة",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "الإنترنت",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "الشركاء",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "انضممت إليها مؤخرًا",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "الاسم المستعار…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "ابحث باسم الخادم أو نمط اللعب",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "الاسم",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "زمن الاستجابة",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "نمط اللعب",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "اتصال",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "إضافة إلى المفضلة",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "نسخ معلومات الخادم",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "القاعدة",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "القيمة",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "عوامل التصفية:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "خوادم open.mp فقط",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "خوادم فيها لاعبون",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "خوادم بلا كلمة مرور",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "اللغة:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "أضيف إلى المفضلة!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "مشغّل open.mp يعرض قائمة بخوادم نموذجية",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "اللاعب",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "النقاط",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "نسخ",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "يمكن للشخصيات غير القابلة للعب استدعاء دالة رد النداء هذه أيضًا.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "دالة",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "دالة رد نداء",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "أُضيف هذا العنصر ({name}) في الإصدار {version} ولا يعمل في الإصدارات الأقدم!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "أضيف {serverName} إلى قائمة الانتظار. إذا لم يظهر خلال 48 ساعة، تواصل معنا عبر Discord.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "أُرسل الخادم بنجاح!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "الحالة {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "تعذّر الإرسال!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "حدث خطأ أثناء إرسال الخادم",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "خطأ",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "صفحات قائمة الخوادم",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "الصفحة السابقة",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "الصفحة التالية",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "الاسم",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "نمط اللعب",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "اللغة",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "جميع اللغات",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "إغلاق نافذة إضافة خادم",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "السابق",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "التالي",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "مشغّل open.mp",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "تنزيل إصدارات مشغّل open.mp",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "العب GTA San Andreas مع الآخرين على خوادم open.mp وSA-MP.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "خادم open.mp",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "تنزيل إصدارات خادم open.mp",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "استضف خادمك الخاص للعب الجماعي في GTA San Andreas.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "الخوادم",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "قائمة خوادم San Andreas التي تستخدم open.mp وSA-MP",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "الأحدث",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "صدر في {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "أبرز التغييرات",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "عرض سجل التغييرات الكامل",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "عرض الإصدار على GitHub",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "عرض الإصدار على GitHub",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* يتطلب إصدار DynSSL تثبيت libssl على توزيعة Linux لديك.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "إخفاء الإصدارات الأقدم",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "عرض الإصدارات الأقدم وعددها {count}",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "جميع الإصدارات مفتوحة المصدر. ابنها من الشفرة المصدرية أو نزّلها مباشرةً من GitHub.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "التنزيل من GitHub",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "الصفحة غير موجودة",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "لقطة شاشة لمهمة القطار في GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "الرئيسية",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "التوثيق",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "الخوادم",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "التنقل في صفحة مقالات المدونة",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "أحدث المقالات",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "أقدم المقالات",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "عرض كل الوسوم",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "وضع النظام",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "الوضع الفاتح",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "الوضع الداكن",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "التبديل بين الوضع الداكن والفاتح (الحالي {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "التنقل التفصيلي",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "صفحة التوثيق",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "السابق",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "التالي",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "لا مستندات موسومة|مستند موسوم واحد|مستندان موسومان|{count} مستندات موسومة|{count} مستندًا موسومًا|{count} مستند موسوم",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} مستند موسوم بـ \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "الإصدار: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "هذه الوثائق لم يتم طرحها بَعـد للإصدار {siteTitle} {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "هذه هي وثائق {siteTitle} {versionLabel}، التي لم تعد تتم صيانتها بشكل نشط.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "للحصول على أحدث الوثائق، راجع {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "احدث إصدار",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "تعديل هذه الصفحة",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "إرتباط مُبـاشر بالعنوان {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " في {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " بواسطة {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "آخر تحديث {atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "الإصدارات",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "الوسوم:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "إغلاق",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "تحذير",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "أحدث مُشـاركات المدونة",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "توسيع فئة «{label}» في الشريط الجانبي",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "طي فئة «{label}» في الشريط الجانبي",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(يفتح في تبويب جديد)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "التنقل الرئيسي",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "اللُغـات",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "مُحتويات هذه الصفحة",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "اقرأ المزيد",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "اقرأ المزيد {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "نسخ",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "تم النسخ",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "نسخ الرمز إلى الحافظة",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "تبديل التفاف النص",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "الرئيسية",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "طي الشريط الجانبي",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "طي الشريط الجانبي",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "الشريط الجانبي للتوثيق",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "إغلاق شريط التنقل",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "→ العودة إلى القائمة الرئيسية",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "إظهار شريط التنقل أو إخفاؤه",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "فتح القائمة المنسدلة",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "إغلاق القائمة المنسدلة",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "توسيع الشريط الجانبي",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "توسيع الشريط الجانبي",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "مشاهدة جميع {count} نتائج"
+  },
+  "theme.SearchBar.label": {
+    "message": "بحث",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "مسح عبارة البحث",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "إلغاء",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "البحث في التوثيق",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "اطرح سؤالًا آخر…",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "جارٍ إعداد الإجابة…",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "بحث",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "إرسال",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "بحث",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "العودة إلى البحث بالكلمات المفتاحية",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "العودة إلى البحث بالكلمات المفتاحية",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "الأحدث",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "لا توجد عمليات بحث حديثة",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "حفظ هذا البحث",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "إزالة هذا البحث من السجل",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "المفضلة",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "إزالة هذا البحث من المفضلة",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "المحادثات الأخيرة",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "إزالة هذه المحادثة من السجل",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "تعذّر جلب النتائج",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "تحقق من اتصالك بالشبكة.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "اسأل الذكاء الاصطناعي: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "يولّد الذكاء الاصطناعي الإجابات وقد يخطئ. تحقّق من الإجابات.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "مصادر ذات صلة",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "جارٍ إعداد الإجابة…",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "نسخ",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "نُسخ!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "نسخ",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "أعجبني",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "لم يعجبني",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "شكرًا على ملاحظاتك!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "جارٍ البحث…",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "جارٍ البحث عن ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "عبارة البحث:",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "to select",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "إرسال السؤال",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "مفتاح الإدخال",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "to navigate",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "سهم للأعلى",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "سهم للأسفل",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "إغلاق",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "مفتاح Esc",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "بدعم من",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "العودة إلى البحث",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "No results for",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "جرّب البحث عن",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "هل تعتقد أن هذا البحث ينبغي أن يعرض نتائج؟",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "أخبرنا بذلك.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "البحث في التوثيق",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "لم يُعثر على أي مستند|عُثر على مستند واحد|عُثر على مستندين|عُثر على {count} مستندات|عُثر على {count} مستندًا|عُثر على {count} مستند",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "نتائج البحث عن \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "ابحث في الوثائق",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "اكتب ما تبحث عنه هنا",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "بحث",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "مدعوم من Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "لم يتم العثور على نتائج",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "جلب نتائج جديدة ...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "لا مقالات|مقالة واحدة|مقالتان|{count} مقالات|{count} مقالة|{count} مقالة",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} موسومة بـ \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "المؤلفون",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "عرض جميع المؤلفين",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "لم ينشر هذا المؤلف أي مقالات بعد.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "صفحة غير مدرجة",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "هذه الصفحة غير مدرجة ولن تفهرسها محركات البحث. يمكن الوصول إليها فقط عبر الرابط المباشر.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "مسودة صفحة",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "هذه الصفحة مسودة. تظهر في وضع التطوير فقط ولن تُضمّن في نسخة الإنتاج.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "لا عناصر|عنصر واحد|عنصران|{count} عناصر|{count} عنصرًا|{count} عنصر",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "المُحاولة مجددًا",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "إنتقل إلى المحتوى الرئيسي",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "تصفية التوثيق",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "مسح عامل التصفية",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "لا توجد مستندات مطابقة",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "جرّب عبارة بحث أخرى.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

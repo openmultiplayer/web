@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Ganap na tugma sa mga dating script at client"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "May lumang AMX file ka ba? I-load ito mismo sa open.mp server at sumali sa mga kaibigan gamit ang SA-MP client. Tingnan ang dokumentasyon kapag gusto mong pagandahin ang code mo."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Magsimula"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Bago at pinahusay na sistema ng pag-script"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "Sinusuportahan ng open.mp ang mga dating SA-MP script at plugin. May moderno itong API na may mga data structure at asynchronous na I/O para sa paggawa ng mas mahusay na mod."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Alamin pa"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Para sa mga developer"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Binubuo namin ang open.mp na may pare-parehong API, napapanahong dokumentasyon, matulunging komunidad at ganap na bukas na source code. Malugod naming tinatanggap ang mga ambag."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Mag-ambag"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Bago at pinahusay na sistema ng pag-script"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Patuloy naming ginagamit ang Pawn. Pinatatatag ng bagong compiler ang code mo, at pinalalawak ng mga bagong function ang kakayahan ng server at client."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Alamin ang mga pagpapahusay"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Binuo ng komunidad"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Ganap na bukas ang source code ng server. Tumulong sa susunod na bersyon o iulat ang mga problemang makita mo. Mahalaga ang bawat ambag at puna."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Bisitahin ang organisasyon sa GitHub"
+  },
+  "feature.cppApi.title": {
+    "message": "Napapalawak na C++ API"
+  },
+  "feature.cppApi.description": {
+    "message": "Gamitin ang lahat ng function ng server na nasa Pawn pati ang mga library at framework ng C++. Makakatulong kang pahusayin ang server sa GitHub."
+  },
+  "feature.cppApi.linkText": {
+    "message": "Tingnan ang repository ng SDK"
+  },
+  "partners.server.stats": {
+    "message": "{players} manlalaro sa {servers} server, na may average na {average} manlalaro bawat server."
+  },
+  "servers.sort.relevance": {
+    "message": "Kaugnayan"
+  },
+  "servers.sort.players": {
+    "message": "Mga manlalaro"
+  },
+  "servers.search.placeholder": {
+    "message": "Maghanap ayon sa IP o pangalan"
+  },
+  "partners.note": {
+    "message": "Gaya ng inanunsyo, hindi muna tumatanggap ng aplikasyon ang programa para sa mga katuwang. Maaari pa ring sumali ang mga server na may reserbasyon. Para sa ibang tanong, magtanong sa aming Discord."
+  },
+  "announcement.title": {
+    "message": "May bagong bersyon na ng open.mp server at launcher!"
+  },
+  "announcement.link": {
+    "message": "Magbasa pa rito"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Nagkaproblema ang pahinang ito.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Hindi Nahanap ang Pahina",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Hindi namin mahanap ang iyong hinananap.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Mangyaring makipag-ugnayan sa may-ari ng site na nag-link sa iyo sa orihinal na URL at sabihin sa kanila na ang kanilang link ay putol.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "Tala",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "Payo",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "Panganib",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "Impormasyon",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "Pag-iingat",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Bumalik sa itaas",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Arkibo",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Arkibo",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Nabegasyón para sa pahina na listahan ng blog",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Mas bagong mga éntri",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Mas lumang mga éntri",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Isang minutong basahin|{readingTime} minutong basahin",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Mga Tag",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "Available na ang open.mp server {version} na may maraming pag-aayos, mas mahusay na performance at mga bagong feature!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "May mga bagong kontrol para sa sasakyan ng NPC, mas maayos na paggalaw at mga pag-aayos sa network at script sa bersyong ito."
+  },
+  "announcement.changelog": {
+    "message": "Mga pagbabago sa server"
+  },
+  "announcement.download": {
+    "message": "I-download ang server"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Na-update din ang launcher!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "Mas maayos na ang overlay sa laro, suporta sa graphics mod at katatagan ng koneksyon."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Available na ang open.mp launcher {version}!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Available na ang open.mp server {version}!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Available na ang open.mp server {serverVersion} at launcher {launcherVersion}!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Mga bago sa launcher"
+  },
+  "announcement.dismiss": {
+    "message": "Isara ang mensaheng ito"
+  },
+  "homepage.heroDescription": {
+    "message": "Bagong multiplayer mod para sa Grand Theft Auto: San Andreas na {compatibility} sa {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "ganap na tugma"
+  },
+  "homepage.downloadLauncher": {
+    "message": "I-download ang launcher 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "I-download ang server 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Dokumentasyon 📜"
+  },
+  "animations.title": {
+    "message": "Mga animasyon ng open.mp"
+  },
+  "animations.library": {
+    "message": "Library:"
+  },
+  "animations.selectLibrary": {
+    "message": "Pumili ng library…"
+  },
+  "animations.animation": {
+    "message": "Animasyon:"
+  },
+  "animations.selectAnimation": {
+    "message": "Pumili ng animasyon…"
+  },
+  "animations.index": {
+    "message": "Indeks:"
+  },
+  "animations.frames": {
+    "message": "Mga frame:"
+  },
+  "animations.duration": {
+    "message": "Tagal:"
+  },
+  "animations.seconds": {
+    "message": "segundo"
+  },
+  "animations.description": {
+    "message": "Paglalarawan:"
+  },
+  "animations.notes": {
+    "message": "Mga tala:"
+  },
+  "animations.videoCredits": {
+    "message": "Mga gumawa ng video:"
+  },
+  "animations.usageExamples": {
+    "message": "Mga halimbawa ng paggamit:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Pumili ng animasyon sa menu sa itaas para makita ito."
+  },
+  "animations.browsePrompt": {
+    "message": "Mag-browse at tingnan ang lahat ng animasyong available."
+  },
+  "animations.usedByFunctions": {
+    "message": "Ginagamit ito ng mga function na ApplyAnimation/ApplyActorAnimation."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Hinahabol ang lintik na tren…"
+  },
+  "serverRow.copied": {
+    "message": "KINOPYA"
+  },
+  "serverRow.copy": {
+    "message": "KOPYAHIN"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Kasaping server!"
+  },
+  "serverRow.ompTitle": {
+    "message": "open.mp server"
+  },
+  "serverRow.players": {
+    "message": "Mga manlalaro"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Bumalik sa listahan ng mga server"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← Bumalik sa mga kasaping server"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Mabilisang pagsali"
+  },
+  "serverInfo.noDescription": {
+    "message": "Walang paglalarawan ang server na ito"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Mga manlalarong online"
+  },
+  "serverInfo.modVersion": {
+    "message": "Bersyon ng mod"
+  },
+  "serverInfo.language": {
+    "message": "Wika"
+  },
+  "serverInfo.rule": {
+    "message": "Panuntunan"
+  },
+  "serverInfo.value": {
+    "message": "Halaga"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Huling na-update {time} ang nakalipas"
+  },
+  "serverInfo.notFound": {
+    "message": "Hindi makita ang server. Maaaring offline ito o wala na sa listahan."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Dokumentasyon"
+  },
+  "theme.footer.title.Community": {
+    "message": "Komunidad"
+  },
+  "theme.footer.title.More": {
+    "message": "Higit pa"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Panimula"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Paglipat sa open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Magbigay ng donasyon"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Mga server"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Blog"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Mga animasyon"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "Pangbuo ng UID"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Karapatang-ari © {year} open.mp. Binuo gamit ang Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "Dokumentasyon"
+  },
+  "navbar.item.Blog": {
+    "message": "Blog"
+  },
+  "navbar.item.Forums": {
+    "message": "Mga forum"
+  },
+  "navbar.item.Servers": {
+    "message": "Mga server"
+  },
+  "navbar.item.Partners": {
+    "message": "Mga katuwang"
+  },
+  "navbar.item.Donate": {
+    "message": "Magbigay ng donasyon"
+  },
+  "serverInfo.copied": {
+    "message": "Kinopya",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Kopyahin",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Paraan ng laro",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Isara ang abiso",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Mga animasyon",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Interaktibong pahina para tingnan ang mga animasyon ng open.mp (SA-MP) na may video",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Hindi available ang video",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Para sa mga manlalaro",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Para sa mga aktor",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Multiplayer mod para sa Grand Theft Auto: San Andreas na ganap na tugma sa mga dating bersyon ng San Andreas Multiplayer",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Isara ang abiso tungkol sa programa para sa mga katuwang",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Mga kasaping server",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Listahan ng mga San Andreas server na gumagamit ng open.mp o SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Kinopya",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "Nakopya sa clipboard ang UID macro.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "Pangbuo ng UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Bumuo ng UID bilang natatanging pagkakakilanlan para sa IComponent o IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Kumonekta",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Server mo",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Server",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Address",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Mga manlalaro",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Palayaw",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "Bersyon ng SA-MP",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Mga paborito",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Internet",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Mga katuwang",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Kamakailang sinalihan",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Palayaw…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Maghanap ayon sa pangalan ng server o paraan ng laro",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Pangalan",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Ping",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Paraan ng laro",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Kumonekta",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Idagdag sa mga paborito",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Kopyahin ang impormasyon ng server",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Panuntunan",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Halaga",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Mga filter:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Mga open.mp server lang",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Mga server na may manlalaro",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Mga server na walang password",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Wika:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Naidagdag sa mga paborito!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "Ang open.mp launcher na nagpapakita ng listahan ng mga halimbawang server",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Manlalaro",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Puntos",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "KOPYAHIN",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "Maaari ring tawagin ng NPC ang callback na ito.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "function",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "callback",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Idinagdag ang {name} sa bersyong {version}. Hindi ito gagana sa mga naunang bersyon!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "Nasa listahan na ng naghihintay ang {serverName}. Kung hindi lumitaw sa loob ng 48 oras, kontakin kami sa Discord.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Naisumite na ang server!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Katayuan {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Hindi naisumite!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "Nagkaproblema sa pagsumite ng server",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "May problema",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "Mga pahina ng listahan ng mga server",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Nakaraang pahina",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Susunod na pahina",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "Pangalan",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Paraan ng laro",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Wika",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Lahat ng wika",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "Isara ang window para sa pagdagdag ng server",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "Naraaan",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Sumunod",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "open.mp launcher",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "I-download ang mga bersyon ng open.mp launcher",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Maglaro ng GTA San Andreas kasama ng iba sa mga open.mp at SA-MP server.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "open.mp server",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "I-download ang mga bersyon ng open.mp server",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Mag-host ng sarili mong GTA San Andreas multiplayer server.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Mga server",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Listahan ng mga San Andreas server na gumagamit ng open.mp at SA-MP",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "PINAKABAGO",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Inilabas noong {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Mahahalagang pagbabago",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Tingnan ang buong tala ng mga pagbabago",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Tingnan ang bersyon sa GitHub",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Tingnan ang bersyon sa GitHub",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* Kailangang naka-install ang libssl sa iyong Linux distribution para sa bersyong DynSSL.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Itago ang mga lumang bersyon",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "Tingnan ang {count} mas lumang bersyon",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Bukas ang source code ng bawat bersyon. I-build mula sa source code o i-download mismo sa GitHub.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "I-download sa GitHub",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "Hindi Nahanap ang Pahina",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Kuhang larawan ng misyon sa tren sa GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Pangunahing pahina",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Dokumentasyon",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Mga server",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Nabegasyón para sa page ng blog post",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Mas Bagong Post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Mas Lumang Post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Tingnan Lahat ng mga Tag",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Temang ayon sa system",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "Maliwanag na tema",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "Madilim na tema",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Magpalit sa pagitan ng maliwanag at madilim na tema (kasalukuyan: {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Landas ng pahina",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Mga pahina ng dokumentasyon",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Naraaan",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Sumunod",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "{count} dokumentong may tag",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} na may tag na “{tagName}”",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Bersyon: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Ito ay hindi pa nailalabas na dokumentasyón para sa bersiyón na {siteTitle} {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Ito ay dokumentasyón para sa {siteTitle} {versionLabel} na hindi na aktibong mine-maintain.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Para sa up-to-date na dokumentasyón, tingnan ang {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "pinakahuling bersiyón",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "I-edit ang page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direktang link patungo sa {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " noong {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " ni {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Huling inapdeyt{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Mga bersyon",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Mga Tag:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Isara",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "Babala",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Nabigasyon sa mga kamakailang post sa blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Palawakin ang kategoryang “{label}” sa sidebar",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Itiklop ang kategoryang “{label}” sa sidebar",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(bubukas sa bagong tab)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Pangunahing nabigasyon",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Mga wika",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Sa pahinang ito",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Basahin Pa",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Magbasa pa tungkol sa {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopyahin",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Kinopya",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Kopyahin ang code sa clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "I-on o i-off ang awtomatikong pagbalot ng mga linya",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Pangunahing pahina",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Itupî ang sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Itupî ang sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Sidebar ng dokumentasyon",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Isara ang navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Bumalik sa pangunahing menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Ipakita o itago ang navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Buksan ang dropdown menu",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Isara ang dropdown menu",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Palakihin ang sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Palakihin ang sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Tingnan ang lahat ng {count} resulta"
+  },
+  "theme.SearchBar.label": {
+    "message": "Maghanap",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Burahin ang hinahanap",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Kanselahin",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Maghanap sa dokumentasyon",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Magtanong ulit…",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "Inihahanda ang sagot…",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "Maghanap",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "ipadala",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Maghanap",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Bumalik sa paghahanap gamit ang keyword",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Bumalik sa paghahanap gamit ang keyword",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Kamakailan",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Walang kamakailang paghahanap",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "I-save ang paghahanap na ito",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Alisin ang paghahanap na ito sa history",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Mga paborito",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Alisin ang paghahanap na ito sa mga paborito",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Mga kamakailang pag-uusap",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Alisin ang pag-uusap na ito sa history",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Hindi makuha ang mga resulta",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Suriin ang koneksyon mo sa network.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "Magtanong sa AI: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "AI ang bumubuo sa mga sagot at maaari itong magkamali. Suriin ang mga sagot.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Mga kaugnay na sanggunian",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "Inihahanda ang sagot…",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Kopyahin",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Nakopya!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Kopyahin",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Gusto ko",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Ayaw ko",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Salamat sa iyong puna!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Naghahanap…",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Hinahanap ang ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "Hinanap ang",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "to select",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Ipadala ang tanong",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter key",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "to navigate",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Pataas na arrow",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Pababang arrow",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Isara",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Escape key",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Pinapagana ng",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Bumalik sa paghahanap",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "No results for",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Subukang hanapin ang",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Sa tingin mo ba dapat may resulta para rito?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Ipaalam sa amin.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Maghanap sa dokumentasyon",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Isang dokumento ang nahanap|{count} na mga dokumento ang nahanap",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Resulta ng paghahanap para sa \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Maghanap sa dokumentasyón",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "I-type ang inyong paghahanap dito",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Maghanap",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Pinapagana ng Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Walang nahanap na resulta",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Kumukuha ng mga bagong resulta...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Isang post|{count} na mga post",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} na may tag na \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Mga may-akda",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Tingnan ang lahat ng may-akda",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Wala pang naipost ang may-akdang ito.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Pahinang wala sa listahan",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Wala sa listahan ang pahinang ito. Hindi ito iindeks ng mga search engine. Maa-access lamang ito gamit ang direktang link.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Burador na pahina",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Burador ang pahinang ito. Makikita lang ito habang dine-develop ang site at hindi kasama sa ilalabas na bersyon.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} na item",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Subukan ulit",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Lumaktaw patungo sa pangunahing content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Salain ang dokumentasyon",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Alisin ang filter",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Walang tumutugmang dokumento",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Sumubok ng ibang salita sa paghahanap.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

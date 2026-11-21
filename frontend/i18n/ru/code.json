@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Полная обратная совместимость с существующими скриптами и клиентами"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Есть старый AMX? Загрузи его прямо на сервер open.mp и присоединяйся к друзьям через клиент SA-MP. Загляни в документацию, если захочешь улучшить свой код."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Начало работы"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Новая улучшенная система скриптов"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp поддерживает существующие скрипты и плагины SA-MP. Современный API со структурами данных, асинхронным вводом и выводом и другими возможностями помогает создавать более качественные моды."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Подробнее"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Удобно для разработчиков"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Мы создаём open.mp с единообразным API, актуальной документацией, отзывчивым сообществом и полностью открытым кодом. Любой вклад приветствуется."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Внести вклад"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Новая улучшенная система скриптов"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Мы продолжаем использовать Pawn. Новый компилятор помогает писать более надёжный код, а дополнительные функции расширяют возможности сервера и клиента."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Узнать об улучшениях"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Разработка силами сообщества"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Код сервера полностью открыт. Помоги подготовить следующий выпуск или сообщи о найденных ошибках. Любой вклад и обратная связь важны."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Перейти в организацию на GitHub"
+  },
+  "feature.cppApi.title": {
+    "message": "Расширяемый API C++"
+  },
+  "feature.cppApi.description": {
+    "message": "Используй все серверные возможности Pawn вместе с библиотеками и фреймворками C++. На GitHub можно помочь улучшить сервер."
+  },
+  "feature.cppApi.linkText": {
+    "message": "Посмотреть репозиторий SDK"
+  },
+  "partners.server.stats": {
+    "message": "{players} игроков на {servers} серверах, в среднем {average} игроков на сервер."
+  },
+  "servers.sort.relevance": {
+    "message": "Релевантность"
+  },
+  "servers.sort.players": {
+    "message": "Игроки"
+  },
+  "servers.search.placeholder": {
+    "message": "Поиск по IP или названию"
+  },
+  "partners.note": {
+    "message": "Как и обещали, приём заявок в партнёрскую программу сейчас закрыт. Серверы с забронированным местом всё ещё могут присоединиться. Другие вопросы задавай в нашем Discord."
+  },
+  "announcement.title": {
+    "message": "Уже доступна новая версия сервера и лаунчера open.mp!"
+  },
+  "announcement.link": {
+    "message": "Читать подробнее"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "На странице произошёл сбой.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Страница не найдена",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "К сожалению, мы не смогли найти запрашиваемую вами страницу.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Пожалуйста, обратитесь к владельцу сайта, с которого вы перешли на эту ссылку, чтобы сообщить ему, что ссылка не работает.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "примечание",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "подсказка",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "осторожно",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "к сведению",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "предупреждение",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Прокрутка к началу",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Архив",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Архив",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Навигация по странице списка блогов",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Следующие записи",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Предыдущие записи",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} мин. чтения|{readingTime} мин. чтения|{readingTime} мин. чтения",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Теги",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "Сервер open.mp {version} уже доступен: исправления, улучшенная производительность и новые возможности!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "В этой версии появились функции управления транспортом NPC, улучшено его движение и исправлены сетевые ошибки и ошибки скриптов."
+  },
+  "announcement.changelog": {
+    "message": "Изменения в сервере"
+  },
+  "announcement.download": {
+    "message": "Скачать сервер"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Лаунчер тоже обновился!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "В лаунчере улучшены внутриигровой оверлей, поддержка графических модов и стабильность соединения."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Лаунчер open.mp {version} уже доступен!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Сервер open.mp {version} уже доступен!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Сервер open.mp {serverVersion} и лаунчер {launcherVersion} уже доступны!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Что нового в лаунчере"
+  },
+  "announcement.dismiss": {
+    "message": "Закрыть сообщение"
+  },
+  "homepage.heroDescription": {
+    "message": "Новый многопользовательский мод для Grand Theft Auto: San Andreas, {compatibility} с {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "полностью совместимый"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Скачать лаунчер 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Скачать сервер 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Документация 📜"
+  },
+  "animations.title": {
+    "message": "Просмотр анимаций open.mp"
+  },
+  "animations.library": {
+    "message": "Библиотека:"
+  },
+  "animations.selectLibrary": {
+    "message": "Выбери библиотеку…"
+  },
+  "animations.animation": {
+    "message": "Анимация:"
+  },
+  "animations.selectAnimation": {
+    "message": "Выбери анимацию…"
+  },
+  "animations.index": {
+    "message": "Индекс:"
+  },
+  "animations.frames": {
+    "message": "Кадры:"
+  },
+  "animations.duration": {
+    "message": "Длительность:"
+  },
+  "animations.seconds": {
+    "message": "сек."
+  },
+  "animations.description": {
+    "message": "Описание:"
+  },
+  "animations.notes": {
+    "message": "Примечания:"
+  },
+  "animations.videoCredits": {
+    "message": "Авторы видео:"
+  },
+  "animations.usageExamples": {
+    "message": "Примеры использования:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Выбери анимацию в меню выше, чтобы посмотреть её."
+  },
+  "animations.browsePrompt": {
+    "message": "Просмотри все доступные анимации."
+  },
+  "animations.usedByFunctions": {
+    "message": "Эти анимации используются функциями ApplyAnimation/ApplyActorAnimation."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "В погоне за чёртовым поездом…"
+  },
+  "serverRow.copied": {
+    "message": "СКОПИРОВАНО"
+  },
+  "serverRow.copy": {
+    "message": "СКОПИРОВАТЬ"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Партнёрский сервер!"
+  },
+  "serverRow.ompTitle": {
+    "message": "Сервер open.mp"
+  },
+  "serverRow.players": {
+    "message": "Игроки"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Назад к серверам"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← Назад к партнёрским серверам"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Быстрое подключение"
+  },
+  "serverInfo.noDescription": {
+    "message": "У этого сервера нет описания"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Игроки онлайн"
+  },
+  "serverInfo.modVersion": {
+    "message": "Версия мода"
+  },
+  "serverInfo.language": {
+    "message": "Язык"
+  },
+  "serverInfo.rule": {
+    "message": "Правило"
+  },
+  "serverInfo.value": {
+    "message": "Значение"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Обновлено {time} назад"
+  },
+  "serverInfo.notFound": {
+    "message": "Сервер не найден. Возможно, он не в сети или его больше нет в списке."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Документация"
+  },
+  "theme.footer.title.Community": {
+    "message": "Сообщество"
+  },
+  "theme.footer.title.More": {
+    "message": "Ещё"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Введение"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Переход на open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Поддержать проект"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Серверы"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Блог"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Анимации"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "Генератор UID"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "© {year} open.mp. Создано с помощью Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "Документация"
+  },
+  "navbar.item.Blog": {
+    "message": "Блог"
+  },
+  "navbar.item.Forums": {
+    "message": "Форумы"
+  },
+  "navbar.item.Servers": {
+    "message": "Серверы"
+  },
+  "navbar.item.Partners": {
+    "message": "Партнёры"
+  },
+  "navbar.item.Donate": {
+    "message": "Поддержать проект"
+  },
+  "serverInfo.copied": {
+    "message": "Скопировано",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Скопировать",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Режим игры",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Закрыть уведомление",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Анимации",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Интерактивный просмотр анимаций open.mp (SA-MP) с видео",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Видео недоступно",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Для игроков",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Для актёров",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Многопользовательский мод для Grand Theft Auto: San Andreas с полной обратной совместимостью с San Andreas Multiplayer",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Закрыть уведомление о партнёрской программе",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Партнёрские серверы",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Список серверов San Andreas на open.mp или SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Скопировано",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "Макрос UID скопирован в буфер обмена.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "Генератор UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Создай уникальный идентификатор UID для IComponent или IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Подключиться",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Твой сервер",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Сервер",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Адрес",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Игроки",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Никнейм",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "Версия SA-MP",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Избранное",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Интернет",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Партнёры",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Недавние",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Никнейм…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Поиск по имени сервера или режиму",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Название",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Пинг",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Режим игры",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Подключиться",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Добавить в избранное",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Скопировать данные сервера",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Правило",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Значение",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Фильтры:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Только серверы open.mp",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Серверы с игроками",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Серверы без пароля",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Язык:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Добавлено в избранное!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "Лаунчер open.mp со списком примеров серверов",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Игрок",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Очки",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "СКОПИРОВАТЬ",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "Этот колбэк также может вызываться NPC.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "функция",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "колбэк",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "В версии {version} добавлено следующее: {name}. В более ранних версиях это не работает!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "Сервер {serverName} добавлен в очередь. Если он не появится в течение 48 часов, свяжись с нами в Discord.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Сервер отправлен!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Статус {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Не удалось отправить!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "При отправке сервера произошла ошибка",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Ошибка",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "Страницы списка серверов",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Предыдущая страница",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Следующая страница",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "Название",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Режим игры",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Язык",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Все языки",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "Закрыть окно добавления сервера",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "Предыдущая страница",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Следующая страница",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "Лаунчер open.mp",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Скачать выпуски лаунчера open.mp",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Играй в GTA San Andreas по сети на серверах open.mp и SA-MP.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "Сервер open.mp",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Скачать выпуски сервера open.mp",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Запусти свой многопользовательский сервер GTA San Andreas.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Серверы",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Список серверов San Andreas на open.mp и SA-MP",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "НОВЕЙШАЯ ВЕРСИЯ",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Выпущено {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Главные изменения",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Посмотреть все изменения",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Открыть выпуск на GitHub",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Открыть выпуск на GitHub",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* Для версии DynSSL в дистрибутиве Linux должна быть установлена libssl.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Скрыть старые выпуски",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "Показать ещё выпуски ({count})",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "У каждого выпуска открытый код. Собери его из исходников или скачай с GitHub.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Скачать с GitHub",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "Страница не найдена",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Снимок экрана задания с поездом в GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Главная",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Документация",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Серверы",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Навигация по странице поста блога",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Следующий пост",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Предыдущий пост",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Посмотреть все теги",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Системный режим",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "Светлый режим",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "Тёмный режим",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Переключение между темным и светлым режимом (сейчас используется {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Навигационная цепочка текущей страницы",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Страница документа",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Предыдущая страница",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Следующая страница",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Одна страница|{count} страницы|{count} страниц",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} с тегом \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Версия: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Это документация для будущей версии {siteTitle} {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Это документация {siteTitle} для версии {versionLabel}, которая уже не поддерживается.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Актуальная документация находится на странице {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "последней версии",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Отредактировать эту страницу",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Прямая ссылка на {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " от {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Последнее обновление{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Версии",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Теги:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Закрыть",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "Предупреждение",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Навигация по последним постам в блоге",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Развернуть раздел «{label}» в боковой панели",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Свернуть раздел «{label}» в боковой панели",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(откроется в новой вкладке)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Основная навигация",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Языки",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Содержание этой страницы",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Читать дальше",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Подробнее о {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Скопировать",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Скопировано",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Скопировать в буфер обмена",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Переключить перенос по строкам",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Главная страница",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Свернуть сайдбар",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Свернуть сайдбар",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Боковая панель документации",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Закрыть панель навигации",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Перейти к главному меню",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Переключить навигационную панель",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Открыть раскрывающееся меню",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Закрыть раскрывающееся меню",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Развернуть сайдбар",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Развернуть сайдбар",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Посмотреть все результаты ({count})"
+  },
+  "theme.SearchBar.label": {
+    "message": "Поиск",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Очистить",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Отменить",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Поиск",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Задай другой вопрос…",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "Готовлю ответ…",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "Поиск",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "отправить",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Поиск",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Назад к поиску по ключевым словам",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Назад к поиску по ключевым словам",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Недавнее",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Нет истории поиска",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Сохранить поисковый запрос",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Удалить запись из историю",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Избранное",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Удалить запись из избранное",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Недавние беседы",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Удалить эту беседу из истории",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Невозможно загрузить результаты поиска",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Проверьте подключение к интернету.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "Спросить ИИ: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "Ответы генерирует ИИ. В них могут быть ошибки, поэтому проверяй ответы.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Связанные источники",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "Подготовка ответа…",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Скопировать",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Скопировано!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Скопировать",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Нравится",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Не нравится",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Спасибо за отзыв!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Поиск…",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Поиск: ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "Запрос:",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "выбрать",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Отправить вопрос",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Клавиша Enter",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "навигация",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Клавиша стрелка вверх",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Клавиша стрелка вниз",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Закрыть",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Клавиша Escape",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Поиск от",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Назад к поиску",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "Нет результатов по запросу",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Попробуйте",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Нет подходящего результата поиска?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Сообщите нам.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Поиск",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "{count} документ|{count} документа|{count} документов",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Результаты поиска по запросу \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Поиск по сайту",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Введите фразу для поиска",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Поиск",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "При поддержке Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "По запросу ничего не найдено",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Загрузка новых результатов поиска...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} запись|{count} записи|{count} записей",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} с тегом \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Авторы",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Все авторы",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Этот автор ещё ничего не опубликовал.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Страница вне списка",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Эта страница не отображается в списке и не индексируется поисковыми системами. Она доступна только по прямой ссылке.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Черновик страницы",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Эта страница — черновик. Она видна только в режиме разработки и не войдёт в опубликованную версию.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} элемент|{count} элемента|{count} элементов",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Попробуйте ещё раз",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Перейти к основному содержимому",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Фильтровать документацию",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Сбросить фильтр",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Документы не найдены",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Попробуй другой поисковый запрос.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

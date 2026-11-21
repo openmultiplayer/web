@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "與既有指令碼和用戶端完全向下相容"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "有舊的 AMX 檔案嗎？直接將它載入 open.mp 伺服器，就能用 SA-MP 用戶端和朋友一起玩。想改進程式碼時，請參閱我們的文件。"
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "新手指南"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "全新升級的指令碼系統"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp 支援既有的 SA-MP 指令碼和外掛，並提供現代化 API，包含資料結構、非同步 I/O 等功能，讓你開發更好的模組。"
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "進一步了解"
+  },
+  "feature.developerFriendly.title": {
+    "message": "為開發者設計"
+  },
+  "feature.developerFriendly.description": {
+    "message": "open.mp 提供一致的 API、最新的文件、樂於互助的社群，以及完全開放的原始碼。歡迎參與貢獻。"
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "參與貢獻"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "全新升級的指令碼系統"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "我們繼續使用 Pawn，並加入新編譯器，讓程式碼更穩定。額外的函式可用於操作伺服器和用戶端。"
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "了解有哪些改進"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "由社群共同開發"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "伺服器完全開放原始碼，歡迎各種規模的貢獻。你可以參與下一版的開發，或回報遇到的錯誤。你的意見對我們很重要。"
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "造訪 GitHub 組織頁面"
+  },
+  "feature.cppApi.title": {
+    "message": "可擴充的 C++ API"
+  },
+  "feature.cppApi.description": {
+    "message": "除了 Pawn 的伺服器功能，你也能使用 C++ 的各種函式庫和框架。歡迎在 GitHub 上協助改進伺服器。"
+  },
+  "feature.cppApi.linkText": {
+    "message": "查看 SDK 原始碼儲存庫"
+  },
+  "partners.server.stats": {
+    "message": "{servers} 臺伺服器共有 {players} 位玩家，平均每臺 {average} 位。"
+  },
+  "servers.sort.relevance": {
+    "message": "相關度"
+  },
+  "servers.sort.players": {
+    "message": "玩家數量"
+  },
+  "servers.search.placeholder": {
+    "message": "依 IP 位址或名稱搜尋"
+  },
+  "partners.note": {
+    "message": "如先前公告，合作夥伴計畫目前暫停接受申請。已預留名額的伺服器仍可加入。如有其他問題，歡迎到 Discord 詢問。"
+  },
+  "announcement.title": {
+    "message": "open.mp 伺服器與啟動器的新版本已推出！"
+  },
+  "announcement.link": {
+    "message": "查看詳情"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "頁面加載異常",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "找不到頁面",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "未能搜尋到目標內容",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "請聯絡引薦你造訪此連結的網站管理員，告知該連結已失效",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "備註",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "技巧",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "危險",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "資訊",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "注意",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "返回頂部",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "封存",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "封存",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "部落格清單分頁導航",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "更新的文章",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "更早的文章",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "閱讀時間約{readingTime}分鐘",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "標籤",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "open.mp 伺服器 {version} 已推出，包含多項錯誤修正、效能改善和新功能！"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "此伺服器版本新增了 NPC 車輛控制功能，改進了 NPC 車輛移動，並修復了網路和指令碼問題。"
+  },
+  "announcement.changelog": {
+    "message": "伺服器更新記錄"
+  },
+  "announcement.download": {
+    "message": "下載伺服器"
+  },
+  "announcement.launcherUpdate": {
+    "message": "啟動器同步更新！"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "啟動器改進了遊戲內的疊加介面、圖形模組支援及連線穩定性。"
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "open.mp 啟動器 {version} 現已發布！"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "open.mp 伺服器 {version} 新版本現已發布！"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "open.mp 伺服器 {serverVersion} 與啟動器 {launcherVersion} 新版本現已發布！"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "啟動器更新"
+  },
+  "announcement.dismiss": {
+    "message": "關閉這則訊息"
+  },
+  "homepage.heroDescription": {
+    "message": "《俠盜獵車手：聖安地列斯》的全新多人模組，與 {samp} {compatibility}。"
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "完全相容"
+  },
+  "homepage.downloadLauncher": {
+    "message": "下載啟動器 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "下載伺服器 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "文件 📜"
+  },
+  "animations.title": {
+    "message": "open.mp 動畫檢視器"
+  },
+  "animations.library": {
+    "message": "動畫庫："
+  },
+  "animations.selectLibrary": {
+    "message": "選擇動畫庫..."
+  },
+  "animations.animation": {
+    "message": "動畫："
+  },
+  "animations.selectAnimation": {
+    "message": "選擇動畫..."
+  },
+  "animations.index": {
+    "message": "索引："
+  },
+  "animations.frames": {
+    "message": "影格數："
+  },
+  "animations.duration": {
+    "message": "持續時間："
+  },
+  "animations.seconds": {
+    "message": "秒"
+  },
+  "animations.description": {
+    "message": "描述："
+  },
+  "animations.notes": {
+    "message": "備註："
+  },
+  "animations.videoCredits": {
+    "message": "影片致謝："
+  },
+  "animations.usageExamples": {
+    "message": "使用範例："
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "從上方下拉選單選擇動畫即可預覽"
+  },
+  "animations.browsePrompt": {
+    "message": "瀏覽查看所有可用動畫"
+  },
+  "animations.usedByFunctions": {
+    "message": "ApplyAnimation 和 ApplyActorAnimation 函式會使用這些動畫。"
+  },
+  "loadingBanner.followingTrain": {
+    "message": "正在追趕那輛該死的火車..."
+  },
+  "serverRow.copied": {
+    "message": "已複製"
+  },
+  "serverRow.copy": {
+    "message": "複製"
+  },
+  "serverRow.partnerTitle": {
+    "message": "合作認證！"
+  },
+  "serverRow.ompTitle": {
+    "message": "open.mp伺服器"
+  },
+  "serverRow.players": {
+    "message": "玩家數量"
+  },
+  "serverInfo.backToServers": {
+    "message": "← 返回伺服器清單"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← 返回合作夥伴伺服器"
+  },
+  "serverInfo.quickJoin": {
+    "message": "快速加入"
+  },
+  "serverInfo.noDescription": {
+    "message": "這臺伺服器沒有說明"
+  },
+  "serverInfo.playersOnline": {
+    "message": "線上玩家"
+  },
+  "serverInfo.modVersion": {
+    "message": "模組版本"
+  },
+  "serverInfo.language": {
+    "message": "語言"
+  },
+  "serverInfo.rule": {
+    "message": "規則"
+  },
+  "serverInfo.value": {
+    "message": "數值"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "上次更新於 {time} 前"
+  },
+  "serverInfo.notFound": {
+    "message": "找不到該伺服器，它可能已離線或不再列出。"
+  },
+  "theme.footer.title.Documentations": {
+    "message": "文件"
+  },
+  "theme.footer.title.Community": {
+    "message": "社群"
+  },
+  "theme.footer.title.More": {
+    "message": "更多"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "簡介"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "移轉至 open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "贊助"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "伺服器"
+  },
+  "theme.footer.link.Blog": {
+    "message": "部落格"
+  },
+  "theme.footer.link.Animations": {
+    "message": "動畫"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "UID 產生器"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "© {year} open.mp。使用 Docusaurus 建置。"
+  },
+  "navbar.item.Docs": {
+    "message": "文件"
+  },
+  "navbar.item.Blog": {
+    "message": "部落格"
+  },
+  "navbar.item.Forums": {
+    "message": "論壇"
+  },
+  "navbar.item.Servers": {
+    "message": "伺服器"
+  },
+  "navbar.item.Partners": {
+    "message": "合作夥伴"
+  },
+  "navbar.item.Donate": {
+    "message": "贊助"
+  },
+  "serverInfo.copied": {
+    "message": "已複製",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "複製",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "遊戲模式",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "關閉通知",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "動畫",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "互動式 open.mp（SA-MP）動畫檢視器，提供影片預覽",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "無法播放影片",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// 適用於玩家",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// 適用於演員",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "《俠盜獵車手：聖安地列斯》的多人模組，與 San Andreas Multiplayer 完全向下相容。",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "關閉合作夥伴通知",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "合作夥伴伺服器",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "使用 open.mp 或 SA-MP 的聖安地列斯伺服器清單",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "已複製",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "UID 巨集已複製到剪貼簿。",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "UID 產生器",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "產生 UID，作為 IComponent 或 IExtension 的唯一識別碼",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "連線",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "你的伺服器",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "伺服器",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "位址",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "玩家數量",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "暱稱",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "SA-MP 版本",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "最愛",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "網際網路",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "合作夥伴",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "最近加入",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "暱稱...",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "搜尋伺服器名稱/模式",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "名稱",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "延遲",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "遊戲模式",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "連線",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "新增到最愛",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "複製伺服器資訊",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "規則",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "數值",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "篩選：",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "僅 open.mp 伺服器",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "有玩家的伺服器",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "無密碼伺服器",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "語言：",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "已新增到最愛！",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "顯示範例伺服器清單的 open.mp 啟動器",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "玩家",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "分數",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "複製",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "NPC 也可以呼叫這個回呼函式。",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "函式",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "回呼函式",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "此{name}於 {version} 版本中新增，在更早的版本中無法使用！",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "{serverName} 已新增到我們的待審核清單中。如果最多 48 小時後仍未顯示，你可以到 Discord 聯絡我們！",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "伺服器已提交！",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "狀態碼 {status}：{error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "提交失敗！",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "提交伺服器時發生錯誤",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "錯誤",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "伺服器清單分頁",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "上一頁",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "下一頁",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "名稱",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "遊戲模式",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "語言",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "所有語言",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "關閉新增伺服器的對話框",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "上一個",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "下一個",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "open.mp 啟動器",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "下載 open.mp 啟動器版本",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "在 open.mp 和 SA-MP 伺服器上遊玩《俠盜獵車手：聖安地列斯》多人連線。",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "open.mp 伺服器",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "下載 open.mp 伺服器端版本",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "架設自己的《俠盜獵車手：聖安地列斯》多人伺服器。",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "伺服器",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "使用 open.mp 和 SA-MP 的聖安地列斯伺服器清單",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "最新",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "發布於 {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "重點更新",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "查看完整更新記錄",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "在 GitHub 上查看發布",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "在 GitHub 上查看發布",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* DynSSL 版本要求你的 Linux 發行版中已安裝 libssl。",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "隱藏較舊版本",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "查看 {count} 個較舊版本",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "每個版本都開放原始碼。你可以自行編譯，或直接從 GitHub 下載。",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "從 GitHub 下載",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "找不到頁面",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "GTA 火車任務的螢幕截圖",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "首頁",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "文件",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "伺服器",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "文章分頁導航",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "較新一篇",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "較舊一篇",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "查看所有標籤",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "系統模式",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "淺色模式",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "暗黑模式",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "切換淺色/暗黑模式（當前為{mode}）",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "頁面路徑",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "文件分頁",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "上一個",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "下一個",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "{count} 篇文件帶有標籤",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged}「{tagName}」",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "版本：{versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "此為 {siteTitle} {versionLabel} 版尚未發行的文件。",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "此為 {siteTitle} {versionLabel} 版的文件，現已不再積極維護。",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "最新的文件請參閱 {latestVersionLink} ({versionLabel})。",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "最新版本",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "編輯此頁",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "{heading}的直接連結",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": "於 {date} ",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": "由 {user} ",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "最後{byUser}{atDate}更新",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "選擇版本",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "標籤：",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "關閉",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "注意",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "最近文章導航",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "展開側邊欄分類 '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "折疊側邊欄分類 '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "（在新分頁開啟）",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "主導航",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "選擇語言",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "本頁總覽",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "閱讀更多",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "閱讀 {title} 的全文",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "複製",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "已複製",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "複製程式碼到剪貼簿",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "切換自動換行",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "主頁面",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "收起側邊欄",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "收起側邊欄",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "文件側邊欄",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "關閉導航欄",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← 回到主選單",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "切換導航欄",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "展開下拉式選單",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "收合下拉式選單",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "展開側邊欄",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "展開側邊欄",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "查看全部 {count} 個結果"
+  },
+  "theme.SearchBar.label": {
+    "message": "搜尋",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "清除查詢",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "取消",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "搜尋文件",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "提出其他問題...",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "正在回答...",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "搜尋",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "發送",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "搜尋",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "返回關鍵詞搜尋",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "返回關鍵詞搜尋",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "最近搜尋",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "沒有最近搜尋",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "保存這個搜尋",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "從歷史記錄中刪除這個搜尋",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "最愛",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "從最愛清單中刪除這個搜尋",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "最近的對話",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "從歷史記錄中刪除此對話",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "無法獲取結果",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "你可能需要檢查網路連接。",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "詢問 AI：",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "回答由 AI 生成，可能存在錯誤，請覈實內容。",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "相關來源",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "思考中...",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "複製",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "已複製！",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "複製",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "贊",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "踩",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "感謝你的意見回饋！",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "搜尋中...",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "正在搜尋 ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "已搜尋",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "選中",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "提交問題",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter 鍵",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "導航",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "向上鍵",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "向下鍵",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "關閉",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Esc 鍵",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "搜尋提供",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "返回搜尋",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "沒有結果：",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "試試搜尋",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "認為這個查詢應該有結果？",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "請告知我們。",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "搜尋文件",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "找到 {count} 份文件",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "「{query}」的搜尋結果",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "在文件中搜尋",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "在此輸入搜尋詞",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "搜尋",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "由 Algolia 提供",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "未找到結果",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "正在獲取新的搜尋結果...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} 篇文章",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} 含有標籤「{tagName}」",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "作者",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "查看所有作者",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "該作者尚未撰寫任何文章。",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "未列出頁",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "此頁面未列出。搜尋引擎不會對其索引，只有擁有直接連結的用戶才能造訪。",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "草稿頁",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "此頁面是草稿，僅在開發環境中可見，不會包含在正式版本中。",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} 個項目",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "重試",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "跳到主要內容",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "篩選文件",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "清除篩選條件",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "沒有相符的文件",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "請試試其他搜尋字詞。",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

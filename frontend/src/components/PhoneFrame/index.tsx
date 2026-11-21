@@ -3,7 +3,7 @@ import React, { type ReactNode } from "react";
 import styles from "./styles.module.css";
 
 // Turns the phone in the homepage hero on or off.
-export const SHOW_PHONE = true;
+export const SHOW_PHONE = false;
 
 const PhoneFrame = ({ children }: { children?: ReactNode }): React.ReactElement => (
   <div className={styles.phone}>

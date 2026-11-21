@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Teljes visszamenőleges kompatibilitás a meglévő szkriptekkel és kliensekkel"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Van egy régi AMX-fájlod? Töltsd be közvetlenül az open.mp szerverre, majd csatlakozz a barátaidhoz az SA-MP klienssel. Ha javítanál a kódodon, nézd meg a dokumentációt."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Első lépések"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Új, továbbfejlesztett szkriptrendszer"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "Az open.mp támogatja a meglévő SA-MP szkripteket és bővítményeket. A modern API adatszerkezetekkel és aszinkron I/O-műveletekkel segít jobb modokat írni."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "További információ"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Fejlesztőbarát"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Az open.mp fejlesztésekor az egységes API-ra, naprakész dokumentációra, segítőkész közösségre és teljesen nyílt forráskódra törekszünk. Minden hozzájárulást szívesen fogadunk."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Közreműködés"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Új, továbbfejlesztett szkriptrendszer"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Maradunk a Pawn nyelvnél. Egy új fordító robusztusabbá teszi a kódot, a további függvények pedig kibővítik a szerver és a kliens lehetőségeit."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Ismerd meg a fejlesztéseket"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "A közösség fejleszti"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "A szerver teljesen nyílt forráskódú. Segíts a következő kiadás elkészítésében, vagy jelentsd a talált hibákat. Minden hozzájárulás és visszajelzés számít."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "A GitHub-szervezet megnyitása"
+  },
+  "feature.cppApi.title": {
+    "message": "Bővíthető C++ API"
+  },
+  "feature.cppApi.description": {
+    "message": "A Pawn összes szerverfunkciója, valamint a C++ könyvtárai és keretrendszerei elérhetők. A GitHubon te is segíthetsz a szerver fejlesztésében."
+  },
+  "feature.cppApi.linkText": {
+    "message": "Az SDK-tároló megnyitása"
+  },
+  "partners.server.stats": {
+    "message": "{players} játékos {servers} szerveren, szerverenként átlagosan {average} játékos."
+  },
+  "servers.sort.relevance": {
+    "message": "Relevancia"
+  },
+  "servers.sort.players": {
+    "message": "Játékosok"
+  },
+  "servers.search.placeholder": {
+    "message": "Keresés IP-cím vagy név alapján"
+  },
+  "partners.note": {
+    "message": "Ahogy jeleztük, a partnerprogram jelenleg nem fogad új jelentkezéseket. A már lefoglalt hellyel rendelkező szerverek csatlakozhatnak. Más kérdéssel keresd fel a Discordunkat."
+  },
+  "announcement.title": {
+    "message": "Megjelent az open.mp szerver és az indító új verziója!"
+  },
+  "announcement.link": {
+    "message": "További részletek"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Hiba történt a oldalon.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Az oldal nem található",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Sajnos nem találtuk azt az oldalt, amit kerestél.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Kérjük, lépj kapcsolatba az oldal tulajdonosával, ahonnan erre a hivatkozásra léptél, hogy jelezd, hogy a hivatkozás nem működik.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "megjegyzés",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tanács",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "veszély",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "információ",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "figyelem",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Vissza a tetejére",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archívum",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archívum",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Bloglista oldalának navigációja",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Újabb bejegyzések",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Régebbi bejegyzések",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Egy perc olvasás|{readingTime} perc olvasás",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Címkék",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "Elérhető az open.mp szerver {version} verziója, hibajavításokkal, jobb teljesítménnyel és új funkciókkal!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "Ez a verzió új vezérlőket ad az NPC-k járműveihez, javítja a mozgásukat, és hálózati, illetve szkriptelési hibákat javít."
+  },
+  "announcement.changelog": {
+    "message": "A szerver változásai"
+  },
+  "announcement.download": {
+    "message": "Szerver letöltése"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Az indító is frissült!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "Az indítóban javult a játékon belüli felület, a grafikus modok támogatása és a kapcsolat stabilitása."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Megjelent az open.mp indító {version} verziója!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Megjelent az open.mp szerver {version} verziója!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Megjelent az open.mp szerver {serverVersion} és az indító {launcherVersion} verziója!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Az indító újdonságai"
+  },
+  "announcement.dismiss": {
+    "message": "Üzenet bezárása"
+  },
+  "homepage.heroDescription": {
+    "message": "Új többjátékos mod a Grand Theft Auto: San Andreashoz, amely {compatibility} a következővel: {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "teljesen kompatibilis"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Indító letöltése 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Szerver letöltése 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Dokumentáció 📜"
+  },
+  "animations.title": {
+    "message": "open.mp animációböngésző"
+  },
+  "animations.library": {
+    "message": "Könyvtár:"
+  },
+  "animations.selectLibrary": {
+    "message": "Válassz könyvtárat…"
+  },
+  "animations.animation": {
+    "message": "Animáció:"
+  },
+  "animations.selectAnimation": {
+    "message": "Válassz animációt…"
+  },
+  "animations.index": {
+    "message": "Index:"
+  },
+  "animations.frames": {
+    "message": "Képkockák:"
+  },
+  "animations.duration": {
+    "message": "Időtartam:"
+  },
+  "animations.seconds": {
+    "message": "másodperc"
+  },
+  "animations.description": {
+    "message": "Leírás:"
+  },
+  "animations.notes": {
+    "message": "Megjegyzések:"
+  },
+  "animations.videoCredits": {
+    "message": "A videó készítői:"
+  },
+  "animations.usageExamples": {
+    "message": "Használati példák:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Az előnézethez válassz animációt a fenti menüből."
+  },
+  "animations.browsePrompt": {
+    "message": "Böngéssz az animációk között, és nézd meg az előnézetüket."
+  },
+  "animations.usedByFunctions": {
+    "message": "Ezeket az animációkat az ApplyAnimation/ApplyActorAnimation függvények használják."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "A nyavalyás vonat nyomában…"
+  },
+  "serverRow.copied": {
+    "message": "MÁSOLVA"
+  },
+  "serverRow.copy": {
+    "message": "MÁSOLÁS"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Partnerszerver!"
+  },
+  "serverRow.ompTitle": {
+    "message": "open.mp szerver"
+  },
+  "serverRow.players": {
+    "message": "Játékosok"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Vissza a szerverekhez"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← Vissza a partnerszerverekhez"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Gyors csatlakozás"
+  },
+  "serverInfo.noDescription": {
+    "message": "Ehhez a szerverhez nincs leírás"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Online játékosok"
+  },
+  "serverInfo.modVersion": {
+    "message": "Modverzió"
+  },
+  "serverInfo.language": {
+    "message": "Nyelv"
+  },
+  "serverInfo.rule": {
+    "message": "Szabály"
+  },
+  "serverInfo.value": {
+    "message": "Érték"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Frissítve: {time} ezelőtt"
+  },
+  "serverInfo.notFound": {
+    "message": "A szerver nem található. Lehet, hogy nem elérhető, vagy már nincs a listán."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Dokumentáció"
+  },
+  "theme.footer.title.Community": {
+    "message": "Közösség"
+  },
+  "theme.footer.title.More": {
+    "message": "Továbbiak"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Bevezetés"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Átállás open.mp-re"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Támogatás"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Szerverek"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Blog"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Animációk"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "UID-generátor"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Szerzői jog © {year} open.mp. Docusaurusszal készült."
+  },
+  "navbar.item.Docs": {
+    "message": "Dokumentáció"
+  },
+  "navbar.item.Blog": {
+    "message": "Blog"
+  },
+  "navbar.item.Forums": {
+    "message": "Fórumok"
+  },
+  "navbar.item.Servers": {
+    "message": "Szerverek"
+  },
+  "navbar.item.Partners": {
+    "message": "Partnerek"
+  },
+  "navbar.item.Donate": {
+    "message": "Támogatás"
+  },
+  "serverInfo.copied": {
+    "message": "Másolva",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Másolás",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Játékmód",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Értesítés bezárása",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Animációk",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Interaktív open.mp (SA-MP) animációböngésző videós előnézettel",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "A videó nem érhető el",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Játékosokhoz",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Szereplőkhöz",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Többjátékos mod a Grand Theft Auto: San Andreashoz, teljes visszamenőleges kompatibilitással a San Andreas Multiplayerrel",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Partnerprogram-értesítés bezárása",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Partnerszerverek",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Az open.mp-t vagy az SA-MP-t használó San Andreas-szerverek listája",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Másolva",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "Az UID-makró a vágólapra került.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "UID-generátor",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "UID generálása az IComponent vagy az IExtension egyedi azonosítójához",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Csatlakozás",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Saját szervered",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Szerver",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Cím",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Játékosok",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Becenév",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "SA-MP-verzió",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Kedvencek",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Internet",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Partnerek",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Nemrég látogatott",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Becenév…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Keresés szervernév vagy játékmód alapján",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Név",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Késleltetés",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Játékmód",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Csatlakozás",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Hozzáadás a kedvencekhez",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Szerveradatok másolása",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Szabály",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Érték",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Szűrők:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Csak open.mp szerverek",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Szerverek játékosokkal",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Jelszó nélküli szerverek",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Nyelv:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Hozzáadva a kedvencekhez!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "Az open.mp indító mintaszerverek listájával",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Játékos",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Pontszám",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "MÁSOLÁS",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "Ezt a visszahívást egy NPC is kezdeményezheti.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "függvény",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "visszahívás",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Ez a(z) {name} a(z) {version} verzióban jelent meg. Korábbi verziókban nem működik!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "A(z) {serverName} felkerült a várólistára. Ha 48 órán belül nem jelenik meg, keress minket Discordon.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Szerver beküldve!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Állapot: {status}, {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "A beküldés sikertelen!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "Hiba történt a szerver beküldésekor",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Hiba",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "A szerverlista oldalai",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Előző oldal",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Következő oldal",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "Név",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Játékmód",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Nyelv",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Minden nyelv",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "A szerver hozzáadása ablak bezárása",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "Előző oldal",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Következő oldal",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "open.mp indító",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Az open.mp indító kiadásainak letöltése",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Játssz a GTA San Andreasszal többjátékos módban open.mp és SA-MP szervereken.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "open.mp szerver",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Az open.mp szerver kiadásainak letöltése",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Üzemeltess saját GTA San Andreas többjátékos szervert.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Szerverek",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Az open.mp-t és az SA-MP-t használó San Andreas-szerverek listája",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "LEGÚJABB",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Megjelent: {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Főbb változások",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "A teljes változásnapló megtekintése",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "A kiadás megtekintése a GitHubon",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "A kiadás megtekintése a GitHubon",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* A DynSSL verzióhoz telepíteni kell a libssl könyvtárat a Linux-disztribúcióra.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Régebbi kiadások elrejtése",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "{count} régebbi kiadás megtekintése",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Minden kiadás nyílt forráskódú. Fordítsd le forrásból, vagy töltsd le közvetlenül a GitHubról.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Letöltés a GitHubról",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "Az oldal nem található",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Képernyőkép a GTA vonatos küldetéséről",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Kezdőlap",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Dokumentáció",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Szerverek",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blogbejegyzés oldalának navigációja",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Újabb bejegyzés",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Régebbi bejegyzés",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Összes címke megtekintése",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Rendszermód",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "Világos mód",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "Sötét mód",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Váltás a sötét és világos mód között (jelenleg {mode} van beállítva)",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Navigációs sáv a jelenlegi oldalhoz",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Dokumentációs oldal",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Előző oldal",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Következő oldal",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Egy oldal|{count} oldal",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} címkével:  \"{tagName}\" ",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Verzió: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Ez a dokumentáció a jövőbeli {siteTitle} {versionLabel} verzióhoz.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Ez a {siteTitle} dokumentáció a {versionLabel} verzióhoz, amely már nem támogatott.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Az aktuális dokumentáció itt található: {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "legutolsó verzió",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Szerkesztés GitHub-on",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Közvetlen hivatkozás erre: {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date} napján",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " {user} által",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Utolsó frissítés{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Verziók",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Címkék:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Bezárás",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "vigyázat",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigáció a blog legutóbbi bejegyzései között",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "A(z) '{label}' nevű oldalsáv kategória kinyitása",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "A(z) '{label}' nevű oldalsáv kategória becsukása",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(új lapon nyílik meg)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Fő",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Nyelvek",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Ezen az oldalon",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Olvass tovább",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "További információ erről: {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Másolás",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Másolva",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Másolás a vágólapra",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Szótörés ki- vagy bekapcsolása",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Kezdőlap",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Oldalsáv összecsukása",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Oldalsáv összecsukása",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Dokumentációs oldalsáv",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Navigációs sáv bezárása",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Vissza a főmenühöz",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Navigációs sáv ki- és bekapcsolása",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Legördülő menü megnyitása",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Legördülő menü bezárása",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Oldalsáv kibontása",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Oldalsáv kibontása",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Összes eredmény megtekintése ({count})"
+  },
+  "theme.SearchBar.label": {
+    "message": "Keresés",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Keresési kérés törlése",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Mégse",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Dokumentumok keresése",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Tegyél fel egy újabb kérdést…",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "A válasz készül…",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "Keresés",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "küldés",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Keresés",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Vissza a kulcsszavas kereséshez",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Vissza a kulcsszavas kereséshez",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Legutóbbi",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Nincsenek legutóbbi keresések",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Mentsük el ezt a keresést",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Törölje ezt a keresést az előzményekből",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Kedvencek",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Törölje ezt a keresést a kedvencekből",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Legutóbbi beszélgetések",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Beszélgetés törlése az előzményekből",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Nem sikerült az eredményeket lekérni",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Ellenőrizze a hálózati kapcsolatot.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "Kérdezd az AI-t: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "A válaszokat mesterséges intelligencia állítja elő, és hibásak lehetnek. Ellenőrizd őket.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Kapcsolódó források",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "A válasz készül…",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Másolás",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Másolva!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Másolás",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Tetszik",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Nem tetszik",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Köszönjük a visszajelzést!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Keresés…",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Keresés erre: ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "Keresett kifejezés:",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "kiválasztás",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Kérdés elküldése",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter billentyű",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "navigációhoz",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Felfelé nyíl",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Lefelé nyíl",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Bezárás",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Escape billentyű",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Motor:",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Vissza a kereséshez",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "Nincs eredmény",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Próbálja meg keresni",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Úgy gondolja, hogy ez a keresés eredményt kellene adnia?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Adja meg nekünk.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Dokumentumok keresése",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Egy dokumentum|{count} dokumentumok",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "\"{query}\" keresési eredményei",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Keresés a webhelyen",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Írja be a keresését ide",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Keresés",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Az Algolia támogatásával",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Nem található eredmény",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Új keresési eredmények betöltése...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Egy bejegyzés|{count} bejegyzés",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} a(z) \"{tagName}\" címkével",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Szerzők",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Az összes szerző megtekintése",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Ez a szerző még nem tett közzé bejegyzéseket.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Nem nyilvános oldal",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Ez az oldal nem nyilvános. A keresőmotorok nem indexelik, és csak a közvetlen hivatkozással rendelkező felhasználók érhetik el.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Vázlatoldal",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Ez az oldal vázlat. Csak fejlesztési módban látható, és kimarad az éles verzióból.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 elem|{count} elemek",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Próbáld újra",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Ugrás a fő tartalomhoz",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Dokumentáció szűrése",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Szűrő törlése",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Nincs megfelelő dokumentum",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Próbálj másik keresőkifejezést.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Popolna združljivost z obstoječimi skriptami in odjemalci"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Imaš staro datoteko AMX? Naloži jo naravnost na strežnik open.mp in se prijateljem pridruži z odjemalcem SA-MP. Če želiš izboljšati kodo, si oglej dokumentacijo."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Prvi koraki"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Nov in izboljšan sistem za skriptiranje"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp podpira obstoječe skripte in vtičnike SA-MP. Sodobni API ponuja podatkovne strukture, asinhroni vhod in izhod ter več možnosti za izdelavo boljših modifikacij."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Več informacij"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Prijazno do razvijalcev"
+  },
+  "feature.developerFriendly.description": {
+    "message": "open.mp razvijamo z doslednim API-jem, posodobljeno dokumentacijo, ustrežljivo skupnostjo in popolnoma odprto izvorno kodo. Vsak prispevek je dobrodošel."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Prispevaj"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Nov in izboljšan sistem za skriptiranje"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Še naprej uporabljamo Pawn. Novi prevajalnik pomaga pisati zanesljivejšo kodo, dodatne funkcije pa razširjajo možnosti strežnika in odjemalca."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Spoznaj izboljšave"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Razvija skupnost"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Strežnik je popolnoma odprtokoden. Pomagaj pripraviti naslednjo izdajo ali prijavi napake, ki jih opaziš. Cenimo vsak prispevek in vsako povratno informacijo."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Obišči organizacijo na GitHubu"
+  },
+  "feature.cppApi.title": {
+    "message": "Razširljiv API za C++"
+  },
+  "feature.cppApi.description": {
+    "message": "Uporabi vse strežniške funkcije iz Pawna ter knjižnice in ogrodja C++. Pri izboljšavah strežnika lahko sodeluješ na GitHubu."
+  },
+  "feature.cppApi.linkText": {
+    "message": "Oglej si repozitorij SDK"
+  },
+  "partners.server.stats": {
+    "message": "{players} igralcev na {servers} strežnikih, povprečno {average} igralcev na strežnik."
+  },
+  "servers.sort.relevance": {
+    "message": "Ustreznost"
+  },
+  "servers.sort.players": {
+    "message": "Igralci"
+  },
+  "servers.search.placeholder": {
+    "message": "Išči po IP-ju ali imenu"
+  },
+  "partners.note": {
+    "message": "Kot smo napovedali, partnerski program trenutno ne sprejema prijav. Strežniki z rezerviranim mestom se še lahko pridružijo. Druga vprašanja nam zastavi na Discordu."
+  },
+  "announcement.title": {
+    "message": "Na voljo je nova različica strežnika in zaganjalnika open.mp!"
+  },
+  "announcement.link": {
+    "message": "Preberi več"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Ta stran se je zrušila.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Strani ni bilo možno najti",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Iskane strani ni bilo možno najti",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Prosim kontaktirajte lastnike strani, s katere ste sledili povezavi in jih obvestite, da povezava ne deluje.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "opomba",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "namig",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "nevarnost",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "informacija",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "pozor",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Nazaj na vrh",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Arhiv",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Arhiv",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navigacija kazala po blogu",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Novejši prispevki",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Starejši prispevki",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Minuta branja|Minuti branja|{readingTime} minute branja|{readingTime} minut branja",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Oznake",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "Na voljo je strežnik open.mp {version} s popravki, boljšo zmogljivostjo in novimi funkcijami!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "Ta izdaja dodaja upravljanje vozil NPC-jev, izboljšuje njihovo premikanje in odpravlja težave z omrežjem in skriptami."
+  },
+  "announcement.changelog": {
+    "message": "Spremembe strežnika"
+  },
+  "announcement.download": {
+    "message": "Prenesi strežnik"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Posodobljen je tudi zaganjalnik!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "Zaganjalnik izboljšuje prikaz v igri, podporo za grafične modifikacije in stabilnost povezave."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Zaganjalnik open.mp {version} je na voljo!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Strežnik open.mp {version} je na voljo!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Na voljo sta strežnik open.mp {serverVersion} in zaganjalnik {launcherVersion}!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Novosti v zaganjalniku"
+  },
+  "announcement.dismiss": {
+    "message": "Zapri to sporočilo"
+  },
+  "homepage.heroDescription": {
+    "message": "Nova večigralska modifikacija za Grand Theft Auto: San Andreas, ki je {compatibility} z modifikacijo {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "popolnoma združljiva"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Prenesi zaganjalnik 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Prenesi strežnik 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Dokumentacija 📜"
+  },
+  "animations.title": {
+    "message": "Pregledovalnik animacij open.mp"
+  },
+  "animations.library": {
+    "message": "Knjižnica:"
+  },
+  "animations.selectLibrary": {
+    "message": "Izberi knjižnico…"
+  },
+  "animations.animation": {
+    "message": "Animacija:"
+  },
+  "animations.selectAnimation": {
+    "message": "Izberi animacijo…"
+  },
+  "animations.index": {
+    "message": "Kazalo:"
+  },
+  "animations.frames": {
+    "message": "Sličice:"
+  },
+  "animations.duration": {
+    "message": "Trajanje:"
+  },
+  "animations.seconds": {
+    "message": "s"
+  },
+  "animations.description": {
+    "message": "Opis:"
+  },
+  "animations.notes": {
+    "message": "Opombe:"
+  },
+  "animations.videoCredits": {
+    "message": "Avtorji videa:"
+  },
+  "animations.usageExamples": {
+    "message": "Primeri uporabe:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "V zgornjem meniju izberi animacijo za predogled."
+  },
+  "animations.browsePrompt": {
+    "message": "Prebrskaj in si oglej vse razpoložljive animacije."
+  },
+  "animations.usedByFunctions": {
+    "message": "Te animacije uporabljata funkciji ApplyAnimation/ApplyActorAnimation."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Za tistim presnetim vlakom…"
+  },
+  "serverRow.copied": {
+    "message": "KOPIRANO V ODLOŽIŠČE"
+  },
+  "serverRow.copy": {
+    "message": "KOPIRAJ"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Partnerski strežnik!"
+  },
+  "serverRow.ompTitle": {
+    "message": "Strežnik open.mp"
+  },
+  "serverRow.players": {
+    "message": "Igralci"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Nazaj na strežnike"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← Nazaj na partnerske strežnike"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Hitra pridružitev"
+  },
+  "serverInfo.noDescription": {
+    "message": "Ta strežnik nima opisa"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Igralci na spletu"
+  },
+  "serverInfo.modVersion": {
+    "message": "Različica modifikacije"
+  },
+  "serverInfo.language": {
+    "message": "Jezik"
+  },
+  "serverInfo.rule": {
+    "message": "Pravilo"
+  },
+  "serverInfo.value": {
+    "message": "Vrednost"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Posodobljeno pred {time}"
+  },
+  "serverInfo.notFound": {
+    "message": "Strežnika ni bilo mogoče najti. Morda ni dosegljiv ali pa ga ni več na seznamu."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Dokumentacija"
+  },
+  "theme.footer.title.Community": {
+    "message": "Skupnost"
+  },
+  "theme.footer.title.More": {
+    "message": "Več"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Uvod"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Prehod na open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Prispevaj donacijo"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Strežniki"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Blog"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Animacije"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "Generator UID"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Avtorske pravice © {year} open.mp. Izdelano z Docusaurusom."
+  },
+  "navbar.item.Docs": {
+    "message": "Dokumentacija"
+  },
+  "navbar.item.Blog": {
+    "message": "Blog"
+  },
+  "navbar.item.Forums": {
+    "message": "Forumi"
+  },
+  "navbar.item.Servers": {
+    "message": "Strežniki"
+  },
+  "navbar.item.Partners": {
+    "message": "Partnerji"
+  },
+  "navbar.item.Donate": {
+    "message": "Prispevaj donacijo"
+  },
+  "serverInfo.copied": {
+    "message": "Kopirano v odložišče",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Kopiraj",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Način igre",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Zapri obvestilo",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Animacije",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Interaktivni pregledovalnik animacij open.mp (SA-MP) z videopredogledi",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Video ni na voljo",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Za igralce",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Za igralne like",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Večigralska modifikacija za Grand Theft Auto: San Andreas s popolno združljivostjo s San Andreas Multiplayer",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Zapri obvestilo o partnerstvu",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Partnerski strežniki",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Seznam strežnikov San Andreas, ki uporabljajo open.mp ali SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Kopirano v odložišče",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "Makro UID je kopiran v odložišče.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "Generator UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Ustvari UID kot enolični identifikator za IComponent ali IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Poveži se",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Tvoj strežnik",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Strežnik",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Naslov",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Igralci",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Vzdevek",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "Različica SA-MP",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Priljubljeni",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Internet",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Partnerji",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Nedavno obiskani",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Vzdevek…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Išči po imenu strežnika ali načinu igre",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Ime",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Zakasnitev",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Način igre",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Poveži se",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Dodaj med priljubljene",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Kopiraj podatke o strežniku",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Pravilo",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Vrednost",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Filtri:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Samo strežniki open.mp",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Strežniki z igralci",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Strežniki brez gesla",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Jezik:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Dodano med priljubljene!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "Zaganjalnik open.mp prikazuje seznam vzorčnih strežnikov",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Igralec",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Rezultat",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "KOPIRAJ",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "To povratno funkcijo lahko pokliče tudi NPC.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "funkcija",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "povratna funkcija",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Dodano v različici {version}. Ta element v starejših različicah ne deluje. Vrsta: {name}.",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "Strežnik {serverName} je na čakalnem seznamu. Če se ne prikaže v 48 urah, nam piši na Discordu.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Strežnik je bil poslan!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Stanje {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Pošiljanje ni uspelo!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "Pri pošiljanju strežnika je prišlo do napake",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Napaka",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "Strani seznama strežnikov",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Prejšnja stran",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Naslednja stran",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "Ime",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Način igre",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Jezik",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Vsi jeziki",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "Zapri okno za dodajanje strežnika",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "Prejšnji",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Naslednji",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "Zaganjalnik open.mp",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Prenesi izdaje zaganjalnika open.mp",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Igraj GTA San Andreas z drugimi igralci na strežnikih open.mp in SA-MP.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "Strežnik open.mp",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Prenesi izdaje strežnika open.mp",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Gosti svoj večigralski strežnik za GTA San Andreas.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Strežniki",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Seznam strežnikov San Andreas, ki uporabljajo open.mp in SA-MP",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "NAJNOVEJŠA IZDAJA",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Objavljeno {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Najpomembnejše spremembe",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Oglej si vse spremembe",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Oglej si izdajo na GitHubu",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Oglej si izdajo na GitHubu",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* Različica DynSSL zahteva nameščeno knjižnico libssl v tvoji distribuciji Linuxa.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Skrij starejše izdaje",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "Prikaži starejše izdaje ({count})",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Vse izdaje so odprtokodne. Zgradi jih iz izvorne kode ali prenesi neposredno z GitHuba.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Prenesi z GitHuba",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "Strani ni bilo možno najti",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Posnetek zaslona misije z vlakom v GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Domov",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Dokumentacija",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Strežniki",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Navigacija prispevka na blogu",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Novejši prispevek",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Starejši prispevek",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Poglej vse oznake",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Sistemski način",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "svetli način",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "temni način",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Preklopi med temnim in svetlim načinom (trenutno {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Drobtine",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Strani z dokumenti",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Prejšnji",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Naslednji",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "En dokument ima oznako|Dva dokumenta imata oznako|{count} dokumenti imajo oznako|{count} dokumentov ima oznako",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} ima oznako \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Verzija: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "To je še neobjavljena dokumentacija za {siteTitle}, verzijo {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "To je dokumentacija za {siteTitle} {versionLabel}, ki ni več aktivno vzdrževana.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Za najnovejšo dokumentacijo, poglejte {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "zadnja verzija",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Uredi to stran",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direktna povezava na {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Nazadnje posodobil {byUser}, {atDate}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Verzije",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Oznake:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Zapri",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "opozorilo",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigacija svežih prispevkov na blogu",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Razširite kategorijo stranske vrstice '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Strni kategorijo stranske vrstice '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(odpre se v novem zavihku)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Glavna navigacija",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Jeziki",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Na tej strani",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Preberite več",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Preberite več o {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopiraj",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Kopirano v odložišče",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Kopiraj v odložišče",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Preklopi oblivanje besedila",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Domača stran",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Skrči stransko vrstico",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Skrči stransko vrstico",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Stranska vrstica dokumentacije",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Zapri navigacijsko vrstico",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Nazaj na glavni meni",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Preklopi navigacijsko vrstico",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Odpri spustni meni",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Zapri spustni meni",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Razširi stransko vrstico",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Razširi stransko vrstico",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Poglej vse rezultate ({count})"
+  },
+  "theme.SearchBar.label": {
+    "message": "Išči",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Izprazni iskalni niz",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Prekliči",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Išči po dokumentaciji",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Zastavi drugo vprašanje …",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "Priprava odgovora …",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "Išči",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "pošlji",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Išči",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Nazaj na iskanje po ključnih besedah",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Nazaj na iskanje po ključnih besedah",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Pred kratkim",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Ni iskanj pred kratkim",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Shrani to iskanje",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Umakni iskanje iz zgodovine",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Priljubljena iskanja",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Umakni iskanje iz priljubljenih",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Nedavni pogovori",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Odstrani ta pogovor iz zgodovine",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Rezultatov ni bilo možno naložiti",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Preverite vašo spletno povezavo.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "Vprašaj umetno inteligenco: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "Odgovore ustvari umetna inteligenca in lahko vsebujejo napake. Preveri odgovore.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Povezani viri",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "Priprava odgovora …",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Kopiraj",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Kopirano!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Kopiraj",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Všeč mi je",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Ni mi všeč",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Hvala za povratne informacije!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Iskanje …",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Iskanje izraza: ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "Iskani izraz:",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "izberi",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Pošlji vprašanje",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "tipka Enter",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "naslednji/prejšnji rezultat",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Tipka puščica navzgor",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Tipka puščica navzdol",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Zapri",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Tipka Escape",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Iskanje",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Nazaj na iskanje",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "Ni rezultatov za",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Poskusite poiskati",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Mislite, da bi morali obstajati rezultati?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Obvestite nas.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Išči po dokumentaciji",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Dokument najden|Dokumenta najdena|{count} dokumenti najdeni|{count} dokumentov najdenih",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Rezultati iskanja za \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Išči po dokumentaciji",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Vnesite iskalni niz tukaj",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Išči",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Poganja Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Ni bilo rezultatov",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Nalagam nove rezultate...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "En prispevek|Dva prispevka|{count} prispevki|{count} prispevkov",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} ima oznako \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Avtorji",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Prikaži vse avtorje",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Ta avtor še ni napisal nobene objave.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Nezabeležena stran",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Ta stran ni zabeležena. Iskalniki je ne bodo indeksirali, do nje bodo uporabniki lahko dostopali le z direktno povezavo.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Osnutek strani",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Ta stran je osnutek. Viden bo samo v razvijalcu in bo izključen iz proizvodne zgradbe.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 vnos|2 vnosa|{count} vnosi|{count} vnosov",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Poskusite ponovno",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Preskoči na vsebino",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Filtriraj dokumentacijo",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Počisti filter",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Ni ustreznih dokumentov",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Poskusi z drugim iskalnim izrazom.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}
