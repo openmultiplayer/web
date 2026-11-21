@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Compatibilitate deplină cu scripturile și clienții existenți"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Ai un fișier AMX vechi? Încarcă-l direct pe serverul open.mp și joacă alături de prieteni prin clientul SA-MP. Consultă documentația când vrei să îmbunătățești codul."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Primii pași"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Sistem de scriptare nou și îmbunătățit"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp acceptă scripturile și pluginurile SA-MP existente. API-ul modern oferă structuri de date și operații asincrone de intrare și ieșire pentru moduri mai bune."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Află mai multe"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Conceput pentru dezvoltatori"
+  },
+  "feature.developerFriendly.description": {
+    "message": "Construim open.mp cu un API consecvent, documentație actualizată, o comunitate săritoare și cod complet deschis. Orice contribuție este binevenită."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Contribuie"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Sistem de scriptare nou și îmbunătățit"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "Continuăm să folosim Pawn, cu un compilator nou pentru un cod mai robust și mai multe funcții pentru server și client."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Descoperă îmbunătățirile"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Dezvoltat de comunitate"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "Codul serverului este complet deschis. Ajută la pregătirea următoarei versiuni sau raportează erorile întâlnite. Orice contribuție și orice sugestie contează."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Vizitează organizația pe GitHub"
+  },
+  "feature.cppApi.title": {
+    "message": "API C++ extensibil"
+  },
+  "feature.cppApi.description": {
+    "message": "Folosește funcțiile de server din Pawn și bibliotecile și frameworkurile C++. Poți ajuta la îmbunătățirea serverului pe GitHub."
+  },
+  "feature.cppApi.linkText": {
+    "message": "Vezi depozitul SDK"
+  },
+  "partners.server.stats": {
+    "message": "{players} jucători pe {servers} servere, în medie {average} jucători pe server."
+  },
+  "servers.sort.relevance": {
+    "message": "Relevanță"
+  },
+  "servers.sort.players": {
+    "message": "Jucători"
+  },
+  "servers.search.placeholder": {
+    "message": "Caută după IP sau nume"
+  },
+  "partners.note": {
+    "message": "După cum am anunțat, programul de parteneriat nu primește înscrieri momentan. Serverele care au rezervat un loc se mai pot alătura. Pentru alte întrebări, scrie-ne pe Discord."
+  },
+  "announcement.title": {
+    "message": "Este disponibilă o versiune nouă a serverului și a lansatorului open.mp!"
+  },
+  "announcement.link": {
+    "message": "Citește mai multe aici"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Această pagină s-a blocat.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Pagina nu a fost găsită",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Nu am găsit ce căutai.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Contactează proprietarul site-ului care te-a trimis la adresa inițială și anunță-l că linkul nu funcționează.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "Notă",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "Sfat",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "Pericol",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "Informații",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "Atenție",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Înapoi sus",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Arhivă",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Arhivă",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navigare prin lista articolelor de pe blog",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Articole mai noi",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Articole mai vechi",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Un minut de lectură|{readingTime} minute de lectură|{readingTime} de minute de lectură",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Etichete",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "Serverul open.mp {version} este disponibil, cu corecții, performanțe îmbunătățite și funcții noi!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "Această versiune adaugă comenzi pentru vehiculele NPC, le îmbunătățește deplasarea și remediază probleme de rețea și de scriptare."
+  },
+  "announcement.changelog": {
+    "message": "Modificările serverului"
+  },
+  "announcement.download": {
+    "message": "Descarcă serverul"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Și lansatorul a fost actualizat!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "Lansatorul îmbunătățește interfața suprapusă în joc, suportul pentru moduri grafice și stabilitatea conexiunii."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "Lansatorul open.mp {version} este disponibil!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "Serverul open.mp {version} este disponibil!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "Serverul open.mp {serverVersion} și lansatorul {launcherVersion} sunt disponibile!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Noutăți în lansator"
+  },
+  "announcement.dismiss": {
+    "message": "Închide acest mesaj"
+  },
+  "homepage.heroDescription": {
+    "message": "Un nou mod multiplayer pentru Grand Theft Auto: San Andreas, {compatibility} cu {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "pe deplin compatibil"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Descarcă lansatorul 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Descarcă serverul 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Documentație 📜"
+  },
+  "animations.title": {
+    "message": "Vizualizator de animații open.mp"
+  },
+  "animations.library": {
+    "message": "Bibliotecă:"
+  },
+  "animations.selectLibrary": {
+    "message": "Alege o bibliotecă…"
+  },
+  "animations.animation": {
+    "message": "Animație:"
+  },
+  "animations.selectAnimation": {
+    "message": "Alege o animație…"
+  },
+  "animations.index": {
+    "message": "Index:"
+  },
+  "animations.frames": {
+    "message": "Cadre:"
+  },
+  "animations.duration": {
+    "message": "Durată:"
+  },
+  "animations.seconds": {
+    "message": "secunde"
+  },
+  "animations.description": {
+    "message": "Descriere:"
+  },
+  "animations.notes": {
+    "message": "Note:"
+  },
+  "animations.videoCredits": {
+    "message": "Credite video:"
+  },
+  "animations.usageExamples": {
+    "message": "Exemple de utilizare:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Alege o animație din meniul de mai sus pentru a o previzualiza."
+  },
+  "animations.browsePrompt": {
+    "message": "Explorează și previzualizează toate animațiile disponibile."
+  },
+  "animations.usedByFunctions": {
+    "message": "Aceste animații sunt folosite de funcțiile ApplyAnimation/ApplyActorAnimation."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Pe urmele blestematului de tren…"
+  },
+  "serverRow.copied": {
+    "message": "COPIAT"
+  },
+  "serverRow.copy": {
+    "message": "COPIAZĂ"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Server partener!"
+  },
+  "serverRow.ompTitle": {
+    "message": "Server open.mp"
+  },
+  "serverRow.players": {
+    "message": "Jucători"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Înapoi la servere"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← Înapoi la serverele partenere"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Conectare rapidă"
+  },
+  "serverInfo.noDescription": {
+    "message": "Acest server nu are descriere"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Jucători online"
+  },
+  "serverInfo.modVersion": {
+    "message": "Versiunea modului"
+  },
+  "serverInfo.language": {
+    "message": "Limbă"
+  },
+  "serverInfo.rule": {
+    "message": "Regulă"
+  },
+  "serverInfo.value": {
+    "message": "Valoare"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "Actualizat acum {time}"
+  },
+  "serverInfo.notFound": {
+    "message": "Serverul nu a fost găsit. Este posibil să fie offline sau să fi fost scos din listă."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Documentație"
+  },
+  "theme.footer.title.Community": {
+    "message": "Comunitate"
+  },
+  "theme.footer.title.More": {
+    "message": "Mai multe"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Introducere"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Migrare la open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Donează"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Servere"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Blog"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Animații"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "Generator de UID"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Drepturi de autor © {year} open.mp. Realizat cu Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "Documentație"
+  },
+  "navbar.item.Blog": {
+    "message": "Blog"
+  },
+  "navbar.item.Forums": {
+    "message": "Forumuri"
+  },
+  "navbar.item.Servers": {
+    "message": "Servere"
+  },
+  "navbar.item.Partners": {
+    "message": "Parteneri"
+  },
+  "navbar.item.Donate": {
+    "message": "Donează"
+  },
+  "serverInfo.copied": {
+    "message": "Copiat",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Copiază",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Mod de joc",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Închide notificarea",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Animații",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Vizualizator interactiv de animații open.mp (SA-MP), cu previzualizări video",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Clip indisponibil",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Pentru jucători",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Pentru actori",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Un mod multiplayer pentru Grand Theft Auto: San Andreas, pe deplin compatibil cu San Andreas Multiplayer",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Închide avizul despre parteneriat",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Servere partenere",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Lista serverelor San Andreas care folosesc open.mp sau SA-MP",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Copiat",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "Macrocomanda UID a fost copiată în clipboard.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "Generator de UID",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Generează un UID ca identificator unic pentru IComponent sau IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Conectează-te",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Serverul tău",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Server",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Adresă",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Jucători",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Pseudonim",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "Versiunea SA-MP",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Favorite",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Internet",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Parteneri",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Accesate recent",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Pseudonim…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Caută după numele serverului sau modul de joc",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Nume",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Ping",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Mod de joc",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Conectează-te",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Adaugă la favorite",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Copiază informațiile serverului",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Regulă",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Valoare",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Filtre:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Doar servere open.mp",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Servere cu jucători",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Servere fără parolă",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Limbă:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Adăugat la favorite!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "Lansatorul open.mp afișează o listă de servere demonstrative",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Jucător",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Scor",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "COPIAZĂ",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "Acest callback poate fi apelat și de un NPC.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "funcție",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "callback",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Disponibil din versiunea {version}. Versiunile anterioare nu acceptă acest element. Tip: {name}.",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "{serverName} a fost adăugat pe lista de așteptare. Dacă nu apare în 48 de ore, contactează-ne pe Discord.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Server trimis!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Stare {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Trimiterea a eșuat!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "A apărut o eroare la trimiterea serverului",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Eroare",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "Pagini din lista de servere",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Pagina anterioară",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Pagina următoare",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "Nume",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Mod de joc",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Limbă",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Toate limbile",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "Închide fereastra de adăugare a serverului",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "Anterior",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Următor",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "Lansatorul open.mp",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Descarcă versiunile lansatorului open.mp",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Joacă GTA San Andreas multiplayer pe serverele open.mp și SA-MP.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "Serverul open.mp",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Descarcă versiunile serverului open.mp",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Găzduiește propriul server multiplayer GTA San Andreas.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Servere",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Lista serverelor San Andreas care folosesc open.mp și SA-MP",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "CEA MAI NOUĂ VERSIUNE",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Publicat la {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Noutăți principale",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Vezi lista completă a modificărilor",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Vezi versiunea pe GitHub",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Vezi versiunea pe GitHub",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* Versiunea DynSSL necesită biblioteca libssl instalată în distribuția ta Linux.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Ascunde versiunile mai vechi",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "Vezi versiunile mai vechi ({count})",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Toate versiunile au codul deschis. Compilează din surse sau descarcă direct de pe GitHub.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Descarcă de pe GitHub",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "Pagina nu a fost găsită",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Captură de ecran din misiunea cu trenul din GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Acasă",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Documentație",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Servere",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Navigare între articolele de pe blog",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Articol mai nou",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Articol mai vechi",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Vezi toate etichetele",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Tema sistemului",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "Temă luminoasă",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "Temă întunecată",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Comută între tema întunecată și cea luminoasă (acum: {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Calea de navigare",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Pagini de documentație",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Anterior",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Următor",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Un document etichetat|{count} documente etichetate|{count} de documente etichetate",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} cu „{tagName}”",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Versiune: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Aceasta este documentația nepublicată pentru {siteTitle}, versiunea {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Aceasta este documentația pentru {siteTitle} {versionLabel}, o versiune pentru care nu se mai oferă întreținere activă.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Pentru documentația actualizată, consultă {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "cea mai nouă versiune",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Editează această pagină",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Link direct către {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " la {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " de {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Ultima actualizare{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versiuni",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Etichete:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Închide",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "Avertisment",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigare între articolele recente de pe blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Extinde categoria „{label}” din bara laterală",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Restrânge categoria „{label}” din bara laterală",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(se deschide într-o filă nouă)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Navigare principală",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Limbi",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Pe această pagină",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Citește mai mult",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Citește mai multe despre {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copiază",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copiat",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copiază codul în clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Activează sau dezactivează împărțirea liniilor",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Pagina de pornire",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Restrânge bara laterală",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Restrânge bara laterală",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Bara laterală a documentației",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Închide bara de navigare",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Înapoi la meniul principal",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Afișează sau ascunde bara de navigare",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Deschide meniul derulant",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Închide meniul derulant",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Extinde bara laterală",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Extinde bara laterală",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Vezi toate cele {count} rezultate"
+  },
+  "theme.SearchBar.label": {
+    "message": "Caută",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Șterge căutarea",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Anulează",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Caută în documentație",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Pune o altă întrebare…",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "Se generează răspunsul…",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "caută",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "trimite",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Caută",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Înapoi la căutarea după cuvinte-cheie",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Înapoi la căutarea după cuvinte-cheie",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Recente",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Nu există căutări recente",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Salvează căutarea",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Șterge căutarea din istoric",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Favorite",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Elimină căutarea din favorite",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Conversații recente",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Șterge conversația din istoric",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Rezultatele nu au putut fi încărcate",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Verifică-ți conexiunea la rețea.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "Întreabă IA: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "Răspunsurile sunt generate de IA și pot conține greșeli. Verifică răspunsurile.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Surse relevante",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "Se pregătește răspunsul…",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Copiază",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Copiat!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Copiază",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Îmi place",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Nu îmi place",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Mulțumim pentru feedback!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Se caută…",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Se caută: ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "S-a căutat:",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "Selectează",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Trimite întrebarea",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Tasta Enter",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "Navighează",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Săgeată în sus",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Săgeată în jos",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Închide",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Tasta Escape",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Furnizat de",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Înapoi la căutare",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "Niciun rezultat pentru",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Încearcă să cauți",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Crezi că această căutare ar trebui să dea rezultate?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Anunță-ne.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Caută în documentație",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "S-a găsit un document|S-au găsit {count} documente|S-au găsit {count} de documente",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Rezultatele căutării pentru „{query}”",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Caută în documentație",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Scrie aici ce vrei să cauți",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Caută",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Furnizat de Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Nu s-au găsit rezultate",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Se încarcă rezultate noi…",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Un articol|{count} articole|{count} de articole",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} cu eticheta „{tagName}”",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Autori",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Vezi toți autorii",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Acest autor nu a publicat încă niciun articol.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Pagină nelistată",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Această pagină nu este listată. Motoarele de căutare nu o indexează. O poți accesa numai prin linkul direct.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Pagină în lucru",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Această pagină este o ciornă. Este vizibilă doar în timpul dezvoltării și va fi exclusă din versiunea de producție.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "Un element|{count} elemente|{count} de elemente",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Încearcă din nou",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Sari la conținutul principal",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Filtrează documentația",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Șterge filtrul",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Niciun document găsit",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Încearcă alt termen de căutare.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}

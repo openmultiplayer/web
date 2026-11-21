@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "Open Multiplayer",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "文件",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Blog": {
+    "message": "部落格",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Forums": {
+    "message": "論壇",
+    "description": "Navbar item with label Forums"
+  },
+  "item.label.Servers": {
+    "message": "伺服器",
+    "description": "Navbar item with label Servers"
+  },
+  "item.label.Partners": {
+    "message": "合作夥伴",
+    "description": "Navbar item with label Partners"
+  },
+  "item.label.Donate": {
+    "message": "贊助",
+    "description": "Navbar item with label Donate"
+  },
+  "logo.alt": {
+    "message": "open.mp 標誌",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Donate to us": {
+    "message": "贊助我們",
+    "description": "Navbar item with label Donate to us"
+  }
+}

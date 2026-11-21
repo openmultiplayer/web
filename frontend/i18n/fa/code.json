@@ -1186,7 +1186,7 @@
     "description": "The title of the authors page"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "View All Authors",
+    "message": "مشاهده همه نویسندگان",
     "description": "The label of the link targeting the blog authors page"
   },
   "theme.blog.author.noPosts": {

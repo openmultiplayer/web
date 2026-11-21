@@ -1,0 +1,1240 @@
+{
+  "feature.fullyBackwardsCompatible.title": {
+    "message": "Volledig achterwaarts compatibel met bestaande scripts en clients"
+  },
+  "feature.fullyBackwardsCompatible.description": {
+    "message": "Heb je nog een oud AMX-bestand? Laad het direct op de open.mp-server en speel met vrienden via de SA-MP-client. Raadpleeg de documentatie als je je code wilt verbeteren."
+  },
+  "feature.fullyBackwardsCompatible.linkText": {
+    "message": "Aan de slag"
+  },
+  "feature.newScriptingSystem.title": {
+    "message": "Nieuw en verbeterd scriptsysteem"
+  },
+  "feature.newScriptingSystem.description": {
+    "message": "open.mp ondersteunt bestaande SA-MP-scripts en plug-ins en biedt een moderne API met datastructuren, asynchrone I/O en meer om betere mods te maken."
+  },
+  "feature.newScriptingSystem.linkText": {
+    "message": "Meer informatie"
+  },
+  "feature.developerFriendly.title": {
+    "message": "Ontwikkelaarsvriendelijk"
+  },
+  "feature.developerFriendly.description": {
+    "message": "We bouwen open.mp met een consistente API, actuele documentatie, een behulpzame community en volledig open broncode. Bijdragen zijn welkom."
+  },
+  "feature.developerFriendly.linkText": {
+    "message": "Bijdragen"
+  },
+  "feature.scriptingSystem.title": {
+    "message": "Nieuw en verbeterd scriptsysteem"
+  },
+  "feature.scriptingSystem.description": {
+    "message": "We blijven Pawn gebruiken, met een nieuwe compiler voor robuustere code en extra functies voor de server en client."
+  },
+  "feature.scriptingSystem.linkText": {
+    "message": "Bekijk de verbeteringen"
+  },
+  "feature.communityDevelopment.title": {
+    "message": "Ontwikkeld door de community"
+  },
+  "feature.communityDevelopment.description": {
+    "message": "De server is volledig opensource. Grote en kleine bijdragen zijn welkom. Help met de volgende versie of meld fouten die je tegenkomt. Je feedback telt."
+  },
+  "feature.communityDevelopment.linkText": {
+    "message": "Bekijk de GitHub-organisatie"
+  },
+  "feature.cppApi.title": {
+    "message": "Uitbreidbare C++-API"
+  },
+  "feature.cppApi.description": {
+    "message": "Gebruik alle serverfuncties uit Pawn en daarnaast C++-bibliotheken en -frameworks. Op GitHub kun je de server mee helpen verbeteren."
+  },
+  "feature.cppApi.linkText": {
+    "message": "Bekijk de SDK-repository"
+  },
+  "partners.server.stats": {
+    "message": "{players} spelers op {servers} servers, gemiddeld {average} spelers per server."
+  },
+  "servers.sort.relevance": {
+    "message": "Relevantie"
+  },
+  "servers.sort.players": {
+    "message": "Spelers"
+  },
+  "servers.search.placeholder": {
+    "message": "Zoeken op IP of naam"
+  },
+  "partners.note": {
+    "message": "Zoals aangekondigd accepteren we momenteel geen aanmeldingen voor het partnerprogramma. Servers met een gereserveerde plek kunnen nog meedoen. Stel andere vragen op onze Discord."
+  },
+  "announcement.title": {
+    "message": "Er is een nieuwe versie van de open.mp-server en -launcher beschikbaar!"
+  },
+  "announcement.link": {
+    "message": "Lees hier meer"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Deze pagina is gecrasht.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Pagina niet gevonden",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "We kunnen niet vinden waar je naar op zoek bent.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Neem contact op met de eigenaar van de website die naar de originele URL heeft geleid en laat weten dat de link niet meer werkt.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "notitie",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "Tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "gevaar",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "Informatie",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "pas op",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll naar boven",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archief",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archief",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Paginanavigatie blog",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Nieuwere items",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Oudere items",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Een minuut leestijd|{readingTime} minuten leestijd",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Labels",
+    "description": "The title of the tag list page"
+  },
+  "announcement.serverVersion": {
+    "message": "open.mp-server {version} is beschikbaar met veel bugfixes, betere prestaties en nieuwe functies!"
+  },
+  "announcement.serverReleaseSummary": {
+    "message": "Deze versie voegt besturing voor NPC-voertuigen toe, verbetert hun bewegingen en verhelpt netwerk- en scriptproblemen."
+  },
+  "announcement.changelog": {
+    "message": "Wijzigingen aan de server"
+  },
+  "announcement.download": {
+    "message": "Server downloaden"
+  },
+  "announcement.launcherUpdate": {
+    "message": "Ook de launcher is bijgewerkt!"
+  },
+  "announcement.launcherReleaseSummary": {
+    "message": "De launcher biedt een betere overlay in het spel, meer ondersteuning voor grafische mods en een stabielere verbinding."
+  },
+  "announcement.launcherReleaseTitle": {
+    "message": "De open.mp-launcher {version} is beschikbaar!"
+  },
+  "announcement.serverReleaseTitle": {
+    "message": "De open.mp-server {version} is beschikbaar!"
+  },
+  "announcement.bothReleaseTitle": {
+    "message": "De open.mp-server {serverVersion} en launcher {launcherVersion} zijn beschikbaar!"
+  },
+  "announcement.seeWhatsNew": {
+    "message": "Nieuw in de launcher"
+  },
+  "announcement.dismiss": {
+    "message": "Dit bericht sluiten"
+  },
+  "homepage.heroDescription": {
+    "message": "Een nieuwe multiplayermod voor Grand Theft Auto: San Andreas die {compatibility} is met {samp}."
+  },
+  "homepage.heroDescription.compatibility": {
+    "message": "volledig compatibel"
+  },
+  "homepage.downloadLauncher": {
+    "message": "Launcher downloaden 🎮"
+  },
+  "homepage.downloadServer": {
+    "message": "Server downloaden 🖥️"
+  },
+  "homepage.documentation": {
+    "message": "Documentatie 📜"
+  },
+  "animations.title": {
+    "message": "open.mp-animatieviewer"
+  },
+  "animations.library": {
+    "message": "Bibliotheek:"
+  },
+  "animations.selectLibrary": {
+    "message": "Kies een bibliotheek…"
+  },
+  "animations.animation": {
+    "message": "Animatie:"
+  },
+  "animations.selectAnimation": {
+    "message": "Kies een animatie…"
+  },
+  "animations.index": {
+    "message": "Index:"
+  },
+  "animations.frames": {
+    "message": "Frames:"
+  },
+  "animations.duration": {
+    "message": "Duur:"
+  },
+  "animations.seconds": {
+    "message": "seconden"
+  },
+  "animations.description": {
+    "message": "Beschrijving:"
+  },
+  "animations.notes": {
+    "message": "Opmerkingen:"
+  },
+  "animations.videoCredits": {
+    "message": "Videocredits:"
+  },
+  "animations.usageExamples": {
+    "message": "Gebruiksvoorbeelden:"
+  },
+  "animations.selectAnimationPrompt": {
+    "message": "Kies bovenaan een animatie om het voorbeeld te bekijken."
+  },
+  "animations.browsePrompt": {
+    "message": "Blader door alle beschikbare animaties en bekijk ze."
+  },
+  "animations.usedByFunctions": {
+    "message": "Deze animaties worden gebruikt door de functies ApplyAnimation/ApplyActorAnimation."
+  },
+  "loadingBanner.followingTrain": {
+    "message": "Achter die verdomde trein aan…"
+  },
+  "serverRow.copied": {
+    "message": "GEKOPIEERD"
+  },
+  "serverRow.copy": {
+    "message": "KOPIEER"
+  },
+  "serverRow.partnerTitle": {
+    "message": "Partnerserver!"
+  },
+  "serverRow.ompTitle": {
+    "message": "open.mp-server"
+  },
+  "serverRow.players": {
+    "message": "Spelers"
+  },
+  "serverInfo.backToServers": {
+    "message": "← Terug naar servers"
+  },
+  "serverInfo.backToPartners": {
+    "message": "← Terug naar partnerservers"
+  },
+  "serverInfo.quickJoin": {
+    "message": "Snel meedoen"
+  },
+  "serverInfo.noDescription": {
+    "message": "Deze server heeft geen beschrijving"
+  },
+  "serverInfo.playersOnline": {
+    "message": "Online spelers"
+  },
+  "serverInfo.modVersion": {
+    "message": "Modversie"
+  },
+  "serverInfo.language": {
+    "message": "Taal"
+  },
+  "serverInfo.rule": {
+    "message": "Regel"
+  },
+  "serverInfo.value": {
+    "message": "Waarde"
+  },
+  "serverInfo.lastUpdated": {
+    "message": "{time} geleden bijgewerkt"
+  },
+  "serverInfo.notFound": {
+    "message": "Deze server kon niet worden gevonden. Mogelijk is hij offline of staat hij niet meer in de lijst."
+  },
+  "theme.footer.title.Documentations": {
+    "message": "Documentatie"
+  },
+  "theme.footer.title.Community": {
+    "message": "Community"
+  },
+  "theme.footer.title.More": {
+    "message": "Meer"
+  },
+  "theme.footer.link.Introduction": {
+    "message": "Inleiding"
+  },
+  "theme.footer.link.open.mp Migration": {
+    "message": "Overstappen op open.mp"
+  },
+  "theme.footer.link.Discord": {
+    "message": "Discord"
+  },
+  "theme.footer.link.GitHub": {
+    "message": "GitHub"
+  },
+  "theme.footer.link.Donate": {
+    "message": "Doneren"
+  },
+  "theme.footer.link.YouTube": {
+    "message": "YouTube"
+  },
+  "theme.footer.link.X": {
+    "message": "X"
+  },
+  "theme.footer.link.Servers": {
+    "message": "Servers"
+  },
+  "theme.footer.link.Blog": {
+    "message": "Blog"
+  },
+  "theme.footer.link.Animations": {
+    "message": "Animaties"
+  },
+  "theme.footer.link.UID Generator": {
+    "message": "UID-generator"
+  },
+  "theme.footer.link.SA-MP": {
+    "message": "SA-MP"
+  },
+  "theme.footer.copyright": {
+    "message": "Copyright © {year} open.mp. Gemaakt met Docusaurus."
+  },
+  "navbar.item.Docs": {
+    "message": "Documentatie"
+  },
+  "navbar.item.Blog": {
+    "message": "Blog"
+  },
+  "navbar.item.Forums": {
+    "message": "Forums"
+  },
+  "navbar.item.Servers": {
+    "message": "Servers"
+  },
+  "navbar.item.Partners": {
+    "message": "Partners"
+  },
+  "navbar.item.Donate": {
+    "message": "Doneren"
+  },
+  "serverInfo.copied": {
+    "message": "Gekopieerd",
+    "description": "Copied server address state"
+  },
+  "serverInfo.copy": {
+    "message": "Kopieer",
+    "description": "Copy server address state"
+  },
+  "serverInfo.gameMode": {
+    "message": "Spelmodus",
+    "description": "Game mode label"
+  },
+  "toast.close": {
+    "message": "Melding sluiten",
+    "description": "Accessible label for closing a toast notification"
+  },
+  "animations.layoutTitle": {
+    "message": "Animaties",
+    "description": "Animations page browser title"
+  },
+  "animations.layoutDescription": {
+    "message": "Interactieve animatieviewer voor open.mp (SA-MP) met videovoorbeelden",
+    "description": "Animations page meta description"
+  },
+  "animations.videoUnavailable": {
+    "message": "Video niet beschikbaar",
+    "description": "Fallback message when an animation video fails to load"
+  },
+  "animations.code.forPlayers": {
+    "message": "// Voor spelers",
+    "description": "Comment in animation usage example for player animations"
+  },
+  "animations.code.forActors": {
+    "message": "// Voor acteurs",
+    "description": "Comment in animation usage example for actor animations"
+  },
+  "homepage.layoutDescription": {
+    "message": "Een multiplayermod voor Grand Theft Auto: San Andreas die volledig achterwaarts compatibel is met San Andreas Multiplayer",
+    "description": "Homepage meta description"
+  },
+  "partners.note.dismissAria": {
+    "message": "Melding over het partnerprogramma sluiten",
+    "description": "Accessible label for dismissing the partner note"
+  },
+  "partners.page.title": {
+    "message": "Partnerservers",
+    "description": "Partner servers page title"
+  },
+  "partners.page.description": {
+    "message": "Lijst met San Andreas-servers die open.mp of SA-MP gebruiken",
+    "description": "Partner servers page description"
+  },
+  "uid.toast.copiedTitle": {
+    "message": "Gekopieerd",
+    "description": "UID copy success toast title"
+  },
+  "uid.toast.copiedMessage": {
+    "message": "UID-macro naar het klembord gekopieerd.",
+    "description": "UID copy success toast message"
+  },
+  "uid.page.title": {
+    "message": "UID-generator",
+    "description": "UID generator page title"
+  },
+  "uid.page.description": {
+    "message": "Genereer een UID als unieke identificatie voor IComponent of IExtension",
+    "description": "UID generator page description"
+  },
+  "launcherSim.join.connect": {
+    "message": "Verbinden",
+    "description": "Launcher connect button"
+  },
+  "launcherSim.join.bannerText": {
+    "message": "Jouw server",
+    "description": "Sample server banner text"
+  },
+  "launcherSim.join.server": {
+    "message": "Server",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.join.address": {
+    "message": "Adres",
+    "description": "Launcher preview join dialog"
+  },
+  "launcherSim.column.players": {
+    "message": "Spelers",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.join.nickname": {
+    "message": "Schermnaam",
+    "description": "Launcher join dialog nickname label"
+  },
+  "launcherSim.join.version": {
+    "message": "SA-MP-versie",
+    "description": "Launcher join dialog SA-MP version label"
+  },
+  "launcherSim.tab.favorites": {
+    "message": "Favorieten",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.internet": {
+    "message": "Internet",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.partners": {
+    "message": "Partners",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.tab.recent": {
+    "message": "Recent bezocht",
+    "description": "Launcher preview tab"
+  },
+  "launcherSim.nicknamePlaceholder": {
+    "message": "Schermnaam…",
+    "description": "Launcher preview nickname placeholder"
+  },
+  "launcherSim.searchPlaceholder": {
+    "message": "Zoeken op servernaam of spelmodus",
+    "description": "Launcher preview search placeholder"
+  },
+  "launcherSim.column.name": {
+    "message": "Naam",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.ping": {
+    "message": "Ping",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.mode": {
+    "message": "Spelmodus",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.menu.connect": {
+    "message": "Verbinden",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.addToFavorites": {
+    "message": "Toevoegen aan favorieten",
+    "description": "Launcher preview button"
+  },
+  "launcherSim.menu.copy": {
+    "message": "Servergegevens kopiëren",
+    "description": "Launcher preview: context menu"
+  },
+  "launcherSim.column.rule": {
+    "message": "Regel",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.value": {
+    "message": "Waarde",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.filter.title": {
+    "message": "Filters:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.omp": {
+    "message": "Alleen open.mp-servers",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.nonEmpty": {
+    "message": "Servers met spelers",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.unpassworded": {
+    "message": "Servers zonder wachtwoord",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.filter.language": {
+    "message": "Taal:",
+    "description": "Launcher preview: filter panel"
+  },
+  "launcherSim.notification.favorited": {
+    "message": "Toegevoegd aan favorieten!",
+    "description": "Launcher preview: notification"
+  },
+  "launcherSim.ariaLabel": {
+    "message": "De open.mp-launcher toont een lijst met voorbeeldservers",
+    "description": "Accessible label for the launcher picture"
+  },
+  "launcherSim.column.player": {
+    "message": "Speler",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.column.score": {
+    "message": "Score",
+    "description": "Launcher preview column"
+  },
+  "launcherSim.copy": {
+    "message": "KOPIEER",
+    "description": "Launcher preview: copy address"
+  },
+  "npcCallbacksNote.message": {
+    "message": "Ook NPC’s kunnen deze callback aanroepen.",
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
+  },
+  "versionWarn.name.function": {
+    "message": "functie",
+    "description": "Default item name in a version warning"
+  },
+  "versionWarn.name.callback": {
+    "message": "callback",
+    "description": "Callback item name in a version warning"
+  },
+  "versionWarn.message": {
+    "message": "Deze {name} is toegevoegd in {version} en werkt niet in oudere versies!",
+    "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
+  },
+  "servers.add.successMessage": {
+    "message": "{serverName} staat op onze wachtlijst. Verschijnt de server niet binnen 48 uur? Neem contact op via Discord.",
+    "description": "Toast message shown after submitting a server to the pending list"
+  },
+  "servers.add.successTitle": {
+    "message": "Server aangemeld!",
+    "description": "Toast title shown after a server submission succeeds"
+  },
+  "servers.add.failureMessage": {
+    "message": "Status {status}: {error}",
+    "description": "Toast message shown after a server submission fails"
+  },
+  "servers.add.failureTitle": {
+    "message": "Aanmelding mislukt!",
+    "description": "Toast title shown after a server submission fails"
+  },
+  "servers.add.errorMessage": {
+    "message": "Er is een fout opgetreden bij het aanmelden van de server",
+    "description": "Toast message shown after an unexpected server submission error"
+  },
+  "servers.add.errorTitle": {
+    "message": "Fout",
+    "description": "Generic toast error title"
+  },
+  "servers.add.addressPlaceholder": {
+    "message": "play.example.com:7777",
+    "description": "Add server address input placeholder"
+  },
+  "servers.pages.label": {
+    "message": "Pagina’s van de serverlijst",
+    "description": "Accessible label for the server list pagination"
+  },
+  "servers.pages.previous": {
+    "message": "Vorige pagina",
+    "description": "Server list previous page button"
+  },
+  "servers.pages.next": {
+    "message": "Volgende pagina",
+    "description": "Server list next page button"
+  },
+  "servers.sort.name": {
+    "message": "Naam",
+    "description": "Sort by server name"
+  },
+  "servers.sort.mode": {
+    "message": "Spelmodus",
+    "description": "Sort by game mode"
+  },
+  "servers.sort.language": {
+    "message": "Taal",
+    "description": "Sort by language"
+  },
+  "servers.language.all": {
+    "message": "Alle talen",
+    "description": "All languages filter option"
+  },
+  "servers.add.closeModal": {
+    "message": "Venster voor server toevoegen sluiten",
+    "description": "Accessible label for closing the add server modal"
+  },
+  "carousel.previous": {
+    "message": "Vorige",
+    "description": "Carousel previous button"
+  },
+  "carousel.next": {
+    "message": "Volgende",
+    "description": "Carousel next button"
+  },
+  "downloads.launcher.pageTitle": {
+    "message": "open.mp-launcher",
+    "description": "Launcher downloads page title"
+  },
+  "downloads.launcher.layoutDescription": {
+    "message": "Download versies van de open.mp-launcher",
+    "description": "Launcher downloads page meta description"
+  },
+  "downloads.launcher.pageSubtitle": {
+    "message": "Speel GTA San Andreas in multiplayer op open.mp- en SA-MP-servers.",
+    "description": "Launcher downloads page subtitle"
+  },
+  "downloads.server.pageTitle": {
+    "message": "open.mp-server",
+    "description": "Server downloads page title"
+  },
+  "downloads.server.layoutDescription": {
+    "message": "Download versies van de open.mp-server",
+    "description": "Server downloads page meta description"
+  },
+  "downloads.server.pageSubtitle": {
+    "message": "Host je eigen multiplayerserver voor GTA San Andreas.",
+    "description": "Server downloads page subtitle"
+  },
+  "servers.page.title": {
+    "message": "Servers",
+    "description": "Servers page title"
+  },
+  "servers.page.description": {
+    "message": "Lijst met San Andreas-servers die open.mp en SA-MP gebruiken",
+    "description": "Servers page description"
+  },
+  "downloads.latestBadge": {
+    "message": "NIEUWSTE VERSIE",
+    "description": "Badge for latest release"
+  },
+  "downloads.releaseDate": {
+    "message": "Uitgebracht op {date}",
+    "description": "Release date label"
+  },
+  "downloads.release.highlights": {
+    "message": "Hoogtepunten",
+    "description": "Release highlights heading"
+  },
+  "downloads.release.viewChangelog": {
+    "message": "Volledige lijst met wijzigingen bekijken",
+    "description": "Expandable changelog summary"
+  },
+  "downloads.release.viewOnGitHub": {
+    "message": "Versie op GitHub bekijken",
+    "description": "Fallback button per release"
+  },
+  "downloads.release.githubTitle": {
+    "message": "Versie op GitHub bekijken",
+    "description": "Title attribute for the GitHub release link"
+  },
+  "downloads.release.github": {
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
+  },
+  "downloads.release.dynSslNote": {
+    "message": "* Voor de DynSSL-versie moet libssl op je Linux-distributie geïnstalleerd zijn.",
+    "description": "Note about DynSSL version requiring libssl"
+  },
+  "downloads.hideOlderReleases": {
+    "message": "Oudere versies verbergen",
+    "description": "Button to hide older releases"
+  },
+  "downloads.showOlderReleases": {
+    "message": "Bekijk {count} oudere versies",
+    "description": "Button to show older releases"
+  },
+  "downloads.opensourceTrust": {
+    "message": "Alle versies zijn opensource. Bouw ze vanuit de broncode of download ze direct van GitHub.",
+    "description": "Open source trust message for downloads pages"
+  },
+  "downloads.downloadFromGithub": {
+    "message": "Downloaden van GitHub",
+    "description": "Button label to open GitHub releases page"
+  },
+  "notFound.title": {
+    "message": "Pagina niet gevonden",
+    "description": "404 page title"
+  },
+  "notFound.imageAlt": {
+    "message": "Schermafbeelding van de treinmissie in GTA",
+    "description": "Alt text for the 404 page image"
+  },
+  "notFound.home": {
+    "message": "Startpagina",
+    "description": "404 page home button"
+  },
+  "notFound.docs": {
+    "message": "Documentatie",
+    "description": "404 page documentation button"
+  },
+  "notFound.servers": {
+    "message": "Servers",
+    "description": "404 page servers button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Paginanavigatie blog",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Nieuwer bericht",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Ouder bericht",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Laat alle tags zien",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Systeemmodus",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "lichte modus",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "donkere modus",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Schakel tussen donkere en lichte modus (momenteel {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Broodkruimels",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Documentatie pagina",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Vorige",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Volgende",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Een artikel getagd|{count} artikelen getagd",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} met \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Versie: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Dit is nog niet uitgegeven documentatie voor {siteTitle}, versie {versionLabel}",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Dit is de documentatie voor {siteTitle} {versionLabel}, welke niet langer actief wordt onderhouden.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Voor de huidige documentatie, zie de {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "laatste versie",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Bewerk deze pagina",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link naar {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " op {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " door {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Laatst bijgewerkt{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versies",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Labels:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Sluiten",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.warning": {
+    "message": "waarschuwing",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigatie recente blogitems",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Categorie zijbalk uitklappen '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Categorie zijbalk inklappen '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opent in een nieuw tabblad)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Hoofdnavigatie",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Talen",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Op deze pagina",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Lees meer",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Lees meer over {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopieer",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Gekopieerd",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Kopieer code naar klembord",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Tekstterugloop in-/uitschakelen",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Homepagina",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Zijbalk inklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Zijbalk inklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs zijbalk",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Sluit navigatiebalk",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Terug naar het hoofdmenu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Navigatiebalk schakelen",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Keuzemenu openen",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Keuzemenu sluiten",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Zijbalk uitklappen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Zijbalk uitklappen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Laat alle {count} resultaten zien"
+  },
+  "theme.SearchBar.label": {
+    "message": "Zoeken",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Maak de zoekopdracht leeg",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Annuleren",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.searchBox.placeholderText": {
+    "message": "Doorzoek de documentatie",
+    "description": "The placeholder text for the main search input field"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAi": {
+    "message": "Stel nog een vraag…",
+    "description": "The placeholder text when in AI question mode"
+  },
+  "theme.SearchModal.searchBox.placeholderTextAskAiStreaming": {
+    "message": "Antwoord wordt opgesteld…",
+    "description": "The placeholder text for search box when AI is streaming an answer"
+  },
+  "theme.SearchModal.searchBox.enterKeyHint": {
+    "message": "Zoeken",
+    "description": "The hint for the search box enter key text"
+  },
+  "theme.SearchModal.searchBox.enterKeyHintAskAi": {
+    "message": "versturen",
+    "description": "The hint for the Ask AI search box enter key text"
+  },
+  "theme.SearchModal.searchBox.searchInputLabel": {
+    "message": "Zoeken",
+    "description": "The ARIA label for search input"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonText": {
+    "message": "Terug naar zoeken op trefwoord",
+    "description": "The text for back to keyword search button"
+  },
+  "theme.SearchModal.searchBox.backToKeywordSearchButtonAriaLabel": {
+    "message": "Terug naar zoeken op trefwoord",
+    "description": "The ARIA label for back to keyword search button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Recente zoekopdrachten",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "Geen recente zoekopdrachten",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Sla deze zoekopdracht op",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Verwijder deze zoekopdracht uit mijn geschiedenis",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Favoriet",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Verwijder deze zoekopdracht uit mijn favorieten",
+    "description": "The title for remove favorite search button"
+  },
+  "theme.SearchModal.startScreen.recentConversationsTitle": {
+    "message": "Recente gesprekken",
+    "description": "The title for recent conversations"
+  },
+  "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
+    "message": "Dit gesprek uit de geschiedenis verwijderen",
+    "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Niet in staat resultaten op te halen",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "Misschien wilt u uw netwerkverbinding controleren.",
+    "description": "The help text for error screen"
+  },
+  "theme.SearchModal.resultsScreen.askAiPlaceholder": {
+    "message": "Vraag AI: ",
+    "description": "The placeholder text for Ask AI input"
+  },
+  "theme.SearchModal.askAiScreen.disclaimerText": {
+    "message": "De antwoorden zijn gegenereerd door AI en kunnen fouten bevatten. Controleer de antwoorden.",
+    "description": "The disclaimer text for AI answers"
+  },
+  "theme.SearchModal.askAiScreen.relatedSourcesText": {
+    "message": "Gerelateerde bronnen",
+    "description": "The text for related sources"
+  },
+  "theme.SearchModal.askAiScreen.thinkingText": {
+    "message": "Antwoord wordt voorbereid…",
+    "description": "The text when AI is thinking"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonText": {
+    "message": "Kopieer",
+    "description": "The text for copy button"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonCopiedText": {
+    "message": "Gekopieerd!",
+    "description": "The text for copy button when copied"
+  },
+  "theme.SearchModal.askAiScreen.copyButtonTitle": {
+    "message": "Kopieer",
+    "description": "The title for copy button"
+  },
+  "theme.SearchModal.askAiScreen.likeButtonTitle": {
+    "message": "Vind ik leuk",
+    "description": "The title for like button"
+  },
+  "theme.SearchModal.askAiScreen.dislikeButtonTitle": {
+    "message": "Vind ik niet leuk",
+    "description": "The title for dislike button"
+  },
+  "theme.SearchModal.askAiScreen.thanksForFeedbackText": {
+    "message": "Bedankt voor je feedback!",
+    "description": "The text for thanks for feedback"
+  },
+  "theme.SearchModal.askAiScreen.preToolCallText": {
+    "message": "Bezig met zoeken…",
+    "description": "The text before tool call"
+  },
+  "theme.SearchModal.askAiScreen.duringToolCallText": {
+    "message": "Zoeken naar: ",
+    "description": "The text during tool call"
+  },
+  "theme.SearchModal.askAiScreen.afterToolCallText": {
+    "message": "Gezocht naar:",
+    "description": "The text after tool call"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "om te selecteren",
+    "description": "The select text for footer"
+  },
+  "theme.SearchModal.footer.submitQuestionText": {
+    "message": "Vraag versturen",
+    "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter-toets",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "om te navigeren",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Pijltoets naar boven",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Pijltoets naar beneden",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Sluiten",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Escape-toets",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Zoek op",
+    "description": "The 'Powered by' text for footer"
+  },
+  "theme.SearchModal.footer.backToSearchText": {
+    "message": "Terug naar zoeken",
+    "description": "The back to search text for footer"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "Geen resultaten voor",
+    "description": "The text when there are no results"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Probeer om te zoeken op",
+    "description": "The text for suggested query"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Zou deze zoekopdracht resultaten moeten opleveren?",
+    "description": "The text for reporting missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Laat het ons weten.",
+    "description": "The link text for reporting missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Doorzoek de documentatie",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Een document gevonden|{count} documenten gevonden",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Zoekresultaten voor \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Doorzoek de documentatie",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Typ hier uw zoekopdracht",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Zoeken",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Aangedreven door Algolia",
+    "description": "The description label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Geen resultaten gevonden",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Resultaten ophalen...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Een bericht|{count} berichten",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} getagd met \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Auteurs",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Bekijk alle auteurs",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Deze auteur heeft nog geen berichten geschreven.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Verborgen page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Deze pagina is verborgen. Zoekmachines indexeren deze niet en alleen gebruikers met een directe link kunnen deze openen.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Concept pagina",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Deze pagina is een concept. Deze zal alleen zichtbaar zijn in de ontwikkelomgeving en uitgesloten worden van de productie build.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 artikel|{count} artikelen",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Probeer opnieuw",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Ga naar hoofdinhoud",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.sidebar.filterPlaceholder": {
+    "message": "Documentatie filteren",
+    "description": "Placeholder for the docs sidebar filter input"
+  },
+  "theme.docs.sidebar.clearFilter": {
+    "message": "Filter wissen",
+    "description": "ARIA label for clearing the docs sidebar filter"
+  },
+  "theme.docs.sidebar.filterNoResults": {
+    "message": "Geen overeenkomende documenten",
+    "description": "Title shown when the docs sidebar filter has no matches"
+  },
+  "theme.docs.sidebar.filterNoResultsHint": {
+    "message": "Probeer een andere zoekterm.",
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  }
+}
