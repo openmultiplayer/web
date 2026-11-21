@@ -14,7 +14,7 @@ Menambahkan model simpel kustom objek diunggah. Model file bawaanya terletak pad
 | Name         | Description                                                                                                                                          |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | virtualworld | Virtual world ID untuk membuat model tersedia. Gunakan -1 untuk semua world.                                                                         |
-| baseid       | Basis [object model ID](https://dev.prineside.com/en/gtasa_samp_model_id/) untuk digunakan (object original akan digunakan jika download gagal).     |
+| baseid       | Basis [object model ID](https://models.open.mp/?cat=objects) untuk digunakan (object original akan digunakan jika download gagal).                   |
 | newid        | Object model ID baru berkisar dari -1000 ke -30000 (29000 slots) digunakan nanti dengan CreateObject atau Create PlayerObject                        |
 | dffname      | Nama dari **.dff** model file collision berlokasi di `models` server folder secara bawaan ([artpath setting](../../server/server.cfg#model-kustom)). |
 | txdname      | Nama dari **.txd** model tekstur file berlokasi di `models` server secara bawaan ([artpath setting](../../server/server.cfg#model-kustom)).          |

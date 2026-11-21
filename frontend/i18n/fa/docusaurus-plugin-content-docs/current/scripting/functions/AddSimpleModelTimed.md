@@ -14,7 +14,7 @@ tags: ["custom model", "simple model"]
 | نام                    | توضیحات                                                                                                                                                  |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | virtualWorld           | ID دنیای مجازی برای در دسترس قرار دادن مدل. از -1 برای همه دنیاها استفاده کنید.                                                                          |
-| baseid                 | [ID مدل object پایه](https://dev.prineside.com/en/gtasa_samp_model_id/) برای استفاده (object اصلی برای استفاده زمانی که دانلود شکست بخورد).              |
+| baseid                 | [ID مدل object پایه](https://models.open.mp/?cat=objects) برای استفاده (object اصلی برای استفاده زمانی که دانلود شکست بخورد).                            |
 | newid                  | ID مدل object جدید در محدوده -1000 تا -30000 (29000 slot) برای استفاده بعدی با [CreateObject](CreateObject) یا [CreatePlayerObject](CreatePlayerObject). |
 | const dff[]            | نام فایل کالیژن مدل **.dff** که به طور پیش‌فرض در پوشه `models` سرور قرار دارد (تنظیمات [artpath](../../server/server.cfg#مدلهای-سفارشی)).                |
 | const textureLibrary[] | نام فایل texture مدل **.txd** که به طور پیش‌فرض در پوشه `models` سرور قرار دارد (تنظیمات [artpath](../../server/server.cfg#مدلهای-سفارشی)).               |

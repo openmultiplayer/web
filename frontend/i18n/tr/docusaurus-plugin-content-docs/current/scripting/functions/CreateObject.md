@@ -11,7 +11,7 @@ Oyun dünyası üzerinde obje oluşturma.
 
 | Parametre          | Açıklama                                                                                              |
 | ------------------ | ----------------------------------------------------------------------------------------------------- |
-| modelid            | Oluşturulacak [objenin modeli](https://dev.prineside.com/en/gtasa_samp_model_id/).                    |
+| modelid            | Oluşturulacak [objenin modeli](https://models.open.mp/?cat=objects).                                  |
 | Float:X            | Oluşturulacak objenin X koordinatı.                                                                   |
 | Float:Y            | Oluşturulacak objenin Y koordinatı.                                                                   |
 | Float:Z            | Oluşturulacak objenin Z koordinatı.                                                                   |

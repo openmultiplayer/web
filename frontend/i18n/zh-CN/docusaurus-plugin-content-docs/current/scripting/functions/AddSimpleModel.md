@@ -14,7 +14,7 @@ tags: ["自定义模型", "简单模型"]
 | 参数                   | 说明                                                                                                                                           |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | virtualWorld           | 模型生效的[虚拟世界 ID](SetPlayerVirtualWorld)，使用-1 表示全虚拟世界                                                                          |
-| baseid                 | 基础[物体模型 ID](https://dev.prineside.com/en/gtasa_samp_model_id/)（当下载失败时将使用该原始物体模型）                                       |
+| baseid                 | 基础[物体模型 ID](https://models.open.mp/?cat=objects)（当下载失败时将使用该原始物体模型）                                                     |
 | newid                  | 新物体模型 ID（范围-1000 至-30000，共 29000 个槽位），后续可通过 [CreateObject](CreateObject) 或 [CreatePlayerObject](CreatePlayerObject) 使用 |
 | const dff[]            | **.dff** 模型碰撞文件名，默认位于服务器的 `models` 文件夹（可通过 [artpath](../../server/server.cfg#自定义模型) 配置修改路径）                 |
 | const textureLibrary[] | **.txd** 模型贴图文件名，默认位于服务器的 `models` 文件夹（可通过 [artpath](../../server/server.cfg#自定义模型) 配置修改路径）                 |

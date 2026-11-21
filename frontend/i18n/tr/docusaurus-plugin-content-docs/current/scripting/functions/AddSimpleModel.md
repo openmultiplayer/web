@@ -15,13 +15,13 @@ Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacak
 
 İndirmek için yeni bir özel basit nesne modeli ekler. Model dosyaları, oynatıcının `Belgelerim\GTA San Andreas User Files\SAMP\cache` dizinindeki Sunucu IP'si ve Bağlantı Noktası klasörü altında, [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) biçiminde dosya adlarıyla saklanır.
 
-| İsim         | Açıklama                                                                                                                                               |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| virtualworld | Modeli adresinde kullanılabilir hale getirmek için sanal dünya kimliği. Tüm dünyalar için -1 kullanın.                                                 |
-| baseid       | Kullanılacak temel [nesne model kimliği](https://dev.prineside.com/en/gtasa_samp_model_id/) (indirme başarısız olduğunda kullanılacak orijinal nesne). |
-| newid        | Yeni obje model kimliği daha sonra CreateObject veya CreatePlayerObject ile -1000 ile -30000 arasında (29000 yuva) sıralandı.                          |
-| dffname      | Modellerde bulunan **.dff** modeli çarpışma dosyasının adı varsayılan olarak sunucu klasörü (çalışma yolu ayarı).                                      |
-| txdname      | Modeller sunucu klasöründe varsayılan olarak bulunan **.txd** model kaplama dosyasının adı (çalışma yolu ayarı).                                       |
+| İsim         | Açıklama                                                                                                                                 |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| virtualworld | Modeli adresinde kullanılabilir hale getirmek için sanal dünya kimliği. Tüm dünyalar için -1 kullanın.                                   |
+| baseid       | Kullanılacak temel [nesne model kimliği](https://models.open.mp/?cat=objects) (indirme başarısız olduğunda kullanılacak orijinal nesne). |
+| newid        | Yeni obje model kimliği daha sonra CreateObject veya CreatePlayerObject ile -1000 ile -30000 arasında (29000 yuva) sıralandı.            |
+| dffname      | Modellerde bulunan **.dff** modeli çarpışma dosyasının adı varsayılan olarak sunucu klasörü (çalışma yolu ayarı).                        |
+| txdname      | Modeller sunucu klasöründe varsayılan olarak bulunan **.txd** model kaplama dosyasının adı (çalışma yolu ayarı).                         |
 
 ## Çalışınca Vereceği Sonuçlar
 

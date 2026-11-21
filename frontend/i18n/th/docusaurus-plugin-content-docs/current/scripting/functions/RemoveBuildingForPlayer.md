@@ -18,7 +18,7 @@ Removes a standard San Andreas model for a single player within a specified rang
 | Name          | Description                                                                       |
 | ------------- | --------------------------------------------------------------------------------- |
 | playerid      | The ID of the player to remove the objects for.                                   |
-| modelid       | The [model](https://dev.prineside.com/en/gtasa_samp_model_id/) to remove.         |
+| modelid       | The [model](https://models.open.mp/?cat=objects) to remove.                       |
 | Float:fX      | The X coordinate around which the objects will be removed.                        |
 | Float:fY      | The Y coordinate around which the objects will be removed.                        |
 | Float:fZ      | The Z coordinate around which the objects will be removed.                        |
