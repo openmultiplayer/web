@@ -15,8 +15,6 @@ tags: ["玩家"]
 | PLAYER_STATE:newstate | 玩家当前的新状态     |
 | PLAYER_STATE:oldstate | 玩家之前的旧状态     |
 
-完整状态列表请参考[玩家状态](../resources/playerstates)。
-
 ## 返回值
 
 此回调始终在滤镜脚本中优先触发。

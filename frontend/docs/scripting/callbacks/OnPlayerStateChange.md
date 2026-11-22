@@ -15,8 +15,6 @@ This callback is called when a player changes [state](../resources/playerstates)
 | PLAYER_STATE:newstate | The player's new state.                  |
 | PLAYER_STATE:oldstate | The player's previous state.             |
 
-Refer to [Player States](../resources/playerstates) for a list of all available player states.
-
 ## Returns
 
 It is always called first in filterscripts.

@@ -6,7 +6,7 @@ description: Guia configuração samp.cfg.
 
 ## Descrição
 
-`samp.cfg` é um arquivo de configuração do cliente que permite alterar as configurações relacionadas ao SA-MP. Este arquivo é encontrado na pasta 'Meus Documentos\GTA San Andreas User Files\SAMP', na sua conta de usuário do Windows. Este arquivo pode ser editado com um editor de texto como o bloco de notas.
+sa-mp.cfg é um arquivo de configuração do cliente que permite alterar as configurações relacionadas ao SA-MP. Este arquivo é encontrado na pasta `Meus Documentos\GTA San Andreas User Files\SAMP`, na sua conta de usuário do Windows. Este arquivo pode ser editado com um editor de texto como o bloco de notas.
 
 ## Opções
 

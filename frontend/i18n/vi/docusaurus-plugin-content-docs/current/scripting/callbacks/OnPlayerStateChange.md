@@ -7,15 +7,13 @@ tags: ["player"]
 
 ## Mô tả
 
-Callback này được gọi khi người chơi thay đổi trạng thái. Ví dụ, khi người chơi thay đổi từ việc là tài xế của một phương tiện sang đi bộ.
+Callback này được gọi khi người chơi thay đổi [trạng thái](../resources/playerstates). Ví dụ, khi người chơi thay đổi từ việc là tài xế của một phương tiện sang đi bộ.
 
 | Tên                   | Mô tả                                     |
 | --------------------- | ----------------------------------------- |
 | playerid              | ID của người chơi đã thay đổi trạng thái. |
 | PLAYER_STATE:newstate | Trạng thái mới của người chơi.            |
 | PLAYER_STATE:oldstate | Trạng thái trước đó của người chơi.       |
-
-Tham khảo [Trạng thái Người chơi](../resources/playerstates) để biết danh sách tất cả các trạng thái người chơi có sẵn.
 
 ## Giá trị trả về
 

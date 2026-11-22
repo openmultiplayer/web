@@ -15,8 +15,6 @@ Esta callback é chamada quando o [estado](../resources/playerstates) de um joga
 | newstate | O novo estado do jogador.                   |
 | oldstate | O antigo estado do jogador.                 |
 
-Verifique em [Player States](../resources/playerstates) a lista de todos os estados disponíveis.
-
 ## Retorno
 
 Sempre é chamada primeiro em filterscripts.

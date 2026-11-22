@@ -7,15 +7,13 @@ tags: ["player"]
 
 ## Açıklama
 
-Bu fonksiyon, bir oyuncu durumunu değiştirdiğinde çağrılır. Örneğin, bir oyuncu bir aracın sürücüsündeyken yaya olarak değiştğinde çağrılır.
+Bu fonksiyon, bir oyuncu [durumunu](../resources/playerstates) değiştirdiğinde çağrılır. Örneğin, bir oyuncu bir aracın sürücüsündeyken yaya olarak değiştğinde çağrılır.
 
 | Parametre | Açıklama                             |
 | --------- | ------------------------------------ |
 | playerid  | Durumu değiştirilen oyuncunun ID'si. |
 | newstate  | Oyuncunun yeni durumu.               |
 | oldstate  | Oyuncunun önceki durumu.             |
-
-Mevcut tüm oyuncu durumlarının listesi için [Oyuncu Durumları](../resources/playerstates)'na bakın.
 
 ## Çalışınca Vereceği Sonuçlar
 

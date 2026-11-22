@@ -15,8 +15,6 @@ Deze callback wordt aangeroepen wanneer een speler van [staat](../resources/play
 | PLAYER_STATE:newstate | De nieuwe staat van de speler.                 |
 | PLAYER_STATE:oldstate | De vorige staat van de speler.                 |
 
-Zie [Player States](../resources/playerstates) voor een lijst van alle beschikbare spelerstaten.
-
 ## Returns
 
 Wordt altijd als eerste aangeroepen in filterscripts.

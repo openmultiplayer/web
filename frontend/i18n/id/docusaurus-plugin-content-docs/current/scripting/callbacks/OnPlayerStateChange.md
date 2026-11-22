@@ -7,15 +7,13 @@ tags: ["player"]
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika pemain melakukan perubahan status. (misalnya saat player yang sedang mengendarai)
+Callback ini akan terpanggil ketika pemain melakukan perubahan [status](../resources/playerstates). (misalnya saat player yang sedang mengendarai)
 
 | Nama     | Deskripsi                                       |
 | -------- | ----------------------------------------------- |
 | playerid | ID dari pemain yang melakukan perubahan status. |
 | newstate | Status baru dari player.                        |
 | oldstate | Status lama dari player.                        |
-
-Pergi ke [Player States](../resources/playerstates) untuk list semua variable player state.
 
 ## Returns
 

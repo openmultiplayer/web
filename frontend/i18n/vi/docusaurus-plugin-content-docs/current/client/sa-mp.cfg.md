@@ -6,7 +6,7 @@ description: Tệp cấu hình client của SA-MP.
 
 ## Mô Tả
 
-`sa-mp.cfg` là tệp cấu hình của client cho phép bạn thay đổi các cài đặt liên quan đến SA-MP. Tệp này được tìm thấy trong thư mục 'Document\\GTA San Andreas User Files\\SAMP' dưới tài khoản người dùng Windows của bạn. Bạn có thể chỉnh sửa tệp này bằng trình soạn thảo văn bản như Notepad.
+sa-mp.cfg là tệp cấu hình của client cho phép bạn thay đổi các cài đặt liên quan đến SA-MP. Tệp này được tìm thấy trong thư mục `Document\GTA San Andreas User Files\SAMP` dưới tài khoản người dùng Windows của bạn. Bạn có thể chỉnh sửa tệp này bằng trình soạn thảo văn bản như Notepad.
 
 ## Các Tùy Chọn
 

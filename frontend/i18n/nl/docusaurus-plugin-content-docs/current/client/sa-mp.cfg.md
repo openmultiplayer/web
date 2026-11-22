@@ -6,7 +6,7 @@ description: SA-MP clientconfiguratiebestand.
 
 ## Beschrijving
 
-`sa-mp.cfg` is het clientconfiguratiebestand waarmee je SA-MP-gerelateerde instellingen kunt aanpassen. Dit bestand staat in je map ‘Mijn Documenten\\GTA San Andreas User Files\\SAMP’ onder je Windows-gebruikersaccount. Je kunt dit bestand bewerken met een teksteditor zoals Kladblok.
+sa-mp.cfg is het clientconfiguratiebestand waarmee je SA-MP-gerelateerde instellingen kunt aanpassen. Dit bestand staat in je map `Mijn Documenten\GTA San Andreas User Files\SAMP` onder je Windows-gebruikersaccount. Je kunt dit bestand bewerken met een teksteditor zoals Kladblok.
 
 ## Opties
 
