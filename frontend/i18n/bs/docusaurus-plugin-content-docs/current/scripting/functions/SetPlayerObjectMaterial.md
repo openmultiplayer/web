@@ -16,7 +16,7 @@ Zamijeni teksturu player-objekta sa teksturom drugog modela u igri.
 | materialindex | Index materijala na objektu za zamijeniti (od 0 do 15)                                                                                           |
 | modelid       | ID modela na kome se nalazi zamjenska tekstura. Koristite 0 za alfa. Koristite -1 za promjenu boje materijala bez mijenjanja postojeće teksture. |
 | txdname       | Ime txd fatoteke koja sadrži zamjensku teksturu (koristi "none" ako nije potrebno)                                                               |
-| texturename   | Ime teksture za koristiti kao zamjensku (koristi "none" ako nije potrebno)                                                                       |
+| texturename   | Ime [teksture](https://models.open.mp/?cat=textures) za koristiti kao zamjensku (koristi "none" ako nije potrebno)                               |
 | materialcolor | Boja objekta za postaviti, kao cijeli broj ili hex u **ARGB formatu**. Korištenjem **0** čuva trenutnu boju materijala.                          |
 
 ## Returns

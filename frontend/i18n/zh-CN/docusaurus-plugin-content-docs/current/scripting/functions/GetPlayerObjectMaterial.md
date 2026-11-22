@@ -11,17 +11,17 @@ tags: ["玩家", "物体", "玩家物体"]
 
 获取玩家物体指定索引的材质数据
 
-| 参数               | 说明                                 |
-| ------------------ | ------------------------------------ |
-| playerid           | 玩家 ID                              |
-| objectid           | 玩家物体 ID                          |
-| materialIndex      | 材质索引号（0-15）                   |
-| &modelid           | 存储模型 ID 的变量（通过引用传递）   |
-| textureLibrary[]   | 存储纹理库名称的数组（通过引用传递） |
-| textureLibrarySize | 纹理库数组的缓冲区大小               |
-| textureName[]      | 存储纹理名称的数组（通过引用传递）   |
-| textureNameSize    | 纹理名称数组的缓冲区大小             |
-| &materialColour    | 存储材质颜色的变量（通过引用传递）   |
+| 参数               | 说明                                                                       |
+| ------------------ | -------------------------------------------------------------------------- |
+| playerid           | 玩家 ID                                                                    |
+| objectid           | 玩家物体 ID                                                                |
+| materialIndex      | 材质索引号（0-15）                                                         |
+| &modelid           | 存储模型 ID 的变量（通过引用传递）                                         |
+| textureLibrary[]   | 存储纹理库名称的数组（通过引用传递）                                       |
+| textureLibrarySize | 纹理库数组的缓冲区大小                                                     |
+| textureName[]      | 存储[纹理](https://models.open.mp/?cat=textures)名称的数组（通过引用传递） |
+| textureNameSize    | 纹理名称数组的缓冲区大小                                                   |
+| &materialColour    | 存储材质颜色的变量（通过引用传递）                                         |
 
 ## 返回值
 

@@ -12,17 +12,17 @@ tags: ["player", "object", "playerobject"]
 
 Obtenha os dados do material de um índice do objeto do jogador.
 
-| Nome | Descrição |
-| ------------------ | --------------------------------------------------------------------- |
-| playerid | O ID do jogador.                                                 |
-| objectid | O ID do objeto do jogador.                                          |
-| materialIndex | O índice de material no objeto. (0 a 15) |
-| &modelid | Uma variável na qual armazenar o modelo ID, passado por referência.       |
-| textureLibrary[] | Uma matriz na qual armazenar a texturaLibrary, passada por referência. |
-| textureLibrarySize | O tamanho da texturaLibrary.                                       |
-| textureName[] | Uma matriz na qual armazenar o TextureName, passado por referência.    |
-| textureNameSize | O tamanho da texturaName.                                          |
-| &materialColour | Uma variável na qual armazenar o materialColour, passada por referência. |
+| Nome               | Descrição                                                                                                       |
+| ------------------ | --------------------------------------------------------------------------------------------------------------- |
+| playerid           | O ID do jogador.                                                                                                |
+| objectid           | O ID do objeto do jogador.                                                                                      |
+| materialIndex      | O índice de material no objeto. (0 a 15)                                                                        |
+| &modelid           | Uma variável na qual armazenar o modelo ID, passado por referência.                                             |
+| textureLibrary[]   | Uma matriz na qual armazenar o nome da biblioteca de texturas, passado por referência.                          |
+| textureLibrarySize | O tamanho da matriz que armazena o nome da biblioteca de texturas.                                              |
+| textureName[]      | Uma matriz na qual armazenar o nome da [textura](https://models.open.mp/?cat=textures), passado por referência. |
+| textureNameSize    | O tamanho da matriz que armazena o nome da textura.                                                             |
+| &materialColour    | Uma variável na qual armazenar o materialColour, passada por referência.                                        |
 
 ## Retornos
 
