@@ -363,7 +363,7 @@ const Features = () => (
       <div className={styles.sectionHead} data-reveal="">
         <Heading as="h2" id="features-title" className={styles.sectionTitle}>
           <Translate id="homepage.launcher.title" description="Homepage launcher section title">
-            The Launcher
+            Launcher
           </Translate>
         </Heading>
         <div className={styles.heroActions}>
@@ -518,7 +518,7 @@ const RunAServer = () => (
       <div className={styles.sectionHead} data-reveal="">
         <Heading as="h2" id="server-title" className={styles.sectionTitle}>
           <Translate id="homepage.server.title" description="Homepage server section title">
-            The Server
+            Server
           </Translate>
         </Heading>
         <div className={styles.heroActions}>
