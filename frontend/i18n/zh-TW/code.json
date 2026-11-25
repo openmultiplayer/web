@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "與既有指令碼和用戶端完全向下相容"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "有舊的 AMX 檔案嗎？直接將它載入 open.mp 伺服器，就能用 SA-MP 用戶端和朋友一起玩。想改進程式碼時，請參閱我們的文件。"
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "新手指南"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "全新升級的指令碼系統"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp 支援既有的 SA-MP 指令碼和外掛，並提供現代化 API，包含資料結構、非同步 I/O 等功能，讓你開發更好的模組。"
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "進一步了解"
-  },
-  "feature.developerFriendly.title": {
-    "message": "為開發者設計"
-  },
-  "feature.developerFriendly.description": {
-    "message": "open.mp 提供一致的 API、最新的文件、樂於互助的社群，以及完全開放的原始碼。歡迎參與貢獻。"
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "參與貢獻"
-  },
   "feature.scriptingSystem.title": {
     "message": "全新升級的指令碼系統"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "我們繼續使用 Pawn，並加入新編譯器，讓程式碼更穩定。額外的函式可用於操作伺服器和用戶端。"
   },
   "feature.scriptingSystem.linkText": {
     "message": "了解有哪些改進"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "由社群共同開發"
   },
-  "feature.communityDevelopment.description": {
-    "message": "伺服器完全開放原始碼，歡迎各種規模的貢獻。你可以參與下一版的開發，或回報遇到的錯誤。你的意見對我們很重要。"
-  },
   "feature.communityDevelopment.linkText": {
     "message": "造訪 GitHub 組織頁面"
   },
   "feature.cppApi.title": {
     "message": "可擴充的 C++ API"
-  },
-  "feature.cppApi.description": {
-    "message": "除了 Pawn 的伺服器功能，你也能使用 C++ 的各種函式庫和框架。歡迎在 GitHub 上協助改進伺服器。"
   },
   "feature.cppApi.linkText": {
     "message": "查看 SDK 原始碼儲存庫"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "如先前公告，合作夥伴計畫目前暫停接受申請。已預留名額的伺服器仍可加入。如有其他問題，歡迎到 Discord 詢問。"
-  },
-  "announcement.title": {
-    "message": "open.mp 伺服器與啟動器的新版本已推出！"
-  },
-  "announcement.link": {
-    "message": "查看詳情"
   },
   "theme.ErrorPageContent.title": {
     "message": "頁面加載異常",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "標籤",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "open.mp 伺服器 {version} 已推出，包含多項錯誤修正、效能改善和新功能！"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "此伺服器版本新增了 NPC 車輛控制功能，改進了 NPC 車輛移動，並修復了網路和指令碼問題。"
-  },
-  "announcement.changelog": {
-    "message": "伺服器更新記錄"
-  },
-  "announcement.download": {
-    "message": "下載伺服器"
-  },
-  "announcement.launcherUpdate": {
-    "message": "啟動器同步更新！"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "啟動器改進了遊戲內的疊加介面、圖形模組支援及連線穩定性。"
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "open.mp 啟動器 {version} 現已發布！"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "open.mp 伺服器 {version} 新版本現已發布！"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "open.mp 伺服器 {serverVersion} 與啟動器 {launcherVersion} 新版本現已發布！"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "啟動器更新"
-  },
-  "announcement.dismiss": {
-    "message": "關閉這則訊息"
-  },
-  "homepage.heroDescription": {
-    "message": "《俠盜獵車手：聖安地列斯》的全新多人模組，與 {samp} {compatibility}。"
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "完全相容"
-  },
-  "homepage.downloadLauncher": {
-    "message": "下載啟動器 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "下載伺服器 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "文件 📜"
   },
   "animations.title": {
     "message": "open.mp 動畫檢視器"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "快速加入"
   },
-  "serverInfo.noDescription": {
-    "message": "這臺伺服器沒有說明"
-  },
   "serverInfo.playersOnline": {
     "message": "線上玩家"
-  },
-  "serverInfo.modVersion": {
-    "message": "模組版本"
   },
   "serverInfo.language": {
     "message": "語言"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "找不到該伺服器，它可能已離線或不再列出。"
-  },
-  "theme.footer.title.Documentations": {
-    "message": "文件"
-  },
-  "theme.footer.title.Community": {
-    "message": "社群"
-  },
-  "theme.footer.title.More": {
-    "message": "更多"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "簡介"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "移轉至 open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "贊助"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "伺服器"
-  },
-  "theme.footer.link.Blog": {
-    "message": "部落格"
-  },
-  "theme.footer.link.Animations": {
-    "message": "動畫"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "UID 產生器"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "© {year} open.mp。使用 Docusaurus 建置。"
-  },
-  "navbar.item.Docs": {
-    "message": "文件"
-  },
-  "navbar.item.Blog": {
-    "message": "部落格"
-  },
-  "navbar.item.Forums": {
-    "message": "論壇"
-  },
-  "navbar.item.Servers": {
-    "message": "伺服器"
-  },
-  "navbar.item.Partners": {
-    "message": "合作夥伴"
-  },
-  "navbar.item.Donate": {
-    "message": "贊助"
   },
   "serverInfo.copied": {
     "message": "已複製",

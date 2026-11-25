@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "完全向后兼容现有脚本与客户端"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "手头有旧的AMX文件？直接将其载入open.mp服务器，即可与使用SA:MP客户端的友人同游。待你欲升级代码时，敬请参阅我们的技术文档。"
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "入门指南"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "全新升级的脚本系统"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp不仅兼容所有现有SA-MP脚本与插件，更提供现代化的新API以编写更优质的游戏模式。内含数据结构、异步I/O例程等丰富功能！"
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "了解更多"
-  },
-  "feature.developerFriendly.title": {
-    "message": "开发者友好型设计"
-  },
-  "feature.developerFriendly.description": {
-    "message": "我们以开发者体验为核心打造open.mp：提供一致的API接口、实时更新的文档、互助社区及完全开源的代码库！欢迎随时贡献智慧。"
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "参与贡献"
-  },
   "feature.scriptingSystem.title": {
     "message": "全新升级的脚本系统"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "我们延续Pawn语言支持，并采用全新编译器提升代码健壮性，同时增加更多服务端与客户端操控功能。"
   },
   "feature.scriptingSystem.linkText": {
     "message": "查看改进详情"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "社区驱动开发"
   },
-  "feature.communityDevelopment.description": {
-    "message": "服务器完全开源，我们珍视所有规模的贡献。无论是参与新版本开发，还是反馈使用问题（纵使我们追求代码完美，漏洞仍在所难免），你的意见皆具价值。"
-  },
   "feature.communityDevelopment.linkText": {
     "message": "访问 GitHub 组织"
   },
   "feature.cppApi.title": {
     "message": "可扩展的 C++ API"
-  },
-  "feature.cppApi.description": {
-    "message": "除Pawn语言原有功能外，更可调用C++生态的海量库与框架。精通此后，何不通过GitHub开放贡献流程助力服务器进化？"
   },
   "feature.cppApi.linkText": {
     "message": "查看 SDK 仓库"
@@ -71,18 +41,9 @@
   "partners.note.title": {
     "message": "合作伙伴计划"
   },
-  "partners.note.dismiss": {
-    "message": "关闭通知"
-  },
   "partners.note.dismissAria": {
     "message": "关闭合作伙伴通知",
     "description": "关闭合作伙伴通知的无障碍标签"
-  },
-  "announcement.title": {
-    "message": "新版open.mp服务器与启动器现已发布！"
-  },
-  "announcement.link": {
-    "message": "查看详情"
   },
   "theme.ErrorPageContent.title": {
     "message": "页面加载异常",
@@ -151,54 +112,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "标签列表页面的标题"
-  },
-  "announcement.serverVersion": {
-    "message": "open.mp服务器{version}版本已发布！包含多项修复、性能优化及新特性！"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "此服务器版本新增了 NPC 车辆控制功能，改进了 NPC 车辆移动，并修复了网络和脚本问题。"
-  },
-  "announcement.changelog": {
-    "message": "服务器更新日志"
-  },
-  "announcement.download": {
-    "message": "下载服务器"
-  },
-  "announcement.launcherUpdate": {
-    "message": "启动器同步更新！"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "启动器改进了游戏内覆盖层、图形模组兼容性和连接稳定性。"
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "open.mp 启动器 {version} 现已发布！"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "open.mp 服务器 {version} 新版本现已发布！"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "open.mp 服务器 {serverVersion} 与启动器 {launcherVersion} 新版本现已发布！"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "启动器更新"
-  },
-  "announcement.dismiss": {
-    "message": "忽略此消息"
-  },
-  "homepage.heroDescription": {
-    "message": "为《侠盗猎车手：圣安地列斯》打造的全新多人联机模组，与{samp}实现{compatibility}。"
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "完全向后兼容"
-  },
-  "homepage.downloadLauncher": {
-    "message": "下载启动器 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "下载服务器 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "技术文档 📜"
   },
   "animations.title": {
     "message": "open.mp动画预览器"
@@ -278,14 +191,8 @@
   "serverInfo.quickJoin": {
     "message": "快速加入"
   },
-  "serverInfo.noDescription": {
-    "message": "该服务器暂无描述"
-  },
   "serverInfo.playersOnline": {
     "message": "在线玩家"
-  },
-  "serverInfo.modVersion": {
-    "message": "模组版本"
   },
   "serverInfo.language": {
     "message": "语言"
@@ -346,72 +253,6 @@
   },
   "downloads.release.dynSslNote": {
     "message": "* DynSSL 版本要求你的 Linux 发行版中已安装 libssl。"
-  },
-  "theme.footer.title.Documentations": {
-    "message": "文档"
-  },
-  "theme.footer.title.Community": {
-    "message": "社区"
-  },
-  "theme.footer.title.More": {
-    "message": "更多"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "入门指南"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "迁移至open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "捐赠"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "服务器"
-  },
-  "theme.footer.link.Blog": {
-    "message": "博客"
-  },
-  "theme.footer.link.Animations": {
-    "message": "动画"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "UID生成器"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "版权所有 © {year} open.mp。基于Docusaurus构建"
-  },
-  "navbar.item.Docs": {
-    "message": "文档"
-  },
-  "navbar.item.Blog": {
-    "message": "博客"
-  },
-  "navbar.item.Forums": {
-    "message": "论坛"
-  },
-  "navbar.item.Servers": {
-    "message": "服务器"
-  },
-  "navbar.item.Partners": {
-    "message": "合作伙伴"
-  },
-  "navbar.item.Donate": {
-    "message": "捐赠"
   },
   "uid.page.title": {
     "message": "UID 生成器",
@@ -492,10 +333,6 @@
   "servers.filter.showOmpOnly": {
     "message": "仅显示 open.mp 服务器",
     "description": "仅显示 open.mp 服务器的复选框标签"
-  },
-  "servers.filter.showPartnersOnly": {
-    "message": "仅显示合作伙伴",
-    "description": "仅显示合作伙伴服务器的复选框标签"
   },
   "servers.add.modalTitle": {
     "message": "添加服务器",
@@ -584,18 +421,6 @@
   "homepage.social.youtube": {
     "message": "YouTube 图标",
     "description": "首页社交链接的无障碍标签和图片 Alt 文本"
-  },
-  "announcement.dismissAria": {
-    "message": "关闭公告",
-    "description": "关闭首页公告的无障碍标签"
-  },
-  "homepage.downloadLauncherTitle": {
-    "message": "下载 open.mp 启动器",
-    "description": "启动器下载按钮的 Title 属性"
-  },
-  "homepage.downloadServerTitle": {
-    "message": "open.mp 现已发布！",
-    "description": "服务器下载按钮的 Title 属性"
   },
   "homepage.layoutDescription": {
     "message": "为《侠盗猎车手：圣安地列斯》打造的多人联机模组，完全向后兼容 San Andreas Multiplayer（SA-MP）。",

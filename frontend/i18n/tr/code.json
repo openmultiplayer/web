@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "Mevcut scriptler ve istemcilerle tamamen geriye dönük uyumlu"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "Elinde eski bir AMX mi var? Hiçbir ayar gerektirmeden open.mp sunucusunda çalıştır ve SA:MP istemcisiyle arkadaşlarına katıl. Kodunu geliştirmek istediğinde dokümantasyonumuza göz at."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "Başlangıç Rehberi"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "Yeni ve geliştirilmiş script sistemi"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp mevcut tüm SA-MP scriptleri ve eklentilerini destekler. Ayrıca daha iyi modlar yazmak için modern ve güncel bir API sunar. Veri yapıları, asenkron I/O rutinleri ve daha fazlası!"
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "Daha Fazla Bilgi Edin"
-  },
-  "feature.developerFriendly.title": {
-    "message": "Geliştirici dostu"
-  },
-  "feature.developerFriendly.description": {
-    "message": "open.mp'yi geliştirici deneyimini düşünerek yazıyoruz. Bu, tutarlı bir API, güncel dokümantasyon, yardımcı bir topluluk ve tamamen açık kaynak kod demek! Katkılar her zaman memnuniyetle karşılanır."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "Katkıda Bulun"
-  },
   "feature.scriptingSystem.title": {
     "message": "Yeni ve geliştirilmiş script sistemi"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "Pawn ile devam ettik, ancak kodunuzu daha sağlam hale getiren yeni bir derleyici ve sunucu ile istemciyi yönetmek için daha fazla fonksiyon ekledik."
   },
   "feature.scriptingSystem.linkText": {
     "message": "Yenilikleri öğrenin"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "Topluluk odaklı geliştirme"
   },
-  "feature.communityDevelopment.description": {
-    "message": "Sunucu tamamen açık kaynak ve büyük küçük tüm katkılara açığız. Bir sonraki sürümü yazmaya yardım edebilir veya bulduğunuz sorunları bildirebilirsiniz. Mükemmel kod için uğraşsak da hatalar olabilir, geri bildiriminiz değerli."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "GitHub organizasyonunu ziyaret et"
   },
   "feature.cppApi.title": {
     "message": "Genişletilebilir C++ API"
-  },
-  "feature.cppApi.description": {
-    "message": "Pawn'da bulunan tüm sunucu özelliklerine ve C++ kütüphaneleri ile framework evrenine erişim sağlayın. Ustalaştıktan sonra GitHub'daki açık katkı sürecimizle sunucuyu geliştirmeye yardımcı olabilirsiniz."
   },
   "feature.cppApi.linkText": {
     "message": "SDK deposunu incele"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "Not: Ortaklık programı başvurusu, söz verildiği üzere geçici olarak kapatılmıştır. Daha önce slot ayırtmış sunucular hâlâ katılabilir, ancak şu anda yeni başvuruları kabul etmiyoruz. Sorularınız olursa Discord sunucumuzda sormaktan çekinmeyin. Fakat eğer sorunuz listeye eklenmenin yeni yolları ile ilgiliyse, şu anda böyle bir planımız bulunmamaktadır."
-  },
-  "announcement.title": {
-    "message": "open.mp sunucu dosyalarının ve başlatıcısının yeni sürümü çıktı!"
-  },
-  "announcement.link": {
-    "message": "Daha fazlasını burada oku"
   },
   "theme.ErrorPageContent.title": {
     "message": "Bu sayfa çöktü.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiketler",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "{version} sürümüne sahip open.mp birçok hata düzeltmesi, performans artışı ve yeni özelliklerle çıktı!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "Bu sunucu sürümü NPC araç kontrolleri ekler, NPC araç hareketini iyileştirir ve ağ ile betik sorunlarını giderir."
-  },
-  "announcement.changelog": {
-    "message": "Sunucu değişiklik günlüğü"
-  },
-  "announcement.download": {
-    "message": "Sunucuyu indir"
-  },
-  "announcement.launcherUpdate": {
-    "message": "Başlatıcı güncellendi!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "Launcher, oyun içi katmanı, grafik modları desteğini ve bağlantı kararlılığını iyileştirir."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "open.mp Launcher {version} kullanıma sunuldu!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "open.mp sunucusunun {version} sürümü çıktı!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "Yeni sürümler çıktı: open.mp sunucusu {serverVersion} ve Launcher {launcherVersion}!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "Launcher yenilikleri"
-  },
-  "announcement.dismiss": {
-    "message": "Bu mesajı kapat"
-  },
-  "homepage.heroDescription": {
-    "message": "Grand Theft Auto: San Andreas için, {samp} ile {compatibility}, yepyeni bir çok oyunculu mod."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "tamamen geriye dönük uyumlu"
-  },
-  "homepage.downloadLauncher": {
-    "message": "Başlatıcıyı İndir 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "Sunucu Dosyalarını İndir 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "Dokümantasyon 📜"
   },
   "animations.title": {
     "message": "open.mp Animasyon Görüntüleyici"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "Hızlı Katıl"
   },
-  "serverInfo.noDescription": {
-    "message": "Bu sunucunun açıklaması yok"
-  },
   "serverInfo.playersOnline": {
     "message": "Çevrimiçi oyuncular"
-  },
-  "serverInfo.modVersion": {
-    "message": "Mod sürümü"
   },
   "serverInfo.language": {
     "message": "Dil"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "Bu sunucu bulunamadı. Çevrimdışı olabilir veya artık listelenmiyor olabilir."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "Dokümantasyon"
-  },
-  "theme.footer.title.Community": {
-    "message": "Topluluk"
-  },
-  "theme.footer.title.More": {
-    "message": "Daha Fazla"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "Giriş"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "open.mp Geçişi"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "Bağış Yap"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "Sunucular"
-  },
-  "theme.footer.link.Blog": {
-    "message": "Blog"
-  },
-  "theme.footer.link.Animations": {
-    "message": "Animasyonlar"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "UID Oluşturucu"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "Telif Hakkı © {year} open.mp. Docusaurus ile yapıldı."
-  },
-  "navbar.item.Docs": {
-    "message": "Dokümantasyon"
-  },
-  "navbar.item.Blog": {
-    "message": "Blog"
-  },
-  "navbar.item.Forums": {
-    "message": "Forumlar"
-  },
-  "navbar.item.Servers": {
-    "message": "Sunucular"
-  },
-  "navbar.item.Partners": {
-    "message": "Partnerler"
-  },
-  "navbar.item.Donate": {
-    "message": "Bağış Yap"
   },
   "serverInfo.copied": {
     "message": "Kopyalandı",

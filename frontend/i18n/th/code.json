@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "รองรับการทำงานย้อนหลังได้เต็มที่กับสคริปต์และไคลเอนต์ที่มีอยู่"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "ยังมี AMX แบบเก่าไหม? โหลดมันลงในเซิร์ฟเวอร์ open.mp โดยตรงและเข้าร่วมกับเพื่อนของคุณที่เล่นบนไคลเอนต์ SA:MP จากนั้น เมื่อคุณต้องการอัปเกรดโค้ดของคุณ โปรดดูเอกสารของเรา"
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "เริ่มต้น"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "ระบบสคริปต์ใหม่ที่ดีกว่าเดิม"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp รองรับสคริปต์และปลั๊กอิน SA-MP ที่มีอยู่ทั้งหมด แต่ยังมี API สมัยใหม่และอัปเดตให้คุณเขียนโหมดการเล่นได้ดีขึ้นด้วย โครงสร้างข้อมูล ระบบ I/O แบบอะซิงโครนัส และอีกมากมาย!"
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "เรียนรู้เพิ่มเติม"
-  },
-  "feature.developerFriendly.title": {
-    "message": "เป็นมิตรกับนักพัฒนา"
-  },
-  "feature.developerFriendly.description": {
-    "message": "เราออกแบบ open.mp โดยคำนึงถึงประสบการณ์ของนักพัฒนานั่นหมายความว่าเรามี API ที่สม่ำเสมอ เอกสารที่อัปเดตอยู่เสมอ ชุมชนที่ให้ความช่วยเหลือ และซอร์สโค้ดที่เปิดกว้างเต็มที่! เรายินดีรับการมีส่วนร่วมเสมอ"
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "มีส่วนร่วม"
-  },
   "feature.scriptingSystem.title": {
     "message": "ระบบสคริปต์ใหม่ที่ดีกว่าเดิม"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "เรายังคงใช้ Pawn อยู่ แต่ด้วยคอมไพเลอร์ใหม่ที่ออกแบบมาเพื่อให้โค้ดของคุณแข็งแกร่งขึ้น และมีฟังก์ชันมากขึ้นสำหรับจัดการเซิร์ฟเวอร์และไคลเอนต์"
   },
   "feature.scriptingSystem.linkText": {
     "message": "เรียนรู้เกี่ยวกับการปรับปรุง"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "การพัฒนาที่ขับเคลื่อนโดยชุมชน"
   },
-  "feature.communityDevelopment.description": {
-    "message": "เซิร์ฟเวอร์เป็นโอเพนซอร์สทั้งหมด และเรายินดีรับทุกความช่วยเหลือไม่ว่าจะมากหรือน้อย ช่วยเราเขียนเวอร์ชันถัดไป หรือเพียงแค่รายงานปัญหาใด ๆ ที่คุณพบ ถึงแม้ว่าเราจะพยายามให้โค้ดสมบูรณ์แบบ แต่ก็ยังมีบัคเกิดขึ้นอยู่ดี และข้อเสนอแนะของคุณล้ำค่ามาก"
-  },
   "feature.communityDevelopment.linkText": {
     "message": "เยี่ยมชมองค์กร GitHub"
   },
   "feature.cppApi.title": {
     "message": "API C++ ที่สามารถขยายได้"
-  },
-  "feature.cppApi.description": {
-    "message": "คุณสามารถเข้าถึงฟีเจอร์ทั้งหมดของเซิร์ฟเวอร์ที่มีใน Pawn รวมถึงโลกแห่งไลบรารีและเฟรมเวิร์ก C++ ทั้งหมดได้ หลังจากเชี่ยวชาญแล้ว ทำไมไม่ช่วยเราในการพัฒนาต่อไปผ่านขั้นตอนการมีส่วนร่วมแบบเปิดของเราบน GitHub ล่ะ"
   },
   "feature.cppApi.linkText": {
     "message": "ดูที่ที่เก็บ SDK"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "หมายเหตุ: โปรแกรมพาร์ทเนอร์ปิดชั่วคราวตามที่สัญญาไว้ เซิร์ฟเวอร์ที่จองสล็อตไว้แล้วยังเข้าร่วมได้ แต่เราไม่รับคำขอใหม่ในขณะนี้ หากมีข้อสงสัย โปรดสอบถามใน Discord ของเราได้ อย่างไรก็ตาม ถ้าคำถามของคุณเกี่ยวกับวิธีใหม่ๆ ที่จะเข้าสู่รายการ ปัจจุบันเราไม่มีแผนเปิดรับ"
-  },
-  "announcement.title": {
-    "message": "เวอร์ชันใหม่ของเซิร์ฟเวอร์และตัวเรียกใช้ open.mp พร้อมใช้งานแล้ว!"
-  },
-  "announcement.link": {
-    "message": "อ่านเพิ่มเติมที่นี่"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
     "message": "มี {count} เอกสารที่มีแท็ก"
@@ -144,54 +108,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "แท็ก",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "เวอร์ชันเซิร์ฟเวอร์ open.mp {version} พร้อมให้ใช้งานแล้ว พร้อมการแก้ไขบัคมากมาย การปรับปรุงประสิทธิภาพ และคุณสมบัติใหม่!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "รุ่นเซิร์ฟเวอร์นี้เพิ่มการควบคุมยานพาหนะ NPC ปรับปรุงการเคลื่อนที่ของยานพาหนะ NPC และแก้ไขปัญหาเครือข่ายกับสคริปต์"
-  },
-  "announcement.changelog": {
-    "message": "บันทึกการเปลี่ยนแปลงเซิร์ฟเวอร์"
-  },
-  "announcement.download": {
-    "message": "ดาวน์โหลดเซิร์ฟเวอร์"
-  },
-  "announcement.launcherUpdate": {
-    "message": "ตัวเรียกใช้ (Launcher) ก็ได้รับการอัปเดตเช่นกัน!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "Launcher ปรับปรุงโอเวอร์เลย์ในเกม การรองรับม็อดกราฟิก และความเสถียรของการเชื่อมต่อ"
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "open.mp Launcher {version} พร้อมใช้งานแล้ว!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "เซิร์ฟเวอร์ open.mp เวอร์ชัน {version} พร้อมใช้งานแล้ว!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "open.mp มีเวอร์ชันใหม่แล้ว: เซิร์ฟเวอร์ {serverVersion} และ Launcher {launcherVersion}!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "อัปเดต Launcher"
-  },
-  "announcement.dismiss": {
-    "message": "ยกเลิกข้อความนี้"
-  },
-  "homepage.heroDescription": {
-    "message": "ม็อดหลายผู้เล่นใหม่สำหรับ Grand Theft Auto: San Andreas ที่ {compatibility} กับ {samp}"
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "รองรับการทำงานย้อนหลังได้เต็มที่"
-  },
-  "homepage.downloadLauncher": {
-    "message": "ดาวน์โหลดตัวเรียกใช้ 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "ดาวน์โหลดเซิร์ฟเวอร์ 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "เอกสารประกอบ 📜"
   },
   "animations.title": {
     "message": "ตัวดูอนิเมชัน open.mp"
@@ -271,14 +187,8 @@
   "serverInfo.quickJoin": {
     "message": "เข้าร่วมอย่างรวดเร็ว"
   },
-  "serverInfo.noDescription": {
-    "message": "เซิร์ฟเวอร์นี้ไม่มีคำอธิบาย"
-  },
   "serverInfo.playersOnline": {
     "message": "ผู้เล่นออนไลน์"
-  },
-  "serverInfo.modVersion": {
-    "message": "เวอร์ชันม็อด"
   },
   "serverInfo.language": {
     "message": "ภาษา"
@@ -339,72 +249,6 @@
   },
   "downloads.release.dynSslNote": {
     "message": "* เวอร์ชัน DynSSL ต้องติดตั้ง libssl บนระบบปฏิบัติการลินุกซ์ของคุณ"
-  },
-  "theme.footer.title.Documentations": {
-    "message": "เอกสารประกอบ"
-  },
-  "theme.footer.title.Community": {
-    "message": "ชุมชน"
-  },
-  "theme.footer.title.More": {
-    "message": "เพิ่มเติม"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "บทนำ"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "การย้ายมาใช้ open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "บริจาค"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "เซิร์ฟเวอร์"
-  },
-  "theme.footer.link.Blog": {
-    "message": "บล็อก"
-  },
-  "theme.footer.link.Animations": {
-    "message": "แอนิเมชัน"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "ตัวสร้าง UID"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "ลิขสิทธิ์ © {year} open.mp สร้างด้วย Docusaurus"
-  },
-  "navbar.item.Docs": {
-    "message": "เอกสาร"
-  },
-  "navbar.item.Blog": {
-    "message": "บล็อก"
-  },
-  "navbar.item.Forums": {
-    "message": "ฟอรัม"
-  },
-  "navbar.item.Servers": {
-    "message": "เซิร์ฟเวอร์"
-  },
-  "navbar.item.Partners": {
-    "message": "พันธมิตร"
-  },
-  "navbar.item.Donate": {
-    "message": "บริจาค"
   },
   "serverInfo.copied": {
     "message": "คัดลอกแล้ว",

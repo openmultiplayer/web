@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "Потпуна компатибилност са постојећим скриптама и клијентима"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "Имаш стари AMX? Учитај га директно на open.mp сервер и придружи се пријатељима преко SA-MP клијента. Кад пожелиш да побољшаш код, погледај документацију."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "Први кораци"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "Нови и побољшани систем за скриптирање"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp подржава постојеће SA-MP скрипте и додатке. Савремени API нуди структуре података, асинхрони улаз и излаз и друге могућности за боље модове."
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "Сазнај више"
-  },
-  "feature.developerFriendly.title": {
-    "message": "Прилагођено програмерима"
-  },
-  "feature.developerFriendly.description": {
-    "message": "Правимо open.mp са доследним API-јем, ажурном документацијом, заједницом која радо помаже и потпуно отвореним кодом. Сваки допринос је добродошао."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "Доприноси"
-  },
   "feature.scriptingSystem.title": {
     "message": "Нови и побољшани систем за скриптирање"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "И даље користимо Pawn. Нови компајлер чини код робуснијим, а додатне функције проширују могућности сервера и клијента."
   },
   "feature.scriptingSystem.linkText": {
     "message": "Погледај побољшања"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "Развија заједница"
   },
-  "feature.communityDevelopment.description": {
-    "message": "Код сервера је потпуно отворен. Помози у припреми следећег издања или пријави грешке које пронађеш. Сваки допринос и свака повратна информација су важни."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "Посети организацију на GitHub-у"
   },
   "feature.cppApi.title": {
     "message": "Прошириви C++ API"
-  },
-  "feature.cppApi.description": {
-    "message": "Користи све серверске функције доступне у Pawn-у, као и C++ библиотеке и оквире. На GitHub-у можеш да помогнеш у побољшању сервера."
   },
   "feature.cppApi.linkText": {
     "message": "Погледај репозиторијум SDK-а"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "Као што смо најавили, партнерски програм тренутно не прима пријаве. Сервери који су резервисали место и даље могу да се придруже. За остала питања пиши нам на Discord-у."
-  },
-  "announcement.title": {
-    "message": "Доступна је нова верзија open.mp сервера и покретача!"
-  },
-  "announcement.link": {
-    "message": "Прочитај више"
   },
   "theme.ErrorPageContent.title": {
     "message": "Ова страница је престала да ради.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Ознаке",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "Доступан је open.mp сервер {version}, са исправкама, бољим перформансама и новим функцијама!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "Ово издање додаје контроле за возила NPC-ева, побољшава њихово кретање и исправља мрежне грешке и грешке у скриптама."
-  },
-  "announcement.changelog": {
-    "message": "Измене сервера"
-  },
-  "announcement.download": {
-    "message": "Преузми сервер"
-  },
-  "announcement.launcherUpdate": {
-    "message": "Ажуриран је и покретач!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "Покретач побољшава приказ преко игре, подршку за графичке модове и стабилност везе."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "Доступан је open.mp покретач {version}!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "Доступан је open.mp сервер {version}!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "Доступни су open.mp сервер {serverVersion} и покретач {launcherVersion}!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "Новости у покретачу"
-  },
-  "announcement.dismiss": {
-    "message": "Затвори ову поруку"
-  },
-  "homepage.heroDescription": {
-    "message": "Нови мод за више играча за Grand Theft Auto: San Andreas који је {compatibility} са модом {samp}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "потпуно компатибилан"
-  },
-  "homepage.downloadLauncher": {
-    "message": "Преузми покретач 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "Преузми сервер 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "Документација 📜"
   },
   "animations.title": {
     "message": "Прегледач анимација за open.mp"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "Брзо придруживање"
   },
-  "serverInfo.noDescription": {
-    "message": "Овај сервер нема опис"
-  },
   "serverInfo.playersOnline": {
     "message": "Играчи на мрежи"
-  },
-  "serverInfo.modVersion": {
-    "message": "Верзија мода"
   },
   "serverInfo.language": {
     "message": "Језик"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "Сервер није пронађен. Можда није на мрежи или више није на списку."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "Документација"
-  },
-  "theme.footer.title.Community": {
-    "message": "Заједница"
-  },
-  "theme.footer.title.More": {
-    "message": "Још"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "Увод"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "Прелазак на open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "Донирај"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "Сервери"
-  },
-  "theme.footer.link.Blog": {
-    "message": "Блог"
-  },
-  "theme.footer.link.Animations": {
-    "message": "Анимације"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "Генератор UID-а"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "Ауторска права © {year} open.mp. Направљено помоћу Docusaurus-а."
-  },
-  "navbar.item.Docs": {
-    "message": "Документација"
-  },
-  "navbar.item.Blog": {
-    "message": "Блог"
-  },
-  "navbar.item.Forums": {
-    "message": "Форуми"
-  },
-  "navbar.item.Servers": {
-    "message": "Сервери"
-  },
-  "navbar.item.Partners": {
-    "message": "Партнери"
-  },
-  "navbar.item.Donate": {
-    "message": "Донирај"
   },
   "serverInfo.copied": {
     "message": "Копирано",

@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "توافق تام مع السكربتات والعملاء الحاليين"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "هل لديك ملف AMX قديم؟ حمّله مباشرةً على خادم open.mp وانضم إلى أصدقائك عبر عميل SA-MP. راجع التوثيق عندما ترغب في تحسين الشفرة."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "البدء"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "نظام سكربتات جديد ومحسّن"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "يدعم open.mp سكربتات SA-MP وإضافاته الحالية، ويقدّم واجهة API حديثة تضم هياكل بيانات وعمليات إدخال وإخراج غير متزامنة وغيرها لتطوير تعديلات أفضل."
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "اعرف المزيد"
-  },
-  "feature.developerFriendly.title": {
-    "message": "مصمّم للمطورين"
-  },
-  "feature.developerFriendly.description": {
-    "message": "نطوّر open.mp بواجهة API متسقة وتوثيق محدّث ومجتمع متعاون وشفرة مفتوحة بالكامل. نرحب بكل المساهمات."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "ساهم في المشروع"
-  },
   "feature.scriptingSystem.title": {
     "message": "نظام سكربتات جديد ومحسّن"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "نواصل استخدام Pawn مع مصرّف جديد يجعل الشفرة أكثر متانة ودوال إضافية للخادم والعميل."
   },
   "feature.scriptingSystem.linkText": {
     "message": "تعرّف على التحسينات"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "يطوّره المجتمع"
   },
-  "feature.communityDevelopment.description": {
-    "message": "شفرة الخادم مفتوحة بالكامل. ساعد في إعداد الإصدار التالي أو أبلغ عن الأخطاء التي تجدها. نرحب بكل مساهمة ونقدّر ملاحظاتك."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "زيارة المؤسسة على GitHub"
   },
   "feature.cppApi.title": {
     "message": "واجهة C++ قابلة للتوسعة"
-  },
-  "feature.cppApi.description": {
-    "message": "استخدم جميع وظائف الخادم المتاحة في Pawn إلى جانب مكتبات C++ وأطرها. يمكنك المساهمة في تحسين الخادم على GitHub."
   },
   "feature.cppApi.linkText": {
     "message": "تصفّح مستودع SDK"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "كما أعلنّا، لا يقبل برنامج الشراكة طلبات جديدة حاليًا. لا يزال بإمكان الخوادم التي حجزت مكانًا الانضمام. اطرح أسئلتك الأخرى على خادمنا في Discord."
-  },
-  "announcement.title": {
-    "message": "يتوفر الآن إصدار جديد من خادم open.mp ومشغّله!"
-  },
-  "announcement.link": {
-    "message": "اقرأ المزيد هنا"
   },
   "theme.ErrorPageContent.title": {
     "message": "هذه الصفحة لا تستجيب.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "الوسوم",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "يتوفر خادم open.mp {version} مع إصلاحات كثيرة وتحسينات في الأداء وميزات جديدة!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "يضيف هذا الإصدار أدوات للتحكم في مركبات NPC ويحسّن حركتها ويصلح مشاكل الشبكة والسكربتات."
-  },
-  "announcement.changelog": {
-    "message": "سجل تعديلات الخادم"
-  },
-  "announcement.download": {
-    "message": "تنزيل الخادم"
-  },
-  "announcement.launcherUpdate": {
-    "message": "حصل المشغّل أيضًا على تحديث!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "يحسّن المشغّل الواجهة المتراكبة داخل اللعبة ودعم التعديلات الرسومية واستقرار الاتصال."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "يتوفر الآن مشغّل open.mp {version}!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "يتوفر الآن خادم open.mp {version}!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "يتوفر الآن خادم open.mp {serverVersion} والمشغّل {launcherVersion}!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "جديد المشغّل"
-  },
-  "announcement.dismiss": {
-    "message": "إغلاق هذه الرسالة"
-  },
-  "homepage.heroDescription": {
-    "message": "تعديل جديد متعدد اللاعبين للعبة Grand Theft Auto: San Andreas، وهو {compatibility} مع {samp}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "متوافق تمامًا"
-  },
-  "homepage.downloadLauncher": {
-    "message": "تنزيل المشغّل 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "تنزيل الخادم 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "التوثيق 📜"
   },
   "animations.title": {
     "message": "عارض الحركات في open.mp"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "انضمام سريع"
   },
-  "serverInfo.noDescription": {
-    "message": "لا يوجد وصف لهذا الخادم"
-  },
   "serverInfo.playersOnline": {
     "message": "اللاعبون المتصلون"
-  },
-  "serverInfo.modVersion": {
-    "message": "إصدار التعديل"
   },
   "serverInfo.language": {
     "message": "اللغة"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "تعذّر العثور على الخادم. قد يكون غير متصل أو لم يعد في القائمة."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "التوثيق"
-  },
-  "theme.footer.title.Community": {
-    "message": "المجتمع"
-  },
-  "theme.footer.title.More": {
-    "message": "المزيد"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "مقدمة"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "الانتقال إلى open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "تبرّع"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "الخوادم"
-  },
-  "theme.footer.link.Blog": {
-    "message": "المدونة"
-  },
-  "theme.footer.link.Animations": {
-    "message": "الحركات"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "مولّد UID"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "حقوق النشر © {year} open.mp. بُني باستخدام Docusaurus."
-  },
-  "navbar.item.Docs": {
-    "message": "التوثيق"
-  },
-  "navbar.item.Blog": {
-    "message": "المدونة"
-  },
-  "navbar.item.Forums": {
-    "message": "المنتديات"
-  },
-  "navbar.item.Servers": {
-    "message": "الخوادم"
-  },
-  "navbar.item.Partners": {
-    "message": "الشركاء"
-  },
-  "navbar.item.Donate": {
-    "message": "تبرّع"
   },
   "serverInfo.copied": {
     "message": "تم النسخ",

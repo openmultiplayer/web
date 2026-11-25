@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "ஏற்கெனவே உள்ள ஸ்கிரிப்ட்கள் மற்றும் கிளையண்ட்களுடன் முழுப் பின்னோக்கி இணக்கத்தன்மை"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "பழைய AMX கோப்பு உள்ளதா? அதை நேரடியாக open.mp சேவையகத்தில் ஏற்றி, SA-MP கிளையண்ட் வழியாக நண்பர்களுடன் இணையுங்கள். குறியீட்டை மேம்படுத்த ஆவணங்களைப் பார்க்கவும்."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "தொடங்குங்கள்"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "புதிய, மேம்படுத்தப்பட்ட ஸ்கிரிப்டிங் அமைப்பு"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "ஏற்கெனவே உள்ள SA-MP ஸ்கிரிப்ட்கள் மற்றும் செருகுநிரல்களை open.mp ஆதரிக்கிறது. சிறந்த மோட்களை உருவாக்க தரவுக் கட்டமைப்புகள், ஒத்திசைவற்ற I/O போன்ற வசதிகளை அதன் நவீன API வழங்குகிறது."
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "மேலும் அறிக"
-  },
-  "feature.developerFriendly.title": {
-    "message": "உருவாக்குநர்களுக்கு ஏற்றது"
-  },
-  "feature.developerFriendly.description": {
-    "message": "சீரான API, புதுப்பித்த ஆவணங்கள், உதவும் சமூகம், முழுத் திறந்த மூலக் குறியீடு ஆகியவற்றுடன் open.mp-ஐ உருவாக்குகிறோம். அனைத்துப் பங்களிப்புகளையும் வரவேற்கிறோம்."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "பங்களிக்கவும்"
-  },
   "feature.scriptingSystem.title": {
     "message": "புதிய, மேம்படுத்தப்பட்ட ஸ்கிரிப்டிங் அமைப்பு"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "Pawn மொழியைத் தொடர்ந்து பயன்படுத்துகிறோம். புதிய தொகுப்பி குறியீட்டை வலுப்படுத்துகிறது. கூடுதல் செயல்பாடுகள் சேவையகம் மற்றும் கிளையண்டின் திறன்களை விரிவுபடுத்துகின்றன."
   },
   "feature.scriptingSystem.linkText": {
     "message": "மேம்பாடுகளை அறிக"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "சமூகத்தால் உருவாக்கப்படுகிறது"
   },
-  "feature.communityDevelopment.description": {
-    "message": "சேவையகத்தின் மூலக் குறியீடு முழுமையாகத் திறந்துள்ளது. அடுத்த வெளியீட்டை உருவாக்க உதவுங்கள் அல்லது கண்ட பிழைகளைப் புகாரளியுங்கள். ஒவ்வொரு பங்களிப்பும் கருத்தும் முக்கியம்."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "GitHub அமைப்பைப் பார்வையிடுங்கள்"
   },
   "feature.cppApi.title": {
     "message": "விரிவாக்கக்கூடிய C++ API"
-  },
-  "feature.cppApi.description": {
-    "message": "Pawn-இன் சேவையக அம்சங்களுடன் C++ நூலகங்களையும் கட்டமைப்புகளையும் பயன்படுத்தலாம். சேவையகத்தை மேம்படுத்த GitHub-இல் பங்களிக்கலாம்."
   },
   "feature.cppApi.linkText": {
     "message": "SDK களஞ்சியத்தைப் பார்க்கவும்"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "அறிவித்தபடி, கூட்டாளர் திட்டம் தற்போது விண்ணப்பங்களை ஏற்கவில்லை. முன்பதிவு செய்த சேவையகங்கள் இன்னும் இணையலாம். பிற கேள்விகளை எங்கள் Discord-இல் கேளுங்கள்."
-  },
-  "announcement.title": {
-    "message": "open.mp சேவையகம் மற்றும் துவக்கியின் புதிய பதிப்பு கிடைக்கிறது!"
-  },
-  "announcement.link": {
-    "message": "இங்கே மேலும் படிக்கவும்"
   },
   "theme.ErrorPageContent.title": {
     "message": "இந்தப் பக்கம் செயலிழந்தது.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "குறிச்சொற்கள்",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "பல பிழைத் திருத்தங்கள், செயல்திறன் மேம்பாடுகள் மற்றும் புதிய அம்சங்களுடன் open.mp சேவையகம் {version} கிடைக்கிறது!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "இந்த வெளியீடு NPC வாகனக் கட்டுப்பாடுகளைச் சேர்க்கிறது, அவற்றின் இயக்கத்தை மேம்படுத்துகிறது மற்றும் பிணைய, ஸ்கிரிப்டிங் பிழைகளைச் சரிசெய்கிறது."
-  },
-  "announcement.changelog": {
-    "message": "சேவையக மாற்றப் பதிவு"
-  },
-  "announcement.download": {
-    "message": "சேவையகத்தைப் பதிவிறக்கவும்"
-  },
-  "announcement.launcherUpdate": {
-    "message": "துவக்கியும் புதுப்பிக்கப்பட்டுள்ளது!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "விளையாட்டுக்குள் காட்டப்படும் மேலடுக்கு, வரைகலை மோட்களுக்கான ஆதரவு, இணைப்பின் நிலைத்தன்மை ஆகியவை மேம்படுத்தப்பட்டுள்ளன."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "open.mp துவக்கி {version} கிடைக்கிறது!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "open.mp சேவையகம் {version} கிடைக்கிறது!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "open.mp சேவையகம் {serverVersion} மற்றும் துவக்கி {launcherVersion} கிடைக்கின்றன!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "துவக்கியில் புதியவை"
-  },
-  "announcement.dismiss": {
-    "message": "இந்தச் செய்தியை மூடவும்"
-  },
-  "homepage.heroDescription": {
-    "message": "Grand Theft Auto: San Andreas-க்கான புதிய பல்வீரர் மோட், {samp} உடன் {compatibility}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "முழுமையாக இணங்குகிறது"
-  },
-  "homepage.downloadLauncher": {
-    "message": "துவக்கியைப் பதிவிறக்கவும் 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "சேவையகத்தைப் பதிவிறக்கவும் 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "ஆவணங்கள் 📜"
   },
   "animations.title": {
     "message": "open.mp அசைவூட்டப் பார்வையகம்"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "விரைவாக இணையவும்"
   },
-  "serverInfo.noDescription": {
-    "message": "இந்தச் சேவையகத்துக்கு விளக்கம் இல்லை"
-  },
   "serverInfo.playersOnline": {
     "message": "இணையத்திலுள்ள வீரர்கள்"
-  },
-  "serverInfo.modVersion": {
-    "message": "மோட் பதிப்பு"
   },
   "serverInfo.language": {
     "message": "மொழி"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "இந்தச் சேவையகம் கிடைக்கவில்லை. அது இணையத்தில் இல்லாமல் இருக்கலாம் அல்லது பட்டியலிலிருந்து நீக்கப்பட்டிருக்கலாம்."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "ஆவணங்கள்"
-  },
-  "theme.footer.title.Community": {
-    "message": "சமூகம்"
-  },
-  "theme.footer.title.More": {
-    "message": "மேலும்"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "அறிமுகம்"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "open.mp-க்கு மாறுதல்"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "நன்கொடை அளிக்கவும்"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "சேவையகங்கள்"
-  },
-  "theme.footer.link.Blog": {
-    "message": "வலைப்பதிவு"
-  },
-  "theme.footer.link.Animations": {
-    "message": "அசைவூட்டங்கள்"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "UID உருவாக்கி"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "பதிப்புரிமை © {year} open.mp. Docusaurus மூலம் உருவாக்கப்பட்டது."
-  },
-  "navbar.item.Docs": {
-    "message": "ஆவணங்கள்"
-  },
-  "navbar.item.Blog": {
-    "message": "வலைப்பதிவு"
-  },
-  "navbar.item.Forums": {
-    "message": "கருத்துக்களங்கள்"
-  },
-  "navbar.item.Servers": {
-    "message": "சேவையகங்கள்"
-  },
-  "navbar.item.Partners": {
-    "message": "கூட்டாளர்கள்"
-  },
-  "navbar.item.Donate": {
-    "message": "நன்கொடை அளிக்கவும்"
   },
   "serverInfo.copied": {
     "message": "நகலெடுக்கப்பட்டது",
