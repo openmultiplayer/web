@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Pare um objeto de jogador em movimento após MovePlayerObject ter sido usado.
+Pare um objeto de jogador em movimento após [MovePlayerObject](MovePlayerObject) ter sido usado.
 
 | Nome | Descrição |
 | -------- | ------------------------------------------------- |

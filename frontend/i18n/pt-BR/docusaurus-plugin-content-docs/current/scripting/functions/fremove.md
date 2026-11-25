@@ -50,7 +50,7 @@ else
 
 :::note
 
-Os arquivos que estão atualmente abertos (fopen) devem ser fechados primeiro (fclose) para serem excluídos.
+Os arquivos que estão atualmente abertos ([fopen](fopen)) devem ser fechados primeiro ([fclose](fclose)) para serem excluídos.
 
 :::
 

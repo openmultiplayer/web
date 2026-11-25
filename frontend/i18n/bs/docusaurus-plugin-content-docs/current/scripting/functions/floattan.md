@@ -7,12 +7,12 @@ tags: []
 
 ## Deskripcija
 
-Uzmi tangentu iz zadanog ugla. Ulazni ugao može biti u radijanima, stupnjevima ili stupnjevima.
+Uzmi [tangentu](https://en.wikipedia.org/wiki/Trigonometric_functions) iz zadanog ugla. Ulazni ugao može biti u radijanima, stupnjevima ili stupnjevima.
 
-| Ime         | Deskripcija                                                |
-| ----------- | ---------------------------------------------------------- |
-| Float:value | Kut iz kojeg se dobija tangenta.                           |
-| anglemode   | Način kuta koji se koristi, ovisno o unesenoj vrijednosti. |
+| Ime                                  | Deskripcija                                                |
+| ------------------------------------ | ---------------------------------------------------------- |
+| Float:value                          | Kut iz kojeg se dobija tangenta.                           |
+| [anglemode](../resources/anglemodes) | Način kuta koji se koristi, ovisno o unesenoj vrijednosti. |
 
 ## Returns
 
@@ -33,7 +33,8 @@ public OnGameModeInit()
 
 :::warning
 
-GTA / SA-MP u većini slučajeva koristi **stupnjeve** za uglove, na primjer GetPlayerFacingAngle. Stoga ćete najvjerojatnije htjeti koristiti način rada pod uglom '**degrees**', a _ne_ radijane. Takođe imajte na umu da su uglovi u GTA suprotno kazaljkama na satu; 270° je istočno, a 90° zapadno. Jug je i dalje 180°, a sjever još uvijek 0° / 360°.
+- GTA / SA-MP u većini slučajeva koristi **stupnjeve** za uglove, na primjer GetPlayerFacingAngle. Stoga ćete najvjerojatnije htjeti koristiti način rada pod uglom '**degrees**', a _ne_ radijane.
+- Takođe imajte na umu da su uglovi u GTA suprotno kazaljkama na satu; 270° je istočno, a 90° zapadno. Jug je i dalje 180°, a sjever još uvijek 0° / 360°.
 
 :::
 

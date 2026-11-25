@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Paganahin ang friendly fire para sa mga sasakyan ng team. Hindi masisira ng mga manlalaro ang mga sasakyan ng mga kasamahan sa koponan (Dapat gamitin ang SetPlayerTeam!).
+Paganahin ang friendly fire para sa mga sasakyan ng team. Hindi masisira ng mga manlalaro ang mga sasakyan ng mga kasamahan sa koponan (Dapat gamitin ang [SetPlayerTeam](SetPlayerTeam)!).
 
 ## Returns
 

@@ -9,11 +9,11 @@ tags: ["player"]
 
 Chamado quando um jogador realiza um clique duplo em um jogador no placar.
 
-| Nome            | Descrição                                      |
-| --------------- | ---------------------------------------------- |
-| playerid        | O ID do jogador que clicou em outro no placar. |
-| clickedplayerid | O ID do jogador que foi clicado.               |
-| source          | A fonte do clique do jogador.                  |
+| Nome            | Descrição                                                  |
+| --------------- | ---------------------------------------------------------- |
+| playerid        | O ID do jogador que clicou em outro no placar.             |
+| clickedplayerid | O ID do jogador que foi clicado.                           |
+| source          | A [fonte](../resources/clicksources) do clique do jogador. |
 
 ## Retornos
 

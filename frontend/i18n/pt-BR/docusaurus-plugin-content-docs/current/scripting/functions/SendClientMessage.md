@@ -8,7 +8,7 @@ tags: []
 
 ## Descrição
 
-Esta função envia uma mensagem para um jogador específico com uma cor escolhida no chat. Toda a linha na caixa de bate-papo estará na cor definida, a menos que a incorporação de cores seja usada.
+Esta função envia uma mensagem para um jogador específico com uma cor escolhida no chat. Toda a linha na caixa de bate-papo estará na cor definida, a menos que a [incorporação de cores](../resources/colorslist#color-embedding) seja usada.
 
 | Nome             | Descrição                                             |
 | ---------------- | ----------------------------------------------------- |
@@ -52,8 +52,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-- Você pode usar a incorporação de cores para várias cores na mensagem.
-- Usar '-1' como cor tornará o texto branco (pela simples razão de que -1, quando representado em notação hexadecimal, é 0xFFFFFFFF).
+- Você pode usar a [incorporação de cores](../resources/colorslist#color-embedding) para várias cores na mensagem.
+- Usar '-1' como cor tornará o texto branco (pela simples razão de que -1, quando representado em [notação hexadecimal](../resources/hexcolors), é 0xFFFFFFFF).
 
 :::
 

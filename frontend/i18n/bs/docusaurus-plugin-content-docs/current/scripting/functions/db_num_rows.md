@@ -7,11 +7,11 @@ tags: ["sqlite"]
 
 ## Deskripcija
 
-Vraća broj redaka iz db_query.
+Vraća broj redaka iz [db_query](db_query).
 
-| Ime               | Deskripcija          |
-| ----------------- | -------------------- |
-| DBResult:dbresult | Rezultat od db_query |
+| Ime               | Deskripcija                      |
+| ----------------- | -------------------------------- |
+| DBResult:dbresult | Rezultat od [db_query](db_query) |
 
 ## Returns
 

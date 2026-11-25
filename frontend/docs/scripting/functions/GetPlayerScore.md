@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-This function returns a player's score as it was set using SetPlayerScore
+This function returns a player's score as it was set using [SetPlayerScore](SetPlayerScore).
 
 | Name     | Description                     |
 | -------- | ------------------------------- |

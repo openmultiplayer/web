@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika sebuah object berpindah setelah MoveObject (ketika selesai bergerak).
+Callback ini akan terpanggil ketika sebuah object berpindah setelah [MoveObject](../functions/MoveObject) (ketika selesai bergerak).
 
 | Nama     | Deskripsi                              |
 | -------- | -------------------------------------- |

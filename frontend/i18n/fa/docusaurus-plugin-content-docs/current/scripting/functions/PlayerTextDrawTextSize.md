@@ -43,7 +43,7 @@ public OnPlayerConnect(playerid)
   - 1 (چپ): اونها گوشه سمت راست جعبه هستن، مختصات مطلق.
   - 2 (وسط): باید معکوس بشن (دوتا رو جابجا کن) و مقدار x عرض کلی جعبه هست.
   - 3 (راست): x و y مختصات گوشه سمت چپ جعبه هستن
-- استفاده از نوع فونت 4 (sprite) و 5 (model preview) X و Y این تابع رو از مختصات گوشه به WIDTH و HEIGHT (افست‌ها) تبدیل می‌کنه.
+- استفاده از [نوع فونت](PlayerTextDrawFont) 4 (sprite) و 5 (model preview) X و Y این تابع رو از مختصات گوشه به WIDTH و HEIGHT (افست‌ها) تبدیل می‌کنه.
 - جعبه TextDraw 10.0 واحد بالا و 5.0 واحد سمت چپ به عنوان مبدأ (مختصات TextDrawCreate) شروع می‌شه.
 - این تابع منطقه قابل کلیک رو برای استفاده با [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable) تعریف می‌کنه، چه جعبه‌ای نمایش داده بشه یا نشه.
 

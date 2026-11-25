@@ -15,9 +15,7 @@ Returns the class of the players skin
 
 ## Returns
 
-The [skin id](../resources/skins).
-
-**0** if invalid.
+The [skin id](../resources/skins). **0** if invalid.
 
 ## Examples
 

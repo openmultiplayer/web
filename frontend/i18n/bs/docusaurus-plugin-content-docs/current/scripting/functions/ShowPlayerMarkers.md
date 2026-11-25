@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Omogućava/onemogućava markere/oznake igrača (bljeskalice na radaru). Mora se koristiti kada server počne (OnGameModeInit). Za ostala vremena, pogledaj SetPlayerMarkerForPlayer.
+Omogućava/onemogućava markere/oznake igrača (bljeskalice na radaru). Mora se koristiti kada server počne ([OnGameModeInit](../callbacks/OnGameModeInit)). Za ostala vremena, pogledaj [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer).
 
 | Ime  | Deskripcija                                                                                                                                         |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::tip
 
-Takođe je moguće postaviti boju igrača na boju koja ima potpunu prozirnost (bez alfa vrijednosti). To omogućava prikazivanje markera/oznaka po igraču.
+Takođe je moguće [postaviti boju igrača](SetPlayerColor) na boju koja ima potpunu prozirnost (bez alfa vrijednosti). To omogućava prikazivanje markera/oznaka po igraču.
 
 :::
 

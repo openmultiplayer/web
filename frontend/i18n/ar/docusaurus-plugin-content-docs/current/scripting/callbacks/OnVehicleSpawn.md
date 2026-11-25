@@ -17,7 +17,7 @@ tags: ["vehicle"]
 
 ## الوصف
 
-This callback is called when a vehicle respawns.
+This callback is called when a vehicle **re**spawns.
 
 | Name      | Description             |
 | --------- | ----------------------- |

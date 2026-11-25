@@ -9,11 +9,11 @@ tags: []
 
 Provjeri da li imovina postoji.
 
-| Ime    | Deskripcija                                                                  |
-| ------ | ---------------------------------------------------------------------------- |
-| id     | Virtualna mašina za upotrebu. Trebali biste ovo držati kao nulu.             |
-| name[] | Ime imovine, trebali biste ovo ostaviti prazno ("").                         |
-| value  | Jedinstveni ID imovine. Upotrijebite hash-funkciju za izračunavanje iz niza. |
+| Ime    | Deskripcija                                                                                                       |
+| ------ | ----------------------------------------------------------------------------------------------------------------- |
+| id     | Virtualna [mašina](https://en.wikipedia.org/wiki/Virtual_machine) za upotrebu. Trebali biste ovo držati kao nulu. |
+| name[] | Ime imovine, trebali biste ovo ostaviti prazno ("").                                                              |
+| value  | Jedinstveni ID imovine. Upotrijebite hash-funkciju za izračunavanje iz niza.                                      |
 
 ## Returns
 

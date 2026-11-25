@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. Valid components can be found here.
+Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. Valid components can be found [here](../resources/carcomponentid).
 
 | Name                                     | Description                                                                     |
 | ---------------------------------------- | ------------------------------------------------------------------------------- |
@@ -49,7 +49,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::warning
 
-Using an invalid component ID crashes the player's game. (Fixed in open.mp)
+Using an invalid [component ID](../resources/carcomponentid) crashes the player's game. (Fixed in open.mp)
 
 :::
 

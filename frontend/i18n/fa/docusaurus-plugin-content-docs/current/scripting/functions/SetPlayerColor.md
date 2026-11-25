@@ -32,8 +32,8 @@ SetPlayerColor(playerid, 4278190335);
 
 :::note
 
-- این تابع رنگ بازیکن را برای همه تغییر می‌دهد، حتی اگر رنگ بازیکن با SetPlayerMarkerForPlayer برای هر بازیکن دیگری تغییر کرده باشد.
-- اگر تحت OnPlayerConnect استفاده شود، بازیکن متأثر رنگ را در منوی TAB نخواهد دید.
+- این تابع رنگ بازیکن را برای همه تغییر می‌دهد، حتی اگر رنگ بازیکن با [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer) برای هر بازیکن دیگری تغییر کرده باشد.
+- اگر تحت [OnPlayerConnect](../callbacks/OnPlayerConnect) استفاده شود، بازیکن متأثر رنگ را در منوی TAB نخواهد دید.
 
 :::
 

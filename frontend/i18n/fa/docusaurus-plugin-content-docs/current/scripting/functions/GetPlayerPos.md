@@ -49,7 +49,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-این تابع وقتی توی [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) و OnPlayerRequestClass استفاده میشه مقادیر غیرقابل اعتمادی برمی‌گردونه. چون بازیکن spawn نشده.
+این تابع وقتی توی [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) و [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass) استفاده میشه مقادیر غیرقابل اعتمادی برمی‌گردونه. چون بازیکن spawn نشده.
 
 :::
 

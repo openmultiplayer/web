@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Get a pseudo-random number.
+Get a [pseudo-random number](https://en.wikipedia.org/wiki/Pseudorandom_number_generator).
 
 | Name | Description                                                                |
 | ---- | -------------------------------------------------------------------------- |

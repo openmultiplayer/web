@@ -64,7 +64,8 @@ public DisableVehicleAlarm(vehicleid)
 
 :::note
 
-The alarm will not reset when finished, you'll need to reset it by yourself with this function. Lights also operate during the day (Only when ManualVehicleEngineAndLights is enabled).
+- The alarm will not reset when finished, you'll need to reset it by yourself with this function.
+- Lights also operate during the day (only when ManualVehicleEngineAndLights is enabled).
 
 :::
 

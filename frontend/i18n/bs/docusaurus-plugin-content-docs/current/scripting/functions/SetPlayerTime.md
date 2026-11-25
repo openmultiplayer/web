@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Postavlja vrijeme igre za igrača. Ako je sat igrača uključen (TogglePlayerClock) prikazano vrijeme će se automatski ažurirati.
+Postavlja vrijeme igre za igrača. Ako je sat igrača uključen ([TogglePlayerClock](TogglePlayerClock)) prikazano vrijeme će se automatski ažurirati.
 
 | Ime      | Deskripcija                          |
 | -------- | ------------------------------------ |
@@ -32,7 +32,7 @@ SetPlayerTime(playerid, 0, 0); // Ponoć
 
 :::note
 
-Korištenje ove funkcije unutar OnPlayerConnect neće raditi.
+Korištenje ove funkcije unutar [OnPlayerConnect](../callbacks/OnPlayerConnect) neće raditi.
 
 :::
 

@@ -7,7 +7,7 @@ tags: []
 
 ## Descrição
 
-Obtém a gravidade atualmente definida.
+Obtém a [gravidade](SetGravity) atualmente definida.
 
 ## Exemplos
 

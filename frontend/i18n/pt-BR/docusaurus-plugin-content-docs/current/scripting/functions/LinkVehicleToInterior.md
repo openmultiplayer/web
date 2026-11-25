@@ -8,7 +8,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Vincula um veículo a um interior. Os veículos só podem ser vistos pelos jogadores no mesmo interior (SetPlayerInterior).
+Vincula um veículo a um interior. Os veículos só podem ser vistos pelos jogadores no mesmo interior ([SetPlayerInterior](SetPlayerInterior)).
 
 | Nome | Descrição |
 | ---------- | ---------------------------------------------------------- |

@@ -7,12 +7,12 @@ tags: ["player", "gangzone"]
 
 ## Descrição
 
-Mostra a gangzone para um jogador. Deve ser criado com GangZoneCreate primeiro.
+Mostra a gangzone para um jogador. Deve ser criado com [GangZoneCreate](GangZoneCreate) primeiro.
 
 | Nome     | Descrição                                                                                                            |
 | -------- | -------------------------------------------------------------------------------------------------------------------- |
 | playerid | O ID do jogador para o qual mostrar a gangzone.                                                                      |
-| zone     | O ID da gangzone a esconder para o jogador. Retornado por GangZoneCreate                                             |
+| zone     | O ID da gangzone a esconder para o jogador. Retornado por [GangZoneCreate](GangZoneCreate)                           |
 | color    | A cor a ser mostrada na gangzone, pode ser integer ou hex no formato de cor **RGBA**. Transparência Alpha suportada. |
 
 ## Retorno

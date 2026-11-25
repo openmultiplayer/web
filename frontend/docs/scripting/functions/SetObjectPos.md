@@ -7,14 +7,14 @@ tags: ["object"]
 
 ## Description
 
-Change the position of an object.
+Change the position of an [object](CreateObject).
 
-| Name     | Description                                                            |
-| -------- | ---------------------------------------------------------------------- |
-| objectid | The ID of the object to set the position of. Returned by CreateObject. |
-| Float:x  | The X coordinate to position the object at.                            |
-| Float:y  | The Y coordinate to position the object at.                            |
-| Float:z  | The Z coordinate to position the object at.                            |
+| Name     | Description                                                                            |
+| -------- | -------------------------------------------------------------------------------------- |
+| objectid | The ID of the object to set the position of. Returned by [CreateObject](CreateObject). |
+| Float:x  | The X coordinate to position the object at.                                            |
+| Float:y  | The Y coordinate to position the object at.                                            |
+| Float:z  | The Z coordinate to position the object at.                                            |
 
 ## Returns
 

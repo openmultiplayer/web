@@ -7,7 +7,7 @@ tags: ["文本绘图"]
 
 ## 描述
 
-设置文本绘图文本的描边粗细。可通过 TextDrawBackgroundColor 修改描边颜色。
+设置文本绘图文本的描边粗细。可通过 [TextDrawBackgroundColor](TextDrawBackgroundColor) 修改描边颜色。
 
 | 参数        | 说明                               |
 | ----------- | ---------------------------------- |

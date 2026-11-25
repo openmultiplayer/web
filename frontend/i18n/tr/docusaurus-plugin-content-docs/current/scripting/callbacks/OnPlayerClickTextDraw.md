@@ -64,7 +64,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Tıklanılabilir bölge TextDrawTextSize tarafından belirlenir. X ve Y parametreleri sıfır ya da negatif bir değer olmamalıdır. Bu geri çağırmada CancelSelectTextDraw koşulsuz olarak kullanmayın, bu sonsuz bir döngü ile sonuçlanır.
+- Tıklanılabilir bölge TextDrawTextSize tarafından belirlenir. X ve Y parametreleri sıfır ya da negatif bir değer olmamalıdır.
+- Bu geri çağırmada [CancelSelectTextDraw](../functions/CancelSelectTextDraw) koşulsuz olarak kullanmayın, bu sonsuz bir döngü ile sonuçlanır.
 
 :::
 

@@ -18,7 +18,7 @@ Define um jogador para assistir outro veículo. A câmera deles será acoplada a
 
 ## Retornos
 
-**true** – A função foi executada com sucesso. Observe que o sucesso é relatado se o jogador não estiver no modo espectador (TogglePlayerSpectating), mas nada acontecerá. TogglePlayerSpectating MUST seja usado primeiro.
+**true** – A função foi executada com sucesso. Observe que o sucesso é relatado se o jogador não estiver no modo espectador ([TogglePlayerSpectating](TogglePlayerSpectating)), mas nada acontecerá. TogglePlayerSpectating MUST seja usado primeiro.
 
 **false** - Falha na execução da função. O jogador, o veículo ou ambos não existem.
 
@@ -32,7 +32,7 @@ PlayerSpectateVehicle(playerid, vehicleid);
 
 :::warning
 
-- O pedido é CRITICAL! Certifique-se de usar TogglePlayerSpectating antes de PlayerSpectateVehicle.
+- O pedido é CRITICAL! Certifique-se de usar [TogglePlayerSpectating](TogglePlayerSpectating) antes de PlayerSpectateVehicle.
 - O playerid e o veículo devem estar no mesmo mundo interior e virtual para que esta função funcione corretamente.
 
 :::

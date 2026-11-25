@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-Os mundos virtuais não são iguais aos interiores.
+Os mundos virtuais não são iguais aos [interiores](GetPlayerInterior).
 
 :::
 

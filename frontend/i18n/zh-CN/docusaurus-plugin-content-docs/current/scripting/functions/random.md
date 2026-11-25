@@ -7,7 +7,7 @@ tags: ["核心"]
 
 ## 描述
 
-获取伪随机数
+获取[伪随机数](https://en.wikipedia.org/wiki/Pseudorandom_number_generator)
 
 | 参数 | 说明                                    |
 | ---- | --------------------------------------- |

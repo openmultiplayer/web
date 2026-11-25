@@ -6,7 +6,7 @@ description: sa-mp konfiguracioni fajl klijenta.
 
 ## Deskripcija
 
-`sa-mp.cfg` je konfiguracijski fajl klijenta koji vam omogućava da promijenite postavke vezane za SA-MP. Ova datoteka se nalazi u vašoj fascikli 'Moji dokumenti\\GTA San Andreas User Files\\SAMP', pod vašim Windows korisničkim nalogom. Ovaj fajl se može uređivati pomoću uređivača teksta kao što je notepad.
+sa-mp.cfg je konfiguracijski fajl klijenta koji vam omogućava da promijenite postavke vezane za SA-MP. Ova datoteka se nalazi u vašoj fascikli `Moji dokumenti\GTA San Andreas User Files\SAMP`, pod vašim Windows korisničkim nalogom. Ovaj fajl se može uređivati pomoću uređivača teksta kao što je notepad.
 
 ## Opcije
 

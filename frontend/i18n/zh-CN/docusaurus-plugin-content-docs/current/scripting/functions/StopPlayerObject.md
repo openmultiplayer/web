@@ -7,7 +7,7 @@ tags: ["玩家"]
 
 ## 描述
 
-停止通过 MovePlayerObject 移动的玩家物体。
+停止通过 [MovePlayerObject](MovePlayerObject) 移动的玩家物体。
 
 ## 参数
 

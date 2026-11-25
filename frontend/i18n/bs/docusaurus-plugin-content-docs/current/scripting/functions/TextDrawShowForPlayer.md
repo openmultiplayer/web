@@ -7,12 +7,12 @@ tags: ["player", "textdraw"]
 
 ## Deskripcija
 
-Prikazuje textdraw za određenog igrača.
+Prikazuje [textdraw](TextDrawCreate) za određenog igrača.
 
-| Ime      | Deskripcija                                                     |
-| -------- | --------------------------------------------------------------- |
-| playerid | ID igrača za prikazati textdraw.                                |
-| text     | ID textdrawa za prikazati. Returnovan/vraćen od TextDrawCreate. |
+| Ime      | Deskripcija                                                                       |
+| -------- | --------------------------------------------------------------------------------- |
+| playerid | ID igrača za prikazati textdraw.                                                  |
+| text     | ID textdrawa za prikazati. Returnovan/vraćen od [TextDrawCreate](TextDrawCreate). |
 
 ## Returns
 
@@ -34,7 +34,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Ako će samo jedan igrač vidjeti textdraw, bilo bi pametno da koristite player-textdraw-ove. Ovo je također koristno za textdraw-ove koji moraju da prikažu informacije koje su posebne za svakog igrača posebno.
+Ako će samo jedan igrač vidjeti textdraw, bilo bi pametno da koristite [player-textdraw-ove](CreatePlayerTextDraw). Ovo je također koristno za textdraw-ove koji moraju da prikažu informacije koje su posebne za svakog igrača posebno.
 
 :::
 

@@ -11,16 +11,16 @@ tags: ["物体"]
 
 从物体的材质索引获取材质数据。
 
-| 参数               | 说明                               |
-| ------------------ | ---------------------------------- |
-| objectid           | 物体 ID                            |
-| materialIndex      | 物体的材质索引 (0 至 15)           |
-| &modelid           | 存储模型 ID 的变量，通过引用传递   |
-| textureLibrary[]   | 存储纹理库名称的数组，通过引用传递 |
-| textureLibrarySize | 纹理库数组的尺寸                   |
-| textureName[]      | 存储纹理名称的数组，通过引用传递   |
-| textureNameSize    | 纹理名称数组的尺寸                 |
-| &materialColour    | 存储材质颜色的变量，通过引用传递   |
+| 参数               | 说明                                                                     |
+| ------------------ | ------------------------------------------------------------------------ |
+| objectid           | 物体 ID                                                                  |
+| materialIndex      | 物体的材质索引 (0 至 15)                                                 |
+| &modelid           | 存储模型 ID 的变量，通过引用传递                                         |
+| textureLibrary[]   | 存储纹理库名称的数组，通过引用传递                                       |
+| textureLibrarySize | 纹理库数组的尺寸                                                         |
+| textureName[]      | 存储[纹理](https://models.open.mp/?cat=textures)名称的数组，通过引用传递 |
+| textureNameSize    | 纹理名称数组的尺寸                                                       |
+| &materialColour    | 存储材质颜色的变量，通过引用传递                                         |
 
 ## 返回值
 

@@ -36,7 +36,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-Kung pinagana ang TogglePlayerClock, dahan-dahang magbabago ang panahon sa paglipas ng panahon, sa halip na agad na magbago. Mayroon lamang valid na 21 weather ID sa laro (0 - 20), gayunpaman ang laro ay walang anumang anyo ng range check.
+- Kung pinagana ang TogglePlayerClock, dahan-dahang magbabago ang panahon sa paglipas ng panahon, sa halip na agad na magbago.
+- Mayroon lamang valid na 21 weather ID sa laro (0 - 20), gayunpaman ang laro ay walang anumang anyo ng range check.
 
 :::
 

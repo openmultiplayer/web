@@ -16,7 +16,7 @@ Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a 
 
 ## Returns
 
-The ID of the component installed in the specified slot.
+The ID of the [component](../resources/carcomponentid) installed in the specified slot.
 
 Returns **0** if no component in specified vehicle's specified slot, or if vehicle doesn't exist.
 

@@ -9,11 +9,11 @@ tags: ["车辆"]
 
 当玩家在改装店内预览车辆涂装时触发此回调函数（注意：玩家购买涂装时不会触发）。
 
-| 参数       | 说明                 |
-| ---------- | -------------------- |
-| playerid   | 变更涂装预览的玩家ID |
-| vehicleid  | 变更涂装预览的车辆ID |
-| paintjobid | 新预览的涂装ID       |
+| 参数       | 说明                                     |
+| ---------- | ---------------------------------------- |
+| playerid   | 变更涂装预览的玩家ID                     |
+| vehicleid  | 变更涂装预览的车辆ID                     |
+| paintjobid | 新预览的[涂装ID](../resources/paintjobs) |
 
 ## 返回值
 
@@ -36,7 +36,7 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 :::note
 
 - 此回调不会通过 [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob) 函数触发
-- 如需检测玩家**购买**涂装行为，可使用 vSync 插件的 OnVehicleChangePaintjob 回调
+- 如需检测玩家**购买**涂装行为，可使用 [vSync](https://github.com/Vasily-X/vSync) 插件的 OnVehicleChangePaintjob 回调
 
 :::
 

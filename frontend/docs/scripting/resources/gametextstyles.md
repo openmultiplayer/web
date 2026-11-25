@@ -4,7 +4,7 @@ sidebar_label: GameText Styles
 description: GameText Styles used in textdraws and gametext.
 ---
 
-This page covers everything you need to know about gametext styles, and how they can be used in textdraws and in text rendered for a (single) player.
+This page covers everything you need to know about gametext styles, and how they can be used in [textdraws](../functions/TextDrawCreate) and in text rendered for a (single) player.
 Mainly used by [GameTextForPlayer](../functions/GameTextForPlayer) and [GameTextForAll](../functions/GameTextForAll).
 
 ---
@@ -62,7 +62,9 @@ Unlike text colors, these slugs do not require encapsulation. They can be used a
 
 :::caution
 
-Be careful, using too many text colors or special characters in one gametext may crash every player the gametext is shown to. Additionally, avoid using an uneven usage of the `~` character. Example: `~~r~Hello, ~g~how are ~y~you?`
+Be careful, using too many text colors or special characters in one gametext may crash every player the gametext is shown to. Additionally, avoid using an uneven usage of the `~` character.
+
+Example: `~~r~Hello, ~g~how are ~y~you?`
 
 :::
 

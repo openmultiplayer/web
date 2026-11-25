@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-Để ngăn người chơi xuất hiện với các lớp nhất định, lớp cuối cùng đã xem phải được lưu trong một biến trong OnPlayerRequestClass.
+Để ngăn người chơi xuất hiện với các lớp nhất định, lớp cuối cùng đã xem phải được lưu trong một biến trong [OnPlayerRequestClass](OnPlayerRequestClass).
 
 :::
 

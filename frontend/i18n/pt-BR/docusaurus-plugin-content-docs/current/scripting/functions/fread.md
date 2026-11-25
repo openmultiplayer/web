@@ -10,12 +10,12 @@ tags: ["file management"]
 
 Leia uma única linha de um arquivo.
 
-| Nome | Descrição |
-| ---------------------- | -------------------------------------------------------------- |
-| File:handle | O identificador do arquivo a ser lido (retornado por fopen).       |
-| string[] | Uma matriz de strings para armazenar o texto lido, passado por referência. |
-| size = sizeof (string) | O número de bytes a serem lidos.                                   |
-| bool:pack | A string deve ser embalada? (padrão: false).                 |
+| Nome                   | Descrição                                                                  |
+| ---------------------- | -------------------------------------------------------------------------- |
+| File:handle            | O identificador do arquivo a ser lido (retornado por [fopen](fopen)).      |
+| string[]               | Uma matriz de strings para armazenar o texto lido, passado por referência. |
+| size = sizeof (string) | O número de bytes a serem lidos.                                           |
+| bool:pack              | A string deve ser embalada? (padrão: false).                               |
 
 ## Retornos
 

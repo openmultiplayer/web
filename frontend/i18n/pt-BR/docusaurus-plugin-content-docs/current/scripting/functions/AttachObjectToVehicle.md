@@ -7,18 +7,18 @@ tags: ["object", "vehicle"]
 
 ## Descrição
 
-Anexa um objeto a um veículo.
+Anexa um [objeto](CreateObject) a um [veículo](CreateVehicle).
 
-| Nome            | Descrição                                                                                                                                          |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| objectid        | O ID do objeto a ser anexado ao veículo. Note que este é um ID de objeto, não um ID de modelo. O objeto deve ser criado com CreateObject primeiro. |
-| parentid        | O ID do veículo ao qual anexar o objeto.                                                                                                           |
-| Float:offsetX   | O deslocamento do eixo X a partir do veículo para anexar o objeto.                                                                                 |
-| Float:offsetY   | O deslocamento do eixo Y a partir do veículo para anexar o objeto.                                                                                 |
-| Float:offsetZ   | O deslocamento do eixo Z a partir do veículo para anexar o objeto.                                                                                 |
-| Float:rotationX | O deslocamento de rotação X para o objeto.                                                                                                         |
-| Float:rotationY | O deslocamento de rotação Y para o objeto.                                                                                                         |
-| Float:rotationZ | O deslocamento de rotação Z para o objeto.                                                                                                         |
+| Nome            | Descrição                                                                                                                                                          |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| objectid        | O ID do objeto a ser anexado ao veículo. Note que este é um ID de objeto, não um ID de modelo. O objeto deve ser criado com [CreateObject](CreateObject) primeiro. |
+| parentid        | O ID do veículo ao qual anexar o objeto.                                                                                                                           |
+| Float:offsetX   | O deslocamento do eixo X a partir do veículo para anexar o objeto.                                                                                                 |
+| Float:offsetY   | O deslocamento do eixo Y a partir do veículo para anexar o objeto.                                                                                                 |
+| Float:offsetZ   | O deslocamento do eixo Z a partir do veículo para anexar o objeto.                                                                                                 |
+| Float:rotationX | O deslocamento de rotação X para o objeto.                                                                                                                         |
+| Float:rotationY | O deslocamento de rotação Y para o objeto.                                                                                                                         |
+| Float:rotationZ | O deslocamento de rotação Z para o objeto.                                                                                                                         |
 
 ## Retorno
 
@@ -36,13 +36,13 @@ AttachObjectToVehicle(objectid, vehicleid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
 
 :::note
 
-O objeto deve ser criado primeiro.
+O objeto deve ser [criado](CreateObject) primeiro.
 
 :::
 
 :::warning
 
-Quando o veículo é destruído ou respawnado, os objetos anexados não serão destruídos junto com ele; eles permanecerão estacionários na posição onde o veículo desapareceu e serão reanexados ao próximo veículo que reclamar o ID do veículo ao qual os objetos estavam anexados.
+Quando o veículo é [destruído](DestroyVehicle) ou [respawnado](../callbacks/OnVehicleSpawn), os objetos anexados não serão destruídos junto com ele; eles permanecerão estacionários na posição onde o veículo desapareceu e serão reanexados ao próximo veículo que reclamar o ID do veículo ao qual os objetos estavam anexados.
 
 :::
 

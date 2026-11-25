@@ -7,7 +7,7 @@ tags: ["3dtextlabel"]
 
 ## Deskripcija
 
-Obriši 3D text label (kreiran sa Create3DTextLabel).
+Obriši 3D text label (kreiran sa [Create3DTextLabel](Create3DTextLabel)).
 
 | Ime           | Deskripcija                    |
 | ------------- | ------------------------------ |

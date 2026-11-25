@@ -32,7 +32,7 @@ ChangeVehiclePaintjob(vehicleid, rand); // changes the paintjob of the player's 
 
 :::warning
 
-If vehicle's color is black, paintjob may not be visible. Better to make vehicle white before applying painjob by using
+If vehicle's color is black, paintjob may not be visible. Better to make vehicle white before applying paintjob by using:
 
 ```c
 ChangeVehicleColor(vehicleid, 1, 1);

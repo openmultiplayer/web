@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Deskripcija
 
-Postavlja debljinu outline-a od texta u textdrawu. TextDrawBackgroundColor se može koristiti kako biste promijenili boju.
+Postavlja debljinu outline-a od texta u textdrawu. [TextDrawBackgroundColor](TextDrawBackgroundColor) se može koristiti kako biste promijenili boju.
 
 | Ime  | Deskripcija                                              |
 | ---- | -------------------------------------------------------- |

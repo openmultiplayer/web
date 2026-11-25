@@ -33,9 +33,8 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**SA-MP server:** Players stream out if they are more than 200.0 meters away (see [server.cfg](../../server/server.cfg) - **stream_distance**)
-
-**open.mp server:** Players stream out if they are more than 200.0 meters away (see [config.json](../../server/config.json) - **network.stream_radius**)
+- **SA-MP server:** Players stream out if they are more than 200.0 meters away (see [server.cfg](../../server/server.cfg) - **stream_distance**)
+- **open.mp server:** Players stream out if they are more than 200.0 meters away (see [config.json](../../server/config.json) - **network.stream_radius**)
 
 :::
 

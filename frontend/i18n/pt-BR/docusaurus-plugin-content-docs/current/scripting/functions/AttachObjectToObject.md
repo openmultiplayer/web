@@ -24,6 +24,7 @@ Você pode usar esta função para anexar objetos a outros objetos. Os objetos s
 ## Retorno
 
 **true** - A função foi executada com sucesso.
+
 **false** - A função falhou ao executar. Isso significa que o primeiro objeto (objectid) não existe. Não há verificações internas para verificar se o segundo objeto (attachtoid) existe.
 
 ## Exemplos
@@ -38,7 +39,7 @@ AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, true)
 
 :::note
 
-- Ambos os objetos precisam ser criados antes de tentar anexá-los.
+- Ambos os objetos precisam ser [criados](CreateObject) antes de tentar anexá-los.
 - Não há uma versão player-object desta função no SA-MP.
   Mas existe [AttachPlayerObjectToObject](AttachPlayerObjectToObject) no open.mp
 

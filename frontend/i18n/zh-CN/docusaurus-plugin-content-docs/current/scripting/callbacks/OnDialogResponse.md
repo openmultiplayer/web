@@ -7,19 +7,19 @@ tags: ["对话框"]
 
 ## 描述
 
-当玩家响应通过ShowPlayerDialog显示的对话框时触发此回调。响应方式包括：
+当玩家响应通过[ShowPlayerDialog](../functions/ShowPlayerDialog)显示的对话框时触发此回调。响应方式包括：
 
 - 点击按钮
 - 按下ENTER/ESC键
 - 双击列表项（针对列表式对话框）
 
-| 参数        | 说明                                                                |
-| ----------- | ------------------------------------------------------------------- |
-| playerid    | 响应对话框的玩家ID                                                  |
-| dialogid    | 对话框ID（与ShowPlayerDialog中设置的ID对应）                        |
-| response    | 按钮响应值：**1**=左按钮，**0**=右按钮（若仅显示单个按钮则始终为1） |
-| listitem    | 玩家选择的列表项ID（从0开始计数），非列表式对话框该值为-1           |
-| inputtext[] | 玩家在输入框中输入的文本内容 或 选中的列表项文本                    |
+| 参数        | 说明                                                                          |
+| ----------- | ----------------------------------------------------------------------------- |
+| playerid    | 响应对话框的玩家ID                                                            |
+| dialogid    | 对话框ID（与[ShowPlayerDialog](../functions/ShowPlayerDialog)中设置的ID对应） |
+| response    | 按钮响应值：**1**=左按钮，**0**=右按钮（若仅显示单个按钮则始终为1）           |
+| listitem    | 玩家选择的列表项ID（从0开始计数），非列表式对话框该值为-1                     |
+| inputtext[] | 玩家在输入框中输入的文本内容 或 选中的列表项文本                              |
 
 ## 返回值
 
@@ -167,7 +167,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 :::tip
 
-使用switch-case语句处理多个对话框比if语句更高效
+使用[switch-case](../language/Statements#switch)语句处理多个对话框比if语句更高效
 
 :::
 

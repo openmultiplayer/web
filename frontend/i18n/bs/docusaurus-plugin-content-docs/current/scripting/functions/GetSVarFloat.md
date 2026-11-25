@@ -15,9 +15,9 @@ Ova funkcija je dodana u SA-MP 0.3.7 R2 i ne radi u nižim verzijama!
 
 Dobija float vrijednost server varijable.
 
-| Ime     | Deskripcija                                                                           |
-| ------- | ------------------------------------------------------------------------------------- |
-| varname | Ime server varijable (osjetljivo na mala i velika slova). Dodijeljeno u SetSVarFloat. |
+| Ime     | Deskripcija                                                                                           |
+| ------- | ----------------------------------------------------------------------------------------------------- |
+| varname | Ime server varijable (osjetljivo na mala i velika slova). Dodijeljeno u [SetSVarFloat](SetSVarFloat). |
 
 ## Returns
 

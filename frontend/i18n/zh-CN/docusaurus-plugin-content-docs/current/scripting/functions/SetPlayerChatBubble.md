@@ -36,14 +36,14 @@ public OnPlayerText(playerid, text[])
 
 :::note
 
-玩家无法看到自己的聊天气泡，此规则同样适用于附加的 3D 文本标签
+玩家无法看到自己的聊天气泡，此规则同样适用于附加的 [3D 文本标签](Attach3DTextLabelToPlayer)
 
 :::
 
 :::tip
 
-- 支持在文本中使用颜色嵌入代码实现多色文字效果
-- 使用"-1"作为颜色值将显示为白色（因为-1 的十六进制表示为 0xFFFFFFFF）
+- 支持在文本中使用[颜色嵌入](../resources/colorslist#颜色嵌入)代码实现多色文字效果
+- 使用"-1"作为颜色值将显示为白色（因为-1 的[十六进制表示](../resources/hexcolors)为 0xFFFFFFFF）
 
 :::
 

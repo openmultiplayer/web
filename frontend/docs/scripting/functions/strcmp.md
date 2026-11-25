@@ -7,7 +7,7 @@ tags: ["string"]
 
 ## Description
 
-Compares two strings to see if they are the same.
+**C**o**mp**ares two **str**ings to see if they are the same.
 
 | Name                         | Description                                                                                                                                 |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Obtenha o ping de um jogador. O ping mede a quantidade de tempo que leva para o servidor fazer 'ping' no cliente e para o cliente enviar a mensagem de volta.
+Obtenha o [ping](https://en.wikipedia.org/wiki/Ping_(networking_utility)) de um jogador. O ping mede a quantidade de tempo que leva para o servidor fazer 'ping' no cliente e para o cliente enviar a mensagem de volta.
 
 | Nome     | Descrição                             |
 | -------- | ------------------------------------- |

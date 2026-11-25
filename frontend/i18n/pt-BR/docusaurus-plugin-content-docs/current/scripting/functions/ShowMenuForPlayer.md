@@ -10,10 +10,10 @@ tags: ["player", "menu"]
 
 Mostra um menu criado anteriormente para um jogador.
 
-| Nome | Descrição |
-| ----------- | ---------------------------------------------------- |
-| Menu:menuid | O ID do menu a ser exibido. Retornado por CreateMenu.  |
-| playerid | O ID do jogador para quem o menu será mostrado. |
+| Nome        | Descrição                                                           |
+| ----------- | ------------------------------------------------------------------- |
+| Menu:menuid | O ID do menu a ser exibido. Retornado por [CreateMenu](CreateMenu). |
+| playerid    | O ID do jogador para quem o menu será mostrado.                     |
 
 ## Retornos
 

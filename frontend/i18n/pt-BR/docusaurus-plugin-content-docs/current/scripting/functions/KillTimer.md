@@ -10,9 +10,9 @@ tags: ["timer"]
 
 Mata (para) um cronômetro em execução.
 
-| Nome | Descrição |
-| ------- | ----------------------------------------------------------------- |
-| timerid | O ID do temporizador para matar (retornado por SetTimer ou SetTimerEx). |
+| Nome    | Descrição                                                                                         |
+| ------- | ------------------------------------------------------------------------------------------------- |
+| timerid | O ID do temporizador para matar (retornado por [SetTimer](SetTimer) ou [SetTimerEx](SetTimerEx)). |
 
 ## Retornos
 

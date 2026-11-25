@@ -10,13 +10,13 @@ tags: ["timer"]
 
 Define um cronômetro para chamar uma função após o intervalo especificado. Esta variante ('Ex') pode passar parâmetros (como um jogador ID) para a função.
 
-| Nome                 | Descrição                                                                                                                                              |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| const functionName[] | O nome de uma função pública a ser chamada quando o cronômetro expirar.                                                                                |
-| interval             | Intervalo em milissegundos (1 segundo = 1000 MS).                                                                                                      |
-| bool:repeating       | Booleano (true/false (ou 1/0)) que indica se o temporizador deve ser chamado repetidamente (só pode ser interrompido com KillTimer) ou apenas uma vez. |
-| const specifiers[]   | Formato especial que indica os tipos de valores que o temporizador passará.                                                                            |
-| OPEN_MP_TAGS:...     | Número indefinido de argumentos a serem passados (deve seguir o formato especificado no parâmetro anterior).                                           |
+| Nome                 | Descrição                                                                                                                                                           |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| const functionName[] | O nome de uma função pública a ser chamada quando o cronômetro expirar.                                                                                             |
+| interval             | Intervalo em milissegundos (1 segundo = 1000 MS).                                                                                                                   |
+| bool:repeating       | Booleano (true/false (ou 1/0)) que indica se o temporizador deve ser chamado repetidamente (só pode ser interrompido com [KillTimer](KillTimer)) ou apenas uma vez. |
+| const specifiers[]   | Formato especial que indica os tipos de valores que o temporizador passará.                                                                                         |
+| OPEN_MP_TAGS:...     | Número indefinido de argumentos a serem passados (deve seguir o formato especificado no parâmetro anterior).                                                        |
 
 ## Retornos
 
@@ -74,7 +74,7 @@ Os intervalos do temporizador não são precisos (cerca de 25% de desconto) em S
 :::tip
 
 - As variáveis do temporizador ID devem ser redefinidas para 0 quando possível, para minimizar a chance de matar acidentalmente novos temporizadores por engano. `-1` é comumente confundido com o ID inválido - não é.
-- A função a ser chamada deve ser pública. Isso significa que tem que ser encaminhado.
+- A função a ser chamada deve ser [pública](../language/reference/Functions#-funções-public-e-main). Isso significa que tem que ser [encaminhado](../language/reference/Functions#-declarações-antecipadas).
 
 :::
 

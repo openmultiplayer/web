@@ -38,7 +38,8 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 :::note
 
-Као што назив функције указује, она се позива само када играч кликне да обележи циљ, а не када притисне тастер. Вредност Z координате ће бити 0 (неважећа) ако је кликнута област на мапи далеко од играча; користите [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) или [ColAndreas](https://github.com/Pottus/ColAndreas) додатак да добијете прецизнију Z координату.
+- Као што назив функције указује, она се позива само када играч кликне да обележи циљ, а не када притисне тастер.
+- Вредност Z координате ће бити 0 (неважећа) ако је кликнута област на мапи далеко од играча; користите [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) или [ColAndreas](https://github.com/Pottus/ColAndreas) додатак да добијете прецизнију Z координату.
 
 :::
 

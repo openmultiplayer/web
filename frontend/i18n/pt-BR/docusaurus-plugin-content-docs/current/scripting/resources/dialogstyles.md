@@ -7,7 +7,7 @@ sidebar_label: Dialog Styles
 
 - Em [OnDialogResponse](../callbacks/OnDialogResponse), pressionar **button1** define **response** para **1**, enquanto pressionar **button2** define **response** para **0**.
 - Todo dialog tem um button2 opcional. Para que ele não seja mostrado, mantenha o parâmetro vazio, como no primeiro exemplo. Os jogadores não poderão clicá-lo, mas eles ainda poderão apertar ESC e chamar [OnDialogResponse](../callbacks/OnDialogResponse) com **response** = **0**.
-- [ShowPlayerDialog](../functions/ShowPlayerDialog): As cores embutidas podem ser utilizadas nos parâmetros: **caption**, **info**, **button1** e **button2**.
+- [ShowPlayerDialog](../functions/ShowPlayerDialog): As [cores embutidas](colorslist#color-embedding) podem ser utilizadas nos parâmetros: **caption**, **info**, **button1** e **button2**.
 
 :::
 
@@ -33,7 +33,7 @@ Visualização:
 
 - **\t** adiciona um TAB (mais espaço).
 - **\n** cria uma nova linha.
-- Cores embutidas não resetarão após **\n** ou **\t**
+- [Cores embutidas](colorslist#color-embedding) não resetarão após **\n** ou **\t**
 
 :::
 
@@ -68,7 +68,7 @@ Visualização:
 
 - **\t** adiciona um TAB (mais espaço).
 - **\n** cria uma nova linha.
-- Cores embutidas não resetarão após **\n** ou **\t**
+- [Cores embutidas](colorslist#color-embedding) não resetarão após **\n** ou **\t**
 
 :::
 
@@ -103,7 +103,7 @@ Visualização:
 
 - **\t** adiciona um TAB (mais espaço).
 - **\n** cria uma nova linha.
-- Cores embutidas não resetarão após **\n** ou **\t**
+- [Cores embutidas](colorslist#color-embedding) não resetarão após **\n** ou **\t**
 
 :::
 
@@ -190,7 +190,7 @@ Visualização:
 
 - **\t** adiciona um TAB (mais espaço).
 - **\n** cria uma nova linha.
-- Cores embutidas não resetarão após **\n** ou **\t**.
+- [Cores embutidas](colorslist#color-embedding) não resetarão após **\n** ou **\t**.
 
 :::
 
@@ -238,7 +238,8 @@ Showing:
 
 - **\t** cria uma nova coluna.
 - **\n** cria um novo item na lista.
-- Cores embutidas reiniciarão após **\n** e **\t**. A primeira linha **info** define o cabeçalho.
+- [Cores embutidas](colorslist#color-embedding) reiniciarão após **\n** e **\t**.
+- A primeira linha **info** define o cabeçalho.
 
 :::
 

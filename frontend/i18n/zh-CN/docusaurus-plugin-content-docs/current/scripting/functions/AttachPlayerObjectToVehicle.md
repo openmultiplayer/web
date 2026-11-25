@@ -46,7 +46,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::note
 
-在附加操作前必须创建物体
+在附加操作前必须[创建](CreatePlayerObject)物体
 
 :::
 

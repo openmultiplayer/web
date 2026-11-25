@@ -13,7 +13,7 @@ Essa callback **só é chamada** quando um veículo **re**nasce. CreateVehicle e
 
 ## Descrição
 
-Essa callback é chamada quando um veículo renasce.
+Essa callback é chamada quando um veículo **re**nasce.
 
 | Nome      | Descrição                             |
 | --------- | ------------------------------------- |

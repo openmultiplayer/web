@@ -9,11 +9,11 @@ tags: []
 
 Esta callback é chamada quando o jogador entra ou sai de um shop mod.
 
-| Nome       | Descrição                                                         |
-| ---------- | ----------------------------------------------------------------- |
-| playerid   | O ID do jogador que entrou/saiu do modshop                        |
-| enterexit  | **1** se o jogador entrou ou **0** se ele saiu                    |
-| interiorid | O ID do interior do modshop que o jogador entrou (ou 0 caso saia) |
+| Nome       | Descrição                                                                                                   |
+| ---------- | ----------------------------------------------------------------------------------------------------------- |
+| playerid   | O ID do jogador que entrou/saiu do modshop                                                                  |
+| enterexit  | **1** se o jogador entrou ou **0** se ele saiu                                                              |
+| interiorid | O [ID do interior](../resources/interiorids#lojas-de-mods) do modshop que o jogador entrou (ou 0 caso saia) |
 
 ## Retornos
 

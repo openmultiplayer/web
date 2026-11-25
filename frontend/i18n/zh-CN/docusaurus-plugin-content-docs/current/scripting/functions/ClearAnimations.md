@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-- 当在 ApplyAnimation 函数中使用'freeze'参数冻结动画时，ClearAnimations 在动画结束后不会生效
+- 当在 [ApplyAnimation](ApplyAnimation) 函数中使用'freeze'参数冻结动画时，ClearAnimations 在动画结束后不会生效
 - 与其他移出车辆方式不同，此函数会将车辆速度立即归零。玩家将出现在车辆顶部，位置与其在座位上的坐标一致
 
 :::

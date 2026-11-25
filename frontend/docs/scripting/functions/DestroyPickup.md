@@ -7,11 +7,11 @@ tags: ["pickup"]
 
 ## Description
 
-Destroys a pickup created with CreatePickup.
+Destroys a pickup created with [CreatePickup](CreatePickup).
 
-| Name   | Description                                                 |
-| ------ | ----------------------------------------------------------- |
-| pickup | The ID of the pickup to destroy (returned by CreatePickup). |
+| Name   | Description                                                                 |
+| ------ | --------------------------------------------------------------------------- |
+| pickup | The ID of the pickup to destroy (returned by [CreatePickup](CreatePickup)). |
 
 ## Returns
 

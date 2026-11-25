@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## Descrição
 
-Libera a memória do resultado alocada de db_query.
+Libera a memória do resultado alocada de [db_query](db_query).
 
 | Nome              | Descrição                                                              |
 | ----------------- | ---------------------------------------------------------------------- |

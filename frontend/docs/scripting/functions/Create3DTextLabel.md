@@ -63,8 +63,8 @@ drawDistance seems to be a lot smaller when spectating.
 
 :::tip
 
-- Use colour embedding for multiple colours in the text.
-- To remove the background use colour with transparency less than 0xFF.
+- Use [colour embedding](../resources/colorslist#color-embedding) for multiple colours in the text.
+- To remove the background use colour with [transparency](../resources/colorslist#alpha-values-transparency) less than 0xFF.
 
 :::
 

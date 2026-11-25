@@ -239,7 +239,8 @@ Menampilkan:
 
 - **\t** menambah sebuah TAB (lebih banyak spasi).
 - **\n** membuat sebuah baris baru.
-- Pewarnaan akan diatur ulang setelah **\n** dan **\t**. **info** pada baris pertama berisi header.
+- Pewarnaan akan diatur ulang setelah **\n** dan **\t**.
+- **info** pada baris pertama berisi header.
 
 :::
 

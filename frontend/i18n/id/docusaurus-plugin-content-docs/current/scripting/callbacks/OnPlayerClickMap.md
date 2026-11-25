@@ -38,7 +38,7 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 :::note
 
-Nilai Z akan berubah menjadi 0 (invalid) jika sangat jauh dari pemain, gunakan MapAndreas plugin untuk mendapatkan koordinat Z yang akurat.
+Nilai Z akan berubah menjadi 0 (invalid) jika sangat jauh dari pemain, gunakan [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) plugin untuk mendapatkan koordinat Z yang akurat.
 
 :::
 

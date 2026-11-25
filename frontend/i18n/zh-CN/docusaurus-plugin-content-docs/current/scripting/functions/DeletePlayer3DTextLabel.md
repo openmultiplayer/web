@@ -7,7 +7,7 @@ tags: ["玩家", "3D文本标签"]
 
 ## 描述
 
-销毁通过 CreatePlayer3DTextLabel 创建的 3D 文本标签。
+销毁通过 [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel) 创建的 3D 文本标签。
 
 | 参数                | 说明                            |
 | ------------------- | ------------------------------- |

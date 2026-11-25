@@ -7,7 +7,7 @@ tags: ["math", "floating-point"]
 
 ## Description
 
-Binibigyang-daan ka ng function na ito na makuha ang logarithm ng isang float value.
+Binibigyang-daan ka ng function na ito na makuha ang [logarithm](https://en.wikipedia.org/wiki/Logarithm) ng isang float value.
 
 | Name        | Description                                 |
 | ----------- | ------------------------------------------- |

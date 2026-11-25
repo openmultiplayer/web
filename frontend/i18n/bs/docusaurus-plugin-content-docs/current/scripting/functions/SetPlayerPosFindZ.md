@@ -32,7 +32,7 @@ SetPlayerPosFindZ(playerid, 1234.5, 1234.5, 1000.0);
 
 :::warning
 
-Ova funkcija ne radi ako su nove kordinate mnogo daleko od pozicije na kojima je igrač trenutno. Z visina će biti 0 što će igrača u većini slučajeva staviti pod zemlju. Vrlo je preporučljivo da koristite MapAndreas ili ColAndreas plugine umjesto ovoga.
+Ova funkcija ne radi ako su nove kordinate mnogo daleko od pozicije na kojima je igrač trenutno. Z visina će biti 0 što će igrača u većini slučajeva staviti pod zemlju. Vrlo je preporučljivo da koristite [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) ili [ColAndreas](https://github.com/Pottus/ColAndreas) plugine umjesto ovoga.
 
 :::
 

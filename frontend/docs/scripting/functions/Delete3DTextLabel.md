@@ -7,7 +7,7 @@ tags: ["3dtextlabel"]
 
 ## Description
 
-Delete a 3D text label (created with Create3DTextLabel).
+Delete a 3D text label (created with [Create3DTextLabel](Create3DTextLabel)).
 
 | Name          | Description                            |
 | ------------- | -------------------------------------- |

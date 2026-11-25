@@ -11,7 +11,7 @@ Cria um objeto em coordenadas especificadas no mundo do jogo.
 
 | Nome               | Descrição                                                                                                                                                                                        |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| modelid            | O modelo do objeto.                                                                                                                                                                              |
+| modelid            | O [modelo do objeto](https://models.open.mp/?cat=objects).                                                                                                                                       |
 | Float:X            | A coordenada X para criar o objeto.                                                                                                                                                              |
 | Float:Y            | A coordenada Y para criar o objeto.                                                                                                                                                              |
 | Float:Z            | A coordenada Z para criar o objeto.                                                                                                                                                              |
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-Há um limite de 1000 objetos (MAX_OBJECTS). Para contornar esse limite, você pode usar um streamer.
+Há um limite de 1000 objetos ([MAX_OBJECTS](../resources/limits)). Para contornar esse limite, você pode usar um [streamer](https://github.com/samp-incognito/samp-streamer-plugin).
 
 :::
 

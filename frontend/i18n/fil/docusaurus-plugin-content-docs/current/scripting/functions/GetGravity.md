@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-Kunin ang kasalukuyang naka set na gravity.
+Kunin ang kasalukuyang naka set na [gravity](SetGravity).
 
 ## Examples
 

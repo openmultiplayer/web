@@ -33,7 +33,8 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 
 :::warning
 
-No se llama si el jugador se cae de una moto o es removido del vehículo por otros medios como usando SetPlayerPos. Debes usar OnPlayerStateChange y comprobar si su estado anterior es PLAYER_STATE_DRIVER o PLAYER_STATE_PASSENGER y su nuevo estado es PLAYER_STATE_ONFOOT.
+- No se llama si el jugador se cae de una moto o es removido del vehículo por otros medios como usando SetPlayerPos.
+- Debes usar [OnPlayerStateChange](OnPlayerStateChange) y comprobar si su estado anterior es PLAYER_STATE_DRIVER o PLAYER_STATE_PASSENGER y su nuevo estado es PLAYER_STATE_ONFOOT.
 
 :::
 

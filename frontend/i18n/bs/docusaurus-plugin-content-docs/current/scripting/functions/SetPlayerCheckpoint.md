@@ -7,7 +7,7 @@ tags: ["player", "checkpoint"]
 
 ## Deskripcija
 
-Postavi checkpoint (crveni cilindar) za igrača. Također prikazuje crvenu bljeskalicu na radaru/mapi. Kada igrač uđe u checkpoint, poziva se OnPlayerEnterCheckpoint i određene akcije se mogu izvršiti.
+Postavi checkpoint (crveni cilindar) za igrača. Također prikazuje crvenu bljeskalicu na radaru/mapi. Kada igrač uđe u checkpoint, poziva se [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint) i određene akcije se mogu izvršiti.
 
 | Ime        | Deskripcija                          |
 | ---------- | ------------------------------------ |

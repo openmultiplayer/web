@@ -7,7 +7,7 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 ## Description
 
-Check if the player is inside their current set race checkpoint (SetPlayerRaceCheckpoint).
+Check if the player is inside their current set race checkpoint ([SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint)).
 
 | Name     | Description                    |
 | -------- | ------------------------------ |

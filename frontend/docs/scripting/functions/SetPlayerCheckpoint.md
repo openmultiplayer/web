@@ -7,7 +7,7 @@ tags: ["player", "checkpoint"]
 
 ## Description
 
-Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the radar. When players enter a checkpoint, OnPlayerEnterCheckpoint is called and actions can be performed.
+Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the radar. When players enter a checkpoint, [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint) is called and actions can be performed.
 
 | Name          | Description                                        |
 | ------------- | -------------------------------------------------- |
@@ -55,7 +55,7 @@ public OnPlayerEnterCheckpoint(playerid)
 :::warning
 
 - Checkpoints are asynchronous, meaning only one can be shown at a time. To 'stream' checkpoints (only show them when players are close enough), use a checkpoint streamer.
-- Checkpoints created on server-created objects ([CreateObject](CreateObject)/[CreatePlayerObject](CreatePlayerObject)) will appear down on the 'real' ground, but will still function correctly. A pickup can be used instead.
+- Checkpoints created on server-created objects ([CreateObject](CreateObject)/[CreatePlayerObject](CreatePlayerObject)) will appear down on the 'real' ground, but will still function correctly. A [pickup](CreatePickup) can be used instead.
 
 :::
 

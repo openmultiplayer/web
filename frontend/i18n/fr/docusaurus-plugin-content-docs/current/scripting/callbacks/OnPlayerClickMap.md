@@ -35,9 +35,8 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 :::note
 
-Cette callback n'est appelée que quand le joueur place un point sur la carte, pas nécessairement quand il a fait un clic droit.
-
-Le `float` Z retournera une valeur de 0 (invalide) si le point du joueur est trop loin sur la carte du joueur lui-même. Utilisez le plugin MapAndreas ou ColAndreas pour résorber cette difficulté.
+- Cette callback n'est appelée que quand le joueur place un point sur la carte, pas nécessairement quand il a fait un clic droit.
+- Le `float` Z retournera une valeur de 0 (invalide) si le point du joueur est trop loin sur la carte du joueur lui-même. Utilisez le plugin [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) ou [ColAndreas](https://github.com/Pottus/ColAndreas) pour résorber cette difficulté.
 
 :::
 

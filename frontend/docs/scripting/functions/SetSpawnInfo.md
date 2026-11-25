@@ -18,11 +18,11 @@ This function can be used to change the spawn information of a specific player. 
 | Float:spawnY   | The Y-coordinate of the player's spawn position.                     |
 | Float:spawnZ   | The Z-coordinate of the player's spawn position.                     |
 | Float:angle    | The direction in which the player needs to be facing after spawning. |
-| WEAPON:weapon1 | The first spawn-weapon for the player.                               |
+| WEAPON:weapon1 | The first [spawn-weapon](../resources/weaponids) for the player.     |
 | ammo1          | The amount of ammunition for the primary spawnweapon.                |
-| WEAPON:weapon2 | The second spawn-weapon for the player.                              |
+| WEAPON:weapon2 | The second [spawn-weapon](../resources/weaponids) for the player.    |
 | ammo2          | The amount of ammunition for the second spawnweapon.                 |
-| WEAPON:weapon3 | The third spawn-weapon for the player.                               |
+| WEAPON:weapon3 | The third [spawn-weapon](../resources/weaponids) for the player.     |
 | ammo3          | The amount of ammunition for the third spawnweapon.                  |
 
 ## Returns
@@ -45,9 +45,8 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::warning
 
-In case you don't need to set a team to the player, make sure that the "team" parameter is set to `NO_TEAM` (255).
-
-Team ID 0 in open.mp is a valid team while in SA-MP it is not (SA-MP bug).
+- In case you don't need to set a team to the player, make sure that the "team" parameter is set to `NO_TEAM` (255).
+- Team ID 0 in open.mp is a valid team while in SA-MP it is not (SA-MP bug).
 
 :::
 

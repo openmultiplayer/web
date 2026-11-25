@@ -9,15 +9,15 @@ tags: []
 
 ## Description
 
-Menambahkan model simpel kustom objek diunggah. Model file bawaanya terletak pada folder `Documents\GTA San Andreas User Files\SAMP\cache` milik player bernama IP dan PORT dalam bentuk nama CRC.
+Menambahkan model simpel kustom objek diunggah. Model file bawaanya terletak pada folder `Documents\GTA San Andreas User Files\SAMP\cache` milik player bernama IP dan PORT dalam bentuk nama [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
-| Name         | Description                                                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| virtualworld | Virtual world ID untuk membuat model tersedia. Gunakan -1 untuk semua world.                                                  |
-| baseid       | Basis object model ID untuk digunakan (object original akan digunakan jika download gagal).                                   |
-| newid        | Object model ID baru berkisar dari -1000 ke -30000 (29000 slots) digunakan nanti dengan CreateObject atau Create PlayerObject |
-| dffname      | Nama dari **.dff** model file collision berlokasi di `models` server folder secara bawaan (artpath setting).                  |
-| txdname      | Nama dari **.txd** model tekstur file berlokasi di `models` server secara bawaan (artpath setting).                           |
+| Name         | Description                                                                                                                                          |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtualworld | Virtual world ID untuk membuat model tersedia. Gunakan -1 untuk semua world.                                                                         |
+| baseid       | Basis [object model ID](https://models.open.mp/?cat=objects) untuk digunakan (object original akan digunakan jika download gagal).                   |
+| newid        | Object model ID baru berkisar dari -1000 ke -30000 (29000 slots) digunakan nanti dengan CreateObject atau Create PlayerObject                        |
+| dffname      | Nama dari **.dff** model file collision berlokasi di `models` server folder secara bawaan ([artpath setting](../../server/server.cfg#model-kustom)). |
+| txdname      | Nama dari **.txd** model tekstur file berlokasi di `models` server secara bawaan ([artpath setting](../../server/server.cfg#model-kustom)).          |
 
 ## Returns
 
@@ -39,13 +39,14 @@ public OnGameModeInit()
 
 :::note
 
-**useartwork** harus diaktifkan terlebih dahulu dalam pengaturan server agar dapat berfungsi ketika `virtualworld` diatur, model akan didownload setelah player memasuki world tertentu
+- **useartwork** harus diaktifkan terlebih dahulu dalam pengaturan server agar dapat berfungsi.
+- Ketika `virtualworld` diatur, model akan didownload setelah player memasuki world tertentu
 
 :::
 
 :::warning
 
-Saat ini tidak ada batasan kapan Anda dapat memanggil fungsi ini, tetapi perhatikan bahwa jika Anda tidak memanggilnya di dalam OnFilterScriptInit/OnGameModeInit, Anda berisiko bahwa beberapa player, yang sudah ada di server, mungkin belum mendownload modelnya.
+Saat ini tidak ada batasan kapan Anda dapat memanggil fungsi ini, tetapi perhatikan bahwa jika Anda tidak memanggilnya di dalam [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit), Anda berisiko bahwa beberapa player, yang sudah ada di server, mungkin belum mendownload modelnya.
 
 :::
 

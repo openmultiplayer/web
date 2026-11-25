@@ -15,12 +15,12 @@ Ova funkcija je dodana u SA-MP 0.3.7 R1 i ne radi u nižim verzijama!
 
 Hashira lozinku pomoću algoritma heširanja SHA-256. Uključuje salt. Izlaz je uvijek 256 bita, ili ekvivalent od 64 Pawn ćelija.
 
-| Ime          | Deskripcija                                    |
-| ------------ | ---------------------------------------------- |
-| password[]   | Lozinka za heširati.                           |
-| salt[]       | Salt za koristiti u heširanju.                 |
-| ret_hash[]   | Vraćeni heš u velikom heksadecimalnom sažetku. |
-| ret_hash_len | Vraćeni heš u maksimalnoj dužini.              |
+| Ime          | Deskripcija                                                                         |
+| ------------ | ----------------------------------------------------------------------------------- |
+| password[]   | Lozinka za heširati.                                                                |
+| salt[]       | [Salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) za koristiti u heširanju. |
+| ret_hash[]   | Vraćeni heš u velikom heksadecimalnom sažetku.                                      |
+| ret_hash_len | Vraćeni heš u maksimalnoj dužini.                                                   |
 
 ## Returns
 

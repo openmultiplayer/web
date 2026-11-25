@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ova se funkcija može koristiti kao zamjena za GetTickCount, jer vraća broj milisekundi od pokretanja poslužitelja.
+Ova se funkcija može koristiti kao zamjena za [GetTickCount](GetTickCount), jer vraća broj milisekundi od pokretanja poslužitelja.
 
 | Ime            | Deskripcija                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

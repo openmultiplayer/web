@@ -99,7 +99,7 @@ else
 
 :::note
 
-This functions writes to the file in UTF-8, which does not support some localized language symbols.
+This functions writes to the file in [UTF-8](https://en.wikipedia.org/wiki/UTF-8), which does not support some localized language symbols.
 
 :::
 

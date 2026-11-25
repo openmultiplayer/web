@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-Virtual worlds are not the same as interiors.
+Virtual worlds are not the same as [interiors](GetPlayerInterior).
 
 :::
 

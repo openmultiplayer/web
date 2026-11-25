@@ -4,7 +4,7 @@ sidebar_label: Estilos de GameText
 description: Estilos de GameText usados em textdraws e gametext.
 ---
 
-Esta página aborda tudo o que você precisa saber sobre estilos de gametext e como eles podem ser usados em textdraw e em texto renderizado para um (único) jogador.
+Esta página aborda tudo o que você precisa saber sobre estilos de gametext e como eles podem ser usados em [textdraw](../functions/TextDrawCreate) e em texto renderizado para um (único) jogador.
 Usado principalmente por [GameTextForPlayer](../functions/GameTextForPlayer) e [GameTextForAll](../functions/GameTextForAll).
 
 ---
@@ -62,7 +62,9 @@ Diferentemente das cores de texto, esses slugs (código de texto) não exigem en
 
 :::caution
 
-Tenha cuidado, usar muitas cores de texto ou caracteres especiais em um gametext pode travar todos os jogadores para os quais o gametext é exibido. Além disso, evite usar o caractere `~` de forma desigual. Exemplo: `~~r~Olá, ~g~como vai ~y~você?`
+Tenha cuidado, usar muitas cores de texto ou caracteres especiais em um gametext pode travar todos os jogadores para os quais o gametext é exibido. Além disso, evite usar o caractere `~` de forma desigual.
+
+Exemplo: `~~r~Olá, ~g~como vai ~y~você?`
 
 :::
 

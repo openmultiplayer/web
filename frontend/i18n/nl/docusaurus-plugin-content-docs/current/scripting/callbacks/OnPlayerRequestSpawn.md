@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-Om te voorkomen dat spelers spawnen met bepaalde klassen, moet de laatst bekeken klasse worden opgeslagen in een variabele in OnPlayerRequestClass.
+Om te voorkomen dat spelers spawnen met bepaalde klassen, moet de laatst bekeken klasse worden opgeslagen in een variabele in [OnPlayerRequestClass](OnPlayerRequestClass).
 
 :::
 

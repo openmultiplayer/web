@@ -9,10 +9,10 @@ tags: ["玩家", "菜单"]
 
 隐藏指定玩家的菜单。
 
-| 参数        | 说明                                                                                                             |
-| ----------- | ---------------------------------------------------------------------------------------------------------------- |
-| Menu:menuid | 要隐藏的菜单 ID。由 CreateMenu 生成并传递给[OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow)回调。 |
-| playerid    | 需要隐藏菜单的玩家 ID                                                                                            |
+| 参数        | 说明                                                                                                                           |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Menu:menuid | 要隐藏的菜单 ID。由 [CreateMenu](CreateMenu) 生成并传递给[OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow)回调。 |
+| playerid    | 需要隐藏菜单的玩家 ID                                                                                                          |
 
 ## 返回值
 

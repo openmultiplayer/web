@@ -13,7 +13,7 @@ Acest callback se numește **doar** când vehiculul **re**apare! CreateVehicle �
 
 ## Descriere
 
-Acest callback este apelat atunci când un vehicul reapare.
+Acest callback este apelat atunci când un vehicul **re**apare.
 
 | Nume      | Descriere                        |
 | --------- | -------------------------------- |

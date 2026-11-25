@@ -7,18 +7,18 @@ tags: ["object", "vehicle"]
 
 ## Description
 
-Attach an object to a vehicle.
+Attach an [object](CreateObject) to a [vehicle](CreateVehicle).
 
-| Name            | Description                                                                                                                                   |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| objectid        | The ID of the object to attach to the vehicle. Note that this is an object ID, not a model ID. The object must be CreateObject created first. |
-| parentid        | The ID of the vehicle to attach the object to.                                                                                                |
-| Float:offsetX   | The X axis offset from the vehicle to attach the object to.                                                                                   |
-| Float:offsetY   | The Y axis offset from the vehicle to attach the object to.                                                                                   |
-| Float:offsetZ   | The Z axis offset from the vehicle to attach the object to.                                                                                   |
-| Float:rotationX | The X rotation offset for the object.                                                                                                         |
-| Float:rotationY | The Y rotation offset for the object.                                                                                                         |
-| Float:rotationZ | The Z rotation offset for the object.                                                                                                         |
+| Name            | Description                                                                                                                                                   |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| objectid        | The ID of the object to attach to the vehicle. Note that this is an object ID, not a model ID. The object must be [CreateObject](CreateObject) created first. |
+| parentid        | The ID of the vehicle to attach the object to.                                                                                                                |
+| Float:offsetX   | The X axis offset from the vehicle to attach the object to.                                                                                                   |
+| Float:offsetY   | The Y axis offset from the vehicle to attach the object to.                                                                                                   |
+| Float:offsetZ   | The Z axis offset from the vehicle to attach the object to.                                                                                                   |
+| Float:rotationX | The X rotation offset for the object.                                                                                                                         |
+| Float:rotationY | The Y rotation offset for the object.                                                                                                                         |
+| Float:rotationZ | The Z rotation offset for the object.                                                                                                                         |
 
 ## Returns
 
@@ -36,13 +36,13 @@ AttachObjectToVehicle(objectid, vehicleid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0);
 
 :::note
 
-The object must be created first.
+The object must be [created](CreateObject) first.
 
 :::
 
 :::warning
 
-When the vehicle is destroyed or respawned, the attached objects won't be destroyed with it; they will remain stationary at the position the vehicle disappeared and be reattached to the next vehicle to claim the vehicle ID that the objects were attached to.
+When the vehicle is [destroyed](DestroyVehicle) or respawned, the attached objects won't be destroyed with it; they will remain stationary at the position the vehicle disappeared and be reattached to the next vehicle to claim the vehicle ID that the objects were attached to.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Get a player's current state.
+Get a player's current [state](../resources/playerstates).
 
 | Name     | Description                                       |
 | -------- | ------------------------------------------------- |

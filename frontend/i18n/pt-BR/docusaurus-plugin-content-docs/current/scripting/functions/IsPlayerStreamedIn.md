@@ -33,9 +33,8 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**Servidor SA-MP:** Os jogadores transmitem se estiverem a mais de 200.0 metros de distância (consulte [server.cfg](../../server/server.cfg) - **stream_distance**)
-
-**servidor open.mp:** Os jogadores transmitem se estiverem a mais de 200.0 metros de distância (consulte [config.json](../../server/config.json) - **network.stream_radius**)
+- **Servidor SA-MP:** Os jogadores transmitem se estiverem a mais de 200.0 metros de distância (consulte [server.cfg](../../server/server.cfg) - **stream_distance**)
+- **Servidor open.mp:** Os jogadores transmitem se estiverem a mais de 200.0 metros de distância (consulte [config.json](../../server/config.json) - **network.stream_radius**)
 
 :::
 

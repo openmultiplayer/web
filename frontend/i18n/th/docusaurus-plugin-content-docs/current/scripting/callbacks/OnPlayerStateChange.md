@@ -7,15 +7,13 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This callback is called when a player changes state. For example, when a player changes from being the driver of a vehicle to being on-foot.
+This callback is called when a player changes [state](../resources/playerstates). For example, when a player changes from being the driver of a vehicle to being on-foot.
 
 | Name     | Description                              |
 | -------- | ---------------------------------------- |
 | playerid | The ID of the player that changed state. |
 | newstate | The player's new state.                  |
 | oldstate | The player's previous state.             |
-
-Refer to [Player States](../resources/playerstates) for a list of all available player states.
 
 ## ส่งคืน
 

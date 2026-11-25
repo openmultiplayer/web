@@ -11,7 +11,7 @@ Creates an object at specified coordinates in the game world.
 
 | Name               | Description                                                                                                               |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| modelid            | The model to create.                                                                                                      |
+| modelid            | The [model](https://models.open.mp/?cat=objects) to create.                                                               |
 | Float:x            | The X coordinate to create the object at.                                                                                 |
 | Float:y            | The Y coordinate to create the object at.                                                                                 |
 | Float:z            | The Z coordinate to create the object at.                                                                                 |
@@ -39,9 +39,8 @@ public OnGameModeInit()
 
 :::note
 
-- Objects that emit light (lampposts, police lights, bollard lights, neons etc.) that have a greater rotation than **16.26 degrees** (or -16.26) on either the **X or Y axis** will stop shining. This effect also applies to light objects attached to other objects, players and vehicles. If a light object is attached to a car and the car is rotated over 16.26 degrees (like in a rollover), the object will also stop emitting light. This is a GTA:SA issue, not a server bug.
-- In case the light is attached to another object, one fix for this is to set `syncRotation` to `false` in [AttachObjectToObject](AttachObjectToObject). This will ensure the light stays at 0 rotation. This would only really work for objects that consist ONLY of light, so it wouldn't work for the police light for example.
-- There is a limit of 1000 objects (MAX_OBJECTS). To circumvent this limit, you can use the [streamer](https://github.com/samp-incognito/samp-streamer-plugin) plugin.
+- Objects that emit light (lampposts, police lights, bollard lights, neons etc.) that have a greater rotation than **16.26 degrees** (or -16.26) on either the **X or Y axis** will stop shining. This effect also applies to light objects attached to other objects, players and vehicles. If a light object is attached to a car and the car is rotated over 16.26 degrees (like in a rollover), the object will also stop emitting light. This is a GTA:SA issue, not a server bug. In case the light is attached to another object, one fix for this is to set `syncRotation` to `false` in [AttachObjectToObject](AttachObjectToObject). This will ensure the light stays at 0 rotation. This would only really work for objects that consist ONLY of light, so it wouldn't work for the police light for example.
+- There is a limit of 1000 objects ([MAX_OBJECTS](../resources/limits)). To circumvent this limit, you can use the [streamer](https://github.com/samp-incognito/samp-streamer-plugin) plugin.
 
 :::
 

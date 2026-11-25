@@ -85,7 +85,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 :::warning
 
-Izdanja treba odbaciti ako je odgovor bio '0' (otkazan). To se mora učiniti spremanjem ofseta itd. U niz PRIJE korištenja EditAttachedObject.
+Izdanja treba odbaciti ako je odgovor bio '0' (otkazan). To se mora učiniti spremanjem ofseta itd. U niz PRIJE korištenja [EditAttachedObject](../functions/EditAttachedObject).
 
 :::
 

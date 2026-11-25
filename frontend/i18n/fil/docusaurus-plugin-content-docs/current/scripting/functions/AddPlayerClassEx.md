@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Ang function na ito ay eksaktong kapareho ng AddPlayerClass function, kasama ang pagdaragdag ng isang parameter ng koponan.
+Ang function na ito ay eksaktong kapareho ng [AddPlayerClass](AddPlayerClass) function, kasama ang pagdaragdag ng isang parameter ng koponan.
 
 | Name          | Description                                                                 |
 | ------------- | --------------------------------------------------------------------------- |

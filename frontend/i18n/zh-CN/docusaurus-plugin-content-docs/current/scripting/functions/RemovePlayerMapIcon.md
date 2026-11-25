@@ -7,12 +7,12 @@ tags: ["玩家"]
 
 ## 描述
 
-移除玩家之前通过 SetPlayerMapIcon 设置的地图图标。
+移除玩家之前通过 [SetPlayerMapIcon](SetPlayerMapIcon) 设置的地图图标。
 
-| 参数名   | 说明                                                    |
-| -------- | ------------------------------------------------------- |
-| playerid | 需要移除图标的玩家 ID                                   |
-| iconid   | 要移除的图标 ID（即 SetPlayerMapIcon 函数的第二个参数） |
+| 参数名   | 说明                                                                        |
+| -------- | --------------------------------------------------------------------------- |
+| playerid | 需要移除图标的玩家 ID                                                       |
+| iconid   | 要移除的图标 ID（即 [SetPlayerMapIcon](SetPlayerMapIcon) 函数的第二个参数） |
 
 ## 返回值
 

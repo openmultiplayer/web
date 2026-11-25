@@ -7,11 +7,11 @@ tags: []
 
 ## Deskripcija
 
-Uništava (briše) objekat koji je kreiran sa CreateObject.
+Uništava (briše) objekat koji je kreiran sa [CreateObject](CreateObject).
 
-| Ime      | Deskripcija                                          |
-| -------- | ---------------------------------------------------- |
-| objectid | ID objekta koji se uništava. Kreiran sa CreateObject |
+| Ime      | Deskripcija                                                          |
+| -------- | -------------------------------------------------------------------- |
+| objectid | ID objekta koji se uništava. Kreiran sa [CreateObject](CreateObject) |
 
 ## Returns
 

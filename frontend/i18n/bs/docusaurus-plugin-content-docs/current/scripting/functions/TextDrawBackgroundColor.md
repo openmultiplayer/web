@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Deskripcija
 
-Prilagođava boju pozadine područja za textdraw (obris / sjena - NE box. Za boju boxa, pogledajte TextDrawBoxColor).
+Prilagođava boju pozadine područja za textdraw (obris / sjena - NE box. Za boju boxa, pogledajte [TextDrawBoxColor](TextDrawBoxColor)).
 
 | Ime   | Deskripcija                              |
 | ----- | ---------------------------------------- |

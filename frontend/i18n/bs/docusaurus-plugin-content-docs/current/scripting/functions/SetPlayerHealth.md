@@ -44,7 +44,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-Ako je health/zdravlje igrača postavljeno na 0 ili minus vrijednost, oni će odmah umrijeti. Ako je zdravstveno stanje igrača ispod 10 ili više od 98303, traka zdravlja će treptati.
+- Ako je health/zdravlje igrača postavljeno na 0 ili minus vrijednost, oni će odmah umrijeti.
+- Ako je zdravstveno stanje igrača ispod 10 ili više od 98303, traka zdravlja će treptati.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Set a player's interior. A list of currently known interiors and their positions can be found here.
+Set a player's interior. A list of currently known interiors and their positions can be found [here](../resources/interiorids).
 
 | Name       | Description                                                       |
 | ---------- | ----------------------------------------------------------------- |

@@ -43,7 +43,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-This function is known to return unreliable values when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) and OnPlayerRequestClass. This is because the player is not spawned.
+This function is known to return unreliable values when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) and [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass). This is because the player is not spawned.
 
 :::
 

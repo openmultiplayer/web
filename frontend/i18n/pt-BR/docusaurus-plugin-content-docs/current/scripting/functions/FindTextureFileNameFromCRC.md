@@ -9,13 +9,13 @@ tags: ["custom model", "custom skin", "simple model"]
 
 ## Descrição
 
-Encontra um arquivo de textura existente de skin customizada ou objeto simples. Os arquivos de modelo ficam na pasta `models` do servidor por padrão (configuração artpath).
+Encontra um arquivo de textura existente de [skin](AddCharModel) customizada ou [objeto](AddSimpleModel) simples. Os arquivos de modelo ficam na pasta `models` do servidor por padrão (configuração [artpath](../../server/server.cfg#modelos-personalizados)).
 
-| Name                   | Description                                                                 |
-| ---------------------- | --------------------------------------------------------------------------- |
-| crc                    | O checksum CRC do arquivo de modelo customizado.                            |
-| output[]               | Um array para armazenar o nome do arquivo **.txd**, passado por referência. |
-| size = sizeof (output) | O tamanho da string que deve ser armazenada.                                |
+| Name                   | Description                                                                                               |
+| ---------------------- | --------------------------------------------------------------------------------------------------------- |
+| crc                    | O checksum [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) do arquivo de modelo customizado. |
+| output[]               | Um array para armazenar o nome do arquivo **.txd**, passado por referência.                               |
+| size = sizeof (output) | O tamanho da string que deve ser armazenada.                                                              |
 
 ## Retorno
 

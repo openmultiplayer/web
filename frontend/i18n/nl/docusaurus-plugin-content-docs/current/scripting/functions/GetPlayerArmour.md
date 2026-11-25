@@ -16,7 +16,9 @@ Sla de armour van een speler op in een variabele.
 
 ## Retourneert
 
-**1** bij succes, **0** bij falen (niet verbonden). Armour wordt in de variabele geplaatst.
+**1** bij succes, **0** bij falen (niet verbonden).
+
+Armour wordt in de variabele geplaatst.
 
 ## Voorbeeld
 
@@ -38,7 +40,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Opmerkingen
 
-De client rapporteert waarden tot maximaal 255; hogere waarden lopen over (256→0, 257→1, …). Bij het opvragen wordt de waarde afgerond naar een geheel getal.
+- De client rapporteert waarden tot maximaal 255; hogere waarden lopen over (256→0, 257→1, …).
+- Bij het opvragen wordt de waarde afgerond naar een geheel getal.
 
 ## Gerelateerd
 

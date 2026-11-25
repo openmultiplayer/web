@@ -36,7 +36,7 @@ public OnPlayerText(playerid, text[])
 
 :::note
 
-خودت نمی‌تونی chat bubble های خودت رو ببینی. همین موضوع برای attached 3D text label ها هم صدق می‌کنه.
+خودت نمی‌تونی chat bubble های خودت رو ببینی. همین موضوع برای attached [3D text label ها](Attach3DTextLabelToPlayer) هم صدق می‌کنه.
 
 :::
 

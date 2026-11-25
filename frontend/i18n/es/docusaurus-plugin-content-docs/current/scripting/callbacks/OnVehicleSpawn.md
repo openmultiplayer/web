@@ -12,7 +12,7 @@ Este callback se llama **solo** cuando el vehículo **re**aparece! CreateVehicle
 
 ## Descripción
 
-Este callback se llama cuando un vehículo reaparece.
+Este callback se llama cuando un vehículo **re**aparece.
 
 | Name      | Description                     |
 | --------- | ------------------------------- |

@@ -7,15 +7,13 @@ tags: ["player"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač promijeni stanje. Naprimjer, kada igrač promijeni stanje votača vozila u stanje da bude na nogama (on-foot) (napustio vozilo).
+Ovaj callback je pozvan kada igrač promijeni [stanje](../resources/playerstates). Naprimjer, kada igrač promijeni stanje votača vozila u stanje da bude na nogama (on-foot) (napustio vozilo).
 
 | Ime      | Deskripcija                          |
 | -------- | ------------------------------------ |
 | playerid | ID igrača koji je promijenio stanje. |
 | newstate | Igračevo novo stanje.                |
 | oldstate | Igračevo prethodno stanje.           |
-
-Pogledajte [Igračeva stanja/Player States](../resources/playerstates) za listu svih dostupnih stanja igrača.
 
 ## Returns
 

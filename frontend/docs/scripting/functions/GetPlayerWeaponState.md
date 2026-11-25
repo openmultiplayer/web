@@ -7,11 +7,11 @@ tags: ["player"]
 
 ## Description
 
-Check the state of a player's weapon.
+Check the [state](../resources/weaponstates) of a player's weapon.
 
-| Name     | Description                                         |
-| -------- | --------------------------------------------------- |
-| playerid | The ID of the player to obtain the weapon state of. |
+| Name     | Description                                                                      |
+| -------- | -------------------------------------------------------------------------------- |
+| playerid | The ID of the player to obtain the [weapon state](../resources/weaponstates) of. |
 
 ## Returns
 

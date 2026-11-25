@@ -35,13 +35,14 @@ public OnPlayerText(playerid, text[])
 
 :::note
 
-Ne možete vidjeti svoje lične chat balončiće. Isto se dešava i sa prikavčenim 3D text labelom.
+Ne možete vidjeti svoje lične chat balončiće. Isto se dešava i sa prikavčenim [3D text labelom](Attach3DTextLabelToPlayer).
 
 :::
 
 :::tip
 
-Ugradnju boja možete koristiti za više boja u poruci. Korištenje '-1' kao boje učinit će tekst bijelim (iz jednostavnog razloga što je -1, kada je predstavljen u heksadecimalnom zapisu, 0xFFFFFFFF).
+- Ugradnju boja možete koristiti za više boja u poruci.
+- Korištenje '-1' kao boje učinit će tekst bijelim (iz jednostavnog razloga što je -1, kada je predstavljen u heksadecimalnom zapisu, 0xFFFFFFFF).
 
 :::
 

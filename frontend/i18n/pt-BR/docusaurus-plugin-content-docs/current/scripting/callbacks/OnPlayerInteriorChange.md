@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Chamada quando um jogador muda de interior. Pode ser chamada pela função SetPlayerInterior ou quando um jogador entre/sai de uma construção.
+Chamada quando um jogador muda de interior. Pode ser chamada pela função [SetPlayerInterior](../functions/SetPlayerInterior) ou quando um jogador entre/sai de uma construção.
 
 | Nome          | Descrição                             |
 | ------------- | ------------------------------------- |

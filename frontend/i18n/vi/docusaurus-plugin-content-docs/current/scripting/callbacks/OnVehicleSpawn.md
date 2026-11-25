@@ -13,7 +13,7 @@ Callback này chỉ được gọi khi xe **hồi sinh** (respawn)! Hàm `Create
 
 ## Mô tả
 
-Callback này được gọi khi một xe hồi sinh.
+Callback này được gọi khi một xe **hồi sinh**.
 
 | Tên       | Mô tả                   |
 | --------- | ----------------------- |

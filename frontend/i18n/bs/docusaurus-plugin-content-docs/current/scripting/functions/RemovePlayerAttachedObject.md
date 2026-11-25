@@ -9,10 +9,10 @@ tags: ["player"]
 
 Ukloni prikvačeni objekat sa igrača.
 
-| Ime      | Deskripcija                                                        |
-| -------- | ------------------------------------------------------------------ |
-| playerid | ID igrača od kojeg treba ukloniti prikvačeni objekat.              |
-| index    | Index objekta za ukloniti (postavljen sa SetPlayerAttachedObject). |
+| Ime      | Deskripcija                                                                                   |
+| -------- | --------------------------------------------------------------------------------------------- |
+| playerid | ID igrača od kojeg treba ukloniti prikvačeni objekat.                                         |
+| index    | Index objekta za ukloniti (postavljen sa [SetPlayerAttachedObject](SetPlayerAttachedObject)). |
 
 ## Returns
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Retrieves the player's current interior. A list of currently known interiors with their positions can be found on this page.
+Retrieves the player's current interior. A list of currently known interiors with their positions can be found on [this page](../resources/interiorids).
 
 | Name     | Description                           |
 | -------- | ------------------------------------- |

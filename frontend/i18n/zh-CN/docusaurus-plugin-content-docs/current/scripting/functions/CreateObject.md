@@ -9,16 +9,16 @@ tags: ["物体"]
 
 在三维空间指定位置生成静态/动态物体模型。
 
-| 参数               | 说明                                         |
-| ------------------ | -------------------------------------------- |
-| modelid            | 模型 ID                                      |
-| Float:x            | X 轴坐标                                     |
-| Float:y            | Y 轴坐标                                     |
-| Float:z            | Z 轴坐标                                     |
-| Float:rotationX    | X 轴旋转角度                                 |
-| Float:rotationY    | Y 轴旋转角度                                 |
-| Float:rotationZ    | Z 轴旋转角度                                 |
-| Float:drawDistance | （可选参数）自定义渲染距离（0.0=使用默认值） |
+| 参数               | 说明                                           |
+| ------------------ | ---------------------------------------------- |
+| modelid            | [模型 ID](https://models.open.mp/?cat=objects) |
+| Float:x            | X 轴坐标                                       |
+| Float:y            | Y 轴坐标                                       |
+| Float:z            | Z 轴坐标                                       |
+| Float:rotationX    | X 轴旋转角度                                   |
+| Float:rotationY    | Y 轴旋转角度                                   |
+| Float:rotationZ    | Z 轴旋转角度                                   |
+| Float:drawDistance | （可选参数）自定义渲染距离（0.0=使用默认值）   |
 
 ## 返回值
 
@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 :::note
 
-全局物体数量上限为 1000（MAX_OBJECTS），建议使用[流加载插件](https://github.com/samp-incognito/samp-streamer-plugin)突破限制
+全局物体数量上限为 1000（[MAX_OBJECTS](../resources/limits)），建议使用[流加载插件](https://github.com/samp-incognito/samp-streamer-plugin)突破限制
 
 :::
 

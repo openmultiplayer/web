@@ -9,9 +9,9 @@ tags: []
 
 Zatvara fajl/datoteku. Fajlove/Datoteke treba uvijek zatvoriti kada ih skripta više ne treba (nakon čitanja / pisanja).
 
-| Ime         | Deskripcija                                                   |
-| ----------- | ------------------------------------------------------------- |
-| File:handle | Upravitelj datoteke za zatvoriti. Returnovan/vraćen od fopen. |
+| Ime         | Deskripcija                                                            |
+| ----------- | ---------------------------------------------------------------------- |
+| File:handle | Upravitelj datoteke za zatvoriti. Returnovan/vraćen od [fopen](fopen). |
 
 ## Returns
 
@@ -47,7 +47,7 @@ else
 
 :::warning
 
-Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću fopen ili ftemp.
+Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću [fopen](fopen) ili [ftemp](ftemp).
 
 :::
 

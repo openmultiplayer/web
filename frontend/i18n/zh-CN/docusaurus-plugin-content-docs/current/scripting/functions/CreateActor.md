@@ -21,7 +21,9 @@ tags: ["演员"]
 
 ## 返回值
 
-成功返回演员 ID（从 0 开始计数），当达到演员数量上限（1000）时返回 INVALID_ACTOR_ID（65535）。
+成功返回演员 ID（从 0 开始计数）。
+
+当达到演员数量上限（1000）时返回 INVALID_ACTOR_ID（65535）。
 
 ## 应用示例
 
@@ -46,7 +48,7 @@ public OnGameModeExit()
 :::note
 
 - 演员实体适用于静态场景元素（如收银员、酒保），可通过[ApplyActorAnimation](ApplyActorAnimation)执行单次或循环动画
-- 默认处于无敌状态
+- 默认处于[无敌](SetActorInvulnerable)状态
 
 :::
 

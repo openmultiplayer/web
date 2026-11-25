@@ -9,11 +9,11 @@ tags: ["core", "property"]
 
 Delete an earlier set property ([setproperty](setproperty)).
 
-| Name   | Description                                                                                         |
-| ------ | --------------------------------------------------------------------------------------------------- |
-| id     | The virtual machine to use. You should keep this as zero. _(optional=0)_                            |
-| name[] | The property's name, you should keep this blank ("").                                               |
-| value  | The property's unique ID. Use the hash-function to calculate it from a string. _(optional=cellmin)_ |
+| Name   | Description                                                                                                               |
+| ------ | ------------------------------------------------------------------------------------------------------------------------- |
+| id     | The [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine) to use. You should keep this as zero. _(optional=0)_ |
+| name[] | The property's name, you should keep this blank ("").                                                                     |
+| value  | The property's unique ID. Use the hash-function to calculate it from a string. _(optional=cellmin)_                       |
 
 ## Returns
 

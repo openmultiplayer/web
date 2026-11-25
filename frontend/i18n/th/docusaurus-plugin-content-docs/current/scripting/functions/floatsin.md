@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Get the sine from a given angle. The input angle may be in radians, degrees or grades.
+Get the [sine](https://en.wikipedia.org/wiki/Sine_and_cosine) from a given angle. The input angle may be in radians, degrees or grades.
 
 | Name        | Description                                            |
 | ----------- | ------------------------------------------------------ |
@@ -41,7 +41,8 @@ GetPosInFrontOfPlayer(playerid, Float:distance, &Float:x, &Float:y, &Float:z)
 
 :::warning
 
-GTA/SA-MP use **degrees** for angles in most circumstances, for example GetPlayerFacingAngle. Therefore, it is most likely you'll want to use the '**degrees**' angle mode, _not_ radians. Also note that angles in GTA are counterclockwise; 270° is East and 90° is West. South is still 180° and North still 0°/360°.
+- GTA/SA-MP use **degrees** for angles in most circumstances, for example GetPlayerFacingAngle. Therefore, it is most likely you'll want to use the '**degrees**' angle mode, _not_ radians.
+- Also note that angles in GTA are counterclockwise; 270° is East and 90° is West. South is still 180° and North still 0°/360°.
 
 :::
 

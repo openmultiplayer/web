@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Prikvači kameru igrača za player objekat. Igrač može pomicati svoju kameru dok je prikvačena za objekat. Može se koristiti s MovePlayerObject i AttachPlayerObjectToVehicle.
+Prikvači kameru igrača za player objekat. Igrač može pomicati svoju kameru dok je prikvačena za objekat. Može se koristiti s [MovePlayerObject](MovePlayerObject) i [AttachPlayerObjectToVehicle](AttachPlayerObjectToVehicle).
 
 | Ime            | Deskripcija                                                  |
 | -------------- | ------------------------------------------------------------ |

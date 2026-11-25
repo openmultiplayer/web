@@ -7,7 +7,7 @@ tags: ["administration"]
 
 ## Description
 
-Banuj igrača koji je trenutno na serveru. On se više nikada neće moći pridružiti serveru. Zabrana će se zasnivati na IP-u i bit će spremljena u datoteku **bans.json** u korijenskom direktoriju poslužitelja. BanEx se može koristiti za obrazloženje zabrane. IP zabrane mogu se dodati / ukloniti pomoću naredbi RCON `banip` i `unbanip` (SendRconCommand).
+Banuj igrača koji je trenutno na serveru. On se više nikada neće moći pridružiti serveru. Zabrana će se zasnivati na IP-u i bit će spremljena u datoteku **bans.json** u korijenskom direktoriju poslužitelja. [BanEx](BanEx) se može koristiti za obrazloženje zabrane. IP zabrane mogu se dodati / ukloniti pomoću naredbi RCON `banip` i `unbanip` ([SendRconCommand](SendRconCommand)).
 
 | Name     | Description             |
 | -------- | ----------------------- |
@@ -63,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Sve radnje poduzete izravno prije Ban (poput slanja poruke pomoću SendClientMessage) neće doći do igrača. Za razmak/odgodu zabrane mora se koristiti tajmer.
+Sve radnje poduzete izravno prije Ban (poput slanja poruke pomoću [SendClientMessage](SendClientMessage)) neće doći do igrača. Za razmak/odgodu zabrane mora se koristiti tajmer.
 
 :::
 

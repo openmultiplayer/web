@@ -11,7 +11,7 @@ Kreira objekat na određenim kordinatama iz igre.
 
 | Ime                | Deskripcija                                                                                                                                                                              |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| modelid            | Model za kreirati.                                                                                                                                                                       |
+| modelid            | [Model za kreirati](https://models.open.mp/?cat=objects).                                                                                                                                |
 | Float:X            | X kordinata za kreirati objekat.                                                                                                                                                         |
 | Float:Y            | Y kordinata za kreirati objekat.                                                                                                                                                         |
 | Float:Z            | Z kordinata za kreirati objekat.                                                                                                                                                         |
@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::note
 
-Postoji limit od 1000 objekata (MAX_OBJECTS). Da biste zaobišli ovo ograničenje, možete upotrijebiti streamer.
+Postoji limit od 1000 objekata (MAX_OBJECTS). Da biste zaobišli ovo ograničenje, možete upotrijebiti [streamer](https://github.com/samp-incognito/samp-streamer-plugin).
 
 :::
 

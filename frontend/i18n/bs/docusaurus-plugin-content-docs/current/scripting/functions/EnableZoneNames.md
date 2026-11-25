@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ova funkcija omogućava uključivanje naziva zona / područja kao što je "Vinewood" ili "Doherty" tekst u donjem desnom dijelu ekrana dok ulaze u to područje. Ovo je opcija gamemodea i treba je postaviti u callbacku OnGameModeInit.
+Ova funkcija omogućava uključivanje naziva zona / područja kao što je "Vinewood" ili "Doherty" tekst u donjem desnom dijelu ekrana dok ulaze u to područje. Ovo je opcija gamemodea i treba je postaviti u callbacku [OnGameModeInit](../callbacks/OnGameModeInit).
 
 | Ime    | Deskripcija                                                                                            |
 | ------ | ------------------------------------------------------------------------------------------------------ |

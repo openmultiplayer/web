@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Beschreibung
 
-Fügt eine Klasse zur Klassen-Auswahl(class-selection) hinzu. Klassen ermöglichen dem Spieler mit einem Skin ihrer Wahl zu spawnen.
+Fügt eine Klasse zur Klassen-Auswahl (class-selection) hinzu. Klassen ermöglichen dem Spieler mit einem Skin ihrer Wahl zu spawnen.
 
 | Name          | Beschreibung                                 |
 | ------------- | -------------------------------------------- |

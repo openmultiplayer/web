@@ -17,7 +17,7 @@ Dobij trenutno vrijeme servera koje će biti pohranjeno u varijablama &hour, &mi
 
 ## Returns
 
-Sama funkcija vraća Unix vremensku oznaku.
+Sama funkcija vraća [Unix vremensku oznaku](https://en.wikipedia.org/wiki/Unix_time).
 
 ## Primjeri
 

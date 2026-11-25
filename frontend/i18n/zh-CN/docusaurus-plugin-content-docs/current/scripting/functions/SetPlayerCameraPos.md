@@ -32,14 +32,14 @@ SetPlayerCameraPos(playerid, 652.23, 457.21, 10.84);
 
 :::tip
 
-- 需配合使用 SetPlayerCameraLookAt 以确保功能正常
-- 使用 SetCameraBehindPlayer 可重置视角至玩家身后视角
+- 需配合使用 [SetPlayerCameraLookAt](SetPlayerCameraLookAt) 以确保功能正常
+- 使用 [SetCameraBehindPlayer](SetCameraBehindPlayer) 可重置视角至玩家身后视角
 
 :::
 
 :::warning
 
-在启用观战模式后立即调用此函数无效
+在[启用观战模式](TogglePlayerSpectating)后立即调用此函数无效
 
 :::
 

@@ -16,7 +16,7 @@ Descubra que tipo de componente é um determinado ID.
 
 ## Retornos
 
-O slot do componente ID do componente especificado ou **-1** se o componente for inválido.
+O [slot do componente](../resources/componentslots) ID do componente especificado ou **-1** se o componente for inválido.
 
 ## Exemplos
 

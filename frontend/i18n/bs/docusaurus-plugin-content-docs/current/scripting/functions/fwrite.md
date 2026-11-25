@@ -9,10 +9,10 @@ tags: []
 
 Napišite tekst u datoteku.
 
-| Ime    | Deskripcija                                         |
-| ------ | --------------------------------------------------- |
-| handle | Upravitelj datoteke za upotrebu, otvorila je fopen. |
-| string | String za upisati u fajl.                           |
+| Ime    | Deskripcija                                                  |
+| ------ | ------------------------------------------------------------ |
+| handle | Upravitelj datoteke za upotrebu, otvorila je [fopen](fopen). |
+| string | String za upisati u fajl.                                    |
 
 ## Returns
 
@@ -99,13 +99,13 @@ else
 
 :::note
 
-Ova funkcija zapisuje u datoteku u UTF-8, koja ne podržava neke simbole lokaliziranog jezika.
+Ova funkcija zapisuje u datoteku u [UTF-8](https://en.wikipedia.org/wiki/UTF-8), koja ne podržava neke simbole lokaliziranog jezika.
 
 :::
 
 :::warning
 
-Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću fopen ili ftemp.
+Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću [fopen](fopen) ili [ftemp](ftemp).
 
 :::
 

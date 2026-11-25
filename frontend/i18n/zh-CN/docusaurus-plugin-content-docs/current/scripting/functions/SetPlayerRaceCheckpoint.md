@@ -7,7 +7,7 @@ tags: ["玩家", "检查点", "竞速检查点"]
 
 ## 描述
 
-创建竞速检查点。当玩家进入时，将触发 OnPlayerEnterRaceCheckpoint 回调。
+创建竞速检查点。当玩家进入时，将触发 [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint) 回调。
 
 | 参数          | 说明                                                 |
 | ------------- | ---------------------------------------------------- |

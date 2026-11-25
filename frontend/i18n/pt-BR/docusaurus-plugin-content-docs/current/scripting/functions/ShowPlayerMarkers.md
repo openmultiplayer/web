@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Alterna marcadores de jogador (pontos no radar). Deve ser usado quando o servidor for iniciado (OnGameModeInit). Para outras ocasiões, consulte [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer).
+Alterna marcadores de jogador (pontos no radar). Deve ser usado quando o servidor for iniciado ([OnGameModeInit](../callbacks/OnGameModeInit)). Para outras ocasiões, consulte [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer).
 
 | Nome | Descrição |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::tip
 
-Também é possível definir a cor de um jogador para uma cor que tenha transparência total (sem valor alfa). Isso torna possível mostrar marcadores por jogador.
+Também é possível [definir a cor de um jogador](SetPlayerColor) para uma cor que tenha transparência total (sem valor alfa). Isso torna possível mostrar marcadores por jogador.
 
 :::
 

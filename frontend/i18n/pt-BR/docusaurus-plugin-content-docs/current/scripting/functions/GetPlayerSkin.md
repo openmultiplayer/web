@@ -16,9 +16,7 @@ Retorna a classe da skin dos jogadores
 
 ## Retornos
 
-O [id da capa](../resources/skins).
-
-**0** se for inválido.
+O [id da capa](../resources/skins). **0** se for inválido.
 
 ## Exemplos
 

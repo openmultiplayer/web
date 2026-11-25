@@ -4,7 +4,7 @@ sidebar_label: 游戏文本样式
 description: 文本绘图与游戏文本的样式说明
 ---
 
-本文详细说明在文本绘图（TextDraw）和玩家游戏文本（GameText）中使用的样式规则，主要应用于[GameTextForPlayer](../functions/GameTextForPlayer)和[GameTextForAll](../functions/GameTextForAll)函数。
+本文详细说明在[文本绘图（TextDraw）](../functions/TextDrawCreate)和玩家游戏文本（GameText）中使用的样式规则，主要应用于[GameTextForPlayer](../functions/GameTextForPlayer)和[GameTextForAll](../functions/GameTextForAll)函数。
 
 ---
 
@@ -61,7 +61,9 @@ description: 文本绘图与游戏文本的样式说明
 
 :::caution
 
-警告：单个游戏文本中使用过多颜色代码或特殊字符可能导致玩家客户端崩溃。同时避免波浪号`~`的不对称使用，错误示例：`~~r~错误~g~示例`
+警告：单个游戏文本中使用过多颜色代码或特殊字符可能导致玩家客户端崩溃。同时避免波浪号`~`的不对称使用。
+
+错误示例：`~~r~错误~g~示例`
 
 :::
 

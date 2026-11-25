@@ -59,7 +59,7 @@ public OnPlayerConnect(playerid)
 
 **باگ‌های شناخته شده:**
 
-- پیکاپ‌هایی که X یا Y آن‌ها کمتر از 4096.0- یا بیشتر از 4096.0 باشد، نمایش داده نمی‌شوند و OnPlayerPickUpPlayerPickup را هم فعال نمی‌کنند.
+- پیکاپ‌هایی که X یا Y آن‌ها کمتر از 4096.0- یا بیشتر از 4096.0 باشد، نمایش داده نمی‌شوند و [OnPlayerPickUpPlayerPickup](../callbacks/OnPlayerPickUpPlayerPickup) را هم فعال نمی‌کنند.
 
 :::
 

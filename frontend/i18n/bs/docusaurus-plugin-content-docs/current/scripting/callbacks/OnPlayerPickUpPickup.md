@@ -7,12 +7,12 @@ tags: ["player"]
 
 ## Deskripcija
 
-Pozvano kada igrač pokupi pickup kreiran funkcijom CreatePickup.
+Pozvano kada igrač pokupi pickup kreiran funkcijom [CreatePickup](../functions/CreatePickup).
 
-| Ime      | Deskripcija                                      |
-| -------- | ------------------------------------------------ |
-| playerid | ID igrača koji je pokupio pickup.                |
-| pickupid | ID pickup-a, return-ovan od strane CreatePickup. |
+| Ime      | Deskripcija                                                                   |
+| -------- | ----------------------------------------------------------------------------- |
+| playerid | ID igrača koji je pokupio pickup.                                             |
+| pickupid | ID pickup-a, return-ovan od strane [CreatePickup](../functions/CreatePickup). |
 
 ## Returns
 

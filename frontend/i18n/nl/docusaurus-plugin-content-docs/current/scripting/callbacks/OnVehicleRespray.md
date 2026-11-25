@@ -36,7 +36,8 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-Deze callback wordt niet aangeroepen door ChangeVehicleColor. Misleidend genoeg wordt deze callback niet aangeroepen voor pay 'n' spray (alleen modshops).
+- Deze callback wordt niet aangeroepen door ChangeVehicleColor.
+- Misleidend genoeg wordt deze callback niet aangeroepen voor pay 'n' spray (alleen modshops).
 
 Fix hier: http://pastebin.com/G81da7N1
 

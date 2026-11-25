@@ -40,7 +40,7 @@ printf("Vehicle Status: [Panels]: %d - [Doors]: %d - [Lights]: %d - [Tyres]: %d"
 
 :::tip
 
-- The stored values are bit masks. Bitwise operators will allow you to use the values.
+- The stored values are [bit masks](https://en.wikipedia.org/wiki/Mask_(computing)). Bitwise operators will allow you to use the values.
 - For some useful functions for working with vehicle damage values, see here.
 
 :::

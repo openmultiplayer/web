@@ -36,8 +36,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-- O pedido é CRITICAL! Certifique-se de usar TogglePlayerSpectating antes de PlayerSpectatePlayer.
-- o mundo virtual e o interior de playerid e targetplayerid devem ser os mesmos para que esta função funcione corretamente.
+- O pedido é CRITICAL! Certifique-se de usar [TogglePlayerSpectating](TogglePlayerSpectating) antes de PlayerSpectatePlayer.
+- o [mundo virtual](SetPlayerVirtualWorld) e o [interior](SetPlayerInterior) de playerid e targetplayerid devem ser os mesmos para que esta função funcione corretamente.
 
 :::
 

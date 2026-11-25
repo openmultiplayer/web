@@ -9,7 +9,7 @@ tags: ["custom model", "custom skin", "simple model"]
 
 ## توضیحات
 
-دانلود AddCharModel یا AddSimpleModel یک بازیکن رو به یک صفحه وب HTTP مشخص هدایت می‌کنه.
+دانلود [AddCharModel](AddCharModel) یا [AddSimpleModel](AddSimpleModel) یک بازیکن رو به یک صفحه وب HTTP مشخص هدایت می‌کنه.
 
 ## پارامترها
 

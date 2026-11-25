@@ -39,7 +39,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-Bu fonksiyon AddVehicleComponent tarafından ÇAĞRILMAZ.
+Bu fonksiyon [AddVehicleComponent](../functions/AddVehicleComponent) tarafından ÇAĞRILMAZ.
 
 :::
 

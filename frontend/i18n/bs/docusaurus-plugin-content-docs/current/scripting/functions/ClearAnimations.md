@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-- ClearAnimations ne radi ništa kada animacija završi ako u ApplyAnimation dodamo 1 za parametar zamrzavanja.
+- ClearAnimations ne radi ništa kada animacija završi ako u [ApplyAnimation](ApplyAnimation) dodamo 1 za parametar zamrzavanja.
 - Za razliku od nekih drugih načina uklanjanja igrača iz vozila, ovo će također resetirati brzinu vozila na nulu, trenutno zaustavljajući automobil. Igrač će se pojaviti na vrhu vozila s istim mjestom na kojem je bio u svome sjedištu.
 
 :::

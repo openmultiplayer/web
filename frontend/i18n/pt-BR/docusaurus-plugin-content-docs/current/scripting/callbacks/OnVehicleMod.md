@@ -39,7 +39,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-Essa callback NÃO É EXECUTADA ao utilizar a função AddVehicleComponent.
+Essa callback NÃO É EXECUTADA ao utilizar a função [AddVehicleComponent](../functions/AddVehicleComponent).
 
 :::
 

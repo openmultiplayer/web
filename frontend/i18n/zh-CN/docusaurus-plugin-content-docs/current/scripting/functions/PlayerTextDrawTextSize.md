@@ -39,23 +39,13 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-坐标含义根据对齐方式变化：
-
-- 对齐方式 1（左对齐）: width/height 表示方框右边界绝对坐标
-- 对齐方式 2（居中）: 需交换 width/height 参数，width 表示方框总宽度
-- 对齐方式 3（右对齐）: width/height 表示方框左边界起始坐标
-
-特殊字体处理：
-
-- 使用字体类型 4（精灵图）和 5（模型预览）时，width/height 参数将转换为宽高偏移量
-
-坐标系原点：
-
-- 方框坐标系原点位于 TextDrawCreate 坐标点向下 10.0 单位、向右 5.0 单位的位置
-
-交互区域定义：
-
-- 此函数定义的区域将作为[PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable)的可点击区域
+- 坐标含义根据[对齐方式](PlayerTextDrawAlignment)变化：
+  - 对齐方式 1（左对齐）: width/height 表示方框右边界绝对坐标
+  - 对齐方式 2（居中）: 需交换 width/height 参数，width 表示方框总宽度
+  - 对齐方式 3（右对齐）: width/height 表示方框左边界起始坐标
+- 特殊字体处理：使用[字体类型](PlayerTextDrawFont) 4（精灵图）和 5（模型预览）时，width/height 参数将转换为宽高偏移量
+- 坐标系原点：方框坐标系原点位于 TextDrawCreate 坐标点向下 10.0 单位、向右 5.0 单位的位置
+- 交互区域定义：此函数定义的区域将作为[PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable)的可点击区域
 
 :::
 

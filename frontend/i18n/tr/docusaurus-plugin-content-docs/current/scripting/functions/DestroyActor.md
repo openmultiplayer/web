@@ -9,7 +9,7 @@ tags: []
 
 ## Açıklama
 
-CreateActor ile oluşturulan aktörü silin.
+[CreateActor](CreateActor) ile oluşturulan aktörü silin.
 
 | Parametre | Açıklama                 |
 | --------- | ------------------------ |

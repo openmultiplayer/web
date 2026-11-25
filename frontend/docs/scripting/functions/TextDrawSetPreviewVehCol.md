@@ -9,11 +9,11 @@ tags: ["textdraw"]
 
 If a vehicle model is used in a 3D preview textdraw, this sets the two colour values for that vehicle.
 
-| Name        | Description                                                        |
-| ----------- | ------------------------------------------------------------------ |
-| Text:textid | The textdraw id that is set to display a 3D vehicle model preview. |
-| colour1     | The primary color ID to set the vehicle to.                        |
-| colour2     | The secondary color ID to set the vehicle to.                      |
+| Name        | Description                                                                  |
+| ----------- | ---------------------------------------------------------------------------- |
+| Text:textid | The textdraw id that is set to display a 3D vehicle model preview.           |
+| colour1     | The primary [color ID](../resources/vehiclecolorid) to set the vehicle to.   |
+| colour2     | The secondary [color ID](../resources/vehiclecolorid) to set the vehicle to. |
 
 ## Returns
 

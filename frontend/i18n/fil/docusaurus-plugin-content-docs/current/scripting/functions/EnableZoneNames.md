@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-Binibigyang-daan ng function na ito na i-on ang mga pangalan ng zone / area gaya ng text na "Vinewood" o "Doherty" sa kanang ibaba ng screen habang papasok ang mga ito sa lugar. Isa itong opsyon sa gamemode at dapat itakda sa callback na OnGameModeInit.
+Binibigyang-daan ng function na ito na i-on ang mga pangalan ng zone / area gaya ng text na "Vinewood" o "Doherty" sa kanang ibaba ng screen habang papasok ang mga ito sa lugar. Isa itong opsyon sa gamemode at dapat itakda sa callback na [OnGameModeInit](../callbacks/OnGameModeInit).
 
 | Name   | Description                                                                                                                     |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------- |

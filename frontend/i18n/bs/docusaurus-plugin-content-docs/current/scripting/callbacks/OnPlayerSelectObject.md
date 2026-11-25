@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač selektuje objekat nakon što je SelectObject funkcija iskorištena.
+Ovaj callback je pozvan kada igrač selektuje objekat nakon što je [SelectObject](../functions/SelectObject) funkcija iskorištena.
 
 | Ime      | Deskripcija                                     |
 | -------- | ----------------------------------------------- |

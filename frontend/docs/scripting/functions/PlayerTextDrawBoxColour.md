@@ -9,7 +9,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Description
 
-Sets the colour of a textdraw's box (PlayerTextDrawUseBox).
+Sets the colour of a textdraw's box ([PlayerTextDrawUseBox](PlayerTextDrawUseBox)).
 
 | Name              | Description                                                   |
 | ----------------- | ------------------------------------------------------------- |

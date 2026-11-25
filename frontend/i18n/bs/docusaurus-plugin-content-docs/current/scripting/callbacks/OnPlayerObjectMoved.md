@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Ovaj callback je pozvana kada player object biva premješten nakon MovePlayerObject funkcije (kada se prestane kretati).
+Ovaj callback je pozvana kada player object biva premješten nakon [MovePlayerObject](../functions/MovePlayerObject) funkcije (kada se prestane kretati).
 
 | Ime      | Deskripcija                            |
 | -------- | -------------------------------------- |

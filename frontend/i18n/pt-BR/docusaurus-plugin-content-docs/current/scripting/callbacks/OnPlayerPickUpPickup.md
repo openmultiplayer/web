@@ -7,12 +7,12 @@ tags: ["player"]
 
 ## Descrição
 
-Esta callback é chamada quando um jogador coleta um pickup criado com CreatePickup.
+Esta callback é chamada quando um jogador coleta um pickup criado com [CreatePickup](../functions/CreatePickup).
 
-| Nome     | Descrição                                         |
-| -------- | ------------------------------------------------- |
-| playerid | O ID do jogador que coletou o pickup.             |
-| pickupid | O ID do pickup retornado através do CreatePickup. |
+| Nome     | Descrição                                                                      |
+| -------- | ------------------------------------------------------------------------------ |
+| playerid | O ID do jogador que coletou o pickup.                                          |
+| pickupid | O ID do pickup retornado através do [CreatePickup](../functions/CreatePickup). |
 
 ## Retorno
 

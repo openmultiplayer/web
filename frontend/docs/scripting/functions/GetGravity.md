@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-Get the currently global gravity.
+Get the currently global [gravity](SetGravity).
 
 ## Returns
 

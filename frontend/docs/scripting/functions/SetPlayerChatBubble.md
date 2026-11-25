@@ -36,14 +36,14 @@ public OnPlayerText(playerid, text[])
 
 :::note
 
-You can't see your own chat bubbles. The same applies to attached 3D text labels.
+You can't see your own chat bubbles. The same applies to attached [3D text labels](Attach3DTextLabelToPlayer).
 
 :::
 
 :::tip
 
-- You can use color embedding for multiple colors in the message.
-- Using '-1' as the color will make the text white (for the simple reason that -1, when represented in hexadecimal notation, is 0xFFFFFFFF).
+- You can use [color embedding](../resources/colorslist#color-embedding) for multiple colors in the message.
+- Using '-1' as the color will make the text white (for the simple reason that -1, when represented in [hexadecimal notation](../resources/hexcolors), is 0xFFFFFFFF).
 
 :::
 

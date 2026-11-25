@@ -8,7 +8,7 @@ tags: ["player", "camera"]
 
 ## Descrição
 
-Defina a direção para a qual a câmera do jogador olha. Geralmente destinado a ser usado em combinação com SetPlayerCameraPos.
+Defina a direção para a qual a câmera do jogador olha. Geralmente destinado a ser usado em combinação com [SetPlayerCameraPos](SetPlayerCameraPos).
 
 | Nome | Descrição |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,7 +34,7 @@ SetPlayerCameraLookAt(playerid, 324.34, 54.122, 173.35);
 
 :::warning
 
-Usar as funções da câmera diretamente após ativar o modo espectador não funciona.
+Usar as funções da câmera diretamente após [ativar o modo espectador](TogglePlayerSpectating) não funciona.
 
 :::
 

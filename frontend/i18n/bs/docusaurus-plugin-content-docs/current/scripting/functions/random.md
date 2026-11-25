@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Dobij (pseudo-)slučajni broj.
+Dobij [(pseudo-)slučajni broj](https://en.wikipedia.org/wiki/Pseudorandom_number_generator).
 
 | Ime | Deskripcija                                                                  |
 | --- | ---------------------------------------------------------------------------- |

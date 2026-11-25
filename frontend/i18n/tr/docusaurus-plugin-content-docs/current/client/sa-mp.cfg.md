@@ -6,7 +6,7 @@ description: SA-MP istemci yapılandırma dosyası.
 
 ## Açıklama
 
-`sa-mp.cfg`, SA-MP ile ilgili ayarları değiştirmenize olanak tanıyan bir istemci yapılandırma dosyasıdır. Bu dosya, 'Belgelerim\\GTA San Andreas User Files\\SAMP' klasöründe, Windows kullanıcı hesabınızın altında bulunur. Bu dosyayı notepad gibi bir metin düzenleyici ile düzenleyebilirsiniz.
+sa-mp.cfg, SA-MP ile ilgili ayarları değiştirmenize olanak tanıyan bir istemci yapılandırma dosyasıdır. Bu dosya, `Belgelerim\GTA San Andreas User Files\SAMP` klasöründe, Windows kullanıcı hesabınızın altında bulunur. Bu dosyayı notepad gibi bir metin düzenleyici ile düzenleyebilirsiniz.
 
 ## Seçenekler
 

@@ -21,7 +21,7 @@ Ova funkcija uvijek returna (vraća) **1**, bilo da funckija ne uspije da se izv
 
 :::warning
 
-Bilo koja radnja poduzeta neposredno prije Kicka() (poput slanja poruke pomoću SendClientMessage) neće doći do igrača. Za odgodu udarca mora se koristiti tajmer.
+Bilo koja radnja poduzeta neposredno prije Kicka() (poput slanja poruke pomoću [SendClientMessage](SendClientMessage)) neće doći do igrača. Za odgodu udarca mora se koristiti tajmer.
 
 :::
 

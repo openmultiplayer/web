@@ -7,7 +7,7 @@ tags: ["player", "checkpoint"]
 
 ## Опис
 
-Поставља checkpoint (црвени круг) за играча. Такође приказује црвену коцку на мапи. Када играч уђе у checkpoint, OnPlayerEnterCheckpoint се позива и извршава оно што је у њему.
+Поставља checkpoint (црвени круг) за играча. Такође приказује црвену коцку на мапи. Када играч уђе у checkpoint, [OnPlayerEnterCheckpoint](../callbacks/OnPlayerEnterCheckpoint) се позива и извршава оно што је у њему.
 
 | ИМе        | Опис                                   |
 | ---------- | -------------------------------------- |

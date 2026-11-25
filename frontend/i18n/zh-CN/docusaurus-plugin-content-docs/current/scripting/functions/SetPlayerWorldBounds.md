@@ -53,7 +53,7 @@ public OnPlayerSpawn(playerid)
 
 :::warning
 
-此函数在室内环境中无效！
+此函数在[室内环境](../resources/interiorids)中无效！
 
 :::
 

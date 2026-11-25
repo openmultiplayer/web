@@ -13,7 +13,7 @@ The ban will be IP-based, and be saved in the **bans.json** file in the server's
 
 [BanEx](BanEx) can be used to give a reason for the ban.
 
-IP bans can be added/removed using the RCON `banip` and `unbanip` commands ([SendRconCommand](SendRconCommand)).
+IP bans can be added/removed using the [RCON](../../server/RemoteConsole) `banip` and `unbanip` commands ([SendRconCommand](SendRconCommand)).
 
 | Name     | Description                  |
 | -------- | ---------------------------- |

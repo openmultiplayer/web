@@ -79,7 +79,7 @@ SendClientMessage(playerid, 0xFF8000FF, string);
 
 :::warning
 
-Esta função não oferece suporte a strings compactadas.
+Esta função não oferece suporte a [strings compactadas](strpack).
 
 :::
 

@@ -43,9 +43,8 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::warning
 
-**SA:MP Server**: Ова повратна функција се позива само када се налази у филтер скрипи.
-
-**Open Multiplayer Server**: Ова повратна функција функционише нормално унутар gamemode-a / филтер скрипти.
+- **SA-MP server**: Ова повратна функција се позива само када се налази у филтер скрипи.
+- **open.mp server**: Ова повратна функција функционише нормално унутар gamemode-a / филтер скрипти.
 
 :::
 

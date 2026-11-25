@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Prikazuje textdraw svim igračima.
 
-| Ime  | Deskripcija                                                     |
-| ---- | --------------------------------------------------------------- |
-| text | ID textdrawa za prikazati. Returnovan/vraćen od TextDrawCreate. |
+| Ime  | Deskripcija                                                                       |
+| ---- | --------------------------------------------------------------------------------- |
+| text | ID textdrawa za prikazati. Returnovan/vraćen od [TextDrawCreate](TextDrawCreate). |
 
 ## Returns
 

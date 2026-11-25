@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-برای جلوگیری از spawn شدن بازیکنان با کلاس‌های خاص، آخرین کلاس مشاهده شده باید در یک متغیر در OnPlayerRequestClass ذخیره شود.
+برای جلوگیری از spawn شدن بازیکنان با کلاس‌های خاص، آخرین کلاس مشاهده شده باید در یک متغیر در [OnPlayerRequestClass](OnPlayerRequestClass) ذخیره شود.
 
 :::
 

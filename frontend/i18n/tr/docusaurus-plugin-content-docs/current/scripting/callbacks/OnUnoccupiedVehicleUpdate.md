@@ -45,7 +45,8 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 :::warning
 
-Bu fonksiyon, kullanılmayan araç başına saniyede çok sık çağrılır. Çağırdığınızda yoğun hesaplamalar veya yoğun dosya yazma / okuma işlemleri yapmaktan kaçınmalısınız. GetVehiclePos, araç değerleri güncellenmeden önce aracın eski koordinatlarını döndürecektir.
+- Bu fonksiyon, kullanılmayan araç başına saniyede çok sık çağrılır. Çağırdığınızda yoğun hesaplamalar veya yoğun dosya yazma / okuma işlemleri yapmaktan kaçınmalısınız.
+- GetVehiclePos, araç değerleri güncellenmeden önce aracın eski koordinatlarını döndürecektir.
 
 :::
 

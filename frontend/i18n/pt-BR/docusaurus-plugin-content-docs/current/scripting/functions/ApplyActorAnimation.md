@@ -14,8 +14,8 @@ Aplica uma animação a um ator.
 | Nome       | Descrição                                                                                                                                                                                 |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | actorid    | O ID do ator a aplicar a animação.                                                                                                                                                        |
-| animlib[]  | A biblioteca de animação da qual aplicar a animação.                                                                                                                                      |
-| animname[] | O nome da animação a aplicar, dentro da biblioteca especificada.                                                                                                                          |
+| animlib[]  | A [biblioteca de animação](../resources/animations) da qual aplicar a animação.                                                                                                           |
+| animname[] | O nome da [animação](../resources/animations) a aplicar, dentro da biblioteca especificada.                                                                                               |
 | fDelta     | A velocidade para reproduzir a animação (use 4.1).                                                                                                                                        |
 | loop       | Se definido **1**, a animação irá repetir. Se definido **0**, a animação vai reproduzir uma vez.                                                                                          |
 | lockx      | Se definido **0**, o ator vai retornar à sua coordenada X antiga, assim que a animação concluir (para animações que o ator move, como caminhar). **1** não irá retornar à posição antiga. |

@@ -13,7 +13,7 @@ tags: ["玩家", "物体", "附加"]
 | --------------- | ----------------------------------------------------- |
 | playerid        | 目标玩家 ID                                           |
 | index           | 附加槽位索引（0-9）                                   |
-| modelid         | 要附加的物体模型 ID                                   |
+| modelid         | 要附加的[物体模型 ID](../resources/samp_objects)      |
 | bone            | 目标[骨骼 ID](../resources/boneid)                    |
 | Float:offsetX   | (可选) X 轴位置偏移量                                 |
 | Float:offsetY   | (可选) Y 轴位置偏移量                                 |

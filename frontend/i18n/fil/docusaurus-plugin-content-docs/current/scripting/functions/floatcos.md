@@ -7,7 +7,7 @@ tags: ["math", "floating-point"]
 
 ## Description
 
-Kunin ang cosine mula sa isang naibigay na anggulo. Ang input angle ay maaaring nasa radians, degrees o grades.
+Kunin ang [cosine](https://en.wikipedia.org/wiki/Sine_and_cosine) mula sa isang naibigay na anggulo. Ang input angle ay maaaring nasa radians, degrees o grades.
 
 | Name        | Description                                                                           |
 | ----------- | ------------------------------------------------------------------------------------- |
@@ -33,7 +33,8 @@ public OnGameModeInit()
 
 :::warning
 
-Gumagamit ang GTA/SA-MP ng mga **degree** para sa mga anggulo sa karamihan ng mga pangyayari, halimbawa [GetPlayerFacingAngle](GetPlayerFacingAngle). Samakatuwid, malamang na gugustuhin mong gamitin ang '**degrees**' angle mode, _hindi_ radians. Tandaan din na ang mga anggulo sa GTA ay counterclockwise; 270° ay Silangan at 90° ay Kanluran. Ang timog ay 180° pa rin at ang Hilaga ay 0°/360° pa rin.
+- Gumagamit ang GTA/SA-MP ng mga **degree** para sa mga anggulo sa karamihan ng mga pangyayari, halimbawa [GetPlayerFacingAngle](GetPlayerFacingAngle). Samakatuwid, malamang na gugustuhin mong gamitin ang '**degrees**' angle mode, _hindi_ radians.
+- Tandaan din na ang mga anggulo sa GTA ay counterclockwise; 270° ay Silangan at 90° ay Kanluran. Ang timog ay 180° pa rin at ang Hilaga ay 0°/360° pa rin.
 
 :::
 

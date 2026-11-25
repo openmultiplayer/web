@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ova funkcija radi u potpunosti isto kao i AddStaticPickup, osim što returna (vraća) ID pickupa koji se može upotrijebiti za njegovo uništavanje nakon čega se može pratiti pomoću OnPlayerPickUpPickup.
+Ova funkcija radi u potpunosti isto kao i [AddStaticPickup](AddStaticPickup), osim što returna (vraća) ID pickupa koji se može upotrijebiti za njegovo uništavanje nakon čega se može pratiti pomoću [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup).
 
 | Ime                              | Deskripcija                                                                           |
 | -------------------------------- | ------------------------------------------------------------------------------------- |
@@ -58,7 +58,7 @@ Za potpuno skriptirane pickupe treba koristiti tip 1.
 
 :::warning
 
-**Poznati Bug(ovi):** Pickupi koji imaju X ili Y niži od -4096.0 ili veći od 4096.0 neće se pojaviti niti će pokrenuti OnPlayerPickUpPickup.
+**Poznati Bug(ovi):** Pickupi koji imaju X ili Y niži od -4096.0 ili veći od 4096.0 neće se pojaviti niti će pokrenuti [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup).
 
 :::
 

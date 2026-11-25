@@ -37,7 +37,7 @@ if (strcmp("/nameoff", cmdtext, true) == 0)
 
 :::warning
 
-ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time(OnPlayerStreamIn is a good spot).
+ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to `ShowPlayerNameTagForPlayer(forplayerid, playerid, 0)` ahead of time (OnPlayerStreamIn is a good spot).
 
 :::
 

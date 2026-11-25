@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- PAWN is case-sensitive. GetPlayerIP will not work.
+- PAWN is case-sensitive. GetPlayerI**P** will not work.
 - **SA-MP server**: This function **does not work** when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) because the player is already disconnected. It will return an invalid IP (255.255.255.255).
   Save players' IPs under [OnPlayerConnect](../callbacks/OnPlayerConnect) if they need to be used under [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).
 - **open.mp server**: This function **work** when used in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect).

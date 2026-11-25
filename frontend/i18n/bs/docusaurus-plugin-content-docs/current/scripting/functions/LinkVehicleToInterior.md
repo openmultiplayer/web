@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripcija
 
-Povezuje vozilo za enterijer. Vozila mogu biti vidljiva samo igračima u istom enterijeru (SetPlayerInterior).
+Povezuje vozilo za enterijer. Vozila mogu biti vidljiva samo igračima u istom enterijeru ([SetPlayerInterior](SetPlayerInterior)).
 
 | Ime        | Deskripcija                                          |
 | ---------- | ---------------------------------------------------- |

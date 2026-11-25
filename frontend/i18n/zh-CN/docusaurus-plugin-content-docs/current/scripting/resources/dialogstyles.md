@@ -9,7 +9,7 @@ sidebar_label: 对话框样式
   - 按下**button1**会将**response**设为**1**
   - 按下**button2**会将**response**设为**0**
 - 所有对话框都可选配按钮 2，留空则不显示（如首个示例）。玩家无法点击隐藏按钮，但按 ESC 键仍会触发[OnDialogResponse](../callbacks/OnDialogResponse)且**response**=**0**
-- [ShowPlayerDialog](../functions/ShowPlayerDialog)支持在以下字符串中使用颜色嵌入：**caption**（标题）、**info**（内容）、**button1**和**button2**
+- [ShowPlayerDialog](../functions/ShowPlayerDialog)支持在以下字符串中使用[颜色嵌入](colorslist#颜色嵌入)：**caption**（标题）、**info**（内容）、**button1**和**button2**
 
 :::
 

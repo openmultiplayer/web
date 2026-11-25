@@ -16,7 +16,7 @@ Retorna o GTA [modo de câmera](../resources/cameramodes) atual para o jogador s
 
 ## Retornos
 
-O modo da câmera como um número inteiro (ou -1 se o jogador não estiver conectado)
+O [modo da câmera](../resources/cameramodes) como um número inteiro (ou -1 se o jogador não estiver conectado)
 
 ## Exemplos
 

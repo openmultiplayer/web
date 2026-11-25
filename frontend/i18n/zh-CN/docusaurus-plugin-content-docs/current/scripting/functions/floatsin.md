@@ -7,7 +7,7 @@ tags: ["数学", "浮点数"]
 
 ## 描述
 
-获取指定角度的正弦值。输入角度可使用弧度、角度或梯度单位。
+获取指定角度的[正弦值](https://en.wikipedia.org/wiki/Sine_and_cosine)。输入角度可使用弧度、角度或梯度单位。
 
 | 参数           | 说明                                                                          |
 | -------------- | ----------------------------------------------------------------------------- |
@@ -41,7 +41,8 @@ GetPosInFrontOfPlayer(playerid, Float:distance, &Float:x, &Float:y, &Float:z)
 
 :::warning
 
-在大多数情况下，GTA/SA-MP 使用**角度制**表示方向，例如[GetPlayerFacingAngle](GetPlayerFacingAngle)。因此建议优先使用'**degrees**'角度模式而*非*弧度制。同时注意 GTA 的角度系统采用逆时针方向：270° 为东方，90° 为西方，南方仍为 180°，北方仍为 0°/360°。
+- 在大多数情况下，GTA/SA-MP 使用**角度制**表示方向，例如[GetPlayerFacingAngle](GetPlayerFacingAngle)。因此建议优先使用'**degrees**'角度模式而*非*弧度制。
+- 同时注意 GTA 的角度系统采用逆时针方向：270° 为东方，90° 为西方，南方仍为 180°，北方仍为 0°/360°。
 
 :::
 

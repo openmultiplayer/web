@@ -35,7 +35,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);
 
 :::note
 
-Os ângulos retornados quando dentro de um veículo raramente são corretos. Para obter o ângulo de visão correto dentro de um veículo, use GetVehicleZAngle.
+Os ângulos retornados quando dentro de um veículo raramente são corretos. Para obter o ângulo de visão correto dentro de um veículo, use [GetVehicleZAngle](GetVehicleZAngle).
 
 :::
 

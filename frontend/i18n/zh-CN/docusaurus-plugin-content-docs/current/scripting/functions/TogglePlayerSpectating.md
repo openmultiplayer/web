@@ -35,13 +35,13 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-禁用观察模式时会自动触发 OnPlayerSpawn 回调。若需恢复玩家原始状态，需在 OnPlayerSpawn 中处理。注意玩家可能通过 F4 进入选角界面，且观察模式中可能因漏洞导致死亡。
+禁用观察模式时会自动触发 [OnPlayerSpawn](../callbacks/OnPlayerSpawn) 回调。若需恢复玩家原始状态，需在 OnPlayerSpawn 中处理。注意玩家可能通过 F4 进入选角界面，且观察模式中可能因漏洞导致死亡。
 
 :::
 
 :::tip
 
-观察模式下会隐藏 HUD 界面，适合需要纯净视角控制的场景。玩家视角附近的物体会自动流加载，适用于视角插值功能。
+观察模式下会隐藏 HUD 界面，适合需要纯净视角控制的场景。玩家视角附近的物体会自动流加载，适用于[视角插值](InterpolateCameraPos)功能。
 
 :::
 

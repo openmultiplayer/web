@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Quand un joueur quitte le textdraw sélectionné avec ECHAP, OnPlayerClickTextDraw est appelé avec le textdraw ID `INVALID_TEXT_DRAW`. OnPlayerClickPlayerTextDraw ne sera pas appelé.
+Quand un joueur quitte le textdraw sélectionné avec ECHAP, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) est appelé avec le textdraw ID `INVALID_TEXT_DRAW`. OnPlayerClickPlayerTextDraw ne sera pas appelé.
 
 :::
 

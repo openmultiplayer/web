@@ -11,7 +11,7 @@ Oyun dünyası üzerinde obje oluşturma.
 
 | Parametre          | Açıklama                                                                                              |
 | ------------------ | ----------------------------------------------------------------------------------------------------- |
-| modelid            | Oluşturulacak objenin modeli.                                                                         |
+| modelid            | Oluşturulacak [objenin modeli](https://models.open.mp/?cat=objects).                                  |
 | Float:X            | Oluşturulacak objenin X koordinatı.                                                                   |
 | Float:Y            | Oluşturulacak objenin Y koordinatı.                                                                   |
 | Float:Z            | Oluşturulacak objenin Z koordinatı.                                                                   |
@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::note
 
-Obje sınırı 1000(MAX_OBJECTS)'dir. Sınırın aşılması için streamer kullanılabilir.
+Obje sınırı 1000(MAX_OBJECTS)'dir. Sınırın aşılması için [streamer](https://github.com/samp-incognito/samp-streamer-plugin) kullanılabilir.
 
 :::
 

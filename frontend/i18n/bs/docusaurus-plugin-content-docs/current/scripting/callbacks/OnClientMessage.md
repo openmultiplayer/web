@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ovaj callback se poziva kada god NPC vidi ClientMessage (poruku poslanu od game-klijenta). Ovo će biti svaki put kada `SendClientMessageToAll` funkcija bude pozvana i svaki put kada funkcija `SendClientMessage` bude slala prema NPC-u. Ovaj callback se neće pozvati kada neko kaže nešto. Za verziju ovoga sa tekstom igrača pogledaj funkciju NPC:OnPlayerText.
+Ovaj callback se poziva kada god NPC vidi ClientMessage (poruku poslanu od game-klijenta). Ovo će biti svaki put kada [SendClientMessageToAll](../functions/SendClientMessageToAll) funkcija bude pozvana i svaki put kada funkcija [SendClientMessage](../functions/SendClientMessage) bude slala prema NPC-u. Ovaj callback se neće pozvati kada neko kaže nešto. Za verziju ovoga sa tekstom igrača pogledaj funkciju NPC:OnPlayerText.
 
 | Ime    | Deskripcija                |
 | ------ | -------------------------- |

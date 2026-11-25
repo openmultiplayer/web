@@ -13,7 +13,7 @@ This callback is called **only** when vehicle **re**spawns! CreateVehicle and Ad
 
 ## Description
 
-This callback is called when a vehicle respawns.
+This callback is called when a vehicle **re**spawns.
 
 | Name      | Description                         |
 | --------- | ----------------------------------- |

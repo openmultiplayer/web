@@ -18,7 +18,7 @@ Removes a standard San Andreas model for a single player within a specified rang
 | Name          | Description                                                                       |
 | ------------- | --------------------------------------------------------------------------------- |
 | playerid      | The ID of the player to remove the objects for.                                   |
-| modelid       | The model to remove.                                                              |
+| modelid       | The [model](https://models.open.mp/?cat=objects) to remove.                       |
 | Float:fX      | The X coordinate around which the objects will be removed.                        |
 | Float:fY      | The Y coordinate around which the objects will be removed.                        |
 | Float:fZ      | The Z coordinate around which the objects will be removed.                        |
@@ -59,7 +59,8 @@ In SA-MP 0.3.7 you can use -1 for the modelid to remove all objects within the s
 
 :::warning
 
-There appears to be a limit of around 1000 lines/objects. There is no workaround. When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
+- There appears to be a limit of around 1000 lines/objects. There is no workaround.
+- When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
 
 :::
 

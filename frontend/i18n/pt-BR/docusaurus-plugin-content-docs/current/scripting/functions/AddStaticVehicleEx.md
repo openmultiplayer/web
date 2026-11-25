@@ -7,11 +7,11 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode. Diferente do AddStaticVehicle numa única maneira: permite re-spawnar após um tempo, quando o veículo estiver sem condutor.
+Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode. Diferente do [AddStaticVehicle](AddStaticVehicle) numa única maneira: permite re-spawnar após um tempo, quando o veículo estiver sem condutor.
 
 | Nome                                  | Descrição                                                                                                                                                         |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| modelid                               | O modelo ID para o veículo.                                                                                                                                       |
+| [modelid](../resources/vehicleid)     | O modelo ID para o veículo.                                                                                                                                       |
 | Float:spawn_X                         | A coordenada-X para o veículo.                                                                                                                                    |
 | Float:spawn_Y                         | A coordenada-Y para o veículo.                                                                                                                                    |
 | Float:spawn_Z                         | A coordenada-Z para o veículo.                                                                                                                                    |

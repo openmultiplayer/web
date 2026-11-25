@@ -7,7 +7,7 @@ tags: ["player", "checkpoint"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač napusti checkpoint koji mu je postavljen sa SetPlayerCheckpoint. Samo jedan checkpoint može biti postavljen odjednom.
+Ovaj callback je pozvan kada igrač napusti checkpoint koji mu je postavljen sa [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint). Samo jedan checkpoint može biti postavljen odjednom.
 
 | Ime      | Deskripcija                                 |
 | -------- | ------------------------------------------- |

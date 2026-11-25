@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## Deskripcija
 
-Oslobađa memoriju rezultata dodijeljenu iz db_query.
+Oslobađa memoriju rezultata dodijeljenu iz [db_query](db_query).
 
 | Ime               | Deskripcija                                                      |
 | ----------------- | ---------------------------------------------------------------- |

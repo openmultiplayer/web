@@ -59,7 +59,7 @@ For fully scripted pickups, type 1 should be used.
 
 **Known Bug(s):**
 
-- Pickups that have a X or Y lower than -4096.0 or bigger than 4096.0 won't show up and won't trigger OnPlayerPickUpPlayerPickup either.
+- Pickups that have a X or Y lower than -4096.0 or bigger than 4096.0 won't show up and won't trigger [OnPlayerPickUpPlayerPickup](../callbacks/OnPlayerPickUpPlayerPickup) either.
 
 :::
 

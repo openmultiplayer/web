@@ -30,9 +30,3 @@ S-ar putea să existe încă mai multe ID-uri utilizabile ascunse în joc și un
 | 53  | CAM_MODE_AIMWEAPON         | Țintind orice altă armă.                                                                                                                                     |
 | 55  | CAM_MODE_AIMWEAPON_FROMCAR | Cameră vehicul pasager cu vehicul.                                                                                                                           |
 | 56  | CAM_MODE_DW_HELI_CHASE     | Camera de urmărire: elicopter / vedere păsări.                                                                                                               |
-| 57  | -                          | Camera de urmărire: cameră de la sol, se apropie foarte repede. (Similar cu 56, dar la sol.)                                                                 |
-| 58  | -                          | Cameră de urmărire: zbura orizontală pe lângă vehicul.                                                                                                       |
-| 59  | -                          | Cameră de urmărire (numai pentru vehiculele aeriene): cameră de la sol, cu ochii în sus spre vehiculul aerian.                                               |
-| 62  | -                          | Camera de urmărire (numai pentru vehiculele aeriene): zboară verticală pe lângă vehiculul aerian.                                                            |
-| 63  | -                          | Cameră de urmărire (numai pentru vehiculele aeriene): zbura orizontală pe lângă vehiculul aerian (similar cu 58 și 62).                                      |
-| 64  | -                          | Cameră de urmărire (numai pentru vehiculele aeriene): cameră focalizată pe pilot, similar cu apăsarea tastei LOOK_BEHIND pe jos, dar în vehiculul aerian.    |

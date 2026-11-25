@@ -115,7 +115,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 :::note
 
-Vehicles must be respawned for the 'objective' to be removed. This can be circumvented somewhat using [GetVehicleParamsEx](GetVehicleParamsEx)/[SetVehicleParamsEx](SetVehicleParamsEx) which do not require the vehicle to be respawned (see the first example above). It is worth noting however that the objective will be disabled on a global scale, and this is only useful if only one player has the vehicle as an objective.
+Vehicles must be [respawned](SetVehicleToRespawn) for the 'objective' to be removed. This can be circumvented somewhat using [GetVehicleParamsEx](GetVehicleParamsEx)/[SetVehicleParamsEx](SetVehicleParamsEx) which do not require the vehicle to be respawned (see the first example above). It is worth noting however that the objective will be disabled on a global scale, and this is only useful if only one player has the vehicle as an objective.
 
 :::
 

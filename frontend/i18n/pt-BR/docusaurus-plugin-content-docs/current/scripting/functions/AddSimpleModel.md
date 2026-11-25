@@ -9,15 +9,15 @@ tags: []
 
 ## Descrição
 
-Adiciona um novo modelo de objeto simples personalizado para download. Os arquivos do modelo são armazenados em `Documentos\GTA San Andreas User Files\SAMP\cache` do jogador sob a pasta IP e Porta do Servidor em um arquivo no formato CRC.
+Adiciona um novo [modelo de objeto](CreateObject) simples personalizado para download. Os arquivos do modelo são armazenados em `Documentos\GTA San Andreas User Files\SAMP\cache` do jogador sob a pasta IP e Porta do Servidor em um arquivo no formato [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
-| Nome         | Descrição                                                                                                                                        |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| virtualworld | O ID do mundo virtual ao qual pretende colocar o modelo. Use -1 para todos os mundos.                                                            |
-| baseid       | O ID do modelo do objeto original a ser usado como base (objeto original é usado se o download falhar).                                          |
-| newid        | O ID do modelo do novo objeto. Varia entre -1000 a -30000 (29000 slots) para serem usados posteriormente com CreateObject ou CreatePlayerObject. |
-| dffname      | Nome do arquivo de extensão **.dff** localizado na pasta do servidor de modelos por padrão (configuração artpath).                               |
-| txdname      | Nome do arquivo de textura de extensão **.txd** localizado na pasta do servidor de modelos por padrão (configuração artpath).                    |
+| Nome         | Descrição                                                                                                                                                                              |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtualworld | O [ID do mundo virtual](SetPlayerVirtualWorld) ao qual pretende colocar o modelo. Use -1 para todos os mundos.                                                                         |
+| baseid       | O [ID do modelo do objeto](https://models.open.mp/?cat=objects) original a ser usado como base (objeto original é usado se o download falhar).                                         |
+| newid        | O ID do modelo do novo objeto. Varia entre -1000 a -30000 (29000 slots) para serem usados posteriormente com [CreateObject](CreateObject) ou [CreatePlayerObject](CreatePlayerObject). |
+| dffname      | Nome do arquivo de extensão **.dff** localizado na pasta do servidor de modelos por padrão (configuração [artpath](../../server/server.cfg#modelos-personalizados)).                   |
+| txdname      | Nome do arquivo de textura de extensão **.txd** localizado na pasta do servidor de modelos por padrão (configuração [artpath](../../server/server.cfg#modelos-personalizados)).        |
 
 ## Retorno
 
@@ -39,13 +39,13 @@ public OnGameModeInit()
 
 :::note
 
-**useartwork** deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
+**useartwork** deve ser habilitado primeiro nas [configurações do servidor](../../server/server.cfg#modelos-personalizados) para que essa função funcione.
 
 :::
 
 :::warning
 
-Atualmente não há restrições sobre quando você pode chamar esta função, mas esteja ciente de que se você não chamá-los dentro de OnFilterScriptInit ou OnGameModeInit, você corre o risco de que alguns jogadores, que já estão no servidor, não tenham baixado os modelos.
+Atualmente não há restrições sobre quando você pode chamar esta função, mas esteja ciente de que se você não chamá-los dentro de [OnFilterScriptInit](../callbacks/OnFilterScriptInit) ou [OnGameModeInit](../callbacks/OnGameModeInit), você corre o risco de que alguns jogadores, que já estão no servidor, não tenham baixado os modelos.
 
 :::
 

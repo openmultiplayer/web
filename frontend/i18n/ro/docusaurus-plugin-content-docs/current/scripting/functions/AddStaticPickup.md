@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-Această funcție nu returnează un ID de preluare pe care îl puteți utiliza, de exemplu, OnPlayerPickUpPickup. Utilizați CreatePickup dacă doriți să atribuiți ID-uri.
+Această funcție nu returnează un ID de preluare pe care îl puteți utiliza, de exemplu, [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup). Utilizați CreatePickup dacă doriți să atribuiți ID-uri.
 
 :::
 

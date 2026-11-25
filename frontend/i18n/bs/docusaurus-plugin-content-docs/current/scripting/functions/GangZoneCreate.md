@@ -44,13 +44,14 @@ gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
 
 :::note
 
-Ova funkcija samo STVARA gangzonu, za prikaz morate koristiti GangZoneShowForPlayer ili GangZoneShowForAll.
+Ova funkcija samo STVARA gangzonu, za prikaz morate koristiti [GangZoneShowForPlayer](GangZoneShowForPlayer) ili [GangZoneShowForAll](GangZoneShowForAll).
 
 :::
 
 :::warning
 
-Postoji ograničenje od 1024 gangzone. Stavljanje parametara u pogrešan redoslijed rezultira glitchy ponašanjem.
+- Postoji ograničenje od 1024 gangzone.
+- Stavljanje parametara u pogrešan redoslijed rezultira glitchy ponašanjem.
 
 :::
 

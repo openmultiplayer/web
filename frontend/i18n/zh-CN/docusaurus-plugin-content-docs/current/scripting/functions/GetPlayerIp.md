@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- PAWN 语言区分大小写，错误使用 GetPlayerIP（大写）将无法正常工作
+- PAWN 语言区分大小写，错误使用 GetPlayerI**P**（大写）将无法正常工作
 - **SA-MP 服务端**：在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)回调中使用时将返回无效 IP（255.255.255.255），建议在[OnPlayerConnect](../callbacks/OnPlayerConnect)中保存 IP 地址
 - **open.mp 服务端**：支持在[OnPlayerDisconnect](../callbacks/OnPlayerDisconnect)回调中正常获取 IP
 

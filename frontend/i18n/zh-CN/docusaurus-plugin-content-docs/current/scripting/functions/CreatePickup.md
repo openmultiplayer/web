@@ -7,7 +7,7 @@ tags: ["拾取物"]
 
 ## 描述
 
-此函数功能与 AddStaticPickup 相同，但会返回可用于后续销毁操作的拾取物 ID，并能通过 OnPlayerPickUpPickup 回调追踪拾取事件。
+此函数功能与 [AddStaticPickup](AddStaticPickup) 相同，但会返回可用于后续销毁操作的拾取物 ID，并能通过 [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup) 回调追踪拾取事件。
 
 | 参数                             | 说明                                       |
 | -------------------------------- | ------------------------------------------ |

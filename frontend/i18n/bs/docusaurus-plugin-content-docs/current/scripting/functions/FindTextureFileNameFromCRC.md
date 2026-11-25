@@ -15,11 +15,11 @@ Ova funkcija je dodana u SA-MP 0.3.DL R1 i ne radi u nižim verzijama!
 
 Pronađite postojeću prilagođenu datoteku teksture kože ili jednostavnog objekta. Datoteke modela se prema zadanim postavkama nalaze u direktoriju `models` na poslužitelju (postavka artpath).
 
-| Ime         | Deskripcija                                                                |
-| ----------- | -------------------------------------------------------------------------- |
-| crc         | CRC kontrolna suma datoteke prilagođenog modela.                           |
-| retstr[]    | Niz u koji treba pohraniti **.txd** ime datoteke, proslijeđeno referencom. |
-| retstr_size | Dužina niza koji treba pohraniti.                                          |
+| Ime         | Deskripcija                                                                                               |
+| ----------- | --------------------------------------------------------------------------------------------------------- |
+| crc         | [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) kontrolna suma datoteke prilagođenog modela. |
+| retstr[]    | Niz u koji treba pohraniti **.txd** ime datoteke, proslijeđeno referencom.                                |
+| retstr_size | Dužina niza koji treba pohraniti.                                                                         |
 
 ## Returns
 

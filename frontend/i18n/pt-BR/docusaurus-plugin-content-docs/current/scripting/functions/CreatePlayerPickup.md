@@ -59,7 +59,7 @@ Para pickups totalmente programados, o tipo 1 deve ser usado.
 
 **Bug(s) Conhecido(s):**
 
-- Pickups que têm um X ou Y menor que -4096.0 ou maior que 4096.0 não aparecerão e não acionarão OnPlayerPickUpPlayerPickup também.
+- Pickups que têm um X ou Y menor que -4096.0 ou maior que 4096.0 não aparecerão e não acionarão [OnPlayerPickUpPlayerPickup](../callbacks/OnPlayerPickUpPlayerPickup) também.
 
 :::
 

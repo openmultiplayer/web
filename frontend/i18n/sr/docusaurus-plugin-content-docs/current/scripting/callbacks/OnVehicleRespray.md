@@ -36,7 +36,8 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-Ова повратна функција се не позива од стране ChangeVehicleColor. Назив може бити обмануто, ова повратна функција се не позива за pay 'n' spray (само за радње за модификацију).
+- Ова повратна функција се не позива од стране ChangeVehicleColor.
+- Назив може бити обмануто, ова повратна функција се не позива за pay 'n' spray (само за радње за модификацију).
 
 Погледај ово: https://pastebin.com/G81da7N1
 

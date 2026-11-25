@@ -7,7 +7,7 @@ tags: ["time"]
 
 ## Descrição
 
-Esta função pode ser usada como substituição para GetTickCount, pois retorna o número de milissegundos desde a inicialização do servidor.
+Esta função pode ser usada como substituição para [GetTickCount](GetTickCount), pois retorna o número de milissegundos desde a inicialização do servidor.
 
 | Name           | Description                                                                                                                                                                 |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

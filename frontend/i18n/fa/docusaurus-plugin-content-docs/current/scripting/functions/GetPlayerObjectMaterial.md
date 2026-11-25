@@ -11,17 +11,17 @@ tags: ["player", "object", "playerobject"]
 
 دریافت داده‌های متریال از یک index از player-object.
 
-| نام                | توضیحات                                                                |
-| ------------------ | ---------------------------------------------------------------------- |
-| playerid           | ID بازیکن.                                                             |
-| objectid           | ID player-object.                                                      |
-| materialIndex      | index متریال در object. (0 تا 15)                                      |
-| &modelid           | متغیری برای ذخیره ID مدل، به صورت reference پاس داده می‌شود.           |
-| textureLibrary[]   | آرایه‌ای برای ذخیره textureLibrary، به صورت reference پاس داده می‌شود. |
-| textureLibrarySize | اندازه textureLibrary.                                                 |
-| textureName[]      | آرایه‌ای برای ذخیره textureName، به صورت reference پاس داده می‌شود.    |
-| textureNameSize    | اندازه textureName.                                                    |
-| &materialColour    | متغیری برای ذخیره materialColour، به صورت reference پاس داده می‌شود.   |
+| نام                | توضیحات                                                                                                |
+| ------------------ | ------------------------------------------------------------------------------------------------------ |
+| playerid           | ID بازیکن.                                                                                             |
+| objectid           | ID player-object.                                                                                      |
+| materialIndex      | index متریال در object. (0 تا 15)                                                                      |
+| &modelid           | متغیری برای ذخیره ID مدل، به صورت reference پاس داده می‌شود.                                            |
+| textureLibrary[]   | آرایه‌ای برای ذخیره نام کتابخانهٔ بافت، به صورت reference پاس داده می‌شود.                                |
+| textureLibrarySize | اندازهٔ آرایه‌ای که نام کتابخانهٔ بافت را ذخیره می‌کند.                                                    |
+| textureName[]      | آرایه‌ای برای ذخیره نام [بافت](https://models.open.mp/?cat=textures)، به صورت reference پاس داده می‌شود. |
+| textureNameSize    | اندازهٔ آرایه‌ای که نام بافت را ذخیره می‌کند.                                                             |
+| &materialColour    | متغیری برای ذخیره materialColour، به صورت reference پاس داده می‌شود.                                    |
 
 ## مقادیر برگشتی
 

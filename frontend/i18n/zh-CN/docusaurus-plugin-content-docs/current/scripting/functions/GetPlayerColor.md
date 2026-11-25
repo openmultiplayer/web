@@ -7,7 +7,7 @@ tags: ["玩家"]
 
 ## 描述
 
-获取玩家昵称及雷达标记的显示颜色（仅在调用 SetPlayerColor 后生效）
+获取玩家昵称及雷达标记的显示颜色（仅在调用 [SetPlayerColor](SetPlayerColor) 后生效）
 
 | 参数名   | 说明                  |
 | -------- | --------------------- |
@@ -32,7 +32,7 @@ SendClientMessage(playerid, -1, output);
 
 :::warning
 
-若未预先调用 SetPlayerColor 设置颜色，此函数将返回 0。点击[此处](../../tutorials/colorfix)查看修复方法
+若未预先调用 [SetPlayerColor](SetPlayerColor) 设置颜色，此函数将返回 0。点击[此处](../../tutorials/colorfix)查看修复方法
 
 :::
 

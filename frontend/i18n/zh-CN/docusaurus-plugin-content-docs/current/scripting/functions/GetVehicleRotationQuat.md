@@ -7,7 +7,7 @@ tags: ["车辆"]
 
 ## 描述
 
-获取车辆基于四元数（Quaternion）的三维旋转参数。
+获取车辆基于[四元数](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation)（Quaternion）的三维旋转参数。
 
 | 参数      | 说明                                          |
 | --------- | --------------------------------------------- |
@@ -41,7 +41,7 @@ GetVehicleRotationQuat(vehicleid, w, x, y, z);
 
 :::note
 
-此函数没有对应的设置方法（只能通过 SetVehicleZAngle 设置 Z 轴角度）
+此函数没有对应的设置方法（只能通过 SetVehicleZAngle 设置 [Z 轴角度](SetVehicleZAngle)）
 
 :::
 

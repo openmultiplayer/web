@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Kapag ang player ay pinindot ang ESC para i cancel ang textdraw, OnPlayerClickTextDraw ay matatawag kasama ang ID na `INVALID_TEXT_DRAW`. OnPlayerClickPlayerTextDraw ay hindi rin matatawag.
+Kapag ang player ay pinindot ang ESC para i cancel ang textdraw, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) ay matatawag kasama ang ID na `INVALID_TEXT_DRAW`. OnPlayerClickPlayerTextDraw ay hindi rin matatawag.
 
 :::
 

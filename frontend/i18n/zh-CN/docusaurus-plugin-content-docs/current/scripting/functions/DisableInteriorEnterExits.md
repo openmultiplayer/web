@@ -27,9 +27,8 @@ public OnGameModeInit()
 
 :::warning
 
-此函数仅在玩家连接前调用有效（建议在 [OnGameModeInit](../callbacks/OnGameModeInit) 中使用）。已连接玩家的标记不会被移除。
-
-若在调用此函数后切换游戏模式，且新游戏模式未禁用标记，已连接玩家不会重新显示标记（但新连接玩家会显示）。
+- 此函数仅在玩家连接前调用有效（建议在 [OnGameModeInit](../callbacks/OnGameModeInit) 中使用）。已连接玩家的标记不会被移除。
+- 若在调用此函数后切换游戏模式，且新游戏模式未禁用标记，已连接玩家不会重新显示标记（但新连接玩家会显示）。
 
 :::
 

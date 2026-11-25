@@ -7,11 +7,11 @@ tags: ["物体"]
 
 ## 描述
 
-销毁通过 CreateObject 创建的物体。
+销毁通过 [CreateObject](CreateObject) 创建的物体。
 
-| 参数     | 说明                                  |
-| -------- | ------------------------------------- |
-| objectid | 要销毁的物体 ID，由 CreateObject 返回 |
+| 参数     | 说明                                                  |
+| -------- | ----------------------------------------------------- |
+| objectid | 要销毁的物体 ID，由 [CreateObject](CreateObject) 返回 |
 
 ## 返回值
 

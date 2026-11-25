@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Descriere
 
-Acest callback este apelat atunci când un jucător dă clic pe un player-textdraw. Nu este apelat atunci când jucătorul anulează modul de selectare (ESC) - cu toate acestea, OnPlayerClickTextDraw este.
+Acest callback este apelat atunci când un jucător dă clic pe un player-textdraw. Nu este apelat atunci când jucătorul anulează modul de selectare (ESC) - cu toate acestea, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) este.
 
 | Nume         | Descriere                                             |
 | ------------ | ----------------------------------------------------- |
@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Când un jucător apasă ESC pentru a anula selectarea unui textdraw, OnPlayerClickTextDraw este apelat cu un ID textdraw „INVALID_TEXT_DRAW”. De asemenea, OnPlayerClickPlayerTextDraw nu va fi numit.
+Când un jucător apasă ESC pentru a anula selectarea unui textdraw, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) este apelat cu un ID textdraw „INVALID_TEXT_DRAW”. De asemenea, OnPlayerClickPlayerTextDraw nu va fi numit.
 
 :::
 

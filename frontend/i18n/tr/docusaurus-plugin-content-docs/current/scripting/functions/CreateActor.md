@@ -47,14 +47,15 @@ public OnGameModeExit()
 
 :::note
 
-- Aktörler, kasiyerler ve barmenler gibi sadece bir yerde duracak şekilde tasarlanmıştır. ApplyActorAnimation kullanarak (döngü veya bir kez) animasyonlar gerçekleştirebilir.
+- Aktörler, kasiyerler ve barmenler gibi sadece bir yerde duracak şekilde tasarlanmıştır. [ApplyActorAnimation](ApplyActorAnimation) kullanarak (döngü veya bir kez) animasyonlar gerçekleştirebilir.
 - 0.3.7 R2 sürümü ve sonraki sürümlerde aktörler dokunulmaz (hasar almaz) olarak ayarlanabilir.
 
 :::
 
 :::warning
 
-- Aktörler NPC'lerden tamamen farklıdır. Sunucunun slotlarını KULLANMAZLAR ve NPC'ler gibi KULLANILMAZLAR. Aktörler 1000 (MAX_ACTORS) ile sınırlıdır.
+- Aktörler NPC'lerden tamamen farklıdır. Sunucunun slotlarını KULLANMAZLAR ve NPC'ler gibi KULLANILMAZLAR.
+- Aktörler 1000 (MAX_ACTORS) ile sınırlıdır.
 - Araçlar ile itilebilirler, ayrıca konumlarına geri koymak içinde timer kullanılabilir.
 
 :::

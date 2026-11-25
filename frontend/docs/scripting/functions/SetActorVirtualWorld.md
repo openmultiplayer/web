@@ -11,10 +11,10 @@ tags: ["actor"]
 
 Set the virtual world of an actor. Only players in the same world will see the actor.
 
-| Name         | Description                                                                |
-| ------------ | -------------------------------------------------------------------------- |
-| actorid      | The ID of the actor (returned by CreateActor) to set the virtual world of. |
-| virtualWorld | The virtual world to put the actor ID.                                     |
+| Name         | Description                                                                               |
+| ------------ | ----------------------------------------------------------------------------------------- |
+| actorid      | The ID of the actor (returned by [CreateActor](CreateActor)) to set the virtual world of. |
+| virtualWorld | The virtual world to put the actor ID.                                                    |
 
 ## Returns
 

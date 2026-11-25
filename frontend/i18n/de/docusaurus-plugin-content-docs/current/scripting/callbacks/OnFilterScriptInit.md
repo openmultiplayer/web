@@ -7,7 +7,7 @@ tags: []
 
 ## Beschreibung
 
-Wird ausgeführt wenn ein Filterscript gestartet wird (initialize). Wird nur im entsprechenden Filterscript ausgeführt.
+Wird ausgeführt wenn ein Filterscript gestartet wird (**init**ialize). Wird nur im entsprechenden Filterscript ausgeführt.
 
 ## Beispiele
 

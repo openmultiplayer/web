@@ -38,7 +38,8 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 
 :::note
 
-Như tên callback đã nói, nó chỉ được gọi khi người chơi nhấp chuột để đánh dấu mục tiêu chứ không phải khi nhấn phím. Giá trị Z trả về sẽ là 0 (không hợp lệ) nếu khu vực nhấp chuột trên bản đồ cách xa người chơi; sử dụng plugin [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) hoặc [ColAndreas](https://github.com/Pottus/ColAndreas) để có tọa độ Z chính xác hơn.
+- Như tên callback đã nói, nó chỉ được gọi khi người chơi nhấp chuột để đánh dấu mục tiêu chứ không phải khi nhấn phím.
+- Giá trị Z trả về sẽ là 0 (không hợp lệ) nếu khu vực nhấp chuột trên bản đồ cách xa người chơi; sử dụng plugin [MapAndreas](https://github.com/philip1337/samp-plugin-mapandreas) hoặc [ColAndreas](https://github.com/Pottus/ColAndreas) để có tọa độ Z chính xác hơn.
 
 :::
 

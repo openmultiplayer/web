@@ -11,7 +11,7 @@ Change the current position in the file. You can either seek forward or backward
 
 | Name                                                | Description                                                                 |
 | --------------------------------------------------- | --------------------------------------------------------------------------- |
-| File:handle                                         | The file handle to use. Returned by fopen.                                  |
+| File:handle                                         | The file handle to use. Returned by [fopen](fopen).                         |
 | position                                            | The new position in the file, relative to the parameter whence (see below). |
 | [seek_whence:whence](../resources/file-seek-whence) | The starting position to which parameter position relates.                  |
 

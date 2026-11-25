@@ -52,7 +52,8 @@ public OnGameModeInit()
 
 :::warning
 
-- Actors are completely separate from NPCs. They do NOT use player IDs/slots on the server and CANNOT be handled like NPCs. Actors are limited to 1000 (MAX_ACTORS).
+- Actors are completely separate from NPCs. They do NOT use player IDs/slots on the server and CANNOT be handled like NPCs.
+- Actors are limited to 1000 (MAX_ACTORS).
 - Actors can be pushed by vehicles, use a timer to put them back at their positions.
 
 :::

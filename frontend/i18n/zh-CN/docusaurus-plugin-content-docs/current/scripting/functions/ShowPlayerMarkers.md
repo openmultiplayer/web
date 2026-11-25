@@ -7,7 +7,7 @@ tags: ["玩家"]
 
 ## 描述
 
-切换玩家雷达标记（小地图上的光点显示状态）。必须在服务器启动时调用（OnGameModeInit 回调中）。如需运行时控制，请使用[SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer)。
+切换玩家雷达标记（小地图上的光点显示状态）。必须在服务器启动时调用（[OnGameModeInit](../callbacks/OnGameModeInit) 回调中）。如需运行时控制，请使用[SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer)。
 
 | 参数名称                 | 说明                                                                           |
 | ------------------------ | ------------------------------------------------------------------------------ |
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::tip
 
-通过设置玩家颜色为完全透明（无 Alpha 通道值），可实现按玩家单独控制标记显示。此方法支持基于玩家的个性化标记显示方案。
+通过[设置玩家颜色](SetPlayerColor)为完全透明（无 Alpha 通道值），可实现按玩家单独控制标记显示。此方法支持基于玩家的个性化标记显示方案。
 
 :::
 

@@ -7,12 +7,12 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Altere o paintjob de um veículo (para cores normais, consulte ChangeVehicleColor).
+Altere o paintjob de um veículo (para cores normais, consulte [ChangeVehicleColor](ChangeVehicleColor)).
 
-| Nome       | Descrição                                                   |
-| ---------- | ----------------------------------------------------------- |
-| vehicleid  | O ID do veículo para alterar o paintjob.                    |
-| paintjobid | O ID do paintjob a aplicar. Use 3 para remover um paintjob. |
+| Nome       | Descrição                                                                             |
+| ---------- | ------------------------------------------------------------------------------------- |
+| vehicleid  | O ID do veículo para alterar o paintjob.                                              |
+| paintjobid | O ID do [paintjob](../resources/paintjobs) a aplicar. Use 3 para remover um paintjob. |
 
 ## Retorno
 
@@ -20,7 +20,11 @@ Esta função sempre retorna **1** (sucesso), mesmo que o veículo não exista.
 
 :::warning
 
-Se a cor do veículo for preta, o paintjob pode não ser visível. É melhor deixar o veículo branco antes de aplicar o paintjob, usando ChangeVehicleColor(vehicleid,1,1);
+Se a cor do veículo for preta, o paintjob pode não ser visível. É melhor deixar o veículo branco antes de aplicar o paintjob, usando:
+
+```c
+ChangeVehicleColor(vehicleid, 1, 1);
+```
 
 :::
 

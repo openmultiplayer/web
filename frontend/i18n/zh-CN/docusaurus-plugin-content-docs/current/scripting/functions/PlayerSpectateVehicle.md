@@ -17,7 +17,7 @@ tags: ["玩家", "车辆"]
 
 ## 返回值
 
-**true** - 指令执行成功（注意：未启用观战模式时也会返回成功，但实际无效，必须先调用 TogglePlayerSpectating）
+**true** - 指令执行成功（注意：未启用观战模式时也会返回成功，但实际无效，必须先调用 [TogglePlayerSpectating](TogglePlayerSpectating)）
 
 **false** - 执行失败（玩家/车辆不存在或参数无效）
 
@@ -32,7 +32,7 @@ PlayerSpectateVehicle(playerid, vehicleid); // 开始观察指定车辆
 
 :::warning
 
-- 调用顺序强制要求：必须先使用 TogglePlayerSpectating 启用观战状态
+- 调用顺序强制要求：必须先使用 [TogglePlayerSpectating](TogglePlayerSpectating) 启用观战状态
 - 观战者与被观战车辆必须处于相同室内空间和虚拟世界
 
 :::

@@ -7,15 +7,15 @@ tags: ["player", "3dtextlabel"]
 
 ## Description
 
-Attach a 3D text label to a player.
+Attach a [3D text label](Create3DTextLabel) to a player.
 
-| Name          | Description                                                           |
-| ------------- | --------------------------------------------------------------------- |
-| Text3D:textid | The ID of the 3D text label to attach. Returned by Create3DTextLabel. |
-| playerid      | The ID of the player to attach the label to.                          |
-| Float:offsetX | The X offset from the player.                                         |
-| Float:offsetY | The Y offset from the player.                                         |
-| Float:offsetZ | The Z offset from the player.                                         |
+| Name          | Description                                                                                |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| Text3D:textid | The ID of the 3D text label to attach. Returned by [Create3DTextLabel](Create3DTextLabel). |
+| playerid      | The ID of the player to attach the label to.                                               |
+| Float:offsetX | The X offset from the player.                                                              |
+| Float:offsetY | The Y offset from the player.                                                              |
+| Float:offsetZ | The Z offset from the player.                                                              |
 
 ## Returns
 

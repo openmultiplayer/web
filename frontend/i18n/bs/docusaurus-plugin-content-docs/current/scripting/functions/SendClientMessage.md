@@ -39,13 +39,15 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Ugradnju boja možete koristiti za više boja u poruci. Korištenje '-1' kao boje učinit će tekst bijelim (iz jednostavnog razloga što je -1, kada je predstavljen u heksadecimalnom zapisu, 0xFFFFFFFF).
+- Ugradnju boja možete koristiti za više boja u poruci.
+- Korištenje '-1' kao boje učinit će tekst bijelim (iz jednostavnog razloga što je -1, kada je predstavljen u heksadecimalnom zapisu, 0xFFFFFFFF).
 
 :::
 
 :::warning
 
-Ako je poruka duža od 144 znaka, neće se poslati. Skraćivanje se može koristiti da se to spriječi. Prikazivanje poruke u više redaka također će riješiti ovaj problem. Izbjegavajte upotrebu znaka postotka (ili specifikatora formata) u stvarnom tekstu poruke, a da ga pravilno ne izbjegnete (poput %%). U suprotnom će rezultirati padovima.
+- Ako je poruka duža od 144 znaka, neće se poslati. Skraćivanje se može koristiti da se to spriječi. Prikazivanje poruke u više redaka također će riješiti ovaj problem.
+- Izbjegavajte upotrebu znaka postotka (ili specifikatora formata) u stvarnom tekstu poruke, a da ga pravilno ne izbjegnete (poput %%). U suprotnom će rezultirati padovima.
 
 :::
 

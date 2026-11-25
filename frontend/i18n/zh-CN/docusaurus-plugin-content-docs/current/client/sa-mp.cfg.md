@@ -6,7 +6,7 @@ description: SA-MP客户端配置文件
 
 ## 配置文件说明
 
-`sa-mp.cfg` 是用于配置 SA-MP 客户端设置的配置文件。该文件位于 Windows 用户账户下的`我的文档\GTA San Andreas User Files\SAMP`文件夹中，可使用记事本等文本编辑器进行编辑。
+sa-mp.cfg 是用于配置 SA-MP 客户端设置的配置文件。该文件位于 Windows 用户账户下的`我的文档\GTA San Andreas User Files\SAMP`文件夹中，可使用记事本等文本编辑器进行编辑。
 
 ## 配置选项
 

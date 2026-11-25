@@ -7,7 +7,7 @@ tags: []
 
 ## Opis
 
-Ta "callback" se pokliče, ko se naslov IP poskuša povezati s strežnikom. Če želite blokirati dohodne povezave, uporabite "BlockIpAddress".
+Ta "callback" se pokliče, ko se naslov IP poskuša povezati s strežnikom. Če želite blokirati dohodne povezave, uporabite BlockIpAddress.
 
 | Ime          | Opis                                            |
 | ------------ | ----------------------------------------------- |

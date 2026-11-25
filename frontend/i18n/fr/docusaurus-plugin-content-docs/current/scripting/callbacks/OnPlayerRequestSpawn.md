@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-Pour éviter que les joueurs spawn avec une certaine classe, la classe dernièrement vue doit être sauvegardée dans une variable dans OnPlayerRequestClass.
+Pour éviter que les joueurs spawn avec une certaine classe, la classe dernièrement vue doit être sauvegardée dans une variable dans [OnPlayerRequestClass](OnPlayerRequestClass).
 
 :::
 

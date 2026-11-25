@@ -55,8 +55,8 @@ A [incorporação de cores](../resources/colorslist#color-embedding) pode ser us
 
 :::warning
 
-Você MUST usa o formato de cores **ARGB**, não RGBA como usado em mensagens de clientes, etc.
-O texto não é atualizado após 16 chamadas no mesmo objeto.
+- Você MUST usa o formato de cores **ARGB**, não RGBA como usado em mensagens de clientes, etc.
+- O texto não é atualizado após 16 chamadas no mesmo objeto.
 
 :::
 

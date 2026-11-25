@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## توضیحات
 
-ضخامت outline متن یک textdraw رو تنظیم می‌کنه. می‌تونی از TextDrawBackgroundColor برای تغییر رنگ استفاده کنی.
+ضخامت outline متن یک textdraw رو تنظیم می‌کنه. می‌تونی از [TextDrawBackgroundColor](TextDrawBackgroundColor) برای تغییر رنگ استفاده کنی.
 
 | نام         | توضیحات                                                   |
 | ----------- | --------------------------------------------------------- |

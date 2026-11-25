@@ -18,7 +18,9 @@ Haal de positie van een speler op, als X‑, Y‑ en Z‑coördinaten.
 
 ## Retourneert
 
-**true** bij succes, **false** bij falen (speler niet verbonden). Coördinaten worden in de variabelen opgeslagen.
+**true** bij succes, **false** bij falen (speler niet verbonden).
+
+Coördinaten worden in de variabelen opgeslagen.
 
 ## Voorbeeld
 
@@ -34,7 +36,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## Opmerkingen
 
-Kan onbetrouwbaar zijn in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) en `OnPlayerRequestClass` (speler niet gespawned).
+Kan onbetrouwbaar zijn in [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) en [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass) (speler niet gespawned).
 
 ## Gerelateerd
 

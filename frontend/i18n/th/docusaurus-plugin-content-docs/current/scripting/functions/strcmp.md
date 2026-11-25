@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Compares two strings to see if they are the same.
+**C**o**mp**ares two **str**ings to see if they are the same.
 
 | Name                  | Description                                                                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -18,7 +18,11 @@ Compares two strings to see if they are the same.
 
 ## ส่งคืน
 
-**0** if strings match each other on given length;**1** o r **-1** if some character do not match: string1[i] - string2[i] ('i' represents character index starting from 0);**difference in number of characters** if one string matches only part of another string.
+**0** if strings match each other on given length;
+
+**1** o r **-1** if some character do not match: string1[i] - string2[i] ('i' represents character index starting from 0);
+
+**difference in number of characters** if one string matches only part of another string.
 
 ## ตัวอย่าง
 

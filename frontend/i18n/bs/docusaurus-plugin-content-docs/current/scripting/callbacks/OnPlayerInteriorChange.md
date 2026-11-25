@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Pozvan kada igrač promijeni enterijer. Može biti izazvano od strane `SetPlayerInterior` funkcije ili kada igrač uđe/izađe iz izgrade(u zgradu).
+Pozvan kada igrač promijeni enterijer. Može biti izazvano od strane [SetPlayerInterior](../functions/SetPlayerInterior) funkcije ili kada igrač uđe/izađe iz izgrade(u zgradu).
 
 | Ime           | DescripDeskripcijation                                        |
 | ------------- | ------------------------------------------------------------- |

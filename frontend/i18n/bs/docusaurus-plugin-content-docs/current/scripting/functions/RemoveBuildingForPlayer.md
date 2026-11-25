@@ -12,7 +12,7 @@ Uklanja standardni model San Andreasa za jednog igrača u određenom opsegu.
 | Ime           | Deskripcija                                                            |
 | ------------- | ---------------------------------------------------------------------- |
 | playerid      | ID igrača za ukloniti objekte.                                         |
-| modelid       | Model za ukloniti.                                                     |
+| modelid       | [Model](https://models.open.mp/?cat=objects) za ukloniti.              |
 | Float:fX      | X kordinata oko koje će objekat biti obrisan.                          |
 | Float:fY      | Y kordinata oko koje će objekat biti obrisan.                          |
 | Float:fZ      | Z kordinata oko koje će objekat biti obrisan.                          |
@@ -53,7 +53,8 @@ U SA-MP 0.3.7 možete koristiti -1 za Modelid za uklanjanje svih objekata unutar
 
 :::warning
 
-Čini se da postoji ograničenje od oko 1000 linija/objekata. Zaobilazno rješenje nema. Kada uklonite isti predmet za igrača, oni će se srušiti. Obično se igrači sruše pri ponovnom povezivanju s serverom jer server uklanja zgrade na OnPlayerConnectu.
+- Čini se da postoji ograničenje od oko 1000 linija/objekata. Zaobilazno rješenje nema.
+- Kada uklonite isti predmet za igrača, oni će se srušiti. Obično se igrači sruše pri ponovnom povezivanju s serverom jer server uklanja zgrade na OnPlayerConnectu.
 
 :::
 

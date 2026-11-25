@@ -36,8 +36,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-- ترتیب خیلی مهم هست! مطمئن شو که ابتدا از TogglePlayerSpectating استفاده می‌کنی و بعد PlayerSpectatePlayer.
-- playerid و targetplayerid باید در همون virtual world و interior باشن تا این تابع درست کار کنه.
+- ترتیب خیلی مهم هست! مطمئن شو که ابتدا از [TogglePlayerSpectating](TogglePlayerSpectating) استفاده می‌کنی و بعد PlayerSpectatePlayer.
+- playerid و targetplayerid باید در همون [virtual world](SetPlayerVirtualWorld) و [interior](SetPlayerInterior) باشن تا این تابع درست کار کنه.
 
 :::
 

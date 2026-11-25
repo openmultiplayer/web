@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Toggles player markers (blips on the radar). Must be used when the server starts (OnGameModeInit). For other times, see SetPlayerMarkerForPlayer.
+Toggles player markers (blips on the radar). Must be used when the server starts ([OnGameModeInit](../callbacks/OnGameModeInit)). For other times, see SetPlayerMarkerForPlayer.
 
 | Name | Description                                                                                                                           |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------- |

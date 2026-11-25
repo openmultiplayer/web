@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-This function sends a message to a specific player with a chosen color in the chat. The whole line in the chatbox will be in the set color unless color embedding is used.
+This function sends a message to a specific player with a chosen color in the chat. The whole line in the chatbox will be in the set color unless [color embedding](../resources/colorslist#color-embedding) is used.
 
 | Name             | Description                                               |
 | ---------------- | --------------------------------------------------------- |
@@ -52,8 +52,8 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-- You can use color embedding for multiple colors in the message.
-- Using '-1' as the color will make the text white (for the simple reason that -1, when represented in hexadecimal notation, is 0xFFFFFFFF).
+- You can use [color embedding](../resources/colorslist#color-embedding) for multiple colors in the message.
+- Using '-1' as the color will make the text white (for the simple reason that -1, when represented in [hexadecimal notation](../resources/hexcolors), is 0xFFFFFFFF).
 
 :::
 

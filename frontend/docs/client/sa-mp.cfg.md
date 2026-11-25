@@ -6,7 +6,7 @@ description: sa-mp client configuration file.
 
 ## Description
 
-`sa-mp.cfg` is a client configuration file which allows you to change settings related to SA-MP. This file is found in your 'My Documents\\GTA San Andreas User Files\\SAMP' folder, under your Windows user account. This file can be edited with a text editor such as notepad.
+sa-mp.cfg is a client configuration file which allows you to change settings related to SA-MP. This file is found in your `My Documents\GTA San Andreas User Files\SAMP` folder, under your Windows user account. This file can be edited with a text editor such as notepad.
 
 ## Options
 

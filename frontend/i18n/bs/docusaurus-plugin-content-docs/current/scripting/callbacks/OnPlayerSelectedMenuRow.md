@@ -7,7 +7,7 @@ tags: ["player", "menu"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač selektuje određenu stavku (item) iz menija (ShowMenuForPlayer).
+Ovaj callback je pozvan kada igrač selektuje određenu stavku (item) iz menija ([ShowMenuForPlayer](../functions/ShowMenuForPlayer)).
 
 | Ime      | Deskripcija                                           |
 | -------- | ----------------------------------------------------- |

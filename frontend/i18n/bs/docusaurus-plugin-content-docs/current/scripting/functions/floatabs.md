@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ova funkcija vraća apsolutnu vrijednost float-a.
+Ova funkcija vraća [apsolutnu vrijednost](https://en.wikipedia.org/wiki/Absolute_value) float-a.
 
 | Ime         | Deskripcija                                          |
 | ----------- | ---------------------------------------------------- |

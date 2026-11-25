@@ -7,7 +7,7 @@ tags: ["player", "camera"]
 
 ## Description
 
-Set the direction a player's camera looks at. Generally meant to be used in combination with SetPlayerCameraPos.
+Set the direction a player's camera looks at. Generally meant to be used in combination with [SetPlayerCameraPos](SetPlayerCameraPos).
 
 | Name         | Description                                                                                                                                    |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,7 +34,7 @@ SetPlayerCameraLookAt(playerid, 324.34, 54.122, 173.35);
 
 :::warning
 
-Using the camera functions directly after enabling spectator mode doesn't work.
+Using the camera functions directly after [enabling spectator mode](TogglePlayerSpectating) doesn't work.
 
 :::
 

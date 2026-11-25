@@ -49,7 +49,7 @@ public OnPlayerSpawn(playerid)
 
 :::note
 
-Ova je funkcija odvojena od spremišta CreateObject / CreatePlayerObject.
+Ova je funkcija odvojena od spremišta [CreateObject](CreateObject) / [CreatePlayerObject](CreatePlayerObject).
 
 :::
 

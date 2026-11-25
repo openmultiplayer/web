@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Isto kao i AttachObjectToPlayer ali za objekte koji su kreirani za igrača.
+Isto kao i [AttachObjectToPlayer](AttachObjectToPlayer) ali za objekte koji su kreirani za igrača.
 
 | Ime           | Deskripcija                                                         |
 | ------------- | ------------------------------------------------------------------- |

@@ -15,12 +15,12 @@ This function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
 
 Hashes a password using the SHA-256 hashing algorithm. Includes a salt. The output is always 256 bits in length, or the equivalent of 64 Pawn cells.
 
-| Name         | Description                                        |
-| ------------ | -------------------------------------------------- |
-| password[]   | The password to hash.                              |
-| salt[]       | The salt to use in the hash.                       |
-| ret_hash[]   | The returned hash in uppercase hexadecimal digest. |
-| ret_hash_len | The returned hash maximum length.                  |
+| Name         | Description                                                                       |
+| ------------ | --------------------------------------------------------------------------------- |
+| password[]   | The password to hash.                                                             |
+| salt[]       | The [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) to use in the hash. |
+| ret_hash[]   | The returned hash in uppercase hexadecimal digest.                                |
+| ret_hash_len | The returned hash maximum length.                                                 |
 
 ## ส่งคืน
 

@@ -7,7 +7,7 @@ tags: ["object"]
 
 ## Description
 
-Move an object to a new position with a set speed. Players/vehicles will 'surf' the object as it moves.
+Move an [object](CreateObject) to a new position with a set speed. Players/vehicles will 'surf' the object as it moves.
 
 | Name            | Description                                               |
 | --------------- | --------------------------------------------------------- |

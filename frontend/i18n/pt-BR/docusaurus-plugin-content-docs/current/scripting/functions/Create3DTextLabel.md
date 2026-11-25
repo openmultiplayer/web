@@ -63,7 +63,7 @@ drawDistance parece ser muito menor quando especta.
 
 :::tip
 
-Use incorporação de cores para múltiplas cores no texto.
+Use [incorporação de cores](../resources/colorslist#color-embedding) para múltiplas cores no texto.
 
 :::
 

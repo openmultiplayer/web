@@ -51,7 +51,7 @@ else
 
 :::note
 
-Files that are currently open (fopen) must be closed first (fclose) to be deleted.
+Files that are currently open ([fopen](fopen)) must be closed first ([fclose](fclose)) to be deleted.
 
 :::
 

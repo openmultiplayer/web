@@ -43,7 +43,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-Esta função é conhecida por retornar valores não confiáveis quando usada em [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) e OnPlayerRequestClass. Isso ocorre porque o jogador não é gerado.
+Esta função é conhecida por retornar valores não confiáveis quando usada em [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) e [OnPlayerRequestClass](../callbacks/OnPlayerRequestClass). Isso ocorre porque o jogador não é gerado.
 
 :::
 

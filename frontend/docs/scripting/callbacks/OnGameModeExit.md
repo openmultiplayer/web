@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or GameModeExit.
+This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or [GameModeExit](../functions/GameModeExit).
 
 ## Returns
 
@@ -29,7 +29,7 @@ public OnGameModeExit()
 
 :::tip
 
-This function can also be used in a filterscript to detect if the gamemode changes with RCON commands like changemode or gmx, as changing the gamemode does not reload a filterscript.
+This function can also be used in a filterscript to detect if the gamemode changes with [RCON commands](../../server/ControllingServer#rcon-commands) like changemode or gmx, as changing the gamemode does not reload a filterscript.
 
 :::
 

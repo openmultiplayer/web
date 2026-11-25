@@ -9,7 +9,7 @@ tags: []
 
 ## Descrição
 
-Obtém o ID do modelo de um objeto (CreateObject).
+Obtém o ID do modelo de um objeto ([CreateObject](CreateObject)).
 
 | Nome     | Descrição                                     |
 | -------- | --------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 ## توضیحات
 
-یک race checkpoint می‌سازه. وقتی پلیر وارد اون می‌شه، callback OnPlayerEnterRaceCheckpoint فراخوانی می‌شه.
+یک race checkpoint می‌سازه. وقتی پلیر وارد اون می‌شه، callback [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint) فراخوانی می‌شه.
 
 | نام           | توضیحات                                                   |
 | ------------- | --------------------------------------------------------- |

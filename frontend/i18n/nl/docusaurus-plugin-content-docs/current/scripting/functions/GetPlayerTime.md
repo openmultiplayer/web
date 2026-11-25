@@ -17,7 +17,9 @@ Haal de huidige in‑game tijd van de speler op. Wordt gezet met [SetWorldTime](
 
 ## Retourneert
 
-**true** bij succes, **false** als de speler niet bestaat. Tijd wordt in de variabelen opgeslagen.
+**true** bij succes, **false** als de speler niet bestaat.
+
+Tijd wordt in de variabelen opgeslagen.
 
 ## Voorbeeld
 

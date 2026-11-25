@@ -10,13 +10,13 @@ tags: ["player", "object", "playerobject"]
 
 Define a posição de um objeto do jogador nas coordenadas especificadas.
 
-| Nome | Descrição |
-| -------- | ----------------------------------------------------------------------------------- |
-| playerid | O ID do jogador cujo objeto de jogador deseja definir a posição.                    |
-| objectid | O ID do objeto do jogador para definir a posição. Retornado por CreatePlayerObject. |
-| Float:x | A coordenada X na qual colocar o objeto.                                              |
-| Float:y | A coordenada Y na qual colocar o objeto.                                              |
-| Float:z | A coordenada Z na qual colocar o objeto.                                              |
+| Nome     | Descrição                                                                                                 |
+| -------- | --------------------------------------------------------------------------------------------------------- |
+| playerid | O ID do jogador cujo objeto de jogador deseja definir a posição.                                          |
+| objectid | O ID do objeto do jogador para definir a posição. Retornado por [CreatePlayerObject](CreatePlayerObject). |
+| Float:x  | A coordenada X na qual colocar o objeto.                                                                  |
+| Float:y  | A coordenada Y na qual colocar o objeto.                                                                  |
+| Float:z  | A coordenada Z na qual colocar o objeto.                                                                  |
 
 ## Retornos
 

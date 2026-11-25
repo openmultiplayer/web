@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-当结合使用 TogglePlayerSpectating 函数时（如上例所示），此函数不会将玩家状态切换为 PLAYER_STATE_WASTED（濒死状态）。
+当结合使用 [TogglePlayerSpectating](TogglePlayerSpectating) 函数时（如上例所示），此函数不会将玩家状态切换为 PLAYER_STATE_WASTED（濒死状态）。
 
 :::
 

@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- PAWN حساس به حروف کوچک و بزرگ است. GetPlayerIP کار نخواهد کرد.
+- PAWN حساس به حروف کوچک و بزرگ است. GetPlayerI**P** کار نخواهد کرد.
 - **سرور SA-MP**: این تابع در [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) **کار نمی‌کند** چون بازیکن قبلاً قطع شده است. IP نامعتبری (255.255.255.255) برمی‌گرداند.
   IPهای بازیکنان را در [OnPlayerConnect](../callbacks/OnPlayerConnect) ذخیره کنید اگر نیاز است در [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) استفاده شوند.
 - **سرور open.mp**: این تابع در [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) **کار می‌کند**.

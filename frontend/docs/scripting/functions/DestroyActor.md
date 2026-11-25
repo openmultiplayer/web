@@ -9,11 +9,11 @@ tags: ["actor"]
 
 ## Description
 
-Destroy an actor which was created with CreateActor.
+Destroy an actor which was created with [CreateActor](CreateActor).
 
-| Name    | Description                                              |
-| ------- | -------------------------------------------------------- |
-| actorid | The ID of the actor to destroy. Returned by CreateActor. |
+| Name    | Description                                                             |
+| ------- | ----------------------------------------------------------------------- |
+| actorid | The ID of the actor to destroy. Returned by [CreateActor](CreateActor). |
 
 ## Returns
 

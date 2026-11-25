@@ -44,13 +44,14 @@ gangzone = GangZoneCreate(1248.011, 2072.804, 1439.348, 2204.319);
 
 :::note
 
-Esta função apenas CRIA a gangzone, você deve usar GangZoneShowForPlayer ou GangZoneShowForAll para mostrá-la.
+Esta função apenas CRIA a gangzone, você deve usar [GangZoneShowForPlayer](GangZoneShowForPlayer) ou [GangZoneShowForAll](GangZoneShowForAll) para mostrá-la.
 
 :::
 
 :::warning
 
-Existe um limite de 1024 gangzones. Colocar parâmetros na ordem errada resulta em glitches.
+- Existe um limite de 1024 gangzones.
+- Colocar parâmetros na ordem errada resulta em glitches.
 
 :::
 

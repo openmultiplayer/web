@@ -7,7 +7,7 @@ tags: ["player", "3dtextlabel"]
 
 ## Deskripcija
 
-Uništi 3D text label koji je kreiran koristeći CreatePlayer3DTextLabel.
+Uništi 3D text label koji je kreiran koristeći [CreatePlayer3DTextLabel](CreatePlayer3DTextLabel).
 
 | Ime                 | Deskripcija                             |
 | ------------------- | --------------------------------------- |

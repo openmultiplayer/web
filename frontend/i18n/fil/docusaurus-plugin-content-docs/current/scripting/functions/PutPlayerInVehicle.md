@@ -43,7 +43,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 
 :::tip
 
-- Maaari mong gamitin ang GetPlayerVehicleSeat sa isang loop upang tingnan kung ang isang upuan ay inookupahan ng sinumang manlalaro.
+- Maaari mong gamitin ang [GetPlayerVehicleSeat](GetPlayerVehicleSeat) sa isang loop upang tingnan kung ang isang upuan ay inookupahan ng sinumang manlalaro.
 
 :::
 

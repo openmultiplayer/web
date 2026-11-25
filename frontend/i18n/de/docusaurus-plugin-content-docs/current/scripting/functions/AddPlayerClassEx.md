@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Beschreibung
 
-Fügt eine Klasse zur Klassen-Auswahl(class-selection) hinzu. Genau wie "AddPlayerClass" nur mit einem team Parameter.
+Fügt eine Klasse zur Klassen-Auswahl (class-selection) hinzu. Genau wie [AddPlayerClass](AddPlayerClass) nur mit einem team Parameter.
 
 | Name          | Beschreibung                                 |
 | ------------- | -------------------------------------------- |

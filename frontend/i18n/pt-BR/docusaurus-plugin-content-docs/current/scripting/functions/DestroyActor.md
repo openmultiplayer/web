@@ -9,11 +9,11 @@ tags: []
 
 ## Descrição
 
-Destrói um ator que foi criado com CreateActor.
+Destrói um ator que foi criado com [CreateActor](CreateActor).
 
-| Nome    | Descrição                                                |
-| ------- | -------------------------------------------------------- |
-| actorid | O ID do ator a ser destruído. Retornado por CreateActor. |
+| Nome    | Descrição                                                               |
+| ------- | ----------------------------------------------------------------------- |
+| actorid | O ID do ator a ser destruído. Retornado por [CreateActor](CreateActor). |
 
 ## Retorno
 

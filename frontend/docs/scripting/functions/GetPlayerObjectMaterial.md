@@ -11,17 +11,17 @@ tags: ["player", "object", "playerobject"]
 
 Get the material data from an index of the player-object.
 
-| Name               | Description                                                           |
-| ------------------ | --------------------------------------------------------------------- |
-| playerid           | The ID of the player.                                                 |
-| objectid           | The ID of the player-object.                                          |
-| materialIndex      | The material index on the object. (0 to 15)                           |
-| &modelid           | A variable in which to store the model ID, passed by reference.       |
-| textureLibrary[]   | An array into which to store the textureLibrary, passed by reference. |
-| textureLibrarySize | The size of the textureLibrary.                                       |
-| textureName[]      | An array into which to store the textureName, passed by reference.    |
-| textureNameSize    | The size of the textureName.                                          |
-| &materialColour    | A variable in which to store the materialColour, passed by reference. |
+| Name               | Description                                                                                                 |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- |
+| playerid           | The ID of the player.                                                                                       |
+| objectid           | The ID of the player-object.                                                                                |
+| materialIndex      | The material index on the object. (0 to 15)                                                                 |
+| &modelid           | A variable in which to store the model ID, passed by reference.                                             |
+| textureLibrary[]   | An array into which to store the texture library name, passed by reference.                                 |
+| textureLibrarySize | The size of the array for the texture library name.                                                         |
+| textureName[]      | An array into which to store the [texture](https://models.open.mp/?cat=textures) name, passed by reference. |
+| textureNameSize    | The size of the array for the texture name.                                                                 |
+| &materialColour    | A variable in which to store the materialColour, passed by reference.                                       |
 
 ## Returns
 

@@ -36,7 +36,8 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-Bu geri çağırma ChangeVehicleColor tarafından çağrılamaz. Pay 'n' Spray için kullanılamaz, sadece mod mağazaları için kullanılabilir.
+- Bu geri çağırma [ChangeVehicleColor](../functions/ChangeVehicleColor) tarafından çağrılamaz.
+- Pay 'n' Spray için kullanılamaz, sadece mod mağazaları için kullanılabilir.
 
 Buradan düzeltilebilir: https://pastebin.com/G81da7N1
 

@@ -15,13 +15,13 @@ Ova funkcija je dodana u SA-MP 0.3.7 i ne radi u nižim verzijama!
 
 Kreiraj statičnog aktora u svijetu. Ovi aktori su kao NPC-ovi, kakogod imaju ograničene mogućnosti. Ne zauzimaju server slotove.
 
-| Ime      | Deskripcija                                     |
-| -------- | ----------------------------------------------- |
-| modelid  | ID modela (skin ID) kojeg će aktor imati.       |
-| x        | X kordinata na kojoj će se kreirati aktor.      |
-| y        | Y kordinata na kojoj će se kreirati aktor.      |
-| z        | Z kordinata na kojoj će se kreirati aktor.      |
-| Rotation | Smjer gledanja (rotacija) kojeg će imati aktor. |
+| Ime      | Deskripcija                                                     |
+| -------- | --------------------------------------------------------------- |
+| modelid  | ID modela ([skin ID](../resources/skins)) kojeg će aktor imati. |
+| x        | X kordinata na kojoj će se kreirati aktor.                      |
+| y        | Y kordinata na kojoj će se kreirati aktor.                      |
+| z        | Z kordinata na kojoj će se kreirati aktor.                      |
+| Rotation | Smjer gledanja (rotacija) kojeg će imati aktor.                 |
 
 ## Returns
 
@@ -51,14 +51,15 @@ public OnGameModeExit()
 
 :::note
 
-- Aktori su zamišljeni da samo negdje stanu, na primjer blagajnici i barmeni. Oni mogu izvoditi animacije (jednom ili petljom) pomoću ApplyActorAnimation.
-- Od 0.3.7 R2 aktori su zadani da budu neranjivi.
+- Aktori su zamišljeni da samo negdje stanu, na primjer blagajnici i barmeni. Oni mogu izvoditi animacije (jednom ili petljom) pomoću [ApplyActorAnimation](ApplyActorAnimation).
+- Od 0.3.7 R2 aktori su zadani da budu [neranjivi](SetActorInvulnerable).
 
 :::
 
 :::warning
 
-- Aktori su potpuno odvojeni od NPC-a. NE koriste ID-ove igrača / utora na poslužitelju i NE MOGU se s njima postupati kao s NPC-ima. Aktori su ograničeni na 1000 (MAX_ACTORS).
+- Aktori su potpuno odvojeni od NPC-a. NE koriste ID-ove igrača / utora na poslužitelju i NE MOGU se s njima postupati kao s NPC-ima.
+- Aktori su ograničeni na 1000 (MAX_ACTORS).
 - Vozače mogu potiskivati glumce, upotrijebite timer da biste ih vratili na njihova mjesta.
 
 :::

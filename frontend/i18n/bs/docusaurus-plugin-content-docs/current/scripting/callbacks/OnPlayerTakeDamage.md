@@ -15,7 +15,7 @@ Ovaj callback je pozvan kada igrač prvimi povredu (damage).
 | issuerid        | ID igrača koji je uzrokovao povredu. INVALID_PLAYER_ID ako je sam sebe povrijedio. |
 | Float:amount    | Količina povrede (damage-a) koje je igrač primio (health i armor kombinirano).     |
 | WEAPON:weaponid | ID oružja/razlog zbog kojeg je primio povredu (damage).                            |
-| bodypart        | Dio tijela u koji je igrač pogođen.                                                |
+| bodypart        | [Dio tijela](../resources/bodyparts) u koji je igrač pogođen.                      |
 
 ## Returns
 

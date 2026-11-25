@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Stops all the recordings that had been started with StartRecordingPlayerData for a specific player.
+Stops all the recordings that had been started with [StartRecordingPlayerData](StartRecordingPlayerData) for a specific player.
 
 | Name     | Description                                    |
 | -------- | ---------------------------------------------- |

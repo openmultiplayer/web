@@ -14,7 +14,7 @@ Deze callback wordt aangeroepen wanneer een speler schade ontvangt.
 | playerid        | Het ID van de speler die schade ontving.                                           |
 | issuerid        | Het ID van de speler die de schade veroorzaakte. INVALID_PLAYER_ID bij zelfschade. |
 | Float:amount    | De hoeveelheid ontvangen schade (health en armor gecombineerd).                    |
-| WEAPON:weaponid | Het ID van het wapen/de reden voor de schade.                                      |
+| WEAPON:weaponid | Het ID van het [wapen/de reden](../resources/weaponids) voor de schade.            |
 | bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat geraakt werd.                       |
 
 ## Returns

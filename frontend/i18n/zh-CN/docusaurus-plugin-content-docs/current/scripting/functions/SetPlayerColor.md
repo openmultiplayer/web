@@ -9,10 +9,10 @@ tags: ["玩家"]
 
 设置玩家的名牌和地图标记（雷达点）颜色
 
-| 参数名   | 说明                             |
-| -------- | -------------------------------- |
-| playerid | 要设置颜色的玩家 ID              |
-| colour   | 要设置的颜色值（支持透明度通道） |
+| 参数名   | 说明                                                                 |
+| -------- | -------------------------------------------------------------------- |
+| playerid | 要设置颜色的玩家 ID                                                  |
+| colour   | 要设置的颜色值（支持[透明度通道](../resources/colorslist#透明度值)） |
 
 ## 返回值
 
@@ -32,8 +32,8 @@ SetPlayerColor(playerid, 4278190335);
 
 :::note
 
-- 此函数将全局修改玩家颜色，即使其他玩家通过 SetPlayerMarkerForPlayer 设置了不同颜色
-- 在 OnPlayerConnect 回调中使用时，被设置玩家在 TAB 列表中将看不到颜色变化
+- 此函数将全局修改玩家颜色，即使其他玩家通过 [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer) 设置了不同颜色
+- 在 [OnPlayerConnect](../callbacks/OnPlayerConnect) 回调中使用时，被设置玩家在 TAB 列表中将看不到颜色变化
 
 :::
 

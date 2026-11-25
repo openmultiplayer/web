@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripcija
 
-Promjena paintjob-a vozila (za obične boje pogledajte ChangeVehicleColor).
+Promjena paintjob-a vozila (za obične boje pogledajte [ChangeVehicleColor](ChangeVehicleColor)).
 
 | Name       | Description                                                           |
 | ---------- | --------------------------------------------------------------------- |
@@ -20,7 +20,11 @@ This function always returns **1** (success), even if the vehicle passed is not 
 
 :::warning
 
-Ukoliko je boja vozila crna, paintjob može da bude nevidljiv. Bolje je napraviti vozilo sa bijelom bojom prije postavljanja paintjob-a korištenjem ChangeVehicleColor(vehicleid,1,1);
+Ukoliko je boja vozila crna, paintjob može da bude nevidljiv. Bolje je napraviti vozilo sa bijelom bojom prije postavljanja paintjob-a korištenjem:
+
+```c
+ChangeVehicleColor(vehicleid, 1, 1);
+```
 
 :::
 

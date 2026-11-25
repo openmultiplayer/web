@@ -84,7 +84,7 @@ SendClientMessage(playerid, 0xFF8000FF, string);
 
 :::warning
 
-This function doesn't support packed strings.
+This function doesn't support [packed](strpack) strings.
 
 :::
 

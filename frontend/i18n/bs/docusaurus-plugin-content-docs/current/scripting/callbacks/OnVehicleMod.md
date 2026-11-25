@@ -39,7 +39,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-Ovaj callback neće biti pozvan od strane `AddVehicleComponent`.
+Ovaj callback neće biti pozvan od strane [AddVehicleComponent](../functions/AddVehicleComponent).
 
 :::
 

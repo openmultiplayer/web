@@ -9,10 +9,10 @@ tags: ["file management"]
 
 Write text into a file.
 
-| Name           | Description                                             |
-| -------------- | ------------------------------------------------------- |
-| File:handle    | The handle of the file to write to (returned by fopen). |
-| const string[] | The string of text to write in to the file.             |
+| Name           | Description                                                      |
+| -------------- | ---------------------------------------------------------------- |
+| File:handle    | The handle of the file to write to (returned by [fopen](fopen)). |
+| const string[] | The string of text to write in to the file.                      |
 
 ## Returns
 
@@ -106,7 +106,7 @@ else
 
 :::note
 
-This functions writes to the file in UTF-8, which does not support some localized language symbols.
+This functions writes to the file in [UTF-8](https://en.wikipedia.org/wiki/UTF-8), which does not support some localized language symbols.
 
 :::
 

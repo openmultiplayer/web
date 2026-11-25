@@ -9,17 +9,17 @@ tags: ["玩家"]
 
 将物体附加到骨骼上。
 
-| 参数名   | 说明                               |
-| -------- | ---------------------------------- |
-| playerid | 要附加物体的玩家 ID                |
-| modelid  | 使用的物体模型 ID                  |
-| bone     | 目标[骨骼 ID](../resources/boneid) |
-| fOffsetX | (可选) X 轴位置偏移量              |
-| fOffsetY | (可选) Y 轴位置偏移量              |
-| fOffsetZ | (可选) Z 轴位置偏移量              |
-| fRotX    | (可选) X 轴旋转角度                |
-| fRotY    | (可选) Y 轴旋转角度                |
-| fRotZ    | (可选) Z 轴旋转角度                |
+| 参数名   | 说明                                           |
+| -------- | ---------------------------------------------- |
+| playerid | 要附加物体的玩家 ID                            |
+| modelid  | 使用的[物体模型 ID](../resources/samp_objects) |
+| bone     | 目标[骨骼 ID](../resources/boneid)             |
+| fOffsetX | (可选) X 轴位置偏移量                          |
+| fOffsetY | (可选) Y 轴位置偏移量                          |
+| fOffsetZ | (可选) Z 轴位置偏移量                          |
+| fRotX    | (可选) X 轴旋转角度                            |
+| fRotY    | (可选) Y 轴旋转角度                            |
+| fRotZ    | (可选) Z 轴旋转角度                            |
 
 ## 返回值
 

@@ -14,7 +14,7 @@ Anexe um objeto a um osso específico de um jogador.
 | --------------- | --------------------------------------------------------------------------------------------------------------------- |
 | playerid        | O ID do jogador ao qual anexar o objeto.                                                                              |
 | index           | O índice (slot 0-9) ao qual atribuir o objeto.                                                                        |
-| modelid         | O modelo a ser anexado.                                                                                               |
+| modelid         | O [modelo](../resources/samp_objects) a ser anexado.                                                                  |
 | bone            | O [osso](../resources/boneid) ao qual anexar o objeto.                                                                |
 | Float:offsetX   | (opcional) Deslocamento do eixo X para a posição do objeto.                                                           |
 | Float:offsetY   | (opcional) Deslocamento do eixo Y para a posição do objeto.                                                           |

@@ -7,11 +7,11 @@ tags: []
 
 ## Descrição
 
-Destrói (remove) um objeto que foi criado usando CreateObject.
+Destrói (remove) um objeto que foi criado usando [CreateObject](CreateObject).
 
-| Nome     | Descrição                                                   |
-| -------- | ----------------------------------------------------------- |
-| objectid | O ID do objeto a ser destruído. Retornado por CreateObject. |
+| Nome     | Descrição                                                                   |
+| -------- | --------------------------------------------------------------------------- |
+| objectid | O ID do objeto a ser destruído. Retornado por [CreateObject](CreateObject). |
 
 ## Retorno
 

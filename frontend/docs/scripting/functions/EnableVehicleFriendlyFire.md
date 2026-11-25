@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Enable friendly fire for team vehicles. Players will be unable to damage teammates' vehicles (SetPlayerTeam must be used!).
+Enable friendly fire for team vehicles. Players will be unable to damage teammates' vehicles ([SetPlayerTeam](SetPlayerTeam) must be used!).
 
 ## Returns
 

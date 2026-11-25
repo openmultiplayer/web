@@ -50,7 +50,8 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 :::warning
 
-Este callback se llama muy frecuentemente por segundo por cada vehículo. Deberías abstenerte de implementar cálculos intensivos o operaciones de escritura/lectura sobre archivos en este callback. GetVehiclePos las coordenadas antiguas del vehículo antes de esta actualización.
+- Este callback se llama muy frecuentemente por segundo por cada vehículo. Deberías abstenerte de implementar cálculos intensivos o operaciones de escritura/lectura sobre archivos en este callback.
+- GetVehiclePos las coordenadas antiguas del vehículo antes de esta actualización.
 
 :::
 

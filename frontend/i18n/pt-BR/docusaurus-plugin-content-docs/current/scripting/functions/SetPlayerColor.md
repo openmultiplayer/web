@@ -10,10 +10,10 @@ tags: ["player"]
 
 Defina a cor do crachá e do marcador de um jogador (ponto de radar).
 
-| Nome | Descrição |
-| -------- | ---------------------------------------- |
-| playerid | O ID do jogador cuja cor será definida. |
-| colour | A cor a ser definida. Suporta valores alfa. |
+| Nome     | Descrição                                                                                          |
+| -------- | -------------------------------------------------------------------------------------------------- |
+| playerid | O ID do jogador cuja cor será definida.                                                            |
+| colour   | A cor a ser definida. Suporta [valores alfa](../resources/colorslist#valores-alpha-transparência). |
 
 ## Retornos
 
@@ -32,8 +32,8 @@ SetPlayerColor(playerid, 4278190335);
 
 :::note
 
-- Esta função mudará a cor do jogador para todos, mesmo que a cor do jogador tenha sido alterada com SetPlayerMarkerForPlayer para qualquer outro jogador.
-- Se usado em OnPlayerConnect, o jogador afetado não verá a cor no menu TAB.
+- Esta função mudará a cor do jogador para todos, mesmo que a cor do jogador tenha sido alterada com [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer) para qualquer outro jogador.
+- Se usado em [OnPlayerConnect](../callbacks/OnPlayerConnect), o jogador afetado não verá a cor no menu TAB.
 
 :::
 

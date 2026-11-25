@@ -17,7 +17,7 @@ Sets a player to spectate another vehicle. Their camera will be attached to the 
 
 ## Returns
 
-**true** - The function was executed successfully. Note that success is reported if the player is not in spectator mode (TogglePlayerSpectating), but nothing will happen. TogglePlayerSpectating MUST be used first.
+**true** - The function was executed successfully. Note that success is reported if the player is not in spectator mode ([TogglePlayerSpectating](TogglePlayerSpectating)), but nothing will happen. TogglePlayerSpectating MUST be used first.
 
 **false** - The function failed to execute. The player, vehicle, or both don't exist.
 
@@ -32,7 +32,7 @@ PlayerSpectateVehicle(playerid, vehicleid);
 
 :::warning
 
-- Order is CRITICAL! Ensure that you use TogglePlayerSpectating before PlayerSpectateVehicle.
+- Order is CRITICAL! Ensure that you use [TogglePlayerSpectating](TogglePlayerSpectating) before PlayerSpectateVehicle.
 - The playerid and vehicleid have to be in the same interior and virtual world for this function to work properly.
 
 :::

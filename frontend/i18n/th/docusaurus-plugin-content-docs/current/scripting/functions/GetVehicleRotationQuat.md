@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## คำอธิบาย
 
-Returns a vehicle's rotation on all axes as a quaternion.
+Returns a vehicle's rotation on all axes as a [quaternion](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation).
 
 | Name      | Description                                                                          |
 | --------- | ------------------------------------------------------------------------------------ |

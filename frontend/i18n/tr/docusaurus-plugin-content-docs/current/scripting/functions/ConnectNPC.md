@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 :::note
 
-Bağlanan NPC'lerin isim etiketleri bulunmaz. Attach3DTextLabelToPlayer ile yapılabilir.
+Bağlanan NPC'lerin isim etiketleri bulunmaz. [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer) ile yapılabilir.
 
 :::
 

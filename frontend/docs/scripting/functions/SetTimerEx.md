@@ -9,13 +9,13 @@ tags: ["timer"]
 
 Sets a timer to call a function after the specified interval. This variant ('Ex') can pass parameters (such as a player ID) to the function.
 
-| Name                 | Description                                                                                                                                |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| const functionName[] | The name of a public function to call when the timer expires.                                                                              |
-| interval             | Interval in milliseconds (1 second = 1000 MS).                                                                                             |
-| bool:repeating       | Boolean (true/false (or 1/0)) that states whether the timer should be called repeatedly (can only be stopped with KillTimer) or only once. |
-| const specifiers[]   | Special format indicating the types of values the timer will pass.                                                                         |
-| OPEN_MP_TAGS:...     | Indefinite number of arguments to pass (must follow format specified in previous parameter).                                               |
+| Name                 | Description                                                                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| const functionName[] | The name of a public function to call when the timer expires.                                                                                           |
+| interval             | Interval in milliseconds (1 second = 1000 MS).                                                                                                          |
+| bool:repeating       | Boolean (true/false (or 1/0)) that states whether the timer should be called repeatedly (can only be stopped with [KillTimer](KillTimer)) or only once. |
+| const specifiers[]   | Special format indicating the types of values the timer will pass.                                                                                      |
+| OPEN_MP_TAGS:...     | Indefinite number of arguments to pass (must follow format specified in previous parameter).                                                            |
 
 ## Returns
 
@@ -94,7 +94,7 @@ Timer intervals are not accurate (roughly 25% off) in SA-MP. There are fixes ava
 :::tip
 
 - Timer ID variables should be reset to 0 when they can to minimise the chance of accidentally killing new timers by mistake. `-1` is commonly mistaken to be the invalid ID - it isn't.
-- The function to be called must be public. That means it has to be forwarded.
+- The function to be called must be [public](../language/reference/Functions#-public-functions-function-main). That means it has to be [forwarded](../language/reference/Functions#-forward-declarations).
 
 :::
 

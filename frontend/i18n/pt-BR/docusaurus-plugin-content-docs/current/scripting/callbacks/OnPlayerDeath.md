@@ -13,7 +13,7 @@ Esta callback é chamada quando um jogador morre, tanto por suicídio ou por ser
 | ------------- | ------------------------------------------------------------------------------------- |
 | playerid      | O ID do jogador que morreu                                                            |
 | killerid      | O ID do jogador que matou o jogador que morreu, ou INVALID_PLAYER_ID se não houve um. |
-| WEAPON:reason | O ID do motivo da morte do jogador.                                                   |
+| WEAPON:reason | O ID do [motivo da morte](../resources/weaponids) do jogador.                         |
 
 ## Retorno
 
@@ -51,7 +51,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 - O motivo da morte retornará 37 (Lança Chamas) para qualquer fonte que utilize fogo (EX: Molotov).
 - O motivo da morte retornará 51 para qualquer fonte que utilize explosões (EX: RPG, granada).
-- Você não precisa verificar se o `killerid` é valido antes de usa-lo no SendDeathMessage. INVALID_PLAYER_ID é um parâmetro valido nesta função.
+- Você não precisa verificar se o `killerid` é valido antes de usa-lo no [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID é um parâmetro valido nesta função.
 - `playerid` é o único que pode chamar esta callback.
 
 :::

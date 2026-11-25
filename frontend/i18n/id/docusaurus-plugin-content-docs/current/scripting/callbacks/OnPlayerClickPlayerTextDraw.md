@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Deskripsi
 
-Callback ini terpanggil ketika pemain mengklik sebuah player-textdraw. Ini tidak akan terpanggil ketika player membatalkan mode 'select' (ESC) - tetapi pengecualian untuk OnPlayerClickTextDraw.
+Callback ini terpanggil ketika pemain mengklik sebuah player-textdraw. Ini tidak akan terpanggil ketika player membatalkan mode 'select' (ESC) - tetapi pengecualian untuk [OnPlayerClickTextDraw](OnPlayerClickTextDraw).
 
 | Nama         | Deskripsi                                |
 | ------------ | ---------------------------------------- |
@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Ketika player menekan ESC untuk membatalkan pemilihan textdraw, OnPlayerClickTextDraw akan dipanggil dengan ID textraw yang menjadi 'INVALID_TEXT_DRAW'. OnPlayerClickPlayerTextDraw tentu tidak akan terpanggil.
+Ketika player menekan ESC untuk membatalkan pemilihan textdraw, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) akan dipanggil dengan ID textraw yang menjadi 'INVALID_TEXT_DRAW'. OnPlayerClickPlayerTextDraw tentu tidak akan terpanggil.
 
 :::
 

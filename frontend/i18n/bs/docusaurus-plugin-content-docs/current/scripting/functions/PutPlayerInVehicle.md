@@ -43,7 +43,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 
 :::tip
 
-Možete koristiti GetPlayerVehicleSeat u petlji kako biste provjerili da li neko mjesto zauzima bilo koji igrač.
+Možete koristiti [GetPlayerVehicleSeat](GetPlayerVehicleSeat) u petlji kako biste provjerili da li neko mjesto zauzima bilo koji igrač.
 
 :::
 

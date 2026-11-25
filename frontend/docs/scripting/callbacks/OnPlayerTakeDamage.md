@@ -14,7 +14,7 @@ This callback is called when a player takes damage.
 | playerid        | The ID of the player that took damage.                                            |
 | issuerid        | The ID of the player that caused the damage. INVALID_PLAYER_ID if self-inflicted. |
 | Float:amount    | The amount of damage the player took (health and armour combined).                |
-| WEAPON:weaponid | The ID of the weapon/reason for the damage.                                       |
+| WEAPON:weaponid | The ID of the [weapon/reason](../resources/weaponids) for the damage.             |
 | bodypart        | The [body part](../resources/bodyparts) that was hit.                             |
 
 ## Returns

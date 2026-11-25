@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Obtenha o estado atual de um jogador.
+Obtenha o [estado](../resources/playerstates) atual de um jogador.
 
 | Nome     | Descrição                                     |
 | -------- | --------------------------------------------- |

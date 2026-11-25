@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Set a vehicle's health. When a vehicle's health decreases the engine will produce smoke, and finally fire when it decreases to less than 250 (25%).
 
-| Name         | Description                                 |
-| ------------ | ------------------------------------------- |
-| vehicleid    | The ID of the vehicle to set the health of. |
-| Float:health | The health, given as a float value.         |
+| Name         | Description                                                       |
+| ------------ | ----------------------------------------------------------------- |
+| vehicleid    | The ID of the vehicle to set the health of.                       |
+| Float:health | The [health](../resources/vehiclehealth), given as a float value. |
 
 ## Returns
 

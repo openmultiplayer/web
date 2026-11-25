@@ -13,7 +13,7 @@ Bu geri çağırma **sadece** araç **re**spawn edildiğinde çağrılır! Creat
 
 ## Açıklama
 
-Bu geri çağırma bir araç respawn edildiğinde çağrılır.
+Bu geri çağırma bir araç **re**spawn edildiğinde çağrılır.
 
 | Parametre | Açıklama                 |
 | --------- | ------------------------ |

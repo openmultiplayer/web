@@ -40,7 +40,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-این کالبک توسط AddVehicleComponent فراخوانده نمی‌شود.
+این کالبک توسط [AddVehicleComponent](../functions/AddVehicleComponent) فراخوانده نمی‌شود.
 
 :::
 

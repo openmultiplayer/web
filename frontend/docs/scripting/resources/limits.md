@@ -40,24 +40,24 @@ tags: []
 | Gamemodes                                                 | 16                    | Unlimited             |
 | Filterscripts                                             | 16                    | Unlimited             |
 | Text Input (Chat/Commands)                                | 128 cells (512 bytes) | 128 cells (512 bytes) |
-| Text Output                                               | 144 cells (576 bytes) | 144 cells (576 bytes) |
+| [Text Output](../functions/SendClientMessage)             | 144 cells (576 bytes) | 144 cells (576 bytes) |
 | Name Length ([SetPlayerName](../functions/SetPlayerName)) | 24 characters         | 24 characters         |
 
 ## Textdraws
 
-| Type                                            | Limit (0.3.7)   |
-| ----------------------------------------------- | --------------- |
-| String Length<sup>(2)</sup>                     | 1024 characters |
-| Shown In A Single Client's Screen<sup>(3)</sup> | 2048 + 256      |
-| Shown In A Single Client's Screen (sprites)     | 100             |
-| Created Serverwise (Global)                     | 2048            |
-| Created Serverwise (Per-Player)                 | 256             |
+| Type                                                                 | Limit (0.3.7)   |
+| -------------------------------------------------------------------- | --------------- |
+| String Length<sup>(2)</sup>                                          | 1024 characters |
+| Shown In A Single Client's Screen<sup>(3)</sup>                      | 2048 + 256      |
+| Shown In A Single Client's Screen (sprites)                          | 100             |
+| Created Serverwise ([Global](../functions/TextDrawCreate))           | 2048            |
+| Created Serverwise ([Per-Player](../functions/CreatePlayerTextDraw)) | 256             |
 
 ## Dialogs
 
 | Type                                                         | Limit (0.3.7) |
 | ------------------------------------------------------------ | ------------- |
-| Dialog IDs                                                   | 32768         |
+| [Dialog IDs](../functions/ShowPlayerDialog)                  | 32768         |
 | Info (Main text)                                             | 4096          |
 | Caption                                                      | 64            |
 | Input Text Box (DIALOG_STYLE_INPUT/PASSWORD)                 | 128           |
@@ -68,7 +68,7 @@ tags: []
 **Notes:**
 
 1. Although the vehicle model limit in 0.3 is unlimited, if you use a large amount of vehicle models then it will affect client performance.
-2. Although the textdraw string limit is 1024 characters, if colour codes (e.g. `~r~`) are used beyond the 255th character it may crash the client.
+2. Although the textdraw string limit is 1024 characters, if [colour codes](gametextstyles#text-colors) (e.g. `~r~`) are used beyond the 255th character it may crash the client.
 3. It is possible to show all Textdraws at the same time for one player, however this is not recommended.
 4. To circumvent these limits, it is possible to use a [streamer](https://github.com/samp-incognito/samp-streamer-plugin). Streamers work by only creating the entities etc. that are close to players.
 5. Due to client limitations only up to 51 actors may actually be shown at a time.

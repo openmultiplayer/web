@@ -49,7 +49,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::warning
 
-使用无效的组件 ID 会导致玩家游戏崩溃（该问题已在 open.mp 中修复）
+使用无效的[组件 ID](../resources/carcomponentid) 会导致玩家游戏崩溃（该问题已在 open.mp 中修复）
 
 :::
 

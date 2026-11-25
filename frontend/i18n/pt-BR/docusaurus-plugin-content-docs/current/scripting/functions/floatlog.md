@@ -8,7 +8,7 @@ tags: ["math", "floating-point"]
 
 ## Descrição
 
-Esta função permite obter o logaritmo de um valor flutuante.
+Esta função permite obter o [logaritmo](https://en.wikipedia.org/wiki/Logarithm) de um valor flutuante.
 
 | Nome        | Descrição                          |
 | ----------- | ---------------------------------- |

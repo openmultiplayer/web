@@ -19,7 +19,7 @@ Executada quando um jogador pré-visualiza um paintjob na garagem (modshop). Cui
 | ---------- | ----------------------------------------------------- |
 | playerid   | ID do jogador que está mudando o paintjob do veículo. |
 | vehicleid  | ID do veículo que está mudando o paintjob.            |
-| paintjobid | ID do novo paintjob.                                  |
+| paintjobid | ID do novo [paintjob](../resources/paintjobs).        |
 
 ## Retornos
 
@@ -41,7 +41,8 @@ public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 
 :::note
 
-Essa callback não é executada pela função ChangeVehiclePaintjob. Você deve utilizar o OnVehicleChangePaintjob juntamente com o vSync para saber exatamente quando o player **fez a compra**.
+- Essa callback não é executada pela função [ChangeVehiclePaintjob](../functions/ChangeVehiclePaintjob).
+- Você deve utilizar o OnVehicleChangePaintjob juntamente com o [vSync](https://github.com/Vasily-X/vSync) para saber exatamente quando o player **fez a compra**.
 
 :::
 

@@ -9,19 +9,19 @@ tags: ["玩家", "职业"]
 
 添加一个职业到职业选择系统。职业系统允许玩家使用自选皮肤进行重生。
 
-| 参数           | 说明                                          |
-| -------------- | --------------------------------------------- |
-| skin           | 玩家重生时使用的[皮肤 ID](../resources/skins) |
-| Float:spawnX   | 该职业重生点的 X 坐标                         |
-| Float:spawnY   | 该职业重生点的 Y 坐标                         |
-| Float:spawnZ   | 该职业重生点的 Z 坐标                         |
-| Float:angle    | 玩家重生后的初始朝向角度                      |
-| WEAPON:weapon1 | 玩家初始携带的第一把武器                      |
-| ammo1          | 主武器的弹药数量                              |
-| WEAPON:weapon2 | 玩家初始携带的第二把武器                      |
-| ammo2          | 副武器的弹药数量                              |
-| WEAPON:weapon3 | 玩家初始携带的第三把武器                      |
-| ammo3          | 特殊武器的弹药数量                            |
+| 参数           | 说明                                               |
+| -------------- | -------------------------------------------------- |
+| skin           | 玩家重生时使用的[皮肤 ID](../resources/skins)      |
+| Float:spawnX   | 该职业重生点的 X 坐标                              |
+| Float:spawnY   | 该职业重生点的 Y 坐标                              |
+| Float:spawnZ   | 该职业重生点的 Z 坐标                              |
+| Float:angle    | 玩家重生后的初始朝向角度                           |
+| WEAPON:weapon1 | 玩家初始携带的第一把[武器](../resources/weaponids) |
+| ammo1          | 主武器的弹药数量                                   |
+| WEAPON:weapon2 | 玩家初始携带的第二把[武器](../resources/weaponids) |
+| ammo2          | 副武器的弹药数量                                   |
+| WEAPON:weapon3 | 玩家初始携带的第三把[武器](../resources/weaponids) |
+| ammo3          | 特殊武器的弹药数量                                 |
 
 ## 返回值
 

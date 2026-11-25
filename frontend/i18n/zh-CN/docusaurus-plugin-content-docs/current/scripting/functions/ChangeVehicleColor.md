@@ -9,11 +9,11 @@ tags: ["车辆"]
 
 修改指定车辆的主色和副色
 
-| 参数      | 说明          |
-| --------- | ------------- |
-| vehicleid | 目标车辆 ID   |
-| color1    | 新的主颜色 ID |
-| color2    | 新的副颜色 ID |
+| 参数      | 说明                                         |
+| --------- | -------------------------------------------- |
+| vehicleid | 目标车辆 ID                                  |
+| color1    | 新的主[颜色 ID](../resources/vehiclecolorid) |
+| color2    | 新的副[颜色 ID](../resources/vehiclecolorid) |
 
 ## 返回值
 

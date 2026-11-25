@@ -18,7 +18,7 @@ Dodaje novog prilagođenog karaktera za preuzimanje. Fajlovi modela će biti poh
 | Ime     | Deskripcija                                                                                                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | Osnovni [skin model ID](../resources/skins) za korištenje (ponašanje karaktera i originalnog karaktera za upotrebu kada preuzimanje nije uspjelo). |
-| newid   | Novi skin model ID između 20001 i 30000 (10000 slotova) da bi se kasnije koristio sa SetPlayerSkin.                                                |
+| newid   | Novi skin model ID između 20001 i 30000 (10000 slotova) da bi se kasnije koristio sa [SetPlayerSkin](SetPlayerSkin).                               |
 | dffname | Ime **.dff** collision modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka).                           |
 | txdname | Ime **.txd** texture modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka).                             |
 
@@ -49,7 +49,7 @@ public OnGameModeInit()
 
 :::warning
 
-Trenutno ne postoje nikakva ograničenja o pozivanju ove funkcije, ali budite oprezni jer ako ih ne koristite unutar OnFilterScriptInit/OnGameModeInit, riskirate da neki igrači, koji su već na server, možda ne preuzmu modele.
+Trenutno ne postoje nikakva ograničenja o pozivanju ove funkcije, ali budite oprezni jer ako ih ne koristite unutar [OnFilterScriptInit](../callbacks/OnFilterScriptInit)/[OnGameModeInit](../callbacks/OnGameModeInit), riskirate da neki igrači, koji su već na server, možda ne preuzmu modele.
 
 :::
 

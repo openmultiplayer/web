@@ -7,7 +7,7 @@ tags: ["object"]
 
 ## Descrição
 
-Mova um objeto para uma nova posição com uma velocidade definida. Jogadores/veículos irão ‘surfar’ no objeto enquanto ele se move.
+Mova um [objeto](CreateObject) para uma nova posição com uma velocidade definida. Jogadores/veículos irão ‘surfar’ no objeto enquanto ele se move.
 
 | Nome            | Descrição                                                   |
 | --------------- | ----------------------------------------------------------- |

@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Recupera a ação especial atual de um jogador.
+Recupera a [ação especial](../resources/specialactions) atual de um jogador.
 
 | Nome     | Descrição                                   |
 | -------- | ------------------------------------------- |

@@ -11,7 +11,7 @@ Reads a single character from a file.
 
 | Name        | Description                                                                          |
 | ----------- | ------------------------------------------------------------------------------------ |
-| File:handle | The file handle to use; returned by fopen.                                           |
+| File:handle | The file handle to use; returned by [fopen](fopen).                                  |
 | value       | This parameter has no use, just keep it "0".                                         |
 | bool:utf8   | If `true`, read a character as UTF-8, otherwise as extended ASCII. (default: `true`) |
 

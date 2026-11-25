@@ -12,7 +12,7 @@ Remove um modelo de San Andreas para um único jogador em um raio específico.
 | Nome          | Descrição                                                                             |
 | ------------- | ------------------------------------------------------------------------------------- |
 | playerid      | O ID do jogador para o qual remover os objetos.                                       |
-| modelid       | O modelo a ser removido.                                                              |
+| modelid       | O [modelo](https://models.open.mp/?cat=objects) a ser removido.                       |
 | Float:fX      | A coordenada X em torno da qual os objetos serão removidos.                           |
 | Float:fY      | A coordenada Y em torno da qual os objetos serão removidos.                           |
 | Float:fZ      | A coordenada Z em torno da qual os objetos serão removidos.                           |
@@ -53,7 +53,8 @@ No SA-MP 0.3.7 você pode usar -1 no modelid para remover todos os objetos dentr
 
 :::warning
 
-Há um limite de cerca de 1000 linhas/objetos. Não há solução alternativa. Ao remover o mesmo objeto para um jogador, eles travarão. Comummente, os jogadores travam ao se reconectar ao servidor porque o servidor remove o objeto no OnPlayerConnect.
+- Há um limite de cerca de 1000 linhas/objetos. Não há solução alternativa.
+- Ao remover o mesmo objeto para um jogador, eles travarão. Comummente, os jogadores travam ao se reconectar ao servidor porque o servidor remove o objeto no OnPlayerConnect.
 
 :::
 

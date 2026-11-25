@@ -16,10 +16,10 @@ For example, the tires status stores 4 bits for the 4 tires. The value is 1 if t
 
 :::note
 
-For more info on panel states, see [Panel States](panelstates).  
-For more info on door states, see [Door States](doorstates).  
-For more info on light states, see [Light States](lightstates).  
-For more info on tire states, see [Tire States](tirestates).
+- For more info on panel states, see [Panel States](panelstates).
+- For more info on door states, see [Door States](doorstates).
+- For more info on light states, see [Light States](lightstates).
+- For more info on tire states, see [Tire States](tirestates).
 
 :::
 

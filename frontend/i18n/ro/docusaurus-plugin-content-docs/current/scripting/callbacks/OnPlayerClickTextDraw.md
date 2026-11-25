@@ -64,7 +64,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Zona pe care se poate face clic este definită de TextDrawTextSize. Parametrii x și y trecuți acelei funcție nu trebuie să fie zero sau negativi. Nu utilizați CancelSelectTextDraw necondiționat în acest callback. Aceasta are ca rezultat o buclă infinită.
+- Zona pe care se poate face clic este definită de TextDrawTextSize. Parametrii x și y trecuți acelei funcție nu trebuie să fie zero sau negativi.
+- Nu utilizați CancelSelectTextDraw necondiționat în acest callback. Aceasta are ca rezultat o buclă infinită.
 
 :::
 

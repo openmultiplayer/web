@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Uništava prethodno kreirani textdraw.
 
-| Ime  | Deskripcija                                                    |
-| ---- | -------------------------------------------------------------- |
-| text | ID textdrawa za uništiti. Returnovan/vraćen od TextDrawCreate. |
+| Ime  | Deskripcija                                                                      |
+| ---- | -------------------------------------------------------------------------------- |
+| text | ID textdrawa za uništiti. Returnovan/vraćen od [TextDrawCreate](TextDrawCreate). |
 
 ## Returns
 

@@ -9,7 +9,7 @@ tags: []
 
 ## Deskripcija
 
-Dobij ID modela određenog objekta (CreateObject).
+Dobij ID modela određenog objekta ([CreateObject](CreateObject)).
 
 | Ime      | Deskripcija                    |
 | -------- | ------------------------------ |

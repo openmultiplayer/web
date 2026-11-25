@@ -7,7 +7,7 @@ tags: ["math"]
 
 ## คำอธิบาย
 
-Get the inversed value of a tangent in degrees. In trigonometrics, arc tangent is the inverse operation of tangent. Notice that because of the sign ambiguity, the function cannot determine with certainty in which quadrant the angle falls only by its tangent value. See [atan2](atan2) for an alternative that takes a fractional argument instead.
+Get the inversed value of a [tangent](https://en.wikipedia.org/wiki/Trigonometric_functions) in degrees. In trigonometrics, arc tangent is the inverse operation of tangent. Notice that because of the sign ambiguity, the function cannot determine with certainty in which quadrant the angle falls only by its tangent value. See [atan2](atan2) for an alternative that takes a fractional argument instead.
 
 | Name        | Description                          |
 | ----------- | ------------------------------------ |

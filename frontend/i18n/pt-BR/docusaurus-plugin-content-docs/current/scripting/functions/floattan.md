@@ -8,7 +8,7 @@ tags: ["math", "floating-point"]
 
 ## Descrição
 
-Obtenha a tangente de um determinado ângulo. O ângulo de entrada pode estar em radianos, graus ou graus.
+Obtenha a [tangente](https://en.wikipedia.org/wiki/Trigonometric_functions) de um determinado ângulo. O ângulo de entrada pode estar em radianos, graus ou graus.
 
 | Nome | Descrição |
 | ----------- | --------------------------------------------------------------------------------------------------- |
@@ -33,7 +33,8 @@ public OnGameModeInit()
 
 :::warning
 
-GTA/SA-MP usam **graus** para ângulos na maioria das circunstâncias, por exemplo [GetPlayerFacingAngle](GetPlayerFacingAngle). Portanto, é mais provável que você queira usar o modo de ângulo '**degrees**', _não_ radianos. Observe também que os ângulos em GTA são no sentido anti-horário; 270° é Leste e 90° é Oeste. O Sul ainda é 180° e o Norte ainda é 0°/360°.
+- GTA/SA-MP usam **graus** para ângulos na maioria das circunstâncias, por exemplo [GetPlayerFacingAngle](GetPlayerFacingAngle). Portanto, é mais provável que você queira usar o modo de ângulo '**degrees**', _não_ radianos.
+- Observe também que os ângulos em GTA são no sentido anti-horário; 270° é Leste e 90° é Oeste. O Sul ainda é 180° e o Norte ainda é 0°/360°.
 
 :::
 

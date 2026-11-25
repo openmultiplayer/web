@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Ni-rereturn ng function na ito ang score ng isang player gaya ng pagkakatakda nito gamit ang SetPlayerScore.
+Ni-rereturn ng function na ito ang score ng isang player gaya ng pagkakatakda nito gamit ang [SetPlayerScore](SetPlayerScore).
 
 | Name     | Description                     |
 | -------- | ------------------------------- |

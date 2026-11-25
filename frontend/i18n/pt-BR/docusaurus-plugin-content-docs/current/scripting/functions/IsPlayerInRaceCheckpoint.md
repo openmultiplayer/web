@@ -8,7 +8,7 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 ## Descrição
 
-Verifique se o jogador está dentro do ponto de verificação de corrida atual (SetPlayerRaceCheckpoint).
+Verifique se o jogador está dentro do ponto de verificação de corrida atual ([SetPlayerRaceCheckpoint](SetPlayerRaceCheckpoint)).
 
 | Nome | Descrição |
 | -------- | ------------------------------ |

@@ -11,7 +11,7 @@ Membuat Object pada koordinat tertentu di dalam game.
 
 | Name               | Description                                                                                                   |
 | ------------------ | ------------------------------------------------------------------------------------------------------------- |
-| modelid            | Model Object yang ingin di buat.                                                                              |
+| modelid            | [Model Object](https://models.open.mp/?cat=objects) yang ingin di buat.                                       |
 | Float:X            | Cordinat X untuk membuat suatu Object.                                                                        |
 | Float:Y            | Cordinat Y untuk membuat suatu Object.                                                                        |
 | Float:Z            | Cordinat Z untuk membuat suatu Object.                                                                        |
@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::note
 
-Ada batas 1000 Object (MAX_OBJECTS). Untuk menghindari batasan ini, Anda dapat menggunakan streamer.
+Ada batas 1000 Object ([MAX_OBJECTS](../resources/limits)). Untuk menghindari batasan ini, Anda dapat menggunakan [streamer](https://github.com/samp-incognito/samp-streamer-plugin).
 
 :::
 

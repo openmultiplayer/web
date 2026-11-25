@@ -9,13 +9,13 @@ tags: ["玩家"]
 
 当玩家对另一名玩家造成伤害时触发此回调函数。
 
-| 参数            | 说明                                       |
-| --------------- | ------------------------------------------ |
-| playerid        | 造成伤害的玩家ID                           |
-| damagedid       | 受到伤害的玩家ID                           |
-| Float:amount    | 损失的生命值/护甲值总和（单位：浮点数）    |
-| WEAPON:weaponid | 造成伤害的武器类型                         |
-| bodypart        | 被击中的[身体部位](../resources/bodyparts) |
+| 参数            | 说明                                         |
+| --------------- | -------------------------------------------- |
+| playerid        | 造成伤害的玩家ID                             |
+| damagedid       | 受到伤害的玩家ID                             |
+| Float:amount    | 损失的生命值/护甲值总和（单位：浮点数）      |
+| WEAPON:weaponid | 造成伤害的[武器类型](../resources/weaponids) |
+| bodypart        | 被击中的[身体部位](../resources/bodyparts)   |
 
 ## 返回值
 

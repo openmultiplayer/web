@@ -7,7 +7,7 @@ tags: ["math", "floating-point"]
 
 ## Description
 
-Ibinabalik ng function na ito ang absolute value ng float.
+Ibinabalik ng function na ito ang [absolute value](https://en.wikipedia.org/wiki/Absolute_value) ng float.
 
 | Name        | Description                                        |
 | ----------- | -------------------------------------------------- |

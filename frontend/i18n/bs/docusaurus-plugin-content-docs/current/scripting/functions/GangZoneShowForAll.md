@@ -11,7 +11,7 @@ Prikazuje gangzonu sa željenom bojom svim igračima.
 
 | Ime   | Deskripcija                                                                                                  |
 | ----- | ------------------------------------------------------------------------------------------------------------ |
-| zone  | ID gangzone za prikazati (returnovana/vraćena od GangZoneCreate).                                            |
+| zone  | ID gangzone za prikazati (returnovana/vraćena od [GangZoneCreate](GangZoneCreate)).                          |
 | color | Boja za bljeskanje gangzone, kao cijeli broj ili hex u **RGBA** formatu boja. Podržana alfa transparentnost. |
 
 ## Returns

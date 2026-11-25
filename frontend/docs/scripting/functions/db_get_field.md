@@ -13,7 +13,7 @@ This function is deprecated. Please see [DB_GetFieldString](DB_GetFieldString).
 
 ## Description
 
-Get the content of a field from db_query
+Get the content of a field from [db_query](db_query).
 
 | Name              | Description                      |
 | ----------------- | -------------------------------- |

@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 :::note
 
-NPC-evi nemaju nametagove. Ovo može biti iskriptano sa Attach3DTextLabelToPlayer.
+NPC-evi nemaju nametagove. Ovo može biti iskriptano sa [Attach3DTextLabelToPlayer](Attach3DTextLabelToPlayer).
 
 :::
 

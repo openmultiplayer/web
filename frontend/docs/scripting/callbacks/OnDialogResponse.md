@@ -7,15 +7,15 @@ tags: ["dialog"]
 
 ## Description
 
-This callback is called when a player responds to a dialog shown using ShowPlayerDialog. The response can be by clicking a button, pressing ENTER/ESC, or double-clicking a list item (in the case of a list-style dialog).
+This callback is called when a player responds to a dialog shown using [ShowPlayerDialog](../functions/ShowPlayerDialog). The response can be by clicking a button, pressing ENTER/ESC, or double-clicking a list item (in the case of a list-style dialog).
 
-| Name        | Description                                                                                                   |
-| ----------- | ------------------------------------------------------------------------------------------------------------- |
-| playerid    | The ID of the player who responded to the dialog.                                                             |
-| dialogid    | The ID of the dialog the player responded to, as assigned in ShowPlayerDialog.                                |
-| response    | **1** for the left button, and **0** for the right button (if only one button is shown, it will always be 1). |
-| listitem    | The ID of the list item selected by the player (starts at 0). For non-list dialogs, it will be -1.            |
-| inputtext[] | The text entered in the input box by the player, or the selected list item text.                              |
+| Name        | Description                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------------- |
+| playerid    | The ID of the player who responded to the dialog.                                                               |
+| dialogid    | The ID of the dialog the player responded to, as assigned in [ShowPlayerDialog](../functions/ShowPlayerDialog). |
+| response    | **1** for the left button, and **0** for the right button (if only one button is shown, it will always be 1).   |
+| listitem    | The ID of the list item selected by the player (starts at 0). For non-list dialogs, it will be -1.              |
+| inputtext[] | The text entered in the input box by the player, or the selected list item text.                                |
 
 ## Returns
 
@@ -179,7 +179,7 @@ The parameters can have different values depending on the dialog's style. ([Clic
 
 :::tip
 
-Using a switch-case statement instead of if blocks is an appropriate method for handling multiple dialogs.
+Using a [switch-case statement](../language/Statements#switch) instead of if blocks is an appropriate method for handling multiple dialogs.
 
 :::
 

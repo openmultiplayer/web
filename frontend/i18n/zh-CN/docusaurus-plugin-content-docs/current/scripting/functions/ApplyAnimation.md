@@ -13,7 +13,7 @@ tags: ["玩家", "动画"]
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | playerid                 | 需要应用动画的玩家 ID                                                                                               |
 | const animationLibrary[] | [动画资源库](../resources/animations)名称                                                                           |
-| const animationName[]    | 动画名称（需在指定资源库中存在）                                                                                    |
+| const animationName[]    | [动画](../resources/animations)名称（需在指定资源库中存在）                                                         |
 | Float:delta              | 动画播放速度（建议使用 4.1）                                                                                        |
 | bool:loop                | 是否循环播放：**true**循环播放，**false**单次播放                                                                   |
 | bool:lockX               | X 轴位置锁定：**false**在动画结束后恢复原始 X 坐标（适用于移动类动画），**true**保持动画结束时的位置                |

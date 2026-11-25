@@ -10,11 +10,11 @@ tags: ["file management"]
 
 Grave dados em um arquivo em formato binário, ignorando freios de linha e codificação.
 
-| Nome                   | Descrição                                                 |
-| ---------------------- | --------------------------------------------------------- |
-| File:handle            | O identificador de arquivo a ser usado, aberto por fopen. |
-| const buffer[]         | Os dados a serem gravados no arquivo.                     |
-| size = sizeof (buffer) | O número de células a serem gravadas.                     |
+| Nome                   | Descrição                                                          |
+| ---------------------- | ------------------------------------------------------------------ |
+| File:handle            | O identificador de arquivo a ser usado, aberto por [fopen](fopen). |
+| const buffer[]         | Os dados a serem gravados no arquivo.                              |
+| size = sizeof (buffer) | O número de células a serem gravadas.                              |
 
 ## Retornos
 

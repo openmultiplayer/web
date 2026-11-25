@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Stop a moving player-object after MovePlayerObject has been used.
+Stop a moving player-object after [MovePlayerObject](MovePlayerObject) has been used.
 
 | Name     | Description                                       |
 | -------- | ------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Uključite sat u igri (gornji desni kut) za određenog igrača. Kada je ovo omogućeno, vrijeme će napredovati 1 minutu u sekundi. Vrijeme će se također interpolirati (polako mijenjati tokom vremena) kada se postavi pomoću SetWeather / SetPlayerWeather.
+Uključite sat u igri (gornji desni kut) za određenog igrača. Kada je ovo omogućeno, vrijeme će napredovati 1 minutu u sekundi. Vrijeme će se također interpolirati (polako mijenjati tokom vremena) kada se postavi pomoću [SetWeather](SetWeather) / [SetPlayerWeather](SetPlayerWeather).
 
 | Ime      | Deskripcija                                                                 |
 | -------- | --------------------------------------------------------------------------- |

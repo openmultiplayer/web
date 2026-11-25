@@ -9,9 +9,9 @@ tags: ["gangzone"]
 
 Pare uma Gangzone de piscar para todos os jogadores.
 
-| Nome | Descrição                                                                |
-| ---- | ------------------------------------------------------------------------ |
-| zone | O ID da gangzone que quer parar de piscar. Retornado por GangZoneCreate. |
+| Nome | Descrição                                                                                  |
+| ---- | ------------------------------------------------------------------------------------------ |
+| zone | O ID da gangzone que quer parar de piscar. Retornado por [GangZoneCreate](GangZoneCreate). |
 
 ## Retorno
 

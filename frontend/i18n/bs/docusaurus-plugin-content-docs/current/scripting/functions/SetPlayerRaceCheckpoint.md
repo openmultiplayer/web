@@ -7,7 +7,7 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 ## Deskripcija
 
-Kreira race (trkački) checkpoint. Kada igrač uđe u njega, callback OnPlayerEnterRaceCheckpoint se poziva.
+Kreira race (trkački) checkpoint. Kada igrač uđe u njega, callback [OnPlayerEnterRaceCheckpoint](../callbacks/OnPlayerEnterRaceCheckpoint) se poziva.
 
 | Ime         | Deskripcija                                                                                                                                                                                                                                                                            |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

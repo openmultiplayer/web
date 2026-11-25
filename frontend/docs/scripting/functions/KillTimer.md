@@ -9,9 +9,9 @@ tags: ["timer"]
 
 Kills (stops) a running timer.
 
-| Name    | Description                                                       |
-| ------- | ----------------------------------------------------------------- |
-| timerid | The ID of the timer to kill (returned by SetTimer or SetTimerEx). |
+| Name    | Description                                                                                 |
+| ------- | ------------------------------------------------------------------------------------------- |
+| timerid | The ID of the timer to kill (returned by [SetTimer](SetTimer) or [SetTimerEx](SetTimerEx)). |
 
 ## Returns
 

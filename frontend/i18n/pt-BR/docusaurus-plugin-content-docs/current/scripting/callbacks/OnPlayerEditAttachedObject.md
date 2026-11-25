@@ -85,7 +85,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 :::warning
 
-Edições devem ser discartadas se a resposta for '0' (cancelado). Isso deve ser feito armazenando os valores em uma arrat ANTES de usar EditAttachedObject.
+Edições devem ser discartadas se a resposta for '0' (cancelado). Isso deve ser feito armazenando os valores em uma arrat ANTES de usar [EditAttachedObject](../functions/EditAttachedObject).
 
 :::
 

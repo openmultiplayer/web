@@ -7,15 +7,13 @@ tags: ["player"]
 
 ## Paramètres
 
-Cette callback est appelée lorsqu'un joueur change d'état _(à pied, dans un véhicule, en mode spectateur, etc...)_.
+Cette callback est appelée lorsqu'un joueur change d'[état](../resources/playerstates) _(à pied, dans un véhicule, en mode spectateur, etc...)_.
 
 | Nom            | Description                        |
 | -------------- | ---------------------------------- |
 | `int` playerid | L'ID du joueur qui a changé d'état |
 | `int` newstate | Le nouvel état du joueur           |
 | `int` oldstate | L'ancien état du joueur.           |
-
-Voir ["Player States"](../resources/playerstates) pour une liste complète de tous les états d'un joueur.
 
 ## Valeur de retour
 

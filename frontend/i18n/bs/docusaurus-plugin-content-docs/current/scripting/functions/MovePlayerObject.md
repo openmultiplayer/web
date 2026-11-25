@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Premjestite player objekat na novi položaj zadanom brzinom. Također podržava rotaciju. Also supports rotation. Igrači/vozila će 'surfati' objektom dok se kreće.
+Premjestite [player objekat](CreatePlayerObject) na novi položaj zadanom brzinom. Također podržava rotaciju. Also supports rotation. Igrači/vozila će 'surfati' objektom dok se kreće.
 
 | Ime         | Deskripcija                                            |
 | ----------- | ------------------------------------------------------ |
@@ -35,7 +35,8 @@ MovePlayerObject(playerid, objectid, 2001.195679, 1547.113892, 10);
 
 :::note
 
-Ako koristite parametre rotacije, objekt se mora premjestiti (X / Y / Z). Objekt će interpolirati rotaciju od trenutka kada se objekti počnu kretati i kada se zaustavi. Dolje navedeni parametri su za 0.3d R2 i starije verzije i trebali bi se zanemariti ako pokrenete najnoviju verziju SA-MP.
+- Ako koristite parametre rotacije, objekt se mora premjestiti (X / Y / Z). Objekt će interpolirati rotaciju od trenutka kada se objekti počnu kretati i kada se zaustavi.
+- Dolje navedeni parametri su za 0.3d R2 i starije verzije i trebali bi se zanemariti ako pokrenete najnoviju verziju SA-MP.
 
 :::
 

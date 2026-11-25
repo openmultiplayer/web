@@ -46,9 +46,8 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::warning
 
-**Server SA:MP**: Questo callback viene chiamato solo se è presente in un filterscript.
-
-**Server open.mp**: Questo callback funziona normalmente sia all'interno di un gamemode che di un filterscript.
+- **Server SA-MP**: Questo callback viene chiamato solo se è presente in un filterscript.
+- **Server open.mp**: Questo callback funziona normalmente sia all'interno di un gamemode che di un filterscript.
 
 :::
 

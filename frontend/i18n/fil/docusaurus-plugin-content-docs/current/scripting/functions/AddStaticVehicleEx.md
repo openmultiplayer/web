@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Nagdaragdag ng 'static' na sasakyan (mga modelo ay paunang na-load para sa mga manlalaro) sa gamemode. Naiiba sa AddStaticVehicle sa isang paraan lamang: nagbibigay-daan sa isang respawn time na itakda kapag ang sasakyan ay naiwang walang tao ng driver.
+Nagdaragdag ng 'static' na sasakyan (mga modelo ay paunang na-load para sa mga manlalaro) sa gamemode. Naiiba sa [AddStaticVehicle](AddStaticVehicle) sa isang paraan lamang: nagbibigay-daan sa isang respawn time na itakda kapag ang sasakyan ay naiwang walang tao ng driver.
 
 | Name                                  | Description                                                                                                                                                              |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## คำอธิบาย
 
-Returns the number of rows from a db_query
+Returns the number of rows from a db_query.
 
 | Name              | Description            |
 | ----------------- | ---------------------- |

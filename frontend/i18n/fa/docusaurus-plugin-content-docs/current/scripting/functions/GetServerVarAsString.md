@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-این تابع از نسخه 0.3.7 R2 deprecated شده. لطفاً GetConsoleVarAsString رو ببین
+این تابع از نسخه 0.3.7 R2 deprecated شده. لطفاً [GetConsoleVarAsString](GetConsoleVarAsString) رو ببین
 
 :::
 

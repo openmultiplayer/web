@@ -9,12 +9,12 @@ tags: ["core", "property"]
 
 Get a specific property from the memory, the string is returned as a packed string!
 
-| Name     | Description                                                                                         |
-| -------- | --------------------------------------------------------------------------------------------------- |
-| id       | The virtual machine to use, you should keep this zero. _(optional=0)_                               |
-| name[]   | The property's name, you should keep this "".                                                       |
-| value    | The property's unique ID, Use the hash-function to calculate it from a string. _(optional=cellmin)_ |
-| string[] | The variable to store the result in, passed by reference.                                           |
+| Name     | Description                                                                                                            |
+| -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| id       | The [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine) to use, you should keep this zero. _(optional=0)_ |
+| name[]   | The property's name, you should keep this "".                                                                          |
+| value    | The property's unique ID, Use the hash-function to calculate it from a string. _(optional=cellmin)_                    |
+| string[] | The variable to store the result in, passed by reference.                                                              |
 
 ## Returns
 

@@ -9,9 +9,9 @@ tags: ["gangzone"]
 
 Zaustavlja treptanje gangzone za sve igrače.
 
-| Ime  | Deskripcija                                                          |
-| ---- | -------------------------------------------------------------------- |
-| zone | ID zone za prestati treptati. Returnovana/vraćena od GangZoneCreate. |
+| Ime  | Deskripcija                                                                            |
+| ---- | -------------------------------------------------------------------------------------- |
+| zone | ID zone za prestati treptati. Returnovana/vraćena od [GangZoneCreate](GangZoneCreate). |
 
 ## Returns
 

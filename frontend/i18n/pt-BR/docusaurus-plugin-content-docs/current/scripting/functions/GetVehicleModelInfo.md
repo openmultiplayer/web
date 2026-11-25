@@ -10,13 +10,13 @@ tags: ["vehicle"]
 
 Recuperar informações sobre um modelo de veículo específico, como tamanho ou posição dos assentos
 
-| Nome | Descrição |
-| --------------------------- | ---------------------------------------------------------------------------- |
-| vehiclemodel | O modelo do veículo do qual obter informações.                                            |
+| Nome                        | Descrição                                                                      |
+| --------------------------- | ------------------------------------------------------------------------------ |
+| vehiclemodel                | O [modelo do veículo](../resources/vehicleid) do qual obter informações.       |
 | VEHICLE_MODEL_INFO:infotype | O [tipo de informação](../resources/vehicleinformationtypes) a ser recuperado. |
-| &Float:x | Um float para armazenar o valor X.                                                |
-| &Float:y | Um float para armazenar o valor Y.                                                |
-| &Float:z | Um float para armazenar o valor Z.                                                |
+| &Float:x                    | Um float para armazenar o valor X.                                             |
+| &Float:y                    | Um float para armazenar o valor Y.                                             |
+| &Float:z                    | Um float para armazenar o valor Z.                                             |
 
 ## Retornos
 

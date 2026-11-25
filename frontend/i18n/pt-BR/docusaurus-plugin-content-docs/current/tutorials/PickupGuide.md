@@ -23,7 +23,7 @@ Existem duas maneiras de criar pickups. [CreatePickup](../scripting/functions/Cr
 
 | Nome         | Descrição                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------- |
-| model        | O modelo que você gostaria de usar para o pickup.                                                   |
+| model        | O [modelo](../scripting/resources/pickupids) que você gostaria de usar para o pickup.               |
 | type         | O tipo de spawn do pickup, veja mais abaixo nesta página.                                           |
 | Float:X      | A coordenada X para o pickup aparecer.                                                              |
 | Float:Y      | A coordenada Y para o pickup aparecer.                                                              |

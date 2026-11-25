@@ -10,10 +10,10 @@ tags: ["file management"]
 
 Escreva texto em um arquivo.
 
-| Nome | Descrição |
-| -------------- | ------------------------------------------------------- |
-| File:handle | O identificador do arquivo no qual gravar (retornado por fopen). |
-| const string[] | A sequência de texto a ser gravada no arquivo.             |
+| Nome           | Descrição                                                                 |
+| -------------- | ------------------------------------------------------------------------- |
+| File:handle    | O identificador do arquivo no qual gravar (retornado por [fopen](fopen)). |
+| const string[] | A sequência de texto a ser gravada no arquivo.                            |
 
 ## Retornos
 
@@ -104,7 +104,7 @@ else
 
 :::note
 
-Esta função grava no arquivo em UTF-8, que não suporta alguns símbolos de idioma localizados.
+Esta função grava no arquivo em [UTF-8](https://en.wikipedia.org/wiki/UTF-8), que não suporta alguns símbolos de idioma localizados.
 
 :::
 

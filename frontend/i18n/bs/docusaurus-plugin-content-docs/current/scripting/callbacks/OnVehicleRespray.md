@@ -36,7 +36,8 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-Ovaj callback nije pozvan od strane `ChangeVehicleColor`. Zavaravajući, ovaj callback nije pozvan za pay 'n' spray (samo modshopovi).
+- Ovaj callback nije pozvan od strane [ChangeVehicleColor](../functions/ChangeVehicleColor).
+- Zavaravajući, ovaj callback nije pozvan za pay 'n' spray (samo modshopovi).
 
 Rješenje ovdje: https://pastebin.com/G81da7N1
 

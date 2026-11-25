@@ -30,9 +30,3 @@ Podem haver mais IDs utilizáveis escondidos no jogo e alguns IDs são usados pa
 | 53  | CAM_MODE_AIMWEAPON         | Mirando qualquer outra ara.                                                                                                                                             |
 | 55  | CAM_MODE_AIMWEAPON_FROMCAR | Câmera drive-by de passageiros no veículo.                                                                                                                              |
 | 56  | CAM_MODE_DW_HELI_CHASE     | Câmera de perseguição: visão de helicoptero.                                                                                                                            |
-| 57  | -                          | Câmera de perseguição: câmera no chão, zoom rápido. (Assim como o 56, mas no chão.)                                                                                     |
-| 58  | -                          | Câmera de perseguição: Voo vertical que passa pelo veículo.                                                                                                             |
-| 59  | -                          | Câmera de perseguição (apenas para veículo aéreos): câmera no chão olhando para o veículo.                                                                              |
-| 62  | -                          | Câmera de perseguição (apenas para veículo aéreos): Voo vertical que passa pelo veículo.                                                                                |
-| 63  | -                          | Câmera de perseguição (apenas para veículo aéreos): Voo horizontal que passa pelo veículo. (similar com 58 e 62).                                                       |
-| 64  | -                          | Câmera de perseguição (apenas para veículo aéreos): câmera focada no piloto, similar ao pressionar LOOK_BEHIND (olhar para trás) ao estar apé, mas em um veículo aéreo. |

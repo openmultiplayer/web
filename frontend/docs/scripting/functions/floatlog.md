@@ -7,7 +7,7 @@ tags: ["math", "floating-point"]
 
 ## Description
 
-This function allows you to get the logarithm of a float value.
+This function allows you to get the [logarithm](https://en.wikipedia.org/wiki/Logarithm) of a float value.
 
 | Name        | Description                              |
 | ----------- | ---------------------------------------- |

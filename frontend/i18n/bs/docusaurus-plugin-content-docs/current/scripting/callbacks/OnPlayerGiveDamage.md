@@ -15,7 +15,7 @@ Ovaj callback je pozvan kada igrač zadaje povredu drugom igraču.
 | damagedid       | ID igrača koji prima povredu.                             |
 | Float:amount    | Količina healtha i armora kojeg je izgubio (kombinirano). |
 | WEAPON:weaponid | Razlog zbog kojeg je zadobio povredu.                     |
-| bodypart        | Dio tijela koji je udaren.                                |
+| bodypart        | [Dio tijela](../resources/bodyparts) koji je udaren.      |
 
 ## Returns
 
@@ -56,7 +56,7 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 
 :::tip
 
-Ako želite spriječiti da određeni igrači povrjeđuju, koristite `SetPlayerTeam`.
+Ako želite spriječiti da određeni igrači povrjeđuju, koristite [SetPlayerTeam](../functions/SetPlayerTeam).
 
 :::
 

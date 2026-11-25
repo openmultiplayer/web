@@ -12,7 +12,7 @@ Escreva um caractere em um arquivo.
 
 | Nome        | Descrição                                                                                 |
 | ----------- | ----------------------------------------------------------------------------------------- |
-| File:handle | O identificador de arquivo a ser usado, aberto anteriormente por fopen.                   |
+| File:handle | O identificador de arquivo a ser usado, aberto anteriormente por [fopen](fopen).          |
 | valor       | O caractere a ser gravado no arquivo.                                                     |
 | bool:utf8   | Se for `true`, escreva no modo UTF8, caso contrário, em ASCII estendido. (padrão: `true`) |
 

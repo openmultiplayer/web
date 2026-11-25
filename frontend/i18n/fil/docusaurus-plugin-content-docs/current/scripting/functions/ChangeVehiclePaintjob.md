@@ -20,7 +20,11 @@ Ang function na ito ay palaging nagbabalik ng **1** (tagumpay), kahit na ang sas
 
 :::warning
 
-Kung itim ang kulay ng sasakyan , maaaring hindi makita ang paintjob. Mas mainam na gawing puti ang sasakyan bago ilapat ang painjob sa pamamagitan ng paggamit ng ChangeVehicleColor(vehicleid,1,1);
+Kung itim ang kulay ng sasakyan, maaaring hindi makita ang paintjob. Mas mainam na gawing puti ang sasakyan bago ilapat ang paintjob sa pamamagitan ng paggamit ng:
+
+```c
+ChangeVehicleColor(vehicleid, 1, 1);
+```
 
 :::
 

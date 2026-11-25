@@ -51,7 +51,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::note
 
-此函数仅*切换*玩家**已持有**的武器，不会*给予*新武器。具体给予武器功能请参考 GivePlayerWeapon
+此函数仅*切换*玩家**已持有**的武器，不会*给予*新武器。具体给予武器功能请参考 [GivePlayerWeapon](GivePlayerWeapon)
 
 :::
 

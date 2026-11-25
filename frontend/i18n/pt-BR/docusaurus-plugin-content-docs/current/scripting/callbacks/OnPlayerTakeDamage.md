@@ -14,7 +14,7 @@ Esta callback é chama quando algum jogador recebe dano.
 | playerid        | O ID do jogador que recebeu determinado dano.                                      |
 | issuerid        | O ID do jogador que causou o dano. INVALID_PLAYER_ID se o dano for auto-infligido. |
 | Float:amount    | A quantidade de dano total que o jogador recebey (vida e colete combinados).       |
-| WEAPON:weaponid | O ID da arma/razão do determinado dano.                                            |
+| WEAPON:weaponid | O ID da [arma/razão](../resources/weaponids) do determinado dano.                  |
 | bodypart        | A [Parte do Corpo](../resources/bodyparts) que foi atingida.                       |
 
 ## Retornos
@@ -75,7 +75,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 :::warning
 
-- GetPlayerHealth e GetPlayerArmour retornarão as quantidades específicas anteriores a chamada desta callback.
+- [GetPlayerHealth](../functions/GetPlayerHealth) e [GetPlayerArmour](../functions/GetPlayerArmour) retornarão as quantidades específicas anteriores a chamada desta callback.
 - **Sempre** verifique se o ID do jogador que causou o dano (`issuerid`) é válido antes de usá-lo como index de uma array.
 
 :::

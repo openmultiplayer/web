@@ -7,7 +7,7 @@ tags: ["player", "menu"]
 
 ## Descrição
 
-Obtém o ID do menu que o player está a visualizar no momento (mostrado por ShowMenuForPlayer).
+Obtém o ID do menu que o player está a visualizar no momento (mostrado por [ShowMenuForPlayer](ShowMenuForPlayer)).
 
 | Nome     | Descrição                                          |
 | -------- | -------------------------------------------------- |

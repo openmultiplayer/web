@@ -11,12 +11,12 @@ tags: ["actor"]
 
 Set the position of an actor.
 
-| Name    | Description                                                          |
-| ------- | -------------------------------------------------------------------- |
-| actorid | The ID of the actor to set the position of. Returned by CreateActor. |
-| Float:x | The X coordinate to position the actor at.                           |
-| Float:y | The Y coordinate to position the actor at.                           |
-| Float:z | The Z coordinate to position the actor at.                           |
+| Name    | Description                                                                         |
+| ------- | ----------------------------------------------------------------------------------- |
+| actorid | The ID of the actor to set the position of. Returned by [CreateActor](CreateActor). |
+| Float:x | The X coordinate to position the actor at.                                          |
+| Float:y | The Y coordinate to position the actor at.                                          |
+| Float:z | The Z coordinate to position the actor at.                                          |
 
 ## Returns
 

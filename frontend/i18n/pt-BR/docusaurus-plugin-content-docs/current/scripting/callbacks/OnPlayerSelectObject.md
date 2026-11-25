@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Esta callback é chamada quando um jogador seleciona um objeto após SelectObject ser usado.
+Esta callback é chamada quando um jogador seleciona um objeto após [SelectObject](../functions/SelectObject) ser usado.
 
 | Nome     | Descrição                                           |
 | -------- | --------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["玩家", "视角"]
 
 ## 描述
 
-将玩家的视角附加到玩家创建的物体上。玩家在视角附加期间仍可自由操控视角，可与 MovePlayerObject 及 AttachPlayerObjectToVehicle 配合使用。
+将玩家的视角附加到玩家创建的物体上。玩家在视角附加期间仍可自由操控视角，可与 [MovePlayerObject](MovePlayerObject) 及 [AttachPlayerObjectToVehicle](AttachPlayerObjectToVehicle) 配合使用。
 
 | 参数           | 说明                          |
 | -------------- | ----------------------------- |
@@ -38,7 +38,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-在附加玩家视角之前，必须先创建对应的玩家创建的物体。
+在附加玩家视角之前，必须先[创建](CreatePlayerObject)对应的玩家创建的物体。
 
 :::
 

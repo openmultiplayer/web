@@ -8,7 +8,7 @@ tags: []
 
 :::warning
 
-Esta função, a partir de 0.3.7 R2, está obsoleta. Consulte GetConsoleVarAsBool
+Esta função, a partir de 0.3.7 R2, está obsoleta. Consulte [GetConsoleVarAsBool](GetConsoleVarAsBool)
 
 :::
 

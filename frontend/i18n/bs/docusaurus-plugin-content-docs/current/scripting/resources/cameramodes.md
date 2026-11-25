@@ -30,9 +30,3 @@ Još uvijek može biti više upotrebljivih ID-ova skrivenih u igri, a neki ID-ov
 | 53  | CAM_MODE_AIMWEAPON         | MODE_AIMWEAPON         | Ciljanje bilo kojeg drugog oružja                                                                                                              |
 | 55  | CAM_MODE_AIMWEAPON_FROMCAR | MODE_AIMWEAPON_FROMCAR | Kamera za ciljanje putnika u vozilu (provozajte se kao igrač)                                                                                  |
 | 56  | CAM_MODE_DW_HELI_CHASE     | MODE_DW_HELI_CHASE     | Chase kamera: pogled iz helikoptera (ptičja perspektiva)                                                                                       |
-| 57  | -                          | MODE_DW_CAM_MAN        | Kamera za potjeru: ground camera, zooms in quite quickly and pan to the vehicle                                                                |
-| 58  | -                          | MODE_DW_BIRDY          | Kamera za potjeru: horizontalni let pored vozila                                                                                               |
-| 59  | -                          | MODE_DW_PLANE_SPOTTER  | Kamera za potjeru (samo za vazdušna vozila): zemaljska kamera, gleda u zračno vozilo                                                           |
-| 62  | -                          | MODE_DW_PLANECAM1      | Kamera za potjeru (samo za vazdušna vozila): vertikalni let pored vazdušnog vozila                                                             |
-| 63  | -                          | MODE_DW_PLANECAM2      | Kamera za potjeru (samo za vazdušna vozila): horizontalni let pored vazdušnog vozila (slično kao 58 i 62)                                      |
-| 64  | -                          | MODE_DW_PLANECAM3      | Kamera za potjeru (samo za vazdušna vozila): kamera fokusirana na pilota, slično pritiskanju tipke LOOK_BEHIND pješice, ali u vazdušnom vozilu |

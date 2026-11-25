@@ -7,7 +7,7 @@ tags: []
 
 ## Açıklama
 
-Bu geri çağırma bir IP adresi sunucuya erişim sağlamaya çalıştığında tetiklenir. BlockIpAddress kullanarak gelen bağlantıları engelleyebilirsiniz.
+Bu geri çağırma bir IP adresi sunucuya erişim sağlamaya çalıştığında tetiklenir. [BlockIpAddress](../functions/BlockIpAddress) kullanarak gelen bağlantıları engelleyebilirsiniz.
 
 | Parametre    | Açıklama                                      |
 | ------------ | --------------------------------------------- |

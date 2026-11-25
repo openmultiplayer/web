@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Pára todas as gravações iniciadas com StartRecordingPlayerData para um jogador específico.
+Pára todas as gravações iniciadas com [StartRecordingPlayerData](StartRecordingPlayerData) para um jogador específico.
 
 | Nome | Descrição |
 | -------- | ---------------------------------------------- |

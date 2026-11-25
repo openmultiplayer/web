@@ -13,9 +13,9 @@ Are the animations missing from some versions enabled?
 
 ## Returns
 
-true: Enable.
+true: Enabled.
 
-false: False.
+false: Disabled.
 
 ## Examples
 

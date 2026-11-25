@@ -43,10 +43,10 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-Ovaj callback je pozvan samo kada je is only called when kompenzacija zakašnjenja **omogućena**. Ako je **hittype**:
-
-- `BULLET_HIT_TYPE_NONE`: **fX**, **fY** i **fZ** parametri su normalne kordinate, dati će 0.0 za kordinatu ako ništa nije pogođeno (npr. daleki objekat kojeg metak ne može dohvatiti);
-- Ostali: **fX**, **fY** i **fZ** su pomaci u odnosu na **hitid**.
+- Ovaj callback je pozvan samo kada je is only called when kompenzacija zakašnjenja **omogućena**.
+- Ako je **hittype**:
+  - `BULLET_HIT_TYPE_NONE`: **fX**, **fY** i **fZ** parametri su normalne kordinate, dati će 0.0 za kordinatu ako ništa nije pogođeno (npr. daleki objekat kojeg metak ne može dohvatiti);
+  - Ostali: **fX**, **fY** i **fZ** su pomaci u odnosu na **hitid**.
 
 :::
 

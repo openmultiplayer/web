@@ -37,7 +37,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Esta função não realiza uma mudança de estado para `PLAYER_STATE_WASTED` quando combinada com TogglePlayerSpectating (veja o exemplo acima), conforme listado aqui.
+Esta função não realiza uma [mudança de estado](../callbacks/OnPlayerStateChange) para `PLAYER_STATE_WASTED` quando combinada com [TogglePlayerSpectating](TogglePlayerSpectating) (veja o exemplo acima), conforme listado [aqui](../resources/playerstates).
 
 :::
 

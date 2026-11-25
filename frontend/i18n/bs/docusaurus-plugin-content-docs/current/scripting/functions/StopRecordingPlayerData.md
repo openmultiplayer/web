@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Zaustavlja sve snimke započete sa StartRecordingPlayerData za određenog igrača.
+Zaustavlja sve snimke započete sa [StartRecordingPlayerData](StartRecordingPlayerData) za određenog igrača.
 
 | Ime      | Deskripcija                              |
 | -------- | ---------------------------------------- |

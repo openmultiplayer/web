@@ -42,7 +42,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-This callback is NOT called by AddVehicleComponent.
+This callback is NOT called by [AddVehicleComponent](../functions/AddVehicleComponent).
 
 :::
 

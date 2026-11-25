@@ -7,7 +7,7 @@ tags: ["player", "camera"]
 
 ## Description
 
-Retrieves the aspect ratio of a player's camera.
+Retrieves the [aspect ratio](https://en.wikipedia.org/wiki/Aspect_ratio_(image)) of a player's camera.
 
 | Name     | Description                                             |
 | -------- | ------------------------------------------------------- |

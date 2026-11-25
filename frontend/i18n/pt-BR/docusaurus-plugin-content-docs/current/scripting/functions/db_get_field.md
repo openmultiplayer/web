@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## Descrição
 
-Obtém o conteúdo de um campo de db_query
+Obtém o conteúdo de um campo de [db_query](db_query).
 
 | Nome              | Descrição                           |
 | ----------------- | ----------------------------------- |

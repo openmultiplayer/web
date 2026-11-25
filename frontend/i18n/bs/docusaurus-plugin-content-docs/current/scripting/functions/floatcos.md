@@ -7,12 +7,12 @@ tags: []
 
 ## Deskripcija
 
-Dobijte kosinus iz zadanog ugla. Ulazni kut može biti u radijanima, stupnjevima ili stupnjevima.
+Dobijte [kosinus](https://en.wikipedia.org/wiki/Sine_and_cosine) iz zadanog ugla. Ulazni kut može biti u radijanima, stupnjevima ili stupnjevima.
 
-| Ime         | Deskripcija                                                |
-| ----------- | ---------------------------------------------------------- |
-| Float:value | Ugao iz kojeg se dobija kosinus.                           |
-| anglemode   | Način kuta koji se koristi, ovisno o unesenoj vrijednosti. |
+| Ime                                  | Deskripcija                                                |
+| ------------------------------------ | ---------------------------------------------------------- |
+| Float:value                          | Ugao iz kojeg se dobija kosinus.                           |
+| [anglemode](../resources/anglemodes) | Način kuta koji se koristi, ovisno o unesenoj vrijednosti. |
 
 ## Returns
 
@@ -33,7 +33,8 @@ public OnGameModeInit()
 
 :::warning
 
-GTA / SA-MP u većini slučajeva koriste **stupnjeve** za uglove, na primjer GetPlayerFacingAngle. Stoga ćete najvjerojatnije htjeti koristiti način rada pod uglom '**degrees**', a _ne_ radijane. Takođe imajte na umu da su uglovi u GTA suprotno kazaljki na satu; 270° je istok, a 90° zapad. Jug je i dalje 180°, a sjever još uvijek 0° / 360°.
+- GTA / SA-MP u većini slučajeva koriste **stupnjeve** za uglove, na primjer GetPlayerFacingAngle. Stoga ćete najvjerojatnije htjeti koristiti način rada pod uglom '**degrees**', a _ne_ radijane.
+- Takođe imajte na umu da su uglovi u GTA suprotno kazaljki na satu; 270° je istok, a 90° zapad. Jug je i dalje 180°, a sjever još uvijek 0° / 360°.
 
 :::
 

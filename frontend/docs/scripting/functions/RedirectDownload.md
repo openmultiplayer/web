@@ -9,7 +9,7 @@ tags: ["custom model", "custom skin", "simple model"]
 
 ## Description
 
-Redirect a player custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.
+Redirect a player custom [AddCharModel](AddCharModel) or [AddSimpleModel](AddSimpleModel) download to a specific HTTP webpage.
 
 ## Parameters
 

@@ -9,9 +9,9 @@ tags: []
 
 Vraća dužinu datoteke.
 
-| Ime    | Deskripcija                                 |
-| ------ | ------------------------------------------- |
-| handle | Upravitelj datoteke vraćena fopen ili ftemp |
+| Ime    | Deskripcija                                                   |
+| ------ | ------------------------------------------------------------- |
+| handle | Upravitelj datoteke vraćena [fopen](fopen) ili [ftemp](ftemp) |
 
 ## Returns
 
@@ -45,7 +45,7 @@ else
 
 :::warning
 
-Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću fopen ili ftemp.
+Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću [fopen](fopen) ili [ftemp](ftemp).
 
 :::
 

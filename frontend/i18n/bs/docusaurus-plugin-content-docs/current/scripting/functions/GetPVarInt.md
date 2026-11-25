@@ -9,10 +9,10 @@ tags: ["pvar"]
 
 Dobiva vrijednost cijelog broja varijable igrača.
 
-| Ime      | Deskripcija                                                                           |
-| -------- | ------------------------------------------------------------------------------------- |
-| playerid | ID igrača za dobiti igračevu varijablu.                                               |
-| varname  | Ime igračeve varijable (osjetljivo na velika i mala slova). Dodijeljeno u SetPVarInt. |
+| Ime      | Deskripcija                                                                                         |
+| -------- | --------------------------------------------------------------------------------------------------- |
+| playerid | ID igrača za dobiti igračevu varijablu.                                                             |
+| varname  | Ime igračeve varijable (osjetljivo na velika i mala slova). Dodijeljeno u [SetPVarInt](SetPVarInt). |
 
 ## Returns
 
@@ -33,7 +33,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::note
 
-Varijable se resetiraju tek nakon što se pozove OnPlayerDisconnect, tako da su vrijednosti i dalje dostupne u OnPlayerDisconnect.
+Varijable se resetiraju tek nakon što se pozove [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect), tako da su vrijednosti i dalje dostupne u OnPlayerDisconnect.
 
 :::
 

@@ -113,7 +113,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 :::note
 
-Os veículos devem ser respawnados para que o ‘objetivo’ seja removido.
+Os veículos devem ser [respawnados](SetVehicleToRespawn) para que o ‘objetivo’ seja removido.
 
 :::
 

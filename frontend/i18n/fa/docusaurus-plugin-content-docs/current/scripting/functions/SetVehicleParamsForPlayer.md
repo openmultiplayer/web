@@ -113,7 +113,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 :::note
 
-ماشین‌ها باید respawn بشن تا 'objective' حذف بشه.
+ماشین‌ها باید [respawn بشن](SetVehicleToRespawn) تا 'objective' حذف بشه.
 
 :::
 

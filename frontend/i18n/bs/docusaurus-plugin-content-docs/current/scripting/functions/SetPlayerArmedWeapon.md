@@ -51,7 +51,7 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::note
 
-Ova funkcija _naoružava_ igrača oružjem koje **već ima**; ne _daje_ im novo oružje. Pogledajte GivePlayerWeapon.
+Ova funkcija _naoružava_ igrača oružjem koje **već ima**; ne _daje_ im novo oružje. Pogledajte [GivePlayerWeapon](GivePlayerWeapon).
 
 :::
 

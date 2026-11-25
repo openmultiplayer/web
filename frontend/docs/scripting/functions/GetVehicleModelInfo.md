@@ -11,7 +11,7 @@ Retrieve information about a specific vehicle model such as the size or position
 
 | Name                        | Description                                                                  |
 | --------------------------- | ---------------------------------------------------------------------------- |
-| vehiclemodel                | The vehicle model to get info of.                                            |
+| vehiclemodel                | The [vehicle model](../resources/vehicleid) to get info of.                  |
 | VEHICLE_MODEL_INFO:infotype | The [type of information](../resources/vehicleinformationtypes) to retrieve. |
 | &Float:x                    | A float to store the X value.                                                |
 | &Float:y                    | A float to store the Y value.                                                |

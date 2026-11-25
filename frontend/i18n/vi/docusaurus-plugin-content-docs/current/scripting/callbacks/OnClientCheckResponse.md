@@ -43,9 +43,8 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 :::warning
 
-**Máy chủ SA:MP**: Callback này chỉ được gọi khi nó nằm trong một filterscript.
-
-**Máy chủ Open Multiplayer**: Callback này hoạt động bình thường trong gamemode / filterscript.
+- **Máy chủ SA-MP**: Callback này chỉ được gọi khi nó nằm trong một filterscript.
+- **Máy chủ open.mp**: Callback này hoạt động bình thường trong gamemode / filterscript.
 
 :::
 

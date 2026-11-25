@@ -13,7 +13,7 @@ tags: ["player", "administration"]
 
 می‌توانید از [BanEx](BanEx) برای ارائه دلیل مسدودیت استفاده کنید.
 
-مسدودیت‌های IP را می‌توان با استفاده از دستورات RCON `banip` و `unbanip` اضافه/حذف کرد ([SendRconCommand](SendRconCommand)).
+مسدودیت‌های IP را می‌توان با استفاده از دستورات [RCON](../../server/RemoteConsole) `banip` و `unbanip` اضافه/حذف کرد ([SendRconCommand](SendRconCommand)).
 
 | نام      | توضیحات                       |
 | -------- | ----------------------------- |

@@ -67,7 +67,8 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-El area clickeable está definida por TextDrawTextSize. Los parámetors X y Y pasados a esta función no deben ser cero o negativos. No uses CancelSelectTextDraw incondicionalmente dentro de este callback. Esto resultará en un loop infinito.
+- El area clickeable está definida por TextDrawTextSize. Los parámetors X y Y pasados a esta función no deben ser cero o negativos.
+- No uses CancelSelectTextDraw incondicionalmente dentro de este callback. Esto resultará en un loop infinito.
 
 :::
 

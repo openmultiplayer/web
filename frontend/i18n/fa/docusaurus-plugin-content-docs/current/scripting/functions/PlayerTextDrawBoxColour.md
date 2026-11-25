@@ -9,7 +9,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## توضیحات
 
-رنگ جعبه textdraw بازیکن را تنظیم کنید (PlayerTextDrawUseBox).
+رنگ جعبه textdraw بازیکن را تنظیم کنید ([PlayerTextDrawUseBox](PlayerTextDrawUseBox)).
 
 | نام               | توضیحات                                                       |
 | ----------------- | ------------------------------------------------------------- |

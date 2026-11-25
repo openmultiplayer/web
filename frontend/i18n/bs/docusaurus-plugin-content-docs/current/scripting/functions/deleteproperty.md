@@ -7,13 +7,13 @@ tags: []
 
 ## Deskripcija
 
-Izbriši prethodno postavljenu imovinu (setproperty).
+Izbriši prethodno postavljenu imovinu ([setproperty](setproperty)).
 
-| Ime   | Deskripcija                                                                  |
-| ----- | ---------------------------------------------------------------------------- |
-| id    | Virtualna mašina za upotrebu. Trebali biste ovo držati kao nulu.             |
-| Ime[] | Ime imovine, trebali biste ovo ostaviti prazno ("").                         |
-| value | Jedinstveni ID imovine. Upotrijebite hash-funkciju za izračunavanje iz niza. |
+| Ime   | Deskripcija                                                                                                       |
+| ----- | ----------------------------------------------------------------------------------------------------------------- |
+| id    | Virtualna [mašina](https://en.wikipedia.org/wiki/Virtual_machine) za upotrebu. Trebali biste ovo držati kao nulu. |
+| Ime[] | Ime imovine, trebali biste ovo ostaviti prazno ("").                                                              |
+| value | Jedinstveni ID imovine. Upotrijebite hash-funkciju za izračunavanje iz niza.                                      |
 
 ## Returns
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Move a player object with a set speed. Also supports rotation. Players/vehicles will surf moving objects.
+Move a [player object](CreatePlayerObject) with a set speed. Also supports rotation. Players/vehicles will surf moving objects.
 
 | Name            | Description                                       |
 | --------------- | ------------------------------------------------- |
