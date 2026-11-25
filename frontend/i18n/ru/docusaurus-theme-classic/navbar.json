@@ -23,10 +23,6 @@
     "message": "Партнёры",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "Поддержать проект",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "Логотип open.mp",
     "description": "The alt text of navbar logo"

@@ -23,10 +23,6 @@
     "message": "Partner",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "Spenden",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "open.mp-Logo",
     "description": "The alt text of navbar logo"

@@ -23,10 +23,6 @@
     "message": "கூட்டாளர்கள்",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "நன்கொடை அளிக்கவும்",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "open.mp சின்னம்",
     "description": "The alt text of navbar logo"

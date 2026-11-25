@@ -1,430 +1,490 @@
 {
   "feature.fullyBackwardsCompatible.title": {
-    "message": "完全向后兼容现有脚本与客户端"
+    "message": "完全向后兼容现有脚本与客户端",
+    "description": "Feature title: Fully backwards compatible"
   },
   "feature.fullyBackwardsCompatible.linkText": {
-    "message": "入门指南"
+    "message": "入门指南",
+    "description": "Link text: Getting Started"
   },
   "feature.scriptingSystem.title": {
-    "message": "全新升级的脚本系统"
+    "message": "全新升级的脚本系统",
+    "description": "Feature title: New and improved scripting system"
   },
   "feature.scriptingSystem.linkText": {
-    "message": "查看改进详情"
+    "message": "查看改进详情",
+    "description": "Link text: Learn about the improvements"
   },
   "feature.communityDevelopment.title": {
-    "message": "社区驱动开发"
+    "message": "社区驱动开发",
+    "description": "Feature title: Community driven development"
   },
   "feature.communityDevelopment.linkText": {
-    "message": "访问 GitHub 组织"
+    "message": "访问 GitHub 组织",
+    "description": "Link text: Visit the GitHub organization"
   },
   "feature.cppApi.title": {
-    "message": "可扩展的 C++ API"
+    "message": "可扩展的 C++ API",
+    "description": "Feature title: Extensible C++ API"
   },
   "feature.cppApi.linkText": {
-    "message": "查看 SDK 仓库"
+    "message": "查看 SDK 仓库",
+    "description": "Link text: Check out SDK repository"
   },
   "partners.server.stats": {
-    "message": "{servers}台服务器共有{players}名玩家，平均每台服务器{average}人。"
+    "message": "{servers}台服务器共有{players}名玩家，平均每台服务器{average}人。",
+    "description": "Stats summary: {players} players on {servers} servers with an average of {average} players per server."
   },
   "servers.sort.relevance": {
-    "message": "相关度"
+    "message": "相关度",
+    "description": "Sort by relevance"
   },
   "servers.sort.players": {
-    "message": "玩家数量"
+    "message": "玩家数量",
+    "description": "Sort by players"
   },
   "servers.search.placeholder": {
-    "message": "按IP或名称搜索"
+    "message": "按IP或名称搜索",
+    "description": "Search input placeholder"
   },
   "partners.note": {
     "message": "注：如约暂停合作伙伴计划。已预定席位的服务器仍可加入，但目前不接受新申请。如有疑问欢迎通过Discord咨询，但若涉及新加入方式，我们暂无相关计划。"
   },
   "partners.note.title": {
-    "message": "合作伙伴计划"
+    "message": "合作伙伴计划",
+    "description": "Partner note title"
   },
   "partners.note.dismissAria": {
     "message": "关闭合作伙伴通知",
-    "description": "关闭合作伙伴通知的无障碍标签"
+    "description": "Accessible label for dismissing the partner note"
   },
   "theme.ErrorPageContent.title": {
     "message": "页面加载异常",
-    "description": "页面崩溃时显示的备用页面标题"
+    "description": "The title of the fallback page when the page crashed"
   },
   "theme.NotFound.title": {
     "message": "页面未找到",
-    "description": "404页面的标题"
+    "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
     "message": "未能检索到目标内容",
-    "description": "404页面的第一段文字"
+    "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
     "message": "请联系引荐你访问此链接的站点管理员，告知该链接已失效",
-    "description": "404页面的第二段文字"
+    "description": "The 2nd paragraph of the 404 page"
   },
   "theme.admonition.note": {
     "message": "备注",
-    "description": "Note提示框（:::note）的默认标签"
+    "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
     "message": "技巧",
-    "description": "Tip提示框（:::tip）的默认标签"
+    "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.danger": {
     "message": "危险",
-    "description": "Danger提示框（:::danger）的默认标签"
+    "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
     "message": "信息",
-    "description": "Info提示框（:::info）的默认标签"
+    "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.caution": {
     "message": "注意",
-    "description": "Caution提示框（:::caution）的默认标签"
+    "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "返回顶部",
-    "description": "返回顶部按钮的ARIA标签"
+    "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
     "message": "归档",
-    "description": "博客归档页面的页面标题和主标题"
+    "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
     "message": "归档",
-    "description": "博客归档页面的页面描述和主描述"
+    "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
     "message": "博客列表分页导航",
-    "description": "博客分页的ARIA标签"
+    "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
     "message": "更新的文章",
-    "description": "用于导航到较新博客文章页面（上一页）的标签"
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
     "message": "更早的文章",
-    "description": "用于导航到较早博客文章页面（下一页）的标签"
+    "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
     "message": "阅读时间约{readingTime}分钟",
-    "description": "\"{readingTime}分钟阅读\"的复数化标签。根据语言支持使用尽可能多的复数形式（用\"|\"分隔）"
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.tags.tagsPageTitle": {
     "message": "标签",
-    "description": "标签列表页面的标题"
+    "description": "The title of the tag list page"
   },
   "animations.title": {
-    "message": "open.mp动画预览器"
+    "message": "open.mp动画预览器",
+    "description": "Animations page title"
   },
   "animations.subtitle": {
-    "message": "浏览并预览 open.mp 中所有可用的动画。"
+    "message": "浏览并预览 open.mp 中所有可用的动画。",
+    "description": "Animations page subtitle"
   },
   "animations.library": {
-    "message": "动作库："
+    "message": "动作库：",
+    "description": "Library label"
   },
   "animations.selectLibrary": {
-    "message": "选择动作库..."
+    "message": "选择动作库...",
+    "description": "Select library option"
   },
   "animations.animation": {
-    "message": "动画："
+    "message": "动画：",
+    "description": "Animation label"
   },
   "animations.selectAnimation": {
-    "message": "选择动画..."
+    "message": "选择动画...",
+    "description": "Select animation option"
   },
   "animations.index": {
-    "message": "索引："
+    "message": "索引：",
+    "description": "Index label"
   },
   "animations.frames": {
-    "message": "帧数："
+    "message": "帧数：",
+    "description": "Frames label"
   },
   "animations.duration": {
-    "message": "时长："
+    "message": "时长：",
+    "description": "Duration label"
   },
   "animations.seconds": {
-    "message": "秒"
+    "message": "秒",
+    "description": "Seconds label"
   },
   "animations.description": {
-    "message": "描述："
+    "message": "描述：",
+    "description": "Description label"
   },
   "animations.notes": {
-    "message": "备注："
+    "message": "备注：",
+    "description": "Notes label"
   },
   "animations.videoCredits": {
-    "message": "视频致谢："
+    "message": "视频致谢：",
+    "description": "Video credits label"
   },
   "animations.usageExamples": {
-    "message": "使用示例："
+    "message": "使用示例：",
+    "description": "Usage examples heading"
   },
   "animations.selectAnimationPrompt": {
-    "message": "从上方下拉菜单选择动画即可预览"
+    "message": "从上方下拉菜单选择动画即可预览",
+    "description": "Prompt to select animation"
   },
   "animations.browsePrompt": {
-    "message": "浏览查看所有可用动画"
+    "message": "浏览查看所有可用动画",
+    "description": "Browse animations prompt"
   },
   "animations.usedByFunctions": {
-    "message": "这些动画通过ApplyAnimation/ApplyActorAnimation函数调用"
+    "message": "这些动画通过ApplyAnimation/ApplyActorAnimation函数调用",
+    "description": "Used by functions note"
   },
   "loadingBanner.followingTrain": {
-    "message": "正在追赶那辆该死的火车..."
+    "message": "正在追赶那辆该死的火车...",
+    "description": "Loading banner: Following the damn train"
   },
   "serverRow.copied": {
-    "message": "已复制"
+    "message": "已复制",
+    "description": "Copied badge"
   },
   "serverRow.copy": {
-    "message": "复制"
+    "message": "复制",
+    "description": "Copy badge"
   },
   "serverRow.partnerTitle": {
-    "message": "合作认证！"
+    "message": "合作认证！",
+    "description": "Partner server badge title"
   },
   "serverRow.ompTitle": {
-    "message": "open.mp服务器"
+    "message": "open.mp服务器",
+    "description": "open.mp server badge title"
   },
   "serverRow.players": {
-    "message": "名玩家"
+    "message": "名玩家",
+    "description": "Players label"
   },
   "serverInfo.backToServers": {
-    "message": "← 返回服务器列表"
+    "message": "← 返回服务器列表",
+    "description": "Back to servers link"
   },
   "serverInfo.backToPartners": {
-    "message": "← 返回合作伙伴服务器"
+    "message": "← 返回合作伙伴服务器",
+    "description": "Back to partners link"
   },
   "serverInfo.quickJoin": {
-    "message": "快速加入"
+    "message": "快速加入",
+    "description": "Quick join button"
   },
   "serverInfo.playersOnline": {
-    "message": "在线玩家"
+    "message": "在线玩家",
+    "description": "Players online label"
   },
   "serverInfo.language": {
-    "message": "语言"
+    "message": "语言",
+    "description": "Language label"
   },
   "serverInfo.rule": {
-    "message": "规则"
+    "message": "规则",
+    "description": "Rule table header"
   },
   "serverInfo.value": {
-    "message": "数值"
+    "message": "数值",
+    "description": "Value table header"
   },
   "serverInfo.lastUpdated": {
-    "message": "{time}前更新"
+    "message": "{time}前更新",
+    "description": "Last updated label"
   },
   "serverInfo.notFound": {
-    "message": "找不到该服务器，它可能已离线或不再列出。"
+    "message": "找不到该服务器，它可能已离线或不再列出。",
+    "description": "Shown when a server address is unknown or the server is gone"
   },
   "downloads.server.pageTitle": {
-    "message": "open.mp 服务器"
+    "message": "open.mp 服务器",
+    "description": "Server downloads page title"
   },
   "downloads.server.pageSubtitle": {
-    "message": "托管你自己的《侠盗猎车手：圣安地列斯》多人联机服务器。"
+    "message": "托管你自己的《侠盗猎车手：圣安地列斯》多人联机服务器。",
+    "description": "Server downloads page subtitle"
   },
   "downloads.launcher.pageTitle": {
-    "message": "open.mp 启动器"
+    "message": "open.mp 启动器",
+    "description": "Launcher downloads page title"
   },
   "downloads.launcher.pageSubtitle": {
-    "message": "在 open.mp 和 SA-MP 服务器上游玩《侠盗猎车手：圣安地列斯》多人联机。"
+    "message": "在 open.mp 和 SA-MP 服务器上游玩《侠盗猎车手：圣安地列斯》多人联机。",
+    "description": "Launcher downloads page subtitle"
   },
   "downloads.latestBadge": {
-    "message": "最新"
+    "message": "最新",
+    "description": "Badge for latest release"
   },
   "downloads.releaseDate": {
-    "message": "发布于 {date}"
+    "message": "发布于 {date}",
+    "description": "Release date label"
   },
   "downloads.release.highlights": {
-    "message": "亮点"
+    "message": "亮点",
+    "description": "Release highlights heading"
   },
   "downloads.release.viewChangelog": {
-    "message": "查看完整更新日志"
+    "message": "查看完整更新日志",
+    "description": "Expandable changelog summary"
   },
   "downloads.release.viewOnGitHub": {
-    "message": "在 GitHub 上查看发布"
+    "message": "在 GitHub 上查看发布",
+    "description": "Fallback button per release"
   },
   "downloads.release.github": {
-    "message": "GitHub"
+    "message": "GitHub",
+    "description": "Link to release page on GitHub"
   },
   "downloads.showOlderReleases": {
-    "message": "查看 {count} 个历史发布"
+    "message": "查看 {count} 个历史发布",
+    "description": "Button to show older releases"
   },
   "downloads.hideOlderReleases": {
-    "message": "隐藏历史发布"
+    "message": "隐藏历史发布",
+    "description": "Button to hide older releases"
   },
   "downloads.opensourceTrust": {
-    "message": "所有发布均为开源。从源代码编译，或直接从 GitHub 下载。"
+    "message": "所有发布均为开源。从源代码编译，或直接从 GitHub 下载。",
+    "description": "Open source trust message for downloads pages"
   },
   "downloads.downloadFromGithub": {
-    "message": "从 GitHub 下载"
+    "message": "从 GitHub 下载",
+    "description": "Button label to open GitHub releases page"
   },
   "downloads.release.dynSslNote": {
-    "message": "* DynSSL 版本要求你的 Linux 发行版中已安装 libssl。"
+    "message": "* DynSSL 版本要求你的 Linux 发行版中已安装 libssl。",
+    "description": "Note about DynSSL version requiring libssl"
   },
   "uid.page.title": {
     "message": "UID 生成器",
-    "description": "UID 生成器页面标题"
+    "description": "UID generator page title"
   },
   "uid.page.description": {
     "message": "生成用于 IComponent 或 IExtension 唯一标识符的 UID",
-    "description": "UID 生成器页面描述"
+    "description": "UID generator page description"
   },
   "uid.heading": {
     "message": "组件 UID 生成器",
-    "description": "UID 生成器页面主标题"
+    "description": "UID generator page heading"
   },
   "uid.instructions.intro": {
     "message": "将下方的 {provideUid} 宏复制到你的新组件中，替换掉默认的 UID 提供者宏。每个组件必须拥有唯一的 UID，因此 {uidInitials} 中的 {uniqueLetter} ({uniqueIdentifier}) 必须修改。默认的 {provideUid} 是无效的且无法编译，旨在防止从模板创建新组件时出现重复。",
-    "description": "UID 生成器说明，解释如何使用生成的宏"
+    "description": "UID generator instructions explaining how to use the generated macro"
   },
   "uid.instructions.findPlaceholder": {
     "message": "找到这个占位符：",
-    "description": "展示占位符宏之前的 UID 生成器说明"
+    "description": "UID generator instruction before the placeholder macro"
   },
   "uid.instructions.replaceWith": {
     "message": "并替换为：",
-    "description": "展示生成的替换宏之前的 UID 生成器说明"
+    "description": "UID generator instruction before the generated replacement macro"
   },
   "uid.instructions.existingComponent": {
     "message": "如果你正在修改现有组件，请记得同时替换现有的 UID，那将是一个有效值，而非占位符。",
-    "description": "针对修改现有组件的 UID 生成器提示"
+    "description": "UID generator note for modifying an existing component"
   },
   "npcCallbacksNote.message": {
     "message": "此回调也可能由 NPC 调用。",
-    "description": "在回调文档页面显示的说明，指出 NPC 也可以调用该回调"
+    "description": "Note shown on callback docs pages when NPCs can also call the callback"
   },
   "toast.close": {
     "message": "关闭通知",
-    "description": "关闭 Toast 通知的无障碍标签"
+    "description": "Accessible label for closing a toast notification"
   },
   "servers.add.successMessage": {
     "message": "{serverName} 已添加到我们的待审核列表中。如果最多 48 小时后仍未显示，你可以到 Discord 联系我们！",
-    "description": "提交服务器到待审核列表后显示的 Toast 消息"
+    "description": "Toast message shown after submitting a server to the pending list"
   },
   "servers.add.successTitle": {
     "message": "服务器已提交！",
-    "description": "服务器提交成功后的 Toast 标题"
+    "description": "Toast title shown after a server submission succeeds"
   },
   "servers.add.failureMessage": {
     "message": "状态码 {status}：{error}",
-    "description": "服务器提交失败后的 Toast 消息"
+    "description": "Toast message shown after a server submission fails"
   },
   "servers.add.failureTitle": {
     "message": "提交失败！",
-    "description": "服务器提交失败后的 Toast 标题"
+    "description": "Toast title shown after a server submission fails"
   },
   "servers.add.errorMessage": {
     "message": "提交服务器时发生错误",
-    "description": "发生意外的服务器提交错误时显示的 Toast 消息"
+    "description": "Toast message shown after an unexpected server submission error"
   },
   "servers.add.errorTitle": {
     "message": "错误",
-    "description": "通用的 Toast 错误标题"
+    "description": "Generic toast error title"
   },
   "servers.add.addressPlaceholder": {
     "message": "IP / 域名",
-    "description": "添加服务器地址输入框的占位符"
+    "description": "Add server address input placeholder"
   },
   "servers.add.submit": {
     "message": "添加",
-    "description": "添加服务器的提交按钮"
+    "description": "Add server submit button"
   },
   "servers.add.openModal": {
     "message": "添加服务器",
-    "description": "打开添加服务器模态框的按钮"
+    "description": "Button that opens the add server modal"
   },
   "servers.filter.showEmpty": {
     "message": "显示空服务器",
-    "description": "显示空服务器的复选框标签"
+    "description": "Checkbox label to show empty servers"
   },
   "servers.filter.showOmpOnly": {
     "message": "仅显示 open.mp 服务器",
-    "description": "仅显示 open.mp 服务器的复选框标签"
+    "description": "Checkbox label to show only open.mp servers"
   },
   "servers.add.modalTitle": {
     "message": "添加服务器",
-    "description": "添加服务器模态框的标题"
+    "description": "Add server modal title"
   },
   "servers.add.closeModal": {
     "message": "关闭添加服务器模态框",
-    "description": "关闭添加服务器模态框的无障碍标签"
+    "description": "Accessible label for closing the add server modal"
   },
   "servers.add.addressLabel": {
     "message": "IP 或域名",
-    "description": "添加服务器地址字段的标签"
+    "description": "Add server address field label"
   },
   "servers.add.addressHelp": {
     "message": "IP 地址格式必须为 {format}",
-    "description": "解释所需服务器地址格式的帮助文本"
+    "description": "Help text explaining the required server address format"
   },
   "servers.page.title": {
     "message": "服务器列表",
-    "description": "服务器页面标题"
+    "description": "Servers page title"
   },
   "servers.page.description": {
     "message": "使用 open.mp 和 SA-MP 的圣安地列斯服务器列表",
-    "description": "服务器页面描述"
+    "description": "Servers page description"
   },
   "partners.page.title": {
     "message": "合作伙伴服务器",
-    "description": "合作伙伴服务器页面标题"
+    "description": "Partner servers page title"
   },
   "partners.page.description": {
     "message": "使用 open.mp 或 SA-MP 的圣安地列斯服务器列表",
-    "description": "合作伙伴服务器页面描述"
+    "description": "Partner servers page description"
   },
   "downloads.launcher.layoutDescription": {
     "message": "下载 open.mp 启动器版本",
-    "description": "启动器下载页面的 Meta 描述"
+    "description": "Launcher downloads page meta description"
   },
   "downloads.server.layoutDescription": {
     "message": "下载 open.mp 服务器端版本",
-    "description": "服务器下载页面的 Meta 描述"
+    "description": "Server downloads page meta description"
   },
   "downloads.release.githubTitle": {
     "message": "在 GitHub 查看发布版",
-    "description": "GitHub 发布链接的 Title 属性"
+    "description": "Title attribute for the GitHub release link"
   },
   "animations.layoutTitle": {
     "message": "动画库",
-    "description": "动画页面的浏览器标题"
+    "description": "Animations page browser title"
   },
   "animations.layoutDescription": {
     "message": "open.mp (SA-MP) 的交互式动画查看器，支持视频预览",
-    "description": "动画页面的 Meta 描述"
+    "description": "Animations page meta description"
   },
   "animations.videoUnavailable": {
     "message": "视频不可用",
-    "description": "动画视频加载失败时的回退消息"
+    "description": "Fallback message when an animation video fails to load"
   },
   "animations.code.forPlayers": {
     "message": "// 适用于玩家",
-    "description": "玩家动画用法示例中的注释"
+    "description": "Comment in animation usage example for player animations"
   },
   "animations.code.forActors": {
     "message": "// 适用于演员",
-    "description": "演员动画用法示例中的注释"
+    "description": "Comment in animation usage example for actor animations"
   },
   "homepage.social.discord": {
     "message": "Discord 图标",
-    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+    "description": "Accessible label and image alt text for homepage social link"
   },
   "homepage.social.facebook": {
     "message": "Facebook 图标",
-    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+    "description": "Accessible label and image alt text for homepage social link"
   },
   "homepage.social.instagram": {
     "message": "Instagram 图标",
-    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+    "description": "Accessible label and image alt text for homepage social link"
   },
   "homepage.social.twitch": {
     "message": "Twitch 图标",
-    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+    "description": "Accessible label and image alt text for homepage social link"
   },
   "homepage.social.x": {
     "message": "X (原 Twitter) 图标",
-    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+    "description": "Accessible label and image alt text for homepage social link"
   },
   "homepage.social.youtube": {
     "message": "YouTube 图标",
-    "description": "首页社交链接的无障碍标签和图片 Alt 文本"
+    "description": "Accessible label and image alt text for homepage social link"
   },
   "homepage.layoutDescription": {
     "message": "为《侠盗猎车手：圣安地列斯》打造的多人联机模组，完全向后兼容 San Andreas Multiplayer（SA-MP）。",
-    "description": "首页 Meta 描述"
+    "description": "Homepage meta description"
   },
   "homepage.hero.new": {
     "message": "新版",
@@ -604,87 +664,87 @@
   },
   "uid.toast.copiedTitle": {
     "message": "已复制",
-    "description": "UID复制成功提示标题"
+    "description": "UID copy success toast title"
   },
   "uid.toast.copiedMessage": {
     "message": "宏UID已复制到剪贴板。",
-    "description": "UID复制成功提示消息"
+    "description": "UID copy success toast message"
   },
   "uid.instructions.panelIntro": {
     "message": "在从模板创建新组件时使用此功能。默认占位符{provideUid}故意无效，以便每个组件获得自己的{uidInitials}({uniqueIdentifier})。",
-    "description": "UID生成器面板说明"
+    "description": "UID generator panel explanation"
   },
   "uid.copy": {
     "message": "复制宏",
-    "description": "复制生成的UID宏按钮"
+    "description": "Copy generated UID macro button"
   },
   "uid.regenerate": {
     "message": "重新生成",
-    "description": "重新生成UID按钮"
+    "description": "Regenerate UID button"
   },
   "serverInfo.copy": {
     "message": "复制",
-    "description": "复制服务器地址状态"
+    "description": "Copy server address state"
   },
   "serverInfo.copied": {
     "message": "已复制",
-    "description": "已复制服务器地址状态"
+    "description": "Copied server address state"
   },
   "servers.filter.showPassworded": {
     "message": "有密码",
-    "description": "显示有密码服务器的复选框标签"
+    "description": "Checkbox label to show passworded servers"
   },
   "servers.sort.name": {
     "message": "名称",
-    "description": "按服务器名称排序"
+    "description": "Sort by server name"
   },
   "servers.sort.mode": {
     "message": "模式",
-    "description": "按游戏模式排序"
+    "description": "Sort by game mode"
   },
   "servers.sort.language": {
     "message": "语言",
-    "description": "按语言排序"
+    "description": "Sort by language"
   },
   "servers.language.all": {
     "message": "所有语言",
-    "description": "所有语言筛选选项"
+    "description": "All languages filter option"
   },
   "servers.page.heading": {
     "message": "服务器",
-    "description": "服务器页面主标题"
+    "description": "Servers page main heading"
   },
   "servers.page.subtitle": {
     "message": "浏览活跃的SA-MP和open.mp服务器。",
-    "description": "服务器页面副标题"
+    "description": "Servers page subtitle"
   },
   "partners.page.heading": {
     "message": "合作服务器",
-    "description": "合作服务器页面主标题"
+    "description": "Partner servers page main heading"
   },
   "partners.page.subtitle": {
     "message": "浏览官方合作服务器。",
-    "description": "合作服务器页面副标题"
+    "description": "Partner servers page subtitle"
   },
   "notFound.title": {
     "message": "页面未找到",
-    "description": "404页面标题"
+    "description": "404 page title"
   },
   "notFound.imageAlt": {
     "message": "GTA火车任务截图",
-    "description": "404页面图片替代文本"
+    "description": "Alt text for the 404 page image"
   },
   "notFound.home": {
     "message": "首页",
-    "description": "404页面首页按钮"
+    "description": "404 page home button"
   },
   "notFound.docs": {
     "message": "文档",
-    "description": "404页面文档按钮"
+    "description": "404 page documentation button"
   },
   "notFound.servers": {
     "message": "服务器",
-    "description": "404页面服务器按钮"
+    "description": "404 page servers button"
   },
   "serverInfo.gameMode": {
     "message": "游戏模式",
@@ -1338,18 +1398,38 @@
   },
   "theme.docs.sidebar.filterPlaceholder": {
     "message": "筛选文档",
-    "description": "文档侧边栏筛选输入框的占位文本"
+    "description": "Placeholder for the docs sidebar filter input"
   },
   "theme.docs.sidebar.clearFilter": {
     "message": "清除筛选",
-    "description": "清除文档侧边栏筛选的ARIA标签"
+    "description": "ARIA label for clearing the docs sidebar filter"
   },
   "theme.docs.sidebar.filterNoResults": {
     "message": "没有匹配的文档",
-    "description": "文档侧边栏筛选无结果时显示的标题"
+    "description": "Title shown when the docs sidebar filter has no matches"
   },
   "theme.docs.sidebar.filterNoResultsHint": {
     "message": "换个关键词试试。",
-    "description": "文档侧边栏筛选无结果时显示的提示"
+    "description": "Hint shown when the docs sidebar filter has no matches"
+  },
+  "noscript.animations": {
+    "message": "预览动画需要启用 JavaScript。",
+    "description": "Shown on the animations viewer when JavaScript is off"
+  },
+  "noscript.partners": {
+    "message": "合作伙伴列表为实时加载，需要启用 JavaScript。你也可以在 {link} 查看 JSON 数据，其中合作伙伴的 pr 字段为 true。",
+    "description": "Shown on the partners page when JavaScript is off"
+  },
+  "noscript.uid": {
+    "message": "生成器在你的浏览器中运行，需要启用 JavaScript。",
+    "description": "Shown on the UID generator when JavaScript is off"
+  },
+  "serverRow.addressColumn": {
+    "message": "地址",
+    "description": "Server list column"
+  },
+  "noscript.servers": {
+    "message": "服务器列表为实时加载，需要启用 JavaScript。你也可以在 {link} 查看 JSON 数据。",
+    "description": "Shown on the servers page when JavaScript is off"
   }
 }

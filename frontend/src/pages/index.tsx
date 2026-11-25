@@ -1,5 +1,5 @@
 import Link from "@docusaurus/Link";
-import { default as Translate, translate } from "@docusaurus/Translate";
+import Translate, { translate } from "@docusaurus/Translate";
 import CodeBlock from "@theme/CodeBlock";
 import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
@@ -35,12 +35,66 @@ const LAUNCHER_VERSION = "v1.7.0";
 const SERVER_VERSION = "v1.6.7.3218";
 
 const socials = [
-  { labelId: "homepage.social.discord", labelMessage: "Discord icon", icon: FaDiscord, href: "https://discord.com/invite/samp"},
-  { labelId: "homepage.social.facebook", labelMessage: "Facebook icon", icon: FaFacebook, href: "https://www.facebook.com/openmultiplayer"},
-  { labelId: "homepage.social.instagram", labelMessage: "Instagram icon", icon: FaInstagram, href: "https://instagram.com/openmultiplayer/"},
-  { labelId: "homepage.social.twitch", labelMessage: "Twitch icon", icon: FaTwitch, href: "https://twitch.tv/openmultiplayer"},
-  { labelId: "homepage.social.x", labelMessage: "X (formerly Twitter) icon", icon: FaXTwitter, href: "https://x.com/openmultiplayer"},
-  { labelId: "homepage.social.youtube", labelMessage: "YouTube icon", icon: FaYoutube, href: "https://youtube.com/openmultiplayer"},
+  {
+    label: () =>
+      translate({
+        id: "homepage.social.discord",
+        message: "Discord icon",
+        description: "Accessible label and image alt text for homepage social link",
+      }),
+    icon: FaDiscord,
+    href: "https://discord.com/invite/samp",
+  },
+  {
+    label: () =>
+      translate({
+        id: "homepage.social.facebook",
+        message: "Facebook icon",
+        description: "Accessible label and image alt text for homepage social link",
+      }),
+    icon: FaFacebook,
+    href: "https://www.facebook.com/openmultiplayer",
+  },
+  {
+    label: () =>
+      translate({
+        id: "homepage.social.instagram",
+        message: "Instagram icon",
+        description: "Accessible label and image alt text for homepage social link",
+      }),
+    icon: FaInstagram,
+    href: "https://instagram.com/openmultiplayer/",
+  },
+  {
+    label: () =>
+      translate({
+        id: "homepage.social.twitch",
+        message: "Twitch icon",
+        description: "Accessible label and image alt text for homepage social link",
+      }),
+    icon: FaTwitch,
+    href: "https://twitch.tv/openmultiplayer",
+  },
+  {
+    label: () =>
+      translate({
+        id: "homepage.social.x",
+        message: "X (formerly Twitter) icon",
+        description: "Accessible label and image alt text for homepage social link",
+      }),
+    icon: FaXTwitter,
+    href: "https://x.com/openmultiplayer",
+  },
+  {
+    label: () =>
+      translate({
+        id: "homepage.social.youtube",
+        message: "YouTube icon",
+        description: "Accessible label and image alt text for homepage social link",
+      }),
+    icon: FaYoutube,
+    href: "https://youtube.com/openmultiplayer",
+  },
 ];
 
 const NPC_EXAMPLE = `new npc = NPC_Create("Ghost");
@@ -119,11 +173,7 @@ const useLiveTotals = (watched: React.RefObject<HTMLElement | null>) => {
 const Socials = () => (
   <div className={styles.socials}>
     {socials.map((social) => {
-      const label = translate({
-        id: social.labelId,
-        message: social.labelMessage,
-        description: "Accessible label and image alt text for homepage social link",
-      });
+      const label = social.label();
       return (
         <a key={social.href} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={label}>
           <social.icon aria-hidden="true" />

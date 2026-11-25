@@ -2,7 +2,7 @@ import { NoScriptNotice, Page, PageHeader } from "../components/ui/Page";
 import React, { useState, useMemo, useEffect } from "react";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
-import { default as Translate, translate } from '@docusaurus/Translate';
+import Translate, { translate } from "@docusaurus/Translate";
 import {
   animations,
   getLibraries,

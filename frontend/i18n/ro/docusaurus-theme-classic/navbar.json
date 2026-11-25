@@ -23,10 +23,6 @@
     "message": "Parteneri",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "Donează",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "Sigla open.mp",
     "description": "The alt text of navbar logo"

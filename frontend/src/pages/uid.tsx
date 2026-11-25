@@ -1,5 +1,5 @@
 import { NoScriptNotice, Page, PageHeader } from "../components/ui/Page";
-import { default as Translate, translate } from "@docusaurus/Translate";
+import Translate, { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import { ReactNode, useEffect, useState } from "react";
 import { showToast, ToastContainer } from "../components/Toast";

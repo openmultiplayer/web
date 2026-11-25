@@ -1,4 +1,4 @@
-import { default as Translate, translate } from "@docusaurus/Translate";
+import Translate, { translate } from "@docusaurus/Translate";
 import NProgress from "nprogress";
 import React, { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";

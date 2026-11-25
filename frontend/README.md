@@ -8,6 +8,23 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 - **Translations:** Localized content is stored in `i18n/`. Each language has its own subdirectory (e.g., `i18n/es/` for Spanish).
 - **Static Assets:** Images and other static files used in docs are in `static/images/`.
 
+## UI Translations (`code.json`)
+
+UI strings live in `i18n/<locale>/code.json` and are generated from the `translate()` /
+`<Translate>` calls in the source. Update a locale with:
+
+```bash
+npm run write-translations -- --locale <locale>
+```
+
+This only adds missing keys. `message` is the rendered text; `description` is translator
+context only — it is not rendered and `write-translations` resets it to the English
+source, so leave it in English.
+
+Use `import Translate, { translate }` rather than `{ default as Translate }`; aliasing the
+default import hides those keys from the extractor. The command never deletes obsolete
+keys, so clean up unused keys separately.
+
 ## Contributing to Documentation
 
 We welcome contributions to our documentation! Whether you're fixing a typo or adding a new guide, your help is appreciated.

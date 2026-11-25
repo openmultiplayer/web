@@ -23,10 +23,6 @@
     "message": "Socios",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "Donar",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "Logotipo de open.mp",
     "description": "The alt text of navbar logo"
