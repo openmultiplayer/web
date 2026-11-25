@@ -55,14 +55,14 @@ description: SA-MP全室内场景坐标与ID对照表
 
 ## 餐厅与酒吧
 
-| 室内名称       | 室内 ID | X         | Y         | Z         | 预览图                                                              |
-| -------------- | ------- | --------- | --------- | --------- | ------------------------------------------------------------------- |
-| 披萨叠叠乐     | 5       | 372.5565  | -131.3607 | 1001.4922 | ![](https://assets.open.mp/assets/images/interiors/interior22.png)  |
-| 锈斑甜甜圈工坊 | 17      | 378.026   | -190.5155 | 1000.6328 | ![](https://assets.open.mp/assets/images/interiors/interior23.png)  |
-| 汉堡速递       | 10      | 366.0248  | -73.3478  | 1001.5078 | ![](https://assets.open.mp/assets/images/interiors/interior47.png)  |
-| Cluckin' Bell  | 9       | 366.0002  | -9.4338   | 1001.8516 | ![](https://assets.open.mp/assets/images/interiors/interior129.png) |
-| 酒吧           | 11      | 501.9578  | -70.5648  | 998.7578  | ![](https://assets.open.mp/assets/images/interiors/interior138.png) |
-| Lil' Probe Inn | 18      | -227.5703 | 1401.5544 | 27.7656   | ![](https://assets.open.mp/assets/images/interiors/interior86.png)  |
+| 室内名称                | 室内 ID | X         | Y         | Z         | 预览图                                                              |
+| ----------------------- | ------- | --------- | --------- | --------- | ------------------------------------------------------------------- |
+| 料真多披萨              | 5       | 372.5565  | -131.3607 | 1001.4922 | ![](https://assets.open.mp/assets/images/interiors/interior22.png)  |
+| 罗斯蒂·布朗的甜甜圈工坊 | 17      | 378.026   | -190.5155 | 1000.6328 | ![](https://assets.open.mp/assets/images/interiors/interior23.png)  |
+| 吃得饱汉堡              | 10      | 366.0248  | -73.3478  | 1001.5078 | ![](https://assets.open.mp/assets/images/interiors/interior47.png)  |
+| 当当钟                  | 9       | 366.0002  | -9.4338   | 1001.8516 | ![](https://assets.open.mp/assets/images/interiors/interior129.png) |
+| 十个绿瓶子              | 11      | 501.9578  | -70.5648  | 998.7578  | ![](https://assets.open.mp/assets/images/interiors/interior138.png) |
+| 李尔探针小馆            | 18      | -227.5703 | 1401.5544 | 27.7656   | ![](https://assets.open.mp/assets/images/interiors/interior86.png)  |
 
 ## 特殊商店
 
@@ -174,7 +174,7 @@ description: SA-MP全室内场景坐标与ID对照表
 | 妓院 2     | 3       | 961.9308  | -51.9071  | 1001.1172 | ![](https://assets.open.mp/assets/images/interiors/interior3.png)   |
 | 大牧场     | 3       | 1212.1489 | -28.5388  | 1000.9531 | ![](https://assets.open.mp/assets/images/interiors/interior6.png)   |
 | 猪圈夜总会 | 2       | 1204.668  | -13.5429  | 1000.9219 | ![](https://assets.open.mp/assets/images/interiors/interior40.png)  |
-| 俱乐部     | 17      | 493.1443  | -24.2607  | 1000.6797 | ![](https://assets.open.mp/assets/images/interiors/interior64.png)  |
+| 舞厅俱乐部 | 17      | 493.1443  | -24.2607  | 1000.6797 | ![](https://assets.open.mp/assets/images/interiors/interior64.png)  |
 | 范妮妓院   | 6       | 748.4623  | 1438.2378 | 1102.9531 | ![](https://assets.open.mp/assets/images/interiors/interior127.png) |
 
 ## 仓库
