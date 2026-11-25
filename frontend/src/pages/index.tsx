@@ -633,7 +633,15 @@ const RunAServer = () => (
             </Translate>
           </p>
           <div className={styles.promptArt} aria-hidden="true">
-            <JoinPrompt name="Your server" address="192.0.2.1:7777" players="128/500" />
+            <JoinPrompt
+              name={translate({
+                id: "homepage.server.brand.sampleName",
+                message: "Your server",
+                description: "Sample server name in the join dialog artwork",
+              })}
+              address="192.0.2.1:7777"
+              players="128/500"
+            />
           </div>
         </article>
 

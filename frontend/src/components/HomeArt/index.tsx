@@ -1,3 +1,4 @@
+import Translate from "@docusaurus/Translate";
 import React, { useEffect, useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaCar, FaCrosshairs, FaFolderOpen, FaPersonWalking } from "react-icons/fa6";
@@ -167,10 +168,28 @@ export const CppArt = (): React.ReactElement => (
 
 // NPCs going about their day, under the code that made them. Each row swaps between two
 // states on its own clock, so they never change together.
+const NPC_STATES = {
+  onFoot: (
+    <Translate id="homepage.art.npc.onFoot" description="NPC state label in the homepage artwork">
+      On foot
+    </Translate>
+  ),
+  aiming: (
+    <Translate id="homepage.art.npc.aiming" description="NPC state label in the homepage artwork">
+      Aiming
+    </Translate>
+  ),
+  driving: (
+    <Translate id="homepage.art.npc.driving" description="NPC state label in the homepage artwork">
+      Driving
+    </Translate>
+  ),
+};
+
 const NPCS = [
-  { name: "Ghost", first: "On foot", Icon1: FaPersonWalking, second: "Aiming", Icon2: FaCrosshairs },
-  { name: "Wheelie", first: "Driving", Icon1: FaCar, second: "On foot", Icon2: FaPersonWalking },
-  { name: "Rookie", first: "On foot", Icon1: FaPersonWalking, second: "Driving", Icon2: FaCar },
+  { name: "Ghost", first: NPC_STATES.onFoot, Icon1: FaPersonWalking, second: NPC_STATES.aiming, Icon2: FaCrosshairs },
+  { name: "Wheelie", first: NPC_STATES.driving, Icon1: FaCar, second: NPC_STATES.onFoot, Icon2: FaPersonWalking },
+  { name: "Rookie", first: NPC_STATES.onFoot, Icon1: FaPersonWalking, second: NPC_STATES.driving, Icon2: FaCar },
 ];
 
 export const NpcListArt = (): React.ReactElement => (

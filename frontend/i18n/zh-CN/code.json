@@ -6,7 +6,7 @@
     "message": "手头有旧的AMX文件？直接将其载入open.mp服务器，即可与使用SA:MP客户端的友人同游。待你欲升级代码时，敬请参阅我们的技术文档。"
   },
   "feature.fullyBackwardsCompatible.linkText": {
-    "message": "新手指南"
+    "message": "入门指南"
   },
   "feature.newScriptingSystem.title": {
     "message": "全新升级的脚本系统"
@@ -36,22 +36,22 @@
     "message": "查看改进详情"
   },
   "feature.communityDevelopment.title": {
-    "message": "社区驱动的开发模式"
+    "message": "社区驱动开发"
   },
   "feature.communityDevelopment.description": {
     "message": "服务器完全开源，我们珍视所有规模的贡献。无论是参与新版本开发，还是反馈使用问题（纵使我们追求代码完美，漏洞仍在所难免），你的意见皆具价值。"
   },
   "feature.communityDevelopment.linkText": {
-    "message": "访问GitHub组织"
+    "message": "访问 GitHub 组织"
   },
   "feature.cppApi.title": {
-    "message": "可扩展的C++ API"
+    "message": "可扩展的 C++ API"
   },
   "feature.cppApi.description": {
     "message": "除Pawn语言原有功能外，更可调用C++生态的海量库与框架。精通此后，何不通过GitHub开放贡献流程助力服务器进化？"
   },
   "feature.cppApi.linkText": {
-    "message": "查看SDK代码库"
+    "message": "查看 SDK 仓库"
   },
   "partners.server.stats": {
     "message": "{servers}台服务器共有{players}名玩家，平均每台服务器{average}人。"
@@ -598,8 +598,184 @@
     "description": "服务器下载按钮的 Title 属性"
   },
   "homepage.layoutDescription": {
-    "message": "为《侠盗猎车手：圣安地列斯》打造的多人联机模组，完全向下兼容 San Andreas Multiplayer。",
+    "message": "为《侠盗猎车手：圣安地列斯》打造的多人联机模组，完全向后兼容 San Andreas Multiplayer（SA-MP）。",
     "description": "首页 Meta 描述"
+  },
+  "homepage.hero.new": {
+    "message": "新版",
+    "description": "Tag marking a new release"
+  },
+  "homepage.hero.launcher": {
+    "message": "启动器",
+    "description": "Label before the launcher version"
+  },
+  "homepage.hero.server": {
+    "message": "服务器",
+    "description": "Label before the server version"
+  },
+  "homepage.hero.lead": {
+    "message": "为《侠盗猎车手：圣安地列斯》打造的多人联机模组，完全向后兼容 SA-MP。",
+    "description": "Homepage line under the main heading"
+  },
+  "homepage.hero.startPlaying": {
+    "message": "开始游戏",
+    "description": "Homepage hero button to download the launcher and play"
+  },
+  "homepage.hero.runServer": {
+    "message": "搭建服务器",
+    "description": "Homepage hero link to the server section"
+  },
+  "homepage.hero.liveStats": {
+    "message": "{players} 名玩家，分布于 {servers} 台服务器",
+    "description": "Homepage live count of players and servers"
+  },
+  "homepage.hero.download": {
+    "message": "下载",
+    "description": "Homepage hero launcher download button"
+  },
+  "homepage.launcher.title": {
+    "message": "启动器",
+    "description": "Homepage launcher section title"
+  },
+  "homepage.launcher.browse": {
+    "message": "浏览服务器",
+    "description": "Button linking to the server list"
+  },
+  "homepage.features.find.title": {
+    "message": "快速找到心仪的服务器",
+    "description": "Launcher feature title"
+  },
+  "homepage.features.find.copy": {
+    "message": "按名称或游戏模式搜索实时服务器列表，层层筛选，再按你最看重的条件排序。",
+    "description": "Launcher feature description"
+  },
+  "homepage.features.ingame.title": {
+    "message": "无需退出，即可换服",
+    "description": "Launcher feature title"
+  },
+  "homepage.features.ingame.copy": {
+    "message": "游戏中按 F9，即可浏览、切换和重新加入服务器，无需退出。",
+    "description": "Launcher feature description"
+  },
+  "homepage.features.samp.title": {
+    "message": "兼容 SA-MP 服务器",
+    "description": "Launcher feature title"
+  },
+  "homepage.features.samp.copy": {
+    "message": "同一份列表，畅连 open.mp 与 SA-MP 服务器。",
+    "description": "Launcher feature description"
+  },
+  "homepage.features.nicknames.title": {
+    "message": "常用昵称，随手可用",
+    "description": "Launcher feature title"
+  },
+  "homepage.features.nicknames.copy": {
+    "message": "最近用过的五个昵称，一键即可取用；还能为每台服务器分别记住专属昵称。",
+    "description": "Launcher feature description"
+  },
+  "homepage.features.favorites.title": {
+    "message": "收藏一并带走",
+    "description": "Launcher feature title"
+  },
+  "homepage.features.favorites.copy": {
+    "message": "右键点击任意服务器即可收藏，还可从 SA-MP 导入收藏列表。",
+    "description": "Launcher feature description"
+  },
+  "homepage.features.security.title": {
+    "message": "已知 RCE 与漏洞利用均已修复",
+    "description": "Launcher feature title"
+  },
+  "homepage.features.security.copy": {
+    "message": "每当新的 RCE 或漏洞利用出现，我们都会在客户端中主动修复，让你加入被入侵的服务器时更加安全。",
+    "description": "Launcher feature description"
+  },
+  "homepage.features.encrypted.title": {
+    "message": "open.mp 服务器全程加密",
+    "description": "Launcher feature title"
+  },
+  "homepage.features.encrypted.copy": {
+    "message": "客户端与 open.mp 服务器之间的通信全程加密。",
+    "description": "Launcher feature description"
+  },
+  "homepage.server.title": {
+    "message": "服务器",
+    "description": "Homepage server section title"
+  },
+  "homepage.server.download": {
+    "message": "下载",
+    "description": "Button label for downloading the server"
+  },
+  "homepage.server.docs": {
+    "message": "阅读文档",
+    "description": "Button label for documentation"
+  },
+  "homepage.server.compatible.copy": {
+    "message": "手头还留着旧的 .amx 文件？直接载入 open.mp 服务器，用 SA-MP 客户端也能加入。",
+    "description": "Server feature description"
+  },
+  "homepage.server.platforms.title": {
+    "message": "在你的硬件上运行",
+    "description": "Server feature title"
+  },
+  "homepage.server.platforms.copy": {
+    "message": "Windows 和 Linux 提供稳定版；x64、ARM 和 macOS 则仅提供每日构建。",
+    "description": "Server feature description"
+  },
+  "homepage.server.platforms.stable": {
+    "message": "稳定版",
+    "description": "Legend: builds marked as stable"
+  },
+  "homepage.server.platforms.nightlyBuilds": {
+    "message": "每日构建",
+    "description": "Legend: builds only available nightly"
+  },
+  "homepage.server.scripting.copy": {
+    "message": "熟悉的 Pawn 语言，配上全新编译器与更丰富的函数。",
+    "description": "Server feature description"
+  },
+  "homepage.server.scripting.languages": {
+    "message": "社区还支持 C++、Rust、TypeScript 等多种语言。",
+    "description": "Other languages the server supports"
+  },
+  "homepage.server.npc.title": {
+    "message": "内置 NPC",
+    "description": "Server feature title"
+  },
+  "homepage.server.npc.copy": {
+    "message": "无需插件，即可完全操控步行或驾驶的 NPC。",
+    "description": "Server feature description"
+  },
+  "homepage.server.cpp.copy": {
+    "message": "Pawn 能实现的一切，再添 C++ 浩瀚的库与框架生态。",
+    "description": "Server feature description"
+  },
+  "homepage.server.brand.title": {
+    "message": "在启动器中脱颖而出",
+    "description": "Server feature title"
+  },
+  "homepage.server.brand.copy": {
+    "message": "向浏览服务器的玩家展示你的横幅、Logo 与 Discord 链接。",
+    "description": "Server feature description"
+  },
+  "homepage.server.brand.sampleName": {
+    "message": "你的服务器",
+    "description": "Sample server name in the join dialog artwork"
+  },
+  "homepage.server.community.copy": {
+    "message": "服务器完全开源，无论贡献大小，我们都欢迎。",
+    "description": "Server feature description"
+  },
+  "homepage.art.npc.onFoot": {
+    "message": "步行",
+    "description": "NPC state label in the homepage artwork"
+  },
+  "homepage.art.npc.aiming": {
+    "message": "瞄准",
+    "description": "NPC state label in the homepage artwork"
+  },
+  "homepage.art.npc.driving": {
+    "message": "驾驶",
+    "description": "NPC state label in the homepage artwork"
   },
   "uid.toast.copiedTitle": {
     "message": "已复制",
@@ -838,11 +1014,11 @@
     "description": "Warning shown on scripting docs pages for APIs added in a specific server version"
   },
   "carousel.previous": {
-    "message": "上一个",
+    "message": "上一张",
     "description": "Carousel previous button"
   },
   "carousel.next": {
-    "message": "下一个",
+    "message": "下一张",
     "description": "Carousel next button"
   },
   "theme.blog.post.paginator.navAriaLabel": {
