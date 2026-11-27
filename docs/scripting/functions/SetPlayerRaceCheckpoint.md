@@ -1,0 +1,89 @@
+---
+title: "SetPlayerRaceCheckpoint | open.mp"
+description: "Creates a race checkpoint."
+canonical: https://open.mp/docs/scripting/functions/SetPlayerRaceCheckpoint
+language: en
+---
+
+# SetPlayerRaceCheckpoint
+
+## Description
+
+Creates a race checkpoint. When the player enters it, the [OnPlayerEnterRaceCheckpoint](https://open.mp/docs/scripting/callbacks/OnPlayerEnterRaceCheckpoint) callback is called.
+
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to set the checkpoint for |
+| CP\_TYPE:type | [Type of race checkpoint](https://open.mp/docs/scripting/resources/race-checkpoint-types) |
+| Float:centreX | X-Coordinate |
+| Float:centreY | Y-Coordinate |
+| Float:centreZ | Z-Coordinate |
+| Float:nextX | X-Coordinate of the next point, for the arrow facing direction |
+| Float:nextY | Y-Coordinate of the next point, for the arrow facing direction |
+| Float:nextZ | Z-Coordinate of the next point, for the arrow facing direction |
+| Float:radius | Size (diameter) of the checkpoint |
+
+## Returns
+
+**true** - The function executed successfully.
+
+**false** - The function failed to execute. This means the player specified does not exist.
+
+## Examples
+
+```c
+SetPlayerRaceCheckpoint(playerid, CP_TYPE_GROUND_NORMAL, 644.3091, 1767.0223, 4.9970, 650.6734, 1812.0367, 4.9970, 3.0);
+```
+
+Another example:
+
+```c
+//from Yagu's race filterscript, (c) by Yagu
+public SetRaceCheckpoint(playerid, Airrace, target, next)
+{
+    if (next == -1 && Airrace == 0)
+    {
+        SetPlayerRaceCheckpoint(playerid, CP_TYPE_GROUND_FINISH, RaceCheckpoints[target][0], RaceCheckpoints[target][1], RaceCheckpoints[target][2], 0.0, 0.0, 0.0, CPsize);
+    }
+    else if (next == -1 && Airrace == 1)
+    {
+        SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_FINISH, RaceCheckpoints[target][0], RaceCheckpoints[target][1], RaceCheckpoints[target][2], 0.0, 0.0, 0.0, CPsize);
+    }
+    else if (Airrace == 1)
+    {
+        SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_NORMAL, RaceCheckpoints[target][0], RaceCheckpoints[target][1], RaceCheckpoints[target][2], RaceCheckpoints[next][0], RaceCheckpoints[next][1], RaceCheckpoints[next][2], CPsize);
+    }
+    else
+    {
+        SetPlayerRaceCheckpoint(playerid, CP_TYPE_GROUND_NORMAL, RaceCheckpoints[target][0], RaceCheckpoints[target][1], RaceCheckpoints[target][2], RaceCheckpoints[next][0], RaceCheckpoints[next][1], RaceCheckpoints[next][2], CPsize);
+    }
+}
+```
+
+## Notes
+
+warning
+
+-   Race checkpoints are asynchronous, meaning only one can be shown at a time. To 'stream' race checkpoints (only show them when players are close enough), use a race checkpoint streamer.
+-   Race checkpoints created on server-created objects ([CreateObject](https://open.mp/docs/scripting/functions/CreateObject)/[CreatePlayerObject](https://open.mp/docs/scripting/functions/CreatePlayerObject)) will appear down on the 'real' ground, but will still function correctly.
+
+## Related Functions
+
+-   [SetPlayerCheckpoint](https://open.mp/docs/scripting/functions/SetPlayerCheckpoint): Create a checkpoint for a player.
+-   [DisablePlayerCheckpoint](https://open.mp/docs/scripting/functions/DisablePlayerCheckpoint): Disable the player's current checkpoint.
+-   [IsPlayerInCheckpoint](https://open.mp/docs/scripting/functions/IsPlayerInCheckpoint): Check if a player is in a checkpoint.
+-   [DisablePlayerRaceCheckpoint](https://open.mp/docs/scripting/functions/DisablePlayerRaceCheckpoint): Disable the player's current race checkpoint.
+-   [GetPlayerRaceCheckpoint](https://open.mp/docs/scripting/functions/GetPlayerRaceCheckpoint): Get the location of the current race checkpoint.
+-   [IsPlayerInRaceCheckpoint](https://open.mp/docs/scripting/functions/IsPlayerInRaceCheckpoint): Check if a player is in a race checkpoint.
+-   [IsPlayerRaceCheckpointActive](https://open.mp/docs/scripting/functions/IsPlayerRaceCheckpointActive): Check if the player currently has a race checkpoint visible.
+
+## Related Callbacks
+
+-   [OnPlayerEnterCheckpoint](https://open.mp/docs/scripting/callbacks/OnPlayerEnterCheckpoint): Called when a player enters a checkpoint.
+-   [OnPlayerLeaveCheckpoint](https://open.mp/docs/scripting/callbacks/OnPlayerLeaveCheckpoint): Called when a player leaves a checkpoint.
+-   [OnPlayerEnterRaceCheckpoint](https://open.mp/docs/scripting/callbacks/OnPlayerEnterRaceCheckpoint): Called when a player enters a race checkpoint.
+-   [OnPlayerLeaveRaceCheckpoint](https://open.mp/docs/scripting/callbacks/OnPlayerLeaveRaceCheckpoint): Called when a player leaves a race checkpoint.
+
+## Related Resources
+
+-   [Types of race checkpoints](https://open.mp/docs/scripting/resources/race-checkpoint-types).

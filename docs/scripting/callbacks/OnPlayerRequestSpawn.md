@@ -1,0 +1,53 @@
+---
+title: "OnPlayerRequestSpawn | open.mp"
+description: "This callback is called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button."
+canonical: https://open.mp/docs/scripting/callbacks/OnPlayerRequestSpawn
+language: en
+---
+
+# OnPlayerRequestSpawn
+
+## Description
+
+This callback is called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.
+
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player that requested to spawn. |
+
+## Returns
+
+Returning **0** in this callback will prevent the player from spawning.
+
+It is always called first in filterscripts so returning 0 there also blocks other scripts from processing it.
+
+## Examples
+
+```c
+public OnPlayerRequestSpawn(playerid)
+{
+    if (!IsPlayerAdmin(playerid))
+    {
+        SendClientMessage(playerid, -1, "You may not spawn.");
+        return 0;
+    }
+    return 1;
+}
+```
+
+## Notes
+
+note
+
+This callback can also be called by NPC.
+
+tip
+
+To prevent players from spawning with certain classes, the last viewed class must be saved in a variable in [OnPlayerRequestClass](https://open.mp/docs/scripting/callbacks/OnPlayerRequestClass).
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another.
+
+-   [OnPlayerSpawn](https://open.mp/docs/scripting/callbacks/OnPlayerSpawn): This callback is called when a player spawns.
+-   [OnPlayerRequestClass](https://open.mp/docs/scripting/callbacks/OnPlayerRequestClass): This callback is called when a player changes class at class selection.

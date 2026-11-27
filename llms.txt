@@ -1,0 +1,30 @@
+# open.mp
+
+> open.mp (Open Multiplayer) is a multiplayer mod for Grand Theft Auto: San Andreas, fully backwards compatible with SA-MP. This site has its documentation, scripting reference, downloads, server list and blog.
+
+## When to use this site
+
+- Install or run the open.mp launcher or server.
+- Look up Pawn scripting functions, callbacks and constants for open.mp and SA-MP.
+- Move a SA-MP gamemode or server to open.mp.
+- Find current launcher and server releases, or list public servers.
+
+## Start here
+
+- [Agent instructions](https://open.mp/agent-instructions.md)
+- [Every page](https://open.mp/sitemap.md)
+- [Documentation](https://open.mp/docs.md)
+- [Server installation](https://open.mp/docs/server/Installation.md)
+- [Launcher downloads](https://open.mp/downloads/launcher.md)
+- [Server downloads](https://open.mp/downloads/server.md)
+- [Changelog](https://open.mp/docs/changelog.md)
+
+## Data
+
+- [Public server list as JSON](https://api.open.mp/servers/)
+
+## Optional
+
+- [Blog](https://open.mp/blog.md)
+- [Animations reference](https://open.mp/animations.md)
+- [Source code](https://github.com/openmultiplayer)

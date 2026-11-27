@@ -1,0 +1,43 @@
+---
+title: "GetPlayerDrunkLevel | open.mp"
+description: "Checks the player's level of drunkenness."
+canonical: https://open.mp/docs/scripting/functions/GetPlayerDrunkLevel
+language: en
+---
+
+# GetPlayerDrunkLevel
+
+## Description
+
+Checks the player's level of drunkenness. If the level is less than 2000, the player is sober. The player's level of drunkness goes down slowly automatically (26 levels per second) but will always reach 2000 at the end. The higher drunkenness levels affect the player's camera, and the car driving handling. The level of drunkenness increases when the player drinks from a bottle (you can use [SetPlayerSpecialAction](https://open.mp/docs/scripting/functions/SetPlayerSpecialAction) to give them bottles).
+
+| Name | Description |
+| --- | --- |
+| playerid | The player you want to check the drunkenness level of. |
+
+## Returns
+
+An integer with the level of drunkenness of the player.
+
+## Examples
+
+```c
+public OnPlayerStateChange(playerid, oldstate, newstate)
+{
+    if (newstate == PLAYER_STATE_DRIVER && GetPlayerDrunkLevel(playerid) > 1999)
+    {
+        SendClientMessage(playerid, 0xFFFFFFFF, "Don't drink and drive!");
+        RemovePlayerFromVehicle(playerid);
+    }
+}
+```
+
+## Notes
+
+tip
+
+You can use [ApplyAnimation](https://open.mp/docs/scripting/functions/ApplyAnimation) to apply a drunk animation.
+
+## Related Functions
+
+-   [SetPlayerDrunkLevel](https://open.mp/docs/scripting/functions/SetPlayerDrunkLevel): Set a player's drunk level.

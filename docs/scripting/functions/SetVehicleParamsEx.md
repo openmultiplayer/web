@@ -1,0 +1,95 @@
+---
+title: "SetVehicleParamsEx | open.mp"
+description: "Sets a vehicle's parameters for all players."
+canonical: https://open.mp/docs/scripting/functions/SetVehicleParamsEx
+language: en
+---
+
+# SetVehicleParamsEx
+
+## Description
+
+Sets a vehicle's parameters for all players.
+
+| Name | Description |
+| --- | --- |
+| vehicleid | The ID of the vehicle to set the parameters of. |
+| engine | Engine status. 0 - Off, 1 - On. |
+| lights | Light status. 0 - Off, 1 - On. |
+| alarm | Vehicle alarm status. If on, the alarm starts. 0 - Off, 1 - On. |
+| doors | Door lock status. 0 - Unlocked, 1 - Locked. |
+| bonnet | Bonnet (hood) status. 0 - Closed, 1 - Open. |
+| boot | Boot/trunk status. 0 - Closed, 1 - Open. |
+| objective | Toggle the objective arrow above the vehicle. 0 - Off, 1 - On. |
+
+## Returns
+
+**true** - The function executed successfully.
+
+**false** - The function failed to execute. This means the vehicle does not exist.
+
+## Examples
+
+```c
+// If setting a single parameter, you should obtain the current parameters so they aren't ALL changed
+new
+    engine, lights, alarm, doors, bonnet, boot, objective;
+
+// Somewhere where you create the vehicle..
+GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective); // ONLY the engine param was changed to VEHICLE_PARAMS_ON (1)
+```
+
+```c
+// On top of our script, declaring a global variable
+new
+    gVehicleAlarmTimer[MAX_VEHICLES] = {0, ...};
+
+// The function
+SetVehicleParamsEx_Fixed(vehicleid, &bool:engine, &bool:lights, &bool:alarm, &bool:doors, &bool:bonnet, &bool:boot, &bool:objective)
+{
+    SetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+    if (alarm)
+    {
+        // Kill the timer, reset the timer identifier and then restart it if it was already running
+        KillTimer(gVehicleAlarmTimer[vehicleid]);
+        gVehicleAlarmTimer[vehicleid] = 0;
+        gVehicleAlarmTimer[vehicleid] = SetTimerEx("DisableVehicleAlarm", 20000, false, "d", vehicleid);
+    }
+}
+
+forward DisableVehicleAlarm(vehicleid);
+public DisableVehicleAlarm(vehicleid)
+{
+    new
+        engine, lights, alarm, doors, bonnet, boot, objective;
+
+    GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+    if (alarm == VEHICLE_PARAMS_ON)
+    {
+        SetVehicleParamsEx(vehicleid, engine, lights, VEHICLE_PARAMS_OFF, doors, bonnet, boot, objective);
+    }
+
+    // Reset the timer identifier
+    gVehicleAlarmTimer[vehicleid] = 0;
+}
+```
+
+## Definitions
+
+-   `VEHICLE_PARAMS_UNSET` (-1)
+-   `VEHICLE_PARAMS_OFF` (0)
+-   `VEHICLE_PARAMS_ON` (1)
+
+## Notes
+
+note
+
+-   The alarm will not reset when finished, you'll need to reset it by yourself with this function.
+-   Lights also operate during the day (only when [ManualVehicleEngineAndLights](https://open.mp/docs/scripting/functions/ManualVehicleEngineAndLights) is enabled).
+
+## Related Functions
+
+-   [GetVehicleParamsEx](https://open.mp/docs/scripting/functions/GetVehicleParamsEx): Get a vehicle's parameters.
+-   [SetVehicleParamsForPlayer](https://open.mp/docs/scripting/functions/SetVehicleParamsForPlayer): Set the parameters of a vehicle for a player.
+-   [UpdateVehicleDamageStatus](https://open.mp/docs/scripting/functions/UpdateVehicleDamageStatus): Update the vehicle damage.

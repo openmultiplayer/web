@@ -1,0 +1,66 @@
+---
+title: "DisableMenuRow | open.mp"
+description: "Disable a specific row in a menu for all players."
+canonical: https://open.mp/docs/scripting/functions/DisableMenuRow
+language: en
+---
+
+# DisableMenuRow
+
+## Description
+
+Disable a specific row in a menu **for all players**. It will be greyed-out and can't be selected by players.
+
+| Name | Description |
+| --- | --- |
+| Menu:menuid | The ID of the menu to disable a row of. Ensure this is valid, as an invalid menu ID will crash the entire server. |
+| row | The ID of the row to disable (rows start at 0). |
+
+## Returns
+
+This function always returns **1**, even if the function fails.
+
+If an invalid row is specified, nothing will happen.
+
+## Examples
+
+```c
+new Menu:WeaponMenu;
+
+public OnGameModeInit()
+{
+    WeaponMenu = CreateMenu("Weapons", 1, 50.0, 180.0, 200.0, 200.0);
+    AddMenuItem(WeaponMenu, 0, "Rocket Launcher");
+    AddMenuItem(WeaponMenu, 0, "Flamethrower");
+    AddMenuItem(WeaponMenu, 0, "Minigun");
+    AddMenuItem(WeaponMenu, 0, "Grenades");
+    return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/disablemenu", true))
+    {
+        DisableMenuRow(WeaponMenu, 2); //Disable the "Minigun" row
+        return 1;
+    }
+    return 1;
+}
+```
+
+## Notes
+
+warning
+
+Crashes when passed an invalid menu ID. (Fixed in open.mp)
+
+note
+
+This function disabled the specified menu row for **all players**. There is no function to disable a menu row for a specific player. You'd have to create two menus - one with a row disabled, and one without. Or one per player.
+
+## Related Functions
+
+-   [CreateMenu](https://open.mp/docs/scripting/functions/CreateMenu): Create a menu.
+-   [DestroyMenu](https://open.mp/docs/scripting/functions/DestroyMenu): Destroy a menu.
+-   [AddMenuItem](https://open.mp/docs/scripting/functions/AddMenuItem): Add an item to a menu.
+-   [IsMenuRowDisabled](https://open.mp/docs/scripting/functions/IsMenuRowDisabled): Check if a menu row is disabled.

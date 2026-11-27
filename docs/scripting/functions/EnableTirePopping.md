@@ -1,0 +1,45 @@
+---
+title: "EnableTirePopping | open.mp"
+description: "With this function you can enable or disable tire popping."
+canonical: https://open.mp/docs/scripting/functions/EnableTirePopping
+language: en
+---
+
+# EnableTirePopping
+
+## Description
+
+With this function you can enable or disable tire popping.
+
+| Name | Description |
+| --- | --- |
+| bool:enable | 'true' to enable, 'false' to disable tire popping. |
+
+## Returns
+
+This function does not return any specific values.
+
+## Examples
+
+```c
+public OnGameModeInit()
+{
+    // This will disable tire popping on your gamemode.
+    EnableTirePopping(false);
+    return 1;
+}
+```
+
+## Notes
+
+warning
+
+This function was removed in SA-MP 0.3.
+
+note
+
+Tire popping is enabled by default. If you want to disable tire popping, you'll have to manually script it using [OnVehicleDamageStatusUpdate](https://open.mp/docs/scripting/callbacks/OnVehicleDamageStatusUpdate).
+
+## Related Functions
+
+-   [SetPlayerTeam](https://open.mp/docs/scripting/functions/SetPlayerTeam): Set a player's team.

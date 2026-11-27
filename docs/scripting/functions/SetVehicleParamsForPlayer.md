@@ -1,0 +1,128 @@
+---
+title: "SetVehicleParamsForPlayer | open.mp"
+description: "Set the parameters of a vehicle for a player."
+canonical: https://open.mp/docs/scripting/functions/SetVehicleParamsForPlayer
+language: en
+---
+
+# SetVehicleParamsForPlayer
+
+## Description
+
+Set the parameters of a vehicle for a player.
+
+| Name | Description |
+| --- | --- |
+| vehicle | The ID of the vehicle to set the parameters of. |
+| playerid | The ID of the player to set the vehicle's parameters for. |
+| objective | **VEHICLE\_PARAMS\_OFF** to disable the objective or **VEHICLE\_PARAMS\_ON** to show it. This is a bobbing yellow arrow above the vehicle. |
+| doorslocked | **VEHICLE\_PARAMS\_OFF** to unlock the doors or **VEHICLE\_PARAMS\_ON** to lock them. |
+
+## Returns
+
+**true** - The function executed successfully.
+
+**false** - The function failed to execute. The player and/or vehicle specified do not exist.
+
+## Examples
+
+```c
+// sometime earlier:
+SetVehicleParamsForPlayer(iPlayerVehicle, iPlayerID, VEHICLE_PARAMS_ON, VEHICLE_PARAMS_OFF);
+
+// sometime later when you want the vehicle to respawn:
+new
+    iEngine, iLights, iAlarm,
+    iDoors, iBonnet, iBoot,
+    iObjective;
+
+GetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, iObjective);
+SetVehicleParamsEx(iPlayerVehicle, iEngine, iLights, iAlarm, iDoors, iBonnet, iBoot, VEHICLE_PARAMS_OFF);
+```
+
+```c
+// Locks own car for all players, except the player who used the command.
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/lock", true))
+    {
+        if (!IsPlayerInAnyVehicle(playerid))
+        {
+            return SendClientMessage(playerid, 0xFFFFFFAA, "You have to be inside a vehicle.");
+        }
+
+        for (new i = 0; i < MAX_PLAYERS; i++)
+        {
+            if (i == playerid)
+            {
+                continue;
+            }
+            SetVehicleParamsForPlayer(GetPlayerVehicleID(playerid), i, false, true);
+        }
+        return 1;
+    }
+    return 0;
+}
+```
+
+```c
+// Will show vehicle markers for players streaming in for 0.3a+
+new iVehicleObjective[MAX_VEHICLES][2];
+
+public OnGameModeInit() //Or another callback
+{
+    new temp = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0, 0, -1); //ID 1
+    iVehicleObjective[temp][0] = VEHICLE_PARAMS_ON; //Marker
+    iVehicleObjective[temp][1] = VEHICLE_PARAMS_OFF; //Door Lock
+    return 1;
+}
+
+stock SetVehicleParamsForPlayerEx(vehicleid, playerid, objective, doorslocked)
+{
+    SetVehicleParamsForPlayer(vehicleid, playerid, objective, doorslocked);
+    iVehicleObjective[vehicleid][0] = objective;
+    iVehicleObjective[vehicleid][1] = doorslocked;
+}
+
+public OnVehicleStreamIn(vehicleid, forplayerid)
+{
+    SetVehicleParamsForPlayer(vehicleid, forplayerid, iVehicleObjective[vehicleid][0], iVehicleObjective[vehicleid][1]);
+}
+```
+
+Another way by theAlone
+
+```c
+//Top
+new myMarkedCar;
+
+public OnGameModeInit() //Or another callback
+{
+    myMarkedCar = AddStaticVehicleEx(400, 0.0, 0.0, 5.0, 0.0, 0, 0, -1); // For example: Black Landstalker near Blueberry Acres
+    return 1;
+}
+
+//Whatever your want
+public OnVehicleStreamIn(vehicleid, forplayerid)
+{
+    if (vehicleid == myMarkedCar)
+    {
+        SetVehicleParamsForPlayer(myMarkedCar, forplayerid, VEHICLE_PARAMS_ON, VEHICLE_PARAMS_OFF); // marker can be visible only if the vehicle streamed for player
+    }
+    return 1;
+}
+```
+
+## Notes
+
+note
+
+Vehicles must be [respawned](https://open.mp/docs/scripting/functions/SetVehicleToRespawn) for the 'objective' to be removed. This can be circumvented somewhat using [GetVehicleParamsEx](https://open.mp/docs/scripting/functions/GetVehicleParamsEx)/[SetVehicleParamsEx](https://open.mp/docs/scripting/functions/SetVehicleParamsEx) which do not require the vehicle to be respawned (see the first example above). It is worth noting however that the objective will be disabled on a global scale, and this is only useful if only one player has the vehicle as an objective.
+
+warning
+
+You will have to reapply this function when [OnVehicleStreamIn](https://open.mp/docs/scripting/callbacks/OnVehicleStreamIn) is called.
+
+## Related Functions
+
+-   [SetVehicleParamsEx](https://open.mp/docs/scripting/functions/SetVehicleParamsEx): Sets a vehicle's params for all players.

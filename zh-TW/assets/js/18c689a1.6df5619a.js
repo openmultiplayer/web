@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkomp_web=self.webpackChunkomp_web||[]).push([["14645"],{9005(e){e.exports=JSON.parse('{"metadata":{"permalink":"/zh-TW/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":14,"previousPage":"/zh-TW/blog","blogDescription":"\u90E8\u843D\u683C","blogTitle":"\u90E8\u843D\u683C"}}')}}]);

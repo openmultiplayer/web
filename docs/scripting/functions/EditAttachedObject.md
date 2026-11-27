@@ -1,0 +1,69 @@
+---
+title: "EditAttachedObject | open.mp"
+description: "Enter edition mode for an attached object."
+canonical: https://open.mp/docs/scripting/functions/EditAttachedObject
+language: en
+---
+
+# EditAttachedObject
+
+## Description
+
+Enter edition mode for an attached object.
+
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player to enter in to edition mode |
+| index | The index (slot) of the attached object to edit |
+
+## Returns
+
+**1** on success and **0** on failure.
+
+## Examples
+
+```c
+public OnPlayerSpawn(playerid)
+{
+    SetPlayerAttachedObject(playerid, 0, 1337, 2);
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/edit", true))
+    {
+        EditAttachedObject(playerid, 0);
+        SendClientMessage(playerid, 0xFFFFFFFF, "SERVER: You now edit your attached object on index slot 0!");
+        return 1;
+    }
+    return 0;
+}
+```
+
+## Notes
+
+note
+
+There are 7 clickable buttons in edition mode. The three single icons that have X/Y/Z on them can be dragged to edit position/rotation/scale. The four buttons in a row are to select the edition mode and save edition: Move, Rotate, Scale and Save. Clicking Save will call [OnPlayerEditAttachedObject](https://open.mp/docs/scripting/callbacks/OnPlayerEditAttachedObject).
+
+tip
+
+You can move the camera while editing by pressing and holding the **spacebar** (or **W** in vehicle) and moving your mouse.
+
+warning
+
+Players will be able to scale objects up to a very large or negative value size. Limits should be put in place using [OnPlayerEditAttachedObject](https://open.mp/docs/scripting/callbacks/OnPlayerEditAttachedObject) to abort the edit or clip the scale values.
+
+## Related Functions
+
+-   [SetPlayerAttachedObject](https://open.mp/docs/scripting/functions/SetPlayerAttachedObject): Attach an object to a player
+-   [RemovePlayerAttachedObject](https://open.mp/docs/scripting/functions/RemovePlayerAttachedObject): Remove an attached object from a player
+-   [IsPlayerAttachedObjectSlotUsed](https://open.mp/docs/scripting/functions/IsPlayerAttachedObjectSlotUsed): Check whether an object is attached to a player in a specified index
+-   [EditObject](https://open.mp/docs/scripting/functions/EditObject): Edit an object.
+-   [EditPlayerObject](https://open.mp/docs/scripting/functions/EditPlayerObject): Edit an object.
+-   [SelectObject](https://open.mp/docs/scripting/functions/SelectObject): Select an object.
+-   [CancelEdit](https://open.mp/docs/scripting/functions/CancelEdit): Cancel the edition of an object.
+
+## Related Callbacks
+
+-   [OnPlayerEditAttachedObject](https://open.mp/docs/scripting/callbacks/OnPlayerEditAttachedObject): Called when a player finishes editing an attached object.

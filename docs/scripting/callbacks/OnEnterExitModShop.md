@@ -1,0 +1,57 @@
+---
+title: "OnEnterExitModShop | open.mp"
+description: "This callback is called when a player enters or exits a mod shop."
+canonical: https://open.mp/docs/scripting/callbacks/OnEnterExitModShop
+language: en
+---
+
+# OnEnterExitModShop
+
+## Description
+
+This callback is called when a player enters or exits a mod shop.
+
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player that entered or exited the modshop |
+| enterexit | **1** if the player entered or **0** if they exited |
+| interiorid | The [interior ID](https://open.mp/docs/scripting/resources/interiorids#modding-shops) of the modshop that the player is entering (or 0 if exiting) |
+
+## Returns
+
+It is always called first in filterscripts.
+
+## Examples
+
+```c
+public OnEnterExitModShop(playerid, enterexit, interiorid)
+{
+    if (enterexit == 0) // If enterexit is 0, this means they are exiting
+    {
+        SendClientMessage(playerid, COLOR_WHITE, "Nice car! You have been taxed $100.");
+        GivePlayerMoney(playerid, -100);
+    }
+    return 1;
+}
+```
+
+## Notes
+
+warning
+
+**Known Bug(s):** Players collide when they get into the same mod shop.
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another.
+
+-   [OnVehicleMod](https://open.mp/docs/scripting/callbacks/OnVehicleMod): This callback is called when a vehicle is modded.
+-   [OnVehicleRespray](https://open.mp/docs/scripting/callbacks/OnVehicleRespray): This callback is called when a player exits a mod shop, even if the colors weren't changed.
+-   [OnVehiclePaintjob](https://open.mp/docs/scripting/callbacks/OnVehiclePaintjob): This callback is called when a player previews a vehicle paintjob inside a mod shop.
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another.
+
+-   [IsPlayerInModShop](https://open.mp/docs/scripting/functions/IsPlayerInModShop): Check if the player is in the mod shop.
+-   [AddVehicleComponent](https://open.mp/docs/scripting/functions/AddVehicleComponent): Add a component to a vehicle.

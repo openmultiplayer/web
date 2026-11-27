@@ -1,0 +1,83 @@
+---
+title: "OnNPCTakeDamage | open.mp"
+description: "This callback is called when an NPC takes damage."
+canonical: https://open.mp/docs/scripting/callbacks/OnNPCTakeDamage
+language: en
+---
+
+# OnNPCTakeDamage
+
+warning
+
+This function was added in omp v1.5.8.3079 and will not work in earlier versions!
+
+## Description
+
+This callback is called when an NPC takes damage from a player or another NPC.
+
+| Name | Description |
+| --- | --- |
+| npcid | The ID of the NPC that took damage |
+| issuerid | The ID of the player/NPC that caused the damage |
+| Float:amount | The amount of damage that was taken |
+| WEAPON:weaponid | The weapon ID used to cause the damage |
+| bodypart | The [body part](https://open.mp/docs/scripting/resources/bodyparts) that was hit |
+
+## Returns
+
+1 - Callback will not be called in other filterscripts.
+
+0 - Allows this callback to be called in other filterscripts.
+
+It is always called first in filterscripts so returning 1 there blocks other filterscripts from processing it.
+
+## Examples
+
+```c
+public OnNPCTakeDamage(npcid, issuerid, Float:amount, WEAPON:weaponid, bodypart)
+{
+    // Only notify players tracking this NPC
+    for (new playerid = 0; playerid < MAX_PLAYERS; playerid++)
+    {
+        if (!IsPlayerConnected(playerid))
+            continue;
+
+        if (PlayerNPC[playerid] == npcid)
+        {
+            if (issuerid == INVALID_PLAYER_ID)
+            {
+                SendClientMessage(playerid, 0xFF8800FF, "NPC %d took %.1f damage (weapon: %d, bodypart: %d)",
+                    npcid, amount, _:weaponid, bodypart);
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xFF8800FF, "NPC %d took %.1f damage from player %d (weapon: %d, bodypart: %d)",
+                    npcid, amount, issuerid, _:weaponid, bodypart);
+            }
+        }
+    }
+    return 1;
+}
+```
+
+## Notes
+
+-   This callback is called before the damage is actually applied to the NPC
+-   Returning `false` will NOT prevent the damage from being applied
+-   The `issuerid` parameter will be `INVALID_PLAYER_ID` if damage is not caused by player
+-   Body parts use the same constants as `OnPlayerTakeDamage`
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another.
+
+-   [NPC\_GetHealth](https://open.mp/docs/scripting/functions/NPC_GetHealth): Get NPC's current health
+-   [NPC\_SetHealth](https://open.mp/docs/scripting/functions/NPC_SetHealth): Set NPC's health
+-   [NPC\_GetArmour](https://open.mp/docs/scripting/functions/NPC_GetArmour): Get NPC's armor
+-   [NPC\_SetArmour](https://open.mp/docs/scripting/functions/NPC_SetArmour): Set NPC's armor
+
+## Related Callbacks
+
+-   [OnNPCGiveDamage](https://open.mp/docs/scripting/callbacks/OnNPCGiveDamage): Called when an NPC gives damage to a player
+-   [OnNPCDeath](https://open.mp/docs/scripting/callbacks/OnNPCDeath): Called when an NPC dies
+-   [OnPlayerTakeDamage](https://open.mp/docs/scripting/callbacks/OnPlayerTakeDamage): Called when a player takes damage

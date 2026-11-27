@@ -1,0 +1,56 @@
+---
+title: "floatsin | open.mp"
+description: "Get the sine from a given angle."
+canonical: https://open.mp/docs/scripting/functions/floatsin
+language: en
+---
+
+# floatsin
+
+## Description
+
+Get the [sine](https://en.wikipedia.org/wiki/Sine_and_cosine) from a given angle. The input angle may be in radians, degrees or grades.
+
+| Name | Description |
+| --- | --- |
+| Float:value | The angle from which to get the sine. |
+| anglemode:mode | The [angle mode](https://open.mp/docs/scripting/resources/anglemodes) to use, depending on the value entered. (default: radian) |
+
+## Returns
+
+The sine of the value entered.
+
+## Examples
+
+```c
+GetPosInFrontOfPlayer(playerid, Float:distance, &Float:x, &Float:y, &Float:z)
+{
+    if (GetPlayerPos(playerid, x, y, z)) // this functions returns 0 if the player is not connected
+    {
+        new Float:z_angle;
+        GetPlayerFacingAngle(playerid, z_angle);
+
+        x += distance * floatsin(-z_angle, degrees); // angles in GTA go counter-clockwise, so we need to reverse the retrieved angle
+        y += distance * floatcos(-z_angle, degrees);
+
+        return 1; // return 1 on success, the actual coordinates are returned by reference
+    }
+    return 0; // return 0 if the player isn't connected
+}
+```
+
+## Notes
+
+warning
+
+-   GTA/SA-MP use **degrees** for angles in most circumstances, for example [GetPlayerFacingAngle](https://open.mp/docs/scripting/functions/GetPlayerFacingAngle). Therefore, it is most likely you'll want to use the '**degrees**' angle mode, _not_ radians.
+-   Also note that angles in GTA are counterclockwise; 270° is East and 90° is West. South is still 180° and North still 0°/360°.
+
+## Related Functions
+
+-   [floattan](https://open.mp/docs/scripting/functions/floattan): Get the tangent from a specific angle.
+-   [floatcos](https://open.mp/docs/scripting/functions/floatcos): Get the cosine from a specific angle.
+
+## Related Resources
+
+-   [Angle Modes](https://open.mp/docs/scripting/resources/anglemodes): SI unit constants for measuring angles.

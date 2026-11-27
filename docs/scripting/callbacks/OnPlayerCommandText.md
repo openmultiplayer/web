@@ -1,0 +1,63 @@
+---
+title: "OnPlayerCommandText | open.mp"
+description: "This callback is called when a player enters a command into the client chat window."
+canonical: https://open.mp/docs/scripting/callbacks/OnPlayerCommandText
+language: en
+---
+
+# OnPlayerCommandText
+
+## Description
+
+This callback is called when a player enters a command into the client chat window. Commands are anything that start with a forward slash, e.g. /help.
+
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player that entered a command. |
+| cmdtext\[\] | The command that was entered (including the forward slash). |
+
+## Returns
+
+**1** - The command was processed.
+
+**0** - The command was not processed. If the command was not found both in filterscripts and in gamemode, the player will receive a `SERVER: Unknown command.` message.
+
+It is always called first in filterscripts so returning 1 there blocks other scripts from processing it.
+
+## Examples
+
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/help", true))
+    {
+        SendClientMessage(playerid, -1, "SERVER: This is the /help command!");
+        return 1;
+        // Returning 1 informs the server that the command has been processed.
+        // OnPlayerCommandText won't be called in other scripts.
+    }
+    return 0;
+    // Returning 0 informs the server that the command hasn't been processed by this script.
+    // OnPlayerCommandText will be called in other scripts until one returns 1.
+    // If no scripts return 1, the 'SERVER: Unknown Command' message will be shown to the player.
+}
+```
+
+## Notes
+
+note
+
+This callback can also be called by NPC.
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another.
+
+-   [OnPlayerText](https://open.mp/docs/scripting/callbacks/OnPlayerText): This callback is called when a player sends a chat message.
+-   [OnRconCommand](https://open.mp/docs/scripting/callbacks/OnRconCommand): This callback is called when a command is sent through the server console, remote RCON, or via the in-game "/rcon command".
+
+## Related Functions
+
+The following functions might be useful, as they're related to this callback in one way or another.
+
+-   [SendRconCommand](https://open.mp/docs/scripting/functions/SendRconCommand): Sends an RCON command via the script.

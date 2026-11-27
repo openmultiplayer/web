@@ -1,0 +1,45 @@
+---
+title: "GetConsoleVarAsBool | open.mp"
+description: "Get the boolean value of a console variable."
+canonical: https://open.mp/docs/scripting/functions/GetConsoleVarAsBool
+language: en
+---
+
+# GetConsoleVarAsBool
+
+## Description
+
+Get the boolean value of a console variable.
+
+| Name | Description |
+| --- | --- |
+| const cvar\[\] | The name of the boolean variable to get the value of. |
+
+## Returns
+
+The value of the specified console variable. 0 if the specified console variable is not a boolean or doesn't exist.
+
+## Examples
+
+```c
+public OnGameModeInit()
+{
+    new queryEnabled = GetConsoleVarAsBool("enable_query");
+    if (!queryEnabled)
+    {
+        print("WARNING: Querying is disabled. The server will appear offline in the server browser.");
+    }
+    return 1;
+}
+```
+
+## Notes
+
+tip
+
+Type 'varlist' in the server console to display a list of available console variables and their types.
+
+## Related Functions
+
+-   [GetConsoleVarAsString](https://open.mp/docs/scripting/functions/GetConsoleVarAsString): Retreive a server variable as a string.
+-   [GetConsoleVarAsInt](https://open.mp/docs/scripting/functions/GetConsoleVarAsInt): Retreive a server variable as an integer.

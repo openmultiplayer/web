@@ -1,0 +1,60 @@
+---
+title: "GetVehicleMatrix | open.mp"
+description: "Gets the actual rotation matrix of the vehicle."
+canonical: https://open.mp/docs/scripting/functions/GetVehicleMatrix
+language: en
+---
+
+# GetVehicleMatrix
+
+warning
+
+This function was added in omp v1.1.0.2612 and will not work in earlier versions!
+
+## Description
+
+Gets the actual rotation matrix of the vehicle.
+
+## Parameters
+
+| Name | Description |
+| --- | --- |
+| vehicleid | The ID of the vehicle. |
+| &Float:rightX | A float variable in which to store the rightX coordinate, passed by reference. |
+| &Float:rightY | A float variable in which to store the rightY coordinate, passed by reference. |
+| &Float:rightZ | A float variable in which to store the rightZ coordinate, passed by reference. |
+| &Float:upX | A float variable in which to store the upX coordinate, passed by reference. |
+| &Float:upY | A float variable in which to store the upY coordinate, passed by reference. |
+| &Float:upZ | A float variable in which to store the upZ coordinate, passed by reference. |
+| &Float:atX | A float variable in which to store the atX coordinate, passed by reference. |
+| &Float:atY | A float variable in which to store the atY coordinate, passed by reference. |
+| &Float:atZ | A float variable in which to store the atZ coordinate, passed by reference. |
+
+## Returns
+
+**true** - The function was executed successfully.
+
+**false** - The function failed to execute. This means the vehicle specified does not exist.
+
+The vehicle's rotation is stored in the specified variables.
+
+## Examples
+
+```c
+new
+    Float:rightX,
+    Float:rightY,
+    Float:rightZ,
+    Float:upX,
+    Float:upY,
+    Float:upZ,
+    Float:atX,
+    Float:atY,
+    Float:atZ;
+
+GetVehicleMatrix(vehicleid, rightX, rightY, rightZ, upX, upY, upZ, atX, atY, atZ);
+```
+
+## Related Functions
+
+-   [GetVehicleRotationQuat](https://open.mp/docs/scripting/functions/GetVehicleRotationQuat): Returns a vehicle's rotation on all axes as a quaternion.

@@ -1,0 +1,226 @@
+---
+title: "Controlling a Server | open.mp"
+description: "Useful commands for controlling a server."
+canonical: https://open.mp/docs/server/ControllingServer
+language: en
+---
+
+# Controlling a Server
+
+## Changing Gamemode
+
+### Running a custom/downloaded gamemode
+
+-   Open the directory you installed the server to (eg: /Rockstar Games/GTA San Andreas/server)
+-   Take the downloaded/compiled .amx file and place it in the gamemodes folder where you installed the server
+-   Use RCON to change the mode.
+-   Alternatively you can add the new mode to a rotation.
+
+### Using Filterscripts
+
+The same as running a custom gamemode, except:
+
+-   Place the .amx in a folder called `filterscripts`
+-   Add the filterscript path without the `.amx` extension to `pawn.side_scripts` in [config.json](https://open.mp/docs/server/config.json):
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
+
+## Passwording your server
+
+-   If you want to add a password so only your friends can join, add this to [config.json](https://open.mp/docs/server/config.json):
+
+```json
+{
+    "password": "whatever"
+}
+```
+
+-   This will make your server password-protected with the password set as 'whatever' - change it to whatever you want.
+-   You can also change the password while ingame by using `/rcon password newpasswordhere`
+-   You can remove the password by using `/rcon password 0`, or by restarting the server.
+
+## Using RCON
+
+### Logging In
+
+You can log in either while ingame by typing `/rcon login password` or out of game by using the RCON mode in the [Remote Console](https://open.mp/docs/server/RemoteConsole).
+
+Use the `rcon.password` value from [config.json](https://open.mp/docs/server/config.json) when logging in.
+
+### Adding Bans
+
+##### bans.json
+
+bans.json is the file used for storing bans, including the following information about the ban:
+
+-   IP
+-   Date
+-   Time
+-   Name (Name of person)
+-   Reason (see [BanEx](https://open.mp/docs/scripting/functions/BanEx))
+
+To add a ban, simply add an object to the JSON array like so:
+
+```json
+[
+    {"address": "IP_HERE", "player": "PLAYER", "reason": "BAN REASON", "time": "2009-05-28T13:37:00+0000"}
+]
+```
+
+Where `IP_HERE` is, is where you put the IP you would like to ban. This method takes longer than the RCON `banip` command, so using `banip` is recommended.
+
+##### Ban function
+
+The [Ban](https://open.mp/docs/scripting/functions/Ban) function can be used to ban a player from a script. The [BanEx](https://open.mp/docs/scripting/functions/BanEx) function will add an optional reason like so:
+
+```json
+[
+    {"address": "13.37.13.37", "player": "Cheater", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
+```
+
+##### RCON ban command
+
+The RCON ban command, executed by typing /rcon ban in-game or typing "ban" in the console, is used to ban a specific player that is on your server, to ban an IP see the next section.
+
+Simply type:
+
+```text
+# Ingame:
+/rcon ban PLAYERID
+
+# Console:
+ban PLAYERID
+```
+
+##### banip
+
+The RCON banip command, executed by typing /rcon banip in-game or typing "banip" in the console, is used to ban a specific IP address, to ban a player on your server by ID, see the previous section. Will accept wildcards for rangebans.
+
+Simply type:
+
+```text
+# Ingame:
+/rcon banip IP
+
+# Console:
+banip IP
+```
+
+### Removing Bans
+
+Once somebody is banned, there are two ways to unban them.
+
+-   Remove from bans.json
+-   The RCON `unbanip` command
+
+#### bans.json
+
+bans.json can be found in your open.mp server directory, it contains objects with the following information about each ban:
+
+-   IP
+-   Date
+-   Time
+-   Name (Name of person)
+-   Reason (see [BanEx](https://open.mp/docs/scripting/functions/BanEx))
+
+Examples:
+
+```json
+[
+    {"address": "127.8.57.32", "player": "NONE", "reason": "IP BAN", "time": "2009-06-13T13:37:00+0000"},
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
+```
+
+To unban them, simply remove the object, then execute the RCON reloadbans command to make the server re-read bans.json.
+
+#### unbanip
+
+The RCON unbanip command can be used in-game or from the server console (black box). To unban an ip, simply type `/rcon unbanip IP_HERE` in-game or `unbanip IP_HERE` in the console.
+
+Example:
+
+```json
+[
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
+```
+
+```text
+# Ingame:
+/rcon unbanip 13.37.13.37
+
+# Console
+unbanip 13.37.13.37
+```
+
+To unban them, simply use the `unbanip` command.
+
+#### reloadbans
+
+`bans.json` is a file that holds the information for the IP's that are currently banned from the server. This file is read when the server is started, so if you unban an IP/person by editing the file you MUST type the RCON `reloadbans` command to make the server read `bans.json` again and allow them to join the server.
+
+### RCON Commands
+
+Type cmdlist for commands (or, varlist for variables) making use of the RCON in-game (`/rcon cmdlist`).
+
+These are the functions that you as admin can use:
+
+| Command | Description |
+| --- | --- |
+| `/rcon cmdlist` | Shows a list with commands. |
+| `/rcon varlist` | Shows a list with the current variables. |
+| `/rcon exit` | Closes the server. |
+| `/rcon echo [text]` | Shows the `[text]` in the console of the server (NOT the client-console in-game). |
+| `/rcon hostname [name]` | change the hostname text (_example: /rcon hostname my server_). |
+| `/rcon gamemodetext [name]` | change the gamemode text (_example: /rcon gamemodetext my gamemode_). |
+| `/rcon mapname [name]` | change the map name text (_example: /rcon mapname San Andreas_). |
+| `/rcon exec [filename]` | Executes the file which contains server cfg (_example: /rcon exec blah.cfg_). |
+| `/rcon kick [ID]` | Kick the player with the given ID (_example: /rcon kick 2_). |
+| `/rcon ban [ID]` | Ban the player with the given ID (_example: /rcon ban 2_). |
+| `/rcon changemode [mode]` | This command will change the current gamemode to the given one (_example: if you want to play sftdm: /rcon changemode sftdm_). |
+| `/rcon gmx` | Will load the next gamemode in [config.json](https://open.mp/docs/server/config.json). |
+| `/rcon reloadbans` | Reloads the `bans.json` file where the banned IP addresses are stored. Should be used after unbanning and IP address by editing the file. |
+| `/rcon reloadlog` | Reloads the `log.txt`. Useful for automatic log rotation. Can be triggered by sending the `SIGUSR1` signal to the server (Linux server only). |
+| `/rcon say` | shows a message to the players in the client-console (example: `/rcon say hello` will show as `Admin: hello`). |
+| `/rcon players` | Shows the players that are in the server (with their name, IP & ping). |
+| `/rcon banip [IP]` | Ban the given IP (_example: /rcon banip 127.0.0.1_). |
+| `/rcon unbanip [IP]` | Unban the given IP (_example: /rcon unbanip 127.0.0.1_). |
+| `/rcon gravity` | Changes the gravity (_example: /rcon gravity 0.008_). |
+| `/rcon weather [ID]` | Changes the weather (_example: /rcon weather 1_). |
+| `/rcon loadfs` | Loads the given filterscript (_example: /rcon loadfs adminfs_). |
+| `/rcon weburl [server url]` | Changes the server URL in the masterlists/SA-MP client |
+| `/rcon unloadfs` | Unload the given filterscript (_example: /rcon unloadfs adminfs_). |
+| `/rcon reloadfs` | Reloads the given filterscript (_example: /rcon reloadfs adminfs_). |
+| `/rcon rcon_password [PASSWORD]` | Change the rcon's password |
+| `/rcon password [password]` | Sets/resets the server password |
+| `/rcon messageslimit [count]` | Change the number of messages per second a client sends to the server. (default 500) |
+| `/rcon ackslimit [count]` | Change the limit of acks (default 3000) |
+| `/rcon messageholelimit [count]` | Change the limit of message holes (default 3000) |
+| `/rcon playertimeout [limit m/s]` | Change the time in milliseconds until a player timeouts when not sending any packets. (default 1000) |
+| `/rcon language [language]` | Change the server language (_example: /rcon language English_). Shown in server browser. |
+
+The above four limits/counts are just made to avoid several tools which can attack any SA-MP server by freezing it or crashing. So, simply, just set them according to your server. The default values are default, if you see any wrong kicks, just increase the values as soon as possible so that the innocent players won't get kicked by it.
+
+### Related Callbacks and Functions
+
+The following callbacks and functions might be useful, as they're related to this article in one way or another.
+
+#### Callbacks
+
+-   [OnRconLoginAttempt](https://open.mp/docs/scripting/callbacks/OnRconLoginAttempt): Called when an attempt to login to RCON is made.
+
+#### Functions
+
+-   [IsPlayerAdmin](https://open.mp/docs/scripting/functions/IsPlayerAdmin): Checks if a player is logged into RCON.
+    
+-   [SendRconCommand](https://open.mp/docs/scripting/functions/SendRconCommand): Sends an RCON command via the script.

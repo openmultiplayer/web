@@ -1,0 +1,54 @@
+---
+title: "strequal | open.mp"
+description: "Compares two strings to see if they are the same."
+canonical: https://open.mp/docs/scripting/functions/strequal
+language: en
+---
+
+# strequal
+
+warning
+
+This function was added in omp v1.1.0.2612 and will not work in earlier versions!
+
+## Description
+
+Compares two strings to see if they are the same.
+
+| Name | Description |
+| --- | --- |
+| const string1\[\] | The first string to compare. |
+| const string2\[\] | The second string to compare. |
+| bool:ignorecase _(optional)_ | When set to **true**, the case doesn't matter - HeLLo is the same as Hello. When **false**, they're not the same. |
+| length _(optional)_ | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
+
+## Returns
+
+**true** if the strings match each other on given length, **false** otherwise.
+
+## Examples
+
+```c
+new string1[] = "Hello World";
+new string2[] = "Hello World";
+
+// Check if the strings are the same
+if (strequal(string1, string2))
+{
+    print("Strings are equal.");
+}
+else
+{
+    print("Strings are not equal.");
+}
+```
+
+## Notes
+
+note
+
+This is a conveniece function that depends on [strcmp](https://open.mp/docs/scripting/functions/strcmp).
+
+## Related Functions
+
+-   [strcmp](https://open.mp/docs/scripting/functions/strcmp): Search for a string in another string.

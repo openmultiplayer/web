@@ -1,0 +1,59 @@
+---
+title: "OnClientCheckResponse | open.mp"
+description: "This callback is called when a SendClientCheck request completes"
+canonical: https://open.mp/docs/scripting/callbacks/OnClientCheckResponse
+language: en
+---
+
+# OnClientCheckResponse
+
+## Description
+
+This callback is called when a SendClientCheck request completes.
+
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player checked. |
+| actionid | The type of check performed. |
+| memaddr | The address requested. |
+| retndata | The result of the check. |
+
+## Returns
+
+It is always called first in filterscripts.
+
+## Examples
+
+```c
+public OnPlayerConnect(playerid)
+{
+    SendClientCheck(playerid, 0x48, 0, 0, 2);
+    return 1;
+}
+
+public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
+{
+    if (actionid == 0x48) // or 72
+    {
+        print("The player is connecting using the PC client.");
+    }
+    return 1;
+}
+```
+
+## Notes
+
+warning
+
+-   **SA-MP server**: This callback is only called when it is in a filterscript.
+-   **open.mp server**: This callback functions normally inside a gamemode / filterscript.
+
+## Related Functions
+
+The following function might be useful, as they're related to this callback in one way or another.
+
+-   [SendClientCheck](https://open.mp/docs/scripting/functions/SendClientCheck): Perform a memory check on the client.
+
+## Related Resources
+
+-   [opcodes](https://open.mp/docs/scripting/resources/opcodes): Action opcodes IDs and their purpose.

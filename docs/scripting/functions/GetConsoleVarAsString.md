@@ -1,0 +1,55 @@
+---
+title: "GetConsoleVarAsString | open.mp"
+description: "Get the string value of a console variable."
+canonical: https://open.mp/docs/scripting/functions/GetConsoleVarAsString
+language: en
+---
+
+# GetConsoleVarAsString
+
+## Description
+
+Get the string value of a console variable.
+
+| Name | Description |
+| --- | --- |
+| const cvar\[\] | The name of the string variable to get the value of. |
+| buffer\[\] | An array into which to store the value, passed by reference. |
+| len = sizeof (buffer) | The length of the string that should be stored. |
+
+## Returns
+
+The length of the returned string.
+
+0 if the specified console variable is not a string or doesn't exist.
+
+## Examples
+
+```c
+public OnGameModeInit()
+{
+    new hostname[64];
+    GetConsoleVarAsString("hostname", hostname, sizeof(hostname));
+    printf("Hostname: %s", hostname);
+}
+```
+
+## Notes
+
+note
+
+When _filterscripts_ or _plugins_ are specified as the varname, this function only returns the name of the first specified filterscript or plugin.
+
+tip
+
+Type 'varlist' in the server console to display a list of available console variables and their types.
+
+warning
+
+-   Using this function with anything other than a **string** (integer, boolean or float) will cause your server to crash. (Fixed in open.mp)
+-   Using it with a nonexistent console variable will also cause your server to crash. (Fixed in open.mp)
+
+## Related Functions
+
+-   [GetConsoleVarAsInt](https://open.mp/docs/scripting/functions/GetConsoleVarAsInt): Retreive a server variable as an integer.
+-   [GetConsoleVarAsBool](https://open.mp/docs/scripting/functions/GetConsoleVarAsBool): Retreive a server variable as a boolean.

@@ -1,0 +1,43 @@
+---
+title: "SendCommand | open.mp"
+description: "This will force the NPC to write a desired command, and this way, getting the effects it would produce."
+canonical: https://open.mp/docs/scripting/functions/SendCommand
+language: en
+---
+
+# SendCommand
+
+warning
+
+This function is deprecated.
+
+See `PC_EmulateCommand` for [Pawn.CMD](https://github.com/katursis/Pawn.CMD) or similar means for other command processors.
+
+## Description
+
+This will force the NPC to write a desired command, and this way, getting the effects it would produce.
+
+| Name | Description |
+| --- | --- |
+| commandtext\[\] | The command text to be sent by the NPC. |
+
+## Examples
+
+```c
+public OnPlayerText(playerid, text[])
+{
+    if (strfind(text, "stupid bot") != -1)
+    {
+        new string[80], name[MAX_PLAYER_NAME];
+        GetPlayerName(playerid, name, sizeof(name));
+        SendCommand("/kill");
+        format(string, sizeof(string), "Hey %s! You are so mean, you make me so sad!", name);
+        SendChat(string);
+    }
+    return 1;
+}
+```
+
+## Related Functions
+
+-   [SendChat](https://open.mp/docs/scripting/functions/SendChat): Sends a text as the NPC.

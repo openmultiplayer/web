@@ -1,0 +1,51 @@
+---
+title: "OnPlayerStreamOut | open.mp"
+description: "This callback is called when a player streams out from some other player's client."
+canonical: https://open.mp/docs/scripting/callbacks/OnPlayerStreamOut
+language: en
+---
+
+# OnPlayerStreamOut
+
+## Description
+
+This callback is called when a player streams out from some other player's client.
+
+| Name | Description |
+| --- | --- |
+| playerid | The player who has been destreamed. |
+| forplayerid | The player who has destreamed the other player. |
+
+## Returns
+
+It is always called first in filterscripts.
+
+## Examples
+
+```c
+public OnPlayerStreamOut(playerid, forplayerid)
+{
+    new string[80];
+    format(string, sizeof(string), "Your computer has just unloaded player ID %d", playerid);
+    SendClientMessage(forplayerid, 0xFF0000FF, string);
+    return 1;
+}
+```
+
+## Notes
+
+note
+
+This callback can also be called by NPC.
+
+warning
+
+OnPlayerStreamOut is not called for both players when a player disconnects
+
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another.
+
+-   [OnPlayerStreamIn](https://open.mp/docs/scripting/callbacks/OnPlayerStreamIn): This callback is called when a player streams in for another player.
+-   [OnActorStreamOut](https://open.mp/docs/scripting/callbacks/OnActorStreamOut): This callback is called when an actor streams out by a player.
+-   [OnVehicleStreamOut](https://open.mp/docs/scripting/callbacks/OnVehicleStreamOut): This callback is called when a vehicle streams out for a player.

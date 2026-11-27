@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkomp_web=self.webpackChunkomp_web||[]).push([["93220"],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/sr/blog","blogTitle":"\u0411\u043B\u043E\u0433","authorsListPath":"/sr/blog/authors"}')}}]);

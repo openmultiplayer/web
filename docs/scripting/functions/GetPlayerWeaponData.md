@@ -1,0 +1,66 @@
+---
+title: "GetPlayerWeaponData | open.mp"
+description: "Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in the 'SMG' slot)."
+canonical: https://open.mp/docs/scripting/functions/GetPlayerWeaponData
+language: en
+---
+
+# GetPlayerWeaponData
+
+## Description
+
+Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in the 'SMG' slot).
+
+| Name | Description |
+| --- | --- |
+| playerid | The ID of the player whose weapon data to retrieve. |
+| WEAPON\_SLOT:slot | The [weapon slot](https://open.mp/docs/scripting/resources/weaponslots) to get data for (0-12). |
+| &WEAPON:weapons | A variable in which to store the [weapon ID](https://open.mp/docs/scripting/resources/weaponids), passed by reference. |
+| &ammo | A variable in which to store the ammo, passed by reference. |
+
+## Returns
+
+**1** - The function was executed successfully.
+
+**0** - The function failed to execute. The player isn't connected and/or the weapon slot specified is invalid (valid is 0-12).
+
+## Examples
+
+```c
+// Common use: get all weapons and store info in an array containing 13 slots
+// The first value is the weapon ID, and second is the ammo
+
+new weapons[13][2];
+
+for (new i = 0; i <= 12; i++)
+{
+    GetPlayerWeaponData(playerid, WEAPON_SLOT:i, weapons[i][0], weapons[i][1]);
+}
+```
+
+Another example:
+
+```c
+new
+    weaponid,
+    ammo;
+
+// Get the player weapon ID and ammo in the PISTOL slot
+GetPlayerWeaponData(playerid, WEAPON_SLOT_PISTOL, weaponid, ammo);
+```
+
+## Notes
+
+note
+
+Old weapons with no ammo left are still returned.
+
+## Related Functions
+
+-   [GetPlayerWeapon](https://open.mp/docs/scripting/functions/GetPlayerWeapon): Check what weapon a player is currently holding.
+-   [GivePlayerWeapon](https://open.mp/docs/scripting/functions/GivePlayerWeapon): Give a player a weapon.
+
+## Related Resources
+
+-   [Weapon Slots](https://open.mp/docs/scripting/resources/weaponslots)
+-   [Weapon IDs](https://open.mp/docs/scripting/resources/weaponids)

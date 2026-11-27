@@ -1,0 +1,75 @@
+---
+title: "NPC_SetPos | open.mp"
+description: "Sets the position of an NPC."
+canonical: https://open.mp/docs/scripting/functions/NPC_SetPos
+language: en
+---
+
+# NPC\_SetPos
+
+warning
+
+This function was added in omp v1.5.8.3079 and will not work in earlier versions!
+
+## Description
+
+Sets the position of an NPC instantly without movement animation.
+
+| Name | Description |
+| --- | --- |
+| npcid | The ID of the NPC. |
+| Float:x | The X coordinate. |
+| Float:y | The Y coordinate. |
+| Float:z | The Z coordinate. |
+
+## Returns
+
+Returns `true` on success, `false` on failure.
+
+## Examples
+
+```c
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+    if (!strcmp(cmdtext, "/setposhere", true))
+    {
+        new npcid = PlayerNPC[playerid];
+        if (npcid == INVALID_NPC_ID)
+            return SendClientMessage(playerid, 0xFF0000FF, "You are not debugging a NPC.");
+
+        if (!NPC_IsValid(npcid))
+            return SendClientMessage(playerid, 0xFF0000FF, "Invalid NPC.");
+
+        new Float:x, Float:y, Float:z;
+        GetPlayerPos(playerid, x, y, z);
+
+        NPC_SetPos(npcid, x + 2.0, y, z);
+        SendClientMessage(playerid, 0x00FF00FF, "NPC %d teleported to your position", npcid);
+
+        return 1;
+    }
+    return 0;
+}
+```
+
+## Notes
+
+note
+
+-   This function teleports the NPC instantly without animation
+-   Any current movement is stopped when setting position
+
+tip
+
+Use `NPC_Move` if you want the NPC to walk to a position
+
+## Related Functions
+
+-   [NPC\_GetPos](https://open.mp/docs/scripting/functions/NPC_GetPos): Get NPC position.
+-   [NPC\_Move](https://open.mp/docs/scripting/functions/NPC_Move): Move NPC to position with animation.
+-   [NPC\_SetRot](https://open.mp/docs/scripting/functions/NPC_SetRot): Set NPC rotation.
+-   [NPC\_SetFacingAngle](https://open.mp/docs/scripting/functions/NPC_SetFacingAngle): Set NPC facing direction.
+
+## Related Callbacks
+
+-   [OnNPCSpawn](https://open.mp/docs/scripting/callbacks/OnNPCSpawn): Called when NPC spawns.
