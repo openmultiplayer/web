@@ -23,10 +23,6 @@
     "message": "Partnerler",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "Bağış Yap",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "open.mp logosu",
     "description": "The alt text of navbar logo"

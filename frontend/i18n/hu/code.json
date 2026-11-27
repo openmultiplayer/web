@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "Teljes visszamenőleges kompatibilitás a meglévő szkriptekkel és kliensekkel"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "Van egy régi AMX-fájlod? Töltsd be közvetlenül az open.mp szerverre, majd csatlakozz a barátaidhoz az SA-MP klienssel. Ha javítanál a kódodon, nézd meg a dokumentációt."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "Első lépések"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "Új, továbbfejlesztett szkriptrendszer"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "Az open.mp támogatja a meglévő SA-MP szkripteket és bővítményeket. A modern API adatszerkezetekkel és aszinkron I/O-műveletekkel segít jobb modokat írni."
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "További információ"
-  },
-  "feature.developerFriendly.title": {
-    "message": "Fejlesztőbarát"
-  },
-  "feature.developerFriendly.description": {
-    "message": "Az open.mp fejlesztésekor az egységes API-ra, naprakész dokumentációra, segítőkész közösségre és teljesen nyílt forráskódra törekszünk. Minden hozzájárulást szívesen fogadunk."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "Közreműködés"
-  },
   "feature.scriptingSystem.title": {
     "message": "Új, továbbfejlesztett szkriptrendszer"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "Maradunk a Pawn nyelvnél. Egy új fordító robusztusabbá teszi a kódot, a további függvények pedig kibővítik a szerver és a kliens lehetőségeit."
   },
   "feature.scriptingSystem.linkText": {
     "message": "Ismerd meg a fejlesztéseket"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "A közösség fejleszti"
   },
-  "feature.communityDevelopment.description": {
-    "message": "A szerver teljesen nyílt forráskódú. Segíts a következő kiadás elkészítésében, vagy jelentsd a talált hibákat. Minden hozzájárulás és visszajelzés számít."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "A GitHub-szervezet megnyitása"
   },
   "feature.cppApi.title": {
     "message": "Bővíthető C++ API"
-  },
-  "feature.cppApi.description": {
-    "message": "A Pawn összes szerverfunkciója, valamint a C++ könyvtárai és keretrendszerei elérhetők. A GitHubon te is segíthetsz a szerver fejlesztésében."
   },
   "feature.cppApi.linkText": {
     "message": "Az SDK-tároló megnyitása"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "Ahogy jeleztük, a partnerprogram jelenleg nem fogad új jelentkezéseket. A már lefoglalt hellyel rendelkező szerverek csatlakozhatnak. Más kérdéssel keresd fel a Discordunkat."
-  },
-  "announcement.title": {
-    "message": "Megjelent az open.mp szerver és az indító új verziója!"
-  },
-  "announcement.link": {
-    "message": "További részletek"
   },
   "theme.ErrorPageContent.title": {
     "message": "Hiba történt a oldalon.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Címkék",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "Elérhető az open.mp szerver {version} verziója, hibajavításokkal, jobb teljesítménnyel és új funkciókkal!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "Ez a verzió új vezérlőket ad az NPC-k járműveihez, javítja a mozgásukat, és hálózati, illetve szkriptelési hibákat javít."
-  },
-  "announcement.changelog": {
-    "message": "A szerver változásai"
-  },
-  "announcement.download": {
-    "message": "Szerver letöltése"
-  },
-  "announcement.launcherUpdate": {
-    "message": "Az indító is frissült!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "Az indítóban javult a játékon belüli felület, a grafikus modok támogatása és a kapcsolat stabilitása."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "Megjelent az open.mp indító {version} verziója!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "Megjelent az open.mp szerver {version} verziója!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "Megjelent az open.mp szerver {serverVersion} és az indító {launcherVersion} verziója!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "Az indító újdonságai"
-  },
-  "announcement.dismiss": {
-    "message": "Üzenet bezárása"
-  },
-  "homepage.heroDescription": {
-    "message": "Új többjátékos mod a Grand Theft Auto: San Andreashoz, amely {compatibility} a következővel: {samp}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "teljesen kompatibilis"
-  },
-  "homepage.downloadLauncher": {
-    "message": "Indító letöltése 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "Szerver letöltése 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "Dokumentáció 📜"
   },
   "animations.title": {
     "message": "open.mp animációböngésző"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "Gyors csatlakozás"
   },
-  "serverInfo.noDescription": {
-    "message": "Ehhez a szerverhez nincs leírás"
-  },
   "serverInfo.playersOnline": {
     "message": "Online játékosok"
-  },
-  "serverInfo.modVersion": {
-    "message": "Modverzió"
   },
   "serverInfo.language": {
     "message": "Nyelv"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "A szerver nem található. Lehet, hogy nem elérhető, vagy már nincs a listán."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "Dokumentáció"
-  },
-  "theme.footer.title.Community": {
-    "message": "Közösség"
-  },
-  "theme.footer.title.More": {
-    "message": "Továbbiak"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "Bevezetés"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "Átállás open.mp-re"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "Támogatás"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "Szerverek"
-  },
-  "theme.footer.link.Blog": {
-    "message": "Blog"
-  },
-  "theme.footer.link.Animations": {
-    "message": "Animációk"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "UID-generátor"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "Szerzői jog © {year} open.mp. Docusaurusszal készült."
-  },
-  "navbar.item.Docs": {
-    "message": "Dokumentáció"
-  },
-  "navbar.item.Blog": {
-    "message": "Blog"
-  },
-  "navbar.item.Forums": {
-    "message": "Fórumok"
-  },
-  "navbar.item.Servers": {
-    "message": "Szerverek"
-  },
-  "navbar.item.Partners": {
-    "message": "Partnerek"
-  },
-  "navbar.item.Donate": {
-    "message": "Támogatás"
   },
   "serverInfo.copied": {
     "message": "Másolva",

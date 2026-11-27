@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "Compatibilitate deplină cu scripturile și clienții existenți"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "Ai un fișier AMX vechi? Încarcă-l direct pe serverul open.mp și joacă alături de prieteni prin clientul SA-MP. Consultă documentația când vrei să îmbunătățești codul."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "Primii pași"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "Sistem de scriptare nou și îmbunătățit"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp acceptă scripturile și pluginurile SA-MP existente. API-ul modern oferă structuri de date și operații asincrone de intrare și ieșire pentru moduri mai bune."
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "Află mai multe"
-  },
-  "feature.developerFriendly.title": {
-    "message": "Conceput pentru dezvoltatori"
-  },
-  "feature.developerFriendly.description": {
-    "message": "Construim open.mp cu un API consecvent, documentație actualizată, o comunitate săritoare și cod complet deschis. Orice contribuție este binevenită."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "Contribuie"
-  },
   "feature.scriptingSystem.title": {
     "message": "Sistem de scriptare nou și îmbunătățit"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "Continuăm să folosim Pawn, cu un compilator nou pentru un cod mai robust și mai multe funcții pentru server și client."
   },
   "feature.scriptingSystem.linkText": {
     "message": "Descoperă îmbunătățirile"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "Dezvoltat de comunitate"
   },
-  "feature.communityDevelopment.description": {
-    "message": "Codul serverului este complet deschis. Ajută la pregătirea următoarei versiuni sau raportează erorile întâlnite. Orice contribuție și orice sugestie contează."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "Vizitează organizația pe GitHub"
   },
   "feature.cppApi.title": {
     "message": "API C++ extensibil"
-  },
-  "feature.cppApi.description": {
-    "message": "Folosește funcțiile de server din Pawn și bibliotecile și frameworkurile C++. Poți ajuta la îmbunătățirea serverului pe GitHub."
   },
   "feature.cppApi.linkText": {
     "message": "Vezi depozitul SDK"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "După cum am anunțat, programul de parteneriat nu primește înscrieri momentan. Serverele care au rezervat un loc se mai pot alătura. Pentru alte întrebări, scrie-ne pe Discord."
-  },
-  "announcement.title": {
-    "message": "Este disponibilă o versiune nouă a serverului și a lansatorului open.mp!"
-  },
-  "announcement.link": {
-    "message": "Citește mai multe aici"
   },
   "theme.ErrorPageContent.title": {
     "message": "Această pagină s-a blocat.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etichete",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "Serverul open.mp {version} este disponibil, cu corecții, performanțe îmbunătățite și funcții noi!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "Această versiune adaugă comenzi pentru vehiculele NPC, le îmbunătățește deplasarea și remediază probleme de rețea și de scriptare."
-  },
-  "announcement.changelog": {
-    "message": "Modificările serverului"
-  },
-  "announcement.download": {
-    "message": "Descarcă serverul"
-  },
-  "announcement.launcherUpdate": {
-    "message": "Și lansatorul a fost actualizat!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "Lansatorul îmbunătățește interfața suprapusă în joc, suportul pentru moduri grafice și stabilitatea conexiunii."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "Lansatorul open.mp {version} este disponibil!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "Serverul open.mp {version} este disponibil!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "Serverul open.mp {serverVersion} și lansatorul {launcherVersion} sunt disponibile!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "Noutăți în lansator"
-  },
-  "announcement.dismiss": {
-    "message": "Închide acest mesaj"
-  },
-  "homepage.heroDescription": {
-    "message": "Un nou mod multiplayer pentru Grand Theft Auto: San Andreas, {compatibility} cu {samp}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "pe deplin compatibil"
-  },
-  "homepage.downloadLauncher": {
-    "message": "Descarcă lansatorul 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "Descarcă serverul 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "Documentație 📜"
   },
   "animations.title": {
     "message": "Vizualizator de animații open.mp"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "Conectare rapidă"
   },
-  "serverInfo.noDescription": {
-    "message": "Acest server nu are descriere"
-  },
   "serverInfo.playersOnline": {
     "message": "Jucători online"
-  },
-  "serverInfo.modVersion": {
-    "message": "Versiunea modului"
   },
   "serverInfo.language": {
     "message": "Limbă"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "Serverul nu a fost găsit. Este posibil să fie offline sau să fi fost scos din listă."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "Documentație"
-  },
-  "theme.footer.title.Community": {
-    "message": "Comunitate"
-  },
-  "theme.footer.title.More": {
-    "message": "Mai multe"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "Introducere"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "Migrare la open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "Donează"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "Servere"
-  },
-  "theme.footer.link.Blog": {
-    "message": "Blog"
-  },
-  "theme.footer.link.Animations": {
-    "message": "Animații"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "Generator de UID"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "Drepturi de autor © {year} open.mp. Realizat cu Docusaurus."
-  },
-  "navbar.item.Docs": {
-    "message": "Documentație"
-  },
-  "navbar.item.Blog": {
-    "message": "Blog"
-  },
-  "navbar.item.Forums": {
-    "message": "Forumuri"
-  },
-  "navbar.item.Servers": {
-    "message": "Servere"
-  },
-  "navbar.item.Partners": {
-    "message": "Parteneri"
-  },
-  "navbar.item.Donate": {
-    "message": "Donează"
   },
   "serverInfo.copied": {
     "message": "Copiat",

@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "Sepenuhnya kompatibel mundur dengan skrip dan klien yang ada"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "Punya AMX lama? Muat langsung ke server open.mp dan bergabunglah dengan teman-teman Anda bermain di klien SA:MP. Kemudian, jika Anda ingin meningkatkan kode Anda, konsultasikan dokumentasi kami."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "Langkah Awal"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "Sistem scripting baru dan yang lebih baik"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp mendukung semua skrip dan plugin SA-MP yang ada. Namun juga menyediakan API baru yang modern dan terkini untuk menulis mode permainan yang lebih baik. Struktur data, rutinitas I/O asinkron, dan banyak lagi!"
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "Pelajari Lebih Lanjut"
-  },
-  "feature.developerFriendly.title": {
-    "message": "Ramah pengembang"
-  },
-  "feature.developerFriendly.description": {
-    "message": "Kami menulis open.mp dengan pengalaman pengembang dalam pikiran. Ini berarti API yang konsisten, dokumentasi terkini, komunitas yang suportif, dan kode sumber yang sepenuhnya terbuka! Kontribusi selalu diterima."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "Berkontribusi"
-  },
   "feature.scriptingSystem.title": {
     "message": "Sistem scripting baru dan yang lebih baik"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "Kami tetap menggunakan Pawn, namun dengan kompiler baru yang dirancang untuk membuat kode Anda lebih kokoh, dan lebih banyak fungsi untuk memanipulasi server dan klien."
   },
   "feature.scriptingSystem.linkText": {
     "message": "Pelajari tentang peningkatan"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "Pengembangan didorong oleh komunitas"
   },
-  "feature.communityDevelopment.description": {
-    "message": "Server ini sepenuhnya open source, dan kami menerima semua kontribusi, besar atau kecil. Bantu menulis versi berikutnya, atau cukup laporkan masalah yang Anda temui, karena meskipun kami berusaha untuk memiliki kode yang sempurna, bug tetap terjadi dan umpan balik Anda sangat berharga."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "Kunjungi organisasi GitHub"
   },
   "feature.cppApi.title": {
     "message": "API C++ yang dapat diperluas"
-  },
-  "feature.cppApi.description": {
-    "message": "Dapatkan akses ke semua fitur server yang tersedia di Pawn, ditambah dengan alam semesta perpustakaan dan kerangka kerja C++. Setelah menguasainya, mengapa tidak membantu meningkatkan server melalui proses kontribusi terbuka kami di GitHub."
   },
   "feature.cppApi.linkText": {
     "message": "Lihat repositori SDK"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "Catatan: Program kemitraan ditutup sementara sesuai janji. Server yang telah memesan slot masih bisa bergabung, namun kami tidak menerima permintaan baru untuk saat ini. Jika Anda memiliki pertanyaan, jangan ragu untuk bertanya di Discord kami. Namun, jika pertanyaan Anda tentang cara baru untuk masuk ke dalam daftar, saat ini kami tidak memiliki rencana untuk itu."
-  },
-  "announcement.title": {
-    "message": "Versi baru server dan launcher open.mp tersedia sekarang!"
-  },
-  "announcement.link": {
-    "message": "Baca lebih lanjut di sini"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
     "message": "{count} dokumentasi memiliki tag"
@@ -144,54 +108,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tag",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "Versi server open.mp {version} tersedia dengan banyak perbaikan bug, peningkatan kinerja, dan fitur baru!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "Rilis server ini menambahkan kontrol kendaraan NPC, meningkatkan pergerakan kendaraan NPC, serta memperbaiki masalah jaringan dan skrip."
-  },
-  "announcement.changelog": {
-    "message": "Catatan perubahan server"
-  },
-  "announcement.download": {
-    "message": "Unduh server"
-  },
-  "announcement.launcherUpdate": {
-    "message": "Launcher juga telah mendapatkan pembaruan!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "Launcher meningkatkan overlay dalam game, dukungan mod grafis, dan kestabilan koneksi."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "Launcher open.mp {version} kini tersedia!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "Versi baru server open.mp {version} kini tersedia!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "Rilis baru tersedia: server open.mp {serverVersion} dan Launcher {launcherVersion}!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "Pembaruan Launcher"
-  },
-  "announcement.dismiss": {
-    "message": "Hapus pesan ini"
-  },
-  "homepage.heroDescription": {
-    "message": "Mod multiplayer baru untuk Grand Theft Auto: San Andreas yang {compatibility} dengan {samp}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "sepenuhnya kompatibel mundur"
-  },
-  "homepage.downloadLauncher": {
-    "message": "Unduh Launcher 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "Unduh Server 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "Dokumentasi 📜"
   },
   "animations.title": {
     "message": "Penampil Animasi open.mp"
@@ -271,14 +187,8 @@
   "serverInfo.quickJoin": {
     "message": "Bergabung Cepat"
   },
-  "serverInfo.noDescription": {
-    "message": "Server ini tidak memiliki deskripsi"
-  },
   "serverInfo.playersOnline": {
     "message": "Pemain Online"
-  },
-  "serverInfo.modVersion": {
-    "message": "Versi Mod"
   },
   "serverInfo.language": {
     "message": "Bahasa"
@@ -339,72 +249,6 @@
   },
   "downloads.release.dynSslNote": {
     "message": "* Versi DynSSL memerlukan libssl untuk diinstal pada distribusi Linux Anda."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "Dokumentasi"
-  },
-  "theme.footer.title.Community": {
-    "message": "Komunitas"
-  },
-  "theme.footer.title.More": {
-    "message": "Lainnya"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "Pengantar"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "Migrasi ke open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "Donasi"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "Server"
-  },
-  "theme.footer.link.Blog": {
-    "message": "Blog"
-  },
-  "theme.footer.link.Animations": {
-    "message": "Animasi"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "Pembuat UID"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "Hak Cipta © {year} open.mp. Dibuat dengan Docusaurus."
-  },
-  "navbar.item.Docs": {
-    "message": "Dokumentasi"
-  },
-  "navbar.item.Blog": {
-    "message": "Blog"
-  },
-  "navbar.item.Forums": {
-    "message": "Forum"
-  },
-  "navbar.item.Servers": {
-    "message": "Server"
-  },
-  "navbar.item.Partners": {
-    "message": "Mitra"
-  },
-  "navbar.item.Donate": {
-    "message": "Donasi"
   },
   "serverInfo.copied": {
     "message": "Disalin",

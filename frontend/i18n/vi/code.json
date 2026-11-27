@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "Tương thích ngược hoàn toàn với các tập lệnh và ứng dụng khách hiện có"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "Bạn có tệp AMX cũ? Hãy nạp thẳng vào máy chủ open.mp rồi tham gia cùng bạn bè bằng ứng dụng khách SA-MP. Hãy xem tài liệu khi muốn cải thiện mã."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "Bắt đầu"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "Hệ thống viết tập lệnh mới và cải tiến"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp hỗ trợ các tập lệnh và plugin SA-MP hiện có. API hiện đại cung cấp cấu trúc dữ liệu, thao tác vào/ra bất đồng bộ và nhiều tính năng khác để tạo bản mod tốt hơn."
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "Tìm hiểu thêm"
-  },
-  "feature.developerFriendly.title": {
-    "message": "Thân thiện với nhà phát triển"
-  },
-  "feature.developerFriendly.description": {
-    "message": "Chúng tôi xây dựng open.mp với API nhất quán, tài liệu cập nhật, cộng đồng sẵn sàng hỗ trợ và mã nguồn mở hoàn toàn. Mọi đóng góp đều được hoan nghênh."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "Đóng góp"
-  },
   "feature.scriptingSystem.title": {
     "message": "Hệ thống viết tập lệnh mới và cải tiến"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "Chúng tôi tiếp tục dùng Pawn, với trình biên dịch mới giúp mã ổn định hơn và nhiều hàm bổ sung cho máy chủ và ứng dụng khách."
   },
   "feature.scriptingSystem.linkText": {
     "message": "Tìm hiểu các cải tiến"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "Do cộng đồng phát triển"
   },
-  "feature.communityDevelopment.description": {
-    "message": "Máy chủ có mã nguồn mở hoàn toàn. Hãy giúp chuẩn bị bản phát hành tiếp theo hoặc báo lỗi bạn gặp. Mọi đóng góp và phản hồi đều có giá trị."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "Xem tổ chức trên GitHub"
   },
   "feature.cppApi.title": {
     "message": "API C++ có thể mở rộng"
-  },
-  "feature.cppApi.description": {
-    "message": "Dùng tất cả tính năng máy chủ có trong Pawn cùng các thư viện và framework C++. Bạn có thể góp phần cải thiện máy chủ trên GitHub."
   },
   "feature.cppApi.linkText": {
     "message": "Xem kho mã SDK"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "Như đã thông báo, chương trình đối tác hiện ngừng nhận đăng ký. Các máy chủ đã giữ chỗ vẫn có thể tham gia. Nếu có câu hỏi khác, hãy liên hệ trên Discord của chúng tôi."
-  },
-  "announcement.title": {
-    "message": "Phiên bản mới của máy chủ và trình khởi chạy open.mp đã có mặt!"
-  },
-  "announcement.link": {
-    "message": "Đọc thêm tại đây"
   },
   "theme.ErrorPageContent.title": {
     "message": "Trang này đã gặp lỗi.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Thẻ",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "Máy chủ open.mp {version} đã ra mắt với nhiều bản sửa lỗi, cải tiến hiệu năng và tính năng mới!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "Bản phát hành này thêm tính năng điều khiển phương tiện NPC, cải thiện chuyển động của phương tiện và sửa lỗi mạng và tập lệnh."
-  },
-  "announcement.changelog": {
-    "message": "Thay đổi của máy chủ"
-  },
-  "announcement.download": {
-    "message": "Tải xuống máy chủ"
-  },
-  "announcement.launcherUpdate": {
-    "message": "Trình khởi chạy cũng đã được cập nhật!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "Trình khởi chạy cải thiện lớp phủ trong trò chơi, khả năng hỗ trợ mod đồ họa và độ ổn định của kết nối."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "Trình khởi chạy open.mp {version} đã ra mắt!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "Máy chủ open.mp {version} đã ra mắt!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "Máy chủ open.mp {serverVersion} và trình khởi chạy {launcherVersion} đã ra mắt!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "Điểm mới trong trình khởi chạy"
-  },
-  "announcement.dismiss": {
-    "message": "Đóng thông báo này"
-  },
-  "homepage.heroDescription": {
-    "message": "Bản mod nhiều người chơi mới dành cho Grand Theft Auto: San Andreas, {compatibility} với {samp}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "tương thích hoàn toàn"
-  },
-  "homepage.downloadLauncher": {
-    "message": "Tải trình khởi chạy 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "Tải máy chủ 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "Tài liệu 📜"
   },
   "animations.title": {
     "message": "Trình xem hoạt ảnh open.mp"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "Tham gia nhanh"
   },
-  "serverInfo.noDescription": {
-    "message": "Máy chủ này không có mô tả"
-  },
   "serverInfo.playersOnline": {
     "message": "Người chơi trực tuyến"
-  },
-  "serverInfo.modVersion": {
-    "message": "Phiên bản mod"
   },
   "serverInfo.language": {
     "message": "Ngôn ngữ"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "Không tìm thấy máy chủ này. Máy chủ có thể đã ngoại tuyến hoặc bị gỡ khỏi danh sách."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "Tài liệu"
-  },
-  "theme.footer.title.Community": {
-    "message": "Cộng đồng"
-  },
-  "theme.footer.title.More": {
-    "message": "Thêm"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "Giới thiệu"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "Chuyển sang open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "Quyên góp"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "Máy chủ"
-  },
-  "theme.footer.link.Blog": {
-    "message": "Blog"
-  },
-  "theme.footer.link.Animations": {
-    "message": "Hoạt ảnh"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "Trình tạo UID"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "Bản quyền © {year} open.mp. Xây dựng bằng Docusaurus."
-  },
-  "navbar.item.Docs": {
-    "message": "Tài liệu"
-  },
-  "navbar.item.Blog": {
-    "message": "Blog"
-  },
-  "navbar.item.Forums": {
-    "message": "Diễn đàn"
-  },
-  "navbar.item.Servers": {
-    "message": "Máy chủ"
-  },
-  "navbar.item.Partners": {
-    "message": "Đối tác"
-  },
-  "navbar.item.Donate": {
-    "message": "Quyên góp"
   },
   "serverInfo.copied": {
     "message": "Đã sao chép",

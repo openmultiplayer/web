@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "کاملاً سازگار با اسکریپت‌ها و کلاینت‌های موجود"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "یک AMX قدیمی دارید؟ آن را مستقیماً در سرور open.mp بارگذاری کنید و به دوستانتان که با کلاینت SA:MP بازی می‌کنند بپیوندید. سپس وقتی می‌خواهید کد خود را بهبود دهید، به مستندات ما مراجعه کنید."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "شروع کنید"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "سیستم اسکریپت‌نویسی جدید و بهبود یافته"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp از تمام اسکریپت‌ها و پلاگین‌های SA-MP موجود پشتیبانی می‌کند. اما همچنین یک API مدرن و به‌روز برای نوشتن مودهای بهتر ارائه می‌دهد. ساختارهای داده، روتین‌های I/O غیرهمزمان و موارد بیشتر!"
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "بیشتر بدانید"
-  },
-  "feature.developerFriendly.title": {
-    "message": "دوستدار توسعه‌دهندگان"
-  },
-  "feature.developerFriendly.description": {
-    "message": "ما open.mp را با در نظر گرفتن تجربه توسعه‌دهنده می‌نویسیم. این به معنای API سازگار، مستندات به‌روز، جامعه مفید و کد منبع کاملاً باز است! مشارکت‌ها همیشه خوش‌آمد هستند."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "مشارکت کنید"
-  },
   "feature.scriptingSystem.title": {
     "message": "سیستم اسکریپت‌نویسی جدید و بهبود یافته"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "ما با pawn ادامه می‌دهیم، اما با یک کامپایلر جدید که برای قوی‌تر کردن کد شما طراحی شده است، و توابع بیشتری برای دستکاری سرور و کلاینت."
   },
   "feature.scriptingSystem.linkText": {
     "message": "درباره بهبودها بیاموزید"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "توسعه مبتنی بر جامعه"
   },
-  "feature.communityDevelopment.description": {
-    "message": "سرور کاملاً منبع باز است و ما همه مشارکت‌ها، چه بزرگ و چه کوچک را می‌پذیریم. به نوشتن نسخه بعدی کمک کنید، یا فقط درباره هر مشکلی که پیدا می‌کنید پست بگذارید، علی‌رغم تلاش‌های ما برای داشتن کد بی‌نقص، باگ‌ها اتفاق می‌افتند و بازخورد شما ارزشمند است."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "از سازمان GitHub بازدید کنید"
   },
   "feature.cppApi.title": {
     "message": "API قابل گسترش C++"
-  },
-  "feature.cppApi.description": {
-    "message": "به تمام ویژگی‌های سرور موجود در pawn دسترسی داشته باشید، به علاوه جهان کتابخانه‌ها و فریم‌ورک‌های C++. پس از تسلط بر آن، چرا از طریق فرآیند مشارکت باز ما در GitHub به بهبود سرور کمک نکنید."
   },
   "feature.cppApi.linkText": {
     "message": "مخزن SDK را بررسی کنید"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "توجه: برنامه شراکت طبق وعده موقتاً بسته است. سرورهایی که قبلاً اسلات رزرو کرده‌اند هنوز می‌توانند وارد شوند، اما در حال حاضر درخواست‌های جدید را نمی‌پذیریم. اگر سؤالی دارید، در Discord ما بپرسید. با این حال، اگر سؤال شما درباره راه‌های جدید ورود به لیست است، در حال حاضر برنامه‌ای برای آن نداریم."
-  },
-  "announcement.title": {
-    "message": "نسخه جدیدی از سرور و لانچر open.mp اکنون در دسترس است!"
-  },
-  "announcement.link": {
-    "message": "در اینجا بیشتر بخوانید"
   },
   "theme.ErrorPageContent.title": {
     "message": "این صفحه کرش کرده است.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "برچسب‌ها",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "نسخه {version} سرور open.mp با رفع مشکلات فراوان، بهبود عملکرد و ویژگی‌های جدید در دسترس است!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "این نسخه سرور، کنترل‌های تازه‌ای برای خودروهای NPC اضافه می‌کند، حرکت خودروهای NPC را بهبود می‌دهد و مشکلات شبکه و اسکریپت‌نویسی را برطرف می‌کند."
-  },
-  "announcement.changelog": {
-    "message": "تغییرات سرور"
-  },
-  "announcement.download": {
-    "message": "دانلود سرور"
-  },
-  "announcement.launcherUpdate": {
-    "message": "لانچر نیز به‌روزرسانی دریافت کرده است!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "لانچر هم‌پوشانی داخل بازی را روان‌تر می‌کند، پشتیبانی از مودهای گرافیکی را بهبود می‌دهد و اتصال را پایدارتر می‌کند."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "لانچر open.mp نسخه {version} منتشر شد!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "نسخه {version} سرور open.mp منتشر شد!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "نسخه‌های جدید منتشر شدند: سرور open.mp {serverVersion} و لانچر {launcherVersion}!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "تازه‌های لانچر"
-  },
-  "announcement.dismiss": {
-    "message": "بستن این پیام"
-  },
-  "homepage.heroDescription": {
-    "message": "یک ماد چندنفره جدید برای Grand Theft Auto: San Andreas که {compatibility} با {samp} است."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "کاملاً سازگار"
-  },
-  "homepage.downloadLauncher": {
-    "message": "دانلود لانچر 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "دانلود سرور 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "مستندات 📜"
   },
   "animations.title": {
     "message": "نمایشگر انیمیشن‌های open.mp"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "ورود سریع"
   },
-  "serverInfo.noDescription": {
-    "message": "این سرور توضیحاتی ندارد"
-  },
   "serverInfo.playersOnline": {
     "message": "بازیکنان آنلاین"
-  },
-  "serverInfo.modVersion": {
-    "message": "نسخه ماد"
   },
   "serverInfo.language": {
     "message": "زبان"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "این سرور پیدا نشد. ممکن است آفلاین باشد یا دیگر در فهرست نباشد."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "مستندات"
-  },
-  "theme.footer.title.Community": {
-    "message": "جامعه"
-  },
-  "theme.footer.title.More": {
-    "message": "بیشتر"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "معرفی"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "مهاجرت به open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "دیسکورد"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "گیت‌هاب"
-  },
-  "theme.footer.link.Donate": {
-    "message": "حمایت مالی"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "یوتیوب"
-  },
-  "theme.footer.link.X": {
-    "message": "ایکس"
-  },
-  "theme.footer.link.Servers": {
-    "message": "سرورها"
-  },
-  "theme.footer.link.Blog": {
-    "message": "وبلاگ"
-  },
-  "theme.footer.link.Animations": {
-    "message": "انیمیشن‌ها"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "تولیدکننده UID"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "حق نشر © {year} open.mp. ساخته شده با Docusaurus."
-  },
-  "navbar.item.Docs": {
-    "message": "مستندات"
-  },
-  "navbar.item.Blog": {
-    "message": "وبلاگ"
-  },
-  "navbar.item.Forums": {
-    "message": "انجمن‌"
-  },
-  "navbar.item.Servers": {
-    "message": "سرورها"
-  },
-  "navbar.item.Partners": {
-    "message": "شرکاء"
-  },
-  "navbar.item.Donate": {
-    "message": "حمایت مالی"
   },
   "serverInfo.copied": {
     "message": "کپی شد",

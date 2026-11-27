@@ -23,10 +23,6 @@
     "message": "Partnerji",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "Prispevaj donacijo",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "Logotip open.mp",
     "description": "The alt text of navbar logo"

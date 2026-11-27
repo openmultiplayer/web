@@ -23,10 +23,6 @@
     "message": "合作夥伴",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "贊助",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "open.mp 標誌",
     "description": "The alt text of navbar logo"

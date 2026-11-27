@@ -23,10 +23,6 @@
     "message": "Mga katuwang",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "Magbigay ng donasyon",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "Logo ng open.mp",
     "description": "The alt text of navbar logo"

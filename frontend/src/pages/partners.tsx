@@ -1,4 +1,4 @@
-import { default as Translate, translate } from "@docusaurus/Translate";
+import Translate, { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import { ReactNode, useEffect, useState } from "react";

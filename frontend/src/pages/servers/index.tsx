@@ -1,5 +1,5 @@
 import { useLocation } from "@docusaurus/router";
-import { default as Translate, translate } from "@docusaurus/Translate";
+import Translate, { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import React, { ReactNode, useEffect, useState } from "react";
 
