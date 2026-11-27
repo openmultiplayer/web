@@ -40,7 +40,7 @@ public OnGameModeInit()
 :::note
 
 - **useartwork** or **artwork.enable** must be enabled first in [server settings](../../server/server.cfg#custom-models) in order for this to work.
-- When `virtualworld` is set, the [models will be downloaded once the player enters the specific world](../callbacks/OnPlayerFinishedDownloading).
+- When `virtualWorld` is set, the [models will be downloaded once the player enters the specific world](../callbacks/OnPlayerFinishedDownloading).
 
 :::
 

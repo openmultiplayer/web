@@ -45,13 +45,13 @@ if (strcmp(cmd, "/playerlabel", true) == 0)
 
 :::note
 
-drawdistance se čini da je mnogo manja prilikom spectateanja
+`DrawDistance` se čini da je mnogo manja prilikom spectateanja
 
 :::
 
 :::warning
 
-Ako je text[] prazan, server/clients pored teksta če možda crashati!
+Ako je `text[]` prazan, server/clients pored teksta če možda crashati!
 
 :::
 

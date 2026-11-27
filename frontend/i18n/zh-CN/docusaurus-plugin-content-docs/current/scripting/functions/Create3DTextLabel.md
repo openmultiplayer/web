@@ -72,7 +72,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 :::warning
 
 - 空文本内容可能导致客户端崩溃（open.mp 版本已修复此问题）
-- virtualworld 参数设置为-1 时标签不可见
+- virtualWorld 参数设置为-1 时标签不可见
 
 :::
 

@@ -16,9 +16,9 @@ Obtenha a animação que o ator está realizando no momento.
 | ------------------ | -------------------------------------------------------------------------- |
 | actorid | O ID do ator para obter a animação.                               |
 | animationLibrary[] | Uma matriz na qual armazenar a animaçãoLibrary, passada por referência. |
-| librarySize | O tamanho da matriz AnimationLibrary.                                    |
-| animationName[] | Uma matriz na qual armazenar o AnimationName, passada por referência.    |
-| nameSize | O tamanho da matriz AnimationName.                                       |
+| librarySize | O tamanho da matriz animationLibrary.                                    |
+| animationName[] | Uma matriz na qual armazenar o animationName, passada por referência.    |
+| nameSize | O tamanho da matriz animationName.                                       |
 | &Float:delta | Uma variável flutuante na qual armazenar o delta, passada por referência.    |
 | &bool:loop | Uma variável booleana na qual armazenar o loop, passada por referência.   |
 | &bool:lockX | Uma variável float na qual armazenar o lockX, passada por referência.    |

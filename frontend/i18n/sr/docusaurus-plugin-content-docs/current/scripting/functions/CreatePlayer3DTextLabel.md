@@ -55,13 +55,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-DrawDistance изгледа као да је мањи у spectate моду.
+`drawDistance` изгледа као да је мањи у spectate моду.
 
 :::
 
 :::warning
 
-Ако је text[] празан, играчи близу лабела могу да crash-ају. (Поправљено у open.mp верзији)
+Ако је `text[]` празан, играчи близу лабела могу да crash-ају. (Поправљено у open.mp верзији)
 
 :::
 

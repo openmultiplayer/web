@@ -55,13 +55,13 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-drawDistance parece ser muito menor quando especta.
+`drawDistance` parece ser muito menor quando especta.
 
 :::
 
 :::warning
 
-Se text[] estiver vazio, o servidor/clientes próximos ao texto podem crashar! (Corrigido no open.mp)
+Se `text[]` estiver vazio, o servidor/clientes próximos ao texto podem crashar! (Corrigido no open.mp)
 
 :::
 
