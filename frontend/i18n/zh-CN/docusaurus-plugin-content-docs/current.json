@@ -1,33 +1,43 @@
 {
   "sidebar.docsSidebar.category.Scripting": {
-    "message": "脚本编写"
+    "message": "脚本编写",
+    "description": "The label for category 'Scripting' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Callbacks": {
-    "message": "回调"
+    "message": "回调",
+    "description": "The label for category 'Callbacks' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Functions": {
-    "message": "函数"
+    "message": "函数",
+    "description": "The label for category 'Functions' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Language": {
-    "message": "语言"
+    "message": "语言",
+    "description": "The label for category 'Language' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Reference": {
-    "message": "参考文献"
+    "message": "参考文献",
+    "description": "The label for category 'Reference' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Resources": {
-    "message": "资源"
+    "message": "资源",
+    "description": "The label for category 'Resources' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Server": {
-    "message": "服务器"
+    "message": "服务器",
+    "description": "The label for category 'Server' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Client": {
-    "message": "客户端"
+    "message": "客户端",
+    "description": "The label for category 'Client' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Tutorials": {
-    "message": "教程"
+    "message": "教程",
+    "description": "The label for category 'Tutorials' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Meta": {
-    "message": "元数据"
+    "message": "元数据",
+    "description": "The label for category 'Meta' in sidebar 'docsSidebar'"
   },
   "version.label": {
     "message": "下一版本",

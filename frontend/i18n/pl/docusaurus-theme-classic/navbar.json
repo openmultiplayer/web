@@ -23,10 +23,6 @@
     "message": "Partnerzy",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "Przekaż darowiznę",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "Logo open.mp",
     "description": "The alt text of navbar logo"

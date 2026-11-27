@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "Volledig achterwaarts compatibel met bestaande scripts en clients"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "Heb je nog een oud AMX-bestand? Laad het direct op de open.mp-server en speel met vrienden via de SA-MP-client. Raadpleeg de documentatie als je je code wilt verbeteren."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "Aan de slag"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "Nieuw en verbeterd scriptsysteem"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp ondersteunt bestaande SA-MP-scripts en plug-ins en biedt een moderne API met datastructuren, asynchrone I/O en meer om betere mods te maken."
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "Meer informatie"
-  },
-  "feature.developerFriendly.title": {
-    "message": "Ontwikkelaarsvriendelijk"
-  },
-  "feature.developerFriendly.description": {
-    "message": "We bouwen open.mp met een consistente API, actuele documentatie, een behulpzame community en volledig open broncode. Bijdragen zijn welkom."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "Bijdragen"
-  },
   "feature.scriptingSystem.title": {
     "message": "Nieuw en verbeterd scriptsysteem"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "We blijven Pawn gebruiken, met een nieuwe compiler voor robuustere code en extra functies voor de server en client."
   },
   "feature.scriptingSystem.linkText": {
     "message": "Bekijk de verbeteringen"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "Ontwikkeld door de community"
   },
-  "feature.communityDevelopment.description": {
-    "message": "De server is volledig opensource. Grote en kleine bijdragen zijn welkom. Help met de volgende versie of meld fouten die je tegenkomt. Je feedback telt."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "Bekijk de GitHub-organisatie"
   },
   "feature.cppApi.title": {
     "message": "Uitbreidbare C++-API"
-  },
-  "feature.cppApi.description": {
-    "message": "Gebruik alle serverfuncties uit Pawn en daarnaast C++-bibliotheken en -frameworks. Op GitHub kun je de server mee helpen verbeteren."
   },
   "feature.cppApi.linkText": {
     "message": "Bekijk de SDK-repository"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "Zoals aangekondigd accepteren we momenteel geen aanmeldingen voor het partnerprogramma. Servers met een gereserveerde plek kunnen nog meedoen. Stel andere vragen op onze Discord."
-  },
-  "announcement.title": {
-    "message": "Er is een nieuwe versie van de open.mp-server en -launcher beschikbaar!"
-  },
-  "announcement.link": {
-    "message": "Lees hier meer"
   },
   "theme.ErrorPageContent.title": {
     "message": "Deze pagina is gecrasht.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Labels",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "open.mp-server {version} is beschikbaar met veel bugfixes, betere prestaties en nieuwe functies!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "Deze versie voegt besturing voor NPC-voertuigen toe, verbetert hun bewegingen en verhelpt netwerk- en scriptproblemen."
-  },
-  "announcement.changelog": {
-    "message": "Wijzigingen aan de server"
-  },
-  "announcement.download": {
-    "message": "Server downloaden"
-  },
-  "announcement.launcherUpdate": {
-    "message": "Ook de launcher is bijgewerkt!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "De launcher biedt een betere overlay in het spel, meer ondersteuning voor grafische mods en een stabielere verbinding."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "De open.mp-launcher {version} is beschikbaar!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "De open.mp-server {version} is beschikbaar!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "De open.mp-server {serverVersion} en launcher {launcherVersion} zijn beschikbaar!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "Nieuw in de launcher"
-  },
-  "announcement.dismiss": {
-    "message": "Dit bericht sluiten"
-  },
-  "homepage.heroDescription": {
-    "message": "Een nieuwe multiplayermod voor Grand Theft Auto: San Andreas die {compatibility} is met {samp}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "volledig compatibel"
-  },
-  "homepage.downloadLauncher": {
-    "message": "Launcher downloaden 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "Server downloaden 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "Documentatie 📜"
   },
   "animations.title": {
     "message": "open.mp-animatieviewer"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "Snel meedoen"
   },
-  "serverInfo.noDescription": {
-    "message": "Deze server heeft geen beschrijving"
-  },
   "serverInfo.playersOnline": {
     "message": "Online spelers"
-  },
-  "serverInfo.modVersion": {
-    "message": "Modversie"
   },
   "serverInfo.language": {
     "message": "Taal"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "Deze server kon niet worden gevonden. Mogelijk is hij offline of staat hij niet meer in de lijst."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "Documentatie"
-  },
-  "theme.footer.title.Community": {
-    "message": "Community"
-  },
-  "theme.footer.title.More": {
-    "message": "Meer"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "Inleiding"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "Overstappen op open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "Doneren"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "Servers"
-  },
-  "theme.footer.link.Blog": {
-    "message": "Blog"
-  },
-  "theme.footer.link.Animations": {
-    "message": "Animaties"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "UID-generator"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "Copyright © {year} open.mp. Gemaakt met Docusaurus."
-  },
-  "navbar.item.Docs": {
-    "message": "Documentatie"
-  },
-  "navbar.item.Blog": {
-    "message": "Blog"
-  },
-  "navbar.item.Forums": {
-    "message": "Forums"
-  },
-  "navbar.item.Servers": {
-    "message": "Servers"
-  },
-  "navbar.item.Partners": {
-    "message": "Partners"
-  },
-  "navbar.item.Donate": {
-    "message": "Doneren"
   },
   "serverInfo.copied": {
     "message": "Gekopieerd",

@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "Ganap na tugma sa mga dating script at client"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "May lumang AMX file ka ba? I-load ito mismo sa open.mp server at sumali sa mga kaibigan gamit ang SA-MP client. Tingnan ang dokumentasyon kapag gusto mong pagandahin ang code mo."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "Magsimula"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "Bago at pinahusay na sistema ng pag-script"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "Sinusuportahan ng open.mp ang mga dating SA-MP script at plugin. May moderno itong API na may mga data structure at asynchronous na I/O para sa paggawa ng mas mahusay na mod."
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "Alamin pa"
-  },
-  "feature.developerFriendly.title": {
-    "message": "Para sa mga developer"
-  },
-  "feature.developerFriendly.description": {
-    "message": "Binubuo namin ang open.mp na may pare-parehong API, napapanahong dokumentasyon, matulunging komunidad at ganap na bukas na source code. Malugod naming tinatanggap ang mga ambag."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "Mag-ambag"
-  },
   "feature.scriptingSystem.title": {
     "message": "Bago at pinahusay na sistema ng pag-script"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "Patuloy naming ginagamit ang Pawn. Pinatatatag ng bagong compiler ang code mo, at pinalalawak ng mga bagong function ang kakayahan ng server at client."
   },
   "feature.scriptingSystem.linkText": {
     "message": "Alamin ang mga pagpapahusay"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "Binuo ng komunidad"
   },
-  "feature.communityDevelopment.description": {
-    "message": "Ganap na bukas ang source code ng server. Tumulong sa susunod na bersyon o iulat ang mga problemang makita mo. Mahalaga ang bawat ambag at puna."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "Bisitahin ang organisasyon sa GitHub"
   },
   "feature.cppApi.title": {
     "message": "Napapalawak na C++ API"
-  },
-  "feature.cppApi.description": {
-    "message": "Gamitin ang lahat ng function ng server na nasa Pawn pati ang mga library at framework ng C++. Makakatulong kang pahusayin ang server sa GitHub."
   },
   "feature.cppApi.linkText": {
     "message": "Tingnan ang repository ng SDK"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "Gaya ng inanunsyo, hindi muna tumatanggap ng aplikasyon ang programa para sa mga katuwang. Maaari pa ring sumali ang mga server na may reserbasyon. Para sa ibang tanong, magtanong sa aming Discord."
-  },
-  "announcement.title": {
-    "message": "May bagong bersyon na ng open.mp server at launcher!"
-  },
-  "announcement.link": {
-    "message": "Magbasa pa rito"
   },
   "theme.ErrorPageContent.title": {
     "message": "Nagkaproblema ang pahinang ito.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Mga Tag",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "Available na ang open.mp server {version} na may maraming pag-aayos, mas mahusay na performance at mga bagong feature!"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "May mga bagong kontrol para sa sasakyan ng NPC, mas maayos na paggalaw at mga pag-aayos sa network at script sa bersyong ito."
-  },
-  "announcement.changelog": {
-    "message": "Mga pagbabago sa server"
-  },
-  "announcement.download": {
-    "message": "I-download ang server"
-  },
-  "announcement.launcherUpdate": {
-    "message": "Na-update din ang launcher!"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "Mas maayos na ang overlay sa laro, suporta sa graphics mod at katatagan ng koneksyon."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "Available na ang open.mp launcher {version}!"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "Available na ang open.mp server {version}!"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "Available na ang open.mp server {serverVersion} at launcher {launcherVersion}!"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "Mga bago sa launcher"
-  },
-  "announcement.dismiss": {
-    "message": "Isara ang mensaheng ito"
-  },
-  "homepage.heroDescription": {
-    "message": "Bagong multiplayer mod para sa Grand Theft Auto: San Andreas na {compatibility} sa {samp}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "ganap na tugma"
-  },
-  "homepage.downloadLauncher": {
-    "message": "I-download ang launcher 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "I-download ang server 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "Dokumentasyon 📜"
   },
   "animations.title": {
     "message": "Mga animasyon ng open.mp"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "Mabilisang pagsali"
   },
-  "serverInfo.noDescription": {
-    "message": "Walang paglalarawan ang server na ito"
-  },
   "serverInfo.playersOnline": {
     "message": "Mga manlalarong online"
-  },
-  "serverInfo.modVersion": {
-    "message": "Bersyon ng mod"
   },
   "serverInfo.language": {
     "message": "Wika"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "Hindi makita ang server. Maaaring offline ito o wala na sa listahan."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "Dokumentasyon"
-  },
-  "theme.footer.title.Community": {
-    "message": "Komunidad"
-  },
-  "theme.footer.title.More": {
-    "message": "Higit pa"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "Panimula"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "Paglipat sa open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "Magbigay ng donasyon"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "Mga server"
-  },
-  "theme.footer.link.Blog": {
-    "message": "Blog"
-  },
-  "theme.footer.link.Animations": {
-    "message": "Mga animasyon"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "Pangbuo ng UID"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "Karapatang-ari © {year} open.mp. Binuo gamit ang Docusaurus."
-  },
-  "navbar.item.Docs": {
-    "message": "Dokumentasyon"
-  },
-  "navbar.item.Blog": {
-    "message": "Blog"
-  },
-  "navbar.item.Forums": {
-    "message": "Mga forum"
-  },
-  "navbar.item.Servers": {
-    "message": "Mga server"
-  },
-  "navbar.item.Partners": {
-    "message": "Mga katuwang"
-  },
-  "navbar.item.Donate": {
-    "message": "Magbigay ng donasyon"
   },
   "serverInfo.copied": {
     "message": "Kinopya",

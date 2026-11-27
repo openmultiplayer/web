@@ -23,10 +23,6 @@
     "message": "Partnerek",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "Támogatás",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "Az open.mp logója",
     "description": "The alt text of navbar logo"

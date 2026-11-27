@@ -2,35 +2,11 @@
   "feature.fullyBackwardsCompatible.title": {
     "message": "Entièrement rétrocompatible avec les scripts et clients existants"
   },
-  "feature.fullyBackwardsCompatible.description": {
-    "message": "Vous avez un ancien fichier AMX ? Chargez-le directement sur le serveur open.mp et retrouvez vos amis avec le client SA-MP. Consultez la documentation pour améliorer votre code."
-  },
   "feature.fullyBackwardsCompatible.linkText": {
     "message": "Premiers pas"
   },
-  "feature.newScriptingSystem.title": {
-    "message": "Nouveau système de scripts amélioré"
-  },
-  "feature.newScriptingSystem.description": {
-    "message": "open.mp prend en charge les scripts et extensions SA-MP existants. Son API moderne propose des structures de données, des E/S asynchrones et d’autres outils pour créer de meilleurs mods."
-  },
-  "feature.newScriptingSystem.linkText": {
-    "message": "En savoir plus"
-  },
-  "feature.developerFriendly.title": {
-    "message": "Pensé pour les développeurs"
-  },
-  "feature.developerFriendly.description": {
-    "message": "Nous développons open.mp avec une API cohérente, une documentation à jour, une communauté à l’écoute et un code entièrement libre. Toutes les contributions sont les bienvenues."
-  },
-  "feature.developerFriendly.linkText": {
-    "message": "Contribuer"
-  },
   "feature.scriptingSystem.title": {
     "message": "Nouveau système de scripts amélioré"
-  },
-  "feature.scriptingSystem.description": {
-    "message": "Nous gardons Pawn, avec un nouveau compilateur pour rendre votre code plus robuste et davantage de fonctions pour le serveur et le client."
   },
   "feature.scriptingSystem.linkText": {
     "message": "Découvrir les améliorations"
@@ -38,17 +14,11 @@
   "feature.communityDevelopment.title": {
     "message": "Développé par la communauté"
   },
-  "feature.communityDevelopment.description": {
-    "message": "Le serveur est entièrement open source et toutes les contributions sont bienvenues. Aidez-nous à préparer la prochaine version ou signalez les bugs que vous trouvez. Vos retours comptent."
-  },
   "feature.communityDevelopment.linkText": {
     "message": "Voir l’organisation GitHub"
   },
   "feature.cppApi.title": {
     "message": "API C++ extensible"
-  },
-  "feature.cppApi.description": {
-    "message": "Retrouvez toutes les fonctions serveur de Pawn ainsi que les bibliothèques et frameworks C++. Vous pouvez aider à améliorer le serveur sur GitHub."
   },
   "feature.cppApi.linkText": {
     "message": "Voir le dépôt du SDK"
@@ -67,12 +37,6 @@
   },
   "partners.note": {
     "message": "Comme annoncé, le programme de partenariat n’accepte pas de candidatures pour le moment. Les serveurs ayant réservé une place peuvent encore nous rejoindre. Pour toute autre question, écrivez-nous sur Discord."
-  },
-  "announcement.title": {
-    "message": "Une nouvelle version du serveur et du lanceur open.mp est disponible !"
-  },
-  "announcement.link": {
-    "message": "En savoir plus ici"
   },
   "theme.ErrorPageContent.title": {
     "message": "Cette page a planté.",
@@ -141,54 +105,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Étiquettes",
     "description": "The title of the tag list page"
-  },
-  "announcement.serverVersion": {
-    "message": "Le serveur open.mp {version} est disponible avec de nombreux correctifs, des gains de performances et de nouvelles fonctionnalités !"
-  },
-  "announcement.serverReleaseSummary": {
-    "message": "Cette version ajoute des commandes pour les véhicules des PNJ, améliore leurs déplacements et corrige des problèmes de réseau et de scripts."
-  },
-  "announcement.changelog": {
-    "message": "Notes de version du serveur"
-  },
-  "announcement.download": {
-    "message": "Télécharger le serveur"
-  },
-  "announcement.launcherUpdate": {
-    "message": "Le lanceur a également été mis à jour !"
-  },
-  "announcement.launcherReleaseSummary": {
-    "message": "Le lanceur améliore l’interface superposée en jeu, la prise en charge des mods graphiques et la stabilité de la connexion."
-  },
-  "announcement.launcherReleaseTitle": {
-    "message": "Le lanceur open.mp {version} est disponible !"
-  },
-  "announcement.serverReleaseTitle": {
-    "message": "Le serveur open.mp {version} est disponible !"
-  },
-  "announcement.bothReleaseTitle": {
-    "message": "Le serveur open.mp {serverVersion} et le lanceur {launcherVersion} sont disponibles !"
-  },
-  "announcement.seeWhatsNew": {
-    "message": "Nouveautés du lanceur"
-  },
-  "announcement.dismiss": {
-    "message": "Fermer ce message"
-  },
-  "homepage.heroDescription": {
-    "message": "Un nouveau mod multijoueur pour Grand Theft Auto: San Andreas, {compatibility} avec {samp}."
-  },
-  "homepage.heroDescription.compatibility": {
-    "message": "entièrement compatible"
-  },
-  "homepage.downloadLauncher": {
-    "message": "Télécharger le lanceur 🎮"
-  },
-  "homepage.downloadServer": {
-    "message": "Télécharger le serveur 🖥️"
-  },
-  "homepage.documentation": {
-    "message": "Documentation 📜"
   },
   "animations.title": {
     "message": "Visionneuse d’animations open.mp"
@@ -265,14 +181,8 @@
   "serverInfo.quickJoin": {
     "message": "Rejoindre rapidement"
   },
-  "serverInfo.noDescription": {
-    "message": "Ce serveur n’a pas de description"
-  },
   "serverInfo.playersOnline": {
     "message": "Joueurs en ligne"
-  },
-  "serverInfo.modVersion": {
-    "message": "Version du mod"
   },
   "serverInfo.language": {
     "message": "Langue"
@@ -288,72 +198,6 @@
   },
   "serverInfo.notFound": {
     "message": "Serveur introuvable. Il est peut-être hors ligne ou ne figure plus dans la liste."
-  },
-  "theme.footer.title.Documentations": {
-    "message": "Documentation"
-  },
-  "theme.footer.title.Community": {
-    "message": "Communauté"
-  },
-  "theme.footer.title.More": {
-    "message": "Plus"
-  },
-  "theme.footer.link.Introduction": {
-    "message": "Introduction"
-  },
-  "theme.footer.link.open.mp Migration": {
-    "message": "Migrer vers open.mp"
-  },
-  "theme.footer.link.Discord": {
-    "message": "Discord"
-  },
-  "theme.footer.link.GitHub": {
-    "message": "GitHub"
-  },
-  "theme.footer.link.Donate": {
-    "message": "Faire un don"
-  },
-  "theme.footer.link.YouTube": {
-    "message": "YouTube"
-  },
-  "theme.footer.link.X": {
-    "message": "X"
-  },
-  "theme.footer.link.Servers": {
-    "message": "Serveurs"
-  },
-  "theme.footer.link.Blog": {
-    "message": "Blog"
-  },
-  "theme.footer.link.Animations": {
-    "message": "Animations"
-  },
-  "theme.footer.link.UID Generator": {
-    "message": "Générateur d’UID"
-  },
-  "theme.footer.link.SA-MP": {
-    "message": "SA-MP"
-  },
-  "theme.footer.copyright": {
-    "message": "Copyright © {year} open.mp. Créé avec Docusaurus."
-  },
-  "navbar.item.Docs": {
-    "message": "Documentation"
-  },
-  "navbar.item.Blog": {
-    "message": "Blog"
-  },
-  "navbar.item.Forums": {
-    "message": "Forums"
-  },
-  "navbar.item.Servers": {
-    "message": "Serveurs"
-  },
-  "navbar.item.Partners": {
-    "message": "Partenaires"
-  },
-  "navbar.item.Donate": {
-    "message": "Faire un don"
   },
   "serverInfo.copied": {
     "message": "Copié",

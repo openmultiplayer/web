@@ -1,6 +1,7 @@
 {
   "sidebar.title": {
-    "message": "最近的帖子"
+    "message": "最近的帖子",
+    "description": "The label for the left sidebar"
   },
   "title": {
     "message": "博客",

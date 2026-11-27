@@ -23,10 +23,6 @@
     "message": "الشركاء",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Donate": {
-    "message": "تبرّع",
-    "description": "Navbar item with label Donate"
-  },
   "logo.alt": {
     "message": "شعار open.mp",
     "description": "The alt text of navbar logo"
