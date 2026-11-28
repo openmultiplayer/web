@@ -1,6 +1,6 @@
 ---
-title: OnActorStreamIn
-sidebar_label: OnActorStreamIn
+title: OnVehicleStreamOut
+sidebar_label: OnVehicleStreamOut
 description: يتم استدعاء هذا الاستدعاء أو الكال باك عند خروج السيارة بواسطة كلاينت اللاعب
 tags: []
 ---

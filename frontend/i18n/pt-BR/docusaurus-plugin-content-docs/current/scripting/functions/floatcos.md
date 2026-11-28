@@ -10,9 +10,9 @@ tags: ["math", "floating-point"]
 
 Obtenha o [cosseno](https://en.wikipedia.org/wiki/Sine_and_cosine) de um determinado ângulo. O ângulo de entrada pode estar em radianos, graus ou graus.
 
-| Nome | Descrição |
-| -------------- | --------------------------------------------------------------------------------------------------- |
-| Float:value | O ângulo a partir do qual obter o cosseno.                                                             |
+| Nome           | Descrição                                                                                                |
+| -------------- | -------------------------------------------------------------------------------------------------------- |
+| Float:value    | O ângulo a partir do qual obter o cosseno.                                                               |
 | anglemode:mode | O [modo de ângulo](../resources/anglemodes) a ser usado, dependendo do valor inserido. (padrão: radiano) |
 
 ## Retornos

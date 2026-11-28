@@ -15,7 +15,7 @@ Define o tipo de captador.
 | Nome | Descrição |
 | ------------------ | --------------------------------------------------- |
 | pickupid | O ID do captador.                               |
-| tipo | O [tipo de captação](../resources/pickuptypes) a ser definido. |
+| type | O [tipo de captação](../resources/pickuptypes) a ser definido. |
 | bool:update = true | Atualização de coleta para todos. (true/false) |
 
 ## Retornos

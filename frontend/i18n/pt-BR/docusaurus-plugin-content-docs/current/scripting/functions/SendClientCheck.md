@@ -13,7 +13,7 @@ Execute uma verificação de memória no cliente.
 | Nome | Descrição |
 | --------- | -------------------------------------------------------------- |
 | playerid | O ID do jogador a ser verificado.                                 |
-| tipo | O tipo de verificação a ser executada. [Veja aqui](../resources/opcodes) |
+| type | O tipo de verificação a ser executada. [Veja aqui](../resources/opcodes) |
 | memAddr | O endereço base a ser verificado.                                     |
 | memOffset | O deslocamento do endereço base.                              |
 | byteCount | O número de bytes a serem verificados.                                  |

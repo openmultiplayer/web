@@ -11,10 +11,10 @@ tags: ["npc", "recording", "playback"]
 
 Pauses or resumes an NPC's recording playback.
 
-| Name  | Description                               |
-| ----- | ----------------------------------------- |
-| npcid | The ID of the NPC                         |
-| pause | Whether to pause (true) or resume (false) |
+| Name   | Description                               |
+| ------ | ----------------------------------------- |
+| npcid  | The ID of the NPC                         |
+| paused | Whether to pause (true) or resume (false) |
 
 ## Returns
 

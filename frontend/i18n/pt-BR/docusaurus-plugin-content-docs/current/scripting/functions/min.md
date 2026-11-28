@@ -13,7 +13,7 @@ Função usada para comparar os valores.
 | Nome | Descrição |
 | ------ | ----------------------- |
 | value1 | Valor 1 (a) para comparar. |
-| value1 | Valor 2 (b) para comparar. |
+| value2 | Valor 2 (b) para comparar. |
 
 ## Retornos
 

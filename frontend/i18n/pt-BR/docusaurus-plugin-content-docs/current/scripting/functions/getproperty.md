@@ -14,7 +14,7 @@ Obtenha uma propriedade específica da memória, a string é retornada como uma 
 | -------- | -------------------------------------------------------------------------------------------------------------------------- |
 | id       | A [máquina virtual](https://en.wikipedia.org/wiki/Virtual_machine) a ser usada, você deve manter este zero. _(opcional=0)_ |
 | name[]   | O nome da propriedade, você deve manter este "".                                                                           |
-| valor    | O ID exclusivo da propriedade. Use a função hash para calculá-lo a partir de uma string. _(opcional=cellmin)_              |
+| value    | O ID exclusivo da propriedade. Use a função hash para calculá-lo a partir de uma string. _(opcional=cellmin)_              |
 | string[] | A variável para armazenar o resultado, passada por referência.                                                             |
 
 ## Retornos

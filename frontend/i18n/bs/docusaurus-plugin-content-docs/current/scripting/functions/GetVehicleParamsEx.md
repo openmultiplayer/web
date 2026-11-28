@@ -9,16 +9,16 @@ tags: ["vehicle"]
 
 Gets a vehicle's parameters.
 
-| Ime               | Deskripcija                                                                    |
-| ----------------- | ------------------------------------------------------------------------------ |
-| vehicleid         | ID vozila za dobiti parametre.                                                 |
-| & motor           | Doznajte status motora. Ako je 1, motor radi.                                  |
-| i svjetla         | Doznajte stanje svjetla u vozilu. Ako je 1 svjetla upaljena.                   |
-| & alarm           | Doznajte stanje alarma u vozilu. Ako je 1 alarm se oglašava (ili se oglašava). |
-| i vrata           | Dobiti status zaključavanja vrata. Ako su 1 vrata su zaključana.               |
-| & poklopac motora | Dobiti status poklopca motora / poklopca motora. Ako je 1, otvoreno je.        |
-| & boot            | Dobiti status pokretanja / prtljažnika. 1 znači da je otvoren.                 |
-| & cilj            | Steknite objektivni status. 1 znači da je cilj uključen.                       |
+| Ime        | Deskripcija                                                                    |
+| ---------- | ------------------------------------------------------------------------------ |
+| vehicleid  | ID vozila za dobiti parametre.                                                 |
+| &engine    | Doznajte status motora. Ako je 1, motor radi.                                  |
+| &lights    | Doznajte stanje svjetla u vozilu. Ako je 1 svjetla upaljena.                   |
+| &alarm     | Doznajte stanje alarma u vozilu. Ako je 1 alarm se oglašava (ili se oglašava). |
+| &doors     | Dobiti status zaključavanja vrata. Ako su 1 vrata su zaključana.               |
+| &bonnet    | Dobiti status poklopca motora / poklopca motora. Ako je 1, otvoreno je.        |
+| &boot      | Dobiti status pokretanja / prtljažnika. 1 znači da je otvoren.                 |
+| &objective | Steknite objektivni status. 1 znači da je cilj uključen.                       |
 
 ## Returns
 

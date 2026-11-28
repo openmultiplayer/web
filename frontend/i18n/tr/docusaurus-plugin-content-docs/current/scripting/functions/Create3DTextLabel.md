@@ -50,7 +50,7 @@ Metinde birden çok renk için renk katıştırmayı kullanın.
 
 :::warning
 
-- Eğer metin alanı (text[]) boşsa sunucuyu çökertebilir!
+- Eğer metin alanı (`text[]`) boşsa sunucuyu çökertebilir!
 - Sanal dünya değeri -1 olarak ayarlanmışsa metin görünmeyecektir.
 
 :::

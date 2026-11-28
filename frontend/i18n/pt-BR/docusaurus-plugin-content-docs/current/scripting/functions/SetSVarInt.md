@@ -15,7 +15,7 @@ Defina uma variável de servidor inteira.
 | Nome | Descrição |
 | ------------ | -------------------------------- |
 | const svar[] | O nome da variável do servidor. |
-| valor | O número inteiro a ser definido.           |
+| value | O número inteiro a ser definido.           |
 
 ## Retornos
 

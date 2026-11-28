@@ -57,7 +57,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-drawDistance parece ser muito menor quando especta.
+`drawDistance` parece ser muito menor quando especta.
 
 :::
 
@@ -69,8 +69,8 @@ Use [incorporação de cores](../resources/colorslist#color-embedding) para múl
 
 :::warning
 
-- Se text[] estiver vazio, o servidor/clientes próximos ao texto podem travar! (Corrigido no open.mp)
-- Se o virtualworld for definido como -1, o texto não aparecerá.
+- Se `text[]` estiver vazio, o servidor/clientes próximos ao texto podem travar! (Corrigido no open.mp)
+- Se o `virtualWorld` for definido como -1, o texto não aparecerá.
 
 :::
 

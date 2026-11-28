@@ -13,7 +13,7 @@ Converta um número inteiro em uma string.
 | Nome | Descrição |
 | ----------------- | ------------------------------------------------- |
 | dest | O destino da string.                    |
-| valor | O valor a ser convertido em uma string.                 |
+| value | O valor a ser convertido em uma string.                 |
 | pack _(optional)_ | Se deve embalar o destino (desativado por padrão). |
 
 ## Retornos

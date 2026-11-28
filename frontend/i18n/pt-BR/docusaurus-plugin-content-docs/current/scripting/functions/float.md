@@ -10,9 +10,9 @@ tags: ["floating-point"]
 
 Converte um inteiro em um float.
 
-| Nome | Descrição |
-| ----- | ----------------------------------- |
-| valor | Valor inteiro a ser convertido em float |
+| Nome  | Descrição                               |
+| ----- | --------------------------------------- |
+| value | Valor inteiro a ser convertido em float |
 
 ## Retornos
 

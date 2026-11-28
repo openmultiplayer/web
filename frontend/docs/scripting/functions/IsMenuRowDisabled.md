@@ -11,9 +11,10 @@ tags: ["menu"]
 
 Checks if a menu row is disabled.
 
-| Name        | Description                  |
-| ----------- | ---------------------------- |
-| Menu:menuid | The ID of the menu to check. |
+| Name        | Description                                   |
+| ----------- | --------------------------------------------- |
+| Menu:menuid | The ID of the menu to check.                  |
+| row         | The ID of the row to check (rows start at 0). |
 
 ## Returns
 

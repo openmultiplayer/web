@@ -1,6 +1,6 @@
 ---
-title: tolower
-sidebar_label: tolower
+title: toupper
+sidebar_label: toupper
 description: Fungsi ini mengubah sebuah huruf menjadi huruf besar.
 tags: ["string"]
 ---

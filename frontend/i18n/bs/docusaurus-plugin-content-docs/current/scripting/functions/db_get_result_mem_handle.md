@@ -15,9 +15,9 @@ Ova funkcija je dodana u SA-MP 0.3.7 R1 i ne radi u nižim verzijama!
 
 Dobiva **memorijski upravitelj** za vezu SQLite databaze koja je dodijeljena sa s [db_query](db_query).
 
-| Ime   | Deskripcija                                           |
-| ----- | ----------------------------------------------------- |
-| DB:db | Indeks upita (returna/vraća ga [db_query](db_query)). |
+| Ime             | Deskripcija                                           |
+| --------------- | ----------------------------------------------------- |
+| DBResult:result | Indeks upita (returna/vraća ga [db_query](db_query)). |
 
 ## Returns
 

@@ -9,11 +9,11 @@ tags: []
 
 Retorna o horário atual do servidor, aonde será guardado nas variáveis &hora, &minuto e &segundo.
 
-| Name       | Descrição                                                      |
-| ---------- | -------------------------------------------------------------- |
-| &hora=0    | A variável para armazenar a hora, passada por referência.      |
-| &minuto=0  | A variável para armazenar o minuto, passada por referência.    |
-| &segundo=0 | A variável para armazenar os segundos, passada por referência. |
+| Name      | Descrição                                                      |
+| --------- | -------------------------------------------------------------- |
+| &hour=0   | A variável para armazenar a hora, passada por referência.      |
+| &minute=0 | A variável para armazenar o minuto, passada por referência.    |
+| &second=0 | A variável para armazenar os segundos, passada por referência. |
 
 ## Retorno
 

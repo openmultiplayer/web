@@ -29,7 +29,7 @@ Selalu terpanggil pertama di filterscripts.
 ```c
 public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 {
-    SetPlayerPostFindZ(playerid, fX, fY, fZ);
+    SetPlayerPosFindZ(playerid, fX, fY, fZ);
     return 1;
 }
 ```

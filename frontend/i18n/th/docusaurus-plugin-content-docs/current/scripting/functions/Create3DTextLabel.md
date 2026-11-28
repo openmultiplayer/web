@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 :::note
 
-drawDistance seems to be a lot smaller when spectating.
+`drawDistance` seems to be a lot smaller when spectating.
 
 :::
 
@@ -50,8 +50,8 @@ Use colour embedding for multiple colours in the text.
 
 :::warning
 
-- If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
-- If the virtualworld is set as -1 the text will not appear.
+- If `text[]` is empty, the server/clients next to the text might crash! (Fixed in open.mp)
+- If the `virtualWorld` is set as -1 the text will not appear.
 
 :::
 

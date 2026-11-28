@@ -10,10 +10,10 @@ tags: ["math", "floating-point"]
 
 Obtenha a [tangente](https://en.wikipedia.org/wiki/Trigonometric_functions) de um determinado ângulo. O ângulo de entrada pode estar em radianos, graus ou graus.
 
-| Nome | Descrição |
-| ----------- | --------------------------------------------------------------------------------------------------- |
-| Float:value | O ângulo a partir do qual obter a tangente.                                                            |
-| anglemode | O [modo de ângulo](../resources/anglemodes) a ser usado, dependendo do valor inserido. (padrão: radiano) |
+| Nome           | Descrição                                                                                                |
+| -------------- | -------------------------------------------------------------------------------------------------------- |
+| Float:value    | O ângulo a partir do qual obter a tangente.                                                              |
+| anglemode:mode | O [modo de ângulo](../resources/anglemodes) a ser usado, dependendo do valor inserido. (padrão: radiano) |
 
 ## Retornos
 

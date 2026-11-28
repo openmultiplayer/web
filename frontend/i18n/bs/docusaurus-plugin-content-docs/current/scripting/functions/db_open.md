@@ -9,9 +9,9 @@ tags: ["sqlite"]
 
 Funkcija se koristi za otvaranje veze s datotekom baze podataka SQLite, koja se nalazi u folderu `/scriptfiles`.
 
-| Ime   | Deskripcija           |
-| ----- | --------------------- |
-| Ime[] | Ime datoteke databaze |
+| Ime    | Deskripcija           |
+| ------ | --------------------- |
+| name[] | Ime datoteke databaze |
 
 ## Returns
 

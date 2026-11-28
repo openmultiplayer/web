@@ -17,9 +17,9 @@ This function is deprecated. Please see [DB_GetLegacyDBResult](DB_GetLegacyDBRes
 
 The function gets the **memory handle** for a SQLite database result set that was allocated with [db_query](db_query).
 
-| Name  | Description                                                |
-| ----- | ---------------------------------------------------------- |
-| DB:db | The index of the query (returned by [db_query](db_query)). |
+| Name            | Description                                                |
+| --------------- | ---------------------------------------------------------- |
+| DBResult:result | The index of the query (returned by [db_query](db_query)). |
 
 ## Returns
 

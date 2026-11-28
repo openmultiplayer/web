@@ -36,8 +36,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
         if (!NPC_IsValid(npcid))
             return SendClientMessage(playerid, 0xFF0000FF, "无效的NPC。");
 
-        new keys, updown, leftright;
-        NPC_GetKeys(npcid, keys, updown, leftright);
+        new updown, leftright, keys;
+        NPC_GetKeys(npcid, updown, leftright, keys);
 
         SendClientMessage(playerid, 0x00FF00FF, "NPC %d 键: %d, 上下: %d, 左右: %d", npcid, keys, updown, leftright);
         return 1;

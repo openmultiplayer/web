@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Cette callback est appelée quand un joueur clique sur un textdraw ou le quitte avec la touche ECHAP.
 
-| Nom            | Description                                                         |
-| -------------- | ------------------------------------------------------------------- |
-| `int` playerid | ID du joueur qui clique sur le textdraw.                            |
-| `int`clickedid | ID du textdraw cliqué. INVALID_TEXT_DRAW si le textdraw est quitté. |
+| Nom             | Description                                                         |
+| --------------- | ------------------------------------------------------------------- |
+| `int` playerid  | ID du joueur qui clique sur le textdraw.                            |
+| `int` clickedid | ID du textdraw cliqué. INVALID_TEXT_DRAW si le textdraw est quitté. |
 
 ## Valeur de retour
 

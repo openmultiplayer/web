@@ -43,7 +43,7 @@ public OnGameModeInit()
 :::note
 
 - 需先在[服务器配置](../../server/server.cfg#自定义模型)中启用**useartwork**或**artwork.enable**选项才能使此函数生效。
-- 当`virtualworld`参数设置时，模型将在玩家进入指定虚拟世界时自动下载。
+- 当`virtualWorld`参数设置时，模型将在玩家进入指定虚拟世界时自动下载。
 
 :::
 

@@ -12,10 +12,10 @@ tags: ["npc", "recording", "playback"]
 
 Pausa ou retoma a reprodução da gravação de um NPC.
 
-| Nome  | Descrição                             |
-| ----- | ------------------------------------- |
-| npcid | O ID do NPC                           |
-| pause | Seja pausar (true) ou retomar (false) |
+| Nome   | Descrição                             |
+| ------ | ------------------------------------- |
+| npcid  | O ID do NPC                           |
+| paused | Seja pausar (true) ou retomar (false) |
 
 ## Retornos
 

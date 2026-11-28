@@ -1,5 +1,5 @@
 ---
-title: 停止玩家音频流
+title: StopAudioStreamForPlayer
 sidebar_label: StopAudioStreamForPlayer
 description: 停止玩家当前正在播放的音频流。
 tags: ["玩家"]

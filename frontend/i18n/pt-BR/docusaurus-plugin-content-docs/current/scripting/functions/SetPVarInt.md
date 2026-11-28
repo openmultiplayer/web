@@ -14,7 +14,7 @@ Defina uma variável de jogador inteira.
 | ------------ | ------------------------------------------------------ |
 | playerid     | O ID do jogador cuja variável de player será definida. |
 | const pvar[] | O nome da variável do jogador.                         |
-| valor        | O número inteiro a ser definido.                       |
+| value        | O número inteiro a ser definido.                       |
 
 ## Retornos
 
