@@ -13,7 +13,7 @@ Returns all the information on the given game text style.
 
 | Name                   | Description                                                           |
 | ---------------------- | --------------------------------------------------------------------- |
-| playerid               | The ID of the player whose game text is being read.                   |
+| playerid               | The ID of the player whose gametext is being read.                    |
 | style                  | The [style](../resources/gametextstyles) of text to get the data for. |
 | message[]              | Return array for the text string.                                     |
 | len = sizeof (message) | Size of the output.                                                   |

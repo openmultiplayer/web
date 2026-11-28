@@ -17,7 +17,7 @@ Konektuj NPC-a na server.
 
 | Ime      | Deskripcija                                                                       |
 | -------- | --------------------------------------------------------------------------------- |
-| Ime[]    | Ime sa kojim će se NPC konektovati. Mora poštovati ista pravila kao i ime igrača. |
+| name[]   | Ime sa kojim će se NPC konektovati. Mora poštovati ista pravila kao i ime igrača. |
 | script[] | Naziv NPC skripte koji se nalazi u mapi **npcmodes** (bez nastavka .amx).         |
 
 ## Returns

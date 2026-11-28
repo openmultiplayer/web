@@ -1,5 +1,5 @@
 ---
-title: 设置玩家物体无视角碰撞
+title: SetPlayerObjectNoCameraCol
 sidebar_label: SetPlayerObjectNoCameraCol
 description: 切换玩家物体的视角碰撞状态
 tags: ["玩家"]

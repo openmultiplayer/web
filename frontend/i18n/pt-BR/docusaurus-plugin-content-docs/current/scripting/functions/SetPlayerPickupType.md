@@ -16,7 +16,7 @@ Define o tipo de captação do jogador.
 | ------------------ | --------------------------------------------------- |
 | playerid | O ID do jogador.                               |
 | pickupid | O ID do captador do jogador.                        |
-| tipo | O [tipo de captação](../resources/pickuptypes) a ser definido. |
+| type | O [tipo de captação](../resources/pickuptypes) a ser definido. |
 | bool:update = true | Atualizar coleta para jogador. (true/false) |
 
 ## Retornos

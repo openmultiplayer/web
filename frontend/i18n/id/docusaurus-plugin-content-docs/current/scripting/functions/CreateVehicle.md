@@ -11,7 +11,7 @@ Membuat kendaraan di dunia. Dapat digunakan sebagai pengganti AddStaticVehicleEx
 
 | Nama                                  | Deskripsi                                                                                                                                                                  |
 | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Tipe Kendaraan                        | Model dari Kendaraan                                                                                                                                                       |
+| modelid                               | Model dari Kendaraan                                                                                                                                                       |
 | Float:X                               | Kordinat x dari kendaraan                                                                                                                                                  |
 | Float:Y                               | Kordinat y dari kendaraan                                                                                                                                                  |
 | Float:Z                               | Kordinat z dari kendaraan                                                                                                                                                  |

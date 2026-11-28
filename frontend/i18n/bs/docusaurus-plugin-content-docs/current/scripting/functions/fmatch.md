@@ -13,8 +13,8 @@ Pronađite naziv datoteke koji odgovara uzorku.
 | ------------- | -------------------------------------------------------------------- |
 | name          | Niz u kojem se nalazi rezultat vraćen je kao spakirani niz.          |
 | const pattern | Uzorak koji bi trebao odgovarati. Može sadržavati zamjenske znakove. |
-| indeks        | Broj datoteke, u slučaju da postoji više podudaranja.                |
-| veličina      | Maksimalna veličina _imena_ parametra                                |
+| index         | Broj datoteke, u slučaju da postoji više podudaranja.                |
+| size          | Maksimalna veličina _imena_ parametra                                |
 
 ## Returns
 
