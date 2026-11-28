@@ -9,10 +9,10 @@ tags: ["math", "floating-point"]
 
 Kunin ang [cosine](https://en.wikipedia.org/wiki/Sine_and_cosine) mula sa isang naibigay na anggulo. Ang input angle ay maaaring nasa radians, degrees o grades.
 
-| Name        | Description                                                                           |
-| ----------- | ------------------------------------------------------------------------------------- |
-| Float:value | Ang anggulo kung saan makukuha ang cosine.                                            |
-| anglemode   | Ang [angle mode](../resources/anglemodes) na gagamitin, depende sa value na ipinasok. |
+| Name           | Description                                                                           |
+| -------------- | ------------------------------------------------------------------------------------- |
+| Float:value    | Ang anggulo kung saan makukuha ang cosine.                                            |
+| anglemode:mode | Ang [angle mode](../resources/anglemodes) na gagamitin, depende sa value na ipinasok. |
 
 ## Returns
 

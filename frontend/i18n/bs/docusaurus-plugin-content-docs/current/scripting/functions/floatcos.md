@@ -9,10 +9,10 @@ tags: []
 
 Dobijte [kosinus](https://en.wikipedia.org/wiki/Sine_and_cosine) iz zadanog ugla. Ulazni kut može biti u radijanima, stupnjevima ili stupnjevima.
 
-| Ime                                  | Deskripcija                                                |
-| ------------------------------------ | ---------------------------------------------------------- |
-| Float:value                          | Ugao iz kojeg se dobija kosinus.                           |
-| [anglemode](../resources/anglemodes) | Način kuta koji se koristi, ovisno o unesenoj vrijednosti. |
+| Ime            | Deskripcija                                                                           |
+| -------------- | ------------------------------------------------------------------------------------- |
+| Float:value    | Ugao iz kojeg se dobija kosinus.                                                      |
+| anglemode:mode | [Način kuta](../resources/anglemodes) koji se koristi, ovisno o unesenoj vrijednosti. |
 
 ## Returns
 

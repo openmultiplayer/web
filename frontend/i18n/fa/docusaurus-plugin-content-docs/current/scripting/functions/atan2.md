@@ -1,6 +1,6 @@
 ---
-title: atan
-sidebar_label: atan
+title: atan2
+sidebar_label: atan2
 description: مقدار معکوس چند مقداره یک تانژانت را به درجه دریافت کنید.
 tags: ["math"]
 ---

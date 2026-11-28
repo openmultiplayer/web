@@ -15,9 +15,9 @@ This function was added in SA-MP 0.3.7 R1 and will not work in earlier versions!
 
 Get **memory handle** for an SQLite query that was executed with db_query.
 
-| Name  | Description                                    |
-| ----- | ---------------------------------------------- |
-| DB:db | The index of the query (returned by db_query). |
+| Name            | Description                                    |
+| --------------- | ---------------------------------------------- |
+| DBResult:result | The index of the query (returned by db_query). |
 
 ## ส่งคืน
 

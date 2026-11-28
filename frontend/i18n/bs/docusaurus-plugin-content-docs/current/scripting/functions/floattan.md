@@ -9,10 +9,10 @@ tags: []
 
 Uzmi [tangentu](https://en.wikipedia.org/wiki/Trigonometric_functions) iz zadanog ugla. Ulazni ugao može biti u radijanima, stupnjevima ili stupnjevima.
 
-| Ime                                  | Deskripcija                                                |
-| ------------------------------------ | ---------------------------------------------------------- |
-| Float:value                          | Kut iz kojeg se dobija tangenta.                           |
-| [anglemode](../resources/anglemodes) | Način kuta koji se koristi, ovisno o unesenoj vrijednosti. |
+| Ime            | Deskripcija                                                                           |
+| -------------- | ------------------------------------------------------------------------------------- |
+| Float:value    | Kut iz kojeg se dobija tangenta.                                                      |
+| anglemode:mode | [Način kuta](../resources/anglemodes) koji se koristi, ovisno o unesenoj vrijednosti. |
 
 ## Returns
 

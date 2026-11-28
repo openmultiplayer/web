@@ -22,7 +22,7 @@ Nó luôn được gọi đầu tiên trong filterscripts, vì vậy việc tr�
 public OnRconCommand(cmd[])
 {
     // Lưu lại tất cả các lệnh RCON vào log file
-    log("RCON command executed: %s", cmd);
+    printf("RCON command executed: %s", cmd);
     return 0;
 }
 ```

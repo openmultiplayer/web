@@ -12,14 +12,14 @@ tags: ["player"]
 
 Retorna todas as informações sobre o estilo de texto do jogo determinado.
 
-| Nome | Descrição |
-| ---------------------- | --------------------------------------------------------------------- |
-| playerid | O ID do jogador do qual obter a rotação.                          |
-| style | O [estilo](../resources/gametextstyles) do texto para o qual obter os dados. |
-| message[] | Matriz de retorno para a string de texto.                                     |
-| len = sizeof (message) | Tamanho da saída.                                                   |
-| time | A hora em que o texto do jogo foi originalmente mostrado.                       |
-| remaining | Quanto desse tempo ainda resta.                             |
+| Nome                   | Descrição                                                                    |
+| ---------------------- | ---------------------------------------------------------------------------- |
+| playerid               | O ID do jogador cujo texto de jogo será consultado.                          |
+| style                  | O [estilo](../resources/gametextstyles) do texto para o qual obter os dados. |
+| message[]              | Matriz de retorno para a string de texto.                                    |
+| len = sizeof (message) | Tamanho da saída.                                                            |
+| &time                  | A hora em que o texto do jogo foi originalmente mostrado.                    |
+| &remaining             | Quanto desse tempo ainda resta.                                              |
 
 ## Retornos
 

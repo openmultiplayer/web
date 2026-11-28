@@ -11,9 +11,10 @@ tags: ["menu"]
 
 Verifica se uma linha de menu está desabilitada.
 
-| Name        | Description                    |
-| ----------- | ------------------------------ |
-| Menu:menuid | O ID do menu a ser verificado. |
+| Name        | Description                                      |
+| ----------- | ------------------------------------------------ |
+| Menu:menuid | O ID do menu a ser verificado.                   |
+| row         | O ID da linha a ser verificada (começando em 0). |
 
 ## Retorno
 

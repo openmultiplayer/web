@@ -11,9 +11,9 @@ tags: ["sqlite"]
 
 A função obtém o **handle de memória** para um conjunto de resultados de banco de dados SQLite que foi alocado com [db_query](db_query).
 
-| Nome  | Descrição                                                  |
-| ----- | ---------------------------------------------------------- |
-| DB:db | O índice da consulta (retornado por [db_query](db_query)). |
+| Nome            | Descrição                                                  |
+| --------------- | ---------------------------------------------------------- |
+| DBResult:result | O índice da consulta (retornado por [db_query](db_query)). |
 
 ## Retorno
 

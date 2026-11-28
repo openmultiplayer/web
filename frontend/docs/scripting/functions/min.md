@@ -12,7 +12,7 @@ Function used to compare the values.
 | Name   | Description             |
 | ------ | ----------------------- |
 | value1 | Value 1 (a) to compare. |
-| value1 | Value 2 (b) to compare. |
+| value2 | Value 2 (b) to compare. |
 
 ## Returns
 
